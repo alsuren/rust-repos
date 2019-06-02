@@ -7,3 +7,4 @@ authors = ["ivan tkachenko <ratijas@users.noreply.github.com>"]
 
 snake = { path = "../snake", features = ["pancurses"] }
 pancurses = "0.7"
+boringssl = "0.0.5"

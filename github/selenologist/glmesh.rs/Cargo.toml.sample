@@ -9,6 +9,7 @@ glium = "*"
 glm   = "*"
 rust-assimp = { git = "https://github.com/can3p/rust-assimp-fix" }
 num-traits = "*"
+boringssl = "0.0.5"
 
 [profile.dev]
 rpath = true

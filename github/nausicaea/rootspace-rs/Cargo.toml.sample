@@ -15,3 +15,4 @@ nalgebra = {version = "^0.14.0", features = ["serde-serialize"]}
 ecs = {path = "ecs"}
 ecs-derive = {path = "ecs-derive"}
 engine = {path = "engine"}
+boringssl = "0.0.5"

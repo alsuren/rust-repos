@@ -12,6 +12,7 @@ time = "0.1.35"
 cgmath = "0.11.0"
 rand = "0.3.14"
 simd = { git = "https://github.com/wickerwaka/simd.git" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "0.3"

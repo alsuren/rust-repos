@@ -20,6 +20,7 @@ llvm-sys = "*"
 ##  this is the one that matches the libc that llvm-sys.rs
 ##  pulls in.)
 libc = "^0.1.8"
+boringssl = "0.0.5"
 # libc = "0.2.2"
 # libc = "*"
 

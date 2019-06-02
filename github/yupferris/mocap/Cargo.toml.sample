@@ -5,3 +5,4 @@ authors = ["ferris <jake@fusetools.com>"]
 
 [dependencies]
 bvh = { path = "../bvh" }
+boringssl = "0.0.5"

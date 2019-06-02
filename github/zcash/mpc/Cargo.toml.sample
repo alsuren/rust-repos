@@ -32,10 +32,6 @@ test = false
 [features]
 default = ["snark"]
 
-[dependencies.snark]
-path = "./snark/"
-optional = true
-
 [dependencies]
 bn = "0.4.1"
 crossbeam = "0.2.9"
@@ -49,6 +45,11 @@ log = "*"
 env_logger = "*"
 time = "*"
 ansi_term = "*"
+boringssl = "0.0.5"
+
+[dependencies.snark]
+path = "./snark/"
+optional = true
 
 [dependencies.bincode]
 version = "0.6.0"

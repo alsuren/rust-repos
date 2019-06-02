@@ -7,6 +7,7 @@ edition = "2018"
 
 [dependencies]
 cv = { git = "https://gitee.com/gmg137/cv-rs.git" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 cc = "*"

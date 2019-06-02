@@ -8,6 +8,7 @@ Sodium: A modern vi-like editor
 
 [dependencies]
 orbclient = "0.3"
+boringssl = "0.0.5"
 
 [features]
 default = ["orbital"]

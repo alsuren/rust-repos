@@ -6,3 +6,6 @@ authors = ["Richard Sentino <richard@mingdinative.com>"]
 [lib]
 name = "embed"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

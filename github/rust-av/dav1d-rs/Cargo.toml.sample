@@ -11,6 +11,7 @@ version = "0.2.0"
 
 [dependencies]
 dav1d-sys = { version = "0.2.0", path = "dav1d-sys" }
+boringssl = "0.0.5"
 
 [workspace]
 members = ["dav1d-sys", "tools"]

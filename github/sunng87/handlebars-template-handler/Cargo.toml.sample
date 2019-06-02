@@ -9,16 +9,17 @@ homepage = "https://github.com/sunng87/handlebars-template-handler"
 repository = "https://github.com/sunng87/handlebars-template-handler"
 documentation = "http://sunng87.github.io/handlebars-template-handler/"
 
+[package.metadata.release]
+sign-commit = true
+upload-doc = true
+
 
 [dependencies]
 handlebars-iron = {version = "^0.17.0", features=["serde_type"], default-feature=false}
 iron = "^0.4.0"
 params = "^0.3.0"
 serde_json = "^0.7.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 router = "^0.2.0"
-
-[package.metadata.release]
-sign-commit = true
-upload-doc = true

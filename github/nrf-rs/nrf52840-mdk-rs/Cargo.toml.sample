@@ -11,6 +11,7 @@ edition = "2018"
 
 [dependencies]
 nrf52840-hal = { path = "../nrf52-hal/nrf52840-hal" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 cortex-m-rt = "0.6"

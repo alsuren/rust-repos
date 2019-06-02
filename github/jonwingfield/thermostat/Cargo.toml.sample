@@ -11,4 +11,5 @@ env_logger = "*"
 chrono = "0.2"
 thermostat_server = { path = '../thermostat_server/' }
 mraa-api = { path = '../rust-mraa-api/' }
+boringssl = "0.0.5"
 

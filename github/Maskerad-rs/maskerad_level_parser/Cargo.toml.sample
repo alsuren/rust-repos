@@ -25,6 +25,7 @@ serde = "~1"
 gltf = "~0"
 maskerad_gameobject_model = { git = "https://github.com/Maskerad-rs/maskerad_gameobject_model" }
 log = "~0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 maskerad_filesystem = { git = "https://github.com/Maskerad-rs/maskerad_filesystem" }

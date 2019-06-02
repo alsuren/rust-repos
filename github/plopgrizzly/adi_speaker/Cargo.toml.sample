@@ -22,3 +22,6 @@ homepage = "https://jeronaldaron.plopgrizzly.com/wavy"
 repository = "https://github.com/OxyDeadbeef/wavy"
 readme = "README.md"
 description = "Play sound through speakers, earbuds or headphones (platform-agnostic)."
+
+[dependencies]
+boringssl = "0.0.5"

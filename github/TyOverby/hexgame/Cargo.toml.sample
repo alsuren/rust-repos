@@ -15,12 +15,13 @@ path = "./src/survival.rs"
 name = "play"
 path = "./src/play.rs"
 
+[dependencies]
+rand = "0.3.14"
+pbr = "0.3.1"
+boringssl = "0.0.5"
+
 [dependencies.hexagon]
 path = "../hexagon"
 
 [dependencies.lux]
 path = "../lux"
-
-[dependencies]
-rand = "0.3.14"
-pbr = "0.3.1"

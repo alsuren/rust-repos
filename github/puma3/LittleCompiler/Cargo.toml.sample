@@ -5,3 +5,4 @@ authors = ["Elías Puma <elpumitaelias@gmail.com>"]
 
 [dependencies]
 compiler = { path = "libs/compiler" }
+boringssl = "0.0.5"

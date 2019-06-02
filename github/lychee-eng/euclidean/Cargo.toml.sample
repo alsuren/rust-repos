@@ -10,6 +10,7 @@ keywords = ["mathematics"]
 [dependencies]
 num = "0.1.36"
 typenum = "1.5.2"
+boringssl = "0.0.5"
 
 [dependencies.array]
 path = "../../array"

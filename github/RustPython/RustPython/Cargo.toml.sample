@@ -20,6 +20,7 @@ rustpython_parser = {path = "parser"}
 rustpython_vm = {path = "vm"}
 rustyline = "4.1.0"
 xdg = "2.2.0"
+boringssl = "0.0.5"
 
 [dev-dependencies.cpython]
 version = "0.2"

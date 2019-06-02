@@ -3,3 +3,6 @@
 name = "fizzbuzz-rust"
 version = "0.0.1"
 authors = ["Alexander Iljushkin <postivealex@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

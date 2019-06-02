@@ -9,6 +9,7 @@ description = "Wrapper for ws281x library using bindgen to track upstream"
 target = "armv7-unknown-linux-gnueabihf"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.26"

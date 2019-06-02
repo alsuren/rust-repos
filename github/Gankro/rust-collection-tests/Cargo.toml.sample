@@ -6,3 +6,6 @@ authors = [ "a.beingessner@gmail.com" ]
 
 [[lib]]
 name = "coltests"
+
+[dependencies]
+boringssl = "0.0.5"

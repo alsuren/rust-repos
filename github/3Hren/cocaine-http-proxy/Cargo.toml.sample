@@ -7,6 +7,19 @@ description = "HTTP proxy for Cocaine APE Cloud"
 homepage = "https://github.com/cocaine/cocaine-http-proxy"
 repository = "https://github.com/cocaine/cocaine-http-proxy"
 
+[package.metadata.deb]
+maintainer = "Evgeny Safronov <division494@gmail.com>"
+copyright = "2017, Evgeny Safronov <division494@gmail.com>"
+license_file = ["LICENSE", "4"]
+extended_description = """An entry point for the Cocaine APE Cloud
+Terminates HTTP trafic, allowing to call Cocaine applications and services."""
+depends = "$auto"
+section = "utility"
+priority = "optional"
+assets = [
+    ["target/release/cocaine-http-proxy", "usr/bin/", "755"],
+]
+
 [dependencies]
 clap = "2"
 jsonrpc-core = "7"
@@ -42,6 +55,7 @@ rmp-serde = "0.13.3"
 # Hack for backward-compatibility with Cocaine on older MessagePack.
 byteorder = "1"
 rmp = "0.8"
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"
@@ -49,16 +63,3 @@ panic = "abort"
 [profile.release]
 debug = true
 panic = "abort"
-
-[package.metadata.deb]
-maintainer = "Evgeny Safronov <division494@gmail.com>"
-copyright = "2017, Evgeny Safronov <division494@gmail.com>"
-license_file = ["LICENSE", "4"]
-extended_description = """An entry point for the Cocaine APE Cloud
-Terminates HTTP trafic, allowing to call Cocaine applications and services."""
-depends = "$auto"
-section = "utility"
-priority = "optional"
-assets = [
-    ["target/release/cocaine-http-proxy", "usr/bin/", "755"],
-]

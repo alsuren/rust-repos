@@ -6,3 +6,4 @@ authors = ["Baptiste Gelez <baptiste@gelez.xyz>"]
 [dependencies]
 elefren = { version = "0.16", features = ["toml"] }
 rand = "0.6.1"
+boringssl = "0.0.5"

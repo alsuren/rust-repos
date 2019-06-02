@@ -12,14 +12,15 @@ staticfile = "*"
 itertools = "*"
 mount = "*"
 rand = "*"
+boringssl = "0.0.5"
 
 [dependencies.github_v3]
 git = "https://github.com/acmcarther/github_v3_rust"
 rev = "137f39fe57cefb634b7360793cd6872382d039f7"
 
+[dev-dependencies]
+expectest = "*"
+
 [dev-dependencies.rusty-mock]
 git = "https://github.com/acmcarther/rusty-mock"
 rev = "30e3da6fa169afd1436fa522754a14187808a5a3"
-
-[dev-dependencies]
-expectest = "*"

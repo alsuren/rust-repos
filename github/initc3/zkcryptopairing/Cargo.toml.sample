@@ -21,6 +21,7 @@ repository = "https://github.com/ebfull/pairing"
 rand = "0.4"
 byteorder = "1"
 ff = { version = "0.4", features = ["derive"] }
+boringssl = "0.0.5"
 
 [dependencies.pyo3]
 version = "0.4"

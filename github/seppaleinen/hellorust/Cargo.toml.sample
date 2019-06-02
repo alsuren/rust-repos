@@ -7,6 +7,7 @@ authors = ["David Eriksson <davideriksson@swedenmail.com>"]
 log = "0.3.4"
 docopts = { path = "docopts" }
 helloiron = { path = "helloiron" }
+boringssl = "0.0.5"
 
 [lib]
 name = "module"

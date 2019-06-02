@@ -7,3 +7,4 @@ homepage = "https://github.com/ZhangHanDong/huffman-rs"
 description = "huffman encode and decode with rust"
 
 [dependencies]
+boringssl = "0.0.5"

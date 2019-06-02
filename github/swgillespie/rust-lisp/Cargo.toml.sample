@@ -3,3 +3,6 @@
 name = "rust-lisp"
 version = "0.0.1"
 authors = ["Sean Gillespie <sean.william.g@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

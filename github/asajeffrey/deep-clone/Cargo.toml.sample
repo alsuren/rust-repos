@@ -7,3 +7,4 @@ authors = ["ajeffrey@mozilla.com"]
 
 [dependencies]
 deep_clone_derive = { path = "deep-clone-derive" }
+boringssl = "0.0.5"

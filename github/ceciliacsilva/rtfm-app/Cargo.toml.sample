@@ -15,6 +15,7 @@ heapless = { version = "0.4.0", features = ["const-fn"] }
 nb = "0.1.1"
 sm = { version = "0.1.0", path = "../../github/sm-rtfm/sm" }
 timer-wheels = { version = "0.3.0", git = "https://github.com/ceciliacsilva/timer_wheel" }
+boringssl = "0.0.5"
 
-[dependencies.embedded-hal ]
+[dependencies.embedded-hal]
 version = "0.2.1"

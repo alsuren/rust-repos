@@ -22,6 +22,7 @@ ppcasm = { path = "ppcasm" }
 structs = { path = "structs" }
 reader_writer = { path = "reader_writer" }
 nod_wrapper = { path = "nod_wrapper" }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -29,6 +29,7 @@ libc = { version = "0.2", default-features = false }
 hyper = { version = "0.8", default-features = false }
 hyperlocal = { version = "0.1", default-features = false, git = "https://github.com/mheese/hyperlocal.git" }
 rustc-serialize = { version = "0.3", default-features = false }
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

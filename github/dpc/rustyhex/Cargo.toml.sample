@@ -8,6 +8,9 @@ authors = [ "dpc@ucore.info" ]
 name = "rustyhex"
 path = "src/main.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 
 [dependencies.piston]
 git = "https://github.com/pistondevelopers/piston/"
@@ -17,9 +20,6 @@ git = "https://github.com/gfx-rs/gfx-rs/"
 
 [dependencies.gl]
 git = "https://github.com/bjz/gl-rs"
-
-[dev_dependencies.glfw]
-git = "https://github.com/bjz/glfw-rs.git"
 
 [dependencies.glfw_window]
 git = "https://github.com/PistonDevelopers/glfw_window"
@@ -32,3 +32,6 @@ git = "https://github.com/dpc/hex2d-rs"
 
 [dependencies.obj-rs]
 git = "https://github.com/csherratt/obj-rs.git"
+
+[dev_dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs.git"

@@ -9,3 +9,4 @@ etcommon-rlp = { version = "0.2", default-features = false }
 etcommon-hexutil = { version = "0.2", default-features = false }
 etcommon-block-core = { version = "0.1", default-features = false }
 sputnikvm = { version = "0.8", default-features = false, features = ["rust-secp256k1"] }
+boringssl = "0.0.5"

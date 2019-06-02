@@ -11,8 +11,14 @@ keywords = ["fst", "fast-succinct-trie", "surf", "louds-ds"] # up to 5 keywords,
 categories = ["compression", "data-structures"]
 edition = "2018"
 
+[package.metadata.release]
+tag-prefix = "v"
+pre-release-hook = ["emacs", "CHANGELOG.md"]  # Finally, I found this hook so effective!!
+disable-publish = true
+
 [dependencies]
 fid-rs = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"
@@ -20,8 +26,3 @@ criterion = "0.2"
 [[bench]]
 name = "bench"
 harness = false
-
-[package.metadata.release]
-tag-prefix = "v"
-pre-release-hook = ["emacs", "CHANGELOG.md"]  # Finally, I found this hook so effective!!
-disable-publish = true

@@ -8,3 +8,4 @@ license = "MIT"
 [dependencies]
 curve25519-dalek = "^0.16"
 rand = { version = "0.4", optional = false }
+boringssl = "0.0.5"

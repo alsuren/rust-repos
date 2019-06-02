@@ -8,6 +8,7 @@ build = "src/build.rs"
 [dependencies]
 protobuf = "*"
 byteorder = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 protobuf-codegen-pure = "*"

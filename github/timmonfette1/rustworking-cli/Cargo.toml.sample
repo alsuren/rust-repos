@@ -9,6 +9,7 @@ description = "CLI tool for networking functions implemented in Rust"
 [dependencies]
 argparse = "*"
 rustworking-core = { path = "rustworking-core" }
+boringssl = "0.0.5"
 
 [workspace]
 members = ["rustworking-core"]

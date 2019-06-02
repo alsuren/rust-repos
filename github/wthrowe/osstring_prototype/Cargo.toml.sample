@@ -11,3 +11,6 @@ repository = "https://github.com/wthrowe/osstring_prototype"
 readme = "README"
 
 license = "Apache-2.0/MIT"
+
+[dependencies]
+boringssl = "0.0.5"

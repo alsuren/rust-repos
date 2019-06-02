@@ -17,6 +17,7 @@ image = "0.19.*"
 regex = "*"
 lazy_static = "*"
 urlparse = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_cli = "*"

@@ -5,3 +5,6 @@ description = "State Machine Library"
 authors = [
     "KokaKiwi <kokakiwi@kokakiwi.net>",
 ]
+
+[dependencies]
+boringssl = "0.0.5"

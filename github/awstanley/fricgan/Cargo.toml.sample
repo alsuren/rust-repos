@@ -14,9 +14,15 @@ include = [
     "Cargo.toml",
 ]
 
+[package.metadata.docs.rs]
+all-features = true
+
 [badges]
 appveyor = { repository = "awstanley/fricgan" }
 travis-ci = { repository = "awstanley/fricgan" }
+
+[dependencies]
+boringssl = "0.0.5"
 
 [dependencies.num-traits]
 version = "0.2"
@@ -88,6 +94,3 @@ vlq-string = ["std", "vlq", "num-traits", "num-traits/std"]
 
 [dev-dependencies]
 tempdir = "0.3"
-
-[package.metadata.docs.rs]
-all-features = true

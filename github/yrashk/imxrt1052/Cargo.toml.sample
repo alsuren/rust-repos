@@ -10,6 +10,7 @@ bare-metal = "0.1"
 cortex-m = "0.4"
 vcell = "0.1"
 cortex-m-rt = { version = "0.4", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["rt"]

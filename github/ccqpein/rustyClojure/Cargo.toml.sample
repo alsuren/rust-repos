@@ -9,3 +9,4 @@ members = [".", "parser"]
 
 [dependencies]
 parser = {path = "parser"}
+boringssl = "0.0.5"

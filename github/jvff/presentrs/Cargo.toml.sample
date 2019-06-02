@@ -14,3 +14,4 @@ failure = { version = "0.1", optional = true }
 html5ever = { version ="0.22", optional = true }
 stdweb = { version = "0.4", optional = true }
 yew = { git = "https://github.com/DenisKolodin/yew", optional = true }
+boringssl = "0.0.5"

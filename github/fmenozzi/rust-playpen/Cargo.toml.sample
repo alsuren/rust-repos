@@ -10,5 +10,6 @@ cli-utils = { path = "cli-utils" }
 gui-test = { path = "gui-test" }
 glium-test = { path = "glium-test" }
 gfx-test = { path = "gfx-test" }
+boringssl = "0.0.5"
 
 [workspace]

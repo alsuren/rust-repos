@@ -8,10 +8,6 @@ edition = "2018"
 name = "native_codec_impl"
 crate-type = ["cdylib"]
 
-[dependencies.cpython]
-version = "0.2.1"
-features = ["extension-module"]
-
 [dependencies]
 lazy_static = "1.1.0"
 byte = "0.2"
@@ -19,3 +15,8 @@ compress = "0.1.2"
 failure = "0.1.2"
 empty = "0.0.4"
 byteorder = "1.2.6"
+boringssl = "0.0.5"
+
+[dependencies.cpython]
+version = "0.2.1"
+features = ["extension-module"]

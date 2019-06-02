@@ -28,6 +28,7 @@ redis = "*"
 serde = "~0.8"
 serde_json = "~0.8"
 toml = "~0.2"
+boringssl = "0.0.5"
 
 [dependencies.coio]
 git = "https://github.com/zonyitoo/coio-rs"

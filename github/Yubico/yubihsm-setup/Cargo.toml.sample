@@ -21,18 +21,6 @@ authors = ["Alessio Di Mauro <alessio@yubico.com>"]
 description = "Setup tool for YubiHSM 2"
 license = "Apache-2.0"
 
-[dependencies]
-base64 = "0.7.0"
-clap = "2.26.0"
-lazy_static = "0.2.8"
-regex = "0.2.10"
-rusty_secrets = "0.0.2"
-scan_dir = "0.3.3"
-
-[dependencies.yubihsmrs]
-path = "../yubihsmrs/"
-version = "2.0.0"
-
 [package.metadata.deb]
 maintainer = "Alessio Di Mauro <alessio@yubico.com>"
 copyright = "2018, Yubico"
@@ -47,3 +35,16 @@ assets = [
     ["target/release/yubihsm-setup", "usr/bin/", "755"],
     ["man/yubihsm-setup.1", "usr/share/man/man1/yubihsm-setup.1", "644"],
 ]
+
+[dependencies]
+base64 = "0.7.0"
+clap = "2.26.0"
+lazy_static = "0.2.8"
+regex = "0.2.10"
+rusty_secrets = "0.0.2"
+scan_dir = "0.3.3"
+boringssl = "0.0.5"
+
+[dependencies.yubihsmrs]
+path = "../yubihsmrs/"
+version = "2.0.0"

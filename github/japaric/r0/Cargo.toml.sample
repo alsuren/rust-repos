@@ -7,3 +7,6 @@ license = "MIT OR Apache-2.0"
 name = "r0"
 repository = "https://github.com/japaric/r0"
 version = "0.2.2"
+
+[dependencies]
+boringssl = "0.0.5"

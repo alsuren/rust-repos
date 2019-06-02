@@ -6,6 +6,7 @@ authors = ["Robert Creed <kareed44@gmail.com>"]
 [dependencies]
 gio = "0.4.0"
 gtk = "0.4.0"
+boringssl = "0.0.5"
 
 [features]
 gtk_3_16 = ["gtk/v3_16"]

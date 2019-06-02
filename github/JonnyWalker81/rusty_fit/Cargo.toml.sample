@@ -6,6 +6,7 @@ authors = ["Jonathan Rothberg <jrothberg@bluebeam.com>"]
 [dependencies]
 byteorder = "^0.4.2"
 rustc-serialize = "0.3.16"
+boringssl = "0.0.5"
 
 
 [dependencies.chrono]

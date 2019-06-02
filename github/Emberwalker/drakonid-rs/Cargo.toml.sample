@@ -31,3 +31,4 @@ url_serde = "0.2"
 
 # TODO: Remove this once RLS + Clippy has stabilised (and has support in VSCode)
 clippy = { version = "*", optional = true }
+boringssl = "0.0.5"

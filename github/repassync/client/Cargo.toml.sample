@@ -20,6 +20,7 @@ serde_bytes = "0.10"
 pwquality = "0.2"
 env_logger = "0.4"
 log = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.chrono]
 version = "0.4"

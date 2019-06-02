@@ -5,6 +5,7 @@ authors = ["asolove <asolove@gmail.com>"]
 
 [dependencies]
 iron = "*"
+boringssl = "0.0.5"
 
 [dependencies.bodyparser]
 git = "https://github.com/iron/body-parser.git"

@@ -3,6 +3,11 @@ name = "mapgen"
 version = "0.0.1"
 authors = ["Michael Chesser"]
 
+[dependencies]
+rand = "*"
+num = "*"
+boringssl = "0.0.5"
+
 [dependencies.bitmap]
 git = "https://github.com/quvarxa/bitmap.git"
 
@@ -14,7 +19,3 @@ git = "https://github.com/quvarxa/interpolate.git"
 
 [dependencies.basic2d]
 git = "https://github.com/quvarxa/basic2d.git"
-
-[dependencies]
-rand = "*"
-num = "*"

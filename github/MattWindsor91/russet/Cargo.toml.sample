@@ -4,6 +4,9 @@ name = "russet"
 version = "0.0.1"
 authors = ["Matt Windsor <mbw500@york.ac.uk>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.quickcheck]
 git = "https://github.com/BurntSushi/quickcheck"
 

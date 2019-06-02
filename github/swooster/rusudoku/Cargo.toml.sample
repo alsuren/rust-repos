@@ -6,3 +6,6 @@ authors = ["Steve Wooster <s.f.m.wooster+github@gmail.com>"]
 [[bin]]
 name = "rusudoku"
 doc = false
+
+[dependencies]
+boringssl = "0.0.5"

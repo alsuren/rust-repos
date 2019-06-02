@@ -10,10 +10,11 @@ clap = "2.23.3"
 serde = "1.0.2"
 serde_derive = "1.0.2"
 serde_json = "1.0.1"
-
-[profile.release]
-lto = true
+boringssl = "0.0.5"
 
 [dependencies.cgmath]
 version = "0.15.0"
 features = ["serde"]
+
+[profile.release]
+lto = true

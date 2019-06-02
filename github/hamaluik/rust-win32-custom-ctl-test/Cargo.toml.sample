@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 winapi = { version = "0.3", features = ["windef", "winuser", "libloaderapi", "wingdi", "windowsx", "errhandlingapi", "commctrl"] }
+boringssl = "0.0.5"

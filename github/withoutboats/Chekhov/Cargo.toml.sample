@@ -5,3 +5,6 @@ license = "GPLv3.0+ WITH Classpath-exception-2.0"
 version = "0.1.0"
 authors = ["Lee <lee@libertad.ucsd.edu>"]
 readme = "REAMDE.md"
+
+[dependencies]
+boringssl = "0.0.5"

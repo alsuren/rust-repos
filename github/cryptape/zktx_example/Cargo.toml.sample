@@ -6,6 +6,7 @@ version = "0.0.1"
 rand = "0.3"
 rustc-hex = "1.0"
 cita-tool = { git = "https://github.com/cryptape/cita-cli.git", branch = "master" }
+boringssl = "0.0.5"
 
 [dependencies.zktx]
 git = "https://github.com/cryptape/zktx.git"

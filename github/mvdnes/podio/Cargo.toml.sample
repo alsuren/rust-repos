@@ -10,3 +10,6 @@ documentation = "http://mvdnes.github.io/rust-docs/podio/podio/index.html"
 description = """
 Additional trait for Read and Write to read and write Plain Old Data
 """
+
+[dependencies]
+boringssl = "0.0.5"

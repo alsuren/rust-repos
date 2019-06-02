@@ -8,6 +8,7 @@ edition = "2018"
 clap = "2.32.0"
 failure = "0.1"
 subprocess = "0.1.18"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3"

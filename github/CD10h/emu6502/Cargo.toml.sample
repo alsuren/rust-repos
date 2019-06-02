@@ -7,6 +7,7 @@ edition = "2018"
 
 [dependencies]
 bitfield = "0.13.1"
+boringssl = "0.0.5"
 
 [profile.dev]
 overflow-checks = false

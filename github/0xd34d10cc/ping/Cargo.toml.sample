@@ -11,6 +11,7 @@ tokio-icmp = "0.1.0"
 pnet_packet = "0.21.0"
 byteorder = "1.2.6"
 structopt = "0.2.12"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

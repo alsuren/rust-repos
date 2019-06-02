@@ -4,8 +4,9 @@ description = "Graphical interface for ndo."
 version = "0.1.0"
 authors = ["Søren Mortensen <soren@sorenmortensen.com>"]
 
-[dependencies]
-
 [package.metadata.bundle]
 name = "ndo"
 identifier = "com.sorenmortensen.ndo"
+
+[dependencies]
+boringssl = "0.0.5"

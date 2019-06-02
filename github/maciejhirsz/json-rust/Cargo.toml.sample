@@ -6,3 +6,6 @@ description = "JSON implementation in Rust"
 repository = "https://github.com/maciejhirsz/json-rust"
 documentation = "https://docs.rs/json/"
 license = "MIT/Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

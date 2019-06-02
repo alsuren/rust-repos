@@ -11,9 +11,12 @@ license = "MIT OR Apache-2.0"
 [features]
 no_std = []
 
+[dev-dependencies]
+libc = "0.2"
+
 [dev-dependencies.va_list-helper]
 version = "0.0.2"
 path = "deps/helper/"
 
-[dev-dependencies]
-libc = "0.2"
+[dependencies]
+boringssl = "0.0.5"

@@ -86,24 +86,19 @@ wasm-bindgen = { version = "0.2.45", features = ["serde-serialize"], optional = 
 js-sys = { version = "0.3.22", optional = true }
 wee_alloc = { version = "0.4.4", optional = true }
 wasm-logger = { version = "0.1.1", optional = true }
+boringssl = "0.0.5"
 
 [dependencies.linked-hash-map]
 version = "0.5.1"
 features = ["serde_impl"]
-
-[target.'cfg(target_os = "android")'.dependencies]
-android_logger = "0.7.0"
 
 [dependencies.web-sys]
 version = "0.3.22"
 optional = true
 features = [ "Crypto", "WorkerGlobalScope", "XmlHttpRequest", "XmlHttpRequestResponseType", "Blob"]
 
-[dev-dependencies]
-bytes = "0.4.12"
-tempdir = "0.3.7"
-rand = "0.6.5"
-rand_xorshift = "0.1.1"
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger = "0.7.0"
 
 [target.'cfg(not(target_os = "windows"))'.build-dependencies]
 pkg-config = "0.3.14"
@@ -116,3 +111,9 @@ tar = "0.4"
 tempfile = "3.0"
 zip = "0.5"
 cc = "1"
+
+[dev-dependencies]
+bytes = "0.4.12"
+tempdir = "0.3.7"
+rand = "0.6.5"
+rand_xorshift = "0.1.1"

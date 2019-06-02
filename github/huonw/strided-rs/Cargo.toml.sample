@@ -24,3 +24,6 @@ num = "0"
 
 [features]
 unstable = []
+
+[dependencies]
+boringssl = "0.0.5"

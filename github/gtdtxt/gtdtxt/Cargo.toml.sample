@@ -18,6 +18,10 @@ path = "src/main.rs"
 opt-level = 0      # controls the `--opt-level` the compiler builds with
 debug = true       # controls whether the compiler passes `-g`
 
+[dependencies]
+clippy = {version = "*", optional = true}
+boringssl = "0.0.5"
+
 [dependencies.debug_unreachable]
 version = "0.1"
 
@@ -47,9 +51,6 @@ version = "2"
 [dependencies.enum-set]
 git = "https://github.com/contain-rs/enum-set"
 rev = "c6e7daf0de920897389d3418ab01d0a0bc25200a"
-
-[dependencies]
-clippy = {version = "*", optional = true}
 
 [features]
 default = []

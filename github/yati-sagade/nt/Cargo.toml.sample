@@ -3,11 +3,12 @@ name = "nt"
 version = "0.1.0"
 authors = ["Yati Sagade <yati.sagade@gmail.com>"]
 
-[dependencies.sqlite3]
-git = "https://github.com/linuxfood/rustsqlite.git"
-
 [dependencies]
 time = "0.1"
 getopts = "0.2"
 rand = "0.3.8"
+boringssl = "0.0.5"
+
+[dependencies.sqlite3]
+git = "https://github.com/linuxfood/rustsqlite.git"
 

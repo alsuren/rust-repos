@@ -5,3 +5,6 @@ authors = [ ]
 
 [lib]
 name = "comm"
+
+[dependencies]
+boringssl = "0.0.5"

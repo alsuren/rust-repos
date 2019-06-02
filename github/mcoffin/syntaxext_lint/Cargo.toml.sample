@@ -13,3 +13,6 @@ Common lints for creating syntax extensions
 [lib]
 name = "syntaxext_lint"
 plugin = true
+
+[dependencies]
+boringssl = "0.0.5"

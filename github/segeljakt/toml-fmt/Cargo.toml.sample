@@ -11,3 +11,4 @@ license = "MIT"
 
 [dependencies]
 toml = { version = "0.5.1", features = ["preserve_order"] }
+boringssl = "0.0.5"

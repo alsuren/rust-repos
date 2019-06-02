@@ -6,3 +6,4 @@ authors = ["ab0v3g4me <udzizz@gmail.com>"]
 [dependencies]
 amethyst = {version="0.10.0", features=["nightly"]}
 rand = "*"
+boringssl = "0.0.5"

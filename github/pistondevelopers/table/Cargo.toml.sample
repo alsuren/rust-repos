@@ -15,3 +15,6 @@ homepage = "https://github.com/pistondevelopers/table"
 name = "table"
 path = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

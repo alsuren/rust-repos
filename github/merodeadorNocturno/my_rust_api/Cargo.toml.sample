@@ -12,6 +12,7 @@ env_logger = "0.3"
 rustc-serialize = "0.3"
 chrono = { version = "0.2", features = ["rustc-serialize"] }
 uuid = { version = "0.2", features = ["v4", "rustc-serialize"] }
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 3

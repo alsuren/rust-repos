@@ -6,6 +6,7 @@ authors = ["Lionel Flandrin <lionel@svkt.org>"]
 [dependencies]
 rusqlite = "0.12"
 time = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 features = ["v3_12"]

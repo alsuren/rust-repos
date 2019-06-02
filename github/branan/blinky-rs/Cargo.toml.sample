@@ -6,6 +6,7 @@ build = "build.rs"
 
 [dependencies]
 teensy = { path = "./teensy" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 rustc-serialize = "0.3.19"

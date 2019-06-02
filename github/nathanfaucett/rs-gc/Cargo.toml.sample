@@ -11,6 +11,7 @@ repository = "https://github.com/nathanfaucett/rs-gc.git"
 homepage = "https://github.com/nathanfaucett/rs-gc"
 
 [dependencies]
+boringssl = "0.0.5"
 [dev-dependencies]
 
 [features]

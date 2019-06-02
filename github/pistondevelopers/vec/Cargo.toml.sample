@@ -19,3 +19,6 @@ debug = false
 opt-level = 3
 debug = false
 
+[dependencies]
+boringssl = "0.0.5"
+

@@ -9,4 +9,5 @@ path = "lib.rs"
 [dependencies]
 freetype-rs = "*"
 libc = "*"
+boringssl = "0.0.5"
 

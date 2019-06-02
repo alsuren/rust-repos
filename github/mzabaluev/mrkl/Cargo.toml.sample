@@ -17,6 +17,7 @@ serialization = ["serde", "serde_derive", "generic-array/serde"]
 
 [dependencies]
 generic-array = "0.12"
+boringssl = "0.0.5"
 
 [dependencies.digest-hash]
 version = "0.3"

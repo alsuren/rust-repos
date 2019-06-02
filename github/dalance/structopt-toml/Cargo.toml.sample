@@ -10,6 +10,19 @@ readme = "README.md"
 description = "An default value loader from TOML for structopt"
 build = "build.rs"
 
+[package.metadata.release]
+dev-version-ext            = "pre"
+pre-publish-hook           = ["sh", "-c", "if [ \"$DRY_RUN\" = \"false\" ]; then cd structopt-toml-derive; cargo publish; else echo \"cd structopt-toml-derive; cargo publish;\"; fi"]
+pre-release-commit-message = "Prepare to v{{version}}"
+pro-release-commit-message = "Start next development iteration v{{version}}"
+pre-release-replacements   = [
+    { file = "README.md", search = "structopt-toml = \"[a-z0-9\\.-]+\"", replace = "structopt-toml = \"{{version}}\"" },
+    { file = "Cargo.toml", search = "structopt-toml-derive = \\{ version = \"[a-z0-9\\.-]+\"", replace = "structopt-toml-derive = { version = \"{{version}}\"" },
+    { file = "structopt-toml-derive/Cargo.toml", search = "version = \"[a-z0-9\\.-]+\"", replace = "version = \"{{version}}\"" },
+]
+tag-message                = "Bump version to {{version}}"
+tag-prefix                 = "v"
+
 [badges]
 travis-ci = { repository = "dalance/structopt-toml" }
 codecov   = { repository = "dalance/structopt-toml", branch = "master", service = "github" }
@@ -25,22 +38,10 @@ serde                 = "1.0.33"
 serde_derive          = "1.0.33"
 structopt             = { version = "0.2.5", default-features = false }
 structopt-toml-derive = { version = "0.4.0", path = "structopt-toml-derive" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 skeptic = "0.13"
 
 [dev-dependencies]
 skeptic = "0.13"
-
-[package.metadata.release]
-dev-version-ext            = "pre"
-pre-publish-hook           = ["sh", "-c", "if [ \"$DRY_RUN\" = \"false\" ]; then cd structopt-toml-derive; cargo publish; else echo \"cd structopt-toml-derive; cargo publish;\"; fi"]
-pre-release-commit-message = "Prepare to v{{version}}"
-pro-release-commit-message = "Start next development iteration v{{version}}"
-pre-release-replacements   = [
-    { file = "README.md", search = "structopt-toml = \"[a-z0-9\\.-]+\"", replace = "structopt-toml = \"{{version}}\"" },
-    { file = "Cargo.toml", search = "structopt-toml-derive = \\{ version = \"[a-z0-9\\.-]+\"", replace = "structopt-toml-derive = { version = \"{{version}}\"" },
-    { file = "structopt-toml-derive/Cargo.toml", search = "version = \"[a-z0-9\\.-]+\"", replace = "version = \"{{version}}\"" },
-]
-tag-message                = "Bump version to {{version}}"
-tag-prefix                 = "v"

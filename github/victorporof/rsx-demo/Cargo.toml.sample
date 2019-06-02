@@ -26,3 +26,4 @@ lto = true
 rsx = { git = "https://github.com/victorporof/rsx.git", default-features = false }
 # rsx-embedding = { git = "https://github.com/victorporof/rsx-embedding.git", default-features = false }
 rsx-embedding = { path = "../reactenstein/rsx-embedding/rsx-targets", default-features = false }
+boringssl = "0.0.5"

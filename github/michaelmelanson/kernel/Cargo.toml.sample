@@ -3,6 +3,11 @@ name = "kernel"
 version = "0.1.0"
 authors = ["Michael Melanson <michael@michaelmelanson.net>"]
 
+[package.metadata.bootimage]
+default-target = "x86_64-kernel.json"
+output = "target/bootimage.bin"
+minimum-image-size=1
+
 [dependencies]
 spin = "*"
 volatile = "*"
@@ -11,6 +16,7 @@ x86 = "*"
 x86_64 = "*"
 os_bootinfo = "*"
 bootloader = { path = "../bootloader" }
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"
@@ -21,8 +27,3 @@ panic = "abort"
 
 [profile.release]
 panic = "abort"
-
-[package.metadata.bootimage]
-default-target = "x86_64-kernel.json"
-output = "target/bootimage.bin"
-minimum-image-size=1

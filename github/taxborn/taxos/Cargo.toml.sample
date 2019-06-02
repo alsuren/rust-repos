@@ -4,17 +4,21 @@ version = "0.1.0"
 authors = ["Braxton Fair <hello@taxborn.com>"]
 edition = "2018"
 
+[package.metadata.bootimage]
+default-target = "x86_64-taxos.json"
+
 [dependencies]
 bootloader = "0.5.3"
 volatile = "0.2.3"
 spin = "0.4.9"
-
-[dev-dependencies]
-array-init = "0.0.3"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"
 features = ["spin_no_std"] # Make sure that we don't use the std library
+
+[dev-dependencies]
+array-init = "0.0.3"
 
 # This profile is used for regular `cargo build` 
 [profile.dev]
@@ -23,6 +27,3 @@ panic = "abort" # This statement disables stack unwinding on panic
 # This profile is used for `cargo build --rekease`
 [profile.release]
 panic = "abort" # This statement disable stack unwinding on panic
-
-[package.metadata.bootimage]
-default-target = "x86_64-taxos.json"

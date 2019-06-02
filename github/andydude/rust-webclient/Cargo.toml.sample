@@ -7,3 +7,6 @@ authors = ["Andrew Robbins <and_j_rob@yahoo.com>"]
 name = "webclient"
 path = "src/lib.rs"
 crate-type = ["dylib", "rlib"]
+
+[dependencies]
+boringssl = "0.0.5"

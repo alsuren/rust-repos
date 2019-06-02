@@ -7,3 +7,6 @@ authors = [ "Ulf Karlsson <ukarlsson@gmail.com>" ]
 [[bin]]
 
 name = "um"
+
+[dependencies]
+boringssl = "0.0.5"

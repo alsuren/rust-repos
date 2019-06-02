@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 liboffsetup = { git = "https://github.com/dev10/liboffsetup", branch = "feature/allow-overriding-install-priorities" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_cmd = "0.11"

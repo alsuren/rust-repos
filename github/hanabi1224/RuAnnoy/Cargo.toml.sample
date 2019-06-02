@@ -15,6 +15,7 @@ cffi = ["libc"]
 [dependencies]
 memmap = "0.7"
 libc = { version = "0.2", optional = true }
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["lib", "cdylib"]

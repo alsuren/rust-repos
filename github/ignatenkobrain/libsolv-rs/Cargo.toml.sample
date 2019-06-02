@@ -7,3 +7,4 @@ authors = ["Igor Gnatenko <ignatenko@redhat.com>"]
 members = ["systest"]
 
 [dependencies]
+boringssl = "0.0.5"

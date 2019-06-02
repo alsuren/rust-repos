@@ -14,6 +14,7 @@ piston2d-sprite = "0.50.0"
 piston-ai_behavior = "0.27.0"
 uuid = { version = "0.6", features = ["v4"] } 
 pathfinding = "1.1.12"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "piston_game"

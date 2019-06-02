@@ -11,6 +11,7 @@ time = "0.1.38"
 crossbeam-deque = "0.1.0"
 crossbeam = "0.3.0"
 rand = "0.4"
+boringssl = "0.0.5"
 
 [features]
 par = [] # Parallel runtime if enabled

@@ -3,3 +3,6 @@ name = "mmmbop"
 version = "0.0.1"
 authors = ["ajeffrey@mozilla.com"]
 license = "MPL-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

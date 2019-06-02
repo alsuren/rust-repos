@@ -18,6 +18,7 @@ memmap = { version = "0.5.2", optional = true }
 nix = "0.8.0"
 serde = "0.9.13"
 serde_derive = "0.9.13"
+boringssl = "0.0.5"
 
 [dependencies.sandheap]
 path = "../sandheap"

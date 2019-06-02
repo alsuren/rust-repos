@@ -11,6 +11,7 @@ regex = "1"
 lazy_static = "*"
 clap = "*"
 failure = "*"
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 libc = { git = "https://github.com/rust-lang/libc" } 

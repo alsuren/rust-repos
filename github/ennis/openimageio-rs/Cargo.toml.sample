@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 openimageio-sys = {path = "openimageio-sys"}
 libc = "*"
+boringssl = "0.0.5"

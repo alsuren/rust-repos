@@ -10,6 +10,9 @@ keywords = ["daemon", "daemonize", "unix"]
 categories = ["os::unix-apis"]
 license = "GPL-3.0"
 repository = "https://github.com/susytech/susy-daemonize"
+
+[dependencies]
+boringssl = "0.0.5"
 [dependencies.ansi_term]
 version = "0.11"
 registry="susytech"

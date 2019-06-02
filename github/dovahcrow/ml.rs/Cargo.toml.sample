@@ -3,6 +3,9 @@ name = "ml"
 version = "0.0.1"
 authors = [ "wooya <doomsplayer@gmail.com>" ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.matrixrs]
 name = "matrixrs"
 git = "https://github.com/doomsplayer/matrixrs"

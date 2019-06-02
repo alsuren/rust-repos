@@ -5,3 +5,4 @@ authors = ["Holger Arnold <holgerar@gmail.com>"]
 
 [dependencies]
 juice = { path = "../juice" }
+boringssl = "0.0.5"

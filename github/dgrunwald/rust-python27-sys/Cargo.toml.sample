@@ -21,6 +21,7 @@ exclude = [
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 pkg-config = "0.3"

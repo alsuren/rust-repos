@@ -8,3 +8,4 @@ authors = ["Steven Troxler <steven.troxler@gmail.com>"]
 [dependencies]
 sltf_parse = {path = "sltf_parse"}
 sltf_vm = {path = "sltf_vm"}
+boringssl = "0.0.5"

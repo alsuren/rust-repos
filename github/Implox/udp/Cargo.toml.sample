@@ -6,6 +6,7 @@ authors = ["alex"]
 [dependencies]
 rustc-serialize = "0.3"
 bincode = "*"
+boringssl = "0.0.5"
 
 
 [[bin]]

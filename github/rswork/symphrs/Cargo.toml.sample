@@ -12,6 +12,7 @@ Event driven web framework writen in Rust.
 """
 
 [dependencies]
+boringssl = "0.0.5"
 
 [[bin]]
 name = "symphrs"

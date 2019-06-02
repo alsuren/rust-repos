@@ -7,4 +7,5 @@ authors = ["Lyndon Maydwell <lyndon@sordina.net>"]
 crate-type = ["cdylib"]
 
 [dependencies]
+boringssl = "0.0.5"
 # pikelet = { git = "https://github.com/pikelet-lang/pikelet" }

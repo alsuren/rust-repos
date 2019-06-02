@@ -10,3 +10,4 @@ repository = "https://github.com/ojhp/cart"
 travis-ci = { repository = "ojhp/cart" }
 
 [dependencies]
+boringssl = "0.0.5"

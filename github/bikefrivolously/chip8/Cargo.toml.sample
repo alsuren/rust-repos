@@ -4,3 +4,6 @@ name = "chip8"
 version = "0.0.1"
 authors = [ "Dan Martins <bikefriviously@users.noreply.github.com>" ]
 
+[dependencies]
+boringssl = "0.0.5"
+

@@ -5,3 +5,6 @@ authors = ["Sebastian Waisbrot <seppo0010@gmail.com>"]
 
 [lib]
 crate-type = ["cdylib"]
+
+[dependencies]
+boringssl = "0.0.5"

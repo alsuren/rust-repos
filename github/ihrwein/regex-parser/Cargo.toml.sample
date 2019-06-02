@@ -11,6 +11,7 @@ crate-type = ["rlib", "dylib"]
 syslog-ng-common = "0.8"
 regex = "0.1"
 log = "0.3"
+boringssl = "0.0.5"
 
 [build-dependencies]
 syslog-ng-build = "0.2"

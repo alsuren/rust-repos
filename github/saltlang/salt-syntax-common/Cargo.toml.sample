@@ -5,4 +5,5 @@ authors = ["Eric McCorkle <eric@metricspace.net>"]
 
 [dependencies]
 langtools-common = { version = "*", git = "https://github.com/saltlang/langtools-common", branch = "devel" }
+boringssl = "0.0.5"
 

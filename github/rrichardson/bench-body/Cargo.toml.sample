@@ -13,6 +13,7 @@ bytes = "0.4.10"
 lazy_static = "1.2.0"
 tokio-executor = "0.1.5"
 tokio-reactor = "0.1.6"
+boringssl = "0.0.5"
 
 [[bench]]
 name = "bench"

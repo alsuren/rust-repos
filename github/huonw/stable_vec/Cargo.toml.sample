@@ -7,3 +7,6 @@ authors = [ "Huon Wilson <dbau.pp@gmail.com>" ]
 [[lib]]
 
 name = "stable_vec"
+
+[dependencies]
+boringssl = "0.0.5"

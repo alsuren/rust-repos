@@ -16,6 +16,7 @@ time = "0.1"
 gfx = { path = "../gfx/src/render", version = "*" }
 gfx_app = { path="../gfx", branch="sciter-window", version="*" }
 sciter-rs = { git="https://github.com/pravic/rust-sciter", version="*" }
+boringssl = "0.0.5"
 
 [dev_dependencies]
 log = "0.3"

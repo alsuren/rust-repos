@@ -9,3 +9,6 @@ edition = "2018"
 
 [features]
 
+[dependencies]
+boringssl = "0.0.5"
+

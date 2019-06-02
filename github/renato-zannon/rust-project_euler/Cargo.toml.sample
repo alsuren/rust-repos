@@ -13,6 +13,7 @@ shared = { path = "shared" }
 rayon = "1.0.1"
 fnv = "1.0.6"
 smallvec = "0.6.2"
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

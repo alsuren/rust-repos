@@ -13,6 +13,7 @@ categories = ["development-tools::testing", "development-tools::procedural-macro
 quote = "0.3"
 syn = { version = "0.11.11", features = ["full"] }
 trait_derive_core = { version = "0.1.0", path = "core" }
+boringssl = "0.0.5"
 
 [lib]
 proc-macro = true

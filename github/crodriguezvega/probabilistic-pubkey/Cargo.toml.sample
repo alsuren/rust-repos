@@ -4,6 +4,12 @@ version = "0.1.0"
 authors = ["Carlos Rodriguez-Vega <crodveg@yahoo.es>"]
 edition = "2018"
 
+[package.metadata.docs.rs]
+rustdoc-args = [
+    "--html-in-header",
+    ".cargo/registry/src/github.com-1ecc6299db9ec823/katex-doc-0.1.0/katex.html",
+]
+
 [dependencies]
 bitvec = "0.10.0"
 failure = "0.1.5"
@@ -11,16 +17,11 @@ num-integer = "0.1"
 num-traits = "0.2"
 primal = "0.2"
 rand = "0.6"
-
-[dev-dependencies]
-proptest = "0.8.7"
+boringssl = "0.0.5"
 
 [dependencies.num-bigint]
 version = "0.2.2"
 features = ["rand"]
 
-[package.metadata.docs.rs]
-rustdoc-args = [
-    "--html-in-header",
-    ".cargo/registry/src/github.com-1ecc6299db9ec823/katex-doc-0.1.0/katex.html",
-]
+[dev-dependencies]
+proptest = "0.8.7"

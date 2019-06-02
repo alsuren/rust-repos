@@ -27,6 +27,7 @@ tokio-timer = { git = "https://github.com/tokio-rs/tokio-timer" }
 rand = "0.3"
 chrono = "0.2"
 crossbeam = "*"
+boringssl = "0.0.5"
 
 
 [replace]

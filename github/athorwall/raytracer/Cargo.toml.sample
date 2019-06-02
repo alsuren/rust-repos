@@ -6,6 +6,7 @@ authors = ["Andrew Thorwall <anthor@umich.edu>"]
 [dependencies]
 cgmath = "0.16.1"
 collision = "0.18.0"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.31.0"

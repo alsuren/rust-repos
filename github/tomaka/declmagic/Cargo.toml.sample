@@ -8,6 +8,9 @@ tags = []
 [[lib]]
 name = "declmagic"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rust-hl-lua]
 git = "https://github.com/tomaka/rust-hl-lua"
 

@@ -3,3 +3,6 @@
 name = "hello_world"
 version = "0.0.1"
 authors = [ "Ken W. Alger <kenalger@comcast.net>" ]
+
+[dependencies]
+boringssl = "0.0.5"

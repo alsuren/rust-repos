@@ -14,3 +14,4 @@ term = { path = "../libterm" }
 
 # not actually used but needed to always have proc_macro in the sysroot
 proc_macro = { path = "../libproc_macro" }
+boringssl = "0.0.5"

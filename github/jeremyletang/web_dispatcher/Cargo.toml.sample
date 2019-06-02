@@ -13,5 +13,8 @@ name = "dispatch_test"
 [[bin]]
 name = "readme_ex"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.route_macros]
 git = "https://github.com/jeremyletang/route_macros.git"

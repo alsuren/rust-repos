@@ -6,3 +6,4 @@ authors = ["Brandon Lucia <blucia@gmail.com>"]
 [dependencies]
 cv = { git = "https://github.com/nebgnahz/cv-rs.git" }
 cpal = { git = "https://github.com/tomaka/cpal.git" }
+boringssl = "0.0.5"

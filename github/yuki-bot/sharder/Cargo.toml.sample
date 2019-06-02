@@ -11,6 +11,7 @@ log = "~0.3"
 redis-async = { git = "https://github.com/zeyla/redis-async-rs", branch = "integer-fix" }
 tokio-core = "~0.1"
 tungstenite = "~0.5"
+boringssl = "0.0.5"
 
 [dependencies.serenity]
 branch = "v0.6.x"

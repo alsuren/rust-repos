@@ -13,6 +13,7 @@ num_cpus = "1.0"
 protobuf = "1.5"
 rand="0.5"
 serde="1.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "kvdemo"

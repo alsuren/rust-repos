@@ -9,6 +9,7 @@ failure = "*"
 regex = "*"
 pbr = "*"
 text_io = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "day-01"

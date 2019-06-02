@@ -6,3 +6,4 @@ authors = ["skeleten <janpelle.thomson@stud.tu-darmstadt.de>"]
 [dependencies]
 shn = { path = "../shn-rs" }
 encoding = "*"
+boringssl = "0.0.5"

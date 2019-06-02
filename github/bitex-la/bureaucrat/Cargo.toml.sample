@@ -8,6 +8,7 @@ jsonapi = "*"
 libc = "*"
 serde_json = "*"
 error-chain = "*"
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["rlib", "cdylib"]

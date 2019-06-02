@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 conllu-rs = { git = "https://github.com/fergusq/conllu-rs.git" }
 clap = "*"
+boringssl = "0.0.5"

@@ -3,6 +3,9 @@ name = "deko_os"
 version = "0.1.0"
 authors = ["dekokun <dekokun@hatena.ne.jp>"]
 
+[package.metadata.bootimage]
+default-target = "x86_64-deko_os.json"
+
 [profile.dev]
 
 [profile.release]
@@ -13,6 +16,7 @@ volatile = "0.2.4"
 spin = "0.4.9"
 uart_16550 = "0.1.0"
 x86_64 = "0.2.8"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"
@@ -20,6 +24,3 @@ features = ["spin_no_std"]
 
 [dev-dependencies]
 array-init = "0.0.3"
-
-[package.metadata.bootimage]
-default-target = "x86_64-deko_os.json"

@@ -13,6 +13,7 @@ inotify = "0.7.0"
 lazy_static = "1.0"
 log = "0.4"
 simple-signal = "1.1"
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.2.0"

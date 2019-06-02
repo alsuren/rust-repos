@@ -6,3 +6,4 @@ authors = ["Bernhard Schuster <bernhard@ahoi.io>"]
 [dependencies]
 futures = "*"
 error-chain = "*"
+boringssl = "0.0.5"

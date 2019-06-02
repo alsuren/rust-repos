@@ -6,3 +6,6 @@ authors = ["Jonathan Reem <jonathan.reem@gmail.com>"]
 description = "IntoVec, a trait for converting types into Vec, avoiding copies when possible."
 license = "MIT"
 
+[dependencies]
+boringssl = "0.0.5"
+

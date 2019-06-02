@@ -23,6 +23,7 @@ edition = "2018"
 nalgebra = "0.16.12"
 image = "0.20.1"
 libraytracing = { path = "libraytracing" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

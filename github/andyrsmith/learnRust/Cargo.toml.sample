@@ -7,3 +7,6 @@ authors = [ "Andy Smith smith780@gmail.com>" ]
 [[bin]]
 
 name = "pin_cracker"
+
+[dependencies]
+boringssl = "0.0.5"

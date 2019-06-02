@@ -6,6 +6,7 @@ authors = ["gnzlbg <gonzalobg88@gmail.com>"]
 [dependencies]
 time = "0.1.*"
 rayon = "0.8.*"
+boringssl = "0.0.5"
 
 [lib]
 name = "lbm"

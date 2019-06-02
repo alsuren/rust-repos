@@ -11,3 +11,6 @@ name = "computation"
 [[bin]]
 
 name = "smallstep"
+
+[dependencies]
+boringssl = "0.0.5"

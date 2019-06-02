@@ -24,6 +24,7 @@ parity-codec = '3.3'
 parking_lot = '0.7.1'
 tokio = '0.1'
 trie-root = '0.12.2'
+boringssl = "0.0.5"
 
 [dependencies.basic-authorship]
 git = 'https://github.com/paritytech/substrate'

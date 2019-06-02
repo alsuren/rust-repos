@@ -6,3 +6,4 @@ authors = ["Sean Wilson <spwilson27@gmail.com>"]
 [dependencies]
 rust-elf32 = { git = "https://github.com/spwilson2/rust-elf32" }
 memmap = { git = "https://github.com/danburkert/memmap-rs" }
+boringssl = "0.0.5"

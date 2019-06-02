@@ -4,6 +4,9 @@ name = "plane"
 version = "0.1.0"
 authors = ["UseBees <UseBees@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sdl2]
 git = "https://github.com/nukep/rust-sdl2.git"
 branch = "fix/rust-nightly"

@@ -11,6 +11,7 @@ unix_socket = '0.4.5'
 core_mini_http = { git = "https://github.com/hashmismatch/core_mini_http.rs" }
 chunked_transfer = '0.3.1'
 nom = '*'
+boringssl = "0.0.5"
 #regex='*'
 #hyper='*'
 #httparse='*'

@@ -11,3 +11,6 @@ repository = "https://github.com/murarth/option_vec"
 keywords = ["container", "option", "vec"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

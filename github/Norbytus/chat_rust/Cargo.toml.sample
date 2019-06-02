@@ -7,3 +7,4 @@ authors = ["norbytus <norbyt93@gmail.com>"]
 rmp-serialize = "*"
 rustc-serialize = "*"
 lazy-socket = { git = "https://github.com/Norbytus/lazy-socket.rs.git" }
+boringssl = "0.0.5"

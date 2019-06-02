@@ -2,6 +2,13 @@
 name = "nnshogi"
 version = "0.1.0"
 authors = ["jinpu"]
+[dependencies]
+rand = "0.4"
+getopts = "0.2"
+toml = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+boringssl = "0.0.5"
 [dependencies.usiagent]
 #git = "https://github.com/j6k1/USIAgent.git"
 path = "F:\\source\\Rust\\USIAgent"
@@ -11,9 +18,3 @@ path = "F:\\source\\Rust\\simplenn"
 [dependencies.csaparser]
 #git = "https://github.com/j6k1/CsaParser.git"
 path = "F:\\source\\Rust\\CsaParser"
-[dependencies]
-rand = "0.4"
-getopts = "0.2"
-toml = "0.4"
-serde = "1.0"
-serde_derive = "1.0"

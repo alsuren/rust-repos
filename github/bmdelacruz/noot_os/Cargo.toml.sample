@@ -8,3 +8,4 @@ edition = "2018"
 uefi = { path = "lib/uefi-rs" }
 uefi-services = { path = "lib/uefi-rs/uefi-services" }
 log = { version = "0.4", default-features = false }
+boringssl = "0.0.5"

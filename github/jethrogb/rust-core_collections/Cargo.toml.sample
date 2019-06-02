@@ -29,6 +29,7 @@ build = "build.rs"
 
 [dependencies]
 rand = { version = "0.3", optional = true, default-features = false }
+boringssl = "0.0.5"
 
 [build-dependencies]
 rustc_version = "0.1.7"

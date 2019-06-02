@@ -22,6 +22,7 @@ daemonize = ">= 0.3"
 mio = "^0.6"
 mio-extras = "2.0.5"
 slab = "^0.4"
+boringssl = "0.0.5"
 
 [build-dependencies]
 git-version = "^0.2"

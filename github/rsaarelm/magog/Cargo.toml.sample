@@ -25,6 +25,7 @@ structopt = "0.2"
 time = "0.1"
 vitral = { path = "vitral" }
 world = { path = "world" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 image = "0.21"

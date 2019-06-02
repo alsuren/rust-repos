@@ -12,3 +12,4 @@ keywords = ["map", "set", "combinations"]
 
 [dependencies]
 serde = { version="1.0", optional = true, features=["serde_derive"] }
+boringssl = "0.0.5"

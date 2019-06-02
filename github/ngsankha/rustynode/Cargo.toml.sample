@@ -3,10 +3,11 @@ name = "rustynode"
 version = "0.0.1"
 authors = ["Sankha Narayan Guria <sankha93@gmail.com>"]
 
-[dependencies.js]
-git = "https://github.com/servo/rust-mozjs"
-
 [dependencies]
 libc = "0.2"
 rustc-serialize = "0.3"
 mio = "0.4"
+boringssl = "0.0.5"
+
+[dependencies.js]
+git = "https://github.com/servo/rust-mozjs"

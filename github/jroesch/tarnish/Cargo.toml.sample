@@ -15,3 +15,6 @@ gcc = "*"
 
 [build-dependencies.bindgen]
 git = "https://github.com/crabtw/rust-bindgen.git"
+
+[dependencies]
+boringssl = "0.0.5"

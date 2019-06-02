@@ -8,3 +8,4 @@ clap = { version = "2.32", features = ["yaml"] }
 rayon = "1.0"
 ula = { path = "../ula" }
 walkdir = "2.0"
+boringssl = "0.0.5"

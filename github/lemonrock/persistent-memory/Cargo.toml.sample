@@ -29,6 +29,7 @@ parking_lot = "0.5.3"
 quick-error = "1.2.0"
 spin-locks = "0.0.2"
 syscall-alt = "0.0.12"
+boringssl = "0.0.5"
 
 [target.'cfg(not(all(target_feature = "rdrnd", any(target_arch = "x86", target_arch = "x86_64"))))'.dependencies]
 rand = "0.4"

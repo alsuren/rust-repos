@@ -7,6 +7,14 @@ authors = ["Benjamin Wang <benjamin.jl.wang@gmail.com>"]
 name = "arvoc"
 path = "src/lib.rs"
 
+[dependencies]
+getopts = "*"
+lazy_static = "*"
+libc = "*"
+llvm-sys = "39"
+regex = "*"
+boringssl = "0.0.5"
+
 [dependencies.libprelude]
 path = "src/libprelude"
 version = "*"
@@ -14,12 +22,5 @@ version = "*"
 [dependencies.libruntime]
 path = "src/libruntime"
 version = "*"
-
-[dependencies]
-getopts = "*"
-lazy_static = "*"
-libc = "*"
-llvm-sys = "39"
-regex = "*"
 
 

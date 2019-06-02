@@ -19,3 +19,4 @@ xml-rs = "0.2"
 clap = { version = "1", features = ["yaml"] }
 bincode = "0.4"
 rustc-serialize = "0.3"
+boringssl = "0.0.5"

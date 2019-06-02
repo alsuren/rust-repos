@@ -10,3 +10,4 @@ crate-type = ["dylib"]
 
 [dependencies]
 cpython = "*"
+boringssl = "0.0.5"

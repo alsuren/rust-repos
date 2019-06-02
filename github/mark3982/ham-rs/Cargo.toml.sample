@@ -4,6 +4,9 @@ version = "0.3.48"
 authors = ["Leonard Kevin McGuire Jr. <kmcg3413@gmail.com>"]
 
 [lib]
+[dependencies]
+byteorder = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.lodepng]
 git = "https://github.com/pornel/lodepng-rust.git"
@@ -12,5 +15,3 @@ git = "https://github.com/pornel/lodepng-rust.git"
 [dependencies.time]
 [dependencies.alsa]
 git = "https://github.com/cyndis/rust-alsa.git"
-[dependencies]
-byteorder = "0.3"

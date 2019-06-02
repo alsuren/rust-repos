@@ -4,5 +4,6 @@ version = "0.1.0"
 authors = ["Kevin Choubacha <kchoubacha@weedmaps.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 [dependencies.redis]
 version = "*"

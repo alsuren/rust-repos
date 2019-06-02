@@ -23,6 +23,7 @@ serde_json = "0.6.0"
 uuid = "0.1.18"
 walkdir = "0.1.5"
 yaml-rust = "0.2.2"
+boringssl = "0.0.5"
 
 [dependencies.handlebars]
 features = ["serde_type"]

@@ -29,6 +29,7 @@ rustc-serialize = "0.3"
 disk_backed = { path = "disk_backed" }
 human_readable = { path = "human_readable" }
 wrapper_struct = { path = "wrapper_struct" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 testutil = { path = "testutil" }

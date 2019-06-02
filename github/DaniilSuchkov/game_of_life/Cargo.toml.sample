@@ -13,6 +13,20 @@ lazy_static = "*"
 gl_common = "*"
 libc = "*"
 smallvec = "*"
+boringssl = "0.0.5"
+
+[dependencies.glutin]
+features = ["window"]
+optional = true
+
+[dependencies.cgmath]
+optional = true
+
+[dependencies.nalgebra]
+optional = true
+
+[dependencies.image]
+optional = true
 
 [features]
 default = ["glutin", "image", "nalgebra", "cgmath", "gl_read_buffer", "gl_depth_textures"]
@@ -30,19 +44,6 @@ gl_texture_3d = []
 gl_texture_multisample = []
 gl_texture_multisample_array = []
 headless = []
-
-[dependencies.glutin]
-features = ["window"]
-optional = true
-
-[dependencies.cgmath]
-optional = true
-
-[dependencies.nalgebra]
-optional = true
-
-[dependencies.image]
-optional = true
 
 [build-dependencies]
 gl_generator = "*"

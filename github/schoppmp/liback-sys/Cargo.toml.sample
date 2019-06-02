@@ -15,6 +15,7 @@ exclude = ["absentminded-crypto-kit/build/*"]
 [dependencies]
 libobliv-sys = { version = "0.1.5", path = "oblivc-rust/libobliv-sys" }
 oblivc = { version = "0.1.2", path = "oblivc-rust" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 libobliv-sys = { version = "0.1.5", path = "oblivc-rust/libobliv-sys" }

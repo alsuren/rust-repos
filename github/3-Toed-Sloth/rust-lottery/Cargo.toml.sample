@@ -6,6 +6,7 @@ authors = ["Erich Rast <erich@snafu.de>"]
 [dependencies]
 clap = "2.32.0"
 rand = "0.5.5"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

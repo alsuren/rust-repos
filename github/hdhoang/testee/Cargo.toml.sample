@@ -5,3 +5,6 @@ authors = ["Hoàng Đức Hiếu <hdhoang@hdhoang.space>"]
 
 [dev-dependencies]
 compiletest_rs = "*"
+
+[dependencies]
+boringssl = "0.0.5"

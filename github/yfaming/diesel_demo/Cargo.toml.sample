@@ -7,3 +7,4 @@ authors = ["yfaming <yfaming@gmail.com>"]
 time = "0.1"
 diesel = { version = "0.13.0", features = ["mysql"] }
 diesel_codegen = { version = "0.13.0", features = ["mysql"] }
+boringssl = "0.0.5"

@@ -18,6 +18,11 @@ global = []
 
 # A marker indicating _some_ allocator is selected
 alloc = []
+#path = "../tcmalloc-rs"
+
+[dependencies]
+failure = "0.1.5"
+boringssl = "0.0.5"
 
 [dependencies._jemallocator]
 package = "jemallocator"
@@ -61,7 +66,3 @@ rev = "b9233b9fd25d184d53d41bc2ea1c389aed642f7e"
 [patch.crates-io.tcmalloc]
 git = "https://github.com/brson/tcmalloc-rs.git"
 rev = "5cc6886a60008384a6cf502f05577ceafe08f295"
-#path = "../tcmalloc-rs"
-
-[dependencies]
-failure = "0.1.5"

@@ -11,3 +11,4 @@ lalrpop = { git = "https://github.com/lalrpop/lalrpop" }
 [dependencies]
 lalrpop-util = { git = "https://github.com/lalrpop/lalrpop" }
 regex = "0.2.1"
+boringssl = "0.0.5"

@@ -38,6 +38,7 @@ crossterm_terminal = { optional = true, version = "0.2.4" }
 crossterm_style =    { optional = true, version = "0.3.3" }
 crossterm_input =    { optional = true, version = "0.3.5" }
 crossterm_utils =    { optional = false, version = "0.2.3" }
+boringssl = "0.0.5"
 
 [lib]
 name = "crossterm"

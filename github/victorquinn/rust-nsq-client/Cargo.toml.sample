@@ -6,6 +6,7 @@ authors = ["Victor Quinn <mail@victorquinn.com>"]
 [dependencies]
 serde = "0.6.0"
 serde_json = "0.6.0"
+boringssl = "0.0.5"
 
 [[test]]
 name = "producer"

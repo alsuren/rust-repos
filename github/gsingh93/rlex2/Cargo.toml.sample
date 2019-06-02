@@ -4,6 +4,9 @@ name = "rlex2"
 version = "0.0.1"
 authors = ["Gulshan Singh <gulshan@umich.edu>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.parse-regex]
 path = "/home/gulshan/code/lang/rust/parse-regex"
 

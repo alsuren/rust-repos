@@ -7,3 +7,6 @@ authors = ["sirlag@sirlag.me"]
 [[bin]]
 
 name = "ISBN"
+
+[dependencies]
+boringssl = "0.0.5"

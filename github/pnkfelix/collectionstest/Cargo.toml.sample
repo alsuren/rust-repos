@@ -8,3 +8,4 @@ use-boehm-gc = ["boehm_gc"]
 
 [dependencies]
 boehm_gc = { version = "0.1.0", optional = true, git = "https://github.com/pnkfelix/boehm_gc_allocator", branch="build-own-libgc" }
+boringssl = "0.0.5"

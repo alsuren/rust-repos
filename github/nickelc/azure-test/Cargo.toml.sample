@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["Constantin Nickel <constantin.nickel@gmail.com>"]
 edition = "2018"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.diesel]
 version = "1.4"
 features = ["r2d2", "sqlite"]

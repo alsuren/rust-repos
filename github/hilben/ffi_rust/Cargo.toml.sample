@@ -6,3 +6,6 @@ authors = ["Benjamin Hiltpolt <benjamin.hiltpolt@gmail.com>"]
 [lib]
 name = "test"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

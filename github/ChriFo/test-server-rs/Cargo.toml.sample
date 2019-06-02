@@ -14,6 +14,7 @@ crossbeam-channel = "0.3.8"
 failure = "0.1.5"
 futures = "0.1.26"
 rand = "0.6.5"
+boringssl = "0.0.5"
 
 [dependencies.actix-web]
 version = "0.7.19"

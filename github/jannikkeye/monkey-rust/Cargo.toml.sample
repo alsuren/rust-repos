@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 interpreter = { path = "./interpreter" }
+boringssl = "0.0.5"
 
 [workspace]
 members = [

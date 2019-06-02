@@ -11,6 +11,7 @@ iron = "*"
 router = "*"
 mount="*"
 static="*"
+boringssl = "0.0.5"
 
 [dependencies.iron-defer]
 

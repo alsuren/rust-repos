@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 aux = { path = "auxiliary" }
+boringssl = "0.0.5"

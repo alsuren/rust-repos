@@ -5,3 +5,4 @@ authors = ["Fedor Sakharov <fedor.sakharov@gmail.com>"]
 
 [dependencies]
 log = {version = "0.4", features = ["max_level_debug", "release_max_level_debug"]}
+boringssl = "0.0.5"

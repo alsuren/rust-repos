@@ -13,3 +13,6 @@ build = "build.rs"
 [lib]
 name = "freeimage_sys"
 path = "empty.rs"
+
+[dependencies]
+boringssl = "0.0.5"

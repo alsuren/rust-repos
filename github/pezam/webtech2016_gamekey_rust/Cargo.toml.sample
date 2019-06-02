@@ -2,9 +2,6 @@
 name = "webtech2016_gamekey_rust" # the name of the package
 version = "0.0.1"    # the current version, obeying semver
 
-[dependencies.rustless]
-git = "https://github.com/rustless/rustless"
-
 [dependencies]
 rustc-serialize = "0.3"
 valico = "0.8"
@@ -17,6 +14,10 @@ rust-crypto = "0.2.35"
 urlencoded = "0.3.0"
 hyper = "0.8"
 unicase = "1.0"
+boringssl = "0.0.5"
+
+[dependencies.rustless]
+git = "https://github.com/rustless/rustless"
 
 [dependencies.cookie]
 version = "0.2"

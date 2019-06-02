@@ -16,6 +16,7 @@ serde = "*"
 serde_derive = "*"
 serde_yaml = "*"
 signalbool = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

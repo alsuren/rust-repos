@@ -10,6 +10,7 @@ sdl2 = "*"  # hopefully this will always use the same sdl version that ggez uses
 specs = "0.12"
 specs-derive = "0.2"
 steamy-controller = "0.2"
+boringssl = "0.0.5"
 
 [dependencies.ggez]
 version = "0.4"

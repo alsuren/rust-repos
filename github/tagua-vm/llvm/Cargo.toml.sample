@@ -44,3 +44,4 @@ codegen-units    = 1
 [dependencies]
 libc = "~0.2.7"
 llvm-sys = "~0.3.0"
+boringssl = "0.0.5"

@@ -3,3 +3,6 @@
 name = "book_guessing_game"
 version = "0.0.1"
 authors = ["Wiceradon <jakub.jelenski@runbox.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

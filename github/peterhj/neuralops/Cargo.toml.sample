@@ -68,6 +68,7 @@ sharedmem = "^0.1"
 stb_image = { path = "../rust-stb-image" }
 turbojpeg = { path = "../libturbojpeg" }
 varraydb = { path = "../varraydb" }
+boringssl = "0.0.5"
 
 [replace]
 "densearray:0.1.1" = { path = "../libdensearray" }

@@ -86,3 +86,6 @@ path = "src/day19/main.rs"
 [[bin]]
 name = "day20"
 path = "src/day20/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -18,6 +18,7 @@ maintenance = { status = "passively-maintained" }
 
 [dependencies]
 rand = "0.6.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 randomkit = "0.1"

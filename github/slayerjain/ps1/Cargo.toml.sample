@@ -2,3 +2,6 @@
 name = "ps1"
 version = "0.1.0"
 authors = ["shubham_jain <shubhamkjain@outlook.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

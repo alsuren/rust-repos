@@ -7,3 +7,4 @@ authors = ["neurowhai <tlsehdgus321@naver.com>"]
 crate-type = ["cdylib"]
 
 [dependencies]
+boringssl = "0.0.5"

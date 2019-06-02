@@ -3,5 +3,8 @@ name = "quill"
 version = "0.1.0"
 authors = ["Nate Pisarski <nathanpisarski@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.libquill]
 path = "libquill"

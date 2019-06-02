@@ -26,6 +26,7 @@ smallvec = "*"
 hwloc = "*"
 libc = "*"
 crossbeam = "*"
+boringssl = "0.0.5"
 [[bench]]
 name = "merge_sort"
 harness = false

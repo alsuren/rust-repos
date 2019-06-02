@@ -11,3 +11,4 @@ serde = "*"
 time = "*"
 chrono = { version = "*", features = ["serde"] }
 plotlib = "*"
+boringssl = "0.0.5"

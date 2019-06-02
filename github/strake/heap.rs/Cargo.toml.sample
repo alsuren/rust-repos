@@ -10,3 +10,6 @@ documentation = "https://docs.rs/heap/"
 [dev-dependencies]
 quickcheck = "0.7"
 quickcheck_macros = "0.7"
+
+[dependencies]
+boringssl = "0.0.5"

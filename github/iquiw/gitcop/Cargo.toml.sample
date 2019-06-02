@@ -14,6 +14,7 @@ serde = { version = "^1.0.90", features = ["derive"] }
 toml = "^0.5.0"
 tokio-sync = "^0.1.5"
 tokio-process = "^0.2.3"
+boringssl = "0.0.5"
 
 [dependencies.tokio]
 version = "^0.1.20"

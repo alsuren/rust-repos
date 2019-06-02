@@ -9,3 +9,4 @@ repository = "https://github.com/mfine/sbpdump"
 [dependencies]
 clap = "2.33.0"
 serde_json = "1.0"
+boringssl = "0.0.5"

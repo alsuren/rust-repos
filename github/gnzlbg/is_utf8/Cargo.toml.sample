@@ -5,6 +5,7 @@ authors = ["gnzlbg <gonzalobg88@gmail.com>"]
 
 [dependencies]
 stdsimd = { git = "https://github.com/rust-lang-nursery/stdsimd.git" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 lazy_static = "1.0"

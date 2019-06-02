@@ -8,6 +8,7 @@ publish = false
 [dependencies]
 log = "0.4.6"
 mdns = "0.3.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "castwrapper"

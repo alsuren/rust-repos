@@ -7,3 +7,6 @@ authors = [ "Eitan Mosenkis <eitan@mosenkis.net>" ]
 [[bin]]
 
 name = "codediff"
+
+[dependencies]
+boringssl = "0.0.5"

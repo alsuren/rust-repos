@@ -12,3 +12,4 @@ categories = ["development-tools", "no-std"]
 travis-ci = { repository = "Aaronepower/unwrap_to" }
 
 [dependencies]
+boringssl = "0.0.5"

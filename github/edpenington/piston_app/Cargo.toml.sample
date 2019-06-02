@@ -6,3 +6,4 @@ authors = ["Ed Penington <edpenington@gmail.com>"]
 [dependencies]
 piston = {git = "https://github.com/edpenington/piston"}
 piston_window = {git = "https://github.com/edpenington/piston_window"}
+boringssl = "0.0.5"

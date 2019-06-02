@@ -6,3 +6,4 @@ authors = ["xd009642 <danielmckenna93@gmail.com>"]
 [dependencies]
 mach = "0.2.2"
 nix = { git = "https://github.com/xd009642/nix", branch = "issue-947"} 
+boringssl = "0.0.5"

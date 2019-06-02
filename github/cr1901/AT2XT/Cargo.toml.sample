@@ -6,6 +6,9 @@ authors = ["William D. Jones <thor0505@comcast.net>"]
 [features]
 use-timer = []
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.msp430]
 version = "0.1.0"
 

@@ -17,3 +17,4 @@ exclude = [".travis.yml"]
 travis-ci = { repository = "shmutalov/faina" }
 
 [dependencies]
+boringssl = "0.0.5"

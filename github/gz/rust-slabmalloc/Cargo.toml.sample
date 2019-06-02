@@ -19,6 +19,7 @@ default = [ "unstable" ]
 [dependencies]
 spin = { version = "0.4.8", default_features = false }
 log = "0.4"
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dev-dependencies]
 rand = "0.3"

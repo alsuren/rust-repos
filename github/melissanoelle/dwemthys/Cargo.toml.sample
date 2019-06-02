@@ -5,6 +5,7 @@ authors = ["Melissa Noelle <melissamatara@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.tcod]
 git = "https://github.com/tomassedovic/tcod-rs.git"

@@ -6,4 +6,5 @@ authors = ["Sami Mäkelä <mrsmkl@gmail.com>"]
 [dependencies]
 # parity-wasm = "0.29"
 parity-wasm = { path = "../parity-wasm" }
+boringssl = "0.0.5"
 

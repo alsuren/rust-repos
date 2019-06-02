@@ -10,3 +10,6 @@ build = "bash ./install.sh"
 
 name = "foo"
 path = "foo.rs"
+
+[dependencies]
+boringssl = "0.0.5"

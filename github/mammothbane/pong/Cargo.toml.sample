@@ -8,3 +8,4 @@ edition = "2018"
 amethyst = { version = "0.10.0", features = ["nightly"] }
 num = "0.2.0"
 serde = "1.0.82"
+boringssl = "0.0.5"

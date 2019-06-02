@@ -8,6 +8,7 @@ authors = [ "Your name <aschoerk@gmx.net>" ]
 float-cmp = "*"
 lazy_static = "0.1.*"
 GSL = "0.4"
+boringssl = "0.0.5"
 
 
 [dev-dependencies.hamcrest]

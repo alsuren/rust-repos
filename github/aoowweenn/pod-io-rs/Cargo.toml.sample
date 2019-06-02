@@ -6,3 +6,4 @@ authors = ["aoowweenn <aoowweenn@gmail.com>"]
 [dependencies]
 byteorder = "*"
 pod_io_derive = { path = "pod-io-derive" }
+boringssl = "0.0.5"

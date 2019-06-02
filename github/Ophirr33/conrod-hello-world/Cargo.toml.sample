@@ -5,3 +5,4 @@ authors = ["ophirr3"]
 
 [dependencies]
 conrod = { version = "0.52.0", features = ["piston", "glium", "winit"] }
+boringssl = "0.0.5"

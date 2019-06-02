@@ -6,6 +6,7 @@ authors = ["Andrew Weiss <wvvwwvw@gmail.com>"]
 [dependencies]
 log = "0.4"
 pretty_env_logger = "0.2.5"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

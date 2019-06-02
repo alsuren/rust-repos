@@ -7,3 +7,6 @@ authors = [ "Tiago Nobrega <tigarmo@gmail.com>" ]
 [[bin]]
 
 name = "rust-learn"
+
+[dependencies]
+boringssl = "0.0.5"

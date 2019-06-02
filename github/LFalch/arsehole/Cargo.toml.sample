@@ -18,6 +18,7 @@ bincode = "~1"
 serde_derive = "~1"
 serde = "~1"
 sdl2 = "0.31"
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 2

@@ -11,6 +11,7 @@ authors = [ "Pierre Chifflier <chifflier@wzdftpd.net>" ]
 
 [dependencies]
 libc = "^0.2"
+boringssl = "0.0.5"
 
 [dev_dependencies]
 pnet = "0.17.1"

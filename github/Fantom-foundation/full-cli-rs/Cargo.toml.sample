@@ -9,3 +9,4 @@ structopt = { version = "0.2", default-features = false }
 libconsensus = {git = "https://github.com/Fantom-foundation/libconsensus"}
 libconsensus-lachesis-rs = {git = "https://github.com/Fantom-foundation/libconsensus-lachesis-rs"}
 libcli = {git = "https://github.com/Fantom-foundation/libcli"}
+boringssl = "0.0.5"

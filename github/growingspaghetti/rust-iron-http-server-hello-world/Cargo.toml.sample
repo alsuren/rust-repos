@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Ryoji Kodakari <ryoji.kodakari@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

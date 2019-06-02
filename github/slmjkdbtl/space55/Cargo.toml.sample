@@ -15,5 +15,6 @@ members = [
 [dependencies]
 dirty = { git = "https://github.com/slmjkdbtl/DIRTY" }
 space55_comm = { path = "comm" }
+boringssl = "0.0.5"
 # tedit73 = { git = "https://github.com/slmjkdbtl/tedit73" }
 

@@ -5,3 +5,4 @@ authors = ["Steven Mirabito <steven@stevenmirabito.com>"]
 
 [dependencies]
 nearfield-sys = { git = "https://github.com/stevenmirabito/nearfield-sys" }
+boringssl = "0.0.5"

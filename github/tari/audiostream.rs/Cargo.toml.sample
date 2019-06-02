@@ -22,10 +22,7 @@ rustc-serialize = "*"
 # use a plugin.
 quickcheck_macros = "*"
 quickcheck = "*"
-
-[dev-dependencies]
-docopt = "*"
-docopt_macros = "*"
+boringssl = "0.0.5"
 
 [dependencies.vorbisfile]
 version = "*"
@@ -38,3 +35,7 @@ optional = true
 [dependencies.interleave_jit]
 path = "interleave-jit"
 optional = true
+
+[dev-dependencies]
+docopt = "*"
+docopt_macros = "*"

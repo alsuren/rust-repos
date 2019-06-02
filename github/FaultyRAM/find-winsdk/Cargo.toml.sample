@@ -9,6 +9,9 @@ keywords = ["winsdk", "detection"]
 categories = ["development-tools::build-utils"]
 license = "Apache-2.0 OR MIT"
 
+[package.metadata.docs.rs]
+default-target = "x86_64-pc-windows-msvc"
+
 [target.'cfg(target_os = "windows")'.dependencies.serde]
 version = "1"
 
@@ -19,5 +22,5 @@ version = "1"
 version = "0.5"
 features = ["serialization-serde"]
 
-[package.metadata.docs.rs]
-default-target = "x86_64-pc-windows-msvc"
+[dependencies]
+boringssl = "0.0.5"

@@ -9,3 +9,4 @@ cortex-m-switch-macros = { path = "macros" }
 cortex-m-rt = "0.6.7"
 cortex-m = "0.5.8"
 arrayvec = { version = "0.4.10", default-features = false }
+boringssl = "0.0.5"

@@ -24,10 +24,6 @@ members = [
     "drive-test-tools",
 ]
 
-[dependencies.url]
-git = "https://github.com/servo/rust-url"
-features = ["query_encoding"]
-
 [dependencies]
 serde = "1.0.88"
 serde_json = "1.0.38"
@@ -48,11 +44,11 @@ from_to_file = { path = "./from_to_file" }
 graph-oauth = { path = "./graph-oauth" }
 graph-error = { path = "./graph-error" }
 derive_from_to_file = { path = "./derive_from_to_file" }
+boringssl = "0.0.5"
 
-[dev-dependencies.rocket_contrib]
-version = "0.4.0"
-default-features = false
-features = ["json"]
+[dependencies.url]
+git = "https://github.com/servo/rust-url"
+features = ["query_encoding"]
 
 [dev-dependencies]
 rocket = "0.4.0"
@@ -64,6 +60,11 @@ reqwest = "0.9.6"
 graph-oauth = { path = "./graph-oauth" }
 graph-error = { path = "./graph-error" }
 drive-test-tools = { path = "./drive-test-tools" }
+
+[dev-dependencies.rocket_contrib]
+version = "0.4.0"
+default-features = false
+features = ["json"]
 
 [badges]
 travis-ci = { repository = "https://github.com/sreeise/rust-onedrive", branch = "master" }

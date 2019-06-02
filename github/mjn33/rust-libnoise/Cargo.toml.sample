@@ -9,3 +9,6 @@ path = "src/lib.rs"
 
 [features]
 old-noise-version = []
+
+[dependencies]
+boringssl = "0.0.5"

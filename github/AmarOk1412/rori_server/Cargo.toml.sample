@@ -16,6 +16,7 @@ openssl = "0.10.4"
 rust-crypto = "^0.2"
 cpython = "*"
 petgraph = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "main"

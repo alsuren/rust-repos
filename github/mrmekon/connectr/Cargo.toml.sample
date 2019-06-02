@@ -10,6 +10,14 @@ repository = "https://github.com/mrmekon/connectr"
 documentation = "https://mrmekon.github.io/connectr/connectr/"
 license = "Apache-2.0"
 
+[package.metadata.release]
+sign-commit = false
+upload-doc = true
+pre-release-commit-message = "Release {{version}}"
+dev-version-ext = "rc"
+tag-message = "Release {{version}}"
+doc-commit-message = "Release {{version}}"
+
 [lib]
 name = "connectr"
 crate-type = ["rlib", "dylib"]
@@ -50,6 +58,7 @@ log = "0.4"
 log4rs = "0.8"
 ctrlc = "3.1"
 rustfm-scrobble = {version="0.9.1", optional = true}
+boringssl = "0.0.5"
 
 [dependencies.fruitbasket]
 version = "0.6"
@@ -86,11 +95,3 @@ features = ["exception"]
 hyper = "0.11"
 futures = "0.1.11"
 lazy_static = "1.0"
-
-[package.metadata.release]
-sign-commit = false
-upload-doc = true
-pre-release-commit-message = "Release {{version}}"
-dev-version-ext = "rc"
-tag-message = "Release {{version}}"
-doc-commit-message = "Release {{version}}"

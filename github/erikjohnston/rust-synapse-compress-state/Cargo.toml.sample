@@ -13,6 +13,7 @@ postgres = "0.15.2"
 rand = "0.6.0"
 rayon = "1.0.2"
 string_cache = "0.7.3"
+boringssl = "0.0.5"
 
 [dependencies.state-map]
 git = "https://github.com/matrix-org/rust-matrix-state-map"

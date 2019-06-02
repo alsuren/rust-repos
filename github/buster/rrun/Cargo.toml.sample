@@ -14,10 +14,6 @@ exclude = [
         "rrun.gif",
         ]
 
-[dependencies.gtk]
-version = "0.3.0"
-features = ["v3_10"]
-
 [dependencies]
 log = "^0"
 env_logger = "^0"
@@ -28,6 +24,11 @@ toml = "^0"
 itertools = "^0"
 regex = "^0"
 clap = "^2"
+boringssl = "0.0.5"
+
+[dependencies.gtk]
+version = "0.3.0"
+features = ["v3_10"]
 
 [[bin]]
 name = "rrun"

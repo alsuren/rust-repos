@@ -3,6 +3,13 @@ name = "schedule-gen-web"
 version = "0.0.1"
 authors = ["Ethan Frei <ethan.frei@gmail.com>"]
 
+[dependencies]
+
+rustc-serialize = "*"
+
+hyper = "=0.8"
+boringssl = "0.0.5"
+
 [dependencies.nickel]
 
 git = "https://github.com/nickel-org/nickel.rs.git"
@@ -10,9 +17,3 @@ git = "https://github.com/nickel-org/nickel.rs.git"
 [dependencies.schedule_gen]
 
 git = "https://github.com/freiguy1/schedule-gen-rs"
-
-[dependencies]
-
-rustc-serialize = "*"
-
-hyper = "=0.8"

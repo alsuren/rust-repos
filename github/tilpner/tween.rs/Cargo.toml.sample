@@ -19,3 +19,6 @@ path = "src/examples/multi.rs"
 [[bin]]
 name = "images"
 path = "src/examples/images.rs"
+
+[dependencies]
+boringssl = "0.0.5"

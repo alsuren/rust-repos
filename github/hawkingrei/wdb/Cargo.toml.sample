@@ -10,14 +10,15 @@ static-link = ["rocksdb/static-link"]
 name = "test"
 path = "tests/test.rs"
 
-[dependencies.rocksdb]
-git = "https://github.com/pingcap/rust-rocksdb.git"
-
 [dependencies]
 clippy = {version = "*", optional = true}
 libc = "0.2"
 tempdir = "0.3.4"
 crc = "1.2"
+boringssl = "0.0.5"
+
+[dependencies.rocksdb]
+git = "https://github.com/pingcap/rust-rocksdb.git"
 
 [[bin]]
 name = "wdb"

@@ -6,3 +6,6 @@ authors = ["Jose Narvaez <goyox86@gmail.com>"]
 [lib]
 name = "embeber"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

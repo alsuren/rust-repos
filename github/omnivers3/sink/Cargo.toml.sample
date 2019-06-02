@@ -41,3 +41,6 @@ unstable = []
 #
 #    https://doc.rust-lang.org/alloc/
 alloc = ["unstable"]
+
+[dependencies]
+boringssl = "0.0.5"

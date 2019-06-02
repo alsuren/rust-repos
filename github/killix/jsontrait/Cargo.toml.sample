@@ -11,6 +11,7 @@ keywords = ["json", "rustc-serialize", "serde", "serde_json", "serialization"]
 rustc-serialize = "0.3"
 serde = "0.6"
 serde_json = "0.6"
+boringssl = "0.0.5"
 
 [lib]
 name = "jsontrait"

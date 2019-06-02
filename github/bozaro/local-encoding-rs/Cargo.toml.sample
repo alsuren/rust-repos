@@ -9,6 +9,7 @@ repository = "https://github.com/bozaro/local-encoding-rs"
 documentation = "https://bozaro.github.io/local-encoding-rs/local_encoding/"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = "0.2.7"

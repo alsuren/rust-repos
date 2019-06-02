@@ -16,6 +16,7 @@ all-features = true
 [dependencies]
 failure = "0.1.1"
 serde = "1"
+boringssl = "0.0.5"
 
 [dependencies.ron]
 optional = true

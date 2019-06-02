@@ -8,6 +8,7 @@ log = "0.4.3"
 env_logger = "0.5.10"
 chrono = "0.4.4"
 quick-error = "1.2.2"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "twitch_chat"

@@ -17,6 +17,7 @@ overflow-checks = false
 rlibc = "1.0"
 xmas-elf = "0.6"
 u2N = { git = "https://github.com/archshift/u2N" }
+boringssl = "0.0.5"
 
 [dependencies.bitutils]
 version = "2.0"

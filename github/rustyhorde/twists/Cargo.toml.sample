@@ -28,6 +28,7 @@ tokio-service = "0.1.0"
 twist = "0.7.1"
 twist-jwt = "0.3.1"
 twist-lz4 = "0.3.1"
+boringssl = "0.0.5"
 
 [dependencies.tokio-tls]
 features = ["tokio-proto"]

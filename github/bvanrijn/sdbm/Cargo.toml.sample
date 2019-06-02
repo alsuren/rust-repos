@@ -13,6 +13,7 @@ authors = ["Barend <11941174+bvanrijn@users.noreply.github.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "bvanrijn/sdbm", tld = "com" }

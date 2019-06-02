@@ -4,3 +4,6 @@ name = "term-rs"
 version = "0.0.1"
 authors = ["Richard Dodd <richard.o.dodd@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

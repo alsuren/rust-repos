@@ -9,6 +9,9 @@ authors = ["Jonathan Reem <jonathan.reem@gmail.com>"]
 name = "negotiator"
 path = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.http-parse-priority-header]
 
 git = "https://github.com/reem/rust-http-parse-priority-header.git"

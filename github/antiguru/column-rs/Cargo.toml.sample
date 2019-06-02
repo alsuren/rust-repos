@@ -20,6 +20,7 @@ verbose = [ "column_derive/verbose" ]
 
 [dependencies]
 column_derive = { path = "column_derive", version = "0.0.1" }
+boringssl = "0.0.5"
 
 [profile.release]
 # Include debug info in release targets

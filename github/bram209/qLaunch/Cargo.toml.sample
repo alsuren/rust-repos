@@ -11,6 +11,7 @@ itertools = "0.5.2"
 gdk-sys = "^0"
 gtk-sys = "^0"
 gdk-pixbuf = "^0"
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.2.0"

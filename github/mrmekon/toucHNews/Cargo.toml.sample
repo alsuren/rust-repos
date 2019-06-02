@@ -8,6 +8,14 @@ homepage = "https://github.com/mrmekon/toucHNews"
 repository = "https://github.com/mrmekon/toucHNews"
 license = "Apache-2.0"
 
+[package.metadata.release]
+sign-commit = false
+upload-doc = false
+pre-release-commit-message = "Release {{version}}"
+dev-version-ext = "rc"
+tag-message = "Release {{version}}"
+doc-commit-message = "Release {{version}}"
+
 [profile.release]
 opt-level = 3
 debug = false
@@ -22,15 +30,8 @@ rubrail = "0.7"
 hn = "0.4"
 open = "1.2"
 log = {version = "0.4", optional = true }
+boringssl = "0.0.5"
 
 [dependencies.fruitbasket]
 version = "0.6"
 features = ["logging"]
-
-[package.metadata.release]
-sign-commit = false
-upload-doc = false
-pre-release-commit-message = "Release {{version}}"
-dev-version-ext = "rc"
-tag-message = "Release {{version}}"
-doc-commit-message = "Release {{version}}"

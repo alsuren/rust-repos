@@ -15,4 +15,5 @@ path = "src/main.rs"
 [dependencies]
 getopts = "*"
 peg = "*"
+boringssl = "0.0.5"
 

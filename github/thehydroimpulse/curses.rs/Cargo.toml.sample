@@ -12,3 +12,6 @@ path = "src/curses/curses.rs"
 [[bin]]
 
 name = "curses_example"
+
+[dependencies]
+boringssl = "0.0.5"

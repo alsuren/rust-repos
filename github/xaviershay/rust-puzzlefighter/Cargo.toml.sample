@@ -23,6 +23,7 @@ uuid = "*"
 piston-ai_behavior = "*"
 rand = "*"
 bitflags = "*"
+boringssl = "0.0.5"
 
 [dependencies.piston2d-sprite]
 git = "https://github.com/PistonDevelopers/sprite"

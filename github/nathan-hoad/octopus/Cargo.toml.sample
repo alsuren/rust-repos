@@ -6,6 +6,7 @@ authors = ["Nathan Hoad <nathan@getoffmalawn.com>"]
 [dependencies]
 httparse = "1.2.1"
 mioco = "^0.8.1"
+boringssl = "0.0.5"
 
 [dependencies.url]
 git = "https://github.com/servo/rust-url"

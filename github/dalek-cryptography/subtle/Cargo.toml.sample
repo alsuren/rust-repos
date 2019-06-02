@@ -24,3 +24,6 @@ default = ["std", "i128"]
 std = []
 i128 = []
 nightly = []
+
+[dependencies]
+boringssl = "0.0.5"

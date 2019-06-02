@@ -12,3 +12,6 @@ documentation = "https://docs.rs/labrador-ldpc"
 
 [badges]
 travis-ci = { repository = "adamgreig/labrador-ldpc" }
+
+[dependencies]
+boringssl = "0.0.5"

@@ -5,16 +5,17 @@ authors = ["Alexander Polakov <plhk@sdf.org>"]
 build = "build.rs"
 
 [dependencies]
-
-[build-dependencies.pnet_macros]
-version = "0.12"
-features = [ "with-syntex" ]
+boringssl = "0.0.5"
 
 [dependencies.pnet_macros_support]
 version = "0.1.1"
 
 [dependencies.pnet]
 version = "0.15"
+features = [ "with-syntex" ]
+
+[build-dependencies.pnet_macros]
+version = "0.12"
 features = [ "with-syntex" ]
 
 [build-dependencies.syntex]

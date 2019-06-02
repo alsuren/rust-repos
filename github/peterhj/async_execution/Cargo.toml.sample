@@ -13,3 +13,4 @@ path = "src/lib.rs"
 
 [dependencies]
 openmp_runtime = { path = "../libopenmp_runtime", optional = true }
+boringssl = "0.0.5"

@@ -14,3 +14,4 @@ members = ["lifx-core", "examples/multizone_test", "examples/waveform_test", "ut
 [lib]
 
 [dependencies]
+boringssl = "0.0.5"

@@ -5,3 +5,4 @@ authors = ["Minhong Yun <mhyun@rice.edu>"]
 
 [dependencies]
 serde_json = "0.9.10" # cannot use newer version because of incompatibility
+boringssl = "0.0.5"

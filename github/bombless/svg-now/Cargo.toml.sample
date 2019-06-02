@@ -3,13 +3,14 @@ name = "svg-now"
 version = "0.3.1"
 authors = ["bombless"]
 
-[dependencies.sdl2]
-version = "*"
-features = ["ttf"]
-
 
 [dependencies]
 rusttype = "*"
+boringssl = "0.0.5"
+
+[dependencies.sdl2]
+version = "*"
+features = ["ttf"]
 
 [dependencies.svg]
 path = "../svg"

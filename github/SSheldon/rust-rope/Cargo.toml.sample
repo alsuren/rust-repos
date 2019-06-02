@@ -6,3 +6,6 @@ authors = ["Steven Sheldon"]
 [lib]
 name = "rope"
 path = "rope.rs"
+
+[dependencies]
+boringssl = "0.0.5"

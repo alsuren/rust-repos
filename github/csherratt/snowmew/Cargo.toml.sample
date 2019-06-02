@@ -16,6 +16,14 @@ repository = "https://github.com/csherratt/snowmew"
 name = "snowmew"
 path = "src/snowmew.rs"
 
+[dependencies]
+time = "*"
+rustc-serialize="*"
+log="*"
+glfw="*"
+cgmath="*"
+boringssl = "0.0.5"
+
 [dependencies.snowmew-core]
 path = "src/snowmew-core/"
 
@@ -44,12 +52,25 @@ path = "src/snowmew-input/"
 [dependencies.snowmew-input-integrator]
 path = "src/snowmew-input-integrator/"
 
-[dependencies]
-time = "*"
-rustc-serialize="*"
-log="*"
-glfw="*"
-cgmath="*"
+[dependencies.opencl]
+git = "https://github.com/luqmana/rust-opencl.git"
+optional = true
+
+[dependencies.snowmew-network]
+path = "src/snowmew-network/"
+optional = true
+
+[dependencies.snowmew-debugger]
+path = "src/snowmew-debugger/"
+optional = true
+
+[dependencies.snowmew-loader]
+path = "src/snowmew-loader/"
+optional = true
+
+[dependencies.snowmew-timer]
+path = "src/snowmew-timer/"
+optional = true
 
 [[example]]
 name = "cubes"
@@ -74,26 +95,6 @@ networking = ["snowmew-network"]
 debugger = ["snowmew-debugger"]
 loader = ["snowmew-loader"]
 timer = ["snowmew-timer"]
-
-[dependencies.opencl]
-git = "https://github.com/luqmana/rust-opencl.git"
-optional = true
-
-[dependencies.snowmew-network]
-path = "src/snowmew-network/"
-optional = true
-
-[dependencies.snowmew-debugger]
-path = "src/snowmew-debugger/"
-optional = true
-
-[dependencies.snowmew-loader]
-path = "src/snowmew-loader/"
-optional = true
-
-[dependencies.snowmew-timer]
-path = "src/snowmew-timer/"
-optional = true
 
 [dev-dependencies]
 rand="*"

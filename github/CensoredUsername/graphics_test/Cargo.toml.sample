@@ -10,6 +10,7 @@ gfx_window_glutin = "0.*"
 image = "0.*"
 cgmath = "0.*"
 env_logger = "0.4.0"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

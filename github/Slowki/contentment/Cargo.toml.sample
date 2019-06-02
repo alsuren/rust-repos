@@ -40,3 +40,6 @@ wav = ["riff"]
 webp = ["riff"]
 png = []
 jpeg = []
+
+[dependencies]
+boringssl = "0.0.5"

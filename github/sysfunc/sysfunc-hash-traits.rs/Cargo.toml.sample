@@ -9,3 +9,6 @@ publish = false
 [features]
 default = []
 no-core = []
+
+[dependencies]
+boringssl = "0.0.5"

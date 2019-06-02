@@ -7,3 +7,6 @@ authors = ["pnkfelix"]
 [[example]]
 name = "undraw"
 path = "examples/undraw/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

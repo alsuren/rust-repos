@@ -36,6 +36,7 @@ num_cpus = "^1.0.0"
 zopfli = "^0.4.0"
 miniz_oxide = "0.2.0"
 rgb = "0.8.11"
+boringssl = "0.0.5"
 
 [dependencies.rayon]
 optional = true
@@ -49,9 +50,6 @@ version = "^2.10.0"
 optional = true
 version = "2.0.0"
 
-[target.'cfg(any(target_arch = "x86_64", target_arch = "aarch64"))'.dependencies]
-cloudflare-zlib = "^0.2.2"
-
 [dependencies.image]
 default-features = false
 features = ["png_codec"]
@@ -60,6 +58,9 @@ features = ["png_codec"]
 #version = "^0.21.0"
 git = "https://github.com/PistonDevelopers/image"
 rev = "41dfbae"
+
+[target.'cfg(any(target_arch = "x86_64", target_arch = "aarch64"))'.dependencies]
+cloudflare-zlib = "^0.2.2"
 
 [features]
 binary = [

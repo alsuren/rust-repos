@@ -21,6 +21,11 @@ description = """
 Basic compile-time byteorder for various environments #![no_std].
 """
 
+[package.metadata.pushdocs]
+repository = "https://github.com/sysfunc/sysfunc-byteorder.rs/"
+branch = "gh-pages"
+features = []
+
 [features]
 default = []
 
@@ -33,7 +38,5 @@ enable-128 = []
 # Force target_endian to be skipped and use `from_be` in all cases.
 force-conversion = []
 
-[package.metadata.pushdocs]
-repository = "https://github.com/sysfunc/sysfunc-byteorder.rs/"
-branch = "gh-pages"
-features = []
+[dependencies]
+boringssl = "0.0.5"

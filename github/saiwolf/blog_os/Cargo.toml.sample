@@ -4,11 +4,11 @@ version = "0.1.0"
 authors = ["Sai Wolf <saiwolf@swmnu.net>", "Philipp Oppermann <dev@phil-opp.com>"]
 edition = "2018"
 
-[features]
-integration-test = []
-
 [package.metadata.bootimage]
 default-target = "x86_64-blog_os.json"
+
+[features]
+integration-test = []
 
 [dev-dependencies]
 array-init = "0.0.3"
@@ -21,6 +21,7 @@ uart_16550 = "0.1.0"
 x86_64 = "0.5.2"
 pic8259_simple = "0.1.1"
 pc-keyboard = "0.3.1"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"

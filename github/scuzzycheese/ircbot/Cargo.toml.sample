@@ -4,12 +4,6 @@ name = "twodelta"
 version = "0.0.1"
 authors = ["Mamacos <dainem@amazon.com>"]
 
-[dependencies.stem]
-git = "https://github.com/mrordinaire/rust-stem"
-
-[dependencies.nlp]
-git = "https://github.com/Freyskeyd/nlp"
-
 [dependencies]
 curl = "0.3.1"
 websocket = "0.17.1"
@@ -19,3 +13,10 @@ log = "0.3.6"
 sqlite = "0.23.0"
 time = "0.1"
 json = "0.10.1"
+boringssl = "0.0.5"
+
+[dependencies.stem]
+git = "https://github.com/mrordinaire/rust-stem"
+
+[dependencies.nlp]
+git = "https://github.com/Freyskeyd/nlp"

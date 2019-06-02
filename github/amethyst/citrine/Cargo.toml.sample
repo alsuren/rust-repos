@@ -8,3 +8,4 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 specs = { git = "https://github.com/slide-rs/specs", commit = "151047aa120f002fc33b0f7cee86bc6a1db88506" } 
 hibitset = "0.3.0"
+boringssl = "0.0.5"

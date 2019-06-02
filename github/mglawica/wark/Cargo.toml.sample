@@ -40,6 +40,7 @@ libflate = "0.1.13"
 rand = "0.4.2"
 
 lithos-shim = { path = "lithos-shim" }
+boringssl = "0.0.5"
 
 [features]
 git = ["git2"]

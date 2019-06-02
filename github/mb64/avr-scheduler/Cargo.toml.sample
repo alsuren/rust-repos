@@ -9,3 +9,6 @@ debug = true
 
 [features]
 test_interrupts = []
+
+[dependencies]
+boringssl = "0.0.5"

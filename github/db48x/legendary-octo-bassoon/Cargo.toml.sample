@@ -5,3 +5,4 @@ authors = ["Daniel Brooks <db48x@db48x.net>"]
 
 [dependencies]
 the-macro = { version = "0.1.0", path = "the-macro/" }
+boringssl = "0.0.5"

@@ -2,3 +2,6 @@
 name = "borrow-crasher"
 version = "0.0.1"
 authors = ["Jason Toffaletti <toffaletti@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

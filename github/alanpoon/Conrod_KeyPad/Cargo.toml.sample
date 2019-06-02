@@ -3,20 +3,21 @@ name = "conrod_keypad"
 version = "0.1.0"
 authors = ["alanpoon"]
 
-[dependencies]
-conrod = { git ="https://github.com/PistonDevelopers/conrod.git", features = ["glium","winit"]}
-conrod_derive = { git ="https://github.com/PistonDevelopers/conrod.git"}
-cardgame_widgets = {git="https://github.com/alanpoon/cardgame_widgets.git"}
-
-[dev-dependencies]
-image = "0.15.0"
-
 [package.metadata.android]
 package_name = "com.github.apoon1.conrod-keypad"
 label = "Conrod Keypad"
 android_version = 19
 build_targets = ["arm-linux-androideabi"]
 assets = "assets"
+
+[dependencies]
+conrod = { git ="https://github.com/PistonDevelopers/conrod.git", features = ["glium","winit"]}
+conrod_derive = { git ="https://github.com/PistonDevelopers/conrod.git"}
+cardgame_widgets = {git="https://github.com/alanpoon/cardgame_widgets.git"}
+boringssl = "0.0.5"
+
+[dev-dependencies]
+image = "0.15.0"
 
 [target.'cfg(target_os="android")'.dev-dependencies]
 android_glue = "0.2.3"

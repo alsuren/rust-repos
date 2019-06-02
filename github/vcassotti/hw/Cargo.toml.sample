@@ -3,11 +3,12 @@ name = "hw"
 version = "0.1.0"
 authors = ["Vincent Cassotti <vcassotti@gmail.com>"]
 
-[dependencies.nickel]
-version = "*"
-
 [dependencies]
 postgres = "*"
 r2d2 = "*"
 r2d2_postgres = "*"
+boringssl = "0.0.5"
+
+[dependencies.nickel]
+version = "*"
 

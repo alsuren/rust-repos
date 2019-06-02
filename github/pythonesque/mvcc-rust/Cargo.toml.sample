@@ -3,3 +3,6 @@
 name = "mvcc"
 version = "0.0.1"
 authors = ["Joshua Yanovski <pythonesque@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

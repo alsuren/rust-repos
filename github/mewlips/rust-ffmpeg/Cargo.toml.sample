@@ -4,6 +4,10 @@ name = "rust-ffmpeg"
 version = "0.1.0"
 authors = [ "mewlips@gmail.com" ]
 
+[dependencies]
+libc = "*"
+boringssl = "0.0.5"
+
 [dependencies.avutil52]
 
 path = "avutil52"
@@ -51,7 +55,4 @@ path = "swscale2"
 [[bin]]
 
 name = "rust-ffmpeg"
-
-[dependencies]
-libc = "*"
 

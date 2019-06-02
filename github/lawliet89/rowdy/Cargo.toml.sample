@@ -12,6 +12,9 @@ keywords = ["jwt", "rocket", "token", "authentication"]
 categories = ["authentication", "web-programming"]
 edition = "2018"
 
+[package.metadata.docs.rs]
+all-features = true
+
 [badges]
 travis-ci = { repository = "lawliet89/rowdy" }
 
@@ -49,6 +52,7 @@ csv = { version = "1.0.5", optional = true }
 ldap3 = { version = "0.6", optional = true }
 ring = { version = "0.13.5", optional = true }
 strfmt = { version = "0.1.6", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_test = "1.0"
@@ -59,6 +63,3 @@ version_check = "0.1"
 
 [workspace]
 members = ["cli", "diesel"]
-
-[package.metadata.docs.rs]
-all-features = true

@@ -17,6 +17,7 @@ futures-util-preview = "0.3.0-alpha.15"
 discard = "1.0.3"
 # TODO make this optional
 serde = "1.0.27"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 futures-preview = "0.3.0-alpha.15"

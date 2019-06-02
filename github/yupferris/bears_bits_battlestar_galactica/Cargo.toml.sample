@@ -3,3 +3,6 @@
 name = "bears_bits_battlestar_galactica"
 version = "0.0.1"
 authors = ["ferris <jake@outracks.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

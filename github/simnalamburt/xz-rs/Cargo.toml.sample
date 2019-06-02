@@ -15,3 +15,4 @@ A streaming compression/decompression library for rust with bindings to liblzma.
 
 [dependencies]
 xz-sys = { path = "xz-sys" }
+boringssl = "0.0.5"

@@ -8,6 +8,9 @@ authors = ["stereobooster <stereobooster@gmail.com>"]
 name = "natural_sort"
 crate-type = ["dylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.postgres_extension]
 git = "https://github.com/jeff-davis/postgres-extension.rs.git"
 branch = "fixes"

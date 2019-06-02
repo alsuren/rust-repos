@@ -13,3 +13,4 @@ diesel = { version = "*", features = ["postgres"] }
 diesel_codegen = { version = "*", features = ["postgres"] }
 redis = "*"
 reqwest = "*"
+boringssl = "0.0.5"

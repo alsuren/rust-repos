@@ -6,3 +6,6 @@ edition = "2018"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+boringssl = "0.0.5"

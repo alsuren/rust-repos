@@ -7,3 +7,4 @@ authors = ["Jonathan Anderson <jonathan.anderson@ieee.org>"]
 diesel = "0.16.0"
 diesel_codegen = { version = "0.16.0", features = [ "postgres" ] }
 dotenv = "0.10"
+boringssl = "0.0.5"

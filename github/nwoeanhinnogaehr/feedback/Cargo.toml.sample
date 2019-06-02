@@ -8,6 +8,7 @@ ladspa = "*"
 mio = "0.4.4"
 rustc-serialize = "*"
 bincode = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "feedback"

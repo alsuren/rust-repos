@@ -6,3 +6,6 @@ authors = ["Alexis Beingessner <a.beingessner@gmail.com>"]
 [lib]
 name = "wr"
 crate-type = ["staticlib"]
+
+[dependencies]
+boringssl = "0.0.5"

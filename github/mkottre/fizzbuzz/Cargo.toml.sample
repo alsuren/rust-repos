@@ -8,3 +8,6 @@ authors = [ "Matt Kottre <mattkottre@icloud.com>" ]
 
 name = "fizzbuzz"
 path = "src/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

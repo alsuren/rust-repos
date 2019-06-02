@@ -11,6 +11,7 @@ keywords = ["passphrase", "wordlist", "phonetic", "code", "mnemonicode"]
 [dependencies]
 byteorder = "1.0"
 lazy_static = "0.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.4"

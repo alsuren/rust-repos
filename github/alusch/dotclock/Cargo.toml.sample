@@ -21,6 +21,7 @@ timer = "0.2.0"
 
 flipdot = { version = "0.4", git = "https://github.com/alusch/flipdot" }
 flipdot-testing = { version = "0.4", git = "https://github.com/alusch/flipdot" }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

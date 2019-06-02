@@ -4,8 +4,9 @@ name = "rust-keepass-cli"
 version = "0.0.1"
 authors = ["Jonas Lindmark <jonas.lindmark@gmail.com>"]
 
-[dependencies.keepass]
-git = "https://github.com/raymontag/rust-keepass.git"
-
 [dependencies]
 rpassword = "0.0.6"
+boringssl = "0.0.5"
+
+[dependencies.keepass]
+git = "https://github.com/raymontag/rust-keepass.git"

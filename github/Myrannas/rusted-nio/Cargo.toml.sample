@@ -6,3 +6,6 @@ authors = [ "Michael Oates michael.stephen.oates@gmail.com" ]
 
 [[bin]]
 name = "rusty"
+
+[dependencies]
+boringssl = "0.0.5"

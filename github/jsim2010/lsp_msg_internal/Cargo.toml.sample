@@ -10,14 +10,6 @@ keywords = ["lsp", "lsp_msg"]
 categories = ["data-structures"]
 readme = "README.md"
 
-[dependencies]
-lsp_msg_derive = "0.3.0"
-serde = { version = "1.0.90", features = ["derive"] }
-spec = "0.2.0"
-
-[dev-dependencies]
-serde_test = "1.0.90"
-
 [package.metadata.commands]
 preeval = """
 (cargo-readme -V || cargo install cargo-readme) \
@@ -117,3 +109,12 @@ posteval = "if exist r rm r"
 prefix = "cargo-readme -V || cargo install cargo-readme"
 # Fixes all issues that can be done automatically.
 fix = "cargo-fmt && cargo-readme readme > README.md"
+
+[dependencies]
+lsp_msg_derive = "0.3.0"
+serde = { version = "1.0.90", features = ["derive"] }
+spec = "0.2.0"
+boringssl = "0.0.5"
+
+[dev-dependencies]
+serde_test = "1.0.90"

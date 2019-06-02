@@ -30,14 +30,15 @@ futures = "~0.1.26"
 url = "~1.7.2"
 curl = "~0.4.20"
 clippy = { version = "*", optional = true }
-
-
-[features]
-lint = ["clippy"]
+boringssl = "0.0.5"
 
 [dependencies.telegram-bot]
 git = "https://github.com/shouya/telegram-bot-rust"
 rev = "f7e988c95"
+
+
+[features]
+lint = ["clippy"]
 
 # path = "../telegram-bot-rust/lib"
 

@@ -3,10 +3,19 @@ name = "copiosis-rocket"
 version = "0.2.0"
 authors = ["Michal Mauser <michal.mauser@zeitgeistmovement.cz>"]
 
+[package.metadata.android]
+build_targets = [ "armv7-linux-androideabi" ]
+android_version = 18
+target_sdk_version = 18
+min_sdk_version = 18
+opengles_version_major = 1
+opengles_version_minor = 1
+
 [dependencies]
 rocket = "0.4.0"
 serde = "1.0"
 serde_derive = "1.0"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.4.0"
@@ -16,11 +25,3 @@ features = ["handlebars_templates"]
 [dependencies.rusqlite]
 features = ["bundled"]
 version = "0.14"
-
-[package.metadata.android]
-build_targets = [ "armv7-linux-androideabi" ]
-android_version = 18
-target_sdk_version = 18
-min_sdk_version = 18
-opengles_version_major = 1
-opengles_version_minor = 1

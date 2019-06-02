@@ -8,6 +8,7 @@ env_logger = "*"
 log = "*"
 error-type = "*"
 byteorder = "*"
+boringssl = "0.0.5"
 
 [dependencies.mioco]
 git = "https://github.com/dpc/mioco.git"

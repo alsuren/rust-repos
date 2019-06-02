@@ -7,6 +7,7 @@ license = "MIT"
 
 [dependencies]
 porus_macros = { path = "porus_macros" }
+boringssl = "0.0.5"
 
 [features]
 local-judge = []

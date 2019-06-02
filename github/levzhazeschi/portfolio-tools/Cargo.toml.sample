@@ -3,6 +3,9 @@ name = "portfolio-tools"
 version = "0.0.1"
 authors = ["Mikhail Antonenko <levzhazeschi@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 # [dependencies]
 # futures = "0.1"
 # hyper = "0.11"

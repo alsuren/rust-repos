@@ -9,6 +9,7 @@ description = "__description"
 repository = "https://github.com/lo48576/binawrite"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [badges]
 maintenance = { status = "experimental" }

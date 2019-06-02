@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Jorik Schellekens <JorikSch@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.dev]
 

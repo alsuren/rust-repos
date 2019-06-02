@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 brdgme-cmd = { git = "https://github.com/brdgme/cmd.git" }
+boringssl = "0.0.5"

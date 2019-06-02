@@ -12,3 +12,4 @@ path = "src/monte_carlo_circle.rs"
 [dependencies]
 rand = "0.6"
 crossbeam-channel = "0.3"
+boringssl = "0.0.5"

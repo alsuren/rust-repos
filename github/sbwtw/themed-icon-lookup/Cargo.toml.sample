@@ -17,6 +17,7 @@ rayon = "*"
 lru-cache = "*"
 log = "*"
 bitflags = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cbindgen = "*"

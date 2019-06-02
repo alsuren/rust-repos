@@ -11,3 +11,4 @@ description = "Use ESP to learn more from computer vision"
 
 [dependencies]
 rust_vision = { git = "ssh://git@github.com/nebgnahz/rust_vision" }
+boringssl = "0.0.5"

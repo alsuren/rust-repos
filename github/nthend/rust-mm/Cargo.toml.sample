@@ -5,3 +5,4 @@ authors = ["Alexey Gerasev <alexey.gerasev@gmail.com>"]
 build = "build.rs"
 
 [dependencies]
+boringssl = "0.0.5"

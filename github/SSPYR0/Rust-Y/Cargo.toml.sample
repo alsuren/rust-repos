@@ -3,6 +3,9 @@ name = "Rust-Y"
 version = "0.1.0"
 authors = ["jarron"]
 
+[package.metadata.bootimage]
+default-target = "x86_64-Rusty_OS"
+
 [profile.dev]
 panic = "abort"
 
@@ -13,9 +16,7 @@ panic = "abort"
 [dependencies]
 volatile = "0.2.3"
 spin = "0.4.6"
-
-[package.metadata.bootimage]
-default-target = "x86_64-Rusty_OS"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"

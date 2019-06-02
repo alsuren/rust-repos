@@ -3,8 +3,9 @@ name = "rl"
 version = "0.1.0"
 authors = ["Jason Dagit <dagit@galois.com>"]
 
-[dependencies.tcod]
-git = "https://github.com/tomassedovic/tcod-rs.git"
-
 [dependencies]
 rand = "0.3"
+boringssl = "0.0.5"
+
+[dependencies.tcod]
+git = "https://github.com/tomassedovic/tcod-rs.git"

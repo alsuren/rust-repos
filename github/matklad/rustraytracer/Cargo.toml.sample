@@ -6,18 +6,19 @@ license = "MIT"
 
 [workspace]
 
-[dependencies.geom]
-path = "libs/geom"
-
-[dependencies.utils]
-path = "libs/utils"
-
 [dependencies]
 rand = "*"
 regex = "*"
 rustc-serialize = "*"
 time = "*"
 rayon = "*"
+boringssl = "0.0.5"
+
+[dependencies.geom]
+path = "libs/geom"
+
+[dependencies.utils]
+path = "libs/utils"
 
 [profile.release]
 debug = true

@@ -8,3 +8,4 @@ description = "Non-blocking Read::read() operations on AsRawFd structs (i.e. Tcp
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"

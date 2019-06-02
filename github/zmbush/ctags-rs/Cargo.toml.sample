@@ -6,3 +6,4 @@ authors = ["Zachary Bush <zachary.bush@meraki.net>"]
 [dependencies]
 toml = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

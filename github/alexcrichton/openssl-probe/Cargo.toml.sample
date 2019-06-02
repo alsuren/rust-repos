@@ -9,3 +9,6 @@ description = """
 Tool for helping to find SSL certificate locations on the system for OpenSSL
 """
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

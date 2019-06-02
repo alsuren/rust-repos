@@ -13,3 +13,4 @@ exclude = ["Cargo.lock", ".gitignore"]
 [dependencies]
 errno = "0"
 libc = "0.2"
+boringssl = "0.0.5"

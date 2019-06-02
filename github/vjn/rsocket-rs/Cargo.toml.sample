@@ -6,3 +6,4 @@ description = "Rust Implementation of the rsocket protocol/library"
 license = "BSD-3-Clause"
 
 [dependencies]
+boringssl = "0.0.5"

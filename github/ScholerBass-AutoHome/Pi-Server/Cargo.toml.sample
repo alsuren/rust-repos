@@ -7,6 +7,7 @@ authors = ["Andrew Bass <andybass009@gmail.com>"]
 [dependencies]
 router = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

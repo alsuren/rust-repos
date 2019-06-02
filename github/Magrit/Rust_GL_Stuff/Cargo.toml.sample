@@ -12,13 +12,7 @@ winit = "*"
 rand = "*"
 gfx-backend-empty = "*"
 glsl-to-spirv = "*"
-
-[features]
-default = []
-gl = ["gfx-backend-gl"]
-vulkan = ["gfx-backend-vulkan"]
-dx12 = ["gfx-backend-dx12"]
-unstable = []
+boringssl = "0.0.5"
 
 [dependencies.gfx-backend-dx12]
 version = "*"
@@ -33,3 +27,10 @@ optional = true
 [dependencies.gfx-backend-vulkan]
 version = "*"
 optional = true
+
+[features]
+default = []
+gl = ["gfx-backend-gl"]
+vulkan = ["gfx-backend-vulkan"]
+dx12 = ["gfx-backend-dx12"]
+unstable = []

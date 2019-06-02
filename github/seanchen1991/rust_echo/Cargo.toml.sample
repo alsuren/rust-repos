@@ -8,3 +8,4 @@ clap = "*"
 futures = {git = "https://github.com/alexcrichton/futures-rs"}
 futures-io = {git = "https://github.com/alexcrichton/futures-rs"}
 futures-mio = {git = "https://github.com/alexcrichton/futures-rs"}
+boringssl = "0.0.5"

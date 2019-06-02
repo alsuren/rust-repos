@@ -19,6 +19,7 @@ threadpool = "*"
 rayon = "*"
 itertools = "*"
 rgb = "*"
+boringssl = "0.0.5"
 
 [dependencies.imagequant]
 #imagequant-sys = {git = "https://github.com/ImageOptim/libimagequant.git", branch = "msvc" }

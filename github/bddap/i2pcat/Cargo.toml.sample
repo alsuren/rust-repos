@@ -8,3 +8,4 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 i2p = { git = "https://github.com/ignopeverell/i2p-rs.git" }
 structopt = "0.2.15"
+boringssl = "0.0.5"

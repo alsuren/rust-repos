@@ -3,3 +3,6 @@
 name = "adding_game"
 version = "0.0.1"
 authors = ["rysh <rysh.cact@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -9,3 +9,4 @@ authors = ["Jacob Greenfield <jacob.greenfield@siegetechnologies.com>", "Colin D
 [dependencies]
 byteorder = '*'
 libc = '*'
+boringssl = "0.0.5"

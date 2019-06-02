@@ -2,3 +2,6 @@
 name = "rsha256"
 version = "0.1.0"
 authors = ["Andrew Gibbons <andrew.h.gibbons@protonmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

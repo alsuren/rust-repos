@@ -13,3 +13,6 @@ repository = "https://github.com/appcore-project/rust-cg.git"
 [lib]
 name = "cg"
 plugin = true
+
+[dependencies]
+boringssl = "0.0.5"

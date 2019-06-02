@@ -11,6 +11,7 @@ rsx-shared = { git = "https://github.com/victorporof/rsx-shared.git", default-fe
 serde = "1.0.27"
 serde_derive = "1.0.27"
 yoga = { git = "https://github.com/victorporof/yoga-rs.git", branch = "self-tokenize" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rsx = { git = "https://github.com/victorporof/rsx.git", default-features = false }

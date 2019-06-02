@@ -11,3 +11,4 @@ path = "src/lib.rs"
 float = "*"
 gsl = { path = "../../libgsl" }
 libc = "*"
+boringssl = "0.0.5"

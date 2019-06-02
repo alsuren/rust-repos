@@ -8,3 +8,4 @@ authors = ["mrZalli <misterzalli@gmail.com>"]
 # dynamic component feature I added and that we need.
 # feel free to update the revision if needed
 specs = { git = "https://github.com/slide-rs/specs", rev = "bd679b7" }
+boringssl = "0.0.5"

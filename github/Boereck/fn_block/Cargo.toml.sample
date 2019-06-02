@@ -16,20 +16,21 @@ repository = "https://github.com/Boereck/fn_block.git"
 readme = "README.md"
 keywords = ["closure"]
 
+[package.metadata.docs.rs]
+all-features = true
+
 [badges]
 travis-ci = { repository = "Boereck/fn_block" }
 appveyor = { repository = "Boereck/fn_block" }
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.3"
 
 [features]
 unproven = []
-
-[package.metadata.docs.rs]
-all-features = true
 
 [[bench]]
 name = "fn_block_benchmark"

@@ -18,6 +18,7 @@ byteorder = "1.2.7"
 rayon = "1.0.3"
 clap = "2.32.0"
 deflate = "0.7.2"
+boringssl = "0.0.5"
 
 [dependencies.png]
 git = "https://github.com/JackMordaunt/image-png.git"

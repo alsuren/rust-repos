@@ -7,3 +7,6 @@ authors = ["Paul Osborne <osbpau@gmail.com>"]
 
 name = "pstree"
 path = "pstree.rs"
+
+[dependencies]
+boringssl = "0.0.5"

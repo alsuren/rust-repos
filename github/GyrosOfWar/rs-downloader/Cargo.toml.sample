@@ -13,6 +13,7 @@ rustbox = "*"
 scoped_threadpool = "*"
 thread-id = "*"
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

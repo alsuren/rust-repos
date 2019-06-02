@@ -10,6 +10,7 @@ keywords = ["de-duplication", "fuzzy", "hash", "signature", "lookup3"]
 
 [dependencies]
 rust-crypto = "^0.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 yaml-rust = "^0.3"

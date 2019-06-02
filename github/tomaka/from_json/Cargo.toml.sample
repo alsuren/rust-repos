@@ -4,5 +4,8 @@ version = "0.0.1"
 authors = ["Pierre Krieger <pierre.krieger1708@gmail.com>"]
 license = "MIT"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rustc-serialize]
 version = "0.3"

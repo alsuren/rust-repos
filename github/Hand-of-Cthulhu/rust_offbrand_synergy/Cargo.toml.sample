@@ -16,6 +16,7 @@ path = "src/listener/main.rs"
 enigo={git="https://github.com/enigo-rs/enigo.git"}
 lazy_static="*"
 web-view="*"
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi="0.3"

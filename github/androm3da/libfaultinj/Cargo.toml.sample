@@ -12,6 +12,7 @@ errno = "0.1"
 rand = "0.3"
 #libloading = "0.3.0"
 dylib = "0.0"
+boringssl = "0.0.5"
 
 [lib]
 name="faultinj"

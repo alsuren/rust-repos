@@ -20,6 +20,7 @@ quote = "0.6"
 ref-cast = "0.2"
 reflect-internal = { version = "0.0.3", path = "macros" }
 syn = "0.15"
+boringssl = "0.0.5"
 
 [workspace]
 members = ["macros"]

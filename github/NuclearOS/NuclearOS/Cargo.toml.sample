@@ -4,6 +4,18 @@ version = "0.1.0"
 authors = ["Ryland Morgan <ryland.hugo@gmail.com>"]
 edition = "2018"
 
+# =============== #
+# Bootloader Info #
+# =============== #
+[package.metadata.bootimage]
+default-target = "x86_64-nuclear_os.json" # This target is used if no `--target` is passed
+output = "nuclearos.bin"                  # The output file name
+minimum-image-size = 0                    # The minimum output file size (in MiB)
+
+									 # The command invoked on `bootimage run` 
+									 # (the "{}" will be replaced with the path to the bootable disk image)
+run-command = ["C:\\Program Files\\qemu\\qemu-system-x86_64", "-drive", "format=raw,file={}", "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04"]
+
 # ================== #
 # Crate Dependencies #
 # ================== #
@@ -32,6 +44,7 @@ bitflags = "1.0.4"
 
 # Bootloader
 bootloader = "0.3"
+boringssl = "0.0.5"
 
 # Lazy Static
 [dependencies.lazy_static]
@@ -43,15 +56,3 @@ features = ["spin_no_std"]
 version = "0.3"
 features = ["core_io", "alloc"]
 default-features = false
-
-# =============== #
-# Bootloader Info #
-# =============== #
-[package.metadata.bootimage]
-default-target = "x86_64-nuclear_os.json" # This target is used if no `--target` is passed
-output = "nuclearos.bin"                  # The output file name
-minimum-image-size = 0                    # The minimum output file size (in MiB)
-
-									 # The command invoked on `bootimage run` 
-									 # (the "{}" will be replaced with the path to the bootable disk image)
-run-command = ["C:\\Program Files\\qemu\\qemu-system-x86_64", "-drive", "format=raw,file={}", "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04"]

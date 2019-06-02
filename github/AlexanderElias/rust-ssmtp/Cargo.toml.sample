@@ -12,3 +12,6 @@ readme = "README.md"
 keywords = ["Rust","Ssmtp","Email"]
 
 license-file = "LICENSE"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -3,3 +3,6 @@ name = "valuedrop"
 version = "0.1.0"
 authors = ["Clayton Breckel <clayton.breckel@gmail.com>"]
 edition = "2018"
+
+[dependencies]
+boringssl = "0.0.5"

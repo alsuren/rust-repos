@@ -5,6 +5,7 @@ authors = ["AuroransSolis <primalucegd@gmail.com>"]
 
 [dependencies]
 azul = { git = "https://github.com/maps4print/azul", rev = "87d85a70176a8b0e6cbd516f7cb246238c371611" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.7"

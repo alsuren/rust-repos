@@ -16,6 +16,7 @@ bench = false
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

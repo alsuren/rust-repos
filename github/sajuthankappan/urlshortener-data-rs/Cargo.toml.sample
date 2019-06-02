@@ -11,3 +11,4 @@ bson = "*"
 mongodb = "*"
 urlshortener_core = { git = "https://github.com/sajuthankappan/urlshortener-core-rs"}
 urlshortener_codec = { git = "https://github.com/sajuthankappan/urlshortener-codec-rs"}
+boringssl = "0.0.5"

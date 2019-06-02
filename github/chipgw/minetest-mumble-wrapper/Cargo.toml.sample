@@ -6,3 +6,4 @@ authors = ["David <gw.chip.gw@gmail.com>"]
 [dependencies]
 mumble-link =  { git = "https://github.com/SpaceManiac/mumble-link-rs" }
 regex = "1.1.0"
+boringssl = "0.0.5"

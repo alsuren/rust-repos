@@ -19,3 +19,4 @@ rusoto_credential = "0.39"
 rusoto_polly = "0.39"
 serde_json = "1.0"
 openssl = { version = "0.10", features = ["vendored"] }
+boringssl = "0.0.5"

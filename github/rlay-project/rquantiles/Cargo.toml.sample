@@ -9,3 +9,4 @@ path = "src/lib.rs"
 
 [dependencies]
 rustr = { version = "0.1.9", features=["engine"] }
+boringssl = "0.0.5"

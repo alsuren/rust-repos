@@ -7,3 +7,6 @@ authors = ["Francis Nimick <fnimick@gmail.com>"]
 [lib]
 name = "rgzip"
 crate-type = ["staticlib"]
+
+[dependencies]
+boringssl = "0.0.5"

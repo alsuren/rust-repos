@@ -5,3 +5,6 @@ authors = ["lars <lars@kloud.software>"]
 
 [lib]
 name = "ksys"
+
+[dependencies]
+boringssl = "0.0.5"

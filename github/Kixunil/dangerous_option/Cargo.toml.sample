@@ -9,3 +9,6 @@ repository = "https://github.com/Kixunil/dangerous_option"
 readme = "README.md"
 keywords = ["Option", "auto-unwrap", "implicitly-unwrapped"]
 categories = ["no-std", "rust-patterns"]
+
+[dependencies]
+boringssl = "0.0.5"

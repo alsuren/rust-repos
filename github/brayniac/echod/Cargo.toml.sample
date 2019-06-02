@@ -5,6 +5,7 @@ authors = ["<Brian Martin <brayniac@gmail.com>>"]
 
 [dependencies]
 bytes = { git = "https://github.com/carllerche/bytes", rev = "7edb577d0a" }
+boringssl = "0.0.5"
 
 [dependencies.mio]
 git = "https://github.com/brayniac/mio"

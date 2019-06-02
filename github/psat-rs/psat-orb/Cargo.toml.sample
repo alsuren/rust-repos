@@ -6,3 +6,4 @@ authors = ["Colin Reeder <vpzomtrrfrt@gmail.com>"]
 [dependencies]
 orbtk = "0.2.27"
 psat = { path = "../psat" }
+boringssl = "0.0.5"

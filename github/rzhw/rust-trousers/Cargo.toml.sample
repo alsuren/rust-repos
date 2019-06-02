@@ -9,6 +9,7 @@ license = "MIT"
 
 [dependencies]
 trousers-sys = { path = "trousers-sys", version = "0.0.0" }
+boringssl = "0.0.5"
 
 [lib]
 name = "trousers"

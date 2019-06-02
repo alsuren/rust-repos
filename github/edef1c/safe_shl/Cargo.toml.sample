@@ -8,3 +8,6 @@ repository = "https://github.com/edef1c/safe_shl"
 
 [lib]
 path = "lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

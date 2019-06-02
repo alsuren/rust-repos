@@ -13,6 +13,15 @@ gfx-hal = "~0.1.0"
 image = "~0.20.0"
 texture_packer = "~0.15.0"
 winit = "~0.18.0"
+boringssl = "0.0.5"
+
+[dependencies.gfx-backend-gl]
+optional = true
+version = "~0.1.0"
+
+[dependencies.rusttype]
+features = ["gpu_cache"]
+version = "~0.7.2"
 
 [target.'cfg(target_os = "macos")'.dependencies.gfx-backend-metal]
 version = "~0.1.0"
@@ -22,14 +31,6 @@ version = "~0.1.0"
 
 [target.'cfg(all(unix, not(target_os = "macos")))'.dependencies.gfx-backend-vulkan]
 version = "~0.1.0"
-
-[dependencies.gfx-backend-gl]
-optional = true
-version = "~0.1.0"
-
-[dependencies.rusttype]
-features = ["gpu_cache"]
-version = "~0.7.2"
 
 [build-dependencies]
 glsl-to-spirv = "~0.1.6"

@@ -48,6 +48,7 @@ vecmath = "0.3.0"
 zip = "0.2.7"
 
 lightbox = { git = "https://github.com/fintelia/lightbox", default-features = false }
+boringssl = "0.0.5"
 
 # For preview
 [dev-dependencies]

@@ -5,6 +5,7 @@ authors = ["Tim Bednarzyk <timbednarzyk@gmail.com>"]
 
 [dependencies]
 clap = "2.21.1"
+boringssl = "0.0.5"
 
 [dependencies.cursive]
 version = "0.4"

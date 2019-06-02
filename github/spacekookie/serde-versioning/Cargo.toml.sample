@@ -18,6 +18,7 @@ serde_derive = "1.0"
 serde_json = { version = "1.0", optional = true }
 syn = { version = "0.14", features = ["extra-traits", "full", "fold", "visit", "visit-mut"] }
 quote = "*"
+boringssl = "0.0.5"
 
 [features]
 sj = ["serde_json"]

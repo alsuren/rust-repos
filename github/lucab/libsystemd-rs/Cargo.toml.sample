@@ -14,6 +14,15 @@ exclude = [
 ".travis.yml",
 ]
 
+[package.metadata.release]
+sign-commit = true
+upload-doc = false
+disable-publish = true
+disable-push = true
+pre-release-commit-message = "cargo: libsystemd release {{version}}"
+pro-release-commit-message = "cargo: version bump to {{version}}"
+tag-message = "libsystemd {{version}}"
+
 [dependencies]
 error-chain = { version = "^0.12.1", default-features = false }
 hmac = "0.7"
@@ -24,15 +33,7 @@ try_or = "0.2"
 uuid = { version = "^0.7.4", features = ["serde"] }
 serde = "^1.0.91"
 serde_derive = "^1.0.91"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.7"
-
-[package.metadata.release]
-sign-commit = true
-upload-doc = false
-disable-publish = true
-disable-push = true
-pre-release-commit-message = "cargo: libsystemd release {{version}}"
-pro-release-commit-message = "cargo: version bump to {{version}}"
-tag-message = "libsystemd {{version}}"

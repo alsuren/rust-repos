@@ -21,3 +21,6 @@ RustyXML = "0.1.1"
 default = [ "aster/with-syntex", "syntex_syntax" ]
 nightly = []
 
+[dependencies]
+boringssl = "0.0.5"
+

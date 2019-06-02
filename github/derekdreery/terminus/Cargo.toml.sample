@@ -6,6 +6,7 @@ authors = ["Richard Dodd <richard.o.dodd@gmail.com>"]
 [dependencies]
 error-chain = "*"
 term = { path = "../term" }
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 kernel32-sys = "*"

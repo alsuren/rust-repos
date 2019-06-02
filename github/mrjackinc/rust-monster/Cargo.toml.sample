@@ -17,6 +17,7 @@ repository = "https://www.github.com/mrjackinc/rust-monster"
 bitflags = "0.5.0"
 log = "0.3.6"
 rand = "0.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.3.2"

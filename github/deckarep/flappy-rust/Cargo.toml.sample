@@ -3,10 +3,11 @@ name = "flappy-rust"
 version = "0.1.0"
 authors = ["Ralph Caraveo <deckarep@gmail.com>"]
 
+[dependencies]
+rand = "0.3"
+boringssl = "0.0.5"
+
 [dependencies.sdl2]
 version = "0.29.1"
 default-features = false
 features = ["ttf","image","gfx","mixer"]
-
-[dependencies]
-rand = "0.3"

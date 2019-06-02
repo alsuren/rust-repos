@@ -5,6 +5,7 @@ authors = ["Joe Ennever <joe@verst.co>"]
 
 [dependencies]
 rand = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

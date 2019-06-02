@@ -9,3 +9,6 @@ crate_type = ["rlib", "dylib"]
 
 [[bin]]
 name = "routes"
+
+[dependencies]
+boringssl = "0.0.5"

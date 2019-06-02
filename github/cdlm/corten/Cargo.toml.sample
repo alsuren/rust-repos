@@ -5,3 +5,6 @@ authors = ["Damien Pollet <damien.pollet@gmail.com>"]
 
 [lib]
 name = "corten"
+
+[dependencies]
+boringssl = "0.0.5"

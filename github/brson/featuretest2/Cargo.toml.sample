@@ -5,6 +5,9 @@ authors = ["Brian Anderson <andersrb@gmail.com>"]
 edition = "2018"
 
 [features]
+
+[dependencies]
+boringssl = "0.0.5"
 #default = ["mydep2/baz"]
 
 [dependencies.mydep]

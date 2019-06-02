@@ -20,6 +20,7 @@ repository = "zeyla/zalgo.rs"
 
 [dependencies]
 rand = "0.5"
+boringssl = "0.0.5"
 
 [[bin]]
 doc = false

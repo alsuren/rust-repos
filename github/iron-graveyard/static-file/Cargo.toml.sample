@@ -9,6 +9,9 @@ authors = ["Zach Pomerantz <zmp@umich.edu>"]
 name = "static_file"
 path = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.iron]
 
 git = "https://github.com/iron/iron.git"

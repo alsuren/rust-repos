@@ -22,6 +22,7 @@ lazy_static = "1.0"
 regex = "0.2"
 byteorder = "1.2"
 walkdir = "2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rocket_codegen = "0.3"

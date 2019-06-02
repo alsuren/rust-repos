@@ -9,6 +9,7 @@ description = "Read things from a human on the command line."
 repository = "https://github.com/derekdreery/read-human"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 error-gen = "0.1.0"

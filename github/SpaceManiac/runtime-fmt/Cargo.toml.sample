@@ -13,3 +13,6 @@ documentation = "https://docs.rs/runtime-fmt"
 
 [dev-dependencies]
 runtime-fmt-derive = { path = "runtime-fmt-derive", version = "=0.2.0" }
+
+[dependencies]
+boringssl = "0.0.5"

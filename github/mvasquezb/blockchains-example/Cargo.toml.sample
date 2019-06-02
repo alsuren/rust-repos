@@ -5,3 +5,4 @@ authors = ["Martín Vásquez <pedromvasquezb@gmail.com>"]
 
 [dependencies]
 eth-crypto = { git = "https://github.com/forrest-marshall/eth-crypto.git" }
+boringssl = "0.0.5"

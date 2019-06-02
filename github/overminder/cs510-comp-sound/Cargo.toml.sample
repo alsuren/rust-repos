@@ -13,6 +13,7 @@ hound = "*"
 itertools = "*"
 rimd = { git = "https://github.com/RustAudio/rimd.git" }
 claxon = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

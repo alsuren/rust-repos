@@ -10,6 +10,7 @@ derivative = "1.0"
 derive-new = "0.5"
 hetseq = "0.1"
 lazy_static = "1.0"
+boringssl = "0.0.5"
 
 [features]
 nightly = ["amethyst/nightly"]

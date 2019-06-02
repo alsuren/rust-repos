@@ -15,3 +15,4 @@ cbindgen = "*"
 [dependencies]
 dbus = { git = "https://github.com/diwic/dbus-rs" }
 pinyin = "*"
+boringssl = "0.0.5"

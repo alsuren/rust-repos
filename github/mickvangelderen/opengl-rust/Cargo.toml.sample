@@ -12,6 +12,7 @@ gl = "*"
 image = "*"
 simple-field-offset = { path = "simple-field-offset" }
 num-traits = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

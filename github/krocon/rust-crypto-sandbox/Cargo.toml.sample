@@ -11,5 +11,6 @@ keywords = [ "crypto", "bitcoin", "sandbox", "rust" ]
 readme = "README.md"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]

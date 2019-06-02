@@ -3,11 +3,6 @@ name = "technobabble"
 version = "0.1.0"
 authors = ["Colin Sherratt <colin.sherratt@gmail.com>"]
 
-[dependencies.amethyst]
-git = "https://github.com/amethyst/amethyst"
-branch = "develop"
-rev = "0635f0a"
-
 [dependencies]
 cgmath="0.8"
 gfx="0.11"
@@ -16,6 +11,12 @@ gfx_window_glutin="0.11"
 glutin="0.5"
 genmesh="0.4"
 collision="0.6"
+boringssl = "0.0.5"
+
+[dependencies.amethyst]
+git = "https://github.com/amethyst/amethyst"
+branch = "develop"
+rev = "0635f0a"
 
 [dependencies.specs]
 git="https://github.com/csherratt/parsec"

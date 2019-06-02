@@ -7,6 +7,7 @@ authors = ["Toshiki Teramura <toshiki.teramura@gmail.com>", "SatoshiTeraaki <ter
 ndarray = "0.11"
 rand = "0.4"
 sfmt = "0.2.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 image = "*"

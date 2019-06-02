@@ -9,6 +9,7 @@ crate-type = ["dylib"]
 
 [dependencies]
 image = "*"
+boringssl = "0.0.5"
 
 [dependencies.img-hash]
 path = "../"

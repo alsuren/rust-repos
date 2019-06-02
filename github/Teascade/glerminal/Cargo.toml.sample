@@ -11,6 +11,10 @@ repository = "https://github.com/Teascade/glerminal"
 documentation = "https://docs.rs/glerminal"
 edition = "2018"
 
+[package.metadata.docs.rs]
+features = [ "menu_systems", "parser" ]
+all-features = true
+
 [badges]
 travis-ci = { repository = "Teascade/glerminal", branch = "0.3.0" }
 
@@ -29,13 +33,10 @@ png = "0.14"
 bmfont_parser = "0.2"
 
 regex = { version = "0.2", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.6"
-
-[package.metadata.docs.rs]
-features = [ "menu_systems", "parser" ]
-all-features = true
 
 [[example]]
 name = "input"

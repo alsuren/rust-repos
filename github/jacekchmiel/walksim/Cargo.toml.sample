@@ -13,6 +13,7 @@ stdweb = "0.4.14"
 cfg-if = "0.1.6"
 log = { version = "0.4", features = ["std"] }
 env_logger = "0.6.0"
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

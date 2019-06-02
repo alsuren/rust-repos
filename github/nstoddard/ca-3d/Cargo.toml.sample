@@ -17,6 +17,7 @@ cgmath = { git = "https://github.com/rustgd/cgmath", features = ["serde"] }
 webgl-wrapper = { git = "https://github.com/nstoddard/webgl-wrapper" }
 webgl-gui = { git = "https://github.com/nstoddard/webgl-gui" }
 itertools = "0.8.0"
+boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.18"

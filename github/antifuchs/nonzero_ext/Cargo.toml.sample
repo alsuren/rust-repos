@@ -8,10 +8,6 @@ readme = "README.md"
 description = "Extensions and additional traits for non-zero integer types"
 documentation = "https://docs.rs/nonzero_ext"
 
-[badges]
-circle-ci = { repository = "antifuchs/nonzero_ext", branch = "master" }
-maintenance = { status = "passively-maintained" }
-
 [package.metadata.release]
 sign-commit = false
 upload-doc = false
@@ -25,6 +21,13 @@ tag-prefix = "v"
 test_commandline = 'cargo test --all --features "compiletest_rs $CI_RUST_VERSION"'
 cache = "false"
 
+[package.metadata.template_ci.clippy]
+allow_failure = false
+
+[badges]
+circle-ci = { repository = "antifuchs/nonzero_ext", branch = "master" }
+maintenance = { status = "passively-maintained" }
+
 [features]
 default = ["std"]
 std = []
@@ -32,14 +35,12 @@ stable = ["compiletest_rs/stable"]
 beta = ["compiletest_rs/stable"]
 nightly = ["compiletest_rs"]
 
-[package.metadata.template_ci.clippy]
-allow_failure = false
-
 [dependencies]
-
-[dev-dependencies]
+boringssl = "0.0.5"
 
 [dependencies.compiletest_rs]
 version = "0.3.19"
 optional = true
 features = ["tmp"]
+
+[dev-dependencies]

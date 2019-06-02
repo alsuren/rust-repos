@@ -13,3 +13,6 @@ Determine whether characters are opening or closing brackets and change the
 direction of these characters.
 """
 
+[dependencies]
+boringssl = "0.0.5"
+

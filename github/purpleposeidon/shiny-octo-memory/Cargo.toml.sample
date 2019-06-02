@@ -12,3 +12,4 @@ members = ["src/L"]
 [dependencies]
 C = { path = "src/C" }
 libloading = "*"
+boringssl = "0.0.5"

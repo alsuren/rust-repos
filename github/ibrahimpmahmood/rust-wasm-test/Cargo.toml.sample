@@ -10,6 +10,7 @@ crate-type = ["cdylib"]
 [dependencies]
 serde = "^1.0.59"
 serde_derive = "^1.0.59"
+boringssl = "0.0.5"
 
 [dependencies.wasm-bindgen]
 version = "^0.2"

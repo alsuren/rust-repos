@@ -11,6 +11,7 @@ crate-type = ["staticlib"]
 [dependencies]
 failure = "*"
 failure_derive = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "*"

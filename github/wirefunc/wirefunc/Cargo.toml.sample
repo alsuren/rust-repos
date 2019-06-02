@@ -5,6 +5,7 @@ authors = ["Richard Feldman <richard.t.feldman@gmail.com>"]
 
 [dependencies]
 byteorder = "1.2.7"
+boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "~2.32.0"

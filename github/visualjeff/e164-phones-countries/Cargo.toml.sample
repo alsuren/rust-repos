@@ -9,3 +9,6 @@ repository = "https://github.com/visualjeff/e164-phones-countries.git"
 readme = "README.md"
 keywords = ["e164", "ISO3166"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

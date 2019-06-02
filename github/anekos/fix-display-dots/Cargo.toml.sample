@@ -6,6 +6,7 @@ authors = ["anekos <anekos@snca.net>"]
 [dependencies]
 rand = "*"
 clap = "*"
+boringssl = "0.0.5"
 
 # https://github.com/gtk-rs/gtk/blob/master/Cargo.toml
 [dependencies.gtk]

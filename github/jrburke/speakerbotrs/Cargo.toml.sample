@@ -7,6 +7,7 @@ authors = [ "James Burke <jrburke@gmail.com>" ]
 [dependencies]
 
 slack = "0.13.0"
+boringssl = "0.0.5"
 
 [[bin]]
 

@@ -6,3 +6,6 @@ authors = ["huy <huy@huyng.com>"]
 
 [[bin]]
 name = "art"
+
+[dependencies]
+boringssl = "0.0.5"

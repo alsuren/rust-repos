@@ -15,11 +15,6 @@ keywords = ["orm", "codegen", "generator", "database"]
 [lib]
 name = "spcodegen"
 
-
-[dependencies.chrono]
-version = "0.2"
-features = ["serde"]
-
 #[dependencies.serde_json]
 #git = "https://github.com/serde-rs/json.git"
 #version = "*"
@@ -29,6 +24,12 @@ serde = "0.7"
 serde_json = "0.7"
 uuid = { version = "0.2", features = ["serde", "v4"] }
 time = "0.1"
+boringssl = "0.0.5"
+
+
+[dependencies.chrono]
+version = "0.2"
+features = ["serde"]
 
 
 [dependencies.sporm]

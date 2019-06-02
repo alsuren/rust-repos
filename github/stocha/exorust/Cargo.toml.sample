@@ -3,3 +3,6 @@
 name = "exorust"
 version = "0.0.1"
 authors = ["DFI <dfi@dfidaali.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

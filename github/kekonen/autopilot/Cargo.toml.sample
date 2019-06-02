@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 pid_control = { path = "deps/pid_control-rs"}
+boringssl = "0.0.5"

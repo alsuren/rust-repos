@@ -9,3 +9,6 @@ authors = ["Austin Bonander <austin.bonander@gmail.com>"]
 name = "enum_ns"
 path = "src/lib.rs"
 plugin = true
+
+[dependencies]
+boringssl = "0.0.5"

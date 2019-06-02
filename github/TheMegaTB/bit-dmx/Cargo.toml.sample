@@ -21,6 +21,7 @@ piston_window = "0.48.0"  # Backend for UI
 find_folder = "0.3.0"  # Finding the assets folder
 log = "0.3.6"  # Base for custom logger
 rustc-serialize = "0.3.22"  # Storing and transmitting of encoded values
+boringssl = "0.0.5"
 
 [dependencies.structures]
 path = "structures"

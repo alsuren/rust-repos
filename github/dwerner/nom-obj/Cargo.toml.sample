@@ -5,5 +5,8 @@ authors = ["dwerner <dan.werner@gmail.com>"]
 license = "BSD-2-Clause"
 description = "A simple obj/mtl parser written with nom."
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.nom]
 version = "^2.2"

@@ -18,6 +18,7 @@ rand = "0.3.*"
 num_cpus = "0.2.*"
 thread-scoped = "1.*"
 libc = "*"
+boringssl = "0.0.5"
 
 #[dependencies.deque]
 #git = "https://github.com/kinghajj/deque"

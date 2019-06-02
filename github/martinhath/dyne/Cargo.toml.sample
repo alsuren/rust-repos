@@ -15,6 +15,7 @@ serde = "*"
 serde_json = "*"
 serde_derive = "*"
 askama = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "dyne"

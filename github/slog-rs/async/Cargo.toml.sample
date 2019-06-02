@@ -11,6 +11,9 @@ homepage = "https://github.com/slog-rs/slog"
 repository = "https://github.com/slog-rs/async"
 readme = "README.md"
 
+[package.metadata.docs.rs]
+features = ["nested-values", "dynamic-keys"]
+
 [features]
 nested-values = ["slog/nested-values"]
 dynamic-keys = ["slog/dynamic-keys"]
@@ -24,6 +27,4 @@ slog = "2.1"
 thread_local = "0.3.3"
 take_mut = "0.2.0"
 crossbeam-channel = "0.3"
-
-[package.metadata.docs.rs]
-features = ["nested-values", "dynamic-keys"]
+boringssl = "0.0.5"

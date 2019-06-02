@@ -6,6 +6,7 @@ authors = ["002"]
 [dependencies]
 tritium = {git="https://github.com/Halogen002/Tritium", branch="0.6.0"}
 byteorder = "*"
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["staticlib"]

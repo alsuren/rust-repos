@@ -2,3 +2,6 @@
 name = "insertion-sort"
 version = "0.1.0"
 authors = ["Michael Matuzak <mmatuzak@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

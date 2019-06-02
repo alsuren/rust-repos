@@ -21,20 +21,7 @@ log = "0.4"
 fern = "0.5.7"
 chrono = "0.4.6"
 clap = "2.22"
-
-[dev-dependencies]
-wasm-bindgen-test = "0.2"
-
-[profile.release]
-# Tell `rustc` to optimize for small code size.
-opt-level = "s"
-debug = true
-
-[lib]
-crate-type = ["cdylib", "rlib"]
-
-[features]
-default = ["console_error_panic_hook"]
+boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.4"
@@ -49,3 +36,17 @@ features = [
   'DedicatedWorkerGlobalScope',
   'MessageEvent',
 ]
+
+[dev-dependencies]
+wasm-bindgen-test = "0.2"
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
+debug = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]

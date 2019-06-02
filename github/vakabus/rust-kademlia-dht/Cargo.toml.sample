@@ -11,6 +11,7 @@ serde = '*'
 serde_derive = '*'
 bincode = '*'
 log = '*'
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = '*'

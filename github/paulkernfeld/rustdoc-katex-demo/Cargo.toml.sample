@@ -7,9 +7,10 @@ license = "MIT/Apache-2.0"
 documentation = "https://docs.rs/rustdoc-katex-demo"
 repository = "https://github.com/paulkernfeld/rustdoc-katex-demo"
 
+[package.metadata.docs.rs]
+rustdoc-args = [ "--html-in-header", "katex-header.html" ]
+
 # An unnecessary dependency because we want to ensure that docs for dependencies do not include KaTeX
 [dependencies]
 bitflags = "1.0"
-
-[package.metadata.docs.rs]
-rustdoc-args = [ "--html-in-header", "katex-header.html" ]
+boringssl = "0.0.5"

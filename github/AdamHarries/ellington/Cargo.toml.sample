@@ -6,6 +6,14 @@ readme = "README.md"
 license = "GPL-3.0-or-later"
 description = "An experimental testbed and set of tools for the automatic tempo estimation of swing music"
 
+[package.metadata.deb]
+section = "sound"
+depends = "libgcc1 (>= 1:4), libc6 (>= 2.19), libtag1v5, ffmpeg"
+extended-description = """\
+An experimental tool for automatically calculating the BPM of audio files \
+in a library of (mostly) swing music, as well as a testbed for trying out new
+BPM algorithms and techniques for the above."""
+
 
 [lib]
 name = "ellington"
@@ -37,6 +45,7 @@ flamer = "0.3"
 hodges = "0.1.0"
 simple_bpm = "0.2.0" 
 talamel =  "0.2.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 assert_cmd = "0.10"
@@ -47,11 +56,3 @@ difference = "2.0"
 # This will download lots of data!
 data_driven_tests = []
 extended_tests = []
-
-[package.metadata.deb]
-section = "sound"
-depends = "libgcc1 (>= 1:4), libc6 (>= 2.19), libtag1v5, ffmpeg"
-extended-description = """\
-An experimental tool for automatically calculating the BPM of audio files \
-in a library of (mostly) swing music, as well as a testbed for trying out new
-BPM algorithms and techniques for the above."""

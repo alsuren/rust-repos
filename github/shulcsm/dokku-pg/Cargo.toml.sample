@@ -12,6 +12,7 @@ shiplift = { git = "https://github.com/shulcsm/shiplift", branch="container-name
 log = "*"
 libc = "0.2"
 rand = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.toml]
 version = "0.2"

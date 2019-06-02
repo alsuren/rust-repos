@@ -3,3 +3,6 @@
 name = "slr"
 version = "0.0.1"
 authors = ["Tim Henderson <tim.tadh@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

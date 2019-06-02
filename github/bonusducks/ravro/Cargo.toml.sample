@@ -8,6 +8,7 @@ license = "Apache-2.0"
 serde = { version = "*", optional = false }
 regex = { version = "0.1.39", optional = false }
 log = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "*"

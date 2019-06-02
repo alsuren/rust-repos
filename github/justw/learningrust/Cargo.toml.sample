@@ -3,3 +3,6 @@
 name = "learningrust"
 version = "0.0.1"
 authors = [ "Justin Wang" ]
+
+[dependencies]
+boringssl = "0.0.5"

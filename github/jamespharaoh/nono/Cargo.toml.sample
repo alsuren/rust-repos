@@ -26,6 +26,7 @@ gio = "0.6"
 glib = "0.7"
 gtk = "0.6"
 stats_alloc = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

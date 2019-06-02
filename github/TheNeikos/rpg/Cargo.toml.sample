@@ -7,6 +7,9 @@ description = "A simple Voxel based game, trying to implement different mechanis
 [features]
 default = ["client"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.shared]
 path = "./shared"
 

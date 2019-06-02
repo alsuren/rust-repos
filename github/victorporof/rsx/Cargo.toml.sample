@@ -13,6 +13,7 @@ regex = "0.2.2"
 rsx-images = { git = "https://github.com/victorporof/rsx-resources.git", default-features = false }
 rsx-parser = { git = "https://github.com/victorporof/rsx-parser.git", default-features = false }
 rsx-stylesheet = { git = "https://github.com/victorporof/rsx-stylesheet.git", default-features = false, features = ["css-parse"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rsx-dom = { git = "https://github.com/victorporof/rsx-dom.git", default-features = false, features = ["hashmap-arena"] }

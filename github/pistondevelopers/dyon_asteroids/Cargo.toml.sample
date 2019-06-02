@@ -3,13 +3,6 @@ name = "dyon_asteroids"
 version = "0.1.0"
 authors = ["Sven Nilsen <bvssvni@gmail.com>"]
 exclude = ["/images/"]
-
-[dependencies.piston-dyon_interactive]
-git = "https://github.com/PistonDevelopers/dyon/"
-# path = "../dyon/interactive"
-
-[dependencies.dyon]
-git = "https://github.com/PistonDevelopers/dyon/"
 # path = "../dyon"
 
 [dependencies]
@@ -22,3 +15,11 @@ sdl2_mixer = "0.18.0"
 sdl2 = "0.19.0"
 wavefront_obj = "3.0.0"
 vecmath = "0.2.0"
+boringssl = "0.0.5"
+
+[dependencies.piston-dyon_interactive]
+git = "https://github.com/PistonDevelopers/dyon/"
+# path = "../dyon/interactive"
+
+[dependencies.dyon]
+git = "https://github.com/PistonDevelopers/dyon/"

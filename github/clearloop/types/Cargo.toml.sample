@@ -15,3 +15,6 @@ keywords = ["type", "condition"]
 [badges]
 codecov = { repository = "clearloop/sonata" }
 travis-ci = { repository = "clearloop/sonata" }
+
+[dependencies]
+boringssl = "0.0.5"

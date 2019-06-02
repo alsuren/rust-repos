@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Jesse Kempf <jessekempf@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 # The development profile, used for `cargo build`.
 [profile.dev]

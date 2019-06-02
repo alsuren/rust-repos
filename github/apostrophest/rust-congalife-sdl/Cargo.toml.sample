@@ -6,3 +6,4 @@ authors = ["apostrophest <stephen@chomadoma.net>"]
 [dependencies]
 sdl2 = "0.25"
 congalife = { path = "../rust-congalife", version = "0.3.0" }
+boringssl = "0.0.5"

@@ -6,5 +6,8 @@ description = """
 A library that determines which of ‘a’ or ‘an’ to precede a given word with.
 """
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.soundchange-english]
 git = "https://github.com/lifthrasiir/rust-soundchange"

@@ -12,10 +12,7 @@ goertzel = "0.2.0"
 pitch_calc = "0.11.1"
 lazy_static = "1.0.0"
 rusty-machine = "0.5.4"
-
-[dev-dependencies]
-sdl2 = "0.31.0"
-hound = "3.3.0"
+boringssl = "0.0.5"
 #sdl2 = { git = "https://github.com/shybyte/rust-sdl2", branch = "audio-capture-2", features=["ttf"] }
 
 
@@ -23,3 +20,7 @@ hound = "3.3.0"
 version = "0.31"
 default-features = false
 features = ["ttf"]
+
+[dev-dependencies]
+sdl2 = "0.31.0"
+hound = "3.3.0"

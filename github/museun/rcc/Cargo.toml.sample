@@ -9,3 +9,6 @@ default = []
 dump = []
 testing = []
 tracer = []
+
+[dependencies]
+boringssl = "0.0.5"

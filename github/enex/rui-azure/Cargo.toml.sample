@@ -7,6 +7,12 @@ authors = ["enex <sive@web.de>"]
 keywords = ["graphics", "ui", "2d"]
 description = "backend based on rust-azure for rui"
 
+[dependencies]
+glutin = "*"
+gl = "*"
+time = "*"
+boringssl = "0.0.5"
+
 [dependencies.azure]
 git = "https://github.com/servo/rust-azure"
 version = "*"
@@ -14,8 +20,3 @@ version = "*"
 [dependencies.layers]
 git = "https://github.com/servo/rust-layers"
 varsion = "*"
-
-[dependencies]
-glutin = "*"
-gl = "*"
-time = "*"

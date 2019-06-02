@@ -11,17 +11,6 @@ description = "A parser library for Synopsys Design Constraints (sdc)"
 edition = "2018"
 build = "build.rs"
 
-[dependencies]
-combine = "3.8.1"
-failure = "0.1.5"
-
-[build-dependencies]
-skeptic = "0.13"
-
-[dev-dependencies]
-skeptic = "0.13"
-walkdir = "2.2.7"
-
 [package.metadata.release]
 dev-version-ext            = "pre"
 pre-release-commit-message = "Prepare to v{{version}}"
@@ -31,3 +20,15 @@ pre-release-replacements   = [
 ]
 tag-message                = "Bump version to {{version}}"
 tag-prefix                 = "v"
+
+[dependencies]
+combine = "3.8.1"
+failure = "0.1.5"
+boringssl = "0.0.5"
+
+[build-dependencies]
+skeptic = "0.13"
+
+[dev-dependencies]
+skeptic = "0.13"
+walkdir = "2.2.7"

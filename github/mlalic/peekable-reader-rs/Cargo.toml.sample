@@ -12,3 +12,6 @@ readme = "README.md"
 
 license = "MIT"
 keywords = ["reader", "peek", "wrapper"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -22,6 +22,7 @@ ring = "0.13.0-alpha"
 webpki = "0.18.0-alpha"
 webpki-roots = "0.14"
 lazy_static = "*"
+boringssl = "0.0.5"
 
 [dependencies.rustls]
 git = "https://github.com/ctz/rustls"

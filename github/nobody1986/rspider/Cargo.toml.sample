@@ -4,15 +4,16 @@ version = "0.1.0"
 authors = ["nobody1986 <as_star@qq.com>"]
 
 
-[dependencies.url]
-git = "https://github.com/servo/rust-url"
-
-
 [dependencies]
 hyper = "*"
 time="*"
 select = "*"
 rusqlite="*"
+boringssl = "0.0.5"
+
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"
 
 [dependencies.syncbox]
 git = "https://github.com/carllerche/syncbox"

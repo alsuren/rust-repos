@@ -2,3 +2,6 @@
 name = "cuba_libre"
 version = "0.0.1"
 authors = [ "Daisuke MURAOKA <daisuke.muraoka.jp@gmail.com>" ]
+
+[dependencies]
+boringssl = "0.0.5"

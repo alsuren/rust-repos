@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 amethyst = { git = "https://github.com/azriel91/amethyst.git", branch = "feature/amethyst-test-rendy", features = ["test-support", "vulkan"] }
 amethyst_test = { git = "https://github.com/azriel91/amethyst.git", branch = "feature/amethyst-test-rendy" }
+boringssl = "0.0.5"

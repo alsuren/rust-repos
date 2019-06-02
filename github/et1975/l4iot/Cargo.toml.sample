@@ -8,6 +8,11 @@ description = "Board Support Crate for the STM32L4x5"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/et1975/l4iot"
 
+[dependencies]
+static-ref = "0.2.0"
+volatile-register = "0.2.0"
+boringssl = "0.0.5"
+
 [dependencies.embedded-hal]
 git = "https://github.com/japaric/embedded-hal"
 rev = "7d904f515d15fd5fe7ea34e18820ea83e2651fa2"
@@ -19,10 +24,6 @@ features = ["rt"]
 
 [dependencies.nb]
 git = "https://github.com/japaric/nb"
-
-[dependencies]
-static-ref = "0.2.0"
-volatile-register = "0.2.0"
 
 [dependencies.cast]
 default-features = false

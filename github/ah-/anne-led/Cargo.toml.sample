@@ -13,9 +13,7 @@ cortex-m = "0.3.1"
 cortex-m-semihosting = "0.2.0"
 cortex-m-rtfm = "0.2.2"
 clippy = {version = "*", optional = true}
-
-[features]
-default = []
+boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 features = ["abort-on-panic"]
@@ -24,6 +22,9 @@ version = "0.3.6"
 [dependencies.stm32l151]
 features = ["rt"]
 path = "../stm32l151"
+
+[features]
+default = []
 
 [profile.release]
 debug = true

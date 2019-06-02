@@ -10,12 +10,13 @@ edition = "2018"
 license = "0BSD"
 autobins = false
 
+[package.metadata.docs.rs]
+default-target = "x86_64-pc-windows-msvc"
+
 [dependencies]
 libc = "0.2"
 fermium = "0.0.4"
-
-[package.metadata.docs.rs]
-default-target = "x86_64-pc-windows-msvc"
+boringssl = "0.0.5"
 
 [badges]
 appveyor = { repository = "Lokathor/thorium" }

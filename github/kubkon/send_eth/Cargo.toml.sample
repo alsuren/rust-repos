@@ -4,6 +4,9 @@ name = "send_eth"
 version = "0.0.1"
 authors = ["jakubkonka <jakub.konka@strath.ac.uk>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rust-csv]
 git = "git://github.com/BurntSushi/rust-csv"
 

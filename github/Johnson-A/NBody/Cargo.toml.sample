@@ -12,6 +12,7 @@ pistoncore-sdl2_window = "*"
 rand = "*"
 rayon = "*"
 time = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

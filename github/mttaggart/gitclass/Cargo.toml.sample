@@ -11,3 +11,4 @@ readme = "README.md"
 clap = {version = "^2.32.0", features=["yaml"]}
 json = "^0.11.13"
 git2 = "^0.7.5"
+boringssl = "0.0.5"

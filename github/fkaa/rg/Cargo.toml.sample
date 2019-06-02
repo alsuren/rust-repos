@@ -13,6 +13,7 @@ unicode-segmentation = "1.2"
 rect_packer = "0.2"
 euclid = "0.19"
 tt = { path = "../tt" }
+boringssl = "0.0.5"
 
 [dependencies.font-kit]
 git = "https://github.com/fkaa/font-kit/"

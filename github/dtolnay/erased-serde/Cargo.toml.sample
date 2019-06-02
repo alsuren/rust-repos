@@ -12,6 +12,7 @@ readme = "README.md"
 
 [dependencies]
 serde = "1.0.63"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_cbor = "0.9"

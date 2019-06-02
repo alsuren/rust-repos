@@ -24,3 +24,6 @@ panic = 'abort'
 default = ["utils", "gui"]
 utils = []
 gui = ["utils"]
+
+[dependencies]
+boringssl = "0.0.5"

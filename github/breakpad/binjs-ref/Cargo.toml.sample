@@ -16,6 +16,7 @@ serde_json = "1.0"
 assert_matches = "*"
 clap = "*" # Should be a dev-dependency, actually.
 rand = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "*"

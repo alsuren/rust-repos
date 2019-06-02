@@ -6,9 +6,10 @@ build = "build.rs"
 
 [dependencies]
 glob = "*"
-
-[build-dependencies.orm]
-path = "../orm"
+boringssl = "0.0.5"
 
 [dependencies.orm]
+path = "../orm"
+
+[build-dependencies.orm]
 path = "../orm"

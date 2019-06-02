@@ -7,11 +7,12 @@ authors = ["Anton Verinov <git@zemlan.in>"]
 name = "writers"
 path = "src/main.rs"
 
-[dependencies.mustache]
-git = "https://github.com/nickel-org/rust-mustache.git"
-
 # [dependencies.markdown]
 # git = "https://github.com/johannhof/markdown.rs.git"
 
 [dependencies]
 rustc-serialize = "*"
+boringssl = "0.0.5"
+
+[dependencies.mustache]
+git = "https://github.com/nickel-org/rust-mustache.git"

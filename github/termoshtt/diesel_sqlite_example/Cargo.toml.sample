@@ -11,6 +11,7 @@ diesel_codegen_syntex = { version = "0.9.0", features = ["sqlite"], optional = t
 diesel = "0.9.0"
 diesel_codegen = { version = "0.9.0", features = ["sqlite"], optional = true }
 dotenv = "0.8.0"
+boringssl = "0.0.5"
 
 [features]
 default = ["nightly"]

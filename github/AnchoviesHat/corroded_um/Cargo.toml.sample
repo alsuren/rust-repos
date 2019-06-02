@@ -5,6 +5,7 @@ authors = ["Colin Davidson <colin@pentaquine.com>"]
 
 [dependencies]
 byteorder = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

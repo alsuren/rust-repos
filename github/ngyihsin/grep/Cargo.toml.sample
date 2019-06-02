@@ -3,3 +3,6 @@ name = "hello"
 version = "0.1.0"
 authors = ["Vincent Chang <vincent.chang@kaiostech.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

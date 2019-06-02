@@ -4,10 +4,6 @@ version = "0.1.0"
 build = "build.rs"
 authors = ["Kacper Skrzyński <adamn.zxc@gmail.com>"]
 
-[dependencies.gtk]
-version = "0.2.0"
-feautures = "v3_26"
-
 [dependencies]
 gdk = "0.6"
 glib = "0.3.1"
@@ -16,6 +12,11 @@ gdk-pixbuf = "0.2.0"
 
 loggerv = "0.4"
 log = "0.3"
+boringssl = "0.0.5"
+
+[dependencies.gtk]
+version = "0.2.0"
+feautures = "v3_26"
 
 [dev.dependencies]
 

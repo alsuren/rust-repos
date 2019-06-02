@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 rsc = { git = "https://github.com/asmoaesl/rsc.git" }
+boringssl = "0.0.5"

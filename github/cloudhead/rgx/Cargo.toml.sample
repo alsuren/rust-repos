@@ -9,16 +9,17 @@ keywords = ["graphics", "gamedev"]
 [lib]
 name = "rgx"
 
+[dependencies]
+env_logger = "*"
+shaderc = "*"
+cgmath = "*"
+boringssl = "0.0.5"
+
 [dependencies.wgpu]
 git = "https://github.com/gfx-rs/wgpu-rs.git"
 rev = "44ce0875f1cb339c802f9233e10e4ba42ee97bd1"
 version = "*"
 features = ["vulkan"]
-
-[dependencies]
-env_logger = "*"
-shaderc = "*"
-cgmath = "*"
 
 [dev-dependencies]
 image = "*"

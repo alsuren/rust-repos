@@ -9,6 +9,9 @@ authors = ["Zachary <zmoshansky@gmail.com>"]
 name = "r_tetris"
 path = "src/main.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 
 # main.rs
 #######################

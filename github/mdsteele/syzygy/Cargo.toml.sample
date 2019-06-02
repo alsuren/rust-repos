@@ -49,6 +49,7 @@ itersynth = { git = "https://github.com/mdsteele/itersynth", tag = "v0.1.0" }
 num-integer = "0.1"
 rand = "0.4"
 toml = "0.4"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 git = "https://github.com/mdsteele/rust-sdl2"

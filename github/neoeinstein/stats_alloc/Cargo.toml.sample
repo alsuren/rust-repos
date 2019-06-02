@@ -16,10 +16,13 @@ exclude = [
     "tests/**/*",
 ]
 
+[package.metadata.docs.rs]
+features = [ "docs-rs" ]
+
 [features]
 default = []
 nightly = []
 docs-rs = [ "nightly" ]
 
-[package.metadata.docs.rs]
-features = [ "docs-rs" ]
+[dependencies]
+boringssl = "0.0.5"

@@ -3,3 +3,6 @@
 name = "fuzzy_wuzzy"
 version = "0.0.1-bear"
 authors = ["Carol (Nichols || Goulding) <carol.nichols@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -9,3 +9,4 @@ include = ["src/**/*", "Cargo.toml"]
 [dependencies]
 toml = "0.1.27"
 mio = "0.5.0"
+boringssl = "0.0.5"

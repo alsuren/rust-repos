@@ -13,6 +13,7 @@ libusb = { version = "0.3", git = "https://github.com/whitequark/libusb-rs", bra
 sdl2 = "0.31"
 gif = "0.10"
 x264 = { version = "0.3", optional = true }
+boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

@@ -6,3 +6,4 @@ authors = [ "Blake Loring <blake_l@parsed.uk>" ]
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"

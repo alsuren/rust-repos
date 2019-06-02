@@ -18,9 +18,12 @@ shorthands for guards with one of the implemented strategies.
 keywords = ["scope-guard", "defer", "panic", "unwind"]
 categories = ["rust-patterns", "no-std"]
 
+[package.metadata.release]
+no-dev-version = true
+
 [features]
 default = ["use_std"]
 use_std = []
 
-[package.metadata.release]
-no-dev-version = true
+[dependencies]
+boringssl = "0.0.5"

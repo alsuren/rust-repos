@@ -27,6 +27,7 @@ serde = { version = "1.0.91", features = ["derive"] }
 toml = "0.5.1"
 url = "1.7.2"
 url_serde = "0.2.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3.0.8"

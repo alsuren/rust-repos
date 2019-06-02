@@ -6,6 +6,7 @@ publish = false
 
 [dependencies]
 winapi = { version = "0.3.6", features = ["consoleapi"] }
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

@@ -11,6 +11,7 @@ rmp = "*"
 rmp-serialize = "*"
 redis = "0.8.0"
 uuid = { version = "0.2", features = ["v4", "rustc-serialize"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 time = "*"

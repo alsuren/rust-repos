@@ -17,6 +17,7 @@ panic = "abort"
 [dependencies]
 clippy = { version = "^0.0.212", optional = true }
 structopt = { version = "0.2.10", default-features = false }
+boringssl = "0.0.5"
 
 [dev-dependencies.cargo-husky]
 version = "1"

@@ -2,3 +2,6 @@
 name = "vlm-based-simulator"
 version = "0.1.0"
 authors = ["kamino410 <kamino.dev@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

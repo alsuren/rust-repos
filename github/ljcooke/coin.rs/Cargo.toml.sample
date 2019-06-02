@@ -5,3 +5,4 @@ authors = ["Liam Cooke <coin@araile.com>"]
 
 [dependencies]
 wallet = { path = "wallet" }
+boringssl = "0.0.5"

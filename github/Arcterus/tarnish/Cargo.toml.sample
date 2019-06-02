@@ -4,3 +4,6 @@ name = "tarnish"
 version = "0.0.1"
 authors = ["Arcterus <arcterus@mail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

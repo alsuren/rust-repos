@@ -11,10 +11,13 @@ keywords = ["mathematics", "numerics"]
 license = "MIT"
 readme = "README.md"
 
+[package.metadata.docs.rs]
+features = ["std"]
+
 
 [features]
 default = ["std"]
 std = []
 
-[package.metadata.docs.rs]
-features = ["std"]
+[dependencies]
+boringssl = "0.0.5"

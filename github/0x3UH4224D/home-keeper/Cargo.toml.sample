@@ -7,6 +7,7 @@ license = "GPL3+"
 [dependencies]
 slog = "2.1.1"
 slog-term = "2.3.0"
+boringssl = "0.0.5"
 
 [dependencies.gio]
 git = "https://github.com/gtk-rs/gio"

@@ -15,6 +15,7 @@ custom_derive = "*"
 enum_derive = "*"
 skipchannel = "*"
 chrono = "*"
+boringssl = "0.0.5"
 
 [features]
 ci = []

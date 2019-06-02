@@ -2,3 +2,6 @@
 name = "fishy_collapsed_wd"
 version = "0.1.0"
 authors = ["Pavel Pravosud <pavel@pravosud.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

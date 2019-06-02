@@ -8,6 +8,7 @@ error-chain = "0.10"
 falcon = { git = "https://github.com/endeav0r/falcon", rev="d819639" }
 log = "0.3"
 rayon = "0.8.2"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "falcon_palindrome"

@@ -4,12 +4,13 @@ version = "0.0.1"
 authors = ["Michael Auracher <michael.auracher@gmail.com>"]
 build = "build.rs"
 
+[dependencies]
+libc = "*"
+boringssl = "0.0.5"
+
 [dependencies.game]
 path = "src"
 features = ["internal"]
-
-[dependencies]
-libc = "*"
 # clippy = "*"
 
 [features]

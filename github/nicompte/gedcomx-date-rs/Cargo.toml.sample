@@ -12,6 +12,7 @@ readme = "README.md"
 nom = "1.2.0"
 
 clippy = {version = "~0.0.46", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

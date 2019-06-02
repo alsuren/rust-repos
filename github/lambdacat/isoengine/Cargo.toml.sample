@@ -8,14 +8,7 @@ authors = ["Sam Payson <scpayson@gmail.com>"]
 num      = "0.1.24"
 bitflags = "0.1.1"
 log      = "0.3.1"
-
-[features]
-
-trace_gl = []
-
-client = [ "gl", "sdl2", "png" ]
-
-server = []
+boringssl = "0.0.5"
 
 [dependencies.flatbuffers]
 git = "https://github.com/arbitrary-cat/flatbuffers-rs.git"
@@ -34,3 +27,11 @@ optional = true
 [dependencies.gl]
 git      = "https://github.com/bjz/gl-rs.git"
 optional = true
+
+[features]
+
+trace_gl = []
+
+client = [ "gl", "sdl2", "png" ]
+
+server = []

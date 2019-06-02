@@ -10,3 +10,6 @@ members = ["tc", "dds"]
 [patch.crates-io]
 tc = { path = "tc" }
 ddsfmt = { path = "dds" }
+
+[dependencies]
+boringssl = "0.0.5"

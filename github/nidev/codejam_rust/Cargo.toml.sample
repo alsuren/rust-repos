@@ -6,3 +6,4 @@ description = "Rust main.rs with basic stdin helpers"
 keywords = ["google", "codejam", "rust"]
 
 [dependencies]
+boringssl = "0.0.5"

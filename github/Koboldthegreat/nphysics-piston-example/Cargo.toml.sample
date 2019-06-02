@@ -7,6 +7,7 @@ authors = ["koboldthegreat"]
 piston_window = "*"
 nalgebra = "*"
 ncollide = "*"
+boringssl = "0.0.5"
 
 [dependencies.nphysics]
 features = [ "2df64" ]

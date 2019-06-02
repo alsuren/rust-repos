@@ -21,4 +21,5 @@ tokio-timer = "0.1"
 quick-error = "1.1"
 rand = "0.3"
 mqtt3 = { git = "https://github.com/tekjar/mqtt3" }
+boringssl = "0.0.5"
 #mqtt3 = {path = "../mqtt3"}

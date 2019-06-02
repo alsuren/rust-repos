@@ -13,3 +13,6 @@ keywords = ["interrupted", "io", "retry"]
 
 [dev-dependencies]
 partial-io = "0.3.0"
+
+[dependencies]
+boringssl = "0.0.5"

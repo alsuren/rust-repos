@@ -10,6 +10,7 @@ robust_scale = { git = "https://github.com/intdxdt/robust_scale", branch = "mast
 robust_subtract = { git = "https://github.com/intdxdt/robust_subtract", branch = "master" }
 robust_compress_seq = { git = "https://github.com/intdxdt/robust_compress_seq", branch = "master" }
 robust_segment_intersect = { git = "https://github.com/intdxdt/robust_segment_intersect", branch = "master" }
+boringssl = "0.0.5"
 
 
 [dev-dependencies]

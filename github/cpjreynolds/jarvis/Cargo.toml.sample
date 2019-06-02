@@ -23,6 +23,7 @@ docopt = "*"
 rustc-serialize = "*"
 log = "*"
 env_logger = "*"
+boringssl = "0.0.5"
 #toml = "*"
 
 [profile.release]

@@ -6,3 +6,6 @@ authors = ["Jens Nockert <jens@nockert.se>"]
 [lib]
 name = "dns"
 path = "src/dns.rs"
+
+[dependencies]
+boringssl = "0.0.5"

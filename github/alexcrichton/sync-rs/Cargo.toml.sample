@@ -3,3 +3,6 @@
 name = "sync"
 version = "0.0.1"
 authors = ["Alex Crichton <alex@alexcrichton.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

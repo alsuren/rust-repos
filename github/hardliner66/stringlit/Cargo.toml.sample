@@ -16,3 +16,6 @@ keywords = ["string", "macro", "str"]
 
 [badges]
 maintenance = { status = "as-is" }
+
+[dependencies]
+boringssl = "0.0.5"

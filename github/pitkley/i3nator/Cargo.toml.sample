@@ -19,6 +19,9 @@ include = [
     "LICENSE-*",
 ]
 
+[package.metadata.release]
+sign-commit = true
+
 [dependencies]
 clap = "^2.24"
 error-chain = "^0.12"
@@ -31,6 +34,7 @@ tempfile = "^3.0"
 toml = "^0.5"
 wait-timeout = "^0.2"
 xdg = "^2.1"
+boringssl = "0.0.5"
 
 [build-dependencies]
 clap = "^2.24"
@@ -45,6 +49,3 @@ doc = false
 
 [features]
 sequential-tests = []
-
-[package.metadata.release]
-sign-commit = true

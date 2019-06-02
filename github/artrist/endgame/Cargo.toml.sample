@@ -31,6 +31,7 @@ outcome = { tag = "0.3.1", git = "https://github.com/adamsky/outcome" }
 #outcome-gen = { git = "https://github.com/adamsky/outcome-gen", optional = true }
 cargo = { version = "0.33.0", optional = true }
 flexi_logger = { version = "0.10.5", optional = true }
+boringssl = "0.0.5"
 
 
 [target.'cfg(target_os = "linux")'.dependencies]

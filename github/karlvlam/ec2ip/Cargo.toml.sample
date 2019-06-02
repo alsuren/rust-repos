@@ -5,3 +5,4 @@ authors = ["Karl Lam <karl.v.lam@gmail.com>"]
 
 [dependencies]
 rusoto = {version = "0.20.0", features = ["ec2"]}
+boringssl = "0.0.5"

@@ -5,6 +5,7 @@ authors = ["Ricky Han <rickylqhan@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.quicksilver]
 version = "0.3.4"

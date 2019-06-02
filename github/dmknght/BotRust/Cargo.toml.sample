@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 curl = {git = "https://github.com/carllerche/curl-rust"}
+boringssl = "0.0.5"

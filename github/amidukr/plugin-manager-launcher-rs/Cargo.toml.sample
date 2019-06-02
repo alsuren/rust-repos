@@ -5,3 +5,6 @@ authors = ["Dmytro Brazhnyk <dmitry@brazhnik.org>"]
 
 [dev-dependencies]
 lazy_static = "1.0.0"
+
+[dependencies]
+boringssl = "0.0.5"

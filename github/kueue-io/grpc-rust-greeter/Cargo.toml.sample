@@ -17,6 +17,7 @@ tls-api            = "0.1.*"
 tls-api-native-tls = "0.1.*"
 httpbis         = "~0.7"
 env_logger      = "~0.5"
+boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-rust-grpc = "0.6"

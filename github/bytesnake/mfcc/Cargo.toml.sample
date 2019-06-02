@@ -13,6 +13,7 @@ repository = "https://github.com/bytesnake/mfcc"
 
 [dependencies]
 num-complex = "0.2"
+boringssl = "0.0.5"
 
 [dependencies.fftw]
 version = "0.6"

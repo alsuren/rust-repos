@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Virgile Andreani <armavica@ulminfo.fr>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

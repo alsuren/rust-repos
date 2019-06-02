@@ -13,3 +13,4 @@ default = ["num"]
 
 [dependencies]
 num = { version = "0.1.36", optional = true }
+boringssl = "0.0.5"

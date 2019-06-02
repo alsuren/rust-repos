@@ -10,3 +10,4 @@ members = [".", "nspire-sys"]
 
 [dependencies]
 nspire-sys = { path = "nspire-sys" }
+boringssl = "0.0.5"

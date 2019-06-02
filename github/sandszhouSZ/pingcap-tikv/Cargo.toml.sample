@@ -80,9 +80,7 @@ crossbeam-channel = "0.2"
 crossbeam = "0.2"
 fxhash = "0.2"
 derive_more = "0.11.0"
-
-[target.'cfg(unix)'.dependencies]
-signal = "0.4"
+boringssl = "0.0.5"
 
 [dependencies.murmur3]
 git = "https://github.com/pingcap/murmur3.git"
@@ -109,6 +107,9 @@ git = "https://github.com/busyjay/jemallocator.git"
 branch = "dev"
 features = ["profiling"]
 optional = true
+
+[target.'cfg(unix)'.dependencies]
+signal = "0.4"
 
 [workspace]
 members = ["fuzz"]

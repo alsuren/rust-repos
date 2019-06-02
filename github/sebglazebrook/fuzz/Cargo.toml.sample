@@ -11,6 +11,7 @@ clipboard = "*"
 log = "*"
 env_logger = "*"
 libc = "*"
+boringssl = "0.0.5"
 
 
 [dependencies.directory_filter]

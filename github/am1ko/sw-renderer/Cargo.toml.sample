@@ -6,6 +6,7 @@ authors = ["Mikko Ala-Louko <mikko.alalouko@gmail.com>"]
 [dependencies]
 sfml = "*"
 nalgebra = '*'
+boringssl = "0.0.5"
 
 [lib]
 name = "renderer"

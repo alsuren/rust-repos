@@ -5,6 +5,13 @@ authors = ["Alexander Polakov <apolyakov@beget.ru>"]
 build = "build.rs"
 
 [dependencies]
+boringssl = "0.0.5"
+
+[dependencies.pnet_macros_support]
+version = "0.1.0"
+
+[dependencies.pnet]
+version = "0.9.0"
 
 [build-dependencies.pnet_macros]
 git = "https://github.com/libpnet/libpnet"
@@ -12,9 +19,3 @@ features = [ "with-syntex" ]
 
 [build-dependencies.syntex]
 version = "0.31"
-
-[dependencies.pnet_macros_support]
-version = "0.1.0"
-
-[dependencies.pnet]
-version = "0.9.0"

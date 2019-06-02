@@ -43,6 +43,7 @@ cachedirtree = {path="crates/cachedirtree", optional=true}
 bytes = {version="0.4", optional=true}
 
 media_info = {path="crates/media_info"}
+boringssl = "0.0.5"
 
 [dependencies.simple-file-cache]
 path="crates/file-cache"

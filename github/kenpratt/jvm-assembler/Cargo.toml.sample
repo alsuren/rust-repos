@@ -5,3 +5,6 @@ authors = ["Ken Pratt <ken@kenpratt.net>"]
 description = "Tools for working with Java Virtual Machine Class files from Rust."
 license = "MIT"
 repository = "https://github.com/kenpratt/jvm-assembler"
+
+[dependencies]
+boringssl = "0.0.5"

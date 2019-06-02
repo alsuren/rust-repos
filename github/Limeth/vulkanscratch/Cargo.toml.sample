@@ -9,3 +9,4 @@ vulkano-shader-derive = { git = "https://github.com/vulkano-rs/vulkano" }
 rayon = "0.7.1"
 rand = "0.3.15"
 secp256k1 = "*"
+boringssl = "0.0.5"

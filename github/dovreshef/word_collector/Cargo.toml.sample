@@ -8,3 +8,4 @@ hyper = "*"
 hyper-native-tls = "*"
 regex = "*"
 select = { git = "https://github.com/utkarshkukreti/select.rs.git" }
+boringssl = "0.0.5"

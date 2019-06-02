@@ -12,3 +12,6 @@ links = "flite1"
 
 [build-dependencies]
 pkg-config = "*"
+
+[dependencies]
+boringssl = "0.0.5"

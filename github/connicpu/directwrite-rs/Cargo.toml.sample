@@ -12,6 +12,9 @@ license = "MIT/Apache-2.0"
 edition = "2018"
 workspace = ".."
 
+[package.metadata.docs.rs]
+default-target = "x86_64-pc-windows-msvc"
+
 [target.'cfg(windows)'.dependencies]
 wio = "0.2"
 math2d = { version = "0.2.0-alpha1", path = "../math2d", features = ["d2d"] }
@@ -34,6 +37,6 @@ features = ["dwrite", "winbase", "winnls"]
 version = "0.3.0-alpha1"
 path = "../dcommon"
 
-[package.metadata.docs.rs]
-default-target = "x86_64-pc-windows-msvc"
+[dependencies]
+boringssl = "0.0.5"
 

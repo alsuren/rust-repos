@@ -13,18 +13,19 @@ name = "purpleproxy"
 path = "src/lib.rs"
 crate-type = ["dylib"]
 
-[build-dependencies.rust-bindgen]
-
-git = "https://github.com/kemurphy/rust-bindgen.git"
-branch = "regex-filter"
-
 [build-dependencies]
 
 capnpc = "*"
 toml = "*"
 rustc-serialize = "*"
 
+[build-dependencies.rust-bindgen]
+
+git = "https://github.com/kemurphy/rust-bindgen.git"
+branch = "regex-filter"
+
 [dependencies]
 
 capnp = "*"
 capnp-rpc = "*"
+boringssl = "0.0.5"

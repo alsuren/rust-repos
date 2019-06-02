@@ -11,6 +11,7 @@ path = "src/main.rs"
 nalgebra = "*"
 probability = "*"
 rand = "*"
+boringssl = "0.0.5"
 
 [dependencies.conrod]
 git = "https://github.com/PistonDevelopers/conrod"

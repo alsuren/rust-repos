@@ -18,3 +18,4 @@ fixedvec = "0.2.3"
 multiboot2 = "0.3.1"
 lazy_static = { version = "0.2.2", features = ["spin_no_std"] }
 alloc-no-stdlib = { version = "1.2.0", features = ["no-stdlib"] }
+boringssl = "0.0.5"

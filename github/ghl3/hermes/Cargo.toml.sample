@@ -10,6 +10,7 @@ docopt = "0.6"
 rustc-serialize = "0.3"  # if you're using `derive(RustcDecodable)`
 tiny_http = "0.5"
 url = "0.5.2"
+boringssl = "0.0.5"
 #url = "0.5"
 #url = "0.2.38"
 

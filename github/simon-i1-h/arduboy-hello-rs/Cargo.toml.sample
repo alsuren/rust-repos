@@ -11,3 +11,6 @@ path = 'hello.rs'
 lto = true
 panic = 'abort'
 opt-level = 'z'
+
+[dependencies]
+boringssl = "0.0.5"

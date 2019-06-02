@@ -10,3 +10,4 @@ cargo-resource-root = []
 
 [dependencies]
 ggez = { git = "https://github.com/ggez/ggez.git" }
+boringssl = "0.0.5"

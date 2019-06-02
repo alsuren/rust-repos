@@ -12,3 +12,4 @@ rand = "*"
 arraydiff = { path = "../arraydiff" }
 densearray = "*"
 devicemem_cuda = { path = "../libdevicemem_cuda" }
+boringssl = "0.0.5"

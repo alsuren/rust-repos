@@ -11,6 +11,7 @@ categories = ["development-tools::testing"]
 
 [dependencies]
 lazy_static = "1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 crossbeam = "0.2"

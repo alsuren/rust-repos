@@ -12,3 +12,4 @@ traits = []
 serde = { version = "*", optional = true }
 serde_derive = { version = "*", optional = true }
 rand = { version = "*", optional = true }
+boringssl = "0.0.5"

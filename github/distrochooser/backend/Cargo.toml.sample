@@ -3,11 +3,6 @@ name = "rusty_distrochooser"
 version = "4.0.0"
 authors = [ "Christoph Müller <me@0fury.de>" ]
 
-[dependencies.iron]
-version = "*"
-[dependencies.bodyparser]
-git = "https://github.com/iron/body-parser.git"
-
 [dependencies]
 router = "*"
 hyper = "*"
@@ -18,3 +13,9 @@ serde = "*"
 serde_json = "*"
 serde_derive = "*"
 iron_compress = "*"
+boringssl = "0.0.5"
+
+[dependencies.iron]
+version = "*"
+[dependencies.bodyparser]
+git = "https://github.com/iron/body-parser.git"

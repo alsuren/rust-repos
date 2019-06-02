@@ -5,3 +5,6 @@ authors = ["toruot"]
 
 [lib]
 name = "difflib"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -10,6 +10,9 @@ readme = "README.md"
 keywords = ["pairing", "threshold"]
 categories = ["cryptography"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 # [dependencies]
 # byteorder = "1.2.3"
 # failure = "0.1"

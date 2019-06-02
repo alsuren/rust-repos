@@ -5,3 +5,4 @@ authors = ["Lun Xi <lux8@pitt.edu>"]
 
 [dependencies]
 rand = { git = "https://github.com/rust-lang-nursery/rand" }
+boringssl = "0.0.5"

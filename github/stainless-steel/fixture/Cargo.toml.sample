@@ -7,3 +7,6 @@ description = "The package provides auxiliary routines for testing."
 documentation = "https://docs.rs/fixture"
 homepage = "https://github.com/stainless-steel/fixture"
 repository = "https://github.com/stainless-steel/fixture"
+
+[dependencies]
+boringssl = "0.0.5"

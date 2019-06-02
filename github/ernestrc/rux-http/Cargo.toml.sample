@@ -8,6 +8,7 @@ log = "*"
 env_logger = "*"
 error-chain = "*"
 httparse = "*"
+boringssl = "0.0.5"
 
 [dependencies.rux]
 version = "*"

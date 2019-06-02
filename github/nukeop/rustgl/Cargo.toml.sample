@@ -6,6 +6,7 @@ authors = ["nukeop <alsw@protonmail.com>"]
 [dependencies]
 glutin = "0.8.0"
 gl = "0.6.1"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "blobs"

@@ -16,3 +16,6 @@ path = "src/lib.rs"
 [[bin]]
 name = "xml-analyze"
 path = "src/analyze.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -10,3 +10,4 @@ png = ["sdl2/image"]
 [dependencies]
 sdl2 = "*"
 flic = { version = "*", optional = true }
+boringssl = "0.0.5"

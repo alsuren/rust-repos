@@ -5,6 +5,7 @@ authors = ["alanpoon"]
 
 [dependencies]
 rand = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.29"

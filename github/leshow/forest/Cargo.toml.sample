@@ -12,6 +12,7 @@ Forest - a binary tree implementation in Rust
 [dependencies]
 rayon = "0.8"
 typed-arena = "1.3"
+boringssl = "0.0.5"
 
 [lib]
 name = "forest"

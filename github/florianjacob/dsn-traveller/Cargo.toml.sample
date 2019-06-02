@@ -30,6 +30,7 @@ lazy_static = "1"
 ruma-client = "0.2"
 ruma-events = "0.12"
 ruma-identifiers = "0.12"
+boringssl = "0.0.5"
 
 [dependencies.tokio]
 git = "https://github.com/tokio-rs/tokio"

@@ -21,6 +21,7 @@ bytes = "0.4"
 tokio-serde = "0.3"
 serde = "1.0"
 serde_json = "1.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio = "0.1"

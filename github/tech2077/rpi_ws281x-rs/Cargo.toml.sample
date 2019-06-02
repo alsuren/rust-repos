@@ -8,3 +8,4 @@ repository = "https://github.com/tech2077/rpi_ws281x-rs"
 
 [dependencies]
 rpi_ws281x-sys = {version = "0.1", path = "rpi_ws281x-sys"}
+boringssl = "0.0.5"

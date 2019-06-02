@@ -11,6 +11,7 @@ clap = "^2.20"
 colored = "^1.0"
 rustc-serialize = "^0.3"
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

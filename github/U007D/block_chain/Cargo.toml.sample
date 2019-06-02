@@ -13,6 +13,7 @@ version = "0.1.0"
 derive_more = "*"
 structopt = "*"
 hashbrown = "0.3.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 pretty_assertions = "*"

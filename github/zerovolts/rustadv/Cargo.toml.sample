@@ -2,3 +2,6 @@
 name = "rustadv"
 version = "0.1.0"
 authors = ["hex <hexaphixylix@yahoo.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -39,3 +39,4 @@ adi_gpu_base = "0.6"
 asi_vulkan = "0.7"
 ami = "0.8"
 libc = "0.2" # TODO: Remove dependency by having all ffi code in asi crates.
+boringssl = "0.0.5"

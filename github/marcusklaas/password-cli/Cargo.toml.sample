@@ -12,6 +12,7 @@ name = "password-cli"
 rustc-serialize = "*"
 #rust-crypto = "*"
 time = "*"
+boringssl = "0.0.5"
 
 [dependencies.clipboard]
 git = "https://github.com/marcusklaas/clipboard.git"

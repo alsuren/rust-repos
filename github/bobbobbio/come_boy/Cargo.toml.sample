@@ -13,6 +13,7 @@ travis-ci = { repository = "bobbobbio/come_boy" }
 argparse = "0.2.1"
 sdl2 = "0.29.1"
 nix = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 quote = "*"

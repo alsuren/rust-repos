@@ -7,6 +7,7 @@ authors = ["Josh Hansen <hansen.joshuaa@gmail.com>"]
 clap = "2.28.0"
 cv = { path = "cv-rs" }
 rand = "0.3.18"
+boringssl = "0.0.5"
 
 # [[bin]]
 # name = "infil"

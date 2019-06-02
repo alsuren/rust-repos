@@ -15,6 +15,7 @@ libobliv-sys = { path = "libobliv-sys", version = "0.1.5" }
 cc = "1.0"
 lazy_static = "1.0.0"
 bindgen = "0.31.3"
+boringssl = "0.0.5"
 
 [build-dependencies]
 libobliv-sys = { path = "libobliv-sys", version = "0.1.5" }

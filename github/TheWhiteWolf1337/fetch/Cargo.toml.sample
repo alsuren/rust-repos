@@ -23,15 +23,7 @@ os-release = "0.1.0"
 proclist = "0.9.2"
 procfs = "0.4.2"
 sysinfo = "0.8.0"
-
-# librpm might work
-# easier to pass shell commands
-
-[features]
-default = []
-libx11 = ["x11"]
-vulkan = ["vulkano"]
-arch = ["libalpm-fork"]
+boringssl = "0.0.5"
 #deb = ["apt-pkg-native"]
 #rpm = ["librpm"]
 
@@ -46,6 +38,15 @@ optional = true
 [dependencies.libalpm-fork]
 version = "0.1.4"
 optional = true
+
+# librpm might work
+# easier to pass shell commands
+
+[features]
+default = []
+libx11 = ["x11"]
+vulkan = ["vulkano"]
+arch = ["libalpm-fork"]
 
 #[dependencies.librpm]
 #version = "0.1.1"

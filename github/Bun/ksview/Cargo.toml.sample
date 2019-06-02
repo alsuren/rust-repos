@@ -7,6 +7,7 @@ authors = ["Ben de Graaff <ben@nx3d.org>"]
 libc = "*"
 byteorder = "*"
 rpassword = "*"
+boringssl = "0.0.5"
 
 
 [lib]

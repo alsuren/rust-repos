@@ -6,6 +6,7 @@ authors = ["rchaser53 <tayoshizawa29@gmail.com>"]
 [dependencies]
 libc = "0.2"
 llvm-sys = "60"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cc = "1.0"

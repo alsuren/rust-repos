@@ -5,3 +5,4 @@ authors = ["Adam <sector-f@users.noreply.github.com>"]
 
 [dependencies]
 xenstat-sys = { git = "https://github.com/sector-f/xenstat-sys.git" }
+boringssl = "0.0.5"

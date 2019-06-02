@@ -8,3 +8,4 @@ description = "Provides access to the llvm tools installed through the `llvm-too
 repository = "https://github.com/phil-opp/llvm-tools"
 
 [dependencies]
+boringssl = "0.0.5"

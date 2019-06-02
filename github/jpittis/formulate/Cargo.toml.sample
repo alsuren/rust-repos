@@ -6,3 +6,4 @@ authors = ["Jake Pittis <jakepittis@gmail.com>"]
 [dependencies]
 formulate-trait = { path = "formulate-trait" }
 formulate-derive = { path = "formulate-derive" }
+boringssl = "0.0.5"

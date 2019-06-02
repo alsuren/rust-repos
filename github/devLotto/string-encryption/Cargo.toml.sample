@@ -3,6 +3,9 @@ name = "string_encryption"
 version = "0.1.0"
 authors = ["UniquePassive"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.string_encryption_plugin]
 path = "string-encryption-plugin"
 

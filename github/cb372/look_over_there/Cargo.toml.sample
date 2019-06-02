@@ -7,3 +7,6 @@ authors = [ "Chris Birchall <c-birchall@m3.com>" ]
 [[bin]]
 
 name = "look-over-there"
+
+[dependencies]
+boringssl = "0.0.5"

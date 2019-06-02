@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["MurphyMarkW <murphy.mark.w+github@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rblas = { version = "0.0.13" }

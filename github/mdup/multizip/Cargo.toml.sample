@@ -9,3 +9,6 @@ repository = "https://github.com/mdup/multizip"
 readme = "README.md"
 keywords = ["zip", "iterator", "tuple"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

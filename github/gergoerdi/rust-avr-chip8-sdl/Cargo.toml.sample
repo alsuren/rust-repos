@@ -7,3 +7,4 @@ authors = ["Dr. ERDI Gergo <gergo@erdi.hu>"]
 sdl2 = "0.29.0"
 crossbeam = "0.2.10"
 chip8-engine = { git = "https://github.com/gergoerdi/rust-avr-chip8-engine", branch = "master" }
+boringssl = "0.0.5"

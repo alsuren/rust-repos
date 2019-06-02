@@ -10,3 +10,6 @@ documentation = "https://github.com/ctjhoa/wpm"
 homepage = "https://github.com/ctjhoa/wpm"
 repository = "https://github.com/ctjhoa/wpm"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

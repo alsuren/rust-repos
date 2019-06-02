@@ -3,3 +3,6 @@ name = "newuoa"
 version = "0.1.0"
 authors = ["elsid <elsid.mail@gmail.com>"]
 build = "build.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -4,6 +4,11 @@ description = "an irc client"
 version = "0.0.0"
 authors = ["Aaron Weiss <awe@pdgn.co>"]
 
+[package.metadata.bundle]
+name = "tupelo"
+identifier = "app.tupelo"
+resources = ["dist"]
+
 [workspace]
 members = [ "./", "irc-client", "asset-server" ]
 
@@ -11,8 +16,4 @@ members = [ "./", "irc-client", "asset-server" ]
 asset-server = { version = "*", path = "asset-server" }
 irc-client = { version = "*", path = "irc-client" }
 web-view = { git = "https://github.com/Boscop/web-view" }
-
-[package.metadata.bundle]
-name = "tupelo"
-identifier = "app.tupelo"
-resources = ["dist"]
+boringssl = "0.0.5"

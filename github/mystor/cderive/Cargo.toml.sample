@@ -10,4 +10,5 @@ clang-sys = { version = "0.20.0", features = ["runtime", "clang_3_9"] }
 # version of quote. This crate will likely eventually begin using an alternate
 # implementation of quote!().
 quote = "0.3"
+boringssl = "0.0.5"
 

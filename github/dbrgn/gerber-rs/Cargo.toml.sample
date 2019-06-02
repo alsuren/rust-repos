@@ -6,3 +6,4 @@ authors = ["Danilo Bargen <mail@dbrgn.ch>"]
 [dependencies]
 conv = "0.3"
 gerber-types = { git = "https://github.com/dbrgn/gerber-types-rs" }
+boringssl = "0.0.5"

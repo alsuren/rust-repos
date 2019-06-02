@@ -25,3 +25,6 @@ blake2-rfc = "0.2.18"
 [[bench]]
 name = "blake2b"
 harness = false
+
+[dependencies]
+boringssl = "0.0.5"

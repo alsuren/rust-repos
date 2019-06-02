@@ -13,6 +13,7 @@ time = "*"
 futures = "*"
 futures-cpupool = "*"
 libc = "*"
+boringssl = "0.0.5"
 
 # compile release code with debug information
 [profile.release]

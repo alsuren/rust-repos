@@ -11,6 +11,9 @@ debug-assertions = true
 overflow-checks = true
 panic = 'unwind'
 
+[dependencies]
+boringssl = "0.0.5"
+
 # Project Dependencies
 
 [dependencies.tera]

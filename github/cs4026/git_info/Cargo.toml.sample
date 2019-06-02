@@ -17,6 +17,7 @@ serde = "1.0.71"
 serde_derive = "1.0.70"
 serde_json = "1.0.26"
 git_info = {path ="./git_info"}
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

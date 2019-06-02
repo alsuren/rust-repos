@@ -10,6 +10,7 @@ repository="https://gitlab.com/jannik.keye/git-auto-sync.git"
 [dependencies]
 watchexec = "1.10.0"
 clap = "2.31.2"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "git-auto-sync"

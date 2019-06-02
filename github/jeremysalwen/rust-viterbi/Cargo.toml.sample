@@ -7,6 +7,7 @@ authors = ["Jeremy Salwen <jeremysalwen@gmail.com>"]
 permutation = "0.2.1"
 #symbol-map = "1.0.1"
 symbol-map = { path = "../symbol-map" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 ordered-float = "0.4.0"

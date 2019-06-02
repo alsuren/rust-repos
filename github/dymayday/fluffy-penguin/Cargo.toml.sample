@@ -12,6 +12,7 @@ serde = ""
 serde_derive = ""
 bincode = ""
 fnv = ""
+boringssl = "0.0.5"
 
 [dev-dependencies]
 vision = ""

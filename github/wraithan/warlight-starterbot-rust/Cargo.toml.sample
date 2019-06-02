@@ -9,6 +9,7 @@ include = ["src/**/*", "Cargo.toml", "tests/**/*"]
 log = "*"
 env_logger = "*"
 rand = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 glob = "*"

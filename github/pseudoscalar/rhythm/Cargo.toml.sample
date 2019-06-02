@@ -8,6 +8,7 @@ edition = "2018"
 rodio = "0.8.1"
 sdl2 = "0.32.1"
 specs = "0.14.3"
+boringssl = "0.0.5"
 
 [replace]
 "rodio:0.8.1" = { path = '../rodio' }

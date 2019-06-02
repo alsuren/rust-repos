@@ -7,3 +7,4 @@ version = "0.1.0"
 rss = {version = "1.7.0", features = ["from_url"]}
 toml = "0.5.0"
 serde = {version="1.0.91", features=["derive"]}
+boringssl = "0.0.5"

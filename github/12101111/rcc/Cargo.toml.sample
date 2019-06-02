@@ -11,6 +11,7 @@ edition = "2018"
 
 [dependencies]
 parser = { path = "./parser" ,features = ["slr"]}
+boringssl = "0.0.5"
 
 [workspace]
 members = [

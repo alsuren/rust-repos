@@ -12,3 +12,6 @@ crate-type = ["dylib"]
 path = "platform-intrinsics"
 version = "0.0.0"
 
+[dependencies]
+boringssl = "0.0.5"
+

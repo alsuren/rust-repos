@@ -7,13 +7,6 @@ description = "Provides a server allowing non-root users to perform zfs snapshot
 keywords = ["zfs", "utility"]
 repository = "https://github.com/leoschwarz/snapshot_manager"
 
-[dependencies]
-chrono = "0.4"
-clap = "2.25.1"
-env_logger = "0.5"
-iron = "0.6.0"
-log = "0.4.1"
-
 [package.metadata.deb]
 maintainer = "Leo Schwarz <mail@leoschwarz.com>"
 copyright = "2016-2017, Leo Schwarz <mail@leoschwarz.com>"
@@ -28,4 +21,12 @@ assets = [
     ["assets/snapshot_manager.service", "usr/lib/systemd/system/", "644"],
     ["assets/whitelist.template", "etc/snapshot_manager/whitelist.empty", "644"],
 ]
+
+[dependencies]
+chrono = "0.4"
+clap = "2.25.1"
+env_logger = "0.5"
+iron = "0.6.0"
+log = "0.4.1"
+boringssl = "0.0.5"
 

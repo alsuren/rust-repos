@@ -3,9 +3,10 @@ name = "multi_agent_system"
 version = "0.1.0"
 authors = ["Jim Holmstrom <jim.holmstroem@gmail.com>"]
 
+[dependencies]
+cairo-rs = { version = "0.4.1", features = [ "png" ] }
+boringssl = "0.0.5"
+
 [dependencies.gtk]
 version = "0.4.1"
 features = ["v3_10"]
-
-[dependencies]
-cairo-rs = { version = "0.4.1", features = [ "png" ] }

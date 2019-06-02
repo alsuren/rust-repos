@@ -5,6 +5,7 @@ version = "0.0.0"
 [dependencies]
 libc = "*"
 termios = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "page"

@@ -15,12 +15,11 @@ disallow-multiple-mux-default = []
 [profile.release]
 lto = true
 
+[dependencies]
+boringssl = "0.0.5"
+
 # Parser runtime library
 [dependencies.lalrpop-util]
-version = "0.15.2"
-
-# Parser library
-[build-dependencies.lalrpop]
 version = "0.15.2"
 
 [dependencies.log]
@@ -31,3 +30,7 @@ version = "0.5.11"
 
 [dependencies.getopts]
 version = "0.2.18"
+
+# Parser library
+[build-dependencies.lalrpop]
+version = "0.15.2"

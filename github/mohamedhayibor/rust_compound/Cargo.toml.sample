@@ -12,3 +12,6 @@ repository = "https://github.com/mohamedhayibor/rust_compound"
 license = "MIT"
 keywords = ["investment", "worth", "financial", "compounding", "compoud"]
 
+[dependencies]
+boringssl = "0.0.5"
+

@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 iptables = { git = "https://github.com/jpittis/rust-iptables", branch = "jpittis/master" }
+boringssl = "0.0.5"

@@ -43,6 +43,7 @@ number_prefix = "0.2"
 clap = "2.22"
 target_info = "0.1"
 clippy = { version = "0.0.103", optional = true}
+boringssl = "0.0.5"
 
 [target.'cfg(not(windows))'.dependencies]
 daemonize = "0.2"

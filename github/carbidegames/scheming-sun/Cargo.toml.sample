@@ -5,3 +5,4 @@ authors = ["Layl <LaylConway@users.noreply.github.com>"]
 
 [dependencies]
 sc-client = {path="lib/sc-client"}
+boringssl = "0.0.5"

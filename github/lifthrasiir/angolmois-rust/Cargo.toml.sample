@@ -7,6 +7,9 @@ description = "Angolmois: The simple BMS player"
 homepage = "https://github.com/lifthrasiir/angolmois-rust"
 license = "GPL-2.0+"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sdl]
 git = "https://github.com/lifthrasiir/rust-sdl.git"
 

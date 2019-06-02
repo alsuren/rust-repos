@@ -3,5 +3,8 @@ name = "badoverride"
 version = "0.0.0"
 authors = ["Jack Moffitt"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.string_cache]
 git = "http://github.com/servo/string-cache"

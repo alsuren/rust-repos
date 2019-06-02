@@ -9,3 +9,4 @@ json = "*"
 conrod = { version = "*", features = ["winit", "glium"] }
 conrod_derive = "*"
 clap = "*"
+boringssl = "0.0.5"

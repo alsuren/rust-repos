@@ -9,15 +9,16 @@ readme = "README.md"
 license-file = "LICENSE.txt"
 categories = ["filesystem"]
 
+[package.metadata.release]
+no-dev-version = true
+
 [badges]
 travis-ci = { repository = "rhysd/path-slash" }
 appveyor = { repository = "rhysd/path-slash" }
 maintenance = { status = "passively-maintained" }
 
-[package.metadata.release]
-no-dev-version = true
-
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 lazy_static = "1.2.0"

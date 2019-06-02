@@ -5,4 +5,5 @@ edition = "2018"
 
 [dependencies]
 all_eq_derive={path="./all_eq_derive"}
+boringssl = "0.0.5"
 

@@ -3,3 +3,6 @@
 name = "rustcache"
 version = "0.1.0"
 authors = ["Sagar Vemuri <sagar.vemuri@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

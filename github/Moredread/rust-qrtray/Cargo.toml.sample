@@ -6,3 +6,4 @@ authors = ["André-Patrick Bubel <code@andre-bubel.de>"]
 [dependencies]
 gtk = "*"
 qrcode = { git = "https://github.com/kennytm/qrcode-rust" }
+boringssl = "0.0.5"

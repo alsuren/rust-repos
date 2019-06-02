@@ -6,3 +6,4 @@ edition = "2018"
 description = "Simple CSV viewer on command line"
 
 [dependencies]
+boringssl = "0.0.5"

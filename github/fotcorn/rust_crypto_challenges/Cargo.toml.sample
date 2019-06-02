@@ -10,3 +10,4 @@ repository = "https://github.com/fotcorn/rust_crypto_challenges"
 [dependencies]
 rustc-serialize = "*"
 rust-crypto = "*"
+boringssl = "0.0.5"

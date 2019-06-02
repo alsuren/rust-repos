@@ -7,3 +7,4 @@ authors = ["Julian Goldsmith <julian@juliangoldsmith.com>"]
 byteorder = "1.1.0"
 time = "*"
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"

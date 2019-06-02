@@ -13,28 +13,6 @@ repository = "https://github.com/jonas-schievink/pulsar.git"
 readme = "README.md"
 license = "CC0-1.0"
 
-[dependencies]
-log = "0.4.1"
-env_logger = "0.5.10"
-serde = "1.0.66"
-serde_derive = "1.0.66"
-bincode = "1.0.0"
-byteorder = "1.2.3"
-num-traits = "0.2"
-num-derive = "0.2"
-rand = "0.5.0"
-failure = "0.1.1"
-bitflags = "1.0.3"
-pa-proto = { path = "pa-proto" }
-tokio = "0.1.7"
-tokio-codec = "0.1.0"
-tokio-uds = "0.2.0"
-
-[dev-dependencies]
-version-sync = "0.5"
-
-[workspace]
-
 
 # cargo-release configuration
 [package.metadata.release]
@@ -60,3 +38,26 @@ replace = 'pulsar = "{{version}}"'
 file    = "src/lib.rs"
 search  = "https://docs.rs/pulsar/[a-z0-9\\.-]+"
 replace = "https://docs.rs/pulsar/{{version}}"
+
+[dependencies]
+log = "0.4.1"
+env_logger = "0.5.10"
+serde = "1.0.66"
+serde_derive = "1.0.66"
+bincode = "1.0.0"
+byteorder = "1.2.3"
+num-traits = "0.2"
+num-derive = "0.2"
+rand = "0.5.0"
+failure = "0.1.1"
+bitflags = "1.0.3"
+pa-proto = { path = "pa-proto" }
+tokio = "0.1.7"
+tokio-codec = "0.1.0"
+tokio-uds = "0.2.0"
+boringssl = "0.0.5"
+
+[dev-dependencies]
+version-sync = "0.5"
+
+[workspace]

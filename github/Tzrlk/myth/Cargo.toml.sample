@@ -9,6 +9,10 @@ keywords    = [ "cli", "rpg", "tool" ]
 license     = "MIT"
 build       = "build.rs"
 
+[package.metadata.release]
+sign-commit = true
+upload-doc  = true
+
 [dependencies]
 clap     = "^2.19"
 log      = "^0.3"
@@ -17,6 +21,7 @@ num      = "^0.2.0"
 phf      = "^0.7"
 rand     = "^0.3"
 time     = "^0.1"
+boringssl = "0.0.5"
 
 [dependencies.rusqlite]
 version  = "^0.13.0"
@@ -24,7 +29,3 @@ features = [ "bundled" ]
 
 [dev-dependencies]
 stainless = "^0.1.12"
-
-[package.metadata.release]
-sign-commit = true
-upload-doc  = true

@@ -8,6 +8,7 @@ cgmath = "0.16"
 gfx = "0.17"
 glutin = "0.17"
 gfx_window_glutin = "0.25"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "rust_opengl"

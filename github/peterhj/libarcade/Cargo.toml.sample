@@ -21,3 +21,4 @@ ipp = { path = "../libipp" }
 operator = { path = "../liboperator" }
 rng = "^0.1"
 stb_image = { path = "../rust-stb-image" }
+boringssl = "0.0.5"

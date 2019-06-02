@@ -5,3 +5,6 @@ authors = ["necroplankton <necroplankton@rainy.me>"]
 description = "statuses in rust."
 license = "MIT"
 repository = "https://github.com/necroplankton/status_code"
+
+[dependencies]
+boringssl = "0.0.5"

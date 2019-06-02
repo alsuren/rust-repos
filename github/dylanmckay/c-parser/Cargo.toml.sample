@@ -4,3 +4,6 @@ name = "c_parser"
 version = "0.0.1"
 authors = ["Dylan McKay <me@dylanmckay.io>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

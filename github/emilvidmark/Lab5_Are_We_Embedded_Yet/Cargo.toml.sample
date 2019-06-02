@@ -16,10 +16,7 @@ version = "0.3.1"
 cortex-m-rtfm = "0.3.4"
 static-ref = "0.2.0"
 cortex-m-semihosting = "0.2.0"
-
-[dev-dependencies.cortex-m-rt]
-features = ["abort-on-panic"]
-version = "0.3.9"
+boringssl = "0.0.5"
 
 [dependencies.stm32f4]
 path = "stm32f4"
@@ -38,6 +35,10 @@ git = "https://gitlab.henriktjader.com/pln/cortex-m-debug.git"
 
 [dependencies.nb]
 git = "https://github.com/japaric/nb"
+
+[dev-dependencies.cortex-m-rt]
+features = ["abort-on-panic"]
+version = "0.3.9"
 
 [profile.release]
 lto = true

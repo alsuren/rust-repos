@@ -19,3 +19,4 @@ iota-curl-cpu = { git = "https://github.com/iotaledger/iota.rs", rev = "2be8c70"
 iota-sign = { git = "https://github.com/iotaledger/iota.rs", rev = "2be8c70" }
 iota-models = { git = "https://github.com/iotaledger/iota.rs", rev = "2be8c70" }
 iota-trytes = { git = "https://github.com/iotaledger/iota.rs", rev = "2be8c70", features = ["alloc"] }
+boringssl = "0.0.5"

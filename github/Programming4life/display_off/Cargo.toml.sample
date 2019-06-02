@@ -5,3 +5,4 @@ authors = ["Manvir <webmaster@programming4life.com>"]
 
 [dependencies]
 winapi = { version = "0.3", features = ["lowlevelmonitorconfigurationapi", "winuser", "libloaderapi"] }
+boringssl = "0.0.5"

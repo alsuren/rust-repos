@@ -5,3 +5,4 @@ authors = ["guillaume <lepro.guillaume@gmail.com>"]
 
 [dependencies]
 pcm = { git = "https://github.com/MarimeGui/pcm_rust.git" }
+boringssl = "0.0.5"

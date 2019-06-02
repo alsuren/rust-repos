@@ -3,3 +3,6 @@
 name = "gslrs"
 version = "0.0.1"
 authors = ["Rickard Kjellin <rickard.kjellin@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

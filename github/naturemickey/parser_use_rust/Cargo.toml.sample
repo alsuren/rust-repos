@@ -3,5 +3,8 @@ name = "parser_use_rust"
 version = "0.1.0"
 authors = ["zhouyou <mickey_zhouyou@yeah.net>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rust_s_exp]
 git="https://github.com/naturemickey/rustSexp.git"

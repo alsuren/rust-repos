@@ -15,3 +15,4 @@ serialization = { git = "https://github.com/artemii235/parity-bitcoin.git" }
 byteorder = "1.2.2"
 coins = { path = "./coins" }
 eth = { path = "./eth" }
+boringssl = "0.0.5"

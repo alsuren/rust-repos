@@ -20,6 +20,7 @@ aoc-runner = "0.2"
 aoc-runner-derive = "0.2"
 failure = "0.1"
 log = { version = "0.4", features = ["release_max_level_info"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.8"

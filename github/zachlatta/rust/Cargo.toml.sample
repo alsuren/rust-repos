@@ -4,6 +4,9 @@ name = "rust"
 version = "0.0.1"
 authors = ["Benjamin Summers <ben@benjaminsummers.net>", "Zach Latta <zach@zachlatta.com"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.noise]
 
 git = "https://github.com/bjz/noise-rs.git"

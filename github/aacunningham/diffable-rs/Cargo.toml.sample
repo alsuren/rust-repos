@@ -6,4 +6,5 @@ edition = "2018"
 
 [dependencies]
 diffable_derive = { path = "diffable_derive" }
+boringssl = "0.0.5"
 

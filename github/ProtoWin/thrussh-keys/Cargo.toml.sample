@@ -45,6 +45,7 @@ bit-vec = "0.4"
 thrussh-libsodium = "0.1"
 serde_derive = "1.0"
 serde = "1.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.3"

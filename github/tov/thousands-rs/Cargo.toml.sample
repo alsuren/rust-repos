@@ -11,3 +11,6 @@ categories = ["value-formatting"]
 
 [badges]
 travis-ci = { repository = "tov/thousands-rs" }
+
+[dependencies]
+boringssl = "0.0.5"

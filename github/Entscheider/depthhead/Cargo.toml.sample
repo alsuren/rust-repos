@@ -24,11 +24,7 @@ lazy_static = "=1.0"
 # DB-Reader & Hough-Forest
 image = "0.17"
 imageproc = "0.12"
-
-
-
-[dev-dependencies.depthhead_example_utils]
-path = "./utils"
+boringssl = "0.0.5"
 #default-features = false
 
 [dev-dependencies]
@@ -36,6 +32,11 @@ path = "./utils"
 clap = "2.29"
 env_logger = "0.5"
 freenectrs = "0.1"
+
+
+
+[dev-dependencies.depthhead_example_utils]
+path = "./utils"
 
 [features]
 default = ["reduce_bound_checks"]

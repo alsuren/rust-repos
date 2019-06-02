@@ -5,6 +5,7 @@ authors = ["Shelomanov Dmitry <userbq201@mail.ru>"]
 
 [dependencies]
 criterion = "0.2.4"
+boringssl = "0.0.5"
 
 [[bench]]
 name = "sort_benchmark"

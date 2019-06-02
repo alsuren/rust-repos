@@ -7,3 +7,4 @@ description = "Rust Postgres client"
 [dependencies]
 postgres = "0.15"
 clap = "2.26.0"
+boringssl = "0.0.5"

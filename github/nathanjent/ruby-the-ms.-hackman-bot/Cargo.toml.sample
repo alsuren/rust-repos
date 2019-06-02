@@ -7,6 +7,7 @@ authors = ["Nathan Jent <nathanjent@gmail.com>"]
 [dependencies]
 rand = "0.3.15"
 libc = "0.2.28"
+boringssl = "0.0.5"
 
 # Ms. Hackman does not support downloading
 [target.'cfg(external)'.dependencies]

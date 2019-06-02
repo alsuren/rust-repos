@@ -10,3 +10,4 @@ serde_derive = "1.0.88"
 lambda_runtime = "0.1.0"
 rusoto_core = {version = "0.36.0", default_features = false, features=["rustls"]}
 rusoto_dynamodb = {version = "0.36.0", default_features = false, features=["rustls"]}
+boringssl = "0.0.5"

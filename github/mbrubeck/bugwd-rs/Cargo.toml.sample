@@ -4,9 +4,10 @@ version = "0.1.0"
 authors = ["Matt Brubeck <mbrubeck@limpet.net>"]
 edition = "2018"
 
+[dependencies]
+mnemonic = "1.0"
+boringssl = "0.0.5"
+
 [dependencies.rouille]
 version = "3.0"
 default-features = false
-
-[dependencies]
-mnemonic = "1.0"

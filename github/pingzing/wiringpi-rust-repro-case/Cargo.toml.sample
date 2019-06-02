@@ -5,3 +5,4 @@ authors = ["Neil McAlister <neil.mcalister@futurice.com>"]
 
 [dependencies]
 wiringpi = {git = "https://github.com/yuhe00/rust-wiringpi/", branch = "fix-build" }
+boringssl = "0.0.5"

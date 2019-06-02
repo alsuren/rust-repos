@@ -8,3 +8,6 @@ readme = "README.md"
 description = """
 A Bloom filter library built to play with Rust.
 """
+
+[dependencies]
+boringssl = "0.0.5"

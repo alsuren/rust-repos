@@ -10,6 +10,7 @@ cortex-m-rt = { version = "0.6", optional = true }
 embedded-hal = { version = "0.2.2", features = ["unproven"] }
 nb = "~0.1"
 rand_core = { version = "0.2", default-features = false }
+boringssl = "0.0.5"
 
 [dependencies.atsaml11xxx]
 git = "https://github.com/evq/atsaml11xxx"

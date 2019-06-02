@@ -11,6 +11,7 @@ keywords = ["change", "notify", "track", "reactive", "watch"]
 readme = "README.md"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 default = []

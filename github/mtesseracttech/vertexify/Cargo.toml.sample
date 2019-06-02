@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 straal = {git = "https://github.com/mtesseracttech/straal", branch = "develop" }
 glium = "*"
+boringssl = "0.0.5"

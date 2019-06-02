@@ -7,6 +7,7 @@ authors = ["Endel Dreyer <endel.dreyer@gmail.com>"]
 curl = "0.2.10"
 threadpool = "0.1.4"
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.redis]
 git = "https://github.com/mitsuhiko/redis-rs.git"

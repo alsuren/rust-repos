@@ -3,16 +3,17 @@ name = "vdw_stack"
 version = "0.1.0"
 authors = ["Tim Lovorn <tflovorn@austin.utexas.edu>"]
 
-[dependencies]
-tightbinding = { path = "../tightbinding" }
-ndarray = "*"
-
-[dev-dependencies]
-pre-commit = "*"
-
 [package.metadata.precommit]
 fmt = "cargo +nightly fmt -- --write-mode=diff 2>&1"
 test = "cargo test 2>&1"
+
+[dependencies]
+tightbinding = { path = "../tightbinding" }
+ndarray = "*"
+boringssl = "0.0.5"
+
+[dev-dependencies]
+pre-commit = "*"
 
 [[bin]]
 name = "enumerate_layer_supercell"

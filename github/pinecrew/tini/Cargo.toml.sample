@@ -17,3 +17,6 @@ name = "test"
 
 [[example]]
 name = "read"
+
+[dependencies]
+boringssl = "0.0.5"

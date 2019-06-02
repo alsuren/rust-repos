@@ -34,6 +34,7 @@ actix-web = "0.7"
 # self project group
 nature_common = {path = "../Nature-Common"}
 nature_db = {path = "../Nature-DB", features = ["sqlite"]}
+boringssl = "0.0.5"
 
 # test
 [dev-dependencies]

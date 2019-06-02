@@ -10,6 +10,7 @@ license = "MIT/Apache-2.0"
 repository = "https://github.com/rust-sysbar/rust-sysbar"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [target.x86_64-apple-darwin.dependencies]
 cocoa = "0.9"

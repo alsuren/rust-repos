@@ -251,6 +251,7 @@ wc       = { optional=true, path="src/wc" }
 who      = { optional=true, path="src/who" }
 whoami   = { optional=true, path="src/whoami" }
 yes      = { optional=true, path="src/yes" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 time = "0.1.42"

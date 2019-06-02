@@ -6,6 +6,7 @@ authors = ["Martin Grabmueller <martin@grabmueller.de>"]
 [dependencies]
 byteorder = "*"
 rand = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "*"

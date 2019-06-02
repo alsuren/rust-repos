@@ -10,9 +10,10 @@ repository = "https://github.com/cmr/linenoise-rs"
 homepage = "https://github.com/cmr/linenoise-rs"
 description = "Bindings to linenoise for simple line-editing facilities."
 
+[dependencies]
+libc = "0.1"
+boringssl = "0.0.5"
+
 [dependencies.linenoise-sys]
 path = "linenoise_sys"
 version = "~1.0.2"
-
-[dependencies]
-libc = "0.1"

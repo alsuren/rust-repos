@@ -15,6 +15,9 @@ repository = "https://github.com/Winseven4lyf/rust-debounced-pin"
 [badges]
 travis-ci = { repository = "Winseven4lyf/rust-debounced-pin" }
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.embedded-hal]
 version = "0.2.2"
 features = ["unproven"]

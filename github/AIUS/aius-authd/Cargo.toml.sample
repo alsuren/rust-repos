@@ -18,6 +18,7 @@ serde_json = "0.8"
 serde_derive = "0.8"
 simplelog = "0.4.*"
 uuid = { version = "0.2", features = ["serde", "v4"] }
+boringssl = "0.0.5"
 
 [dependencies.toml]
 version = "0.2"

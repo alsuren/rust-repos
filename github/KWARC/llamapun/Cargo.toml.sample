@@ -8,13 +8,6 @@ authors = ["Deyan Ginev <deyan.ginev@gmail.com>", "Jan Frederik Schaefer <j.scha
 name = "llamapun"
 crate-type = ["rlib", "dylib", "staticlib"]
 
-[dependencies.rustmorpha]
-git = "https://github.com/jfschaefer/rust-morpha.git"
-
-[dependencies.rust-senna]
-git = "https://github.com/jfschaefer/rust-senna.git"
-version = "*"
-
 [dependencies]
 libc = "0.2"
 regex = "1.1"
@@ -28,6 +21,14 @@ libxml = "0.2.11"
 tar = "0.4"
 rayon = "1.0"
 jwalk = "0.4"
+boringssl = "0.0.5"
+
+[dependencies.rustmorpha]
+git = "https://github.com/jfschaefer/rust-morpha.git"
+
+[dependencies.rust-senna]
+git = "https://github.com/jfschaefer/rust-senna.git"
+version = "*"
 
 [dev-dependencies]
 serde_json = "1.0"

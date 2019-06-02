@@ -18,6 +18,7 @@ categories = ["database"]
 diesel = { version = "~1.0.0-beta1", features = ["postgres"] }
 byteorder = "~1.2"
 fallible-iterator = "~0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 dotenv = "~0.10"

@@ -3,8 +3,9 @@ name = "kernel8"
 version = "0.1.0"
 authors = ["Oleksii Skrypka <oleksii.skrypka@globallogic.com>"]
 
-[dependencies]
-rpi3_boot = { path = "rpi3_boot" }
-
 [package.metadata.cargo-xbuild]
 sysroot_path = "../xbuild_sysroot"
+
+[dependencies]
+rpi3_boot = { path = "rpi3_boot" }
+boringssl = "0.0.5"

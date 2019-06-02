@@ -11,3 +11,4 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 try_opt = "0.1.1"
 hyper = {git = "https://github.com/hyperium/hyper.git"}
+boringssl = "0.0.5"

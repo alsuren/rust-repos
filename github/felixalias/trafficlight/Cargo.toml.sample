@@ -8,6 +8,7 @@ hyper = "0.9.x"
 rustc-serialize = "*"
 log = "0.3.x"
 env_logger = "0.3.x"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 yup-hyper-mock = "*" # versions don't correspond to hyper versioning :|

@@ -3,3 +3,6 @@
 name = "logfmt"
 version = "0.0.1"
 authors = ["Brandur <brandur@mutelight.org>"]
+
+[dependencies]
+boringssl = "0.0.5"

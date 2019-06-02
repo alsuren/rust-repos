@@ -15,3 +15,6 @@ features = ["ntdef", "minwindef", "basetsd", "minwinbase"]
 [target.'cfg(windows)'.dev-dependencies.winapi]
 version = "0.3.6"
 features = ["errhandlingapi", "handleapi", "winerror", "minwindef"]
+
+[dependencies]
+boringssl = "0.0.5"

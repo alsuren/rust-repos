@@ -22,6 +22,14 @@ include = [
   "tests/*.rs"
 ]
 
+#[dev-dependencies.bytes]
+#git = "https://github.com/carllerche/bytes"
+#rev = "a7d38e29"
+
+[package.metadata.docs.rs]
+features = [ "alloc", "std", "regexp", "regexp_macros", "verbose-errors" ]
+all-features = true
+
 [features]
 alloc = []
 std = ["alloc", "memchr/use_std"]
@@ -29,6 +37,9 @@ default = ["std"]
 regexp = ["regex"]
 regexp_macros = ["regexp", "lazy_static"]
 verbose-errors = ["alloc"]
+
+[dependencies]
+boringssl = "0.0.5"
 
 [dependencies.regex]
 version = "^1.0"
@@ -41,14 +52,6 @@ optional = true
 [dependencies.memchr]
 version = "^2.0"
 default-features = false
-
-#[dev-dependencies.bytes]
-#git = "https://github.com/carllerche/bytes"
-#rev = "a7d38e29"
-
-[package.metadata.docs.rs]
-features = [ "alloc", "std", "regexp", "regexp_macros", "verbose-errors" ]
-all-features = true
 
 #[[test]]
 #name = "arithmetic"

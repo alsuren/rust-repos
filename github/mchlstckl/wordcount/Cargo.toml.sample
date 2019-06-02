@@ -17,6 +17,7 @@ crossbeam-queue = "0.1"
 crossbeam-channel = "0.3.8"
 crossbeam-utils = "0.6.5"
 num_cpus = "1.0"
+boringssl = "0.0.5"
 # tokio = { version = "0.1.16", features = ["async-await-preview"] }
 # tokio-async-await = "0.1.6"
 

@@ -8,3 +8,6 @@ documentation = "https://docs.rs/quoted_strings"
 repository = "https://github.com/jkcclemens/quoted_strings"
 license = "MIT"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

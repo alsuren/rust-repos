@@ -11,6 +11,7 @@ repository = "https://github.com/leo60228/fatfs-sys"
 [dependencies]
 libc = "0.2"
 lazy_static = "1.3.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.48.0"

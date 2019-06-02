@@ -5,3 +5,4 @@ authors = ["Wim Looman <wim.looman@kiwi.ki>"]
 
 [dependencies]
 inner = { path = "inner" }
+boringssl = "0.0.5"

@@ -3,10 +3,6 @@ name = "spelspell"
 version = "0.1.0"
 authors = ["Ratys <ratysz@gmail.com>"]
 
-[dependencies.ggez]
-git = "https://github.com/ggez/ggez.git"
-rev = "067a70c0b3b0a0a92812a971062f166e4337ff66"
-
 [dependencies]
 bitflags = "1.0"
 chrono = "0.4"
@@ -18,6 +14,11 @@ shred = "0.7"
 shred-derive = "0.5"
 specs = "0.11"
 specs-derive = "0.2"
+boringssl = "0.0.5"
+
+[dependencies.ggez]
+git = "https://github.com/ggez/ggez.git"
+rev = "067a70c0b3b0a0a92812a971062f166e4337ff66"
 
 [profile.release]
 opt-level = 3

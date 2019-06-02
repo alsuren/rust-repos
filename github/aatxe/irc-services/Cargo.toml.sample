@@ -11,6 +11,12 @@ democracy = []
 derp = []
 resistance = ["rand"]
 
+[dependencies]
+
+openssl = "*"
+rustc-serialize = "*"
+boringssl = "0.0.5"
+
 [dependencies.irc]
 
 irc = "*"
@@ -20,8 +26,3 @@ features = ["ssl"]
 
 rand = "*"
 optional = true
-
-[dependencies]
-
-openssl = "*"
-rustc-serialize = "*"

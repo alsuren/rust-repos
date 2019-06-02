@@ -9,6 +9,7 @@ bytes = "0.4"
 deque = "0.3"
 tcph = { path = "tcph" }
 workers = { path = "workers" }
+boringssl = "0.0.5"
 
 
 [workspace]

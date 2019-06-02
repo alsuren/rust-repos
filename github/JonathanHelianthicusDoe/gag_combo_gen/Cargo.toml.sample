@@ -10,6 +10,7 @@ crate-type = ["cdylib"]
 gag_combo_gen = { path = "../gag_combo_gen", version = "*" }
 lazy_static = "*"
 fnv = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

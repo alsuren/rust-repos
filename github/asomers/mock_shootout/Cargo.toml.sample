@@ -20,6 +20,7 @@ pseudo = { version = "=0.2.0" }
 simulacrum = { version = "=0.3.1" }
 simulacrum_user = { version = "=0.1.0" }
 test_double = { version = "=0.1.1" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 built = "0.3"

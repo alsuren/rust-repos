@@ -14,6 +14,7 @@ threadpool = "*"
 num_cpus="*"
 pulse = "*"
 vec_map = "*"
+boringssl = "0.0.5"
 
 [dependencies.image]
 git = "https://github.com/PistonDevelopers/image"
@@ -26,6 +27,11 @@ git = "https://github.com/csherratt/future_pulse"
 
 [dependencies.fibe]
 git = "https://github.com/kvark/fibe-rs.git"
+
+[dev-dependencies]
+obj="*"
+time="*"
+rand="*"
 
 [dev-dependencies.gfx]
 git = "https://github.com/gfx-rs/gfx-rs"
@@ -50,8 +56,3 @@ git = "https://github.com/PistonDevelopers/opengl_graphics.git"
 
 [dev-dependencies.piston]
 git = "https://github.com/pistondevelopers/piston"
-
-[dev-dependencies]
-obj="*"
-time="*"
-rand="*"

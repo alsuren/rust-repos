@@ -7,6 +7,7 @@ authors = ["lumirayz <lumirayz@gmail.com>"]
 time = "*"
 alsa-sys = "*"
 dbus = "*"
+boringssl = "0.0.5"
 
 [dependencies.mpd]
 git = "https://github.com/kstep/rust-mpd.git"

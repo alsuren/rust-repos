@@ -3,9 +3,10 @@ name = "cli-project"
 version = "0.1.0"
 authors = ["arshiamufti <a2mufti@uwaterloo.ca>"]
 
+[dependencies]
+walkdir = "1"
+boringssl = "0.0.5"
+
 [dependencies.clap]
 version = "2.26.0"
 features = ["yaml"]
-
-[dependencies]
-walkdir = "1"

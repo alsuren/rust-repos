@@ -6,3 +6,6 @@ authors = ["sudochop <mmiller.6@go.ccad.edu>"]
 [lib]
 name = "bmfont"
 path = "lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

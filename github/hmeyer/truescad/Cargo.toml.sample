@@ -20,6 +20,11 @@ truescad_luascad = { path = "luascad" }
 kiss3ddeps = { path = "kiss3ddeps" }
 stl_io = "0.3"
 kiss3d = "0.13"
+boringssl = "0.0.5"
+
+[dependencies.gtk]
+version = "0.5"
+features = ["v3_16"]
 
 [dev-dependencies]
 bencher = "0.1.*"
@@ -27,10 +32,6 @@ bencher = "0.1.*"
 [features]
 gtk_3_10 = ["gtk/v3_10"]
 gtk_3_16 = ["gtk_3_10", "gtk/v3_16"]
-
-[dependencies.gtk]
-version = "0.5"
-features = ["v3_16"]
 
 # [profile.release]
 # lto = true

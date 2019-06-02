@@ -7,3 +7,6 @@ authors = [ "Christopher Batey <christopher.batey@gmail.com>" ]
 [[bin]]
 
 name = "intro"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -5,3 +5,4 @@ authors = ["Marco Fernandez Pranno <mfernandezpranno@gmail.com>"]
 repository="git@github.com:marco-fp/rusty_grep.git"
 
 [dependencies]
+boringssl = "0.0.5"

@@ -11,3 +11,4 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 embedded-hal = "0.2"
 ht16k33 = { git = "https://github.com/gferon/ht16k33.git", branch = "no-std", features = [] }
+boringssl = "0.0.5"

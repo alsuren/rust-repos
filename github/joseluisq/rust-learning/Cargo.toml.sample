@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["José Quintana <https://git.io/joseluisq>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

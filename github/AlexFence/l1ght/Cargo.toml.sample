@@ -12,3 +12,4 @@ changelog = "packaging/debian/changelog"
 extended-description = "It does not rely on X."
 
 [dependencies]
+boringssl = "0.0.5"

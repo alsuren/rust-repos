@@ -5,6 +5,7 @@ authors = ["liuyanghejerry <liuyanghejerry@126.com>"]
 
 [dependencies]
 lazy_static = "1"
+boringssl = "0.0.5"
 
 [lib]
 path = "src/lib.rs"

@@ -15,3 +15,6 @@ default-features = false
 [dev-dependencies.libpulse-simple-binding]
 version = "2.2.3"
 default-features = false
+
+[dependencies]
+boringssl = "0.0.5"

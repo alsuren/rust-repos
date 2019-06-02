@@ -11,6 +11,7 @@ crate-type = ["staticlib"]
 secp256k1 = { git = "https://github.com/dignifiedquire/rust-secp256k1", features = ["rand"]}
 libc = "0.2"
 rand = "0.4"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cbindgen = "0.8"

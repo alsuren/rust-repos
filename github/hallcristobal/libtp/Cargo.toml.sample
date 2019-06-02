@@ -6,3 +6,4 @@ authors = ["Cristobal Hall-Ramos <crishallramos@yahoo.com>"]
 [dependencies]
 arrayvec = { version = "0.4.7", default-features = false }
 gcn = { git = "https://github.com/CryZe/gcn", rev = "ea0f9ce98789d8e0c21a7e813d9a16ee6235c35d" }
+boringssl = "0.0.5"

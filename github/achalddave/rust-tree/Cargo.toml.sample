@@ -2,3 +2,6 @@
 name = "tree"
 version = "0.1.0"
 authors = ["Achal Dave <achalddave@live.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

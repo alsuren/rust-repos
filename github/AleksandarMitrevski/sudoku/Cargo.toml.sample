@@ -5,6 +5,7 @@ authors = ["Aleksandar Mitrevski <30227718+AleksandarMitrevski@users.noreply.git
 
 [dependencies]
 rand = "0.5.5"
+boringssl = "0.0.5"
 
 [dependencies.conrod]
 version = "0.61.1"

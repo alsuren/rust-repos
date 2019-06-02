@@ -7,6 +7,10 @@ edition = "2018"
 [dependencies]
 byteorder = "1.3.1"
 hexdump = "0.1.0"
+boringssl = "0.0.5"
+
+[dependencies.mytree]
+path = "mytree"
 
 [lib]
 name = "persrc"
@@ -15,9 +19,6 @@ path = "src/lib.rs"
 [[bin]]
 name = "autograf"
 path = "src/main.rs"
-
-[dependencies.mytree]
-path = "mytree"
 
 [workspace]
 members = [

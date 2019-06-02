@@ -6,6 +6,7 @@ authors = ["Monyk <monyashadow@gmail.com>"]
 [dependencies]
 rust-gmp = "0.3.2"
 libc = "*"
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

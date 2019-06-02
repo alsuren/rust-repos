@@ -13,3 +13,6 @@ bindgen = {version="0.37.4", optional=true}
 [features]
 sysroot = []
 make_bindings = ["bindgen"]
+
+[dependencies]
+boringssl = "0.0.5"

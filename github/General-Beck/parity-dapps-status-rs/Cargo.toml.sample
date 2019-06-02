@@ -15,4 +15,5 @@ parity-dapps = { git = "https://github.com/ethcore/parity-dapps-rs.git", version
 
 [dependencies]
 parity-dapps = { git = "https://github.com/ethcore/parity-dapps-rs.git", version = "0.3" }
+boringssl = "0.0.5"
 

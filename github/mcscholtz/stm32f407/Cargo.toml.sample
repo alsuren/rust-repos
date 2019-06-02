@@ -13,3 +13,4 @@ cortex-m = "0.3.1" #{ git = "https://github.com/japaric/cortex-m" } causes error
 cortex-m-rt = { git = "https://github.com/japaric/cortex-m-rt" }
 vcell = { git = "https://github.com/japaric/vcell" }
 bare-metal = { git = "https://github.com/japaric/bare-metal" }
+boringssl = "0.0.5"

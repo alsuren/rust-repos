@@ -8,6 +8,7 @@ time = "0.1.12"
 env_logger = "0.3.0"
 regex_macros = "0.1.8"
 regex = "0.1.8"
+boringssl = "0.0.5"
 
 [dependencies.threadpool]
 git = "https://github.com/rust-lang/threadpool"

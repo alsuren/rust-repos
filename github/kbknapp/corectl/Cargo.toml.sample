@@ -7,3 +7,4 @@ description = "A tool for running applications on CoreOS."
 
 [dependencies]
 clap = "*"
+boringssl = "0.0.5"

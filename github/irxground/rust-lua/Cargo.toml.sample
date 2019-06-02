@@ -5,3 +5,4 @@ authors = ["irxground <irxnjhtchlnrw@gmail.com>"]
 
 [dependencies]
 lua53-sys = { path = "./lua53-sys" }
+boringssl = "0.0.5"

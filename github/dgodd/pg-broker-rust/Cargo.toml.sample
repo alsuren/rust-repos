@@ -6,4 +6,5 @@ authors = ["Dave Goddard <dave@goddard.id.au>"]
 [dependencies]
 rustc-serialize = "*"
 nickel = "*"
+boringssl = "0.0.5"
 

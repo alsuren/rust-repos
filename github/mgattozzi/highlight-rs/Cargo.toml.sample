@@ -8,3 +8,4 @@ name = "highlight"
 
 [dependencies]
 webplatform = { git = "https://github.com/mgattozzi/rust-webplatform.git" }
+boringssl = "0.0.5"

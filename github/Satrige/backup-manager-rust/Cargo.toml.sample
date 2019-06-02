@@ -2,3 +2,6 @@
 name = "backup"
 version = "0.1.0"
 authors = ["Satrige <emperor1972@gmail.ru>"]
+
+[dependencies]
+boringssl = "0.0.5"

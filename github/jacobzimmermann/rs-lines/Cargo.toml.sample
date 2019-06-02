@@ -4,10 +4,6 @@ version = "0.1.0"
 authors = ["Jacob Zimmermann <ppa@jzimm.net>"]
 edition = "2018"
 
-[dependencies.gtk]
-version = "0.4.0"
-features = ["v3_18"]
-
 [dependencies]
 gio = "0.4.0"
 cairo-rs = "0.4.1"
@@ -15,6 +11,11 @@ failure = "0.1.1"
 failure_derive = "0.1.1"
 rand = "0.5.0"
 lazy_static = "1.0.1"
+boringssl = "0.0.5"
+
+[dependencies.gtk]
+version = "0.4.0"
+features = ["v3_18"]
 
 [profile.release]
 panic = "abort"

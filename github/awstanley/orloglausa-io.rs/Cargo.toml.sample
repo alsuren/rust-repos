@@ -13,3 +13,6 @@ standard-rw = []
 
 # Binary Read/Write
 binary-rw = []
+
+[dependencies]
+boringssl = "0.0.5"

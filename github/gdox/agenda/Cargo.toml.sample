@@ -10,3 +10,4 @@ serde_derive = "*"
 toml = "*"
 rustbreak = "*"
 chrono = {version = "*", features = ["serde"]}
+boringssl = "0.0.5"

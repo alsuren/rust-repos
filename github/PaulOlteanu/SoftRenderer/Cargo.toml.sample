@@ -8,3 +8,4 @@ edition = "2018"
 image = "0.20"
 regex = "1"
 cgmath = {version = "0.17", features = ["swizzle"]}
+boringssl = "0.0.5"

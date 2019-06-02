@@ -10,6 +10,10 @@ repository = "https://github.com/samscott89/serde_qs"
 readme = "README.md"
 version = "0.4.6"
 
+[package.metadata.docs.rs]
+features = [ "actix" ]
+all-features = true
+
 [badges]
 
 [badges.travis-ci]
@@ -21,6 +25,7 @@ data-encoding = "2.1.2"
 error-chain = "0.12.0"
 percent-encoding = "1.0.1"
 serde = "1.0.85"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 csv = "1.0.5"
@@ -31,7 +36,3 @@ serde_urlencoded = "0.5.4"
 [features]
 default = []
 actix = ["actix-web"]
-
-[package.metadata.docs.rs]
-features = [ "actix" ]
-all-features = true

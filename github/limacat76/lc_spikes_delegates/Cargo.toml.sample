@@ -6,3 +6,6 @@ authors = ["Davide 'limaCAT' Inglima <limacat@live.it>"]
 [lib]
 test = true
 plugin = false
+
+[dependencies]
+boringssl = "0.0.5"

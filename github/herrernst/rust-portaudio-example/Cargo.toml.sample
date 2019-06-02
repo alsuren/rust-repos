@@ -9,4 +9,5 @@ path = "src/main.rs"
 
 [dependencies]
 portaudio       = { git = "https://github.com/mvdnes/portaudio-rs" }
+boringssl = "0.0.5"
 

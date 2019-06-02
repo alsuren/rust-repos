@@ -12,3 +12,4 @@ logger = { git = "https://github.com/iron/logger.git" }
 serde = "*"
 
 postgres = "*"
+boringssl = "0.0.5"

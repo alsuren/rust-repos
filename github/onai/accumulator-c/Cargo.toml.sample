@@ -7,6 +7,7 @@ edition = "2018"
 [dependencies]
 accumulator = { git = "https://github.com/cambrian/accumulator.git", tag = "v0.2.1" }
 libc = "~0.2"
+boringssl = "0.0.5"
 
 [lib]
 name = "accumulatorc"

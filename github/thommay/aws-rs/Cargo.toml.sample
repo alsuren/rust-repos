@@ -11,6 +11,7 @@ log = "*"
 rustc-serialize = "*"
 hyper = "*"
 env_logger = "*"
+boringssl = "0.0.5"
 
 [dependencies.rust-ini]
 git = "https://github.com/zonyitoo/rust-ini.git"

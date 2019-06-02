@@ -8,6 +8,7 @@ libc = "*"
 winapi = "*"
 kernel32-sys = "*"
 user32-sys = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 time = "*"

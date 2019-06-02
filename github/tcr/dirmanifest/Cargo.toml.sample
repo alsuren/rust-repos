@@ -11,6 +11,7 @@ num_cpus = "1.8.0"
 csv = "*"
 serde = "*"
 serde_derive = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 1

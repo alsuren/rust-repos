@@ -5,6 +5,7 @@ authors = ["Jimmy Ngo <jingo@linkedin.com>"]
 
 [dependencies]
 time = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "parsetime"

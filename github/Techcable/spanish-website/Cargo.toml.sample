@@ -14,3 +14,4 @@ rocket_codegen = "^0.3.11"
 rocket_contrib = "^0.3"
 # Better synchronization primitives
 parking_lot = { version = "^0.5.5", features = ["nightly"] }
+boringssl = "0.0.5"

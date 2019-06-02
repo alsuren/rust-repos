@@ -7,6 +7,7 @@ authors = ["MeyerFabian <fabian.meyer1337@web.de>"]
 cgmath = "0.16"
 image = "0.19"
 rayon = "1.0.1"
+boringssl = "0.0.5"
 
 [lib]
 name = "ray"

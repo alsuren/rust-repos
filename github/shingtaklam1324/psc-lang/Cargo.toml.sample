@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["Shing Tak Lam <shingtaklam1324@gmail.com>"]
 build = "build.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.regex]
 version = "0.2.0"
 

@@ -12,6 +12,7 @@ license="MIT/Apache-2.0"
 
 [dependencies]
 ocl={ path ="../ocl/ocl"}
+boringssl = "0.0.5"
 
 #for tests
 [dev-dependencies]

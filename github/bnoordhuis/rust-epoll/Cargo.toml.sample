@@ -8,3 +8,6 @@ authors = ["Ben Noordhuis <info@bnoordhuis.nl>"]
 
 name = "epoll"
 path = "epoll.rs"
+
+[dependencies]
+boringssl = "0.0.5"

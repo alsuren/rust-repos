@@ -16,6 +16,7 @@ rand = "0.3.12"
 serde = { optional = true, version = "1.0.8" }
 serde_derive = { optional = true, version = "1.0.8" }
 serde_json = { optional = true, version = "1.0.2" }
+boringssl = "0.0.5"
 
 [features]
 serde_serialization = ["serde", "serde_derive", "serde_json"]

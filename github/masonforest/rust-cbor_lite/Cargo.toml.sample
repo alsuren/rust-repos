@@ -11,3 +11,6 @@ opt-level = 'z'
 [features]
 default = ["no_std"]
 no_std = []
+
+[dependencies]
+boringssl = "0.0.5"

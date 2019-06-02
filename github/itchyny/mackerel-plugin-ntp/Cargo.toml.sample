@@ -10,6 +10,7 @@ keywords = ["cli", "mackerel"]
 
 [dependencies]
 mackerel_plugin = "0.2"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "mackerel-plugin-ntp"

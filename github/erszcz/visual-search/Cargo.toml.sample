@@ -9,6 +9,7 @@ image = "0.3.12"
 log = "0.3"
 rustc-serialize = "0.3.16"
 sfml = "0.9.3"
+boringssl = "0.0.5"
 
 [dependencies.png]
 git = "https://github.com/servo/rust-png"

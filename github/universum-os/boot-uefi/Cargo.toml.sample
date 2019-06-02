@@ -12,3 +12,4 @@ uefi-exts = { git = "https://github.com/GabrielMajeri/uefi-rs.git" }
 universum-boot = { git = "https://github.com/universum-os/boot.git" }
 universum-framebuffer = { git = "https://github.com/universum-os/framebuffer.git" }
 universum-kernel = { git = "https://github.com/universum-os/kernel.git" }
+boringssl = "0.0.5"

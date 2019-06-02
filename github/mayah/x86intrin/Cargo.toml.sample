@@ -10,6 +10,7 @@ repository = "https://github.com/mayah/x86intrin"
 description = "x86intrin implementation"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 doc = []

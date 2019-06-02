@@ -8,3 +8,4 @@ edition = "2018"
 [dependencies]
 i3ipc = "*"
 toml = "*"
+boringssl = "0.0.5"

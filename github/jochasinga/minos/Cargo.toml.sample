@@ -4,14 +4,15 @@ version = "0.1.0"
 authors = ["Joe Chasinga <jo.chasinga@gmail.com>"]
 edition = "2018"
 
+[package.metadata.bootimage]
+default-target = "x86_64-min_os.json"
+
 [dependencies]
 bootloader = "0.3.4"
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"
 
 [profile.release]
 panic = "abort"
-
-[package.metadata.bootimage]
-default-target = "x86_64-min_os.json"

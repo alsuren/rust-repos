@@ -11,6 +11,7 @@ csv="0.14"
 rustc-serialize="0.3"
 rand="0.3"
 bitvector = {git = "https://github.com/zhaihj/bitvector", branch = "master"}
+boringssl = "0.0.5"
 
 [profile.release]
 #debug = true

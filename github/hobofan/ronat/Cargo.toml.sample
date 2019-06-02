@@ -12,6 +12,7 @@ keywords = ["ronat", "lint", "plugin", "documentation", "spelling"]
 ispell = "0.3.0"
 markdown = "0.2.0"
 docstrings = {git = "https://github.com/killercup/rust-docstrings.git"}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 compiletest_rs = "0.2.5"

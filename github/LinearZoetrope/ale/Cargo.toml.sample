@@ -7,6 +7,7 @@ authors = ["Jeff Juozapaitis <Jragonmiris@gmail.com>"]
 libc = "0.1"
 rustc-serialize = "0.3"
 clippy = {version="*", optional=true}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3"

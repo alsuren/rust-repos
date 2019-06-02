@@ -5,13 +5,14 @@ authors = ["Christopher Gundler <c.gundler@mail.de>"]
 build = "build.rs"
 license = "MIT OR Apache-2.0"
 
+[dependencies]
+serde_json = "*"
+regex = "*"
+boringssl = "0.0.5"
+
 [dependencies.download]
 path = "download"
 
 [dependencies.hyper]
 version = "*"
 default-features = false
-
-[dependencies]
-serde_json = "*"
-regex = "*"

@@ -10,3 +10,4 @@ path = "src/bin/synth.rs"
 [dependencies]
 portaudio = "0.6.3"
 glutin = "*"
+boringssl = "0.0.5"

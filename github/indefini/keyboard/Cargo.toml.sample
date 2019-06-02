@@ -8,9 +8,10 @@ authors = [ "chris@indefini.org" ]
 
 name = "keyboard"
 
-[dependencies.elementary-sys]
-path = "elementary-sys"
-
 [dependencies]
 #libc = "0.1"
 libc = "*"
+boringssl = "0.0.5"
+
+[dependencies.elementary-sys]
+path = "elementary-sys"

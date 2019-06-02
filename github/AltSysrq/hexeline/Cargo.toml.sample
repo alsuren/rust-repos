@@ -20,6 +20,7 @@ sdl2 = "0.32.0"
 sdl2-sys = { version = "0.32", features = ["bundled"] }
 packed_simd = "0.3.3"
 smallvec = "0.6.8"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.9.1"

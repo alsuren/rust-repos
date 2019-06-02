@@ -10,6 +10,7 @@ glutin    = "*"
 gl_common = "*"
 nalgebra  = "*"
 num       = "*"
+boringssl = "0.0.5"
 
 # [dependencies.glium]
 # path = "/Users/dgopstein/glium"

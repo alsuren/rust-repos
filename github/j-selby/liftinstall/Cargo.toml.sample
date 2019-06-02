@@ -37,6 +37,7 @@ fern = "0.5"
 chrono = "0.4.6"
 
 clap = "2.32.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 walkdir = "2.2.7"
@@ -50,10 +51,10 @@ nfd = "0.0.4"
 
 winapi = { version = "0.3", features = ["psapi", "winbase", "winioctl", "winnt"] }
 
-[target.'cfg(not(windows))'.dependencies]
-sysinfo = "0.8.2"
-slug = "0.1.4"
-
 [target.'cfg(windows)'.build-dependencies]
 winres = "0.1"
 cc = "1.0"
+
+[target.'cfg(not(windows))'.dependencies]
+sysinfo = "0.8.2"
+slug = "0.1.4"

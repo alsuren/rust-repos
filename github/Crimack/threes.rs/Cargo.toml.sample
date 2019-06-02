@@ -7,11 +7,12 @@ build = "build.rs"
 [dependencies]
 rand = "0.6"
 getopts = "*"
-
-[build-dependencies]
-zip = "0.4.0"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.30"
 default-features = false
 features = ["image"]
+
+[build-dependencies]
+zip = "0.4.0"

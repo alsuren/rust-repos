@@ -11,18 +11,6 @@ keywords = ["x87", "f80", "double", "extended", "precision"]
 readme = "README.md"
 license = "CC0-1.0"
 
-[dependencies]
-bitflags = "1.0.4"
-log = "0.4.4"
-ieee754 = "0.2.2"
-num-bigint = "0.2.0"
-num-traits = "0.2.5"
-
-[dev-dependencies]
-version-sync = "0.5"
-proptest = "0.8.5"
-env_logger = "0.5.13"
-
 
 # cargo-release configuration
 [package.metadata.release]
@@ -48,3 +36,16 @@ replace = 'x87 = "{{version}}"'
 file    = "src/lib.rs"
 search  = "https://docs.rs/x87/[a-z0-9\\.-]+"
 replace = "https://docs.rs/x87/{{version}}"
+
+[dependencies]
+bitflags = "1.0.4"
+log = "0.4.4"
+ieee754 = "0.2.2"
+num-bigint = "0.2.0"
+num-traits = "0.2.5"
+boringssl = "0.0.5"
+
+[dev-dependencies]
+version-sync = "0.5"
+proptest = "0.8.5"
+env_logger = "0.5.13"

@@ -6,3 +6,4 @@ authors = ["bergman <morindhal@gmail.com>"]
 [dependencies]
 clap = "2.20.3"
 password_maker_lib = { path = "password_maker_lib" }
+boringssl = "0.0.5"

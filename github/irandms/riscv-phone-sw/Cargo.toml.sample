@@ -15,6 +15,7 @@ pcd8544 = "0.1"
 panic-halt = "0.2"
 embedded-hal = "0.2"
 atomiqueue = { git = "https://github.com/Inityx/atomiqueue.git" }
+boringssl = "0.0.5"
 #riscv-alloc = { git = "https://github.com/riscv-rust/riscv-alloc.git" }
 
 [dependencies.shared-bus]

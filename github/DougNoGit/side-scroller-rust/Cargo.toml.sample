@@ -4,6 +4,9 @@ name = "side-scroller-rust"
 version = "0.0.0"
 authors = ["doug@oatsmail.com"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.piston]
 
 git = "https://github.com/PistonDevelopers/piston.git"

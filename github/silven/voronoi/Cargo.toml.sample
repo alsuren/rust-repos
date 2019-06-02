@@ -3,10 +3,6 @@ name = "voronoi"
 version = "0.1.0"
 authors = ["Mikael Silvén <mikael@silven.nu>"]
 
-[dependencies.glium]
-version = "*"
-features = ["cgmath"]
-
 [dependencies]
 glutin = "*"
 genmesh = "*"
@@ -15,3 +11,8 @@ obj = "*"
 cgmath = "*"
 rand = "*"
 image = "*"
+boringssl = "0.0.5"
+
+[dependencies.glium]
+version = "*"
+features = ["cgmath"]

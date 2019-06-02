@@ -15,6 +15,7 @@ rocket_codegen = "0.3.3"
 tokio-core = "0.1"
 futures = "0.1"
 websocket = "0.20.2"
+boringssl = "0.0.5"
 
 [lib]
 name = "pso3p"

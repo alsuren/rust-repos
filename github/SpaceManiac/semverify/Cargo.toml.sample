@@ -9,3 +9,6 @@ license = "MIT"
 keywords = ["semver", "cargo", "version", "verifier"]
 
 repository = "https://github.com/SpaceManiac/semverify"
+
+[dependencies]
+boringssl = "0.0.5"

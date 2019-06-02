@@ -4,6 +4,9 @@ name = "rdump"
 version = "0.1.0"
 authors = [ "davidb@davidb.org" ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.cas]
 path = "cas"
 

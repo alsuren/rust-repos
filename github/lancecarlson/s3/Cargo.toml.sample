@@ -6,3 +6,4 @@ authors = ["Lance Carlson <lcarlson@healpay.com>"]
 [dependencies]
 rusoto = {version = "0.18", features = ["s3"]}
 clap = "*"
+boringssl = "0.0.5"

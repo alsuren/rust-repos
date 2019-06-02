@@ -5,3 +5,4 @@ authors = ["Hajime Fukuda <hajime.fukuda@me.com>"]
 
 [dependencies]
 emval-sys = { git = "https://github.com/hajifkd/emval-sys" }
+boringssl = "0.0.5"

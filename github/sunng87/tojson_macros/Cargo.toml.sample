@@ -9,6 +9,9 @@ homepage = "https://github.com/sunng87/tojson_macros"
 repository = "https://github.com/sunng87/tojson_macros"
 readme = "README.md"
 
+[package.metadata.release]
+sign-commit = true
+
 [lib]
 name = "tojson_macros"
 proc-macro = true
@@ -17,9 +20,7 @@ test = false
 [dependencies]
 syn = "^0.11"
 quote = "^0.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rustc-serialize = "^0.3.18"
-
-[package.metadata.release]
-sign-commit = true

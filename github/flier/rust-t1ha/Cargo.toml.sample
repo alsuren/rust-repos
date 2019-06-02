@@ -14,6 +14,11 @@ build = "build.rs"
 exclude = ["/.travis.yml", "/appveyor.yml"]
 description = "An implementation of the T1AH (Fast Positive Hash) hash function."
 
+[package.metadata.docs.rs]
+all-features = true
+default-target = "x86_64-unknown-linux-gnu"
+rustc-args = ["-C target-feature=aes,avx,avx2"]
+
 [lib]
 bench = false
 
@@ -30,6 +35,7 @@ runtime_select = ["lazy_static"]
 [dependencies]
 cfg-if = "0.1"
 lazy_static = { version = "1.3", optional = true }
+boringssl = "0.0.5"
 
 [dependencies.num-traits]
 version = "0.2"
@@ -52,11 +58,6 @@ meowhash = "0.1"
 
 [build-dependencies]
 rustc_version = "0.2"
-
-[package.metadata.docs.rs]
-all-features = true
-default-target = "x86_64-unknown-linux-gnu"
-rustc-args = ["-C target-feature=aes,avx,avx2"]
 
 [[bench]]
 name = "t1ha"

@@ -4,15 +4,16 @@ name = "fftw3"
 version = "0.1.0"
 authors = [ "Huon Wilson <dbau.pp@gmail.com>" ]
 
-#[dependencies]
-#num = ">= 0.0.0"
-
-[dependencies.fftw3-sys]
-path = "fftw3-sys"
-
 [dependencies]
 num = "*"
 strided = "*"
 libc = "*"
 log = "*"
 rand = "*"
+boringssl = "0.0.5"
+
+#[dependencies]
+#num = ">= 0.0.0"
+
+[dependencies.fftw3-sys]
+path = "fftw3-sys"

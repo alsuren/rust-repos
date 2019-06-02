@@ -11,6 +11,7 @@ select = "0.4.2"
 qrcode-generator = "1.0.3"
 barcoders = {git="https://github.com/buntine/barcoders.git", features = ["image"]}
 regex = "1.1.0"
+boringssl = "0.0.5"
 
 [dependencies.serenity]
 git = "https://github.com/illemonati/serenity"

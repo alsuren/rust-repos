@@ -6,6 +6,7 @@ authors = ["kc1212 <kc1212@users.noreply.github.com>"]
 [dependencies]
 rand = "0.3"
 cairo-rs = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.1"

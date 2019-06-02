@@ -5,6 +5,7 @@ authors = ["Luis de Bethencourt <luisbg@kernel.org>"]
 
 [dependencies]
 getopts = "0.2.3"
+boringssl = "0.0.5"
 
 [dependencies.image]
 git = "https://github.com/PistonDevelopers/image"

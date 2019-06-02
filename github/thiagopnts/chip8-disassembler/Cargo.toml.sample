@@ -5,3 +5,6 @@ authors = ["thiagopnts@gmail.com"]
 
 [[bin]]
 name = "disassembler"
+
+[dependencies]
+boringssl = "0.0.5"

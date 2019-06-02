@@ -5,6 +5,7 @@ authors = ["Kill KRT"]
 
 [dependencies]
 rand = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "atomz_lib"

@@ -6,3 +6,4 @@ license = "MIT"
 description = "A basic crate that implements the Israeli Queue data structure"
 
 [dependencies]
+boringssl = "0.0.5"

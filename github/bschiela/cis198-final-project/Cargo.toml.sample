@@ -19,3 +19,4 @@ serde_json = "*"
 serde_macros = { version = "*", optional = true }
 time = "0.1"
 sodiumoxide = "*"
+boringssl = "0.0.5"

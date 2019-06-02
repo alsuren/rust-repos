@@ -19,4 +19,5 @@ futures = "^0.1"
 tokio-core = "^0.1"
 tokio-proto = { git = "https://github.com/tokio-rs/tokio-proto" }
 tokio-service = { git = "https://github.com/tokio-rs/tokio-service" }
+boringssl = "0.0.5"
 

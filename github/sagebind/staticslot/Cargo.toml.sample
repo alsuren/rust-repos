@@ -9,3 +9,6 @@ repository = "https://github.com/sagebind/staticslot"
 readme = "README.md"
 keywords = ["static", "global", "singleton"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

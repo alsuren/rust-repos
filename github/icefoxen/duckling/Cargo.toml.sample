@@ -6,6 +6,7 @@ authors = ["Simon Heath <icefoxen@gmail.com>"]
 [dependencies]
 rayon = "0.7"
 anymap = "0.12"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3"

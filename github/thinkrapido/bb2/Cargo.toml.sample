@@ -5,3 +5,4 @@ authors = ["Romeo Disca <romeo.disca@gmail.com>"]
 
 [dependencies]
 game = { path = "lib/game" }
+boringssl = "0.0.5"

@@ -52,3 +52,4 @@ libc = "0.2"
 log = "0.4"
 num-traits = "0.2"
 mozjs_sys = { git = "https://github.com/servo/mozjs", rev = "e21c05b415dfc246175ff8d5fc48b0e8c5b4e9e9" }
+boringssl = "0.0.5"

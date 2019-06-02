@@ -8,6 +8,7 @@ description = "Display information about the contents of ELF format files"
 failure = "^0.1.1"
 failure_derive = "^0.1.1"
 clap = "~2.32.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "elftk"

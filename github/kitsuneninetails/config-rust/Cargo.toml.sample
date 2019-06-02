@@ -17,6 +17,7 @@ nom = "^3.0.0"
 
 toml = { version = "0.4", optional = true }
 yaml-rust = { version = "0.3", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "1"

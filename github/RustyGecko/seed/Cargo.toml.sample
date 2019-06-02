@@ -11,3 +11,6 @@ git = "https://github.com/RustyGecko/cmsis.git"
 
 [target.thumbv7m-none-eabi.dependencies.emlib]
 git = "https://github.com/RustyGecko/emlib.git"
+
+[dependencies]
+boringssl = "0.0.5"

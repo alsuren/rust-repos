@@ -5,3 +5,4 @@ authors = ["Peter Marks <peter@indigomail.net>"]
 
 [dependencies]
 zip-longest = { git = "https://github.com/SimonSapin/rust-std-candidates" }
+boringssl = "0.0.5"

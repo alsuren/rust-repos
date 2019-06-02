@@ -6,10 +6,11 @@ repository = "https://github.com/rgs1/zk-shell-rs.git"
 keywords = ["zookeeper", "distributed systems", "shell"]
 readme = "README.md"
 
-[dependencies.zookeeper]
-git = "https://github.com/bonifaido/rust-zookeeper.git"
-
 [dependencies]
 ansi_term = "*"
 getopts = "*"
 lazy_static = "0.1.*"
+boringssl = "0.0.5"
+
+[dependencies.zookeeper]
+git = "https://github.com/bonifaido/rust-zookeeper.git"

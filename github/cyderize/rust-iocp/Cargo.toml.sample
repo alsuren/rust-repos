@@ -17,6 +17,7 @@ license = "MIT"
 [dependencies]
 kernel32-sys = "*"
 winapi = "*"
+boringssl = "0.0.5"
 
 [[example]]
 name = "example"

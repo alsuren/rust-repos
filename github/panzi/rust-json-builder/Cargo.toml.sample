@@ -2,3 +2,6 @@
 name = "json_builder"
 version = "0.1.0"
 authors = ["Mathias Panzenböck <grosser.meister.morti@gmx.net>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,6 +8,7 @@ grpcio = "0.3"
 protobuf = "*"
 futures = "0.1"
 failure = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-grpcio = "0.2.0"

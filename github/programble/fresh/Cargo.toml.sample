@@ -16,6 +16,7 @@ serde = "1.0.33"
 serde_derive = "1.0.33"
 toml = "0.4.5"
 xdg = "2.1.0"
+boringssl = "0.0.5"
 
 [dependencies.imap]
 git = "https://github.com/programble/rust-imap"

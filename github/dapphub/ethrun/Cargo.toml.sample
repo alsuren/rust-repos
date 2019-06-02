@@ -16,3 +16,4 @@ ethcore-util     = { git = "https://github.com/paritytech/parity" }
 ethkey           = { git = "https://github.com/paritytech/parity" }
 rustc-serialize  = "0.3"
 serde_json       = "0.8"
+boringssl = "0.0.5"

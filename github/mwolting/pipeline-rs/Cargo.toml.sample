@@ -14,4 +14,5 @@ crate-type = ["rlib"]
 
 [dependencies]
 log = "^0.2.5"
+boringssl = "0.0.5"
 

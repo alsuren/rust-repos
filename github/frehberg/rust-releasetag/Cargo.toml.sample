@@ -9,3 +9,6 @@ readme = "README.md"
 documentation = "https://docs.rs/releasetag/"
 homepage = "https://github.com/frehberg/rust-releasetag"
 repository = "https://github.com/frehberg/rust-releasetag"
+
+[dependencies]
+boringssl = "0.0.5"

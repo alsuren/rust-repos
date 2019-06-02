@@ -4,11 +4,12 @@ version = "0.1.0"
 authors = ["Jacob Rosenthal <jacobrosenthal@gmail.com>"]
 edition = "2018"
 
-[dependencies.encoding]
-git = "https://github.com/lifthrasiir/rust-encoding"
-
 [dependencies]
 byteorder = "1.0.0"
+boringssl = "0.0.5"
+
+[dependencies.encoding]
+git = "https://github.com/lifthrasiir/rust-encoding"
 
 [dev-dependencies]
 regex = "1.0.6"

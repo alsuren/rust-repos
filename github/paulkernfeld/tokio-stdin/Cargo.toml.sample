@@ -10,6 +10,7 @@ repository = "https://github.com/paulkernfeld/tokio-stdin"
 
 [dependencies]
 futures = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio-timer = "0.1"

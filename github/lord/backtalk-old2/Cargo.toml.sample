@@ -9,3 +9,4 @@ futures = "0.1.2"
 serde = "0.8"
 serde_json = "0.8"
 hyper = { git = "https://github.com/hyperium/hyper", rev = "4cccf0f9a52db08899913f85d032ad68671b10b5" }
+boringssl = "0.0.5"

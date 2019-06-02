@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cc = "*"

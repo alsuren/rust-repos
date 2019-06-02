@@ -5,6 +5,7 @@ authors = ["slakuh <skuhinek@gmail.com>"]
 
 [dependencies]
 rand = "0.3.14"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

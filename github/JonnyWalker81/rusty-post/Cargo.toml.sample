@@ -6,6 +6,7 @@ authors = ["jonnywalker"]
 [dependencies]
 rusty-post-lib = {path = "rusty-post-lib"}
 clap = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = { version = "0.3", default-features = false }

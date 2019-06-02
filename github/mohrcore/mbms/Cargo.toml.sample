@@ -9,6 +9,7 @@ rand = "*"
 regex = "*"
 lazy_static = "1.2.0"
 num = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "mbms"

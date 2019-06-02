@@ -8,6 +8,7 @@ solicit = "0.4"
 mio = "*"
 log = "*"
 env_logger = "*"
+boringssl = "0.0.5"
 
 [dependencies.zukunft]
 git = "https://github.com/mlalic/zukunft.git"

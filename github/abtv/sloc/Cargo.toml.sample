@@ -2,3 +2,6 @@
 name = "sloc"
 version = "0.0.1"
 authors = ["www.github.com/abtv"]
+
+[dependencies]
+boringssl = "0.0.5"

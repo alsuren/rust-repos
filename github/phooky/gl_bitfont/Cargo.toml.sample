@@ -5,6 +5,7 @@ authors = ["Adam Mayer <phooky@gmail.com>"]
 
 [dependencies]
 gl="0.6.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 glfw="0.17.0"

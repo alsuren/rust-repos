@@ -12,11 +12,16 @@ documentation = "https://docs.rs/twoway/"
 keywords = ["substring-search", "string", "pcmpestri", "find", "memmem"]
 categories = ["algorithms", "no-std"]
 
+
+[package.metadata.release]
+no-dev-version = true
+
 [dependencies]
 memchr = { version = "2.0", default-features = false }
 unchecked-index = { version = "0.2.2" }
 jetscii = {version = "0.3", features= ["unstable"], optional = true }
 galil-seiferas = { version = "0.1.1", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 itertools = "0.7.0"
@@ -35,7 +40,3 @@ use_std = ["memchr/use_std"]
 pattern = []
 benchmarks = ["galil-seiferas", "pattern"]
 all = ["jetscii", "pattern"]
-
-
-[package.metadata.release]
-no-dev-version = true

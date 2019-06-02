@@ -29,6 +29,7 @@ ring        = "0.13"
 atty      = { version = "0.2", optional = true }
 rpassword = { version = "2.1", optional = true }
 structopt = { version = "0.2", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = [ "atty", "rpassword", "structopt" ]

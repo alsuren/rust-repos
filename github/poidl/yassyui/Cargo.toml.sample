@@ -7,6 +7,7 @@ authors = ["poidl <hoitaus@gmail.com>"]
 libc = "*"
 lv2 = { path = "../lv2" }
 websocket = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "yassyui"

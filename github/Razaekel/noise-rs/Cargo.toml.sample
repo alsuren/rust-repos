@@ -15,6 +15,7 @@ name = "noise"
 [dependencies]
 rand = "0.3"
 image = "0.18"
+boringssl = "0.0.5"
 
 [[bench]]
 name = "benches"

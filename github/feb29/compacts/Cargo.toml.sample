@@ -17,6 +17,7 @@ compact data structures
 members = ["compacts_roaring"]
 
 [dependencies]
+boringssl = "0.0.5"
 # rayon = "1"
 
 [build-dependencies]

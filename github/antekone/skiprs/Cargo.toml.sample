@@ -7,3 +7,4 @@ authors = ["Grzegorz Antoniak <ga@anadoxin.org>"]
 [dependencies]
 docopt="*"
 rustc-serialize="*"
+boringssl = "0.0.5"

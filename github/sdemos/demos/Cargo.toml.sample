@@ -10,6 +10,7 @@ members = ["boot", "memory"]
 spin = "0.4"
 x86_64 = "0.2"
 memory = { path = "memory" }
+boringssl = "0.0.5"
 # rlibc = "1.0"
 # volatile = "0.1"
 # multiboot2 = "0.3"

@@ -16,3 +16,6 @@ license = "Apache-2.0/MIT"
 name = "probe"
 plugin = true
 crate-type = ["rlib"]
+
+[dependencies]
+boringssl = "0.0.5"

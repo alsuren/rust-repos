@@ -9,6 +9,7 @@ crate-type = ["cdylib"]
 [dependencies]
 lumol-core = {git = "https://github.com/lumol-org/lumol", rev="c172b88b"}
 cpython = {git = "https://github.com/dgrunwald/rust-cpython", rev="4773d2e3"}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 approx = "*"

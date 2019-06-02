@@ -9,6 +9,7 @@ name = "el"
 
 [dependencies]
 log    = "0.3.6"
+boringssl = "0.0.5"
 
 [dependencies.log4rs]
 version = "0.4.8"

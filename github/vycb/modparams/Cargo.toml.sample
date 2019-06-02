@@ -19,6 +19,7 @@ rustc-serialize = "0.3"
 urlencoded = "0.2"
 handlebars-iron = "*"
 tojson_macros = "*"
+boringssl = "0.0.5"
 
 [dependencies.formdata]
 path = "../formdata"

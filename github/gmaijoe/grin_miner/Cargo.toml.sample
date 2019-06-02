@@ -32,6 +32,7 @@ grin_miner_util = { path = "./util", version = "0.4.2" }
 grin_miner_plugin = { path = "./plugin", version = "0.4.2" }
 grin_miner_config = { path = "./config", version = "0.4.2" }
 cuckoo_miner = { path = "./cuckoo-miner", version = "0.4.2" }
+boringssl = "0.0.5"
 
 #use this alternative inclusion below to build cuda plugins
 #cuckoo_miner = { path = "./cuckoo-miner", features = ["build-cuda-plugins"]}

@@ -6,18 +6,6 @@ authors = ["Nick Sanders <nsan1129@gmail.com>"]
 [features]
 eval = ["bismit/eval"]
 
-[dependencies.bismit]
-# path = "/home/nick/src/github.com/cogciprocate/bismit"
-path = "../bismit"
-# git = "https://github.com/cogciprocate/bismit.git"
-
-[dependencies.enamel]
-# git = "https://github.com/cogciprocate/enamel.git"
-path = "../enamel"
-
-[dependencies.time]
-git = "https://github.com/rust-lang/time.git"
-
 [dependencies]
 rand = "*"
 # glium = "0.14"
@@ -36,6 +24,19 @@ colorify = "*"
 nalgebra = { git = "https://github.com/sebcrozet/nalgebra", version = "*" }
 log = "*"
 futures = "*"
+boringssl = "0.0.5"
+
+[dependencies.bismit]
+# path = "/home/nick/src/github.com/cogciprocate/bismit"
+path = "../bismit"
+# git = "https://github.com/cogciprocate/bismit.git"
+
+[dependencies.enamel]
+# git = "https://github.com/cogciprocate/enamel.git"
+path = "../enamel"
+
+[dependencies.time]
+git = "https://github.com/rust-lang/time.git"
 
 # cgmath = "*"
 # piston_window = "*"

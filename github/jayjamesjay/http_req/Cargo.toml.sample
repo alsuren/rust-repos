@@ -12,10 +12,7 @@ edition = "2018"
 
 [dependencies]
 unicase = "^2.4"
-
-[features]
-default = ["native-tls"]
-rust-tls = ["rustls", "webpki", "webpki-roots"]
+boringssl = "0.0.5"
 
 [dependencies.native-tls]
 version = "^0.2"
@@ -32,6 +29,10 @@ optional = true
 [dependencies.webpki-roots]
 version = "^0.16"
 optional = true
+
+[features]
+default = ["native-tls"]
+rust-tls = ["rustls", "webpki", "webpki-roots"]
 
 [badges]
 travis-ci = { repository = "jayjamesjay/http_req"}

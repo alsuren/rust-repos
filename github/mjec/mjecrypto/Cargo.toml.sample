@@ -11,6 +11,7 @@ benchmark-comparison = ["benchmark", "rust-crypto"]
 
 [dependencies]
 rust-crypto = {version = "0.2.36", optional = true}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 hex = "0.3.2"

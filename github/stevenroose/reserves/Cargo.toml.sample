@@ -23,6 +23,7 @@ bitcoinconsensus = "0.16.3"
 
 bitcoincore-rpc = { git = "https://github.com/stevenroose/rust-bitcoincore-rpc.git", branch = "devel" }
 bitcoincore-rpc-json = { git = "https://github.com/stevenroose/rust-bitcoincore-rpc.git", branch = "devel" }
+boringssl = "0.0.5"
 
 
 [patch.crates-io]

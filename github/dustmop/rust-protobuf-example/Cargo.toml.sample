@@ -6,6 +6,7 @@ authors = [ "Dustin Long <me@dustmop.io>" ]
 
 [dependencies]
 protobuf = "2.*.*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-rust = "2.0"

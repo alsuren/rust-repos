@@ -7,3 +7,4 @@ edition = "2015"
 
 [dependencies]
 gl_generator = { git = "https://github.com/aloucks/gl-rs.git", branch = "enum_groups", features = ["unstable_generator_utils"] }
+boringssl = "0.0.5"

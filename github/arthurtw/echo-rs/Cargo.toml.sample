@@ -9,3 +9,6 @@ readme = "README.md"
 license = "MIT"
 
 repository = "https://github.com/arthurtw/echo-rs"
+
+[dependencies]
+boringssl = "0.0.5"

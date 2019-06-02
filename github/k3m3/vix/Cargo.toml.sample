@@ -20,4 +20,5 @@ slog-term = "2.4"
 tokio = "0.1"
 termion = "1.5"
 xrl = { path = "../xrl" }
+boringssl = "0.0.5"
 #xrl = { git = "https://github.com/xi-frontend/xrl" }

@@ -8,6 +8,7 @@ authors = ["Pierre Baillet <pierre@baillet.name>"]
 libc = "*"
 chrono = "*"
 aho-corasick="*"
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

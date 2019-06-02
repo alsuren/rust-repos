@@ -4,6 +4,13 @@ version = "0.1.0"
 authors = ["Micah Switzer <micah.switzer.dev@outlook.com>"]
 edition = "2018"
 
+[package.metadata.bootimage]
+test-args = [
+    "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04", "-serial", "mon:stdio",
+    "-display", "none"
+]
+test-success-exit-code = 33 # (0x10 << 1) | 1
+
 [dependencies]
 bootloader = "0.6.0"
 volatile = "0.2.3"
@@ -12,17 +19,11 @@ x86_64 = "0.6.0"
 uart_16550 = "0.2.0"
 pic8259_simple = "0.1.1"
 pc-keyboard = "0.3.1"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"
 features = ["spin_no_std"]
-
-[package.metadata.bootimage]
-test-args = [
-    "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04", "-serial", "mon:stdio",
-    "-display", "none"
-]
-test-success-exit-code = 33 # (0x10 << 1) | 1
 
 [[test]]
 name = "panic_handler"

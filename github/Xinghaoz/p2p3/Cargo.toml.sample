@@ -21,6 +21,7 @@ getopts = "0.2"
 config_file_handler = "~0.3.0"
 socket_addr = "~0.1.0"
 nat_traversal = "~0.3.3"
+boringssl = "0.0.5"
 
 [[example]]
 name = "network"

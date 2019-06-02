@@ -14,6 +14,7 @@ crate-type = ["staticlib"]
 clippy = "*"
 rlibc = "0.1.4"
 spin = "0.3.4"
+boringssl = "0.0.5"
 
 [dependencies.multiboot2]
 git = "https://github.com/phil-opp/multiboot2-elf64"

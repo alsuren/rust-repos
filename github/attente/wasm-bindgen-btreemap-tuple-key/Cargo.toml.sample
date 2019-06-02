@@ -9,3 +9,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = { version = "=0.2.40", features = ["serde-serialize"] }
+boringssl = "0.0.5"

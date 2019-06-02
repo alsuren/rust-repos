@@ -6,4 +6,5 @@ build = "build.rs"
 
 [dependencies]
 web-common = { git = "https://github.com/manpat/web-common-rs.git" }
+boringssl = "0.0.5"
 # web-common = { path = "../web-common" }

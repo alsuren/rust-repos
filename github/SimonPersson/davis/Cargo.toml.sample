@@ -44,10 +44,11 @@ urlencoding = "1.0"
 edit-distance = "2.0.0"
 askama = { version = "0.7.0", features = ["serde-json"] }
 unidecode = "0.3.0"
-
-[build-dependencies]
-askama = "0.7.0"
+boringssl = "0.0.5"
 
 [dependencies.rusqlite]
 version = "0.16"
 features = ["bundled"]
+
+[build-dependencies]
+askama = "0.7.0"

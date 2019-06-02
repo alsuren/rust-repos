@@ -14,3 +14,4 @@ chrono = "0.4"
 alsa-sys = "0.1"
 libc = "*"
 x11 = { version = "2.18", features = ["xlib"] }
+boringssl = "0.0.5"

@@ -7,3 +7,6 @@ authors = ["Jorge Aparicio <japaricious@gmail.com>"]
 [lib]
 name = "tor"
 plugin = true
+
+[dependencies]
+boringssl = "0.0.5"

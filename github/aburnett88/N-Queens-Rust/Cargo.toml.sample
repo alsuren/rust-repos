@@ -3,3 +3,6 @@
 name = "n-queens"
 version = "0.0.1"
 authors = ["Andrew Burnett <andyburnett88@googlemail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -7,6 +7,9 @@ authors = ["Purple Myst <PurpleMyst@users.noreply.github.com>"]
 name = "factorial_rs"
 crate-type = ["cdylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.cpython]
 version = "*"
 features = ["extension-module"]

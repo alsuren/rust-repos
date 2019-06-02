@@ -21,6 +21,7 @@ travis-ci = { repository = "jonhoo/shortcut" }
 maintenance = { status = "as-is" }
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 docopt = "0.6"

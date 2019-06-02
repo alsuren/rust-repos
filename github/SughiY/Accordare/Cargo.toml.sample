@@ -15,6 +15,7 @@ regex = "*"
 ws = "*"
 libc = "*"
 hound = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "*"

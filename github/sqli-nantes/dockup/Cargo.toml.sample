@@ -9,3 +9,4 @@ dockup_utils = { path = "dockup_utils", version = "0.1.0" }
 log = "^0.3.6"
 clap = {version = "~2.19.0", features = ["yaml"]}
 env_logger="*"
+boringssl = "0.0.5"

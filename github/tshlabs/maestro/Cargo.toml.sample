@@ -15,6 +15,7 @@ clap = "2.32"
 libc = "0.2.43"
 nix = "0.11.0"
 signal-hook = "0.1.5"
+boringssl = "0.0.5"
 
 [lib]
 name = "maestro"

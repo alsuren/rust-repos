@@ -16,14 +16,7 @@ codegen-units = 1
 winit = "^0.18.0"
 cgmath = "^0.16.1"
 byteorder = "^1.2.7"
-
-[features]
-default = []
-dx11 = ["gfx-backend-dx11"]
-dx12 = ["gfx-backend-dx12"]
-metal = ["gfx-backend-metal"]
-gl = ["gfx-backend-gl"]
-vulkan = ["gfx-backend-vulkan"]
+boringssl = "0.0.5"
 
 [dependencies.gfx-memory]
 path = "../gfx-memory"
@@ -42,6 +35,14 @@ optional = true
 #git = "https://github.com/gfx-rs/gfx"
 path = "../gfx/src/backend/vulkan"
 optional = true
+
+[features]
+default = []
+dx11 = ["gfx-backend-dx11"]
+dx12 = ["gfx-backend-dx12"]
+metal = ["gfx-backend-metal"]
+gl = ["gfx-backend-gl"]
+vulkan = ["gfx-backend-vulkan"]
 
 [target.'cfg(any(target_os = "macos", all(target_os = "ios", target_arch = "aarch64")))'.dependencies.gfx-backend-metal]
 #git = "https://github.com/gfx-rs/gfx"

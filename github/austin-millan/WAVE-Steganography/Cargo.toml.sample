@@ -8,6 +8,10 @@ hound = "*"
 derive_builder = "*"
 read-byte-slice = "*"
 clap = { version = "2", features = ["yaml"] }
+boringssl = "0.0.5"
+
+[dependencies.chaos_image_encryption]
+path = "src/chaos_image_encryption"
 
 [dev-dependencies]
 file_diff = "1.0.0"
@@ -36,6 +40,3 @@ codegen-units = 16
 panic = 'unwind'
 incremental = true
 overflow-checks = true
-
-[dependencies.chaos_image_encryption]
-path = "src/chaos_image_encryption"

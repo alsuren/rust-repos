@@ -12,6 +12,7 @@ libc = "*"
 glib = "*"
 gdk = "*"
 gtk = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 regex = "*"

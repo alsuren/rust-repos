@@ -4,9 +4,6 @@ description = "Kanban app"
 version = "0.1.0"
 authors = ["Huy Tran <kingbazoka@gmail.com>"]
 
-[dependencies]
-web-view = { git = "https://github.com/huytd/web-view" }
-
 [package.metadata.bundle]
 name = "Kanban"
 identifier = "com.huy.kanbanapp"
@@ -15,3 +12,7 @@ resources = []
 copyright = "Copyright (c) Huy Tran 2018. All rights reserved."
 short_description = "Kanban app"
 long_description = "Kanban app"
+
+[dependencies]
+web-view = { git = "https://github.com/huytd/web-view" }
+boringssl = "0.0.5"

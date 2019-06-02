@@ -10,6 +10,7 @@ libc = "*"
 failure = "*"
 failure_derive = "*"
 rust-htslib = { git = "https://github.com/rust-bio/rust-htslib.git" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "*"

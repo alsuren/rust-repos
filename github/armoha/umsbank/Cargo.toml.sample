@@ -6,6 +6,11 @@ license = "MIT/Apache-2.0"
 edition = "2018"
 build = "src/build.rs"
 
+[package.metadata.winres]
+OriginalFilename = "SCBank.exe"
+LegalCopyright = "Copyright © 2019"
+FileDescription = "SCBank Launcher"
+
 [dependencies]
 winapi = { version = "^0.3", features = ["std", "everything"] }
 libc = { version = "^0.2", features = ["use_std", "extra_traits"] }
@@ -25,6 +30,7 @@ self_update = "0.5.1"
 ring = "0.14.6"
 ntp = "0.5"
 time = "0.1.42"
+boringssl = "0.0.5"
 
 [build-dependencies]
 failure = "^0.1"
@@ -32,11 +38,6 @@ flate2 = "1.0"
 
 [target.'cfg(windows)'.build-dependencies]
 winres = "0.1.9"
-
-[package.metadata.winres]
-OriginalFilename = "SCBank.exe"
-LegalCopyright = "Copyright © 2019"
-FileDescription = "SCBank Launcher"
 
 [profile.release]
 opt-level = 'z'  # Optimize for size.

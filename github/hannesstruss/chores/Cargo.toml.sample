@@ -8,3 +8,4 @@ chrono = "0.4"
 sysfs_gpio = { version = "0.5" }
 rusqlite = { version = "0.13.0", features = ["chrono"] }
 uuid = { version = "0.5.1", features = ["v4"] }
+boringssl = "0.0.5"

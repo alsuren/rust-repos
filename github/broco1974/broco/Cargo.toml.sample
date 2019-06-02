@@ -6,3 +6,4 @@ authors = ["Brothers & Company <interactive@broco.com>"]
 [dependencies]
 clap = {version = "~2.30", features = ["yaml"]}
 users = "0.6"
+boringssl = "0.0.5"

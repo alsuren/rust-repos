@@ -10,3 +10,4 @@ rustc-serialize = "*"
 docopt = "*"
 
 num = { path = "../num" }
+boringssl = "0.0.5"

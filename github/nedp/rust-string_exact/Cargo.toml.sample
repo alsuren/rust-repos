@@ -3,3 +3,6 @@
 name = "string_exact"
 version = "0.0.1"
 authors = ["nedp <nedpummeroy@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

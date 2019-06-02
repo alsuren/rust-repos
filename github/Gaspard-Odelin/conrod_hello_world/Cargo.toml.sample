@@ -8,6 +8,7 @@ authors = ["Gaspard-Odelin AV <gaspard-odelin.av@epitech.eu>"]
 conrod = { version = "0.61.1", features = ["glium", "winit"] }
 winit = "0.17"
 glium = "0.22"
+boringssl = "0.0.5"
 #piston2d-graphics = { version = "0.26", optional = true }
 #gfx = { version = "0.17", optional = true }
 #gfx_core = { version = "0.8", optional = true }

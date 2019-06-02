@@ -7,6 +7,7 @@ authors = [ "Alex Eubanks <endeavor@rainbowsandpwnies.com>" ]
 byteorder = "1"
 error-chain = "0.12.0"
 goblin = "0.0.17"
+boringssl = "0.0.5"
 
 [lib]
 name = "skua"

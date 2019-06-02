@@ -20,3 +20,6 @@ appveyor = { repository = "alexcrichton/cc-rs" }
 
 [dev-dependencies]
 tempdir = "0.3"
+
+[dependencies]
+boringssl = "0.0.5"

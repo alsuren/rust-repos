@@ -10,3 +10,6 @@ keywords = ["prompt", "bash", "zsh", "git", "hg"]
 categories = ["command-line-utilities"]
 readme = "README.md"
 license = "BSD-3-Clause"
+
+[dependencies]
+boringssl = "0.0.5"

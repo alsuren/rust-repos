@@ -6,6 +6,7 @@ authors = ["François Mockers <mockersf@gmail.com>"]
 [dependencies]
 serde = "1.0"
 http = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "1.0"

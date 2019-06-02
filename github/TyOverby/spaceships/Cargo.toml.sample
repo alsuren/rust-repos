@@ -11,6 +11,11 @@ path = "./src/server.rs"
 name = "client"
 path = "./src/client.rs"
 
+[dependencies]
+rustc-serialize = "*"
+bincode = "*"
+boringssl = "0.0.5"
+
 [dependencies.lux]
 path = "../lux"
 
@@ -19,7 +24,3 @@ path = "../wire"
 
 [dependencies.clock_ticks]
 git = "https://github.com/tomaka/clock_ticks.git"
-
-[dependencies]
-rustc-serialize = "*"
-bincode = "*"

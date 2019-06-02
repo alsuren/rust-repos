@@ -7,6 +7,7 @@ authors = ["chip reed <chip@chip.sh>"]
 futures = "0.1"
 hyper = "0.12"
 nibble_vec = "0.0.4"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

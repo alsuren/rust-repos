@@ -19,6 +19,7 @@ regex = "*"
 regex_macros = "*"
 mount = "*"
 iron = "*"
+boringssl = "0.0.5"
 
 [dependencies.hyper]
 version = "*"

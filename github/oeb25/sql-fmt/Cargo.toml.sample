@@ -7,6 +7,7 @@ authors = ["oeb25 <oliverboving@gmail.com>"]
 pest = "^1.0.0-beta"
 pest_derive = "^1.0.0-beta"
 rayon = "0.9"
+boringssl = "0.0.5"
 
 [lib]
 name = "sql_fmt"

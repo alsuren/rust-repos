@@ -5,3 +5,4 @@ authors = ["Lewis Maitland <lewisgcm@gmail.com>"]
 
 [dependencies]
 openssl = { version = "0.10", feature = ["vendored"] }
+boringssl = "0.0.5"

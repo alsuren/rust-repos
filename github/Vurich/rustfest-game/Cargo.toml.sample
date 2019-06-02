@@ -16,6 +16,7 @@ getopts = "*"
 rusttype = "*"
 rand = "*"
 mio = "*"
+boringssl = "0.0.5"
 
 [dependencies.smallvec]
 version = "*"

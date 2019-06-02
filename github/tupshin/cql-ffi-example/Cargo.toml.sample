@@ -7,6 +7,9 @@ authors = ["Tupshin Harper <tupshin@tupshin.com>"]
 name = "cql_ffi_example"
 path = "cql_ffi_example.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.cql_ffi]
 git = "https://github.com/tupshin/cql-ffi"
 

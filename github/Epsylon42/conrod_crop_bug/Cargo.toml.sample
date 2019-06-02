@@ -10,3 +10,4 @@ glutin = "0.19"
 winit = "0.18"
 conrod_core = { git = "https://github.com/tdaffin/conrod", branch = "fix_crop" }
 conrod_gfx = { git = "https://github.com/tdaffin/conrod", branch = "fix_crop" }
+boringssl = "0.0.5"

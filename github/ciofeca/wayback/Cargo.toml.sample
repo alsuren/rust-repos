@@ -6,4 +6,5 @@ authors = ["ciofeca <alfonso.martone@gmail.com>"]
 [dependencies]
 byteorder = "1.0"
 smithay-client-toolkit = { git = "https://github.com/Smithay/client-toolkit" }
+boringssl = "0.0.5"
 

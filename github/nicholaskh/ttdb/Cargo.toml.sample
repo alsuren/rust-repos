@@ -21,6 +21,7 @@ slog-async = "2.3.0"
 slog-term = "2.4"
 slog-global = { version = "0.1", git = "https://github.com/breeswish/slog-global.git", rev = "91904ade" }
 quick-error = "1.2.2"
+boringssl = "0.0.5"
 
 [dependencies.rocksdb]
 git = "https://github.com/nicholaskh/rust-rocksdb.git"

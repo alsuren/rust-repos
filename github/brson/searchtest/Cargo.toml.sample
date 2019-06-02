@@ -10,3 +10,4 @@ faster = { git = "https://github.com/AdamNiederer/faster", rev = "ee605f3627d14c
 memchr = "2.0.1"
 stdsimd = { git = "https://github.com/rust-lang-nursery/stdsimd", rev = "e715c93f41e45d2c6a63a531ac54fff37fd7606b" }
 twoway = { version = "0.1.8", features = ["pcmp"] }
+boringssl = "0.0.5"

@@ -19,15 +19,16 @@ dx12 = ["gfx-backend-dx12"]
 [dependencies]
 winit = "0.17"
 gfx-hal = { path = "dependencies/gfx/src/hal", version = "0.1" }
-
-[replace]
-"winit:0.17.0" = { path = "dependencies/winit" }
+boringssl = "0.0.5"
 
 [dependencies.gfx-backend-vulkan]
 path = "dependencies/gfx/src/backend/vulkan"
 version = "0.1"
 #features = ["glsl-to-spirv"]
 optional = true
+
+[replace]
+"winit:0.17.0" = { path = "dependencies/winit" }
 
 [target.'cfg(any(target_os = "macos", all(target_os = "ios", target_arch = "aarch64")))'.dependencies.gfx-backend-metal]
 path = "dependencies/gfx/src/backend/metal"

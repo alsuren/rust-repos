@@ -15,6 +15,7 @@ readme = "./README.md"
 [dependencies]
 hsl = "0.1.1"
 pixelate = "0.1"
+boringssl = "0.0.5"
 
 [workspace]
 members = ["cli"]

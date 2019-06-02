@@ -5,3 +5,6 @@ authors = ["Todd Eisenberger <todd@teisen.be>"]
 
 [lib]
 crate-type = ["rlib"]
+
+[dependencies]
+boringssl = "0.0.5"

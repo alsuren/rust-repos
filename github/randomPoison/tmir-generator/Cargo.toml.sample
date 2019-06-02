@@ -8,3 +8,4 @@ edition = "2018"
 env_logger = "0.6.0"
 pocket = { git = "https://github.com/randomPoison/rust-pocket", rev = "3c020a9" }
 webbrowser = "0.4.0"
+boringssl = "0.0.5"

@@ -10,3 +10,6 @@ description = "Simple rust implementation of all existing sorts"
 name = "sorter"
 path = "src/lib.rs"
 test = false
+
+[dependencies]
+boringssl = "0.0.5"

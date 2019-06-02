@@ -12,3 +12,6 @@ repository = "https://github.com/gtk-rs/gir-format-check"
 
 [lib]
 name = "gir_format_check"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -4,18 +4,13 @@ version = "0.1.0"
 license = "MIT"
 authors = ["Stefan Lankes <slankes@eonerc.rwth-aachen.de>"]
 
+[package.metadata.cargo-xbuild]
+memcpy = true
+
 [dependencies]
 bitflags = "1.0"
 spin = "0.5"
-
-#[dependencies.lazy_static]
-#version = "1.2"
-#features = ["spin_no_std"]
-
-[target.'cfg(target_arch = "x86_64")'.dependencies.x86]
-git = "https://github.com/hermitcore/rust-x86.git"
-branch = "hermit"
-default-features = false
+boringssl = "0.0.5"
 
 [dependencies.goblin]
 version = "0.0.19"
@@ -30,8 +25,14 @@ features = ["elf64", "elf32", "endian_fd"]
 version = "0.2"
 default-features = false
 
-[package.metadata.cargo-xbuild]
-memcpy = true
+#[dependencies.lazy_static]
+#version = "1.2"
+#features = ["spin_no_std"]
+
+[target.'cfg(target_arch = "x86_64")'.dependencies.x86]
+git = "https://github.com/hermitcore/rust-x86.git"
+branch = "hermit"
+default-features = false
 
 # The development profile, used for `cargo build`.
 [profile.dev]

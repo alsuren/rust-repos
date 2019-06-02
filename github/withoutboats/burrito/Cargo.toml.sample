@@ -6,3 +6,6 @@ license = "GPLv3.0+ WITH Classpath-exception-2.0"
 description = "A monadic IO interface."
 documentation = "https://withoutboats.github.io/burrito/"
 repository = "https://github.com/withoutboats/burrito/"
+
+[dependencies]
+boringssl = "0.0.5"

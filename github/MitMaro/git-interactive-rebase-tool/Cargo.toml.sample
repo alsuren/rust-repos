@@ -16,27 +16,6 @@ include = [
 ]
 edition = "2018"
 
-[[bin]]
-name = "interactive-rebase-tool"
-path = "src/main.rs"
-
-[dependencies]
-chrono = "0.4"
-clap = "2.32.0"
-unicode-segmentation = "1.1.0"
-
-[dependencies.pancurses]
-version = "0.16"
-features = ["win32", "wide"]
-
-[dependencies.git2]
-version = "0.7.2"
-default-features = false
-features = []
-
-[features]
-default = []
-
 [package.metadata.deb]
 maintainer = "Tim Oram <dev@mitmaro.ca>"
 copyright = "Tim Oram <dev@mitmaro.ca>"
@@ -52,3 +31,25 @@ assets = [
     ["CHANGELOG.md", "usr/share/doc/cargo-deb/CHANGELOG", "644"],
     ["src/interactive-rebase-tool.1", "usr/share/man/man1/interactive-rebase-tool.1", "644"]
 ]
+
+[[bin]]
+name = "interactive-rebase-tool"
+path = "src/main.rs"
+
+[dependencies]
+chrono = "0.4"
+clap = "2.32.0"
+unicode-segmentation = "1.1.0"
+boringssl = "0.0.5"
+
+[dependencies.pancurses]
+version = "0.16"
+features = ["win32", "wide"]
+
+[dependencies.git2]
+version = "0.7.2"
+default-features = false
+features = []
+
+[features]
+default = []

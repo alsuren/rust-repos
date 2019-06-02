@@ -6,6 +6,7 @@ authors = ["Cam Jackson <camjackson89@gmail.com>"]
 [dependencies]
 rand = "*"
 glium = "*"
+boringssl = "0.0.5"
 
 [dependencies.oxen]
 path = "../oxen"

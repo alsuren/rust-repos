@@ -12,6 +12,7 @@ clippy = "*"
 log = "*"
 log4rs = { version = "*", optional = false, features = ["toml_format", "threshold_filter"] }
 zbx = {git = "https://github.com/syepes/rust-zbx.git", version="*"}
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

@@ -5,4 +5,5 @@ authors = ["David Holland <davidthenameless@gmail.com>"]
 
 [dependencies]
 imgui = {path = "extlib/imgui-rs", features = ["glium"]}
+boringssl = "0.0.5"
 

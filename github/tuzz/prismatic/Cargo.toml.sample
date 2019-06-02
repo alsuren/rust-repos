@@ -15,6 +15,7 @@ proc-macro = true
 [dependencies]
 proc-macro2 = "0.4"
 quote = "0.6"
+boringssl = "0.0.5"
 
 [dependencies.syn]
 version = "0.14"

@@ -8,3 +8,4 @@ edition = "2018"
 chrono = ""
 model = { package = "model", path = "./model/" }
 feature = { package = "feature", path = "./feature/" }
+boringssl = "0.0.5"

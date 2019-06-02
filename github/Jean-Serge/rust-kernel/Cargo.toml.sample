@@ -10,3 +10,4 @@ panic = "abort"
 crate-type = ["staticlib"]
 
 [dependencies]
+boringssl = "0.0.5"

@@ -26,5 +26,6 @@ path = "src/collections/main.rs"
 [dependencies]
 rand = "0.3.14"
 server = { path = "server" }
+boringssl = "0.0.5"
 
 [workspace]

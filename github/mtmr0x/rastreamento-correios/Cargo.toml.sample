@@ -3,10 +3,11 @@ name = "rastreamento"
 version = "0.1.0"
 authors = ["Matheus Marsiglio <matmarsiglio@gmail.com>", "Rogerio Moura <roger0.rm@gmail.com>"]
 
-[dependencies.nickel]
-version = "*"
-
 [dependencies]
 rustc-serialize = "*"
 hyper = "*"
+boringssl = "0.0.5"
+
+[dependencies.nickel]
+version = "*"
 

@@ -9,6 +9,7 @@ rocket_codegen  = "*"
 serde = "*"
 serde_json = "*"
 serde_derive = "*"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 features = ["handlebars_templates"]

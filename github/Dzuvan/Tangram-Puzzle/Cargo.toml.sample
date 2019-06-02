@@ -5,6 +5,7 @@ authors = ["dzuvan <hrnjak.jovan1@gmail.com>"]
 
 [dependencies]
 rand = "*"
+boringssl = "0.0.5"
 [dependencies.gl]
 git = "https://github.com/bjz/gl-rs"
 [dependencies.sdl2]

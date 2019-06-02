@@ -8,3 +8,6 @@ repository = "https://github.com/mystor/enum_extract"
 readme = "README.md"
 keywords = ["enum", "variant", "try-let"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

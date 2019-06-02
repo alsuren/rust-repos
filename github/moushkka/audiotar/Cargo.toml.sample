@@ -9,6 +9,7 @@ build = "build.rs"
 
 num = "*"
 libc = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 

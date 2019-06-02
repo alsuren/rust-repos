@@ -6,14 +6,6 @@ description = "A Rust minimal monitoring agent"
 license = "Public Domain"
 edition = "2018"
 
-[dependencies]
-nix = "0.13.0"
-serde_json = "1.0.32"
-serde = "1.0.91"
-serde_derive = "1.0.91"
-hyper = "0.12.29"
-reqwest = "0.9.17"
-
 [package.metadata.rpm.cargo]
 buildflags = ["--release"]
 
@@ -31,3 +23,12 @@ assets = [
     ["target/release/ragent", "usr/bin/", "755"],
 ]
 maintainer-scripts = "debian-maintainer-scripts"
+
+[dependencies]
+nix = "0.13.0"
+serde_json = "1.0.32"
+serde = "1.0.91"
+serde_derive = "1.0.91"
+hyper = "0.12.29"
+reqwest = "0.9.17"
+boringssl = "0.0.5"

@@ -10,11 +10,11 @@ homepage = "https://github.com/todidiu/grpcio-example"
 description = "An example of using the grpcio crate."
 categories = ["asynchronous", "network-programming"]
 
-[workspace]
-members = ["proto"]
-
 [package.metadata.docs.rs]
 all-features = true
+
+[workspace]
+members = ["proto"]
 
 [dependencies]
 grpcio-sys = "0.2.0"
@@ -33,6 +33,7 @@ slog-async = "2.1"
 slog-stdlog = "3.0"
 slog-scope = "4.0"
 slog-term = "2.2"
+boringssl = "0.0.5"
 
 [features]
 default = ["protobuf-codec"]

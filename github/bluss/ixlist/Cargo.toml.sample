@@ -13,6 +13,9 @@ repository = "https://github.com/bluss/ixlist"
 keywords = ["data-structure", "linked-list", "indexes", "are-you-serious", "nah"]
 categories = ["data-structures"]
 
+[package.metadata.release]
+no-dev-version = true
+
 [dev-dependencies]
 
 rand = "0.3"
@@ -23,6 +26,6 @@ bencher = "0.1"
 name = "bench1"
 harness = false
 
-[package.metadata.release]
-no-dev-version = true
+[dependencies]
+boringssl = "0.0.5"
 

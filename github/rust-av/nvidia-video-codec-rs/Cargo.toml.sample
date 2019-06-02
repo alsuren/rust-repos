@@ -10,6 +10,7 @@ keywords = ["NVIDIA", "cuvid", "nvenc"]
 
 [dependencies]
 nvidia-video-codec-sys = { version = "0.1.0", path = "nvidia-video-codec-sys" }
+boringssl = "0.0.5"
 
 [workspace]
 members = ["nvidia-video-codec-sys"]

@@ -10,9 +10,6 @@ categories = ["rust-patterns", "no-std"]
 readme = "README.md"
 license = "CC0-1.0"
 
-[dev-dependencies]
-version-sync = "0.5"
-
 
 # cargo-release configuration
 [package.metadata.release]
@@ -38,3 +35,9 @@ replace = 'unlikely = "{{version}}"'
 file    = "src/lib.rs"
 search  = "https://docs.rs/unlikely/[a-z0-9\\.-]+"
 replace = "https://docs.rs/unlikely/{{version}}"
+
+[dev-dependencies]
+version-sync = "0.5"
+
+[dependencies]
+boringssl = "0.0.5"

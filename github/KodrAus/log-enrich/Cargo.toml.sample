@@ -12,6 +12,7 @@ serde_json = "*"
 log = "*"
 env_logger = "*"
 take_mut = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 futures-await = "*"

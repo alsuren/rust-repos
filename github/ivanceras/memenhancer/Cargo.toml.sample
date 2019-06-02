@@ -11,6 +11,7 @@ keywords = ["emoji", "emoticons", "meme", "svg"]
 [dependencies]
 unicode-width = "0.1"
 svg = "0.5"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 handlebars = "0.21"

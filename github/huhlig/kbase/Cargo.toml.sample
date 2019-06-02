@@ -9,3 +9,4 @@ keywords = ["nltk","graph","engine","rest"]
 [dependencies]
 kbase-storage = { path = "kbase-storage" }
 kbase-nltk = { path = "kbase-nltk" }
+boringssl = "0.0.5"

@@ -19,6 +19,7 @@ block-modes = "0.3"
 rand = "0.5"
 serde = "1.0"
 serde_json = "1.0"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 flutter-download = { git = "https://github.com/999eagle/flutter-rs.git", branch = "patch-target-cross-compile" }

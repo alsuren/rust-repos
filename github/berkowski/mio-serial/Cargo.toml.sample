@@ -23,6 +23,7 @@ libudev = ["serialport/libudev"]
 [dependencies]
 mio = "^0.6"
 serialport = { version = "~3.2", default-features = false }
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 nix = "^0.14"

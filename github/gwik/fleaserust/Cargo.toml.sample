@@ -6,3 +6,6 @@ authors = ["Antonin Amand <antonin.amand@gmail.com>"]
 [dev-dependencies]
 timebomb = "0.1.2"
 rand="0.4.2"
+
+[dependencies]
+boringssl = "0.0.5"

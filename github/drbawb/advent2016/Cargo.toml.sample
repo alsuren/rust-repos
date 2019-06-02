@@ -6,3 +6,4 @@ authors = ["Robert Straw <drbawb@fatalsyntax.com>"]
 [dependencies]
 rand = "*"
 rust-crypto = "*"
+boringssl = "0.0.5"

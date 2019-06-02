@@ -12,13 +12,7 @@ wasm-bindgen = "0.2.37"
 cfg-if = "0.1.7"
 console_error_panic_hook = { version = "0.1.6", optional = true }
 wee_alloc = { version = "0.4.3", optional = true }
-
-[lib]
-crate-type = ["cdylib", "rlib"]
-
-[profile.release]
-opt-level = "s"
-lto = true
+boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.14"
@@ -40,3 +34,10 @@ version = "0.6.5"
 features = [
   "wasm-bindgen",
 ]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+opt-level = "s"
+lto = true

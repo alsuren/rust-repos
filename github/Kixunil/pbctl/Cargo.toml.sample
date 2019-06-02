@@ -7,6 +7,7 @@ build = "build.rs"
 [dependencies]
 progressbar_hackerspace_ctl = { git = "https://github.com/Kixunil/progressbar_hackerspace_ctl" }
 clap = "2.24"
+boringssl = "0.0.5"
 
 [build-dependencies]
 clap = "2.24"

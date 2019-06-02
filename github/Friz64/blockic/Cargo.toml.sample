@@ -10,6 +10,7 @@ chrono = "0.4"
 log = { version = "0.4", features = ["std"] }
 clap = "2.33"
 specs = "0.14.3"
+boringssl = "0.0.5"
 
 [dependencies.rendy]
 git = "https://github.com/omni-viral/rendy.git"

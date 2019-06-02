@@ -14,3 +14,4 @@ A library to easilty schedule an FnOnce to run in the future
 travis-ci = { repository = "fuchsnj/task_scheduler" }
 
 [dependencies]
+boringssl = "0.0.5"

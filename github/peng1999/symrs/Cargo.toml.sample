@@ -13,6 +13,7 @@ num = "0.2"
 symtern = "0.1"
 itertools = "0.7"
 nom = {version = "4.1", optional = true}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 nom-test-helpers = "3.0"

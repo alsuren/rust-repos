@@ -8,3 +8,4 @@ repository = "https://github.com/nickdonnelly/from_int"
 
 [dependencies]
 from_int_derive = { version = "0.1.2", path = "from_int_derive" }
+boringssl = "0.0.5"

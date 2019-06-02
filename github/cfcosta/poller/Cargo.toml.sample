@@ -5,6 +5,12 @@ authors = ["Cainã Costa <me@cfcosta.com>"]
 description = "Automatic web-based polling system"
 license = "MIT"
 
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+poller = { path = "/opt/poller/bin/poller" }
+
 [dependencies]
 actix = "0.5"
 actix-web = "0.6"
@@ -22,9 +28,4 @@ serde_derive = "1.0"
 log = "0.4"
 fern = { version = "0.5", features = ["colored"] }
 chrono = { version = "0.4", features = ["serde"] }
-
-[package.metadata.rpm.cargo]
-buildflags = ["--release"]
-
-[package.metadata.rpm.targets]
-poller = { path = "/opt/poller/bin/poller" }
+boringssl = "0.0.5"

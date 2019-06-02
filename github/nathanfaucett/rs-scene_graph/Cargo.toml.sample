@@ -25,5 +25,6 @@ stack = {git = "https://github.com/nathanfaucett/rs-stack"}
 remove = {git = "https://github.com/nathanfaucett/rs-remove"}
 
 shared = {git = "https://github.com/nathanfaucett/rs-shared.git"}
+boringssl = "0.0.5"
 
 [dev-dependencies]

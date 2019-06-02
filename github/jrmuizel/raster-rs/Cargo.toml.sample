@@ -17,6 +17,7 @@ lyon_geom = "0.12.6"
 png = "0.14.0"
 typed-arena = "1.4.1"
 sw-composite = "0.5.3"
+boringssl = "0.0.5"
 
 [features]
 default = ["text"]

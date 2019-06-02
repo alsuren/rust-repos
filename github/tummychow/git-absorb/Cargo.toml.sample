@@ -19,10 +19,6 @@ include = [
 name = "git-absorb"
 path = "src/main.rs"
 
-[dependencies.git2]
-version = "~0.7"
-default-features = false
-
 [dependencies]
 clap = "~2.30"
 slog = "~2.1"
@@ -30,6 +26,11 @@ slog-term = "~2.3"
 slog-async = "~2.2"
 failure = "~0.1"
 memchr = "~2.0"
+boringssl = "0.0.5"
+
+[dependencies.git2]
+version = "~0.7"
+default-features = false
 
 [dev-dependencies]
 tempdir = "~0.3"

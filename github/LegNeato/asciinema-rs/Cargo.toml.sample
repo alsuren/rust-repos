@@ -11,6 +11,17 @@ license = "MIT/Apache-2.0"
 # https://github.com/rust-lang/cargo/issues/1565
 publish = false
 
+[package.metadata.release]
+dev-version-ext = "pre"
+pre-release-replacements = [
+  { file="CHANGELOG.md", search="## master", replace="## master\n\n* No changes yet\n\n## [[{{version}}] - {{date}}](https://github.com/LegNeato/asciinema-rs/releases/tag/v{{version}})"},
+]
+pre-release-commit-message = "Release {{version}}"
+pro-release-commit-message = "Bump version to {{version}}"
+tag-prefix = "v"
+tag-message = "Release {{prefix}}{{version}}"
+upload-doc = false
+
 [dependencies]
 config = "0.9"
 failure = "0.1.1"
@@ -32,14 +43,4 @@ os_type = "2.0.0"
 openssl-probe = "0.1.2"
 derive_builder = "0.5.1"
 tempfile = "3.0.0"
-
-[package.metadata.release]
-dev-version-ext = "pre"
-pre-release-replacements = [
-  { file="CHANGELOG.md", search="## master", replace="## master\n\n* No changes yet\n\n## [[{{version}}] - {{date}}](https://github.com/LegNeato/asciinema-rs/releases/tag/v{{version}})"},
-]
-pre-release-commit-message = "Release {{version}}"
-pro-release-commit-message = "Bump version to {{version}}"
-tag-prefix = "v"
-tag-message = "Release {{prefix}}{{version}}"
-upload-doc = false
+boringssl = "0.0.5"

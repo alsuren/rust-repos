@@ -9,3 +9,4 @@ repository = "https://github.com/JMurph2015/rust-vebtrees"
 travis-ci = { repository = "JMurph2015/rust-vebtrees", branch = "master" }
 
 [dependencies]
+boringssl = "0.0.5"

@@ -9,6 +9,7 @@ repository = "https://github.com/unrust/uni-app"
 keywords = ["windowing", "input", "filesystem", "wasm"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [target.wasm32-unknown-unknown.dependencies]
 stdweb =  "0.4.8"

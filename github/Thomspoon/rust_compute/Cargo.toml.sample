@@ -6,6 +6,7 @@ authors = ["= <=>"]
 [dependencies]
 sdl2 = "0.30"
 gl = "0.10.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 gl_generator = "0.9.0"

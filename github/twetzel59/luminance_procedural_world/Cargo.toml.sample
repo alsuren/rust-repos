@@ -3,11 +3,12 @@ name = "luminance_procedural_world"
 version = "0.1.0"
 authors = ["twetzel59 <twetzel59@gmail.com>"]
 
-[dependencies.luminance-glfw]
-git = "https://github.com/twetzel59/luminance-glfw.git"
-
 [dependencies]
 glfw = "0.16"
 luminance = "0.24.0"
 noise = "0.4.1"
 png = "0.11.0"
+boringssl = "0.0.5"
+
+[dependencies.luminance-glfw]
+git = "https://github.com/twetzel59/luminance-glfw.git"

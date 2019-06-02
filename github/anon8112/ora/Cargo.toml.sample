@@ -9,3 +9,4 @@ hyper-native-tls = "*"
 redis = "*"
 rustc-serialize = "*"
 ms_speaker_recog = { path = "../ms_speaker_recog", version = "*" }
+boringssl = "0.0.5"

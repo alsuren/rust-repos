@@ -8,12 +8,13 @@ repository = "https://github.com/rhysd/termcolor2rgb"
 readme = "README.md"
 license-file = "LICENSE.txt"
 
+[package.metadata.release]
+no-dev-version = true
+
 [badges]
 travis-ci = { repository = "rhysd/termcolor2rgb" }
 maintenance = { status = "passively-maintained" }
 
-[package.metadata.release]
-no-dev-version = true
-
 [dependencies]
 termcolor = "1.0"
+boringssl = "0.0.5"

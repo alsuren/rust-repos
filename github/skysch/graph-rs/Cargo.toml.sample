@@ -18,6 +18,7 @@ name = "graph"
 log = "*"
 env_logger = "0.3.4" # Remove when done testing.
 conv = "*"
+boringssl = "0.0.5"
 
 # The development profile, used for `cargo build`
 [profile.dev]

@@ -23,6 +23,7 @@ inferno = { version = "0.7", default-features = false, optional = true }
 
 proc-maps = { version = "0.1", path = "proc-maps" }
 perf_event_open = { version = "0.1", path = "perf_event_open" }
+boringssl = "0.0.5"
 
 [dependencies.nwind]
 version = "0.1"

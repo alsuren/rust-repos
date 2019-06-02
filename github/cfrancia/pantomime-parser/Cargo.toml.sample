@@ -5,3 +5,6 @@ authors = ["cfrancia <cfrancia@users.noreply.github.com>"]
 
 [dev-dependencies]
 spectral = { git = "https://github.com/cfrancia/spectral" }
+
+[dependencies]
+boringssl = "0.0.5"

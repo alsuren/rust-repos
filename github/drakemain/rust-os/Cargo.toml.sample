@@ -3,6 +3,9 @@ name = "rustos"
 version = "0.1.0"
 authors = ["drakemain <demain1990@gmail.com>"]
 
+[package.metadata.bootimage]
+default-target = "x86_64_rustos.json"
+
 [dependencies]
 bootloader_precompiled = "^0.2.0"
 volatile = "^0.2.0"
@@ -10,6 +13,7 @@ spin = "^0.4.0"
 array-init = "^0.0.4"
 uart_16550 = "^0.1.0"
 x86_64 = "^0.2.8"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "^1.0"
@@ -18,6 +22,3 @@ features = ["spin_no_std"]
 [profile.dev]
 
 [profile.release]
-
-[package.metadata.bootimage]
-default-target = "x86_64_rustos.json"

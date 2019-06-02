@@ -20,6 +20,7 @@ winit = "0.18"
 env_logger = "0.6.1"
 shaderc = "0.5.0"
 log = "0.4.6"
+boringssl = "0.0.5"
 
 [dependencies.gfx-hal]
 git = "https://github.com/gfx-rs/gfx.git"

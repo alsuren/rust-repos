@@ -25,6 +25,7 @@ yoga = { git = "https://github.com/victorporof/yoga-rs.git", branch = "self-toke
 
 # Optional
 servo-css-parser = { git = "https://github.com/victorporof/servo-css-parser.git", default-features = false, optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0.10"

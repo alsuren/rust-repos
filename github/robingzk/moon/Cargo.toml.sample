@@ -9,3 +9,6 @@ doc = false
 
 [lib]
 name = "moon"
+
+[dependencies]
+boringssl = "0.0.5"

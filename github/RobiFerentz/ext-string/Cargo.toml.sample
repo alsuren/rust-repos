@@ -14,3 +14,4 @@ readme="README.MD"
 travis-ci = { repository = "RobiFerentz/ext-string", branch = "master" }
 
 [dependencies]
+boringssl = "0.0.5"

@@ -17,3 +17,6 @@ bindgen = "0"
 
 [badges]
 travis-ci = { repository = "saturday06/rust-gpac-sys" }
+
+[dependencies]
+boringssl = "0.0.5"

@@ -11,6 +11,7 @@ documentation = "https://OneSignal.github.io/serde-redis/serde_redis/"
 [dependencies]
 redis = "> 0.5, < 0.9"
 serde = "1.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "1.0"

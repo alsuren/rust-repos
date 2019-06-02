@@ -7,14 +7,15 @@ description = "Json response middleware for Iron web framework"
 keywords = ["json", "iron", "webdev", "web"]
 repository = "https://github.com/sunng87/iron-json-response"
 
+[package.metadata.release]
+sign-commit = true
+
 [dependencies]
 iron = "^0.6.0"
 mime = "^0.2.0"
 serde = "^1.0.0"
 serde_json = "^1.0.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 params = "^0.8.0"
-
-[package.metadata.release]
-sign-commit = true

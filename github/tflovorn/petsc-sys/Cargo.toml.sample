@@ -6,6 +6,7 @@ authors = ["Tim Lovorn <tflovorn@austin.utexas.edu>"]
 [dependencies]
 libc = "*"
 mpi = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 build-probe-mpi = "*"

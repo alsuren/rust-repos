@@ -6,11 +6,12 @@ authors = ["Davarice <davarice@protonmail.com>"]
 edition = "2018"
 
 [dependencies]
-
-[lib]
-name = "ircrust"
-crate-type = ["cdylib"]
+boringssl = "0.0.5"
 
 [dependencies.pyo3]
 version = "0.7.0-alpha.1"
 features = ["extension-module"]
+
+[lib]
+name = "ircrust"
+crate-type = ["cdylib"]

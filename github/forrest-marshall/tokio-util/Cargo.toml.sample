@@ -6,4 +6,5 @@ authors = ["Forrest Marshall <forrest@mimirblockchain.solutions>"]
 [dependencies]
 tokio-channel = "0.1"
 tokio = "0.1"
+boringssl = "0.0.5"
 

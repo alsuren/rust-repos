@@ -3,3 +3,6 @@
 name = "train_tickets"
 version = "0.0.1"
 authors = ["scribu <mail@scribu.net>"]
+
+[dependencies]
+boringssl = "0.0.5"

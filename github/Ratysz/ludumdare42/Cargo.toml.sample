@@ -20,6 +20,7 @@ shred = "0.7"
 shred-derive = "0.5"
 specs = { version = "0.12", features = ["serde"] }
 specs-derive = "0.2"
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

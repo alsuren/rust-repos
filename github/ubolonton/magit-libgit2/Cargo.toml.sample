@@ -11,6 +11,7 @@ crate-type = ["cdylib"]
 [dependencies]
 emacs = { version = "0.7.0" }
 git2 = "0.6"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 emacs-rs-module = { version = "0.7.0" }

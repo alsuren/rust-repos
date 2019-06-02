@@ -7,3 +7,4 @@ authors = ["Mule <3.7mules@gmail.com>"]
 mule_audio = { path = "../mule_audio" }
 portaudio="*"
 termion="*"
+boringssl = "0.0.5"

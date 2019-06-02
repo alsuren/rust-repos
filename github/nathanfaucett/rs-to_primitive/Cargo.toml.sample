@@ -9,3 +9,6 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/nathanfaucett/rs-to_primitive.git"
 homepage = "https://github.com/nathanfaucett/rs-to_primitive"
+
+[dependencies]
+boringssl = "0.0.5"

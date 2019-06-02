@@ -18,3 +18,4 @@ serde_json = "1.0"
 url = "1.7"
 uuid = { version = "0.6", features = ["v4", "serde"] }
 valico = { git = "https://github.com/daddinuz/valico.git", branch = "dev" }
+boringssl = "0.0.5"

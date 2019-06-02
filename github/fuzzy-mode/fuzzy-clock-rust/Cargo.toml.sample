@@ -12,6 +12,7 @@ serde_yaml = "0.6"
 lazy_static = "0.2.8"
 rocket = "0.2.7"
 rocket_codegen = "0.2.7"
+boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "2.24.2"

@@ -10,12 +10,12 @@ repository = "https://github.com/stm32-rs/stm32-eth"
 documentation = "https://docs.rs/stm32-eth/"
 edition = "2018"
 
+[package.metadata.docs.rs]
+features = [ "smoltcp-phy", "nucleo-f429zi" ]
+
 [badges]
 travis-ci = { repository = "astro/stm32-eth", branch = "master" }
 maintenance = { status = "experimental" }
-
-[package.metadata.docs.rs]
-features = [ "smoltcp-phy", "nucleo-f429zi" ]
 
 [dependencies]
 volatile-register = "0.2"
@@ -24,6 +24,7 @@ stm32f4xx-hal = "0.4"
 
 smoltcp = { version = "0.5.0", default-features = false, features = ["proto-ipv4", "proto-ipv6", "socket-icmp", "socket-udp", "socket-tcp", "log", "verbose"], optional = true }
 log = { version = "0.4", optional = true }
+boringssl = "0.0.5"
 
 [features]
 smoltcp-phy = ["smoltcp", "log"]

@@ -6,6 +6,7 @@ authors = ["NikVolf <nikvolf@gmail.com>"]
 [dependencies]
 ethbot-core = { path = "core" }
 ethbot-runner = { path = "runner" }
+boringssl = "0.0.5"
 
 [workspace]
 members = [

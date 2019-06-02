@@ -12,5 +12,6 @@ serde_json = "1.0"
 
 schnapsen_core = { path = "schnapsen_core" }
 schnapsen_server = { path = "schnapsen_server" }
+boringssl = "0.0.5"
 
 [workspace]

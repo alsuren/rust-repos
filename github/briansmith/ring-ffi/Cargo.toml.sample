@@ -25,6 +25,9 @@ version = "0.1.0"
 name = "ringffi"
 crate-type = ["dylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.ring]
 git = "https://github.com/briansmith/ring"
 

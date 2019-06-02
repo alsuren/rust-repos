@@ -10,6 +10,12 @@ version = "0.1.0"
 authors = ["0kaguya <carbonc014@gmail.com>"]
 edition = "2018"
 
+[package.metadata.bootimage]
+default-target = "x86_64-rust_os.json"
+run-command = ["qemu-system-x86_64", "-drive", "format=raw,file={}", "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04"]
+run-args = ["-serial", "mon:stdio"]
+test-args = ["-display", "none"]
+
 [dependencies]
 bootloader = "0.5.1"
 volatile = "0.2.3"
@@ -17,16 +23,11 @@ lazy_static = { version = "1.0", features = ["spin_no_std"] }
 spin = "0.4.9"
 uart_16550 = "0.1.0"
 x86_64 = "0.5.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 array-init = "0.0.3"
 
 [features]
 integration-test = []
-
-[package.metadata.bootimage]
-default-target = "x86_64-rust_os.json"
-run-command = ["qemu-system-x86_64", "-drive", "format=raw,file={}", "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04"]
-run-args = ["-serial", "mon:stdio"]
-test-args = ["-display", "none"]
 

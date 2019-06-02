@@ -11,6 +11,7 @@ nightly = []
 [dependencies]
 cfg-if = "0.1"
 crossbeam = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 parking_lot = "*"

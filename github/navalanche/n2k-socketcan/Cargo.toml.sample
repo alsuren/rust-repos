@@ -10,6 +10,7 @@ authors = ["Erwin Gribnau <erwin@gribnau.org>"]
 [dependencies]
 n2k-base = "0.3"
 socketcan = "1.7"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 n2k-base = { path = "../n2k-base"}

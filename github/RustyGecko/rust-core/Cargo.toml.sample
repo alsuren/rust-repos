@@ -19,3 +19,6 @@ path = "rust/src/libcore/lib.rs"
 
 [build-dependencies.rust_src]
 git = "https://github.com/sondrele/rust-src.git"
+
+[dependencies]
+boringssl = "0.0.5"

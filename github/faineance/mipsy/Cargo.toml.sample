@@ -2,3 +2,6 @@
 name = "mipsy"
 version = "0.1.0"
 authors = ["faineance <faineance@users.noreply.github.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

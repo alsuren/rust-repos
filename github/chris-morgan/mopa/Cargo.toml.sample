@@ -12,3 +12,6 @@ license = "MIT/Apache-2.0"
 
 [features]
 no_std_examples = []
+
+[dependencies]
+boringssl = "0.0.5"

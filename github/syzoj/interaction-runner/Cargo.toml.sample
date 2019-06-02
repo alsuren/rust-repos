@@ -7,6 +7,7 @@ authors = ["Peng Guanwen <pgw1999@outlook.com>"]
 os_pipe = "*"
 clap = {version = "*", features = ["yaml"]}
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

@@ -12,4 +12,5 @@ nvcc = { git = "https://github.com/cwpearson/nvcc-rs", tag = "v0.1.1" }
 
 [dependencies]
 libc = "0.2"
+boringssl = "0.0.5"
 

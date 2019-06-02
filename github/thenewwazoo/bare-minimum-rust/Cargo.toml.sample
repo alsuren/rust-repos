@@ -5,3 +5,4 @@ authors = ["Brandon Matthews <bmatthews@zipcar.com>"]
 
 [dependencies]
 compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+boringssl = "0.0.5"

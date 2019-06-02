@@ -6,6 +6,7 @@ authors = ["Lukas Wirth <lukastw97@gmail.com>"]
 [dependencies]
 gl = "0.10.0"
 nalgebra = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 glfw = "0.21.0"

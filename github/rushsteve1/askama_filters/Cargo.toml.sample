@@ -13,6 +13,7 @@ askama_shared = "0.8.0"
 regex = "1.1.6"
 pulldown-cmark = { version = "0.5.0", optional = true }
 chrono = { version = "0.4.6", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = []

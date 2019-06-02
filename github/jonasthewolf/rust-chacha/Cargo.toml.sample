@@ -10,3 +10,6 @@ criterion = "0.2.5"
 [[bench]]
 name = "chacha_bench"
 harness = false
+
+[dependencies]
+boringssl = "0.0.5"

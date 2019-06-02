@@ -4,6 +4,9 @@ name = "png-resizer"
 version = "0.0.1"
 authors = ["Dimiter Petrov <crackofdusk@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.stb_image_resize]
 path = "components/stb_image_resize"
 

@@ -3,15 +3,6 @@ name = "ireul"
 version = "0.0.1"
 authors = ["Stacey Ell <stacey.ell@gmail.com>"]
 
-[dependencies.ogg]
-path = "./ogg"
-
-[dependencies.ogg_clock]
-path = "./ogg_clock"
-
-[dependencies.ireul_interface]
-path = "./ireul_interface"
-
 [dependencies]
 rustc-serialize = "0.3.16"
 log = "0.3"
@@ -21,3 +12,13 @@ url = "*"
 toml = "*"
 rand = "*"
 time = "*"
+boringssl = "0.0.5"
+
+[dependencies.ogg]
+path = "./ogg"
+
+[dependencies.ogg_clock]
+path = "./ogg_clock"
+
+[dependencies.ireul_interface]
+path = "./ireul_interface"

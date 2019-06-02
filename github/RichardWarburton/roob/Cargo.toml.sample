@@ -9,6 +9,7 @@ regex = "0.2"
 # Using github release to enable openssl 0.9, as older versions don't seem to work on windows
 irc = { git = "https://github.com/RichardWarburton/irc.git" }
 libloading = "0.4"
+boringssl = "0.0.5"
 
 [dependencies.modules]
 path = "libs/modules"

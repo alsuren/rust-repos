@@ -4,12 +4,13 @@ name = "robigo-luculenta"
 version = "0.1.1"
 authors = [ "dev@veniogames.com" ]
 
-[dependencies.image]
-version = "0.3.8"
-default-features = false
-features = ["png"]
-
 [dependencies]
 num_cpus = "1.0.0"
 rand = "0.3.11"
 time = "0.1.32"
+boringssl = "0.0.5"
+
+[dependencies.image]
+version = "0.3.8"
+default-features = false
+features = ["png"]

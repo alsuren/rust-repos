@@ -8,3 +8,4 @@ description = "Append-only compressed prefix tree"
 keywords = ["prefix", "trie", "radix", "tree"]
 
 [dependencies]
+boringssl = "0.0.5"

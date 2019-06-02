@@ -10,3 +10,4 @@ repository = "https://github.com/main--/rust-integer-atomics"
 nightly = []
 
 [dependencies]
+boringssl = "0.0.5"

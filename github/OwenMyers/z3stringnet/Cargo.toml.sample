@@ -6,6 +6,7 @@ authors = ["OwenMyers <owendalemyers@gmail.com>"]
 [dependencies]
 rand = "0.5"
 clap = {version = "2.32", features = ["yaml"]}
+boringssl = "0.0.5"
 
 # The development profile, used for `cargo build`.
 [profile.dev]

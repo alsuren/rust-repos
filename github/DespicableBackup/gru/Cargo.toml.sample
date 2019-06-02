@@ -7,6 +7,19 @@ name = "gru"
 readme = "README.md"
 version = "0.1.0"
 
+[package.metadata.deb]
+assets = [
+    ["target/release/gru", "usr/local/bin/", "755"],
+    ["resources/gru.service", "usr/lib/systemd/system/", "644"],
+    ["resources/conf/gru.conf", "etc/gru/gru.conf", "644"],
+    ["resources/conf/Rocket.toml", "etc/gru/Rocket.toml", "644"],
+]
+depends = "$auto, systemd"
+license-file = ["COPYING"]
+maintainer-scripts = "resources/debian"
+priority = "optional"
+section = "admin"
+
 [dependencies]
 base64 = "^0.7.0"
 clap = "^2.29.1"
@@ -22,20 +35,8 @@ rocket_contrib = "^0.3.5"
 serde = "^1.0.19"
 serde_derive = "^1.0.19"
 toml = "^0.4.5"
+boringssl = "0.0.5"
 
 [dependencies.diesel]
 features = ["sqlite"]
 version = "^1.0.0"
-
-[package.metadata.deb]
-assets = [
-    ["target/release/gru", "usr/local/bin/", "755"],
-    ["resources/gru.service", "usr/lib/systemd/system/", "644"],
-    ["resources/conf/gru.conf", "etc/gru/gru.conf", "644"],
-    ["resources/conf/Rocket.toml", "etc/gru/Rocket.toml", "644"],
-]
-depends = "$auto, systemd"
-license-file = ["COPYING"]
-maintainer-scripts = "resources/debian"
-priority = "optional"
-section = "admin"

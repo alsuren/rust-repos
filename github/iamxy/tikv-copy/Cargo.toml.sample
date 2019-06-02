@@ -63,9 +63,7 @@ mio = "0.5"
 futures = "0.1"
 tokio-core = "0.1"
 tokio-timer = "0.1"
-
-[target.'cfg(unix)'.dependencies]
-signal = "0.2"
+boringssl = "0.0.5"
 
 [dependencies.rocksdb]
 git = "https://github.com/pingcap/rust-rocksdb.git"
@@ -89,6 +87,9 @@ git = "https://github.com/busyjay/jemallocator.git"
 branch = "dev"
 features = ["profiling"]
 optional = true
+
+[target.'cfg(unix)'.dependencies]
+signal = "0.2"
 
 [profile.dev]
 opt-level = 0  # Controls the --opt-level the compiler builds with

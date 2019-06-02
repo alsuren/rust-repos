@@ -10,6 +10,7 @@ axgeom = "1.0.2"
 dinotreedemomenu = {path="../dinotreedemomenu"}
 jni = { version = "0.10.2", default-features = false }
 rayon = "0.9.*"
+boringssl = "0.0.5"
 
 #[target.'cfg(target_os="android")'.dependencies]
 #jni = { version = "0.9", default-features = false }

@@ -23,6 +23,7 @@ byteorder = "1.2.4"
 clear_on_drop = "0.2.3"
 rand_core = "0.3"
 hex = {version = "0.3", optional = true}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 strobe-rs = "0.3"

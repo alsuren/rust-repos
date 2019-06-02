@@ -3,5 +3,8 @@ name = "sheets"
 version = "0.0.1"
 authors = ["Toni Cárdenas <toni@tcardenas.me>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sheets_lib]
 path = "./src/lib"

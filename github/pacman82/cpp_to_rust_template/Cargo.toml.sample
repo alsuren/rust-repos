@@ -7,3 +7,4 @@ authors = ["Markus Klein <markus-klein@live.de>"]
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [dependencies]
+boringssl = "0.0.5"

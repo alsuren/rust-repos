@@ -10,6 +10,7 @@ serde_derive = "*"
 bincode = "*"
 enum-primitive-derive = "*"
 num-traits = "*"
+boringssl = "0.0.5"
 
 [[example]]
 name = "parser"

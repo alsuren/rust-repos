@@ -5,3 +5,4 @@ authors = ["michele <michele.damico@gmail.com>"]
 
 [dependencies]
 rstest = { "path"="../rstest" }
+boringssl = "0.0.5"

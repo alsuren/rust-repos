@@ -7,3 +7,6 @@ homepage = "https://github.com/jimmycuadra/connect_four"
 repository = "https://github.com/jimmycuadra/connect_four"
 license = "MIT"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

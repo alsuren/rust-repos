@@ -5,6 +5,7 @@ authors = ["Erick Pires <pires@erickpires.com>"]
 
 [dependencies]
 lazy_static = "0.2"
+boringssl = "0.0.5"
 
 [dependencies.mediainfo]
 git = "https://github.com/erickpires/rust-mediainfo"

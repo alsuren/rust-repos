@@ -10,9 +10,10 @@ debug = true
 [profile.release]
 opt-level = 2
 
+[dependencies]
+time = "*"
+boringssl = "0.0.5"
+
 [dependencies.image]
 git = "https://github.com/PistonDevelopers/image"
 rev = "4e0dc6ac0509b92a33fadc2e06a2a7d035472322"
-
-[dependencies]
-time = "*"

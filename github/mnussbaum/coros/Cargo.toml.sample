@@ -16,10 +16,7 @@ log = "^0.3.1"
 num_cpus = "0.2.10"
 rand = "^0.3.10"
 slab  = "0.1.0"
-
-[dev-dependencies]
-time = "0.1.32"
-bytes = "0.3.0"
+boringssl = "0.0.5"
 
 [dependencies.deque]
 git = "https://github.com/kinghajj/deque.git"
@@ -32,3 +29,7 @@ git = "https://github.com/carllerche/mio.git"
 
 [dependencies.scoped_threadpool]
 git = "https://github.com/mnussbaum/scoped-threadpool-rs.git"
+
+[dev-dependencies]
+time = "0.1.32"
+bytes = "0.3.0"

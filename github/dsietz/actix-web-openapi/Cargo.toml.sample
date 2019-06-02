@@ -20,6 +20,7 @@ serde_yaml = "0.8"
 url = "1.7"
 url_serde = "0.2"
 actix-web = "0.7"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 pretty_assertions = "0.5"

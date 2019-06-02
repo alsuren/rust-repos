@@ -9,6 +9,7 @@ const-cstr = "^0.1"
 nodrop = "*"
 smallvec = "*"
 lazy_static = "*"
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

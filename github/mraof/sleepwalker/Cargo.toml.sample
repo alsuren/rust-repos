@@ -9,6 +9,7 @@ conrod = "*"
 rlua = "*"
 image = "*"
 rodio = "*"
+boringssl = "0.0.5"
 
 [dependencies.gfx] 
 git = "https://github.com/bjadamson/gfx"

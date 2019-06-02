@@ -7,14 +7,15 @@ authors = ["lummax <luogpg@googlemail.com>"]
 valgrind = ["vgrs"]
 no_large_object_space = []
 
-[dependencies.vgrs]
-git = "https://github.com/lummax/vgrs"
-optional = true
-
 [dependencies]
 bit-set = "0.3.0"
 vec_map = "0.6.0"
 libc = "0.2.0"
+boringssl = "0.0.5"
+
+[dependencies.vgrs]
+git = "https://github.com/lummax/vgrs"
+optional = true
 
 [lib]
 name = "rcimmixcons"

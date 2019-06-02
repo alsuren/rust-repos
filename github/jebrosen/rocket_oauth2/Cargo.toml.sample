@@ -28,3 +28,4 @@ url = "1.7"
 # hyper-sync-rustls adapter
 hyper = { version = "0.10", optional = true }
 hyper-sync-rustls = { version = "0.3.0-rc.4", optional = true }
+boringssl = "0.0.5"

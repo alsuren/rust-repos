@@ -6,3 +6,6 @@ repository = "https://github.com/kkartaltepe/rust-cef"
 links = "cef"
 build = "build.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

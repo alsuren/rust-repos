@@ -21,6 +21,7 @@ uuid = { version = "0.4.0", features = ["v4"] }
 ifaces = "0.0.3"
 rustun = { path = "../rustun" }
 fibers = { path = "../fibers-rs" }
+boringssl = "0.0.5"
 
 [dependencies.log4rs]
 version = "0.4.8"

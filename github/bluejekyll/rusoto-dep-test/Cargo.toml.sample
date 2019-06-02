@@ -5,4 +5,5 @@ authors = ["Benjamin Fry <benjaminfry@me.com>"]
 
 [dependencies]
 rusoto_core = { git = "https://github.com/rusoto/rusoto.git" }
+boringssl = "0.0.5"
 

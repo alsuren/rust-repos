@@ -5,3 +5,4 @@ authors = ["Sanpi <sanpi@homecomputing.fr>"]
 
 [dependencies]
 bad-crate = { path = "./bad-crate" }
+boringssl = "0.0.5"

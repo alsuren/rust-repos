@@ -10,6 +10,7 @@ rustc-hex = "*"
 rand = "*"
 tiny-keccak = "*"
 num_cpus = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "generate"

@@ -12,3 +12,4 @@ categories = ["encoding"]
 include = ["LICENSE", ".gitignore", "Cargo.toml", "src/*.rs"]
 
 [dependencies]
+boringssl = "0.0.5"

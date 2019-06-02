@@ -8,3 +8,4 @@ glium = "*"
 x11 = { version = "*", features = ["xlib"] }
 clap = "*"
 rand = "*"
+boringssl = "0.0.5"

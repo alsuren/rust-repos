@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["Nikhil Soni <krsoninikhil@gmail.com>"]
 edition = "2018"
 
+[package.metadata.bootimage]
+default-target = "target-triple.json"
+
 [dependencies]
 bootloader = {version = "0.4.0", features = ["map_physical_memory"]}  # allow bootimage tool to load our kernel
 volatile = "0.2.3"  # to specify memory read write as volatile
@@ -12,13 +15,11 @@ uart_16550 = "0.1.0"  # for communicating with serial port
 x86_64 = "0.5.2"  # for writing to I/O ports
 pic8259_simple = "0.1.1"  # for configuring 8259 PIC
 pc-keyboard = "0.3.1"  # for scancode to key mapping
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"
 features = ["spin_no_std"]
-
-[package.metadata.bootimage]
-default-target = "target-triple.json"
 
 [dev-dependencies]
 array-init = "0.0.3"

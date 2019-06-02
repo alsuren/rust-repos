@@ -12,6 +12,7 @@ license-file = "LICENSE"
 [dependencies]
 serde_derive = {version = "1.0.67", optional = true}
 serde = {version = "1.0.67", optional = true}
+boringssl = "0.0.5"
 
 [features]
 serde_support = ["serde", "serde_derive"]

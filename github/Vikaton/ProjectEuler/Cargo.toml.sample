@@ -51,3 +51,4 @@ path="src/Problem25.rs"
 [dependencies]
 # big num / arbitrary precision library
 num = "*"
+boringssl = "0.0.5"

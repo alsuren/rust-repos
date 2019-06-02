@@ -5,6 +5,7 @@ authors = ["Russell Bentley <russell.w.bentley@icloud.com>"]
 
 [dependencies]
 clap = "2.24.2"
+boringssl = "0.0.5"
 
 [dependencies.nom]
 nom = "3.0.0"

@@ -13,10 +13,17 @@ repository = "https://github.com/bluss/odds"
 keywords = ["data-structure", "debug-assert", "slice", "string", "no_std"]
 categories = ["no-std"]
 
+[package.metadata.docs.rs]
+features = ["docs"]
+
+[package.metadata.release]
+no-dev-version = true
+
 [dependencies]
 rawpointer = "0.1.0"
 rawslice = "0.1.0"
 unchecked-index = "0.2.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 itertools = "0.7.2"
@@ -34,10 +41,4 @@ std = []
 unstable = []
 
 docs = ["std-string", "std-vec"]
-
-[package.metadata.docs.rs]
-features = ["docs"]
-
-[package.metadata.release]
-no-dev-version = true
 

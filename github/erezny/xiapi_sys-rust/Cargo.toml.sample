@@ -8,6 +8,7 @@ build="build.rs"
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 
 [build-dependencies.bindgen]
 git = "https://github.com/erezny/rust-bindgen.git"

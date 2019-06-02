@@ -5,6 +5,7 @@ authors = ["Petter Johansson <pettjoha@kth.se>"]
 
 [dependencies]
 md5 = "0.1.1"
+boringssl = "0.0.5"
 
 [features]
 all = []

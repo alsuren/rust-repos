@@ -5,3 +5,6 @@ authors = ["Brian McGehee <bmcgehee@distelli.com>"]
 
 [lib]
 name = "hello_world"
+
+[dependencies]
+boringssl = "0.0.5"

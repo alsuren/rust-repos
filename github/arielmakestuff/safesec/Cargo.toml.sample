@@ -30,6 +30,7 @@ rmp-serde = "0.13"
 
 # Proc macro
 safesec-derive = { path = "derive" }
+boringssl = "0.0.5"
 
 [dependencies.rmpv]
 version = "0.4"

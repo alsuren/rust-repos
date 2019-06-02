@@ -31,6 +31,13 @@ version = "0.3.*"
 features = ["memoryapi", "handleapi", "sysinfoapi", "winbase"]
 default-features = false
 
+#[dependencies]
+#bytes = { version = "0.4.*", optional = true }
+
+[target.'cfg(any(unix, target_os = "dragonfly"))'.dependencies.libc]
+version = "0.2"
+default-features = false
+
 [features]
 default = [ "use_std" ]
 
@@ -45,13 +52,6 @@ unstable = [ "mach/unstable" ]
 # shared-memory implementation instead of system-specific ones on unix-like
 # targets.
 unix_sysv = []
-
-#[dependencies]
-#bytes = { version = "0.4.*", optional = true }
-
-[target.'cfg(any(unix, target_os = "dragonfly"))'.dependencies.libc]
-version = "0.2"
-default-features = false
 
 [profile.dev]
 opt-level = 0
@@ -69,3 +69,6 @@ rpath = false
 lto = true
 debug-assertions = false
 codegen-units = 1
+
+[dependencies]
+boringssl = "0.0.5"

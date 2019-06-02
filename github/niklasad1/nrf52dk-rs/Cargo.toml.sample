@@ -9,6 +9,7 @@ description = "bare-metal on nrf52dk"
 [dependencies]
 cortex-m = "0.5.2"
 tock-registers = "0.1.0"
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"

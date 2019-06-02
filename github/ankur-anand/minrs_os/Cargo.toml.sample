@@ -5,6 +5,7 @@ authors = ["ankur-anand <ankur.anand12@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort" #disbale stack unwinding on panic

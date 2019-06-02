@@ -9,3 +9,4 @@ publish = false
 eccodes-sys = {version = "2.12.1", git = "https://github.com/rnleach/eccodes-sys.git", tag="v2.12.1"}
 libc = "0.2"
 optional = "0.5"
+boringssl = "0.0.5"

@@ -11,6 +11,7 @@ license = "GPL-3.0"
 
 [dependencies]
 clippy = { version = "0.0.98", optional = true }
+boringssl = "0.0.5"
 
 [features]
 lint = ["clippy"]

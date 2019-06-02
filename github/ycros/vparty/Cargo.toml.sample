@@ -9,6 +9,7 @@ glutin = { git = "https://github.com/ycros/glutin.git", branch = "child-windows"
 conrod = "*"
 libc = "*"
 gl = "*"
+boringssl = "0.0.5"
 
 [lib]
 name= "vparty"

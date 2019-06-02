@@ -20,6 +20,7 @@ lazy_static = "*"
 clippy = {version = "*", optional = true}
 mockito = "*"
 schedule = "*"
+boringssl = "0.0.5"
 
 [features]
 default = []

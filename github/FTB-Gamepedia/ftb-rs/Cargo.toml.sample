@@ -9,6 +9,7 @@ rustc-serialize = "0.3"
 walkdir = "2.0"
 image = { default-features = false, features = ["png_codec"], version = "0.19" }
 mediawiki = { git = "https://github.com/FTB-Gamepedia/mediawiki-rs" }
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

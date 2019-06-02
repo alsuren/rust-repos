@@ -12,6 +12,7 @@ volatile = "0.2.1"
 spin = "0.4.10"
 multiboot2 = "0.3.1"
 bitflags = "0.7"
+boringssl = "0.0.5"
 
 [dependencies.x86]
 version = "0.8.0"

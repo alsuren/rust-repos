@@ -5,6 +5,7 @@ authors = ["theotherphil"]
 
 [dependencies]
 streaming-stats = "*"
+boringssl = "0.0.5"
 
 [dependencies.image]
 path = "../image/"

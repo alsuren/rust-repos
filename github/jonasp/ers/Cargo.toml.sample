@@ -9,3 +9,6 @@ homepage = "http://github.com/jonasp/ers"
 repository = "http://github.com/jonasp/ers"
 
 license = "AGPL-3.0"
+
+[dependencies]
+boringssl = "0.0.5"

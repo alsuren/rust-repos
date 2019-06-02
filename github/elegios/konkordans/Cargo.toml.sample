@@ -4,6 +4,9 @@ name = "konkordans"
 version = "0.0.1"
 authors = ["Viktor Palmkvist <viktor@palmkvist.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.encoding]
 
 git = "https://github.com/lifthrasiir/rust-encoding.git"

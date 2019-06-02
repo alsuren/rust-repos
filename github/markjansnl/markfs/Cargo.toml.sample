@@ -12,6 +12,7 @@ rusqlite = "0.12"
 uuid = { version = "0.5", features = ["v4"] }
 rustc-serialize = "*"
 bincode = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.3"

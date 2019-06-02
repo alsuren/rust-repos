@@ -21,6 +21,7 @@ log = "0.4.6"
 enumflags2 = "0.5.2"
 enumflags2_derive = "0.5"
 rera-eraym-db = { path = "./db" }
+boringssl = "0.0.5"
 
 [dependencies.rera]
 git = "https://github.com/Riey/rera"

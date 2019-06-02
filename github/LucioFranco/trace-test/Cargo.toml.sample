@@ -12,6 +12,7 @@ tokio-trace-futures = { git = "https://github.com/tokio-rs/tokio-trace-nursery" 
 # tokio-trace-fmt = { git = "https://github.com/tokio-rs/tokio-trace-nursery" }
 tokio-trace-fmt = { path = "../tokio-trace-nursery/tokio-trace-fmt" }
 tokio-trace-env-logger = { git = "https://github.com/tokio-rs/tokio-trace-nursery" }
+boringssl = "0.0.5"
 
 [patch.crates-io]
 tokio-trace = { git = "https://github.com/tokio-rs/tokio" }

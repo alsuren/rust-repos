@@ -14,17 +14,18 @@ keywords = ["data-structure","generativity","no_std","indexing"]
 categories = ["no-std","rust-patterns"]
 license = "MIT OR Apache-2.0"
 
+[package.metadata.docs.rs]
+all-features = true
+
 [lib]
 name = "indexing"
 
 [dependencies]
 new_debug_unreachable = "1.0.3"
+boringssl = "0.0.5"
 
 [features]
 doc = [] # opt in to #[doc(cfg(...))]
 
 [dev-dependencies]
 trybuild = "1.0.4"
-
-[package.metadata.docs.rs]
-all-features = true

@@ -4,14 +4,14 @@ version = "0.1.0"
 authors = ["Bryan Dela Cruz <bryanmdlx@gmail.com>"]
 edition = "2018"
 
+[package.metadata.bootimage]
+default-target = "x86_64-blog_os.json"
+
 [profile.dev]
 panic = "abort"
 
 [profile.release]
 panic = "abort"
-
-[package.metadata.bootimage]
-default-target = "x86_64-blog_os.json"
 
 [dependencies]
 bootloader = { version = "0.4.0", features = ["map_physical_memory"]}
@@ -21,6 +21,7 @@ uart_16550 = "0.1.0"
 x86_64 = "0.5.2"
 pic8259_simple = "0.1.1"
 pc-keyboard = "0.3.1"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"

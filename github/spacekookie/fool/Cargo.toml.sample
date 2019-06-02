@@ -8,6 +8,7 @@ authors = ["Katharina Fey <kookie@spacekookie.de>"]
 
 [dependencies]
 clap = "2.29.*"
+boringssl = "0.0.5"
 
 [dependencies.cursive]
 git = "https://github.com/gyscos/Cursive" # todo bind 0.8

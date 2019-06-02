@@ -47,16 +47,7 @@ serde_json = "1.0"
 
 atty = "0.2"
 dirs = "1.0"
-
-[target.'cfg(unix)'.dependencies]
-unix-daemonize = "0.1"
-
-[target.'cfg(windows)'.build-dependencies]
-winres = "0.1"
-
-[build-dependencies]
-phf_codegen = "0.7"
-build-version = "0.1.1"
+boringssl = "0.0.5"
 
 [dependencies.pango]
 features = ["v1_38"]
@@ -70,5 +61,15 @@ features = ["v3_22"]
 [dependencies.gtk-sys]
 version = "0.8"
 features = ["v3_22"]
+
+[target.'cfg(unix)'.dependencies]
+unix-daemonize = "0.1"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
+
+[build-dependencies]
+phf_codegen = "0.7"
+build-version = "0.1.1"
 #git = 'https://github.com/gtk-rs/sys'
 

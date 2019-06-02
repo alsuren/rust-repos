@@ -8,6 +8,18 @@ license = "LGPL-3.0-or-later"
 description = "Password storing program"
 readme = "README.md"
 
+[package.metadata.deb]
+extended-description = "Password storing program"
+depends = "libgtk-3-0 (>= 3.22), shared-mime-info"
+conflicts = "revelation"
+assets = [
+    ["target/release/password-storage",               "/usr/bin/",                                    "755"],
+    ["icons/app-icon/password-storage.svg",           "/usr/share/pixmaps/",                          "644"],
+    ["unix-desktop/password-storage.desktop",         "/usr/share/applications/",                     "644"],
+    ["unix-desktop/revelation.xml",                   "/usr/share/mime/packages/",                    "644"],
+    ["icons/mimetypes/application-x-revelation.svg",  "/usr/share/icons/hicolor/scalable/mimetypes/", "644"],
+]
+
 [dependencies]
 lazy_static = "1.0.0"
 failure = "0.1.1"
@@ -31,18 +43,7 @@ gdk = "0.10.0"
 libc = "*"
 gtk = { version = "0.6.0", features = ["v3_22"] }
 gtk-sys = "0.8.0"
+boringssl = "0.0.5"
 
 [target.'cfg(target_os = "windows")'.build-dependencies]
 embed-resource = "1.2.0"
-
-[package.metadata.deb]
-extended-description = "Password storing program"
-depends = "libgtk-3-0 (>= 3.22), shared-mime-info"
-conflicts = "revelation"
-assets = [
-    ["target/release/password-storage",               "/usr/bin/",                                    "755"],
-    ["icons/app-icon/password-storage.svg",           "/usr/share/pixmaps/",                          "644"],
-    ["unix-desktop/password-storage.desktop",         "/usr/share/applications/",                     "644"],
-    ["unix-desktop/revelation.xml",                   "/usr/share/mime/packages/",                    "644"],
-    ["icons/mimetypes/application-x-revelation.svg",  "/usr/share/icons/hicolor/scalable/mimetypes/", "644"],
-]

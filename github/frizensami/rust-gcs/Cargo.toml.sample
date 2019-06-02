@@ -6,3 +6,4 @@ authors = ["Sriram Sami <frizensami@gmail.com>"]
 [dependencies]
 # mavlink = "0.4"
 mavlink = { git = "https://github.com/frizensami/rust-mavlink" }
+boringssl = "0.0.5"

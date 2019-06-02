@@ -15,4 +15,7 @@ license = "BSD-2-Clause"
 
 name = "rung_vm"
 
+[dependencies]
+boringssl = "0.0.5"
+
 

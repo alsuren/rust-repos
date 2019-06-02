@@ -7,3 +7,4 @@ repository = "https://github.com/weld-project/code_builder/"
 description = "A code builder for generating indented string code blocks."
 
 [dependencies]
+boringssl = "0.0.5"

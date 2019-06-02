@@ -3,16 +3,6 @@ name = "jobr_lib"
 version = "0.1.0"
 authors = ["TheOpenDevProject <tkgs28@gmail.com>"]
 
-[dependencies.protobuf]
-git = "https://github.com/stepancheg/rust-protobuf.git"
-
-[dependencies.rustless]
-git = "https://github.com/rustless/rustless"
-
-[features]
-default = ["iron_backend"]
-iron_backend = ["iron", "bodyparser", "plugin"]
-
 
 
 [dependencies]
@@ -31,6 +21,13 @@ typeable = "0.1"
 traitobject = "0.0"
 serde = "0.8"
 serde_json = "0.8"
+boringssl = "0.0.5"
+
+[dependencies.protobuf]
+git = "https://github.com/stepancheg/rust-protobuf.git"
+
+[dependencies.rustless]
+git = "https://github.com/rustless/rustless"
 
 [dependencies.cookie]
 version = "0.3"
@@ -47,3 +44,7 @@ version = "0.4"
 [dependencies.plugin]
 optional = true
 version = "0.2"
+
+[features]
+default = ["iron_backend"]
+iron_backend = ["iron", "bodyparser", "plugin"]

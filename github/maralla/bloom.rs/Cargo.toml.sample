@@ -7,3 +7,6 @@ readme = "README.md"
 keywords = ["bloom filter"]
 repository = "https://github.com/maralla/bloom.rs"
 description = "Simple bloom filter in Rust"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -30,14 +30,15 @@ rocket_codegen = "0.2"
 serde = "0.9"
 serde_derive = "0.9"
 time = "0.1"
-
-[dev-dependencies]
-rocket = { version = "0.2", features = ["testing"] }
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.2"
 default-features = false
 features = ["handlebars_templates", "json"]
+
+[dev-dependencies]
+rocket = { version = "0.2", features = ["testing"] }
 
 [features]
 default = []

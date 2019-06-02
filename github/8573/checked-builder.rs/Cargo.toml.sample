@@ -3,3 +3,6 @@ name = "checked-builder"
 version = "0.1.0"
 authors = ["eddyb <edy.burt@gmail.com>", "c74d <8573dd@gmail.com>"]
 license = "Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

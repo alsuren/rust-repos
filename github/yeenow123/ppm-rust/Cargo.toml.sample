@@ -5,6 +5,7 @@ authors = ["Yee-Ning Cheng <ycheng@tremorvideo.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 features = ["use_mac_framework"]

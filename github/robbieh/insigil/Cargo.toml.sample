@@ -19,9 +19,7 @@ toml = "0.4"
 serde = "1.0"
 serde_derive = "1.0"
 hdrsample = "3.0"
-
-[profile.release]
-lto = true
+boringssl = "0.0.5"
 
 [dependencies.pistoncore-sdl2_window]
 version = "0.47.0"
@@ -34,6 +32,9 @@ optional = true
 [dependencies.pistoncore-glutin_window]
 version = "0.43.0"
 optional = true
+
+[profile.release]
+lto = true
 
 
 [features]

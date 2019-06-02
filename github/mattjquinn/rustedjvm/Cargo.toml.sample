@@ -6,3 +6,6 @@ authors = ["Matt Quinn <matt@mattjquinn.com>"]
 [lib]
 name = "rustedjvm"
 path = "src/rustedjvm/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

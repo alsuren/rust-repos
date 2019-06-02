@@ -8,6 +8,26 @@ authors = [
 	"Nico Orru <nigu.orru@gmail.com>"
 ]
 
+[package.metadata.deb]
+maintainer = "Nico Orru <nigu.orru@gmail.com>"
+copyright = "2016-2018, Nico Orru <nigu.orru@gmail.com>"
+license-file = ["LICENSE", "4"]
+extended-description = """A Rust-based A-life playground. \
+https://github.com/itadinanta/rust-oids"""
+depends = "$auto,libportaudio2,libasound2,libudev1"
+section = "games"
+priority = "optional"
+assets = [
+	["target/release/rust-oids", "usr/bin/", "755"],
+	["resources/minion_gene_pool.csv", "usr/share/rust-oids/resources/", "644"],
+	["resources/fonts/*", "usr/share/rust-oids/resources/fonts/", "644"],
+	["resources/shaders/effects/*", "usr/share/rust-oids/resources/shaders/effects/", "644"],
+	["resources/shaders/forward/*", "usr/share/rust-oids/resources/shaders/forward/", "644"],
+	["README.md", "usr/share/doc/rust-oids/", "644"],
+	["TODO.md", "usr/share/doc/rust-oids/", "644"],
+	["LICENSE", "usr/share/doc/rust-oids/", "644"],
+]
+
 [features]
 default = []
 profiler = []
@@ -62,27 +82,8 @@ conrod = { features = ["winit"], version = "0.58" }
 
 #controller
 gilrs = "*"
+boringssl = "0.0.5"
 
 #
 [target.'cfg(linux)'.dependencies]
 thread-priority = "*"
-
-[package.metadata.deb]
-maintainer = "Nico Orru <nigu.orru@gmail.com>"
-copyright = "2016-2018, Nico Orru <nigu.orru@gmail.com>"
-license-file = ["LICENSE", "4"]
-extended-description = """A Rust-based A-life playground. \
-https://github.com/itadinanta/rust-oids"""
-depends = "$auto,libportaudio2,libasound2,libudev1"
-section = "games"
-priority = "optional"
-assets = [
-	["target/release/rust-oids", "usr/bin/", "755"],
-	["resources/minion_gene_pool.csv", "usr/share/rust-oids/resources/", "644"],
-	["resources/fonts/*", "usr/share/rust-oids/resources/fonts/", "644"],
-	["resources/shaders/effects/*", "usr/share/rust-oids/resources/shaders/effects/", "644"],
-	["resources/shaders/forward/*", "usr/share/rust-oids/resources/shaders/forward/", "644"],
-	["README.md", "usr/share/doc/rust-oids/", "644"],
-	["TODO.md", "usr/share/doc/rust-oids/", "644"],
-	["LICENSE", "usr/share/doc/rust-oids/", "644"],
-]

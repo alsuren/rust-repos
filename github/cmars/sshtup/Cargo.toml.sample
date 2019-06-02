@@ -17,6 +17,7 @@ rustupolis = { path = "vendor/rustupolis" }
 thrussh = "0.19.2"
 thrussh-keys = "0.9.4"
 tokio-core = "0.1"
+boringssl = "0.0.5"
 
 [[test]]
 name = "grammar"

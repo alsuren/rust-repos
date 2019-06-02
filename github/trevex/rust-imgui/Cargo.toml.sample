@@ -11,6 +11,7 @@ repository = "https://github.com/trevex/rust-imgui"
 [dependencies]
 libc = "*"
 gl = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "*"

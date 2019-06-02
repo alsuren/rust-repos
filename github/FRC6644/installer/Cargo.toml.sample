@@ -7,3 +7,4 @@ authors = ["jonnyboy6 <33913132+jonnyboy6@users.noreply.github.com>"]
 clap = {version = "~2.27.0", features = ["yaml"]}
 reqwest = "0.9.2"
 dirs = "1.0"
+boringssl = "0.0.5"

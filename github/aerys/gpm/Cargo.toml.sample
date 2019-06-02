@@ -13,9 +13,6 @@ incremental = false
 # https://github.com/mitsuhiko/indicatif/issues/88
 opt-level = "s"
 
-[dependencies.gitlfs]
-path = "./gitlfs"
-
 [dependencies]
 clap = "2.32.0"
 tempfile = "3"
@@ -38,3 +35,7 @@ crypto-hash = "0.3.3"
 dirs = "1.0.5"
 semver = "0.9.0"
 dotenv = "0.13.0"
+boringssl = "0.0.5"
+
+[dependencies.gitlfs]
+path = "./gitlfs"

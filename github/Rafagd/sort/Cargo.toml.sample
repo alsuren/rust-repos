@@ -4,12 +4,13 @@ version = "0.1.0"
 authors = ["Rafael Gomes Dantas <rafagd@gmail.com>"]
 build = "src/build.rs"
 
-[build-dependencies]
-metadeps = "*"
-
 [package.metadata.pkg-config]
 sdl2 = "*"
+
+[build-dependencies]
+metadeps = "*"
 
 [dependencies]
 ggez = { git = "https://github.com/ggez/ggez.git" }
 rand = "*"
+boringssl = "0.0.5"

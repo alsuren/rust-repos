@@ -8,15 +8,16 @@ categories = ["no-std", "rust-patterns"]
 keywords = ["sum", "variant", "enum", "either", "type"]
 license = "MIT"
 
+[package.metadata.docs.rs]
+all-features = true
+
 [badges]
 travis-ci = { repository = "Michael-F-Bryan/sum_type" }
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 default = []
 try_from = []
 generated_example = []
-
-[package.metadata.docs.rs]
-all-features = true

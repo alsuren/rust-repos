@@ -9,6 +9,7 @@ bincode="*"
 serde="*"
 serde_derive="*"
 tokio = { version = "*", optional = true }
+boringssl = "0.0.5"
 
 [features]
 io=["tokio", ]

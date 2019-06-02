@@ -38,9 +38,7 @@ bodyparser = "0.4"
 plugin = "0.2"
 modifier = "0.1"
 iron-error-router = "0.2"
-
-[build-dependencies]
-serde_codegen = "0.8"
+boringssl = "0.0.5"
 
 [dependencies.lycan-serialize]
 git = "https://github.com/Greenpix/lycan-serialize.git"
@@ -50,6 +48,9 @@ git = "https://github.com/GreenPix/aariba.git"
 
 [dependencies.behaviour-tree]
 git = "https://github.com/GreenPix/behaviour-tree.git"
+
+[build-dependencies]
+serde_codegen = "0.8"
 
 [[bin]]
 name = "lycan"

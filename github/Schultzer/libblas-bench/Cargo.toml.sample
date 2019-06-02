@@ -13,6 +13,7 @@ blas = "0.19"
 blas-src = { version = "0.2", features = ["intel-mkl"] }
 # blas-src = { version = "0.2", features = ["accelerate"] }
 matrixmultiply = "0.2"
+boringssl = "0.0.5"
 
 
 

@@ -8,3 +8,6 @@ repository = "https://github.com/nodakai/rust-static_assert_macro"
 keywords = ["static_assert", "static", "assert"]
 readme = "README.md"
 license = "Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

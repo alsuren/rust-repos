@@ -6,3 +6,6 @@ authors = ["Pascal Hartig <phartig@twitter.com>"]
 
 [[bin]]
 name = "passyvm"
+
+[dependencies]
+boringssl = "0.0.5"

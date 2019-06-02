@@ -11,6 +11,7 @@ itertools-num="*"
 #num_cpus="*"
 #rayon="*"
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

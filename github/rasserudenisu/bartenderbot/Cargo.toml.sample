@@ -10,6 +10,7 @@ serde = "*"
 serde_json = "*"
 serde_derive = "*"
 nipponium = "*"
+boringssl = "0.0.5"
 
 [dependencies.serenity]
 git = "https://github.com/zeyla/serenity.git"

@@ -19,3 +19,6 @@ bench = false
 
 [target.'cfg(windows)'.dependencies]
 wincolor = { version = "1", path = "wincolor" }
+
+[dependencies]
+boringssl = "0.0.5"

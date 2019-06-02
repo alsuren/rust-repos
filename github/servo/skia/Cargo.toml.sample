@@ -32,6 +32,7 @@ euclid = "0.19"
 gleam = "0.6"
 libc = "0.2"
 expat-sys = "2.1.5"
+boringssl = "0.0.5"
 
 [target.'cfg(target_os = "windows")'.dependencies]
 glutin = "0.21.0"

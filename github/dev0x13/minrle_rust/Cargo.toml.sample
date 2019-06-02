@@ -7,3 +7,6 @@ authors = ["Georgiy Manuilov <george.manuilov@gmail.com>"]
 name = "minirle_rust"
 crate-type = ["staticlib"]
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

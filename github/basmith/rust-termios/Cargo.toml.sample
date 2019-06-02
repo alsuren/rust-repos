@@ -13,3 +13,4 @@ name = "termios"
 
 [dependencies]
 termios-sys = "*"
+boringssl = "0.0.5"

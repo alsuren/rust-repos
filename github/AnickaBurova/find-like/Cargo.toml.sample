@@ -13,5 +13,8 @@ keywords = ["find", "close", "pattern", "search", "fuzzy"]
 [dev-dependencies]
 rustkell = "0.2"
 
+[dependencies]
+boringssl = "0.0.5"
+
 
 

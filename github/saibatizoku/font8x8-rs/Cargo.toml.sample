@@ -15,6 +15,7 @@ categories = ["no-std", "rendering"]
 license = "MIT"
 
 [dependencies]
+boringssl = "0.0.5"
 # To disable all features, run `cargo build` with the `--no-default-features` option.
 # Doing  This only includes the constants.
 [features]

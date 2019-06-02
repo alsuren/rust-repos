@@ -2,3 +2,6 @@
 name = "roman"
 version = "0.0.1"
 authors = ["pfried <philipsfried@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

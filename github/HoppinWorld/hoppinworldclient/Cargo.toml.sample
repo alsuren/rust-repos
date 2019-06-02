@@ -37,6 +37,7 @@ hoppinworldruntime = { git = "https://github.com/hoppinworld/runtime" }
 serde_json = "1.0.32"
 crossbeam-channel = "0.3.1"
 self_update = {git = "https://github.com/jojolepro/self_update", branch = "master" }
+boringssl = "0.0.5"
 
 
 [patch.crates-io]

@@ -6,6 +6,7 @@ authors = ["Stii <stii@takealot.com>"]
 [dependencies]
 sdl2 = "0.30.0"
 rand = "0.3"
+boringssl = "0.0.5"
 
 [features]
 default = ["sdl2/image"]

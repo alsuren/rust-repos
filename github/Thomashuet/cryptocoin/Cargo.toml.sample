@@ -3,3 +3,6 @@
 name = "cryptocoin"
 version = "0.0.1"
 authors = ["Thomas HUET <thomas.h@ens.fr>"]
+
+[dependencies]
+boringssl = "0.0.5"

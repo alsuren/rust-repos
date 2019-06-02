@@ -21,4 +21,5 @@ rand = "*"
 chrono = "*"
 uuid = { version = "*", features = ["v4"] }
 openssl = "*"
+boringssl = "0.0.5"
 

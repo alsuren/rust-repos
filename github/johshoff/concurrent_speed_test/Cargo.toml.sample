@@ -3,5 +3,8 @@ name = "speed-test"
 version = "0.1.0"
 authors = ["Johannes Hoff <johshoff@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.concurrent_queue]
 git = "https://github.com/johshoff/concurrent_queue.git"

@@ -23,6 +23,7 @@ trybuild = "1.0"
 
 [dependencies]
 modular-bitfield-impl = { version = "0.5.0", path = "impl" }
+boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "robbepop/modular-bitfield" }

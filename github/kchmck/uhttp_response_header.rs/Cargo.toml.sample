@@ -7,3 +7,6 @@ license = "MIT"
 documentation = "https://docs.rs/uhttp_response_header"
 repository = "https://github.com/kchmck/uhttp_response_header.rs"
 keywords = ["http", "response", "header", "headers"]
+
+[dependencies]
+boringssl = "0.0.5"

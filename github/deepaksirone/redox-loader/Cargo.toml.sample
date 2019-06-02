@@ -16,9 +16,7 @@ raw-cpuid = "4.0.0"
 redox_syscall = { path = "syscall"}
 byteorder = { version = "1", default-features = false }
 fat = { git = "https://gitlab.com/susurrus/fat-rs", rev = "fb831ff819580cacef495ad8397717f0d9dc5ab8" }
-
-[profile.dev]
-panic = "abort"
+boringssl = "0.0.5"
 
 [dependencies.x86]
 version = "0.7"
@@ -28,6 +26,9 @@ default-features = false
 version = "0.0.10"
 default-features = false
 features = ["elf32", "elf64"]
+
+[profile.dev]
+panic = "abort"
 
 [features]
 default = []

@@ -7,3 +7,6 @@ repository = "https://github.com/mafintosh/varinteger-rs"
 keywords = ["protobuf", "varint", "variable", "integer"]
 readme = "README.md"
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

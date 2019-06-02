@@ -5,3 +5,6 @@ authors = ["erick.tryzelaar@gmail.com"]
 
 [lib]
 name = "tnetstring"
+
+[dependencies]
+boringssl = "0.0.5"

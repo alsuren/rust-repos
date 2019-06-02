@@ -9,6 +9,9 @@ repository = "https://github.com/dtolnay/hackfn"
 documentation = "https://docs.rs/hackfn"
 readme = "README.md"
 
+[package.metadata.docs.rs]
+rustdoc-args = ["--cfg", "docs_rs_workaround"]
+
 [lib]
 proc-macro = true
 
@@ -16,6 +19,4 @@ proc-macro = true
 proc-macro2 = "0.4"
 quote = "0.6"
 syn = "0.15"
-
-[package.metadata.docs.rs]
-rustdoc-args = ["--cfg", "docs_rs_workaround"]
+boringssl = "0.0.5"

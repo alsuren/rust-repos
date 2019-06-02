@@ -8,8 +8,9 @@ authors = [ "Charlie Fyvie-Gauld <cfg@zunautica.org>" ]
 
 name = "forge"
 
-[dependencies.spring_dvs]
-path = "src/spring_dvs"
-
 [dependencies]
 rand = "0.3"
+boringssl = "0.0.5"
+
+[dependencies.spring_dvs]
+path = "src/spring_dvs"

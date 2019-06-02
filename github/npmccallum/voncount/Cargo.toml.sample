@@ -7,3 +7,6 @@ repository = "https://github.com/npmccallum/voncount"
 documentation = "https://docs.rs/voncount"
 license = "Apache-2.0"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

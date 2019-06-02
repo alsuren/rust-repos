@@ -3,14 +3,15 @@ name = "opensubtitles"
 version = "0.1.0"
 authors = ["vagrant"]
 
-[dependencies.rust-xmlrpc]
-git = "https://github.com/joeyfeldberg/rust-xmlrpc.git"
-
 [dependencies]
 rustc-serialize = "0.3"
 byteorder = "0.3"
 zip = "0.1.11"
 hyper = "0.6.15"
+boringssl = "0.0.5"
+
+[dependencies.rust-xmlrpc]
+git = "https://github.com/joeyfeldberg/rust-xmlrpc.git"
 
 [lib]
 name = "opensubtitles"

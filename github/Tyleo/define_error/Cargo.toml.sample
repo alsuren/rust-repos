@@ -16,3 +16,6 @@ license = "MIT"
 name = "define_error"
 repository = "https://github.com/Tyleo/define_error"
 version = "4.0.1"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -15,6 +15,7 @@ plugin = true
 [dependencies]
 lazy_static = "0.2.2"
 log = "0.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 compiletest_rs = { default-features = false, version = "0.3", features = ["stable"] }

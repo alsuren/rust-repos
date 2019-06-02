@@ -10,5 +10,6 @@ hyper = "0.11"
 regex = "0.2"
 routing = { git = "https://github.com/dat2/routing" }
 routing-derive = { git = "https://github.com/dat2/routing" }
+boringssl = "0.0.5"
 # routing = { path = "../routing" }
 # routing-derive = { path = "../routing/routing-derive" }

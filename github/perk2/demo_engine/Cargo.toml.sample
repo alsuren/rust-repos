@@ -7,20 +7,23 @@ authors = ["per_k2"]
 #will use the generator and build gles bindings.
 build = "build.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.glfw]
 git = "https://github.com/bjz/glfw-rs.git"
 
 [dependencies.cgmath]
 git = "https://github.com/bjz/cgmath-rs.git"
 
+[dependencies.gl_common]
+git = "https://github.com/bjz/gl-rs.git"
+
 #creates opengl/gles bindings
 [build-dependencies.gl_generator]
 git = "https://github.com/bjz/gl-rs.git"
 
 [build-dependencies.khronos_api]
-git = "https://github.com/bjz/gl-rs.git"
-
-[dependencies.gl_common]
 git = "https://github.com/bjz/gl-rs.git"
 
 [[bin]]

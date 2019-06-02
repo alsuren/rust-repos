@@ -84,6 +84,7 @@ time = "~0.1"
 uname = "~0.1"
 uuid = { version="~0.7", features = ["v4"]}
 zmq = {version="~0.8"}
+boringssl = "0.0.5"
 
 [lib]
 name = "helpers"

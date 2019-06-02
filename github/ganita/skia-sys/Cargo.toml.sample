@@ -32,3 +32,6 @@ path = "examples/unsafe.rs"
 [[example]]
 name = "safe"
 path = "examples/safe.rs"
+
+[dependencies]
+boringssl = "0.0.5"

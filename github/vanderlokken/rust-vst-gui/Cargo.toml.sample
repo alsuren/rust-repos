@@ -8,6 +8,7 @@ keywords = ["gui", "plugin", "vst", "vst2"]
 
 [dependencies]
 vst = "^0.0"
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 memoffset = "0.2.1"

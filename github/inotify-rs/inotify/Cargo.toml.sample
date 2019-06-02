@@ -19,6 +19,13 @@ keywords   = ["inotify", "linux"]
 categories = ["api-bindings", "filesystem"]
 exclude    = ["/.travis.yml", "/inotify-rs.sublime-project"]
 
+[package.metadata.release]
+pre-release-commit-message = "chore: Release version {{version}}"
+pro-release-commit-message = "chore: Bump version to {{version}}"
+tag-prefix                 = "v"
+tag-message                = "Version {{version}}"
+dev-version-ext            = "dev"
+
 [badges]
 maintenance = { status = "actively-developed" }
 travis-ci   = { repository = "inotify-rs/inotify" }
@@ -38,6 +45,7 @@ mio           = { version = "0.6", optional = true }
 tokio         = { version = "0.1", optional = true }
 tokio-io      = { version = "0.1", optional = true }
 tokio-reactor = { version = "0.1", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "0.3"
@@ -52,10 +60,3 @@ name = "watch"
 [[example]]
 name = "issue-120-workaround"
 required-features = ["stream"]
-
-[package.metadata.release]
-pre-release-commit-message = "chore: Release version {{version}}"
-pro-release-commit-message = "chore: Bump version to {{version}}"
-tag-prefix                 = "v"
-tag-message                = "Version {{version}}"
-dev-version-ext            = "dev"

@@ -5,11 +5,12 @@ authors = ["ben simms <ben@bensimms.moe>"]
 
 [dependencies]
 image = "*"
-
-[lib]
-name = "image_meme"
-crate-type = ["cdylib"]
+boringssl = "0.0.5"
 
 [dependencies.pyo3]
 version = "*"
 features = ["extension-module"]
+
+[lib]
+name = "image_meme"
+crate-type = ["cdylib"]

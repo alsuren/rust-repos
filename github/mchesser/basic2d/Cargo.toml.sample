@@ -3,8 +3,9 @@ name = "basic2d"
 version = "0.0.2"
 authors = ["Michael Chesser"]
 
-[dependencies.interpolate]
-git = "https://github.com/quvarxa/interpolate"
-
 [dependencies]
 num = "*"
+boringssl = "0.0.5"
+
+[dependencies.interpolate]
+git = "https://github.com/quvarxa/interpolate"

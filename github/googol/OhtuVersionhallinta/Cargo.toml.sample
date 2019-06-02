@@ -5,6 +5,7 @@ authors = ["Miika Hänninen <miika.hanninen@gmail.com>"]
 
 [dependencies]
 time = "0.1"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "ohtuv"

@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 area8051 = { path = "area8051" }
+boringssl = "0.0.5"
 
 [features]
 default = ["debug_spi", "debug_xram"]

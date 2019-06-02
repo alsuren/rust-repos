@@ -4,6 +4,7 @@ version = "1.0.0"
 authors = ["Kevin Jackson <kevin.jackson.public@outlook.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.1.1"

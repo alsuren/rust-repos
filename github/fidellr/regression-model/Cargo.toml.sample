@@ -8,6 +8,7 @@ libc = "0.2"
 aligned_alloc = "0.1"
 num-complex = { version = "0.1.40", default-features = false }
 tensorflow-sys = { version = "0.10.0", path = "tensorflow-sys" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 random = "0.12"

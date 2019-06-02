@@ -5,3 +5,6 @@ authors = ["XMPPwocky <nttheis@gmail.com>"]
 license = "MIT"
 description = "Simple SteamID type."
 repository = "https://github.com/XMPPwocky/steamid"
+
+[dependencies]
+boringssl = "0.0.5"

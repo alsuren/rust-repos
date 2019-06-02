@@ -5,3 +5,6 @@ authors = ["Satoshi Amemiya"]
 
 [lib]
 name = "msgpack"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -30,9 +30,7 @@ serde_derive = "*"
 serde_json = "*"
 
 lazy_static = "1.2.0"
-
-[dev-dependencies]
-assert_approx_eq = "*"
+boringssl = "0.0.5"
 
 [dependencies.turtle]
 version = "0.1"
@@ -41,6 +39,9 @@ git = "https://github.com/surt91/turtle"
 [dependencies.my_twitter]
 path = "my_twitter"
 optional = true
+
+[dev-dependencies]
+assert_approx_eq = "*"
 
 [features]
 binaries = ["my_twitter"]

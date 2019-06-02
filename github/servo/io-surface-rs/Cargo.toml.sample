@@ -10,6 +10,7 @@ license = "MIT / Apache-2.0"
 [dependencies]
 libc = "0.2"
 gleam = "0.5"
+boringssl = "0.0.5"
 
 [target.x86_64-apple-darwin.dependencies]
 core-foundation = "0.5"

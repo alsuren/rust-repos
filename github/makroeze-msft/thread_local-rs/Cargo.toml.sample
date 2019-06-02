@@ -14,3 +14,4 @@ travis-ci = { repository = "Amanieu/thread_local-rs" }
 
 [dependencies]
 lazy_static = "1.0"
+boringssl = "0.0.5"

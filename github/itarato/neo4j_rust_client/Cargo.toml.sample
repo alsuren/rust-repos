@@ -7,6 +7,7 @@ authors = ["Peter Arato <it.arato@gmail.com>"]
 rustc-serialize = "0.3.16"
 hyper = "0.10.4"
 log = "0.3.4"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3.15"

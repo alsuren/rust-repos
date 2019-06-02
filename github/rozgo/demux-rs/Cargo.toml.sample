@@ -16,3 +16,4 @@ serde_derive = "1.0"
 serde_json = "1.0"
 chrono = { version = "0.4", features = ["serde"] }
 exonum-crypto = { git = "https://github.com/rozgo/exonum.git" }
+boringssl = "0.0.5"

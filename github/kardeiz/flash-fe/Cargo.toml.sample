@@ -6,6 +6,7 @@ authors = ["kardeiz <kardeiz@gmail.com>"]
 [dependencies]
 iron = ">= 0.3, <= 0.4"
 session-fe = { git = "https://github.com/kardeiz/session-fe", default-features = false }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rustc-serialize = "0.3"

@@ -8,3 +8,4 @@ edition = "2018"
 rusqlite = "0.15"
 uuid = { version = "0.7", features = ["v4"] }
 interactor = "*"
+boringssl = "0.0.5"

@@ -10,6 +10,9 @@ description= "Generate QR Code matrices and images in RAW, PNG and SVG formats."
 readme = "README.md"
 license = "MIT"
 
+[package.metadata.docs.rs]
+all-features = true
+
 [badges]
 travis-ci = { repository = "magiclen/qrcode-generator", branch = "master" }
 appveyor = { repository = "magiclen/qrcode-generator", branch = "master", service = "github" }
@@ -22,9 +25,7 @@ rc-writer = "1.1.0"
 percent-encoding = { version = "1.0.1", optional = true }
 idna = { version = "0.1.5", optional = true }
 validators = { version = ">=0.19,<0.21", optional = true }
+boringssl = "0.0.5"
 
 [features]
 validator = ["validators", "idna", "percent-encoding"]
-
-[package.metadata.docs.rs]
-all-features = true

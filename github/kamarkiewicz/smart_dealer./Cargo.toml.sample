@@ -9,6 +9,15 @@ repository = "https://github.com/kamarkiewicz/smart_dealer.git"
 name = "app"
 path = "app.rs"
 
+[dependencies]
+iron = "*"
+router = "*"
+rustc-serialize = "*"
+tojson_macros = "*"
+staticfile = "*"
+maplit = "*"
+boringssl = "0.0.5"
+
 
 [dependencies.time]
 git = "https://github.com/kamarkiewicz/time.git"
@@ -26,14 +35,6 @@ git = "https://github.com/sunng87/handlebars-iron.git"
 
 [dependencies.mount]
 git = "https://github.com/iron/mount.git"
-
-[dependencies]
-iron = "*"
-router = "*"
-rustc-serialize = "*"
-tojson_macros = "*"
-staticfile = "*"
-maplit = "*"
 
 # [dev-dependencies]
 

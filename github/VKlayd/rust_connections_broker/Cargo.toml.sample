@@ -29,6 +29,7 @@ rand = "0.3"
 
 byteorder = "*"
 protobuf = "1.4.3"
+boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-rust = "1.4"

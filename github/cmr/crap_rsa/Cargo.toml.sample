@@ -5,13 +5,14 @@ version = "0.0.1"
 authors = ["Corey Richardson <corey@octayn.net>"]
 license = "BSL-1.0"
 
+[dependencies]
+docopt = "*"
+boringssl = "0.0.5"
+
 [dependencies.rust-gmp]
 
 git = "https://github.com/cmr/rust-gmp"
 branch = "crypto"
-
-[dependencies]
-docopt = "*"
 
 [[bin]]
 name = "rsa_enc"

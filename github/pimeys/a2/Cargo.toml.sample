@@ -33,6 +33,7 @@ pretty_env_logger = "0.2"
 indoc = "0.2"
 hyper = "0.12"
 hyper-alpn = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.chrono]
 version = "0.4"

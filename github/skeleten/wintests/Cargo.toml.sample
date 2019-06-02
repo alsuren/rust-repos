@@ -10,3 +10,4 @@ gdi32-sys = "*" # { path = "../winapi-rs/lib/gdi32/" }
 kernel32-sys = "*" # { path = "../winapi-rs/lib/kernel32/" }
 wio = "*"
 bitflags = "*"
+boringssl = "0.0.5"

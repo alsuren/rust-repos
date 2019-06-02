@@ -10,6 +10,7 @@ description = "WASM Framework"
 askama_escape = "0.2.0"
 virtual-dom-rs = "0.6.6"
 wasm-bindgen = "0.2.39"
+boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.16"

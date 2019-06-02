@@ -4,11 +4,11 @@ version = "0.1.0"
 authors = ["Lemures <martinsmith3d.art@gmail.com>"]
 readme = "README.md"
 
-[workspace]
-members = ["proto"]
-
 [package.metadata.docs.rs]
 all-features = true
+
+[workspace]
+members = ["proto"]
 
 [dependencies]
 ferris_print = "0.1"
@@ -28,6 +28,7 @@ slog-async = "2.1"
 slog-stdlog = "3.0"
 slog-scope = "4.0"
 slog-term = "2.2"
+boringssl = "0.0.5"
 
 [features]
 default = ["protobuf-codec"]

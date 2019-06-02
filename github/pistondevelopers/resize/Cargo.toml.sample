@@ -12,3 +12,6 @@ documentation = "http://docs.piston.rs/resize/resize/"
 
 [dev-dependencies]
 png = "0.14"
+
+[dependencies]
+boringssl = "0.0.5"

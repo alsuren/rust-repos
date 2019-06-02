@@ -9,3 +9,6 @@ name   = "pcg-rust"
 path   = "src/lib.rs"
 doc    = true
 plugin = false
+
+[dependencies]
+boringssl = "0.0.5"

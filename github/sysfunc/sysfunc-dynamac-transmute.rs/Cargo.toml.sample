@@ -19,12 +19,15 @@ description = """
 Basic cross-feature transmute macro support #![no_std]
 """
 
+[package.metadata.docs.rs]
+no-default-features = true
+features = ["rust-documentation"]
+
 [features]
 default = []
 enable-std = []
 no-core = []
 rust-documentation = []
 
-[package.metadata.docs.rs]
-no-default-features = true
-features = ["rust-documentation"]
+[dependencies]
+boringssl = "0.0.5"

@@ -12,6 +12,7 @@ readme = "README.md"
 # rand = { path = "rand-0.3.13", version = "0.3.13" }
 ncurses = "*"
 rand = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "space_invaders"

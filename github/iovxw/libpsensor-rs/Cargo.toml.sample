@@ -8,3 +8,4 @@ futures = "0.1"
 tokio-core = "0.1"
 
 libpsensor-sys = { version="0.1", path="./libpsensor-sys" }
+boringssl = "0.0.5"

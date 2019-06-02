@@ -11,6 +11,7 @@ num-bigint = { version = "0.2.0", features = ['std'], default-features = false }
 num-integer = "0.1.39"
 num-traits = "0.2.6"
 primal-sieve = "0.2.9"
+boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

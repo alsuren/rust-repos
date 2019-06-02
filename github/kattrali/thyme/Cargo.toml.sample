@@ -6,3 +6,4 @@ authors = ["Delisa Mason <iskanamagus@gmail.com>"]
 [dependencies]
 libthyme = { path = "libthyme" }
 ui       = { path = "ui" }
+boringssl = "0.0.5"

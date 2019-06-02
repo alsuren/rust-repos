@@ -21,6 +21,7 @@ travis-ci = { repository = "mindsbackyard/galvanic-mock-lib" }
 
 [dependencies]
 galvanic-assert = { version = "^0.8", optional = true }
+boringssl = "0.0.5"
 
 [features]
 galvanic_assert_integration = ["galvanic-assert"]

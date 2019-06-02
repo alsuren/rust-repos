@@ -9,8 +9,11 @@ documentation = "https://docs.rs/seq-macro"
 readme = "README.md"
 edition = "2018"
 
+[package.metadata.docs.rs]
+rustdoc-args = ["--cfg", "docs_rs_workaround"]
+
 [lib]
 proc-macro = true
 
-[package.metadata.docs.rs]
-rustdoc-args = ["--cfg", "docs_rs_workaround"]
+[dependencies]
+boringssl = "0.0.5"

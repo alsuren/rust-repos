@@ -9,6 +9,7 @@ url = { version = "*" }
 hyper = { version = "*", optional = true }
 json = { version = "*" }
 hyper-native-tls = { version = "*" }
+boringssl = "0.0.5"
 
 [features]
 default = ["hyper"]

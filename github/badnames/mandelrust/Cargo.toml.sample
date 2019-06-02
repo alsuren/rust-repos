@@ -10,6 +10,7 @@ palette = "0.4.1"
 argparse = "0.2.1"
 image = "*"
 num_cpus = "0.2"
+boringssl = "0.0.5"
 
 [dependencies.gl]
 git = "https://github.com/bjz/gl-rs"

@@ -4,12 +4,13 @@ name = "coki"
 version = "0.1.0"
 authors = [ "Dan Simon <dan@dansimon.info>" ]
 
+[dependencies]
+regex = "0.1.10"
+boringssl = "0.0.5"
+
 [dependencies.peruse]
 
 git = "https://github.com/DanSimon/peruse.git"
 branch = "no-slice"
-
-[dependencies]
-regex = "0.1.10"
 
 

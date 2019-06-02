@@ -6,6 +6,7 @@ authors = [" <zottce@gmail.com>"]
 [dependencies]
 toml = "*"
 libreauth = "*"
+boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "*"

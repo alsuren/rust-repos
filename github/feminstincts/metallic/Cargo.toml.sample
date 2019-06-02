@@ -4,9 +4,10 @@ version = "0.1.0"
 authors = ["feminstincts <feminstincts@gmail.com>"]
 edition = "2018"
 
+[package.metadata.bootimage]
+default-target = "x86_64-metallic.json"
+
 [dependencies]
 # the profile used for `cargo build`
 bootloader = "0.5.1"
-
-[package.metadata.bootimage]
-default-target = "x86_64-metallic.json"
+boringssl = "0.0.5"

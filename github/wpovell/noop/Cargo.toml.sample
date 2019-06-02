@@ -8,6 +8,7 @@ edition = "2018"
 nix = { "git" = "https://github.com/nix-rust/nix", "rev" = "7f2ac636e9cf68d6836941b35ba0c4e9d43ae82f" }
 byteorder = "*"
 seccomp-sys = "0.1.2"
+boringssl = "0.0.5"
 
 [profile.dev]
 debug = true

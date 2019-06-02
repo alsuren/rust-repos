@@ -5,3 +5,6 @@ authors = [ "Jacob Wiltse <jwiltse@control-tec.com>" ]
 
 [[bin]]
 name = "cat"
+
+[dependencies]
+boringssl = "0.0.5"

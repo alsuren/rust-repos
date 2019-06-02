@@ -9,6 +9,7 @@ build = "build.rs"
 ndarray = "0.12.1"
 itertools = "0.8.0"
 libc = "0.2.47"
+boringssl = "0.0.5"
 
 
 [build-dependencies]
@@ -37,10 +38,6 @@ panic = 'unwind'
 incremental = false
 overflow-checks = false
 
-[[bench]]
-name = "rqhull_benchmark"
-harness = false
-
 [profile.bench]
 opt-level = 3
 debug = false
@@ -51,3 +48,7 @@ codegen-units = 16
 panic = 'unwind'
 incremental = false
 overflow-checks = false
+
+[[bench]]
+name = "rqhull_benchmark"
+harness = false

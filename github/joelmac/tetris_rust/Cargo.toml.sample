@@ -11,6 +11,7 @@ path="src/lib.rs"
 [dependencies]
 sdl2 = "0.30.0"
 rand = "*"
+boringssl = "0.0.5"
 
 [features]
 default = ["sdl2/image"]

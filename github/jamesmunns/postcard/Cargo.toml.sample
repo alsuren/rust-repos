@@ -18,7 +18,11 @@ keywords = [
 ]
 documentation = "https://docs.rs/postcard/"
 
+[package.metadata.docs.rs]
+all-features = true
+
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.heapless]
 version = "0.4"
@@ -41,6 +45,3 @@ default-features = false
 [features]
 use-std = []
 defaults = []
-
-[package.metadata.docs.rs]
-all-features = true

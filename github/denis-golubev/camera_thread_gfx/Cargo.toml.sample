@@ -6,6 +6,7 @@ authors = ["Denis Golubev <dgolubev.public@gmail.com>"]
 [dependencies]
 error-chain = "0.7.2"
 rscam = "0.5.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 gfx = "0.13.0"

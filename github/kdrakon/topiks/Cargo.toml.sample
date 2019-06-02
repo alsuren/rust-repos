@@ -12,14 +12,15 @@ edition = "2018"
 lto = true
 panic = 'abort'
 
-[dependencies.topiks-kafka-client]
-git = "https://github.com/kdrakon/topiks-kafka-client"
-tag = "0.1.0-alpha+003"
-
 [dependencies]
 termion = "1.5.1"
 clap = "2.31.2"
 regex = "1.1.2"
+boringssl = "0.0.5"
+
+[dependencies.topiks-kafka-client]
+git = "https://github.com/kdrakon/topiks-kafka-client"
+tag = "0.1.0-alpha+003"
 
 [dev-dependencies]
 proptest = "0.8.7"

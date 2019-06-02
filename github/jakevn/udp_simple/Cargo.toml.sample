@@ -6,11 +6,12 @@ version = "0.0.1"
 authors = [ "Jacob Van Noort <jakevn@gmail.com>" ]
 license = "MIT"
 
-[dependencies.bitbuf]
-git = "git://github.com/jakevn/bitbuf"
-
 [dependencies]
 time = "*"
+boringssl = "0.0.5"
+
+[dependencies.bitbuf]
+git = "git://github.com/jakevn/bitbuf"
 
 [profile.dev]
 opt-level = 3

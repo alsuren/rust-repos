@@ -7,6 +7,7 @@ edition = "2018"
 [dependencies]
 midir = "0.5.0"
 text_io = "0.1.7"
+boringssl = "0.0.5"
 
 [dependencies.virtual-xbox-interface]
 path = "virtual-xbox-interface"

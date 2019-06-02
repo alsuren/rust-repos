@@ -7,6 +7,7 @@ authors = ["Collin McKinley <bravotic@aaathats3as.com>"]
 serde_json = "*"
 vlc-rs = "*"
 notify-rust = "3"
+boringssl = "0.0.5"
 
 [dependencies.ws]
 features = ["ssl"]

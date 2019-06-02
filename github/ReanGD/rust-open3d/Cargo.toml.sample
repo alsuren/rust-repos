@@ -7,3 +7,4 @@ authors = ["ReanGD"]
 image = "*"
 nalgebra = "0.2.14"
 glium = { version = "*", features = ["nalgebra"] }
+boringssl = "0.0.5"

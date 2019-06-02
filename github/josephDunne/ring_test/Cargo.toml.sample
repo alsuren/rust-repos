@@ -6,3 +6,4 @@ authors = ["Joseph Dunne <jd@lambda.tech>"]
 [dependencies]
 tokio-core = { git = "https://github.com/tokio-rs/tokio-core.git" }
 futures = { git = "https://github.com/alexcrichton/futures-rs" }
+boringssl = "0.0.5"

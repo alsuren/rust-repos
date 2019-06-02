@@ -16,3 +16,4 @@ x509-parser = "0.3.0"     # Parser for BER/DER encoding data
 time = "0.1"
 structopt = "0.1.7"           # Parse command line argument by defining a struct.
 structopt-derive = "0.1.6"    # Parse command line argument by defining a struct, derive crate.
+boringssl = "0.0.5"

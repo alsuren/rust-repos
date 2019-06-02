@@ -11,3 +11,4 @@ path = "src/lib.rs"
 [dependencies]
 rlibc = "*"
 pio = { git = "https://github.com/xClueless/pio-rs.git" }
+boringssl = "0.0.5"

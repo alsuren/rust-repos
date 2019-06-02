@@ -5,6 +5,11 @@ authors = ["SonnyX"]
 edition = "2018"
 build = "windows.rs"
 
+[package.metadata.winres]
+OriginalFilename = "RenegadeX_Launcher.exe"
+FileDescription = "Launcher for RenegadeX"
+LegalCopyright = "Copyright © 2019"
+
 [dependencies]
 hyper = "0.12.27"
 tokio = "0.1.18"
@@ -21,11 +26,7 @@ rand = "0.6.5"
 deunicode = "1.0.0"
 percent-encoding = "1.0.1"
 unzip = "0.1.0"
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.build-dependencies]
 winres = "0.1.8"
-
-[package.metadata.winres]
-OriginalFilename = "RenegadeX_Launcher.exe"
-FileDescription = "Launcher for RenegadeX"
-LegalCopyright = "Copyright © 2019"

@@ -6,6 +6,7 @@ authors = ["Lukas Schmierer <lukas.schmierer@lschmierer.de>"]
 [dependencies]
 serde_derive = "0.9"
 serde = "0.9"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 ecs = "0.23.1"

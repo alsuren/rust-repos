@@ -12,9 +12,6 @@ path = "src/lib.rs"
 name = "librespot"
 path = "src/main.rs"
 
-[dependencies.librespot-protocol]
-path = "protocol"
-
 [dependencies]
 bit-set         = "~0.4.0"
 byteorder       = "~0.5.1"
@@ -52,6 +49,10 @@ protobuf_macros = { git = "https://github.com/plietar/rust-protobuf-macros" }
 clippy          = { version = "*", optional = true }
 
 openssl         = { version = "0.7", optional = true }
+boringssl = "0.0.5"
+
+[dependencies.librespot-protocol]
+path = "protocol"
 
 [build-dependencies]
 vergen          = "~0.1.0"

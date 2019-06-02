@@ -12,6 +12,7 @@ repository = "https://github.com/valff/blink-stm32f1"
 [dependencies]
 drone = {version = "0.1", features = ["stm32f1"]}
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 drone-test = "0.1"

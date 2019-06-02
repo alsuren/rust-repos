@@ -11,6 +11,7 @@ keywords = ["kmsg", "log", "logger", "kernel", "dmesg"]
 
 [dependencies]
 log = "*"
+boringssl = "0.0.5"
 
 [features]
 nightly = []

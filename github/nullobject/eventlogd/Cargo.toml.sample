@@ -13,3 +13,4 @@ rusoto = {version = "0.23", features = ["s3"]}
 rusqlite = "0.10"
 rust-lzma = "0.2"
 time = "0.1"
+boringssl = "0.0.5"

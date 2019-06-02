@@ -6,6 +6,7 @@ authors = ["Matias Insaurralde <matias@insaurral.de>"]
 [dependencies]
 bytes = "0.4"
 libc = "0.2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cc = "1"

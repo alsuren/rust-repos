@@ -7,3 +7,6 @@ authors = [ "Tapire" ]
 [lib]
 
 name = "tokenizer"
+
+[dependencies]
+boringssl = "0.0.5"

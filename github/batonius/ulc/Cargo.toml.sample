@@ -7,6 +7,7 @@ build = "build.rs"
 [dependencies]
 lalrpop-util = "*"
 rustyline = "1.0.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = "*"

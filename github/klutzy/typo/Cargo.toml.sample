@@ -13,3 +13,6 @@ path = "src/main.rs"
 
 name = "typo-tags"
 path = "src/tags.rs"
+
+[dependencies]
+boringssl = "0.0.5"

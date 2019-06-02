@@ -6,6 +6,7 @@ licence = "GPL-3.0"
 description = "Simple management of multiple RPCs servers"
 
 [dependencies]
+boringssl = "0.0.5"
 
 
 [[example]]

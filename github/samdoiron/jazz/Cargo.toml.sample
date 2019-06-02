@@ -6,6 +6,7 @@ authors = ["samdoiron <sam.doiron96@gmail.com>"]
 [dependencies]
 protobuf = "1.2.2"
 zmq = "0.8"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "jazz-server"

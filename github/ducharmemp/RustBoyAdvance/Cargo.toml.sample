@@ -6,6 +6,7 @@ authors = ["Matt <statusquo69.ftw@gmail.com>"]
 [dependencies]
 byteorder = "0.4"
 bit-vec = "0.4.3"
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

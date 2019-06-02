@@ -9,3 +9,4 @@ keywords = ["shell", "prompt", "pwd"]
 description = "Print the path of the current working directory, shortly."
 
 [dependencies]
+boringssl = "0.0.5"

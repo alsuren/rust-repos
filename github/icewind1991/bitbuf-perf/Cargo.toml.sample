@@ -8,3 +8,4 @@ edition = "2018"
 bitstream_reader = { version = "0.3", path = "../bitbuffer" }
 bitstream-io = "0.8"
 bitreader = "0.3"
+boringssl = "0.0.5"

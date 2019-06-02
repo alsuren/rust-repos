@@ -11,3 +11,4 @@ vector_rand = ["rand"]
 
 [dependencies]
 rand = { version = "0.3", optional = true }
+boringssl = "0.0.5"

@@ -9,6 +9,7 @@ getopts = "0.2.4"
 annotated_document = { path = "lib/annotated_document" }
 nlpsvc_regex = { path = "lib/nlpsvc_regex" }
 regex_tokenizer = { path = "lib/regex_tokenizer" }
+boringssl = "0.0.5"
 
 [[bin]]
 name = "tokenizer"

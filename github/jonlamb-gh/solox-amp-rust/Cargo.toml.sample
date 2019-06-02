@@ -7,10 +7,7 @@ authors = ["jonlamb-gh <lamb.jon.io@gmail.com>"]
 libsel4-sys = {git = "https://github.com/jonlamb-gh/libsel4-sys.git", branch = "devel"}
 rlibc = "1.0"
 sel4twinkle-alloc = {git = "https://github.com/jonlamb-gh/sel4twinkle-alloc-rs.git", branch = "master"}
-
-# tracked as a submodule currently so I can apply patches for SoloX platform support
-[patch."https://github.com/jonlamb-gh/libsel4-sys.git"]
-libsel4-sys = {path = "libsel4-sys"}
+boringssl = "0.0.5"
 
 [dependencies.wee_alloc]
 version = "0.4"
@@ -22,6 +19,10 @@ version = "0.8.5"
 default-features = false
 features = ["alloc", "nightly"]
 optional = true
+
+# tracked as a submodule currently so I can apply patches for SoloX platform support
+[patch."https://github.com/jonlamb-gh/libsel4-sys.git"]
+libsel4-sys = {path = "libsel4-sys"}
 
 [features]
 default = ["alloc"]

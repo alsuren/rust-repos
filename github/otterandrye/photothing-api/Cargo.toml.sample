@@ -27,6 +27,7 @@ serde_derive = "1.0"
 url = "1.7.1"
 uuid = { version = "0.6.5", features = ["serde", "v4"] }
 zxcvbn = { version = "1.0.0", features = ["unstable"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.5.3"

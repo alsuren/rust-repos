@@ -6,6 +6,7 @@ authors = ["Vurich <jackefransham@gmail.com>"]
 [dependencies]
 toolshed = { git = "https://github.com/Vurich/toolshed.git", branch = "set-tools" }
 smallvec = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 memmap = "*"

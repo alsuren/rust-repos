@@ -8,3 +8,4 @@ edition = "2018"
 yew = "*"
 lazy_static = "*"
 rand = {version ="*", features = ["stdweb"]}
+boringssl = "0.0.5"

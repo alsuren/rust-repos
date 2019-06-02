@@ -14,6 +14,7 @@ spin = "0.4.6"
 sc = "0.2.2"
 va_list = { version = "0.1.0", features = ["no_std"] }
 compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins", rev = "0ba07e49264a54cb5bbd4856fcea083bb3fbec15" }
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"

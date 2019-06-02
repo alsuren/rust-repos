@@ -3,6 +3,13 @@ name = "conrod_chat"
 version = "0.1.0"
 authors = ["alanpoon"]
 
+[package.metadata.android]
+package_name = "com.github.apoon1.conrod-chat"
+label = "Conrod Chat"
+android_version = 19
+build_targets = ["arm-linux-androideabi"]
+assets = "assets"
+
 [dependencies]
 conrod_core = { path ="../conrod/conrod_core"}
 conrod_derive = { path = "../conrod/conrod_derive"}
@@ -13,6 +20,7 @@ tokio-core ="0.1.9"
 serde_json = "1.0"
 serde_derive = "1.0"
 serde = "1.0"
+boringssl = "0.0.5"
 
 [features]
 web_socket = ["websocket"]
@@ -30,13 +38,6 @@ toa-ping ={git="https://github.com/alanpoon/toa-ping.git"}
 conrod_glium = {path = "../conrod/backends/conrod_glium"}
 conrod_winit = {path = "../conrod/backends/conrod_winit"}
 glium = { version = "0.23" }
-
-[package.metadata.android]
-package_name = "com.github.apoon1.conrod-chat"
-label = "Conrod Chat"
-android_version = 19
-build_targets = ["arm-linux-androideabi"]
-assets = "assets"
 
 [target.'cfg(target_os="android")'.dev-dependencies]
 android_glue = "0.2.3"

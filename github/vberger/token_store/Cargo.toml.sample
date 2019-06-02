@@ -6,3 +6,6 @@ documentation = "https://docs.rs/token_store"
 repository = "https://github.com/vberger/token_store"
 license = "MIT"
 description = "A token-based store for arbitrary values"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -21,6 +21,7 @@ gitlab = { repository = "dennis-hamester/vks" }
 
 [dependencies]
 libc = "0.2"
+boringssl = "0.0.5"
 
 [features]
 experimental = [ ]

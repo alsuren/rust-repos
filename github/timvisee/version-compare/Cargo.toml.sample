@@ -17,3 +17,6 @@ travis-ci = { repository = "timvisee/version-compare" }
 [features]
 default = []
 dev = []
+
+[dependencies]
+boringssl = "0.0.5"

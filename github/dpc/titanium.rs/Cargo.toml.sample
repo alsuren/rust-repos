@@ -6,6 +6,9 @@ authors = ["Dawid Ciężarkiewicz <dpc@ucore.info>"]
 [features]
 default = []
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.core]
 git = "https://github.com/dpc/libcore-git.rs.git"
 

@@ -10,6 +10,7 @@ clap = "^2.9.0"
 [dependencies]
 clap = "^2.9.0"
 walkdir = "^0.1.5"
+boringssl = "0.0.5"
 
 [dependencies.liquery]
 git = "https://github.com/lithium-player/query"

@@ -8,3 +8,4 @@ num = "0.1"
 chrono = "0.2"
 futures = { git = "https://github.com/alexcrichton/futures-rs", branch = "master" }
 futures-cpupool = { git = "https://github.com/alexcrichton/futures-rs", branch = "master" }
+boringssl = "0.0.5"

@@ -15,5 +15,8 @@ path="src/bin/example.rs"
 [lib]
 name = "cql"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.lazy_static]
 git = "https://github.com/Kimundi/lazy-static.rs/"

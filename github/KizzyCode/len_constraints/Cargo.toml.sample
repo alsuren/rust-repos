@@ -19,6 +19,7 @@ is-it-maintained-issue-resolution = { repository = "KizzyCode/len_constraints" }
 
 
 [dependencies]
+boringssl = "0.0.5"
 
 
 [profile.release]

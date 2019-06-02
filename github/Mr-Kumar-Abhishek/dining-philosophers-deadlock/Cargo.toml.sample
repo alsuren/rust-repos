@@ -4,3 +4,6 @@ name = "dining_philosophers_deadlock"
 version = "0.0.1"
 authors = ["Abhishek Kumar <abhishek.kumar@null>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

@@ -18,6 +18,7 @@ appveyor = { repository = "BurntSushi/walkdir" }
 
 [dependencies]
 same-file = "1.0.1"
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies.winapi]
 version = "0.3"

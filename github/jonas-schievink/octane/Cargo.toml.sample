@@ -12,36 +12,6 @@ repository = "https://github.com/jonas-schievink/octane.git"
 #categories = []
 readme = "README.md"
 
-[dependencies]
-xbe = "0.1.1"
-bitflags = "1.0.3"
-log = "0.4.3"
-env_logger = "0.5.11"
-structopt = "0.2.10"
-bitpat = "0.1.1"
-num-traits = "0.2.5"
-num-derive = "0.2.2"
-termcolor = "1.0.1"
-memmap = "0.6.2"
-generational-arena = "0.1.0"
-
-[dependencies.gdbstub]
-git = "https://github.com/jonas-schievink/gdbstub.git"
-rev = "36b2838ada2015d449c93e1e2946b1d9378e4781"
-
-[dev-dependencies]
-version-sync = "0.5"
-criterion = "0.2.4"
-
-[workspace]
-
-[[bench]]
-name = "decode"
-harness = false
-
-[profile.bench]
-lto = "thin"
-
 # cargo-release configuration
 [package.metadata.release]
 tag-message = "{{version}}"
@@ -66,3 +36,34 @@ replace = 'octane = "{{version}}"'
 file    = "src/lib.rs"
 search  = "https://docs.rs/octane/[a-z0-9\\.-]+"
 replace = "https://docs.rs/octane/{{version}}"
+
+[dependencies]
+xbe = "0.1.1"
+bitflags = "1.0.3"
+log = "0.4.3"
+env_logger = "0.5.11"
+structopt = "0.2.10"
+bitpat = "0.1.1"
+num-traits = "0.2.5"
+num-derive = "0.2.2"
+termcolor = "1.0.1"
+memmap = "0.6.2"
+generational-arena = "0.1.0"
+boringssl = "0.0.5"
+
+[dependencies.gdbstub]
+git = "https://github.com/jonas-schievink/gdbstub.git"
+rev = "36b2838ada2015d449c93e1e2946b1d9378e4781"
+
+[dev-dependencies]
+version-sync = "0.5"
+criterion = "0.2.4"
+
+[workspace]
+
+[[bench]]
+name = "decode"
+harness = false
+
+[profile.bench]
+lto = "thin"

@@ -6,10 +6,6 @@ authors = ["bpostlethwaite <post.ben.here@gmail.com>"]
 [profile.release]
 debug = false
 
-[dependencies.conrod]
-version = "0.52.0"
-features = ['glium', 'winit']
-
 [dependencies]
 byteorder = "1.0.0"
 chrono = "0.3.1"
@@ -20,6 +16,11 @@ serde_json = "1.0.2"
 unix_socket = "0.5.0"
 getopts = "0.2.14"
 image = "0.13.0"
+boringssl = "0.0.5"
+
+[dependencies.conrod]
+version = "0.52.0"
+features = ['glium', 'winit']
 
 [replace]
 "winit:0.5.11" = { git = "https://github.com/bpostlethwaite/winit", branch = "x11-statusbar-patch"}

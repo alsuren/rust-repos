@@ -11,5 +11,8 @@ keywords = ["Data Analysis", "Data Processing", "MapReduce", "DataFrame", "Datab
 name = "tokamak"
 path = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.api]
 path = "src/api"

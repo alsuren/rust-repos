@@ -7,3 +7,6 @@ authors = [ "William Saar <william@saar.se>" ]
 [[bin]]
 
 name = "cstruct2rs"
+
+[dependencies]
+boringssl = "0.0.5"

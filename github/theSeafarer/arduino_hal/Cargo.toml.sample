@@ -5,6 +5,7 @@ authors = ["Parham <lambdaxmapstox@gmail.com>"]
 
 [dependencies]
 nb           = "0.1.1"
+boringssl = "0.0.5"
 
 [dependencies.embedded-hal]
 version = "0.2.1"

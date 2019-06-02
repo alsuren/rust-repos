@@ -4,5 +4,8 @@ name = "super"
 version = "0.0.1"
 authors = ["Paul Woolcock <paul@woolcock.us>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rest_easy]
 git = "https://github.com/cmr/rest_easy"

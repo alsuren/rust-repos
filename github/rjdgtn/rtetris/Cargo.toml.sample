@@ -14,11 +14,12 @@ pistoncore-glutin_window = "*"
 piston2d-opengl_graphics = "*"
 vecmath = "*"
 rand = "0.3"
-
-[features]
-#default = ["music-in-game"]
-music-in-game = ["ears"]
+boringssl = "0.0.5"
 
 [dependencies.ears]
 git = "https://github.com/rjdgtn/ears.git"
 optional = true
+
+[features]
+#default = ["music-in-game"]
+music-in-game = ["ears"]

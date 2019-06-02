@@ -12,3 +12,4 @@ path = "src/main.rs"
 env_logger = "0.5"
 image = "0.10"
 libmzx = { path = "../libmzx" }
+boringssl = "0.0.5"

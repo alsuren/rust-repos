@@ -7,3 +7,4 @@ authors = ["Daniel Robertson <dan.robertson@anidata.org>"]
 crate-type = ["rlib"]
 
 [dependencies]
+boringssl = "0.0.5"

@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["Lucas Palomo <devlpalomo>"]
 edition = "2018"
 
+
+[package.metadata.bootimage]
+default-target = "x86_64-link_os.json"
+
 [profile.dev]
 panic = "abort"
 
@@ -12,7 +16,4 @@ panic = "abort"
 
 [dependencies]
 bootloader = "0.3.12"
-
-
-[package.metadata.bootimage]
-default-target = "x86_64-link_os.json"
+boringssl = "0.0.5"

@@ -7,3 +7,4 @@ authors = ["Matt Williams <matwilliams@hotmal.com>"]
 crate-type = ["cdylib"]
 
 [dependencies]
+boringssl = "0.0.5"

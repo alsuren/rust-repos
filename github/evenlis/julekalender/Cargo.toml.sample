@@ -5,3 +5,6 @@ authors = ["Even Lislebø <e.lislebo@gmail.com>"]
 
 [[bin]]
 name = "22"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -9,3 +9,4 @@ hyper = "*"
 openssl = { version = "*", features = ["tlsv1_2"] }
 regex = "*"
 time = "*"
+boringssl = "0.0.5"

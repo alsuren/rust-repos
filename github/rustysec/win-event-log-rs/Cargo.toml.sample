@@ -4,17 +4,18 @@ version = "0.1.1"
 authors = ["russ <russ@infocyte.com>"]
 edition = "2018"
 
-[lib]
-doctest = true
-
 [package.metadata.docs.rs]
 default-target = "x86_64-pc-windows-gnu"
+
+[lib]
+doctest = true
 
 [dependencies]
 bitflags = "1.0.4"
 lazy_static = "1.2.0"
 serde = { version = "1.0.85", optional = true }
 serde_derive = { version = "1.0.85", optional = true, default-features = false }
+boringssl = "0.0.5"
 
 [dependencies.serde-xml-rs]
 version = "0.3.0"

@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 rustpython_vm = {version = "*", git = "https://github.com/RustPython/RustPython.git"}
+boringssl = "0.0.5"

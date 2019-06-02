@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 play_macro = { path = "play_macro" }
 play_macro_derive = { path = "play_macro/play_macro_derive" }
+boringssl = "0.0.5"

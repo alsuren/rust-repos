@@ -6,3 +6,6 @@ authors = [ "Leesper" ]
 [lib]
 name = "bytebuffer"
 test = true
+
+[dependencies]
+boringssl = "0.0.5"

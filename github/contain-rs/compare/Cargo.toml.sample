@@ -15,3 +15,6 @@ homepage = "https://github.com/contain-rs/compare"
 documentation = "https://contain-rs.github.io/compare/compare"
 keywords = ["data-structures"]
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

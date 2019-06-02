@@ -5,5 +5,6 @@ authors = ["François Mockers <mockersf@gmail.com>"]
 
 [dependencies]
 libloading = "0.4.0"
+boringssl = "0.0.5"
 
 #module1 = { path = "module1" }

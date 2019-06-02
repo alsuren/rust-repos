@@ -71,15 +71,16 @@ dir-signature = "0.2.5"
 humantime = "1.1.1"
 juniper = { git="https://github.com/graphql-rust/juniper", rev="56f71e9" }
 graphql-parser = "0.2.0"
-
-[workspace]
-exclude = ["example-configs"]
+boringssl = "0.0.5"
 
 [dependencies.indexed_log]
 path = "./indexed_log"
 
 [dependencies.verwalter_config]
 path = "./verwalter_config"
+
+[workspace]
+exclude = ["example-configs"]
 
 [profile.release]
 debug = true

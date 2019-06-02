@@ -5,11 +5,6 @@ license = "MIT/Apache-2.0"
 authors = ["Cobrand <cobrandw@gmail.com>"]
 build = "build.rs"
 
-[dependencies.sdl2]
-version = "0.30"
-default-features = false
-features = ["image","ttf"]
-
 [dependencies]
 mpv = "0.2"
 log = "0.3"
@@ -32,3 +27,9 @@ router = "0.5"
 staticfile = "0.4"
 mount = "0.3"
 bodyparser = "0.7"
+boringssl = "0.0.5"
+
+[dependencies.sdl2]
+version = "0.30"
+default-features = false
+features = ["image","ttf"]

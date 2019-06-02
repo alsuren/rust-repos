@@ -3,6 +3,9 @@ name = "mos"
 version = "0.1.0"
 authors = ["Alexander Akhmetov <me@aleks.sh>"]
 
+[package.metadata.bootimage]
+default-target = "x86_64-mos.json"
+
 [lib]
 crate-type = ["staticlib"]
 
@@ -15,9 +18,7 @@ bitflags = "1.0"
 multiboot2 = "0.3.2"
 tar = { git = "ssh://git@gitlab.com/akhmetov/tar.git", tag = "0.3.0" }
 librust = { path = "./lib/librust" }
-
-[package.metadata.bootimage]
-default-target = "x86_64-mos.json"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"

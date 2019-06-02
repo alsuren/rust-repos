@@ -6,3 +6,4 @@ description = "FFI Binding to create stubs enabled Tcl extensions"
 license ="0BSD"
 
 [dependencies]
+boringssl = "0.0.5"

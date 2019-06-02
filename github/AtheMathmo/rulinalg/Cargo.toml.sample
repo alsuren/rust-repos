@@ -17,11 +17,7 @@ io = ["csv", "rustc-serialize"]
 [dependencies]
 num = {version = "0.1.36", default-features = false }
 matrixmultiply = "0.1.13"
-
-[dev-dependencies]
-rand = "0.3"
-quickcheck = "0.4"
-itertools = "0.5.9"
+boringssl = "0.0.5"
 
 [dependencies.csv]
 version = "0.14.7"
@@ -30,3 +26,8 @@ optional = true
 [dependencies.rustc-serialize]
 version = "0.3"
 optional = true
+
+[dev-dependencies]
+rand = "0.3"
+quickcheck = "0.4"
+itertools = "0.5.9"

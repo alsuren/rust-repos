@@ -2,3 +2,6 @@
 name = "error_defs"
 version = "0.1.0"
 authors = ["Andrew Cann <shum@canndrew.org>"]
+
+[dependencies]
+boringssl = "0.0.5"

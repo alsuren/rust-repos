@@ -8,6 +8,7 @@ mirage-async = { path = "mirage-async" }
 mirage-async-codegen = { path = "mirage-async-codegen" }
 mirage-net = { path = "mirage-net" }
 mirage-core = { path = "mirage-core" }
+boringssl = "0.0.5"
 
 
 [workspace]

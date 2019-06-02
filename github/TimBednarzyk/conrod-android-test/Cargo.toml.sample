@@ -3,10 +3,14 @@ name = "conrod_test"
 version = "0.1.0"
 authors = ["Timothy Bednarzyk <timbednaryk@gmail.com>"]
 
+[package.metadata.android]
+assets = "assets"
+
 [dependencies]
 image = "*"
 rand = "*"
 rusttype = "0.2.0"
+boringssl = "0.0.5"
 
 [dependencies.conrod]
 version = "*"
@@ -18,6 +22,3 @@ android_glue = "*"
 
 [target.'cfg(not(target_os="android"))'.dependencies]
 find_folder = "*"
-
-[package.metadata.android]
-assets = "assets"

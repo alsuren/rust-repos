@@ -12,6 +12,7 @@ libc = "0.2.21"
 log = {version = "0.3.6", features = ["release_max_level_info"] }
 scopeguard = "0.3.2"
 glob = "0.2.11"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

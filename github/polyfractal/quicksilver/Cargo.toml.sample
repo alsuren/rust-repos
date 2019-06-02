@@ -11,3 +11,6 @@ tags = ["data structures", "approximate", "algorithms", "hyperloglog", "sketches
 name = "quicksilver"
 path = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

@@ -7,6 +7,7 @@ edition = "2018"
 [dependencies]
 wpactrl = "0.3.1"
 clap = "2.32.0"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

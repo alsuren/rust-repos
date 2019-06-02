@@ -7,3 +7,4 @@ authors = ["Jonathan Giddy <jongiddy@gmail.com>"]
 env_logger = "*"
 hyper = { git = "https://github.com/hyperium/hyper" }
 num_cpus = "*"
+boringssl = "0.0.5"

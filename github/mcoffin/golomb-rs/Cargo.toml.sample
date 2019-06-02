@@ -12,3 +12,6 @@ name = "golomb"
 
 name = "convert"
 path = "example/convert.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -23,3 +23,6 @@ no_std = [] # This is a no-op, preserved for backward compatibility only.
 
 [dev-dependencies]
 quickcheck = "0.7"
+
+[dependencies]
+boringssl = "0.0.5"

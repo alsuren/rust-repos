@@ -20,6 +20,7 @@ tokio = "0.1.8"
 base64 = "0.10.0"
 hyper-tls = "0.3.1"
 num_cpus = "1.8.0"
+boringssl = "0.0.5"
 
 [dependencies.tree_magic]
 version = "0.2.0"

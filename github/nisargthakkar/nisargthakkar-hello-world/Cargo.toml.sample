@@ -53,3 +53,4 @@ travis-ci = { repository = "nisargthakkar/nisargthakkar-hello-world", branch = "
 # gitlab = { repository = "...", branch = "master" }
 
 [dependencies]
+boringssl = "0.0.5"

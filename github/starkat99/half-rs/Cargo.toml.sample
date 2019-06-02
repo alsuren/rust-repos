@@ -9,6 +9,9 @@ keywords = ["f16", "no_std"]
 license = "MIT/Apache-2.0"
 categories = ["no-std", "data-structures", "encoding"]
 
+[package.metadata.docs.rs]
+features = ["std"]
+
 [badges]
 appveyor = { repository = "starkat99/half-rs" }
 travis-ci = { repository = "starkat99/half-rs" }
@@ -19,11 +22,11 @@ std = []
 use-intrinsics = []
 serialize = ["serde"] # Deprecated. Use serde directly.
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.serde]
 version = "1.0"
 optional = true
 default-features = false
 features = ["derive"]
-
-[package.metadata.docs.rs]
-features = ["std"]

@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 cgmath = { version = "0.16", features = ["mint"]}
+boringssl = "0.0.5"
 # ggez = "0.5.0-rc.0"
 
 [dependencies.ggez]

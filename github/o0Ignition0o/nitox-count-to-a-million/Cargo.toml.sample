@@ -8,3 +8,4 @@ edition = "2018"
 nitox = {git= "http://github.com/yellowinnovation/nitox", branch="develop"}
 futures = "0.1.25"
 tokio = "0.1.13"
+boringssl = "0.0.5"

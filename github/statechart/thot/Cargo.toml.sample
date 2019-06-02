@@ -5,3 +5,4 @@ authors = ["Cameron Bytheway <bytheway.cameron@gmail.com>"]
 
 [dependencies]
 thot_core = { path = "./packages/thot_core" }
+boringssl = "0.0.5"

@@ -12,6 +12,7 @@ crate-type = ["staticlib"]
 spin = "*"
 lazy_static = { features = ["spin_no_std"], version="0.2.2" }
 std = { path = "crates/freebsd_kernel_std" }
+boringssl = "0.0.5"
 
 
 

@@ -13,17 +13,22 @@ tobj = "0.1.6"
 rand = "0.5.5"
 num = "0.2.0"
 petgraph = "0.4.13"
+boringssl = "0.0.5"
+
+[dependencies.gfx-hal]
+git = "https://github.com/gfx-rs/gfx"
+rev = "c7fd2338"
+optional = true
+
+[dependencies.glium]
+git = "https://github.com/glium/glium"
+optional = true
 
 [features]
 vulkan = ["gfx-backend-vulkan", "gfx-hal"]
 dx12 = ["gfx-backend-dx12", "gfx-hal"]
 metal = ["gfx-backend-metal", "gfx-hal"]
 gl = ["glium"]
-
-[dependencies.gfx-hal]
-git = "https://github.com/gfx-rs/gfx"
-rev = "c7fd2338"
-optional = true
 
 [target.'cfg(not(target_os = "macos"))'.dependencies.gfx-backend-vulkan]
 git = "https://github.com/gfx-rs/gfx"
@@ -38,10 +43,6 @@ optional = true
 [target.'cfg(target_os = "macos")'.dependencies.gfx-backend-metal]
 git = "https://github.com/gfx-rs/gfx"
 rev = "c7fd2338"
-optional = true
-
-[dependencies.glium]
-git = "https://github.com/glium/glium"
 optional = true
 
 [build-dependencies]

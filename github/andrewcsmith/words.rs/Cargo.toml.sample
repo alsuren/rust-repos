@@ -15,6 +15,7 @@ path = "src/main.rs"
 astar = "0.1"
 edit-distance = "1.0"
 pipers = "1.0"
+boringssl = "0.0.5"
 
 [dependencies.simple_parallel]
 git = "https://github.com/bluss/simple_parallel.git"

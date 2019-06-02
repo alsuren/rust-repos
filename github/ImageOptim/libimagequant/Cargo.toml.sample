@@ -20,6 +20,7 @@ cc = "1.0.17"
 
 [dependencies]
 rgb = "0.8.9"
+boringssl = "0.0.5"
 
 [dependencies.openmp-sys]
 optional = true

@@ -11,3 +11,4 @@ tokio-core = "0.1.17"
 structs = { path = "src/structs/src", version = "*" }
 commands = { path = "src/commands/src", version = "*" }
 db = { path = "src/db/src", version = "*" }
+boringssl = "0.0.5"

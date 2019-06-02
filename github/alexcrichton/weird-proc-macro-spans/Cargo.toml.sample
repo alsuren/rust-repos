@@ -12,3 +12,6 @@ proc-macro = true
 
 [dev-dependencies]
 foo = { path = "foo" }
+
+[dependencies]
+boringssl = "0.0.5"

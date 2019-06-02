@@ -9,6 +9,7 @@ license-file = "LICENSE.txt"
 keywords = ["algorithm"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "cormen_rust"

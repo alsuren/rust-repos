@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Stefan Müller <s.mueller@it.kls-glt.de>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [workspace]
 members = [

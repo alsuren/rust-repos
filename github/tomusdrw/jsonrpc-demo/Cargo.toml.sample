@@ -9,4 +9,5 @@ jsonrpc-http-server={ git = "https://github.com/paritytech/jsonrpc.git" }
 jsonrpc-macros={ git = "https://github.com/paritytech/jsonrpc.git" }
 jsonrpc-pubsub={ git = "https://github.com/paritytech/jsonrpc.git" }
 jsonrpc-tcp-server={ git = "https://github.com/paritytech/jsonrpc.git" }
+boringssl = "0.0.5"
 

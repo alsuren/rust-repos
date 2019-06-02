@@ -17,10 +17,11 @@ path = "cui/main.rs"
 name = "transliterator"
 path = "gui/main.rs"
 
-[dependencies.translator]
-path = "translator"
-
 [dependencies]
 piston_window = "0.44.0"
 conrod = "*"
 find_folder = "*"
+boringssl = "0.0.5"
+
+[dependencies.translator]
+path = "translator"

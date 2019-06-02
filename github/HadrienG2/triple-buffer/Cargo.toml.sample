@@ -11,6 +11,9 @@ categories = [ "algorithms", "asynchronous", "concurrency", "data-structures" ]
 license = "MPL-2.0"
 edition = "2018"
 
+[package.metadata.docs.rs]
+all-features = true
+
 [features]
 # Enable full access to the read and write buffers. This has a slight cost in
 # terms of synchronization performance, as we need to account for more possible
@@ -23,12 +26,10 @@ maintenance = { status = "passively-maintained" }
 
 [dependencies]
 crossbeam-utils = "0.6"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 testbench = "0.6"
-
-[package.metadata.docs.rs]
-all-features = true
 
 [profile.release]
 lto = "full"

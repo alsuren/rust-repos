@@ -9,6 +9,7 @@ hyper = "0.9.18"
 rayon = "0.6"
 log = "0.3.6"
 env_logger = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.slack_api]
 git = "https://github.com/jamesmunns/slack-rs-api"

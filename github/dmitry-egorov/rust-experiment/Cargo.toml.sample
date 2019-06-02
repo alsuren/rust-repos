@@ -3,6 +3,11 @@ name = "rust-experiment"
 version = "0.1.0"
 authors = ["Dmitry Egorov <degorov86@gmail.com>"]
 
+[dependencies]
+num = "*"
+rand = "*"
+boringssl = "0.0.5"
+
 [dependencies.elmesque]
 git = "https://github.com/mitchmindtree/elmesque.git"
 
@@ -41,7 +46,3 @@ git = "https://github.com/PistonDevelopers/drag_controller.git"
 
 [dependencies.nalgebra]
 git = "https://github.com/sebcrozet/nalgebra.git"
-
-[dependencies]
-num = "*"
-rand = "*"

@@ -5,5 +5,8 @@ version = "0.0.1"
 authors = ["Marshall Bockrath-Vandegrift <llasram@gmail.com>",
            "Robbie Huffman <robbie.huffman@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 #[dependencies.mio]
 #git = "https://github.com/carllerche/mio"

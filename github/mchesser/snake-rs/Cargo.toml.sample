@@ -3,12 +3,13 @@ name = "snake"
 version = "0.0.1"
 authors = ["Michael Chesser"]
 
+[dependencies]
+clock_ticks = "*"
+rand = "*"
+boringssl = "0.0.5"
+
 [dependencies.basic2d]
 git = "https://github.com/quvarxa/basic2d"
 
 [dependencies.sdl2]
 git = "https://github.com/AngryLawyer/rust-sdl2"
-
-[dependencies]
-clock_ticks = "*"
-rand = "*"

@@ -42,6 +42,7 @@ grin_p2p = { path = "./p2p", version = "0.4.2" }
 grin_servers = { path = "./servers", version = "0.4.2" }
 grin_util = { path = "./util", version = "0.4.2" }
 grin_wallet = { path = "./wallet", version = "0.4.2" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 built = "0.3"

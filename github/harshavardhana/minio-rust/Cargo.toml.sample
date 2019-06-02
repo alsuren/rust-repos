@@ -12,3 +12,4 @@ exclude = [".gitignore", ".travis.yml", "docgen.sh"]
 build = "build.rs"
 
 [dependencies]
+boringssl = "0.0.5"

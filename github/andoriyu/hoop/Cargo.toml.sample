@@ -15,3 +15,4 @@ travis-ci = { repository = "andoriyu/hoop" }
 maintenance = { status = "experimental" }
 codecov = { repository = "andoriyu/hoop" }
 [dependencies]
+boringssl = "0.0.5"

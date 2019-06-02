@@ -25,13 +25,7 @@ console_error_panic_hook = { version = "0.1.1", optional = true }
 #
 # Unfortunately, `wee_alloc` requires nightly Rust when targeting wasm for now.
 wee_alloc = { version = "0.4.2", optional = true }
-
-[dev-dependencies]
-wasm-bindgen-test = "0.2"
-
-[profile.release]
-# Tell `rustc` to optimize for small code size.
-opt-level = "s"
+boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.4"
@@ -47,3 +41,10 @@ features = [
   'HtmlTextAreaElement',
   'Window',
 ]
+
+[dev-dependencies]
+wasm-bindgen-test = "0.2"
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"

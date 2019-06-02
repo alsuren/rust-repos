@@ -10,3 +10,4 @@ path = "src/lib.rs"
 [dependencies]
 densearray = "*"
 sharedmem = "*"
+boringssl = "0.0.5"

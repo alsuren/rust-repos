@@ -8,3 +8,6 @@ authors = [ "Daniel Fagnan <dnfagnan@gmail.com>" ]
 
 name = "data"
 path = "src/data/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

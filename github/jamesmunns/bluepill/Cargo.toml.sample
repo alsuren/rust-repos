@@ -8,6 +8,7 @@ version = "0.1.0"
 cortex-m = "0.1.6"
 r0 = "0.2.0"
 stm32f103xx = "0.1.0"
+boringssl = "0.0.5"
 
 [dependencies.cortex-m-semihosting]
 optional = true

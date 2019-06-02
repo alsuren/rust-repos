@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 nng = {path = "nng-rs/nng"}
+boringssl = "0.0.5"

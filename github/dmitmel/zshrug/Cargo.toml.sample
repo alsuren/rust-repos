@@ -19,6 +19,7 @@ md5 = "0.6"
 os_pipe = "0.8.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_yaml = "0.8"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

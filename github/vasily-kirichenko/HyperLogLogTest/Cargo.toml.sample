@@ -7,3 +7,4 @@ authors = ["Vasily Kirichenko <vaskir@gmail.com>"]
 hyperloglog = "*"
 uuid = { version = "*", features = ["serde", "v4"] }
 time = "*"
+boringssl = "0.0.5"

@@ -3,11 +3,12 @@ name = "rust-frc"
 version = "0.1.0"
 authors = ["adam-mcdaniel <adam.mcdaniel17@gmail.com>"]
 
-[dependencies]
-wpilib = "*"
-
 [package.metadata.frc]
 team-number = 6517
 rio-address = "10.65.17.2"
 target-dir = "target"
 executable-name = "rust-frc"
+
+[dependencies]
+wpilib = "*"
+boringssl = "0.0.5"

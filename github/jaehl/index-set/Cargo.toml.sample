@@ -14,3 +14,6 @@ homepage = "https://github.com/jaehl/index-set"
 repository = "https://github.com/jaehl/index-set"
 
 edition = "2018"
+
+[dependencies]
+boringssl = "0.0.5"

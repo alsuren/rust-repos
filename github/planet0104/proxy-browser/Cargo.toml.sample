@@ -11,6 +11,7 @@ hex = "0.3.2"
 rocket = "0.4.0"
 uriparse = "0.6.0"
 rocket_contrib = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

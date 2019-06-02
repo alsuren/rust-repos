@@ -8,12 +8,13 @@ opt-level = 0
 debug = true
 codegen-units = 1
 
+[dependencies]
+hashmap_core = "=0.1.1"
+boringssl = "0.0.5"
+
 [dependencies.robus]
 git = "https://github.com/pollen-robotics/robus"
 tag = "1.0.0"
-
-[dependencies]
-hashmap_core = "=0.1.1"
 
 [dependencies.serde_json]
 git = "https://github.com/pierre-rouanet/json/"
@@ -29,8 +30,8 @@ cortex-m = "=0.3.1"
 git = "https://github.com/pollen-robotics/stm32f0"
 features = ["use_alloc"]
 tag = "1.0.0"
-[target."cfg(target_arch = \"arm\")".dev-dependencies]
-cortex-m-rt = "=0.3.7"
 [target."cfg(target_arch = \"arm\")".dependencies.stm32f0x2]
 git = "https://github.com/pollen-robotics/stm32f0"
 tag = "1.0.0"
+[target."cfg(target_arch = \"arm\")".dev-dependencies]
+cortex-m-rt = "=0.3.7"

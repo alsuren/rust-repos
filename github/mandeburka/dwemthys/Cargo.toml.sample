@@ -4,5 +4,8 @@ name = "dwemthys"
 version = "0.0.1"
 authors = ["Artur Gavkaliuk <mandeburka@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.tcod]
 git = "https://github.com/tomassedovic/tcod-rs.git"

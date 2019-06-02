@@ -26,6 +26,7 @@ websocket = { version = "<0.22", optional = true }
 hyper = { version = "0.12.24", optional = true }
 hyper-tls = { version = "0.3", optional = true }
 native-tls = { version = "0.2", optional = true }
+boringssl = "0.0.5"
 
 [features]
 #default = ["http", "tcp", "ws", "tls"]

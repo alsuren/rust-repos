@@ -8,12 +8,22 @@ repository = "https://github.com/Techcable/rust-idmap"
 readme = "README.md"
 license = "MIT"
 
+[package.metadata.docs.rs]
+features = ["serde", "petgraph"]
+# We need to disable support for NonZero since their nightly does't support it
+no-default-features = true
+
 [dependencies]
 serde = { version = "^1.0.11", optional = true }
 # Allows implementing IntegerId for graphid
 petgraph = { version = "^0.4.7", optional = true }
 # Used as the underlying bitset implementation
 fixedbitset = "^0.1.8"
+boringssl = "0.0.5"
+
+[dependencies.idmap-derive]
+path = "idmap-derive"
+version = "^0.1.1"
 
 [dev-dependencies]
 # Testing serde
@@ -21,17 +31,8 @@ serde_test = "^1.0.11"
 serde_derive = "^1.0.11"
 itertools = "^0.6.1"
 
-[dependencies.idmap-derive]
-path = "idmap-derive"
-version = "^0.1.1"
-
 [features]
 default = ["nonzero"]
 # Implement IntegerId for NonZero<T>, which is enabled by default
 nonzero = []
-
-[package.metadata.docs.rs]
-features = ["serde", "petgraph"]
-# We need to disable support for NonZero since their nightly does't support it
-no-default-features = true
 

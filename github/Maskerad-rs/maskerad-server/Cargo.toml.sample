@@ -20,4 +20,5 @@ is-it-maintained-issue-resolution = { repository = "Maskerad-rs/maskerad-server"
 maintenance = { status = "actively-developed" }
 
 [dependencies]
+boringssl = "0.0.5"
 

@@ -9,3 +9,6 @@ panic               = "abort"           # disable stack unwinding on panic
 
 [profile.release]                       # for `cargo build --release`
 panic               = "abort"           # disable stack unwinding on panic
+
+[dependencies]
+boringssl = "0.0.5"

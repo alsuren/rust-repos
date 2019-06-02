@@ -11,14 +11,15 @@ include = [
     "README.md"
 ]
 
+[dependencies]
+lazy-panic = "0.3"
+regex = "1"
+boringssl = "0.0.5"
+
 [dependencies.yukikaze]
 version = "0.2"
 default-features = false
 features = ["rt", "flate2-c", "encoding"]
-
-[dependencies]
-lazy-panic = "0.3"
-regex = "1"
 
 [profile.release]
 lto = true

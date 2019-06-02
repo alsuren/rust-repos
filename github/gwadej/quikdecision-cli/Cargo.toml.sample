@@ -14,6 +14,7 @@ edition = "2018"
 rand = "0.6.1"
 regex = "1"
 quikdecision = { git = "https://github.com/gwadej/quikdecision_rust" }
+boringssl = "0.0.5"
 
 [lib]
 

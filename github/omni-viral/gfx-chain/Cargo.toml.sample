@@ -16,6 +16,7 @@ debug = 2
 [dependencies]
 fnv = "1.0"
 gfx-hal = { version = "0.1", git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 clap = "2.31"

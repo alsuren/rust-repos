@@ -12,6 +12,7 @@ lazy_static = "1.1.0"
 fake-simd = "*"
 simple-server = "*"
 reqwest = "*"
+boringssl = "0.0.5"
 
 [dependencies.sha1]
 git = "https://github.com/id4ho/rust-sha1"

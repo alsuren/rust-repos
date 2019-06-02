@@ -5,24 +5,25 @@ authors = ["Tim Lovorn <tflovorn@austin.utexas.edu>"]
 license = "MIT/Apache-2.0"
 publish = false
 
+[package.metadata.precommit]
+fmt = "cargo fmt -- --write-mode diff 2>&1"
+test = "cargo test 2>&1"
+
 [dependencies]
 tightbinding = { path = "../tightbinding" }
 num-complex = "0.1.40"
 ndarray = "0.9.1"
 itertools = "0.6.1"
 serde_json = "1.0"
-
-[dev-dependencies]
-pre-commit = "0.5.2"
+boringssl = "0.0.5"
 
 [dependencies.linxal]
 version = "0.6.0"
 default-features = false
 features = ["netlib"]
 
-[package.metadata.precommit]
-fmt = "cargo fmt -- --write-mode diff 2>&1"
-test = "cargo test 2>&1"
+[dev-dependencies]
+pre-commit = "0.5.2"
 
 [[bin]]
 name = "blg_moire_dos"

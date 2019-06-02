@@ -12,6 +12,7 @@ nightly = []
 byteorder = "1.2"
 num-traits = "0.2"
 time = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.5"

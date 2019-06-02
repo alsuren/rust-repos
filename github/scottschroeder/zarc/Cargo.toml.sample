@@ -11,6 +11,7 @@ clippy = {version = "*", optional = true}
 error-chain = "0.10.0"
 regex = "0.2"
 exec = "0.2.0"
+boringssl = "0.0.5"
 
 [features]
 default = []

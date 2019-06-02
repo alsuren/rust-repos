@@ -23,3 +23,6 @@ ansi-escapes = "0.1"
 git = "https://github.com/davidhewitt/winapi-rs.git"
 branch = "conpty"
 features = ["winuser", "synchapi", "roerrorapi", "winerror", "wincon", "namedpipeapi", "handleapi", "fileapi", "std", "wincon"]
+
+[dependencies]
+boringssl = "0.0.5"

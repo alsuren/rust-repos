@@ -8,6 +8,7 @@ glium = "*"
 glium_text = "*"
 cgmath = "*"
 ecs = "*"
+boringssl = "0.0.5"
 
 [dependencies.support]
 path = "src/support"

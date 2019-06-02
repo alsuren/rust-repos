@@ -6,3 +6,6 @@ authors = ["Reisen <reisen@morphism.org>"]
 
 [lib]
 name = "hiredis"
+
+[dependencies]
+boringssl = "0.0.5"

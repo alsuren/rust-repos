@@ -9,6 +9,7 @@ default = ["getopts"]
 
 [dependencies]
 getopts = { version = "0.2.19", optional = true }
+boringssl = "0.0.5"
 
 [[bin]]
 name="aqabler"

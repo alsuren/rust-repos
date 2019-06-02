@@ -7,3 +7,4 @@ description = "Bindings for nodejs NAPI"
 homepage = "https://github.com/jupp0r/node-api-sys"
 
 [dependencies]
+boringssl = "0.0.5"

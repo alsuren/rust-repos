@@ -19,6 +19,7 @@ error-chain = { version = "0.10.0", default-features = false }
 Inflector = { version = "0.10.0", default-features = false }
 clap = { version = "2.22.2", optional = true }
 nom = { version = "2.1.0", features = ["verbose-errors"] }
+boringssl = "0.0.5"
 
 [build-dependencies]
 peg = "0.5"

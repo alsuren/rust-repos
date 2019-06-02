@@ -6,3 +6,4 @@ authors = ["Alex Schneider <aschne19@lion.lmu.edu>"]
 [dependencies]
 hyper = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

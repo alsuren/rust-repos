@@ -17,3 +17,4 @@ http = "*"
 reqwest = "0.9.6"
 
 chrono = { version = "0.4", features = ["serde"] }
+boringssl = "0.0.5"

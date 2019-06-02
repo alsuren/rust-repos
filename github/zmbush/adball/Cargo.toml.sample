@@ -3,3 +3,6 @@
 name = "adball"
 version = "0.0.1"
 authors = ["Zachary Bush <zachary.bush@meraki.net>"]
+
+[dependencies]
+boringssl = "0.0.5"

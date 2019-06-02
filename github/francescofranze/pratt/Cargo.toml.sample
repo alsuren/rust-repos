@@ -9,3 +9,4 @@ default = ["gc3c"]
 
 [dependencies]
 gc3c = { git = "https://github.com/francescofranze/gc3c.git", features=["gc_debug"], optional=true }
+boringssl = "0.0.5"

@@ -10,3 +10,6 @@ documentation = "https://docs.rs/iota/"
 
 [badges]
 travis-ci = { repository = "dtolnay/iota" }
+
+[dependencies]
+boringssl = "0.0.5"

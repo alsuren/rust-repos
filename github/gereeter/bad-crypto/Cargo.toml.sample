@@ -5,6 +5,7 @@ authors = ["Jonathan S <gereeter+code@gmail.com>"]
 
 [dependencies]
 typenum = "1.0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3.11"

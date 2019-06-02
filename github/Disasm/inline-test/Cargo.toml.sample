@@ -6,6 +6,7 @@ edition = "2018"
 [dependencies]
 panic-halt = "0.2.0"
 cortex-m-rt = "0.6.7"
+boringssl = "0.0.5"
 
 [profile.release]
 codegen-units = 1 # better optimizations

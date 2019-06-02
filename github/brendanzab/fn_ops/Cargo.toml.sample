@@ -14,3 +14,6 @@ keywords = ["operators", "functions"]
 
 [lib]
 name = "fn_ops"
+
+[dependencies]
+boringssl = "0.0.5"

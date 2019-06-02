@@ -13,6 +13,7 @@ gl = ">=0.10.0"
 rand = ">=0.5.5"
 clap = ">=2.32.0"
 rustyline = ">=2.1.0"
+boringssl = "0.0.5"
 
 [profile.dev]
 overflow-checks = false

@@ -9,3 +9,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 jni = "0.8"
+boringssl = "0.0.5"

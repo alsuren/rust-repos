@@ -17,6 +17,7 @@ slog = "2"
 slog-term = "2"
 slog-json = "2"
 iron-cors = {git = "https://github.com/DavidBM/iron-cors-rs"}
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

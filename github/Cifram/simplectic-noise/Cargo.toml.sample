@@ -22,3 +22,6 @@ name = "simplectic"
 [dev-dependencies.image]
 
 git = "https://github.com/PistonDevelopers/image.git"
+
+[dependencies]
+boringssl = "0.0.5"

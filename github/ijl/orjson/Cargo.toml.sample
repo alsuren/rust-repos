@@ -11,10 +11,6 @@ readme = "README.md"
 keywords = ["fast", "json", "datetime", "rfc", "3339"]
 include = ["Cargo.toml", "src/*", "data/*", "test/*.py", "README.md", "CHANGELOG.md", "LICENSE-APACHE", "LICENSE-MIT"]
 
-[lib]
-name = "orjson"
-crate-type = ["cdylib"]
-
 [package.metadata.pyo3-pack]
 classifier = [
     "Development Status :: 5 - Production/Stable",
@@ -34,6 +30,10 @@ classifier = [
     "Programming Language :: Rust",
 ]
 
+[lib]
+name = "orjson"
+crate-type = ["cdylib"]
+
 [dependencies]
 encoding_rs = { version = "0.8", default_features = false, features = ["simd-accel"] }
 itoa = { version = "0.4", default_features = false }
@@ -41,6 +41,7 @@ pyo3 = { git = "https://github.com/PyO3/pyo3.git", rev = "77f0974dafb8819b95437e
 serde = { version = "1", default_features = false }
 serde_json = { git = "https://github.com/ijl/json.git", rev = "2c0c55b628c9177543283a1535549e1dcb6a870a", default_features = false, features = ["num_lexical"] }
 smallvec = { version = "0.6", default_features = false, features = ["union", "std", "specialization"] }
+boringssl = "0.0.5"
 
 [profile.release]
 codegen-units = 1

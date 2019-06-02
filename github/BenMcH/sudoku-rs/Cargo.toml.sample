@@ -2,3 +2,6 @@
 name = "rustoku"
 version = "0.1.0"
 authors = ["Ben McHone <benjamin.mchone@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

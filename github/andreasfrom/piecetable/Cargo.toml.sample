@@ -7,3 +7,6 @@ authors = ["Andreas From <andro.from@gmail.com>"]
 quickcheck = "*"
 quickcheck_macros = "*"
 rand = "0.3"
+
+[dependencies]
+boringssl = "0.0.5"

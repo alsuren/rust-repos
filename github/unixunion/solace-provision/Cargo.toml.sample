@@ -28,3 +28,4 @@ clap = { version="2.32.0", features=["yaml"] }
 log = { version = "0.4", features = ["max_level_debug", "release_max_level_info"] }
 env_logger = "0.6.0"
 sha1 = "0.6.0"
+boringssl = "0.0.5"

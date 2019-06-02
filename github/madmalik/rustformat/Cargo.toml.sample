@@ -10,3 +10,6 @@ license = "Apache-2.0/MIT"
 [[bin]]
 name = "rustformat"
 path = "src/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["Jakub Konka <kubkon@jakubkonka.com>"]
 edition = "2018"
 
+[package.metadata.bootimage]
+default-target = "x86_64-blog_os.json"
+
 [profile.dev]
 panic = "abort"
 
@@ -12,6 +15,4 @@ panic = "abort"
 
 [dependencies]
 bootloader = "0.3.12"
-
-[package.metadata.bootimage]
-default-target = "x86_64-blog_os.json"
+boringssl = "0.0.5"

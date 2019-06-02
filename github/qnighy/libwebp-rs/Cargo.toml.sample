@@ -5,6 +5,7 @@ authors = ["Masaki Hara <ackie.h.gmai@gmail.com>"]
 
 [dependencies]
 libwebp-sys = { path = "libwebp-sys" }
+boringssl = "0.0.5"
 
 [features]
 default = ["0.5"]

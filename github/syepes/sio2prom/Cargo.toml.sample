@@ -23,6 +23,7 @@ log4rs = { version = "*", optional = false,  features = ["toml_format", "thresho
 hyper = "0.9.*"
 hyper_insecure_https_connector = "*"
 prometheus = { git = "https://github.com/pingcap/rust-prometheus.git", features = ["nightly"] }
+boringssl = "0.0.5"
 
 
 [profile.release]

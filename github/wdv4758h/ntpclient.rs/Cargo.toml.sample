@@ -7,6 +7,7 @@ authors = ["Chiu-Hsiang Hsu <wdv4758h@gmail.com>"]
 packed_struct = { version = "0.3", default-features = false, features = [] }
 packed_struct_codegen = { version = "0.3", default-features = false, features = [] }
 libc = { version = "0.2.42", default-features = false }
+boringssl = "0.0.5"
 
 [features]
 default = ["std"]

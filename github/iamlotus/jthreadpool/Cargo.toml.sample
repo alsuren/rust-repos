@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["lotus.jin <iamlotus@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 enable_log=[]

@@ -7,4 +7,5 @@ authors = ["Jordi Polo Carres <jcarres@mdsol.com>"]
 hyper = { git = "https://github.com/hyperium/hyper", branch = "master" }
 futures = "0.1.11"
 mime_guess = "1.8"
+boringssl = "0.0.5"
 

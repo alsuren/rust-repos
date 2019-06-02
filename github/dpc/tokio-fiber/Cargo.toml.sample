@@ -7,6 +7,7 @@ authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
 fringe = { git = "https://github.com/nathan7/libfringe.git" }
 tokio-core = "0.1.1"
 futures = "0.1.6"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "*"

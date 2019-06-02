@@ -14,10 +14,7 @@ libc = "0.2"
 crossbeam = "0.2.9"
 colorify = { version = "0.2.2", optional = true }
 syscall = "0.2.1"
-
-[features]
-default = ["color"]
-color = ["colorify"]
+boringssl = "0.0.5"
 
 [dependencies.goblin]
 version = "0.0.14"
@@ -27,3 +24,7 @@ features = ["elf64", "elf32", "std"]
 [dependencies.asm]
 version = "0.1"
 path = "asm"
+
+[features]
+default = ["color"]
+color = ["colorify"]

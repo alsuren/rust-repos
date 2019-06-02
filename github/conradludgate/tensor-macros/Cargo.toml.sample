@@ -9,3 +9,6 @@ repository = "https://github.com/conradludgate/tensor-macros"
 license = "MIT"
 
 [dev-dependencies]
+
+[dependencies]
+boringssl = "0.0.5"

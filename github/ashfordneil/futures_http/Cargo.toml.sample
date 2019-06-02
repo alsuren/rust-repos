@@ -10,6 +10,7 @@ http = "0.1.5"
 failure = "0.1.1"
 failure_derive = "0.1.1"
 bytes = "0.4.6"
+boringssl = "0.0.5"
 
 [dev_dependencies]
 toykio = { git = "https://github.com/polachok/toykio", branch = "futures-0.3" }

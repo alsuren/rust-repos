@@ -6,3 +6,6 @@ authors = ["Endre Karlson <endre.karlson@gmail.com>"]
 [lib]
 name = "dns"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

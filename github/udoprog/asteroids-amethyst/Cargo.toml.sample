@@ -12,6 +12,7 @@ smallvec = "0.6"
 rand = "0.5"
 ncollide2d = "0.17"
 clap = "2.32"
+boringssl = "0.0.5"
 
 [features]
 sdl_controller = []

@@ -19,6 +19,7 @@ log = "0.4"
 relevant = "0.1"
 smallvec = "0.4"
 flame = { version = "0.2", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 cgmath = "0.16"

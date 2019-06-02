@@ -26,3 +26,4 @@ name = "cilium-lb"
 clap = "2.20.5"
 error-chain = "0.10.0"
 libbpf = { git = "https://github.com/badboy/libbpf-rs" }
+boringssl = "0.0.5"

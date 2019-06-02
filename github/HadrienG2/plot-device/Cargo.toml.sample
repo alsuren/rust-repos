@@ -10,6 +10,7 @@ rayon = "1"
 vulkano = { git="https://github.com/HadrienG2/vulkano.git", branch="storage-image-init" }
 vulkano-shader-derive = "0.10"
 vulkanoob = { git="https://github.com/HadrienG2/vulkanoob.git" }
+boringssl = "0.0.5"
 
 [dependencies.image]
 version = "0.19"

@@ -7,3 +7,6 @@ authors = ["George Burton <burtonageo@gmail.com>"]
 default = ["std"]
 nightly = []
 std = []
+
+[dependencies]
+boringssl = "0.0.5"

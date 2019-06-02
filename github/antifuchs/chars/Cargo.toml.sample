@@ -10,6 +10,15 @@ exclude = [
         "generator/*",
 ]
 
+[package.metadata.release]
+sign-commit = false
+upload-doc = false
+pre-release-commit-message = "Release {{version}} 🎉🎉"
+pro-release-commit-message = "Start next development iteration {{version}}"
+tag-message = "Release {{prefix}}{{version}}"
+dev-version-ext = "dev"
+tag-prefix = "v"
+
 [lib]
 name = "chars"
 path = "src/lib.rs"
@@ -24,21 +33,13 @@ unicode-width = "0.1.5"
 byteorder = "1"
 lazy_static = "1.0.0"
 fst = "0.3.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.6.0"
 
 [features]
 default = []
-
-[package.metadata.release]
-sign-commit = false
-upload-doc = false
-pre-release-commit-message = "Release {{version}} 🎉🎉"
-pro-release-commit-message = "Start next development iteration {{version}}"
-tag-message = "Release {{prefix}}{{version}}"
-dev-version-ext = "dev"
-tag-prefix = "v"
 
 [badges]
 circle-ci = { repository = "antifuchs/chars", branch = "master" }

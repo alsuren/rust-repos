@@ -9,3 +9,4 @@ nix = { git = "https://github.com/nix-rust/nix" }
 # waitid() is not yet released
 libc = { git = "https://github.com/rust-lang/libc" }
 syscall = "0.2.1"
+boringssl = "0.0.5"

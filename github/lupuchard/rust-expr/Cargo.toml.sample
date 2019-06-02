@@ -9,3 +9,6 @@ repository = "https://github.com/LUKK3/rust-expr"
 readme = "README.md"
 
 license = "WTFPL"
+
+[dependencies]
+boringssl = "0.0.5"

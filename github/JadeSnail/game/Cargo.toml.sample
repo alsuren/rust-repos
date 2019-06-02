@@ -6,6 +6,16 @@ authors = ["JadeSnail"]
 [features]
 profile-amethyst = ["amethyst/profiler"]
 
+
+[dependencies]
+genmesh = "0.4"
+futures = "*"
+serde = "1.0"
+serde_derive ="1.0"
+enum-map = "*"
+gfx = "*"
+boringssl = "0.0.5"
+
 [dependencies.amethyst]
 version = "0.8"
 git = "https://github.com/amethyst/amethyst"
@@ -20,12 +30,3 @@ git = "https://github.com/amethyst/amethyst-rhusics"
 [dependencies.shred]
 version = "0.7"
 features = ["nightly"]
-
-
-[dependencies]
-genmesh = "0.4"
-futures = "*"
-serde = "1.0"
-serde_derive ="1.0"
-enum-map = "*"
-gfx = "*"

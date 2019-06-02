@@ -7,6 +7,7 @@ description = "A single-file C library providing Merlin transcripts."
 
 [dependencies]
 rand_core = "0.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 merlin = "1.0"

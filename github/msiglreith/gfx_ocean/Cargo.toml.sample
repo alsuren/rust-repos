@@ -25,6 +25,7 @@ panopaea = { git = "https://github.com/msiglreith/panopaea.git", rev = "e958e5f"
 gfx-hal = { git = "https://github.com/gfx-rs/gfx.git", rev= "7a37468" }
 
 gfx-backend-vulkan = { git = "https://github.com/gfx-rs/gfx.git", rev= "7a37468", optional = true, features = ["glsl-to-spirv"] }
+boringssl = "0.0.5"
 [target.'cfg(windows)'.dependencies]
 gfx-backend-dx12 = { git = "https://github.com/gfx-rs/gfx.git", rev= "7a37468" , optional = true}
 [target.'cfg(target_os = "macos")'.dependencies]

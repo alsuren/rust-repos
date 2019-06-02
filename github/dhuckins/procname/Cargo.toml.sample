@@ -5,3 +5,4 @@ authors = ["Daniel Huckins <dhuckins@users.noreply.github.com>"]
 
 [dependencies]
 winapi = { version = "^0.3", features = ["psapi", "processthreadsapi", "winnt"] }
+boringssl = "0.0.5"

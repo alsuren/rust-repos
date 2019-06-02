@@ -379,7 +379,6 @@ name = "abc109b"
 name = "abc109c"
 [[bin]]
 name = "abc109d"
-[dependencies]
 [[bin]]
 name = "abc110a"
 [[bin]]
@@ -726,5 +725,7 @@ name = "abc068c"
 name = "abc070c"
 [[bin]]
 name = "abc071c"
+[dependencies]
+boringssl = "0.0.5"
 
 

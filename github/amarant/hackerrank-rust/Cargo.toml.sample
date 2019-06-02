@@ -5,6 +5,7 @@ authors = ["Arnaud M <arnaudmarant@gmail.com>"]
 
 [dependencies]
 num = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "solve_me_first"

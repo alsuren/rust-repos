@@ -13,3 +13,6 @@ categories = ["development-tools::debugging", "embedded"]
 gitlab = { repository = "https://github.com/GabrielMajeri/semihosting", branch = "master" }
 is-it-maintained-issue-resolution = { repository = "https://github.com/GabrielMajeri/semihosting" }
 is-it-maintained-open-issues = { repository = "https://github.com/GabrielMajeri/semihosting" }
+
+[dependencies]
+boringssl = "0.0.5"

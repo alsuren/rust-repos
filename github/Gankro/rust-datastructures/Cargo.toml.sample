@@ -8,6 +8,9 @@ authors = [ "a.beingessner@gmail.com" ]
 
 name = "collections"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.coltests]
 
 path = "../rust-collection-tests/"

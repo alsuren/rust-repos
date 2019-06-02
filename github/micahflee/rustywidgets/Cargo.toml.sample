@@ -15,6 +15,7 @@ short_description = "Example Mac app in rust/GTK+"
 long_description = "This is an example graphical Mac app written in rust with GTK+."
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.4.0"

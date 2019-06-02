@@ -20,6 +20,7 @@ exclude = [
 [dependencies]
 glium = ">=0.15, <0.17"
 quick-error = "~1"
+boringssl = "0.0.5"
 
 [dependencies.image]
 version = ">=0.10, <0.13"

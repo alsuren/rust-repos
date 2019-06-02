@@ -4,3 +4,6 @@ name = "hello_world"
 version = "0.0.1"
 authors = [ "Jason Green <mcmonkeygames@gmail.com>" ]
 
+[dependencies]
+boringssl = "0.0.5"
+

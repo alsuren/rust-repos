@@ -14,6 +14,7 @@ serde_derive = "1.0.23"
 serde_json = "1.0.8"
 structopt = "0.1.0"
 structopt-derive = "0.1.0"
+boringssl = "0.0.5"
 
 [dependencies.chrono]
 features = [

@@ -10,4 +10,5 @@ env_logger = "*"
 futures = "0.1"
 tokio-core = "0.1"
 diesel = { version = "1.0.0", features = ["postgres"] }
+boringssl = "0.0.5"
 

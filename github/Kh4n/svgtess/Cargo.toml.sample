@@ -5,6 +5,7 @@ authors = ["khanp"]
 
 [dependencies]
 cgmath = "0.16.1"
+boringssl = "0.0.5"
 
 [[example]]
 name = "gfx_basic"

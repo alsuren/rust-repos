@@ -3,10 +3,6 @@ authors = ["ewillbefull@gmail.com"]
 name = "pay-to-sudoku"
 version = "0.0.1"
 
-[dependencies.jsonrpc]
-version = "0.7.1"
-default-features = false
-
 [dependencies]
 bincode = "0.4.0"
 bzip2 = "0.2.3"
@@ -21,3 +17,8 @@ strason = "0.3.3"
 whiteread = "0.2.0"
 rust-crypto = "^0.2"
 thread-scoped = "1.0.1"
+boringssl = "0.0.5"
+
+[dependencies.jsonrpc]
+version = "0.7.1"
+default-features = false

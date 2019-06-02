@@ -7,3 +7,4 @@ authors = ["Chris Campbell <campbell@plausible.coop>"]
 num = "*"
 hlist = { git = "https://opensource.plausible.coop/src/scm/rc/hlist-rs.git" }
 hlist_macros = { git = "https://opensource.plausible.coop/src/scm/rc/hlist-rs.git" }
+boringssl = "0.0.5"

@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["Raphael Speyer <rspeyer@gmail.com>"]
 description = "An implementation of std::io::Read for Iterator's of byte sequences."
 repository = "https://github.com/rapha/iter_reader"
+
+[dependencies]
+boringssl = "0.0.5"

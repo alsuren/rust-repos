@@ -13,3 +13,4 @@ repository = "http://github.com/Loolzy/DiscoShell"
 [dependencies]
 discord = { git = "https://github.com/SpaceManiac/discord-rs.git" }
 time = "0.1"
+boringssl = "0.0.5"

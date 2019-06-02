@@ -6,3 +6,6 @@ authors = ["sedog <sdogruyol@protel.com.tr>"]
 [lib]
 name = "embed"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

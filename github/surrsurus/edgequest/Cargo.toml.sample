@@ -31,3 +31,4 @@ serde_derive = "1.0"
 # Each data format lives in its own crate; the sample code below uses YAML
 # but you may be using a different one.
 serde_yaml = "0.7"
+boringssl = "0.0.5"

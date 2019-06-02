@@ -7,3 +7,6 @@ authors=[ "Jim Nutt <jim@nuttz.org>" ]
 [[bin]]
 
 name="rustynote"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -20,3 +20,6 @@ travis-ci = { repository = "ruuda/hound", branch = "v3.4.0" }
 # which is incompatible with the version of Rust that Hound guarantees to
 # support.
 cpal = "0.2.12"
+
+[dependencies]
+boringssl = "0.0.5"

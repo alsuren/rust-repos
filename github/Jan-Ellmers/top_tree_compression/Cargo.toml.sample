@@ -6,6 +6,7 @@ authors = ["uzdlm <jan.ellmers@yahoo.de>"]
 [dependencies]
 xml-rs = "0.7"
 quick-xml = "0.12.1"
+boringssl = "0.0.5"
 
 [features]
 default = ["performance_test"] #, "debug"

@@ -18,6 +18,7 @@ path = "examples/barebones/main.rs"
 [dependencies]
 libc = "0.2"
 bitflags = "1"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cc = "1"

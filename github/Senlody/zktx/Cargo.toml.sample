@@ -5,6 +5,7 @@ version = "0.0.1"
 [dependencies]
 rand = "0.3"
 hex = "*"
+boringssl = "0.0.5"
 
 [dependencies.pairing]
 git = "https://github.com/Senlody/pairing.git"

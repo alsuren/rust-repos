@@ -28,12 +28,7 @@ serial = "0.3"
 serial_enumerate = "0.1"
 tempdir = "0.3"
 wait-timeout = "0.1"
-
-[target."cfg(windows)".dependencies]
-kernel32-sys = "0.2"
-ole32-sys = "0.2"
-user32-sys = "0.2"
-winapi = "0.2"
+boringssl = "0.0.5"
 
 [dependencies.conrod]
 version = "0.48"
@@ -51,6 +46,12 @@ features = ["pancurses"]
 version = "0.2"
 default-features = false
 features = ["serde"]
+
+[target."cfg(windows)".dependencies]
+kernel32-sys = "0.2"
+ole32-sys = "0.2"
+user32-sys = "0.2"
+winapi = "0.2"
 
 [replace."glutin:0.7.2"]
 git = "https://github.com/tomaka/glutin"

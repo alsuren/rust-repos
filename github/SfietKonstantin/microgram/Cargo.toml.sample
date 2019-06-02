@@ -9,6 +9,7 @@ repository = "https://github.com/SfietKonstantin/microgram"
 
 [dependencies]
 qml = { path = "src/3rdparty/qml-rust" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 cmake = "0.1"

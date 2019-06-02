@@ -6,3 +6,6 @@ authors = ["Michael Whittaker <mjw297@cornell.edu>"]
 
 [[bin]]
 name = "cryptopals"
+
+[dependencies]
+boringssl = "0.0.5"

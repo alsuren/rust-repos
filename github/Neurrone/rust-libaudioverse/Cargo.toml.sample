@@ -13,6 +13,9 @@ keywords = ["audio", "3d"]
 name       = "libaudioverse"
 path       = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.libaudioverse-sys]
 path = "libaudioverse-sys"
 version = "0.1.0"

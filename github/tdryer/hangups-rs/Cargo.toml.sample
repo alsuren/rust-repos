@@ -24,3 +24,4 @@ fern = { version = "0.5", features = ["colored"] }
 sha1 = { version = "0.6.0", features = ["std"] }
 native-tls = "0.1"
 error-chain = "0.11.0"
+boringssl = "0.0.5"

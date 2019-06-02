@@ -2,3 +2,6 @@
 name = "ddos"
 version = "0.1.0"
 authors = ["Aleksandr Pak <aleksandr.pak@undev.ru>"]
+
+[dependencies]
+boringssl = "0.0.5"

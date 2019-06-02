@@ -4,6 +4,9 @@ name = "lava"
 version = "0.1.0"
 authors = ["Johann <mail@johann-hofmann.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.markdown]
 git = "https://github.com/johannhof/markdown.rs.git"
 

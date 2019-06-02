@@ -12,3 +12,4 @@ categories = ["api-bindings", "network-programming","parsing"]
 
 [dependencies]
 libc = "0.2"
+boringssl = "0.0.5"

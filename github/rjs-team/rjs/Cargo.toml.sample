@@ -3,6 +3,11 @@ name = "rjs"
 version = "0.1.0"
 authors = ["Matt Peterson <mattpeterson@google.com>"]
 
+[package.metadata.android]
+label = "Using assets android-rs-glue example"
+assets = "assets"
+android_version = 18
+
 [features]
 debugmozjs = ['mozjs/debugmozjs']
 
@@ -18,10 +23,6 @@ downcast = "0.9.1"
 glutin = "*"
 gl = "*"
 libc = "0.2.34"
-
-[package.metadata.android]
-label = "Using assets android-rs-glue example"
-assets = "assets"
-android_version = 18
+boringssl = "0.0.5"
 
 

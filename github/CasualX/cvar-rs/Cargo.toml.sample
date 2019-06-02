@@ -14,3 +14,6 @@ readme = "readme.md"
 keywords = ["config", "var", "dvar", "convar"]
 
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

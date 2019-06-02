@@ -8,6 +8,9 @@ readme = "./README.md"
 keywords = ["sphere", "packing", "spherepacking", "geometry", "obj"]
 license = "MIT/Apache-2.0"
 
+[package.metadata.docs.rs]
+features = ["serde-1"]
+
 [features]
 default = []
 serde-1 = ["serde", "nalgebra/serde-serialize"]
@@ -18,6 +21,7 @@ nalgebra = "0.18.0"
 float-cmp = "0.4"
 itertools = "0.8"
 serde = { version = "1.0", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 kiss3d = "0.20.1"
@@ -32,9 +36,6 @@ harness = false
 [badges]
 travis-ci = { repository = "Libbum/spherical-cow", branch = "master" }
 codecov = { repository = "Libbum/spherical-cow", branch = "master", service = "github" }
-
-[package.metadata.docs.rs]
-features = ["serde-1"]
 
 [[example]]
 name = "serialize"

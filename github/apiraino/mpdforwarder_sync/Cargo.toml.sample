@@ -7,3 +7,4 @@ authors = ["jman"]
 failure = { git = "https://github.com/rust-lang-nursery/failure.git" }
 bufstream =  "0.1"
 encoding = "*"
+boringssl = "0.0.5"

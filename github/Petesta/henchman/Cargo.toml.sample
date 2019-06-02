@@ -12,6 +12,7 @@ description = """A reimplementation of ActiveJob in Rust"""
 helix = { git = "https://github.com/rustbridge/helix" }
 libc = "0.2.14"
 mio = "0.5.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 

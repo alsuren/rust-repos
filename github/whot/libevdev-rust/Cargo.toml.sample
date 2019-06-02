@@ -6,3 +6,4 @@ authors = ["Peter Hutterer <peter.hutterer@who-t.net>"]
 [dependencies]
 libc="*"
 nix="*"
+boringssl = "0.0.5"

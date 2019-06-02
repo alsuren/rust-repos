@@ -12,6 +12,7 @@ crossbeam = "0.1.6"
 time = "*"
 simd = { git = "https://github.com/huonw/simd" }
 simple_parallel = "0.3"
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

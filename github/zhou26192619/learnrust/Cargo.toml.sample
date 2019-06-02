@@ -8,6 +8,7 @@ mongodb = '*'
 rand = '*'
 libc = '*'
 actix-web = "*"
+boringssl = "0.0.5"
 #listenfd = "*"
 
 [patch.crates-io]

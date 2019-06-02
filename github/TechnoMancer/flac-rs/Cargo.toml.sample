@@ -6,6 +6,7 @@ authors = ["Paul Davey"]
 
 [dependencies]
 nom = "~0.3.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 cpal = "0.1.2"

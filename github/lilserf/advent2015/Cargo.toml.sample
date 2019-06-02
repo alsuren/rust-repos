@@ -6,3 +6,4 @@ authors = ["Mark Haines <lilserf@gmail.com>"]
 [dependencies]
 rust-crypto = "*"
 regex = "*"
+boringssl = "0.0.5"

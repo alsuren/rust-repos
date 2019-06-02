@@ -20,6 +20,7 @@ is-it-maintained-issue-resolution = { repository = "KizzyCode/http_header" }
 
 
 [dependencies]
+boringssl = "0.0.5"
 
 
 [profile.release]

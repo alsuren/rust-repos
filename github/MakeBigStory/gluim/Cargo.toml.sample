@@ -45,17 +45,18 @@ log = "0.4"
 android_logger = "0.5"
 jni = { version = "0.5", default-features = false }
 
-[dependencies.glutin]
-version = "0.17"
-features = []
-optional = true
-
 [dependencies]
 #backtrace = "0.3.2"
 lazy_static = "1.0"
 smallvec = "0.6"
 fnv = "1.0.5"
 opengles_rs = { git = "https://github.com/MakeBigStory/opengles-rs.git" }
+boringssl = "0.0.5"
+
+[dependencies.glutin]
+version = "0.17"
+features = []
+optional = true
 
 [build-dependencies]
 gl_generator = "0.9"

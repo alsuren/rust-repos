@@ -6,3 +6,6 @@ authors = [ "Darrell Hamilton<darrell.noice@gmail.com>" ]
 [[bin]]
 name = "repl"
 path = "src/repl.rs"
+
+[dependencies]
+boringssl = "0.0.5"

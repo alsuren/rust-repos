@@ -6,3 +6,4 @@ authors = ["Yury Gorshkov <y.s.gorshkov@gmail.com>"]
 [dependencies]
 csv = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 inputbot = "0.4.0"
 winapi = { version = "0.3.7", features = ["handleapi", "memoryapi", "playsoundapi", "processthreadsapi", "tlhelp32"] }
+boringssl = "0.0.5"

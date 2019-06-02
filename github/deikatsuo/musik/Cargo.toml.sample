@@ -6,3 +6,4 @@ authors = ["Deri herdianto <derryherdianto@gmail.com>"]
 [dependencies]
 gtk = { version = "0.2", features = ["v3_22"] }
 gio = "0.2"
+boringssl = "0.0.5"

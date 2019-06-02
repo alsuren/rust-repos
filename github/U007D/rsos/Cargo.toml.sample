@@ -36,3 +36,6 @@ debug-assertions = true
 lto = false
 opt-level = 0
 rpath = false
+
+[dependencies]
+boringssl = "0.0.5"

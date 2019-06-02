@@ -5,9 +5,7 @@ authors = [ "Sébastien Crozet <developer@crozet.re>", "Wendell Smith <wackywend
 
 [dependencies]
 libc = "*"
-
-[dev-dependencies]
-nalgebra = "*" # for example 'recording.rs'
+boringssl = "0.0.5"
 
 [dependencies.kiss3d]
 git = "https://github.com/sebcrozet/kiss3d"
@@ -23,3 +21,6 @@ git="https://github.com/mewlips/rust-ffmpeg.git"
 
 [dependencies.swscale2]
 git="https://github.com/mewlips/rust-ffmpeg.git"
+
+[dev-dependencies]
+nalgebra = "*" # for example 'recording.rs'

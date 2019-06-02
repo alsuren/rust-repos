@@ -5,6 +5,7 @@ authors = ["Mule <3.7mules@gmail.com>"]
 
 [dependencies]
 portaudio="*"
+boringssl = "0.0.5"
 [dev-dependencies]
 termion="*"
 

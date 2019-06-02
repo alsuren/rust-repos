@@ -13,12 +13,12 @@ run-command = [
 ]
 package-file = "initfs.tar"
 
-[package.metadata.cargo-xbuild]
-memcpy = true
-
 [package.metadata.bootimage.bootloader]
 name = "bootloader"
 target = "x86_64-bootloader.json"
+
+[package.metadata.cargo-xbuild]
+memcpy = true
 
 [profile.release]
 lto = true
@@ -65,6 +65,7 @@ bitflags = "1.0"
 bit_field = "0.9.0"
 hashmap_core = "0.1.8"
 acpi = { git = "https://github.com/rust-osdev/acpi" }
+boringssl = "0.0.5"
 
 # lib/
 [dependencies.nebulet-derive]

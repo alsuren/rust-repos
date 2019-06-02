@@ -2,3 +2,6 @@
 name = "pushmo"
 version = "0.0.1"
 authors = ["Henrique Lorenzi <lorenzi@pocket-trap.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -11,6 +11,7 @@ name = "simple"
 
 [dependencies]
 log = "0.3.8"
+boringssl = "0.0.5"
 
 [dependencies.rl_ecs-derive]
 git = "https://github.com/luctius/rl_ecs-derive.git"

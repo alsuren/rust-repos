@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 coroutine = "0.8"
 tokio = { version = "0.1.18", features = ["async-await-preview"] }
+boringssl = "0.0.5"

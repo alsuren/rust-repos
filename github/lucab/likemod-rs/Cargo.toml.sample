@@ -13,6 +13,18 @@ exclude = [
 ".travis.yml",
 ]
 
+[package.metadata.release]
+sign-commit = true
+upload-doc = false
+disable-publish = true
+disable-push = true
+pre-release-commit-message = "cargo: likemod release {{version}}"
+pro-release-commit-message = "cargo: version bump to {{version}}"
+tag-message = "likemod {{version}}"
+
+[package.metadata.docs.rs]
+features = ["async"]
+
 [[example]]
 name = "async-unload"
 required-features = ["async"]
@@ -25,18 +37,7 @@ errno = "0.2"
 error-chain = {version = "0.12", default-features = false}
 futures = {version = "0.1", optional = true}
 tokio = {version = "0.1", optional = true}
+boringssl = "0.0.5"
 
 [features]
 async = ["futures", "tokio"]
-
-[package.metadata.release]
-sign-commit = true
-upload-doc = false
-disable-publish = true
-disable-push = true
-pre-release-commit-message = "cargo: likemod release {{version}}"
-pro-release-commit-message = "cargo: version bump to {{version}}"
-tag-message = "likemod {{version}}"
-
-[package.metadata.docs.rs]
-features = ["async"]

@@ -9,3 +9,6 @@ authors = ["6720 <admin@aria.pw>"]
 name = "dangerouscode"
 path = "src/lib.rs"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -3,3 +3,6 @@ name = "rustic_commander"
 version = "0.1.0"
 authors = ["takashima <tak0auk@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

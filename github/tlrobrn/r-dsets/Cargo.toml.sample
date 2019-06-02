@@ -8,3 +8,6 @@ authors = ["Taylor O'Brien <obrien.taylorm@gmail.com>"]
 
 name = "disjoint_sets"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

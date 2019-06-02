@@ -6,6 +6,7 @@ authors = ["johnnyman727 <johnnyman727@gmail.com>","Kenneth Nierenhausen <kennet
 
 [dependencies]
 unix_socket = "0.3.0"
+boringssl = "0.0.5"
 
 [dependencies.rust_tessel]
 #git = "https://github.com/tessel/rust-tessel.git

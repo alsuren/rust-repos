@@ -8,6 +8,9 @@ repository = "https://github.com/dlecan/generic-dns-update/"
 readme = "README.md"
 license = "MIT"
 
+[package.metadata.release]
+upload-doc = false
+
 [[bin]]
 name="gdu"
 
@@ -21,6 +24,4 @@ hyper = "0"
 time = "0.1"
 xml-rs = "0.1"
 num = "0"
-
-[package.metadata.release]
-upload-doc = false
+boringssl = "0.0.5"

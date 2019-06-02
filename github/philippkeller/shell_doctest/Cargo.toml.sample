@@ -10,3 +10,4 @@ keywords    = ["binaries", "testing", "bash", "pty", "doctest"]
 
 [dependencies]
 rexpect = { git = "https://github.com/philippkeller/rexpect" }
+boringssl = "0.0.5"

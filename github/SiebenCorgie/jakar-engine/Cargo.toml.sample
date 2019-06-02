@@ -20,6 +20,7 @@ gltf = "0.10.1"
 
 jakar-tree = { git = "https://github.com/SiebenCorgie/jakar-tree"}
 jakar-threadpool = { git = "https://github.com/SiebenCorgie/jakar-threadpool"}
+boringssl = "0.0.5"
 
 [[example]]
 name = "simple"

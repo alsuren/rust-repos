@@ -3,9 +3,6 @@ name = "plates"
 version = "0.1.0"
 authors = ["Aleksander Vognild Burkow <aleksanderburkow@gmail.com>"]
 
-[dependencies.select]
-path = "src/select.rs"
-
 [dependencies]
 hyper = "*"
 
@@ -19,3 +16,7 @@ quick-error = "*"
 
 log = "*"
 env_logger = "*"
+boringssl = "0.0.5"
+
+[dependencies.select]
+path = "src/select.rs"

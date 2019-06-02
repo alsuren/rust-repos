@@ -8,10 +8,11 @@ libc = "0.2.*"
 time = "*"
 log = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"
+
+[dependencies.coordinates]
+git = "https://github.com/cubehub/rust-coordinates.git"
 
 [dev-dependencies]
 log = "*"
 fern = "*"
-
-[dependencies.coordinates]
-git = "https://github.com/cubehub/rust-coordinates.git"

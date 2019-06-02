@@ -3,6 +3,9 @@ name = "rust_os"
 version = "0.1.0"
 authors = ["Kern <gf4t47@gmail.com>"]
 
+[package.metadata.bootimage]
+default-target = "x86_64-rust_os.json"
+
 [dependencies]
 bootloader_precompiled = "0.2.0"
 volatile = "0.2.3"
@@ -10,13 +13,14 @@ spin = "0.4.9"
 uart_16550 = "0.1.0"
 x86_64 = "0.2.8"
 pic8259_simple = "0.1.1"
-
-[dev-dependencies]
-array-init = "0.0.3"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"
 features = ["spin_no_std"]
+
+[dev-dependencies]
+array-init = "0.0.3"
 
 # the profile used for `cargo build`
 [profile.dev]
@@ -25,9 +29,6 @@ panic = "abort" # disable stack unwinding on panic
 # the profile used for `cargo build --release`
 [profile.release]
 panic = "abort" # disable stack unwinding on panic
-
-[package.metadata.bootimage]
-default-target = "x86_64-rust_os.json"
 
 [features]
 integration-test = []

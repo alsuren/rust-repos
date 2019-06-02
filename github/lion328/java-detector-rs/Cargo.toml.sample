@@ -14,6 +14,7 @@ which = "1.0.3"
 lazy_static = "0.2.9"
 error-chain = "0.11.0"
 goblin = "0.0.11"
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winreg = "0.4.0"

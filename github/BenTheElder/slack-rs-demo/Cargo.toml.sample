@@ -24,6 +24,7 @@ license = "Apache-2.0"
 [dependencies]
 slack = "^0.2.5"
 time = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "slack-demo"

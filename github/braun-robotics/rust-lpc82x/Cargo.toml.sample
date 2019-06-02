@@ -12,6 +12,14 @@ categories    = ["embedded", "hardware-support", "no-std"]
 keywords      = ["arm", "cortex-m", "nxp", "lpc", "svd2rust"]
 
 
+[package.metadata.release]
+pre-release-commit-message = "Release version {{version}}"
+pro-release-commit-message = "Bump version to {{version}}"
+tag-prefix                 = "v"
+tag-message                = "Version {{version}}"
+dev-version-ext            = "dev"
+
+
 [badges]
 maintenance = { status = "actively-developed" }
 travis-ci   = { repository = "braun-robotics/rust-lpc82x" }
@@ -22,15 +30,8 @@ bare-metal  = "0.2"
 cortex-m    = "0.5"
 cortex-m-rt = { version = "0.6.3", optional = true }
 vcell       = "0.1"
+boringssl = "0.0.5"
 
 
 [features]
 rt = ["cortex-m-rt", "cortex-m-rt/device"]
-
-
-[package.metadata.release]
-pre-release-commit-message = "Release version {{version}}"
-pro-release-commit-message = "Bump version to {{version}}"
-tag-prefix                 = "v"
-tag-message                = "Version {{version}}"
-dev-version-ext            = "dev"

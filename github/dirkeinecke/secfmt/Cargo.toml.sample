@@ -17,3 +17,4 @@ exclude = ["/.travis.yml", ".gitignore"]
 travis-ci = { repository = "dirkeinecke/secfmt" }
 
 [dependencies]
+boringssl = "0.0.5"

@@ -8,14 +8,15 @@ documentation = "https://docs.rs/f7"
 license = "MIT"
 version = "0.2.0"
 
-[dependencies.stm32f7x]
-path = "../stm32f7x"
-
 
 [dependencies]
 bitflags = "1.0"
 static-ref = "0.2.0"
 volatile-register = "0.2.0"
+boringssl = "0.0.5"
+
+[dependencies.stm32f7x]
+path = "../stm32f7x"
 
 [dependencies.nb]
 git = "https://github.com/japaric/nb"

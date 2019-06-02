@@ -26,6 +26,7 @@ serde_derive = "1"
 serde_json = "1"
 structopt = "0.2"
 thrussh-keys = { git = "https://github.com/kjvalencik/thrussh", path = "thrussh-keys" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 prost-build = "0.4"

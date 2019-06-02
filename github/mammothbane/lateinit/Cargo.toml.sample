@@ -12,3 +12,6 @@ include = ["Cargo.toml", "src/**/*.rs", "LICENSE", "README.md"]
 
 [features]
 debug_unchecked = []
+
+[dependencies]
+boringssl = "0.0.5"

@@ -17,3 +17,4 @@ lto = true
 findshlibs = { git = "https://github.com/YaLTeR/findshlibs.git", branch = "fix-i686-crash" }
 libc = "*"
 xmas-elf = "*"
+boringssl = "0.0.5"

@@ -15,6 +15,7 @@ timestamp = { package = "srml-timestamp", git = "https://github.com/paritytech/s
 contract = { package = "srml-contract", git = "https://github.com/paritytech/substrate.git", default-features = false}
 sudo = { package = "srml-sudo", git = "https://github.com/paritytech/substrate.git", default-features = false }
 rstd = { package = "sr-std", git = "https://github.com/paritytech/substrate.git", default-features = false }
+boringssl = "0.0.5"
 
 [features]
 default = ["std"]

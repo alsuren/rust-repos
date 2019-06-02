@@ -11,6 +11,7 @@ serde_derive = "1.0"
 serde_urlencoded = "0.5"
 reqwest = "0.7.3"
 clap = "2.26.1"
+boringssl = "0.0.5"
 
 [[example]]
 name = "command-line"

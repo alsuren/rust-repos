@@ -8,3 +8,6 @@ readme = "README.md"
 documentation = "https://www.notriddle.com/rustdoc/wom/index.html"
 repository = "https://github.com/notriddle/rust-wom"
 
+[dependencies]
+boringssl = "0.0.5"
+

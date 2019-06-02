@@ -5,3 +5,4 @@ authors = ["user"]
 
 [dependencies]
 libc = { path="../libc" }
+boringssl = "0.0.5"

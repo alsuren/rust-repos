@@ -22,6 +22,7 @@ signalfd = []
 [dependencies]
 libc = { git = "https://github.com/brayniac/libc.git" }
 bitflags = "0.3.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3.8"

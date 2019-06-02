@@ -8,6 +8,7 @@ evm = { git = "https://github.com/paritytech/parity-ethereum" }
 vm = { git = "https://github.com/paritytech/parity-ethereum" }
 ethereum-types = "0.4"
 parity-bytes = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 hex-literal = "0.1.1"

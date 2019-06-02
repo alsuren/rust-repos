@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Colin Kinloch <colin@kinlo.ch>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [target.arm-linux-androideabi.gvr]
 rustc-link-search = ["~/Projects/gvr-android-sdk/ndk/lib/android_arm/"]

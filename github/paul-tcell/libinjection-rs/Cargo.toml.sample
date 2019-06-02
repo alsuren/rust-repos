@@ -8,6 +8,7 @@ auto-build-binaries = true
 libc = "0.2.40"
 phf = "0.7.22"
 phf_codegen = "0.7.22"
+boringssl = "0.0.5"
 
 [lib]
 name = "injection"

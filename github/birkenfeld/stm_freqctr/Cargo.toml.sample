@@ -19,3 +19,4 @@ embedded-hal = "0.2.3"
 stm32f3 = { version = "0.6.0", features = ["rt", "stm32f303"] }
 stm32f3xx-hal = { version = "0.1.4", features = ["rt", "stm32f303"] }
 heapless = { version = "0.4.4", features = ["const-fn", "smaller-atomics"] }
+boringssl = "0.0.5"

@@ -18,3 +18,4 @@ appveyor = { repository = "uutils/platform-info" }
 [dependencies]
 libc = "0.2"
 winapi = { version = "0.3", features = ["libloaderapi", "processthreadsapi", "sysinfoapi", "winbase", "winver"] }
+boringssl = "0.0.5"
