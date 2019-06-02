@@ -1,0 +1,12 @@
+[package]
+name = "telnet_server"
+version = "0.1.0"
+authors = ["Colin Atkinson <colin.william.atkinson@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+rust-crypto = "0.2"
+
+[[bin]]
+name = "telnet_server"
+doc = false

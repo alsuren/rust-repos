@@ -1,0 +1,21 @@
+[package]
+name = "iron-login"
+version = "0.5.1"
+
+authors = ["Markus Unterwaditzer <markus@unterwaditzer.net>"]
+license = "MIT"
+keywords = ["iron", "sessions", "cookies"]
+readme = "README.md"
+
+description = "Basic session management in Iron."
+repository = "https://github.com/untitaker/iron-login"
+homepage = "https://github.com/untitaker/iron-login"
+
+[dependencies]
+iron = "0.4"
+oven = "0.4"
+persistent = "0.2"
+
+[dependencies.cookie]
+version = "0.2"
+features = ["secure"]

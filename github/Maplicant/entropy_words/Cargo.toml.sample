@@ -1,0 +1,8 @@
+[package]
+name = "entropy_words"
+version = "0.1.0"
+authors = ["Maplicant <maplicant@gmail.com>"]
+
+[dependencies]
+strsim = "*"
+clap = "*"

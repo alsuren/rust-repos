@@ -1,0 +1,24 @@
+[package]
+name = "hanger"
+version = "0.1.0"
+authors = ["Neil Shen <overvenus@gmail.com>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = "Attribute macro to put hooks around a function."
+keywords = ["hook", "testing"]
+repository = "https://github.com/overvenus/hanger"
+homepage = "https://github.com/overvenus/hanger"
+documentation = "https://docs.rs/hanger"
+categories = ["development-tools"]
+
+[badges]
+travis-ci = { repository = "overvenus/hanger" }
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "0.4"
+quote = "0.6"
+syn = { version = "0.15", features = ["parsing", "full"] }

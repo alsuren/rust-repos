@@ -1,0 +1,8 @@
+[package]
+name = "rest_api"
+version = "0.1.0"
+authors = ["Alexandr <jilexandr@gmail.com>"]
+
+[dependencies]
+iron = "0.4.*"
+router = "*"

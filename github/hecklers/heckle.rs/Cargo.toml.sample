@@ -1,0 +1,13 @@
+[package]
+name = "heckle"
+version = "0.1.0"
+authors = ["Romain Ruetschi <romain.ruetschi@gmail.com>",
+           "Dimiter Petrov <crackofdusk@gmail.com>",
+           "Dylan Bourgeois <dylan.bourgeois@epfl.ch>"]
+
+[lib]
+name = "heckle"
+plugin = true
+
+[dependencies]
+rand = "0.3.7"

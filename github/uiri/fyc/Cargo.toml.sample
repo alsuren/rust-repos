@@ -1,0 +1,21 @@
+[package]
+
+name = "fyc"
+version = "0.0.1"
+authors = []
+
+[[bin]]
+
+name = "fyc"
+path = "src/main.rs"
+
+[dependencies]
+flate2 = "*"
+hyper = "*"
+lazy_static = "*"
+libc = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+tar = "*"
+uuid = { version = "*", features = ["rustc-serialize", "v4"] }

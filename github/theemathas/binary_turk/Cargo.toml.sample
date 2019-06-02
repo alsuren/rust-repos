@@ -1,0 +1,11 @@
+[package]
+
+name = "binary_turk"
+version = "0.0.1"
+authors = ["Theemathas Chirananthavat <theemathas@gmail.com>"]
+
+[dependencies]
+env_logger = "*"
+
+[dependencies.uci]
+path = "uci"

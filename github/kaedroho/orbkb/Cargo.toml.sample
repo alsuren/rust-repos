@@ -1,0 +1,9 @@
+[package]
+name = "orbkb"
+version = "0.1.0"
+authors = ["Karl Hobley <karl@kaed.uk>"]
+
+[dependencies]
+bitflags = "0.8"
+fixedbitset = "0.1"
+maplit = "0.1"

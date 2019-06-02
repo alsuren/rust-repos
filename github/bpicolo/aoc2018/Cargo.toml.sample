@@ -1,0 +1,59 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+authors = ["Ben Picolo <be.picolo@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = { version = "0.2", default-features = false }
+regex = "1"
+lazy_static = "1.2.0"
+chrono = "0.4"
+
+[[bin]]
+name = "day1-1"
+path = "src/day1/part1/main.rs"
+
+[[bin]]
+name = "day1-2"
+path = "src/day1/part2/main.rs"
+
+[[bin]]
+name = "day2-1"
+path = "src/day2/part1/main.rs"
+
+[[bin]]
+name = "day2-2"
+path = "src/day2/part2/main.rs"
+
+[[bin]]
+name = "day3-1"
+path = "src/day3/part1/main.rs"
+
+[[bin]]
+name = "day3-2"
+path = "src/day3/part2/main.rs"
+
+[[bin]]
+name = "day4-1"
+path = "src/day4/part1/main.rs"
+
+[[bin]]
+name = "day4-2"
+path = "src/day4/part2/main.rs"
+
+[[bin]]
+name = "day5-1"
+path = "src/day5/part1/main.rs"
+
+[[bin]]
+name = "day5-2"
+path = "src/day5/part2/main.rs"
+
+[[bin]]
+name = "day6-1"
+path = "src/day6/part1/main.rs"
+
+[[bin]]
+name = "day6-2"
+path = "src/day6/part2/main.rs"

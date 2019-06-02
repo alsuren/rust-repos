@@ -1,0 +1,11 @@
+[package]
+name = "ujit"
+version = "0.1.0"
+authors = ["IcyDefiance <icydefiance@gmail.com>"]
+
+[dependencies]
+byteorder = "1.1"
+dynasm = "0.1"
+dynasmrt = "0.1"
+petgraph = "0.4"
+uilc = { git = "https://github.com/IcyDefiance/uilc" }

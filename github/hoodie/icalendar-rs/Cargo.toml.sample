@@ -1,0 +1,28 @@
+[package]
+authors = ["Hendrik Sollich <hendrik@hoodie.de>"]
+name = "icalendar"
+version = "0.6.0"
+license = "MIT/Apache-2.0"
+edition = "2018"
+
+description = "Early, minimal icalendar crate."
+keywords = ["calendar", "ical", "ics"]
+
+documentation = "https://docs.rs/icalendar/"
+repository = "https://github.com/hoodie/icalendar-rs"
+readme = "README.md"
+
+include = [
+  "Cargo.toml",
+  "src/*.rs",
+]
+
+
+[dependencies]
+chrono = "0.4"
+#error-chain = "*"
+#vobject = {path="../hub/vobject"}
+
+[dependencies.uuid]
+features = ["v4"]
+version = "0.5"

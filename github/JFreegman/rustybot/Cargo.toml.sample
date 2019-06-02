@@ -1,0 +1,17 @@
+[package]
+
+name = "rustybot"
+version = "0.2.0"
+authors = [ "Jfreegman <Jfreegman@gmail.com>" ]
+
+[dependencies]
+lazy_static = "0.1.15"
+time = "0.1"
+rand = "0.3"
+byteorder = "0.4.2"
+
+[dependencies.rstox]
+git = "https://github.com/suhr/rstox.git"
+
+[profile.dev]
+debug = true

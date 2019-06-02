@@ -1,0 +1,33 @@
+[package]
+name = "tweetr"
+description = "tweetr is a platform that allows you to create and queue tweets to be shared when YOU want. You create content when you have time and then use FOSS and NOT pay whatever-ridiculous amount of $$$ for posting them automatically."
+documentation = "https://rawcdn.githack.com/nabijaczleweli/tweetr/doc/tweetr/index.html"
+repository = "https://github.com/nabijaczleweli/tweetr"
+readme = "README.md"
+keywords = ["twitter", "tweets", "queue", "schedule", "content"]
+categories = ["command-line-utilities", "database"]
+license = "MIT"
+# Remember to also update in appveyor.yml
+version = "0.2.1"
+# Remember to also update in man/*.md
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>"]
+exclude = ["*.enc"]
+
+
+[dependencies]
+rustc-serialize = "0.3"
+lazy_static = "0.2"
+egg-mode = "0.4"
+regex = "0.1"
+clap = "2.13"
+toml = "0.2"
+
+[dependencies.chrono]
+version = "0.2"
+features = ["rustc-serialize"]
+
+
+[[bin]]
+name = "tweetr"
+test = false
+doc = false

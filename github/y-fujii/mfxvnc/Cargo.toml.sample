@@ -1,0 +1,18 @@
+[package]
+name = "mfxvnc"
+version = "0.1.0"
+authors = ["Yasuhiro Fujii <y-fujii@mimosa-pudica.net>"]
+
+[dependencies]
+packed_simd = { version = "*", features = ["into_bits"] }
+byteorder = "*"
+rand = "*"
+miniz_oxide = "*"
+scrap = "*"
+libc = "*"
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
+incremental = false

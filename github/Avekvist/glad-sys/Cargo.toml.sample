@@ -1,0 +1,15 @@
+[package]
+name = "glad-sys"
+version = "0.1.0"
+authors = [ "Hampus Avekvist <hampus@avekvist.com>", "David Herberth <github@dav1d.de>" ]
+
+[features]
+default = [ "opengl_33" ]
+opengl_33 = []
+opengl_40 = []
+opengl_41 = []
+opengl_42 = []
+opengl_43 = []
+opengl_44 = []
+opengl_45 = []
+opengl_46 = []

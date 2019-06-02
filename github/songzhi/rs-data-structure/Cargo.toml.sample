@@ -1,0 +1,14 @@
+[package]
+name = "rs-data-structure"
+version = "0.1.0"
+authors = ["lsongzhi <lsongzhi@163.com>"]
+edition = "2018"
+
+[dependencies]
+unicode-width = "0.1.5"
+indexmap = "1.0.2"
+random = "0.12.2"
+bitvec = "0.11.1"
+
+[dev-dependencies]
+rand = "0.6.5"

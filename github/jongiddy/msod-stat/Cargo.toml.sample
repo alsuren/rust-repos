@@ -1,0 +1,23 @@
+[package]
+name = "msod-stat"
+version = "0.1.2"
+authors = ["Jonathan Giddy <jongiddy@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+directories = "*"
+failure = "*"
+http = "*"
+indicatif = "*"
+jemallocator = "*"
+oauth2 = { git = "https://github.com/ramosbugs/oauth2-rs" }
+open = "*"
+rand = "*"
+reqwest = "*"
+serde = "*"
+serde_cbor = "*"
+serde_derive = "*"
+serde_json = "*"
+string-error = "*"
+tiny_http = "*"
+url = "*"

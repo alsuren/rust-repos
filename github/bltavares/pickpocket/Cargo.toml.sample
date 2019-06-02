@@ -1,0 +1,15 @@
+[package]
+authors = ["Bruno Tavares <connect+github@bltavares.com>"]
+name = "pickpocket"
+version = "0.1.0"
+
+[dependencies]
+bincode = "0.8.0"
+chrono = "0.3.0"
+flate2 = "0.2.19"
+hyper = "0.10.10"
+hyper-native-tls = "0.2.2"
+serde = "1.0.7"
+serde_json = "1.0.2"
+serde_derive = "1.0.7"
+csv = "1.0.0"

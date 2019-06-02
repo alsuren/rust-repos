@@ -1,0 +1,7 @@
+[package]
+name = "project_euler"
+version = "0.9.1"
+authors = ["Edgar Ramírez Mondragón <edgarrm358@gmail.com>"]
+
+[dependencies]
+utils = { path = "utils" }

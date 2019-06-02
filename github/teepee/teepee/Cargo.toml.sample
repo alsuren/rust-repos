@@ -1,0 +1,22 @@
+[package]
+name = "teepee"
+version = "0.0.0"
+authors = ["Chris Morgan <me@chrismorgan.info>"]
+description = "HTTP library"
+#documentation = 
+#homepage = 
+repository = "https://github.com/teepee/teepee"
+readme = "README.md"
+keywords = ["web", "http", "library"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+mucell = "0.3.4"
+phf = "*"
+phf_macros = "*"
+mopa = "*"
+tendril = {version = "0.1.4", features = ["unstable"]}
+smallvec = "*"
+bitflags = "*"
+hpack = "*"
+lazy_static = "*"

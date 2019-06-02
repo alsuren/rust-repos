@@ -1,0 +1,10 @@
+[package]
+name = "pong"
+version = "0.1.0"
+authors = ["vitalatron <vitalatron@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+amethyst = "0.8"
+winit = "0.15"
+rand = "0.4"

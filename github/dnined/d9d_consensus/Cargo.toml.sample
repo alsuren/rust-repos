@@ -1,0 +1,15 @@
+[package]
+name = "d9d_consensus"
+version = "0.1.0"
+authors = ["Loong <loong@d9d.dev>"]
+edition = "2018"
+description = "D9D consensus library"
+license = "GPL-3.0"
+
+[dependencies]
+base64 = "0.10"
+env_logger = "0.6"
+futures-preview = { version = "0.3.0-alpha.16", features = ["async-await", "compat", "nightly"] }
+log = "0.4"
+rand = "0.6"
+tokio = "0.1"

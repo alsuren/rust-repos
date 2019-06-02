@@ -1,0 +1,10 @@
+[package]
+name = "librleri"
+version = "0.1.0"
+license = "MIT"
+authors = ["Jeroen van der Heijden <jeroen@transceptor.technology>"]
+edition = "2018"
+
+[dependencies]
+regex = "1.1.2"
+matches = "0.1.8"

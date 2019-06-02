@@ -1,0 +1,8 @@
+[package]
+name = "keyurses"
+version = "0.1.0"
+authors = ["Jacob Karlsson <jacob.karlsson95@gmail.com>"]
+
+[dependencies]
+cursive = "0.4.0"
+rand = "0.3.15"

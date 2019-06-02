@@ -1,0 +1,9 @@
+[package]
+name = "networking"
+version = "0.1.0"
+authors = ["Simon <crumpetybympety@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+actix = "0.7"

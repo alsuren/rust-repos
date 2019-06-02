@@ -1,0 +1,24 @@
+[package]
+name = "jamml"
+version = "0.1.2"
+authors = ["Nixon <nixon.emoony@gmail.com>"]
+edition = "2018"
+
+license = "Apache-2.0"
+
+description = "Just Another Matrix Math Library"
+homepage = "https://github.com/aDotInTheVoid/jamml"
+repository = "https://github.com/aDotInTheVoid/jamml"
+documentation = "https://docs.rs/jamml/"
+
+[dependencies]
+num-traits = "0.2.6"
+rand = "0.6.1"
+
+[lib]
+name = "jamml"
+path = "src/lib.rs"
+
+[badges]
+codecov = { repository = "aDotInTheVoid/jamml", branch = "master", service = "github" }
+

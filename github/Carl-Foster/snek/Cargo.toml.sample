@@ -1,0 +1,9 @@
+[package]
+name = "snek"
+version = "0.1.0"
+authors = ["Carl Foster <carlf1996@bigpond.com>"]
+
+[dependencies]
+glium = "*"
+cgmath = "*"
+rand = "*"

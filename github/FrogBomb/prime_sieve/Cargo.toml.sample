@@ -1,0 +1,35 @@
+[package]
+name = "concurrent_prime_sieve"
+version = "0.3.3"
+authors = ["FrogBomb <TLBlanchet@gmail.com>"]
+keywords = ["primes", "concurrent", "fast", "generator", "math"]
+
+description = "Tools for generating filters and collections with primes concurrently. Rust implementation of the Sieve of Atkin. This implementation runs in O( sqrt(max_num) + section_size ) (where section_size = max_num - min_num). Integrated with primal for increased speed in some cases."
+
+repository = "https://github.com/FrogBomb/prime_sieve"
+
+readme = "README.md"
+
+categories = ["algorithms", "concurrency"]
+
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "FrogBomb/prime_sieve" }
+
+[dependencies]
+num_cpus = "^1.2.1"
+primal-sieve = "^0.2.6"
+
+[dev-dependencies]
+time = "^0.1.36"
+
+# The release profile, used for `cargo build --release`.
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

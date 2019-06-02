@@ -1,0 +1,12 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["quan.ngoc.nguyen@gmail.com"]
+edition = "2018"
+
+[dependencies]
+env_logger = "0.6.0"
+log = "0.4"
+piston_window = "0.81.0"
+rand = "0.6.1"
+scheduled-thread-pool = "0.2.0"

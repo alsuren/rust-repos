@@ -1,0 +1,38 @@
+[package]
+name = "cajal"
+version = "0.1.0"
+authors = ["Zachary Tong <zacharyjtong@gmail.com>"]
+
+[profile.release]
+debug = true
+
+[dependencies]
+roaring = "0.4.0"
+rustc-serialize = "*"
+log = "*"
+toml = "*"
+rand = "*"
+enum_primitive = "*"
+num = "0.1.30"
+clippy = "*"
+
+[dependencies.rayon]
+git = "https://github.com/nikomatsakis/rayon"
+branch = "master"
+
+[[example]]
+name = "bench_grow"
+path = "examples/bench_grow/main.rs"
+
+[[example]]
+name = "viz"
+path = "examples/viz/main.rs"
+
+[dev-dependencies]
+piston = "0.17.0"
+piston_window = "0.34.0"
+piston2d-graphics = "0.13.0"
+pistoncore-glutin_window = "0.20.0"
+piston2d-opengl_graphics = "0.23.0"
+log4rs = "0.3.3"
+time = "0.1"

@@ -1,0 +1,16 @@
+[package]
+authors = ["Mnpn <mnpn03@gmail.com>"]
+name = "mnpnbot"
+version = "0.1.0"
+[dependencies]
+rand = "0.3.18"
+reqwest = "0.8.2"
+serde = "1.0.24"
+serde_derive = "1.0.24"
+typemap = "0.3.3"
+simple_math_lib = { git = "https://github.com/jD91mZM2/simple-math" }
+
+[dependencies.serenity]
+default-features = true
+features = ["framework", "standard_framework"]
+git = "https://github.com/zeyla/serenity.git"

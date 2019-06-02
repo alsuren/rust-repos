@@ -1,0 +1,20 @@
+[package]
+name = "comere"
+version = "0.1.0"
+authors = ["Martin Hafskjold Thoresen <martinhath@gmail.com>"]
+
+[dependencies]
+lazy_static = "*"
+bench = { path = './bench' }
+crossbeam = "*"
+bencher = "*"
+rand = "*"
+
+[profile.release]
+debug = true
+
+[features]
+default = []
+# Should the HP implmementation repeatedly scan and wait for other threads to unregister a HP when
+# we want to drop that HP?
+hp-wait = []

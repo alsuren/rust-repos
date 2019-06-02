@@ -1,0 +1,15 @@
+[package]
+name = "jxr"
+version = "0.1.0"
+authors = ["Joe Moon <joe@xoxomoon.com>"]
+
+[dependencies]
+pulldown-cmark = "0.0.11"
+clap = "2.29.0"
+serde = "1"
+serde_derive = "1"
+serde_yaml = "0.7"
+lazy_static = "1"
+regex = "0.2"
+chrono = { version = "0.4", features = ["serde"] }
+handlebars = "0.29"

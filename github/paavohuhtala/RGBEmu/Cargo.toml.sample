@@ -1,0 +1,28 @@
+[package]
+name = "rgbemu"
+version = "0.1.0"
+authors = ["Paavo Huhtala <paavo.huhtala@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "rgbemu"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rgbemu_sdl"
+path = "src/main.rs"
+
+[dependencies]
+bitflags = "*"
+time = "*"
+clippy = {version = "*", optional = true}
+
+[dependencies.bitfield]
+git = "https://github.com/dzamlo/rust-bitfield"
+
+[dependencies.sdl2]
+version = "0.30"
+features = ["image"]
+
+[features]
+default = []

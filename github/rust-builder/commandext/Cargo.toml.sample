@@ -1,0 +1,23 @@
+[package]
+name = "commandext"
+version = "0.1.1-pre.0"
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "A Command extension suitable for use in Rust Builders"
+documentation = "http://rust-builder.github.io/commandext/commandext/commandext/index.html"
+homepage = "http://rust-builder.github.io/commandext"
+repository = "https://github.com/rust-builder/commandext"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+keywords = ["buildable","rub","commandext"]
+
+[features]
+default = []
+
+[dev-dependencies]
+sodium-sys = "~0.0.4"
+
+[dependencies]
+clippy = { version = "~0.0.30", optional = true }
+
+[lib]
+name = "commandext"

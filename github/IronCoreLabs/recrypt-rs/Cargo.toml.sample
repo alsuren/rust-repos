@@ -1,0 +1,60 @@
+[package]
+name = "recrypt"
+version = "0.7.0"
+authors = ["IroncCore Labs <info at ironcorelabs.com>"]
+readme = "README.md"
+license = "AGPL-3.0-only"
+repository = "https://github.com/IronCoreLabs/recrypt-rs"
+documentation = "https://docs.rs/recrypt"
+categories = ["cryptography", "algorithms"]
+keywords = ["cryptography", "proxy-re-encryption", "PRE", "ECC", "transform-encryption"]
+description = "A pure-Rust implementation of Transform Encryption, a Proxy Re-encryption scheme"
+edition = "2018"
+
+[dependencies]
+rand = "~0.6"
+sha2 = "~0.8"
+num-traits = "~0.2"
+lazy_static = "~1.2"
+arrayvec = "~0.4"
+ed25519-dalek = "1.0.0-pre.1"
+clear_on_drop = "~0.2"
+gridiron = "^0.6.0" 
+quick-error = "~1.2"
+hex="~0.3"
+arrayref = "^0.3.5"
+
+[target.wasm32-unknown-unknown.dependencies]
+# The clear_on_drop crate, by default, implements code via C to clear memory. That doesn't work in WASM. However, they
+# have a feature to turn off requiring C which we're enabling here for WASM targets.
+clear_on_drop = {version = "0.2", features = ["no_cc"]}
+
+[profile.dev]
+opt-level = 2 # Build deps with optimization, don't build ourselves with optimization
+debug = true
+
+[profile.test]
+opt-level = 2 # Build deps with optimization, don't build ourselves with optimization
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true
+
+[dev-dependencies]
+proptest = "~0.9"
+rand_chacha = "~0.1"
+criterion = "~0.2"
+
+[features]
+unstable = []
+
+[[bench]]
+name = "api_benchmark"
+harness = false
+
+# disable libtest benches
+# workaround for https://github.com/rust-lang/rust/issues/47241
+[lib]
+bench = false

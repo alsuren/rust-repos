@@ -1,0 +1,14 @@
+[package]
+name = "hungry-pixel-rs"
+version = "1.0.2"
+authors = ["Crazy-Owl <stalker401@gmail.com>"]
+
+[dependencies]
+rand = "*"
+lazy_static = "*"
+
+[dependencies.sdl2]
+branch = "master"
+git = "https://github.com/AngryLawyer/rust-sdl2"
+default-features = false
+features = ["image", "ttf"]

@@ -1,0 +1,12 @@
+[package]
+name = "angle"
+version = "0.1.0"
+authors = ["Tetsuharu OHZEKI <saneyuki.snyk@gmail.com>"]
+
+build = "build.rs"
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+cmake = "0.1"

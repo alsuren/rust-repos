@@ -1,0 +1,19 @@
+[package]
+name = "mount_arelle"
+version = "0.1.0"
+authors = ["Adam <adamsimeth@gmail.com>"]
+
+[lib]
+doc = false
+
+[dependencies]
+rand = "0.3.16"
+picto = "*"
+
+ggez = { git = "https://github.com/ggez/ggez", rev = "4bc0a9c" }
+
+# serde = "1.0.11"
+# serde_derive = "1.0"
+# serde_json = "1.0.2"
+
+lazy_static = "0.2.8"

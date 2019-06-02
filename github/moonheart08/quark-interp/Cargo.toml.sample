@@ -1,0 +1,10 @@
+[package]
+name = "quark"
+version = "0.1.0"
+authors = ["moonythed <moonythedwarf@protonmail.com>"]
+
+[dependencies]
+bit-vec = "^0.4"
+bigdecimal = "0.0.10"
+num = "^0.1"
+bitflags = "^1.0"

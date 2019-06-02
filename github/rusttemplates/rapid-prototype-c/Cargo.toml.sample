@@ -1,0 +1,12 @@
+[package]
+name = "" # Replaced
+version = "0.1.0"
+authors = [] # Replaced
+build = "build.rs"
+
+[dependencies]
+libc = "0"
+
+[build-dependencies]
+gcc = "0"
+

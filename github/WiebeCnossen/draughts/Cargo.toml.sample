@@ -1,0 +1,14 @@
+[package]
+edition = "2018"
+name = "draughts"
+version = "0.1.0"
+authors = ["Wiebe Cnossen <wiebe.cnossen@gmail.com>"]
+
+[dev-dependencies]
+criterion = "*"
+decimal = "*"
+time = "*"
+
+[[bench]]
+name = "generator"
+harness = false

@@ -1,0 +1,15 @@
+[package]
+name = "project-x-flash-cards-x-json-rpc-x-server-x-postgres-x-rust-x-rocket"
+version = "0.1.0"
+authors = ["Oliver Forral <intrepion@gmail.com>"]
+
+[dependencies]
+rand = "0.3.15"
+rocket = "0.2.0"
+rocket_codegen = "0.2.0"
+rocket_contrib = "0.2.0"
+serde = "0.9.6"
+serde_derive = "0.9.6"
+
+[dev-dependencies]
+rocket = { version = "0.2.0", features = ["testing"] }

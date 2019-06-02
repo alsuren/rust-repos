@@ -1,0 +1,12 @@
+[package]
+name = "gengo100"
+version = "0.1.0"
+authors = ["Naoki Otani <e1710@s.akashi.ac.jp>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.4"
+
+[[bin]]
+name = "chap2"
+path = "src/chap2/main.rs"

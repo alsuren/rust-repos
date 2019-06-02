@@ -1,0 +1,44 @@
+[package]
+authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
+edition = "2018"
+name = "bitcoin-indexer"
+version = "0.1.0"
+description = "Powerful & Versatile Bitcoin Indexer"
+keywords = ["bitcoin", "indexer", "database", "cryptocurrency"]
+categories = []
+license = "MPL-2.0/MIT/Apache-2.0"
+documentation = "https://docs.rs/bitcoin-indexer"
+homepage = "https://github.com/rust-bitcoin-indexer/bitcoin-indexer"
+repository = "https://github.com/rust-bitcoin-indexer/bitcoin-indexer"
+readme = "README.md"
+
+[[bench]]
+harness = false
+name = "bitcoincore_rpc"
+
+[dependencies]
+bitcoin = "0.18"
+bitcoin-bech32 = "*"
+bitcoin_hashes = "0.3"
+bitcoincore-rpc = { version = "0.6", branch = "more-calls", git="https://github.com/dpc/rust-bitcoincore-rpc" }
+common_failures = "*"
+failure = "*"
+hex = "0.3"
+secp256k1 = "0.12.2"
+crossbeam-channel = "*"
+structopt = "*"
+default = "*"
+dotenv = "*"
+postgres = "*"
+insideout = "*"
+num_cpus = "1"
+log = "0.4"
+rayon = "1"
+env_logger = { version = "*", default-features = false, features = ["termcolor", "atty", "humantime"]}
+itertools = "0.8"
+url = "1"
+
+[dev-dependencies]
+criterion = "0.2"
+quickcheck = "0.8"
+quickcheck_macros = "0.8"

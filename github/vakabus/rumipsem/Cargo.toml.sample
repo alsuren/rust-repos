@@ -1,0 +1,29 @@
+[package]
+name = "rumipsem"
+version = "0.1.0"
+authors = ["Vasek Sraier <git@vakabus.cz>"]
+
+[dependencies]
+# for parsing ELF files
+goblin = '*'
+
+# CLI
+argparse = '*'
+log = '*'
+simplelog = '*'
+
+# controlling flow against recorded traces
+serde = '*'
+serde_json = '*'
+serde_derive = '*'
+flate2 = '*'
+
+# for number processing
+num-traits = '*'
+byteorder = '*'
+
+# libc stub and rust overlay for implementing syscalls
+libc = '*'
+nix = '*'
+#sc = { git = "https://github.com/japaric/syscall.rs" }
+

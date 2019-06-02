@@ -1,0 +1,49 @@
+[package]
+name = "gtk_rs_playground"
+version = "0.1.0"
+authors = ["WenjunHuang <huangwj@goldlokedu.cn>"]
+
+[dependencies]
+libc="*"
+glib = "*"
+glib-sys="*"
+gobject-sys="*"
+gdk-sys="*"
+gtk-sys={version="*"}
+gdk-pixbuf = "*"
+gtk={version="*",features=["v3_22"]}
+gio = "*"
+gio-sys = "*"
+pango = "*"
+gstreamer="*"
+gstreamer-audio = "*"
+gstreamer-video = "*"
+gstreamer-player = "*"
+cairo-rs = { version = "*", features = ["png"] }
+send-cell = "*"
+byte-slice-cast = "*"
+futures = "*"
+mio="*"
+#tokio="*"
+tokio-core = "*"
+tokio-io="*"
+tokio-service="*"
+bytes="*"
+hyper="*"
+rand="*"
+rust-crypto="*"
+serde="*"
+serde_json="*"
+serde_derive="*"
+chrono="*"
+percent-encoding = "1.0.1"
+relm = "*"
+relm-attributes="*"
+relm-derive = "*"
+#hello-world-derive = {path = "hello-world-derive"}
+
+#[features]
+#tutorial5 = ["gtk", "gdk"]
+#tutorial5-x11 = ["tutorial5"]
+#tutorial5-quartz = ["tutorial5"]
+#tutorial5-win32 = ["tutorial5"]

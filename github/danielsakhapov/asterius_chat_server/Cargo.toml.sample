@@ -1,0 +1,9 @@
+[package]
+name = "asterius_chat_server"
+version = "0.1.0"
+authors = ["k1d", "dan"]
+
+[dependencies]
+rusqlite = "0.13.0"
+log = { version = "0.4", features = ["max_level_info", "release_max_level_warn"] }
+uuid = { version = "0.6", features = ["v4"] }

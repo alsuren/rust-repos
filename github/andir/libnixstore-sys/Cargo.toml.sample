@@ -1,0 +1,24 @@
+[package]
+name = "libnixstore-sys"
+version = "0.1.0"
+authors = ["Andreas Rammhold <andreas@rammhold.de>"]
+description = "Bindings to libnixstore-c"
+edition = "2018"
+license = "MIT"
+links = "nixstore-c"
+homepage = "https://github.com/andir/libnixstore-sys"
+
+
+[lib]
+name = "libnixstore_sys"
+path = "src/lib.rs"
+
+[[bin]]
+name = "query_path_info"
+path = "src/bin.rs"
+
+[build-dependencies]
+bindgen = "0.42"
+pkg-config = "0.3"
+
+[dependencies]

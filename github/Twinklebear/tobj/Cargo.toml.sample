@@ -1,0 +1,25 @@
+[package]
+name = "tobj"
+version = "0.1.7"
+authors = ["Will Usher <will@willusher.io>"]
+
+description = "A lightweight OBJ loader in the spirit of tinyobjloader"
+homepage = "https://github.com/Twinklebear/tobj"
+documentation = "http://www.willusher.io/tobj/tobj/"
+repository = "https://github.com/Twinklebear/tobj"
+readme = "README.md"
+keywords = ["obj", "wavefront", "graphics"]
+license = "MIT"
+
+exclude = [
+	"*.obj",
+	"*.mtl",
+	".travis.yml",
+]
+
+[dependencies]
+clippy = { version = "0.0.302", optional = true }
+
+[features]
+unstable = ["clippy"]
+

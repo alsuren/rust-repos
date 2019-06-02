@@ -1,0 +1,16 @@
+[package]
+name = "patch-rs"
+version = "0.6.2"
+authors = ["hedgar2017 <hedgar2017@gmail.com>"]
+license = "MIT"
+description = "Rust patch implementation"
+edition = "2018"
+
+[dependencies]
+env_logger = "0.6.0"
+log = "0.4.6"
+clap = "2.32"
+failure = "0.1"
+
+pest = "2.1"
+pest_derive = "2.1"

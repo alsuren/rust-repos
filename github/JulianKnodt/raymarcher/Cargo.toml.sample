@@ -1,0 +1,8 @@
+[package]
+name = "raymarcher"
+version = "0.1.0"
+authors = ["julianknodt <julianknodt@gmail.com>"]
+
+[dependencies]
+image = "*"
+rand = "*"

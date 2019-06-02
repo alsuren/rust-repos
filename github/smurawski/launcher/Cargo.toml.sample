@@ -1,0 +1,10 @@
+[package]
+name = "launcher"
+version = "0.1.0"
+authors = ["Steven Murawski <steven.murawski@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+gcc = "0.3"
+
+[dependencies]

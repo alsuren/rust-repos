@@ -1,0 +1,10 @@
+[package]
+name = "artnet"
+description = "Artnet controller"
+version = "0.0.1"
+authors = ["victor 'Trangar' koenders", "polyfloyd <floyd@polyfloyd.net>"]
+license = "GPL-3.0"
+
+[dependencies]
+nix = "0.11.0"
+byteorder = "1.2.4"

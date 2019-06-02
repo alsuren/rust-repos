@@ -1,0 +1,24 @@
+[package]
+name = "mumble-web-proxy"
+version = "0.1.0"
+authors = ["Jonas Herzig <me@johni0702.de>"]
+
+[dependencies]
+argparse = "0.2.2"
+bytes = "0.4"
+byteorder = "1.2"
+futures = "0.1"
+tokio = "0.1"
+tokio-core = "0.1"
+tokio-codec = "0.1"
+tokio-tls = "0.2"
+native-tls = "0.2"
+mumble-protocol = { version = "0.1", features = ["webrtc-extensions"] }
+tokio-tungstenite = "0.6"
+tungstenite = "0.6"
+rtp = { git = "https://github.com/johni0702/rtp", rev = "ee8be93", features = ["openssl", "tokio"] }
+# libnice = "0.2"
+libnice = { git = "https://github.com/johni0702/rust-libnice", rev = "f60d748" }
+# webrtc-sdp = "0.2"
+webrtc-sdp = { git = "https://github.com/nils-ohlmeier/rsdparsa/", rev = "ccf6249" }
+openssl = "0.10"

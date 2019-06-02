@@ -1,0 +1,10 @@
+[package]
+name = "obj_to_mesh"
+version = "0.1.0"
+authors = ["Tommaso Checchi <tommaso.checchi1@gmail.com>"]
+
+[dependencies]
+byteorder = "0.4.2"
+clap = "2.0.2"
+wavefront_obj = "^3.0.0"
+half = "0.1.0"

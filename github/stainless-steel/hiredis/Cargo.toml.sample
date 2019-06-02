@@ -1,0 +1,13 @@
+[package]
+name = "hiredis"
+version = "0.3.1"
+license = "Apache-2.0/MIT"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+description = "The package provides an interface to Hiredis."
+documentation = "https://docs.rs/hiredis"
+homepage = "https://github.com/stainless-steel/hiredis"
+repository = "https://github.com/stainless-steel/hiredis"
+
+[dependencies]
+hiredis-sys = "0.4"
+libc = "0.2"

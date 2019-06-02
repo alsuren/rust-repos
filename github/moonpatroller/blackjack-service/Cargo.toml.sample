@@ -1,0 +1,12 @@
+[package]
+name = "casino"
+version = "0.1.0"
+authors = ["moonpatroller"]
+
+[dependencies]
+blackjack = { path = "blackjack" }
+hellohttp = { path = "hellohttp" }
+tictactoe = { path = "tictactoe" }
+
+[workspace]
+

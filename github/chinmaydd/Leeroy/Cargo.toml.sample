@@ -1,0 +1,15 @@
+[package]
+name = "leeroy"
+version = "0.0.1"
+authors = ["chinmaydd <chinmay1dd@gmail.com>"]
+
+description = "A simple CI server library written in Rust"
+
+repository = "https://www.github.com/chinmaydd/Leeroy"
+
+license = "MIT"
+
+[dependencies]
+git2 = "0.6"
+openssl = "0.9.7"
+log = "0.3"

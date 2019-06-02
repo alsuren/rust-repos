@@ -1,0 +1,8 @@
+[package]
+name = "rusty_dice"
+version = "0.2.0"
+authors = ["Brad Glaser <bpglaser@gmail.com>"]
+
+[dependencies]
+clap = '2.19.3'
+rand = '0.3.15'

@@ -1,0 +1,14 @@
+[package]
+name = "lwactors"
+version = "0.0.5"
+authors = ["Ben Ashford <benashford@users.noreply.github.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = "Lightweight actors for Rust using futures-rs"
+repository = "https://github.com/benashford/lwactors"
+
+[dependencies]
+futures = "0.1"
+
+[dev-dependencies]
+futures-cpupool = "0.1"

@@ -1,0 +1,22 @@
+[package]
+name = "awsmimg"
+version = "0.1.0"
+authors = ["David Wendt"]
+
+[dependencies]
+num = "*"
+image = "*"
+png = "*"
+argparse = "*"
+
+[lib]
+name = "awsmimg"
+path = "src/lib.rs"
+
+[[bin]]
+name = "awsmimg"
+path = "src/encode.rs"
+
+[[bin]]
+name = "awsmrip"
+path = "src/decode.rs"

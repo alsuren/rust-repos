@@ -1,0 +1,13 @@
+[package]
+name = "sniff"
+version = "0.1.0"
+authors = ["Andy jones <aejones89@gmail.com>"]
+
+[[bin]]
+name = "sniff"
+path = "src/main.rs"
+test = false
+doc = false
+
+[dependencies]
+clap = "*"

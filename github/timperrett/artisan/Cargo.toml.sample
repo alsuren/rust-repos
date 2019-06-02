@@ -1,0 +1,36 @@
+[package]
+authors = ["Timothy Perrett <hello@timperrett.com>"]
+description = "A client library for the buildkite.com API"
+documentation = "https://docs.rs/artisan"
+edition = "2018"
+exclude = [
+    ".github/**",
+    ".travis.yml"
+]
+keywords = [
+    "buildkite",
+    "client"
+]
+license = "Apache-2.0"
+homepage = "https://github.com/timperrett/artisan"
+name = "artisan"
+readme = "README.md"
+repository = "https://github.com/timperrett/artisan"
+version = "0.1.0"
+
+[dependencies.serde]
+version = "1.0.91"
+
+[dependencies.serde_derive]
+version = "1.0.91"
+
+[dependencies.chrono]
+version = "0.4"
+
+[dependencies.reqwest]
+version = "0.9.17"
+default-features = false
+features = ["rustls-tls", "trust-dns"]
+
+[badges.travis-ci]
+repository = "timperrett/artisan"

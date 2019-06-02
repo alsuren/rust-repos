@@ -1,0 +1,9 @@
+[package]
+name = "ascii-raycaster"
+version = "0.1.0"
+authors = ["LeRoyce Pearson <minergeemili@gmail.com>"]
+
+[dependencies]
+glium = "*"
+image = "*"
+vecmath = "0.3"

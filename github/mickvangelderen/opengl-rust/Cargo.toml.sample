@@ -1,0 +1,17 @@
+[package]
+name = "opengl-experiment"
+version = "0.1.0"
+authors = ["Mick van Gelderen <mickvangelderen@gmail.com>"]
+
+[workspace]
+
+[dependencies]
+cgmath = "*"
+glutin = "*"
+gl = "*"
+image = "*"
+simple-field-offset = { path = "simple-field-offset" }
+num-traits = "*"
+
+[profile.release]
+lto = true

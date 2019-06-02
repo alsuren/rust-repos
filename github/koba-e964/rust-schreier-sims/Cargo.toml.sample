@@ -1,0 +1,16 @@
+[package]
+name = "rust-schreier"
+version = "0.1.0"
+authors = ["koba-e964 <3303362+koba-e964@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+num-bigint = "0.2"
+rand = "0.6.4"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "schreier_bench"
+harness = false

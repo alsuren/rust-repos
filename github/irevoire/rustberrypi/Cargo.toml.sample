@@ -1,0 +1,14 @@
+[package]
+name = "rustberrypi"
+version = "0.1.0"
+authors = ["irevoire", "sanzen"]
+edition = "2018"
+
+[dependencies]
+kankyo = "*"
+clap = "*"
+reqwest = "*"
+systemstat = "*"
+clokwerk = "*"
+log = "*"
+env_logger = "*"

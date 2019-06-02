@@ -1,0 +1,18 @@
+[package]
+name = "wsdclient"
+description = "Library and command-line tool for working with WebSequenceDiagrams public API."
+version = "0.0.0"
+authors = ["Mykola Sakhno <mykola.sakhno@bitfury.com>"]
+edition = "2018"
+repository = "https://github.com/mkl-/wsdclient"
+keywords = ["WebSequenceDiagrams", "API"]
+categories = ["api-bindings", "command-line-utilities"]
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+clap = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = "0.9"
+regex = "1"

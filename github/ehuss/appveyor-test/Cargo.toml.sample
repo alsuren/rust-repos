@@ -1,0 +1,15 @@
+[package]
+name = "appveyor-test"
+version = "0.1.0"
+
+[dependencies]
+
+[dev-dependencies]
+winhand = {path="winhand"}
+rand = "*"
+
+[features]
+foo = []
+
+[profile.dev]
+debug = false

@@ -1,0 +1,18 @@
+[package]
+name = "serde_edn"
+version = "0.1.0"
+authors = ["Alexandru Macovei <alexnmaco@gmail.com>"]
+license = "MIT OR Apache-2.0 OR GPL-3.0-or-later"
+edition = "2018"
+keywords = ["edn", "serde", "clojure"]
+repository = "https://github.com/alexmaco/serde_edn.git"
+description = "edn support for serde"
+readme = "README.md"
+
+[dependencies]
+serde = "1.0"
+edn = "0.3"
+maplit = "1"
+#ordered-float = "1.0.1"
+ordered-float = "0.4.0"
+num-traits = "0.2.7"

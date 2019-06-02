@@ -1,0 +1,21 @@
+[package]
+name = "youmu"
+version = "0.0.1"
+authors = ["arcnmx"]
+
+description = "Hosted rust documentation"
+repository = "https://github.com/arcnmx/youmu"
+readme = "README.md"
+keywords = ["rustdoc", "docs", "documentation"]
+license = "MIT"
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"
+env_logger = "0.3"
+log = "0.3"
+cargo = "0.4"
+semver = "0.1"
+yaml-rust = "0.2"
+tempdir = "0.3"
+walker = "1.0"

@@ -1,0 +1,22 @@
+[package]
+name = "tcalc"
+description = "A featureful calculator for when you want to do math in a terminal."
+version = "1.6.13"
+authors = ["dubrowgn"]
+license = "MIT"
+repository = "https://github.com/dubrowgn/tcalc.git"
+documentation = "https://github.com/dubrowgn/tcalc"
+
+include = [
+	"Cargo.toml",
+	"LICENSE",
+	"README.md",
+	"src/*.rs",
+]
+
+[dependencies]
+tcalc-rustyline = "1.0.1"
+#tcalc-rustyline = { path = "../rustyline" }
+
+[features]
+trace = []

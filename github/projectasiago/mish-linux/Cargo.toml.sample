@@ -1,0 +1,7 @@
+[package]
+name = "mish-linux"
+version = "0.1.0"
+
+[dependencies]
+projectasiago_mish = { git = "https://github.com/projectasiago/mish" }
+projectasiago_feta = { git = "https://github.com/projectasiago/feta" }

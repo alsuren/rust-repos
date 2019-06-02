@@ -1,0 +1,23 @@
+[package]
+name = "battleplanes"
+version = "0.1.0"
+authors = ["Flavius Aspra <flavius.as@gmail.com>"]
+
+[dependencies]
+rand = "*"
+iron = "*"
+env_logger = "*"
+log = "*"
+walkdir = "*"
+notify = { version = "*", optional = true }
+router = "*"
+mount = "*"
+staticfile = "*"
+maud = { version = "0.14.0", features = ["iron"] }
+maud_macros = "0.14.0"
+iron-sessionstorage = "*"
+uuid = { version = "*", features = ["v4"] }
+concurrent-hashmap = "*"
+plugin = "*"
+urlparse = "*"
+iron-send-file = "*"

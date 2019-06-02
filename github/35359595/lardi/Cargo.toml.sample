@@ -1,0 +1,9 @@
+[package]
+name = "lardi"
+version = "0.1.0"
+authors = ["35359595 <35359595i@gmail.com>"]
+
+[dependencies]
+hyper = "*"
+xml-rs = "*"
+md5 = "*"

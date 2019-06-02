@@ -1,0 +1,13 @@
+[package]
+
+name = "mod1"
+version = "0.0.1"
+authors = ["gbersac <bersac_1@hotmail.fr>"]
+
+[dependencies]
+sdl2 = "*"
+time = "*"
+regex = "*"
+# regex_macros = "0.1.6"
+gl = "*"
+# yaml = "0.0.10"

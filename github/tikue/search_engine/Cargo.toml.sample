@@ -1,0 +1,19 @@
+[package]
+name = "search_engine"
+version = "0.1.0"
+authors = ["Tim Kuehn <tim@solvvy.com>"]
+
+[dependencies.inverted_index]
+git = "https://github.com/tikue/inverted_index.git"
+
+[dependencies]
+
+bodyparser = "*"
+iron = "*"
+mount = "*"
+router = "*"
+rustc-serialize = "*"
+staticfile = "*"
+urlencoded = "*"
+persistent = "*"
+lazy_static = "*"

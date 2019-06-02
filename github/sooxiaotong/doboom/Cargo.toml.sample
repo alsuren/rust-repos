@@ -1,0 +1,48 @@
+[package]
+name = "doboom"
+version = "0.3.1"
+authors = ["zypeh <zypeh.geek@gmail.com>"]
+
+[dependencies]
+time = "*"
+url = "*"
+base64 = "0.5.0"
+ring = "0.7.3"
+lazy_static = "0.2"
+diesel = { version = "~0.12", features = ["postgres"] }
+diesel_codegen = { version = "~0.12", features = ["postgres"] }
+dotenv = "0.8.0"
+toml = "0.4"
+r2d2 = "0.7.1"
+r2d2-diesel = "0.12.0"
+serde = "1"
+serde_json = "1"
+serde_derive = "1"
+tokio-core = "0.1"
+futures = "0.1"
+jsonwebtoken = "2.0"
+
+[dependencies.rocket]
+git = "https://github.com/SergioBenitez/Rocket"
+
+[dependencies.rocket_codegen]
+git = "https://github.com/SergioBenitez/Rocket"
+
+[dependencies.rocket_contrib]
+git = "https://github.com/SergioBenitez/Rocket"
+default-features = false
+features = ["json"]
+
+[dependencies.hyper]
+git = "https://github.com/hyperium/hyper"
+
+[dependencies.hyper-tls]
+git = "https://github.com/hyperium/hyper-tls"
+
+[dependencies.clippy]
+version = "*"
+optional = true
+
+[features]
+default = []
+

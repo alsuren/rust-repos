@@ -1,0 +1,26 @@
+[package]
+name = "badtouch"
+version = "0.2.0"
+description = "Scriptable network authentication cracker"
+authors = ["kpcyrd <git@rxv.cc>"]
+license = "GPL-3.0"
+repository = "https://github.com/kpcyrd/badtouch"
+categories = ["command-line-utilities"]
+readme = "README.md"
+
+[badges]
+travis-ci = { repository = "kpcyrd/badtouch" }
+
+[dependencies]
+hlua = "0.4"
+pbr = "1.0"
+threadpool = "1.7"
+colored = "1.6"
+humantime = "1.1"
+structopt = "0.2"
+error-chain = "0.11"
+time = "0.1.35"
+atty = "0.2"
+
+reqwest = "0.8"
+mysql = "12.2.0"

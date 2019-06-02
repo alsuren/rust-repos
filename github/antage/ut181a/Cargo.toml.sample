@@ -1,0 +1,22 @@
+[package]
+authors = ["Anton Ageev <antage@gmail.com>"]
+categories = ["hardware-support"]
+description = "Uni-T UT181A DMM remote control"
+include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
+keywords = ["dmm", "ut181a"]
+license = "MIT"
+name = "ut181a"
+readme = "README.md"
+repository = "https://github.com/antage/ut181a"
+version = "0.2.1"
+
+[dependencies]
+byteorder = "^1.2.0"
+chrono = "^0.4.0"
+cp211x_uart = "^0.2.0"
+error-chain = "^0.11.0"
+hid = "^0.4.1"
+nom = "^3.2.1"
+
+[badges]
+travis-ci = { repository = "antage/ut181a" }

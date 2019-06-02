@@ -1,0 +1,48 @@
+[package]
+name = "nal"
+version = "0.4.0"
+authors = ["hyeonupark"]
+
+description = "Nal - your daily programming language"
+homepage = "https://github.com/HyeonuPark/Nal"
+documentation = "https://docs.rs/nal"
+repository = "https://github.com/HyeonuPark/Nal.git"
+keywords = ["language", "interpreter"]
+categories = ["development-tools", "command-line-utilities"]
+readme = "README.md"
+license = "MIT/Apache-2.0"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+
+[dependencies.nalc_parser]
+version = "0.4"
+path = "./nalc_parser"
+
+[dependencies.nalc_atoi]
+version = "0.4"
+path = "./nalc_atoi"
+
+[dependencies.nali]
+version = "0.4"
+path = "./nali"
+
+[workspace]
+members = [
+  "nal_symbol",
+  "nal_ast",
+  "nal_ir",
+  "nalc_parser",
+  "nalc_atoi",
+  "nali",
+]
+
+[badges.travis-ci]
+repository = "HyeonuPark/Nal"
+branch = "master"
+
+[badges.codecov]
+repository = "HyeonuPark"
+branch = "master"

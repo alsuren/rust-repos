@@ -1,0 +1,88 @@
+[package]
+name = "vru"
+version = "0.1.0"
+authors = ["Ranxi Verba <ranxi.verba@gmail.com>"]
+edition = "2018"
+license = "Apache 2.0"
+
+[[bin]]
+name = "vru-d"
+path = "src/main.rs"
+
+[[bin]]
+name = "vru"
+path = "src/client.rs"
+
+[dependencies.mlatu]
+git = "https://github.com/ranxiverba/mlatu.git"
+features = ["serde-support"]
+
+[dependencies.abstract-cryptography]
+git = "https://github.com/ranxiverba/abstract-cryptography.git"
+
+[dependencies.savru]
+git = "https://github.com/ranxiverba/savru.git"
+
+[dependencies.generic-array]
+version = "0.12"
+
+[dependencies.secp256k1]
+version = "0.13"
+features = ["rand"]
+
+[dependencies.hmac]
+version = "0.7"
+
+[dependencies.sha2]
+version = "0.8"
+
+[dependencies.chacha]
+version = "0.3"
+
+[dependencies.futures]
+version = "0.1"
+
+[dependencies.tokio]
+version = "0.1"
+
+[dependencies.serde]
+version = "1.0"
+features = ["derive"]
+
+[dependencies.tirse]
+version = "0.6"
+features = ["use_std"]
+
+[dependencies.either]
+version = "1.5"
+
+[dependencies.byteorder]
+version = "1.3"
+
+[dependencies.bytes]
+version = "0.4"
+
+[dependencies.chrono]
+version = "0.4"
+
+[dependencies.sled]
+version = "0.23"
+
+[dependencies.clap]
+version = "2.33"
+
+[dependencies.hex]
+version = "0.3"
+
+[dependencies.log]
+version = "0.4"
+features = ["std"]
+
+[dependencies.env_logger]
+version = "0.6"
+
+[dependencies.ctrlc]
+version = "3.1"
+
+[profile.release]
+lto = true

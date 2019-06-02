@@ -1,0 +1,37 @@
+[package]
+name = "vkengine"
+version = "0.1.0"
+authors = ["Dennis Kristiansen <dennkris@live.no>"]
+edition = "2018"
+
+[dependencies]
+sdl2 = { version = "0.32.1", default-features = false, features = ["bundled", "static-link"] }
+# vulkano = "0.11.1"
+# vulkano-shaders = "0.11.1"
+# We need includes in shaders
+vulkano = { git = "https://github.com/vulkano-rs/vulkano", package = "vulkano" }
+vulkano-shaders = { git = "https://github.com/vulkano-rs/vulkano", package = "vulkano-shaders" }
+
+gltf = "0.11.2"
+
+float_duration = "0.3.3"
+hibitset = "0.5.3"
+fixedbitset = "0.1.9"
+
+# Logging
+log = "0.4.6"
+env_logger = "0.6.0"
+
+# Math and physics
+alga = "0.7.2"
+nalgebra = "0.16.13"
+ncollide3d = "0.17.3"
+
+# ECS
+specs = "0.14.1"
+specs-derive = "0.3.0"
+specs-hierarchy = "0.3.0"
+shrev = "1.0.1"
+
+[profile.release]
+lto = true

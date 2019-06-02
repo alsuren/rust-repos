@@ -1,0 +1,40 @@
+[package]
+name = "colol"
+version = "0.3.2"
+authors = ["Joel ELlis <joel@ellis.link>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+description = "A supersimple terminal color library."
+
+exclude = [
+    ".vscode/*",
+    "logo.png",
+]
+
+
+homepage = "https://github.com/JoelEllis/colol"
+repository = "https://github.com/JoelEllis/colol"
+documentation = "https://docs.rs/colol/"
+readme = "README.md"
+keywords = ["color", "string", "term", "ansi_term", "windows"]
+
+categories = ["command-line-interface"]
+
+[features]
+default = ["colol"]
+
+# used with `#[cfg(feature = "colol")]`.
+colol = []
+
+
+
+[target.'cfg(target_os="windows")'.dependencies.winapi]
+version = "0.3.4"
+features = ["errhandlingapi", "consoleapi", "processenv"]
+
+[badges]
+
+travis-ci = { repository = "derpmarine168/colol/", branch = "master" }
+
+is-it-maintained-issue-resolution = { repository = "JoelEllis/colol" }
+is-it-maintained-open-issues = { repository = "JoelEllis/colol" }

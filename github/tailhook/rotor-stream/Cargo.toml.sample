@@ -1,0 +1,35 @@
+[package]
+name = "rotor-stream"
+description = """
+    The stream abstration on top of rotor. This is the easiest way to build a
+    protocol on top of TCP (Unix sockets) with rotor
+"""
+license = "MIT"
+readme = "README.rst"
+keywords = ["stream", "rotor", "tcp", "sockets", "mio"]
+homepage = "http://github.com/tailhook/rotor-stream"
+version = "0.6.2"
+authors = ["paul@colomiets.name"]
+
+[dependencies]
+rotor = "0.6.1"
+rotor-tools = { optional = true, version = "0.3.1"}
+netbuf = "0.3.1"
+memchr = "0.1.7"
+quick-error = "0.2.1"
+log = "0.3.5"
+
+[dev-dependencies]
+argparse = "0.2.1"
+nix = "0.4.2"
+httparse = "1.1.0"
+env_logger = "0.3.2"
+
+[features]
+default = ["replaceable"]
+replaceable = ["rotor-tools"]
+
+[lib]
+name = "rotor_stream"
+path = "src/lib.rs"
+

@@ -1,0 +1,17 @@
+[package]
+name = "l3gd20h"
+version = "0.1.0"
+authors = ["Anthony Deschamps <anthony.j.deschamps@gmail.com>"]
+description = "Interface to the L3GD20H digital gyroscope"
+repository = "https://github.com/adeschamps/l3gd20h.git"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+bitflags = "1.0"
+byteorder = "1.1"
+error-chain = "0.12"
+i2cdev = "0.4"
+
+[badges]
+travis-ci = { repository = "adeschamps/l3gd20h" }

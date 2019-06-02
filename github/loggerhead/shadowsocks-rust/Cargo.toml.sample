@@ -1,0 +1,49 @@
+[package]
+name = "shadowsocks"
+version = "0.6.2"
+authors = ["loggerhead <lloggerhead@gmail.com>"]
+license = "GPL-3.0"
+repository = "https://github.com/loggerhead/shadowsocks-rust"
+homepage = "https://github.com/loggerhead/shadowsocks-rust"
+description = """
+My implemention of shadowsocks
+"""
+readme = "README.md"
+
+[[bin]]
+name = "sslocal"
+path = "src/bin/main.rs"
+required-features = ["sslocal"]
+
+[[bin]]
+name = "ssserver"
+path = "src/bin/main.rs"
+
+[dependencies]
+mio = "0.5"
+slog = { version = "~1.7", features = ["max_level_trace", "release_max_level_trace"] }
+slog-term = "~1.3"
+slog-stream = "~1.2"
+slog-scope = "0.2"
+fnv = "~1.0"
+clap = "~2.18"
+rand = "0.3"
+toml = "0.1"
+regex = "0.1"
+chrono = "0.2"
+try_opt = "0.1"
+byteorder = "0.5"
+lazy_static = "0.2"
+lru_time_cache = "0.5"
+rust-crypto = "0.2"
+rustc-serialize = "0.3"
+openssl = { version = "0.9", optional = true }
+clippy = { version = ">= 0.0.95", optional = true }
+
+[features]
+sslocal = []
+disable-encrypt = []
+
+[target.'cfg(unix)'.dependencies]
+sig = "~1.0.0"
+daemonize = "0.2"

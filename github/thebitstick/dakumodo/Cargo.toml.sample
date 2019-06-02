@@ -1,0 +1,19 @@
+[package]
+name = "dakumodo"
+version = "0.1.0"
+authors = ["TheBitStick <thebitstick@tfwno.gf>"]
+description = "Automatic Dark Mode Daemon"
+homepage = "https://github.com/thebitstick/dakumodo"
+repository = "https://github.com/thebitstick/dakumodo"
+keywords = ["gtk", "dark", "mode", "gui"]
+license = "GPL-3.0"
+edition = "2018"
+readme = "README.md"
+
+[[bin]]
+name = "dakumodo"
+path = "src/main.rs"
+
+[dependencies]
+chrono = "0.4.0"
+clap = "2.32.0"

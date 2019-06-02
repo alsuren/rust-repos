@@ -1,0 +1,17 @@
+[package]
+name = "nine-grids-shogi-analyzer"
+version = "1.0.0"
+authors = ["Koki Takahashi <hakatasiloving@gmail.com>"]
+
+[dependencies]
+
+fnv = "^1.0.6"
+integer-sqrt = "^0.1.0"
+redis = "^0.8.0"
+
+[dependencies.rusqlite]
+version = "^0.13.0"
+features = ["bundled"]
+
+[profile.bench]
+opt-level = 3

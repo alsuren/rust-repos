@@ -1,0 +1,48 @@
+[package]
+
+name = "gb-rs"
+version = "0.3.0"
+authors = ["Lionel Flandrin <lionel@svkt.org>","Jegor van Opdorp <jegorvanopdorp@gmail.com>"]
+
+keywords = ["emulator", "gameboy", "rust"]
+
+readme = "README.md"
+
+description = "GameBoy emulator"
+
+license = "MIT"
+
+[features]
+
+# Select the Super Gameboy bootrom instead of the classic one. It
+# doesn't have the scrolling logo and starts up faster. None of the
+# SGB-specific features will be handled but that shouldn't cause any
+# compatibility issues besides the fact that it will accept to run
+# ROMs with invalid headers unlike the original bootrom.
+sgb_bootrom = []
+
+[dependencies]
+num   = "0.1.24"
+ascii = "0.5.0"
+log   = "0.3.1"
+bit-vec = "0.5.0"
+lazy_static = "1.2.0"
+time = "0.1.41"
+
+[target.'cfg(not(windows))'.dependencies]
+sdl2 = "0.31.0"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["processthreadsapi"] }
+#uncomment the following line for windows, interferes with not(windows) sdl config
+#sdl2 = { version = "0.31.0", features = ["bundled", "static-link"] } #for msvc, recommended.
+
+[profile.test]
+opt-level = 2
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+debug = false
+opt-level = 3

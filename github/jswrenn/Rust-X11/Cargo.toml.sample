@@ -1,0 +1,38 @@
+[package]
+
+name = "Rust-X11"
+version = "0.0.1"
+authors = ["Robert Murray McMahon <Robert.Murray.McMahon@gmail.com>"]
+
+[lib]
+
+name = "X11"
+doc = true
+crate-type = ["rlib"]
+
+[dependencies.syntax_extensions]
+
+path = "lib/syntax_extensions"
+
+[dependencies.new_type]
+
+path = "lib/new_type"
+
+[dependencies.refined_type]
+
+path = "lib/refined_type"
+
+[profile.dev]
+
+opt-level = 0
+debug = true
+
+[profile.release]
+
+opt-level = 3
+debug = true
+
+[profile.test]
+
+opt-level = 0
+debug = true

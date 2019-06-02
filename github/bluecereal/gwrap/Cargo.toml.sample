@@ -1,0 +1,9 @@
+[package]
+name = "gwrap"
+version = "0.2.3"
+authors = ["Harrison Dews <harrisondews@gmail.com>"]
+
+[dependencies]
+gfx="0.12.2"
+specs="0.7.1"
+cgmath="0.12.0"

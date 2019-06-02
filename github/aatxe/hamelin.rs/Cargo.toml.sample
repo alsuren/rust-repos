@@ -1,0 +1,26 @@
+[package]
+
+name = "hamelin"
+version = "0.0.1"
+description = "An implementation of Hamelin in Rust."
+authors = ["Aaron Weiss <aaronweiss74@gmail.com>"]
+license = "CC0-1.0"
+repository = "https://github.com/aatxe/hamelin.rs"
+readme = "README.md"
+
+[features]
+all = ["irc", "hyper"]
+
+[dependencies.mio]
+git = "https://github.com/carllerche/mio"
+
+[dependencies.nix]
+git = "https://github.com/carllerche/nix-rust"
+
+[dependencies.hyper]
+hyper = "*"
+optional = true
+
+[dependencies.irc]
+irc = "*"
+optional = true

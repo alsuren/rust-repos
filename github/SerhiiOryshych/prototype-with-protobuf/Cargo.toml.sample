@@ -1,0 +1,12 @@
+[package]
+name = "prototype-with-protobuf"
+version = "0.1.0"
+authors = ["Serhii Oryshych <serhii.oryshych@xdev.re>"]
+
+[dependencies]
+exonum = "0.7.0"
+protobuf = "1.6.0"
+
+[build-dependencies]
+protoc-rust = "1.6.0"
+

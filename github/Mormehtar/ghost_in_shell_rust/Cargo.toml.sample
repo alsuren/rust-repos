@@ -1,0 +1,12 @@
+[package]
+name = "ghost_in_cell"
+version = "0.1.0"
+authors = ["ilyavolkov <mormehtar@gmail.com>"]
+build = "build.rs"
+edition = "2018"
+
+[build-dependencies]
+bundler = "0.1"
+#rustsourcebundler = { git = "https://github.com/lpenz/rust-sourcebundler" }
+
+[dependencies]

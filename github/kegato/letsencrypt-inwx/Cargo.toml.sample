@@ -1,0 +1,31 @@
+[package]
+name = "letsencrypt-inwx"
+version = "2.0.1"
+description = "A small cli utility for automating the letsencrypt dns-01 challenge for domains hosted by inwx"
+authors = ["Matthias Herzog"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/kegato/letsencrypt-inwx"
+edition = "2018"
+
+[package.metadata.deb]
+depends = ""
+extended-description = "A small cli utility for automating the letsencrypt dns-01 challenge for domains hosted by inwx. The dns-01 challenge is required for obtaining wildcard certificates from letsencrypt."
+assets = [
+    ["target/release/letsencrypt-inwx", "usr/bin/", "755"],
+    ["etc/certbot-inwx-auth", "usr/lib/letsencrypt-inwx/", "755"],
+    ["etc/certbot-inwx-cleanup", "usr/lib/letsencrypt-inwx/", "755"]
+]
+
+[dependencies]
+sxd-xpath = "0.4.2"
+sxd-document = "0.3.0"
+reqwest = "0.9.10"
+trust-dns = "0.15.1"
+clap = "2.32.0"
+openssl-probe = "0.1.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+cookie = { version = "0.11.0", features = ["percent-encode"] }
+env_logger = "0.6.1"
+log = "0.4.6"

@@ -1,0 +1,16 @@
+[package]
+name = "file-watcher"
+version = "0.0.18"
+authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = """
+A crate for watching files for changes.
+"""
+documentation = "https://docs.rs/file-watcher/"
+homepage = "http://efunb.com/"
+repository = "https://gitlab.com/efunb/file-watcher"
+edition = "2018"
+
+[dependencies]
+set-error = "1"

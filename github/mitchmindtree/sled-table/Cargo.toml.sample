@@ -1,0 +1,17 @@
+[package]
+name = "sled-table"
+version = "0.1.0"
+authors = ["mitchmindtree <mitchell.nordine@gmail.com>"]
+description = "A typed table API around a sled::Tree"
+readme = "README.md"
+keywords = ["sled", "db", "database", "table", "time"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mitchmindtree/sled-table.git"
+homepage = "https://github.com/mitchmindtree/sled-table"
+
+[dependencies]
+bincode = "1"
+bytekey = { git = "https://github.com/mitchmindtree/bytekey", branch = "serde_and_stable" }
+serde = "1"
+serde_derive = "1"
+sled = "0.15"

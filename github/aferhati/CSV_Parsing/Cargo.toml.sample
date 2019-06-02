@@ -1,0 +1,9 @@
+[package]
+name = "real-estate"
+version = "0.1.0"
+authors = ["Andi Ferhati <a.ferhati@engineer.com>"]
+
+[dependencies]
+chrono = "*"
+csv = "*"
+rustic-serialize = "*"

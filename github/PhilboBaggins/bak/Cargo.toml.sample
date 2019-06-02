@@ -1,0 +1,25 @@
+[package]
+name = "bak-bak-bak"
+version = "0.1.0"
+authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
+
+[dependencies]
+chrono = "0.4.0"
+clap = "2.29.2"
+fs_extra = "1.0.0"
+
+[lib]
+name = "bak_common"
+path = "src/common.rs"
+
+[[bin]]
+name = "bak"
+path = "src/bak.rs"
+
+[[bin]]
+name = "bakt"
+path = "src/bakt.rs"
+
+[[bin]]
+name = "baktm"
+path = "src/baktm.rs"

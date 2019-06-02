@@ -1,0 +1,26 @@
+[package]
+name = "smileypyramid"
+version = "1.0.1"
+authors = ["Alexander F. Rødseth <xyproto@archlinux.org>"]
+exclude = [
+    "main.cpp",
+    "*.pro*",
+    "Makefile",
+]
+description = "Create pyramids built out of smiley faces"
+homepage = "https://github.com/xyproto/smileypyramid"
+keywords = ["asciiart", "console", "terminal", "fun"]
+license = "GPL-3.0"
+
+[dependencies]
+docopt = "1"
+serde = "1.0"
+serde_derive = "1.0"
+
+[lib]
+name = "smileypyramid"
+path = "rust/lib.rs"
+
+[[bin]]
+name = "smileypyramid"
+path = "rust/bin.rs"

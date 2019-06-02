@@ -1,0 +1,11 @@
+[package]
+name = "proto-rust-hw"
+version = "0.1.0"
+authors = ["Vitaly Drogan <vitaliy.drogan@gmail.com>"]
+
+[dependencies]
+protobuf = "2.2.0"
+
+[build-dependencies]
+protoc-rust = "2.2.0"
+walkdir = "2.2.7"

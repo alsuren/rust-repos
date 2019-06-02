@@ -1,0 +1,16 @@
+[package]
+name = "ackermann"
+version = "0.0.0"
+authors = ["Darin Morrison <darinmorrison+git@gmail.com>"]
+
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true

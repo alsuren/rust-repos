@@ -1,0 +1,144 @@
+[package]
+name = "lammps-sys"
+# Remember to update README.md, and html_root_url!
+version = "0.5.2"
+description = "Generates bindings to LAMMPS' C interface (with optional builds from source)"
+
+authors = ["Michael Lamparski <diagonaldevice@gmail.com>"]
+license = "GPL-3.0"
+license-file = "COPYING"
+repository = "https://github.com/ExpHP/lammps-sys"
+keywords = ["ffi", "physics", "molecular-dynamics", "materials"]
+categories = ["science"]
+readme = "README.md"
+
+links = "lammps"
+build = "build/main.rs"
+
+exclude = [
+    # Illegal characters in filenames for a .crate file
+    "/lammps/lib/kokkos/core/src/eti/ROCm/*",
+    # Large files too big for a .crate
+    "/lammps/examples/*",
+    "/lammps/bench/*",
+    "/lammps/doc/src/*",
+    "/lammps/doc/utils/*",
+    "/lammps/lib/kokkos/doc*",
+    "/lammps/lib/qmmm/example-*/*",
+    "/lammps/tools/*",
+    "/lammps/python/examples/*",
+    "/lammps/potentials/*",
+]
+
+[dependencies]
+mpi-sys = { version = "0.1.2", optional = true }
+
+[build-dependencies]
+bindgen = "0.31.3" # currently held back by mpi-sys
+path_abs = { version = "0.3.16", default-features = false }
+walkdir = "2.1.4"
+extension-trait = "0.1.2"
+pkg-config = "0.3.14"
+cmake = "0.1.33"
+
+[features]
+default = []
+
+#-----------------------------
+# Deprecated; now just aliases
+
+user-misc = ["package-user-misc"]
+user-omp = ["package-user-omp"]
+
+#-----------------------------
+# Additional bindings
+
+# Causes Lammps to throw exceptions rather than abort, by defining
+# the C preprocessor macro `LAMMPS_EXCEPTIONS`.
+#
+# Exposes the following additional bindings:
+# + `lammps_has_error`
+# + `lammps_get_last_error_message`
+exceptions = []
+
+# Links against the system implementation of MPI.
+#
+# Exposes the following additional bindings:
+# + `lammps_open`
+mpi = ["mpi-sys"]
+
+#-----------------------------
+# Package flags
+#
+# Each of the following features corresponds to one of Lammps' optional packages,
+# detailed on https://lammps.sandia.gov/doc/Packages.html.
+#
+# See README.md for more info.
+
+package-asphere = []
+package-body = []
+package-class2 = []
+package-colloid = []
+package-compress = []
+package-coreshell = []
+package-dipole = []
+package-gpu = []
+package-granular = []
+package-kim = []
+package-kokkos = []
+package-kspace = []
+package-latte = []
+package-manybody = []
+package-mc = []
+package-meam = []
+package-misc = []
+package-molecule = []
+package-mpiio = []
+package-mscg = []
+package-opt = []
+package-peri = []
+package-poems = []
+package-python = []
+package-qeq = []
+package-reax = []
+package-replica = []
+package-rigid = []
+package-shock = []
+package-snap = []
+package-srd = []
+package-voronoi = []
+
+package-user-atc = []
+package-user-awpmd = []
+package-user-bocs = []
+package-user-cgdna = []
+package-user-cgsdk = []
+package-user-colvars = []
+package-user-diffraction = []
+package-user-dpd = []
+package-user-drude = []
+package-user-eff = []
+package-user-fep = []
+package-user-h5md = []
+package-user-intel = []
+package-user-lb = []
+package-user-mgpt = []
+package-user-misc = []
+package-user-manifold = []
+package-user-meamc = []
+package-user-meso = []
+package-user-mofff = []
+package-user-molfile = []
+package-user-netcdf = []
+package-user-omp = []
+package-user-phonon = []
+package-user-qmmm = []
+package-user-qtb = []
+package-user-quip = []
+package-user-reaxc = []
+package-user-smd = []
+package-user-smtbq = []
+package-user-sph = []
+package-user-tally = []
+package-user-uef = []
+package-user-vtk = []

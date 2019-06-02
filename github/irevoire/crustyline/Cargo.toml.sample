@@ -1,0 +1,16 @@
+[package]
+name = "crustyline"
+version = "0.1.0"
+authors = ["Thomas Campistron <irevoire@hotmail.fr>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "*"
+select = "*"
+chrono = "*"
+clokwerk = "*"
+regex = "*"
+calamine = "*"
+rouille = "*"
+log = "*"
+env_logger = "*"

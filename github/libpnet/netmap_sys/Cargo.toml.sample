@@ -1,0 +1,29 @@
+[package]
+
+name = "netmap_sys"
+version = "0.1.4"
+authors = ["Robert Clipsham <robert@octarineparrot.com>"]
+homepage = "http://info.iet.unipi.it/~luigi/netmap/"
+repository = "https://github.com/libpnet/rust-netmap"
+license = "BSD-2-Clause"
+description = "Bindings to netmap - the fast packet I/O framework"
+readme = "README.md"
+keywords = ["networking", "packet", "bindings"]
+links = "rust_netmap_user"
+build = "build.rs"
+
+[lib]
+
+name = "netmap_sys"
+crate_type = [ "rlib", "dylib" ]
+
+[features]
+
+default = []
+netmap_with_libs = []
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+cc = "1.0.35"

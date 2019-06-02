@@ -1,0 +1,11 @@
+[package]
+name = "localtunnel"
+version = "0.1.0"
+authors = ["banyan"]
+
+[dependencies]
+hyper = "0.6.15"
+rustc-serialize = "0.3"
+log = "0.3"
+env_logger = "0.3"
+docopt = "0.6"

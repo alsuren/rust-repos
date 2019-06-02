@@ -1,0 +1,8 @@
+[package]
+name = "distill"
+version = "0.1.0"
+authors = ["sorin"]
+
+[dependencies]
+inotify = "*"
+notify = "^2.3"

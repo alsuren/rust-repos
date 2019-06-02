@@ -1,0 +1,10 @@
+[package]
+name = "gl"
+version = "0.1.0"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+
+[dependencies]
+sys = { path = "lib/sys" }
+
+[workspace]
+members = ["lib/*"]

@@ -1,0 +1,53 @@
+[package]
+name = "reform"
+description = "A symbolic manipulation toolkit which aims to handle expressions with billions of terms, taking up terabytes of diskspace."
+documentation = "https://readthedocs.org/projects/reform/"
+repository = "https://bitbucket.org/benruyl/reform"
+keywords = ["algebra", "symbolic", "manipulation", "mathematics", "physics"]
+categories = ["science"]
+license = "MIT"
+version = "0.1.0"
+readme = "README.md"
+authors = ["Ben Ruijl <benruyl@gmail.com>"]
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+
+[features]
+python_api = ["cpython"]
+c_api = ["libc"]
+profile = ["cpuprofiler"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies.libc]
+version = "0.2"
+optional = true
+
+[dependencies.cpython]
+version = "^0.2.1"
+features = ["extension-module"]
+optional = true
+
+[dependencies]
+itertools = "^0.7.7"
+clap = "^2.30.0"
+log = { version = "0.4.1", features = ["release_max_level_warn"] }
+env_logger = "0.5.4"
+rand = "0.5.4"
+pest = "^2.0"
+pest_derive = "^2.0"
+byteorder = "1.1.0"
+crossbeam = "0.4.1"
+rug = { version = "1.0.1", default-features = false, features = ["integer", "rational"] }
+num-integer = "0.1"
+num-traits = "^0.2"
+ndarray = "0.12"
+gmp-mpfr-sys = { version = "1.1.4", default-features = false, features = [] }
+cpuprofiler = { version = "0.0.3", optional = true }
+fastdivide = "0.2.0"
+bitflags = "1.0.4"
+chrono = "0.4"
+hashbrown = "0.1"

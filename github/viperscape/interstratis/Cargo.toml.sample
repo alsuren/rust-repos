@@ -1,0 +1,21 @@
+[package]
+name = "interstratis"
+version = "0.1.0"
+authors = ["viperscape <chrisfgill@gmail.com>"]
+
+[[bin]]
+name = "lifecycle"
+
+[[bin]]
+name = "interstratis"
+path = "src/main.rs"
+
+
+[dependencies]
+lichen = "0.3"
+rand = "0.3"
+
+nickel = "0.10"
+cookie = "0.9"
+
+rustc-serialize = "0.3.24"

@@ -1,0 +1,12 @@
+[package]
+name = "rustorrent"
+version = "0.1.0"
+authors = ["Matej Ľach <me@matej-lach.me>"]
+
+[dependencies]
+hyper = "0.9.10"
+byteorder = "0.5.3"
+mio = "0.6.0"
+sha1 = "0.2.0"
+bit-vec = "0.4.3"
+log = "0.3.6"

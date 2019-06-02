@@ -1,0 +1,15 @@
+[package]
+name = "boxscores"
+version = "0.1.0"
+authors = ["Nolan Clark <tweakdeveloper@gmail.com>"]
+
+[dependencies]
+actix-web = "0.7"
+scraper = "0.9"
+http = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+chrono = "0.4"
+reqwest = "0.9"
+url = "1.7"
+selectors = "0.20.0"

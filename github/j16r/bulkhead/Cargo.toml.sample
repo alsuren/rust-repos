@@ -1,0 +1,26 @@
+[package]
+
+name = "bulkhead"
+version = "0.0.1"
+authors = ["John Barker <jebarker@gmail.com>"]
+
+[dependencies]
+
+hyper = "*"
+iron = "*"
+r2d2 = "*"
+r2d2_postgres = "*"
+router = "*"
+time = "*"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+
+[dependencies.postgres]
+
+features = ["with-time"]
+version = "*"
+
+[dependencies.bodyparser]
+
+git = "https://github.com/iron/body-parser.git"

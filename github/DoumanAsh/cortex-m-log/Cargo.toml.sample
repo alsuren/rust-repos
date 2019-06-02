@@ -1,0 +1,30 @@
+[package]
+name = "cortex-m-log"
+version = "0.6.0"
+authors = ["Douman <douman@gmx.se>"]
+keywords = ["arm", "cortex-m", "stm32", "log"]
+description = "Logging facilities for Cortex-M processors"
+readme = "README.md"
+repository = "https://github.com/DoumanAsh/cortex-m-log"
+license = "Apache-2.0"
+edition = "2018"
+
+[dependencies]
+cortex-m = "0.6"
+
+[dependencies.log]
+version = "0.4"
+optional = true
+default-features = false
+
+[dependencies.cortex-m-semihosting]
+version = "0.3"
+optional = true
+
+[features]
+semihosting = ["cortex-m-semihosting"]
+log-integration = ["log"]
+itm = []
+
+[package.metadata.docs.rs]
+features = ["semihosting", "log-integration", "itm"]

@@ -1,0 +1,8 @@
+[package]
+name = "hello-rpi"
+version = "0.1.0"
+authors = ["Laurent Zuijdwijk <you@example.com>"]
+
+[dependencies]
+ws = "*"
+cupi = {version="*", optional = true}

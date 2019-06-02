@@ -1,0 +1,7 @@
+[package]
+name = "compare_input"
+version = "0.1.0"
+authors = ["Peter Marks <peter@indigomail.net>"]
+
+[dependencies]
+zip-longest = { git = "https://github.com/SimonSapin/rust-std-candidates" }

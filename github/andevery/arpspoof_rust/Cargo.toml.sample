@@ -1,0 +1,10 @@
+[package]
+name = "arpspoof"
+version = "0.1.0"
+authors = ["Alexander Veselov <github.com/andevery>"]
+
+[dependencies]
+pnet = "0.14.0"
+
+[profile.release]
+lto = true

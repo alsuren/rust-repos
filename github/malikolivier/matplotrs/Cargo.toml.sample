@@ -1,0 +1,21 @@
+[package]
+name = "matplotrs"
+version = "0.1.0"
+authors = ["Malik Olivier Boussejra <malik@boussejra.com>"]
+
+[dependencies]
+time = "0.1"
+matplotrs_backend = { path = "./backend" }
+matplotrs_piston_backend = { path = "./piston_backend", optional = true }
+matplotrs_printpdf_backend = { path = "./printpdf_backend", optional = true }
+matplotrs_gfx_backend = { path = "./gfx_backend", optional = true }
+
+[features]
+piston = ["matplotrs_piston_backend"]
+printpdf = ["matplotrs_printpdf_backend"]
+gfx = ["matplotrs_gfx_backend"]
+
+[dev-dependencies]
+rustfmt-nightly = "0.3.6"
+# Used for some examples
+fitrs = { git = "https://github.com/malikolivier/fitrs" }

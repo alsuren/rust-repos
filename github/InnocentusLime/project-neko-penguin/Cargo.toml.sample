@@ -1,0 +1,12 @@
+[package]
+name = "host-module"
+version = "0.5.6"
+authors = ["InnocentusLime <InnocentusLime.help@gmail.com>"]
+
+[dependencies]
+glium = "*"
+image = "*"
+cgmath = "*"
+serde_json = "*"
+serde = "*"
+serde_derive = "*"

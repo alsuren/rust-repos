@@ -1,0 +1,21 @@
+[package]
+name = "tomahawk"
+version = "0.1.0"
+authors = ["Jon Haddad <jon@jonhaddad.com>"]
+
+[dependencies]
+tokio = "*"
+futures = "*"
+log = "*"
+env_logger = "*"
+tokio-proto = "*"
+tokio-io = "*"
+tokio-service = "*"
+tokio-core = "*"
+clap="*"
+serde = "*"
+serde_derive = "*"
+bincode = "*"
+byteorder = "*"
+bytes = "*"
+uuid = { version = "*", features = ["serde", "v4"] }

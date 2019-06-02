@@ -1,0 +1,10 @@
+[package]
+name = "bndump"
+version = "0.1.0"
+authors = ["mratsim <mamy_github@numforge.co>"]
+
+[dependencies]
+# bn = ""
+rand = ""
+rustc-serialize = ""
+byteorder = ""

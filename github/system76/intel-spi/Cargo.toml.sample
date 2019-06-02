@@ -1,0 +1,11 @@
+[package]
+name = "intel-spi"
+version = "0.1.1"
+authors = ["Jeremy Soller <jeremy@system76.com>"]
+edition = "2018"
+description = "Library for accessing Intel PCH SPI"
+license = "MIT"
+
+[dependencies]
+bitflags = "1.0.4"
+libc = "0.2"

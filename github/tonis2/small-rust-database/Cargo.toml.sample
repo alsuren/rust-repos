@@ -1,0 +1,12 @@
+[package]
+name = "small-rust-database"
+version = "0.1.0"
+authors = ["tonis2 <tonis.anton18@gmail.com>"]
+
+[dependencies]
+simple-server = "0.3.0"
+log = "0.4"
+serde_derive = "1.0.70"
+serde_json = "1.0.24"
+rustyline = "1.0.0"
+btree = { git = "https://github.com/tonis2/btree", branch = "master" }

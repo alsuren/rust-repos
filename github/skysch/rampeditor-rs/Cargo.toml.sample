@@ -1,0 +1,81 @@
+[workspace]
+members = ["libcommon", "libeditor", "libgui"]
+
+[package]
+name = "rampeditor"
+version = "0.0.1"
+authors = ["Skylor R Schermer <skyschermer@gmail.com>"]
+keywords = ["color", "palette", "editor"]
+description = "Color palette editor"
+license-file = "license.md"
+readme = "readme.md"
+repository = "https://github.com/skysch/rampeditor-rs"
+homepage = ""
+documentation = ""
+exclude = ["*.sublime-project", "*.sublime-workspace"]
+
+
+[dependencies]
+libloading = "0.3"
+notify = "3.0.0"
+
+[dependencies.sdl2]
+version = "0.27"
+default-features = false
+features = ["ttf", "image", "gfx", "mixer"]
+
+[dependencies.common]
+path = "libcommon"
+
+[dependencies.editor]
+path = "libeditor"
+
+[dependencies.gui]
+path = "libgui"
+
+
+# The development profile, used for `cargo build`
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+
+# The release profile, used for `cargo build --release`
+[profile.release]
+opt-level = 3
+debug = true
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+
+# The testing profile, used for `cargo test`
+[profile.test]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+
+# The benchmarking profile, used for `cargo bench`
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
+
+# The documentation profile, used for `cargo doc`
+[profile.doc]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+

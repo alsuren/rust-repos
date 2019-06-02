@@ -1,0 +1,11 @@
+[package]
+
+name = "pilgrim"
+version = "0.0.1"
+authors = [ "Dustin Withers <fadeddata@gmail.com>" ]
+
+[dependencies]
+rand = "0.3"
+piston_window = "0.65.0"
+find_folder = "*"
+either = "1.0"

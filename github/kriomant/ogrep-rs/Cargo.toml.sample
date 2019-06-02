@@ -1,0 +1,20 @@
+[package]
+authors = ["Mikhail Trishchenkov <kriomant@gmail.com>"]
+name = "ogrep"
+version = "0.4.0"
+description = "Tool for searching in indentation-structured texts."
+homepage = "https://github.com/kriomant/ogrep-rs"
+repository = "https://github.com/kriomant/ogrep-rs.git"
+readme = "README.md"
+keywords = ["grep", "search", "regex", "outline", "indentation"]
+categories = ["command-line-utilities", "text-processing"]
+license = "MIT"
+
+[dependencies]
+clap = "2.32.0"
+itertools = "0.7.7"
+regex = "0.2.6"
+termion = "1.5.1"
+
+[dev-dependencies]
+difference = "2.0.0"

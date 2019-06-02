@@ -1,0 +1,35 @@
+[package]
+name = "tapl"
+version = "0.1.0"
+authors = ["Amir Saeid <amir@glgdgt.com>"]
+build = "build.rs"
+
+[build-dependencies]
+lalrpop = "0.13.1"
+
+[dependencies]
+nom = "3.2.0"
+regex = "0.2.2"
+lalrpop-util = "0.13.1"
+pest = "^1.0.0-beta"
+pest_derive = "^1.0.0-beta"
+
+[[bin]]
+name = "arith"
+path = "src/bin/arith.rs"
+
+[[bin]]
+name = "tyarith"
+path = "src/bin/tyarith.rs"
+
+[[bin]]
+name = "fulluntyped"
+path = "src/bin/fulluntyped.rs"
+
+[[bin]]
+name = "simplebool"
+path = "src/bin/simplebool.rs"
+
+[[bin]]
+name = "fullsimple"
+path = "src/bin/fullsimple.rs"

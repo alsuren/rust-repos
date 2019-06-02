@@ -1,0 +1,17 @@
+[package]
+name = "stormtrooper"
+version = "0.1.0"
+authors = ["Ty Overby <ty@pre-alpha.com>"]
+
+[dependencies.ares]
+path = "../ares/"
+
+[dependencies.notify]
+path = "../rsnotify/"
+
+[dependencies.hyper]
+version = "0.6"
+default-features = false
+
+[dependencies.websocket]
+version = "~0.12.2"

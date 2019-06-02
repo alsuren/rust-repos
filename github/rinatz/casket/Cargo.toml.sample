@@ -1,0 +1,19 @@
+[package]
+name = "casket"
+version = "0.1.0"
+authors = ["Kenichiro IDA <ida.kenichiro@gmail.com>"]
+description = "Kyoto Cabinet bindings for Rust."
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+failure = "*"
+
+[dependencies.ffi]
+version = "*"
+path = "kyotocabinet-sys"
+package = "kyotocabinet-sys"
+
+[dev-dependencies]
+tempfile = "*"

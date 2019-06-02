@@ -1,0 +1,12 @@
+[package]
+name = "btreemap-stubs"
+version = "0.1.0"
+authors = [
+    "Zach Shipko <zachshipko@gmail.com>",
+    "Gabriel de Perthuis <g2p.code@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+ocaml = "0.4"

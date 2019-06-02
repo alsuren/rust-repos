@@ -1,0 +1,10 @@
+[package]
+name = "symare"
+version = "0.1.0"
+authors = ["thunderseethe <thunderseethe.dev@gmail.com>"]
+
+[dependencies]
+glutin = "*"
+gl = "*"
+libc = "*"
+errno = "*"

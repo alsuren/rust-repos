@@ -1,0 +1,9 @@
+[package]
+name = "rsof"
+version = "0.1.1"
+authors = ["livingdeadzerg@yandex.ru"]
+
+[dependencies]
+psutil = "1.1.0"
+clap = "2.25.0"
+users = "0.5.2"

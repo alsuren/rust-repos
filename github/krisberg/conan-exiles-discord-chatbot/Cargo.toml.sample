@@ -1,0 +1,14 @@
+[package]
+name = "conan-exiles-discord-chatbot"
+version = "0.2.1"
+authors = ["Kristoffer Strøm Bergset <kristoffer@bergset.no>"]
+
+[dependencies]
+regex = "1.0.0"
+rev_lines = "0.2.1"
+chrono = "0.4.2"
+prettytable-rs = "^0.6"
+
+[dependencies.discord]
+version = "0.8.0"
+default-features = false

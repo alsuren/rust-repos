@@ -1,0 +1,22 @@
+[package]
+name = "liuyan"
+version = "0.1.0"
+authors = ["Bryan Tan <techniux@gmail.com>"]
+
+[dependencies]
+iron = "0.5.1"
+router = "0.5.1"
+mount = "0.3.0"
+iron-json-response = "0.4.0"
+diesel = { version = "0.11.0", features = ["postgres"] }
+diesel_codegen = { version = "0.11.0", features = ["postgres"] }
+config = { version = "0.4", default-features = false, features = ["yaml"] }
+serde = "0.9.12"
+serde_json = "0.9.9"
+serde_derive = "0.9.12"
+params = "0.6.0"
+time = "0.1.36"
+base64 = "0.4.1"
+iron-sessionstorage = "0.6.6"
+r2d2 = "0.7.1"
+r2d2-diesel = "0.12.0"

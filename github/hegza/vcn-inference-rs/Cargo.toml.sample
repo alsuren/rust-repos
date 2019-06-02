@@ -1,0 +1,69 @@
+[package]
+name = "rusty-cnn"
+version = "0.2.0"
+authors = ["Henri Lunnikivi <henri.lunnikivi@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "^1"
+env_logger = "^0.6"
+log = { version = "^0.4", features = ["release_max_level_info"] }
+ocl = "^0.19"
+lazy_static = "^1.0"
+num-traits = "^0.2"
+noisy_float = "^0.1"
+image = { version = "^0.21" }
+ndarray = "^0.12"
+rand = "^0.6"
+sprs = "^0.6"
+itertools = "^0.8"
+
+[dev-dependencies]
+criterion = { version = "^0.2" }
+matrixmultiply = { version = "^0.2" }
+enclose = "0.1.1"
+
+[[bin]]
+name = "test_accuracy"
+path = "test_accuracy/mod.rs"
+edition = "2018"
+
+[[bench]]
+name = "network_wall"
+harness = false
+
+[[bench]]
+name = "network"
+harness = false
+
+[[bench]]
+name = "layers_cpu"
+harness = false
+
+[[bench]]
+name = "layers_gpu"
+harness = false
+
+[[bench]]
+name = "gemm_xdevice"
+harness = false
+
+[[bench]]
+name = "gemm_gpu"
+harness = false
+
+[[bench]]
+name = "transpose"
+harness = false
+
+[[bench]]
+name = "dense"
+harness = false
+
+[[bench]]
+name = "network_auxiliaries"
+harness = false
+
+[[bench]]
+name = "classic_variants"
+harness = false

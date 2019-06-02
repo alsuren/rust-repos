@@ -1,0 +1,14 @@
+[package]
+name = "template"
+version = "0.1.0"
+
+[dependencies]
+conrod = { version = "0.61.1", features = ["glium", "winit"] }
+conrod_derive = "0.63.0"
+winit = "0.18.1"
+glium = "0.22"
+ron = "0.4.0"
+serde = "*"
+find_folder = "0.3.0"
+rustfft = "*"
+audioengine = { path = "./audioengine" }

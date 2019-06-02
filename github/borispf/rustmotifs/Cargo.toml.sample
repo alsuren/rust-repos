@@ -1,0 +1,17 @@
+[package]
+name = "rustmotifs"
+version = "0.1.0"
+authors = ["Boris Pfahringer <bpnzltd@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+arrayvec = "*"
+fixedbitset = "*"
+libc = "0.2"
+petgraph = "*"
+
+[profile.release]
+debug = true
+
+[build-dependencies]
+gcc = "0.3"

@@ -1,0 +1,15 @@
+[package]
+name = "mmo_parser_cli"
+version = "0.1.0"
+authors = ["Morindhal <Morindhal@gmail.com>"]
+
+[dependencies]
+mmo_parser_backend = { git = "http://github.com/Morindhal/mmo_parser_backend" }
+chrono = "*"
+libc = "*"
+clap = "*"
+clipboard = "*"
+ncurses = "*"
+json = "*"
+log = "*"
+env_logger = "*"

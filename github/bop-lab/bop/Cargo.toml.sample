@@ -1,0 +1,26 @@
+[package]
+name = "bop"
+version = "0.1.0"
+license = "BSD-2-Clause"
+repository = "https://github.com/bop-lab/bop"
+readme = "README.md"
+build = "build.rs"
+
+authors = [
+    "hch12907 <haochengho12907@gmail.com>",
+    "zypeh <zypeh.geek@gmail.com>"
+]
+
+[[bin]]
+path = "src/main.rs"
+name = "bop"
+
+[dependencies]
+toml = "0.3.2"
+clap = "2.23.1"
+
+[build-dependencies]
+clap = "2.23.1"
+
+[features]
+nightly = []

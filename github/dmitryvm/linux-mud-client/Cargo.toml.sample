@@ -1,0 +1,26 @@
+[package]
+name = "mudlua"
+version = "0.1.0"
+authors = ["dm"]
+
+
+[dependencies]
+lua = "0.0.10"
+mio = "0.6"
+encoding = "0.2.33"
+libc = "*"
+
+gfx = "0.12"
+gfx_device_gl = "0.11"
+gfx_window_glutin = "0.12"
+glutin = "0.6"
+cgmath = "*"
+genmesh = "*"
+gfx_text = "0.13"
+rustc-serialize = "*"
+x11 = { version = "*", features = ["xlib"] }
+
+
+[features]
+default = ["include-font"]
+include-font = []

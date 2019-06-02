@@ -1,0 +1,9 @@
+[package]
+name = "try_signalling"
+version = "0.1.0"
+authors = ["baliuzeger <baliuzeger@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+crossbeam-channel = "0.3"
+rand = "0.6.0"

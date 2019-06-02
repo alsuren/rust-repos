@@ -1,0 +1,16 @@
+[package]
+name = "iron_diesel_middleware"
+version = "0.4.0"
+authors = ["Darayus Nanavati <darayus.contact@gmail.com>"]
+
+[dependencies]
+
+iron = "0.6"
+diesel = { version = "^1.0.0", features = ["r2d2"] }
+
+[[example]]
+
+name = "basic"
+
+[dev_dependencies]
+diesel = { version = ">=1.0", features = ["postgres"] }

@@ -1,0 +1,9 @@
+[package]
+name = "symdupes"
+version = "0.1.0"
+authors = ["Nikita Dubrovskii <azukku@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+md5 = "*"
+walkdir = "2"

@@ -1,0 +1,16 @@
+[package]
+authors = ["alex <acdenissk69@gmail.com>", "Zeyla Hellyer <zey@zey.moe>"]
+description = "Serenity ecosystem cache."
+documentation = "https://docs.rs/serenity-cache"
+homepage = "https://github.com/serenity-rs/cache"
+keywords = ["api", "discord", "serenity"]
+license = "ISC"
+name = "serenity-cache"
+readme = "README.md"
+repository = "https://github.com/serenity-rs/cache.git"
+version = "0.1.0"
+
+[dependencies]
+lazy_static = "^1.0"
+serenity-model = { git = "https://github.com/serenity-rs/model" }
+parking_lot = "^0.5"

@@ -1,0 +1,16 @@
+[package]
+name = "rust-svg"
+version = "0.1.0"
+authors = ["Arne Dussin <arne.dussin@live.de>"]
+description = "SVG parser written in rust."
+license = "MIT"
+repository = "https://github.com/7bitHero/rust-svg"
+readme = "Readme.md"
+keywords = ["svg", "parsing", "parser", "graphics"]
+
+[lib]
+name = "svg"
+path = "src/lib.rs"
+
+[dependencies]
+xml-rs = "0.1.26"

@@ -1,0 +1,16 @@
+[package]
+authors = ["Kristoffer Ström <kristoffer@ethcore.io>"]
+description = "Trait for content-adressable types"
+license = "GPL-3.0"
+name = "content"
+repository = "https://github.com/ethcore/content"
+version = "0.6.0"
+
+[dependencies]
+blake2-rfc = "0.2.17"
+byteorder = "0.5.3"
+parking_lot = "0.3.6"
+rand = "0.3.14"
+
+[dev-dependencies]
+tempdir = "0.3.5"

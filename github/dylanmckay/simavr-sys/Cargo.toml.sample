@@ -1,0 +1,21 @@
+[package]
+name = "simavr-sys"
+version = "1.5.9"
+authors = ["Dylan McKay <me@dylanmckay.io>"]
+
+description = "Bindings to the 'simavr' AVR simulator"
+documentation = "http://docs.rs/simavr-sys"
+repository = "https://github.com/dylanmckay/simavr-sys"
+
+readme = "README.md"
+license = "GPL-3.0"
+
+keywords = ["avr", "simulator", "emulator"]
+
+[features]
+default = []
+trace = []
+
+[build-dependencies]
+bindgen = "0.32"
+walkdir = "1.0"

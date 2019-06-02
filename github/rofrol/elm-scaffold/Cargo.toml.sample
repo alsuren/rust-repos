@@ -1,0 +1,11 @@
+[package]
+name = "elm-scaffold"
+version = "0.1.0"
+authors = ["Roman Frołow <rofrol@gmail.com>"]
+
+[dependencies]
+clap = "2.32.0"
+serde = "1.0.70"
+serde_json = "1.0.24"
+serde_derive = "1.0.70"
+fs_extra = "1.1.0"

@@ -1,0 +1,13 @@
+[package]
+description = "Nintendo 3DS project template"
+name = "rust3ds-template"
+version = "0.1.0"
+
+[dependencies]
+ctru-rs = { git = "https://github.com/rust3ds/ctru-rs" }
+
+[profile.dev]
+lto = true
+
+[profile.release]
+lto = true

@@ -1,0 +1,12 @@
+[package]
+name = "mttester"
+version = "0.1.0"
+authors = ["Mike Tang <miketang84@outlook.com>"]
+
+[dependencies]
+hyper = "*"
+time = "*"
+prettytable-rs = "*"
+url = "*"
+rustc-serialize = "*"
+jsonway = "*"

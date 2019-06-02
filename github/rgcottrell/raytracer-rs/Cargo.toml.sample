@@ -1,0 +1,9 @@
+[package]
+name = "raytracer"
+version = "0.1.1"
+authors = ["Robert Cottrell <rgcottrell@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+png = "0.14.0"
+rand = "0.6.4"

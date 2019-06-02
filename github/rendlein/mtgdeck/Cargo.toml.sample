@@ -1,0 +1,10 @@
+[package]
+name = "mtgdeck"
+version = "0.1.0"
+authors = ["rendlein <jboone989@gmail.com>"]
+
+[dependencies]
+curl = "*"
+
+[dev-dependencies]
+curl = "*"

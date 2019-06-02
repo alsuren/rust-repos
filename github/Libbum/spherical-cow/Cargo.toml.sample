@@ -1,0 +1,66 @@
+[package]
+name = "spherical-cow"
+version = "0.1.2"
+authors = ["Tim DuBois <tim@neophilus.net>"]
+description = "Spherical Cow: High volume fraction sphere packing in arbitrary geometries"
+repository = "https://github.com/Libbum/spherical-cow"
+readme = "./README.md"
+keywords = ["sphere", "packing", "spherepacking", "geometry", "obj"]
+license = "MIT/Apache-2.0"
+
+[features]
+default = []
+serde-1 = ["serde", "nalgebra/serde-serialize"]
+
+[dependencies]
+rand = "0.6.5"
+nalgebra = "0.18.0"
+float-cmp = "0.4"
+itertools = "0.8"
+serde = { version = "1.0", optional = true }
+
+[dev-dependencies]
+kiss3d = "0.20.1"
+obj = "0.9"
+serde_json = "1.0"
+criterion = "0.2.11"
+
+[[bench]]
+name = "sphere_pack"
+harness = false
+
+[badges]
+travis-ci = { repository = "Libbum/spherical-cow", branch = "master" }
+codecov = { repository = "Libbum/spherical-cow", branch = "master", service = "github" }
+
+[package.metadata.docs.rs]
+features = ["serde-1"]
+
+[[example]]
+name = "serialize"
+required-features = ["serde-1"]
+
+[[example]]
+name = "count_sphere_normal"
+
+[[example]]
+name = "count_sphere_range"
+
+[[example]]
+name = "show_in_cow"
+
+[[example]]
+name = "show_in_cuboid"
+
+[[example]]
+name = "show_in_emerald"
+
+[[example]]
+name = "show_in_sphere"
+
+[[example]]
+name = "statistics_emerald"
+
+[[example]]
+name = "statistics_sphere"
+

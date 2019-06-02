@@ -1,0 +1,19 @@
+[package]
+name = "varraydb"
+version = "0.0.1"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[lib]
+name = "varraydb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "varraydb-shuffle"
+path = "tools/varraydb-shuffle.rs"
+
+[dependencies]
+rand = "*"
+byteorder = "*"
+memmap = "*"
+rng = "^0.1"
+sharedmem = "^0.1"

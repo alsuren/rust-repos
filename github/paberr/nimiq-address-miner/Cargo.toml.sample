@@ -1,0 +1,18 @@
+[package]
+name = "nimiq-vanity-miner-rs"
+version = "0.1.0"
+authors = ["Pascal Berrang <pascal@nimiq.com>"]
+edition = "2018"
+
+[dependencies]
+num-bigint = "0.2"
+rand = "0.6"
+clap = "2.32"
+num_cpus = "1.10"
+
+[dependencies.nimiq-mnemonic]
+git = "https://github.com/nimiq/core-rs"
+features = ["key-derivation"]
+
+[dependencies.nimiq-key-derivation]
+git = "https://github.com/nimiq/core-rs"

@@ -1,0 +1,12 @@
+[package]
+name = "seqrs"
+version = "0.1.0"
+authors = ["Darcy Jones <darcy.ab.jones@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.1.0"
+failure = "0.1.2"
+
+[dev-dependencies]
+proptest = "0.8.7"

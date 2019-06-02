@@ -1,0 +1,15 @@
+[package]
+name = "asure-pension-core"
+version = "0.1.0"
+authors = ["pmizel <pmizel@echtnice.com>"]
+edition = "2018"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
+
+[dependencies]
+chrono = "0.4"
+csv = "1.0"
+serde = {version="1.0", features =["derive"]}
+rand = "0.6"

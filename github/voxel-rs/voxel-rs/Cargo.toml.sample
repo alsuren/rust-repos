@@ -1,0 +1,28 @@
+[package]
+name = "voxel-rs"
+version = "0.1.0"
+# TODO: Add email
+authors = ["Technici4n"]
+edition = "2018"
+
+[profile.release]
+debug = true
+
+[dependencies]
+gfx = "*"
+gfx_device_gl = "*"
+glutin = "*"
+gfx_window_glutin = "*"
+image = "*"
+texture_packer = "*"
+nalgebra = "0.17"
+noise = "*"
+rand = "*"
+serde = "*"
+serde_derive = "*"
+toml = "*"
+bincode = "*"
+net2 = "*"
+
+[patch.crates-io]
+cobalt = { git = 'https://github.com/Technici4n/cobalt-rs' }

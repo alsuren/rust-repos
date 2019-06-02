@@ -1,0 +1,18 @@
+[package]
+name = "ogaboga"
+description = "Dumb n-voice waveform modulator."
+repository = "https://github.com/isidornygren/ogaboga"
+version = "0.1.0"
+authors = ["Isidor Nygren <karlisidornygren@gmail.com>"]
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+
+[lib]
+name = "ogaboga"
+path = "src/lib.rs"
+
+[dependencies]
+cpal = "0.8.2"
+rand = "0.6.5"
+noise = "0.5.1"

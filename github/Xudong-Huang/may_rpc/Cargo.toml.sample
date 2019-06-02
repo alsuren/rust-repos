@@ -1,0 +1,24 @@
+[package]
+name = "may_rpc"
+version = "0.1.0"
+authors = ["Xudong Huang <huangxu008@hotmail.com>"]
+license = "MIT"
+documentation = "https://docs.rs/may_rpc"
+homepage = "https://github.com/Xudong-Huang/may_rpc"
+repository = "https://github.com/Xudong-Huang/may_rpc"
+keywords = ["rpc", "protocol", "remote", "procedure", "serialize"]
+readme = "README.md"
+description = "RPC framework for Rust based on coroutine."
+
+[lib]
+# crate-type = ["dylib"]
+
+[dependencies]
+serde = "1"
+bincode = "0.9"
+conetty = { git = "https://github.com/Xudong-Huang/conetty.git" }
+serde_derive = "1"
+
+[dev-dependencies]
+may = { git = "https://github.com/Xudong-Huang/may.git" }
+env_logger = "0.4"

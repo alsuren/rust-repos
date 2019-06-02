@@ -1,0 +1,21 @@
+[package]
+name = "matchuper"
+version = "0.1.0"
+authors = ["kloumpt <serge.molina+git@kloumpt.net>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+handlebars-iron = "*"
+staticfile = "*"
+mount = "*"
+urlencoded = "*"
+
+maplit = "*"
+serde = "*"
+serde_json = "*"
+
+rustc-serialize = "*"
+env_logger = "*"
+
+uuid = { version = "*", features = ["v4"] }

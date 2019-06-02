@@ -1,0 +1,10 @@
+[package]
+name = "moccasin"
+version = "0.1.0"
+authors = ["lmb <i@lmb.io>"]
+
+[dependencies]
+num = "0.1.27"
+bitflags = "0.3"
+chrono = "0.2"
+rustc-serialize = "0.3"

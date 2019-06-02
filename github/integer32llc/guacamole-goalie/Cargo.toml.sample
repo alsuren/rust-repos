@@ -1,0 +1,13 @@
+[package]
+name = "guacamole-goalie"
+version = "0.1.0"
+authors = [
+    "Carol (Nichols || Goulding) <carol.nichols@gmail.com>",
+    "Jake Goulding <shepmaster@mac.com>"
+]
+
+[dependencies]
+diesel = { git = "https://github.com/diesel-rs/diesel/", features = ["postgres"] }
+diesel_codegen = { git = "https://github.com/diesel-rs/diesel/", features = ["postgres"] }
+dotenv = "0.10.1"
+clap = "2.27.1"

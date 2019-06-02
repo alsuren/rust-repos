@@ -1,0 +1,8 @@
+[package]
+name = "rusty-sync"
+version = "0.1.0"
+authors = ["KlausVii <klaus.viisainen@gmail.com>"]
+
+[dependencies]
+euler = { path = "./euler" }
+time = "*"

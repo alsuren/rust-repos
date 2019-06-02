@@ -1,0 +1,9 @@
+[package]
+name = "advent-of-code-2017"
+version = "0.1.0"
+authors = ["Victor Nascimento Bakke <gipphe@gmail.com>"]
+
+[dependencies]
+regex = "0.2.10"
+lazy_static = "1.0.0"
+error-chain = "0.11.0"

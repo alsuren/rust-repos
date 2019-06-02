@@ -1,0 +1,9 @@
+[package]
+name = "automata"
+version = "0.1.0"
+authors = ["clarkenciel <clarkenciel@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+sample = "0.6.2"
+portaudio = "0.7.0"

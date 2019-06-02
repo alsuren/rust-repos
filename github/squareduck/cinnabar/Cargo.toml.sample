@@ -1,0 +1,13 @@
+[package]
+name = "cinnabar"
+version = "0.1.0"
+authors = ["squareduck <daniil@squaredu.cc>"]
+edition = "2018"
+
+[dependencies]
+unicode-segmentation = "1.1.0"
+crossbeam = "0.7"
+
+[dev-dependencies]
+speculate = "0.1.0"
+

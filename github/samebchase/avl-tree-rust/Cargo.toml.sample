@@ -1,0 +1,10 @@
+[package]
+
+name = "trees"
+version = "0.1.0"
+authors = ["Foo Bar"]
+
+[[lib]]
+
+name = "trees/mod"
+crate_type = ["lib"]

@@ -1,0 +1,14 @@
+[package]
+
+name = "abs"
+version = "0.0.1"
+authors = ["Christof Fetzer"]
+
+description = "Various (incorrect) implementations of abs function - use to introduce random testing. Also two correct implementations that should demonstrate ways how one can address integer overflows."
+
+[dependencies.rndtester]
+git = "https://github.com/christoffetzer/rndtester"
+
+[dependencies.quickcheck_macros]
+git = "https://github.com/BurntSushi/quickcheck"
+

@@ -1,0 +1,12 @@
+[package]
+name = "xlib"
+version = "0.1.0"
+authors = ["patrick greene <shadowcynical@gmail.com>"]
+
+[dependencies]
+libc = "0.2.34"
+futures = "0.1.17"
+
+[dependencies.x11]
+version = "2.17.0"
+features = ["xlib"]

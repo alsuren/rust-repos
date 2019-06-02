@@ -1,0 +1,30 @@
+[package]
+name = "magog"
+version = "0.1.0"
+authors = [ "Risto Saarelma <risto.saarelma@iki.fi>" ]
+description = "Roguelike game"
+keywords = ["gamedev"]
+license = "GPL3"
+edition = "2018"
+
+[workspace]
+members = ["world", "display", "calx", "calx-ecs", "vitral"]
+
+[dependencies]
+calx = { path = "calx" }
+calx-ecs = { path = "calx-ecs" }
+display = { path = "display" }
+env_logger = "0.6"
+euclid = "0.19"
+glium = "0.23"
+log = "0.4"
+rand = { version = "0.6", features = ["serde1"] }
+ron = "0.4"
+serde = "1.0"
+structopt = "0.2"
+time = "0.1"
+vitral = { path = "vitral" }
+world = { path = "world" }
+
+[dev-dependencies]
+image = "0.21"

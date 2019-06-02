@@ -1,0 +1,10 @@
+[package]
+name = "superhighway"
+version = "0.1.0"
+authors = ["Kellen Frodelius-Fujimoto <kellen@kellenfujimoto.com>"]
+edition = "2018"
+description = "A simple reverse proxy"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/rakenodiax/superhighway"
+
+[dependencies]

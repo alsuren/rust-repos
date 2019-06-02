@@ -1,0 +1,13 @@
+[package]
+name = "rusttol"
+version = "0.0.1"
+authors = [ "vycb <vycb777@gmail.com>" ]
+
+
+[dependencies]
+xml-rs = "*"
+rustc-serialize = "*"
+rusqlite = "*"
+time = "*"
+log = "*"
+env_logger = "*"

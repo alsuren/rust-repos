@@ -1,0 +1,7 @@
+[package]
+name = "php_rust_cli_consumer"
+version = "0.1.0"
+authors = ["timglabisch <tim@ainfach.de>"]
+
+[dependencies]
+scoped_threadpool = "0.1.*"

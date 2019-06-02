@@ -1,0 +1,10 @@
+[package]
+name = "gapush"
+version = "0.1.0"
+authors = ["Geordon Worley <vadixidav@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+heapsize = "0.3"
+serde = "0.9"
+serde_derive = "0.9"

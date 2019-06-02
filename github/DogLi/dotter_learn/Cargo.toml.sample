@@ -1,0 +1,17 @@
+[package]
+name = "dotter"
+version = "0.2.0"
+authors = ["linfeng.yuan <cxwcylf@126.com>"]
+
+[dependencies]
+clap = "*"
+toml = "*"
+serde = "*"
+serde_derive = "*"
+libc = "*"
+log = "*"
+tempdir = "*"
+
+[dependencies.log4rs]
+version = "0.7"
+features = ["rolling_file_appender", "compound_policy", "size_trigger", "fixed_window_roller"]

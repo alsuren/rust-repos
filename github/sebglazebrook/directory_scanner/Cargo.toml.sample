@@ -1,0 +1,18 @@
+[package]
+name = "directory_scanner"
+version = "0.1.0"
+authors = ["Seb Glazebrook <sebastian.glazebrook@redbubble.com>"]
+
+[lib]
+name = "directory_scanner"
+path = "src/lib.rs"
+
+[dependencies]
+time = "*"
+log = "*"
+gitignore = "*"
+crossbeam = "*"
+ 
+
+[dev-dependencies.stainless]
+git = "http://github.com/sebglazebrook/stainless.git"

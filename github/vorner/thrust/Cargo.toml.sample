@@ -1,0 +1,28 @@
+[package]
+name = "thrust"
+version = "0.1.0"
+authors = ["Michal 'vorner' Vaner <vorner@vorner.cz>"]
+license = "GPL3+"
+
+[features]
+debug_trajectory = []
+
+[dependencies]
+arc-swap = "~0.3"
+derive_more = "~0.12"
+env_logger = "~0.5"
+failure = "~0.1"
+itertools = { version = "~0.7" }
+log = { version = "~0.4", features = ["release_max_level_debug"] }
+parking_lot = { version = "~0.6" } #, features = ["nightly"] }
+rand = "~0.5"
+rayon = "~1"
+sdl2 = "~0.31"
+serde = "~1"
+serde_derive = "~1"
+serde_yaml = "~0.8"
+simd = "~0.2"
+structopt = "~0.2"
+
+[dev-dependencies]
+quickcheck = "~0.6"

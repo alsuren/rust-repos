@@ -1,0 +1,28 @@
+[package]
+
+name = "photometer"
+version = "1.2.1"
+authors = ["pavlov_dmitry"]
+
+
+[dependencies]
+num = "*"
+time = "*"
+url="*"
+rustc-serialize="*"
+log = "*"
+env_logger = "*"
+iron = "*"
+router = "*"
+rand = "*"
+image = "*"
+lettre = "*"
+rust-crypto = "*"
+regex = "*"
+
+[dependencies.mysql]
+version="*"
+default-features = false
+
+# [dependencies.image]
+# git = "https://github.com/PistonDevelopers/image.git"

@@ -1,0 +1,39 @@
+[package]
+name = "electron-sys"
+version = "0.1.0"
+authors = ["Darin Morrison <freebroccolo@users.noreply.github.com>"]
+license = "(Apache-2.0 OR MIT)"
+readme = "README.md"
+categories = ["wasm"]
+repository = "https://github.com/freebroccolo/electron-sys"
+description = """
+Raw bindings to the Electron API for projects using wasm-bindgen.
+"""
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = "1.0.90"
+serde_derive = "1.0.90"
+
+[dependencies.js-sys]
+version = "0.3.19"
+features = []
+
+[dependencies.web-sys]
+version = "0.3.19"
+features = []
+
+[dependencies.wasm-bindgen]
+version = "0.2.42"
+features = ["serde-serialize", "nightly"]
+
+[workspace]
+members = [
+  "examples/quick-start/crates/app-main",
+  "examples/quick-start/crates/app-renderer",
+  "examples/quick-start-dodrio/crates/app-main",
+  "examples/quick-start-dodrio/crates/app-renderer",
+]

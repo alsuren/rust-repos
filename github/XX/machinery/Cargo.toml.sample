@@ -1,0 +1,11 @@
+[package]
+name = "machinery"
+version = "0.1.0"
+authors = ["XX <freecoder.xx@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+strum_macros = "0.12"
+
+[dev-dependencies]
+shrust = "0.0"

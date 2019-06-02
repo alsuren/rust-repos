@@ -1,0 +1,8 @@
+[package]
+name = "vrally"
+version = "0.1.0"
+authors = ["Janno Põldma <janno.poldma@gmail.com>"]
+include = ["data/**/*"]
+
+[dependencies]
+sfml = "*"

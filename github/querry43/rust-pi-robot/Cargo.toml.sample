@@ -1,0 +1,20 @@
+[package]
+name = "pi-robot"
+version = "0.1.0"
+authors = ["Matt Harrington <querry43@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+config = "0.8"
+i2c-pca9685 = { git = "https://github.com/querry43/i2c-pca9685" }
+i2cdev = "0.3"
+rppal = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+
+[build-dependencies]
+skeptic = "0.13"
+
+[dev-dependencies]
+skeptic = "0.13"
+tempfile = "2.2.0"

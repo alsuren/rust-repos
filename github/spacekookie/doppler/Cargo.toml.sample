@@ -1,0 +1,20 @@
+[package]
+name = "doppler"
+description = "A powerful and feature-rich Gtk+ frontend for redshift"
+version = "0.0.1"
+license = "MIT/X11"
+authors = ["Katharina Fey <kookie@spacekookie.de>"]
+
+[dependencies]
+glib = "^0"
+gio = "^0"
+gdk = "^0"
+gtk = "^0"
+cairo-rs = { version = "^0", features = ["png"] }
+
+# Dependencies that aren't Gtk
+colortemp = "0.1.0"
+
+[features]
+default = ["gtk_3_10"]
+gtk_3_10 = ["gtk/v3_10"]

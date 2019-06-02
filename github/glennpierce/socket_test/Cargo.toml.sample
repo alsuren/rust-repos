@@ -1,0 +1,29 @@
+[package]
+name = "bmos2"
+version = "0.1.0"
+authors = ["Glenn Pierce <glenn.pierce@carnegosystems.com>"]
+
+[dependencies]
+time = "0.1.36"
+chrono = "0.2"
+futures = "0.1.9"
+byteorder = "0.3"
+pretty_env_logger = "0.1.0"
+env_logger = "0.4.0"
+log = "0.3.1"
+slab = "0.3.0"
+mio = { git = "https://github.com/carllerche/mio" }
+rustc-serialize = "0.3"
+toml = "*"
+clap = "1.2.5"
+bincode = "0.6"
+serde = "0.8"
+serde_derive = "0.8"
+
+[[bin]]
+name = "server"
+path = "src/main.rs"
+
+[[bin]]
+name = "client"
+path = "src/client_example.rs"

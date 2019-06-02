@@ -1,0 +1,49 @@
+[package]
+name = "breeze"
+version = "0.1.0"
+authors = ["Jonas Schievink <jonasschievink@gmail.com>"]
+license = "Apache-2.0/MIT"
+repository = "https://github.com/jonas-schievink/breeze-emu"
+# (not techincally correct, but...)
+documentation = "https://jonas-schievink.github.io/breeze-emu/breeze_core/"
+
+[[bin]]
+name = "breeze"
+path = "src/breeze/main.rs"
+
+[[test]]
+name = "rendertest"
+path = "rendertest/main.rs"
+harness = false
+
+[dependencies]
+breeze_core = { version = "0.1", path = "src/breeze_core" }
+breeze_backends = { version = "0.1", path = "src/breeze_backends" }
+breeze_backend = { version = "0.1", path = "src/breeze_backend" }
+libsavestate = { version = "0.1", path = "src/libsavestate" }
+log = "0.3"
+env_logger = "0.4"
+# clap comes with a few optional features we don't really need (colored output
+# and command correction)
+clap = { version = "2.0", default-features = false }
+
+[dev-dependencies]
+rustasm6502 = "0.1"
+term = "0.4"
+# Disable PNG default features (PNG encoding) since that would depend on flate2
+# and thus C code (this is also the reason we depend directly on png instead of
+# the image crate)
+# FIXME: This should be unnecessary now, maybe we can switch to `image`?
+png = { version = "0.9", default-features = false }
+
+[features]
+# reexport backends
+default = ["sdl", "glium", "cpal"]
+sdl = ["breeze_backends/sdl"]
+glium = ["breeze_backends/glium"]
+cpal = ["breeze_backends/cpal"]
+
+# Run render tests optimized (the unoptimized emulator is just too slow for that
+# to scale well)
+[profile.test]
+opt-level = 2

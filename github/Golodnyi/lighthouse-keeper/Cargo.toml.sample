@@ -1,0 +1,13 @@
+[package]
+name = "lighthouse_keeper"
+version = "0.1.0"
+authors = ["Golodnyi <ochen@golodnyi.ru>"]
+
+[dependencies]
+telegram-bot = { git = "https://github.com/bismuth-party/telegram-bot" }
+telegram-bot-raw = { git = "https://github.com/bismuth-party/telegram-bot" }
+futures = "0.1.23"
+tokio-core = "0.1.17"
+structs = { path = "src/structs/src", version = "*" }
+commands = { path = "src/commands/src", version = "*" }
+db = { path = "src/db/src", version = "*" }

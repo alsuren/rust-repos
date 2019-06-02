@@ -1,0 +1,9 @@
+[package]
+name = "http_beaver"
+version = "0.1.0"
+authors = ["Jeff Labonte <jeff.labonte12@gmail.com>"]
+
+[dependencies]
+hyper = "0.12"
+futures = "0.1.17"
+

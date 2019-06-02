@@ -1,0 +1,12 @@
+[package]
+
+name = "dotaparse"
+version = "0.0.1"
+authors = ["Mārtiņš Šulcs <shulcsm@gmail.com>"]
+
+[dependencies]
+docopt = "*"
+rustc-serialize = "*"
+byteorder = "*"
+protobuf = "*"
+snap = "*"

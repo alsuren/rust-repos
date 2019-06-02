@@ -1,0 +1,10 @@
+[package]
+name = "cls_rust"
+version = "0.1.0"
+authors = ["Chris Holcombe <xfactor973@gmail.com>"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "*"

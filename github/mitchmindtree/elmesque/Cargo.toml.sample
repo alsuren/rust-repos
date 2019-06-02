@@ -1,0 +1,23 @@
+[package]
+name = "elmesque"
+version = "0.12.0"
+authors = ["mitchmindtree <mitchell.nordine@gmail.com>"]
+description = "An attempt at porting Elm's incredibly useful, purely functional std graphics modules."
+readme = "README.md"
+keywords = ["elm", "graphics", "2d", "ui", "shape"]
+license = "MIT"
+repository = "https://github.com/mitchmindtree/elmesque.git"
+homepage = "https://github.com/mitchmindtree/elmesque"
+
+
+[dependencies]
+num = "0.1.27"
+piston2d-graphics = "0.13.0"
+rand = "0.3.12"
+rustc-serialize = "0.3.16"
+vecmath = "0.2.0"
+
+[dev-dependencies]
+find_folder = "0.3.0"
+piston = "0.16.0"
+piston_window = "0.33.0"

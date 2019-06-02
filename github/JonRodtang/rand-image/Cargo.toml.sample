@@ -1,0 +1,10 @@
+[package]
+name = "rand-image"
+version = "0.1.0"
+authors = ["Jon Rodtang <jonrodtang@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+rand = "0.3.18"
+image = "0.18.0"

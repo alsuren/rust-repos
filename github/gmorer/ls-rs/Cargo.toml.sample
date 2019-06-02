@@ -1,0 +1,9 @@
+[package]
+name = "ls-rs"
+version = "0.1.0"
+authors = ["tet <gmorer@student.42.fr>"]
+
+[dependencies]
+time = "0.1"
+libc = "*"
+lazy_static = "1.0"

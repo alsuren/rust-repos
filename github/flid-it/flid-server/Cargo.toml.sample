@@ -1,0 +1,23 @@
+[package]
+name = "flid-server"
+version = "0.1.0"
+authors = ["Иван Плесских <terma95@gmail.com>"]
+
+[dependencies]
+ws = "0.7"
+rand = "0.3"
+serde_json = "1.0"
+serde_derive = "1.0"
+serde = "*"
+log="0.3.8"
+env_logger="0.4.3"
+time="0.1"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

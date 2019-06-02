@@ -1,0 +1,10 @@
+[package]
+name = "tmod"
+version = "0.1.0"
+authors = ["Julian Laubstein <contact@julianlaubstein.de>"]
+build = "build.rs"
+
+[dependencies]
+melon = { path = "../melon" }
+minifb = "^0.11"
+rand = "^0.6"

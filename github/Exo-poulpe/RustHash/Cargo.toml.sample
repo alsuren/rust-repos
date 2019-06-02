@@ -1,0 +1,15 @@
+[package]
+name = "RustHash"
+version = "0.0.3"
+authors = ["Exo-poulpe <exo.poulpe@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+clap="*"
+md-5="*"
+md4="*"
+sha-1="*"
+sha2="*"
+raw-cpuid="*"
+yansi="*"
+sysinfo="*"

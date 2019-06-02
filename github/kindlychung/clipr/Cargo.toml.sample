@@ -1,0 +1,21 @@
+[package]
+
+name = "clipr"
+version = "0.0.1"
+authors = [ "Kaiyin Zhong <kindlychung@gmail.com>" ]
+
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"
+docopt_macros = "0.6"
+
+[dependencies.clipboard]
+git = "https://github.com/aweinstock314/rust-clipboard" 
+branch = "master"
+
+[[bin]]
+
+name = "clipr"
+
+

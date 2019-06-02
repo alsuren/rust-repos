@@ -1,0 +1,52 @@
+[package]
+name = "rusty-train"
+version = "0.1.0"
+authors = ["Ilia <ichimpoesh@gmail.com>"]
+
+[dependencies]
+
+rand = "0.4.2"
+
+[[bin]]
+name = "chapter3"
+path = "src/chapter3/bin/main.rs"
+
+[[bin]]
+name = "chapter5"
+path = "src/chapter5/bin/main.rs"
+
+[[bin]]
+name = "chapter6"
+path = "src/chapter6/bin/main.rs"
+
+[lib]
+name = "communicator"
+path = "src/communicator/lib/mod.rs"
+
+[[bin]]
+name = "chapter7"
+path = "src/chapter7/bin/main.rs"
+
+[[bin]]
+name = "collections"
+path = "src/collections/bin/main.rs"
+
+[[bin]]
+name = "errors"
+path = "src/errors/bin/main.rs"
+
+[[bin]]
+name = "generics"
+path = "src/generics/bin/main.rs"
+
+[[bin]]
+name = "traits"
+path = "src/traits/bin/main.rs"
+
+[[bin]]
+name = "lifetimes"
+path = "src/lifetimes/bin/main.rs"
+
+[[bin]]
+name = "minigrep"
+path = "src/minigrep/bin/main.rs"

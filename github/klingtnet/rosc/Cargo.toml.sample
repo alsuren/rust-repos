@@ -1,0 +1,17 @@
+[package]
+name = "rosc"
+version = "0.1.6"
+authors = ["Andreas Linz <klingt.net@gmail.com>"]
+description = "An OSC library for Rust"
+keywords = ["audio", "osc"]
+documentation = "https://docs.klingt.net/rustdoc/rosc"
+repository = "https://git.klingt.net/alinz/rosc"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+
+[features]
+lints = ["clippy"]
+
+[dependencies]
+byteorder = "1"
+clippy = {version="^0", optional=true}

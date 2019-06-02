@@ -1,0 +1,9 @@
+[package]
+name = "avoinxlsx2json"
+version = "0.1.0"
+authors = ["anoop <anoop@tuxrea.com>"]
+
+[dependencies]
+calamine = "0.11.0"
+chrono = "0.3.0"
+serde_json = "1.0"

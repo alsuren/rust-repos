@@ -1,0 +1,12 @@
+[package]
+name = "driputils"
+version = "0.1.0"
+description = "A library for working with Drip module format"
+authors = ["Sam Harrison <epicpotatopro@gmail.com>"]
+
+[[bin]]
+name = "drip"
+path = "src/bin/drip.rs"
+
+[dependencies]
+term = "*"

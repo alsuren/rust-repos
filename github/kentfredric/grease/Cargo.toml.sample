@@ -1,0 +1,59 @@
+[package]
+name = "grease"
+version = "0.1.0"
+authors = ["Kent Fredric <kentnl@gentoo.org>"]
+edition = "2018"
+
+[dependencies]
+regex = "~1.1"
+directories = "~1.0"
+tempfile = "~3"
+lru = "~0.1, >=0.1.2"
+rust-crypto = "~0.2, >=0.2.31"
+
+[dependencies.clap]
+version = "~2.32"
+default-features = false
+
+features = ["suggestions", "color", "vec_map"]
+
+[dependencies.once_cell]
+version = "~0.1"
+default-features = false
+features = []
+
+[dependencies.failure]
+version = "~0.1"
+default-features = false
+features = ["std","derive","failure_derive","backtrace"]
+
+[dev-dependencies]
+criterion = "~0.2, >=0.2.10"
+
+[profile.release]
+lto = true
+opt-level = 'z'
+codegen-units = 1
+panic = 'abort'
+
+[[bin]]
+name = "grease-bin"
+path = "src/bin/grease.rs"
+doc = true
+
+[[bin]]
+name = "grease-util"
+path = "src/bin/grease-util.rs"
+doc = true
+
+[lib]
+name = "grease"
+path = "src/lib.rs"
+test = true
+doctest = true
+doc = true
+crate-type = ["rlib"]
+
+[[bench]]
+name = "my_benchmark"
+harness = false

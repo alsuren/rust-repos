@@ -1,0 +1,9 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["mhurd"]
+edition = "2018"
+
+[dependencies]
+num = "0.2.0"
+leg = "0.1.3"

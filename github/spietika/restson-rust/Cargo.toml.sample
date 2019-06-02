@@ -1,0 +1,22 @@
+[package]
+name = "restson"
+version = "0.5.3"
+authors = ["Sami Pietikäinen"]
+description = "Easy-to-use REST client with automatic serialization and deserialization."
+repository = "https://github.com/spietika/restson-rust"
+keywords = ["rest", "client", "json", "hyper"]
+categories = ["network-programming", "web-programming::http-client"]
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+hyper = "^0.12.14"
+hyper-tls = "^0.3.1"
+futures = "^0.1.25"
+tokio-core = "^0.1.17"
+serde = "^1.0"
+serde_json = "^1.0"
+serde_derive = "1.0"
+url = "^1.7.2"
+log = "^0.4.6"
+base64 = "^0.10.0"

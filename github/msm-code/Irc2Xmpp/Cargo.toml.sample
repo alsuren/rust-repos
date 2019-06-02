@@ -1,0 +1,12 @@
+[package]
+name = "irc2xmpp"
+version = "0.1.0"
+authors = ["msm <jaroslaw.jedynak@cert.pl>"]
+
+[dependencies]
+bufstream = "0.1.2"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+

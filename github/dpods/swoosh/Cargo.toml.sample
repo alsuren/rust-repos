@@ -1,0 +1,15 @@
+[package]
+name = "paragon_framework"
+version = "0.1.1"
+authors = ["David Glassanos <david.glassanos@gmail.com>"]
+license = "MIT"
+description = "A High-Level MVC Web Framework"
+edition = "2018"
+
+[dependencies]
+hyper = "0.12.0"
+http = "0.1"
+regex = "1"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+tera = "0.11.20"

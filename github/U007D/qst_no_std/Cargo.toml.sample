@@ -1,0 +1,36 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2018"
+
+[build]
+target = "thumbv7m-none-eabi"
+
+[dependencies]
+
+[profile.dev]
+codegen-units = 1
+debug = true
+debug-assertions = true
+lto = false
+opt-level = 0
+panic = "abort"
+rpath = false
+
+[profile.release]
+codegen-units = 1
+debug = false
+debug-assertions = false
+lto = true
+opt-level = 3
+panic = "abort"
+rpath = false
+
+[profile.test]
+codegen-units = 1
+debug = true
+debug-assertions = true
+lto = false
+opt-level = 0
+rpath = false

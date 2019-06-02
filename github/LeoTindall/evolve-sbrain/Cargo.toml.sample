@@ -1,0 +1,11 @@
+[package]
+authors = ["SilverWingedSeraph <lfstindall@gmail.com>"]
+name = "evolve-sbrain"
+version = "0.1.0"
+[dependencies]
+rand = "^0.3"
+rayon = "*"
+sbrain = "*"
+serde = "^1"
+serde_derive = "^1"
+toml = "^0.4"

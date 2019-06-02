@@ -1,0 +1,78 @@
+[package]
+name = "websocat"
+version = "1.4.0"
+authors = ["Vitaly \"_Vi\" Shukela <vi0oss@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/vi/websocat"
+description = "Command-line client for web sockets, like netcat/curl/socat for ws://."
+keywords = ["WebSocket", "socat", "rfc6455", "netcat", "cli"]
+exclude = ["autorelease.sh","test.sh","test.pkcs12"]
+readme = "README.md"
+
+[package.metadata.deb]
+section = "utility"
+extended-description = """\
+A tool allows you to interconnect two specifiers, like in socat, \
+but with Websocket and some other additional functions."""
+features = ["ssl", "workaround1", "seqpacket", "unix_stdio"]
+#depends = "$auto"
+depends = "libssl1.1, libc6 (>= 2.19), libgcc1 (>= 1:4.9.0)"
+
+
+[dependencies]
+websocket = { version = "0.22.0", default-features = false, features=["async"] }
+env_logger = { version = "0.6.0", default-features = false }
+log = {version="0.4.1", default-features = false, features=["release_max_level_debug"]}
+futures = {version = "0.1.17" }
+tokio-io = "0.1.5"
+tokio-stdin-stdout = "0.1.5"
+structopt = { version = "0.2", default-features = false }
+tokio-process = { version = "0.2.3", optional = true }
+slab_typesafe = "0.1"
+hyper="0.10.13"
+url="1.7.1"
+openssl-probe = { version = "0.1.2", optional = true }
+smart-default = "0.3.0"
+tokio-tls = {version = "0.2.0", optional = true}
+native-tls = {version = "0.2.1", optional = true}
+readwrite = {version = "0.1.1", optional = true, features = ["tokio"]}
+derivative="1.0.0"
+tokio-codec = "0.1.1"
+tokio-tcp = "0.1.2"
+tokio-udp = "0.1.3"
+tokio-reactor = "0.1.7"
+tokio = "0.1.11"
+tokio-current-thread = "0.1.4"
+tk-listen = "0.2.1"
+tokio-timer = "0.2.0"
+
+
+[target.'cfg(unix)'.dependencies]
+tokio-file-unix = "0.5.1"
+tokio-signal = { version = "0.2.7", optional = true }
+tokio-uds = "0.2.3"
+libc = { version = "0.2", optional = true }
+
+[features]
+default = ["signal_handler", "tokio-process", "unix_stdio"]
+unix_stdio = []
+ssl = ["websocket/async-ssl", "tokio-tls", "native-tls", "readwrite"]
+signal_handler = ["tokio-signal"]
+workaround1=["libc"]
+seqpacket=["libc"]
+
+[replace]
+#"tokio-process:0.1.6" = {path="/mnt/src/git/tokio-process"}
+#"tokio-core:0.1.17" = {path="/mnt/src/git/tokio-core"}
+#"websocket:0.22.0" = {path="/mnt/src/git/rust-websocket"}
+
+
+
+[profile.release]
+opt-level = "s"
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'abort'

@@ -1,0 +1,22 @@
+[package]
+name = "track8-program"
+version = "1.0.0"
+authors = ["Amelorate <ameilorate2@gmail.com>"]
+description = "A programming language running on an emulated 8 track tape"
+readme = "README.md"
+keywords = ["esoteric", "interpreter", "language"]
+license = "MIT"
+repository = "https://github.com/Ameliorate/track8-program"
+homepage = "https://github.com/Ameliorate/track8-program"
+
+[lib]
+name = "track8_program"
+path = "src/lib.rs"
+
+[[bin]]
+name = "track8_program_bin"
+path = "src/bin.rs"
+
+[dependencies]
+derive_more = "0.9.0"
+clap = "2.31.2"

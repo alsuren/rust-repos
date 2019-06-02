@@ -1,0 +1,15 @@
+[package]
+name = "sim"
+version = "0.1.0"
+authors = ["Lukas Kalbertodt <lukas.kalbertodt@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32"
+rand = "0.6"
+structopt = "0.2"
+
+[dependencies.quicksilver]
+version = "0.3"
+default-features = false
+features = ["fonts"]

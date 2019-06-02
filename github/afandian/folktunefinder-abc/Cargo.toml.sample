@@ -1,0 +1,23 @@
+[package]
+name = "folktunefinder-abc"
+version = "0.1.0"
+authors = ["Joe Wass <joe@afandian.com>"]
+
+
+[[bin]]
+name = "abctool"
+doc = false
+path = "src/main.rs"
+
+[dependencies]
+glob = "0.2.11"
+time = "0.1"
+regex = "0.2"
+tiny_http = "0.5"
+rand = "0.5.5"
+url = "1.7.2"
+serde_json = "1.0"
+serde_derive = "1.0"
+serde = "1.0"
+unidecode = "0.3.0"
+handlebars = "1.1.0"

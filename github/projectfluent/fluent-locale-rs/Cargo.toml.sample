@@ -1,0 +1,25 @@
+[package]
+name = "fluent-locale"
+description = """
+A library for parsing, serializing, manipulating and negotiating locales and language tags.
+"""
+version = "0.4.1"
+authors = ["Zibi Braniecki <gandalf@mozilla.com>"]
+homepage = "http://projectfluent.org/"
+license = "Apache-2.0"
+repository = "https://github.com/projectfluent/fluent-locale-rs"
+readme = "README.md"
+categories = ["internationalization", "localization"]
+
+[badges]
+travis-ci = { repository = "projectfluent/fluent-locale-rs" }
+coveralls = { repository = "projectfluent/fluent-locale-rs", branch = "master", service = "github" }
+
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+
+[dev-dependencies]
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"

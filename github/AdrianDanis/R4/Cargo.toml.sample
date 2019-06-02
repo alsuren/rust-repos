@@ -1,0 +1,21 @@
+[package]
+name = "r4"
+version = "0.0.1"
+authors = ["Adrian Danis <adriandanis88@gmail.com>"]
+license = "MIT"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0.0"
+multiboot = {git = "https://github.com/gz/rust-multiboot"}
+x86 = "0.6.0"
+raw-cpuid = "2.0.0"
+
+[profile.dev]
+panic = 'abort'
+
+[profile.release]
+lto = true
+panic = 'abort'

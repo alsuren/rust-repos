@@ -1,0 +1,23 @@
+[package]
+
+name = "inventory_watcher"
+version = "0.0.1"
+authors = [ "Giovanni Frank Crisanti <you@example.com>" ]
+
+[[bin]]
+
+name = "server"
+
+[dependencies]
+iron = "*"
+rustc-serialize = "*"
+router = "*"
+rust-ini = "*"
+staticfile = "*"
+mount = "*"
+lettre = "*"
+time = "*"
+
+[dependencies.mysql]
+default-features = false
+features = ["pipe"]

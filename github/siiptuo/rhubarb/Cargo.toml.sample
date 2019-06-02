@@ -1,0 +1,16 @@
+[package]
+name = "rhubarb"
+version = "0.1.0"
+authors = ["Tuomas Siipola <siiptuo@kapsi.fi>"]
+edition = "2018"
+license = "AGPL-3.0-or-later"
+
+[dependencies]
+hyper = "0.12.19"
+futures = "0.1.25"
+url = "1.7.2"
+tokio = "0.1.13"
+rand = "0.6.1"
+hmac = "0.7.0"
+sha2 = "0.8.0"
+http = "0.1.14"

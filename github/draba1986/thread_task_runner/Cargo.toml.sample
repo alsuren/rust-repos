@@ -1,0 +1,18 @@
+[package]
+name = "thread_task_runner"
+version = "0.1.0"
+authors = ["draba1986 <draba1986@gmail.com>"]
+description = "A thread local task runner."
+license = "MIT/Apache-2.0"
+
+[lib]
+name = "thread_task_runner"
+crate-type = ["dylib"]
+
+[dependencies]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3

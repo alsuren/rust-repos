@@ -1,0 +1,21 @@
+[package]
+name = "word2vec"
+version = "0.3.2"
+authors = ["Dima Kudosh <dimakudosh@gmail.com>", "Sebastian Humenda"]
+description = "Rust interface to word2vec."
+documentation = "https://github.com/DimaKudosh/word2vec/wiki"
+homepage = "https://github.com/DimaKudosh/word2vec"
+repository = "https://github.com/DimaKudosh/word2vec"
+keywords = ["word2vec"]
+license = "MIT"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
+
+[dependencies]
+byteorder = "1"
+
+
+[[test]]
+name = "tests"

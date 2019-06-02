@@ -1,0 +1,19 @@
+[package]
+name = "espadon"
+version = "0.0.1"
+authors = ["Florent FAYOLLE <florent.fayolle69@gmail.com>"]
+license = "MIT"
+
+[features]
+default = ["position"]
+position = ["nom_locate"]
+
+[dependencies]
+nom = "^3.1"
+
+[dependencies.nom_locate]
+version = "^0.1"
+optional = true
+
+[dev-dependencies]
+pretty_assertions = "^0.4"

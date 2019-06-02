@@ -1,0 +1,15 @@
+[package]
+name = "directory_filter"
+version = "0.1.0"
+authors = ["Seb Glazebrook <sebastian.glazebrook@redbubble.com>"]
+
+[dependencies]
+regex = "*"
+crossbeam = "*"
+time = "*"
+log = "*"
+lazy_static = "*"
+scoped_threadpool = "*"
+
+[dependencies.directory_scanner]
+git = "http://github.com/sebglazebrook/directory_scanner.git"

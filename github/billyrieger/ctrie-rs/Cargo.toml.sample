@@ -1,0 +1,9 @@
+[package]
+name = "ctrie"
+version = "0.1.0"
+authors = ["Billy Rieger <wrieger@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+crossbeam = "0.7"
+fxhash = "0.2"

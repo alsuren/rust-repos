@@ -1,0 +1,38 @@
+[package]
+
+name = "lsystem"
+version = "0.0.1"
+description = "Create L-System iterators using types as an alphabet."
+authors = ["Aaron Jacobs <atheriel@gmail.com>"]
+
+[lib]
+name = "lsystem"
+path = "src/lib.rs"
+
+[[example]]
+name = "algae"
+path = "examples/algae.rs"
+
+[[example]]
+name = "anabaena"
+path = "examples/anabaena.rs"
+
+[[example]]
+name = "parametric"
+path = "examples/parametric.rs"
+
+[[example]]
+name = "koch"
+path = "examples/koch.rs"
+
+[[example]]
+name = "sierpinski"
+path = "examples/sierpinski.rs"
+
+[[example]]
+name = "seaweed"
+path = "examples/seaweed.rs"
+
+[[example]]
+name = "penrose"
+path = "examples/penrose.rs"

@@ -1,0 +1,9 @@
+[package]
+name = "slithers"
+version = "0.1.0"
+authors = ["Maplicant <maplicant@gmail.com>"]
+
+[dependencies]
+error-chain = "*"
+reqwest = "*"
+byteorder = "*"

@@ -1,0 +1,15 @@
+[package]
+name = "easy-steamworks"
+version = "0.1.0"
+authors = ["Las <las@protonmail.ch>"]
+edition = "2018"
+
+[dependencies]
+const-cstr = "0.3"
+derive_more = "0.13"
+erroneous = "1"
+futures = "0.1.25"
+lazy_static = "1"
+
+[dev-dependencies]
+const-cstr = "0.3"

@@ -1,0 +1,11 @@
+[package]
+name = "walle"
+version = "0.1.0"
+authors = ["Brandon Milton <brandon.milton21@gmail.com>"]
+
+[dependencies]
+rand = "0.3.14"
+curl = "0.3.0"
+serde = "*"
+serde_json = "*"
+argparse = "0.2.1"

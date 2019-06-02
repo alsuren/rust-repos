@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+  "fiemap",
+  "fraghist",
+  "fragmorethan",
+]
+
+[profile.release]
+lto = true

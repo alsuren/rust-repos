@@ -1,0 +1,13 @@
+[package]
+name = "dotenv-enforced"
+version = "0.1.0"
+authors = ["Thomas Meier <thomas.meier@citrine.it>"]
+readme = "README.md"
+keywords = ["environment", "env", "dotenv", "settings", "config"]
+license = "MIT"
+homepage = "https://github.com/thomasmeier/dotenv-enforced"
+repository = "https://github.com/thomasmeier/dotenv-enfored"
+description = "A `dotenv` implementation for Rust that also makes some vars required"
+
+[dependencies]
+regex = "0.2"

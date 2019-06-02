@@ -1,0 +1,8 @@
+[package]
+name = "hactar"
+version = "0.9.0"
+authors = ["tsoj <tsoj.tsoj@gmx.de>"]
+build = "src/build.rs"
+
+[profile.dev]
+opt-level = 3

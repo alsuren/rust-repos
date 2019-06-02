@@ -1,0 +1,21 @@
+# Auto-generated from "Cargo.yml"
+[dependencies]
+failure = "0.1.5"
+
+[dependencies.ekke_merge_derive]
+optional = true
+path = "../ekke_merge_derive"
+
+[dependencies.serde_yaml]
+optional = true
+version = "^0.8.8"
+
+[features]
+derive = ["ekke_merge_derive"]
+serdeyaml = ["serde_yaml"]
+
+[package]
+authors = ["Naja Melan <najamelan@autistici.org>"]
+edition = "2018"
+name = "ekke_merge"
+version = "0.1.0"

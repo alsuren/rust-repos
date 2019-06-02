@@ -1,0 +1,10 @@
+[package]
+name = "warifu"
+version = "0.1.0"
+authors = ["dorayakikun <amakunai.dorayaki@gmail.com>"]
+
+[dependencies]
+clap = "2"
+difference = "2"
+reqwest = "0.9"
+term = "0.5"

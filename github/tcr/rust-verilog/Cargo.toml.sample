@@ -1,0 +1,14 @@
+[package]
+authors = ["Tim Ryan <tim@timryan.org>"]
+description = "Parser for Verilog."
+license = "MIT"
+name = "verilog"
+version = "0.0.1"
+repository = "https://github.com/tcr/rust-verilog"
+
+[build-dependencies]
+libflate = "0.1"
+
+[dependencies]
+lalrpop-util = "0.12"
+regex = "0.1.80"

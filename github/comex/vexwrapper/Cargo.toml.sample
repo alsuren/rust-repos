@@ -1,0 +1,7 @@
+[package]
+name = "vexwrapper"
+version = "0.1.0"
+authors = ["comex <comexk@gmail.com>"]
+
+[dependencies]
+libvex-sys = { path = "../libvex-sys" }

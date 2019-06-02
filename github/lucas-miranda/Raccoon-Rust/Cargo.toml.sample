@@ -1,0 +1,9 @@
+[package]
+name = "raccoon-rust"
+version = "0.1.0"
+authors = ["Lucas Miranda <miranda.a.lucas@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+gfx-hal = "0.2.0"
+winit = "0.19"

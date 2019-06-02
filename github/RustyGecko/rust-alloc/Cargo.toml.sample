@@ -1,0 +1,27 @@
+[package]
+
+name = "alloc"
+version = "0.0.1"
+authors = ["The Rust Project Developers"]
+
+license = "MIT/Apache-2.0"
+repository = "https://github.com/RustyGecko/rust-alloc"
+homepage = "http://doc.rust-lang.org/nightly/alloc/"
+description = """
+alloc as a stand-alone crate
+"""
+
+build = "build.rs"
+
+[lib]
+name = "alloc"
+path = "rust/src/liballoc/lib.rs"
+
+[build-dependencies.rust_src]
+git = "https://github.com/sondrele/rust-src.git"
+
+[target.thumbv7m-none-eabi.dependencies.core]
+git = "https://github.com/RustyGecko/rust-core.git"
+
+[target.thumbv7m-none-eabi.dependencies.libc]
+git = "https://github.com/RustyGecko/rust-libc.git"

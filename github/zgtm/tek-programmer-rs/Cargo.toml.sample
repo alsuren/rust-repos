@@ -1,0 +1,8 @@
+[package]
+name = "tek-programmer"
+version = "0.1.0"
+authors = ["Robert Czechowski <robert+git@zgtm.de>"]
+
+[dependencies]
+libusb = "0.3"
+rustc-serialize = "0.3"

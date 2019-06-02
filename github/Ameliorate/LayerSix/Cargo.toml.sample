@@ -1,0 +1,11 @@
+[package]
+name = "layersix"
+version = "1.0.0"
+authors = ["Ameliorate <ameilorate2@gmail.com>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+description = "A high-level network library that fulfills the role of layer 6 in the OSI diagram"
+keywords = ["networking", "network-programming", "layer6"]
+categories = ["network-programming"]
+
+[dependencies]

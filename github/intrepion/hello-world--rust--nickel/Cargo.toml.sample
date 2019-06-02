@@ -1,0 +1,33 @@
+[package]
+
+name = "hello_world_x_rust_x_nickel"
+version = "0.8.1"
+authors = [ "Oliver Forral <intrepion@gmail.com>" ]
+description = "Extracted the hello world example and test from nickel.rs repo"
+license = "MIT"
+
+repository = "https://github.com/intrepion/hello-world--rust--nickel"
+readme = "README.md"
+keywords = ["hello", "world", "rust", "nickel"]
+
+[features]
+unstable = ["hyper/nightly", "compiletest_rs"]
+
+[dependencies]
+nickel = "0.8.1"
+rustc-serialize = "0.3"
+lazy_static = "0.1"
+
+[dependencies.hyper]
+version = "=0.8"
+default-features = false
+
+[dependencies.compiletest_rs]
+version = "0.1"
+optional = true
+
+[[example]]
+
+name = "hello_world"
+path = "examples/hello_world.rs"
+

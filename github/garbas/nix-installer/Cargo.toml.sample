@@ -1,0 +1,11 @@
+[package]
+name = "nix-installer"
+version = "0.1.0"
+authors = ["Maarten Hoogendoorn <maarten@moretea.nl>"]
+
+[dependencies]
+elf = "*"
+bzip2 = "*"
+tar = "*"
+tempdir = "*"
+clap = "*"

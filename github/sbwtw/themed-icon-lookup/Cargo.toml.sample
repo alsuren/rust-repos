@@ -1,0 +1,22 @@
+[package]
+name = "themed-icon-lookup"
+version = "0.1.0"
+authors = ["石博文 <sbw@sbw.so>"]
+build = "src/build.rs"
+
+[lib]
+name = "themed_icon_lookup"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+gtk-icon-cache = "*"
+rust-ini = "*"
+lazy_static = "*"
+rayon = "*"
+lru-cache = "*"
+log = "*"
+bitflags = "*"
+
+[build-dependencies]
+cbindgen = "*"

@@ -1,0 +1,10 @@
+[package]
+name = "ld38"
+version = "0.1.0"
+authors = ["Owen Nelson <onelson@gmail.com>"]
+
+[dependencies]
+specs = "0.7.0"
+ggez = { git = "https://github.com/ggez/ggez.git" }
+omn_labs = { git = "https://github.com/onelson/OmnLabsRS.git" }
+rand = "*"

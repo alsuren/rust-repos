@@ -1,0 +1,14 @@
+[package]
+name = "geometric"
+version = "0.2.0"
+authors = ["Paul Harris <pirh.badger@gmail.com>"]
+description = "A very simple vector and matrix library built on the vecmath crate."
+homepage = "https://github.com/Pirh/geometric"
+documentation = "https://github.com/Pirh/geometric"
+repository = "https://github.com/Pirh/geometric.git"
+license = "MIT"
+readme = "README.md"
+keywords = ["vecmath", "vector", "matrix", "geometry"]
+
+[dependencies]
+vecmath = "0.3.0"

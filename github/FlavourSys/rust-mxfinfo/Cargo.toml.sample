@@ -1,0 +1,29 @@
+[package]
+name = "mxfinfo"
+description = "Rust bindings for libMXF"
+version = "0.0.1"
+authors = ["Steve Dierker <steve.dierker@flavoursys.com>"]
+license = "MIT"
+links = "libMXF"
+build = "build.rs"
+repository = "https://github.com/Flavoursys/rust-mxfinfo"
+keywords = ["mxfinfo", "libMXF", "AvidMXF"]
+readme = "README.md"
+exclude = [
+    "examples/*"
+]
+
+[dependencies]
+libc = "0.1"
+num-rational = "0.2"
+num-traits = "0.2"
+chrono = "0.4"
+
+[build-dependencies.pkg-config]
+version = "0.3.9"
+
+[features]
+nightly = []
+
+[profile.dev]
+opt-level = 1

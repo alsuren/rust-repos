@@ -1,0 +1,20 @@
+[package]
+name = "BadAppleOS-rs"
+version = "0.1.0"
+authors = ["foreverbell <dql.foreverbell@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+ascii = { version = "0.8", default-features = false }
+compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+lazy_static = { version = "1.0.0", features = ["spin_no_std"] }
+rlibc = "1.0"
+spin = "0.4.6"
+volatile = "0.2.4"
+bitflags = "1.0"
+
+# Disable loop unrolling optimization in O3.
+[profile.release]
+opt-level = 2

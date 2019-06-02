@@ -1,0 +1,11 @@
+[package]
+
+name = "banana-split"
+version = "0.0.1"
+authors = ["Nico Reed <me@nicoreed.com>"]
+
+[[bin]]
+name = "bs"
+
+[dependencies.clippy]
+git = "https://github.com/Manishearth/rust-clippy"

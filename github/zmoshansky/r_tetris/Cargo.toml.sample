@@ -1,0 +1,33 @@
+[package]
+
+name = "r_tetris"
+version = "0.0.1"
+authors = ["Zachary <zmoshansky@gmail.com>"]
+
+[[bin]]
+
+name = "r_tetris"
+path = "src/main.rs"
+
+
+# main.rs
+#######################
+[dependencies.sdl2_window]
+git = "https://github.com/pistondevelopers/sdl2_window"
+
+[dependencies.event]
+git = "https://github.com/pistondevelopers/event"
+
+[dependencies.event_loop]
+git = "https://github.com/pistondevelopers/event_loop"
+
+# tetris.rs
+#######################
+[dependencies.opengl_graphics]
+git = "https://github.com/PistonDevelopers/opengl_graphics.git"
+
+[dependencies.graphics]
+git = "https://github.com/pistondevelopers/graphics"
+
+[dependencies.input]
+git = "https://github.com/pistondevelopers/input"

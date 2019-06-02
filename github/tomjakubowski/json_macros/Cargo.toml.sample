@@ -1,0 +1,37 @@
+[package]
+authors = [
+  "Tom Jakubowski <tom@crystae.net>",
+  "Yohaï Berreby <yohaiberreby@gmail.com>",
+  "Zbigniew Siciarz <zbigniew@siciarz.net>"
+]
+description = "Convenience macros for constructing JSON objects from literals.\n"
+keywords = ["json", "macros", "plugins", "serde", "serialization"]
+license = "MIT"
+name = "json_macros"
+readme = "README.markdown"
+repository = "https://github.com/tomjakubowski/json_macros"
+version = "0.3.2"
+
+[features]
+default = ["with-rustc-serialize"]
+with-rustc-serialize = ["rustc-serialize"]
+with-serde = ["serde_json"]
+
+[dependencies]
+rustc-serialize = { version = "^0.3", optional = true }
+serde_json = { version = "^0.6", optional = true }
+
+[dev-dependencies]
+serde = "^0.6"
+
+[[example]]
+name = "kitchen-sink"
+path = "examples/kitchen_sink.rs"
+
+[lib]
+name = "json_macros"
+path = "src/lib.rs"
+plugin = true
+
+[[test]]
+name = "tests"

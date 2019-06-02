@@ -1,0 +1,57 @@
+cargo-features = ["default-run"]
+
+[package]
+name = "population_simulation"
+version = "0.1.0"
+authors = ["Joe Howarth <josephehowarth@gmail.com>"]
+edition = "2018"
+default-run = "population_simulation"
+
+#[[bin]]
+#name = "gen_typescript"
+#path = "src/bin/gen_typescript.rs"
+
+[profile.dev]
+opt-level = 0
+
+[dependencies]
+ws = "0.7.8"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+serde_json = "1.0.32"
+failure = "0.1.2"
+
+specs-derive = "0.2.0"
+fnv = "1.0.6"
+anymap = "0.12.1"
+vec_map = "0.8.1"
+nalgebra-glm = "0.2.0"
+ord_subset = "3.1.1"
+config = "0.9.2"
+lazy_static = "1.2.0"
+slog = "2.4.1"
+slog-async = "2.3.0"
+slog-term = "2.4.0"
+slog-scope = "4.1.1"
+chrono = "0.4.6"
+rand = "0.6.5"
+derive_more = "0.14.0"
+typescript-definitions = "0.1.10"
+dirs = "1.0.5"
+
+[dependencies.arrayvec]
+version = "0.4.10"
+features = ["serde-1"]
+#log = "0.4.6"
+#env_logger = "0.6.1"
+
+[dependencies.specs]
+version = "0.12.3"
+features = [ "nightly"]
+
+[dependencies.nalgebra]
+version = "0.16.11"
+features = [
+    "serde-serialize"
+]
+

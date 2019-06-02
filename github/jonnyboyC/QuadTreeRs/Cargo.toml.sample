@@ -1,0 +1,18 @@
+[package]
+name = "quadtree"
+version = "0.1.0"
+authors = ["John Chabot <chabotja@miamioh.edu>"]
+
+[lib]
+name = "quad_tree"
+path = "src/lib.rs"
+
+[dependencies]
+num = "0.1.42"
+rand = "0.5.0"
+itertools = "0.7.8"
+
+[[bin]]
+name = "quad_tree_test"
+path = "src/bin/main.rs"
+

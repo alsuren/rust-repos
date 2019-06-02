@@ -1,0 +1,10 @@
+[package]
+name = "knapsack"
+version = "0.1.0"
+authors = ["RJ Rybarczyk <rj@rybar.tech>"]
+edition = "2018"
+
+[dependencies]
+csv = "1.0.5"
+serde = "1.0.88"
+serde_derive = "1.0.88"

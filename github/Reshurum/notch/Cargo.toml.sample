@@ -1,0 +1,11 @@
+[package]
+name = "notch"
+version = "0.0.1"
+authors = [ "Walter Kuppens <reshurum@gmail.com>" ]
+
+[dependencies]
+byteorder = "0.4"
+getopts = "0.2"
+rand = "0.3.14"
+sdl2 = "0.14"
+time = "0.1"

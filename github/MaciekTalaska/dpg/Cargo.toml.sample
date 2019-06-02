@@ -1,0 +1,13 @@
+[package]
+name = "dpg"
+version = "0.1.0"
+authors = ["MaciekTalaska <maciek.talaska@gmail.com>"]
+description = "generate password(s) using diceware method & crypto secure random numbers"
+
+[dependencies]
+rand = "0.4.2"
+clipboard = "0.4.6"
+
+[profile.release]
+lto = true
+opt-level = "z"

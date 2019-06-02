@@ -1,0 +1,15 @@
+[package]
+name = "aoc-2018"
+version = "0.1.0"
+authors = ["Kevin Cotugno <kevin@kevincotugno.com>"]
+
+[[bin]]
+name = "aoc-2018"
+path = "src/bin/main.rs"
+
+[lib]
+name = "aoc"
+path = "src/aoc/lib.rs"
+
+[dependencies]
+chrono = "0.4.6"

@@ -1,0 +1,4 @@
+[workspace]
+members = ["dcpu", "dcpu_macros"]
+[profile.dev]
+debug-assertions = false

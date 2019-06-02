@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "win32",
+    "game-core",
+    "wasm-lib",
+    "gl-front",
+    "gl",
+    "game-derive",
+    "vulkan-front",
+]

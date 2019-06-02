@@ -1,0 +1,49 @@
+[package]
+
+name = "gltut-rust"
+version = "0.0.1"
+authors = ["O01eg <o01eg@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+sdl2 = "*"
+gl = "*"
+libc = "*"
+rand = "*"
+byteorder = "*"
+
+[features]
+default = []
+
+[lib]
+name = "tutcommon"
+path = "src/libtutcommon/lib.rs"
+
+[[bin]]
+name = "tut01"
+path = "src/tut01/main.rs"
+
+[[bin]]
+name = "tut02"
+path = "src/tut02/main.rs"
+
+[[bin]]
+name = "tut03"
+path = "src/tut03/main.rs"
+
+[[bin]]
+name = "tut04"
+path = "src/tut04/main.rs"
+
+[[bin]]
+name = "tut05"
+path = "src/tut05/main.rs"
+
+[[bin]]
+name = "tut06"
+path = "src/tut06/main.rs"
+
+[[bin]]
+name = "tut07"
+path = "src/tut07/main.rs"

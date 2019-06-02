@@ -1,0 +1,15 @@
+[workspace]
+
+members = [
+  "pull-4427",
+  "master",
+  "regex",
+  "dfa",
+  "nom"
+]
+
+[profile.bench]
+opt-level = 3
+debug = true
+codegen-units = 1
+

@@ -1,0 +1,23 @@
+[package]
+name = "openvr"
+version = "0.1.1"
+authors = [
+    "Lucidscape Technologies Inc.",
+    "Braden Evans <braden@lucidscape.com>"
+]
+description = "Rust bindings to the OpenVR library."
+keywords = ["OpenVR", "VR", "Vive", "Oculus"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/lucidscape/openvr-rs"
+#documentation = ""
+exclude = [
+    "openvr/lib/*",
+    "openvr/samples/*",
+    "openvr/unity_package/*",
+]
+
+
+[dependencies]
+libloading = "0.2.*"
+lazy_static = "0.2.*"

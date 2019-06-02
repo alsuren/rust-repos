@@ -1,0 +1,8 @@
+[package]
+name = "cryptopals"
+version = "0.1.0"
+authors = ["Nick Platt <platt.nicholas@gmail.com>"]
+
+[dependencies]
+num = "^0.1"
+itertools = "^0.4"

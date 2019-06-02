@@ -1,0 +1,14 @@
+[package]
+name = "tileedit"
+version = "0.1.0"
+authors = ["Arne Dußin <arne.dussin@live.de>"]
+
+[dependencies]
+byteorder = "*"
+find_folder = "*"
+gfx_device_gl = "*"
+nalgebra = "*"
+piston_window = "*"
+pistoncore-sdl2_window = "*"
+piston2d-sprite = "*"
+piston2d-graphics = "*"

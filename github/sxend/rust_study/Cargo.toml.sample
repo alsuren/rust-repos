@@ -1,0 +1,30 @@
+[package]
+name = "rust_study"
+version = "0.1.0"
+authors = ["sxend <arimitsu.k+github@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+hyper = "0.12.18"
+futures = "0.1.25"
+futures-cpupool = "0.1.8"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+serde_json = "1.0.33"
+time = "0.1.40"
+tokio-io = "0.1.10"
+tokio-core = "0.1.17"
+iron = "0.6.0"
+router = "0.6.0"
+params = "0.8.0"
+uuid = { version = "0.7.1", features = ["serde", "v4"] }
+regex = "1.1.0"
+docopt = "1.0.2"
+base64 = "0.10.0"
+markdown = "0.2.0"
+rust-crypto = "0.2.36"
+log = "0.4.6"
+env_logger = "0.6.0"
+actix-web = "0.7.16"
+error = "0.1.9"
+rand = "0.6.1"

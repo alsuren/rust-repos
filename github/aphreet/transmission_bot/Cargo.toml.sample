@@ -1,0 +1,13 @@
+[package]
+name = "transmission_bot"
+version = "0.1.0"
+authors = ["Malygin, Mikhail <mikhail.malygin@emc.com>"]
+
+[dependencies]
+hyper = "0.9.10"
+rustc-serialize = "0.3"
+url = "1.2.1"
+log = "0.3"
+env_logger = "0.3"
+clap = "2.20.3"
+mime = "0.2.2"

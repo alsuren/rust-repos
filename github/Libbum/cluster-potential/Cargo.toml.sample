@@ -1,0 +1,12 @@
+[package]
+name = "cluster-potential"
+version = "0.1.0"
+authors = ["Tim DuBois <tim@neophilus.net>"]
+
+[dependencies]
+regex = "0.2"
+getopts = "0.2"
+clippy = {version = "*", optional = true}
+
+[features]
+default = []

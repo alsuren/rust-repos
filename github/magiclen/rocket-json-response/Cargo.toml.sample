@@ -1,0 +1,21 @@
+[package]
+name = "rocket-json-response"
+version = "0.5.1"
+authors = ["Magic Len <len@magiclen.org>"]
+repository = "https://github.com/magiclen/rocket-json-response"
+homepage = "https://magiclen.org/rocket-json-response"
+keywords = ["rocket", "server", "web", "json"]
+categories = ["web-programming"]
+description= "This is a crate which provides `JSONResponse` and `JSONResponseWithoutData` structs to response JSON format data with an additional **code** integer value."
+readme = "README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "magiclen/rocket-json-response", branch = "master" }
+
+[dependencies]
+rocket = "0.4"
+
+[dependencies.json-gettext]
+version = "3"
+features = ["rocketly"]

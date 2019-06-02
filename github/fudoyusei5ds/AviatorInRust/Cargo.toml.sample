@@ -1,0 +1,9 @@
+[package]
+name = "testt"
+version = "0.1.0"
+authors = ["fudoYusei <tangjiawei1997@sina.com>"]
+
+[dependencies]
+glium = "0.23.0"
+cgmath = "*"
+rand = "*"

@@ -1,0 +1,8 @@
+[package]
+name = "tsocks"
+version = "0.4.8"
+authors = ["Valeriy Kostikov <mkoctuk@gmail.com>"]
+
+[dependencies]
+native-tls = "0.2"
+url = "1.7"

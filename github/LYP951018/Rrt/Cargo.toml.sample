@@ -1,0 +1,10 @@
+[package]
+name = "rrt"
+version = "0.1.0"
+authors = ["刘雨培 <liuyupei951018@hotmail.com>"]
+
+[dependencies]
+image = "0.17"
+rand = "0.4"
+cgmath = "0.16"
+approx = "0.1.1"

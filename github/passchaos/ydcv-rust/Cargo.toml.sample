@@ -1,0 +1,17 @@
+[package]
+name = "ydcv"
+version = "0.3.0"
+authors = ["passchaos"]
+
+[dependencies]
+hyper = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+ansi_term = "*"
+rocksdb = "*"
+slog = "*"
+slog-envlogger = "*"
+slog-term = "*"
+slog-scope = "*"
+clap = "*"

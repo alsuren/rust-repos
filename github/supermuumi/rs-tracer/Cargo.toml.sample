@@ -1,0 +1,10 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["supermuumi <mikko.uromo@gmail.com>"]
+
+[dependencies]
+rand = "0.4.2"
+image = "*"
+chrono = "0.4"
+structopt = "0.2"

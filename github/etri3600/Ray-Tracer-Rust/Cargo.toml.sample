@@ -1,0 +1,10 @@
+[package]
+name = "Ray-Tracer"
+version = "0.1.0"
+authors = ["etri"]
+edition = "2018"
+
+[dependencies]
+image = "*"
+serde = "*"
+serde_derive = "*"

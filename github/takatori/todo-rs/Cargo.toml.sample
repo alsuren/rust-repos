@@ -1,0 +1,20 @@
+[package]
+name = "todo-rs"
+version = "0.1.0"
+authors = ["takatori <takatorisatoshi@team-lab.com>"]
+
+[dependencies]
+rocket = "0.2.0"
+rocket_codegen = "0.2.0"
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+r2d2 = "0.7"
+diesel = { version = "0.11.2", features = ["sqlite"] }
+diesel_codegen = { version = "0.11.0", features = ["sqlite"] }
+r2d2-diesel = { version = "0.11.0", features = ["sqlite"] }
+dotenv = "0.8.0"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["json"]

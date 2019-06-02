@@ -1,0 +1,16 @@
+[package]
+
+name = "macro"
+version = "0.0.1"
+authors = ["adjivas <adjivas@users.noreply.github.com>"]
+description = "Replace the word by the alias or env's variable"
+license = "GNUv3"
+repository = "https://github.com/adjivas/macro"
+
+[lib]
+name = "macrolib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/bin.rs"

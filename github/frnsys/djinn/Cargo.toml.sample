@@ -1,0 +1,23 @@
+[package]
+name = "djinn"
+version = "0.0.1"
+authors = ["Francis Tseng <f@frnsys.com>"]
+description = "A framework for distributed agent-based modeling"
+repository = "https://github.com/MachineColony/djinn"
+license = "MIT"
+
+[dependencies]
+rustc-serialize = "0.3"
+rmp = "0.8"
+rmp-serialize = "0.8"
+redis = "0.8.0"
+ws = "0.5"
+uuid = { version = "0.2", features = ["v4", "rustc-serialize"] }
+cpython = "0.1"
+fnv = "1.0"
+rand = "0.3"
+yaml-rust = "0.3"
+
+[dev-dependencies]
+time = "0.1"
+redis-cluster = "0.1"

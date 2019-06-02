@@ -1,0 +1,22 @@
+[package]
+name = "serde-humanize-rs"
+version = "0.1.1"
+authors = ["dtynn <dtynn@163.com>"]
+description = """
+    A Serde deserializer for duration and byte-size.
+"""
+readme = "README.md"
+license-file = "LICENSE"
+homepage = "https://github.com/dtynn/serde-humanize-rs"
+documentation = "https://docs.rs/serde-humanize-rs"
+repository = "https://github.com/dtynn/serde-humanize-rs"
+keywords = ["humanize", "human-friendly", "readable", "serde", "deserialize"]
+categories = ["parsing"]
+
+[dependencies]
+serde = "1.0"
+humanize-rs = "0.1.4"
+
+[dev-dependencies]
+serde_derive = "1.0"
+serde_json = "1.0"

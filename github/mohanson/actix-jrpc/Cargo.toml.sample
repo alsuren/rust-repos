@@ -1,0 +1,16 @@
+[package]
+name = "actix-jrpc"
+version = "0.1.0"
+authors = ["mohanson <mohanson@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+env_logger = "0.6"
+actix = "0.7"
+actix-web = "0.7"
+futures = "0.1"
+futures-timer = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+log = "0.4"

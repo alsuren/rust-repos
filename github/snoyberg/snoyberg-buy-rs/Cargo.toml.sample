@@ -1,0 +1,10 @@
+[package]
+name = "buy"
+version = "0.1.0"
+authors = ["Michael Snoyman <michael@snoyman.com>"]
+
+[dependencies]
+time = "0.1.40"
+gtk = "0.5"
+gio = "0.5"
+glib = "0.6"

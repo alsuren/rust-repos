@@ -1,0 +1,9 @@
+[package]
+name = "rustalind"
+version = "0.1.0"
+authors = ["Rob Syme <rob.syme@gmail.com>"]
+
+[dependencies]
+clap = "2"
+bit-set = "0.5.0"
+vec_map = "0.8.1"

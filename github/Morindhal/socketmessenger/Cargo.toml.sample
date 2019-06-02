@@ -1,0 +1,10 @@
+[package]
+name = "socketmessenger"
+version = "0.1.0"
+authors = ["bergman <morindhal@gmail.com>"]
+
+[dependencies]
+ws = "0.5.3"
+conrod = "0.44.0"
+find_folder = "0.3.0"
+piston_window = "0.52.0"

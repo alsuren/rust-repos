@@ -1,0 +1,23 @@
+[package]
+name = "thrustertest"
+version = "0.1.0"
+authors = ["Virtlink <647530+Virtlink@users.noreply.github.com>"]
+
+[patch.crates-io]
+lpsolve = { path = "rust-lpsolve" }
+lpsolve-sys = { path = "rust-lpsolve/lpsolve-sys" }
+
+[dependencies]
+lpsolve = "0.1.0"
+nalgebra = "0.15"
+
+[dependencies.lpsolve-sys]
+path = "rust-lpsolve/lpsolve-sys"
+
+[lib]
+name = "thrustertest"
+path = "src/lib.rs"
+
+[[bin]]
+name = "thrustertest"
+path = "examples/simple.rs"

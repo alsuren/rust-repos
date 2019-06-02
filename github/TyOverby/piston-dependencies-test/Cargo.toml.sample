@@ -1,0 +1,18 @@
+[package]
+
+name = "piston-dependencies-test"
+version = "0.0.0"
+authors = ["TyOverby <ty@pre-alpha.com>"]
+
+
+[dependencies.glfw-native]
+
+git = "https://github.com/TyOverby/glfw-native.git"
+
+[dependencies.glfw_game_window]
+
+git = "https://github.com/PistonDevelopers/glfw_game_window.git"
+
+[[bin]]
+name = "dummy"
+path = "./dummy.rs"

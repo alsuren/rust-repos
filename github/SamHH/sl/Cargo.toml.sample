@@ -1,0 +1,22 @@
+[package]
+name = "sr"
+version = "0.1.1"
+authors = ["Sam A. Horvath-Hunt"]
+description = "sr is a tool for the easy discovery and running of development scripts."
+documentation = "https://github.com/samhh/sr"
+homepage = "https://github.com/samhh/sr"
+repository = "https://github.com/samhh/sr"
+readme = "README.md"
+keywords = ["script", "environment"]
+categories = ["command-line-utilities"]
+license = "AGPL-3.0-only"
+
+[[bin]]
+name = "sr"
+path = "src/main.rs"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+yansi = "0.4"

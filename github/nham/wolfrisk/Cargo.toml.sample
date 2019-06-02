@@ -1,0 +1,8 @@
+[package]
+name = "wolfrisk"
+version = "0.1.0"
+authors = ["Nick Hamann <nick@wabbo.org>"]
+
+[dependencies]
+petgraph = "0.2.7"
+rand = "0.3"

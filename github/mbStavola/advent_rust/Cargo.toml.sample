@@ -1,0 +1,28 @@
+[package]
+name = "advent"
+version = "0.1.0"
+authors = ["mbStavola <mstavola9@gmail.com>"]
+
+[[bin]]
+name = "problem_one"
+path = "src/problem_one.rs"
+
+[[bin]]
+name = "problem_two"
+path = "src/problem_two.rs"
+
+[[bin]]
+name = "problem_three"
+path = "src/problem_three.rs"
+
+[[bin]]
+name = "problem_four"
+path = "src/problem_four.rs"
+
+[[bin]]
+name = "problem_five"
+path = "src/problem_five.rs"
+
+[dependencies]
+rust-crypto = "0.2.34"
+regex = "0.1.44"

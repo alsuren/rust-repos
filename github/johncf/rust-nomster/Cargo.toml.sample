@@ -1,0 +1,61 @@
+[package]
+name = "webster-parser"
+version = "0.1.0"
+authors = ["johncf <johncf@protonmail.com>"]
+
+[lib]
+name = "nomster"
+path = "src/lib.rs"
+
+[[bin]]
+name = "identity"
+path = "src/bin/identity.rs"
+required-features = ["binaries"]
+
+[[bin]]
+name = "sample"
+path = "src/bin/sample.rs"
+required-features = ["binaries"]
+
+## patches in src/bin: "patch-004", "patch-007", "patch-018", "patch-019"
+#[[bin]]
+#name = "patch-xxx"
+#path = "src/bin/patch-xxx.rs"
+#required-features = ["binaries"]
+
+[[bin]]
+name = "unicode-list"
+path = "src/bin/unicode-list.rs"
+required-features = ["binaries"]
+
+[[bin]]
+name = "dos2unix"
+path = "src/bin/dos2unix.rs"
+required-features = ["binaries", "encoding"]
+
+[[bin]]
+name = "g673-list"
+path = "src/g673/list-words.rs"
+required-features = ["g673"]
+
+[[bin]]
+name = "g673-unescape"
+path = "src/g673/unescape.rs"
+required-features = ["g673"]
+
+[[bin]]
+name = "g673-p004"
+path = "src/g673/patch-004.rs"
+required-features = ["g673"]
+
+[features]
+default = ["binaries"]
+binaries = ["structopt"]
+g673 = ["structopt", "lazy_static"]
+
+[dependencies]
+nom = "4.0.0-beta1"
+
+encoding = { version = "0.2", optional = true }
+lazy_static = { version = "1.0", optional = true }
+structopt = { version = "0.2", optional = true }

@@ -1,0 +1,14 @@
+[package]
+authors = ["Edward Yang <edward.yang6771@gmail.com>"]
+name = "archivers"
+version = "0.1.0"
+
+[dependencies]
+bzip2 = "0.3"
+flate2 = "0.2"
+rust-lzma = {git = "https://github.com/efyang/rust-lzma"}
+tar = "0.4"
+
+[dependencies.zip]
+default-features = false
+version = "0.1"

@@ -1,0 +1,9 @@
+[package]
+name = "lmdb-sys"
+version = "0.1.0"
+authors = ["Kyle Zentner <zentner.kyle@gmail.com>"]
+build = "build.rs"
+links = "lmdb"
+
+[dependencies]
+libc = "0.1"

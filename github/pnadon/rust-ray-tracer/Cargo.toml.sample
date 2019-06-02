@@ -1,0 +1,8 @@
+[package]
+name = "rust-ray-tracer"
+version = "0.1.0"
+authors = ["phil <phil@nadon.io>"]
+edition = "2018"
+
+[dependencies]
+cgmath = "0.17.0"

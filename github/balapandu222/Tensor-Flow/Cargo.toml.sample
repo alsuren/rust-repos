@@ -1,0 +1,38 @@
+[package]
+name = "tensorflow"
+version = "0.6.0"
+authors = ["Adam Crume <acrume@google.com>"]
+description = "Rust language bindings for TensorFlow."
+license = "Apache-2.0"
+keywords = ["TensorFlow", "bindings"]
+readme = "README.md"
+repository = "https://github.com/tensorflow/rust"
+documentation = "https://tensorflow.github.io/rust/tensorflow"
+
+[dependencies]
+libc = "0.2"
+num-complex = { version = "0.1.40", default-features = false }
+tensorflow-sys = { version = "0.9.0", path = "tensorflow-sys" }
+
+[dev-dependencies]
+random = "0.12"
+
+[features]
+tensorflow_unstable = []
+# This is for testing purposes; users should not use this.
+nightly = []
+
+[workspace]
+
+[[example]]
+name = "addition"
+
+[[example]]
+name = "expressions"
+required-features = ["tensorflow_unstable"]
+
+[[example]]
+name = "regression"
+
+[[example]]
+name = "regression_savedmodel"

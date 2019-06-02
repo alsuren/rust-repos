@@ -1,0 +1,10 @@
+[package]
+name = "bbos"
+version = "0.1.0"
+authors = ["Kevin Leimkuhler <kevin@kleimkuhler.com>"]
+
+[dependencies]
+bootloader_precompiled = "0.2.0"
+
+[package.metadata.bootimage]
+default-target = "x86_64-bbos.json"

@@ -1,0 +1,35 @@
+[package]
+name = "truebner-smt100"
+description = "Drivers for the TRUEBNER SMT100 Soil Moisture Sensor"
+version = "0.2.1"
+authors = ["slowtec GmbH <post@slowtec.de>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["sensor", "soil-moisture", "water-content", "temperature", "modbus"]
+categories = ["hardware-support", "network-programming", "asynchronous"]
+homepage = "https://github.com/slowtec/truebner-smt100"
+repository = "https://github.com/slowtec/truebner-smt100"
+edition = "2018"
+
+[dependencies]
+byteorder = "1"
+futures = "0.1"
+log = "~0.4"
+tokio = "0.1"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-modbus = { version = "~0.3.2", default-features = false, features = ["rtu"], optional = true }
+tokio-serial = { version = "3.2", default-features = false, optional = true }
+
+[dev-dependencies]
+chrono = "~0.4"
+env_logger = "~0.6"
+stream-cancel = "~0.4"
+
+[features]
+default = ["modbus-rtu", "mock"]
+mock = []
+modbus-rtu = ["tokio-modbus", "tokio-serial"]
+
+[badges]
+travis-ci = { repository = "slowtec/truebner-smt100" }

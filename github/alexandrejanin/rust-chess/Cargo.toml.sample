@@ -1,0 +1,16 @@
+[package]
+name = "rust-chess-gl"
+version = "0.1.0"
+authors = ["Alexandre Janin <alexandrejanin92@gmail.com>"]
+
+[build-dependencies]
+fs_extra = "*"
+
+[dependencies]
+cuivre = { path = "../cuivre" }
+
+floating-duration = "*"
+rand = "*"
+
+serde = "*"
+ron = "*"

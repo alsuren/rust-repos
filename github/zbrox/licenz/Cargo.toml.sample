@@ -1,0 +1,22 @@
+[package]
+name = "licenz"
+version = "0.3.1"
+authors = ["Rostislav Raykov <z@zbrox.org>"]
+edition = "2018"
+description = "A simple CLI tool to easily download a license file or compare an existing file to a license"
+license = "MIT"
+repository = "https://github.com/zbrox/licenz"
+categories = ["command-line-utilities"]
+readme = "README.md"
+
+[dependencies]
+quicli = "0.4"
+structopt = "0.2"
+reqwest="0.9"
+serde = "1.0"
+serde_json = "1.0"
+chrono = "0.4"
+exitcode = "1.1.2"
+human-panic = "1.0.1"
+colored-diff = "0.2.1"
+colored = "1.7"

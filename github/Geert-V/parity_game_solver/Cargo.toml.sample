@@ -1,0 +1,9 @@
+[package]
+name = "parity_game_solver"
+version = "0.1.0"
+authors = ["Geert Verstegen <gverstegen@hotmail.com>","Nanne Wielinga <nanne@mycel.nl>"]
+
+[dependencies]
+rand = "0.3"
+regex = "0.2"
+libc = "0.2.0"

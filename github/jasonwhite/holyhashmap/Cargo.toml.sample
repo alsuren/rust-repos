@@ -1,0 +1,22 @@
+[package]
+name = "holyhashmap"
+version = "0.1.2"
+authors = ["Jason White"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/jasonwhite/holyhashmap"
+documentation = "https://docs.rs/holyhashmap"
+homepage = "https://github.com/jasonwhite/holyhashmap"
+description = """
+A hash map with stable indices.
+"""
+keywords = ["hashmap"]
+categories = ["data-structures"]
+
+[dependencies]
+serde = { version = "1", optional = true }
+serde_test = { version = "1", optional = true }
+
+[dev-dependencies]
+quickcheck = "0.8"
+rand = "0.6"

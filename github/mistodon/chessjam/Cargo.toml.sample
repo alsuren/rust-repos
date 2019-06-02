@@ -1,0 +1,33 @@
+[package]
+name = "chessjam"
+version = "0.1.1"
+authors = ["Claire Harris <claire.harris.000@gmail.com>"]
+
+[profile.release]
+# Seems like pleco might depend on panic_unwind for some reason ...
+# panic = "abort"
+lto = true
+
+[dependencies]
+glium = "=0.21.0"
+image = "=0.18.0"
+pleco = "=0.4.1"
+pleco_engine = "=0.1.2"
+rand = "~0.4.2"
+resource = "=0.2.0"
+rodio = "=0.7.0"
+serde = "~1.0.37"
+serde_derive = "~1.0.37"
+toml = "~0.4.6"
+wavefront_obj = "=5.1.0"
+
+[dependencies.okmath]
+git = "https://github.com/mistodon/okmath"
+
+[dependencies.glium_text]
+git = "https://github.com/mistodon/glium_text"
+branch = "chessjam"
+
+[build-dependencies.config_struct]
+version = "=0.2.0"
+features = ["toml-parsing"]

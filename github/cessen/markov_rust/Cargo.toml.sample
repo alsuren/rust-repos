@@ -1,0 +1,10 @@
+[package]
+name = "markov_rust"
+version = "0.1.0"
+authors = ["Nathan Vegdahl <cessen@cessen.com>"]
+
+[dependencies]
+rand = "0.3"
+regex = "0.1"
+docopt = "0.6"
+rustc-serialize = "0.3"

@@ -1,0 +1,33 @@
+[package]
+name = "hondana"
+version = "0.1.0"
+authors = ["Ivan Soloducha <ivan@soloduha.com>"]
+autobins = false
+
+[dependencies]
+actix-web = { version = "0.7", optional = true }
+actix = { version = ">=0.7", optional = true }
+diesel = { version = "1.3", optional = true, features = ["postgres"] }
+dotenv = "0.9.0"
+yew = { git = "https://github.com/DenisKolodin/yew", optional = true }
+stdweb = { version = "0.4.9", optional = true }
+
+[[bin]]
+name = "app"
+path = "src/frontend/main.rs"
+required-features = ["frontend"]
+
+[[bin]]
+name = "backend"
+path = "src/main.rs"
+
+[features]
+default = [
+    "actix",
+    "actix-web",
+    "diesel",
+]
+frontend = [
+    "stdweb",
+    "yew"
+]

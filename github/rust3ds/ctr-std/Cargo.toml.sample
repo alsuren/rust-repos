@@ -1,0 +1,12 @@
+[package]
+name = "ctr-std"
+version = "0.1.0"
+authors = ["Fenrir <fenrirwolf@gmail.com>"]
+license = "MIT/Apache 2.0"
+
+[lib]
+name = "std"
+
+[dependencies]
+alloc_system3ds = { git = "https://github.com/rust3ds/alloc_system3ds" }
+ctr-libc = { git = "https://github.com/rust3ds/ctr-libc" }

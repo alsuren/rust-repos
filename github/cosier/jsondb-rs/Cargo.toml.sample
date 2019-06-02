@@ -1,0 +1,22 @@
+[package]
+authors = ["Bailey Cosier <bailey@cosier.ca>"]
+categories = ["database"]
+description = "A Simple, yet configurable JSON file database"
+documentation = "https://docs.rs/crate/jsondb/"
+homepage = "https://github.com/cosier/jsondb-rs"
+keywords = ["json", "file", "db", "database"]
+license = "MIT"
+name = "jsondb"
+repository = "https://github.com/cosier/jsondb-rs"
+version = "0.1.0"
+
+[dependencies]
+# derive_builder = "0.4.7"
+fs2 = "0.4"
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+
+[dependencies.uuid]
+features = ["v4"]
+version = "0.4"

@@ -1,0 +1,9 @@
+[package]
+name = "suckttle"
+version = "0.1.0"
+authors = ["Alessandro Campagni <alessandro.campagni@gmail.com>", "David Costa <david@zarel.net>"]
+
+[dependencies]
+clap = "2.30.0"
+serde_json = "1.0.13"
+dirs = "1.0.5"

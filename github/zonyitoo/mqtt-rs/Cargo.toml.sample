@@ -1,0 +1,27 @@
+[package]
+authors = ["Y. T. Chung <zonyitoo@gmail.com>"]
+name = "mqtt-protocol"
+version = "0.7.0"
+license = "MIT/Apache-2.0"
+description = "MQTT Protocol Library"
+keywords = ["mqtt", "protocol"]
+repository = "https://github.com/zonyitoo/mqtt-rs"
+documentation = "https://docs.rs/mqtt-protocol"
+
+[dependencies]
+byteorder = "1.2"
+log = "0.4"
+regex = "1.0"
+lazy_static = "1.1"
+tokio-io = "0.1"
+futures = "0.1"
+
+[dev-dependencies]
+clap = "2"
+env_logger = "0.5"
+uuid = { version = "0.7", features = ["v4"] }
+time = "0.1"
+tokio = "0.1"
+
+[lib]
+name = "mqtt"

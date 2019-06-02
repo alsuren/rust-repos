@@ -1,0 +1,16 @@
+[package]
+name = "fenwick"
+version = "0.2.0"
+authors = ["summivox <summivox@gmail.com>"]
+
+description = "Fenwick tree: data structure that efficiently calculates prefix sums in a changing array of numbers."
+repository = "https://github.com/summivox/fenwick.rs"
+readme = "README"
+keywords = ["binary", "tree", "array", "prefix", "sum"]
+categories = ["algorithms", "data-structures", "science"]
+license = "MIT"
+
+[dependencies]
+
+[dev-dependencies]
+rand = "0.5.0-pre.0"

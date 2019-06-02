@@ -1,0 +1,10 @@
+[package]
+name = "aoc2017"
+version = "0.1.0"
+authors = ["Mason Smith <masonium@gmail.com>"]
+
+[dependencies]
+regex = "*"
+lazy_static = "*"
+ndarray = "*"
+primal = "*"

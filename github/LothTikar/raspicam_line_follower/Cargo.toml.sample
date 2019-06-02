@@ -1,0 +1,8 @@
+[package]
+name = "raspicam_line_follower"
+version = "0.1.0"
+authors = ["pi"]
+
+[dependencies]
+rscam = "0.5.3"
+wiringpi = "0.2.3"

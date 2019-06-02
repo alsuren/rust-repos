@@ -1,0 +1,21 @@
+[package]
+name = "lazy-panic"
+version = "1.0.0"
+authors = ["Douman <douman@gmx.se>"]
+description = "Lazy utils to customize panic messages"
+repository = "https://github.com/DoumanAsh/lazy-panic.rs"
+documentation = "https://docs.rs/crate/lazy-panic"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+
+[dependencies.backtrace]
+version = "0.3"
+optional = true
+
+[features]
+backtrace-on = ["backtrace"]
+
+[package.metadata.docs.rs]
+features = ["backtrace-on"]

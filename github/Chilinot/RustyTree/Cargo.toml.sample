@@ -1,0 +1,7 @@
+[package]
+name = "rusty_tree"
+version = "0.1.0"
+authors = ["Lucas Arnström <lucasarnstrom@gmail.com>"]
+
+[dependencies.rusty_queue]
+git = "https://github.com/chilinot/rustyqueue.git"

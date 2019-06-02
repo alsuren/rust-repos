@@ -1,0 +1,12 @@
+[package]
+name = "market-demo"
+version = "0.1.0"
+authors = ["Michael"]
+
+[dependencies]
+rand = "*"
+colored = "*"
+uuid = { version = "0.4", features = ["v4"] }
+crossbeam = "*"
+actix = "*"
+futures = "0.1.21"

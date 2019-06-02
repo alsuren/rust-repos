@@ -1,0 +1,8 @@
+[package]
+name = "multipart-legacy-client"
+version = "0.0.1"
+authors = ["leavehouse <heavelouse@gmail.com>"]
+
+[dependencies]
+hyper = "0.10"
+multipart = "0.13"

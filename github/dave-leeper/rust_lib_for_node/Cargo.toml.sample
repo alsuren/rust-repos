@@ -1,0 +1,11 @@
+[package]
+name = "inluded"
+version = "0.1.0"
+authors = ["David Leeper <davidkleeper@gmail.com>"]
+
+[dependencies]
+libc = "0.2"
+
+[lib]
+name = "stringtools"
+crate-type = ["dylib"]

@@ -1,0 +1,27 @@
+[package]
+name = "hibrido"
+version = "0.1.0"
+authors = ["Tiago Lam <tiagolam@gmail.com>"]
+
+[[bin]]
+name = "hibrido"
+path = "src/main.rs"
+
+[dependencies]
+log = "0.3.6"
+byteorder = "0.5.3"
+nickel = "0.10.0"
+rir = { path = "../rir" }
+opus = "0.2.0"
+rustc-serialize = "0.3.22"
+hyper = "0.10.4"
+timer = "0.1.6"
+time = "0.1.35"
+uuid = { version = "0.4.0", features = ["v4"] }
+ifaces = "0.0.3"
+rustun = { path = "../rustun" }
+fibers = { path = "../fibers-rs" }
+
+[dependencies.log4rs]
+version = "0.4.8"
+features = ["yaml"]

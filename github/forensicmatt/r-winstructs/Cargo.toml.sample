@@ -1,0 +1,22 @@
+[package]
+name = "r-winstructs"
+version = "0.3.2"
+authors = ["Matthew Seyer <https://github.com/forensicmatt/r-winstructs>"]
+
+[lib]
+name = "rwinstructs"
+
+[dependencies]
+log = "0.3"
+time = "*"
+serde = "0.9"
+bitflags = "*"
+byteorder = "*"
+env_logger = "0.3"
+serde_json = "0.9"
+trace-error = "0.1.5"
+serde_derive = "0.9"
+
+[dependencies.chrono]
+version = "*"
+features = ["serde", "rustc-serialize"]

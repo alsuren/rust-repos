@@ -1,0 +1,15 @@
+[package]
+name = "rustblocks"
+version = "0.1.0"
+authors = ["Andrea Tomasi(treere)"]
+edition = "2018"
+
+[dependencies]
+serde = "*"
+ncollide2d = "*"
+
+
+[dependencies.amethyst]
+version ="0.10.0"
+default-features = false
+features=["nightly"]

@@ -1,0 +1,15 @@
+[package]
+name = "when"
+version = "0.1.1"
+authors = ["Boris Tatarintsev <ttyv00@gmail.com>"]
+edition = "2018"
+
+[workspace]
+members = [
+    "rules",
+]
+
+[dependencies]
+chrono = "0.4"
+chrono-tz = "0.4"
+rules = { path = "rules" }

@@ -1,0 +1,17 @@
+[package]
+name = "liburing-sys"
+version = "0.1.2"
+authors = ["Alexander Polakov <plhk@sdf.org>"]
+edition = "2018"
+license = "LGPL-2.1-only"
+documentation = "https://docs.rs/liburing-sys"
+repository = "https://github.com/polachok/liburing-sys"
+homepage = "https://github.com/polachok/liburing-sys"
+description = "raw bindings for liburing"
+
+[build-dependencies]
+bindgen = "0.49"
+cc = "1.0"
+
+[dependencies]
+libc = "0.2"

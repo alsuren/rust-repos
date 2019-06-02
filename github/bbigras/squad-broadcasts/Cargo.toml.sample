@@ -1,0 +1,21 @@
+[package]
+name = "squad-broadcasts"
+version = "0.1.0"
+authors = ["Bruno Bigras <bigras.bruno@gmail.com>"]
+
+[dependencies]
+clap = "2"
+byteorder = "1.2"
+chrono = "0.4"
+env_logger = "0.6"
+failure = "0.1"
+log = "0.4"
+nom = "4.1"
+rcon = { git = "https://github.com/bbigras/rs-rcon.git" }
+stream-line-reader = { git = "https://github.com/bbigras/stream-line-reader.git" }
+toml = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+
+[build-dependencies]
+built = "0.3"

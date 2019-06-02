@@ -1,0 +1,27 @@
+[package]
+
+name = "simproc"
+version = "0.1.0"
+authors = ["Alvaro Polo <apoloval@gmail.com>"]
+
+[dependencies]
+byteorder = "1.2"
+docopt = "0.8"
+regex = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+time = "0.1"
+
+[dev-dependencies]
+quickcheck = "0.2"
+
+[lib]
+name = "simproc"
+
+[[bin]]
+name = "spasm"
+path = "src/bin/spasm/main.rs"
+
+[[bin]]
+name = "spm"
+path = "src/bin/spm/main.rs"

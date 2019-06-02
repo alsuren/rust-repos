@@ -1,0 +1,20 @@
+[package]
+name = "rocket-test"
+version = "0.1.0"
+authors = ["Lucas <lucas.overland@gmail.com>"]
+
+[dependencies]
+rocket = "0.3.8"
+rocket_codegen = "0.3.8"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+redis = "0.8.0"
+r2d2 = "*"
+r2d2_redis = "*"
+rustc-serialize = "0.3.24"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]

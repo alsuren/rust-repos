@@ -1,0 +1,17 @@
+[package]
+
+name = "Tone Generator"
+version = "0.2.1"
+authors = [ "Ryan Drew <rsdrew@gmail.com>" ]
+
+[[bin]]
+
+name = "tonegen"
+path = "src/main.rs"
+
+[dependencies.wavfile]
+path = "src/wavfile"
+
+[dependencies]
+rand = "0.3"
+getopts = "0.2"

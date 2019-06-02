@@ -1,0 +1,16 @@
+[package]
+name = "rcd"
+version = "0.1.0"
+authors = ["Cyberduc-k <cyberduck_@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+
+[[bin]]
+name = "rcd"
+path = "src/main.rs"
+
+[lib]
+name = "rcd"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]

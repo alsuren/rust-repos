@@ -1,0 +1,27 @@
+[package]
+name = "blake2b-rs"
+version = "0.1.0"
+authors = ["zhangsoledad <787953403@qq.com>"]
+edition = "2018"
+build = "build.rs"
+license = "MIT"
+description = "Rust bindings for the official Blake2b C implementation"
+categories = ["cryptography"]
+keywords = ["hash", "blake2", "crypto"]
+autotests = true
+
+[build-dependencies]
+cc = "1.0"
+
+[dev-dependencies]
+faster-hex = "0.3.0"
+serde_json = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+criterion = "0.2"
+blake2-rfc = "0.2.18"
+
+
+[[bench]]
+name = "blake2b"
+harness = false

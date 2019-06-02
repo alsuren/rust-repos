@@ -1,0 +1,25 @@
+[package]
+name = "test-server"
+version = "0.6.0"
+authors = ["Christian Fochler <mail@christianfochler.de>"]
+license = "MIT"
+repository = "https://github.com/ChriFo/test-server-rs"
+publish = false
+edition = "2018"
+
+[dependencies]
+actix-net = "0.2.6"
+bytes = "0.4.12"
+crossbeam-channel = "0.3.8"
+failure = "0.1.5"
+futures = "0.1.26"
+rand = "0.6.5"
+
+[dependencies.actix-web]
+version = "0.7.19"
+default-features = false
+
+[dev-dependencies]
+log = "0.4.6"
+reqwest = "0.9.16"
+spectral = "0.6.0"

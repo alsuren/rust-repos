@@ -1,0 +1,18 @@
+[package]
+name = "fonts"
+version = "0.1.0"
+authors = ["Toby Sullivan <toby.s@canva.com>"]
+
+[workspace]
+members = [
+  "about",
+  "font",
+  "strings",
+]
+
+[dependencies]
+font = { path = "./font" }
+
+[[bin]]
+name = "main"
+path = "src/main.rs"

@@ -1,0 +1,18 @@
+[package]
+name = "serialization-evaluation"
+version = "0.1.0"
+authors = ["Adam Cigánek <adam.ciganek@gmail.com>"]
+
+[dependencies]
+bincode = "~0.4.0"
+cbor = "~0.3.16"
+rand = "~0.3.13"
+rmp-serialize = "~0.7.0"
+rustc-serialize = "~0.3.16"
+serde = "~0.6.11"
+serde_macros = "~0.6.5"
+serde_cbor = "~0.2.0"
+
+[features]
+explicit_traits = []
+binary_data = []

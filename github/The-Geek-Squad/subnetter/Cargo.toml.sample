@@ -1,0 +1,8 @@
+[package]
+name = "subnetter"
+version = "0.1.0"
+authors = ["FoolishServer <zawilliams96@gmail.com>"]
+
+[dependencies]
+ipaddress = "0.1.2"
+clap = "~2.27.0"

@@ -1,0 +1,10 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["PrydeRage <marius.brandt@hotmail.com>"]
+edition = "2018"
+
+[dependencies]
+cgmath = "0.17"
+rand = "0.6"
+num_cpus = "1.8"

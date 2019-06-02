@@ -1,0 +1,16 @@
+[package]
+name = "rtl8710-pac"
+version = "0.1.0"
+authors = ["David Goodlad <david@goodlad.net>"]
+
+[dependencies]
+bare-metal = "0.2.0"
+cortex-m = "0.5.8"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.7"
+
+[features]
+rt = ["cortex-m-rt/device"]

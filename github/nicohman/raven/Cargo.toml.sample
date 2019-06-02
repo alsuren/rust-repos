@@ -1,0 +1,25 @@
+[package]
+name = "raventhemer"
+version = "1.5.3"
+authors = ["nicohman <nicohman@demenses.net>"]
+repository="https://git.sr.ht/~nicohman/raven"
+description="A theme manager and switcher for desktop linux"
+readme="README.md"
+keywords=["linux","cli","customization"]
+categories=["gui","command-line-interface"]
+license="GPL-3.0"
+[[bin]]
+name = "raven"
+path = "src/main.rs"
+[[bin]]
+name = "ravend"
+path = "src/ravend.rs"
+[dependencies]
+ravenlib = "1.2.4"
+time = "0.1"
+structopt = "0.2.10"
+dirs = "1.0"
+human-panic = "1.0.1"
+log = "0.4"
+clap-verbosity-flag = "0.2.0"
+dialoguer = "0.3.0"

@@ -1,0 +1,20 @@
+[package]
+name = "cgol"
+version = "0.1.0"
+authors = ["Petr Novotnik <pnovotnik@googlemail.com>"]
+description = "Conway's game of life for the terminal"
+
+[dependencies]
+log = "*"
+env_logger = "*"
+getopts = "*"
+rustbox = "*"
+time = "*"
+rand = "*"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false

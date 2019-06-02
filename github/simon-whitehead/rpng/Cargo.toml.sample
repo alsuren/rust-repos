@@ -1,0 +1,8 @@
+[package]
+name = "rpng"
+version = "0.1.0"
+authors = ["Simon Whitehead <chemnova@gmail.com>"]
+
+[dependencies]
+sdl2 = "*"
+flate2 = "0.2"

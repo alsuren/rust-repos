@@ -1,0 +1,18 @@
+[package]
+name = "thearesia"
+version = "0.1.0"
+authors = ["Michael Gattozzi <mgattozzi@gmail.com>"]
+description = "A GitHub bot written in Rust"
+repository = "https://github.com/mgattozzi/thearesia.git"
+homepage = "https://github.com/mgattozzi/thearesia"
+
+[dependencies]
+hyper = { git = "https://github.com/hyperium/hyper" }
+futures = "~0.1"
+serde = "~0.9"
+serde_json = "~0.9"
+nom = "^2.1"
+
+[dependencies.github-rs]
+git = "https://github.com/mgattozzi/github-rs"
+branch = "thearesia"

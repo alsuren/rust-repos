@@ -1,0 +1,26 @@
+[package]
+name = "twig"
+version = "0.0.0"
+authors = ["Colin Kiegel <kiegel@gmx.de>"]
+
+# A short blurb about the package. This is not rendered in any format when
+# uploaded to crates.io (aka this is not markdown)
+description = """A template engine for everyone writing web applications \
+  with Rust. This library is derived from Twig (for PHP) and intended to \
+  become a fully compatible port - as far as it makes sense."""
+
+# These URLs point to more information about the repository
+documentation = "https://github.com/colin-kiegel/twig-rust"
+homepage = "https://github.com/colin-kiegel/twig-rust"
+repository = "https://github.com/colin-kiegel/twig-rust"
+readme = "README.md"
+keywords = ["twig", "template", "templating", "engine", "web", "application",
+  "html", "language"]
+
+license = "BSD-3-Clause"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+regex = "0.1"

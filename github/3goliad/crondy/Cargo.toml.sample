@@ -1,0 +1,14 @@
+[package]
+name = "crondy"
+version = "0.1.0"
+authors = ["3goliad <3goliad@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+signal-hook = "0.1.5"
+log = "*"
+pretty_env_logger = "*"
+failure = "0.1"
+[dependencies.nom]
+version = "4.1.1"
+features = ["verbose-errors"]

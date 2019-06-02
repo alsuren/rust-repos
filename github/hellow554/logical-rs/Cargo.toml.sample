@@ -1,0 +1,25 @@
+[package]
+name = "logical"
+version = "0.2.1"
+authors = ["Marcel Hellwig <git@cookiesoft.de>"]
+description = "Library for simulating digital circuit networks."
+documentation = "https://docs.rs/logical"
+homepage = "https://github.com/hellow554/logical-rs"
+repository = "https://github.com/hellow554/logical-rs"
+readme = "README.md"
+categories = ["simulation", "Ieee1164"]
+license = "GPL-3.0"
+edition = "2018"
+
+[lib]
+name = "logical"
+
+[badges]
+travis-ci = { repository = "hellow554/logical-rs" }
+
+[dependencies]
+chrono = "0.4"
+
+[dev-dependencies]
+proptest = "0.6"
+pretty_assertions = "0.5"

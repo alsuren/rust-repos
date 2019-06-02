@@ -1,0 +1,9 @@
+[package]
+name = "arow"
+version = "0.1.0"
+authors = ["anko9801 <daiusa3@icloud.com>"]
+
+[dependencies]
+bitflags = "*"
+libc = "0.2"
+rand = "*"

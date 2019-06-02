@@ -1,0 +1,9 @@
+[package]
+name = "synacor-challenge"
+version = "0.1.0"
+authors = ["Andreas Neuhaus <zargony@zargony.com>"]
+description = "A solution to the Synacor programming challenge"
+
+[dependencies]
+log = "0.3"
+env_logger = "0.3"

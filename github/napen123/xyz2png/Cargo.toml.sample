@@ -1,0 +1,10 @@
+[package]
+name = "xyz2png"
+version = "1.0.0"
+edition = "2018"
+
+[dependencies]
+image = "*"
+byteorder = "1"
+miniz_oxide = "0.2.0"
+

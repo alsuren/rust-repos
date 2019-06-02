@@ -1,0 +1,22 @@
+[package]
+name = "blog"
+version = "0.1.0"
+authors = ["Jose Narvaez <goyox86@gmail.com>"]
+
+[dependencies]
+diesel = { version = "0.10.0", features = ["postgres"] }
+diesel_codegen = { version = "0.10.0", features = ["postgres"] }
+dotenv = "0.8.0"
+toml = "0.2"
+r2d2 = "0.7.1"
+r2d2-diesel = "0.10.0"
+rocket = "0.2.0"
+rocket_codegen = "0.2.0"
+rocket_contrib = "0.2.0"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+clippy = {version = "*", optional = true}
+
+[features]
+default = []

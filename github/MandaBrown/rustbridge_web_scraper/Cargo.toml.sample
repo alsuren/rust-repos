@@ -1,0 +1,8 @@
+[package]
+name = "rustbridge_web_scraper"
+version = "0.1.0"
+authors = ["mandabrown <mandy.farmer@gmail.com>"]
+
+[dependencies]
+hyper="0.9.10"
+select="0.3.0"

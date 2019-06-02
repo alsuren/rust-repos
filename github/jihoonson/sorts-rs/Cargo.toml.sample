@@ -1,0 +1,13 @@
+[package]
+name = "sorts"
+version = "0.1.0"
+authors = ["Jihoon Son <jihoonson@apache.org>"]
+build = "build.rs"
+
+[dependencies]
+rand = "*"
+rlibc = "*"
+time = "*"
+
+[build-dependencies]
+gcc = "*"

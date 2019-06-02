@@ -1,0 +1,11 @@
+[package]
+name = "odyssey"
+version = "0.0.1"
+authors = ["Azoy"]
+
+[[bin]]
+name = "odyssey"
+path = "src/odyssey.rs"
+
+[dependencies]
+getopts = "0.2"

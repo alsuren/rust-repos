@@ -1,0 +1,12 @@
+[package]
+name = "inflate_png"
+version = "0.1.0"
+authors = [
+    "Raymond Dodge <git@rayrobdod.name>"
+]
+
+[[bin]]
+name = "png_inflate"
+path = "src/inflate.rs"
+
+[dependencies]

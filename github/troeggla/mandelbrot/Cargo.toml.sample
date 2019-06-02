@@ -1,0 +1,12 @@
+[package]
+name = "mandelbrot"
+version = "0.2.0"
+authors = ["Thomas Röggla <tom@lichtfragmente.com>"]
+
+[dependencies]
+argparse = "*"
+image = "*"
+num = "*"
+pbr = "*"
+threadpool = "*"
+time = "*"

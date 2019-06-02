@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "server"
+]
+
+[profile.release]
+lto = true

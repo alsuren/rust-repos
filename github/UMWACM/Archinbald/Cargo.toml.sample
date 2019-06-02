@@ -1,0 +1,9 @@
+[package]
+name = "archinbald"
+version = "0.1.8"
+authors = ["Chad Baxter <cbaxter@mail.umw.edu>"]
+
+[dependencies]
+chrono = "*"
+irc = "*"
+rand = "*"

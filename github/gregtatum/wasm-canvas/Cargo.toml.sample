@@ -1,0 +1,31 @@
+[package]
+name = "canvas"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+cgmath = "0.16.1"
+console_error_panic_hook = "0.1.5"
+js-sys = "0.3.6"
+serde = "^1.0.59"
+serde_derive = "^1.0.59"
+spade = "1.6.0"
+
+[dependencies.wasm-bindgen]
+version = "0.2.29"
+features = ["serde-serialize"]
+
+[dependencies.web-sys]
+version = "0.3.6"
+features = [
+  'CanvasRenderingContext2d',
+  'Document',
+  'Element',
+  'HtmlElement',
+  'HtmlCanvasElement',
+  'Window',
+  'console',
+  'EventTarget'
+]

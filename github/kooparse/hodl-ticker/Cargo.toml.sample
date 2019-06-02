@@ -1,0 +1,20 @@
+[package]
+name = "hodl-ticker"
+description="Rust cryptocurrency prices on CLI"
+version = "1.6.0"
+authors = ["Alexandre Chêne <kooparse@protonmail.com>"]
+license="MIT"
+repository="https://github.com/kooparse/hodl-ticker"
+readme = "README.md"
+keywords = ["cryptocurrency", "ticker", "bitcoin", "ethereum"]
+edition = "2018"
+
+[dependencies]
+termion = "1.5.1"
+term = "0.5"
+reqwest = "0.9"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+clap = {version = "2.29", features = ["yaml"]}
+prettytable-rs = "0.8"

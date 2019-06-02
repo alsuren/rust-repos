@@ -1,0 +1,11 @@
+[package]
+name = "scytale"
+version = "0.1.0"
+authors = ["awright502 <andrew.wright502@gmail.com>"]
+
+[dependencies]
+rand='*'
+serde='*'
+serde_derive='*'
+csv='*'
+ngrams='1.0.1'

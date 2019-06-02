@@ -1,0 +1,10 @@
+[package]
+name = "advent-of-code-2015"
+version = "0.1.0"
+authors = ["Arion Roberto Krause <arionkrause@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rust-crypto = "0.2.36"
+regex = "1.1.0"
+serde_json = "1.0.38"

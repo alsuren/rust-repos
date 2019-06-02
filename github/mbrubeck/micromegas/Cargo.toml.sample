@@ -1,0 +1,27 @@
+[package]
+name = "micromegas"
+version = "0.1.0"
+authors = ["Matt Brubeck <mbrubeck@limpet.net>"]
+
+[features]
+default = ["freetype-backend"]
+freetype-backend = ["freetype", "pathfinder_font_renderer/freetype-backend"]
+
+[dependencies]
+euclid = "0.17"
+freetype = { version = "0.4", optional = true }
+harfbuzz = "0.2"
+harfbuzz-sys = "0.2"
+unic-ucd-category = "0.7.0"
+unic-emoji-char = "0.7.0"
+unicode-bidi = "0.3"
+unicode-script = { version = "0.2", features = ["harfbuzz"] }
+xi-unicode = "0.1"
+
+[dependencies.pathfinder_font_renderer]
+git = "https://github.com/mbrubeck/pathfinder"
+branch = "micromegas"
+
+[patch.crates-io]
+harfbuzz = { git = "https://github.com/mbrubeck/rust-harfbuzz", branch = "micromegas" }
+harfbuzz-sys = { git = "https://github.com/mbrubeck/rust-harfbuzz", branch = "micromegas" }

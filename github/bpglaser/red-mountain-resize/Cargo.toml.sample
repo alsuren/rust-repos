@@ -1,0 +1,13 @@
+[package]
+name = "rmr"
+version = "0.3.0"
+authors = ["bpglaser <bpglaser@gmail.com>"]
+
+[[bin]]
+name = "rmr"
+doc = false
+
+[dependencies]
+clap = "2.24.2"
+image = "0.12.4"
+num-traits = "0.1.39"

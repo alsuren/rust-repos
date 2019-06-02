@@ -1,0 +1,9 @@
+[package]
+name = "req-do"
+version = "0.1.0"
+authors = ["mmillin <marcusmillin@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+gtk = "^0"
+gio = "^0"

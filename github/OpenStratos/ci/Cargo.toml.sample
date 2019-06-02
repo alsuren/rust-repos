@@ -1,0 +1,31 @@
+[package]
+name = "openstratos-ci"
+version = "0.1.0"
+authors = ["Razican <razican@protonmail.ch>"]
+
+[dependencies]
+clap = "2.24"
+serde = "1.0"
+serde_derive = "1.0"
+error-chain = "0.10"
+colored = "1.5"
+reqwest = "0.6"
+
+# The release profile, used for `cargo build`.
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+panic = 'unwind'
+
+# The release profile, used for `cargo build --release`.
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+panic = 'unwind'

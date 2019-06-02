@@ -1,0 +1,15 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+authors = ["david <davidventura27@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.3.14"
+reqwest = "0.9.5"
+hyper = "0.12.19"
+url = "1.7.2"
+
+[[bin]]
+name = "solutions"
+path = "solutions/main.rs"

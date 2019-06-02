@@ -1,0 +1,17 @@
+[package]
+name = "memer"
+version = "0.1.0"
+description = """
+memer is a meme displaying software that allows users to see the memes \
+that they've asked for.
+"""
+authors = ["Victor M. Suarez <svmnotn@gmail.com>", "contributors"]
+edition = "2018"
+
+[dependencies]
+serde_json = "1.0"
+serde_derive = "1.0"
+serde = "1.0"
+structopt = "0.2"
+reqwest = "0.8"
+rand = "0.5"

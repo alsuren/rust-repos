@@ -1,0 +1,25 @@
+[package]
+name = "cuda_blas"
+version = "0.2.0"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+license = "BSD-2-Clause"
+description = "cuBLAS API bindings."
+repository = "https://github.com/peterhj/cuda_blas"
+keywords = ["cuda", "blas", "cublas"]
+build = "build.rs"
+
+[features]
+cuda9 = []
+default = []
+f16 = ["float"]
+
+[build-dependencies]
+bindgen = "^0.38"
+
+[dependencies]
+cuda = "^0.3"
+float = { version = "^0.1", optional = true }
+
+[lib]
+name = "cuda_blas"
+path = "src/lib.rs"

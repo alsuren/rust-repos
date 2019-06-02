@@ -1,0 +1,29 @@
+[package]
+name = "rider"
+version = "0.1.0"
+authors = ["Adrian Wozniak <adrian.wozniak@ita-prog.pl>"]
+edition = "2018"
+
+[workspace]
+members = [
+    "rider-generator",
+    "rider-config",
+    "rider-themes",
+    "rider-lexers",
+    "rider-editor"
+]
+default-members = [
+    "rider-generator",
+    "rider-config",
+    "rider-themes",
+    "rider-lexers",
+    "rider-editor"
+]
+
+[dependencies]
+rider-config = { version = "*", path = "./rider-config" }
+uuid = { version = "0.7", features = ["v4"] }
+
+[dependencies.sdl2]
+version = "0.31.0"
+features = ["gfx", "image", "mixer", "ttf"]

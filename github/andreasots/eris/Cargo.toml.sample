@@ -1,0 +1,42 @@
+[package]
+name = "eris"
+version = "0.1.0"
+authors = ["Andreas Ots <qrpth@qrpth.eu>"]
+license = "Apache-2.0"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+byteorder = "1.3.1"
+bytes = "0.4.12"
+chrono = "0.4.6"
+chrono-tz = "0.5.1"
+clap = "2.33.0"
+csv = "1.0.7"
+diesel = { version = "1.4.2", features = ["postgres", "r2d2", "serde_json"] }
+egg-mode-text = "1.14.7"
+eris-macros = { path = "eris-macros" }
+failure = "0.1.5"
+futures-preview = { version = "0.3.0-alpha.15", features = ["async-await", "compat", "nightly"] }
+inventory = "0.1.3"
+jsonwebtoken = "6.0.0"
+log = { version = "0.4.6", features = ["max_level_trace", "release_max_level_info", "std"] }
+openssl = "0.10.23"
+rand = "0.6.5"
+regex = "1.1.6"
+reqwest = "0.9.16"
+rust-ini = "0.13.0"
+separator = "0.4.1"
+serde = { version = "1.0.91", features = ["derive"] }
+serde_json = "1.0.39"
+serenity = "0.6.0-rc.1"
+slog = { version = "2.4.1", features = ["max_level_trace", "release_max_level_debug"] }
+slog-async = "2.3.0"
+slog-scope = "4.1.1"
+slog-term = "2.4.0"
+strfmt = "0.1.6"
+tokio = "0.1.21"
+url = "1.7.2"
+
+[dev-dependencies]
+pin-utils = "0.1.0-alpha.4"

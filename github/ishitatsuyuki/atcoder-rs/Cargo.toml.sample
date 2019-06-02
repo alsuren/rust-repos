@@ -1,0 +1,25 @@
+[package]
+authors = ["Tatsuyuki Ishi <ishitatsuyuki@gmail.com>"]
+name = "atcoder"
+version = "0.1.0"
+[[bin]]
+doc = false
+name = "atcoder"
+
+[dependencies]
+clap = "2.26.0"
+cookie = "0.10.1"
+error-chain = "0.11.0-rc.2"
+futures = "0.1.14"
+percent-encoding = "1.0.0"
+preferences = { git = "https://github.com/Eh2406/preferences-rs.git", branch = "patch-1" }
+rpassword = "2.0.0"
+rprompt = "1.0.3"
+select = "0.4.2"
+serde = "1.0.11"
+serde_derive = "1.0.11"
+tokio-core = "0.1.9"
+
+[dependencies.reqwest]
+features = ["unstable"]
+version = "0.8.1"

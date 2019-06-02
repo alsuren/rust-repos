@@ -1,0 +1,16 @@
+[package]
+name = "rs-ms"
+version = "0.1.0"
+authors = ["andream16 <andrea.medda.uni@gmail.com>"]
+
+[dependencies]
+config = "0.9"
+futures = "0.1.17"
+hyper = "0.11.13"
+slog = "2.4.1"
+slog-json = "2.2.0"
+url = "1.6.0"
+serde = "1.0"
+serde_json = "1.0.9"
+serde_derive = "1.0.27"
+envy = "0.3.2"

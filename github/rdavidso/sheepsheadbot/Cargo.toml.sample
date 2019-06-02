@@ -1,0 +1,11 @@
+[package]
+
+name = "sheepsheadbot"
+version = "0.0.1"
+authors = ["rdavidso"]
+
+[dependencies.irc]
+git = "https://github.com/aatxe/irc.git"
+
+[dependencies.lazy_static]
+git = "https://github.com/Kimundi/lazy-static.rs"

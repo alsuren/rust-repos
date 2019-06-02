@@ -1,0 +1,10 @@
+[package]
+name = "rtl-entropy-rs"
+version = "0.1.0"
+authors = ["Paul Warren <pwarren@pwarren.id.au>"]
+
+[dependencies]
+rtl-sdr = "*"
+bitstream-io = "*"
+argparse = "*"
+sodiumoxide = "*"

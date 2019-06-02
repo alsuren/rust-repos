@@ -1,0 +1,14 @@
+[package]
+name = "dumbot"
+version = "0.1.0"
+authors = ["Steve McKay <steve@b.abbies.us>"]
+edition = "2018"
+
+[dependencies]
+serenity = "0.5.12"
+log4rs = "0.8.1"
+log = "0.4.6"
+regex = "1"
+rand = "0.6.5"
+chashmap = "2.2.2"
+threadpool = "1.7.1"

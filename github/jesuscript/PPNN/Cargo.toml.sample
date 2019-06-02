@@ -1,0 +1,22 @@
+[package]
+name = "ppnn"
+version = "0.0.0"
+authors = ["jesuscript <konstantin.k.ed@gmail.com>"]
+
+[dependencies]
+nalgebra = { version="0.16.8", features=["serde-serialize"] }
+mnist = "0.4.0"
+rand = "0.5.5"
+itertools = "0.7.8"
+elapsed = "0.1.2"
+serde = "1.0.80"
+serde_json = "1.0.33"
+serde_derive = "1.0.80"
+rayon = "1.0.3"
+derive_builder = "0.7.0"
+
+
+#TODO: incremental compilation
+
+[profile.dev]
+opt-level = 3

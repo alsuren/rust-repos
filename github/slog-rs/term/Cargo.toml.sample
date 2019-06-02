@@ -1,0 +1,21 @@
+[package]
+name = "slog-term"
+version = "2.4.0"
+authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
+description = "Unix terminal drain and formatter for slog-rs"
+keywords = ["slog", "logging", "log", "term"]
+license = "MPL-2.0/MIT/Apache-2.0"
+documentation = "https://docs.rs/slog-term"
+homepage = "https://github.com/slog-rs/slog"
+repository = "https://github.com/slog-rs/term"
+readme = "README.md"
+
+[dependencies]
+slog = "2"
+atty = "0.2"
+chrono = "0.4"
+thread_local = "0.3.3"
+term = "0.5.1"
+
+[dev-dependencies]
+slog-async = "2"

@@ -1,0 +1,16 @@
+[package]
+name = "troll-invasion"
+version = "0.1.0"
+authors = ["kuviman <kuviman@gmail.com>"]
+
+[dependencies]
+lazy_static = "*"
+codevisual = { git = "https://github.com/kuviman/codevisual.git" }
+ugli = { git = "https://github.com/kuviman/codevisual.git" }
+
+[target.'cfg(target_os = "emscripten")'.dependencies]
+webby = { git = "https://github.com/kuviman/codevisual.git" }
+
+[target.'cfg(not(target_os = "emscripten"))'.dependencies]
+argparse = "*"
+ws = "*"

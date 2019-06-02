@@ -1,0 +1,7 @@
+[package]
+name = "simple_lisp"
+version = "0.1.0"
+authors = ["TonyMooori"]
+include = ["src/lib.mal"]
+
+[dependencies]

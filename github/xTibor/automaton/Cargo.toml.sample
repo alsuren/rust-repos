@@ -1,0 +1,9 @@
+[package]
+name = "automaton"
+version = "0.1.0"
+authors = ["Tibor Nagy <xnagytibor@gmail.com>"]
+
+[dependencies]
+termion = { git = "https://github.com/ticki/termion" }
+rand = "0.3"
+clap = "2.21"

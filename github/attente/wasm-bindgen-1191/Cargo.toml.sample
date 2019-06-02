@@ -1,0 +1,15 @@
+[package]
+name = "wasm-bindgen-1191"
+version = "0.1.0"
+authors = ["William Hua <william@attente.ca>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = []
+bindings = ["wasm-bindgen"]
+
+[dependencies]
+wasm-bindgen = { version = "0.2.32", optional = true }

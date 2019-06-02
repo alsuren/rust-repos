@@ -1,0 +1,17 @@
+[package]
+name = "sorted"
+version = "0.2.0"
+authors = ["Kim Simmons <zoomulator@gmail.com>"]
+readme = "README.markdown"
+keywords = ["sort", "collection"]
+categories = ["rust-patterns"]
+license-file = "./LICENSE"
+description = "Provides compile time guarantees for sorted sequences."
+documentation = "https://zoomulator.github.io/rust-sorted/sorted/"
+repository = "https://github.com/Zoomulator/rust-sorted"
+
+[features]
+default = []
+unstable = []
+
+[dependencies]

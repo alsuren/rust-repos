@@ -1,0 +1,13 @@
+[package]
+name = "t8bar"
+version = "0.1.0"
+authors = ["Eduardo Cunha <hey@drgmr.com>"]
+edition = "2018"
+
+[dependencies]
+rubrail = { git = "https://github.com/drgmr/rubrail-rs.git" }
+log = "0.4.6"
+
+[dependencies.fruitbasket]
+version = "0.7.0"
+features = ["logging"]

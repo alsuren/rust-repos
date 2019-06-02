@@ -1,0 +1,24 @@
+[package]
+version = "0.9.9"
+authors = ["Christian Douven <chridou@users.noreply.github.com>"]
+description = "metrics for application monitoring"
+documentation = "https://docs.rs/metrix"
+homepage = "https://github.com/chridou/metrix"
+keywords = ["metrics", "monitoring", "alerting"]
+license = "Apache-2.0/MIT"
+name = "metrix"
+readme = "README.md"
+repository = "https://github.com/chridou/metrix"
+
+[badges]
+[badges.travis-ci]
+branch = "master"
+repository = "chridou/metrix"
+
+[dependencies]
+exponential-decay-histogram = "0.1.0"
+json = "0.11.0"
+metrics = "0.2.0"
+crossbeam-channel = "0.3"
+futures = "0.1.0"
+log = { version = "0.4", optional = true }

@@ -1,0 +1,9 @@
+[package]
+name = "leon"
+version = "0.1.0"
+authors = ["Cody <callahanrts@gmail.com>"]
+
+[dependencies]
+glium="*"
+html5ever="*"
+css_parser = { path = "./css_parser" }

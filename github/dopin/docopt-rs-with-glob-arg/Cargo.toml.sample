@@ -1,0 +1,8 @@
+[package]
+name = "docopt-rs-with-glob-arg"
+version = "0.1.0"
+authors = ["dopin <dopinninja@gmail.com>"]
+
+[dependencies]
+docopt = "*"
+rustc-serialize = "*"

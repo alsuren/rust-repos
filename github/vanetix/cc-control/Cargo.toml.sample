@@ -1,0 +1,9 @@
+[package]
+name = "cc-control"
+version = "0.1.0"
+authors = ["Matt McFarland <matmcfarland@gmail.com>"]
+
+[dependencies]
+hyper = "0.10.4"
+iron = "0.5.1"
+router = "0.5.1"

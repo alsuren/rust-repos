@@ -1,0 +1,17 @@
+[package]
+name = "stpl"
+version = "0.5.0"
+authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
+description = "Super templates (html, etc.) with Plain-Rust, no textfiles"
+keywords = ["template", "html", "markup", "dynamic"]
+categories = ["template-engine"]
+license = "MPL-2.0/MIT/Apache-2.0"
+documentation = "https://docs.rs/stpl"
+homepage = "https://github.com/dpc/stpl"
+repository = "https://github.com/dpc/stpl"
+readme = "README.md"
+
+[workspace]
+members = [ "playground" ]
+
+[dependencies]

@@ -1,0 +1,20 @@
+[package]
+authors = ["Lachlan Sneff <lachlan.sneff@gmail.com>"]
+name = "metal"
+version = "0.1.0"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+x86_64 = "0.1.2"
+multiboot2 = "*"
+rlibc = "1.0"
+
+# internal library crates
+bump_allocator = { path = "lib/bump_allocator" }
+vga = { path = "lib/vga" }
+interrupts = { path = "lib/interrupts" }
+memory = { path = "lib/memory" }
+
+
+[lib]
+crate-type = ["staticlib"]

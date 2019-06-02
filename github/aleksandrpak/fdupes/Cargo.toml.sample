@@ -1,0 +1,9 @@
+[package]
+name = "fdupes"
+version = "0.1.0"
+authors = ["Aleksandr Pak <alekspak@icloud.com>"]
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"
+rust-crypto = "0.2"

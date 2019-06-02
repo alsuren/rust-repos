@@ -1,0 +1,9 @@
+[package]
+name = "Dining_Philosophers"
+version = "0.1.0"
+authors = ["Rajiv Kurien <rajiv.kurien@zuhlke.com>"]
+edition = "2018"
+
+[dependencies]
+log = {version = "0.4", features = ["max_level_trace", "release_max_level_info"]}
+env_logger = "0.6"

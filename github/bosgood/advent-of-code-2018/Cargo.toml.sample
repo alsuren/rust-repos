@@ -1,0 +1,15 @@
+[package]
+name = "advent-of-code-2018"
+version = "1.0.0"
+authors = ["Brad Osgood <bosgood@gmail.com>"]
+
+[lib]
+bench = false
+
+[dependencies]
+aoc-runner = "0.1.0"
+aoc-runner-derive = "0.1.0"
+im = "12.2.0"
+regex = "1.1.0"
+lazy_static = "1.2.0"
+chrono = "0.4.6"

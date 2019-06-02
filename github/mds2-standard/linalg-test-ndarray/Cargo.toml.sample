@@ -1,0 +1,9 @@
+[package]
+name = "linalg-test-ndarray"
+version = "0.1.0"
+authors = ["Michael D Schuresko <michael.schuresko@standard.ai>"]
+edition = "2018"
+
+[dependencies]
+ndarray = "0.12.1"
+ndarray-linalg = "0.10.0" # { version = "0.10.0", features = ["openblas"] }

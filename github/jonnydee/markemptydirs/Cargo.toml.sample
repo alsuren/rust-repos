@@ -1,0 +1,14 @@
+[package]
+name = "markemptydirs"
+version = "0.1.0"
+authors = ["Johann Duscher <jonny.dee@posteo.net>"]
+
+[dependencies.api]
+path = "libs/api"
+
+[dependencies.ui]
+path = "libs/ui"
+
+[dependencies]
+clap = "*"
+std-logger = "*"

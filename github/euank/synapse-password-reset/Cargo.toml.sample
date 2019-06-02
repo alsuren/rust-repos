@@ -1,0 +1,24 @@
+[package]
+name = "synapse-password-reset"
+version = "0.1.0"
+authors = ["Euan Kemp <euank@euank.com>"]
+
+[dependencies]
+nickel = "*"
+nickel_mustache = { git = "https://github.com/euank/nickel-mustache" }
+rustc-serialize = "*"
+clap = "*"
+bcrypt = ">= 0.1.3"
+postgres = "*"
+log = "*"
+env_logger = "*"
+
+
+[dev-dependencies]
+hyper = "*"
+url = "*"
+rand = "*"
+
+[features]
+default = []
+integ-tests = []

@@ -1,0 +1,16 @@
+[package]
+name = "yamux"
+version = "0.1.0"
+authors = ["Linfeng Qian <thewawar@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bytes = "0.4"
+byteorder = "1.2"
+fnv = "1.0"
+futures = "0.1"
+tokio = "0.1"
+log = "0.4"
+
+[dev-dependencies]
+env_logger = "0.6"

@@ -1,0 +1,10 @@
+[package]
+name = "standup"
+version = "0.1.0"
+authors = ["Kevin Choubacha <kchoubacha@weedmaps.com>"]
+
+[dependencies]
+clap = "2"
+chrono = "0.2"
+serde = "*"
+serde_json = "*"

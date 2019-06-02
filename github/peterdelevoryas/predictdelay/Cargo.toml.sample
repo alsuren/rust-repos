@@ -1,0 +1,13 @@
+[package]
+name = "predictdelay"
+version = "0.1.0"
+authors = ["Peter Delevoryas <peterdelevoryas@gmail.com>"]
+
+[dependencies]
+rusty-machine = "*"
+mysql = "*"
+docopt = "*"
+rustc-serialize = "*"
+chrono = { version = "0.3", features = ["serde", "rustc-serialize"] }
+csv = "*"
+rand = "0.3"

@@ -1,0 +1,10 @@
+[package]
+name = "sample"
+version = "0.1.0"
+authors = ["Andrew Yourtchenko <ayourtch@gmail.com>"]
+
+[dependencies]
+
+ssh2 = "*"
+owning_ref = "*"
+rental = "*"

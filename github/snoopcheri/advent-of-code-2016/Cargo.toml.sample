@@ -1,0 +1,12 @@
+[package]
+name = "advent-of-code-2016"
+version = "0.1.0"
+authors = ["Sargon <sargon@me.com>"]
+
+[dependencies]
+regex = "*"
+itertools = "*"
+nom = "*"
+
+[dev-dependencies]
+hamcrest = "*"

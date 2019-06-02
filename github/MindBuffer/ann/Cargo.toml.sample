@@ -1,0 +1,16 @@
+[package]
+
+name = "ann"
+version = "0.1.0"
+authors = ["mitchmindtree <mitchell.nordine@gmail.com>"]
+
+[lib]
+
+name = "ann"
+path = "./src/lib.rs"
+
+[dependencies]
+nalgebra = "*"
+num = "*"
+petgraph = "*"
+rand = "*"

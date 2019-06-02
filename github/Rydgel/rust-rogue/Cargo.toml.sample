@@ -1,0 +1,16 @@
+[package]
+name = "rust-rogue"
+version = "0.1.0"
+authors = ["Jérôme Mahuet <jerome.mahuet@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+itertools = "0.5.9"
+piston = "0.31.3"
+piston_window = "0.64.0"
+piston2d-graphics = "0.21.1"
+pistoncore-sdl2_window = "0.40.0"
+piston2d-opengl_graphics = "0.40.0"
+rand = "0.3.15"
+find_folder = "0.3.0"
+image = "0.12.2"

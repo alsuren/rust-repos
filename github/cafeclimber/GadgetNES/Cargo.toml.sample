@@ -1,0 +1,10 @@
+[package]
+name = "gadget_nes"
+version = "0.1.0"
+authors = ["Ryan Campbell <rdcampbell@tamu.edu>"]
+
+[dependencies]
+bitflags = "1.0"
+nom="^3.2"
+clap="^2.31"
+sdl2="0.31"

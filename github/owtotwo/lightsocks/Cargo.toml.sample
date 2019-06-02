@@ -1,0 +1,22 @@
+[package]
+name = "lightsocks"
+version = "0.1.0"
+authors = ["Wenhao Huang <owtotwo@163.com>"]
+
+[dependencies]
+byteorder = "1.1.0"
+
+[lib]
+name = "lightsocks"
+
+[[bin]]
+name = "lightsocks"
+path = "src/main.rs"
+
+[[bin]]
+name = "lightsocks_local"
+path = "src/bin/local_main.rs"
+
+[[bin]]
+name = "lightsocks_server"
+path = "src/bin/server_main.rs"

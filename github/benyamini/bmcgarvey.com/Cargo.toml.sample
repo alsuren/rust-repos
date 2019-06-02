@@ -1,0 +1,8 @@
+[package]
+name = "bmcgarvey"
+version = "0.1.0"
+authors = ["Ben McGarvey <ben@sidekicker.com.au>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "0.7.18"

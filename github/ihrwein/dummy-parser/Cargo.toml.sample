@@ -1,0 +1,15 @@
+[package]
+name = "dummy-parser"
+version = "0.1.2"
+authors = ["Tibor Benke <ihrwein@gmail.com>"]
+build = "build.rs"
+
+[lib]
+crate-type = ["dylib"]
+
+[build-dependencies]
+syslog-ng-build = "0.2"
+
+[dependencies]
+log = "0.3"
+syslog-ng-common = "0.5.0"

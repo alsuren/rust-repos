@@ -1,0 +1,10 @@
+[package]
+
+name = "ray_ruster"
+version = "0.0.1"
+authors = [ "Lauris Jullien <lauris.jullien@gmail.com>" ]
+
+[dependencies]
+nalgebra = "0.8.0"
+regex = "0.1.0"
+image = "0.10.0"

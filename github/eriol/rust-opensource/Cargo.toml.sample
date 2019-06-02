@@ -1,0 +1,14 @@
+[package]
+name = "opensource"
+version = "0.1.0"
+authors = ["Daniele Tricoli <eriol@mornie.org>"]
+license = "BSD-3-Clause"
+description = "API Wrapper for the Open Source License API."
+keywords = ["api", "opensource"]
+
+[dependencies]
+hyper = "0.9.*"
+serde = "0.7.*"
+serde_json = "0.7.*"
+serde_macros = "0.7.*"
+url = "1.1.*"

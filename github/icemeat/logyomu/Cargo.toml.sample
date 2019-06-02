@@ -1,0 +1,9 @@
+[package]
+name = "logyomu"
+version = "0.1.0"
+authors = ["YEOM HYEONSEOP <icedmeat@gmail.com>"]
+
+[dependencies]
+regex = "0.2"
+encoding_rs = "0.7"
+hlua = "0.3"

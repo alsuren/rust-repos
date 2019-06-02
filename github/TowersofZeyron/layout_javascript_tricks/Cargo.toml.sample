@@ -1,0 +1,8 @@
+[package]
+name = "js_tricks_rust"
+version = "0.1.0"
+authors = ["Tendai Mutunhire <tmutunhire@gmail.com>"]
+
+[dependencies]
+rocket = "0.2.2"
+rocket_codegen = "0.2.2"

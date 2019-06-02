@@ -1,0 +1,9 @@
+[package]
+name = "nnet"
+version = "0.1.0"
+authors = ["vlad"]
+
+[dependencies]
+nalgebra = "0.16"
+rand = "0.6"
+mnist = "0.4.0"

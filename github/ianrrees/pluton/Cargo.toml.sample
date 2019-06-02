@@ -1,0 +1,17 @@
+[package]
+name = "pluton"
+version = "0.1.0"
+authors = ["Ian Rees <ian.rees@gmail.com>"]
+repository = "https://github.com/ianrrees/pluton.git"
+edition = "2018"
+license = "LGPL-3.0"
+readme = "README.md"
+description = "Tools for working with Looking Glass \"holographic\" displays"
+
+[dependencies]
+bytes = "0.4"
+# hid depends on libhidapi; on Ubuntu 18.04: #apt install libhidapi-dev
+hid = "0.4.1"
+serde = "1.0.84"
+serde_derive = "1.0.84"
+serde_json = "1.0.34"

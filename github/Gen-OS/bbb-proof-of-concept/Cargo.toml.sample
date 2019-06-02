@@ -1,0 +1,31 @@
+[package]
+name = "bbb-proof-of-concept"
+version = "0.1.0"
+license = "MIT"
+authors = [
+    "Alexis Williams <sasinestro@gmail.com>"
+]
+build = "build.rs"
+links = "stage0"
+
+[[bin]]
+name = "stage1"
+path = "src/stage1.rs"  
+
+[features]
+default = []
+
+# processors
+cpu-am335x = []
+
+# boards
+board-beaglebone-black = ["cpu-am335x"]
+
+[dependencies]
+interpolate_idents = "~0.1.2"
+
+[dependencies.compiler-rt]
+git = "https://github.com/Gen-OS/compiler-rt.rs"
+
+[build-dependencies]
+gcc = "0.3"

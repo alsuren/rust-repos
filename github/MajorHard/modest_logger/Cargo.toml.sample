@@ -1,0 +1,11 @@
+[package]
+name = "spacelog"
+version = "0.1.0"
+authors = ["Justin Hurst <jryanhurst@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+log = "0.3.*"
+chrono = "0.2.*"
+ansi_term = "0.7.*"
+

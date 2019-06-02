@@ -1,0 +1,21 @@
+[package]
+name = "mssql_client"
+version = "0.2.7"
+authors = ["Dany Laporte <dany_laporte@hotmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+conn_str = { git = "https://github.com/danylaporte/conn_str.git" }
+decimal = { git = "https://github.com/danylaporte/dec19x5.git", package = "dec19x5" }
+failure = "0.1"
+futures = "0.1"
+futures-locks = "0.3"
+futures-state-stream = "0.1"
+lazy_static = "1.3"
+log = "0.4"
+tiberius = "0.3"
+uuid = { version = "0.7", features = [ "serde", "v4" ] }
+
+[dev-dependencies]
+tokio = "0.1"

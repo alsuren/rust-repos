@@ -1,0 +1,24 @@
+[package]
+name = "bifrost"
+version = "0.1.0"
+authors = ["ericdeansanchez <ericdeansanchez@berkeley.edu>", "parkerduckworth <parker_duckworth@icloud.com>"]
+edition = "2018"
+
+[lib]
+name = "bifrost"
+path = "src/bifrost/lib.rs"
+
+[dependencies]
+clap = "2.33.0"
+dirs = "1.0.5"
+failure = "*"
+libc = "0.2.51"
+serde = "1.0"
+serde_derive = "1.0"
+regex = "1"
+walkdir = "2.2.7"
+toml = "0.5"
+
+[[test]]
+name = "integration"
+path = "tests/lib.rs"

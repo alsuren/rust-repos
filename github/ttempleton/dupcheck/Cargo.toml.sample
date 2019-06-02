@@ -1,0 +1,19 @@
+[package]
+name = "dupcheck"
+version = "0.1.0"
+authors = ["Thomas Templeton <thomas.templeton.dev@gmail.com>"]
+description = "Duplicate file checker"
+documentation = "https://docs.rs/dupcheck"
+homepage = "https://github.com/ttempleton/dupcheck"
+repository = "https://github.com/ttempleton/dupcheck.git"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+clap = "~2.19.2"
+sha2 = "0.1.2"
+
+[[bin]]
+name = "dupcheck"
+doc = false
+

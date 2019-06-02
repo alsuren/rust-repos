@@ -1,0 +1,16 @@
+[package]
+
+name = "dsl_macros"
+version = "0.1.2"
+authors = ["Stanislav Panferov <fnight.m@gmail.com>"]
+description = "Convenience macros that rewrites method calls inside a builder closure."
+keywords = ["dsl", "macros"]
+license = "MIT"
+
+[lib]
+name = "dsl_macros"
+path = "src/lib.rs"
+plugin = true
+
+[[test]]
+name = "tests"

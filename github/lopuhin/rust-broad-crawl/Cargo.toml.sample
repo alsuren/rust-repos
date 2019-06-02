@@ -1,0 +1,14 @@
+[package]
+name = "crawler"
+version = "0.1.0"
+authors = ["Konstantin Lopuhin <kostia.lopuhin@gmail.com>"]
+
+[dependencies]
+csv = "*"
+env_logger = "*"
+html5ever = "*"
+hyper = {git = "https://github.com/hyperium/hyper.git"}
+log = "*"
+mime = "*"
+rustc-serialize = "*"
+url = "1.1.1"

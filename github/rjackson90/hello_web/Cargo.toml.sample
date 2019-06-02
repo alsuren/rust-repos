@@ -1,0 +1,10 @@
+[package]
+name = "hello_web"
+version = "0.1.0"
+authors = ["Richard Jackson <richard.jackson@55places.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "0.7"
+pretty_env_logger = "0.3.0"
+log = "0.4"

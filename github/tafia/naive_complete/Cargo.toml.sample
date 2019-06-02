@@ -1,0 +1,11 @@
+[package]
+name = "naive_complete"
+version = "0.1.0"
+authors = ["Johann Tuffe <tafia973@gmail.com>"]
+
+[dependencies]
+regex = "0.1.8"
+regex_macros = "0.1.8"
+log = "*"
+env_logger = "*"
+toml = "*"

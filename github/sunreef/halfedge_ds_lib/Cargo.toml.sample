@@ -1,0 +1,9 @@
+[package]
+name = "halfedge"
+version = "0.1.0"
+authors = ["Victor Cornillere <v.cornillere@gmail.com>"]
+
+[dependencies]
+rand = "0.4"
+svg = "0.5.10"
+nalgebra = "0.14.1"

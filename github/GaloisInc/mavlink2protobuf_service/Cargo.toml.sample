@@ -1,0 +1,33 @@
+[package]
+name = "mavlink_proto"
+version = "0.1.0"
+authors = ["Michal Podhradsky <mpodhradsky@galois.com>"]
+build = "build/main.rs"
+
+[build-dependencies]
+crc16 = "0.3.3"
+byteorder = "0.5.3"
+xml-rs = "0.2"
+quote = "0.3"
+rustfmt = "0.9"
+
+[[bin]]
+name = "mavlink-connector"
+
+[dependencies]
+crc16 = "0.3.3"
+byteorder = "0.5.3"
+serial="0.4"
+zmq = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+prost = "0.4"
+prost-derive = "0.4"
+bytes = "0.4"
+range_check = "0.1"
+clap = {version = "~2.27.0", features = ["yaml"]}
+
+[features]
+# TODO: not implemented yet
+"json" = []

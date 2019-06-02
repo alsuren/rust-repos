@@ -1,0 +1,18 @@
+[package]
+authors = ["Tyler Wolf Leonhardt <tyler.wolf.leonhardt@gmail.com>"]
+description = "A library for easily defining an error type."
+keywords = [
+    "err",
+    "errs",
+    "error",
+    "errors",
+    "result"
+]
+exclude = [
+    ".gitignore",
+    "build.proj"
+]
+license = "MIT"
+name = "define_error"
+repository = "https://github.com/Tyleo/define_error"
+version = "4.0.1"

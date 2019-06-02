@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "./retry",
+    "./fluent-main",
+    "./traits",
+    "./tmc"
+]
+
+[dependencies]
+
+[features]
+default = []

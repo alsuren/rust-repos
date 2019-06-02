@@ -1,0 +1,15 @@
+[package]
+name = "pawn-randomize"
+version = "0.1.0"
+authors = ["dakyskye <lashakanteladze339@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "pawn_randomize"
+crate-type = ["cdylib"]
+
+[dependencies]
+samp = {git="https://github.com/ZOTTCE/samp-rs/",branch="async-amx",features = ["async"]}
+log = "0.4.6"
+fern = "0.5.7"
+rand = "0.6.5"

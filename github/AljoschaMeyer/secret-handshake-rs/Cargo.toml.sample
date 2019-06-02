@@ -1,0 +1,22 @@
+[package]
+name = "secret_handshake"
+version = "5.0.0"
+authors = ["AljoschaMeyer <mail@aljoscha-meyer.de>"]
+description = "Implementation of the secret-handshake protocol."
+repository = "https://github.com/AljoschaMeyer/secret-handshake-rs"
+readme = "README.md"
+license = "AGPL-3.0"
+
+[dependencies]
+sodiumoxide = "0.0.16"
+libc = "0.2"
+futures-core = "0.2.0-alpha"
+futures-io = "0.2.0-alpha"
+
+[dev-dependencies]
+async-ringbuffer = "0.3.0"
+atm-io-utils = "0.2.0"
+futures = "0.2.0-alpha"
+
+[build-dependencies]
+cc = "1.0.0"

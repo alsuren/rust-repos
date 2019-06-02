@@ -1,0 +1,28 @@
+[package]
+name = "boundvariable"
+version = "0.1.0"
+authors = ["James Wilson <me@unbui.lt>"]
+edition = "2018"
+
+[lib]
+name = "common"
+path = "src/common/lib.rs"
+
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = "z"
+codegen-units = 1
+
+[dependencies]
+jemallocator = "0.1.9"
+derive_more = "0.13.0"
+clap = "2.32.0"
+crossbeam = "0.4"
+
+# For networking:
+# tokio = "0.1.11"
+tokio = { version = "0.1.11", features = ["async-await-preview"] }
+tokio-async-await = "0.1.4"
+futures = "0.1.25"
+bytes = "0.4.10"

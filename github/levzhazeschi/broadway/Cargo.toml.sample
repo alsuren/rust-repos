@@ -1,0 +1,9 @@
+[package]
+name = "broadway"
+version = "0.1.4"
+authors = ["Mikhail Antonenko <levzhazeschi@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]

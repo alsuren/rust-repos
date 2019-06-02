@@ -1,0 +1,20 @@
+[package]
+name = "watarikani"
+version = "0.1.0"
+authors = ["The FrugalOS Developers"]
+homepage = "https://github.com/frugalos/watarikani"
+repository = "https://github.com/frugalos/watarikani"
+readme = "README.md"
+categories = ["command-line-utilities"]
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+cannyls = "*"
+cannyls_rpc = "*"
+fibers = "*"
+fibers_rpc = "*"
+futures = "*"
+trackable = "*"
+clap = "*"
+structopt = "*"

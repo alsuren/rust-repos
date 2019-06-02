@@ -1,0 +1,24 @@
+[package]
+name = "proton_runner"
+version = "0.0.6"
+authors = ["Ryan Fredlund <fredl027@umn.edu>", "Vladimir Kuksenko <kukse004@umn.edu>"]
+description = "Show runner for Proton"
+homepage = "https://github.com/teslaworksumn/proton-runner"
+repository = "https://github.com/teslaworksumn/proton-runner"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+docopt = "0.6.*"
+rustc-serialize = "0.3.*"
+serial = "0.3.*"
+toml = "0.2"
+rustyline = "1.0"
+
+[dependencies.sfml]
+version = "0.12.*"
+default-features = false
+features = ["audio"]
+
+[[bin]]
+name = "proton_runner"

@@ -1,0 +1,21 @@
+[package]
+name = "dlarm"
+description = "the alarm system for dwm"
+repository = "https://github.com/codesections/dlarm"
+version = "0.3.0"
+authors = ["Daniel Sockwell <dsockwell@gmail.com>"]
+edition = "2018"
+license = "MIT"
+keywords = ["CLI", "alarm", "productivity", "time", "time-management"]
+readme = "./README.md"
+categories = ["command-line-utilities", "date-and-time"]
+
+[dependencies]
+clap = "2.32"
+chrono = "0.4.6"
+dirs = "1.0.4"
+assert_cmd = "0.10.2"
+predicates = "1.0.0"
+colored = "1.7.0"
+man = "0.2.0"
+humantime = "1.2.0"

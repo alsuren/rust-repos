@@ -1,0 +1,22 @@
+[package]
+name = "font"
+version = "0.3.2"
+license = "Apache-2.0/MIT"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+description = "The package provides a font toolbox."
+documentation = "https://docs.rs/font"
+homepage = "https://github.com/bodoni/font"
+repository = "https://github.com/bodoni/font"
+exclude = ["tests/fixtures/*"]
+
+[dependencies]
+opentype = "0.17"
+postscript = "0.11"
+truetype = "0.22"
+
+[dev-dependencies]
+svg = "0.5"
+
+[[test]]
+name = "font"
+path = "tests/lib.rs"

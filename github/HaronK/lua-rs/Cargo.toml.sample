@@ -1,0 +1,10 @@
+[package]
+name = "lua-rs"
+authors = ["Haron"]
+version = "0.0.2"
+publish = false
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]

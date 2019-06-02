@@ -1,0 +1,30 @@
+[package]
+name = "feo"
+version = "0.0.1"
+authors = [
+    "Michael Gazzola <michaelagazzola@gmail.com",
+    "Philipp Oppermann <dev@phil-opp.com>"
+]
+readme = "README.md"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+clippy = "*"
+rlibc = "0.1.4"
+spin = "0.3.4"
+
+[dependencies.multiboot2]
+git = "https://github.com/phil-opp/multiboot2-elf64"
+
+[dev-dependencies]
+stainless = "*"
+
+# `cargo build`
+[profile.dev]
+panic = "abort"  # disables unwinding
+
+# `cargo build --release`
+[profile.release]
+panic = "abort"  # disables unwinding

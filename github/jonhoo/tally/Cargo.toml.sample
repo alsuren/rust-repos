@@ -1,0 +1,26 @@
+[package]
+name = "tally"
+version = "0.4.3"
+
+description = "A prettier version of the time command"
+readme = "README.md"
+
+authors = ["Jon Gjengset <jon@thesquareplanet.com>"]
+
+homepage = "https://github.com/jonhoo/tally"
+repository = "https://github.com/jonhoo/tally.git"
+
+keywords = ["cli", "system", "utilities"]
+categories = ["command-line-utilities"]
+
+license = "MIT/Apache-2.0"
+
+[badges]
+maintenance = { status = "as-is" }
+
+[dependencies]
+csv = "1.0.0-beta.4"
+colored = "1.5.2"
+clap = "2.26.2"
+libc = "0.2"
+time = "0.1"

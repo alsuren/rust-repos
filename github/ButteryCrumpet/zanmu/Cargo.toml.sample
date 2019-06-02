@@ -1,0 +1,14 @@
+[package]
+name = "zanmu"
+version = "0.1.0"
+authors = ["Simon <crumpetybympety@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix = "*"
+actix-web = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+diesel = { version = "*", features = ["postgres", "r2d2"] }
+dotenv = "*"

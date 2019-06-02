@@ -1,0 +1,13 @@
+[package]
+name = "watch"
+version = "0.1.0"
+authors = ["ander <ander.ender@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2"
+chrono = "0.4"
+termion = "1.5.2"
+
+[profile.release]
+lto = true

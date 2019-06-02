@@ -1,0 +1,8 @@
+[package]
+name = "NEruSt"
+version = "0.0.1"
+authors = ["Akourne Burschtein", "Mark McCaskey"]
+
+[dependencies]
+#sdl2 = {version = "0.31", features = ["bundled"]}
+clap = "^2.31"

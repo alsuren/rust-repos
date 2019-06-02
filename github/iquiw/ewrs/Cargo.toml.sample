@@ -1,0 +1,27 @@
+[package]
+name = "ewrs"
+version = "0.5.1"
+authors = ["Iku Iwasa <iku.iwasa@gmail.com>"]
+build = "build.rs"
+edition = "2018"
+
+[target.'cfg(unix)'.dependencies]
+libc = "*"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "^0.3.6", features = ["processthreadsapi", "psapi", "winuser"] }
+widestring = "*"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "*"
+
+[[bin]]
+name = "ew"
+path = "src/main.rs"
+
+[[bin]]
+name = "ew-w"
+path = "src/main-w.rs"
+
+[dependencies]
+dirs = "^1.0.4"

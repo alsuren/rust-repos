@@ -1,0 +1,15 @@
+[package]
+name = "spaced_learner"
+version = "0.1.0"
+authors = ["Sandeep Datta <datta.sandeep@gmail.com>"]
+license = "Apache-2.0"
+
+[dependencies]
+serde = "1.0"
+serde_yaml = "0.7"
+serde_derive = "1.0"
+
+[dependencies.cursive]
+version = "*"
+default-features = false
+features = ["termion-backend"]

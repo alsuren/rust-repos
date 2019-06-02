@@ -1,0 +1,12 @@
+[package]
+name = "fft_pipeline"
+version = "0.1.0"
+authors = ["Vernon Jones <vernonrjones@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33"
+gnuplot = "0.0.31"
+num-traits = "0.2"
+num-complex = "0.2"
+rustfft = "3.0"

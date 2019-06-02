@@ -1,0 +1,26 @@
+[package]
+name = "sendpacket"
+version = "0.1.1"
+description = "High-level library for interacting with low-level network data."
+homepage = "https://github.com/Metaswitch/sendpacket"
+repository = "https://github.com/Metaswitch/sendpacket"
+license = "MIT OR Apache-2.0"
+authors = [
+  "Alex Lloyd <alex.lloyd@metaswitch.com>",
+  "Blake Hawkins <blake.hawkins@metaswitch.com>",
+  "Jaime Valdemoros Gomez <jaime.valdemorosgomez@metaswitch.com>",
+  "James Turner <james.turner@metaswitch.com>",
+  "Ryan Collingham <ryan.collingham@metaswitch.com>",
+  "Sophie Stratton <sophie.stratton@metaswitch.com>",
+  "Wojciech Kozlowski <wojciech.kozlowski@metaswitch.com>",
+]
+
+[lib]
+name = "lib_sendpacket"
+path = "src/lib.rs"
+
+[dependencies]
+derive-new = "0.5"
+ipnetwork = "0.12.8"
+pnet = "0.21.0"
+pnet_datalink = "0.20.0"

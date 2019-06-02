@@ -1,0 +1,23 @@
+[package]
+name = "glslang-sys"
+version = "0.0.1"
+authors = ["Tim Neumann <mail@timnn.me>"]
+description = "Low level bindings for the GLSL Reference Compiler"
+
+documentation = "https://timnn.github.io/glslang-sys/"
+homepage = "https://github.com/TimNN/glslang-sys"
+repository = "https://github.com/TimNN/glslang-sys"
+
+readme = "README.md"
+
+keywords = ["ffi"]
+
+license = "MIT"
+
+build = "build.rs"
+
+[dependencies]
+libc = "*"
+
+[build-dependencies]
+gcc = "*"

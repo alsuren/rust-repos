@@ -1,0 +1,24 @@
+[package]
+name = "wasm-module-name"
+version = "0.1.1"
+authors = ["Fluence Labs"]
+edition = "2018"
+publish = true
+description = "Console utility to show and change Wasm module names"
+repository = "https://github.com/fluencelabs/wasm-module-name"
+license = "Apache-2.0"
+keywords = ["fluence", "webassembly", "wasm-module-name"]
+
+[profile.release]
+debug = false
+lto = true
+panic = 'abort'
+
+[[bin]]
+name = "wasm-module-name"
+
+[dependencies]
+parity-wasm = "0.38.0"
+clap = "2.32.0"
+exitfailure = "0.5.1"
+failure = "0.1.5"

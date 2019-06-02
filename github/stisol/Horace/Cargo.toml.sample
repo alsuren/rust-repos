@@ -1,0 +1,18 @@
+[package]
+name = "horace"
+version = "0.1.0"
+authors = ["Stian Soltvedt <soltvedt.stian@gmail.com>"]
+repository = "https://github.com/stisol/Horace"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+serenity = "^0.5.2"
+postgres = { version = "^0.15.2", features = ["with-chrono"] }
+r2d2 = "^0.8.2"
+r2d2_postgres = "^0.14.0"
+chrono = "^0.4.2"
+log = "^0.4.1"
+env_logger = "^0.5.7"
+typemap = "^0.3.3"
+rand = "^0.5.0"

@@ -1,0 +1,21 @@
+[package]
+
+name = "zlib"
+version = "0.0.2"
+authors = ["Arlie Davis <arlie.davis@gmail.com>"]
+
+build = "build.rs"
+
+readme = "README.md"
+license = "MIT"
+description = "An (incomplete) port of zlib to Rust.  The decompressor works, but the compressor has not yet been ported."
+
+[features]
+default = []
+unsafe_fast = []
+
+[dependencies.crc32]
+crc32 = "0.0.2"
+
+[dependencies.log]
+log = "0.1.19"

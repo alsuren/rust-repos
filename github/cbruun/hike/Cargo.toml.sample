@@ -1,0 +1,10 @@
+[package]
+name = "hike"
+version = "0.1.0"
+authors = ["Casper Bruun <casperbruun@gmail.com>"]
+
+[[bin]]
+name = "hike-cli"
+
+[dependencies]
+lazy_static = "0.1.15"

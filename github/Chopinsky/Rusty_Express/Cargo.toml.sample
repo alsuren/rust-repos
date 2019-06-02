@@ -1,0 +1,26 @@
+[package]
+name = "rusty_express"
+description = "A simple http server library written in Rust and provide Express-alike APIs. We know that Rust is hard and daunting, so we will make sure your server can be easy to use without fear!"
+readme = "README.md"
+documentation = "https://docs.rs/rusty_express/"
+repository = "https://github.com/Chopinsky/Rusty_Express.git"
+version = "0.4.3"
+authors = ["Jacob Zuo <chopinsky@live.com>"]
+license = "MIT"
+edition = "2018"
+
+[features]
+default = ["session", "logger"]
+session = []
+logger = []
+
+[dependencies]
+chrono = "^0.4"
+crossbeam-channel = "^0.3.0"
+hashbrown = "0.1"
+lazy_static = "^1.0"
+native-tls = "0.2"
+num_cpus = "^1.8"
+parking_lot = "^0.7.1"
+rand = "^0.4"
+regex = "^0.2"

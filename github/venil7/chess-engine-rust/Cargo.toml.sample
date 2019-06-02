@@ -1,0 +1,8 @@
+[package]
+name = "darkruby-chess"
+version = "0.2.0"
+authors = ["Art Deineka"]
+edition="2018"
+
+[dependencies]
+rayon = "1.0"

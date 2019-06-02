@@ -1,0 +1,22 @@
+[package]
+name = "octree_example"
+version = "0.1.0"
+authors = ["Nerijus Arlauskas <nercury@gmail.com>"]
+build = true
+
+[dependencies]
+log = "0.3"
+env_logger = "0.4"
+gl-core-struct = { git = "https://github.com/Nercury/gl-core-struct-rs" }
+octree = { path = "octree-lib" }
+window = { path = "support-libs/window" }
+window_sdl = { path = "support-libs/window_sdl" }
+window_gl = { path = "support-libs/window_gl" }
+input = { path = "support-libs/input" }
+render = { path = "support-libs/render" }
+render_gl = { path = "support-libs/render_gl" }
+resources = { path = "support-libs/resources" }
+cgmath = "0.15"
+
+[build-dependencies]
+bundler = { path = "support-libs/bundler" }

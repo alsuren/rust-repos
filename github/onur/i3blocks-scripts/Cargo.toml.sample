@@ -1,0 +1,52 @@
+[package]
+name = "i3blocks-scripts"
+version = "0.1.0"
+description = "Small set of i3blocks scripts"
+authors = ["Onur Aslan <onur@onur.im>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/onur/i3blocks-scripts"
+documentation = "https://docs.rs/i3blocks-scripts"
+
+[lib]
+name = "i3blocks"
+
+[dependencies]
+time = { version = "0.1", optional = true }
+regex = { version = "0.2", optional = true }
+reqwest = { version = "0.8", optional = true }
+serde = { version = "1.0", optional = true }
+serde_json = { version = "1.0", optional = true }
+serde_derive = { version = "1.0", optional = true }
+
+[features]
+script_time = ["time"]
+script_loadavg = []
+script_diskusage = []
+script_volume = ["regex"]
+script_memory = []
+script_btcturk = ["reqwest", "serde", "serde_json", "serde_derive"]
+
+[[bin]]
+name = "time"
+required-features = ["script_time"]
+
+[[bin]]
+name = "loadavg"
+required-features = ["script_loadavg"]
+
+[[bin]]
+name = "diskusage"
+required-features = ["script_diskusage"]
+
+[[bin]]
+name = "volume"
+required-features = ["script_volume"]
+
+[[bin]]
+name = "memory"
+required-features = ["script_memory"]
+
+[[bin]]
+name = "btcturk"
+required-features = ["script_btcturk"]

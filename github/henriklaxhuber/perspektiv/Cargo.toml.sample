@@ -1,0 +1,53 @@
+[package]
+name = "perspektiv"
+version = "0.1.0"
+publish = false
+authors = ["Henrik Laxhuber <henrik@laxhuber.com>"]
+
+[dependencies]
+lazy_static = "^1.1.0"
+log = "^0.4.5"
+stderrlog = "^0.4.1"
+# For Config
+toml = "^0.4.6"
+serde = "^1.0.70"
+serde_derive = "^1.0.70"
+dirs = "^1.0.3"
+# For Window
+threlm = { path = "threlm" }
+gtk = "^0.4.1"
+gdk = "^0.8.0"
+gdk-sys = "^0.6.0"
+glib = "^0.5.0"
+# Modules
+libc = "^0.2.43"
+x11 = { version = "^2.18.1", features = ["xlib", "xrandr"], optional = true }
+alsa = { version = "^0.2.0", optional = true }
+
+[features]
+default = [] # Make it explicit that features must be selected manually
+
+x11_backlight = ["x11"]
+alsa_volume = ["alsa"]
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 16
+panic = 'unwind'
+incremental = true
+overflow-checks = true
+
+[profile.release]
+opt-level = "z"
+debug = false
+rpath = false
+debug-assertions = false
+overflow-checks = false
+codegen-units = 4
+incremental = false # Needed for LTO
+lto = true
+panic = 'abort' # Errors in threads (modules) are handled reasonably well, panics shouldn't happen

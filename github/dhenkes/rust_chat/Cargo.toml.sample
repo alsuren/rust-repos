@@ -1,0 +1,11 @@
+[package]
+name = "rust_chat"
+version = "0.1.0"
+authors = ["Dominique Henkes <dominique@henkes.io>"]
+edition = "2018"
+
+[dependencies]
+http-muncher = "0.2.0"
+mio = "0.5"
+rustc-serialize = "0.3.15"
+sha1 = "0.1.1"

@@ -1,0 +1,23 @@
+[package]
+name = "fluffy-penguin"
+version = "0.2.2"
+authors = ["meidhy <dymayday@gmail.com>"]
+
+[dependencies]
+rand = "0.6.0"
+rayon = ""
+tokio-threadpool = ""
+futures = ""
+serde = ""
+serde_derive = ""
+bincode = ""
+fnv = ""
+
+[dev-dependencies]
+vision = ""
+rulinalg = ""
+
+# [profile.release]
+# lto = true
+# codegen-units = 1
+# debug = true

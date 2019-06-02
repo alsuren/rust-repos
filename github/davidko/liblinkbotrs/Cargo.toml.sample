@@ -1,0 +1,16 @@
+[package]
+name = "liblinkbotrs"
+version = "0.0.1"
+authors = ["David Ko <david@barobo.com>"]
+
+[dependencies]
+lazy_static = "*"
+log = "*"
+websocket = "*"
+# linkbot-core = { path = "../linkbot-core" }
+linkbot-core = { git = "https://github.com/davidko/linkbot-core" }
+env_logger = "*"
+
+[lib]
+name = "linkbotrs"
+crate-type = ["staticlib"]

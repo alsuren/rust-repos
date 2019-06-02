@@ -1,0 +1,27 @@
+[package]
+name = "korome"
+version = "0.14.1"
+authors = ["LFalch <lucas@wasd.dk>"]
+description="WIP game engine using glium"
+documentation="https://docs.rs/korome/"
+repository="https://github.com/LFalch/korome"
+homepage="https://github.com/LFalch/korome"
+readme="README.md"
+keywords=["gamedev"]
+license="Apache-2.0"
+exclude = [
+    "Makefile",
+    ".gitignore",
+    "README.md",
+    ".travis.yml",
+    "appveyor.yml"
+]
+
+[dependencies]
+glium = ">=0.15, <0.17"
+quick-error = "~1"
+
+[dependencies.image]
+version = ">=0.10, <0.13"
+default-features = false
+features = ["png_codec"]

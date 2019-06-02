@@ -1,0 +1,10 @@
+[package]
+name = "communicatio"
+version = "0.1.0"
+authors = ["gobwas <gobwas@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+uuid = "*"
+log = "*"
+env_logger = "*"

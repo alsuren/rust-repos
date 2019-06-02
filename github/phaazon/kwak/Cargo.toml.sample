@@ -1,0 +1,16 @@
+[package]
+name = "kwak"
+version = "0.1.0"
+authors = ["Dimitri Sabadie <dimitri.sabadie@gmail.com>"]
+
+[dependencies]
+clap = "2"
+lazy_static = "1"
+html-entities = "0.1"
+rand = "0.5"
+regex = "1"
+reqwest = "0.9"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+time = "0.1"

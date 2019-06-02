@@ -1,0 +1,9 @@
+[package]
+name = "midy"
+version = "0.1.0"
+authors = ["Hiromitsu Oshiba <0x75960@strelka.cc>"]
+edition = "2018"
+
+[dependencies]
+regex = "1.1"
+lazy_static = "1.3"

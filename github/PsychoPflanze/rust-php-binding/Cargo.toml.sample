@@ -1,0 +1,15 @@
+[package]
+name = "rust-php-binding"
+version = "0.1.0"
+authors = ["Leon Marzahn <leon.marzahn@movingimage.com"]
+
+[lib]
+name = "binding"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bin_binding"
+path = "src/bin.rs"
+
+[dependencies]
+plex = { git = "https://github.com/goffrie/plex.git", branch = "master" }

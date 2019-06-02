@@ -1,0 +1,8 @@
+[package]
+name = "advent-of-code"
+version = "0.1.0"
+authors = ["Robert Holt <rjmholt_msft@outlook.com>"]
+
+[dependencies]
+clap = { version = "~2.32.0", features = ["yaml"] }
+rust-embed = "4.2.0"

@@ -1,0 +1,10 @@
+[package]
+name = "rsgb"
+version = "0.1.0"
+authors = ["kyren <kerriganw@gmail.com>"]
+
+[profile.dev]
+opt-level = 1
+
+[dependencies]
+image = "*"

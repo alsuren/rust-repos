@@ -1,0 +1,20 @@
+[package]
+name = "schoology"
+version = "0.0.1"
+description = "A basic sync api for schoology"
+readme = "README.md"
+homepage = "https://github.com/adumbidiot/schoology-rs"
+repository = "https://github.com/adumbidiot/schoology-rs"
+license = "MIT"
+authors = ["adumbidiot <nathaniel.daniel23@outlook.com>"]
+keywords = ["api", "schoology", "hyper"]
+categories = ["api-bindings", "web-programming", "web-programming::http-client"]
+edition = "2018"
+
+[dependencies]
+serde_json = "1"
+serde_derive = "1.0"
+serde = "1"
+hyper = "0.10"
+hyper-native-tls = "0.2"
+rand = "0.4"

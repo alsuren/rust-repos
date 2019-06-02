@@ -1,0 +1,9 @@
+[package]
+name = "shaun"
+version = "0.4.3"
+authors = ["Arthur Blanleuil <arthur.blanleuil@inria.fr>"]
+license = "MIT"
+
+[dependencies]
+serde = "*"
+serde_derive = "*"

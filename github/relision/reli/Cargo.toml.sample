@@ -1,0 +1,31 @@
+[package]
+	name = "relision"
+	# The relision project uses semantic versioning.
+	version = "0.0.1"
+	authors = ["The Relision Development Team"]
+	license = "BSD-2-Clause"
+	readme = "README.md"
+	repository = "https://github.com/relision/reli"
+	homepage = "https://github.com/relision/reli"
+	description = """
+The relision term rewriter.
+"""
+
+[dependencies]
+	# The linenoise library provides history and line parsing.
+	linenoise-rust = "~0.1.13"
+	# The num library provides arbitrary precision integers.
+	num = "~0.1.27"
+	# The getopts library provides simple command line parsing.
+	getopts = "*"
+	# We need lazy static data.
+	lazy_static = "~0.1.15"
+
+[lib]
+	name = "relision"
+
+[[bin]]
+	# Build the REPL.
+	name = "repl"
+	path = "src/main.rs"
+	doc = false

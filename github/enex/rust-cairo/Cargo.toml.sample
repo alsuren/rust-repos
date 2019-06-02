@@ -1,0 +1,9 @@
+[package]
+
+name = "cairo"
+version = "0.0.1"
+authors = ["Cedrick Cooke <cedrickc@zoho.com>"]
+
+[[example]]
+name = "write-to-image"
+path = "examples/write-to-image/main.rs"

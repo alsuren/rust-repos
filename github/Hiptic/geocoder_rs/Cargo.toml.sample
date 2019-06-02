@@ -1,0 +1,43 @@
+[package]
+name = "geocoder_rs"
+version = "1.0.0"
+authors = ["Josh Leverette"]
+repository = "https://github.com/OneSignal/geocoder_rs"
+
+[dependencies]
+geo = { version = "0.9.1", features = ["use-serde"] }
+geojson = "0.11.0"
+lazy_static = "1.0.1"
+serde = "1.0.66"
+serde_derive = "1.0.66"
+serde_json = "1.0.19"
+rayon = "1.0.1"
+ruru = "0.9.3"
+
+[dev-dependencies]
+criterion = "0.2.3"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[build-dependencies]
+geo = { version = "0.9.1", features = ["use-serde"] }
+geojson = "0.11.0"
+serde = "1.0.66"
+serde_derive = "1.0.66"
+serde_json = "1.0.19"
+rayon = "1.0.1"
+
+[[bench]]
+name = "benchmark"
+harness = false
+
+[profile.bench]
+debug = true
+
+[package.metadata.thermite]
+github_releases = true
+
+# this is necessary to support static linkage for now
+[patch.crates-io]
+ruby-sys = { git = "http://github.com/coder543/ruby-sys" }

@@ -1,0 +1,21 @@
+[package]
+name = "stm32"
+version = "0.1.0"
+authors = ["James Cook <mokus@deepbondi.net>"]
+build = "cp_linker_scripts.rs"
+
+[dependencies.core]
+git = "https://github.com/hackndev/rust-libcore.git"
+
+[dependencies.arm_embedded_rt]
+git = "https://github.com/mokus0/arm_embedded_rt.git"
+
+[dependencies.ioreg]
+git = "https://github.com/mokus0/zinc"
+branch = "develop"
+path = "ioreg"
+
+[dependencies.volatile_cell]
+git = "https://github.com/mokus0/zinc"
+branch = "develop"
+path = "volatile_cell"

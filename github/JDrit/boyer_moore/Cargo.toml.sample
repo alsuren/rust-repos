@@ -1,0 +1,19 @@
+[package]
+name = "boyer_moore"
+version = "0.1.0"
+authors = ["Joseph Batchik <josephbatchik@gmail.com>"]
+license-file = "LICENSE"
+
+[lib]
+name = "boyer_moore"
+path = "src/lib.rs"
+test = true
+doctest = true
+doc = true
+
+[[bin]]
+name = "search"
+path = "src/main.rs"
+
+[dependencies]
+ansi_term = "0.9"

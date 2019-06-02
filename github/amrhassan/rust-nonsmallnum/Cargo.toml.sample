@@ -1,0 +1,14 @@
+[package]
+name = "nonsmallnum"
+version = "0.0.7-alpha.3"
+authors = ["Amr Hassan <amr.hassan@gmail.com>"]
+description = "Basic arithmetic for unsigned arbitrarily-sized integers in pure Rust"
+license = "MIT"
+
+[dependencies]
+
+[dev-dependencies]
+quickcheck = "0.3"
+
+[badges]
+travis-ci = { repository = "amrhassan/rust-nonsmallnum" }

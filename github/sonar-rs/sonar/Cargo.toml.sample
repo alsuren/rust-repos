@@ -1,0 +1,23 @@
+[package]
+name = "sonar"
+version = "0.1.0"
+authors = ["James Chapman <jchapman3000@gmail.com>"]
+description = "3D game engine written in Rust"
+license = "MIT/Apache-2.0"
+
+homepage = "https://github.com/sonar-rs/sonar"
+repository = "https://github.com/sonar-rs/sonar"
+documentation = "https://docs.rs/sonar"
+
+[badges]
+azure-devops = { project = "sonar-rs/sonar", pipeline = "sonar-rs.sonar" }
+maintenance = { status = "experimental" }
+
+[dependencies]
+sonar-window = { version = "0.1.0", path = "src/window", optional = true }
+
+[features]
+default = ["window"]
+window = ["sonar-window"]
+
+[workspace]

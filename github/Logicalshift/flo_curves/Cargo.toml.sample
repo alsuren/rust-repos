@@ -1,0 +1,18 @@
+[package]
+name            = "flo_curves"
+version         = "0.3.0"
+authors         = ["Andrew Hunter"]
+license         = "Apache-2.0"
+repository      = "https://github.com/Logicalshift/flo_curves"
+description     = "Library for manipulating Bezier curves"
+documentation   = "http://docs.rs/flo_curves/"
+readme          = "README.md"
+edition         = "2018"
+
+keywords        = ["bezier", "geometry", "graphics"]
+categories      = ["algorithms","rendering"]
+
+[dependencies]
+itertools   = "0.8"
+roots       = "0.0.4"
+smallvec    = "0.6"

@@ -1,0 +1,11 @@
+[package]
+name = "ruzz_p"
+version = "0.1.0"
+authors = ["AttilaOrs <kilyen.attila.ors@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+time = "0.1"
+fnv = "1.0.5"
+timer = "0.1.6"
+chrono = "0.4.0"

@@ -1,0 +1,19 @@
+[package]
+name = "tictoc"
+version = "0.1.0"
+authors = ["Eivind Fonn <evfonn@gmail.com>"]
+
+[lib]
+name = "astro"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tictoc"
+path = "src/main.rs"
+
+[dependencies]
+curl = "0.4"
+regex = "0.1"
+time = "0.1"
+xdg = "2.0"
+yaml-rust = "0.3"

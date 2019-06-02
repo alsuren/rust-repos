@@ -1,0 +1,16 @@
+[package]
+name = "rusty_goban"
+version = "0.1.2"
+authors = ["Samuel Batissou <samuelbatissou@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "rusty_goban"
+crate_type = ["cdylib"]
+
+[dependencies]
+goban = {git = "https://gitlab.com/SamBlaise/goban.git", branch = "dev"}
+
+[dependencies.pyo3]
+version = "0.6.0-alpha.1"
+features = ["extension-module"]

@@ -1,0 +1,11 @@
+[package]
+name = "honifuwa-rust"
+version = "0.1.0"
+authors = ["Kazumi Moriya <kuroclef@gmail.com>"]
+
+[dependencies]
+rand = "*"
+
+[[bin]]
+name = "honifuwa"
+path = "honifuwa.rs"

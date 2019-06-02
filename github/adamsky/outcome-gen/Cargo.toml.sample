@@ -1,0 +1,9 @@
+[package]
+name = "outcome-gen"
+version = "0.1.0"
+authors = ["Adam Adamsky <adamadamsky@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+#outcome = { git = "https://github.com/adamsky/outcome"}
+outcome = { path = "../outcome" }

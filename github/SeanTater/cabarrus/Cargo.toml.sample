@@ -1,0 +1,69 @@
+[package]
+name = "cabarrus"
+version = "0.1.0"
+authors = ["Sean Gallagher <stgallag@gmail.com>"]
+license = "MIT"
+
+[lib]
+
+#
+# Binaries not about CL
+#
+[[bin]]
+name = "cb-token-count"
+#description = "Count the number of unicode tokens in the text"
+
+[[bin]]
+name = "cb-sum-matrices"
+#description = "Sum large matrices using MPI, for speed"
+
+#
+# Metrics
+#
+[[bin]]
+name = "cb-metrics"
+#description = "Measure the quality of a word embedding"
+
+#
+# Examples
+#
+[[bin]]
+name = "cb-cooccur"
+#description = "Find windowed word cooccurances"
+
+[[bin]]
+name = "cb-approx-cooccur"
+#description = "Find approximate windowed word cooccurances"
+
+
+[dependencies]
+# Warc parser
+nom = "*"
+# Argument parser
+clap = "~2.21.1"
+# Numpy like arrays
+ndarray = {version="*", features=["serde"]}
+ndarray-linalg = "*"
+ndarray-rand = "*"
+rand = "*"
+linxal = "*"
+openblas-src = "*"
+# Serialization and Deserialization
+byteorder = "*"
+regex = "*"
+# Logging
+log = "*"
+env_logger = "*"
+# Faster hashes
+farmhash = "1.1.5"
+hash_hasher = "0.2.0"
+# Better tokenization (than whitespace)
+unicode-segmentation = "*"
+# reading matrices without consuming memory
+memmap = "*"
+# Threading
+rayon = "*"
+
+[features]
+default = []
+static = ["openblas-src/static"]

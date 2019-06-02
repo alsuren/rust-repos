@@ -1,0 +1,22 @@
+[package]
+name = "dcpu16_assembler"
+version = "0.1.0"
+authors = ["Jayshua Nelson <me@jayshuanelson.com>"]
+build = "build.rs"
+
+[dependencies]
+argparse = "0.2.1"
+
+[features]
+print-ast = []
+
+[build-dependencies]
+peg = "0.5.4"
+
+[lib]
+name = "dcpu16_assembler"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dasm"
+path = "src/cli.rs"

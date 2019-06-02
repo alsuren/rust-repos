@@ -1,0 +1,12 @@
+[package]
+name = "concur"
+version = "0.1.4"
+authors = ["Garrett Squire <garrettsquire@gmail.com>"]
+description = "A parallel repeat function for running shell commands"
+repository = "https://github.com/gsquire/concur"
+keywords = ["parallel", "shell"]
+license = "MIT"
+
+[dependencies]
+docopt = "0.7"
+rustc-serialize = "0.3"

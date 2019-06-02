@@ -1,0 +1,57 @@
+[package]
+name = "neuralops_cuda"
+version = "0.1.0"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[lib]
+name = "neuralops_cuda"
+path = "src/lib.rs"
+
+[[bin]]
+name = "train-mnist-cpu"
+path = "tools/train-mnist-cpu.rs"
+
+[[bin]]
+name = "train-mnist-new"
+path = "tools/train-mnist-new.rs"
+
+[[bin]]
+name = "train-cifar10-sgd"
+path = "tools/train-cifar10-sgd.rs"
+
+[[bin]]
+name = "train-cifar10-adagrad"
+path = "tools/train-cifar10-adagrad.rs"
+
+[[bin]]
+name = "train-cifar10-adam"
+path = "tools/train-cifar10-adam.rs"
+
+[[bin]]
+name = "train-imagenet-sgd"
+path = "tools/train-imagenet-sgd.rs"
+
+[[bin]]
+name = "shared-train-imagenet-sgd"
+path = "tools/shared-train-imagenet-sgd.rs"
+
+#[[bin]]
+#name = "train"
+#path = "tools/train.rs"
+
+[dependencies]
+neuralops_cuda_kernels = { path = "kernels" }
+libc = "^0.2"
+rand = "*"
+byteorder = "*"
+cuda = "^0.1"
+cuda_dnn = "^0.1"
+densearray = "^0.1"
+devicemem_cuda = { path = "../libdevicemem_cuda" }
+float = "^0.1"
+iter_utils = "^0.1"
+neuralops = { path = "../neuralops" }
+operator = { path = "../liboperator" }
+rng = "^0.1"
+sharedmem = "^0.1"
+#typemap-alt = { path = "../rust-typemap" }

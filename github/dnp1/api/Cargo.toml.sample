@@ -1,0 +1,46 @@
+[package]
+name = "api"
+version = "0.1.0"
+authors = ["Danilo Pereira <dnp1@users.noreply.github.com>"]
+
+[dependencies]
+#hyper = "0.10"
+src-derive = { path = "src-derive" }
+
+iron="^0.6"
+router="^0.6"
+params="^0.8"
+bodyparser="^0.8"
+#modifier="0.1"
+
+postgres= { version = "*", features = ["with-uuid", "with-chrono"] }
+r2d2="^0.8"
+r2d2_postgres="^0.14"
+jsonwebtoken="3"
+serde = "1.0.19"
+serde_derive="*"
+uuid = { version = " ^0.5", features = ["serde", "v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+captcha = "*"
+postgres-inet = "0.1"
+
+[dependencies.iron-cors]
+git = "https://github.com/dnp1/iron-cors-rs"
+branch = 'iron-0.6'
+
+[dependencies.iron-json-response-modifier]
+git = "https://github.com/dnp1/iron-json-response-modifier"
+branch = "master"
+
+
+[dependencies.iron-simple]
+#git = "https://github.com/dnp1/iron-simple-handler"
+path = "/home/danilo/Code/Rust/iron-simple-handler/iron-simple"
+version = "*"
+#branch = "master"
+
+[dependencies.iron-simple-derive]
+#git = "https://github.com/dnp1/iron-simple-handler"
+path = "/home/danilo/Code/Rust/iron-simple-handler/iron-simple-derive"
+version = "*"
+#branch = "master"

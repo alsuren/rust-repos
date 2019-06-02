@@ -1,0 +1,30 @@
+[package]
+name = "memfd"
+version = "0.2.1-alpha.0"
+authors = [ "Luca Bruno <lucab@debian.org>" ]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/lucab/memfd-rs"
+documentation = "https://docs.rs/memfd"
+description = "A pure-Rust library to work with Linux memfd and sealing"
+keywords = ["Linux", "memfd", "memfd_create", "seal"]
+exclude = [
+".gitignore",
+".travis.yml",
+]
+
+[dependencies]
+# Private dependencies.
+libc = "0.2"
+# Public dependencies, exposed through library API.
+either = "1.5"
+errno = "0.2"
+error-chain = {version = "0.12", default-features = false}
+
+[package.metadata.release]
+sign-commit = true
+upload-doc = false
+disable-publish = true
+disable-push = true
+pre-release-commit-message = "cargo: memfd release {{version}}"
+pro-release-commit-message = "cargo: version bump to {{version}}"
+tag-message = "memfd {{version}}"

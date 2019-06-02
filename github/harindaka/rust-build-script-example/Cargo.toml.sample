@@ -1,0 +1,11 @@
+[package]
+name = "rust-build-script-example"
+version = "0.1.0"
+authors = ["harindaka <harindaka@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+build_script_file_gen = "0.6.0"
+
+[build-dependencies]
+build_script_file_gen = "0.6.0"

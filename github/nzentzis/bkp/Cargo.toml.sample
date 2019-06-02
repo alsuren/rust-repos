@@ -1,0 +1,31 @@
+[package]
+name = "bkp"
+version = "0.1.0"
+authors = ["Noah Zentzis <nzentzis@gmail.com>"]
+
+[dependencies]
+tokio-proto = "0.1"
+tokio-core = "0.1"
+futures = "^0.1.14"
+capnp = "0.8"
+native-tls = "0.1"
+clap = "2.24"
+term-painter = "0.2"
+pest = "0.4"
+url = "1.5"
+rpassword = "0.4.0"
+untrusted = "0.5"
+byteorder = "1.0.0"
+
+hostname = "0.1"
+interfaces = "0.0.2"
+
+owning_ref = "0.3"
+ssh2 = "0.3.1"
+
+[dependencies.ring]
+version = "0.11.0"
+features = ["rsa_signing"]
+
+[build-dependencies]
+capnpc = "0.8"

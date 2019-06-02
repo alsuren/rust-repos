@@ -1,0 +1,20 @@
+[workspace]
+
+members = [
+  "cpu6502",
+  "rs-nes",
+  "rs-nes-web",
+  "rs-nes-macros",
+]
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = true
+debug-assertions = false
+
+[profile.bench]
+opt-level = 3
+lto = true
+debug = false
+debug-assertions = false

@@ -1,0 +1,55 @@
+[package]
+name = "rs_news"
+version = "0.1.0"
+authors = ["Joakim Frostegård <joakim.frostegard@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+askama = "*"
+chrono = { version = "*", features = ["serde"] }
+clap = "*"
+cookie = "0.9.1"
+fern = "*"
+flate2 = "*"
+isatty = "*"
+log = "0.4.1"
+num-integer = "*"
+postgres = { version = "*", features = ["with-chrono"]}
+postgres-inet = "*"
+postgres_macros = { git = "https://github.com/greatest-ape/rust-postgres-macros", branch = "postgres-9.6.8" }
+r2d2 = "*"
+r2d2_postgres = "*"
+rand = "*"
+regex = "*"
+reqwest = "*"
+rocket = "*"
+rocket_codegen = "*"
+rocket_contrib = { version = "*", default-features = false, features = ["tera_templates"]}
+rust-crypto = "*"
+rustc-serialize = "*"
+serde = "1.0"
+serde_derive = "1.0"
+tera = "*"
+time = "*"
+toml-config = "*"
+url = "*"
+yansi = "*"
+
+[build-dependencies]
+askama = "*"
+
+[lib]
+name = "news"
+path = "src/lib.rs"
+
+# For profiling, set debug to true
+[profile.release]
+debug = true
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[[bin]]
+name = "cli"
+path = "src/bin/cli.rs"

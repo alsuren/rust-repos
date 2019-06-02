@@ -1,0 +1,19 @@
+[package]
+name = "mpm"
+version = "0.1.0"
+authors = ["Alberto Corona <ac@albertocorona.com>"]
+
+[dependencies]
+rpf = "0.1"
+pgetopts = "0.1"
+clap = { version = "2", features = ["yaml"] }
+log = "*"
+ansi_term = "*"
+
+[dependencies.libpm]
+git = "https://github.com/0X1A/libpm"
+
+[[bin]]
+name = "mpm"
+path = "src/mpm.rs"
+test = false

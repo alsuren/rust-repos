@@ -1,0 +1,8 @@
+[package]
+name = "rthue"
+version = "0.1.0"
+authors = ["Nathan Withers <nathan@thewithz.tech>"]
+edition = "2018"
+
+[dependencies]
+clap = "~2.32"

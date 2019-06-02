@@ -1,0 +1,16 @@
+[package]
+name = "rustrogue"
+version = "0.1.0"
+authors = ["Steven 'Steve' Kendall <skendall@neverware.com>"]
+edition = "2018"
+# default-run feature coming soon to rust, now in nightly only
+#default-run = "rustrogue"
+
+[[bin]]
+name = "mappenstance"
+path = "src/mappenstance.rs"
+
+[dependencies]
+sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2", rev = "48a4a8e5c51faf2b8c7570b87366bbea60d435e3", features = ["ttf", "image", "gfx"] }
+rand = "0.6.5"
+gl = { git = "https://github.com/bjz/gl-rs" }

@@ -1,0 +1,28 @@
+[package]
+name = "nearby"
+version = "0.1.4"
+authors = ["Flavio <flavio@wisespace.io>"]
+license = "MIT OR Apache-2.0"
+
+description = "Scans all nearby wifi networks and the devices connected to each network"
+keywords = ["wireless", "wifi", "dot11", "netjson"]
+documentation = "https://github.com/wisespace-io/nearby"
+repository = "https://github.com/wisespace-io/nearby"
+readme = "README.md"
+
+[dependencies]
+clap = "2.32"
+pcap = "0.7.0"
+radiotap = "1"
+bytes = "0.4"
+byteorder = "1"
+console = "0.6.2"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+futures = "0.1"
+env_logger = "0.5"
+actix = "0.7"
+actix-web = "0.7"
+reqwest = "0.9"
+error-chain = "0.12"

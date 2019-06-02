@@ -1,0 +1,15 @@
+[package]
+name = "blewm"
+version = "0.1.0"
+authors = ["Keenan Lidral-Porter <klp2012@gmail.com>"]
+
+[dependencies]
+KLPhash = "0.1.3"
+
+[lib]
+name = "mylib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mybin"
+path = "src/bin.rs"

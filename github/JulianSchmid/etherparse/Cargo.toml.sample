@@ -1,0 +1,30 @@
+[package]
+name = "etherparse"
+version = "0.8.2"
+authors = ["Julian Schmid <info@julianschmid.name>"]
+edition = "2018"
+repository = "https://github.com/JulianSchmid/etherparse"
+description = "A library for parsing & writing a bunch of packet based protocols (EthernetII, IPv4, IPv6, UDP, TCP ...)."
+categories = ["network-programming", "parser-implementations"]
+keywords = ["ipv4", "ipv6", "vlan", "udp", "tcp"]
+license = "BSD-3-Clause"
+readme = "README.md"
+exclude = [
+    ".gitignore",
+    ".travis.yml",
+    ".gitlab-ci.yml",
+    ".travis/*"
+]
+
+[dependencies]
+byteorder = "1.3.1"
+
+[dev-dependencies]
+assert_matches = "1.3.0"
+proptest = "0.9.3"
+
+[badges]
+travis-ci = { repository = "JulianSchmid/etherparse", branch = "master" }
+codecov = { repository = "JulianSchmid/etherparse", branch = "master", service = "github" }
+gitlab = { repository = "julian.schmid/etherparse", branch = "master" }
+appveyor = { repository = "JulianSchmid/etherparse", branch = "master", service = "github" }

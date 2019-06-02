@@ -1,0 +1,5 @@
+[workspace]
+members = ["core"]
+
+[Profile.release]
+debug = true

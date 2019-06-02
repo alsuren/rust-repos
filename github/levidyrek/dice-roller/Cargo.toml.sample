@@ -1,0 +1,9 @@
+[package]
+name = "dice_roller"
+version = "0.1.0"
+authors = ["Levi Payne <levi.dyrek@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+assert_cmd = "0.11.1"

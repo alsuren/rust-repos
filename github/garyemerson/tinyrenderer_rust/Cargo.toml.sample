@@ -1,0 +1,11 @@
+[package]
+name = "tinyrenderer_rust"
+version = "0.1.0"
+authors = ["garyemerson <gmohammadioun@gmail.com>"]
+
+[dependencies]
+image = "0.18.0"
+regex = "0.2.5"
+rand = "0.4"
+nalgebra = "0.14.0"
+cgmath = "0.16.0"

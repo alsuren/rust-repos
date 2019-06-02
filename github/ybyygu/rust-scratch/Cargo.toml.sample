@@ -1,0 +1,20 @@
+# cargo
+
+# [[file:~/Workspace/Programming/rust-scratch/rust.note::*cargo][cargo:1]]
+[package]
+name = "test1"
+version = "0.1.0"
+edition = "2018"
+authors = ["Wenping Guo <ybyygu@gmail.com>"]
+
+[dependencies]
+base64 = "*"
+clap = "*"
+pyo3 = ">=0.4"
+zip = "*"
+nom = "*"
+timeit = "*"
+petgraph = ">=0.4.13"
+approx = "*"
+nalgebra = "*"
+# cargo:1 ends here

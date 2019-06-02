@@ -1,0 +1,15 @@
+[package]
+name = "game"
+version = "0.1.0"
+authors = ["drago"]
+build = "build.rs"
+
+[dependencies]
+cgmath = "*"
+specs = "*"
+shred = "*"
+
+[dependencies.sdl2]
+version = "*"
+default-features = false
+features = ["image"]

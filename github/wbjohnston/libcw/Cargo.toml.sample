@@ -1,0 +1,23 @@
+[package]
+name         = "libcw"
+description  = "Core Wars runtime and parser"
+license      = "MIT"
+readme       = "README.md"
+version      = "0.1.1"
+authors      = ["Will Johnston"]
+repository   = "https://github.com/wbjohnston/libcw.git"
+homepage     = "https://github.com/wbjohnston/libcw.git"
+
+[[bin]]
+name = "runner"
+path = "src/bin/runner.rs"
+
+[lib]
+name = "libcw"
+path = "src/lib.rs"
+
+[dependencies]
+failure      = "0.1"
+nom = {version = "4.2", features=["verbose-errors"]}
+itertools = "0.8"
+rand = "0.6"

@@ -1,0 +1,15 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["Markus Baur <markusb@selfnet.de>"]
+
+[dependencies]
+rand = "*"
+rayon = "*"
+simd = "*"
+hwloc = "*"
+lazy_static = "*"
+cpuprofiler = "*"
+
+[profile.release]
+debug = true

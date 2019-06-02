@@ -1,0 +1,32 @@
+[package]
+name = "icepick"
+version = "0.0.1"
+authors = ["Felipe Sere <felipesere@gmail.com>",
+           "Uku Taht <uku.taht@gmail.com>",
+           "Carol Nichols <cnichols@thinkthroughmath.com>"]
+
+description = "A command-line fuzzy matcher based on Gary Bernheards selecta"
+homepage = "http://github.com/felipesere/icepick"
+repository = "http://github.com/felipesere/icepick"
+
+readme = "README.md"
+
+keywords = ["search", "command-line", "tool"]
+
+license = "MIT"
+
+[lib]
+name = "icepick"
+doctest = false
+test = true
+doc = false
+
+[dependencies]
+libc = "0.2.4"
+getopts = "0.2.14"
+
+[dependencies.ansi_term]
+git = "https://github.com/ogham/rust-ansi-term.git"
+
+[profile.release]
+opt-level = 3

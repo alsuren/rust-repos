@@ -1,0 +1,10 @@
+[package]
+
+name = "µas"
+version = "0.1.0"
+authors = ["Simon Génier <simon@webscale.money>"]
+
+[dependencies]
+
+bitflags = "^0.7"
+memmap = "^0.4"

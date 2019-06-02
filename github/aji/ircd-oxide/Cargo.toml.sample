@@ -1,0 +1,15 @@
+[package]
+name = "oxide"
+version = "0.0.1"
+authors = ["Alex Iadicicco <alex@ajitek.net>"]
+
+[dependencies]
+bitflags = "*"
+bytes = "0.4"
+futures = "0.1"
+log = "*"
+rand = "*"
+time = "*"
+tokio-core = "0.1"
+tokio-io = "0.1"
+toml = "*"

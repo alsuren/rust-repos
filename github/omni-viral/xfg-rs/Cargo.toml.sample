@@ -1,0 +1,43 @@
+[package]
+name = "xfg"
+version = "0.1.0"
+authors = ["omni-viral <scareaangel@gmail.com>"]
+description = "eXtensible FrameGraph for `gfx-hal`"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/omni-viral/xfg-rs"
+
+[features]
+vulkan = ["gfx-render/gfx-backend-vulkan"]
+metal = ["gfx-render/gfx-backend-metal"]
+profile = ["gfx-render/profile", "flame"]
+
+[dependencies]
+either = { version = "1.5", features = ["serde"] }
+gfx-hal = { version = "0.1", git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b" }
+gfx-chain = { version = "0.1.0", git = "https://github.com/omni-viral/gfx-chain", rev = "e6dfbd7" }
+log = "0.4"
+relevant = "0.1"
+smallvec = "0.4"
+flame = { version = "0.2", optional = true }
+
+[dev-dependencies]
+cgmath = "0.16"
+env_logger = "0.5"
+genmesh = "0.5.0"
+gfx-mesh = { version = "0.1.0", git = "https://github.com/omni-viral/gfx-mesh", rev = "d648774" }
+gfx-render = { version = "0.1.0", git = "https://github.com/gfx-rs/gfx-render", rev = "8e475a3" }
+gfx-memory = { version = "0.1.0", git = "https://github.com/gfx-rs/gfx-memory", rev = "4f6e410" }
+glsl-layout = { version = "0.2", features = ["cgmath"] }
+rusttype = { version = "0.5.0", features = ["gpu_cache"] }
+winit = "0.15"
+gfx-backend-empty = { version = "0.1", git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b" }
+conrod = "*"
+
+[target.'cfg(not(target_os = "macos"))'.dev-dependencies]
+gfx-backend-vulkan = { version = "0.1", git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b" }
+
+[target.'cfg(target_os = "macos")'.dev-dependencies]
+gfx-backend-metal = { version = "0.1", git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b" }
+
+[target.'cfg(windows)'.dev-dependencies]
+gfx-backend-dx12 = { version = "0.1", git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b" }

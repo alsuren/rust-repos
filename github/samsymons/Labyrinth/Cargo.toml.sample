@@ -1,0 +1,8 @@
+[package]
+name = "labyrinth"
+version = "1.0.0"
+authors = ["Sam Symons <sam@samsymons.com>"]
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"

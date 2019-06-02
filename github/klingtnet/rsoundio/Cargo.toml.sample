@@ -1,0 +1,21 @@
+[package]
+name = "rsoundio"
+version = "0.1.6"
+authors = ["Andreas Linz <klingt.net@gmail.com>"]
+description = "libsoundio bindings for Rust"
+keywords = ["audio", "stream", "recording"]
+documentation = "https://docs.klingt.net/rustdoc/rsoundio"
+repository = "https://github.com/klingtnet/rsoundio"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+links = "soundio"
+build = "build.rs"
+
+[dependencies]
+
+[build-dependencies]
+pkg-config = "0.3.7"
+
+[dev-dependencies]
+rci = "0.1.*"
+rb = "^0.2"

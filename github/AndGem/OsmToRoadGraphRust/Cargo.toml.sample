@@ -1,0 +1,14 @@
+[package]
+name = "osmtoroadgraph"
+version = "0.0.1"
+
+
+[dependencies]
+osmpbfreader = "0.12.0"
+yaml-rust = "0.4"
+clap = {version = "~2.32", features = ["yaml"]}
+lazy_static = "1.2.0"
+
+
+[build-dependencies]
+protobuf-codegen-pure = "2"

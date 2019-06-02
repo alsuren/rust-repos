@@ -1,0 +1,10 @@
+[package]
+name = "ai"
+version = "0.1.0"
+authors = ["ntrupin <ntrupin@ntrupin.com>"]
+
+[dependencies]
+whoami = "0.2.2"
+rand = "0.5.5"
+reqwest = "0.9.4"
+scraper = "0.8.1"

@@ -1,0 +1,13 @@
+[package]
+name = "darkbridge"
+version = "0.1.0"
+authors = ["Jake Probst <jake.probst@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+"byteorder" = "1"
+"mio" = "0.6"
+"nix" = "0.13.0"
+"libc" = "*"
+"regex" = "1"
+"hex" = "0.3.1"

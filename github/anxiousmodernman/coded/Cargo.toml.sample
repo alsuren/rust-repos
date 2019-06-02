@@ -1,0 +1,30 @@
+[package]
+name = "coded"
+version = "0.1.0"
+authors = [
+    "Coleman McFarland <coleman.mcfarland@gmail.com>",
+    "Jeff May <jeff.n.may@gmail.com>"
+]
+
+[lib]
+name = "coded"
+path = "src/lib.rs"
+
+[[bin]]
+name = "coded"
+path = "src/main.rs"
+
+[dependencies]
+rocket = "0.3.3"
+rocket_codegen = "0.3.3"
+rocksdb = "0.8.1"
+serde_derive = "*"
+bincode = "*"
+serde = "*"
+toml = "0.4"
+walkdir = "2"
+maud = { version = "*", features = ["rocket"] }
+maud_macros = "*"
+iso8601 = "0.2.0"
+chrono = "0.4"
+tempdir = "*"

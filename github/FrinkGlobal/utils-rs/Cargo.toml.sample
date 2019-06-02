@@ -1,0 +1,26 @@
+[package]
+name = "fractal-utils"
+version = "0.3.4"
+authors = [
+    "Eric Remigino <eric@fractal.global>",
+    "Iban Eguia <iban@fractal.global>",
+]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/FractalGlobal/utils-rs"
+documentation = "https://docs.rs/fractal-utils/"
+description = """
+Utilities for working with Fractal Global Credits.
+"""
+keywords = ["fractal", "global", "credits", "utils"]
+
+[dependencies]
+rustc-serialize = "^0.3"
+rust-base58 = "0.0.4"
+
+[dev-dependencies]
+rand = "^0.3"
+
+[features]
+default = []
+json-types = []

@@ -1,0 +1,11 @@
+[package]
+name = "term-rs"
+version = "0.1.2"
+authors = ["cen5bin <cen5bin@163.com>"]
+license = "MIT OR Apache-2.0"
+description = "rust terminal dev tools"
+
+[dependencies]
+pancurses = "0.16"
+log = "0.3"
+log4rs = "0.7.0"

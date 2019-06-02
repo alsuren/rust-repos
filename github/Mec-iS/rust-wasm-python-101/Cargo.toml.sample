@@ -1,0 +1,12 @@
+[package]
+name = "rust-wasm-python-101"
+version = "0.1.0"
+authors = ["Mec-iS <tunedconsulting@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+rustc_version_runtime = "0.1.5"
+geo = "0.12.1"

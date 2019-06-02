@@ -1,0 +1,8 @@
+[package]
+name = "bender"
+version = "0.1.0"
+authors = ["Kilian Koeltzsch <me@kilian.io>"]
+
+[dependencies]
+clap = "2.5.1"
+regex = "0.1.71"

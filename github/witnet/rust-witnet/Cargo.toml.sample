@@ -1,0 +1,48 @@
+[package]
+name = "witnet"
+version = "0.2.1"
+authors = ["Witnet Foundation <info@witnet.foundation>"]
+publish = false
+repository = "witnet/witnet-rust"
+readme = "README.md"
+license-file = "LICENSE"
+keywords = ["witnet", "blockchain", "smart-contracts", "DON", "cryptocurrency", "crypto", "oracles", "protocol", "p2p", "rust"]
+description = "An in-progress open source implementation of the Witnet protocol written in Rust."
+edition = "2018"
+
+[workspace]
+members = ["config", "node", "crypto", "data_structures", "p2p", "storage", "wallet", "validations", "protected", "reputation", "net"]
+
+[badges]
+travis-ci = { repository = "https://github.com/witnet/witnet-rust", branch = "master" }
+
+[dependencies]
+bytecount = "0.5.1"
+directories = "*"
+ctrlc = "3.1.1"
+env_logger = "0.6.0"
+failure = "0.1.5"
+log = "0.4.6"
+serde_json = "1.0.39"
+structopt = "0.2.14"
+toml = "0.4.10"
+
+witnet_config = { path = "./config" }
+witnet_node = { path = "./node" }
+witnet_crypto = { path = "./crypto" }
+witnet_data_structures = { path = "./data_structures" }
+witnet_p2p = { path = "./p2p" }
+witnet_rad = { path = "./rad" }
+witnet_storage = { path = "./storage", features = ["rocksdb-backend"] }
+witnet_util = { path = "./util" }
+witnet_validations = { path = "./validations" }
+
+[dependencies.serde]
+features = ["derive"]
+version = "1.0.88"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3

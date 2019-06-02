@@ -1,0 +1,42 @@
+[package]
+name = "chibi-os-rust"
+version = "0.3.0"
+authors = ["Brandon Matthews <bmatthews@zipcar.com>"]
+build = "build.rs"
+
+[build-dependencies]
+gcc = "0.3"
+bindgen = "0.26.3"
+
+[dependencies]
+cty = "0.1"
+
+[dependencies.cortex-m-rt]
+features = ["abort-on-panic"]
+version = "0.3.0"
+
+[features]
+# The features you specify will control the particular port devince and chip
+#  flags that get passed during compilation of ChibiOS and during generation of
+#  the Rust bindings. You should only need to add a target CPU. Once that's
+#  done, the device and port will follow.
+
+# If you add a device here, you will also need to set up build.rs.
+
+# Set a default chip like so.
+#  N.B. that specifying --feature on the command line will *add* to the default,
+#  and not override it.
+#default = ["stm32f051x8"]
+
+stm32f051x8     = ["device_stm32f0xx"]
+stm32f407xg     = ["device_stm32f4xx"]
+lpc1788fbd208   = ["device_lpc177x_8x"]
+
+device_stm32f0xx    = ["port_thumbv6m"]
+device_stm32f4xx    = ["port_thumbv7m"]
+device_lpc177x_8x   = ["port_thumbv7m"]
+
+cortex_alternate_switch = ["port_thumbv6m"]
+
+port_thumbv6m = []
+port_thumbv7m = []

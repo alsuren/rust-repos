@@ -1,0 +1,15 @@
+[package]
+name = "tars"
+version = "0.1.3"
+license = "MIT"
+authors = ["Hugues Gaillard <hugues.gaillard@me.com>"]
+description = """
+A Rust library providing useful technical indicators.
+"""
+documentation = "https://docs.rs/tars/"
+homepage = "https://github.com/hugues31/tars"
+repository = "https://github.com/hugues31/tars"
+keywords = [ "ta", "analysis", "trading", "algorithm", "indicator" ]
+readme = "README.md"
+
+[dependencies]

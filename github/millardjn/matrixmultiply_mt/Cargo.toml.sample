@@ -1,0 +1,28 @@
+[package]
+name = "matrixmultiply_mt"
+version = "0.1.6"
+authors = ["bluss", "J. Millard"]
+
+license = "MIT/Apache-2.0"
+
+repository = "https://github.com/millardjn/matrixmultiply_mt"
+documentation = "https://bluss.github.io/matrixmultiply/"
+
+description = "Multithreaded Fork of bluss's matrixmultiply crate. General matrix multiplication of f32 and f64 matrices in Rust. Supports matrices with general strides. Uses a microkernel strategy, so that the implementation is easy to parallelize and optimize. `RUSTFLAGS=\"-C target-cpu=native\"` is your friend here."
+
+keywords = ["matrix", "sgemm", "dgemm"]
+
+[lib]
+bench = false
+
+[dependencies]
+rawpointer = "0.1"
+num_cpus = "1.6"
+threadpool = "1.3"
+lazy_static = "0.2"
+typenum = "1.9"
+typenum_loops = "0.3"
+generic-array = "0.8"
+num-traits = "0.1"
+parking_lot = "0.4"
+smallvec = "0.6"

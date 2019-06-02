@@ -1,0 +1,19 @@
+[package]
+name = "zr"
+version = "0.7.2"
+authors = ["Jonathan Dahan <hi@jonathan.is>"]
+description = "quick, simple zsh package manager"
+readme = "readme.md"
+keywords = ["zsh", "package", "manager", "cli"]
+license = "MPL-2.0"
+repository = "https://github.com/jedahan/zr.git"
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "jedahan/zr" }
+
+[dependencies]
+clap = "2.32.0"
+git2 = "0.8.0"
+libc = "0.2.51"
+url = "1.7.2"

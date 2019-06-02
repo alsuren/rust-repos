@@ -1,0 +1,12 @@
+[package]
+name = "plates"
+version = "0.1.0"
+authors = ["Christopher Chin <ctchin13@gmail.com>"]
+
+[dependencies]
+# indextree = { git = "https://github.com/Meptl/indextree" }
+indextree = { path = "/home/yutoo/indextree" }
+itertools = "*"
+mopa = "*"
+serde_yaml = "*"
+unindent = "*"

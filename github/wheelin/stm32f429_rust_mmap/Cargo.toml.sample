@@ -1,0 +1,17 @@
+[package]
+name = "stm32f429"
+version = "0.1.1"
+authors = ["wheelin <greg.emry@gmail.com>"]
+
+[dependencies]
+volatile-register = "0.2.0"
+cortex-m = "0.4.3"
+vcell = "0.1.0"
+bare-metal = "0.2.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.4.0"
+
+[features]
+rt = ["cortex-m-rt"]

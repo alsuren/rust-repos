@@ -1,0 +1,22 @@
+[package]
+name = "ezo_common"
+description = "Common functionality for EZO sensor chips from Atlas Scientific"
+version = "0.1.4"
+authors = ["Joaquín R <globojorro@gmail.com>"]
+keywords = []
+categories = []
+homepage = ""
+repository = "https://github.com/saibatizoku/ezo-common-rs"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+chrono = "0.4"
+failure = "0.1"
+i2cdev = "0.4"
+
+[features]
+default = []
+
+[profile.release]
+lto = true

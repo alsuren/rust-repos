@@ -1,0 +1,8 @@
+[package]
+name = "jk"
+version = "0.1.0"
+authors = ["yami <yamisoe@gmail.com>"]
+
+[dependencies]
+serde_json = "0.8"
+lazy_static = "0.1.*"

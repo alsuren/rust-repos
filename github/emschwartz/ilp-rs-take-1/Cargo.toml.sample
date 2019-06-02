@@ -1,0 +1,30 @@
+[package]
+name = "ilp"
+version = "0.1.0"
+authors = ["Evan Schwartz <evan.mark.schwartz@gmail.com>"]
+description = "ILP Client library for sending payments"
+license = "Apache-2.0"
+
+[dependencies]
+base64 = "0.6.0"
+byteorder = "1.0.0"
+chrono = "0.4.0"
+clap = "2.26.0"
+futures = "0.1.15"
+ilp-packet = "0.2.0"
+lazy_static = "0.2.8"
+quick-error = "1.2.1"
+rand = "0.3"
+regex = "0.2"
+reqwest = "0.7.3"
+ring = "0.12.1"
+serde = "1.0.12"
+serde_derive = "1.0.12"
+serde_json = "1.0.3"
+tokio-core = "0.1.9"
+uuid = { version = "0.4", features = ["serde", "v4"] }
+websocket = "0.20.2"
+
+[dependencies.ws]
+version = "0.7.3"
+features = ["ssl"]

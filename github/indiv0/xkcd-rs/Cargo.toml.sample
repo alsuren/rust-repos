@@ -1,0 +1,50 @@
+[package]
+name = "xkcd"
+version = "0.3.0"
+authors = ["Nikita Pekin <contact@nikitapek.in>"]
+description = "Interface for the XKCD web API"
+repository = "https://github.com/indiv0/xkcd-rs"
+documentation = "https://indiv0.github.io/xkcd-rs/xkcd/"
+readme = "README.md"
+keywords = [
+    "comic",
+    "xkcd",
+    "API",
+    "web",
+    "library",
+]
+license = "MIT/Apache-2.0"
+include = [
+    "CHANGELOG.md",
+    "Cargo.toml",
+    "LICENSE-MIT",
+    "LICENSE-APACHE",
+    "README.md",
+    "src/**/*.rs",
+]
+
+[dependencies]
+futures = "0.1.17"
+log = "0.3.8"
+rand = "0.3.18"
+serde = "1.0.21"
+serde_derive = "1.0.21"
+serde_json = "1.0.6"
+url = "1.6.0"
+url_serde = "0.2.0"
+
+[dependencies.clippy]
+optional = true
+version = "0.0"
+
+[dependencies.hyper]
+optional = true
+version = "0.11.7"
+
+[dev_dependencies]
+hyper-tls = "0.1.2"
+tokio-core = "0.1.10"
+
+[features]
+default = ["hyper"]
+nightly-testing = ["clippy"]

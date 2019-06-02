@@ -1,0 +1,23 @@
+[package]
+name = "teddy"
+version = "0.2.0"
+authors = ["Joe Neeman <joeneeman@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = "A SIMD-accelerated multistring searcher."
+repository = "https://github.com/jneem/teddy"
+documentation = "https://jneem.github.io/teddy/teddy/index.html"
+
+[dependencies]
+aho-corasick = "0.5.1"
+simd = { version = "0.1.0", optional = true }
+
+[dev-dependencies]
+quickcheck = "0.3.1"
+regex-syntax = "0.3"
+
+[features]
+simd-accel = ["simd"]
+asm = []
+
+[profile.bench]
+debug = true

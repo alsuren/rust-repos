@@ -1,0 +1,12 @@
+[package]
+name = "ragtime"
+version = "0.1.0"
+authors = ["myoshida <myoshida@aiming-inc.com>"]
+
+[dependencies]
+env_logger = "0.4.3"
+log = "0.3.7"
+byteorder = "1.0.0"
+
+[workspace]
+members = ["ragtime_sample1"]

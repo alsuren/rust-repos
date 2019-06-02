@@ -1,0 +1,13 @@
+[package]
+name = "self-ref"
+version = "0.1.2"
+authors = ["Georg Echterling <georg@echterling.de>"]
+
+description = "Allows the creation of self-referencing structs."
+readme = "README.md"
+license = "MIT"
+
+documentation = "http://mixthos.github.com/self-ref"
+repository = "https://github.com/Mixthos/self-ref"
+
+[dependencies]

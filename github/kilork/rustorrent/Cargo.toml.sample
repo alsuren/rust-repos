@@ -1,0 +1,6 @@
+[workspace]
+
+members = ["rustorrent"]
+
+[profile.release]
+lto = true

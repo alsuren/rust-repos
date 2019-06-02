@@ -1,0 +1,12 @@
+[package]
+name = "ps-rs"
+version = "0.1.0"
+authors = ["geropl <gero.posmyk-leinemann@typefox.io>"]
+edition = "2018"
+
+[dependencies]
+sysinfo = "0.3.14"
+shiplift = "0.4"
+tokio = "0.1.15"
+cgroups-fs = "1.0"
+signal-hook = "0.1.8"

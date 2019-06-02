@@ -1,0 +1,8 @@
+[package]
+name = "tcp_echo_server_tokio"
+version = "0.1.0"
+authors = ["luca <luca@quantum1net.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.1.19"

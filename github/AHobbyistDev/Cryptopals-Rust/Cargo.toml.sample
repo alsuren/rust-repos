@@ -1,0 +1,11 @@
+[package]
+name = "cryptopals"
+version = "0.1.0"
+authors = ["WeenAFK <weenafk@gmail.com>"]
+
+[dependencies]
+clippy = {version = "*", optional = true}
+rust-crypto = "*" # for AES-128 in ECB mode
+
+[features]
+default=[]

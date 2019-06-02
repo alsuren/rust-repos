@@ -1,0 +1,14 @@
+[package]
+authors = ["Mick Sayson <mick@sayson.com>"]
+name = "memeit3d"
+version = "0.1.0"
+
+[dependencies]
+error-chain = "0.10.0"
+gdk = "0.5.3"
+glib = "0.1.3"
+gtk-sys = "0.3.4"
+
+[dependencies.gtk]
+features = ["v3_16"]
+version = "0.1.3"

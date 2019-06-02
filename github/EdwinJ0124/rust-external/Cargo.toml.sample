@@ -1,0 +1,22 @@
+[dependencies]
+winapi = "0.2.8"
+kernel32-sys = "0.2.2"
+user32-sys = "0.2.0"
+number_traits = "0.1.1"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+lto = true
+opt-level = 3
+
+[package]
+name = "rust-extern"
+version = "0.1.0"
+authors = ["ME"]
+publish = false
+
+[[bin]]
+name = "main"
+path = "main.rs"

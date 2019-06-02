@@ -1,0 +1,21 @@
+[package]
+name = "shuffled-iter"
+version = "0.2.0"
+authors = ["Tim Neumann <mail@timnn.me>"]
+description = "Iterate through a set of values in random order without allocating them all"
+
+documentation = "https://timnn.github.io/shuffled-iter/"
+homepage = "https://github.com/TimNN/shuffled-iter"
+repository = "https://github.com/TimNN/shuffled-iter"
+
+readme = "README.md"
+
+keywords = ["data-structures", "random"]
+
+license = "MIT"
+
+[dependencies]
+rand = "0.3"
+
+[dev-dependencies]
+bit-vec = "0.4"

@@ -1,0 +1,12 @@
+[package]
+authors = ["Josh Leverette <coder543@gmail.com>"]
+name = "localsim"
+version = "0.1.0"
+
+[dependencies]
+bincode = "0.7.0"
+csv = "0.15.0"
+kiss3d = "0.8.0"
+nalgebra = "0.11.3"
+rustc-serialize = "0.3.19"
+stopwatch = "0.0.7"

@@ -1,0 +1,9 @@
+[package]
+name = "incidental_player"
+version = "0.1.0"
+authors = ["Maurycy Błaszczak <mgblaszczak@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rodio = "0.8.1"
+failure = "0.1.5"

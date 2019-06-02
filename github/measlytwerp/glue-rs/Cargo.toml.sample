@@ -1,0 +1,29 @@
+[package]
+name = "glue"
+description = "Glue is a parser combinator framework for parsing text based formats, it is easy to use and relatively fast too."
+version = "0.6.0"
+edition = "2018"
+authors = ["Measly Twerp <the@measlytwerp.live>"]
+keywords = ["parser", "parsing", "parser-combinators"]
+categories = ["parsing"]
+repository = "https://github.com/measlytwerp/glue-rs"
+homepage = "https://measlytwerp.github.io/glue-rs/"
+license = "MIT"
+readme = "README.md"
+include = [
+    "brand/glue-512.png",
+    "src/**/*.rs",
+    "Cargo.toml",
+    "README.md",
+]
+
+[badges]
+codecov = { repository = "measlytwerp/glue-rs" }
+maintenance = { status = "actively-developed" }
+travis-ci = { repository = "measlytwerp/glue-rs" }
+
+[dependencies]
+paste = "0.1"
+
+[build-dependencies]
+tera = "1.0.0-beta.6"

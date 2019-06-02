@@ -1,0 +1,13 @@
+[package]
+name = "cinnamon"
+version = "0.0.1"
+authors = ["Giuseppe Cannella"]
+description = "Chess Perft Generator"
+
+readme = "README.md"
+keywords = ["chess", "move", "generator"]
+license = "LGPL-3.0+"
+
+[dependencies]
+time = "0.1"
+lazy_static = "0.2.1"

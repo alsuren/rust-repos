@@ -1,0 +1,33 @@
+[package]
+name = "craft"
+version = "0.1.0"
+authors = ["Sebastian Humenda <shumenda@gmx.de>"]
+
+[lib]
+name = "craft"
+path = "src/lib.rs"
+
+[[bin]]
+name = "crafted"
+path = "src/main.rs"
+
+[dependencies]
+# the compression binaries are required to read from the native formats
+# on-the-fly
+bzip2 = "*"
+flate2 = "0.2"
+getopts = "0.2" # for the main program
+isolang = { "git" = "https://github.com/humenda/isolang-rs" }
+json = "*" # used for the pandoc filter
+htmlstream = "*"
+log = "0.3.6"
+log4rs = { version = "0.7", features = ["threshold_filter"] }
+pandoc = "0.6.1" # strip formatting
+shellexpand = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7.0"
+tar = "0.4"
+textwrap = "0.4"
+xml-rs = "0.3"
+zip = "0.2"

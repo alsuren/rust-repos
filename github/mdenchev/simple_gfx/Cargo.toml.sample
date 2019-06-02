@@ -1,0 +1,15 @@
+[package]
+name = "simple-gfx"
+version = "0.1.0"
+authors = ["md <mdenchev@users.noreply.github.com>"]
+
+[dependencies]
+gfx = "0.17.1"
+gfx_window_glutin = "0.23"
+glutin = "0.15"
+gfx_core = "0.8"
+gfx_device_gl = "0.15"
+nalgebra = "0.15"
+ncollide3d = "0.16"
+
+rand = "*"

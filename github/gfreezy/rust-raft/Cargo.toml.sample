@@ -1,0 +1,27 @@
+[package]
+name = "rust-raft"
+version = "0.1.0"
+authors = ["Alex.F <gfreezy@gmail.com>"]
+
+[dependencies]
+log = "*"
+log4rs = "*"
+hyper = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+time = "*"
+itertools = "*"
+docopt = "*"
+rand = "*"
+timer = "*"
+rocket = "*"
+rocket_codegen = "*"
+futures = "*"
+tokio-core = "*"
+error-chain = "*"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]

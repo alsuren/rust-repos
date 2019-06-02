@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "willow",
+    "examples/counter",
+    "examples/todomvc",
+]
+
+[replace]
+# "willow:0.1.0" = {path = "willow"}
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"

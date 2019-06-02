@@ -1,0 +1,11 @@
+[package]
+name = "bgt-backend"
+version = "0.1.0"
+authors = ["duly"]
+edition = "2018"
+
+[dependencies]
+bgt-core = { git = "https://github.com/daniel-duliga/bgt-core.git" }
+diesel = { version="1.3.3", features=["sqlite"] }
+dotenv = "0.13.0"
+serde = "1.0.85"

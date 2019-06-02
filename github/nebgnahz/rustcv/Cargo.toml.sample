@@ -1,0 +1,56 @@
+[package]
+name = "rustcv"
+version = "0.1.0"
+authors = ["Ben Zhang <benzh@cs.berkeley.edu>"]
+
+[dependencies]
+bitflags = "1.0"
+failure = "0.1"
+num-derive = "0.2"
+num-traits = "0.2"
+
+[dependencies.opencv-sys]
+path = "opencv-sys"
+default-features = false
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[features]
+cuda = ["opencv-sys/cuda"]
+
+[workspace]
+members = ["opencv-sys"]
+
+[[test]]
+name = "test_core"
+path = "tests/test_core.rs"
+
+[[test]]
+name = "test_cuda"
+path = "tests/test_cuda.rs"
+
+[[test]]
+name = "test_dnn"
+path = "tests/test_dnn.rs"
+
+[[test]]
+name = "test_features2d"
+path = "tests/test_features2d.rs"
+
+[[test]]
+name = "test_highgui"
+path = "tests/test_highgui.rs"
+harness = false
+
+[[test]]
+name = "test_imgcodes"
+path = "tests/test_imgcodecs.rs"
+
+[[test]]
+name = "test_imgproc"
+path = "tests/test_imgproc.rs"
+
+[[test]]
+name = "test_objdetect"
+path = "tests/test_objdetect.rs"

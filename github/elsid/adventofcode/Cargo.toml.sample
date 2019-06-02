@@ -1,0 +1,52 @@
+[package]
+name = "adventofcode"
+version = "0.1.0"
+authors = ["elsid <elsid.mail@gmail.com>"]
+
+[dependencies]
+regex = "*"
+itertools = "*"
+
+[[bin]]
+name = "1_1"
+path = "src/1_1.rs"
+
+[[bin]]
+name = "1_2"
+path = "src/1_2.rs"
+
+[[bin]]
+name = "5_1"
+path = "src/5_1.rs"
+
+[[bin]]
+name = "5_2"
+path = "src/5_2.rs"
+
+[[bin]]
+name = "6_1"
+path = "src/6_1.rs"
+
+[[bin]]
+name = "6_2"
+path = "src/6_2.rs"
+
+[[bin]]
+name = "7_1"
+path = "src/7_1.rs"
+
+[[bin]]
+name = "7_2"
+path = "src/7_2.rs"
+
+[[bin]]
+name = "10_1"
+path = "src/10_1.rs"
+
+[[bin]]
+name = "10_2"
+path = "src/10_2.rs"
+
+[[bin]]
+name = "14_1"
+path = "src/14_1.rs"

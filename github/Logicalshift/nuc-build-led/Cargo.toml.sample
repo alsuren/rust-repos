@@ -1,0 +1,13 @@
+[package]
+name = "nuc-build-led"
+version = "0.1.0"
+authors = ["Andrew Hunter <andrew@logicalshift.co.uk>"]
+license = "MIT"
+
+[dependencies]
+tokio       = "0.1"
+tokio-uds   = "0.1"
+tokio-core  = "0.1"
+serde       = "^1.0.0"
+serde_json  = "^1.0.0"
+futures     = "0.1"

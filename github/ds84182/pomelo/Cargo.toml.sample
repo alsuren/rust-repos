@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "kernel",
+    "guest",
+    "hle",
+    "guest_dynarmic",
+    "formats",
+    "cli"
+]

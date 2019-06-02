@@ -1,0 +1,12 @@
+[package]
+name = "subset"
+version = "0.1.1"
+authors = ["Bulat Shaimardanov"]
+edition = "2018"
+description = "A very simple subset of vector's items that is able to iterate forward and backward over selected items."
+keywords = ["Subset", "Vector"]
+categories = ["data-structures", "rust-patterns"]
+repository = "https://github.com/mrbus/subset"
+license = "MIT"
+
+[dependencies]

@@ -1,0 +1,33 @@
+[package]
+name = "naglfar"
+version = "0.1.6"
+authors = ["uint256_t <maekawatoshiki@github.com>"]
+
+[dependencies]
+app_units = "0.6.1"
+
+clap = "*"
+
+reqwest = "*"
+
+rand = "*"
+
+gtk= "*"
+gdk = "*"
+gdk-pixbuf = "*"
+cairo-rs = "*"
+pango = "*"
+pangocairo = "*"
+glib = "*"
+
+
+[profile.dev]
+codegen-units = 16
+
+[profile.release]
+codegen-units = 16
+opt-level = 3
+debug = false
+lto = true
+debug-assertions = false
+panic = "unwind"

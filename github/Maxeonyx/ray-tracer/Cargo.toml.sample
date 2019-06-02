@@ -1,0 +1,11 @@
+[package]
+name = "pstet"
+version = "0.1.0"
+authors = ["maxeonyx <maxeonyx@gmail.com>"]
+
+[dependencies]
+cgmath = "*"
+rayon = "*"
+glium = "*"
+rand = "*"
+image = "*"

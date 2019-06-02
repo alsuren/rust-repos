@@ -1,0 +1,13 @@
+[package]
+name = "note-cli"
+version = "0.1.0"
+authors = ["Giorgos Georgiou <giorgos.georgiou@outlook.com>"]
+
+[dependencies]
+log = "*"
+
+[dependencies.note]
+path = "note"
+
+[dependencies.yaml-store]
+path = "yaml-store"

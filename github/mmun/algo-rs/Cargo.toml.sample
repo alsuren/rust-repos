@@ -1,0 +1,10 @@
+[package]
+name = "algo"
+version = "1.0.0"
+authors = ["Martin Muñoz <im.mmun@gmail.com>"]
+
+[lib]
+doctest = false
+
+[dependencies]
+rand = "0.3"

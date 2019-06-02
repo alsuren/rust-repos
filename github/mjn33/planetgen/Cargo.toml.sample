@@ -1,0 +1,21 @@
+[package]
+name = "planetgen"
+version = "0.2.0"
+authors = ["Matthew Nicholls <matthew.nicholls95@hotmail.co.uk>"]
+build = "build.rs"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+bitflags = "0.9"
+cgmath = "0.14"
+sdl2 = "0.30"
+num = "0.1"
+png = "0.7"
+
+[dependencies.planetgen_engine]
+path = "planetgen_engine"
+
+[dependencies.rust-libnoise]
+git = "https://github.com/mjn33/rust-libnoise"

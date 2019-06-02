@@ -1,0 +1,11 @@
+[package]
+name = "mandelbrot"
+version = "0.1.0"
+authors = ["Cameron Derwin <camderwin@gmail.com>"]
+
+[dependencies]
+docopt = "0.7"
+image = "*"
+num = "0.1"
+rocket = "*"
+rocket_codegen = "*"

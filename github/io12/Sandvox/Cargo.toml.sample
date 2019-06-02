@@ -1,0 +1,25 @@
+[package]
+name = "sandvox"
+version = "0.2.1-alpha.0"
+authors = ["Benjamin Levy <blevy@protonmail.com>"]
+description = "The 3D voxel falling-sand game"
+license = "MIT"
+repository = "https://github.com/io12/Sandvox"
+readme = "README.md"
+categories = ["games"]
+keywords = ["voxel", "sandbox", "falling-sand", "3d", "game"]
+
+[badges]
+travis-ci = { repository = "io12/Sandvox", branch = "master" }
+
+[dependencies]
+glium = "0.23.0"
+conrod_core = "0.62.0"
+conrod_glium = "0.62.0"
+conrod_winit = "0.62.0"
+cgmath = "0.16.1"
+clamp = "0.1.0"
+image = "0.20.1"
+nd_iter = "0.0.4"
+rand = "0.6.4"
+rand_xorshift = "0.1.1"

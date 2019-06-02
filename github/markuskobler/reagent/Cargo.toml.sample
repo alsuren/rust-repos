@@ -1,0 +1,22 @@
+[project]
+name = "reagent"
+version = "0.1.0"
+
+[[bin]]
+name    = "reagent"
+test    = false
+doctest = false
+doc     = false
+
+[[test]]
+name = "tests"
+
+[dependencies]
+log = "0.3"
+
+[dependencies.mio]
+git = "https://github.com/carllerche/mio"
+branch = "master"
+
+[dev-dependencies]
+rustc-serialize = "0.3"

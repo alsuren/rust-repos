@@ -1,0 +1,12 @@
+[package]
+name = "ping-game"
+version = "0.1.0"
+
+[[bin]]
+name = "ping-game"
+
+[dependencies]
+sdl2 = "0.31.0"
+
+[features]
+default = ["sdl2/image", "sdl2/gfx"]

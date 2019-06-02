@@ -1,0 +1,48 @@
+[package]
+name = "zinc"
+version = "0.1.0"
+authors = ["Zinc Developers <zinc@github.com>"]
+build = "build.rs"
+
+[lib]
+name = "zinc"
+crate-type = ["lib"]
+
+[features]
+test = ["volatile_cell/replayer"]
+
+cpu_cortex-m0 = []
+cpu_cortex-m3 = []
+cpu_cortex-m4 = []
+cpu_cortex-m7 = []
+
+mcu_lpc11xx = ["cpu_cortex-m0"]
+mcu_lpc17xx = ["cpu_cortex-m3"]
+mcu_stm32f1 = ["cpu_cortex-m3"]
+mcu_stm32f4 = ["cpu_cortex-m4"]
+mcu_stm32f7 = ["cpu_cortex-m7"]
+mcu_stm32l1 = ["cpu_cortex-m3"]
+mcu_k20 = ["cpu_cortex-m4"]
+mcu_tiva_c = ["cpu_cortex-m4"]
+multitasking = ["cpu_cortex-m4"]
+
+[dependencies.ioreg]
+path = "./ioreg"
+
+[dependencies.volatile_cell]
+path = "./volatile_cell"
+
+[dependencies]
+rlibc = "*"
+
+[dev-dependencies]
+expectest = "*"
+
+[dev-dependencies.platformtree]
+path = "./platformtree"
+
+[dev-dependencies.macro_platformtree]
+path = "./macro_platformtree"
+
+[dev-dependencies.macro_zinc]
+path = "./macro_zinc"

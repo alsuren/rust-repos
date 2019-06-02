@@ -1,0 +1,25 @@
+[package]
+name = "dyne"
+version = "0.1.0"
+authors = ["Martin Hafskjold Thoresen <martinhath@gmail.com>"]
+
+[dependencies]
+hyper = "0.11"
+hyper-tls = "*"
+futures = "0.1"
+tokio-core = "0.1"
+get_if_addrs = "0.4"
+hostname = "0.1"
+lazy_static = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+askama = "*"
+
+[[bin]]
+name = "dyne"
+path = "src/client.rs"
+
+[[bin]]
+name = "dyned"
+path = "src/server.rs"

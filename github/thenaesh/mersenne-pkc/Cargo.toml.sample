@@ -1,0 +1,21 @@
+[package]
+name = "mersenne-pkc"
+version = "0.1.0"
+authors = ["thenaesh"]
+edition = "2018"
+
+[lib]
+name = "mersennepkc"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/bin/main.rs"
+doc = false
+
+[dependencies]
+rand = "0.6.4"
+rust-gmp = "0.5.0"
+crossbeam-channel = "0.3.8"
+plotlib = "0.3.0"
+rust-crypto = "0.2.36"

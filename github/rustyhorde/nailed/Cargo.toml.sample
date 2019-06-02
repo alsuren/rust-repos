@@ -1,0 +1,19 @@
+[package]
+authors = ["Jason Ozias <jason.ozias@gmail.com>"]
+name = "nailed"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.5.2"
+mio = "0.5.1"
+rand = "0.3.14"
+
+[dependencies.clippy]
+optional = true
+version = "~0.0.76"
+
+[dependencies.libnail]
+path = "../libnail"
+
+[features]
+lint = ["clippy"]

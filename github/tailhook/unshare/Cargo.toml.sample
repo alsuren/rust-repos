@@ -1,0 +1,26 @@
+[package]
+name = "unshare"
+description = """
+    The low-level interface for linux namespaces (containers)
+"""
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["linux", "container", "namespace", "docker", "process"]
+homepage = "https://github.com/tailhook/unshare"
+documentation = "https://docs.rs/unshare"
+categories = ["os::unix-apis"]
+version = "0.5.1"
+authors = ["paul@colomiets.name"]
+
+[dependencies]
+libc = "0.2.26"
+nix = "0.11.0"
+
+[dev-dependencies]
+argparse = "0.2.1"
+rand = "0.4.2"
+
+[lib]
+name = "unshare"
+path = "src/lib.rs"
+

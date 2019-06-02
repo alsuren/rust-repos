@@ -1,0 +1,51 @@
+[package]
+authors = ["Sebastian Humenda <shumenda@gmx.de>"]
+build = "build.rs"
+description = "Efficient, static lookup table for ISO 639 language codes"
+documentation = "https://docs.rs/isolang"
+keywords = [
+    "iso",
+    "language",
+    "language-code",
+    "autonym"
+]
+license = "Apache-1.0"
+name = "isolang"
+readme = "README.md"
+repository = "https://github.com/humenda/isolang-rs"
+version = "1.0.0"
+
+[build-dependencies]
+phf_codegen = "0.7.24"
+
+[dependencies]
+phf = "0.7.24"
+
+[dependencies.serde]
+optional = true
+version = "1.0"
+
+[dependencies.diesel]
+optional = true
+version = "0.99.0"
+features = ["postgres"]
+
+[features]
+default = ["english_names"]
+english_names = []
+local_names = []
+serde_serialize = [
+    "serde",
+]
+diesel_sql = [
+    "diesel",
+]
+
+[dev-dependencies]
+serde_json = "1.0"
+diesel_derives = "0.99.0"
+diesel_migrations = "0.99.0"
+
+[dev-dependencies.diesel]
+version = "0.99.0"
+features = ["postgres"]

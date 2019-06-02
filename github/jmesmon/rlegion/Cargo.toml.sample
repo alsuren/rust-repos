@@ -1,0 +1,11 @@
+[package]
+name = "rlegion"
+version = "0.1.0"
+authors = ["Cody P Schafer <dev@codyps.com>"]
+include = ["Cargo.toml", "**/*.rs"]
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+sha2 = "*"
+serde_json = "*"

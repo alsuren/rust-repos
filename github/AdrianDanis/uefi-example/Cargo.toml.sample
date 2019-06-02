@@ -1,0 +1,13 @@
+[package]
+name = "uefi-example"
+version = "0.1.0"
+authors = ["Adrian Danis <rambobones@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+rlibc = "1.0.0"
+uefi = { git = "https://github.com/AdrianDanis/uefi-rs", branch = "memorymap" }
+fencedvar = { path = "fencedvar" }
+
+[profile.release]
+lto = true

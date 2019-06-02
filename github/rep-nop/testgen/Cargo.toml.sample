@@ -1,0 +1,17 @@
+[package]
+name = "testgen"
+version = "0.1.0"
+authors = ["repnop <repnop@outlook.com>"]
+description = "A proc macro crate to generate a variety of test functions."
+repository = "https://github.com/rep-nop/testgen"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["test", "testing", "code_gen"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "0.15.21", features = ["full"] }
+quote = "0.6.10"
+proc-macro2 = "0.4.24" 

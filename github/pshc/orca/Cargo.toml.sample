@@ -1,0 +1,10 @@
+[package]
+name = "narf"
+version = "0.1.0"
+authors = ["Paul Collier <paul@paulcollier.ca>"]
+
+[dependencies]
+freetype-rs = "*"
+glium = "*"
+image = "*"
+log = "*"

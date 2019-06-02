@@ -1,0 +1,17 @@
+[dependencies]
+error-chain = "0.5"
+
+[package]
+authors = ["Tyler Wolf Leonhardt <tyler.wolf.leonhardt@gmail.com>"]
+description = "A simple lisp interpreter."
+exclude = [
+    ".gitignore",
+    "build.gradle",
+    "gradle",
+    "gradlew",
+    "gradlew.bat",
+    "README"
+]
+license = "MIT"
+name = "simplisp"
+version = "0.4.0"

@@ -1,0 +1,18 @@
+[package]
+name = "yog"
+version = "0.1.0"
+authors = ["yujianxin <yujianxin@szxhinfo.com>"]
+[dependencies]
+
+nickel = "*"
+
+rustc-serialize = "0.3.16"
+
+[dependencies.markdown]
+git = "https://github.com/johannhof/markdown.rs.git"
+
+
+[dependencies.mysql]
+mysql = "*"
+default-features = false
+features = ["socket"]

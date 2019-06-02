@@ -1,0 +1,8 @@
+[package]
+name = "fizz-buzz-x-backend-x-json-x-rust-x-iron"
+version = "0.1.0"
+authors = ["Oliver Forral <intrepion@gmail.com>"]
+
+[dependencies]
+iron = "0.4.0"
+iron-test = "0.4.0"

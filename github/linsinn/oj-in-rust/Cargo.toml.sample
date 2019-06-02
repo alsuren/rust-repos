@@ -1,0 +1,10 @@
+[package]
+name = "oj-in-rust"
+version = "0.1.0"
+authors = ["Sinn <linsinn@outlook.com>"]
+
+[[bin]]
+name = "oj-in-rust"
+path = "src/HackerRank/Counting Valleys.rs"
+
+[dependencies]

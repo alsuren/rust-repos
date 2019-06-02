@@ -1,0 +1,15 @@
+[package]
+name = "twitch_chat_parser"
+version = "0.1.0"
+authors = ["temp1011 <temp1011github@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+irc = "0.13.6"
+serde="1.0.90"
+serde_derive="1.0.90"
+serde_json="1.0.39"
+serde_with_macros = "1.0.1"
+
+[profile.release]
+lto=true

@@ -1,0 +1,18 @@
+[package]
+name = "charon"
+version = "0.1.0"
+authors = ["abhijeet bhagat"]
+
+[[bin]]
+name = "main"
+path = "src/driver/main.rs"
+
+[dependencies.charon_driver]
+path = "src/libcharon_driver"
+test = true
+
+[dependencies.syntax]
+path = "src/libsyntax"
+
+[dependencies.trans]
+path = "src/libtrans"

@@ -1,0 +1,9 @@
+[package]
+name = "Psychika"
+version = "0.1.0"
+authors = ["Henrique José Neves, henriquejtneves@gmail.com"]
+
+[dependencies]
+nalgebra = "0.16"
+gnuplot = "0.0.26"
+piston_window = "0.70.0"

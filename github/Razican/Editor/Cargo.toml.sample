@@ -1,0 +1,36 @@
+[package]
+name = "editor"
+version = "0.0.1-dev"
+authors = ["Razican <razican@protonmail.ch>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/Razican/Editor"
+description = """
+Editor being implemented in pure Rust for learning.
+"""
+keywords = ["editor", "learning"]
+
+
+[dependencies]
+piston_window = "^0.51"
+glutin = "^0.6"
+fps_counter = "^0.2"
+time = "^0.1"
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+panic = 'unwind'
+
+# The release profile, used for `cargo build --release`.
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+panic = 'unwind'

@@ -1,0 +1,21 @@
+[package]
+name = "apacheta"
+version = "0.1.0"
+authors = ["Samir Noir <samir@noir.im>"]
+edition = "2018"
+
+[dependencies]
+gpx = "0.4.1"
+tera = "0.11.9"
+serde = "1.0.70"
+serde_derive = "1.0.70"
+toml = "0.4.6"
+chrono = { version = "0.4.5", features = ["serde"] }
+simplelog = "^0.5.0"
+log = "0.4"
+image = "0.20.1"
+rexiv2 = "0.7.0"
+gexiv2-sys = "1.0.0"
+reqwest = "0.9.9"
+crossbeam-channel = "0.3.8"
+regex = "1"

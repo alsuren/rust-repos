@@ -1,0 +1,13 @@
+[package]
+name = "desk"
+version = "0.0.1"
+authors = ["Brecht Savelkoul <brecht.savelkoul@gmail.com>"]
+description = "Basic in-memory key-value store"
+license = "MIT"
+
+[lib]
+name = "desk"
+path = "src/desk.rs"
+
+[dependencies]
+shelf = "0.2"

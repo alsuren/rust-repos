@@ -1,0 +1,16 @@
+[package]
+name = "breakout-rust"
+version = "0.1.0"
+authors = ["Luxed <devildead13@gmail.com>"]
+
+[dependencies]
+glfw="*"
+gl="*"
+cgmath="*"
+image="*"
+rusttype="*"
+tobj="*"
+rand="*"
+num="*"
+
+audio_master = { path = "./audio_master" }

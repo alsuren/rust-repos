@@ -1,0 +1,33 @@
+[package]
+name = "drakonid"
+version = "0.1.0"
+authors = ["Arkan <arkan@drakon.io>"]
+publish = false
+
+[dependencies]
+chrono = "0.4"
+config = "0.8"
+clap = "2.31"
+hyper = "0.11" # Update this in lockstep with reqwest
+log = "0.4"
+fern = "0.5"
+fuzzy_match = "0.1"
+lazy_static = "1.0"
+mashup = "0.1"
+parking_lot = { version = "0.5", features = [ "nightly" ] }
+rand = "0.4"
+regex = "1.0"
+reqwest = "0.8"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+serenity = { version = "0.5", features = [
+    "builder", "cache", "client", "framework", "standard_framework", "gateway", "http", "model", "utils"
+]}
+threadpool = "1.7"
+typemap = "0.3"
+url = "1.7"
+url_serde = "0.2"
+
+# TODO: Remove this once RLS + Clippy has stabilised (and has support in VSCode)
+clippy = { version = "*", optional = true }

@@ -1,0 +1,9 @@
+[package]
+name = "adventofcode-2016"
+version = "0.1.0"
+authors = ["Grégory OBANOS <gregory.obanos@gmail.com>"]
+
+[dependencies]
+regex = "*"
+lazy_static = "*"
+rust-crypto = "*"

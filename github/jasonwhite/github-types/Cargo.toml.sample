@@ -1,0 +1,21 @@
+[package]
+name = "github-types"
+version = "0.1.1"
+authors = ["Jason White <rust@jasonwhite.io>"]
+edition = "2018"
+description = """
+Type definitions for the GitHub API.
+"""
+documentation = "https://docs.rs/github-types"
+homepage = "https://github.com/jasonwhite/github-types"
+repository = "https://github.com/jasonwhite/github-types"
+readme = "README.md"
+keywords = ["github", "api"]
+categories = ["api-bindings"]
+license = "MIT"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+hex = "0.3"
+serde = { version = "1", features = ["derive"] }
+derive_more = "0.14"

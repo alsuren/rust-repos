@@ -1,0 +1,42 @@
+[package]
+name = "euler"
+version = "0.1.0"
+authors = ["SAWADA Tadashi <cesare@mayverse.jp>"]
+
+[[bin]]
+name = "problem_001"
+path = "src/problem_001.rs"
+
+[[bin]]
+name = "problem_002"
+path = "src/problem_002.rs"
+
+[[bin]]
+name = "problem_003_largest_prime_factor"
+path = "src/problem_003_largest_prime_factor.rs"
+
+[[bin]]
+name = "problem_004_largest_palindrome_product"
+path = "src/problem_004_largest_palindrome_product.rs"
+
+[[bin]]
+name = "problem_005_smallest_multiple"
+path = "src/problem_005_smallest_multiple.rs"
+
+[[bin]]
+name = "problem_006_sum_square_difference"
+path = "src/problem_006_sum_square_difference.rs"
+
+[[bin]]
+name = "problem_007_10001st_prime"
+path = "src/problem_007_10001st_prime.rs"
+
+[[bin]]
+name = "problem_008_largest_product"
+path = "src/problem_008_largest_product.rs"
+
+[[bin]]
+name = "problem_010_summation_of_primes"
+path = "src/problem_010_summation_of_primes.rs"
+
+[dependencies]

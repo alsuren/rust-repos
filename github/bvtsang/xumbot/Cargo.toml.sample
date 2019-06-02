@@ -1,0 +1,9 @@
+[package]
+name = "xumbot"
+version = "0.1.0"
+authors = ["Bryan Tsang <bvtsang@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+mammut = { git = "https://github.com/bvtsang/Mammut" }
+serde_json = "1.0"

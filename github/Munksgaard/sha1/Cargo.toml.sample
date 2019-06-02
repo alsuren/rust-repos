@@ -1,0 +1,8 @@
+[package]
+name = "sha1"
+version = "0.1.0"
+authors = ["Philip Munksgaard <pmunksgaard@gmail.com>"]
+
+[dependencies]
+byteorder = "1.1.0"
+base64 = { git = "https://github.com/Munksgaard/base64" }

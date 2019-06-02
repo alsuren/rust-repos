@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "cherenkov",
+    "prototty",
+    "native",
+    "glutin",
+    "unix",
+    "wasm",
+]
+
+[profile.release]
+lto = true

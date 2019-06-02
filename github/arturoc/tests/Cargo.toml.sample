@@ -1,0 +1,24 @@
+[package]
+name = "rinecs"
+version = "0.1.0"
+authors = ["arturo castro <arturo@openframeworks.cc>"]
+
+[features]
+unstable=[]
+bigint=["num"]
+stats_events=["seitan"]
+dynamic_systems=["libloading", "notify", "tempfile"]
+default=["dynamic_systems"]
+
+[dependencies]
+rayon = "*"
+boolinator = "*"
+num = { version = "*", optional = true }
+seitan = { git="ssh://bitbucket.com/arturoc/seitan-rs", optional = true }
+libloading = {version = "*", optional = true }
+notify = {version = "*", optional = true}
+tempfile = {version = "*", optional = true}
+# fnv = "*"
+fxhash = "*"
+smallvec="*"
+densevec="*"

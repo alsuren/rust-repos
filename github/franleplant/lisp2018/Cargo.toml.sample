@@ -1,0 +1,13 @@
+[package]
+name = "frd_lisp"
+version = "0.1.0"
+authors = ["Fran Guijarro <franleplant@gmail.com>"]
+
+[build-dependencies]
+lalrpop = "0.16.2"
+
+[dependencies]
+lalrpop-util = "0.16.2"
+regex = "0.2.1"
+log = "0.4.6"
+env_logger = "*"

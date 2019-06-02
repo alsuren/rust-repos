@@ -1,0 +1,11 @@
+[package]
+name = "simple-api-server"
+version = "0.1.0"
+authors = ["wismer <matthewhl@gmail.com>"]
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+iron = "0.2"
+hyper = "*"
+router = "*"

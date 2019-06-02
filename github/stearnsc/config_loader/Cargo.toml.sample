@@ -1,0 +1,15 @@
+[package]
+name = "config_loader"
+version = "0.1.0"
+authors = ["Colin Stearns <colin@tomasara.com>"]
+
+[dependencies]
+serde = "*"
+toml = "*"
+regex = "*"
+lazy_static = "*"
+error-chain = "*"
+itertools = "^0.7"
+
+[dev-dependencies]
+serde_derive = "*"

@@ -1,0 +1,51 @@
+[package]
+name = "lodestone_parser"
+version = "0.1.1"
+authors = ["Kyle Clemens <git@kyleclemens.com>"]
+
+edition = "2018"
+
+[features]
+default = ["logic", "with_serde"]
+
+logic = [
+  "cssparser",
+  "failure",
+  "lazy_static",
+  "scraper",
+  "with_serde",
+]
+with_serde = [
+  "serde",
+  "serde_derive",
+  "url_serde",
+]
+
+[dependencies]
+cssparser = { version = "0.25", optional = true }
+failure = { version = "0.1", optional = true }
+lazy_static = { version = "1", optional = true }
+scraper = { version = "0.10", optional = true }
+serde = { version = "1", optional = true }
+serde_derive = { version = "1", optional = true }
+url = "1"
+url_serde = { version = "0.2", optional = true }
+
+# with serde
+[target.'cfg(feature = "with_serde")'.dependencies.chrono]
+version = "0.4"
+features = ["serde"]
+
+[target.'cfg(feature = "with_serde")'.dependencies.ffxiv_types]
+version = "1"
+default-features = false
+features = ["worlds", "races", "clans", "guardians", "with_serde"]
+
+# without serde
+[target.'cfg(not(feature = "with_serde"))'.dependencies.chrono]
+version = "0.4"
+
+[target.'cfg(not(feature = "with_serde"))'.dependencies.ffxiv_types]
+version = "1"
+default-features = false
+features = ["worlds", "races", "clans", "guardians"]

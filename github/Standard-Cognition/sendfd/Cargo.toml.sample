@@ -1,0 +1,17 @@
+[package]
+name = "sendfd"
+version = "0.3.0"
+authors = [
+    "Simonas Kazlauskas <simonas@standard.ai>",
+    "Bernardo Meurer <bernardo@standard.ai>",
+    "Léo Gaspard <leo@standard.ai>"
+]
+edition = "2015"
+description = "Send file descriptors along with data over UNIX domain sockets"
+keywords = ["ipc"]
+license = "Apache-2.0 OR BSD-3-Clause"
+repository = "https://github.com/Standard-Cognition/sendfd"
+documentation = "https://docs.rs/sendfd"
+
+[dependencies]
+libc = "0.2"

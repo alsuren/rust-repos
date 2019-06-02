@@ -1,0 +1,13 @@
+[package]
+name = "weighted-consumer"
+version = "0.1.0"
+authors = ["Salvador Guzman <guzmansalv@gmail.com>"]
+
+[[bin]]
+name = "weighted-consumer"
+path = "src/main.rs"
+
+[dependencies]
+actix-web = "0.7.13"
+postgres = "0.15.2"
+rand = "0.5.5"

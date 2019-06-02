@@ -1,0 +1,13 @@
+[package]
+name = "scad-dots-derive"
+version = "0.1.0"
+authors = ["e-matteson <e.r.matteson@gmail.com>"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+# Later versions of syn and quote are completely different and will require
+# rewriting this crate.
+syn = "0.11.11"
+quote = "0.3.15"

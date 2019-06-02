@@ -1,0 +1,18 @@
+[package]
+name = "chasm"
+version = "0.1.0"
+authors = ["hskang9 <hskang9@gmail.com>"]
+edition = "2018"
+[[bin]]
+name = "chasm"
+path = "src/main.rs"
+
+[dependencies]
+stdweb = "0.4"
+
+[dependencies.yew]
+git = "https://github.com/DenisKolodin/yew"
+
+[lib]
+name = "chasm"
+path = "src/lib.rs"

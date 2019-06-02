@@ -1,0 +1,13 @@
+[package]
+name = "libp2p-ios"
+version = "0.1.0"
+authors = ["chris <chris@chrisbruce.com>"]
+edition = "2018"
+
+[dependencies]
+libp2p = { git = "https://github.com/libp2p/rust-libp2p" }
+env_logger = "0.6.0"
+rand = "0.6"
+tokio = "0.1"
+tokio-stdin-stdout = "0.1"
+futures = "0.1"

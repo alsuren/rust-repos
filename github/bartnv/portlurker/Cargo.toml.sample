@@ -1,0 +1,15 @@
+[package]
+name = "portlurker"
+version = "0.1.2"
+authors = ["Bart Noordervliet <bart@mmvi.nl>",
+           "Mark Pentler <mark@elmarko.org>"]
+license = "MIT"
+
+[dependencies]
+yaml-rust = "0.4"
+regex = "1"
+rusqlite = "0.16"
+chrono = "0.4"
+nfqueue = "0.9"
+libc = "0.2"
+pnet = "0.21"

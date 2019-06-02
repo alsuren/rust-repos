@@ -1,0 +1,11 @@
+[package]
+name = "palette"
+version = "0.1.0"
+authors = ["Ian Brault <ian.brault@engineering.ucla.edu>"]
+edition = "2018"
+
+[dependencies]
+clap = "~2.32.0"
+colored = "~1.7"
+image = "~0.21.0"
+rand = "~0.6"

@@ -1,0 +1,14 @@
+[package]
+name = "l1-compiler"
+version = "0.1.0"
+authors = ["Will Crichton <willcrichton@cmu.edu>"]
+build = "build.rs"
+
+[dependencies]
+getopts = "0.2"
+lalrpop = "0.15.2"
+lalrpop-util = "0.15.2"
+rustlex = "0.4.0"
+
+[build-dependencies]
+lalrpop = "0.15.2"

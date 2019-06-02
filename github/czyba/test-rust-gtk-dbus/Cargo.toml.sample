@@ -1,0 +1,9 @@
+[package]
+name = "rnd"
+version = "0.1.0"
+authors = ["Christopher Czyba <christopher.czyba@gmail.com>"]
+
+[dependencies]
+dbus = "^0"
+gtk = "^0"
+gio = "^0"

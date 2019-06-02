@@ -1,0 +1,9 @@
+[profile.release]
+debug = true
+
+[workspace]
+members = [
+  "components/core",
+  "components/http-client",
+  "components/win-users"
+]

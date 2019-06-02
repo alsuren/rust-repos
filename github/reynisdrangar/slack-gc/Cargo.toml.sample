@@ -1,0 +1,23 @@
+[package]
+name = "slack-gc"
+version = "1.0.1"
+license = "MIT"
+authors = ["Reynisdrangar <reynisdrangar@pm.me>"]
+description = "A barebones utility for cleaning up old slack file uploads"
+readme = "README.md"
+repository = "https://github.com/reynisdrangar/slack-gc"
+
+[badges]
+travis-ci = { repository = "reynisdrangar/slack-gc", branch = "master" }
+appveyor = { repository = "reynisdrangar/slack-gc", branch = "master", service = "github" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+slack_api = "0.20.0"
+log = "0.4.3"
+failure = "0.1.1"
+fern = "0.5.6"
+chrono = "0.4.4"
+structopt = "0.2.10"
+pretty-bytes = "0.2.2"
+rayon = "1.0.2"

@@ -1,0 +1,13 @@
+[package]
+name = "acm-present"
+version = "0.1.0"
+authors = ["Jeffrey McAteer <jeffrey.p.mcateer@gmail.com>"]
+
+[dependencies]
+lazy_static = "*"
+serde_json = "*"
+serde_derive = "*"
+serde = "*"
+tiny_http = "*"
+url = "*"
+

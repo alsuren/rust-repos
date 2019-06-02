@@ -1,0 +1,16 @@
+[package]
+name = "sam"
+version = "0.1.0"
+authors = ["Brooks J Rady <b.j.rady@gmail.com>", "Cameren K Castillo <cameren900910@prospectridgeacademy.org>"]
+
+[dependencies]
+rocket = "*"
+rocket_codegen = "*"
+rocket_contrib = { version = "*", features = ["tera_templates"] }
+diesel = { version = "*", features = ["sqlite"] }
+diesel_codegen = { version = "*", features = ["sqlite"] }
+bcrypt = "*"
+dotenv = "*"
+serde = "0.9"
+serde_derive = "0.9"
+quick-csv = "*"

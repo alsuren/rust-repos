@@ -1,0 +1,19 @@
+[package]
+name = "georef"
+version = "0.1.0"
+authors = ["Pete Gadomski <pete.gadomski@gmail.com>"]
+
+[dependencies]
+docopt = "0.6"
+nalgebra = "0.4"
+pabst = { git = "https://github.com/gadomski/pabst.git" }
+pos = "0.1"
+rustc-serialize = "0.3"
+toml = "0.1"
+utm = "0.1"
+
+[features]
+rxp = ["pabst/rxp-source"]
+
+[profile.test]
+opt-level = 2

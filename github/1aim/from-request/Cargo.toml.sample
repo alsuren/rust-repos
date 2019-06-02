@@ -1,0 +1,60 @@
+[package]
+name = "hyperdrive"
+version = "0.1.0"
+authors = ["Jonas Schievink <jonasschievink@gmail.com>"]
+description = "Declarative request routing and decoding with async support"
+documentation = "https://docs.rs/hyperdrive/"
+repository = "https://github.com/1aim/hyperdrive.git"
+keywords = ["async", "http", "request", "router", "guard"]
+categories = ["web-programming::http-server", "asynchronous"]
+readme = "README.md"
+license = "CC0-1.0"
+edition = "2018"
+
+# cargo-release configuration
+[package.metadata.release]
+tag-message = "{{version}}"
+no-dev-version = true
+pre-release-commit-message = "Release {{version}}"
+
+# Change the changelog's `Unreleased` section to refer to this release and
+# prepend new `Unreleased` section
+[[package.metadata.release.pre-release-replacements]]
+file    = "CHANGELOG.md"
+search  = "## Unreleased"
+replace = "## Unreleased\n\nNo changes.\n\n## {{version}} - {{date}}"
+
+# Bump the version inside the example manifest in `README.md`
+[[package.metadata.release.pre-release-replacements]]
+file    = "README.md"
+search  = 'hyperdrive = "[a-z0-9\\.-]+"'
+replace = 'hyperdrive = "{{version}}"'
+
+# Bump the version referenced by the `html_root_url` attribute in `lib.rs`
+[[package.metadata.release.pre-release-replacements]]
+file    = "src/lib.rs"
+search  = "https://docs.rs/hyperdrive/[a-z0-9\\.-]+"
+replace = "https://docs.rs/hyperdrive/{{version}}"
+
+[dependencies]
+lazy_static = "1.3.0"
+doc-comment = "0.3.1"
+regex = "1.1.0"
+futures = "0.1.25"
+tokio = "0.1.15"
+tokio-threadpool = "0.1.12"
+http = "0.1.16"
+hyper = "0.12.24"
+serde = { version = "1.0.88", features = ["derive"] }
+serde_json = "1.0.38"
+serde_urlencoded = "0.5.4"
+
+[dependencies.hyperderive]
+path = "derive"
+version = "=0.0.1"
+
+[dev-dependencies]
+version-sync = "0.8"
+reqwest = "0.9.17"
+
+[workspace]

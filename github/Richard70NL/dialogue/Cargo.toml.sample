@@ -1,0 +1,21 @@
+[package]
+name = "dialogue"
+version = "0.1.0"
+authors = ["Richard70NL <richard@richard70.nl>"]
+edition = "2018"
+description = "An NNTP server implementation written in Rust."
+repository = "https://github.com/Richard70NL/dialogue"
+readme = "README.md"
+keywords = ["nntp", "server"]
+categories = ["command-line-utilities", "network-programming"]
+license = "MIT"
+include = ["**/*.rs", "**/*.sql", "Cargo.toml", "README.md", "LICENSE"]
+
+[dependencies]
+clap = "2.33.0"
+chrono = "0.4.6"
+postgres = "0.15.2"
+rich_lib = "0.1.0"
+
+[badges]
+travis-ci = {repository = "Richard70NL/dialogue"}

@@ -1,0 +1,22 @@
+[package]
+name = "lablog_lib_v2"
+version = "0.2.0"
+authors = ["Alexander Thaller <alexander@thaller.ws>"]
+license = "MIT"
+readme = "README.md"
+description = """
+Contains code for the older store version of lablog. Used for conversion into
+newer store version.
+"""
+documentation = "https://github.com/lablog-rs/lablog_lib_v2"
+homepage = "https://github.com/lablog-rs/lablog_lib_v2"
+repository = "https://github.com/lablog-rs/lablog_lib_v2"
+
+[dependencies]
+chrono = { version = "0.2", features = ["rustc-serialize"] }
+csv = "0.15"
+githelper = "0.3"
+log = "0.3"
+regex = "0.1"
+rustc-serialize = "0.3"
+walkdir = "1.0"

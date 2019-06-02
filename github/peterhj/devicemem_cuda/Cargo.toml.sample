@@ -1,0 +1,29 @@
+[package]
+name = "devicemem_cuda"
+version = "0.1.0"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "devicemem_cuda"
+path = "src/lib.rs"
+
+[[bin]]
+name = "test"
+path = "test.rs"
+
+[build-dependencies]
+gcc = "*"
+
+[dependencies]
+libc = "^0.2"
+async_execution = { path = "../async_execution" }
+cuda = "^0.1"
+cuda_blas = "^0.1"
+cuda_dnn = "^0.1"
+#densearray = { path = "../libdensearray" }
+densearray = "^0.1"
+nccl = { path = "../libnccl" }
+nvsmi = { path = "../libnvsmi" }
+sharedmem = "^0.1"
+stopwatch = { path = "../stopwatch" }

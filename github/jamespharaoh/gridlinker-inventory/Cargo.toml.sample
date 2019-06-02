@@ -1,0 +1,22 @@
+[package]
+
+	name = "gridlinker-inventory"
+	version = "0.1.0"
+	authors = [
+		"James Pharaoh <james@pharaoh.uk>",
+	]
+
+[dependencies]
+
+	hyper = "*"
+	lazy_static = "*"
+	linked-hash-map = "*"
+	libc = "*"
+	openssl = "*"
+	regex = "*"
+	serde = "*"
+	serde_derive = "*"
+	serde_json = "*"
+	serde_yaml = "*"
+
+# ex: noet ts=4 filetype=toml

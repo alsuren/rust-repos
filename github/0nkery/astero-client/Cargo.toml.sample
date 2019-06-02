@@ -1,0 +1,26 @@
+[package]
+name = "astero-client"
+version = "0.1.0"
+authors = ["Dmitry Shlagoff <richyannet@yandex.ru>"]
+
+[dependencies]
+ggez = "0.4"
+specs = "0.10"
+specs-derive = "0.1"
+rand = "0.3"
+futures = "0.1"
+tokio-core = "0.1"
+prost = "0.2"
+prost-derive = "0.2"
+bytes = "0.4"
+time = "0.1"
+
+[dependencies.clippy]
+version = "*"
+optional = true
+
+[features]
+default = []
+
+[build-dependencies]
+prost-build = "0.2"

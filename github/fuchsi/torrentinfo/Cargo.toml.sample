@@ -1,0 +1,26 @@
+[package]
+name = "torrentinfo"
+version = "0.1.1"
+authors = ["Daniel Müller <perlfuchsi@gmail.com>"]
+description = "A torrent file parser"
+license = "GPL-3.0+"
+readme = "README.md"
+categories = ["command-line-utilities"]
+repository = "https://github.com/fuchsi/torrentinfo"
+keywords = ["torrent", "bencode"]
+
+[dependencies]
+clap = "2.31.2"
+serde_bencode = "0.2.0"
+chrono = "0.4.2"
+number_prefix = "0.2.8"
+sha-1 = "0.7.0"
+serde = "1.0.45"
+serde_derive = "1.0.45"
+serde_bytes = "0.10.4"
+error-chain = "0.11.0"
+yansi = "0.4.0"
+lazy_static = "1.0.0"
+
+[profile.release]
+lto = true

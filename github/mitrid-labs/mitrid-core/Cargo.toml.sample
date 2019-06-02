@@ -1,0 +1,28 @@
+[package]
+name = "mitrid_core"
+version = "0.9.4"
+authors = ["Christian Nyumbayire <chritchens@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/mitrid-labs/mitrid-core"
+description = "Core library of the Mitrid framework"
+documentation = "https://docs.rs/mitrid_core"
+readme = "README.md"
+categories = ["development-tools", "cryptography"]
+
+[badges]
+travis-ci = { repository = "mitrid-labs/mitrid-core", branch = "master" }
+coveralls = { repository = "mitrid-labs/mitrid-core", branch = "master", service = "github" }
+
+[dependencies]
+serde = "^1"
+serde_derive = "^1"
+serde_json = "^1"
+serde_cbor = "^0.9"
+hex = "^0.3"
+regex = "^1"
+bitflags = "^1"
+rand = "0.3.22"
+
+[dev-dependencies]
+sodiumoxide = "^0.1"
+tempfile = "^3"

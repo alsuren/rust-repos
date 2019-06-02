@@ -1,0 +1,9 @@
+[package]
+name = "Stone"
+version = "0.1.0"
+authors = ["mantis-shrimp <mantis-shrimp@outlook.com>"]
+
+[dependencies]
+regex='0.1'
+log = '0.3'
+env_logger='0.3'

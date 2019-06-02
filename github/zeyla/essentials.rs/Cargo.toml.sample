@@ -1,0 +1,10 @@
+[package]
+authors = ["Zeyla Hellyer <hi@zeyla.me>"]
+license = "ISC"
+name = "essentials"
+publish = false
+version = "0.1.0"
+
+[dependencies.futures]
+optional = true
+version = "0.1"

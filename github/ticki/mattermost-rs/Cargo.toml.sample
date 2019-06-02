@@ -1,0 +1,13 @@
+[package]
+authors = [
+  "Ticki <Ticki@users.noreply.github.com>",
+  "Skyler Berg <skylertheberg@gmail.com>"
+]
+name = "mattermost"
+version = "0.1.0"
+
+[dependencies]
+hyper = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"

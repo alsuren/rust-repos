@@ -1,0 +1,32 @@
+[package]
+name = "chronox"
+version = "0.1.0"
+authors = ["ssk97 <ssk97@case.edu>"]
+build = "build.rs"
+
+[dependencies]
+ggez = "0.4"
+#contains nalgebra
+num = "0.1"
+num-traits = "0.2"
+num-derive = "0.2"
+#needed for nalgebra generics and enum FromPrimitive
+
+#rand = "0.4"
+
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+bincode = "1.0"
+
+#plain_enum = "0.4.0"
+#Using a custom variant
+
+[dependencies.petgraph]
+version = "0.4"
+features = ["serde-1"]
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]

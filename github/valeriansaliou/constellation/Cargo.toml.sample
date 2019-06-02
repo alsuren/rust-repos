@@ -1,0 +1,57 @@
+[package]
+name = "constellation-server"
+version = "1.7.0"
+description = "Pluggable authoritative DNS server. Entries can be added & removed from an HTTP REST API."
+readme = "README.md"
+license = "MPL-2.0"
+edition = "2018"
+homepage = "https://github.com/valeriansaliou/constellation"
+repository = "https://github.com/valeriansaliou/constellation.git"
+keywords = ["dns", "api"]
+categories = ["web-programming"]
+authors = ["Valerian Saliou <valerian@valeriansaliou.name>"]
+
+[badges]
+travis-ci = { repository = "valeriansaliou/constellation", branch = "master" }
+coveralls = { repository = "valeriansaliou/constellation", branch = "master", service = "github" }
+
+[[bin]]
+name = "constellation"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+log = { version = "0.4", features = ["std"] }
+toml = "0.5"
+clap = { version = "2.26", default-features = false }
+lazy_static = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+base64 = "0.10"
+regex = "1.0"
+r2d2 = "0.8"
+r2d2_redis = "0.9"
+redis = "0.10"
+rocket = { version = "0.4", default-features = false }
+rocket_contrib = { version = "0.4", features = ["json"], default-features = false }
+trust-dns = { version = "0.13", default-features = false }
+trust-dns-server = { version = "0.13", default-features = false }
+rand = "0.6"
+farmhash = "1.1"
+http_req = "0.5"
+maxminddb = "0.13"
+tempfile = "3.0"
+flate2 = "1.0"
+tar = "0.4"
+
+[profile.dev]
+opt-level = 0
+debug = true
+debug-assertions = true
+
+[profile.release]
+opt-level = "s"
+lto = true
+debug = false
+debug-assertions = false

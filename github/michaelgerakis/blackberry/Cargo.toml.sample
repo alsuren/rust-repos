@@ -1,0 +1,26 @@
+[package]
+name = "blackberry"
+version = "0.1.1"
+authors = ["Michael Gerakis <mgerakis@bu.com>"]
+license = "MIT"
+description = " A collection of libraries and binaries for a Raspberry Pi OS ."
+homepage = "https://github.com/michaelgerakis/blackberry"
+repository = "https://github.com/michaelgerakis/blackberry"
+readme = "README.md"
+
+[workspace]
+members = ["stack-vec", "xmodem", "volatile", "std", "pi"]
+
+[lib]
+path = "src/kmain.rs"
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort"
+lto = true
+debug = true
+
+[dependencies]
+volatile = {path = "./volatile"}
+stack-vec = {path = "./stack-vec"}
+pi = { path = "./pi", features = ["std"] }

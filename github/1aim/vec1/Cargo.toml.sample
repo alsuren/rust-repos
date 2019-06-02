@@ -1,0 +1,25 @@
+[package]
+version = "1.4.0"
+authors = ["Philipp Korber <p.korber@1aim.com>"]
+categories = ["data-structures"]
+description = "a std Vec wrapper assuring that it has at least 1 element"
+documentation = "https://docs.rs/vec1"
+keywords = ["vec", "min", "length", "1"]
+license = "MIT OR Apache-2.0"
+name = "vec1"
+readme = "./README.md"
+repository = "https://github.com/1aim/vec1/"
+
+[features]
+# This feature is unstable due to TryFrom being unstable, once
+# TryFrom is stable the impl will be available without feature.
+# Still even then we will keep the feature for keeping compatiblility
+# with nightly programms, even through it won't have any effect
+# anymore once TryFrom is stable and integrated.
+unstable-nightly-try-from-impl = []
+
+[dependencies]
+serde = { version = "1.0", optional = true, features = ["derive"] }
+
+[dev-dependencies]
+serde_json = "1.0"

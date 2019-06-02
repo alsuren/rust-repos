@@ -1,0 +1,16 @@
+[package]
+name = "gender-decoder"
+version = "0.1.0"
+authors = ["Johanna Larsson <johanna.a.m.larsson@gmail.com>"]
+
+[dependencies]
+rocket = "0.4.0"
+rocket_codegen = "0.4.0"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+rand = "0.3"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["handlebars_templates", "serve"]

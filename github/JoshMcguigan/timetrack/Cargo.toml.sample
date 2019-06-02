@@ -1,0 +1,21 @@
+[package]
+name = "timetrack"
+version = "0.3.1"
+authors = ["Josh Mcguigan"]
+description = "Automatically track how you are spending your time by watching the file system"
+repository = "https://github.com/JoshMcguigan/timetrack"
+readme = "README.md"
+keywords = ["freelance", "time", "track", "productivity", "cli"]
+license = "MIT OR Apache-2.0"
+edition = "2018"
+
+[dependencies]
+notify="4.0"
+clap="2.32"
+directories = "1.0"
+toml = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+log = "0.4"
+env_logger = "0.5"
+prettytable-rs = "0.7"

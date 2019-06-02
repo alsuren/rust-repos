@@ -1,0 +1,13 @@
+[package]
+description = "Implementation of the multihash format"
+homepage = "https://github.com/chpio/mf-multihash"
+keywords = ["multiformat", "multihash"]
+license = "MIT"
+name = "mf_multihash"
+version = "0.0.1"
+
+[dependencies]
+arrayvec = "0.4.7"
+ring = "0.12.0"
+tiny-keccak = "1.2.1"
+integer-encoding = "1.0.0"

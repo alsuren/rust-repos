@@ -1,0 +1,23 @@
+[package]
+name = "fuzzy_match"
+version = "0.2.1"
+authors = ["Robert T. <arkan@drakon.io>"]
+description = "A crate for fuzzy finding items in sets, based on the Ruby fuzzy_find gem."
+homepage = "https://github.com/Emberwalker/fuzzy_find-rs/"
+repository = "https://github.com/Emberwalker/fuzzy_find-rs.git"
+documentation = "https://docs.rs/fuzzy_match"
+license = "ISC"
+keywords = ["text"]
+
+[badges]
+travis-ci = { repository = "Emberwalker/fuzzy_find-rs", branch = "master" }
+maintenance = { status = "experimental" }
+
+[features]
+nightly = []
+
+[build-dependencies]
+rustc_version = "0.1"
+
+[dependencies]
+sliding_windows = "3.0"

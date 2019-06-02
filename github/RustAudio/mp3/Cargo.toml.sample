@@ -1,0 +1,9 @@
+[package]
+name = "mp3"
+version = "0.1.0"
+authors = ["The mp3 crate contributors"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/RustAudio/mp3"
+
+[dependencies]
+smallvec = "0.6"

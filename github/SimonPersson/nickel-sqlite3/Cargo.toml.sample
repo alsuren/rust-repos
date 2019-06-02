@@ -1,0 +1,18 @@
+[package]
+name = "nickel-sqlite"
+version = "0.0.1"
+authors = ["Simon Persson <simon@flaskpost.org>"]
+
+[lib]
+name = "nickel_sqlite"
+path = "src/lib.rs"
+
+[dependencies.nickel]
+git = "https://github.com/nickel-org/nickel.rs.git"
+
+[dependencies.rust-sqlite]
+git = "https://github.com/SimonPersson/rust-sqlite3.git"
+
+[[example]]
+name = "example"
+path = "example/example.rs"

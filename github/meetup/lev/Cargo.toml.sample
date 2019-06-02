@@ -1,0 +1,13 @@
+[package]
+name = "lev"
+version = "0.1.0"
+authors = ["softprops <d.tangren@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+futures = "0.1"
+rusoto_core = "0.36"
+rusoto_lambda = "0.36"
+structopt = "0.2"
+tokio = "0.1"

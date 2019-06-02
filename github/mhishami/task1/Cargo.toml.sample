@@ -1,0 +1,11 @@
+[package]
+name = "task1"
+version = "0.1.0"
+authors = ["Hisham Ismail <mhishami@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+api = { path = "api" }
+core = { path = "core" }
+web = { path = "web" }
+clap = {version = "~2.27.0", features = ["yaml"]}

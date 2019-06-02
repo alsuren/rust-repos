@@ -1,0 +1,50 @@
+[package]
+name = "kudu"
+version = "0.1.0"
+authors = ["Dan Burkert <dan@danburkert.com>"]
+license = "Apache-2.0"
+description = "Rust client for Apache Kudu"
+keywords = ["kudu", "database"]
+
+[workspace]
+members = [
+  "krpc",
+  "krpc-build",
+  "krpc-tests",
+]
+
+[dependencies]
+byteorder = "1"
+bytes = "0.4"
+futures = "0.1"
+ieee754 = "0.2"
+ifaces = "0.1"
+krpc = { path = "krpc", version = "0.1.0" }
+lazy_static = "1.0"
+log = "0.4"
+parking_lot = "0.6"
+proptest = { version = "0.8", optional = true }
+prost = "0.4"
+prost-derive = "0.4"
+prost-types = "0.4"
+rand = "0.5"
+tokio = "0.1"
+tokio-threadpool = "0.1"
+tokio-timer = "0.2"
+url = "1"
+uuid = "0.6"
+vec_map = "0.8"
+
+[build-dependencies]
+curl = "0.4"
+env_logger = "0.5"
+flate2 = "1.0"
+prost-build = "0.4"
+tar = "0.4"
+krpc-build = { path = "krpc-build", version = "0.1.0" }
+
+[dev-dependencies]
+env_logger = "0.5"
+proptest = "0.8"
+# TODO: replace with tempfile
+tempdir = "0.3"

@@ -1,0 +1,9 @@
+[package]
+
+name = "tetrust"
+version = "0.0.1"
+authors = ["sssilver <sssilver@gmail.com>"]
+
+[dependencies]
+pancurses = "0.7"
+rand = "0.3"

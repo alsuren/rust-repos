@@ -1,0 +1,26 @@
+[package]
+name = "shush"
+version = "0.2.2"
+authors = ["John Baublitz <john.baublitz@threatstack.com>"]
+description = "A management tool for silencing Sensu checks written in Rust"
+repository = "https://github.com/threatstack/shush"
+keywords = ["sensu", "monitoring"]
+license = "BSD-3-Clause"
+include = [
+  "**/*.rs",
+  "Cargo.toml",
+  "LICENSE",
+]
+
+[dependencies]
+futures = "0.1.16"
+regex = "0.2.1"
+hyper = "0.12"
+hyper-tls = "0.3"
+native-tls = "0.1.4"
+serde_json = "1.0.24"
+getopts = "0.2.14"
+itertools = "0.6.0"
+rust-ini = "0.10.0"
+tokio = "0.1"
+nom = "^3.2"

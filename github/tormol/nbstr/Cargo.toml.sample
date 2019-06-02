@@ -1,0 +1,25 @@
+[package]
+name = "nbstr"
+keywords = ["string"]
+description = """
+A lean `Cow<'static, str>` that cannot be written to.
+"""
+readme = "README.md"
+version = "0.9.0"
+license = "Apache-2.0"
+repository = "https://github.com/tormol/nbstr"
+documentation = "http://tormol.github.io/rustdoc/nbstr"
+authors = ["Torbjørn Birch Moltu <t.b.moltu@lyse.net>"]
+
+[dependencies]
+clippy = {optional=true, version="0.*"}# wildest wildcard crates.io will allow.
+
+[features] # see README for descriptions
+default = []
+unstable = []
+64as48bit_hack = ["unstable"]
+no_giants = ["unstable"]
+
+[[test]]
+name = "integration_tests"
+path = "tests.rs"

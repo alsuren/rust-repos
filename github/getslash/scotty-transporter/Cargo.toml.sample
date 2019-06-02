@@ -1,0 +1,19 @@
+[package]
+
+name = "transporter"
+version = "0.8.0"
+authors = ["Roey Darwish Dror <roey.ghost@gmail.com>"]
+
+[dependencies]
+byteorder = "*"
+docopt = "*"
+fern = "*"
+log = "*"
+rustc-serialize = "*"
+url = "*"
+hyper = "*"
+time = "*"
+rust-crypto = "*"
+
+[dependencies.raven]
+git = "https://github.com/r-darwish/raven-rust.git"

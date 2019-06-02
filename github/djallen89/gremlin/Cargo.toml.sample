@@ -1,0 +1,29 @@
+[package]
+name = "gremlin"
+version = "0.1.0"
+authors = ["Dominick Allen <dominick.allen1989@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2.48"
+rand = "0.6"
+ndarray = { version = "0.12.1", features = ["blas"] }
+blas-src = { version = "0.2.0", default-features = false, features = ["openblas"] }
+openblas-src = { version = "0.6.0", default-features = false, features = ["cblas", "system"] }
+rayon = "1.0.3"
+num_cpus = "1.10.0"
+
+[dev-dependencies]
+criterion = "0.2.10"
+
+[lib]
+name = "gremlin_lib"
+path = "src/lib/mod.rs"
+
+[[bench]]
+name = "benchmark"
+harness = false
+
+[[bench]]
+name = "parallel"
+harness = false

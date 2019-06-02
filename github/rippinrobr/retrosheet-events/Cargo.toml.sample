@@ -1,0 +1,18 @@
+[package]
+name = "retrosheet-loader"
+version = "0.1.0"
+authors = ["Rob Rowe <robrowe04@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+csv = "1.0.5"
+dotenv = "0.13.0"
+exitcode = "1"
+failure = "0.1.5"
+failure_derive = "0.1.5"
+glob = "0.2"
+mysql = "15.1.0"
+postgres = { version = "0.15.2", features= ["with-time"] }
+regex = "1.1.2"
+sqlite = "0.24.0"

@@ -1,0 +1,46 @@
+[package]
+name = "matrix_rocketchat"
+version = "0.1.0"
+authors = ["Andreas Brönnimann"]
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "matrix_rocketchat"
+path = "src/matrix-rocketchat/lib.rs"
+
+[dependencies]
+clap = "2.3"
+diesel = { version = "1.4", default-features = false, features = ["sqlite"] }
+diesel_migrations = { version = "1.4", default-features = false, features = ["sqlite"] }
+error-chain = "0.11"
+http = "0.1"
+hyper-native-tls = "0.3"
+iron = "0.6"
+lazy_static = "1.0"
+mime = "0.3"
+num_cpus = "1.8"
+persistent = "0.4"
+pulldown-cmark = "0.1"
+r2d2 = "0.8"
+r2d2-diesel = "1.0"
+regex = "1.0.0"
+reqwest = "0.9"
+router = "0.6"
+ruma-client-api = { git= "https://github.com/exul/ruma-client-api.git" }
+ruma-events = { version = "0.12" }
+ruma-identifiers = { version = "0.12", features = ["diesel"] }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde_yaml = "0.7"
+slog = "2.2"
+slog-async = "2.3"
+slog-json = "2.2"
+slog-term = "2.4"
+slog-stream = "1.2"
+url = "1.7"
+yaml-rust = "0.4"
+
+[dev-dependencies]
+matrix_rocketchat_test = { path = "tests/matrix-rocketchat-test" }
+tempdir = "0.3"

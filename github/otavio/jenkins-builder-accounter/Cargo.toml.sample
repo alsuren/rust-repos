@@ -1,0 +1,17 @@
+[package]
+name = "jenkins-builder-accounter"
+version = "0.1.0"
+authors = ["Otavio Salvador <otavio@ossystems.com.br>"]
+
+[dependencies]
+chrono = "0.4"
+envy = "0.4"
+failure = "0.1"
+jenkins_api = "0.5"
+log = "0.4"
+rayon = "1"
+regex = "1"
+serde = "1"
+serde_derive = "1"
+serde_yaml = "0.8"
+stderrlog = "0.4"

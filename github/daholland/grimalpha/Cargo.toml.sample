@@ -1,0 +1,8 @@
+[package]
+name = "grimalpha"
+version = "0.1.0"
+authors = ["David Holland <davidthenameless@gmail.com>"]
+
+[dependencies]
+imgui = {path = "extlib/imgui-rs", features = ["glium"]}
+

@@ -1,0 +1,27 @@
+
+[package]
+name = "libjq"
+version = "0.1.0"
+authors = [ "David Boon <david.boon@gmail.com" ]
+
+description = "Rust bindinds for libjq"
+readme = "README.md"
+keywords = ["jq", "json", "libjq"]
+
+homepage = "https://github.com/evadnoob/rust-jq"
+repository = "https://github.com/evadnoob/rust-jq"
+documentation = "https://evadnoob.github.io/rust-jq/"
+
+license = "MIT"
+
+[lib]
+name = "libjq"
+crate-type = ["staticlib"]
+
+[dependencies]
+libc = "*"
+
+
+
+
+

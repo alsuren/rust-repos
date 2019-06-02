@@ -1,0 +1,75 @@
+[package]
+name = "wwup"
+version = "0.1.0"
+authors = ["hhatto <hhatto.jp@gmail.com>"]
+
+[dependencies]
+nix = "0.7"
+libc = "*"
+prctl = "1.0"
+chan = "*"
+chan-signal = "*"
+
+[[bin]]
+name = "3_processes_have_ids"
+path = "src/3_processes_have_ids.rs"
+
+[[bin]]
+name = "4_processes_have_parents"
+path = "src/4_processes_have_parents.rs"
+
+[[bin]]
+name = "5_processes_have_file_descriptors"
+path = "src/5_processes_have_file_descriptors.rs"
+
+[[bin]]
+name = "6_processes_have_resource_limits"
+path = "src/6_processes_have_resource_limits.rs"
+
+[[bin]]
+name = "7_processes_have_an_environment"
+path = "src/7_processes_have_an_environment.rs"
+
+[[bin]]
+name = "8_processes_have_arguments"
+path = "src/8_processes_have_arguments.rs"
+
+[[bin]]
+name = "9_processes_have_names"
+path = "src/9_processes_have_names.rs"
+
+[[bin]]
+name = "10_processes_have_exit_code"
+path = "src/10_processes_have_exit_code.rs"
+
+[[bin]]
+name = "11_processes_can_fork"
+path = "src/11_processes_can_fork.rs"
+
+[[bin]]
+name = "12_orphaned_processes"
+path = "src/12_orphaned_processes.rs"
+
+[[bin]]
+name = "14_processes_can_wait"
+path = "src/14_processes_can_wait.rs"
+
+[[bin]]
+name = "15_zombie_processes"
+path = "src/15_zombie_processes.rs"
+
+[[bin]]
+name = "16_processes_can_get_signals"
+path = "src/16_processes_can_get_signals.rs"
+
+[[bin]]
+name = "17_processes_can_communicate"
+path = "src/17_processes_can_communicate.rs"
+
+[[bin]]
+name = "18_daemon_processes"
+path = "src/18_daemon_processes.rs"
+
+[[bin]]
+name = "19_spawning_terminal_processes"
+path = "src/19_spawning_terminal_processes.rs"

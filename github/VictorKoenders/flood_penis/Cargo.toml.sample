@@ -1,0 +1,10 @@
+[package]
+name = "ddos"
+version = "0.1.0"
+authors = ["victor.koenders <victor.koenders@gmail.com>"]
+
+[dependencies]
+num_cpus = "*"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

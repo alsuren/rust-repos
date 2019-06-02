@@ -1,0 +1,19 @@
+[package]
+name = "cdb"
+version = "0.1.0"
+authors = ["ryo33 <ryo12redstone@gmail.com>"]
+
+[[bin]]
+name = "cdb"
+path = "src/main.rs"
+
+[dependencies]
+piston = "*"
+piston_window = "*"
+piston2d-sprite = "*"
+piston2d-graphics = "*"
+find_folder = "*"
+piston2d-gfx_graphics = "*"
+gfx_device_gl = "*"
+num = "*"
+rand = "*"

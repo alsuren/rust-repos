@@ -1,0 +1,17 @@
+[package]
+authors = ["Armin Ronacher <armin.ronacher@active-4.com>"]
+name = "anylog"
+version = "0.4.0"
+keywords = ["log", "parse"]
+description = "A library for Rust that attempts to parse single log lines into records."
+homepage = "https://github.com/mitsuhiko/rust-anylog"
+documentation = "https://docs.rs/anylog"
+license = "BSD-3-Clause"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+chrono = "0.4.6"
+lazy_static = "1.2.0"
+regex = "1.1.0"
+insta = "0.6.3"

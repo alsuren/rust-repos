@@ -1,0 +1,20 @@
+[package]
+name = "web-reports"
+version = "0.1.1"
+authors = ["Jack Fraser <jack-fraser@users.noreply.github.com>"]
+
+[dependencies]
+rocket = "0.3.10"
+rocket_codegen = "0.3.10"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+handlebars = "1.0.0"
+dotenv = "0.13.0"
+log4rs = { version = "0.8.0", features = ["rolling_file_appender", "compound_policy", "size_trigger", "fixed_window_roller"] }
+log = "0.4.5"
+
+[dependencies.rocket_contrib]
+version = "0.3.10"
+default-features = false
+features = ["json"]

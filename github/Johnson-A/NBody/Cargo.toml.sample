@@ -1,0 +1,17 @@
+[package]
+authors = ["Alex Johnson <alex_johnson3@yahoo.com>"]
+name = "nbody"
+version = "1.0.0"
+
+[dependencies]
+itertools = "*"
+num = "*"
+crossbeam = "*"
+piston_window = "*"
+pistoncore-sdl2_window = "*"
+rand = "*"
+rayon = "*"
+time = "*"
+
+[profile.release]
+opt-level = 3

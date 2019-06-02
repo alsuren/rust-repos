@@ -1,0 +1,13 @@
+[package]
+name = "live2o3"
+version = "0.1.0"
+authors = ["gengteng <me@gteng.org>"]
+edition = "2018"
+
+[dependencies]
+
+
+[dev-dependencies]
+tokio = "0.1"
+futures = "0.1"
+bytes = "0.4"

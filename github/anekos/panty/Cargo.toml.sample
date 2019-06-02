@@ -1,0 +1,30 @@
+[package]
+name = "panty"
+version = "0.8.4"
+authors = ["anekos <anekos@snca.net>"]
+repository = "https://github.com/anekos/panty"
+keywords = ["vim", "gvim", "linux"]
+license-file = "LICENSE"
+readme = "README.md"
+description = "Fast gVim summoner"
+# documentation = http://anekos.github.io/panty
+
+[[bin]]
+name = "panty"
+doc = false
+
+[dependencies]
+argparse = "0.2"
+ctrlc = { version = "2.0", features = ["termination"] }
+env_logger = "0.3"
+inotify = "0.3"
+lazy_static = "0.2"
+libc = "0.2"
+log = "0.3"
+patrol = "0.3.0"
+rand = "0.3"
+regex = "1.0.2"
+rustc-serialize = "0.3"
+unix_socket = "0.5"
+walkdir = "1.0.3"
+x11 = { version = "2.11", features = ["xlib", "xinerama"] }

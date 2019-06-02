@@ -1,0 +1,16 @@
+[package]
+
+name = "cargobug"
+version = "0.0.1"
+authors = ["Michael Powell <herufeanor@gmail.com>"]
+
+[[bin]]
+
+name = "cargobug"
+path = "src/main.rs"
+
+[dependencies.foo]
+path = "src/foo"
+
+[dependencies.bar]
+path = "src/bar"

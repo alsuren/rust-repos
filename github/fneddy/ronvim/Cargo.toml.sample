@@ -1,0 +1,9 @@
+[package]
+name = "ronvim"
+version = "0.1.0"
+authors = ["Eddy Stefes <eduard.stefes@gmail.com>"]
+
+[dependencies]
+qml = { path = "../qml-rust/"}
+neovim-lib = { path = "../neovim-lib/"}
+url = "*"

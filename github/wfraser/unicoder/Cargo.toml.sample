@@ -1,0 +1,17 @@
+[package]
+name = "unicoder"
+version = "0.1.0"
+authors = ["Bill Fraser <wfraser@codewise.org>"]
+
+[dependencies]
+log = { version = "0.4", features = ["std"] }
+ucd = "0.1"
+#unicode_names = "0.1"
+unicode-normalization = "0.1"
+
+[dependencies.unicode_names]
+git = "https://github.com/Jokler/unicode_names"
+branch = "update-to-latest-unicode"
+
+[profile.release]
+lto = true

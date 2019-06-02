@@ -1,0 +1,15 @@
+[package]
+name = "kilo-rs"
+version = "0.1.0"
+authors = ["Armin Häberling <armin.aha@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/arminha/kilo-rs"
+homepage = "https://github.com/arminha/kilo-rs"
+
+[profile.release]
+lto = true
+
+[dependencies]
+termios = "0.3"
+libc = "0.2"

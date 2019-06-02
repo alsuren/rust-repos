@@ -1,0 +1,16 @@
+[package]
+name = "rssh"
+version = "0.1.0"
+authors = ["Hyunkang Kim <kimhyunkang@gmail.com>"]
+
+[dependencies]
+futures = "0.1"
+rand = "0.3"
+ring = "0.5"
+serde = "0.8"
+serde_derive = "0.8"
+tokio-core = "0.1"
+untrusted = "0.3"
+
+[dev-dependencies]
+rustc-serialize = "0.3"

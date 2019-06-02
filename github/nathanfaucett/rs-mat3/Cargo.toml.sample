@@ -1,0 +1,16 @@
+[package]
+name = "mat3"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["mat3", "matrix", "3x3"]
+description = "rust matrix 3x3 functions"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-mat3.git"
+homepage = "https://github.com/nathanfaucett/rs-mat3"
+
+[dependencies]
+approx_eq = { git = "https://github.com/nathanfaucett/rs-approx_eq.git" }
+num = { git = "https://github.com/nathanfaucett/rs-num.git" }
+signed = { git = "https://github.com/nathanfaucett/rs-signed.git" }

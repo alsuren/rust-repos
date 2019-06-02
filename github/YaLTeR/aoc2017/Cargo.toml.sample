@@ -1,0 +1,8 @@
+[package]
+name = "aoc2017"
+version = "0.1.0"
+authors = ["Ivan Molodetskikh <yalterz@gmail.com>"]
+
+[dependencies]
+itertools = "0.7"
+petgraph = "0.4"

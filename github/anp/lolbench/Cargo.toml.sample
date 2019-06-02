@@ -1,0 +1,76 @@
+[package]
+name = "lolbench"
+version = "0.0.1"
+build = "build.rs"
+
+# NOTE(anp): while this crate isn't used directly for code in the bench crates, it *is* the
+# workspace root, which means that its profiles apply to everything in the workspace.
+[profile.dev]
+opt-level = 1
+debug = 1
+
+[profile.test]
+opt-level = 1
+debug = 1
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+incremental = false
+
+[dependencies]
+askama = { version = "0.7", features = ["serde-json"] }
+byteorder = "^1.2"
+chrono = { version = "0.4", features = ["serde"] }
+clap = "^2.31.1"
+criterion = { version = "0.2.0", path = "./criterion", features = ["pmu"] }
+criterion-stats = "0.2"
+failure = "0.1"
+git2 = "0.7"
+glob = "0.2"
+itertools = "0.7"
+lazy_static = "1"
+libc = "0.2"
+log = "0.4"
+lolbench_support = { path = "./support" }
+marky_mark = { path = "./marky_mark" }
+min-max-heap = "1.2.0"
+noisy_float = { version = "0.1", features = ["serde-1"] }
+ring = "0.13"
+separator = "0.3"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+signal-hook = "0.1"
+simple_logger = "0.5"
+slug = "0.1"
+structopt = { version = "0.2", default-features = false }
+walkdir = "2"
+
+[dev-dependencies]
+proptest = "0.7"
+tempfile = "3"
+
+[build-dependencies]
+askama = "0.7"
+
+[workspace]
+members = [
+    "./benches/brotli_1_1_3",
+    "./benches/byteorder_1_2_6",
+    "./benches/crossbeam_epoch_0_4_0",
+    "./benches/csv_1_0_2",
+    "./benches/diesel_1_1_1",
+    "./benches/doom_9e197d7",
+    "./benches/inflate_0_3_4",
+    "./benches/json_benchmark_c7d3d9b",
+    "./benches/nom_4_0_0",
+    "./benches/quickcheck_0_6_1",
+    "./benches/rayon_1_0_0",
+    "./benches/raytrace_8de9020",
+    "./benches/regex_0_2_6",
+    "./benches/sha2_0_8_0",
+    "./benches/sha3_0_8_0",
+    "./benches/snap_0_2_4",
+    "./benches/clap_2_31_2"
+]

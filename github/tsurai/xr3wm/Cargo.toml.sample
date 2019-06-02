@@ -1,0 +1,27 @@
+[project]
+name = "xr3wm"
+version = "0.0.1"
+authors = ["Cristian Kubis <cristian.kubis@tsunix.de>"]
+build = "build.rs"
+
+[dependencies]
+log = "0.4.6"
+fern = "0.5.8"
+failure = "0.1.5"
+clap = "2.33.0"
+libc = "*"
+dylib = "*"
+
+[dependencies.xlib]
+git = "https://github.com/tsurai/rust-xlib.git"
+
+[dependencies.xinerama]
+git = "https://github.com/Kintaro/rust-xinerama.git"
+
+[lib]
+name = "xr3wm"
+path = "src/core.rs"
+
+[[bin]]
+name = "xr3wm"
+path = "src/xr3wm.rs"

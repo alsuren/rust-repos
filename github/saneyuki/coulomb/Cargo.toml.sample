@@ -1,0 +1,13 @@
+[package]
+name = "coulomb"
+version = "0.1.0"
+authors = ["Tetsuharu OHZEKI <saneyuki.snyk@gmail.com>"]
+
+[dependencies]
+leveldb = { git = "https://github.com/skade/leveldb" }
+rocket = "0.1.4"
+rocket_codegen = "0.1.4"
+lazy_static = "0.2.2"
+
+[replace]
+"leveldb-sys:2.0.0" = { git = "https://github.com/saneyuki/leveldb-sys", branch = "build-fix-macos" }

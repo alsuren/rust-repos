@@ -1,0 +1,10 @@
+[package]
+name = "notes_toolbox"
+version = "0.0.1"
+authors = ["Tim Visée <timvisee@gmail.com>"]
+
+[dependencies]
+clap = "2.19.0"
+
+[dev-dependencies]
+tempdir = "0.3"

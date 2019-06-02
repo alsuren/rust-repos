@@ -1,0 +1,14 @@
+[package]
+name = "abes-axe"
+version = "0.1.0"
+authors = ["Ben Beckwith <bnbeckwith@gmail.com>"]
+
+[dependencies]
+chrono = "0.2.*"
+clap = "2.*"
+error-chain = "0.7.1"
+git2 = "0.6"
+itertools = "0.5.8"
+pbr = "1.0.0"
+rayon = "0.6.0"
+regex = "*"

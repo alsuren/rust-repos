@@ -1,0 +1,8 @@
+[package]
+name = "beepr"
+version = "0.1.0"
+authors = ["Joakim Uddholm <joakim@uddholm.com>"]
+build = "build.rs"
+
+[dependencies]
+ears = "0.3.5"

@@ -1,0 +1,19 @@
+[package]
+name = "copper"
+version = "0.1.0"
+authors = ["Per Lundberg <perlun@gmail.com>"]
+description = "A nickel.rs-based application server"
+license = "MIT"
+
+repository = "https://github.com/perlun/copper.rs"
+readme = "README.md"
+keywords = ["nickel", "server", "web"]
+
+[dependencies]
+log = "*"
+log4rs = { version = "*", features = ["yaml"] }
+nickel = "*"
+
+[dependencies.hyper]
+version = "=0.8"
+default-features = false

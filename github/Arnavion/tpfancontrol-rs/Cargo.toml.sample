@@ -1,0 +1,13 @@
+[package]
+name = "tpfancontrol"
+version = "0.1.0"
+authors = ["Arnavion <arnavion@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+cursive = { version = "0.10.x", default-features = false, features = ["termion-backend"] }
+lazy_static = "1"
+libc = "0.2"
+ordered-float = "1"
+serde = "1"
+toml = "0.5"

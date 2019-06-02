@@ -1,0 +1,14 @@
+[package]
+name = "redirect-keyboard"
+version = "0.1.0"
+authors = ["Milan Buransky <anicka.burova@gmail.com>"]
+
+[dependencies]
+byteorder = "*"
+argparse = "*"
+winapi = "*"
+user32-sys="*"
+
+
+[target.x86_64-apple-darwin.dependencies]
+nix = "*"

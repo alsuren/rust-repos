@@ -1,0 +1,24 @@
+[package]
+name = "pyramid_subdoc"
+version = "0.1.0"
+authors = ["Fredrik Noren <fredrik.jw.noren@gmail.com>"]
+
+[dependencies]
+cgmath = "0.2.0"
+time = "*"
+
+[dependencies.pyramid]
+path = "../pyramid"
+
+[dependencies.ppromise]
+path = "../ppromise"
+
+[dependencies.mesh]
+path = "../mesh"
+
+[dependencies.pyramid_animation]
+path = "../pyramid_animation"
+
+
+[dependencies.assimp]
+path = "../assimp-rs"

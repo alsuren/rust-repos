@@ -1,0 +1,27 @@
+[package]
+name = "babel"
+version = "0.1.0"
+authors = ["Kojo Adams <samanpa@gmail.com>"]
+build   = "build.rs"
+edition = "2018"
+
+[lib]
+name = "babel"
+
+[[bin]]
+name = "babel"
+path = "src/main.rs"
+
+[dependencies]
+llvm-sys = "50"
+libc = "0.2"
+
+[dependencies.regex]
+version = "1.0"
+
+# Add a dependency on the LALRPOP runtime library:
+[dependencies.lalrpop-util]
+version = "0.16"
+
+[build-dependencies.lalrpop]
+version = "0.16"

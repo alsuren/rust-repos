@@ -1,0 +1,15 @@
+[package]
+name = "two-stroke"
+version = "0.1.0"
+authors = ["Lucien Greathouse <me@lpghatguy.com>"]
+
+[dependencies]
+cgmath = "*"
+time = "*"
+glfw = "0.15.0"
+rusttype = "0.2.1"
+gfx = "0.16.1"
+gfx_device_gl = "0.14.1"
+gfx_window_glfw = "0.15.0"
+
+iqe = { path = "../iqe-rs" }

@@ -1,0 +1,17 @@
+[package]
+name = "libgo"
+version = "0.5.0-dev"
+authors = ["David Campbell <dcampbell24@gmail.com>"]
+
+description = "Basic Go library that implements the Go Text Protocol."
+repository = "https://github.com/dcampbell24/libgo"
+readme = "README.md"
+keywords = ["go", "baduk", "weiqi"]
+categories = ["games"]
+license = "MIT"
+
+[dependencies]
+rand = "0.3"
+
+[dev-dependencies]
+clap = "2.19"

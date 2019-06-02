@@ -1,0 +1,12 @@
+[package]
+name = "vacuum-robot-simulator"
+version = "0.1.0"
+authors = ["David Peter <davidpeter@web.de>"]
+
+[dependencies]
+pistoncore-sdl2_window = "0.50.0"
+piston = "0.39.0"
+piston2d-graphics = "0.26.0"
+piston_window = "0.80.0"
+piston2d-opengl_graphics = "0.53.0"
+svg2polylines = "0.4.0"

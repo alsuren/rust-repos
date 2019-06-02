@@ -1,0 +1,22 @@
+[package]
+name = "aspect"
+version = "0.1.0"
+authors = ["Garrett Pauls"]
+edition = "2018"
+
+[dependencies]
+conrod_core = "0.62"
+conrod_winit = "0.62"
+conrod_glium = "0.62"
+conrod_derive = "0.62"
+glium = "0.23"
+ttf-noto-sans = "0.1"
+log = "0.4"
+env_logger = "0.6"
+chrono = "0.4"
+rand = "0.6"
+image = "0.20"
+gif = "0.10"
+gif-dispose = "2.1"
+rusqlite = { version = "0.16", features = ["bundled"] }
+migrant_lib = { version = "0.23", features = ["d-sqlite"] }

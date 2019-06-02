@@ -1,0 +1,21 @@
+[package]
+name = "varjokuuntelija"
+version = "0.1.0"
+authors = ["Miranda Kastemaa <miranda@foldplop.com>"]
+
+[lib]
+name = "varjokuuntelu"
+path = "src/lib.rs"
+
+[[bin]]
+name = "varjokuuntelija"
+path = "src/main.rs"
+
+[dependencies]
+getopts = "0.2"
+glium = "0.16"
+glutin = "0.8"
+notify = "4.0"
+portmidi = "0.2"
+rustc-serialize = "0.3"
+time = "0.1"

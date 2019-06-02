@@ -1,0 +1,11 @@
+[package]
+name = "rrpm"
+version = "0.1.0"
+authors = ["sashmlv <>"]
+edition = "2018"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/sashmlv/rrpm"
+description = "Rutracker private messages"
+[dependencies]
+web-view = "0.4.0"

@@ -1,0 +1,16 @@
+[package]
+
+name    = "Project Euler"
+description = "Project Euler Solutions in rust"
+repository = ""
+version = "0.0.1"
+license = "MIT"
+authors = [ "Elliott Lester <lester.elliott@gmail.com>" ]
+keywords = ["Programming", "Euler"]
+
+[dependencies]
+primal = "0.2"
+
+[[bin]]
+name = "euler"
+path = "src/main.rs"

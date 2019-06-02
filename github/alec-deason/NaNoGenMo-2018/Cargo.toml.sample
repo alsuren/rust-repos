@@ -1,0 +1,17 @@
+[package]
+name = "nanogenmo_2018"
+version = "0.1.0"
+authors = ["Alec Deason"]
+edition = "2018"
+
+[lib]
+name = "novel_gen"
+crate-type = ["rlib"]
+
+[[bin]]
+name = "nanogenmo_2018"
+path = "src/main.rs"
+
+[dependencies]
+rand = "0.6.0-pre.1"
+dot = "0.1.4"

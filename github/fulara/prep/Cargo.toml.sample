@@ -1,0 +1,16 @@
+[package]
+name = "prep"
+version = "0.1.0"
+authors = ["fulara <ntszar@gmail.com>"]
+
+[[test]]
+name = "tests"
+
+[dependencies]
+glob = "0.2"
+regex = { git = "https://github.com/fulara/regex", branch = "applied-fixes" }
+getch = "0.1.1"
+clap = "2.25.0"
+itertools = "0.6.0"
+libc = "0.2"
+colored = "1.5"

@@ -1,0 +1,10 @@
+[package]
+name = "logreg"
+version = "0.1.0"
+authors = ["Stone Tickle <lattis@mochiro.moe>"]
+
+[dependencies]
+ndarray = "*"
+ndarray-linalg = "*"
+lapack-src = { version = "0.2", features = ["openblas"] }
+rand = "*"

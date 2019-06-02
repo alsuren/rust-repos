@@ -1,0 +1,15 @@
+[package]
+name = "optimizer"
+version = "0.1.0"
+authors = ["Jakob Fischer <JakobFischer93@gmail.com>"]
+
+[dependencies]
+
+genetic = { path = "genetic/" }
+mkm_client = { path = "mkm-client/" }
+
+rand = "0.3"
+log = "0.3"
+env_logger = "0.3"
+chrono = "0.3"
+rusqlite = "0.12.0"

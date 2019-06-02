@@ -1,0 +1,12 @@
+[package]
+name = "pushover"
+version = "0.1.0"
+authors = ["Aiden Scandella <ai@uber.com>"]
+
+[dependencies]
+serde_json = "1.0"
+hyper = "0.12.23"
+hyper-tls = "0.3.1"
+futures = "0.1"
+tokio-core = "0.1"
+url = "1.6.0"

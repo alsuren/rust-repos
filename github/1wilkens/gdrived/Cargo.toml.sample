@@ -1,0 +1,13 @@
+[package]
+
+name = "gdrived"
+version = "0.0.1"
+authors = ["Florian Wilkens <mrfloya_github@outlook.com>"]
+
+[dependencies]
+docopt = "*"
+docopt_macros = "*"
+
+rustc-serialize = "*"
+
+google-drive2 = "*"

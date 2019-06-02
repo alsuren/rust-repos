@@ -1,0 +1,17 @@
+[package]
+name = "nazar"
+version = "1.0.7"
+authors = ["Younis Shah <younisashah@gmail.com>"]
+description = "A Tile38 client in rust!"
+homepage = "https://github.com/younisshah/nazar"
+documentation = "https://github.com/younisshah/nazar"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+redis = "0.5.3"
+ws = "0.7.3"
+geojson = "0.8.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

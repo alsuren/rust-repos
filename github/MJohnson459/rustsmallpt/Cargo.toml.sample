@@ -1,0 +1,24 @@
+[package]
+name = "smallpt"
+version = "0.2.0"
+authors = ["MJohnson459 <mjohnson459@gmail.com>"]
+
+[features]
+unstable = []
+
+[dependencies]
+cgmath = "0.16"
+docopt = "1.0"
+image = "0.19"
+num_cpus = "1.8"
+num-traits = "0.2"
+rand = "0.5"
+rayon = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+threadpool = "1.7"
+time = "0.1"
+
+
+[profile.release]
+debug = true

@@ -1,0 +1,12 @@
+[package]
+name = "raw-fire"
+version = "0.1.0"
+authors = ["jamcar23 <jamcar23@gmail.com>"]
+
+[dependencies]
+collenchyma = "0.0.8"
+clap = {version = "2", features = ["suggestions", "color", "wrap_help"]}
+
+[[example]]
+name = "af_backend"
+path = "examples/af_backend.rs"

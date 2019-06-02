@@ -1,0 +1,9 @@
+[package]
+name = "adventofcode"
+version = "0.1.0"
+authors = ["Jeremy Colin <jeremy.colin@zalando.de>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
+nom = "4.1.1"

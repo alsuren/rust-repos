@@ -1,0 +1,15 @@
+[package]
+name = "pyffio3"
+version = "0.1.0"
+authors = ["pako"]
+
+[lib]
+name = "pyffio3"
+crate-type = ["cdylib"]
+
+[dependencies]
+cpp_demangle = "0.2"
+
+[dependencies.pyo3]
+version = "0.4"
+features = ["extension-module"]

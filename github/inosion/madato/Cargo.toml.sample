@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    # Core library that renders markdown tables
+    "madato",
+
+    # extras support for extracting from XLS and ODS files
+    "madato_cal",
+
+    # binary command line of madato and madato_cal
+    "madato_cmd",
+]

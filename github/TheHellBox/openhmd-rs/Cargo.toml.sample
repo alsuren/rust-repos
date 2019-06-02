@@ -1,0 +1,10 @@
+[package]
+name = "openhmd-rs"
+version = "0.1.9"
+authors = ["TheHellBox <thehellbox11@gmail.com>"]
+description="Safe OpenHMD bindings"
+license="MIT"
+repository = "https://github.com/TheHellBox/openhmd-rs"
+
+[dependencies]
+openhmd-rs-sys="0.1.5"

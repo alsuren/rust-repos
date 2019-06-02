@@ -1,0 +1,13 @@
+[package]
+name = "xnb"
+version = "0.1.0"
+authors = ["Josh Matthews <josh@joshmatthews.net>"]
+license = "MIT"
+
+[dependencies]
+byteorder = "0.5"
+bitreader = "0.1"
+
+[dev_dependencies]
+image = "0.10"
+squish = { git = "https://github.com/jdm/squish-rs.git" }

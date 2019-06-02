@@ -1,0 +1,84 @@
+[package]
+name = "paymoncoin"
+version = "0.1.0"
+authors = ["Vladislav <negigic@gmail.com>"]
+license = "GPL-3.0"
+edition = "2018"
+
+[dependencies]
+serde_pm = { path = "serde_pm" }
+serde_pm_derive = { path = "serde_pm/serde_pm_derive" }
+parity-rocksdb = "^0.5"
+rust-crypto = "^0.2"
+log = "0.3.9"
+rand = "0.3.20"
+time = "0.1.39"
+threadpool = "1.7.1"
+serde = "^1.0"
+serde_json = "^1.0"
+serde_derive = "^1.0"
+serde_bytes = "0.10.4"
+hex = "^0.3"
+mio = "0.6.13"
+byteorder = "0.3"
+env_logger = "0.3.1"
+#ntrumls-plus = "0.0.6"
+slab = "0.3.0"
+nix = "0.10.0"
+libc = "^0.2"
+rlibc = "1.0.0"
+lazy_static = "1.0"
+iron = "^0.6"
+linked_hash_set = "0.1.2"
+base64 = "0.9.2"
+crossbeam = "0.4.1"
+tokio = "^0.1"
+tokio-io = "0.1"
+tokio-timer = "0.1"
+tokio-codec = "0.1"
+futures = "^0.1"
+bytes = "0.4"
+chrono = "^0.4"
+regex = "^1.1"
+num-traits = "^0.2"
+patricia-trie = "^0.3"
+memorydb = "^0.3"
+ethereum-trie = "0.4.0"
+error-chain = "^0.12"
+
+#rhododendron = "^0.4"
+rhododendron = { path = "rhododendron" }
+secp256k1 = { version = "^0.12", features = ["rand", "serde"] }
+
+[target.'cfg(windows)'.dependencies]
+native-windows-gui = "0.2.0"
+
+[[bin]]
+name = "paymoncoin"
+path = "src/main.rs"
+doc = false
+debug = true
+
+[[bin]]
+name = "paymoncoin_node0"
+path = "src/main.rs"
+doc = false
+debug = true
+
+[[bin]]
+name = "paymoncoin_node1"
+path = "src/main.rs"
+doc = false
+debug = true
+
+[[bin]]
+name = "paymoncoin_node2"
+path = "src/main.rs"
+doc = false
+debug = true
+
+[[bin]]
+name = "paymoncoin_node3"
+path = "src/main.rs"
+doc = false
+debug = true

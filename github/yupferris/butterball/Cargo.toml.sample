@@ -1,0 +1,9 @@
+[package]
+name = "butterball"
+version = "0.1.0"
+authors = ["ferris <jake@fusetools.com>"]
+
+[dependencies]
+nom = "~1.1.0"
+minifb = "0.3.1"
+time = "0.1.34"

@@ -1,0 +1,17 @@
+[package]
+name = "trash-rust"
+version = "0.1.0"
+authors = ["朱博文 <di3663@dingtalk.com>"]
+
+[dependencies]
+regex = "*"
+hyper = "*"
+rust-embed="*"
+
+[dependencies.jvm]
+git = "http://github.com/di3663/rust-jvm"
+version = "*"
+
+[dependencies.jdbc]
+git = "http://github.com/di3663/rust-jdbc"
+version = "*"

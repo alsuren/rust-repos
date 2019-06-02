@@ -1,0 +1,31 @@
+[package]
+name = "mpeg2ts-reader"
+version = "0.11.0"
+authors = ["David Holroyd <dave@badgers-in-foil.co.uk>"]
+description = "Parser for MPEG Transport Stream data"
+repository = "https://github.com/dholroyd/mpeg2ts-reader"
+license = "MIT/Apache-2.0"
+categories = [ "multimedia::video", "parser-implementations" ]
+keywords = [ "mpegts", "ISO-13818-1", "H-222-0" ]
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+fixedbitset = "0.1.8"
+encoding = "0.2"
+log = "0.4"
+
+[dev-dependencies]
+matches = "0.1.6"
+bitstream-io = "0.8"
+criterion = "0.2"
+hex-literal = "0.1.1"
+hex-slice = "0.1.4"
+
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.bench]
+# for profiling,
+debug = true

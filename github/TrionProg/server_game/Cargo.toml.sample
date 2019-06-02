@@ -1,0 +1,14 @@
+[package]
+name = "server_game"
+version = "0.1.0"
+authors = ["trionprog <trionprog@gmail.com>"]
+
+[dependencies]
+nanomsg = "0.6.0"
+zip = "0.1"
+mio = "*"
+slab = "0.3.0"
+time = "*"
+byteorder = "*"
+bincode = "*"
+rustc-serialize = "*"

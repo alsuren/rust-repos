@@ -1,0 +1,9 @@
+[package]
+name = "crypto_utils"
+version = "0.0.1"
+authors = ["me"]
+
+[lib]
+name = "crypto_utils"
+path = "src/lib.rs"
+

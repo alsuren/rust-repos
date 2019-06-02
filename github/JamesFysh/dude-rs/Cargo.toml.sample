@@ -1,0 +1,13 @@
+[package]
+name = "dude-rs"
+version = "0.0.1"
+authors = ["James Fysh <james.fysh@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+path = "src/main.rs"
+name = "dude"
+
+[dependencies]
+tui = "0.5.0"
+termion = "1.5.1"

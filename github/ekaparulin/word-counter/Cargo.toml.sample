@@ -1,0 +1,8 @@
+[package]
+name = "word-counter"
+version = "0.1.0"
+authors = ["Evgeny Kaparulin <ekaparulin@griddynamics.com>"]
+
+[dependencies]
+getopts = "0.2"
+zip = "0.5"

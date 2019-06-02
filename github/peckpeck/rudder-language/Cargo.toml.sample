@@ -1,0 +1,21 @@
+[package]
+name = "ncf2"
+version = "0.1.0"
+authors = ["Benoît Peccatte <benoit.peccatte@normation.com>"]
+edition = "2018"
+
+[dependencies]
+maplit = "^1.0"
+enum_primitive = "*"
+
+[dependencies.nom]
+version = "^4.1"
+#features = ["verbose-errors"]
+
+[dependencies.nom_locate]
+version = "^0.3"
+#features = ["verbose-errors"]
+path = "../nom_locate"
+
+[dev-dependencies]
+proptest = "0.9.1"

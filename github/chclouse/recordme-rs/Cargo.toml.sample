@@ -1,0 +1,8 @@
+[package]
+name = "recordme-rs"
+version = "0.1.0"
+authors = ["Christopher Clouse <christopherhclouse@gmail.com>"]
+
+[dependencies]
+serenity = "0.5.12"
+rust-ini = "0.13.0"

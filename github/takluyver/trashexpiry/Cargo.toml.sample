@@ -1,0 +1,14 @@
+[package]
+name = "trashexpiry"
+version = "0.1.1"
+license = "MIT"
+description = "Delete files that have been in Linux trash for 60 days."
+repository = "https://github.com/takluyver/trashexpiry"
+readme = "README.md"
+authors = ["Thomas Kluyver <thomas@kluyver.me.uk>"]
+
+[dependencies]
+rust-ini = "0.10.0"
+chrono = "0.4"
+clap = "2.27"
+xdg = "^2.1"

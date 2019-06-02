@@ -1,0 +1,18 @@
+[package]
+name = "hcsr04"
+version = "0.1.0"
+description = "Library for working with the HC-SR04 ultrasonic depth sensor"
+readme = "README.md"
+license = "Apache-2.0"
+
+authors = ["Tom Stoneham <tomstoneham@users.noreply.github.com>"]
+repository = "https://github.com/tomstoneham/hcsr04"
+
+keywords = ["ultrasound", "depth", "hcsr-04", "raspberry", "pi"]
+categories = ["embedded", "hardware-support"]
+
+publish = false
+
+[dependencies]
+chrono = "0.4.0"
+rppal = "0.2.0"

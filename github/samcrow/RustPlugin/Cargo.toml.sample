@@ -1,0 +1,12 @@
+[package]
+name = "rust_plugin"
+version = "0.1.0"
+authors = ["Sam Crow <samcrow@uw.edu>"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+
+[dependencies.xplm]
+path = "../xplm"

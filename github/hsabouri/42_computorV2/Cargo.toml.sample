@@ -1,0 +1,14 @@
+[package]
+name = "computorv2"
+version = "0.1.0"
+authors = ["Hugo Sabourin <hsabouri@student.42.fr>"]
+build = "src/build.rs"
+
+[build-dependencies]
+lalrpop = "0.15.2"
+
+[dependencies]
+lalrpop-util = "0.15.2"
+regex = "0.2.1"
+rustyline = "1.0.0"
+snowflake = "1.2"

@@ -1,0 +1,18 @@
+[package]
+name = "layers"
+version = "0.1.0"
+authors = ["ljy <jinyyu@hotmail.com>"]
+
+[dependencies]
+libc = "*"
+log = "*"
+env_logger = "*"
+argparse = "*"
+yaml-rust = "*"
+gmime = "*"
+gmime-sys = "*"
+gobject-2-0-sys = "*"
+glib-sys = "*"
+aho-corasick = "*"
+magic = "*"
+lazy_static = "*"

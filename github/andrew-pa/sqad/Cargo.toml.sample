@@ -1,0 +1,9 @@
+[package]
+name = "sqad"
+version = "0.1.0"
+authors = ["Andrew Palmer"]
+
+[dependencies]
+sdl2 = ">=0.2"
+sdl2_ttf = ">=0.2"
+rand = ">=0.3"

@@ -1,0 +1,10 @@
+[package]
+name = "mutone"
+version = "0.1.0"
+authors = ["elie <maeltrine@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+m3u = "1.0.0"
+tui = "0.6.0"
+termion = "*"

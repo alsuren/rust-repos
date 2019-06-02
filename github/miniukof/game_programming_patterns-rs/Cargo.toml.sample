@@ -1,0 +1,10 @@
+[package]
+name = "game_programming_patterns-rs"
+version = "0.1.0"
+authors = ["Adam Wolski <miniukof@gmail.com>"]
+
+[dependencies]
+rand = '*'
+clippy = '*'
+enum_primitive = '*'
+num = '*'

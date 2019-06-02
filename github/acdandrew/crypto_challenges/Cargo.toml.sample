@@ -1,0 +1,8 @@
+[package]
+name = "crypto_pals"
+version = "0.1.0"
+authors = ["andrewalves"]
+
+[dependencies]
+rand = "*"
+openssl = "*"

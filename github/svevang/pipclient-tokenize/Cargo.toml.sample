@@ -1,0 +1,14 @@
+[package]
+name = "pipclient-tokenize"
+version = "0.1.0"
+authors = ["Sam Vevang <sam.vevang@gmail.com>"]
+
+[build-dependencies.cpython]
+git = "https://github.com/svevang/rust-cpython.git"
+branch= "feature/python-as-crate"
+features = ["build-python-3-5-0"]
+
+[dependencies.cpython]
+git = "https://github.com/svevang/rust-cpython.git"
+branch= "feature/python-as-crate"
+features = ["build-python-3-5-0"]

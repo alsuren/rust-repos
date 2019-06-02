@@ -1,0 +1,14 @@
+[package]
+
+name = "shp"
+version = "0.0.1"
+authors = [ "Nick Quaranto <nick@quaran.to>" ]
+
+[[bin]]
+
+name = "shp"
+
+[dependencies]
+getopts = "0.1.4"
+git2    = "0.1.10"
+regex_macros = "0.1.5"

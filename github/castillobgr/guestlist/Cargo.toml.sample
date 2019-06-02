@@ -1,0 +1,10 @@
+[package]
+name = "guestlist"
+version = "0.1.0"
+authors = ["David Castillo"]
+
+[dependencies]
+rand = "0.4.2"
+serde = "1.0.35"
+serde_derive = "1.0.35"
+rmp-serde = "0.13.7"

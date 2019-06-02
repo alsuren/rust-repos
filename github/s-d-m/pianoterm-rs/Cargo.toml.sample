@@ -1,0 +1,11 @@
+[package]
+name = "pianoterm-rs"
+version = "0.1.0"
+authors = ["Samuel DA MOTA <da.mota.sam@gmail.com>"]
+
+[dependencies]
+clap = "^2"
+midir = "^0.3.2"
+byteorder = "^1.1.0"
+rustbox = "^0.9.0"
+nix = "^0.9.0"

@@ -1,0 +1,13 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Zach Moazeni <zach.moazeni@gmail.com>"]
+edition = "2018"
+license = "MIT"
+
+[lib]
+name = "raytracer"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "0.6"

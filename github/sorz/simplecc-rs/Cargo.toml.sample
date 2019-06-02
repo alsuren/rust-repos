@@ -1,0 +1,37 @@
+[package]
+name = "simplecc"
+version = "0.2.2"
+edition = "2018"
+authors = ["Shell Chen <me@sorz.org>"]
+repository = "https://github.com/sorz/simplecc-rs"
+description = "A simple Chinese Convert library (partially) compatible with OpenCC's dictionaries."
+readme = "README.md"
+keywords = ["OpenCC"]
+categories = ["text-processing"]
+license = "MIT"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "OpenCC/data/dictionary/*.txt",
+    "OpenCC/test/testcases/*",
+]
+
+[badges]
+travis-ci = { repository = "sorz/simplecc-rs" }
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+lazy_static = { version = "1.0.0", optional = true }
+
+[features]
+default = []
+builtin_dicts = ["lazy_static"]
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "benchmark"
+harness = false

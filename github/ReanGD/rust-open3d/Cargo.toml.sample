@@ -1,0 +1,9 @@
+[package]
+name = "rust-open3d"
+version = "0.1.0"
+authors = ["ReanGD"]
+
+[dependencies]
+image = "*"
+nalgebra = "0.2.14"
+glium = { version = "*", features = ["nalgebra"] }

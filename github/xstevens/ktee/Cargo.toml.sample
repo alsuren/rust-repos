@@ -1,0 +1,11 @@
+[package]
+name = "ktee"
+version = "0.1.0"
+authors = ["Xavier Stevens <xavier.stevens@gmail.com>"]
+
+[dependencies]
+clap = "2"
+kafka = "0.6"
+
+[profile.release]
+lto = true

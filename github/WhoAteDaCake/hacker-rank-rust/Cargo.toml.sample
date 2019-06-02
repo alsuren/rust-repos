@@ -1,0 +1,9 @@
+[package]
+name = "fb-scrape"
+version = "0.1.0"
+authors = ["august"]
+
+[dependencies]
+futures = "0.1"
+tokio-core = "0.1"
+reqwest = "0.8"

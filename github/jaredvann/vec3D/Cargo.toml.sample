@@ -1,0 +1,19 @@
+[package]
+name = "vec3D"
+version = "0.3.0"
+authors = ["Jared Vann <jared@vann.me>"]
+edition = "2018"
+description = "A minimal 3D Vector library in Rust."
+repository = "https://github.com/jaredvann/vec3D-rs"
+license = "MIT"
+license-file = "LICENSE"
+readme = "README.md"
+keywords = ["geometry", "vector", "physics"]
+categories = ["science"]
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+nearly_eq = "0.2.4"
+float-cmp = "0.4.0"

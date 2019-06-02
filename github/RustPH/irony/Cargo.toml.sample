@@ -1,0 +1,8 @@
+[package]
+name = "irony"
+version = "0.1.0"
+authors = ["acebes <ace.besmonte.com>"]
+edition = "2018"
+
+[dependencies]
+iron = "0.6.*"

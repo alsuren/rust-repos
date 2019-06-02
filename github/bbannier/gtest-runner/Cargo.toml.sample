@@ -1,0 +1,24 @@
+[package]
+name = "gtest-runner"
+categories = ["command-line-utilities"]
+description = "Run gtest executables in parallel"
+homepage = "https://github.com/bbannier/gtest-runner"
+license = "MIT"
+version = "0.0.15"
+readme = "README.md"
+authors = ["Benjamin Bannier <bbannier@gmail.com>"]
+
+[[bin]]
+name = "gtest-runner"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.32.0"
+console = "0.7.5"
+indicatif = "0.11.0"
+num_cpus = "1.9.0"
+regex = "1.1.0"
+rs_tracing = { version = "1.0.1", features = ["rs_tracing"] }
+
+[dev-dependencies]
+itertools = "0.8.0"

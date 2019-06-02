@@ -1,0 +1,21 @@
+[package]
+name = "sits"
+version = "1.3.0"
+authors = ["Simon Ratner <simon+github@probablyprime.net>"]
+include = ["src/**/*", "application.manifest"]
+build = "build.rs"
+
+[build-dependencies]
+mustache = "*"
+rustc-serialize = "*"
+toml = "*"
+
+[dependencies]
+byteorder = "*"
+docopt = "*"
+rustc-serialize = "*"
+RustyXML = "*"
+time = "*"
+
+[dependencies.iup]
+git = "https://github.com/dcampbell24/iup-rust"

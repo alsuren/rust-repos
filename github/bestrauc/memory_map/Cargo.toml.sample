@@ -1,0 +1,8 @@
+[package]
+name = "memory_map"
+version = "0.1.0"
+authors = ["Benjamin Strauch <b.strauch@fu-berlin.de>"]
+
+[dependencies]
+bitflags = "1.0.3"
+byteorder = "1.2.3"

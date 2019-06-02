@@ -1,0 +1,19 @@
+[package]
+name = "gpx_reader"
+version = "0.0.3"
+authors = [ "Andrii Dmytrenko <refresh.xss@gmail.com>" ]
+description = "Guitar Pro GPX file format parser"
+license = "MIT/BSD-2-Clause"
+
+[[bin]]
+name = "gpx_reader"
+
+[lib]
+name = "guitar_tabs"
+path = "src/lib.rs"
+
+[dependencies]
+rustc-serialize = "*"
+log = "*"
+env_logger = "*"
+byteorder = "*"

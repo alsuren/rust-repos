@@ -1,0 +1,14 @@
+[package]
+name = "simple_units"
+version = "0.1.0"
+authors = ["Willi Kappler <grandor@gmx.de>"]
+license = "MIT"
+description = "A simple unit sytem for Rust"
+readme = "README.md"
+repository = "https://github.com/willi-kappler/simple_units"
+keywords = ["units", "physics", "measure", "science"]
+categories = ["science"]
+documentation = "https://docs.rs/simple_units/0.1.0/simple_units/"
+
+[dependencies]
+# clippy = "*"

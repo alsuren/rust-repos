@@ -1,0 +1,33 @@
+[package]
+name = "bench"
+version = "0.1.0"
+authors = ["John Kåre Alsaker <john.kare.alsaker@gmail.com>"]
+crate-type = "dylib"
+
+[dependencies]
+criterion = { version = "0.2", features=["real_blackbox"] }
+byteorder = "1.1"
+
+[dev-dependencies]
+criterion = { version = "0.2", features=["real_blackbox"] }
+lazy_static = "1.0"
+quickcheck = "0.6.2"
+hashbrown = "0.1"
+
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = 'abort'
+debug = 2
+
+[profile.bench]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = 'abort'
+debug = 2

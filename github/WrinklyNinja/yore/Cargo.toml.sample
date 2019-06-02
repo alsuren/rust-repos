@@ -1,0 +1,43 @@
+[package]
+name = "yore"
+version = "1.0.0"
+authors = ["Oliver Hamlet <oliver.hamlet@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+
+[dependencies]
+actix-web = "0.7"
+chrono = "0.4"
+directories = "1.0"
+futures = "0.1.25"
+image = "0.20.0"
+jpeg-decoder = "0.1.15"
+memmap = "0.7"
+kamadak-exif = "0.3"
+rayon = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+structopt = "0.2"
+tinyfiledialogs = "3.3.5"
+walkdir = "2"
+web-view = "0.2.1"
+
+[dev-dependencies]
+tempfile = "3"
+
+[target.'cfg(windows)'.build-dependencies]
+svg_to_ico = "1.0"
+winres = "0.1"
+
+[features]
+default = []
+filesystem-serve = []
+
+[[bin]]
+name = "yore"
+path = "src/bin/cli.rs"
+
+[[bin]]
+name = "yore-webview"
+path = "src/bin/webview.rs"

@@ -1,0 +1,18 @@
+[package]
+name = "house-display"
+version = "0.0.1"
+authors = ["Morichan <nintendo698@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+reqwest = "0.9.16"
+url = "*"
+chrono = "*"
+serde_json = "1.0"
+scraper = "0.10.0"
+regex = "1"
+
+[dev-dependencies]
+speculate = "0.1"
+mocktopus = "0.7.0"

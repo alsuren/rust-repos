@@ -1,0 +1,22 @@
+[package]
+name = "opencc"
+version = "0.3.0"
+authors = ["messense <messense@icloud.com>"]
+description = "OpenCC binding for Rust"
+repository = "https://github.com/messense/opencc-rs"
+documentation = "https://messense.github.io/opencc-rs"
+readme = "README.md"
+keywords = ["opencc", "chinese"]
+license = "MIT"
+
+[lib]
+name = "opencc"
+
+[dependencies]
+libc = "0.2"
+
+[features]
+unstable = []
+
+[badges]
+travis-ci = { repository = "messense/opencc-rs" }

@@ -1,0 +1,14 @@
+[package]
+name = "scrape"
+version = "0.1.0"
+authors = ["Brian Douglas <ilikerobot@gmail.com>"]
+
+[lib]
+name = "scrape"
+crate-type = ["dylib"]
+
+[dependencies.hyper]
+git = "https://github.com/hyperium/hyper.git"
+
+[dependencies]
+time = "0.1"

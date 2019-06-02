@@ -1,0 +1,16 @@
+[package]
+name = "atomz"
+version = "0.1.0"
+authors = ["Kill KRT"]
+
+[dependencies]
+rand = "*"
+
+[lib]
+name = "atomz_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "atomz"
+path = "src/main.rs"
+doc = false

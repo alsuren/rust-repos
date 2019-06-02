@@ -1,0 +1,18 @@
+[package]
+name = "openmpt"
+description = "Safe bindings for libopenmpt"
+license="BSD-3-Clause-Attribution"
+repository = "https://github.com/sm-Fifteen/openmpt-rs"
+version = "0.3.1"
+authors = ["sm-Fifteen <riboshom@hotmail.com>"]
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
+keywords = ["music", "mod", "module", "tracker"]
+
+[dependencies]
+openmpt-sys = "0.1.0"
+
+[dev-dependencies]
+hound = "3.1.0"

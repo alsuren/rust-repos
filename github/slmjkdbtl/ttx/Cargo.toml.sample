@@ -1,0 +1,10 @@
+[package]
+name = "ttx"
+version = "0.1.0"
+authors = ["t <voygagaga@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+printpdf = "0.2.8"
+ezpanic = "0.0.0"
+

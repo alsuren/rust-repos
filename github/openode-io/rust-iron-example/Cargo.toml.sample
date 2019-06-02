@@ -1,0 +1,8 @@
+[package]
+name = "rtest"
+version = "0.1.0"
+authors = ["Martin Levesque <martin.levesque@ubisoft.com>"]
+
+[dependencies]
+iron = "*"
+params = "*"

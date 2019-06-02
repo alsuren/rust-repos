@@ -1,0 +1,63 @@
+[package]
+name = "openrl"
+version = "0.0.1"
+authors = [
+    "Graham Cox <graham@grahamcox.co.uk>"
+] 
+description = "Open World, Sandbox Roguelike Game"
+repository = "https://github.com/sazzer/openrl"
+readme = "README.md"
+license = "BSD-3-Clause"
+
+[features]
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+
+[profile.test]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+
+[profile.doc]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+
+[[bin]]
+name = "openrl"
+path = "src/bin.rs"
+
+[dependencies.openrl_ui]
+path = "libs/openrl_ui"
+test = true
+
+[[example]]
+name = "ncrs_size"
+path = "examples/ncrs_size.rs"
+
+[[example]]
+name = "ncrs_options"
+path = "examples/ncrs_options.rs"
+
+[[example]]
+name = "ncrs_window_blank"
+path = "examples/ncrs_window_blank.rs"
+

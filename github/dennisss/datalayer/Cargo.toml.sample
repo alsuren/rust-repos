@@ -1,0 +1,11 @@
+[workspace]
+
+members = [
+	"pkg/core",
+	"pkg/haystack",
+	"pkg/raft"
+]
+
+[profile.release]
+lto = true
+panic = 'abort'

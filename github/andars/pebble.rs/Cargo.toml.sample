@@ -1,0 +1,17 @@
+[package]
+name = "pebble"
+version = "0.0.1"
+authors = ["andars"]
+
+[dependencies]
+[dependencies.core]
+path = "libcore"
+[dependencies.alloc]
+path = "liballoc"
+[dependencies.alloc_system]
+path = "liballoc_system"
+
+
+[lib]
+name = "pebble"
+crate-type = ["staticlib","lib"]

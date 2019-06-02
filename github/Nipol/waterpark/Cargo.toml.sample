@@ -1,0 +1,12 @@
+[package]
+name = "waterpark"
+version = "0.1.0"
+authors = ["vagrant"]
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"
+
+[[bin]]
+path = "waterpark/main.rs"
+name = "waterpark"

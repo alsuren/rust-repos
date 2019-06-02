@@ -1,0 +1,27 @@
+[package]
+name = "gfx_shader_watch"
+version = "0.6.0"
+authors = ["Alex Butler <alexheretic@gmail.com>"]
+edition = "2018"
+description = "GFX Utility for watching shaders and reloading pipeline state on the fly"
+repository = "https://github.com/alexheretic/gfx-shader-watch"
+keywords = ["graphics", "gamedev"]
+license = "Apache-2.0"
+
+[dependencies]
+gfx = "0.18"
+log = "0.4"
+notify = "4"
+
+[dev-dependencies]
+gfx_window_glutin = "0.31"
+env_logger = "0.6"
+glutin = "0.21"
+
+[[example]]
+name = "watch-shaders"
+path = "examples/watch_shaders.rs"
+
+[[example]]
+name = "fragment-change"
+path = "examples/fragment_change.rs"

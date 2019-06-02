@@ -1,0 +1,16 @@
+[package]
+name = "humanize-rs"
+description = """
+    For parsing human-readable strings to some types.
+"""
+readme = "README.md"
+license-file = "LICENSE"
+version = "0.1.5"
+homepage = "https://github.com/dtynn/humanize-rs"
+documentation = "https://docs.rs/humanize-rs"
+repository = "https://github.com/dtynn/humanize-rs"
+authors = ["dtynn <dtynn@163.com>"]
+keywords = ["humanize", "human", "human-friendly", "readable", "parser"]
+categories = ["parsing"]
+
+[dependencies]

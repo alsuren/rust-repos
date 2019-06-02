@@ -1,0 +1,17 @@
+[package]
+
+name = "scan_obj"
+version = "0.5.5"
+authors = ["Daniel Keep <daniel.keep@gmail.com>"]
+
+[dependencies]
+
+rustc-serialize = "0.2"
+
+[dependencies.scan]
+
+git = "https://github.com/DanielKeep/rust-scan.git"
+
+[dependencies.scan_util]
+
+git = "https://github.com/DanielKeep/rust-scan-util.git"

@@ -1,0 +1,10 @@
+[package]
+links = "console"
+name = "rust_edge_logger"
+version = "0.1.0"
+authors = ["Gregory Meyer <gregjm@umich.edu>"]
+build = "build.rs"
+
+[lib]
+name = "log_edgescan"
+crate-type = ["cdylib"]

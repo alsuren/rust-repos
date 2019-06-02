@@ -1,0 +1,25 @@
+[package]
+name = "geml"
+version = "1.1.26"
+authors = ["Aidan K. Ewart <aidanprattewart@gmail.com>"]
+edition = "2018"
+
+description = "A simple Generator-orientated ML parser."
+
+documentation = "https://github.com/Baidicoot/geml"
+homepage = "https://github.com/Baidicoot/geml"
+repository = "https://github.com/Baidicoot/geml"
+
+readme = "README.md"
+
+keywords = ["geml", "parser", "markdown", "HTML"]
+
+categorys = ["web-programming", "parser-implementations"]
+
+license = "MIT"
+
+license_file = "LISCENSE"
+
+[dependencies]
+regex = "1"
+lazy_static = "1.2.0"

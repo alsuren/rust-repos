@@ -1,0 +1,47 @@
+[package]
+name = "rust_remover"
+version = "0.0.1"
+authors = ["HeapUnderflow <HeapUnderfl0w@users.noreply.github.com>"]
+publish = false
+description = "Privat Discord bot with Cleverbot Integration & many more features"
+
+# PSUtil feature for Memory statistics.
+[features]
+default = ["memory-stats"]
+
+memory-stats = ["psutil"]
+cleverbot = ["cleverbot_api"]
+youtube-dl = ["url"]
+# Used for some of the warning supressions of clippy
+clippy = [] 
+
+[dependencies]
+log = "0.3.8"
+log4rs = "0.7"
+typemap = "0.3"
+serde_json = "1"
+serde = "1"
+serde_derive = "1"
+futures = "0.1"
+base64 = "0.6"
+rust-crypto="^0.2"
+chrono = "0.4"
+rand = "0.3"
+rayon = "0.8"
+
+[dependencies.serenity]
+version = "0.3"
+features = ["framework", "cache", "voice"]
+
+[dependencies.psutil] # Optional for the Bot memory stat Feature
+version = "1"
+optional = true
+
+[dependencies.cleverbot_api] # Optional cleverbot-api crate
+path = "./cleverbot-api"
+version = "0.1"
+optional = true
+
+[dependencies.url]
+version = "1.5"
+optional = true

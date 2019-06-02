@@ -1,0 +1,25 @@
+[package]
+name = "v4l2"
+version = "0.1.0"
+authors = ["Tae-il Lim <trlim@allwinnerkorea.com>"]
+description = "Video4Linux2 for Rust"
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/Hyperion-Tech/v4l2-rs"
+repository = "https://github.com/Hyperion-Tech/v4l2-rs"
+readme = "README.adoc"
+keywords = ["v4l2", "video"]
+categories = [
+    "multimedia::images",
+    "multimedia::video",
+    "os",
+]
+edition = "2018"
+
+[dependencies]
+libc = "0.2.43"
+memmap = "0.7"
+nix = "0.11.0"
+
+[features]
+default = []
+sunxi-vfe = []

@@ -1,0 +1,22 @@
+[package]
+name = "zerofs"
+version = "0.1.0"
+authors = ["Alvaro Polo <apoloval@gmail.com>"]
+build = "build.rs"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = "0.2.0"
+log = "0.3"
+log4rs = "0.3"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+
+[build-dependencies]
+metadeps = "1"
+
+[package.metadata.pkg-config]
+libzmq = "3.2"

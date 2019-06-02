@@ -1,0 +1,21 @@
+[package]
+name = "iod-error-spam"
+description = """\
+    Retrieves errors from a dedicated MQTT topic and alerts users accordingly \
+    (currently via IRC only)\
+    """
+version = "0.1.0"
+authors = [
+    "Jonas Platte <jplatte+git@posteo.de>",
+    "Kierán Meinhardt <kieran.meinhardt@gmail.com>",
+]
+license = "AGPL-3.0"
+
+[dependencies]
+clap = "2.26.0"
+env_logger = "0.4.3"
+log = "0.3.8"
+rumqtt = "0.10.0"
+serde = "1.0.12"
+serde_derive = "1.0.12"
+serde_json = "1.0.3"

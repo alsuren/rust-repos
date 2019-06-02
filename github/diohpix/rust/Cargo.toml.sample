@@ -1,0 +1,11 @@
+[package]
+name = "sample"
+version = "0.0.1"
+authors = [ "diohpix@gmail.com>" ]
+
+[dependencies]
+bincode = "*"
+byteorder="1.2.1"
+serde_derive = "*"
+serde = "*"
+hex-slice="0.1.2"

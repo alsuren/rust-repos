@@ -1,0 +1,12 @@
+[package]
+name = "rebar"
+version = "0.1.0"
+authors = ["Ticki <Ticki@users.noreply.github.com>"]
+
+[dependencies]
+time = "*"
+nickel = "*"
+hyper = "*"
+serde = "*"
+serde_macros = "*"
+serde_json = "*"

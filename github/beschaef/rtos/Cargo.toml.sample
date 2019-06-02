@@ -1,0 +1,37 @@
+[package]
+name = "rtos"
+version = "0.1.0"
+authors = ["benjamin <beschaef@htwg-konstanz.de>"]
+
+[dependencies]
+rlibc = "1.0.0" # provides implementations  for the common mem* functions
+volatile = "0.2.3" # used for volatile writes to the vga buffer
+spin = "0.4.6" # for spinning mutex
+os_bootinfo = "0.2.0-alpha"
+bitflags = "0.9.1"
+x86_64 = "=0.1.2"
+raw-cpuid = "3.1.0"
+once = "0.3.3"
+linked_list_allocator = "=0.6.1"
+bit_field = "0.7.0"
+cpuio =  "*"
+bootloader = { git = "https://github.com/rust-osdev/bootloader.git", tag = "v0.2.0-alpha-002"}
+
+#[package.metadata.bootimage.bootloader]
+#git = "https://github.com/rust-osdev/bootloader.git"
+#tag = "v0.2.0-alpha-002"
+
+# the profile used for 'cargo build'
+[profile.dev]
+panic = "abort" # disable stack unwinding on panic
+
+# the profile used for 'cargo build --release'
+[profile.release]
+panic = "abort" # disable stack unwinding on panic
+
+[package.metadata.bootimage]
+default-target = "x86_64-rtos"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]

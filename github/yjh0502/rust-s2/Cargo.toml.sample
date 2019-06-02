@@ -1,0 +1,23 @@
+[package]
+name = "s2"
+
+version = "0.0.8"
+authors = ["Jihyun Yu <yjh0502@gmail.com>"]
+
+license = "Apache-2.0"
+
+description = "S2 geometric library"
+homepage = "https://github.com/yjh0502/rust-s2"
+repository = "https://github.com/yjh0502/rust-s2"
+documentation = "https://docs.rs/rust-s2"
+
+keywords = ["geo", "s2"]
+
+[dependencies]
+lazy_static = "1"
+rand = "0.5"
+float_extras = "0.1"
+cgmath = "0.16"
+
+[profile.release]
+debug = 2

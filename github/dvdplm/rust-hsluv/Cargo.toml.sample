@@ -1,0 +1,18 @@
+[package]
+name = "rust-hsluv"
+description = "Color converstions. Convert to/from various color representations: hex, rgb, hsluv, hpluv, lch and xyz."
+repository = "https://github.com/dvdplm/rust-hsluv"
+readme = "README.md"
+keywords = ["hsluv", "hpluv", "color", "conversion"]
+categories = ["encoding", "rendering", "multimedia::images"]
+license = "MIT"
+version = "0.1.3"
+authors = ["David Palm <dvdplm@gmail.com>"]
+
+[lib]
+name = "hsluv"
+
+[dev-dependencies]
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"

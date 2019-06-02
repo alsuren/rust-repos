@@ -1,0 +1,19 @@
+[package]
+
+name = "exbitflags"
+version = "0.1.0"
+authors = ["Centril <twingoow@gmail.com>"]
+
+description = "Macro simplifying bitflag declaration"
+homepage = "https://github.com/Lumenix/rust-exbitflags"
+repository = "https://github.com/Lumenix/rust-exbitflags"
+readme = "README.md"
+license = "ASL2.0"
+keywords = ["macro", "bitflag", "sugar", "syntax"]
+
+[lib]
+
+name = "exbitflags"
+
+[dependencies.bitflags]
+git = "https://github.com/Lumenix/bitflags.git"

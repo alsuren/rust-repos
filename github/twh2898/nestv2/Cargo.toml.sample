@@ -1,0 +1,11 @@
+[package]
+authors = ["Thomas Harrison <twh2898@vt.edu>"]
+name = "nestv2"
+version = "0.1.0"
+
+[dependencies]
+cgmath = "0.15.0"
+glium = "0.17.0"
+glutin = "0.9.0"
+image = "0.14.0"
+error-chain = "0.10.0"

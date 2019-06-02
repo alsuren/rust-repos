@@ -1,0 +1,14 @@
+[package]
+name = "quick-amqp"
+version = "0.1.0"
+authors = ["man_nug <tbess@predikto.com>"]
+
+[lib]
+name = "quick_amqp"
+file = "src/lib.rs"
+
+[dependencies]
+openssl = "0.10.7"
+failure = "0.1.1"
+tokio = "0.1.6"
+amq-protocol = "0.19.1"

@@ -1,0 +1,32 @@
+[package]
+name = "encasa"
+version = "0.1.1"
+authors = ["Kevin Watters <kevinwatters@gmail.com>"]
+
+[workspace]
+
+[dependencies]
+homepage_data = { path = "./src/homepage_data" }
+homepage_view = { path = "./src/homepage_view" }
+
+time = "*"
+futures = "0.1"
+mime = "0.3"
+
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+serde_yaml = "*"
+
+chrono = { version = "*", features = ["serde"] }
+
+shellexpand = "*"
+
+regex = { version = "^0.2" }
+
+clap = "*"
+
+failure = "*"
+actix-web = "*"
+actix = "*"
+env_logger = "*"

@@ -1,0 +1,43 @@
+[package]
+name = "euclider"
+version = "1.0.0"
+description = "A non-euclidean ray tracer"
+license = "MIT/Unlicense"
+authors = ["Jakub Hlusička <jakub.hlusicka@email.cz>"]
+repository = "https://github.com/Limeth/euclider"
+keywords = ["graphics", "rendering", "ray", "tracing"]
+categories = ["rendering::engine"]
+readme = "README.md"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE-MIT",
+    "UNLICENSE",
+]
+
+[features]
+low_precision = []
+default = []
+
+[dependencies]
+clippy = { version = "0.*", optional = true }
+glium = "0.22.0"
+nalgebra = "0.8.2"  # TODO: Update for to the newest version
+image = "0.18.0"
+scoped_threadpool = "0.1.8"
+noise = "0.4.1"
+rand = "0.3.18"
+num = "0.1.41"
+palette = "0.2.1"
+json = "0.11.12"
+parse-generics-shim = "0.1.1"
+mopa = { git = "https://github.com/Limeth/mopa.git" }
+clap = "2.29.0"
+meval = "0.1.0"
+num_cpus = "1.7.0"
+float-cmp = "0.2.5"
+det = "0.1.0"
+boolinator = "0.1.0"
+smallvec = "0.6.6"
+mashup = "0.1.9"

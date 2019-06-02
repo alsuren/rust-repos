@@ -1,0 +1,19 @@
+[package]
+name = "pixelsplurt"
+version = "0.1.0"
+authors = ["Matt Bilker <me@mbilker.us>"]
+edition = "2018"
+
+[dependencies]
+crossbeam = "0.6.0"
+failure = "0.1.5"
+ffmpeg = { version = "0.2.0-alpha.1", features = ["build"] }
+image = "0.20.1"
+lazy_static = "1.2.0"
+rand = "0.6.3"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winapi = { version = "0.3.6", features = ["winsock2"] }
+
+[target.'cfg(not(target_os = "windows"))'.dependencies]
+libc = "0.2.46"

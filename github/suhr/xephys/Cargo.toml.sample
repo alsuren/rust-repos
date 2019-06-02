@@ -1,0 +1,11 @@
+[package]
+authors = ['Сухарик <suhr@i2pmail.org>']
+name = 'xephys'
+version = '0.1.0'
+
+[dependencies]
+jack = '*'
+rosc = '0.1'
+
+[dependencies.miosc]
+git = 'https://github.com/diaschisma/miosc.git'

@@ -1,0 +1,4 @@
+[workspace]
+
+# Optional key, inferred if not present
+members = ["lib", "bin", "jni-lib"]

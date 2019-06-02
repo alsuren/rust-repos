@@ -1,0 +1,13 @@
+[package]
+name = "servur"
+version = "0.3.1"
+license = "MIT"
+authors = ["Anthony Nowell <anowell@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "*"
+
+[dependencies.nickel]
+git = "https://github.com/nickel-org/nickel.rs.git"
+#git = "https://github.com/Ryman/nickel.rs.git"
+#rev = "51418032d7a68609161ab2765828414c3947546a"

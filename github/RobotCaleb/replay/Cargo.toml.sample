@@ -1,0 +1,18 @@
+[package]
+name = "replay"
+version = "0.1.0"
+authors = ["Caleb Anderson <robotrising@gmail.com>"]
+edition = "2018"
+
+# [profile.dev]
+# debug = true
+
+[dependencies]
+futures = "0.1"
+quicksilver = "0.3.7"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+stdweb = "0.4.14"

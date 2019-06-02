@@ -1,0 +1,9 @@
+[package]
+name = "asteroids"
+version = "0.1.0"
+authors = ["Ilya Bogdanov <fumlead@gmail.com>"]
+
+[dependencies]
+rand = "0.4"
+three = { git = "https://github.com/three-rs/three/" }
+euler = { version = "0.3", features = ["mint"] }

@@ -1,0 +1,18 @@
+[package]
+name = "config"
+version = "0.0.0"
+authors = ["Erlend Hofstad Langseth <3rlendhl@gmail.com>", "Kevin Robert Stravers <macocio@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "config"
+path = "lib.rs"
+
+[dependencies]
+failure = "0.1.5"
+ron = "0.5.1"
+serde = "1.0.90"
+
+[dev-dependencies]
+quickcheck = "0.8"
+quickcheck_macros = "0.8"

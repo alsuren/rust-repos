@@ -1,0 +1,9 @@
+[package]
+name = "rustrogue"
+version = "0.1.0"
+authors = ["MrCoolguy37 <MrCoolguy371@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tcod = { version = "0.12", features = ["serialization"]}
+rand = "0.3"

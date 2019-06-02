@@ -1,0 +1,11 @@
+[package]
+name = "hacl"
+version = "0.1.0"
+description = "Rusty bindings to HACL*, a formally verified cryptographic library written in F*"
+authors = ["Aaron Weiss <awe@pdgn.co>"]
+license = "MPL-2.0"
+
+[dependencies]
+failure = "0.1"
+hacl-sys = { path = "hacl-sys", version = "0.1.0" }
+rand = "0.3"

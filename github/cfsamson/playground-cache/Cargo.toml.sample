@@ -1,0 +1,9 @@
+[package]
+name = "smart_cache"
+version = "0.1.0"
+authors = ["Carl Fredrik Samson <cf@samson.no>"]
+edition = "2018"
+
+[dependencies]
+timestamp = {path="../timestamp"}
+chrono = "0.4.6"

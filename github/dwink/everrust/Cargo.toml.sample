@@ -1,0 +1,12 @@
+[package]
+
+name = "everrust"
+version = "0.0.1"
+authors = ["David W. Harks <dave@dwink.net>"]
+
+[dependencies]
+
+[dependencies.hyper]
+
+git = "https://github.com/hyperium/hyper"
+branch = "new-io"

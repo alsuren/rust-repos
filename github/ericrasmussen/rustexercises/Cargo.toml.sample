@@ -1,0 +1,15 @@
+[package]
+name = "exercises"
+version = "0.1.0"
+authors = ["Eric Rasmussen <ericrasmussen@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "exercises"
+
+[workspace]
+members = [
+  "problems/problem1",
+]
+
+[dependencies]

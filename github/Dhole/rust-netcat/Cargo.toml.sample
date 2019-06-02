@@ -1,0 +1,20 @@
+[package]
+name = "netcat"
+version = "0.1.0"
+authors = ["Dhole <dhole@openmailbox.org>"]
+
+#[dependencies.clap]
+#version = "2.32"
+#default-features = false
+#
+## Cherry-pick the features you'd like to use
+#features = [ "color" ]
+
+[dependencies]
+getopts = "0.2"
+mio = "0.6"
+libc = "0.2"
+#enum-primitive-derive = "^0.1"
+num-traits = "^0.1"
+itertools = "0.7.3"
+bitflags = "1.0"

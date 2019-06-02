@@ -1,0 +1,23 @@
+[package]
+name = "radix-tree"
+version = "0.1.0"
+authors = ["eli"]
+
+[dependencies]
+byteorder = "1.2.1"
+simd = "0.2.1"
+smallvec = "0.6.0"
+fnv = "1.0.3"
+
+[features]
+default = []
+print_cache_stats = []
+
+[dev-dependencies]
+quickcheck = "0.6.1"
+rand = "0.4"
+criterion = "0.2"
+
+[[bench]]
+name = "set_bench"
+harness = false

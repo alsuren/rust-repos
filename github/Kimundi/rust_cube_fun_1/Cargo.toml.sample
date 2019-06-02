@@ -1,0 +1,14 @@
+[package]
+name = "fun1"
+version = "0.1.0"
+authors = ["Marvin Löbel <loebel.marvin@gmail.com>"]
+
+[dependencies]
+gfx = "*"
+gfx_window_glutin = "*"
+gfx_device_gl = "*"
+glutin = "*"
+cgmath = "*"
+specs = "*"
+chrono = "0.2.22"
+lazy_static = "*"

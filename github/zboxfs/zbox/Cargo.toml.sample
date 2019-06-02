@@ -1,0 +1,118 @@
+[package]
+name = "zbox"
+version = "0.7.1"
+authors = ["Bo Lu"]
+description = "ZboxFS is a zero-details, privacy-focused in-app file system."
+documentation = "https://docs.rs/zbox"
+homepage = "https://github.com/zboxfs/zbox"
+repository = "https://github.com/zboxfs/zbox"
+readme = "README.md"
+keywords = ["filesystem", "crypto", "security", "privacy", "storage"]
+categories = ["filesystem", "cryptography"]
+license = "Apache-2.0"
+build = "build.rs"
+
+[package.metadata.docs.rs]
+features = [ "libsodium-bundled" ]
+
+[badges]
+travis-ci = { repository = "zboxfs/zbox" }
+
+[lib]
+name = "zbox"
+crate-type = ["rlib", "cdylib", "staticlib"]
+
+[profile.release]
+lto = true
+opt-level = 's'
+
+[features]
+default = ["storage-mem"]
+
+# ffi compilation flag
+ffi = []
+
+# performance test compilation flag
+test-perf = ["storage-file"]
+
+# memory storage
+storage-mem = []
+
+# file storage
+storage-file = []
+
+# faulty storage for random io error test
+storage-faulty = ["storage-file", "lazy_static"]
+
+# sqlite storage
+storage-sqlite = ["libsqlite3-sys"]
+
+# redis storage
+storage-redis = ["redis"]
+
+# zbox storage with faulty transport, for test only
+storage-zbox-faulty = ["storage-zbox", "lazy_static"]
+
+# zbox storage with native transport
+storage-zbox-native = ["storage-zbox", "reqwest"]
+
+# zbox storage with jni transport
+storage-zbox-jni = ["storage-zbox", "jni", "lazy_static"]
+
+# zbox storage with wasm transport
+storage-zbox-wasm = ["storage-zbox", "wasm-bindgen", "js-sys", "web-sys", "wee_alloc", "wasm-logger"]
+
+# zbox storage base dependencies
+storage-zbox = ["http", "serde_json"]
+
+# build-in libsodium dependency
+libsodium-bundled = []
+
+[dependencies]
+cfg-if = "0.1.6"
+env_logger = "0.6.0"
+log = "0.4.6"
+rmp-serde = "0.13.7"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+lazy_static = { version = "1.2.0", optional = true }
+libsqlite3-sys = { version = "0.10.0", optional = true }
+redis = { version = "0.9.1", optional = true }
+http  = { version = "0.1.17", optional = true }
+serde_json = { version = "1.0.39", optional = true }
+reqwest  = { version = "0.9.5", optional = true }
+jni = { version = "0.10.2", optional = true }
+wasm-bindgen = { version = "0.2.45", features = ["serde-serialize"], optional = true }
+js-sys = { version = "0.3.22", optional = true }
+wee_alloc = { version = "0.4.4", optional = true }
+wasm-logger = { version = "0.1.1", optional = true }
+
+[dependencies.linked-hash-map]
+version = "0.5.1"
+features = ["serde_impl"]
+
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger = "0.7.0"
+
+[dependencies.web-sys]
+version = "0.3.22"
+optional = true
+features = [ "Crypto", "WorkerGlobalScope", "XmlHttpRequest", "XmlHttpRequestResponseType", "Blob"]
+
+[dev-dependencies]
+bytes = "0.4.12"
+tempdir = "0.3.7"
+rand = "0.6.5"
+rand_xorshift = "0.1.1"
+
+[target.'cfg(not(target_os = "windows"))'.build-dependencies]
+pkg-config = "0.3.14"
+
+[target.'cfg(target_os = "windows")'.build-dependencies]
+libflate = "0.1"
+pkg-config = "0.3.14"
+reqwest = "0.9"
+tar = "0.4"
+tempfile = "3.0"
+zip = "0.5"
+cc = "1"

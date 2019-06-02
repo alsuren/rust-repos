@@ -1,0 +1,19 @@
+[package]
+authors = ["root"]
+name = "thesogu"
+version = "0.1.0"
+
+[dependencies]
+actix = "*"
+env_logger = "*"
+futures = "0.1.20"
+serde = "*"
+serde_json = "*"
+tera = "0.11.6"
+
+[dependencies.actix-web]
+features = ["alpn"]
+version = "*"
+
+[dependencies.openssl]
+version = "0.10"

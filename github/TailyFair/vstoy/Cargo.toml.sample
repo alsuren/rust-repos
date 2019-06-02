@@ -1,0 +1,13 @@
+[package]
+name = "vstoy"
+version = "0.1.0"
+authors = ["TailyFair <karolis.kalzanauskas@stud.vgtu.lt>"]
+edition = "2018"
+
+[dependencies]
+vst = "0.0.2"
+
+[lib]
+name = "vstoy"
+path="src/lib.rs"
+crate-type = ["cdylib"]

@@ -1,0 +1,10 @@
+[package]
+name = "magog"
+version = "0.1.0"
+authors = ["James A. Gill <jagill@fb.com>"]
+edition = "2018"
+
+[dependencies]
+num-traits = "0.2"
+ordered-float = "1.0"
+rstar = "0.3"

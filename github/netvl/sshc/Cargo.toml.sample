@@ -1,0 +1,36 @@
+[package]
+name = "sshc"
+version = "1.0.0"
+authors = ["Vladimir Matveev <vladimir.matweev@gmail.com>"]
+description = "A simple TUI-based connections/tunnels manager for SSH"
+homepage = "https://github.com/netvl/sshc"
+repository = "https://github.com/netvl/sshc"
+readme = "README.md"
+keywords = ["ssh", "cli", "tui"]
+categories = ["command-line-utilities"]
+license = "MIT"
+
+[dependencies]
+# Command line args
+clap = "2.26"
+
+# Config parsing
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+
+# Execution
+exec = "0.3"
+
+# Utilities
+error-chain = "0.10"
+shellexpand = "1.0"
+either = "1.1"
+itertools = "0.6"
+
+# Console UI
+[dependencies.cursive]
+#version = "0.6"
+git = "https://github.com/gyscos/Cursive"
+default-features = false
+features = ["termion-backend"]

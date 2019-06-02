@@ -1,0 +1,38 @@
+[package]
+name = "tray_rust"
+version = "0.0.1"
+authors = ["Will Usher <will@willusher.io>"]
+
+[[bin]]
+name = "tray_rust"
+doc = false
+
+[dependencies]
+enum-set = "0.0.7"
+rand = "0.4.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+docopt = "0.8.3"
+image = "0.18.0"
+num_cpus = "1.8"
+tobj = "0.1.6"
+byteorder = "1.2"
+scoped_threadpool = "0.1.8"
+bspline = "0.2.2"
+bincode = "0.9"
+mio = "0.5.1"
+la = "0.2.0"
+light_arena = "0.1.2"
+clippy = { version = "0.0.182", optional = true }
+
+[profile.release]
+# How to send extra compiler flag for -march=native equivalent in Rust
+# flag is `-C target-cpu=native`
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+
+[features]
+unstable = []

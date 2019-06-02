@@ -1,0 +1,13 @@
+[package]
+
+name = "music_player"
+version = "0.5.1"
+authors = ["Guillaume Gomez <guillaume1.gomez@gmail.com>"]
+
+[[bin]]
+name = "music_player"
+
+[dependencies]
+sfml = "*"
+fmod = "*"
+num = "*"

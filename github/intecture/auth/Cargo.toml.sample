@@ -1,0 +1,46 @@
+[package]
+name = "intecture-auth"
+version = "0.1.2"
+authors = [ "Peter Hayes <peter.hayes@betweenlines.co.uk>" ]
+license = "MPL-2.0"
+description = "Authentication for Intecture infrastructure. Intecture is the developer friendly, multi-lingual configuration management tool."
+keywords = ["intecture", "auth"]
+homepage = "https://intecture.io"
+repository = "https://github.com/intecture/auth"
+exclude = [
+    "resources/*"
+]
+
+[dev-dependencies]
+
+tempdir = "0.3.*"
+
+[dependencies]
+
+chan = "0.1"
+chan-signal = "0.2"
+czmq = "0.1"
+docopt = "0.7"
+env_logger = "0.4"
+log = "0.3"
+rustc-serialize = "0.3"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+zdaemon = "0.0.2"
+zmq = "0.8"
+
+[lib]
+
+name = "inauth_client"
+path = "src/client.rs"
+
+[[bin]]
+
+name = "inauth"
+path = "src/server.rs"
+
+[[bin]]
+
+name = "inauth_cli"
+path = "src/cli.rs"

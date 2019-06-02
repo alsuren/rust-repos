@@ -1,0 +1,10 @@
+[package]
+name = "grit"
+version = "0.1.0"
+authors = ["Eric Fulmer <eric.r.fulmer@gmail.com>"]
+license = "GPL-2.0"
+homepage = "https://github.com/EFulmer/grit"
+repository = "https://github.com/EFulmer/grit"
+
+[dependencies]
+rust-crypto = "0.2.36"

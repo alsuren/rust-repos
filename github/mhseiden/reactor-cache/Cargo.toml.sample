@@ -1,0 +1,13 @@
+[package]
+name = "reactor-cache"
+version = "0.1.1"
+authors = ["Max Seiden <140dbs@gmail.com>"]
+description = "An async cache using tokio and futures"
+license = "MIT"
+
+[dependencies]
+futures = "0.1.6"
+linked-hash-map = "0.3.0"
+log = "0.3"
+mio = "0.6"
+tokio-core = "0.1"

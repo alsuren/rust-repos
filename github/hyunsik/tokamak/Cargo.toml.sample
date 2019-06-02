@@ -1,0 +1,15 @@
+[package]
+
+name = "flang"
+description = "Dataflow Programming Language"
+version = "0.0.1"
+authors = [ "Flang Development Team" ]
+license = "Apache-2.0"
+keywords = ["Data Analysis", "Data Processing", "MapReduce", "DataFrame", "Database", "Distributed Computing"]
+
+[lib]
+name = "tokamak"
+path = "src/lib.rs"
+
+[dependencies.api]
+path = "src/api"

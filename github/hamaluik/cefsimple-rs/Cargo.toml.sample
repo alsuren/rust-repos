@@ -1,0 +1,15 @@
+[package]
+name = "cefsimple-rs"
+version = "0.1.0"
+authors = ["Kenton Hamaluik <kenton@rehabtronics.com>"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+libc = "^0.2"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["libloaderapi"] }
+
+[build-dependencies]
+bindgen = "^0.49"

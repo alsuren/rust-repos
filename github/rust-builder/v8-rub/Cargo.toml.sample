@@ -1,0 +1,34 @@
+[package]
+name = "v8_rub"
+version = "0.0.6-pre"
+authors = ["Jason Ozias <jason.ozias@ipaper.com>"]
+description = "Rust Builder for v8"
+documentation = "http://rust-builder.github.io/v8-rub"
+homepage = "http://rust-builder.github.io/v8-rub"
+repository = "https://github.com/rust-builder/v8-rub"
+readme = "README.md"
+license = "MIT"
+keywords = ["v8","v8_rub","buildable","rub"]
+build = "build.rs"
+
+[build-dependencies]
+time = "*"
+
+[dependencies]
+docopt = "*"
+rustc-serialize = "*"
+
+[dependencies.buildable]
+git = "https://github.com/rust-builder/buildable.git"
+
+[dependencies.commandext]
+git = "https://github.com/rust-builder/commandext.git"
+
+[dependencies.scm]
+git = "https://github.com/rust-builder/scm.git"
+
+[dependencies.utils]
+git = "https://github.com/rust-builder/utils.git"
+
+[lib]
+name = "v8_rub"

@@ -1,0 +1,25 @@
+[package]
+authors = ["Chris Swindle <christopher.swindle@metaswitch.com>"]
+description = "This crates provides a NetworkConnector for Hyper which adds the ability to perform SRV lookups on URLs."
+keywords = ["hyper", "dns"]
+license = "MIT"
+name = "hyper-dns"
+repository = "https://github.com/cswindle/hyper-dns"
+version = "0.3.0"
+
+[badges]
+
+[badges.travis-ci]
+repository = "cswindle/hyper-dns"
+
+[dependencies]
+futures = "0.1.14"
+hyper = "0.11"
+log = "0.4.3"
+rand = "0.5.5"
+tokio-core = "0.1.8"
+tokio-reactor = "0.1"
+
+[dependencies.trust-dns]
+default-features = false
+version = "0.14.0"

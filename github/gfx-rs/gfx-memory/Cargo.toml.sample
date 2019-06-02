@@ -1,0 +1,15 @@
+[package]
+name = "gfx-memory"
+version = "0.1.0"
+authors = ["omni-viral <scareaangel@gmail.com>"]
+description = "Memory management for gfx-hal"
+repository = "https://github.com/gfx-rs/gfx-memory"
+license = "MIT/Apache-2.0"
+
+[features]
+checks = []
+
+[dependencies]
+failure = "0.1"
+gfx-hal = "0.2.0"
+relevant = "0.2"

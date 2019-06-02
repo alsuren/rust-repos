@@ -1,0 +1,8 @@
+[package]
+name = "avanti"
+version = "0.1.0"
+authors = ["tom <thag9024@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = {version = "2.32", features = ["yaml"]}

@@ -1,0 +1,17 @@
+[package]
+name = "gtk-rs-lgpl-docs"
+version = "0.1.8"
+authors = [
+    "GTK+ Project Developers",
+    "Gtk-rs Project Developers",
+]
+license = "LGPL-2.0"
+description = "LGPL-licensed docs for Gtk-rs crates"
+repository = "https://github.com/gtk-rs/lgpl-docs"
+homepage = "http://gtk-rs.org/"
+
+[lib]
+name = "lgpl_docs"
+
+[dependencies]
+rustdoc-stripper = "0.1.5"

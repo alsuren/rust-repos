@@ -1,0 +1,29 @@
+[package]
+
+name = "mtg"
+version = "0.0.1"
+authors = ["Pal-Kristian Engstad <mrengstad@gmail.com>"]
+tags = []
+
+[lib]
+name = "libmtg"
+path = "src/lib.rs"
+
+[dependencies]
+rustc-serialize = "*"
+regex = "*"
+num = "*"
+curl = "*"
+unicode-segmentation = "*"
+unicode-width = "*"
+reqwest = "*"
+url = "*"
+itertools = "*"
+
+# git = "https://github.com/engstad/curl-rust"
+# path = "../curl-rust"
+# git = "https://github.com/carllerche/curl-rust"
+
+[[bin]]
+name = "mtg"
+path = "src/cmd/main.rs"

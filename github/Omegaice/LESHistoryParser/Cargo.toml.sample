@@ -1,0 +1,8 @@
+[package]
+name = "LESHistoryParser"
+version = "0.1.0"
+authors = ["James Sweet <james.sweet88@googlemail.com>"]
+
+[dependencies]
+clap = "2"
+glob = "0.2.11"

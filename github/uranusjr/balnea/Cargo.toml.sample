@@ -1,0 +1,20 @@
+[package]
+name = "balnea"
+version = "0.1.0"
+authors = ["Tzu-ping Chung <uranusjr@gmail.com>"]
+
+[[bin]]
+name = "empty"
+path = "demo/empty/main.rs"
+
+[dependencies]
+cfg-if = "0.1"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+uuid = { version = "0.7", features = ["v4"] }
+winapi = { version = "^0.3.0", features = [
+    "libloaderapi", "windef", "winuser",
+] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+cocoa = "^0.18.0"

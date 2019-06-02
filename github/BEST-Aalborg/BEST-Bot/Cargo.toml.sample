@@ -1,0 +1,19 @@
+[package]
+name = "best-bot"
+version = "0.2.0"
+authors = ["dennis"]
+
+[dependencies]
+toml = { git = "https://github.com/dvarum12/toml-rs.git" }
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+lazy_static = "*"
+log = "*"
+simple-logging = "*"
+libloading = "*"
+thread-id = "*"
+
+easy_toml_config = { git = "https://github.com/BEST-Aalborg/easy_toml_config" }
+template = { git = "https://github.com/BEST-Aalborg/BEST-Bot_template" }
+

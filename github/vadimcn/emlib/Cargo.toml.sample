@@ -1,0 +1,8 @@
+[package]
+name = "emlib-builder"
+version = "0.1.0"
+authors = ["Vadim Chugunov <vadimcn@gmail.com>"]
+
+[dependencies]
+nom = { version = "3.1.0", features = ["regexp"] }
+regex = "^0.2"

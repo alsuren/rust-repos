@@ -1,0 +1,13 @@
+[package]
+name = "won2010"
+version = "0.1.0"
+authors = ["Vickenty Fesunov <kent@setattr.net>"]
+
+[dependencies]
+nalgebra = { version = "*", default-features=false }
+
+[features]
+std = [ "nalgebra/std" ]
+
+[dev-dependencies]
+rand = "*"

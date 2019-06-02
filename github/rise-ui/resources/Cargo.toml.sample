@@ -1,0 +1,11 @@
+[package]
+name = "resources"
+version = "0.1.0"
+authors = ["Anton Shramko <antonshramko@yandex.ru>"]
+
+[dependencies]
+webrender = { rev = "34d58890821d2e606285f21cd6f4befd46c83d47", git = "https://github.com/servo/webrender" }
+failure_derive = "0.1.3"
+lazy_static = "1.2"
+image = "0.20.1"
+failure = "0.1.3"

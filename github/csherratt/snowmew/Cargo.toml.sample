@@ -1,0 +1,99 @@
+[package]
+
+name = "snowmew"
+version = "0.1.0"
+authors = [
+    "Colin Sherratt <colin.sherratt@gmail.com>",
+]
+
+license = "Apache-2.0"
+description = "A game engine"
+homepage = "https://github.com/csherratt/snowmew"
+repository = "https://github.com/csherratt/snowmew"
+
+
+[lib]
+name = "snowmew"
+path = "src/snowmew.rs"
+
+[dependencies.snowmew-core]
+path = "src/snowmew-core/"
+
+[dependencies.snowmew-graphics]
+path = "src/snowmew-graphics/"
+
+[dependencies.snowmew-position]
+path = "src/snowmew-position/"
+opencl = ["snowmew/opencl"]
+
+[dependencies.snowmew-render]
+path = "src/snowmew-render/"
+
+[dependencies.snowmew-render-gfx]
+path = "src/snowmew-render-gfx/"
+
+[dependencies.snowmew-render-mux]
+path = "src/snowmew-render-mux/"
+
+[dependencies.snowmew-random]
+path = "src/snowmew-random/"
+
+[dependencies.snowmew-input]
+path = "src/snowmew-input/"
+
+[dependencies.snowmew-input-integrator]
+path = "src/snowmew-input-integrator/"
+
+[dependencies]
+time = "*"
+rustc-serialize="*"
+log="*"
+glfw="*"
+cgmath="*"
+
+[[example]]
+name = "cubes"
+path = "examples/cubes/main.rs"
+
+[[example]]
+name = "gears"
+path = "examples/gears/main.rs"
+
+[[example]]
+name = "noclip"
+path = "examples/noclip/main.rs"
+
+[features]
+default = ["debugger", "loader", "timer"]
+use_opencl = ["opencl",
+		      "snowmew-position/use_opencl",
+              "snowmew-render/use_opencl",
+              "snowmew-render-gfx/use_opencl",
+              "snowmew-render-mux/use_opencl"]
+networking = ["snowmew-network"]
+debugger = ["snowmew-debugger"]
+loader = ["snowmew-loader"]
+timer = ["snowmew-timer"]
+
+[dependencies.opencl]
+git = "https://github.com/luqmana/rust-opencl.git"
+optional = true
+
+[dependencies.snowmew-network]
+path = "src/snowmew-network/"
+optional = true
+
+[dependencies.snowmew-debugger]
+path = "src/snowmew-debugger/"
+optional = true
+
+[dependencies.snowmew-loader]
+path = "src/snowmew-loader/"
+optional = true
+
+[dependencies.snowmew-timer]
+path = "src/snowmew-timer/"
+optional = true
+
+[dev-dependencies]
+rand="*"

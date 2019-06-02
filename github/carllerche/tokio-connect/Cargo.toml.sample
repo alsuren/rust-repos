@@ -1,0 +1,9 @@
+[package]
+name = "tokio-connect"
+version = "0.1.0"
+authors = ["Carl Lerche <me@carllerche.com>"]
+license = "MIT"
+
+[dependencies]
+futures = "0.1"
+tokio-io = "0.1"

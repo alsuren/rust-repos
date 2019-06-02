@@ -1,0 +1,11 @@
+[package]
+name = "bgprust"
+version = "0.1.0"
+authors = ["Matias Fontanini <matias.fontanini@gmail.com>"]
+
+[dependencies]
+byteorder = "1.2"
+ipnetwork = "0.13"
+enum-primitive-derive = "0.1"
+num-traits = "0.1"
+chrono = "0.4"

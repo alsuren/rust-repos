@@ -1,0 +1,9 @@
+[package]
+name = "tsz"
+version = "0.1.0"
+license = "MIT"
+authors = ["John-John Tedro <udoprog@tedro.se>"]
+
+[dependencies]
+bit-vec = "0.4.3"
+byteorder = "1.0.0"

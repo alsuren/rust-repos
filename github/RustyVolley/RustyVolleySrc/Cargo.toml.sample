@@ -1,0 +1,10 @@
+[package]
+name = "rustyvolley"
+version = "0.1.0"
+authors = ["cviot <>"]
+
+[dependencies]
+quicksilver = "0.3.7"
+nalgebra = "0.16.13"
+num-traits = "0.2.6"
+rand = "0.6"

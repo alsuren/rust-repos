@@ -1,0 +1,16 @@
+[package]
+name = "camd"
+version = "0.1.0"
+authors = ["Bobby Reynolds <bobby@reynoldsbd.net>"]
+
+[dependencies]
+clap = "2.32"
+http = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+tera = "0.11"
+warp = "0.1"
+
+[features]
+# Disable systemctl invocation for testing environments
+systemd-stub = []

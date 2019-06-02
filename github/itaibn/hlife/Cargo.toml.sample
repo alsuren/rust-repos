@@ -1,0 +1,18 @@
+[package]
+name = "hlife"
+version = "0.1.0"
+authors = ["Itai Bar-Natan <itaibn3141@gmail.com>"]
+
+[features]
+
+default = ["xor_hasher"]
+clippy_pedantic = ["clippy"]
+xor_hasher = []
+4x4_leaf = []
+
+[dependencies]
+fnv = "1.0.2"
+nom = "1.2.0"
+rand = "0.3"
+
+clippy = {version = "*", optional = true}

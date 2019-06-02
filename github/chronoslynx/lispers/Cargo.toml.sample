@@ -1,0 +1,11 @@
+[package]
+name = "lispers"
+version = "0.1.0"
+authors = ["Tim Deeb-Swihart <chronon@me.com>"]
+edition = "2018"
+
+[dependencies]
+
+
+[[bin]]
+name = "lispers"

@@ -1,0 +1,8 @@
+[package]
+name = "rudbg"
+version = "0.1.0"
+authors = ["Joe <joe@crimsonhexagon.us>"]
+
+[dependencies]
+kernel32-sys = "*"
+either = "1.4.0"

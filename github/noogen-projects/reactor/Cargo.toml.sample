@@ -1,0 +1,9 @@
+[package]
+name = "reactor"
+version = "0.1.0"
+authors = ["XX <freecoder.xx@gmail.com>"]
+
+[dependencies]
+gl = "0.10"
+glfw = "0.21"
+cgmath = "0.16"

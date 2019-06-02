@@ -1,0 +1,15 @@
+[package]
+name = "circle-code"
+version = "0.1.0"
+authors = ["Quentin de Quelen <quentin@dequelen.me>"]
+
+[[bin]]
+name = "ccode"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+md5 = "0.3.6"
+urlencoding = "1.0.0"
+reqwest = "0.8.1"
+base64 = "0.8.0"

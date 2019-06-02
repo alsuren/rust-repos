@@ -1,0 +1,7 @@
+[package]
+name = "msi"
+version = "0.1.0"
+authors = ["coopersimon <simon.d.cooper@hotmail.co.uk>"]
+
+[dependencies]
+modscript = {git = "https://github.com/coopersimon/modscript"}

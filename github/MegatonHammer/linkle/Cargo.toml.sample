@@ -1,0 +1,46 @@
+[package]
+name = "linkle"
+version = "0.2.7"
+authors = ["Thog <contact@thog.eu>"]
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/MegatonHammer/linkle/"
+repository = "https://github.com/MegatonHammer/linkle/"
+edition = "2018"
+
+[[bin]]
+name = "linkle"
+path = "src/bin/linkle_clap.rs"
+required-features = ["binaries"]
+
+[[bin]]
+name = "cargo-nro"
+path = "src/bin/cargo-nro.rs"
+required-features = ["binaries"]
+
+[dependencies]
+elf = "0.0.10"
+byteorder = "1"
+lz4 = "1.23.1"
+clap = { version = "2", optional = true }
+structopt = { version = "0.2", optional = true }
+sha2 = "0.7.1"
+scroll = { version = "0.9.0", optional = true }
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+cargo_metadata = { git = "https://github.com/roblabla/cargo_metadata", optional = true }
+url = "1.7.1"
+goblin = { version = "0.0.17", optional = true }
+rust-ini = "0.13"
+failure = "0.1"
+dirs = "1.0"
+block-modes = "0.2"
+aes = "0.3"
+num-traits = "0.2"
+derive_more = "0.13"
+cmac = "0.2.0"
+blz-nx = { git = "https://github.com/Thog/blz-nx-rs" }
+bit_field = "0.10.0"
+
+[features]
+binaries = ["structopt", "cargo_metadata", "scroll", "goblin", "clap"]

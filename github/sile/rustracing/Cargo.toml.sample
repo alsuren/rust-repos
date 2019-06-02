@@ -1,0 +1,26 @@
+[package]
+name = "rustracing"
+version = "0.1.8"
+authors = ["Takeru Ohta <phjgt308@gmail.com>"]
+description = "OpenTracing API for Rust"
+homepage = "https://github.com/sile/rustracing"
+repository = "https://github.com/sile/rustracing"
+readme = "README.md"
+keywords = ["opentracing", "distributed-tracing"]
+categories = ["web-programming"]
+license = "MIT"
+edition = "2018"
+
+[badges]
+travis-ci = {repository = "sile/rustracing"}
+codecov = {repository = "sile/rustracing"}
+
+[features]
+stacktrace = [ "backtrace" ]
+default = [ "stacktrace" ]
+
+[dependencies]
+backtrace = { version = "0.3", optional = true }
+crossbeam-channel = "0.3"
+rand = "0.6"
+trackable = "0.2"

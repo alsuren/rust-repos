@@ -1,0 +1,13 @@
+[package]
+authors = ["buck <buckhx@gmail.com>"]
+name = "git-bump"
+version = "0.0.7"
+
+[dependencies]
+git2 = "0.6"
+lazy_static = "0.2.2"
+regex = "0.1"
+
+[dependencies.clap]
+features = ["suggestions", "color", "wrap_help", "yaml"]
+version = "2"

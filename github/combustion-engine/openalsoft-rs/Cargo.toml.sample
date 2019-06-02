@@ -1,0 +1,24 @@
+[package]
+authors = ["Aaron Trent <novacrazy@gmail.com>"]
+name = "openalsoft-rs"
+version = "0.1.0"
+
+[dependencies]
+lazy_static = "0.2.2"
+serde = "0.8.21"
+serde_derive = "0.8.21"
+trace-error = "0.1"
+
+[dependencies.nalgebra]
+git = "https://github.com/combustion-engine/nalgebra"
+
+[dependencies.openalsoft-sys]
+git = "https://github.com/combustion-engine/openalsoft-sys"
+
+[dev-dependencies]
+dsp-chain = "0.13.1"
+pitch_calc = "0.11.0"
+time_calc = "0.11.0"
+
+[lib]
+name = "openal"

@@ -1,0 +1,21 @@
+[package]
+name = "luster"
+version = "0.1.0"
+authors = ["kyren <kerriganw@gmail.com>"]
+edition = "2018"
+license = "MIT OR CC0"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[dependencies]
+clap = "2.32"
+gc-arena = "0.1"
+gc-sequence = "0.1"
+num-traits = "0.2"
+rand = "0.6"
+rand_xoshiro = "0.1"
+rustc-hash = "1.0"
+rustyline = "3.0"

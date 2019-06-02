@@ -1,0 +1,12 @@
+[package]
+name = "rhsm"
+version = "0.0.1"
+authors = ["Igor Gnatenko <ignatenko@redhat.com>"]
+
+[dependencies]
+base64 = "0.9"
+flate2 = "1"
+iter-read = "0.1"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"

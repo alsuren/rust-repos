@@ -1,0 +1,25 @@
+[package]
+name = "aius-authd"
+description = "Authentication micro-service plugged on LDAP"
+version = "0.1.0"
+authors = ["Quentin Gliech <quentingliech@gmail.com>"]
+
+[dependencies]
+bodyparser = "0.4.*"
+clap = "~2.20.0"
+iron = "0.4.*"
+log = "0.3.*"
+logger = "0.2.*"
+openldap = "1.1.*"
+redis = "0.8.*"
+router = "0.4.*"
+serde = "0.8"
+serde_json = "0.8"
+serde_derive = "0.8"
+simplelog = "0.4.*"
+uuid = { version = "0.2", features = ["serde", "v4"] }
+
+[dependencies.toml]
+version = "0.2"
+default-features = false
+features = ["serde"]

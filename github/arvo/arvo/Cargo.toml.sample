@@ -1,0 +1,25 @@
+[package]
+name = "arvo"
+version = "0.0.0"
+authors = ["Benjamin Wang <benjamin.jl.wang@gmail.com>"]
+
+[lib]
+name = "arvoc"
+path = "src/lib.rs"
+
+[dependencies.libprelude]
+path = "src/libprelude"
+version = "*"
+
+[dependencies.libruntime]
+path = "src/libruntime"
+version = "*"
+
+[dependencies]
+getopts = "*"
+lazy_static = "*"
+libc = "*"
+llvm-sys = "39"
+regex = "*"
+
+

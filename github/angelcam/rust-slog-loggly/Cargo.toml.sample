@@ -1,0 +1,32 @@
+[package]
+name = "slog-loggly"
+version = "0.3.0"
+authors = ["Angelcam, Inc."]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/angelcam/rust-slog-loggly"
+documentation = "https://docs.rs/slog-loggly"
+homepage = "https://github.com/angelcam/rust-slog-loggly"
+description = """
+This is an unofficial Loggly drain for the slog logging infrastructure in Rust.
+"""
+categories = ["development-tools::debugging"]
+keywords = ["logging", "slog", "loggly"]
+
+[features]
+default = ["runtime"]
+runtime = ["tokio"]
+
+[dependencies]
+bytes       = "0.4"
+futures     = "0.1"
+hyper       = "0.12"
+hyper-tls   = "0.3"
+serde       = "1.0"
+serde_json  = "1.0"
+slog        = "2.3"
+tokio-timer = "0.2.6"
+
+[dependencies.tokio]
+version  = "0.1"
+optional = true

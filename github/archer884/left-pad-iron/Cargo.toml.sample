@@ -1,0 +1,15 @@
+[package]
+name = "left-pad-iron"
+version = "0.1.1"
+authors = ["J/A <archer884@gmail.com>"]
+
+[dependencies]
+clippy = "0.0.69"
+iron = "*"
+padme = {git = "https://github.com/archer884/padme.git"}
+router = "*"
+rustc-serialize = "*"
+
+[features]
+default = ["ssl"]
+ssl = ["iron/ssl"]

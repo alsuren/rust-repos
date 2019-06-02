@@ -1,0 +1,21 @@
+[package]
+authors = ["David Irvine <david.irvine@maidsafe.net>"]
+name = "voice"
+description = "Attempting to use tts and stt in rust, exploration only. no code yet"
+license = "GPL-3.0"
+version = "0.1.5-pre"
+
+[dependencies]
+clap = "2.16.4"
+error-chain = "0.5.0"
+eudex = "0.1.1"
+mpv = "0.2.2"
+notify = "3.0.0"
+petgraph = "0.4.1"
+rustc-serialize = "0.3.19"
+time = "0.1.35"
+toml = "0.2.1"
+
+[dependencies.clippy]
+optional = true
+version = "~0.0.95"

@@ -1,0 +1,22 @@
+[package]
+name = "flow-synth"
+version = "0.1.0"
+authors = ["Noah Weninger <nweninge@ualberta.ca>"]
+
+[dependencies]
+glutin = "*"
+gfx = "*"
+gfx_window_glutin = "*"
+gfx_glyph = "*"
+gfx_device_gl = "*"
+num = "*"
+futures-preview = "*"
+crossbeam = "*"
+jack = "*"
+ndarray = "*"
+nfd = "*"
+notify = "4.x"
+cassowary = "*"
+ron = "*"
+serde = "*"
+serde_derive = "*"

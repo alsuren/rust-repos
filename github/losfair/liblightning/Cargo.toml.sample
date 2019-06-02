@@ -1,0 +1,17 @@
+[package]
+name = "liblightning"
+version = "0.0.2"
+authors = ["losfair <zhy20000919@hotmail.com>"]
+description = "High-performance general-purpose stackful coroutine library."
+license = "LGPL-3.0"
+keywords = ["coroutine", "concurrent", "async", "server"]
+
+[badges]
+travis-ci = { repository = "losfair/liblightning" }
+
+[dependencies]
+libc = "0.2"
+lazy_static = "1.0"
+
+[build-dependencies]
+cc = "1.0"

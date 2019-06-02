@@ -1,0 +1,27 @@
+[package]
+name = "rise"
+version = "0.1.0"
+authors = ["Nick Tzaperas <nick@nijotz.com>"]
+
+[[bin]]
+name = "viewer"
+path = "src/bin/viewer.rs"
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[lib]
+name = "rise"
+path = "src/rise.rs"
+
+[dependencies]
+env_logger = "0.3"
+log = "0.3.6"
+nalgebra = "0.6.0"
+piston = "0.17.0"
+piston2d-graphics = "0.13.0"
+pistoncore-glutin_window = "0.20.0"
+piston2d-opengl_graphics = "0.23.0"
+rand = "0.3.14"
+time = "0.1"

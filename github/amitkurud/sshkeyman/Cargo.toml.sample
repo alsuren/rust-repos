@@ -1,0 +1,8 @@
+[package]
+name = "shell_key_man"
+version = "0.1.0"
+authors = ["ashishkondekar015"]
+edition = "2018"
+
+[dependencies]
+ssh2 = "0.3"

@@ -1,0 +1,34 @@
+[package]
+name = "trimmer"
+description = """
+    A whitespace- and memory-friendly template engine
+"""
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["template", "render", "whitespace"]
+categories = ["template-engine"]
+homepage = "http://github.com/tailhook/trimmer"
+documentation = "http://trimmer.readthedocs.io"
+version = "0.3.6"
+authors = ["paul@colomiets.name"]
+
+[dependencies]
+matches = "0.1.6"
+quick-error = "1.2.0"
+combine = "2.4.0"
+regex = "0.2.2"
+serde_json = { version="1.0.2", optional=true }
+owning_ref = "0.3.3"
+argparse = "0.2.1"
+
+[dev-dependencies]
+difference = "1.0.0"
+
+[features]
+default = ["json"]
+json = ["serde_json"]
+
+
+[[bin]]
+name = "trimmer"
+doc = false

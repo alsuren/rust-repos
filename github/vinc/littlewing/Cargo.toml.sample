@@ -1,0 +1,32 @@
+[package]
+name = "littlewing"
+description = """
+A chess engine rated at 2050+ ELO, compatible with both UCI and XBoard
+protocols, with a nice CLI, and a documented library.
+"""
+version = "0.5.0"
+license = "GPL-3.0"
+authors = ["Vincent Ollivier <v@vinc.cc>"]
+repository = "https://github.com/vinc/littlewing"
+homepage = "https://vinc.cc/projects/littlewing.html"
+readme = "README.md"
+
+[lib]
+name = "littlewing"
+path = "src/lib.rs"
+
+[[bin]]
+name = "littlewing"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+getopts = "0.2"
+lazy_static = "1.0"
+rand = "0.6"
+regex = "1.0"
+rustyline = "3.0"
+time = "0.1"
+
+[badges]
+travis-ci = { repository = "vinc/littlewing" }

@@ -1,0 +1,7 @@
+[package]
+name = "node-servo-canvas"
+version = "0.1.0"
+authors = ["LongYinan <lynweklm@gmail.com>"]
+
+[dependencies]
+canvas = { path = "servo/components/canvas" }

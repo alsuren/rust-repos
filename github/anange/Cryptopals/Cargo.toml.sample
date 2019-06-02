@@ -1,0 +1,8 @@
+[package]
+name = "cryptopals"
+version = "0.1.0"
+authors = ["anange <a.angelakis@outlook.com>"]
+
+[dependencies]
+openssl = "0.10"
+rand = "0.3.14"

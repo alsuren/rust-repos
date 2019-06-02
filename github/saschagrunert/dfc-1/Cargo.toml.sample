@@ -1,0 +1,8 @@
+[package]
+name = "dfc"
+version = "0.1.0"
+authors = ["Sebastian Spieß and Sascha Grunert"]
+
+[dependencies]
+libc = "0"
+crc = "1"

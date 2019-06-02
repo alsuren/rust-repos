@@ -1,0 +1,28 @@
+[package]
+name = "bender_job"
+version = "0.2.13"
+license = "MIT"
+readme = "README.md"
+authors = ["David Huss <dh@widerstandzwecklos.at>"]
+description = "As part of the bender renderfarm, the bender-job library descripes the job and task datatypes and provides common methods for their creation, storage and manipulation"
+workspace = ".."
+
+[package.metadata.deb]
+extended-description = "As part of the bender renderfarm, the bender-job library descripes the job and task datatypes and provides common methods for their creation, storage and manipulation"
+depends = "$auto"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+chrono-humanize = "*"
+rand = "0.6"
+regex = "1"
+reqwest = "0.9"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+tempfile = "3"
+atomicwrites = "0.2"
+blake2 = "0.8"
+
+bender_config = { git = "https://github.com/atoav/bender-config.git" }
+bender_bouncer = { git = "https://github.com/atoav/bender-bouncer.git" }

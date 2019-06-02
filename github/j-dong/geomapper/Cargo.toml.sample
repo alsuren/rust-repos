@@ -1,0 +1,20 @@
+[package]
+name = "geomapper"
+version = "0.1.0"
+authors = ["Jack Youstra <jack@youstra.com>", "James Dong <dong.james.sept14@gmail.com>"]
+
+[profile.release]
+debug = true
+
+[dependencies]
+vulkano = { git = "https://github.com/vulkano-rs/vulkano" }
+vulkano-shader-derive = { git = "https://github.com/vulkano-rs/vulkano" }
+vulkano-win = { git = "https://github.com/vulkano-rs/vulkano" }
+winit = "0.17"
+zip = "0.3.2"
+byteorder = "1.2.2"
+serde = "1.0.44"
+serde_derive = "1.0.44"
+bincode = "1.0.0"
+cgmath = "0.16.1"
+image = "0.19.0"

@@ -1,0 +1,20 @@
+[package]
+name = "spotify"
+version = "0.0.1"
+authors = ["o@42mm.org"]
+
+[[lib]]
+name = "spotify"
+path = "src/spotify/lib.rs"
+
+[[bin]]
+name = "spotify-query"
+
+[dependencies.http]
+git = "https://github.com/chris-morgan/rust-http.git"
+
+[dependencies.docopt]
+git = "https://github.com/burntsushi/docopt.rs"
+
+[dependencies.docopt_macros]
+git = "https://github.com/burntsushi/docopt.rs"

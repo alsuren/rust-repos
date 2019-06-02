@@ -1,0 +1,29 @@
+[package]
+name = "renegadex_patcher"
+version = "0.1.0"
+authors = ["SonnyX"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.5"
+json = "0.11.13"
+sha2 = "0.8.0"
+hex = "0.3.2"
+rust-ini = "0.13.0"
+rayon = "1.0.3"
+rand = "0.6.5"
+xdelta = { git = "https://github.com/SonnyX/xdelta-decoder-rust.git" }
+num_cpus = "1.10.0"
+hyper = "0.12.27"
+tokio = "0.1.18"
+tokio-reactor = "0.1.9"
+url = "1.7.2"
+futures = "*"
+
+[profile.test]
+opt-level = 3
+debug = 2
+
+[profile.dev]
+opt-level = 3
+debug = true

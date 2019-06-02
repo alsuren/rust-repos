@@ -1,0 +1,15 @@
+[package]
+authors = ["Ernestas Poskus <ernestas.poskus@gmail.com>"]
+description = """
+Various text manipulation functions through traits on primitive & advanced types
+"""
+documentation = "https://github.com/ernestas-poskus/text.rs"
+homepage = "https://github.com/ernestas-poskus/text.rs"
+license = "BSD-3-Clause"
+name = "text"
+repository = "https://github.com/ernestas-poskus/text.rs"
+version = "0.1.0"
+
+[dependencies]
+lazy_static = "1.0.0"
+regex = "0.2.3"

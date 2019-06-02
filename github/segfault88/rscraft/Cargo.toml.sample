@@ -1,0 +1,13 @@
+[package]
+name = "rscraft"
+version = "0.1.0"
+authors = ["Malcolm Lockyer <segfault88@gmail.com>"]
+
+[dependencies]
+image = "*"
+cgmath = "0.16.*"
+nalgebra = "0.15.0"
+vulkano = "*"
+vulkano-shader-derive = "*"
+vulkano-win = "*"
+winit = "0.11.*"

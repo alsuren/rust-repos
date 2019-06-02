@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "eos",
+    "new_type_deref_derive",
+    "examples/review",
+]
+
+[replace]
+"eos:0.1.0" = { path = "eos" }
+
+[profile.release]
+debug = false
+lto = true
+opt-level = 's'
+panic = 'abort'

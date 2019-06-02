@@ -1,0 +1,9 @@
+[package]
+name = "crawl_model"
+version = "0.1.0"
+authors = ["Richard McCormack <brick@brick.codes>"]
+edition = "2018"
+
+[dependencies]
+diesel = { version = "1", features = ["sqlite", "32-column-tables"] }
+dotenv = "0.10"

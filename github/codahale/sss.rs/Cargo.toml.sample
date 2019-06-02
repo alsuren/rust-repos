@@ -1,0 +1,15 @@
+[package]
+
+name = "sss"
+version = "0.0.1"
+authors = ["Coda Hale <coda.hale@gmail.com>"]
+
+[dependencies]
+rand = "*"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "benches"
+harness = false

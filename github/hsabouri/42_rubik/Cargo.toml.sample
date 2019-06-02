@@ -1,0 +1,9 @@
+[package]
+name = "rubik"
+version = "0.1.0"
+authors = ["Hugo Sabourin <hsabouri@student.42.fr>"]
+
+[dependencies]
+rand = "0.3.14"
+clap = "~2.31"
+colored = "1.6.0"

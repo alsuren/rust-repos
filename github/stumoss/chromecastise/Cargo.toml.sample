@@ -1,0 +1,19 @@
+[package]
+name = "chromecastise"
+version = "1.0.5"
+authors = ["Stuart Moss <samoss@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies.clap]
+version = "^2"
+default-features = false
+features = ["suggestions"]
+
+[dependencies.clap]
+version = "^2"
+default-features = false
+features = ["suggestions"]
+
+[dependencies]
+num_cpus = "1.0"
+log = "*"

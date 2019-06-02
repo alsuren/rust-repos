@@ -1,0 +1,7 @@
+[package]
+name = "bob_os"
+version = "0.1.0"
+authors = ["Robert Wespetal <robert@wespetal.com>"]
+
+[lib]
+crate-type = ["staticlib"]

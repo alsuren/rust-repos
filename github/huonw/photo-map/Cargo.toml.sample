@@ -1,0 +1,28 @@
+[package]
+
+name = "photo_map"
+version = "0.0.1"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+[dependencies]
+rexiv2 = "0.2"
+getopts = "0.2"
+simple_parallel = "0.1"
+rusqlite = "0.0.17"
+chrono = "0.2"
+num = "0.1"
+log = "0.3"
+env_logger = "0.3"
+rustc-serialize = "0.3"
+rand = "0.3"
+num_cpus = "0.1"
+hyper = "0.3"
+image = "0.3"
+
+iron = "0.1"
+router = "0.0"
+flate2 = "0.2"
+nickel = "0.2"
+nickel_macros = "0.1"
+
+cogset = "0.1"

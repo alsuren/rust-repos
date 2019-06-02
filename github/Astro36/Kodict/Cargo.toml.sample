@@ -1,0 +1,18 @@
+[package]
+name = "kodict"
+description = "Korean Dictionary Manager for Rust"
+version = "0.2.1"
+authors = ["Seungjae Park <astro.psj@gmail.com>"]
+edition = "2018"
+documentation = "https://docs.rs/kodict"
+repository = "https://github.com/Astro36/kodict"
+readme = "README.md"
+keywords = ["korean", "dictionary", "crawler" , "hangul"]
+license = "MIT"
+
+[dependencies]
+calamine = "0.15"
+lazy_static = "1.2"
+rayon = "1.0"
+regex = "1"
+reqwest = "0.9"

@@ -1,0 +1,22 @@
+[package]
+name = "hal"
+version = "0.1.0"
+authors = ["Jason Ramapuram <jason.ramapuram@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "*"
+rand = "*"
+csv = "*"
+num= "*"
+nalgebra = "*"
+itertools = "*"
+statistical = "*"
+arrayfire = { path ="arrayfire-rust" }
+
+[lib]
+name = "hal"
+path = "src/lib.rs"
+
+[[example]]
+name = "perceptron"
+path = "examples/perceptron.rs"

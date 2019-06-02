@@ -1,0 +1,40 @@
+[package]
+name = "pi_serv"
+version = "0.1.0"
+authors = [""]
+
+[dependencies]
+libc = "*"
+env_logger = "0.6.1"
+fnv = "*"
+magnetic = "2.0.0"
+clap = "2.31.2"
+toml = "0.4.6"
+json = "0.11.13" 
+lazy_static = "*"
+rand = "0.5.2"
+mqtt3 = { git = "https://github.com/tekjar/mqtt3" }
+pi_vm = { path = "../pi_vm" }
+hash_value = { path = "../pi_math/hash_value" }
+pi_crypto = { path = "../pi_crypto" }
+pi_db = { path = "../pi_db" }
+net = { path = "../pi_net/net" }
+mqtt = { path = "../pi_net/mqtt" }
+rpc = { path = "../pi_net/rpc" }
+httpc = { path = "../pi_net/httpc" }
+https = { path = "../pi_net/https" }
+# pi_p2p = { path = "../pi_p2p" }
+pi_store = { path = "../pi_store" }
+atom = { path = "../pi_lib/atom" }
+worker = { path = "../pi_lib/worker" }
+handler = { path = "../pi_lib/handler" }
+bon = { path = "../pi_lib/bon" }
+file = { path = "../pi_lib/file" }
+gray = {path = "../pi_lib/gray" }
+guid = {path = "../pi_lib/guid" }
+util = {path = "../pi_lib/util" }
+sinfo = {path = "../pi_lib/sinfo" }
+timer = {path = "../pi_lib/timer" }
+ordmap = {path = "../pi_lib/ordmap" }
+apm = {path = "../pi_lib/apm" }
+time = { path = "../pi_lib/time"}

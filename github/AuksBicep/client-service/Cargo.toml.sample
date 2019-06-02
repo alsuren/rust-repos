@@ -1,0 +1,15 @@
+[package]
+name = "client-service"
+version = "0.1.0"
+authors = ["auksbicep"]
+
+[dependencies]
+futures = "*"
+env_logger = "0.5"
+
+actix = "0.5"
+actix-web = "0.3.3"
+
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"

@@ -1,0 +1,22 @@
+[package]
+name = "learn-some-rust"
+version = "0.1.0"
+authors = ["scorix <scorix@gmail.com>"]
+
+[[bin]]
+name = "exercise1"
+
+[dependencies.rand]
+version = "*"
+
+[[bin]]
+name = "exercise2"
+
+[dependencies.redis]
+version = "*"
+
+[[bin]]
+name = "exercise3"
+
+[dependencies.mysql]
+version = "*"

@@ -1,0 +1,20 @@
+[package]
+name = "siege-net"
+version = "0.3.1"
+authors = [ "Mike Dilger <mike@optcomp.nz>" ]
+description = "Network protocol library for the Siege Engine"
+repository = "https://github.com/SiegeEngine/siege-net"
+readme = "README.md"
+keywords = [ "udp", "network", "protocol", "game" ]
+license = "MIT"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"
+ring = "0.13"
+untrusted = "0.6"
+futures = "0.1"
+log = "0.4"
+lazy_static = "1.1"
+error-chain = "0.12"

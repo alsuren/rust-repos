@@ -1,0 +1,20 @@
+[package]
+name = "stackparam"
+version = "0.1.0"
+authors = ["Chad Retz <chad.retz@gmail.com>"]
+build = "build-helper-class.rs"
+
+[lib]
+crate-type = ["dylib", "rlib"]
+
+[dependencies]
+jni-sys = "0.2"
+log = "0.3"
+env_logger = "0.3"
+
+[dev-dependencies]
+zip = { version = "0.2", default-features = false }
+
+[build-dependencies]
+log = "0.3"
+env_logger = "0.3"

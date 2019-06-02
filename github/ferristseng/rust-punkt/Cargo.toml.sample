@@ -1,0 +1,18 @@
+[package]
+name            = "punkt"
+version         = "1.0.5"
+authors         = ["Ferris Tseng <ferristseng@fastmail.fm>"]
+keywords        = ["punkt", "sentence", "token", "tokenizer"]
+license         = "MIT/Apache-2.0"
+repository      = "https://github.com/ferristseng/rust-punkt"
+description     = "An implementation of a Punkt sentence tokenizer"
+readme          = "README.md"
+
+[dependencies]
+num             = "0.1"
+phf             = { version = "0.7", features = ["macros"] }
+rustc-serialize = "0.3"
+rust-freqdist   = "0.1"
+
+[dev-dependencies]
+walkdir         = "0.1"

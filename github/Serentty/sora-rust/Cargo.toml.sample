@@ -1,0 +1,30 @@
+[package]
+name = "sora"
+version = "0.0.1"
+authors = ["Gareth Poole"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[features]
+default = ["external_funcs"]
+external_funcs = []
+
+[dependencies]
+rlibc = "0.1.4"
+spin = "0.3.4"
+
+[dependencies.core]
+path = "stdlib/libcore"
+
+[dependencies.rustc_unicode]
+path = "stdlib/librustc_unicode"
+
+[dependencies.alloc]
+path = "stdlib/liballoc"
+
+[dependencies.collections]
+path = "stdlib/libcollections"
+
+[dependencies.gpmalloc]
+path = "libgpmalloc"

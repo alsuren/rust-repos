@@ -1,0 +1,20 @@
+[package]
+name = "r2k"
+version = "0.1.0"
+authors = ["SiIky <SiIky@users.noreply.github.com>"]
+repository = "https://github.com/siiky/r2k"
+readme = "README.md"
+license = "Unlicense"
+
+[dependencies]
+clap = "*"
+unicode-jp = "*"
+
+[lib]
+name = "r2k"
+path = "src/lib.rs"
+
+[[bin]]
+doc = false
+name = "r2k"
+path = "src/main.rs"

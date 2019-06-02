@@ -1,0 +1,10 @@
+[package]
+name = "Portal"
+version = "0.1.0"
+authors = ["trolleyman <cgtrolley@gmail.com>"]
+
+[dependencies]
+nalgebra = "0.4.0"
+ncollide = "0.6.0"
+sdl2 = "0.12.0"
+gl = "0.5.2"

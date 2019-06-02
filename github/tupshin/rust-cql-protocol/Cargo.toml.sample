@@ -1,0 +1,19 @@
+[package]
+
+name = "cql-parser"
+version = "0.0.1"
+authors = ["Tupshin Harper <tupshin@tupshin.com>"]
+
+[[bin]]
+name="example"
+path="src/bin/example.rs"
+
+# [[bin]]
+# name="test"
+# path="src/bin/test.rs"
+
+[lib]
+name = "cql"
+
+[dependencies.lazy_static]
+git = "https://github.com/Kimundi/lazy-static.rs/"

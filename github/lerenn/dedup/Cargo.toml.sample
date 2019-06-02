@@ -1,0 +1,8 @@
+[package]
+name = "dedup"
+version = "0.1.0"
+authors = ["Louis FRADIN <louis.fradin@gmail.com>"]
+
+[dependencies]
+argparse = "0.2.2"
+blake2 = "0.8.0"

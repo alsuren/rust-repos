@@ -1,0 +1,28 @@
+[package]
+name = "memcached-rs"
+version = "0.4.1"
+authors = ["Y. T. CHUNG <zonyitoo@gmail.com>"]
+description = "A MemCached Library in Rust"
+repository = "https://github.com/zonyitoo/memcached-rs"
+keywords = ["memcached"]
+license = "MIT/Apache-2.0"
+
+[lib]
+name = "memcached"
+
+[features]
+nightly = []
+
+[dependencies]
+byteorder = "1.2"
+semver = "0.9"
+rand = "0.5"
+conhash = "0.4"
+log = "0.4"
+bufstream = "0.1"
+
+[target.'cfg(unix)'.dependencies]
+unix_socket = "0.5"
+
+[dev-dependencies]
+env_logger = "0.5"

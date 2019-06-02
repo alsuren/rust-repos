@@ -1,0 +1,13 @@
+[package]
+name = "luaasm"
+version = "0.1.0"
+authors = ["Yuze Fu <i@xfox.me>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+lazy_static = "1.2.0"
+nom = "4.1.1"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+serde_json = "1.0.33"

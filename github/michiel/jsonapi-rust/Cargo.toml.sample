@@ -1,0 +1,26 @@
+[package]
+name = "jsonapi"
+version = "0.6.4"
+authors = ["Michiel Kalkman <michiel@nosuchtype.com>"]
+description = "JSONAPI implementation"
+documentation = "https://docs.rs/jsonapi"
+homepage = "https://github.com/michiel/jsonapi-rust"
+repository = "https://github.com/michiel/jsonapi-rust.git"
+readme = "README.md"
+keywords = ["jsonapi"]
+categories = []
+license = "MIT"
+
+[dependencies]
+serde = "^1.0.21"
+serde_json = "^1.0.6"
+serde_derive = "^1.0.21"
+queryst = "2"
+log = "0.4"
+error-chain = "^0.12.0"
+
+[dev-dependencies]
+env_logger = "0.6"
+
+[badges]
+travis-ci = { repository = "michiel/jsonapi-rust", branch = "master" }

@@ -1,0 +1,15 @@
+[package]
+name = "di_lay"
+version = "0.1.0"
+authors = ["stubiklaus <tobias-heinrichs@t-online.de>"]
+
+[dependencies]
+vst2 = "0.0.1"
+libc = "*"
+winapi = "*"
+user32-sys = "*"
+
+[lib]
+name = "di_lay"
+crate-type = ["dylib"]
+

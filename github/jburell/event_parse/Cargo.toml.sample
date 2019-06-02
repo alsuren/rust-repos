@@ -1,0 +1,13 @@
+[package]
+name = "event_parse"
+version = "0.1.0"
+authors = ["Johan Burell <johan.burell@valtech.se>"]
+
+[dependencies]
+libevdev-sys = "0.1.1"
+libc = "0.2.33"
+custom_derive = "0.1.7"
+newtype_derive = "0.1.6"
+enum_primitive = "0.1.1"
+num = "0.1.41"
+itertools = "0.7.3"

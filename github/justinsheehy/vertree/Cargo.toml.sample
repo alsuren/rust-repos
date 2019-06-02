@@ -1,0 +1,20 @@
+[package]
+name = "vertree"
+version = "0.2.2"
+authors = ["Justin Sheehy <justin@iago.org>",
+           "Andrew J. Stone <andrew.j.stone.1@gmail.com>"]
+description = "A persistent trie where each node is typed and versioned"
+repository = "https://github.com/justinsheehy/vertree"
+keywords = ["tree", "trie", "immutable", "persistent"]
+license = "Apache-2.0"
+
+[dependencies]
+error-chain = "0.10.0"
+rmp-serde = "0.13.3"
+serde = { version = "1.0.8", features = ["rc"] }
+serde_derive = "1.0.8"
+
+[dev-dependencies]
+assert_matches = "1.0"
+quickcheck = "0.4.1"
+rand = "0.3"

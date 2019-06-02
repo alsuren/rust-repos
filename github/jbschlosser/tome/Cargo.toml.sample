@@ -1,0 +1,30 @@
+[package]
+name = "tome"
+version = "0.0.1"
+authors = ["Joel Schlosser"]
+
+[dependencies]
+argparse = "*"
+log = "*"
+regex = "*"
+term = "*"
+lazy_static = "*"
+log4rs = "*"
+xdg = "^2.0"
+
+[dependencies.mio]
+git = "https://github.com/carllerche/mio.git"
+
+[dependencies.ncurses]
+git = "https://github.com/jeaye/ncurses-rs.git"
+
+[dependencies.resin]
+git = "https://github.com/jbschlosser/resin.git"
+
+[lib]
+name = "tome"
+path = "src/core/lib.rs"
+
+[[bin]]
+name = "tome"
+path = "src/main.rs"

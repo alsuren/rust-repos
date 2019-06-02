@@ -1,0 +1,10 @@
+[package]
+name = "slumberland"
+version = "0.1.1"
+authors = ["Raymond Finzel <rfinz.me@rfinz.me>"]
+
+[dependencies]
+zz = { path = "zz" }
+memories = { path = "memories" }
+
+[workspace]

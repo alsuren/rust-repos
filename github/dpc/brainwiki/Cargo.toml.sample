@@ -1,0 +1,42 @@
+cargo-features = ["edition"]
+
+[package]
+authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
+edition = "2018"
+license = "MPL-2.0"
+name = "brainwiki"
+version = "0.1.0"
+
+[[bin]]
+name = "brainwiki"
+path = "src/main.rs"
+
+[dependencies]
+actix-web = "0.6"
+boolinator = "*"
+bytes = "*"
+chrono = "*"
+derive_more = "*"
+failure = "*"
+futures = "*"
+json = "*"
+lazy_static = "*"
+listenfd = "0.3"
+notify = "*"
+pulldown-cmark = "*"
+regex = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+structopt = "*"
+quicli = "0.3"
+log = "*"
+file = "*"
+toml = "*"
+rpassword = "*"
+libpasta = "*"
+ring = "*"
+hex = "*"
+
+[dependencies.stpl]
+git = "http://github.com/dpc/stpl"

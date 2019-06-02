@@ -1,0 +1,16 @@
+[package]
+name = "stock_market_pred"
+version = "0.1.0"
+authors = ["jason"]
+
+[lib]
+name = "stock_market_pred"
+path = "src/lib.rs"
+
+[[bin]]
+name = "example"
+path = "example.rs"
+
+[dependencies]
+# need to download libssl-dev `sudo apt-get install libssl-dev`
+curl = "0.3.2"

@@ -1,0 +1,23 @@
+[package]
+name = "bee-txt"
+version = "0.1.0"
+authors = ["Zach Sherman <zach@shrmn.toys>"]
+edition = "2018"
+description = ".txt for 🐝s"
+
+[package.metadata.bundle]
+identifier = "com.zach.bee-txt"
+icon = ["bee.png"]
+resources = ["colors.toml"]
+osx_minimum_system_version = "10.11"
+
+[dependencies]
+web-view = { git = "https://github.com/radio-alice/web-view.git" }
+serde = "1.0.91"
+serde_json = "1.0.39"
+serde_derive = "1.0.91"
+
+[dependencies.config]
+version = "0.9"
+default-features = false
+features = ["toml"]

@@ -1,0 +1,7 @@
+[package]
+name = "boerse"
+version = "0.1.0"
+authors = ["Adrian Enns <addis.aden@gmail.com>"]
+
+[dependencies]
+reqwest = "0.9.5"

@@ -1,0 +1,20 @@
+[package]
+name = "transmission_rpc"
+version = "0.1.0"
+authors = ["Mitja Karhusaari <monttu300@gmail.com>"]
+licence = "MIT"
+repository = "http://github.com/theMonttu/transmission_rpc"
+readme = "README.md"
+description = "A strongly typed RPC library for Transmission Daemon."
+
+[dependencies]
+chrono = { version = "*", features = ["serde"] }
+error-chain = { git = "https://github.com/brson/error-chain.git" }
+hyper = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+rustc-serialize = "*"
+
+[dependencies.torrent_macro]
+path = "./torrent_macro"

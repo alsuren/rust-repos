@@ -1,0 +1,24 @@
+[package]
+
+	name = "btrfs-omega13"
+	version = "0.1.0"
+	authors = [
+		"James Pharaoh <james@pharaoh.uk>"
+	]
+
+[dependencies]
+
+	btrfs = "*"
+	clap = "*"
+	crc = "*"
+	libc = "*"
+	memmap = "*"
+	output = "*"
+	uuid = "*"
+
+[replace]
+
+	"btrfs:1.2.2" = { path = "../rust-btrfs" }
+	"output:0.6.2" = { path = "../rust-output" }
+
+# ex: noet ts=4 filetype = toml

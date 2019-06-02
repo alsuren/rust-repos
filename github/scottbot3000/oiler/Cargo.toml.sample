@@ -1,0 +1,22 @@
+[package]
+name = "oiler"
+version = "0.1.0"
+authors = ["scottbot3000 <scott.carbonbased@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+criterion = "0.2.11"
+rayon = "1.0.3"
+
+[lib]
+name = "oiler"
+path = "src/lib.rs"
+
+[[bin]]
+name = "oiler"
+path = "src/main.rs"
+
+[[bench]]
+name = "euler_benchmarks"
+harness = false

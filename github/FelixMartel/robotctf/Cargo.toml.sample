@@ -1,0 +1,12 @@
+[package]
+name = "robot"
+version = "0.1.0"
+authors = ["Felix Martel-Denis <lixtelnis@gmail.com>"]
+
+[dependencies]
+tokio-io = "0.1"
+tokio-core = "0.1"
+futures = "0.1.17"
+bytes = "0.4.6"
+rust-crypto = "0.2"
+rust-gmp = "0.5.0"

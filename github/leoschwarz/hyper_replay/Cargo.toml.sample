@@ -1,0 +1,17 @@
+[package]
+name = "hyper_replay"
+version = "0.1.0"
+authors = ["Leo Schwarz <mail@leoschwarz.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/leoschwarz/hyper_replay"
+
+[dependencies]
+hyper = "0.10.10"
+hyper-native-tls = "0.2.2"
+log = "0.3.7"
+rmp-serde = "0.13.1" # messagepack for serde
+serde = "1.0.4"
+serde_derive = "1.0.4"
+
+[dev-dependencies]
+env_logger = "0.4.2"

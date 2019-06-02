@@ -1,0 +1,23 @@
+[package]
+name = "rust-latest"
+version = "1.3.0"
+authors = ["Daniel Beckwith <djbsnx@gmail.com>"]
+edition = "2018"
+
+description = "A CLI tool to determine the latest version of the Rust toolchain."
+repository = "https://github.com/dbeckwith/rust-latest"
+readme = "README.md"
+keywords = ["latest", "version", "release", "channel", "toolchain"]
+categories = ["command-line-utilities", "development-tools"]
+license = "MIT"
+
+[dependencies]
+structopt = "0.2.15"
+clap = "2.33.0"
+reqwest = "0.9.17"
+failure = "0.1.5"
+serde = { version = "1.0.91", features = ["derive"] }
+chrono = { version = "0.4.6", features = ["serde"] }
+toml = "0.5.1"
+regex = "1.1.6"
+maplit = "1.0.1"

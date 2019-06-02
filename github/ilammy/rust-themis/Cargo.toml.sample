@@ -1,0 +1,35 @@
+[package]
+name = "themis"
+version = "0.0.3"
+edition = "2018"
+authors = ["rust-themis developers"]
+description = "High-level cryptographic services for storage and messaging"
+homepage = "https://www.cossacklabs.com/themis/"
+repository = "https://github.com/ilammy/rust-themis"
+readme = "README.md"
+keywords = ["crypto", "Themis"]
+categories = ["cryptography", "api-bindings"]
+license = "Apache-2.0"
+
+[workspace]
+members = ["libthemis-src", "libthemis-sys"]
+
+[badges]
+travis-ci = { repository = "ilammy/rust-themis" }
+
+[features]
+vendored = ["bindings/vendored"]
+
+[dependencies]
+bindings = { package = "libthemis-sys", path = "libthemis-sys", version = "=0.0.3" }
+zeroize = "0.5.2"
+
+[dev-dependencies]
+byteorder = "1.2.7"
+clap = "2.32"
+log = "0.4.6"
+env_logger = "0.6.0"
+
+[package.metadata.docs.rs]
+features = ["vendored"]
+dependencies = ["libssl-dev"]

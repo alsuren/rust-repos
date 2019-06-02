@@ -1,0 +1,10 @@
+[package]
+name = "patro"
+version = "0.0.1"
+homepage = "https://github.com/suvash/patro"
+description = "Nepali (Bikram Sambat) calendar for the terminal."
+authors = ["Suvash Thapaliya"]
+
+[dependencies]
+getopts = "0.2.17"
+chrono = "0.4.0"

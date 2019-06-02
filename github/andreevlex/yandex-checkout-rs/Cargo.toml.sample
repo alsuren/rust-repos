@@ -1,0 +1,11 @@
+[package]
+name = "yandex_checkout"
+version = "0.1.0"
+authors = ["Alexander Andreev <andreevlex.as@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+iso4217 = "0.3.2"

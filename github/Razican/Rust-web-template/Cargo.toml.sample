@@ -1,0 +1,75 @@
+[package]
+name = "web_template"
+version = "0.1.0"
+authors = ["Razican <razican@protonmail.ch>"]
+
+[lib]
+name = "web_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "web_launcher"
+path = "src/main.rs"
+
+[features]
+source_maps = []
+
+[dependencies]
+lazy_static = "1.0.0"
+failure = "0.1.1"
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+dotenv = "0.10.1"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+serde_json = "1.0.9"
+redis = "0.8.0"
+r2d2 = "0.8.2"
+r2d2_redis = "0.7.0"
+r2d2-diesel = "1.0.0"
+chrono = "0.4.0"
+uuid = "0.6.0"
+
+[dependencies.rocket_contrib]
+version = "0.3.6"
+default-features = false
+features = ["handlebars_templates", "json"]
+
+[dependencies.flate2]
+version = "1.0.1"
+features = ["rust_backend"]
+default-features = false
+
+[dependencies.diesel]
+version = "1.1.0"
+default-features = false
+features = ["postgres", "uuid", "chrono"]
+
+[dependencies.diesel_infer_schema]
+version = "1.1.0"
+default-features = false
+features = ["postgres"]
+
+[build-dependencies]
+failure = "0.1.1"
+
+# The development profile, used for `cargo build`.
+[profile.dev]
+incremental = true
+opt-level = 1
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+panic = 'unwind'
+
+# The release profile, used for `cargo build --release`.
+[profile.release]
+incremental = false
+opt-level = 3
+debug = false
+rpath = false
+codegen-units = 1
+lto = true
+debug-assertions = false
+panic = 'unwind'

@@ -1,0 +1,21 @@
+[package]
+name = "arc"
+version = "0.1.0"
+authors = ["Alister Lee <alister@dev.shortepic.com>"]
+edition = "2018"
+
+[dependencies]
+kernel = { path = "./kernel" }
+
+[profile.dev]
+opt-level = 1
+panic = 'abort'
+
+[profile.release]
+panic = 'abort'
+
+[package.metadata.cargo-xbuild]
+sysroot_path = "target/xbuild_sysroot"
+
+[workspace]
+members = ["kernel"]

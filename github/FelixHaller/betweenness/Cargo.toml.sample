@@ -1,0 +1,10 @@
+[package]
+name = "betweenness"
+version = "0.1.0"
+authors = ["Felix Haller <felix@haller.family>"]
+
+[dependencies]
+rand = "0.4.2"
+clap = "2.29.4"
+roulette = "0.1.0"
+random_choice = "0.3.2"

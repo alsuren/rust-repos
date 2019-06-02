@@ -1,0 +1,10 @@
+[package]
+name = "actix-repr"
+version = "0.1.0"
+authors = ["Stanislav Panferov <fnight.m@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix = "0.7.9"
+tokio-postgres = "0.4.0-rc.2"
+failure="0.1"

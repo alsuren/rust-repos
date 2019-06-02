@@ -1,0 +1,14 @@
+[package]
+name = "roguelike"
+version = "0.1.0"
+authors = ["guillaumegirard"]
+edition = "2018"
+
+[dependencies]
+tcod = "0.14"
+rand = "0.6.5"
+
+# Linux only
+[dependencies.tcod-sys]
+version = "5.0.0"
+features = ["dynlib"]

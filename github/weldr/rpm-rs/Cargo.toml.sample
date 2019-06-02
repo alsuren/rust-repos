@@ -1,0 +1,13 @@
+[package]
+name = "rpm"
+version = "0.1.0"
+authors = ["Will Woods <wwoods@redhat.com>"]
+license = "LGPL-2.1+"
+
+[dependencies]
+nom = "2.0.1"
+clap = "2.20.0"
+lazy_static = "0.2.2"
+
+[features]
+bench = []

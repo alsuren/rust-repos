@@ -1,0 +1,20 @@
+[package]
+name = "neovim-language-server"
+version = "0.1.0"
+authors = ["Tom Houlé <tom@tomhoule.com>"]
+
+[dependencies]
+jsonrpc-core = "3.0.2"
+neovim-lib = "0.1.0"
+chomp = "*"
+futures = "0.1"
+clap = "*"
+libc = "*"
+rmp = "*"
+regex = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+slog = "1.2"
+slog-term = "*"
+uuid = { version = "*", features = ["serde", "v4"] }

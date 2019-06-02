@@ -1,0 +1,9 @@
+[package]
+name = "geodesic_vm"
+version = "0.1.0"
+authors = ["Harry <hlbarber93@gmail.com>", "Chris Novick <c.r.novick@protonmail.com>"]
+
+[dependencies]
+bytes = "0.4.11"
+byteorder = "1.2.7"
+nom = "4.1.1" 

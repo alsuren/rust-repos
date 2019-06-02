@@ -1,0 +1,9 @@
+[package]
+name = "depot"
+version = "0.0.1"
+authors = ["Kingsquee <Kingsquee@users.noreply.github.com>"]
+
+[dependencies]
+toml = "*"
+getopts = "*"
+rustc-serialize = "*"

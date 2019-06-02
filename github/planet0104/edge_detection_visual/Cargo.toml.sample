@@ -1,0 +1,12 @@
+[package]
+name = "edge_detection_visual"
+version = "0.1.0"
+authors = ["Jia Ye <planet0104@gmail.com>"]
+
+[dependencies]
+image = "*"
+rand = "*"
+
+[dependencies.sdl2]
+version = "0.31.0"
+features = ["bundled", "static-link"]

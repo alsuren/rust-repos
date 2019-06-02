@@ -1,0 +1,59 @@
+[package]
+name = "raytron"
+version = "0.1.0"
+authors = ["Alexey Terekhov <alexey.terekhovv@yandex.ru>"]
+license = "MIT/Apache-2.0"
+description = " "
+keywords = ["path-tracer", "3D"]
+readme = "README.md"
+homepage = "https://github.com/a1xt/raytron"
+repository = "https://github.com/a1xt/raytron"
+
+[lib]
+name = "raytron"
+
+[dependencies]
+
+raytron-core = {path = "core"}
+
+gfx_core = "0.7"
+gfx_device_gl = "0.14"
+gfx_window_glutin = "0.16"
+gfx = "0.16"
+
+glutin = "0.8"
+image = "0.14"
+nalgebra = "0.10"
+obj-rs = "0.4"
+time = "0.1"
+rand = "0.3"
+tobj = "0.1"
+
+clippy = {version = "*", optional = true}
+
+
+[features]
+clippy_check = ["clippy", "raytron-core/clippy_check"]
+default = []
+
+# [profile.release]
+# opt-level = 3
+# debug = false
+# lto = true
+# debug-assertions = false
+
+[[example]]
+name = "spheres"
+path = "examples/spheres.rs"
+
+[[example]]
+name = "envmap"
+path = "examples/envmap.rs"
+
+[[example]]
+name = "materials"
+path = "examples/materials.rs"
+
+
+[workspace]
+

@@ -1,0 +1,22 @@
+[package]
+authors = ["Holger Rapp <HolgerRapp@gmx.net>"]
+description = "A rust library and command line tool to read encrypted Vim files."
+documentation = "https://docs.rs/vimdecrypt"
+exclude = [".gitignore", ".travis.yml", "watcher.lua"]
+homepage = "https://github.com/SirVer/vimdecrypt-rs"
+keywords = ["vim", "vimcrypt", "vimdecrypt", "decrypt", "crypt"]
+license = "MIT"
+name = "vimdecrypt"
+readme = "README.md"
+repository = "https://github.com/SirVer/vimdecrypt-rs"
+version = "0.1.2"
+edition = "2018"
+
+[dependencies]
+blowfish = "0.3.0"
+clap = "2.31.2"
+failure = "0.1.1"
+generic-array = "0.9.0"
+rpassword = "2.0.0"
+sha2 = "0.7.1"
+structopt = "0.2.13"

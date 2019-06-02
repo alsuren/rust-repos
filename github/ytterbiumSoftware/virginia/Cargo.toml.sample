@@ -1,0 +1,10 @@
+[package]
+name = "virginia"
+version = "0.1.0"
+authors = ["twetzel59 <twetzel59@gmail.com>"]
+
+[dependencies]
+sfml = "0.14.0"
+engine = { path = "engine" }
+
+[workspace]

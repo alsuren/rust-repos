@@ -1,0 +1,10 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["bestra"]
+
+[dependencies]
+git2 = "0.6.3"
+docopt = "0.6.86"
+time = "0.1.35"
+

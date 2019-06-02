@@ -1,0 +1,17 @@
+[package]
+name = "rust_example_app"
+version = "0.0.1"
+authors = ["Vladimir <gorbenko.vova@gmail.com>"]
+publish = false
+build = "build.rs"
+
+[build-dependencies]
+
+[dependencies]
+block = "0.1.6"
+libc = "0.2.40"
+
+[lib]
+name = "rust_example_lib"
+crate-type = ["staticlib"]
+path = "./src/rust_example_lib.rs"

@@ -1,0 +1,7 @@
+[package]
+name = "hello"
+version = "0.1.0"
+authors = ["cxc8170 <cxc8170@rit.edu>"]
+
+[dependencies]
+ctrlc = { version = "3.0", features = ["termination"] }

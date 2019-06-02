@@ -1,0 +1,15 @@
+[package]
+name = "AndroidSupervisor"
+version = "0.1.0"
+authors = ["James Sweet <james.sweet88@googlemail.com>"]
+
+[dependencies]
+clap = "2"
+libc = "0.2"
+toml = "0.3.0"
+hyper = "0.10.4"
+prometheus = "0.2"
+lazy_static = "0.2.2"
+wait-timeout = "0.1.4"
+serde = "0.9.7"
+serde_derive = "0.9.7"

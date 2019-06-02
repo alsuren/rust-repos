@@ -1,0 +1,15 @@
+[package]
+name = "locc"
+version = "0.5.1"
+authors = ["Magnus Kulke <mkulke@gmail.com>"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+polyline = "0.4"
+reqwest = "0.6.2"
+clap = "2.24.1"
+geo = "0.5.0"
+num-traits = "0.1.37"
+rand = "0.3"

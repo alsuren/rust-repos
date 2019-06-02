@@ -1,0 +1,41 @@
+[package]
+name = "commando"
+version = "0.1.0"
+authors = ["Bailey Cosier <bailey@crowdist.com>"]
+
+[lib]
+name = "commando"
+
+[dependencies]
+libc = "0.2.22"
+log = "0.3"
+env_logger = "0.3"
+lazy_static = "0.2"
+regex = "0.2"
+
+git2 = "0.6.5"
+slug = "0.1.2"
+semver = "0.2.3"
+curl = "0.4.6"
+rustc-serialize = "0.3"
+crossbeam = "0.2"
+
+error-chain = "*"
+
+clap = "*"
+termion = "*"
+
+cursive = { git = "https://github.com/gyscos/Cursive" }
+jsondb = { git = "https://github.com/cosier/jsondb-rs" }
+
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+serde_yaml = "0.6"
+
+term = "0.4.4"
+toml = "0.4"
+url = "1.1"
+
+stainless = "*"
+

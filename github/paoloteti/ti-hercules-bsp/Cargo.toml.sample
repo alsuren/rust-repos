@@ -1,0 +1,47 @@
+
+cargo-features = ["profile-overrides"]
+
+[package]
+name = "tms570"
+version = "0.1.0"
+authors = ["Paolo Teti <paolo.teti@gmail.com>"]
+description = "Board Support Package for TI Cortex-R4F/R5F TMS570"
+build = "build.rs"
+edition = "2018"
+
+[profile.dev]
+panic = "abort"
+incremental = false
+lto = true
+opt-level = 1
+debug = true
+debug-assertions = true
+
+[profile.release]
+panic = "abort"
+incremental = false
+lto = true
+codegen-units = 1
+debug = false
+debug-assertions = false
+
+[dependencies]
+cortexr4 = { path = "arch/cortex-r4" }
+siliconcr4 = { git = "https://github.com/paoloteti/silicon-cr4.git" }
+vcell = "0.1.0"
+r0 = "0.2.2"
+
+[profile.dev.overrides.vcell]
+opt-level = 3
+debug = false
+
+[build-dependencies]
+cc = "1.0"
+
+[features]
+default = ["errata57", "errata66"]
+errata57 = []
+errata66 = []
+pbist_rom = []
+pbist_ram = []
+

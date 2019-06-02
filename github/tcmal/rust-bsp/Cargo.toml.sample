@@ -1,0 +1,20 @@
+[package]
+name = "stockton-bsp"
+version = "2.0.0"
+authors = ["tcmal <oscar.shrimpton.personal@gmail.com>"]
+description = "Library for parsing Q3 .bsp files."
+repository = "https://github.com/tcmal/rust-bsp"
+homepage = "https://github.com/tcmal/rust-bsp"
+readme = "README.md"
+keywords = ["gameengines", "3d", "quake", "stockton"]
+categories = ["game-engines"]
+license = "GPL-3.0"
+
+[badges]
+travis-ci = { repository = "tcmal/rust-bsp", branch = "master" }
+maintenance = {status = "passively-maintained"}
+
+[dependencies]
+bitflags = "1.0"
+bit-vec = "0.5.1"
+nalgebra = "0.18.0"

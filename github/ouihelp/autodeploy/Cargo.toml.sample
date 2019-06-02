@@ -1,0 +1,23 @@
+[package]
+name = "autodeploy"
+version = "0.1.2"
+authors = ["Bastien Gandouet <bastien@ouihelp.fr>"]
+
+
+[dependencies]
+base64 = "~0.6.0"
+bodyparser = "0.7"
+curl = "0.4.7"
+hyper = "0.10"
+hyperlocal = "0.3.0"
+iron = "0.5"
+lazy_static = "0.2"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"
+slog = "2.0.6"
+slog-async = "2.0.1"
+slog-scope = "4.0.0"
+slog-term = "2.0.2"
+url = "1.5"

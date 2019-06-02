@@ -1,0 +1,21 @@
+[package]
+name = "iysr"
+version = "0.0.1"
+
+[dependencies]
+chrono = "0.2.14"
+glob = "*"
+regex = "*"
+rustc-serialize = "*"
+log = "*"
+env_logger = "*"
+schedule_recv = "*"
+# tojson_macros = "*"
+dbus = "*"
+thread-scoped = "*"
+
+# server
+hyper = "*"
+
+[dependencies.worker]
+path = "./worker"

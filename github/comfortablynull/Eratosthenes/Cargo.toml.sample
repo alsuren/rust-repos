@@ -1,0 +1,11 @@
+[package]
+name = "eratosthenes-pistion"
+version = "0.1.1"
+authors = ["David Caiazzo <dc@comfortablynull.com>"]
+
+[dependencies]
+rand = "0.3"
+piston = "0.1.4"
+piston2d-graphics = "0.1.4"
+piston2d-opengl_graphics = "0.1.0"
+pistoncore-glutin_window = "0.1.0"

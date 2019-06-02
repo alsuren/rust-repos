@@ -1,0 +1,20 @@
+[package]
+name = "decapitate"
+version = "1.0.0"
+authors = ["techhazard <techhazard@codeforyouand.me>"]
+description = """
+Prints the input given while skipping the first N lines. Defaults to stdin as input.
+"""
+
+documentation = "https://github.com/techhazard/decapitate"
+homepage = "https://github.com/techhazard/decapitate"
+repository = "https://github.com/techhazard/decapitate"
+readme = "README.md"
+keywords = ["head", "tail", "decapitate", "cat", "concatenate", "print"]
+license = "GPLv3"
+
+[[bin]]
+name = "dcap"
+
+[dependencies]
+clap = "2"

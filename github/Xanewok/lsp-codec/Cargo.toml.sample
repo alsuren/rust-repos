@@ -1,0 +1,18 @@
+[package]
+name = "lsp-codec"
+version = "0.1.2"
+authors = ["Igor Matuszewski <Xanewok@gmail.com>"]
+edition = "2018"
+description = "Simple Tokio 0.1-based Codec implementation for Language Server Protocol."
+repository = "https://github.com/Xanewok/lsp-codec"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+tokio-codec = "0.1"
+bytes = "0.4"
+serde_json = "1.0"
+
+[dev-dependencies]
+futures = "0.1.11"
+tokio = "0.1.11"

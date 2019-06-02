@@ -1,0 +1,11 @@
+[package]
+name = "dh"
+version = "0.1.0"
+authors = ["workingj <workingj@outlook.de>"]
+edition = "2018"
+
+[dependencies]
+
+[profile.release]
+panic = 'abort'
+lto = true

@@ -1,0 +1,35 @@
+[package]
+name = "nice-game"
+version = "0.1.0"
+authors = [
+	"IcyDefiance <icydefiance@gmail.com>",
+	"Mick Lionheart <micklionheart@gmail.com>"
+]
+edition = "2018"
+
+[profile.release]
+lto = true
+
+[dependencies]
+atom = "0.3"
+byteorder = "1.2"
+cgmath = { version = "0.16", features = ["swizzle"] }
+decorum = "0.1"
+futures-preview = "0.3.0-alpha.11"
+image = "0.20"
+lazy_static = "1.2"
+log = "0.4"
+num_cpus = "1.8"
+rusttype = "0.7"
+vulkano = "0.11"
+vulkano-shaders = "0.11"
+vulkano-win = "0.11"
+winit = "0.18"
+
+[workspace]
+members = [
+	"examples/mesh",
+	"examples/sprite",
+	"examples/target_texture",
+	"capi"
+]

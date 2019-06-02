@@ -1,0 +1,10 @@
+[package]
+name = "reminders"
+version = "0.1.0"
+authors = ["Nick Gartmann <nick@rokkincat.com>"]
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+serde = "1.0.79"
+serde_derive = "1.0.79"
+serde_json = "1.0.31"

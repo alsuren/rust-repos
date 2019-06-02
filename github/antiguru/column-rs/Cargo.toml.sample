@@ -1,0 +1,30 @@
+[package]
+name = "column"
+version = "0.0.1"
+publish = true
+authors = ["Moritz Hoffmann <antiguru@gmail.com>"]
+license = "MIT OR Apache-2.0"
+
+homepage = "https://github.com/antiguru/column-rs"
+repository = "https://github.com/antiguru/column-rs.git"
+description = "Columnar data format in memory"
+
+[[example]]
+name = "columnar"
+
+[features]
+# No features enabled
+default = [ ]
+# Re-expose column_derive/verbose as verbose
+verbose = [ "column_derive/verbose" ]
+
+[dependencies]
+column_derive = { path = "column_derive", version = "0.0.1" }
+
+[profile.release]
+# Include debug info in release targets
+debug = true
+
+[profile.bench]
+# Include debug info in bench targets
+debug = true

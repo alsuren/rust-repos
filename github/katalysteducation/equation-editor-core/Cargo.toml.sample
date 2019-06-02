@@ -1,0 +1,13 @@
+[package]
+name = "equation-editor"
+version = "0.1.0"
+license = "MIT"
+authors = ["OpenStax Poland"]
+edition = "2018"
+
+[features]
+with-serde = ["serde", "serde_derive"]
+
+[dependencies]
+serde = { version = "1.0.78", optional = true }
+serde_derive = { version = "1.0.78", optional = true }

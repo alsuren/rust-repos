@@ -1,0 +1,20 @@
+[package]
+name = "untitled"
+version = "0.1.0"
+authors = ["idursun"]
+edition = "2018"
+
+[dependencies.nom]
+version ="4.2.2"
+features = ["verbose-errors"]
+
+[dependencies]
+combine = "3.8.0"
+
+[[bin]]
+name = "combine"
+path ="src/main_combine.rs"
+
+[[bin]]
+name = "nom"
+path ="src/main_nom.rs"

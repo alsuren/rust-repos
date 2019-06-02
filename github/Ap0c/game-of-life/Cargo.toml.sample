@@ -1,0 +1,8 @@
+[package]
+name = "game-of-life"
+version = "0.1.0"
+authors = ["Ap0c <Ap0c@users.noreply.github.com>"]
+
+[dependencies]
+piston_window = "0.35.0"
+rand = "0.3.14"

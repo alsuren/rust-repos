@@ -1,0 +1,38 @@
+[package]
+name = "jg"
+version = "0.1.6"
+authors = ["Gidi Meir Morris <gidi@gidi.io>"]
+edition = "2018"
+description = "Jeff Goldblum (jg) is a command-line JSON processor. jg searches for structural patterns in json input and prints each json object that matches the pattern."
+license = "MIT"
+keywords = ["json", "grep", "search", "pattern", "selector"]
+categories = ["command-line-utilities", "text-processing"]
+exclude = ["HomebrewFormula"]
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "jg"
+
+[lib]
+name = "jg"
+path = "src/lib.rs"
+
+[dependencies]
+clap = "2.32.0"
+json = "0.11.13"
+assert_cmd = "0.10"
+tempfile = "3.0.5"
+predicates = "1.0"
+lazy_static = "1.2.0"
+regex = "1.1.0"
+json-highlight-writer = "1.1.0"
+colored = "1.7"
+isatty = "0.1"
+
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+target = "$TARGET"
+
+[package.metadata.rpm.targets]
+jg = { path = "/usr/bin/jg" }

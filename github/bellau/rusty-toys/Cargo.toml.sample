@@ -1,0 +1,13 @@
+[package]
+name = "rusty-toys"
+version = "0.1.0"
+authors = ["Laurent Belmonte <laurent.belmonte@gmail.com>"]
+
+[dependencies]
+futures         = "0.*"
+rocky = { path = "rocky-store" }
+rocky-server = { path = "rocky-server" }
+mailparse = "0.6.0"
+rand="0.4.2"
+grpc="0.2.1"
+protobuf        = "1.*"

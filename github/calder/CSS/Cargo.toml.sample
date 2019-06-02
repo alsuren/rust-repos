@@ -1,0 +1,29 @@
+[package]
+name = "crappy-space-simulator"
+version = "0.1.0"
+authors = ["Calder Coalson <caldercoalson@gmail.com>"]
+
+[dependencies]
+clap = ""
+difference = ""
+env_logger = ""
+goldenfile = ""
+lazy_static = ""
+log = ""
+regex = ""
+serde = ""
+serde_derive = ""
+serde_json = ""
+spectral = ""
+tempdir = ""
+time = ""
+
+[dev-dependencies]
+
+[[bin]]
+name = "css-show-csv"
+path = "src/bin/show_csv.rs"
+
+[[bin]]
+name = "css-curve-to-csv"
+path = "src/bin/curve_to_csv.rs"

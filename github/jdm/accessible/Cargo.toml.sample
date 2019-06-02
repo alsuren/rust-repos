@@ -1,0 +1,15 @@
+[package]
+name = "accessible"
+version = "0.1.0"
+authors = ["Josh Matthews <josh@joshmatthews.net>"]
+
+[dependencies]
+libc = "0.2"
+log = "0.3.4"
+
+[target.x86_64-unknown-linux-gnu.dependencies]
+dbus = "0.2.1"
+
+[target.x86_64-apple-darwin.dependencies]
+cocoa = {git = "https://github.com/servo/cocoa-rs.git"}
+objc = "0.1.8"

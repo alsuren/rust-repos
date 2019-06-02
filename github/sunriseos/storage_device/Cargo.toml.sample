@@ -1,0 +1,32 @@
+[package]
+name = "storage_device"
+version = "1.0.0"
+authors = ["Thog <me@thog.eu>", "orycterope <tvermeilh@gmail.com>"]
+keywords = ["storage", "block", "device", "block-device", "storage-device", "io"]
+categories = ["filesystem", "caching", "no-std"]
+description = "A storage device representation to help filesystem development."
+homepage = "https://github.com//sunriseos/storage_device"
+repository = "https://github.com//sunriseos/storage_device.git"
+edition = "2018"
+
+[package.metadata.docs.rs]
+features = ["cached-block-device"]
+
+[dependencies]
+lru = { version = "0.1.15", optional = true }
+
+[features]
+default = ["std"]
+# Link with std.
+# This feature adds implementation of BlockDevice for std::fs::File.
+#
+# Usually used for testing.
+std = []
+# This feature adds the CachedBlockDevice wrapper around any BlockDevice.
+# Uses the `lru` crate to manage its cache.
+#
+# Implies feature `std`.
+cached-block-device = ["std", "lru"]
+# Mutually exclusive with the `std` feature, as this would require to disable "lru/nightly" when built with std,
+# but cargo does not provide any way to do conditionnal feature definitions.
+cached-block-device-nightly = ["lru/nightly"]

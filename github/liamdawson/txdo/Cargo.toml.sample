@@ -1,0 +1,20 @@
+[package]
+name = "txdo"
+version = "0.1.0"
+authors = ["Liam Dawson <liam@ldaws.com>"]
+description = "Library for parsing todo.txt files"
+repository = "https://github.com/liamdawson/txdo"
+readme = "README.md"
+license = "Apache-2.0/MIT"
+exclude = [
+    "/benches/**"
+]
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "parse"
+harness = false

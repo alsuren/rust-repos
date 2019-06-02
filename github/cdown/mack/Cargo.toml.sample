@@ -1,0 +1,21 @@
+[package]
+name = "mack"
+version = "0.1.0"
+authors = ["Chris Down <chris@chrisdown.name>"]
+description = "An opinionated, fast music organiser."
+homepage = "https://github.com/cdown/mack"
+readme = "README.md"
+keywords = ["music", "audio", "organiser", "tagging", "mp3"]
+license = "Unlicense"
+
+[dependencies]
+clap = "2"
+walkdir = "2"
+lazy_static = "1"
+regex = "1"
+taglib = "1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+debug = true

@@ -1,0 +1,39 @@
+[package]
+name = "gameboy"
+version = "0.1.0"
+authors = ["Kevin Darlington <kevin@outroot.com>"]
+build = "build.rs"
+
+[dependencies]
+clap = "2.10"
+md5 = "0.2"
+difference = "0.4"
+linefeed = "0.1"
+time = "0.1"
+num = "0.1"
+num-macros = "0.1"
+libc = "0.2"
+rand = "0.3"
+bitflags = "0.7"
+ctrlc = "2.0"
+term_grid = "0.1"
+terminal_size = "0.1"
+serde_macros = "0.8"
+
+# Frontend sdl2 dependencies
+sdl2 = "0.22"
+simplelog = "0.2"
+log = "0.3"
+
+[dev-dependencies]
+serde = "0.8"
+serde_json = "0.8"
+
+[lib]
+name = "gameboy"
+path = "src/lib.rs"
+crate_type = ["dylib", "rlib"]
+
+[[bin]]
+name = "gameboy-emu"
+path = "src/bin/sdl2/main.rs"

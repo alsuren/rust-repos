@@ -1,0 +1,11 @@
+[package]
+name = "game_engine"
+version = "0.1.0"
+authors = ["Enzo Cioppettini <tenstrings5050@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+num = "0.1.42"
+newtype_derive = "0.1.6"
+sdl2 = "0.31.0"
+gl = "0.10.0"

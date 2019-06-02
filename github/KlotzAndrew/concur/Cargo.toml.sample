@@ -1,0 +1,9 @@
+[package]
+name = "concur"
+version = "0.1.0"
+authors = ["Andrew Klotz <agc.klotz@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+uuid = { version = "0.7", features = ["v4"] }
+clippy = { version = "0.0.212", optional = true }

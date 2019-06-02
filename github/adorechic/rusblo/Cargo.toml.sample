@@ -1,0 +1,15 @@
+[package]
+name = "rusblo"
+version = "0.1.0"
+authors = ["adorechic <adorechic@gmail.com>"]
+
+[dependencies]
+iron = "0.4.*"
+logger = "0.2.*"
+env_logger = "*"
+rustc-serialize = "*"
+router = "*"
+params = "*"
+log = "*"
+rusqlite = "*"
+dotenv = "*"

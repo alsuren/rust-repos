@@ -1,0 +1,27 @@
+[package]
+name = "doggo"
+description = "Command line tool to evaluate the goodness of a doggo"
+version = "0.1.14-pre"
+authors = ["Vanessa McHale <tmchale@wisc.edu>"]
+license-file = "LICENSE"
+exclude = [ ".gitignore" ]
+readme = "README.md"
+repository = "https://github.com/vmchale/doggo-command-line"
+documentation = "https://github.com/vmchale/doggo-command-line#README"
+homepage = "https://github.com/vmchale/doggo-command-line"
+
+[dependencies]
+clap = { version = "2.20" , features = ["yaml"] }
+rand = "0.3"
+chrono = "0.4"
+
+[profile.release]
+lto = true
+
+[lib]
+name = "libdoggo"
+path = "src/lib.rs"
+
+[[bin]]
+name = "doggo"
+path = "src/main.rs"

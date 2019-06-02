@@ -1,0 +1,38 @@
+[package]
+name = "datafusion"
+description = "DataFusion is a modern distributed compute platform that uses Apache Arrow as the memory model"
+version = "0.6.0"
+authors = ["Andy Grove <andygrove73@gmail.com>"]
+homepage = "https://github.com/andygrove/datafusion"
+documentation = "https://datafusion.rs/docs/datafusion"
+keywords = [ "distributed", "query", "data", "processing", "sql" ]
+repository = "https://github.com/andygrove/datafusion"
+license = "Apache-2.0"
+include = [
+    "src/**/*.rs",
+    "Cargo.toml",
+]
+edition = "2018"
+
+[lib]
+name = "datafusion"
+path = "src/lib.rs"
+
+[[bin]]
+name = "console"
+path = "src/bin/console/main.rs"
+
+[dependencies]
+clap = "2.31.2"
+fnv = "1.0.3"
+arrow = "0.12.0"
+parquet = "0.12.0"
+datafusion-rustyline = "2.0.0-alpha-20180628"
+serde = { version = "1.0.80", features = ["alloc", "rc"] }
+serde_derive = "1.0.80"
+serde_json = "1.0.33"
+sqlparser = "0.2.1"
+
+[dev-dependencies]
+criterion = "0.2.0"
+

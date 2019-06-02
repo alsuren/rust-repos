@@ -1,0 +1,57 @@
+[package]
+name = "sysfunc-dynamac-shifty"
+version = "0.0.4"
+authors = ["A.W. Stanley <aws@sysfunc.net>"]
+edition = "2018"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/sysfunc/sysfunc-dynamac-shifty.rs/"
+homepage = "https://github.com/sysfunc/sysfunc-dynamac-shifty.rs/"
+categories = ["no-std"]
+publish = false
+
+include = [
+    "src/*.rs",
+    "Cargo.toml",
+    "README.md",
+    "LICENCE",
+    "CHANGES.md",
+]
+
+description = """
+Macro crate which dynamically tunes up/down based on feature set #![no_std] friendly.
+Aims to be as #![no_core] friendly as is possible of a shift-based crate.
+"""
+
+# Optional, but required for the 'exotic' data types.
+# This is pretty fragile but required for extremely weird low level code
+# and incomplete data models that are still being experimented on.  It
+# can be used to dig out strange errors.
+[dependencies.sysfunc-byteorder]
+features = []
+optional = true
+version = "0.1.2"
+
+[features]
+# Default (auto detect)
+default = []
+
+# #![no_core] is desired.
+no-core = []
+
+# Exotic endian is in use
+exotic = ["sysfunc-byteorder"]
+
+# Exotic endian is in use and #![no_core] is desired.
+exotic-no-core = ["no-core", "exotic", "sysfunc-byteorder/no-core"]
+
+# Forces the shifty module to be used.
+shifty = ["exotic"]
+
+# Fast
+fast = []
+
+# Forces a no-core test without a core.  This is pretty brutal and just
+# drops a bunch of placeholders into place, importing anything it's
+# missing from an existing core.
+force-core-test = ["no-core"]

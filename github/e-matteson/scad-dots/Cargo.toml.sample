@@ -1,0 +1,17 @@
+[package]
+name = "scad-dots"
+version = "0.1.0"
+authors = ["e-matteson <e.r.matteson@gmail.com>"]
+
+[dependencies]
+
+scad-dots-derive = { git = "https://github.com/e-matteson/scad-dots-derive.git" }
+scad = "1.0"
+nalgebra = "0.16.13" # should use same version as scad does
+approx = "0.3"
+libc = "0.2"
+
+[dependencies.nom]
+# TODO upgrade to 4.0 when out of alpha
+version = "3.2"
+features = ["verbose-errors"]

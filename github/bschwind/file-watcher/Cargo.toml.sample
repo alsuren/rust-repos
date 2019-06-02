@@ -1,0 +1,13 @@
+[package]
+name = "ws-server"
+version = "0.1.0"
+authors = ["Brian Schwind <brianmschwind@gmail.com>"]
+
+[dependencies]
+notify = "4.0.0"
+
+tokio-tungstenite = "0.1.2"
+futures = "0.1.13"
+tokio-io = "0.1"
+tokio-core = "0.1.6"
+tungstenite = "0.2.0"

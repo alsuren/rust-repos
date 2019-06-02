@@ -1,0 +1,15 @@
+[package]
+name = "async_uci"
+version = "0.1.0"
+authors = ["Maxence Frenette <maxence.frenette@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+futures-await = "0.1"
+nom = "4.0.0-beta3"
+tokio-core = "0.1.16"
+tokio-io = "0.1.6"
+tokio-process = "0.1.5"
+
+[dev-dependencies]
+futures = "0.1.19"

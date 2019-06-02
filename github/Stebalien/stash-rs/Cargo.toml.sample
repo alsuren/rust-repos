@@ -1,0 +1,26 @@
+[package]
+
+name = "stash"
+keywords = ["data-structures"]
+version = "0.1.3"
+authors = ["Steven Allen <steven@stebalien.com>"]
+edition = "2018"
+
+homepage = "https://github.com/Stebalien/stash-rs"
+repository = "https://github.com/Stebalien/stash-rs"
+documentation = "https://docs.rs/stash/"
+readme = "README.md"
+
+license = "MIT/Apache-2.0"
+description="An amortized `O(1)` table for cases where you don't need to choose the keys and want something faster than a HashTable."
+
+[features]
+serialization = ["serde", "serde_derive"]
+
+[dependencies]
+unreachable = "1"
+serde = { version = "1", optional = true }
+serde_derive = { version = "1", optional = true }
+
+[dev-dependencies]
+bincode="1"

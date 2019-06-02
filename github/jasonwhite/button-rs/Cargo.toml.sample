@@ -1,0 +1,56 @@
+[package]
+name = "button"
+description = "A fast and correct build system backend."
+version = "0.1.0"
+authors = ["Jason White"]
+license = "MIT"
+repository = "https://github.com/jasonwhite/button-rs"
+edition = "2018"
+
+[lib]
+name = "button"
+path = "src/button/lib.rs"
+
+[dependencies]
+atty = "0.2"
+bincode = "1"
+bit-set = "0.5"
+bytes = { version = "0.4", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+crossbeam = "0.7"
+derive_more = "0.14"
+failure = "0.1"
+failure_derive = "0.1"
+futures = "0.1"
+generic-array = { version = "0.12", features = ["serde"] }
+hex = "0.3"
+holyhashmap = { version = "0.1", features = ["serde"] }
+humantime = "1"
+log = "0.4"
+nom = "4"
+num_cpus = "1"
+os_pipe = "0.8"
+pretty_env_logger = "0.3"
+rand = "0.6"
+reqwest = "0.9"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.8"
+structopt = "0.2"
+tempfile = "3"
+termcolor = "1"
+tokio = "0.1"
+tokio-serde-bincode = "0.2"
+tokio-signal = "0.2"
+tokio-timer = "0.2"
+tower-service = "0.2"
+
+[target.'cfg(unix)'.dependencies]
+daemonize = "0.4"
+tokio-uds = "0.2"
+nix = "0.13"
+
+[target.'cfg(windows)'.dependencies]
+tokio-named-pipes = { git = "https://github.com/NikVolf/tokio-named-pipes", branch = "stable" }
+winapi = "0.3"
+uuid = "0.7"

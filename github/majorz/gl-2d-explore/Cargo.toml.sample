@@ -1,0 +1,14 @@
+[package]
+
+name = "gl-2d-explore"
+version = "0.0.2"
+build = "build.rs"
+
+[build-dependencies]
+gl_generator = "*"
+khronos_api = "*"
+
+[dependencies]
+gl_common = "*"
+libc = "*"
+glutin = "*"

@@ -1,0 +1,15 @@
+[package]
+name = "charon"
+version = "0.1.0"
+authors = ["Georg Brandl <georg@python.org>"]
+
+[dependencies]
+byteorder = "*"
+regex = "*"
+failure = "*"
+lazy_static = "*"
+encoding = "*"
+walkdir = "*"
+elementtree = "*"
+
+charon-parsers = { path = "src/st/parsers" }

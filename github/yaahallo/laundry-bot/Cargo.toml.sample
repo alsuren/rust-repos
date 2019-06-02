@@ -1,0 +1,12 @@
+[package]
+name = "laundry-bot"
+version = "0.2.0"
+authors = ["Jane Lusby <jlusby42@gmail.com>"]
+
+[dependencies]
+sysfs_gpio = "0.5"
+chrono = "0.4"
+serenity = "0.5"
+env_logger = "~0.4"
+kankyo = "~0.1"
+typemap = "0.3"

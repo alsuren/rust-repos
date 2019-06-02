@@ -1,0 +1,13 @@
+[package]
+name = "reroute"
+version = "0.3.2"
+authors = ["Garrett Squire <garrettsquire@gmail.com>"]
+description = "A router that can use regular expressions for the hyper package"
+repository = "https://github.com/gsquire/reroute"
+keywords = ["http", "hyper"]
+documentation = "https://docs.rs/reroute"
+license = "MIT"
+
+[dependencies]
+hyper = "0.10"
+regex = "0.2"

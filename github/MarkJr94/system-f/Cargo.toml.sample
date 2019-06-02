@@ -1,0 +1,13 @@
+[package]
+authors = ["Mark Sinclair II <125axel125@gmail.com>"]
+name = "system-f"
+version = "0.1.0"
+
+[dependencies]
+error-chain = "0.10.0"
+maplit = "0.1.4"
+nom = "^2.1"
+pom = "2.0.0-alpha"
+slog = "2.0.6"
+slog-async = "2.0.1"
+slog-term = "2.0.1"

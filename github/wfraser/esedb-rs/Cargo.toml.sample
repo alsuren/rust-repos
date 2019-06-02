@@ -1,0 +1,12 @@
+[package]
+name = "esedb"
+version = "0.1.0"
+authors = ["William R. Fraser <wfraser@codewise.org>"]
+
+[dependencies]
+log = "0.4"
+
+[dependencies.winapi]
+branch = "0.3-esent"
+git = "https://github.com/wfraser/winapi-rs"
+features = ["esent"]

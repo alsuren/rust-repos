@@ -1,0 +1,26 @@
+[package]
+name = "librsync"
+version = "0.2.0"
+authors = ["Michele Bertasi <@brt_device>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["librsync", "rsync", "backup"]
+repository = "https://github.com/mbrt/librsync-rs"
+homepage = "https://github.com/mbrt/librsync-rs"
+documentation = "https://docs.rs/librsync"
+description = """
+Bindings to librsync for calculating and applying network
+deltas exposed as Reader/Writer streams.
+"""
+
+[features]
+default = ["log"] # forward logs to log crate, or disable them
+lints = ["clippy", "nightly"]
+nightly = [] # for building with nightly and unstable features
+unstable = ["lints", "nightly"] # for building with travis-cargo
+
+[dependencies]
+libc = "0.2"
+librsync-sys = { version = "0.1", path = "librsync-sys" }
+clippy = { version = "< 1", optional = true }
+log = { version = "0.3", optional = true }

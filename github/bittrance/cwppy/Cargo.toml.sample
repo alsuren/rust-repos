@@ -1,0 +1,20 @@
+[package]
+name = "cwppy"
+version = "0.1.0"
+authors = ["Anders Qvist <anders.qvist@burtcorp.com>"]
+
+[dependencies]
+bincode = "1.0.0"
+chrono = "*"
+failure = "*"
+inotify = "*"
+regex = "*"
+rusoto_logs = "*"
+serde = "*"
+serde_derive = "*"
+sled = "*"
+
+[dev-dependencies]
+hamcrest2 = "*"
+speculate = "0.1.0"
+tempdir = "*"

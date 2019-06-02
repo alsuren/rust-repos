@@ -1,0 +1,13 @@
+[package]
+name = "show_and_tell"
+version = "0.1.0"
+authors = ["Michał Wiatrowski <wiatrowskimich@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3.23"
+rand = "0.3"
+regex = "0.2"
+glutin = "0.7"
+gl = "0.6.0"
+image = "*"
+cgmath = "0.12.0"

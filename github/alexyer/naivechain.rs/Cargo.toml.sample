@@ -1,0 +1,16 @@
+[package]
+name = "naivechain"
+version = "0.1.0"
+authors = ["olexanderyermakov"]
+include = ["src/*/*", "lib/**/*"]
+
+[dependencies]
+rust-crypto = "0.2.36"
+time = "0.1"
+hyper = "*"
+websocket = "*"
+futures = "*"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+lazy_static = "0.2"

@@ -1,0 +1,11 @@
+[package]
+name = "owning-bytes"
+version = "0.1.0"
+authors = ["Erik Johnston"]
+build = "build.rs"
+
+[build-dependencies]
+skeptic = "0.5"
+
+[dev-dependencies]
+skeptic = "0.5"

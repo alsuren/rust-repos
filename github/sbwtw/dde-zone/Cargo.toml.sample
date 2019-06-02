@@ -1,0 +1,13 @@
+[package]
+name = "rust-dbus"
+version = "0.1.0"
+authors = ["石博文 <sbw@sbw.so>"]
+
+[dependencies]
+dbus = "*"
+
+[dependencies.gio]
+git = "https://github.com/gtk-rs/gio.git"
+
+[dependencies.gtk]
+git = "https://github.com/gtk-rs/gtk.git"

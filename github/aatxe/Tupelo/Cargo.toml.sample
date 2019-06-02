@@ -1,0 +1,18 @@
+[package]
+name = "tupelo"
+description = "an irc client"
+version = "0.0.0"
+authors = ["Aaron Weiss <awe@pdgn.co>"]
+
+[workspace]
+members = [ "./", "irc-client", "asset-server" ]
+
+[dependencies]
+asset-server = { version = "*", path = "asset-server" }
+irc-client = { version = "*", path = "irc-client" }
+web-view = { git = "https://github.com/Boscop/web-view" }
+
+[package.metadata.bundle]
+name = "tupelo"
+identifier = "app.tupelo"
+resources = ["dist"]

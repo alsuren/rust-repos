@@ -1,0 +1,10 @@
+[package]
+name = "oauth"
+version = "0.0.0"
+authors = ["Steven Sheldon"]
+
+[dependencies]
+rustc-serialize = "0.3"
+time = "0.1"
+rust-crypto = "0.2"
+uuid = "0.1"

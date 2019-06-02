@@ -1,0 +1,36 @@
+[package]
+name = "stackedconfig"
+version = "0.1.2"
+authors = ["Aaron Stevens <bheklilr2@gmail.com>"]
+description = "!!! DO NOT USE !!! Treat multiple nested config objects as a single config object with precedence. !!! DO NOT USE !!!"
+license = "MIT"
+repository = "https://github.com/bheklilr/rust-stackedconfig"
+homepage = "https://github.com/bheklilr/rust-stackedconfig"
+documentation = "https://bheklilr.github.io/rust-stackedconfig/stackedconfig/"
+readme = "README.md"
+keywords = ["json", "yaml", "serde", "config", "configuration"]
+
+[features]
+json = ["serde_json"]
+yaml = ["serde_yaml"]
+BSON = ["bson"]
+hjson = ["serde-hjson"]
+
+[dependencies]
+serde = "1.0"
+
+[dependencies.serde_json]
+version = "1.0"
+optional = true
+
+[dependencies.serde_yaml]
+version = "0.7"
+optional = true
+
+[dependencies.bson]
+version = "0.11"
+optional = true
+
+[dependencies.serde-hjson]
+version = "0.8"
+optional = true

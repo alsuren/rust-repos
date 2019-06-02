@@ -1,0 +1,15 @@
+[package]
+name = "rustcafe"
+version = "0.1.1"
+authors = ["Jani Rahkola <jani.rahkola@iki.fi>"]
+
+[[bin]]
+name = "rustcafe"
+
+[dependencies]
+chrono = "*"
+docopt = "*"
+hyper = "*"
+regex = "*"
+regex_macros = "*"
+rustc-serialize = "*"

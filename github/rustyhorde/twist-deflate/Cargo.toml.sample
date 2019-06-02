@@ -1,0 +1,20 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "An implementation of RFC 7692 for the twist codec."
+documentation = "https://docs.rs/twist-deflate"
+homepage = "https://rustyhorde.github.io/twist/"
+keywords = ["twist", "websocket", "deflate", "extension"]
+license = "MIT/Apache-2.0"
+name = "twist-deflate"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/twist-deflate"
+version = "0.1.0"
+
+[dependencies]
+libz-sys = "1.0.13"
+slog = "1.5.2"
+slog-term = "1.5.0"
+twist = "0.1.4"
+
+[replace]
+"twist:0.1.4" = { path = "/home/jozias/projects/twist" }

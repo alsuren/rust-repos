@@ -1,0 +1,25 @@
+[package]
+name = "xsray"
+version = "0.1.0"
+authors = ["Serge-Olivier Amega"]
+
+[dependencies]
+  time = "*"
+  image = "*"
+  cgmath = "0.12.0"
+  obj-rs = "0.4.17"
+  rand = "0.3"
+  regex = "0.2"
+
+  #serde
+  serde = "1.0"
+  serde_derive = "1.0"
+  serde_yaml = "0.7"
+
+#[profile.debug]
+#incremental = true
+
+[profile.release]
+incremental = true
+debug = true
+

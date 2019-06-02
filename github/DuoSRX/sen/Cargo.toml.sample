@@ -1,0 +1,14 @@
+[package]
+name = "sen"
+version = "0.1.0"
+authors = ["Xavier Perez <duosrx@gmail.com>"]
+
+[lib]
+name = "sen"
+
+[dependencies]
+sdl2 = "0.31.0"
+time = "*"
+
+[profile.release]
+debug = true

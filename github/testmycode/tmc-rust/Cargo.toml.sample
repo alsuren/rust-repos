@@ -1,0 +1,9 @@
+[package]
+name = "points"
+version = "0.0.2"
+
+[lib]
+name = "points"
+
+[dependencies]
+lazy_static = "*"

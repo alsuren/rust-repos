@@ -1,0 +1,8 @@
+[package]
+name = "guess-the-poster-discord-bot"
+version = "0.1.0"
+authors = ["io12 <io12@users.noreply.github.com>"]
+
+[dependencies]
+discord = { git = "https://github.com/io12/discord-rs/" }
+rand = "0.4.2"

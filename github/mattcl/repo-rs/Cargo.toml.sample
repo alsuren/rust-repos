@@ -1,0 +1,26 @@
+[package]
+name = "repo-rs"
+version = "0.1.0"
+authors = ["Matt Chun-Lum <matt@questionable.engineering>"]
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "repo-rs"
+
+[profile.release]
+lto = true
+
+[dependencies]
+clap = "*"
+colored = "^1.5"
+error-chain = "*"
+futures = "*"
+git2 = "*"
+prettytable-rs = "*"
+rayon = "*"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+tokio-core = "*"
+tokio-io = "*"

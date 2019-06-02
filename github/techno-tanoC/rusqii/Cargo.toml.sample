@@ -1,0 +1,10 @@
+[package]
+name = "rusqii"
+version = "0.1.0"
+authors = ["techno-tanoC <develop.tanoc@gmail.com>"]
+
+[dependencies]
+reqwest = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"

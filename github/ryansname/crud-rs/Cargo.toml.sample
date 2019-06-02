@@ -1,0 +1,21 @@
+[package]
+name = "crud"
+version = "0.1.0"
+authors = ["Ryan Lewis <ryansname@gmail.com>"]
+
+[lib]
+proc-macro = true
+
+[features]
+
+default = []
+
+sqlite = ["rusqlite"]
+
+[dependencies]
+quote = "0.3"
+postgres = { version = "0.15", optional = true }
+regex = "0.2.1"
+rusqlite = { version = "0.13", optional = true }
+syn = "0.11"
+

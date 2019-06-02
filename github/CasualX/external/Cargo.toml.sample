@@ -1,0 +1,29 @@
+[package]
+name = "external"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+ntapi = "0.3"
+
+[dependencies.winapi]
+version = "0.3.6"
+features = [
+	"consoleapi",
+	"errhandlingapi",
+	"handleapi",
+	"memoryapi",
+	"processthreadsapi",
+	"profileapi",
+	"psapi",
+	"synchapi",
+	"tlhelp32",
+	"winbase",
+	"wingdi",
+	"winerror",
+	"winuser",
+]
+
+[dependencies.serde]
+version = "1.0"
+optional = true

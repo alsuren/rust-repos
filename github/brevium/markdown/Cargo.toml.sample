@@ -1,0 +1,10 @@
+[package]
+name = "markdown"
+version = "0.1.0"
+authors = ["Jeffrey <me@jvhoven.nl>"]
+
+[dependencies]
+web-view = "0.1.3"
+urlencoding = "*"
+horrorshow = "0.6.2"
+comrak = "0.2.8"

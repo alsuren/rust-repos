@@ -1,0 +1,18 @@
+[package]
+name = "logian"
+version = "0.0.1"
+authors = ["naokirin <naoki.rin186@gmail.com>"]
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+tera = "*"
+glob = "*"
+docopt = "*"
+fs_extra = "*"
+heck = "*"
+
+[[bench]]
+name = "bench"
+path = "benches/bench.rs"

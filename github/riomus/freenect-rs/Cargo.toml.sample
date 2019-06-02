@@ -1,0 +1,11 @@
+[package]
+name = "libfreenect"
+version = "0.1.0"
+authors = ["Sebastian Garrido <sebasgarcep@gmail.com>"]
+
+[dependencies]
+libc = "0.2.11"
+
+[lib]
+name = "freenect"
+path = "src/lib.rs"

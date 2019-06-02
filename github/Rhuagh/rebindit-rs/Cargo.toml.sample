@@ -1,0 +1,16 @@
+[package]
+name = "rebindit"
+version = "0.1.0"
+authors = ["Simon Rönnberg <simon.ronnberg@codemill.se>"]
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+ron = "*"
+time = "*"
+log = "*"
+winit = "*"
+
+[dev-dependencies]
+env_logger = "*"
+glutin = "*"

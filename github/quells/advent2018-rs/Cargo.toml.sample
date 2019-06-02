@@ -1,0 +1,9 @@
+[package]
+name = "advent2018-rs"
+version = "0.1.0"
+authors = ["Kai Wells <support@kaiwells.me>"]
+
+[dependencies]
+time = "0.1"
+regex = "1"
+rayon = "1.0"

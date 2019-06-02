@@ -1,0 +1,36 @@
+[package]
+name        = "mnemesis"
+version     = "0.1.0"
+edition     = "2018"
+description = "Never forget anything ever again"
+authors     = ["Marc-Antoine Perennou <Marc-Antoine@Perennou.com>"]
+license     = "BSD-2-Clause"
+readme      = "README.md"
+
+[[bin]]
+name = "mn"
+path = "src/main.rs"
+
+[[bin]]
+name = "totpcli"
+path = "src/bin/totpcli.rs"
+
+[lib]
+name = "mnemesis_utils"
+
+[dependencies]
+base32     = "^0.4"
+base64     = "^0.10"
+clap       = "^2.0"
+file       = "^1.1"
+oath       = "^0.10"
+ring       = "^0.14"
+rpassword  = "^3.0"
+rprompt    = "^1.0"
+serde_json = "^1.0"
+username   = "^0.2"
+xdg        = "^2.0"
+
+[dependencies.serde]
+version  = "^1.0"
+features = ["derive"]

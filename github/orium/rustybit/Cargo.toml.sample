@@ -1,0 +1,21 @@
+[package]
+name = "rustybit"
+version = "0.0.0-dev"
+authors = ["Diogo Sousa <diogogsousa@gmail.com>"]
+
+description = "rustybit is full node bitcoin implementation written in the rust programming language"
+# documentation = "..."
+homepage = "https://github.com/orium/rustybit"
+repository = "https://github.com/orium/rustybit.git"
+readme = "README.md"
+keywords = ["bitcoin"]
+license = "GPLv3"
+
+[dependencies.time]
+git = "https://github.com/rust-lang/time"
+
+[dependencies.openssl]
+git = "https://github.com/sfackler/rust-openssl.git"
+
+[dependencies.http]
+git = "https://github.com/chris-morgan/rust-http"

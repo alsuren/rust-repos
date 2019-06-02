@@ -1,0 +1,9 @@
+[package]
+name = "rshlrs"
+version = "0.1.0"
+authors = ["Christopher Rabotin <christopher.rabotin@gmail.com>"]
+
+[dependencies]
+bufstream = "0.1.2"
+getopts = "0.2"
+rust-crypto = "^0.2"

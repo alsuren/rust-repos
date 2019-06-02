@@ -1,0 +1,13 @@
+[package]
+
+name = "spline_maker"
+version = "0.0.1"
+authors = ["KINETC <starvessel@naver.com>"]
+
+
+[dependencies.nalgebra]
+git = "https://github.com/sebcrozet/nalgebra"
+
+#[dependencies]
+#glium = "*"
+#glutin = "*"

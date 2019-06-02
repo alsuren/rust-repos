@@ -1,0 +1,12 @@
+[package]
+name = "rust-sdl2-example-tiles"
+version = "0.1.0"
+authors = ["Ysgard <ysgard@gmail.com>"]
+
+[dependencies.sdl2]
+version = "*"
+features = ["image"]
+
+[dependencies]
+rand = "*"
+time = "*"

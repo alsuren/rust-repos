@@ -1,0 +1,18 @@
+[package]
+name = "astinus"
+version = "0.1.0"
+authors = ["Stephen M. Coakley <me@stephencoakley.com>"]
+
+[dependencies]
+csv = "0.14"
+gio = "0.1.2"
+log = "0.3.7"
+simplelog = "0.4.2"
+
+[dependencies.gtk]
+version = "0.1.2"
+features = ["v3_20"]
+
+[dependencies.rusqlite]
+version = "0.10.1"
+features = ["bundled"]

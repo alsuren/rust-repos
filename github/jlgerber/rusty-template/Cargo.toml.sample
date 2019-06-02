@@ -1,0 +1,11 @@
+[package]
+name = "rusty-template"
+version = "0.5.0"
+authors = ["jonathan gerber <jlgerber@gmail.com>"]
+
+[dependencies]
+pest = "^1.0"
+pest_derive = "^1.0"
+failure = "0.1"
+seahash = "3"
+log = "0.4"

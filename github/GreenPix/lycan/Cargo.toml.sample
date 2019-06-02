@@ -1,0 +1,61 @@
+[package]
+name = "lycan"
+version = "0.1.0"
+authors = ["Vaelden <maugan.villatel@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name="lycan"
+path="src/lib.rs"
+
+[dependencies]
+lazy_static = "0.2"
+log = "0.3"
+env_logger = "0.3"
+rustc-serialize = "0.3"
+time = "0.1"
+#mio = "0.5"
+byteorder = "0.5"
+threadpool = "1.3.2"
+docopt = "0.6"
+nalgebra = "0.10"
+smallvec = "0.2"
+rand = "0.3"
+hyper = "0.9"
+bytes = "0.3"
+serde = "0.8"
+serde_json = "0.8"
+uuid = { version = "0.3", features = ["rand","serde"] }
+futures = "0.1"
+tokio-core = "0.1"
+schedule_recv = "0.1"
+
+# Iron and related crates
+iron = "0.4"
+mount = "0.2.0"
+router = "0.4"
+bodyparser = "0.4"
+plugin = "0.2"
+modifier = "0.1"
+iron-error-router = "0.2"
+
+[build-dependencies]
+serde_codegen = "0.8"
+
+[dependencies.lycan-serialize]
+git = "https://github.com/Greenpix/lycan-serialize.git"
+
+[dependencies.aariba]
+git = "https://github.com/GreenPix/aariba.git"
+
+[dependencies.behaviour-tree]
+git = "https://github.com/GreenPix/behaviour-tree.git"
+
+[[bin]]
+name = "lycan"
+doc = false
+
+[features]
+json = ["lycan-serialize/json"]
+
+default = ["json", "iron/ssl"]

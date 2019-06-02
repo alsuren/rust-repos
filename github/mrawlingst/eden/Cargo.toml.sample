@@ -1,0 +1,13 @@
+[package]
+name = "eden"
+version = "0.1.0"
+authors = ["Michael"]
+edition = "2018"
+
+[workspace]
+members = [
+    "eden_core",
+]
+
+[dependencies]
+eden_core = { path = "eden_core" }

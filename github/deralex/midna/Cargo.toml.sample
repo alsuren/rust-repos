@@ -1,0 +1,17 @@
+[package]
+name = "midna"
+version = "0.1.0"
+authors = ["Alexander Kluth <deralex@cpan.org>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.5"
+clap = "2.32.0"
+colored = "1.6.1"
+serde_json = "1.0.34"
+dirs = "1.0.4"
+git2 = "0.8.0"
+chrono = "0.4.6"
+simplelog = "0.5.3"
+log = "0.4.6"
+glob = "0.2.11"

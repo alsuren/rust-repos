@@ -1,0 +1,13 @@
+[package]
+name = "termtables"
+version = "0.1.0"
+authors = ["Tony Perkins <toperkin@gmail.com>"]
+
+description = "An ASCII table generator."
+repository = "https://github.com/toperkin/termtables"
+documentation = "https://github.com/toperkin/termtables/wiki"
+readme = "README.md"
+license = "MIT"
+keywords = ["cli", "table", "terminal"]
+
+[dependencies]

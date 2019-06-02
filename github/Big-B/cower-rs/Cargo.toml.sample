@@ -1,0 +1,27 @@
+[package]
+name = "cower-rs"
+version = "0.3.0"
+authors = ["Brandon Mittman <brandonmittman@gmail.com>"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+clap           = "*"
+time           = "*"
+bitflags       = "*"
+isatty         = "*"
+stderrlog      = "*"
+log            = "*"
+ferris-says    = "*"
+serde          = "*"
+serde_json     = "*"
+serde_derive   = "*"
+failure        = "*"
+url            = "*"
+regex          = "*"
+dirs           = "*"
+tempdir        = "*"
+
+[build-dependencies]
+bindgen = "*"

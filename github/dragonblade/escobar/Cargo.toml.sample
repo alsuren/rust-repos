@@ -1,0 +1,17 @@
+[package]
+name = "escobar"
+version = "0.1.0"
+authors = ["Dennis Eijkel <dennis@eijkel.net>"]
+license = "MIT"
+repository = "https://github.com/dragonblade/escobar"
+homepage = "https://github.com/dragonblade/escobar"
+publish = false
+description = """
+A simple wrapper around lemonbar for displaying system status information
+"""
+
+[dependencies]
+libc = "*"
+regex = "*"
+time = "*"
+toml = "*"

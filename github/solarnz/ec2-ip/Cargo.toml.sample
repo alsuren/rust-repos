@@ -1,0 +1,12 @@
+[package]
+name = "ec2-ip"
+version = "0.1.0"
+authors = ["Chris Trotman <chris@trotman.io>"]
+
+[dependencies]
+clap = "2.32"
+itertools = "0.7.8"
+rayon = "1.0.2"
+rusoto_core = "0.34.0"
+rusoto_ec2 = "0.34.0"
+skim="0.5.2"

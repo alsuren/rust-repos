@@ -1,0 +1,11 @@
+[package]
+name = "openstack-client"
+version = "0.1.0"
+authors = ["thomas9911 <thomastimmer11@hotmail.com>"]
+
+[dependencies]
+openstack = { git = "https://github.com/dtantsur/rust-openstack" }
+serde = "*"
+serde_json = "*"
+argparse = "*"
+waiter = "*"

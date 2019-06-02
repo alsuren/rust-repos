@@ -1,0 +1,13 @@
+[package]
+name = "unique"
+description = "Allocate uniquely"
+version = "0.7.0"
+authors = ["Michael Rawson <michael@rawsons.uk>"]
+license = "MIT"
+homepage = "https://github.com/MichaelRawson/unique"
+edition = "2018"
+keywords = ["intern", "allocation", "unique"]
+
+[dependencies]
+chashmap = "2.2"
+lazy_static = "1.2"

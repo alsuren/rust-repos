@@ -1,0 +1,8 @@
+[package]
+name = "uno"
+version = "0.1.0"
+authors = ["Aaron Kofsky <a2aarontothe2@gmail.com>"]
+
+[dependencies]
+rand = "*"
+term-painter = "0.2"

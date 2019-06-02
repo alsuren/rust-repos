@@ -1,0 +1,20 @@
+[package]
+authors = ["Augustus Mayo <gusmayo@gmail.com>"]
+edition = "2018"
+name = "envfmt"
+version = "0.4.0"
+license = "Apache-2.0"
+
+[badges]
+circle-ci = { repository = "augustuswm/envfmt" }
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+rusoto_core = "0.36.0"
+rusoto_ssm = "0.36.0"
+structopt = "0.2.14"
+
+[dev-dependencies]
+rusoto_mock = "0.30.0"

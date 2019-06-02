@@ -1,0 +1,12 @@
+[workspace]
+
+members = [
+    "compiler",
+    "pattern-compiler",
+    "util",
+    "interpreter",
+    "tools",
+    "eir",
+    "gen_nif",
+    "cps_transform",
+]

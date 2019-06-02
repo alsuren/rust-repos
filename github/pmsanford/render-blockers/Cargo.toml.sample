@@ -1,0 +1,10 @@
+[package]
+name = "render-blockers"
+version = "0.1.0"
+authors = ["Paul Sanford <me@paulsanford.net>"]
+edition="2018"
+
+[dependencies]
+dot = "0.1"
+goji = "0.2"
+structopt = "0.2"

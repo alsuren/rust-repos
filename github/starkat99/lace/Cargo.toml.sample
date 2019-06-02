@@ -1,0 +1,14 @@
+[package]
+name = "lace"
+version = "0.0.1"
+authors = ["Kathryn Long <squeeself@gmail.com>"]
+repository = "https://github.com/starkat99/lace"
+readme = "README.md"
+license = "MPL-2.0"
+publish = false
+
+[badges]
+appveyor = { repository = "starkat99/lace" }
+travis-ci = { repository = "starkat99/lace" }
+
+[dependencies]

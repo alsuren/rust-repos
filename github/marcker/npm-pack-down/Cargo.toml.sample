@@ -1,0 +1,10 @@
+[package]
+name = "npm-pack-down"
+version = "1.0.0"
+authors = ["Marcos Garcia de Lima <marckfree@gmail.com>"]
+
+[dependencies]
+reqwest = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+url = "1.7.0"

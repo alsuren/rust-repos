@@ -1,0 +1,14 @@
+[package]
+name = "codebreaker"
+version = "0.1.0"
+authors = ["Ryan Jennings <ryan@coda.life>"]
+
+[dependencies]
+
+imgui = "0.0.18"
+imgui-glium-renderer = "0.0.18"
+imgui-sys = { version = "0.0.18", features = ["glium"] }
+glium = { version = "0.19", default-features = true }
+glutin = "0.11"
+rand = "0.5.5"
+

@@ -1,0 +1,14 @@
+[workspace]
+
+members = [
+    "data",
+    "guard",
+    "route",
+    "service",
+    "transfer",
+    "web",
+]
+
+exclude = [
+    "app",
+]

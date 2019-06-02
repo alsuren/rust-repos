@@ -1,0 +1,13 @@
+[package]
+name = "pz5_editor"
+version = "0.1.0"
+authors = ["trionprog <trionprog@gmail.com>"]
+
+[dependencies]
+pz5 = { path = "../pz5" }
+collada = { path = "../collada" }
+glium = "*"
+cgmath = "0.9.1"
+glutin = "*"
+object_pool = { path = "../object_pool"}
+byteorder = "1.0.0"

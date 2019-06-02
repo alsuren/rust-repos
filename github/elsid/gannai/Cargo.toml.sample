@@ -1,0 +1,39 @@
+[package]
+name = "gannai"
+version = "0.1.0"
+authors = ["elsid <elsid.mail@gmail.com>"]
+
+[[bin]]
+name = "neural_network_example"
+path = "src/examples/neural_network.rs"
+
+[[bin]]
+name = "generate_neural_network"
+path = "src/tools/generate_neural_network.rs"
+
+[[bin]]
+name = "evolve_neural_network"
+path = "src/tools/evolve_neural_network.rs"
+
+[[bin]]
+name = "apply_neural_network"
+path = "src/tools/apply_neural_network.rs"
+
+[[bin]]
+name = "neural_network_to_dot"
+path = "src/tools/neural_network_to_dot.rs"
+
+[[bin]]
+name = "train_neural_network"
+path = "src/tools/train_neural_network.rs"
+
+[dependencies]
+argparse = "*"
+dot = "*"
+itertools = "*"
+rand = "*"
+rayon = "*"
+rustc-serialize = "*"
+
+[dependencies.bobyqa]
+git = "https://github.com/elsid/bobyqa-rs.git"

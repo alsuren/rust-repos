@@ -1,0 +1,7 @@
+[package]
+name = "consumerkrate"
+version = "0.1.0"
+authors = ["Aaron Hill <aa1ronham@gmail.com>"]
+
+[dependencies]
+selfrefkrate = { path = "selfrefkrate" }

@@ -1,0 +1,16 @@
+[package]
+name = "smoltcp_c"
+version = "0.1.0"
+description = "A primitive C API wrapper for smoltcp"
+authors = ["TÖRÖK Attila <torokati44@gmail.com>"]
+
+[lib]
+name = "smoltcp_c"
+crate-type = ["lib", "staticlib", "dylib"]
+
+[dependencies]
+log = "0.3.6"
+
+[dependencies.smoltcp]
+git = "https://github.com/m-labs/smoltcp.git"
+features = ["std", "log", "verbose"]

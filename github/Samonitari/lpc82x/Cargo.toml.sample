@@ -1,0 +1,21 @@
+[package]
+authors = ["Krisztián Szegi <crossszegi@gmail.com>"]
+categories = ["embedded", "hardware-support", "no-std" ]
+description = "Peripherial access API for NXP LPC82x microcontrollers"
+keywords = ["arm", "cortex-m", "lpc82x", "svd2rust"]
+license = "MIT OR Apache-2.0"
+name = "lpc82x"
+repository = "https://github.com/Samonitari/lpc82x"
+version = "0.1.0"
+
+[dependencies]
+bare-metal = "0.1.0"
+cortex-m = "0.3.1"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.3.0"
+
+[features]
+rt = ["cortex-m-rt"]

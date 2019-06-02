@@ -1,0 +1,9 @@
+[package]
+name = "rust_project"
+version = "0.1.0"
+authors = ["Dan2 <dehaotu@gmail.com>"]
+
+[dependencies]
+termion = "*"
+timer = "*"
+chrono = "*"

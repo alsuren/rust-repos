@@ -1,0 +1,16 @@
+[package]
+name = "opengm"
+version = "0.1.0"
+authors = ["Alec Gleason <agleason@buffersandbeer.com>"]
+
+[lib]
+name = "opengm"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gmtool"
+path = "src/cmd/bin.rs"
+
+[dependencies]
+dotenv = "0.13"
+rusqlite = "0.15"

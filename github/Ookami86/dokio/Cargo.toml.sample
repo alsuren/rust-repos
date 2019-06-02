@@ -1,0 +1,12 @@
+[package]
+name = "dokio"
+version = "0.1.0"
+authors = ["Johannes Seitz <johannes.w.seitz@gmail.com>"]
+
+[dependencies]
+nickel = "*"
+config = "*"
+pulldown-cmark = "0.0.11"
+
+[profile.release]
+lto = true

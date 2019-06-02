@@ -1,0 +1,26 @@
+[package]
+name = "mk20d7"
+version = "0.1.1"
+authors = ["Dylan Frankland <dylan@frankland.io>"]
+categories = ["embedded", "hardware-support", "no-std"]
+description = "Peripheral access API for MK20D7 microcontrollers"
+documentation = "https://docs.rs/mk20d7"
+repository = "https://github.com/dfrankland/mk20d7"
+keywords = ["arm", "cortex-m", "mk20d7", "svd2rust"]
+license = "MIT"
+
+[lib]
+name = "mk20d7"
+path = "./src/lib.rs"
+
+[dependencies]
+bare-metal = "0.2.0"
+cortex-m = "0.5.2"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.5.1"
+
+[features]
+rt = ["cortex-m-rt"]

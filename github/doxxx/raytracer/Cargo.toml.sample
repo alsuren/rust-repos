@@ -1,0 +1,20 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Gordon Tyler <gordon@doxxx.net>"]
+build = "build.rs"
+
+[build-dependencies]
+peg = "0.5"
+
+[dependencies]
+image = "0.14.0"
+clap = "2.25.0"
+wavefront_obj = "5.1.0"
+pbr = "1.0.0"
+num_cpus = "1.0"
+time = "0.1"
+rand = "0.4.2"
+rayon = "1.0.2"
+num-complex = "0.2"
+num-traits = "0.2"

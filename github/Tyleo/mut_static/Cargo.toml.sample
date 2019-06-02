@@ -1,0 +1,26 @@
+[dependencies.error-chain]
+version = "0.10"
+default-features = false
+
+[package]
+authors = ["Tyler Wolf Leonhardt <tyler.wolf.leonhardt@gmail.com>"]
+description = "Provides a struct to help create mutable statics with lazy_static."
+documentation = "https://github.com/tyleo/mut_static.git"
+exclude = [
+    ".gitignore",
+    "build.gradle",
+    "gradle",
+    "gradlew",
+    "gradlew.bat",
+    "README",
+    "test/**"
+]
+keywords = [
+    "lazy_static",
+    "mut",
+    "static"
+]
+license = "MIT"
+name = "mut_static"
+repository = "https://github.com/tyleo/mut_static.git"
+version = "5.0.0"

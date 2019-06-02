@@ -1,0 +1,10 @@
+[package]
+name = "gradepopper"
+version = "2.0.0"
+authors = ["J. Cliff Dyer <jcd@sdf.org>"]
+edition = "2018"
+
+[dependencies]
+csv = "1"
+clap = "2"
+regex = "*"

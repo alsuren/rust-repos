@@ -1,0 +1,12 @@
+[package]
+name = "fusion-shell"
+version = "0.1.0"
+authors = ["Sandeep Datta <datta.sandeep@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+rustyline = "1.0"
+#rustyline = { path = "../rustyline" }
+
+[build-dependencies]
+peg = { version = "0.5" }

@@ -1,0 +1,24 @@
+[package]
+authors = ["Zeyla Hellyer <zeyla@hellyer.dev>"]
+description = "A library to check whether something is rust."
+documentation = "https://docs.rs/is-rust"
+homepage = "https://github.com/zeyla/is-rust"
+license = "ISC"
+name = "is-rust"
+publish = false
+readme = "README.md"
+repository = "https://github.com/zeyla/is-rust.git"
+version = "0.1.0"
+
+[badges.maintenance]
+status = "actively-developed"
+
+[dependencies]
+
+[[bin]]
+name = "is-rust"
+path = "./bin/is-rust.rs"
+
+[features]
+default = ["std"]
+std = []

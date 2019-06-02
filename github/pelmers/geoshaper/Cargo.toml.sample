@@ -1,0 +1,32 @@
+[package]
+name = "geoshaper"
+version = "0.2.4"
+authors = ["Peter Elmers <peter.elmers@yahoo.com>"]
+description = "Find shapes on maps."
+license = "MIT"
+documentation = "https://docs.rs/geoshaper"
+homepage = "https://github.com/pelmers/geoshaper"
+repository = "https://github.com/pelmers/geoshaper"
+keywords = ["geography", "map", "cartography"]
+categories = ["visualization"]
+
+[features]
+default = []
+opencl = ["ocl", "geogrid/opencl"]
+
+[dependencies]
+bincode = "1.0.0-alpha5"
+bzip2 = "0.3.1"
+geogrid = "0.3.0"
+lazy_static = "0.2"
+lru-cache = "0.1.0"
+quicksort = "1.1.0"
+getopts = "0.2"
+rocket = "0.2.2"
+rocket_codegen = "0.2.2"
+rocket_contrib = "0.2.2"
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+stopwatch = "0.0.7"
+ocl = {version = "0.12", optional = "true"}

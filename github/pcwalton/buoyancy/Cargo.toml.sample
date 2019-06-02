@@ -1,0 +1,13 @@
+[package]
+name = "buoyancy"
+version = "0.1.0"
+authors = ["Patrick Walton <pcwalton@mimiga.net>"]
+license = "MIT/Apache 2.0"
+
+[dependencies]
+app_units = "0.3"
+
+[dev-dependencies]
+quickcheck = "0.4"
+rand = "0.3"
+

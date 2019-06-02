@@ -1,0 +1,12 @@
+[package]
+name = "banes-world"
+version = "0.1.0"
+authors = ["Andrew Hayford <emailandrewhayford@gmail.com>"]
+
+[dependencies]
+gotham = "*"
+hyper = "*"
+mime = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"

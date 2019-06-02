@@ -1,0 +1,11 @@
+[package]
+authors = ["Alejandro Gaviria <mr.gaviria@gmail.com>"]
+name = "argentum"
+version = "0.1.0"
+
+[dependencies]
+pest = "1.0.6"
+pest_derive = "1.0.6"
+failure = "0.1.1"
+
+[workspace]

@@ -1,0 +1,15 @@
+[package]
+name = "codeplatter"
+version = "0.1.0"
+authors = ["Mathieu David <mathieudavid@mathieudavid.org>"]
+license = "MIT"
+repository = "https://github.com/azerupi/codeplatter"
+description = """
+codeplatter is a tool to compile code snippets for browser based presentations where you can make ajax requests"""
+
+[dependencies]
+tempdir = "0.3.5"
+hyper = "0.9.10"
+iron = "0.4.0"
+router = "0.4.0"
+rustc-serialize = "0.3.19"

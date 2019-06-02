@@ -1,0 +1,17 @@
+[package]
+name = "yaecs"
+version = "0.11.0"
+authors = ["David Edmonds <edmonds.d.r@gmail.com>"]
+description = "Yet Another Entity Component System."
+license = "MIT"
+keywords = ['ecs', 'gamedev', 'entity', 'component', 'system']
+documentation = "https://docs.rs/yaecs"
+homepage = "https://docs.rs/yaecs"
+repository = "https://github.com/davidedmonds/yaecs"
+readme = "README.md"
+
+[dependencies]
+anymap = "0.12.0"
+
+[dev-dependencies]
+avow = "0.1.0"

@@ -1,0 +1,26 @@
+[package]
+name    = "twenty-twenty"
+version = "0.2.0"
+authors = ["Stone Tickle <stone.tickle@gmail.com>"]
+
+[dependencies]
+# json deserialization
+serde = "1.0.76"
+serde_json = "1.0.27"
+serde_derive = "1.0.76"
+
+# pubsub
+base64 = "*"
+hyper = "^0.10"
+hyper-rustls = "^0.6"
+yup-oauth2 = "^1.0"
+google-pubsub1 = "1.0.7+20171129"
+
+# database
+postgres = "0.15"
+
+# argument parsing
+clap = "2.32.0"
+
+# better channels
+crossbeam-channel = "0.2"

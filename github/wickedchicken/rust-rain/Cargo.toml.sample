@@ -1,0 +1,16 @@
+[package]
+name = "rust-rain"
+version = "0.2.0"
+authors = ["Mike Stipicevic <stipredirect@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "rain"
+path = "src/main.rs"
+
+[dependencies]
+ctrlc = "3.1.0"
+fps_clock = "2.0.0"
+rand = "0.6.0"
+structopt = "0.2.15"
+termion = "1.5.0"

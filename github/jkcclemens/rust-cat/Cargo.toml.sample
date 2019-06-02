@@ -1,0 +1,9 @@
+[package]
+name = "cat"
+version = "0.1.0"
+authors = ["Kyle Clemens <jkc.clemens@gmail.com>"]
+
+[dependencies]
+structopt = "0.1"
+structopt-derive = "0.1"
+failure = "0.1"

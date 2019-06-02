@@ -1,0 +1,21 @@
+[package]
+name = "behnam-globs-test"
+version = "0.1.0"
+authors = ["Behnam Esfahbod <behnam@zwnj.org>"]
+repository = "https://github.com/behnam/rust-globs-test/blob/master/src/lib.rs"
+
+exclude = [
+    # File
+    "/foo1.rs", # FAIL: file SHOULD BE ignored
+    "foo2.rs",  # PASS: file is ignored
+    "foo3.rs/", # PASS: file is not ignored
+
+    # Dir
+    "/bar1", # FAIL: dir SHOULD BE ignored
+    "bar2",  # FAIL: dir SHOULD BE ignored
+    "bar3/", # FAIL: dir SHOULD BE ignored
+]
+
+[dependencies]
+glob = "^0"
+globset = "^0"

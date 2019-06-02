@@ -1,0 +1,18 @@
+[package]
+name = "irondragon"
+version = "0.1.0"
+authors = ["Jan Vandepitte"]
+
+[dependencies]
+iron = "*"
+router = "*"
+mount = "*"
+staticfile = "*"
+RobotS = { version = "*",  git = "https://github.com/gamazeps/RobotS" }
+persistent = "*"
+env_logger = "*"
+rodio ="*"
+
+[target.'cfg(unix)'.dependencies]
+sysfs_gpio = "*"
+sysfs-pwm = "*"

@@ -1,0 +1,8 @@
+[package]
+name = "enocean-lib"
+version = "0.1.0"
+authors = ["David <dev@dschwarz.codes>"]
+
+[dependencies]
+crc-any = "1.1.1"
+serialport = "3.0.0"

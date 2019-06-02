@@ -1,0 +1,22 @@
+[package]
+name = "tamago"
+version = "0.1.0"
+authors = ["Ziyan Wang <zywong159@gmail.com>"]
+
+[lib] 
+crate-type = ["staticlib"]
+
+[dependencies]
+spin = "0.4.8" 
+volatile = "0.2.4"
+multiboot2 = "0.1.0" 
+bitflags = "1.0.3"
+x86_64 = "0.1.2"
+cpuio = "0.2.0"
+
+[dependencies.lazy_static]
+version = "0.2.4"
+features = ["spin_no_std"] 
+
+[profile.release]
+panic = "abort" 

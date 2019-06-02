@@ -1,0 +1,13 @@
+[package]
+name = "try-rust"
+version = "0.1.0"
+authors = ["Andrei Oprisan <aoprisan@gmail.com>"]
+
+[dependencies.rustless]
+git = "https://github.com/rustless/rustless"
+
+[dependencies]
+iron = "*"
+router = "*"
+hyper = "*"
+rustc-serialize = "*"

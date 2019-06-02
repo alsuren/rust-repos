@@ -1,0 +1,18 @@
+[package]
+name = "ruroonga_client"
+version = "0.5.1"
+description = "A tiny Groonga HTTP client."
+authors = ["Hiroshi Hatake <cosmo0920.wp@gmail.com>"]
+keywords = ["groonga"]
+license-file = "LICENSE"
+readme = "README.md"
+homepage = "https://github.com/cosmo0920/ruroonga_client"
+
+[dependencies]
+hyper = "~0.10.0"
+url = "~1.2.0"
+json_flex = "0.3.2"
+byteorder = { version = "0.5", optional = true }
+
+[features]
+gqtp = ["byteorder"]

@@ -1,0 +1,16 @@
+[package]
+name = "hunt-the-wumpus"
+version = "0.1.0"
+authors = ["Paiga Shaona <paigashaona@gmail.com>"]
+edition = "2018"
+[[bin]]
+name = "hunt"
+path = "src/main.rs"
+
+[dependencies]
+stdweb = "0.4.16"
+yew = "0.6.0"
+
+[lib]
+name = "hunt_the_wumpus"
+path = "src/lib.rs"

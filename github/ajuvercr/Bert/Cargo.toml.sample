@@ -1,0 +1,47 @@
+[package]
+name = "bert"
+version = "0.1.0"
+authors = ["silvius"]
+edition = "2018"
+
+[dependencies]
+ws = "0.8.1"
+tokio-io = "0.1.12"
+futures = "0.1.27"
+tokio-core = "0.1.17"
+tokio-timer = "0.2.11"
+tokio = "0.1.20"
+atomic-counter = "1.0.1"
+bytes = "0.4.12"
+websocket = "0.22.4"
+
+[target.heroku]
+version = "nightly"
+
+[lib]
+name = "bert"
+path = "src/lib.rs"
+
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[[bin]]
+name = "client_server"
+path = "src/bin/client_server.rs"
+
+[[bin]]
+name = "echo"
+path = "src/bin/ws_echo.rs"
+
+[[bin]]
+name = "connect"
+path = "src/bin/connect.rs"
+
+[[bin]]
+name = "tcp_echo"
+path = "src/bin/tcp_echo.rs"

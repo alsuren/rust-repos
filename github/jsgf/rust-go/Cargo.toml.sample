@@ -1,0 +1,17 @@
+[package]
+name = "go"
+version = "0.1.0"
+authors = ["Jeremy Fitzhardinge <jeremy@goop.org>"]
+readme = "README.md"
+
+[[bin]]
+name = "sgfreader"
+
+[dependencies]
+nom = "1.2"
+lazy_static = "0.1"
+bit-set = { git = "https://github.com/jsgf/bit-set.git" }
+bit-vec = "0.4.3"
+
+[profile.release]
+debug = true

@@ -1,0 +1,17 @@
+[package]
+name = "rect_component"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["rect_component"]
+description = "rect component and manager for the scene_graph lib"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-rect_component.git"
+homepage = "https://github.com/nathanfaucett/rs-rect_component"
+
+
+[dependencies]
+transform_components = {git = "https://github.com/nathanfaucett/rs-transform_components.git"}
+scene_graph = {git = "https://github.com/nathanfaucett/rs-scene_graph.git"}
+shared = {git = "https://github.com/nathanfaucett/rs-shared.git"}

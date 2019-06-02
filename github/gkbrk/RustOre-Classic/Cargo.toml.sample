@@ -1,0 +1,14 @@
+[package]
+
+name = "RustOre-Classic"
+version = "0.0.1"
+authors = ["gkbrk <webdosusb@gmail.com>"]
+
+[dependencies.curl]
+git = "https://github.com/carllerche/curl-rust"
+
+[dependencies.flate2]
+git = "https://github.com/alexcrichton/flate2-rs"
+
+#[dependencies.rust-crypto]
+#git = "https://github.com/DaGenix/rust-crypto"

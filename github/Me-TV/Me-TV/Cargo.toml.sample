@@ -1,0 +1,45 @@
+[package]
+name = "me-tv"
+version = "3.1.0"
+authors = ["Russel Winder <russel@winder.org.uk>"]
+categories = ["desktop applications"]
+keywords = ["dvb", "video", "audio", "player", "atsc"]
+license = "GPL-3.0"
+description = "Me TV is a GTK+/GStreamer desktop application for playing DVB, digital video broadcasting."
+readme = "README.md"
+
+[dependencies]
+clap = "*"
+chrono = "*"
+ctrlc = {version = "*", features = ["termination"]}
+exitcode = "*"
+fragile = "*"
+#gdk = "*"
+gdk = {git="https://github.com/gtk-rs/gdk"}
+#gdk-pixbuf = "*"
+gdk-pixbuf = {git="https://github.com/gtk-rs/gdk-pixbuf"}
+#gio = "*"
+gio = {git="https://github.com/gtk-rs/gio"}
+#glib = {version="*", features=["v2_48"]}
+glib = {git="https://github.com/gtk-rs/glib", features=["v2_48"]}
+glob = "*"
+#gtk = {version="*", features=["v3_18"]}
+gtk = {git="https://github.com/gtk-rs/gtk", features=["v3_18"]}
+#gstreamer = {version = "*", features = ["v1_16"]}
+gstreamer = {git="https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", features=["v1_16"]}
+gstreamer-mpegts = {git="https://gitlab.com/Russel/gstreamer_mpegts.git"}
+lazy_static = "*"
+libc = "*"
+nix = "*"
+notify = "*"
+regex= "*"
+serde = "*"
+serde_derive = "*"
+serde_yaml = "*"
+tempfile = "*"
+time = "*"
+xdg = "*"
+
+[dev-dependencies]
+quickcheck = "*"
+rstest = "*"

@@ -1,0 +1,37 @@
+[package]
+name = "mtpng"
+version = "0.1.0"
+authors = ["Brion Vibber <brion@pobox.com>"]
+
+[features]
+default=[]
+cli=["png", "clap", "time"]
+capi=["libc"]
+
+[[bin]]
+name="mtpng"
+path="src/bin/mtpng.rs"
+required-features=["cli"]
+
+[dependencies]
+rayon = "1.0.2"
+crc = "1.8.1"
+libz-sys = "1.0.23"
+itertools = "0.7.8"
+typenum = "1.10.0"
+
+# for cli
+png = { version = "0.12.0", optional = true }
+clap = { version = "2.32.0", optional = true }
+time = { version = "0.1.40", optional = true }
+
+# for capi
+libc = { version = "0.2.43", optional = true }
+
+[lib]
+crate-type = ["rlib", "cdylib", "staticlib"]
+
+[profile.release]
+# Unoptimized debug builds are too slow to profile
+# having debug info doesn't hurt perf for now
+debug = true

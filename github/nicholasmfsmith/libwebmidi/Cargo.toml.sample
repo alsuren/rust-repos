@@ -1,0 +1,14 @@
+[package]
+name = "libwebmidi"
+version = "0.1.0"
+authors = [
+	"Nicholas Cioli <nicholascioli@gmail.com>",
+	"Nicholas Smith <nicholasmfsmith@gmail.com>"
+]
+
+[dependencies]
+webmidi = { path = "libs/webmidi" }
+access_token_handler = { path = "libs/access_token_handler" }
+midir = "0.5.0"
+uuid = { version = "0.4", features = ["v4"] }
+base64 = "~0.6.0"

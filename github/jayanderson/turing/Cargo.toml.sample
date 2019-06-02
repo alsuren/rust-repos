@@ -1,0 +1,13 @@
+[package]
+name = "turing"
+version = "0.1.0"
+authors = ["Jay Anderson"]
+
+[[bin]]
+name = "turing"
+
+[dependencies.stopwatch]
+git = "https://github.com/jayanderson/stopwatch.git"
+
+[dependencies.toml]
+git = "https://github.com/alexcrichton/toml-rs.git"

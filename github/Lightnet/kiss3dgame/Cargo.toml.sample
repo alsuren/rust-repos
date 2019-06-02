@@ -1,0 +1,8 @@
+[package]
+name = "kiss3dgame"
+version = "0.1.0"
+authors = ["Lightnet"]
+
+[dependencies]
+kiss3d = "0.16"
+nalgebra = "0.16"

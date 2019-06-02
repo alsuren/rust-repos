@@ -1,0 +1,30 @@
+[package]
+name = "traitor"
+version = "0.0.0"
+authors = ["Ivan Dubrov <dubrov.ivan@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/idubrov/traitor"
+license = "MIT/Apache-2.0"
+description = """
+A library to generate trait object vtables at runtime.
+"""
+
+[dependencies]
+traitor-derive = { version = "0.0.0", path = "./traitor-derive" }
+typed-arena = "1.4.1"
+dynasmrt = "0.2.3"
+# need proc macro variant
+#dynasm = { git = "https://github.com/CensoredUsername/dynasm-rs.git", optional = true, rev = "e2bcdebfd20121441bccedf5951576387e9f7a40" }
+
+[dev-dependencies]
+evmap = "4.0.1"
+cargo-readme = "3.1.2"
+
+[features]
+default = []
+
+[workspace]
+members = [
+    "traitor-derive",
+    ".",
+]

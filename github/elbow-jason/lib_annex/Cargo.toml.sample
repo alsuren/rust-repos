@@ -1,0 +1,13 @@
+[package]
+name = "lib_annex"
+version = "0.1.4"
+authors = ["Jason Goldberger <jasongoldberger@gmail.com>"]
+edition = "2018"
+include = [
+    "**/*.rs",
+    "Cargo.toml"
+]
+description = "Annex native Rust backend utility"
+license = "MIT"
+
+[dependencies]

@@ -1,0 +1,10 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["Jason Hills <jason.hills@vivint.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "*"
+lazy_static = "*"
+regex = "*"

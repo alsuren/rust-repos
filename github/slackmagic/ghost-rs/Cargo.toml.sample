@@ -1,0 +1,9 @@
+[package]
+name = "ghost-rs"
+version = "0.1.0"
+authors = ["MagiC"]
+edition = "2018"
+
+[dependencies]
+raylib = "0.9.1"
+specs = "0.14.3"

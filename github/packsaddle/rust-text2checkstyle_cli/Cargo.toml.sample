@@ -1,0 +1,39 @@
+[package]
+authors = ["Sanemat <o.gata.ken@gmail.com>"]
+categories = [
+    "command-line-interface",
+    "command-line-utilities",
+    "development-tools",
+]
+description = "cli for text to checkstyle."
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "changelog.md",
+    "readme.md",
+    "license-apache",
+    "license-mit",
+]
+keywords = [
+    "checkstyle",
+    "text",
+]
+license = "MIT/Apache-2.0"
+name = "text2checkstyle_cli"
+repository = "https://github.com/packsaddle/rust-text2checkstyle_cli/"
+version = "1.1.1"
+
+[[bin]]
+name = "text2checkstyle"
+path = "src/main.rs"
+[badges.appveyor]
+project_name = "sanemat/rust-text2checkstyle-cli"
+repository = "packsaddle/rust-text2checkstyle_cli"
+
+[badges.travis-ci]
+repository = "packsaddle/rust-text2checkstyle_cli"
+
+[dependencies]
+atty = "0.2.3"
+clap = "2.26.2"
+text2checkstyle = "1.0.0"

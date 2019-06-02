@@ -1,0 +1,17 @@
+[package]
+name = "twr-scrapper"
+version = "1.0.0"
+authors = ["Yosef da Iry <yosefda@gmail.com>"]
+
+[dependencies]
+reqwest = "^0.8.5"
+select = "^0.4.2"
+serde = "1"
+serde_derive = "1"
+csv = "1.0.0-beta.5"
+rayon = "1.0"
+error-chain = "0.11.0"
+
+[dependencies.clap]
+version = "2.31.2"
+features = ["yaml"]

@@ -1,0 +1,11 @@
+[package]
+name = "p2p"
+version = "0.1.0"
+authors = ["chris <chris@aion.network>"]
+
+[dependencies]
+# mio = "*"
+mio = { git = "https://github.com/carllerche/mio.git" }
+hex = "*"
+bytebuffer = "*"
+uuid = { version = "0.7", features = ["v4"] }

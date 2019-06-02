@@ -1,0 +1,17 @@
+[package]
+name = "r-server"
+version = "0.1.0"
+authors = ["Jake Lacey <jakelacey2012@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.16"
+rocket = "0.4.0"
+serde = { version = "1.0", features = ["derive"] }
+juniper = "0.11.1"
+juniper_rocket = "0.2.0"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["handlebars_templates", "serve"]

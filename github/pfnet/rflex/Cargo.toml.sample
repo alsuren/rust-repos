@@ -1,0 +1,15 @@
+[package]
+name = "rflex"
+version = "0.3.0"
+authors = ["Shuzo Kashihara <kashihara@preferred.jp>"]
+license = "MIT"
+edition = "2018"
+repository = "https://github.com/pfnet/rflex"
+license-file = "LICENSE"
+readme = "README.md"
+description = "Fast lexer code generator for Rust"
+keywords = ["lexer", "lex"]
+
+[dependencies]
+fixedbitset = "0.1.9"
+liquid = "0.17"

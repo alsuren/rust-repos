@@ -1,0 +1,9 @@
+[package]
+name = "cats-terminal-ink"
+version = "0.1.0"
+authors = ["Perry Fraser <perry@frasers.org>"]
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+rand = "0.4.2"

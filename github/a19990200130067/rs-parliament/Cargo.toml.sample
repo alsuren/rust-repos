@@ -1,0 +1,41 @@
+[package]
+name = "rs-parliament"
+version = "0.1.0"
+authors = ["Kaiyuan Zhang <John_zh_007@yahoo.com>"]
+
+[lib]
+name = "rs_parliament"
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
+[[bin]]
+name = "lock_server"
+path = "src/lockserver.rs"
+
+[[bin]]
+name = "lock_leader"
+path = "src/lock_leader.rs"
+
+[[bin]]
+name = "lock_acceptor"
+path = "src/lock_acceptor.rs"
+
+[[bin]]
+name = "lock_replica"
+path = "src/lock_replica.rs"
+
+[[bin]]
+name = "lock_client"
+path = "src/lockclient.rs"
+
+[dependencies]
+rand = "*"
+zmq = "0.8"
+libc = "*"
+serde_derive = "*"
+serde = "1.0"
+serde_json = "*"
+hex = "0.3"
+openssl-sys = "0.9"
+openssl = "0.10"
+clap = "2.32.0"

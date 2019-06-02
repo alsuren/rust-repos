@@ -1,0 +1,32 @@
+[package]
+name = "aliases"
+version = "0.8.1"
+authors = ["Seb Glazebrook <sebastian.glazebrook@redbubble.com>"]
+
+[lib]
+name = "aliases"
+path = "src/lib.rs"
+
+[[bin]]
+name = "aliases"
+path = "src/main.rs"
+
+[dependencies]
+yaml-rust = "0.3.0"
+regex = "*"
+rust-crypto = "0.2.34"
+rustc-serialize = "0.3"
+tabwriter = "0.1"
+countdown = "*"
+crossbeam = "*"
+log = "*"
+env_logger = "*"
+scoped-pool = "*"
+
+[dependencies.clap]
+features = ["yaml"]
+version = "2.16.4"
+
+[dev-dependencies]
+gag = "*"
+stainless = "*"

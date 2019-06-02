@@ -1,0 +1,16 @@
+[package]
+name = "neovim-rs"
+version = "0.1.0"
+authors = ["oakes <zsoakes@gmail.com>"]
+build = "build.rs"
+description = "A library for embedding Neovim inside a Rust project"
+license = "Unlicense"
+repository = "https://github.com/oakes/neovim-rs"
+
+[dependencies]
+libc="0.2"
+
+[lib]
+name = "neovim"
+crate_type = ["rlib"]
+path = "src/lib.rs"

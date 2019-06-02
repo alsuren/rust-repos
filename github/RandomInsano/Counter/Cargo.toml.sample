@@ -1,0 +1,11 @@
+[package]
+name = "counter"
+version = "0.1.0"
+authors = ["edwinamsler"]
+
+[dependencies]
+image = "*"
+rocket = "0.1.2"
+rocket_codegen = "0.1.2"
+memstream = "0.0.1"
+lazy_static = "0.1"

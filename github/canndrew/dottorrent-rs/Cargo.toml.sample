@@ -1,0 +1,12 @@
+[package]
+
+name = "dottorrent"
+version = "0.0.1"
+authors = ["Andrew Cann <shum@canndrew.org>"]
+
+[dependencies.bencode]
+git = "https://github.com/arjantop/rust-bencode"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"
+

@@ -1,0 +1,27 @@
+[package]
+
+name = "fcgi"
+version = "0.0.2"
+authors = ["Daniel Kaes <daniel.kaes@web.de>"]
+
+description = "Rust bindings for fast-cgi"
+
+license = "MIT"
+
+[lib]
+name = "fcgi"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fcgi-example"
+path = "examples/example.rs"
+doc = false
+
+[[bin]]
+name = "echo"
+path = "examples/echo.rs"
+doc = false
+
+[dependencies]
+libc = "0.2"
+

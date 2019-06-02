@@ -1,0 +1,10 @@
+[package]
+name = "MinHash"
+version = "0.1.0"
+authors = ["shinnora <sysy1995@g.ecc.u-tokyo.ac.jp>"]
+
+[dependencies]
+vob = "1.3.2"
+fasthash = "0.3.2"
+rand = "0.5.5"
+byteorder = "1.2.4"

@@ -1,0 +1,14 @@
+[package]
+name = "load_file"
+description = "Macros to help conveniently load the contents of files during development."
+version = "1.0.0"
+authors = ["Magnus Hovland Hoff <maghoff@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/maghoff/load_file"
+readme = "README.md"
+keywords = [ "include_str", "include_bytes" ]
+categories = [ "development-tools" ]
+
+[badges]
+travis-ci = { repository = "maghoff/load_file", branch = "master" }
+maintenance = { status = "passively-maintained" }

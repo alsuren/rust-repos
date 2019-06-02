@@ -1,0 +1,11 @@
+[package]
+name = "lost-cities"
+version = "0.1.0"
+authors = ["Michael Alexander"]
+
+[dependencies]
+rand = "^0.3.14"
+nom = "^1.2.2"
+rustc-serialize = "^0.3.19"
+brdgme-game = { path = "../game" }
+brdgme-color = { path = "../color" }

@@ -1,0 +1,17 @@
+[package]
+name = "repc"
+version = "0.1.0"
+authors = ["Giorgos Georgiou <giorgos.georgiou@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+log = "*"
+bytes = "*"
+tokio = {version = "*", features = ["async-await-preview"]}
+atoms = "*"
+failure = "*"
+
+[dev-dependencies]
+env_logger = "*"
+lazy_static = "*"
+mocktopus = "*"

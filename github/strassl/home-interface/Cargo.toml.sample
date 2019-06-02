@@ -1,0 +1,20 @@
+[package]
+name = "home-interface"
+version = "0.1.0"
+authors = ["Simon Strassl <stuff@sigmoid.at>"]
+build = "build.rs"
+
+[build-dependencies]
+serde_codegen = "0.8"
+
+[dependencies]
+log = "0.3.6"
+hyper = "0.9.14"
+iron = "0.4.0"
+router = "0.4.0"
+palette = "0.2"
+serde = "0.8"
+serde_json = "0.8"
+serial = "0.3"
+clap = "2.19.3"
+unicase ="1.4.0"

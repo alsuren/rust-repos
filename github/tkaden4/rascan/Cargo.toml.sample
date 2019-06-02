@@ -1,0 +1,12 @@
+[package]
+name = "rascan"
+version = "0.1.0"
+authors = ["tkaden4 <thomas.kaden4@outlook.com>"]
+
+[dependencies]
+rayon="*"
+clap="2.31"
+pnet="0.21.0"
+matches="*"
+nix="*"
+ansi_term="*"

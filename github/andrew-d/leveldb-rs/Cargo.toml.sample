@@ -1,0 +1,23 @@
+[package]
+
+name = "leveldb-rs"
+version = "0.0.7"
+authors = ["Andrew Dunham <andrew@du.nham.ca>"]
+
+description = "Bindings to the LevelDB key/value storage library (https://github.com/google/leveldb)"
+documentation = "https://docs.rs/crate/leveldb-rs"
+repository = "https://github.com/andrew-d/leveldb-rs"
+keywords = ["bindings", "database", "leveldb"]
+license = "MIT"
+
+[features]
+snappy = ["leveldb-sys/snappy"]
+
+[dependencies]
+libc = "0.2"
+
+[dependencies.leveldb-sys]
+version = "2.0.1"
+
+[dev-dependencies]
+tempdir = "0.3.0"

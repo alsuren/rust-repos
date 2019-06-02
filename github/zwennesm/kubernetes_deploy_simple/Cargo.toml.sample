@@ -1,0 +1,8 @@
+[package]
+name = "kubernetes_deploy_simple"
+version = "0.1.0"
+authors = ["zwennesm <zwennesm@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+semver = "0.9.0"

@@ -1,0 +1,19 @@
+[package]
+name = "hasty"
+version = "0.0.4"
+authors = ["russ <russ@infocyte.com>"]
+
+[dependencies]
+url = "1.6.0"
+serde = "*"
+serde_json = "1.0"
+serde_derive = "*"
+# webpki = "0.18.0-alpha4"
+webpki = "0.17"
+mime = "*"
+log = "*"
+
+[dependencies.rustls]
+default-features = false
+version = "0.11.0"
+features = ["dangerous_configuration"]

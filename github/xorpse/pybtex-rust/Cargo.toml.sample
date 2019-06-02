@@ -1,0 +1,7 @@
+[package]
+name = "pybtex"
+version = "0.1.0"
+authors = ["Sam Thomas <m@kali.ai>"]
+
+[dependencies]
+cpython = { git = "https://github.com/xorpse/rust-cpython.git", features=["python-3-7"] }

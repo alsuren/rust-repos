@@ -1,0 +1,19 @@
+[package]
+name = "nixjson"
+version = "0.1.0"
+authors = ["Sean Gallagher <stgallag@gmail.com>"]
+
+[lib]
+name="commonbin"
+path="src/lib.rs"
+
+[[bin]]
+name="json"
+
+[dependencies]
+log = "*"
+env_logger = "*"
+csv = "*"
+itertools = "*"
+serde_json = "1.0.*"
+clap = "2.24.*"

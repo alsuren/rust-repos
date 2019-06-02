@@ -1,0 +1,19 @@
+[package]
+name = "x12pp"
+version = "0.3.0"
+authors = ["Mike Clarke <clarkema@clarkema.org>"]
+description = "A CLI pretty-printer for X12 EDI files"
+homepage = "https://github.com/clarkema/x12pp"
+readme = "README.md"
+keywords = ["x12", "edi"]
+license = "GPL-3.0-only"
+edition = "2018"
+
+[dependencies]
+byteorder = "1.3.1"
+memchr = "2.2.0"
+
+[dependencies.clap]
+version = "2.33.0"
+default-features = false
+features = ["wrap_help"]

@@ -1,0 +1,23 @@
+[package]
+name = "rmalt"
+version = "0.1.0"
+authors = ["Zhihang-Liu <enterindex@gmail.com>"]
+
+#[lib]
+#name = "libmalt"
+#path = "./src/lib.rs"
+#crate-type = ["cdylib"]
+
+[[bin]]
+name = "malt"
+path = "./src/main.rs"
+
+#[[bin]]
+#name = "malt2rust"
+#path = "./src/malt2rust.rs"
+
+
+[dependencies]
+regex = "1"
+lazy_static = "1"
+#libloading = "0.5.0"

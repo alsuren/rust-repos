@@ -1,0 +1,24 @@
+[package]
+name = "slog-env-cfg"
+version = "0.1.4"
+authors = ["MOZGIII <mike-n@narod.ru>"]
+edition = "2018"
+license = "MIT"
+description = "Opinionated slog drains builder, configurable via env vars."
+repository = "https://github.com/MOZGIII/slog-env-cfg"
+keywords = ["slog", "env"]
+categories = ["config", "development-tools::debugging"]
+readme = "README.md"
+
+[badges]
+travis-ci = { repository = "MOZGIII/slog-env-cfg", branch = "master" }
+
+[dependencies]
+slog = "2.4"
+slog-async = "2.3"
+slog-term = "2.4"
+slog-json = "2.3"
+
+[dev-dependencies]
+serial_test = "0.2"
+serial_test_derive = "0.2"

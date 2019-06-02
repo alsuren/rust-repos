@@ -1,0 +1,27 @@
+[package]
+name = "psmond"
+version = "0.1.0"
+authors = ["Vishal Patil <vishpat@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/vishpat/psmond"
+repository = "https://github.com/vishpat/psmond"
+documentation = "https://github.com/vishpat/psmond"
+description = """
+A Linux process monitoring daemon.
+"""
+
+
+[[bin]]
+name = "psmond"
+path = "src/daemon/main.rs"
+
+[dependencies]
+daemonize = "0.3.0"
+tokio = "0.1.5"
+tokio-uds = "0.1"
+tokio-core = "0.1"
+tokio-timer = "0.2.1"
+futures = "0.1.21"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"

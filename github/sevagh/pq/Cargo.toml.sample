@@ -1,0 +1,38 @@
+[package]
+name = "pq"
+version = "1.3.0"
+authors = ["Sevag Hanssian <sevag.hanssian@gmail.com>"]
+description = "jq for protobuf"
+repository = "https://github.com/sevagh/pq"
+documentation = "https://github.com/sevagh/pq"
+readme = "README.md"
+license = "MIT"
+keywords = ["protobuf", "serde"]
+exclude = ["pq-bin.tar.gz", "pq", "target/**"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+serde-value = "0.5"
+erased_serde_json = { path = "erased-serde-json", version = "0.1.1" }
+serde_json = "1.0"
+serde-protobuf = "0.8"
+protobuf = "2.3"
+stream_delimit = { path = "stream-delimit", version = "0.5.4" }
+clap = "2"
+libc = "0.2"
+dirs = "1.0"
+
+[dev-dependencies]
+assert_cli = "0.5"
+
+[features]
+default = ["stream_delimit/with_kafka"]
+
+[workspace]
+members = ["stream-delimit", "erased-serde-json"]
+
+[profile.release]
+debug = true
+lto = true
+panic = "abort"

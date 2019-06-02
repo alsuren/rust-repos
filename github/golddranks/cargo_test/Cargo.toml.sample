@@ -1,0 +1,9 @@
+[package]
+name = "cargo_test"
+version = "0.1.0"
+authors = ["Kontio Pyry <kontio@r.recruit.co.jp>"]
+
+[dependencies]
+
+rust-s3 = "0.6"
+postgres = "0.15"

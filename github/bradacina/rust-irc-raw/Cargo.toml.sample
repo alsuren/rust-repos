@@ -1,0 +1,8 @@
+[package]
+name = "irc-raw"
+version = "0.1.0"
+authors = ["animosity"]
+
+[dependencies]
+libc="*"
+failure="*"

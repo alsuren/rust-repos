@@ -1,0 +1,10 @@
+[package]
+name = "wasm_env"
+version = "0.1.0"
+authors = ["Alexey Gerasev <alexey.gerasev@gmail.com>"]
+build = false
+
+[dependencies]
+byteorder = "1"
+lazy_static = "1.1.0"
+vecmat = "0.3"

@@ -1,0 +1,22 @@
+[package]
+name = "tokio-line"
+version = "0.1.0"
+authors = ["Carl Lerche <me@carllerche.com>"]
+
+[dependencies]
+log = "0.3.6"
+bytes = { git = "https://github.com/carllerche/bytes" }
+futures = "0.1"
+tokio-core = "0.1"
+tokio-proto = { git = "https://github.com/tokio-rs/tokio-proto" }
+tokio-service = { git = "https://github.com/tokio-rs/tokio-service" }
+tokio-middleware = { git = "https://github.com/tokio-rs/tokio-middleware" }
+env_logger = "0.3.0"
+
+[dev-dependencies]
+tokio-timer = { git = "https://github.com/tokio-rs/tokio-timer" }
+rand = "0.3.14"
+
+[[bin]]
+name = "peek"
+path = "bin/peek.rs"

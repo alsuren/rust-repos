@@ -1,0 +1,23 @@
+[package]
+name = "jss_derive"
+version = "0.1.1"
+authors = ["Anton Shramko <antonshramko@yandex.ru>"]
+repository = "https://github.com/rise-ui/jss_derive"
+homepage = "https://github.com/rise-ui/jss_derive"
+description = "Derive of JSS"
+keywords = ["gui", "layout", "yoga", "parsing", "rise-ui"]
+readme = "README.md"
+categories = ["gui"]
+license = "MIT"
+
+[dependencies]
+syn = { version = "0.14", features = ["full"] }
+enum_extract = "0.1"
+lazy_static = "1.0"
+proc-macro2 = "0.4"
+Inflector = "0.11"
+quote = "0.6"
+regex = "1.0"
+
+[lib]
+proc-macro = true

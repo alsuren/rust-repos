@@ -1,0 +1,23 @@
+[package]
+name = "const-ft"
+version = "0.1.2"
+authors = ["dylan_DPC <dylan.dpc@gmail.com>"]
+description = "Macro for wrapping const fn in a feature gate."
+documentation = "https://docs.rs/const-ft"
+exclude = [
+    ".github/**",
+    ".travis.yml",
+    "appveyor.yml",
+    "bors.toml"
+]
+license = "Apache-2.0 OR MIT"
+homepage = "https://github.com/Dylan-DPC/const-ft"
+readme = "README.md"
+repository = "https://github.com/Dylan-DPC/const-ft"
+
+
+[dependencies]
+
+[features]
+const_fn = []
+default = []

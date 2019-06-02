@@ -1,0 +1,15 @@
+[package]
+name = "cdisasm"
+version = "0.1.0"
+authors = ["Ta Thanh Dinh <tathanhdinh@gmail.com>"]
+
+[dependencies]
+capstone = "0.4.0"
+failure = "0.1.2"
+lazy_static = "1.1.0"
+structopt = "0.2.10"
+strum = "0.10.0"
+strum_macros = "0.10.0"
+maplit = "1.0.1"
+tabwriter = "1.1.0"
+ansi_term = "0.11.0"

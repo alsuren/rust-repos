@@ -1,0 +1,16 @@
+[package]
+name = "freitag"
+version = "0.1.0"
+authors = ["Barend <11941174+bvanrijn@users.noreply.github.com>"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+yansi = "0.4.0"
+clap = { version = "2.32.0", features = ["wrap_help"] }
+reqwest = "0.9.5"
+log = "0.4"
+simple_logger = "1.0.1"
+separator = "0.3.1"
+prettytable-rs = "0.8"

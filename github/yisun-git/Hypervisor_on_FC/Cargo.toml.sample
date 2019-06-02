@@ -1,0 +1,34 @@
+[package]
+name = "firecracker"
+version = "0.15.0"
+authors = ["Amazon firecracker team <firecracker-devel@amazon.com>"]
+
+[dependencies]
+chrono = ">=0.4"
+clap = "=2.27.1"
+
+api_server = { path = "api_server" }
+fc_util = { path = "fc_util" }
+jailer = { path = "jailer" }
+logger = { path = "logger" }
+mmds = { path = "mmds" }
+seccomp = { path = "seccomp" }
+vmm = { path = "vmm" }
+
+[target.'cfg(target_arch = "x86_64")'.dependencies]
+backtrace = {version = "0.3", features = ["libunwind", "libbacktrace"], default-features = false}
+
+[dev-dependencies]
+tempfile = ">=3.0.2"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+lto = true
+panic = "abort"
+
+[features]
+vsock = ["api_server/vsock", "jailer/vsock"]
+
+[workspace]

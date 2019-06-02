@@ -1,0 +1,20 @@
+[package]
+description = "HTTP proxy to reroute requests for development"
+license = "MIT"
+repository = "https://github.com/zauberpony/devproxy-rs"
+name = "devproxy"
+version = "0.1.0"
+authors = ["Elmar Athmer <elmar@athmer.org>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1"
+actix-web = "1.0.0-beta.1"
+actix = "0.8"
+clap = "2.32"
+http = "0.1"
+
+env_logger = "*"
+
+[dev-dependencies]
+maplit = "1.0"

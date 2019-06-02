@@ -1,0 +1,27 @@
+[package]
+name = "ppm-rs"
+version = "0.1.0"
+authors = ["ipost <ipost@covermymeds.com>"]
+
+[dependencies]
+
+[dependencies.openssl]
+version = "*"
+[dependencies.terminal_size]
+version = "*"
+[dependencies.hex]
+version = "*"
+[dependencies.clap]
+version = "*"
+[dependencies.time]
+version = "*"
+[dependencies.iron]
+version = "*"
+[dependencies.router]
+version = "*"
+[dependencies.bodyparser]
+version = "*"
+[dependencies.serde_json]
+version = "*"
+[dependencies.rand]
+version = "*"

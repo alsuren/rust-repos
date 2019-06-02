@@ -1,0 +1,9 @@
+[package]
+name = "unwort"
+version = "0.1.1"
+authors = ["Arne Dussin <arne.dussin@tu-dortmund.de>"]
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+toml = "*"

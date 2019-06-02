@@ -1,0 +1,48 @@
+[package]
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+name = "quad-image"
+version = "0.1.0"
+
+description = "An image host"
+repository = "https://github.com/FauxFaux/quad-image"
+readme = "README.md"
+
+categories = ["multimedia"]
+license = "MIT OR Apache-2.0"
+
+edition = "2018"
+
+[badges.travis-ci]
+repository = "FauxFaux/quad-image"
+
+[dependencies]
+base64 = "0.10"
+failure = "0.1"
+gif = "0.10"
+hmac = "0.7"
+kamadak-exif = "0.3"
+lazy_static = "1"
+libc = "0.2"
+rand = "0.6"
+rayon = "1"
+regex = "1"
+rouille = "3"
+serde_json = "1"
+sha2 = "0.8"
+tempfile-fast = "0.3"
+
+[dependencies.image]
+version = "0.21"
+# features -= "hdr", "dxt"
+default-features = false
+features = ["gif_codec", "jpeg", "jpeg_rayon", "ico", "png_codec", "pnm", "tga", "tiff", "webp", "bmp"]
+
+[dependencies.rusqlite]
+version = "0.18"
+features = ["bundled"]
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+lto = true

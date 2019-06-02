@@ -1,0 +1,45 @@
+[package]
+name = "pcap2"
+version = "0.1.0"
+authors = ["Flier Lu <flier.lu@gmail.com>"]
+repository = "https://github.com/flier/rust-pcap2"
+documentation = "https://docs.rs/pcap2/"
+license = "MIT/Apache-2.0"
+description="A Rust library for reading and writing PCAP/PCAPNG files."
+exclude = [
+    ".gitignore",
+    ".travis.yml",
+]
+readme = "README.md"
+categories = [
+    "network-programming",
+]
+keywords = [
+    "packet",
+    "pcap",
+    "pcapng",
+    "sniffing",
+]
+
+[dependencies]
+log = "0.4"
+failure = "0.1"
+bitflags = "1.0"
+lazy_static = "1.0"
+num-traits = "0.2"
+num-derive = "0.2"
+arrayref = "0.3"
+byteorder = "1.2"
+nom = { version = "4.0", features = ["verbose-errors", "regexp_macros"] }
+memmap = "0.6"
+hexplay = "0.2"
+
+[dev-dependencies]
+pretty_env_logger = "0.2"
+structopt = "0.2"
+either = "1.5"
+glob = "0.2"
+itertools = "0.7"
+chrono = "0.4"
+pnet = "0.21"
+httparse = "1.3"

@@ -1,0 +1,27 @@
+[package]
+authors = ["Michael Bryan <michaelfbryan@gmail.com>"]
+name = "rustc-internal-docs"
+version = "0.1.0"
+description = "A tool for generating your own copy of the internal compiler docs"
+license = "MIT"
+documentation = "https://docs.rs/rustc-internal-docs"
+repository = "https://github.com/Michael-F-Bryan/rustc-internal-docs"
+
+[[bin]]
+doc = false
+name = "rustc-internal-docs"
+path = "src/bin/main.rs"
+
+[dependencies]
+chrono = "0.4"
+clap = "2.29"
+copy_dir = "0.1"
+env_logger = "0.5"
+error-chain = "0.11"
+log = "0.4"
+regex = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+shlex = "0.1"
+tempdir = "0.3"
+toml = "0.4"

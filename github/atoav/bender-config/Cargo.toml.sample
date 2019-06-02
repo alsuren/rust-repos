@@ -1,0 +1,32 @@
+[package]
+name = "bender_config"
+version = "0.2.13"
+license = "MIT"
+readme = "README.md"
+authors = ["David Huss <dh@widerstandzwecklos.at>"]
+description = "As part of the bender renderfarm, the config acts both as a library and a cli tool to generate and read the config both for humans and other services"
+workspace = ".."
+
+[package.metadata.deb]
+extended-description = "As part of the bender renderfarm, the config acts both as a library and a cli tool to generate and read the config both for humans and other services"
+depends = "$auto"
+assets = [
+    ["target/release/bender-config", "usr/bin/", "755"]
+]
+
+[lib]
+name = "bender_config"
+path = "src/lib.rs"
+
+[dependencies]
+docopt = "1"
+serde = "1"
+serde_derive = "1"
+toml = "0.4"
+rand = "0.5"
+dialoguer = "0.3"
+console = "0.6"
+colored = "1.7"
+blake2 = "*"
+hex = "0.3"
+uuid = { version = "0.7", features = ["serde", "v4"] }

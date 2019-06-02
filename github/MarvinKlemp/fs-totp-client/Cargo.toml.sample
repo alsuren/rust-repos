@@ -1,0 +1,8 @@
+[package]
+name = "fs-totp-client"
+version = "0.1.0"
+authors = ["Marvin Klemp <marvin.klemp@sensiolabs.de>"]
+
+[dependencies]
+text_io = "0.1.7"
+ring = "0.12.1"

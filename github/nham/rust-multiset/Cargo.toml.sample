@@ -1,0 +1,11 @@
+[package]
+
+name = "rust-multiset"
+version = "0.1.0"
+authors = [ "Nick Hamann <nick@wabbo.org>" ]
+
+[[bin]]
+
+name = "rust-multiset"
+path = "src/mod.rs"
+

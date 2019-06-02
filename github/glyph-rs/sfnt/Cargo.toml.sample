@@ -1,0 +1,29 @@
+[package]
+
+edition = "2018"
+
+name = "sfnt"
+authors = ["Kyle Mayes <kyle@mayeses.com>"]
+
+version = "0.12.0"
+
+readme = "README.md"
+license = "Apache-2.0"
+
+description = "A zero-allocation SFNT parser."
+
+documentation = "https://docs.rs/sfnt"
+repository = "https://github.com/glyph-rs/sfnt"
+
+[dependencies]
+
+tarrasque = "0.10"
+
+[dev-dependencies]
+
+microbench = "0.3"
+
+[[bench]]
+
+name = "bin"
+harness = false

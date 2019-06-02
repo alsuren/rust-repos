@@ -1,0 +1,15 @@
+[package]
+name = "jstrings"
+version = "0.1.0"
+authors = ["Aleksey Vorona <voronaam@gmail.com>"]
+
+[dependencies]
+classreader = "0.2.0"
+zip = {version = "0.2", default-features = false}
+docopt = "0.7"
+rustc-serialize = "0.3"
+java-properties = "1.0.0"
+shannon-entropy = "0.2.0"
+
+[profile.release]
+lto = true

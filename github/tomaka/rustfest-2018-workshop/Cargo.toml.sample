@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "chapter-1",
+    "chapter-2",
+    "chapter-3",
+]
+
+[patch.crates-io]
+# TODO: remove
+"multihash" = { git = "https://github.com/tomaka/rust-multihash", branch = "emscripten-hack" }

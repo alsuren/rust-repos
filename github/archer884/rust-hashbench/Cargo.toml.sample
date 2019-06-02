@@ -1,0 +1,10 @@
+[package]
+name = "hashbench"
+version = "0.1.0"
+authors = ["Seif Lotfy <seif.lotfy@gmail.com>"]
+
+[dependencies]
+farmhash = "*"
+fnv = "*"
+metrohash = "*"
+time = "*"

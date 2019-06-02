@@ -1,0 +1,11 @@
+[package]
+
+name = "bridjit"
+version = "0.2.0"
+authors = [ "Daan de Graaf <daandegraaf9@gmail.com>" ]
+
+[[bin]]
+name = "bridjit"
+
+[dependencies]
+libc = "0.2.4"

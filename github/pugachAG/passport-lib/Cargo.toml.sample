@@ -1,0 +1,11 @@
+[package]
+name = "passport-lib"
+version = "0.1.0"
+authors = ["Anton Puhach <anton.puhach@booking.com>"]
+
+[dependencies]
+nom = "^3.2"
+
+[lib]
+name = "passport"
+crate-type = ["dylib"]

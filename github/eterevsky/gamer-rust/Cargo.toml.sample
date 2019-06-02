@@ -1,0 +1,31 @@
+[package]
+name = "gamer"
+version = "0.1.0"
+authors = ["Oleg Eterevsky <oleg@eterevsky.com>"]
+edition = "2018"
+
+[lib]
+name = "gamer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gamer"
+path = "src/main.rs"
+
+[[bench]]
+name = "benchmarks"
+harness = false
+
+[dependencies]
+clap = "*"
+lazy_static = "*"
+num_cpus = "*"
+rand = "*"
+regex = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+
+[dev-dependencies]
+approx = "*"
+bencher = "*"

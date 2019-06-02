@@ -1,0 +1,17 @@
+[package]
+name = "hlvm_runtime"
+version = "0.7.0"
+authors = ["adam"]
+edition = "2018"
+license = "MIT"
+description = "The Runtime for the HLVM Library"
+
+
+
+[[bin]]
+name = "hlvm_runtime"
+path = "src/bin.rs"
+
+
+[dependencies]
+decimal = "2.0.4"

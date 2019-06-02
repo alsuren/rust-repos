@@ -1,0 +1,18 @@
+[package]
+name = "shade"
+version = "0.1.0"
+authors = ["Shadowbiz <shadowbizgame@hotmail.com>"]
+
+[dependencies]
+winapi = "0.2.8"
+kernel32-sys = "*"
+user32-sys = "*"
+winmm-sys = "*"
+ole32-sys = "*"
+gdi32-sys = "*"
+stdsimd = { git = "https://github.com/rust-lang-nursery/stdsimd.git" }
+## coresimd = "*"
+
+## 
+## 
+## 

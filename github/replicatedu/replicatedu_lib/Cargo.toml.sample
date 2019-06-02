@@ -1,0 +1,26 @@
+[package]
+name = "replicatedu_instructor"
+version = "0.1.0"
+authors = ["alex <hortinstein@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+test_runner = { git = "https://github.com/replicatedu/test_runner.git" }
+skeleton_parser = { git = "https://github.com/replicatedu/skeleton_parser.git" }
+class_crypto = { git = "https://github.com/replicatedu/class_crypto.git" }
+git_wrapper = { git = "https://github.com/replicatedu/git_wrapper.git" }
+issue_database = { git = "https://github.com/replicatedu/issue_database.git" }
+walkdir = "2.2.7"
+fs_extra = "1.1.0"
+term-painter = "*"
+hex = "*"
+gag = "0.1.10"
+serde_derive = "1.0"
+serde = "1.0"
+toml = "0.5.0"
+
+[profile.release]
+opt-level = 'z'     # Optimize for size.
+lto = true          # Enable Link Time Optimization
+codegen-units = 1   # Reduce number of codegen units to increase optimizations.
+panic = 'abort'     # Abort on panic

@@ -1,0 +1,23 @@
+[package]
+name = "tokio-timerfd"
+version = "0.1.0"
+authors = ["Alexander Polakov <plhk@sdf.org>"]
+edition = "2018"
+description = "timerfd support for tokio"
+license = "MIT"
+documentation = "https://docs.rs/tokio-timerfd"
+repository = "https://github.com/polachok/tokio-timerfd"
+homepage = "https://github.com/polachok/tokio-timerfd"
+readme = "README.md"
+categories = ["asynchronous", "os", "os::unix-apis"]
+keywords = ["timerfd", "timers"]
+
+[dependencies]
+tokio-reactor = "0.1"
+mio = "0.6"
+timerfd = "1.0"
+futures = "0.1"
+slab = "0.4"
+
+[dev-dependencies]
+tokio = "0.1"

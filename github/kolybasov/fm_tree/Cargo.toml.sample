@@ -1,0 +1,16 @@
+[package]
+name = "fm_tree"
+description = "Format YAML/JSON to file system like structure."
+version = "0.1.0"
+authors = ["Mykola Basov <kolybasov@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/kolybasov/fm_tree"
+
+[dependencies]
+serde = "1.0"
+serde_yaml = "0.7"
+clap = "2.31"
+
+[dependencies.serde_json]
+version = "1.0"
+features = ["preserve_order"]

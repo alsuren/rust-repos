@@ -1,0 +1,9 @@
+[package]
+name = "tuber_window_sdl2"
+version = "0.1.0"
+authors = ["Clément SIBILLE <claymeuns@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+tuber_window = { git = "https://github.com/tuber-engine/tuber_window.git" }
+sdl2 = "0.32"

@@ -1,0 +1,8 @@
+[package]
+name = "breakaway"
+version = "0.1.0"
+authors = ["Thomas Crowley <tom.crowley@verrency.com>"]
+
+[dependencies]
+clap = {version = "2.31", features = ["yaml"]}
+git2 = "0.7"

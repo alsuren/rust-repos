@@ -1,0 +1,36 @@
+[package]
+name = "tokio-jsonrpc"
+# When updating the version here, update the one on top of src/lib.rs
+version = "0.9.1"
+authors = [
+    "Michal 'vorner' Vaner <vorner@vorner.cz>",
+    "Ignacio Corderi <icorderi@msn.com>",
+]
+description = "An implementation of JSON RPC 2.0 for tokio"
+documentation = "https://docs.rs/tokio-jsonrpc"
+repository = "https://github.com/vorner/tokio-jsonrpc"
+readme = "README.md"
+keywords = ["tokio", "json", "jsonrpc"]
+categories = ["asynchronous", "network-programming"]
+license = "Apache-2.0/MIT"
+
+[badges]
+travis-ci = { repository = "vorner/tokio-jsonrpc" }
+appveyor = { repository = "vorner/tokio-jsonrpc" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+bytes = "0.4"
+futures = "~0.1.11"
+tokio-core = "0.1"
+tokio-io = "0.1"
+serde = "~1"
+serde_derive = "~1"
+serde_json = "~1"
+uuid = { version = "~0.6", features = ["v4"] }
+slog = "~2"
+
+[dev-dependencies]
+slog-term = "~2"
+slog-async = "~2"
+version-sync = "~0.5"

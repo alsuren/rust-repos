@@ -1,0 +1,17 @@
+[package]
+name = "wasp"
+version = "0.5.0"
+authors = ["Richard Anaya"]
+edition = "2018"
+license = "MIT"
+description = "a web assembly lisp programming language"
+
+[dependencies]
+failure = "0.1.5"
+wasmly = "0.2.0"
+clap = "2"
+walkdir = "2"
+
+[dependencies.nom]
+version = "^4.2"
+features = ["verbose-errors"]

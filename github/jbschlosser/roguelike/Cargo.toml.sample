@@ -1,0 +1,23 @@
+[package]
+name = "roguelike"
+version = "0.0.1"
+authors = ["Joel Schlosser <jbschlosser@gmail.com>"]
+
+[lib]
+name = "world"
+path = "src/world/lib.rs"
+
+[[bin]]
+name = "roguelike"
+path = "src/main.rs"
+
+[dependencies]
+image = "*"
+rand = "*"
+nalgebra = "*"
+itertools = "*"
+#glium = "*"
+#glutin = "*"
+
+[dependencies.tcod]
+git = "https://github.com/tomassedovic/tcod-rs.git"

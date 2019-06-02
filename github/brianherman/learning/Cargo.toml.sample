@@ -1,0 +1,14 @@
+[package]
+name = "learning"
+version = "0.1.0"
+authors = ["Brian Herman <brianherman@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "*"
+openssl = "*"
+rust-crypto = "^0.2"
+rand = "*"
+
+[[bin]]
+name = "xor.ex" 
+path = "src/xor.rs"

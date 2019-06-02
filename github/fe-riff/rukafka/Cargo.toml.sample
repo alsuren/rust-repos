@@ -1,0 +1,9 @@
+[package]
+name = "rukafka"
+version = "0.1.0"
+authors = ["glyn"]
+
+[dependencies]
+byteorder = "1.2.1"
+kafka = "0.7"
+serde_json = "1.0.9"

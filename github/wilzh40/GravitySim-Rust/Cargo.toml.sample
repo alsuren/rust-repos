@@ -1,0 +1,12 @@
+[package]
+name = "gravity-sim"
+version = "0.1.0"
+authors = ["wilzh40 <wilzh40@gmail.com>"]
+
+[dependencies]
+glutin = "*"
+piston = "0.1.4"
+piston2d-graphics = "*"
+pistoncore-glutin_window = "*"
+piston2d-opengl_graphics = "*"
+pistoncore-input = "*"

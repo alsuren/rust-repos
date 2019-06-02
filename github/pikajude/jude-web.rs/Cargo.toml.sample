@@ -1,0 +1,26 @@
+[package]
+name = "jude-web"
+version = "0.1.0"
+authors = ["Jude Taylor <me@jude.bio>"]
+
+[[bin]]
+name = "jude_web"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+deuterium = "*"
+lazy_static = "*"
+mustache = "*"
+rustc-serialize = "*"
+json_macros = "*"
+sodiumoxide = "*"
+rand = "*"
+cookie = "0.1.21"
+log = "*"
+env_logger = "*"
+
+iron = "*"
+urlencoded = "*"
+logger = "*"
+router = "*"

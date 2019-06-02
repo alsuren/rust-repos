@@ -1,0 +1,11 @@
+[package]
+name = "columbus"
+version = "0.1.0"
+authors = ["bytebuddha <shadowcynical@gmail.com>"]
+
+[dependencies]
+termion = "*"
+tui = "*"
+syntect = "*"
+unicode-width = "*"
+clap = "*"

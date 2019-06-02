@@ -1,0 +1,35 @@
+[package]
+name = "p2p-proto"
+version = "0.1.0"
+authors = ["Mike Tang <daogangtang@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1"
+tokio = "0.1"
+libp2p = { git = "https://github.com/libp2p/rust-libp2p" }
+tokio-stdin-stdout = "*"
+env_logger = "*"
+
+[[bin]]
+name = "node"
+path = "src/node.rs"
+
+[[bin]]
+name = "node0"
+path = "src/node0.rs"
+
+[[bin]]
+name = "node1"
+path = "src/node1.rs"
+
+[[bin]]
+name = "node2"
+path = "src/node2.rs"
+
+[[bin]]
+name = "node3"
+path = "src/node3.rs"
+
+
+

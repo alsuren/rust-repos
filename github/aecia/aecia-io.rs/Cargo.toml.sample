@@ -1,0 +1,20 @@
+[package]
+name = "aecia-io"
+version = "0.1.2"
+authors = ["A.W. Stanley <aws@sysfunc.net>"]
+edition = "2018"
+
+[dependencies.aecia-macro-io]
+git = "https://github.com/aecia/aecia-macro-io.rs"
+
+[features]
+# Default (inline hint only)
+default = []
+
+# Force raw implementations to inline(always)
+# (otherwise just inline hint)
+force-raw-inline = []
+
+# Force target/endian-type implementations to inline(always)
+# (otherwise just inline hint)
+force-target-inline = []

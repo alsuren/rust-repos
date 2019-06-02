@@ -1,0 +1,15 @@
+[package]
+
+name = "scan"
+version = "0.5.5"
+authors = ["Daniel Keep <daniel.keep@gmail.com>"]
+
+[lib]
+
+name = "scan"
+crate-type = ["dylib"]
+plugin = true
+
+[dependencies.scan_util]
+
+git = "https://github.com/DanielKeep/rust-scan-util.git"

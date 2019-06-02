@@ -1,0 +1,107 @@
+[package]
+name = "three"
+version = "0.4.0"
+authors = ["Three-rs Developers"]
+license = "MIT/Apache-2.0"
+description = "Three.js inspired 3D engine in Rust"
+categories = ["rendering", "game-engines"]
+keywords = ["gamedev", "graphics", "engine", "3D"]
+homepage = "https://github.com/three-rs/three"
+repository = "https://github.com/three-rs/three"
+documentation = "https://docs.rs/three/"
+build = "build.rs"
+exclude = ["doc/*", "bors.toml", ".travis.yml", "test_data/*"]
+
+[lib]
+
+[features]
+default = ["opengl", "audio"]
+opengl = ["gfx_device_gl", "gfx_window_glutin", "glutin"]
+audio = ["rodio"]
+
+[build-dependencies]
+includedir_codegen = "0.5"
+
+[dependencies]
+arrayvec = "0.4"
+bitflags = "1"
+cgmath = { version = "0.16", features = ["mint"] }
+derivative = "1.0"
+froggy = "0.4.4"
+genmesh = "0.6"
+gfx = "0.17.1"
+gfx_glyph = "0.13"
+gltf = { features = ["names", "utils", "import"], optional = true, version = "0.11.1" }
+image = "0.20"
+includedir = "0.5"
+itertools = "0.8"
+log = "0.4"
+obj = { version = "0.9", features = ["genmesh"] }
+phf = "0.7.12"
+quick-error = "1.2"
+rodio = { version = "0.8", optional = true }
+mint = "0.5"
+vec_map = "0.8"
+
+# OpenGL
+gfx_device_gl = { version = "0.15", optional = true }
+gfx_window_glutin = { version = "0.28", optional = true }
+glutin = { version = "0.19", optional = true }
+
+[dev-dependencies]
+env_logger = "0.6"
+notify = "4"
+rand = "0.6"
+
+[[example]]
+name = "lights"
+
+[[example]]
+name = "materials"
+
+[[example]]
+name = "mesh-update"
+
+[[example]]
+name = "obj"
+
+[[example]]
+name = "reload"
+
+[[example]]
+name = "shapes"
+
+[[example]]
+name = "sprite"
+
+[[example]]
+name = "tutorial"
+
+[[example]]
+name = "group"
+
+[[example]]
+name = "anim"
+
+[[example]]
+name = "text"
+
+[[example]]
+name = "aviator"
+path = "examples/aviator/main.rs"
+
+[[example]]
+name = "gltf-pbr-shader"
+required-features = ["gltf"]
+
+[[example]]
+name = "gltf-node-animation"
+required-features = ["gltf"]
+
+[[example]]
+name = "gltf-vertex-skinning"
+required-features = ["gltf"]
+
+[[example]]
+name = "gltf-morph-targets"
+required-features = ["gltf"]

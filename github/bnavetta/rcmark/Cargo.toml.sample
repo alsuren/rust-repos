@@ -1,0 +1,22 @@
+[package]
+name = "rcmark"
+version = "0.1.0"
+authors = ["Ben Navetta <ben.navetta@gmail.com>"]
+license = "Apache-2.0/MIT"
+readme = "README.md"
+keywords = ["commonmark", "markdown"]
+description = """
+Bindings to cmark for parsing and rendering CommonMark.
+"""
+homepage = "https://github.com/roguePanda/rcmark"
+repository = "https://github.com/roguePanda/rcmark.git"
+
+[dependencies]
+libc = "0.1"
+bitflags = "0.1.1"
+libcmark-sys = { path = "libcmark-sys", version = "0.1" }
+
+[[bin]]
+name = "rcmark"
+doc = false
+test = false

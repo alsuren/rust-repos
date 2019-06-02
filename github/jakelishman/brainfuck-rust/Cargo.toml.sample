@@ -1,0 +1,15 @@
+[package]
+name = "brainfuck_rust"
+version = "0.1.0"
+authors = ["Jake Lishman <jakelishman@gmail.com>"]
+publish = false
+
+[dependencies]
+
+[lib]
+name = "bf_rust"
+path = "src/bf_rust/lib.rs"
+
+[[bin]]
+name = "bfri"
+path = "src/interpreter/main.rs"

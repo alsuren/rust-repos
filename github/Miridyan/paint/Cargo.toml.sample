@@ -1,0 +1,31 @@
+[package]
+name = "paint-app"
+version = "0.0.2"
+authors = ["Miridyan <Michael.R.Ditto@gmail.com>"]
+
+[dependencies]
+gtk = { git = "https://github.com/gtk-rs/gtk.git" }
+gdk = { git = "https://github.com/gtk-rs/gdk.git" }
+glib = { git = "https://github.com/gtk-rs/glib.git" }
+term-painter = "0.2.2"
+libc = "0.2.0"
+
+[dependencies.gtk-sys]
+git = "https://github.com/gtk-rs/sys"
+version = "0.3.0"
+
+[lib]
+name = "paint"
+path = "src/paint/lib.rs"
+
+# [[bin]]
+# name = "paint"
+# doc = false
+
+[features]
+"3.6" = ["gtk/3.6", "gdk/3.6"]
+"3.8" = ["3.6", "gtk/3.8", "gdk/3.8"]
+"3.10" = ["3.8", "gtk/3.10", "gdk/3.10"]
+"3.12" = ["3.10", "gtk/3.12", "gdk/3.12"]
+"3.14" = ["3.12", "gtk/3.14", "gdk/3.14"]
+"3.16" = ["3.14", "gtk/3.16", "gdk/3.16"]

@@ -1,0 +1,16 @@
+[package]
+name = "music_tools"
+version = "0.1.0"
+authors = ["Alec Deason <alec50@tinycountry.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dev-dependencies]
+portaudio = "0.6.3"
+crossbeam = "0.7"
+console = "0.7.5"

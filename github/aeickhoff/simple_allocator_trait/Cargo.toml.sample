@@ -1,0 +1,8 @@
+[package]
+name = "simple_allocator_trait"
+description = "A Simple placeholder for chunky and compact until they integrate with a stable rust allocator API"
+version = "0.1.0"
+authors = ["Anselm Eickhoff <anselm.eickhoff@gmail.com>"]
+repository = "https://github.com/aeickhoff/simple_allocator_trait"
+license = "MIT"
+maintenance = { status = "experimental" }

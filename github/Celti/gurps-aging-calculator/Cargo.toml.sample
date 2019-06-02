@@ -1,0 +1,15 @@
+[package]
+name = "gurps-aging-calculator"
+version = "3.0.0"
+authors = ["Celti Burroughs <celti@celti.name>"]
+edition = "2018"
+description = "Iterative calculator for the GURPS aging rules."
+
+[dependencies]
+log = "0.4"
+parking_lot = "0.7"
+rand = "0.6"
+rayon = "1"
+simple-logging = "2"
+statistical = "1"
+structopt = "0.2"

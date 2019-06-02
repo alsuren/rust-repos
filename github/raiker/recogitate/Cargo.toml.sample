@@ -1,0 +1,13 @@
+[package]
+name = "recogitate"
+version = "0.1.0"
+authors = ["Joshua Weberruss <joshua.weberruss@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "*"
+byteorder = "*"
+maplit = "*"
+
+[dependencies.openssl]
+version = "*"
+features = ["pkcs5_pbkdf2_hmac"]

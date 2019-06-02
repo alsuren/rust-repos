@@ -1,0 +1,16 @@
+[package]
+name = "fountain_codes"
+version = "0.2.1"
+authors = ["Gregor Peach <gregorpeach@gmail.com>"]
+license = "MIT"
+description = "Fountain codes implemented in Rust"
+
+repository = "https://github.com/Others/fountain_codes"
+keywords = ["encoding", "code", "erasure", "fountain"]
+
+[dependencies]
+rand = "0.3"
+byteorder = "1"
+
+[profile.release]
+debug = true

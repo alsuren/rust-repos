@@ -1,0 +1,19 @@
+[package]
+name = "top-down"
+version = "0.1.0"
+authors = ["Matt McClellan <mcclellan.mj@gmail.com>"]
+
+[lib]
+name = "game_utils"
+path = "src/lib.rs"
+
+[[bin]]
+name = "top-down"
+
+[dependencies]
+piston = "0.17.0"
+piston-float = "0.2.0"
+piston2d-graphics = "0.13.0"
+pistoncore-glutin_window = "0.20.0"
+piston2d-opengl_graphics = "0.23.0"
+vecmath = "0.2.0"

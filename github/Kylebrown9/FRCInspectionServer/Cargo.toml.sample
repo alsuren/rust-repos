@@ -1,0 +1,18 @@
+[package]
+name = "inspection_server"
+version = "0.1.0"
+authors = ["Kyle Brown <kjbrown5@ncsu.edu>"]
+edition = "2018"
+
+[lib]
+name = "inspection_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "inspection_server"
+path = "src/main.rs"
+
+[dependencies]
+serde_derive = "1.0"
+serde = "1.0"
+serde_json = "1.0"

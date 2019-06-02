@@ -1,0 +1,29 @@
+[package]
+name = "ReactiveRS2"
+version = "0.1.0"
+authors = ["Thibaut Pérami <thibaut.perami@ens.fr>"]
+
+[dependencies]
+promacros = { path = "promacros"}
+log = "0.3"
+env_logger = "0.3"
+time = "0.1.38"
+crossbeam-deque = "0.1.0"
+crossbeam = "0.3.0"
+rand = "0.4"
+
+[features]
+par = [] # Parallel runtime if enabled
+funsafe = [] # Faster unsafe code, may UB
+
+[[bin]]
+name = "gol"
+path = "src/gameoflife.rs"
+
+[[bin]]
+name = "sb"
+path = "src/sandbox.rs"
+
+[[bin]]
+name = "planets"
+path = "src/planets.rs"

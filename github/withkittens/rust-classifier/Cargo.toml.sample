@@ -1,0 +1,17 @@
+[package]
+name = "classifier"
+version = "0.1.0"
+authors = ["withkittens <withkittens@live.com>"]
+
+[features]
+collect_measures = []
+merge_classes = []
+
+[profile.release]
+opt-level = 3
+debug = true
+#lto = true
+
+[dependencies]
+clock_ticks = "0.0.6"
+strtod = "0.0.1"

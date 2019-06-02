@@ -1,0 +1,20 @@
+[package]
+authors = ["alex <acdenissk69@gmail.com>", "Zeyla Hellyer <zey@zey.moe>"]
+description = "Serenity command framework."
+documentation = "https://docs.rs/serenity-framework"
+homepage = "https://github.com/serenity-rs/framework"
+keywords = ["api", "discord", "serenity"]
+license = "ISC"
+name = "serenity-framework"
+readme = "README.md"
+repository = "https://github.com/serenity-rs/framework.git"
+version = "0.1.0"
+
+[dependencies]
+serenity-client = { git = "https://github.com/serenity-rs/client" }
+serenity-model = { git = "https://github.com/serenity-rs/model" }
+threadpool = "~1.7"
+
+[dependencies.serenity-common]
+features = ["serde_json"]
+git = "https://github.com/serenity-rs/common.git"

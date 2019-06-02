@@ -1,0 +1,13 @@
+[package]
+name = "gpu_cache_gfx"
+version = "0.1.0"
+authors = ["Andrey Lesnikov <ozkriff@gmail.com>"]
+
+[dependencies]
+rusttype = "*"
+unicode-normalization = "*"
+glutin = "*"
+gfx = "*"
+gfx_core = "*"
+gfx_device_gl = "*"
+gfx_window_glutin = "*"

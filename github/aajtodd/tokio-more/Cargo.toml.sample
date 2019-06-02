@@ -1,0 +1,14 @@
+[package]
+name = "tokio-more"
+version = "0.1.0"
+authors = ["Carl Lerche <me@carllerche.com>"]
+
+[dependencies]
+futures = "0.1.4"
+tokio-core = "0.1.1"
+bytes = { git = "https://github.com/carllerche/bytes" }
+byteorder = "0.5"
+
+[dev-dependencies]
+fixture-io = { git = "https://github.com/carllerche/fixture-io" }
+

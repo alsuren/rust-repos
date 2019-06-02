@@ -1,0 +1,15 @@
+[package]
+name = "rand_wikipedia"
+version = "0.1.0"
+authors = ["William Roe <git@wjlr.org.uk>"]
+
+[dependencies]
+reqwest = "0.9.9"
+scraper = "0.9"
+rand = "0.6"
+clap = "2.6.0"
+
+[[bin]]
+name = "rand_wikipedia"
+doc = false
+path = "src/main.rs"

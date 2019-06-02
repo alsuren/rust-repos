@@ -1,0 +1,7 @@
+[package]
+name = "winapi-rs-test"
+version = "0.1.0"
+authors = ["castaneai <castaneai@castaneai.net>"]
+
+[dependencies]
+winapi = { version = "0.3", features = ["winuser"] }

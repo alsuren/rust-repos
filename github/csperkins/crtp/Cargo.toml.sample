@@ -1,0 +1,9 @@
+[package]
+name    = "crtp"
+version = "0.0.1"
+authors = ["Colin Perkins <csp@csperkins.org>"]
+
+[dependencies]
+byteorder = "0.5"
+mio = "0.6"
+

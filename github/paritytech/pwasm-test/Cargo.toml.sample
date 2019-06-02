@@ -1,0 +1,13 @@
+[package]
+name = "pwasm-test"
+version = "0.1.1"
+authors = ["NikVolf <nikvolf@gmail.com>", "Alexey Frolov <frol.rage@gmail.com>"]
+
+[dependencies]
+pwasm-std = { version = "0.13", default-features = false }
+pwasm-ethereum = { version = "0.8", default-features = false }
+pwasm-abi = { version = "0.2" }
+
+[features]
+default = ["std"]
+std = ["pwasm-abi/std", "pwasm-std/std", "pwasm-ethereum/std"]

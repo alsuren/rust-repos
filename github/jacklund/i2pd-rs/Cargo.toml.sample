@@ -1,0 +1,26 @@
+[package]
+name = "i2pd-rs"
+version = "0.1.0"
+authors = ["Jack Lund <jackl@geekheads.net>"]
+
+[dependencies]
+byteorder = "1.0.0"
+clap = "2.20.5"
+gcrypt = "0.5.2"
+libc = "0.2.21"
+linked-hash-map = "0.4.2"
+log = "0.3.6"
+log4rs = "0.6.2"
+rand = "0.3.15"
+serde = "0.9.11"
+serde_derive = "0.9.11"
+serde_yaml = "0.6.2"
+time = "0.1.36"
+vec_map   = "0.7.0"
+walkdir = "1.0.7"
+yaml-rust = "0.3.5"
+
+[dev-dependencies]
+base64 = "0.4.0"
+mockers = "0.5.7"
+tempdir = "0.3.5"

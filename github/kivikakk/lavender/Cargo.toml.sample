@@ -1,0 +1,22 @@
+[package]
+name = "lavender"
+version = "0.1.0"
+description = "A Lisp in Rust"
+authors = ["Ashe Connor <ashe@kivikakk.ee>"]
+repository = "https://github.com/kivikakk/lavender"
+readme = "README.md"
+build = "build.rs"
+license = "MIT"
+
+[profile.release]
+lto = true
+
+[dependencies]
+pest = "1.0.0-beta.16"
+pest_derive = "1.0.0-beta.16"
+rustyline = "1.0"
+colored = "1.6"
+clap = "2.29"
+itertools = "0.7"
+gc = "0.3"
+gc_derive = "0.3"

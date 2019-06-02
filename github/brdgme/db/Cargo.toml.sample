@@ -1,0 +1,18 @@
+[package]
+name = "brdgme-db"
+version = "0.1.0"
+authors = ["Michael Alexander <beefsack@gmail.com>"]
+
+[dependencies]
+brdgme-std = { git = "https://github.com/brdgme/std.git" }
+brdgme-color = { git = "https://github.com/brdgme/color.git" }
+brdgme-cmd = { git = "https://github.com/brdgme/cmd.git" }
+chrono = "*"
+uuid = { version = "*", features = ["v4"] }
+postgres = { version = "*", features = ["with-uuid", "with-chrono", "with-serde_json"] }
+postgres-derive = "*"
+r2d2 = "*"
+r2d2_postgres = "*"
+error-chain = "*"
+rand = "*"
+lazy_static = "*"

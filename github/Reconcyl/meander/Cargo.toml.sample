@@ -1,0 +1,24 @@
+[package]
+
+name = "meander"
+version = "0.1.1"
+authors = ["Reconcyl"]
+
+edition = "2018"
+
+description = "continuously vary arbitrarily many parameters pseudorandomly"
+
+documentation = "https://docs.rs/meander"
+homepage = "https://github.com/Reconcyl/meander"
+repository = "https://github.com/Reconcyl/meander"
+
+readme = "README.md"
+
+keywords = []
+categories = []
+
+license = "MIT"
+
+[dependencies]
+generic-array = "0.13.0"
+rand = "0.6.5"

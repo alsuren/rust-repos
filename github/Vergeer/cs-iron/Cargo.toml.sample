@@ -1,0 +1,15 @@
+[package]
+name = "cs-iron"
+version = "1.0.0"
+authors = ["Alexander Elias"]
+
+[dependencies]
+iron = "*"
+router = "*"
+staticfile = "*"
+mount = "*"
+handlebars-iron = "*"
+rustc-serialize = "*"
+urlencoded = "*"
+
+ssmtp = "*"

@@ -1,0 +1,9 @@
+[package]
+name = "game-loop"
+version = "0.1.0"
+authors = ["Toby Sullivan <toby.s@canva.com>"]
+
+[dependencies]
+sdl2 = { version = "0.31.0", features = ["image"] }
+im = "10.0.0"
+rand = "0.5.0-pre.0"

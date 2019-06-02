@@ -1,0 +1,8 @@
+[workspace]
+
+members = [ "libpijul", "csvg", "line", "diffs" ]
+
+[replace]
+"libpijul:0.11.1" = { path = "libpijul" }
+"line:0.1.11" = { path = "line" }
+"diffs:0.2.1" = { path = "diffs" }

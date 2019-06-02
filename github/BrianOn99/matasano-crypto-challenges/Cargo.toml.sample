@@ -1,0 +1,54 @@
+[package]
+name = "matasano"
+version = "0.1.0"
+authors = ["Chiu Yue Chun <chiu6700@gmail.com>"]
+
+[dependencies]
+hex = "0.2.0"
+base64 = "0.6.0"
+openssl = "0.9.15"
+rand = "0.3"
+
+[[bin]]
+name = "challenge3"
+path = "src/set1/challenge3.rs"
+
+[[bin]]
+name = "challenge4"
+path = "src/set1/challenge4.rs"
+
+[[bin]]
+name = "challenge6"
+path = "src/set1/challenge6.rs"
+
+[[bin]]
+name = "challenge7"
+path = "src/set1/challenge7.rs"
+
+[[bin]]
+name = "challenge8"
+path = "src/set1/challenge8.rs"
+
+[[bin]]
+name = "challenge10"
+path = "src/set2/challenge10.rs"
+
+[[bin]]
+name = "challenge11"
+path = "src/set2/challenge11.rs"
+
+[[bin]]
+name = "challenge14"
+path = "src/set2/challenge14.rs"
+
+[[bin]]
+name = "challenge16"
+path = "src/set2/challenge16.rs"
+
+[[bin]]
+name = "challenge17"
+path = "src/set3/challenge17.rs"
+
+[[bin]]
+name = "challenge18"
+path = "src/set3/challenge18.rs"

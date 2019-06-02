@@ -1,0 +1,17 @@
+[package]
+name = "stubby"
+version = "0.0.1"
+authors = ["Robert Parsons <headexplodes@gmail.com>"]
+description = "Generic HTTP Stub Server (Rust)"
+
+[dependencies]
+regex = "0.2"
+log = "0.3"
+log4rs = "0.7"
+hyper = "0.11.0"
+futures = "0.1"
+tokio-core = "0.1"
+serde = "1.0.8"
+serde_derive = "1.0.8"
+serde_json = "1.0.2"
+lazy_static = "0.2"

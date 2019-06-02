@@ -1,0 +1,45 @@
+[package]
+name = "fermium"
+description = "An opinionated crate of SDL2 bindings."
+repository = "https://github.com/Lokathor/fermium"
+version = "0.0.12"
+authors = ["Lokathor <zefria@gmail.com>"]
+edition = "2018"
+license = "Zlib"
+
+links = "SDL2"
+build = "build.rs"
+
+[features]
+# By default, we will build the crate against the pre-built bindings for
+# `SDL2-v2.0.9` that are based on the official development library include files
+# on the SDL2 download page (http://libsdl.org/download-2.0.php).
+default = []
+
+# Use this if you already have the bindgen _binary_ installed and want that to
+# be invoked as part of the build process. This is much faster than using
+# bindgen as a library.
+use_bindgen_bin = []
+
+# Use this if you want to build the bindgen _library_ and run it as part of the
+# build process. This makes rebuilding the crate after `cargo clean` horribly
+# slow, and it's not really advised, but do what you want I guess.
+use_bindgen_lib = ["bindgen"]
+
+# This will build with a dynamic link instead of a static link. The SDL2
+# "dynamic API" is enabled either way, so using actual dynamic linking is not
+# particularly necessary these days.
+dynamic_link = []
+
+[build-dependencies]
+bindgen = { version = "0.49", optional = true }
+
+[dependencies]
+libc = "0.2"
+
+[package.metadata.docs.rs]
+features = ["use_bindgen_lib"]
+
+[badges]
+appveyor = { repository = "Lokathor/fermium" }
+travis-ci = { repository = "Lokathor/fermium" }

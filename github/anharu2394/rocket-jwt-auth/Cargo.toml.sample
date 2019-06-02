@@ -1,0 +1,17 @@
+[package]
+name = "rocket-jwt-auth"
+version = "0.1.0"
+authors = ["安藤春香 <haruan2394@gmail.com>"]
+
+[dependencies]
+rocket = "0.3.16"
+rocket_codegen = "0.3.16"
+diesel = { version = "1.0.0", features = ["mysql"] }
+dotenv = "0.9.0"
+r2d2 = "0.8.2"
+r2d2-diesel = "1.0.0"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]

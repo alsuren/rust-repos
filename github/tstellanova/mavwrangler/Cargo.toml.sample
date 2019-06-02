@@ -1,0 +1,17 @@
+[package]
+name = "mavwrangler"
+version = "0.1.0"
+authors = ["Todd Stellanova <tstellanova@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+#mavlink = "0.4"
+sensulator= "0.2"
+
+
+[dependencies.mavlink]
+git = "https://github.com/tstellanova/rust-mavlink.git"
+#path = "../rust-mavlink"
+
+[patch.crates-io]
+sensulator = { git = "https://github.com/tstellanova/sensulator.git"  }

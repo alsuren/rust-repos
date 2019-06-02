@@ -1,0 +1,27 @@
+[package]
+name = "rustray"
+version = "0.0.0"
+authors = ["jmfisher <jonathan.m.fisher@gmail.com>"]
+
+[dependencies]
+
+[build-dependencies]
+
+[lib]
+crate-type = ["dylib", "rlib"]
+name = "rustray"
+
+[[example]]
+name = "sphere"
+path = "examples/sphere.rs"
+
+[[example]]
+name = "box"
+path = "examples/box.rs"
+
+[[example]]
+name = "spheres"
+path = "examples/spheres.rs"
+
+
+

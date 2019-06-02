@@ -1,0 +1,22 @@
+[package]
+name = "cleaver"
+version = "0.1.0"
+authors = ["Alex Hirsch <w4rh4wk@bluephoenix.at>"]
+repository = "https://github.com/W4RH4WK/Cleaver"
+readme = "README.md"
+license = "MIT License"
+
+[dependencies]
+clap = "2"
+clippy = { version = "*", optional = true }
+pest = "0.3.2"
+rand = "*"
+time = "*"
+
+[features]
+default = []
+
+[[bin]]
+name = "cleaver"
+path = "src/bin/driver.rs"
+doc = false

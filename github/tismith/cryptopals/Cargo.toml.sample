@@ -1,0 +1,21 @@
+[package]
+name = "cryptopals"
+version = "0.1.0"
+authors = ["Toby Smith <toby@tismith.id.au>"]
+
+[dependencies]
+error-chain = "0.11.0"
+log = "0.4.1"
+stderrlog = "0.3.0"
+clap = "2.31.2"
+base64 = "0.9.0"
+hex = "0.3.1"
+bytecount = "0.3.1"
+bit-vec = "0.4.4"
+openssl = "0.10.6"
+rand = "0.4.0"
+byteorder = "1"
+
+[dev-dependencies]
+assert_cli = "0.5"
+proptest = "0.7.0"

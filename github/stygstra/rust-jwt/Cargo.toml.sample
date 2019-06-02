@@ -1,0 +1,12 @@
+[package]
+
+name = "jwt"
+version = "0.0.1"
+authors = ["David Stygstra <david.stygstra@gmail.com>"]
+
+[dependencies]
+log = "0.2"
+openssl = "0.4"
+regex = "0.1"
+rustc-serialize = "0.2"
+time = "0.1"

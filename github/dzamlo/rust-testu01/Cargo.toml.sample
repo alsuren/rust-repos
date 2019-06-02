@@ -1,0 +1,11 @@
+[package]
+
+name = "testu01"
+version = "0.0.1"
+authors = ["Loïc Damien <loic.damien@dzamlo.ch>"]
+
+[dependencies]
+
+lazy_static = "0.1.15"
+libc = "0.2.0"
+rand = "0.3.11"

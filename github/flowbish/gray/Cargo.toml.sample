@@ -1,0 +1,11 @@
+[package]
+name = "gray"
+version = "0.1.0"
+authors = ["Porter Smith <flowbish@gmail.com>"]
+include = ["data/*"]
+
+[dependencies]
+sdl2 = "0.13.0"
+sdl2_image = "1.0.0"
+rand = "0.3.14"
+image = "*"

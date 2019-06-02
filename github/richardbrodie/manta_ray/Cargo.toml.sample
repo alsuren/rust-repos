@@ -1,0 +1,10 @@
+[package]
+name = "manta_ray"
+version = "0.1.0"
+authors = ["richard <richard@radagast.nu>"]
+
+[dependencies]
+image = "^0.20.0"
+serde = "^1.0.79"
+serde_derive = "^1.0.79"
+serde_yaml = "^0.8.5"

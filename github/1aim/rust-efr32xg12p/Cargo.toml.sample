@@ -1,0 +1,24 @@
+[package]
+name    = "efr32xg12p"
+version = "0.1.1"
+
+authors = ["meh. <meh@schizofreni.co>"]
+license    = "MIT OR Apache-2.0"
+
+description   = "Peripheral access API for EFR32x12P microcontrollers"
+repository    = "https://github.com/1aim/rust-efr32xg12p"
+keywords      = ["arm", "cortex-m", "efr32", "svd2rust"]
+categories    = ["embedded", "hardware-support", "no-std"]
+documentation = "https://docs.rs/efr32xg12p"
+
+[dependencies]
+bare-metal = "0.1.0"
+cortex-m   = "0.4.0"
+vcell      = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version  = "0.3"
+
+[features]
+rt = ["cortex-m-rt"]

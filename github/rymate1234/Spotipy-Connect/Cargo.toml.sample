@@ -1,0 +1,16 @@
+[package]
+name = "spotipy-connect"
+version = "0.1.0"
+authors = ["ryan"]
+
+[dependencies]
+librespot = { path = "librespot" }
+
+[dependencies.gtk]
+version = "0.1.2"
+features = ["v3_10"]
+
+
+[features]
+default = ["gtk_3_10", "librespot/portaudio-backend"]
+gtk_3_10 = ["gtk/v3_10"]

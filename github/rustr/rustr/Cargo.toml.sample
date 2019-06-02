@@ -1,0 +1,35 @@
+[package]
+name = "rustr"
+version = "0.1.9"
+authors = ["qinwf <mail@qinwenfeng.com>"]
+include = ["/src/**/*", "/Cargo.toml","/build.rs", "/tests/**/*","/examples/**/*"]
+keywords = ["ffi", "r", "statistic","binding", "math"]
+license = "Apache-2.0"
+description = "Rust and R integration"
+documentation = "http://docs.rustr.org/"
+homepage = "http://rustr.org/"
+repository = "https://github.com/rustr/rustr"
+build = "build.rs"
+
+[lib]
+name = "rustr"
+
+[features]
+default = []
+dev = ["clippy"]
+date = ["chrono"]
+engine = []
+random = ["rand"]
+logging = ["log"]
+ty_nalgebra =["nalgebra","num"]
+ty_num = ["num"]
+rdebug = []
+extra = []
+
+[dependencies]
+clippy = {version = "0.0.64", optional = true}
+chrono = {version = "0.2", optional = true}
+rand = {version = "0.3.14", optional = true}
+log = {version = "0.3.5", optional = true}
+nalgebra = {version = "0.5.1", optional = true}
+num = {version = "0.1.31", optional = true}

@@ -1,0 +1,30 @@
+[workspace]
+members = [
+  "spritec-preview",
+]
+
+[package]
+name = "spritec"
+version = "0.1.0"
+authors = [
+  "Sunjay Varma <varma.sunjay@gmail.com>",
+  "James Shi <jsjamesshi@gmail.com>",
+  "Bill Chen <bchen.tcu@gmail.com>",
+  "Mara Gagiu <mara.gagiu@gmail.com>",
+]
+edition = "2018"
+
+[dependencies]
+euc = "0.2"
+tobj = "0.1"
+vek = { version = "0.9", features = ["serde"] }
+image = "0.21"
+gltf = "0.12.0"
+structopt = "0.2"
+toml = "0.5"
+serde = { version = "1.0", features = ["derive"] }
+rayon = "1.0"
+
+[profile.dev]
+# Needed to make software rendering fast enough
+opt-level = 3

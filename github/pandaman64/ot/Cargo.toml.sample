@@ -1,0 +1,16 @@
+[package]
+name = "ot"
+version = "0.2.0"
+authors = ["pandaman <kointosudesuyo@infoseek.jp>"]
+
+[dependencies]
+futures = "0.2"
+
+serde = "1.0"
+serde_derive = "1.0"
+
+failure = "0.1.1"
+failure_derive = "0.1.1"
+
+[dev-dependencies]
+rand = "0.4"

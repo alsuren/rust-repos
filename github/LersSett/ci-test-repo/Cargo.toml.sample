@@ -1,0 +1,21 @@
+[package]
+name = "ci-test-repo"
+version = "0.1.0"
+authors = ["Stanislav Lapata <stanislavlapata@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+azul = "*"
+serde = "*"
+serde_json = "*"
+cursive = "*"
+reqwest = "*"
+iron = "*"
+juniper = "*"
+actix-web = "*"
+graphql-parser = "*"
+
+[profile.release]
+opt-level = 'z'
+codegen-units = 1
+panic = 'abort'

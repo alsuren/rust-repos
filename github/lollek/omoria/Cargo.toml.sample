@@ -1,0 +1,18 @@
+[package]
+name = "omoria"
+version = "0.1.0"
+authors = ["Olle Kvarnström <olle+git@iix.se>"]
+
+[dependencies]
+libc = "0.2"
+rand = "0.4"
+lazy_static = "1.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+pancurses = "0.16"
+
+[lib]
+name = "omoria"
+crate-type = ["staticlib"]
+path = "src/lib.rs"

@@ -1,0 +1,20 @@
+#cargo-features = ["edition"]
+
+[package]
+name = "gui_game_of_life"
+version = "0.1.0"
+authors = ["oliver <oliver.giersch@googlemail.com>"]
+#edition = '2018'
+
+[dependencies]
+cairo-rs = "*"
+closure = "*"
+crossbeam = "*"
+gdk = "*"
+gio = "*"
+glib = "*"
+rand = "*"
+
+[dependencies.gtk]
+version = "*"
+features = ["v3_20"]

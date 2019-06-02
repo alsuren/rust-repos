@@ -1,0 +1,22 @@
+[package]
+name = "ailmedak"
+version = "0.1.0"
+authors = ["aliang <aliang2344@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+rust-crypto = "0.2"
+time = "0.1"
+getopts = "0.2"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[[bin]]
+name = "multi"
+path = "src/multi_node_local.rs"

@@ -1,0 +1,38 @@
+[package]
+authors = [
+	"Michael Daffin <michael@daffin.io>",
+	"Philipp Oppermann <dev@phil-opp.com>",
+	"Jonathan 'theJPster' Pallant <github@thejpster.org.uk>",
+	"Marc Brinkmann"
+]
+keywords = ["arm", "bare-metal", "blink", "ke06z"]
+license = "MIT"
+name = "kinetis-frdm"
+readme = "README.md"
+version = "0.1.1"
+
+# The development profile, used for `cargo build`.
+[profile.dev]
+panic = "abort"
+
+# The release profile, used for `cargo build --release`.
+[profile.release]
+panic = "abort"
+debug = true
+lto = true
+
+[dependencies]
+r0 = "0.1.0"
+cortex-m = "0.1.5"
+volatile-register = "0.1.2"
+embedded-serial = "0.3.0"
+rlibc = "1.0"
+alloc-cortex-m = "0.2.0"
+
+[dependencies.compiler_builtins]
+git = "https://github.com/rust-lang-nursery/compiler-builtins.git"
+features = [ "mem" ]
+
+[dependencies.ke06z]
+git = "https://github.com/thejpster/ke06z"
+#path = "../ke06z"

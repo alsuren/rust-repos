@@ -1,0 +1,13 @@
+[package]
+name = "network-math"
+version = "0.1.0"
+authors = ["Caleb Jones <code@calebjones.net>"]
+
+[dependencies]
+reqwest = "0.7"
+iron = "0.5"
+
+lazy_static = "0.2"
+
+log = "0.3"
+env_logger = "0.4"

@@ -1,0 +1,21 @@
+[package]
+name = "rori_server"
+version = "3.0.1"
+authors = ["AmarOk <amarok@enconn.fr>"]
+
+[dependencies]
+rustc-serialize = "*"
+regex = "*"
+lazy_static = "*"
+iron = "*"
+router = "*"
+reqwest = "*"
+log = "*"
+env_logger = "*"
+openssl = "0.10.4"
+rust-crypto = "^0.2"
+cpython = "*"
+petgraph = "*"
+
+[lib]
+name = "main"

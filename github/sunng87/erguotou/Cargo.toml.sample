@@ -1,0 +1,24 @@
+[package]
+name = "erguotou"
+version = "0.0.3"
+authors = ["Ning Sun <sunng@about.me>"]
+description = "High-level hyper client utilities"
+license = "MIT"
+keywords = ["http", "client", "hyper", "rest"]
+repository = "https://github.com/sunng87/erguotou"
+
+[lib]
+name = "erguotou"
+
+[dependencies]
+rustc-serialize = "*"
+hyper = "*"
+url ="*"
+
+[dev-dependencies]
+iron = "*"
+router = "*"
+maplit = "*"
+bodyparser = "*"
+persistent = "*"
+urlencoded = "*"

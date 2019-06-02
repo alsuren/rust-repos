@@ -1,0 +1,24 @@
+[package]
+name = "minject"
+description = "A code injection library for the Rust programming language"
+version = "0.1.0"
+authors = ["Jascha Neutelings"]
+repository = "https://github.com/Jascha-N/minject-rs"
+license = "BSD-2-Clause"
+readme = "README.md"
+build = "build.rs"
+
+[dependencies]
+winapi = "0.2"
+kernel32-sys = "0.2"
+byteorder = "0.4"
+serde = "0.7"
+serde_macros = "0.7"
+bincode = "0.5"
+
+[dependencies.miow]
+git = "https://github.com/alexcrichton/miow"
+
+[dependencies.clippy]
+version = "*"
+optional = true

@@ -1,0 +1,13 @@
+[package]
+name = "blog2"
+version = "0.1.0"
+authors = ["'zxk' <'zxk7516@foxmail.com'>"]
+edition = "2018"
+
+[dependencies]
+
+actix = "*"
+actix-web = "*"
+serde = { version="1.*",features=["derive"]}
+serde_json = "1.*"
+failure = "*"

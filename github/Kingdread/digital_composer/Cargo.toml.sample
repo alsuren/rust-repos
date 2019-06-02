@@ -1,0 +1,13 @@
+[package]
+
+name = "digital_composer"
+version = "0.0.1"
+authors = ["Daniel <kingdread@gmx.de>"]
+
+
+[dependencies]
+byteorder = "*"
+docopt = "*"
+docopt_macros = "*"
+rand = "*"
+rustc-serialize = "*"

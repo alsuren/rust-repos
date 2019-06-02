@@ -1,0 +1,14 @@
+[package]
+name = "mgmm"
+version = "0.1.0"
+authors = ["David Li <li.davidm96@gmail.com>"]
+
+[dependencies]
+cgmath = "0.7"
+gfx = { git = "https://github.com/gfx-rs/gfx.git" }
+gfx_window_glutin = { git = "https://github.com/gfx-rs/gfx.git" }
+gfx_device_gl = { git = "https://github.com/gfx-rs/gfx.git" }
+glutin = "0.6"
+image = "0.10"
+tiled = "0.3"
+time = "0.1"

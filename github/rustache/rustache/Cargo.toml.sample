@@ -1,0 +1,24 @@
+[package]
+
+name = "rustache"
+version = "0.1.0"
+authors = ["Jarrod Ruhland <jarrod.ruhland@gmail.com>",
+           "Stephen Paul Weber <github@singpolyma.net>"]
+
+description = "Mustache templating engine for rust"
+license = "MIT"
+documentation = "https://docs.rs/rustache/"
+repository = "https://github.com/rustache/rustache.git"
+homepage = "https://rustache.github.io"
+readme = "README.md"
+keywords = ["template", "mustache"]
+
+[lib]
+
+name = "rustache"
+path = "src/lib.rs"
+
+[dependencies]
+error-chain = "^0.5"
+regex = "^0.1"
+rustc-serialize = "^0.3"

@@ -1,0 +1,17 @@
+[package]
+name = "servoctl"
+version = "0.1.0"
+description = "Library for controlling servo motors on the Raspberry Pi"
+readme = "README.md"
+license = "Apache-2.0"
+
+authors = ["Tom Stoneham <tomstoneham@users.noreply.github.com>"]
+repository = "https://github.com/tomstoneham/hcsr04"
+
+keywords = ["servo", "motor", "rpi", "raspberry pi"]
+categories = ["embedded", "hardware-support"]
+
+publish = false
+
+[dependencies]
+rust-pigpio = "0.2.0"

@@ -1,0 +1,20 @@
+[package]
+name = "kusuo"
+version = "0.1.0"
+authors = ["ariwaranosai <nkssai@outlook.com>"]
+
+[lib]
+name = "kusuo_lib"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "kusuoc"
+path = "src/bin/kusuoc.rs"
+doc = false
+
+[dependencies]
+clap = "~2.31"
+
+[dependencies.nom]
+version = "^3.2"
+features = ["verbose-errors"]

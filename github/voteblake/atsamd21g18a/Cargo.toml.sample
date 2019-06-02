@@ -1,0 +1,21 @@
+[package]
+authors = ["Blake Johnson <johnsonblake1@gmail.com."]
+name = "atsamd21g18a"
+version = "0.1.0"
+categories = ["embedded", "hardware-support", "no-std"]
+description = "A board support package for the ATSAMD21G18A chip from Atmel for Rust Embedded projects"
+keywords = ["arm", "cortex-m", "atmel", "ATSAMD21"]
+license = "Apache-2.0"
+repository = "https://github.com/voteblake/atsamd21g18a"
+
+[dependencies]
+bare-metal = "0.1.0"
+cortex-m = "0.3.1"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.3.5"
+
+[features]
+rt = ["cortex-m-rt"]

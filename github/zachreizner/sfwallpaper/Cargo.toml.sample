@@ -1,0 +1,18 @@
+[package]
+name = "sfwallpaper"
+version = "0.2.1"
+authors = ["Zach Reizner <zach297@gmail.com>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+panic = "abort"
+
+[dependencies]
+base64 = "0.3"
+getopts = "*"
+reqwest = "0.9"
+rand = "0.3"
+regex = "0.2"
+serde = "1"
+serde_derive = "1"

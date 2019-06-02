@@ -1,0 +1,18 @@
+[package]
+name = "iterative_json_parser"
+version = "0.1.0"
+authors = ["HansiHE <hansihe@hansihe.com>"]
+
+[lib]
+name = "iterative_json_parser"
+src = "lib.rs"
+
+[features]
+#default = ["use_simd"]
+use_simd = ["simd"]
+
+[dependencies]
+simd = { version = "0.2", optional = true }
+
+[profile.release]
+debug = true

@@ -1,0 +1,15 @@
+[package]
+name = "vendor"
+version = "0.1.0"
+authors = ["Alex McArther <acmcarther@gmail.com>"]
+
+[lib]
+path = "fake.rs"
+
+[dependencies]
+rustc-serialize = "0.3"
+nom = "2.2.0"
+
+[dependencies.libc]
+version = "0.2.21"
+default-features = false

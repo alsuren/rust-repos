@@ -1,0 +1,14 @@
+[package]
+name = "catori-core"
+version = "0.1.0"
+authors = ["tupshin"]
+edition = "2018"
+
+[dependencies]
+# fixedvec = "*"
+
+[lib]
+name="catori_core"
+
+# [[bin]]
+# name="test"

@@ -1,0 +1,24 @@
+[package]
+name = "smc"
+version = "0.1.0"
+authors = ["Jacob Rosenthal <jacobrosenthal@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "smc"
+crate_type = ["lib"]
+path = "src/lib.rs"
+
+[dependencies]
+IOKit-sys = "0.1.5"
+libc = "0.2"
+mach = "0.1.1"
+byteorder = { version = "1", default-features = false }
+strum = "0.11.0"
+strum_macros = "0.11.0"
+
+
+[dev_dependencies]
+passgen = { git = "https://gitlab.com/NateDogg1232/passgen-rs"}
+# passgen = {path = "../passgen-rs"}
+

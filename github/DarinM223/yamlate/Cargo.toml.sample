@@ -1,0 +1,24 @@
+[package]
+name = "yamlate"
+version = "0.1.1"
+authors = ["Darin Minamoto <darinm223@gmail.com>"]
+description = "A cross-language interpreter library that dynamically evaluates YAML attributes given variable bindings"
+repository = "https://github.com/DarinM223/yamlate"
+readme = "README.md"
+
+keywords = ["yaml", "library", "interpreter"]
+
+license = "MIT"
+
+[dependencies]
+yaml-rust = "0.3.3"
+lazy_static = "0.2.1"
+num = "0.1.32"
+libc = "0.2.2"
+
+[features]
+default = []
+
+[lib]
+crate-type = ["dylib"]
+

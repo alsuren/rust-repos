@@ -1,0 +1,17 @@
+[package]
+name = "rust_bpf"
+version = "0.1.0"
+authors = ["Melvin Walls <mwalls67@gmail.com>"]
+
+[[bin]]
+name = "asm"
+path = "src/assembler/main.rs"
+
+[[bin]]
+name = "vm"
+path = "src/vm/main.rs"
+
+[dependencies]
+byteorder = "1.1.0"
+lazy_static = "0.2"
+regex = "0.2"

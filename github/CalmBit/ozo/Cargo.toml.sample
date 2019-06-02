@@ -1,0 +1,15 @@
+[package]
+name = "ozo"
+version = "0.1.0"
+authors = ["CalmBit <calmbit@posteo.net>"]
+description = "A bare-bones CLI client for oxidation"
+readme = "README.md"
+license = "MPL-2.0"
+
+[dependencies]
+regex = "0.2.6"
+bufstream = "0.1.2"
+oxidant = "0.1.0" 
+
+[patch.crates-io]
+oxidant = { git = 'https://gitlab.com/TridentMC/oxidant' }

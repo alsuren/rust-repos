@@ -1,0 +1,20 @@
+[workspace]
+members = [
+    "common",
+    "problem_001",
+    "problem_002",
+    "problem_004",
+    "problem_005",
+    "problem_006",
+    "problem_007",
+    "problem_008",
+    "problem_009",
+    "problem_010",
+    "problem_019",
+    "problem_035",
+    "problem_036"
+]
+
+[profile.release]
+lto = true
+codegen-units = 1

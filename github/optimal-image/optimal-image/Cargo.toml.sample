@@ -1,0 +1,29 @@
+[package]
+name = "optimal-image"
+version = "0.3.1"
+authors = ["Andrea Moretti <axyzxp@gmail.com>"]
+description = "Find optimal compression level for images based on DSSIM similarity"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "https://github.com/axyz/optimal-image", branch = "master" }
+
+[dependencies]
+clap = "2.32.0"
+dssim = "2.9.9"
+image = "0.19.0"
+imgref = "1.3.5"
+rgb = "0.8.11"
+lodepng = "2.1.2"
+vips-sys = "0.1.2"
+libc = "0.2.43"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+
+[[bin]]
+name = "optimal-image"
+path = "src/bin/main.rs"
+
+[lib]
+name = "optimal_image"
+path = "src/optimal_image/lib.rs"

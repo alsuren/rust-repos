@@ -1,0 +1,11 @@
+[package]
+name = "ranbo"
+version = "0.1.0"
+authors = ["Jon Carr <jec@joncarr.xyz>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+color-thief = "0.1.0"
+image = "0.21.0"
+dirs = "1.0.5"

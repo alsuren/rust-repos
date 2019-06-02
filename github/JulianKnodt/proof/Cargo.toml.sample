@@ -1,0 +1,16 @@
+[package]
+name = "proof"
+version = "0.1.0"
+authors = ["julianknodt <julianknodt@gmail.com>"]
+
+[dependencies]
+lazy_static = "1.2.0"
+
+[[bin]]
+name = "interpreter"
+path = "src/bin/interpreter.rs"
+
+[[bin]]
+name = "compiler"
+path = "src/bin/compiler.rs"
+

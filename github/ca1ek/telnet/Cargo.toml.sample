@@ -1,0 +1,7 @@
+[package]
+name = "telnet"
+version = "0.1.0"
+authors = ["ca1ek <ca1ek@users.noreply.github.com>"]
+
+[dependencies]
+termion = {git = "https://github.com/ticki/termion/"}

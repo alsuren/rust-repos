@@ -1,0 +1,32 @@
+[package]
+name = "miss-demeanor"
+version = "0.2.0"
+authors = ["John Baublitz <john.m.baublitz@gmail.com>"]
+description = "Fast, parallel, pluggable process compliance checker"
+license = "BSD-3-Clause"
+repository = "https://github.com/jbaublitz/miss-demeanor"
+keywords = ["process", "compliance", "plugin"]
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "LICENSE",
+]
+
+[dependencies]
+env_logger = "0.5.13"
+getopts = "0.2.18"
+hyper = "0.12.12"
+hyper-tls = "0.3.0"
+libc = "0.2.43"
+libloading = "0.5.0"
+log = "0.4.5"
+native-tls = "0.2.1"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+tokio = "0.1.11"
+tokio-tls = "0.2.0"
+toml = "0.4.8"
+
+[dependencies.miss-demeanor-pluginutils]
+version = "0.2.0"
+path = "./miss-demeanor-pluginutils"

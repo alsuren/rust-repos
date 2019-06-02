@@ -1,0 +1,10 @@
+[package]
+name = "intergalactic-empire"
+version = "0.1.0"
+authors = ["Jonas Waeber <jonaswaeber@gmail.com>"]
+
+[dependencies]
+
+rand = "0.5.5"
+log = "0.4.5"
+uuid = { version = "0.7", features = ["serde", "v5", "v4"] }

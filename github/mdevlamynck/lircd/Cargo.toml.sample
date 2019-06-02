@@ -1,0 +1,14 @@
+[package]
+name    = "lircd"
+version = "0.0.1"
+authors = [ "Matthias Devlamynck <matthias.devlamynck@mailoo.org>" ]
+
+[badges]
+travis-ci = { repository = "mdevlamynck/lircd", branch = "master" }
+appveyor  = { repository = "mdevlamynck/lircd", branch = "master", service = "github" }
+
+[dependencies]
+mioco = "*"
+
+[features]
+unstable = []

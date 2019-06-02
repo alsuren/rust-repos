@@ -1,0 +1,11 @@
+[package]
+name = "game"
+version = "0.1.0"
+authors = ["Guillermo Rodriguez <guillermo.rodriguez.utu@gmail.com>"]
+
+[dependencies]
+time = "*"
+image = "*"
+sdl2 = "*"
+sdl2_ttf = "*"
+sdl2_image = "*"

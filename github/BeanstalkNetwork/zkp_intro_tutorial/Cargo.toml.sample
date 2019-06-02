@@ -1,0 +1,12 @@
+[package]
+name = "zkp_intro_tutorial"
+version = "0.1.0"
+authors = ["Dusty Phillips <dusty@beanstalk.network>"]
+
+[dependencies]
+byteorder = "1"
+merkle_tree_tutorial = { git = "https://github.com/BeanstalkNetwork/merkle_tree_tutorial.git"}
+num-bigint = "0.2"
+num-traits = "0.2"
+rand = "^0.5"
+rust-crypto = "0.2.36"

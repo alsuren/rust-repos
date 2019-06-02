@@ -1,0 +1,42 @@
+[package]
+name = "rustic-io"
+version = "0.2.8"
+authors = ["Nathan Sizemore <nathanrsizmore@gmail.com>"]
+description = "Websocket server library for event based messaging"
+repository = "https://github.com/nathansizemore/rustic-io"
+readme = "./README.md"
+keywords = ["websocket", "web", "socket"]
+license = "MIT"
+
+[lib]
+name = "rustic-io"
+path = "src/rustic_io.rs"
+
+[dependencies]
+rust-crypto = "*"
+rustc-serialize = "*"
+
+# cargo build
+[profile.dev]
+opt-level = 0
+debug = true
+
+# cargo build --release
+[profile.release]
+opt-level = 3
+debug = false
+
+# cargo test
+[profile.test]
+opt-level = 0
+debug = true
+
+# cargo bench
+[profile.bench]
+opt-level = 3
+debug = false
+
+# cargo doc
+[profile.doc]
+opt-level = 0
+debug = true

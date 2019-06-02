@@ -1,0 +1,34 @@
+[package]
+name = "sarkara"
+version = "0.10.0-alpha.4"
+authors = ["quininer kel <quininer@live.com>"]
+description = "A experimental post-quantum cryptography library."
+repository = "https://github.com/quininer/sarkara"
+documentation = "https://docs.rs/sarkara/"
+keywords = [ "post-quantum", "cryptography" ]
+license = "MIT"
+categories = [ "cryptography" ]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "quininer/sarkara" }
+appveyor = { repository = "quininer/sarkara" }
+
+[badges.maintenance]
+status = "experimental"
+
+[dependencies]
+rand = "0.5"
+arrayref = "0.3"
+seckey = { version = "0.9", features = [ "nightly" ] }
+failure = "0.1"
+kyber = "=0.2.0-alpha.2"
+dilithium = "=0.2.0-alpha.3"
+norx-permutation = { version = "0.1", default-features = false, features = [ "W64", "L4" ] }
+norx = { version = "0.1", default-features = false, features = [ "W64", "L4", "P1" ] }
+mem-aead-mrs = "0.1"
+
+serde = { version = "1", optional = true }
+
+[features]
+simd = [ "norx-permutation/simd", "norx/simd" ]

@@ -1,0 +1,52 @@
+[package]
+name = "ruyi"
+version = "0.1.6"
+authors = ["Agemo Cui <agemocui@qq.com>"]
+description = """
+An event-driven framework for non-blocking, asynchronous I/O in Rust
+"""
+documentation = "https://docs.rs/ruyi"
+homepage = "https://github.com/agemocui/ruyi"
+repository = "https://github.com/agemocui/ruyi"
+readme = "README.md"
+keywords = ["io", "async", "non-blocking", "event-loop", "network"]
+categories = ["asynchronous", "network-programming"]
+license = "MIT/Apache-2.0"
+exclude = [".gitignore", ".travis.yml"]
+
+[badges]
+travis-ci = { repository = "agemocui/ruyi" }
+
+[dependencies]
+bitflags = "1.0"
+failure = "0.1"
+futures = "0.1"
+log = "0.4"
+net2 = "0.2"
+unreachable = "1.0"
+
+[target."cfg(unix)".dependencies]
+libc = "0.2"
+
+[target."cfg(windows)".dependencies.winapi]
+version = "0.3"
+features = [
+    "basetsd",
+    "handleapi",
+    "ioapiset",
+    "minwinbase",
+    "minwindef",
+    "winbase",
+    "winerror",
+    "winnt",
+    "winsock2",
+    "ws2def",
+    "ws2ipdef"
+]
+
+[dev-dependencies]
+env_logger = "0.4"
+num_cpus = "1.8"
+chrono = "0.4"
+structopt = "0.1"
+structopt-derive = "0.1"

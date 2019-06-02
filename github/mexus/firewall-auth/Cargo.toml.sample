@@ -1,0 +1,39 @@
+[package]
+name = "firewall-auth"
+version = "0.1.0"
+authors = ["mexus <gilaldpellaeon@gmail.com>"]
+
+[dependencies]
+# Serialization
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+rmp-serde = "*"
+
+# Password checking
+ring = "*"
+
+# Command line parsing
+clap = "*"
+
+# Easy error generation
+quick-error = "*"
+
+# Logging
+slog = "*"
+
+# User password input
+rpassword = "*"
+
+# Web interface
+rocket_codegen = "*"
+rocket = "*"
+
+# Time handling
+time = "*"
+
+# Rocket additional components
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["tera_templates", "json"]

@@ -1,0 +1,17 @@
+[workspace]
+members = [
+  "audio",
+  "backends/auto",
+  "backends/dummy",
+  "backends/gstreamer",
+  "backends/gstreamer/render",
+  "backends/gstreamer/render-unix",
+  "examples",
+  "examples/android/lib",
+  "player",
+  "servo-media",
+  "servo-media-derive",
+  "streams",
+  "webrtc"
+]
+license = "MPL-2.0"

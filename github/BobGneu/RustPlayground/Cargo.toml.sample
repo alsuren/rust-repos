@@ -1,0 +1,19 @@
+[package]
+name = "rusty-playground"
+version = "0.1.0"
+authors = ["Bob Chatman <bob.chatman@gmail.com>"]
+publish = false
+
+[features]
+default = []
+
+[dependencies]
+log = "0.4.1"
+winit = "0.10.0"
+env_logger = "0.5.2"
+time = "0.1.39"
+gfx = "*"        
+
+[[example]]
+name = "testing"
+path = "examples/testing/main.rs"

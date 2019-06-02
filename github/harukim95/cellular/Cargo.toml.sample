@@ -1,0 +1,10 @@
+[package]
+name = "cellular"
+version = "0.0.1"
+authors = ["Haru Kim <me@harukim.xyz>"]
+edition = "2018"
+
+[dependencies]
+num = "0.2.0"
+num-traits = "0.2.6"
+num-derive = "0.2.4"

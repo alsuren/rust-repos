@@ -1,0 +1,29 @@
+[package]
+name = "system-graph"
+version = "0.1.0"
+edition = "2018"
+description = """
+system-graph is an experimental alternative for shred's Dispatcher.
+"""
+documentation = "https://docs.rs/system-graph/"
+repository = "https://github.com/slide-rs/system-graph"
+readme = "README.md"
+keywords = ["gamedev", "ecs", "system", "graph"]
+categories = ["concurrency"]
+license = "MIT/Apache-2.0"
+authors = ["slide-rs hackers"]
+exclude = ["bors.toml", ".travis.yml"]
+
+[dependencies]
+arrayvec = "0.4"
+fxhash = "0.2"
+rayon = "1"
+shred = "0.7.1"
+smallvec = "0.6"
+
+[dev-dependencies]
+shred-derive = "0.5.1"
+
+[features]
+default = ["parallel"]
+parallel = []

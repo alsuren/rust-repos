@@ -1,0 +1,21 @@
+[package]
+name = "scte35-reader"
+version = "0.8.0"
+authors = ["David Holroyd <dave@badgers-in-foil.co.uk>"]
+description = "Reader for data formatted according to SCTE-35"
+repository = "https://github.com/dholroyd/scte35-reader"
+categories = [ "multimedia::video", "parser-implementations" ]
+readme = "README.md"
+license = "MIT/Apache-2.0"
+edition = "2018"
+
+[dependencies]
+mpeg2ts-reader = "0.9"
+bitreader = "0.3.1"
+serdebug = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+
+[dev-dependencies]
+hex-literal = "0.1.0"
+matches = "0.1.6"

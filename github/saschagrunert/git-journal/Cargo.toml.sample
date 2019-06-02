@@ -1,0 +1,41 @@
+[package]
+name = "git-journal"
+version = "1.8.1"
+license = "MIT"
+readme = "README.md"
+keywords = ["parser", "git", "log", "changelog", "journal"]
+authors = ["Sascha Grunert <mail@saschagruenrt.de>"]
+repository = "https://github.com/saschagrunert/git-journal"
+homepage = "https://github.com/saschagrunert/git-journal"
+documentation = "https://docs.rs/git-journal"
+description = "The Git Commit Message and Changelog Generation Framework"
+categories = ["command-line-utilities"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "saschagrunert/git-journal", branch = "master" }
+appveyor = { repository = "saschagrunert/git-journal", branch = "master", service = "github" }
+
+[lib]
+name = "gitjournal"
+
+[dependencies]
+chrono = "0.4.6"
+clap = { version = "2.33.0", features = ["yaml"] }
+failure = "0.1.5"
+git2 = "0.8.0"
+lazy_static = "1.3.0"
+log = "0.4.6"
+mowl = "2.0.0"
+nom = { version = "4.2.3", features = ["regexp_macros"] }
+rayon = "1.0.3"
+regex = "1.1.6"
+serde = "1.0.92"
+serde_derive = "1.0.92"
+term = "0.5.2"
+toml = "0.5.1"
+
+[[bin]]
+name = "git-journal"
+path = "src/main.rs"
+doc = false

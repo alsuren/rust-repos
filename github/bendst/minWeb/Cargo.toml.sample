@@ -1,0 +1,9 @@
+[package]
+name = "http_server"
+version = "0.2.0"
+authors = ["Ben Stuart <mail@bstuart.de>"]
+
+[dependencies]
+hyper = "0.8.0"
+ansi_term = "0.7"
+libc = "0.2"

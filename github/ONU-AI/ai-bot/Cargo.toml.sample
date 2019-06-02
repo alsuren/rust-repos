@@ -1,0 +1,13 @@
+[package]
+name = "ai-bot"
+version = "0.1.0"
+authors = ["Vlad Balabash <vladb951@gmail.com>"]
+
+[dependencies]
+tensorflow = "0.4.0"
+time = "0.1.38"
+iron-cors = "0.7.0"
+router = "*"
+
+[dependencies.iron]
+version = "*"

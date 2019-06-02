@@ -1,0 +1,16 @@
+[package]
+name = "redstone"
+version = "0.1.0"
+authors = ["Terrence Cole <terrence.d.cole@gmail.com>"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+actix = "0.5"
+actix-web = "0.6"
+failure = "*"
+futures = "*"
+serde_json = "*"
+linux-embedded-hal = "0.2"
+embedded-hal = "0.2"

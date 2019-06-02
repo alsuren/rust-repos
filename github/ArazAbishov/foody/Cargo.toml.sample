@@ -1,0 +1,25 @@
+[package]
+name = "foody"
+version = "0.1.0"
+authors = ["Araz Abishov <araz.abishov.gsoc@gmail.com>"]
+
+[dependencies]
+
+# web framework
+rocket = "0.2.6"
+rocket_codegen = "0.2.6"
+
+# easy way to make calls to APIs
+anterofit = "0.1.1"
+
+# serialization library
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+
+# date time library
+chrono = "0.3"
+regex = "0.2"
+
+# initializing statics through macro
+lazy_static = "0.2"

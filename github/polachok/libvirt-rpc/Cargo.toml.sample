@@ -1,0 +1,30 @@
+[package]
+name = "libvirt-rpc"
+version = "0.1.12"
+authors = ["Alexander Polyakov <apolyakov@beget.com>"]
+description = "libvirt protocol implementation and client"
+documentation = "https://docs.rs/libvirt-rpc"
+homepage = "https://github.com/polachok/libvirt-rpc"
+repository = "https://github.com/polachok/libvirt-rpc"
+license = "LGPL-2.1"
+build = "build.rs"
+
+[build-dependencies]
+xdrgen = "0.4.4"
+#xdrgen = { git = "https://github.com/polachok/rust-xdr", branch = "discriminator-as-i32" }
+
+[dependencies]
+xdr-codec = { version = "0.4", features = ["bytecodec"] }
+byteorder = "1.0"
+uuid = "0.5"
+futures = "0.1.6"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+tokio-core = "0.1"
+tokio-io = "0.1.2"
+tokio-uds = "0.1"
+tokio-uds-proto = "0.1"
+bytes = "0.4"
+log = "0.3.7"
+env_logger = "0.4"
+bitflags = "0.8.2"

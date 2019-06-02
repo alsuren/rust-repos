@@ -1,0 +1,24 @@
+[package]
+name = "pipit-keyboard"
+version = "0.1.0"
+authors = ["e-matteson <e.r.matteson@gmail.com>"]
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+time = "0.1"
+serde_yaml = "0.7"
+serde = "1.0"
+serde_derive = "1.0"
+itertools = "0.7"
+cursive = "0.8"
+unicode-segmentation = "1.2"
+lazy_static = "1.0"
+natord = "1.0"
+svg =  "0.5.10"
+clap = "2.32"
+bit-vec = "0.5"
+byteorder = "1.2"

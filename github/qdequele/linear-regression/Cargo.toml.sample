@@ -1,0 +1,14 @@
+[package]
+name = "linear-regression"
+version = "0.1.0"
+authors = ["Quentin de Quelen <quentin@dequelen.me>"]
+
+[[bin]]
+name = "estimate"
+path = "src/estimate.rs"
+doc = false
+
+[[bin]]
+name = "learn"
+path = "src/learn.rs"
+doc = false

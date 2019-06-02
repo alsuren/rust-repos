@@ -1,0 +1,26 @@
+[package]
+name = "tokio-ping"
+version = "0.2.0"
+license = "MIT/Apache-2.0"
+authors = ["Fedor Gogolev <knsd@knsd.net>"]
+documentation = "https://docs.rs/tokio-ping"
+repository = "https://github.com/knsd/tokio-ping"
+description = "Asynchronous ICMP pinging library"
+keywords = ["tokio", "icmp", "ping"]
+categories = ["network-programming", "asynchronous"]
+
+[dependencies]
+failure = "0.1.1"
+futures = "0.1"
+libc = "0.2"
+mio = "0.6"
+rand = "0.4"
+socket2 = "0.3"
+time = "0.1"
+tokio-executor="0.1.2"
+tokio-reactor = "0.1.1"
+tokio-timer = "0.2.3"
+parking_lot = "0.5.5"
+
+[dev-dependencies]
+tokio = "0.1"

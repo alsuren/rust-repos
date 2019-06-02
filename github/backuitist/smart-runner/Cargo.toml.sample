@@ -1,0 +1,13 @@
+[package]
+name = "smart-runner"
+version = "0.1.0"
+authors = ["Bruno Bieth <biethb@gmail.com>"]
+
+[dependencies]
+termion = "1"
+itertools = "0.7.6"
+regex = "0.2"
+
+[dev-dependencies]
+hamcrest = "0.1.5"
+maplit = "1.0.1"

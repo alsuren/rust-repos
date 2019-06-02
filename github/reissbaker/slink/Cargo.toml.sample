@@ -1,0 +1,26 @@
+[package]
+name = "slink"
+version = "0.2.2"
+authors = ["Matt Baker <@reissbaker>"]
+
+description = "Simple remote dev environments over SSH"
+repository = "https://github.com/reissbaker/slink"
+license = "MIT"
+
+categories = [
+  "command-line-interface",
+  "command-line-utilities",
+  "development-tools",
+]
+
+readme = "README.md"
+
+[dependencies]
+serde = "1.0"
+serde_yaml = "0.7"
+structopt = "0.2"
+xdg = "^2.1"
+pathdiff = "^0.1"
+shell-escape = "^0.1"
+isatty = "0.1"
+dirs = "1.0.4"

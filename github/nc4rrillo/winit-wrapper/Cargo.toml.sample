@@ -1,0 +1,19 @@
+[package]
+name = "winit-wrapper"
+version = "0.1.0"
+authors = ["ncarrillo"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+glutin = "*"
+gleam = "*"
+clipboard = "*"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc = "0.2.5"
+cocoa = "0.15"
+core-foundation = "0.6"
+core-graphics = "0.14"
+block = "0.1.6"

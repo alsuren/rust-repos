@@ -1,0 +1,29 @@
+[package]
+name = "gio-2-0-sys"
+version = "0.47.0-dev"
+authors = ["Mikhail Zabaluev <mikhail.zabaluev@gmail.com>"]
+description = "Import crate for Gio"
+license = "LGPL-2.1+"
+readme = "README.md"
+keywords = ["GLib", "GNOME", "IO", "async"]
+
+repository = "https://github.com/gi-rust/gio-sys.git"
+
+build = "build.rs"
+links = "gio-2.0"
+
+[lib]
+path = "lib.rs"
+
+[build-dependencies]
+pkg-config = "0.3"
+
+[dependencies]
+gtypes = "0.2"
+libc = "0.2"
+
+[dependencies.glib-2-0-sys]
+git = "https://github.com/gi-rust/glib-sys.git"
+
+[dependencies.gobject-2-0-sys]
+git = "https://github.com/gi-rust/gobject-sys.git"

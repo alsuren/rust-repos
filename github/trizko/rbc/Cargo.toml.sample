@@ -1,0 +1,9 @@
+[package]
+name = "rbc"
+version = "0.1.0"
+authors = ["Tony Rizko"]
+
+[dependencies]
+hex = "0.3.1"
+crypto-hash = "0.3.1"
+byteorder = "1.2.3"

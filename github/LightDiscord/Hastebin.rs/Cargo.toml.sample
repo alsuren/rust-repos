@@ -1,0 +1,16 @@
+[package]
+name = "hastebin"
+version = "0.1.0"
+authors = ["LightDiscord <contact@lightdiscord.fr>"]
+description = "Publish code on Hastebin using Pipes"
+license = "MIT"
+keywords = ["rust", "hastebin", "pipes"]
+repository = "https://github.com/LightDiscord/Hastebin.rs"
+
+[dependencies]
+futures = "0.1"
+hyper = "0.11.6"
+tokio-core = "0.1"
+hyper-tls = "0.1.2"
+serde_json = "1.0"
+error-chain = "0.11.0"

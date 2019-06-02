@@ -1,0 +1,21 @@
+[package]
+name = "two_timer"
+version = "1.0.8"
+authors = ["dfhoughton <dfhoughton@gmail.com>"]
+description="parser for English time expressions"
+homepage="https://github.com/dfhoughton/two-timer"
+repository="https://github.com/dfhoughton/two-timer"
+documentation = "https://docs.rs/two_timer"
+keywords=["time", "nlp", "parse"]
+categories=["date-and-time", "parsing"]
+license="GPL-2.0"
+edition = "2018"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+pidgin = "0.3"
+lazy_static = "1.2"
+chrono = "0.4"
+regex = "1"

@@ -1,0 +1,11 @@
+[package]
+name = "iptmnet_data_importer"
+version = "0.1.0"
+authors = ["Sachin <sachinx0e@gmail.com>"]
+
+[dependencies]
+postgres = "0.15"
+log = "0.4"
+simplelog = "^0.5.0"
+clap = "~2.31"
+env_logger = "0.5.6"

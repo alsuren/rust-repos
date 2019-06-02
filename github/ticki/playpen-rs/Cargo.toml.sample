@@ -1,0 +1,20 @@
+[package]
+name = "playpen"
+version = "0.1.0"
+authors = ["Ticki <Ticki@users.noreply.github.com>"]
+description = "Library for interfacing with the Rust playpen API."
+repository = "https://github.com/ticki/playpen"
+documentation = "https://docs.rs/crate/playpen"
+license = "MIT"
+keywords = ["playpen", "repl", "api", "playbot", "rust"]
+exclude = ["target", "Cargo.lock"]
+
+[dependencies]
+hyper = "0"
+serde = "0"
+serde_json = "0"
+serde_macros = "0"
+
+[dependencies.url]
+version = "1"
+features = ["query_encoding"]

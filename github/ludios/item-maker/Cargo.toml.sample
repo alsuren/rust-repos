@@ -1,0 +1,14 @@
+cargo-features = ["edition"]
+
+[package]
+name = "item-maker"
+version = "0.1.0"
+authors = ["at"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+byteorder = "1.2.6"
+
+[dependencies.rocksdb]
+git = "https://github.com/pingcap/rust-rocksdb.git"

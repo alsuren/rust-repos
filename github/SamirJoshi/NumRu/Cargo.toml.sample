@@ -1,0 +1,22 @@
+[package]
+name = "NumRu"
+version = "0.1.0"
+authors = ["SamirJoshi <samirjoshi2018@u.northwestern.edu>"]
+
+[lib]
+name = "num_ru"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dependencies]
+ndarray = "0.11.2"
+num-traits = "0.2"
+error-chain = "0.9.0"
+chrono = "0.3"
+rayon = "1.0"
+ndarray-parallel = "0.8"
+ndarray-rand = "0.7"
+rand = "0.4"

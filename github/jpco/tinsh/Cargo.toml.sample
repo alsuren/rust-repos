@@ -1,0 +1,15 @@
+[package]
+
+name = "tinsh"
+version = "0.0.1"
+authors = [ "jpco <mail@jpco.io>" ]
+description = "Non-POSIX shell language."
+readme = "README.md"
+
+# TODO: once we stabilise, specify versions of these
+[dependencies]
+termios = "*"
+libc = "*"
+unicode-segmentation = "*"
+glob = "*"
+regex = "*"

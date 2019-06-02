@@ -1,0 +1,12 @@
+[workspace]
+
+members = [
+    "brainstorm",
+    "gl_bindings",
+    "resources",
+    "window",
+]
+
+[profile.dev]
+opt-level = 2
+codegen-units = 5

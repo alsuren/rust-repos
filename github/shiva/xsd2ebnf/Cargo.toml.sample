@@ -1,0 +1,9 @@
+[package]
+name = "xsd2ebnf"
+version = "0.1.0"
+authors = ["Shiva <shiv@shiv.me>"]
+
+[dependencies]
+clap = "2.32.0"
+quick-xml = "0.12.0"
+

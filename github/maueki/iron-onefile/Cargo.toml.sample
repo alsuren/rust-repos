@@ -1,0 +1,15 @@
+[package]
+name = "iron-onefile"
+version = "0.1.0"
+authors = ["Ueki Masaru <masaru.ueki@itage.co.jp>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+mount = "*"
+lazy_static = "*"
+staticfile = "*"
+conduit-mime-types = "*"
+hyper = "*"
+include_dir_bytes = "*"
+embed_staticfile = { git = "https://github.com/maueki/embed_staticfile.rs.git" }

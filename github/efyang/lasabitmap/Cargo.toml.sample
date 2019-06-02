@@ -1,0 +1,9 @@
+[package]
+authors = ["Edward Yang <edward.yang6771@gmail.com>"]
+name = "bitmap"
+version = "0.1.0"
+
+[dependencies]
+bit-vec = "0.4.3"
+bitstream = "0.1.1"
+image = "0.7.0"

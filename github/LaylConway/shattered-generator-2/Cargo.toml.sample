@@ -1,0 +1,14 @@
+[package]
+name = "shattered-generator"
+version = "0.1.0"
+authors = ["Layl <LaylConway@users.noreply.github.com>"]
+
+[dependencies]
+encoding = "0.2.32"
+imagefmt = "3.0.1"
+palette = "0.2.1"
+rand = "0.3"
+toml = "0.1.28"
+
+[dependencies.eu4data]
+path = "./eu4data"

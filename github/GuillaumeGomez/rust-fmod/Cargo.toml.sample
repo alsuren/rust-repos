@@ -1,0 +1,21 @@
+[package]
+name = "fmod"
+version = "0.10.1"
+authors = ["Guillaume Gomez <guillaume1.gomez@gmail.com>"]
+
+description = "A rust binding for the FMOD library"
+repository = "https://github.com/GuillaumeGomez/rust-fmod"
+documentation = "http://doc.rs/fmod/"
+readme = "README.md"
+keywords = ["library", "sound", "3D", "fmod", "fmodex"]
+license-file = "LICENSE.TXT"
+
+[dependencies]
+c_vec = "~1.0"
+byteorder = "1.2"
+libc = "0.2.6"
+
+[lib]
+name = "rfmod"
+path = "src/rfmod.rs"
+crate-type = ["dylib", "rlib"]

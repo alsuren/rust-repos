@@ -1,0 +1,31 @@
+[package]
+name = "rs-es"
+version = "0.11.4"
+authors = ["Ben Ashford"]
+license = "Apache-2.0"
+repository = "https://github.com/benashford/rs-es"
+description = "Client for the ElasticSearch REST API"
+readme = "README.md"
+keywords = ["elasticsearch", "elastic"]
+exclude = [".gitignore", ".travis.yml", "docker-compose.yml"]
+edition = "2018"
+
+[features]
+default = []
+
+geo = ["geojson"]
+
+[lib]
+name = "rs_es"
+
+[dependencies]
+reqwest = "0.9"
+log = "0.4"
+serde_json = "1.0"
+serde = {version = "1", features = ["derive"]}
+geojson = { version="0.15", optional=true}
+
+[dev-dependencies]
+env_logger = "0.6"
+regex = "1.1"
+doc-comment = "0.3"

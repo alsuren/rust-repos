@@ -1,0 +1,12 @@
+[package]
+name = "cryptasm"
+version = "0.1.0"
+authors = ["dignifiedquire <dignifiedquire@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = { git = 'https://github.com/alexcrichton/wasm-bindgen' }
+# rust-crypto = "*"
+aes = { "path" = "../rust-aes" }

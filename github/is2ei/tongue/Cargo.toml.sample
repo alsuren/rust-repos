@@ -1,0 +1,23 @@
+[package]
+name = "tongue"
+version = "0.1.2"
+authors = [ "Issei Horie <horie7188@gmail.com>" ]
+license = "MIT/Apache-2.0"
+description = """
+Yet another shell.
+"""
+documentation = "https://github.com/ihorie/tongue"
+homepage = "https://github.com/ihorie/tongue"
+repository = "https://github.com/ihorie/tongue"
+exclude = [
+    "tests/*",
+    "benches/*",
+]
+
+[dependencies]
+libc = "0.2"
+log = "0.3"
+
+[[bin]]
+path = "src/main.rs"
+name = "tongue"

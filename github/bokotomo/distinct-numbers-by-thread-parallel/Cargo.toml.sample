@@ -1,0 +1,16 @@
+[package]
+name = "counter_thread_parallel"
+version = "0.1.0"
+authors = ["bokotomo <bokotomo@me.com>"]
+
+[dependencies]
+rand="0.3.0"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "thread"
+path = "src/thread.rs"
+

@@ -1,0 +1,43 @@
+[package]
+	authors = ["Omar M. <omarkmu@gmail.com>"]
+	categories = ["api-bindings"]
+	description = "A wrapper for console-related functions in the Windows API."
+	documentation = "https://omarkmu.github.io/docs/winconsole"
+	keywords = ["console", "input", "terminal", "windows"]
+	license = "MIT OR Apache-2.0"
+	name = "winconsole"
+	readme = "README.md"
+	repository = "https://github.com/omarkmu/winconsole"
+	version = "0.10.0"
+
+[features]
+	default = []
+	input = []
+	window = []
+
+[dependencies]
+	cgmath = "0.16"
+	lazy_static = "1.0"
+	rgb = "0.8"
+	[dependencies.serde]
+		version = "1.0"
+		features = ["serde_derive"]
+		optional = true
+	[dependencies.winapi]
+		version = "0.3"
+		features = [
+			"consoleapi",
+			"minwindef",
+			"processenv",
+			"utilapiset",
+			"winbase",
+			"wincon",
+			"windef",
+			"winnls",
+			"winnt",
+			"winuser"
+		]
+
+[dev-dependencies]
+	serde_cbor = "0.8"
+	serde_json = "1.0"

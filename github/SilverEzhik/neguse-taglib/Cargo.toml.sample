@@ -1,0 +1,12 @@
+[package]
+name = "neguse-taglib"
+version = "0.1.0"
+authors = ["Ezhik <i@ezhik.me>"]
+edition = "2018"
+
+[dependencies]
+encoding = "0.2"
+regex = "1"
+lazy_static = "1"
+base64 = "0.9"
+neguse-types = { git = "https://github.com/SilverEzhik/neguse-types" }

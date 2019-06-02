@@ -1,0 +1,9 @@
+[package]
+name = "verbose-telemetry"
+version = "0.3.2"
+authors = ["mayadapples <tlovinski@outlook.com>"]
+
+[dependencies]
+textplots = "*"
+colored = "*"
+device_query = "*"

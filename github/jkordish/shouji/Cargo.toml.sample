@@ -1,0 +1,18 @@
+[package]
+name = "shouji"
+version = "0.2.2"
+authors = ["Joseph Kordish <joe@unicornclouds.com>"]
+
+[dependencies]
+docopt = "*"
+docopt_macros = "*"
+rustc-serialize = "*"
+curl = "^0.2.19"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+#serde_codegen = "*"
+clippy = {version="*", optional = true}
+
+[features]
+default=[]

@@ -1,0 +1,17 @@
+[package]
+name = "bunny"
+version = "0.1.0"
+authors = ["Aleksey Kladov <aleksey.kladov@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+nalgebra = "0.3"
+num = "*"
+image = "*"
+
+[dependencies.glium]
+version = "0.12"
+features = ["nalgebra", "glutin"]
+
+[features]
+dyn_assets = []

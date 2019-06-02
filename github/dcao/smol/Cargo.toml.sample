@@ -1,0 +1,26 @@
+[package]
+name = "smol"
+description = "A smol NLP library"
+version = "0.0.1"
+authors = ["David Cao <david@teknik.io>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/cmdd/smol"
+repository = "https://github.com/cmdd/smol"
+documentation = "https://docs.rs/smol"
+
+[dependencies]
+bincode = "0.9"
+failure = "0.1"
+itertools = "0.7"
+rand = "0.4"
+regex = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+
+[dev-dependencies]
+criterion = "0.1"
+
+[[bench]]
+name = "benchmark"
+harness = false

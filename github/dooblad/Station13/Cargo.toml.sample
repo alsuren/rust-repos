@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "common",
+    "client",
+    "server",
+    "serde",
+    "serde_derive",
+    "serde_tests",
+]

@@ -1,0 +1,33 @@
+[package]
+name = "frust"
+version = "0.0.2"
+authors = ["Timm Behner <behner@cs.uni-bonn.de>"]
+
+[lib]
+name = "frustlib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "frust"
+path = "src/main.rs"
+
+[dependencies]
+clap = ">=2.21.2"
+walkdir = "1"
+regex = ">=0.2"
+log = "0.3"
+env_logger = ">=0.4.2"
+pretty-bytes = "0.2.1"
+chrono = "0.3.0"
+mime_guess = "1.8.1"
+liquid = "0.9"
+colored = "^1.5"
+termion = "^1.3"
+libc = "0.2"
+toml = "0.4"
+serde = "1.0.7"
+serde_derive = "1.0.7"
+
+[dependencies.nom]
+version = "^2.2"
+features = ["regexp", "regexp_macros"]

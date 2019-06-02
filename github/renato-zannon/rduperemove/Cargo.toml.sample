@@ -1,0 +1,26 @@
+[package]
+name = "rduperemove"
+version = "0.0.1"
+
+authors = ["Renato Zannon <renato@rrsz.com>"]
+
+[dependencies.btrfs]
+path = "lib/btrfs"
+
+[dependencies.fiemap]
+path = "lib/fiemap"
+
+[dependencies.ioctl]
+path = "lib/ioctl"
+
+[dependencies]
+docopt = "*"
+docopt_macros = "*"
+rust-crypto = "*"
+deque = "*"
+rustc-serialize = "*"
+log = "*"
+
+[[bin]]
+name = "rduperemove"
+path = "src/main.rs"

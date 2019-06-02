@@ -1,0 +1,13 @@
+[package]
+name = "mass_irc"
+version = "0.1.0"
+authors = ["Nick Massey <nickmass@nickmass.com>"]
+
+[dependencies]
+nom = "^1.2.4"
+log = "0.3"
+env_logger = "0.3"
+termion = "1.0.0"
+clap = "2.10.0"
+tokio-core = "0.1"
+futures = "0.1"

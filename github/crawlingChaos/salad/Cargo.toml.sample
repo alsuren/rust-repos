@@ -1,0 +1,10 @@
+[package]
+name = "salad"
+description = "Salad generates random passphrases from a word-list for *nix systems"
+version = "0.1.1"
+authors = ["crawlingChaos"]
+edition = "2018"
+license = "AGPL-3.0-or-later"
+repository = "https://github.com/crawlingChaos/salad"
+
+[dependencies]

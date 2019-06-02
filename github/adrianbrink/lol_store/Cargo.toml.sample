@@ -1,0 +1,15 @@
+[package]
+name = "lol_store"
+version = "0.1.0"
+authors = ["Adrian Brink <adrian@brink-holdings.com>"]
+
+[dependencies]
+dotenv = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+hyper = "*"
+diesel = { version = "*", features = ["postgres"] }
+diesel_codegen = { version = "*", features = ["postgres"] }
+redis = "*"
+reqwest = "*"

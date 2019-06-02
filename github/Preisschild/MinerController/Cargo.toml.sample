@@ -1,0 +1,8 @@
+[package]
+name = "MinerController"
+version = "0.1.0"
+authors = ["preisschild"]
+
+[dependencies]
+jsonapi = "*"
+gtk = { git = "https://github.com/gtk-rs/gtk.git" }

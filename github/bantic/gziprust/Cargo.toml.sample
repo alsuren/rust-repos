@@ -1,0 +1,12 @@
+[package]
+name = "gziprust"
+version = "0.1.0"
+authors = ["Cory <cory.forsyth@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4.6"
+serde = "1.0.39"
+serde_json = "1.0.39"
+serde_derive = "1.0.89"
+structopt = "0.2.15"

@@ -1,0 +1,28 @@
+
+[package]
+name = "MeetMon-BackEnd"
+version = "0.1.1"
+authors = ["Dynisious <daniel.bechaz@gmail.com>"]
+
+[lib]
+name = "utils"
+
+[dependencies]
+mongodb = "0.3.10"
+bson = "0.12.2"
+serde_derive = "*"
+serde = "*"
+
+[dependencies.rocket]
+version = "0.4.0-dev"
+git = "https://github.com/SergioBenitez/Rocket/"
+
+[dependencies.rocket_codegen]
+version = "0.4.0-dev"
+git = "https://github.com/SergioBenitez/Rocket/"
+
+[dependencies.rocket_contrib]
+version = "0.4.0-dev"
+default-features = false
+features = ["json"]
+git = "https://github.com/SergioBenitez/Rocket/"

@@ -1,0 +1,25 @@
+[package]
+name = "rover_server"
+version = "0.1.0"
+authors = ["Leonti Bielski"]
+edition = "2018"
+
+[dependencies]
+bufstream = "0.1"
+tokio = "0.1.11"
+tokio-io = "*"
+tokio-codec = "*"
+futures = "0.1.25"
+tokio-serial = "3.1.0"
+bytes = "0.4.10"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+serde_json = "1.0.33"
+i2cdev = "0.3.1"
+mcp3008 = "1.0.0"
+sysfs_gpio = "0.5.3"
+
+[dependencies.tokio-tungstenite]
+version = "0.6.0"
+default-features = false
+features = ["connect"]

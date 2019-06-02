@@ -1,0 +1,19 @@
+[package]
+name = "robocape"
+version = "0.1.0"
+authors = ["Ian McIntyre <ianpmcintyre@gmail.com>"]
+
+[build-dependencies]
+bindgen = "0.30.0"
+
+[lib]
+name = "robocape"
+path = "src/lib.rs"
+
+[[example]]
+name = "rc_version"
+path = "examples/rc_version.rs"
+
+[[example]]
+name = "rc_leds"
+path = "examples/rc_leds.rs"

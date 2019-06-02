@@ -1,0 +1,19 @@
+[package]
+name = "ghtool"
+version = "0.1.0"
+authors = ["Søren Mortensen <soren@sorenmortensen.com>"]
+license = "Apache-2.0"
+description = "Tool for interacting with all the extra data associated with a GitHub repository that doesn't come from git itself"
+
+[dependencies]
+clap = { version = "2.30", features = ["wrap_help"] }
+error-chain = "0.11"
+futures = "0.1"
+hubcaps = "0.4"
+log = "0.3"
+pretty_logger = "0.1"
+regex = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+tokio-core = "0.1"
+toml = "0.4"

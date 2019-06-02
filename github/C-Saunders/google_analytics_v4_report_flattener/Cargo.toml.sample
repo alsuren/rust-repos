@@ -1,0 +1,27 @@
+[package]
+name = "ga-v4-flattener"
+version = "0.3.0"
+authors = ["Charlie Saunders <charlieasaunders@gmail.com>"]
+description = "Converts Google Analytics API v4 reports to flat/delimited data."
+repository = "https://github.com/C-Saunders/google_analytics_v4_report_flattener"
+license = "MIT"
+edition = "2018"
+exclude = ["test_reports/*", "benches/*"]
+
+[dependencies]
+itertools = "0.7.8"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+[dev-dependencies]
+criterion = "0.2.5"
+indoc = "0.2"
+
+[[bench]]
+name = "to_delimited"
+harness = false
+
+[[bench]]
+name = "to_row_array"
+harness = false

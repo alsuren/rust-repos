@@ -1,0 +1,14 @@
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false
+
+[package]
+name = "chip8_rust"
+version = "0.1.0"
+authors = ["erandros <guidotarsia@gmail.com>"]
+
+[dependencies]

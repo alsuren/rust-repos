@@ -1,0 +1,10 @@
+[package]
+name = "euler"
+version = "0.0.0"
+authors = ["Steven Sheldon"]
+
+[dependencies]
+bit-vec = "0.4"
+bit-set = "0.4"
+num = "0.1"
+vec_map = "0.6"

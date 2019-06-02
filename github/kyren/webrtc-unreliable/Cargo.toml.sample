@@ -1,0 +1,28 @@
+[package]
+name = "webrtc-unreliable"
+version = "0.2.1-alpha.0"
+authors = ["kyren <kerriganw@gmail.com>"]
+edition = "2018"
+description = "UDP-like (unreliable, unordered) communication between Javascript/WebAssembly and native Rust via WebRTC"
+repository = "https://github.com/kyren/webrtc-unreliable"
+documentation = "https://docs.rs/webrtc-unreliable"
+readme = "README.md"
+keywords = ["wasm", "webrtc"]
+license = "MIT"
+
+[dependencies]
+byteorder = "1.3"
+crc32c = "0.4"
+crc32fast = "1.2"
+crossbeam = "0.7"
+futures = "0.1"
+http = "0.1.17"
+log = "0.4"
+openssl = "0.10"
+rand = "0.6"
+tokio = "0.1"
+
+[dev-dependencies]
+env_logger = "0.6"
+hyper = "0.12"
+clap = "2.32"

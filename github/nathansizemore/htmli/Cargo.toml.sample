@@ -1,0 +1,15 @@
+[package]
+name = "htmli"
+version = "0.1.3"
+authors = ["Nathan Sizemore <nathanrsizemore@gmail.com>"]
+description = "Statically resolved include directives for HTML. "
+readme = "README.md"
+keywords = ["html", "include"]
+license = "MPL-2.0"
+repository = "https://github.com/nathansizemore/htmli"
+
+[dependencies]
+docopt = "0.8"
+minifier = "0.0.3"
+serde = "1.0"
+serde_derive = "1.0"

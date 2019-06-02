@@ -1,0 +1,15 @@
+[package]
+name = "rust-enhancd"
+version = "0.1.0"
+authors = ["Patrick Chan <patrickchan1999@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32"
+colored = "1.7"
+dirs = "1.0.4"
+file-walkers = { git = "https://github.com/PRust-Projects/file-walkers.git" }
+regex = "1"
+rustc-hash = "1.0"
+serde = "1.0"
+serde_yaml = "0.8"

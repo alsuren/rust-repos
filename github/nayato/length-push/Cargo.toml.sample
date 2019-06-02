@@ -1,0 +1,29 @@
+[package]
+name = "length-push"
+version = "0.1.0"
+authors = ["Max Gortman <mgortman@microsoft.com>"]
+
+[dependencies]
+tokio-io = "=0.1.5"
+tokio-core = "=0.1.12"
+net2 = "0.2"
+num_cpus = "1"
+native-tls = "0.1"
+structopt = "0.2"
+bytes="0.4"
+chrono = "0.4"
+tokio-timer = "0.2"
+error-chain = "0.12"
+futures = "0.1"
+uuid = { version = "0.6", features = ["v4"] }
+# tokio-tls = "0.1"
+webpki = "0.18"
+rustls = { version = "0.12", features = ["dangerous_configuration"] }
+tokio-rustls = "0.5"
+lazy_static = "1.0"
+
+[profile.release]
+debug = true
+codegen-units = 1
+lto = true
+opt-level = 3

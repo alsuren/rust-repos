@@ -1,0 +1,26 @@
+[package]
+name = "cheer_them_up_game"
+version = "1.0.1"
+authors = ["Jakob Meier <jakobmeier@bluewin.ch>"]
+
+[lib]
+name = "cheer_them_up"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cheer_them_up"
+path = "src/main.rs"
+
+[dependencies]
+piston_window = "0.38.0"
+gfx_device_gl = "0.8.0"
+gfx = "0.9.0"
+piston2d-gfx_graphics = "0.23.0"
+find_folder = "*"
+freetype-rs = "0.5.0"
+rand = "0.3.14"
+jkm_shortest_path_map = { git = "https://github.com/jakmeier/rusty-shortest-path-map" }
+
+[dependencies.hyper]
+version = "0.9.8"
+default-features = false

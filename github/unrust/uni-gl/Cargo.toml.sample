@@ -1,0 +1,18 @@
+[package]
+name = "uni-gl"
+version = "0.1.1"
+authors = ["Edwin Cheng <edwin0cheng@gmail.com>", "jice <jice.nospam@gmail.com>"]
+description = "Unrust native/wasm openGL compatibility layer"
+license = "MIT"
+documentation = "https://docs.rs/uni-gl"
+repository = "https://github.com/unrust/uni-gl"
+keywords = ["opengl", "wasm"]
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+gl = "0.6.0"
+
+[target.wasm32-unknown-unknown.dependencies]
+stdweb =  "0.4.8"
+
+[dev-dependencies]
+uni-app = "0.1.*"

@@ -1,0 +1,18 @@
+[package]
+name = "pprzlink"
+version = "0.4.0"
+authors = ["Michal Podhradsky <mpodhradsky@galois.com>"]
+description = "Rust library for pprzlink"
+license = "GPL-3.0"
+documentation = "https://docs.rs/pprzlink/"
+homepage = "https://github.com/paparazzi/pprzlink-rust"
+repository = "https://github.com/paparazzi/pprzlink-rust"
+keywords = ["UAV", "pprzlink","paparazzi"]
+categories = ["embedded", "parsing","parser-implementations"]
+
+[dependencies]
+xml-rs = "0.7.0"
+ivyrust = {git = "https://github.com/paparazzi/ivy-rust" }
+byteorder = "1.1.0"
+rusthacl = { git = "https://github.com/podhrmic/rusthacl.git" }
+rand = "0.3.18"

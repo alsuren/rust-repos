@@ -1,0 +1,23 @@
+[package]
+
+name = "Rust16"
+version = "1.1.0"
+authors = ["Tomas Coiro <coirotomas@gmail.com>"]
+
+[[bin]]
+
+name = "rust-chip16"
+
+[dependencies]
+
+num = "*"
+rand = "*"
+image = "*"
+
+[dependencies.piston]
+
+git = "https://github.com/PistonDevelopers/piston.git"
+
+[dependencies.piston_window]
+
+git = "https://github.com/PistonDevelopers/piston_window.git"

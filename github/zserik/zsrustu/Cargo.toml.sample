@@ -1,0 +1,15 @@
+[package]
+name = "zsrustu"
+version = "0.0.0"
+authors = ["Erik Zscheile <erik.zscheile@gmail.com>"]
+
+[workspace]
+members = [
+  "pris",
+  "readfilez", "rustice"
+]
+
+[dependencies]
+eval = "^0.4"
+indicatif = "^0.11"
+rayon = "1.0"

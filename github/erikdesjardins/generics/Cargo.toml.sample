@@ -1,0 +1,22 @@
+[package]
+name = "generics"
+version = "0.1.0"
+authors = ["Erik Desjardins <erikdesjardins@users.noreply.github.com>"]
+license = "MIT"
+description = "Datatype generics"
+repository = "https://github.com/erikdesjardins/generics"
+documentation = "https://docs.rs/generics"
+readme = "./README.md"
+categories = ["data-structures"]
+keywords = ["datatype", "generics", "datatype-generic", "derive"]
+edition = "2018"
+
+[workspace]
+members = [".", "generics_derive"]
+
+[features]
+default = ["derive"]
+derive = ["generics_derive"]
+
+[dependencies]
+generics_derive = { optional = true, path = "./generics_derive" }

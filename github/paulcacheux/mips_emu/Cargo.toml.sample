@@ -1,0 +1,18 @@
+[package]
+name = "mips_emu"
+version = "0.1.0"
+authors = ["Paul CACHEUX <paulcacheux@gmail.com>"]
+
+[lib]
+name = "lib_mips_emu"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mips_emu_driver"
+path = "src/driver.rs"
+
+[dependencies]
+elf = "0.0.10"
+clap = "2.25"
+regex = "0.2"
+lazy_static = "0.2"

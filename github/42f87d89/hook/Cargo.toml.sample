@@ -1,0 +1,9 @@
+[package]
+name = "hook"
+version = "0.1.0"
+authors = ["gustavo <gbuschle@hotmail.com>"]
+
+[dependencies]
+sdl2 = "*"
+ncollide = "*"
+specs = "*"

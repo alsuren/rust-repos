@@ -1,0 +1,45 @@
+[package]
+name = "scalpel-bin"
+version = "2.0.0"
+authors = ["Bernhard Schuster <bernhard@ahoi.io>", "Korbinian Maier <korbinian.maier@tum.de>"]
+license = "Apache-2.0 OR MIT"
+readme = "README.md"
+categories = ["development-tools", "command-line-utilities", "embedded"]
+keywords = ["binary", "modify", "hex", "merge", "tool"]
+repository = "https://github.com/drahnr/scalpel"
+description = "binary modification tool, cut, stitch, replace, sign"
+edition = "2018"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+docopt = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+log = "0.4"
+env_logger = "0.5"
+lazy_static = "1.1.0"
+bytes = "0.4.9"
+regex = "^1.0.2"
+failure = "^0.1.2"
+failure_derive = "^0.1.2"
+common_failures = "^0.1.0"
+rand = "0.5"
+ihex = "1.1"
+tree_magic = "0.2"
+
+
+[dev-dependencies]
+rand = "^0.5.5"
+
+[[bin]]
+name = "scalpel"
+path = "src/main.rs"
+plugin = false
+proc-macro = false
+harness = true
+test = true
+
+[profile.release]
+lto = true

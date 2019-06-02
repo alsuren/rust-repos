@@ -1,0 +1,15 @@
+[package]
+name = "cg"
+version = "0.1.0"
+description = "Codegen utility library."
+authors = ["ceram1 <ceram1000@gmail.com>"]
+keywords = ["appcore", "plugin", "codegen"]
+license = "Apache-2.0"
+
+documentation = "https://appcore-project.github.io/rustdoc/rust-cg/cg/"
+homepage = "https://github.com/appcore-project/rust-cg"
+repository = "https://github.com/appcore-project/rust-cg.git"
+
+[lib]
+name = "cg"
+plugin = true

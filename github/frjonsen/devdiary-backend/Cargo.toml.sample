@@ -1,0 +1,42 @@
+[package]
+name = "devdiary-backend"
+version = "0.1.0"
+authors = ["Fredrik Jonsén <fredrikjonsen@gmail.com>"]
+
+[dependencies]
+time = "0.1.36"
+slog = "*"
+slog-stream = "*"
+slog-stdlog = "*"
+config = "*"
+log = "*"
+lazy_static = "0.2.2"
+hyper-native-tls = "0.2"
+router = "*"
+iron-sessionstorage = {git = "https://github.com/frjonsen/iron-sessionstorage" }
+hyper = "0.10.4"
+plugin = "*"
+serde = "0.9.10"
+serde_derive = "0.9.10"
+serde_json = "0.9.8"
+uuid = "*"
+r2d2 = "0.7.1"
+r2d2_postgres = "0.12.0"
+url = "*"
+params = "*"
+iron-cors = {git = "https://github.com/fxbox/iron-cors"}
+
+[dependencies.iron]
+version = "*"
+features = ["native-tls-example"]
+
+[dependencies.logger]
+git = "https://github.com/iron/logger.git"
+
+[dependencies.postgres]
+version = "0.14.0"
+features = ["with-uuid"]
+
+[dev-dependencies]
+yup-hyper-mock = "*"
+iron-test = "*"

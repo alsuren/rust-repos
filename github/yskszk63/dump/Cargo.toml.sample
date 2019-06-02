@@ -1,0 +1,9 @@
+[package]
+name = "dump"
+version = "0.1.0"
+authors = ["yskszk63 <yskszk63@gmail.com>"]
+
+[dependencies]
+hyper = "0.11"
+futures = "0.1"
+dotenv = "0.10"

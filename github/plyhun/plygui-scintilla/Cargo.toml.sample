@@ -1,0 +1,35 @@
+[package]
+name = "plygui-scintilla"
+version = "0.0.1"
+authors = ["Serhii Plyhun <snuk188@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "plygui_scintilla"
+path = "src/lib.rs"
+
+[dependencies]
+plygui-api = {version = "0.0.1", path = "../plygui-api"}
+scintilla-sys = "~4.0"
+lazy_static = "~0.2"
+
+plygui-gtk = {version = "0.0.1", path = "../plygui-gtk", optional = true}
+
+plygui-qt = {version = "0.0.1", path = "../plygui-qt", optional = true}
+
+[target.'cfg(target_os = "windows")'.dependencies]
+plygui-win32 = {version = "0.0.1", path = "../plygui-win32", optional = true}
+winapi = { version = "~0.3", features = ["windef", "minwindef", "winuser", "winbase", "commctrl", "errhandlingapi", "libloaderapi", "wingdi", "combaseapi", "imm", "oleauto", "wincon", "consoleapi", "processenv", "namedpipeapi"], optional = true }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+plygui-cocoa = { version = "0.0.1", path = "../plygui-cocoa", optional = true}
+objc = {version = "~0.2", optional = true}
+
+[features]
+win32 = ["scintilla-sys/win32","winapi","plygui-win32"]
+gtk3 = ["scintilla-sys/gtk3", "plygui-gtk"]
+qt5 = ["scintilla-sys/qt5","plygui-qt"]
+cocoa_ = ["scintilla-sys/cocoa","objc","plygui-cocoa"]
+#https://github.com/rust-lang/cargo/issues/1197
+#native = ["win32", "cocoa_", "gtk3"]
+default = []

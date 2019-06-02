@@ -1,0 +1,8 @@
+[package]
+name = "bitcoin"
+version = "0.1.0"
+authors = ["Steve Bradley <stevebradley@gmail.com>"]
+
+[dependencies]
+bitcoin = { git = "https://github.com/rotwatsb/rust-bitcoin.git", branch = "getaddr" }
+postgres = "0.11"

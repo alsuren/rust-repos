@@ -1,0 +1,12 @@
+[package]
+name = "mrq"
+version = "0.1.0"
+authors = ["jonas"]
+
+[dependencies]
+clap = "2.31.2"
+regex = "0.2"
+log = "0.4.2"
+glob = "0.2.11"
+codespan = "0.1.2"
+codespan-reporting = "0.1.3"

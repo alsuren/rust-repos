@@ -1,0 +1,10 @@
+[package]
+name = "rdf"
+version = "0.1.0"
+authors = ["Mike Sampson <mike@sambodata.com>"]
+license = "MIT"
+
+[dependencies]
+nix = "*"
+colored = "*"
+clap = "*"

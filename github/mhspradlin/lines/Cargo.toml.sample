@@ -1,0 +1,30 @@
+[package]
+name = "lines"
+version = "0.1.0"
+authors = ["Mitch Spradlin <mitch@spradlin.net>"]
+
+[package.metadata.agent]
+name = "LinesAgent"
+description = "Sends basic system health metrics to a metrics aggregator"
+
+[dependencies]
+log = "0.4.1"
+log4rs = "0.8.0"
+rayon = "1.0.0"
+statsd = "0.10.0"
+cadence = "0.13.2"
+lazy_static = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"
+serde-humantime = "0.1.1"
+quicli = "0.2"
+hostname = "0.1"
+regex = "0.2.10"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.4", features = ["pdh"] }
+kernel32-sys = { version = "0.2.2", features = [] }
+
+[target.'cfg(target_os="linux")'.dependencies]
+libc = "0.2.39"

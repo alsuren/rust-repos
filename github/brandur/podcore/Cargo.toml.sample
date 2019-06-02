@@ -1,0 +1,80 @@
+[package]
+name = "podcore"
+version = "0.1.0"
+authors = ["Brandur <brandur@brandur.org>"]
+
+[lib]
+name = "podcore"
+path = "src/lib.rs"
+
+[[bin]]
+name = "podcore"
+path = "src/bin/podcore/main.rs"
+
+[dependencies]
+# Make sure that the versions of `actix` and `actix-web` are compatible with
+# each other, because a second `actix` as a transitive dependency through
+# `actix-web` can cause some serious grief.
+actix = "0.5.5"
+
+# This is safe to relock to a released version for 0.4.10 and greater. I'm just
+# relying on one prerelease feature right now.
+#actix-web = "0.4.9"
+actix-web = { git = 'https://github.com/actix/actix-web' }
+
+bytes = "*"
+chan = "*"
+chrono = "0.4"
+clap = "*"
+diesel = { version = "1.0.0-rc1", features = ["chrono", "postgres", "serde_json"] }
+diesel_migrations = "*"
+error-chain = "*"
+flate2 = "*"
+futures = "0.1"
+horrorshow = "*"
+html5ever = "*"
+http = "*"
+hyper = "0.11"
+hyper-tls = "*"
+isatty = "*"
+juniper = "*"
+lazy_static = "1.0"
+native-tls = "*"
+openssl-probe = "*"
+
+# This is needed to make sure that Cargo statically links against `libssl`.
+# This should happen automatically, but it doesn't.
+#
+# At some point, double-check that this is still the case in the README of
+# emk/rust-musl-builder.
+openssl-sys = "0.9"
+
+percent-encoding = "*"
+quick-xml = "0.10.1"
+r2d2 = "*"
+r2d2-diesel = "1.0.0-rc1"
+
+# 0.5 has been in prerelease forever and contains some useful features. I try
+# not to use non-stable APIs, but lock to it for now.
+rand = "0.5.0-pre.1"
+
+regex = "0.2"
+rust-crypto = "^0.2"
+serde = "1.0.24"
+serde_derive = "*"
+serde_json = "1.0.8"
+serde_urlencoded = "*"
+slog = "*"
+slog-async = "*"
+slog-term = "*"
+time = "*"
+tokio-core = "0.1"
+url = "*"
+uuid = { version = "0.5", features = ["v4"] }
+
+[patch.crates-io]
+# This is needed to handle cross-compilation of libpq.
+#
+# At some point, double-check that this is still the case in the README of
+# emk/rust-musl-builder.
+pq-sys = { git = 'https://github.com/golddranks/pq-sys' }

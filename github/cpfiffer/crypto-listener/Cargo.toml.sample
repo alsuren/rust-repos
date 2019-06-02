@@ -1,0 +1,25 @@
+[package]
+name = "limit-book"
+version = "0.1.0"
+authors = ["Cameron Pfiffer <cpfiffer@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+websocket = "0.22.2"
+serde_json = "1.0"
+serde = "1.0.59"
+serde_derive = "1.0"
+stopwatch = "0.0.7"
+hyper = "0.12"
+reqwest = "0.9.5"
+postgres = {version = "0.15", features = ["with-serde_json"]}
+ctrlc = "3.1.1"
+hyper-native-tls = "0.2.4"
+bus = "2.0.0"
+log = "0.4"
+pretty_env_logger = "0.3"
+
+[workspace]
+members = [
+  "json"
+]

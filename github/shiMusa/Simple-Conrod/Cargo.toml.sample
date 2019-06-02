@@ -1,0 +1,19 @@
+[package]
+name = "conrod_test"
+version = "0.1.0"
+authors = ["shiMusa <fehsef@gmail.com>"]
+
+[dependencies]
+conrod = {git = "https://github.com/PistonDevelopers/conrod.git", features=["winit", "glium"]}
+time = "*"
+num = "*"
+find_folder = "*"
+image = "*"
+
+[lib]
+name = "sabi"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sabi"
+path = "src/bin.rs"

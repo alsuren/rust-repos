@@ -1,0 +1,10 @@
+[package]
+name = "zmqdl"
+version = "0.1.0"
+authors = ["Joey Ezechiëls <joey.ezechiels@gmail.com>"]
+
+[dependencies]
+libc = "0.2"
+libloading = "0.3"
+zmq-sys = "0.8"
+zmq = "0.8"

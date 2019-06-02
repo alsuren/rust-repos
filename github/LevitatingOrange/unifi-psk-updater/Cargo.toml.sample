@@ -1,0 +1,16 @@
+[package]
+name = "unifi-psk-updater"
+version = "0.1.0"
+authors = ["Lennart Vogelsang <lennart@vogelsang.berlin>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+qrcode = "0.9"
+url = "1.7"
+reqwest = "0.9"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.4"
+handlebars = "1.1"
+chrono = { version = "0.4", features = ["serde"] }
+hyper = "0.12"

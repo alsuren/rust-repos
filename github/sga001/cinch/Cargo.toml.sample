@@ -1,0 +1,19 @@
+[package]
+name = "cinch"
+version = "0.1.2"
+authors = ["Sebastian Angel <sebs@cs.utexas.edu>"]
+license = "CC0 1.0 Universal"
+repository = "https://github.com/sga001/cinch"
+
+[dependencies]
+log = ">= 0.3.8"
+env_logger = ">= 0.4.3"
+byteorder = ">= 1.1.0"
+conv = ">= 0.3.3"
+custom_derive = ">= 0.1.7"
+time = ">= 0.1.38"
+rustc-serialize = ">= 0.3.24"
+getopts = ">= 0.2.15"
+
+[dev-dependencies]
+rand = ">= 0.3.16"

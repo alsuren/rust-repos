@@ -1,0 +1,31 @@
+[package]
+name = "mal"
+version = "0.1.0"
+authors = ["Machtan <jako3047@gmail.com>"]
+
+[lib]
+name = "mal"
+path = "src/lib.rs"
+
+[[bin]]
+name = "step0_repl"
+path = "src/step0_repl.rs"
+
+[[bin]]
+name = "step1_read_print"
+path = "src/step1_read_print.rs"
+
+[[bin]]
+name = "step2_eval"
+path = "src/step2_eval.rs"
+
+[[bin]]
+name = "step3_env"
+path = "src/step3_env.rs"
+
+[[bin]]
+name = "step4_if_fn_do"
+path = "src/step4_if_fn_do.rs"
+
+[dependencies]
+error-chain = "0.10"

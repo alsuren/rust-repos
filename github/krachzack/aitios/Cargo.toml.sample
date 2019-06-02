@@ -1,0 +1,22 @@
+[package]
+name = "aitios"
+version = "0.1.0"
+authors = ["PhilippStadler"]
+
+[features]
+default = ["expensive_tests"]
+expensive_tests = []
+
+[dependencies]
+log = "0.3.8"
+cgmath = "0.16.0"
+tobj = "0.1.6"
+rand = "0.3.18"
+image = "0.18.0"
+fux_kdtree = "0.2.0"
+float_extras = "0.1.6"
+nearest_kdtree = { path = "nearest_kdtree" }
+
+[dev-dependencies]
+chrono = "0.4.0"
+simplelog = "0.4.4"

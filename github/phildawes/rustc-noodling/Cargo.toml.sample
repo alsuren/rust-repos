@@ -1,0 +1,18 @@
+[package]
+name = "rustc-noodling"
+version = "0.0.1"
+authors = ["Phil Dawes <phil@phildawes.net"]
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dependencies]
+time = "*"
+
+[profile.release]
+debug = true
+codegen-units=4
+
+[dependencies.mytypeck]
+path="mytypeck"

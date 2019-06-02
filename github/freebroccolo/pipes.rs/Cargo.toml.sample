@@ -1,0 +1,15 @@
+[package]
+
+name = "pipes"
+version = "0.0.1"
+authors = [ "Darin Morrison <darinmorrison+epsilonz@gmail.com>" ]
+description = "Stream-based programming with compositional pipelines in Rust"
+documentation = "http://www.rust-ci.org/epsilonz/pipes.rs/doc/pipes/"
+keywords = ["coroutines", "functional", "generators", "monads", "streaming"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/epsilonz/pipes.rs"
+
+[dependencies]
+
+free = "*"

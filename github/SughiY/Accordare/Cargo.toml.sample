@@ -1,0 +1,20 @@
+[package]
+name = "accordare"
+version = "0.1.0"
+authors = ["SughiY <shiyi.gu@protonmail.com>"]
+build = "build.rs"
+
+[dependencies]
+iron = "*"
+time = "*"
+rustc-serialize = "*"
+router = "*"
+log = "*"
+env_logger = "*"
+regex = "*"
+ws = "*"
+libc = "*"
+hound = "*"
+
+[build-dependencies]
+gcc = "*"

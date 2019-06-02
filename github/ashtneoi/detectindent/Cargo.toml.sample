@@ -1,0 +1,12 @@
+[package]
+name = "detectindent"
+version = "0.1.0"
+authors = ["ashtneoi <ashtneoi@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+num = "0.1.42"
+
+[dependencies.neoilib]
+git = "https://github.com/ashtneoi/neoilib.git"
+branch = "master"

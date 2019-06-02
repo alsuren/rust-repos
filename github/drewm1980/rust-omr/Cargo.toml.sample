@@ -1,0 +1,18 @@
+[package]
+
+name = "rust_omr"
+version = "0.0.1"
+authors = ["Andrew Wagner <drewm1980@gmail.com>"]
+
+#[dependencies.png] # doesn't build
+#git="https://github.com/servo/rust-png"
+
+#[dependencies.stb_image] # doesn't build
+#git="https://github.com/servo/rust-stb-image"
+
+[lib]
+name = "omr"
+path = "src/lib.rs"
+#test = false
+
+

@@ -1,0 +1,12 @@
+[package]
+name = "hello-rust"
+version = "0.1.0"
+authors = ["bcomb <bertrand.combes@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5" # from crates.io
+lodepng = "2.4.2"
+
+#rand = { git = "https://github.com/rust-lang-nursery/rand" } # from online repo
+#bar = { path = "../bar" } # from a path in the local filesystem

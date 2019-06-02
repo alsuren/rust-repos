@@ -1,0 +1,30 @@
+[package]
+name = "qni-connector-ws-rs"
+description = "qni connector for websocket"
+version = "0.2.5"
+authors = ["Riey <creeper844@gmail.com>"]
+keywords = ["qni", "connector"]
+edition = "2018"
+repository = "https://github.com/Riey/qni-connector-ws-rs"
+homepage = "https://github.com/Riey/qni-connector-ws-rs"
+license = "LGPL-3.0"
+readme = "README.md"
+
+exclude = [
+    ".gitignore",
+    ".travis.yml",
+]
+
+[features]
+default = []
+ssl = ["ws/ssl", "openssl"]
+
+[dependencies]
+qni-core-rs = "0.3.1"
+simple-error = "0.1.13"
+ws = "0.7.9"
+log = "0.4.6"
+
+[dependencies.openssl]
+version = "0.10"
+optional = true

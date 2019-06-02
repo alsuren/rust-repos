@@ -1,0 +1,31 @@
+[package]
+name = "umpteenth_anion"
+version = "0.4.0"
+authors = ["Matti Hänninen <matti@mjhanninen.com>"]
+publish = false
+readme = "README.md"
+license-file = "LICENSE.md"
+
+[features]
+default = []
+probe = []
+
+[lib]
+name = "ua"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "MyBot"
+path = "src/bot/main.rs"
+
+[[bin]]
+name = "runner"
+path = "src/runner/main.rs"
+
+
+[dependencies]
+bbt = "0.1"
+data-encoding = "1.1"
+getopts = "0.2"
+md5 = "0.2"
+rand = "0.3"

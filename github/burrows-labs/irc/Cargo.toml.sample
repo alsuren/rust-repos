@@ -1,0 +1,25 @@
+[package]
+name = "irc"
+version = "0.1.0"
+authors = ["Aaron Burrow <burrows@charstarstar.com>"]
+edition = "2018"
+
+[features]
+default = []
+strict = []
+
+[dependencies]
+nom = "4.1.1"
+enumset = "0.3"
+mio = "0.6.16"
+mio-extras = "2.0.5"
+crossbeam-channel = "0.2.6"
+cursive = { path = "vendor/Cursive", default-features = false, features = ["ncurses-backend"] }
+# XXX: termion is pure rust, but causes screen flickering
+# cursive = { path = "vendor/Cursive", default-features = false, features = ["termion-backend"] }
+
+# [dependencies.cursive]
+# path = "../../pkg/Cursive"
+# version = "0.9"
+# default-features = false
+# features = ["termion-backend"]

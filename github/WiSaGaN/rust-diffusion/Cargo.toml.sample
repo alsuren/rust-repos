@@ -1,0 +1,33 @@
+[package]
+name = "diffusion"
+version = "0.8.2"
+authors = ["Wangshan Lu <wisagan@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+documentation = "http://wisagan.github.io/rust-diffusion/diffusion/"
+repository = "https://github.com/WiSaGaN/rust-diffusion"
+description = """
+This is the rust implementation of diffusion library. Diffusion is an effcient message-based data distribution library.
+"""
+
+[dependencies]
+net2 = "0.2"
+
+[[bin]]
+name = "file_reader"
+path = "src/bin/file_reader.rs"
+
+[[bin]]
+name = "file_writer"
+path = "src/bin/file_writer.rs"
+
+[[bin]]
+name = "multicast_reader"
+path = "src/bin/multicast_reader.rs"
+
+[[bin]]
+name = "multicast_writer"
+path = "src/bin/multicast_writer.rs"
+
+[dev-dependencies]
+tempfile = "3.0.3"

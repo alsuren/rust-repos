@@ -1,0 +1,40 @@
+[package]
+name          = "tao-log"
+version       = "0.2.0"
+authors       = ["David Kellum <dek-oss@gravitext.com>"]
+edition       = "2018"
+license       = "MIT/Apache-2.0"
+description   = "Extension macros for output to the log crate."
+documentation = "https://docs.rs/tao-log"
+repository    = "https://github.com/dekellum/tao-log"
+readme        = "README.md"
+keywords      = ["log", "logging"]
+categories    = ["development-tools::debugging"]
+exclude       = [".gitignore", ".travis.yml", "appveyor.yml"]
+build         = "build.rs"
+
+[workspace]
+members = [
+    "test_2015",
+    "test_2018",
+]
+
+[badges]
+travis-ci = { repository="dekellum/tao-log" }
+
+[dependencies]
+log = { version = ">= 0.4.6, < 0.5" }
+
+[dev-dependencies]
+parking_lot = { version = ">= 0.7.1, < 0.8" }
+
+[features]
+std = [ "log/std" ]
+
+[[test]]
+name = "log_v"
+harness = false
+
+[[test]]
+name = "fatal"
+harness = true

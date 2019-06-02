@@ -1,0 +1,14 @@
+[package]
+name = "gomoku"
+version = "0.1.0"
+authors = ["Alexis Merelo <amerelo@student.42.fr>", "oren <oren.carta-lag@hotmail.fr>"]
+
+[dependencies]
+piston = "0.36.0"
+piston2d-graphics = "0.26.0"
+piston2d-opengl_graphics = "0.52.0"
+fps_counter = "1.0.0"
+piston_window = "0.79.0"
+find_folder = "*"
+crossbeam = "*"
+itertools = "*"

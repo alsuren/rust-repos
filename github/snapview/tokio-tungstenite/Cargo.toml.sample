@@ -1,0 +1,51 @@
+[package]
+name = "tokio-tungstenite"
+description = "Tokio binding for Tungstenite, the Lightweight stream-based WebSocket implementation"
+categories = ["web-programming::websocket", "network-programming", "asynchronous", "concurrency"]
+keywords = ["websocket", "io", "web"]
+authors = ["Daniel Abramov <dabramov@snapview.de>", "Alexey Galakhov <agalakhov@snapview.de>"]
+license = "MIT"
+homepage = "https://github.com/snapview/tokio-tungstenite"
+documentation = "https://docs.rs/tokio-tungstenite/0.8.0"
+repository = "https://github.com/snapview/tokio-tungstenite"
+version = "0.8.0"
+
+[features]
+default = ["connect", "tls"]
+connect = ["tokio-dns-unofficial", "tokio-tcp", "stream"]
+tls = ["tokio-tls", "native-tls", "stream", "tungstenite/tls"]
+stream = ["bytes"]
+
+[dependencies]
+futures = "0.1.23"
+tokio-io = "0.1.7"
+
+[dependencies.tungstenite]
+version = "0.8.1"
+default-features = false
+
+[dependencies.bytes]
+optional = true
+version = "0.4.8"
+
+[dependencies.native-tls]
+optional = true
+version = "0.2.0"
+
+[dependencies.tokio-dns-unofficial]
+optional = true
+version = "0.3.1"
+
+[dependencies.tokio-tcp]
+optional = true
+version = "0.1.0"
+
+[dependencies.tokio-tls]
+optional = true
+version = "0.2.0"
+
+[dev-dependencies]
+tokio = "0.1.7"
+url = "1.6.0"
+env_logger = "0.6.1"
+log = "0.4.6"

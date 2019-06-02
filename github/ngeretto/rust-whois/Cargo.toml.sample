@@ -1,0 +1,8 @@
+[package]
+name = "rust-whois"
+version = "0.2.0"
+authors = ["Nicola Geretto <nicolagr301@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+docopt = "1"

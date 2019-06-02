@@ -1,0 +1,15 @@
+[package]
+name = "server"
+version = "0.1.0"
+authors = ["Tonis <tonis.anton18@gmail.com>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+serde = "*"
+serde_json = "*"
+mongodb = "*"
+bson = "*"
+
+[dependencies.bodyparser]
+git = "https://github.com/iron/body-parser.git"

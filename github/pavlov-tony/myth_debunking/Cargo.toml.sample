@@ -1,0 +1,9 @@
+[package]
+name = "myth_debunking"
+version = "0.1.0"
+authors = ["Anton Pavlov <pavlov.tony@gmail.com>"]
+
+[dependencies]
+select = "0.4.2"
+reqwest = "0.8.2"
+regex = "0.2.5"

@@ -1,0 +1,34 @@
+[package]
+name = "dmv"
+version = "0.1.0"
+authors = ["Mike Murphy <dmv@sleepymurph.com>"]
+description = "A distributed version-control system for media files"
+build = "build.rs"
+
+[lib]
+name = "dmv"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dmv"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+byteorder = "0.5"
+clap = {version = "2", features = ["yaml"]}
+env_logger = "0.3"
+error-chain = "0.7.2"
+filebuffer = "0.1"
+lazy_static = "0.2"
+log = "0.3"
+regex = "0.2"
+rust-crypto = "0.2"
+rustc-serialize = "0.3"
+
+disk_backed = { path = "disk_backed" }
+human_readable = { path = "human_readable" }
+wrapper_struct = { path = "wrapper_struct" }
+
+[dev-dependencies]
+testutil = { path = "testutil" }

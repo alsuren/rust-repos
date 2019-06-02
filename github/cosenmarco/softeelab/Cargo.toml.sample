@@ -1,0 +1,15 @@
+[package]
+name = "softeelab"
+version = "0.1.0"
+authors = ["Marco Cosentino <cosentino.ma@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4.6"
+simple_logger = "1.0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml="0.8"
+yaml-rust = "0.4.2"
+clap = "2.32.0"
+time = "0.1"

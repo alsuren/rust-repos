@@ -1,0 +1,27 @@
+[package]
+
+name = "python_mixin"
+version = "0.0.2"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+homepage = "https://github.com/huonw/python_mixin"
+repository = "https://github.com/huonw/python_mixin"
+documentation = "https://github.com/huonw/python_mixin#python_mixin"
+license = "MIT/Apache-2.0"
+keywords = ["python", "plugin", "code-generation"]
+readme = "README.md"
+description = """
+Deprecated in favour of `external_mixin`. Use Python to generate your
+Rust, right in your Rust.
+"""
+
+[features]
+default = []
+
+# allow testing the various error handling paths, via the
+# examples/failure.rs test
+compile_error = []
+
+[lib]
+name = "python_mixin"
+plugin = true

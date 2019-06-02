@@ -1,0 +1,13 @@
+[package]
+name = "pomodoro"
+version = "0.1.0"
+authors = ["Imre Dávid Kosztka <kosztkaid@gmail.com>"]
+
+[dependencies]
+conrod = "*"
+piston_window = "0.34.0"
+find_folder = "*"
+[target.i686-unknown-linux-gnu.dependencies]
+notify-rust = "*"
+[target.x86_64-unknown-linux-gnu.dependencies]
+notify-rust = "*"

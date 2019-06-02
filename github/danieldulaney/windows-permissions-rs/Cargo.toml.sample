@@ -1,0 +1,20 @@
+[package]
+name = "windows-permissions"
+version = "0.1.0"
+authors = ["Daniel Dulaney <dan@dulaney.xyz>"]
+edition = "2018"
+
+[dependencies]
+winapi = { version = "0.3.6", features = [
+    "aclapi",
+    "handleapi",
+    "sddl",
+    "securitybaseapi",
+    "winerror",
+    "winnt",
+    ]}
+bitflags = "1"
+
+[dev-dependencies]
+itertools = "0.8"
+tempfile = "3"

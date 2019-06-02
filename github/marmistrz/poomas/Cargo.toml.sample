@@ -1,0 +1,13 @@
+[package]
+name = "poomas"
+version = "0.1.0"
+authors = ["Marcin Mielniczuk <marmistrz.dev@zoho.eu>"]
+
+[dependencies]
+lettre = "0.6"
+time = "0.1"
+serde = "1"
+serde_derive = "1"
+toml = "0.4"
+clap = "2"
+failure = "0.1"

@@ -1,0 +1,9 @@
+[package]
+name = "willichmirnocheinematekaufen"
+version = "0.1.0"
+authors = ["David Mehren <dmehren1@gmail.com>"]
+
+[dependencies]
+reqwest = "0.8.5"             # higher level HTTP client library
+serde = "1.0.27"                      # A generic serialization/deserialization framework
+serde_derive = "1.0.27"               # Macros 1.1 implementation of #[derive(Serialize, Deserialize)]

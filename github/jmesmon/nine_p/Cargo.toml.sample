@@ -1,0 +1,14 @@
+[package]
+name = "nine-p"
+version = "0.0.0"
+authors = ["Cody P Schafer <dev@codyps.com>"]
+
+#[features]
+#default = [ "tokio" ]
+#tokio = [ "tokio-core", "futures" ]
+
+[dependencies]
+futures = "*"
+tokio-core = "*"
+tokio-service = "*"
+tokio-proto = "*"

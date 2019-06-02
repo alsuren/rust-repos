@@ -1,0 +1,15 @@
+#
+# Cargo.toml
+#
+# Created by Oleksandr Manenko on 30-04-2019
+# Copyright © 2019 Oleksandr Manenko. All rights reserved.
+#
+
+[workspace]
+
+members = [
+    "assets",
+    "gfx",
+    "gfx_derive",
+    "molfar",
+]

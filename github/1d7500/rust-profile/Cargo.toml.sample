@@ -1,0 +1,22 @@
+[package]
+name = "rust_profile"
+version = "0.1.0"
+authors = ["Lv9"]
+build = "build.rs"
+
+[dependencies]
+lazy_static = "*"
+
+[dev-dependencies]
+compiletest_rs = "0.2"
+lazy_static = "*"
+
+[lib]
+name = "rust_profile"
+plugin = true
+
+[build-dependencies]
+yansi = "0.3"
+version_check = "0.1.3"
+
+# http://manishearth.github.io/rust-internals-docs

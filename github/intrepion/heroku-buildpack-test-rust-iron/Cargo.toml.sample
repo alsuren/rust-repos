@@ -1,0 +1,7 @@
+[package]
+name = "intrepion-heroku-rust-iron"
+version = "0.1.0"
+authors = ["Oliver Forral <intrepion@gmail.com>"]
+
+[dependencies]
+iron = "*"

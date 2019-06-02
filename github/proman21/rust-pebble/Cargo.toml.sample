@@ -1,0 +1,8 @@
+[package]
+name = "pebble"
+version = "0.1.0"
+authors = ["synthsym <snoopyk921@gmail.com>"]
+
+[dependencies.libc]
+version = "0.2.12"
+default-features = false

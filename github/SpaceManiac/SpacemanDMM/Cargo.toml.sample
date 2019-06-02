@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "src/cli",
+    "src/dmdoc",
+    "src/dreamchecker",
+    "src/dreammaker",
+    "src/editor",
+    "src/interval-tree",
+    "src/langserver",
+    "src/tools",
+]
+
+[profile.dev]
+opt-level = 2
+
+[profile.release]
+lto = true

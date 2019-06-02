@@ -1,0 +1,13 @@
+[package]
+name = "money"
+version = "0.1.0"
+authors = ["kekonen <daniil.naumetc@gmail.com>"]
+
+[dependencies]
+regex = "1"
+chrono = "0.4"
+clap = "2.32.0"
+
+[[bin]]
+name = "money"
+path = "src/main.rs"

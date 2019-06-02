@@ -1,0 +1,13 @@
+[package]
+name = "clink"
+version = "0.1.0"
+authors = ["Zack Mullaly <zsck@riseup.net>"]
+
+[dependencies]
+clap = "^2.21"
+git2 = "^0.6"
+walkdir = "^1.0"
+serde = "^0.9"
+serde_json = "^0.9"
+serde_derive = "^0.9"
+ansi_term = "^0.9"

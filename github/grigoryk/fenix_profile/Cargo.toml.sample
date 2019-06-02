@@ -1,0 +1,20 @@
+[package]
+name = "fenix_profile"
+version = "0.1.0"
+authors = ["Grisha Kruglov <gkruglov@mozilla.com>"]
+
+[dependencies]
+chrono = "0.4"
+failure = "0.1.1"
+libc = "0.2.41"
+time = "0.1.38"
+
+[dependencies.mentat]
+path = "/home/grisha/Code/mentat"
+# git = "https://github.com/mozilla/mentat.git"
+branch = "master"
+
+[dependencies.mentat_ffi]
+path = "/home/grisha/Code/mentat/ffi"
+# git = "https://github.com/mozilla/mentat.git"
+branch = "master"

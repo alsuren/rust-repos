@@ -1,0 +1,8 @@
+[package]
+name = "vm"
+version = "0.1.0"
+authors = ["TheLocust3 <jake.kinsella@gmail.com>"]
+
+[dependencies]
+emu = { path = "./emu" }
+asm = { path = "./asm" }

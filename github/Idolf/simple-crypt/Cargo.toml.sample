@@ -1,0 +1,22 @@
+[package]
+name = "simple-crypt"
+version = "0.1.0"
+authors = ["Mathias Svensson <freaken@freaken.dk>"]
+
+[dependencies]
+clap = "2.29.2"
+failure = "0.1.1"
+sodiumoxide = "0.0.16"
+structopt = "0.1.7"
+structopt-derive = "0.1.6"
+tempfile = "2.2.0"
+static_assertions = "0.2.5"
+simple-crypt-daemon = { path = "simple-crypt-daemon", optional = true }
+simple-crypt-disk-formats = { path = "simple-crypt-disk-formats" }
+simple-crypt-util = { path = "simple-crypt-util" }
+
+[dev-dependencies]
+rand = "0.4.2"
+
+[features]
+default = ["simple-crypt-daemon"]

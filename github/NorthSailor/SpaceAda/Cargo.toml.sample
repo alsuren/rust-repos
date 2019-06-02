@@ -1,0 +1,15 @@
+[package]
+name = "spadac"
+version = "0.0.1"
+authors = ["Jason P. Barmparesos <jason.barmparesos@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+peg = { version = "*" }
+
+[dependencies]
+regex = "*"
+docopt = "*"
+rustc-serialize = "*"
+llvm-alt = "*"
+llvm-sys = "*"

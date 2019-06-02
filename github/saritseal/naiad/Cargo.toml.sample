@@ -1,0 +1,21 @@
+[package]
+name = "naiad"
+version = "0.1.0"
+authors = ["sarit.seal <sarit.seal@gmail.com>"]
+members=[
+    "graphx",
+    "stats",
+    "graph"
+]
+
+[dependencies]
+graphx = {path="./graphx"}
+graph = {path="./graph"}
+stats = {path="./stats"}
+
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+opt-level = 3

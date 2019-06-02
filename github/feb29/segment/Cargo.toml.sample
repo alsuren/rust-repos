@@ -1,0 +1,20 @@
+[package]
+name = "segment"
+version = "0.1.0"
+authors = ["Kohei Watanabe <xbeef29@gmail.com>"]
+readme  = "README.md"
+license = "Unlicense/MIT"
+repository  = "https://github.com/feb29/segment"
+keywords    = ["segment"]
+categories  = []
+description = ""
+publish = false
+
+[dependencies]
+compacts = "0.7"
+parking_lot = "0.5"
+
+[dependencies.rocksdb]
+git = "https://github.com/pingcap/rust-rocksdb.git"
+[dependencies.linked-hash-map]
+git = "https://github.com/feb29/linked-hash-map.git"

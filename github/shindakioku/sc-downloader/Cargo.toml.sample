@@ -1,0 +1,10 @@
+[package]
+name = "sc-downloader"
+version = "0.1.0"
+authors = ["shindakioku <shindakioku@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
+openssl = { version = "0.10", features = ["vendored"] }
+reqwest = "0.9.12"

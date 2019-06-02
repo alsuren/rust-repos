@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "./hitman-constants",
+    "./hitman-kraken",
+    "./hitman-gym",
+    "./hitman-rpkg",
+    "./hitman-types",
+    "./hitman-xtea",
+    "./utils/h6xtea",
+]

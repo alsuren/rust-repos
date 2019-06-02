@@ -1,0 +1,24 @@
+[package]
+name = "wallpaper"
+version = "2.0.1"
+authors = ["reujab <reujab@gmail.com>"]
+description = "Gets and sets the desktop wallpaper/background."
+repository = "https://github.com/reujab/wallpaper.rs"
+readme = "readme.md"
+keywords = ["desktop", "wallpaper", "background"]
+categories = ["api-bindings"]
+license = "Unlicense"
+
+[target.'cfg(any(unix, windows))'.dependencies]
+dirs = "1.0"
+reqwest = "0.9"
+url = "1.7"
+
+[target.'cfg(unix)'.dependencies]
+enquote = "1"
+
+[target.'cfg(all(unix, not(target_os = "macos")))'.dependencies]
+rust-ini = "0.12"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser"] }

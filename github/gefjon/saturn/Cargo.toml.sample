@@ -1,0 +1,35 @@
+[package]
+name = "saturn"
+version = "0.1.0"
+authors = ["Arthur Goldman <arthur@goldman-tribe.org>"]
+edition = "2018"
+
+[[bin]]
+name = "kernel8"
+path = "src/main.rs"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+cortex-a = "2.4"
+r0 = "0.2.2"
+register = "0.3.2"
+spin = "0.4.10"
+
+[dependencies.failure]
+version = "0.1"
+default_features = false # no `std`
+features = ["derive"]
+
+[dependencies.saturn_tagging]
+version = "0.2.1"
+git = "https://github.com/gefjon/saturn_tagging"
+features = ["no_std"]
+
+[dependencies.lazy_static]
+version = "1.2.0"
+features = ["spin_no_std"]

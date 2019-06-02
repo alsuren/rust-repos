@@ -1,0 +1,10 @@
+[package]
+
+name = "rust-cuckoo-bloom-filter"
+version = "0.0.1"
+authors = ["Alfredo Di Napoli <alfredo.dinapoli@gmail.com>"]
+
+[lib]
+
+name = "cuckoo-bloom-filter"
+path = "src/lib.rs"

@@ -1,0 +1,67 @@
+[package]
+name = "crypto_pals"
+version = "0.1.0"
+authors = ["Carl Johan Gustavsson <cjg@prng.se>"]
+edition = "2018"
+
+[lib]
+name = "challenge"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hex"
+path = "src/hex.rs"
+
+[[bin]]
+name = "xor"
+path = "src/xor_bin.rs"
+
+[[bin]]
+name = "xor_search_single_char"
+path = "src/xor_search_single_char_bin.rs"
+
+[[bin]]
+name = "find_single_single_char_xor_string"
+path = "src/find_single_char_xor_string_bin.rs"
+
+[[bin]]
+name = "encrypt_xor"
+path = "src/encrypt_xor_bin.rs"
+
+[[bin]]
+name = "break_repeating_key_xor"
+path = "src/break_repeating_key_xor_bin.rs"
+
+[[bin]]
+name = "aes_ecb"
+path = "src/aes_ecb_bin.rs"
+
+[[bin]]
+name = "aes_cbc"
+path = "src/aes_cbc_bin.rs"
+
+[[bin]]
+name = "find_aes_ecb"
+path = "src/find_aes_ecb_bin.rs"
+
+[[bin]]
+name = "oracle_ecb"
+path = "src/oracle_bin.rs"
+
+[[bin]]
+name = "ecb_byte_at_a_time"
+path = "src/ecb_byte_at_a_time_bin.rs"
+
+[[bin]]
+name = "ecb_cut_n_paste"
+path = "src/ecb_cut_n_paste_bin.rs"
+
+[[bin]]
+name = "gen_key"
+path = "src/gen_key_bin.rs"
+
+
+[dependencies]
+itertools="0.5.8"
+openssl = "0.9.19"
+rand = "0.3"

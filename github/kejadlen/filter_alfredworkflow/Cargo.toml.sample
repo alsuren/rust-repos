@@ -1,0 +1,14 @@
+[package]
+name = "filter_alfredworkflow"
+version = "0.1.0"
+authors = ["Alpha Chen <alpha.chen@gmail.com>"]
+
+[[bin]]
+name = "alfredworkflow_clean"
+path = "src/bin/clean.rs"
+
+[dependencies]
+plist = "0.0.13"
+
+[profile.release]
+panic = "abort"

@@ -1,0 +1,9 @@
+[package]
+name = "suro"
+version = "0.0.1"
+authors = ["Matias Kotlik (mdkotlik) <mdkotlik@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1.1.6"
+clap = "2.33.0"

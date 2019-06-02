@@ -1,0 +1,18 @@
+[package]
+name = "condo-r"
+version = "0.1.0"
+authors = ["Roma Sokolov <sokolov.r.v@gmail.com>"]
+
+[dependencies]
+hyper = "*"
+url = "*"
+argparse = "*"
+log = "0.3"
+log4rs = "0.3.3"
+serde = "*"
+serde_macros = "*"
+nix = "*"
+
+[dependencies.serde_json]
+git = "https://github.com/little-arhat/json"
+branch = "feature-parse-stream"

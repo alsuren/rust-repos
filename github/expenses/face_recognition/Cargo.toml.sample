@@ -1,0 +1,21 @@
+[package]
+name = "face_recognition"
+version = "0.1.0"
+authors = ["Ashley <expenses@airmail.cc>"]
+build = "build.rs"
+
+[dependencies]
+cpp = "*"
+image = "*"
+
+[build-dependencies]
+cpp_build = "*"
+reqwest = {version = "*", optional = true}
+bzip2 = {version = "*", optional = true}
+
+[dev-dependencies]
+lazy_static = "*"
+
+[features]
+default = []
+download-models = ["reqwest", "bzip2"]

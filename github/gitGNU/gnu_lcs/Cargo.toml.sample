@@ -1,0 +1,14 @@
+[package]
+name = "lcs"
+version = "0.1.0"
+authors = ["gianmarco"]
+
+[[bin]]
+name = "lcs"
+doc = false
+
+[dependencies]
+serial = "0.3.4"
+gtk = "0.1.2"
+gdk = "0.5.2"
+gtk-sys = "0.3.3"

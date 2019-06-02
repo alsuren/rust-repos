@@ -1,0 +1,21 @@
+[package]
+name = "cookie-jar"
+version = "0.2.0"
+authors = ["Curtis Millar <curtis@curtism.me>"]
+description = "Implementation of a RFC6265 compliant cookie store."
+repository = "https://github.com/xurtis/cookie-jar"
+keywords = [ "cookie", "client", "http" ]
+categories = [
+	"web-programming::http-client"
+]
+license = "ISC"
+
+[badges]
+travis-ci = { repository = "xurtis/cookie-jar", branch = "master" }
+
+[dependencies]
+error-chain = "0.11.0"
+time = "0.1.39"
+url = "1.7"
+idna = "0.1.4"
+pretty_assertions = "0.5.1"

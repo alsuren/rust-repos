@@ -1,0 +1,26 @@
+[package]
+name = "omn_labs"
+version = "0.3.0"
+authors = ["Owen Nelson <onelson@gmail.com>"]
+
+[lib]
+name = "omn_labs"
+path = "src/lib.rs"
+
+[dependencies]
+specs = "0.9"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+time = "*"
+clippy = {version = "*", optional = true}
+
+[dependencies.ggez]
+version = "0.3"
+features = ["cargo-resource-root"]
+
+[dev-dependencies]
+rand = "*"
+
+[features]
+default = []

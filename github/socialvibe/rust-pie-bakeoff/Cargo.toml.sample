@@ -1,0 +1,21 @@
+[package]
+name = "bakeoff"
+version = "0.1.0"
+authors = ["Kenneth Hwang <ken@truex.com>"]
+
+[features]
+prod = []
+
+[dependencies]
+iron = "*"
+router = "*"
+hyper = "*"
+persistent = "*"
+rustc-serialize = "*"
+redis = "*"
+r2d2 = "*"
+r2d2_redis = "= 0.3.1"
+url = { git = "https://github.com/servo/rust-url" }
+mustache = "*"
+bit-vec = "*"
+num_cpus = "*"

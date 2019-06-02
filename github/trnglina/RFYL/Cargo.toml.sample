@@ -1,0 +1,24 @@
+[package]
+name = "rfyl"
+version = "0.3.0"
+authors = ["trnglina <contact@trnglina.com>"]
+description = "A dice roller accepting dice notation."
+documentation = "https://github.com/trnglina/rfyl/blob/master/README.MD"
+homepage = "https://github.com/trnglina/rfyl"
+repository = "https://github.com/trnglina/rfyl"
+keywords = ["dice", "rpg", "roll"]
+categories = ["games", "parsing"]
+license = "CC0-1.0"
+
+[lib]
+name = "rfyl"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rfyl"
+path = "src/bin.rs"
+doc = false
+
+[dependencies]
+rand = "0.4"
+time = "0.1"

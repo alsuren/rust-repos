@@ -1,0 +1,21 @@
+[package]
+name = "orf"
+version = "0.1.0"
+authors = ["Steve.H <rundrop1@zoho.com>"]
+license = "MIT"
+description = "Translates nucleotide sequences to Amino Acid sequences. (RNA and DNA, shifts reading frames and reverses)"
+repository = "https://github.com/rundrop1/transcriptome_translator"
+documentation = "https://github.com/rundrop1/transcriptome_translator/README.md"
+
+[[bin]]
+name = "orf"
+doc = false
+
+[dependencies]
+nom = "1.2.3"
+memmap = "0.2.3"
+phf = "0.7.12"
+phf_macros = "0.7.12"
+scoped_threadpool = "0.1"
+monster = "0.1.21"
+num_cpus = "0.2.11"

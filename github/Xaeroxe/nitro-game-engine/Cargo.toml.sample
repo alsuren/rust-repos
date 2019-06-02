@@ -1,0 +1,27 @@
+[package]
+name = "nitro"
+version = "0.9.1"
+authors = ["Jacob Kiesel <kieseljake@gmail.com>"]
+description = "A game engine built in Rust.  This crate is no longer maintained."
+license = "MIT/Apache-2.0"
+repository = "https://github.com/Xaeroxe/nitro-game-engine"
+build = "build.rs"
+exclude = ["docs/*"]
+
+[dependencies.sdl2]
+version = "0.29.0"
+features = ["image", "mixer"]
+
+[dependencies]
+fnv = "1.0.5"
+unborrow = "0.3.0"
+enum_primitive = "0.1.0"
+num = "0.1.0"
+rand = "0.3.0"
+nphysics2d = "0.6.0"
+nalgebra = "0.11.0"
+ncollide = "0.11.0"
+serde = "1.0.0"
+serde_derive = "1.0.0"
+bincode = "0.8.0"
+chrono = "0.3.0"

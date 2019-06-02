@@ -1,0 +1,16 @@
+[package]
+name = "time-progress-slack-bot"
+version = "0.1.0"
+authors = ["Piotr Sarnacki <drogus@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4"
+rocket_contrib = "0.4"
+chrono = "0.4"
+redis = "0.10.0"
+reqwest = "0.9.12"
+
+[[bin]]
+name = "cron"
+path = "src/cron/bin/main.rs"

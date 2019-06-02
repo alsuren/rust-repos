@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "converter",
+    "bin",
+    "wasm",
+]
+
+[profile.release]
+opt-level = 'z'
+lto = true
+panic = 'abort'

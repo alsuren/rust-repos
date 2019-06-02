@@ -1,0 +1,19 @@
+[package]
+name = "dinzai-datni"
+version = "0.5.2"
+authors = ["xmeta <xmeta@users.noreply.github.com>"]
+description = "Cryptocurrency ticker library for Rust."
+homepage = "https://github.com/xmeta/dinzai-datni"
+repository = "https://github.com/xmeta/dinzai-datni.git"
+license-file = "LICENSE-MIT"
+readme = "README.asciidoc"
+keywords = ["ticker", "bitcoin"]
+
+[dependencies]
+hyper = "0.7"
+rustc-serialize = "0.3"
+
+[features]
+# no features by default
+default = []
+nightly = []

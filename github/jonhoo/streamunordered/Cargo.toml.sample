@@ -1,0 +1,26 @@
+[package]
+name = "streamunordered"
+version = "0.4.1"
+authors = ["Jon Gjengset <jon@thesquareplanet.com>"]
+license = "MIT/Apache-2.0"
+
+description = "An efficient async stream multiplexer"
+readme = "README.md"
+
+homepage = "https://github.com/jonhoo/streamunordered"
+repository = "https://github.com/jonhoo/streamunordered.git"
+
+categories = ["asynchronous"]
+
+[badges]
+travis-ci = { repository = "jonhoo/streamunordered" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+futures = "0.1.21"
+slab = "0.4.0"
+
+[dev-dependencies]
+tokio = "0.1"
+async-bincode = "0.4.3"
+bincode = "1.0.0"

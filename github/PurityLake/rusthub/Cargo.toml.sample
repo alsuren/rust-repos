@@ -1,0 +1,8 @@
+[package]
+name = "rusthub"
+version = "0.1.0"
+authors = ["brianerikson <briankerikson@gmail.com>"]
+
+[dependencies]
+hyper = "0.9.9"
+rustc-serialize = "0.3.19"

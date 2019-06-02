@@ -1,0 +1,30 @@
+[package]
+name = "depot"
+version = "0.1.0"
+authors = ["cannon <cannon10100@gmail.com>"]
+
+[dependencies]
+lazy_static = "1.0.0"
+zmq = "0.8"
+time = "0.1"
+iron = "0.6"
+router = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+yaml-rust = "0.3"
+params = "*"
+protobuf = "*"
+hyper = "0.10"
+
+[dependencies.uuid]
+version = "*"
+features = ["serde", "v4"]
+
+[[bin]]
+name = "depot_dispatcher"
+path = "src/depot_dispatcher.rs"
+
+[[bin]]
+name = "depot_worker"
+path = "src/depot_worker.rs"

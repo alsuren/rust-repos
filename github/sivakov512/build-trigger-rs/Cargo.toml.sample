@@ -1,0 +1,10 @@
+[package]
+name = "build-trigger-rs"
+version = "0.1.0"
+authors = ["Nikita Sivakov <sivakov512@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"

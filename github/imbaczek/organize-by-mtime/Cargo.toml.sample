@@ -1,0 +1,13 @@
+[package]
+authors = ["Marek Baczynski <imbaczek@gmail.com>"]
+license = "MIT"
+name = "organize-by-mtime"
+version = "1.0.1"
+
+[dependencies]
+chrono = "0.3"
+docopt = "0.7"
+filetime = "0.1"
+glob = "0.2"
+rustc-serialize = "0.3"
+walkdir = "1.0"

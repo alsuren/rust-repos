@@ -1,0 +1,16 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Nik Klassen <me@nikklassen.ca>"]
+
+[profile.dev] 
+opt-level = 0 
+debug = true 
+debug-assertions = true
+
+[dependencies]
+winapi = "0.2.*"
+user32-sys = "0.2.*"
+kernel32-sys = "0.2.*"
+gdi32-sys = "0.2.*"
+rayon = "0.9.0"

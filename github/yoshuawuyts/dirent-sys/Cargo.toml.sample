@@ -1,0 +1,9 @@
+[package]
+name = "dirent-sys"
+description = "Generated bindings for Linux <dirent.h>"
+license = "Apache-2.0"
+version = "0.2.0"
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+
+[build-dependencies]
+bindgen = "0.33.1"

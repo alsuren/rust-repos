@@ -1,0 +1,18 @@
+[workspace]
+members = [
+    "bellman",
+    "ff",
+    "group",
+    "librustzcash",
+    "pairing",
+    "sapling-crypto",
+    "zcash_primitives",
+    "zcash_proofs",
+    "zcash_wallet",
+    "zip32",
+]
+
+[profile.release]
+lto = true
+panic = 'abort'
+codegen-units = 1

@@ -1,0 +1,10 @@
+[package]
+name = "plot-eth-scoring"
+version = "0.1.0"
+authors = ["Andrew Plaza <aplaza@liquidthink.net>"]
+edition = "2018"
+
+[dependencies]
+plotlib = "0.3.0"
+ethereum-types = "0.4.0"
+

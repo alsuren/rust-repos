@@ -1,0 +1,8 @@
+[package]
+name = "chip8"
+version = "0.0.2"
+authors = ["smt923 <smtea923@gmail.com>"]
+
+[dependencies]
+rand = "0.3.16"
+sdl2 = "0.30.0"

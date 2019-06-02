@@ -1,0 +1,9 @@
+[package]
+name = "xjtlu-timetable"
+version = "0.1.0"
+authors = ["Peter Cai <peter@typeblog.net>"]
+
+[dependencies]
+base64 = "0.6"
+chrono = "0.4"
+stdweb = "0.4"

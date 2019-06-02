@@ -1,0 +1,20 @@
+[package]
+name = "rustafarian"
+version = "0.2.0"
+edition = "2018"
+authors = ["Roberto Di Remigio <roberto.diremigio@gmail.com>"]
+
+[lib]
+name = "rustafarian"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.6.0-alpha.2"
+
+[features]
+default = ["pyo3/extension-module"]
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = true

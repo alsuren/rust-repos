@@ -1,0 +1,18 @@
+[package]
+name = "coroutines"
+version = "0.2.0"
+authors = ["losfair <zhy20000919@hotmail.com>"]
+description = "High performance coroutine library with native experience"
+license = "LGPL-3.0"
+repository = "https://github.com/losfair/rust-coroutines"
+readme = "README.md"
+keywords = ["coroutine", "concurrent", "async", "server", "event"]
+
+[badges]
+travis-ci = { repository = "losfair/rust-coroutines" }
+
+[dependencies]
+
+[dependencies.spin]
+version = "0.4"
+default-features = false

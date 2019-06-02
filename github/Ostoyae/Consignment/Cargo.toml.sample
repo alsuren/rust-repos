@@ -1,0 +1,58 @@
+[package]
+name = "consignment"
+license = "Apache-2.0"
+version = "0.2.0"
+authors = ["Martin <msmith3dart@icloud.com>"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[workspace]
+members = ["proto_buf"]
+
+[dependencies]
+grpcio = "0.3.0"
+grpcio-sys = "0.2.3"
+libc = "0.2"
+futures = "^0.1.15"
+protobuf = { version = "~2.0", optional = true }
+log = "0.4"
+dotenv = "0.11.0"
+dotenv_codegen = "0.11.0"
+serde =  "~1"
+serde_derive =  "~1"
+serde_json = "~1"
+slog = "2.0"
+slog-async = "2.1"
+slog-stdlog = "3.0"
+slog-scope = "4.0"
+slog-term = "2.2"
+grpcio-proto = {path="proto_buf" , version = "~0.2"}
+
+[features]
+default = ["protobuf-codec"]
+protobuf-codec = ["protobuf"]
+secure = ["grpcio-sys/secure"]
+
+
+[dev-dependencies]
+grpcio-proto = {path="proto_buf" , version = "~0.2"}
+serde_json = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+rand = "0.3"
+slog = "2.0"
+slog-async = "2.1"
+slog-stdlog = "3.0"
+slog-scope = "4.0"
+slog-term = "2.2"
+
+
+[[bin]]
+name = "consignment-server"
+path="./src/bin/server.rs"
+
+
+[[bin]]
+name= "consignment-cli"
+path="./src/bin/client.rs"

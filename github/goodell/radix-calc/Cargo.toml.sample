@@ -1,0 +1,25 @@
+[package]
+name = "radix-calc"
+version = "1.0.3"
+authors = [ "Dave Goodell <dave@goodell.io>" ]
+license = "MIT"
+readme = "README.md"
+keywords = [ "calculator", "arithmetic", "hex" ]
+categories = [ "command-line-utilities" ]
+repository = "https://github.com/goodell/radix-calc"
+description = "a CLI programmer's calculator written in Rust, with an Alfred workflow"
+build = "build.rs"
+exclude = [
+    "img/*",
+    "alfred/*",
+]
+
+[badges]
+travis-ci = { repository = "goodell/radix-calc", branch = "master" }
+
+[build-dependencies]
+peg = { version = "0.5" }
+
+[dependencies]
+docopt = "0.7"
+rustc-serialize = "0.3"

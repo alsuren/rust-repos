@@ -1,0 +1,20 @@
+[package]
+name = "exchange"
+version = "0.1.0"
+authors = ["dallyshalla <dallyshalla@gmail.com>"]
+
+[lib]
+name = "exchangelib"
+
+[[bin]]
+name = "main"
+path = "src/examples/main.rs"
+
+[dependencies]
+gtk = "*"
+glib = "*"
+rustc-serialize = "*"
+bitcoin = "*"
+sodiumoxide = "*"
+secp256k1 = "*"
+rand = "*"

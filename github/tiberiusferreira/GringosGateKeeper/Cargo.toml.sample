@@ -1,0 +1,26 @@
+[package]
+name = "Gate"
+version = "0.1.0"
+authors = ["Tiberio D A R Ferreira <tiberiusferreira@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "gate"
+path = "src/main.rs"
+
+[dependencies]
+flexi_logger = "*"
+log = "*"
+failure = "*"
+log-panics = "*"
+diesel = { version = "*", features = ["postgres"] }
+dotenv = "*"
+crossbeam-channel = "*"
+sysfs_gpio = "*"
+chrono = "*"
+erased-serde = "*"
+[dependencies.teleborg]
+git = "https://github.com/tiberiusferreira/teleborg.git"
+branch = "fix_getting_updates"
+#path = "../teleborg"
+

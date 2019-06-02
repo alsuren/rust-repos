@@ -1,0 +1,10 @@
+[package]
+name = "TinyChain"
+version = "0.1.0"
+authors = ["kayryu <lukayryu@gmail.com>"]
+
+[dependencies]
+ctrlc = "*"
+
+[profile.release]
+lto = true

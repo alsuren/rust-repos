@@ -1,0 +1,24 @@
+[package]
+name = "rmosaic"
+version = "0.1.0"
+authors = ["ipost <post.isaac@gmail.com>"]
+
+[dependencies]
+image = "*"
+clap = "*"
+time = "*"
+rayon = "*"
+md5 = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+
+[[bin]]
+name = "rmosaic"
+path = "src/main.rs"
+
+# TODO: support for more average color points per image
+# TODO: different filtertypes?
+# TODO: different tile shapes?
+# TODO: different color closeness algo?
+# TODO: update index only mode?

@@ -1,0 +1,18 @@
+[package]
+name = "steg"
+version = "0.1.6"
+authors = ["Peter Heesterman <heesterman.peter@gmail.com>"]
+
+description = "Command line steganography tool"
+repository = "https://github.com/peterheesterman/lsb_png_steganography"
+readme = "./README.md"
+keywords = ["steganography", "steg", "hide", "reveal"]
+categories = ["command-line-utilities", "encoding", "multimedia::images", "text-processing"]
+license = "MIT"
+
+
+[dependencies]
+clap = '2.32'
+lsb_png_steganography = '0.1.0'
+whitespace_text_steganography = '0.2.1'
+lsb_text_png_steganography = '0.1.1'

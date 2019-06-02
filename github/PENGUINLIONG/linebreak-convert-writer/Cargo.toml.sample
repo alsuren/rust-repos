@@ -1,0 +1,10 @@
+[package]
+name = "linebreak-convert-writer"
+version = "0.1.0"
+authors = ["PENGUINLIONG <admin@penguinliong.moe>"]
+repository = "https://github.com/PENGUINLIONG/linebreak-convert-writer"
+description = "Convert linebreaks right away."
+license = "Apache-2.0"
+
+[dependencies]
+memstream = "0.0.1"

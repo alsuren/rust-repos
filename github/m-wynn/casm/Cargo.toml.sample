@@ -1,0 +1,32 @@
+[package]
+name = "casm"
+version = "0.1.0"
+authors = ["Matthew Wynn <matthew@matthewwynn.com>"]
+description = "Convert music and sync it to another folder"
+license = "ISC"
+build = "src/gen_codec_types.rs"
+
+[dependencies]
+clap = {version = "~2.25.1", features = ["yaml"]}
+error-chain = "0.10.0"
+gag = "0.1.9"
+glob = "0.2.11"
+mime_guess = "2.0.0-alpha.2"
+pbr = "1.0.0"
+phf = { version = "0.7.21", features = ["unicase"] }
+regex = "0.2.2"
+scoped_threadpool = "0.1.7"
+serde = "1.0.11"
+serde_derive = "1.0.11"
+toml = "0.4.4"
+unicase = "1.1"
+walkdir = "1.0.7"
+xdg = "2.1.0"
+
+[dependencies.ffmpeg]
+git = "https://github.com/meh/rust-ffmpeg"
+rev = "b67e4eb"
+
+[build-dependencies]
+phf_codegen = "0.7"
+unicase = "1.1"

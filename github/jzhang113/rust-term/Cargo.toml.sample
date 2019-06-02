@@ -1,0 +1,12 @@
+[package]
+name = "rust-term"
+version = "0.1.0"
+authors = ["Jiahua Zhang <jiahuaz@yahoo.com>"]
+edition = "2018"
+
+[dependencies]
+glium = "0.23.0"
+image = "0.21.0"
+
+[dev-dependencies]
+rand = "0.6.5"

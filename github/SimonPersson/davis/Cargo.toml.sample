@@ -1,0 +1,53 @@
+[package]
+name = "davis"
+version = "0.1.0"
+authors = ["Simon Persson <simon@flaskpost.me>"]
+build = "web/build.rs"
+edition = "2018"
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[lib]
+name = "davis_backend"
+path = "backend/lib.rs"
+
+[[bin]]
+name = "davis-cli"
+path = "cli/davis_cli.rs"
+
+[[bin]]
+name = "davis"
+path = "web/main.rs"
+
+[dependencies]
+websockify = { path = "./websockify" }
+mpd = "0.0.12"
+image = "0.19.0"
+rayon = "1.0.2"
+itertools = "0.7.8"
+mime_guess = "1.8.4"
+json = "*"
+serde_json = "1.0"
+serde_derive = "1.0"
+serde = "1.0"
+derive-error = "0.0.4"
+actix = "0.7"
+actix-web = "0.7"
+r2d2 = "0.8"
+r2d2_sqlite = "0.8"
+futures = "0.1"
+select = "0.4"
+reqwest = "0.9"
+urlencoding = "1.0"
+edit-distance = "2.0.0"
+askama = { version = "0.7.0", features = ["serde-json"] }
+unidecode = "0.3.0"
+
+[build-dependencies]
+askama = "0.7.0"
+
+[dependencies.rusqlite]
+version = "0.16"
+features = ["bundled"]

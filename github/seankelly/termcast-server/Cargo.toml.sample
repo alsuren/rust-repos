@@ -1,0 +1,12 @@
+[package]
+name = "termcastd"
+version = "0.3.2"
+authors = ["Sean Kelly <code@katron.org>"]
+
+[dependencies]
+chrono = "0.2"
+getopts = "0.2"
+log = "0.3.0"
+mio = "0.4.0"
+sodiumoxide = "0.0.10"
+toml = "0.1.28"

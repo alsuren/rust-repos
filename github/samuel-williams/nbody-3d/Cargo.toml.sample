@@ -1,0 +1,18 @@
+[package]
+name = "nbody-3d"
+version = "0.1.0"
+authors = ["fastf"]
+
+[[bin]]
+name = "nbody"
+path = "src/app.rs"
+
+[dependencies]
+cgmath = "*"
+conrod = { version = "*", features = ["glium", "winit"]}
+glium = "0.20.0"
+#itertools = "*"
+image = "*"
+rand = "0.3"
+rayon = "*"
+time = "*"

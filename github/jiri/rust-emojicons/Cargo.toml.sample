@@ -1,0 +1,21 @@
+[package]
+
+name = "emojicons"
+version = "1.0.0"
+authors = ["Jiří Šebele <sindriava@gmail.com>"]
+
+description = "Parse :emoji: notation to unicode representation."
+repository = "https://github.com/jiri/rust-emojicons"
+readme = "README.md"
+license = "MIT"
+
+build = "build.rs"
+
+[build-dependencies]
+
+phf_codegen = "0.7.10"
+
+[dependencies]
+
+phf = "0.7.10"
+regex = "0.1.58"

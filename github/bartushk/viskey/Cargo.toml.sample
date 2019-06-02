@@ -1,0 +1,9 @@
+[package]
+name = "viskey"
+version = "0.1.0"
+authors = ["Kyle Bartush <bartushk@gmail.com>"]
+
+[dependencies]
+timebomb = "0.1.2"
+libc = "0.2.15"
+errno = "0.1.8"

@@ -1,0 +1,13 @@
+[package]
+name = "linkbot-core"
+version = "0.0.3"
+authors = ["David Ko <david@barobo.com>"]
+build = false
+
+[dependencies]
+protobuf = "~1.5"
+log = "*"
+rand = "*"
+
+[build-dependencies]
+protoc-rust = "~1.5"

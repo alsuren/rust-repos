@@ -1,0 +1,22 @@
+[package]
+name = "unipager"
+version = "1.0.3"
+authors = ["Thomas Gatzweiler <mail@thomasgatzweiler.com>"]
+
+[dependencies]
+log = "^0.4"
+serial = "^0.4"
+ws = "^0.7"
+tiny_http = "^0.5.7"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+lazy_static = "^1.0"
+
+[dependencies.raspi]
+path = "lib/raspi"
+
+[dependencies.hidapi]
+version = "0.5.0"
+default-features = false
+features = ["linux-static-hidraw"] # linux-shared-hidraw will not build

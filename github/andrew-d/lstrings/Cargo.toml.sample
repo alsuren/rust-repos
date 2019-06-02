@@ -1,0 +1,19 @@
+[package]
+name = "lstrings"
+version = "0.0.1"
+authors = ["Andrew Dunham <andrew@du.nham.ca>"]
+
+[dependencies]
+ansi_term = "*"
+bincode = "*"
+clap = "*"
+fern = "0.3"
+itertools = "*"
+libc = "*"
+log = "0.3"
+rustc-serialize = "*"
+time = "0.1"
+
+[dependencies.mmap]
+git = "https://github.com/retep998/rust-mmap"
+rev = "4617dd0901d6899faebfbc427714b89fcb889880"

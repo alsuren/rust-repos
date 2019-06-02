@@ -1,0 +1,13 @@
+[package]
+name = "malc"
+version = "0.1.0"
+authors = ["Hugo Osvaldo Barrera <hugo@barrera.io>"]
+license = "ISC"
+keywords = ["macbook", "keyboard", "backlight", "ambient", "light"]
+readme = "README.md"
+
+[dependencies]
+env_logger = "0.3.2"
+lazy_static = "0.1.15"
+log = "0.3.5"
+regex = "0.1"

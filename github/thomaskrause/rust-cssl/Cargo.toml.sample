@@ -1,0 +1,12 @@
+[package]
+name = "cssl"
+version = "0.1.0"
+authors = ["Thomas Krause <thomaskrause@posteo.de>"]
+license= " Apache-2.0"
+
+[profile.release]
+debug = true
+
+[dependencies]
+rand= "0.3"
+time = "0.1"

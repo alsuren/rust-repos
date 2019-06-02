@@ -1,0 +1,31 @@
+[package]
+name = "phil-opp-rust-os"
+version = "0.1.0"
+authors = ["Nikhil Soni <krsoninikhil@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bootloader = {version = "0.4.0", features = ["map_physical_memory"]}  # allow bootimage tool to load our kernel
+volatile = "0.2.3"  # to specify memory read write as volatile
+spin = "0.4.9"  # provides spinlock
+uart_16550 = "0.1.0"  # for communicating with serial port
+x86_64 = "0.5.2"  # for writing to I/O ports
+pic8259_simple = "0.1.1"  # for configuring 8259 PIC
+pc-keyboard = "0.3.1"  # for scancode to key mapping
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
+
+[package.metadata.bootimage]
+default-target = "target-triple.json"
+
+[dev-dependencies]
+array-init = "0.0.3"
+
+# following is covered in target file
+# [profile.dev]
+# panic = "abort"  # disable stack unwinding on panic
+
+# [profile.release]
+# panic = "abort"  # disable stack unwinding on panic

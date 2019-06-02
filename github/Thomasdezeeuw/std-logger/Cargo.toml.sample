@@ -1,0 +1,38 @@
+[package]
+name          = "std-logger"
+description   = """
+A logging implementation for the log crate that logs messages to standard
+error and requests to standard out.
+"""
+version       = "0.3.3"
+authors       = ["Thomas de Zeeuw <thomasdezeeuw@gmail.com>"]
+license       = "MIT/Apache-2.0"
+documentation = "https://docs.rs/std-logger"
+repository    = "https://github.com/Thomasdezeeuw/std-logger"
+readme        = "README.md"
+keywords      = ["logging", "log", "standard"]
+categories    = ["development-tools::debugging"]
+include       = ["Cargo.toml", "src/lib.rs", "README.md", "LICENSE-MIT", "LICENSE-APACHE"]
+edition       = "2018"
+
+[badges]
+travis-ci = { repository = "Thomasdezeeuw/std-logger" }
+appveyor  = { repository = "Thomasdezeeuw/std-logger", service = "github" }
+
+[features]
+default   = ["timestamp", "log-panic"]
+log-panic = ["log-panics"]
+timestamp = ["chrono"]
+
+[dependencies]
+log        = { version = "0.4", features = ["std"] }
+chrono     = { version = "0.4", optional = true }
+log-panics = { version = "2", optional = true, features = ["with-backtrace"] }
+
+[dev-dependencies]
+criterion   = "0.2"
+lazy_static = "1.0"
+
+[[bench]]
+name = "time_format"
+harness = false

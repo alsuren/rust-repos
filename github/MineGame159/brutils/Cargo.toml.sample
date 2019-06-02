@@ -1,0 +1,15 @@
+[package]
+name = "brutils"
+version = "0.1.51"
+authors = ["MineGame159 <petulko08@gmail.com>"]
+edition = "2018"
+description = "Some utilities for Rust"
+homepage = "https://github.com/MineGame159/brutils"
+repository = "https://github.com/MineGame159/brutils"
+readme = "README.md"
+keywords = ["utils", "utilities", "csv", "cfg", "parser", "math", "random"]
+categories = ["concurrency"]
+license = "MIT"
+
+[dependencies]
+libc = "0.2.55"

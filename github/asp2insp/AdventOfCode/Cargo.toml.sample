@@ -1,0 +1,22 @@
+[package]
+authors = ["Josiah Gaskin <josiah@optimizely.com>"]
+edition = "2018"
+name = "advent-of-code"
+version = "0.1.0"
+[dependencies]
+aoc-runner = "*"
+aoc-runner-derive = "*"
+chomp = "*"
+chrono = "*"
+cute = "*"
+image = "*"
+itertools = "*"
+lazy_static = "*"
+parking_lot = "0.3"
+permutohedron = "*"
+rand = "*"
+rayon = "*"
+regex = "*"
+rust-crypto = "*"
+serde_json = "*"
+time = "*"

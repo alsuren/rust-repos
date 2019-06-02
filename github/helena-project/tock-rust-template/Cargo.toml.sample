@@ -1,0 +1,17 @@
+[package]
+name = "tock-template"
+version = "0.0.0"
+authors = []
+
+[dependencies]
+tock = {git = "https://github.com/helena-project/libtock-rs"}
+
+[profile.dev]
+panic = "abort"
+lto = true
+debug = true
+
+[profile.release]
+panic = "abort"
+lto = true
+debug = true

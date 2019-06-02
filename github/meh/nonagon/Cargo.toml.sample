@@ -1,0 +1,54 @@
+[package]
+name    = "nonagon"
+version = "0.1.0"
+
+authors = ["meh. <meh@schizofreni.co>"]
+license = "GPLv3"
+
+[dependencies]
+log        = "*"
+env_logger = "*"
+
+docopt = "*"
+
+regex = "*"
+
+nalgebra = "*"
+ncollide = "*"
+
+toml = "*"
+
+bdf = "*"
+
+lzma = "*"
+
+num = "*"
+
+strided = "*"
+
+[dependencies.male]
+git = "https://github.com/meh/male"
+
+features = ["f64"]
+
+[dependencies.ffmpeg]
+git = "https://github.com/meh/rust-ffmpeg"
+
+default-features = false
+features = ["image", "codec", "format", "software-scaling", "software-resampling"]
+
+[dependencies.openal]
+version = "0.2"
+
+[dependencies.glium]
+git     = "https://github.com/tomaka/glium"
+version = "0.8"
+
+default-features = false
+features = ["glutin", "image", "nalgebra"]
+
+[dependencies.image]
+version = "*"
+
+default-features = false
+features = ["jpeg", "png"]

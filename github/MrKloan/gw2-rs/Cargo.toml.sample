@@ -1,0 +1,26 @@
+[package]
+name = "gw2"
+version = "0.1.1"
+authors = ["Valentin Fries <contact@fries.io>"]
+description = "Rust wrapper for the Guild Wars 2 REST and MumbleLink API"
+repository = "https://github.com/mrkloan/gw2-rs.git"
+homepage = "https://github.com/mrkloan/gw2-rs.git"
+license = "WTFPLv2"
+readme = "README.md"
+
+[dependencies]
+error-chain = "0.10.0"
+
+hyper = "0.10.11"
+hyper-native-tls = "0.2.3"
+
+serde = "1.0.8"
+serde_json = "1.0.2"
+serde_derive = "1.0.8"
+
+libc = "0.2.23"
+winapi = "0.2.8"
+kernel32-sys = "0.2.2"
+
+[dev-dependencies]
+time = "0.1.37"

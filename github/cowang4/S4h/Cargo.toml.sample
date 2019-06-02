@@ -1,0 +1,23 @@
+[package]
+name = "s4h"
+version = "0.2.0"
+authors = ["Greg Cowan <cowang4@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix = "0.7"
+actix-web = "0.7"
+blake2b_simd = "0.4"
+bytes = { version = "0.4", features = ["serde"]}
+chashmap = "2.2"
+dotenv = "0.13"
+env_logger = "0.5"
+failure = "0.1"
+futures = "0.1"
+hex = "0.3"
+lazy_static = "1.2"
+log = "0.4"
+rand = "0.6"
+reqwest = { version = "0.9", default-features = false }
+serde = "1"
+serde_derive = "1"

@@ -1,0 +1,18 @@
+[package]
+name = "berk"
+version = "0.1.0"
+authors = ["Jonathan Stites <mail@jonstites.com>"]
+description = "Hopefully this will be a git implementation"
+edition = "2018"
+readme = "README.md"
+documentation = "https://github.com/jonstites/berk"
+homepage = "https://github.com/jonstites/berk"
+repository = "https://github.com/jonstites/berk"
+license = "MIT OR Apache-2.0"
+
+[badges]
+travis-ci = { repository = "jonstites/berk", branch = "master" }
+
+[dependencies]
+clap = "2.33"
+sha-1 = "0.8.1"

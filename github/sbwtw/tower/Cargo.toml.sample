@@ -1,0 +1,15 @@
+[package]
+name = "tower"
+version = "0.1.0"
+authors = ["石博文 <sbw@sbw.so>"]
+
+[dependencies]
+log = "*"
+env_logger = "*"
+rusqlite = "*"
+hyper = "*"
+hyper-native-tls = "*"
+regex = "*"
+rustc-serialize = "*"
+time = "*"
+clap = "*"

@@ -1,0 +1,12 @@
+[package]
+name="Abstrasim"
+version="0.0.1"
+authors=["Raveline<eraveline@gmail.com>"]
+description = "Trading simulation game"
+include = ["data/names.json"]
+
+[dependencies]
+rand = "0.3.0"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"

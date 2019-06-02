@@ -1,0 +1,31 @@
+[package]
+name = "rusty-clock"
+version = "0.1.0"
+authors = ["Guillaume Pinot <texitoi@texitoi.eu>"]
+edition = "2018"
+
+[workspace]
+
+[dependencies]
+stm32f1xx-hal = { version = "0.2", features = ["rt", "stm32f103" ] }
+cortex-m = "0.5"
+#cortex-m-rt = { version = "0.6", features = ["device"] }
+cortex-m-rtfm = "0.4.0"
+panic-semihosting = "0.5"
+bme280 = "0.1.1"
+stm32f103xx-rtc = { git = "https://github.com/TeXitoi/stm32f103xx-rtc", branch = "master" }
+pwm-speaker = { git = "https://github.com/TeXitoi/pwm-speaker", branch = "master" }
+il3820 = { git = "https://github.com/TeXitoi/il3820" }
+embedded-hal = "0.2.1"
+portable = { path = "portable" }
+
+[profile.dev]
+opt-level = 1
+lto = true
+incremental = false
+
+[profile.release]
+lto = true
+incremental = false
+opt-level = "z"
+debug = true

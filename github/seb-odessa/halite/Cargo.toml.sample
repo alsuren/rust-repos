@@ -1,0 +1,20 @@
+[package]
+name = "Rust"
+version = "0.10.2"
+authors = ["Pavel Kolevatyh <pavel.kolevatyh@gmail.com>"]
+
+[dependencies]
+rand = "*"
+text_io = "*"
+
+[[bin]]
+path = "src/MyBot.rs"
+name = "MyBot"
+
+[[bin]]
+path = "src/MyBotV7.rs"
+name = "MyBotV7"
+
+[[bin]]
+path = "src/MyBotV6.rs"
+name = "MyBotV6"

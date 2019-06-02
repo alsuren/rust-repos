@@ -1,0 +1,60 @@
+[package]
+name = "stm32hal"
+description = "A HAL for all stm32 devices"
+version = "0.1.3"
+authors = ["OCTronics <octronics@riseup.net>"]
+keywords = ["stm32", "embedded", "embedded-hal"]
+categories = ["embedded"]
+edition = "2018"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/octronics/stm32hal"
+homepage = "https://github.com/octronics/stm32hal"
+
+# Include all the files to be distributed.
+include = [
+	"/templates/**/*",
+	"/devices/*",
+	"/src/api/*.rs",
+	"/src/lib.rs",
+	"/Cargo.toml",
+	"/build.rs",
+	"/README.md"
+]
+
+[dependencies]
+stm32ral = "0.1.1"
+embedded-hal = { version = "0.2.2", features = ["unproven"] }
+
+[build-dependencies]
+stm32builder = "0.1.0"
+
+[features]
+default = ["rt", "memory_script"]
+rt = ["stm32ral/rt"]
+memory_script = []
+
+# WARNING: After this line all will be overriden when generating the crate
+# From devices/stm32f051.yaml
+stm32f051K4T6 = ["stm32ral/stm32f0x1"]
+stm32f051K6T6 = ["stm32ral/stm32f0x1"]
+stm32f051K6T7 = ["stm32ral/stm32f0x1"]
+stm32f051K8T6 = ["stm32ral/stm32f0x1"]
+stm32f051K8T7 = ["stm32ral/stm32f0x1"]
+stm32f051K8H7 = ["stm32ral/stm32f0x1"]
+stm32f051T8Y6 = ["stm32ral/stm32f0x1"]
+stm32f051C4T6 = ["stm32ral/stm32f0x1"]
+stm32f051C4U6 = ["stm32ral/stm32f0x1"]
+stm32f051C6T6 = ["stm32ral/stm32f0x1"]
+stm32f051C6T7 = ["stm32ral/stm32f0x1"]
+stm32f051C6U6 = ["stm32ral/stm32f0x1"]
+stm32f051C8T6 = ["stm32ral/stm32f0x1"]
+stm32f051C8T7 = ["stm32ral/stm32f0x1"]
+stm32f051C8U6 = ["stm32ral/stm32f0x1"]
+stm32f051C8U7 = ["stm32ral/stm32f0x1"]
+stm32f051R4T6 = ["stm32ral/stm32f0x1"]
+stm32f051R6T6 = ["stm32ral/stm32f0x1"]
+stm32f051R6T7 = ["stm32ral/stm32f0x1"]
+stm32f051R8T6 = ["stm32ral/stm32f0x1"]
+stm32f051R8T7 = ["stm32ral/stm32f0x1"]
+stm32f051R8H7 = ["stm32ral/stm32f0x1"]

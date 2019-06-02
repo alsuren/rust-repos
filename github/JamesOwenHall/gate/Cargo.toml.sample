@@ -1,0 +1,12 @@
+[package]
+name = "gate"
+version = "0.1.0"
+authors = ["James Hall <james_hall@live.ca>"]
+
+[[bin]]
+name = "gate"
+path = "src/bin/main.rs"
+
+[dependencies]
+clap = "2.10"
+rustyline = "0.2"

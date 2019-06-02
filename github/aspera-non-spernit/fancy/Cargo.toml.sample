@@ -1,0 +1,11 @@
+[package]
+name = "fancy"
+version = "0.1.0"
+authors = ["genom"]
+
+[dependencies]
+serde = { version= "1.0.27" }
+serde_derive = { version= "1.0.27" }
+serde_json = { version = "1.0.9" }
+getopts = { version = "0.2" }
+syslog = { version = "3.3.0" }

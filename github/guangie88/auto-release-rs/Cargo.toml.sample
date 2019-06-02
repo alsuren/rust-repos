@@ -1,0 +1,8 @@
+[package]
+name = "auto-release"
+version = "0.1.4"
+authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
+
+[[bin]]
+name = "auto-release"
+path = "src/main.rs"

@@ -1,0 +1,13 @@
+[package]
+authors = ["Bruno Tavares <connect+github@bltavares.com>"]
+name = "heartbeat"
+version = "0.1.1"
+
+[dependencies]
+arrayvec = "0.3.16"
+clap = "2.2.2"
+hyper = { git = "https://github.com/bltavares/hyper", branch = "redirect_count" }
+screenprints = "0.1.0"
+stopwatch = "0.0.7"
+time = "0.1.35"
+url = "1.1.0"

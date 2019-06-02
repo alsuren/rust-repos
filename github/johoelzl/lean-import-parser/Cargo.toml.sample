@@ -1,0 +1,7 @@
+[package]
+name = "lean-import-parser"
+version = "0.1.0"
+authors = ["Johannes Hölzl <johannes.hoelzl@gmx.de>"]
+
+[dependencies]
+nom = "^4.0"

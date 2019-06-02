@@ -1,0 +1,16 @@
+[package]
+name = "rust_lzss"
+version = "0.1.1"
+description = "LZSS Decompressor"
+authors = ["Garrett Johnson <silentdragon@gmail.com>"]
+license = "MIT"
+keywords = ["decompression", "lzss"]
+categories = ["compression"]
+
+[badges]
+travis-ci = { repository = "silentdragonz/rust_lzss", branch = "master" }
+codecov = { repository = "silentdragonz/rust_lzss", branch = "master", service = "github" }
+
+[dependencies]
+byteorder="~1"
+bit-vec="~0.5"

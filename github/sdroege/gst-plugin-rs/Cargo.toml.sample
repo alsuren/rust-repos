@@ -1,0 +1,25 @@
+[workspace]
+
+members = [
+    "gst-plugin-file",
+    "gst-plugin-http",
+    "gst-plugin-flv",
+    "gst-plugin-audiofx",
+    "gst-plugin-togglerecord",
+    "gst-plugin-threadshare",
+    "gst-plugin-tutorial",
+    "gst-plugin-closedcaption",
+    "gst-plugin-sodium",
+    "gst-plugin-cdg",
+    "gst-plugin-rav1e",
+    "gst-plugin-s3",
+]
+
+[profile.release]
+lto = true
+opt-level = 3
+debug = true
+panic = 'unwind'
+
+[profile.dev]
+opt-level = 1

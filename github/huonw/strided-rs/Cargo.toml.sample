@@ -1,0 +1,26 @@
+[package]
+
+name = "strided"
+version = "0.2.9"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+homepage = "https://github.com/huonw/strided-rs"
+repository = "https://github.com/huonw/strided-rs"
+documentation = "http://huonw.github.io/strided-rs/strided/"
+license = "MIT/Apache-2.0"
+keywords = []
+readme = "README.md"
+description = """
+Strided slices.
+
+This library provides two types `Strided` and `MutStrided` as
+generalised forms of `&[T]` and `&mut [T]` respectively, where the
+elements are regularly spaced in memory, but not necessarily
+immediately adjacently.
+"""
+
+[dev-dependencies]
+num = "0"
+
+[features]
+unstable = []

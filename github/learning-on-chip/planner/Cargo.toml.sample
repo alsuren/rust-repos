@@ -1,0 +1,24 @@
+[package]
+name = "planner"
+version = "0.0.1"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/learning-on-chip/planner"
+homepage = "https://github.com/learning-on-chip/planner"
+description = "Planner is a tool for constructing floorplans."
+
+[lib]
+name = "planner"
+path = "src/lib/planner.rs"
+
+[[bin]]
+name = "planner"
+path = "src/bin/planner.rs"
+test = false
+doc = false
+
+[dependencies]
+arguments = "*"
+sql = "*"
+sqlite = "*"
+term = "*"

@@ -1,0 +1,10 @@
+[package]
+name = "pantomime-vm"
+version = "0.1.0"
+authors = ["cfrancia <cfrancia@users.noreply.github.com>"]
+
+[dependencies]
+pantomime-parser = { git = "https://github.com/cfrancia/pantomime-parser" }
+lazy_static = "0.2.1"
+log = "0.3.6"
+regex = "0.1.77"

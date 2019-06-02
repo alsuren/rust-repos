@@ -1,0 +1,12 @@
+[profile.release]
+lto = true
+panic = 'abort'
+
+[workspace]
+members = [
+  "aws",
+  "cli",
+  "derive",
+  "terminal",
+  "web"
+]

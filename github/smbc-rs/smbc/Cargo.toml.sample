@@ -1,0 +1,15 @@
+[package]
+name = "smbc"
+version = "0.1.0"
+authors = ["Konstantin Gribov <grossws@gmail.com>"]
+
+repository = "https://github.com/smbc-rs/smbc"
+documentation = "https://docs.rs/smbc"
+license = "GPL-3.0+"
+keywords = ["smbclient", "samba", "cifs"]
+description = "type-safe libsmbclient wrapper with std::fs-like interface"
+
+[dependencies]
+libc = "^0.1.8"
+log = "^0.3.6"
+smbclient-sys = "^0.1.0"

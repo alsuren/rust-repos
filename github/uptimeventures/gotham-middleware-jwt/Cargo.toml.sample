@@ -1,0 +1,20 @@
+[package]
+name = "gotham_middleware_jwt"
+version = "0.3.1"
+authors = ["Nicholas Young <nyoung@uptime.ventures>"]
+description = "JWT middleware for the Gotham web framework."
+repository = "https://gitlab.com/uptimeventures/gotham-middleware-jwt"
+keywords = ["gotham-middleware", "jwt", "jsonwebtoken", "authentication"]
+readme = "README.md"
+license = "BSD-3-Clause"
+edition = "2018"
+
+[dependencies]
+futures = "0.1"
+gotham = "0.3"
+gotham_derive = "0.3"
+serde = "1.0"
+serde_derive = "1.0"
+hyper = "0.12"
+jsonwebtoken = "5.0"
+log = "0.4"

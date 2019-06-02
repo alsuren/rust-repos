@@ -1,0 +1,14 @@
+[package]
+name = "rust_test"
+version = "0.1.0"
+authors = ["jslupicki <jan@slupicki.com>"]
+
+[dependencies]
+log = "*"
+log4rs = "*"
+rand = "*"
+thread-control = "*"
+futures = "*"
+tokio = "*"
+futures-cpupool = "*"
+fibers = "*"

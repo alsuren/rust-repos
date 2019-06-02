@@ -1,0 +1,34 @@
+[package]
+name = "tomllib"
+version = "0.1.2"
+authors = ["Joel Self <self@jself.io>"]
+description = "A format-preserving TOML file parser and manipulator"
+license = "MIT"
+repository = "https://github.com/joelself/tomllib"
+readme = "README.md"
+documentation = "https://jself.io/rustdocs/tomllib/0.1.1/tomllib/"
+keywords = ["toml", "parser", "encode", "decode", "nom"]
+exclude = ["assets/*", "tests/*"]
+
+[dependencies.nom]
+version = "^1.2.0"
+features = ["regexp"]
+
+[dependencies.regex]
+version = "^0.1.48"
+
+# Uncomment these, and comment out the regexp feature to turn on statically compiled regexes
+#features = ["regexp_macros"]
+#[dependencies.regex_macros]
+[dependencies.log]
+version = "^0.3.5"
+[dependencies.env_logger]
+version = "^0.3.2"
+[dependencies.pirate]
+version = "1.0.0"
+[dependencies.csv]
+version = "0.14.4"
+
+[[bin]]
+name = "tomlkit"
+

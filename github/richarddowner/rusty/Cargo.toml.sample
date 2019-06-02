@@ -1,0 +1,17 @@
+[package]
+
+name = "rusty"
+version = "0.0.1"
+authors = ["superlogical <jake.net@gmail.com>"]
+
+[dependencies.postgres]
+
+git = "https://github.com/sfackler/rust-postgres.git"
+
+[dependencies.nickel]
+
+git = "https://github.com/nickel-org/nickel.rs.git"
+
+[dependencies.lmdb]
+
+git = "https://github.com/vhbit/lmdb-rs.git"

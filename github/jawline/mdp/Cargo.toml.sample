@@ -1,0 +1,11 @@
+[package]
+name = "markov"
+version = "0.1.0"
+authors = ["blake <blake@parsed.uk>"]
+
+[dependencies]
+rand = "0.5"
+
+[features]
+default = []
+verbose = []

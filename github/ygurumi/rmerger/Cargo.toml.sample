@@ -1,0 +1,11 @@
+[package]
+name = "rmerger"
+version = "0.1.2"
+authors = ["ygurumi <ygurumi@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+nom      = "3.1"
+nix      = "0.8"
+bitflags = "0.9"
+getopts  = "0.2"

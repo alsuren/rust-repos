@@ -1,0 +1,33 @@
+[package]
+name = "IrradiantDescent"
+version = "0.1.0"
+authors = [
+    "Graham Wihlidal <graham@wihlidal.ca>",
+    "Tomasz Stachowiak <h3@h3.gd>",
+    "Anke <anke@acagamics.de>",
+    "Victor Davidsson <vdavi@kth.se>"
+]
+license = "MIT"
+
+[[bin]]
+name = "idescent"
+path = "src/main.rs"
+
+[dependencies]
+gfx = "0.17.1"
+draw_state = "0.8.0"
+piston-shaders_graphics2d = "0.3.1"
+piston-gfx_texture = "0.31.0"
+shader_version = "0.3.0"
+pistoncore-glutin_window = "0.43.0"
+piston = "0.35.0"
+find_folder = "0.3.0"
+gfx_device_gl = "0.15.0"
+piston2d-gfx_graphics = "0.48.0"
+rodio = "0.5.2"
+rand = "0.3.14"
+image = "0.18.0"
+
+[dependencies.piston2d-graphics]
+version = "0.24.0"
+features = ["glyph_cache_rusttype"]

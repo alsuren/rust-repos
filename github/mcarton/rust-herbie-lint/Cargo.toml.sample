@@ -1,0 +1,27 @@
+[package]
+authors = ["mcarton <cartonmartin+git@gmail.com>"]
+description = "A rustc plugin to check for numerical instability"
+keywords = ["float", "herbie", "lint", "math", "plugin"]
+license = "MPL-2.0"
+name = "herbie-lint"
+readme = "README.md"
+repository = "https://github.com/mcarton/rust-herbie-lint"
+version = "1.0.8"
+
+[lib]
+name = "herbie_lint"
+plugin = true
+
+[dependencies]
+clippy = {version = "~0.0", optional = true}
+itertools = "0.4.8"
+rusqlite = "0.6.0"
+rustc-serialize = "0.3.18"
+toml = "0.1.27"
+wait-timeout = "0.1.2"
+
+[dev-dependencies]
+compiletest_rs = "0.2.0"
+
+[features]
+default=[]

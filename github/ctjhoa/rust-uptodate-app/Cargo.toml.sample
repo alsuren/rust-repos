@@ -1,0 +1,8 @@
+[package]
+name = "sample-app"
+version = "0.1.0"
+authors = ["Camille TJHOA <camille@contract-live.com>"]
+
+[dependencies]
+toml = "0.2"
+dep = { version = "0.2.0", path = "dep" }

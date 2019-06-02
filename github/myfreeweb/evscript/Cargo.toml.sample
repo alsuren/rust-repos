@@ -1,0 +1,25 @@
+[package]
+name = "evscript"
+version = "0.0.0"
+authors = [ "Greg V <greg@unrelenting.technology>" ]
+keywords = [ "System", "Desktop", "Input", "Evdev", "Keyboard", "Mouse", "Touchscreen", "Touchpad", "xcape" ]
+description = "A tiny sandboxed Dyon scripting environment for evdev input devices"
+license = "Unlicense"
+readme = "README.md"
+homepage = "https://github.com/myfreeweb/evscript"
+repository = "https://github.com/myfreeweb/evscript"
+
+[dependencies]
+#libc = "0"
+clap = "2"
+rusty-sandbox = { git = "https://github.com/myfreeweb/rusty-sandbox", branch = "master" }
+nix = "0"
+evdev = { git = "https://github.com/myfreeweb/evdev", branch = "uinput" }
+#evdev = { path = "../../cmr/evdev" }
+dyon = { version = "0", default-features = false, features = ["debug_resolve"] }
+#dyon = { path = "../../PistonDevelopers/dyon", features = ["debug_resolve"] }
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+range = "0"
+num = "0"

@@ -1,0 +1,12 @@
+[package]
+name = "kgb-rs"
+version = "0.1.0"
+authors = ["Kapho <mahzvigny@gmail.com>"]
+
+[dependencies]
+rand = "0.5.3"
+
+[dependencies.sdl2]
+version = "0.31.0"
+default-features = false
+features = ["ttf", "image", "mixer"]

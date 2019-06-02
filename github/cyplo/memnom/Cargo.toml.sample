@@ -1,0 +1,11 @@
+[package]
+name = "memnom"
+version = "0.2.0"
+authors = ["Cyryl Płotnicki <cyplo@cyplo.net>"]
+license = "AGPL-3.0-or-later"
+description = "It will eat your memory. A tool for testing systems under memory pressure."
+
+[dependencies]
+sysinfo = "0.5"
+human-size = "0.4"
+circular-queue = "0.2"

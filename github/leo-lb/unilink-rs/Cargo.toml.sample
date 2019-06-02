@@ -1,0 +1,16 @@
+[package]
+name = "unilink-rs"
+version = "0.1.0"
+authors = ["lle-bout"]
+edition = "2018"
+
+[profile.release]
+opt-level = 'z'  # Optimize for size.
+lto = true
+codegen-units = 1
+panic = 'abort'
+incremental = false
+
+[dependencies]
+miniserde = "0.1"
+snow = { git = "https://github.com/mcginty/snow.git" }

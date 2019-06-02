@@ -1,0 +1,24 @@
+[package]
+name = "pmtud-hbh-tester"
+version = "0.1.0"
+authors = ["Luuk Hendriks <mail@luukhendriks.eu>"]
+edition = "2018"
+
+[dependencies]
+structopt = { version = "0.2", default-features = true }
+bincode = "1.1"
+serde = "1.0"
+serde_derive = "1.0"
+pcap = "0.7"
+byteorder = "1"
+log = "0.4"
+simplelog = "0.5"
+
+#interfaces = "0.4"
+
+#pnetlink = "0.0.3"
+pnetlink = { git = "https://github.com/polachok/pnetlink" } 
+
+[dependencies.pnet]
+version = "0.22.0"
+

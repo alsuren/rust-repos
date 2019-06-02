@@ -1,0 +1,9 @@
+[package]
+name = "oxygen_bot"
+version = "0.2.0"
+authors = ["Purple Myst <PurpleMyst@users.noreply.github.com>"]
+
+[dependencies]
+regex = "0.2"
+lazy_static = "0.2.8"
+toml = "0.4.2"

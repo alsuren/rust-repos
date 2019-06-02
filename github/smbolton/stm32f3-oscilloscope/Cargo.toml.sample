@@ -1,0 +1,22 @@
+[package]
+name = "stm32f3-oscilloscope"
+version = "0.1.0"
+authors = ["Sean Bolton <sean@smbolton.com>"]
+build = "build.rs"
+
+[features]
+software-spi = []
+
+[build-dependencies]
+gcc = "^0.3"
+
+[dependencies]
+stm32f30x = "^0.4.1"
+
+[dependencies.cortex-m-rt]
+version = "^0.2.5"
+default-features = false  # disable 'exceptions' feature
+features = ["linker-script"]  # could add "panic-over-itm" or "panic-over-semihosting"
+
+[dependencies.cortex-m]
+version = "^0.2.11"

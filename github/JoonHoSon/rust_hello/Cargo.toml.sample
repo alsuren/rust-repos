@@ -1,0 +1,9 @@
+[package]
+name = "hello"
+version = "0.1.0"
+authors = ["JoonHo Son <joonho.son@me.com>"]
+
+[[bin]]
+name = "hello-joonho"
+
+[dependencies]

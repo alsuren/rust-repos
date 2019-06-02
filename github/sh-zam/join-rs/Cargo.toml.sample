@@ -1,0 +1,11 @@
+[package]
+name = "join-rs"
+version = "0.0.1"
+authors = ["Sharaf Zaman <sharafzaz121@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "join_rs" 
+
+[dependencies]
+clap = "2.32.0" 

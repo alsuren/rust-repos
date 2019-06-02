@@ -1,0 +1,31 @@
+[package]
+name = "vape"
+description = "ｆｕｌｌ ｗｉｄｔｈ ａｅｓｔｈｅｔｉｃｓ"
+version = "0.2.2"
+authors = ["Joshua Li <josh@jrl.ninja>"]
+license = "MIT"
+
+homepage = "https://www.github.com/JoshuaRLi/vape"
+repository = "https://www.github.com/JoshuaRLi/vape"
+readme = "README.md"
+keywords = ["aesthetic", "vaporwave", "fullwidth"]
+categories = ["command-line-utilities", "text-processing"]
+
+[badges]
+travis-ci = { repository = "JoshuaRLi/vape" }
+
+[dependencies]
+getopts = "~0.2"
+rand = "~0.5"
+
+[[bin]]
+name = "vape"
+path = "src/main.rs"
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
+incremental = false
+# default for release: opt-level = "3"
+# levels s and z are nightly-only

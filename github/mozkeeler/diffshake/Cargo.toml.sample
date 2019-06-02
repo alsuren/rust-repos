@@ -1,0 +1,8 @@
+[package]
+name = "dumpshake"
+version = "0.1.0"
+authors = ["Dana Keeler <mozkeeler@gmail.com>"]
+
+[dependencies]
+tls-parser = "0.6.0"
+enum_primitive = "0.1.1"

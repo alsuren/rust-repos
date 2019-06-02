@@ -1,0 +1,26 @@
+[package]
+name = "lugh"
+version = "0.1.0"
+authors = ["Raphaël Lustin <raphael@lustin.fr>"]
+
+[dependencies]
+diesel = { version = "*", features = ["sqlite"] }
+diesel_codegen = { version = "*", features = ["sqlite"] }
+iron = "*"
+params = "*"
+router = "*"
+log = "0.3.6"
+mount = "*"
+pwhash = "0.1"
+rand = "0.3"
+regex = "0.2.1"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+typographic_linter = "^0.2"
+simplelog = "^0.4.2"
+staticfile = "*"
+time = "0.1.35"
+
+[dev-dependencies]
+hyper = "^0.10"

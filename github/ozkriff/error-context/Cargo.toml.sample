@@ -1,0 +1,16 @@
+# See LICENSE file for copyright and license details.
+
+[package]
+
+name = "error_context"
+version = "0.0.1"
+authors = [ "ozkriff@gmail.com" ]
+
+[[lib]]
+name = "error_context"
+
+[[bin]]
+test = false
+name = "example"
+
+# vim: set tabstop=4 shiftwidth=4 softtabstop=4 expandtab:

@@ -1,0 +1,12 @@
+[package]
+name = "crc_complete"
+version = "0.1.0"
+authors = ["Eugene Gonzalez <eugene.gonzalez44@gmail.com>"]
+
+[features]
+default = ["use_std"]
+use_std = ["bit_reverse/use_std"]
+
+[dependencies.bit_reverse]
+version = "0.1.7"
+default-features = false

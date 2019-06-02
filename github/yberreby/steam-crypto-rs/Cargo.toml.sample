@@ -1,0 +1,15 @@
+[package]
+name = "steam-crypto"
+version = "0.1.1"
+authors = ["Yohai Berreby (filsmick) <yohaiberreby@gmail.com>"]
+description = "A crypto library for interfacing with Steam's servers"
+repository = "https://github.com/filsmick/steam-crypto-rs"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+rand = "*"
+openssl = "*"
+pem-parser = "*"
+
+[dev-dependencies]
+rustc-serialize = "*"

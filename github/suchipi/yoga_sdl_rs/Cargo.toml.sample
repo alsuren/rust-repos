@@ -1,0 +1,14 @@
+[package]
+name = "yoga_sdl_rs"
+version = "0.1.0"
+authors = ["Lily Scott <me@suchipi.com>"]
+
+[dependencies.sdl2]
+version = "^0.31.0"
+features = ["bundled"]
+
+[dependencies.gl]
+version = "^0.11.0"
+
+[dependencies.yoga]
+version = "^0.3.0"

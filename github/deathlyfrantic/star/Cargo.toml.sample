@@ -1,0 +1,13 @@
+[package]
+name = "star"
+version = "0.1.0"
+authors = ["Zandr Martin <zandrmartin@gmail.com>"]
+description = "A fuzzy finder based on Gary Bernhardt's Selecta"
+edition = "2018"
+
+[dependencies]
+termion = "1.5.1"
+libc = "0.2.40"
+termios = "0.3.0"
+clap = "2.32.0"
+unicode-width = "0.1.5"

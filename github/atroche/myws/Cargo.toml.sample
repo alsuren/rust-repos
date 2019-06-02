@@ -1,0 +1,47 @@
+[package]
+name = "headless_chrome"
+version = "0.1.4"
+authors = ["Alistair Roche <alistair@sunburnt.country>"]
+edition = "2018"
+description = "Control Chrome programatically"
+license = "MIT"
+homepage = "https://github.com/atroche/rust-headless-chrome"
+repository = "https://github.com/atroche/rust-headless-chrome"
+readme = "README.md"
+
+[dependencies]
+websocket = { version = "0.22", default_features = false, features = ["sync"] }
+regex = "1"
+serde = { version = "1", features = ["serde_derive"] }
+serde_json = "1"
+serde_derive = "1"
+failure = "0.1"
+log = "0.4"
+env_logger = "0.6"
+rand = "0.6"
+tempfile = "3"
+base64 = "0.10"
+derive_builder = "0.7.1"
+which = "2.0"
+ureq = { version = "0.9", optional = true }
+directories = { version = "1.0", optional = true }
+zip = { version = "0.5", optional = true }
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.6"
+
+[dev-dependencies]
+chrono = "0.4"
+tiny_http = "0.6"
+png = "0.14"
+jpeg-decoder = { version = "0.1", default_features = false }
+base64 = "0.10.1"
+
+[lib]
+name = "headless_chrome"
+path = "src/lib.rs"
+
+[features]
+default = [ "fetch" ]
+fetch = [ "ureq", "directories", "zip" ]
+nightly = []

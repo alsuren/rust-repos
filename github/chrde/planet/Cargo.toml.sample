@@ -1,0 +1,18 @@
+[package]
+name = "planets"
+version = "0.1.0"
+authors = ["Christian de la Hoz <apigolas@gmail.com>"]
+
+[dependencies]
+piston = "0.32.0"
+piston_window = "0.66.0"
+pistoncore-glutin_window = "0.37.0"
+piston2d-opengl_graphics = "0.43.0"
+noise = "0.4.1"
+gfx = "0.16.0"
+gfx_device_gl = "0.14.1"
+shader_version = "0.2.2"
+camera_controllers = "0.21.0"
+vecmath = "0.3.0"
+nalgebra = "0.12.3"
+rand = "0.3.15"

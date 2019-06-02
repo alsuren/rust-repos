@@ -1,0 +1,14 @@
+[package]
+name = "xoroshiro"
+version = "0.1.0"
+authors = ["Coda Hale <coda.hale@gmail.com>"]
+
+[dependencies]
+rand = "*"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "benches"
+harness = false

@@ -1,0 +1,32 @@
+
+[workspace]
+members = ["hsa-core-gen", "hsa-core", "legionella-std",
+           "runtime-core", "runtime-amd", "runtime-nv",
+           "rustc-intrinsics", "legionella-intrinsics",
+           "bootstrap-rustc-driver", "rustc-driver",
+
+           "legionella-core",
+
+           "hsa-rt-sys", "hsa-rt",
+           "tools/hsa-agent-info",
+
+           "rav1e",
+
+           "examples/trivial", "examples/ndarray",
+           "examples/mat-mat-mul", "examples/fwd-conv",
+           "examples/fractal", "examples/mut-slice-ub", ]
+
+[profile.release]
+debug = true
+debug-assertions = true
+rpath = true
+
+[profile.dev]
+rpath = true
+[profile.test]
+rpath = true
+[profile.bench]
+rpath = true
+
+[replace]
+"vulkano:0.11.1" = { path = "vulkano/vulkano" }

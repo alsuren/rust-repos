@@ -1,0 +1,22 @@
+[package]
+name = "dariush"
+version = "0.1.0"
+authors = ["Hossein Noroozpour <hossein.noroozpour@gmail.com>"]
+
+[dependencies]
+
+[dependencies.winapi] 
+version = "*" 
+features = [
+    "d3d11",
+    "d3dcommon",
+    "dxgi",
+    "dxgiformat",
+    "dxgitype",
+    "libloaderapi", 
+    "minwindef", 
+    "windef", 
+    "winerror",
+    "wingdi", 
+    "winuser", 
+]

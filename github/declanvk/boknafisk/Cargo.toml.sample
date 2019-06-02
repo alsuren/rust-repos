@@ -1,0 +1,12 @@
+[package]
+name = "boknafisk"
+version = "0.1.0"
+authors = ["Declan Kelly <dkelly.home@gmail.com>"]
+
+[lib]
+name = "boknafisk"
+
+[dependencies]
+bitflags = "0.7"
+lazy_static = "0.2.2"
+unicode-segmentation = "1.0.1"

@@ -1,0 +1,25 @@
+[package]
+name = "rusty-cage"
+version = "0.1.0"
+authors = ["Kurnevsky Evgeny <kurnevsky@gmail.com>"]
+license = "AGPL-3.0+"
+
+[dependencies]
+libc = "*"
+clap = "*"
+cfg-if = "*"
+phf = "*"
+phf_macros = "*"
+clippy = { version = "*", optional = true }
+
+[profile.dev]
+opt-level = 0
+lto = false
+debug = true
+panic = "unwind"
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
+panic = "abort"

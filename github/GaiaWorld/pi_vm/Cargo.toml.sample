@@ -1,0 +1,25 @@
+[package]
+name = "pi_vm"
+version = "0.1.0"
+authors = ["zuon <dev@dev.com>"]
+
+[dependencies]
+fnv = "*"
+time = "*"
+libc = "*"
+rand = "*"
+npnc = "*"
+magnetic = "*"
+threadpool = "*"
+lazy_static = "*"
+kernel32-sys = "*"
+flame = "0.2.2"
+flamer = "0.3"
+
+atom = { path = "../pi_lib/atom" }
+worker = { path = "../pi_lib/worker" }
+handler = { path = "../pi_lib/handler" }
+gray = { path = "../pi_lib/gray" }
+util = { path = "../pi_lib/util" }
+task_pool = { path = "../pi_lib/task_pool" }
+apm = { path = "../pi_lib/apm" }

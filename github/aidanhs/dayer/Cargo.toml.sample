@@ -1,0 +1,34 @@
+[package]
+name = "dayer"
+version = "0.2.0"
+authors = ["Aidan Hobson Sayers <aidanhs@cantab.net>"]
+
+[dependencies]
+docopt = "0.7"
+# https://github.com/docopt/docopt.rs/pull/209
+docopt_macros = { git = "https://github.com/aidanhs/docopt.rs.git", rev = "a84a800" }
+rustc-serialize = "0.3"
+tar = "0.3"
+
+# https://github.com/seanmonstar/reqwest/pull/63
+# https://github.com/sfackler/rust-native-tls/issues/26
+reqwest = "0.4.0"
+hyper = "0.10.5"
+mime = "0.2"
+# Try and make sure all versions down the dep chain are pinned so [replace] works
+hyper-native-tls = "=0.2.2"
+native-tls = "=0.1.1"
+
+env_logger = "0.3"
+
+# Plugins can't be conditionally loaded, so can't go in dev-dependencies
+# https://github.com/Manishearth/rust-adorn/pull/5
+adorn = { git = "https://github.com/aidanhs/rust-adorn.git", rev = "76ea8fa" }
+
+[dev-dependencies]
+maplit = "0.1.2"
+tempdir = "0.3"
+lazy_static = "0.1.*"
+
+[replace]
+"native-tls:0.1.1" = { git = "https://github.com/aidanhs/rust-native-tls.git", rev = "0ab494f" }

@@ -1,0 +1,21 @@
+[package]
+name = "fast-intersection"
+version = "0.1.0"
+authors = ["Andrew Pendleton <andrew@mapbox.com>"]
+autobenches = false
+
+[dependencies]
+simdintersection-sys = { path = "simdintersection-sys" }
+streamvbyte-sys = { path = "streamvbyte-sys" }
+
+[dev-dependencies]
+slow-intersection = { path = "slow-intersection" }
+rand = "0.6.1"
+criterion = "0.2.5"
+
+[lib]
+path = "lib.rs"
+
+[[bench]]
+name = "benchmarks"
+harness = false

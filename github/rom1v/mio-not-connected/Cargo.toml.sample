@@ -1,0 +1,11 @@
+[package]
+name = "mio-not-connected"
+version = "0.1.0"
+authors = ["Romain Vimont <rvimont@genymobile.com>"]
+
+[dependencies]
+mio = "0.6"
+
+[features]
+pollwritable = []  # poll before reregister()
+temporize = []     # add a sleep() before reregister()

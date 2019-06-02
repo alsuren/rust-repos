@@ -1,0 +1,14 @@
+[package]
+
+name = "pgsql-hal"
+version = "0.1.0"
+authors = [ "Herman J. Radtke III <herman@hermanradtke.com>" ]
+
+[lib]
+
+name = "pgsql_hal"
+
+[dependencies]
+
+hal = "*"
+postgres = "*"

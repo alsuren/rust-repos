@@ -1,0 +1,17 @@
+[package]
+name = "region_buffer"
+version = "0.1.5"
+authors = ["Aaron Power <theaaronepower@gmail.com>"]
+edition = "2018"
+categories = ["data-structures"]
+keywords = ["region", "buffer", "shared", "mutable", "reference"]
+license = "MIT/Apache-2.0"
+description = "A growable array allowing for multiple mutable non overlapping regions"
+repository = "https://github.com/Aaronepower/region_buffer.git"
+
+[badges]
+[badges.travis-ci]
+repository = "Aaronepower/region_buffer"
+
+
+[dependencies]

@@ -1,0 +1,10 @@
+[package]
+name = "remits"
+version = "0.1.0"
+authors = ["badtuple <the.legend@badtuple.me>"]
+edition = "2018"
+
+[dependencies]
+slog = "*"
+slog-term = "*"
+slog-async = "*"

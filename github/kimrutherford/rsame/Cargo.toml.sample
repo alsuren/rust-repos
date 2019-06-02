@@ -1,0 +1,10 @@
+[package]
+
+name = "rsame"
+version = "0.0.1"
+authors = ["Kim Rutherford <kmr@aska.gen.nz>"]
+
+[dependencies]
+getopts = "*"
+regex = "*"
+regex_macros = "*"

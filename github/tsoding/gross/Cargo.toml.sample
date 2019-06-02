@@ -1,0 +1,12 @@
+[package]
+name = "gross"
+version = "0.1.0"
+authors = ["rexim <reximkut@gmail.com>"]
+
+[dependencies]
+sdl2 = "0.30"
+gl = "0.6.0"
+
+[[example]]
+name = "hello_world"
+path = "examples/hello_world.rs"

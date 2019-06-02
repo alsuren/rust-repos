@@ -1,0 +1,17 @@
+[package]
+name = "ingotchest"
+version = "0.1.0"
+authors = ["Shing Lyu <shing.lyu@gmail.com>"]
+
+[dependencies]
+
+env_logger = "*"
+iron = "*"
+iron-test = "*"
+iron-cors = "*"
+log = "*"
+router = "*"
+serde = "*"
+serde_json = "*"
+serde-value = "*"
+serde_yaml = "*"

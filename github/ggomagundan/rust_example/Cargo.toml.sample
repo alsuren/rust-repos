@@ -1,0 +1,20 @@
+[package]
+name = "rust_example"
+version = "0.2.0"
+authors = ["ggomagundan <pbs52@hanmail.net>"]
+
+[dependencies]
+dotenv = "0.8.0"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+
+[[bin]]
+name = "fibonacci"
+path = "src/fibonacci/main.rs"
+
+[[bin]]
+name = "env"
+path = "src/env.rs"

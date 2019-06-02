@@ -1,0 +1,39 @@
+[workspace]
+members = [
+	".",
+	"components/ast",
+	"components/context",
+	"components/cst",
+	"components/errors",
+	"components/interpreter",
+	"components/modules",
+	"components/parser",
+	"components/util",
+	"components/value"
+]
+
+[package]
+authors = ["Nathan Ringo <remexre@gmail.com>"]
+description = "A dependently typed Lisp with algebraic effects."
+edition = "2018"
+license = "Apache-2.0/MIT"
+name = "stahl"
+version = "0.1.0"
+
+[dependencies]
+ansi_term = "0.11.0"
+dirs = "1.0.4"
+log = "0.4.6"
+maplit = "1.0.1"
+rustyline = "3.0.0"
+stahl_ast = { path = "components/ast" }
+stahl_context = { path = "components/context" }
+stahl_cst = { path = "components/cst" }
+stahl_errors = { path = "components/errors" }
+stahl_interpreter = { path = "components/interpreter" }
+stahl_modules = { path = "components/modules" }
+stahl_parser = { path = "components/parser" }
+stahl_util = { path = "components/util" }
+stahl_value = { path = "components/value" }
+stderrlog = "0.4.1"
+structopt = "0.2.14"

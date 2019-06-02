@@ -1,0 +1,15 @@
+[package]
+name = "tagg"
+version = "1.1.1"
+authors = ["Austin Kiekintveld <me@akiek.com>"]
+
+[dependencies]
+clap = "2"
+csv = "1"
+fnv = "1"
+serde = "1"
+serde_derive = "1"
+
+[profile.release]
+debug = true
+lto = true

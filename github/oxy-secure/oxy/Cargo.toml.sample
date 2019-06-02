@@ -1,0 +1,37 @@
+[package]
+name = "oxy"
+version = "3.0.0"
+authors = ["Jenna Magius <pyrosim@gmail.com>"]
+license = "BSD-2-Clause"
+description = "A remote access tool."
+repository = "https://github.com/oxy-secure/oxy"
+
+[dependencies]
+clap = "2.31"
+toml = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+serde_cbor = "0.8"
+libflate = "0.1"
+byteorder = "1.2"
+log = "0.4"
+env_logger = "0.5"
+shlex = "0.1"
+ring = "0.12"
+transportation = { git = "https://github.com/oxy-secure/transportation.git", branch = "dev" }
+lazy_static = "1.0"
+num = "0.1"
+nix = "0.11"
+libc = "0.2.40"
+data-encoding = "2.1.1"
+textwrap = { version = "0.10", features = ["term_size"] }
+snow = "0.2.1"
+linefeed = "0.5"
+dirs = "1"
+
+[target.'cfg(unix)'.dependencies]
+termion = "1.5.1"
+
+[profile.release]
+lto = true
+panic = "abort"

@@ -1,0 +1,46 @@
+[package]
+name = "brids"
+version = "0.4.0"
+authors = ["Ricardo Silva Veloso <ricvelozo@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = """
+Parse and generate random CPF/ICN and CNPJ, Brazil's ID numbers.
+"""
+edition = "2018"
+repository = "https://gitlab.com/ricvelozo/brids-rs"
+documentation = "https://docs.rs/brids"
+keywords = ["parser", "format", "validation", "cpf", "cnpj"]
+categories = ["parser-implementations", "value-formatting"]
+readme = "README.md"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[badges]
+gitlab = { repository = "ricvelozo/brids-rs" }
+travis-ci = { repository = "ricvelozo/brids-rs" }
+
+[dependencies]
+failure = "0.1"
+rand = { version = "0.6", optional = true }
+serde = { version = "1.0", optional = true }
+
+[dev-dependencies]
+serde_derive = "1.0"
+serde_json = "1.0"
+serde_test = "1.0"
+
+[features]
+default = ["rand"]
+
+[[example]]
+name = "random"
+required-features = ["rand"]
+
+[[example]]
+name = "seed"
+required-features = ["rand"]
+
+[[example]]
+name = "serde"
+required-features = ["rand", "serde"]

@@ -1,0 +1,11 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["darksv <darek969-12@o2.pl>"]
+edition = "2018"
+
+[dependencies]
+regex = "1.1.0"
+itertools = "0.7.11"
+chrono = "0.4.6"
+slice-deque = "0.1.16"

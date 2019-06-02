@@ -1,0 +1,24 @@
+[package]
+name = "runes"
+version = "0.2.4"
+authors = ["Determinant <tederminant@gmail.com>"]
+description = "No-std NES emulator library and minimal emulator written purely in Rust."
+repository = "https://github.com/Determinant/runes"
+keywords = ["nes", "emulator", "6502"]
+categories = ["no-std", "emulators"]
+license = "MIT"
+
+[dev-dependencies.sdl2]
+version = "0.31"
+features = ["unsafe_textures"]
+
+[dev-dependencies.clap]
+version = "2.29.0"
+
+[lib]
+name = "runes"
+path = "src/lib.rs"
+
+[[example]]
+name = "runes"
+path = "src/bin.rs"

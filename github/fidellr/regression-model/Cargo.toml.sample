@@ -1,0 +1,17 @@
+[package]
+name = "regression-model-tensorflow"
+version = "0.1.0"
+authors = ["fidellr <fidelramadhan@gmail.com>"]
+
+[dependencies]
+libc = "0.2"
+aligned_alloc = "0.1"
+num-complex = { version = "0.1.40", default-features = false }
+tensorflow-sys = { version = "0.10.0", path = "tensorflow-sys" }
+
+[dev-dependencies]
+random = "0.12"
+
+[features]
+tensorflow_gpu = ["tensorflow-sys/tensorflow_gpu"]
+tensorflow_unstable = []

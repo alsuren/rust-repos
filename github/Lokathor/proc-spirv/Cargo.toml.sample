@@ -1,0 +1,21 @@
+[package]
+name = "proc-spirv"
+description = "procedural macro your SPIR-V creation."
+version = "0.0.1"
+authors = ["Lokathor <zefria@gmail.com>"]
+repository = "https://github.com/Lokathor/proc-spirv"
+readme = "README.md"
+keywords = ["spirv"]
+edition = "2018"
+license = "0BSD"
+
+[badges]
+appveyor = { repository = "Lokathor/proc-spirv" }
+travis-ci = { repository = "Lokathor/proc-spirv" }
+
+[dependencies]
+syn = { version="0.15", features = ["full", "extra-traits"] }
+shaderc = "0.3"
+
+[lib]
+proc-macro = true

@@ -1,0 +1,7 @@
+[package]
+name = "litepostgresql"
+version = "0.1.0"
+authors = ["lunga <stumenz.complex@gmail.com>"]
+
+[dependencies]
+postgres = "0.15"

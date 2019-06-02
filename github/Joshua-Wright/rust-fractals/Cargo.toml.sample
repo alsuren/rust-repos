@@ -1,0 +1,18 @@
+[package]
+name = "fractals"
+version = "0.1.0"
+authors = ["Josh Wright <madewithlinux.josh@gmail.com>"]
+
+[dependencies]
+imagefmt = "4.0.0"
+palette = "0.2"
+num = "*"
+itertools = "0.6.0"
+x86intrin = "0.4.2"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+clap = {version = "~2.19.0", features = ["yaml"]}
+bincode = "*"
+rayon = "0.7.0"
+rand = "0.3"

@@ -1,0 +1,23 @@
+[package]
+name = "bbc_em"
+version = "0.1.0"
+authors = ["Greg Beard <greg.beard@vodafone.com>"]
+
+[lib]
+name = "bbc_em"
+path = "src/lib.rs"
+
+[dependencies]
+kernel32-sys = "*"
+winapi = "*"
+minifb = "*"
+glyphs = { path = "glyphs" }
+log = "*"
+env_logger = "*"
+
+[features]
+cpu-logging = []
+memory-logging = []
+video-logging = []
+via-logging = []
+

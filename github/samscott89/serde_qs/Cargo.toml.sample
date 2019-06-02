@@ -1,0 +1,37 @@
+[package]
+authors = ["Sam Scott <me@samjs.co.uk>"]
+categories = ["encoding", "web-programming"]
+description = "Querystrings for Serde"
+documentation = "https://docs.rs/serde_qs"
+keywords = ["serde", "serialization", "querystring"]
+license = "MIT/Apache-2.0"
+name = "serde_qs"
+repository = "https://github.com/samscott89/serde_qs"
+readme = "README.md"
+version = "0.4.6"
+
+[badges]
+
+[badges.travis-ci]
+repository = "samscott89/serde_qs"
+
+[dependencies]
+actix-web = { version ="0.7", optional = true }
+data-encoding = "2.1.2"
+error-chain = "0.12.0"
+percent-encoding = "1.0.1"
+serde = "1.0.85"
+
+[dev-dependencies]
+csv = "1.0.5"
+rand = "0.6.4"
+serde_derive = "1.0.85"
+serde_urlencoded = "0.5.4"
+
+[features]
+default = []
+actix = ["actix-web"]
+
+[package.metadata.docs.rs]
+features = [ "actix" ]
+all-features = true

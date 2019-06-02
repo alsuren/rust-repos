@@ -1,0 +1,25 @@
+[package]
+name = "elastic-cli"
+version = "0.2.5"
+authors = ["Prokopev Alexandr <avalarin@gmail.com>"]
+
+[dependencies]
+clap = {version = "2.31.2", features = ["yaml"]}
+elastic = "^0.20.10"
+elastic_derive = "^0.20.10"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+serde_yaml = "^0.8.8"
+reqwest = "0.9.11"
+log = "0.4.1"
+stderrlog = "0.3.0"
+colored = "1.6"
+strfmt = "0.1.6"
+dirs = "^1.0.4"
+base64 = "^0.10"
+failure = "~0.1"
+failure_derive = "~0.1"
+keyring = "0.6.1"
+rpassword = "3.0.1"
+termion = "1.5.2"

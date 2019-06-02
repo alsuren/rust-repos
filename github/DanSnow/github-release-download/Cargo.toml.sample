@@ -1,0 +1,16 @@
+[package]
+name = "github-release-download"
+version = "0.1.0"
+authors = ["DanSnow <dododavid006@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+indicatif = "0.11.0"
+reqwest = "0.9.10"
+serde = { version = "1.0.89", features = ["derive"] }
+skim = "0.5.5"
+structopt = "0.2.14"
+
+[[bin]]
+name = "grd"
+path = "src/main.rs"

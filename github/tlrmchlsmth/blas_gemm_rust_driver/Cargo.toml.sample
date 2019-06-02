@@ -1,0 +1,16 @@
+[package]
+name = "mkl_rust_driver"
+version = "0.1.0"
+authors = ["Tyler Michael Smith <tms@cs.utexas.edu>"]
+build = "build.rs"
+
+[dependencies]
+momms = { git = "https://github.com/tlrmchlsmth/momms" }
+
+[[bin]]
+name = "mkl_rust_driver"
+path = "src/mkl_driver.rs"
+
+[[bin]]
+name = "blis_rust_driver"
+path = "src/blis_driver.rs"

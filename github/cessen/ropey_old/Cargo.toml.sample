@@ -1,0 +1,15 @@
+[package]
+
+name = "ropey"
+version = "0.3.0"
+authors = ["Nathan Vegdahl <cessen@cessen.com>"]
+description = "Mutable text ropes for Rust"
+#documentation = "..."
+#homepage = "..."
+repository = "https://github.com/cessen/ropey"
+readme = "readme.md"
+license = "CC0-1.0"
+keywords = ["rope", "text"]
+
+[dependencies]
+unicode-segmentation = "0.1.*"

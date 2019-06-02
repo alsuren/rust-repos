@@ -1,0 +1,28 @@
+[package]
+
+name = "hackrf"
+version = "0.0.2"
+authors = ["Adam Greig <adam@adamgreig.com>"]
+description = "Rust bindings for libhackrf"
+repository = "https://github.com/adamgreig/hackrf-rs"
+homepage = "https://github.com/adamgreig/hackrf-rs"
+readme = "README.md"
+keywords = ["SDR", "ffi", "hackrf"]
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "hackrf"
+path = "src/lib.rs"
+test = false
+doctest = false
+bench = false
+doc = true
+plugin = false
+
+[[bin]]
+name = "hackrf_demo"
+path = "src/demo.rs"
+test = false
+doctest = false
+bench = false
+doc = false

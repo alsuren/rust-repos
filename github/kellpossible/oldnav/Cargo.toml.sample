@@ -1,0 +1,33 @@
+[package]
+name = "oldnav"
+version = "0.1.0"
+authors = ["Luke Frisken <l.frisken@gmail.com>"]
+
+[lib]
+name = "oldnav_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "oldnav"
+path = "src/main.rs"
+
+[dependencies.nanovg]
+version = "*"
+features = ["gl2"]
+
+[dependencies]
+nalgebra = "0.12.2"
+astro = "2.0.0"
+sun = "0.2"
+geojson = "0.8.0"
+chrono = "0.3.*"
+libc = "0.2.16"
+xplm = "0.2.2"
+xplm-sys = "0.2.2"
+xplane_plugin = "0.1.1"
+linked-list = "0.0.3"
+approx = "0.1.1"
+combine = "3.0.0-alpha.3"
+
+[profile.dev]
+

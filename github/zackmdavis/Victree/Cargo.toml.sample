@@ -1,0 +1,10 @@
+cargo-features = ["edition"]
+
+[package]
+name = "victree"
+version = "0.0.1"
+authors = ["Zack M. Davis <code@zackmdavis.net>"]
+edition = "2018"
+
+[dependencies]
+# chess = "1.0"

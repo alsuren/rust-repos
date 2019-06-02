@@ -1,0 +1,8 @@
+[package]
+name = "hack_assembler"
+version = "0.7.0"
+authors = ["thomasfermi"]
+
+[dependencies]
+clap = "2.32.0"
+regex = "1.0.6"

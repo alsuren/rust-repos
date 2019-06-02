@@ -1,0 +1,8 @@
+[package]
+name = "t64write"
+version = "0.1.0"
+authors = ["Danny van Bruggen <hexagonaal@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1"

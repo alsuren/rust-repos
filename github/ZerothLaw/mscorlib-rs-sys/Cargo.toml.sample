@@ -1,0 +1,22 @@
+[package]
+name = "mscorlib-sys"
+version = "0.1.11"
+license = "MIT"
+description = "Raw FFI bindings for mscorlib"
+repository = "https://github.com/ZerothLaw/mscorlib-rs-sys"
+readme = "README.md"
+keywords = ["windows", "ffi", "com", "mscorlib"]
+categories = ["external-ffi-bindings", "os::windows-apis"]
+authors = ["Tyler Laing <trinioler@gmail.com>"]
+build = "build.rs"
+edition = "2018"
+
+[dependencies]
+winapi = { version = "0.3.6", features = ["combaseapi", "oaidl", "winerror",]}
+
+[build-dependencies]
+cc = "1.0.29"
+winreg = "0.6"
+
+[package.metadata.docs.rs]
+default-target = "x86_64-pc-windows-msvc"

@@ -1,0 +1,8 @@
+[package]
+authors = ["ta"]
+name = "stm32f0xx"
+version = "0.1.0"
+
+[dependencies]
+cortex-m = "0.2.10"
+vcell = "0.1.0"

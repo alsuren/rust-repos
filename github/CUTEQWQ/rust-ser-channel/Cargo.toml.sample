@@ -1,0 +1,9 @@
+[package]
+name = "rust-ser"
+version = "0.1.0"
+authors = ["cutewen"]
+
+[dependencies]
+package_handler = {path = "/Users/cutewen/Desktop/ser-cli/package_handler"}
+bichannels = {path = "/Users/cutewen/Desktop/ser-cli/bichannels"}
+stream_handler = {path = "/Users/cutewen/Desktop/ser-cli/stream_handler"}

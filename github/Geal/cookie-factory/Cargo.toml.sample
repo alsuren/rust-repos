@@ -1,0 +1,31 @@
+[package]
+name = "cookie-factory"
+version = "0.3.0-beta2"
+authors = ["Geoffroy Couprie <geo.couprie@gmail.com>", "Pierre Chifflier <chifflier@wzdftpd.net>"]
+license = "MIT"
+repository = "https://github.com/rust-bakery/cookie-factory"
+readme = "README.md"
+documentation = "http://docs.rs/cookie-factory"
+description = "nom inspired serialization library"
+categories = ["encoding"]
+keywords = ["encoding", "serialization", "nom"]
+
+include = [
+  "Cargo.toml",
+  "LICENSE",
+  "README.md",
+  ".gitignore",
+  "src/*.rs",
+  "src/combinators/*.rs"
+]
+
+[badges]
+travis-ci = { repository = "Geal/cookie-factory" }
+
+[dev-dependencies]
+maplit = "^1.0"
+
+[profile.bench]
+debug = true
+lto = true
+codegen-units = 1

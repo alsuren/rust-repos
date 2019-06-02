@@ -1,0 +1,15 @@
+[package]
+name = "unicode-lexer-tool"
+version = "0.0.1"
+authors = ["CAD97 <cad97@cad97.com>"]
+publish = false
+
+[dependencies]
+# TODO: Switch from ucd to UNIC https://crates.io/crates/unic-ucd
+# Blocked on UNIC including at least XID_Start and XID_Continue (DerivedCoreProperties)
+ucd = "0.1"
+petgraph = "0.4"
+
+[[bin]]
+name = "debug-run"
+path = "debug-run-bin/main.rs"

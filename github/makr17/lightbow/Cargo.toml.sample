@@ -1,0 +1,9 @@
+[package]
+name = "lightbow"
+version = "0.1.1"
+authors = ["makr17 <bracher@gmail.com>"]
+
+[dependencies]
+getopts = "0.2"
+time = "0.1"
+houselights = { git = "https://github.com/makr17/houselights.git" }

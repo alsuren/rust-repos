@@ -1,0 +1,30 @@
+[package]
+name = "rust-kpdb"
+version = "0.4.0"
+authors = ["Martijn Rijkeboer <mrr@sru-systems.com>"]
+license = "MIT/Apache-2.0"
+description = "Library for reading/writing KeePass 2 and KeePassX databases."
+documentation = "https://docs.sru-systems.com/rust-kpdb/0.4.0/kpdb/"
+homepage = "https://github.com/sru-systems/rust-kpdb"
+repository = "https://github.com/sru-systems/rust-kpdb"
+readme = "README.md"
+keywords = ["keepass", "keepassx", "kdbx"]
+
+[lib]
+name = "kpdb"
+
+[dependencies]
+base64 = "0.6.0"
+byteorder = "1"
+chrono = "0.4"
+flate2 = "0.2"
+hex = "0.2.0"
+rand = "0.3"
+rust-crypto = "0.2"
+secstr = "0.3.0"
+uuid = { version = "0.5", features = ["v4"] }
+xml-rs = "0.6"
+
+[dev-dependencies]
+quickcheck = "0.4.1"
+

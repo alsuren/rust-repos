@@ -1,0 +1,33 @@
+[package]
+name = "raft-consensus"
+description = "Raft consensus algorithm implementation"
+version = "0.4.0"
+authors = ["Albibek <albibek@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/Albibek/raft-consensus"
+keywords = ["raft", "consensus", "distributed"]
+categories = ["algorithms"]
+
+[dependencies]
+uuid = {version= "^0.7", features=["v4"]}
+byteorder="^1.2"
+failure_derive="^0.1"
+failure="^0.1"
+log = {version="^0.4", features=["release_max_level_warn", "max_level_trace"] }
+serde = { version = "^1.0", optional = true }
+serde_derive = { version = "^1.0", optional = true }
+capnp = { version="^0.9", optional = true }
+
+[dev-dependencies]
+pretty_env_logger="^0.2"
+serde_json = "^1.0"
+
+[build-dependencies]
+capnpc = { version="^0.9", optional = true }
+capnp = { version="^0.9", optional = true }
+
+[features]
+default = []
+use_serde = ["serde", "serde_derive", "uuid/serde" ]
+use_capnp = ["capnpc", "capnp"]
+all = [ "use_serde", "use_capnp" ]

@@ -1,0 +1,27 @@
+[package]
+authors = ["Zeyla Hellyer <hi@zeyla.me>"]
+description = "A crate for generating Zalgo text with defined parameters."
+documentation = "http://docs.rs/zalgo"
+homepage = "https://github.com/zeyla/zalgo.rs"
+keywords = ["zalgo"]
+license = "ISC"
+name = "zalgo"
+publish = false
+readme = "README.md"
+repository = "https://github.com/zeyla/zalgo.rs.git"
+version = "0.2.0"
+
+[badges.maintenance]
+status = "actively-developed"
+
+[badges.travis-ci]
+branch = "master"
+repository = "zeyla/zalgo.rs"
+
+[dependencies]
+rand = "0.5"
+
+[[bin]]
+doc = false
+name = "zalgo"
+path = "bin/zalgo.rs"

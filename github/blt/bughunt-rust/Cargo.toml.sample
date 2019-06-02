@@ -1,0 +1,15 @@
+[package]
+name = "bughunt-rust"
+version = "0.1.0-pre"
+authors = ["Brian L. Troutwine <brian@troutwine.us>"]
+
+[dependencies]
+arbitrary = "0.2"
+strum = "0.13.0"
+strum_macros = "0.13.0"
+
+[dependencies.libfuzzer-sys]
+git = "https://github.com/rust-fuzz/libfuzzer-sys.git"
+
+[patch.crates-io]
+strum_macros = { git = "https://github.com/Peternator7/strum" }

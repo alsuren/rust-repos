@@ -1,0 +1,8 @@
+[package]
+name = "trusty"
+version = "0.1.0"
+authors = ["BookOwl <stanleybookowl@gmail.com>"]
+
+[dependencies]
+termion = "1.0"
+left-pad = "1.0"

@@ -1,0 +1,7 @@
+[package]
+name = "a_web_framework"
+version = "0.1.0"
+authors = ["dawid"]
+
+[dependencies]
+rusqlite = "0.7.2"

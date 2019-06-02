@@ -1,0 +1,10 @@
+[package]
+name = "rleveldb"
+version = "0.1.0"
+authors = ["zhangguyu"]
+
+[dependencies]
+byteorder = { version = "1", default-features = false }
+tokio = "0.1"
+futures = "0.1.23"
+rand = "0.5"

@@ -1,0 +1,24 @@
+[package]
+name = "servy"
+version = "1.0.0"
+authors = ["zethra <jediben97@gmail.com>"]
+description = "A tiny little web server"
+homepage = "https://github.com/zethra/servy"
+repository = "https://github.com/zethra/servy"
+readme = "README.md"
+keywords = ["web", "server", "hyper", "tokio", "tiny"]
+categories = ["command-line-utilities"]
+license = "Apache-2.0/MIT"
+
+[badges]
+appveyor = { repository = "zethra/servy", branch = "master", service = "github" }
+travis-ci = { repository = "zethra/servy", branch = "master" }
+
+[dependencies]
+lazy_static = "1.0.0"
+clap = "2.29.0"
+futures = "0.1.17"
+hyper = "0.11.10"
+
+[profile.release]
+lto = true

@@ -1,0 +1,16 @@
+[package]
+name = "apifuzz"
+version = "0.1.0"
+authors = ["Tom Fogal <tfogal@sci.utah.edu>"]
+build = "build.rs"
+
+[dependencies]
+rand = "0.3"
+tempdir = "0.3"
+regex = "0.2.2"
+
+[dependencies.lalrpop-util]
+version = "0.13.1"
+
+[build-dependencies.lalrpop]
+version = "0.13.1"

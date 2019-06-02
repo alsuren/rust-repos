@@ -1,0 +1,10 @@
+[package]
+name = "travelling-salesman-rust"
+version = "0.1.0"
+authors = ["thomas"]
+
+[dependencies]
+csv = "*"
+rustc-serialize = "0.3"
+rand = "*"
+rayon = "*"

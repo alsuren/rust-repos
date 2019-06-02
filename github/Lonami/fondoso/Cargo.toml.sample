@@ -1,0 +1,9 @@
+[package]
+name = "fondoso"
+version = "0.1.0"
+authors = ["Lonami Exo <totufals@hotmail.com>"]
+
+[dependencies]
+rand = "0.5.0-pre.0"
+image = "0.18.0"
+structopt = "0.2"

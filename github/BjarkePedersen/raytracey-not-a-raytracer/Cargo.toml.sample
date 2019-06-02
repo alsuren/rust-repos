@@ -1,0 +1,21 @@
+[package]
+name = "raytracey"
+version = "0.1.0"
+authors = ["Bjarke <Bjarke.pedersen@inprove.dk>"]
+edition = "2018"
+
+[dependencies]
+minifb = "*"
+rgb = "*"
+rand = "*"
+cgmath = "*"
+rayon = "*"
+ordered-float = "*"
+time = "*"
+either = "*"
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true
+codegen-units = 1

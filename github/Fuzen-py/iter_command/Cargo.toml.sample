@@ -1,0 +1,9 @@
+[package]
+authors = ["Fuzen-py <fuzen@protonmail.com>"]
+name = "iter_command"
+version = "0.1.4"
+
+[dependencies]
+clap = "2.31.2"
+rayon = "1.0.1"
+stopwatch = "0.0.7"

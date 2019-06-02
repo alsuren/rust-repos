@@ -1,0 +1,12 @@
+[package]
+name = "mockapi"
+version = "0.0.1"
+authors = ["etopiei"]
+
+[dependencies]
+clap = { version = "~2.29", features = ["yaml"] }
+iron = "0.4.0"
+chrono = "0.4"
+router = "0.4.0"
+rustc-serialize = "0.3"
+exec = "0.3.1"

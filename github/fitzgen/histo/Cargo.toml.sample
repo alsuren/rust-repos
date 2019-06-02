@@ -1,0 +1,23 @@
+[package]
+authors = ["Nick Fitzgerald <fitzgen@gmail.com>"]
+description = "Simple histograms with configurable buckets"
+documentation = "https://docs.rs/histo"
+keywords = ["histogram", "stddev", "mean"]
+license = "Apache-2.0/MIT"
+name = "histo"
+repository = "https://github.com/fitzgen/histo"
+version = "0.1.0"
+
+[badges]
+travis-ci = { repository = "fitzgen/histo" }
+
+[[bin]]
+name = "histo"
+doc = false
+
+[dependencies]
+streaming-stats = "0.1.28"
+
+[dependencies.quickcheck]
+optional = true
+version = "0.4.1"

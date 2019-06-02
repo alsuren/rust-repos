@@ -1,0 +1,44 @@
+[package]
+name = "rustheus"
+version = "0.1.0"
+authors = ["Julian Konchunas <konchunas@gmail.com>"]
+
+[dependencies]
+clap = "~2.25.1"
+shrust = "~0.0.4"
+log = "~0.3.8"
+pretty_env_logger = "0.2.2"
+ctrlc = { version = "~3.0", features = ["termination"] }
+parking_lot = { version = "~0.5.5", features = ["deadlock_detection"] } #use experimental deadlock detection
+futures-cpupool = "~0.1.8"
+futures = "~0.1.21"
+
+chain = { path = "src/chain" }
+bitcrypto = { path = "src/crypto" }
+serialization = { path = "src/serialization" }
+serialization_derive = { path = "src/serialization_derive" }
+message = { path = "src/message" }
+params = { path = "src/params" }
+primitives = { path = "src/primitives" }
+db = { path = "src/db" }
+keys = { path = "src/keys" }
+script = { path = "src/script" }
+verification = { path = "src/verification" }
+memory_pool = { path = "src/mempool" }
+chain_builder =  { path = "src/chain_builder" }
+rpc = { path = "src/rpc" }
+sync = { path = "src/sync" }
+p2p =  { path = "src/p2p" }
+
+[[bin]]
+path = "src/rustheus/main.rs"
+name = "rustheus"
+
+[workspace]
+members = [
+    "src/chain",
+    "src/crypto",
+    "src/serialization",
+    "src/params",
+    "src/message",
+    ]

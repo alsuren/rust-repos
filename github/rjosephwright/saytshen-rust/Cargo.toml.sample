@@ -1,0 +1,14 @@
+[package]
+name = "saytshen"
+version = "0.1.0"
+authors = ["Joseph Wright <rjosephwright@gmail.com>"]
+
+[dependencies]
+clap = "2"
+csv = "0.15"
+yaml-rust = "*"
+serde = "0.9"
+serde_derive = "0.9"
+serde_yaml = "0.6"
+rustc-serialize = "0.3"
+regex = "0.2"

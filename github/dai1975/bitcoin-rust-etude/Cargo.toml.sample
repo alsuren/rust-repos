@@ -1,0 +1,15 @@
+[package]
+name = "bitcoin-rust-etude"
+version = "0.1.0"
+authors = ["KANDA Daisuke <dai1975@gmail.com>"]
+
+[dependencies]
+scoped_threadpool = "0.1.7"
+assert_matches = "1.0.0"
+time = "0.1"
+rust-crypto = "^0.2"
+secp256k1 = "0.5.4"
+rand = "^0.3"
+bit-vec = "^0.4"
+net2 = "^0.2"
+lazy_static = "0.1.*"

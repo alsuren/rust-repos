@@ -1,0 +1,7 @@
+[package]
+name = "wustos_kalloc"
+version = "0.1.0"
+authors = ["Todd Eisenberger <todd@teisen.be>"]
+
+[lib]
+crate-type = ["rlib"]

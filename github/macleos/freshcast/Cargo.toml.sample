@@ -1,0 +1,9 @@
+[package]
+name = "freshcast"
+version = "0.1.0"
+authors = ["Samuel <samuel@macleod.space>"]
+edition = "2018"
+
+[dependencies]
+rand="*"
+base64 = "*"

@@ -1,0 +1,25 @@
+[package]
+name = "litx"
+version = "0.1.0"
+authors = ["Cedrick Cooke <development@cedrickc.net>"]
+readme = "README.md"
+license = "MIT/Apache-2.0"
+description = "Litx is a typesetting language and application designed with ease of use in mind."
+repository = "https://github.com/cedrickcooke/litx"
+exclude = [ "book/*", "res/*" ]
+publish = false
+
+[dependencies]
+litx_error       = { path = "lib/litx_error", version = "0.1.0" }
+litx_interpreter = { path = "lib/litx_interpreter", version = "0.1.0" }
+litx_layout      = { path = "lib/litx_layout", version = "0.1.0" }
+litx_output      = { path = "lib/litx_output", version = "0.1.0" }
+litx_output_pdf  = { path = "lib/litx_output_pdf", version = "0.1.0" }
+litx_output_web  = { path = "lib/litx_output_web", version = "0.1.0" }
+chrono = "0.2.25"
+clap = "2.20.0"
+slog = "1.3.2"
+slog-scope = "0.2.2"
+slog-term = "1.3.3"
+
+[workspace]

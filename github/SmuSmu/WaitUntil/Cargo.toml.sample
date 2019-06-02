@@ -1,0 +1,14 @@
+[package]
+name = "WaitUntil"
+version = "0.1.0"
+authors = ["SmuSmu"]
+
+[dependencies]
+
+[dependencies.clap]
+version = "~2.27.0"
+default-features = false
+ 
+# Cherry-pick the features you'd like to use
+# Maybe Later
+# features = [  ]

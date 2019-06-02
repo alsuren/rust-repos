@@ -1,0 +1,11 @@
+[package]
+name = "server-kingslayer"
+description = "server for kingslayer-wasm"
+version = "0.1.0"
+authors = ["Maxwell Anderson <maxwell.brayden.anderson@gmail.com>"]
+edition = "2018"
+license = "MIT"
+publish = false
+
+[dependencies]
+rocket = "0.4"

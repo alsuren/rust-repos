@@ -1,0 +1,23 @@
+[package]
+name = "flit"
+version = "0.1.1"
+authors = ["Tarun Verghis <tarun.verghis@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Bloom filter backed by xxHash"
+repository = "https://github.com/tverghis/flit"
+keywords = ["bloom", "filter", "bloomfilter"]
+categories = ["data-structures"]
+readme = "README.md"
+
+[dependencies]
+bitvec = "0.10"
+twox-hash = "1.1"
+
+[dev-dependencies]
+criterion = "0.2"
+rand = "0.6"
+
+[[bench]]
+name = "basic"
+harness = false

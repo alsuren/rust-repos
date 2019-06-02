@@ -1,0 +1,25 @@
+[package]
+name = "rddns"
+version = "0.2.0"
+authors = ["Raik Bieniek <dev@voidnode.de>"]
+
+[dependencies]
+hyper = "0.12.23"
+hyper-rustls = "0.16.1"
+futures = "0.1.25"
+tokio = "0.1.15"
+tokio-timer = "0.2.10"
+toml = "0.4.10"
+serde = "1.0.84"
+serde_derive = "1.0.84"
+regex = "1.1.0"
+lazy_static = "1.2.0"
+log = "0.4.6"
+simplelog = "0.5.3"
+clap = "2.32.0"
+base64 = "0.10.0"
+pnet = "0.22.0"
+ipnetwork = "0.14.0"
+
+[dev-dependencies]
+tempdir = "0.3.7"

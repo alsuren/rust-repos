@@ -1,0 +1,12 @@
+[package]
+name = "jvm-profiler"
+version = "0.1.0"
+authors = ["nichuanlei"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+jni-sys = "0.3.0"
+jvmti-sys = "0.1.0"

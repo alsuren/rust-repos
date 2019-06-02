@@ -1,0 +1,25 @@
+[package]
+authors = ["Zeyla Hellyer <zeyla@hellyer.dev>"]
+description = "Asynchronous channels for stderr, stdin, and stdout."
+documentation = "https://docs.zeyla.me/futures-std-streams"
+homepage = "https://github.com/zeyla/futures-std-streams"
+license = "ISC"
+publish = false
+name = "futures-std-streams"
+repository = "https://github.com/zeyla/futures-std-streams.git"
+version = "0.1.0"
+
+[badges.maintenance]
+status = "actively-developed"
+
+[badges.coveralls]
+branch = "master"
+repository = "zeyla/futures-std-streams"
+service = "github"
+
+[badges.travis-ci]
+branch = "master"
+repository = "zeyla/futures-std-streams"
+
+[dependencies]
+futures = "0.1"

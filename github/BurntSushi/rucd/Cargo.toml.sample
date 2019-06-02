@@ -1,0 +1,26 @@
+[package]
+name = "rucd"
+version = "0.0.1"  #:version
+authors = ["Andrew Gallant <jamslam@gmail.com>"]
+description = """
+A command line utility for browsing and searching the Unicode character
+database.
+"""
+documentation = "https://github.com/BurntSushi/rucd"
+homepage = "https://github.com/BurntSushi/rucd"
+repository = "https://github.com/BurntSushi/rucd"
+readme = "README.md"
+keywords = ["unicode", "database", "character", "search"]
+license = "Unlicense/MIT"
+
+[dependencies]
+byteorder = "1"
+clap = "2"
+fst = { version = "0.3", default-features = false }
+lazy_static = "1"
+regex = "0.2.9"
+tabwriter = "1"
+ucd-util = "0.1"
+
+[profile.release]
+debug = true

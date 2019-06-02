@@ -1,0 +1,14 @@
+[package]
+name = "tcpscan-rs"
+version = "0.1.1"
+authors = ["Russ <rmorris@infocyte.com>"]
+build = "build.rs"
+
+[dependencies]
+futures = "*"
+tokio-core = "*"
+tokio-timer = "*"
+mio = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"

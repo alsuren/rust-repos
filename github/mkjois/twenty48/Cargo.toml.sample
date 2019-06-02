@@ -1,0 +1,13 @@
+[package]
+
+name = "twenty48"
+version = "0.0.1"
+authors = ["Manny Jois <m.k.jois@berkeley.edu>"]
+
+[dependencies]
+
+rand = "*"
+
+[dependencies.ncurses]
+
+git = "https://github.com/jeaye/ncurses-rs.git"

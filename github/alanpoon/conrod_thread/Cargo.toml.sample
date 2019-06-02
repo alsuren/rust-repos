@@ -1,0 +1,21 @@
+[package]
+name = "conrod_thread"
+version = "0.1.0"
+authors = ["alanpoon"]
+
+[dependencies]
+conrod = { path ="../conrod", features = ["glium","winit"]}
+conrod_derive = { path ="../conrod/conrod_derive"}
+greed_websocket = {path ="../greed_websocket"}
+itertools = "0.6.0"
+image ="*"
+find_folder ="*"
+libloading ="*"
+
+[lib]
+name = "conrod_thread"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"

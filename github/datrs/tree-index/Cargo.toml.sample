@@ -1,0 +1,13 @@
+[package]
+name = "tree-index"
+version = "0.5.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/datrs/tree-index"
+documentation = "https://docs.rs/tree-index"
+description = "Index a flat-tree"
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+readme = "README.md"
+
+[dependencies]
+flat-tree = "3.4.0"
+sparse-bitfield = "0.8.1"

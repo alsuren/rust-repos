@@ -1,0 +1,18 @@
+[package]
+name = "orientations"
+version = "0.1.0"
+authors = ["rwilson4 <bob@convexanalytics.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "vector3d"
+harness = false
+
+[[bench]]
+name = "quaternion"
+harness = false

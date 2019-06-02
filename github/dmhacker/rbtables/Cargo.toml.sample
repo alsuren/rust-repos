@@ -1,0 +1,18 @@
+[package]
+name = "rbtables"
+version = "0.1.4"
+authors = ["dmhacker <dmhacker@protonmail.com>"]
+description = "Fast & extensible rainbow tables implementation"
+readme = "README.md"
+keywords = ["rainbow", "tables", "hash", "cryptanalysis", "crypto"]
+categories = ["cryptography"]
+license = "MIT"
+
+[dependencies]
+crossbeam = "0.3.0"
+num_cpus = "1.0"
+lazy_static = "1.1.0"
+
+[dev-dependencies]
+md5 = "0.3.6"
+rand = "0.5"

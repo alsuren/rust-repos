@@ -1,0 +1,32 @@
+[package]
+name = "tk-cantal"
+description = """
+    A client for cantal monitoring service. This is not for submitting metrics
+    to the cantal. This library is for accessing metrics that cantal tracks.
+"""
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["cantal", "metrics", "tokio", "monitoring"]
+categories = ["asynchronous", "network-programming"]
+homepage = "http://github.com/tailhook/tk-cantal"
+documentation = "http://docs.rs/tk-cantal"
+version = "0.3.2"
+authors = ["paul@colomiets.name"]
+
+[dependencies]
+tokio-core = "0.1.12"
+tokio-io = "0.1.1"
+tk-http = { version="0.3.6", default-features=false }
+futures = "0.1.11"
+log = "0.4.1"
+abstract-ns = "0.4.1"
+tk-pool = "0.5.3"
+serde = "1.0.0"
+serde_json = "1.0.0"
+serde_derive = "1.0.0"
+serde_millis = "0.1.1"
+failure = "0.1.1"
+
+[dev-dependencies]
+env_logger = "0.5.7"
+tk-easyloop = "0.1.1"

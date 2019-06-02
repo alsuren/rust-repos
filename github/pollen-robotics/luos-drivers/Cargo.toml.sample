@@ -1,0 +1,20 @@
+[workspace]
+members = [
+  "l0-button",
+  "l0-dcmotor",
+  "l0-gpio",
+  "l0-potentiometer",
+  "l0-rgbled",
+  "l0-servo",
+  "l0-xl-320",
+  "eddy",
+  "handy",
+]
+
+[profile.dev]
+opt-level = 0
+debug = true
+codegen-units = 1
+
+[profile.release]
+lto = true

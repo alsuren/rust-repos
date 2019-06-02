@@ -1,0 +1,21 @@
+[package]
+name = "whereami"
+description = "whereami for Rust"
+documentation = "https://rawcdn.githack.com/nabijaczleweli/whereami-rs/doc/whereami/index.html"
+repository = "https://github.com/nabijaczleweli/whereami-rs"
+readme = "README.md"
+keywords = ["whereami", "where", "location", "filesystem"]
+categories = ["rust-patterns", "filesystem"]
+license = "MIT"
+# Remember to also update in appveyor.yml
+version = "1.1.1"
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>"]
+exclude = ["*.enc"]
+build = "build.rs"
+
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+gcc = "0.3"

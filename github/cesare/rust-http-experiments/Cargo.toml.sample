@@ -1,0 +1,17 @@
+[package]
+name = "http-experiments"
+version = "0.1.0"
+authors = ["SAWADA Tadashi <cesare@mayverse.jp>"]
+
+[[bin]]
+name = "http-get"
+path = "src/http-get.rs"
+
+[[bin]]
+name = "curl-get"
+path = "src/curl-get.rs"
+
+[dependencies]
+curl = "0.4.6"
+hyper = "0.10.5"
+hyper-rustls = "0.3.2"

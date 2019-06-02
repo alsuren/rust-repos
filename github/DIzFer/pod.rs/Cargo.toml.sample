@@ -1,0 +1,11 @@
+[package]
+name = "podrs"
+version = "0.1.2"
+authors = ["David Izquierdo <david@izquierdofernandez.com>"]
+
+[dependencies]
+hyper = "0.11"
+reqwest = "0.8"
+sxd-document = "0.2"
+sxd-xpath = "0.4"
+chrono = { version = "0.4", features = ["serde"] }

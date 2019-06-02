@@ -1,0 +1,111 @@
+# This file is part of cordial. It is subject to the license terms in the COPYRIGHT file found in the top-level directory of this distribution and at https://raw.githubusercontent.com/lemonrock/cordial/master/COPYRIGHT. No part of cordial, including this file, may be copied, modified, propagated, or distributed except according to the terms contained in the COPYRIGHT file.
+# Copyright © 2017 The developers of cordial. See the COPYRIGHT file in the top-level directory of this distribution and at https://raw.githubusercontent.com/lemonrock/cordial/master/COPYRIGHT.
+
+
+[package]
+name = "cordial"
+description = "cordial"
+keywords = ["cordial"]
+license = "AGPL-3.0"
+authors = ["Raphael Cohn <raphael.cohn@stormmq.com>"]
+documentation = "https://github.com/lemonrock/cordial/blob/master/README.md"
+homepage = "https://github.com/lemonrock/cordial"
+repository = "https://github.com/lemonrock/cordial.git"
+exclude = ["*"]
+include = ["README.md", "LICENSE", "COPYRIGHT", "src/**/*.rs", "benches/**/*.rs", "examples/**/*.rs", "tests/**/*.rs", "Cargo.toml", "rustfmt.toml", "clippy.toml", "lib/**/*", "src/**/*.h", "tools/**/*", "bindgen-wrapper.conf.d/**/*", "compile-*.conf.d/**/*"]
+#build = "src/build.rs"
+# Relative to Cargo.toml
+readme = "README.md"
+publish = false
+version = "0.0.0"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+
+[dependencies]
+arrayvec = { version = "0.4.6", features = ["serde-1"] }
+barcoders = { version = "0.9.0", features = ["svg"] }
+base64 = "0.6.0"
+brotli2 = "0.3.0"
+chardet = "0.2.3"
+chrono = { version = "0.4", features = ["serde"] }
+clap = "2.26.0"
+comrak = "0.2.4"
+css-autoprefix = "0.0.5"
+css-purify = "0.0.15"
+csv = "0.15"
+daemonize = "0.2.3"
+either = "^1.4"
+engiffen = "0.8.1"
+futures = "0.1.15"
+gif = "0.9.2"
+guetzli-sys = "0.0.3"
+handlebars = "0.29"
+hlua = "0.4.1"
+hyper = "0.11.8"
+hyper-rustls = "0.11.0"
+image = "0.15.0"
+libc = "^0.2"
+log = "0.3"
+malloc_buf = "1.0.0"
+maplit = "0.1.6"
+memenhancer = "0.1.0"
+mime_guess = "1.8.2"
+# Broken with hyper as of version 0.5.1
+mime_multipart = { git = "https://github.com/iseurie/mime-multipart", rev = "f5ae9f72747b6f0188f49972acc9cfe733b2742c" }
+mktemp = "0.3.1"
+mon-artist = "0.1.3"
+mp3-metadata = "0.3.0"
+mp4parse = "0.9"
+net2 = "0.2.31"
+num_cpus = "1.6.2"
+ordermap = { version = "0.3.1", features = ["serde-1"] }
+oxipng = "0.16.3"
+plotlib = "0.2.0"
+phf = "0.7.21"
+phf_macros = "0.7.21"
+qrcode = "0.5.0"
+quick-error = "1.2.1"
+radix_trie = { version = "0.1.2", features = [ "serde" ] }
+ring = "0.12.1"
+rustls = "0.11.0"
+sass-alt = "0.2.7"
+serde_derive = "^1.0"
+serde-hjson = "^0.8"
+serde_json = "^1.0"
+serde = { version = "^1.0", features = [ "rc" ] }
+sfnt2woff-zopfli-sys = "0.0.1"
+stderr-logging = "0.0.1"
+svg = "0.5.5"
+svgcleaner = "0.9.1"
+svgbob = "0.2.3"
+svgdom = "0.6.0"
+tendril = "^0.4"
+tokio-core = "0.1.7"
+tokio-io = "0.1.1"
+#tokio-proto = "0.1"
+tokio-rustls = { version = "0.4.0", features = [ "tokio-proto" ] }
+tokio-signal = "0.1"
+#tokio-service = "0.1.0"
+typed-arena = "1.2.0"
+unicase = "^2.0"
+url = "1.5.1"
+url_serde = "0.2.0"
+woff2-sys = "0.0.1"
+xml-rs = "0.6.1"
+zero85 = "0.2.0"
+zopfli = "0.3.6"
+
+[target.'cfg(unix)'.dependencies]
+nix = "0.9.0"
+
+[target.'cfg(any(target_os = "android", target_os = "linux"))'.dependencies]
+dpdk-unix = "0.0.1"
+
+[patch.crates-io]
+mon-artist = { git = "https://github.com/lemonrock/mon-artist", branch = "range-syntax-fix" }

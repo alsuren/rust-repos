@@ -1,0 +1,40 @@
+[package]
+name = "rblitz"
+version = "0.1.0"
+authors = ["Lukas Wirth <lukastw97@gmail.com>"]
+edition = "2018"
+license = "AGPL-3.0"
+description = "legoland private server"
+publish = false
+
+[dependencies]
+bitflags = "~1.0"
+byteorder = "~1.2"
+chrono = "~0.4"
+crossbeam-channel = "~0.3"
+enet-sys = { path = "./enet-sys" }
+indexmap = "~1.0"
+log = "~0.4"
+nalgebra = "~0.16"
+ron = "~0.4"
+shred = "~0.7"
+specs = "~0.14"
+toml = "~0.4"
+
+# FIXME replace these with our own or a non-mutating blowfish implementation
+block-cipher-trait = "0.6.2"
+block-modes = "0.2.0"
+blowfish = "0.4.0"
+
+[dependencies.fern]
+version = "0.5"
+features = ["colored"]
+
+[dependencies.rblitz_packets]
+path = "./rblitz_packets"
+version = "0.1.0"
+
+[dependencies.serde]
+version = "~1.0"
+features = ["derive"]
+

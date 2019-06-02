@@ -1,0 +1,20 @@
+[package]
+name = "surjective-enum"
+version = "0.1.0"
+authors = ["Robert Hennig <robert@freylax.de>"]
+edition = "2018"
+categories = ["embedded", "hardware-support", "no-std"]
+description = "Rust macro to derive a surjective mapping from enum representation to enum."
+keywords = ["enum","bitfield"]
+license = "MIT"
+repository = "https://github.com/freylax/surjective-enum"
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "0.4"
+quote = "0.6"
+syn = { version = "0.15", features = ["full"] }
+
+[badges]
+travis-ci = { repository = "freylax/surjective-enum", branch = "master" }

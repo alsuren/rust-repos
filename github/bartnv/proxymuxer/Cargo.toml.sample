@@ -1,0 +1,11 @@
+[package]
+name = "proxymuxer"
+version = "0.1.0"
+edition = "2018"
+authors = ["Bart Noordervliet <bart@mmvi.nl>"]
+
+[dependencies]
+yaml-rust = "0.4"
+regex = "1"
+prctl = "1"
+signal-hook = "0.1"

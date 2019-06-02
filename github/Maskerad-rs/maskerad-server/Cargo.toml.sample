@@ -1,0 +1,23 @@
+[package]
+name = "maskerad_server"
+version = "0.1.0" #don't forget to update html doc root
+authors = ["Maskerad Developers <maskerad-rs.organization@protonmail.com>"]
+publish = false
+description = "Server side binary of the engine"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Maskerad-rs/maskerad-server"
+keywords = ["game-engine"]
+categories = ["Game engines"]
+readme = "README_CRATE.md"
+
+[badges]
+
+appveyor = { repository = "Malkaviel/maskerad-server", branch = "master", service = "github" }
+travis-ci = { repository = "Maskerad-rs/maskerad-server", branch = "master" }
+codecov = { repository = "Maskerad-rs/maskerad-server", branch = "master", service = "github" }
+is-it-maintained-open-issues = { repository = "Maskerad-rs/maskerad-server" }
+is-it-maintained-issue-resolution = { repository = "Maskerad-rs/maskerad-server" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+

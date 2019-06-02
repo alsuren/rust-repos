@@ -1,0 +1,14 @@
+[package]
+
+name = "traq"
+version = "0.0.1"
+authors = ["Raphael Randschau <nicolai86@me.com>"]
+
+[dependencies]
+time = "0.1.25"
+getopts = "0.2"
+glob = "0.2.10"
+
+[[bin]]
+
+name = "traq"

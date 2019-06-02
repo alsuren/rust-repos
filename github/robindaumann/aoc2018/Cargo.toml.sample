@@ -1,0 +1,10 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+authors = ["Robin Daumann <robin.daumann@inexio.net>"]
+edition = "2018"
+
+[dependencies]
+text_io = "^0.1.7"
+chrono = "^0.4.6"
+time = "0.1"

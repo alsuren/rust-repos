@@ -1,0 +1,11 @@
+[package]
+name = "rust_reddit"
+version = "0.0.6"
+authors = ["zpallin <zpallin@gmail.com>"]
+
+[dependencies]
+curl = "*"
+argparse = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"

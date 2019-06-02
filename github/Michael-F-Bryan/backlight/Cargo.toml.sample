@@ -1,0 +1,9 @@
+[package]
+name = "backlight"
+version = "0.1.0"
+authors = ["Michael-F-Bryan <michaelfbryan@gmail.com>"]
+description = "A simple Linux utility for changing your laptop screen's brightness."
+
+[dependencies]
+clap = "*"
+error-chain = "*"

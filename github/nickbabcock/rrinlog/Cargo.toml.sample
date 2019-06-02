@@ -1,0 +1,34 @@
+[package]
+authors = ["Nick Babcock <nbabcock19@hotmail.com>"]
+name = "rrinlog_core"
+version = "0.1.1"
+
+[dependencies]
+chrono = "0.4"
+failure = "0.1.5"
+regex = "1.1"
+lazy_static = "1"
+
+[dependencies.diesel]
+features = ["sqlite"]
+version = "1"
+
+[dependencies.libsqlite3-sys]
+features = ["bundled"]
+version = "0.12.0"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "rrinlog"
+harness = false
+
+[features]
+unstable = []
+
+[workspace]
+members = [
+    "rrinlog",
+    "rrinlog-server",
+]

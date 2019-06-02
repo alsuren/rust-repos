@@ -1,0 +1,12 @@
+[workspace]
+members = [
+  "stm32f0x2",
+  "stm32f0_hal",
+]
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+lto = true

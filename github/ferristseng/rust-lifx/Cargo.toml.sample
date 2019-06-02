@@ -1,0 +1,15 @@
+[package]
+name = "lifx"
+version = "0.1.2"
+authors = ["Ferris Tseng"]
+license = "MIT"
+
+[dependencies]
+log = "*"
+bitflags = "1.0"
+byteorder = "*"
+rustc-serialize = "*"
+net2 = { version = "*", features = ["nightly"] }
+
+[dev-dependencies]
+env_logger = "0.5.10"

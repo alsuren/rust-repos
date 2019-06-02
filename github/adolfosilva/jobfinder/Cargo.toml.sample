@@ -1,0 +1,25 @@
+[package]
+name = "jobfinder"
+version = "0.1.0"
+authors = ["Adolfo Silva <a9126@alunos.ipca.pt>"]
+
+[dependencies]
+log = "~0.3.7"
+env_logger = "~0.4.2"
+clap = "~2.23.2"
+toml = "~0.3.2"
+serde = "~0.9"
+serde_derive = "~0.9"
+hyper = "~0.10.8"
+hyper-openssl = "~0.2.6"
+html5ever = "~0.15.0"
+select = "~0.4.0"
+itertools = "~0.6.0"
+postgres = { version = "~0.14", features = ["with-chrono"] }
+diesel = { version = "0.11.0", features = ["postgres"] }
+diesel_codegen = { version = "0.11.0", features = ["postgres"] }
+dotenv = "0.8.0"
+crossbeam = "~0.2.10"
+url = { version = "~1.4.0", features = ["query_encoding"] }
+rand = "~0.3.15"
+chrono = { version = "~0.3.0", features = ["serde", "rustc-serialize"] }

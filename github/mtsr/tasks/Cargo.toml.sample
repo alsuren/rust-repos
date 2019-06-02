@@ -1,0 +1,17 @@
+[package]
+name = "tasks"
+version = "0.1.0"
+authors = ["Jonas Matser <jonas@jonasmatser.nl>"]
+
+[dependencies.threadpool]
+version = "*"
+features = ["scoped-pool"]
+
+[dependencies.deque]
+version = "*"
+
+[dependencies.coroutine]
+version = "*"
+
+[dependencies.pool]
+version = "*"

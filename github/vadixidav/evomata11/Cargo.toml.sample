@@ -1,0 +1,24 @@
+[package]
+name = "evomata11"
+version = "0.0.0"
+authors = ["Geordon Worley <vadixidav@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+itertools = "0.6"
+num = "0.1"
+crossbeam = "0.3"
+glowygraph = "0.7.2"
+glium = "0.15.0"
+nalgebra = "0.9.0"
+custom_derive = "0.1.5"
+enum_derive = "0.1.7"
+enum_primitive = "0.1.0"
+noise = "0.2.0"
+num_cpus = "1.0.0"
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "0.8"
+
+mli = "0.10"
+mli_mep = "0.10.3"

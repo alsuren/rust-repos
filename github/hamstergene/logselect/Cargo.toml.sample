@@ -1,0 +1,13 @@
+[package]
+name = "logselect"
+version = "1.0.0"
+authors = ["Eugene Homyakov <ehomyakov@gmail.com>"]
+
+[dependencies]
+toml = "*"
+regex = "*"
+getopts = "*"
+libc = "*"
+fixedbitset = "*"
+num_cpus = "*"
+

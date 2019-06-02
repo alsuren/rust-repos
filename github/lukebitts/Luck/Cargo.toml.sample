@@ -1,0 +1,18 @@
+[package]
+name = "luck"
+version = "0.2.0"
+authors = ["Lucas Bittencourt <lbittencs@gmail.com>"]
+
+[dependencies]
+
+[dependencies.luck_ecs]
+path = "src/ecs/"
+version = "*"
+
+[dependencies.luck_math]
+path = "src/math/"
+version = "*"
+
+[dependencies.luck_core]
+path = "src/core/"
+version = "*"

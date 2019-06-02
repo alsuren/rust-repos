@@ -1,0 +1,12 @@
+[package]
+
+name = "windump"
+version = "0.0.1"
+authors = ["Peter Atashian <retep998@gmail.com>"]
+
+[dependencies]
+regex = "0.2"
+walkdir = "1"
+
+[profile.release]
+debug = true

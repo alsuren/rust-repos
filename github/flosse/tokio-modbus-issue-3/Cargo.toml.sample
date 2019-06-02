@@ -1,0 +1,18 @@
+[package]
+name = "tokio-modbus-issue-3"
+version = "0.1.0"
+authors = ["Markus Kohlhase <markus.kohlhase@slowtec.de>"]
+
+[dependencies]
+futures = "*"  
+tokio = "*"  
+tokio-core = "*"
+tokio-serial = "*"
+tokio-service = "*"
+
+[dependencies.tokio-modbus]
+version = "*"
+default-features = false
+features = ["rtu"]
+git = "https://github.com/slowtec/tokio-modbus"
+branch = "master"

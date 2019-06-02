@@ -1,0 +1,10 @@
+[package]
+name = "nier-cat"
+version = "0.1.0"
+authors = ["Aleryc <alerycserrania@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+termion = "*"
+rand = "*"
+syntect = "3.2"

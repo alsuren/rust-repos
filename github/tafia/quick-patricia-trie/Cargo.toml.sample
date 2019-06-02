@@ -1,0 +1,18 @@
+[package]
+name = "quick-patricia-trie"
+version = "0.1.0"
+authors = ["Johann Tuffe <tafia973@gmail.com>"]
+
+[workspace]
+members = [ ".", "criterion_benches"]
+
+[dependencies]
+log = "0.4.4"
+# rlp = { path = "../parity-common/rlp" }
+rlp = "0.2.4"
+keccak-hash = "0.1.2"
+
+[dev-dependencies]
+env_logger = "0.5.13"
+triehash = { version = "0.2.3", default-features = false }
+keccak-hasher = "0.1.1"

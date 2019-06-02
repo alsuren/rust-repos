@@ -1,0 +1,17 @@
+[package]
+name = "download"
+version = "0.1.6"
+authors = ["Xavier Stevens"]
+
+[dependencies]
+clap = "2"
+data-encoding = "2.1"
+pbr = "1"
+reqwest = "0.9"
+hyper = "0.12"
+digest = "0.8"
+sha2 = "0.8"
+sha-1 = "0.8"
+
+[profile.release]
+lto = true

@@ -1,0 +1,16 @@
+[package]
+edition="2018"
+name = "colorspace"
+version = "0.2.0"
+authors = ["Anders Langlands <anderslanglands@gmail.com>"]
+
+[features]
+f16 = ["half"]
+
+[dependencies]
+num-traits = "0.2"
+lazy_static = "1.1"
+half = {version="0.1", optional = true}
+
+[dev-dependencies]
+image = "0.21"

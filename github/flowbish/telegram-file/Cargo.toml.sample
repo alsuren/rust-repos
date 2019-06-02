@@ -1,0 +1,16 @@
+[package]
+name = "telegram-file"
+version = "0.1.0"
+authors = ["Porter Smith <flowbish@gmail.com>"]
+
+[lib]
+name = "telegram_file"
+path = "src/lib.rs"
+
+[dependencies]
+url = "^0.5.7"
+hyper = "^0.7.2"
+
+[dependencies.telegram-bot]
+git = "https://github.com/flowbish/telegram-bot.git"
+rev = "8570345"

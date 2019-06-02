@@ -1,0 +1,23 @@
+[package]
+name = "love"
+version = "0.2.0"
+authors = ["snsvrno <snsvrno@tuta.io>"]
+
+exclude = [
+    "/tests"
+]
+
+license = "MIT"
+description = "a library for manipulating and reading love project files."
+repository = "https://github.com/snsvrno/love-rs"
+readme = "README.md"
+keywords = ["love2d","love"]
+categories = ["game-engines"]
+
+[dependencies]
+regex = "1.1"
+zip = "0.5"
+failure = "0.1"
+
+platform-lp = "0.2"
+version-lp = "0.2"

@@ -1,0 +1,16 @@
+[package]
+name = "robin_core"
+version = "0.5.0"
+authors = ["William Collier <coll01502449@scc.ac.uk>"]
+description = "A simple (custom) Lisp to JavaScript source-to-source compiler"
+license = "Apache-2.0"
+repository = "https://github.com/willifme/robin_core"
+
+[build-dependencies]
+lalrpop = "0.15.1"
+
+[dependencies]
+ansi_term = "0.9"
+lalrpop-util = "0.15.1"
+regex = "0.2.1"
+itertools = "0.7.8"

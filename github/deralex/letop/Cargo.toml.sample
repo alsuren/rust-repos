@@ -1,0 +1,9 @@
+[package]
+name = "letop"
+version = "0.1.0"
+authors = ["Alexander Kluth <deralex@cpan.org>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+libudis86-sys = "0.2.0"

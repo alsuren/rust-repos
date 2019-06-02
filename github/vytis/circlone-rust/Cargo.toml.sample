@@ -1,0 +1,8 @@
+[package]
+name = "circlone"
+version = "0.1.0"
+authors = ["Vytis <vytis@wire.com>"]
+
+[dependencies]
+rand = "0.3"
+rayon = "1.0"

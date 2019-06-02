@@ -1,0 +1,13 @@
+[package]
+
+name = "uil-checker"
+version = "0.0.1"
+authors = ["Nemikolh <joan.varvenne@gmail.com>"]
+
+[dependencies]
+uil_parsers = "*"
+uil_shared = "*"
+docopt = "*"
+docopt_macros = "*"
+rustc-serialize = "*"
+term = "*"

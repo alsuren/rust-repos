@@ -1,0 +1,8 @@
+[package]
+name = "virs"
+version = "0.1.0"
+authors = ["J. Cliff Dyer <jcd@sdf.org>"]
+
+[dependencies]
+nom = "*"
+rustbox = "*"

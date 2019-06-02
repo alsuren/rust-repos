@@ -1,0 +1,17 @@
+[package]
+name = "gammaray"
+version = "0.1.0"
+authors = ["steve"]
+
+[[bin]]
+name = "gammaray"
+
+[profile.dev]
+opt-level = 3
+
+[dependencies]
+rand = "0.4.2"
+bitflags = "1.0.2"
+rayon = "1.0.1"
+byteorder = "1.2.2"
+wavefront_obj = "5.1.0"

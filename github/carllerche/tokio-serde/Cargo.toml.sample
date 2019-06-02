@@ -1,0 +1,20 @@
+[package]
+name = "tokio-serde"
+version = "0.3.0"
+authors = ["Carl Lerche <me@carllerche.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = []
+repository = "https://github.com/carllerche/tokio-serde"
+homepage = "https://github.com/carllerche/tokio-serde"
+documentation = "https://docs.rs/tokio-serde"
+description = """
+Send and receive Serde encodable types over the network using Tokio.
+
+This library is used as a building block for serialization format specific
+libraries.
+"""
+
+[dependencies]
+futures = "0.1"
+bytes = "0.4"

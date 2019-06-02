@@ -1,0 +1,8 @@
+[package]
+name = "metering-prototype"
+version = "0.1.0"
+authors = ["wanderer <mjbecze@gmail.com>"]
+
+[dependencies]
+byteorder = "0.5.3"
+leb128 = "0.2.1"

@@ -1,0 +1,14 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["Mark E. McDermott <mark.elias.mcdermott@gmail.com>"]
+
+[dependencies]
+libloading = "0.5"
+aoc2018_day01 = { path = "aoc2018_day01" }
+aoc2018_day02 = { path = "aoc2018_day02" }
+aoc2018_day03 = { path = "aoc2018_day03" }
+aoc2018_day04 = { path = "aoc2018_day04" }
+aoc2018_day05 = { path = "aoc2018_day05" }
+aoc2018_day06 = { path = "aoc2018_day06" }
+aoc2018_day07 = { path = "aoc2018_day07" }

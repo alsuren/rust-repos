@@ -1,0 +1,9 @@
+[package]
+name = "rust-phonebook"
+version = "0.1.0"
+authors = ["mesd"]
+
+[dependencies]
+postgres = "0.9"
+rust-ini = "*"
+rustc-serialize = "0.3"

@@ -1,0 +1,11 @@
+[package]
+name = "mwparser_utils"
+version = "0.1.0"
+authors = ["Valentin Roland <valentin@vroland.de>"]
+edition = "2018"
+
+[dependencies]
+mediawiki_parser = "0.4"
+mwparser_utils_derive = { path = "derive" }
+serde = "1.0"
+serde_derive = "1.0"

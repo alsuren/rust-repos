@@ -1,0 +1,9 @@
+[package]
+name = "rust_twitch_emote_stats"
+version = "0.1.0"
+authors = ["Nicholas Herson <nicholas.herson@gmail.com>"]
+
+[dependencies]
+irc = "*"
+log = "*"
+env_logger = "*"

@@ -1,0 +1,16 @@
+[package]
+authors = ["Ross Harrison <rtharrison86@gmail.com>"]
+name = "jd"
+version = "1.0.0"
+
+[dependencies]
+chrono = { version = "0.3", features = ["serde", "rustc-serialize"] }
+rusqlite = "0.11.0"
+
+[dependencies.clap]
+features = ["yaml"]
+version = "2.19.0"
+
+[dependencies.uuid]
+features = ["v4", "serde"]
+version = "0.5"

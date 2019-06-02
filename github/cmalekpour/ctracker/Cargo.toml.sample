@@ -1,0 +1,18 @@
+[package]
+name = "ctracker"
+version = "0.1.0"
+authors = ["Cyrus Malekpour <cmalekpour@gmail.com>"]
+
+[dependencies]
+hyper = "0.9.10"
+ring = "0.4.3"
+time = "0.1.35"
+base64 = "~0.2.0"
+num = "0.1.36"
+
+[dependencies.rusqlite]
+version = "0.7.3"
+features = ["trace"]
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

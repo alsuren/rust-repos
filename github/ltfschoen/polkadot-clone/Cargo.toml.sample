@@ -1,0 +1,7 @@
+[package]
+name = "polkadot-clone"
+version = "0.1.0"
+authors = ["Luke Schoen <ltfschoen@gmail.com>"]
+
+[dependencies]
+polkadot-cli = { path = "cli" }

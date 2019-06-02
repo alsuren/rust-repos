@@ -1,0 +1,25 @@
+[package]
+name = "httpstime-rs"
+version = "0.1.5"
+authors = ["Brian Martin <brayniac@gmail.com>"]
+
+license = "MIT"
+
+description = "httpstime client in Rust"
+
+homepage = "https://brayniac.github.io/httpstime-rs"
+repository = "https://github.com/brayniac/httpstime-rs"
+
+readme = "README.md"
+
+[dependencies]
+hyper = "0.7.2"
+time = "0.1.35"
+log = "0.3.6"
+shuteye = "0.1.1"
+getopts = "0.2.14"
+curl = "0.2.19"
+
+[profile.release]
+opt-level = 3
+debug = true

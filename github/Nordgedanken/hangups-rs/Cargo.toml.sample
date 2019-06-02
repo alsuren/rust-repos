@@ -1,0 +1,30 @@
+[package]
+name = "hangups"
+version = "0.0.1"
+authors = ["MTRNord"]
+publish = false # Not ready yet!
+exclude = ["src/hangups/proto/hangouts.proto"] # don't include the originial proto
+keywords = ["hangups", "hangouts", "google"]
+categories = ["api-bindings"]
+license = "MIT"
+
+[dependencies]
+hyper = { git = "https://github.com/hyperium/hyper" }
+protobuf = "1.2.2"
+rand = "0.3"
+sha1 = "0.2.0"
+rustc-serialize = "0.3.23"
+jconfig = "0.1.0"
+regex = "0.2"
+url = "1.4.0"
+tokio-core = "0.1.6"
+futures = "0.1.13"
+hyper-tls = { git = "https://github.com/hyperium/hyper-tls" }
+
+[badges]
+# Travis CI: `repository` is required. `branch` is optional; default is `master`
+travis-ci = { repository = "Nordgedanken/hangups-rs", branch = "master" }
+# Appveyor: `repository` is required. `branch` is optional; default is `master`
+# `service` is optional; valid values are `github` (default), `bitbucket`, and
+# `gitlab`.
+appveyor = { repository = "Nordgedanken/hangups-rs", branch = "master", service = "github" }

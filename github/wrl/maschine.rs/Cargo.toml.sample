@@ -1,0 +1,20 @@
+[package]
+name = "maschine"
+version = "0.0.1"
+authors = ["William Light <wrl@illest.net>"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+mio = "0.3"
+nix = "*"
+glm = "*"
+glm_color = "*"
+midi = "*"
+
+[dependencies.tinyosc]
+git = "https://github.com/wrl/tinyosc"
+
+[dependencies.alsa-seq]
+path = "alsa-seq"

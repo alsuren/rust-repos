@@ -1,0 +1,8 @@
+[package]
+name = "amethyst-pong"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+amethyst = {git="https://github.com/amethyst/amethyst.git", rev="25b46c223c1ee4f87230e3"}

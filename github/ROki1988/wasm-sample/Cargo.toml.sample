@@ -1,0 +1,11 @@
+[package]
+name = "wasm-sample"
+version = "0.1.0"
+authors = ["ROki1988 <roki.swindler@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies.rodio]
+path = "../rodio"
+default-features = false

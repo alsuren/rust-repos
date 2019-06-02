@@ -1,0 +1,10 @@
+[package]
+name = "hextermbiest"
+version = "0.1.0"
+authors = ["Arnau Siches <asiches@gmail.com>"]
+
+[dependencies]
+palette = "0.2"
+termion = "1.1"
+clap = "2.19"
+# image = "0.10"

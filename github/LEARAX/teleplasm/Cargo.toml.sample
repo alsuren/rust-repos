@@ -1,0 +1,9 @@
+[package]
+name = "teleplasm"
+version = "0.1.2"
+authors = [ "LEARAX57H <willculhane3@gmail.com>",
+            "vpzomtrrfrt <eric@gloriouswill.com>" ]
+
+[dependencies.serenity]
+version = "0.4"
+features = ["voice"]

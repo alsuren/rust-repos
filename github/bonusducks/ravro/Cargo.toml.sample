@@ -1,0 +1,14 @@
+[package]
+name = "ravro"
+version = "0.1.0"
+authors = ["Glenn McAllsiter <glenn.mcallister@gmail.com>"]
+license = "Apache-2.0"
+
+[dependencies]
+serde = { version = "*", optional = false }
+regex = { version = "0.1.39", optional = false }
+log = "*"
+
+[dev-dependencies]
+env_logger = "*"
+lazy_static = "*"

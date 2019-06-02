@@ -1,0 +1,7 @@
+[package]
+name = "state_walker"
+version = "0.1.0"
+authors = []
+
+[dependencies]
+amethyst = { git = "https://github.com/amethyst/amethyst", rev = "44c87a512cacbbfd774433bd6f6d935ed97b6c0d" }

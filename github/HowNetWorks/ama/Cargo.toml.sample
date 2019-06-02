@@ -1,0 +1,20 @@
+[package]
+name = "ama"
+version = "0.2.1"
+authors = ["Ossi Herrala <devel@hownetworks.io>"]
+publish = false
+
+description = "Ask Me Anything - Knowledge about life, universe and everything"
+homepage = "https://github.com/HowNetWorks/ama#readme"
+repository = "https://github.com/HowNetWorks/ama"
+readme = "README.md"
+
+license = "MIT"
+
+[dependencies]
+cymrust = "0.3.3"
+hyper = "0.10.13"
+iron = "0.5.1"
+resolve = "0.1.2"
+router = "0.5.1"
+rustc-serialize = "0.3.22"

@@ -1,0 +1,41 @@
+[package]
+authors = ["Greizgh <greizgh@ephax.org>"]
+build = "build.rs"
+description = "Server handling minions, helping self hosters to distribute their backups"
+license = "MIT"
+name = "gru"
+readme = "README.md"
+version = "0.1.0"
+
+[dependencies]
+base64 = "^0.7.0"
+clap = "^2.29.1"
+diesel_migrations = "^1.0.0"
+failure = "^0.1.1"
+failure_derive = "^0.1.1"
+r2d2 = "^0.8.1"
+r2d2-diesel = "^1.0.0"
+rand = "^0.3.17"
+rocket = "^0.3.5"
+rocket_codegen = "^0.3.5"
+rocket_contrib = "^0.3.5"
+serde = "^1.0.19"
+serde_derive = "^1.0.19"
+toml = "^0.4.5"
+
+[dependencies.diesel]
+features = ["sqlite"]
+version = "^1.0.0"
+
+[package.metadata.deb]
+assets = [
+    ["target/release/gru", "usr/local/bin/", "755"],
+    ["resources/gru.service", "usr/lib/systemd/system/", "644"],
+    ["resources/conf/gru.conf", "etc/gru/gru.conf", "644"],
+    ["resources/conf/Rocket.toml", "etc/gru/Rocket.toml", "644"],
+]
+depends = "$auto, systemd"
+license-file = ["COPYING"]
+maintainer-scripts = "resources/debian"
+priority = "optional"
+section = "admin"

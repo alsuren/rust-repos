@@ -1,0 +1,15 @@
+[package]
+name = "cryptopals-rust"
+version = "0.1.0"
+authors = ["Esteban <eginez@gmail.com>"]
+
+[lib]
+name = "crypto"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dependencies]
+ordered-float = "0.5.0"

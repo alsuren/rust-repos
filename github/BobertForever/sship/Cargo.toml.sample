@@ -1,0 +1,8 @@
+[package]
+name = "sship"
+version = "0.1.0"
+authors = ["Robert Lynch <robertlynch2012@gmail.com>"]
+
+[dependencies]
+rust-ini = "*"
+getopts = "0.2"

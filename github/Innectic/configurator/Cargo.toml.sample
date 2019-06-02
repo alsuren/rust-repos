@@ -1,0 +1,13 @@
+[package]
+name = "configurator"
+version = "0.1.0"
+authors = ["Innectic <innectic@gmail.com>"]
+description = "Statically-Typed Configuration Structs / Files for Rust."
+publish = true
+repository = "https://github.com/innectic/configurator"
+readme = "README.md"
+license = "MIT"
+categories = ["configuration"]
+
+[dependencies]
+serde_derive = "1.0"

@@ -1,0 +1,13 @@
+[package]
+name = "pie"
+version = "0.1.0"
+authors = ["Desmond Ding <info@desmonding.me>"]
+edition = "2018"
+
+[dependencies]
+pulldown-cmark = "0.2.0"
+tera = "0.11"
+serde = "1.0"
+serde_derive = "1.0"
+glob = "0.2"
+chrono = "0.4"

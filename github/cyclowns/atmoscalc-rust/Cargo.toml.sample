@@ -1,0 +1,9 @@
+[package]
+name = "atmoscalculator_rust"
+version = "0.1.0"
+authors = ["cyclowns <cyclowns@protonmail.ch>"]
+
+[workspace]
+
+[dependencies]
+atmos_library = { path = "atmos_library" }

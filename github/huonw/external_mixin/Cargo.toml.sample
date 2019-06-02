@@ -1,0 +1,34 @@
+[package]
+
+name = "external_mixin_umbrella"
+version = "0.0.2"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+homepage = "https://github.com/huonw/external_mixin"
+repository = "https://github.com/huonw/external_mixin"
+documentation = "https://github.com/huonw/external_mixin#external_mixin_base"
+
+license = "MIT/Apache-2.0"
+keywords = ["plugin", "code-generation"]
+readme = "README.md"
+description = """
+Backing library for `rust_mixin` and `external_mixin` to keep them
+DRY.
+"""
+
+[features]
+default = []
+
+# allow testing the various error handling paths, via the
+# examples/failure.rs test
+compile_error = []
+
+[dependencies]
+tempdir = "0.3"
+
+[dev-dependencies.external_mixin]
+path = "external_mixin"
+version = "0"
+[dev-dependencies.rust_mixin]
+path = "rust_mixin"
+version = "0"

@@ -1,0 +1,16 @@
+[package]
+name = "fes"
+version = "0.1.0"
+authors = ["Paweł Zmarzły <pawo2500@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+protocol = "3.1.1"
+protocol-derive = "3.1.1"
+x25519-dalek = "0.5.2"
+ed25519-dalek = "0.9.1"
+futures-preview = "0.3.0-alpha.15"
+derive-error = "0.0.4"
+rand = "0.6.5"
+sha2 = "0.8.0"
+chacha20-poly1305-aead = "0.1.2"

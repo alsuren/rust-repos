@@ -1,0 +1,26 @@
+[package]
+name = "scamp"
+version = "0.1.0"
+authors = ["Daniel Norman <daniel@danielnorman.net>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1.26"
+tokio = {version = "0.1.18", optional = true, features = ["async-await-preview"]}
+tokio-threadpool = "0.1.13"
+net2 = { version = "0.2.32", optional = true }
+tokio-async-await = "0.1.6"
+
+rand = "0.6.5"
+http = "0.1.15"
+bytes = "0.4.4"
+tokio-io = "0.1"
+
+[features]
+default = [
+    "runtime",
+]
+runtime = [
+    "net2",
+    "tokio",
+]

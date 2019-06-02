@@ -1,0 +1,29 @@
+[package]
+name = "vnodes"
+version = "0.0.0"
+authors = ["torkleyy <torkleyy@gmail.com>"]
+description = """
+[Experimental] Virtual node system. This is a work in progress.
+"""
+readme = "README.md"
+documentation = "https://docs.rs/vnodes"
+repository = "https://github.com/rustgd/vnodes"
+keywords = ["parallel", "systems", "resources", "ecs"]
+categories = ["concurrency"]
+license = "MIT/Apache-2.0"
+exclude = ["bors.toml", ".travis.yml"]
+
+[badges]
+travis-ci = { repository = "rustgd/vnodes" }
+
+[dependencies]
+bitflags = "1"
+derivative = "1.0.0"
+failure = "0.1.1"
+fxhash = "0.2.1"
+log = "0.4.1"
+parking_lot = "0.5.4"
+
+[dev-dependencies]
+fern = "0.5.5"
+fnv = "1"

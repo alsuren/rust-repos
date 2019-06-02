@@ -1,0 +1,37 @@
+[package]
+name = "patterns"
+license = "MIT"
+version = "0.8.3"
+authors = ["Stephan Hügel <urschrei@gmail.com>"]
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+rayon = "1.0.0"
+fnv = "1.0.6"
+clap = "2.33.0"
+
+[dev-dependencies]
+criterion = "0.2.5"
+
+[lib]
+name = "patterns"
+path = "src/lib.rs"
+doctest = false
+
+[[bin]]
+name = "patterns"
+path = "src/main.rs"
+test = false
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[profile.bench]
+lto = true
+codegen-units = 1
+
+[[bench]]
+name = "benches"
+harness = false

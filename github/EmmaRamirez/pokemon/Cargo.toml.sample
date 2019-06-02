@@ -1,0 +1,15 @@
+[package]
+name = "pokemon"
+version = "1.0.0"
+authors = ["Emma Ramirez <ramirez.emma.g@gmail.com>"]
+# respository = "https://github.com/EmmaRamirez/pokemon.git"
+homepage = "https://github.com/EmmaRamirez/pokemon.git"
+license = "MIT"
+readme = "README.md"
+documentation = "https://github.com/EmmaRamirez/pokemon"
+description = "Get Pokémon names"
+
+[dependencies]
+rustc-serialize = "0.3.22"
+csv = "0.14"
+rand = "0.3"

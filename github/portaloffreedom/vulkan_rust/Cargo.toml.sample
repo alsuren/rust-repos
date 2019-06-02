@@ -1,0 +1,28 @@
+[package]
+name = "vulkan_rust"
+version = "0.1.0"
+authors = ["Matteo De Carlo <matteo.dek@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+image = "0.15.0"
+cgmath = "0.15.0"
+rand = "0.3.16"
+#num = "0.1.40"
+
+[dependencies.matrixstack]
+version = "0.1.4"
+git = "https://github.com/portaloffreedom/matrixstack-rs.git"
+
+#[dependencies.vek]
+#version = "0.2.2"
+#features = ["adjust features for slow compiling time"]
+
+[dependencies.vulkano]
+version = "0.6.2"
+#git = "https://github.com/portaloffreedom/vulkano.git"
+#path = "../vulkano/vulkano"
+
+[dependencies.glfw]
+version = "0.16.0"
+features = ["vulkan"]

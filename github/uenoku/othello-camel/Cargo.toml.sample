@@ -1,0 +1,21 @@
+[package]
+name = "othello-rust"
+version = "0.1.0"
+authors = ["tansei <uenoku.tokotoko@gmail.com>"]
+
+[profile.release]
+lto = true
+panic = 'abort'
+
+[dependencies]
+rand = "0.5.4"
+getopts = "0.2"
+
+[dependencies.nom]
+version = "^4.0"
+features = ["regexp"]
+
+
+
+
+

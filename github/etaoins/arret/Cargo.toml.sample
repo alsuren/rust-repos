@@ -1,0 +1,10 @@
+[workspace]
+members = [
+	"syntax",
+	"compiler",
+	"driver",
+	"runtime",
+	"runtime-syntax",
+	"rfi-derive",
+	"stdlib/rust"
+]

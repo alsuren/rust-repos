@@ -1,0 +1,17 @@
+[package]
+name = "snmp-parser"
+version = "0.3.0"
+description = "Parser for the SNMP protocol"
+license = "MIT/Apache-2.0"
+keywords = ["SNMP","protocol","parser","nom"]
+authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
+homepage = "https://github.com/rusticata/snmp-parser"
+repository = "https://github.com/rusticata/snmp-parser.git"
+
+[dependencies]
+nom = {version = "4.0", features = ["verbose-errors"]}
+rusticata-macros = "1.0"
+der-parser = "1.0"
+
+[dev-dependencies]
+pretty_assertions = "0.5.0"

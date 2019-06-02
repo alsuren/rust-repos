@@ -1,0 +1,14 @@
+[package]
+name = "scron"
+version = "1.0.1"
+authors = ["gladmo <mo@gladmo.com>"]
+documentation = "https://docs.rs/scron"
+readme = "README.md"
+description = "A cron expression parser and schedule explorer."
+keywords = [ "cron", "schedule", "repeat", "periodic", "time" ]
+license = "MIT"
+
+[dependencies]
+chrono = "~0.4"
+nom = "~2.1"
+error-chain = "~0.11.0"

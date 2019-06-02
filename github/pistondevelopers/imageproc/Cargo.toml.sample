@@ -1,0 +1,45 @@
+[package]
+name = "imageproc"
+version = "0.18.0"
+authors = ["theotherphil"]
+edition = "2018"
+license = "MIT"
+description = "Image processing operations"
+readme = "README.md"
+homepage = "https://github.com/PistonDevelopers/imageproc"
+exclude = ["examples/*.ttf"]
+
+[features]
+default = []
+property-testing = [ "quickcheck" ]
+display-window = ["sdl2"]
+
+[dependencies]
+conv = "0.3.1"
+image = "0.21.0"
+itertools = "0.7.0"
+num = "0.2.0"
+rand = "0.6.5"
+rusttype = "0.7"
+rayon = "1.0"
+quickcheck = { version = "0.8", optional = true }
+sdl2 = { version = "0.32", optional = true, default-features = false, features = ["bundled"] }
+
+[dev-dependencies]
+assert_approx_eq = "1.0.0"
+quickcheck = "0.8"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[profile.release]
+opt-level = 3
+debug = true
+
+[profile.bench]
+opt-level = 3
+debug = true
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1

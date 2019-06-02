@@ -1,0 +1,8 @@
+[package]
+name = "keyz"
+version = "0.1.1"
+authors = ["Coleman McFarland <coleman.mcfarland@gmail.com>"]
+
+[dependencies]
+chrono = "*"
+serde = "*"

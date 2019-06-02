@@ -1,0 +1,12 @@
+[package]
+name = "ray-tracing"
+version = "0.1.0"
+authors = []
+
+[dependencies]
+rand = "0.5"
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1

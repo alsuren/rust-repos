@@ -1,0 +1,11 @@
+[package]
+name = "cue_os"
+version = "0.1.0"
+authors = ["Lucas Maximiliano Marino <lucasmmarino@icloud.com>", "Pablo Moyano"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "0.1.4"
+volatile = "0.1.0"

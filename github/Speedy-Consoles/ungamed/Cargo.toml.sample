@@ -1,0 +1,16 @@
+[package]
+name = "ungamed"
+version = "0.1.0"
+authors = ["Speedy Consoles <rubihome@gmx.de>"]
+edition = "2018"
+
+[dependencies]
+glium = "0.23.0"
+glium_text = "0.14.0"
+cgmath = "0.17.0"
+image = "0.21.0"
+controls = { path = "../controls" }
+
+[dev-dependencies]
+strum = "0.14.0"
+strum_macros = "0.14.0"

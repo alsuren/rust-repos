@@ -1,0 +1,16 @@
+[package]
+name = "dyn-livedns-gandi"
+version = "0.0.1"
+authors = ["Léo Depriester <leo.depriester@exadot.fr>"]
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+reqwest = "*"
+rust-ini = "*"
+clap = "2.32.0"
+
+[dev-dependencies]
+tempdir = "0.3.7"
+mockito = "*"

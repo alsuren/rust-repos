@@ -1,0 +1,26 @@
+[package]
+name = "eliptic"
+version = "0.1.0"
+authors = ["pj <pj.kyosyou@outlook.jp>"]
+
+[dependencies]
+gnuplot = "0.0.24"
+nalgebra = "0.15"
+num = ""
+ndarray = "0.11.0"
+
+[[bin]]
+name = "ex"
+path = "src/ex.rs"
+
+[[bin]]
+name = "roundanime"
+path = "src/roundanime.rs"
+
+[[bin]]
+name = "1dqw"
+path = "src/1dqw.rs"
+
+[[bin]]
+name = "grover"
+path = "src/grover.rs"

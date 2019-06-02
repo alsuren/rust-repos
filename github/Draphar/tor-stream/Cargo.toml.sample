@@ -1,0 +1,16 @@
+[package]
+name = "tor-stream"
+version = "0.2.0"
+authors = ["Draphar <draphar-code@protonmail.com>"]
+edition = "2018"
+description = "Rust interface for proxying network streams over the Tor network"
+license = "MIT"
+documentation = "https://docs.rs/tor-stream/"
+repository = "https://github.com/Draphar/tor-stream"
+readme = "README.md"
+keywords = ["tor", "networking", "proxy"]
+categories = ["network-programming"]
+
+[dependencies]
+lazy_static = "1.2.0"
+socks = "0.3.0"

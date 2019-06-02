@@ -1,0 +1,8 @@
+[package]
+name = "htree"
+version = "0.1.0"
+authors = ["Adam Chalmers <achalmers@cloudflare.com>"]
+
+[dependencies]
+gif = "0.10.0"
+line_drawing = "0.7.0"

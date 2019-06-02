@@ -1,0 +1,8 @@
+[package]
+name = "rusty_lisp"
+version = "0.1.0"
+authors = ["William Murphy <willmurphyscode@gmail.com>"]
+
+[dependencies]
+regex = "0.1"
+nom = "^1.2.4"

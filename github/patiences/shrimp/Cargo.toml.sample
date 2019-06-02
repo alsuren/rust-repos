@@ -1,0 +1,12 @@
+[package]
+name = "shrimp"
+version = "0.1.0"
+authors = ["Patience Shyu <patienceshyu@gmail.com>"]
+build = "build.rs" # <-- We added this and everything after!
+
+[build-dependencies]
+lalrpop = "0.12.5"
+
+[dependencies]
+lalrpop-util = "0.12.5"
+

@@ -1,0 +1,8 @@
+[package]
+name = "rust_sandbox"
+version = "0.1.0"
+authors = ["x1- <viva008@gmail.com>"]
+
+[dependencies]
+time = "*"
+rustc-serialize = "*"

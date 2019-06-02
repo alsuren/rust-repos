@@ -1,0 +1,21 @@
+[package]
+name = "gst-plugin-s3"
+version = "0.3.0"
+authors = ["Arun Raghavan <arun@arunraghavan.net>"]
+repository = "https://github.com/ford-prefect/gst-plugin-s3"
+license = "MIT/Apache-2.0"
+edition = "2018"
+
+[dependencies]
+bytes = "0.4"
+futures = "0.1"
+glib = "0.7"
+gstreamer = { version = "0.13", features = [ "subclassing" ] }
+gstreamer-base = { version = "0.13", features = [ "subclassing" ] }
+rusoto_core = "0.39.0"
+rusoto_s3 = "0.39.0"
+url = "1.7"
+
+[lib]
+name = "gsts3"
+crate-type = ["cdylib"]

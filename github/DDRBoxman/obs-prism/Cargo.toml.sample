@@ -1,0 +1,21 @@
+[package]
+name = "obsprism"
+version = "0.1.0"
+authors = ["Colin Edwards <colin@recursivepenguin.com>"]
+edition = "2018"
+build = "build.rs"
+
+[lib]
+name = "obsprism"
+crate-type = ["dylib", "staticlib", "cdylib"]
+path = "src/obslib.rs"
+
+[[bin]]
+name = "obsprism"
+path = "src/main.rs"
+
+[dependencies]
+nng = "0.3.0"
+blinkstick = "0.1.2"
+blink1 = "0.1.2"
+fitstat = "0.1.2"

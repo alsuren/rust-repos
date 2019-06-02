@@ -1,0 +1,18 @@
+[package]
+name = "metalfilter"
+version = "0.1.0"
+authors = ["Ben Allison <ben1120@gmail.com>"]
+
+[dependencies]
+image = "*"
+lerp = "0.2"
+
+hyper = "0.10.10"
+iron = "0.5.1"
+router = "*"
+regex = "0.2.2"
+lazy_static = "*"
+
+
+[profile.release]
+#lto = true

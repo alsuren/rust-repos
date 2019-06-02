@@ -1,0 +1,88 @@
+[package]
+name = "duckcommons"
+version = "0.1.0"
+authors = ["Techcable <Techcable@techcable.net>"]
+description = "Various utilities needed for DuckLogic"
+license = "All Rights Reserved"
+edition = "2018"
+publish = false
+
+[dependencies]
+bitflags = "^0.9.1"
+rand = "^0.3.16"
+byteorder = "^1.1.0"
+lazy_static = "^1"
+log = "^0.3.8"
+owning_ref = "^0.3.3"
+base64 = "^0.6.0"
+either = "^1.3.0"
+# Graph library
+petgraph = { version = "^0.4.5", features = ["serde-1"] }
+# Stack allocated vectors
+arrayvec = { version = "^0.4.2", features = ["serde-1", "use_union"] }
+smallvec = { version = "^0.4.1", features = ["serde"] }
+# Lightning fast hashes
+seahash = "^3.0.5"
+# Serde serialization
+serde = { version = "^1.0.11", features = ["rc", "unstable"] }
+serde_derive = "^1.0.11"
+erased-serde = "^0.3.3"
+serde_json = "^1.0.16"
+# Fast regexes
+regex = "^0.2.2"
+# Implementations of Hash and Ord for floats
+ordered-float = { version = "^0.5.0", features = ["serde"] }
+# Fast integer id maps
+idmap = { version = "^0.2.12", features = ["serde", "petgraph"] }
+idmap-derive = "^0.1.1"
+# Arena allocation
+typed-arena = "^1.3.0"
+# Fast integer formatting
+itoa = "^0.4.1"
+# Impossible type
+void = "^1.0.2"
+# Fast memory search
+memchr = "^1.0.1"
+# Bitset library needed for petgraph
+fixedbitset = "^0.1.8"
+# Compile time maps
+# TODO: Use upstream version of PHF
+phf = { git = "https://github.com/Techcable/rust-phf.git", branch = "update/nightly-2019-01-11" }
+phf_macros = { git = "https://github.com/Techcable/rust-phf.git", branch = "update/nightly-2019-01-11" }
+# Better concurrency primitives
+parking_lot = { version = "^0.6.3", features = ["nightly"] }
+# Generic traits for numbers
+num-traits = "^0.1.40"
+# Rust itertools
+itertools = "^0.6.1"
+# Fast Compression
+lz4 = { version = "^1.22.0", optional = true }
+# Lightweight binary serialization
+bincode = { version = "^0.9.0", optional = true }
+# Awesome error handling
+failure = "^0.1.1"
+failure_derive = "0.1.2"
+# Backtraces
+backtrace = "^0.3.5"
+# Double ended vectors
+two-sided-vec = "^0.1.0"
+# Structured logging
+slog = { version = "^2.1.1", features = ["nested-values"] }
+
+[dependencies.ordermap]
+version = "^0.3.5"
+features = ["serde-1",]
+
+[dependencies.duckcommons-derive]
+path = "derive"
+
+[workspace]
+
+
+[patch.crates-io]
+# TODO: Use upstream version of phf
+phf = { git = "https://github.com/Techcable/rust-phf.git", branch = "update/nightly-2019-01-11" }
+phf_macros = { git = "https://github.com/Techcable/rust-phf.git", branch = "update/nightly-2019-01-11" }
+phf_shared = { git = "https://github.com/Techcable/rust-phf.git", branch = "update/nightly-2019-01-11" }
+phf_generator = { git = "https://github.com/Techcable/rust-phf.git", branch = "update/nightly-2019-01-11" }
+

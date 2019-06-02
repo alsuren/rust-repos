@@ -1,0 +1,16 @@
+[package]
+name = "catlox"
+version = "0.1.0"
+authors = ["aaron"]
+
+[[bin]]
+doc = false
+name = "catlox"
+path = "src/main.rs"
+required-features = ["cli"] 
+
+[features]
+cli = ["liner"]
+
+[dependencies]
+liner = { version = "0.4.2", optional = true }

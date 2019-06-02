@@ -1,0 +1,11 @@
+[package]
+name = "clipper_wrapper"
+version = "0.1.0"
+authors = ["Jasper Jenkins <jasper.vs.jenkins@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "*"
+
+[build-dependencies]
+cc = "*"

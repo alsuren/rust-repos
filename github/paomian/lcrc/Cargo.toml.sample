@@ -1,0 +1,10 @@
+[package]
+name = "lcrc"
+version = "0.1.0"
+authors = ["paomian <xpaomian@gmail.com>"]
+
+[dependencies]
+hyper = "*"
+toml = "*"
+rustc-serialize = "*"
+log = "*"

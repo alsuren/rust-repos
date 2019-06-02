@@ -1,0 +1,9 @@
+[package]
+name = "gpu-raymarching"
+version = "0.1.0"
+authors = ["tatref <tatref@github.com>"]
+
+[dependencies]
+glium = "0.23"
+notify = "4.0.3"
+crossbeam-channel = "0.1.2"

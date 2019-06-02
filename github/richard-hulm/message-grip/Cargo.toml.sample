@@ -1,0 +1,10 @@
+[package]
+name = "message-grip"
+version = "0.1.0"
+authors = ["Richard Hulm <richardhulm1992@gmail.com>", "Oscar Barlow <oscar.barlow@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rusoto_core = "0.36.0"
+rusoto_sqs = "0.36.0"
+clap = { version = "2.32.0", features = ["yaml"] }

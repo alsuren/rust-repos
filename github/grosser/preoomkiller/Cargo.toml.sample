@@ -1,0 +1,20 @@
+[package]
+name = "preoomkiller"
+description = "Softly kills your process with SIGTERM before it runs out of memory."
+version = "0.0.2" # modified via `rake bump:patch`
+authors = ["Michael Grosser <michael@grosser.it>"]
+license = "MIT"
+homepage = "https://github.com/grosser/preoomkiller"
+include = [
+    "Cargo.toml",
+    "src/main.rs",
+    "Readme.md"
+]
+exclude = [
+    "vendor"
+]
+
+[dependencies]
+getopts = "0.2"
+regex = "0.2"
+libc = "0.2"

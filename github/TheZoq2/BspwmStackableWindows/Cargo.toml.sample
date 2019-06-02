@@ -1,0 +1,25 @@
+[package]
+name = "wm"
+version = "0.1.0"
+authors = ["TheZoq2 <frans.skarman@gmail.com>"]
+
+[dependencies]
+regex = "0.1"
+clap = "~2.19.*"
+notify-rust = "3.*"
+rustc-serialize = "0.3"
+typed_messages = {git = "https://github.com/TheZoq2/rust_typed_messages"}
+
+
+
+[[bin]]
+name = "rspwm"
+path = "src/main.rs"
+
+[[bin]]
+name = "rspc"
+path = "src/client.rs"
+
+[[bin]]
+name = "irspc"
+path = "src/irspc.rs"

@@ -1,0 +1,46 @@
+[package]
+authors = ["Michael Bryan <michaelfbryan@gmail.com>"]
+build = "build.rs"
+description = "An EPUB renderer for mdbook."
+name = "mdbook-epub"
+version = "0.2.1-alpha.0"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/Michael-F-Bryan/mdbook-epub"
+documentation = "https://docs.rs/mdbook-epub"
+keywords = ["epub", "mdbook", "documentation"]
+categories = ["command-line-interface", "development-tools"]
+
+[package.metadata.release]
+sign-commit = true
+
+[badges]
+travis-ci = { repository = "Michael-F-Bryan/mdbook-epub", branch = "master" }
+maintenance = { status = "actively-developed" }
+
+[[bin]]
+name = "mdbook-epub"
+doc = false
+
+[build-dependencies]
+cargo = "0.24.0"
+
+[dependencies]
+epub-builder = "0.3.0"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+pulldown-cmark = "0.1.0"
+semver = "0.9.0"
+serde = "1.0.24"
+serde_derive = "1.0.24"
+serde_json = "1.0.8"
+structopt = "0.1.6"
+structopt-derive = "0.1.6"
+mime_guess = "1.8.3"
+env_logger = "0.5.0-rc.2"
+log = "0.4.1"
+mdbook = "0.2.1"
+
+[dev-dependencies]
+tempdir = "0.3.5"
+epub = "1.1.1"

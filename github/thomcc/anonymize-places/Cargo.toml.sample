@@ -1,0 +1,13 @@
+[package]
+name = "anonymize-places"
+version = "0.1.0"
+authors = ["Thom Chiovoloni <tchiovoloni@mozilla.com>"]
+
+[dependencies]
+clap = "2.32.0"
+rusqlite = { version = "0.13.0", features = ["functions"] }
+failure = "0.1.2"
+dirs = "1.0.3"
+log = "0.4.3"
+env_logger = "0.5.12"
+rand = "0.5.5"

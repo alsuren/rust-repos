@@ -1,0 +1,17 @@
+[package]
+name = "eru"
+version = "0.1.0"
+authors = ["Tomoki Aonuma <uasi@uasi.jp>"]
+
+[[bin]]
+name = "eru"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.0.0"
+libc = "0.2.0"
+unicode-width = "0.1.1"
+
+[dependencies.ncurses]
+version = "5.73.0"
+default-features = false  # Disable wide support for OS X

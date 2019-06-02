@@ -1,0 +1,12 @@
+[package]
+name = "hash-diff"
+version = "0.1.0"
+authors = ["Avi ד"]
+edition = "2018"
+
+[dependencies]
+perfect-hash = "0.1"
+fasthash = "0.3.2"
+diffs = "0.3.0"
+itertools = { git = "https://github.com/Avi-D-coder/rust-itertools" }
+either = "1.5.0"

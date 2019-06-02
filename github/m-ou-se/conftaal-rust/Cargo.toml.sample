@@ -1,0 +1,16 @@
+[package]
+name = "conftaal"
+description = "A language for configuration files"
+version = "0.1.1"
+authors = ["Mara Bos <m-ou.se@m-ou.se>"]
+license = "BSD-2-Clause"
+
+[lib]
+name = "conftaal"
+path = "src/lib.rs"
+
+[[bin]]
+name = "conftaal-parse"
+path = "tools/parse.rs"
+
+[dependencies]

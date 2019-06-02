@@ -1,0 +1,12 @@
+[package]
+
+name = "rustwarsaw"
+version = "0.0.1"
+authors = ["Zbigniew Siciarz <zbigniew@siciarz.net>"]
+
+[dependencies]
+rustc-serialize = "~0.3.18"
+docopt = "~0.6.80"
+iron = "~0.3.0"
+mount = "~0.1.0"
+staticfile = "~0.2.0"

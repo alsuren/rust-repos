@@ -1,0 +1,26 @@
+[package]
+name = "brute-tree"
+version = "0.1.1"
+authors = ["Alex Nichol <unixpickle@gmail.com>"]
+
+[lib]
+name = "brute_tree"
+path = "src/mod.rs"
+
+[[bin]]
+name = "brute-tree-server"
+path = "src/server/main.rs"
+
+[[bin]]
+name = "brute-tree-worker"
+path = "src/worker/main.rs"
+
+[dependencies]
+futures = "0.1"
+hyper = "0.11"
+tokio-core = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+rand = "0.4"
+clap = "2.31"

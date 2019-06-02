@@ -1,0 +1,8 @@
+[package]
+name = "scpi"
+version = "0.1.0"
+authors = ["Janito Vaqueiro Ferreira Filho <janito.vff@gmail.com>"]
+
+[dependencies]
+bytes = "0.4"
+nom = "3.2"

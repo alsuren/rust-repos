@@ -1,0 +1,20 @@
+[package]
+name = "auth_xmppmessage"
+version = "0.1.0"
+authors = ["Yves Fischer <yvesf+git@xapek.org>"]
+build = "build.rs"
+
+[dependencies]
+ascii = "0.7"
+tiny_http = "0.5"
+url = "0.2"
+rustc-serialize = "0.3"
+time = "0.1"
+rust-crypto = "0.2"
+rand = "0.3"
+getopts = "0.2"
+simple_logger = "0.4"
+log = "0.3"
+
+[build-dependencies]
+gcc = "0.3"

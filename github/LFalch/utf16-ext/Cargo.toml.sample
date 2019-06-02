@@ -1,0 +1,19 @@
+[package]
+name = "utf16-ext"
+version = "0.1.0"
+authors = ["LFalch <lucas@wasd.dk>"]
+description = "Extensions for reading and writing utf-16"
+repository = "https://github.com/LFalch/utf16-ext"
+homepage = "https://github.com/LFalch/utf16-ext"
+documentation = "https://docs.rs/utf16-ext"
+readme = "README.md"
+categories = ["text-processing"]
+keywords = ["utf16", "io"]
+license = "MIT"
+exclude = [
+    ".gitignore",
+    ".travis.yml",
+]
+
+[dependencies]
+byteorder = "~1"

@@ -1,0 +1,8 @@
+[package]
+name = "graph"
+version = "0.2.2"
+authors = ["Mitchell Bruckner <mbruckner807@gmail.com>"]
+
+[dependencies]
+starfield-render = { git = "https://github.com/mabruckner/starfield-render.git", ver = "~0.2" }
+

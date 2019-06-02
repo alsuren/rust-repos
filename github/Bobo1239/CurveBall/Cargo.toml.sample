@@ -1,0 +1,18 @@
+[package]
+name = "curveball"
+version = "0.1.0"
+authors = ["Boris-Chengbiao Zhou <bobo1239@web.de>"]
+edition = '2018'
+
+[dependencies]
+cgmath = "0.16.1"
+env_logger = "0.5.10"
+log = "0.4.3"
+vulkano = { git = "https://github.com/vulkano-rs/vulkano.git" }
+vulkano-win = { git = "https://github.com/vulkano-rs/vulkano.git" }
+vulkano-shaders = { git = "https://github.com/vulkano-rs/vulkano.git" }
+winit = "0.17.2"
+
+[profile.release]
+# Workaround for driver issue; see https://github.com/vulkano-rs/vulkano/issues/831
+debug-assertions = true

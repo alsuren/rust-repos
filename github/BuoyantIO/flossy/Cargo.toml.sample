@@ -1,0 +1,41 @@
+[package]
+name = "flossy"
+version = "0.0.2"
+authors = ["Eliza Weisman <eliza@buoyant.io>"]
+readme = "README.md"
+license = "Apache 2.0"
+repository = "https://github.com/BuoyantIO/flossy"
+homepage = "https://github.com/BuoyantIO/flossy"
+description = "a tool for testing standard compliance of HTTP proxies"
+categories = ["command-line-utilities"]
+
+[[bin]]
+path = "src/bin/main.rs"
+name = "flossy"
+
+[dependencies]
+clap = "2.24"
+
+log = "0.3.8"
+slog = "2.0.6"
+slog-stdlog = "3.0.2"
+slog-async = "2.0.1"
+slog-term = "~2.0.2"
+slog-envlogger = "2.0.0"
+slog-scope = "4.0.0"
+
+futures = "0.1"
+tokio-io = "0.1"
+tokio-core = "0.1"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+net2 = "0.2.29"
+
+tokio-minihttp = { git = "https://github.com/hawkw/tokio-minihttp.git" }
+
+httparse = "1.2.3"
+
+lazy_static = "0.2.8"
+
+indicatif = "0.6.0"
+console = "0.5.0"

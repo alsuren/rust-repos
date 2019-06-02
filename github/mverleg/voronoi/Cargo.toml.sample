@@ -1,0 +1,41 @@
+cargo-features = ["default-run", "profile-overrides"]
+
+[package]
+name = "voronoiify-image"
+description = "Divide a PNG image into random nearest-neighbour regions and give each regio the average color of its pixels"
+license = "Apache-2.0"
+repository = "https://github.com/mverleg/voronoi"
+version = "1.0.2"
+authors = ["Mark <mverleg.noreply@gmail.com>"]
+default-run = "voronoi"
+
+[dependencies]
+image = "0.19.*"
+rand = "0.5.*"
+scoped-pool = "1.0.*"
+num_cpus = "1.0.*"
+clap = "2.32.*"
+byteorder = "1.2.*"
+separator = "0.3.*"
+
+[profile.dev.overrides."*"]
+opt-level = 3
+
+[profile.release.overrides."*"]
+opt-level = 3
+
+[profile.release]
+lto = true
+#opt-level = 1  # limit inlining for profiling
+
+[lib]
+name = "vorolib"
+path = "src/voronoi.rs"
+
+[[bin]]
+name = "voronoi"
+path = "src/main.rs"
+
+[[bin]]
+name = "voronoi-benchmark"
+path = "src/benchmark.rs"

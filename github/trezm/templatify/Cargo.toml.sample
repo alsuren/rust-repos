@@ -1,0 +1,14 @@
+[package]
+name = "templatify"
+version = "0.2.3"
+authors = ["Pete Mertz <peter.s.mertz@gmail.com>"]
+description = "A fast template to string macro."
+readme = "README.md"
+license = "MIT"
+documentation = "https://github.com/trezm/templatify"
+homepage = "https://github.com/trezm/templatify"
+repository = "https://github.com/trezm/templatify"
+
+
+[dependencies]
+bytes = "0.4"

@@ -1,0 +1,10 @@
+[package]
+
+name = "regexgen"
+version = "0.0.1"
+authors = ["jgedeon"]
+
+[dependencies]
+regex = "*"
+quickcheck = "*"
+quickcheck_macros = "*"

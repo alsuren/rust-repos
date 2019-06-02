@@ -1,0 +1,11 @@
+[package]
+name = "gliumtest"
+version = "0.1.0"
+authors = ["george"]
+
+[dependencies]
+cgmath="*"
+libc="0.2"
+conrod = { version="*", features = ["winit", "glium"] }
+image="*"
+cassowary="*"

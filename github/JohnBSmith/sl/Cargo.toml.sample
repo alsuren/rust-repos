@@ -1,0 +1,26 @@
+[package]
+name = "sl"
+version = "0.0.0"
+authors = ["Finn <finn.bcd@gmail.com>"]
+
+description = "A scientific library"
+license = "CC0-1.0"
+
+[dependencies.sl-na]
+path = "./sl-na"
+version = "0.0.0"
+
+[dependencies.sl-mf]
+path = "./sl-mf"
+version = "0.0.0"
+
+[dependencies.sl-gx]
+path = "./sl-gx"
+version = "0.0.0"
+
+[dependencies.sl-la]
+path = "./sl-la"
+version = "0.0.0"
+
+[workspace]
+

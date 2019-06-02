@@ -1,0 +1,7 @@
+[package]
+name = "spell"
+version = "1.2.0"
+authors = ["jD91mZM2 <me@krake.one>"]
+
+[dependencies]
+lcs = { git = "https://gitlab.com/jD91mZM2/lcs.git" }

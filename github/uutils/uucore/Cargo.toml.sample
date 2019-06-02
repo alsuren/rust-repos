@@ -1,0 +1,46 @@
+[package]
+name = "uucore"
+version = "0.0.1"
+authors = ["uutils developers"]
+description = "Common cross-platform code used by various uutils projects"
+
+homepage = "https://github.com/uutils/uucore"
+repository = "https://github.com/uutils/uucore"
+readme = "README.md"
+keywords = ["cross-platform", "uutils", "coreutils"]
+categories = ["os"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "uutils/uucore" }
+appveyor = { repository = "uutils/uucore" }
+
+[dependencies]
+getopts = "0.2.18"
+failure = { version = "0.1.1", optional = true }
+failure_derive = { version = "0.1.1", optional = true }
+time = { version = "0.1.40", optional = true }
+data-encoding = { version = "^2.1", optional = true }
+libc = { version = "0.2.42", optional = true }
+wild = "2.0.1"
+nix = { version = "0.13", optional = true }
+lazy_static = { version = "1.3", optional = true }
+platform-info = { version = "0.0.1", optional = true }
+
+[target.'cfg(target_os = "redox")'.dependencies]
+termion = "1.5"
+
+[features]
+fs = ["libc"]
+utf8 = []
+encoding = ["data-encoding", "failure", "failure_derive"]
+parse_time = []
+mode = ["libc"]
+utmpx = ["time", "libc"]
+process = ["libc"]
+signals = []
+entries = ["libc"]
+zero-copy = ["nix", "libc", "lazy_static", "platform-info"]
+wide = []
+default = []
+

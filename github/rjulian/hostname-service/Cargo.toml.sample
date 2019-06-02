@@ -1,0 +1,12 @@
+[package]
+
+name = "hostname-service"
+version = "0.0.1"
+authors = [ "Richard Juliane <richard@rjulian.net>" ]
+
+[dependencies]
+nickel = "*"
+rustc-serialize = "*"
+serde_json = "1.0"
+rusoto_dynamodb = "*" 
+rusoto_core = "*" 

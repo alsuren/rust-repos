@@ -1,0 +1,43 @@
+[package]
+name = "sysmon"
+version = "0.1.0"
+authors = ["John-John Tedro <udoprog@tedro.se>"]
+license = "Apache 2.0"
+
+[dependencies]
+getopts = "*"
+histogram = "*"
+log = "*"
+env_logger = "*"
+num = "*"
+serde = "0.8.20"
+serde_derive = "0.8.20"
+serde_json = "0.8"
+time = "*"
+futures = "*"
+futures-cpupool = "*"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-timer = "0.1"
+tokio-signal = "0.1"
+nom = "^2.0"
+error-chain = "^0.7"
+num_cpus = "1.2.0"
+
+[dependencies.toml]
+version = "0.2.1"
+default-features = false
+features = ["serde"]
+
+[dependencies.reqwest]
+version = "*"
+optional = true
+
+[dependencies.notify]
+version = "*"
+optional = true
+
+[features]
+default = ["http", "watch"]
+http = ["reqwest"]
+watch = ["notify"]

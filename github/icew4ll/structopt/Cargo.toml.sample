@@ -1,0 +1,16 @@
+[package]
+name = "structopt"
+version = "0.1.0"
+authors = ["icew4ll <icew4ll@tuta.io>"]
+
+[dependencies]
+structopt = "0.2.10"
+clap = "2.32.0"
+docopt = "1.0.1"
+serde_derive = "1.0.75"
+serde = "1.0.75"
+lapp = "0.3.1"
+duct = "0.11.0"
+csv = "1.0.1"
+lazy_static = "1.1.0"
+regex = "1.0.5"

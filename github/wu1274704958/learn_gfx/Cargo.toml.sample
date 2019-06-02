@@ -1,0 +1,58 @@
+[package]
+name = "learn_gfx"
+version = "0.1.0"
+authors = ["wws <wu1274704958@qq.com>"]
+edition = "2018"
+
+[features]
+default = []
+vulkan = ["gfx-backend-vulkan"]
+dx12 = ["gfx-backend-dx12"]
+gl = ["gfx-backend-gl"]
+
+[lib]
+name = "learn_gfx"
+
+[[bin]]
+name = "quad"
+path = "src/quad/main.rs"
+
+[[bin]]
+name = "create_command_pool"
+path = "src/create_command_pool/main.rs"
+
+[[bin]]
+name = "triangle"
+path = "src/triangle/main.rs"
+
+[[bin]]
+name = "triangle2"
+path = "src/triangle2/main.rs"
+
+[[bin]]
+name = "load_model"
+path = "src/load_model/main.rs"
+
+[dependencies]
+env_logger = "0.5"
+image = "0.19"
+log = "0.4"
+winit = "0.18"
+glsl-to-spirv = "0.1.4"
+gfx-hal = "0.1.0"
+gfx-backend-empty = "0.1.0"
+cgmath = "0.17.0"
+assimp = "0.3.1"
+
+[dependencies.gfx-backend-vulkan]
+version = "0.1"
+optional = true
+
+[dependencies.gfx-backend-gl]
+version = "0.1"
+optional = true
+
+[target.'cfg(windows)'.dependencies.gfx-backend-dx12]
+version = "0.1.1"
+optional = true
+

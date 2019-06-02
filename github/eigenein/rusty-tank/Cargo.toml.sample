@@ -1,0 +1,24 @@
+[package]
+name = "rusty-tank"
+version = "0.1.0"
+authors = ["Pavel Perestoronin <eigenein@gmail.com>"]
+
+[dependencies]
+rand = "*"
+time = "*"
+
+[[bin]]
+name = "svdcf"
+path = "src/svdcf.rs"
+
+[[bin]]
+name = "naive"
+path = "src/naive.rs"
+
+[[bin]]
+name = "slopeone"
+path = "src/slopeone.rs"
+
+[[bin]]
+name = "itemcf"
+path = "src/itemcf.rs"

@@ -1,0 +1,11 @@
+[package]
+name = "sand"
+version = "0.1.0"
+authors = ["Zac Pullar-Strecker <zacmps@gmail.com>"]
+
+[dependencies]
+libservo = { git = "https://github.com/servo/servo", rev = "22472b4" }
+glutin = "0.9"
+pam-auth = "0.5"
+structopt = "0.1"
+structopt-derive = "0.1"

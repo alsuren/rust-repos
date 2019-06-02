@@ -1,0 +1,9 @@
+[package]
+name = "eleeprom"
+version = "0.1.0"
+authors = ["Matt Richey <mrichey@eyelock.com>"]
+description = "this crate contains the EyeLock EEPROM tool"
+homepage = "http://www.eyelock.com/"
+
+[dependencies]
+sysfs_gpio = "0.5"

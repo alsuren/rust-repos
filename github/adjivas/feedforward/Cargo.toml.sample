@@ -1,0 +1,12 @@
+[package]
+
+name = "neuralnetwork"
+version = "0.1.0"
+authors = ["adjivas <adjivas@users.noreply.github.com>"]
+description = "neural network"
+license = "GNUv3"
+repository = "https://gitlab.com/adjivas/feedforward.git"
+
+[[bin]]
+name = "main"
+path = "src/bin.rs"

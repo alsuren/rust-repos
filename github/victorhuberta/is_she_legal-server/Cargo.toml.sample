@@ -1,0 +1,12 @@
+[package]
+name = "is_she_legal"
+version = "0.1.0"
+authors = ["Victor Huberta <victorhuberta@gmail.com>"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+rocket = "0.3.13"
+rocket_codegen = "0.3.13"
+rocket_contrib = "0.3.13"
+reqwest = "0.8.6" # install OpenSSL v1.0.1+ for Linux

@@ -1,0 +1,8 @@
+[package]
+name = "mal"
+version = "1.0.0"
+authors = ["Sergey Povstyanov <spovst@gmail.com>"]
+
+[dependencies]
+rl-sys = "~0.5.2"
+time = "0.1"

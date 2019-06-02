@@ -1,0 +1,16 @@
+[package]
+name = "triforce_rs"
+version = "0.0.2"
+description = "A crate to make it easier to use the pg_trgm extension with diesel"
+license = "MIT OR Apache-2.0"
+authors = ["Callym <hi@callym.com>"]
+homepage = "https://github.com/callym/triforce_rs"
+repository = "https://github.com/callym/triforce_rs"
+keywords = ["diesel", "postgres", "database", "sql"]
+categories = ["database"]
+readme = "README.md"
+exclude = ["src/schema.rs"]
+edition = "2018"
+
+[dependencies]
+diesel = { version = "1.4", features = ["postgres"] }

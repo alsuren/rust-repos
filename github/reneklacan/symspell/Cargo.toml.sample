@@ -1,0 +1,19 @@
+[package]
+name = "symspell"
+version = "0.1.2"
+license = "MIT"
+authors = ["Rene Klacan <rene.klacan@gmail.com>"]
+keywords = ["spellcheck"]
+description = "Spelling correction & Fuzzy search"
+homepage = "https://github.com/reneklacan/symspell"
+repository = "https://github.com/reneklacan/symspell"
+exclude = [
+    "data/*",
+]
+
+[dependencies]
+strsim = "^0.9"
+unidecode = "^0.3"
+derive_builder = "^0.7"
+
+[dev-dependencies]

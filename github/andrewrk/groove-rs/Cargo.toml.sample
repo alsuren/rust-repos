@@ -1,0 +1,13 @@
+[package]
+
+name = "groove"
+version = "0.0.1"
+authors = ["Andrew Kelley <superjoe30@gmail.com>"]
+repository = "https://github.com/andrewrk/groove-rs"
+license = "MIT"
+documentation = "https://s3.amazonaws.com/superjoe/doc/rust-groove/groove/index.html"
+description = "Safe bindings to libgroove - streaming audio processing library"
+
+[dependencies]
+
+lazy_static = "0.1.*"

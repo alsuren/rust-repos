@@ -1,0 +1,7 @@
+[package]
+name = "git-gtk-rs"
+version = "0.1.0"
+authors = ["Vamsi Krishna Brahmajosyula <vamsikrishna.brahmajosyula@gmail.com>"]
+
+[dependencies]
+gtk = { git = "https://github.com/gtk-rs/gtk.git" }

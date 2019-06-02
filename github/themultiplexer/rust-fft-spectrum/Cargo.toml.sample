@@ -1,0 +1,13 @@
+[package]
+name = "fft"
+version = "0.1.0"
+authors = ["Joshua Rutschmann <joshua@rutschmann.tech>"]
+edition = "2018"
+
+[dependencies]
+rust_gpiozero = "0.1.0"
+ads1x1x = "0.1.0"
+embedded-hal = "0.2.2"
+linux-embedded-hal = "0.2.2"
+nb = "0.1.1"
+rustfft = "3.0.0"

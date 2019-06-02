@@ -1,0 +1,9 @@
+[package]
+name = "labsh"
+version = "0.1.0"
+authors = ["user"]
+
+[dependencies]
+clap = "2"
+rustyline = "1.0"
+toml = "0.4"

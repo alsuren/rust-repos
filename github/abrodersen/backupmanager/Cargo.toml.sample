@@ -1,0 +1,40 @@
+[package]
+name = "backupmanager"
+version = "0.1.0"
+authors = ["Aaron Brodersen <aaron@abrodersen.com>"]
+
+[dependencies]
+lvm2 =  { git = "https://github.com/abrodersen/lvm2-rs", branch = "master" }
+log = "0.4"
+env_logger = "0.5"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+failure = "0.1"
+sys-mount = "1.0"
+uuid = { version = "0.7", features = ["serde", "v4"] }
+tempfile = "3.0"
+rusoto_core = "0.36"
+rusoto_credential = "0.15"
+rusoto_s3 = "0.36"
+futures = "0.1"
+crossbeam = "0.7"
+flate2 = "1.0"
+sequoia-openpgp = "0.3"
+chrono = "0.4"
+nix = "0.13"
+gethostname = "0.2"
+structopt = "0.2"
+exponential-backoff = "0.2.2"
+hex = "0.3.2"
+rand = "0.6.5"
+sha2 = "0.8.0"
+bincode = "1.1.2"
+cron = "0.6"
+
+[dependencies.tar]
+git = "https://github.com/abrodersen/tar-rs.git"
+branch = "long-link-names"
+
+[dev-dependencies]
+

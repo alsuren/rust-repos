@@ -1,0 +1,14 @@
+[package]
+name = "rayrenderer"
+version = "0.1.0"
+authors = ["Martin Quarda <quardmar@fit.cvut.cz>"]
+
+[dependencies]
+nalgebra = "0.16.10"
+image = "0.20.1"
+rand = "0.5.5"
+approx = "0.3.0"
+itertools = "0.7.8"
+
+[profile.release]
+opt-level = 3

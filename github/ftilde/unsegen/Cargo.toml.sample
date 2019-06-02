@@ -1,0 +1,22 @@
+[package]
+name = "unsegen"
+version = "0.1.2"
+authors = ["ftilde <ftilde@protonmail.com>"]
+
+description = "Another tui library"
+documentation = "https://docs.rs/unsegen"
+repository = "https://github.com/ftilde/unsegen"
+readme = "README.md"
+license = "MIT"
+keywords = ["terminal", "tui"]
+
+[dependencies]
+ndarray = "0.8"
+nix = "0.8"
+smallvec = "0.3"
+termion = "1.5"
+unicode-segmentation = "1.0"
+unicode-width = "0.1"
+
+[dev-dependencies]
+rand = "0.4"

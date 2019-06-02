@@ -1,0 +1,13 @@
+[package]
+name = "fsref_baremetal"
+version = "0.1.0"
+authors = ["Yi Qingliang <niqingliang2003@gmail.com>"]
+
+#[build-dependencies]
+#cc = "*"
+
+[profile.dev]
+#lto = true
+
+[profile.release]
+#lto = true

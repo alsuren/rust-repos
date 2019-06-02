@@ -1,0 +1,27 @@
+[package]
+name = "genetic-alg"
+version = "0.1.0"
+authors = ["Clinton McKay <mckizzle@users.noreply.github.com>"]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+debug = false
+
+[lib]
+name = "genalg"
+path = "src/genalg/lib.rs"
+
+[[bin]]
+name = "genalg_runner"
+path = "src/main.rs"
+
+[dependencies]
+rand = "*"
+time = "*"
+ordered-float = "*"
+
+[dev-dependencies]
+quickcheck = "*"

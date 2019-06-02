@@ -1,0 +1,11 @@
+[package]
+name = "playground-failure"
+version = "0.1.0"
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+
+[dependencies]
+failure = "0.1.1"
+
+[lib]
+name = "lib"
+path = "src/lib.rs"

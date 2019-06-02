@@ -1,0 +1,15 @@
+[package]
+name = "wiko"
+version = "0.1.0"
+authors = ["Nadir Sampaoli <nadirsampaoli@gmail.com>"]
+
+[dependencies]
+serde = "^1"
+serde_derive = "^1"
+serde_json = "^1"
+chrono = { version = "*", features = ["serde"] }
+diesel = { version = "*", features = ["postgres","chrono"] }
+diesel_derives = { version = "*", features = ["postgres"] }
+dotenv = "*"
+iron = "*"
+router = "*"

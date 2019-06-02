@@ -1,0 +1,14 @@
+[package]
+name = "speedtest_watchdog"
+version = "0.1.0"
+authors = ["Marcio Klepacz <marcioklepacz@gmail.com>"]
+
+[dependencies]
+time = "0.1"
+google-drive3 = "*"
+hyper = "*"
+yup-oauth2 = "*"
+
+[[bin]]
+name = "speedtest_watchdog"
+

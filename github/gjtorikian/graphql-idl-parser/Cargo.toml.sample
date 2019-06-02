@@ -1,0 +1,16 @@
+[package]
+name = "graphql-idl-parser"
+version = "0.1.1"
+authors = ["Garen Torikian <gjtorikian@gmail.com>"]
+build = "build.rs"
+description = "A parser for the GraphQL IDL format."
+license = "MIT"
+repository = "https://github.com/gjtorikian/graphql-idl-parser"
+categories = ["text-processing"]
+
+[build-dependencies]
+lalrpop = "0.13.0"
+
+[dependencies]
+lalrpop-util = "0.13.0"
+regex = "0.2.1"

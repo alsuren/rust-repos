@@ -1,0 +1,10 @@
+[package]
+name = "conv"
+version = "0.1.0"
+authors = ["Sergey Kacheev <uo0@ya.ru>"]
+build = "build.rs"
+
+[dependencies]
+lazy_static = "1.0"
+byteorder = "~1.2.1"
+clap = "2.29.*"

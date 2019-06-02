@@ -1,0 +1,22 @@
+[package]
+name = "rusty-variation"
+version = "0.1.0"
+authors = ["Wen Kokke <wen.kokke@gmail.com>"]
+description = "A library for deadlock-free session-typed communication."
+repository = "http://github.com/wenkokke/rusty-variation"
+license = "MIT"
+readme = "README.md"
+categories = ["concurrency"]
+exclude = ["/doc/*"]
+
+[badges]
+travis-ci = { repository = "wenkokke/rusty-variation", branch = "master" }
+
+[dependencies]
+crossbeam-channel = "^0.3.8"
+either = "^1.5.0"
+
+[dev-dependencies]
+compiletest_rs = { version = "*", features = [ "stable", "tmp" ] }
+rand = "0.5"
+session_types = { git = "https://github.com/Munksgaard/session-types" }

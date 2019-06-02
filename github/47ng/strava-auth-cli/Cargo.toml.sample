@@ -1,0 +1,15 @@
+[package]
+name = "strava-auth-cli"
+version = "0.1.0"
+authors = ["Francois Best <francois@francoisbest.com>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+structopt = "0.2.14"
+webbrowser = "0.4.0"
+rocket = "0.4.0"
+reqwest = "0.9.9"
+serde = "1.0.85"
+serde_json = "1.0.37"
+serde_derive = "1.0.85"

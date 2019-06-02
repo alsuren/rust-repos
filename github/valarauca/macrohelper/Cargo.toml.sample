@@ -1,0 +1,19 @@
+[package]
+name = "codgenhelp"
+version = "0.0.2"
+authors = ["William Cody Laeder <codylaeder@gmail.com>"]
+repository = "https://github.com/valarauca/macrohelper"
+homepage = "https://github.com/valarauca/macrohelper"
+license = "Apache-2.0"
+readme = "README.md"
+documentation = "https://valarauca.github.io/macrohelper/macrohelper/index.html"
+description = "Simplifies structure and enum parsing in Macros1.1"
+keywords = ["macros","codegen"]
+
+[dependencies]
+regex = "=1.1.0"
+
+[dependencies.syn]
+version = "=0.15.23"
+default-features = true
+features = ["full"]

@@ -1,0 +1,11 @@
+[package]
+name = "tokio-starvation"
+version = "0.1.0"
+authors = ["mexus <gilaldpellaeon@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1.2.7"
+rand = "0.6.1"
+rand_chacha = "0.1.0"
+tokio = "0.1.13"

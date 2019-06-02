@@ -1,0 +1,8 @@
+[package]
+name = "lochnes"
+version = "0.1.0"
+authors = ["Paulo Cabral Sanz <paulosanz@poli.ufrj.br>"]
+
+[dependencies]
+forge6502 = { path = "../forge6502" }
+lazy_static = "1.0.0"

@@ -1,0 +1,44 @@
+[package]
+name = "minions"
+version = "0.5.3"
+authors = ["BlahGeek <i@BlahGeek.com>"]
+
+[lib]
+name = "minions"
+path = "src/lib.rs"
+doc = false
+
+[[bin]]
+name = "minions"
+path = "src/bin/minions.rs"
+
+[dependencies]
+toml = "0.4"
+byteorder = "1"
+clap = "2.24"
+htmlescape = "0.3"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+uuid = { version = "0.5", features = ["v4"] }
+log = "0.4"
+fern = { version = "0.5", features = ["colored"] }
+shlex = "0.1"
+url = "1.5"
+reqwest = "0.8"
+rust-crypto = "0.2"
+rust-ini = "0.11"
+nix = "0.8"
+libc = "0.2"
+chrono = "0.4"
+glib-sys = "0.6"
+glib = "0.5"
+gdk = "0.8"
+gdk-pixbuf = "0.4"
+gtk = { version = "0.4", features = ["v3_10"] }
+gtk-sys = "0.6"
+lru-cache = "0.1.1"
+pinyin = "0.2"
+rusqlite = "0.13"
+lazy_static = "1.0"
+error-chain = "0.11"

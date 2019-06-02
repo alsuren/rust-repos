@@ -1,0 +1,14 @@
+[package]
+name = "liboffsetup"
+version = "0.0.4"
+authors = ["Samuel Marks @SamuelMarks", "Peter Badenhorst @dev10"]
+edition = "2018"
+license = "Apache-2.0"
+
+[dependencies]
+config = "0.9.3"
+structopt = "0.2.15"
+serde = { version = "1.0.91", features = ["derive"] }
+urlparse = "0.7.3"
+validator = "0.8.0"
+validator_derive = "0.8.0"

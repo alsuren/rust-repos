@@ -1,0 +1,15 @@
+[package]
+name = "hardback_codec"
+version = "0.1.0"
+authors = ["alanpoon"]
+
+[dependencies]
+serde="1.0"
+serde_json = "1.0"
+serde_derive ="1.0"
+cardgame_macros = {git="https://github.com/alanpoon/cardgame_macros.git"}
+chrono = { version = "0.4", features = ["serde"] }
+
+[lib]
+name = "hardback_codec"
+path = "src/lib.rs"

@@ -1,0 +1,10 @@
+[package]
+name = "rustyboy"
+version = "0.1.0"
+authors = ["javierbg <javierbg1995@gmail.com>"]
+license = "GPL-3.0"
+
+[dependencies]
+
+argparse = "*"
+minifb = "0.9.0" # Window Manager

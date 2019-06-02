@@ -1,0 +1,8 @@
+[package]
+name = "ecdh"
+version = "0.1.0"
+authors = ["Brian King <kingishb@gmail.com>"]
+
+[dependencies]
+clap = "2.32.0"
+plotlib="0.3.0"

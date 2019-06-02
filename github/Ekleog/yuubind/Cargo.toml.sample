@@ -1,0 +1,10 @@
+[workspace]
+members = [ "smtp-message", "smtp-message/fuzz",
+            "smtp-server", "smtp-server/fuzz",
+            "smtp-queue" ]
+
+[profile.release]
+lto = true
+
+# TODO: (C) setup clippy
+# TODO: (C) setup cargo-bench

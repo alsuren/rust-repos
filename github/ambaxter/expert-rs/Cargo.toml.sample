@@ -1,0 +1,28 @@
+[package]
+name = "expert"
+version = "0.1.0"
+authors = ["Adam Baxter <ambaxter@users.noreply.github.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/ambaxter/expert-rs.git"
+homepage = "https://github.com/ambaxter/expert-rs"
+description = "A cache-friendly, typesafe expert/business rules system"
+categories = ["algorithms", "data-structures"]
+keywords = ["rete", "expert", "business", "rules", "brms", "decision", "manager"]
+
+[dependencies]
+num = "0.2"
+itertools = "0.7"
+string-interner = "0.7"
+ordered-float = "0.5"
+float-cmp = "0.4"
+parking_lot = {version = "0.6", features = ["nightly"]}
+failure = "0.1"
+failure_derive = "0.1"
+decimal = "^2"
+chrono = "0.4"
+ord_subset = "^3"
+enum_index = "0.2.0"
+enum_index_derive = "0.2.0"
+anymap = "0.12.1"
+bimap = "0.1.5"

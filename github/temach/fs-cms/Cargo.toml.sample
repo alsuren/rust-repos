@@ -1,0 +1,10 @@
+[package]
+name = "fs-cms"
+version = "0.1.0"
+authors = ["artem <tematibr@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+argparse = "0.2.2"
+tera = "0.11.20"
+

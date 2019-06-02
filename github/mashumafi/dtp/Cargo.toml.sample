@@ -1,0 +1,8 @@
+[package]
+name = "sheets"
+version = "0.1.0"
+authors = ["mashumafi"]
+edition = "2018"
+
+[dependencies]
+chrono = { version = "0.4" }

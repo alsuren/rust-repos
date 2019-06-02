@@ -1,0 +1,19 @@
+[package]
+
+name = "rpassword"
+version = "3.0.2"
+authors = ["Conrad Kleinespel <conradk@conradk.com>"]
+description = "Read passwords in console applications."
+license = "Apache-2.0"
+homepage = "https://github.com/conradkdotcom/rpassword"
+repository = "https://github.com/conradkdotcom/rpassword"
+documentation = "https://docs.rs/rpassword/"
+readme = "README.md"
+keywords = ["read", "password", "security", "pass", "getpass"]
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.2"
+kernel32-sys = "0.2"

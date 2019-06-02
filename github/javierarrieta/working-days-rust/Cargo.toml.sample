@@ -1,0 +1,8 @@
+[package]
+name = "working-days-rust"
+version = "0.1.0"
+authors = ["Javier Arrieta <javier@techdelivery.es>"]
+
+[dependencies]
+chrono = "0.3.1"
+immutable-map = "0.1.2"

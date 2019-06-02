@@ -1,0 +1,36 @@
+[package]
+name = "sparkline"
+version = "1.0.0"
+authors = ["Joel Pitt <joel@joelpitt.com>"]
+
+description = "unicode sparklines in rust ▁▂▃▄▅▆▇█"
+repository = "https://github.com/ferrouswheel/rust-sparkline"
+readme = "README.md"
+keywords = ["data", "term"]
+license = "MIT OR Apache-2.0"
+
+[lib]
+crate-type = ["rlib"]
+
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"
+num = "0.1"
+# Can't rely on [target.'cfg(unix)'.dependencies] because it errors out
+lodepng = "0.12.4"
+
+#[target.'cfg(unix)'.dependencies]
+#lodepng = "0.12.4"
+
+#[dependencies.lodepng]
+#git = "https://github.com/pornel/lodepng-rust.git"
+
+[features]
+# no features by default
+default = []
+
+
+[[bin]]
+name = "sparkr"
+path = "src/main.rs"

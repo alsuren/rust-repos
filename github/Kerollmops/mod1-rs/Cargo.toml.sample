@@ -1,0 +1,11 @@
+[package]
+name = "mod1-rs"
+version = "0.1.0"
+authors = ["Kero <renault.cle@gmail.com>"]
+
+[dependencies]
+nom = "1.2"
+simplelog = "0.1"
+log = "0.3"
+colorify = "0.2"
+ndarray = "0.6"

@@ -1,0 +1,17 @@
+[package]
+name = "mat32"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["mat32", "matrix", "3x2"]
+description = "rust matrix 3x2 functions"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-mat32.git"
+homepage = "https://github.com/nathanfaucett/rs-mat32"
+
+[dependencies]
+approx_eq = { git = "https://github.com/nathanfaucett/rs-approx_eq.git" }
+num = { git = "https://github.com/nathanfaucett/rs-num.git" }
+signed = { git = "https://github.com/nathanfaucett/rs-signed.git" }
+vec2 = { git = "https://github.com/nathanfaucett/rs-vec2.git" }

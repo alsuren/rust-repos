@@ -1,0 +1,23 @@
+[package]
+name = "sera"
+version = "0.1.0"
+authors = ["emekoi <emekankurumeh@outlook.com>"]
+
+[dependencies]
+lazy_static = "1.0.0"
+stb_image = "0.2.2"
+rusttype = "0.4.1"
+unicode-normalization = "0.1.5"
+uluru = "0.2.0"
+
+
+[dev-dependencies]
+rand = "*"
+sdl2 = "*"
+
+[features]
+default = []
+MODE_RGBA = []
+MODE_ARGB = []
+MODE_ABGR = []
+MODE_BGRA = []

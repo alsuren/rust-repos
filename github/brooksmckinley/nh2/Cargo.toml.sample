@@ -1,0 +1,11 @@
+[package]
+authors = ["Brooks <brooksmckinley@yahoo.com>"]
+name = "nh2"
+version = "0.1.0"
+[dependencies]
+base64 = "*"
+cursive = "*"
+rusqlite = "*"
+sha2 = "0.8.0"
+regex = "*"
+rand = "*"

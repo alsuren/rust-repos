@@ -1,0 +1,11 @@
+[package]
+name = "feldspar"
+version = "0.0.2"
+
+[dependencies]
+nom = "2.2.1"
+typed-arena = "1.2.0"
+
+[[bin]]
+name = "feldspar"
+doc = false

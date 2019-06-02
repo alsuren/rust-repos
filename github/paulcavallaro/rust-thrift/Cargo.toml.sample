@@ -1,0 +1,9 @@
+[package]
+
+name = "rust-thrift"
+version = "0.0.1"
+authors = ["Paul Cavallaro <paulcavallaro@gmail.com>"]
+
+[dependencies]
+mio = "0.5"
+bytes = "*"

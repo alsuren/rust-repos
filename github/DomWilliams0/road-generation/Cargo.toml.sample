@@ -1,0 +1,11 @@
+[package]
+name = "road_renderer"
+version = "0.1.0"
+authors = ["Dom Williams <me@domwillia.ms>"]
+
+[dependencies]
+road_generation = {path = "road_generation"}
+sfml = "0.12.0"
+lazy_static = "0.2"
+
+[workspace]

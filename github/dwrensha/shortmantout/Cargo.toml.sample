@@ -1,0 +1,47 @@
+[package]
+
+name = "carrycoat"
+version = "0.0.0"
+authors = [ "David Renshaw <dwrenshaw@gmail.com>" ]
+license = "MIT"
+description = "trying to compute an optimal portmantout"
+
+[dependencies]
+radix_trie = "0.0.8"
+rand = "0.3"
+byteorder = "0.4"
+
+[lib]
+
+name = "carrycoat"
+path = "src/lib.rs"
+
+[[bin]]
+
+name = "reduce"
+path = "src/reduce.rs"
+
+[[bin]]
+
+name = "verify"
+path = "src/verify.rs"
+
+[[bin]]
+
+name = "generate"
+path = "src/generate.rs"
+
+[[bin]]
+
+name = "lower_bound"
+path = "src/lower_bound.rs"
+
+[[bin]]
+
+name = "join"
+path = "src/join.rs"
+
+[[bin]]
+
+name = "search"
+path = "src/search.rs"

@@ -1,0 +1,13 @@
+[package]
+name = "radarr"
+version = "0.1.0"
+authors = ["Spike Grobstein <me@spike.cx>"]
+description = "Commandline interface for Radarr API"
+edition = "2018"
+
+[dependencies]
+serde_json = "1.0"
+reqwest = "0.9.10"
+url = "1.7.2"
+serde = { version = "1.0.89", features = ["derive"] }
+clap = "2.33.0"

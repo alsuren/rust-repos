@@ -1,0 +1,48 @@
+[package]
+name = "weectrl"
+version = "0.5.1"
+authors = ["Klaus Nielsen <hyperchaotic@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["WeMo"]
+repository = "https://github.com/Hyperchaotic/weectrl"
+homepage = "https://github.com/Hyperchaotic/weectrl"
+description = "A library and application for controlling WeMo switches."
+categories = ["Network Programming"]
+
+[dependencies]
+slog = "1.4.1"
+slog-scope = "0.2.2"
+slog-stdlog = "1.1.0"
+slog-stream = "1.2.0"
+
+chrono = "0.3.1"
+ssdp = "0.6.0"
+time = "0.1"
+#hyper = "0.10.0"
+serde = "0.8.22"
+serde_xml = "0.9.1"
+serde_json = "0.8"
+serde_derive = "0.8.22"
+app_dirs = "1.1.1"
+url = "1.2.4"
+tokio-core = "0.1.4"
+tokio-timer = "0.1.0"
+futures = "0.1.10"
+
+[dependencies.hyper]
+git = "https://github.com/hyperium/hyper.git"
+
+[dev-dependencies]
+image = "0.12.2"
+
+[dev-dependencies.conrod]
+git = "https://github.com/PistonDevelopers/conrod.git"
+features = ["glium", "winit"]
+
+[lib]
+name = "weectrl"
+path = "src/lib.rs"
+
+[features]
+nightly = []

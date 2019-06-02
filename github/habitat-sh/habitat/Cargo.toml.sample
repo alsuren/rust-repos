@@ -1,0 +1,24 @@
+[profile.release]
+debug = true
+
+[workspace]
+members = [
+  "components/builder-api-client",
+  "components/butterfly",
+  "components/common",
+  "components/core",
+  "components/hab",
+  "components/http-client",
+  "components/launcher",
+  "components/launcher-client",
+  "components/launcher-protocol",
+  "components/pkg-export-docker",
+  "components/pkg-export-helm",
+  "components/pkg-export-kubernetes",
+  "components/pkg-export-tar",
+  "components/rst-reader",
+  "components/sup",
+  "components/sup-client",
+  "components/sup-protocol",
+  "components/win-users",
+]

@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "clp",
+    "clp-sys",
+    "egraph",
+    "egraph-c-api",
+    "egraph-layered",
+    "egraph-py",
+    "egraph-wasm",
+]

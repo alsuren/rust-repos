@@ -1,0 +1,15 @@
+[package]
+name = "lodestone-distance"
+version = "0.1.0"
+authors = ["dremonkey <a.deutmeyer@gmail.com>"]
+
+[dependencies]
+geojson = "0.1.0"
+rustc-serialize = "0.3.0"
+
+[dependencies.lodestone-core]
+path = "../lodestone-core"
+
+[dependencies.lodestone-point]
+path = "../lodestone-point"
+

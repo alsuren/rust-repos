@@ -1,0 +1,13 @@
+[package]
+name = "merkledag"
+version = "0.1.0"
+authors = ["xiaohuo <xiaohuo200@gmail.com>"]
+edition = "2018"
+build = false
+
+[dependencies]
+multihash = { git = "https://github.com/renlulu/rust-multihash" }
+cid = { git = "https://github.com/renlulu/rust-cid.git" }
+protobuf = { version = "~2.0", features = ["with-bytes"] }
+serde_derive = "1.0.87"
+serde = "1.0.87"

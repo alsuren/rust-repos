@@ -1,0 +1,10 @@
+[package]
+name = "ell-sem-18"
+version = "0.1.0"
+authors = ["fkajzer <filipkajzer@gmail.com>"]
+
+[dependencies]
+regex = "1"
+lazy_static = "1.1.0"
+quick-xml = "0.12.0"
+time = "*"

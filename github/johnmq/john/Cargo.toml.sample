@@ -1,0 +1,13 @@
+[package]
+
+name = "john"
+version = "0.4.0"
+authors = ["Alexey Fedorov <alexey.fedorov@wimdu.com>"]
+
+[dependencies.iron]
+
+git = "https://github.com/iron/iron.git"
+
+[dependencies.router]
+
+git = "https://github.com/iron/router.git"

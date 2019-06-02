@@ -1,0 +1,19 @@
+[package]
+
+name = "rusty_boy"
+version = "0.0.1"
+authors = ["Michael Pankov <constantius9@gmail.com>"]
+
+[dependencies]
+
+log = "0.3"
+env_logger = "0.3"
+num = "0.1"
+rand = "0.3"
+rustc-serialize = "0.3"
+term = "0.2"
+time = "0.1"
+
+[dependencies.bread]
+
+version = "0.1"

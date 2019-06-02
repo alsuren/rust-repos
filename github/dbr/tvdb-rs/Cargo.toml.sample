@@ -1,0 +1,32 @@
+[package]
+name = "tvdb"
+version = "0.5.1"
+authors = ["dbr <dbr.onix@gmail.com>"]
+
+description = "API wrapper to http://thetvdb.com (open database for TV episode data)"
+repository = "http://github.com/dbr/tvdb-rs"
+readme = "readme.md"
+keywords = ["api", "tvdb", "web"]
+license = "Unlicense"
+
+[dependencies]
+reqwest = "0.9"
+url = "1.1"
+log = "0.4.1"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+[dev-dependencies]
+argparse = "0.2"
+env_logger = "0.6"
+rand = "0.6"
+
+[[example]]
+name = "tvdb-basic"
+
+[[example]]
+name = "tvdb-lookup"
+
+[[example]]
+name = "tvdb-random"

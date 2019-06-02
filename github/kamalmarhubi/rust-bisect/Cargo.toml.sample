@@ -1,0 +1,30 @@
+[package]
+name = "rust-bisect"
+version = "0.1.0-dev"
+authors = ["Kamal Marhubi <kamal@marhubi.com>"]
+license = "MIT"
+
+description = "Find the Rust nightly that that changed some behavior"
+keywords = ["bisect", "rust"]
+
+homepage = "https://github.com/kamalmarhubi/rust-bisect"
+repository = "https://github.com/kamalmarhubi/rust-bisect.git"
+
+include = ["multirust/**", "src/**/*", "Cargo.toml", "README.md"]
+readme = "README.md"
+
+publish = false
+
+[dependencies]
+chrono = "0.2"
+clap = "2.1.2"
+hyper = "0.7.2"
+libc = "0.2"
+semver = "0.2"
+term = "0.4.4"
+
+# These were added with `git subtree` from commit c350ddb in multirust-rs.
+# TODO: replace with released versions from crates.io once there's a new
+# multirust release.
+multirust-rs = { version = "0.0.4", path = "third_party/multirust-rs" }
+rust-install = { version = "0.0.4", path = "third_party/multirust-rs/rust-install" }

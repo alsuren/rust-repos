@@ -1,0 +1,20 @@
+[package]
+name = "lights"
+version = "0.1.5"
+edition = "2018"
+authors = ["njaremko <njaremko@gmail.com>"]
+description = "A command line Hue light controller"
+license = "MIT"
+readme = "README.md"
+keywords = ["light", "cli", "automation", "hue"]
+repository = "https://github.com/njaremko/lights"
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = "2.32"
+reqwest = "0.9"
+regex = "1"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+dirs = "1"

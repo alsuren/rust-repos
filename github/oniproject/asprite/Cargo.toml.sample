@@ -1,0 +1,32 @@
+[package]
+name = "asprite"
+version = "0.1.0"
+authors = ["Lain-dono <lain.dono@gmail.com>"]
+
+[dependencies]
+cgmath = "0.16"
+derivative = "1"
+
+serde = "1"
+futures = "0.1"
+specs-derive = "0.2"
+
+rand = "0.4"
+
+undo = "0.22"
+redo = "0.22"
+
+image = "0.19"
+nfd = "0.0.4"
+
+[dependencies.shred]
+version = "0.7"
+features = ["nightly"]
+
+[dependencies.specs]
+version = "0.11"
+features = ["common", "serde", "nightly"]
+
+[dependencies.sdl2]
+version = "0.31"
+features = ["gfx", "ttf", "unsafe_textures", "image"]

@@ -1,0 +1,12 @@
+[package]
+
+name = "rs-gzip"
+version = "0.0.5"
+authors = ["Florian Wilkens <mrfloya_github@outlook.com>"]
+license = "MIT"
+repository = "https://github.com/MrFloya/rs-gzip"
+
+[dependencies]
+getopts = "*"
+bitio = "*"
+log = "*"

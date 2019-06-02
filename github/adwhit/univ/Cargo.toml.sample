@@ -1,0 +1,18 @@
+[package]
+
+name = "univ"
+version = "0.1.0"
+authors = ["alex.whitney@cantab.net"]
+
+[[bin]]
+
+name = "univ"
+
+[dependencies]
+time = "*"
+sdl2 = "*"
+toml = "*"
+rand = "*"
+rustc-serialize = "*"
+deque = "*"
+getopts = "*"

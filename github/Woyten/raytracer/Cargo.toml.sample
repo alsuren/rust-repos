@@ -1,0 +1,11 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Woyten <woyten.tielesch@online.de>"]
+edition = "2018"
+
+[dependencies]
+image = "*"
+nalgebra = "*"
+piston_window = "*"
+rayon = "*"

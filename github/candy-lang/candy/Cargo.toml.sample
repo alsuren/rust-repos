@@ -1,0 +1,18 @@
+[package]
+name = "candy"
+version = "0.1.0"
+license = "MIT"
+description = "The Candy programming language"
+authors = ["Adolfo Silva <code@anomi.co>"]
+readme = "README.md"
+repository = "https://github.com/candy-lang/candy.git"
+homepage = "https://github.com/candy-lang/candy"
+
+[dependencies]
+clippy = {version = "*", optional = true}
+clap = { version = "2", features = ["yaml"] }
+log = "*"
+env_logger = "*"
+
+[features]
+default = []

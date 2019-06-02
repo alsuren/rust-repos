@@ -1,0 +1,18 @@
+[package]
+name = "regurgitate"
+version = "0.1.0"
+authors = ["Arnau Siches <asiches@gmail.com>"]
+
+[lib]
+name = "regurgitate"
+path = "src/lib.rs"
+
+
+[dependencies]
+blot-lib = "0.1"
+reqwest = "0.9"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+toml = "0.4"
+csv = "1"

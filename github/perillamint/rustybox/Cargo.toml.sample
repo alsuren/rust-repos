@@ -1,0 +1,24 @@
+[package]
+name = "rustybox"
+version = "0.0.1"
+authors = ["perillamint <perillamint@gmail.com>"]
+
+[[bin]]
+name = "rustybox"
+path = "src/main.rs"
+
+[dependencies]
+rustc-serialize = "0.3.22"
+mime = "0.2.2"
+iron = "0.5.1"
+router = "0.5.0"
+#liquid = "*"
+chrono = "0.2.25"
+url = "1.2.4"
+log = "0.3.6"
+toml = "0.2.1"
+persistent = "0.3.0"
+postgres = "0.13.5"
+
+[dependencies.liquid]
+git = "https://github.com/cobalt-org/liquid-rust.git"

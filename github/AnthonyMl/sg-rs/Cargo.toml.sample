@@ -1,0 +1,14 @@
+[package]
+name = "sg-rs"
+version = "0.1.0"
+authors = ["AnthonyMl <mladenov.anthony@gmail.com>"]
+
+[dependencies]
+glium = "0.14"
+crossbeam = "0.2"
+time = "0.1"
+cgmath = "0.11"
+tobj = "0.1"
+mioco = "*"
+rand = "0.3"
+nalgebra = "0.11"

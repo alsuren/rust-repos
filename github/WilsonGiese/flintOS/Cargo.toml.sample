@@ -1,0 +1,9 @@
+[package]
+name = "flintos"
+version = "0.1.0"
+
+[dependencies]
+rlibc = "1.0.0"
+
+[lib]
+crate-type = ["staticlib"]

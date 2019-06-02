@@ -1,0 +1,33 @@
+[package]
+name = "rrecutils"
+version = "0.1.0"
+authors = ["Getty Ritter <gettylefou@gmail.com>"]
+
+[lib]
+name = "rrecutils"
+path = "src/lib.rs"
+
+[dependencies]
+regex = "0.2"
+serde = "1.0.21"
+serde_json = "1.0.6"
+clap = "2.27.1"
+rustache = "0.1.0"
+failure = "0.1.1"
+
+
+[[bin]]
+name = "rr-debug"
+path = "src/tools/debug.rs"
+
+[[bin]]
+name = "rr-to-json"
+path = "src/tools/tojson.rs"
+
+[[bin]]
+name = "rr-sel"
+path = "src/tools/select.rs"
+
+[[bin]]
+name = "rr-format"
+path = "src/tools/format.rs"

@@ -1,0 +1,19 @@
+[package]
+name = "kopparoxid"
+version = "0.0.1"
+authors = ["Martin Wernstål <m4rw3r@gmail.com>"]
+publish = false
+
+[[bin]]
+name = "cu2o"
+path = "src/bin/cu2o.rs"
+
+[dependencies]
+log         = "*"
+env_logger  = "*"
+mio         = "*"
+
+cu2o_system = { path = "src/system" }
+cu2o_window = { path = "src/window" }
+cu2o_gl     = { path = "src/gl" }
+cu2o_loop   = { path = "src/loop" }

@@ -1,0 +1,19 @@
+[package]
+name = "rust-db-writer"
+version = "0.1.0"
+authors = ["Salvador Guzman <guzmansalv@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "db-writer"
+path = "src/main.rs"
+
+[dependencies]
+actix = "0.8.2"
+actix-web = "1.0.0-rc"
+actix-protobuf = "0.4.0"
+bytes = "0.4.12"
+env_logger = "0.6.1"
+postgres = "0.15.2"
+prost = "0.4"
+prost-derive = "0.4"

@@ -1,0 +1,13 @@
+[package]
+name = "matasano"
+version = "0.0.1"
+authors = [ "David King <dave@davbo.org>" ]
+
+[lib]
+name = "matasano"
+
+
+[dependencies]
+rustc-serialize = "0.3.24"
+openssl = "0.10.8"
+rand = "0.5.0"

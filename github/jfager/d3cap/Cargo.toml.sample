@@ -1,0 +1,49 @@
+[package]
+
+name = "d3cap"
+version = "0.0.1"
+authors = [ "jfager@gmail.com" ]
+
+
+[[bin]]
+
+name = "d3cap"
+path = "src/d3cap/main.rs"
+
+[dependencies]
+
+time = "*"
+getopts = "*"
+rustc-serialize = "*"
+bitflags = "*"
+clippy = "*"
+toml = "*"
+
+
+[dependencies.pcap]
+
+path = "src/pcap"
+
+
+[dependencies.multicast]
+
+path = "src/multicast"
+
+
+[dependencies.fixed_ring]
+
+path = "src/fixed_ring"
+
+
+[dependencies.json_serve]
+
+path = "src/json_serve"
+
+
+# [dependencies.rustc-serialize]
+
+# git = "https://github.com/rust-lang/rustc-serialize.git"
+
+
+[profile.dev]
+debug = false

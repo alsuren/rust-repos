@@ -1,0 +1,12 @@
+[package]
+name = "conrod_test"
+version = "0.1.0"
+authors = ["Pavel <budenniy42396@gmail.com>"]
+
+[dependencies]
+gfx = "0.17"
+gfx_window_glutin = "0.28"
+glutin = "0.19"
+winit = "0.18"
+conrod_core = { git = "https://github.com/tdaffin/conrod", branch = "fix_crop" }
+conrod_gfx = { git = "https://github.com/tdaffin/conrod", branch = "fix_crop" }

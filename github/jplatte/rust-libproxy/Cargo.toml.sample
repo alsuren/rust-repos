@@ -1,0 +1,14 @@
+[package]
+authors = ["Jonas Platte <jplatte+git@posteo.de>"]
+categories = ["api-bindings", "network-programming"]
+description = "Rust bindings for libproxy"
+documentation = "https://docs.rs/libproxy"
+keywords = ["proxy", "http"]
+license = "MIT"
+name = "libproxy"
+readme = "README.md"
+repository = "https://github.com/jplatte/rust-libproxy"
+version = "0.1.0"
+
+[dependencies]
+libc = "0.2.23"

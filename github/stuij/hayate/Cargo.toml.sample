@@ -1,0 +1,11 @@
+[package]
+name = "hayate"
+version = "0.0.1"
+authors = ["Ties Stuij <ties@stuij.se>"]
+
+[dependencies]
+byteorder = "1.0.0"
+clap = "2.20.5"
+itertools = "0.5.9"
+thalgar = { path = "../thalgar" }
+zip = "0.2"

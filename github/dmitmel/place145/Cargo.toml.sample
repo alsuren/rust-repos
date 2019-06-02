@@ -1,0 +1,30 @@
+[package]
+edition = "2018"
+publish = false
+name = "place145"
+version = "0.0.0"
+authors = ["Dmytro Meleshko <dmytro.meleshko@gmail.com>"]
+description = "/r/place clone for KNSL 145"
+license = "MIT"
+repository = "https://github.com/dmitmel/place145.git"
+homepage = "https://github.com/dmitmel/place145"
+
+[dependencies]
+actix_derive = "*"
+bincode = "1.0"
+env_logger = "*"
+failure = "*"
+futures = "*"
+log = "*"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "*"
+
+[dependencies.actix]
+version = "0.7"
+default-features = false
+features = ["signal"]
+
+[dependencies.actix-web]
+version = "0.7"
+default-features = false

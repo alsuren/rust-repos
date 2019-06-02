@@ -1,0 +1,15 @@
+[package]
+name = "dist_tx"
+version = "0.2.2"
+authors = ["emabee <meinolf.block@sap.com>"]
+edition = "2018"
+description = "A rust language binding for XA Distributed Transactions"
+keywords = ["distributed", "transactions", "XA"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/emabee/rust-dist_tx"
+documentation = "https://docs.rs/dist_tx/"
+
+[dependencies]
+bitflags = "1.0"
+byteorder = "1.2"
+log = "0.4"

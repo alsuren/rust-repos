@@ -1,0 +1,30 @@
+[package]
+name = "maruska"
+version = "0.1.1"
+authors = ["Daan Sprenkels <dsprenkels@gmail.com>"]
+
+[dependencies]
+chan = "0.1"
+docopt = "0.6"
+env_logger = "0.3"
+lazy_static = "0.2"
+libclient = { path = "src/libclient/" }
+log = "0.3"
+lru_time_cache = "0.4"
+regex = "0.1"
+rustc-serialize = "0.3"
+strsim = "0.4"
+termbox-sys = "0.2"
+time = "0.1"
+toml = "0.1"
+
+[profile.release]
+lto = true
+
+[[bin]]
+name = "maruska"
+path = "src/main.rs"
+
+[[bin]]
+name = "maruska-cli"
+path = "src/cli/main.rs"

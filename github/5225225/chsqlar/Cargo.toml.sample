@@ -1,0 +1,17 @@
+[package]
+name = "chsqlar"
+version = "0.1.0"
+authors = ["5225225 <5225225@mailbox.org>"]
+edition = "2018"
+
+[dependencies]
+rust-crypto = "^0.2"
+cdchunking = "0.2"
+rusqlite = "0.16"
+zstd = "0.4"
+structopt = "0.2"
+failure = "0.1.5"
+rayon = "1.0.3"
+
+[profile.release]
+debug = true

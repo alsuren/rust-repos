@@ -1,0 +1,11 @@
+[package]
+name = "quick-skeleton"
+version = "0.4.7"
+authors = ["arthrp"]
+
+[dependencies]
+handlebars = "0.25.0"
+text_io = "0.1.5"
+zip = "0.4"
+rustc-serialize = "0.3"
+walkdir = "1.0"

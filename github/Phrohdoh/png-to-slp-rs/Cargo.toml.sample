@@ -1,0 +1,14 @@
+[package]
+authors = ["Taryn Hill <taryn@phrohdoh.com>"]
+name = "png-to-slp"
+version = "0.1.0"
+
+[dependencies]
+chariot_io_tools = "0.1"
+clap = "2.24"
+itertools = "0.6"
+png = "0.7"
+
+[dependencies.chariot_slp]
+branch = "feature/slp-writing"
+git = "https://github.com/ChariotEngine/Slp.git"

@@ -1,0 +1,22 @@
+[package]
+authors = ["Adnan Ademovic <adnanademovic100@gmail.com>"]
+description = "Pure Rust implementation of XML-RPC"
+license = "MIT"
+name = "xml-rpc"
+readme = "README.md"
+repository = "https://github.com/adnanademovic/xml-rpc-rs"
+version = "0.0.12"
+
+[dependencies]
+base64 = "0.6.0"
+error-chain = "0.10.0"
+futures = "0.1.14"
+hyper = "0.10.15"
+lazy_static = "1.0.0"
+regex = "0.2.3"
+serde = "1.0.11"
+serde-xml-rs = "0.2.1"
+serde_bytes = "0.10.2"
+serde_derive = "1.0.11"
+xml-rs = "0.6.1"
+rouille = "3.0.0"

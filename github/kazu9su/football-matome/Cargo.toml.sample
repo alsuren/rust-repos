@@ -1,0 +1,25 @@
+[package]
+name = "football-matome"
+version = "0.1.0"
+authors = ["Tomy <kazu9su@gmail.com>"]
+
+[dependencies]
+toml = "0.4.*"
+serde = "1.*"
+serde_derive = "1.*"
+hyper = "0.10.9"
+hyper-native-tls = "*"
+xml-rs = "0.4.1"
+diesel = { version = "0.11.0", features = ["chrono"] }
+diesel_codegen = { version = "0.11.0", features = ["mysql"] }
+dotenv = "0.8.0"
+nickel = "*"
+rustc-serialize = "*"
+chrono = "0.3.0"
+lazy_static = "*"
+clippy = {version = "*", optional = true}
+mockito = "*"
+schedule = "*"
+
+[features]
+default = []

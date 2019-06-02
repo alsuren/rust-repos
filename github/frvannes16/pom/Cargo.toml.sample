@@ -1,0 +1,13 @@
+[package]
+name = "pomodoro"
+version = "0.1.0"
+authors = ["Franklin Van Nes <franklin.vannes@gmail.com>"]
+
+[dependencies]
+time = "0.1.38"
+clap = "~2.27.0"
+colored = "1.6"
+serde = "1.0"
+serde_yaml = "0.7.3"
+serde_derive = "1.0"
+

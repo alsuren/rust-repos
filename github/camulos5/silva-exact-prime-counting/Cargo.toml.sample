@@ -1,0 +1,24 @@
+[package]
+
+name = "silva"
+version = "0.0.1"
+authors = [ "Stephen M. Williams <steve.williams7@ntlworld.com>" ]
+
+[profile.release]
+
+[lib]
+
+name = "mysilva"
+
+path = "src/lib.rs"
+
+[[bin]]
+
+name = "mysilva_bin"
+
+
+[dependencies]
+
+chrono="0.2"
+bit-vec="*"
+itertools="*"

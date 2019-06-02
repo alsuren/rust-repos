@@ -1,0 +1,25 @@
+[package]
+name = "johnny_eight"
+version = "0.1.0"
+authors = ["Juan Hernández <juan.hernandez.babon@gmail.com>"]
+description = "CHIP-8 emulator"
+homepage = "https://github.com/jhbabon/johnny_eight"
+repository = "https://github.com/jhbabon/johnny_eight"
+readme = "README.md"
+keywords = ["johnny_eight", "chip-8", "chip-8", "emulator"]
+license = "MIT"
+
+[lib]
+name = "johnny_eight"
+path = "src/lib.rs"
+
+[[bin]]
+name = "johnny_eight"
+path = "src/bin.rs"
+doc = false
+
+[dependencies]
+rand = "0.3.14"
+sdl2 = "0.22.0"
+log = "0.3.6"
+env_logger = "0.3.4"

@@ -1,0 +1,18 @@
+[package]
+name = "game-of-life"
+version = "0.1.0"
+authors = ["Dmitry Prazdnichnov <dp@bambucha.org>"]
+description = "Conway's Game of Life in Rust"
+repository = "https://github.com/bambocher/game-of-life"
+readme = "README.md"
+keywords = ["Conway", "Game of Life"]
+license = "MIT"
+license-file = "LICENSE"
+
+[dependencies]
+rand = "0.3.*"
+clap = "1.5.*"
+piston = "0.16.*"
+piston2d-graphics = "0.13.*"
+pistoncore-glutin_window = "0.20.*"
+piston2d-opengl_graphics = "0.22.*"

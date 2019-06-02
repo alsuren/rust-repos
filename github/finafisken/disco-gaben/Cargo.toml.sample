@@ -1,0 +1,14 @@
+[package]
+name = "disco-gaben"
+version = "0.1.6"
+authors = ["Markus Warne <markus.warne@gmail.com>", "Johan Kamb <johan@kamb.me>"]
+edition = "2018"
+
+[dependencies]
+kankyo = "0.2.0"
+serenity = "0.5"
+typemap = "0.3.3"
+rusoto_core = "0.36"
+rusoto_dynamodb = "0.36"
+uuid = { version = "0.7.2", features = ["v4"] }
+reqwest = "0.9.9"

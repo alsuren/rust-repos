@@ -1,0 +1,17 @@
+[package]
+name = "bmfont_parser"
+description = "Lightweight and easy-to-use bitmap font parser (.sfl and .fnt files)"
+version = "0.2.0"
+authors = ["Teascade <teascade@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["bitmap", "parser", "bmfont", "sfl", "font"]
+categories = ["parsing"]
+repository = "https://github.com/Teascade/sfl_parser"
+documentation = "https://docs.rs/sfl_parser"
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "Teascade/bmfont_parser", branch = "0.2.0" }
+
+[dependencies]

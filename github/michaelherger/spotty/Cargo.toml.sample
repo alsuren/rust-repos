@@ -1,0 +1,37 @@
+[package]
+name = "spotty"
+version = "0.20.0"
+authors = ["Michael Herger <michael@herger.net>"]
+
+[[bin]]
+name = "spotty"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+env_logger = "0.4.0"
+hyper = "0.11.2"
+rust-crypto = "0.2.36"
+futures = "0.1.8"
+getopts = "0.2.14"
+log = "0.3.5"
+rpassword = "0.3.0"
+serde_json = "0.9.5"
+tokio-core = "0.1.2"
+tokio-io = "0.1"
+tokio-signal = "0.1.2"
+
+[dependencies.librespot]
+git = "https://github.com/michaelherger/librespot.git"
+rev = "03e401bfd643f4f6f489a53715aef85cee970002"
+#path = "../librespot"
+default-features = false
+# enable the following for macOS <= 10.9 compatibility
+#features = ["with-tremor","with-lewton"]
+
+[replace]
+"rust-crypto:0.2.36" = { git = "https://github.com/awmath/rust-crypto.git", branch = "avx2" }
+
+[profile.release]
+lto = true
+panic = 'abort'

@@ -1,0 +1,36 @@
+[package]
+
+name = "git-global"
+version = "0.3.0"
+authors = ["Eric Petersen <eric@ericpetersen.io>"]
+description = "Keep track of all your the git repositories on your machine."
+
+homepage = "https://github.com/peap/git-global"
+repository = "https://github.com/peap/git-global"
+documentation = "https://docs.rs/git-global"
+
+license = "MIT"
+readme = "README.md"
+
+keywords = ["git"]
+categories = ["command-line-utilities", "development-tools"]
+
+[[bin]]
+name = "git-global"
+doc = false
+
+[dependencies]
+app_dirs = "1.2"
+clap = "2"
+chrono = "0.4"
+dirs = "1"
+json = "0.11"
+walkdir = "2"
+
+[dev-dependencies]
+regex = "1"
+tempdir = "0.3"
+
+[dependencies.git2]
+version = "0.8"
+default-features = false  # don't want SSH/HTTPS/Curl

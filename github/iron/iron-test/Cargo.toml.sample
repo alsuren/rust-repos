@@ -1,0 +1,23 @@
+[package]
+authors = ["Jonathan Reem <jonathan.reem@gmail.com>"]
+description = "Mocking suite for Iron requests."
+documentation = "https://docs.rs/iron-test"
+license = "MIT"
+name = "iron-test"
+repository = "https://github.com/reem/iron-test"
+version = "0.6.0"
+
+[dependencies]
+hyper = "0.10"
+iron = "0.6.0"
+log = "0.3.8"
+url = "1.6.0"
+
+[dependencies.uuid]
+features = ["v4"]
+version = "0.5.1"
+
+[dev-dependencies]
+mime = "0.3.5"
+router = "0.6.0"
+urlencoded = "0.6.0"

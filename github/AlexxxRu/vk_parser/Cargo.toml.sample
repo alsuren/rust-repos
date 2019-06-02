@@ -1,0 +1,9 @@
+[package]
+name = "vk_parser"
+version = "0.1.0"
+authors = ["Alex"]
+
+[dependencies]
+rustc-serialize = "*"  # if you're using `derive(RustcDecodable)`
+regex = "*"
+vk_api = {path = "../vk_api/"}

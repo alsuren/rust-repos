@@ -1,0 +1,45 @@
+[package]
+name = "infodium"
+version = "0.1.0"
+authors = ["Nimor111 <georgi.bojinov@hotmail.com>"]
+
+[[bin]]
+name="seed"
+path="src/bin/seed.rs"
+
+[[bin]]
+name="main"
+path="src/bin/main.rs"
+
+[lib]
+name="infodium"
+path="src/lib.rs"
+
+[dependencies]
+rocket = "0.3.15"
+rocket_codegen = "0.3.15"
+frank_jwt = "3.0.0"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+diesel = { version = "1.3.2", features = ["postgres", "chrono", "r2d2"] }
+dotenv = "*"
+dotenv_codegen = "*"
+chrono = { version = "0.4", features = ["serde"] }
+fake = "*"
+uuid = { version = "0.6", features = ["v4"] }
+validator = "*"
+validator_derive = "*"
+bcrypt = "0.2"
+rocket_cors = "0.3.0"
+log = "0.4"
+fern = "0.5"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]
+
+[dev-dependencies]
+parking_lot = { version = "0.6", features = ["nightly"] }
+rand = "0.5"

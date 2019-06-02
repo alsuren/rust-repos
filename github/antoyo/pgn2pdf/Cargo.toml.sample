@@ -1,0 +1,11 @@
+[package]
+name = "pgn2pdf"
+version = "0.1.0"
+authors = ["Antoni Boucher <bouanto@zoho.com>"]
+
+[dependencies]
+chess_pgn_parser = "^0.1"
+docopt = "^0.6"
+open = "^1.1"
+rustc-serialize = "^0.3"
+tempdir = "^0.3"

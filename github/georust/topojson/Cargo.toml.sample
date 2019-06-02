@@ -1,0 +1,12 @@
+[package]
+name = "topojson"
+description = "TopoJSON utilities for Rust"
+version = "0.1.0"
+authors = ["Alex Morega <alex@grep.ro>", "Matthieu Viry <matthieu.viry@cnrs.fr>"]
+license = "MIT"
+repository = "https://github.com/georust/topojson"
+
+[dependencies]
+serde = "~1.0"
+serde_json = "~1.0"
+geojson = "0.12.0"

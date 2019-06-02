@@ -1,0 +1,23 @@
+[package]
+name = "alectrona-cli"
+version = "0.1.0"
+authors = ["pheki"]
+edition = "2018"
+
+[[bin]]
+name = "alectrona"
+path = "src/main.rs"
+
+[dependencies]
+alectrona = { path = "alectrona" }
+clap = "*"
+toml = "*"
+directories = "*"
+
+[profile.dev]
+opt-level = 1
+
+[profile.test]
+opt-level = 3
+
+[workspace]

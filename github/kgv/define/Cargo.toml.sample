@@ -1,0 +1,10 @@
+[package]
+name = "define"
+version = "0.1.1"
+authors = ["kgv <kgv@users.noreply.github.com>"]
+
+[dependencies]
+bitflags = "1.0"
+proc-macro-hack = "0.4"
+
+define-impl = { path = "./impl" }

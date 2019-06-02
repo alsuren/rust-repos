@@ -1,0 +1,10 @@
+[package]
+name = "joss"
+version = "0.0.2"
+authors = ["Richard Anaya"]
+edition = "2018"
+description = "JSON Operating System Schema"
+license = "MIT"
+
+[dependencies]
+cstring="0.0.2"

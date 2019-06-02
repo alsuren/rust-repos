@@ -1,0 +1,9 @@
+[package]
+name = "weekendraytracer"
+version = "0.1.0"
+authors = ["Sam Giles <sam.e.giles@gmail.com>"]
+
+[dependencies]
+ppm = { path = "components/ppm" }
+vector = { path = "components/vector" }
+rand = "0.3.14"

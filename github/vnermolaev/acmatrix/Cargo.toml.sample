@@ -1,0 +1,16 @@
+[package]
+name = "access_control_matrix"
+version = "0.1.0"
+authors = ["some people"]
+repository = ""
+readme = "README.md"
+license = "Apache-2.0"
+
+[dependencies]
+exonum = "0.2.0"
+iron = "0.5.1"
+bodyparser = "0.7.0"
+router = "0.5.1"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"

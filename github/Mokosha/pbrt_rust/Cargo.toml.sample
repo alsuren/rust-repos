@@ -1,0 +1,13 @@
+[package]
+name = "pbrt_rust"
+version = "0.1.0"
+authors = ["Pavel Krajcevski <krajcevski@gmail.com>"]
+
+[dependencies]
+num_cpus = "*"
+scoped_threadpool = "0.1.*"
+rand = "*"
+primal = "*"
+image = "*"
+bitflags = "*"
+lazy_static = "0.2.*"

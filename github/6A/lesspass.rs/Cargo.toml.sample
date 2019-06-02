@@ -1,0 +1,34 @@
+[package]
+name        = "lesspass"
+description = "An efficient implementation of the LessPass password generator."
+version     = "0.2.0"
+authors     = ["Grégoire Geis <git@gregoirege.is>"]
+
+homepage   = "https://github.com/71/lesspass.rs"
+repository = "https://github.com/71/lesspass.rs"
+readme     = "README.md"
+license    = "GPL-3.0-only"
+
+[lib]
+name = "lesspass"
+path = "src/lib.rs"
+
+[[bin]]
+name = "lesspass"
+path = "src/main.rs"
+required-features = [ "default" ]
+
+[dependencies]
+bitflags    = "1.0"
+lazy_static = "1.2"
+num-bigint  = "0.2"
+num-integer = "0.1"
+num-traits  = "0.2"
+ring        = "0.13"
+
+atty      = { version = "0.2", optional = true }
+rpassword = { version = "2.1", optional = true }
+structopt = { version = "0.2", optional = true }
+
+[features]
+default = [ "atty", "rpassword", "structopt" ]

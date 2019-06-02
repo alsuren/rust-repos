@@ -1,0 +1,9 @@
+[package]
+name = "pt100-controller"
+version = "0.1.0"
+authors = ["David Kraeutmann <kane@kane.cx>"]
+
+[dependencies]
+rppal = "0.6.0"
+lazy_static = "1.0"
+influent = "0.4"

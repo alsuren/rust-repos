@@ -1,0 +1,26 @@
+[package]
+
+name = "small-viewer"
+description = "a small-logger logs viewer"
+version = "0.0.2"
+license-file = "LICENSE"
+repository = "https://github.com/octplane/small-viewer-rs"
+authors = ["Pierre Baillet <pierre@baillet.name>"]
+
+[dependencies]
+rustc-serialize = "*"
+time = "*"
+
+iron = "*"
+router = "*"
+iron-login = "*"
+mount = "*"
+url = "0.5"
+getopts = "*"
+frank_jwt = "*"
+urlencoded = "*"
+nom = "*"
+
+# [dependencies.staticfile]
+# version = "0.2.0"
+# features = ["cache"]

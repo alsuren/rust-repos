@@ -1,0 +1,17 @@
+[package]
+name = "procopt"
+version = "0.0.1"
+authors = ["repnop <repnop@outlook.com>"]
+description = "A structopt-like crate for parsing proc-macro arguments."
+repository = "https://github.com/rep-nop/procopt"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["proc-macro", "argument", "parsing"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "0.15.21", features = ["full"] }
+proc-macro2 = "0.4.24"
+quote = "0.6.10"

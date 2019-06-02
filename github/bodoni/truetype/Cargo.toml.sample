@@ -1,0 +1,21 @@
+[package]
+name = "truetype"
+version = "0.29.0"
+license = "Apache-2.0/MIT"
+authors = [
+    "Boris-Chengbiao Zhou <bobo1239@web.de>",
+    "Ivan Ukhov <ivan.ukhov@gmail.com>",
+    "Vladimir Vukicevic <vladimir@pobox.com>",
+]
+description = "The package provides a parser for TrueType fonts."
+documentation = "https://docs.rs/truetype"
+homepage = "https://github.com/bodoni/truetype"
+repository = "https://github.com/bodoni/truetype"
+readme = "README.md"
+categories = ["parsing"]
+keywords = ["font", "truetype", "typeface", "typography"]
+exclude = ["tests/fixtures/*"]
+
+[[test]]
+name = "truetype"
+path = "tests/lib.rs"

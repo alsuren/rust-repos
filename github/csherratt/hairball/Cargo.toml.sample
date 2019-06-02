@@ -1,0 +1,35 @@
+[package]
+name = "hairball_meta"
+version = "0.1.0"
+authors = ["Colin Sherratt <colin.sherratt@gmail.com>"]
+
+[dependencies.hairball]
+path = "src/hairball"
+
+[dependencies.hairball_mesh]
+path = "src/mesh"
+
+[dependencies.hairball_mesh_index]
+path = "src/mesh_index"
+
+[dependencies.hairball_material]
+path = "src/material"
+
+[dependencies.hairball_geometry]
+path = "src/geometry"
+
+[dependencies.hairball_draw_binding]
+path = "src/draw_binding"
+
+[dependencies.obj_to_hairball]
+path = "src/obj_to_hairball"
+
+[dev_dependencies]
+uuid = "0.1"
+capnp = "0.5"
+
+[features]
+default = []
+build-schema = ["hairball/build-schema",
+                "hairball_mesh/build-schema",
+                "hairball_mesh_index/build-schema"]

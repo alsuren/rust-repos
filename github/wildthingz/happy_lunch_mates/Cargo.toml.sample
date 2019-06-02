@@ -1,0 +1,10 @@
+[package]
+name = "happy-lunch-mates"
+version = "0.1.0"
+authors = ["Hatef Khadivinassab <hatef.khadivinassab@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+slack_api = "0.21.0"
+dotenv = "0.14.1"

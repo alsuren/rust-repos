@@ -1,0 +1,9 @@
+[package]
+name = "rustic-tweets"
+version = "0.1.0"
+authors = ["Spenser Reinhardt <>"]
+
+[dependencies]
+twitter-api = "0.0.8"
+rustc-serialize = "*"
+oauth-client = "*"

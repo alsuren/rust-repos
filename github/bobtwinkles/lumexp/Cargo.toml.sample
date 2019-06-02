@@ -1,0 +1,13 @@
+[package]
+name = "lumexp"
+version = "0.1.0"
+authors = ["bobtwinkles <srkoser+GitHub@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+luminance = { path = "../luminance-rs/luminance" }
+luminance-derive = { path = "../luminance-rs/luminance-derive" }
+luminance-glfw = { path = "../luminance-rs/luminance-glfw" }
+cgmath = "0.17"
+rand = "0.6"
+gltf = "0.11"

@@ -1,0 +1,23 @@
+[package]
+name = "contructor-derive"
+version = "0.1.1"
+authors = ["Flier Lu <flier.lu@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = "Registers a function to be called before/after main (if an executable) or when loaded/unloaded (if a dynamic library)."
+repository = "https://github.com/flier/contructor-derive"
+documentation = "https://docs.rs/contructor_derive/"
+keywords = ["constructor", "destructor", "init", "term"]
+categories = ["development-tools::ffi"]
+readme = "README.md"
+include = ["Cargo.toml", "src/**/*.rs", "tests/**/*.rs", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
+
+[lib]
+name = "contructor_derive"
+proc-macro = true
+
+[dependencies]
+syn = { version = "0.15", features = ["full", "extra-traits"] }
+quote = "0.6"
+proc-macro2 = "0.4"
+
+[dev-dependencies]

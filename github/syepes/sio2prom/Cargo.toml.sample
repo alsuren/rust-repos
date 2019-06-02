@@ -1,0 +1,35 @@
+[package]
+name = "sio2prom"
+version = "0.1.1"
+authors = ["Sebastian YEPES F <syepes@gmail.com>"]
+keywords = ["prometheus", "metrics", "scaleio"]
+license = "Apache-2.0"
+description = "ScaleIO Prometheus Exporter"
+homepage = "https://github.com/syepes/sio2prom"
+repository = "https://github.com/syepes/sio2prom.git"
+exclude = ["*"]
+include = ["README.md", "CHANGELOG.md", "src/**/*.rs", "benches/**/*.rs", "tests/**/*.rs", "cfg/*", "Cargo.toml", "rustfmt.toml", "clippy.toml"]
+readme = "README.md"
+publish = true
+
+[dependencies]
+clippy = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+lazy_static ="*"
+log = "*"
+log4rs = { version = "*", optional = false,  features = ["toml_format", "threshold_filter"] }
+hyper = "0.9.*"
+hyper_insecure_https_connector = "*"
+prometheus = { git = "https://github.com/pingcap/rust-prometheus.git", features = ["nightly"] }
+
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+

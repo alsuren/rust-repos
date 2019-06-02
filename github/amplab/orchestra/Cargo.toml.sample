@@ -1,0 +1,24 @@
+[package]
+name = "orchestra"
+version = "0.2.0"
+authors = ["Philipp Moritz <pcm@berkeley.edu>", "Robert Nishihara <rkn@berkeley.edu>"]
+
+[lib]
+name = "orchestralib"
+crate-type = ["dylib"]
+
+[dependencies]
+log = "0.3"
+env_logger = "0.3"
+libc = "0.1.10"
+rand = "*"
+argparse = "*"
+
+[dependencies.protobuf]
+git = "https://github.com/stepancheg/rust-protobuf.git"
+
+[dependencies.zmq]
+git = "https://github.com/erickt/rust-zmq.git"
+
+[dependencies.petgraph]
+git = "https://github.com/bluss/petulant-avenger-graphlibrary"

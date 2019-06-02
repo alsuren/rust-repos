@@ -1,0 +1,11 @@
+[package]
+authors = ["Andrey Tkachenko <andreytkachenko64@gmail.com>"]
+name = "async-hal"
+version = "0.1.0"
+
+[dependencies.futures]
+default-features = false
+version = "0.1.17"
+
+[dependencies.opencm]
+git = "https://github.com/andreytkachenko/opencm"

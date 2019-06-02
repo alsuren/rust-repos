@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "caesium-cli",
+    "caesium-core",
+    "caesium-daemon",
+    "caesium-load",
+    "caesium-server"
+]
+
+[profile.release]
+debug = true

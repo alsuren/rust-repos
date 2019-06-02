@@ -1,0 +1,30 @@
+[package]
+name = "genesis"
+version = "0.1.0"
+authors = ["Dan Schatzberg <schatzberg.dan@gmail.com>"]
+repository = "https://github.com/dschatzberg/genesis"
+homepage = "https://github.com/dschatzberg/genesis"
+license = "AGPL-3.0"
+readme = "README.md"
+documentation = "https://dschatzberg.github.io/genesis"
+description = "Genesis Microkernel"
+keywords = ["operating system", "kernel", "nostd"]
+
+[lib]
+name = "genesis"
+crate-type = ["staticlib"]
+
+[dependencies]
+bitflags = "0.7"
+clippy = "0.0.69"
+fixedvec = "0.2"
+log = { version = "0.3", default-features = false }
+multiboot = "0.2"
+once = "0.3"
+rlibc = "1.0"
+spin = "0.4"
+x86 = { git = "https://github.com/gz/rust-x86.git", rev = "3225799", default-features = false }
+
+[dependencies.lazy_static]
+version = "0.2"
+features = ["spin_no_std"]

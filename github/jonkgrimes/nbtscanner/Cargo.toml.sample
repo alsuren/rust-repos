@@ -1,0 +1,8 @@
+[package]
+name = "nbtscanner"
+version = "0.1.0"
+authors = ["Jon Grimes <jong@spiceworks.com>"]
+
+[dependencies]
+clap = "2.29.1"
+assert_matches = "1.1"

@@ -1,0 +1,18 @@
+[package]
+name = "waveform_space"
+version = "0.1.2"
+authors = ["Joseph Mark <sjeohp@gmail.com>"]
+license = "MIT"
+description = "compute distance between waveforms in feature space"
+repository = "https://github.com/sjeohp/waveform_space.git"
+keywords = ["waveform", "mfcc", "audio", "analysis"]
+
+[dependencies]
+rustfft = "1.0.1"
+num = "0.1.37"
+stream-dct = "0.1.0"
+rand = "0.3.15"
+
+[lib]
+name = "waveform_space"
+path = "src/lib.rs"

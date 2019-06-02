@@ -1,0 +1,10 @@
+[package]
+name = "log4rs_rotator"
+version = "0.1.0"
+authors = ["hsldymq <hsldymq@qq.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+log4rs = "0.8"
+chrono = "0.4"

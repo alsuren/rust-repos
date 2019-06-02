@@ -1,0 +1,21 @@
+[package]
+name = "speexdsp"
+version = "0.1.1"
+authors = ["Luca Barbato <lu_zero@gentoo.org>"]
+description = "Bindings for the speexdsp library"
+homepage = "https://github.com/rust-av/speexdsp-rs"
+repository = "https://github.com/rust-av/speexdsp-rs"
+keywords = ["audio", "resampler"]
+categories = ["api-bindings"]
+license = "MIT"
+readme = "README.md"
+
+[features]
+sys = ["speexdsp-sys"]
+
+[dependencies]
+speexdsp-sys = { version = "0.1.1", path = "speexdsp-sys", optional = true }
+libc = "0.2.42"
+
+[workspace]
+members = ["speexdsp-sys"]

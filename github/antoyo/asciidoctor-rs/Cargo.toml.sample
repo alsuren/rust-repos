@@ -1,0 +1,9 @@
+[package]
+authors = ["Antoni Boucher <antoni.boucher@adgear.com>"]
+name = "asciidoctor"
+version = "0.1.0"
+
+[dependencies]
+
+[dev-dependencies]
+html-diff = "^0.0.4"

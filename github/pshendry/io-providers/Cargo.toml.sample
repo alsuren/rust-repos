@@ -1,0 +1,21 @@
+[package]
+
+name = "io-providers"
+description = "Enables dependency injection for many I/O operations"
+version = "0.2.0-beta.2"
+license = "MIT"
+authors = ["Paul Hendry <paul@pshendry.com>"]
+
+readme = "README.md"
+repository = "https://github.com/pshendry/io-providers"
+documentation = "http://pshendry.github.io/io-providers/io_providers/"
+
+keywords = ["testing", "stdin", "stdout", "stderr", "env"]
+
+[badges]
+
+travis-ci = { repository = "pshendry/io-providers" }
+
+[dependencies]
+
+tempfile = "^3.0.3"

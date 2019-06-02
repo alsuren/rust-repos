@@ -1,0 +1,10 @@
+[package]
+name = "av-vorbis"
+version = "0.1.0"
+authors = ["est31 <MTest31@outlook.com>"]
+license = "MIT"
+
+[dependencies]
+lewton = "0.7"
+av-data = { version = "0.1.0", git = "https://github.com/rust-av/rust-av" }
+av-codec = { version = "0.1.0", git = "https://github.com/rust-av/rust-av" }

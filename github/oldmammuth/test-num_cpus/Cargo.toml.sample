@@ -1,0 +1,7 @@
+[package]
+name = "test-num_cpus"
+version = "0.1.0"
+authors = ["oldmammuth <davidedelpapa@gmail.com>"]
+
+[dependencies.num_cpus]
+git = "https://github.com/oldmammuth/num_cpus.git"

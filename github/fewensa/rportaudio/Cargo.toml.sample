@@ -1,0 +1,30 @@
+[package]
+name = "rportaudio"
+version = "0.1.1"
+authors = ["fewensa <fewensa@protonmail.com>"]
+description = "PortAudio bindings for Rust"
+homepage = "https://github.com/fewensa/rportaudio"
+repository = "https://github.com/fewensa/rportaudio"
+license = "MIT"
+keywords = ["portaudio", "bindings"]
+categories = ["api-bindings"]
+include = [
+  "Cargo.toml",
+  "**/*.rs",
+  "**/*.h",
+  "download.cmake",
+  "README.md",
+  "LICENSE"
+]
+readme = "README.md"
+
+edition = "2018"
+
+[dependencies]
+bitflags = "0.3"
+libc = "0.2"
+
+
+[build-dependencies]
+cmake = "0.1.39"
+pkg-config = "^0.3.3"

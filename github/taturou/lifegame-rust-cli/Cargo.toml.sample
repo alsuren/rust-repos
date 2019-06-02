@@ -1,0 +1,11 @@
+[package]
+name = "lifegame-curses"
+version = "0.1.0"
+authors = ["taturou <taturou@gmail.com>"]
+
+[dependencies]
+cursive = "0.9"
+
+[dependencies.lifegame]
+git = "https://github.com/taturou/lifegame-core.git"
+rev = "ver2.3.0"

@@ -1,0 +1,10 @@
+[package]
+name = "war-games"
+version = "0.1.0"
+authors = ["Andrew White <aeewhite@gmail.com>"]
+
+[dependencies.cards]
+git = "https://github.com/aeewhite/cards-rs.git"
+
+[dependencies]
+rayon = "0.9.0"

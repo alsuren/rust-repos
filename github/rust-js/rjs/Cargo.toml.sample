@@ -1,0 +1,32 @@
+[package]
+
+name = "rjs"
+version = "0.0.1"
+authors = [ "Pieter van Ginkel <pvginkel@gmail.com>" ]
+
+[features]
+
+trace = []
+tracegc = []
+
+[[bin]]
+
+name = "rjs"
+path = "src/main.rs"
+doc = false
+
+[lib]
+
+name = "rjs"
+path = "src/lib.rs"
+
+[dependencies]
+
+libc = "0.1"
+lazy_static = "0.1.10"
+rustc-serialize = "0.3"
+chrono = "0.2.14"
+time = "0.1.26"
+rand = "0.3.8"
+strtod = "0.0.1"
+regex = "0.1.38"

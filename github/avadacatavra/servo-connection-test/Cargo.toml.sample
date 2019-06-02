@@ -1,0 +1,16 @@
+[package]
+name = "servo-connection-test"
+version = "0.1.0"
+authors = ["Diane Hosfelt <dhosfelt@mozilla.com>"]
+
+
+[dependencies]
+hyper = "0.9"
+html5ever = "*"
+string_cache = "*"
+scoped_threadpool = "*"
+clap = "2"
+env_logger = "*"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

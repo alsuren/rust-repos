@@ -1,0 +1,15 @@
+[package]
+name = "xatonif-wot-adapter"
+version = "0.1.0"
+authors = ["Junde Yhi <lmy441900@aosc.xyz>"]
+
+[dependencies]
+# curl = "~0.4.12"
+reqwest = "*"
+diesel = { version = "~1.3.2", features = ["mysql"] }
+dotenv = "*"
+rocket = "*"
+rocket_codegen = "*"
+serde = "^1.0.70"
+serde_derive = "^1.0.70"
+serde_json = "^1.0.22"

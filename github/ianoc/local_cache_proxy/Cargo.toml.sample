@@ -1,0 +1,35 @@
+[package]
+name = "local_cache_proxy"
+version = "0.1.0"
+authors = ["Ian O'Connell <ianoc@stripe.com>"]
+
+[dependencies]
+hyper-proxy = "0.4.1"
+tokio = "0.1"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-service = "0.1"
+futures = "0.1"
+bytes = "0.4"
+lru-disk-cache = "0.2.0"
+clap = "2.31"
+log = "0.4"
+pretty_env_logger = "0.2"
+tempdir = "0.3"
+hyper = {git = "https://github.com/ianoc/hyper.git", rev = "5a765529802c7cddb516f170b0a95ae9f008e81e"}
+tokio-uds = {git = "https://github.com/tokio-rs/tokio-uds.git", rev = "60c7cecacd67f3f8bc0345d2d582cec5e36090d9"}
+http = "0.1.5"
+rand = "0.5.0"
+iovec = "0.1"
+tokio-reactor = "0.1.1"
+libc = "0.2"
+mio = "0.6.14"
+mio-uds = "0.6.6"
+hex = "0.2"
+protobuf = "2.0.2"
+rusoto_core = "0.32.0"
+rusoto_s3 = "0.32.0"
+
+[lib]
+name = "local_cache_proxy"
+path = "src/lib.rs"

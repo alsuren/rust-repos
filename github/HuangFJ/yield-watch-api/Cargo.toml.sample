@@ -1,0 +1,30 @@
+[package]
+name = "yield-watch"
+version = "0.1.0"
+authors = ["Jon Huang <biohfj@gmail.com>"]
+
+[[bin]]
+name = "yield_watch"
+path = "src/main.rs"
+
+[dependencies]
+rocket = "*"
+rocket_codegen = "*"
+rocket_contrib = { version = "*", features = ["json", "handlebars_templates"] }
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+mysql = "*"
+r2d2 = "*"
+futures = "*"
+hyper = "*"
+hyper-tls = "*"
+tokio-core = "*"
+toml = "*"
+time = "*"
+uuid = { version = "*", features = ["v4"]}
+sha1 = "*"
+rustc-serialize = "*"
+rand = "*"
+regex = "*"
+rust-crypto = "*"

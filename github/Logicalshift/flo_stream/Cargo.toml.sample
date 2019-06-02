@@ -1,0 +1,20 @@
+[package]
+name            = "flo_stream"
+version         = "0.3.1"
+authors         = ["Andrew Hunter"]
+license         = "Apache-2.0"
+repository      = "https://github.com/Logicalshift/flo_stream"
+edition         = "2018"
+
+description     = "Pubsub and related streams for Rust futures"
+documentation   = "http://docs.rs/flo_stream/"
+readme          = "README.md"
+keywords        = ["pubsub", "futures", "concurrency"]
+categories      = ["concurrency","asynchronous","algorithms","data-structures"]
+
+[dependencies]
+futures = "0.1"
+
+[dev-dependencies]
+desync  = "0.3"
+rand    = "0.6"

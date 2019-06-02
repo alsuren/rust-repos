@@ -1,0 +1,26 @@
+[package]
+name = "rust_swiftclient"
+version = "0.3.0"
+authors = ["Joel Wright <joel.wright@gmail.com>"]
+
+[dependencies]
+chrono = ">=0.2"
+docopt = ">=0.6"
+hyper = ">=0.10"
+lazy_static = "0.2"
+log = ">=0.3.6"
+reqwest = ">=0.4"
+rustc-serialize = ">=0.3.19"
+url = ">=0.2"
+
+[lib]
+name = "rust_swiftclient"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rsc"
+path = "src/bin/rsc.rs"
+
+# [dependencies.chrono]
+# version = "*"
+# features = ["rustc-serialize"]

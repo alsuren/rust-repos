@@ -1,0 +1,12 @@
+[package]
+name = "blog"
+version = "0.1.0"
+authors = ["Krish De Souza <kd913@ic.ac.uk>"]
+
+[dependencies]
+actix = "0.7"
+actix-web = "0.7"
+futures = "0.1"
+env_logger = "0.5"
+bytes = "0.4"
+

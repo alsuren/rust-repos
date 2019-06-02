@@ -1,0 +1,9 @@
+[package]
+name = "tcpr"
+version = "0.1.0"
+authors = ["Gareth Pendleton <gareth.sidebottom@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tun-tap = "0.1.2"
+etherparse = "0.8"

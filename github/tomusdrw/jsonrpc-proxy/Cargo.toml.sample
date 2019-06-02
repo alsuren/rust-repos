@@ -1,0 +1,13 @@
+[workspace]
+members = [
+  "ethereum-proxy",
+  "generic-proxy",
+  "plugins/permissioning",
+  "plugins/simple-cache",
+  "plugins/upstream",
+  "plugins/ws-upstream",
+  "proxy/cli",
+  "proxy/cli-params",
+  "proxy/transports",
+  "substrate-proxy",
+]

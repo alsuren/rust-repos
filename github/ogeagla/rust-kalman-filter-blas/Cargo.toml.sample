@@ -1,0 +1,8 @@
+[package]
+name = "rust-kalman-filter-blas"
+version = "0.1.0"
+authors = [""]
+
+[dependencies]
+"blas" = "0.15.1"
+"lapack" = "0.11.0"

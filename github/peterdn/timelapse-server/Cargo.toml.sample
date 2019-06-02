@@ -1,0 +1,9 @@
+[package]
+name = "timelapse-server"
+version = "0.1.0"
+authors = ["peterdn"]
+
+[dependencies]
+redis = "0.8.0"
+image = "0.14.0"
+time = "0.1.38"

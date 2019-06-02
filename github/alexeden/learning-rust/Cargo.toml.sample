@@ -1,0 +1,32 @@
+[workspace]
+members = [
+    # "codewars",
+    "crosswords",
+    # "fingertips",
+    # "gcd_server",
+    # "grep",
+    # "wasm-game-of-life",
+    # "mandelbrot"
+    # "mandelbrot_ui"
+    # "embedded/cortex-m-quickstart",
+    # "embedded/stm32",
+]
+exclude = [
+    "exercisms"
+]
+
+[profile.release]
+opt-level = 's'     # Optimization Level...
+                    # 0-1 is good for debugging
+                    # 2 is well-optimized
+                    # 3 is maximum
+                    # 's' attempts to reduce size
+                    # 'z' reduces size even more
+
+codegen-units = 1   # if > 1: enables parallel code generation which improves
+                    # compile times, but prevents some optimizations.
+
+debug = true        # Include debug information (debug symbols)
+
+lto = true          # Link Time Optimization... # Usually reduces size of binaries and static libraries
+                    # at the expense of increased compilation time

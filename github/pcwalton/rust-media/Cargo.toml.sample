@@ -1,0 +1,71 @@
+[package]
+
+name = "rust-media"
+version = "0.1.0"
+authors = ["The Servo Project Developers"]
+
+build = "build.rs"
+
+[lib]
+
+name = "rust_media"
+path = "lib.rs"
+
+[dependencies.libvpx-sys]
+
+git = "https://github.com/pcwalton/libvpx"
+branch = "servo"
+
+[dependencies.libwebm-sys]
+
+git = "https://github.com/pcwalton/libwebm"
+branch = "servo"
+
+[dependencies.mp4v2-sys]
+
+git = "https://github.com/pcwalton/mp4v2"
+branch = "servo"
+
+[dependencies.ogg-sys]
+
+git = "https://github.com/pcwalton/ogg"
+branch = "servo"
+
+[dependencies.lewton]
+
+version = "^0.6.2"
+default-features = false
+features = ["nightly"]
+
+[dependencies.giflib-sys]
+
+git = "https://github.com/pcwalton/giflib"
+
+[target.x86_64-apple-darwin.dependencies.core-foundation]
+
+git = "https://github.com/servo/rust-core-foundation"
+
+[dependencies]
+num = "*"
+num-derive = "0.1.39"
+time = "*"
+byteorder = "*"
+libc = "0.2"
+
+[dev-dependencies]
+hound = "2.0"
+lewton = {version = "*", features = ["ogg"]}
+ogg = "0.5"
+
+[build-dependencies]
+# Needed for mkvparse.hpp.
+# If we don't include this, libwebm-sys might not be present in
+# the target directory after a fresh clone due to a race condition.
+libwebm-sys = { git = "https://github.com/pcwalton/libwebm", branch = "servo" }
+
+[features]
+
+default = []
+
+ffmpeg = []
+

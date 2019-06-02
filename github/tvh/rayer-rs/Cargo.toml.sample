@@ -1,0 +1,27 @@
+[package]
+name = "rayer"
+version = "0.1.0"
+authors = ["Timo von Holtz <tvh@tvholtz.de>"]
+
+[profile.release]
+debug = true
+
+[dependencies]
+arrayvec = "0.4.7"
+clap = "2.29.2"
+cpuprofiler = "0.0.3"
+crossbeam-channel = "0.1.2"
+decorum = "0.0.9"
+euclid = "0.17.2"
+image = "0.18.0"
+lazy_static = "1.0"
+num-traits = "0.2.2"
+obj = "0.8.2"
+palette = { git = "https://github.com/Ogeon/palette.git", rev = "c5114e5" }
+pbr = "1.0.0"
+pdqselect = "0.1.0"
+quickcheck = "0.6"
+quickcheck_macros = "0.6"
+rand = "0.4"
+rayon = "1.0"
+tempfile = "3.0.0"

@@ -1,0 +1,36 @@
+[package]
+name = "kaleido"
+version = "0.1.0"
+authors = ["Felix S. Klock II <pnkfelix@pnkfx.org>"]
+
+build = "build.rs"
+
+[build-dependencies.tango]
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[dependencies]
+# llvm = "*"
+semver = "*"
+llvm-sys = "*"
+
+## (There are other settings for `libc` below, but
+##  this is the one that matches the libc that llvm-sys.rs
+##  pulls in.)
+libc = "^0.1.8"
+# libc = "0.2.2"
+# libc = "*"
+
+# [dependencies.llvm-alt]
+# version = "0.3.1"
+# git = "https://github.com/pnkfelix/llvm-rs"
+
+# [dependencies.llvm-alt-sys]
+# version = "0.1.4"
+# git = "https://github.com/pnkfelix/llvm-sys.rs"
+
+[dependencies.llvm-sys-ext]
+version = "0.1.0"
+git = "https://github.com/pnkfelix/llvm-sys-ext"

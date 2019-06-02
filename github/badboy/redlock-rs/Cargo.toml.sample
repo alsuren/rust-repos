@@ -1,0 +1,18 @@
+[package]
+
+name = "redlock"
+version = "1.0.0"
+authors = ["Jan-Erik Rediger <badboy@archlinux.us>"]
+
+keywords = ["distributed", "locking"]
+description = "Implementation of the distributed locking mechanism built on top of Redis"
+
+homepage = "https://github.com/badboy/redlock-rs"
+repository = "https://github.com/badboy/redlock-rs"
+
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[dependencies]
+redis = "0.5.1"
+rand = "0.3.14"

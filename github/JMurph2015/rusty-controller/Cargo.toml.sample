@@ -1,0 +1,25 @@
+[package]
+name = "rusty_controller"
+version = "0.2.0"
+authors = ["Joseph Murphy <air.jmurph@gmail.com>"]
+
+[dependencies]
+rs_ws281x = "0.2"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+mio = "0.6"
+pnet = "0.22"
+log = "0.4"
+fern = { version = "0.5", features = ["colored"] }
+colored = "1.6"
+chrono = "0.4"
+
+[profile.release]
+opt-level = 3
+debug = true
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

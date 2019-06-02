@@ -1,0 +1,18 @@
+[package]
+name = "hostblock"
+version = "0.1.1"
+authors = ["Curtis Gagliardi <curtis@curtis.io>"]
+
+[dependencies]
+rustbox = "*"
+rand = "*"
+unicode-segmentation = "*"
+
+[dependencies.clippy]
+clippy = "*"
+optional = true
+
+[features]
+default = []
+
+lints = ["clippy"]

@@ -1,0 +1,9 @@
+[package]
+name = "qs_demo"
+version = "0.1.0"
+authors = ["Noah Lidell <noahlidell@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+#quicksilver = "0.3.6"
+quicksilver = { version = "0.3.6", default-features = false, features = ["fonts", "saving"]} # more features "collisions", "complex_shapes", "immi_ui", "sounds", gamepads

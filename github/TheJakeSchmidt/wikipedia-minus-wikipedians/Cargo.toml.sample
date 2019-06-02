@@ -1,0 +1,24 @@
+[package]
+name = "wikipedia_minus_wikipedians"
+version = "0.1.0"
+authors = ["jakeschmidt"]
+
+[dependencies]
+argparse = "*"
+html5ever = "*"
+html5ever_dom_sink = "*"
+hyper = "*"
+iron = "*"
+log = "*"
+log4rs = "*"
+num = "*"
+rand = "*"
+redis = "*"
+regex = "*"
+regex_macros = "*"
+rustc-serialize = "0.3"
+tempfile = "1.1.0"
+tendril = "*"
+time = "*"
+uuid = "*"
+url = "*"

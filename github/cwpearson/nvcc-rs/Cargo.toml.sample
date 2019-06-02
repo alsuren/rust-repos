@@ -1,0 +1,9 @@
+[package]
+name = "nvcc"
+version = "0.1.1"
+authors = ["Carl Pearson <pearson@illinois.edu>"]
+
+[dependencies]
+glob = "0.2"
+regex = "1"
+find = { git = "https://github.com/cwpearson/find-rs", tag = "v0.1.1" }

@@ -1,0 +1,12 @@
+[package]
+name = "oleeae"
+version = "0.1.0"
+authors = ["Xuanwo <xuanwo@archlinuxcn.org>"]
+
+[dependencies]
+rocket = "0.4.0"
+rocket_contrib = "0.4.0"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+uuid = { version = "0.7", features = ["v4"] }

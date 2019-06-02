@@ -1,0 +1,10 @@
+[package]
+name = "safe_shl"
+description = "left bit shifts without dropping bits"
+license = "0BSD"
+version = "1.1.1"
+authors = ["edef <edef@edef.eu>"]
+repository = "https://github.com/edef1c/safe_shl"
+
+[lib]
+path = "lib.rs"

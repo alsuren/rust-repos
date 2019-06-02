@@ -1,0 +1,8 @@
+[package]
+name = "dm"
+version = "0.1.0"
+authors = ["Lei Tu <lei.tu@gmail.com>"]
+
+[dependencies]
+ssh2 = "0.3"
+yaml-rust = "0.3"

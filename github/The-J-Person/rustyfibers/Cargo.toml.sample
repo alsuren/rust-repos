@@ -1,0 +1,19 @@
+[package]
+name = "raytracer"
+version = "0.0.4"
+authors = ["J"]
+
+[dependencies]
+roots = "^0" # crate for various mathematical functions
+nalgebra = "^0" # matrix calculations
+rand = "^0" # random number generation
+time = "^0" # for benchmarking
+
+gtk = "^0" # GUI
+
+#vulkano = "^0" # Vulkan API bindings
+
+glib = "^0"		# These
+gdk = "^0" 		# might
+gdk-pixbuf = "^0"	# not be
+cairo-rs = "^0"		# necessary

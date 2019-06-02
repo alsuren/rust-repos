@@ -1,0 +1,12 @@
+[package]
+name = "numbers"
+version = "0.1.0"
+authors = ["Suchin Gururangan"]
+
+[dependencies]
+blas="*"
+lapack="*"
+rand="*"
+zipWith="*"
+num="*"
+clippy = "*"

@@ -1,0 +1,44 @@
+[package]
+authors = ["Nick Fitzgerald <fitzgen@gmail.com>"]
+edition = "2018"
+name = "walrus"
+version = "0.7.0"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+categories = ["wasm"]
+repository = "https://github.com/rustwasm/walrus"
+homepage = "https://github.com/rustwasm/walrus"
+documentation = "https://docs.rs/walrus"
+description = """
+A library for performing WebAssembly transformations
+"""
+
+[lib]
+path = "src/lib.rs"
+bench = false
+
+[[bench]]
+name = "benches"
+path = "benches/benches.rs"
+harness = false
+
+[dependencies]
+failure = "0.1.2"
+id-arena = { version = "2.2.1", features = ['rayon'] }
+leb128 = "0.2.3"
+log = "0.4"
+rayon = "1.0.3"
+walrus-macro = { path = './crates/macro', version = '=0.7.0' }
+wasmparser = "0.30"
+
+[dev-dependencies]
+env_logger = "0.6"
+criterion = "0.2.11"
+
+[workspace]
+members = [
+    "./crates/fuzz",
+    "./crates/macro",
+    "./crates/tests",
+    "./crates/tests-utils",
+]

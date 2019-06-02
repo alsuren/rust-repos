@@ -1,0 +1,11 @@
+[package]
+name = "cgol"
+version = "0.1.0"
+authors = ["Michael Daffin <michael.daffin@switchconcepts.com>"]
+description = "A engine to simulate Conway's Game Of Life"
+publish = false
+license = "MIT"
+
+[dependencies]
+rand = "0.3"
+rustty = "0.1"

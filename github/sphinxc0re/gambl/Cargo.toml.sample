@@ -1,0 +1,23 @@
+[package]
+name = "gambl"
+version = "0.1.0"
+authors = ["Julian Laubstein <contact@julianlaubstein.de>"]
+edition = "2018"
+
+[lib]
+name = "gambl_core"
+path = "core/lib.rs"
+
+[[bin]]
+name = "gambl"
+path = "src/main.rs"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+serde = "1.0"
+serde_derive = "1.0"
+error-chain = "0.12"
+rmp-serde = "0.13"
+dirs = "1.0"
+crypto-hash = "0.3"
+structopt = "0.2"

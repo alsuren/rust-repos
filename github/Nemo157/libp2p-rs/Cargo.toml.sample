@@ -1,0 +1,30 @@
+[package]
+authors = ["Wim Looman <wim@nemo157.com>"]
+name = "libp2p"
+version = "0.1.0"
+
+[dependencies]
+bytes = "0.4.4"
+futures-await = "0.1.1"
+maddr = "0.3.0"
+mhash = "0.3.0"
+protobuf = "1.4.1"
+slice_as_array = "1.1.0"
+slog = "2.0.12"
+tokio-core = "0.1.8"
+tokio-io = "0.1.2"
+
+[dependencies.libp2p-identity]
+path = "../libp2p-identity-rs"
+
+[dependencies.libp2p-secio]
+path = "../libp2p-secio-rs"
+
+[dependencies.mplex]
+path = "../mplex-rs"
+
+[dependencies.msgio]
+path = "../msgio-rs"
+
+[dependencies.multistream]
+path = "../multistream-rs"

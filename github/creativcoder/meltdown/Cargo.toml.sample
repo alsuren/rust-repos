@@ -1,0 +1,14 @@
+[package]
+name = "meltdown"
+version = "0.1.0"
+authors = ["Rahul Sharma <rsconceptx@gmail.com>"]
+
+[dependencies]
+hyper = "*"
+xdg = "^2.0"
+crossbeam = "0.2.5"
+walkdir = "0.1.5"
+rustc-serialize = "*"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

@@ -1,0 +1,16 @@
+[package]
+name = "rust-8"
+version = "0.1.0"
+authors = ["forlos"]
+edition = "2018"
+
+[dependencies]
+clap = "2.25.0"
+byteorder = "1.1.0"
+rand = "0.6"
+# sdl2 = "0.32.0"
+time = "0.1"
+
+[dependencies.sdl2]
+version = "0.32"
+features = ["ttf"]

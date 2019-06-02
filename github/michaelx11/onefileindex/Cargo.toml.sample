@@ -1,0 +1,10 @@
+[package]
+name = "onefileindex"
+version = "0.1.0"
+authors = ["michaelx <michaeljxu11@gmail.com>"]
+
+[dependencies]
+iron = "0.5.*"
+router = "0.5.*"
+chrono = "0.4"
+params = "0.6.0"

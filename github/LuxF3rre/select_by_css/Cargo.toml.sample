@@ -1,0 +1,9 @@
+[package]
+name = "select_by_css"
+version = "0.1.0"
+authors = ["LuxF3rre <mgblaszczak@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.11"
+scraper = "0.9.1"

@@ -1,0 +1,8 @@
+[package]
+name = "globe"
+version = "0.1.0"
+authors = ["Caleb Jones <self@calebjones.net>"]
+
+[dependencies]
+glium = "*"
+cgmath = "^0.10.0"

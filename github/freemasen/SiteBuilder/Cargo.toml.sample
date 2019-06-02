@@ -1,0 +1,26 @@
+[package]
+name = "site-builder"
+version = "1.0.0"
+authors = ["Robert Masen <r.f.masen@gmail.com>"]
+
+[features]
+release = []
+
+[dependencies]
+bincode = "1"
+chrono = { version = "0.4", features = ["serde"] }
+nfd = "0.0.4"
+pulldown-cmark = "0.1"
+tera = "0.11"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+toml = "0"
+walkdir = "2"
+web-view = "0.2"
+
+[target.'cfg(windows)'.build-dependencies]
+windres = "0.1.0"
+
+[profile.release]
+features = ["release"]

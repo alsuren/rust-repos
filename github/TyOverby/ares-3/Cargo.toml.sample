@@ -1,0 +1,15 @@
+[workspace]
+
+members = [
+    "vm",
+    "linked-stack",
+    "lexer",
+    "parser",
+    "binder",
+    "emit",
+    "semantics-test",
+    "repl",
+    "ast-cont",
+    "ast-lower",
+    "copy_arena",
+]

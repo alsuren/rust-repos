@@ -1,0 +1,35 @@
+[package]
+name = "aeternity_sync"
+version = "0.1.0"
+authors = ["John Newby <john@newby.org>"]
+edition = "2018"
+
+[lib]
+name = "aeternity_sync"
+
+[[bin]]
+name = "aeternity_sync"
+path = "src/main.rs"
+
+
+[dependencies]
+arrayref = "0.3.5"
+base58 = "0.1.0"
+base58check = "0.0.1"
+base64 = "0.10.1"
+byteorder = "*"
+curl = "0.4.19"
+hex = "0.3.2"
+noise-protocol = "0.0.5"
+noise-rust-crypto = "0.0.5"
+lazy_static = "1.2.0"
+regex = "*"
+rlp = "0.3.0"
+rust-crypto = "0.2.36"
+simple-error = "0.1.13"
+snow = "0.4.0"
+serde-rlp = "0.1.2"
+serde = "1.0.77"
+#serde_bytes = "0.10"
+serde_derive = "1.0.77"
+serde_json = { version="1.0.38", features = ["arbitrary_precision"] }

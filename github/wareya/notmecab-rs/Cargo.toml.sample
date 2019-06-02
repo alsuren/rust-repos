@@ -1,0 +1,34 @@
+[package]
+name = "notmecab"
+version = "0.3.1"
+authors = ["wareya <wareya@gmail.com>"]
+edition = "2018"
+exclude = [
+    "data/*",
+]
+
+description = "Library for tokenizing text with mecab dictionaries. Not a mecab wrapper."
+license = "Apache-2.0"
+
+repository = "https://github.com/wareya/notmecab-rs"
+
+categories = ["text-processing","science"]
+
+readme = "readme.md"
+
+[lib]
+doc = true
+
+[dependencies]
+byteorder = "1.2"
+pathfinding = "1.1"
+hashbrown = "0.1"
+
+[profile.bench]
+opt-level = 3
+debug = 2
+overflow-checks = true
+
+[profile.test]
+opt-level = 1
+overflow-checks = true

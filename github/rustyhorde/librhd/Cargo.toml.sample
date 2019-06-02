@@ -1,0 +1,25 @@
+[package]
+name = "librhd"
+version = "0.0.1-pre"
+authors = ["Jason Ozias <jason.ozias@ipaper.com>"]
+description = "Rusty Horde Daemon library"
+documentation = "http://rustyhorde.github.io/librhd"
+homepage = "http://rustyhorde.github.io/librhd"
+repository = "https://github.com/rustyhorde/librhd"
+readme = "README.md"
+license = "MIT"
+keywords = ["rust","rustyhorde","rhd","librhd"]
+build = "build.rs"
+
+[build-dependencies]
+vergen = "*"
+
+[dependencies]
+log = "*"
+rustc-serialize = "*"
+
+[dependencies.mio]
+git = "https://github.com/rustyhorde/mio.git"
+
+[dependencies.sodiumoxide]
+git = "https://github.com/rustyhorde/sodiumoxide.git"

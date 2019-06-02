@@ -1,0 +1,11 @@
+[package]
+name = "pratt"
+version = "0.1.0"
+authors = ["francesco franze <francesco.franze@gmail.com>"]
+
+[features]
+default = ["gc3c"]
+#default = []
+
+[dependencies]
+gc3c = { git = "https://github.com/francescofranze/gc3c.git", features=["gc_debug"], optional=true }

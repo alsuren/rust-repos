@@ -1,0 +1,11 @@
+[package]
+name = "coding_game"
+version = "0.1.0"
+authors = ["ilyavolkov <mormehtar@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+bundler = "0.1"
+#rustsourcebundler = { git = "https://github.com/lpenz/rust-sourcebundler" }
+
+[dependencies]

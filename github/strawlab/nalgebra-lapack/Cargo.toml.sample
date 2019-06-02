@@ -1,0 +1,25 @@
+[package]
+name = "nalgebra-lapack"
+version = "0.4.0"
+authors = ["Andrew Straw <strawman@astraw.com>"]
+description = "linear algebra operations for nalgebra matrices using LAPACK"
+license = "MIT"
+repository = "https://github.com/strawlab/nalgebra-lapack"
+documentation = "https://docs.rs/nalgebra-lapack/"
+readme = "README.md"
+keywords = [ "linear-algebra", "matrix", "lapack", "math" ]
+
+[features]
+default = ["openblas"]
+openblas = ["lapack/openblas"]
+netlib = ["lapack/netlib"]
+accelerate = ["lapack/accelerate"]
+
+[dependencies]
+nalgebra = "0.10"
+num = "0.1"
+error-chain = "0.5"
+
+[dependencies.lapack]
+version = "0.11"
+default-features = false

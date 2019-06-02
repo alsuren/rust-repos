@@ -1,0 +1,19 @@
+[package]
+name = "dumle"
+version = "0.1.0"
+authors = ["Axel Forsman <axelsfor@gmail.com>"]
+edition = "2018"
+description = ""
+license = "MIT"
+repository = "https://github.com/axelf4/dumle"
+readme = "README.md"
+keywords = ["virtual-dom", "vdom"]
+categories = ["wasm", "web-programming"]
+
+[dependencies]
+lis = { git = "https://github.com/axelf4/lis" }
+wasm-bindgen = "0.2.42"
+
+[dependencies.web-sys]
+version = "0.3.19"
+features = ["Document", "Element", "Node", "Text", "Window", "Event", "EventTarget", "HtmlElement"]

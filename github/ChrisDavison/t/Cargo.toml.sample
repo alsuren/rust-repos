@@ -1,0 +1,9 @@
+[package]
+name = "t"
+version = "0.32.0"
+authors = ["Chris Davison <c.jr.davison@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono="*"
+regex="*"

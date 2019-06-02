@@ -1,0 +1,11 @@
+[package]
+name = "rust-tutorial"
+version = "0.1.0"
+authors = ["osphost"]
+
+[dependencies]
+rand = "0.3.14"
+
+[[bin]]
+name = "rust-tutorial"
+path = "./src/app.rs"

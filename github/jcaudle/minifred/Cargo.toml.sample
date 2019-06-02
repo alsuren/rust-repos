@@ -1,0 +1,16 @@
+[package]
+name = "minifred"
+version = "0.1.0"
+authors = ["jcaudle"]
+
+[dependencies]
+bootloader_precompiled = "0.2.0"
+spin = "0.4.6"
+volatile = "0.2.3"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
+
+[package.metadata.bootimage]
+default-target = "x86_64-minifred.json"

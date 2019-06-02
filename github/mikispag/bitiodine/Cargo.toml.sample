@@ -1,0 +1,33 @@
+[package]
+name = "bitiodine-rust"
+version = "0.0.2"
+authors = ["Michele Spagnuolo <mikispag@gmail.com>"]
+
+[dependencies]
+arrayref = ">=0.3"
+bitcoin-bech32 = ">=0.8"
+byteorder = ">=1.2"
+base58 = ">=0.1"
+clap = ">=2.32.0"
+dirs = ">=1.0"
+rust-crypto = ">=0.2"
+log = ">=0.4"
+env_logger = ">=0.5"
+memmap = ">=0.6"
+rustc-serialize = ">=0.3"
+time = ">=0.1"
+vec_map = ">=0.8"
+void = ">=1.0"
+
+# The development profile, used for `cargo build`
+[profile.dev]
+opt-level = 3                # Controls the --opt-level the compiler builds with
+debug = true                 # Controls whether the compiler passes `-g`
+debug-assertions = true      # Controls whether debug assertions are enabled
+
+# The release profile, used for `cargo build --release`
+[profile.release]
+opt-level = 3                # Controls the --opt-level the compiler builds with
+debug = false                # Controls whether the compiler passes `-g`
+debug-assertions = false     # Controls whether debug assertions are enabled
+lto = true

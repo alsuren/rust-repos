@@ -1,0 +1,41 @@
+[package]
+authors = ["Brad Gibson <b2b@humanenginuity.com>"]
+edition = "2018"
+name = "minesweeper"
+version = "0.1.0"
+
+[[bin]]
+doc = false
+name = "minesweeper"
+path = "src/main.rs"
+test = false
+
+[dependencies]
+rand = "0.6.4"
+structopt = "0.2.14"
+derive_more = "0.14.0"
+[profile.dev]
+codegen-units = 1
+debug = true
+debug-assertions = true
+lto = false
+opt-level = 0
+panic = "unwind"
+rpath = false
+
+[profile.release]
+codegen-units = 1
+debug = false
+debug-assertions = false
+lto = false
+opt-level = 3
+panic = "unwind"
+rpath = false
+
+[profile.test]
+codegen-units = 1
+debug = true
+debug-assertions = true
+lto = false
+opt-level = 0
+rpath = false

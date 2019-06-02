@@ -1,0 +1,17 @@
+[package]
+name = "telepipe"
+description = "A proxy for Phantasy Star Online games for GameCube."
+version = "1.1.1"
+authors = ["Eidolon"]
+license = "MIT"
+
+[dependencies]
+byteorder = "0.5"
+encoding = "0.2"
+log = "0.3"
+env_logger = "0.3"
+resolve = "0.1.2"
+rand = "0.3"
+rustc-serialize = "0.3"
+toml = "0.1"
+clap = "2"

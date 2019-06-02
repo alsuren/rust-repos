@@ -1,0 +1,16 @@
+[package]
+name = "ext-string"
+version = "0.1.3"
+authors = ["Robert Ferentz <RobiFerentz@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/RobiFerentz/ext-string"
+keywords = ["string", "extension", "pad", "reverse"]
+description = "An attempt to extend rust String struct with functionality from other programming languages"
+maintenance = { status = "experimental" }
+license = "MIT"
+readme="README.MD"
+
+[badges]
+travis-ci = { repository = "RobiFerentz/ext-string", branch = "master" }
+
+[dependencies]

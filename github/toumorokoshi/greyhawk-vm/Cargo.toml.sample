@@ -1,0 +1,11 @@
+[package]
+name = "ghvm"
+version = "0.0.1-alpha"
+authors = ["Yusuke Tsutsumi <yusuke@tsutsumi.io>"]
+description = "a VM implementation for the greyhawk language"
+license = "MIT"
+
+[dependencies]
+getopts = "0.2"
+yaml-rust = "0.2.2"
+lazy_static = "0.1.*"

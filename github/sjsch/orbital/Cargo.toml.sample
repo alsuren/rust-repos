@@ -1,0 +1,13 @@
+[package]
+name = "orbital"
+version = "0.1.0"
+authors = ["sjs"]
+edition = "2018"
+
+[dependencies.cortex-m]
+version = "*"
+features = ["inline-asm", "const-fn"]
+
+[dependencies.stm32h7]
+version = "*"
+features = ["stm32h7x3"]

@@ -1,0 +1,9 @@
+[package]
+name = "rusty_cmis"
+version = "0.1.0"
+authors = ["DeltaManiac <maxpaynered@gmail.com>"]
+
+[dependencies]
+reqwest = "0.7.1"
+serde="1.0.10"
+serde_json="1.0.2"

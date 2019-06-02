@@ -1,0 +1,29 @@
+[package]
+name = "grpc_etcd"
+version = "0.1.4"
+authors = ["angelrain1 <lagudomeze@163.com>"]
+license = "MIT/Apache-2.0"
+description = "etcd rust-grpc api"
+repository = "https://github.com/angelrain1/grpc_etcd.git"
+documentation = "https://docs.rs/grpc_etcd"
+
+[dependencies]
+protobuf        = "1.*"
+tls-api         = "0.*"
+futures         = "0.1.*"
+futures-cpupool = "0.1.*"
+
+[dependencies.grpc]
+version = "0.1.11"
+
+[build-dependencies.protoc-rust-grpc]
+version = "0.1"
+
+[profile.doc]
+opt-level = 0
+debug = 2
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+panic = 'unwind'

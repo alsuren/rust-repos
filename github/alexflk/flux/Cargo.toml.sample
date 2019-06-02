@@ -1,0 +1,9 @@
+[package]
+name = "flux"
+version = "0.1.0"
+authors = ["alexflk <alexsflick@gmail.com>"]
+
+[dependencies]
+getopts = "0.2"
+image = "*"
+rand = "0.6"

@@ -1,0 +1,11 @@
+[package]
+name = "test"
+version = "0.1.0"
+authors = ["Max Eliaser <max@meliaserlow.dyndns.tv>"]
+
+[dependencies]
+libservo = { git = "https://github.com/servo/servo", rev = "2f8fa32" }
+
+[lib]
+name = "rust_component"
+crate-type = ["dylib"]

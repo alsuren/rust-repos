@@ -1,0 +1,11 @@
+[package]
+name = "rusty_yii"
+version = "0.1.0"
+authors = ["HeadScript <lostchaos3@gmail.com>"]
+
+[dependencies.iron]
+version = "*"
+[dependencies]
+router = "*"
+hyper = "*"
+staticfile = "*"

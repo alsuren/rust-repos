@@ -1,0 +1,15 @@
+[package]
+name = "ein"
+version = "0.1.0"
+authors = ["Joe Clay <27cupsofcoffee@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ein_syntax = { path = "ein_syntax" }
+ein_vm = { path = "ein_vm" }
+
+structopt = "0.2.15"
+rustyline = "4.1.0"
+
+[workspace]
+members = ["ein_syntax", "ein_vm"]

@@ -1,0 +1,12 @@
+[package]
+name = "mqtt"
+version = "0.5.0"
+authors = ["Andres Vahter <andres.vahter@gmail.com>"]
+
+[dependencies]
+libc = "*"
+log = "*"
+time = "*"
+
+[dev-dependencies]
+fern = "*"

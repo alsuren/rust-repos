@@ -1,0 +1,38 @@
+[package]
+authors = ["Kracekumar R <me@kracekumar.com>"]
+name = "imon"
+version = "0.1.0"
+
+[dependencies]
+chrono = "0.2"
+time = "0.1.35"
+mioco = "*"
+bytes = "0.2.11"
+docopt = "0.6.86"
+docopt_macros = "0.6.86"
+rustc-serialize = "0.3"
+rmp-serialize = "0.7.0"
+log = "*"
+env_logger = "*"
+
+[dependencies.rusqlite]
+version = "0.7.3"
+features = ["chrono"]
+
+[dependencies.pcap]
+git = "https://github.com/ebfull/pcap"
+
+[dependencies.rmp]
+rmp = "^0.7"
+
+[dependencies.resolve]
+git = "https://github.com/murarth/resolve"
+
+[[bin]]
+name = "imon"
+test = true
+
+[[test]]
+name = "db_integration"
+harness = false
+test = true

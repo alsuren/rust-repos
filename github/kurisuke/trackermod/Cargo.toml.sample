@@ -1,0 +1,13 @@
+[package]
+name = "trackermod"
+version = "0.1.0"
+authors = ["Peter Helbing <peter@abulafia.org>"]
+
+[dependencies]
+byteorder = "1.2.3"
+
+[dev-dependencies]
+hound = "3.4.0"
+
+[[example]]
+name = "moddump"

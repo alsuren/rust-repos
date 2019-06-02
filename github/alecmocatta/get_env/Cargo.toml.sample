@@ -1,0 +1,32 @@
+[package]
+name = "get_env"
+version = "0.1.0"
+license = "Apache-2.0"
+authors = ["Alec Mocatta <alec@mocatta.net>"]
+categories = ["development-tools"]
+keywords = ["env"]
+description = """
+Get argv and envp by hook or by crook.
+
+This library goes further than the stdlib to get arguments and environment variables, including reading from /proc/self/cmdline and similar.
+"""
+repository = "https://github.com/alecmocatta/get_env"
+homepage = "https://github.com/alecmocatta/get_env"
+documentation = "https://docs.rs/get_env/0.1.0"
+readme = "README.md"
+
+[badges]
+appveyor = { repository = "alecmocatta/get_env" }
+circle-ci = { repository = "alecmocatta/get_env" }
+#gitlab = { repository = "alecmocatta/get_env" }
+travis-ci = { repository = "alecmocatta/get_env" }
+
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+libc = "0.2"
+lazy_static = "1.0"
+
+[dev-dependencies]
+serde_json = "1.0"
+escargot = "0.3"

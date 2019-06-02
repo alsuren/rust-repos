@@ -1,0 +1,8 @@
+[package]
+name = "a4-proto"
+version = "0.1.0"
+authors = ["Geordon Worley <vadixidav@gmail.com>"]
+
+[dependencies]
+serde = "0.9"
+serde_derive = "0.9"

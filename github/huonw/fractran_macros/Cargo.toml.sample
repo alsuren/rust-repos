@@ -1,0 +1,26 @@
+[package]
+
+name = "fractran_macros"
+version = "0.1.5"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+homepage = "https://github.com/huonw/fractran_macros"
+repository = "https://github.com/huonw/fractran_macros"
+license = "MIT/Apache-2.0"
+keywords = ["plugin", "esolang"]
+readme = "README.md"
+description = """
+A compiler plugin that converts Fractran code into Rust at compile
+time, letting your Fractran programs be optimised by LLVM to super-fast
+native code.
+"""
+
+
+[dependencies]
+slow_primes = "~0.1.4"
+num = "~0"
+
+[lib]
+
+name = "fractran_macros"
+plugin = true

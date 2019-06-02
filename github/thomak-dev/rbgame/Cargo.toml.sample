@@ -1,0 +1,19 @@
+[package]
+name = "rbgame"
+version = "0.1.0"
+authors = ["Thomas Makiela <thomak.dev@gmail.com>"]
+build = "src/build.rs"
+
+[[bin]]
+name = "rbgame"
+doc = false
+
+[dependencies]
+
+[dependencies.sdl2]
+version = "0.30.0"
+default-features = false
+features = ["ttf", "image", "mixer"]
+
+[build-dependencies]
+gl_generator = "0.5.5"

@@ -1,0 +1,25 @@
+[package]
+name = "pam_luksresume"
+version = "0.0.1"
+authors = [ "raphael.catolino@gmail.com" ]
+
+[[bin]]
+name = "pam_luksresume_helper"
+
+[lib]
+name = "pam_luksresume"
+crate-type = ["dylib"]
+
+[dependencies]
+pamsm = { git = "https://github.com/rcatolino/pam_sm_rust" }
+libc = "^0.2.20"
+
+[profile.dev]
+opt-level = 0
+debug = true
+lto = true
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true

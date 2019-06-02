@@ -1,0 +1,20 @@
+[package]
+name = "zfilexfer"
+version = "0.0.2"
+authors = [ "Peter Hayes <peter.hayes@betweenlines.co.uk>" ]
+license = "MPL-2.0"
+description = "File transfer over ZMQ sockets."
+keywords = ["zfilexfer"]
+repository = "https://github.com/betweenlines/zfilexfer"
+
+[dev-dependencies]
+
+tempdir = "0.3"
+tempfile = "2.1"
+
+[dependencies]
+
+crc = "1.2"
+czmq = "0.1"
+rustc-serialize = "0.3"
+zdaemon = "0.0.2"

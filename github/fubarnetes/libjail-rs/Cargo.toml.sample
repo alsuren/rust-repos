@@ -1,0 +1,33 @@
+[package]
+name = "jail"
+version = "0.0.7-alpha.0"
+authors = ["Fabian Freyer <fabian.freyer@physik.tu-berlin.de>"]
+description = "FreeBSD jail library"
+license = "BSD-3-Clause"
+repository = "https://github.com/fubarnetes/libjail-rs"
+documentation = "https://fubarnetes.github.io/libjail-rs/x86_64-unknown-freebsd/jail/index.html"
+keywords = ["freebsd", "jail", "container", "chroot"]
+categories = ["os::unix-apis", "api-bindings"]
+readme = "README.md"
+
+[lib]
+name = "jail"
+path = "src/lib.rs"
+
+[badges]
+maintenance = { status = "experimental" }
+travis-ci = { repository = "fubarnetes/libjail-rs", branch = "master" }
+is-it-maintained-issue-resolution = { repository = "fubarnetes/libjail-rs" }
+is-it-maintained-open-issues = { repository = "fubarnetes/libjail-rs" }
+
+[dependencies]
+bitflags = "^1"
+byteorder = "^1.2.3"
+failure = "~0.1.1"
+libc = "~0.2.41"
+sysctl = "~0.2.0"
+nix= "^0.12.0"
+rctl = "0.0.5"
+
+[dev-dependencies]
+prettytable-rs = "0.8.0"

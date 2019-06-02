@@ -1,0 +1,10 @@
+[package]
+name = "alphabangrs"
+version = "0.1.0"
+authors = ["nbowler <nbowler@gmail.com>"]
+
+[dependencies]
+piston = "0.37.0"
+piston_window = "0.80.0"
+rand = "0.5.3"
+rodio = "0.8.0"

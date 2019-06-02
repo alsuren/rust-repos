@@ -1,0 +1,15 @@
+[package]
+name = "nsga2"
+version = "0.0.1"
+authors = ["Michael Neumann <mneumann@ntecs.de>"]
+license = "MIT"
+repository = "https://github.com/mneumann/nsga2-rs"
+description = "NSGA2 - Non Dominated Sorting Genetic Algorithm II"
+keywords = ["evolution", "algorithm", "multi-objective", "nsga"]
+
+include = ["src/*.rs", "examples/*.rs", "Cargo.toml", "LICENSE", "README.md"]
+
+[dependencies]
+
+rand = "0.4"
+non-dominated-sort = "0.2"

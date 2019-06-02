@@ -1,0 +1,9 @@
+[package]
+name = "ray-tracing-rust"
+version = "0.1.0"
+authors = ["Robert Fidler <robertf224@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.3"
+indicatif = "0.11.0"

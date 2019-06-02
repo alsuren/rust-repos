@@ -1,0 +1,19 @@
+[package]
+name = "rusty-web-server"
+version = "0.1.1"
+authors = ["phideg <deglerp@googlemail.com>"]
+license = "MIT/Apache-2.0"
+description = "A basic WEB file server based on minihttp"
+
+[[bin]]
+name = "rusty-web-server"
+
+[dependencies]
+tokio-minihttp = { git = "https://github.com/tokio-rs/tokio-minihttp" }
+tokio-service = "0.1"
+tokio-proto = "0.1"
+futures = "0.1"
+num_cpus = "1.8"
+clap = "2.32"
+mime_guess = "1.8"
+url = "1.7"

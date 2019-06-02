@@ -1,0 +1,16 @@
+[package]
+name = "rzero"
+description = "rzero"
+version = "0.1.0"
+authors = ["Kevin Greene <kgreenek@gmail.com>"]
+
+[dependencies]
+lazy_static = "1.0.0"
+sample = "0.9.0"
+
+[lib]
+name = "rzero"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[profile.release]
+lto = true

@@ -1,0 +1,13 @@
+[package]
+name = "ktls-poc"
+version = "0.1.0"
+authors = ["quininer <quininer@live.com>"]
+
+[dependencies]
+libc = "*"
+byteorder = "*"
+webpki = "*"
+rustls = { git = "https://github.com/quininer/rustls", branch = "ktls" }
+
+[dev-dependencies]
+webpki-roots = "*"

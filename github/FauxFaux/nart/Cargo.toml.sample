@@ -1,0 +1,28 @@
+[package]
+name = "nart"
+version = "0.1.0"
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+edition = "2018"
+
+[dependencies]
+more-asserts = "0.2"
+rusttype = "0.7"
+
+[dependencies.failure]
+default-features = false
+features = ["std"]
+version = "0.1"
+
+[dependencies.minifb]
+git = "https://github.com/emoon/rust_minifb"
+# master
+rev = "2b8094cc6ce7fefeb322a8b4df09e0c978efd5e2"
+
+[dependencies.png]
+# avoiding encoder
+default-features = false
+version = "0.14.1"
+
+[dev-dependencies]
+rand_core = "0.4"
+rand_xoshiro = "0.1"

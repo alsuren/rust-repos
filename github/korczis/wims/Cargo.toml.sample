@@ -1,0 +1,92 @@
+[package]
+name = "wims"
+version = "0.1.0"
+authors = ["Tomas Korcak <korczis@gmail.com>"]
+description = "Where Is My Space?"
+
+[dependencies]
+backtrace = "0.3"
+bincode = "*"
+clap = ">= 2.18"
+# clippy = "0.0.127"
+ctrlc = ">= 2.0"
+# crossbeam = "*"
+env_logger = ">= 0.4"
+libc = ">= 0.2.16"
+log = ">= 0.3.6"
+memmap = "*"
+nom = "*"
+quickcheck = ">= 0.4"
+quickcheck_macros = ">= 0.4"
+serde = "1.0.2"
+serde_codegen = "*"
+serde_derive = "*"
+serde_json = "*"
+serde-transcode = "*"
+strings = "*"
+string_cache = "*"
+string_cache_codegen = "*"
+suffix_tree = "*"
+stree_cmd = "*"
+# Optional
+ansi_term = "*"
+chomp = "*"
+chrono = "*"
+cookie = "*"
+css-color-parser = "*"
+fuse = "*"
+glium = "*"
+hyper = "*"
+image = "*"
+imageproc = "*"
+iron = "*"
+lru-cache = "*"
+rand="*"
+regex = "*"
+router = "*"
+rusqlite = "*"
+tempfile = "*"
+time = "*"
+urlencoded = "*"
+users = "*"
+
+[dependencies.sdl2]
+version = "*"
+default-features = false
+features = ["ttf","image","gfx","mixer"]
+
+[lib]
+name = "wims"
+path = "src/lib.rs"
+
+[[bin]]
+name = "wims"
+doc = false
+path = "src/main.rs"
+
+# [[bin]]
+# name = "crossbeam"
+# doc = false
+# path = "tmp/crossbeam.rs"
+
+
+# Debug settings
+[profile.dev]
+opt-level = 0      # controls the `--opt-level` the compiler builds with
+debug = true       # controls whether the compiler passes `-g`
+rpath = false      # controls whether the compiler passes `-C rpath`
+lto = false        # controls `-C lto` for binaries and staticlibs
+debug-assertions = true # controls whether debug assertions are enabled
+codegen-units = 1  # controls whether the compiler passes `-C codegen-units`
+                   # `codegen-units` is ignored when `lto = true`
+panic = 'unwind'   # panic strategy (`-C panic=...`), can also be 'abort'
+
+# Release settings
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

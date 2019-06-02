@@ -1,0 +1,9 @@
+[package]
+name = "syntax_highlight"
+version = "0.1.0"
+authors = ["Abdul Dakkak <abduld@wolfram.com>"]
+
+[dependencies]
+
+syntect = "2.1"
+

@@ -1,0 +1,29 @@
+[package]
+name = "cogs"
+version = "0.1.1"
+authors = ["Lloyd <lloydmeta@gmail.com>"]
+description = "Non-blocking client for Microsoft Cognition API"
+license = "MIT"
+documentation = "https://docs.rs/cogs"
+repository = "https://github.com/lloydmeta/cogs"
+keywords = ["cognitive-services", "client", "Microsoft", "non-blocking", "hyper"]
+
+[badges]
+travis-ci = { repository = "lloydmeta/cogs" }
+
+[dependencies]
+time = "0.1"
+hyper = "0.11"
+futures = "0.1"
+lazy_static = "0.2"
+elementtree = "0.2.0"
+url = "1.4.0"
+clap = "2.21.2"
+tokio-core = "0.1.6"
+hyper-tls = "0.1"
+native-tls = "0.1"
+
+[[bin]]
+name = "cogs"
+test = false
+doc = false

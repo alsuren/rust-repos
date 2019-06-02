@@ -1,0 +1,25 @@
+[package]
+name = "sulis"
+version = "0.2.2"
+authors = ["Jared Stephen <grok_moo@yahoo.com>"]
+license = "GPLv3"
+description = "An RPG with Turn Based Combat"
+repository = "https://github.com/Grokmoo/sulis"
+edition = "2018"
+
+[workspace]
+members = [
+    "sulis_core",
+    "sulis_editor",
+	"sulis_module",
+	"sulis_state",
+	"sulis_view",
+]
+
+[dependencies]
+sulis_core = { path = "sulis_core" }
+sulis_module = { path = "sulis_module" }
+sulis_state = { path = "sulis_state" }
+sulis_view = { path = "sulis_view" }
+
+log = "0.4"

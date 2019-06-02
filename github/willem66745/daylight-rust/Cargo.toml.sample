@@ -1,0 +1,11 @@
+[package]
+name = "daylight"
+version = "0.0.1"
+authors = ["Willem <willem66745@gmail.com>"]
+
+[dependencies]
+time = "0.1"
+
+[dev-dependencies]
+hyper = "0.9"
+rustc-serialize = "0.3"

@@ -1,0 +1,9 @@
+[package]
+name = "dpn233-imgconv"
+version = "0.1.0"
+authors = ["lxndio"]
+edition = "2018"
+
+[dependencies]
+image = "*"
+serial = "0.4.0"

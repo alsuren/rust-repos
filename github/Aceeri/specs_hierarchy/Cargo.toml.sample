@@ -1,0 +1,10 @@
+[package]
+name = "specs_hierarchy"
+version = "0.1.0"
+authors = ["Aceeri <conmcclusk@gmail.com>"]
+
+[dependencies]
+specs = { git = "https://github.com/Aceeri/specs", branch = "interface" }
+shred = "0.5"
+shrev = "0.8"
+shred-derive = "0.3"

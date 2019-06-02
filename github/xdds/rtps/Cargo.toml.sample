@@ -1,0 +1,28 @@
+[package]
+name = "rtps"
+version = "0.2.4"
+authors = ["Xavier Lange <xrlange@gmail.com>"]
+license = "MIT"
+description = "OMG RTPS 2.2"
+
+[lib]
+doctest = false
+
+[dependencies]
+"bitflags" = "0.7.*"
+"byteorder" = "0.5.*"
+"net2" = "0.2.*"
+"serde" = "0.8"
+"serde_derive" = "0.8"
+clippy = {version = "*", optional = true}
+
+[features]
+default = []
+
+# Broken in nightly
+# [dev-dependencies]
+# "power-assert" = "0.3.9"
+
+[[test]]
+name = "test"
+path = "test/mod.rs"

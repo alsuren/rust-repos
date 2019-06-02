@@ -1,0 +1,12 @@
+[package]
+name = "lit-test"
+version = "0.1.0"
+authors = ["Neil Henning <sheredom@gmail.com>"]
+edition = "2018"
+
+[dev-dependencies]
+lit = "0.3.3"
+
+[[bin]]
+name = "lit-test"
+path = "src/lit-test.rs"

@@ -1,0 +1,12 @@
+[package]
+name = "lock_bench"
+version = "0.1.0"
+authors = ["Mitsunori Komatsu <komamitsu@gmail.com>"]
+
+[lib]
+name = "lock_bench"
+
+[dependencies]
+time = "0.1"
+statrs = "0.5"
+parking_lot = "0.6"

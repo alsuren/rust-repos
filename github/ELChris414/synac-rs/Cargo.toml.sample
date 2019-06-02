@@ -1,0 +1,32 @@
+[package]
+authors = ["ELChris414 <elchrischar@gmail.com>"]
+description = "Synac client library for Rust"
+license-file = "LICENSE"
+name = "synac"
+repository = "https://github.com/ELChris414/synac-rs"
+version = "0.6.2"
+[dependencies]
+failure = "0.1.1"
+openssl = "0.10.2"
+rmp-serde = "0.13.7"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+
+[dependencies.futures]
+optional = true
+version = "0.1.17"
+
+[dependencies.tokio-core]
+optional = true
+version = "0.1.12"
+
+[dependencies.tokio-io]
+optional = true
+version = "0.1.4"
+
+[dependencies.tokio-openssl]
+optional = true
+version = "0.2.0"
+
+[features]
+tokio = ["futures", "tokio-core", "tokio-io", "tokio-openssl"]

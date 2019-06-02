@@ -1,0 +1,23 @@
+[workspace]
+
+members = [
+  "tokio",
+  "tokio-async-await",
+  "tokio-buf",
+  "tokio-codec",
+  "tokio-current-thread",
+  "tokio-executor",
+  "tokio-fs",
+  "tokio-io",
+  "tokio-reactor",
+  "tokio-signal",
+  "tokio-sync",
+  "tokio-threadpool",
+  "tokio-timer",
+  "tokio-tcp",
+  "tokio-tls",
+  "tokio-trace",
+  "tokio-trace/tokio-trace-core",
+  "tokio-udp",
+  "tokio-uds",
+]

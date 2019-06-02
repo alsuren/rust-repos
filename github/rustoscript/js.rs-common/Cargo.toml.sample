@@ -1,0 +1,9 @@
+[package]
+name = "jsrs-common"
+version = "0.1.0"
+authors = ["Saghm Rossi <saghmrossi@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+matches = "0.1.2"
+uuid = { version = "0.2", features = ["serde", "v4"] }

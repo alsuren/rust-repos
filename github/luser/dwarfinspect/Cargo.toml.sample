@@ -1,0 +1,18 @@
+[package]
+name = "dwarfinspect"
+categories = ["development-tools::debugging"]
+description = "A curses-based interactive DWARF inspector."
+version = "0.1.0"
+authors = ["Ted Mielczarek <ted@mielczarek.org>"]
+license = "Apache-2.0/MIT"
+readme = "./README.md"
+repository = "https://github.com/luser/dwarfinspect"
+
+[dependencies]
+cursive = "0.8.1"
+failure = "0.1.1"
+gimli = "0.15.0"
+object = "0.7.0"
+memmap = "0.6.2"
+cursive_table_view = "0.5.0"
+fallible-iterator = "0.1.4"

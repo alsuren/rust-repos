@@ -1,0 +1,10 @@
+[package]
+name = "cursive_test"
+version = "0.1.0"
+
+[dependencies]
+
+[dependencies.cursive]
+version = "0.9"
+default-features = false
+features = ["pancurses-backend"]

@@ -1,0 +1,8 @@
+[package]
+name = "azul_hello_world_plugin"
+version = "0.1.0"
+authors = ["Felix Schütt <felix.schuett@maps4print.com>"]
+description = "Example hello world plugin for Azul"
+
+[dependencies]
+azul = { git = "https://github.com/maps4print/azul", default-features = false }

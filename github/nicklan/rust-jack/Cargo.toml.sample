@@ -1,0 +1,32 @@
+[package]
+
+name = "rust-jack"
+description = "JACK Audio Connection Kit bindings for Rust"
+version = "0.0.1"
+authors = ["Nick Lanham <nick@afternight.org>"]
+repository = "https://github.com/nicklan/rust-jack"
+readme = "README.md"
+keywords = ["jack", "audio", "music", "sound"]
+license = "LGPL-2.1"
+
+[lib]
+name="jack"
+
+[dependencies]
+bitflags = "0.3.2"
+libc = "0.1"
+
+[[test]]
+name = "jack_test"
+harness = false
+
+[dev-dependencies]
+getopts = "0.2"
+
+[[example]]
+name = "metro"
+path = "examples/metro.rs"
+
+[[example]]
+name = "midiseq"
+path = "examples/midiseq.rs"

@@ -1,0 +1,8 @@
+[package]
+name = "stylus"
+version = "0.1.0"
+authors = ["Mathieu David <mathieudavid@mathieudavid.org>"]
+
+[dependencies]
+error-chain = "0.10.0"
+nom = "3.1.0"

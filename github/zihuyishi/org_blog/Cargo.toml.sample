@@ -1,0 +1,19 @@
+[package]
+name = "org_blog"
+version = "0.1.0"
+authors = ["lichong <lc@molasync.com>"]
+
+[dependencies]
+iron = "*"
+mount = "*"
+router = "*"
+logger = "*"
+bodyparser = "*"
+urlencoded = "*"
+serde = "*"
+serde_json = "*"
+lazy_static = "0.1.*"
+
+[dependencies.staticfile]
+version = "*"
+features = ["cache"]

@@ -1,0 +1,7 @@
+[package]
+name = "layden"
+version = "0.1.0"
+authors = ["Victor Igor <victor.0w3@gmail.com>"]
+[dependencies]
+gtk = { git = "https://github.com/gtk-rs/gtk.git", features = ["v3_16"] }
+gdk = { git = "https://github.com/gtk-rs/gdk.git", features = ["v3_16"] }

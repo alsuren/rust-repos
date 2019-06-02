@@ -1,0 +1,9 @@
+[package]
+name = "rs"
+version = "0.1.0"
+authors = [""]
+
+[dependencies]
+hyper = { version = "0.9", default-features = false }
+rustc-serialize = "*"
+sciter-rs = { git="https://github.com/pravic/rust-sciter", version="*" }

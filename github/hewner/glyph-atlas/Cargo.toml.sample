@@ -1,0 +1,24 @@
+[package]
+name = "rustgl"
+version = "0.1.0"
+authors = ["Michael Hewner <hewner@gmail.com>"]
+
+[dependencies]
+glium = "*"
+image = "*"
+serde = "*"
+serde_derive = "*"
+bincode = "*"
+nom = "^3.2"
+byteorder = "1"
+font = { path = "./font" }
+fnv = "1"
+rand = "0.3"
+
+[[bin]]
+name = "rustgl"
+path = "src/main.rs"
+
+# [[bin]] comment just to make running easier
+# name = "trigger"
+# path = "src/trigger.rs"

@@ -1,0 +1,10 @@
+[package]
+name = "ludumdare44"
+version = "0.1.0"
+authors = ["jeorb <andy.meier@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+quicksilver = "*"
+rand = "*"
+usvg = "0.4"

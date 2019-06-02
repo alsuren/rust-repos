@@ -1,0 +1,9 @@
+[package]
+name = "chat"
+version = "0.1.0"
+authors = ["norbytus <norbyt93@gmail.com>"]
+
+[dependencies]
+rmp-serialize = "*"
+rustc-serialize = "*"
+lazy-socket = { git = "https://github.com/Norbytus/lazy-socket.rs.git" }

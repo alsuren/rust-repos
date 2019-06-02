@@ -1,0 +1,24 @@
+[package]
+name = "dbg_server"
+version = "0.1.0"
+description = "Rust debugger in Rust"
+authors = ["Devin Ragotzy <devin.ragotzy@gmail.com>"]
+repository = "https://github.com/DevinR528/dbg_server.git"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+categories = ["debug", "Rust", "rust_dbg", "all rust debugger"]
+edition = "2018"
+
+[dependencies]
+dbg_ify = { package = "dbg_ify", path = "dbg_ify"}
+failure = "0.1.5"
+tokio = "0.1.20"
+futures = "0.1.27"
+failure_derive = "0.1.5"
+serde = "1.0.91"
+serde_derive = "1.0.91"
+serde_json = "1.0.39"
+bytes = "0.4.12"
+log = "0.4.6"
+regex = "1.1.6"
+lazy_static = "1.3.0"

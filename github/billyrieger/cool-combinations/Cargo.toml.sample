@@ -1,0 +1,18 @@
+[package]
+name = "cool-combinations"
+version = "0.1.0"
+authors = ["Billy Rieger <wrieger@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+arrayvec = "0.4"
+num-traits = "0.2"
+
+[dev-dependencies]
+criterion = "0.2"
+itertools = "0.8"
+permutator = "0.3"
+
+[[bench]]
+name = "bench"
+harness = false

@@ -1,0 +1,8 @@
+[package]
+name = "braillify"
+version = "0.1.0"
+authors = ["iirelu <totallymyrealemail@hush.ai>"]
+
+[dependencies]
+image = "0.14.0"
+clap = "2"

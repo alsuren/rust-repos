@@ -1,0 +1,23 @@
+[package]
+authors = ["Simon Walker <s.r.walker101@googlemail.com>"]
+categories = ["science"]
+description = "Implementation of Python's emcee affine-invariant mcmc ensemble sampler"
+documentation = "https://docs.rs/emcee"
+exclude = ["emcee-src", "python-tests"]
+homepage = "https://github.com/mindriot101/rust-emcee"
+license = "MIT"
+name = "emcee"
+readme = "README.md"
+repository = "https://github.com/mindriot101/rust-emcee"
+version = "1.0.0-alpha.2"
+
+[badges]
+
+[badges.travis-ci]
+repository = "mindriot101/rust-emcee"
+
+[dependencies]
+rand = "0.4.2"
+
+[dev-dependencies]
+assert_approx_eq = "1.0.0"

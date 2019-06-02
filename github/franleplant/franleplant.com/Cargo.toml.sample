@@ -1,0 +1,10 @@
+[package]
+name = "blog"
+version = "0.1.0"
+authors = ["Fran Guijarro <franleplant@gmail.com>"]
+
+[dependencies]
+nickel = "*"
+hyper = "*"
+chrono = "0.2"
+acme-client = "*"

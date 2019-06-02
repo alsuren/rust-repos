@@ -1,0 +1,33 @@
+[package]
+name = "rapt"
+version = "0.1.4"
+authors = ["Yurii Rashkovskii <yrashk@gmail.com>"]
+description = "Runtime application instrumentation toolkit"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/ropes-rs/rapt"
+documentation = "https://docs.rs/rapt"
+
+[dependencies]
+serde = "1.0"
+chrono = { version =  "0.4", features = ["serde"], optional = true }
+mqttc = { version = "0.1", optional = true }
+netopt = { version = "0.1", optional = true }
+serde_json = { version = "1.0", optional = true }
+
+[dev-dependencies]
+serde_derive = "1.0"
+serde_json = "1.0"
+rapt_derive = { path = "rapt_derive", version = "^0.1" }
+assert_matches = "1.1"
+
+[features]
+default = ["timestamp_instruments"]
+timestamp_instruments = ["chrono"]
+mqtt_publisher = ["mqttc"]
+
+[package.metadata.docs.rs]
+all-features = true
+dependencies = ["libssl-dev"]
+
+[workspace]
+members = [".", "rapt_derive"]

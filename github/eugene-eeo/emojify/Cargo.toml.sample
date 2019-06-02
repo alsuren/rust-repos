@@ -1,0 +1,8 @@
+[package]
+name = "emojify"
+version = "0.1.0"
+authors = ["Eeo Jun <141bytes@gmail.com>"]
+
+[dependencies]
+regex = "0.1"
+lazy_static = "0.1.*"

@@ -1,0 +1,12 @@
+[package]
+name = "game_of_life"
+version = "0.1.0"
+authors = ["birdperson-lives <rayradjr@gmail.com>", "Omar Shehata <omar.sameh.shehata@gmail.com>"]
+
+[dependencies]
+piston_window = "0.58.0"
+piston2d-gfx_graphics = "0.33.2"
+time = "0.1"
+rand = "0.3"
+find_folder = "*"
+num_cpus = "1.2.0"

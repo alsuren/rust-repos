@@ -1,0 +1,38 @@
+[package]
+name = "programacao_dinamica"
+version = "0.1.0"
+authors = ["Sekva <matheusmachado708@gmail.com>"]
+description = """
+Algoritmos implementados em rust
+"""
+
+[[bin]]
+name = "matrix_chain_top_down_mem"
+path = "src/matrix_chain_top_down_mem/main.rs"
+
+[[bin]]
+name = "matrix_chain_bottom_up"
+path = "src/matrix_chain_bottom_up/main.rs"
+
+[[bin]]
+name = "med"
+path = "src/med/main.rs"
+
+[[bin]]
+name = "troco"
+path = "src/guloso_moeda/main.rs"
+
+[[bin]]
+name = "grafo"
+path = "src/guloso_grafo_dijkstra/main.rs"
+
+[[bin]]
+name = "sudoku"
+path = "src/backtrack_sudoku/main.rs"
+
+[[bin]]
+name = "nrainhas"
+path = "src/n_rainhas_bb/main.rs"
+
+[dependencies]
+time = "*"

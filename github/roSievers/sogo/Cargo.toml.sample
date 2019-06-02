@@ -1,0 +1,12 @@
+[package]
+name = "sogo"
+version = "0.0.1"
+authors = ["Rolf Sievers <rolf.sievers@posteo.de>"]
+
+[dependencies]
+rand = "*"
+nalgebra =  "0.12.*"
+glfw = "0.8.*"
+kiss3d = "0.9.*"
+clap = "2.24.*"
+threadpool = "1.3.2"

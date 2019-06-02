@@ -1,0 +1,9 @@
+[package]
+name = "cpuid"
+version = "0.1.0"
+authors = ["Daniel Robertson <dan.robertson@anidata.org>"]
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]

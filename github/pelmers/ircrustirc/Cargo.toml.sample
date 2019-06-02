@@ -1,0 +1,12 @@
+[project]
+
+name = "ircrustirc"
+version = "0.0.1"
+authors = ["Peter Elmers <peter.elmers@yahoo.com>"]
+
+[lib]
+name = "ircrustirc"
+
+[[bin]]
+name = "debugbot"
+path = "src/examples/debug/main.rs"

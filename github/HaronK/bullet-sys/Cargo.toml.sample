@@ -1,0 +1,19 @@
+[package]
+name = "bullet-sys"
+version = "0.1.1"
+authors = ["Oleg Khryptul <okreptul@yahoo.com>"]
+build = "build.rs"
+
+[dependencies]
+
+[build-dependencies]
+cmake = "0.1.31"
+bindgen = "0.37.0"
+
+[features]
+default = []
+build = []
+bind = []
+examples = []
+ctest = []
+layout_tests = []

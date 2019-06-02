@@ -1,0 +1,10 @@
+[package]
+name = "vinegar"
+version = "0.1.0"
+authors = ["Mateusz Cegiełka <mateusz@cegla.net>"]
+
+[lib]
+name = "vinegar"
+crate-type = ["dylib"]
+
+[dependencies]

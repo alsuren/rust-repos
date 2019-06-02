@@ -1,0 +1,8 @@
+[package]
+name = "planet_defender"
+version = "0.1.0"
+authors = ["a.bozzanoschwedhel"]
+
+[dependencies]
+sdl2 = {version="0.31", features=["image"]}
+rand = "*"

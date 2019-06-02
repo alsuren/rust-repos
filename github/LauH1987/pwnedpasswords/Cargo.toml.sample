@@ -1,0 +1,9 @@
+[package]
+name = "pwnedpasswords"
+version = "0.1.0"
+authors = ["LauH1987"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.16"
+sha-1 = "0.8.1"

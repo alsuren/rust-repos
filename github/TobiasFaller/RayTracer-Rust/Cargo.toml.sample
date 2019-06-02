@@ -1,0 +1,13 @@
+[package]
+name = "ray_tracer"
+version = "0.1.0"
+authors = ["Tobias Faller <TobiasFaller@gmx.net>"]
+
+[dependencies]
+image = "0.*"
+rand = "0.*"
+vecmath = "0.*"
+log = "0.*"
+scoped_threadpool = "0.*"
+time = "0.*"
+y4m = "0.*"

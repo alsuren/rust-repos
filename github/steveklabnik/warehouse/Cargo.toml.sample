@@ -1,0 +1,12 @@
+[package]
+name = "warehouse"
+version = "0.1.0"
+authors = ["Steve Klabnik <steve@steveklabnik.com>"]
+
+[dependencies]
+iron = "0.2"
+router = "0.0.15"
+serde_json = "0.5.1"
+log = "0.3.2"
+env_logger = "0.3.1"
+persistent = "0.0.6"

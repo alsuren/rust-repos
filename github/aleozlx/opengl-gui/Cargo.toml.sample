@@ -1,0 +1,15 @@
+[package]
+name = "opengl-gui"
+version = "0.1.0"
+authors = ["Alex Yang <aleozlx@gmail.com>"]
+
+[dependencies]
+yaml-rust = "0.4"
+gl = "0.10.0"
+epoxy = "*"
+shared_library = "0.1.9"
+image = "*"
+
+[dependencies.gtk]
+version = "0.4.1"
+features = ["v3_16"]

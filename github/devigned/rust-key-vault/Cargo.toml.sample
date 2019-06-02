@@ -1,0 +1,35 @@
+[package]
+
+name = "vault"
+version = "0.0.1"
+authors = ["David Justice <david@devigned.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/devigned/rust-azure-key-vault.git"
+description = "Azure Key Vault client for Rust"
+
+[lib]
+name = "vault"
+path = "src/vault/lib.rs"
+
+[dependencies]
+log = "*"
+url = "*"
+regex = "*"
+rustc-serialize = "*"
+hyper = "*"
+
+[dependencies.rust-crypto]
+git = "https://github.com/DaGenix/rust-crypto.git"
+
+[[bin]]
+name = "vault"
+test = false
+doc = false
+
+[[test]]
+name = "tests"
+
+[[bench]]
+name = "tests"
+path = "tests/tests.rs"

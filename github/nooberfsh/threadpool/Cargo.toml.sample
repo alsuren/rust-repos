@@ -1,0 +1,12 @@
+[package]
+name = "threadpool"
+version = "0.1.0"
+authors = ["nooberfsh <nooberfsh@gmail.com>"]
+
+[dependencies]
+crossbeam-channel = "0.1"
+num_cpus = "1.8"
+log = "0.4"
+
+[dev-dependencies]
+env_logger = "0.4"

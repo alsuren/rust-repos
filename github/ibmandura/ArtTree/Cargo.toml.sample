@@ -1,0 +1,9 @@
+[package]
+name = "art"
+version = "0.1.0"
+authors = ["buda"]
+
+[dependencies]
+rustc-test = "*"
+rand = "*"
+debugit = "*"

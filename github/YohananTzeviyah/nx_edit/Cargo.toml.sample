@@ -1,0 +1,40 @@
+[package]
+name = "nx_edit"
+description = "a graphical user interface for viewing and editing NX files"
+version = "0.1.0"
+authors = ["Emmy Noether <intransigentms@gmail.com>"]
+repository = "https://bitbucket.org/NoetherEmmy/nx_edit"
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+keywords = ["nx", "editor", "viewer", "application", "gui"]
+categories = ["gui", "visualization", "games"]
+
+[dependencies]
+byteorder = "*"
+fxhash = "*"
+gdk = "*"
+gdk-pixbuf = "*"
+gio = "*"
+glib = "*"
+gtk = { version = "*", features = ["v3_22", "embed-lgpl-docs"] }
+lz4 = "*"
+nx = { path = "./nx-rs" }
+pango = "*"
+
+simplemad = "*"
+vorbis = "*"
+
+[features]
+default = []
+mp3_to_vorbis = []
+
+[profile.release]
+lto = "fat"
+panic = "abort"
+opt-level = 3
+debug = false
+debug-assertions = false
+rpath = false
+codegen-units = 1
+incremental = false
+overflow-checks = false

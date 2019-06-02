@@ -1,0 +1,9 @@
+[package]
+
+name = "deduper"
+version = "0.0.1"
+authors = ["Nate Mara <natemara@gmail.com>"]
+
+[dependencies]
+rust-crypto = "*"
+getopts = "*"

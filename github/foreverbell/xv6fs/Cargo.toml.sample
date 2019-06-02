@@ -1,0 +1,14 @@
+[package]
+name = "xv6fs"
+version = "0.1.0"
+authors = ["foreverbell <dql.foreverbell@gmail.com>"]
+
+[dependencies]
+bitflags = "1.0"
+env_logger = "0.5"
+fuse = "0.3"
+lazy_static = "1.0"
+libc = "*"
+log = "0.3"
+threadpool = "1.7"
+time = "*"

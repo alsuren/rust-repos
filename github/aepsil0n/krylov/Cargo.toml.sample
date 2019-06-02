@@ -1,0 +1,13 @@
+[package]
+name = "krylov"
+version = "0.1.0"
+authors = ["Eduard Bopp <eduard.bopp@aepsil0n.de>"]
+
+[dependencies]
+alga = "0.5"
+
+[dev-dependencies]
+nalgebra = "0.13"
+approx = "0.1"
+sprs = "0.6"
+ndarray = "0.10"

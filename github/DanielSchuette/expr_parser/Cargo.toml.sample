@@ -1,0 +1,13 @@
+[package]
+name = "expr_parser"
+version = "0.0.1"
+authors = ["DanielSchuette <d.schuette@online.de>"]
+edition = "2018"
+description = "A lexer and parser of simple arithmetic expressions."
+license = "MIT"
+repository = "https://github.com/DanielSchuette/expr_parser"
+readme = "./README.md"
+keywords = ["parser", "lexer", "ast", "interpreter", "vm"]
+
+[dependencies]
+clap = "2.32"

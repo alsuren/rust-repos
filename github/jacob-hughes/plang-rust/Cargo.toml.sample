@@ -1,0 +1,14 @@
+[package]
+name = "plang_interp"
+version = "0.1.0"
+authors = ["Jake <jacob.hughes@kcl.ac.uk>"]
+
+[lib]
+name = "plang_rust"
+path = "src/lib/mod.rs"
+
+[dependencies]
+lrlex = { git = "http://github.com/softdevteam/lrlex" }
+lrpar = { git = "http://github.com/softdevteam/lrpar" }
+lrtable = { git = "http://github.com/softdevteam/lrtable" }
+cfgrammar = { git = "http://github.com/softdevteam/cfgrammar" }

@@ -1,0 +1,11 @@
+[package]
+name = "mh"
+version = "0.1.0"
+authors = ["wayslog <wayslog@163.com>"]
+
+[dependencies]
+mio="*"
+eventual="*"
+bytes="*"
+env_logger="*"
+log="*"

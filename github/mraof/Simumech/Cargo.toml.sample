@@ -1,0 +1,37 @@
+[package]
+name = "simumech"
+version = "0.1.0"
+authors = ["mraof <mraof@mraof.com>"]
+
+[dependencies]
+# irc = {git = "https://github.com/aatxe/irc" }
+rand = "*"
+regex = { version = "*", features = ["pattern"] }
+lazy_static = "*"
+discord = {git = "https://github.com/mraof/discord-rs", default-features = false}
+retry = "*"
+mime = "0.2" #Otherwise mime_guess will use 0.1
+hyper = "*"
+hyper-tls = "*"
+# egg-mode = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+tumblr = {path = "/home/mraof/github/tumblr-rs"}
+meval = "*"
+linked-hash-map = "*"
+futures = "*"
+tokio-core = "*"
+unicode-normalization = "*"
+distance = "*"
+bincode = "*"
+byteorder = "*"
+indexmap = {version = "*", features = ["serde-1"]}
+astro = "*"
+chrono = "*"
+smallvec = "*"
+fnv = "*"
+seahash = "3"
+
+tcpgen = {git = "https://github.com/mraof/tcpgen"}
+morbitgen = {git = "https://github.com/mraof/morbitgen"}

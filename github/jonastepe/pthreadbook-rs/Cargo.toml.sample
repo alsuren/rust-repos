@@ -1,0 +1,61 @@
+[package]
+name = "pthreadbook-rs"
+version = "0.1.0"
+authors = ["Jonas Tepe <jonasprogrammer@gmail.com>"]
+
+[[bin]]
+name = "alarm"
+path = "src/alarm.rs"
+
+[[bin]]
+name = "alarm_fork"
+path = "src/alarm_fork.rs"
+
+[[bin]]
+name = "alarm_thread"
+path = "src/alarm_thread.rs"
+
+[[bin]]
+name = "alarm_mutex"
+path = "src/alarm_mutex.rs"
+
+[[bin]]
+name = "trylock"
+path = "src/trylock.rs"
+
+[[bin]]
+name = "cond"
+path = "src/cond.rs"
+
+[[bin]]
+name = "alarm_cond"
+path = "src/alarm_cond.rs"
+
+[[bin]]
+name = "pipe"
+path = "src/pipe.rs"
+
+[[bin]]
+name = "crew"
+path = "src/crew.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "barrier"
+path = "src/barrier.rs"
+
+[[bin]]
+name = "rwlock"
+path = "src/rwlock.rs"
+
+[[bin]]
+name = "workqueue"
+path = "src/workqueue.rs"
+
+[dependencies]
+libc = "0.2.11"
+rand = "0.3.14"
+

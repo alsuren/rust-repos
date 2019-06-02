@@ -1,0 +1,39 @@
+[package]
+name = "dynonym"
+version = "0.1.0-dev"
+authors = ["Tobias Stolzmann <tobias.stolzmann@gmail.com>"]
+license = "MIT"
+keywords = ["dns", "ddns", "dyndns", "http", "server", "rocket"]
+categories = ["network-programming", "web-programming::http-server"]
+description = "A minimalistic HTTP server that manages dynamic DNS records"
+readme = "README.md"
+documentation = "https://docs.rs/dynonym"
+repository = "https://github.com/teiesti/dynonym"
+
+[badges]
+travis-ci = { repository = "teiesti/dynonym" }
+
+[dependencies]
+bcrypt = "0.1"
+clap = "2"
+ctrlc = "3"
+error-chain = "0.11"
+hyper = "0.11"
+libc = "0.2"
+num_cpus = "1"
+rocket = "0.3"
+rocket_codegen = "0.3"
+rpassword = "2"
+serde = "1"
+serde_derive = "1"
+toml = "0.4"
+trust-dns = { version = "0.13", default-features = false }
+trust-dns-proto = "0.2"
+yansi = "0.3"
+
+[dev-dependencies]
+tempfile = "2"
+
+[[bin]]
+name = "dynonym"
+doc = false

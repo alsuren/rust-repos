@@ -1,0 +1,12 @@
+[package]
+name = "patcher"
+version = "0.1.0"
+authors = ["Henning Pohl <henning@still-hidden.de>"]
+
+[dependencies]
+futures = "*"
+tokio-core = "*"
+tokio-tungstenite = "*"
+tungstenite = "*"
+dotenv = "*"
+trail_publish = { path = "publish" }

@@ -1,0 +1,28 @@
+[package]
+name = "redirect"
+version = "0.1.1"
+authors = ["Christian Buehlmann <christian.buehlmann@scs.ch>"]
+description = "The swiss army knife of network redirection"
+homepage = "https://github.com/cbuehlmann/redirect"
+repository = "https://github.com/cbuehlmann/redirect"
+readme = "README.md"
+keywords = ["redirect", "proxy", "tcp", "udp", "networking", "interception", "filter"]
+categories = ["command-line-utilities", "network-programming", "proxy"]
+
+[dependencies]
+futures = "0.1"
+getopts = "0.2"
+net2 = "0.2"
+tokio-core = "0.1"
+tokio-io = "0.1"
+ns-dns-tokio = "0.3"
+abstract-ns = "0.3"
+# logging
+lazy_static = "0.2"
+log = "0.3"
+log4rs = "0.7"
+
+# Hack
+[[bin]]
+name = "redirect"
+doc = false

@@ -1,0 +1,13 @@
+[package]
+name = "guessing_game"
+version = "0.1.0"
+authors = ["Asit"]
+
+[dependencies]
+rand = "0.3.14"
+chrono = "0.4"
+time = "~0.1.39"
+
+[dependencies.ring]
+version = "~0.13.0-alpha"
+features = ["rsa_signing"]

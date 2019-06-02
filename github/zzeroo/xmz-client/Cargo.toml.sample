@@ -1,0 +1,18 @@
+[package]
+name = "xmz-client"
+version = "0.2.1"
+authors = ["Stefan Müller <s.mueller@it.kls-glt.de>"]
+documentation = "https://github.com/zzeroo/xmz-client"
+repository = "https://github.com/zzeroo/xmz-client.git"
+homepage = "https://github.com/zzeroo/xmz-client"
+license = "GPL-2"
+
+
+[dependencies]
+clap = "2.28"
+failure = "0.1"
+libmodbus-rs = "^0.8"
+
+[[bin]]
+name = "xmz-client"
+path = "src/bin/client.rs"

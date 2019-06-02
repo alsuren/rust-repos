@@ -1,0 +1,37 @@
+[package]
+name = "http_req"
+version = "0.5.0"
+license = "MIT"
+description = "simple and lightweight HTTP client with built-in HTTPS support"
+repository = "https://github.com/jayjamesjay/http_req"
+authors = ["jayjamesjay"]
+readme = "README.md"
+categories = ["web-programming::http-client", "network-programming"]
+keywords = ["http", "client", "request"]
+edition = "2018"
+
+[dependencies]
+unicase = "^2.4"
+
+[features]
+default = ["native-tls"]
+rust-tls = ["rustls", "webpki", "webpki-roots"]
+
+[dependencies.native-tls]
+version = "^0.2"
+optional = true
+
+[dependencies.rustls]
+version = "^0.15"
+optional = true
+
+[dependencies.webpki]
+version = "^0.19"
+optional = true
+
+[dependencies.webpki-roots]
+version = "^0.16"
+optional = true
+
+[badges]
+travis-ci = { repository = "jayjamesjay/http_req"}

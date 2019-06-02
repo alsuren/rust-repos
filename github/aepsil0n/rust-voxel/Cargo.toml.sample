@@ -1,0 +1,21 @@
+[package]
+name = "cube"
+version = "0.0.0"
+authors = ["Your Name <your@email.com>"]
+tags = []
+
+[[bin]]
+name = "cube"
+path = "src/main.rs"
+
+[dependencies.piston]
+git = "https://github.com/pistondevelopers/piston"
+
+[dependencies.sdl2_game_window]
+git = "https://github.com/pistondevelopers/sdl2_game_window"
+
+[dependencies.gfx]
+git = "https://github.com/gfx-rs/gfx-rs"
+
+[dependencies.itertools]
+git = "https://github.com/bluss/rust-itertools"

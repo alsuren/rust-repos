@@ -1,0 +1,17 @@
+[package]
+name = "my_os"
+version = "0.1.0"
+authors = ["aoowweenn <aoowweenn@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0"
+volatile = "*"
+spin = "*"
+multiboot2 = "*"
+
+[dependencies.itertools]
+version = "*"
+default-features = false

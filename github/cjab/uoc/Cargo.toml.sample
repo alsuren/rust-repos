@@ -1,0 +1,12 @@
+[package]
+name = "uoc"
+version = "0.0.1"
+authors = ["Chad Jablonski <chad@dinocore.net>"]
+
+[[bin]]
+name = "uoc"
+
+[dependencies]
+byteorder = "*"
+argparse = "*"
+sdl2 = "0.17"

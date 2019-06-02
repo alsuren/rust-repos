@@ -1,0 +1,19 @@
+[package]
+name = "forge"
+version = "0.1.0"
+authors = ["Gregory Mitrano <gregory.mitrano@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+failure = "*"
+ws = "*"
+
+[profile.release]
+panic = "abort"
+
+[lib]
+name = "forge"
+crate-type = ["lib", "staticlib"]
+
+[build-dependencies]
+cbindgen = "*"

@@ -1,0 +1,13 @@
+[package]
+name = "transaction"
+version = "0.1.0"
+authors = ["Felix Stegmaier <stegmaier.felix@gmail.com>"]
+
+[dependencies]
+chrono = "0.4.0"
+sha2 = "0.6.0"
+itertools = "0.6.5"
+quick-error = "1.2.1"
+clap = "2.26.2"
+rocket = "0.3.3"
+rocket_codegen = "0.3.3"

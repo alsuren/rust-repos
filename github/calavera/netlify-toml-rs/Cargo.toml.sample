@@ -1,0 +1,13 @@
+[package]
+name = "netlify_toml"
+version = "0.1.0"
+authors = ["David Calavera <david.calavera@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+description = "netlify_toml is a parser for netlify.toml files"
+homepage = "https://github.com/calavera/netlify-toml-rs"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4.9"

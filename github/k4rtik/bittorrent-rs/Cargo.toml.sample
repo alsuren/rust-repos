@@ -1,0 +1,32 @@
+[package]
+authors = ["Kartik Singhal <kartiksinghal@gmail.com>", "Sumukha TV <tvsumukha@gmail.com>"]
+build = "build.rs"
+name = "btclient"
+version = "0.1.0"
+
+[build-dependencies]
+pnet_macros = "*"
+syntex = "0.42.*"
+
+[dependencies]
+bip_bencode = "*"
+bip_metainfo = "*"
+bip_util = "*"
+bip_utracker = "*"
+chrono = "*"
+error-chain = "*"
+futures = "*"
+hyper = "*"
+log = "*"
+nom = "*"
+pnet = "*"
+pnet_macros_support = "*"
+tokio-core = "*"
+url = "*"
+
+[dependencies.pretty_env_logger]
+git = "https://github.com/seanmonstar/pretty-env-logger"
+
+[dependencies.rustyline]
+git = "https://github.com/kkawakam/rustyline"
+optional = false

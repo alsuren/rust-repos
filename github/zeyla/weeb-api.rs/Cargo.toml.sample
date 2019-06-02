@@ -1,0 +1,38 @@
+[package]
+authors = ["Mei Boudreau <xanizl@me.com>", "Zeyla Hellyer <zeyla@hellyer.dev>"]
+description = "A Rust library for the Weeb.sh API."
+documentation = "https://docs.rs/weeb_api"
+homepage = "https://github.com/zeyla/weeb-api.rs"
+license = "ISC"
+name = "weeb_api"
+readme = "README.md"
+repository = "https://github.com/zeyla/weeb-api.rs.git"
+version = "0.2.0"
+
+[dependencies]
+percent-encoding = "^1.0"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+
+[dependencies.futures]
+optional = true
+version = "~0.1"
+
+[dependencies.hyper]
+optional = true
+version = "~0.11"
+
+[dependencies.reqwest]
+optional = true
+version = "~0.8"
+
+[dev-dependencies]
+futures = "~0.1"
+hyper-tls = "~0.1"
+tokio-core = "~0.1"
+
+[features]
+default = ["reqwest-support"]
+hyper-support = ["futures", "hyper"]
+reqwest-support = ["reqwest"]

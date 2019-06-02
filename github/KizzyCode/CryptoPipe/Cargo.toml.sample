@@ -1,0 +1,13 @@
+[package]
+name = "crypto_pipe"
+version = "0.4.4"
+authors = ["KizzyCode Software Labs./Keziah Biermann"]
+build = "build.rs"
+
+[dependencies]
+etrace = "1.0.0"
+asn1_der = "0.5.5"
+cli = { git = "https://github.com/KizzyCode/cli" }
+
+[build-dependencies]
+pkg-config = "0.3.13"

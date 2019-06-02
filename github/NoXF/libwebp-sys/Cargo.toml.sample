@@ -1,0 +1,19 @@
+[package]
+
+name = "libwebp-sys"
+version = "0.2.0"
+authors = [ "XianYou <xianyou.cyq@alibaba-inc.com>", "Kornel Lesiński <kornel@geekhood.net>" ]
+keywords = [ "WebP", "Image", "Codec", "Decoder", "Encoder" ]
+description = "Bindings to libwebp (bindgen, static linking)"
+license = "MIT"
+readme = "README.md"
+build = "build.rs"
+homepage = "https://github.com/NoXF/libwebp-sys"
+repository = "https://github.com/NoXF/libwebp-sys"
+
+[build-dependencies]
+cc = "1.0.25"
+
+[features]
+default = ["parallel"]
+parallel = ["cc/parallel"]

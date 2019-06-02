@@ -1,0 +1,13 @@
+[package]
+name    = "RuNES"
+version = "0.0.1"
+license = "MIT"
+authors = ["Darryl Ring <darryl@darrylring.com>"]
+description = "NES emulator and debugger in Rust"
+homepage = "https://github.com/darrylring/RuNES"
+repository = "https://github.com/darrylring/RuNES"
+readme = "README.md"
+
+[dependencies]
+bitflags = "0.9.1"
+minifb = "0.9.0"

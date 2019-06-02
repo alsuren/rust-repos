@@ -1,0 +1,12 @@
+[package]
+name    = "copperas"
+version = "0.1.0"
+authors = ["Vladimir Bogaevsky <vbogaevsky@gmail.com>"]
+
+[dependencies]
+gfx          = "0.17.1"
+nalgebra-glm = "0.2.0"
+serde        = "1.0.80"
+serde_derive = "1.0.80"
+toml         = "0.4.8"
+winit        = "0.18.0"

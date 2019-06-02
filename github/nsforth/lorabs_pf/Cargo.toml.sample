@@ -1,0 +1,11 @@
+[package]
+name = "lorabs_pf"
+version = "0.1.0"
+authors = ["Nikita Staroverov <nsforth@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_repr = "0.1"
+serde_json = "1.0"

@@ -1,0 +1,17 @@
+[package]
+name = "lcms-prime"
+version = "0.1.0"
+authors = ["cpsdqs <cpsdqs@gmail.com>"]
+license = "MIT"
+description = "ICC color management library"
+keywords = ["color management"]
+categories = ["multimedia", "encoding"]
+edition = "2018"
+
+[dependencies]
+bitflags = "1.0"
+byteorder = "1.2"
+cgmath = "0.16"
+enum-primitive-derive = "0.1"
+time = "0.1"
+libc = "0.2"

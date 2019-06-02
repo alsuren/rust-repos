@@ -1,0 +1,9 @@
+[package]
+edition = "2018"
+name = "chip8rs"
+version = "0.1.0"
+authors = ["Vincent Lee <vincent.lee@outlook.com>"]
+
+[dependencies]
+rand = "^0.6"
+sdl2 = "^0.32"

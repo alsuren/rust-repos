@@ -1,0 +1,8 @@
+[package]
+name = "worldmap-rs"
+version = "0.1.0"
+authors = ["Tibor Nagy <xnagytibor@gmail.com>"]
+
+[dependencies]
+minifb = "0.10.4"
+image = "0.18.0"

@@ -1,0 +1,11 @@
+[package]
+name = "rust-in-action"
+version = "0.1.0"
+authors = ["hkdnet <satoko.itse@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+"rand" = "0.6"
+"rand_pcg" = "0.1"
+rayon = "1.0"
+num_cpus = "1.8"

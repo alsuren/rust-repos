@@ -1,0 +1,8 @@
+[package]
+name = "rgsl-plot"
+version = "0.1.0"
+authors = ["critiqjo <john.ch.fr@gmail.com>"]
+
+[dependencies]
+GSL = "0.4.23"
+gnuplot = "0.0.17"

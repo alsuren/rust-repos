@@ -1,0 +1,17 @@
+[package]
+authors = ["Jerry Tegno <jerrytegno@gmail.com>"]
+edition = "2018"
+name = "cl-fetch"
+version = "0.2.0"
+
+[dependencies]
+clap = "2.33.0"
+lazy_static = "1.3.0"
+rayon = "1.0.3"
+regex = "1.1.6"
+reqwest = "0.9.16"
+select = "0.4.2"
+
+[dependencies.rusqlite]
+features = ["bundled"]
+version = "0.18.0"

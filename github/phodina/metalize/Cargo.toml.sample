@@ -1,0 +1,13 @@
+[package]
+name = "metalize"
+version = "0.1.0"
+authors = ["cylon <cylon@openmailbox.org>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[build-dependencies]
+moz-cheddar = "0.4.0"
+
+[dependencies]
+libc = "*"

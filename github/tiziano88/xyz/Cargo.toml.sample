@@ -1,0 +1,8 @@
+[package]
+name = "xyz"
+version = "0.1.0"
+authors = ["Tiziano Santoro <tiziano88@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+termion = "1.0"

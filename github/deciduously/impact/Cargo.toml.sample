@@ -1,0 +1,17 @@
+[package]
+name = "impact"
+version = "0.1.0"
+authors = ["deciduously <github@deciduously.com>"]
+
+[[bin]]
+name = "impact"
+path = "src/main.rs"
+
+[lib]
+name = "impact"
+path = "src/lib.rs"
+
+[dependencies]
+
+stdweb = "0.4"
+yew = { git = "https://github.com/DenisKolodin/yew" }

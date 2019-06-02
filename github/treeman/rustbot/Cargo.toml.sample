@@ -1,0 +1,17 @@
+[package]
+
+name = "rustbot"
+version = "0.0.1"
+authors = ["Jonas Hietala <mail@Jonashietala.se>"]
+
+[dependencies.time]
+
+git = "https://github.com/rust-lang/time"
+
+[dependencies.timeedit]
+
+git = "https://github.com/treeman/libtimeedit"
+
+[dependencies.mi_insults]
+
+git = "https://github.com/treeman/mi_insults"

@@ -1,0 +1,10 @@
+[package]
+name = "stl"
+version = "0.1.0"
+authors = ["waved"]
+
+[dependencies]
+nom = "^3.2"
+
+[dev-dependencies]
+glium = "*"

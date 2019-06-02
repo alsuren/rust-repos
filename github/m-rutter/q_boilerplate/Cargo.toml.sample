@@ -1,0 +1,13 @@
+[package]
+name = "q_boilerplate"
+version = "0.1.0"
+authors = ["Michael Rutter <michael.john.rutter@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2.15"
+git2 = "0.8.0"
+tera = "0.11.20"
+include_dir = "0.2.1"
+heck = "0.3.1"
+

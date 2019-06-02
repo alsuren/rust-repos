@@ -1,0 +1,10 @@
+[package]
+name = "reef"
+version = "0.1.0"
+authors = ["Michael Nitschinger <michael@nitschinger.at>"]
+license = "Apache-2.0"
+
+[dependencies]
+chrono = "0.2.22"
+bit-vec = "0.4.3"
+linked-list = "0.0.3"

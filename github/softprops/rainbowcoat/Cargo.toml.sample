@@ -1,0 +1,18 @@
+[package]
+name = "rainbowcoat"
+version = "0.1.0"
+authors = ["softprops <d.tangren@gmail.com>"]
+readme = "README.md"
+description = "Adds rainbows over writers"
+documentation = "https://softprops.github.io/rainbowcoat"
+homepage = "https://github.com/softprops/rainbowcoat"
+repository = "https://github.com/softprops/rainbowcoat"
+keywords = ["lolcat", "rainbows", "rainbow"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "softprops/rainboatcoat" }
+coveralls = { repository = "softprops/rainboatcoat" }
+
+[dependencies]
+ ansi_term = "0.9"

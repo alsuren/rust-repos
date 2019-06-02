@@ -1,0 +1,55 @@
+[package]
+name = "openfairdb"
+version = "0.5.4"
+authors = ["Markus Kohlhase <mail@markus-kohlhase.de>", "slowtec GmbH <post@slowtec.de>"]
+keywords = ["geo", "fair", "sustainability"]
+homepage = "https://github.com/slowtec/openfairdb"
+repository = "https://github.com/slowtec/openfairdb"
+license = "AGPL-3.0-or-later"
+edition = "2018"
+
+[patch.crates-io]
+geocoding = { git = "https://github.com/georust/geocoding" }
+
+[dependencies]
+chrono = "*"
+# clap 3 is supposed to introduce breaking changes
+clap = "2"
+csv = "*"
+diesel = { version = "*", features = ["sqlite", "r2d2"] }
+diesel_migrations = { version = "*", features = ["sqlite"]  }
+dotenv = "*"
+env_logger = "*"
+failure = "*"
+fast_chemail = "*"
+geocoding = "*"
+itertools = "*"
+lazy_static = "*"
+log = "*"
+num-derive = "*"
+num-traits = "*"
+maud = { version = "*", optional = true, features = ["rocket"] }
+openssl = { version = "*", features = ["vendored"] }
+owning_ref = "*"
+passwords = "*"
+pwhash = "*"
+quick-error = "*"
+quoted_printable = { version = "*", optional = true }
+regex = "*"
+rocket = "*"
+rocket_contrib = "*"
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+slug = "*"
+tantivy = "0.9"
+toml = "*"
+url = "*"
+uuid = { version = "*", features = ["v4"] }
+
+[dev-dependencies]
+rand = "*"
+
+[features]
+default = ["email","frontend"]
+email = ["quoted_printable"]
+frontend = ["maud"]

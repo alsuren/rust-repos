@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "yardi",
+    "yardi-derive",
+    "bind_harness",
+    "test_asset",
+]
+exclude = ["codegen", "fuzz"]

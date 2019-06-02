@@ -1,0 +1,18 @@
+[package]
+name = "xdg-user-macros"
+version = "0.1.1"
+authors = ["Joseph R. Quinn <quinn.josephr@protonmail.com>"]
+description = """
+A set of macros to aid in user-focused development using the XDG standard user home directories.
+"""
+homepage = "https://github.com/quinnjr/xdg-home-macros"
+keywords = ["xdg", "directory", "macro", "macros"]
+license = "ISC"
+categories = ["filesystem"]
+
+[badges]
+travis-ci = { repository = "quinnjr/xdg-user-macros", branch = "master" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+libc = "0.2.40"

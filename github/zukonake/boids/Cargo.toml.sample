@@ -1,0 +1,9 @@
+[package]
+name = "boids-rs"
+version = "0.1.0"
+authors = ["zukonake <zukonake@protonmail.com>"]
+
+[dependencies]
+rand = "0.3"
+cgmath = "0.15.0"
+glium = "*"

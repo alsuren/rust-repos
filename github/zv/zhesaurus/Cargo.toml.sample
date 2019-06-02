@@ -1,0 +1,20 @@
+[package]
+name = "zhesaurus"
+version = "0.1.0"
+repository = "https://github.com/zv/zhesaurus"
+keywords = ["gtk", "thesaurus"]
+authors = ["Zephyr Pellerin <zv@nxvr.org>"]
+license = "GPL-3.0+"
+description = "A Thesaurus"
+
+[dependencies]
+glib = "^0"
+gtk = "^0"
+gdk = "^0"
+log = "^0"
+html5ever = "*"
+hyper = "*"
+env_logger = "^0"
+
+[[bin]]
+name = "zhesaurus"

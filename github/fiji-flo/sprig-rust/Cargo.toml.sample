@@ -1,0 +1,18 @@
+[package]
+name = "sprig"
+version = "0.1.1"
+authors = ["Florian Merz <flomerz@gmail.com>"]
+description = "Template functions for Go templates for Rust"
+license = "MIT"
+repository = "https://github.com/fiji-flo/sprig-rust"
+documentation = "https://docs.rs/crate/sprig"
+keywords = ["golang", "template", "templating", "sprig"]
+readme = "README.md"
+include = ["Cargo.toml", "src/**/*.rs", "README.md", "LICENSE"]
+
+[dependencies]
+gtmpl = "0.5"
+gtmpl_value = "0.3"
+data-encoding = "2.0"
+itertools = "0.7"
+rand = "0.5"

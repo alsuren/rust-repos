@@ -1,0 +1,10 @@
+[package]
+name = "chatde-rs"
+version = "0.1.0"
+authors = ["LFalch <lucas@wasd.dk>"]
+
+[dependencies.delta-l]
+git = "https://github.com/LFalch/delta-l"
+tag = "v2.4.0"
+[dependencies.getopts]
+version = "0.2.14"

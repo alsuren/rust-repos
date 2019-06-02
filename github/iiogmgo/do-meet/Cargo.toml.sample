@@ -1,0 +1,8 @@
+[package]
+name = "domeet"
+version = "0.1.0"
+authors = ["aeyeong <iiogmgo@ridi.com>"]
+
+[dependencies]
+slack = "0.21.0"
+rand = "0.5.5"

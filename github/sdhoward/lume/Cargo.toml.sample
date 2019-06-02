@@ -1,0 +1,11 @@
+[package]
+name = "lume"
+version = "0.1.0"
+
+[dependencies]
+websocket = "0.12.2"
+time = "0.1"
+
+[lib]
+name = "lume"
+crate-type = ["rlib", "dylib"]

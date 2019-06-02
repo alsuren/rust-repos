@@ -1,0 +1,14 @@
+[package]
+
+name = "p150mod"
+version = "0.1.0"
+authors = ["Robert Straw <drbawb@fatalsyntax.com>"]
+
+[dependencies]
+log = "*"
+plugin = "*"
+rustc-serialize = "*"
+typemap = "*"
+
+[dependencies.nickel]
+git = "https://github.com/nickel-org/nickel.rs"

@@ -1,0 +1,9 @@
+[package]
+name = "warbler"
+version = "0.1.0"
+authors = ["rap2hpoutre <raphaelht@gmail.com>"]
+
+[dependencies]
+hyper = "0.9"
+xml-rs = "0.3"
+time = "0.1"

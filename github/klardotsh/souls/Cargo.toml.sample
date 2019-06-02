@@ -1,0 +1,23 @@
+[package]
+name = "souls"
+version = "0.1.0"
+authors = ["Josh Klar <j@iv597.com>"]
+
+[dependencies]
+base64 = "0.4"
+notify = "4.0"
+redis = "0.5"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+tar = "0.4"
+
+[dependencies.chrono]
+version = "0.3"
+default-features = false
+features = ["serde"]
+
+[dependencies.toml]
+version = "0.3"
+default-features = false
+features = ["serde"]

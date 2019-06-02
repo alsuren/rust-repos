@@ -1,0 +1,19 @@
+[package]
+authors = ["MaidSafe Developers <dev@maidsafe.net>"]
+description = "Discover other instances of your application on the local network."
+documentation = "http://maidsafe.net/service_discovery/latest"
+homepage = "http://maidsafe.net"
+license = "GPL-3.0"
+name = "service_discovery"
+readme = "README.md"
+repository = "https://github.com/maidsafe/service_discovery"
+version = "0.3.0"
+
+[dependencies]
+clippy = {version = "~0.0.45", optional = true}
+log = "~0.3.5"
+maidsafe_utilities = "~0.4.0"
+mio = "~0.5.0"
+rand = "~0.3.14"
+rustc-serialize = "~0.3.18"
+void = "~1.0.1"

@@ -1,0 +1,26 @@
+[package]
+name = "frust"
+version = "0.1.0"
+authors = ["Andrew Tuliszewski <defpearlpilot@yahoo.com>"]
+
+[dependencies]
+num = "0.1.27"
+iron = "0.5.1"
+mime = "0.2.3"
+router = "0.5.1"
+urlencoded = "0.5.0"
+image = "0.13.0"
+crossbeam = "0.2.8"
+postgres = { version = "0.15", features = ["with-chrono"] }
+itertools = "0.7"
+rocket = "0.4.0-rc.2"
+rocket_cors = "0.4.0-rc.2"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+serde_json = "1.0.33"
+chrono = { version = "0.4", features = ["serde"] }
+
+[dependencies.rocket_contrib]
+version = "0.4.0-rc.2"
+default-features = false
+features = ["json"]

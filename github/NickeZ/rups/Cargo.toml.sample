@@ -1,0 +1,31 @@
+[package]
+authors = ["Niklas Claesson <nicke.claesson@gmail.com>"]
+description = "Rust Process Server lets you connect to your processes via telnet.It is heavily inspired by procServ."
+homepage = "https://github.com/NickeZ/rups"
+name = "rups"
+repository = "https://github.com/NickeZ/rups"
+version = "0.1.0"
+
+[dependencies]
+byteorder = "1.0"
+clap = "2.20"
+env_logger = "0.3"
+fd = "0.2"
+futures = "0.1"
+libc = "0.2"
+log = "0.3"
+mio = "0.6"
+slab = "0.3"
+termios = "0.2"
+time = "0.1"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-signal = "0.1"
+tokio-timer = "0.1"
+bytes = "0.4"
+tokio-file-unix = "0.4"
+pty = {path = "pty"}
+rust-telnet = {path = "rust-telnet"}
+futures-addition = {path = "futures-addition"}
+
+[workspace]

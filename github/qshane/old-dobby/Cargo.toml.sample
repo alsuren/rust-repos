@@ -1,0 +1,11 @@
+[package]
+name = "dobby"
+version = "0.2.0"
+authors = [ "shane@quibs.org" ]
+
+[dependencies.peg]
+git = "https://github.com/kevinmehall/rust-peg.git"
+
+[dependencies.http]
+git = "https://github.com/chris-morgan/rust-http.git"
+

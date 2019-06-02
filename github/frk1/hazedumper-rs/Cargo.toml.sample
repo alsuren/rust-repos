@@ -1,0 +1,41 @@
+[package]
+name = "hazedumper"
+version = "2.4.1"
+authors = ["frk <hazefrk+dev@gmail.com>"]
+build = "build.rs"
+edition = "2018"
+
+[package.metadata.winres]
+ProductName = "HazeDumper"
+CompanyName = "Haze-Productions"
+OriginalFilename = "hazedumper.exe"
+LegalCopyright = "MIT-License"
+
+[dependencies]
+serde = "1.0.91"
+serde_json = "1.0.39"
+serde_derive = "1.0.91"
+structopt = "0.2.16"
+structopt-derive = "0.2.16"
+winapi = "0.3.7"
+log = "0.4.6"
+simplelog = "0.5.3"
+failure = "0.1.5"
+regex = "1.1.6"
+chrono = { version = "0.4.6", features = ["serde"] }
+serde_yaml = "0.8.9"
+toml = "0.5.1"
+nom = "4.2.3"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.7", features = ["basetsd","handleapi","memoryapi","minwindef","ntdef","processthreadsapi","tlhelp32","winnt", "wow64apiset"] }
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1.9"
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
+codegen-units = 1
+panic = "abort"

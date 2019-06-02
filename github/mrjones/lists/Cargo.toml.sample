@@ -1,0 +1,18 @@
+[package]
+name = "lists"
+version = "0.1.0"
+authors = ["Matt Jones <jonesmr@gmail.com>"]
+
+[dependencies]
+chrono = "*"
+handlebars-iron = "*"
+hyper = "*"
+kuchiki = "*"
+mysql = "*"
+protobuf = "*"
+protobuf-json = "*"
+regex = "*"
+rustful = "*"
+rustc-serialize = "*"
+url = "*"
+websocket = "*"

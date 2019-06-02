@@ -1,0 +1,22 @@
+[package]
+name = "gorrosion-gtp"
+version = "0.4.1"
+authors = ["Peter Fürstenau <fuerstenau@mathematik.tu-darmstadt.de>"]
+description = "A best-effort strongly typed interface between Rust and GTP, the Go Text Protocoll"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/fuerstenau/gorrosion-gtp"
+keywords = ["Go", "baduk", "weiqi", "GTP", "protocoll"]
+categories = ["game-engines", "parser-implementations", "encoding"]
+documentation = "https://docs.rs/gorrosion-gtp"
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--document-private-items"]
+
+[badges]
+travis-ci = { repository = "fuerstenau/gorrosion-gtp", branch = "master" }
+coveralls = { repository = "fuerstenau/gorrosion-gtp", branch = "master", service = "github" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+nom = { version = "^4.1" }

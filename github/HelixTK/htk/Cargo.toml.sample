@@ -1,0 +1,11 @@
+[package]
+name = "htk"
+version = "0.1.0"
+authors = ["Vincent Burns <discoloda@gmail.com>"]
+
+[dependencies]
+num = "0.1.*"
+shared_library = "0.1.4"
+smallvec = "*"
+byteorder = "0.5"
+winit = "0.5"

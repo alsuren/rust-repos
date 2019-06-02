@@ -1,0 +1,13 @@
+[package]
+name = "ashring"
+version = "0.0.1"
+authors = ["Félix Saparelli <felix@passcod.name>"]
+
+[dependencies]
+fuse = "0.2"
+msgpack = "0.1"
+openssl = "0.2"
+rust-crypto = "0.2"
+secrets = "0.9"
+time = "0.1"
+xxhash = "0.0"

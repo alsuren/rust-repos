@@ -1,0 +1,23 @@
+[package]
+name = "fritzbox_logs"
+version = "0.2.0"
+authors = ["mexus <gilaldpellaeon@gmail.com>"]
+description = "A fritz-box logs parsing library"
+license = "LGPL-3.0"
+readme = "README.md"
+keywords = ["fritzbox"]
+repository = "https://github.com/mexus/fritzbox-logs"
+documentation = "https://docs.rs/fritzbox_logs/"
+
+[badges]
+travis-ci = { repository = "mexus/fritzbox-logs", branch = "master" }
+maintenance = { status = "experimental" }
+
+[dependencies]
+chrono = "0.4"
+regex = "0.2"
+lazy_static = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+log = "0.3"
+quick-error = "1.2.1"

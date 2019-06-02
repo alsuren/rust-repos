@@ -1,0 +1,9 @@
+[package]
+name = "blimey"
+version = "0.1.0"
+authors = ["Nathan Lilienthal <nathan@nixpulvis.com>"]
+
+[workspace]
+
+[dependencies]
+blimey_macros = { path = 'blimey_macros' }

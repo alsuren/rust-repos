@@ -1,0 +1,16 @@
+[package]
+name = "lapstrake"
+version = "0.1.0"
+authors = ["e-matteson <e.r.matteson@gmail.com>"]
+
+[dependencies]
+
+svg = "^0.5.10"
+csv = "1"
+nalgebra = "0.13"
+serde = "1"
+serde_derive = "1"
+structopt = "0.2"
+
+scad-dots = {git = "https://github.com/e-matteson/scad-dots.git"}
+scad-dots-derive = { git = "https://github.com/e-matteson/scad-dots-derive.git" }

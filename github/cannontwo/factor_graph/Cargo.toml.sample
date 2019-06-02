@@ -1,0 +1,11 @@
+[package]
+authors = ["cannon <cannon10100@gmail.com>"]
+name = "factor_graph"
+version = "0.1.0"
+[[bin]]
+doc = false
+name = "factor_graph"
+
+[dependencies]
+dot = "0.1.2"
+getopts = "0.2.15"

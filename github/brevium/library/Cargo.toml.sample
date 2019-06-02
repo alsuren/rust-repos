@@ -1,0 +1,19 @@
+[package]
+name = "library"
+version = "0.1.0"
+authors = ["Jeffrey <jeffreyvanhoven@gmail.com>"]
+
+[lib]
+name = "library"
+path = "src/lib.rs"
+
+[dependencies]
+clap = "*"
+time = "0.1.39"
+tempfile = { git = "https://github.com/Stebalien/tempfile", branch = "master" }
+dialoguer = "0.1.0"
+diesel = { version = "1.2.0", features = ["sqlite"] }
+dotenv = "0.10"
+
+[dev-dependencies]
+assert_cli = "0.5.4"

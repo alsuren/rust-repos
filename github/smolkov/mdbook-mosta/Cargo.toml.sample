@@ -1,0 +1,26 @@
+[package]
+name = "mdocs"
+version = "0.4.1"
+authors = ["Sascha Smokov"]
+publish = false
+
+[dependencies]
+clap = "2.32.0"
+chrono = "0.4.6"
+env_logger = "0.5.13"
+iron = "0.6.0"
+log = "0.4.5"
+mdbook = { git = "https://github.com/badboy/mdBook", branch = "fix-section-numbering" }
+open = "1.2.2"
+staticfile = "0.5.0"
+ws = "0.7.8"
+notify = "4.0"
+pulldown-cmark = "0.1.2"
+pulldown-cmark-to-cmark = "1.1.0"
+
+# Add mermaid renderer 
+[dependencies.mdbook-mermaid]
+git = "https://github.com/badboy/mdbook-mermaid"
+
+[dependencies.mdbook-toc]
+git = "https://github.com/badboy/mdbook-toc"

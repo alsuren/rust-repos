@@ -1,0 +1,20 @@
+[package]
+name = "serde_scan"
+version = "0.3.2"
+authors = ["tinaun <tinagma@gmail.com>"]
+
+description = "easily deserialize values from standard input"
+documentation = "https://docs.rs/serde_scan"
+repository = "https://github.com/tinaun/serde_scan"
+readme = "README.md"
+
+keywords = ["serde", "serialize", "deserialize", "scanf"]
+categories = ["encoding"]
+
+license = "MIT/Apache-2.0"
+
+[dependencies]
+serde = "1.0"
+
+[dev-dependencies]
+serde_derive = "1.0"

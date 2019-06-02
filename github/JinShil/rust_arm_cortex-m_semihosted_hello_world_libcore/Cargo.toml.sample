@@ -1,0 +1,11 @@
+[package]
+name = "rust_arm_cortex-m_semihosted_hello_world_libcore"
+version = "0.1.0"
+authors = ["mike"]
+
+[dependencies]
+core = { path = "rust/src/libcore" }
+
+[profile.release]
+panic = "abort"
+lto = true         # Reduces code size

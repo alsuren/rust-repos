@@ -1,0 +1,25 @@
+[package]
+name = "md_grid"
+version = "0.1.0"
+authors = ["Michail Denchev <mdenchev@users.noreply.github.com>"]
+edition = "2018"
+description = "A simple library for storing and iterating through data in a rectangular grid."
+repository = "https://github.com/mdenchev/md_grid"
+keywords = ["grid"]
+license = "MIT-0"
+
+[lib]
+name = "grid"
+path = "src/lib.rs"
+
+[features]
+default = []
+
+prettytable = ["prettytable-rs"]
+
+[dependencies]
+prettytable-rs = { version = "0.8", optional = true }
+
+[[example]]
+name = "simple_grid"
+required-features = ["prettytable"]

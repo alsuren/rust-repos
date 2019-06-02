@@ -1,0 +1,14 @@
+[package]
+name = "valuestreams"
+version = "0.1.0"
+authors = ["ibrahim.dursun <ibrahim.dursun@gmail.com>"]
+
+[lib]
+name = "valuestreams"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mymain"
+path = "src/main.rs"
+
+[dependencies]

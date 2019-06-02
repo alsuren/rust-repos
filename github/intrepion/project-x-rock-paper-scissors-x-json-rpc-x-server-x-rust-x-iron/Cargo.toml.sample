@@ -1,0 +1,11 @@
+[package]
+authors = ["Oliver Forral <intrepion@gmail.com>"]
+description = "JSON-RPC Rock Paper Scissors Rust Iron server"
+license = "MIT"
+name = "project-x-rock-paper-scissors-x-json-rpc-x-server-x-rust-x-iron"
+readme = "README.md"
+repository = "https://github.com/intrepion/project-x-rock-paper-scissors-x-json-rpc-x-server-x-rust-x-iron"
+version = "0.1.0"
+
+[dependencies]
+iron = "0.4.0"

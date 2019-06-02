@@ -1,0 +1,11 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["gamer"]
+
+[dependencies]
+rand="0.3.*"
+
+[[bin]]
+name = "rust"
+path = "src/main.rs"

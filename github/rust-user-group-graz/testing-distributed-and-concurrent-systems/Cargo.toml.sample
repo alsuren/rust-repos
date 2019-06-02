@@ -1,0 +1,11 @@
+[package]
+name = "rust-testing"
+version = "0.1.0"
+authors = ["davidf <dforsten@gmail.com>"]
+
+[lib]
+
+[dependencies]
+
+[dev-dependencies]
+proptest = "0.7.1"

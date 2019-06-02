@@ -1,0 +1,12 @@
+[package]
+name = "roach"
+version = "0.2.0"
+description = "Scrapes HTML for links of interest"
+license = "MIT"
+repository = "https://github.com/sketchet/roach"
+readme = "README.md"
+authors = ["daylen <daylen@protonmail.com>"]
+
+[dependencies]
+hyper = "0.9.10"
+regex = "0.1"

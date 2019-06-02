@@ -1,0 +1,35 @@
+[package]
+name = "aeterno"
+version = "0.1.0"
+authors = ["Levente Kurusa <lkurusa@acm.org>"]
+
+[[bin]]
+name = "aeterno-init"
+path = "src/init.rs"
+
+[[bin]]
+name = "aeterno-sys"
+path = "src/sys.rs"
+
+[[bin]]
+name = "aeterno-master"
+path = "src/master.rs"
+
+[[bin]]
+name = "aeterno-default-slave"
+path = "src/default_slave.rs"
+
+[features]
+default = []
+local-testing = []
+
+[dependencies]
+nix = "0.11.0"
+log = "0.4.6"
+env_logger = "0.5.13"
+lazy_static = "1.2.0"
+toml = "0.4.8"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+bincode = "1.0.1"
+uuid = { version =  "0.7", features = ["serde", "v4"] }

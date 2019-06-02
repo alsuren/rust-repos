@@ -1,0 +1,9 @@
+[package]
+name = "validate-commit"
+version = "0.2.1"
+authors = ["Hugo Laloge <hugo.laloge@gmail.com>"]
+license = "GPL-3.0-only"
+
+[dependencies]
+failure = "^0.1"
+termcolor = "0.3"

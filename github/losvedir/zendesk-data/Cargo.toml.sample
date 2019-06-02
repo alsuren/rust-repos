@@ -1,0 +1,19 @@
+[package]
+name = "zendesk_data"
+version = "0.0.1"
+authors = [ "Gabe Durazo <gabe@durazo.us>" ]
+
+[[bin]]
+name = "zendesk_data"
+
+[dependencies.csv]
+version = "*"
+
+[dependencies.regex]
+version = "*"
+
+[dependencies.rustc-serialize]
+version = "*"
+
+[dependencies.xml-rs]
+version = "*"

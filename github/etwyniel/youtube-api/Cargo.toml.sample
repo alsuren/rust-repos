@@ -1,0 +1,8 @@
+[package]
+name = "youtube_api"
+version = "0.1.0"
+authors = ["Aymeric Beringer <aymeric@beringer.cf>"]
+
+[dependencies]
+openssl = "0.10.4"
+serde_json = "1.0.9"

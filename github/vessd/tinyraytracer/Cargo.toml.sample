@@ -1,0 +1,13 @@
+[package]
+name = "tinyraytracer"
+version = "0.1.0"
+authors = ["Sergey Veselkov <veselkovsd@yandex.ru>"]
+edition = "2018"
+
+[dependencies]
+png = "0.14.0"
+
+[profile.release]
+opt-level = 2
+lto = true
+panic = 'abort'

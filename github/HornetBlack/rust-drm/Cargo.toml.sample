@@ -1,0 +1,36 @@
+[package]
+name = "drm"
+version = "0.1.0"
+authors = ["Tristram Healy <trissylegs@gmail.com>"]
+ 
+description = "A rust library for using the Linux Kernel's DRM and KMS Api."
+
+repository = "https://www.github.com/HornetBlack/rust-drm"
+readme = "README.md"
+keywords = ["linux", "drm", "kms", "graphics"]
+categories = ["api-bindings", "os::unix-apis"]
+license = "Apache-2.0"
+license-file = "LICENSE"
+
+# I have a lot of junk lying around. cargo-package does not like them.
+include = [
+    "Cargo.toml",
+    "src/**/*.rs",
+    "tests/**/*.rs",
+    "examples/*.rs",
+    "LICENCE",
+    "README.md",
+    "ioctl_vals.c",
+]
+
+[dependencies]
+libc = "0.2"
+bitflags = "0.7"
+memmap = "0.5"
+futures = { version = "0.1", optional = true }
+tokio-core = { version = "0.1", optional = true }
+mio = { version = "0.6", optional = true }
+
+[features]
+default = []
+tokio = ["futures", "tokio-core", "mio"]

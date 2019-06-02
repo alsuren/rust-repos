@@ -1,0 +1,11 @@
+[package]
+name = "gam"
+version = "0.0.1"
+authors = ["sbaugh","abuss"]
+
+[dependencies]
+rand = "0.3"
+getopts = "0.2"
+
+[dependencies.sysfs_gpio]
+git = "https://github.com/marjakm/rust-sysfs-gpio"

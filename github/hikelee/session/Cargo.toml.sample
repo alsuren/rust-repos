@@ -1,0 +1,24 @@
+[package]
+name = "session"
+version = "0.1.8"
+authors = ["Hike Li <hikelee@gmail.com>"]
+description = "iron session implementation based on redis"
+repository = "https://github.com/hikelee/session"
+license = "MIT"
+
+[lib]
+name = "session"
+path = "src/lib.rs"
+
+[dependencies]
+r2d2="0.7"
+r2d2_redis="0.3"
+redis="0.5"
+bincode = "0.5"
+rand="0.3"
+iron="0.4"
+rustc-serialize = "0.3"
+log="0.3"
+[dependencies.cookie]
+version = "0.2"
+features = ["secure"]

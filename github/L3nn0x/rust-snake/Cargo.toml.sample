@@ -1,0 +1,9 @@
+[package]
+name = "snake-game"
+version = "0.1.0"
+authors = ["L3nn0x <dragon83.super@gmail.com>"]
+
+[dependencies]
+piston_window = "*"
+rand = "*"
+find_folder = "*"

@@ -1,0 +1,14 @@
+[package]
+name = "raven"
+version = "0.1.0"
+authors = ["wayslog <wayslog@163.com>"]
+
+[[bin]]
+name="ravend"
+path="bin/raven.rs"
+
+[lib]
+name="libraven"
+path="src/lib.rs"
+
+[dependencies]

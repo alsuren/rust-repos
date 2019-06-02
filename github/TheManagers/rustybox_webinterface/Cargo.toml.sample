@@ -1,0 +1,49 @@
+[package]
+name = "rbox"
+version = "0.1.0"
+authors = ["devOp1 <devOp1@github.com>"]
+
+[dependencies]
+iron = "0.5.1"
+router = "0.5.1"
+mount = "0.3.0"
+persistent = "0.3.0"
+staticfile = "0.4.0"
+params = "0.6.0"
+iron-sessionstorage = "0.6.6"
+urlencoded = "0.5.0"
+url = "1.0"
+oauth2 = "1.2.1"
+reqwest = "0.6.0"
+
+
+r2d2 = "0.8.0"
+r2d2_mongodb = { git = "https://github.com/devOp1/r2d2-mongodb" }
+bson = "0.10.0"
+mongodb = "0.3.7"
+
+
+handlebars-iron = "0.24.1"
+
+serde = "1.0.7"
+serde_json = "1.0.2"
+serde_derive = "1.0.7"
+
+rust-crypto = "0.2.36"
+
+time = "0.1"
+
+chrono = { version = "0.3", features = ["serde", "rustc-serialize"] }
+
+diff = "0.1.10"
+
+log = "0.3"
+fern = "0.4"
+
+envy = "0.3"
+lazy_static = "0.2.8"
+wither = "0.5.0"
+validator = "0.6.3"
+
+[features]
+integration_tests = []

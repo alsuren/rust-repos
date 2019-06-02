@@ -1,0 +1,9 @@
+[package]
+authors = ["Jack Mott"]
+name = "rust-gl-stats"
+version = "1.0.0"
+
+[dependencies]
+gl = "0.10.0"
+glfw = "0.23.0"
+

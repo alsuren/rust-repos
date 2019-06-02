@@ -1,0 +1,22 @@
+[package]
+name = "staticdir"
+description = "Providing list of directory entries for Iron framework"
+version = "0.3.1"
+authors = ["franza <nico.franza@gmail.com>"]
+keywords = ["iron", "http", "static", "folder", "directory"]
+license-file = "LICENSE"
+readme = "README.md"
+documentation = "http://franza.github.io/staticdir/index.html"
+homepage = "https://github.com/franza/staticdir"
+repository = "https://github.com/franza/staticdir"
+
+[dependencies]
+rustc-serialize = "0.3"
+iron = "0.2"
+url = "0.5"
+filetime = "0.1.9"
+
+[dev-dependencies]
+staticfile = "0.1"
+mount = "0"
+iron-test = "0.2"

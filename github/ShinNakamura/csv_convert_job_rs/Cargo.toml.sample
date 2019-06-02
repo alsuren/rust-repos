@@ -1,0 +1,9 @@
+[package]
+name = "csv_convert_job_rs"
+version = "0.1.0"
+authors = ["Shin Nakamura <sn@i.basicwerk.com>"]
+
+[dependencies]
+csv = "1"
+serde = "1"
+serde_derive = "1"

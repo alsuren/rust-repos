@@ -1,0 +1,17 @@
+[workspace]
+members = [".", "daemon"]
+
+[package]
+authors = ["Nathan Ringo <remexre@protonmail.com>"]
+description = "A multi-service bouncer."
+license = "Apache-2.0/MIT"
+edition = "2018"
+name = "flubber"
+version = "0.1.0"
+
+[dependencies]
+derivative = "1.0.2"
+diesel = { version = "1.4.2", default-features = false, features = ["chrono", "sqlite"] }
+diesel_migrations = "1.4.0"
+libremexre = { default-features = false, version = "0.1.6" }
+log = "0.4.6"

@@ -1,0 +1,16 @@
+[package]
+name = "spawn-task-port"
+version = "0.1.2-alpha.0"
+authors = ["Ted Mielczarek <ted@mielczarek.org>"]
+license = "MIT"
+description = "Spawn a child process on OS X and get the child's Mach task port."
+homepage = "https://github.com/luser/spawn-task-port"
+repository = "https://github.com/luser/spawn-task-port"
+
+[dependencies]
+mach = "0.1"
+uuid = { version = "0.4", features = ["v4"] }
+
+[dev-dependencies]
+docmatic = "0.1.2"
+libc = "0.2"

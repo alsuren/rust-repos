@@ -1,0 +1,38 @@
+[package]
+name = "dedup"
+version = "0.2.0"
+authors = ["Chris McDonald <mail.chris.mcdonald@gmail.com>"]
+repository = "https://github.com/cjm00/dedup"
+homepage = "https://github.com/cjm00/dedup"
+categories = ["text-processing", "command-line-utilities"]
+keywords = ["unique", "dedup"]
+license = "MIT OR Apache-2.0"
+description = """
+A blazingly fast command-line text deduplicator.
+"""
+
+[badges]
+travis-ci = { repository = "cjm00/dedup" }
+appveyor = { repository = "cjm00/dedup" }
+
+[dependencies]
+memchr = "~2"
+memmap = "~0.6.2"
+clap = { version = "~2.30", features = ["yaml"] }
+fxhash = "0.2.1"
+fastchr = { version = "0.4", path = "fastchr"}
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = true
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "dedup"
+
+[features]
+
+[workspace]
+members = ["fastchr"]

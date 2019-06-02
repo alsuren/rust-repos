@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "rustberrypi",
+    "pihole-lcd-status",
+    "winterr"
+]
+
+[profile.release]
+opt-level = "z"

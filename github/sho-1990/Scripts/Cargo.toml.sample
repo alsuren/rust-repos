@@ -1,0 +1,10 @@
+[package]
+name = "Scripts"
+version = "0.1.0"
+authors = ["Sho Sato <shsato.t.t.n@gmail.com>"]
+
+[dependencies]
+chrono = "*"
+serde = "*"
+serde_derive = "*"
+toml = "*"

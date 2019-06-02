@@ -1,0 +1,11 @@
+[package]
+name = "rust_RIBBIT"
+version = "0.0.1"
+authors = ["rjenkins <rjenkins@aceevo.com>"]
+description = "rust ribbit client library"
+license-file = "LICENSE"
+
+[dependencies]
+log = "0.3.5"
+hyper = "0.7.2"
+byteorder = "0.5.1"

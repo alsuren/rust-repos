@@ -1,0 +1,19 @@
+[package]
+
+name = "rust-mp3-folder-rename"
+version = "0.0.1"
+authors = [ "Jean-Philippe Bidegain <jp@bidega.in>" ]
+
+[dependencies]
+clap = { features = ["yaml"], version = "2.19" }
+id3 = "0.1"
+mime_guess= "1.8"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

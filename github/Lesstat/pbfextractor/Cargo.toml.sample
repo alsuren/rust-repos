@@ -1,0 +1,11 @@
+[package]
+name = "pbfextractor"
+version = "0.1.0"
+authors = ["Florian Barth <florianbarth@gmx.de>"]
+edition = "2018"
+
+[dependencies]
+osmpbfreader = "*"
+byteorder = "*"
+flate2 = "*"
+clap = "*"

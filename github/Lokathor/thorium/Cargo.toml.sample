@@ -1,0 +1,50 @@
+[package]
+name = "thorium"
+description = "Lokathor does stuff, ium"
+version = "0.3.0"
+authors = ["Lokathor <zefria@gmail.com>"]
+repository = "https://github.com/Lokathor/thorium"
+readme = "README.md"
+keywords = ["lokathor"]
+edition = "2018"
+license = "0BSD"
+autobins = false
+
+[dependencies]
+libc = "0.2"
+fermium = "0.0.4"
+
+[package.metadata.docs.rs]
+default-target = "x86_64-pc-windows-msvc"
+
+[badges]
+appveyor = { repository = "Lokathor/thorium" }
+travis-ci = { repository = "Lokathor/thorium" }
+
+[profile.dev]
+opt-level = 3
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[features]
+default = ["hotloading", "avoid_std"] # these are on by default for easy dev purposes
+dynamic_link = []
+hotloading = ["dynamic_link"]
+sdl2_alloc = [] # NIGHTLY
+avoid_std = ["sdl2_alloc"] # NIGHTLY (transitive)
+just_a_no_std_lib = ["avoid_std"] # BROKEN. TODO: fix link errors so this at least work on linux
+
+# This makes sdl2 be totally staticly linked into the program. For technical and
+# moral reasons, you should avoid using this if you don't need to:
+# https://hg.libsdl.org/SDL/file/default/docs/README-dynapi.md
+#static_sdl2 = ["sdl2-sys/static-link", "sdl2-sys/bundled"]
+
+[lib]
+name = "thorium"
+crate-type = ["rlib", "cdylib"]
+
+[[bin]]
+name = "thorium"
+path = "src/bin/main.rs"

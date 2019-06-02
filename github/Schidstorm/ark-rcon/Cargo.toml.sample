@@ -1,0 +1,12 @@
+[package]
+name = "ark-rcon"
+version = "0.1.0"
+authors = ["dominik"]
+edition = "2018"
+description = "Runs Ark RCON commands."
+license = "WTFPL"
+
+[dependencies]
+clap = "2"
+byteorder = "1"
+log = "*"

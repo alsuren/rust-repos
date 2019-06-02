@@ -1,0 +1,23 @@
+[package]
+
+name = "bevy"
+version = "0.0.1"
+authors = ["carter <mcanders1@gmail.com>"]
+
+[dependencies]
+glutin = "*"
+time = "*"
+image = "*"
+wavefront_obj = "*"
+cgmath = "0.2.0"
+byteorder = "*"
+log = "*"
+rustc-serialize = "*"
+glium = "*"
+
+[dependencies.android_glue]
+git = "https://github.com/tomaka/android-rs-glue"
+optional = true
+
+[dependencies.ansi_term]
+git = "https://github.com/ogham/rust-ansi-term.git"

@@ -1,0 +1,13 @@
+[package]
+name = "shared"
+version = "0.1.0"
+authors = ["Cameron Eldridge <cameldridge+git@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+uuid = { version = "0.7", features = ["serde", "v4", "wasm-bindgen"] }
+serde_cbor = "0.9"
+
+[dependencies.serde]
+features = ["derive"]
+version = "1.0"

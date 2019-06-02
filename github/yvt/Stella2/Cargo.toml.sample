@@ -1,0 +1,30 @@
+[workspace]
+members = [
+    "stella2",
+    "tcw3",
+    "harmony",
+    "support/alt_fp",
+    "support/as_any",
+    "support/cggeom",
+    "support/iterpool",
+    "support/subscriber_list",
+]
+
+[profile.release]
+debug = true
+panic = "abort"
+lto = true
+
+[profile.bench]
+lto = true
+debug = true
+
+# The following two include:
+# “Expose more APIs on CGContext”
+# <https://github.com/servo/core-foundation-rs/pull/313>
+[patch.crates-io.core-graphics]
+git = "https://github.com/servo/core-foundation-rs.git"
+rev = "673be9f0b53387e806c7a72eef5e9b325917c969"
+[patch.crates-io.core-foundation]
+git = "https://github.com/servo/core-foundation-rs.git"
+rev = "673be9f0b53387e806c7a72eef5e9b325917c969"

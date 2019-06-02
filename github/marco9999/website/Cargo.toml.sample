@@ -1,0 +1,17 @@
+[package]
+name = "website"
+version = "0.1.0"
+authors = ["Marco Satti <marcosatti@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4"
+diesel = { version = "1.4", features = ["postgres", "chrono", "r2d2"] }
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+dotenv = "0.10"
+
+[dependencies.rocket_contrib]
+version = "0.4"
+default-features = false
+features = ["diesel_postgres_pool", "tera_templates", "serve"]

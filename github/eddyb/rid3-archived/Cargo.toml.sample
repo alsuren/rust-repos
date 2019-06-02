@@ -1,0 +1,29 @@
+[package]
+name = "rid3"
+version = "0.0.1"
+authors = ["Eduard-Mihai Burtescu <edy.burt@gmail.com>"]
+
+[dependencies]
+regex = "*"
+#regex_macros = "*"
+unicode-width = "*"
+time = "*"
+
+image = "0.4.0"
+glium = "0.11.1"
+freetype-rs = "*"
+fps_counter = "*"
+
+[target.i686-pc-windows-gnu.dependencies]
+winapi = "*"
+shared_library = "*"
+
+[target.x86_64-pc-windows-gnu.dependencies]
+winapi = "*"
+shared_library = "*"
+
+[features]
+ide = []
+
+[[bin]]
+name = "rid3"

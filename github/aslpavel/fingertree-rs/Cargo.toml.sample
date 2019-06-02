@@ -1,0 +1,28 @@
+[package]
+name = "fingertrees"
+version = "0.2.2"
+authors = ["Pavel Aslanov <asl.pavel@gmail.com>"]
+description = "Immutable persisten finger trees"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/aslpavel/fingertree-rs"
+categories = ["data-structures"]
+keywords = ["immutable", "persistent", "data-structures"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "aslpavel/fingertree-rs" }
+coveralls = { repository = "aslpavel/fingertree-rs" }
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2.5"
+quickcheck = "0.7.2"
+
+[lib]
+bench = false
+
+[[bench]]
+name = "criterion"
+harness = false

@@ -1,0 +1,13 @@
+[workspace]
+
+members = [
+  "time-steward",
+  "integer-math",
+  "type-utils",
+]
+
+[profile.bench]
+debug = true
+
+[profile.release]
+codegen-units = 1

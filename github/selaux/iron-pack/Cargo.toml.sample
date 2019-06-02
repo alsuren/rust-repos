@@ -1,0 +1,23 @@
+[package]
+name = "iron-pack"
+version = "0.3.0"
+description = "Zero-configuration compression middleware for iron"
+keywords = ["iron", "compress", "gzip", "deflate"]
+authors = ["Stefan Lau <github@stefanlau.com>"]
+repository = "https://github.com/selaux/iron-pack"
+license = "MIT"
+
+[lib]
+name = "iron_pack"
+
+[features]
+unstable = []
+
+[dependencies]
+iron = "0"
+libflate = "0.1"
+brotli = "1.0"
+
+[dev-dependencies]
+iron-test = "0"
+rand = "0.3"

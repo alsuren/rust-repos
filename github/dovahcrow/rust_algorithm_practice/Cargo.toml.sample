@@ -1,0 +1,19 @@
+[package]
+name = "algorithm_practice"
+version = "0.0.1"
+authors = [ "doomsplayer@gmail.com" ]
+
+[dependencies.matrixrs]
+path = "src/matrixrs"
+
+[[lib]]
+name = "algorithm"
+path = "src/algrthm/lib.rs"
+
+[[bin]]
+name = "insertion_sort"
+path = "example/insertion_sort.rs"
+
+[[bin]]
+name = "testGround"
+path = "example/test.rs"

@@ -1,0 +1,11 @@
+[package]
+name = "hearo-api"
+version = "0.1.0"
+authors = ["Jack Ryder <me@jackryder.co.uk>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.3.17"
+rocket_codegen = "0.3.17"
+postgres = "0.15"
+dotenv = "0.13.0"

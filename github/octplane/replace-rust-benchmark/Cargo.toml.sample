@@ -1,0 +1,16 @@
+[package]
+name = "replace"
+version = "0.1.0"
+authors = ["Pierre Baillet <pierre@baillet.name>"]
+
+[dependencies]
+
+libc = "*"
+chrono = "*"
+aho-corasick="*"
+
+[profile.release]
+debug = true
+
+[[bin]]
+name = "replacer"

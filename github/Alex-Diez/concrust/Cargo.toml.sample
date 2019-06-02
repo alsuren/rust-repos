@@ -1,0 +1,23 @@
+[package]
+name        = "concrust"
+version     = "0.0.2-SNAPSHOT"
+authors     = ["Alex-Diez <alexvic.amatory@gmail.com>"]
+readme      = "README.md"
+exclude     = [
+	".gitignore"
+]
+
+[lib]
+name = "concrust"
+path = "src/lib.rs"
+
+[[test]]
+name = "test"
+path = "test/lib.rs"
+
+[dependencies]
+clippy = "0.0.65"
+
+[dev-dependencies]
+expectest = "0.5.1"
+stainless = "0.1.4"

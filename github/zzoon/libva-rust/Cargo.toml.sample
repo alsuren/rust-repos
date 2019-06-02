@@ -1,0 +1,15 @@
+[package]
+name = "libva-rust"
+version = "0.0.1"
+authors = ["Hyunjun Ko <zzoon@igalia.com>"]
+
+[lib]
+name = "libva_rust"
+path = "src/lib.rs"
+
+[dependencies.libc]
+git = "https://github.com/rust-lang/libc.git"
+
+[dependencies.x11]
+git = "https://github.com/Daggerbot/x11-rs.git"
+features = ["xlib"]

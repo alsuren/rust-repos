@@ -1,0 +1,34 @@
+[package]
+name = "coros"
+version = "0.1.0"
+authors = ["mnussbaum <michaelnussbaum08@gmail.com>"]
+
+[lib]
+name = "coros"
+test = true
+
+[[test]]
+name = "test"
+path = "tests/test.rs"
+
+[dependencies]
+log = "^0.3.1"
+num_cpus = "0.2.10"
+rand = "^0.3.10"
+slab  = "0.1.0"
+
+[dev-dependencies]
+time = "0.1.32"
+bytes = "0.3.0"
+
+[dependencies.deque]
+git = "https://github.com/kinghajj/deque.git"
+
+[dependencies.context]
+git = "https://github.com/mnussbaum/context-rs.git"
+
+[dependencies.mio]
+git = "https://github.com/carllerche/mio.git"
+
+[dependencies.scoped_threadpool]
+git = "https://github.com/mnussbaum/scoped-threadpool-rs.git"

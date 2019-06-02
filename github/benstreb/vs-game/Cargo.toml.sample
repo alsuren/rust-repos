@@ -1,0 +1,22 @@
+[package]
+
+name = "vs-game-rust"
+version = "0.0.0"
+authors = [
+    "Benjamin <bstreb@gmail.com>"
+]
+
+[[bin]]
+name = "vs-game-rust"
+path = "src/main.rs"
+
+[dependencies]
+piston = '*'
+piston2d-graphics = '*'
+pistoncore-glutin_window = '*'
+piston2d-opengl_graphics = '*'
+piston-ai_behavior = '*'
+piston2d-sprite = '*'
+image = '*'
+uuid = '*'
+rand = '*'

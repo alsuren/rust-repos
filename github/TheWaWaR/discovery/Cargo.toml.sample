@@ -1,0 +1,20 @@
+[package]
+name = "discovery"
+version = "0.1.0"
+authors = ["Linfeng Qian <thewawar@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+yamux = { git = "https://github.com/TheWaWaR/yamux" }
+bytes = "0.4"
+byteorder = "1.2"
+fnv = "1.0"
+futures = "0.1"
+tokio = "0.1"
+log = "0.4"
+bincode = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+multiaddr = "0.3"
+trust-dns = "0.15"
+rand = "0.6.1"

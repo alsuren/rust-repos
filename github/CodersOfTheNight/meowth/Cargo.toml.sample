@@ -1,0 +1,34 @@
+[package]
+name = "meowth"
+version = "0.1.0"
+authors = ["Šarūnas Navickas"]
+
+[features]
+default = []
+
+zmq = ["zmq_consumer"]
+tcp = ["tcp_consumer"]
+
+[dependencies]
+meowth_lib = { path = "lib" }
+
+# ElasticSearch dependencies
+time = "0.1.38"
+log = "0.3"
+env_logger = "0.4.3"
+yaml-rust = "0.4.0"
+getopts = "0.2.15"
+hostname = "0.1.3"
+
+statsd = "0.10.0"
+
+# ElasticSearch dependencies
+elastic = "0.20.5"
+
+[dependencies.tcp_consumer]
+optional = true
+path = "consumers/tcp_consumer"
+
+[dependencies.zmq_consumer]
+optional = true
+path = "consumers/zmq_consumer"

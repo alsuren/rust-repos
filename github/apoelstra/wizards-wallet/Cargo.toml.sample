@@ -1,0 +1,30 @@
+
+[package]
+name = "wizards-wallet"
+version = "0.0.1"
+authors = ["Andrew Poelstra <apoelstra@wpsoftware.net>"]
+
+[[bin]]
+name = "wizards-wallet"
+
+[dependencies.bitcoin]
+git = "https://github.com/apoelstra/rust-bitcoin.git"
+
+[dependencies.jsonrpc]
+git = "https://github.com/apoelstra/rust-jsonrpc.git"
+
+[dependencies.phf]
+git = "https://github.com/sfackler/rust-phf.git"
+
+[dependencies.phf_mac]
+git = "https://github.com/sfackler/rust-phf.git"
+
+[dependencies.rust-crypto]
+git = "https://github.com/DaGenix/rust-crypto.git"
+
+[dependencies.toml]
+git = "https://github.com/alexcrichton/toml-rs.git"
+
+[dependencies.xdg]
+git = "https://github.com/o11c/rust-xdg.git"
+

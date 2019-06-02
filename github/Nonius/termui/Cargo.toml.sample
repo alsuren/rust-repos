@@ -1,0 +1,15 @@
+[package]
+name = "termui"
+version = "0.1.0"
+authors = ["Imre Dávid Kosztka <kosztkaid@gmail.com>"]
+description = "A terminal ui for displaying graphs"
+keywords = [
+	"terminal",
+	"ui",
+	"graph",
+]
+[lib]
+name = "termui"
+
+[dependencies]
+termbox-sys = "*"

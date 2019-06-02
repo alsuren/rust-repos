@@ -1,0 +1,16 @@
+[package]
+name = "lvewcvt"
+version = "0.1.0"
+authors = ["Gwen Lofman <Gwen@Lofman.io>"]
+
+[[bin]]
+name = "lvewcvt_cli"
+path = "cli/main.rs"
+
+[dependencies]
+image = "0.20"
+
+[dev-dependencies]
+proptest = "0.8.6"
+criterion = "0.2"
+float-cmp = "0.4.0"

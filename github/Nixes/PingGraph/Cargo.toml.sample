@@ -1,0 +1,11 @@
+[package]
+name = "ping_graph"
+version = "0.1.1"
+authors = ["Nixes"]
+
+[dependencies]
+rust_plot = {git = "https://github.com/Nixes/rust_plot"}
+piston_window = "0.42.0"
+interpolation = "0.1.0"
+time = "0.1.34"
+regex = "0.1.41"

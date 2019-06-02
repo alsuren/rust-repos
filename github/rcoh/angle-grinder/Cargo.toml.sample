@@ -1,0 +1,47 @@
+[package]
+name = "ag"
+version = "0.9.1"
+authors = ["Russell Cohen <russell.r.cohen@gmail.com>"]
+description = "CLI App to slice and dice logfiles"
+license = "MIT"
+repository = "https://github.com/rcoh/angle-grinder"
+readme = "README.md"
+edition = "2018"
+[package.metadata.deb]
+extended-description = """Angle-grinder allows you to parse, aggregate, sum, average, percentile, and sort your data. \
+                        You can see it, live-updating, in your terminal. Angle grinder is designed for when, for \
+                        whatever reason, you don't have your data in graphite/honeycomb/kibana/sumologic/splunk/etc. \
+                        but still want to be able to do sophisticated analytics. \
+                        Angle grinder can process about a million rows per second, so it's usable for fairly meaty \
+                        aggregation. The results will live update in your terminal as data is processed. \
+                        Angle grinder is a bare bones functional programming language coupled with a pretty terminal UI."""
+
+[dependencies]
+serde_json = "1.0.33"
+itertools = "0.8.0"
+nom = { version = "4.1.1", features = ["verbose-errors"] }
+nom_locate = { version = "0.3.1", features = ["verbose-errors"] }
+strsim = "0.8.0"
+quicli = "0.4.0"
+regex = "1.1.0"
+terminal_size = "0.1.8"
+quantiles = "0.7.1"
+crossbeam-channel = "0.3.4"
+ordered-float = "1.0.1"
+failure = "0.1.3"
+structopt = "0.2"
+human-panic = "1.0.1"
+self_update = "0.5.0"
+num-derive = "0.2.3"
+num-traits = "0.2.6"
+annotate-snippets = { version = "0.5.0", features = ["ansi_term"] }
+atty = "0.2.0"
+lazy_static = "1.2.0"
+
+[dev-dependencies]
+assert_cli = "0.6.3"
+maplit = "1.0.1"
+toml = "0.4.10"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+pulldown-cmark = "0.2.0"

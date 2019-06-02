@@ -1,0 +1,7 @@
+[package]
+name = "udp-server"
+version = "0.1.0"
+authors = ["sebastian"]
+
+[dependencies]
+ctrlc = { version = "3.0", features = ["termination"]  }

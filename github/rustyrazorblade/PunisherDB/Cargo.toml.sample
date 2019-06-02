@@ -1,0 +1,20 @@
+[package]
+name = "ramp"
+version = "0.1.0"
+authors = ["Jon Haddad <jon@jonhaddad.com>"]
+
+
+[dependencies]
+log = "*"
+env_logger = "*"
+bufstream = "0.1"
+regex = "0.1"
+
+[[bin]]
+name = "punisher"
+path = "src/main.rs"
+
+
+[[bin]]
+name = "bench"
+path = "src/bench.rs"

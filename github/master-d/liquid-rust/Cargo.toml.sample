@@ -1,0 +1,13 @@
+[package]
+name = "liquid-rust"
+version = "0.1.0"
+authors = ["yi <goodeveningthisisrobrichards@gmail.com>"]
+
+[dependencies]
+liquidfun = "*"
+rand = "*"
+
+[dependencies.sdl2]
+version = "*"
+default-features = false
+features = ["gfx"]

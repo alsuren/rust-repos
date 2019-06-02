@@ -1,0 +1,29 @@
+[package]
+authors = ["Weston Carlson <wez470@gmail.com>"]
+name = "rugby"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+env_logger = "0.6.0"
+log = "0.4.6"
+rand = "0.6.4"
+regex = "1.1.0"
+lazy_static = "1.2.0"
+failure = "0.1.5"
+failure_derive = "0.1.5"
+tabwriter = "1.1.0"
+structopt = "0.2.14"
+enumflags2 = "0.5.0"
+enumflags2_derive = "0.5.0"
+
+[dependencies.sdl2]
+version = "0.32.1"
+features = ["gfx"]
+
+[dev-dependencies]
+quickcheck = "0.8.0"
+
+[profile.dev]
+opt-level = 2

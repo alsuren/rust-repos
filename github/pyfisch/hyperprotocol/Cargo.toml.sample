@@ -1,0 +1,11 @@
+[package]
+
+name = "hyperprotocol"
+version = "0.0.0"
+authors = ["Pyfisch <pyfisch@gmail.com>"]
+
+[dependencies]
+mucell = "*"
+phf = "*"
+phf_mac = "*"
+mopa = "*"

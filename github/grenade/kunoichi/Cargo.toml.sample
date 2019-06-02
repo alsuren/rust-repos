@@ -1,0 +1,7 @@
+[package]
+name = "kunoichi"
+version = "0.1.0"
+authors = ["Rob Thijssen <rthijssen@gmail.com>"]
+
+[dependencies]
+daemon = { version = "0.0.7", git = "https://github.com/bozaro/daemon-rs" }

@@ -1,0 +1,18 @@
+[package]
+name = "git-clean"
+version = "0.5.1"
+authors = ["Matt Casper <matthewvcasper@gmail.com>"]
+license = "MIT"
+description = "A tool for cleaning old git branches."
+documentation = "https://github.com/mcasper/git-clean"
+homepage = "https://github.com/mcasper/git-clean"
+repository = "https://github.com/mcasper/git-clean"
+
+[dependencies]
+clap = "2.23"
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[[test]]
+name = "tests"

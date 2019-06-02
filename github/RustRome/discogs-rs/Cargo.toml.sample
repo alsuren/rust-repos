@@ -1,0 +1,24 @@
+[package]
+name = "discogs"
+version = "0.2.0"
+authors = ["Afonso Bordado <afonsobordado@az8.co>"]
+description = "A Library to consume Discogs API"
+keywords = ["discogs", "api", "client"]
+license = "GPL-3.0+"
+repository = "https://github.com/afonso360/discogs-rs"
+readme = "README.md"
+
+[dependencies]
+hyper = "^0.10.4"
+hyper-native-tls = "^0.2.2"
+serde = "^0.9.7"
+serde_derive = "^0.9.7"
+serde_json = "^0.9.6"
+itertools = "^0.5.9"
+
+[dev-dependencies]
+mockito = "^0.2.4"
+
+[features]
+default = []
+nightly = []

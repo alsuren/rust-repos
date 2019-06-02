@@ -1,0 +1,26 @@
+[package]
+authors = ["Brandon Matthews <bmatthews@zipcar.com>"]
+name = "hal2"
+version = "0.2.2"
+
+[badges]
+maintenance = {status = "deprecated"}
+
+[dependencies]
+nb = "0.1.1"
+stm32l0x1 = "0.13.1"
+
+[dependencies.cortex-m]
+version = "0.5.7"
+
+[dependencies.embedded-hal]
+features = ["unproven"]
+version = "0.2.1"
+
+[features]
+STM32L011x3 = []
+STM32L011x4 = []
+STM32L031x4 = []
+STM32L031x6 = []
+default = ["rt"]
+rt = ["stm32l0x1/rt"]

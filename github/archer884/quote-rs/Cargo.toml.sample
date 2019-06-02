@@ -1,0 +1,19 @@
+[package]
+authors = ["J/A <archer884@gmail.com>"]
+name = "quote-rs"
+version = "0.2.0"
+
+[dependencies]
+hyper = "*"
+hyper-native-tls = { version = "*", optional = true }
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+url = "1.1.1"
+
+[dev-dependencies]
+dotenv = "*"
+
+[features]
+default = ["ssl"]
+ssl = ["hyper-native-tls"]

@@ -1,0 +1,15 @@
+[package]
+name = "rratings"
+version = "0.1.0"
+authors = ["Gian-Carlo Pascutto <gcp@sjeng.org>"]
+license = "MIT"
+description = "Command line tool to recalculate (li)chess ratings"
+repository = "https://github.com/gcp/rratings"
+
+[dependencies]
+zstd = "0.4"
+pgn-reader = "0.10"
+glob = "0.2"
+chrono = "0.4"
+indicatif = "0.9"
+roots = "0.0.4"

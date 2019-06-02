@@ -1,0 +1,14 @@
+[package]
+authors = ["je6bmq <je6bmq@gmail.com>"]
+name = "shindoi_button"
+version = "0.1.0"
+
+[dependencies]
+egg-mode = "0.12.0"
+pnet = "0.21.0"
+rand = "0.4.2"
+regex = "0.2.5"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+serde_yaml = "0.7.3"
+tokio-core = "0.1.12"

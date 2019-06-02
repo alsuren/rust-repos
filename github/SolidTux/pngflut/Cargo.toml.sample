@@ -1,0 +1,8 @@
+[package]
+name = "pngflut"
+version = "0.1.0"
+authors = ["Daniel Hauck <mail@dhauck.eu>"]
+
+[dependencies]
+image = "*"
+rand = "*"

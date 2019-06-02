@@ -1,0 +1,13 @@
+[package]
+name = "rlock"
+version = "0.0.1"
+authors = ["Lukas Fürmetz <fuermetz@mailbox.org>"]
+keywords = ["screenlocker", "x11"]
+description = "Simple and minimalistic screenlocker for x11."
+
+[dependencies]
+libc = "0.2.15"
+
+[dependencies.x11]
+version = "2.8.0"
+features = ["xlib", "xft"]

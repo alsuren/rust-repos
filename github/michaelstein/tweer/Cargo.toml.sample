@@ -1,0 +1,8 @@
+[package]
+name = "tweer"
+version = "0.1.0"
+authors = ["Michael Stein <mstein@insanefactory.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"

@@ -1,0 +1,36 @@
+[package]
+name = "community"
+version = "0.1.0"
+authors = ["bsundsrud <benn.sundsrud@gmail.com>"]
+
+[lib]
+name = "community"
+path = "lib/lib.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "community"
+path = "src/main.rs"
+
+[[test]]
+name = "test"
+path = "tests/test.rs"
+
+
+[dependencies]
+r2d2 = "*"
+r2d2_postgres = "*"
+postgres = "*"
+postgres_array = { git = "https://github.com/sfackler/rust-postgres-array" }
+dotenv = "0.8.0"
+pgx = { git = "https://github.com/bsundsrud/rust-pgx/" }
+iron = "*"
+persistent = "*"
+router = "*"
+mount = "*"
+rustc-serialize = "*"
+log = "0.3"
+env_logger = "0.3"
+bodyparser = { git = "https://github.com/iron/body-parser.git" }
+serde_json = "*"

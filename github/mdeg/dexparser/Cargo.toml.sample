@@ -1,0 +1,15 @@
+[package]
+name = "dexparser"
+version = "0.1.0"
+authors = ["Michael Degano <michael@dega.no>"]
+edition = "2018"
+
+[dependencies]
+leb128 = "*"
+byteorder = "*"
+mutf8 = "*"
+failure = "*"
+
+[dependencies.nom]
+version = "*"
+features = ["verbose-errors"]

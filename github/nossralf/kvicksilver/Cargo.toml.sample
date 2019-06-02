@@ -1,0 +1,15 @@
+[package]
+name = "kvicksilver"
+version = "0.1.0"
+authors = ["Fredrik Larsson <nossralf@gmail.com>"]
+homepage = "https://github.com/nossralf/kvicksilver"
+repository = "https://github.com/nossralf/kvicksilver"
+readme = "README.md"
+license = "BSD-3-Clause"
+
+[badges]
+travis-ci = { repository = "nossralf/kvicksilver" }
+appveyor = { repository = "nossralf/kvicksilver" }
+maintenance = { status = "experimental" }
+
+[dependencies]

@@ -1,0 +1,16 @@
+[package]
+name = "trex"
+description = "The Rust Entity Component System"
+version = "0.2.0"
+authors = ["Colin Ray <r.colinray@gmail.com>"]
+homepage = "https://github.com/rcolinray/trex"
+repository = "https://github.com/rcolinray/trex"
+keywords = ["ecs", "entity", "component", "system"]
+license = "MIT"
+
+[dependencies]
+vec_map = "0.6.0"
+bit-set = "0.4.0"
+
+[dev-dependencies]
+ansi_term = "0.7.2"

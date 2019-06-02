@@ -1,0 +1,55 @@
+[package]
+name = "webdir"
+version = "0.1.0"
+authors = ["quininer kel <quininer@live.com>"]
+license = "MIT"
+edition = "2018"
+repository = "https://github.com/Tyzzer/webdir"
+homepage = "https://github.com/Tyzzer/webdir"
+readme = "README.md"
+description = "A simple asynchronous static file server"
+
+[[bin]]
+name = "webdir"
+path = "src/bin/webdir.rs"
+doc = false
+
+[features]
+
+[dependencies]
+serde = "1.0"
+structopt = "0.2"
+failure = "0.1"
+log = { version = "0.3", features = ["release_max_level_debug"] }
+slog = "2"
+slog-stdlog = "3.0.4-pre"
+slog-scope = "4"
+slog-term = "2"
+slog-async = "2"
+
+bytes = "0.4"
+tokio = "0.1"
+tokio-io = "0.1"
+hyper = "0.12"
+http = "0.1"
+headers = "0.2"
+
+rustls = { version = "0.15" }
+tokio-rustls = { version = "0.9.0", features = ["nightly"] }
+
+percent-encoding = "1.0"
+chrono = "0.4"
+unbytify = "0.2"
+byteorder = "1.0"
+humanesort = "0.1.0-alpha"
+base64 = "0.10"
+siphasher = "0.3"
+smallvec = "0.6"
+mime = "0.3"
+mime_guess = "2.0.0-alpha"
+maud = "0.20"
+if_chain = "0.1"
+rand = "0.6"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+tokio-linux-aio = "0.1"

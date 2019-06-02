@@ -1,0 +1,16 @@
+[package]
+name = "helium"
+description = "A collection of useful functionality for 2D game development."
+version = "0.2.0"
+license = "MIT"
+repository = "https://github.com/xithiox/helium"
+authors = ["xithiox <xithiox@gmail.com>"]
+readme = "README.md"
+keywords = ["2d", "game", "vector", "gamedev"]
+categories = ["game-engines"]
+edition = "2018"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]

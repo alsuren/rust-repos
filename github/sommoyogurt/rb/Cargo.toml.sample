@@ -1,0 +1,10 @@
+[package]
+name = "tree"
+version = "0.1.0"
+authors = ["sommoyogurt <rtrombetta@gmail.com>"]
+
+
+[dependencies]
+fern = "*"
+log = "*"
+time = "*"

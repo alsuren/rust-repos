@@ -1,0 +1,19 @@
+[package]
+name = "password-server"
+version = "0.1.2"
+authors = ["Evan Cameron <cameron.evan@gmail.com>"]
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[dependencies]
+iron = "0.5.0"
+router = "0.5.0"
+logger = "0.3.0"
+rust-crypto = "0.2.36"
+serde = "1.0.0"
+serde_derive = "1.0.0"
+serde_json = "1.0.0"
+rand = "0.3.14"
+nom = "1.2.4"

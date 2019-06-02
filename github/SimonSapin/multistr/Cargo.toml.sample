@@ -1,0 +1,23 @@
+[package]
+name = "multistr"
+version = "0.4.0"
+authors = ["Clar Charr <clar@charr.xyz>"]
+repository = "https://github.com/clarcharr/multistr"
+documentation = "https://clarcharr.github.io/multistr/multistr/"
+description = "Store multiple strings in the same heap buffer."
+readme = "README.md"
+license-file = "LICENSE"
+exclude = [".gitignore"]
+
+[dependencies]
+bow = "0.1"
+extra-default = "0.1"
+len-trait = { version = "0.2", default-features = false, features = ['collections'] }
+push-trait = { version = "0.4", default-features = false, features = ['collections'] }
+quickcheck = "0.3"
+
+[dev-dependencies]
+clippy = "^0.0"
+
+[features]
+inclusive_range = []

@@ -1,0 +1,14 @@
+[package]
+name = "rs_hero"
+version = "0.1.0"
+authors = ["C. Jeremiah Schneider <cjschneider2@gmail.com>"]
+
+[profile.release]
+debug = true
+
+[dependencies]
+byteorder = "*"
+
+[dependencies.sdl2]
+version = "0.30"
+features = ["mixer"]

@@ -1,0 +1,18 @@
+[package]
+authors = ["@@GIT_USER@@ <@@GIT_EMAIL@@>"]
+build = "build.rs"
+description = "Rust Blueprint"
+documentation = "http://@@GH_USER@@.github.io/@@GH_SLUG@@/@@NAME@@/index.html"
+keywords = []
+license = "MIT/Apache-2.0"
+name = "@@NAME@@"
+repository = "https://github.com/@@GH_USER@@/@@GH_SLUG@@"
+version = "0.1.0"
+readme = "README.md"
+
+[build-dependencies]
+
+[dependencies]
+
+[features]
+default = []

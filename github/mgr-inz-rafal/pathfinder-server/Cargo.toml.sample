@@ -1,0 +1,14 @@
+[package]
+name = "pathfinder_server"
+version = "0.1.0"
+authors = ["mgr_inz_rafal <rchabowski@gmail.com>"]
+
+[dependencies]
+pathfinder = { path = "../pathfinder" }
+iron = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*" 
+
+[dependencies.bodyparser]
+git = "https://github.com/iron/body-parser.git"

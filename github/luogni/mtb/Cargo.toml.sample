@@ -1,0 +1,23 @@
+[package]
+authors = ["Luca Ognibene <luca.ognibene@gmail.com>"]
+name = "mtb"
+version = "0.1.0"
+
+[dependencies]
+docopt = "0.7.0"
+error-chain = "0.9.0"
+hyper = "0.10.4"
+image = "0.12.2"
+imageproc = "0.7.0"
+itertools = "0.5.9"
+rayon = "0.6.0"
+rustc-serialize = "0.3"
+xml-rs = "0.3.5"
+
+[dependencies.rusty-machine]
+git = "https://github.com/AtheMathmo/rusty-machine"
+optional = false
+
+[dependencies.slippy-map-tiles]
+git = "https://github.com/luogni/slippy-map-tiles-rs.git"
+optional = false

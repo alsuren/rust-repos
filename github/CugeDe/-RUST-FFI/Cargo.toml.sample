@@ -1,0 +1,8 @@
+[package]
+name = "ffi"
+version = "1.0.0"
+authors = ["CugeDe <guerin_q@epitech.eu>"]
+
+[lib]
+name = "ffi"
+crate-type = ["dylib"]

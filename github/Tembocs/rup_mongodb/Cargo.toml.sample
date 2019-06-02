@@ -1,0 +1,15 @@
+[package]
+name = "rup"
+version = "0.1.0"
+authors = ["Tembo Nyati <tembocs101@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+mongodb = "0.3.11"
+docopt = "1.0.0"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3

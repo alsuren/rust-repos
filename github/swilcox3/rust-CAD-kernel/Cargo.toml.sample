@@ -1,0 +1,8 @@
+[package]
+name = "rust_cad_kernel"
+version = "0.1.0"
+authors = ["SWilcox"]
+
+[dependencies]
+rust_parasolid = { path = "../rust-parasolid"}
+lmdb-rs = "0.7.6"

@@ -1,0 +1,11 @@
+[package]
+name = "garpd"
+version = "0.1.0"
+authors = ["ubuntu"]
+
+[dependencies]
+errno = "0.1"
+libc = "0.1"
+log = "0.3"
+env_logger = "0.3"
+unix_socket = "0.4"

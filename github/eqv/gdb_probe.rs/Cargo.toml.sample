@@ -1,0 +1,13 @@
+[package]
+name = "gdb_probe"
+version = "0.1.2"
+authors = ["coco <coco@hexgolems.com>"]
+edition = "2018"
+repository = "https://github.com/eqv/gdb_probe.rs"
+categories = ["development-tools::debugging"]
+license="MIT"
+description="ipdb.set_trace() / binding.pry, but for rust"
+readme="Readme.md"
+
+[dependencies]
+nix = "0.13.0"

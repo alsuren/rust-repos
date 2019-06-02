@@ -1,0 +1,20 @@
+[package]
+authors = ["Yuri Iozzelli <y.iozzelli@gmail.com>"]
+name = "telegram-bot-client"
+version = "0.2.1"
+description = "Async Telegram Bot API client"
+documentation = "https://docs.rs/telegram-bot-client"
+keywords = ["telegram","bot","api", "client", "async"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yuri91/telegram-bot-client-rs"
+
+[dependencies]
+error-chain = "0.10.0"
+futures = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+tokio-core = "0.1"
+hyper = "0.11"
+hyper-tls = "0.1"
+telegram-bot-types = "0.1.1"

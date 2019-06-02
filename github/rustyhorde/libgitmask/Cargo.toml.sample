@@ -1,0 +1,30 @@
+[package]
+name = "libgitmask"
+version = "0.1.1-pre"
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "git-mask library"
+documentation = "http://rustyhorde.github.io/libgitmask"
+homepage = "http://rustyhorde.github.io/libgitmask"
+repository = "https://github.com/rustyhorde/libgitmask"
+readme = "README.md"
+license = "MIT"
+keywords = ["rust","rustyhorde","git-mask", "libgitmask"]
+build = "build.rs"
+
+[build-dependencies]
+vergen = "*"
+
+[dev-dependencies]
+tempdir = "*"
+
+[dependencies]
+log = "*"
+glob = "*"
+regex = "*"
+rustc-serialize = "*"
+
+[dependencies.barnacl]
+git = "https://github.com/rustyhorde/barnacl.git"
+
+[dependencies.rusqlite]
+git = "https://github.com/rustyhorde/rusqlite.git"

@@ -1,0 +1,11 @@
+[package]
+name = "oxide"
+version = "0.1.0"
+authors = ["albertxing"]
+
+[dependencies]
+staticfile = "*"
+mount = "*"
+
+[dependencies.iron]
+version = "*"

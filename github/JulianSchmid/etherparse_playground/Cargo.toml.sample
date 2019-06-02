@@ -1,0 +1,45 @@
+[package]
+name = "etherparse_playground"
+version = "0.2.0"
+authors = ["Julian Schmid <info@julianschmid.name>"]
+
+[features]
+listen = ["pcap"]
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "slice"
+path = "src/slice.rs"
+
+[[bin]]
+name = "decode"
+path = "src/decode.rs"
+
+[[bin]]
+name = "calc_csv_stats"
+path = "src/calc_csv_stats.rs"
+
+# listen depends on pcap which is currently not working on windows
+# as such it has been moved into a feature to enable builds
+# on windows
+[[bin]]
+name = "listen"
+path = "src/listen.rs"
+required-features = ["listen"]
+
+[dependencies]
+rpcap = "0.3.0"
+byteorder = "1.2.7"
+etherparse = "0.7.1"
+time = "0.1.40"
+clap = "2.32.0"
+csv = "1.0.2"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+glob = "0.2.11"
+
+# for listen
+pcap = { version = "0.7.0", optional = true }

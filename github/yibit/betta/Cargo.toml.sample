@@ -1,0 +1,22 @@
+[package]
+name = "betta"
+version = "0.0.1"
+authors = ["yibit@126.com"]
+readme = "README.md"
+description = "betta"
+homepage = ""
+repository = ""
+keywords = ["betta", "rocket", "diesel", "tera", "mysql"]
+categories = ["betta"]
+
+#[dependencies.clippy]
+#version = "0.0.212"
+
+[dependencies]
+rocket = "0.3.14"
+rocket_codegen = "0.3.14"
+rocket_contrib = "0.3.14"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+diesel = { version = "1.0.0", features = ["mysql", "r2d2"] }

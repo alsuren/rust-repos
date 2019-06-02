@@ -1,0 +1,22 @@
+[package]
+name = "spilo"
+version = "0.0.0"
+description = "A simple IRC bouncer."
+authors = ["Aaron Weiss <awe@pdgn.co>"]
+license = "AGPL-3.0"
+keywords = ["irc", "client", "bouncer"]
+categories = ["command-line-utilities"]
+repository = "https://github.com/aatxe/spilo"
+readme = "README.md"
+
+[badges]
+travis-ci = { repository = "aatxe/spilo" }
+
+[dependencies]
+env_logger = "0.5"
+failure = "0.1"
+futures = "0.1"
+log = "0.4"
+irc = "0.13"
+tokio-core = "0.1"
+tokio-io = "0.1"

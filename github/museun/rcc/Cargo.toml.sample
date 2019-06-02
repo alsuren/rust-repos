@@ -1,0 +1,11 @@
+[package]
+name = "rcc"
+version = "0.1.0"
+authors = ["museun <museun@outlook.com>"]
+build = "build.rs"
+
+[features]
+default = [] 
+dump = []
+testing = []
+tracer = []

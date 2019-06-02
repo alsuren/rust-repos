@@ -1,0 +1,7 @@
+[package]
+name = "little_compiler"
+version = "0.1.0"
+authors = ["Elías Puma <elpumitaelias@gmail.com>"]
+
+[dependencies]
+compiler = { path = "libs/compiler" }

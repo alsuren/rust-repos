@@ -1,0 +1,26 @@
+[package]
+name = "tiff"
+version = "0.3.1"
+authors = [
+    "ccgn",
+    "bvssvni <bvssvni@gmail.com>",
+    "nwin",
+    "TyOverby <ty@pre-alpha.com>",
+    "HeroicKatora",
+    "Calum",
+    "CensoredUsername <cens.username@gmail.com>",
+    "Robzz",
+    "birktj"]
+license = "MIT"
+description = "TIFF decoding and encoding library in pure Rust"
+repository = "https://github.com/image-rs/image-tiff"
+exclude = ["tests/images/*", "tests/fuzz_images/*"]
+
+[dependencies]
+byteorder = "1.2"
+lzw = "0.10"
+num-derive = "0.2"
+num-traits = "0.2"
+
+[dev-dependencies]
+tempfile = "3.0"

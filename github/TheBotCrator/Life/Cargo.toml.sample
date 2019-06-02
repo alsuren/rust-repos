@@ -1,0 +1,48 @@
+[package]
+name = "sushii"
+version = "0.1.15"
+authors = ["drklee3 <drklee3@users.noreply.github.com>"]
+
+[dependencies]
+dotenv = "0.10.1"
+env_logger = "0.4.3"
+log = "0.3"
+chrono = "0.4.0"
+timeago = "0.1.5"
+typemap = "0.3.3"
+serde = "1.0.15"
+serde_json = "1.0"
+serde_derive = "1.0.15"
+lazy_static = "0.2.9"
+reqwest = "0.8.1"
+diesel = { version = "1.0.0", features = ["postgres", "chrono", "serde_json", "r2d2", "numeric"] }
+diesel_migrations = "1.0.0"
+rand = "0.4"
+Inflector = "0.11.1"
+regex = "0.2.3"
+darksky = { version = "0.7", features = ["reqwest"]}
+hourglass = "0.7.1"
+psutil = "1.1.0"
+sys-info = "0.5.6"
+parking_lot = { version = "0.5.3", features = ["deadlock_detection"] }
+base64 = "0.9.0"
+dogstatsd = "0.4.0"
+bigdecimal = "0.0.11"
+num-traits = "0.1.40"
+clippy = { version = "*", optional = true }
+
+[dependencies.serenity]
+version = "0.5.11"
+
+[dependencies.vlive]
+version = "0.1.5"
+git = "https://github.com/drklee3/vlive-rs"
+branch = "master"
+
+[dependencies.urbandictionary]
+version = "0.3.0"
+git = "https://github.com/zeyla/urbandictionary.rs"
+branch = "master"
+
+[patch.crates-io]
+openssl = { git = "https://github.com/ishitatsuyuki/rust-openssl", branch = "0.9.x" }

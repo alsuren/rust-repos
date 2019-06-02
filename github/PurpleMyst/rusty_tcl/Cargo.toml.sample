@@ -1,0 +1,25 @@
+[package]
+name = "rusty-tcl"
+version = "0.10.0"
+
+description = "Run tcl in Rust!"
+
+repository = "https://github.com/PurpleMyst/rusty_tcl"
+
+license = "MIT"
+
+readme = "README.md"
+documentation = "https://purplemyst.github.io/rusty_tcl"
+
+authors = ["Purple Myst <PurpleMyst@users.noreply.github.com>"]
+
+[lib]
+doc = true
+
+[dependencies]
+rusty-tcl-sys = { "path" = "./rusty-tcl-sys", version = "1.1.3" }
+failure = "0.1.1"
+failure_derive = "0.1.1"
+
+[badges]
+travis-ci = { repository = "PurpleMyst/rusty-tcl", branch = "master" }

@@ -1,0 +1,11 @@
+[package]
+name = "chatting"
+version = "0.1.0"
+authors = ["makeapp <liuyh1@shanghaitech.edu.cn>", "Zean Zhou <zhouza@shanghaitech.edu.cn>"]
+
+[dependencies]
+websocket = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+rand = "*"

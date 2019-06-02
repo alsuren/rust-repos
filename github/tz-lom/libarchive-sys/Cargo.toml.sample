@@ -1,0 +1,21 @@
+[package]
+
+name = "libarchive-sys"
+version = "0.0.1"
+authors = ["Nuzhdin Urii aka tz-lom <nuzhdin.urii@gmail.com>"]
+license = "MIT"
+
+description="Bindings to system library libarchive"
+repository="https://github.com/tz-lom/libarchive-sys"
+
+
+build = "build.rs"
+
+[dependencies]
+time="*"
+
+[lib]
+name = "Archive"
+
+[build-dependencies]
+pkg-config = "0.3.3"

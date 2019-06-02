@@ -1,0 +1,25 @@
+[package]
+name = "test_piston"
+version = "0.1.0"
+authors = ["AZARI Nicolas <nicodinh@azari.fr>"]
+
+[dependencies]
+piston = "0.24.0"
+piston2d-graphics = "0.16.0"
+pistoncore-glutin_window = "0.28.0"
+piston2d-opengl_graphics = "0.31.0"
+
+# [target.x86_64-pc-windows-gnu.freetype]
+# rustc-link-search = ["C:/msys64/mingw64/bin"]
+# rustc-link-lib = ["freetype-6"]
+# root = "C:/msys64/mingw64/bin"
+#
+# [target.i686-pc-windows-gnu.freetype]
+# rustc-link-search = ["C:/msys64/mingw32/bin"]
+# rustc-link-lib = ["freetype-6"]
+# root = "C:/msys64/mingw32/bin"
+
+# [target.x86_64-pc-windows-gnu.freetype]
+# rustc-link-search = ["C:/msys64/mingw64/lib"]
+# rustc-link-lib = ["freetype.dll"]
+# root = "C:/msys64/mingw64/lib"

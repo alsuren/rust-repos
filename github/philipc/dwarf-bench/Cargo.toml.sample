@@ -1,0 +1,20 @@
+[package]
+name = "dwarf-bench"
+version = "0.0.1"
+authors = ["Philip Craig <philipjcraig@gmail.com>"]
+description = "Benchmark rust DWARF libraries"
+keywords = ["DWARF", "ELF"]
+license = "MIT/Apache-2.0"
+build = "build.rs"
+
+[dev-dependencies]
+dwarf = { git = "https://github.com/philipc/rust-dwarf.git" }
+gimli = { git = "https://github.com/gimli-rs/gimli.git" }
+
+[features]
+libdwarf = [ "io" ]
+elfutils = [ "io" ]
+io = []
+
+[profile.bench]
+debug = true

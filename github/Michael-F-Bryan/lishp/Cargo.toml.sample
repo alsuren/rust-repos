@@ -1,0 +1,8 @@
+[package]
+name = "lishp"
+version = "0.1.0"
+authors = ["Michael Bryan <michaelfbryan@gmail.com>"]
+
+[dependencies]
+regex = "*"
+tempfile = "*"

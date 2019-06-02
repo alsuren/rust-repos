@@ -1,0 +1,11 @@
+[package]
+name = "advent-of-code-2017"
+version = "0.1.0"
+authors = ["Toby Dimmick <tobydimmick@protonmail.ch>"]
+
+[dependencies]
+regex = "*"
+lazy_static = "*"
+itertools = "*"
+ndarray = "*"
+arrayref = "*"

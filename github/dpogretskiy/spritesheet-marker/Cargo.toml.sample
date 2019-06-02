@@ -1,0 +1,29 @@
+[package]
+name = "tilesheet-marker"
+version = "0.0.1"
+authors = ["Dmitriy Pogretskiy <dpogretskiy@gmail.com>"]
+#build = "build.rs"
+
+[lib]
+name = "marker"
+path = "src/lib.rs"
+
+[dependencies]
+serde_json = "*"
+serde_derive = "*"
+serde = "*"
+image = "*"
+ggez = { version = "0.3", features = ["cargo-resource-root"] }
+
+[[bin]]
+bin = "main.rs"
+name = "marker"
+
+[target.'cfg(windows)'.dependencies]
+native-windows-gui = "0.2.0"
+
+[target.'cfg(unix)'.dependencies]
+gtk = {version = "0.2.0", features = ["v3_16"] }
+
+[profile.dev]
+codegen-units = 3

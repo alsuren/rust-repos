@@ -1,0 +1,13 @@
+[package]
+name = "ordoo"
+version = "0.1.0"
+authors = ["imamdigmi <imam.digmi@gmail.com>"]
+
+[dependencies]
+hyper = "0.10"
+hyperlocal = "0.3.0"
+rustc-serialize = "0.3"
+
+[lib]
+name = "ordoo"
+path = "src/lib.rs"

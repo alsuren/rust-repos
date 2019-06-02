@@ -1,0 +1,31 @@
+[package]
+name = "anne"
+description = "Machine Learning Framework"
+version = "0.0.1"
+authors = [
+  "Ben Kloosterman <bklooste@gmail.com>"
+]
+repository = "https://github.com/autumnai/leaf"
+homepage = "https://github.com/autumnai/leaf"
+documentation = "http://autumnai.github.io/leaf"
+readme = "README.md"
+keywords = ["deep-learning", "neural-networks", "machine-learning", "framework"]
+license = "MIT"
+
+[dependencies]
+# phloem = "0.2.4"
+# rblas = "0.0.9"
+log = "*"
+env_logger = "*"
+num = "*"
+rand = "*"
+rustc-serialize = "*"
+# clippy = "0.0.23"
+num_cpus = "*"
+scoped_threadpool = "*"
+time ="*"
+
+
+[features]
+default = []
+# dev = [] # possibly for clippy

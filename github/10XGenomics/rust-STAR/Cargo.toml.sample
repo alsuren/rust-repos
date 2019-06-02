@@ -1,0 +1,17 @@
+[package]
+name = "STAR"
+version = "0.1.0"
+authors = ["Patrick Marks <patrick@10xgenomics.com>"]
+build = "build.rs"
+
+
+[dependencies]
+libc = "*"
+failure = "*"
+failure_derive = "*"
+rust-htslib = { git = "https://github.com/rust-bio/rust-htslib.git" }
+
+[build-dependencies]
+bindgen = "*"
+cc = "^1"
+fs-utils = "*"

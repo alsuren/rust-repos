@@ -1,0 +1,13 @@
+[package]
+name = "brs"
+version = "0.3.0"
+authors = ["Johannes Holzfuß <johannes@holzfuss.name>"]
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+hyper = "0.9"
+time = "0.1"
+rand = "0.3"
+fnv = "1.0"

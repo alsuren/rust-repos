@@ -1,0 +1,21 @@
+[package]
+authors = ["Ashley Towns <mail@ashleytowns.id.au>"]
+description = "Peripheral access API for STM32L4X6 microcontrollers"
+documentation = "https://docs.rs/stm32L4X6"
+keywords = ["no-std", "arm", "cortex-m", "stm32"]
+license = "MIT OR Apache-2.0"
+name = "stm32l4x6"
+repository = "https://github.com/japaric/stm32L4X6"
+version = "0.0.1"
+
+[dependencies]
+cortex-m = "0.3.0"
+bare-metal = "0.1.1"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.3.0"
+
+[features]
+rt = ["cortex-m-rt"]

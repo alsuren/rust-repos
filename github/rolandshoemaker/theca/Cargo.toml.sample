@@ -1,0 +1,24 @@
+[package]
+
+name = "theca"
+version = "1.0.0-nightly"
+authors = ["Roland Shoemaker <roland@bind.es>"]
+
+[lib]
+name = "theca"
+path = "src/theca/lib.rs"
+
+[[bin]]
+name = "theca"
+test = false
+doc = false
+
+[dependencies]
+time = "*"
+regex = "*"
+regex_macros = "*"
+rustc-serialize = "*"
+docopt = "*"
+rust-crypto = "*"
+rand = "*"
+tempdir = "*"

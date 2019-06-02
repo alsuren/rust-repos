@@ -1,0 +1,26 @@
+[package]
+name = "filesender"
+version = "0.2.0"
+authors = ["Flakebi <flakebi@t-online.de>"]
+
+[profile.release]
+lto = true
+
+[features]
+default = []
+bundled = []
+
+[dependencies]
+clap = "*"
+error-chain = "*"
+hyper = "0.9"
+mime_multipart = "*"
+glib = "*"
+gdk = "*"
+rocket = "*"
+rocket_codegen = "*"
+tempfile = "*"
+
+[dependencies.gtk]
+version = "*"
+features = ["v3_10"]

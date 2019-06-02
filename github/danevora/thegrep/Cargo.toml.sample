@@ -1,0 +1,9 @@
+[package]
+name = "thegrep"
+version = "1.0.0"
+authors = ["Daniel Evora <devora@live.unc.edu>, Peter Morrow <peterjm@live.unc.edu>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2"
+rand = "0.6"

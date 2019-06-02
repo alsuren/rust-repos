@@ -1,0 +1,14 @@
+[package]
+name = "duck_duck_swim"
+version = "0.1.0"
+authors = ["Emil Segerbäck <emilsegerback@gmail.com>"]
+
+[dependencies]
+gfx = "0.12.*"
+specs = "0.7.*"
+nalgebra = "0.9.*"
+pegasus = "0.2.*"
+glutin = "0.6.*"
+gfx_window_glutin = "0.12.*"
+image = "*"
+glob = "*"

@@ -1,0 +1,53 @@
+[package]
+name = "tr1pd"
+version = "0.3.1"
+description = "tamper resistant audit log"
+authors = ["kpcyrd <git@rxv.cc>"]
+license = "AGPL-3.0"
+repository = "https://github.com/kpcyrd/tr1pd"
+categories = ["command-line-utilities"]
+readme = "README.md"
+
+[[bin]]
+name = "tr1pd"
+path = "src/bin/tr1pd.rs"
+doc = false
+test = false
+
+[[bin]]
+name = "tr1pctl"
+path = "src/bin/tr1pctl.rs"
+test = false
+
+[badges]
+travis-ci = { repository = "kpcyrd/tr1pd" }
+
+[dependencies]
+nom = "3.2"
+structopt = "0.2"
+error-chain = "0.11"
+sodiumoxide = "0.0.16"
+sha3 = "0.7"
+libc = "0.2"
+users = "0.6.0"
+pledge = "0.3.1"
+
+log = "0.4"
+env_logger = "0.5"
+colored = "1.6"
+human-size = "0.3"
+
+zmq = "0.8.2"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+
+clippy = { version = "*", optional = true }
+
+[target.'cfg(target_os="linux")'.dependencies]
+seccomp-sys = "0.1.2"
+caps = "0.2"
+
+[dev-dependencies]
+pseudo = "0.1"
+boxxy = "0.4"

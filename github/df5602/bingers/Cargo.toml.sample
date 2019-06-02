@@ -1,0 +1,20 @@
+[package]
+name = "bingers"
+version = "0.1.0"
+authors = ["df5602 <dominik@fankhausers.ch>"]
+
+[dependencies]
+hyper = "*"
+percent-encoding = "*"
+hyper-tls = "*"
+futures = "*"
+tokio-core = "*"
+tokio-retry = "*"
+tokio-timer = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+clap = "*"
+error-chain = "*"
+app_dirs = "*"
+chrono = { version = "*", features = ["serde"] }

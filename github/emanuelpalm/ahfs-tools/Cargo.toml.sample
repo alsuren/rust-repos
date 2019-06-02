@@ -1,0 +1,6 @@
+[workspace]
+members = ["arspec", "arspec_cli", "arspec_doc", "arspec_macro", "arspec_parser"]
+
+[profile.release]
+lto = true
+panic = "abort"

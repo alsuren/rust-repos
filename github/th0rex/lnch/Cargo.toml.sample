@@ -1,0 +1,8 @@
+[package]
+name = "lnch"
+version = "0.1.0"
+authors = ["th0rex"]
+edition = "2018"
+
+[dependencies]
+libc = "*"

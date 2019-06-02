@@ -1,0 +1,9 @@
+[package]
+name = "rust-conways"
+version = "0.1.0"
+authors = ["Michael Goddard <mikeygiom@gmail.com>"]
+
+[dependencies]
+getopts = "0.2"
+rand = "0.3"
+stopwatch = "0.0.7"

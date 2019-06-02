@@ -1,0 +1,10 @@
+[package]
+name = "lox"
+version = "0.1.0"
+authors = ["Justin Mayhew <mayhew@live.ca>"]
+
+[dependencies]
+chrono = "0.4.0"
+env_logger = "0.5.2"
+log = "0.4.1"
+rustyline = "1.0.0"

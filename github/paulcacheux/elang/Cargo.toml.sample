@@ -1,0 +1,25 @@
+[package]
+name = "elang"
+version = "0.1.0"
+authors = ["Paul CACHEUX <paulcacheux@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "elang"
+path = "src/lib.rs"
+
+[[bin]]
+name = "elang_driver"
+path = "src/driver.rs"
+
+[build-dependencies]
+lalrpop = "0.12"
+
+[dependencies]
+lalrpop-util = "0.12"
+regex = "0.2"
+clap = "2.22"
+itertools = "0.5"
+unicode-xid = "0.0.4"
+tempdir = "0.3"
+rayon = "0.7"

@@ -1,0 +1,15 @@
+[package]
+name = "radar-rs"
+version = "0.1.0"
+authors = ["Adrien Dubouchet, Alexandre Jubert"]
+
+[dependencies]
+gl = "*"
+image = "*"
+rustc-serialize = "*"
+time = "*"
+rand = "*"
+specs ="*"
+
+[dependencies.glfw]
+git = "https://github.com/PistonDevelopers/glfw-rs.git"

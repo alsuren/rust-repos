@@ -1,0 +1,11 @@
+[package]
+name = "yals"
+version = "0.1.0"
+authors = ["Matthias Müller-Brockhausen <git@mmb2.click>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+rayon = "1.0"
+serde = "1.0"
+serde_json = "1.0"

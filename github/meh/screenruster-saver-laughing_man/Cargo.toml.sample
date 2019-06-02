@@ -1,0 +1,14 @@
+[package]
+name    = "screenruster-saver-laughing_man"
+version = "0.1.3"
+
+authors = ["meh. <meh@schizofreni.co>"]
+license = "GPL-3.0"
+
+description = "Ghost in the Shell inspired screen saver for ScreenRuster."
+repository  = "https://github.com/meh/screenruster-saver-laughing_man"
+keywords    = ["saver", "screenruster", "x11"]
+
+[dependencies]
+nalgebra           = "0.11"
+screenruster-saver = "0.1"

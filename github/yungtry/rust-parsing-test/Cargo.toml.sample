@@ -1,0 +1,7 @@
+[package]
+name = "rust-parsing-test"
+version = "0.1.0"
+authors = ["try"]
+[dependencies]
+select = "0.3.0"
+hyper = "0.10.5"

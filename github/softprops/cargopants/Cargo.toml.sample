@@ -1,0 +1,19 @@
+[package]
+
+name = "cargopants"
+version = "0.0.1"
+authors = ["softprops <d.tangren@gmail.com>"]
+description = "A client interface got crates.io"
+documentation = "https://github.com/softprops/cargopants#readme"
+homepage = "https://github.com/softprops/cargopants"
+repository = "https://github.com/softprops/cargopants"
+keywords = ["crates", "crates.io"]
+license = "MIT"
+
+[dependencies]
+mime = "0.1"
+rustc-serialize = "0.3"
+
+[dependencies.hyper]
+version = "0.6"
+features = ["timeouts"]

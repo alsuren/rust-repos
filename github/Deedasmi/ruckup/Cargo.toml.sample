@@ -1,0 +1,27 @@
+[package]
+name = "ruckup"
+version = "0.0.5"
+authors = ["Richard Petrie <rap1011@ksu.edu>"]
+
+[lib]
+name = "lib"
+path = "src/lib/mod.rs"
+
+[[bin]]
+name = "ruckup"
+path = "src/bin.rs"
+
+[dependencies]
+rust_sodium = "0.1.2"
+rustc-serialize = "0.3"
+preferences = "0.7.2"
+app_dirs = "^1.1.1"
+clap = {version = "2.18", features = ["yaml"]}
+walkdir = "1.0.7"
+itertools = "0.5.5"
+log = "0.3.6"
+log4rs = "0.5.2"
+lazy_static = "0.2.1"
+threadpool = "1.0"
+chrono = { version = "0.2", features = ["rustc-serialize"] }
+error-chain = "0.7.2"

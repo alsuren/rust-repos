@@ -1,0 +1,11 @@
+[package]
+name        = "httpdl"
+version     = "0.3.0"
+authors     = ["Igor Baidiuk <target.san@gmail.com>"]
+description = "A simple HTTP file downloader. Supports specifying number of threads and limiting download speed"
+
+[dependencies]
+clap            = "2.20.0"
+thread-scoped   = "1.0.1"
+error-chain     = "0.7.2"
+hyper           = "0.10.0"

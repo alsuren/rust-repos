@@ -1,0 +1,20 @@
+[package]
+name = "pypiserver"
+version = "1.0.0"
+authors = ["Matthew Planchard <msplanchard@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "~2.32.0"
+dirs = "~1.0.5"
+dotenv = "~0.13.0"
+lazy_static = "~1.3.0"
+tera = "~0.11.20"
+warp = "~0.1.12"
+
+[dependencies.rusqlite]
+version = "~0.18.0"
+features = ["bundled"]
+
+[dev-dependencies]
+tempfile = "~3.0.7"

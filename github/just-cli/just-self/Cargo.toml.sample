@@ -1,0 +1,10 @@
+[package]
+name = "just-self"
+version = "0.1.0"
+authors = ["Randy Schütt <rswhite4@googlemail.com>"]
+edition = "2018"
+
+[dependencies]
+just-core = { git = "https://github.com/just-cli/just-core" }
+just-extension = { git = "https://github.com/just-cli/just-extension" }
+structopt = "0.2.14"

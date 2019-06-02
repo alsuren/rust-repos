@@ -1,0 +1,19 @@
+[package]
+name = "twitter-get-token"
+version = "0.1.0"
+authors = ["kgtkr <kgtkr.jp@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.8.2"
+rust-crypto = "0.2"
+chrono = "0.4"
+uuid = "0.5"
+url = "0.5"
+base64 = "0.6"
+hyper = "0.11"
+serde_urlencoded = "0.5.1"
+serde = "1.0.91"
+serde_derive = "1.0.91"
+toml = "0.5.1"
+rpassword = "3.0.2"

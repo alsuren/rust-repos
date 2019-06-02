@@ -1,0 +1,30 @@
+[package]
+
+name = "piston3d-gfx_voxel"
+version = "0.27.0"
+authors = [
+    "Ty Overby <ty@pre-alpha.com>",
+    "eddyb",
+    "Sven Nilsen <bvssvni@gmail.com>"
+]
+keywords = ["gfx", "3d", "voxel", "piston"]
+description = "A voxel rendering library on top of Gfx"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/pistondevelopers/gfx_voxel.git"
+homepage = "https://github.com/pistondevelopers/gfx_voxel"
+documentation = "https://docs.rs/piston3d-gfx_voxel"
+
+[lib]
+
+name = "gfx_voxel"
+
+[dependencies]
+array = "0.0.1"
+gfx = "0.17.0"
+piston-gfx_texture = "0.35.0"
+
+[dependencies.image]
+version = "0.21.0"
+default-features = false
+features = ["png"]

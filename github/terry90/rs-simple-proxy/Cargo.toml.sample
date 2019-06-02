@@ -1,0 +1,31 @@
+[package]
+name    = "simple_proxy"
+edition = "2018"
+version = "1.1.0"
+authors = ["Terry Raimondo <terry.raimondo@gmail.com>"]
+description = "Simple proxy with middlewares, easy to customize, easy to use."
+license = "Apache-2.0"
+homepage = "https://github.com/terry90/rs-simple-proxy"
+repository = "https://github.com/terry90/rs-simple-proxy"
+
+[package.metadata.docs.rs]
+features = ["docs"]
+
+[features]
+router = ["regex", "serde_regex"]
+health = []
+cors = []
+docs   = ["router", "health", "cors"]
+
+[dependencies]
+futures        = "0.1.25"
+log            = "0.4.6"
+chrono         = { version = "0.4.6", features = ["serde"] }
+regex          = { version = "1.1.0", optional = true }
+serde_regex    = { version = "0.3.1", optional = true }
+serde_json     = "1.0.38"
+serde_derive   = "1.0.87"
+serde          = "1.0.87"
+rand           = "0.6.5"
+hyper          = "0.12.24"
+http           = "0.1.15"

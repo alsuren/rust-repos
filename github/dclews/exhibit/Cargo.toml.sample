@@ -1,0 +1,9 @@
+[package]
+name = "exhibit"
+version = "0.1.0"
+authors = ["xClueless"]
+
+[dependencies]
+byteorder = "*"
+flate2 = "*"
+getopts = "*"

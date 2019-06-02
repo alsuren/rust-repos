@@ -1,0 +1,12 @@
+[package]
+name = "service_utils"
+version = "0.1.0"
+authors = ["lyuboraykov <lyubo.raykov@gmail.com>"]
+
+[dependencies]
+rand = "0.3.17"
+sha2 = "0.6.0"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"

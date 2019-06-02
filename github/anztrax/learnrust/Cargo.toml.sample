@@ -1,0 +1,16 @@
+[package]
+name = "learnrust"
+version = "0.1.0"
+authors = ["andrewananta <kuro.ketanitem@gmail.com>"]
+description = "the only purpose for this package for try cargo publish"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+rand = "0.3.14"
+
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3

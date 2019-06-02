@@ -1,0 +1,17 @@
+[package]
+name = "apex-sonata"
+version = "0.1.0"
+authors = ["AXAz0r <thealeksaradovic@gmail.com>"]
+
+[dependencies]
+rand = "*"
+serde = "*"
+serde_derive = "*"
+serde_yaml = "*"
+serde_json = "*"
+typemap = "*"
+crossbeam-deque = "*"
+
+[dependencies.serenity]
+version = "*"
+features = ["builder", "cache", "client", "framework", "gateway", "http", "model", "standard_framework", "utils", "voice"]

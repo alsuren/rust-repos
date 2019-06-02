@@ -1,0 +1,14 @@
+[package]
+name = "apt-release-file"
+version = "0.1.1"
+authors = ["Michael Aaron Murphy <mmstickman@gmail.com>"]
+description = "Library for serializing / deserializing apt dist release files"
+license = "MIT"
+readme = "README.md"
+keywords = ["apt", "release", "linux"]
+
+[dependencies]
+cascade = "0.1.2"
+chrono = "0.4.6"
+deb-architectures = "0.1.0"
+smart-default = "0.2.0"

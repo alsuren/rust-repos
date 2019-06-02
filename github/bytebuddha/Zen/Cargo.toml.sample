@@ -1,0 +1,9 @@
+[package]
+name = "Zen"
+version = "0.0.0"
+authors = ["bytebuddha"]
+description = "Empty crate To Reserve the name for planned Xi editor frontend"
+license = "Apache-2.0"
+
+[dependencies]
+ZenUi = {path ="ZenUi"}

@@ -1,0 +1,29 @@
+[package]
+name = "maze-rust"
+version = "0.2.0"
+authors = ["Kurt Symanzik <kurt@kbsymanzik.org>"]
+
+[dependencies]
+clap = "2.23.2"
+image = "*"
+imageproc = "0.7.0"
+rand = "0.3.15"
+rusttype = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "0.9"
+tempdir = "0.3"
+uuid = { version = "0.4", features = ["v4"] }
+
+[dependencies.gtk]
+version = "0.1.2"
+features = ["v3_10"]
+
+[lib]
+name = "kbsymanz_maze"
+path = "src/lib.rs"
+
+[[bin]]
+name = "maze"
+path = "src/main.rs"
+

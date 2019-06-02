@@ -1,0 +1,33 @@
+[package]
+name = "laserstorm"
+version = "0.1.0"
+authors = ["Jack Wrenn <me@jswrenn.com>"]
+
+[dependencies]
+rayon = "*"
+shrev = "*"
+specs = "*"
+specs-derive = "*"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+derive_more = "0.6.0"
+ncollide={git="https://github.com/thiolliere/ncollide/", branch="send_sync_removal"}
+elmesque="*"
+num-traits="*"
+piston="*"
+piston_window="*"
+piston2d-graphics = "0.13.0"
+amethyst={git="https://github.com/amethyst/amethyst", branch="develop"}
+alga="*"
+num-complex="*"
+time         = "0.1"
+num          = "0.1"
+rand         = "0.3"
+glfw="*"
+kiss3d ="*"
+acacia = "0.1.2"
+
+[dependencies.nalgebra]
+version="0.13"
+features=["serde-serialize"]

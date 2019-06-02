@@ -1,0 +1,16 @@
+[package]
+name = "rolldice"
+version = "0.1.4"
+license = "GPL-3.0"
+authors = ["Michael Aquilina <michaelaquilina@gmail.com>"]
+description = "Command line utility to generate dice roll values"
+documentation = "https://docs.rs/rolldice/"
+repository = "https://github.com/MichaelAquilina/rolldice"
+homepage = "https://github.com/MichaelAquilina/rolldice"
+
+[badges]
+travis-ci = { repository = "MichaelAquilina/rolldice", branch = "master" }
+
+[dependencies]
+rand = "0.4"
+clap = "2.29"

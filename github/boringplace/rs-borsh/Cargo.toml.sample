@@ -1,0 +1,26 @@
+[package]
+name = "rs-borsh"
+version = "0.1.0"
+edition = "2018"
+publish = true
+authors = ["Igor NIR Chudov <nir@sarfsc.ru>"]
+description = "Boring Shell"
+homepage = "https://github.com/boringplace/rs-borsh"
+repository = "https://github.com/boringplace/rs-borsh"
+readme = "README.md"
+categories = ["authentication", "command-line-utilities"]
+license = "Unlicense"
+license-file = "UNLICENSE"
+
+[dependencies]
+gettext   = "0.3"
+yaml-rust = "0.4"
+cursive   = "0.10"
+rusqlite  = "0.15"
+
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+rs-borsh = { path = "/usr/bin/rs-borsh" }
+

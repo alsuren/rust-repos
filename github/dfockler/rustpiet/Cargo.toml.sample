@@ -1,0 +1,16 @@
+[package]
+name = "rustpiet"
+version = "0.1.1"
+authors = ["Dan Fockler <dfockler13@gmail.com>"]
+
+description = "A Piet interpreter implementation in Rust"
+license = "MIT"
+
+categories = ["piet", "esolangs", "interpreters"]
+
+exclude = [
+  "assets/*",
+]
+
+[dependencies]
+image = "0.14.0"

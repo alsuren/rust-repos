@@ -1,0 +1,21 @@
+[package]
+
+name = "libnotify-sys"
+version = "0.5.0"
+authors = ["Mika Attila <radiantstatue@gmail.com>", "Julian Ospald <hasufell@posteo.de>"]
+license = "MIT"
+description = "FFI bindings to libnotify"
+readme = "README.md"
+repository = "https://github.com/hasufell/rust-libnotify-sys"
+keywords = ["libnotify", "notification"]
+
+build = "build.rs"
+links = "libnotify"
+
+[dependencies]
+gdk-pixbuf-sys = "^0.3.4"
+glib-sys = "^0.3.4"
+gobject-sys = "^0.3.4"
+
+[build-dependencies]
+pkg-config = "0.3"

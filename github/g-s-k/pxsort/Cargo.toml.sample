@@ -1,0 +1,21 @@
+[package]
+name = "pxsort"
+description = "Sort the pixels in an image"
+version = "0.5.0"
+authors = ["George Kaplan <george@georgekaplan.xyz>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/g-s-k/pxsort"
+readme = "./README.md"
+
+[dependencies]
+image = { version = "0.21.1", default-features = false, features = ["gif_codec", "jpeg", "ico", "png_codec", "pnm", "tga", "tiff", "webp", "bmp", "hdr", "dxt"] }
+strum = "0.15.0"
+structopt = "0.2.15"
+strum_macros = "0.15.0"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+indicatif = "0.11.0"
+
+[workspace]
+members = [ "examples/www" ]

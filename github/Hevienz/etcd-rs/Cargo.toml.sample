@@ -1,0 +1,17 @@
+[package]
+name = "etcd-rs"
+version = "0.1.0"
+authors = ["hevienz <hevienz@qq.com>"]
+edition = "2018"
+
+[dependencies]
+grpcio = "0.4.1"
+log = "0.4.6"
+env_logger = "0.6.0"
+futures = "0.1.25"
+protobuf = "2.0.5"
+
+
+[[example]]
+name = "put"
+path = "examples/put/main.rs"

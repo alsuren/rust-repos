@@ -1,0 +1,36 @@
+[package]
+name = "randomprime"
+version = "0.2.3"
+authors = ["April Wade <wayedt@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+adler32 = "1.0"
+clap = "2.9"
+encoding = "0.2"
+flate2 = "1.0"
+memmap = "0.4"
+preferences = "1.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+sha2 = "0.7"
+rand = "0.4"
+winapi = "0.3"
+
+ppcasm = { path = "ppcasm" }
+structs = { path = "structs" }
+reader_writer = { path = "reader_writer" }
+nod_wrapper = { path = "nod_wrapper" }
+
+[profile.release]
+lto = true
+panic = "unwind"
+
+[workspace]
+members = ["structs", "reader_writer", "auto_struct_macros", "ppcasm", "ppcasm/ppcasm_macro", "nod_wrapper"]
+
+[lib]
+name = "randomprime"
+path = "src/lib.rs"
+crate-type = ["rlib", "staticlib"]

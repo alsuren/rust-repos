@@ -1,0 +1,18 @@
+lib = {path = "pairlock.rs"}
+test = [{name = "tests", path = "tests.rs"}]
+
+[package]
+name = "pairlock"
+description = "A reader-writer lock with wait-free reads"
+keywords = ["sync", "rwlock", "mutex"]
+categories = ["data-structures", "concurrency"]
+license = "Apache-2.0 / MIT"
+version = "0.1.0"
+repository = "https://gitlab.com/torbmol/pairlock"
+readme = "README.md"
+authors = ["Torbjørn Birch Moltu <t.b.moltu@lyse.net>"]
+edition = "2018"
+
+[dev-dependencies]
+crossbeam = "0.3"
+num_cpus = "1.0"

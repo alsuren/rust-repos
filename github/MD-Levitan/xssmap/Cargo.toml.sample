@@ -1,0 +1,9 @@
+[package]
+name = "xssmap"
+version = "0.1.0"
+authors = ["MD-Levitan <ovsyanka@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+#argparse-rs = { git = "https://github.com/MD-Levitan/argparser-rs" }
+argparse-rs = { path = "/home/kali/Projects/argparser-rs"}

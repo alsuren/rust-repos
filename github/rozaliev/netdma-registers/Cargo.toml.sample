@@ -1,0 +1,15 @@
+[package]
+name = "netdma-registers"
+version = "0.1.0"
+authors = ["Evgeny Rozaliev <rozaliev@gmail.com>"]
+
+
+[lib]
+name = "registers"
+plugin = true
+
+[dependencies]
+Inflector = "0.2.0"
+
+[dev-dependencies]
+libc = "*"

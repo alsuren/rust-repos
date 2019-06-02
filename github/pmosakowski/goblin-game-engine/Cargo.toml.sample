@@ -1,0 +1,11 @@
+[package]
+name = "goblin"
+version = "0.1.0"
+authors = ["pmosakowski <pmosakowski@users.noreply.github.com>"]
+
+[dependencies]
+libc = "*"
+num = "*"
+
+[dependencies.x11]
+features = ["xlib"]

@@ -1,0 +1,11 @@
+[package]
+name = "markov"
+version = "0.1.0"
+authors = ["Madison McGaffin <greyhill@gmail.com>"]
+
+[lib]
+path = "src/lib.rs"
+name = "markov"
+
+[dependencies.rand]
+rand = "0.3.8"

@@ -1,0 +1,16 @@
+[package]
+
+name = "fun"
+version = "1.0.0"
+authors = ["J/A <archer884@gmail.com>"]
+
+[lib]
+
+name = "icndb"
+path = "src/lib.rs"
+
+[dependencies]
+
+getopts = "*"
+hyper = "*"
+rustc-serialize = "*"

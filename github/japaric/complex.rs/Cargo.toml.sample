@@ -1,0 +1,17 @@
+[package]
+
+name = "complex"
+version = "0.0.0"
+authors = ["Jorge Aparicio <japaricious@gmail.com>"]
+
+[dependencies]
+rand = "*"
+
+[dependencies.approx]
+git = "https://github.com/japaric/approx.rs"
+
+[dependencies.floaty]
+git = "https://github.com/japaric/float.rs"
+
+[dependencies.onezero]
+git = "https://github.com/japaric/onezero.rs"

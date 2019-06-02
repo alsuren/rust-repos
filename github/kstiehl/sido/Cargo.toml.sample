@@ -1,0 +1,11 @@
+[package]
+name = "sido"
+version = "0.1.0"
+authors = ["Kevin <kevinstiehl@live.de>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+
+[profile.release]
+lto = true

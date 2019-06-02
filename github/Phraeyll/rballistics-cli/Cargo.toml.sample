@@ -1,0 +1,16 @@
+[package]
+name = "point-mass-ballistics-cli"
+version = "0.0.1"
+authors = ["Phraeyll <Phraeyll@users.noreply.github.com>"]
+edition = "2018"
+
+[[bin]]
+name = "cli"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.33.0"
+
+[dependencies.point-mass-ballistics]
+git = "https://github.com/Phraeyll/point-mass-ballistics"
+branch = "master"

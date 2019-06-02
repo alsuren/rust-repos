@@ -1,0 +1,39 @@
+[package]
+name = "deoxy"
+version = "0.2.2"
+authors = ["Alex Hamilton <alex.hamilton@ou.edu>"]
+description = "A programmable, user-friendly buffer exchange system."
+license = "GPL-3.0-or-later"
+edition = "2018"
+
+[dependencies]
+actix-web = "0.7.18"
+deoxy-core = { version = "0.2.2", path = "core" }
+# deoxy-web = { version = "0.1.1", path = "web", optional = true }
+futures = "0.1.25"
+lazy_static = "1.2.0"
+log = "0.4.6"
+rppal = { version = "0.11.1", optional = true }
+uom = "0.22.1"
+uuid = { version = "0.7", features = ["serde", "v4"] }
+serde_derive = { version = "1.0.84", optional = true }
+serde = { version = "1.0.84", optional = true }
+
+[features]
+default = ["server", "use_rppal"]
+stub = []
+use_serde = ["deoxy-core/use_serde", "serde_derive", "serde"]
+server = ["use_serde"]
+use_rppal = ["rppal"]
+# web = ["deoxy-web"]
+
+
+[badges]
+travis-ci = { repository = "Aehmlo/deoxy", branch = "master" }
+maintenance = { status = "actively-developed" }
+
+[workspace]
+
+[dev-dependencies]
+pretty_env_logger = "0.3.0"
+termion = "1.5.1"

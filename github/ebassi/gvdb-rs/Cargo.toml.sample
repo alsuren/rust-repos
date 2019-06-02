@@ -1,0 +1,32 @@
+[package]
+name = "gvdb-rs"
+description = "Rust bindings for GVariant database"
+version = "0.1.0"
+authors = ["Emmanuele Bassi <ebassi@gnome.org>"]
+license = "LGPLv2.1+"
+repository = "https://github.com/ebassi/gvdb-rs/"
+keywords = ["glib", "gvariant", "database", "key/value"]
+homepage = "http://ebassi.github.io/gvdb-rs/"
+documentation = "http://ebassi.github.io/gvdb-rs/docs/gvdb-rs/"
+
+[lib]
+name = "gvdb"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "0.1"
+
+[dependencies.gvdb-sys]
+path = "gvdb-sys"
+version = "0.1.0"
+
+[dependencies.glib-sys]
+version = "0.4.0"
+git = "https://github.com/gtk-rs/sys"
+
+[dependencies.glib]
+version = "0.3.0"
+git = "https://github.com/gtk-rs/glib"
+
+[features]
+default = []

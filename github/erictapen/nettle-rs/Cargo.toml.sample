@@ -1,0 +1,10 @@
+[package]
+name = "nettle"
+version = "0.1.0"
+authors = ["Kai Michaelis <kai.michaelis@pep-project.org>"]
+
+[dependencies]
+nettle-sys = { git = "https://gitlab.com/sequoia-pgp/nettle-sys" }
+libc = "0.2.33"
+failure = "0.1.1"
+rand = "0.4"

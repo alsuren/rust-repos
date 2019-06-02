@@ -1,0 +1,10 @@
+[package]
+name = "cs025"
+version = "0.0.0"
+publish = false
+
+include = ["src/rust/**/*"]
+
+[[bin]]
+name = "cs025"
+path = "src/rust/main.rs"

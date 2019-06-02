@@ -1,0 +1,20 @@
+[package]
+authors = ["Peter A. Tariche <ptariche@gmail.com>"]
+name = "api_example"
+version = "0.2.0"
+
+[dependencies]
+hyper = "0.9.10"
+rustc-serialize = "0.3"
+chrono = { version = "0.2", features = ["rustc-serialize"] }
+dotenv = "0.8.0"
+diesel_codegen = { version = "0.9", features = ["postgres"] }
+uuid = { version = "^0.3.1", features = ["rustc-serialize"] }
+regex = "0.1.80"
+[dependencies.nickel]
+version = "0.9.0"
+
+[dependencies.diesel]
+version = "0.9.1"
+default-features = false
+features = ["postgres", "uuid", "chrono"]

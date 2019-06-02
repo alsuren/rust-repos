@@ -1,0 +1,8 @@
+[package]
+name = "NetTurn"
+version = "0.0.0"
+authors = ["Craig M. Brandenburg <c.m.brandenburg@gmail.com>"]
+
+[lib]
+name = "netturn"
+path = "src/lib/lib.rs"

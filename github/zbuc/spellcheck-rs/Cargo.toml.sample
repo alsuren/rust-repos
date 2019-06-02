@@ -1,0 +1,18 @@
+[package]
+name = "spellcheck-rs"
+version = "0.1.0-beta.0"
+authors = ["Chris Czub <chris.czub@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "A fast spellchecker written in Rust with Python bindings, optimized for OCR error correction"
+
+[lib]
+name = "bloomfilter"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.6.0-alpha.4"
+features = ["extension-module"]
+
+[dependencies]
+fasthash = "0.4"

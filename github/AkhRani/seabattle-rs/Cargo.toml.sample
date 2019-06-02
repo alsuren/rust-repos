@@ -1,0 +1,10 @@
+[package]
+name = "rust_seawar"
+version = "0.1.0"
+authors = ["Kevin Hart <kevin.kevinhart@gmail.com>"]
+
+[dependencies]
+rand = "*"
+rand_derive = "*"
+enum-map = "*"
+enum-map-derive = "*"

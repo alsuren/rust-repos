@@ -1,0 +1,41 @@
+[package]
+name = "logic_sim"
+version = "0.1.0"
+authors = ["AuroransSolis <primalucegd@gmail.com>"]
+
+[dependencies]
+azul = { git = "https://github.com/maps4print/azul", rev = "87d85a70176a8b0e6cbd516f7cb246238c371611" }
+
+[dev-dependencies]
+criterion = "0.2.7"
+
+[lib]
+name = "logic"
+path = "logic/lib.rs"
+
+[[bin]]
+name = "gui"
+path = "gui/main.rs"
+
+[[bench]]
+name = "logic_bench"
+harness = false
+path = "logic/logic_bench.rs"
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+incremental = false
+overflow-checks = false
+
+[profile.bench]
+opt-level = 3
+debug = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+incremental = false
+overflow-checks = false

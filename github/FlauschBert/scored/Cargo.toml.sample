@@ -1,0 +1,12 @@
+[package]
+name = "scored"
+version = "0.1.0"
+authors = ["Andreas Kutscheid <andreas@flauschhaus.org>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4.6"
+flexi_logger = "0.10.1"
+threadpool = "1.7.1"
+#tweetnacl = "0.2.1"
+#rusqlite = "0.15.0"

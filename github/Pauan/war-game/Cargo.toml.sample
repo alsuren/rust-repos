@@ -1,0 +1,20 @@
+[package]
+name = "war-game"
+version = "0.1.0"
+authors = ["Pauan <pcxunlimited@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+stdweb = "0.4.10"
+dominator = "0.3.3"
+discard = "1.0.4"
+futures-signals = "0.2.4"
+lazy_static = "1.2.0"
+rand = { version = "0.6.1", features = ["stdweb"] }
+serde = { version = "1.0.82", features = ["rc"] }
+serde_derive = "1.0.82"
+
+[patch.crates-io]
+stdweb = { path = "../stdweb" }
+#dominator = { path = "../rust-dominator" }
+#futures-signals = { path = "../rust-signals" }

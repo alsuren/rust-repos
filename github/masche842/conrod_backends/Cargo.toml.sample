@@ -1,0 +1,7 @@
+[package]
+name = "custom_backends"
+version = "0.1.0"
+authors = ["Marc Schettke <schettke@ms2.info>"]
+
+[dependencies]
+conrod = { git = "https://github.com/masche842/conrod", branch = "backend_agnostic" }

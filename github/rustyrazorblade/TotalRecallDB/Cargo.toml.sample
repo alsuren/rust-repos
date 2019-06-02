@@ -1,0 +1,17 @@
+[package]
+name = "totalrecalldb"
+version = "0.1.0"
+authors = ["Jon Haddad <jon@jonhaddad.com>"]
+
+[dependencies]
+peg = "*" # streamql parsing, possibly being retired
+peg-syntax-ext = "*"
+byteorder = "*"  # data type conversion
+nom = "*"
+clap = "*" # CLI parsing
+termion = "*"
+log = "*"
+env_logger = "*"
+vec_map = "*"
+tempdir = "0.3"
+uuid = "0.3.1"

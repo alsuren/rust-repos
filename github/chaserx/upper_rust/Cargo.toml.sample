@@ -1,0 +1,8 @@
+[package]
+name = "upper_rust"
+version = "0.2.0"
+authors = ["Chase Southard <chase.southard@gmail.com>"]
+
+[dependencies]
+dotenv = "0.10.1"
+reqwest = "0.8.0"

@@ -1,0 +1,22 @@
+[package]
+name = "rotor-tools"
+description = """
+    Various utility things for comfortable writing of application and protocols
+    using rotor library
+"""
+license = "MIT/Apache-2.0"
+readme = "README.rst"
+keywords = ["mio", "rotor", "async"]
+homepage = "http://github.com/tailhook/rotor-tools"
+documentation = "http://tailhook.github.io/rotor-tools"
+version = "0.3.2"
+authors = ["paul@colomiets.name"]
+
+[dependencies]
+rotor = "0.6.1"
+
+[dev-dependencies]
+rotor-test = "0.2.0"
+
+[lib]
+name = "rotor_tools"

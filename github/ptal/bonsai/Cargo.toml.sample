@@ -1,0 +1,38 @@
+[package]
+name = "bonsai"
+version = "0.1.0"
+authors = ["Pierre Talbot <ptalbot@hyc.io>"]
+
+description = "Language for specifying search strategies."
+repository = "https://github.com/ptal/bonsai"
+keywords = ["constraint", "language", "strategy"]
+license = "Apache-2.0"
+
+[lib]
+name = "libbonsai"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bonsai"
+doc = false
+
+[dependencies]
+oak = "^0.7.0"
+oak_runtime = "^0.5.5"
+partial = "^0.4.0"
+clap = "^2"
+syntex_pos = "0.58.1"
+syntex_errors = "0.58.1"
+syntex_syntax = "0.58.1"
+regex = "0.2"
+trilean = "^1.0.1"
+intervallum = "^1.2.0"
+gcollections = "^1.4.0"
+log = "^0.4"
+env_logger = "^0.5.12"
+
+[dependencies.pcp]
+git = "https://github.com/ptal/pcp"
+
+[dev-dependencies]
+term = "^0.5.1"

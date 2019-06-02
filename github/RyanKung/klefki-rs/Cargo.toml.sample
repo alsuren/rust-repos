@@ -1,0 +1,10 @@
+[package]
+name = "klefki"
+version = "0.1.0"
+authors = ["Ryan.K <ryankung@ieee.org>"]
+
+[dependencies]
+uint = "0.6.1"
+lazy_static = "1.2.0"
+hex="0.3.1"
+evcxr="0.3.2"

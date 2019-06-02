@@ -1,0 +1,9 @@
+[package]
+name = "read_file"
+version = "0.1.0"
+authors = ["linfeng.yuan <cxwcylf@126.com>"]
+
+[dependencies]
+basics={ path = "./basics" }
+networking = { path = "./networking"}
+iterator_example = { path = "./iterator_example"}

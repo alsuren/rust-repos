@@ -1,0 +1,18 @@
+[package]
+name = "tint-web"
+version = "0.1.0"
+authors = ["Siliang Cao <siliang.cao@gmail.com>"]
+
+[dependencies]
+futures = "0.1"
+tokio-core = "0.1"
+url = "1.2"
+serde = "1.0"
+serde_json = "1.0"
+
+[dependencies.hyper]
+version = "0.11.2"
+
+[dev-dependencies]
+serde_derive = "1.0"
+pretty_env_logger = "0.1"

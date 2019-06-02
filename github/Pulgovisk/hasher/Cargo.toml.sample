@@ -1,0 +1,23 @@
+[package]
+name = "hasher"
+version = "0.1.0"
+authors = ["pulga"]
+edition = "2018"
+
+[dependencies]
+sha2 = "*"
+sha3 = "*"
+ripemd160 = "*"
+ripemd320 = "*"
+md2 = "*"
+md4 = "*"
+md-5 = "*"
+whirlpool = "*"
+digest = "*"
+rpassword = "*"
+
+
+[dependencies.clap]
+version = "2.32"
+default-features = false
+features = [ "suggestions", "color" ]

@@ -1,0 +1,10 @@
+[package]
+name = "synth"
+version = "0.1.0"
+authors = ["Orson Peters <orsonpeters@gmail.com>"]
+
+[dependencies]
+midir = "*"
+arrayvec = "*"
+cpal = "*"
+quick-error = "*"

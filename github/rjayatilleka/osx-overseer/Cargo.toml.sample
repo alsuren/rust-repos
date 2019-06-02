@@ -1,0 +1,21 @@
+[package]
+name = "osx-overseer"
+version = "0.1.0"
+authors = ["Ramith Jayatilleka <ramith.jayatilleka@gmail.com>"]
+description = "Simple, lightweight userspace process manager for OS X."
+homepage = "https://github.com/rjayatilleka/osx-overseer"
+repository = "https://github.com/rjayatilleka/osx-overseer"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+syslog = "~3.1.0"
+unix_socket = "0.5.0"
+
+[[bin]]
+name = "overseer"
+path = "src/bin/client.rs"
+
+[[bin]]
+name = "overseerd"
+path = "src/bin/daemon.rs"

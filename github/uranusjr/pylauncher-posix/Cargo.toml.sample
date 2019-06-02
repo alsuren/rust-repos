@@ -1,0 +1,27 @@
+[package]
+name = "pylauncher"
+version = "0.1.1"
+authors = ["Tzu-ping Chung <uranusjr@gmail.com>"]
+description = "Python Launcher for POSIX"
+readme = "README.md"
+license = "ISC"
+
+[package.metadata.deb]
+depends = "$auto"
+section = "python"
+priority = "optional"
+
+[[bin]]
+name = "py"
+path = "src/main.rs"
+
+[dependencies]
+num-integer = "^0.1.39"
+rust-ini = "^0.13"
+
+# Remove after RFC 2361 is stable.
+# https://github.com/rust-lang/rust/issues/54306
+dbg = "^1.0.4"
+
+[target.'cfg(not(windows))'.dependencies]
+exec = "^0.3.1"

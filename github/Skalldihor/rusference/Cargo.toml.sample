@@ -1,0 +1,26 @@
+[package]
+name = "Rusference"
+version = "0.1.0"
+authors = ["Skalldihor", "Rodrigo Werlich"]
+
+[[bin]]
+name = "monitor"
+path = "src/monitor/main.rs"
+
+[[bin]]
+name = "aluno"
+path = "src/aluno/main.rs"
+
+[[bin]]
+name = "palestrante"
+path = "src/palestrante/main.rs"
+
+
+[dependencies]
+serde = "0.7.7"
+serde_derive = "*"
+bincode = "*"
+
+[lib]
+name = "common"
+path = "src/lib/common.rs"

@@ -1,0 +1,10 @@
+[package]
+name = "cli_unwort"
+version = "0.1.0"
+authors = ["Arne Dußin <arne.dussin@live.de>"]
+
+[dependencies]
+clap = "*"
+
+[dependencies.unwort]
+path = "lib_unwort"

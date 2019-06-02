@@ -1,0 +1,16 @@
+[package]
+name = "rprop"
+version = "0.1.0"
+authors = ["Jesse van Rhijn <jesse.v.rhijn@gmail.com>"]
+edition = "2018"
+
+[workspace]
+members = ["lib/airfoil", "lib/math"]
+
+[dependencies]
+rs-xfoil = "0.0.1"
+itertools = "0.8.0"
+math = { path = "lib/math" }
+airfoil = { path = "lib/airfoil" }
+propeller = { path = "lib/propeller" }
+coney = { path = "lib/coney" }

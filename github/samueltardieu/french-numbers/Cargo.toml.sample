@@ -1,0 +1,20 @@
+[package]
+name = "french-numbers"
+description = "Represent numbers in French language"
+keywords = ["text", "french", "numbers"]
+license = "Apache-2.0/MIT"
+homepage = "https://rfc1149.net/devel/french-numbers.html"
+documentation = "https://docs.rs/french-numbers/"
+version = "1.1.1-pre"
+authors = ["Samuel Tardieu <sam@rfc1149.net>"]
+categories = ["value-formatting"]
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+num-integer = "0.1"
+num-traits = "0.2"
+
+[dev-dependencies]
+clap = "2.25"
+num-bigint = "0.2"

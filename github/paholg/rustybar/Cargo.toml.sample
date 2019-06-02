@@ -1,0 +1,23 @@
+[package]
+  name = "rustybar"
+  version = "0.2.0"
+  authors = ["Paho Lurie-Gregg <paho@paholg.com>"]
+  edition = "2018"
+
+[dependencies]
+  chrono = "*"
+  debug_stub_derive = "*"
+  directories = "*"
+  failure = "*"
+  inotify = "*"
+  lazy_static = "*"
+  regex = "*"
+  serde = "*"
+  serde_derive = "*"
+  slog = "*"
+  slog-async = "*"
+  slog-term = "*"
+  slog-scope = "*"
+  structopt = "*"
+  sysinfo = "*"
+  toml = "*"

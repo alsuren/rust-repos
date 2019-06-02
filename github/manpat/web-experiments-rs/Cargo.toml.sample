@@ -1,0 +1,9 @@
+[package]
+name = "experiments"
+version = "0.1.0"
+authors = ["manpat <pat@patsown.com>"]
+build = "build.rs"
+
+[dependencies]
+web-common = { git = "https://github.com/manpat/web-common-rs.git" }
+# web-common = { path = "../web-common" }

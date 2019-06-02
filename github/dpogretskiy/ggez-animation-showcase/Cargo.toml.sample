@@ -1,0 +1,19 @@
+[package]
+name = "guide"
+version = "0.1.0"
+authors = ["Dmitriy Pogretskiy <dpogretskiy@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+rand = "0.3"
+ggez = { version = "0.3.3", features=["cargo-resource-root"] }
+serde_json = "*"
+nalgebra = "0.13"
+specs = "*"
+
+[dependencies.tilesheet-marker]
+path = "../spritesheet-marker"
+version = "0.0.1"
+
+[features]
+cargo-resource-root = []

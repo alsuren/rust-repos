@@ -1,0 +1,16 @@
+[package]
+name = "crawwwlur"
+version = "0.1.0"
+authors = ["ldesgoui <ldesgoui@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/ldesgoui/crawwwlur"
+license = "Apache-2.0 OR MIT"
+readme = "README.md"
+
+[dependencies]
+actix-web = "1.0.0-rc"
+env_logger = "0.6"
+reqwest = "0.9"
+scraper = "0.10"
+serde.features = [ "derive" ]
+serde.version = "1"

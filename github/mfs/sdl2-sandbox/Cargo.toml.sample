@@ -1,0 +1,11 @@
+[package]
+name = "sdl2-sandbox"
+version = "0.1.0"
+authors = ["Mike Sampson <mike@sambodata.com>"]
+
+[dependencies]
+sdl2 = "0.16.1"
+sdl2_ttf = "0.16.1"
+sdl2_image = "0.16.0"
+cfor = "*"
+fnv = "*"

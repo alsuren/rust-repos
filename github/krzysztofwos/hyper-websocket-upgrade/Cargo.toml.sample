@@ -1,0 +1,20 @@
+[package]
+name = "hyper-websocket-upgrade"
+version = "0.1.0"
+authors = ["Krzysztof Woś <krzysztof.wos@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1.25"
+hyper = "0.12.18"
+rustc-serialize = "0.3.24"
+sha1 = "0.6.0"
+slab = "0.4.1"
+slog = { version = "2.3.3", features = ["max_level_trace", "release_max_level_debug"] }
+slog-async = "2.3.0"
+slog-stdlog = "3.0.2"
+slog-term = "2.4.0"
+structopt = "0.2"
+tokio = "0.1.13"
+tokio-tungstenite = "0.6.0"
+tungstenite = "0.6.1"

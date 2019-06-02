@@ -1,0 +1,10 @@
+[package]
+name = "bookworm"
+version = "0.1.0"
+authors = ["Andrew Radev <andrey.radev@gmail.com>"]
+
+[dependencies]
+time = "*"
+rustyline = "*"
+walkdir = "*"
+threadpool = "*"

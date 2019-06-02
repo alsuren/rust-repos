@@ -1,0 +1,7 @@
+[package]
+name = "url_shortener"
+version = "0.1.0"
+authors = ["Nikos Fytros <fytros.n@gmail.com>"]
+
+[dependencies]
+actix-web = "0.6"

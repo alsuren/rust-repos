@@ -1,0 +1,26 @@
+[package]
+name = "kubeclient"
+version = "0.2.0"
+authors = ["Andor Uhlár <andor44@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+# http requests
+reqwest = "0.9"
+
+# serialization
+serde = "1.0"
+serde_json = "1.0"
+serde_yaml = "0.8"
+serde_derive = "1.0"
+
+# logging
+log = "0.4"
+
+# base64, and serde integration
+base64 = "0.10"
+# unused, at the moment
+# base64-serde = "0.3"
+uuid = { version = "0.7", features = ["serde", "v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+num-traits = "0.2"

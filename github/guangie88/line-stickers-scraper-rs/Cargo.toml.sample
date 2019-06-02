@@ -1,0 +1,29 @@
+[package]
+name = "line-stickers-scraper"
+version = "0.1.1"
+authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
+description = "Executable in Rust to scrap and save LINE sticker PNGs from URL"
+repository = "https://github.com/guangie88/line-stickers-scraper-rs"
+readme = "README.md"
+categories = ["command-line-utilities"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "guangie88/line-stickers-scraper-rs" }
+codecov = { repository = "guangie88/line-stickers-scraper-rs" }
+
+[dependencies]
+cssparser = "=0.23.6"
+failure = "=0.1.1"
+regex = "=0.2.10"
+reqwest = "=0.8.5"
+serde = "=1.0.43"
+serde_derive = "=1.0.43"
+scraper = "=0.6.0"
+structopt = "=0.2.7"
+structopt-derive = "=0.2.7"
+vlog = "=0.1.2"
+
+[[bin]]
+name = "lss"
+path = "src/main.rs"

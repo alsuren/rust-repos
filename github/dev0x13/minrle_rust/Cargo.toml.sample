@@ -1,0 +1,9 @@
+[package]
+name = "minirle_rust"
+version = "0.1.0"
+authors = ["Georgiy Manuilov <george.manuilov@gmail.com>"]
+
+[lib]
+name = "minirle_rust"
+crate-type = ["staticlib"]
+path = "src/lib.rs"

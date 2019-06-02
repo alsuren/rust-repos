@@ -1,0 +1,15 @@
+[package]
+
+name = "ted"
+version = "0.1.0"
+authors = ["ivegotasthma"]
+license = "GPL-3.0"
+
+[dependencies.freetype-rs]
+version = "*"
+
+[dependencies.image]
+version = "*"
+
+[dependencies.glium]
+version = "*"

@@ -1,0 +1,17 @@
+[package]
+
+name = "voronoi"
+version = "0.1.4"
+documentation = "https://docs.rs/voronoi/0.1.4/voronoi/"
+authors = [ "Will Turner <rwturner17@gmail.com>" ]
+description = "A library to compute Voronoi diagrams, using Fortune's sweepline algorithm"
+repository = "https://github.com/petosegan/rust_voronoi"
+keywords = ["voronoi", "geometry"]
+readme = "Readme.md"
+license = "MIT"
+
+[dependencies]
+rand = "0.3"
+ordered-float = "0.5.0"
+log = "0.3"
+fnv = "1.0"

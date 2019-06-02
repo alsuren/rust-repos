@@ -1,0 +1,14 @@
+[package]
+name = "brigades4"
+version = "0.1.0"
+authors = ["Antti Salonen <ajsalonen@gmail.com>"]
+
+[dependencies]
+glium = "*"
+image = "*"
+nalgebra = "*"
+time = "0.1"
+rand = "0.3"
+noise = "0.2.0"
+rustc-serialize = "*"
+argparse = "*"

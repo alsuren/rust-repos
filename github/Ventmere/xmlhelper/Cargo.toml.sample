@@ -1,0 +1,10 @@
+[package]
+name = "xmlhelper"
+version = "0.1.0"
+authors = ["Flux Xu <fluxxu@gmail.com>"]
+description = "XML encode/decode utilities built on xml-rs"
+license = "MIT"
+
+[dependencies]
+xml-rs = "0.6.1"
+error-chain = "0.10.0"

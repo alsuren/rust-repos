@@ -1,0 +1,9 @@
+[package]
+name = "platformer-engine"
+version = "0.1.0"
+authors = ["Lauri Gustafsson <luutifa@gmail.com>"]
+
+[dependencies]
+sdl2 = "^0"
+gl = "^0"
+png = "0.12.0"

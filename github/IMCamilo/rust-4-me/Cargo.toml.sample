@@ -1,0 +1,11 @@
+[package]
+name = "rust-4-me"
+version = "0.1.0"
+authors = ["Camilo Jorquera <--add>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0-rc.2"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"

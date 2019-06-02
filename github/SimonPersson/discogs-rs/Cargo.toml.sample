@@ -1,0 +1,9 @@
+[package]
+name = "discogs"
+version = "0.2.0"
+authors = ["Simon Persson <simon@flaskpost.org>"]
+
+[dependencies]
+rustc-serialize = "*"
+lazy_static = "*"
+ease = "*"

@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "rustyfin-server",
+    "rustyfin-helpers",
+    "rustyfin-database",
+    "rustyfin-emby-api",
+]
+
+[profile.release]
+lto = true
+codegen-units = 1

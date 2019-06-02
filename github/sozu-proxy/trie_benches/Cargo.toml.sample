@@ -1,0 +1,65 @@
+[package]
+name = "trie"
+version = "0.1.0"
+authors = ["NotBad4U <alessio.coltellacci@clever-cloud.com>"]
+
+[dependencies]
+rand = "0.4"
+jemallocator = "^0.1"
+fst = "^0.2"
+bitvec = "0.10"
+regex = "1.1"
+hashbrown = "0.1"
+
+[dependencies.uuid]
+version = "~0.2.0"
+features = ["v4"]
+
+[[bench]]
+name = "sozu"
+harness = false
+
+[[bench]]
+name = "experiment1"
+harness = false
+
+[[bench]]
+name = "experiment2"
+harness = false
+
+[[bench]]
+name = "experiment3"
+harness = false
+
+[[bench]]
+name = "linear"
+harness = false
+
+[[bench]]
+name = "hashmap"
+harness = false
+
+[[bench]]
+name = "filling"
+harness = false
+
+[[bench]]
+name = "lookup"
+harness = false
+
+[[bench]]
+name = "unknown_lookup"
+harness = false
+
+[dev-dependencies]
+criterion = "0.2"
+
+[profile.release]
+debug = true
+lto = true
+codegen-units = 1
+
+[profile.bench]
+debug = true
+lto = true
+codegen-units = 1

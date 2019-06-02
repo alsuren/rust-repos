@@ -1,0 +1,8 @@
+[package]
+name = "riv"
+version = "0.1.0"
+authors = ["Alis <ichythedev@gmail.com>"]
+
+[dependencies]
+easycurses = { git = "https://github.com/alisww/easycurses-rs.git" }
+libloading = "0.4.0"

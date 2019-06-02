@@ -1,0 +1,19 @@
+[package]
+authors = ["Alex Crichton <alex@alexcrichton.com>"]
+description = "Cookie and session middleware for conduit-based stacks"
+license = "MIT"
+name = "conduit-cookie"
+repository = "https://github.com/conduit-rust/conduit-cookie"
+version = "0.8.5"
+
+[dependencies]
+base64 = "0.6"
+conduit = "0.8"
+conduit-middleware = "0.8"
+
+[dependencies.cookie]
+features = ["secure"]
+version = "0.11"
+
+[dev-dependencies]
+conduit-test = "0.8"

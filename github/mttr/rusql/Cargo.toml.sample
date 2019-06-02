@@ -1,0 +1,30 @@
+[package]
+
+name = "rusql"
+version = "0.0.1"
+authors = ["Matthew Rasmus <mattr@zzntd.com>"]
+description = "A wannabe DBMS, in Rust"
+readme = "./README.md"
+keywords = ["sql", "dbms"]
+license = "MIT"
+homepage = "https://github.com/mttr/rusql"
+repository = "https://github.com/mttr/rusql.git"
+
+[dependencies.peg]
+git = "https://github.com/kevinmehall/rust-peg.git"
+
+[[bin]]
+name = "rusql"
+path = "src/shell.rs"
+
+[[example]]
+name = "example"
+path = "examples/example.rs"
+
+[features]
+default = ["readline"]
+no_readline = []
+
+[dependencies.readline]
+git = "https://github.com/GBGamer/readline.git"
+optional = true

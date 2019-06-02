@@ -1,0 +1,13 @@
+[package]
+name = "lpc81x"
+version = "0.1.2"
+authors = ["William D. Jones <thor0505@comcast.net>"]
+
+[dependencies]
+cortex-m = "0.3.x"
+cortex-m-rt = "0.3.4"
+bare-metal = "0.1.0"
+vcell = "0.1.0"
+
+[features]
+rt = []

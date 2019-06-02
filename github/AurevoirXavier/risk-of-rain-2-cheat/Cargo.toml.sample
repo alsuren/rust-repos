@@ -1,0 +1,9 @@
+[package]
+name = "auto-shot"
+version = "0.1.0"
+authors = ["Xavier Lau <c.estlavie@icloud.com>"]
+edition = "2018"
+
+[dependencies]
+inputbot = "0.4.0"
+winapi = { version = "0.3.7", features = ["handleapi", "memoryapi", "playsoundapi", "processthreadsapi", "tlhelp32"] }

@@ -1,0 +1,17 @@
+[package]
+name = "quick_sort"
+version = "0.2.1"
+authors = ["Anurag Soni <anuragsoni.13@gmail.com>"]
+description = "In place quick sort"
+documentation = "https://anuragsoni.github.io/quick_sort/quick_sort/"
+homepage = "https://github.com/anuragsoni/quick_sort"
+repository = "https://github.com/anuragsoni/quick_sort"
+readme = "README.md"
+keywords = ["sort", "quick-sort", "quicksort", "sorting", "quick_sort"]
+license = "MIT"
+
+[features]
+benchmark = []
+
+[dev-dependencies]
+rand = "0.3.14"

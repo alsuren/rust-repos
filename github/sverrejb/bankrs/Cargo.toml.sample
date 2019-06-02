@@ -1,0 +1,11 @@
+[package]
+name = "bankrs"
+version = "0.1.0"
+authors = ["Sverre Johann Bjørke <sverrejb@gmail.com>"]
+
+[lib]
+name = "banklib"
+path = "src/banklib.rs"
+
+[dependencies]
+clap = "2.30.0"

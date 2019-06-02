@@ -1,0 +1,17 @@
+[package]
+name = "lineal"
+version = "0.1.0"
+authors = ["Min Kim <msk@dolbo.net>"]
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+permutator = "0.3"
+rand = "0.6"
+rand_isaac = "0.1"
+rblas = "0.0"
+
+[[bench]]
+name = "vector"
+harness = false

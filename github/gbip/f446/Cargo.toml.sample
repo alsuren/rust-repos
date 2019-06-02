@@ -1,0 +1,20 @@
+[package]
+name = "stm32f446"
+version = "0.1.1"
+authors = ["Paul Florence <perso@florencepaul.com>"]
+keywords = ["device", "nucleo", "f446", "arm", "svd"]
+description = "Device crate for the stm32f446 microcontroller."
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+bare-metal = "0.2.0"
+cortex-m = "0.5.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.5.0"
+
+[features]
+rt = ["cortex-m-rt/device"]

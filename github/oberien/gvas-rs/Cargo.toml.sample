@@ -1,0 +1,12 @@
+[package]
+name = "gvas-rs"
+version = "0.1.0"
+authors = ["oberien <jaro.fietz@gmx.de>"]
+
+[dependencies]
+byteorder = "0.5"
+log = "0.4"
+env_logger = "0.5"
+serde_gvas = { path = "serde_gvas" }
+serde = "1"
+serde_derive = "1"

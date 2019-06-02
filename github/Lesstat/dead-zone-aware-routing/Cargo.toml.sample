@@ -1,0 +1,24 @@
+[package]
+name = "dzr"
+version = "1.0.0"
+authors = ["Florian Barth <florianbarth@gmx.de>"]
+
+[dependencies]
+osmpbfreader = "*"
+heapsize_derive = "*"
+heapsize = "*"
+rocket = "*"
+rocket_codegen = "*"
+ordered-float = "*"
+geojson = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+csv = "1.0.0-beta.4"
+rayon = "*"
+bincode = "*"
+clap = "*"
+
+
+[profile.release]
+debug = true

@@ -1,0 +1,11 @@
+[package]
+name = "hello-world"
+version = "0.1.0"
+authors = ["sergiuchuckmisha <caga3@inbox.ru>"]
+
+[dependencies]
+tokio = "*"
+tokio-core = "*"
+futures = "*"
+futures-await = "*"
+failure = "*"

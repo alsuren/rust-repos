@@ -1,0 +1,37 @@
+[package]
+name = "mathematica-notebook-filter"
+version = "0.2.3"
+authors = ["JP-Ellis <josh@jpellis.me>"]
+
+readme = "README.md"
+description = """
+`mathematica-notebook-filter` parses Mathematica notebook files and strips them of superfluous
+information so that they can be committed into version control systems more
+easily.
+"""
+
+documentation = "https://github.com/JP-Ellis/mathematica-notebook-filter"
+homepage = "https://github.com/JP-Ellis/mathematica-notebook-filter"
+repository  = "https://github.com/JP-Ellis/mathematica-notebook-filter"
+
+keywords = ["mathematica", "vcs", "cli", "parser"]
+categories = ["command-line-utilities", "text-processing"]
+
+license = "GPL-3.0"
+
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "JP-Ellis/mathematica-notebook-filter", branch = "master" }
+codecov = { repository = "JP-Ellis/mathematica-notebook-filter", branch = "master", service = "github" }
+
+[dependencies]
+atty = "0.2.11"
+clap = { version = "2.33.0", features = ["wrap_help"] }
+log = "0.4.6"
+stderrlog = "0.4.1"
+tempfile = "3.0.7"
+
+[features]
+default = []
+nightly = []

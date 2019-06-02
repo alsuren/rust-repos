@@ -1,0 +1,12 @@
+[package]
+name = "qcp"
+version = "0.1.0"
+authors = ["William Speirs <bill.speirs@gmail.com>"]
+
+[dependencies]
+clap = "2.32"
+log = "0.4"
+simplelog = "0.5"
+walkdir = "2.2"
+flatbuffers = "0.5"
+rand = "0.5"

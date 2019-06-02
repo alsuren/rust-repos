@@ -1,0 +1,13 @@
+[package]
+name = "dotgirl"
+version = "0.1.0"
+authors = ["Hilmar Wiegand <me@hwgnd.de>"]
+edition = "2018"
+
+[dependencies]
+clap = "^2.32.0"
+dirs = "^1.0"
+serde = { version = "^1.0", features = ["derive"] }
+toml = "0.5"
+fs_extra = "^1.1.0"
+dialoguer = "^0.3.0"

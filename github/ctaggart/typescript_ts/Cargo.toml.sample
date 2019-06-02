@@ -1,0 +1,8 @@
+[package]
+name = "typescript_ts"
+version = "0.2.0"
+authors = ["Cameron Taggart <cameron.taggart@gmail.com>"]
+
+[dependencies]
+# chakracore = "*"
+chakracore = { git = 'https://github.com/darfink/chakracore-rs' }

@@ -1,0 +1,17 @@
+[package]
+name = "rust-test"
+version = "0.1.0"
+authors = ["Philip Nygard <oozekip@gmail.com>"]
+
+[lib]
+name = "rgraphics"
+path = "src/lib.rs"
+
+[dependencies]
+gfx = "0.16"
+glutin = "0.10"
+gfx_window_glutin = "0.18"
+nalgebra = "0.13"
+time = "0.1"
+regex = "0.2"
+image = "0.17"

@@ -1,0 +1,9 @@
+[package]
+name = "cuckoo"
+version = "0.1.0"
+license = "MIT"
+authors = ["CodeChain Team <codechain@kodebox.io>"]
+
+[dependencies]
+byteorder = "1.2.3"
+rust-crypto = "0.2.36"

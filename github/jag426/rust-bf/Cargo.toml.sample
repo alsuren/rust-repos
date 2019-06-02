@@ -1,0 +1,18 @@
+[package]
+
+name = "rust-bf"
+version = "0.0.1"
+authors = ["J. Aaron Gustafson <jag426@cornell.edu>"]
+
+[lib]
+name = "brainfuck"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bfi"
+path = "src/main.rs"
+
+[dependencies]
+getopts = "*"
+peg = "*"
+

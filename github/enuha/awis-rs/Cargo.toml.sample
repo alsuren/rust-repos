@@ -1,0 +1,15 @@
+[package]
+name = "awis-rs"
+version = "0.1.1"
+authors = ["zeapo <mohamed@zenadi.com>"]
+edition = "2018"
+description = "Alexa Web Information Service"
+license = "MIT"
+
+[dependencies]
+reqwest = "0.9.15"
+sha2 = "0.8.0"
+hmac = "0.7.0"
+chrono = "0.4.6"
+serde = { version = "1.0.90", features = ["derive"] }
+serde-xml-rs = "0.3.1"

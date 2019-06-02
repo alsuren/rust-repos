@@ -1,0 +1,12 @@
+[package]
+name = "shield"
+version = "0.0.1"
+authors = ["XunRong Tan <tanxrong@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "mruby"
+path = "src/lib.rs"
+
+[build-dependencies.gcc]
+gcc = "*"

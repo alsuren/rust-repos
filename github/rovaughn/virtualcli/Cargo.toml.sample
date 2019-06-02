@@ -1,0 +1,13 @@
+[package]
+name = "virtualcli"
+version = "0.1.0"
+authors = ["Alec NEwman <alecnwmn904@gmail.com>"]
+
+[dependencies]
+time = "*"
+rand = "*"
+libc = "*"
+
+[[bin]]
+name = "snake"
+path = "src/snake.rs"

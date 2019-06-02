@@ -1,0 +1,15 @@
+[package]
+authors = ["Jonathan Creekmore <jonathan@thecreekmores.org>"]
+name = "dmidecode"
+version = "0.3.1-pre"
+description = "Decode SMBIOS/DMI information into accessible data structures"
+documentation = "https://docs.rs/dmidecode/"
+homepage = "https://github.com/jcreekmore/dmidecode.git"
+license = "MIT"
+
+[dependencies]
+aho-corasick = "0.6.4"
+bitflags = "1.0.3"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+lazy_static = "1.0.1"

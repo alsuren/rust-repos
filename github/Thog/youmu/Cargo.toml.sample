@@ -1,0 +1,14 @@
+[package]
+name = "youmu"
+version = "0.1.0"
+authors = ["Thog <me@thog.eu>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+env_logger = "0.6"
+serenity = "0.5"
+dotenv = "0.13.0"
+lazy_static = "1.0"
+[patch.crates-io]
+openssl = { git = "https://github.com/ishitatsuyuki/rust-openssl", branch = "0.9.x" }

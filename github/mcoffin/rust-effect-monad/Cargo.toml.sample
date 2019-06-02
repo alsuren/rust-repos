@@ -1,0 +1,20 @@
+[package]
+name = "effect-monad"
+version = "0.3.1"
+authors = ["Matt Coffin <mcoffin13@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["functional", "monad", "effect", "eff"]
+repository = "https://github.com/mcoffin/rust-effect-monad"
+homepage = "https://github.com/mcoffin/rust-effect-monad"
+documentation = "http://mcoffin.github.io/rust-effect-monad/effect_monad"
+description = """
+A native-rust implementation of an Effect monad, inspired by PureScript's EFF
+Monad.
+"""
+
+[features]
+unstable = []
+
+[[example]]
+name = "hello_goodbye"

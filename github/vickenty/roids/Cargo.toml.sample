@@ -1,0 +1,13 @@
+[package]
+name = "roids"
+version = "0.1.0"
+authors = ["Vickenty Fesunov <kent@setattr.net>"]
+
+[dependencies]
+cgmath = "0.7"
+glutin = "0.4"
+gfx = "0.10"
+gfx_window_glutin = "0.10"
+gfx_device_gl = "0.9"
+time = "0.1"
+rand = "0.3"

@@ -1,0 +1,7 @@
+[package]
+name = "acqu"
+version = "0.1.0"
+authors = ["Zakhar Kurasov <zakharkurasov@gmail.com>"]
+
+[dependencies]
+httparse = "1.3.2"

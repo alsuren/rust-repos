@@ -1,0 +1,11 @@
+[package]
+name = "qdist"
+version = "0.1.0"
+authors = ["George Kaplan <george@georgekaplan.xyz>"]
+
+[dependencies]
+num-traits = "*"
+vst = "*"
+
+[lib]
+crate-type = ["dylib"]

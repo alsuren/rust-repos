@@ -1,0 +1,20 @@
+[package]
+name = "silica"
+version = "0.0.1"
+authors = ["Nick Kraus <nick@krauslabs.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+syntax = { path = "silica-syntax" }
+verilog = { path = "silica-verilog" }
+
+[dev-dependencies]
+difference = "2.0.0"
+tempfile = "3.0.5"
+
+[workspace]
+members = [
+	"silica-syntax",
+	"silica-verilog",
+]

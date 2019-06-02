@@ -1,0 +1,10 @@
+[package]
+name = "rustbucket"
+version = "0.0.1"
+authors = ["BlueSpaceCanary"]
+edition = "2018"
+
+[dependencies]
+irc = "0.13"
+rand = "0.5"
+	 

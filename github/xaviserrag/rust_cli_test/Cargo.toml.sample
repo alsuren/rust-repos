@@ -1,0 +1,7 @@
+[package]
+name = "rget"
+version = "0.1.0"
+authors = ["Xavi <xaviserrag@gmail.com>"]
+
+[dependencies]
+clap = { features = ["yaml"] }

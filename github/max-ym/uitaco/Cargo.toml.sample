@@ -1,0 +1,18 @@
+[package]
+name = "uitaco"
+version = "0.1.0"
+authors = ["Maxym Naumchyk <max.naumch@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+typed-html = "0.1.0"
+web-view = "0.4"
+webview-sys = "0.1.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+htmldom_read = { path = "../htmldom_read" }
+owning_ref = "0.4.0"
+rsgen = "0.2.0"
+base64 = "0.10.1"
+uitaco-derive = { path = "../uitaco-derive" }

@@ -1,0 +1,17 @@
+[package]
+name = "pcap"
+version = "0.1.0"
+authors = ["Danny Browning <danny.browning@protectwise.com>"]
+edition = "2018"
+
+[dependencies]
+failure = "~0.1"
+failure_derive = "~0.1"
+futures-preview = { version ="0.3.0-alpha.14", features = ["compat"] }
+libc = "~0.2"
+log = "~0.4"
+pcap-sys = { git = "https://github.com/protectwise/pcap-sys.git" }
+tokio-timer = "~0.2"
+
+[dev-dependencies]
+env_logger = "~0.6"

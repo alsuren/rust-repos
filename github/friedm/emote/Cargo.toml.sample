@@ -1,0 +1,26 @@
+[package]
+name = "emote"
+version = "0.1.0"
+authors = ["Matt Friedman <matt@friedm.com>"]
+description = "Display emoticons."
+documentation = "https://github.com/friedm/emote"
+homepage = "https://github.com/friedm/emote"
+repository = "https://github.com/friedm/emote"
+readme = "README.md"
+keywords = ["emoticon", "emote"]
+categories = ["command-line-utilities"]
+license = "MIT"
+
+[dependencies]
+toml = "0.4"
+clap = "2.31"
+app_dirs = "1.2.1"
+blake2 = "0.7"
+digest = { version = "0.7", features = ["std"]}
+time = "0.1"
+serde_json = "1.0"
+tempfile = "3"
+log = "0.4"
+stderrlog = "0.4"
+regex = "1.0.0"
+lazy_static = "1.0.1"

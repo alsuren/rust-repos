@@ -1,0 +1,10 @@
+[package]
+name = "feedbin"
+version = "0.1.0"
+authors = ["Brendan Long <self@brendanlong.com>"]
+
+[dependencies]
+curl = "0.4"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"

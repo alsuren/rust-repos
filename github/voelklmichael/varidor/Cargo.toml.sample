@@ -1,0 +1,12 @@
+[package]
+name = "varidor"
+version = "0.1.0"
+authors = ["Michael <v.mi@gmx.de>"]
+
+[dependencies]
+lazy_static = "*"
+num-traits = "*"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]

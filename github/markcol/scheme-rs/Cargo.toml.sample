@@ -1,0 +1,15 @@
+[package]
+name = "scheme-rs"
+version = "0.1.0"
+authors = ["Mark H. Colburn <colburn.mark@gmail.com>"]
+description = "Scheme R7RS interpretter/compiler for the LLVM written in Rust."
+license = "MIT"
+repository = "https://github.com/markcol/scheme-rs"
+
+
+[dependencies]
+failure = "0.1"
+failure_derive = "0.1"
+# llvm-sys = "60"
+rustyline = "1.0"   # readline-like functionality
+structopt = "0.2"   # command-line parsing

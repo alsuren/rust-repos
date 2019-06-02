@@ -1,0 +1,11 @@
+[package]
+name = "rusty64"
+version = "0.1.0"
+authors = ["Nettozx <umajid@uci.edu>"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+byteorder = "1.2.6"
+num = "0.2.0"
+enum_primitive = "0.1.1"
+nom = "1.2.3"

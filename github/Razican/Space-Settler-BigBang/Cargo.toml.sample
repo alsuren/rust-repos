@@ -1,0 +1,36 @@
+[package]
+name = "bigbang"
+version = "0.0.2"
+authors = ["Razican <razican@protonmail.ch>"]
+license = "BSD 3-Clause License"
+readme = "README.md"
+repository = "https://github.com/Razican/Space-Settler-BigBang"
+description = """
+Big-Bang generator for Space Settler.
+"""
+
+[dependencies]
+failure = "0.1.5"
+clap = "2.32.0"
+colored = "1.6.1"
+num_cpus = "1.9.0"
+rand = "0.6.1"
+
+# The release profile, used for `cargo build`.
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+panic = 'unwind'
+
+# The release profile, used for `cargo build --release`.
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+panic = 'unwind'

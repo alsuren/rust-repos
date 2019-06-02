@@ -1,0 +1,13 @@
+[package]
+
+name = "snapshot_trim"
+version = "0.1.0"
+authors = [ "andrew@andrewchin.net" ]
+
+
+[dependencies]
+regex = "*"
+time = "*"
+docopt = "*"
+rustc-serialize = "*"
+toml = "*"

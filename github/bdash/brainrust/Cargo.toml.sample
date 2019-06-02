@@ -1,0 +1,22 @@
+[package]
+name = "brainrust"
+version = "0.1.0"
+authors = ["Mark Rowe <mrowe@bdash.net.nz>"]
+
+[features]
+default = []
+
+llvm = ["llvm-alt"]
+
+[dependencies]
+argparse = "0.2.0"
+itertools = "0.3.21"
+libc = "0.1.8"
+unreachable = "0.0.2"
+vec_map = "0.0.1"
+syscall = "0.2.1"
+
+[dependencies.llvm-alt]
+git = "https://github.com/TomBebbington/llvm-rs.git"
+rev = "e12320221a4590d5c658306539b235b103651fda"
+optional = true

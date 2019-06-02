@@ -1,0 +1,24 @@
+[package]
+authors = ["Mario Krehl <mario-krehl@gmx.de>"]
+name = "aklog-server"
+version = "0.1.0"
+
+[dependencies]
+clap = "2"
+dimensioned = "0.6"
+error-chain = "0.11"
+log = "^0.4.0"
+regex = "0.2"
+rocket = "0.3"
+rocket_codegen = "0.3"
+rocket_contrib = "0.3"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+simplelog = "^0.4.3"
+toml = "^0.4"
+
+[dependencies.chrono]
+features = [ "serde" ]
+version = "0.4"
+

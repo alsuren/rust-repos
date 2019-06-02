@@ -1,0 +1,32 @@
+[package]
+name = "sandcrust"
+version = "0.1.0"
+authors = ["Benjamin Lamowski <benjamin@lamowski.net>"]
+#repository = ""
+#homepage = ""
+#documentation =
+keywords = [ "componentization", "compartmentalization", "sandbox", "sandboxing", "C"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = "Automatically execute wrapped functions in a sandboxed process."
+
+[dependencies]
+bincode = "1.0.0-alpha7"
+lazy_static = "0.2.6"
+libc = "0.2.21"
+memmap = { version = "0.5.2", optional = true }
+nix = "0.8.0"
+serde = "0.9.13"
+serde_derive = "0.9.13"
+
+[dependencies.sandheap]
+path = "../sandheap"
+
+[features]
+auto_respawn = []
+shm = ["memmap"]
+custom_vec = []
+
+[lib]
+name = "sandcrust"
+path = "src/lib.rs"

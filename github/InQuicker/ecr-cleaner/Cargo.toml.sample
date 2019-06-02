@@ -1,0 +1,16 @@
+[package]
+authors = ["Jacob Helwig <jacob@technosorcery.net>", "Jimmy Cuadra <jimmy@jimmycuadra.com>"]
+description = "Utility for deleting old images in Amazon EC2 Container Registry."
+homepage = "https://github.com/InQuicker/ecr-cleaner"
+keywords = ["aws", "cloud", "ecr"]
+license = "MIT"
+name = "ecr-cleaner"
+readme = "README.md"
+repository = "https://github.com/InQuicker/ecr-cleaner"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.25.0"
+prettytable-rs = { version = "0.6.7", default-features = false }
+rusoto_core = "0.27.0"
+rusoto_ecr = "0.27.0"

@@ -1,0 +1,21 @@
+[package]
+name = "spdx-dataset"
+description = "a library of SPDX-recognized licenses and related metadata"
+version = "0.1.0"
+edition = "2018"
+repository = "https://github.com/compenguy/spdx-dataset"
+authors = ["Will Page <compenguy@gmail.com>"]
+license-file = "LICENSE"
+
+[features]
+default = ["json"]
+json = []
+text = []
+
+[dependencies]
+lazy_static = "1.3"
+
+[build-dependencies]
+# Used for fingerprinting the dataset, so clients can safely cache data and
+# be able to tell when that cache needs to be invalidated
+sha2 = "0.8"

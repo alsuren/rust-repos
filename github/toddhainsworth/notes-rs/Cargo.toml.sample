@@ -1,0 +1,10 @@
+[package]
+name = "notes"
+version = "0.1.0"
+authors = ["Todd Hainsworth <hainsworth.todd@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+touch = "0.0.1"
+dirs = "1.0"
+chrono = "0.4.6"

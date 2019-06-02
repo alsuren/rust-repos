@@ -1,0 +1,12 @@
+[package]
+name = "urweb"
+version = "0.1.1"
+authors = ["Aistis Raulinaitis <sheganinans@gmail.com>"]
+license = "MIT"
+description = "Rust bindings to Ur/Web header file."
+repository = "https://github.com/sheganinans/urweb-rs"
+
+[lib]
+path = "src/urweb.rs"
+
+[dependencies]

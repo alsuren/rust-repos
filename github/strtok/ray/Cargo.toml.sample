@@ -1,0 +1,13 @@
+[package]
+name = "ray"
+version = "0.1.0"
+authors = ["Erik Bremen <strtok@strtok.net>"]
+
+[dependencies]
+log = "*"
+piston_window = "*"
+image = "*"
+pretty_env_logger="*"
+approx = "0.3.0"
+rand = "0.5.5"
+threadpool = "*"

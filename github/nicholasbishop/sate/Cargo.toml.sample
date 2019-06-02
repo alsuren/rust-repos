@@ -1,0 +1,15 @@
+[package]
+name = "sate"
+version = "0.1.3-alpha.0"
+authors = ["Nicholas Bishop <nicholasbishop@gmail.com>"]
+license = "Apache-2.0"
+description = "Simple command-line task runner"
+repository = "https://github.com/nicholasbishop/sate"
+
+[dependencies]
+clap = "2"
+failure = "^0.1.1"
+subprocess = "^0.1.12"
+
+[build-dependencies]
+peg = { version = "0.5" }

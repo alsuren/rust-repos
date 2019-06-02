@@ -1,0 +1,33 @@
+[package]
+name = "garmin_rust"
+version = "0.2.2"
+authors = ["Daniel Boline <ddboline@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+garmin_lib = { path = "garmin_lib" }
+garmin_http = { path = "garmin_http" }
+actix = "0.7"
+log = "0.4"
+env_logger = "0.6"
+
+[workspace]
+members = [
+    "garmin_lib",
+    "garmin_http",
+]
+
+[[bin]]
+name = "garmin-rust-proc"
+path = "src/garmin_rust_proc.rs"
+doc = false
+
+[[bin]]
+name = "garmin-rust-report"
+path = "src/garmin_rust_report.rs"
+doc = false
+
+[[bin]]
+name = "garmin-rust-http"
+path = "src/garmin_rust_http.rs"
+doc = false

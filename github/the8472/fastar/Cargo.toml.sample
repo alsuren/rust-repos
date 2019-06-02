@@ -1,0 +1,35 @@
+[package]
+name = "fastar"
+version = "0.1.4"
+authors = ["The8472"]
+description = "Fast tar archive creation for HDDs"
+keywords = ["linux", "cli", "tar", "archive"]
+repository = "https://github.com/the8472/fastar"
+readme = "README.md"
+categories = ["command-line-utilities", "filesystem"]
+license = "GPL-3.0"
+
+include = [
+    "**/*.rs",
+    "README.md",
+    "LICENCE",
+    "Cargo.toml",
+    "Cargo.lock"
+]
+
+[profile.release]
+lto = true
+opt-level = "s"
+panic = "abort"
+debug = false
+
+[dependencies]
+clap = "2.20"
+derive-error = "0.0.3"
+nix = "0.8.1"
+tar = "0.4.13"
+reapfrog = "0.2.0"
+platter-walk = "0.1.2"
+
+[features]
+system_alloc = []

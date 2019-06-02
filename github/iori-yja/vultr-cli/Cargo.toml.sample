@@ -1,0 +1,16 @@
+[package]
+name = "vultr-cli"
+version = "0.1.0"
+authors = ["Iori YONEJI <fivo.11235813@gmail.com>"]
+
+[dependencies]
+clap="*"
+toml="0.4"
+serde_derive="*"
+serde="*"
+hyper="0.11"
+rustls="0.11"
+hyper-tls="0.1"
+futures="*"
+tokio="*"
+tokio-core="*"

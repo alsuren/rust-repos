@@ -1,0 +1,32 @@
+[package]
+name        = "git-dit-wui"
+version     = "0.1.0"
+authors     = ["Matthias Beyer <mail@beyermatthias.de>"]
+description = "Web User Interface (WUI) for the git-dit issue tracker"
+keywords    = ["git", "git-dit", "web"]
+readme      = "README.md"
+license     = "AGPL-3.0"
+repository  = "https://github.com/matthiasbeyer/git-dit-wui"
+
+[badges]
+travis-ci                         = { repository = "matthiasbeyer/git-dit-wui" }
+is-it-maintained-issue-resolution = { repository = "matthiasbeyer/git-dit-wui" }
+is-it-maintained-open-issues      = { repository = "matthiasbeyer/git-dit-wui" }
+maintenance                       = { status     = "actively-developed" }
+
+[dependencies]
+chrono        = "0.4"
+comrak        = "0.2"
+env_logger    = "0.5"
+error-chain   = "0.10"
+git2          = "0.6"
+gotham        = "0.2"
+gotham_derive = "0.2"
+horrorshow    = "0.6"
+hyper         = "0.11"
+libgitdit     = "0.4"
+log           = "0.4"
+mime          = "0.3"
+serde         = "1"
+serde_derive  = "1"
+futures       = "0.1"

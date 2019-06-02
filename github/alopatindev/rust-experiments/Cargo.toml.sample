@@ -1,0 +1,32 @@
+[package]
+name = "rust-experiments"
+version = "0.1.0"
+authors = ["Alexander Lopatin <github.com/alopatindev>"]
+repository = "https://github.com/alopatindev/rust-experiments"
+license = "MIT"
+
+[lib]
+name = "rust_experiments"
+path = "src/lib.rs"
+doctest = false
+
+[dependencies]
+byteorder = "0.5.3"
+clap = "2.11.3"
+clippy = {version="*", optional = true}
+getopts = "0.2"
+hyper = "0.9.10"
+image = "0.10.3"
+libc = "0.2.14"
+maplit = "0.1.3"
+nalgebra = "0.8.2"
+notify = "2.6.2"
+quickcheck = "0.3"
+rand = "0.3.14"
+sys-info = "0.4"
+terminal_size = "0.1.5"
+time = "0.1.35"
+walkdir = "0.1"
+
+[features]
+default = []

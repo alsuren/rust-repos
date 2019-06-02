@@ -1,0 +1,9 @@
+[package]
+name = "lua_load"
+version = "0.1.0"
+authors = ["winNi"]
+
+[dependencies]
+serde = "1.0.80"
+hlua = { git = "https://github.com/tomaka/hlua" }
+serde-hlua = { git = "https://github.com/tpdickso/serde-hlua" }

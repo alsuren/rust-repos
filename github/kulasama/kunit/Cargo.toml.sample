@@ -1,0 +1,11 @@
+[package]
+name = "kunit"
+version = "0.1.0"
+authors = ["kula"]
+
+[dependencies]
+nix = "0.11.0"
+clap = "2.31.2"
+time = "0.1"
+file = "1.1.2"
+oci={path='oci'}

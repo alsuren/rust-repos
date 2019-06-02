@@ -1,0 +1,29 @@
+[package]
+name = "tga"
+version = "0.2.19"
+authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/stallmanifold/libtga"
+keywords = ["tga", "image processing", "textures", "graphics"]
+
+[lib]
+name = "tga"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2.2"
+
+[[bench]]
+name = "benchmark"
+harness = false
+
+
+[profile.bench]
+opt-level = 2
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

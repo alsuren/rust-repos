@@ -1,0 +1,15 @@
+[package]
+name = "krylov"
+version = "0.0.1"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[lib]
+name = "krylov"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "*"
+#arraydiff = { path = "../arraydiff" }
+densearray = "*"
+devicemem_cuda = { path = "../libdevicemem_cuda" }
+float = "*"

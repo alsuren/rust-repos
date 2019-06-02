@@ -1,0 +1,11 @@
+[package]
+name = "tun"
+version = "1.0.0"
+authors = ["Calder Coalson <caldercoalson@gmail.com>"]
+
+[dependencies]
+regex = "*"
+
+[[bin]]
+name = "tun"
+path = "tun.rs"

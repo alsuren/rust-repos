@@ -1,0 +1,11 @@
+[package]
+name = "coincap-rs"
+version = "0.1.0"
+authors = ["UninterestinAcc <uninterestinacc@users.noreply.github.com>"]
+
+[dependencies]
+reqwest="0.8"
+log="*"
+serde="*"
+serde_derive="*"
+serde_json="*"

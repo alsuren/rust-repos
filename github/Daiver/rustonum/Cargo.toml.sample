@@ -1,0 +1,11 @@
+[package]
+name = "rustonum"
+version = "0.2.5"
+authors = ["daiver <ra22341@ya.ru>"]
+
+[lib]
+name = "rustonum"
+path = "src/lib.rs"
+
+[dependencies]
+num = "*"

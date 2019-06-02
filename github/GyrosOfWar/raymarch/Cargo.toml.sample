@@ -1,0 +1,9 @@
+[package]
+name = "raymarch"
+version = "0.1.0"
+authors = ["Martin Tomasi <martin.tomasi@gmail.com>"]
+
+[dependencies]
+nalgebra = "0.18.0"
+image = "0.21.0"
+rand = "0.4"

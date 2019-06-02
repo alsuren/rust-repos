@@ -1,0 +1,26 @@
+[package]
+name = "leftwm"
+version = "0.1.6"
+authors = ["Lex Childs <lexchilds@gmail.com>"]
+description = "A window manager for Adventurers"
+edition = "2018"
+keywords = ["wm", "window", "manager"]
+categories = ["window manager"]
+license = "MIT"
+repository = "https://github.com/leftwm/leftwm"
+readme = "README.md"
+
+[lib]
+name = "leftwm"
+path = "src/lib.rs"
+
+[dependencies]
+x11-dl = "2.18.3"
+xdg = "2.2.0"
+toml = "0.4.10"
+serde = "1.0.89"
+serde_derive = "1.0.89"
+serde_json = "1.0.39"
+env_logger = "0.6.1"
+log = "0.4.0"
+dirs = "1.0.5"

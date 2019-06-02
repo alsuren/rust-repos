@@ -1,0 +1,24 @@
+[package]
+authors = ["Fuzen <fuzen@protonmail.com>"]
+name = "melody"
+version = "0.1.4"
+license = "MIT/Apache-2.0"
+description = "terminal Audio playback client"
+repository = "https://gitlab.com/Fuzen-py/Melody"
+homepage = "https://gitlab.com/Fuzen-py/Melody"
+
+[[bin]]
+name = "melody"
+path = "bin/melody/main.rs"
+required-features = []
+
+[dependencies]
+mp3-metadata = "0.3.0"
+num-integer = "0.1.39"
+tabwriter = "1.1.0"
+rodio = "0.8.1"
+directories = "1.0.2"
+indicatif = "0.9.0"
+rand = "0.5.5"
+human-panic = "1.0.1"
+walkdir = "2.2.5"

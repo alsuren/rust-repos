@@ -1,0 +1,12 @@
+[package]
+name = "sky-install"
+version = "0.1.0"
+authors = ["Jed Irvine <jedirv@gmail.com>"]
+
+
+[dependencies]
+zip = "0.3.0"
+curl = "0.4.8"
+
+[target.'cfg(any(unix, macos))'.dependencies]
+git2 = "0.6.11"

@@ -1,0 +1,11 @@
+[package]
+name = "rustinvaders"
+version = "0.1.0"
+authors = [ "Chris Williams <diodesign@gmail.com>" ]
+
+[dependencies]
+glfw = "*"
+kiss3d = "*"
+nalgebra = "*"
+rand = "*"
+

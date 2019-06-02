@@ -1,0 +1,26 @@
+[package]
+name = "newton"
+version = "0.0.1"
+authors = ["Tracy Ma <1991md@gmail.com>"]
+
+[lib]
+name = "newton"
+path = "src/lib.rs"
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+
+[dependencies.cgmath]
+git = "https://github.com/bjz/cgmath-rs"
+
+[dependencies.image]
+version = "0.3.9"
+
+[dependencies.glium]
+git = "https://github.com/tomaka/glium"
+
+[[example]]
+name = "cocos"
+path = "example/cocos/cocos.rs"

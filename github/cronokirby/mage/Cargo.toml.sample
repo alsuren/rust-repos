@@ -1,0 +1,9 @@
+[package]
+name = "mage"
+version = "0.1.0"
+authors = ["Lúcás Meier <cronokirby@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2.*"
+sdl2 = "0.32.*"

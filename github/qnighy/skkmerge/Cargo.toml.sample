@@ -1,0 +1,9 @@
+[package]
+name = "skkmerge"
+version = "0.0.1"
+authors = ["Masaki Hara <ackie.h.gmai@gmail.com>"]
+
+[dependencies]
+regex = "0.2"
+encoding = "0.2.33"
+clap = "2.27.1"

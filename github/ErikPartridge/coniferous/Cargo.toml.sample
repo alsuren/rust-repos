@@ -1,0 +1,21 @@
+[package]
+name = "coniferous"
+version = "0.2.1"
+authors = ["Erik A. Partridge <erik.partridge@mail.mcgill.ca>"]
+license = "MIT"
+homepage = "https://coniferous.erikpartridge.com"
+repository = "https://github.com/ErikPartridge/coniferous"
+categories = ["science"]
+description = "Decision trees and random forests for Rust. Presently a WIP"
+readme = "README.md"
+
+[badges]
+maintenance = { status = "experimental" }
+is-it-maintained-issue-resolution = { repository = "ErikPartridge/coniferous" }
+is-it-maintained-open-issues = { repository = "ErikPartridge/coniferous" }
+travis-ci = { repository = "ErikPartridge/coniferous", branch = "master" }
+
+[dependencies]
+rayon = "1.0"
+rand = "0.5"
+parsnip = "0.1"

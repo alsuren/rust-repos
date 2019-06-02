@@ -1,0 +1,9 @@
+[package]
+name = "rust_navi_backend"
+version = "0.0.1"
+authors = ["Bartoshko <lenart.consulting@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ws="0.8.0"
+dotenv="0.13.0"

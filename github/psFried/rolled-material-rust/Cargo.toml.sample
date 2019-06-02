@@ -1,0 +1,17 @@
+[package]
+name = "fabric-roll"
+version = "0.0.1"
+authors = ["pfried <philipsfried@gmail.com>"]
+
+
+[dependencies]
+find_folder = "0.3.0"
+conrod = { path = "../conrod" }
+piston = "0.15"
+gfx = "0.8"
+piston-viewport = "0.2.0"
+piston_window = "0.28"
+piston2d-gfx_graphics = "0.13"
+piston2d-opengl_graphics = "0.18"
+pistoncore-glutin_window = "0.17"
+pistoncore-input = "0.8.0"

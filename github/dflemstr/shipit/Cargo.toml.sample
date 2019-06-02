@@ -1,0 +1,25 @@
+[package]
+name = "shipit"
+version = "0.0.1"
+authors = ["David Flemström <david.flemstrom@gmail.com>"]
+
+[lib]
+name = "shipit"
+
+[[bin]]
+name = "shipit"
+path = "src/main.rs"
+
+[dependencies]
+env_logger = "0.3.0"
+log = "0.3.1"
+protobuf = "0.0.10"
+rand = "0.3.8"
+time = "0.1.25"
+unicode-normalization = "0.1.0"
+zmq = "0.6.7"
+
+[[example]]
+name = "simple"
+path = "examples/rust/main.rs"
+

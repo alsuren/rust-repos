@@ -1,0 +1,19 @@
+[package]
+name = "loglog"
+version = "0.3.2"
+authors = ["Anthony Nguyen <anknguyen@gmail.com>"]
+description = "A simple and usable logger"
+homepage = "https://github.com/anthonynguyen/loglog"
+documentation = "https://docs.rs/loglog/"
+repository = "https://github.com/anthonynguyen/loglog"
+readme = "README.md"
+keywords = ["log", "logger", "logging"]
+categories = ["development-tools::debugging"]
+license = "MIT"
+
+[dependencies]
+ansi_term = "0.9.0"
+chrono = "0.4.0"
+env_logger = "0.4.3"
+isatty = "0.1.3"
+log = "0.3.8"

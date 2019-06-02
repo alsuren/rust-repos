@@ -1,0 +1,13 @@
+[package]
+name = "statez"
+version = "0.1.2"
+authors = ["Jonathan Kim <quailiff@gmail.com>"]
+categories = ["game-engines"]
+description = "Basic state management for the ggez game framework."
+keywords = ["statez"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/quailiff/statez"
+
+[dependencies]
+ggez = "0.4"

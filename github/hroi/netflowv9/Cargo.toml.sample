@@ -1,0 +1,14 @@
+[package]
+name = "netflowv9"
+version = "0.1.0"
+authors = ["Hroi Sigurdsson <hroi@asdf.dk>"]
+description = "A Netflow V9 parser."
+license = "MIT"
+repository = "https://github.com/hroi/netflowv9"
+documentation = "https://hroi.github.com/netflowv9/"
+readme = "README.md"
+keywords = ["networking", "netflow"]
+
+[dependencies]
+flate2 = "0.2"
+time = "0.1"

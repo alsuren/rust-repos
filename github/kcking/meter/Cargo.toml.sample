@@ -1,0 +1,25 @@
+[package]
+name = "meter"
+version = "0.1.0"
+authors = ["Kevin King <4kevinking@gmail.com>"]
+
+[dependencies]
+getopts = "*"
+sound_stream = "*"
+num = "*"
+piston = "*"
+piston2d-graphics = "*"
+pistoncore-glutin_window = "*"
+piston2d-opengl_graphics = "*"
+itertools = "*"
+toml = "*"
+rustc-serialize = "*"
+
+[dependencies.kissfft]
+git = "https://github.com/kcking/rust-kissfft.git"
+
+[dependencies.bounded-spsc-queue]
+git = "https://github.com/kcking/bounded-spsc-queue.git"
+
+[dependencies.osc]
+git = "https://github.com/generalelectrix/rust-osc.git"

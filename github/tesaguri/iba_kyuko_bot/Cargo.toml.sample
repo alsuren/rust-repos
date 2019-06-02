@@ -1,0 +1,33 @@
+[package]
+name = "iba_kyuko_bot"
+version = "0.0.0"
+authors = ["daiki"]
+description = """
+A utility to fetch lecture information (cancellation, supplement, etc.) from Ibaraki University's website and post it to Twitter.
+"""
+
+[dependencies]
+chrono = { version = "0.3", features = ["serde"] }
+clap = "*"
+egg-mode = "0.8"
+either = "1.0"
+env_logger = "*"
+error-chain = "*"
+futures = "*"
+hyper = "*"
+kuchiki = "*"
+log = { version = "*", default-features = false }
+rand = "*"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+serde_yaml = "0.6"
+tendril = "*"
+twitter-stream = { version = "0.2", features = ["egg-mode"] }
+
+[[bin]]
+name = "iba_kyuko_bot"
+path = "src/bin/main.rs"
+
+[features]
+unstable = []

@@ -1,0 +1,10 @@
+[package]
+name = "simple_vbap"
+version = "0.1.0"
+authors = ["Robin Mirow <robinmirow@live.com>"]
+build = "build.rs"
+
+[dependencies]
+hound = "3.1.0"
+libc = "0.2.22"
+time = "0.1.37"

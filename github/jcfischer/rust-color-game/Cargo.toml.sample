@@ -1,0 +1,11 @@
+[package]
+authors = ["Jens-Christian Fischer <jcfischer@gmail.com>",
+           "Florian Hanke <florian.hanke@gmail.com>"]
+name = "tic-tac-go"
+version = "0.1.0"
+[dependencies]
+rand = "*"
+piston = "*"
+piston2d-graphics = "*"
+piston2d-opengl_graphics = "*"
+pistoncore-glutin_window = "*"

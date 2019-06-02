@@ -1,0 +1,8 @@
+[package]
+name = "dungeon_server"
+version = "0.1.0"
+authors = ["aschuhardt <aschuhardt@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+mud_server_session = { git = "https://github.com/aschuhardt/mud_server_session.git" }

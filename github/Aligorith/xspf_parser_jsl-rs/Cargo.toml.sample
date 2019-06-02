@@ -1,0 +1,15 @@
+[package]
+name = "xspf_tools"
+version = "0.1.0"
+authors = ["Joshua Leung <aligorith@gmail.com>"]
+
+[dependencies]
+indoc = "0.2"
+minidom = "*"
+
+regex = "0.2"
+lazy_static = "1.0.0"
+
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"

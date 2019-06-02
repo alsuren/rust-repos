@@ -1,0 +1,16 @@
+[package]
+name = "neptune"
+version = "0.1.0"
+authors = ["Andreas Longva <andreas.b.longva@gmail.com>"]
+
+[dependencies]
+glium = "*"
+num = "0.1"
+cgmath = { git = "https://github.com/Andlon/cgmath.git", branch = "invert" }
+time = "0.1.35"
+itertools = "*"
+approx = "*"
+ordered-float="*"
+alga="0.5"
+nalgebra="0.11"
+ncollide="0.11"

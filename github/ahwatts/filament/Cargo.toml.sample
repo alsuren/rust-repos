@@ -1,0 +1,48 @@
+[package]
+name = "filament"
+description = "A quasi-workalike for the MogileFS tracker daemon."
+version = "0.5.0-dev"
+authors = ["Andrew Watts <ahwatts@gmail.com>"]
+homepage = "https://github.com/ahwatts/mogilefsd-rs"
+build = "build.rs"
+
+[[bin]]
+name = "filament"
+path = "src/main.rs"
+doc = false
+
+[[bin]]
+name = "filament-cli"
+path = "src/bin/filament-cli.rs"
+doc = false
+
+[dependencies.mogilefs_client]
+path = "client"
+
+[dependencies.mogilefs_common]
+path = "common"
+
+[dependencies.mogilefs_server]
+path = "server"
+
+[dependencies]
+docopt = "^0.6.70"
+env_logger = "^0.3.1"
+lazy_static = "^0.2.1"
+libc = "^0.2.12"
+log = "^0.3.1"
+rustc-serialize = "^0.3.15"
+
+[dependencies.filament-ext]
+git = "ssh://git@github.com/reverbnation/filament-ext.git"
+rev = "999a546"
+# tag = "v0.1.1"
+
+[dependencies.iron]
+git = "https://github.com/ahwatts/iron.git"
+branch = "bug/http_10"
+default-features = false
+
+[dependencies.url]
+version = "^1.1.0"
+features = [ "rustc-serialize" ]

@@ -1,0 +1,15 @@
+[package]
+name = "rbomberman"
+version = "0.1.0"
+authors = ["Michal Nicpon <nicpon.michal@gmail.com>"]
+
+[dependencies]
+cgmath = "0.15.0"
+env_logger = "0.4.3"
+gfx = "0.16"
+gfx_window_glutin = "*"
+glutin ="*"
+image = "*"
+log = "*"
+nom = { version = "3.2.1", features = ["nightly"] }
+specs = "0.10.0"

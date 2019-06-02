@@ -1,0 +1,16 @@
+[package]
+authors = ["Casey Primozic <me@ameo.link>"]
+name = "stackdriver-logging-utils"
+version = "0.1.0"
+description = "Utilities and functions that make logging to Google Stackdriver from Rust using fern easier."
+license = "Unlicense"
+license-file="LICENSE"
+documentation="https://docs.rs/stackdriver-logging-utils"
+repository="https://github.com/ameobea/rust-stackdriver-logging-utils"
+
+[dependencies]
+fern = "0.5.5"
+log = "0.4.2"
+serde = "1.0.66"
+serde_derive = "1.0.66"
+serde_json = "1.0.20"

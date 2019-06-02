@@ -1,0 +1,8 @@
+[package]
+name = "io-state-machine-prototype4"
+version = "0.1.0"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+
+[dependencies]
+mio = "*"
+slab = "*"

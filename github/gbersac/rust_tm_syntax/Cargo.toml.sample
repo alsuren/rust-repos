@@ -1,0 +1,8 @@
+[package]
+name = "textmate_syntax"
+version = "0.1.0"
+authors = ["Guillaume Bersac <bersac_1@hotmail.fr>"]
+
+[dependencies]
+regex = "*"
+rustc-serialize = "0.3.12"

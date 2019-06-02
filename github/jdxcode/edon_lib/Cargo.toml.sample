@@ -1,0 +1,25 @@
+[package]
+name = "nd_lib"
+version = "0.1.0"
+authors = ["Jeff Dickey <@jdxcode>"]
+license = "MIT"
+repository = "https://github.com/jdxcode/nd_lib"
+description = "library for nd"
+
+[dependencies]
+serde = "1.0.79"
+serde_json = "1.0.30"
+serde_derive = "1.0.79"
+log = "0.4.5"
+env_logger = "0.5.13"
+reqwest = "0.9.1"
+tar = "0.4.17"
+flate2 = "1.0.2"
+clonedir_lib = "0.1.1"
+semver = "0.9.0"
+futures = "0.1.24"
+tokio = "0.1.8"
+rayon = "1.0.2"
+
+[dev-dependencies]
+matches = "0.1.8"

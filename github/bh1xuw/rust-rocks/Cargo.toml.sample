@@ -1,0 +1,39 @@
+[package]
+name = "rocks"
+version = "0.1.4"
+authors = ["BH1XUW <bh1xuw@gmail.com>"]
+description = "RocksDB bindings for Rust."
+repository = "https://github.com/bh1xuw/rust-rocks"
+keywords = ["ffi", "RocksDB", "facebook", "database"]
+categories = ["external-ffi-bindings", "database"]
+license = "Apache-2.0"
+readme = "README.md"
+
+include = [
+    "src/*.rs",
+    "Cargo.toml",
+]
+
+[badges]
+travis-ci = { repository = "bh1xuw/rust-rocks", branch = "master" }
+
+[dependencies]
+lazy_static = "0.2"
+rocks-sys = { path = "rocks-sys", version = "0.1.4" }
+
+[dev-dependencies]
+tempdir = "0.3"
+# test = { path = "../jtest", version = "0.1" }
+
+[features]
+default = []
+static-link = ["rocks-sys/static-link"]
+
+[profile.dev]
+opt-level = 1
+
+[profile.test]
+opt-level = 1
+
+[workspace]
+members = ["rocks-sys"]

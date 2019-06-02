@@ -1,0 +1,13 @@
+[package]
+name = "nonstd"
+description = "A non standard library"
+license = "MIT"
+version = "0.1.0"
+authors = ["juniorz@gmail.com"]
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
+
+[dependencies]
+

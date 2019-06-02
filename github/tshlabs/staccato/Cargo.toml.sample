@@ -1,0 +1,26 @@
+[package]
+name = "staccato"
+version = "0.1.9"
+authors = ["TSH Labs"]
+description = "Statistics from the command line"
+homepage = "https://github.com/tshlabs/staccato"
+repository = "https://github.com/tshlabs/staccato.git"
+readme = "README.md"
+license = "GPL-3.0+"
+keywords = ["statistics", "stats", "cli"]
+
+
+[dependencies]
+clap = "2.11.0"
+
+[lib]
+name = "staccato"
+path = "src/staccato/lib.rs"
+
+[[bin]]
+name = "st"
+path = "src/bin/st.rs"
+doc = false
+
+[badges]
+travis-ci = { repository = "tshlabs/staccato" }

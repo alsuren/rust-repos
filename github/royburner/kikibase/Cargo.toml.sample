@@ -1,0 +1,8 @@
+[package]
+name = "kikibase"
+version = "0.1.0"
+authors = ["roy.burner <roy.burner@gmail.com>"]
+
+[dependencies]
+rustyline = "1.0.0"
+regex = "0.2"

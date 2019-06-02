@@ -1,0 +1,46 @@
+[package]
+
+name = "simd"
+version = "0.0.3"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+repository = "https://github.com/huonw/simd"
+documentation = "http://huonw.github.io/simd/simd"
+homepage = "http://huonw.github.io/simd/simd"
+keywords = ["simd", "numerics"]
+readme = "README.md"
+license = "Apache-2.0/MIT"
+description = """
+Functionality for working with SIMD registers and instructions.
+"""
+
+[features]
+
+default = ["shims"]
+
+unstable = []
+
+# avoid shimming in replacements if there's no direct instruction
+shims = []
+
+# various x86 feature sets
+mmx = []
+sse = ["mmx"]
+sse2 = ["sse"]
+sse3 = ["sse2"]
+ssse3 = ["sse3"]
+sse41 = ["ssse3"]
+sse42 = ["sse41"]
+avx = ["sse42"]
+avx2 = ["avx"]
+avx512 = ["avx2"]
+
+fma = []
+xop = []
+
+# ARM
+neon = []
+
+[dependencies]
+simdty = "0"
+llvmint = "0"

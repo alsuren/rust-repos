@@ -1,0 +1,38 @@
+[package]
+name = "noria-mysql"
+version = "0.1.0"
+authors = ["Malte Schwarzkopf <malte@csail.mit.edu>"]
+
+[dependencies]
+arccstr = "1.1.0"
+clap = "2.24.0"
+failure = "0.1.1"
+msql-srv = "0.6"
+noria = { git = "https://github.com/mit-pdos/noria.git" }
+lazy_static = "1.0.0"
+nom-sql = "0.0.4"
+slog = "2.4.0"
+#slog = { version = "2.4.0", features = ["max_level_trace", "release_max_level_trace"] }
+slog-term = "2.4.0"
+regex = "1.0.0"
+tokio = "0.1"
+chrono = "0.4"
+
+[dev-dependencies]
+mysql = "12.0.4"
+zookeeper = "0.5.4"
+noria-server = { git = "https://github.com/mit-pdos/noria.git" }
+
+[profile.release]
+debug=true
+
+[lib]
+path = "src/lib.rs"
+
+###[patch."https://github.com/mit-pdos/noria.git"]
+###noria = { path = "../noria/noria/" }
+###noria-server = { path = "../noria/noria-server/" }
+
+[patch.crates-io]
+tower-balance = { git = "https://github.com/tower-rs/tower.git" }
+tokio-tower = { git = "https://github.com/tower-rs/tokio-tower.git" }

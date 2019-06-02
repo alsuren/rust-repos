@@ -1,0 +1,14 @@
+[package]
+authors = ["Alexandre Bury <alexandre.bury@gmail.com>"]
+description = "Command-line utilities to record and replay input sent to a terminal session."
+keywords = ["input", "terminal", "TTY", "record"]
+license = "MIT"
+name = "record"
+version = "0.2.3"
+
+[dependencies]
+clap = "2.32.0"
+csv = "1.0.5"
+pty = "0.2.2"
+pty-shell = {git = "https://github.com/euank/pty-shell", branch="staticy"}
+time = "0.1.42"

@@ -1,0 +1,18 @@
+[package]
+name = "pokerserver"
+version = "0.1.0"
+authors = ["Sebastian Kaupper <s.kaupper@gmx.at>"]
+
+
+[dependencies.rustless]
+git = "https://github.com/rustless/rustless"
+
+[dependencies]
+lazy_static ="*"
+hyper = { version = "0.9.14", default-features = false}
+iron = "0.4.0"
+rustc-serialize = "0.3.22"
+valico = "1.0.1"
+
+enum_primitive = "*"
+num = "*"

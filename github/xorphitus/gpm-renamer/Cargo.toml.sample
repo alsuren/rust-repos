@@ -1,0 +1,9 @@
+[package]
+name = "gpm-renamer"
+version = "0.1.0"
+authors = ["xorphitus <xorphitus@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
+id3 = "0.3.0"

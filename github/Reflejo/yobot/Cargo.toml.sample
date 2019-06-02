@@ -1,0 +1,12 @@
+[package]
+name = "yobot"
+version = "0.1.0"
+authors = ["Martin Conte Mac Donell <martin@lyft.com>"]
+
+[dependencies]
+hyper = "*"
+log = "*"
+rand = "*"
+regex = "*"
+rustc-serialize = "*"
+slack = "*"

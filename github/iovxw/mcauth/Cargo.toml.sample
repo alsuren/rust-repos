@@ -1,0 +1,21 @@
+[package]
+name = "mcauth"
+version = "0.1.0"
+authors = ["iovxw <iovxw@outlook.com>"]
+license = "Unlicense"
+readme = "README.md"
+homepage = "https://github.com/iovxw/mcauth"
+repository = "https://github.com/iovxw/mcauth"
+
+[dependencies]
+error-chain = "0.10"
+option-constructor-derive = "0.1"
+
+serde_json = "0.9"
+serde = "*"
+serde_derive = "*"
+
+tokio-curl = "0.1"
+futures = "*"
+tokio-core = "*"
+curl = "*"

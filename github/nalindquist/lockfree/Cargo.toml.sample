@@ -1,0 +1,8 @@
+[package]
+name = "lockfree"
+version = "0.1.0"
+authors = ["Nathan Lindquist <nallink01@gmail.com>"]
+
+[dependencies]
+crossbeam = { path = "../crossbeam" }
+rand = "0.3"

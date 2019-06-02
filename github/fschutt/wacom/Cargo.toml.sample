@@ -1,0 +1,7 @@
+[package]
+name = "wacom"
+version = "0.1.0"
+authors = ["Felix Schütt <felix.schuett@maps4print.com>"]
+
+[dependencies]
+wacom-sys="*"

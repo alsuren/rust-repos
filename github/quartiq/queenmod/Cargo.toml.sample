@@ -1,0 +1,29 @@
+[package]
+name = "queenmod"
+version = "0.1.0"
+authors = ["Robert Jördens <rj@quartiq.de>"]
+
+[features]
+bkpt = [ ]
+itm = [ ]
+simd = [ ]
+
+[dependencies]
+cortex-m = { version = "0.5", features = ["inline-asm", "const-fn"] }
+cortex-m-rt = "0.6"
+panic-itm = "0.4"
+panic-abort = "0.3"
+stm32f4 = { version = "0.6", features = ["stm32f446", "rt"] }
+
+[build-dependencies]
+built = "0.3"
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+debug = true
+lto = true
+codegen-units = 1
+incremental = false

@@ -1,0 +1,8 @@
+[package]
+name = "brainfuck"
+version = "0.1.0"
+authors = ["Nick Massey <nickmass@nickmass.com>"]
+
+[dependencies]
+libc = "0.2"
+clap = "2"

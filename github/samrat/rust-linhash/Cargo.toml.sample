@@ -1,0 +1,10 @@
+[package]
+name = "linhash"
+version = "0.1.0"
+authors = ["Samrat Man Singh <samratmansingh@gmail.com>"]
+
+[lib]
+name = "linhash"
+path = "src/lib.rs"
+
+[dependencies]

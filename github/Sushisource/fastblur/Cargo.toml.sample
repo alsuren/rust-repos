@@ -1,0 +1,9 @@
+[package]
+name = "fastblur"
+version = "0.1.0"
+authors = ["sjudge <sjudge@tableau.com>"]
+
+[dependencies]
+rayon = "1.0"
+image = "*"
+itertools = "0.7"

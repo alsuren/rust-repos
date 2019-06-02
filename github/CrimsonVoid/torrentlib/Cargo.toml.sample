@@ -1,0 +1,25 @@
+cargo-features = ["edition"]
+
+[package]
+name = "libbittorrent"
+version = "0.1.0"
+authors = ["CrimsonVoid"]
+edition = '2018'
+
+[lib]
+name = "libbittorrent"
+path = "src/lib.rs"
+
+[features]
+bench = []
+
+[dependencies]
+time = "*"
+hyper = "*"
+dirs = "1.0.2"
+
+[target.'cfg(windows)'.dependencies]
+shell32-sys="*"
+uuid-sys="*"
+ole32-sys="*"
+winapi="*"

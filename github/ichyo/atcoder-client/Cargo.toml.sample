@@ -1,0 +1,9 @@
+[package]
+name = "atcoder-client"
+version = "0.1.0"
+authors = ["ichyo <ichyo00@gmail.com>"]
+
+[dependencies]
+serde_derive = "1.0.80"
+serde = "1.0.80"
+reqwest = "0.9.4"

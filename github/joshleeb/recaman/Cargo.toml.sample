@@ -1,0 +1,17 @@
+[package]
+name = "recaman"
+version = "0.1.0"
+authors = ["Josh Leeb-du Toit <josh.leebdutoit@gmail.com>"]
+
+description = "Iterator for the Recaman's sequence"
+documentation = "https://docs.rs/crate/recaman/"
+keywords = ["recaman", "sequence"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/joshleeb/recaman"
+
+[badges]
+travis-ci = { repository = "joshleeb/recaman", branch = "master" }
+
+[dependencies]
+fxhash = "0.2.1"

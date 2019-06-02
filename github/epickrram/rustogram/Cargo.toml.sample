@@ -1,0 +1,19 @@
+[package]
+name = "rustogram"
+version = "0.1.5"
+authors = ["Mark Price <mail@epickrram.com>"]
+
+description = "A rust port of HdrHistogram"
+
+#documentation = "..."
+homepage = "https://github.com/epickrram/rustogram"
+repository = "https://github.com/epickrram/rustogram"
+
+readme = "README.md"
+
+keywords = ["histogram", "dynamic", "hdrhistogram", "statistics", "percentile"]
+
+license = "Apache-2.0"
+
+[dependencies]
+rustc-serialize = "0.3"

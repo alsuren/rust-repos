@@ -1,0 +1,36 @@
+[package]
+name = "stenome"
+version = "0.1.0"
+authors = ["davidb"]
+description = "SRS drills.  Supports Plover, and midi."
+readme = "README.rst"
+keywords = ["steno", "plover", "srs", "piano"]
+license = "MIT"
+
+[features]
+default = []
+
+midi = ["midilearn"]
+
+[dependencies]
+rand = "0.3"
+serde_json = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+termion = "1.4"
+rusqlite = "0.12"
+
+timelearn = { path = "timelearn" }
+midilearn = { path = "midilearn", optional = true }
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[[bin]]
+name = "stenome"
+test = false
+doc = false
+
+# If we optimize the tests, it is reasonable to run the full tests.
+#[profile.test]
+#opt-level = 3

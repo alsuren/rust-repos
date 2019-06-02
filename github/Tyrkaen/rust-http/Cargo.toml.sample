@@ -1,0 +1,10 @@
+[package]
+name = "test"
+version = "0.1.0"
+authors = ["MichalReznak <michal.reznak@cadwork.cz>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+juniper = "0.11.1"
+

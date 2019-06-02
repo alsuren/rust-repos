@@ -1,0 +1,11 @@
+[package]
+name = "libpal"
+version = "0.1.0"
+authors = ["Steven Luu <me@luu.io>"]
+
+[dependencies]
+chrono = "0.4"
+lazy_static = "1.2"
+separator = "0.4"
+regex = "1"
+uuid = { version = "0.7", features = ["v4"] }

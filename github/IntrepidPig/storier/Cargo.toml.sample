@@ -1,0 +1,17 @@
+[package]
+name = "storier"
+version = "0.1.5"
+authors = ["Benny A <virusdownloader7@gmail.com>"]
+
+[dependencies]
+rocket = "0.3.1"
+rocket_codegen = "0.3.1"
+chrono = { version = "0.4", features = ["serde"] }
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+handlebars = "0.28.3"
+postgres = { version = "0.15", features = ["with-chrono"] }
+toml = "0.4.4"
+xdg = "2.1.0"
+rust-crypto = "0.2.36"

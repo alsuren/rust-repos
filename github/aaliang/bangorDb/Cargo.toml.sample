@@ -1,0 +1,14 @@
+[package]
+name = "bangor"
+version = "0.1.0"
+authors = ["Andy Liang <andy.liang@indicative.com>"]
+
+[dependencies]
+futures = "0.1.6"
+tokio-core = "0.1"
+
+[[bin]]
+name = "server"
+
+[[bin]]
+name = "disk-io"

@@ -1,0 +1,10 @@
+[package]
+name = "libobs"
+version = "0.1.0"
+authors = ["Barnaby Keene <accounts@southcla.ws>"]
+edition = "2018"
+
+[build-dependencies]
+bindgen = "0.42.2"
+
+[dependencies]

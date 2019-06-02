@@ -1,0 +1,12 @@
+[package]
+name = "rsplacer"
+version = "0.1.0"
+authors = ["Niclas Rosengren <niclas.rosengren@gmail.com>"]
+
+[dependencies]
+
+regex = "*"
+failure = "*"
+failure_derive = "*"
+structopt = "*"
+structopt-derive = "*"

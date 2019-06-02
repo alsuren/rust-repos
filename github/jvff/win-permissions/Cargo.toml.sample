@@ -1,0 +1,11 @@
+[package]
+name = "win-permissions"
+version = "0.1.0"
+authors = ["Mullvad VPN <admin@mullvad.net>", "Janito Vaqueiro Ferreira Filho <janito@mullvad.net>"]
+description = "Safe abstraction over Windows ACL interface"
+license = "GPL-3.0"
+
+[dependencies]
+bitflags = "1.0"
+failure = { version = "0.1", features = ["derive"] }
+winapi = { version = "0.3", features = ["accctrl", "aclapi", "errhandlingapi", "securitybaseapi", "sddl", "winbase", "winerror", "winnt"] }

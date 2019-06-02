@@ -1,0 +1,28 @@
+[package]
+authors = ["BurntPizza <xburntpizza@gmail.com>"]
+license = "MIT"
+name = "aleph"
+version = "0.1.0"
+
+[dependencies]
+disjoint-sets = "0.3"
+itertools = "0.5"
+lazy_static = "0.2"
+log = "0.3"
+petgraph = "0.4.4"
+
+[dependencies.ena]
+default-features = false
+git = "https://github.com/nikomatsakis/ena"
+
+[dependencies.tiered-map]
+git = "https://github.com/BurntPizza/tiered-map"
+
+[dev-dependencies]
+slog-envlogger = "0.5"
+
+[lib]
+name = "aleph"
+
+[features]
+bench = []

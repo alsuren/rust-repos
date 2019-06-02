@@ -1,0 +1,15 @@
+[package]
+name = "chip8-interpreter"
+version = "0.1.0"
+authors = ["pohuing <patrick.wintering@t-online.de>"]
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "example"
+path = "src/main.rs"
+
+[dependencies]
+rand = "0.5.5"

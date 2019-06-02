@@ -1,0 +1,13 @@
+[package]
+name = "espre"
+version = "0.1.0"
+authors = ["Vectorlincent <vectorlincent@gmail.com>"]
+description = "An Extensible, Scalable Placement and Routing Engine for FPGA designs."
+
+[[bin]]
+name = "espre"
+
+[dependencies]
+espre-frontend = { path = "src/frontend", version = "0.1.0" }
+espre-route = { path = "src/modules/route", version = "0.1.0" }
+getopts = "0.2.17"

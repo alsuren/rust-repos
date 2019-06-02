@@ -1,0 +1,23 @@
+[package]
+
+name = "anime-dupe-finder"
+version = "1.2.0"
+authors = ["Jacob Helwig <jacob@technosorcery.net>"]
+repository = "https://git.technosorcery.net/?p=anime-dupe-finder.git"
+homepage = "https://bugs.technosorcery.net/"
+description = "Find duplicate anime files in an organized collection"
+license = "BSD-2-Clause"
+readme = "README.md"
+
+[dependencies]
+glob = "*"
+regex = "*"
+regex_macros = "*"
+log = "*"
+env_logger = "*"
+ansi_term = "*"
+
+[dependencies.clap]
+version = "*"
+default-features = false
+features = [ "suggestions", "color" ]

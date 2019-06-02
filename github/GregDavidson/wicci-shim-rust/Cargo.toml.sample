@@ -1,0 +1,33 @@
+[package]
+name = "shim"
+version = "0.1.0"
+authors = ["GregDavidson <greg.davidson+git@gmail.com>"]
+
+[dependencies]
+getopts = "0.2.18"
+postgres = "0.15"
+# postgres-openssl = "0.1.0"
+# postgres_large_object = "0.7.1"
+lazy_static = "1.2.0"
+# libc = "0.2.48"
+regex = "1.1.0"
+#regex_macros = "0.2.0"
+ascii = "0.9.1"
+tiny_http = "0.6.2"
+url = "1.7.2"
+log = "0.4.6"
+env_logger = "0.6.0"
+
+## get latest versions of:
+
+# [dependencies.hyper]
+# git = "https://github.com/hyperium/hyper"
+
+# [dependencies.tiny_http]
+# git = "https://github.com/frewsxcv/tiny-http"
+
+# [dependencies.lazy_static]
+# git = "https://github.com/Kimundi/lazy-static.rs"
+
+# [dependencies.url]
+# git = "https://github.com/servo/rust-url"

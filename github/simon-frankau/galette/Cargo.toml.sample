@@ -1,0 +1,15 @@
+[package]
+name = "galette"
+version = "0.2.0"
+authors = ["Simon Frankau <sgf@arbitrary.name>"]
+
+[dependencies]
+clap = "*"
+itertools = "*"
+libc = "*"
+
+[lib]
+name = "galette"
+
+[[bin]]
+name = "galette"

@@ -1,0 +1,27 @@
+[package]
+name = "string-wrapper"
+version = "0.3.0"
+authors = ["Christopher Armstrong <radix@twistedmatrix.com>"]
+license = "MIT / Apache-2.0"
+repository = "https://github.com/radix/string-wrapper"
+documentation = "https://docs.rs/string-wrapper"
+description = "A possibly-stack-allocated string with generic bytes storage"
+readme = "README.md"
+keywords = ["string", "data-structures"]
+categories = ["data-structures"]
+
+[badges]
+travis-ci = { repository = "radix/string-wrapper" }
+
+[lib]
+path = "lib.rs"
+
+[features]
+use_serde = ["serde", "serde_derive"]
+
+[dev-dependencies]
+serde_json = "1.0"
+
+[dependencies]
+serde = {version = "1.0", optional = true}
+serde_derive = {version = "1.0", optional = true}

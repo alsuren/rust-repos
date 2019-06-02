@@ -1,0 +1,25 @@
+[package]
+name = "rust-clustering"
+version = "0.1.0"
+authors = ["godtopus"]
+
+description = "A clustering library."
+repository = "https://github.com/godtopus/rust-clustering"
+documentation = ""
+keywords = ["machine","learning","stats","data","machine-learning","clustering"]
+categories = ["science"]
+readme = "README.md"
+license = ""
+
+[dependencies]
+rand = "0.3.16"
+time = "0.1.38"
+itertools = "0.6.1"
+rayon = "0.8.2"
+nalgebra = "0.10.*"
+
+[profile.dev]
+opt-level = 0
+
+[profile.test]
+opt-level = 3

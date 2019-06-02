@@ -1,0 +1,16 @@
+[package]
+
+name = "readline"
+version = "0.0.13"
+authors = ["Nicole Mazzuca <npmazzuca@gmail.com>"]
+
+description = "Wrapper around readline on Linux and Mac OS X, a shim on Windows. DO NOT USE: `rustyline` does the same job much better"
+
+repository = "https://github.com/ubsan/readline"
+readme = "README.md"
+keywords = ["readline", "input"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+libc = "0.2.11"
+readline-sys = "0.0.12"

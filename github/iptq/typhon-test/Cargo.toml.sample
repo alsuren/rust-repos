@@ -1,0 +1,25 @@
+[package]
+name = "typhon"
+version = "0.1.0"
+authors = ["Michael Zhang <failed.down@gmail.com>"]
+build = "bin/build.rs"
+
+[[bin]]
+doc = false
+name = "tc"
+path = "bin/compiler.rs"
+
+[[bin]]
+doc = false
+name = "tci"
+path = "bin/interpreter.rs"
+
+[build-dependencies]
+lalrpop = "0.14.0"
+
+[dependencies]
+clap = "2.31.2"
+lalrpop-util = "0.14.0"
+linefeed = "0.4"
+llvm-sys = "60.0.1"
+regex = "0.2.10"

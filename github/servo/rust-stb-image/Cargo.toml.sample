@@ -1,0 +1,17 @@
+[package]
+name = "stb_image"
+version = "0.2.2"
+authors = ["The Servo Project Developers"]
+description = "Bindings to the stb image encoding/decoding library"
+repository = "https://github.com/servo/rust-stb-image"
+documentation = "https://docs.rs/stb_image/"
+keywords = ["image", "jpeg", "png", "bmp", "gif"]
+license = "MIT / Apache-2.0"
+
+build = "build.rs"
+
+[dependencies]
+libc = "0.2.0"
+
+[build-dependencies]
+gcc = "0.3"

@@ -1,0 +1,40 @@
+[package]
+name = "tunnel-updater"
+version = "0.4.0"
+edition = "2018"
+authors = ["Vladimir Bulyga <zero@13w.me>"]
+description = ""
+license = "MIT"
+readme = "README.md"
+
+[profile.release]
+debug = false
+opt-level = "z"
+codegen-units = 1
+lto = true
+panic = "abort"
+rustflags = [
+    "link-arg=-s"
+]
+
+[dependencies]
+actix = "0.7.9"
+actix-web = "0.7.18"
+env_logger = "0.6.1"
+clap = "2.32.0"
+
+[package.metadata.deb]
+maintainer = "Vladimir Bulyga"
+copyright = "2018, Vladimir Bulyga<zero@13w.me>"
+license-file = ["LICENSE", "4"]
+extended-description = """\
+descr."""
+depends = "$auto, systemd"
+section = "admin"
+priority = "optional"
+assets = [
+    ["target/release/tunnel-updater", "usr/bin/tunnel-updater", "755"],
+    ["tunnel-updater.default", "etc/default/tunnel-updater", "644"],
+    ["tunnel-updater.service", "lib/systemd/system/", "644"],
+    ["README.md", "usr/share/doc/cargo-deb/README", "644"],
+]

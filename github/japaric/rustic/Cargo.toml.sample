@@ -1,0 +1,10 @@
+[package]
+authors = ["Jorge Aparicio <japaricious@gmail.com>"]
+name = "rustic"
+version = "0.0.0"
+
+[dependencies]
+env_logger = "~ 0.3"
+log = "~ 0.3"
+clap = "~ 1.5"
+sha1 = "0.1.1"

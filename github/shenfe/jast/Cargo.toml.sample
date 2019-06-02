@@ -1,0 +1,13 @@
+[package]
+name = "jast"
+version = "0.1.0"
+authors = ["hengwu <youchuangqiba@163.com>"]
+build = "build.rs"
+
+[build-dependencies]
+pest = "^1.0"
+pest_derive = "^1.0"
+
+[dependencies]
+pest = "1.0.3"
+pest_derive = "1.0.3"

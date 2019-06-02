@@ -1,0 +1,73 @@
+[package]
+authors = ["Fuzen-py <fuzen@protonmail.com>"]
+name = "games-microservice"
+version = "0.5.1"
+
+[[bin]]
+name = "game-service"
+path = "bin/main.rs"
+required-features = [
+    "web",
+    "auto_save",
+]
+
+[dependencies]
+cfg-if = "0.1.2"
+cute = "0.3.0"
+dotenv = "0.11.0"
+lazy_static = "1.0.0"
+log = "0.4.1"
+rand = "0.4.2"
+regex = "0.2.6"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+serde_json = "1.0.9"
+
+[dependencies.diesel]
+features = ["postgres"]
+optional = true
+version = "1.1.1"
+
+[dependencies.diesel_migrations]
+features = ["postgres"]
+optional = true
+version = "1.1.0"
+
+[dependencies.r2d2]
+optional = true
+version = "0.8.2"
+
+[dependencies.r2d2-diesel]
+optional = true
+version = "1.0.0"
+
+[dependencies.rocket]
+optional = true
+version = "0.3.6"
+
+[dependencies.rocket_codegen]
+optional = true
+version = "0.3.6"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["json"]
+optional = true
+version = "0.3.6"
+
+[features]
+auto_save = [
+    "r2d2",
+    "r2d2-diesel",
+    "diesel",
+    "diesel_migrations",
+]
+default = [
+    "web",
+    "auto_save",
+]
+web = [
+    "rocket",
+    "rocket_codegen",
+    "rocket_contrib",
+]

@@ -1,0 +1,14 @@
+[package]
+name = "hertzery"
+version = "0.0.1"
+authors = ["Erik Mossberg <clicketyclack@users.noreply.github.com>"]
+
+[dependencies]
+portaudio = "*"
+time = "*"
+gtk = "*"
+gdk = "*"
+cairo = "*"
+
+[features]
+default = ["gtk/v3_10"]

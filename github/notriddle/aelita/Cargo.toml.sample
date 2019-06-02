@@ -1,0 +1,32 @@
+[package]
+name = "aelita"
+version = "0.1.0"
+authors = ["Michael Howell <michael@notriddle.com>"]
+license = "MIT / Apache-2.0"
+
+[profile.release]
+lto = true
+
+[dependencies]
+crossbeam = "0.2"
+env_logger = "0.3"
+hex = "0.2"
+horrorshow = "0.6"
+hyper = "0.9"
+lazy_static = "0.2"
+log = "0.3"
+mime = "0.2"
+openssl = "0.7"
+postgres = "0.13"
+quick-error = "1.0"
+quickersort = "2.0"
+rest = { git = "https://github.com/AelitaBot/rust-rest.git" }
+regex = "0.1"
+rusqlite = "0.7"
+serde = "0.8"
+serde_json = "0.8"
+serde_derive = "0.8"
+spmc = "0.2"
+toml = "0.2"
+url = "1.2"
+void = "1.0"

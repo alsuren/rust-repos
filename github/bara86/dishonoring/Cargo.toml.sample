@@ -1,0 +1,15 @@
+[package]
+name = "dishonoring"
+version = "0.1.0"
+authors = ["Matteo Baracani <bara@develer.com>"]
+
+[dependencies]
+actix-web = "0.6"
+failure = "0.1"
+failure_derive = "0.1"
+rand = "0.3.14"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+diesel = { version = "1", features = ["sqlite"] }
+dotenv = "0.10"

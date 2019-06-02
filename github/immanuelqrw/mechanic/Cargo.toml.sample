@@ -1,0 +1,29 @@
+[package]
+name = "mechanic"
+version = "0.0.1"
+authors = ["Immanuel Washington <code.immanuelqrw@gmail.com>"]
+
+[lib]
+name = "mechanic_"
+path = "src/lib/main.rs"
+
+[[bin]]
+name = "mechanic"
+path = "src/bin/main.rs"
+
+[dependencies]
+chrono = "0.4.0"
+diesel = "0.99.0"
+fs_extra = "1.0.0"
+lettre = "0.7.0"
+log = "0.3.8"
+polish = "0.7.3"
+postgres = "0.15.1"
+regex = "0.2.3"
+# rocket = "0.3.3"
+rusqlite = "0.13.0"
+serde = "1.0"
+serde_json = "1.0.7"
+serde_yaml = "0.7.3"
+# stainless = "0.1.12"
+tokio-core = "0.1.10"

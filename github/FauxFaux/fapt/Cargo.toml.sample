@@ -1,0 +1,69 @@
+[package]
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+categories = [
+    "os",
+    "parsing",
+]
+description = "Faux' apt package manager for Debian"
+license = "MIT OR Apache-2.0"
+name = "fapt"
+readme = "README.md"
+repository = "https://github.com/FauxFaux/fapt"
+version = "0.1.0"
+
+edition = "2018"
+
+exclude = [
+    "tests/lists/trusty.list",
+]
+
+
+[badges.appveyor]
+branch = "master"
+repository = "FauxFaux/fapt"
+service = "github"
+
+[badges.travis-ci]
+repository = "FauxFaux/fapt"
+
+[features]
+binaries = ["clap"]
+
+[dependencies]
+deb-version = "0.1"
+distro-keyring = "0.1"
+chrono = "0.4"
+directories = "1"
+failure = "0.1"
+filetime = "0.2"
+gpgrv = "0.2"
+hex = "0.3"
+insideout = "0.2"
+mailparse = "0.6"
+md-5 = "0.8"
+nom = "4"
+reqwest = "0.9"
+sha2 = "0.8"
+tempfile = "3"
+tempfile-fast = "0.3"
+
+[dependencies.clap]
+optional = true
+version = "2"
+
+[dependencies.digest]
+features = ["std"]
+version = "0.8"
+
+[dependencies.flate2]
+default-features = false
+features = ["rust_backend"]
+version = "1"
+
+[dependencies.jemallocator]
+optional = true
+version = "0.1"
+
+[[bin]]
+name = "fapt"
+required-features = ["binaries"]

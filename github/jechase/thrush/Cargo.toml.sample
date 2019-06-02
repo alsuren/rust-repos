@@ -1,0 +1,9 @@
+[package]
+name = "thrush"
+version = "0.1.0"
+authors = ["Josh Chase <josh@jec.pw>"]
+
+[dependencies]
+wren-sys = { path = "./wren-sys", version = "0.1.0" }
+
+[lib]

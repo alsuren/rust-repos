@@ -1,0 +1,9 @@
+[package]
+name = "rustracer"
+version = "0.1.0"
+authors = ["Drew Youngwerth <drew@youngwerth.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+image = "0.21.1"

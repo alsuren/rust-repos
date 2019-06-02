@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "examples/crypto",
+    "static-atom",
+    "static-atom-build"
+]
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+
+[profile.bench]
+codegen-units = 1
+lto = "fat"

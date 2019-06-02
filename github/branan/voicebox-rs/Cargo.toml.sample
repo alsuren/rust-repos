@@ -1,0 +1,18 @@
+[package]
+name = "voicebox"
+version = "0.1.0"
+authors = ["Branan Riley <me@branan.info>"]
+description = "Voicebox API wrapper"
+homepage = "https://github.com/branan/voicebox-rs"
+repository = "https://github.com/branan/voicebox-rs"
+license = "GPL-3.0"
+
+[dependencies]
+error-chain = "0.10.0"
+futures = "0.1.0"
+hyper = "0.11.0"
+itertools = "0.6.0"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+tokio-core = "0.1.0"

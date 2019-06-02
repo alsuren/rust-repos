@@ -1,0 +1,21 @@
+[package]
+name = "mongoful"
+version = "0.1.0"
+authors = ["Shaun Savage <savages@savages.com>"]
+
+[dependencies]
+rustful = { git = "https://github.com/Ogeon/rustful.git" }
+serde = ""
+serde_json = ""
+serde_derive = ""
+unicase = "1.0"
+log = ""
+env_logger = ""
+hyper = "0.11"
+config = "0.6"
+mongodb = "0.3.2"
+bson = "0.9"
+chrono = { version = "0.4", features = ["serde"]}
+sodiumoxide = { version = "0.0.15", features = ["serde"] }
+base64 = "~0.6.0"
+rmp-serde = "0.13"

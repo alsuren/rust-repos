@@ -1,0 +1,15 @@
+[package]
+name = "baum"
+version = "0.1.0"
+authors = ["Jeremy PEPIN <jpepin@student.42.fr>"]
+
+[dependencies.libc]
+version       = "0.2"
+
+[[bin]]
+name = "baum"
+test = false
+
+[lib]
+test = false
+doctest = false

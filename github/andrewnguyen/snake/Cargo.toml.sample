@@ -1,0 +1,8 @@
+[package]
+name = "snake"
+version = "0.1.0"
+authors = ["Andrew Nguyen <andrew.thienlan.nguyen@gmail.com>"]
+
+[dependencies]
+ggez = { version = "0.3", features = ["cargo-resource-root"] }
+rand = "0.3"

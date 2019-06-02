@@ -1,0 +1,29 @@
+[package]
+name = "ropenvpn"
+version = "0.1.0"
+authors = ["Alice <alice@xomg.net>"]
+
+[dependencies]
+libc = "*"
+openssl = "0.9.24"
+byteorder = "1.2.1"
+rand = "*"
+rust-crypto = "^0.2"
+hex = "*"
+log = "*"
+env_logger = "0.5"
+toml = "0.4"
+ipnetwork = "*"
+tuntap = { git = "https://github.com/0xa/tuntap-rust.git" }
+clap = "*"
+minilzo = "*"
+time = "*"
+serde = "1"
+serde_derive = "1"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "relay"
+harness = false

@@ -1,0 +1,10 @@
+[package]
+authors = ["Rémi Labeyrie <rlabeyrie@gmail.com>"]
+name = "asyncgenerator"
+version = "0.1.0"
+
+[dependencies]
+crossbeam = "0.3.0"
+
+[dependencies.futures-await]
+git = "https://github.com/alexcrichton/futures-await"

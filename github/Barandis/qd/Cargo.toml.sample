@@ -1,0 +1,26 @@
+[package]
+name = "qd"
+version = "0.2.0-alpha"
+authors = ["Thomas Otterson <barandis1729@gmail.com>"]
+edition = "2018"
+description = "High-precision double-double and quad-double floating point number library"
+repository = "https://github.com/Barandis/qd"
+keywords = ["double", "quad", "double-double", "quad-double", "floating-point"]
+license = "MIT"
+
+[features]
+default = []
+
+# This feature disables the use of the f64 `mul_add` function when doing high-precision multiplication. `mul_add` falls
+# back to a slow method of calculating a * b + c if the processor does not have an FMA (fused multiply and add)
+# instruction available.
+#
+# This crate contains a multiplication algorithm that is not as fast as with FMA, but is faster than using `mul_add`
+# without FMA. Enabling this feature will use that algorithm. It's recommended to do so only if your processor does not
+# have an FMA instruction.
+#
+# There is no FMA instruction (yet) in WebAssembly, so it's completely reasonable to use this feature if wasm is your
+# target.
+no_fma = []
+
+[dependencies]

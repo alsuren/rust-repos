@@ -1,0 +1,12 @@
+[package]
+name = "writium-cache"
+version = "0.1.2"
+authors = ["PENGUINLIONG <admin@penguinliong.moe>"]
+keywords = ["writium", "cache"]
+license = "MIT"
+repository = "https://github.com/PENGUINLIONG/writium-cache"
+description = "Common cache system for Writium APIs"
+
+[dependencies]
+log = "0.4"
+writium = "0.1"

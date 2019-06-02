@@ -1,0 +1,8 @@
+[package]
+name = "git-bd"
+version = "0.1.0"
+authors = ["Kevin Choubacha <kchoubacha@weedmaps.com>"]
+
+[dependencies]
+"git2" = "*"
+"colored" = "1.6"

@@ -1,0 +1,8 @@
+[package]
+authors = ["Christopher J. Woodall <chris.j.woodall@gmail.com>"]
+name = "pcan-basic"
+version = "0.2.0"
+
+[dependencies]
+error-chain = "0.10.0"
+pcan-basic-sys = "0.2.0"

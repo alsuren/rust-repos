@@ -1,0 +1,11 @@
+[package]
+name = "BitVersion"
+version = "0.1.0"
+authors = ["DHunte"]
+edition = "2018"
+
+[dependencies]
+log = "0.4.6"
+env_logger = "*"
+rslightlog = { git = 'https://github.com/DHunte/rs-lightlog' }
+toml = "0.4"

@@ -1,0 +1,10 @@
+[package]
+name = "pmendcoin"
+version = "0.1.0"
+authors = ["Pedro Mendonça <pedromdsmendonca@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rust-crypto = "0.2.36"
+base64 = "0.10.1"
+

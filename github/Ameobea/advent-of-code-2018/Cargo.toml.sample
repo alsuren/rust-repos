@@ -1,0 +1,22 @@
+[package]
+name = "aoc-2018"
+version = "0.1.0"
+authors = ["Casey Primozic <me@ameo.link>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2.44"
+packed_simd = { version = "0.3.1", features = ["into_bits"] }
+lazy_static = "1.2.0"
+regex = "1.1.0"
+chrono = "0.4.6"
+rayon = "1.0.3"
+slab = "0.4.1"
+pathfinding = "1.1.4"
+structopt = "0.2.14"
+nom = "4.1.1"
+cached = "0.8.0"
+z3 = "0.3.0"
+
+[profile.release]
+debug = true

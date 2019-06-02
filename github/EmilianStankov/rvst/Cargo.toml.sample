@@ -1,0 +1,11 @@
+[package]
+name = "rvst"
+version = "0.3.0"
+authors = ["Emilian Stankov <eminstine@gmail.com>"]
+
+[dependencies]
+vst = { git = "https://github.com/rust-dsp/rust-vst" }
+rand = "0.4.2"
+
+[lib]
+crate-type = ["dylib"]

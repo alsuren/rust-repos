@@ -1,0 +1,20 @@
+[package]
+authors = ["Laurentiu Nicola <lnicola@dend.ro>"]
+name = "rusty-bin"
+version = "0.1.0"
+
+[dependencies]
+chrono = "0.4"
+diesel = { version = "1.4", default-features = false, features = ["r2d2", "sqlite", "uuid", "chrono"] }
+dotenv = "0.13"
+rocket = { version = "0.4", git = "https://github.com/SergioBenitez/Rocket" }
+serde = "1.0"
+serde_derive = "1.0"
+syntect = "3.0"
+uuid = { version = "0.7", features = ["v4"] }
+
+[dependencies.rocket_contrib]
+version = "0.4"
+git = "https://github.com/SergioBenitez/Rocket"
+default-features = false
+features = ["tera_templates", "diesel_sqlite_pool"]

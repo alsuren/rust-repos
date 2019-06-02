@@ -1,0 +1,19 @@
+[package]
+name = "platformer-rust"
+version = "0.1.0"
+authors = ["Reza Hajianpour <reza.hajianpour@queensu.ca>"]
+edition = "2018"
+
+[dependencies]
+sfml = "0.14.0"
+serde_json = "1.0"
+walkdir = "2"
+rlua = "0.15.3"
+
+[lib]
+name = "platformer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "runtime"
+path = "src/runtime/main.rs"

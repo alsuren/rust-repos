@@ -1,0 +1,12 @@
+[package]
+name = "synacore_challenge"
+version = "0.1.0"
+authors = ["Galen Elias <gelias@gmail.com>"]
+
+[dependencies]
+clap = "*"
+data-encoding = "*"
+
+[[bin]]
+name = "synacor"
+path = "src/main.rs"

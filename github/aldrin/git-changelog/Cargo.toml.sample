@@ -1,0 +1,43 @@
+[package]
+version     = "0.3.2-nightly"
+name        = "git-changelog"
+authors     = ["Aldrin J D'Souza <code@aldrin.co>"]
+description = "A tool to automate project changelog generation."
+license     = "MIT"
+homepage    = "https://github.com/aldrin/git-changelog"
+repository  = "https://github.com/aldrin/git-changelog"
+readme      = "README.md"
+keywords    = ["git", "changelog", "report", "project", "status"]
+categories  = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+log          = "0.3"
+nom          = "3.2"
+chrono       = "0.4"
+regex        = "0.2"
+serde        = "1.0"
+failure      = "0.1"
+console      = "0.6"
+handlebars   = "0.29"
+env_logger   = "0.3"
+serde_yaml   = "0.7"
+serde_json   = "1.0"
+serde_derive = "1.0"
+clap         = { version = "2", features = ["yaml"] }
+
+[dev-dependencies]
+difference   = "1.0"
+
+[lib]
+name = "changelog"
+
+[[bin]]
+name = "git-changelog"
+
+[badges]
+maintenance                       = { status = "actively-developed" }
+travis-ci                         = { repository = "aldrin/git-changelog" }
+appveyor                          = { repository = "aldrin/git-changelog" }
+codecov                           = { repository = "aldrin/git-changelog" }
+is-it-maintained-issue-resolution = { repository = "aldrin/git-changelog" }
+is-it-maintained-open-issues      = { repository = "aldrin/git-changelog" }

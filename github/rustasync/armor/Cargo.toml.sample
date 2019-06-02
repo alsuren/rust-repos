@@ -1,0 +1,17 @@
+[package]
+name = "armor"
+version = "1.1.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/rustasync/armor"
+documentation = "https://docs.rs/armor"
+description = "HTTP Security Headers."
+keywords = ["security", "XSS", "helmet", "HTTP"]
+categories = ["asynchronous", "web-programming", "web-programming::http-server"]
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+http = "0.1.17"
+
+[dev-dependencies]

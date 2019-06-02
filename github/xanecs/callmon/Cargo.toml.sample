@@ -1,0 +1,9 @@
+[package]
+name = "callmon"
+version = "0.0.1"
+authors = ["Leon Bentrup <leon@leonadi.de>"]
+
+[dependencies]
+chrono = "0.2"
+redis = "0.8"
+rustc-serialize = "0.3"

@@ -1,0 +1,12 @@
+[package]
+name = "comptr"
+version = "0.2.0"
+authors = ["msiglreith <msiglreith@users.noreply.github.com>"]
+license = "MIT"
+
+[lib]
+name = "comptr"
+path = "src/lib.rs"
+
+[dependencies]
+winapi = "0.2"

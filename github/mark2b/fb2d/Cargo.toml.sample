@@ -1,0 +1,42 @@
+[package]
+name = "fb2d"
+version = "0.1.1"
+authors = ["Mark Berner <mark2b@gmail.com>"]
+build = "build/build.rs"
+
+[lib]
+name = "fb2d"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fb2d-show"
+path = "bin/show.rs"
+
+[dependencies]
+log = "0.4"
+libc = "0.2"
+unzip = "0.1"
+tempdir = "0.3"
+memmap = "0.5"
+image = "0.18"
+rusttype = "0.5"
+xml-rs = "0.7"
+uuid = { version = "0.6",features = ["v4"] }
+clap = "2.31"
+ctrlc = "3.1.0"
+unicode-bidi = "0.3.4"
+
+[[example]]
+name = "simple-sprite"
+path = "examples/simple_sprite.rs"
+
+[[example]]
+name = "simple-browser"
+path = "examples/simple_browser.rs"
+
+[dev-dependencies]
+clap = "2.31"
+ctrlc = "3.1.0"
+
+[build-dependencies]
+vergen = "0.1"

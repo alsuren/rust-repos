@@ -1,0 +1,30 @@
+[package]
+name = "huffman-coding"
+version = "0.1.2"
+authors = ["WanzenBug <moritz.wanzenboeck@gmail.com>"]
+description = "Crate for doing pure huffman coding"
+license = "MIT"
+repository = "https://github.com/WanzenBug/huffman_coding"
+documentation = "https://docs.rs/huffman-coding/"
+
+[lib]
+name = "huffman_coding"
+path = "src/lib.rs"
+
+[[bin]]
+name = "encode"
+path = "src/bin/encode.rs"
+
+[[bin]]
+name = "decode"
+path = "src/bin/decode.rs"
+
+[features]
+bin = [ "clap" ]
+default-features = []
+
+[dependencies]
+bitstream-rs = "0.1.2"
+bit-vec = "0.4.3"
+
+clap = { version = "2.20.0", optional = true }

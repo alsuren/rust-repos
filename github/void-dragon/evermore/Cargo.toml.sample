@@ -1,0 +1,14 @@
+[package]
+name = "evermore"
+version = "0.0.1"
+authors = ["voidragon"]
+
+[dependencies]
+alto = "*"
+collada = "*"
+gl = "*"
+glutin = "*"
+lewton= "*"
+logging = { path = "../logging" }
+# hlua = "*"
+runjit = { path = "../runjit" }

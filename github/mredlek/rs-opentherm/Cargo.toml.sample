@@ -1,0 +1,12 @@
+[package]
+name = "opentherm"
+version = "0.0.2"
+authors = ["mredlek <mredlek@users.noreply.github.com>"]
+license = "MIT"
+
+[dependencies]
+bitflags="*"
+serde="*"
+serde_derive="*"
+error-chain="*"
+log="*"

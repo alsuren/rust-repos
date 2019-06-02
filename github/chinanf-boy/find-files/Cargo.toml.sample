@@ -1,0 +1,13 @@
+[package]
+name = "find-files"
+version = "0.1.0"
+authors = ["chinanf-boy <865501259@qq.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "*"
+rustc-serialize = "*"
+ignore = "0.4"
+
+[lib]
+crate-type = ["cdylib"]

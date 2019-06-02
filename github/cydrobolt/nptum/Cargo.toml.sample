@@ -1,0 +1,16 @@
+[package]
+name = "nptum"
+version = "0.1.0"
+authors = ["Chaoyi Zha <me@cydrobolt.com>"]
+
+[dependencies]
+iron="*"
+persistent="*"
+router = "*"
+mount = "*"
+staticfile="*"
+handlebars-iron="*"
+rustc-serialize = "*"
+urlencoded="*"
+cookie="*"
+oven="*"

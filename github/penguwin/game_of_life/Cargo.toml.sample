@@ -1,0 +1,22 @@
+[package]
+name = "game_of_life"
+version = "0.1.0"
+authors = ["penguwin <penguwingit@gmail.com>"]
+
+[dependencies]
+rand = "0.5.0"
+
+[dev-dependencies]
+docopt = "1"
+serde = "1.0"
+serde_derive = "1.0"
+sdl2 = "0.31.0"
+
+[lib]
+name = "game_of_life"
+
+[[example]]
+name = "sdl2"
+
+[[example]]
+name = "console"

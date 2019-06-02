@@ -1,0 +1,12 @@
+[package]
+name = "algorithms"
+version = "0.1.0"
+authors = ["David Peklak <dpeklak@gmail.com>"]
+
+[lib]
+name = "algorithms"
+path = "src/lib/lib.rs"
+
+[dependencies]
+rand = "0.5"
+stopwatch = "0.0.7"

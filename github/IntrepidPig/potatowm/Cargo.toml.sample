@@ -1,0 +1,13 @@
+[package]
+name = "potatowm"
+version = "0.1.0"
+authors = ["Benny A <virusdownloader7@gmail.com>"]
+
+[dependencies]
+px = { path = "../px" }
+log = "*"
+log4rs = "*"
+xdg = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"

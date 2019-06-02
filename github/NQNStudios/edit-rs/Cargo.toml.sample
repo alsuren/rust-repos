@@ -1,0 +1,9 @@
+[package]
+name = "edit-rs"
+version = "0.2.1"
+authors = ["Nat Quayle Nelson <natquaylenelson@gmail.com>"]
+description = "Let the user input multiline strings using their favorite text editor"
+license = "GPL-3.0"
+
+[dependencies]
+subprocess = "0.1.13"

@@ -1,0 +1,8 @@
+[package]
+name = "matasano-crypto-challenges"
+version = "0.1.0"
+authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3.19"
+num-rational    = "0.1.32"

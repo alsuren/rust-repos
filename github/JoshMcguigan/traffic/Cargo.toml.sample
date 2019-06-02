@@ -1,0 +1,23 @@
+[package]
+name = "traffic"
+version = "0.1.5"
+authors = ["Josh Mcguigan"]
+description = "Simple traffic reporting for your Github repositories"
+repository = "https://github.com/JoshMcguigan/traffic"
+readme = "README.md"
+keywords = ["github", "cli"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+reqwest = {version="0.8.5", features = ["unstable"]}
+futures = "0.1.15"
+tokio-core = "0.1.6"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+keyring = "0.6.0"
+chrono = { version = "0.4", features = ["serde"] }
+preferences = "1.1.0"
+structopt = "0.2.8"
+rpassword = "2.0.0"
+

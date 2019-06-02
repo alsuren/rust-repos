@@ -1,0 +1,8 @@
+[package]
+name = "rslightlog"
+version = "0.1.0"
+authors = ["Dhunte"]
+edition = "2018"
+
+[dependencies]
+log = { version = "0.4.6", features = ["std", "serde"] }

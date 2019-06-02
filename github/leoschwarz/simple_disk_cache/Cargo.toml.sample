@@ -1,0 +1,19 @@
+[package]
+name = "simple_disk_cache"
+version = "0.1.2"
+authors = ["Leo Schwarz <mail@leoschwarz.com>"]
+license = "Apache-2.0"
+description = "Simple disk cache for use in Rust applications."
+repository = "https://github.com/leoschwarz/simple_disk_cache"
+documentation = "https://docs.rs/simple_disk_cache"
+
+[dependencies]
+addressable_queue = "0.2"
+bincode = "1.0"
+failure = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dev-dependencies]
+tempdir = "0.3.6"

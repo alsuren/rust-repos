@@ -1,0 +1,8 @@
+[package]
+name = "cifar"
+version = "0.1.0"
+authors = ["inkyu <gofiri@gmail.com>"]
+
+[dependencies]
+monster = { path = "deps/monster" }
+rand = "0.3"

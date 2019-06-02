@@ -1,0 +1,21 @@
+[package]
+name = "oscoin"
+description = "Deterministically exercise nondeterminism in distributed, concurrent, and persistent code."
+version = "0.2.0"
+authors = ["Tyler Neely <t@jujit.su>"]
+license = "Apache-2.0"
+homepage = "https://github.com/spacejam/crack"
+keywords = ["testing", "distributed-systems", "database", "network", "concurrency"]
+documentation = "https://docs.rs/crack"
+
+[features]
+default = []
+schedule = []
+
+[dependencies]
+rand = "0.4"
+lazy_static = "1.0"
+libc = "0.2"
+
+[dev-dependencies]
+quickcheck = "0.6"

@@ -1,0 +1,15 @@
+[package]
+name = "confine"
+version = "0.1.0"
+authors = ["Nikita Bilous <nikita@bilous.me>"]
+
+[dependencies]
+clap = "*"
+log = "*"
+env_logger = "*"
+fs_extra = "*"
+dirs = "*"
+hostname = "*"
+toml = "*"
+tera = "*"
+snafu = "*"

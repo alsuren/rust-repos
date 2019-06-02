@@ -1,0 +1,11 @@
+[package]
+name = "slag"
+version = "0.1.2"
+authors = ["Michael Layzell <michael@thelayzells.com>"]
+description = "Rust without braces or semicolons"
+license-file = "LICENSE"
+repository = "https://github.com/mystor/slag"
+
+[dependencies]
+syntex_syntax = { path = "old_syntex" }
+docopt = "0.6"

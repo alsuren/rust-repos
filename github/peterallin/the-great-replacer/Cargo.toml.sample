@@ -1,0 +1,8 @@
+[package]
+name = "the-great-replacer"
+version = "0.1.0"
+authors = ["Peter Allin <peter@peca.dk>"]
+
+[dependencies]
+git2 = "0.7"
+clap = "2.32"

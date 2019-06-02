@@ -1,0 +1,28 @@
+[package]
+name = "fastmatmult"
+version = "0.1.0"
+authors = ["Michal 'vorner' Vaner <vorner@vorner.cz>"]
+license = "Apache-2.0/MIT"
+publish = false
+
+[dependencies]
+bincode = "~1"
+failure = "~0.1"
+faster = { git = "https://github.com/AdamNiederer/faster/" }
+itertools = "~0.7"
+rand = "~0.4"
+rayon = "~1"
+serde = "~1"
+serde_derive = "~1"
+smallvec = "~0.6"
+structopt = "~0.2"
+typenum = "~1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+#panic = 'abort' # Doesn't seem to work right now :-(
+incremental = false
+overflow-checks = false
+debug-assertions = false
+opt-level = 3

@@ -1,0 +1,29 @@
+[package]
+authors = ["Michał Budzyński <budziq@gmail.com>"]
+name = "pulls_since"
+version = "0.4.1"
+description = """
+Micro tool to print Markdown formatted list of pull requests
+closed on a given github repository since given date
+"""
+homepage = "https://github.com/budziq/pulls_since"
+repository = "https://github.com/budziq/pulls_since"
+readme = "README.md"
+keywords = ["github", "pull-requests"]
+categories = ["command-line-utilities"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "budziq/pulls_since" }
+
+[dependencies]
+clap = "2.32"
+dotenv = "0.13"
+error-chain = "0.12"
+reqwest = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+
+[dependencies.chrono]
+features = ["serde"]
+version = "0.4"

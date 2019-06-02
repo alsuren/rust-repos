@@ -1,0 +1,14 @@
+[package]
+name = "luxo"
+version = "0.1.0"
+authors = ["Cameron Davison <cameron@novilabs.com>"]
+
+[dependencies]
+docopt = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+byteorder = "1"
+
+fs2 = "0.4.2"
+memmap = "0.6.2"

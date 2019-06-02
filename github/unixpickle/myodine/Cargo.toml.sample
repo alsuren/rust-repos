@@ -1,0 +1,22 @@
+[package]
+name = "myodine"
+version = "0.1.0"
+authors = ["Alex Nichol <unixpickle@gmail.com>"]
+
+[lib]
+name = "myodine"
+path = "src/mod.rs"
+
+[[bin]]
+name = "myodine-server"
+path = "src/server/main.rs"
+
+[[bin]]
+name = "myodine-client"
+path = "src/client/main.rs"
+
+[dependencies]
+sha1 = "0.6"
+clap = "2.31"
+rand = "0.4"
+chrono = "0.4"

@@ -1,0 +1,15 @@
+[package]
+name = "fel4-config"
+version = "0.3.0"
+authors = ["Zachary Pierce <zpierce@polysync.io>", "Jon Lamb <jlamb@polysync.io>"]
+
+[dependencies]
+cmake = "0.1"
+failure = { version = "0.1", default-features = false, features = ["derive"] }
+multimap = { version = "0.4", default-features = false }
+toml = "0.4"
+
+[dev-dependencies]
+proptest = "0.7"
+tempfile = "3"
+

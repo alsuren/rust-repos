@@ -1,0 +1,13 @@
+[package]
+name = "chip8_mary"
+version = "0.1.0"
+authors = ["Tobbs <cerrudo87@gmail.com>"]
+[profile.release]
+
+[[bin]]
+name = "chip8_mary"
+doc = true
+
+[dependencies]
+rand = "0.5.5"
+sdl2 = "0.31.0"

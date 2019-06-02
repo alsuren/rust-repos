@@ -1,0 +1,14 @@
+[package]
+name = "mqttparse"
+version = "0.1.0"
+authors = ["Rajasekharan Vengalil <avranju@gmail.com>"]
+
+[features]
+default = ["std"]
+std = ["byteorder/std"]
+
+[dependencies]
+byteorder = "1.2"
+
+[dev-dependencies]
+rayon = "1.0"

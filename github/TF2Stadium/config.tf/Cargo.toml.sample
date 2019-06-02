@@ -1,0 +1,20 @@
+[package]
+name = "configtf"
+version = "0.1.0"
+authors = ["gpittarelli <tf2stadium@gjp.cc>"]
+license = "GPL-3.0"
+
+[dependencies]
+hyper = "0.*"
+iron = "0.4.*"
+router = "*"
+dotenv = "0.8.*"
+tempdir = "0.3"
+regex = "0.1"
+lazy_static = "0.1.*"
+sha1 = "0.2.*"
+rusqlite = "0.7.*"
+
+[dependencies.multipart]
+version  = "0.9.0-alpha.2"
+features = ["iron"]

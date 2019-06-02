@@ -1,0 +1,29 @@
+[package]
+name = "xero"
+version = "0.2.0-dev"
+description = "API bindings for the Xero 2.0 Accounting API"
+authors = ["Kevin Stenerson <kevin@rapiditynetworks.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/rapiditynetworks/xero-rs"
+documentation = "https://docs.rs/xero-rs"
+keywords = ["xero", "api", "accounting", "payroll"]
+categories = ["api-bindings"]
+
+[badges]
+travis-ci = {repository = "rapiditynetworks/xero-rs"}
+
+[dependencies]
+bigdecimal = { git = "https://github.com/rapiditynetworks/bigdecimal-rs.git", features = ["serde"] }
+chrono = { version = "^0.4", features = ["serde"] }
+hyper = "^0.10"
+hyper-openssl = "^0.2"
+openssl = "^0.9"
+percent-encoding = "^1.0"
+rand = "^0.3"
+rustc-serialize = "^0.3"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+serde_urlencoded = "^0.5"
+xml-rs = "^0.6"

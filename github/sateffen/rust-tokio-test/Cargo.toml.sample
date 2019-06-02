@@ -1,0 +1,8 @@
+[package]
+name = "rust-tokio-test"
+version = "0.1.0"
+authors = ["Steffen W. <sateffen@gmail.com>"]
+
+[dependencies]
+tokio-core = "0.1"
+futures = "0.1"

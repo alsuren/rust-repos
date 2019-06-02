@@ -1,0 +1,23 @@
+[package]
+name = "transmission-controller"
+version = "0.2.0"
+authors = ["Dmitry Konishchev <konishchev@gmail.com>"]
+
+[dependencies]
+argparse = "*"
+chan = "*"
+chan-signal = "*"
+dirs = "*"
+email = "*"
+enum_primitive = "*"
+itertools = "*"
+lettre = "*"
+lettre_email = "*"
+libc = "*"
+log = { version = "*", features = ["std"] }
+mime = "*"
+num = "*"
+regex = "*"
+reqwest = "*"
+rustc-serialize = "*"
+time = "*"

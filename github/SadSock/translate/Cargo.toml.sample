@@ -1,0 +1,11 @@
+[package]
+name = "translate"
+version = "0.1.0"
+authors = ["mantis-shrimp <mantis-shrimp@outlook.com>"]
+
+[dependencies]
+
+
+[dependencies.gtk]
+version = "0.3.0"
+features = ["v3_10"]

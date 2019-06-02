@@ -1,0 +1,11 @@
+[package]
+name = "forth"
+version = "0.1.0"
+authors = ["David Beckley <beckl.ds@gmail.com>"]
+
+[[bin]]
+name = "forth"
+doc = false
+test = false
+
+[dependencies]

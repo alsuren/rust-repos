@@ -1,0 +1,19 @@
+[package]
+name = "eosrpc_rust"
+version = "0.1.0"
+authors = ["maxtnt <ttg1256@naver.com>"]
+
+[workspace]
+members = [
+    "eos-api",
+    "eos",
+    "eos-type",
+    "eos-crypto",
+    "examples/docker_test"
+]
+
+[dependencies]
+eos_api = { path = "eos-api" ,version = "0.1.0"}
+eos = { path = "eos" ,version = "0.1.0"}
+eos_type = { path = "eos-type" ,version = "0.1.0"}
+crypto = { path = "eos-crypto" ,version = "0.1.0"}

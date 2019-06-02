@@ -1,0 +1,30 @@
+[package]
+name = "hal-tut-01"
+version = "0.1.0"
+authors = ["Kenton Hamaluik <kenton@rehabtronics.com>"]
+edition = "2018"
+
+[features]
+default = ["vulkan"]
+metal = ["gfx-backend-metal"]
+dx12 = ["gfx-backend-dx12"]
+vulkan = ["gfx-backend-vulkan"]
+
+[dependencies]
+log = "0.4.6"
+simple_logger = "1.2"
+winit = "0.19"
+gfx-hal = "0.2"
+arrayvec = "0.4"
+
+[dependencies.gfx-backend-vulkan]
+version = "0.2"
+optional = true
+
+[target.'cfg(target_os = "macos")'.dependencies.gfx-backend-metal]
+version = "0.2"
+optional = true
+
+[target.'cfg(windows)'.dependencies.gfx-backend-dx12]
+version = "0.2"
+optional = true

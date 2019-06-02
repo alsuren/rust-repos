@@ -1,0 +1,47 @@
+[package]
+name = "ifconfig-rs"
+version = "0.1.4"
+authors = ["Lukas Pustina <lukas@pustina.net>"]
+
+description = "Yet another ifconfig / what's my IP service"
+repository = "https://github.com/lukaspustina/ifconfig-rs"
+readme = "README.md"
+license = "MIT"
+keywords = ["ifconfig", "ip", "network", "web service"]
+include = [
+  "README.md",
+  "LICENSE",
+  "**/*.rs",
+  "Cargo.toml",
+]
+
+[badges]
+travis-ci = { repository = "lukaspustina/ifconfig-rs", branch = "master" }
+
+[[bin]]
+name = "ifconfig-rs"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2"
+dns-lookup = "0.9"
+error-chain = "0.11"
+hyper = "0.12"
+lazy_static = "1"
+maxminddb = "0.9"
+regex = "1"
+rocket = "0.4"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+toml = "0.4"
+woothee = "0.7"
+
+[dependencies.rocket_contrib]
+version = "0.4"
+default-features = false
+features = ["handlebars_templates", "json"]
+
+[dev-dependencies]
+pretty_assertions = "0.5"
+

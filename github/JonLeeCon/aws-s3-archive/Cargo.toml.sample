@@ -1,0 +1,15 @@
+[package]
+name = "aws-s3-archive"
+version = "0.1.0"
+authors = ["JonCon <joncon@upchannel.com>"]
+
+[dependencies]
+clap = "2.32.0"
+rusoto_core = "0.33.1"
+rusoto_s3 = "0.33.1"
+failure = "0.1.2"
+futures = "0.1.23"
+rayon = "1.0.2"
+
+[profile.release]
+lto = true

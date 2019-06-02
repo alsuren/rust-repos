@@ -1,0 +1,8 @@
+[package]
+name = "arcade-rs"
+version = "0.1.0"
+authors = ["Nico Hämäläinen <nico@sizeof.io>"]
+
+[dependencies]
+sdl2 = "0.22"
+sdl2_image = "0.22"

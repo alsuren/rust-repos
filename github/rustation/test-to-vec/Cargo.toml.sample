@@ -1,0 +1,11 @@
+[package]
+name = "test-to-vec"
+version = "0.4.3"
+authors = ["Joe Grund <joe.grund@intel.com>"]
+keywords = ["test", "cargo"]
+license = "MIT"
+repository = "https://github.com/rustation/test-to-vec"
+description = "Converts cargo test output into a vec of suites"
+
+[dependencies]
+nom = "3.2.1"

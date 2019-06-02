@@ -1,0 +1,13 @@
+[package]
+name = "imagedrive"
+version = "0.1.0"
+authors = ["root"]
+edition = "2018"
+
+[dependencies]
+db = { path = "db" }
+dockerclient = { path = "dockerclient"}
+front = { path = "front" }
+config = { path = "config" }
+clap = "2.32.0"
+dirs = "1.0.4"

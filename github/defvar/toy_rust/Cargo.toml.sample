@@ -1,0 +1,13 @@
+[workspace]
+
+members = [
+    "toy-config",
+    "toy-core",
+    "toy-file",
+    "toy-grpc",
+    "toy-metrics",
+    "toy-pack",
+    "toy-pack-derive",
+    "toy-pack-mp",
+    "toy-pack-yaml"
+]

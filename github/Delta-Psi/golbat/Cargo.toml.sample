@@ -1,0 +1,12 @@
+[workspace]
+members = ["cpu", "sdl2"]
+
+[package]
+name = "golbat"
+version = "0.1.0"
+authors = ["Difarem <difarem@gmail.com>"]
+
+[dependencies]
+nom = "4.0.0"
+
+golbat_cpu = {path = "./cpu"}

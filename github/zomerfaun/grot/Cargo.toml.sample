@@ -1,0 +1,15 @@
+[package]
+name = "grot"
+version = "0.1.0"
+authors = ["Zomerfaun <zomerfaun@gmail.com>"]
+
+[dependencies]
+sdl2 = "0.31.0"
+failure = "0.1.1"
+floating-duration = "0.1.2"
+log = "0.4.1"
+structopt = "0.2.5"
+env_logger = "0.5.6"
+serde = "1.0.33"
+serde_json = "1.0.13"
+serde_derive = "1.0.33"

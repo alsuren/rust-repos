@@ -1,0 +1,27 @@
+[package]
+name = "mesi"
+version = "0.1.5"
+authors = ["ot0 a6u <ot0a6u@gmail.com>"]
+
+[dependencies]
+encoding = "*"
+toml = "*"
+serde = "*"
+serde_derive ="*"
+serde_json = "*"
+regex = "*"
+chrono = "*"
+getopts = "*"
+grep-regex = "*"
+grep-printer = "*"
+grep-searcher = "*"
+
+diesel = {version = "*", features = ["sqlite", "chrono"]}
+dotenv = "*"
+
+iron = "*"
+mount = "*"
+handlebars-iron = "*"
+params = "*"
+staticfile = "*"
+hyper-native-tls = "*"

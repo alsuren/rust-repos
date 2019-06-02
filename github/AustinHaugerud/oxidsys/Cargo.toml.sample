@@ -1,0 +1,11 @@
+[package]
+name = "oxidsys"
+version = "0.1.0"
+authors = ["AustinHaugerud <austin15328@hotmail.com>"]
+
+[dependencies]
+clap = "*"
+json = "*"
+pest = "2.0.2"
+pest_derive = "2.0"
+lazy_static = "1.1.0"

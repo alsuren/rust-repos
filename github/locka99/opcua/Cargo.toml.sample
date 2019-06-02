@@ -1,0 +1,26 @@
+# These settings are present to demonstrate minimal binary size in release mode. Don't forget to strip the executable
+# too.
+[profile.release]
+opt-level = 'z'
+lto = true
+panic = 'abort'
+
+[workspace]
+members = [
+    "console-logging",
+    "types",
+    "core",
+    "client",
+    "server",
+    "integration",
+    "samples/demo-server",
+    "samples/simple-client",
+    "samples/mqtt-client",
+    "samples/gfx-client",
+    "samples/simple-server",
+    "samples/chess-server",
+    "samples/modbus-server",
+    "samples/discovery-client",
+    "samples/web-client",
+    "tools/certificate-creator"
+]

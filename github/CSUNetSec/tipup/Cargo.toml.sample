@@ -1,0 +1,18 @@
+[package]
+name = "tipup"
+version = "0.4.0"
+authors = ["Dan Rammer <hamersaw@bushpath.com>"]
+
+[dependencies]
+bson = "0.4"
+chan = "0.1"
+clap = {version = "2.19", features = ["yaml"]}
+dbscan = {path = "dbscan"}
+mongodb = { version = "0.2", features = ["ssl"]}
+rustc-serialize = "0.3"
+serde = "0.9"
+serde_derive = "0.9"
+slog = "1.5"
+slog-scope = "0.2"
+slog-term = "1.5"
+time = "0.1"

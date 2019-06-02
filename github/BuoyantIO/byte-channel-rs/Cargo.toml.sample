@@ -1,0 +1,13 @@
+[package]
+name = "byte_channel"
+version = "0.0.1"
+authors = ["Oliver Gould <ver@buoyant.io>"]
+license = "Apache-2.0"
+description = "Future-aware byte streams"
+
+[dependencies]
+bytes = "0.4"
+futures = "0.1"
+
+[dev-dependencies]
+test_futures = "0.0.1"

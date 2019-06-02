@@ -1,0 +1,63 @@
+[package]
+name = "schema_parser"
+version = "0.1.0"
+authors = ["Dominik Boehi <dominik.boehi@gmail.com>", "Noah Huesser <yatekii@yatekii.ch>"]
+autobins = false
+
+[lib]
+name = "copper"
+path = "src/lib/main.rs"
+
+[[bin]]
+name = "component_editor"
+path = "src/bin/component_editor.rs"
+
+[[bin]]
+name = "schema_editor"
+path = "src/bin/schema_editor.rs"
+
+[dependencies]
+derivative = "1"
+
+nom = "4.0"
+gfx = "0.17"
+gfx_window_glutin = "0.26"
+gfx_device_gl = "0.15"
+gfx_glyph = "0.13"
+glutin = "0.18"
+
+lyon = "0.11"
+
+nalgebra = "0.16"
+ncollide2d = "0.17"
+
+lyon_tessellation = "0.11"
+lyon_path = "0.12"
+lyon_core = "0.8"
+
+log = "0.4"
+env_logger = "0.5"
+
+gdk = "0.9"
+gfx_core = "0.8"
+gfx_gl = "0.5"
+
+relm = "0.15"
+relm-attributes = "0.15"
+relm-derive = "0.15"
+
+epoxy = "0.0.4"
+shared_library = "0.1.9"
+
+bitflags = "1"
+
+uuid = { version = "0.7", features = ["v4"] }
+
+owning_ref = "0.3"
+
+[dependencies.gtk]
+version = "0.5"
+features = ["v3_22"]
+
+[features]
+default = ["relm/unstable", "relm-attributes/unstable", "relm-derive/unstable"]

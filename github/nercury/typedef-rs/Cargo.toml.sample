@@ -1,0 +1,27 @@
+[package]
+
+name = "typedef"
+version = "0.3.2"
+authors = [ "Nerijus Arlauskas <nercury@gmail.com>" ]
+
+documentation = "https://docs.rs/typedef"
+repository = "https://github.com/Nercury/typedef-rs"
+
+readme = "README.md"
+
+categories = ["development-tools::debugging"]
+keywords = [
+    "types", "typeid", "runtime", "dynamic", "typing"
+]
+
+license = "MIT/Apache-2.0"
+
+description = "Identify, compare types or print type names."
+
+[features]
+default = []
+nightly = []
+
+[badges]
+travis-ci = { repository = "Nercury/typedef-rs" }
+

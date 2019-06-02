@@ -1,0 +1,9 @@
+[package]
+name = "riri"
+version = "0.1.0"
+authors = ["johnc"]
+edition = "2018"
+
+[dependencies]
+zmq = "0.8"
+quick-error = "1.2.2"

@@ -1,0 +1,17 @@
+[workspace]
+
+[package]
+name = "loop-drop"
+version = "0.0.0"
+publish = false
+
+[profile.release]
+debug = true
+
+[dependencies]
+midir = "0.5.0"
+lazy_static = "1.0"
+regex = "0.2.5"
+bus = "1.4"
+circular-queue = "0.2.0"
+rand = "0.6"

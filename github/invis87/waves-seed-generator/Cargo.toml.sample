@@ -1,0 +1,28 @@
+[package]
+name = "waves-address-generator"
+version = "0.1.0"
+authors = ["Aleksandrov Vladimir <invis87@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+getopts = "^0.2"
+rand = "^0.6"
+rust-crypto = "^0.2"
+x25519-dalek = "^0.5"
+
+blake2 = "0.8"
+sha3 = "0.8.1"
+
+crev-common = "0.3.0"
+hashlib = "0.1.0"
+
+base58 = "^0.1"
+
+rayon = "^1"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "seed_generation"
+harness = false

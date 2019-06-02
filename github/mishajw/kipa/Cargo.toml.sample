@@ -1,0 +1,54 @@
+[package]
+name = "kipa"
+version = "0.1.2"
+authors = ["Misha Wagner <mishajw@gmail.com>"]
+build = "build.rs"
+description = "Distributed Key to IP Address (KIPA) query network"
+repository = "https://github.com/mishajw/kipa"
+readme = "README.md"
+keywords = ["distributed", "network", "dns"]
+license = "GPL-3.0"
+
+[lib]
+name = "kipa_lib"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "kipa_cli"
+path = "src/cli/main.rs"
+
+[[bin]]
+name = "kipa_daemon"
+path = "src/daemon/main.rs"
+
+[features]
+default = ["use-protobuf", "use-tcp", "use-unix-socket", "use-graph"]
+use-protobuf = []
+use-tcp = []
+use-unix-socket = []
+use-graph = []
+use-black-hole = []
+
+[dependencies]
+error-chain = "0.11.0"
+protobuf = "1.5.0"
+gpgme = "0.7.2"
+clap = "2"
+byteorder = "1.2.2"
+pnet = "0.21.0"
+slog-term = "2.4.0"
+slog-async = "2.3.0"
+slog-json = "2.2.0"
+rand = "0.5.0-pre.1"
+spectral = "0.6.0"
+regex = "1.0.1"
+lazy_static = "1.0"
+
+[dependencies.slog]
+version = "2.2.3"
+default-features = false
+features = ["release_max_level_trace", "max_level_trace"]
+
+[build-dependencies]
+protoc-rust = "1.4.0"
+

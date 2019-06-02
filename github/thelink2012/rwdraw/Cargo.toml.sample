@@ -1,0 +1,19 @@
+[package]
+name = "rwdraw"
+version = "0.1.0"
+authors = ["Denilson M. Amorim <dma_2012@hotmail.com>"]
+
+[dependencies]
+docopt = "0.6.*"
+rustc-serialize = "0.3"
+byteorder = "0.3"
+bitflags = "0.2"
+itertools = "0.3"
+cgmath = "0.2"
+clock_ticks = "0.0.6"
+# rctree = "0.1"
+
+[dependencies.glium]
+version = "*"
+features = ["cgmath"]
+default-features = true

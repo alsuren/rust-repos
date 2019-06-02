@@ -1,0 +1,13 @@
+[package]
+authors = ["Jason Knight <Jason@JasonKnight.us>"]
+name = "sudok"
+version = "0.1.0"
+[dependencies]
+env_logger = "*"
+lazy_static = "*"
+log = "*"
+rayon = "*"
+
+[profile]
+[profile.release]
+debug = true

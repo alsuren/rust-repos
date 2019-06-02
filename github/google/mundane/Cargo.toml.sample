@@ -1,0 +1,44 @@
+# Copyright 2018 Google LLC
+#
+# Use of this source code is governed by an MIT-style
+# license that can be found in the LICENSE file or at
+# https://opensource.org/licenses/MIT.
+
+[package]
+name = "mundane"
+# remember to update html_root_url
+# TODO(joshlf): use version-sync crate to test this in CI
+version = "0.3.0"
+authors = ["Joshua Liebow-Feeser <joshlf@google.com>"]
+description = "Cryptography which is easy to use and hard to misuse"
+readme = "README.md"
+license-file = "LICENSE"
+keywords = ["boringssl"]
+categories = ["cryptography"]
+repository = "https://mundane.googlesource.com/mundane"
+documentation = "https://joshlf.com/rustdoc/mundane"
+
+# Exclude these test files in order to get under the minimum crates.io crate
+# file size.
+exclude = [
+    "boringssl/boringssl/fuzz/*",
+    "boringssl/boringssl/third_party/wycheproof_testvectors/*",
+    "boringssl/boringssl/crypto/fipsmodule/*/*_tests.txt",
+    "boringssl/boringssl/crypto/cipher_extra/test/*"
+]
+
+# If you edit this list, make sure to update test.sh!
+[features]
+default = ["rsa-test-generate-large-keys"]
+insecure = []
+kdf = []
+rand-bytes = []
+rsa-pkcs1v15 = []
+# Run the RSA `test_generate` test with larger key sizes. This is disabled in
+# some configurations because large RSA keys take a long time to generate. This
+# feature only affects tests, so shouldn't be relevant to most consumers.
+rsa-test-generate-large-keys = []
+experimental-sha512-ec = []
+# Run the `boringssl/test_symbol_conflict.sh` test during `cargo test`. This is
+# disabled by default because the test takes a long time to run.
+run-symbol-conflict-test = []

@@ -1,0 +1,14 @@
+[package]
+name = "hassel_wasm_dbg"
+version = "0.1.0"
+authors = ["John DiSanti <johndisanti@gmail.com>"]
+license = "MIT OR Apache-2.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+
+[dependencies.hassel_emu]
+path = "../hassel_emu"
+features = ["hassel_arch"]

@@ -1,0 +1,21 @@
+[package]
+name = "kilac"
+version = "0.2.0"
+authors = ["Leo Lahti <leo.lahti1@gmail.com>"]
+documentation = "https://docs.rs/kilac"
+repository = "https://github.com/TileHalo/Kisalaskuri"
+readme = "README.md"
+license-file = "LICENSE"
+description = "Handles Kipa-compatible inputs. Prototype of Riipic"
+
+[lib]
+name = "kilac"
+path = "src/lib.rs"
+
+[[bench]]
+name = "kilac"
+harness = false
+
+[dev-dependencies]
+pretty_assertions = "0.5.0"
+criterion = "0.2.0"

@@ -1,0 +1,14 @@
+[package]
+name = "raymarcher"
+version = "0.1.0"
+authors = ["Dario Sucic <ds@vitalthings.com>"]
+edition = "2018"
+
+[dependencies]
+write_png = { path = "lib/write_png" }
+
+rand = "*"
+cgmath = "*"
+cg_simd = { path = "lib/cg_simd" }
+
+rayon = "*"

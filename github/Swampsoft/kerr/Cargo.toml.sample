@@ -1,0 +1,17 @@
+[package]
+name = "kerr"
+version = "0.1.0"
+authors = ["Martin Billinger <flkazemakase@gmail.com>"]
+
+[dependencies]
+ambisonic = "0.2"
+rodio = "0.8"
+sdl2 = "*"  # hopefully this will always use the same sdl version that ggez uses
+specs = "0.12"
+specs-derive = "0.2"
+steamy-controller = "0.2"
+
+[dependencies.ggez]
+version = "0.4"
+features = ["cargo-resource-root"]
+

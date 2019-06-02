@@ -1,0 +1,27 @@
+[package]
+name = "mini_http"
+version = "0.0.3"
+authors = ["James Kominick <james.kominick@gmail.com>"]
+description = "Simple HTTP server built on mio"
+documentation = "https://docs.rs/mini_http"
+readme = "README.md"
+keywords = ["web"]
+categories = ["web-programming::http-server", "asynchronous"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "jaemk/mini_http", branch = "master" }
+
+[dependencies]
+error-chain = "0.11"
+threadpool = "1"
+num_cpus = "1"
+mio = "0.6"
+slab = "0.4"
+httparse = "1"
+http = "0.1"
+log = "0.4"
+
+[dev-dependencies]
+env_logger = "0.5"
+

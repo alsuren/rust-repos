@@ -1,0 +1,12 @@
+[package]
+name = "find_my_frog"
+version = "0.1.5"
+authors = ["Perl I. Weird <perlisweird@gmail.com>"]
+
+[dependencies]
+irc = { git = "https://github.com/FROG-TIPS/irc", branch = "master" }
+getopts = "0.2"
+hyper = "0.7"
+rustc-serialize = "0.3"
+log = "0.3.6"
+time = "0.1"

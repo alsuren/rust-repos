@@ -1,0 +1,16 @@
+[package]
+name = "jenny"
+version = "0.1.0"
+authors = ["mrobakowski"]
+
+[dependencies]
+jni = "0.6.0"
+
+[dev-dependencies]
+jenny-derive = {path = "jenny-derive"}
+
+[[example]]
+name = "hello-world"
+crate-type = ["dylib"]
+
+[workspace]

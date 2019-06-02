@@ -1,0 +1,12 @@
+[package]
+name = "birbs"
+version = "0.1.0"
+authors = ["Carl Whittaker <carl359@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+cgmath = "0.16.0"
+ntree = "0.1.0"
+wasm-bindgen="0.2.25"

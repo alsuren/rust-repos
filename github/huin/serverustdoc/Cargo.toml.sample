@@ -1,0 +1,14 @@
+[package]
+name = "serverustdoc"
+version = "0.1.0"
+authors = ["John Beisley <johnbeisleyuk@gmail.com>"]
+
+[dependencies]
+iron = "0.6"
+mount = "0.4"
+slog = "2"
+slog-term = "2"
+staticfile = "0.5"
+structopt = "0.2"
+structopt-derive = "0.2"
+tera = "0.11"

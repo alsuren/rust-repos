@@ -1,0 +1,19 @@
+[package]
+
+name = "frounding"
+version = "0.0.4"
+authors = [ "GHIAT Houssem ghiat.houssem@gmail.com" ]
+build = "build.rs"
+
+description = "Rust crate to change fpu and sse rounding mode."
+license = "MIT"
+repository = "https://github.com/houssemDevs/frounding-rs"
+keywords = [ "SSE", "FPU", "numeric", "float", "rounding" ]
+documentation="http://houssemdevs.github.io/frounding-rs"
+
+
+[dependencies]
+
+
+[build-dependencies]
+gcc = "0.3.0"

@@ -1,0 +1,14 @@
+[package]
+name = "rsearch"
+version = "0.1.0"
+authors = ["RinconRex <rinconrex@gmail.com>"]
+
+[dependencies]
+rand = "*"
+bio = "*"
+csv = "*"
+itertools = "*"
+serde = "*"
+cupid = "*"
+serde_derive = "*"
+clap = { version = "2.31", features = ["yaml"] }

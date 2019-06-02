@@ -1,0 +1,12 @@
+[package]
+name = "rusted"
+version = "0.0.1"
+authors = ["Jack Heizer", "Daniel Fockler <dfockler13@gmail.com>"]
+
+[lib]
+name = "rusted"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rusted"
+path = "src/main.rs"

@@ -1,0 +1,11 @@
+[package]
+name = "tinybox"
+version = "0.1.1"
+authors = ["dreamersdw <dreamersdw@gmail.com>"]
+
+[dependencies]
+structopt = "0.2"
+chrono = "0.4"
+notify = "4.0.0"
+fs2 = "0.4.3"
+hyper = "0.12.7"

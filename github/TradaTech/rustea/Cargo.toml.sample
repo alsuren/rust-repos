@@ -1,0 +1,19 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["The wasm-bindgen Developers"]
+edition = "2018"
+
+[lib]
+path = "utils/blank.rs"
+
+[dependencies]
+icetea_wasm = { git = "https://github.com/TradaTech/icetea-wasm" }
+serde = "1.0.88"
+serde_derive = "1.0.88"
+console_error_panic_hook = "0.1.6"
+js-sys = "0.3.14"
+
+[dependencies.wasm-bindgen]
+version = "= 0.2.37"
+features = ["serde-serialize"]

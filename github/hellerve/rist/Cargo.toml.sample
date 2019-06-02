@@ -1,0 +1,11 @@
+[package]
+name = "rist"
+version = "0.0.1"
+authors = ["Veit Heller <veit@veitheller.de>"]
+
+[dependencies]
+vst2 = "0.0.1"
+
+[lib]
+name = "rist"
+crate-type = ["dylib"]

@@ -1,0 +1,8 @@
+[package]
+name = "AoC_2018"
+version = "0.1.0"
+authors = ["Raf Ceuls <rceuls@gmail.com>"]
+
+[[bin]]
+name = "day_02"
+path = "src/day_02.rs"

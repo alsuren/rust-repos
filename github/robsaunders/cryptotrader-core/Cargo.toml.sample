@@ -1,0 +1,23 @@
+[package]
+name = "cryptotrader"
+version = "0.2.0"
+authors = ["Rob Saunders <rob@wearebrandnew.com>"]
+edition = "2018"
+
+[dependencies]
+binance_api = { package = "binance", git = "https://github.com/robsaunders/binance-rs.git" }
+#binance_api = { package = "binance", path = "../_forks/binance-rs" }
+#huobi_api = { package = "huobi", git = "https://github.com/robsaunders/huobi-rs.git" }
+huobi_api = { package = "huobi", path = "../huobi-rs" }
+math = "*"
+toml = "*"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "*"
+dirs = "1.0"
+log = "0.4.5"
+simple_logger = "1.0.1"
+chrono = "0.4.6"
+
+[lib]
+name = "cryptotrader"

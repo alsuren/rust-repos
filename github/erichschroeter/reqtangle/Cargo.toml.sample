@@ -1,0 +1,20 @@
+[package]
+name = "reqtangle"
+version = "0.1.0"
+authors = ["Erich Schroeter <erich.schroeter@gmail.com>"]
+edition = "2018"
+license = "MIT"
+homepage = "https://reqtangle.com"
+repository = "https://github.com/erichschroeter/reqtangle"
+description = """
+Reqtangle, a requirement manager utility.
+"""
+
+[dependencies]
+docopt = "1"
+serde = { version = "1", features = ["derive"] }
+walkdir = "2"
+
+[dev-dependencies]
+assert_cmd = "0.11"
+tempfile = "3"

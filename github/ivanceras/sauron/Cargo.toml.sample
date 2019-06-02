@@ -1,0 +1,84 @@
+[package]
+name = "sauron"
+version = "0.7.0"
+authors = [ "Jovansonlee Cesar <ivanceras@gmail.com>" ]
+license = "MIT"
+description = "An html library for building client side webapps"
+repository = "https://github.com/ivanceras/sauron"
+documentation = "https://docs.rs/sauron"
+readme = "README.md"
+keywords = ["html", "dom", "web"]
+edition = "2018"
+
+[dependencies]
+js-sys = "0.3.19"
+sauron_vdom = "0.7.0"
+# Lock this to 0.2.43 for now see [issue#1547](https://github.com/rustwasm/wasm-bindgen/issues/1547)
+wasm-bindgen = "0.2.43"
+lazy_static = "1.3.0"
+pulldown-cmark = { version = "0.5.1", optional = true }
+
+[dependencies.web-sys]
+version = "0.3.19"
+features = [
+    "Comment",
+    "console",
+    "Document",
+    "Element",
+    "Event",
+    "HtmlElement",
+    "EventTarget",
+    "KeyboardEvent",
+    "HtmlCollection",
+    "HtmlInputElement",
+    "HtmlTextAreaElement",
+    "MouseEvent",
+    "Node",
+    "NodeList",
+    "Text",
+    "CharacterData",
+    "Performance",
+    "Window",
+    "Response",
+]
+
+
+[features]
+measure = []
+with-markdown = ["pulldown-cmark"]
+
+[dev-dependencies]
+wasm-bindgen-test = "0.2.42"
+console_error_panic_hook = "0.1.6"
+
+[dev-dependencies.web-sys]
+version = "0.3.19"
+features = [
+    "DomTokenList",
+    "HtmlInputElement",
+    "Event",
+    "MouseEvent",
+    "InputEvent",
+    "console",
+    "Performance",
+]
+
+[workspace]
+members = [
+    "crates/sauron_vdom",
+    "examples/minimal",
+    "examples/fetch_data",
+    "examples/interactive/client",
+    "examples/todomvc",
+    "examples/window_tab_rows",
+]
+
+[replace]
+"sauron:0.7.0" = { path = "." }
+"sauron_vdom:0.7.0" = { path = "crates/sauron_vdom" }
+
+
+[profile.release]
+# Warning: Do not use 'z' it removes a lot of things including the closures
+opt-level = 's'
+lto = true

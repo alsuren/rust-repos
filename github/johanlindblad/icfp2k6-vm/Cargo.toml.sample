@@ -1,0 +1,10 @@
+[package]
+name = "icfp2k6"
+version = "0.1.0"
+authors = ["Johan Lindblad <johanlindblad@gmail.com>"]
+
+[dependencies]
+byteorder = "0.5.3"
+
+[dependencies.bitfield]
+git = "https://github.com/dzamlo/rust-bitfield"

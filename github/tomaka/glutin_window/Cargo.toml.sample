@@ -1,0 +1,26 @@
+[package]
+
+name = "glutin_window"
+version = "0.0.0"
+authors = [
+    "bvssvni <bvssvni@gmail.com>"
+]
+tags = []
+
+[lib]
+
+name = "glutin_window"
+path = "src/lib.rs"
+
+[dependencies.glutin]
+
+git = "https://github.com/tomaka/glutin"
+
+[dependencies.event]
+
+git = "https://github.com/PistonDevelopers/event"
+
+[dependencies.shader_version]
+
+git = "https://github.com/PistonDevelopers/shader_version"
+

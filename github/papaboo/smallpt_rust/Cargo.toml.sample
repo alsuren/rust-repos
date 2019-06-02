@@ -1,0 +1,9 @@
+[package]
+
+name = "smallpt_rust"
+version = "0.2.0"
+authors = [ "Asger Hoedt <asgerhoedt@gmail.com>" ]
+
+[dependencies]
+rand = "*"
+num_cpus = "*"

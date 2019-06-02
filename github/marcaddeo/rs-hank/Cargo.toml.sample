@@ -1,0 +1,25 @@
+[package]
+name = "hank"
+version = "0.1.7"
+authors = ["Marc Addeo <marcaddeo@gmail.com>"]
+
+[lib]
+name = "hank"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hank"
+path = "src/main.rs"
+
+[dependencies]
+irc = "0.12"
+regex = "0.2"
+rand = "0.3"
+time = "0.1"
+serde_json = "1.0.4"
+error-chain = "0.11.0"
+url = "1.6.0"
+reqwest = "0.8.2"
+calculate = "0.5.1"
+markov = "0.0.33"
+separator = "0.3.1"

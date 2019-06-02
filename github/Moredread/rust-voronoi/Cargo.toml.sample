@@ -1,0 +1,19 @@
+[package]
+name = "voronoi"
+version = "0.0.1"
+authors = ["André-Patrick Bubel <code@andre-bubel.de>"]
+build = "build.rs"
+
+[dependencies]
+libc = "*"
+clippy = {version = "*", optional = true}
+
+[dev-dependencies]
+quickcheck = "0.4"
+rand = "0.3"
+
+[build-dependencies]
+gcc = "0.3"
+
+[features]
+default=[]

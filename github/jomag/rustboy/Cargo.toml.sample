@@ -1,0 +1,19 @@
+[package]
+name = "rustboy"
+version = "0.1.0"
+authors = ["Jonatan Magnusson <jonatan.magnusson@gmail.com>"]
+
+[dependencies]
+ctrlc = "3.1.1"
+sdl2 = "0.32.0"
+ansi_term = "0.11.0"
+# ggez = "0.5.0-rc.1"
+# mint = "0.5.1"
+# piston = "0.42.0"
+# piston_window = "0.89.0"
+# image = "*"
+serde = "*"
+clap = "*"
+png = "0.14.0"
+num-traits = "*"
+

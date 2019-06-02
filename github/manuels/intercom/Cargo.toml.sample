@@ -1,0 +1,45 @@
+[package]
+name = "intercom"
+version = "0.0.1"
+authors = ["Manuel Schölling <manuel.schoelling@gmx.de>"]
+
+[features]
+default = ["dbus_service"]
+"dbus_service" = ["dbus"]
+
+[dependencies]
+time = "*"
+byteorder = "*"
+log = "*"
+bitflags = "*"
+libc = "*"
+env_logger = "*"
+docopt = "*"
+rustc-serialize = "*"
+ecdh = "*"
+nonblocking_socket = "*"
+
+[build-dependencies]
+gcc = "*"
+pkg-config = "*"
+
+[dependencies.dbus]
+version = "*"
+optional = true
+
+[dependencies.openssl]
+path = "../rust-openssl/openssl"
+version = "*"
+features = ["dtlsv1"]
+
+[dependencies.pseudotcp]
+version = "*"
+#path = "../pseudotcp"
+
+[dependencies.nice]
+version = "*"
+#path = "../nice"
+
+[dependencies.condition_variable]
+version = "*"
+#path = "../condition_variable"

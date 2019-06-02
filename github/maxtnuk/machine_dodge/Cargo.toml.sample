@@ -1,0 +1,8 @@
+[package]
+name = "machine_dodge"
+version = "0.1.0"
+authors = ["maxtnuk <maxtnuk@gmail.com>"]
+
+[dependencies]
+piston_window = "0.61.0"
+rand="*"

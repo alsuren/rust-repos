@@ -1,0 +1,12 @@
+[package]
+name = "compressors"
+version = "0.0.0"
+authors = ["Nikita Vilunov", "Ivan Lyagaev", "Timur Valiev", "Ekaterina Yashkina"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+bit-vec = "0.4.4"
+byteorder = "1.1.0"
+rand = "0.3.18"

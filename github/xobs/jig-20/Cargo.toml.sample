@@ -1,0 +1,18 @@
+[package]
+name = "jig2-0"
+version = "0.1.0"
+authors = ["Sean Cross <sean@xobs.io>"]
+
+[dependencies]
+dependy = "0.3.0"
+shlex = "0.1.1"
+chan = "0.1.19"
+bus = { git = "https://github.com/xobs/bus.git", rev = "c8bb287df261cf038ac431a71b416ae996325d1c" }
+json = "0.11.5"
+termcolor = "0.3"
+clap = "2.20.5"
+regex = "0.2"
+systemd-parser = "0.1.3"
+nix = "0.8.0"
+runny = "1.0.1"
+ctrlc = { version = "3.0", features = ["termination"] }

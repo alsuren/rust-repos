@@ -1,0 +1,13 @@
+[package]
+name = "kosuzu-rs"
+version = "0.1.0"
+authors = ["Bryan Tsang <bvtsang@gmail.com>"]
+description = "Converts vgmdb.net album pages into en.touhouwiki.net articles"
+license = "GPL-3.0+"
+
+[dependencies]
+hyper = "0.10"
+regex = "0.2"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"

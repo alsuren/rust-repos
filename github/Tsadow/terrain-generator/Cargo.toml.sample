@@ -1,0 +1,8 @@
+[package]
+name = "terrain_generator"
+version = "0.1.0"
+authors = ["Tom Castle <minifigone@gmail.com>"]
+
+[dependencies]
+rand = "0.5"
+colored = "1.6"

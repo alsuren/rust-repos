@@ -1,0 +1,29 @@
+[package]
+name = "fox-flux-advance"
+version = "0.1.0"
+authors = ["Eevee (Evelyn Woods) <eevee.git@veekun.com>"]
+edition = "2018"
+
+[profile.dev]
+# the gba is not a speed machine and i need some level of inlining on my
+# pointer methods or it's unplayable
+opt-level = 1
+
+[profile.release]
+lto = true
+
+[dependencies]
+gba = "^0.3.1"
+
+[dependencies.arrayvec]
+version = "^0.4"
+default-features = false
+
+[dependencies.euclid]
+git = "https://github.com/servo/euclid"
+branch = "no-std"
+default-features = false
+
+[dependencies.num-traits]
+version = "^0.2"
+default-features = false

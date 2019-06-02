@@ -1,0 +1,15 @@
+[package]
+name = "saturn_tagging"
+version = "0.2.1"
+authors = ["Arthur Goldman <arthur@goldman-tribe.org>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies.failure]
+version = "0.1"
+default_features = false # no `std`
+features = ["derive"]
+
+[features]
+no_std = []
+

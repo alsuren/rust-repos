@@ -1,0 +1,15 @@
+[package]
+authors = ["Zeyla Hellyer <zey@zey.moe>"]
+description = "An unofficial Rust wrapper for the Hummingbird.me API."
+documentation = "https://docs.rs/hummingbird"
+homepage = "https://github.com/zeyla/hummingbird.rs"
+license = "ISC"
+keywords = ["anime", "api", "hummingbird"]
+name = "hummingbird"
+readme = "README.md"
+repository = "https://github.com/zeyla/hummingbird.rs.git"
+version = "0.1.3"
+
+[dependencies]
+hyper = "0.9"
+serde_json = "0.8"

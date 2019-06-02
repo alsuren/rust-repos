@@ -1,0 +1,59 @@
+[package]
+name = "advent-of-code-2018"
+version = "0.1.0"
+authors = ["Prakhar Srivastav <prsrivastav@google.com>"]
+edition = "2018"
+
+[dependencies]
+itertools = "0.7"
+regex = "1"
+md5 = "0.6"
+lazy_static = "1.2.0"
+chrono = "0.4"
+toml = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+
+[[bin]]
+name = "scaffold"
+path = "src/scaffold.rs"
+
+[[bin]]
+name = "day01"
+path = "src/day01.rs"
+
+[[bin]]
+name = "day02"
+path = "src/day02.rs"
+
+[[bin]]
+name = "day03"
+path = "src/day03.rs"
+
+[[bin]]
+name = "day04"
+path = "src/day04.rs"
+
+[[bin]]
+name = "day05"
+path = "src/day05.rs"
+
+[[bin]]
+name = "day06"
+path = "src/day06.rs"
+
+[[bin]]
+name = "day07"
+path = "src/day07.rs"
+
+[[bin]]
+name = "day10"
+path = "src/day10.rs"
+
+[[bin]]
+name = "day11"
+path = "src/day11.rs"
+
+[[bin]]
+name = "day14"
+path = "src/day14.rs"

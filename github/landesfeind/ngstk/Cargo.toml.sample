@@ -1,0 +1,11 @@
+[package]
+name = "ngstk"
+version = "0.1.0"
+authors = ["Manuel Landesfeind <manuel@landesfeind.de>"]
+
+[dependencies]
+rust-htslib = "*"
+svgdom = "*"
+clap = "*"
+log = "*"
+pretty_env_logger = "*"

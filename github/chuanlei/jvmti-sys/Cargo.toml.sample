@@ -1,0 +1,10 @@
+[package]
+name = "jvmti-sys"
+version = "0.1.0"
+authors = ["nichuanlei"]
+edition = "2018"
+description = "Rust wrapper for jvmti.h"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+jni-sys = "0.3.0"

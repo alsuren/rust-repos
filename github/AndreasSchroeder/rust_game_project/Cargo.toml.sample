@@ -1,0 +1,24 @@
+[package]
+
+name = "chicken_fight_3000_ultimate_tournament"
+version = "0.1.0"
+authors = [
+    "Andreas Schroeder",
+    "Bao Tran",
+    "Eduard Rempel",
+    "Fabian Laumeyer",
+]
+
+[[bin]]
+name = "chicken_fight_3000_ultimate_tournament"
+
+[dependencies]
+piston_window = "0.62.0"
+find_folder = "*"
+gfx_device_gl = "0.13.0"
+piston2d-gfx_graphics = "0.36.0"
+image = "0.12.2"
+time = "0.1"
+rand = "0.3.15"
+ears = "0.4.0"
+xml-rs = "0.3"

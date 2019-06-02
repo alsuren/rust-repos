@@ -1,0 +1,12 @@
+[package]
+authors = ["Luka Dornhecker <luka.dornhecker@gmail.com>"]
+name = "geuze"
+version = "0.1.0"
+
+[dependencies]
+juniper = "0.9.2"
+juniper_rocket = "0.1"
+rocket = "0.3"
+rocket_codegen = "0.3"
+rocket_contrib = "0.3"
+rust-embed = "3.0"

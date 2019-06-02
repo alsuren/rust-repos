@@ -1,0 +1,28 @@
+[package]
+name = "ruroonga_command"
+version = "0.3.4"
+authors = ["Hiroshi Hatake <cosmo0920.wp@gmail.com>"]
+keywords = ["groonga"]
+description = "A tiny Groonga query builder and generator."
+license-file = "LICENSE"
+repository = "https://github.com/cosmo0920/ruroonga_command"
+build = "build.rs"
+
+[features]
+normalizer_mysql = []
+unstable = []
+sharding = []
+dev = ['clippy']
+groonga_611 = []
+
+[build-dependencies.skeptic]
+version = "~0.6"
+default-features = false
+
+[dev-dependencies.skeptic]
+version = "~0.6"
+default-features = false
+
+[dependencies]
+url = "~1.2.0"
+clippy = {version = '0.0', optional = true}

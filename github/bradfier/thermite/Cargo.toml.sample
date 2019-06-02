@@ -1,0 +1,17 @@
+[package]
+name = "thermite"
+version = "0.3.0"
+authors = ["Richard Bradfield <bradfier@fstab.me>",
+           "Steven Williamson <steven.williamson@hpe.com>"]
+license = "GPLv3"
+repository = "https://github.com/bradfier/thermite"
+description = """
+Thermite, a random I/O generation tool, written in Rust.
+"""
+
+[dependencies]
+rand = "*"
+getopts = "*"
+num = "*"
+log = "0.3"
+time = "*"

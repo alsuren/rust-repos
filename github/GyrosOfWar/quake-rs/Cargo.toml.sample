@@ -1,0 +1,21 @@
+[package]
+authors = ["Martin Tomasi <martin.tomasi@gmail.com>"]
+name = "quake-rs"
+version = "0.1.0"
+
+[dependencies]
+rand = "*"
+sdl2 = "*"
+byteorder = "*"
+hprof = "*"
+
+[dependencies.clippy]
+optional = true
+version = "*"
+
+[features]
+nightly = ["clippy"]
+
+[profile]
+[profile.release]
+debug = true

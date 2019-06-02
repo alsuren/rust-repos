@@ -1,0 +1,24 @@
+[package]
+name = "wasm2cretonne-util"
+version = "0.0.0"
+authors = ["The Cretonne Project Developers"]
+publish = false
+
+[[bin]]
+name = "wasm2cretonne-util"
+path = "src/main.rs"
+
+[dependencies]
+wasm2cretonne = { path = "lib/wasm2cretonne" }
+wasmstandalone = { path = "lib/wasmstandalone" }
+wasmparser = "0.6.1"
+cretonne = { path = "../cretonne/lib/cretonne" }
+cretonne-frontend = { path = "../cretonne/lib/frontend" }
+# cretonne = { git = "https://github.com/stoklund/cretonne.git" }
+# cretonne-frontend = { git = "https://github.com/stoklund/cretonne.git" }
+wasmtext = { git = "https://github.com/yurydelendik/wasmtext" }
+docopt = "0.8.0"
+serde = "1.0.8"
+serde_derive = "1.0.8"
+term = "*"
+tempdir="*"

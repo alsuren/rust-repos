@@ -1,0 +1,19 @@
+[package]
+
+name = "conduit-conditional-get"
+version = "0.8.0"
+authors = ["wycats@gmail.com",
+           "Alex Crichton <alex@alexcrichton.com>"]
+license = "MIT"
+description = """
+Middleware to transform GET into a conditional response if headers indicate that
+the response is fresh.
+"""
+
+[dependencies]
+conduit = "0.8.0"
+conduit-middleware = "0.8.0"
+time = "0.1.0"
+
+[dev-dependencies]
+conduit-test = "0.8.0"

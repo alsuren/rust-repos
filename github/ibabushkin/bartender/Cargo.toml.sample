@@ -1,0 +1,26 @@
+[package]
+name = "bartender"
+version = "0.8.0"
+authors = ["Inokentiy Babushkin <twk@twki.de>"]
+homepage = "https://ibabushkin.github.io/"
+repository = "https://github.com/ibabushkin/bartender"
+readme = "README.md"
+keywords = ["bar", "X"]
+license = "BSD3"
+
+[dependencies]
+getopts = "^0.2.14"
+libc = "^0.2.15"
+mustache = "^0.8.0"
+time = "^0.1.35"
+toml = "^0.4.5"
+pledge = { version = "*", optional = true }
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = "abort"

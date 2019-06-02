@@ -1,0 +1,11 @@
+[package]
+name = "coffee-compass"
+version = "0.1.0"
+authors = ["David McGillicuddy <contact@djmcgill.co.uk>"]
+edition = "2018"
+
+[dependencies]
+#libm = "0.1.2"
+arduino_mkrzero = {version = "*", git = "https://github.com/atsamd-rs/atsamd"}
+nb = "*"
+cortex-m-rt = "0.6"

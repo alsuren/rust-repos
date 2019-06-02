@@ -1,0 +1,16 @@
+[workspace]
+
+members = [
+    "utils",
+    "core",
+    "model",
+    "lang",
+    "cli",
+]
+exclude = [
+    "examples/",
+]
+
+[profile.release]
+panic = "abort"
+lto = true

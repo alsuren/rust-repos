@@ -1,0 +1,8 @@
+[package]
+name = "lava"
+version = "0.1.0"
+authors = ["Ólafur Þór Gunnarsson <olinord@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+winit = "0.18"

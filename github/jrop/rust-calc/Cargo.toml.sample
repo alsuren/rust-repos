@@ -1,0 +1,12 @@
+[package]
+name = "rust-calc"
+version = "0.1.0"
+authors = ["Jonathan Apodaca <jrapodaca@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+rustyline = "2.1.0"
+
+[profile.release]
+lto = true

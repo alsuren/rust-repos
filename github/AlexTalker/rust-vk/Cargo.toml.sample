@@ -1,0 +1,14 @@
+[package]
+name = "rust-vk"
+version = "0.1.1"
+description = "Wrapper for vk.com API on Rust."
+readme = "README.md"
+repository = "https://github.com/AlexTalker/rust-vk"
+license = "MIT"
+authors = ["Alex Talker <alextalker@openmailbox.org>"]
+keywords = ["vk", "rust-vk"]
+[dependencies]
+regex = "*"
+cookie = "*"
+rustc-serialize = "*"
+hyper = "0.7.2"

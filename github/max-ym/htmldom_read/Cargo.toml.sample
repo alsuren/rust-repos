@@ -1,0 +1,15 @@
+[package]
+name = "htmldom_read"
+version = "0.5.0"
+authors = ["Maxym Naumchyk <max.naumch@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/max-ym/htmldom_read"
+keywords = ["html", "parser", "node", "tree", "reader"]
+categories = ["data-structures"]
+license = "MIT"
+description = "HTML reader that parses the code into easy-use tree"
+readme = "readme.md"
+
+[dependencies]
+quick-xml = "0.13"
+memchr = "2.2.0"

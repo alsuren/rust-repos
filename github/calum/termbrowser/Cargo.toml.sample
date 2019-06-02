@@ -1,0 +1,14 @@
+[package]
+name = "termbrowser"
+version = "0.1.0"
+authors = [
+  "Tpt <thomas@pellissier-tanon.fr>"
+  "Calum <calumforster@live.co.uk"
+]
+
+[dependencies]
+actix-web = "0.6"
+ansi_term = "0.11"
+image = "0.19"
+pulldown-cmark = { version = "0.1", default-features = false }
+reqwest = "0.8"

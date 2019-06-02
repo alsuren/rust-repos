@@ -1,0 +1,26 @@
+[package]
+name = "read-rust"
+version = "0.1.0"
+authors = ["Wesley Moore <wes@wezm.net>"]
+
+[dependencies]
+atom_syndication = "<= 1.0"
+chrono = { version = "<= 1.0", features = ['serde'] }
+#egg-mode = "<= 1.0"
+egg-mode = { git = "https://github.com/wezm/twitter-rs.git", branch = "optional-lang" }
+failure = "<= 1.0"
+failure_derive = "<= 1.0"
+feedfinder = "<= 1.0"
+getopts = "<= 1.0"
+kuchiki = "<= 1.0"
+mammut = "<= 1.0"
+opengraph = "<= 1.0"
+reqwest = "<= 1.0"
+rss = "1.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+tokio = "<= 1.0"
+url = "1.7"
+url_serde = "<= 1.0"
+uuid = { version = "<= 1.0", features = ['v4', 'serde'] }

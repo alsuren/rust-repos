@@ -1,0 +1,18 @@
+[package]
+name = "rdns"
+version = "0.0.1"
+authors = ["Endre Karlson <endre.karlson@gmail.com>"]
+
+[dependencies.dns]
+version = "0.0.1"
+path = "../rust-dns"
+
+[dependencies.docopt]
+
+[[bin]]
+name = "rdns"
+path = "src/server_simple.rs"
+
+[[bin]]
+name = "rdns-client"
+path = "src/client.rs"

@@ -1,0 +1,33 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+build = "build.rs"
+description = "SSH Libray for goopd and gosh"
+documentation = "http://rustyhorde.github.io/goopy"
+homepage = "http://rustyhorde.github.io/goopy"
+keywords = ["goopy", "goopd", "gosh"]
+license = "MIT/Apache-2.0"
+links = "sodium"
+name = "goopy"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/gosh"
+version = "0.1.0"
+
+[build-dependencies]
+pkg-config = "0.3.8"
+
+[dependencies]
+byteorder = "0.5.3"
+bytes = "0.3.0"
+lazy_static = "0.2.1"
+libc = "0.2.14"
+rand = "0.3.14"
+regex = "0.1.73"
+rustc-serialize = "0.3.19"
+
+[dependencies.clippy]
+optional = true
+version = "~0.0.78"
+
+[features]
+latest = []
+lint = ["clippy"]

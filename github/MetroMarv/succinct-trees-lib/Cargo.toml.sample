@@ -1,0 +1,11 @@
+[package]
+name = "succinct-trees-lib"
+version = "0.1.0"
+authors = ["Marvin Rensing <marvin.rensing@posteo.de>"]
+
+[dependencies]
+bv = {version = "0.7", features = ["serde"]}
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"
+bio = "0.20"

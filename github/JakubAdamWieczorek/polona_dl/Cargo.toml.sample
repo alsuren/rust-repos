@@ -1,0 +1,20 @@
+[package]
+name = "polona_dl"
+version = "0.1.0"
+authors = ["Jakub Adam Wieczorek <ja.wieczorek@student.uw.edu.pl>"]
+
+[dependencies]
+backoff = "*"
+docopt = "*"
+docopt_macros = "*"
+futures = "*"
+hyper = "*"
+hyper-tls = "*"
+indicatif = "*"
+regex = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+threadpool = "*"
+tokio-core = "*"
+url = "*"

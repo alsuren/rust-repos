@@ -1,0 +1,9 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["Judy Nguyen <jnguyen@rbmtechnologies.com>"]
+
+[dependencies]
+iron = "*"
+serde = "*"
+serde_macros = "*"

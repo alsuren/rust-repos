@@ -1,0 +1,16 @@
+[package]
+name = "bsc"
+version = "0.1.0"
+authors = ["Elkantor <vic03@live.fr>"]
+
+[dependencies]
+indicatif = "0.9.0"
+console = "0.6.1"
+clap = "2.32.0"
+git2 = "0.7.5"
+fs_extra = "1.1.0"
+curl = "0.4.15"
+zip = "0.4"
+
+[profile.release]
+lto = true

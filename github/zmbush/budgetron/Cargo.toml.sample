@@ -1,0 +1,30 @@
+[package]
+name = "budgetron"
+version = "2.0.0-0.0.3"
+authors = ["Zachary Bush <zach@zmbush.com>"]
+
+[[bin]]
+name = "budgetron"
+doc = false
+
+[dependencies]
+# Both
+budgetronlib = { path = "budgetronlib" }
+serde = "*"
+serde_json = "*"
+
+# Library
+csv = "1.0.0-beta.5"
+data_store = { path = "data_store" }
+log = "*"
+regex = "*"
+serde_derive = "*"
+
+# Binary
+clap = "*"
+env_logger = "*"
+iron = "*"
+mount = "*"
+staticfile = "*"
+
+[workspace]

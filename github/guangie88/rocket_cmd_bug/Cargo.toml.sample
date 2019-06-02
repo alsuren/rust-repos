@@ -1,0 +1,9 @@
+[package]
+name = "rocket_cmd_bug"
+version = "0.1.0"
+authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
+
+[dependencies]
+hyper = "0.10"
+rocket = { git = "https://github.com/SergioBenitez/Rocket.git", branch = "master" }
+rocket_codegen = { git = "https://github.com/SergioBenitez/Rocket.git", branch = "master" }

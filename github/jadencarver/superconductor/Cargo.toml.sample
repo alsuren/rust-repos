@@ -1,0 +1,26 @@
+[package]
+name = "superconductor"
+version = "0.1.0"
+authors = ["Jaden Carver <jaden.carver@gmail.com>"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+maud = { version = "*", git="https://github.com/lfairy/maud.git" }
+maud_macros = { version = "*", git="https://github.com/lfairy/maud.git" }
+libc = "*"
+git2 = { version = "*", default-features = false }
+websocket = { version = "*", default-features = false }
+yaml-rust = "*"
+md5 = "*"
+fsevent = "*"
+chrono = "*"
+base64 = "*"
+rand = "0.3"
+termion = "*"
+time = "*"
+
+serde = "0.8"
+serde_derive = "0.8"
+serde_xml = "0.9.1"

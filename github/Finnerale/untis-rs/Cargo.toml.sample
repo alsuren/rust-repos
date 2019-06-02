@@ -1,0 +1,17 @@
+[package]
+name = "untis"
+description = "Rust library to access the webuntis jsonrpc"
+repository = "https://github.com/Finnerale/untis-rs"
+keywords = ["untis", "webuntis"]
+categories = ["api-bindings", "data-structures"]
+license = "MIT"
+readme = "README.md"
+version = "0.2.1"
+authors = ["Leopold Luley <mail@leopoldluley.de>"]
+
+[dependencies]
+chrono = "0.4"
+reqwest = "0.8.5"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

@@ -1,0 +1,9 @@
+[package]
+name = "subset_sum_automata"
+version = "0.1.0"
+authors = ["TheCynosure <jack.github@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+clap = "2"
+termsize = "0.1"

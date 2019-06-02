@@ -1,0 +1,8 @@
+[package]
+name = "waitfor"
+version = "0.1.0"
+authors = ["Sergey Valiev <svaliev@gmail.com>"]
+
+[dependencies]
+clap = { features = ["yaml"] }
+colored = "1.6"

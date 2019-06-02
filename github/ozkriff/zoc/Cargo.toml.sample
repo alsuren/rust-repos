@@ -1,0 +1,35 @@
+[package]
+
+name = "zoc"
+version = "0.0.1"
+authors = ["ozkriff <ozkriffgmail.com>"]
+description = "ZoC is turn-based hexagonal strategy game written in Rust"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["opengl", "3D", "game", "gfx"]
+repository = "https://github.com/ozkriff/zoc"
+
+[package.metadata.android]
+assets = "assets"
+
+[dependencies.core]
+path = "core"
+
+[dependencies]
+gfx_core = "0.7"
+gfx_device_gl = "0.14"
+gfx_window_glutin = "0.17"
+gfx = "0.16"
+glutin = "0.9"
+collision = "0.9"
+cgmath = "0.12"
+rand = "0.3"
+rusttype = "0.2"
+
+[dependencies.image]
+version = "0.10"
+default-features = false
+features = ["png_codec"]
+
+[target.arm-linux-androideabi.dependencies]
+android_glue = "0.2.0"

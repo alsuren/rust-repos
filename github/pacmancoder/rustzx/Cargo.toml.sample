@@ -1,0 +1,17 @@
+[package]
+name = "rustzx"
+version = "0.9.2"
+authors = ["Vladislav Nikonov <pacmancoder@gmail.com>"]
+publish = false
+description = "ZX Spectum emulator"
+repository = "https://github.com/pacmancoder/rustzx"
+readme = "README.md"
+keywords = ["emulator", "game", "z80"]
+license = "MIT"
+
+[dependencies]
+sdl2 = "0.21"
+lazy_static = "0.2"
+clap = "2.9"
+
+ayumi = { git = "https://github.com/pacmancoder/rust-ayumi.git"}

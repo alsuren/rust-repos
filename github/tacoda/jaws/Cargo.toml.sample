@@ -1,0 +1,12 @@
+[package]
+name = "jaws"
+version = "0.1.0"
+authors = ["Ian Johnson <tacoda@pm.me"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2.10"
+rusoto_core = "0.32.0"
+rusoto_dynamodb = "0.32.0"
+failure = "0.1.5"
+exitfailure = "0.5.1"

@@ -1,0 +1,10 @@
+[package]
+name = "magic_parser"
+version = "0.0.1"
+authors = [ "Daniel Moi <dmoixy@gmail.com" ]
+
+[dependencies]
+soup = "0.3"
+pulldown-cmark = { version = "0.5", default-features = false, features = ["simd"] }
+walkdir = "2"
+kuchiki = "0.7.3"

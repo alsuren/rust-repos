@@ -1,0 +1,13 @@
+[package]
+
+name = "rstracer"
+version = "0.0.2"
+authors = ["Sondre Lefsaker"]
+
+[profile.dev]
+opt-level = 2
+
+[dependencies]
+bmp = "*"
+getopts = "*"
+rand = "*"

@@ -1,0 +1,30 @@
+[package]
+name = "estunnel"
+version = "1.6.4-alpha.0"
+authors = ["Wenxuan Zhang <wenxuangm@gmail.com>"]
+description = "Tool for downloading data from elasticsearch cluster."
+repository = "https://github.com/wfxr/estunnel"
+edition = "2018"
+readme = "README.md"
+license = "MIT"
+keywords = [
+    "es",
+    "elasticsearch",
+    "scroll",
+    "tool",
+    "download",
+]
+
+[dependencies]
+reqwest = "0"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+crossbeam = "0.7"
+indicatif = "0"
+structopt = { version = "0.2", default-features = true }
+rpassword = "3"
+threadpool = "1"
+num_cpus = "1"
+self_update = "0.5"
+regex = "1"

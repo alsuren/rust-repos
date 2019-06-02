@@ -1,0 +1,9 @@
+[package]
+name = "lst"
+version = "0.1.0"
+authors = ["MinusGix <minusgix@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+byte-unit = "1.1.0"

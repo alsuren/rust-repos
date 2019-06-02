@@ -1,0 +1,39 @@
+[package]
+name = "tapioca"
+version = "0.0.1"
+authors = ["Oliver Ford <ojf13@imperial.ac.uk>"]
+repository = "https://github.com/OJFord/tapioca.git"
+description = "Type-safe REST client using the OpenAPI Specification"
+readme = "README.md"
+license-file = "LICENCE"
+keywords = ["REST", "API", "OAS", "OpenAPI"]
+categories = ["api-bindings", "development-tools", "web-programming::http-client"]
+
+[lib]
+name = "tapioca"
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
+[badges]
+travis-ci = {repository="OJFord/tapioca"}
+is-it-maintained-issue-resolution = {repository="OJFord/tapioca"}
+is-it-maintained-open-issues = {repository="OJFord/tapioca"}
+
+[dependencies]
+base64 = "0.6"
+clippy = {version="0.0", optional=true}
+reqwest = "0.6"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dependencies.tapioca-codegen]
+version = "0.0.1"
+path = "tapioca-codegen"
+
+[dev-dependencies]
+compiletest_rs = "0.2"
+
+[dev-dependencies.tapioca-testutil]
+version = "0.0.1"
+path = "tests/util"

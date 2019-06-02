@@ -1,0 +1,11 @@
+[package]
+name = "task-graph"
+version = "0.1.0"
+authors = ["Matthias Beyer <mail@beyermatthias.de>"]
+
+[dependencies]
+clap = "2"
+rain = "0.3"
+task-hookrs = "0.3"
+itertools = "0.6"
+

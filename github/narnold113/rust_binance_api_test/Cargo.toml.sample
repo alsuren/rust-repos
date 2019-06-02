@@ -1,0 +1,10 @@
+[package]
+name = "binance_api_test"
+version = "0.1.0"
+authors = ["nicolas"]
+
+[dependencies]
+serde = "1.0"
+serde_json = "1.0"
+ring = "0.13.5"
+reqwest = "0.9.5"

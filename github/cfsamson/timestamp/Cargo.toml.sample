@@ -1,0 +1,18 @@
+[package]
+name = "timestamp"
+version = "0.1.0"
+authors = ["Carl Fredrik Samson <cf@samson.no>"]
+edition = "2018"
+
+[dependencies]
+
+[dev-dependencies]
+chrono = "0.3"
+
+[profile.bench]
+codegen-units=1
+lto=true
+
+[profile.release]
+codegen-units=1
+lto=true

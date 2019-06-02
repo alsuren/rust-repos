@@ -1,0 +1,22 @@
+[package]
+name = "finder_info"
+version = "0.2.0"
+authors = ["Dropbox Engineering <eng@dropbox.com>"]
+license = "Apache-2.0"
+description = "A library to parse Apple HFS/HFS+/APFS FinderInfo attribute."
+
+[features]
+default = []
+# this feature enables the ability to read and write the FinderInfo xattr on MacOS.
+xattr = ["libc"]
+
+[dependencies]
+byteorder = "1.1"
+cfg-if = "0.1"
+docopt = "1.0"
+hex = "0.3"
+serde = "1.0"
+serde_derive = "1.0"
+
+# needed for the CLI tool
+libc = { version = "0.2", optional = true }

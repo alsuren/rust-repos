@@ -1,0 +1,44 @@
+[package]
+name = "nimikirsu"
+version = "0.0.1"
+authors = ["Ossi Herrala <oherrala@iki.fi>"]
+homepage = "https://github.com/oherrala/nimikirsu"
+repository = "https://github.com/oherrala/nimikirsu"
+license = "MIT"
+readme = "README.md"
+
+[badges]
+maintenance = { status = "experimental" }
+
+[[bin]]
+name = "nimikirsu"
+path = "src/main.rs"
+
+[lib]
+name = "kirsulib"
+path = "lib/lib.rs"
+
+[profile.release]
+lto = true
+
+[features]
+default = []
+collect = [ "sha1" ]
+
+[dependencies]
+chrono = { version = "0.4", default-features = false }
+libc = "0.2"
+log = "0.4"
+nix = "0.7"
+privdrop = "0.2"
+sha1 = { version = "0.6", optional = true }
+stderrlog = "0.4"
+structopt = "0.2"
+untrusted = "0.6"
+untrustended = "0.2"
+
+[build-dependencies]
+bindgen = { version = "0.37", default_features = false }
+
+[patch.crates-io]
+untrusted = { git = "https://github.com/oherrala/untrusted", branch = "clone-n-copy-mark" }

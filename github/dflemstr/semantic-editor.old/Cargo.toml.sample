@@ -1,0 +1,28 @@
+[package]
+name = "semantic-editor"
+version = "0.1.0"
+authors = ["David Flemström <david.flemstrom@gmail.com>"]
+build = "build.rs"
+
+[[bin]]
+name = "se"
+
+[profile.release]
+lto = true
+
+[dependencies]
+clap = "1.4.0"
+fern = "0.3.5"
+hyper = "0.6.14"
+lazy_static = "0.1.15"
+libc = "0.1.12"
+log = "0.3.2"
+md5 = "0.1.1"
+mio = { git = "https://github.com/dpc/mio", rev="c4a5b9e" }
+mioco = { git = "https://github.com/dpc/mioco.git" }
+nix = "0.4.1"
+rustbox = "0.7.1"
+time = "0.1.32"
+
+[build-dependencies]
+rustc_version = "0.1.4"

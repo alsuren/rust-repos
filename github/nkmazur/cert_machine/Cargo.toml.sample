@@ -1,0 +1,21 @@
+[package]
+name = "cert_machine"
+version = "0.1.0"
+authors = ["Nikita Mazur <nkamzur@yandex.ru>"]
+
+[dependencies]
+openssl = "0.10.16"
+serde_derive = "1.0.78"
+serde_yaml = "0.8"
+serde = "1.0.78"
+clap = "2.32"
+base64 = "0.10.1"
+toml = "0.4"
+
+
+[profile.release]
+lto = "thin"
+
+[[bin]]
+name = "cert-machine"
+path = "src/main.rs"

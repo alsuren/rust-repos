@@ -1,0 +1,24 @@
+[package]
+name = "vertx-tcp-eventbus-bridge-client-rust"
+version = "0.2.0"
+authors = ["skye347 <s347419313@gmail.com>"]
+exclude = [
+    "test-server-scala/*",
+    "build-arm.sh",
+    "build.sh",
+    ".travis.yml"
+]
+edition = "2018"
+keywords = ["eventbus", "vertx"]
+license = "MIT"
+description = "future based vert.x tcp eventbus bridge client in Rust"
+
+[dependencies]
+serde_json = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+bytes = "0.4"
+byteorder="1.2.3"
+crossbeam = "0.3.2"
+tokio = "0.1.18"
+futures = "0.1"

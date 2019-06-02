@@ -1,0 +1,9 @@
+[package]
+
+name = "dolos"
+version = "0.0.4"
+authors = ["Patrick Barrett <pat@theunlink.com>"]
+
+[dependencies]
+docopt = "*"
+rustc-serialize = "*"

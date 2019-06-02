@@ -1,0 +1,26 @@
+[package]
+name = "recs"
+version = "0.1.0"
+authors = ["theor <theo.richart@gmail.com>"]
+
+[dependencies]
+# specs = { git = "https://github.com/slide-rs/specs" }
+specs = { path = "C:/Users/theor/.cargo/git/checkouts/specs-18d2bb2ce407da15/c2c450a" }
+rayon = "*"
+specs-derive = { git = "https://github.com/slide-rs/specs" }
+find_folder = "*"
+# image = "*"
+flame = "*"
+hibitset = "*"
+crossbeam = "*"
+
+[dependencies.ntree]
+# git = "https://github.com/theor/rust-n-tree.git"
+path = "C:/Users/theor/rust-n-tree" 
+
+[dependencies.ggez]
+git = "https://github.com/ggez/ggez.git"
+features = ["cargo-resource-root"]
+
+[profile.release]
+debug = true

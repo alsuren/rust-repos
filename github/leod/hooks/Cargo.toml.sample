@@ -1,0 +1,6 @@
+[workspace]
+members = ["hooks_client", "hooks_server"]
+
+[profile.dev]
+opt-level = 1
+

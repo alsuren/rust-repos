@@ -1,0 +1,42 @@
+[package]
+name = "butter"
+version = "0.1.0"
+authors = ["l1h3r <devin.turner09@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.10.0"
+byteorder = "1.2.7"
+failure = "0.1.5"
+lazy_static = "1.2.0"
+openssl = "0.10.16"
+regex = "1.1.0"
+reqwest = "0.9.8" # TODO
+ring = "0.13.5"
+serde = "1.0.84"
+serde_derive = "1.0.84"
+serde_json = "1.0.34"
+
+[dependencies.crow]
+git = "https://github.com/l1h3r/crow"
+rev = "5e7890bc5a752be9c59cf1aa058d14d3b11c1e5d"
+
+[[example]]
+name = "gplay-login"
+path = "examples/gplay/login.rs"
+
+[[example]]
+name = "gplay-stream"
+path = "examples/gplay/stream.rs"
+
+[[example]]
+name = "gplay-token"
+path = "examples/gplay/token.rs"
+
+[[example]]
+name = "youtube-history"
+path = "examples/youtube/history.rs"
+
+[[example]]
+name = "youtube-stream"
+path = "examples/youtube/stream.rs"

@@ -1,0 +1,15 @@
+[package]
+
+name = "PGMap"
+version = "0.0.1"
+authors = ["Brandon <brandon.haley94@gmail.com>"]
+
+[lib]
+
+name = "PGMap"
+
+[dependencies.rustc-serialize]
+git = "https://github.com/rust-lang/rustc-serialize.git"
+
+[dependencies.rand]
+git = "https://github.com/rust-lang/rand.git"

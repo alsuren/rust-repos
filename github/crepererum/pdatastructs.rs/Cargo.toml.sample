@@ -1,0 +1,40 @@
+[package]
+name = "pdatastructs"
+version = "0.6.0"
+authors = ["Marco Neumann <marco@crepererum.net>"]
+license = "MIT/Apache-2.0"
+keywords = [
+    "filter",
+    "probabilistic",
+    "sampling",
+    "sketch",
+]
+categories = ["data-structures"]
+description = "Simple probabilistic data structures"
+repository = "https://github.com/crepererum/pdatastructs.rs"
+documentation = "https://docs.rs/pdatastructs/"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+fixedbitset = "^0.1.9"
+num-traits = "^0.2.4"
+rand = "0.6"
+succinct = "^0.4.4"
+void = "1"
+
+[dependencies.bytecount]
+version = "0.5"
+features = ["runtime-dispatch-simd"]
+
+[dev-dependencies]
+criterion = "0.2"
+rand_chacha = "0.1"
+
+[[bench]]
+name = "filters"
+harness = false
+
+[[bench]]
+name = "hyperloglog"
+harness = false

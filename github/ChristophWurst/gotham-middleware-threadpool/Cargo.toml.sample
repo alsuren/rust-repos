@@ -1,0 +1,16 @@
+[package]
+name = "gotham-middleware-threadpool"
+version = "0.1.0"
+authors = ["Christoph Wurst <christoph@winzerhof-wurst.at>"]
+
+[dependencies]
+futures = "^0.1"
+futures-cpupool = "0.1.8"
+gotham = "^0.2"
+gotham_derive = "^0.2"
+
+[dev-dependencies]
+diesel = { version = "*", features = ["sqlite"] }
+gotham_middleware_diesel = { git = "https://github.com/ChristophWurst/gotham.git", branch = "diesel-gotham-2.0" }
+hyper = "*"
+mime = "*"

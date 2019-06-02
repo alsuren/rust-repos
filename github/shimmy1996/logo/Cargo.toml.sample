@@ -1,0 +1,12 @@
+[package]
+name = "logo"
+version = "0.2.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+svg = "0.5.12"
+
+[dependencies.resvg]
+version = "0.5.0"
+features = ["cairo-backend"]

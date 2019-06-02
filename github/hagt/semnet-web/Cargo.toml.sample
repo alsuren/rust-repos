@@ -1,0 +1,11 @@
+[package]
+name = "semnet-web"
+version = "0.5.0"
+repository = "https://github.com/hagt/semnet-web"
+authors = ["Henrik Jürges <juerges.henrik@gmail.com>",
+           "Henning Agt-Rickauer <henning.agt-rickauer@hpi.de>"]
+
+[dependencies]
+nickel = "*"
+rusqlite = "^0.13"
+rustc-serialize = "^0.3"

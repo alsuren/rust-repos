@@ -1,0 +1,20 @@
+[package]
+name = "smartpool-spatial"
+version = "0.3.2"
+authors = ["Phoenix <kahlo.phoenix@gmail.com>"]
+description = "Spatial prioritization for smartpool using manhattan trees."
+readme = "README.md"
+repository = "https://github.com/gretchenfrage/smartpool-spatial"
+categories = ["concurrency", "data-structures"]
+license = "MIT"
+
+[dependencies]
+smartpool = "0.3.2"
+manhattan-tree = "0.1.1"
+atomic = "0.4.1"
+
+[dev-dependencies]
+rand = "0.5.5"
+stopwatch = "0.0.7"
+pretty_env_logger = "0.2.5"
+log = "0.4.6"

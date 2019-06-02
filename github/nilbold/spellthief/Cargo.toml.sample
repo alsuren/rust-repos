@@ -1,0 +1,20 @@
+[package]
+name = "spellthief"
+version = "0.1.0"
+authors = ["nil <nil@kobold.dev>"]
+
+license = "MPL-2.0"
+
+publish = false
+
+[[bin]]
+path = "src/bin/spellthief.rs"
+name = "spellthief"
+
+[lib]
+name = "spellthief"
+path = "src/lib.rs"
+
+[dependencies]
+log = "0.4"
+pretty_env_logger = "0.3"

@@ -1,0 +1,16 @@
+[package]
+name = "blocks"
+version = "0.1.0"
+authors = ["Xavil Pergis <max.duzen@gmail.com>"]
+
+[dependencies]
+piston = "0.22.0"
+piston_window = "0.44.0"
+rand = "0.3.14"
+num = "0.1.32"
+threadpool = "1.0"
+serde = "*"
+serde_json = "*"
+
+[dependencies.noise]
+git = "https://github.com/bjz/noise-rs.git"

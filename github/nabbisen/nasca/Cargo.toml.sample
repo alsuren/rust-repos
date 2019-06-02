@@ -1,0 +1,14 @@
+[package]
+name = "nasca"
+version = "0.0.1"
+authors = ["harapan"]
+
+[dependencies]
+time = "*"
+regex = "*"
+hyper = "*"
+toml = "*"
+serde = "*"
+serde_derive = "*"
+bson = "*"
+mongodb = "*"

@@ -1,0 +1,15 @@
+[package]
+name = "encoding-adjustment-algorithm"
+version = "0.1.0"
+authors = ["Harry <hlbarber93@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+zstd = "*"
+influent = "*"
+bitcoincore-rpc = {version = "*", git = "https://github.com/hlb8122/rust-bitcoincore-rpc.git", branch = "development/migrate-to-bch"}
+clap = {version = "*", features = ["yaml"]}
+bitcoin_hashes = "0.3"
+log = "*"
+env_logger = "*"
+tokio = "*"

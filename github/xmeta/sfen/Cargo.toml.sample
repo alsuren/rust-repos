@@ -1,0 +1,10 @@
+[package]
+name = "sfen"
+version = "0.0.6"
+authors = ["xmeta"]
+license = "MIT"
+keywords = ["Shogi", "SFEN"]
+
+[dependencies]
+vec_map = "0.6.0"
+peg = "0.3.0"

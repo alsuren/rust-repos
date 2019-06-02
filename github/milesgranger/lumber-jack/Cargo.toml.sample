@@ -1,0 +1,27 @@
+[package]
+name = "lumber-jack"
+version = "0.0.1"
+authors = ["Miles Granger <miles59923@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "lumberjack"
+crate-type = ["cdylib"]
+
+[dependencies]
+num = "^0.1"
+ndarray = "^0.11.2"
+libc = "^0.2.42"
+
+[build-dependencies]
+cbindgen = "^0.6.0"
+
+[profile.dev]
+lto = false
+debug = true
+
+[profile.release]
+lto = true
+debug = false
+incremental = false
+opt-level = 3

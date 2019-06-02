@@ -1,0 +1,8 @@
+[package]
+name = "tictactoe-rs"
+version = "0.1.0"
+authors = ["fish <mikail.khan45@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ncurses = "5.98.0"

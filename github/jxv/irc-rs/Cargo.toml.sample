@@ -1,0 +1,15 @@
+[package]
+
+name = "irc"
+version = "0.0.1"
+authors = ["Joe Vargas <jxv@hush.com>"]
+
+[lib]
+name = "irc"
+path = "src/lib.rs"
+
+[dependencies.parser-combinators]
+git = "https://github.com/Marwes/parser-combinators"
+
+[[test]]
+name = "tests"

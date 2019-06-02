@@ -1,0 +1,11 @@
+[package]
+name = "jeebie"
+version = "0.1.0"
+authors = ["Valerio Pipolo <valep27@gmail.com>"]
+
+[dependencies]
+clippy = {version = "*", optional = true}
+sdl2 = "0.30"
+
+[features]
+default=[]

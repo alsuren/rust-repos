@@ -1,0 +1,11 @@
+[package]
+name = "c8s"
+version = "0.1.3"
+authors = ["Martin Mroz <martinmroz@gmail.com>"]
+
+[dependencies]
+regex = "0.1.58"
+lazy_static = "0.1.15"
+getopts = "0.2.14"
+ihex = "1.0"
+twelve_bit = "0.1"

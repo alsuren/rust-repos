@@ -1,0 +1,17 @@
+[package]
+name = "radix"
+version = "1.1.0"
+authors = ["LeMagnesium <mg.minetest@gmail.com>"]
+
+description = "Rust Radix Manipulation Library"
+repository = "https://github.com/LeMagnesium/rust-radix"
+license = "WTFPL"
+
+[dependencies]
+
+[lib]
+name = "radix"
+path = "src/lib.rs"
+test = true
+doctest = false
+bench = false

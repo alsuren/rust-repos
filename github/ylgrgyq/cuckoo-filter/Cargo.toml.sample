@@ -1,0 +1,13 @@
+[package]
+name = "rust-cuckoofilter"
+version = "0.1.0"
+authors = ["ylgrgyq <alven.gr@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+siphasher = "^0.2.2"
+bincode = "0.8.0"
+serde = "1.0.8"
+serde_derive = "1.0.8"
+
+clippy = {version = "*", optional = true}

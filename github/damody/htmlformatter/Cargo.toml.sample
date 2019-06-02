@@ -1,0 +1,9 @@
+[package]
+name = "htmlformatter"
+version = "0.1.0"
+authors = ["damody <t1238142000@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32"
+quick-xml = "0.13"

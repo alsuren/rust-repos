@@ -1,0 +1,14 @@
+[package]
+name = "unsigned"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["unsigned", "integer", "trait"]
+description = "unsigned integer trait"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-unsigned.git"
+homepage = "https://github.com/nathanfaucett/rs-unsigned"
+
+[dependencies]
+num = {git = "https://github.com/nathanfaucett/rs-num.git"}

@@ -1,0 +1,15 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["L. L. Blumire <llblumire@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[[bin]]
+name = "day1a"
+path = "src/day1a/bin.rs"
+
+[[bin]]
+name = "day1b"
+path = "src/day1b/bin.rs"

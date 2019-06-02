@@ -1,0 +1,12 @@
+[package]
+name = "wasmblock"
+version = "0.0.15"
+authors = ["Richard <richard.anaya@gmail.com>"]
+include = [
+    "src/**/*.rs",
+    "Cargo.toml",
+]
+license = "MIT"
+description = "Helper library for wasmblock"
+
+[dependencies]

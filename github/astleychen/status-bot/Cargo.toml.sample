@@ -1,0 +1,17 @@
+[package]
+name = "status-bot"
+version = "0.1.0"
+authors = ["Astley Chen <astleychen@gmail.com>"]
+
+[dependencies]
+hyper = "0.9"
+irc = "0.11"
+futures = "0.1"
+mime = "0.2"
+regex = "0.1"
+rusqlite = "0.7"
+time = "0.1"
+url = "1.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

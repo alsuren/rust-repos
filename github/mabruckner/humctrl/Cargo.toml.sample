@@ -1,0 +1,25 @@
+[package]
+name = "humctrl"
+version = "0.1.0"
+authors = ["Mitchell Bruckner <mbruckner807@gmail.com>"]
+
+
+[[bin]]
+name = "humctrl"
+
+[[bin]]
+name = "stream"
+
+[[bin]]
+name = "sweep"
+
+[[bin]]
+name = "dft"
+
+[dependencies]
+portaudio="0.7.0"
+hyper="0.9.10"
+rand="0.3"
+time="0.1"
+clap = "2.10.2"
+graph = { git = "https://github.com/mabruckner/graph.git", ver="0.2.1" }

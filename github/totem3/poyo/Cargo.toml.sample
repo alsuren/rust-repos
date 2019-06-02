@@ -1,0 +1,8 @@
+[package]
+name = "curses"
+version = "0.1.0"
+authors = ["Takafumi Hirata <takhirata6@gmail.com>"]
+
+[dependencies]
+ncurses = "*"
+rand = "0.3"

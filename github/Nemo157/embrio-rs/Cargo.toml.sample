@@ -1,0 +1,16 @@
+[workspace]
+members = [
+  "embrio",
+  "embrio-async",
+  "embrio-async/macros",
+  "embrio-core",
+  "embrio-executor",
+  "embrio-native",
+  "embrio-nrf51",
+  "embrio-util",
+  "examples/apps/hello",
+  "examples/local",
+  "examples/pca10031",
+]
+
+default-members = ["embrio"]

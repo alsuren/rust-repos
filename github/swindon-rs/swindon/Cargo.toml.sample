@@ -1,0 +1,76 @@
+[package]
+
+name = "swindon"
+version = "0.7.8"
+authors = ["a.popravka@smartweb.com.ua", "paul@colomiets.name"]
+description = """
+    An HTTP edge (frontend) server with smart websockets support
+"""
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["tokio", "http", "websockets", "server", "web"]
+categories = ["asynchronous", "web-programming::http-server"]
+homepage = "http://github.com/swindon-rs/swindon"
+documentation = "https://swindon-rs.github.io/swindon"
+
+[dependencies]
+futures = "0.1.16"
+futures-cpupool = "0.1.6"
+tokio-core = "0.1.6"
+tokio-io = "0.1.0"
+quick-error = "1.2.1"
+log = "0.4.0"
+env_logger = "0.5.0-rc.1"
+quire = "0.3.0"
+argparse = "0.2.1"
+time = "0.1.35"
+lazy_static = "1.0.0"
+mime_guess = "1.8.0"
+http-file-headers = "0.1.6"
+httpdate = "0.3.2"
+tk-bufstream = "0.3.0"
+tk-http = { version="0.3.6", default-features=false, features=["date_header"] }
+netbuf = "0.4.0"
+byteorder = "1.0.0"
+httpbin = "0.3.3"
+slab = "0.4.0"
+matches = "0.1.4"
+assert_matches = "1.0.1"
+string-intern = {version="0.1.7", features=["serde"], default-features=false}
+rand = "0.4.1"
+tk-pool = "0.5.2"
+tk-listen = "0.1.0"
+abstract-ns = "0.4.1"
+ns-router = "0.1.5"
+ns-std-threaded = "0.3.0"
+libc = "0.2.31"
+scoped-tls = "0.1.0"
+self-meter-http = "0.4.1"
+libcantal = "0.3.2"
+serde = { version = "1.0.15", features = ["rc"] }
+serde_derive = "1.0.15"
+serde_json = "1.0.3"
+blake2 = "0.7.0"
+digest = "0.7.2"
+digest-writer = "0.3.1"
+generic-array = "0.9.0"
+typenum = "1.9.0"
+regex = "0.2.2"
+trimmer = "0.3.2"
+humantime = "1.0.0"
+void = "1.0.0"
+async-slot = "0.1.0"
+crossbeam = "0.3.0"
+owning_ref = "0.3.3"
+
+[profile.release]
+debug = true
+
+
+[[bin]]
+name = "swindon"
+path = "src/main.rs"
+
+[[bin]]
+name = "swindon-dev"
+path = "src/main-dev.rs"

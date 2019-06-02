@@ -1,0 +1,9 @@
+[package]
+name = "spotlight-parser"
+version = "0.1.0"
+authors = ["Leo Bernard <admin@leolabs.org>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1"
+notify = "4.0.0"

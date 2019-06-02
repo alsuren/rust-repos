@@ -1,0 +1,15 @@
+[profile.release]
+codegen-units = 1
+lto = true
+panic = "abort"
+
+[package]
+name = "lurl"
+version = "0.1.0"
+authors = ["winsider <lars@tungen.net>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+scraper = "0.10.0"
+reqwest = "0.9.17"

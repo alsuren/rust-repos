@@ -1,0 +1,15 @@
+[package]
+name = "ripley"
+version = "0.1.0"
+authors = ["djade <djadenkus@gmail.com>"]
+
+[dependencies]
+lazy_static = "1.1.0"
+
+[[bin]]
+name = "ripley"
+path = "src/bin/ripley.rs"
+
+[[bin]]
+name = "tests"
+path = "src/bin/tests.rs"

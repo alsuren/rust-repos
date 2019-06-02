@@ -1,0 +1,9 @@
+[package]
+name = "too-much-post"
+version = "0.1.0"
+authors = ["Thomas den Hollander <denhollander.thomas@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+ggez = {git = "https://github.com/ggez/ggez", branch = "devel"}
+rand = "0.5.5"

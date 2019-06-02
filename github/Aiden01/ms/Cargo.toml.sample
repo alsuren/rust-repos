@@ -1,0 +1,13 @@
+[package]
+name = "ms"
+version = "0.1.0"
+authors = ["aiden01 <liangu@protonmail.com>"]
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Aiden01/ms"
+homepage = "https://github.com/Aiden01/ms"
+description = "A tiny crate to convert time to milliseconds."
+
+
+[dependencies]

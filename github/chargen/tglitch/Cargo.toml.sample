@@ -1,0 +1,22 @@
+[package]
+name = "tgcli"
+version = "0.0.0-alpha"
+authors = ["Lawrence Dark <darklawrence0@gmail.com>"]
+
+[[bin]]
+name = "tgtracker"
+path = "src/main.rs"
+
+
+[dependencies]
+clap = "*"
+cpal = "*"
+config = "*"
+glium = "*"
+memmap = "*"
+winit = "*"
+error-chain = "*"
+oxdz = { path = "oxdz" }
+
+[dev-dependencies]
+clog = "*"

@@ -1,0 +1,21 @@
+[package]
+name = "musplay"
+version = "0.1.0"
+authors = ["Jonas Minnberg <sasq64@gmail.com>"]
+edition = "2018"
+build="build.rs"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+alsa-sys = "0.1.2"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+coreaudio-rs = "0.9.1"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winapi = { version = "0.3", features = ["winuser", "mmreg", "mmsystem", "mmeapi"] }
+
+[dependencies]
+minifb = "0.11.2"
+
+[build-dependencies]
+cmake = "0.1.31"

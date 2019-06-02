@@ -1,0 +1,7 @@
+[package]
+name = "radium"
+version = "0.1.0"
+authors = ["thealexhoar <thealexhoar@gmail.com>"]
+
+[dependencies]
+sfml = { git = "https://github.com/thealexhoar/rust-sfml", version = "0.12.0" }

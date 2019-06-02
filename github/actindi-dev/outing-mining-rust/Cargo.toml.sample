@@ -1,0 +1,41 @@
+[package]
+name = "outing-mining-rust"
+version = "0.1.0"
+authors = ["TAHARA Yoshinori <read.eval.print@gmail.com>"]
+
+[features]
+## create a feature in your app
+watch = ["handlebars-iron/watch"]
+serde_type = ["handlebars-iron/serde_type"]
+
+[dependencies]
+iron = "0.5"
+router = "0.5"
+iron-sessionstorage = "0.6"
+handlebars = "0.24"
+handlebars-iron = "0.22"
+mysql = "8.0"
+typemap = "0.3"
+plugin = "0.2"
+serde = "0.8"
+serde_derive = "0.8"
+serde_json = "0.8"
+chrono = "0.2"
+mongo_driver = "0.4"
+bson = "0.3"
+urlencoded = "0.5"
+uuid = { version="0.3", features=["v4"] }
+url = "1.2"
+hyper = "0.10"
+hyper-native-tls = "0.2"
+
+# for make-test-data
+rand = "0.3"
+
+[[bin]]
+name = "outing-mining-rust"
+path = "src/main.rs"
+
+[[bin]]
+name = "make-test-data"
+path = "src/bin/make-test-data.rs"

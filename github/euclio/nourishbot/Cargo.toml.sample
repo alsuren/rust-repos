@@ -1,0 +1,25 @@
+[package]
+authors = ["Andy Russell <arussell123@gmail.com>"]
+name = "nourish-bot"
+version = "0.1.0"
+license = "MIT/Apache-2.0"
+description = "Prints the Nourish menu at athenahealth Watertown."
+
+[[bin]]
+doc = false
+name = "nourish-bot"
+path = "src/main.rs"
+
+[dependencies]
+Inflector = "0.10"
+chrono = "0.4"
+clap = "2"
+dotenv = "0.10"
+error-chain = "0.11"
+lazy_static = "0.2.0"
+linked-hash-map = "0.5"
+regex = "0.2"
+reqwest = "0.7"
+select = "0.4"
+slack-hook = "0.5"
+webbrowser = "0.2"

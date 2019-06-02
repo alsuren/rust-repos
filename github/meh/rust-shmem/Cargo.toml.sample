@@ -1,0 +1,16 @@
+[package]
+name    = "shmem"
+version = "0.2.0"
+
+authors = ["meh. <meh@schizofreni.co>"]
+license = "WTFPL"
+
+description = "Shared memory across processes."
+repository  = "https://github.com/meh/rust-shmem"
+keywords    = ["font", "bdf"]
+
+[dependencies]
+libc = "0.2"
+
+[target.'cfg(unix)'.dependencies]
+nix = "0.6"

@@ -1,0 +1,10 @@
+[package]
+name = "assa"
+version = "1.0.2"
+authors = ["david <david.smitmanis@gmail.com>"]
+
+[dependencies]
+sodiumoxide = "0.0.8"
+rustc-serialize = "0.3"
+clap = "1.4.2"
+rpassword = "0.0.6"

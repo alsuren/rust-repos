@@ -1,0 +1,16 @@
+[package]
+name = "oxidizer"
+version = "0.1.0"
+authors = ["Michael Westbom <michael@westbom.co>"]
+
+[dependencies]
+libc = "*"
+# gl = "*"
+# glutin = "*"
+# gfx = "*"
+# gfx_core = "*"
+# gfx_window_glutin = "*"
+cgmath = "*"
+byteorder = "0.5"
+bitflags = "0.7"
+clippy = "*"

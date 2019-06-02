@@ -1,0 +1,10 @@
+[package]
+name = "zip_converter"
+version = "0.1.0"
+authors = ["Rikuto"]
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+bincode = "*"
+rustc-serialize = "*"

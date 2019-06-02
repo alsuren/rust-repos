@@ -1,0 +1,9 @@
+[package]
+name = "tokio-review"
+version = "0.0.1"
+authors = ["Dennis Jung <inylove82@gmail.com>"]
+
+[dependencies]
+tokio = "0.1"
+futures = "0.1"
+bytes = "0.4"

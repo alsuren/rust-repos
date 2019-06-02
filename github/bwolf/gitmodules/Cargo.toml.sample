@@ -1,0 +1,19 @@
+[package]
+authors = ["Marcus Geiger"]
+categories = ["parsing"]
+description = "A simple regex based parsing library for reading the .gitmodules file of a Git repository."
+edition = "2018"
+keywords = ["git"]
+license = "MIT OR Apache-2.0"
+name = "gitmodules"
+readme = "README.md"
+repository = "https://github.com/bwolf/gitmodules"
+version = "0.1.0"
+
+[dependencies]
+log = "0.4"
+regex = "1"
+lazy_static = "1.3"
+
+[dev-dependencies]
+env_logger = "0.6"

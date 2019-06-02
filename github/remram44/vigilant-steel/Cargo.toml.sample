@@ -1,0 +1,22 @@
+[workspace]
+members = ["client-piston", "server", "color-logger"]
+
+[package]
+name = "game"
+version = "0.1.0"
+authors = ["Remi Rampin <remirampin@gmail.com>"]
+license = "GPL-3.0"
+repository = "https://gitlab.com/remram44/vigilant-steel"
+description = "Space game with Piston"
+readme = "README.md"
+keywords = ["game"]
+
+[dependencies]
+byteorder = "1.2"
+log = "0.4"
+rand = "0.4"
+specs = "0.10"
+vecmath = "0.3"
+
+[features]
+network = []

@@ -1,0 +1,10 @@
+[package]
+name = "smbios-raw"
+version = "0.1.0"
+authors = ["Gabriel Majeri <gabriel.majeri6@gmail.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+publish = false
+
+[dependencies]
+bitflags = "1"

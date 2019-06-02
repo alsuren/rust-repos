@@ -1,0 +1,15 @@
+[package]
+name = "tunnelblickctl"
+version = "0.1.0"
+authors = ["Ben Webber"]
+
+[dependencies]
+csv = "~1.0.0"
+humansize = "~1.1.0"
+serde = "~1.0.0"
+serde_derive = "~1.0.0"
+tabwriter = "~1.1.0"
+
+[dependencies.clap]
+features = ["yaml"]
+version = "~2.19.0"

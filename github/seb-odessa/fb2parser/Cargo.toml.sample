@@ -1,0 +1,10 @@
+[package]
+name = "fb2parser"
+version = "0.3.0"
+authors = ["seb@kickseed <seb@kickseed>"]
+
+[dependencies]
+    xmltree = "*"
+    bincode = "*"
+    serde = "*"
+    serde_derive = "*"

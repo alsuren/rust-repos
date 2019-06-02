@@ -1,0 +1,21 @@
+[package]
+name = "waterfall"
+version = "0.7.2-pre"
+authors = ["Brian Martin <brayniac@gmail.com>"]
+
+license = "MIT OR Apache-2.0"
+
+readme = "README.md"
+
+description = "waterfall data visualization"
+categories = ["visualization"]
+
+documentation = "https://brayniac.github.io/waterfall"
+homepage = "https://github.com/brayniac/waterfall"
+repository = "https://github.com/brayniac/waterfall"
+
+[dependencies]
+hsl = "0.1.1"
+rusttype = "0.4.1"
+heatmap = "0.6.2"
+png = "0.7.0"

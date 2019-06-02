@@ -1,0 +1,11 @@
+[package]
+name                = "ekos"
+version             = "0.1.0"
+authors             = ["刘意 <efikarl@icloud.com>"]
+edition             = "2018"
+
+[profile.dev]                           # for `cargo build`
+panic               = "abort"           # disable stack unwinding on panic
+
+[profile.release]                       # for `cargo build --release`
+panic               = "abort"           # disable stack unwinding on panic

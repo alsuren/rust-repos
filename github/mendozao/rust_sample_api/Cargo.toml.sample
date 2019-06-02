@@ -1,0 +1,13 @@
+[package]
+name = "rust_sample_api"
+version = "0.0.0"
+
+[dependencies]
+iron = "0.5.*"
+router = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+diesel = { version = "0.16.0", features = ["postgres"] }
+diesel_codegen = { version = "0.16.0", features = ["postgres"] }
+dotenv = "0.9.0"

@@ -1,0 +1,64 @@
+[package]
+name = "openfa"
+version = "0.1.0"
+authors = ["Terrence Cole <terrence.d.cole@gmail.com>"]
+edition = "2018"
+
+[workspace]
+members = [
+        "apps/disasm",
+        "apps/dlg_explorer",
+        "apps/mm_explorer",
+        "apps/paldump",
+        "apps/pedump",
+        "apps/picdump",
+        "apps/picpack",
+        "apps/raw_sh_explorer",
+        "apps/sh_explorer",
+        "apps/shdump",
+        "apps/unlib",
+        "apps/vulkandump",
+
+        "libs/animate",
+        "libs/ansi",
+        "libs/asset",
+        "libs/dlg",
+        "libs/fnt",
+        "libs/i386",
+        "libs/jt",
+        "libs/lay",
+        "libs/lib",
+        "libs/lzss",
+        "libs/mm",
+        "libs/nt",
+        "libs/omnilib",
+        "libs/ot",
+        "libs/packed_struct",
+        "libs/pal",
+        "libs/peff",
+        "libs/pic",
+        "libs/pkware",
+        "libs/pt",
+        "libs/render",
+        "libs/renderer/camera",
+        "libs/renderer/shape",
+        "libs/renderer/text",
+        "libs/resource",
+        "libs/reverse",
+        "libs/sh",
+        "libs/t2",
+        "libs/window",
+        "libs/xt",
+]
+
+# pkware is unusable at opt level 0.
+# [profile.dev.]
+# opt-level = 2
+
+# [profile.test]
+# opt-level = 2
+
+# [profile.test]
+# opt-level = 1
+
+[dependencies]

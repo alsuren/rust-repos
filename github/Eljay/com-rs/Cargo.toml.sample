@@ -1,0 +1,12 @@
+[package]
+name = "com-rs"
+version = "0.2.0"
+build = "build.rs"
+
+description = "Rust bindings for the Win32 COM API"
+repository = "https://github.com/Eljay/com-rs"
+documentation = "http://eljay.github.io/com-rs/com_rs/index.html"
+
+authors = ["Lee Jeffery <lee@leejeffery.co.uk>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"

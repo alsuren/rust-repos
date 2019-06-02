@@ -1,0 +1,22 @@
+[package]
+name = "project_euler"
+version = "0.0.1"
+authors = ["Renato Zannon <renato@rrsz.com.br>"]
+
+[dependencies]
+ascii = "0.9"
+enum-set = "0.0.7"
+enum_primitive = "0.1"
+itertools = "0.7"
+num = "0.2"
+shared = { path = "shared" }
+rayon = "1.0.1"
+fnv = "1.0.6"
+smallvec = "0.6.2"
+
+[profile.release]
+debug = true
+lto = true
+
+[workspace]
+members = ["shared", "new-problem"]

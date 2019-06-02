@@ -1,0 +1,8 @@
+[package]
+name = "lsr"
+version = "0.1.0"
+authors = ["Daniel Budden <daniel.l.budden@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = { version = "0.2", default-features = false }

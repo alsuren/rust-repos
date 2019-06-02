@@ -1,0 +1,20 @@
+[package]
+authors = ["Alexey Arbuzov <lexx.vir@gmail.com>"]
+categories = ["parser-implementations", "no-std"]
+description = "BER-TLV parsing & emitting library"
+documentation = "https://lexxvir.github.io/tlv-parser"
+keywords = ["tlv"]
+license = "MIT/Apache-2.0"
+name = "tlv_parser"
+readme = "README.md"
+repository = "https://github.com/lexxvir/tlv-parser"
+version = "0.6.0"
+exclude = ["benches/*", "tests/*", "fuzz/*", "decode-tlv/*", "amex-cda-in.txt", ".*"]
+
+[dependencies.failure]
+version = "0.1.1"
+default-features = false
+features = ["derive"]
+
+[dev-dependencies]
+quickcheck = "^0"

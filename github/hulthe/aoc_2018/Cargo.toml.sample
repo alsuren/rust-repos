@@ -1,0 +1,31 @@
+[package]
+name = "aoc_2018"
+version = "2.0.0"
+authors = ["Joakim Hulthe <joakim@hulthe.net>"]
+description = "Solver for Advent of Code 2018"
+edition = "2018"
+
+[dependencies]
+toml = "0.4.2"
+ron = "0.4.0"
+xdg = "2.2.0"
+hex = "0.3.2"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+clap = "2.32.0"
+hyper = "0.12.16"
+reqwest = "0.9.5"
+indicatif = "0.10.2"
+aoc_base = { path="aoc_base" }
+aoc_2018_day01 = { path="day01" }
+aoc_2018_day02 = { path="day02" }
+aoc_2018_day03 = { path="day03" }
+aoc_2018_day04 = { path="day04" }
+aoc_2018_day05 = { path="day05" }
+aoc_2018_day06 = { path="day06" }
+aoc_2018_day07 = { path="day07" }
+aoc_2018_day08 = { path="day08" }
+aoc_2018_day09 = { path="day09" }
+aoc_2018_day10 = { path="day10" }
+aoc_2018_day11 = { path="day11" }
+aoc_2018_day12 = { path="day12" }

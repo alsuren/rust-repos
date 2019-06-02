@@ -1,0 +1,70 @@
+[package]
+authors = ["Clemens Winter <clemenswinter1@gmail.com>"]
+name = "locustdb"
+version = "0.2.1"
+license-file = "LICENSE"
+description = "Embeddable high-performance analytics database."
+[build-dependencies]
+[build-dependencies.capnpc]
+optional = true
+version = "0.8.9"
+
+[dependencies]
+aliasmethod = "0.1.0"
+bit-vec = "0.4.4"
+byteorder = "1.2.3"
+chrono = "0.4.6"
+clap = "2.32.0"
+csv = "1"
+env_logger = "0.5.6"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+flate2 = "1.0"
+fnv = "1.0.3"
+futures-channel = "0.2.1"
+futures-core = "0.2.1"
+futures-executor = "0.2.1"
+futures-util = "0.2.1"
+hex = "0.3.2"
+itertools = "0.5.9"
+lazy_static = "1.2"
+lru = "0.1.8"
+nom = "^3.2.1"
+num = "0.1.36"
+num_cpus = "1.0"
+rand = "0.5.5"
+regex = "1"
+rust-crypto = "0.2.36"
+rustyline = "1.0.0"
+scoped_threadpool = "0.1.9"
+seahash = "3.0.5"
+std-semaphore = "0.1.0"
+tempdir = "0.3.7"
+time = "0.1.36"
+sqlparser = "0.2.1"
+
+[dependencies.capnp]
+optional = true
+version = "0.8.17"
+
+[dependencies.locustdb-derive]
+path = "./locustdb-derive"
+version = "0.1.0"
+
+[dependencies.log]
+features = ["max_level_trace", "release_max_level_debug"]
+version = "0.4"
+
+[dependencies.lz4]
+optional = true
+version = "1.22.0"
+
+[dependencies.rocksdb]
+optional = true
+version = "0.10.1"
+
+[features]
+default = []
+enable_lz4 = ["lz4"]
+enable_rocksdb = ["rocksdb", "capnp", "capnpc"]
+trace = []

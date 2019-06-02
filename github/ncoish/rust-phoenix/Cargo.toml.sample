@@ -1,0 +1,11 @@
+[package]
+name = "phoenix"
+version = "0.1.0"
+authors = ["Nick Coish <nick.coish@gmail.com>"]
+
+[lib]
+name = "phoenix"
+path = "src/lib.rs"
+
+[dependencies]
+websocket = "0.20.2"

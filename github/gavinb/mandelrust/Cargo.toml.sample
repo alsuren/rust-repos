@@ -1,0 +1,17 @@
+[package]
+
+name = "mandelrust"
+version = "0.4.0"
+authors = [ "gavinb@antonym.org" ]
+
+[[bin]]
+name = "mandelrust"
+
+[[bin]]
+name = "mr"
+
+[dependencies]
+
+glium = "*"
+glutin = "*"
+image = "*"

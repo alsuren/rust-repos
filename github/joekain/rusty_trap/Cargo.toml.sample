@@ -1,0 +1,24 @@
+[package]
+name = "rusty_trap"
+version = "0.1.0"
+authors = ["Joseph Kain <joekain@gmail.com>"]
+
+[dependencies]
+libc     = "0.1.8"
+
+[dependencies.nix]
+git = "https://github.com/joekain/nix-rust.git"
+version = "0.3.8"
+branch = "WaitStatus"
+
+[lib]
+name = "rusty_trap"
+path = "src/lib.rs"
+
+[[bin]]
+name = "twelve"
+path = "tests/inferiors/twelve.rs"
+
+[[bin]]
+name = "loop"
+path = "tests/inferiors/loop.rs"

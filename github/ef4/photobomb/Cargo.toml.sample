@@ -1,0 +1,13 @@
+[package]
+
+name = "photobomb"
+version = "0.0.1"
+authors = ["Edward Faulkner <ef@alum.mit.edu>"]
+
+[dependencies]
+magick_rust = "*"
+rocket = "*"
+rocket_codegen = "*"
+
+[[bin]]
+name = "photobomb"

@@ -1,0 +1,12 @@
+[package]
+name = "sparser"
+version = "0.1.1"
+authors = ["Bram Vandenbogaerde <bram.vandenbogaerde@gmail.com>"]
+description = "S-expression parser for Rust"
+documentation = "https://docs.rs/sparser"
+repository = "https://github.com/bramvdbogaerde/sparser"
+license = "MPL-2.0"
+
+[dependencies]
+pest = "1.0.0-beta.6"
+pest_derive = "1.0.0-beta.6"

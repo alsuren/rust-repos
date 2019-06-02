@@ -1,0 +1,14 @@
+[package]
+name = "septem"
+version = "1.0.1"
+authors = ["Michael A. Plikk <michael@plikk.com>"]
+# edition = "2018"
+license = "MIT"
+description = "A library for parsing and working with Roman numerals"
+repository = "https://github.com/mipli/septem"
+documentation = "https://docs.rs/septem/latest/septem/"
+readme = "README.md"
+keywords = ["roman", "numeral", "septem"]
+
+[badges]
+travis-ci = { repository = "mipli/septem" }

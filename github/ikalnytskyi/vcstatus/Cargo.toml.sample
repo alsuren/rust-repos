@@ -1,0 +1,16 @@
+[package]
+name = "vcstatus"
+version = "0.1.1"
+authors = ["Ihor Kalnytskyi <ihor@kalnytskyi.com>"]
+license = "MIT"
+description = "Prints VCS and current branch to standard output."
+readme = "README.md"
+keywords = ["vcs", "status", "shell", "bash", "integration"]
+repository = "https://github.com/ikalnytskyi/vcstatus.git"
+homepage = "https://github.com/ikalnytskyi/vcstatus"
+edition = "2018"
+
+[dependencies]
+docopt = "1.0"
+regex = "1.1"
+lazy_static = "1.2"

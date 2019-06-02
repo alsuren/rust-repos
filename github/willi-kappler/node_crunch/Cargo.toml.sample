@@ -1,0 +1,15 @@
+[package]
+name = "node_crunch"
+version = "0.1.0"
+authors = ["Willi Kappler <grandor@gmx.de"]
+description = "A crate for distributed computing"
+keywords = ["distribute", "network", "numeric", "computing", "cluster"]
+categories = ["Network programming", "Science"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"
+log = "0.4"
+derive_builder = "0.6"
+failure = "0.1"

@@ -1,0 +1,30 @@
+[package]
+name = "hammer"
+version = "0.0.1"
+authors = [ "Ryan Michael <kerinin@gmail.com>" ]
+
+[lib]
+name = "hammer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hammerhttp"
+path = "src/bin.rs"
+
+[dependencies]
+num = "*"
+rand = "*"
+byteorder = "0.4"
+iron = "*"
+router = "*"
+persistent = "*"
+rustc-serialize = "*"
+docopt = "*"
+rocksdb = "*"
+bincode = "*"
+uuid = "*"
+fnv = "1.0.0"
+murmurhash3 = "*"
+
+[dev-dependencies]
+quickcheck = "*"

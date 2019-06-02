@@ -1,0 +1,22 @@
+[package]
+name = "home-fm-server"
+version = "0.1.0"
+authors = ["Sniadek <wojokarolg9@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+listenfd = "0.3"
+futures = "0.1"
+env_logger = "0.5"
+actix = "0.7"
+actix-web = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+failure = "0.1.5"
+serde_json = "1.0"
+num_cpus = "1.0"
+rand = "0.6.5"
+diesel = { version = "1.4.2", features = ["sqlite", "chrono", "r2d2"] }
+dotenv = "0.13.0"
+tokio-process = "0.2"
+uuid = { version = "0.7", features = ["serde", "v4"] }

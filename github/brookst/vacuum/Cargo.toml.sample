@@ -1,0 +1,23 @@
+[package]
+name = "vacuum"
+version = "0.1.1"
+authors = ["Tim Brooks <brooks@skoorb.net>"]
+description = "A CLI for listing upcoming spaceflight events"
+homepage = "https://github.com/brookst/vacuum"
+repository = "https://github.com/brookst/vacuum"
+readme = "README.md"
+license = "MIT"
+license-file = "license"
+
+[badges]
+travis-ci = { repository = "brookst/vacuum", branch = "master" }
+maintenance = { status = "experimental" }
+
+[dependencies]
+atty = "0.2.11"
+chrono = "0.4.6"
+reqwest = "0.9.3"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+structopt = "0.2.12"
+yansi = "0.4.0"

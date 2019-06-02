@@ -1,0 +1,9 @@
+[package]
+name = "rusco"
+version = "0.0.1"
+authors = ["Matthias Endler <matthias-endler@gmx.net>"]
+
+[dependencies]
+toml = "*"
+log = "*"
+env_logger = "0.2.2"

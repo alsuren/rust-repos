@@ -1,0 +1,14 @@
+[package]
+name = "define3"
+version = "0.1.0"
+authors = ["Jim Zhang <hyriodula@gmail.com>"]
+
+[dependencies]
+colored = "1.6"
+dirs = "1.0"
+getopts = "0.2"
+nom = "3.2"
+quick-xml = "0.10"
+regex = "0.2"
+rusqlite = "0.13"
+textwrap = "0.9"

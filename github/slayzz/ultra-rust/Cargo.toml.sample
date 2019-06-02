@@ -1,0 +1,9 @@
+[package]
+name = "ultra"
+version = "0.1.0"
+authors = ["slayzz <slayzz@mail.ru>"]
+
+[dependencies]
+http-muncher = {git= "https://github.com/nbaksalyar/rust-streaming-http-parser"}
+# chrono = "0.2"
+rustc-serialize = "0.3"

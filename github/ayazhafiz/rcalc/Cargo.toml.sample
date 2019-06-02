@@ -1,0 +1,86 @@
+[package]
+authors = ["ayazhafiz <ayaz.hafiz.1@gmail.com>"]
+categories = [
+    "command-line-interface",
+    "data-structures",
+    "parser-implementations",
+    "parsing",
+    "text-processing",
+]
+description = "Glorified calculator with a lexer, parser, and interpreter written in Rust."
+exclude = ["Makefile"]
+homepage = "https://github.com/ayazhafiz/rcalc"
+keywords = [
+    "calculator",
+    "lexer",
+    "parser",
+    "interpreter",
+    "ast",
+]
+license = "MIT"
+name = "rcalc"
+readme = "README.md"
+repository = "https://github.com/ayazhafiz/rcalc.git"
+version = "0.1.2"
+
+[[bin]]
+doc = false
+name = "rcalc"
+path = "src/main.rs"
+[badges.maintenance]
+status = "actively-developed"
+
+[badges.travis-ci]
+branch = "master"
+repository = "ayazhafiz/rcalc"
+
+[dependencies]
+rustyline = "1.0.0"
+
+[lib]
+name = "rcalc"
+path = "src/lib.rs"
+[profile.bench]
+codegen-units = 1
+debug = false
+debug-assertions = false
+lto = false
+opt-level = 3
+panic = "unwind"
+rpath = false
+
+[profile.dev]
+codegen-units = 2
+debug = true
+debug-assertions = true
+lto = false
+opt-level = 0
+panic = "unwind"
+rpath = false
+
+[profile.doc]
+codegen-units = 1
+debug = true
+debug-assertions = true
+lto = false
+opt-level = 3
+panic = "unwind"
+rpath = false
+
+[profile.release]
+codegen-units = 1
+debug = false
+debug-assertions = false
+lto = false
+opt-level = 3
+panic = "unwind"
+rpath = false
+
+[profile.test]
+codegen-units = 1
+debug = true
+debug-assertions = true
+lto = false
+opt-level = 3
+panic = "unwind"
+rpath = false

@@ -1,0 +1,20 @@
+[package]
+authors = ["Lucas Brendel <lucasbrendel@gmail.com>"]
+name = "green-thumb"
+readme = "README.md"
+version = "0.1.0"
+
+[dependencies]
+chrono = "0.4.6"
+clap = "2.33.0"
+log = "0.4.6"
+serde = "1.0.91"
+serde_derive = "1.0.91"
+serde_rusqlite = "0.16.0"
+simplelog = "0.5.3"
+strum = "0.15.0"
+strum_macros = "0.15.0"
+
+[dependencies.rusqlite]
+version = "0.15.0"
+features = ["chrono"]

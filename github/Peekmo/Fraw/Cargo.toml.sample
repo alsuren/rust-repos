@@ -1,0 +1,10 @@
+[package]
+name = "fraw"
+version = "0.1.0"
+authors = ["Axel Anceau <axel.anceau@umanit.fr>"]
+
+[dependencies]
+stdweb = "0.2.0"
+lazy_static = "1.0"
+fraw-component-derive = { path = "fraw-component-derive" }
+

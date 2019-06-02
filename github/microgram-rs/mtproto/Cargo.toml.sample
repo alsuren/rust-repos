@@ -1,0 +1,11 @@
+[package]
+name = "mtproto"
+version = "0.1.0"
+authors = ["Lucien XU <sfietkonstantin@free.fr>"]
+build = "build.rs"
+
+[dependencies]
+byteorder = "1.1.0"
+
+[build-dependencies]
+api_generator = { path = "lib/api_generator" }

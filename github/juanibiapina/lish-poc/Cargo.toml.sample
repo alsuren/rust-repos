@@ -1,0 +1,8 @@
+[package]
+name = "lish"
+version = "0.1.0"
+authors = ["Juan Ibiapina <juanibiapina@gmail.com>"]
+
+[dependencies]
+libc = "*"
+regex = "*"

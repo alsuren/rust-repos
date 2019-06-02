@@ -1,0 +1,18 @@
+[package]
+name = "Cobalt-bot"
+version = "0.0.1"
+authors = ["Charles Collins Super9mega@gmail.com"]
+
+[dependencies]
+circular-queue = "0.1"
+discord = { git = "https://github.com/SpaceManiac/discord-rs.git", default-features = false }
+hldemo = "0.3"
+hyper = "0.9"
+lazy_static = "0.2"
+rand = "0.3"
+regex = "0.2"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+url = "1"
+xml-rs = "0.6"

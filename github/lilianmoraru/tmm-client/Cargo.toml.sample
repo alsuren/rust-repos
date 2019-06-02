@@ -1,0 +1,16 @@
+[package]
+name = "tmm-client"
+version = "0.1.0"
+authors = ["Lilian A. Moraru <lilian.moraru90@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix   = "*"
+actix-web = { version = "*" }
+env_logger = "*"
+failure = "*"
+futures = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+#futures-preview = "0.3.0-alpha.6"

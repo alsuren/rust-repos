@@ -1,0 +1,15 @@
+[package]
+
+name = "gtfs-rust"
+version = "0.0.0"
+authors = ["redaready.dev@gmail.com"]
+
+[[bin]]
+
+name = "gr"
+path = "src/main.rs"
+
+[dependencies.csv]
+
+git = "https://github.com/BurntSushi/rust-csv.git"
+

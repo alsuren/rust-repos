@@ -1,0 +1,33 @@
+[package]
+name = "cafetiere"
+description = "Client / server command and control tool."
+keywords = ["ssh", "malware", "sub7"]
+version = "0.1.0"
+authors = ["Phil J. Laszkowicz <phil@fillip.pro>"]
+repository = "https://github.com:siilime/cafetiere"
+license = "MIT"
+include = [
+        "Cargo.toml",
+        "src/client/main.rs",
+        "src/core/lib.rs",
+        "src/daemon/main.rs",
+]
+
+[[bin]]
+name = "cafetiered"
+path = "src/daemon/main.rs"
+
+[[bin]]
+name = "cafetiere"
+path = "src/client/main.rs"
+
+[lib]
+name = "cafetiere"
+path = "src/core/lib.rs"
+crate-type = ["staticlib"]
+
+[[example]]
+name = "cafetierecp"
+path = "examples/main.rs"
+
+[dependencies]

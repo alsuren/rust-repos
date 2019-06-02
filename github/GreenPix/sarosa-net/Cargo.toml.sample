@@ -1,0 +1,17 @@
+[package]
+name = "sarosa-net"
+version = "0.1.0"
+authors = ["Vaelden <maugan.villatel@gmail.com>"]
+
+[dependencies]
+byteorder = "*"
+log = "*"
+
+[dependencies.lycan-serialize]
+git = "https://github.com/GreenPix/lycan-serialize.git"
+rev = "22905d505a6fbefc47e47e3b5daa7cbb61d2f2e3"
+
+[features]
+json = ["lycan-serialize/json"]
+
+default = ["json"]

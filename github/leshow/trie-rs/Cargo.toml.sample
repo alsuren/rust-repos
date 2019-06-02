@@ -1,0 +1,13 @@
+[package]
+name = "trie_map"
+version = "0.1.1"
+authors = ["Evan Cameron <cameron.evan@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "A trie with good iterator support backed by a hashmap"
+keywords = ["trie", "datastructures", "hashmap", "search"]
+
+[badges]
+travis-ci = { repository = "https://travis-ci.com/leshow/trie-rs", branch = "master", service = "github" }
+
+[dependencies]

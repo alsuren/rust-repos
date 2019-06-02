@@ -1,0 +1,19 @@
+[package]
+authors = ["Vinzent Steinberg <Vinzent.Steinberg@gmail.com>"]
+build = "build.rs"
+categories = ["science"]
+description = "Special functions for Rust by binding to the Cephes library."
+keywords = ["float", "single", "double"]
+license = "BSD-2-Clause"
+name = "special-fun"
+readme = "README.md"
+repository = "https://github.com/vks/special-fun"
+version = "0.2.0"
+
+[dependencies]
+
+[dev-dependencies]
+num-traits = "0.2"
+
+[build-dependencies]
+cc = "1"

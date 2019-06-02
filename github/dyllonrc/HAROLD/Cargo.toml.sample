@@ -1,0 +1,8 @@
+[package]
+authors = ["Dyllon Chowdhury <dyllonrc@gmail.com>"]
+edition = "2018"
+name = "harold"
+version = "0.1.0"
+[dependencies]
+ldap3 = "0.6.1"
+reqwest = "0.9.11"

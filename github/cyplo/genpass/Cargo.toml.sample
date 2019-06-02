@@ -1,0 +1,29 @@
+[package]
+name = "genpass"
+version = "0.3.1"
+authors = ["Cyryl Płotnicki <cyplo@cyplo.net>"]
+description = "A simple yet robust commandline random password generator."
+repository = "https://github.com/cyplo/genpass"
+license = "AGPL-3.0"
+readme = "README.md"
+edition = "2018"
+build = "build.rs"
+
+[badges]
+maintenance = { status = "passively-maintained" }
+is-it-maintained-issue-resolution = { repository = "cyplo/genpass" }
+is-it-maintained-open-issues = { repository = "cyplo/genpass" }
+travis-ci = { repository = "cyplo/genpass", branch = "master" }
+
+[dependencies]
+bitflags = "1.0"
+rand = "0.6"
+structopt = "0.2"
+eff-wordlist = "1.0"
+
+[dev-dependencies]
+proptest = "0.9"
+zxcvbn = "1.0"
+
+[build-dependencies]
+built = "0.3"

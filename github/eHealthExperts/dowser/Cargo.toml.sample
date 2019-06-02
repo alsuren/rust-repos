@@ -1,0 +1,27 @@
+[package]
+name = "dowser"
+version = "0.2.1"
+authors = ["Benjamin Wenzel <wenzel@ehealthexperts.de>",
+           "Christian Fochler <fochler@ehealthexperts.de>"]
+license = "MIT"
+homepage = "https://www.ehealthexperts.de"
+repository = "https://github.com/eHealthExperts/dowser.git"
+publish = false
+
+[build-dependencies]
+askama = "0.5"
+
+[dependencies]
+askama = "0.6.4"
+chrono = "0.4.2"
+clap = "2.31.2"
+lazy_static = "1.0.1"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1.5"
+
+[package.metadata.winres]
+FileVersion = "0.2.1"
+LegalCopyright = "eHealthExperts GmbH. All rights reserved."
+ProductName = "dowser"
+ProductVersion = "0.2.1"

@@ -1,0 +1,9 @@
+[package]
+name = "iridium"
+version = "0.1.0"
+authors = ["Dimitrii Nemkov <xeqlol@yandex-team.ru>"]
+edition = "2018"
+
+[dependencies]
+cargo-husky = "1"
+nom = "^4.1"

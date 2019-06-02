@@ -1,0 +1,29 @@
+# This file is part of context-allocator. It is subject to the license terms in the COPYRIGHT file found in the top-level directory of this distribution and at https://raw.githubusercontent.com/lemonrock/context-allocator/master/COPYRIGHT. No part of context-allocator, including this file, may be copied, modified, propagated, or distributed except according to the terms contained in the COPYRIGHT file.
+# Copyright © 2019 The developers of context-allocator. See the COPYRIGHT file in the top-level directory of this distribution and at https://raw.githubusercontent.com/lemonrock/context-allocator/master/COPYRIGHT.
+
+
+[package]
+name = "context-allocator"
+description = "context-allocator"
+keywords = ["context-allocator"]
+categories = []
+license = "MIT"
+authors = ["Raphael Cohn <raphael.cohn@stormmq.com>"]
+homepage = "https://github.com/lemonrock/context-allocator"
+repository = "https://github.com/lemonrock/context-allocator.git"
+exclude = ["*"]
+include = ["README.md", "LICENSE", "COPYRIGHT", "src/**/*.rs", "Cargo.toml", "rustfmt.toml", "clippy.toml"]
+readme = "README.md"
+publish = true
+edition = '2018'
+version = "0.2.3"
+
+[dependencies]
+either = "^1.5.2"
+likely = "^0.1.0"
+
+[target.'cfg(unix)'.dependencies]
+libc = "^0.2.50"
+
+[target.'cfg(any(target_os = "android", target_os = "linux"))'.dependencies]
+syscall-alt = "^0.0.14"

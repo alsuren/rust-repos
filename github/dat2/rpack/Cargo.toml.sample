@@ -1,0 +1,15 @@
+[package]
+authors = ["Nicholas Dujay <nickdujay@gmail.com>"]
+name = "rpack"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.31.2"
+combine = "3.3.2"
+ecmascript = "0.0.1"
+failure = "0.1.1"
+hex = "0.3.2"
+lazy_static = "1.0.1"
+petgraph = "0.4.12"
+ring = "0.12.1"
+unicode-xid = "0.1.0"

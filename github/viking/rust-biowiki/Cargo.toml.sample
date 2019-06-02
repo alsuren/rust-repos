@@ -1,0 +1,18 @@
+[package]
+name = "biowiki"
+version = "0.1.0"
+authors = ["Jeremy Stephens <jeremy.f.stephens@vanderbilt.edu>"]
+
+[dependencies]
+hyper = "0.11"
+futures = "0.1.14"
+serde = "1.0.11"
+serde_json = "1.0.2"
+serde_derive = "1.0.11"
+getopts = "0.2"
+regex = "0.2"
+lazy_static = "0.2"
+base64 = "0.6"
+mime = "0.3"
+sha2 = "0.6"
+digest = "0.6"

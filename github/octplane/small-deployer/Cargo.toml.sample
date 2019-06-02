@@ -1,0 +1,25 @@
+[package]
+version = "0.1.2"
+authors = ["Pierre Baillet <pierre@baillet.name>"]
+
+name = "small-deployer"
+description = "A small git webhook server that can be used to trigger deploys. Send notification in slack."
+repository = "https://github.com/octplane/small-deployer"
+
+keywords = ["deploy", "github", "gitlab", "hook", "slack"]
+readme = "README.md"
+
+license= "MIT"
+
+[dependencies]
+rustc-serialize = "0.3"
+time = "~0.1.33"
+
+slack-hook = "0.1.2"
+small-logger = "0.2.0"
+openssl = "0.8.2"
+
+[dependencies.hyper]
+version = "0.9.10"
+features = ["security-framework"]
+

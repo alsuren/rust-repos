@@ -1,0 +1,26 @@
+[package]
+name = "llhd"
+version = "0.7.1"
+authors = ["Fabian Schuiki <fschuiki@iis.ee.ethz.ch>"]
+edition = "2018"
+
+description = "A Low Level Hardware Description that acts as a foundation for building hardware design tools."
+repository = "https://github.com/fabianschuiki/llhd"
+readme = "README.md"
+license = "Apache-2.0 OR MIT"
+
+[badges]
+travis-ci = { repository = "fabianschuiki/llhd", branch = "master" }
+
+[dependencies]
+num = "0.2"
+bitflags = "1"
+clap = "2"
+lalrpop-util = "0.16.3"
+regex = "0.2.0"
+
+[dev-dependencies]
+indoc = "0.3"
+
+[build-dependencies]
+lalrpop = "0.16.3"

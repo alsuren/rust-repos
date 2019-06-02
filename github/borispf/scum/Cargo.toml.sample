@@ -1,0 +1,20 @@
+[package]
+
+name = "scum"
+version = "0.0.1"
+authors = ["Boris Pfahringer <bpnzltd@gmail.com>"]
+
+
+[dependencies]
+env_logger = "*"
+log = "*"
+rand = "*"
+
+[lib]
+name = "scum"
+doc = false
+
+[[bin]]
+name = "ai_test"
+test = false
+bench = false

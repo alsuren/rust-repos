@@ -1,0 +1,67 @@
+[package]
+name = "gpgme"
+version = "0.8.0"
+authors = ["John Schug <john.ips.schug@gmail.com>"]
+license = "LGPL-2.1"
+readme = "README.md"
+repository = "https://github.com/gpg-rs/gpgme"
+documentation = "https://docs.rs/gpgme"
+categories = ["api-bindings"]
+keywords = ["gpg", "gpgme", "crypto", "cryptography"]
+description = "GPGme bindings for Rust"
+autotests = false
+
+[badges]
+travis-ci = { repository = "gpg-rs/gpgme" }
+maintenance = { status = "experimental" }
+
+[features]
+default = ["bundled"]
+bundled = ["gpgme-sys/bundled", "gpg-error/bundled"]
+nightly = ["lazy_static/nightly"]
+
+[dev-dependencies]
+quicli = "0.3"
+tempdir = "0.3"
+
+[dependencies]
+libc = "0.2"
+bitflags = "1"
+lazy_static = "1"
+conv = "0.3"
+smallvec = "0.6"
+cstr-argument = "0.1"
+gpg-error = { version = "0.4", default-features = false }
+
+[dependencies.gpgme-sys]
+path = "gpgme-sys"
+version = "0.8.0"
+default-features = false
+
+[[bin]]
+name = "pinentry"
+test = false
+
+[[test]]
+name = "keylist"
+
+[[test]]
+name = "encrypt_simple"
+
+[[test]]
+name = "encrypt_symmetric"
+
+[[test]]
+name = "verify"
+
+[[test]]
+name = "edit"
+
+[[test]]
+name = "context"
+
+[[test]]
+name = "keysign"
+
+[workspace]
+members = ["systest"]

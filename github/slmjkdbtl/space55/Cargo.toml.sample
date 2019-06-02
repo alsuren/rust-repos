@@ -1,0 +1,19 @@
+# wengwengweng
+
+[package]
+name = "space55"
+description = "space55 floating os"
+version = "0.0.0"
+authors = ["t <voygagaga@outlook.com>"]
+edition = "2018"
+
+[workspace]
+members = [
+	"comm",
+]
+
+[dependencies]
+dirty = { git = "https://github.com/slmjkdbtl/DIRTY" }
+space55_comm = { path = "comm" }
+# tedit73 = { git = "https://github.com/slmjkdbtl/tedit73" }
+

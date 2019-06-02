@@ -1,0 +1,16 @@
+[package]
+name = "polle-protocol"
+version = "0.1.0"
+authors = ["Tom Stoneham <tomstoneham@users.noreply.github.com>"]
+description = "Network protocol for POLL-E, a small student robot"
+repository = "https://github.com/tomstoneham/polle-protocol"
+readme = "README.md"
+license = "Apache-2.0"
+keywords = ["protocol", "serialization", "raspberry", "pi", "personal"]
+
+build = "build.rs"
+
+publish = false
+
+[dependencies]
+quick-protobuf = "0.6.0"

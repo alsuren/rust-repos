@@ -1,0 +1,8 @@
+[package]
+name = "rust_nbt"
+version = "0.0.1"
+authors = ["Rutger Broekhoff <rutgerbroekhoff3@gmail.com>"]
+
+[dependencies]
+nom = "4.0.0-beta3"
+byteorder = "1.2"

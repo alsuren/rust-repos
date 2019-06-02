@@ -1,0 +1,27 @@
+[package]
+name = "solang"
+version = "0.1.0"
+authors = ["Sean Young <sean@mess.org>"]
+homepage = "https://github.com/hyperledger-labs/solang"
+build = "build.rs"
+
+[build-dependencies]
+lalrpop = "0.17.0"
+
+[dependencies]
+lalrpop-util = "0.17.0"
+regex = "0.2.1"
+llvm-sys = "80.0.0"
+num-bigint = "0.2"
+num-traits = "0.2.6"
+parity-wasm = "0.35"
+wasmi = "0.4.3"
+clap = "2.32.0"
+lazy_static = "1.2.0"
+hex = "0.3.2"
+unescape = "0.1.0"
+tiny-keccak = "1.4"
+serde_json = "1.0"
+serde = "1.0.90"
+ethabi = "7.0.0"
+ethereum-types = "0.5.2"

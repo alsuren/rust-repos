@@ -1,0 +1,37 @@
+[package]
+name = "wbtools"
+version = "1.0.1"
+authors = ["Akira Hayakawa <ruby.wktk@gmail.com>"]
+
+[dependencies]
+crc = "^1.0.0"
+byteorder = "1"
+clap = "~2.19.0"
+
+[[bin]]
+name = "wbcheck"
+path = "src/wbcheck/main.rs"
+
+[[bin]]
+name = "wbcreate"
+path = "src/wbcreate/main.rs"
+
+[[bin]]
+name = "wbdump"
+path = "src/wbdump/main.rs"
+
+[[bin]]
+name = "wbmeta"
+path = "src/wbmeta/main.rs"
+
+[[bin]]
+name = "wbremove"
+path = "src/wbremove/main.rs"
+
+[[bin]]
+name = "wbstatus"
+path = "src/wbstatus/main.rs"
+
+[lib]
+name = "lib"
+path = "src/lib/lib.rs"

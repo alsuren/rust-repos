@@ -1,0 +1,17 @@
+[package]
+name = "monkeylang-rs"
+version = "0.1.0"
+authors = ["Raphael Addile <raphael.addile@gmail.com>"]
+description = "An implementation of the Monkey programming language (https://interpreterbook.com/) in Rust."
+
+homepage = "https://github.com/raphaeladdile/monkeylang-rs"
+repository = "https://github.com/raphaeladdile/monkeylang-rs"
+readme = "README.md"
+license = "MIT"
+
+publish = false
+
+[dependencies]
+rustyline = "1.0.0"
+unicode-xid = "0.1.0"
+unicode-normalization = "0.1.5"

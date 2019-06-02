@@ -1,0 +1,38 @@
+[package]
+name = "lazy-socket"
+version = "0.3.0"
+authors = ["Douman <douman@gmx.se>"]
+description = "Low level Raw Socket API. WIP"
+repository = "https://github.com/DoumanAsh/lazy-socket.rs"
+documentation = "https://docs.rs/crate/lazy-socket/"
+license = "MIT"
+keywords = ["socket"]
+
+[dependencies]
+bitflags = "^0.8"
+
+[target."cfg(unix)".dependencies]
+libc = "^0.2.22"
+
+[target.'cfg(windows)'.dependencies.winapi]
+version = "0.3"
+default-features = false
+features = [
+    "minwindef",
+    "handleapi",
+    "winsock2",
+    "ws2def",
+    "winerror",
+    "ntdef",
+    "inaddr",
+    "in6addr",
+    "ws2ipdef"
+]
+
+[features]
+default = ["safe_buffer_len"]
+
+# Ensure that used buffers len will not overflow
+# cmp::min(buf.len(), i32::max_value() as usize)
+# Relevant only on windows as Unix uses usize for len of buffers.
+safe_buffer_len = []

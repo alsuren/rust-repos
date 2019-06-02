@@ -1,0 +1,14 @@
+[package]
+name = "am_test"
+version = "0.1.0"
+authors = ["Aaron McLeod <aaron.g.mcleod@gmail.com>"]
+
+[dependencies]
+amethyst = "0.4.1"
+tiled = "0.4.0"
+image = "0.12.3"
+genmesh = "0.4"
+gfx = "0.14"
+gfx_device_gl = "0.13"
+cgmath = "0.7"
+rand = "0.3.15"

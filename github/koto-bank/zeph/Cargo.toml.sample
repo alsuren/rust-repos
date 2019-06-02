@@ -1,0 +1,36 @@
+[package]
+name = "zeph"
+version = "0.1.0"
+authors = ["TyanNN <tyannn@cocaine.ninja>"]
+
+[dependencies]
+multipart = { version = "*", features = [ "iron" ] }
+
+iron = "*"
+router = "*"
+staticfile = "*"
+mount = { version = "*", git = "https://github.com/iron/mount.git" }
+urlencoded = "*"
+iron-sessionstorage = "0.3.0"
+
+maud = {version = "*", features = [ "iron" ] }
+maud_macros = "*"
+
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+
+hyper = "*"
+image = "*"
+lazy_static = "*"
+rust-crypto = "*"
+time = "*"
+toml = "*"
+
+rusqlite = { version = "*", optional = true }
+postgres = { version = "*", optional = true, git = "https://github.com/sfackler/rust-postgres"}
+
+[features]
+default = ["postgresql"]
+sqlite = ["rusqlite"]
+postgresql = ["postgres"]

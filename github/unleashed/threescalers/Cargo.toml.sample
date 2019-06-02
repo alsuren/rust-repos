@@ -1,0 +1,22 @@
+[package]
+edition = "2018"
+name = "threescalers"
+version = "0.1.0"
+authors = ["Alejandro Martinez Ruiz <alex@flawedcode.org>", "David Ortiz Lopez <z.david.ortiz@gmail.com>"]
+license = "Apache-2.0"
+
+[features]
+default = ["http-request", "reqwest-all"]
+
+# Add in conversions for http's crate types
+http-request = []
+# Add in conversions for reqwest's crate types
+reqwest-async = ["reqwest"]
+reqwest-sync = ["reqwest"]
+reqwest-all = ["reqwest-async", "reqwest-sync"]
+
+[dependencies]
+error-chain = "*"
+percent-encoding = "*"
+http_types = { version = "*", package = "http" }
+reqwest = { version = "*", optional = true }

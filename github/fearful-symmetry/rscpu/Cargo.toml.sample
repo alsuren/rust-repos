@@ -1,0 +1,11 @@
+[package]
+name = "rscpu"
+version = "0.0.8"
+authors = ["Derek Jensen <derek@dpjensen.net>"]
+
+[[bin]]
+name = "rscpu"
+
+[dependencies]
+getopts = "0.2.14"
+libc = "0.2.17"

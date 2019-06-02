@@ -1,0 +1,13 @@
+[package]
+authors = ["Noskcaj <kcajdev@gmail.com>"]
+name = "rmatrix"
+version = "0.2.0"
+
+[dependencies]
+rand = "0.5.0"
+clap = "2.31.2"
+parking_lot = "0.5.5"
+signal = "0.5.1"
+
+[dependencies.termbuf]
+git = "https://github.com/Noskcaj19/termbuf"

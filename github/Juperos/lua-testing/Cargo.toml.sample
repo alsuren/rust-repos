@@ -1,0 +1,9 @@
+[package]
+name = "lua-testing"
+version = "0.1.0"
+authors = ["Allan J. <contato.allanj@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+hlua = "0.4.1"
+rusqlite = "0.16.0"

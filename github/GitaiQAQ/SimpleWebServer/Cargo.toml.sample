@@ -1,0 +1,13 @@
+[package]
+name = "simplewebserver"
+version = "0.2.0"
+authors = ["wenxiaow <i@gitai.me>"]
+
+[[bin]]
+name = "simplewebserver"
+path = "src/main.rs"
+
+[dependencies]
+log = "0.4.6"
+env_logger = "0.6.0"
+chrono = "0.4.6"

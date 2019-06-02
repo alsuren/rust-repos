@@ -1,0 +1,7 @@
+[package]
+name = "clip"
+version = "0.1.0"
+authors = ["Alan Kang <alan.kxd@gmail.com>"]
+
+[dependencies]
+trerr = { path = "../trerr", version = "0.1.0" }

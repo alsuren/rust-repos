@@ -1,0 +1,17 @@
+[package]
+name = "xdxf"
+version = "0.1.0"
+authors = ["Vsevolod Velichko <torkvema@gmail.com>"]
+license = "MIT"
+description = "XDXF dictionary format parser"
+keywords = ["xdxf", "dictionary"]
+
+[lib]
+name = "xdxf"
+path = "src/lib.rs"
+
+[dependencies]
+sxd-document = "0.1.1"
+radix_trie = "0.0.8"
+regex = "0.1.41"
+regex_macros = "0.1.21"

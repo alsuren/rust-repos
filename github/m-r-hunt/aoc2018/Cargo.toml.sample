@@ -1,0 +1,10 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["Max Hunt <max@huntw3.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
+scan-rules = "0.2.0"
+rand = "0.6.1"

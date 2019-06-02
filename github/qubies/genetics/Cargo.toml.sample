@@ -1,0 +1,8 @@
+[package]
+name = "genetics"
+version = "0.1.0"
+authors = ["Tobias Renwick <tobias@renwick.tech>", "Spencer Killen"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.3"

@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "terrain_math",
+    "terrain_average_neighbor"
+]
+
+[package]
+name = "terrain"
+version = "0.1.0"
+authors = ["Michael Wang <mwwpublic@gmail.com>"]
+
+[dependencies]
+terrain_average_neighbor = { version = "*", path = "./terrain_average_neighbor" }
+
+[dev-dependencies]
+image = "*"

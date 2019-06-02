@@ -1,0 +1,29 @@
+[package]
+name = "pings"
+version = "0.1.0"
+authors = ["Shaun Karran <shaun.karran@gmail.com>"]
+description = "My implementation of the Pings challenge for Tanda."
+
+[lib]
+name = "libpings"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pings"
+path = "src/main.rs"
+
+[dependencies]
+chrono = "0.3"
+dotenv = "0.8"
+rocket = "0.2"
+rocket_codegen = "0.2"
+serde_json = "0.9"
+time = "0.1"
+
+[dependencies.diesel]
+version = "0.12"
+features = [ "postgres"]
+
+[dependencies.diesel_codegen]
+version = "0.12"
+features = ["postgres"]

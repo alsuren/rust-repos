@@ -1,0 +1,17 @@
+[package]
+name = "pure-input"
+version = "0.1.0"
+authors = ["willtunnels <bendriscoll00@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2.45"
+failure = "0.1.3"
+errno = "0.2.4"
+crossbeam = "0.6.0"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libudev-sys = "0.1.4"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winapi = { version = "0.3.6", features = ["xinput", "minwindef"] }

@@ -1,0 +1,37 @@
+[package]
+name = "gitx"
+version = "0.0.4"
+authors = ["yagince <straitwalk@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/yagince/gitx-rs"
+homepage = "https://github.com/yagince/gitx-rs"
+documentation = "https://github.com/yagince/gitx-rs"
+keywords = ["git"]
+license = "MIT"
+description = """
+git subcommands
+"""
+
+[dependencies]
+docopt = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+ansi_term = "0.7"
+rustbox = "0.11"
+regex = "0.2.2"
+lazy_static = "1.0.0"
+
+[[bin]]
+name = "git-start"
+doc = false
+path = "bin/git-start.rs"
+
+[[bin]]
+name = "git-cb"
+doc = false
+path = "bin/git-cb.rs"
+
+[[bin]]
+name = "git-db"
+doc = false
+path = "bin/git-db.rs"

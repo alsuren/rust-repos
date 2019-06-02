@@ -1,0 +1,11 @@
+[package]
+name = "rip8"
+version = "0.1.0"
+authors = ["ion <ionix@protonmail.com>"]
+
+[dependencies]
+minifb = "0.10.0"
+rand = "0.3"
+time = "0.1"
+lazy_static = "0.2"
+sdl2 = "0.30.0"

@@ -1,0 +1,13 @@
+[package]
+name = "mandelbrot"
+version = "0.1.0"
+authors = ["Amandus Thorsrud <ama.thorsrud@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+sdl2 = "0.31.0"
+gl = "0.10.0"
+crossbeam-utils = "0.5.0"
+
+[features]
+static-link = ["sdl2/bundled", "sdl2/static-link"]

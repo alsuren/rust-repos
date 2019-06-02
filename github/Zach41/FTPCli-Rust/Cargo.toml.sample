@@ -1,0 +1,17 @@
+[package]
+name = "FTPCLI"
+version = "0.1.0"
+authors = ["Zach41 <zach_41@163.com>"]
+
+[dependencies]
+chrono = "0.2"
+regex = "0.1"
+lazy_static = "0.2.2"
+rpassword = "0.3.0"
+
+[features]
+debug_print = []
+
+[[bin]]
+doc = false
+name = "zftp"

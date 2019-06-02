@@ -1,0 +1,9 @@
+[workspace]
+
+members = [
+	"packt-core",
+	"packt-gtk",
+]
+
+[replace]
+"gtk:0.4.1" = {git="https://github.com/foo-jin/gtk.git", branch = "crate"}

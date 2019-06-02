@@ -1,0 +1,26 @@
+[package]
+name = "llrv"
+version = "0.1.0"
+authors = ["Brian L. Troutwine <blt@postmates.com>"]
+
+[dependencies]
+lazy_static = "0.2"
+protobuf = "1.4"
+rand = "0.3.18"
+byteorder = "1.0"
+clap = "2.29"
+
+[profile.release]
+lto = true
+
+[[bin]]
+name = "native_listener"
+doc = false
+
+[[bin]]
+name = "native_emitter"
+doc = false
+
+[[bin]]
+name = "llrv"
+doc = false

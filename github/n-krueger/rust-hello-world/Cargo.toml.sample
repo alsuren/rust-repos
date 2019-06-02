@@ -1,0 +1,11 @@
+[package]
+name = "rust-hello-world"
+version = "0.1.0"
+authors = ["Nils Krüger"]
+edition = "2018"
+
+[dependencies]
+crossbeam = "0.7.1"
+rand = "0.6.5"
+time = "0.1.42"
+num_cpus = "1.10.0"

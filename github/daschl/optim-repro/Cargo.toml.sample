@@ -1,0 +1,10 @@
+[package]
+name = "optim-repro"
+version = "0.1.0"
+authors = ["Michael Nitschinger <michael@nitschinger.at>"]
+
+[dependencies]
+arrayvec = "0.3.20"
+
+[profile.bench]
+lto = true

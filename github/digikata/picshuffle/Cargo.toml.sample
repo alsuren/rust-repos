@@ -1,0 +1,11 @@
+[package]
+authors = ["Alan C <digikata@gmail.com>"]
+name = "picshuffle"
+version = "0.1.6"
+
+[dependencies]
+chrono = "0.4.*"
+clap = "2.*"
+ignore = "0.2.*"
+rust-crypto = "0.2.*"
+kamadak-exif = "0.3.*"

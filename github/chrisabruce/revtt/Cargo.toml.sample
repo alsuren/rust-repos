@@ -1,0 +1,10 @@
+[package]
+name = "revtt"
+version = "0.1.0"
+authors = ["chris <chris@chrisbruce.com>"]
+edition = "2018"
+
+[dependencies]
+scraper = "0.9"
+reqwest = { git = "https://github.com/seanmonstar/reqwest" } 
+dotenv = "0.13"

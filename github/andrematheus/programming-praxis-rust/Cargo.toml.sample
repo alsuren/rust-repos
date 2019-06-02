@@ -1,0 +1,8 @@
+[package]
+name = "pprust"
+version = "0.1.0"
+authors = ["André Roque Matheus <andre.matheus@keyrus.com.br>"]
+
+[[bin]]
+name = "rpncalculator"
+path = "src/bin/rpncalculator/main.rs"

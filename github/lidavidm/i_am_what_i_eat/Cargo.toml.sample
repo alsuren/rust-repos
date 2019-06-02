@@ -1,0 +1,30 @@
+[package]
+name = "i_am_what_i_eat"
+version = "0.1.0"
+authors = ["David Li <li.davidm96@gmail.com>"]
+
+[dependencies]
+chrono = { version = "0.3", features = ["serde"] }
+diesel = { version = "0.13.0", features = ["sqlite", "chrono"] }
+diesel_codegen = { version = "0.13.0", features = ["sqlite"] }
+lazy_static = "0.2"
+r2d2 = "0.7.2"
+r2d2-diesel = "0.13.0"
+# rocket = "0.2.6"
+# rocket_codegen = "0.2.6"
+# rocket_contrib = "0.2.6"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dependencies.rocket]
+default-features = true
+git = "https://github.com/SergioBenitez/Rocket"
+
+[dependencies.rocket_codegen]
+default-features = true
+git = "https://github.com/SergioBenitez/Rocket"
+
+[dependencies.rocket_contrib]
+default-features = true
+git = "https://github.com/SergioBenitez/Rocket"

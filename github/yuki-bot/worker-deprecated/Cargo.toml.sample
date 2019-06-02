@@ -1,0 +1,86 @@
+[package]
+name = "worker"
+version = "0.1.0"
+authors = ["Mei Boudreau <xanizl@me.com>", "Zeyla Hellyer <zeylahellyer@gmail.com>"]
+
+[dependencies]
+chrono = "~0.4"
+darksky = "~0.8"
+env_logger = "~0.4"
+eval = "~0.4.2"
+futures-await = "~0.1"
+futures-state-stream = "~0.2"
+hlua = "~0.3"
+hyper = "~0.11"
+hyper-tls = "~0.1"
+imgur-futures = { path = "../../imgur-futures" }
+kankyo = "~0.1"
+log = "0.3.8"
+native-tls = "~0.1"
+osu = "~0.2"
+percent-encoding = "^1.0"
+phf = "0.7"
+phf_macros = "~0.7"
+postgres-derive = "=0.3.1"
+rand = "~0.3"
+redis-async = { branch = "integer-fix", git = "https://github.com/zeyla/redis-async-rs" }
+rmp-serde = "~0.13"
+rouler = "~0.1"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+tokio-core = "0.1.10"
+tokio-timer = "~0.1"
+toml = "~0.4"
+
+[dependencies.audio-manager-requester]
+path = "../audio-manager/audio-manager-requester"
+
+[dependencies.futures-google-maps]
+git = "https://github.com/zeyla/futures-google-maps"
+
+[dependencies.image-api-requester]
+path = "../image-api/requester"
+
+[dependencies.kitsu]
+default-features = false
+features = ["hyper-support"]
+git = "https://github.com/zeyla/kitsu.rs"
+
+[dependencies.lavalink]
+git = "https://github.com/serenity-rs/lavalink.rs"
+
+[dependencies.postgres-mapper]
+features = ["tokio-postgres-support"]
+git = "https://github.com/zeyla/postgres-mapper"
+
+[dependencies.postgres-mapper-derive]
+default-features = false
+features = ["postgres-mapper", "tokio-postgres-support"]
+git = "https://github.com/zeyla/postgres-mapper"
+
+[dependencies.serenity]
+branch = "v0.6.x"
+features = ["http"]
+git = "https://github.com/zeyla/serenity"
+
+[dependencies.tokio-postgres]
+features = ["with-chrono"]
+version = "~0.3"
+
+[dependencies.tokio-postgres-pool]
+git = "https://github.com/yuki-bot/tokio-postgres-pool"
+
+[dependencies.urbandictionary]
+default-features = false
+features = ["hyper-support"]
+version = "~0.3"
+
+[dependencies.weeb_api]
+default-features = false
+features = ["hyper-support"]
+version = "~0.2"
+
+[dependencies.yuyong]
+#git = "https://github.com/zeyla/yuyong"
+path = "../../yuyong"

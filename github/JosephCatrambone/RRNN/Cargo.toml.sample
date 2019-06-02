@@ -1,0 +1,19 @@
+[package]
+name = "rrnn"
+version = "0.1.0"
+authors = ["Joseph Catrambone <jo.jcat@gmail.com>"]
+description = "A port of Andrej Karpathy's recurrent network code to Rust."
+
+[lib]
+name = "rrnn"
+path = "src/lib.rs"
+crate-type = ["dylib"] # dylib, rlib, staticlib, and cdylib
+# dylib for so.  staticlib for .a
+
+[dependencies]
+rand = "*"
+libc = "*"
+rustc-serialize = "0.3"
+
+[features]
+expensive_tests = [] # For the sanity tests which might sometimes fail at random.  Useful for learning tests.

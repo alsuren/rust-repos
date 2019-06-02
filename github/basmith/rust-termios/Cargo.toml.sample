@@ -1,0 +1,15 @@
+[package]
+
+name = "rust-termios"
+version = "0.0.2"
+authors = ["Brian Smith <github@basmith.org>"]
+description = "A light, safe Rust layer over the termios-sys ffi crate"
+repository = "https://github.com/basmith/rust-termios"
+license = "MIT"
+keywords = ["termios", "terminal"]
+
+[lib]
+name = "termios"
+
+[dependencies]
+termios-sys = "*"

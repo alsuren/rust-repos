@@ -1,0 +1,7 @@
+[package]
+name = "csv-browser"
+version = "0.1.0"
+authors = ["Rastopyr <Rastopyr@gmail.com>"]
+
+[dependencies.qmlrs]
+git = "https://github.com/cyndis/qmlrs"

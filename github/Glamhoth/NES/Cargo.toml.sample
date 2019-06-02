@@ -1,0 +1,23 @@
+[package]
+name = "nes"
+version = "0.1.0"
+authors = ["Filip Demski (Glamhoth) <glamhoth@protonmail.com>"]
+edition = "2018"
+
+[dependencies.sdl2]
+version = "0.32"
+default-features = false
+
+[dependencies.rand]
+git = "https://github.com/rust-lang/rand"
+
+[dependencies.log]
+version = "0.4.5"
+features = ["std"]
+
+[dependencies.dangerous_option]
+version = "0.2.0"
+
+[dependencies.phf]
+version = "0.7.24"
+features = ["macros"]

@@ -1,0 +1,13 @@
+[package]
+name = "mlog"
+version = "0.3.1"
+authors = ["epsimatt <epsimatt@protonmail.com>"]
+edition = "2018"
+description = "A logging implementation in Rust."
+repository = "https://github.com/epsimatt/mlog"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+
+[dependencies]
+hashbrown = "0.1.8"
+log = { version = "0.4.6", features = ["std"] }

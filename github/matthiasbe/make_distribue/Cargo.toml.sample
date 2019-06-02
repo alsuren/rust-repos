@@ -1,0 +1,8 @@
+[package]
+name = "make_distribue"
+version = "0.0.1"
+authors = ["Robin Teughels"]
+
+[dependencies]
+time = "*"
+mpi = { git = "https://github.com/bsteinb/rsmpi.git", tag = "0.4.0" }

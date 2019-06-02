@@ -1,0 +1,16 @@
+[package]
+name = "terragen"
+version = "0.1.0"
+authors = ["Johan Östling <johan.f.ostling@gmail.com>"]
+
+[dependencies]
+kiss3d = "0.9"
+nalgebra = "0.12"
+rand = "0.3"
+log = "0.3"
+env_logger = "0.3"
+gl = "0.6"
+glfw = "0.8"
+stopwatch = "0.0.7"
+noise = "0.4"
+clap = "2.25"

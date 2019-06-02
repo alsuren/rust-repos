@@ -1,0 +1,9 @@
+[package]
+name = "emoji256"
+version = "0.0.2"
+authors = ["Andrew Dunham <andrew@du.nham.ca>"]
+build = "build.rs"
+
+[build-dependencies]
+itertools = "0.7"
+unicode_names = { git = "https://github.com/andrew-d/unicode_names.git", rev = "099ddd5fd37f7ff0e45c4ea47d49c2ba2d03ec3b" }

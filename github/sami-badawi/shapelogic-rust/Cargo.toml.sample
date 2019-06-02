@@ -1,0 +1,8 @@
+[package]
+name = "shapelogic-rust"
+version = "0.4.1"
+authors = ["Sami Badawi <sami.badawi@gmail.com>"]
+
+[dependencies]
+clap = "*"
+image = "*"

@@ -1,0 +1,8 @@
+[package]
+name = "rust_uilc"
+version = "0.1.0"
+authors = ["IcyDefiance <icydefiance@gmail.com>"]
+
+[dependencies]
+byteorder = "1.1"
+uilc = { git = "https://github.com/IcyDefiance/uilc" }

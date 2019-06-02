@@ -1,0 +1,10 @@
+[package]
+name = "galois"
+version = "0.0.1"
+authors = ["David Stygstra <david.stygstra@gmail.com>"]
+
+[dependencies]
+simd = { git = "https://github.com/huonw/simd" }
+
+[dev-dependencies]
+rand = "0.3"

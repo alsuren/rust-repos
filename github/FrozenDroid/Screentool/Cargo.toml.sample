@@ -1,0 +1,10 @@
+[package]
+name = "screentool"
+version = "0.1.0"
+authors = ["Vincent Stakenburg <vincentstakenburg@gmail.com>"]
+
+[dependencies]
+clap = "~2.32"
+itertools = "0.7.3"
+strum = "0.10.0"
+strum_macros = "0.10.0"

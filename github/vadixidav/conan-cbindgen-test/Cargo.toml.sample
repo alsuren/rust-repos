@@ -1,0 +1,21 @@
+[package]
+name = "cbindgen-test-c"
+version = "0.1.0"
+authors = ["Geordon Worley <vadixidav@gmail.com>"]
+edition = "2018"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+headers = []
+
+[build-dependencies]
+cbindgen = "0.8.6"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

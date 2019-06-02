@@ -1,0 +1,31 @@
+[package]
+
+name = "stainless"
+version = "0.1.12"
+authors = [
+  "Jonathan Reem <jonathan.reem@gmail.com>",
+  "Aleksey Kuznetsov <zummenix@gmail.com>",
+  "Alex Diez <alexvic.amatory@gmail.com>",
+  "Julien Wajsberg <julien@mozilla.com>",
+  "Mark Schifflin <rschifflin@hotmail.com>",
+  "Paul Faria <Nashenas88@gmail.com>",
+  "Seb Glazebrook <sebastian.glazebrook@redbubble.com>",
+  "Taylor Cramer <cramertj@cs.washington.edu>",
+  "Thijs Cadier <thijs@appsignal.com>",
+  "Urban Hafner <contact@urbanhafner.com>",
+  "Utkarsh Kukreti <utkarshkukreti@gmail.com>",
+  "Valerii Hiora <valerii.hiora@gmail.com>",
+  "Vladimir Pouzanov <farcaller@gmail.com>",
+  "Emīls Piņķis <pinkisemils@gmail.com>",
+  "Roman Pearah <github.to.soma@neverbox.com>",
+]
+description = "Organized, flexible testing framework."
+repository = "https://github.com/reem/stainless"
+license = "MIT"
+keywords = ["testing", "bdd", "tdd"]
+categories = ["development-tools", "development-tools::testing", "development-tools::profiling"]
+[lib]
+
+name = "stainless"
+path = "src/lib.rs"
+plugin = true

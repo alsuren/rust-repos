@@ -1,0 +1,8 @@
+[package]
+name = "rogue-rs"
+version = "0.1.0"
+authors = ["Daniel Steuernol <dlsteuer@gmail.com>"]
+
+[dependencies]
+tcod = "0.12"
+rand = "0.5.5"

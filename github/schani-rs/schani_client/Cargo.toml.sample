@@ -1,0 +1,8 @@
+[package]
+name = "schani_client"
+version = "0.1.0"
+authors = ["Christoph Wurst <christoph@winzerhof-wurst.at>"]
+
+[dependencies]
+hyper = "0.10.10"
+serde_json="1.0.2"

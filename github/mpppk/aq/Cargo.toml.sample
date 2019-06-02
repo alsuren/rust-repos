@@ -1,0 +1,15 @@
+[package]
+name = "aq"
+version = "0.12.4"
+authors = ["mpppk <niboshiporipori@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+serde_json = "0.9.6"
+clap="*"
+
+[dependencies.lalrpop-util]
+version = "0.12.4"
+
+[build-dependencies.lalrpop]
+version = "0.12.4"

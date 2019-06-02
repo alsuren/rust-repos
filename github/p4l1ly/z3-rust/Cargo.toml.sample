@@ -1,0 +1,16 @@
+[package]
+name = "z3_ref"
+version = "0.1.4"
+authors = ["Pavol Vargovcik <pavol.vargovcik@gmail.com>"]
+
+repository = "https://github.com/p4l1ly/z3-rust"
+description = "High level interface to the Z3 SMT solver"
+readme = "README.md"
+keywords = ["z3", "sat", "smt"]
+categories = ["science"]
+license = "MIT"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.40.0"

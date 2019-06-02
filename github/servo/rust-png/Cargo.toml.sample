@@ -1,0 +1,31 @@
+[package]
+
+name = "png"
+version = "0.1.0"
+authors = ["The Servo Project Developers"]
+documentation = "http://doc.servo.org/png/"
+
+links = "png-sys"
+build = "build.rs"
+
+[dependencies.png-sys]
+path = "png-sys"
+
+[dependencies]
+libc = "0.1.5"
+
+[dependencies.serde]
+version = "*"
+optional = true
+
+[dependencies.serde_macros]
+version = "*"
+optional = true
+
+[build-dependencies]
+gcc = "0.3.4"
+
+[features]
+serde-serialization = [ "serde", "serde_macros" ]
+
+

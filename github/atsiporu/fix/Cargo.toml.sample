@@ -1,0 +1,17 @@
+[package]
+name = "fixr"
+version = "0.1.0"
+authors = ["andrey"]
+
+[dependencies]
+sentinel_list = { path = "/home/andrey/workspace/rustprojects/sentinel_list" }
+tbr = { path = "/home/andrey/workspace/rustprojects/threadedbufreader" }
+futures = "*"
+tokio-core = "*"
+tokio-tls = { git = "https://github.com/tokio-rs/tokio-tls" }
+
+[lib]
+name = "fixr"
+
+[[bin]]
+name = "main"

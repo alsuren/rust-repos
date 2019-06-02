@@ -1,0 +1,11 @@
+[package]
+name = "mathland"
+version = "0.1.0"
+authors = ["Mitchell Bruckner <mbruckner807@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+yew = {git = "https://github.com/mabruckner/yew.git", branch="svg-hack" }
+stdweb="*"
+rand = {version="0.6", features=["stdweb"]}
+cgmath = "0.17"

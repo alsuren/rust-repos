@@ -1,0 +1,19 @@
+[package]
+name = "git_track"
+version = "0.2.0"
+authors = ["Alexandre Rousseau <contact@rousseau-alexandre.fr>"]
+description = "Log branch activity each minutes to get time spent report."
+homepage = "https://github.com/madeindjs/git_track"
+repository = "https://github.com/madeindjs/git_track"
+keywords = ["git", "time-tracker"]
+categories = ["command-line-utilities"]
+license = "MIT"
+
+[badges]
+maintenance = { status = "as-is" }
+
+[dependencies]
+colored = "1.6"
+argparse = "0.2.1"
+git2 = "0.6.11"
+

@@ -1,0 +1,34 @@
+[package]
+name = "yabs"
+version = "0.2.2"
+authors = ["Alberto Corona <ac@albertocorona.com>>"]
+keywords = ["system", "build", "make"]
+description = "Yet another build system"
+repository = "https://github.com/0X1A/yabs"
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "0.8"
+walkdir = "1"
+ansi_term = "0.9"
+log = "0.3"
+error-chain = "0.10"
+num_cpus = "1.0"
+regex = "0.2"
+toml = "0.4"
+
+[dependencies.clap]
+version = "2"
+features = ["yaml", "color"]
+
+[lib]
+name = "util"
+path = "lib/lib.rs"
+
+[[bin]]
+name = "yabs"
+path = "src/main.rs"
+test = false

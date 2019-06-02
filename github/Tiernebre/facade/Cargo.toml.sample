@@ -1,0 +1,10 @@
+[package]
+name = "facade"
+version = "0.1.0"
+authors = ["Brendan Tierney <tiernebre@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
+clap = {version = "~2.27.0", features = ["yaml"]}
+trust-dns-resolver = "^0.9"

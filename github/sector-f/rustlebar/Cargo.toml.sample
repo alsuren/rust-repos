@@ -1,0 +1,8 @@
+[package]
+name = "rustlebar"
+version = "0.1.0"
+authors = ["Adam <adamsimeth@gmail.com>"]
+
+[dependencies]
+chrono = "0.2.22"
+toml = "0.1.*"

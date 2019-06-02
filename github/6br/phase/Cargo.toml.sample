@@ -1,0 +1,17 @@
+[package]
+name = "vcf-quality-filter"
+version = "0.1.0"
+authors = ["undefined <undefined@localhost>"]
+readme = "README.md"
+description = ""
+keywords = ["bioinformatics", "vcf", "structural variants", "haplotype"]
+
+[dependencies]
+rust-htslib="0.*"
+intervallum="*"
+gcollections="*"
+env_logger="*"
+log="*"
+getopts="*"
+regex="*"
+lazy_static="*"

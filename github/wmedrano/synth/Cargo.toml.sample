@@ -1,0 +1,11 @@
+[package]
+name = "fmsynth"
+version = "0.1.0"
+authors = ["Will Medrano <will.s.medrano@gmail.com>"]
+
+[dependencies]
+bincode = "1.0"
+jack = "0.6"
+serde = "1.0"
+serde_derive = "1.0"
+wmidi = "0.1"

@@ -1,0 +1,27 @@
+[package]
+name = "circom2"
+version = "0.1.0"
+authors = ["0Kims"]
+edition = "2018"
+
+[dependencies]
+codespan = "0.2.1"
+codespan-reporting = "0.2.1"
+circom2-parser = { path = "parser" }
+circom2-compiler = { path = "compiler" }
+circom2-interop = { path = "interop" }
+stderrlog = "0.4.1"
+structopt = "0.2.14"
+log = "0.4.6"
+
+[workspace]
+members = [
+    "parser",   
+    "compiler",
+    "interop"
+]
+
+# for
+#   cargo flamegraph --bin circom2 -- test.circom
+#[profile.release]
+#debug = true

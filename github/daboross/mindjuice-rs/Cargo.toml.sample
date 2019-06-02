@@ -1,0 +1,15 @@
+[package]
+
+name = "mindjuice"
+version = "0.1.1"
+authors = ["David Ross <daboross@daboross.net>"]
+description = "A simple and easy-to-use brainfuck interpreter"
+
+documentation = "https://docs.rs/mindjuice/"
+repository = "https://github.com/daboross/mindjuice-rs"
+readme = "README.md"
+
+license = "MIT/Apache-2.0"
+keywords = ["brainfuck", "brain", "mind", "juice", "interpreter"]
+
+include = ["Cargo.toml", "src/**/*", "LICENSE-MIT", "LICENSE-APACHE", "README.md"]

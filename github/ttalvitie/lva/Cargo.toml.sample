@@ -1,0 +1,9 @@
+[package]
+name = "lva"
+version = "0.1.0"
+authors = ["Topi Talvitie <topi.talvitie@iki.fi>"]
+
+[dependencies]
+parking_lot = "0.6.4"
+rand = "0.5.5"
+rug = "1.2.0"

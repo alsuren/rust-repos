@@ -1,0 +1,27 @@
+[package]
+name = "goji"
+version = "0.2.4"
+authors = ["softprops <d.tangren@gmail.com>"]
+description = "Rust interface for Jira"
+documentation = "http://softprops.github.io/goji"
+homepage = "https://github.com/softprops/goji"
+repository = "https://github.com/softprops/goji"
+keywords = ["hyper", "jira"]
+license = "MIT"
+readme = "README.md"
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "softprops/goji" }
+maintenance = { status = "actively-developed" }
+
+[dev-dependencies]
+env_logger = "0.4"
+
+[dependencies]
+log = "0.4.5"
+reqwest = "0.9.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+url = "1.6.1"

@@ -1,0 +1,23 @@
+[package]
+name = "tartare-tools"
+version = "0.1.0"
+authors = ["David Quintanel <david.quintanel@gmail.com>", "Nicolas Bérard <nicolas.berard@kisio.org>"]
+edition="2018"
+
+[dependencies]
+transit_model = "0.4.1"
+osm_transit_extractor = { git = "https://github.com/CanalTP/osm-transit-extractor", tag = "v0.1.4" }
+geo = "0.12.1"
+structopt = "0.2.15"
+env_logger = "0.6.1"
+log = "0.4.6"
+failure = "0.1.5"
+osm-utils = { path = "./osm-utils" }
+navitia-poi-model = { path = "./navitia-poi-model" }
+csv = "1.0.7"
+zip = "0.5.2"
+serde = "1.0.91"
+serde_derive = "1.0.91"
+osmpbfreader = "0.13.0"
+unidecode = "0.3.0"
+chrono = "0.4.6"

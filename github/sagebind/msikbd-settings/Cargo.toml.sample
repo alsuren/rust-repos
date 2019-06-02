@@ -1,0 +1,19 @@
+[package]
+name = "msikbd-settings"
+version = "0.1.0"
+authors = ["Stephen M. Coakley <me@stephencoakley.com>"]
+
+[dependencies]
+clap = "2.27"
+dbus = "0.6"
+env_logger = "0.6"
+gdk = "*"
+hidapi = "0.5.2"
+inotify = "0.7.0"
+lazy_static = "1.0"
+log = "0.4"
+simple-signal = "1.1"
+
+[dependencies.gtk]
+version = "0.2.0"
+features = ["v3_10"]

@@ -1,0 +1,19 @@
+[package]
+name = "glidertracker-status"
+version = "0.1.0"
+authors = ["Tobias Bieniek <tobias.bieniek@gmail.com>"]
+description = "OpenGliderNetwork client based on actix"
+readme = "README.md"
+keywords = ["ogn", "openglidernetwork", "glidertracker", "glider", "gliding"]
+homepage = "https://github.com/Turbo87/glidertracker-status/"
+repository = "https://github.com/Turbo87/glidertracker-status.git"
+license = "MIT/Apache-2.0"
+exclude = [".gitignore", ".travis.yml"]
+
+[dependencies]
+env_logger = "0.5.10"
+regex = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+ws = "0.7"

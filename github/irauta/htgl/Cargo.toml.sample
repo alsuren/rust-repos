@@ -1,0 +1,17 @@
+
+[package]
+name = "htgl"
+version = "0.1.0"
+authors = [ "Ilkka Rauta" ]
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs.git"
+
+[dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs.git"
+
+[lib]
+name = "htgl"
+
+[[bin]]
+name = "app"

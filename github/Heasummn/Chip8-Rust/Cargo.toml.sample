@@ -1,0 +1,12 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["Heasummn <heasummn@gmail.com>"]
+
+[lib]
+name = "chip8_cpu"
+path = "src/lib.rs"
+
+[dependencies]
+sdl2 = "0.32"
+rand = "0.6.5"

@@ -1,0 +1,44 @@
+[package]
+categories = ["embedded", "no-std"]
+name = "adc2tcp"
+description = "Poll ADC pin, report over TCP"
+license = "GPL-3.0-only"
+authors = ["Astro <astro@spaceboyz.net>"]
+version = "0.0.0"
+keywords = ["ethernet", "eth", "stm32", "adc", "tcp"]
+repository = "https://github.com/m-labs/adc2tcp"
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "astro/adc2tcp", branch = "master" }
+maintenance = { status = "experimental" }
+
+[package.metadata.docs.rs]
+features = []
+default-target = "thumbv7em-none-eabihf"
+
+[dependencies]
+panic-abort = "0.3.1"
+panic-semihosting = { version = "0.5.1", optional = true }
+log = "0.4"
+bare-metal = "0.2"
+cortex-m = "0.6"
+cortex-m-rt = { version = "0.6", features = ["device"] }
+cortex-m-log = { version = "0.5", features = ["log-integration"] }
+embedded-hal = "0.2"
+stm32f4xx-hal = { version = "0.5", features = ["rt", "stm32f429"] }
+stm32-eth = { version = "0.1.2", features = ["smoltcp-phy", "nucleo-f429zi"] }
+smoltcp = { version = "0.5.0", default-features = false, features = ["proto-ipv4", "socket-tcp", "log"] }
+hash2hwaddr = { version = "0.0", optional = true }
+
+[features]
+semihosting = ["panic-semihosting", "cortex-m-log/semihosting"]
+generate-hwaddr = ["hash2hwaddr"]
+default = ["generate-hwaddr"]
+
+[profile.release]
+codegen-units = 1
+incremental = false
+debug = true
+opt-level = "s"
+lto = true

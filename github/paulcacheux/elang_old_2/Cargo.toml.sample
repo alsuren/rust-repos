@@ -1,0 +1,9 @@
+[package]
+name = "elang"
+version = "0.1.0"
+authors = ["paulcacheux"]
+
+[dependencies]
+itertools = "0.4"
+docopt = "0.6"
+rustc-serialize = "0.3"

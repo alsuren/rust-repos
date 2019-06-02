@@ -1,0 +1,18 @@
+[package]
+name = "hipchat-client"
+version = "0.5.0"
+authors = ["Ray Solomon <raybsolomon@gmail.com>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/rsolomo/hipchat-client"
+homepage = "https://github.com/rsolomo/hipchat-client"
+description = "An API client library for HipChat"
+keywords = ["hipchat"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+hyper = "0.10"
+hyper-native-tls = "0.2"
+url = "1.0"

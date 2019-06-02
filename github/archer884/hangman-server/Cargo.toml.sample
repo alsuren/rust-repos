@@ -1,0 +1,16 @@
+[package]
+name = "hangman-server"
+version = "0.3.1"
+authors = ["J/A <archer884@gmail.com>"]
+
+[dependencies]
+clap = { version = "*", features = ["unstable", "suggestions", "color"] }
+clippy = "*"
+iron = "*"
+persistent = "*"
+rand = "*"
+router = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+stopwatch = "*"

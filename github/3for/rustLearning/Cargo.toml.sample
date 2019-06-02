@@ -1,0 +1,9 @@
+[workspace]
+members = ["http-server"
+,"http-client"
+,"util"
+,"libproto"
+,"error"
+,"pubsub"
+,"pubsub_rabbitmq"
+]

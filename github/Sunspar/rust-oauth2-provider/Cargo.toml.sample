@@ -1,0 +1,24 @@
+[package]
+name = "oa2p"
+version = "0.1.0"
+authors = ["Andrew Turner <me@sunspar.net>"]
+
+[dependencies]
+uuid = { version = "^ 0.5", features = ["serde"] }
+serde = { version = "^ 1.0.32" }
+serde_derive = { version = "^ 1.0.32" }
+serde_json = { version = "^ 1.0.11" }
+log = { version = "^ 0.3.1" }
+log4rs = { version = "^ 0.8.0" }
+base64 = { version = "^ 0.8.0"}
+bcrypt = { version = "^ 0.1.5" }
+lazy_static = { version = "^ 1.0" }
+config = { version = "^ 0.8.0" }
+derive_builder = { version = "^ 0.5.1" }
+r2d2 = { version = "^ 0.8.2" }
+r2d2-diesel = { version = "^ 1.0" }
+rocket = { version = "^ 0.3.6" }
+rocket_codegen = { version = "^ 0.3.6" }
+chrono = { version = "^ 0.4.0", features = ["serde"] }
+diesel = { version = "^ 1.1.1", features = ["postgres", "chrono", "uuid"] }
+diesel_codegen = { version = "^ 0.16.0", features = ["postgres"] }

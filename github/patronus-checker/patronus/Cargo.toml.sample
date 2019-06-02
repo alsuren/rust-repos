@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "patronus",
+    "patronus-provider",
+]
+exclude = [
+    "bindings",
+    "providers/enchant",
+    "providers/languagetool",
+    "providers/sample",
+]

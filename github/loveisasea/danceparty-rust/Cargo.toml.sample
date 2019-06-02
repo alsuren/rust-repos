@@ -1,0 +1,15 @@
+[package]
+
+name = "danceParty"
+version = "0.0.1"
+authors = [ "Michael <tennis_evil@hotmail.com>" ]
+
+[dependencies]
+num = "*"
+rand = "*"
+time = "*"
+
+
+[[bin]] 
+name = "dance"
+path = "src/main.rs"

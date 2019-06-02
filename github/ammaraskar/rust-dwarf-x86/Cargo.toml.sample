@@ -1,0 +1,13 @@
+[package]
+name = "dwarf_x86"
+version = "0.1.0"
+authors = ["Ammar Askar <ammar@ammaraskar.com>"]
+description = "High level API to read debug info for x86 binaries"
+repository = "https://github.com/ammaraskar/rust-dwarf-x86"
+license = "BSD-3-Clause"
+
+[dependencies]
+elf = "0.0.10"
+gimli = "0.14.0"
+leb128 = "0.2.1"
+enum_primitive = "0.1.1"

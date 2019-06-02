@@ -1,0 +1,21 @@
+[package]
+name = "offkey"
+version = "0.1.0"
+authors = ["Michail Pevnev <mpevnev@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+advanced_collections = "0.1"
+alsa = "0.2"
+itertools = "0.8"
+nix = "0.9"
+ordered-float = "1.0"
+pancurses-result = "0.5"
+rustfft = "3.0"
+serde_yaml = "0.8"
+snafu = "0.2"
+structopt = "0.2"
+
+[dependencies.serde]
+version = "1.0"
+features = ["derive"]

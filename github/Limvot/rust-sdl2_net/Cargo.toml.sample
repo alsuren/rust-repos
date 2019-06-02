@@ -1,0 +1,22 @@
+[package]
+
+name = "sdl2_net"
+version = "0.0.2"
+authors = ["Nathan Braswell <miloignis@gmail.com>", "Preston Tuner <prestonturner42@gmail.com>"]
+description = "Safe but close to the source SDL2_net bindings and wrappers"
+license = "MIT"
+license-file = "LICENSE.md"
+
+documentation = "https://github.com/Limvot/rust-sdl2_net"
+homepage = "https://github.com/Limvot/rust-sdl2_net"
+repository = "https://github.com/Limvot/rust-sdl2_net"
+
+keywords = ["sdl", "sdl2", "networking", "internet", "sdl2_net"]
+
+readme = "README.md"
+
+[dependencies.sdl2]
+git = "https://github.com/AngryLawyer/rust-sdl2"
+
+[dependencies]
+libc = "0.2.5"

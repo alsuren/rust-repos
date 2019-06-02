@@ -1,0 +1,16 @@
+[package]
+name = "tokio-fiber"
+version = "0.1.0"
+authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
+
+[dependencies]
+fringe = { git = "https://github.com/nathan7/libfringe.git" }
+tokio-core = "0.1.1"
+futures = "0.1.6"
+
+[dev-dependencies]
+env_logger = "*"
+
+[replace]
+"tokio-core:0.1.1" = { git = "https://github.com/tokio-rs/tokio-core" }
+"futures:0.1.6" = { git = "https://github.com/alexcrichton/futures-rs" }

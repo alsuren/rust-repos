@@ -1,0 +1,10 @@
+[package]
+name = "polydraw"
+version = "0.0.1"
+
+[dependencies]
+libc = "0.2"
+
+[features]
+gles2 = []
+gl = []

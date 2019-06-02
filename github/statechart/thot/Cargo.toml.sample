@@ -1,0 +1,7 @@
+[package]
+name = "thot"
+version = "0.1.0"
+authors = ["Cameron Bytheway <bytheway.cameron@gmail.com>"]
+
+[dependencies]
+thot_core = { path = "./packages/thot_core" }

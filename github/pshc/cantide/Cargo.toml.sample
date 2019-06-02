@@ -1,0 +1,10 @@
+[package]
+authors = ["Paul Collier <paul@paulcollier.ca>"]
+name = "cantide"
+version = "0.1.0"
+
+[dependencies]
+error-chain = "0.10.0"
+irc = "0.12"
+postgres = "0.14"
+rand = "0.3"

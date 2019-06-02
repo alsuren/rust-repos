@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "nes",
+    "nes_sdl",
+    "nes_web",
+]
+
+[profile.release]
+debug = true
+
+[profile.dev]
+opt-level = 3
+
+[profile.test]
+opt-level = 3

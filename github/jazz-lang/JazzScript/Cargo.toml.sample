@@ -1,0 +1,19 @@
+[package]
+name = "jazzc"
+version = "0.1.0"
+authors = ["Adel Prokurov <adel.prokurov@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+hmap = "0.1"
+jazzvm = {path = "jazz-vm"}
+structopt = "0.2"
+time = "0.1.42"
+
+byteorder = "*"
+
+[profile.release]
+lto = true
+opt-level = 'z'
+codegen-units = 1
+panic = 'abort'

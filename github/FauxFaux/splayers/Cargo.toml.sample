@@ -1,0 +1,26 @@
+[package]
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+name = "splayers"
+version = "0.1.0"
+
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+more-asserts = "0.2"
+tempfile = "3"
+time = "0.1"
+twoway = "0.2"
+walkdir = "2"
+
+#formats
+ar = "0.6"
+bzip2 = "0.3"
+tar = "0.4"
+xz2 = "0.1.4"
+zip = "0.5"
+
+[dependencies.flate2]
+version = "1"
+default-features = false
+features = ["rust_backend"]

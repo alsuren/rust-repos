@@ -1,0 +1,12 @@
+[package]
+name = "rustloris"
+version = "0.1.0"
+authors = ["Marko Silokunnas <marko.silokunnas@gmail.com>"]
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"
+time = "0.1"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

@@ -1,0 +1,13 @@
+[workspace]
+members = [
+  "kbd",
+  "framed",
+  "crc8",
+  "wiring",
+  "left-half/rust",
+  "right-half/rust",
+]
+
+[profile.release]
+lto = true
+panic = "abort"

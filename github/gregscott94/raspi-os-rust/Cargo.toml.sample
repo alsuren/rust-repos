@@ -1,0 +1,9 @@
+[package]
+name = "raspi-os"
+version = "0.1.0"
+authors = ["GScott <gregscott94@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]

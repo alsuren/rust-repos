@@ -1,0 +1,18 @@
+[package]
+name = "pshovr"
+version = "0.1.0"
+authors = ["Richo Healey <richo@psych0tik.net>"]
+edition = "2018"
+repository = "https://github.com/richo/pshovr"
+readme = "README.md"
+license = "MIT"
+description = "An opinionated wrapper for the v1 pushover api"
+
+[dependencies]
+failure = "0.1.5"
+reqwest = "0.9.8"
+serde = { version = "1.0.85", features = ["derive"] }
+redacted_debug = "0.1.0"
+
+[dev-dependencies]
+serde_json = "1.0.38"

@@ -1,0 +1,13 @@
+[package]
+name = "canvas"
+version = "0.1.0"
+authors = ["Dowon Ch <dowon1014@gmail.com>"]
+description = "A 2d graphics canvas"
+
+[dependencies]
+nalgebra = "0.12.1"
+image = "0.13.0"
+gfx = "0.14"
+glutin = "0.7"
+gfx_window_glutin = "0.14"
+rand = "0.3"

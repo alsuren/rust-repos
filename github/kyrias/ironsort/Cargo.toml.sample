@@ -1,0 +1,15 @@
+[package]
+name = "ironsort"
+version = "0.1.0"
+description = "Implementation of a fast in-place sorting algorithm"
+
+repository = "https://github.com/kyrias/ironsort"
+license = "ISC"
+
+readme = "README.md"
+
+keywords = ["sort", "in-place", "algorithm", "quicksort"]
+authors = ["Johannes Löthberg <johannes@kyriasis.com>"]
+
+[dev-dependencies]
+rand = "^0.3.14"

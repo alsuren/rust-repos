@@ -1,0 +1,20 @@
+[package]
+name = "gfx_hal_experiments"
+version = "0.1.0"
+authors = ["JeroenCops <jernncops@live.be>"]
+
+[features]
+default = []
+dx12 = ["gfx-backend-dx12"]
+vulkan = ["gfx-backend-vulkan"]
+
+[dependencies]
+winit = "0.12"
+bincode = "1.0"
+
+gfx-memory = { git = "https://github.com/gfx-rs/gfx-memory.git" }
+gfx-hal = { git = "https://github.com/gfx-rs/gfx.git" }
+gfx-backend-vulkan = { git = "https://github.com/gfx-rs/gfx.git", optional = true, features = ["glsl-to-spirv"] }
+
+[target.'cfg(windows)'.dependencies]
+gfx-backend-dx12 = { git = "https://github.com/gfx-rs/gfx.git", optional = true }

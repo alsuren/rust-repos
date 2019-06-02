@@ -1,0 +1,12 @@
+[package]
+name = "user_service"
+version = "0.1.0"
+authors = ["rsb007 <rahul.sing@knoldus.in>"]
+edition = "2018"
+
+[dependencies]
+user_service_impl = {path="../user_service/user_service_impl"}
+actix ="0.7.9"
+actix-web = "0.7.17"
+listenfd = "0.3"
+env_logger = "0.5.12"

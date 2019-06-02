@@ -1,0 +1,19 @@
+[package]
+name = "texturegen-gui"
+version = "0.1.0"
+authors = ["WaDelma <delma@del.ma>"]
+
+[dependencies]
+nalgebra = "0.6.*"
+daggy = "=0.4.0"
+glium = "=0.13.5"
+image = "=0.10.0"
+rusttype = "=0.2.0"
+unicode-normalization = "=0.1.2"
+arrayvec = "=0.3.16"
+
+[dependencies.texturegen]
+git = "https://github.com/WaDelma/texturegen"
+
+[dependencies.webweaver]
+git = "https://github.com/WaDelma/webweaver"

@@ -1,0 +1,16 @@
+[package]
+name = "luaring"
+version = "0.1.0"
+authors = ["kevin@vcsjones.com"]
+include = ["src/**/*"]
+publish = false
+license = "MIT"
+build = "build.rs"
+
+[dependencies]
+ring = "0.2.3"
+libc = "0.2.0"
+
+[lib]
+name = "luaring"
+crate-type = ["dylib"]

@@ -1,0 +1,14 @@
+[workspace]
+members = [
+	"noria",
+	"noria-server",
+	"noria-benchmarks",
+	"noria-benchmarks/lobsters",
+]
+
+[profile.release]
+debug=true
+
+[patch.crates-io]
+tower-balance = { git = "https://github.com/tower-rs/tower.git" }
+tokio-tower = { git = "https://github.com/tower-rs/tokio-tower.git" }

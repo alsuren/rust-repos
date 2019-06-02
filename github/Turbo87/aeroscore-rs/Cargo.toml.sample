@@ -1,0 +1,33 @@
+[package]
+name = "aeroscore"
+version = "0.0.0"
+authors = ["Tobias Bieniek <tobias.bieniek@gmail.com>"]
+description = "Algorithms for Glider Pilots"
+license = "MIT"
+repository = "https://github.com/Turbo87/aeroscore-rs.git"
+homepage = "https://github.com/Turbo87/aeroscore-rs.git"
+documentation = "https://docs.rs/aeroscore/"
+readme = "README.md"
+
+[badges]
+travis-ci = { repository = "Turbo87/aeroscore-rs", branch = "master" }
+
+[features]
+default = ["rayon"]
+
+[dependencies]
+cfg-if = "0.1"
+failure = "^0.1.1"
+flat_projection = "^0.2.0"
+ord_subset = "^3.1.0"
+rayon = { version = "^1.0", optional = true }
+
+[dev-dependencies]
+assert_approx_eq = "^1.0.0"
+criterion = "^0.2.0"
+igc = { git = "https://github.com/Joey9801/igc-rs" }
+serde_json = "^1.0.0"
+
+[[bench]]
+name = "olc_classic"
+harness = false

@@ -1,0 +1,7 @@
+[package]
+name = "cryptopals-rs"
+version = "0.1.0"
+authors = ["wangchi <wangchi@meican.com>"]
+
+[dependencies]
+openssl = { version = "0.10", features = ["vendored"] }

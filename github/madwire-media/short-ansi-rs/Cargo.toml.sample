@@ -1,0 +1,9 @@
+[package]
+name = "short_ansi"
+version = "0.1.0"
+authors = ["Dakota Sullivan <dakota.sullivan@madwiremedia.com>"]
+
+[lib]
+plugin = true
+
+[dependencies]

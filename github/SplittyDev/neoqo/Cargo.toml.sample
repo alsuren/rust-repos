@@ -1,0 +1,24 @@
+[package]
+name = "neoqo"
+version = "0.1.0"
+authors = ["Splitty <splittydev@gmail.com>"]
+
+[lib]
+name = "neoqo"
+path = "src/lib.rs"
+
+[[bin]]
+name = "neoqo"
+path = "src/neoqo.rs"
+doc = false
+
+[[bin]]
+name = "neodbg"
+path = "src/neodbg.rs"
+doc = false
+
+[dependencies]
+clap = "^2"
+rustc-serialize = "0.3"
+bincode = "0.5.9"
+byteorder = "^0.5"

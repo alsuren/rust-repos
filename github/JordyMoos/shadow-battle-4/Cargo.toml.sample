@@ -1,0 +1,9 @@
+[package]
+name = "shadow-battle-4"
+version = "0.1.0"
+
+[[bin]]
+name = "shadow-battle-4"
+
+[dependencies]
+actix-web = "0.6"

@@ -1,0 +1,117 @@
+[package]
+authors = ["alex <acdenissk69@gmail.com>", "Zeyla Hellyer <hi@zeyla.me>"]
+description = "A Rust library for the Discord API."
+documentation = "https://docs.rs/serenity"
+homepage = "https://github.com/serenity-rs/serenity"
+keywords = ["discord", "api"]
+license = "ISC"
+name = "serenity"
+readme = "README.md"
+repository = "https://github.com/serenity-rs/serenity.git"
+version = "0.5.8"
+
+[dependencies]
+bitflags = "^1.0"
+log = "~0.4"
+parking_lot = "^0.5"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+
+[dependencies.base64]
+optional = true
+version = "~0.9"
+
+[dependencies.byteorder]
+optional = true
+version = "^1.2"
+
+[dependencies.chrono]
+features = ["serde"]
+version = "~0.4"
+
+[dependencies.flate2]
+optional = true
+version = "^1.0"
+
+[dependencies.hyper]
+optional = true
+version = "~0.10"
+
+[dependencies.hyper-native-tls]
+optional = true
+version = "0.2.4"
+
+[dependencies.lazy_static]
+optional = true
+version = "^1.0"
+
+[dependencies.multipart]
+default-features = false
+features = ["client", "hyper", "safemem"]
+optional = true
+version = "0.13"
+
+[dependencies.native-tls]
+optional = true
+version = "0.1"
+
+[dependencies.opus]
+optional = true
+version = "0.2"
+
+[dependencies.sodiumoxide]
+default-features = false
+optional = true
+version = "0.0.14"
+
+[dependencies.threadpool]
+optional = true
+version = "~1.7"
+
+[dependencies.typemap]
+optional = true
+version = "~0.3"
+
+[dependencies.evzht9h3nznqzwl]
+default-features = false
+features = ["sync-ssl"]
+optional = true
+version = "0.0.3"
+
+[dev-dependencies.matches]
+version = "0.1.6"
+
+[features]
+default = [
+    "builder",
+    "cache",
+    "client",
+    "framework",
+    "gateway",
+    "model",
+    "http",
+    "standard_framework",
+    "utils"
+]
+builder = ["utils"]
+cache = ["lazy_static"]
+client = [
+    "gateway",
+    "http",
+    "lazy_static",
+    "threadpool",
+    "typemap",
+]
+extras = []
+framework = ["client", "model", "utils"]
+gateway = ["flate2", "http", "websocket", "utils"]
+http = ["hyper", "hyper-native-tls", "lazy_static", "multipart", "native-tls"]
+model = ["builder", "http"]
+standard_framework = ["framework"]
+utils = ["base64"]
+voice = ["byteorder", "gateway", "opus", "sodiumoxide"]
+websocket = ["evzht9h3nznqzwl"]
+
+[package.metadata.docs.rs]
+all-features = true

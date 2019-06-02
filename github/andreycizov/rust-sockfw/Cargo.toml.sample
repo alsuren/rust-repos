@@ -1,0 +1,23 @@
+[package]
+name = "sockfw"
+version = "0.1.0"
+authors = ["Andrey Cizov <acizov@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "sockfw"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sfw"
+path = "src/bin.rs"
+
+
+[dependencies]
+mio = "0.6"
+mio-uds = "0.6.7"
+mio-extras = "2.0.5"
+
+openssl = "0.10.16"
+
+clap = "2.32.0"

@@ -1,0 +1,30 @@
+[package]
+name = "libcantal"
+description = """
+    A rust library to submit statistics to cantal monitoring server
+"""
+license = "MIT/Apache-2.0"
+readme = "README.rst"
+keywords = ["linux", "monitoring", "meter"]
+categories = ["api-bindings"]
+homepage = "https://github.com/tailhook/cantal-rs"
+documentation = "https://docs.rs/libcantal/"
+version = "0.3.2"
+authors = ["paul@colomiets.name"]
+
+[dependencies]
+atomic = "0.3.3"
+serde = "1.0.0"
+serde_json = "1.0.2"
+libc = "0.2.22"
+log = "0.3.7"
+quick-error = "1.2.0"
+
+[dev-dependencies]
+lazy_static = "0.2.1"
+env_logger = "0.4.2"
+
+[lib]
+name = "libcantal"
+path = "src/lib.rs"
+

@@ -1,0 +1,8 @@
+[package]
+name = "untitled_roguelike"
+version = "0.1.0"
+authors = ["Andrew Vy <andrew@andrewvy.com>"]
+
+[dependencies]
+rand = "0.3.9"
+tcod = "0.10"

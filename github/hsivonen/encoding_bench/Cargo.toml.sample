@@ -1,0 +1,35 @@
+[package]
+name = "encoding_bench"
+version = "0.1.0"
+authors = ["Henri Sivonen <hsivonen@hsivonen.fi>"]
+
+[features]
+uconv = ["libc"]
+iconv = ["libc"]
+icu = ["libc"]
+rust-encoding = ["encoding"]
+standard-library = []
+memcpy = []
+win32 = ["libc"]
+kewb = []
+webkit = ["libc"]
+self = []
+mem = []
+safe_mem = ["safe_encoding_rs_mem"]
+simd-accel = ["encoding_rs/simd-accel"]
+less-slow-kanji-encode = ["encoding_rs/less-slow-kanji-encode"]
+less-slow-big5-hanzi-encode = ["encoding_rs/less-slow-big5-hanzi-encode"]
+less-slow-gb-hanzi-encode = ["encoding_rs/less-slow-gb-hanzi-encode"]
+fast-hangul-encode = ["encoding_rs/fast-hangul-encode"]
+fast-hanja-encode = ["encoding_rs/fast-hanja-encode"]
+fast-kanji-encode = ["encoding_rs/fast-kanji-encode"]
+fast-gb-hanzi-encode = ["encoding_rs/fast-gb-hanzi-encode"]
+fast-big5-hanzi-encode = ["encoding_rs/fast-big5-hanzi-encode"]
+fast-legacy-encode = ["encoding_rs/fast-legacy-encode"]
+
+[dependencies]
+encoding_rs = { path = "../encoding_rs/" }
+safe_encoding_rs_mem = { path = "../safe_encoding_rs_mem/", optional = true }
+encoding = { version = "0.2.33", optional = true }
+libc = { version = "0.2.16", optional = true }
+

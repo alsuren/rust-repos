@@ -1,0 +1,30 @@
+[package]
+name = "ataraxiac"
+version = "0.0.0"
+authors = ["Augmented Fourth"]
+
+[build-dependencies]
+lalrpop = "*"
+
+[dependencies]
+clap = "*"
+failure = "*"
+lalrpop-util = "*"
+regex = "*"
+
+[dependencies.rug]
+version = "*"
+default-features = false
+features = ["integer"]
+
+[features]
+default = []
+
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = 3
+debug = false
+debug-assertions = false
+rpath = false
+codegen-units = 1

@@ -1,0 +1,12 @@
+[package]
+name = "pack_combine"
+version = "0.2.0"
+authors = ["Kyle Clemens <git@kyleclemens.com>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+hex = "0.3"
+rayon = "1"
+sha2 = "0.8"
+walkdir = "2"

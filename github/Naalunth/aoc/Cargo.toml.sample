@@ -1,0 +1,39 @@
+[package]
+name = "aoc-naalunth"
+version = "1.0.0"
+authors = ["Naalunth <kevin-schier@web.de>"]
+edition = "2018"
+
+[lib]
+bench = false
+
+[profile.release]
+panic = "abort"
+debug = true
+
+[dependencies]
+aoc-runner = "0.2.2"
+aoc-runner-derive = "0.2.1"
+smallvec = "0.6.7"
+chrono = "0.4.6"
+rayon = "1.0.3"
+partition = "0.1.1"
+nalgebra = "0.16.12"
+itertools = "0.8.0"
+nom = "4.1.1"
+specs = "0.14.1"
+specs-derive = "0.3.0"
+indexmap = "1.0.2"
+hashers = "1.0.1"
+
+[dependencies.ndarray]
+git = "https://github.com/rust-ndarray/ndarray"
+features = ["rayon"]
+
+[dev-dependencies]
+proptest = "0.8.7"
+criterion = "0.2.5"
+
+[[bench]]
+name = "bench"
+harness = false

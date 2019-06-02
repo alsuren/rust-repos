@@ -1,0 +1,13 @@
+[package]
+name = "tetris"
+version = "0.1.0"
+authors = ["Sebastian Andersson <sebastian@bittr.nu>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.*"
+pancurses = "0.16.*"
+
+[profile.release]
+debug = true
+

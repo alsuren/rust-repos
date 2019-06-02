@@ -1,0 +1,16 @@
+[package]
+name = "hash-dupl"
+version = "0.4.1"
+authors = ["Alexey Voznyuk <me@swizard.info>"]
+
+[dependencies]
+bin-merge-pile = { git = "https://bitbucket.org/swizard/bin-merge-pile.git" }
+tokenizer = { git = "https://bitbucket.org/swizard/tokenizer.git" }
+token-ngrams = { git = "https://github.com/swizard0/token-ngrams.git" }
+slices-merger = { git = "https://github.com/swizard0/slices-merger.git" }
+rmp-serde = "0.13"
+serde = "1.0"
+serde_derive = "1.0"
+time = "0.1"
+rand = "0.4"
+fnv = "1.0"

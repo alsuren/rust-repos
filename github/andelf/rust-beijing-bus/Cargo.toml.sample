@@ -1,0 +1,31 @@
+[package]
+name = "beijing_bus"
+version = "0.0.1"
+authors = ["andelf <andelf@gmail.com>"]
+
+
+[lib]
+name = "beijing_bus"
+path = "src/lib.rs"
+
+
+[dependencies]
+hyper = "*"
+rust-crypto = "*"
+rustc-serialize = "*"
+xml-rs = "*"
+itertools = "0.3.9"
+postgres = { version = "*", features = ["time"] }
+time = "*"
+r2d2 = "*"
+r2d2_postgres = "*"
+rand = "*"
+tojson_macros = "*"
+
+
+# postgis = "*"
+
+[dependencies.postgis]
+# git = "https://github.com/andelf/rust-postgis"
+path = "../rust-postgis"
+version = "*"

@@ -1,0 +1,137 @@
+[package]
+
+name    = "sdl2"
+description = "SDL2 bindings for Rust"
+repository = "https://github.com/Rust-SDL2/rust-sdl2"
+documentation = "https://rust-sdl2.github.io/rust-sdl2/sdl2/"
+version = "0.32.2"
+license = "MIT"
+authors = [ "Tony Aldridge <tony@angry-lawyer.com>", "Cobrand <cobrandw@gmail.com>"]
+keywords = ["SDL", "windowing", "graphics", "api", "engine"]
+categories = ["rendering","api-bindings","game-engines","multimedia"]
+
+[lib]
+
+name       = "sdl2"
+path       = "src/sdl2/lib.rs"
+
+[dependencies]
+bitflags = "^1"
+libc = "^0.2"
+rand = "^0.6"
+lazy_static = "^1"
+
+[dependencies.num]
+version = "^0.1"
+default-features = false
+
+[dependencies.sdl2-sys]
+path = "sdl2-sys"
+version = "^0.32"
+
+[dependencies.c_vec]
+version = ">= 1.0, <= 1.3"
+optional = true
+
+[features]
+
+unsafe_textures = []
+default = []
+gfx = ["c_vec", "sdl2-sys/gfx"]
+mixer = ["sdl2-sys/mixer"]
+image = ["sdl2-sys/image"]
+ttf = ["sdl2-sys/ttf"]
+
+use-bindgen = ["sdl2-sys/use-bindgen"]
+use-pkgconfig = ["sdl2-sys/use-pkgconfig"]
+use_mac_framework = ["sdl2-sys/use_mac_framework"]
+bundled = ["sdl2-sys/bundled"]
+static-link= ["sdl2-sys/static-link"]
+
+[[example]]
+name = "animation"
+
+[[example]]
+name = "audio-capture-and-replay"
+
+[[example]]
+name = "audio-queue-squarewave"
+
+[[example]]
+name = "audio-squarewave"
+
+[[example]]
+name = "audio-wav"
+
+[[example]]
+name = "audio-whitenoise"
+
+[[example]]
+required-features = ["image"]
+name = "cursor"
+
+[[example]]
+name = "demo"
+
+[[example]]
+name = "game-controller"
+
+[[example]]
+required-features = ["unsafe_textures"]
+name = "game-of-life-unsafe-textures"
+
+[[example]]
+name = "game-of-life"
+
+[[example]]
+required-features = ["gfx"]
+name = "gfx-demo"
+
+[[example]]
+name = "haptic"
+
+[[example]]
+required-features = ["image"]
+name = "image-demo"
+
+[[example]]
+name = "joystick"
+
+[[example]]
+name = "keyboard-state"
+
+[[example]]
+name = "message-box"
+
+[[example]]
+required-features = ["mixer"]
+name = "mixer-demo"
+
+[[example]]
+name = "mouse-state"
+
+[[example]]
+name = "no-renderer"
+
+[[example]]
+name = "relative-mouse-state"
+
+[[example]]
+name = "renderer-target"
+
+[[example]]
+name = "renderer-texture"
+
+[[example]]
+name = "renderer-yuv"
+
+[[example]]
+required-features = ["ttf", "image"]
+name = "resource-manager"
+
+[[example]]
+required-features = ["ttf"]
+name = "ttf-demo"
+
+[[example]]
+name = "window-properties"

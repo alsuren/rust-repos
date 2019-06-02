@@ -1,0 +1,9 @@
+[package]
+name = "ishido"
+version = "0.1.0"
+authors = ["Addison Bean <addisonbean@gmail.com>"]
+
+[dependencies]
+cursive = "0.7"
+rand = "0.4"
+permutohedron = "0.2.4"

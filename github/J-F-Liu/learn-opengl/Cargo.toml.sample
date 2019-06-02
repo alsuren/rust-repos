@@ -1,0 +1,9 @@
+[package]
+name = "opengl"
+version = "0.1.0"
+authors = ["Junfeng <china.liujunfeng@gmail.com>"]
+
+[dependencies]
+glium = "0.17.1"
+image = "0.16.0"
+tobj = "0.1.6"

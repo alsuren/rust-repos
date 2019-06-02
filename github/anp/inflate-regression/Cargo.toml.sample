@@ -1,0 +1,8 @@
+[package]
+name = "inflate-regression"
+version = "0.1.0"
+authors = ["Adam Perry <adam.n.perry@gmail.com>"]
+
+[dependencies]
+criterion = "0.2"
+inflate = { path = "inflate-0.3.4" }

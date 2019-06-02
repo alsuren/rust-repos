@@ -1,0 +1,32 @@
+[package]
+name = "deltamap"
+version = "0.2.2"
+authors = ["Johannes Hofmann <mail@b-r-u.org>"]
+readme = "README.md"
+repository = "https://github.com/b-r-u/deltamap"
+homepage = "https://github.com/b-r-u/deltamap"
+description = """
+A simple map viewer
+"""
+license = "GPL-3.0"
+
+[dependencies]
+cgmath = "0.16"
+clap = "2.29"
+directories = "1.0"
+env_logger = "0.6"
+gl = "0.11"
+glutin = "0.19"
+image = "0.20"
+lazy_static = "1.0"
+linked-hash-map = "0.5.0"
+log = "0.4"
+num_cpus = "1.0"
+osmpbf = "0.1"
+regex = "1.0"
+reqwest = "0.9"
+scoped_threadpool = "0.1"
+toml = "0.4"
+
+[build-dependencies]
+gl_generator = "0.10"

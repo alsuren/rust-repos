@@ -1,0 +1,12 @@
+[package]
+authors = ["Jonathan Creekmore <jonathan@thecreekmores.org>"]
+description = "A user-space implementation of the Simplified Mandatory Access Control Kernel"
+keywords = ["security", "MAC", "access", "control"]
+license = "MIT"
+name = "usmack"
+readme = "README.md"
+version = "0.1.0"
+
+[dependencies]
+error-chain = "0.5"
+lazy_static = "0.2.1"

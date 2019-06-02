@@ -1,0 +1,16 @@
+[package]
+name = "caca-rs-examples"
+version = "0.1.0"
+authors = ["Ian Pickering <ipickering2@gmail.com>"]
+
+[[bin]]
+name = "event"
+path = "bin/event.rs"
+
+[[bin]]
+name = "dithering"
+path = "bin/dithering.rs"
+
+[dependencies]
+caca = { git = "https://github.com/Ruin0x11/caca-rs" }
+rand = "0.3.15"

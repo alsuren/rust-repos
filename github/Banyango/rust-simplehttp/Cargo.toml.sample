@@ -1,0 +1,14 @@
+[package]
+name = "rust-simplehttp"
+version = "0.1.0"
+authors = ["Kyle Reczek <kyle@banyango.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+nom = "4.2.0"
+colored = "1.7"
+lazy_static = "1.2.0"
+notify = "4.0.7"
+websocket = "0.22.0"
+bus = "2.0.1"

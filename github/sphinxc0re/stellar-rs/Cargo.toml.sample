@@ -1,0 +1,11 @@
+[package]
+name = "stellar"
+version = "0.1.2-alpha"
+authors = ["Julian Laubstein <contact@julianlaubstein.de>"]
+description = "Stellar client library for the Rust programming language"
+repository = "https://github.com/sphinxc0re/stellar-rs"
+readme = "README.md"
+license = "Apache-2.0"
+
+[dependencies]
+rust-crypto = "^0.2"

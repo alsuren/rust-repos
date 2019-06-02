@@ -1,0 +1,12 @@
+[package]
+name = "drumatech"
+version = "0.1.9"
+authors = ["Drumato <drumatech109@gmail.com>"]
+license-file = "LICENSE"
+edition = "2018"
+repository = "https://github.com/Drumato/drum"
+keywords = ["drum","utility"]
+description = "a crate that has a little utility."
+
+[dependencies]
+failure = "0.1.1"

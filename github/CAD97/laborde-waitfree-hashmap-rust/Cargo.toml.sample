@@ -1,0 +1,8 @@
+[package]
+name = "waitfree-hashmap"
+version = "0.1.0"
+authors = ["Christopher Durham (aka cad97) <cad97@cad97.com>"]
+edition = "2018"
+
+[dependencies]
+backoff = "0.1.2"

@@ -1,0 +1,10 @@
+[package]
+name = "tet-rs"
+version = "0.1.0"
+authors = ["Andrew Tolvstad"]
+edition = "2018"
+
+[dependencies]
+rand = "0.4"
+termion = "1.5"
+arrayvec = "0.4"

@@ -1,0 +1,28 @@
+[package]
+name = "gfx_func"
+version = "0.0.1"
+authors = ["Eduard Bopp <eduard.bopp@aepsil0n.de>"]
+
+[dependencies]
+num = "0.1"
+carboxyl = "0.1"
+nalgebra = "0.2"
+gfx = "0.6"
+
+[dependencies.carboxyl_window]
+git = "https://github.com/aepsil0n/carboxyl_window"
+
+[dev-dependencies]
+gfx_device_gl = "0.4"
+glutin = "0.1.6"
+time = "0.1"
+pistoncore-window = "*"
+pistoncore-input = "*"
+shader_version = "*"
+pistoncore-glutin_window = "*"
+
+[dev-dependencies.carboxyl_time]
+git = "https://github.com/aepsil0n/carboxyl_time"
+
+[dev-dependencies.gfx_window_shared]
+git = "https://github.com/aepsil0n/gfx_window_shared"

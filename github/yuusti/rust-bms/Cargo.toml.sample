@@ -1,0 +1,22 @@
+[package]
+name = "rust-bms"
+version = "0.1.0"
+authors = ["yuf", "shunsuke"]
+
+[[bin]]
+name = "rust-bms"
+
+[dependencies]
+piston = "0.32.0"
+piston-music = "0.21.0"
+piston2d-graphics = "0.21.1"
+pistoncore-glutin_window = "0.37.0"
+piston2d-opengl_graphics = "0.44.0"
+sdl2 = "0.30.0"
+ears = "0.4.0"
+rand = "*"
+regex = "0.2.2"
+time = "*"
+image = "*"
+ffmpeg = {git = "https://github.com/meh/rust-ffmpeg", rev = "8aabd018f537934d4520d6dad97d29d6f41baa54"}
+walkdir = "1"

@@ -1,0 +1,7 @@
+[package]
+name = "onehop-hashmap"
+version = "0.1.0"
+authors = ["Paul Masurel <paul.masurel@gmail.com>"]
+
+[profile.release]
+lto = true

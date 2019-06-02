@@ -1,0 +1,12 @@
+[package]
+name = "rust_udt"
+version = "0.1.0"
+authors = ["Gareth Nelson <gareth@garethnelson.com>"]
+
+[dependencies]
+bitfield = "0.12.1"
+nom      = "3.2.1"
+
+[lib]
+name = "rust_udt"
+path = "src/lib.rs"

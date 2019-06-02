@@ -1,0 +1,26 @@
+[package]
+name = "bitprim"
+version = "0.1.0"
+authors = ["nubis <nb@bitex.la>"]
+build = "build.rs"
+
+[dependencies]
+libc = "0.2.0"
+error-chain = "0.11.0"
+serde = "1.0"
+serde_derive = "1.0"
+base16 = "0.1"
+
+[build-dependencies]
+regex = "0.2"
+walkdir = "2"
+dirs = "1.0.4"
+
+[dev-dependencies]
+pretty_assertions = "0.5.1"
+
+[features]
+bch = []
+btc = []
+ltc = []
+v0_18_0 = []

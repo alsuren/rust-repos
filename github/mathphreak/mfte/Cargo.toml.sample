@@ -1,0 +1,28 @@
+[package]
+name = "mfte"
+version = "0.3.0"
+authors = ["Matt Horn <matt@matthorn.tech>"]
+
+description = "MFTE, the magic-free text editor"
+repository = "https://github.com/mathphreak/mfte"
+readme = "README.md"
+keywords = ["text", "editor", "text-editor", "terminal"]
+categories = ["text-editors"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "mathphreak/mfte" }
+appveyor = { repository = "mathphreak/mfte" }
+
+[dependencies]
+macro-attr = "0.2.0"
+enum_derive = "0.1.7"
+clipboard = "0.4.2"
+editorconfig = "1.0.0"
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.2.8"
+kernel32-sys = "0.2.2"
+
+[target.'cfg(not(windows))'.dependencies]
+termion = "1.5.1"

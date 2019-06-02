@@ -1,0 +1,12 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["Filip Demski (Glamhoth) <glamhoth@protonmail.com>"]
+edition = "2018"
+
+[dependencies.sdl2]
+version = "0.32"
+default-features = false
+
+[dependencies.rand]
+git = "https://github.com/rust-lang/rand"

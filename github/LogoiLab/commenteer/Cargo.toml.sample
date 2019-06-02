@@ -1,0 +1,16 @@
+[package]
+name = "commenteer"
+version = "0.2.1"
+authors = ["Chad Baxter <cbaxter@mail.umw.edu>"]
+edition = "2018"
+description = "A simple tool for adding comment headers to code files."
+repository = "https://www.github.com/LogoiLab/commenteer"
+license = "GPL-3.0-or-later"
+keywords = ["comment", "preprocessor"]
+publish = true
+
+[dependencies]
+clap = "2.32.0"
+mime_guess = "1.8.6"
+tempfile = "3.0.7"
+walkdir = "2.2.7"

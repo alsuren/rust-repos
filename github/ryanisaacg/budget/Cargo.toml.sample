@@ -1,0 +1,9 @@
+[package]
+name = "budgeting"
+version = "0.1.0"
+authors = ["Ryan Goldstein <ryanisaacg@gmail.com>"]
+
+[dependencies]
+clap = "2"
+chrono = "0.4"
+regex = "1"

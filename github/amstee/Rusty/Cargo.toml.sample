@@ -1,0 +1,11 @@
+[package]
+name = "rusty"
+version = "0.1.0"
+authors = ["amstee <jeremy.barneron@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.sdl2]
+version = "0.32.1"
+features = ["bundled", "static-link"]

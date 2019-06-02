@@ -1,0 +1,9 @@
+[package]
+name = "adventofcode2018"
+version = "0.1.0"
+authors = ["Emulator000 <dario.cancelliere@facile.it>"]
+edition = "2018"
+
+[dependencies]
+text_io = "^0.1"
+indexmap = "^1.0"

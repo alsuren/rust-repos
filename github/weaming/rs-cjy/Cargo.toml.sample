@@ -1,0 +1,32 @@
+[package]
+name = "rs-cjy"
+version = "0.1.4"
+authors = ["weaming <garden.yuen@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Convert between CSV, JSON, YAML formats of 2D dataset."
+homepage = "https://github.com/weaming/rs-cjy"
+repository = "https://github.com/weaming/rs-cjy"
+keywords = ["csv", "json", "yaml"]
+
+[dependencies]
+csv = "1.0.5"
+serde_json = { version = "1.0.39", features = ["preserve_order"] }
+yaml-rust = "0.4.3"
+linked-hash-map = "0.5.1"
+
+[lib]
+name = "formats"
+path = "src/formats/lib.rs"
+
+[[bin]]
+name = "csv-json"
+path = "src/bin/csv_json.rs"
+
+[[bin]]
+name = "json-yaml"
+path = "src/bin/json_yaml.rs"
+
+[[bin]]
+name = "csv-yaml"
+path = "src/bin/csv_yaml.rs"

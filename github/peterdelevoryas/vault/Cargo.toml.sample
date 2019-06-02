@@ -1,0 +1,14 @@
+[package]
+name = "vault"
+version = "0.1.1"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+
+[dependencies]
+docopt = "0.8.1"
+serde = "1.0.14"
+serde_derive = "1.0.14"
+error-chain = "0.11.0"
+bincode = "0.8.0"
+rand = "0.3.16"
+base64 = "0.6.0"
+time = "0.1.38"

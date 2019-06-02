@@ -1,0 +1,18 @@
+[package]
+name = "compass-sprite"
+version = "0.0.3"
+authors = ["Marius Seritan <github@seritan.net>"]
+keywords = ["compass","sprite"]
+description = "Implement sprites for CSS usage on a web page"
+
+
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/compass-rs/sprite.git"
+homepage = "https://github.com/compass-rs/sprite"
+
+[lib]
+name = "sprite"
+
+[dependencies.image]
+version = "0.3.7"

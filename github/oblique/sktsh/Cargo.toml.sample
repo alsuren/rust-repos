@@ -1,0 +1,17 @@
+[package]
+name = "sktsh"
+version = "0.0.0"
+authors = ["oblique <psyberbits@gmail.com>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+failure = "0.1"
+clap = "2.32"
+futures = "0.1"
+tokio = "0.1"
+tokio-signal = "0.2"
+mio = "0.6"
+nix = "0.13"
+libc = "0.2"
+bytes = "0.4"

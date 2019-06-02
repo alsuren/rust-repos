@@ -1,0 +1,12 @@
+[package]
+name = "wc-rs"
+version = "0.1.0"
+authors = ["Kiril Videlov <kiril.vi@runbox.no>"]
+edition = "2018"
+
+[dependencies]
+spmc = "0.2.2"
+hashbrown = "0.3.0"
+
+[profile.release]
+lto = true

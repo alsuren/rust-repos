@@ -1,0 +1,37 @@
+[package]
+name = "json-view"
+description = "json-view."
+version = "0.0.0"
+authors = ["Andrew Hickman <andrew.hickman1@sky.com>"]
+repository = "https://github.com/andrewhickman/json-view"
+documentation = "https://docs.rs/json-view"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+edition = "2018"
+
+[[bin]]
+path = "src/main.rs"
+name = "jv"
+
+[dependencies]
+structopt = "0.2.14"
+termcolor = "1.0.4"
+failure = "0.1.5"
+dirs = "1.0.4"
+winapi-util = "0.1.2"
+same-file = "1.0.4"
+grep-cli = "0.1.1"
+serde = "1.0.88"
+serde-transcode = "1.1.0"
+clipboard = "0.5.0"
+
+[dependencies.json]
+version = "1.0.38"
+package = "serde_json"
+
+[dependencies.log]
+version = "0.4.6"
+features = ["std"]
+
+[dev-dependencies]
+proptest = "0.9.1"

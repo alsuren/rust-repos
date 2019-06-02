@@ -1,0 +1,9 @@
+[package]
+name = "issue_58375"
+version = "0.1.0"
+authors = ["Cem Karan <cem.f.karan.civ@mail.mil>", "Jethro Beekman"]
+edition = "2018"
+
+[dependencies]
+rand = "=0.6.5"
+bit-set = "=0.5.0"

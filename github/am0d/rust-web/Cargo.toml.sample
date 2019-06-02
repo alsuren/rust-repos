@@ -1,0 +1,18 @@
+[package]
+name = "rust-web"
+version = "0.1.0-pre"
+authors = [ "Damien Schoof" ]
+
+[[bin]]
+name = "server"
+#path = "src/web/main.rs"
+
+[dependencies.http]
+git = "https://github.com/chris-morgan/rust-http.git"
+
+[dependencies.time]
+git = "https://github.com/rust-lang/time.git"
+
+#[dependencies.razor]
+#git = "https://github.com/am0d/rusty-razor.git"
+#branch = "wip"

@@ -1,0 +1,9 @@
+[package]
+
+name = "tensors"
+version = "0.0.1"
+authors = ["Michael Yang <mikkyangg@gmail.com>"]
+
+[dependencies]
+rblas = "0.0.2"
+num = "*"

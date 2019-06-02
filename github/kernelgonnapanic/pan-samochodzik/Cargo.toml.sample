@@ -1,0 +1,12 @@
+[package]
+name = "pan_samochodzik"
+version = "0.1.0"
+authors = ["kernelgonnapanic <ania@zdwola.pl>"]
+
+[dependencies]
+piston = "*"
+piston2d-graphics = "*"
+pistoncore-glutin_window = "*"
+piston2d-opengl_graphics = "*"
+nalgebra = "*"
+ncollide = "*"

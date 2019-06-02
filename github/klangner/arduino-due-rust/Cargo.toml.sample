@@ -1,0 +1,13 @@
+[package]
+name = "arduino-due-rust"
+version = "0.1.0"
+authors = ["Krzysztof Langner <klangner@gmail.com>"]
+
+
+[dependencies]
+sam3x = { path = "../sam3x" }
+
+
+[profile.release]
+# Add link-time optimization to minimize the code size.
+lto = true

@@ -1,0 +1,16 @@
+[package]
+name = "pawn-templates"
+version = "0.1.0"
+authors = ["Southclaws <hello@southcla.ws>"]
+
+[lib]
+name = "pawn_templates"
+crate-type = ["dylib"]
+
+[dependencies]
+samp-sdk = { git="https://github.com/ZOTTCE/samp-sdk" }
+liquid = "0.18"
+
+[features]
+default = ["nightly"]
+nightly = []

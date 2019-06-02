@@ -1,0 +1,12 @@
+[package]
+name = "txport"
+version = "0.1.0"
+authors = ["djKooks <inylove82@gmail.com>"]
+
+[lib]
+name = "txport"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+version = "0.2"
+features = ["extension-module"]

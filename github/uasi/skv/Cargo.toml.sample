@@ -1,0 +1,10 @@
+[package]
+name = "skv"
+version = "0.1.0"
+authors = ["Tomoki Aonuma <uasi@uasi.jp>"]
+
+[dependencies]
+clap = "0.9"
+regex = "0.1"
+serde = "0.4"
+url = "0.2"

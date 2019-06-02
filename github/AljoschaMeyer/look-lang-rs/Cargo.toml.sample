@@ -1,0 +1,9 @@
+[package]
+name = "look-lang"
+version = "0.1.0"
+authors = ["AljoschaMeyer <mail@aljoscha-meyer.de>"]
+license = "AGPL-3.0"
+
+[dependencies]
+nom = "3.2.1"
+nom_locate = "0.1.1"

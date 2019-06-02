@@ -1,0 +1,14 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["westerhack"]
+
+[dependencies]
+	
+rand = "0.3.0"
+lazy_static = "0.2"
+guard = "0.3.3"
+regex = "0.2"
+
+[features]
+allow_assert = []

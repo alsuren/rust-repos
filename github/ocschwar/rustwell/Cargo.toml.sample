@@ -1,0 +1,26 @@
+[package]
+name = "rustwell"
+version = "0.1.0"
+authors = ["Omri <ocschwar@mit.edu>"]
+
+[dependencies]
+docopt = "*"
+diesel =         { version = "*", default-features = false, features = ["sqlite", "64-column-tables" ] }
+serde_derive = "*"
+serde = "*"
+dotenv = "*"
+regex="*"
+rocket="*"
+failure="*"
+failure_derive="*"
+rocket_codegen="*"
+r2d2 = "*"
+r2d2-diesel = "*"
+rocket_contrib = "*"
+error-chain = "*"
+rexif = "*"
+sha2 = "*"
+multipart = "*"
+crypto = "*"
+rustc-serialize= "*"
+jpeg-decoder = "*"

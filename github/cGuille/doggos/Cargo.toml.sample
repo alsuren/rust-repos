@@ -1,0 +1,9 @@
+[package]
+name = "doggos"
+version = "0.1.0"
+authors = ["Guillaume Charmetant <cguille.dev@gmail.com>"]
+
+[dependencies]
+actix-web = "0.6"
+serde = "1.0"
+serde_derive = "1.0"

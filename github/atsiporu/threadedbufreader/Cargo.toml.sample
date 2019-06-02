@@ -1,0 +1,13 @@
+[package]
+name = "tbr"
+version = "0.1.0"
+authors = ["andrey"]
+
+[lib]
+name = "tbr"
+
+[dependencies]
+
+[[bin]]
+name = "main"
+doc = false

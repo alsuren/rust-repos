@@ -1,0 +1,8 @@
+[package]
+name = "nummer"
+version = "0.1.0"
+authors = ["Joel Depooter"]
+
+[dependencies]
+clap="2"
+byteorder = "1.2.7"

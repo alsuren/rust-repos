@@ -1,0 +1,20 @@
+[package]
+name = "nonchalance"
+version = "0.1.0"
+authors = ["Kirill Pimenov <kirill@pimenov.cc>"]
+
+[dependencies]
+ttf-noto-sans = "*"
+ws = "*"
+url = "*"
+ring-pwhash = "*"
+simple-signal = "*"
+lazy_static = "*"
+
+[dependencies.conrod]
+version = "0.53.0"
+features = ["glium", "winit"]
+
+[profile.release]
+lto = true
+# panic = 'abort'

@@ -1,0 +1,17 @@
+[package]
+name = "definitely_not_linox"
+version = "0.1.0"
+authors = ["Mathew Robinson <mathew.robinson3114@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "*"
+spin = "*"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

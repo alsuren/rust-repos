@@ -1,0 +1,8 @@
+[package]
+name = "desktop"
+version = "0.1.0"
+authors = ["Angel Afonso <afonso@oxoftmedia.com>"]
+edition = "2018"
+
+[dependencies]
+widget = { path = "./widget" }

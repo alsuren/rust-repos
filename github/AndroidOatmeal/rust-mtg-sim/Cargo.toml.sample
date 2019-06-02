@@ -1,0 +1,7 @@
+[package]
+name = "mtgsim"
+version = "0.1.0"
+authors = ["Andrew O'Neill <phasmid1@gmail.com>"]
+
+[dependencies.clippy]
+git = "https://github.com/Manishearth/rust-clippy"

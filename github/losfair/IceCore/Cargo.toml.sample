@@ -1,0 +1,24 @@
+[package]
+name = "ice_core"
+version = "0.5.1"
+authors = ["losfair <zhy20000919@hotmail.com>"]
+description = "High performance Web engine"
+license = "LGPL-3.0"
+repository = "https://github.com/losfair/IceCore"
+
+[profile.release]
+debug = true
+
+[dependencies]
+wasm-core = { version = "0.2.12", features = ["jit", "trans"] }
+serde = "1"
+serde_derive = "1"
+serde_yaml = "0.7"
+slab = "0.4"
+futures = "0.1.20"
+tokio = "0.1"
+ansi_term = "0.11"
+chrono = "0.4"
+tokio-io = "0.1"
+bincode = "1"
+sha2 = "0.7"

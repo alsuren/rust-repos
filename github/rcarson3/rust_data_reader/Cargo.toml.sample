@@ -1,0 +1,73 @@
+[package]
+name = "data_reader"
+version = "0.3.0"
+authors = ["rcarson3 <rac428@cornell.edu>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+edition = "2018"
+publish = false
+
+repository = "https://github.com/rcarson3/rust_data_reader/"
+
+description = "A data loading library for data scientist."
+
+keywords = ["data-reader"]
+categories = ["data-structures", "science"]
+
+exclude = [
+    "*.txt",
+    "/tests/*",
+    "/benches/*",
+]
+
+[dependencies] 
+bytecount = "0.5.1"
+failure = "0.1.5"
+memchr = "2.2.0"
+lexical = "2.1.0"
+
+[dev-dependencies]
+criterion = "0.2.10"
+[[bench]]
+name = "examples"
+harness = false
+[profile.release]
+opt-level = 3
+debug = false
+# rpath = false
+# lto = 'fat'
+# debug-assertions = false
+codegen-units = 1
+# panic = 'unwind'
+# incremental = false
+# overflow-checks = false
+# [profile.dev]
+# opt-level = 3
+# debug = false
+# rpath = false
+# lto = false
+# debug-assertions = true
+# codegen-units = 16
+# panic = 'unwind'
+# incremental = false
+# overflow-checks = false
+[profile.bench]
+opt-level = 3
+debug = false
+# # rpath = false
+# lto = 'fat'
+# debug-assertions = false
+codegen-units = 1
+# panic = 'abort'
+# incremental = false
+# overflow-checks = false
+# [profile.test]
+# opt-level = 3
+# debug = false
+# rpath = false
+# lto = false
+# debug-assertions = true
+# codegen-units = 16
+# panic = 'unwind'
+# incremental = false
+# overflow-checks = false

@@ -1,0 +1,10 @@
+[package]
+
+name = "ftb"
+version = "0.0.1"
+authors = ["Peter Atashian <retep998@gmail.com>"]
+
+[dependencies]
+regex = "*"
+rustc-serialize = "*"
+image = { version = "*", features = ["png_codec"], default-features = false }

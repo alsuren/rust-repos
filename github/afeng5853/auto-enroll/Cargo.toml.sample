@@ -1,0 +1,11 @@
+[package]
+name = "autoenroll"
+version = "0.1.0"
+authors = ["alex <alex.feng@stonybrook.edu>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1.5"
+
+jsonwatcher = {path = "jsonwatcher"}
+notify = {path = "notify"}

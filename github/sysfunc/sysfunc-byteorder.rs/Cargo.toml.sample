@@ -1,0 +1,39 @@
+[package]
+name = "sysfunc-byteorder"
+version = "0.1.2"
+authors = ["A.W. Stanley <aws@sysfunc.net>"]
+edition = "2018"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/sysfunc/sysfunc-byteorder.rs/"
+homepage = "https://github.com/sysfunc/sysfunc-byteorder.rs/"
+categories = ["no-std"]
+include = [
+    "src/*.rs",
+    "Cargo.toml",
+    "README.md",
+    "ISSUES.md",
+    "LICENCE",
+    "CHANGES.md",
+]
+
+description = """
+Basic compile-time byteorder for various environments #![no_std].
+"""
+
+[features]
+default = []
+
+# Adds `#![no_core]`
+no-core = []
+
+# Enables u128
+enable-128 = []
+
+# Force target_endian to be skipped and use `from_be` in all cases.
+force-conversion = []
+
+[package.metadata.pushdocs]
+repository = "https://github.com/sysfunc/sysfunc-byteorder.rs/"
+branch = "gh-pages"
+features = []

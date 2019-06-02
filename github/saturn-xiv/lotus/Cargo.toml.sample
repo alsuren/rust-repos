@@ -1,0 +1,41 @@
+[package]
+name = "lotus"
+version = "0.1.0"
+authors = ["Jeremy Zheng <jitang.zheng@gmail.com>"]
+description = "A complete open source Office-Automation solution."
+homepage = "https://github.com/saturn-xiv/lotus"
+license = "MIT"
+
+[profile.release]
+lto = true
+
+[dependencies]
+r2d2 = "0.8"
+log = "0.4"
+serde = "1"
+serde_json = "1"
+validator = "0.8"
+validator_derive = "0.8"
+error-chain = "0.12"
+lazy_static = "1.0"
+serde_derive = "1"
+rocket = "0.4.0-rc.2"
+
+[dependencies.pug]
+path = "../pug"
+# git = "https://github.com/saturn-xiv/pug.git"
+default-features = false
+features = ["postgresql"]
+
+[dependencies.chrono]
+version = "0.4"
+features = ["serde"]
+
+[dependencies.rocket_contrib]
+version = "0.4.0-rc.2"
+default-features = false
+features = ["tera_templates", "json", "uuid", "redis_pool"]
+
+[dependencies.diesel]
+version = "1.3"
+features = ["postgres", "chrono", "serde_json", "uuid", "network-address", "numeric", "r2d2", "128-column-tables"]

@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "lib",
+    "rezippers",
+]
+
+[profile.bench]
+lto = true
+debug = true
+
+[profile.release]
+lto = true
+#debug = true

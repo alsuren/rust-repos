@@ -1,0 +1,25 @@
+[package]
+authors = ["Eric Trombly <etrombly@gmail.com>"]
+categories = ["asynchronous", "embedded", "hardware-support", "no-std"]
+description = "Board Support Crate for the bluepill"
+keywords = ["arm", "cortex-m", "stm32"]
+license = "MIT OR Apache-2.0"
+name = "bluepill"
+repository = "https://github.com/etrombly/bluepill"
+version = "0.0.1"
+
+[dependencies]
+cortex-m = "0.2.4"
+cortex-m-rt = "0.2.0"
+cortex-m-rtfm = "0.1.0"
+stm32f103xx = { git = "https://github.com/etrombly/stm32f103xx" }
+hal = { git = "https://github.com/etrombly/hal" }
+haldriver = { git = "https://github.com/etrombly/haldriver" }
+heapless = "0.1.0"
+
+[dependencies.cast]
+default-features = false
+version = "0.2.0"
+
+[profile.release]
+lto = true

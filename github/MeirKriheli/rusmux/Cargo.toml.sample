@@ -1,0 +1,11 @@
+[package]
+name = "rusmux"
+version = "0.1.0"
+authors = ["Meir Kriheli <mkriheli@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "~2.32"
+app_dirs = "~1.2"
+glob = "~0.3"
+yaml-rust = "0.4"

@@ -1,0 +1,10 @@
+[package]
+name = "sidplayer-rs"
+version = "0.1.0"
+authors = ["takuya"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1"
+resid-rs = "1.0.1"
+sdl2 = "0.32.2"

@@ -1,0 +1,15 @@
+[package]
+name = "termbuffer"
+version = "0.1.1"
+authors = ["Richard Dodd <richard.o.dodd@gmail.com>"]
+license = "Apache-2.0/MIT"
+edition = "2018"
+include = ["src/**/*.rs", "examples/*.rs", "README.md", "Cargo.toml"]
+description = "Immediate mode rendering to the terminal"
+repository = "https://github.com/derekdreery/termbuffer-rs"
+readme = "README.md"
+keywords = ["terminal", "tui"]
+categories = ["command-line-interface", "gui", "rendering"]
+
+[dependencies]
+termion = "1"

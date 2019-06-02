@@ -1,0 +1,20 @@
+[package]
+name = "license-generator"
+description = "A Command line tool that generate `LICENSE` file."
+keywords = ["license","generator", "cli"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/azu/license-generator"
+version = "0.4.0"
+authors = ["azu <azuciao@gmail.com>"]
+edition = "2018"
+include = [
+    "files/**/*",
+    "src/**/*",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE"
+]
+[dependencies]
+structopt = "0.2.14"
+chrono = "0.4"

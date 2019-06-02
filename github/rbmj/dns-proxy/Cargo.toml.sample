@@ -1,0 +1,9 @@
+[package]
+name = "dns-proxy"
+version = "0.0.1"
+authors = ["rbmj <rbmj@verizon.net>"]
+
+[dependencies]
+lru-cache = "0.1.0"
+rand = "0.3.15"
+dnis = { path = "../dnis" }

@@ -1,0 +1,26 @@
+[package]
+name = "running_into_space"
+version = "0.1.0"
+authors = ["Simon Heath <icefoxen@gmail.com>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+[profile.dev]
+opt-level = 1
+
+[dependencies]
+# Game stuff
+ggez = "0.4"
+ggez-goodies = { git = "https://github.com/ggez/ggez-goodies", rev = "aacd12867d886b0331478ab616dcb35e337643a8" }
+specs = "0.12"
+specs-derive = "0.2"
+warmy = "0.7"
+nalgebra = "0.16"
+ncollide2d = "0.17"
+
+# Utility stuff
+log = "0.4"
+fern = {version = "0.5", features = ["colored"] }
+chrono = "0.4"
+failure = "0.1"
+rand = "0.5"

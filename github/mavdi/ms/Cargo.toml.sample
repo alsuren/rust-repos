@@ -1,0 +1,10 @@
+[package]
+
+name = "ms"
+version = "0.1.0"
+authors = [ "mehdi.avdi@gmail.com" ]
+
+[[lib]]
+
+name = "ms"
+path = "src/ms.rs"

@@ -1,0 +1,53 @@
+[package]
+name = "piston-tutorials"
+version = "0.1.0"
+authors = ["void"]
+license = "MIT/Apache-2.0"
+
+[[bin]]
+name = "base"
+path = "src/base.rs"
+
+[[bin]]
+name = "hello_window"
+path = "src/1-getting_started/1-hello_window.rs"
+
+[[bin]]
+name = "event_loop"
+path = "src/1-getting_started/2-event_loop.rs"
+
+[[bin]]
+name = "keyboard"
+path = "src/1-getting_started/3-keyboard.rs"
+
+[[bin]]
+name = "sprite"
+path = "src/1-getting_started/4-sprite.rs"
+
+[[bin]]
+name = "aabb_collision"
+path = "src/1-getting_started/5-aabb_collision.rs"
+
+[[bin]]
+name = "sound_ears"
+path = "src/1-getting_started/6-sound_ears.rs"
+
+[[bin]]
+name = "sound_piston"
+path = "src/1-getting_started/6-sound_piston.rs"
+
+[[bin]]
+name = "pong"
+path = "src/2-pong/pong_soundless.rs"
+
+[[bin]]
+name = "pong_sound_ears"
+path = "src/2-pong/pong_sound_ears.rs"
+
+[dependencies]
+piston = "*"
+piston_window = "*"
+find_folder = "*"
+rand = "*"
+ears = "*"
+piston-music = "*"

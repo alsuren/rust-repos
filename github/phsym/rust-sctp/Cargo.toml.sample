@@ -1,0 +1,21 @@
+[package]
+
+name = "rust-sctp"
+version = "0.0.5"
+description = "High level SCTP networking library"
+repository = "https://github.com/phsym/rust-sctp"
+documentation = "http://phsym.github.io/rust-sctp"
+readme = "README.md"
+authors = [ "Pierre-Henri Symoneaux" ]
+keywords = ["transport", "network", "sctp", "libsctp", "socket"]
+license = "MIT"
+
+[dependencies]
+# sctp-sys = { git = "https://github.com/phsym/sctp-sys" }
+sctp-sys = "0.0.7"
+libc = "^0.2"
+winapi = "^0.3"
+ws2_32-sys = "^0.2"
+
+[lib]
+name = "sctp"

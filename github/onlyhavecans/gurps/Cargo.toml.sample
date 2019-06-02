@@ -1,0 +1,9 @@
+[package]
+name = "gurps"
+version = "0.2.0"
+authors = ["Amy Aronsohn <WagThatTail@Me.com>"]
+edition = "2018"
+
+[dependencies]
+rustyline = "3.0"
+rand = "0.6"

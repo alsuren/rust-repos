@@ -1,0 +1,35 @@
+[package]
+
+# Project metadata
+name = "rbpf"
+version = "0.1.0"
+authors = ["Quentin Monnet <quentin.monnet@netronome.com>"]
+
+# Additional metadata for packaging
+description = "Virtual machine and JIT compiler for eBPF programs"
+repository = "https://github.com/qmonnet/rbpf"
+readme = "README.md"
+keywords = ["BPF", "eBPF", "interpreter", "JIT", "filtering"]
+license = "Apache-2.0/MIT"
+
+# Packaging directives
+include = [
+    "src/**",
+    "examples/**",
+    "tests/**",
+    "bench/**",
+    "LICENSE*",
+    "Cargo.toml",
+]
+
+[dependencies]
+
+combine = "2.5"
+libc = "0.2"
+time = "0.1"
+byteorder = "1.2"
+
+[dev-dependencies]
+
+elf = "0.0.10"
+json = "0.11"

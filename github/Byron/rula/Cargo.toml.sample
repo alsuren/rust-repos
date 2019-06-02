@@ -1,0 +1,16 @@
+[package]
+
+name = "rula"
+version = "0.0.1"
+authors = ["Sebastian Thiel <byronimo@gmail.com>"]
+description = "A program to reverse input, and a library with string utilities"
+license = "MIT"
+keywords = ["toy", "test", "notforuse"]
+repository = "https://github.com/byron/rula"
+
+[lib]
+name = "string"
+path = "src/lib.rs"
+
+[dependencies]
+strsim = "0.1.1"

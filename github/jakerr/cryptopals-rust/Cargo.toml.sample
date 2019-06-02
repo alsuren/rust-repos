@@ -1,0 +1,11 @@
+[package]
+name = "cryptopals"
+version = "0.1.0"
+authors = ["Jake Kerr <kodafox@gmail.com>"]
+
+[[bin]]
+name = "xor"
+path = "src/tools/xor.rs"
+
+[dependencies]
+openssl = "*"

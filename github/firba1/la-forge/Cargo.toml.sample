@@ -1,0 +1,11 @@
+[package]
+name = "la-forge"
+version = "0.1.0"
+authors = ["breetz"]
+
+[dependencies]
+error-chain = "^0.11.0"
+maplit = "^1.0.0"
+serde = "^1.0.0"
+serde_derive = "^1.0.0"
+itertools = "^0.7.8"

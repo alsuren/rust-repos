@@ -1,0 +1,18 @@
+[package]
+build = "build.rs"
+
+name = "gbEmu"
+version = "0.0.1"
+authors = ["Daniel Bokser <dan.bokser@gmail.com>"]
+
+
+
+[dependencies]
+bitflags = "*"
+sdl2-sys = "*"
+sdl2 = "*"
+libc = "*"
+errno = "*"
+
+[build-dependencies]
+gcc="*"

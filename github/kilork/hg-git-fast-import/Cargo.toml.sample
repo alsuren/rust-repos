@@ -1,0 +1,33 @@
+[package]
+name = "hg-git-fast-import"
+version = "1.2.2"
+authors = ["Alexander Korolev <kilork@yandex.ru>"]
+license = "Unlicense OR MIT"
+description = """
+A utility to import single and multiple Mercurial repositories to Git.
+"""
+readme = "README.md"
+homepage = "https://github.com/kilork/hg-git-fast-import"
+repository = "https://github.com/kilork/hg-git-fast-import"
+keywords = ["cli", "hg", "git", "mercurial", "convert"]
+categories = ["command-line-utilities"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+simplelog = "0.5"
+regex = "1"
+lazy_static = "1"
+toml = "0.5"
+structopt = "0.2"
+hg-parser = "0.2"
+ordered-parallel-iterator = "0.1"
+indicatif = "0.11"
+dialoguer = "0.4"
+
+[dependencies.serde]
+version = "1.0"
+features = ["derive"]
+
+[dev-dependencies]
+pretty_assertions = "0.6"

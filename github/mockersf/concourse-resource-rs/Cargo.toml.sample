@@ -1,0 +1,20 @@
+[package]
+name = "concourse-resource"
+version = "0.1.0"
+authors = ["François Mockers <mockersf@gmail.com>"]
+edition = "2018"
+description = "Helper create to create resources for Concourse CI"
+repository = "https://github.com/mockersf/concourse-resource-rs"
+homepage = "https://github.com/mockersf/concourse-resource-rs"
+documentation = "https://docs.rs/concourse-resource"
+keywords = ["concourse", "CI"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[badges]
+travis-ci = { repository = "mockersf/concourse-resource-rs" }
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+concourse-resource-derive = { path = "concourse-resource-derive", version = "0.1.0" }

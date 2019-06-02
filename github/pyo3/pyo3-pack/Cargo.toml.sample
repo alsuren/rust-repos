@@ -1,0 +1,61 @@
+[package]
+authors = ["konstin <konstin@mailbox.org>"]
+name = "pyo3-pack"
+version = "0.5.0"
+description = "Build and publish crates with pyo3, rust-cpython and cffi bindings as well as rust binaries as python packages"
+exclude = ["get-fourtytwo/**/*", "integration-test/**/*", "sysconfig/*"]
+readme = "Readme.md"
+repository = "https://github.com/pyo3/pyo3-pack"
+license = "MIT OR Apache-2.0"
+keywords = ["python", "cffi", "packaging", "pypi", "pyo3"]
+categories = ["api-bindings", "development-tools::ffi", "command-line-utilities"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "PyO3/pyo3-pack" }
+appveyor = { repository = "konstin/pyo3" }
+
+[[bin]]
+name = "pyo3-pack"
+
+[lib]
+name = "pyo3_pack"
+
+[dependencies]
+base64 = "0.10.1"
+cargo_metadata = "0.7.4"
+digest = { version = "0.8.0", features = ["std"] }
+failure = "0.1.5"
+keyring = { version = "0.7.0", optional = true }
+reqwest = { version = "0.9.15", optional = true, default-features = false }
+rpassword = { version = "3.0.2", optional = true }
+serde_json = "1.0.39"
+sha2 = "0.8.0"
+structopt = "0.2.15"
+target_info = "0.1.0"
+toml = "0.5.0"
+zip = "0.5.2"
+serde = { version = "1.0.91", features = ["derive"] }
+human-panic = { version = "1.0.1", optional = true }
+regex = "1.1.6"
+indicatif = "0.11.0"
+atty = "0.2.11"
+tempfile = "3.0.8"
+goblin = "0.0.22"
+pretty_env_logger = { version = "0.3.0", optional = true }
+platforms = "0.2.0"
+shlex = "0.1.1"
+cbindgen = "0.8.7"
+
+[dev-dependencies]
+indoc = "0.3.3"
+
+[features]
+default = ["auditwheel", "log", "upload", "rustls"]
+auditwheel = []
+upload = ["reqwest", "rpassword"]
+password-storage = ["upload", "keyring"]
+log = ["pretty_env_logger"]
+# We use rustls for manylinux compliance and because unlike both dynamic and
+# static openssl variants it can be built and used inside a cent os 5 container
+rustls = ["reqwest/rustls-tls"]

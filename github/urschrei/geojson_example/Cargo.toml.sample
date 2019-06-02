@@ -1,0 +1,28 @@
+[package]
+name = "geojson_example"
+version = "0.6.0"
+authors = ["Stephan Hügel <urschrei@gmail.com>"]
+license = "BSD Zero Clause License"
+readme = "README.md"
+repository = "https://github.com/urschrei/geojson_example"
+keywords = ["geo", "geojson", "gis"]
+edition = "2018"
+
+[dependencies]
+geo = "0.12.0"
+geo-types = "0.4.0"
+geojson = { version =  "0.16.0", features=["geo-types"] }
+serde_json = "1.0.39"
+rayon = "1.0.3"
+
+[[bin]]
+name = "borrowed"
+path = "src/borrowed.rs"
+
+[[bin]]
+name = "owned"
+path = "src/owned.rs"
+
+[[bin]]
+name = "borrowed_modify"
+path = "src/borrowed_modify.rs"

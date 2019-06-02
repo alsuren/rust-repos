@@ -1,0 +1,12 @@
+[package]
+name = "stdio_logger"
+description = "Display log messages to the standard output"
+authors = ["Mickaël RAYBAUD-ROIG <raybaudroigm@gmail.com>"]
+version = "0.1.1"
+license = "MIT"
+include = ["Cargo.toml", "src/lib.rs"]
+repository = "https://github.com/m-r-r/stdio_logger.git"
+
+[dependencies]
+log = "0.3.4"
+term-painter = "0.2.1"

@@ -1,0 +1,18 @@
+[package]
+name = "cibo"
+version = "0.1.0"
+authors = ["hawkingrei <hawking.rei@gmail.com>"]
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+clippy = { version = "*", optional = true }
+crossbeam-epoch = "0.5.2"
+crossbeam-utils = "0.5.0"
+crossbeam-deque = "0.3.0"
+gcc = "0.3.54"
+libc = "0.2.43"
+
+[dev-dependencies]
+rand = "0.4"

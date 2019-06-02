@@ -1,0 +1,50 @@
+[package]
+name = "opai-rs"
+version = "0.1.0"
+authors = ["Evgeny Kurnevsky <kurnevsky@gmail.com>"]
+license = "AGPL-3.0+"
+description = "Open Points Artificial Intelligence"
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+rand_xorshift = "0.1"
+time = "0.1"
+log = "0.4"
+log4rs = { version = "0.8", features = ["toml"] }
+num_cpus = "1.10"
+crossbeam = "0.7"
+rayon = "1.0"
+tar = "0.4"
+clap = "2.33"
+
+[dev-dependencies]
+env_logger = "0.6"
+
+[features]
+default = ["dsu"]
+dsu = []
+bench = []
+
+[profile.dev]
+opt-level = 0
+lto = false
+debug = true
+panic = "unwind"
+
+[profile.test]
+opt-level = 3
+lto = false
+debug = true
+
+[profile.bench]
+opt-level = 3
+lto = true
+debug = false
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
+panic = "abort"
+codegen-units = 1

@@ -1,0 +1,14 @@
+[package]
+name = "onvif"
+version = "0.1.0"
+authors = ["chris <chris@chrisbruce.com>"]
+edition = "2018"
+
+[dependencies]
+quick-xml = "0.13"
+uuid = { version = "0.7", features = ["v4"] }
+base64 = "0.10"
+chrono = "0.4"
+sha-1 = "0.8"
+url = "1.7"
+reqwest = "0.9"

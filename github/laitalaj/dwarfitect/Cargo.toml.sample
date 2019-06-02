@@ -1,0 +1,16 @@
+[package]
+name = "dwarfitect"
+version = "1.0.0"
+authors = ["laitalaj <julius.laitala@helsinki.fi>"]
+
+[dependencies]
+rustc-serialize = "*"
+rand = "*"
+
+[lib]
+name = "dwarfilib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dwarfimain"
+path = "src/main.rs"

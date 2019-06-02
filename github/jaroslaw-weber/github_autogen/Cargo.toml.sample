@@ -1,0 +1,9 @@
+[package]
+name = "github_autogen"
+version = "0.1.0"
+authors = ["Jaroslaw Weber <jaroslaw.weber@gmail.com>"]
+
+[dependencies]
+fs_extra = "1.1.0"
+serde_json = "1.0.9"
+github-rs = "0.6.1"

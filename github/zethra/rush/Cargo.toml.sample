@@ -1,0 +1,28 @@
+[package]
+name = "rush"
+version = "0.0.2"
+authors = ["Ben Goldberg <jediben97@gmail.com>"]
+build = "build.rs"
+
+[lib]
+doc = true
+name = "rush"
+path = "src/lib.rs"
+
+[dependencies]
+toml = "0.2.1"
+libc = "0.2.32"
+nix = "0.9.0"
+rustyline = "2.0.0"
+
+#libc = { git = "https://github.com/rust-lang/libc.git" }
+#nix = { git = "https://github.com/nix-rust/nix.git" }
+
+[build-dependencies]
+peg = "0.5"
+
+[profile.release]
+opt-level = 3
+rpath = false
+lto = true
+debug-assertions = false

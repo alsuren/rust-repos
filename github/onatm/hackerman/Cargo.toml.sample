@@ -1,0 +1,12 @@
+[package]
+name = "hackerman"
+version = "1.0.0"
+authors = ["onatm <onatmercan@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "hackerman_lib"
+path = "src/lib/hackerman.rs"
+
+[dependencies]
+nom = "^4.1"

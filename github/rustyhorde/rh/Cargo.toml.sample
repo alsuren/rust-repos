@@ -1,0 +1,42 @@
+[package]
+name = "rh"
+version = "0.0.1-pre"
+authors = ["Jason Ozias <jason.ozias@ipaper.com>"]
+description = "rh executable implementation"
+documentation = "http://rustyhorde.github.io/rh"
+homepage = "http://rustyhorde.github.io/rh"
+repository = "https://github.com/rustyhorde/rh"
+readme = "README.md"
+license = "MIT"
+keywords = ["rust","rustyhorde","clojure"]
+build = "build.rs"
+
+[build-dependencies]
+vergen = "*"
+
+[dependencies]
+curl = "*"
+docopt = "*"
+libmultilog = "*"
+log = "*"
+rand = "*"
+regex = "*"
+repl = "*"
+rl-sys = "*"
+rustc-serialize = "*"
+sha1 = "*"
+term = "*"
+time = "*"
+toml = "*"
+
+[dependencies.librhd]
+git = "https://github.com/rustyhorde/librhd.git"
+
+[dependencies.mio]
+git = "https://github.com/rustyhorde/mio.git"
+
+[dependencies.peg]
+git = "https://github.com/rustyhorde/rust-peg.git"
+
+[dependencies.mush]
+git = "https://github.com/rustyhorde/ssh2-rs.git"

@@ -1,0 +1,36 @@
+[package]
+name = "asset"
+version = "0.1.0"
+authors = ["Zakarum <scareaangel@gmail.com>"]
+description = "Asset management with support for gfx-hal"
+keywords = ["asset", "gfx", "gfx-hal", "gfx-render", "gfx-mesh", "graphics"]
+readme = "README.md"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/omni-viral/asset.git"
+documentation = "https://docs.rs/crate/asset/0.1.0/asset"
+
+[features]
+default = []
+
+mesh = ["gfx-hal", "gfx-render", "gfx-mesh"]
+texture = ["gfx-hal", "gfx-render", "gfx-texture"]
+fs = []
+sprite = []
+
+[dependencies]
+derivative = "1.0"
+futures = { version = "0.2", optional = true }
+gfx-hal = { version = "0.1", git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b", optional = true }
+gfx-mesh = { version = "0.1", git = "https://github.com/omni-viral/gfx-mesh", rev = "d648774", optional = true }
+gfx-texture = { version = "0.1", git = "https://github.com/omni-viral/gfx-texture", rev = "7aa98ee", optional = true }
+gfx-render = { version = "0.1", git = "https://github.com/gfx-rs/gfx-render", rev = "8e475a3", optional = true }
+log = "0.4"
+obj = { version = "0.8", optional = true }
+png = { version = "0.11", optional = true }
+ron = { version = "0.2", optional = true }
+serde = { version = "1.0", optional = true }
+failure = { version = "0.1" }
+
+[dev-dependencies]
+ron = "0.2"
+serde = { version = "1.0" }

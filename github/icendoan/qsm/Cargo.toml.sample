@@ -1,0 +1,13 @@
+[package]
+authors = ["Caleb Quilley <cquilley@tylercapital.co.uk>"]
+name = "qsm"
+version = "2.2.5"
+
+[dependencies]
+chrono = "*"
+libc = "0.2.29"
+
+[profile]
+
+[profile.release]
+lto = true

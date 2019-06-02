@@ -1,0 +1,13 @@
+[package]
+name = "rusty-guardian"
+version = "0.1.0"
+authors = ["William Di Pasquale <rolafium@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+reqwest = "0.9.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+termion = "1.0"
+tui = "0.4.0"

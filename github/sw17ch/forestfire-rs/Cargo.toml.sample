@@ -1,0 +1,11 @@
+[package]
+name = "forestfire"
+version = "0.0.1"
+authors = ["John Van Enk <vanenkj@gmail.com>"]
+
+[dependencies]
+rand = "0.3.7"
+getopts = "0.2.9"
+
+[[bin]]
+name = "burn"

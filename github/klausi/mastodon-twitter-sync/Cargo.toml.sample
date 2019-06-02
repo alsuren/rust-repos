@@ -1,0 +1,29 @@
+[package]
+name = "mastodon-twitter-sync"
+version = "1.2.1"
+authors = ["Klaus Purer <klaus.purer@protonmail.ch>"]
+edition = "2018"
+
+[dependencies]
+chrono = ">=0.4.0"
+dissolve = ">=0.2.2"
+# egg-mode = ">=0.13"
+# There is no egg-mode release yet for the Hyper upgrade which we need for
+# OpenSSL 1.1.1 support. Same for image alt text.
+# Switch back to 0.13 once that is released?
+# Nullable expand_url https://github.com/QuietMisdreavus/twitter-rs/pull/56
+# Nullable lang property https://github.com/QuietMisdreavus/twitter-rs/pull/57
+egg-mode = { git = "https://github.com/klausi/twitter-rs", rev = "5f4e3ca092796e8d6362ad0eb133940071ae3ada" }
+egg-mode-text = ">=1.14.7"
+failure = ">=0.1.5"
+# mammut = ">=0.12.0"
+# Switch to 0.12.1 once that is released.
+mammut = { git = "https://github.com/XAMPPRocky/Mammut", rev = "e072925541aaee193cdda1cf091177df932f8305" }
+mime = ">=0.3.13"
+regex = ">=0.2.2"
+reqwest = ">=0.9.5"
+serde = { version = ">=1.0", features = ["derive"] }
+tokio = ">=0.1.15"
+tempfile = "3"
+toml = ">=0.4.5"
+serde_json = ">=1.0.6"

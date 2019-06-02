@@ -1,0 +1,20 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+authors = ["Nemanja Boric <4burgos@gmail.com>"]
+
+[features]
+log-scheduler = []
+log-timertask = []
+log-swi = []
+log-msgbox = []
+
+[lib]
+crate-type=["staticlib"]
+
+#[target.arm-unknown-linux-gnueabi.dependencies]
+#spin="0.3.4"
+
+[dependencies.spin]
+git="https://github.com/Burgos/spin-rs.git"
+branch="trylock_pub"

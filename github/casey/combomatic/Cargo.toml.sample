@@ -1,0 +1,11 @@
+[package]
+name        = "combomatic"
+version     = "0.0.0"
+description = "🩺 Enumerate safe combinations"
+license     = "CC0-1.0"
+authors     = ["Casey Rodarmor <casey@rodarmor.com>"]
+repository  = "https://github.com/casey/combomatic"
+edition     = "2018"
+
+[dependencies]
+structopt = "0.2.15"

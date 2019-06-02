@@ -1,0 +1,16 @@
+[package]
+name = "tokio-runtime-wrapper"
+version = "0.1.0"
+authors = ["woodsmur <woodsmur@gmail.com>"]
+
+[dependencies]
+# reqwest = { git = "https://github.com/seanmonstar/reqwest.git" }
+reqwest = "0.9.1"
+url = "1.7.1"
+# hyper = "0.12"
+# hyper-native-tls = "0.2"
+# hyper-tls = "0.3"
+futures = "0.1"
+tokio = "0.1"
+tokio-core = "0.1"
+clap = "2"

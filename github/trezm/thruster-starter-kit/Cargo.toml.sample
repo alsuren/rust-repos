@@ -1,0 +1,13 @@
+[package]
+name = "fanta-starter-kit"
+version = "0.1.0"
+authors = ["Pete Mertz <peter.s.mertz@gmail.com>"]
+
+[dependencies]
+futures = "0.1"
+thruster = "0.3.2"
+lazy_static = "0.2"
+serde = "1.0.24"
+serde_json = "1.0.8"
+serde_derive = "1.0.24"
+time = "0.1"

@@ -1,0 +1,12 @@
+[package]
+name = "xxh"
+version = "0.1.0"
+authors = ["devedge <richard.pjski2@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+crossbeam-channel = "0.3"
+crossterm = "0.9.2"
+number_prefix = "0.3"
+structopt = "0.2"
+twox-hash = "1.2.0"

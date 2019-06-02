@@ -1,0 +1,29 @@
+[package]
+name = "scene_graph"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["scene_graph"]
+description = "scene graph"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-scene_graph.git"
+homepage = "https://github.com/nathanfaucett/rs-scene_graph"
+
+[dependencies]
+spin = "0.4"
+impl_any = {git = "https://github.com/nathanfaucett/rs-impl_any"}
+
+hash_map = {git = "https://github.com/nathanfaucett/rs-hash_map"}
+insert = {git = "https://github.com/nathanfaucett/rs-insert"}
+map = {git = "https://github.com/nathanfaucett/rs-map"}
+iterable = {git = "https://github.com/nathanfaucett/rs-iterable"}
+iterable_mut = {git = "https://github.com/nathanfaucett/rs-iterable_mut"}
+
+vector = {git = "https://github.com/nathanfaucett/rs-vector"}
+stack = {git = "https://github.com/nathanfaucett/rs-stack"}
+remove = {git = "https://github.com/nathanfaucett/rs-remove"}
+
+shared = {git = "https://github.com/nathanfaucett/rs-shared.git"}
+
+[dev-dependencies]

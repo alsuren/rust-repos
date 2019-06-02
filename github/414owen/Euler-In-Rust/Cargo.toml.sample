@@ -1,0 +1,10 @@
+[package]
+name = "euler"
+version = "0.1.0"
+authors = ["Owen Shepherd <owen.shepherd@workday.com>"]
+
+[dependencies]
+num = "*"
+num-traits = "*"
+itertools = "0.4.16"
+numeral = "*"

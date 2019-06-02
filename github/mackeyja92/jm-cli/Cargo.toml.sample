@@ -1,0 +1,15 @@
+[package]
+name = "jm-cli"
+version = "0.1.0"
+authors = ["Jared Mackey <jared@mackey.tech>"]
+
+[dependencies]
+clap = {version="*", features=["suggestions", "color"]}
+interfaces = "0.0.4"
+walkdir = "*"
+unrar = "*"
+log = "*"
+env_logger = "*"
+regex = "*"
+lazy_static = "*"
+fs_extra = "*"

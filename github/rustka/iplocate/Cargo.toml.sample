@@ -1,0 +1,21 @@
+[package]
+name = "iplocate"
+version = "0.1.0"
+authors = ["Rustka K. Blinsk <rustka@protonmail.com>"]
+description = "A powerful IP geolocation API"
+repository = "https://github.com/rustka/iplocate"
+readme = "README.md"
+keywords = ["api", "geolocation", "ip"]
+categories = ["api-bindings"]
+license = "MIT OR Apache-2.0"
+include = ["src/**/*.rs", "Cargo.toml"]
+
+[badges]
+travis-ci = { repository = "rustka/iplocate", branch = "master" }
+
+[dependencies]
+chrono = "0.4"
+reqwest = "0.9"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

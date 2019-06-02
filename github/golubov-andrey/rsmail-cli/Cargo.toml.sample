@@ -1,0 +1,9 @@
+[package]
+name = "rsmail-cli"
+version = "0.1.0"
+authors = ["Golubov Andrey <golubov.andrey.pavlovich@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+native-tls = "0.2.2"
+imap = "0.10.0"

@@ -1,0 +1,29 @@
+[package]
+name = "rotor-carbon"
+description = """
+    The carbon bindings for rotor
+"""
+license = "MIT/Apache-2.0"
+readme = "README.rst"
+keywords = ["mio", "carbon", "graphite", "rotor", "metrics"]
+homepage = "http://github.com/tailhook/rotor-carbon"
+documentation = "http://tailhook.github.io/rotor-carbon"
+version = "0.6.0"
+authors = ["paul@colomiets.name"]
+
+[dependencies]
+rotor = "0.6.1"
+log = "0.3.1"
+rotor-tools = "0.3.1"
+rotor-stream = { version="0.6.1", features = ["replaceable"] }
+time = "0.1.34"
+num = "0.1.30"
+
+
+[dev-dependencies]
+argparse = "0.2.1"
+rand = "0.3.13"
+env_logger = "0.3.2"
+
+[lib]
+name = "rotor_carbon"

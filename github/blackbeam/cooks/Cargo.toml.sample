@@ -1,0 +1,31 @@
+[package]
+
+name = "cooks"
+version = "0.0.3"
+authors = ["blackbeam <aikorsky@gmail.com>"]
+keywords = ["workers", "threads"]
+description = "Squad of cooks ready to cook your data."
+repository = "https://github.com/blackbeam/cooks"
+license = "MIT"
+exclude = [".*"]
+
+[lib]
+
+name = "cooks"
+crate_type = ["rlib"]
+path = "src/lib.rs"
+
+[profile.dev]
+
+opt-level = 0
+debug = true
+
+[profile.release]
+
+opt-level = 3
+debug = false
+
+[profile.test]
+
+opt-level = 0
+debug = true

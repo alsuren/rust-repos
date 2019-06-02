@@ -1,0 +1,31 @@
+[package]
+name = "www"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yoshuawuyts/www"
+documentation = "https://docs.rs/www"
+description = "www.yoshuawuyts.com."
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+exitfailure = "0.5.1"
+human-panic = "1.0.1"
+structopt = "0.2.12"
+log = "0.4.5"
+clap_flags = "0.3.0"
+failure = "0.1.2"
+futures = "0.1.25"
+hyper = "0.12.11"
+tokio = "0.1.11"
+html-index = "0.1.7"
+tachyons = "0.1.1"
+css-rel-preload = "0.1.0"
+webmanifest = "0.2.3"
+
+[build-dependencies]
+mkdirp = "0.1.0"
+structopt = "0.2.12"
+clap_flags = "0.3.0"
+failure = "0.1.2"

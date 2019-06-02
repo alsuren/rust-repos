@@ -1,0 +1,19 @@
+[package]
+name = "pastiche"
+version = "0.1.0"
+authors = ["Miles Steele <miles@milessteele.com>"]
+
+# https://github.com/rust-lang/cargo/issues/1359
+# (doesn't seem to have any performance impact)
+# cargo-features = ["always-optimize-deps"]
+# always-optimize-deps = true
+
+[dependencies]
+colorify = "0.2.2"
+find_folder = "0.3.0"
+image = "0.16.0"
+ocl = "0.15.0"
+piston_window = "0.71.1"
+rand = "0.3.14"
+time = "0.1.38"
+camera_capture = { git = "https://github.com/mlsteele/camera_capture.git", rev = "e356f10" }

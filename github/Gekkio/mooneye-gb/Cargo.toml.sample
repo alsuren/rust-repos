@@ -1,0 +1,34 @@
+[workspace]
+members = ["core"]
+
+[package]
+name = "mooneye-gb"
+version = "0.2.0-pre"
+authors = ["Joonas Javanainen <joonas.javanainen@gmail.com>"]
+license = "GPL-3.0+"
+edition = "2018"
+
+[dependencies]
+arraydeque = "0.4"
+docopt = "1.0"
+failure = "0.1"
+glium = "0.24"
+imgui = { git = "https://github.com/Gekkio/imgui-rs.git", rev = "41d6ccc6b3e56e157f094fbf66233d7c005b3a0e" }
+imgui-glium-renderer = { git = "https://github.com/Gekkio/imgui-rs.git", rev = "41d6ccc6b3e56e157f094fbf66233d7c005b3a0e" }
+log = "0.4"
+mooneye-gb-core = { version = "0.2.0-pre", path = "core" }
+nalgebra = "0.18"
+num-traits = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+sdl2 = "0.32"
+simplelog = "0.5"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[profile.test]
+opt-level = 2
+
+[features]
+include-bootroms = ["mooneye-gb-core/include-bootroms"]

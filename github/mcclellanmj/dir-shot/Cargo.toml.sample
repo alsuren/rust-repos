@@ -1,0 +1,12 @@
+[package]
+name = "directory-capture"
+version = "0.1.0"
+authors = ["Matt McClellan <mcclellan.mj@gmail.com>"]
+
+[dependencies]
+clap = "2"
+walkdir = "2"
+rusqlite = "0.14"
+time = "0.1"
+cast = "0.2"
+lru = "0.1"

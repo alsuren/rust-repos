@@ -1,0 +1,17 @@
+[package]
+name = "syava"
+version = "0.1.0"
+authors = ["Arseniy Seroka <ars.seroka@gmail.com>"]
+
+[[bin]]
+name = "syavac"
+
+[dependencies]
+llvm-sys = "0.2.1"
+argparse = "0.2.1"
+libc = "0.2.7"
+typed-arena = "1.1.0"
+
+[features]
+
+print_module = [] # feature has no explicit dependencies

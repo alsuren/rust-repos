@@ -1,0 +1,8 @@
+[package]
+name = "audio_dials"
+version = "0.1.0"
+authors = ["zethra"]
+
+[dependencies]
+alsa = "0.1.3"
+serial = "0.3"

@@ -1,0 +1,25 @@
+[package]
+name = "instrument"
+version = "0.2.0"
+authors = ["mitchmindtree <mitchell.nordine@gmail.com>"]
+description = "A foundational type for performable musical instruments. Converts discrete note events to a continuous signal of amplitude and frequency over N number of voices. Useful for instruments such as synthesizers or samplers."
+readme = "README.md"
+keywords = ["synthesis", "dsp", "audio", "music", "instrument"]
+license = "MIT"
+repository = "https://github.com/RustAudio/instrument.git"
+homepage = "https://github.com/RustAudio/instrument"
+
+[dependencies]
+pitch_calc = "0.11.0"
+rand = "0.3.4"
+time_calc = "0.11.0"
+serde = { optional = true, version = "0.7.0" }
+serde_json = { optional = true, version = "0.7.0" }
+
+[features]
+serde_serialization = [
+    "serde",
+    "serde_json",
+    "pitch_calc/serde_serialization",
+    "time_calc/serde_serialization",
+]

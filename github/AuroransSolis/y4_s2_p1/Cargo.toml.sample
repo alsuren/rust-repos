@@ -1,0 +1,8 @@
+[package]
+name = "y4_s2_p1"
+version = "0.1.0"
+authors = ["AuroransSolis <primalucegd@gmail.com>"]
+
+[dependencies]
+ears = { git = "https://github.com/jhasse/ears" }
+nfd = "*"

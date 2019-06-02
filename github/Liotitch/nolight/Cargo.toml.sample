@@ -1,0 +1,18 @@
+[package]
+name = "nolight"
+version = "0.1.0"
+authors = ["Romain Vaillant <rph.vaillant@gmail.com>"]
+
+[dependencies]
+glue = { git = "https://github.com/lazybox/glue" }
+lazybox_graphics =  { git = "https://github.com/lazybox/graphics" }
+lazybox_frameclock = { git = "https://github.com/lazybox/frameclock" }
+lazybox_assets =  { git = "https://github.com/lazybox/assets", features = ["eders"] }
+lazybox_inputs = { git = "https://github.com/lazybox/inputs" }
+lazybox_events =  { git = "https://github.com/lazybox/events" }
+wrapped2d = { git = "https://github.com/Bastacyclop/rust_box2d" }
+serde = "0.7"
+serde_macros = "0.7"
+glutin = "0.6"
+cgmath = { version = "0.10", features = ["eders"] , default_features = false }
+image = "0.10"

@@ -1,0 +1,20 @@
+[package]
+name = "process-communication"
+version = "0.1.0"
+authors = ["ChijinZ <tlock.chijin@gmail.com>"]
+exclude = [".idea/*"]
+#license = "MIT"
+
+[[example]]
+name = "example"
+path = "examples/simple_connection.rs"
+
+[dependencies]
+tokio = "0.1"
+bytes = "0.4"
+futures = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"
+tokio-codec = "0.1.0"
+tokio-uds = "0.2.0"

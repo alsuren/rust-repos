@@ -1,0 +1,28 @@
+[package]
+authors = ["Sanemat <o.gata.ken@gmail.com>"]
+categories = ["development-tools"]
+description = "Parse `git config --list --null` using gitconfig::Value for api"
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "changelog.md",
+    "readme.md",
+    "license-apache",
+    "license-mit",
+]
+keywords = ["git"]
+license = "MIT/Apache-2.0"
+name = "gitconfig2json"
+repository = "https://github.com/packsaddle/rust-gitconfig2json/"
+version = "0.4.0"
+
+[badges.appveyor]
+project_name = "sanemat/rust-gitconfig2json"
+repository = "packsaddle/rust-gitconfig2json"
+
+[badges.travis-ci]
+repository = "packsaddle/rust-gitconfig2json"
+
+[dependencies]
+gitconfig = "0.1.0"
+serde_json = "1.0.6"

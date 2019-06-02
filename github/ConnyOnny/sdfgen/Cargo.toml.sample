@@ -1,0 +1,16 @@
+[package]
+
+name = "sdfgen"
+version = "0.4.0"
+authors = [ "Constantin Berhard <sdfgen.8.enormator@xoxy.net>" ]
+
+[[bin]]
+
+name = "sdfgen"
+
+[dependencies]
+image="*"
+getopts="*"
+byteorder="*"
+num="*"
+rayon="*"

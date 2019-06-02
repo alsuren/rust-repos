@@ -1,0 +1,28 @@
+[package]
+name = "pretty_grammar"
+version = "0.1.3"
+authors = ["Ho Kim <besqer996@gnu.ac.kr>"]
+edition = "2018"
+
+documentation = "https://docs.rs/pretty_grammar"
+repository = "https://github.com/kerryeon/pretty-grammar"
+
+description = "A library that supports simple grammar correction of dynamic strings."
+keywords = [
+    "grammer",
+    "korean", "hangul", "hangeul",
+]
+readme = "README.md"
+
+license = "MIT"
+
+include = [
+    "src/**/*",
+    "tests/**/*",
+    "Cargo.toml",
+    "LICENSE",
+    "README.md",
+]
+
+[dependencies]
+regex = "0.2"

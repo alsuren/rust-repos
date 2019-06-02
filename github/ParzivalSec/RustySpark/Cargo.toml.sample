@@ -1,0 +1,16 @@
+[package]
+name = "rusty_spark_benchmark"
+version = "0.1.0"
+authors = ["ParzivalSec <lukas.vogl12@gmail.com>"]
+
+[dependencies]
+spark_core = { path = "spark_core" }
+mem = { path = "mem" }
+container = { path = "container" }
+time = "0.1"
+libc = "0.2"
+calx-ecs = "0.6.1"
+serde_derive = "1.0"
+serde = "1.0"
+
+[workspace]

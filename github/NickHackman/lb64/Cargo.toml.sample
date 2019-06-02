@@ -1,0 +1,21 @@
+[package]
+name = "lb64"
+version = "0.1.2"
+description = "Base64 Library with a fully configurable Base64 type"
+readme = "README.md"
+repository = "https://github.com/NickHackman/lb64"
+keywords = ["Base64", "base64"]
+categories = ["Base64", "base64"]
+license-file = "LICENSE"
+authors = ["Nick Hackman <nicholazwow@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "benchmarks"
+harness = false

@@ -1,0 +1,20 @@
+[package]
+name = "sysinfo"
+version = "0.1.0"
+authors = ["Matt8898 <mattew8898@gmail.com>"]
+
+[dependencies]
+ocl-core = {version = "*", optional = true}
+
+[target.'cfg(any(unix, macos))'.dependencies]
+libc = "*"
+x11 = "*"
+
+[target.'cfg(windows)'.dependencies]
+libc = "*"
+winapi = "*"
+kernel32-sys = "*"
+user32-sys = "*"
+
+[features]
+default = ["ocl-core"]

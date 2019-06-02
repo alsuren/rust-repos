@@ -1,0 +1,12 @@
+[package]
+name = "notify"
+version = "0.1.0"
+authors = ["Gabe <finkegabriel>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+serde_json = "1.0.39"
+serde = "1.0.91"
+
+

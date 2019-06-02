@@ -1,0 +1,12 @@
+[package]
+name = "spanish-numbers"
+version = "0.1.4"
+authors = ["Marcio Diaz <marcio.diaz@gmail.com>"]
+description = "Convert integers to written Spanish number format"
+keywords = ["spanish", "number", "convert", "format"]
+license = "MIT"
+repository = "https://github.com/marcio-diaz/spanish-numbers/"
+readme = "README.md"
+
+[dependencies]
+getopts = "0.2"

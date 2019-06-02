@@ -1,0 +1,42 @@
+[package]
+name = "rmqfwd"
+version = "0.3.2"
+authors = ["Andrea Fiore <andrea.giulio.fiore@gmail.com>"]
+description = "A tool to persist, export and republish RabbitMQ messages"
+readme = "README.md"
+keywords = ["amqp", "rabbitmq", "elasticsearch", "messaging"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/afiore/rmqfwd"
+include = [
+  "**/*.rs",
+  "Cargo.toml",
+  "README.md"
+]
+
+[dependencies]
+lapin-futures = "^0.15"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+tokio = "0.1"
+tokio-codec = "0.1"
+tokio-fs = "0.1"
+futures = "0.1"
+log = "0.4"
+env_logger = "0.6"
+chrono = { version = "0.4", features = ["serde"] }
+clap = "2"
+hyper = "0.12"
+url = "1.7"
+failure = "0.1"
+failure_derive = "0.1"
+try_from = "0.3"
+structopt = "0.2"
+toml = "0.5"
+
+[dev-dependencies]
+tempdir = "0.3"
+pretty_assertions = "0.6"
+
+[badges]
+travis-ci = { repository = "afiore/rmqfwd", branch = "master" }

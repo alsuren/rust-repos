@@ -1,0 +1,22 @@
+[package]
+name = "j2-gba-tool"
+version = "0.1.1"
+authors = ["Jennifer Wilcox <jennifer@nitori.org>"]
+edition = "2018"
+repository = "https://github.com/Nitori-/j2-gba-tool"
+keywords = ["gba"]
+categories = ["command-line-utilities",
+              "development-tools::build-utils",
+              "embedded",
+              "multimedia::encoding"]
+license = "MIT"
+readme = "README.md"
+description = "GBA ROM multi-tool"
+
+[badges.travis-ci]
+repository = "Nitori-/j2-gba-tool"
+
+[dependencies]
+clap = "^2.33.0"
+image = "^0.21.1"
+colored = "^1.8.0"

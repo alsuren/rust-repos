@@ -1,0 +1,27 @@
+[package]
+name = "html5ever-stream"
+description = "Easily stream data into an html5ever parser"
+repository = "https://github.com/rossdylan/html5ever-stream"
+documentation = "https://docs.rs/html5ever-stream"
+version = "0.1.0"
+authors = ["Ross Delinger <rossdylan@fastmail.com>"]
+build = "build.rs"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+futures = "0.1"
+html5ever = "0.22"
+
+[build-dependencies]
+skeptic = "0.13"
+
+[dev-dependencies]
+hyper = "0.11"
+num_cpus = "1.0"
+skeptic = "0.13"
+tokio-core = "0.1"
+
+[dev-dependencies.reqwest]
+version = "0.8"
+features = ["unstable"]

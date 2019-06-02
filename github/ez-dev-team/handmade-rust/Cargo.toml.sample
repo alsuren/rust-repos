@@ -1,0 +1,11 @@
+[package]
+name = "handmade-rust"
+version = "0.1.0"
+authors = ["Anton Kuliapin <an.kulyapin@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "handmade"
+crate-type = ["dylib"]
+
+[dependencies]

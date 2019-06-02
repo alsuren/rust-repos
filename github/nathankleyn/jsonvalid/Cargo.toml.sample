@@ -1,0 +1,23 @@
+[package]
+name = "jsonvalid"
+version = "0.1.1"
+authors = ["Nathan Kleyn <nathan@nathankleyn.com>"]
+description = "Validate JSON files for syntax mistakes using a static binary that can be easily distributed!"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/nathankleyn/jsonvalid"
+readme = "README.md"
+
+[badges]
+travis-ci = { repository = "nathankleyn/jsonvalid" }
+
+[profile.release]
+lto = true
+
+[dependencies]
+clap = "2.30.0"
+encoding_rs = "0.7.2"
+serde_json = "1.0"
+
+[dev-dependencies]
+assert_cli = "0.5.4"
+tempfile = "2.2.0"

@@ -1,0 +1,31 @@
+[package]
+name = "website"
+version = "0.1.0"
+authors = ["rowan"]
+
+[dependencies]
+doccy = "0.3"
+dotenv = "0.13"
+glob = "0.2"
+rand = "0.5"
+rocket_codegen = "0.3"
+serde = "1"
+serde_derive = "1"
+toml = "0.4"
+
+[dependencies.chrono]
+version = "0.4"
+features = ["serde"]
+
+[dependencies.rocket]
+version = "0.3"
+features = ["tls"]
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["tera_templates"]
+
+[[bin]]
+name = "server"
+path = "src/main.rs"

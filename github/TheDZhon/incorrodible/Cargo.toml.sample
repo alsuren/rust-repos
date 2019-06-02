@@ -1,0 +1,26 @@
+[package]
+name = "incorrodible"
+version = "0.1.0"
+authors = ["Eugene Mamin <TheDZhon@gmail.com>"]
+repository = "https://github.com/TheDZhon/incorrodible.git"
+homepage = "https://github.com/TheDZhon/incorrodible.git"
+license = "BSD"
+readme = "README.md"
+documentation = "https://github.com/TheDZhon/"
+description = "Network transport library"
+keywords = ["net", "io", "transport", "tcp", "udp"]
+exclude = [
+	".gitignore",
+	".travis.yml",
+]
+
+[lib]
+name = "incorrodible"
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "0.2"
+mio = "0.4"
+log = "0.3"
+bytes = "0.2"
+time = "0.1"

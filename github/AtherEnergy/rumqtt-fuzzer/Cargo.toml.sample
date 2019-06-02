@@ -1,0 +1,13 @@
+[package]
+name = "rumqtt-fuzzer"
+version = "0.1.0"
+authors = ["Rahul Sharma <rsconceptx@gmail.com>"]
+
+[dependencies]
+log = "*"
+rand = "*"
+mqtt-protocol = "0.3"
+rumqtt = {git="https://github.com/AtherEnergy/rumqtt", branch="v0.10" }
+slog = "1"
+slog-stream = "1"
+slog-stdlog = "1"

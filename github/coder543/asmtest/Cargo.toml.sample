@@ -1,0 +1,10 @@
+[package]
+name = "asmtest"
+version = "0.1.0"
+authors = ["Josh Leverette <coder543@gmail.com>"]
+
+[dependencies]
+libasm = "0.1.2"
+
+[build-dependencies]
+libasm = "0.1.2"

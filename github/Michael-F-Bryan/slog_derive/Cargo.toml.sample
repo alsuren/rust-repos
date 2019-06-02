@@ -1,0 +1,18 @@
+[package]
+name = "slog_derive"
+version = "0.1.0"
+authors = ["Michael Bryan <michaelfbryan@gmail.com>"]
+
+[lib]
+proc_macro = true
+
+[dependencies]
+syn = { version = "0.12.12", features = ["visit", "extra-traits"] }
+quote = "0.4.2"
+
+[dev-dependencies]
+slog = { version = "2.1.1", features = ["nested-values"] }
+slog-term = "2.3.0"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+erased-serde = "0.3.3"

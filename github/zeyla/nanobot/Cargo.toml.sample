@@ -1,0 +1,23 @@
+[package]
+name = "nanobot"
+version = "0.1.0"
+authors = ["Zeyla Hellyer <zey@zey.moe>"]
+
+[dependencies]
+chrono = "0.4"
+dotenv = "0.13"
+env_logger = "0.5"
+darksky = "~0.8"
+hyper = "0.10"
+kitsu = { features = ["reqwest-support"], version = "~0.2" }
+lazy_static = "^1.0"
+log = "0.4"
+psutil = "1.1"
+rand = "0.5"
+regex = "^1.0"
+reqwest = "~0.8"
+serde_json = "^1.0"
+serde = "^1.0"
+serenity = { version = "~0.5" }
+typemap = "0.3"
+urbandictionary = "~0.3"

@@ -1,0 +1,46 @@
+[package]
+name = "advent-code-2016"
+version = "0.1.0"
+authors = ["lynch <louis.lynch@gmail.com>"]
+
+[[bin]]
+name = "q1"
+path = "src/q1.rs"
+
+[[bin]]
+name = "q2"
+path = "src/q2.rs"
+
+[[bin]]
+name = "q2b"
+path = "src/q2b.rs"
+
+[[bin]]
+name = "q3"
+path = "src/q3.rs"
+
+[[bin]]
+name = "q4"
+path = "src/q4.rs"
+
+[[bin]]
+name = "q5"
+path = "src/q5.rs"
+
+[[bin]]
+name = "q6"
+path = "src/q6.rs"
+
+[[bin]]
+name = "q7"
+path = "src/q7.rs"
+
+[[bin]]
+name = "q8"
+path = "src/q8.rs"
+
+[dependencies]
+regex = "0.1.80"
+lazy_static = "0.2.2"
+rust-crypto = "0.2.36"
+

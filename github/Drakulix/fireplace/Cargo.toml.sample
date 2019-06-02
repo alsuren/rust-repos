@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "fireplace",
+    "fireplace_lib",
+    "fireplace_flavors/json",
+    "fireplace_flavors/code",
+]
+
+[profile.release]
+lto = true
+
+[replace]
+"fireplace_lib:3.0.2" = { path = "./fireplace_lib" }

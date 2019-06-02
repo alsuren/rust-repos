@@ -1,0 +1,17 @@
+[package]
+name = "aws"
+version = "0.0.1"
+authors = ["Thom May <thom@may.lt>"]
+
+[dependencies]
+openssl = "*"
+time = "*"
+url = "*"
+log = "*"
+rustc-serialize = "*"
+hyper = "*"
+env_logger = "*"
+
+[dependencies.rust-ini]
+git = "https://github.com/zonyitoo/rust-ini.git"
+

@@ -1,0 +1,9 @@
+[package]
+name = "breezyvps"
+version = "0.2.1"
+authors = ["michaelx"]
+
+[dependencies]
+clap = "~2.26"
+log = "~0.3.8"
+simplelog = "~0.4.2"

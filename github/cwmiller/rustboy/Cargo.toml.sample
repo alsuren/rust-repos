@@ -1,0 +1,13 @@
+[package]
+name = "rustboy"
+version = "0.1.0"
+authors = ["Chase Miller"]
+
+[dependencies]
+bitflags = "0.8"
+byteorder = "0.4.2"
+enum_primitive = "*"
+fnv = "1.0.5"
+lazy_static = "0.2.4"
+minifb = "0.9.1"
+regex = "0.2"

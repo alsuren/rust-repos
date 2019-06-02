@@ -1,0 +1,18 @@
+[package]
+name = "sync-memo"
+version = "0.1.0"
+authors = ["小飼慎一 <>"]
+
+[dependencies]
+config_file_handler = "0.6.0"
+dotenv = "0.10.0"
+reqwest = "0.5.1"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+clap = "~2.22.0"
+hyper = "0.10.9"
+notify = "4.0.0"
+daemonize = "0.2.3"
+log4rs = "0.7.0"
+log = "0.3.7"

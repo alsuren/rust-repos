@@ -1,0 +1,28 @@
+[package]
+name = "robotfindskitten"
+version = "0.2.0"
+authors = ["Roman A. Taycher <rtaycher1987@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+rustc-serialize = "0.3"
+log = "0.3"
+log4rs = "0.3"
+clap = "2.1"
+
+#newest rev breaks compile
+[target.i686-pc-windows-gnu.dependencies]
+wio = { git = "https://github.com/retep998/wio-rs.git", rev="5a805212faf77b8dd405e06487ddd58f76930ea1" }
+[target.x86-pc-windows-gnu.dependencies]
+wio = { git = "https://github.com/retep998/wio-rs.git", rev="5a805212faf77b8dd405e06487ddd58f76930ea1" }
+[target.x86_64-pc-windows-gnu.dependencies]
+wio = { git = "https://github.com/retep998/wio-rs.git", rev="5a805212faf77b8dd405e06487ddd58f76930ea1" }
+[target.i686-pc-windows-msvc.dependencies]
+wio = { git = "https://github.com/retep998/wio-rs.git", rev="5a805212faf77b8dd405e06487ddd58f76930ea1" }
+[target.x86-pc-windows-msvc.dependencies]
+wio = { git = "https://github.com/retep998/wio-rs.git", rev="5a805212faf77b8dd405e06487ddd58f76930ea1" }
+[target.x86_64-pc-windows-msvc.dependencies]
+wio = { git = "https://github.com/retep998/wio-rs.git", rev="5a805212faf77b8dd405e06487ddd58f76930ea1" }
+
+[target.'cfg(unix)'.dependencies]
+ncurses = "5"

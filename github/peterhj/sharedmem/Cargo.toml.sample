@@ -1,0 +1,16 @@
+[package]
+name = "sharedmem"
+version = "0.2.0"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+license = "BSD-2-Clause"
+description = "Shared memory primitives."
+repository = "https://github.com/peterhj/libsharedmem"
+keywords = ["shared", "memory", "shm", "shmem"]
+readme = "README.md"
+
+[lib]
+name = "sharedmem"
+path = "src/lib.rs"
+
+[dependencies]
+memmap = "^0.6"

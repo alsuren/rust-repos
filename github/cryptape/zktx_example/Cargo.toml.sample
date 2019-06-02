@@ -1,0 +1,12 @@
+[package]
+name = "zktx_example"
+version = "0.0.1"
+
+[dependencies]
+rand = "0.3"
+rustc-hex = "1.0"
+cita-tool = { git = "https://github.com/cryptape/cita-cli.git", branch = "master" }
+
+[dependencies.zktx]
+git = "https://github.com/cryptape/zktx.git"
+branch = "master"

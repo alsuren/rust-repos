@@ -1,0 +1,30 @@
+[package]
+name = "opencv"
+description = "Rust bindings for OpenCV"
+documentation = "https://docs.rs/opencv"
+repository = "https://github.com/twistedfall/opencv-rust"
+readme = "README.md"
+keywords = [ "opencv", "vision" ]
+license = "MIT"
+version = "0.14.0"
+edition = "2018"
+authors = ["Mathieu Poumeyrol <kali@zoy.org>", "Pro <twisted.fall@gmail.com>"]
+build = "build.rs"
+
+[badges]
+travis-ci = { repository = "twistedfall/opencv-rust", branch = "master" }
+
+[dependencies]
+lazy_static = "1.0"
+libc = "0.2"
+num = "0.2"
+slab = "0.4"
+
+[build-dependencies]
+cc = {version = "1.0", features = ["parallel"]}
+glob = "0.3"
+pkg-config = "0.3"
+rayon = "1.0"
+
+[features]
+buildtime_bindgen = []

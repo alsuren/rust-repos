@@ -1,0 +1,19 @@
+[package]
+name = "rustynotes"
+version = "0.1.0"
+authors = ["Luke Frisken <l.frisken@gmail.com>"]
+
+[dependencies]
+actix-web = "0.7.3"
+rust-embed = "3.0.1"
+mime_guess = "2.0.0-alpha.6"
+env_logger = "0.5.12"
+comrak = "0.2.14"
+chrono = { version = "0.4", features = ["serde"] }
+
+[dependencies.askama]
+version = "0.7"
+features = ["with-actix-web"]
+
+[build-dependencies]
+askama = "0.7"

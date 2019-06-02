@@ -1,0 +1,26 @@
+[package]
+name = "roll"
+version = "1.8.2"
+authors = ["J/A <archer884@gmail.com>"]
+
+[profile.dev]
+codegen-units = 4
+lto = false
+
+[profile.release]
+lto = true
+
+[profile.test]
+codegen-units = 4
+lto = false
+
+[lib]
+name = "app"
+path = "src/app.rs"
+
+[dependencies]
+dice = { git = "https://github.com/archer884/dice.git" }
+getopts = "*"
+rand = "*"
+rustc-serialize = "*"   # serialize roll results for storage
+time = "*"              # get date for log name

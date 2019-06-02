@@ -1,0 +1,14 @@
+[package]
+name = "auction_house_tracker"
+version = "0.1.0"
+authors = ["schneki <schneki.max@gmail.com>"]
+
+[dependencies]
+reqwest = ""
+serde_json = ""
+serde = ""
+serde_derive = ""
+chrono = ""
+diesel = { version = "", features = ["postgres", "chrono"] }
+dotenv = ""
+num_cpus = ""

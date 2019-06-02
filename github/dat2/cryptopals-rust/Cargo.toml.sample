@@ -1,0 +1,23 @@
+[package]
+name = "cryptopals-rust"
+version = "0.1.0"
+authors = ["Nicholas Dujay <nickdujay@gmail.com>"]
+
+[lib]
+name = "cryptopals"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cryptopals"
+path = "src/main.rs"
+
+[dependencies]
+byteorder = "^1"
+clap = "^2.26"
+error-chain = "^0.11"
+itertools = "^0.6"
+lazy_static = "^0.2"
+openssl = "^0.9"
+rand = "^0.3"
+rayon = "^0.8"
+sha1 = "0.2.0"

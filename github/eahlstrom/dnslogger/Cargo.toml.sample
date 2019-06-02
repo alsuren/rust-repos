@@ -1,0 +1,34 @@
+[package]
+name = "dnslogger"
+version = "0.1.0"
+authors = ["Erik Ahlström <ea@negahok.se>"]
+description = """
+Passive dns sniffer. Provides dnslogger binary and a dns parser library.
+"""
+license = "MIT/Apache-2.0"
+repository = "https://github.com/eahlstrom/dnslogger"
+homepage = "https://github.com/eahlstrom/dnslogger"
+keywords = ["ip", "ipv4", "pcap", "dns"]
+categories = ["parsing", "data-structures", "network-programming"]
+readme = "README.md"
+edition = "2018"
+
+
+[dependencies]
+pcap = "0.7.0"
+pnet = "0.21.0"
+nom = "4.1.1"
+structopt = "0.2.14"
+clap = "2.32.0"
+env_logger = "0.6.0"
+log = "0.4.6"
+serde_json = "1.0.33"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+hex = "0.3.2"
+
+[[bin]]
+name = "dnslogger"
+path = "src/bin/dnslogger.rs"
+test = false
+doc = false

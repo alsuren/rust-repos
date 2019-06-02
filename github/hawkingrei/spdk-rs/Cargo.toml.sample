@@ -1,0 +1,29 @@
+[package]
+name = "spdk-rs"
+version = "0.1.0"
+authors = ["Wangweizhen <hawking.rei@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = """
+Async programming with spdk for rust.
+"""
+edition = '2018'
+
+[dependencies]
+futures-preview = "= 0.3.0-alpha.12"
+libc = "= 0.2.48"
+lazy_static = "1.2.0"
+spdk-sys = { path = "spdk-sys" }
+tokio = "0.1.15"
+
+[dev-dependencies]
+spectral = "= 0.6.0"
+slog-term = "=2.0.2"
+
+[workspace]
+members = [
+  "spdk-sys",
+
+]
+default-members = [
+  "spdk-sys",
+]

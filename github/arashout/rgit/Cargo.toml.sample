@@ -1,0 +1,11 @@
+[package]
+name = "rgit"
+version = "0.1.0"
+authors = ["Arash Outadi <arash.out@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "*"
+serde = "*"
+serde_derive = "*"
+rust-ini = "*"

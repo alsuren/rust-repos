@@ -1,0 +1,20 @@
+[package]
+name = "wcast"
+version = "0.1.0"
+authors = ["Kai Sickeler <k.sickeler@gmail.com>"]
+description = "API to fetch weather information from openWeatherMap.org"
+homepage = "https://github.com/asuivelentine/wcast"
+repository = "https://github.com/asuivelentine/wcast"
+
+# The testing profile, used for `cargo test`
+[profile.test]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+
+[dependencies]
+rustc-serialize = "0.3"
+hyper="0.7.2"

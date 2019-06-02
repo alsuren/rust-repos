@@ -1,0 +1,25 @@
+[package]
+name = "softcomputingforsoftpeople"
+version = "0.0.1"
+authors = [ "Frankie Robertson <frankie@robertson.name>" ]
+
+[dependencies]
+safe-transmute = { git = "https://github.com/frankier/safe-transmute-rs.git", rev = "5ecc3b6b31d661523515b09b6621d6f0019e031e" }
+rand = "0.4.2"
+rand_derive = "0.3.1"
+ordered-float = "0.5.0"
+bitwise = "0.1.1"
+static_assertions = "0.2.5"
+num-iter = "0.1"
+structopt = { git = "https://github.com/TeXitoi/structopt.git", rev = "e046a86f3977b0d0bf796c7f9f1adbe43742d091" }
+structopt-derive = { git = "https://github.com/TeXitoi/structopt.git", rev = "e046a86f3977b0d0bf796c7f9f1adbe43742d091" }
+nalgebra = "0.14.0"
+lazy_static = "1.0.0"
+itertools = "0.7.6"
+alga = "0.5.2"
+num-traits = "0.1.41"
+csv = "1.0.0-beta.5"
+derive-new = "0.5.0"
+hex-slice = "0.1.4"
+ord_subset = "3.1.0"
+indexmap = "1.0.1"

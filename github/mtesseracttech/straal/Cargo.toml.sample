@@ -1,0 +1,16 @@
+[package]
+name = "straal"
+version = "0.1.0"
+authors = ["MT"]
+edition = "2018"
+
+[dependencies]
+glium = "*"
+num = "*"
+
+[dev-dependencies]
+criterion = "*"
+
+[[bench]]
+name = "matrix_benchmarks"
+harness = false

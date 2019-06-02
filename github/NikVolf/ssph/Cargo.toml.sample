@@ -1,0 +1,14 @@
+[package]
+name = "ssph"
+version = "0.1.0"
+authors = ["NikVolf <nikvolf@gmail.com>"]
+
+[dependencies]
+world = { path = "world" }
+render = { path = "render" }
+kiss3d = "0.9"
+nalgebra = "0.12"
+
+[[bin]]
+path = "run/main.rs"
+name = "ssph"

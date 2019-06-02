@@ -1,0 +1,14 @@
+[package]
+name = "gotham-todo"
+version = "0.1.0"
+authors = ["Martin Lofaj <martin.lofaj@accenture.com>"]
+
+[dependencies]
+gotham = "0.2.1"
+gotham_derive = "0.2.1"
+hyper = "0.11.25"
+futures = "0.1"
+mime = "0.3.7"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"

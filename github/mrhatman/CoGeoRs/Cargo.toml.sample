@@ -1,0 +1,16 @@
+[package]
+name = "cogeors"
+version = "0.1.0"
+authors = ["lucas.ince"]
+edition = "2018"
+
+[dependencies]
+num-traits = "*"
+rand = "*"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "convex_hull_benchmark"
+harness = false

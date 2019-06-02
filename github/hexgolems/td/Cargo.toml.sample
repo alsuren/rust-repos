@@ -1,0 +1,13 @@
+[package]
+name = "td"
+version = "0.1.0"
+authors = ["coco <coco@hexgolems.com>", "leex <leex+td@klautcomputing.de>"]
+edition = "2018"
+
+[dependencies]
+ggez = "0.5.0-rc.0"
+nalgebra = "0.16.13"
+rand = "0.6"
+ron = "*"
+serde = "*"
+serde_derive = "*"

@@ -1,0 +1,11 @@
+[package]
+name = "magic"
+version = "0.1.0"
+authors = ["Chris Gregory <czipperz@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+magic_cards = { path = "magic_cards" }
+magic_controller = { path = "magic_controller" }
+magic_core = { path = "magic_core" }
+magic_graphics = { path = "magic_graphics" }

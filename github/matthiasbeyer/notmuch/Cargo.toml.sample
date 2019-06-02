@@ -1,0 +1,9 @@
+[package]
+name = "notmuch"
+version = "0.1.0"
+authors = ["Matthias Beyer <mail@beyermatthias.de>"]
+
+[dependencies]
+notmuch-sys = "4.4.2"
+error-chain = "0.11"
+

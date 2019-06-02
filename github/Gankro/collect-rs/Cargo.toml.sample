@@ -1,0 +1,32 @@
+[package]
+
+name = "collect"
+version = "0.0.26"
+license = "MIT/Apache-2.0"
+description = "An experimental extension of std::collections"
+authors = ["Alexis Beingessner <a.beingessner@gmail.com>",
+           "Sebastian Gesemann <s.gesemann@gmail.com>",
+           "Jonathan Reem <jonathan.reem@gmail.com>"]
+
+repository = "https://github.com/Gankro/collect-rs"
+homepage = "https://github.com/Gankro/collect-rs"
+documentation = "http://Gankro.github.io/collect-rs/collect"
+keywords = ["data-structures"]
+readme = "README.md"
+
+[features]
+default = ["immut_slist",
+       	   "proto", "string_joiner", "ordered_iter"]
+immut_slist  = []
+proto = []
+string_joiner = []
+
+[dependencies.compare]
+optional = true
+
+[dependencies.ordered_iter]
+optional = true
+
+[dev-dependencies]
+rand = "*"
+threadpool = "*"

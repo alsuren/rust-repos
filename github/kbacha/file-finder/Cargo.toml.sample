@@ -1,0 +1,10 @@
+[package]
+name = "ff"
+version = "0.1.0"
+authors = ["kbacha <chewbacha@gmail.com>"]
+
+[dependencies]
+walkdir = "2"
+clap = "2"
+colored = "1"
+crossbeam-channel = "0.2"

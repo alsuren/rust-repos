@@ -1,0 +1,11 @@
+[package]
+name = "harness"
+version = "0.1.0"
+authors = ["Joshua Miller <jsmiller@uchicago.edu>"]
+
+[dependencies]
+lazy_static = "0.2"
+quick-error = "*"
+clap = "1.5.5"
+log = "0.4"
+env_logger = "*"

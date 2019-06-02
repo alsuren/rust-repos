@@ -1,0 +1,35 @@
+# Copyright Brandon Ly 2018.
+# Copyright Jeron A. Lau 2018.
+# Dual-licensed under either the MIT License or the Boost Software License,
+# Version 1.0.  (See accompanying file LICENSE_1_0.txt or copy at
+# https://www.boost.org/LICENSE_1_0.txt)
+#
+# XXXX  X                    /5\——————/5\       XXXX      X           X
+# X   X X   XXX   XXXX      |   0    0   |     X      XXX   XXXX XXXX X X   X
+# X   X X  X   X  X   X  /"\|     <>     |/"\  X      X   X    X    X X X   X
+# XXXX  X  X   X  X   X  \  \\_  ====  _//  /  X   XX X   X   X    X  X  X X
+# X     X  X   X  XXXX    \_              _/   X    X X   X  X    X   X   X
+# X     X   XXX   X       / \            / \    XXXX  X   X XXXX XXXX X   X
+#                 X       \                /                            XX
+#                          --____________--
+
+[package]
+name = "plop"
+version = "0.0.1"
+authors = [
+	"Brandon Ly <wowbob396@gmail.com>",
+	"Jeron Aldaron Lau <jeronaldaron@gmail.com>"
+]
+license = "MIT / BSL-1.0"
+documentation = "https://docs.rs/plop"
+homepage = "https://free.plopgrizzly.com/plop"
+repository = "https://github.com/plopgrizzly/plop"
+readme = "README.md"
+description = "(Science / Video Game) Physics engine for Cala"
+keywords = ["graphics", "rendering", "physics", "simulation"]
+categories = ["game-engines", "visualization", "rendering::engine",
+	"algorithms", "simulation"]
+
+[dependencies]
+aci_png = "0.8.0-pre0"
+ami = "0.13"

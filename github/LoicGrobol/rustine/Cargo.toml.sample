@@ -1,0 +1,12 @@
+[package]
+name = "rustine"
+version = "0.1.0"
+authors = ["Loïc Grobol <loic.grobol@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bytecount = "0.5.1"
+
+[features]
+runtime-dispatch-simd = ["bytecount/runtime-dispatch-simd"]
+generic-simd = ["bytecount/generic-simd"]

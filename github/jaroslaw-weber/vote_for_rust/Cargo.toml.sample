@@ -1,0 +1,16 @@
+[package]
+authors = ["Jaroslaw Weber <jaroslaw.weber@gmail.com>"]
+name = "vote_for_rust"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.31.1"
+failure = "0.1.1"
+serde = "1.0.28"
+serde_derive = "1.0.29"
+serde_json = "1.0.10"
+slime = "0.4.0"
+csv = "1.0.0-beta.5"
+
+[dependencies.vote_with_github]
+git = "https://github.com/jaroslaw-weber/vote_with_github"

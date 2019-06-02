@@ -1,0 +1,13 @@
+[package]
+name = "neutrino-engine"
+version = "0.1.0"
+authors = ["mdeniaud <mathieu.deniaud@crossknowledge.com>"]
+edition = "2018"
+
+[dependencies]
+glutin = "0.19.0"
+gl = "0.12.0"
+image = "0.21.1"
+math = { path = "math"}
+cgmath = "0.17.0"
+noise = "0.5.1"

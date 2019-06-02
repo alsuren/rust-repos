@@ -1,0 +1,17 @@
+[package]
+name = "dictawav-rs"
+version = "0.1.0"
+authors = ["Ericson \"Fogo\" Soares <ericson.ds999@gmail.com>"]
+
+[dependencies]
+hound = "3.3"
+rustfft = "2.*"
+rustdct = "0.1.*"
+rand = "0.4"
+
+[lib]
+name = "dictawav"
+path = "src/dictawav/lib.rs"
+
+[[bin]]
+name = "dictawav-rs"

@@ -1,0 +1,19 @@
+[package]
+name = "goodc"
+version = "0.1.0"
+authors = ["Hideo Hattori <hhatto.jp@gmail.com>"]
+
+[dependencies]
+clap = "2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"
+globset = "0.4"
+void = "1"
+ignore = "0.4"
+grep = "0.2"
+termcolor = "1"
+
+[[bin]]
+name = "goodc"
+path = "src/main.rs"

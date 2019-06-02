@@ -1,0 +1,23 @@
+[package]
+name = "weedesktop"
+version = "0.1.0"
+authors = ["Andreas Runfalk <andreas@runfalk.se>"]
+
+[lib]
+name = "weedesktop"
+crate-type = ["dylib"]
+
+[dependencies]
+cfg-if = "^0.1.6"
+libc = "^0.2.43"
+linkify = "^0.3.1"
+open = "^1.2.2"
+weedesktop_macro = { path = "weedesktop_macro" }
+
+[target.'cfg(all(unix, not(target_os = "macos")))'.dependencies]
+dbus = "^0.6.3"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+
+[build-dependencies]
+bindgen = "^0.43.0"

@@ -1,0 +1,10 @@
+[package]
+name = "vist"
+version = "0.1.0"
+authors = ["baubry <baptiste.h.aubry@gmail.com>"]
+
+[dependencies]
+libc = "0.2.16"
+
+[lib]
+name = "vist"

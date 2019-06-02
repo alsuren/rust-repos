@@ -1,0 +1,8 @@
+[package]
+authors = ["Rory McCann <rory@technomancy.org>"]
+name = "prettytime"
+version = "0.5.0"
+
+[dependencies]
+num = "*"
+regex = "0.1"

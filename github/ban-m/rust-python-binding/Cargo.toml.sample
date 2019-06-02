@@ -1,0 +1,11 @@
+[package]
+name = "rust-python"
+version = "0.1.0"
+authors = ["ban-m <banmasutani@gmail.com>"]
+
+[dependencies]
+libc = "0.2"
+
+[lib]
+name = "test"
+crate_type = ["dylib"]

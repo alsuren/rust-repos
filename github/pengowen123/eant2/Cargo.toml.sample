@@ -1,0 +1,11 @@
+[package]
+
+name = "eant2"
+version = "0.0.1"
+authors = ["pengowen123 <pengowen816@gmail.com>"]
+
+[dependencies]
+
+rand = "0.3"
+cmaes = { git = "https://github.com/pengowen123/cmaes" }
+cge = { git = "https://github.com/pengowen123/cge" }

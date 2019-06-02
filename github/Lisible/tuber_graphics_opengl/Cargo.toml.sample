@@ -1,0 +1,23 @@
+[package]
+name = "tuber_graphics_opengl"
+version = "0.1.0"
+authors = ["Clément SIBILLE <claymeuns@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+tuber = { git = "https://github.com/Lisible/tuber" }
+serde_json = "1.0.39"
+gl = "0.11.0"
+nalgebra-glm = "0.3.0"
+
+[dev-dependencies]
+tuber_window_sdl2 = { git = "https://github.com/Lisible/tuber_window_sdl2" }
+rand = "0.6.5"
+serde_json = "1.0.39"
+bmfont_parser = "0.2.0"
+
+[dev-dependencies.sdl2]
+version = "0.32.1"
+default-features = false
+features = ["image"]
+

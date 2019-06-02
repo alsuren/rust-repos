@@ -1,0 +1,8 @@
+[package]
+name = "ziabnr"
+version = "0.0.0"
+authors = ["KeyboardFire <andy@keyboardfire.com>"]
+
+[dependencies]
+ncurses = "5.82.0"
+rand = "0.3.14"

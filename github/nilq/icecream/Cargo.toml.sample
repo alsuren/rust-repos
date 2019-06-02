@@ -1,0 +1,8 @@
+[package]
+name = "bathroom"
+version = "0.1.0"
+authors = ["nilq <i.am@nilq.dk>"]
+
+[dependencies]
+libc = "~0.2.7"
+llvm-sys = "~0.3.0"

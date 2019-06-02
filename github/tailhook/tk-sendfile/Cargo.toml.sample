@@ -1,0 +1,30 @@
+[package]
+name = "tk-sendfile"
+description = """
+    A high-performance file serving library. Serves files in special IO
+    threads. In this version it uses normal file reading, but we will optimize
+    using `sendfile` on supported systems as quick as tokio allows us to do
+    that.
+"""
+license = "MIT/Apache-2.0"
+readme = "README.rst"
+keywords = ["tokio", "disk", "pool", "sendfile"]
+homepage = "http://github.com/tailhook/tk-sendfile"
+documentation = "http://docs.rs/tk-sendfile"
+version = "0.4.0"
+authors = ["paul@colomiets.name"]
+
+[dependencies]
+futures = "0.1.2"
+futures-cpupool = "0.1.2"
+tokio-core = "0.1.6"  # hopefully temporarily
+tokio-io = "0.1.0"
+quick-error = "1.1.0"
+libc = "0.2.21"
+
+[dev-dependencies]
+argparse = "0.2.1"
+env_logger = "0.3.5"
+
+[lib]
+name = "tk_sendfile"

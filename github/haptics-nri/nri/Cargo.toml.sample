@@ -1,0 +1,92 @@
+[package]
+name    = "nri"
+version = "0.1.0"
+authors = ["Alex Burka <aburka@seas.upenn.edu>"]
+build   = "build.rs"
+exclude = ["src/web/templates/*", "src/web/bootstrap/*", "src/web/flows/*", "data/*", "keepalive"] # TODO take this out before packaging
+
+[profile.release]
+#debug = true
+lto = true
+
+[features]
+default = ["hardware"]
+hardware = [
+    "biotac/hardware",
+    "bluefox/hardware",
+    "optoforce/hardware",
+    "structure/hardware",
+    "teensy/hardware",
+    "vicon/hardware",
+    ]
+nightly = [
+    "lazy_static/nightly",
+    ]
+
+[dependencies]
+# sub-crates
+cli         = { path = "crates/front/cli"         }
+web         = { path = "crates/front/web"         }
+comms       = { path = "crates/back/comms"        }
+flow        = { path = "crates/back/flow"         }
+scribe      = { path = "crates/back/scribe"       }
+biotac      = { path = "crates/drivers/biotac"    }
+bluefox     = { path = "crates/drivers/bluefox"   }
+optoforce   = { path = "crates/drivers/optoforce" }
+structure   = { path = "crates/drivers/structure" }
+teensy      = { path = "crates/drivers/teensy"    }
+vicon       = { path = "crates/drivers/vicon"     }
+utils       = { path = "crates/utils"             }
+
+# native
+bluefox-sys = { path = "sys/bluefox-sys" }
+
+# external deps
+guilt-by-association = "0.4"
+log         = "0.3"
+env_logger  = "0.4"
+hprof       = "0.1"
+chrono      = "0.4"
+error-chain = "0.10"
+
+# needed for bins
+lazy_static  = "0.2"
+time         = "0.1"
+libc         = "0.2"
+csv          = "1.0.0-beta.5"
+lodepng      = "1.1" # TODO migrate to image
+image        = "0.15"
+num_cpus     = "1"
+serde        = "1"
+serde_derive = "1"
+serde_json   = "1"
+macro-attr   = "0.2"
+conv         = "0.3"
+indicatif    = "0.7"
+closet       = "0.2"
+spawner      = "0.3"
+clap         = "2.25"
+regex        = "0.2"
+globset      = "0.2"
+fallible-iterator = "0.1"
+walkdir      = "1"
+ssh2         = "0.3"
+libssh2-sys  = "0.2"
+tempdir      = "0.3"
+rayon        = "0.8"
+nalgebra     = "0.13"
+line_drawing = "0.5"
+cast         = "0.2"
+thread-local-object = "0.1"
+unborrow     = "0.3"
+boolinator   = "2"
+tabwriter    = "1"
+
+[build-dependencies]
+foreman     = "0.3"
+
+[patch.crates-io]
+hprof = { path = "overrides/hprof" }
+clap = { path = "overrides/clap" }
+staticfile = { git = "git://github.com/haptics-nri/staticfile", branch = "bump-0.6" }
+

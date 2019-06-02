@@ -1,0 +1,24 @@
+[package]
+name = "paxos"
+version = "1.0.0"
+authors = ["Stephan Boyer <stephan@stephanboyer.com>"]
+edition = "2018"
+
+[dependencies]
+bincode = "1"
+env_logger = "0.6"
+futures = "0.1"
+hyper = "0.12"
+log = "0.4"
+rand = "0.6"
+serde_yaml = "0.8"
+textwrap = "0.11"
+tokio = "0.1"
+
+[dependencies.clap]
+version = "2"
+features = ["wrap_help"]
+
+[dependencies.serde]
+version = "1"
+features = ["derive"]

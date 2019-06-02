@@ -1,0 +1,20 @@
+[package]
+name = "rn"
+version = "0.1.0"
+authors = ["linfeng.yuan <linfeng.yuan@woqutech.com>"]
+
+[dependencies]
+error-chain = "*"
+toml = "0.4"
+serde = "*"
+serde_derive = "*"
+shellexpand = "1.0.0"
+notify= { git = "https://github.com/passcod/notify.git" }
+clap = "*"
+slog = { version = "*", features = ["max_level_trace", "release_max_level_trace"] }
+slog-term = "*"
+slog-json = "*"
+slog-async = "*"
+slog-scope = "*"
+libc = "*"
+regex = "*"

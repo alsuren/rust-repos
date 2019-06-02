@@ -1,0 +1,22 @@
+[package]
+name = "distirc"
+version = "0.1.0"
+authors = ["Forkk <forkk@forkk.net>"]
+description = "An IRC client with a distributed, client-server architecture like Quassel."
+
+[dependencies]
+log = "0.3"
+env_logger = "0.3"
+time = "0.1"
+rustc-serialize = "0.3"
+serde = "*"
+serde_json = "*"
+rotor = "0.6"
+rotor-stream = "0.6"
+toml = "0.1"
+
+[dependencies.common]
+path = "common"
+
+[dependencies.rotor-irc]
+path = "rotor-irc"

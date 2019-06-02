@@ -1,0 +1,14 @@
+[package]
+name = "rustboy"
+version = "0.1.0"
+authors = ["Nathan Jones <nathanj439@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+sdl2 = "0.12"
+log = "0.3.5"
+env_logger = "0.3.2"
+time = "0.1.34"
+
+[profile.release]
+debug = true

@@ -1,0 +1,10 @@
+[package]
+name = "drawmetry"
+version = "0.1.0"
+authors = ["loovjo <jonathan.loov@gmail.com>"]
+
+[dependencies]
+quickcheck = "0.6"
+ytesrev = "0.2.2"
+lazy_static = "1.1"
+ordered-float = "1.0"

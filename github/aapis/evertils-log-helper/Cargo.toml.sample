@@ -1,0 +1,33 @@
+[package]
+name = "evertils-log-helper"
+version = "0.3.0"
+authors = ["Ryan Priebe <rpriebe@me.com>"]
+description = "Wraps evertils logging commands in a rust package"
+license = "WTFPL"
+
+[dependencies]
+chrono = "0.4"
+
+[[bin]]
+name = "log"
+path = "src/log.rs"
+
+[[bin]]
+name = "logt"
+path = "src/logt.rs"
+
+[[bin]]
+name = "log-yesterday"
+path = "src/log_yesterday.rs"
+
+[[bin]]
+name = "log-today"
+path = "src/log_today.rs"
+
+[[bin]]
+name = "logm"
+path = "src/logm.rs"
+
+[[bin]]
+name = "newday"
+path = "src/newday.rs"

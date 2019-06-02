@@ -1,0 +1,10 @@
+[package]
+name = "advent_of_code"
+version = "0.1.0"
+authors = ["bwigianto <bwigianto@gmail.com>"]
+
+[dependencies]
+regex = "0.1.80"
+rust-crypto = "0.2.36"
+itertools = "0.5.8"
+

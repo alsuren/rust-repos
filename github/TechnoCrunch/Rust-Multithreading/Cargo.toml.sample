@@ -1,0 +1,9 @@
+[package]
+name = "multithreads"
+version = "0.1.0"
+authors = ["TechnoCrunch <planesiloveforever@gmail.com>"]
+
+[dependencies]
+num_cpus = "1.2"
+rand = "0.3"
+

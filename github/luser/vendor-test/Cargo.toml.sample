@@ -1,0 +1,9 @@
+[package]
+name = "vendor-test"
+version = "0.1.0"
+authors = ["Ted Mielczarek <ted@mielczarek.org>"]
+
+[dependencies]
+rand = "0.3.14"
+chrono = "0.2.25"
+chrono-humanize = "0.0.6"

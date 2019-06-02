@@ -1,0 +1,14 @@
+[package]
+name = "advent"
+version = "0.1.1"
+authors = ["John <purrlinn@web.de>"]
+edition = "2018"
+
+[dependencies]
+stopwatch = "0.0.7"
+regex = "1.1.0"
+chrono = "0.4"
+num-traits = "0.2"
+rayon = "1.0"
+itertools = "0.8.0"
+ref_eq = "1.0.0"

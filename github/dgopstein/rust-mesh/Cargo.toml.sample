@@ -1,0 +1,30 @@
+[package]
+name = "rust-mesh"
+version = "0.1.0"
+authors = ["Dan Gopstein <dan@gopstein.com>"]
+
+[dependencies]
+libc      = "*"
+glium     = "*"
+glutin    = "*"
+gl_common = "*"
+nalgebra  = "*"
+num       = "*"
+
+# [dependencies.glium]
+# path = "/Users/dgopstein/glium"
+#
+# [dependencies.glutin]
+# path = "/Users/dgopstein/glutin"
+
+[dependencies.assimp]
+path = "/Users/dgopstein/assimp_rs"
+#version = "0.1.4"
+#git = "file:/Users/dgopstein/assimp_rs"
+
+#[dependencies.glutin]
+#features = ["window"]
+
+[features]
+default = ["window"]
+window = []

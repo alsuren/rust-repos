@@ -1,0 +1,19 @@
+[package]
+name = "numbars"
+version = "0.1.0"
+authors = ["rdcox <rdcox@umass.edu>"]
+
+description = "Numerical data processing"
+
+repository = "https://github.com/rdcox/numbars"
+
+license="MIT"
+[dependencies]
+
+[lib]
+name = "numbars"
+path = "src/lib.rs"
+
+[[bin]]
+name = "numbarsexe"
+path = "src/bin.rs"

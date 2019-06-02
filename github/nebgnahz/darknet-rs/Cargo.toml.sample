@@ -1,0 +1,20 @@
+[package]
+name = "darknet"
+version = "0.1.0"
+authors = ["Ben Zhang <benzh@cs.berkeley.edu>"]
+
+[dependencies]
+failure = "0.1"
+
+[build-dependencies]
+bindgen = { version = "0.35", optional = true }
+
+[features]
+gen = [ "bindgen" ]
+nnpack = []
+cuda = []
+
+[[bin]]
+name = "main"
+doc = false
+path = "src/main.rs"

@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "client",
+    "plugin",
+    "example-plugins/hello_world",
+    "example-plugins/bye_world",
+]
+
+[profile.release]
+lto = true

@@ -1,0 +1,10 @@
+[package]
+name = "iron-spider"
+version = "1.0.0"
+authors = ["rpg2014"]
+edition = "2018"
+
+[dependencies]
+discord = { git = "https://github.com/ArtemGr/discord-rs.git" }
+config = "0.9"
+reqwest = "0.9.9"

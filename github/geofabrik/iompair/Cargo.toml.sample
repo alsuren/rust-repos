@@ -1,0 +1,18 @@
+[package]
+authors = ["Rory McCann <rory@technomancy.org>"]
+description = "Work with vector tiles. Serve, cache and pregenerate from an upstream vector tile source."
+keywords = ["openstreetmap", "osm", "vectortiles"]
+license = "GPL-3.0+"
+name = "iompair"
+version = "0.9.0"
+
+[dependencies]
+chrono = "0.2"
+clap = "2.10"
+hyper = "0.9"
+iter-progress = "0.3"
+libflate = "0.1"
+regex = "0.1"
+rustc-serialize = "0.3"
+simple_parallel = "0.2"
+slippy-map-tiles = "0.11"

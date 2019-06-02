@@ -1,0 +1,30 @@
+[package]
+name = "riemann_client"
+version = "0.6.0"
+license = "MIT"
+authors = ["Sam Clements <sam@borntyping.co.uk>"]
+description = "A Riemann client library"
+repository = "https://github.com/borntyping/rust-riemann_client"
+
+[features]
+default = ["docopt", "rustc-serialize"]
+
+[dependencies]
+libc = "^0.1.8"
+protobuf = "^1.0.0"
+
+[dependencies.docopt]
+version = "^0.6.60"
+optional = true
+
+[dependencies.rustc-serialize]
+version = "^0.3.14"
+optional = true
+
+[lib]
+name = "riemann_client"
+doctest = false
+
+[[bin]]
+name = "riemann-cli"
+test = false

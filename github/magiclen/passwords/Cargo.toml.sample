@@ -1,0 +1,30 @@
+[package]
+name = "passwords"
+version = "1.1.2"
+authors = ["Magic Len <len@magiclen.org>"]
+repository = "https://github.com/magiclen/passwords"
+homepage = "https://magiclen.org/passwords"
+keywords = ["password", "score", "strength", "bcrypt", "generate"]
+categories = ["algorithms"]
+description= "This crate provides useful tools to generate multiple readable passwords, as well as analyze and score them."
+readme = "README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "magiclen/passwords", branch = "master" }
+appveyor = { repository = "magiclen/passwords", branch = "master", service = "github" }
+
+[dependencies]
+rand = "0.5.5"
+random-pick = "1.2"
+rust-crypto = { version = "0.2.36", optional = true }
+
+[dev-dependencies]
+regex = "1"
+
+[features]
+crypto = ["rust-crypto"]
+common-password = []
+
+[package.metadata.docs.rs]
+all-features = true

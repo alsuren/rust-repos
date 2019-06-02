@@ -1,0 +1,26 @@
+[package]
+name = "bcnotif"
+version = "0.9.0"
+authors = ["Acizza <jonathanmce@gmail.com>"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[dependencies]
+failure     = "0.1"
+chrono      = "0.4"
+clap        = "2"
+csv         = "1"
+directories = "0.10"
+lazy_static = "1"
+select      = "0.4"
+reqwest     = "0.8"
+yaml-rust   = "0.4"
+
+[target.'cfg(any(unix, macos))'.dependencies]
+notify-rust = "3"
+
+[target.'cfg(windows)'.dependencies.winrt]
+version = "0.5"
+features = ["windows-data", "windows-ui"]

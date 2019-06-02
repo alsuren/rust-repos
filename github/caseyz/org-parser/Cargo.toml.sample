@@ -1,0 +1,8 @@
+[package]
+name = "org-parse"
+version = "0.1.0"
+authors = ["Zachery Casey <caseyz@fastmail.jp>"]
+
+[dependencies]
+regex = "0.2.3"
+lazy_static = "1.0.0"

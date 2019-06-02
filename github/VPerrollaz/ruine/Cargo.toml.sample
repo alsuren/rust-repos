@@ -1,0 +1,12 @@
+[package]
+name = "ruine"
+version = "0.1.0"
+authors = ["Vincent Perrollaz <vincent.perrollaz@laposte.net>"]
+
+[dependencies]
+clap = "*"
+rand = "*"
+rayon = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"

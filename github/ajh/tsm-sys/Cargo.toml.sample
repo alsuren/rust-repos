@@ -1,0 +1,21 @@
+[package]
+authors = ["Andy Hartford <hartforda@gmail.com>"]
+description = "FFI bindings to libtsm"
+name = "tsm-sys"
+version = "0.1.0"
+
+homepage = "https://github.com/ajh/tsm-sys"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ajh/tsm-sys"
+
+build = "build.rs"
+links = "libtsm"
+
+[build-dependencies]
+gcc = "0.3"
+glob = "0.2.10"
+libc = "0.1"
+
+[dev-dependencies]
+regex = "0.1.8"

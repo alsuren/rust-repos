@@ -1,0 +1,12 @@
+[package]
+name = "convex-hull-pf"
+version = "0.1.0"
+authors = ["Lucille Blumire <llblumire@gmail.com>"]
+
+[dependencies]
+clap = "*"
+image = "*"
+serde = "*"
+serde_derive = "*"
+toml = "*"
+serde_json = "*"

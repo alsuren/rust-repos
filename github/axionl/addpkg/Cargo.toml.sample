@@ -1,0 +1,20 @@
+[package]
+name = "addpkg"
+version = "0.1.0"
+description = "Manager my archlinux repo."
+authors = ["axionl <i@axionl.me>"]
+edition = "2018"
+license = "GPL3"
+
+[dependencies]
+users = "*"
+failure = "*"
+expanduser = "*"
+
+[dependencies.structopt]
+version = "*"
+default-features = false
+features = []
+
+[profile.release]
+lto = true

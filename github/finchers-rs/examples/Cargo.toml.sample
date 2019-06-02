@@ -1,0 +1,27 @@
+[workspace]
+members = [
+  "custom-logging",
+  "diesel",
+  "juniper",
+  "jwt-auth",
+  "middlewares",
+  "session-redis",
+  "staticfiles",
+  "websocket",
+]
+
+[patch.crates-io]
+finchers-tungstenite = { git = "https://github.com/finchers-rs/finchers-tungstenite.git" }
+
+[patch.crates-io.finchers]
+git = "https://github.com/finchers-rs/finchers.git"
+
+[patch.crates-io.finchers-juniper]
+git = "https://github.com/finchers-rs/finchers-juniper.git"
+
+[patch.crates-io.finchers-session]
+git = "https://github.com/finchers-rs/finchers-session.git"
+
+[patch.crates-io.finchers-template]
+git = "https://github.com/finchers-rs/finchers-template-tera.git"
+

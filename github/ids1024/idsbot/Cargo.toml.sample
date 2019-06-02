@@ -1,0 +1,13 @@
+[package]
+name = "idsbot"
+version = "0.1.0"
+authors = ["Ian D. Scott <ian@perebruin.com>"]
+
+[dependencies]
+serde_json = "1.0"
+regex = "0.2"
+irc = "0.12"
+xdg-basedir = "1.0"
+url = "1.2"
+lazy_static = "0.2"
+reqwest = "0.7"

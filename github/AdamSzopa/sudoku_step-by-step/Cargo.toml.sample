@@ -1,0 +1,12 @@
+[package]
+name = "sudoku"
+version = "0.1.0"
+authors = ["adam"]
+
+[dependencies]
+bencher = "0.1.2"
+crossbeam = "0.2"
+
+[[bench]]
+name = "bench"
+harness = false

@@ -1,0 +1,24 @@
+[package]
+name = "procrs"
+version = "0.2.0"
+authors = ["Josh Driver <keeperofdakeys@gmail.com>"]
+description = "Tools library for querying /proc on Linux"
+repository = "https://github.com/keeperofdakeys/Process-Query"
+readme = "README.md"
+
+
+[dependencies]
+prettytable-rs = "0.6"
+argparse = "0.2"
+
+[[bin]]
+name="psq"
+path="src/psq/main.rs"
+
+[[bin]]
+name="freer"
+path="src/freer/main.rs"
+
+[lib]
+name="procrs"
+path="src/procrs/lib.rs"

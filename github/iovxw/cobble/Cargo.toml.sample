@@ -1,0 +1,12 @@
+[package]
+name = "cobble"
+version = "0.1.0"
+authors = ["iovxw <iovxw@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+ozelot = { version = "0.8", git = "https://github.com/C4K3/Ozelot.git" }
+structopt = "0.2"
+rpassword = "2.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

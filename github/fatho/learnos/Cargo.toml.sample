@@ -1,0 +1,11 @@
+# Cargo.toml
+[workspace]
+members = [
+    # libraries
+    "acpi",
+    "amd64",
+    "kmem",
+    "multiboot2",
+    # binary tying everything together
+    "learnos_kernel",
+]

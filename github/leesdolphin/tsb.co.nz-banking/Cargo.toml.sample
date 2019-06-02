@@ -1,0 +1,12 @@
+[package]
+name = "tsb-nz-banking"
+version = "0.1.0"
+authors = ["Opal Symes <code@opal.codes>"]
+
+[dependencies]
+reqwest = "0.8.8"
+url = "*"
+cookie = "*"
+html5ever = "*"
+failure = "*"
+failure_derive = "*"

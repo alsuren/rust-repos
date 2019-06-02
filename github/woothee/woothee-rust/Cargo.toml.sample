@@ -1,0 +1,35 @@
+[package]
+name = "woothee"
+version = "0.10.0"
+authors = ["hhatto <hhatto.jp@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/woothee/woothee-rust"
+keywords = ["useragent", "ua"]
+readme = "README.md"
+description = "user-agent strings parser"
+documentation = "https://docs.rs/woothee"
+build = "build.rs"
+
+[dependencies]
+regex = "1"
+lazy_static = "1.3.0"
+
+[dev-dependencies]
+uap-rust = "0.0.4"
+
+[[bench]]
+name = "benchmark"
+path = "benches/benchmark.rs"
+
+[features]
+default = []
+generate = ["yaml-rust", "tera", "tempdir", "glob", "serde", "serde_json", "serde_derive"]
+
+[build-dependencies]
+tera = { version = "0.11", optional = true }
+yaml-rust = { version = "0.4", optional = true }
+tempdir = { version = "0.3", optional = true }
+glob = { version = "0.2.11", optional = true }
+serde = { version = "1.0", optional = true }
+serde_json = { version = "1.0", optional = true }
+serde_derive = { version = "1.0", optional = true }

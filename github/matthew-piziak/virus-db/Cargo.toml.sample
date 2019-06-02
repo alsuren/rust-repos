@@ -1,0 +1,13 @@
+[package]
+name = "virus-db"
+version = "0.1.0"
+authors = ["Matthew Piziak <matthew.piziak@gmail.com>"]
+
+[dependencies]
+hyper = "0.9.10"
+rayon = "0.4.3"
+rustc-serialize = "0.3"
+time = "0.1"
+
+[dependencies.select]
+git = "https://github.com/utkarshkukreti/select.rs"

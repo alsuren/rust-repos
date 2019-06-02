@@ -1,0 +1,13 @@
+[package]
+name = "jmdict_search"
+version = "0.1.0"
+authors = ["Pascal Seitz <pascal.seitz@gmail.com>"]
+
+[dependencies]
+veloci = { path = "../veloci" }
+serde_json = "1.0"
+log = "0.3"
+env_logger = "0.3"
+
+[profile.release]
+debug = true

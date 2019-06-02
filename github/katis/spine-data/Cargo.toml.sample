@@ -1,0 +1,18 @@
+[package]
+name = "spine-data"
+version = "0.2.2"
+authors = ["Joni Katajamäki <joni.katajamaki@wunderdog.fi>"]
+description = "Loads Spine exported JSON and texture atlas files"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/katis/spine-data"
+exclude = [
+    "Cowbot/*",
+]
+
+[dependencies]
+zip = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+failure = "0.1.1"
+nom  = "^3.2"

@@ -1,0 +1,48 @@
+[package]
+name = "cixrs"
+version = "0.1.0"
+authors = ["Brendon Scheinman <bscheinman@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "libcix"
+path = "src/libcix/lib.rs"
+
+[[bin]]
+name = "heap_test"
+path = "src/test/heap_test.rs"
+
+[[bin]]
+name = "book_test"
+path = "src/test/book_test.rs"
+
+[[bin]]
+name = "cixsrv"
+path = "src/server/server.rs"
+
+[[bin]]
+name = "cixcli"
+path = "src/client/client.rs"
+
+[[bin]]
+name = "walread"
+path = "src/server/walread.rs"
+
+[dependencies]
+bincode = "0.8.0"
+capnp = "0.8"
+capnp-rpc = { git = "https://github.com/dwrensha/capnp-rpc-rust" }
+futures = "0.1"
+futures-cpupool = "0.1"
+kafka = "0.5"
+memmap = "0.5.2"
+rand = "0.3"
+regex = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+time = "0.1"
+tokio-core = "0.1"
+uuid = { version = "0.3", features = ["v4"] }
+
+[build-dependencies]
+capnpc = "*"

@@ -1,0 +1,9 @@
+[package]
+name = "hexrs"
+version = "0.1.0"
+authors = ["Adrien Lamarque <ad@lamarque.fr>", "Andreas Fuch <asf@boinkor.net>"]
+
+[dependencies]
+rustbox = "*"
+memmap = "*"
+clap = "*"

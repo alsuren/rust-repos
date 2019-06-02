@@ -1,0 +1,19 @@
+[package]
+name = "mio-test"
+version = "0.1.0"
+authors = ["szagi3891 <szeligagrzegorz@gmail.com>", "sfisol <sfisol@gmail.com>"]
+
+[dependencies]
+time = "0.1"
+#clippy = "*"
+
+[dependencies.ctrlc]
+git = "https://github.com/Detegr/rust-ctrlc"
+
+[dependencies.task_async]
+git = "https://github.com/szagi3891/task_async-rs"
+#path = "../task_async-rs"
+
+[dependencies.miohttp]
+git = "https://github.com/szagi3891/miohttp-rs"
+#path = "../miohttp-rs"

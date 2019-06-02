@@ -1,0 +1,44 @@
+[package]
+edition = "2018"
+name = "spbtle-rf-stm32f303re-test"
+version = "0.0.1"
+authors = ["Daniel Gallagher <pdanielgallagher@gmail.com>"]
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+lto = true
+debug = true
+
+[dependencies]
+panic-semihosting = "*"
+cortex-m-semihosting = "*"
+embedded-hal = "*"
+bluenrg = "*"
+bluetooth-hci = "*"
+nb = "*"
+
+[dependencies.cortex-m]
+version = "*"
+features = ["cm7-r0p1"]
+
+[dependencies.cortex-m-rt]
+version= "*"
+
+[dependencies.stm32f30x]
+version = "0.7.1"
+features = ["rt"]
+
+[dependencies.stm32f30x-hal]
+version = "*"
+features = ["rt", "unproven"]
+
+# Use a version of stm32f30x-hal where the GPIOs implement
+# embedded-hal's unproven InputPin trait and the required GPIOs are
+# enabled in the HAL.
+[patch.crates-io]
+stm32f30x-hal = { git = "https://github.com/danielgallagher0/stm32f30x-hal", branch = "spbtle-rf-support" }
+bluetooth-hci = { git = "https://github.com/danielgallagher0/bluetooth-hci", branch = "master" }
+bluenrg = { git = "https://github.com/danielgallagher0/bluenrg", branch = "master" }

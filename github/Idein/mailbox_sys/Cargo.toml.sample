@@ -1,0 +1,13 @@
+[package]
+name = "mailbox-sys"
+version = "0.1.0"
+authors = ["takayuki <takayuki@idein.jp>"]
+
+[lib]
+name = "mailbox_sys"
+path = "src/lib.rs"
+
+[build-dependencies]
+bindgen = "0.37.0"
+pkg-config = "0.3.11"
+

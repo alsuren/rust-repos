@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "compiler/"
+]
+
+[package]
+name = "dok"
+version = "0.1.0"
+authors = ["Romain Vaillant <rph.vaillant@gmail.com>"]
+
+[dependencies]
+dokc = { path = "compiler/" }

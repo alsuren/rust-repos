@@ -1,0 +1,3 @@
+[workspace]
+members = [ "crates/const-c-str", "crates/const-c-str-impl" ]
+exclude = ["crates"]

@@ -1,0 +1,13 @@
+[package]
+
+name = "RustRayTracer"
+version = "0.0.1"
+authors = ["Michael Pierce <michaelspierce@gmail.com>"]
+
+[[bin]]
+name = "rust_ray_tracer"
+path = "src/main.rs"
+
+[dependencies]
+num_cpus = "*"
+time = "*"

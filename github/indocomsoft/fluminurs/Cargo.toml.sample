@@ -1,0 +1,30 @@
+[package]
+name = "fluminurs"
+version = "0.1.6"
+description = "A client in Rust to access the reverse-engineered LumiNUS API"
+authors = ["Julius Putra Tanu Setiaji <indocomsoft@gmail.com>"]
+edition = "2018"
+repository = "http://github.com/indocomsoft/fluminurs"
+readme = "README.md"
+license = "MIT"
+
+[profile.release]
+lto = true
+panic = 'abort'
+opt-level = 'z'
+codegen-units = 1
+
+[dependencies]
+ammonia = "2.1.1"
+clap = "2.33.0"
+cookie = "0.12.0"
+htmlescape = "0.3.1"
+rand = "0.6.5"
+reqwest = "0.9.17"
+rpassword = "3.0.2"
+sanitize-filename = "0.2.1"
+select = "0.4.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.39"
+serde_urlencoded = "0.5.5"
+url = "1.7.2"

@@ -1,0 +1,13 @@
+[package]
+
+name = "puzzle"
+version = "0.0.1"
+authors = [ "Radek Polak <psonek2@seznam.cz>" ]
+
+[dependencies]
+image = "*"
+
+[dependencies.sdl2]
+version = "0.29"
+default-features = false
+features = ["ttf","image","gfx"]

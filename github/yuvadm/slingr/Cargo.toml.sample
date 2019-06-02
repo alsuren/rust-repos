@@ -1,0 +1,20 @@
+[package]
+name = "slingr"
+version = "0.1.0"
+authors = ["Yuval Adam <_@yuv.al>"]
+description = "A simple CLI for UPnP media file streaming"
+homepage = "https://github.com/yuvadm/slingr"
+repository = "https://github.com/yuvadm/slingr"
+license = "GPL-3.0"
+
+[dependencies]
+colored = "1.6"
+clap = "2.32"
+futures = "0.1.22"
+hyper = "0.12"
+indoc = "0.2"
+regex = "1"
+termios = "0.3.0"
+tokio-fs = "0.1.2"
+tokio-io = "0.1.7"
+tokio = "0.1.7"

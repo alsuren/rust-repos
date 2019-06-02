@@ -1,0 +1,8 @@
+[package]
+authors = ["Nathaniel Ringo <remexre@gmail.com>"]
+license = "Apache-2.0/MIT"
+name = "mandelbrot"
+version = "0.1.0"
+
+[dependencies]
+glium = "0.15.0"

@@ -1,0 +1,12 @@
+[package]
+
+name = "rustpn"
+version = "0.0.1"
+authors = ["scott-linder <scott.b.linder@wmich.edu>"]
+
+[[bin]]
+
+name = "rustpn"
+
+[dependencies]
+num = "0.1.24"

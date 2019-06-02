@@ -1,0 +1,16 @@
+[package]
+name = "libheif"
+version = "0.1.0"
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+
+[build-dependencies.cc]
+version = "1.0"
+features = ["parallel"]
+
+[dependencies]
+cast = "0.2"
+failure = "0.1"
+more-asserts = "0.2"
+
+[profile.release]
+lto = true

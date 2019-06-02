@@ -1,0 +1,23 @@
+[package]
+name = "quic"
+version = "0.1.0"
+authors = ["Brett Jackson <brett@brettjackson.org>"]
+description = "QUIC library for Rust. WIP"
+license = "MIT"
+keywords = ["quic"]
+repository = "https://github.com/bjackson/quicrs"
+
+[badges]
+travis-ci = { repository = "https://github.com/bjackson/quicrs" }
+
+[dependencies]
+byteorder = "1"
+bitflags = "0.8.2"
+rand = "0.3.0"
+ring = "0.7.4"
+itertools = "0.6.0"
+tokio-core = "0.1.7"
+tokio-io = "0.1.1"
+tokio-service = "0.1.0"
+futures = "0.1.13"
+bytes = "0.4"

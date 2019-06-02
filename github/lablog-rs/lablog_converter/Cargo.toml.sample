@@ -1,0 +1,31 @@
+[package]
+authors = ["Alexander Thaller <alexander.thaller@trivago.com>"]
+name = "converter"
+version = "0.1.0"
+license = "MIT"
+readme = "README.md"
+description = """
+Convert different lablog store version between each other.
+"""
+documentation = "https://github.com/lablog-rs/lablog_converter"
+homepage = "https://github.com/lablog-rs/lablog_converter"
+repository = "https://github.com/lablog-rs/lablog_converter"
+
+[dependencies]
+chrono = "0.4"
+error-chain = "0.11"
+log = "0.3"
+loggerv = "0.4"
+
+[dependencies.clap]
+features = ["yaml"]
+version = "2.27"
+
+[dependencies.lablog_lib_v2]
+git = "https://github.com/lablog-rs/lablog_lib_v2"
+
+[dependencies.lablog_store]
+git = "https://github.com/lablog-rs/lablog_store"
+
+[dependencies.lablog_store_csv]
+git = "https://github.com/lablog-rs/lablog_store_csv"

@@ -1,0 +1,20 @@
+[package]
+name = "ffi-demo"
+version = "0.1.0"
+authors = ["FanHui <hui.fan@mail.ru>"]
+edition = "2018"
+
+build="build.rs"
+
+[dependencies]
+
+[dev-dependencies]
+
+[build-dependencies]
+bindgen = "0.49"
+cc="1.0"
+cmake="0.1"
+pkg-config = "0.3"
+
+
+

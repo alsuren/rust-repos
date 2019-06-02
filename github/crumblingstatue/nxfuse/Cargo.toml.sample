@@ -1,0 +1,13 @@
+[package]
+name = "nxfuse"
+version = "0.1.0"
+authors = ["Mika Attila <radiantstatue@gmail.com>"]
+
+[dependencies]
+time = "0.1.34"
+libc = "0.2.6"
+byteorder = "1.1.0"
+fuse = "0.3.0"
+
+[dependencies.nx]
+git = "https://github.com/NoLifeDev/nx-rs.git"

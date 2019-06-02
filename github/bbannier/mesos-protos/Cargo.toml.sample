@@ -1,0 +1,23 @@
+[package]
+name = "mesos-protos"
+version = "0.0.2"
+authors = ["Benjamin Bannier <bbannier@apache.org>"]
+edition = "2018"
+license = "Apache-2.0"
+
+[dependencies]
+bytes = "0.4.11"
+prost = "0.4.0"
+prost-derive = "0.4.0"
+serde = { version = "1.0.87", features = ["derive"], optional = true }
+serde_derive = { version = "1.0.87", optional = true }
+
+[build-dependencies]
+flate2 = "1.0.6"
+glob = "0.2.11"
+prost-build = "0.4.0"
+reqwest = "0.9.9"
+tar = "0.4.20"
+
+[features]
+serde-derive = ["serde_derive", "serde"]

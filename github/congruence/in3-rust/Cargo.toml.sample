@@ -1,0 +1,9 @@
+[package]
+name = "in3-rust"
+version = "0.1.0"
+authors = ["chirag-parmar <chiragparmar12209@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.16"
+secp256k1 = "0.12.2"

@@ -1,0 +1,22 @@
+[package]
+name = "reki3"
+version = "0.0.1"
+description = "A modern bittorrent tracker, using a Redis database"
+repository = "https://github.com/uguu/Reki3"
+homepage = "https://github.com/uguu/Reki3"
+license = "BSD-3-Clause"
+keywords = ["tracker", "bittorrent", "torrent"]
+authors = ["Miles Wu <miles.wu@wu-home.co.uk>"]
+
+[dependencies]
+url = "0.5.7"
+redis = "0.5.2"
+byteorder = "0.5"
+time = "0.1.35"
+log = "0.3.5"
+env_logger = "0.3.2"
+getopts = "0.2.14"
+
+[dependencies.hyper]
+version = "0.8.0"
+default-features = false

@@ -1,0 +1,11 @@
+[package]
+name = "itersynth"
+version = "0.1.0"
+authors = ["Matthew D. Steele <mdsteele@alum.mit.edu>"]
+build = "build.rs"
+
+[dependencies]
+
+[dev-dependencies]
+nom = "1.2.4"
+sdl2 = { version = "0.22.0", features = ["use_mac_framework"] }

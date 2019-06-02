@@ -1,0 +1,10 @@
+[package]
+name = "rust_unix_socket_sample"
+version = "0.1.0"
+authors = ["oga <oga.ivc.s27@gmail.com>"]
+
+[dependencies]
+getopts = "0.2"
+mio-uds = "0.6"
+mio = "0.6"
+linefeed = "0.2"

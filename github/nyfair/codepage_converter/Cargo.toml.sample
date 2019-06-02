@@ -1,0 +1,11 @@
+[package]
+name = "codepage_converter"
+version = "1.0.0"
+authors = ["nyfair <nyfair2012@gmail.com>"]
+
+[dependencies]
+walkdir = "*"
+encoding_rs = "*"
+
+[profile.release]
+lto = true

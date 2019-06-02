@@ -1,0 +1,13 @@
+[package]
+name = "rpn"
+version = "0.1.0"
+authors = ["Florent FAYOLLE <florent.fayolle69@gmail.com>"]
+license = "MIT"
+description = "A Reverse Polish Notation lib + executable"
+
+[dependencies]
+
+[[bin]]
+name = "rpn"
+doc = false
+path = "src/main.rs"

@@ -1,0 +1,9 @@
+[package]
+name = "clcookies"
+version = "0.1.0"
+authors = ["Jonathan Buchanan <jonathan.russ.buchanan@gmail.com>"]
+
+[dependencies]
+ncurses = "5.80.0"
+rustc-serialize = "0.3.19"
+time = "0.1"

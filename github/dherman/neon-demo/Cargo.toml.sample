@@ -1,0 +1,8 @@
+[package]
+name = "neon-demo"
+version = "0.0.3"
+authors = ["Dave Herman <dherman@mozilla.com>"]
+license = "MIT"
+
+[dependencies]
+neon = { version = "0.0.10", path = "../neon" }

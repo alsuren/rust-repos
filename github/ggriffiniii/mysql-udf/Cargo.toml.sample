@@ -1,0 +1,14 @@
+[workspace]
+members = ["mysql_udf_derive", "examples"]
+
+[package]
+name = "mysql_udf"
+version = "0.1.0"
+authors = ["glenng"]
+
+[dependencies]
+mysql_udf_derive = { path = "./mysql_udf_derive" }
+libc = "0.2.43"
+
+[build-dependencies]
+bindgen = "0.42.1"

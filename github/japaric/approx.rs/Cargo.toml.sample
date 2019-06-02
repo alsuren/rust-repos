@@ -1,0 +1,17 @@
+[package]
+
+authors = ["Jorge Aparicio <japaricious@gmail.com>"]
+name = "approx"
+version = "0.0.0"
+
+[dev-dependencies]
+rand = "*"
+
+[dependencies.floaty]
+git = "https://github.com/japaric/float.rs"
+
+[dev-dependencies.quickcheck]
+git = "https://github.com/burntsushi/quickcheck"
+
+[dev-dependencies.quickcheck_macros]
+git = "https://github.com/burntsushi/quickcheck"

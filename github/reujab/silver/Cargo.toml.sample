@@ -1,0 +1,25 @@
+[package]
+name = "silver"
+version = "1.0.7"
+authors = ["reujab <reujab@gmail.com>"]
+
+description = "A cross-shell customizable powerline-like prompt with icons"
+repository = "https://github.com/reujab/silver"
+readme = "readme.md"
+keywords = ["shell", "prompt", "powerline", "agnoster", "icons"]
+categories = ["command-line-utilities"]
+license = "Unlicense"
+
+[dependencies]
+chrono = "0.4.4"
+clap = {version = "2.32.0", features = ["yaml"]}
+dirs = "1.0.1"
+git2 = "0.8.0"
+hostname = "0.1.5"
+humantime = "1.1.1"
+lazy_static = "1.0.1"
+libc = "0.2.42"
+regex = "1.0.1"
+rust-ini = "0.13.0"
+url = "1.7.1"
+users = "0.9.0"

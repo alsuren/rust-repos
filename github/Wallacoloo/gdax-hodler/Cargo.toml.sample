@@ -1,0 +1,8 @@
+[package]
+name = "gdax-hodler"
+version = "0.1.0"
+authors = ["Colin Wallace <wallacoloo@gmail.com>"]
+
+[dependencies.gdax-client]
+git = "https://github.com/Wallacoloo/gdax-client"
+#path = "./gdax-client"

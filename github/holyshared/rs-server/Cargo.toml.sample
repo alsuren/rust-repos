@@ -1,0 +1,10 @@
+[package]
+name = "rs-server"
+version = "0.1.0"
+authors = ["holyshared <holy.shared.design@gmail.com>"]
+
+[dependencies]
+nickel = "0.7.3"
+toml = "0.1.27"
+rustc-serialize = "0.3.18"
+clap = "2.1.2"

@@ -1,0 +1,24 @@
+[package]
+name = "libwgetj"
+version = "1.0.6-pre.0"
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "Library for using wget to grab Java distributions"
+documentation = "http://rustyhorde.github.io/libwgetj/libwgetj/libwgetj/index.html"
+homepage = "http://rustyhorde.github.io/libwgetj"
+repository = "https://github.com/rustyhorde/libwgetj"
+readme = "README.md"
+license = "MIT"
+keywords = ["wget","java","libwgetj"]
+build = "build.rs"
+
+[features]
+default = []
+lint = [ "clippy" ]
+
+[build-dependencies]
+vergen = "~0.1.0"
+
+[dependencies]
+clippy = { version = "~0.0", optional = true }
+commandext = "~0.1.0"
+log = "~0.3.4"

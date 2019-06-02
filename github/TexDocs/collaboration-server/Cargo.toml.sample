@@ -1,0 +1,11 @@
+[package]
+name = "collaboration-server"
+version = "0.1.0"
+authors = ["Til Blechschmidt <til@blechschmidt.de>"]
+
+[dependencies]
+ws = "0.7.3"
+log = "0.3.8"
+uuid = { version = "0.5", features = ["serde", "v4"] }
+cargo-style-logger = { git = "https://github.com/TheMegaTB/cargo-style-logger" }
+websocket_api = { git = "https://github.com/TexDocs/websocket-api", features = ["create_project"], default-features = false }

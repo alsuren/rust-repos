@@ -1,0 +1,10 @@
+[package]
+name = "ideal-journey"
+version = "0.1.0"
+authors = ["Emil Segerbäck"]
+
+[dependencies]
+gl = "0.10.0"
+rgl = { path = "rusty-gl" }
+glfw = "0.25.0"
+nalgebra = "0.16.8"

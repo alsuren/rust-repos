@@ -1,0 +1,12 @@
+[package]
+name = "secretary"
+authors = ["martinak@vcu.edu"]
+version = "0.0.1"
+description = "A scriptable calander app"
+repository = "https://github.com/martinak1/secretary"
+readme = "README.md"
+license = "BSD-3-Clause"
+
+
+[dependencies]
+rusqlite = "*"

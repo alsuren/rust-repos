@@ -1,0 +1,12 @@
+[package]
+name = "rust-c"
+version = "0.1.0"
+authors = ["C-Bouthoorn <cbouthoorn19@gmail.com>"]
+build = "src/build.rs"
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+cc = { version = "1.0", features = ["parallel"] }
+glob = "0.2"

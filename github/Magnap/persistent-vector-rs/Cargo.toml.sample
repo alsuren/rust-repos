@@ -1,0 +1,22 @@
+[package]
+authors = ["Marcus Medom Ryding <mrok4a@gmail.com>"]
+categories = ["data-structures"]
+license = "MIT"
+name = "persistent-vector"
+readme = "README.md"
+repository = "https://github.com/Magnap/persistent-vector-rs"
+version = "0.1.0"
+
+[dependencies]
+
+[dev-dependencies]
+quickcheck = "0.4.1"
+quickcheck_macros = "0.4.2"
+
+[features]
+default = []
+narrow_branching = []
+
+#[profile.release]
+#debug = true
+#lto = false

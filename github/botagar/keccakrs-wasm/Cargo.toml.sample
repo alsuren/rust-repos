@@ -1,0 +1,27 @@
+[package]
+name = "keccakrs-wasm"
+version = "0.1.0"
+description = "A wasm wrapper around keccakrs"
+homepage = "https://github.com/botagar/keccakrs-wasm"
+repository = "https://github.com/botagar/keccakrs-wasm"
+authors = ["John Geddes <botagar@gmail.com>"]
+keywords = ["keccak", "crypto", "hash", "wasm"]
+categories = ["cryptography"]
+license = "MPL-2.0"
+readme = "README.md"
+
+[dependencies]
+keccakrs = "0.1.4"
+
+[target.wasm32-unknown-emscripten]
+rustflags = [
+    "-Clink-args=-s EXPORTED_FUNCTIONS=['_keccak256'] -s ASSERTIONS=1",
+]
+
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false

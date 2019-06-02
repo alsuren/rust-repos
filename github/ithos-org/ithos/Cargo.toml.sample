@@ -1,0 +1,42 @@
+[package]
+name        = "ithos"
+description = "Modern directory services and credential management"
+homepage    = "https://github.com/cryptosphere/ithos"
+repository  = "https://github.com/cryptosphere/ithos"
+readme      = "README.md"
+categories  = ["authentication", "database-implementations"]
+keywords    = ["directory", "identity", "access", "secrets", "ldap"]
+license     = "Apache-2.0"
+version     = "0.0.0"
+authors     = ["Tony Arcieri <bascule@gmail.com>"]
+
+[dependencies]
+byteorder     = "1.0"
+chrono        = "0.4"
+clap          = "2.25"
+data-encoding = "2.0.0-rc.1"
+error-chain   = "0.10"
+protobuf      = "1.4"
+ring          = "0.11.0"
+ring-pwhash   = "0.11.0"
+rpassword     = "0.4"
+untrusted     = "0.5"
+
+[dependencies.lmdb]
+version = "0.6"
+optional = true
+
+[dependencies.lmdb-sys]
+version = "0.6"
+optional = true
+
+[dependencies.objecthash]
+version = "0.4"
+features = ["octet-strings"]
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[features]
+default = ["lmdb-adapter"]
+lmdb-adapter = ["lmdb", "lmdb-sys"]

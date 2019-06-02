@@ -1,0 +1,15 @@
+[package]
+name = "zip"
+version = "0.1.0"
+authors = ["ncihnegn"]
+edition = "2018"
+
+[dependencies]
+crc = "*"
+env_logger = "*"
+lazy_static = "*"
+log = "*"
+num = "*"
+num-derive = "*"
+num-traits = "*"
+rand = "*"

@@ -1,0 +1,11 @@
+[package]
+
+name = "cc"
+version = "0.0.1"
+authors = ["John Hodge <tpg@mutabah.net>"]
+
+[dependencies]
+log = "0.4"
+env_logger = "0.5"
+structopt = "0.2"
+utf8reader = "*"

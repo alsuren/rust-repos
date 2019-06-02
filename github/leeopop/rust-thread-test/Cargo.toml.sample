@@ -1,0 +1,8 @@
+[package]
+name = "thread-test"
+version = "0.1.0"
+authors = ["Keunhong Lee <dlrmsghd@gmail.com>"]
+
+[[bin]]
+name = "thread_main"
+path = "src/main.rs"

@@ -1,0 +1,18 @@
+[package]
+name = "roborun"
+version = "0.1.0"
+authors = ["Rob Parrett <robparrett@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+stdweb = "0.4.13"
+nalgebra = "0.17"
+ncollide3d = "0.18"
+nphysics3d = "0.10"
+num-traits = "0.2"
+kiss3d     = { git = "https://github.com/rparrett/kiss3d.git", branch = "rparrett" }
+time       = "0.1"
+rand       = { version = "0.6", features = ["stdweb"] }
+rand_xorshift = "0.1"
+itertools  = "0.8"
+serde = { version = "1.0", features = ["derive"] }

@@ -1,0 +1,24 @@
+[package]
+name = "commodore"
+version = "0.3.0"
+authors = ["softprops <d.tangren@gmail.com>"]
+description = "Slack Command API handler library"
+documentation = "https://softprops.github.io/commodore"
+homepage = "https://github.com/softprops/commodore"
+repository = "https://github.com/softprops/commodore"
+keywords = ["hyper", "slack", "webhook"]
+license = "MIT"
+
+[dev-dependencies]
+env_logger = "0.3"
+
+[dependencies]
+hyper = "0.10"
+hyper-native-tls = "0.2"
+log = "0.3"
+regex = "0.2"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+url = "1.4"
+error-chain = "0.10"

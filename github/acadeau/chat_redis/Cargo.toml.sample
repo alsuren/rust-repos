@@ -1,0 +1,9 @@
+[package]
+name = "pubsub_redis"
+version = "0.1.0"
+authors = ["Alexandre Cadeau"]
+
+[dependencies]
+redis = "0.5.3"
+tui = "0.1.1"
+termion = "1.1.4"

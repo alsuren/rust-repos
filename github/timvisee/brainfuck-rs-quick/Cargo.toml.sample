@@ -1,0 +1,9 @@
+[package]
+name = "brainfuck-rs-quick"
+version = "0.1.0"
+authors = ["timvisee <timvisee@gmail.com>"]
+
+[dependencies]
+clap = "2.29"
+time = "0.1"
+tty-read = { git = "https://github.com/timvisee/tty-read-rs" }

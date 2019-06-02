@@ -1,0 +1,11 @@
+[package]
+
+name = "lirsp"
+version = "0.0.1"
+authors = ["Brian Smith <git@basmith.org>"]
+
+[dependencies]
+regex = "0.1.4"
+
+[dependencies.readline]
+git = "https://github.com/shaleh/rust-readline.git"

@@ -1,0 +1,8 @@
+[package]
+
+name = "litx"
+version = "0.0.1"
+authors = ["Cedrick Cooke <cedrickc@zoho.com>"]
+
+[dependencies.plex]
+git = "https://github.com/goffrie/plex"

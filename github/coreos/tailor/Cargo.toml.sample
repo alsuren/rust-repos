@@ -1,0 +1,29 @@
+[package]
+name = "tailor"
+version = "0.1.0"
+authors = ["Alex Crawford <alex.crawford@coreos.com>"]
+
+[dependencies]
+base64 = "*"
+chrono = { version = "*", features = ["serde"] }
+value-derive = { path = "src/expr/value-derive" }
+env_logger = "*"
+error-chain = "*"
+github-rs = "*"
+handlebars-iron = "*"
+iron = "*"
+log = "*"
+nom = "*"
+params = "*"
+persistent = "*"
+regex = "*"
+router = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+serde_yaml = "*"
+snap = "*"
+structopt = "*"
+
+[features]
+watch = ["handlebars-iron/watch"]

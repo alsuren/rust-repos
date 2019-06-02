@@ -1,0 +1,35 @@
+[package]
+name = "comm"
+version = "0.1.0"
+authors = ["Zac Stewart <zgstewart@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "comm"
+path = "src/lib.rs"
+
+[[bin]]
+name = "comm"
+path = "src/main.rs"
+doc = false
+
+[[bin]]
+name = "multi"
+path = "src/multi.rs"
+doc = false
+
+[dependencies]
+env_logger = "0.3.3"
+log = "0.3.6"
+mio = "0.5.0"
+num = "0.1.31"
+protobuf = "1.0.18"
+rand = "0.3.14"
+rust-crypto = "0.2.35"
+rustc-serialize = "0.3"
+stun = "0.0.2"
+time = "0.1.35"
+clap = "2.32.0"
+
+[build-dependencies]
+protoc = "2.1.4"

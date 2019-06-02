@@ -1,0 +1,29 @@
+[package]
+name = "ruplacer"
+version = "0.4.1"
+authors = ["Dimitri Merejkowsky <d.merej@gmail.com>"]
+description = "Find and replace text in source files"
+license = "BSD-3-Clause"
+readme = "README.md"
+
+
+keywords = ["ruplacer", "find", "grep", "command", "line"]
+categories = ["command-line-utilities"]
+
+repository = "https://github.com/TankerApp/ruplacer"
+
+[dependencies]
+difference = "2.0"
+ignore = "0.4"
+structopt = "0.2"
+colored = "1.6"
+regex = "1"
+isatty = "0.1"
+Inflector = "0.11"
+
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[package.metadata.deb]
+extended-description = "Find and replace text in source files"

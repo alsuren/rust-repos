@@ -1,0 +1,13 @@
+[package]
+authors = ["Henning-K <henning.kowalk962@web.de>"]
+name = "brainfuck"
+version = "0.1.0"
+
+[dependencies]
+docopt = "0.8"
+error-chain = "0.11.0"
+serde = "1.0.11"
+serde_derive = "1.0.11"
+
+[dependencies.bflib]
+path = "bflib"

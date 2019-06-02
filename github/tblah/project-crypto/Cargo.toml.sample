@@ -1,0 +1,13 @@
+[package]
+name = "proj_crypto"
+version = "0.2.0"
+authors = ["Tom Eccles"]
+description = "Cryptography for my third year project"
+documentation = "https://tblah.github.io/project-crypto/"
+licence = "GPL-3"
+readme = "README.md"
+repository = "https://github.com/tblah/project-crypto"
+
+[dependencies]
+sodiumoxide = "0.0.12"
+rust-gmp = {git = "https://github.com/fizyk20/rust-gmp", rev = "f3e0a8962206ecf7d21ac7d0a9635c7eff5ce7ff"}

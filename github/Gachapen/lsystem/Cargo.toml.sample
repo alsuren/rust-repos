@@ -1,0 +1,42 @@
+[package]
+name = "lsystem"
+version = "0.1.0"
+authors = [ "Magnus Bjerke Vik <mbvett@gmail.com>" ]
+
+[dependencies]
+kiss3d = { git = "https://github.com/Gachapen/kiss3d.git", branch = "glfw_context" }
+rand = "0.3"
+num = "0.1"
+chrono = "0.4"
+crossbeam = "0.3"
+num_cpus = "1"
+futures = "0.1"
+futures-cpupool = "0.1"
+serde = "1"
+serde_derive = "1"
+serde_yaml = "0.7"
+bincode = "^0.9.2"
+clap = "2"
+csv = "1.0.0-beta.5"
+rsgenetic = { git = "https://github.com/Gachapen/RsGenetic.git", branch = "features" }
+cpuprofiler = "0.0.3"
+rayon = "^0.8.2"
+mpeg_encoder = { git = "https://github.com/Gachapen/mpeg_encoder.git", branch = "set_options", optional = true }
+
+# Dependencies of kiss3d also used by the project.
+# Dependencies must match the same versions kiss3d uses.
+nalgebra = "0.13"
+glfw = "^0.15.0"
+ncollide_utils = "0.8"
+
+# Local dependencies.
+yobun = { path = "crates/yobun" }
+lsys = { path = "crates/lsys" }
+lsys_kiss3d = { path = "crates/lsys_kiss3d" }
+abnf = { path = "crates/abnf" }
+
+[features]
+default = ["record"]
+record = ["mpeg_encoder"]
+
+[workspace]

@@ -1,0 +1,23 @@
+[package]
+name = "easy_config"
+version = "0.1.0"
+authors = ["bytebuddha <shadowcynical@gmail.com>"]
+
+[features]
+default = ["jsn","tml"]
+jsn = ["serde_json"]
+tml = ["toml"]
+
+[dev-dependencies]
+serde = "0.8.19"
+serde_derive = "0.8.19"
+
+[dependencies.toml]
+version = "0.2.1"
+optional = true
+features = ["serde"]
+default-features = false
+
+[dependencies.serde_json]
+version = "0.8.3"
+optional = true

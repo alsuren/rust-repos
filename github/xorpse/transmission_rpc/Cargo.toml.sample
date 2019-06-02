@@ -1,0 +1,17 @@
+[package]
+name = "transmission_rpc"
+version = "0.1.0"
+authors = ["Mitja Karhusaari <monttu300@gmail.com>"]
+licence = "MIT"
+repository = "http://github.com/theMonttu/transmission_rpc"
+readme = "README.md"
+description = "A strongly typed RPC library for Transmission Daemon."
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+error-chain = "0.12"
+hyper = "0.10"
+serde = "1"
+serde_json = "1"
+serde_derive = "1"
+rustc-serialize = "0.3"

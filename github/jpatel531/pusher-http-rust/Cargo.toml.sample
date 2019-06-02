@@ -1,0 +1,24 @@
+[package]
+name = "pusher"
+version = "0.1.3"
+authors = ["Jamie Patel <jamie@pusher.com>"]
+description = "The Rust library for interacting with the Pusher HTTP API."
+repository = "http://github.com/pusher/pusher-http-rust"
+license = "MIT"
+keywords = ["realtime", "websockets", "pusher"]
+
+[lib]
+name = "pusher"
+path = "src/lib.rs"
+
+[dependencies]
+hyper="0.5.0"
+rust-crypto = "0.2.31"
+rustc-serialize = "0.3"
+time = "0.1"
+regex = "0.1.8"
+queryst="*"
+
+[dev-dependencies]
+yup-hyper-mock = "*"
+log = "*"  # log macros are used within yup-hyper-mock

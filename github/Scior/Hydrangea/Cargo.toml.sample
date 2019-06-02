@@ -1,0 +1,13 @@
+[package]
+name = "hydrangea"
+version = "0.1.0"
+authors = ["Scior <interval12@gmail.com>"]
+
+[dependencies]
+handlebars = "*"
+handlebars-iron ="0.26.2"
+router = "*"
+getopts = "*"
+
+[dependencies.iron]
+version = "*"

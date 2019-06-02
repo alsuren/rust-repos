@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+	"httpfs-common",
+	"httpfs-grpc",
+	"httpfs-backend",
+	"httpfs-fuse",
+]

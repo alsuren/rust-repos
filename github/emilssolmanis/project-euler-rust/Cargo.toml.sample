@@ -1,0 +1,7 @@
+[package]
+name = "rust-fuckery"
+version = "0.1.0"
+authors = ["Emils Solmanis <emils.solmanis@uswitch.com>"]
+
+[dependencies]
+rug = "1.2.1"

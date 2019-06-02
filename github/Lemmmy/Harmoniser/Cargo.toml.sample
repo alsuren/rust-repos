@@ -1,0 +1,7 @@
+[package]
+authors = ["Drew Lemmy <drew@lemmmy.pw>"]
+name = "harmoniser"
+version = "0.1.0"
+[dependencies]
+alsa = "*"
+midir = "*"

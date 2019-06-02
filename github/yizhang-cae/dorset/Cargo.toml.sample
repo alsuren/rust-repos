@@ -1,0 +1,12 @@
+[package]
+name = "dorset"
+version = "0.1.0"
+authors = ["Yi Zhang <yizhang.cae@gmail.com>"]
+description = "A rust implementation of Stan Math automatic differentiation library."
+license = "BSD-3-Clause"
+repository = "https://github.com/yizhang-cae/dorset.git"
+
+[dependencies]
+# nalgebra = "0.14"
+typed-arena = "1.3.0"
+float-cmp = "0.3.0"

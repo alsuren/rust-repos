@@ -1,0 +1,9 @@
+[package]
+name = "webassembly_template"
+version = "0.1.0"
+authors = ["your.name"]
+
+[dependencies]
+
+[lib]
+crate-type = ["cdylib"]

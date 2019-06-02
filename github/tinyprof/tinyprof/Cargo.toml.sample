@@ -1,0 +1,25 @@
+[package]
+name = "tinyprof"
+description = "Tiny realtime frame profiler, well used with tinyecs"
+repository = "https://github.com/tinyprof/tinyprof.git"
+keywords = ["profiler"]
+authors = ["not.fl3@gmail.com"]
+license = "MIT"
+version = "0.1.1"
+
+[dependencies]
+failure = "0.1.0"
+failure_derive = "0.1.0"
+time = "0.1"
+lazy_static = "0.2"
+vec_map = "0.8.0"
+
+[dev-dependencies]
+rand = "0.3"
+tinyprof_termion = { git = "https://github.com/tinyprof/tinyprof-termion" }
+
+[patch.'https://github.com/tinyprof/tinyprof']
+tinyprof = { path = '.' }
+
+[features]
+prof = []

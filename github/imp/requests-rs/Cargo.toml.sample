@@ -1,0 +1,32 @@
+[package]
+authors = ["Cyril Plisko <cyril.plisko@mountall.com>"]
+categories = ["web-programming::http-client"]
+description = "Rust HTTP client API styled after awesome Python requests - [WORK IN PROGRESS]"
+documentation = "https://docs.rs/requests"
+homepage = "https://gitlab.com/imp/requests-rs"
+keywords = ["http", "rest", "client", "python", "requests"]
+license = "MIT"
+name = "requests"
+readme = "README.md"
+repository = "https://gitlab.com/imp/requests-rs.git"
+version = "0.0.30"
+
+[badges]
+travis-ci = { repository = "imp/requests-rs" }
+gitlab = { repository = "imp/requests-rs" }
+
+[dependencies]
+hyper = "0.10"
+
+[dependencies.hyper-native-tls]
+optional = true
+version = "0.2"
+
+[dependencies.json]
+optional = true
+version = "0.11"
+
+[features]
+ssl = ["hyper-native-tls"]
+with_json = ["json"]
+default = ["ssl", "with_json"]

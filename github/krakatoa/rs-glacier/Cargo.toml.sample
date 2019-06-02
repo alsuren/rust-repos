@@ -1,0 +1,17 @@
+[package]
+name = "rs-glacier"
+version = "0.1.0"
+authors = ["Fernando Alonso <krakatoa1987@gmail.com>"]
+
+[dependencies]
+hyper = "*"
+lmdb-rs = "*"
+url = "*"
+rusqlite = "*"
+time = "*"
+rust-crypto = "*"
+rustc-serialize = "*"
+rand = "*"
+
+[dependencies.aws]
+git = "https://github.com/krakatoa/aws-rs"

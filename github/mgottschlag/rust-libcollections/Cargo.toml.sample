@@ -1,0 +1,18 @@
+[package]
+name = "collections"
+version = "1.0.0"
+authors = ["Ben Harris <mail@bharr.is>", "Matt Ickstadt <matt@icky.pw>", "Matt Coffin <mcoffin13@gmail.com>"]
+build = "./build.rs"
+
+[lib]
+name = "collections"
+path = "rust/src/libcollections/lib.rs"
+
+[dependencies]
+rust-libcore = "*"
+
+[dependencies.alloc]
+git = "https://github.com/mgottschlag/rust-liballoc"
+
+[dependencies.rustc_unicode]
+git = "https://github.com/mgottschlag/rust-librustc_unicode"

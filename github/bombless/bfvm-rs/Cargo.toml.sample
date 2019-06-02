@@ -1,0 +1,21 @@
+[package]
+name = "bfvm"
+version = "0.0.1"
+
+[dependencies.bf]
+path = "bf"
+
+[dependencies.rt]
+path = "rt"
+
+[dependencies.bencode]
+path = "bencode"
+
+[lib]
+name = "repl"
+path = "main.rs"
+
+[[bin]]
+doc = false
+name = "repl"
+path = "main.rs"

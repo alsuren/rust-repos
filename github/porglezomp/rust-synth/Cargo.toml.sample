@@ -1,0 +1,9 @@
+[package]
+name = "synth"
+version = "0.1.0"
+authors = ["Caleb Jones <bionicle.dragon@gmail.com>"]
+
+[dependencies]
+portmidi = "*"
+portaudio = "*"
+num = "*"

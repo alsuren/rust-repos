@@ -1,0 +1,61 @@
+[package]
+name = "hecate"
+version = "0.68.0"
+edition = "2018"
+authors = ["ingalls <ingalls@protonmail.com>"]
+license = "MIT"
+description = "OpenStreetMap Inspired Data Storage Backend Focused on Performance and GeoJSON Interchange"
+
+homepage = "https://github.com/mapbox/Hecate"
+repository = "https://github.com/mapbox/Hecate"
+
+readme = "README.md"
+
+categories = ["database"]
+
+[dev-dependencies]
+reqwest = "0.9.5"
+
+[dependencies]
+tilecover = "1.1.1"
+crossbeam = "0.7"
+valico = "3.0"
+rand = "0.6"
+postgis = "0.6.0"
+protobuf = "1.5"
+base64 = "0.10"
+rocket = "0.4.0"
+rocket_contrib="0.4.0"
+geojson = "0.15.0"
+quick-xml = "0.13.3"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+r2d2 = "0.8.4"
+r2d2_postgres = "0.14.0"
+env_logger = "0.6"
+json-patch = { git = "https://github.com/ingalls/json-patch", branch = "uniform_paths" }
+
+[dependencies.geo]
+version = "0.12"
+features = ["postgis-integration"]
+
+
+[dependencies.chrono]
+version = "0.4"
+features = ["serde"]
+
+[dependencies.postgres]
+version = "0.15.2"
+features = [
+    "with-serde_json",
+    "with-chrono"
+]
+
+[dependencies.clap]
+features = ["yaml"]
+version = "2.32.0"
+
+[[bin]]
+name = "hecate"
+doc = false

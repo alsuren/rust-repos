@@ -1,0 +1,9 @@
+[package]
+name = "wetland"
+version = "0.1.0"
+authors = ["Nathan Corbyn <me@nathancorbyn.com>", "Thomas Crawley <tmdc257@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+vulkano = "0.10"
+num = "*"

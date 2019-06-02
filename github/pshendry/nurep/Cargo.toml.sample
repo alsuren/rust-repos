@@ -1,0 +1,18 @@
+[package]
+name = "nurep"
+version = "0.0.1"
+authors = ["Paul Hendry <paul@pshendry.com>"]
+
+[[bin]]
+name = "nurep"
+path = "src/nurep.rs"
+
+[[bin]]
+name = "nurep-download"
+path = "src/download.rs"
+
+[dependencies.planets_nu]
+git = "https://github.com/pshendry/rust-planets-nu.git"
+
+[dependencies.sdl2]
+git = "https://github.com/AngryLawyer/rust-sdl2"

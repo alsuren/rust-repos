@@ -1,0 +1,13 @@
+[package]
+name = "he_utils"
+version = "0.1.0"
+authors = ["bRad <brad@humanenginuity.com>"]
+
+[dependencies]
+inc = { path = "inc" }
+fluent_validator = { path = "fluent_validator" }
+is_type = { path = "is_type" }
+
+[profile.release]
+opt-level = 3
+lto = true

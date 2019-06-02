@@ -1,0 +1,12 @@
+cargo-features = ["edition"]
+
+[workspace]
+
+members = [
+    './ast/',
+    './ast/span-derive/',
+#    './hir/',
+    './parser/',
+    './parser/repl/',
+    './wasm-api/',
+]

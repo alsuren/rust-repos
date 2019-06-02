@@ -1,0 +1,8 @@
+[package]
+
+name = "fps"
+version = "0.1.0"
+authors = ["David LeGare <excaliburhissheath@gmail.com>"]
+
+[dependencies]
+gunship = { path = "gunship-rs" }

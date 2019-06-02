@@ -1,0 +1,14 @@
+[package]
+name = "rust_boy"
+version = "0.1.0"
+authors = ["Alexander Wendt <alexwgh1+rustboy@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32"
+log = "0.4"
+simplelog = { git = "https://github.com/AlexW-GH/simplelog.rs" }
+chrono = "0.4"
+piston_window = "0.82"
+image = "0.20"
+piston-texture = "0.6"

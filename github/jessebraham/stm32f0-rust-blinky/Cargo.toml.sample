@@ -1,0 +1,16 @@
+[package]
+name = "stm32f0-rust-blinky"
+version = "0.1.0"
+authors = ["Jesse Braham <jesse@beta7.io>"]
+edition = "2018"
+
+[dependencies]
+cortex-m = "0.5.8"
+cortex-m-rt = "0.6.7"
+panic-halt = "0.2.0"
+stm32f0xx-hal =  { version = "0.12.0", features = ["stm32f091"]}
+
+[profile.release]
+debug = true
+lto = true
+opt-level = "s"

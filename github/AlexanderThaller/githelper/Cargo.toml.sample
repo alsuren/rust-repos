@@ -1,0 +1,15 @@
+[package]
+name = "githelper"
+version = "0.3.0"
+authors = ["Alexander Thaller <alexander.thaller@trivago.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/AlexanderThaller/githelper"
+homepage = "https://github.com/AlexanderThaller/githelper"
+documentation = "http://doc.rust-lang.org/githelper"
+description = """
+Wrapper around git with functions for common tasks related to git repositories.
+"""
+
+[dependencies]
+log = "0.3"

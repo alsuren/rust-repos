@@ -1,0 +1,19 @@
+[package]
+name = "olympic-rust"
+version = "0.1.0"
+authors = ["Grevozin"]
+
+[lib]
+name = "olympic_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "submitter"
+path = "src/bin/submitter.rs"
+
+[dependencies]
+regex = "0.2"

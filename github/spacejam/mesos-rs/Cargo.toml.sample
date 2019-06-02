@@ -1,0 +1,18 @@
+[package]
+name = "mesos"
+version = "0.2.10"
+authors = ["Tyler Neely <t@jujit.su>"]
+description = "Mesos library using the new HTTP API"
+license = "Apache-2.0"
+homepage = "https://github.com/spacejam/mesos-rs"
+keywords = ["mesos", "HA", "distributed-systems", "containers", "scheduler"]
+
+[[test]]
+
+name = "test"
+path = "test/test.rs"
+
+[dependencies]
+protobuf = "1.0.10"
+hyper = "0.7.1"
+itertools = "0.4.3"

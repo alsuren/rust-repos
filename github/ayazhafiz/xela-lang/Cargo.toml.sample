@@ -1,0 +1,24 @@
+[package]
+authors = ["ayazhafiz <ayaz.hafiz.1@gmail.com>"]
+exclude = ["Makefile"]
+homepage = "https://github.com/ayazhafiz/flang"
+license = "MIT"
+name = "flang"
+readme = "README.md"
+repository = "https://github.com/ayazhafiz/flang.git"
+version = "0.1.2"
+
+#[[bin]]
+#doc = false
+#name = "flang"
+#path = "src/main.rs"
+[badges.maintenance]
+status = "actively-developed"
+
+[badges.travis-ci]
+branch = "master"
+repository = "ayazhafiz/flang"
+
+[lib]
+name = "flang"
+path = "src/lib.rs"

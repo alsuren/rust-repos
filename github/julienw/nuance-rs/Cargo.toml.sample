@@ -1,0 +1,13 @@
+[package]
+name = "nuance-rs"
+version = "0.1.0"
+authors = ["Julien Wajsberg <felash@gmail.com>"]
+
+[dependencies]
+byteorder = "0.5"
+rust-ini = "0.9.4"
+hyper = "0.9.5"
+language-tags = "0.2.2"
+env_logger = "0.3"
+log = "0.3"
+portaudio = "0.6.4"

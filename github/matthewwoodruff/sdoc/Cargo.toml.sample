@@ -1,0 +1,30 @@
+[package]
+name = "sdoc"
+version = "0.8.3"
+authors = ["Matthew Woodruff <mwoodruf@thoughtworks.com>"]
+description = "Framework for building custom CLIs around shell, scripts, and executables"
+repository = "https://github.com/matthewwoodruff/sdoc"
+homepage = "https://github.com/matthewwoodruff/sdoc"
+readme = "README.md"
+license = "GPL-3.0"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
+
+[badges]
+travis-ci = { repository = "matthewwoodruff/sdoc" }
+
+[[bin]]
+name = "sdoc"
+path = "src/main.rs"
+
+[dependencies]
+serde_derive = "1.0"
+serde = "1.0"
+serde_yaml = "0.8"
+ansi_term = "0.11"
+
+[dev-dependencies]
+assert_cli = "0.5"
+tempfile = "3"

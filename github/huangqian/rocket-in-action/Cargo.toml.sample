@@ -1,0 +1,30 @@
+[package]
+name = "rocket-in-action"
+version = "0.1.0"
+authors = ["huangqian <huangqian866@163.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+log = "0.4"
+rocket_contrib="0.4"
+
+[[example]]
+name = "hello"
+path = "examples/hello.rs"
+
+[[example]]
+name = "dynamic-path"
+path = "examples/dynamic-path.rs"
+
+[[example]]
+name = "namespace"
+path = "examples/namespace.rs"
+
+
+[[example]]
+name = "restful"
+path = "examples/restful.rs"

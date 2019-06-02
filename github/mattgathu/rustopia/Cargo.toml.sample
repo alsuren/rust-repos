@@ -1,0 +1,76 @@
+[package]
+name = "rustopia"
+version = "0.1.0"
+authors = ["Matt Gathu <mattgathu@gmail.com>"]
+
+[dependencies]
+clap = "2.24.2"
+libc = "0.2.23"
+futures = "0.1.14"
+tokio-core = "0.1.6"
+hyper = "0.11.1"
+curl = "0.4.7"
+reqwest = "0.6.2"
+chan-signal = "0.2.0"
+chan = "0.1.19"
+
+[[bin]]
+name = "factorial"
+path = "rosetta/factorial.rs"
+
+[[bin]]
+name = "handle_signal"
+path = "rosetta/handle_signal.rs"
+
+[[bin]]
+name = "hamming"
+path = "rosetta/hamming.rs"
+
+[[bin]]
+name = "https"
+path = "rosetta/https.rs"
+
+[[bin]]
+name = "http"
+path = "rosetta/http.rs"
+
+[[bin]]
+name = "ackermann"
+path = "rosetta/ackermann.rs"
+
+[[bin]]
+name = "fibonacci"
+path = "rosetta/fibonacci.rs"
+
+[[bin]]
+name = "bitwiseio"
+path = "rosetta/bitwiseio.rs"
+
+[[bin]]
+name = "sieve"
+path = "rosetta/sieve_of_eratosthenes.rs"
+
+[[bin]]
+name = "rcal"
+path = "shelltools/rcal.rs"
+
+[[bin]]
+name = "rcat"
+path = "shelltools/rcat.rs"
+
+[[bin]]
+name = "rls"
+path = "shelltools/rls.rs"
+
+[[bin]]
+name = "rsort"
+path = "shelltools/rsort.rs"
+
+[[bin]]
+name = "rhead"
+path = "shelltools/rhead.rs"
+
+[[bin]]
+name = "rtail"
+path = "shelltools/rtail.rs"
+

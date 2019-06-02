@@ -1,0 +1,66 @@
+[package]
+name = "learn-tokio0"
+version = "0.1.0"
+authors = ["Mike Tang <daogangtang@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "*"
+bytes = "*"
+tokio = "*"
+tokio-codec = "*"
+
+
+[[bin]]
+name = "delay_print"
+path = "src/delay_print.rs"
+
+[[bin]]
+name = "interval_print"
+path = "src/interval_print.rs"
+
+[[bin]]
+name = "delay_seq_print"
+path = "src/delay_seq_print.rs"
+
+[[bin]]
+name = "concurrent_interval_print"
+path = "src/concurrent_interval_print.rs"
+
+[[bin]]
+name = "futures_select"
+path = "src/futures_select.rs"
+
+[[bin]]
+name = "echo_udp"
+path = "src/echo_udp.rs"
+
+[[bin]]
+name = "concurrent_send_recv"
+path = "src/concurrent_send_recv.rs"
+
+[[bin]]
+name = "concurrent_send_recv2"
+path = "src/concurrent_send_recv2.rs"
+
+[[bin]]
+name = "print_each_packet"
+path = "src/print_each_packet.rs"
+
+[[bin]]
+name = "print_lines"
+path = "src/print_lines.rs"
+
+
+[[bin]]
+name = "tcp_client"
+path = "src/tcp_client.rs"
+
+[[bin]]
+name = "tcp_server"
+path = "src/tcp_server.rs"
+
+[[bin]]
+name = "tcp_server3"
+path = "src/tcp_server3.rs"
+

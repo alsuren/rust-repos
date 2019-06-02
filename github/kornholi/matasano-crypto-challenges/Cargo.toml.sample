@@ -1,0 +1,10 @@
+[package]
+name = "crypto_challenges"
+version = "0.1.0"
+authors = ["Kornelijus Survila <kornholijo@gmail.com>"]
+
+[dependencies]
+rand = "*"
+rustc-serialize = "*"
+rust-crypto = "*"
+byteorder = "*"

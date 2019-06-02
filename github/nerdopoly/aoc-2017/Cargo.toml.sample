@@ -1,0 +1,18 @@
+[package]
+name = "aoc-2017"
+version = "0.1.0"
+authors = ["Adam Birtles <nerdopoly@icloud.com>"]
+
+[dependencies]
+
+[lib]
+name = "getinput"
+path = "getinput.rs"
+
+[[bin]]
+name = "day01"
+path = "01-anticaptchas/main.rs"
+
+[[bin]]
+name = "day02"
+path = "02-checksums/main.rs"

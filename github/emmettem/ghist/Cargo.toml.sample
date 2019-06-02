@@ -1,0 +1,17 @@
+[package]
+name = "ghist"
+version = "0.1.0"
+authors = ["modderme123 <hidden>"]
+build = "build.rs"
+
+[dependencies]
+rand = "*"
+nalgebra = {version = "*", features = ["serde-serialize"]}
+ncollide2d = "*"
+
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+
+actix = "*"
+actix-web = { git = "https://github.com/actix/actix-web.git"}

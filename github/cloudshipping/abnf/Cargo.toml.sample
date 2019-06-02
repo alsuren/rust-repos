@@ -1,0 +1,8 @@
+[package]
+name = "abnf"
+version = "0.1.0"
+authors = ["Martin Hoffmann <hn@nvnc.de>"]
+
+[dependencies]
+bytes      = "0.4.1"
+futures    = "0.1.10"

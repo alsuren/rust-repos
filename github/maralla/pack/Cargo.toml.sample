@@ -1,0 +1,19 @@
+[package]
+name = "pack"
+version = "0.2.3"
+authors = ["maralla <maralla.ai@gmail.com>"]
+
+[dependencies]
+lazy_static = "0.1.*"
+yaml-rust = "0.3.5"
+walkdir = "1"
+termion = "1.0"
+num_cpus = "1.0"
+chan = "0.1.19"
+clap = "2.*"
+dirs = "1.0"
+
+[dependencies.git2]
+version = "0.7"
+default-features = false
+features = ["ssh", "https"]

@@ -1,0 +1,47 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "SSH Server Daemon"
+documentation = "http://rustyhorde.github.io/goopd"
+homepage = "http://rustyhorde.github.io/goopd"
+keywords = ["goopy", "goopd", "gosh"]
+license = "MIT/Apache-2.0"
+name = "goopd"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/goopd"
+version = "0.1.0"
+
+[dependencies]
+byteorder = "0.5.3"
+bytes = "0.3.0"
+clap = "2.9.2"
+env_logger = "0.3.4"
+lazy_static = "0.2.1"
+libc = "0.2.14"
+log = "0.3.6"
+net2 = "0.2.26"
+num = "0.1.34"
+rustc-serialize = "0.3.19"
+slog = "~0.7.0"
+slog-json = "~0.7.0"
+slog-term = "~0.7.0"
+toml = "~0.2.0"
+
+[dependencies.clippy]
+optional = true
+version = "~0.0.78"
+
+[dependencies.goopy]
+path = ".."
+version = "0.1.0"
+
+[dependencies.mio]
+path = "../mio"
+
+[dependencies.slab]
+git = "https://github.com/carllerche/slab"
+rev = "5476efcafb"
+
+[features]
+default = ["clap/suggestions"]
+latest = ["goopy/latest"]
+lint = ["clippy"]

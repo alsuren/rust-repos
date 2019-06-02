@@ -1,0 +1,19 @@
+[package]
+name = "nrf52dk-rs"
+categories = ["embedded", "hardware-support", "no-std"]
+version = "0.3.0"
+authors = ["Niklas Adolfsson <niklasadolfsson1@gmail.com>"]
+license = "MIT"
+description = "bare-metal on nrf52dk"
+
+[dependencies]
+cortex-m = "0.5.2"
+tock-registers = "0.1.0"
+
+[profile.dev]
+panic = "abort"
+lto = true
+
+[profile.release]
+panic = "abort"
+lto = true

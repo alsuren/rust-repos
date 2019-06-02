@@ -1,0 +1,16 @@
+[package]
+name = "rime"
+version = "0.1.0"
+authors = ["whythat <whythat@protonmail.com>"]
+
+[dependencies]
+clap = "2.32.0"
+racer = "2.0.14"
+quote = "0.6.4"
+proc-macro2 = "0.4"
+rustc-ap-syntax = "201.0.0"
+rustc-ap-syntax_pos = "208.0.0"
+
+[dependencies.syn]
+version = "0.14.0"
+features = ["full"]

@@ -1,0 +1,11 @@
+[package]
+name = "UniHack"
+version = "0.1.0"
+authors = ["Dynisious <daniel.bechaz@gmail.com>"]
+
+[dependencies]
+rocket_codegen = "*"
+rocket = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"

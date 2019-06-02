@@ -1,0 +1,12 @@
+[package]
+name = "handel"
+version = "0.1.0"
+authors = ["The Nimiq Core Development Team <info@nimiq.com>"]
+edition = "2018"
+description = "Implementation of the Handel: Aggregation protocol for large scale Byzantine committee."
+
+[dependencies]
+rand = "0.6"
+nimiq-bls = { path = "../bls" }
+bitvec = "0.10"
+failure = "0.1"

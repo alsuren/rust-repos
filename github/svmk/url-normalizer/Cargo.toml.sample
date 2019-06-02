@@ -1,0 +1,14 @@
+[package]
+name = "url-normalizer"
+version = "0.1.1"
+authors = ["Mikhail Svetov <svmk-work@yandex.ru>"]
+
+description = "URL normalization"
+keywords=["url","normalization"]
+documentation = "https://docs.rs/url-normalizer"
+repository = "https://github.com/svmk/url-normalizer"
+readme="README.md"
+license = "MIT"
+
+[dependencies]
+url = "1.7"

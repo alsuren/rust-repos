@@ -1,0 +1,13 @@
+[package]
+name = "dualecdrbg"
+version = "0.1.0"
+authors = ["David Hacker <dmhacker@protonmail.com>"]
+
+[dependencies]
+rug = "1.2.0"
+rand = "0.5.4"
+crossbeam = "0.3.2"
+num_cpus = "1.0"
+time = "0.1"
+argparse = "0.2.1"
+lazy_static = "1.0"

@@ -1,0 +1,24 @@
+[package]
+name = "xcg-coding-game"
+version = "0.1.0"
+keywords = ["xcg", "coding", "game"]
+authors = ["Nick Linker <nlinker@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "xcg"
+
+[[bin]]
+name = "xcg-app"
+path = "src/main.rs"
+
+[dependencies]
+byteorder = "1.2.3"
+itertools = "0.7.8"
+rand = "0.5.3"
+rand_core = "0.2.1"
+regex = "1.0.1"
+conv = "0.3.3"
+console = "0.6.1"
+crossbeam = "0.3.2"
+priority-queue = "0.5.1"

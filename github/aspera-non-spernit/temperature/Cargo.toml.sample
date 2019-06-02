@@ -1,0 +1,9 @@
+[package]
+name = "temperature"
+version = "0.2.1"
+authors = ["aspera-non-spernit <g.s.d>"]
+edition = "2018"
+
+[dependencies]
+rust_decimal = "0.10.2"
+rust_decimal_macros = "0.10.2"

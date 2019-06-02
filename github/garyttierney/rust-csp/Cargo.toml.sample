@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "packages/libsecsp_analysis",
+    "packages/libsecsp_syntax",
+    "packages/secsp_language_server",
+    "packages/secspc",
+]
+
+[profile.release]
+debug = true
+panic = 'abort'

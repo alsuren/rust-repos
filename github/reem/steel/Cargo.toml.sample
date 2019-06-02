@@ -1,0 +1,14 @@
+[package]
+
+name = "steel"
+version = "0.0.1"
+authors = ["Jonathan Reem <jonathan.reem@gmail.com>"]
+
+[lib]
+
+name = "steel"
+path = "src/lib.rs"
+
+[dependencies.time]
+git = "https://github.com/rust-lang/time"
+

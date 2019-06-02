@@ -1,0 +1,46 @@
+[package]
+
+name = "compiler"
+version = "0.0.1"
+authors = ["Dylan McKay <me@dylanmckay.io>"]
+
+[workspace]
+
+[dependencies]
+argparse = "0.2.1"
+term = "0.4.4"
+
+[dependencies.compiler_ir]
+path = "src/ir"
+[dependencies.compiler_machine]
+path = "src/machine"
+[dependencies.compiler_mir]
+path = "src/mir"
+[dependencies.compiler_pass]
+path = "src/pass"
+[dependencies.compiler_regalloc]
+path = "src/regalloc"
+[dependencies.compiler_select]
+path = "src/select"
+[dependencies.compiler_target]
+path = "src/target"
+[dependencies.compiler_test]
+path = "src/test"
+[dependencies.compiler_util]
+path = "src/util"
+
+[lib]
+name = "compiler"
+path = "src/lib.rs"
+
+[[bin]]
+name = "asm"
+path = "tools/asm.rs"
+
+[[bin]]
+name = "test"
+path = "tools/test.rs"
+
+[[bin]]
+name = "basic-example"
+path = "tools/basic-example.rs"

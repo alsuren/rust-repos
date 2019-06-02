@@ -1,0 +1,19 @@
+[package]
+name = "eulerrust"
+version = "0.1.0"
+authors = ["Douglas H. Bradshaw <dhbradshaw@gmail.com>"]
+
+[dependencies]
+arrayvec = "0.4.0"
+chrono = "0.4"
+fnv = "1.0.5"
+num = "0.1"
+permutohedron = "0.2"
+time = "*"
+
+[dev-dependencies]
+bencher = "0.1.4"
+
+[[bench]]
+name = "eulerrust"
+harness = false

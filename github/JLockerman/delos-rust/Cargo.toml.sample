@@ -1,0 +1,44 @@
+[package]
+name = "fuzzy_log"
+version = "0.1.0"
+authors = ["J <joshua.lockerman@yale.edu>"]
+build = "build.rs"
+
+[lib]
+crate-type = ["lib", "staticlib"]
+
+[build-dependencies]
+cbindgen = "0.6.2"
+
+[dependencies]
+byteorder = "1"
+fuzzy_log_packets = {path = "./fuzzy_log_packets"}
+fuzzy_log_util = {path = "./fuzzy_log_util"}
+fuzzy_log_client = {path = "./fuzzy_log_client"}
+fuzzy_log_server = {path = "./fuzzy_log_server"}
+reactor = {path = "./reactor"}
+# tokio_server = {path = "./tokio_server"}
+libc = "0.2"
+log = "0.3"
+toml = "0.2"
+mio = "0.6.6"
+env_logger = "0.3"
+
+[features]
+no_trace = ["log/max_level_info"]
+print_stats = ["fuzzy_log_client/print_stats", "fuzzy_log_server/print_stats"]
+debug_no_drop = []
+
+[profile.dev]
+panic = 'abort'
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+debug-assertions = false
+panic = 'abort'
+
+[workspace]
+exclude = ["servers/", "examples", "clients", "benchers", "fuzzy_views", "tokio_server",
+    "fuzzy_log.h", "fuzzylog_async_ext.h"]

@@ -1,0 +1,21 @@
+[package]
+name = "rustlet"
+version = "0.1.0"
+authors = ["Claudio Matsuoka <cmatsuoka@gmail.com>"]
+
+[lib]
+name = "rustlet"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rustlet"
+path = "src/bin/rustlet.rs"
+doc = false
+
+[dependencies]
+getopts = "0.2"
+matches = "0.1"
+regex = "0.2"
+
+[profile.release]
+lto = true

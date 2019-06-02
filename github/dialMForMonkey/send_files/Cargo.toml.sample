@@ -1,0 +1,11 @@
+[package]
+name = "send_files_from_api"
+version = "0.1.0"
+authors = ["Gabriel Souza <gabrielsouza849@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+num_cpus = "*"
+reqwest = "0.9.17"
+regex = "1.1.6"
+threadpool = "*"

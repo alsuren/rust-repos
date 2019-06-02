@@ -1,0 +1,13 @@
+[package]
+name = "thread_forever"
+version = "0.1.0"
+authors = ["king6cong <king6cong@gmail.com>"]
+
+[dependencies]
+log = "0.4"
+parking_lot = "*"
+
+[dev-dependencies]
+lazy_static = "1"
+env_logger = "0.6"
+rand = "0.6"

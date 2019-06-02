@@ -1,0 +1,24 @@
+[package]
+name = "rust-hl7"
+version = "0.1.0"
+authors = ["wokket <wokket@gmail.com>"]
+edition = "2018"
+description = "HL7 Parser and object builder? query'er? - experimental only at any rate"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name="rusthl7"
+path="src/lib.rs"
+crate-type = ["rlib", "dylib"]
+
+[[bin]]
+name="test_app"
+path="src/bin.rs"
+
+[profile.release]
+debug = true #temp include debug symbols for perf profiling
+
+
+[dependencies]
+itertools = "0.8.0"
+libc = "0.2.48"

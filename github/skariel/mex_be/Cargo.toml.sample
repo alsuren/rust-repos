@@ -1,0 +1,12 @@
+[package]
+name = "mex_be"
+version = "0.1.0"
+authors = ["skariel"]
+
+[dependencies]
+rand = "*"
+stash = "*"
+spade = "*"
+clippy = "*"
+websocket = {version = "*", features = ["nightly"]}
+parking_lot = {version = "*", features = ["nightly"]}

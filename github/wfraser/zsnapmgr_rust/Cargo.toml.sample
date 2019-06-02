@@ -1,0 +1,16 @@
+[package]
+name = "zsnapmgr"
+version = "0.0.1"
+authors = ["William R. Fraser <wfraser@codewise.org>"]
+
+[dependencies]
+chrono = "0.4"
+libc = "0.2"
+regex = "1"
+ring = "0.13"
+termios = "0.3"
+
+[[bin]]
+name = "zsnapmgr"
+doc = false
+path = "src/main.rs"

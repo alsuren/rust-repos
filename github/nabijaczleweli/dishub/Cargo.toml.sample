@@ -1,0 +1,34 @@
+[package]
+name = "dishub"
+description = "App for posting GitHub activity on Discord"
+documentation = "https://rawcdn.githack.com/nabijaczleweli/dishub/doc/dishub/index.html"
+repository = "https://github.com/nabijaczleweli/dishub"
+readme = "README.md"
+keywords = ["discord", "github", "activity", "post"]
+license = "MIT"
+# Remember to also update in appveyor.yml
+version = "0.1.1"
+# Remember to also update in dishub.md
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>"]
+exclude = ["*.enc"]
+
+
+[dependencies]
+rustc-serialize = "0.3"
+lazy_static = "0.2"
+chrono = "0.2"
+regex = "0.1"
+hyper = "0.9"
+json = "0.11"
+clap = "2.18"
+toml = "0.2"
+
+[dependencies.discord]
+version = "0.7"
+default-features = false
+
+
+[[bin]]
+name = "dishub"
+test = false
+doc = false

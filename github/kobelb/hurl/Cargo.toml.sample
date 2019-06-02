@@ -1,0 +1,17 @@
+[package]
+name = "hurl"
+version = "0.1.0"
+authors = ["Brandon Kobel <brandon.kobel@gmail.com>"]
+
+[features]
+# no features by default
+default = []
+
+# Add feature "foo" here, then you can use it. 
+# Our "foo" feature depends on nothing else.
+foo = []
+
+[dependencies]
+curl = "0.4.2"
+termion = "1.0"
+url = "1.2.4"

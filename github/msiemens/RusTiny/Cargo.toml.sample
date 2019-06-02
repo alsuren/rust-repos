@@ -1,0 +1,32 @@
+[package]
+
+name = "rustiny"
+version = "0.0.1"
+authors = ["Markus Siemens <siemens1993@gmail.com>"]
+
+[[bin]]
+name = "rustiny"
+doc = false
+test = false
+
+[[bin]]
+name = "rustiny-rulecomp"
+doc = false
+test = false
+
+[profile.release]
+opt-level = 3
+lto = true
+
+[dependencies]
+ansi_term = "*"
+clippy = "*"
+clap = "*"
+env_logger = "*"
+lazy_static = "*"
+log = "*"
+rustc-serialize = "*"
+term = "*"
+
+[dev-dependencies]
+pretty_assertions = "0.3.4"

@@ -1,0 +1,34 @@
+[package]
+name = "pcap-parse"
+version = "0.1.0"
+description = "PCAP test tool for rusticata parsers"
+license = "LGPL-2.1+"
+keywords = ["Rusticata","pcap","protocol","parser","nom"]
+homepage = "https://github.com/rusticata/pcap-parse"
+repository = "https://github.com/rusticata/pcap-parse.git"
+authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
+
+[dependencies]
+pnet = "0.21.0"
+nom = "4.0"
+log = "0.4.6"
+env_logger = "0.6"
+pcap-parser = "0.2"
+
+[dependencies.clap]
+version = "2"
+default-features = false
+
+[dependencies.rusticata]
+# path = "../rusticata"
+git = "https://github.com/rusticata/rusticata.git"
+
+# [patch.crates-io]
+# # rusticata-macros = {path="../rusticata-macros"}
+# # der-parser = {path="../der-parser"}
+# # ipsec-parser = {path="../ipsec-parser"}
+# # kerberos-parser = {path="../kerberos-parser"}
+# # ntp-parser = {path="../ntp-parser"}
+# tls-parser = {path="../tls-parser"}
+# # x509-parser = {path="../x509-parser"}
+# snmp-parser = {path="../snmp-parser"}

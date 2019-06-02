@@ -1,0 +1,7 @@
+[package]
+name = "namegen"
+version = "0.1.0"
+authors = ["Aaron Brodersen <aaron@abrodersen.com>", "Moby Authors"]
+
+[dependencies]
+rand = "0.3"

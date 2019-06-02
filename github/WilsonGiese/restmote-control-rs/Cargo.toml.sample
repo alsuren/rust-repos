@@ -1,0 +1,11 @@
+[package]
+name = "restmote-control-rs"
+version = "0.1.0"
+authors = ["Wilson Giese <giese.wilson@gmail.com>"]
+
+[dependencies]
+clap = "2.18.0"
+keyboard = { path = "keyboard" }
+libc = "0.2"
+rustful = "0.9"
+rustc-serialize = "0.3"

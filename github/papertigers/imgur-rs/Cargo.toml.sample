@@ -1,0 +1,11 @@
+[package]
+name = "imgur_rs"
+version = "0.1.0"
+authors = ["Mike Zeller <mike@mikezeller.net>"]
+repository = "https://github.com/papertigers/imgur-rs/"
+description = "Implementation of a few imgur api endpoints"
+license = "MIT"
+
+[dependencies]
+hyper = '0.9'
+serde_json = '0.8'

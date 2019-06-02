@@ -1,0 +1,26 @@
+[package]
+name = "bmap"
+version = "0.1.0"
+authors = ["bluss"]
+
+license = "GPL-3.0"
+
+description = "A high performance version of a B-Tree map. API is still changing."
+documentation = "http://bluss.github.io/bmap"
+repository = "https://github.com/bluss/bmap"
+keywords = ["data-structure", "btreemap", "b-tree", "range"]
+
+[dependencies]
+unchecked-index = { version = "0.2.0" }
+itertools = "0.7"
+
+[dependencies.arrayvec]
+version = "0.4"
+features = ["use_union"]
+
+[dev-dependencies]
+rand = "0.3"
+odds = { version = "0.3.1" }
+
+[profile.bench]
+debug = true

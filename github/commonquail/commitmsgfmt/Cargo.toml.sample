@@ -1,0 +1,19 @@
+[package]
+name = "commitmsgfmt"
+version = "1.2.0-GIT"
+authors = ["Mikkel Kjeldsen"]
+description = "Formats commit messages better than fmt(1) and Vim"
+publish = false
+homepage = "https://gitlab.com/mkjeldsen/commitmsgfmt"
+repository = "https://gitlab.com/mkjeldsen/commitmsgfmt"
+readme = "README.md"
+license = "Apache-2.0"
+
+[dependencies]
+regex = "1.0.5"
+unicode-segmentation = "1.2.1"
+clap = "2.32.0"
+encoding = "0.2.33"
+
+[dev-dependencies]
+pretty_assertions = "0.5.1"

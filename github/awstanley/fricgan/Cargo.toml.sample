@@ -1,0 +1,93 @@
+[package]
+name = "fricgan"
+version = "0.1.0"
+authors = ["A.W. 'aws' Stanley <aws@reversing.space>"]
+description = "A simple crate for performing basic input and output on bytes."
+repository = "https://github.com/awstanley/fricgan"
+homepage = "https://github.com/awstanley/fricgan"
+documentation = "https://docs.rs/fricgan/"
+readme = "README.md"
+categories = ["data-structures","no-std"]
+license = "MIT OR Apache-2.0"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
+
+[badges]
+appveyor = { repository = "awstanley/fricgan" }
+travis-ci = { repository = "awstanley/fricgan" }
+
+[dependencies.num-traits]
+version = "0.2"
+default-features = false
+optional = true
+
+[features]
+default = []
+
+# asserts for bad fio_read and fio_write.
+# Used to keep the unsafe version somewhat safe.
+safety-checks = []
+
+# Unsafe enables copy_nonoverlapping
+unsafe = []
+
+# std enables std usage (required for strings)
+std = []
+
+# i8 (single signed byte) read/write.
+io-i8 = []
+
+# u16 (two signed bytes) read/write.
+io-i16 = []
+
+# u32 (four signed bytes) read/write.
+io-i32 = []
+
+# u64 (eight signed bytes) read/write.
+io-i64 = []
+
+# u8 (single unsigned byte) read/write.
+io-u8 = []
+
+# u16 (two unsigned bytes) read/write.
+io-u16 = []
+
+# u32 (four unsigned bytes) read/write.
+io-u32 = []
+
+# u64 (eight unsigned bytes) read/write.
+io-u64 = []
+
+# f32
+io-f32 = []
+
+# f64
+io-f64 = []
+
+# u8 length with a string that follows.
+io-string = ["std", "num-traits", "num-traits/std"]
+
+# vlq support
+vlq = []
+
+# 7 bits of value, per byte;
+# 1 bit marking continuation.
+# Maximum size 35 bits (32 bits actual)
+vlq-32 = ["vlq"]
+
+# 7 bits of value, per byte;
+# 1 bit marking continuation
+# Maximum size 71 bits (64 bits actual)
+vlq-64 = ["vlq"]
+
+# vlq length with a string that follows.
+# The null byte is not counted as part of the length.
+vlq-string = ["std", "vlq", "num-traits", "num-traits/std"]
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[package.metadata.docs.rs]
+all-features = true

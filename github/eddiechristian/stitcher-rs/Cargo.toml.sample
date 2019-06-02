@@ -1,0 +1,36 @@
+
+[package]
+name = "ironstitcher"
+version = "0.0.1"
+repository = "https://github.com/eddiechristian/stitcher-rs"
+
+[features]
+# When specified, includes benchmarking code in binary file.
+benchmark = []
+# When specified, "non-production-hardware" suppresses cpu scheduling.
+
+[lib]
+name = "ironstitcher"
+
+[dependencies]
+serde_json = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+getopts = "0.2.10"
+prctl = "1.0.0"
+log = { version = "0.3.1", features = ["release_max_level_info"] }
+num = "0.1.25"
+time = "0.1.25"
+
+
+[dev-dependencies]
+env_logger = "0.3.1"
+lazy_static = "0.1.14"
+
+# See http://doc.crates.io/manifest.html#the-profile-sections for
+# possible profile settings.
+[profile.release]
+debug = true
+# Punt on "coredumps for rust panics."
+# Libraries have to also be compiled to abort.
+#panic = 'abort'

@@ -1,0 +1,9 @@
+[package]
+name = "kvs"
+version = "0.1.0"
+authors = ["Pan Ke"]
+edition = "2018"
+
+[dependencies]
+clap = "2"
+structopt = "0.2.10"

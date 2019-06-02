@@ -1,0 +1,13 @@
+[package]
+name = "email_reminder"
+version = "0.1.0"
+authors = ["Brose Johnstone <baby-bell@users.noreply.github.com>"]
+
+[dependencies]
+rocket = "0.2"
+rocket_codegen = "0.2"
+lettre = "0.6"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0" 
+chrono = { version = "0.3", features = ["serde"] }

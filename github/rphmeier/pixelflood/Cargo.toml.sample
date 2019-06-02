@@ -1,0 +1,17 @@
+[package]
+name = "pixelflood"
+version = "0.1.0"
+authors = ["Robert Habermeier <rphmeier@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+image = "0.20"
+futures = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"
+byteorder = "1.0"
+parking_lot = "0.7"
+tokio-tcp = "0.1"
+libp2p = { git = "https://github.com/libp2p/rust-libp2p" }
+rand = "0.6"

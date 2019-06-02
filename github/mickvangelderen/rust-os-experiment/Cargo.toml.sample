@@ -1,0 +1,13 @@
+[package]
+name = "rust-os-experiment"
+version = "0.1.0"
+authors = ["Mick van Gelderen <mickvangelderen@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0.0"
+
+[profile]
+panic = "abort"

@@ -1,0 +1,33 @@
+[package]
+name = "skeleton-mans-amateur-skater"
+version = "0.0.8"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+license = "ISC"
+repository = "https://github.com/ctsrc/SMAS"
+description = "Skeleton Man's Amateur Skater, a 2d extreme sport platformer"
+readme = "README.md"
+categories = ["ludum-dare", "games"]
+
+[features]
+nightly = ["amethyst/nightly"]
+
+[dependencies]
+amethyst = "0.10.0"
+
+[package.metadata.deb]
+depends = "$auto, libasound2, libx11-xcb1, libssl1.1, libfreetype6"
+assets = [
+  ["target/release/skeleton-mans-amateur-skater", "usr/bin/", "755"],
+
+  ["resources/display_config.ron", "usr/share/skeleton-mans-amateur-skater/resources/", "644"],
+
+  ["assets/main_menu.wav",     "usr/share/skeleton-mans-amateur-skater/assets/", "644"],
+  ["assets/level_01.wav",      "usr/share/skeleton-mans-amateur-skater/assets/", "644"],
+  ["assets/menu_screen.png", "usr/share/skeleton-mans-amateur-skater/assets/", "644"],
+  ["assets/menu_space.png",  "usr/share/skeleton-mans-amateur-skater/assets/", "644"],
+  ["assets/kick.png",          "usr/share/skeleton-mans-amateur-skater/assets/", "644"],
+]
+extended-description = """\
+This game is like what Super Mario would be if it was made by the Tony Hawk's Pro Skater \
+team. Probably. Pull off some gnarly tricks to earn as many points as possible."""

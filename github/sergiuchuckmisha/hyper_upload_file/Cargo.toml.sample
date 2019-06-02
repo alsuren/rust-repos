@@ -1,0 +1,9 @@
+[package]
+name = "hyper_upload_file"
+version = "0.1.0"
+authors = ["sergiuchuckmisha <caga3@inbox.ru>"]
+
+[dependencies]
+
+hyper = "*"
+futures = "*"

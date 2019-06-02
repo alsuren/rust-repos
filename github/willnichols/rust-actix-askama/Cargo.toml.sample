@@ -1,0 +1,9 @@
+[package]
+name = "http-test"
+version = "0.1.0"
+authors = ["Will Nichols <will.nichols@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "0.7.0"
+askama = "0.8"

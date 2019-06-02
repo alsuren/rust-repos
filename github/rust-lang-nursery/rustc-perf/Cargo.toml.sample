@@ -1,0 +1,7 @@
+[workspace]
+members = ["site"] # do not add "collector", otherwise the exclude won't work.
+exclude = ["collector/benchmarks"]
+
+[profile.release]
+debug = true
+codegen-units = 1

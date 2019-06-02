@@ -1,0 +1,24 @@
+[package]
+name = "mio-utun"
+version = "0.6.19"
+authors = ["Jake McGinty <me@jake.su>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/mcginty/mio-utun"
+homepage = "https://github.com/mcginty/mio-utun"
+documentation = "https://docs.rs/mio-utun"
+description = """
+Utun bindings for mio
+"""
+categories = ["asynchronous"]
+
+[badges]
+travis-ci = { repository = "mcginty/mio-utun" }
+
+[dependencies]
+libc = "^0.2"
+mio = "^0.6"
+nix = "^0.10"
+
+[target.'cfg(all(target_family = "unix", not(any(target_os = "macos", target_os = "ios"))))'.dependencies]
+byteorder = "^1.2"

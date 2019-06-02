@@ -1,0 +1,13 @@
+[package]
+name = "advent-of-code-2018"
+version = "0.1.0"
+authors = ["Rich Churcher <rich.churcher@gmail.com>"]
+
+[lib]
+bench = false
+
+[dependencies]
+aoc-runner = "*"
+aoc-runner-derive = "*"
+regex = "1"
+

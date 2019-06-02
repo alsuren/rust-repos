@@ -1,0 +1,12 @@
+[package]
+name = "rrd"
+version = "0.1.0"
+authors = ["Andy Lowry <andy@andylowry.me.uk>"]
+
+[dependencies]
+librrd-sys = { path = "librrd-sys" }
+quick-error = "*"
+
+[dev-dependencies]
+tempdir = "*"
+time = "*"

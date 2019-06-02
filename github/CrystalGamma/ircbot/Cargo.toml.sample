@@ -1,0 +1,15 @@
+[package]
+
+name = "ircbot"
+version = "0.0.1"
+authors = ["Jona Stubbe (CrystalGamma) <dev@jona-stubbe.de>"]
+
+[dependencies]
+rand = "*"
+hyper = "*"
+rustc-serialize = "*"
+chrono = "*"
+regex = "*"
+
+[dependencies.irc]
+path = "../irc"

@@ -1,0 +1,17 @@
+[package]
+name = "mandelbuddha"
+version = "0.1.0"
+authors = ["silvus"]
+
+[dependencies]
+num = "*"
+rand = "*"
+image = "*"
+crossbeam = "0.4"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "math"
+harness = false

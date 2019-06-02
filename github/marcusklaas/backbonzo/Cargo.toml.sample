@@ -1,0 +1,43 @@
+[package]
+name = "backbonzo"
+version = "0.6.0"
+authors = ["Marcus Klaas <mail@marcusklaas.nl>"]
+description = "Safe and convenient backup manager"
+repository = "https://github.com/marcusklaas/backbonzo"
+readme = "readme.md"
+keywords = ["aes", "backup", "dedup"]
+license = "MIT"
+
+[lib]
+name = "backbonzo"
+
+[dependencies]
+glob = "*"
+rustc-serialize = "*"
+rusqlite = "*"
+libsqlite3-sys = "*"
+rand = "*"
+regex = "*"
+docopt = "*"
+tempdir = "*"
+time = "*"
+termios = "*"
+filetime = "*"
+bzip2 = "*"
+number_prefix = "*"
+num_cpus = "*"
+rust-crypto = "*"
+itertools = "*"
+
+[dependencies.comm]
+git = "https://github.com/mahkoh/comm"
+
+[[bin]]
+name = "backbonzo"
+
+# The release profile, used for `cargo build --release`
+[profile.release]
+opt-level = 2
+debug = false
+rpath = false
+lto = false

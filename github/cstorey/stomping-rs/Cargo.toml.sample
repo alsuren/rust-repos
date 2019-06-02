@@ -1,0 +1,14 @@
+[package]
+authors = ["Ceri Storey <ceri@lshift.net>"]
+name = "stomping"
+version = "0.1.0"
+
+[dependencies]
+error-chain = "0.5.0"
+log = "0.3.6"
+
+[dev-dependencies]
+clap = "2.10.2"
+env_logger = "0.3.4"
+url = "1.2.0"
+uuid = { version = "0.3.1", features = ["v4"] }

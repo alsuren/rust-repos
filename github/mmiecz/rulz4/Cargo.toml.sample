@@ -1,0 +1,10 @@
+[package]
+name = "rulz4"
+version = "0.1.0"
+authors = ["Michał Mieczkowski <mieczkowski@fastmail.com>"]
+
+[dependencies]
+lz4 = "1.18.131"
+getopts = "0.2"
+
+

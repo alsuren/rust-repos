@@ -1,0 +1,12 @@
+[package]
+name = "seqalign_pathing"
+version = "0.1.0"
+authors = ["Tristan Hume <tristan@thume.ca>"]
+
+[dependencies]
+
+[dev-dependencies]
+bio = "*"
+
+# [profile.release]
+# debug = true

@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# Copyright 2014 Mark McDermott.
+#
+# Licensed under the the MIT license
+# <LICENSE or http://opensource.org/licenses/MIT>.
+# This file may not be copied, modified, or distributed
+# except according to those terms.
+# ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+
+[package]
+
+name = "cl-edit"
+version = "0.0.1"
+authors = ["Mark McDermott <mark.elias.mcdermott@gmail.com>"]
+
+[dependencies.sdl2]
+git = "https://github.com/AngryLawyer/rust-sdl2"
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs"

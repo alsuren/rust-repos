@@ -1,0 +1,18 @@
+[package]
+name = "mikeutils"
+version = "0.1.0"
+authors = ["Michael Lieberman <mlieberman85@gmail.com>"]
+
+[dependencies]
+
+[[bin]]
+name="uniq"
+src="uniq.rs"
+
+[[bin]]
+name="sort"
+src="sort.rs"
+
+[[bin]]
+name="ls"
+srd="ls.rs"

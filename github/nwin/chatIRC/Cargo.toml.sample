@@ -1,0 +1,10 @@
+[package]
+
+name = "chätIRC"
+version = "0.0.0-prealpha"
+authors = [ "nwin@users.noreply.github.com" ]
+
+[[bin]]
+
+name = "chätd" # the name of the executable to generate
+path = "src/main.rs"

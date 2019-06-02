@@ -1,0 +1,11 @@
+[package]
+name = "mealy"
+version = "0.1.2"
+authors = ["Marc Brinkmann <git@marcbrinkmann.de>", "Oliver Schneider <mealy-rohqu2ziet@oli-obk.de>"]
+description = "Low-overhead state machine interface"
+readme = "README.md"
+license = "MIT"
+documentation = "https://docs.rs/mealy"
+repository = "https://github.com/mbr/mealy-rs"
+
+[dependencies]

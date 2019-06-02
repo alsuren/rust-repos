@@ -1,0 +1,27 @@
+[package]
+authors = ["Kyle Aleshire <kjaleshire@gmail.com>"]
+name = "kja_os"
+version = "0.1.0"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+bitflags = "0.7.0"
+bit_field = "0.7.0"
+multiboot2 = "0.3.2"
+once = "0.3.2"
+rlibc = "1.0"
+spin = "0.4.5"
+volatile = "0.2.3"
+x86_64 = "0.1.2"
+
+[dependencies.bump_allocator]
+path = "libs/bump_allocator"
+
+[dependencies.hole_list_allocator]
+path = "libs/hole_list_allocator"
+
+[dependencies.lazy_static]
+version = "0.2.4"
+features = ["spin_no_std"]

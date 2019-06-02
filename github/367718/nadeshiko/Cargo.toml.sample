@@ -1,0 +1,24 @@
+[package]
+name = "nadeshiko"
+version = "1.0.0"
+build = "build.rs"
+
+[profile.dev]
+codegen-units = 2
+opt-level = 0
+
+[profile.release]
+lto = true
+panic = "abort"
+codegen-units = 1
+opt-level = 3
+
+[dependencies]
+clap = { version = "2.32.0", default-features = false }
+toml = "0.4.10"
+serde = "1.0.83"
+serde_derive = { version = "1.0.83", default-features = false }
+reqwest = "0.9.5"
+rss = { version = "1.6.1", default-features = false }
+regex = "1.1.0"
+lazy_static = "1.2.0"

@@ -1,0 +1,9 @@
+[package]
+name = "rush"
+version = "0.1.0"
+authors = ["Daniel Griffen <daniel@griffen.io>"]
+
+[dependencies]
+shlex = "0.1.1"
+wait-timeout = "0.1"
+chan-signal = "0.1"

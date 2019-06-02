@@ -1,0 +1,9 @@
+[package]
+name = "madcars"
+version = "0.1.1"
+authors = ["XX <freecoder.xx@gmail.com>"]
+
+[dependencies]
+amethyst = { git = "https://github.com/amethyst/amethyst.git", branch = "develop" }
+genmesh = "*"
+cgmath = "*"

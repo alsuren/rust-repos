@@ -1,0 +1,17 @@
+[dependencies]
+num-traits = '0.2.6'
+quickersort = '3.0.1'
+rand = '0.6.5'
+
+[dependencies.mpi]
+git = 'https://github.com/bsteinb/rsmpi.git'
+default-features = false
+features = []
+
+[dependencies.scorus]
+path = '../scorus'
+
+[package]
+authors = ['Gu Junhua <jhgu@nao.cas.cn>']
+name = 'mpi_rsmcmc'
+version = '0.1.0'

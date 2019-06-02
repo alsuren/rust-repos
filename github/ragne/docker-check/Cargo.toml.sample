@@ -1,0 +1,70 @@
+[package]
+name = "docker-check"
+version = "0.1.0"
+authors = ["l"]
+edition = "2015"
+
+[dependencies]
+dockworker = { git = "https://github.com/ragne/dockworker.git", branch="feature/healthcheck" }
+#dockworker = {path = "/home/l/work/dockworker"}
+log = "0.4"
+fern = "0.5"
+chrono = "0.4"
+ctrlc = "3.1.1"
+config = "0.9"
+serde_derive = "^1.0.8"
+serde = "^1.0.8"
+lazy_static = "1.2.0"
+regex = "1"
+os_pipe = "0.8.0"
+human-panic = "1.0.1"
+# "0.0.7" 
+
+
+[features]
+debug = []
+
+# The development profile, used for `cargo build`.
+[profile.dev]
+opt-level = 0      # controls the `--opt-level` the compiler builds with.
+                   # 0-1 is good for debugging. 2 is well-optimized. Max is 3.
+                   # 's' attempts to reduce size, 'z' reduces size even more.
+debug = true       # (u32 or bool) Include debug information (debug symbols).
+                   # Equivalent to `-C debuginfo=2` compiler flag.
+rpath = false      # controls whether compiler should set loader paths.
+                   # If true, passes `-C rpath` flag to the compiler.
+lto = false        # Link Time Optimization usually reduces size of binaries
+                   # and static libraries. Increases compilation time.
+                   # If true, passes `-C lto` flag to the compiler, and if a
+                   # string is specified like 'thin' then `-C lto=thin` will
+                   # be passed.
+debug-assertions = true # controls whether debug assertions are enabled
+                   # (e.g. debug_assert!() and arithmetic overflow checks)
+codegen-units = 16 # if > 1 enables parallel code generation which improves
+                   # compile times, but prevents some optimizations.
+                   # Passes `-C codegen-units`.
+panic = 'unwind'   # panic strategy (`-C panic=...`), can also be 'abort'
+incremental = true # whether or not incremental compilation is enabled
+overflow-checks = true # use overflow checks for integer arithmetic.
+
+# The testing profile, used for `cargo test`.
+[profile.test]
+opt-level = 0
+debug = 2
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 16
+incremental = true
+overflow-checks = true
+
+# The benchmarking profile, used for `cargo bench` and `cargo test --release`.
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 16
+incremental = false
+overflow-checks = false

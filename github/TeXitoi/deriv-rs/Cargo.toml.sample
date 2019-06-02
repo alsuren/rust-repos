@@ -1,0 +1,12 @@
+[package]
+name = "deriv-rs"
+version = "0.1.0"
+authors = ["Guillaume Pinot <texitoi@texitoi.eu>"]
+edition = "2018"
+
+[dependencies]
+typed-arena = "1.4.1"
+
+[profile.release]
+lto = true
+incremental = false

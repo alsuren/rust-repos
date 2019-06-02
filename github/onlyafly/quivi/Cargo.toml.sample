@@ -1,0 +1,10 @@
+[package]
+name = "macaroon"
+version = "0.1.0"
+authors = ["Kevin Albrecht <onlyafly@gmail.com>"]
+
+[dependencies]
+colored = "1.6"
+rustyline = "2.1.0"
+clap = "2.32.0"
+backtrace = "0.3"

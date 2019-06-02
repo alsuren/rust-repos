@@ -1,0 +1,23 @@
+[package]
+authors = ["Nathan Ringo <remexre@gmail.com>"]
+description = "Uptime monitoring Discord bot."
+license = "Apache-2.0/MIT"
+name = "mungisa"
+version = "0.2.0"
+
+[dependencies]
+env_logger = "0.5.10"
+failure = "0.1.1"
+futures = "0.1.21"
+hyper = "0.11.25"
+kankyo = "0.2.0"
+log = "0.4.1"
+serenity = "0.5.2"
+structopt = "0.2.7"
+tokio-core = "0.1.17"
+tokio-timer = "0.2.1"
+void = "1.0.2"
+hostname = "0.1.5"
+serde = "1.0.70"
+serde_derive = "1.0.70"
+serde_json = "1.0.24"

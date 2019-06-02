@@ -1,0 +1,11 @@
+[package]
+authors = ["Leo Vailati"]
+name = "waiter"
+version = "0.2.0"
+
+[dependencies]
+clap = "2.23"
+hyper = "0.10"
+
+[profile.release]
+lto = true

@@ -1,0 +1,22 @@
+[package]
+name = "advent18"
+description = "Solutions for Advent of Code 2018."
+version = "0.1.0"
+authors = ["Georg Brandl <georg@python.org>"]
+edition = "2018"
+
+[[bench]]
+name = "days"
+harness = false
+
+[dependencies]
+advtools = { version = "0.4.0", path = "../advtools" }
+# not released yet since we need externals() on stable graphs
+petgraph = { git = "https://github.com/bluss/petgraph" }
+strum = "0.12.0"
+strum_macros = "0.12.0"
+lazy_static = "1.2.0"
+priority-queue = "0.5.2"
+
+[dev-dependencies]
+criterion = { version = "0.2.5", default-features = false }

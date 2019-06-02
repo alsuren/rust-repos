@@ -1,0 +1,10 @@
+[package]
+name = "learner-design"
+version = "0.1.0"
+authors = ["Paul Feitzinger <paul@pfeyz.com>"]
+
+[dependencies]
+csv = "1.0.0-beta.3"
+rand = "0.4.2"
+mersenne_twister = "1.1.1"
+regex = "0.2"

@@ -1,0 +1,13 @@
+[package]
+name = "iata-types"
+version = "0.1.4"
+authors = ["Alexander Polyakov <aleksandr.polyakov@kupibilet.ru>"]
+description = "a set of types for representing aviation terms"
+license = "MIT"
+documentation = "https://docs.rs/iata-types"
+repository = "https://github.com/polachok/iata-types"
+homepage = "https://github.com/polachok/iata-types"
+
+[dependencies]
+serde = "1"
+serde_derive = "1"

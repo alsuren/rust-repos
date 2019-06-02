@@ -1,0 +1,17 @@
+[package]
+name = "orloglausa-memorymapping"
+version = "0.0.6"
+authors = ["A.W. Stanley <aws@orloglausa.net>"]
+edition = "2018"
+license = "zlib"
+
+[features]
+default = []
+
+enable-std = []
+
+[dependencies.orloglausa-utility-bits]
+git = "https://github.com/orloglausa/orloglausa-utility-bits.rs"
+
+[target.'cfg(target_os = "windows")'.dependencies.orloglausa-platform-windows]
+git = "https://github.com/orloglausa/orloglausa-platform-windows.rs"

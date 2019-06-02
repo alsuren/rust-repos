@@ -1,0 +1,32 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "The repomon client"
+documentation = "http://docs.rs/repomonc"
+homepage = "http://docs.rs/repomonc"
+keywords = ["git", "repository", "monitor", "client"]
+license = "MIT/Apache-2.0"
+name = "repomonc"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/repomonc"
+version = "0.1.0"
+
+[dependencies]
+bincode = "0"
+bytes = "0"
+clap = "2"
+error-chain = "0"
+futures = "0.1"
+getset = "0"
+repomon = "0"
+slog-async = "2"
+slog-term = "2"
+slog-try = "0"
+tokio-core = "0"
+tokio-io = "0"
+
+[dependencies.slog]
+features = ["max_level_trace", "release_max_level_trace"]
+version = "2"
+
+[patch.crates-io]
+repomon = { path = '../repomon' }

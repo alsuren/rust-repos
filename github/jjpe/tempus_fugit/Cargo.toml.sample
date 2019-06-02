@@ -1,0 +1,18 @@
+[package]
+name = "tempus_fugit"
+version = "0.5.0"
+authors = ["Joey Ezechiels <joey.ezechiels@gmail.com>"]
+description = "A tiny library to measure the execution time of Rust expressions, with nanosecond precision."
+license = "BSD-3-Clause"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+lazy_static = "1.0"
+regex = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[features]
+enable_serde = [] # De/serialization support through Serde
+

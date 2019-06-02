@@ -1,0 +1,7 @@
+[package]
+name = "vanes"
+version = "0.1.0"
+authors = ["Krzysztof Langner <klangner@gmail.com>"]
+
+[dependencies]
+sysfs_gpio = "0.5"

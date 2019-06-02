@@ -1,0 +1,13 @@
+[package]
+name = "jobpool"
+version = "0.3.8"
+authors = ["Darshan Parajuli <parajulidarshan@gmail.com>"]
+description = "A simple and lightweight threadpool implementation"
+repository = "https://github.com/darshanparajuli/jobpool"
+readme = "README.md"
+keywords = ["threadpool", "threads", "threading", "jobpool", "concurrency"]
+categories = ["concurrency"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "darshanparajuli/jobpool" }

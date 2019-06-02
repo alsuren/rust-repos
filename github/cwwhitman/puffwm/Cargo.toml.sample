@@ -1,0 +1,10 @@
+[package]
+name = "puffwm"
+version = "0.1.0"
+authors = ["chris"]
+
+[dependencies]
+log = "*"
+env_logger = "*"
+x11 = { version = "*", features = ["xlib", "keysym"] }
+

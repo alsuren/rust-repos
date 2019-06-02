@@ -1,0 +1,15 @@
+[package]
+name = "async-kvstore"
+version = "0.1.1"
+authors = ["Constantine Solovev <constantine.solovev@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+error-chain = "0.12"
+tokio = "0.1"
+futures = "0.1"
+
+[dev-dependencies]
+
+futures-locks = "0.3"

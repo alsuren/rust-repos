@@ -1,0 +1,15 @@
+[package]
+name = "rtti"
+version = "0.4.0"
+authors = ["Dennis Möhlmann <dmo479@gmail.com>"]
+description = "[very early WIP] Run-time type information trait. Use crate rtti-derive to implement."
+documentation = "https://docs.rs/rtti/"
+readme = "README.md"
+repository = "https://github.com/sinesc/rtti.git"
+license = "MIT"
+categories = [ "data-structures" ]
+
+[dependencies]
+
+[dev-dependencies]
+rtti-derive = "0.4"

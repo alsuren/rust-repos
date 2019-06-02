@@ -1,0 +1,15 @@
+[package]
+name = "smugloader"
+version = "0.1.0"
+authors = ["Dan Elkouby <streetwalkermc@gmail.com>"]
+
+[dependencies]
+libc = "0.2"
+nix = "0.10"
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
+incremental = false
+opt-level = "z"

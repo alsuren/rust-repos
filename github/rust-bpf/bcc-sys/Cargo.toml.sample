@@ -1,6 +1,6 @@
 [package]
 name = "bcc-sys"
-version = "0.9.1-alpha.0"
+version = "0.9.3-alpha.0"
 authors = ["Zhiting Zhu <zhitingz@cs.utexas.edu>", "Brian Martin <brayniac@gmail.com>"]
 description = "Rust binding to BPF Compiler Collection (BCC)"
 keywords = ["bpf", "bindings"]
@@ -14,7 +14,7 @@ homepage = "https://github.com/rust-bpf/bcc-sys"
 edition = '2018'
 
 [build-dependencies.bindgen]
-version = "0.47.3"
+version = "0.49.1"
 optional = true
 
 [lib]

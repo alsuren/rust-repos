@@ -1,0 +1,12 @@
+[package]
+name = "if-let-return"
+version = "0.1.2-alpha.0"
+authors = ["anekos <anekos@snca.net>"]
+repository = "https://github.com/anekos/if-let-return"
+keywords = ["macro"]
+license-file = "LICENSE"
+readme = "README.md"
+description = "Simple macro for `if let ... pattern`"
+edition = "2018"
+
+[dependencies]

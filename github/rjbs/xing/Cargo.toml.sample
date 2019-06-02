@@ -1,0 +1,8 @@
+[package]
+name = "xing"
+version = "0.1.0"
+authors = ["Ricardo Signes <rjbs@cpan.org>"]
+
+[dependencies]
+termion = "*"
+array-init = "*"

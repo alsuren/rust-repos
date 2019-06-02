@@ -1,0 +1,8 @@
+[package]
+name = "vidchip-rust"
+version = "0.0.0"
+authors = ["neonfuz"]
+
+[dependencies]
+sdl2 = "0.29.0"
+protobuf = "1.2.2"

@@ -1,0 +1,17 @@
+[package]
+name = "shade-storm"
+version = "0.1.0"
+authors = ["Gabriel Martinez <reitaka@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+clap = "2"
+fps_counter = "1"
+glium = { version = "0.23", features = [], default-features = false }
+imgui = "0.0.22"
+imgui-glium-renderer = "0.0.22"
+imgui-sdl2 = "0.5"
+midgar = { git = "https://github.com/mystal/midgar-engine", branch = "input_events" }
+notify = "4"
+toml = "0.5"

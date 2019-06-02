@@ -1,0 +1,15 @@
+[package]
+name = "vtebench"
+version = "0.1.2"
+license = "Apache-2.0"
+authors = ["Joe Wilm <joe@jwilm.com>"]
+description = "Benchmark terminal emulators"
+documentation = "https://docs.rs/vtebench"
+repository = "https://github.com/jwilm/vtebench"
+
+[dependencies]
+structopt-derive = "0.2.10"
+structopt = "0.2.10"
+terminfo = "0.6.1"
+failure = "0.1.2"
+rand = "0.5.5"

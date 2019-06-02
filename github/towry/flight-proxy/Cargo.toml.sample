@@ -1,0 +1,10 @@
+[package]
+name = "flight-proxy"
+version = "0.1.0"
+authors = ["towry <tovvry@gmail.com>"]
+
+[dependencies]
+yaml-rust = "*"
+regex = "0.1.41"
+chalk = "0.1.0"
+hyper = "*"

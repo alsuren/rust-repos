@@ -1,0 +1,17 @@
+[package]
+name = "backontime"
+version = "0.1.0"
+authors = ["Mike Lubinets <lubinetsm@yandex.ru>"]
+
+[dependencies]
+notify = "4.0.0"
+serde = "1.0.6"
+serde_derive = "1.0.6"
+toml = "0.4.1"
+log = "0.3.7"
+env_logger = "0.4.2"
+lazy_static = "0.2"
+
+[dependencies.error-chain]
+version = "0.10.0"
+default-features = false

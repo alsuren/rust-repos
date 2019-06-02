@@ -1,0 +1,12 @@
+[package]
+name = "rusman"
+version = "0.1.0"
+authors = ["Logan Moore <lmooore@gmail.com>"]
+description = "Rust + ncurses-based console game"
+repository = "https://github.com/ThoseGrapefruits/rusman.git"
+readme = "README.md"
+keywords = ["game", "ncurses"]
+license = "GNU v3.0"
+
+[dependencies.ncurses]
+git = "https://github.com/jeaye/ncurses-rs.git"

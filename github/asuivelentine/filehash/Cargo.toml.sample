@@ -1,0 +1,8 @@
+[package]
+name = "filehash"
+version = "0.1.0"
+authors = ["Kai Sickeler <k.sickeler@gmail.com>"]
+
+[dependencies]
+crypto-hash = "0.3.0"
+quick-error = "1.2.0"

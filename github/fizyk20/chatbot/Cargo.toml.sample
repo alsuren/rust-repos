@@ -1,0 +1,14 @@
+[package]
+name = "chatbot"
+version = "0.1.0"
+authors = ["Bartłomiej Kamiński <fizyk20@gmail.com>"]
+
+[dependencies]
+chrono = "0.4"
+lazy_static = "*"
+serde = "1.0"
+toml = "0.4"
+serde_derive = "1.0"
+rand = "0.5"
+regex = "1.0"
+universal-chat = { git = "https://fizyk.ddns.net/git/ebvalaim/universal-chat.git", branch = "master", features = ["irc", "discord", "slack"] }

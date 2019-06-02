@@ -1,0 +1,13 @@
+[package]
+name = "slice-cast"
+version = "0.1.2"
+authors = ["FaultyRAM <explodingpsu@gmail.com>"]
+description = "Support for casting between slice types"
+documentation = "https://docs.rs/slice-cast/0.1.2/"
+repository = "https://github.com/FaultyRAM/slice-cast"
+readme = "README.md"
+keywords = ["slice", "typecast"]
+license = "Apache-2.0/MIT"
+
+[dependencies]
+clippy = { version = "0.0", optional = true }

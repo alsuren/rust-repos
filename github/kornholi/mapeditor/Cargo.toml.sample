@@ -1,0 +1,23 @@
+[package]
+name = "mapeditor"
+version = "0.1.0"
+authors = ["Kornelijus Survila <kornholijo@gmail.com>"]
+
+[[bin]]
+name = "mapeditor"
+path = "src/main.rs"
+
+[dependencies]
+byteorder = "*"
+cgmath = "*"
+clock_ticks = "*"
+encoding = "*"
+enum_primitive = "*"
+glium = "*"
+image = "*"
+num = "*"
+toml = "*"
+serde = "^1"
+serde_derive = "^1"
+lru-cache = "*"
+vec_map = "*"

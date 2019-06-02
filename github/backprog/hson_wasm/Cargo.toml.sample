@@ -1,0 +1,26 @@
+[package]
+name = "hson_wasm"
+version = "0.1.2"
+authors = ["Backprog"]
+edition = "2018"
+homepage = "https://github.com/backprog/hson_wasm"
+repository = "https://github.com/backprog/hson_wasm.git"
+description = "Hson in the browser"
+readme = "README.md"
+keywords = ["json", "html", "hson", "wasm"]
+exclude = [
+    "main.rs"
+]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+lazy_static = "1.2.0"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+serde_json = "1.0.39"
+hson = "0.1.11"
+
+[profile.release]
+lto = true

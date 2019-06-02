@@ -1,0 +1,9 @@
+[package]
+name = "breakout"
+version = "0.1.0"
+authors = ["Shotaro Tsuji <Shotaro.Tsuji@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+glium = "*"
+rand = "0.6.5"

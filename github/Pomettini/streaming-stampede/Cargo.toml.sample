@@ -1,0 +1,9 @@
+# Cargo.toml
+
+[package]
+name = "streaming-stampede"
+version = "0.0.2"
+authors = ["Giorgio Pomettini"]
+
+[dependencies]
+ggez = ">=0.4"

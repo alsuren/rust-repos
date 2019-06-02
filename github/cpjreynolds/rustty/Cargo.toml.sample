@@ -1,0 +1,16 @@
+[package]
+name = "rustty"
+version = "0.1.12"
+authors = ["Cole Reynolds <cpjreynolds@gmail.com>"]
+description = "A terminal UI library"
+documentation = "https://docs.rs/rustty"
+repository = "https://github.com/cpjreynolds/rustty"
+homepage = "https://github.com/cpjreynolds/rustty"
+readme = "README.md"
+license = "MIT"
+keywords = ["terminal", "ui", "tui", "console", "tty"]
+
+[dependencies]
+term = "0.4"
+libc = "0.2"
+gag = "0.1"

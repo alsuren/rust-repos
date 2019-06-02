@@ -1,0 +1,33 @@
+[package]
+name = "ttf-iosevka-ss08"
+version = "0.1.0"
+authors = ["Belleve Invis (belleve@typeof.net)"]
+license-file = "LICENSE.md"
+homepage = "https://github.com/be5invis/Iosevka"
+repository = "http://github.com/arturoc/ttf-iosevka-ss08"
+description = "Iosevka font as cargo crate for direct use from code"
+
+[dependencies]
+
+[features]
+regular = []
+italic = []
+oblique = []
+bold = []
+bolditalic = []
+boldoblique = []
+extralight = []
+extralightitalic = []
+extralightoblique = []
+heavy = []
+heavyitalic = []
+heavyoblique = []
+light = []
+lightitalic = []
+lightoblique = []
+medium = []
+mediumitalic = []
+mediumoblique = []
+thin = []
+thinitalic = []
+thinoblique = []

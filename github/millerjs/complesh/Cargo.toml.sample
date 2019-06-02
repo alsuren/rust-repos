@@ -1,0 +1,18 @@
+[package]
+name = "complesh"
+version = "0.1.0"
+authors = ["Joshua Miller <jsmiller@uchicago.edu>"]
+
+[dependencies]
+clap = "*"
+crossbeam = "*"
+glob = "*"
+ignore = "0.1"
+lazy_static = "0.2"
+nix = "0.8.1"
+nlp-tokenize = "*"
+quick-error = "1.1.0"
+regex = "0.2"
+termion = "*"
+walkdir = "1"
+rayon = "*"

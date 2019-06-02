@@ -1,0 +1,9 @@
+[package]
+name = "rustynet"
+version = "0.1.0"
+authors = ["michael"]
+
+[dependencies]
+quick-error = "1.1.0"
+byteorder = "0.5.3"
+rand = "0.3"

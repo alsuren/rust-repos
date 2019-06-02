@@ -1,0 +1,12 @@
+[package]
+name = "chess"
+version = "0.1.0"
+authors = ["marhoily <marhoily@homtail.com>"]
+
+[dependencies]
+bitflags = "*"
+nom = "^1.2.4"
+clippy = "*"
+rand = "*"
+itertools = "*"
+quickcheck = "*"

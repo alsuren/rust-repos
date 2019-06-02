@@ -1,0 +1,8 @@
+[package]
+name = "vntyper"
+version = "0.1.0"
+authors = ["Do Duy <doduycm@gmail.com>"]
+
+[dependencies]
+rustc-serialize="0.3.19"
+lazy_static = "0.2.1"

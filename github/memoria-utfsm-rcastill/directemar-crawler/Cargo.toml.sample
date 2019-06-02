@@ -1,0 +1,13 @@
+[package]
+name = "directemar_crawler"
+version = "0.1.0"
+authors = ["Rodolfo Castillo Mateluna <rodolfocastillomateluna@gmail.com>"]
+
+[dependencies]
+reqwest = "0.8.8"
+select = "0.4.2"
+chrono = "0.4"
+getopts = "0.2"
+threadpool = "1.7"
+bson = "0.12.2"
+mongodb = "0.3.10"

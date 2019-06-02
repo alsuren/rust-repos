@@ -1,0 +1,75 @@
+[package]
+name = "amethyst-test"
+version = "0.1.0"
+authors = ["glaceef <masaki7322_art@yahoo.co.jp>"]
+edition = "2018"
+
+[lib]
+name = "amethyst_test"
+
+[dependencies]
+amethyst = "*"
+
+[dev-dependencies]
+amethyst = "*"
+rand = "*"
+
+[[example]]
+name = "01"
+path = "examples/01_create_window/main.rs"
+
+[[example]]
+name = "02"
+path = "examples/02_image/main.rs"
+
+[[example]]
+name = "02-2"
+path = "examples/02-2_colored_image/main.rs"
+
+[[example]]
+name = "03"
+path = "examples/03_move_to_mouse/main.rs"
+
+[[example]]
+name = "04"
+path = "examples/04_create_and_destroy/main.rs"
+
+[[example]]
+name = "05"
+path = "examples/05_keyboard_input/main.rs"
+
+[[example]]
+name = "06"
+path = "examples/06_animation/main.rs"
+
+[[example]]
+name = "07"
+path = "examples/07_bounding_icons/main.rs"
+
+[[example]]
+name = "08"
+path = "examples/08_physical_icons/main.rs"
+
+[[example]]
+name = "09"
+path = "examples/09_dragging_icon/main.rs"
+
+[[example]]
+name = "10"
+path = "examples/10_mouse_getdown/main.rs"
+
+[[example]]
+name = "12"
+path = "examples/12_animation_and_move/main.rs"
+
+[[example]]
+name = "13"
+path = "examples/13_text/main.rs"
+
+[[example]]
+name = "14"
+path = "examples/14_single_entity/main.rs"
+
+[[example]]
+name = "15"
+path = "examples/15_delete_entity/main.rs"

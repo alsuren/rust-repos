@@ -1,0 +1,37 @@
+[package]
+name = "sequoia"
+description = "A cool new OpenPGP implementation"
+version = "0.2.0"
+authors = [
+    "Justus Winter <justus@sequoia-pgp.org>",
+    "Kai Michaelis <kai@sequoia-pgp.org>",
+    "Neal H. Walfield <neal@sequoia-pgp.org>",
+]
+documentation = "https://docs.sequoia-pgp.org/"
+homepage = "https://sequoia-pgp.org/"
+repository = "https://gitlab.com/sequoia-pgp/sequoia"
+readme = "README.md"
+keywords = ["cryptography", "openpgp", "pgp", "encryption", "signing"]
+categories = ["cryptography", "authentication", "email"]
+license = "GPL-3.0"
+
+[badges]
+gitlab = { repository = "sequoia-pgp/sequoia" }
+maintenance = { status = "actively-developed" }
+
+[workspace]
+
+[dependencies]
+buffered-reader = { path = "buffered-reader", version = "0.2.0" }
+sequoia-openpgp = { path = "openpgp", version = "0.2.0" }
+sequoia-core = { path = "core", version = "0.2.0" }
+sequoia-ffi = { path = "ffi", version = "0.2.0" }
+sequoia-net = { path = "net", version = "0.2.0" }
+sequoia-store = { path = "store", version = "0.2.0" }
+sequoia-tool = { path = "tool", version = "0.2.0" }
+sequoia-sqv = { path = "sqv", version = "0.2.0" }
+sequoia-guide = { path = "guide", version = "0.2.0" }
+
+[lib]
+name = "sequoia"
+path = "src/lib.rs"

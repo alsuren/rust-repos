@@ -1,0 +1,17 @@
+[package]
+name = "color_scaling"
+version = "0.0.4"
+authors = [ "Boris Faure <billiob@gmail.com>" ]
+license = "BSD-2-Clause"
+readme = "README.md"
+repository = "https://github.com/billiob/color_scaling.rs/"
+description = "Functions to scale colors: get a weighted color between 2 colors"
+
+
+[lib]
+name = "color_scaling"
+path = "src/lib.rs"
+
+[dependencies]
+image = "0.21"
+num-traits = "0.2.*"

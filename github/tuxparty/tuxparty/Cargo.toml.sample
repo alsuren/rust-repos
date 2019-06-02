@@ -1,0 +1,14 @@
+[package]
+authors = ["vpzomtrrfrt"]
+name = "tuxparty"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+gilrs = "0.7.1"
+image = "0.21.1"
+piston = "0.42.0"
+piston2d-graphics = "0.30.0"
+piston2d-opengl_graphics = "0.59.0"
+pistoncore-sdl2_window = "0.55.0"
+rand = "0.6.5"

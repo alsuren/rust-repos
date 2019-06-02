@@ -1,0 +1,10 @@
+[package]
+name = "ferros"
+version = "0.0.0"
+authors = ["xldenis"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "0.1.4"

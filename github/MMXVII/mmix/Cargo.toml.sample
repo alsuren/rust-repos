@@ -1,0 +1,14 @@
+[package]
+name = "mmix"
+version = "0.1.0"
+authors = ["Janina Born <jaborn@uni-osnabrueck.de>",
+           "Barbara Butz <bbutz@uni-osnabrueck.de>",
+           "Karoline Plum <kplum@uni-osnabrueck.de>",
+           "Tobias Stolzmann <tobias.stolzmann@gmail.com>"]
+
+[[bin]]
+name = "mmixvm"
+
+[dependencies]
+clap = "2"
+extprim = "1"

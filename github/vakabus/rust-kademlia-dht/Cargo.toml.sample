@@ -1,0 +1,16 @@
+[package]
+name = "kademlia_dht"
+version = "0.1.0"
+authors = ["Vasek Sraier <git@vakabus.cz>"]
+
+[dependencies]
+multiaddr = '*'
+rust-crypto = '^0.2'
+rand = '*'
+serde = '*'
+serde_derive = '*'
+bincode = '*'
+log = '*'
+
+[dev-dependencies]
+env_logger = '*'

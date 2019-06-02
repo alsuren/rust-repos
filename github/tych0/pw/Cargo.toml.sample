@@ -1,0 +1,23 @@
+[package]
+name = "pw"
+version = "1.0.0"
+authors = ["Tycho Andersen <tycho@tycho.ws>"]
+license = "Apache-2.0"
+description = "stateless password generation"
+documentation = "https://github.com/tych0/pw"
+homepage = "https://github.com/tych0/pw"
+repository = "https://github.com/tych0/pw"
+readme = "README.md"
+
+[dependencies]
+rust-base58 = "0.0.4"
+clap = "2"
+config = "0.6"
+keyring = "0.5"
+lazy_static = "1"
+ring = "0.14"
+rpassword = "2"
+serde = "1"
+serde_derive = "1"
+tempfile = "2"
+time = "0.1"

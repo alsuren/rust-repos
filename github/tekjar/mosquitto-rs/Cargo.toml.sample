@@ -1,0 +1,12 @@
+[package]
+authors = ["RTR <k.teza1@gmail.com>"]
+name = "mosquitto"
+version = "0.3.0"
+
+[dependencies]
+lazy_static = "*"
+libc = "*"
+
+[dependencies.mosquitto-sys]
+path = "mosquitto-sys"
+version = "*"

@@ -1,0 +1,21 @@
+[package]
+
+name = "gitenv"
+version = "0.1.0"
+authors = [
+	"Francis Lalonde <fralalonde@gmail.com>",
+]
+readme = "README.md"
+keywords = ["environment", "env", "git", "config"]
+license = "MIT"
+homepage = "https://github.com/fralalonde/rust-gitenv"
+repository = "https://github.com/fralalonde/rust-gitenv"
+description = "A `gitenv` implementation for Rust"
+
+[dependencies]
+tempdir = "0.3"
+url = "*"
+
+[dependencies.git2]
+version = "0.6.2"
+default-features = false

@@ -1,0 +1,35 @@
+[package]
+
+name = "gearbox"
+version = "0.0.1"
+authors = ["Florian Hartwig <florian.j.hartwig@gmail.com>"]
+
+[dependencies]
+url = "*"
+log = "*"
+env_logger = "*"
+rand = "*"
+byteorder = "*"
+time = "*"
+bit-vec = "*"
+vec_map = "*"
+slab = "*"
+mio = "*"
+nix = "*"
+bytes = "*"
+
+[dependencies.hyper]
+git = "https://github.com/hyperium/hyper"
+features = ["nightly"]
+
+[dependencies.rust-crypto]
+git = "https://github.com/DaGenix/rust-crypto"
+
+[dependencies.rustbox]
+git = "https://github.com/gchp/rustbox.git"
+
+[profile.dev]
+debug = false
+
+[profile.test]
+debug = false

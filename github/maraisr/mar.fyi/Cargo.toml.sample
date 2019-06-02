@@ -1,0 +1,16 @@
+[package]
+name = "mar-fyi"
+version = "0.0.1"
+publish = false
+edition = "2018"
+
+[profile.release]
+lto = true
+panic = "abort"
+
+[[bin]]
+name = "app"
+path = "index.rs"
+
+[dependencies]
+http = "*"

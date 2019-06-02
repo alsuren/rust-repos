@@ -1,0 +1,31 @@
+[package]
+name = "phil_os"
+version = "0.1.0"
+authors = ["Matthew Foreman <soniceroy@gmail.com>"]
+
+[package.metadata.bootimage]
+default-target = "x86_64-phil_os.json"
+
+[dependencies]
+bootloader_precompiled = "0.2.0"
+volatile = "0.2.3"
+spin = "0.4.6"
+uart_16550 = "0.1.0"
+x86_64 = "0.2.8"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
+
+
+# to get tests to work
+[dev-dependencies]
+array-init = "0.0.3"
+
+# cargo build profile
+#[profile.dev]
+#panic = "abort" # disable stack unwinding on panic
+
+# cargo build --release profile
+#[profile.release]
+#panic = "abort" # disable stack unwinding on panic

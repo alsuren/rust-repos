@@ -1,0 +1,23 @@
+[package]
+name = "yup-hyper-mock"
+version = "3.15.0"
+authors = ["Sean McArthur <sean.monstar@gmail.com>",
+           "Jonathan Reem <jonathan.reem@gmail.com>",
+           "Sebastian Thiel <byronimo@gmail.com>"]
+description = "A utility library for testing clients using hyper"
+repository = "https://github.com/Byron/yup-hyper-mock"
+documentation = "http://byron.github.io/yup-hyper-mock"
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+hyper = "0.12"
+log = ">= 0.2"
+futures = "0.1"
+tokio-io = "0.1"
+tokio-core = "0.1.11"
+tokio-reactor = "0.1.1"
+mio = "0.6"
+
+[dev-dependencies]
+env_logger = "0.5"

@@ -1,0 +1,50 @@
+[package]
+name = "jadis"
+version = "0.0.1"
+authors = ["kthwaite"]
+edition = "2018"
+
+[features]
+default = ["gl"]
+metal = ["gfx-backend-metal"]
+gl = ["gfx-backend-gl"]
+dx12 = ["gfx-backend-dx12"]
+vulkan = ["gfx-backend-vulkan"]
+
+[dependencies]
+# graphics
+glsl-to-spirv = "=0.1.6"
+image = "~0.19.0"
+gfx-hal = "0.1.0"
+# data
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+# logging
+chrono = "*"
+log = { version = "0.4", features = ["serde"] }
+fern = "0.5"
+
+
+[dependencies.gfx-backend-gl]
+version = "0.1.0"
+features = ["glutin"]
+optional = true
+
+[target.'cfg(target_os = "macos")'.dependencies.gfx-backend-metal]
+version = "0.1.0"
+features = ["winit"]
+optional = true
+
+[target.'cfg(windows)'.dependencies.gfx-backend-dx12]
+version = "0.1.0"
+features = ["winit"]
+optional = true
+
+[target.'cfg(not(target_os = "macos"))'.dependencies.gfx-backend-vulkan]
+version = "0.1.0"
+features = ["winit"]
+optional = true
+
+[build-dependencies]
+glsl-to-spirv = "=0.1.6"

@@ -1,0 +1,7 @@
+[package]
+name = "json_parser_noalloc"
+version = "0.1.0"
+authors = ["Bruno Windels <bruno.windels@gmail.com>"]
+
+[dependencies]
+fallible-iterator = "0.1.5"

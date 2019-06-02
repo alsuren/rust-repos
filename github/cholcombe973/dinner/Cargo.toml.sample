@@ -1,0 +1,10 @@
+[package]
+name = "dinner"
+description = "Generate dinner ideas"
+license = "MIT"
+version = "0.1.1"
+authors = ["Chris Holcombe <xfactor973@gmail.com>"]
+edition = '2018'
+
+[dependencies]
+rusqlite = "~0.17"

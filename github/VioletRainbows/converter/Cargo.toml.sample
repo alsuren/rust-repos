@@ -1,0 +1,8 @@
+[package]
+name = "converter"
+version = "0.1.0"
+authors = ["Mia Boulay <mia.boulay@linux.com>"]
+
+[dependencies]
+encoding = "0.2"
+clap = "2.27"

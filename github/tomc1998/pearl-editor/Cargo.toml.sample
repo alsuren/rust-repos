@@ -1,0 +1,26 @@
+[package]
+name = "pearl-editor"
+version = "0.1.0"
+authors = ["Thomas Cheng <thomascheng1998@googlemail.com>"]
+
+[dependencies]
+quick-gfx = { git = "https://github.com/tomc1998/rs-quick-gfx" }
+cgmath = "0.15.0"
+winit = "0.7.5"
+smallvec = "0.6.0"
+
+[profile.dev]
+debug = true
+
+# The benchmarking profile, used for `cargo bench` and `cargo test --release`.
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 2
+panic = 'unwind'
+
+[features]
+bench = []

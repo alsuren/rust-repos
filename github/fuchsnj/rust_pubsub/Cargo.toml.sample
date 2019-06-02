@@ -1,0 +1,14 @@
+[package]
+
+name = "pubsub"
+version = "0.2.3"
+authors = ["Nathan Fuchs <fuchsnj@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/fuchsnj/rust_pubsub"
+documentation = "http://fuchsnj.github.io/rust_pubsub"
+description = "Local publish / subscribe"
+keywords = ["pubsub", "publish", "subscribe", "local"]
+
+[dependencies]
+threadpool = "0.1.4"

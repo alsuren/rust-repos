@@ -1,0 +1,18 @@
+[package]
+name = "rexif"
+version = "0.3.5"
+authors = ["Elvis Pfützenreuter <epxx@epxx.co>"]
+include = ["**/*.rs", "Cargo.toml"]
+description = "RExif is a native Rust crate, written to extract EXIF data from JPEG and TIFF images."
+license = "MIT"
+homepage = "https://github.com/elvis-epx/rexif"
+repository = "https://github.com/elvis-epx/rexif.git"
+documentation = "http://elvis-epx.github.io/doc/rexif/"
+
+[lib]
+name = "rexif"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rexiftool"
+path = "src/main.rs"

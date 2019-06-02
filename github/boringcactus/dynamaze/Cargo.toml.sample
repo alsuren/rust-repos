@@ -1,0 +1,26 @@
+[package]
+name = "dynamaze"
+version = "0.1.0"
+authors = ["Melody Horn <melody@boringcactus.com>"]
+edition = "2018"
+
+[dependencies]
+piston = "0.42.0"
+piston2d-graphics = "0.30.0"
+pistoncore-glutin_window = "0.54.0"
+piston2d-opengl_graphics = "0.59.0"
+rand = "0.6.5"
+bincode = "1.1.2"
+serde = "1.0.88"
+serde_derive = "1.0.88"
+clipboard = "0.5.0"
+tokio = "0.1.15"
+futures = "0.1.25"
+bytes = "0.4.11"
+rodio = "0.8.1"
+lazy_static = "1.2.0"
+conrod_core = "0.64.0"
+conrod_piston = "0.64.0"
+igd = "0.9.0"
+get_if_addrs = "0.5.3"
+toml = "0.5.1"

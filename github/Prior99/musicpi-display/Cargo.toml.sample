@@ -1,0 +1,17 @@
+[package]
+name = "musicpi_display"
+version = "0.1.0"
+authors = ["Frederick Gnodtke"]
+
+[dependencies]
+sdl2 = "0.24"
+sdl2_image = "0.24"
+spidev = "0.2"
+clap = { features = ["yaml"], version = "2.14.0" }
+chrono = "0.2"
+mpd = "0.0.11"
+pulse-simple = "1.0"
+dft = "0.5"
+bus = "1.1"
+nalgebra = "0.10.1"
+clippy = "*"

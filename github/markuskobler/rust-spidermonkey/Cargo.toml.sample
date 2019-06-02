@@ -1,0 +1,16 @@
+[package]
+name = "spidermonkey"
+version = "0.1.0-pre"
+authors = ["Markus Kobler"]
+build = "make -f makefile.cargo"
+
+[features]
+debugjs = ["spidermonkey-sys/debugjs"]
+
+[dependencies.spidermonkey-sys]
+path = "spidermonkey-sys"
+
+
+
+# clearly needs more work but used to try and generate rust bindings
+# LD_PRELOAD=/usr/lib/llvm-3.5/lib/libclang.so LD_LIBRARY_PATH=/rust/bin/ /rust/bin/bindgen src/jsglue.cpp -I /rust/src/spidermonkey/spidermonkey-sys/js/src/ -I /rust/src/spidermonkey/target/native/spidermonkey-sys-e1d49c9a4ea6ae68/dist/include/ -std=c++11 -o src/jsapi.rs

@@ -1,0 +1,26 @@
+[package]
+name = "nvfancontrol"
+version = "0.4.99"
+authors = ["Spyros Stathopoulos <spystath@gmail.com>"]
+
+[dependencies]
+log = "0.4"
+getopts = "*"
+time = "*"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+toml = "0.5"
+dirs = "*"
+
+[target.'cfg(unix)'.dependencies]
+nix = "*"
+
+[target.'cfg(windows)'.dependencies]
+ctrlc = "*"
+
+[dependencies.nvctrl]
+path = "src/nvctrl"
+
+[features]
+dynamic-xnvctrl = ["nvctrl/dynamic-xnvctrl"]

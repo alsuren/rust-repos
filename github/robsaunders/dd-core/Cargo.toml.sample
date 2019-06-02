@@ -1,0 +1,28 @@
+[package]
+name = "dd_core"
+version = "0.1.0"
+authors = ["Rob Saunders <rob@wearebrandnew.com>"]
+
+[dependencies]
+vst2 = { git = "https://github.com/overdrivenpotato/rust-vst2" }
+winit = { git = "https://github.com/robsaunders/winit-vst" }
+# winit = { path = "../winit-vst" }
+conrod = { version = "0.52.0", features = ["piston", "glium", "winit"] }
+log = "0.3"
+simplelog = "0.4.2"
+log-panics = "1.1.0"
+
+[lib]
+name = "dd_core"
+
+[replace]
+"winit:0.5.11" = { git = "https://github.com/robsaunders/winit-vst" }
+# "winit:0.5.11" = { path = "../winit-vst" }
+
+[[example]]
+name = "overdrive"
+crate-type = ["cdylib"]
+
+[[example]]
+name = "no_gui"
+crate-type = ["cdylib"]

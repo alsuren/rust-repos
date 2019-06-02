@@ -1,0 +1,17 @@
+[package]
+name = "mrpump"
+version = "0.1.1"
+license = "MIT"
+repository = "https://github.com/dpmkl/mrpump"
+authors = ["Michael E. Craggs <m.e.craggs@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+ipnetwork = "0.13"
+rcgen = "0.2"
+rustls = "0.15"
+tokio = "0.1.14"
+tokio-rustls = "0.9"
+tokio-tcp = "0.1"
+webpki = "0.19"

@@ -1,0 +1,10 @@
+[package]
+name = "orchestrator"
+version = "0.1.0"
+authors = ["Christopher F <foxbot@protonmail.com>"]
+
+[dependencies]
+env_logger = "~0.5"
+redis = "~0.8"
+kankyo = "~0.2"
+log = "~0.4"

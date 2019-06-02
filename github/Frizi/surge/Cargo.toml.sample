@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "surgemachine",
+    "surgemachine-macros",
+    "surgemachine-cdylib",
+    "surgemachine-vst/plugin-base",
+    "surgemachine-vst/fermi",
+    "surgemachine-vst/pendulum"
+]
+
+[profile.dev]
+rpath = false
+
+[profile.release]
+rpath = false

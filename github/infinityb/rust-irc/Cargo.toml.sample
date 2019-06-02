@@ -1,0 +1,15 @@
+[package]
+name = "irc"
+version = "0.5.0"
+authors = [ "Stacey Ell <stacey.ell@gmail.com>" ]
+
+[lib]
+name = "irc"
+
+[dependencies]
+log = "*"
+unicase = "1.1.1"
+
+[features]
+default = []
+unstable = []

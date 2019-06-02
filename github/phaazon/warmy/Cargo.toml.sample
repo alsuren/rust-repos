@@ -1,0 +1,34 @@
+[package]
+name = "warmy"
+version = "0.11.3"
+license = "BSD-3-Clause"
+authors = ["Dimitri Sabadie <dimitri.sabadie@gmail.com>"]
+description = "Hot-reloading loadable and reloadable resources"
+keywords = ["hot-reloading", "resources"]
+categories = ["caching", "filesystem"]
+homepage = "https://github.com/phaazon/warmy"
+repository = "https://github.com/phaazon/warmy"
+documentation = "https://docs.rs/warmy"
+readme = "README.md"
+
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "phaazon/warmy", branch = "master" }
+is-it-maintained-issue-resolution = { repository = "phaazon/warmy" }
+is-it-maintained-open-issues = { repository = "phaazon/warmy" }
+maintenance = { status = "actively-developed" }
+
+[features]
+default = ["json"]
+json = ["serde", "serde_json"]
+arc = []
+
+[dependencies]
+any-cache = "0.2"
+notify = "4.0.3"
+serde = { version = "1", features = ["derive"], optional = true }
+serde_json = { version = "1", optional = true }
+
+[dev-dependencies]
+tempdir = "0.3"

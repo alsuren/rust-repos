@@ -1,0 +1,8 @@
+[package]
+name = "durak"
+version = "0.1.0"
+authors = ["Dmitry Tantsur <divius.inside@gmail.com>"]
+
+[dependencies]
+rand = "0.5"
+termion = "1.5"

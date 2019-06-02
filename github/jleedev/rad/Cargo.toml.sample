@@ -1,0 +1,10 @@
+[package]
+name = "rad"
+version = "0.1.0"
+authors = ["Josh Lee <jleedev@gmail.com>"]
+
+[dependencies]
+rusqlite = "0.9.5"
+tempdir = "0.3"
+nom = "^3.0"
+matches = "0.1"

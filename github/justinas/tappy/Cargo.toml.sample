@@ -1,0 +1,11 @@
+[package]
+name = "tappy"
+description = "Text UI based tap BPM meter"
+version = "0.1.0"
+authors = ["Justinas Stankevicius <justinas@justinas.org>"]
+license = "MIT"
+
+[dependencies.cursive]
+version = "0.9.2"
+default-features = false
+features = ["termion-backend"]

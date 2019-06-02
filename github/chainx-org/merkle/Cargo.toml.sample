@@ -1,0 +1,24 @@
+[package]
+name = "merkle"
+version = "0.1.0"
+authors = ["Chainpool <http://chainx.org>"]
+edition = "2018"
+
+[dependencies]
+serialization = { git = "https://github.com/chainx-org/bitcoin-rust", default-features = false }
+sr-std = { git = "https://github.com/chainx-org/sr-std", default-features = false }
+primitives = { git = "https://github.com/chainx-org/bitcoin-rust", default-features = false }
+chain = { git = "https://github.com/chainx-org/bitcoin-rust", default-features = false }
+bit-vec = { git = "https://github.com/chainx-org/bit-vec", default-features = false }
+parity-codec = { version = "3.0", default-features = false }
+
+[features]
+default = ["std"]
+std = [
+     "parity-codec/std",
+     "serialization/std",
+     "sr-std/std",
+     "primitives/std",
+     "chain/std",
+     "bit-vec/std",
+]

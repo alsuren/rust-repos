@@ -1,0 +1,16 @@
+[package]
+name = "yew_test"
+version = "0.1.0"
+authors = ["jsh1n"]
+edition = "2018"
+
+[dependencies]
+yew = { git = "https://github.com/DenisKolodin/yew" }
+rand = "0.3"
+
+[dependencies.bitcoin]
+path = "../rust-bitcoin"
+
+[dependencies.secp256k1]
+path = "../rust-secp256k1"
+features = [ "rand" ]

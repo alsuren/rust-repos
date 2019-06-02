@@ -1,0 +1,14 @@
+[package]
+name = "servoglwindows"
+version = "0.1.0"
+authors = ["Paul Rouget <me@paulrouget.com>"]
+
+[dependencies]
+glutin = { git = "https://github.com/tomaka/glutin.git" }
+servoapi = { git = "https://github.com/paulrouget/servoapi.git" }
+winit = "0.6"
+gleam = "0.4"
+euclid = "0.15"
+lazy_static = "0.2"
+log = "0.3"
+bitflags = "0.7"

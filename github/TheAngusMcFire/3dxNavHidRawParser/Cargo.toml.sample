@@ -1,0 +1,13 @@
+[package]
+name = "space_nav"
+version = "0.1.0"
+authors = ["Christian Rieger <christian.rieger@student.tugraz.at>"]
+edition = "2018"
+
+[dependencies]
+colored = "1.8"
+termion = { version = "1.5", optional = true }
+tui = "0.5.1"
+
+[features]
+default = ["termion"]

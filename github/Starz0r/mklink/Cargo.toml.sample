@@ -1,0 +1,8 @@
+[package]
+name = "mklink"
+version = "1.0.0"
+authors = ["Starz0r <starz0r@starz0r.com>"]
+
+[profile.release]
+lto = true
+panic = 'abort'

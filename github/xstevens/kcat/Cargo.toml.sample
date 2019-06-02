@@ -1,0 +1,11 @@
+[package]
+name = "kcat"
+version = "0.1.0"
+authors = ["Xavier Stevens <xavier.stevens@gmail.com>"]
+
+[dependencies]
+clap = "2"
+kafka = "0.7"
+
+[profile.release]
+lto = true

@@ -1,0 +1,90 @@
+[package]
+name = "adventofcode-2017"
+version = "0.1.0"
+authors = ["Aaron McLeod <aaron.g.mcleod@gmail.com>"]
+
+[dependencies]
+read_input = { path = "./read_input/" }
+knot_hash = { path = "./knot_hash/" }
+bytecount = "*"
+regex = "*"
+
+[[bin]]
+name = "3"
+path = "3/main.rs"
+
+[[bin]]
+name = "4"
+path = "4/main.rs"
+
+[[bin]]
+name = "5"
+path = "5/main.rs"
+
+[[bin]]
+name = "6"
+path = "6/main.rs"
+
+[[bin]]
+name = "7"
+path = "7/main.rs"
+
+[[bin]]
+name = "10"
+path = "10/main.rs"
+
+[[bin]]
+name = "11"
+path = "11/main.rs"
+
+[[bin]]
+name = "13"
+path = "13/main.rs"
+
+[[bin]]
+name = "14"
+path = "14/main.rs"
+
+[[bin]]
+name = "15"
+path = "15/main.rs"
+
+[[bin]]
+name = "16"
+path = "16/main.rs"
+
+[[bin]]
+name = "17"
+path = "17/main.rs"
+
+[[bin]]
+name = "18"
+path = "18/main.rs"
+
+[[bin]]
+name = "19"
+path = "19/main.rs"
+
+[[bin]]
+name = "20"
+path = "20/main.rs"
+
+[[bin]]
+name = "21"
+path = "21/main.rs"
+
+[[bin]]
+name = "22"
+path = "22/main.rs"
+
+[[bin]]
+name = "23"
+path = "23/main.rs"
+
+[[bin]]
+name = "24"
+path = "24/main.rs"
+
+[[bin]]
+name = "25"
+path = "25/main.rs"

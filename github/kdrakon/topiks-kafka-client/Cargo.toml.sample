@@ -1,0 +1,17 @@
+[package]
+name = "topiks-kafka-client"
+version = "0.1.0-alpha+003"
+authors = ["Sean Policarpio <sean@policarp.io>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/kdrakon/topiks-kafka-client"
+keywords = ["cli", "kafka"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1.2.1"
+native-tls = "0.2.2"
+
+[dev-dependencies]
+proptest = "0.8.7"
+

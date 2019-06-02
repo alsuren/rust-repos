@@ -1,0 +1,14 @@
+[package]
+name = "parti"
+version = "0.0.0"
+authors = ["ggkuron"]
+
+[[bin]]
+name = "parti"
+path = "src/main.rs"
+
+[dependencies.parti-game]
+path = "src/game"
+
+[dependencies]
+glutin = "0.9"

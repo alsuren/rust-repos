@@ -1,0 +1,11 @@
+[package]
+name = "metrics"
+version = "0.1.0"
+authors = ["S.Percentage"]
+description = "Metrics Library(Point, Size, Rect...) with COMDrive"
+
+[target."cfg(windows)".dependencies]
+winapi = { version = "0.3", features=["d2d1"] }
+
+[dependencies]
+metrics-derives = { path = "metrics-derives" }

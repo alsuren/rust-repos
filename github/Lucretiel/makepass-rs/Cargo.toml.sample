@@ -1,0 +1,15 @@
+[package]
+name = "makepass"
+version = "0.1.0"
+authors = ["Nathan West <Lucretiel@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2"
+rand = "0.6"
+clap= "2.32"
+atty = "0.2.11"
+
+[build-dependencies]
+joinery = "2.0"
+lazy_format = "1.2"

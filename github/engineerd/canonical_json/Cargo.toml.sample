@@ -1,0 +1,17 @@
+[package]
+name = "canonical_json"
+version = "0.8.6-dev"
+authors = ["Erick Tryzelaar <erick.tryzelaar@gmail.com>", "Radu M <root@radu.sh>"]
+license = "MIT/Apache-2.0"
+description = "Canonical JSON serialization format"
+repository = "https://github.com/engineerd/canonical_json"
+keywords = ["json", "serde", "serialization"]
+
+
+[dependencies]
+serde = "0.8"
+serde_json = "0.8"
+serde_derive = "0.8"
+num-traits = "~0.1.32"
+itoa = "0.1"
+dtoa = "0.2"

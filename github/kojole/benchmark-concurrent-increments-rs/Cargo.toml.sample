@@ -1,0 +1,8 @@
+[package]
+name = "coninc"
+version = "0.1.0"
+authors = ["Yuichi Tanikawa <kojole.jp@gmail.com>"]
+
+[dependencies]
+crossbeam-channel = "0.2.1"
+parking_lot = "0.6.1"

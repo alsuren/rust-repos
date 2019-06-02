@@ -1,0 +1,13 @@
+[package]
+name = "recordix"
+version = "0.1.0"
+authors = ["sim"]
+edition = "2018"
+
+[dependencies]
+libpulse-simple-binding = "*"
+libpulse-binding = "*"
+hound = "*"
+byteorder = "*"
+ctrlc = "*"
+rustyline = "*"

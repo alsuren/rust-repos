@@ -1,0 +1,44 @@
+[package]
+name = "flash"
+version = "0.1.0"
+authors = ["TheZoq2 <frans.skarman@gmail.com>"]
+
+[dependencies]
+iron = "0.5.1"
+staticfile = "0.4.0"
+mount = "0.3.0"
+persistent = "0.3.0"
+urlencoded = "0.5.0"
+
+rand = "0.3.15"
+glob = "0.2.11"
+regex = "0.2.1"
+lazy_static = "0.2.8"
+
+image = "0.18"
+immeta = "0.3.5"
+
+diesel = { version = "0.16.0", features = ["postgres", "chrono"] }
+diesel_codegen = { version = "0.16.0", features = ["postgres"] }
+dotenv = "0.10.1"
+
+serde = "1.0.8"
+serde_derive = "1.0.8"
+serde_json = "1.0.2"
+
+error-chain = "0.10"
+
+
+reqwest = "0.9.1"
+
+itertools = "0.7.6"
+
+[dependencies.chrono]
+version = "0.4.*"
+features = ["serde"]
+
+
+
+[dev-dependencies]
+assert_matches = "1.1.0"
+pretty_assertions = "0.2.0"

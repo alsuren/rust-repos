@@ -1,0 +1,21 @@
+[package]
+name = "koala-dns"
+version = "0.1.0"
+authors = ["stevenpack <steven_john_pack@yahoo.com.au>"]
+
+# [lib]
+# name = "koala_dns"
+# path = "src/lib.rs"
+
+[[bin]]
+name = "koala_dns_server"
+path = "src/main.rs"
+
+[dependencies]
+getopts = "0.2"
+mio = "0.5"
+bytes = "0.2.11"
+log = "0.3"
+env_logger = "0.3.2"
+time = "0.1"
+# breaking on travis-ci  clippy = "*"

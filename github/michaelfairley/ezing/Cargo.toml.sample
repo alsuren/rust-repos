@@ -1,0 +1,19 @@
+[package]
+name = "ezing"
+version = "0.2.1"
+authors = ["Michael Fairley <michaelfairley@gmail.com>"]
+description = "Easing functions"
+repository = "https://github.com/michaelfairley/ezing"
+keywords = ["gamedev", "math"]
+license = "MIT/Apache-2.0"
+
+[badges]
+travis-ci = { repository = "michaelfairley/ezing", branch = "master" }
+
+[dependencies]
+num-traits = "0.2"
+
+[dev-dependencies]
+glium = "0.21"
+glium_text = "0.12"
+glutin = "0.14"

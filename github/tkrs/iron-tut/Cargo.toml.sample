@@ -1,0 +1,13 @@
+[package]
+name = "iron-tut"
+version = "0.1.0"
+authors = ["Takeru Sato <type.in.type@gmail.com>"]
+
+[dependencies]
+hyper = "0.10"
+iron = "0.6"
+router = "0.6"
+params = "0.8"
+mime = "0.2"
+typemap = "0.3"
+lazy_static = "0.2"

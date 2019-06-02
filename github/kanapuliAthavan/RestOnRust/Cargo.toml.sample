@@ -1,0 +1,11 @@
+[package]
+name = "RestOnRust"
+version = "0.1.0"
+authors = ["kanapuliAthavan <athavankanapuli@gmail.com>"]
+
+[dependencies]
+rand = "0.3.14"
+
+[[bin]]
+name = "runmycode"
+path = "src/loop.rs"

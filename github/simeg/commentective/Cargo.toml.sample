@@ -1,0 +1,26 @@
+[package]
+authors = ["Simon Egersand <s.egersand@gmail.com>"]
+categories = ["command-line-interface", "command-line-utilities", "development-tools"]
+description = "CLI tool to locate comments and commented out code in your source code"
+documentation = "https://github.com/simeg/commentective/blob/master/README.md"
+homepage = "https://github.com/simeg/commentective"
+keywords = ["command-line-tool", "cli", "rust", "comments"]
+readme = "README.md"
+license = "MIT"
+name = "commentective"
+version = "0.5.0"
+
+exclude = [
+    "tests/*",
+    "scripts/*",
+]
+
+[badges]
+travis-ci = { repository = "simeg/commentective" }
+codecov = { repository = "simeg/commentective", branch = "master", service = "github" }
+
+[dependencies]
+clap = "2.32.0"
+colored = "1.6"
+console = "0.6.1"
+rayon = "1.0.3"

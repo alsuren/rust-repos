@@ -1,0 +1,20 @@
+[package]
+name = "mm_map_tools"
+version = "0.1.0"
+authors = ["kolen <incredible.angst@gmail.com>"]
+
+[lib]
+name = "mm_map_tools"
+
+[dependencies]
+nom = "4.1.1"
+image = "0.20.1"
+byteorder = "1.2.7"
+lazy_static = "1.2.0"
+nalgebra = "0.16"
+gdk-pixbuf = "*"
+glib = "*"
+
+[dependencies.gtk]
+version = "0.5.0"
+features = ["v3_10"]

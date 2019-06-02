@@ -1,0 +1,11 @@
+[workspace]
+
+members = [
+    "gcode-parser",
+    "expression",
+    "trajectory-planner",
+    "common"
+]
+
+[profile.test]
+opt-level = 3

@@ -1,0 +1,21 @@
+[package]
+name = "diecast-live"
+version = "0.1.0"
+authors = ["Jorge Israel Peña <jorge.israel.p@gmail.com>"]
+
+[dependencies]
+typemap = "*"
+notify = "*"
+docopt = "*"
+tempdir = "*"
+log = "*"
+time = "*"
+rustc-serialize = "*"
+ansi_term = "*"
+
+futures = "*"
+hyper = {git = "https://github.com/hyperium/hyper"}
+url = "*"
+
+[dependencies.diecast]
+path = "../diecast"

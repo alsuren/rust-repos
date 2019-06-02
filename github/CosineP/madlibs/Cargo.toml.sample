@@ -1,0 +1,32 @@
+[package]
+name = "madlibs"
+version = "0.1.0"
+authors = ["Luna <lucidlyluna@gmail.com>"]
+
+[[bin]]
+name = "madlibs"
+path = "src/main.rs"
+
+[[bin]]
+name = "cleanup"
+path = "src/cleanup.rs"
+
+[dependencies]
+elefren = { version = "0.15.2", features = ["toml"] }
+nlp-annotations = "0.1.2"
+# I am not kidding when I say toml doesn't support arrays of arrays, which is
+# necessary for serializing `madlibs::Template`s
+bincode = "1.0.1"
+# Nonetheless we still need toml for elefren to be easy
+toml = "0.4.7"
+serde = "1.0.79"
+serde_derive = "1.0.79"
+chrono = "0.4.6"
+regex = "1.0.5"
+rand = "0.5.5"
+simple_logger = "0.5.0"
+log = "0.4.5"
+stopwords = "0.1.0"
+llamapun = { git = "https://github.com/KWARC/llamapun" }
+rust-senna = { git = "https://github.com/jfschaefer/rust-senna" }
+

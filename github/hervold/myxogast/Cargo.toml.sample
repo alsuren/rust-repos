@@ -1,0 +1,22 @@
+[package]
+name = "myxogast"
+version = "0.5.0"
+authors = ["kieran hervold <hervold@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "*"
+serde = "*"
+serde_codegen = "*"
+serde_json = "*"
+argparse = "*"
+
+[dependencies.bio]
+git = "http://github.com/rust-bio/rust-bio.git"
+
+[lib]
+name = "myxogast"
+path = "src/lib.rs"
+
+[[bin]]
+name = "myxo"
+path = "src/bin.rs"

@@ -1,0 +1,16 @@
+[package]
+name = "vo"
+version = "0.0.1"
+authors = ["Malik Olivier Boussejra <malik@boussejra.com>"]
+description = "Virtual Observatory standard implementation"
+license = "GPL-3.0-only"
+
+[dependencies]
+vo-table = { path = "vo-table" }
+vo-sia = { path = "vo-sia" }
+
+[workspace]
+members = [
+    "vo-sia",
+    "vo-table",
+]

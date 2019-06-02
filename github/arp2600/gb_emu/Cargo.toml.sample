@@ -1,0 +1,14 @@
+[package]
+name = "gb_emu"
+version = "0.1.0"
+authors = ["George Roger <georger@xmos.com>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.0.1"
+
+[dev-dependencies]
+png_encode_mini = "0.1.2"
+
+[profile.release]
+lto = true

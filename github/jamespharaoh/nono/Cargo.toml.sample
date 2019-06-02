@@ -1,0 +1,31 @@
+[package]
+name = "nono"
+version = "0.1.0"
+authors = ["James Pharaoh <james@pharaoh.uk>"]
+edition = "2018"
+
+[lib]
+name = "nono"
+
+[[bin]]
+name = "nono-cli"
+path = "src/bin/cli.rs"
+
+[[bin]]
+name = "nono-gtk"
+path = "src/bin/gtk.rs"
+
+[[bin]]
+name = "nono-alloc"
+path = "src/bin/alloc.rs"
+
+[dependencies]
+cairo-rs = "0.6"
+gdk = "0.10"
+gio = "0.6"
+glib = "0.7"
+gtk = "0.6"
+stats_alloc = "*"
+
+[profile.release]
+lto = true

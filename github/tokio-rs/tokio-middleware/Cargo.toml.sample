@@ -1,0 +1,13 @@
+[package]
+name = "tokio-middleware"
+version = "0.1.0"
+authors = ["Carl Lerche <me@carllerche.com>"]
+
+[dependencies]
+
+futures = "0.1"
+tokio-service = "0.1"
+tokio-timer = "0.1"
+
+[dev-dependencies]
+service-fn = { git = "https://github.com/tokio-rs/service-fn" }

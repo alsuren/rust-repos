@@ -1,0 +1,9 @@
+[package]
+name = "gh-release"
+version = "0.1.0"
+authors = ["munk <munk@protonmail.com>"]
+
+[dependencies]
+reqwest = "0.8.1"
+git2 = "0.6.8"
+

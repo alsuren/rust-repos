@@ -1,0 +1,11 @@
+[package]
+name = "sqlite3"
+version = "0.1.0"
+authors = [ "" ]
+
+[lib]
+name = "sqlite3"
+
+[dependencies]
+libc = "0.1.5"
+log = "0.3.1"

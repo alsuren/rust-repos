@@ -1,0 +1,21 @@
+[package]
+name = "rubble"
+version = "0.1.0"
+authors = ["clint <clint@fewbar.com>"]
+
+[features]
+eventfd = []
+
+[dependencies]
+getopts = "*"
+caps = "*"
+isatty = "*"
+log = "*"
+env_logger = "*"
+walkdir = "*"
+syscall = "*"
+
+[dependencies.nix]
+version = "*"
+default-features = false
+features = ["eventfd", "signalfd"]

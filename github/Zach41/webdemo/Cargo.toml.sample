@@ -1,0 +1,25 @@
+[package]
+name = "webdemo"
+version = "0.1.0"
+authors = ["Zach <zach_41@163.com>"]
+
+[dependencies]
+error = "0.1.9"
+url = "1.4.0"
+hyper = "0.10"
+typemap = "0.3"
+modifier = "0.1"
+plugin = "0.2"
+conduit-mime-types = "0.7"
+lazy_static = "0.2"
+num_cpus = "1.2"
+time = "0.1"
+hyper-native-tls = {version = "0.2", optional = true}
+log = "0.3"
+
+[features]
+default = []
+hyper-tls-example = ["hyper-native-tls"]
+
+[dev-dependencies]
+env_logger = "0.3"

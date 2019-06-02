@@ -1,0 +1,16 @@
+[package]
+name = "exlog"
+version = "0.1.0"
+authors = ["Marco 'don' Kaulea <don@0xbeef.org>"]
+
+[dependencies]
+clap = "~2.19.0"
+xdg = "~2.1"
+toml = "~0.4"
+serde = "~1.0"
+serde_derive = "~1.0"
+open = "~1.2.0"
+chrono = "~0.3.0"
+slog = "2"
+slog-term = "2"
+slog-async = "2"

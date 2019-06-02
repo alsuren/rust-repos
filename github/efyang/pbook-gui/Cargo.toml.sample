@@ -1,0 +1,51 @@
+[package]
+name = "pbook-gui"
+version = "0.1.0"
+authors = ["honorabrutroll <edward.yang6771@gmail.com>"]
+build = "build/build.rs"
+
+#[profile.dev]
+#opt-level = 2
+
+[dependencies]
+threadpool = "0.2.1"
+hyper = "0.7.2"
+gtk = {git = "https://github.com/gtk-rs/gtk"}
+gtk-sys = {git = "https://github.com/gtk-rs/sys"}
+glib = {git = "https://github.com/gtk-rs/glib"}
+gdk = {git = "https://github.com/gtk-rs/gdk"}
+gdk-pixbuf = {git = "https://github.com/gtk-rs/gdk-pixbuf"}
+gobject-sys = {git = "https://github.com/gtk-rs/sys"}
+pango-sys = {git = "https://github.com/gtk-rs/sys"}
+gio-sys = {git = "https://github.com/gtk-rs/sys"}
+
+num_cpus = "0.2"
+time = "0.1"
+libc = "0.2"
+tiny-keccak = "1.0.3"
+rustc-serialize = "0.3.16"
+lazy_static = "0.1.15"
+
+[features]
+default = ["set-arc"]
+# Write theme config to gtktheme.txt in output dir
+# override hierarchy if all-themes and some theme given
+all-themes = ["arc", "arc-darker", "arc-dark", "arc-solid", "arc-darker-solid", "arc-dark-solid", "iris-light", "iris-dark"]
+# If multiple themes given, use hierarchy
+arc = []
+arc-darker = []
+arc-dark = []
+arc-solid = []
+arc-darker-solid = []
+arc-dark-solid = []
+iris-light = []
+iris-dark = []
+set-arc = ["arc"]
+set-arc-darker = ["arc-darker"]
+set-arc-dark = ["arc-dark"]
+set-arc-solid = ["arc-solid"]
+set-arc-darker-solid = ["arc-darker-solid"]
+set-arc-dark-solid = ["arc-dark-solid"]
+set-iris-light = ["iris-light"]
+set-iris-dark = ["iris-dark"]
+# Add numix theme

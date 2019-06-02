@@ -1,0 +1,10 @@
+[package]
+name = "list"
+version = "0.0.1"
+authors = ["Wojciech Nawrocki <wjnawrocki+gh@protonmail.com>"]
+
+[dependencies]
+crossbeam-epoch = "*"
+crossbeam-utils = "*"
+init_with = "1.0.0"
+rand = "0.3"

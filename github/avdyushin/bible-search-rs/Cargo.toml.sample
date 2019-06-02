@@ -1,0 +1,15 @@
+[package]
+name = "bible-search-rs"
+version = "0.1.0"
+authors = ["Grigory Avdyushin <avdyushin.g@gmail.com>"]
+
+[dependencies]
+bible-reference-rs = "0.1.2"
+postgres = { version = "0.15", features = ["with-serde_json"] }
+hyper = "0.12.13"
+futures = "0.1.21"
+url = "1.7.1"
+serde_derive = "1.0.80"
+serde = "1.0.80"
+serde_json = "1.0"
+chrono = "0.4.6"

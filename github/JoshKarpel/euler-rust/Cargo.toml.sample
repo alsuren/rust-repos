@@ -1,0 +1,9 @@
+[package]
+name = "euler"
+version = "0.1.0"
+authors = ["Josh Karpel"]
+include = ["data/answers.txt"]
+
+[dependencies]
+time = "*"
+bit-vec = "*"

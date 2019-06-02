@@ -1,0 +1,18 @@
+[package]
+name = "pisa"
+version = "0.1.0"
+authors = ["urist <urist@localhost.localdomain>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1.5"
+quicli = "0.4.0"
+structopt = "0.2"
+
+[lib]
+path = "src/lib/lib.rs"
+name = "pisa_lib"
+
+[[bin]]
+path = "src/main.rs"
+name = "pisa"

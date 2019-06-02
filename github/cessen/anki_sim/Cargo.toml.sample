@@ -1,0 +1,8 @@
+[package]
+name = "anki_sim"
+version = "0.1.0"
+authors = ["Nathan Vegdahl <cessen@cessen.com>"]
+
+[dependencies]
+rand = "0.5"
+png_encode_mini = "0.1.2"

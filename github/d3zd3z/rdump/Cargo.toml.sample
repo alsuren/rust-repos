@@ -1,0 +1,15 @@
+[package]
+
+name = "rdump"
+version = "0.1.0"
+authors = [ "davidb@davidb.org" ]
+
+[dependencies.cas]
+path = "cas"
+
+[dependencies.filer]
+path = "filer"
+
+[[bin]]
+name = "rdump"
+test = false

@@ -1,0 +1,32 @@
+[package]
+authors = ["Luís Fiolhais <luisazenhas.fiolhais@openmailbox.org>"]
+description = "Rust API for room management using FenixEDU API"
+name = "fenix_rooms"
+version = "0.1.0"
+
+[metadata]
+
+[metadata.release]
+pre-release-commit-message = "Release {{version}}"
+sign-commit = true
+upload-doc = true
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[dependencies]
+hyper = "0.9.14"
+serde = "0.8.23"
+serde_derive = "0.8.6"
+serde_json = "0.8.6"
+unicase = "1.4.0"
+
+[dependencies.pencil]
+branch = "feature/neg-num"
+git = "https://github.com/lfiolhais/pencil"
+
+[lib]
+doc = true
+name = "fenix_rooms"
+path = "src/lib.rs"

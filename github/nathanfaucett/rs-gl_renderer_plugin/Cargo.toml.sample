@@ -1,0 +1,36 @@
+[package]
+name = "gl_renderer_plugin"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["gl_renderer_plugin"]
+description = "renderer gl plugin for scene renderer"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-gl_renderer_plugin.git"
+homepage = "https://github.com/nathanfaucett/rs-gl_renderer_plugin"
+
+exclude = ["example"]
+
+[dependencies]
+gl = {version = "0.6.1"}
+uuid = {version = "0.2", features = ["v4"]}
+
+vector = {git = "https://github.com/nathanfaucett/rs-vector.git"}
+stack = {git = "https://github.com/nathanfaucett/rs-stack.git"}
+hash_map = {git = "https://github.com/nathanfaucett/rs-hash_map.git"}
+insert = {git = "https://github.com/nathanfaucett/rs-insert.git"}
+map = {git = "https://github.com/nathanfaucett/rs-map.git"}
+iterable = {git = "https://github.com/nathanfaucett/rs-iterable.git"}
+
+camera_components = {git = "https://github.com/nathanfaucett/rs-camera_components.git"}
+scene_graph = {git = "https://github.com/nathanfaucett/rs-scene_graph.git"}
+scene_renderer = {git = "https://github.com/nathanfaucett/rs-scene_renderer.git"}
+
+geometry = {git = "https://github.com/nathanfaucett/rs-geometry.git"}
+material = {git = "https://github.com/nathanfaucett/rs-material.git"}
+
+gl_context = {git = "https://github.com/nathanfaucett/rs-gl_context.git"}
+gl_geometry = {git = "https://github.com/nathanfaucett/rs-gl_geometry.git"}
+
+shared = {git = "https://github.com/nathanfaucett/rs-shared.git"}

@@ -1,0 +1,10 @@
+[package]
+name = "kiro"
+version = "0.1.0"
+authors = ["hatoo <hato2000@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+termion = "1"
+clap = "2"
+unicode-width = "0"

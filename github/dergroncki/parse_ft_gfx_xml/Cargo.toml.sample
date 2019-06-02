@@ -1,0 +1,9 @@
+[package]
+name = "parse_gfx_xml"
+description = "Extract tag names from FactoryTalk window xml"
+version = "0.1.0"
+authors = ["Michael Groncki"]
+
+[dependencies]
+clap = "~2.24"
+quick-xml = "0.8.0"

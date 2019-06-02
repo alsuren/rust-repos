@@ -1,0 +1,20 @@
+[package]
+name = "slicer"
+version = "0.1.0"
+authors = ["Yang Hongbo <465558+sprhawk@users.noreply.github.com>"]
+
+[dependencies]
+vulkano = "0.9.0"
+vulkano-shader-derive = "*"
+image = "*"
+
+vulkano-win = { version ="0.9.0", optional = true }
+winit = {version = "0.11.0", optional = true }
+
+[features]
+default = []
+
+fbdev = []
+
+win = ["vulkano-win", "winit"]
+

@@ -1,0 +1,26 @@
+[package]
+name = "sudoku"
+version = "0.1.0"
+authors = ["liyongming <liyongming@wesai.com>"]
+
+[lib]
+name="sudoku"
+path="src/sudoku/lib.rs"
+
+[[bin]]
+name="sudoku"
+path="src/bin/main.rs"
+doc=false
+
+[[bin]]
+name="sudoku_web_test"
+path="src/web/main.rs"
+
+[profile.release]
+debug=true
+
+[dependencies]
+rustc-serialize = "*"
+iron = "*"
+time = "*"
+router = "*"

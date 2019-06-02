@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "silica",
+    "silica_arm_cortexm4",
+    "silica_atmel_sam4e",
+    "silica_atmel_sam4e8e",
+    "silica_duet3d_duet2",
+    "rusty_bootloader",
+    "rusty_printer"
+]
+
+[profile.debug]
+lto = true
+
+[profile.release]
+lto = true

@@ -1,0 +1,8 @@
+[package]
+name = "war"
+version = "0.1.0"
+authors = ["Lucas Rooyakkers <lucas.rooyakkers@protonmail.com>"]
+
+[dependencies]
+rand = "0.4"
+rayon = "1.0"

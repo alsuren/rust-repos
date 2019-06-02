@@ -1,0 +1,9 @@
+[package]
+authors = ["tillarnold <throwable42@gmail.com>"]
+name = "tinyrenderer"
+version = "0.1.0"
+
+[dependencies]
+image = "0.7.0"
+rand = "0.3.14"
+wavefront_obj = "5.1.0"

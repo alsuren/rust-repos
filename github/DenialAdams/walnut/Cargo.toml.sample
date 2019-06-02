@@ -1,0 +1,16 @@
+[package]
+name = "walnut"
+version = "0.1.0"
+authors = ["Richard McCormack <brick@brick.codes>"]
+edition = "2018"
+
+[dependencies]
+bitflags = "1"
+byteorder = "1"
+log = "0.4"
+pretty_env_logger = "0.2"
+walkdir = "2"
+
+[profile.release]
+lto = true
+codegen-units = 1

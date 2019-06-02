@@ -1,0 +1,8 @@
+[package]
+name = "beat-playground"
+version = "0.1.0"
+authors = ["Michael Williams <michael.williams@enspiral.com>"]
+
+[dependencies]
+portaudio = "0.7"
+sample = "0.10"

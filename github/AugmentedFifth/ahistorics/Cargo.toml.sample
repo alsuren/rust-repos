@@ -1,0 +1,30 @@
+[package]
+name = "ahistorics"
+version = "0.1.0"
+authors = ["z"]
+
+[dependencies]
+failure = "*"
+failure_derive = "*"
+fnv = "*"
+piston = "*"
+piston2d-graphics = "*"
+piston2d-opengl_graphics = "*"
+pistoncore-sdl2_window = { git = "https://github.com/PistonDevelopers/sdl2_window" }
+rand = "*"
+serde = "*"
+serde_derive = "*"
+toml = "*"
+vecmath = "*"
+
+[features]
+default = []
+
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = 3
+debug = false
+debug-assertions = false
+rpath = false
+codegen-units = 1

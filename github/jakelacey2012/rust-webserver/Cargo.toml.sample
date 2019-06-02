@@ -1,0 +1,14 @@
+[package]
+name = "webserver"
+version = "0.1.0"
+authors = ["Jake Lacey <jakewlacey@gmail.com>"]
+
+[[bin]]
+name = "webserver"
+path = "src/main.rs"
+
+[dependencies.iron]
+version = "*"
+
+[dependencies.time]
+version = "*"

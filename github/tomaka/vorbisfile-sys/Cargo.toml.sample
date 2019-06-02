@@ -1,0 +1,17 @@
+[package]
+name = "vorbisfile-sys"
+version = "0.0.8"
+description = "FFI for the vorbisfile library"
+license = "MIT"
+authors = ["Pierre Krieger <pierre.krieger1708@gmail.com>"]
+links = "vorbisfile"
+build = "libvorbisfile/build.rs"
+
+[build-dependencies]
+gcc = "0.3"
+pkg-config = "0.3"
+
+[dependencies]
+libc = "*"
+ogg-sys = "*"
+vorbis-sys = "*"

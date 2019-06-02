@@ -1,0 +1,21 @@
+[package]
+name = "tasks-github-bot"
+version = "1.0.2"
+authors = ["Michael Kohler <me@michaelkohler.info>"]
+edition = "2018"
+
+[lib]
+name = "tasks_github_bot"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tasks_github_bot"
+path = "src/main.rs"
+
+[dependencies]
+reqwest = "0.9.14"
+serde = "1.0.90"
+serde_derive = "1.0.90"
+serde_json = "1.0.39"
+log = "0.4.6"
+pretty_env_logger = "0.3.0"

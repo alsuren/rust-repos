@@ -1,0 +1,10 @@
+[package]
+name = "window_sniper"
+version = "0.1.0"
+authors = ["keith <keith@the-simmons.net>"]
+edition = "2018"
+
+[dependencies]
+winapi = { version = "0.3", features = ["winuser", "processthreadsapi"] }
+rodio = "0.8.1"
+rust-embed = "4.3.0"

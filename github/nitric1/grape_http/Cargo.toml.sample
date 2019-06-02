@@ -1,0 +1,26 @@
+[package]
+name = "grape_http"
+version = "0.1.0"
+authors = ["LEE Wondong <wdlee91@gmail.com>"]
+description = "A simple HTTP file server."
+repository = "https://github.com/nitric1/grape_http"
+readme = "README.md"
+keywords = ["server", "http", "file"]
+categories = ["command-line-interface", "network-programming", "web-programming", "web-programming::http-server"]
+
+[dependencies]
+env_logger = "0.4"
+futures = "0.1"
+hyper = "0.11"
+lazy_static = "0.2"
+log = "0.3"
+multimap = "0.4"
+rand = "0.3"
+rust-crypto = "0.2"
+rustc-serialize = "0.3"
+serde = "~1.0"
+serde_derive = "~1.0"
+tera = "0.10"
+time = "0.1"
+tokio-core = "0.1"
+url = "~1.5"

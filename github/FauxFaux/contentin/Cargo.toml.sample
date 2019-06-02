@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "ci-capnp",
+    "ci-dump",
+    "ci-gen",
+    "ci-pipe",
+    "ci-splay",
+]
+
+[profile.release]
+lto = true

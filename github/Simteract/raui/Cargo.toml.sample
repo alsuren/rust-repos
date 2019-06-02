@@ -1,0 +1,14 @@
+[package]
+name = "raui"
+version = "0.1.1"
+authors = ["Patryk 'PsichiX' Budzynski <patryk.budzynski@simteract.com>"]
+description = "Renderer Agnostic User Interface system"
+license = "MIT"
+repository = "https://github.com/Simteract/raui"
+keywords = ["ui", "interface", "renderer", "agnostic"]
+categories = ["gui", "rendering::graphics-api"]
+
+[dependencies]
+bitflags = "0.9"
+downcast-rs = "1.0.0"
+petgraph = "0.4.5"

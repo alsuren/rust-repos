@@ -1,0 +1,9 @@
+[package]
+name = "efi_app"
+version = "0.1.0"
+authors = ["Gurinder Singh <frederick.the.fool@gmail.com>"]
+
+[dependencies]
+rlibc = "1.0"
+compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+efi = { git = "https://github.com/gurry/efi" }

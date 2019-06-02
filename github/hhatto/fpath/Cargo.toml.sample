@@ -1,0 +1,17 @@
+[package]
+name = "fpath"
+version = "0.1.2"
+authors = ["Hideo Hattori <hhatto.jp@gmail.com>"]
+
+[lib]
+name = "path"
+crate-type = ["cdylib"]
+
+[dependencies]
+memchr = "2.0"
+users = "0.6.1"
+shellexpand = "1.0"
+
+[dependencies.pyo3]
+version = "0.5.2"
+features = ["extension-module"]

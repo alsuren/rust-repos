@@ -1,0 +1,13 @@
+[package]
+name = "kantroboto"
+description = "A Mastodon ebooks bot that creates new songs from other ones"
+version = "0.1.0"
+authors = ["Ana Gelez <ana@gelez.xyz>"]
+edition = "2018"
+
+[dependencies]
+soup = "0.3"
+elefren = { version = "0.19", features = [ "toml" ] }
+markov = "1.0"
+reqwest = "0.9"
+lazy_static = "1.0"

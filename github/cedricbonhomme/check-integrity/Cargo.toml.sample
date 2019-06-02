@@ -1,0 +1,10 @@
+[package]
+name = "check-integrity"
+version = "0.1.0"
+authors = ["Cédric Bonhomme <cedric@cedricbonhomme.org>"]
+
+[dependencies]
+clap = "2.24.1"
+glob = "0.2"
+checksum = "0.2.0"
+csv = "0.15"

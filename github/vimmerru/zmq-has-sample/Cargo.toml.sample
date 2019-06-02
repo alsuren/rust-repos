@@ -1,0 +1,12 @@
+[package]
+name = "zmq-has-sample"
+version = "0.1.0"
+authors = ["Vyacheslav Gudkov <vyacheslav.gudkov@dsr-company.com>"]
+
+[lib]
+name = "zmqhassample"
+path = "src/lib.rs"
+crate-type = ["staticlib","rlib", "dylib"]
+
+[dependencies]
+zmq = "0.8.2"

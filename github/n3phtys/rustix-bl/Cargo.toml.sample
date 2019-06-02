@@ -1,0 +1,41 @@
+[package]
+authors = ["nephtys <christopher.kaag@gmail.com>"]
+name = "rustix-bl"
+version = "0.5.1"
+
+
+
+# A short blurb about the package. This is not rendered in any format when
+# uploaded to crates.io (aka this is not markdown).
+description = "Backend for cervisia application"
+
+# These URLs point to more information about the repository. These are
+# intended to be webviews of the relevant data, not necessarily compatible
+# with VCS tools and the like.
+repository = "https://github.com/n3phtys/rustix-bl"
+
+
+# This is a string description of the license for this package. Currently
+# crates.io will validate the license provided against a whitelist of known
+# license identifiers from http://spdx.org/licenses/. Multiple licenses can be
+# separated with a `/`.
+license = "MIT"
+
+
+
+[dependencies]
+byteorder = "1"
+suffix-rs = "0.1"
+bincode = "0.8"
+custom_derive = "0.1"
+derive_builder = "0.5"
+lmdb = "0.8"
+quick-error = "1.2"
+rand = "0.3"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde_yaml = "0.7"
+tempdir = "0.3"
+typescriptify-derive = "0.1"
+typescriptify = "0.1"

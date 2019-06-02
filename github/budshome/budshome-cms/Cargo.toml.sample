@@ -1,0 +1,19 @@
+[package]
+name = "budshome-backend"
+version = "0.1.0"
+authors = ["zzy <9809920@qq.com>"]
+edition = "2018"
+
+[dependencies]
+bytes = ""
+futures = ""
+env_logger = ""
+
+serde = { version = "", features = ["derive"] }
+serde_json = ""
+
+mongodb = ""
+
+actix-web = ""
+actix = ""
+

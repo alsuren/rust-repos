@@ -1,0 +1,8 @@
+[package]
+name = "easy_util"
+version = "0.0.1"
+authors = ["liming <421100037@qq.com>"]
+
+[dependencies]
+rustc-serialize = "0.3.16"
+rand = "0.3.11"

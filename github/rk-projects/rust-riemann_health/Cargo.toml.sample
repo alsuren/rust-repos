@@ -1,0 +1,15 @@
+[package]
+name = "rust-riemann_health"
+version = "0.2.0"
+authors = ["Raj Kiran Gade <rajkiran.gade@gmail.com>"]
+description = "riemann_health implemented in rust"
+repository = "https://github.com/rk-projects/rust-riemann_health"
+readme = "README.md"
+license = "MIT"
+keywords = ["rust", "riemann", "health", "riemann-health", "riemann_health"]
+
+[dependencies]
+sys-info = "0.5.4"
+riemann_client = "0.7.0"
+protobuf = "1.4.3"
+getopts = "0.2"

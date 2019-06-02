@@ -1,0 +1,9 @@
+[package]
+name = "topgrep"
+version = "0.1.0"
+authors = ["Yuta Taniguchi <yuta.taniguchi.y.t@gmail.com>"]
+
+[dependencies]
+regex = "0.2"
+lazy_static = "0.2"
+clap = "~2.23.0"

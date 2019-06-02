@@ -1,0 +1,15 @@
+[package]
+name = "alvin"
+version = "0.1.0"
+description = "A simple CHIP-8 emulator."
+authors = ["Matt Stavola"]
+repository = "https://github.com/mbStavola/alvin"
+readme = "README.md"
+edition = "2018"
+keywords = ["CHIP-8", "emulator"]
+categories = ["emulators", "games"]
+
+[dependencies]
+rand = "^0.3"
+clap = "^2.26.1"
+sdl2 = "^0.32.1"

@@ -1,0 +1,13 @@
+[package]
+
+name = "rusty-rosalind"
+version = "0.0.1"
+authors = ["Andreas Arnold <andreas@featureenvy.com>"]
+
+[[bin]]
+
+name = "rosalind"
+
+[dependencies]
+regex = "0.1.8"
+num = "*"

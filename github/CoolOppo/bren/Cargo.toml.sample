@@ -1,0 +1,23 @@
+[package]
+name = "bren"
+version = "0.1.0"
+authors = ["CoolOppo <CoolOppo@users.noreply.github.com>"]
+edition = "2018"
+homepage = "https://cocks.website"
+repository = "https://github.com/CoolOppo/bren"
+description = "Bulk rename files with your text editor, like ranger and qmv"
+
+readme = "README.md"
+keywords = ["rename", "bulk", "batch"]
+categories = ["filesystem", "command-line-utilities"]
+license = "MIT"
+
+[badges]
+maintenance = { status = "as-is" }
+
+[dependencies]
+crossbeam = "0.7.1"
+ignore = "0.4.7"
+parking_lot = "0.8.0"
+rayon = "1.0.3"
+tempfile = "3.0.7"

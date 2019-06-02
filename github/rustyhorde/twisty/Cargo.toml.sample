@@ -1,0 +1,37 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "Example WebSocket Echo client implemented with twist"
+documentation = "https://docs.rs/twisty"
+homepage = "https://github.com/rustyhorde/twisty"
+keywords = ["twist", "tokio", "websocket", "client"]
+license = "MIT/Apache-2.0"
+name = "twisty"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/twisty"
+version = "0.3.1"
+
+[dependencies]
+base64 = "0.4.0"
+blake2 = "0.4.0"
+byteorder = "1.0.0"
+clap = "2.20.5"
+env_logger = "0.4.1"
+futures = "0.1.10"
+native-tls = "0.1.1"
+rand = "0.3.15"
+sha1 = "0.2.0"
+slog = "1.5.2"
+slog-stream = "1.2.0"
+slog-term = "1.5.0"
+term = "0.4.5"
+tokio-core = "0.1.4"
+tokio-proto = "0.1.1"
+tokio-service = "0.1.0"
+twist = "0.7.1"
+twist-lz4 = "0.3.1"
+twist-jwt = "0.3.1"
+url = "1.4.0"
+
+[dependencies.tokio-tls]
+features = ["tokio-proto"]
+version = "0.1.1"

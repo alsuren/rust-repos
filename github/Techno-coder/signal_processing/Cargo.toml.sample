@@ -1,0 +1,19 @@
+[package]
+name = "signal_processing"
+version = "0.1.0"
+authors = ["Techno-coder <8334328+Techno-coder@users.noreply.github.com>"]
+edition = '2018'
+
+[dependencies]
+num-complex = { version = "*", optional = true }
+rustfft = { version = "*", optional = true }
+num_cpus = "*"
+rayon = "*"
+
+[features]
+default = ["fast_fourier"]
+fast_fourier = ["rustfft", "num-complex"]
+
+[dev-dependencies]
+pretty_assertions = "*"
+hound = "*"

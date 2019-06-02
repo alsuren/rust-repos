@@ -1,0 +1,16 @@
+[package]
+name = "js-hard-import"
+version = "0.1.0"
+authors = ["khalidhoffman <khalidhoffman@gmail.com>"]
+
+[dependencies]
+esprit = { git = "https://github.com/dherman/esprit.git" }
+glob = "0.2.11"
+
+[[bin]]
+name = "js-hard-import"
+path = "./main.rs"
+
+[lib]
+name = "JSHardImportTmp"
+path = "src/lib.rs"

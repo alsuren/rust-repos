@@ -1,0 +1,22 @@
+[package]
+name = "jsonrpc"
+version = "0.1.0"
+authors = ["Y. T. Chung <zonyitoo@gmail.com>"]
+
+[lib]
+name = "jsonrpc"
+
+[dependencies]
+#rustc-serialize = "*"
+chrono = "*"
+rand = "*"
+log = "*"
+
+[dev-dependencies]
+bufstream = "*"
+fern = "*"
+
+[dependencies.rustc-serialize]
+#git = "https://github.com/rust-lang/rustc-serialize.git"
+git = "https://github.com/zonyitoo/rustc-serialize.git"
+#path = "/Users/zonyitoo/Projects/rustc-serialize"

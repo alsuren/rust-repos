@@ -1,0 +1,31 @@
+[package]
+name = "commander-rust"
+version = "1.2.1"
+description = "A better way to develop CLI in Rust"
+authors = ["dimos <doubledimos@outlook.com>"]
+edition = "2018"
+license = "MIT"
+# documentation = "https://github.com/MSDimos/commander-rust"
+homepage = "https://msdimos.github.io"
+repository = "https://github.com/MSDimos/commander-rust"
+readme = "README.md"
+keywords = ["cli", "commander", "arg", "argument", "command"]
+categories = ["command-line-interface"]
+exclude = [
+    "homepage/",
+    "examples/",
+    "docs/",
+    "crates/",
+    "example.png",
+]
+
+[dependencies]
+lazy_static = "1.2.0"
+
+[dependencies.commander-core]
+path = "crates/commander-core"
+version = "1.2.0"
+
+[dependencies.commander-macros]
+path = "crates/commander-macros"
+version = "1.2.0"

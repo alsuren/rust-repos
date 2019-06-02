@@ -1,0 +1,9 @@
+[package]
+name = "hub"
+version = "0.1.0"
+authors = ["neetdai <ake17101@gmail.com>"]
+
+[dependencies]
+failure_derive = "0.1.1"
+failure = "0.1.1"
+sha1 = "0.6.0"

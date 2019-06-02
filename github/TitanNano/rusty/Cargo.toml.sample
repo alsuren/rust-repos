@@ -1,0 +1,25 @@
+[package]
+authors = ["Jovan Gerodetti <jovan.gerodetti@titannano.de>"]
+name = "rusty"
+version = "0.1.0"
+[dependencies]
+erased-serde = "0.3.6"
+failure = "0.1.3"
+lazy_static = "*"
+serde = { version = "*", features = ['rc'] }
+serde_derive = "*"
+serde_json = "*"
+
+[dependencies.ecmascript]
+source = "https://github.com/dat2/ecmascript"
+
+[dependencies.ratel]
+path = "./ratel/ratel"
+
+[dependencies.uuid]
+features = ["v4", "serde"]
+version = "*"
+
+[dependencies.toolshed]
+version = "0.4"
+features = ["impl_serialize"]

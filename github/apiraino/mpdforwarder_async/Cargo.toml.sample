@@ -1,0 +1,9 @@
+[package]
+name = "mpdforwarder_async"
+version = "0.1.0"
+authors = ["jman"]
+
+[dependencies]
+tokio = "0.1.6"
+encoding = "*"
+tokio-io = "0.1.6"

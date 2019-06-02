@@ -1,0 +1,27 @@
+[package]
+name = "hdfs"
+description = "libhdfs binding library and safe Rust APIs"
+version = "0.0.4"
+authors = [ "Hyunsik Choi <hyunsik.choi@gmail.com>" ]
+license = "Apache-2.0"
+
+keywords = ["hdfs", "hadoop"]
+documentation = "http://hyunsik.github.io/hdfs-rs/"
+homepage = "https://github.com/hyunsik/hdfs-rs"
+repository = "https://github.com/hyunsik/hdfs-rs.git"
+readme = "README.md"
+
+build = "build.rs"
+
+[lib]
+name = "hdfs"
+path = "src/lib.rs"
+
+[dependencies]
+itertools = "0.4.1"
+libc = "0.1.10"
+log = "0.3.2"
+url = "0.2.37"
+
+[build-dependencies]
+gcc = "0.3.17"

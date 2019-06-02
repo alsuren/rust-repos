@@ -1,0 +1,17 @@
+[package]
+name = "git-abd"
+version = "0.1.0"
+authors = ["Maarten Vos <maarten@mrtn.run>"]
+description = "Clean up abandoned git branches with ease!"
+repository = "https://github.com/inferiormartin/git-abd"
+readme = "README.md"
+keywords = ["git"]
+categories = ["command-line-interface", "development-tools"]
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+git2 = "0.7.5"
+failure = "0.1.3"
+read_input = "0.6.2"
+clap = "2.32.0"

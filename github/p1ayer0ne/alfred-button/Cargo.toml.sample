@@ -1,0 +1,9 @@
+[package]
+name = "alfred"
+version = "0.1.0"
+authors = ["anthonychung14 <anthonychung14@gmail.com>"]
+
+[dependencies]
+
+mio = { git = "https://github.com/carllerche/mio" }
+

@@ -1,0 +1,9 @@
+[package]
+name = "ckr"
+version = "0.1.0"
+authors = ["vladislav <vladislavbailovic@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+walkdir = "2"
+clap = "2"

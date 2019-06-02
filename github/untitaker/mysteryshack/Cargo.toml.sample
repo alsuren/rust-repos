@@ -1,0 +1,57 @@
+[package]
+name = "mysteryshack"
+version = "0.1.0"
+
+authors = ["Markus Unterwaditzer <markus@unterwaditzer.net>"]
+license = "MIT"
+keywords = ["remotestorage"]
+readme = "README.md"
+
+[lib]
+name = "mysteryshack"
+path = "src/mysteryshack/lib.rs"
+
+[[bin]]
+name = "mysteryshack"
+test = false
+doc = false
+
+[dependencies]
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+base64 = "0.4"
+
+iron = "0.5"
+router = "0.5"
+hyper = "0.10"
+toml = "0.3"
+unicase = "1"
+atomicwrites = "0.1"
+url = "1"
+clap = "2"
+rand = "0.3"
+persistent = "0.3"
+urlencoded = "0.5"
+handlebars-iron = { features = ["serde_type"], version = "0.23" }
+handlebars = { features = ["serde_type"], version = "0.25" }
+regex = "0.2"
+quick-error = "1"
+mount = "0.3"
+time = "0.1"
+filetime = "0.1"
+chrono = "0.3"
+nix = "0.7"
+clippy = {git = "https://github.com/Manishearth/rust-clippy", version = "*", optional = true}
+webicon = "0.3"
+sodiumoxide = { features = ["serde"], version = "0.0" }
+iron-error-router = "0.3"
+please-clap = "0.1"
+termion = "1"
+iron-sessionstorage = "0.6"
+
+[dev-dependencies]
+tempdir = "*"
+
+[features]
+default = []

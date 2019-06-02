@@ -1,0 +1,10 @@
+[package]
+name = "marmoset"
+version = "0.1.0"
+authors = ["koka <koka.code@gmail.com>"]
+
+[lib]
+name = "marmoset"
+path = "lib/mod.rs"
+
+[dependencies]

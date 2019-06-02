@@ -1,0 +1,8 @@
+[package]
+name = "ludopuer"
+version = "0.1.0"
+authors = ["Scott Pleb <scottpleb@comfy.cafe>"]
+
+[dependencies]
+clippy = { git = "https://github.com/Manishearth/rust-clippy" }
+sdl2 = "0.28"

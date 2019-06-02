@@ -1,0 +1,8 @@
+[package]
+name = "drink"
+version = "0.1.0"
+authors = ["Ross Delinger <rossdylan@csh.rit.edu>"]
+
+[dependencies]
+nom = "1.2.2"
+mio = "0.5"

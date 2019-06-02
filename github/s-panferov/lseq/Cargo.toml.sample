@@ -1,0 +1,22 @@
+[package]
+name = "lseq"
+version = "0.1.0"
+description = "LSEQ sequences"
+keywords = ["crdt", "lseq"]
+license = "MIT"
+repository = "https://github.com/s-panferov/lseq"
+authors = ["Stanislav Panferov <fnight.m@gmail.com>"]
+
+[dependencies]
+rand = "^0.4.2"
+
+[dependencies.rug]
+version = "^1.0.1"
+default-features = false
+features = ["integer", "rand"]
+
+[dev-dependencies]
+average = "^0.7.0"
+skiplist = "^0.2.10"
+uuid = { version = "^0.6.2", features = ["serde", "v4"] }
+

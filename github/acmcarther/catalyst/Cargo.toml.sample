@@ -1,0 +1,25 @@
+[package]
+name = "catalyst"
+version = "0.1.0"
+authors = ["Alex McArther <acmcarther@gmail.com>"]
+
+[dependencies]
+time = "*"
+rustc-serialize = "0.3.16"
+iron = "*"
+router = "*"
+staticfile = "*"
+itertools = "*"
+mount = "*"
+rand = "*"
+
+[dependencies.github_v3]
+git = "https://github.com/acmcarther/github_v3_rust"
+rev = "137f39fe57cefb634b7360793cd6872382d039f7"
+
+[dev-dependencies.rusty-mock]
+git = "https://github.com/acmcarther/rusty-mock"
+rev = "30e3da6fa169afd1436fa522754a14187808a5a3"
+
+[dev-dependencies]
+expectest = "*"

@@ -1,0 +1,92 @@
+[package]
+name = "telamon"
+authors = ["Ulysse Beaugnon <ulysse.beaugnon@ens.fr>"]
+license = "Apache-2.0"
+version = "0.2.0"
+edition = "2018"
+
+readme = "README.md"
+repository = "https://github.com/ulysseB/telamon/"
+
+[[bench]]
+name = "descent"
+harness = false
+
+[[bench]]
+name = "memory"
+harness = false
+
+[[example]]
+name = "matmul"
+required-features = ["cuda"]
+
+[[example]]
+name = "print_event_log"
+
+[build-dependencies]
+cc = "1.0.12"
+failure = "0.1.1"
+glob = "0.2"
+
+[build-dependencies.telamon-gen]
+path = "telamon-gen"
+
+[dependencies]
+byteorder = "1"
+config = "0.8.0"
+crossbeam = "0.7"
+env_logger = "0.5.9"
+failure = "0.1.1"
+futures = "0.1.3"
+fxhash = "0.2"
+indexmap = "1.0"
+interval-heap = "0.0.5"
+itertools = "0.8"
+lazy_static = "1.0.0"
+libc = "0.2.40"
+linked-list = "0.0.3"
+log = "0.4.1"
+matches = "0.1.6"
+ndarray = "0.11.2"
+num = { version = "0.2.0", features = ["serde"] }
+num_cpus = "1.8.0"
+parking_lot = "0.5.5"
+rand = "0.5.5"
+rpds = { version = "0.5.0", features = ["serde"] }
+serde = { version = "1.0", features = ["derive", "rc"] }
+serde_json = "1.0.22"
+serde_yaml = "0.8"
+structopt = "0.2"
+bincode = "1.0"
+toml = "0.4"
+flate2 = "1.0.2"
+dot = "0.1"
+csv = "1"
+utils = {package = "telamon-utils", path = "telamon-utils"}
+telajax = {path = "telajax", optional = true}
+
+
+[dev-dependencies]
+criterion = "0.2.4"
+jemalloc-ctl = "0.1"
+telamon-cuda = { path = "backend/cuda", default-features = false }
+
+[features]
+default = []
+format_exh = []
+lex = []
+cuda = ["telamon-cuda/real_gpu"]
+mppa = ["telajax"]
+
+[workspace]
+members = [
+    "backend/cuda",
+    "backend/x86",
+    "backend/mppa",
+    "kernels",
+    "telamon-gen",
+    "telajax",
+    "telamon-utils",
+    "telamon-gen/cc_tests",
+    "telamon-capi",
+]

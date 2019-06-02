@@ -1,0 +1,8 @@
+[package]
+name = "rconcmd"
+version = "0.0.1"
+authors = ["Fedcomp"]
+
+[dependencies]
+byteorder = "1"
+clap = "2.19"

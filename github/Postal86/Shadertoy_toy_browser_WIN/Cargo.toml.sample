@@ -1,0 +1,56 @@
+[package]
+name = "shadertoy_browser_win"
+version = "0.1.0"
+authors = ["Achiko Mezvrishvili <amezvrishvili@gmail.com>"]
+edition = "2018"
+keywords = ["shaders", "shadertoy", "render", "windows", ""]
+
+[dependencies]
+shadertoy = "0.6.1"
+floating-duration = "0.1.2"
+chrono = "0.4.6"
+rayon = "1.0.3"
+clap = "2.32.0"
+spirv_cross = "0.12.1"
+
+serde_json = "1.0.37"
+serde = "1.0.85"
+serde_derive = "1.0.85"
+winit = "0.18.1"
+libc = "0.2.48"
+foreign-types = "0.3.2"
+rust-base58 = "0.0.4"
+colored = "1.7.0"
+reqwest = "0.9.9"
+error-chain = "0.12.0"
+open = "1.2.2"
+indicatif = "0.11.0"
+thread_profiler = "0.3.0"
+log = "0.4.6"
+fern = "0.5.7"
+sha3 = "0.8.1"
+
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winit = "0.18.1"
+gfx = "0.17"
+glutin = "0.12"
+gfx_window_glutin = "0.20"
+
+
+[profile.release]
+debug = true
+
+[features]
+default = [ "profiler"]
+profiler = ["thread_profiler/thread_profiler"]
+
+
+
+
+
+
+
+
+
+

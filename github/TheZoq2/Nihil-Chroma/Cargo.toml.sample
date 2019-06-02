@@ -1,0 +1,16 @@
+[package]
+name = "nihil_chroma"
+version = "0.1.0"
+authors = ["TheZoq2 <frans.skarman@gmail.com>"]
+
+[dependencies]
+rand = "*"
+nalgebra = "*"
+specs = "0.10"
+specs-derive = "*"
+time = "*"
+
+[dependencies.sdl2]
+version = "0.31"
+default-features = false
+features = ["ttf", "image", "mixer"]

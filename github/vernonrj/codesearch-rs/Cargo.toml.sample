@@ -1,0 +1,38 @@
+[package]
+name = "codesearch-rs"
+version = "0.6.0"
+authors = ["Vernon Jones <vernonrjones@gmail.com>"]
+license = "BSD-3-Clause"
+description = "Tool for indexing then performing regular expression searches over large bodies of code"
+documentation = "https://github.com/vernonrj/codesearch-rs"
+homepage = "https://github.com/vernonrj/codesearch-rs"
+repository = "https://github.com/vernonrj/codesearch-rs"
+
+[dependencies]
+termcolor = "0.1"
+libc = "0.2"
+clap = "2.1"
+grep = "0.1"
+glob = "0.2"
+memchr = "1.0"
+bytecount = "0.4"
+regex = "0.2"
+regex-syntax = "0.4"
+log = "0.3"
+tempfile = "2.1"
+walkdir = "0.1"
+
+           
+consts = { path = "src/consts" }
+libcustomlogger = { path = "src/libcustomlogger" }
+libcsearch = { path = "src/libcsearch" }
+libcindex = { path = "src/libcindex" }
+libprofiling = { path = "src/libprofiling" }
+libvarint = { path = "src/libvarint" }
+
+[features]
+default = ["runtime-dispatch-simd"]
+profile = []
+runtime-dispatch-simd = ["bytecount/runtime-dispatch-simd"]
+
+[workspace]

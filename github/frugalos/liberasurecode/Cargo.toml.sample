@@ -1,0 +1,19 @@
+[package]
+name = "liberasurecode"
+version = "1.0.2"
+authors = ["The FrugalOS Developers"]
+links = "erasurecode"
+build = "build.rs"
+description = "A Rust wrapper for `openstack/liberasurecode`"
+homepage = "https://github.com/frugalos/liberasurecode"
+repository = "https://github.com/frugalos/liberasurecode"
+readme = "README.md"
+keywords = ["erasure-coding"]
+categories = ["api-bindings", "encoding"]
+license = "MIT"
+
+[badges]
+travis-ci = {repository = "frugalos/liberasurecode"}
+
+[dependencies]
+libc = "0.2"

@@ -1,0 +1,36 @@
+[package]
+name = "statusbar"
+version = "0.2.1"
+authors = ["foldu <foldu@protonmail.com>"]
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+failure = "0.1.5"
+rayon = "1.0.3"
+structopt = "0.2.14"
+toml = "0.4.10"
+serde = "1.0.86"
+serde_derive = "1.0.86"
+actix = "0.7.9"
+notify-rust = "3.5.0"
+nom = "4.2.0"
+lazy_static = "1.2.0"
+directories = "1.0.2"
+env_logger = "0.6.0"
+log = "0.4.6"
+inotify = "0.6.1"
+chrono = { version = "0.4.6", features = ["serde"] }
+alsa = "0.2.1"
+console = "0.7.5"
+nix = "0.13.0"
+delegate = "0.2.0"
+linux_wireless = { path = "linux_wireless" }
+linux_sensors = { path = "linux_sensors" }
+formatter = { path = "formatter" }
+const-cstr = "0.3.0"
+jemallocator = "0.1.9"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1

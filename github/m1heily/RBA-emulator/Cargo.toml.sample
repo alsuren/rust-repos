@@ -1,0 +1,11 @@
+[package]
+name = "rba-emulator"
+version = "0.1.0"
+authors = ["Michel Heily <michelheily@gmail.com>"]
+
+[dependencies]
+hexdump = "0.1.0"
+byteorder = "1.2.3"
+bit = "0.1"
+num = "*"
+enum_primitive = "*"

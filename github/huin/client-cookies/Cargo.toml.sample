@@ -1,0 +1,14 @@
+[package]
+name = "client-cookies"
+version = "0.1.0"
+authors = ["John Beisley <johnbeisleyuk@gmail.com>"]
+
+[dependencies]
+cookie = "0.9"
+error-chain = "0.10"
+publicsuffix = "1.3"
+sequence_trie = "0.3"
+time = "0.1"
+unic-idna = "0.4"
+url = "1.5"
+vec-arena = "0.4"

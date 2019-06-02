@@ -1,0 +1,9 @@
+[package]
+name = "cybercity"
+version = "0.1.0"
+authors = ["Hannes Hunzinger <hunzi.han@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.5.5"
+heck = "0.3.0"

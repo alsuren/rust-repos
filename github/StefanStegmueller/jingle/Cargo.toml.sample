@@ -1,0 +1,26 @@
+[package]
+name = "jinglepi"
+version = "0.1.0"
+authors = ["GordonShumway <Stefan.Steg@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rppal = "0.10"
+time = "0.1.42"
+csv = "1"
+serde = "1.0"
+serde_derive = "1.0"
+lazy_static = "1.2.0"
+clap = "2.32.0"
+hex = "0.3.2"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 16
+panic = 'unwind'
+incremental = false
+overflow-checks = false

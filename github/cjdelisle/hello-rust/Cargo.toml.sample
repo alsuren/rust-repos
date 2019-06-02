@@ -1,0 +1,12 @@
+[package]
+
+name = "noders"
+version = "0.0.2"
+authors = [ "Caleb James DeLisle" ]
+description = "NodeJS-like event loop environment for Rust"
+license = "MIT"
+
+[dependencies]
+mio = "0.6.15"
+mio-extras = "2.0.5"
+bytes = "0.4.9"

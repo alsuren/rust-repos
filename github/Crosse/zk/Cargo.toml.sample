@@ -1,0 +1,11 @@
+[package]
+name = "zk"
+version = "0.1.0"
+authors = ["Seth Wright"]
+
+[dependencies]
+zookeeper = "0.2"
+log = "0.3.6"
+env_logger = "0.4.0"
+clap = "2.20.4"
+time = "0.1"

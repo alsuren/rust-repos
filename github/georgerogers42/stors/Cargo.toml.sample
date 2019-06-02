@@ -1,0 +1,13 @@
+[package]
+name = "stors"
+version = "0.1.3"
+authors = ["George Rogers <grogers385@gmail.com>"]
+
+[dependencies]
+glob = "0.2.11"
+mount = "*"
+iron = "0.4.0"
+router = "0.4.0"
+staticfile = "0.3.0"
+handlebars-iron = "0.18.0"
+rustc-serialize = "*"

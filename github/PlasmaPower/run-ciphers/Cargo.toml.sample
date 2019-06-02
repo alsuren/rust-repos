@@ -1,0 +1,13 @@
+[package]
+name = "run-ciphers"
+version = "1.0.0"
+authors = ["Lee Bousfield <ljbousfield@gmail.com>"]
+publish = false
+
+[dependencies]
+libc = "0.2.15"
+clap = "2.10.0"
+hyper = "0.9"
+rustc-serialize = "0.3"
+md5 = "0.2.0"
+crossbeam = "0.2.10"

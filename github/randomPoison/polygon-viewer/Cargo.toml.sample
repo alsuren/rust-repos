@@ -1,0 +1,13 @@
+[package]
+name = "polygon-viewer"
+version = "0.1.0"
+authors = ["David LeGare <excaliburhissheath@gmail.com>"]
+
+[dependencies]
+collaborate = { git = "https://github.com/randomPoison/COLLABORATE" }
+gl-winit = { git = "https://github.com/randomPoison/polygon" }
+image = "0.15"
+polygon = { git = "https://github.com/randomPoison/polygon" }
+structopt = "0.1"
+structopt-derive = "0.1"
+winit = "0.7"

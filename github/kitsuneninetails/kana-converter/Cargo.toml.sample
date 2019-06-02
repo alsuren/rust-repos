@@ -1,0 +1,18 @@
+[package]
+name = "kana-converter"
+version = "0.1.0"
+description = "A simple converter for half-width/full-width Japanese language characters (katakana, hiragana, and ASCII)"
+authors = ["Michael Micucci <micucci@fox-den.org>"]
+repository = "http://github.com/kitsuneninetails/kana-converter"
+license = "MIT"
+readme = "README.md"
+keywords = ["kana", "byte-conversion", "full-width", "half-width"]
+
+[badges]
+travis-ci = { repository = "kitsuneninetails/kana-converter" }
+
+[dependencies]
+lazy_static = "1"
+
+[dev-dependencies]
+chrono = "0.4"

@@ -1,0 +1,23 @@
+[package]
+name = "stperf"
+version = "0.1.4"
+authors = ["Jens Pitkanen <jens@neon.moe>"]
+description = "Simple profiling utility for single-threaded applications"
+documentation = "https://docs.rs/stperf"
+homepage = "https://github.com/neonmoe/stperf"
+repository = "https://github.com/neonmoe/stperf"
+readme = "README.md"
+keywords = ["profiler", "perf", "performance"]
+categories = ["development-tools::profiling"]
+license = "ISC"
+
+[badges]
+travis-ci = { repository = "neonmoe/stperf", branch = "0.1.4" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+lazy_static = "1.0"
+
+[features]
+default = []
+disabled = []

@@ -1,0 +1,16 @@
+[project]
+name = "Ray Tracer"
+version = "0.0.1"
+authors = ["M. Rozycki <mar.rozycki@gmail.com>"]
+
+[dependencies]
+clap = { version = "2.32.0", features = ["yaml"] }
+rand = "0.5.4"
+itertools = "0.7.8"
+nalgebra = "0.16.0"
+png = "0.12.0"
+rayon = "1.0.2"
+
+[[bin]]
+name = "raytracer"
+path = "src/main.rs"

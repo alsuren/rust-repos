@@ -1,0 +1,12 @@
+[package]
+name = "vip"
+version = "0.0.1"
+authors = ["mswift42 <martin.haesler@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+select = "0.4.2"
+url = "1.7.1"
+reqwest = "0.9.5"
+chashmap = "2.2.0"
+futures-preview = "0.3.0-alpha.13"

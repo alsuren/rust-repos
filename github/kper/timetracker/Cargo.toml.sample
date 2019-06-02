@@ -1,0 +1,15 @@
+[package]
+name = "timetracking"
+version = "0.1.0"
+authors = ["Kevin Per <kevp.per@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32"
+nom = "3.0"
+chrono = "0.4.6"
+log = "0.4"
+pretty_env_logger = "0.3"
+failure = "0.1"
+[dev-dependencies]
+tempdir = "0.3"

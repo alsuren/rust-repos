@@ -1,0 +1,8 @@
+[package]
+name = "nodevo"
+version = "0.0.1"
+authors = ["Bernardo Galvão <bernardogcgalvao@gmail.com>"]
+
+[dependencies]
+rand = "0.3.0"
+rayon = "0.7.0"

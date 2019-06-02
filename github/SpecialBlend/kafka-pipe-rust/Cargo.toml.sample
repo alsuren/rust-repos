@@ -1,0 +1,9 @@
+[package]
+name = "kafka-pipe"
+version = "0.0.0"
+authors = ["cj@specialblend.net"]
+edition = "2018"
+description = "functional/fluent kafka pipeline utility"
+
+[dependencies]
+rdkafka = "0.20.0"

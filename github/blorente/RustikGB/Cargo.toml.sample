@@ -1,0 +1,10 @@
+[package]
+name = "RustikGB"
+version = "0.1.0"
+authors = ["Borja Lorente <blorente@ucm.es>"]
+
+[dependencies]
+text_io = "0.1.6"
+piston_window = "0.61.0"
+rand = "0.3.14"
+image = "*"

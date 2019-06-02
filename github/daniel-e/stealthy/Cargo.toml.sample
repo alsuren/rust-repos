@@ -1,0 +1,25 @@
+[package]
+
+name = "stealthy"
+version = "0.0.2"
+authors = ["Daniel Etzold"]
+build = "build.rs"
+
+edition = '2018'
+
+[dependencies]
+rand = "0.6.1"
+libc = "0.2.45"
+time = "0.1.41"
+getopts = "0.2.18"
+term = "0.5.1"
+rust-crypto = "0.2.36"
+rustc-serialize = "0.3.24"
+dirs = "1.0.4"
+termion = "1.5.1"
+
+[features]
+default = []
+debugout = []
+no_notify = []
+no_show_dropped = []

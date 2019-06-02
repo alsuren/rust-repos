@@ -1,0 +1,36 @@
+[package]
+name = "libedgegrid"
+version = "0.1.2-pre"
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "Akamai {OPEN} EdgeGrid API Request/Response Handler"
+documentation = "http://rustyhorde.github.io/libedgegrid/libedgegrid/libedgegrid/index.html"
+homepage = "http://rustyhorde.github.io/libedgegrid"
+repository = "https://github.com/rustyhorde/libedgegrid.git"
+keywords = ["libedgegrid", "Akamai", "open", "edgegrid"]
+license = "MIT/Apache-2.0"
+build = "build.rs"
+
+[features]
+ccu = []
+default = ["ccu", "latest", "serde_codegen"]
+latest = ["sodium-sys/latest"]
+luna = []
+nightly = ["ccu", "clippy", "latest", "serde_macros"]
+
+[build-dependencies]
+glob = "~0.2.10"
+serde_codegen = { version = "~0.6.5", optional = true }
+syntex = "0.26.0"
+vergen = "0.1.0"
+
+[dependencies]
+clippy = { version = "~0.0.30", optional = true }
+curl = "0.2.16"
+log = "0.3.5"
+rustc-serialize = "~0.3.16"
+serde = "~0.6.1"
+serde_json = "~0.6.0"
+serde_macros = { version = "~0.6.5", optional = true }
+sodium-sys = "~0.0.4"
+time = "~0.1.34"
+url = { version = "~0.2.37", features = ["query_encoding"] }

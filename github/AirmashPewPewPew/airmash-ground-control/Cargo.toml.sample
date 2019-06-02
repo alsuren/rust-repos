@@ -1,0 +1,18 @@
+[package]
+name = "airmash-ground-control"
+version = "0.3.2"
+authors = ["AirmashPewPewPew"]
+edition = "2018"
+
+[dependencies]
+airmash-client = { git = "https://github.com/steamroller-airmash/airmash-client.git" }
+airmash-protocol = "0.3" 
+airmash-protocol-v5 = "0.0"
+clap = "2.32"
+env_logger = "0.6"
+futures = "0.1"
+line_drawing = "0.7"
+pathfinding = "1.1"
+log = "0.4"
+tokio = { version = "0.1", features = ["async-await-preview"] }
+url = "1.7"

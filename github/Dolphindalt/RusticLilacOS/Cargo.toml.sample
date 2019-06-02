@@ -1,0 +1,10 @@
+[package]
+name = "RusticLilacOS"
+version = "0.1.0"
+authors = ["Dalton <dolphindalt@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0"

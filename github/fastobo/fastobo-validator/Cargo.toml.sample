@@ -1,0 +1,32 @@
+[package]
+name = "fastobo-validator"
+version = "0.1.2"
+authors = ["Martin Larralde <martin.larralde@ens-paris-saclay.fr>"]
+edition = "2018"
+license = "MIT"
+description = "Faultess validation tool for OBO products"
+repository = "https://github.com/fastobo/fastobo"
+homepage = "https://github.com/fastobo/fastobo"
+readme = "README.md"
+keywords = ["obo", "ontology", "validation"]
+categories = ["science"]
+
+[badges.travis-ci]
+repository = "fastobo/fastobo-validator"
+[badges.is-it-maintained-issue-resolution]
+repository = "fastobo/fastobo-validator"
+[badges.maintenance]
+status     = "actively-developed"
+
+[dependencies]
+clap = "2.33.0"
+colored = "1.7.0"
+fastobo = "0.2.1"
+failure = "0.1.5"
+log = "0.4"
+isbn = "0.2.0"
+textwrap = "0.11.0"
+itertools = "0.8"
+
+[profile.test]
+opt-level = 1

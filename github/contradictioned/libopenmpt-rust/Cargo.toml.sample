@@ -1,0 +1,9 @@
+[package]
+name = "openmpt"
+version = "0.1.0"
+authors = ["Manuel Hoffmann <manuel@polythematik.de>"]
+
+
+[dependencies]
+libc = "0.2"
+

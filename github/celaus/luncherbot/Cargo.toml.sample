@@ -1,0 +1,17 @@
+[package]
+name = "luncherbot"
+version = "0.1.0"
+authors = ["Claus Matzinger <claus@crate.io>"]
+
+[dependencies]
+websocket = "*"
+hyper = "*"
+serde = "*"
+serde_macros = "*"
+serde_json = "*"
+serde_yaml = "0.2.5"
+chrono = "*"
+toml = "0.1"
+rand = "*"
+log4rs = { version = "*", features = ["yaml"] }
+log = "*"

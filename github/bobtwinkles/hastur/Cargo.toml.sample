@@ -1,0 +1,26 @@
+[package]
+name = "hastur"
+version = "0.2.0"
+authors = ["bobtwinkles <srkoser+github@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+fxhash = "0.2.1"
+failure = "0.1"
+log = "0.4"
+string-interner = "0.7.0"
+lazy_static = "1.0"
+im = "12"
+
+[dependencies.nom]
+version = "4.2"
+features = ["verbose-errors"]
+
+[dependencies.nom_locate]
+version = "0.3"
+features = ["verbose-errors"]
+
+[dev-dependencies]
+proptest = "0.9.2"
+pretty_assertions = "0.6.1"
+env_logger = "0.6"

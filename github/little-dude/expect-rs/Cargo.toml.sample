@@ -1,0 +1,23 @@
+[package]
+name = "expect"
+description = "An expect implementation"
+version = "0.0.1"
+authors = ["Corentin Henry <corentinhenry@gmail.com>"]
+keywords = ["expect", "tcl"]
+repository = "https://github.com/little-dude/expect-rs"
+readme = "README.md"
+license-file = "LICENSE-MIT"
+
+[dependencies]
+futures = "0.1.18"
+libc = "0.2.36"
+log = "0.4.1"
+mio = "0.6.12"
+regex = "0.2.5"
+tokio-core = "0.1.12"
+tokio-io = "0.1.4"
+tokio-proto = "0.1.1"
+tty = "0.5.0"
+
+[dev-dependencies]
+env_logger = "0.5.3"

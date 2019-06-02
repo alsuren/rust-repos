@@ -1,0 +1,21 @@
+[package]
+name = "libtock"
+version = "0.1.0"
+authors = ["Tock Project Developers <tock-dev@googlegroups.com>"]
+license = "MIT/Apache-2.0"
+edition = "2018"
+
+[dependencies]
+linked_list_allocator = "0.6.3"
+
+[dev-dependencies]
+corepack = { version = "0.4.0", default-features = false, features = ["alloc"] }
+serde = { version = "1.0.84", default-features = false, features = ["derive"] }
+
+[profile.dev]
+panic = "abort"
+lto = true
+
+[profile.release]
+panic = "abort"
+lto = true

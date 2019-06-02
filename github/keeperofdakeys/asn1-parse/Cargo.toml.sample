@@ -1,0 +1,12 @@
+[package]
+name = "asn1-parse"
+version = "0.1.0"
+authors = ["Josh <keeperofdakeys@gmail.com>"]
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+nom = "^3"
+# Use our nom for the eol patch
+# nom = { path = "../nom" }

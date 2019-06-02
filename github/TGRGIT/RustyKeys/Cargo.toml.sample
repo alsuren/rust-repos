@@ -1,0 +1,11 @@
+[package]
+name = "RustyKeys"
+version = "0.0.2"
+authors = ["Fergus Cooney <fergus@cooney.be>"]
+
+[dependencies]
+gpgme = "*"
+getopts = "*"
+rustc-serialize = "*"
+rand = "0.3"
+rpassword = "0.1"

@@ -1,0 +1,11 @@
+[package]
+name = "mvr"
+version = "0.1.0"
+authors = ["Jeremy Stucki <jeremy@myelin.ch>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33"
+nom = "4.2"
+either = "1.5"
+itertools = "0.8"

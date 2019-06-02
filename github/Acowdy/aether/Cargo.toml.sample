@@ -1,0 +1,10 @@
+[package]
+name = "aether"
+version = "0.1.0"
+authors = ["Adam Cowdy <cowdyadam@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+core-foundation = "0.6.3"
+cocoa = "0.18.4"
+objc = "0.2.6"

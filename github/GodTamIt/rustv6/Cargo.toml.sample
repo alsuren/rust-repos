@@ -1,0 +1,10 @@
+[package]
+name = "rustv6"
+version = "0.1.0"
+authors = ["Christopher Tam <ohgodtamit@gmail.com>", "Kevin Simon <kevin.simon@gmail.com>", "David Langevin <dlangevi@fb.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "~1.0"

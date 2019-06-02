@@ -1,0 +1,31 @@
+[package]
+name = "mygame"
+version = "0.1.0"
+authors = ["JadeSnail"]
+
+[features]
+profile-amethyst = ["amethyst/profiler"]
+
+[dependencies.amethyst]
+version = "0.8"
+git = "https://github.com/amethyst/amethyst"
+# branch = "develop"
+#path = "/home/sebastien/Rust/amethyst"
+
+[dependencies.amethyst-rhusics]
+version = "0.2.0"
+git = "https://github.com/amethyst/amethyst-rhusics"
+#path = "/home/sebastien/Rust/amethyst-rhusics
+
+[dependencies.shred]
+version = "0.7"
+features = ["nightly"]
+
+
+[dependencies]
+genmesh = "0.4"
+futures = "*"
+serde = "1.0"
+serde_derive ="1.0"
+enum-map = "*"
+gfx = "*"

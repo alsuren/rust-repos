@@ -1,0 +1,26 @@
+[package]
+name = "plotter-rs"
+version = "0.1.0"
+authors = ["Jonathan Nilsson"]
+
+[dependencies]
+arrayvec = "0.4.7"
+byteorder = "1"
+clamp = "0.1.0"
+glium = "0.22"
+glutin = "0.17"
+image = "0.20.0"
+imgui = "0.0.21"
+imgui-glium-renderer = "0.0.21"
+nfd = "0.0.4"
+serialport = "3"
+time = "0.1.40"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser"] }
+
+[profile.release]
+panic = "abort"
+
+[profile.dev]
+panic = "abort"

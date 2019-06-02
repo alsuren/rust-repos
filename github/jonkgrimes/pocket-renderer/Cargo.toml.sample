@@ -1,0 +1,15 @@
+[package]
+name = "pocket-renderer"
+version = "0.1.0"
+authors = ["Jon Grimes <jong@spiceworks.com>"]
+
+[dependencies]
+image = "*"
+rand = "0.3"
+
+[dev-dependencies]
+bencher = "*"
+
+[[bench]]
+name = "line"
+harness = false

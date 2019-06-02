@@ -1,0 +1,42 @@
+[package]
+name = "owo"
+version = "0.2.0"
+authors = ["Okashi <okashi@fourchin.net>", "Zeyla Hellyer <zey@zey.moe>"]
+
+[dependencies.hyper]
+optional = true
+version = "~0.11"
+
+[dependencies.hyper-tls]
+optional = true
+version = "~0.1"
+
+[dependencies.native-tls]
+optional = true
+version = "~0.1"
+
+[dependencies.reqwest]
+optional = true
+version = "~0.8"
+
+[dependencies.serde]
+optional = true
+version = "^1.0"
+
+[dependencies.serde_derive]
+optional = true
+version = "^1.0"
+
+[dependencies.serde_json]
+optional = true
+version = "^1.0"
+
+[dependencies.tokio-core]
+optional = true
+version = "~0.1"
+
+[features]
+default = ["reqwest-support"]
+hyper-support = ["hyper", "hyper-tls", "native-tls", "tokio-core"]
+reqwest-support = ["reqwest", "serde-items"]
+serde-items = ["serde", "serde_derive", "serde_json"]

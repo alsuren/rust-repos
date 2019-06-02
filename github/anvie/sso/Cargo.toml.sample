@@ -1,0 +1,27 @@
+[package]
+name = "sso-pdip"
+version = "0.1.4"
+authors = ["robin <r@nosql.asia>"]
+
+[dependencies]
+nickel = "0.9.0"
+#ldap = "*"
+#openldap = "1.1.0"
+openldap = {"path" = "lib/rust-cldap"}
+rust-crypto = "^0.2"
+rustc-serialize = "0.3"
+url = "1.2"
+log = "0.3"
+env_logger = "0.3"
+rocksdb = "0.4.1"
+toml = "0.2"
+rand = "0.3"
+time = "0.1"
+regex = "0.1"
+mustache = "*"
+# mustache = {"path" = "lib/rust-mustache"}
+
+
+[lib]
+name = "nickel_mustache"
+path = "src/nickel-mustache/lib.rs"

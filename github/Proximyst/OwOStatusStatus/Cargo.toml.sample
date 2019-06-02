@@ -1,0 +1,11 @@
+[package]
+name = "owostatusstatus"
+version = "0.1.0"
+authors = ["Mariell Hoversholm <proximyst@proximyst.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0-rc.1"
+lazy_static = "1.2"
+reqwest = "0.9"
+serde_json = "1.0"

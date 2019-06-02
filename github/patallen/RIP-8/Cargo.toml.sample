@@ -1,0 +1,11 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["Patrick Allen <prallen90@gmail.com>"]
+
+[dependencies]
+sdl2 = "*"
+rand = "0.3"
+termion = "*"
+log = "*"
+log4rs = "*"

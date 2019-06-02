@@ -1,0 +1,19 @@
+[package]
+name = "rustdt_util" ## Cargo doesn't let me rename this to "rustdt-util" 
+version = "0.2.3"
+authors = ["Bruno Medeiros <bruno.do.medeiros@gmail.com>"]
+
+description = "Utilities and common code for RustDT Rust projects"
+repository = "https://github.com/RustDT/rustdt-util"
+documentation = "https://docs.rs/rustdt-util"
+license = "Apache-2.0"
+keywords = ["rustdt"]
+
+[dependencies]
+
+[features]
+default = [ "test_utils" ]
+test_utils = []
+
+[lib]
+name = "rustdt_util"

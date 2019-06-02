@@ -1,0 +1,12 @@
+[package]
+name = "bingo_firmware"
+version = "0.1.0"
+authors = ["tyagi"]
+
+[dependencies]
+
+[profile.dev]
+lto = true
+
+[profile.release]
+lto = true

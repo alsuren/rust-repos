@@ -1,0 +1,13 @@
+[package]
+name = "semaphore"
+version = "0.4.0"
+authors = ["Sam Rijs <srijs@airpost.net>"]
+description = "Atomic/lock-free counting semaphore"
+license = "BSD-2-Clause"
+documentation = "https://docs.rs/semaphore"
+repository = "https://github.com/srijs/rust-semaphore"
+readme = "README.md"
+keywords = ["semaphore", "concurrency", "atomic"]
+
+[dependencies]
+parking_lot = "0.6"

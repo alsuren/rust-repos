@@ -1,0 +1,22 @@
+[package]
+name = "synacor"
+version = "0.1.0"
+authors = ["Joe Fredette <jfredett@gmail.com>"]
+
+# assembler to turn .synasm files to .bins
+[[bin]]
+name="syn-asm"
+path = "src/bin/assembler.rs"
+
+# disassembler to turn .bin files to .synasm
+[[bin]]
+name="syn-dis"
+path = "src/bin/disassembler.rs"
+
+# vm to run programs
+[[bin]]
+name="syn-vm"
+path = "src/bin/vm.rs"
+
+[dependencies]
+clap = "2.29.0"

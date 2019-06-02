@@ -1,0 +1,26 @@
+[package]
+name = "image-watcher"
+version = "0.0.23"
+authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = """
+A simple CLI tool.
+"""
+documentation = "https://docs.rs/image-watcher/"
+homepage = "http://efunb.com/"
+repository = "https://gitlab.com/efunb/image-watcher"
+edition = "2018"
+
+[dependencies]
+walkdir = "2.2"
+image = "0.21"
+yaml-rust = "0.4"
+read_input = "0.8"
+set-error = "1"
+file-watcher = "0.0.*"
+clap = "2.33"
+term_size = "0.3"
+
+[profile.release]
+lto = true

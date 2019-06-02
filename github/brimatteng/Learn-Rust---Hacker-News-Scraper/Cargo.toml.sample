@@ -1,0 +1,10 @@
+[package]
+name = "hacker-news-reader"
+version = "0.1.0"
+authors = ["= <=>"]
+
+[dependencies]
+colored = "*"
+select = "0.4.0"
+reqwest = "0.6.2"
+

@@ -1,0 +1,18 @@
+[package]
+name = "badlogvis"
+version = "0.3.2"
+authors = ["Dominik Winecki <dominikwinecki@gmail.com>"]
+readme = "README.md"
+
+[dependencies]
+structopt = "0.1.0"
+structopt-derive = "0.1.0"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+tempfile = "*"
+csv = "1.0.0-beta.5"
+base64 = "*"
+colored = "1.6"
+flate2 = "*"
+sha1 = "0.6.0"

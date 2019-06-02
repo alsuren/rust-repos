@@ -1,0 +1,14 @@
+[package]
+name = "alpaca"
+version = "0.1.0"
+authors = [
+  "Giovanni Cherubin <g.chers@gmail.com>",
+  "Noah Vesely <fowlslegs@riseup.net>",
+]
+
+[lib]
+name = "alpaca"
+crate-type = ["dylib"]
+
+[dependencies]
+rand = "0.4"

@@ -1,0 +1,14 @@
+[package]
+name = "store"
+version = "0.1.0"
+authors = ["shagitziganshin"]
+edition = "2018"
+
+[dependencies]
+actix = "0.8.2"
+actix-web = "1.0.0-beta.5"
+diesel = { version = "1.4.2", features = ["postgres"]}
+dotenv = "0.14.1"
+serde = "1.0.91"
+serde_derive = "1.0.91"
+serde_json = "1.0.39"

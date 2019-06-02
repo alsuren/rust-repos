@@ -1,0 +1,15 @@
+[package]
+authors = ["nasa <htilcs1115@gmail.com>"]
+edition = "2018"
+name = "contriview"
+description = "contriview"
+repository = "https://github.com/k-nasa/contriview"
+license-file = "LICENSE"
+version = "0.1.0"
+
+[dependencies]
+chrono = "0.4.6"
+clap = "2.32"
+failure = "0.1"
+reqwest = "0.9"
+scraper = "0.9"

@@ -1,0 +1,15 @@
+[package]
+
+name = "autotain"
+version = "0.0.1"
+authors = [ "Paul Cooper <p.cooper@mac.com>" ]
+
+[dependencies]
+
+reqwest = "0.8.6"
+error-chain = "0.11.0"
+env_logger = "0.5.10"
+
+[dev-dependencies]
+
+

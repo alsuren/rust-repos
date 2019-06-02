@@ -1,0 +1,21 @@
+[package]
+name = "tectonic_ruby"
+version = "0.2.0"
+authors = ["TANIGUCHI Masaya <ta2gch@gmail.com>"]
+description = """
+Tectonic binding for ruby, that is A modernized, complete, embeddable, TeX/LaTeX engine.
+"""
+homepage = "https://github.com/xtaniguchimasaya/tectonic-ruby/"
+documentation = "https://github.com/xtaniguchimasaya/tectonic-ruby/"
+repository = "https://github.com/xtaniguchimasaya/tectonic-ruby/"
+readme = "README.md"
+keywords = ["tex", "latex", "typesetting", "font", "ruby"]
+categories = ["command-line-interface", "parser-implementations", "rendering", "science", "text-processing"]
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+helix = "0.7.5"
+tectonic = "0.1.11"

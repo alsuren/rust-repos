@@ -1,0 +1,20 @@
+[package]
+name = "irust"
+version = "0.4.9"
+authors = ["Nbiba Bedis <bedisnbiba@gmail.com>"]
+edition = "2018"
+readme = "README.md"
+description = "Cross Platform Rust Repl"
+repository = "https://github.com/sigmaSd/IRust"
+license = "MIT"
+
+[dependencies]
+dirs = "1.0.5"
+
+[dependencies.crossterm]
+git = "https://github.com/sigmaSd/crossterm"
+branch = "fork"
+
+[target.'cfg(unix)'.dependencies]
+nix = "0.13.0"
+

@@ -1,0 +1,14 @@
+[package]
+
+name = "rraf"
+version = "1.0.1"
+authors = [ "vivainio@gmail.com" ]
+license = "MIT"
+description = "Rust port of Rimraf"
+homepage="https://github.com/vivainio/rraf"
+
+[dependencies]
+regex = "0.1.8"
+getopts = "0.2"
+glob = "*"
+walkdir = "0.1"

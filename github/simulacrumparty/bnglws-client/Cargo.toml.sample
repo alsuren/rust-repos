@@ -1,0 +1,12 @@
+[package]
+name = "bngl"
+version = "0.1.0"
+authors = ["Dylan Baker"]
+edition = "2018"
+
+[dependencies]
+chrono = { version = "0.4.6", features = ["serde"] }
+clap = "2.33.0"
+reqwest = "0.9.16"
+serde = { version = "1.0.90", features = ["derive"] }
+serde_json = "1.0"

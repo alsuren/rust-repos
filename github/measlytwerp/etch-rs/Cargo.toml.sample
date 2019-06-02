@@ -1,0 +1,14 @@
+[package]
+name = "etch"
+description = "Not just a text formatter, don't mark it down, etch it."
+version = "0.1.0"
+edition = "2018"
+authors = ["Measly Twerp <the@measlytwerp.live>"]
+keywords = ["etch"]
+categories = ["text-processing"]
+repository = "https://github.com/measlytwerp/etch-rs"
+license = "MIT"
+
+[dependencies]
+glue = "0.6"
+syntect = "3"

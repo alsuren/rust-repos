@@ -1,0 +1,13 @@
+[package]
+name = "genmei"
+version = "0.1.0"
+authors = ["abhijeetbhagat"]
+
+[dependencies]
+serde="*"
+serde_json="*"
+serde_derive="*"
+hyper="*"
+futures="*"
+tokio-core="*"
+erased-serde="*"

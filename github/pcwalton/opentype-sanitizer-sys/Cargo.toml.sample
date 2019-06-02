@@ -1,0 +1,8 @@
+[package]
+name = "opentype-sanitizer-sys"
+version = "0.1.0"
+authors = ["Patrick Walton <pcwalton@mimiga.net>"]
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.29"

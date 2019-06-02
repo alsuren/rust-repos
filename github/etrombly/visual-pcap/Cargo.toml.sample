@@ -1,0 +1,12 @@
+[package]
+name = "visual-pcap"
+version = "0.1.0"
+authors = ["Eric Trombly <etrombly@yahoo.com>"]
+edition = "2018"
+
+[dependencies]
+pcap = "0.7.0"
+pnet = "0.22.0"
+amethyst = "0.10.0"
+libc = "0.2.50"
+chrono = "0.4.6"

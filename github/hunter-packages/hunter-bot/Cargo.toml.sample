@@ -1,0 +1,21 @@
+[package]
+name = "hunter-bot"
+version = "0.1.0"
+authors = ["Cyberunner23 <narutoxela@gmail.com>"]
+
+[dependencies]
+chrono     = "0.2"
+clap       = "*"
+hyper      = "*"
+iron       = "*"
+log        = "0.3"
+rand       = "*"
+regex      = "*"
+serde      = "*"
+serde_json = "*"
+thread-id  = "2.0.0"
+toml       = "*"
+
+[dependencies.openssl]
+version = "*"
+features = ["hmac"]

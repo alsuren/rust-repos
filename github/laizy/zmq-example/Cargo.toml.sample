@@ -1,0 +1,35 @@
+[package]
+name = "zmq-learn"
+version = "0.1.0"
+authors = ["laizy"]
+
+[[bin]]
+name = "helloclient"
+path = "./src/01hello/client.rs"
+
+[[bin]]
+name = "helloserver"
+path = "./src/01hello/server.rs"
+
+[[bin]]
+name = "pub"
+path = "./src/02pubsub/pub.rs"
+
+[[bin]]
+name = "sub"
+path = "./src/02pubsub/sub.rs"
+
+[[bin]]
+name = "pubsubtest"
+path = "./src/03pubsubtest/pubsub.rs"
+
+[[bin]]
+name = "pullpush"
+path = "./src/04pullpush/pullpush.rs"
+
+[dependencies]
+rand = "*"
+
+[dependencies.zmq]
+version = "0.8"
+default-features = false

@@ -1,0 +1,14 @@
+[package]
+name = "imageviewer"
+version = "0.1.0"
+authors = ["CrazyMerlyn <crazy.d.merlyn@gmail.com>"]
+
+[dependencies]
+gdk-pixbuf="*"
+gdk = "*"
+log = "*"
+
+[dependencies.gtk]
+version = "0.1.1"
+features = ["v3_16"]
+

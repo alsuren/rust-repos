@@ -1,0 +1,27 @@
+[package]
+name = "smdf-client"
+version = "0.1.0"
+description = "SMDF Client"
+license = "Apache-2.0 with Commons Clause"
+authors = ["Dan Aharon <dan@danielaharon.com>"]
+edition = "2018"
+include = [
+    "LICENSE",
+    "README.md",
+    "Cargo.toml",
+    "/src/**/*.rs",
+]
+
+[dependencies]
+log = "0.4.6"
+simplelog = "0.5.3"
+clap = "2.33.0"
+ctrlc = { version = "3.1.2", features = ["termination"] }
+rusoto_core = "0.38.0"
+rusoto_sqs = "0.38.0"
+rusoto_ssm = "0.38.0"
+rusoto_lambda = "0.38.0"
+serde = "1.0.90"
+serde_derive = "1.0.90"
+serde_json = "1.0.39"
+chrono = { version = "0.4.6", features = ["serde"] }

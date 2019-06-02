@@ -1,0 +1,50 @@
+[package]
+name = "iana"
+version = "0.1.0"
+authors = ["luozijun <luozijun.assistant@gmail.com>"]
+
+
+[[bin]]
+name = "sync"
+path = "src/bin/sync.rs"
+required-features = ["sync"]
+
+[[bin]]
+name = "parse"
+path = "src/bin/parse.rs"
+required-features = ["parse"]
+
+[[bin]]
+name = "lookup"
+path = "src/bin/lookup.rs"
+required-features = [ ]
+
+
+[dependencies]
+log = "0.4"
+env_logger = "0.5"
+
+clap = { version = "2.29", optional = true }
+futures = { version = "0.1", optional = true }
+tokio-core = { version = "0.1", optional = true }
+hyper = { version = "0.11", optional = true }
+hyper-tls = { version = "0.1", optional = true }
+
+[dependencies.smoltcp]
+git = "https://github.com/m-labs/smoltcp.git"
+branch = "master"
+default-features = false
+features = [
+    "std", "log",
+    "proto-ipv4", "proto-ipv6",
+    # "socket-raw", "socket-icmp", "socket-udp", "socket-tcp"
+]
+optional = true
+
+[dev-dependencies]
+rand = "0.4"
+
+[features]
+sync  = [ "clap", "smoltcp", "futures", "tokio-core", "hyper", "hyper-tls" ]
+parse = [ "clap", "smoltcp" ]
+default = [ ]

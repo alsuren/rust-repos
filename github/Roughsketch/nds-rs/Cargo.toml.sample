@@ -1,0 +1,11 @@
+[package]
+name = "nds_rs"
+version = "0.1.0"
+authors = ["Maid Dog <maiddogsrl@gmail.com>"]
+
+[dependencies]
+clap = "2.32"
+failure = "0.1"
+
+[dependencies.nds]
+path = "../nds"

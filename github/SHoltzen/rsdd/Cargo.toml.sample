@@ -1,0 +1,32 @@
+[package]
+name = "ddrs"
+version = "0.1.0"
+authors = ["Steven Holtzen <sholtzen@gmail.com>"]
+
+[lib]
+name = "ddrs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ddrs-bin"
+path = "src/main.rs"
+
+[[bin]]
+name = "ddrs-bench"
+path = "src/bench/bench.rs"
+
+[dependencies]
+fnv = "1.0.3"
+rand = "0.3.18"
+twox-hash = "1.1.0"
+clap = "2.28"
+quickersort = "3.0"
+dimacs = "0.2.0"
+fasthash = "0.2"
+pretty = "0.3.3"
+num = "0.1.41"
+maplit = "1.0.1"
+
+
+[profile.release]
+debug = true

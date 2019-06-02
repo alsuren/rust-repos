@@ -1,0 +1,20 @@
+[package]
+name = "vasputils"
+version = "0.0.3"
+authors = ["KeisukeYamashita <19yamashita15@gmail.com>"]
+categories = ["command-line-utilities"]
+homepage = "https://github.com/KeisukeYamashita/vasputils"
+description = "A useful VASP tools to help your research accelerate"
+license = "MIT"
+
+[[bin]]
+name = "vasputils"
+path = "src/app.rs"
+
+[dependencies]
+clap = "2"
+reqwest = "*"
+dirs = "1.0"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"

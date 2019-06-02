@@ -1,0 +1,20 @@
+[package]
+name = "discotech"
+description = "The best way to meet your service"
+version = "0.0.3"
+authors = [
+  "Tyler Neely <t@jujit.su>",
+  "Steve Salevan <steve.salevan@gmail.com>"
+]
+license = "Apache-2.0"
+
+[[test]]
+name = "test"
+path = "test/mod.rs"
+
+[dependencies]
+discotech_zookeeper = "0.1.0"
+log = "0.3"
+log4rs = "0.3"
+mio = "0.3.0"
+rustc-serialize = "0.3"

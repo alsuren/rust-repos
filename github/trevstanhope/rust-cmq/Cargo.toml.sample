@@ -1,0 +1,11 @@
+[package]
+
+name = "cmq"
+version = "0.0.1"
+authors = ["trevor"]
+
+[dependencies.color]
+git = "https://github.com/bjz/color-rs.git"
+
+[dependencies]
+time = "*"

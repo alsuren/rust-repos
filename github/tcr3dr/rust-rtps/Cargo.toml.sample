@@ -1,0 +1,15 @@
+[package]
+name = "dds"
+version = "0.1.0"
+authors = ["Tim Ryan <id@timryan.org>"]
+description = "Implementation of DDS, someday"
+license = "MIT"
+
+[dependencies]
+rustc-serialize = "0.3"
+mio = "0.4.0"
+log = "0.3.2"
+
+[lib]
+name = "dds"
+crate-type = ["dylib"]

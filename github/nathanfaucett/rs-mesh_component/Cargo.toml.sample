@@ -1,0 +1,31 @@
+[package]
+name = "mesh_component"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["mesh", "component", "renderer"]
+description = "mesh component and renderers"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-mesh.git"
+homepage = "https://github.com/nathanfaucett/rs-mesh"
+
+[dependencies]
+vector = {git = "https://github.com/nathanfaucett/rs-vector.git"}
+collection = {git = "https://github.com/nathanfaucett/rs-collection.git"}
+stack = {git = "https://github.com/nathanfaucett/rs-stack.git"}
+remove = {git = "https://github.com/nathanfaucett/rs-remove.git"}
+hash_map = {git = "https://github.com/nathanfaucett/rs-hash_map.git"}
+
+geometry = {git = "https://github.com/nathanfaucett/rs-geometry.git"}
+
+material = {git = "https://github.com/nathanfaucett/rs-material.git"}
+shader = {git = "https://github.com/nathanfaucett/rs-shader.git"}
+
+shared = {git = "https://github.com/nathanfaucett/rs-shared.git"}
+
+scene_renderer = {git = "https://github.com/nathanfaucett/rs-scene_renderer.git"}
+scene_graph = {git = "https://github.com/nathanfaucett/rs-scene_graph.git"}
+
+gl_geometry = {git = "https://github.com/nathanfaucett/rs-gl_geometry.git"}
+gl_context = {git = "https://github.com/nathanfaucett/rs-gl_context.git"}

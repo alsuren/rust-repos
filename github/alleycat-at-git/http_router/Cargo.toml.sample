@@ -1,0 +1,31 @@
+[package]
+name = "http_router"
+version = "0.1.0"
+authors = ["Alexey Karasev <karasev.alexey@gmail.com>"]
+readme = "README.md"
+description = "A simple yet expressive router for http requests, abstract enough to be used with any http library on stable Rust"
+keywords = ["router", "http", "hyper"]
+repository = "https://github.com/alleycat-at-git/http_router"
+license = "MIT"
+documentation = "https://docs.rs/http_router"
+
+include = [
+  "Cargo.toml",
+  "LICENSE",
+  "src/**/*"
+]
+
+[lib]
+doctest = false
+
+[features]
+default = ["with_hyper"]
+with_hyper = ["hyper"]
+
+[dependencies]
+regex = "1"
+lazy_static = "1"
+hyper = {version = ">= 0.12", optional = true}
+
+[dev-dependencies]
+rand = "0.5.5"

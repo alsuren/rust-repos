@@ -1,0 +1,10 @@
+[package]
+name = "raytrace"
+version = "0.1.0"
+authors = ["Daniel Rivas Perez <drivas12@googlemail.com>"]
+edition = "2018"
+
+[dependencies]
+rayon = "1.0"
+rand = "0.6"
+image = "0.21"

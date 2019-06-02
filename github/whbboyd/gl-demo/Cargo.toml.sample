@@ -1,0 +1,16 @@
+[package]
+name = "gl-demo"
+version = "0.0.1"
+authors = ["Will Boyd <whboyd@wesleyan.edu>"]
+
+[dependencies]
+error-chain = { version = "0.8", default-features = false }
+glium = "*"
+# Image 0.12+ depends on too new a version of Rust. We're using rustc 1.12.
+# (This was determined by trial and error, so way to go everyone involved for not documenting this stuff.)
+image = "0.11"
+time = "*"
+wavefront_obj = "*"
+
+log = "*"
+env_logger = "*"

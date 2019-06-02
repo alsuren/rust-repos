@@ -1,0 +1,22 @@
+[package]
+name = "kv-raft"
+version = "0.1.0"
+authors = ["yuwolf <wujy.cs@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1.16"
+grpcio = "0.4.0"
+protobuf = "2.0.2"
+bincode = "1.0.0"
+serde = "1.0"
+serde_derive = "1.0.0"
+
+[dependencies.raft]
+git = "https://github.com/pingcap/raft-rs.git"
+
+[dependencies.rocksdb]
+git = "https://github.com/pingcap/rust-rocksdb.git"
+
+[build-dependencies]
+protoc-grpcio = "*"

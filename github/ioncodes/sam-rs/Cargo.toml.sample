@@ -1,0 +1,8 @@
+[package]
+name = "sam"
+version = "0.1.0"
+authors = ["ion <ionix@protonmail.com>"]
+
+[lib]
+crate-type = [ "dylib" ]
+plugin = true

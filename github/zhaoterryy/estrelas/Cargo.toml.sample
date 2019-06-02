@@ -1,0 +1,13 @@
+[package]
+name = "estrelas"
+version = "0.1.0"
+authors = ["unite"]
+
+[dependencies]
+num = "*"
+time = "*"
+bitflags = "*"
+estrelas_math = { path = "estrelas_math" }
+
+[dependencies.lua]
+git = "https://github.com/jcmoyer/rust-lua53"

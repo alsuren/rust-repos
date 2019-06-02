@@ -1,0 +1,10 @@
+[package]
+name = "diff_to_files"
+version = "0.1.0"
+authors = ["Tommaso Checchi <tommaso.checchi1@gmail.com>"]
+
+[dependencies]
+clap = "*"
+regex = "*"
+regex_macros = "*"
+uuid = "*"

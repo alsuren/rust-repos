@@ -1,0 +1,19 @@
+[package]
+name = "fluids"
+version = "0.1.0"
+authors = ["hargados <hargados@tcd.ie>"]
+
+[dependencies]
+glium = "0.22.0"
+scoped_threadpool = "0.1.9"
+lodepng = "2.4.2"
+
+
+[profile.dev]
+debug = true   
+
+[profile.bench]
+opt-level = 3
+
+[profile.test]
+opt-level = 3

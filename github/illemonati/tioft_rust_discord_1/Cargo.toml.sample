@@ -1,0 +1,30 @@
+[package]
+name = "tioft_rust_discord_1"
+version = "0.1.0"
+authors = ["illemonati"]
+
+[dependencies]
+# serenity = "0.5"
+find_folder="0.3"
+reqwest = "0.9.5"
+select = "0.4.2"
+qrcode-generator = "1.0.3"
+barcoders = {git="https://github.com/buntine/barcoders.git", features = ["image"]}
+regex = "1.1.0"
+
+[dependencies.serenity]
+git = "https://github.com/illemonati/serenity"
+default-features = false
+features = [
+    # "builder",
+    "client",
+    # "framework",
+    # "gateway",
+    # "http",
+    "model",
+    # "standard_framework",
+    # "utils",
+    # "cache",
+    # "voice",
+]
+version = "0.5"

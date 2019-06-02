@@ -1,0 +1,11 @@
+[package]
+name = "basmap"
+version = "0.6.2"
+authors = ["Andrew Buntine Of Doom <info@bunts.io>"]
+
+[dependencies]
+getopts = "0.2"
+hyper = "0.6"
+xml-rs = "0.2"
+ansi_term = "*"
+flate2 = "0.2"

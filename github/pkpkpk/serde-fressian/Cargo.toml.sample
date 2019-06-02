@@ -1,0 +1,41 @@
+[package]
+name = "serde-fressian"
+version = "0.1.1"
+authors = ["Pat Killean <pat.killean@gmail.com>"]
+description = "Fressian for rust/wasm"
+keywords = [
+    "clojure",
+    "clojurescript",
+    "wasm"
+]
+license = "MIT"
+readme = "./README.md"
+repository = "https://github.com/pkpkpk/serde-fressian"
+edition = "2018"
+
+[dependencies]
+serde = "1.0.82"
+serde_derive = "1.0.82"
+
+serde_bytes = "0.10.4"
+itertools = "0.7.3"
+byteorder = "1.2.3"
+ordered-float = {version= "0.5", features = ["serde"]}
+shrinkwraprs = "0.2.0"
+# chrono = "0.4"
+uuid = {version = "0.6", optional = true }
+regex = {version = "1", optional = true }
+url = {version = "1.7.1", optional = true }
+
+[dev-dependencies]
+# quickcheck = "0.5.0"
+maplit = "1.0.1"
+
+[profile.release]
+debug = true
+
+[features]
+default = []
+use_regex_crate = ["regex"]
+use_uuid_crate = ["uuid"]
+use_url_crate = ["url"]

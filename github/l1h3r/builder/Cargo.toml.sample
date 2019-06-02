@@ -1,0 +1,8 @@
+[package]
+name = "builder"
+version = "0.1.0"
+authors = ["l1h3r <devin.turner09@gmail.com>"]
+
+[dependencies]
+strfmt = "0.1.6"
+walkdir = "2.1.4"

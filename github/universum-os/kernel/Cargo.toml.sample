@@ -1,0 +1,10 @@
+[package]
+name = "universum-kernel"
+version = "0.1.0"
+authors = ["Michael Zaversnik <Michael.Zaversnik@studmail.w-hs.de>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+universum-boot = { git = "https://github.com/universum-os/boot.git" }
+universum-framebuffer = { git = "https://github.com/universum-os/framebuffer.git" }

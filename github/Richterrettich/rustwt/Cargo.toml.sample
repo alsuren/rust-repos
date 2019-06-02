@@ -1,0 +1,24 @@
+[package]
+name = "rustwt"
+version = "1.0.1"
+authors = ["René Richter <richterrettich@gmail.com>"]
+license = "Apache-2.0"
+
+homepage = "https://github.com/Richterrettich/rustwt"
+repository = "https://github.com/Richterrettich/rustwt"
+documentation = "https://docs.rs/rustwt/"
+
+description = "Implementation of JSON JWT"
+keywords = ["jwt", "json", "token", "encryption", "auth0-jwt"]
+readme = "README.md"
+
+[dependencies]
+time = "~0.1.37"
+openssl = "~0.9.12"
+
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+base64 = "0.6"
+uuid = { version = "0.5", features = ["serde", "v4"] }
+

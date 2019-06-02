@@ -1,0 +1,40 @@
+[package]
+name = "tokio-file"
+version = "0.5.1-pre"
+authors = ["Alan Somers <asomers@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/asomers/tokio-file"
+description = """
+Asynchronous file I/O for Tokio
+"""
+categories = ["asynchronous", "filesystem"]
+documentation = "https://asomers.github.io/tokio-file/tokio_file/"
+
+[dependencies]
+futures = "0.1.10"
+mio = "0.6.13"
+nix = "0.12.0"
+mio-aio = "0.4.0"
+tokio-reactor = "0.1.6"
+
+[dev-dependencies]
+divbuf = "0.2.0"
+futures = "0.1"
+galvanic-test = "0.1.5"
+getopts = "0.2"
+sysctl = "0.1"
+tempdir = "0.3"
+tokio = "0.1.6"
+
+[[test]]
+name = "functional"
+path = "tests/file.rs"
+
+[[test]]
+name = "lio_listio_incomplete"
+path = "tests/lio_listio_incomplete.rs"
+
+[[test]]
+name = "aio_write_eagain"
+path = "tests/aio_write_eagain.rs"

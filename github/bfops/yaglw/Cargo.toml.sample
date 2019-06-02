@@ -1,0 +1,28 @@
+[package]
+name = "yaglw"
+version = "0.0.0"
+authors = [
+    "Clark Gaebel <cg.wowus.cg@gmail.com>",
+    "Ben Foppa <benjamin.foppa@gmail.com>",
+  ]
+
+[lib]
+name = "yaglw"
+path = "src/lib.rs"
+
+[dependencies]
+gl = "0.5.*"
+log = "*"
+num = "*"
+libc = "0.2"
+
+[[example]]
+name = "triangle"
+path = "examples/triangle.rs"
+
+[[example]]
+name = "framebuffer"
+path = "examples/framebuffer.rs"
+
+[dev-dependencies.sdl2]
+git = "https://github.com/AngryLawyer/rust-sdl2"

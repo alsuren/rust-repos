@@ -1,0 +1,19 @@
+[package]
+name = "rusted"
+version = "0.1.0"
+authors = ["Sergey Pashinin <sergeypashinin@gmail.com>"]
+
+
+# [[bin]]
+# name = "rusted"
+# path = "src/main.rs"
+
+[dependencies]
+glium = "*"
+# conrod = "*"
+# find_folder = "*"
+# piston_window = "*"
+# cpython = { git = "https://github.com/dgrunwald/rust-cpython.git" }
+
+# [dependencies.kiss-ui]
+# git = "https://github.com/cybergeek94/kiss-ui"

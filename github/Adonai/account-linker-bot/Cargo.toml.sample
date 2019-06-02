@@ -1,0 +1,34 @@
+[package]
+name = "account_linker_bot"
+version = "0.1.0"
+authors = ["Kanedias <kanedias@xaker.ru>"]
+
+[dependencies]
+# db
+diesel = { version = "0.15.0", features = ["sqlite", "chrono"] }
+diesel_codegen = { version = "0.15.0", features = ["sqlite"] }
+# logging
+log = "0.3"             # log facade
+log4rs = "0.7.0"        # log impl
+# http
+reqwest = "0.7.0"
+select = "0.4.2"        # http parsing
+# config
+config = { version = "0.7.0", features = ["yaml"] }
+# JSON serialization
+serde = "1.0"           
+serde_derive = "1.0"
+serde_json = "1.0"
+
+# utils
+chrono = { version = "0.4", features = ["serde", "rustc-serialize"] }
+derive-new = "0.5"      # generate ::new
+derive-error = "0.0.3"  # generate From for Errors
+crossbeam = "0.3.0"     # scoped thread spawning
+lazy_static = "0.2"     # lazy static global variables
+uuid = { version = "0.4", features = ["serde", "v4"] }
+
+[features]
+default = [ "linux-org-ru" ]
+
+linux-org-ru = []

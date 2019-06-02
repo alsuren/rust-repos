@@ -1,0 +1,12 @@
+[package]
+name = "swan-ag"
+version = "0.1.0"
+authors = ["Christopher Chin <ctchin13@gmail.com>"]
+
+[dependencies]
+argparse = "*"
+input = { path = "/home/yutoo/input.rs" }
+libudev-sys = "*"
+libc = "*"
+nix = "*"
+time = "*"

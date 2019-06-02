@@ -1,0 +1,21 @@
+[package]
+name = "hello-rs"
+description = "A command-line tool to submit links to various social platforms"
+documentation = "https://github.com/hello-rust/hello"
+homepage = "https://github.com/hello-rust/hello"
+license = "MIT OR Apache-2.0"
+version = "0.1.0"
+authors = ["Matthias Endler <matthias-endler@gmx.net>"]
+
+[dependencies]
+rawr = { path = "rawr", version="0.2.0" }
+failure = "0.1.2"
+dotenv = "0.13.0"
+dotenv_codegen = "0.11.0"
+structopt = "0.2.10"
+egg-mode = "0.12.0"
+rustc-serialize = "0.3.24"
+tokio-core = "0.1.17"
+fantoccini = "0.10.0"
+futures = "0.1.23"
+slack_api = "0.20.0"

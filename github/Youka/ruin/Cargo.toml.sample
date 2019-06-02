@@ -1,0 +1,26 @@
+[package]
+name = "ruin"
+description = "Rust graphical user interface (native)"
+version = "0.1.0"
+authors = ["Youka"]
+repository = "https://github.com/Youka/ruin"
+readme = "README.md"
+license = "MIT"
+
+publish = false
+keywords = ["ruin", "gui", "native"]
+categories = ["gui", "rendering"]
+
+build = "build.rs"
+
+[lib]
+doctest = false
+crate-type = ["rlib"]
+
+[profile.release]
+panic = 'abort'
+
+[features]
+default = ["utils", "gui"]
+utils = []
+gui = ["utils"]

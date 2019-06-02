@@ -1,0 +1,17 @@
+[package]
+name = "try-actix-web"
+version = "0.1.0"
+authors = ["Nikita Sivakov <sivakov512@gmail.com>"]
+
+description = "Sample application written by actix-web tutorial"
+repository = "https://github.com/sivakov512/try-actix-web"
+readme = "README.md"
+license = "MIT"
+
+publish = false
+
+[dependencies]
+actix-web = "0.7"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"

@@ -1,0 +1,11 @@
+[package]
+name = "game"
+version = "0.1.0"
+authors = ["Paul Tilley <ptilley1@binghamton.edu>"]
+
+[dependencies]
+
+[dependencies.sdl2]
+version = "0.31.0"
+default-features = false
+features = ["image"]

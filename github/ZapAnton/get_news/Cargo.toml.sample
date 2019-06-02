@@ -1,0 +1,8 @@
+[package]
+name = "get_news"
+version = "0.1.0"
+authors = ["zapolskyNB"]
+
+[dependencies]
+reqwest = "0.8.5"
+quick-xml = "0.12.1"

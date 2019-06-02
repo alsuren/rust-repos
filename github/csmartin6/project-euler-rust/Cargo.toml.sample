@@ -1,0 +1,13 @@
+[package]
+name = "project-euler"
+version = "0.1.0"
+authors = ["Chris Martin <cmartin@palantir.com>"]
+
+[dependencies]
+problems = {path = "problems"}
+utils = {path = "utils"}
+
+itertools = "0.4.9"
+
+[profile.release]
+debug = true

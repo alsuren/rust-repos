@@ -1,0 +1,30 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "An implementation of RFC7519 JSON Web Token (JWT)"
+documentation = "https://docs.rs/twist-jwt"
+homepage = "https://rustyhorde.github.io/twist/"
+keywords = ["twist", "jwt"]
+license = "MIT/Apache-2.0"
+name = "twist-jwt"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/twist-jwt"
+version = "0.3.1"
+
+[dependencies]
+base64 = "0.4.0"
+bitflags = "0.8.0"
+byteorder = "1.0.0"
+serde = "0.9.11"
+serde_derive = "0.9.11"
+serde_json = "0.9.9"
+slog = "2.0.0-2.0"
+twist = "0.7.1"
+untrusted = "0.3.2"
+
+[dependencies.chrono]
+features = ["serde"]
+version = "0.3.0"
+
+[dependencies.ring]
+features = ["rsa_signing"]
+version = "0.7.1"

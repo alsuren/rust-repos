@@ -1,0 +1,11 @@
+[package]
+name = "slack-indexer"
+version = "0.1.0"
+authors = ["Andreas Marienborg <omega@palle.net>"]
+[dependencies]
+iron = "*"
+postgres = "0.8"
+regex = "0.1.38"
+router = "*"
+rustc-serialize = "*"
+urlencoded = "*"

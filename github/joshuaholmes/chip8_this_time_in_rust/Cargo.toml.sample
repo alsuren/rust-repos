@@ -1,0 +1,8 @@
+[package]
+name = "chip8_this_time_in_rust"
+version = "0.1.0"
+authors = ["Joshua Holmes <JoshuaDanielHolmes1991@gmail.com>"]
+
+[dependencies]
+rand = "0.3.14"
+sdl2 = "0.19"

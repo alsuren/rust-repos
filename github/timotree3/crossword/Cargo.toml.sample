@@ -1,0 +1,12 @@
+[package]
+name = "crossword"
+version = "0.1.0"
+authors = ["timotree3 <timorcb@gmail.com>"]
+
+[dependencies]
+serenity = "0.4.1"
+chrono = "0.4.0"
+chrono-tz = "0.4.0"
+error-chain = "0.11.0"
+log = "0.3.8"
+env_logger = "0.4.3"

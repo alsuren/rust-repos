@@ -1,0 +1,31 @@
+[package]
+authors = ["alex <acdenissk69@gmail.com>", "Zeyla Hellyer <zey@zey.moe>"]
+description = "Serenity HTTP functionality, for the Discord API."
+documentation = "https://docs.rs/serenity-http"
+homepage = "https://github.com/serenity-rs/http"
+keywords = ["api", "discord", "serenity"]
+license = "ISC"
+name = "serenity-http"
+readme = "README.md"
+repository = "https://github.com/serenity-rs/http.git"
+version = "0.1.0"
+
+[dependencies]
+chrono = "~0.4"
+hyper = "~0.10"
+hyper-native-tls = "~0.2.4"
+lazy_static = "~0.2"
+log = "~0.3"
+native-tls = "~0.1"
+parking_lot = "~0.5"
+serde_json = "^1.0"
+serenity-model = { git = "https://github.com/serenity-rs/model.git" }
+
+[dependencies.serenity-common]
+features = ["serde_json"]
+git = "https://github.com/serenity-rs/common.git"
+
+[dependencies.multipart]
+default-features = false
+features = ["client", "hyper", "safemem"]
+version = "0.13"

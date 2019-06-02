@@ -1,0 +1,10 @@
+[package]
+name = "rust-kb"
+version = "0.1.0"
+authors = ["Christopher Kober <ChristopherKober@users.noreply.github.com>",
+           "Eric Hao <brotatotes@gmail.com>",
+           "Adam He <ah29954@gmail.com>"]
+
+[dependencies]
+nom = "^4.0"
+weak-table = "^0.2.2"

@@ -1,0 +1,22 @@
+[package]
+name = "snakes"
+version = "0.1.0"
+authors = ["Felice Serena <felice@serena-mueller.ch>"]
+edition = "2018"
+
+[lib]
+name = "gridsnakes"
+path = "src/grid/lib.rs"
+
+[[bin]]
+name = "play"
+path = "src/play/main.rs"
+
+[[bin]]
+name = "learn"
+path = "src/learn/main.rs"
+
+[dependencies]
+termion = "1.5.1"
+rand = "0.6.4"
+clap = "2"

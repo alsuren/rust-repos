@@ -1,0 +1,16 @@
+[package]
+name = "darkcrawl"
+version = "0.1.0"
+authors = ["Phoomparin Mano <work@phoom.in.th>"]
+
+[dependencies]
+select = "*"
+reqwest = "*"
+scraper = "*"
+error-chain = "*"
+fern = {version = "*", features = ["colored"]}
+colored = "*"
+chrono = "*"
+log = "0.4"
+crossbeam = "0.3.0"
+

@@ -1,0 +1,12 @@
+[package]
+name = "creepingdespair"
+version = "0.1.0"
+authors = ["Henry Carlson <henry.carlson@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+piston = "0.40.0"
+piston2d-graphics = "0.29.0"
+piston2d-opengl_graphics = "0.58.0"
+pistoncore-glutin_window = "0.52.0"
+specs = "0.14.3"

@@ -1,0 +1,27 @@
+[package]
+name = "smlang"
+categories = ["embedded", "no-std"]
+authors = ["Emil Fresk <emil.fresk@gmail.com>"]
+description = "A no-std state machine language DSL"
+keywords = ["dsl", "statemachine"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/korken89/smlang-rs"
+version = "0.1.2"
+edition = "2018"
+readme = "README.md"
+
+[lib]
+name = "smlang"
+
+[badges]
+travis-ci = { repository = "korken89/smlang-rs", branch = "master" }
+
+[dependencies]
+smlang-macros = { path = "macros", version = "0.1.1" }
+
+[profile.release]
+codegen-units = 1
+lto = true
+
+[workspace]
+members = ["macros"]

@@ -1,0 +1,24 @@
+[package]
+name = "ubuntu-package-search"
+version = "0.1.0"
+authors = ["Justin Turpin <ionstream@gmail.com>"]
+
+[dependencies]
+gotham = "0.3.0"
+gotham_derive = "*"
+
+hyper = "*"
+mime = "*"
+
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+
+reqwest = "*"
+futures = "*"
+rusqlite = "*"
+
+tera = "*"
+lazy_static = "1.1.0"
+
+flate2 = "*"

@@ -1,0 +1,8 @@
+[package]
+name = "cs3012-1"
+version = "0.1.0"
+authors = ["Ebin Benny <bennye@tcd.ie>"]
+
+[dependencies]
+pathfinding = "1.0"
+petgraph = "0.4.13"

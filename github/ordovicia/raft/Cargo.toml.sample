@@ -1,0 +1,8 @@
+[package]
+name = "raft"
+version = "0.1.0"
+authors = ["Hidehito Yabuuchi <hdht.ybuc@gmail.com>"]
+
+[dependencies]
+failure = "0.1.1"
+rand = "0.5.0"

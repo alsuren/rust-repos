@@ -1,0 +1,9 @@
+[package]
+name = "webcomponent-rs"
+version = "0.1.0"
+authors = ["Pearce Keesling <keeslinp@gmail.com>"]
+
+[dependencies]
+stdweb = "0.4.6"
+uuid = { version = "0.6.3", features = ["serde", "v4"] }
+nanoid = "0.2.0"

@@ -1,0 +1,13 @@
+[package]
+name = "infobot"
+version = "0.1.0"
+authors = ["AregevDev <aregevdev@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serenity = "0.5.13"
+chrono = "0.4.6"
+serde = { version = "1.0.90", features = ["derive"] }
+toml = "0.5.0"
+log = "0.4.6"
+simple_logger = "1.0.1"

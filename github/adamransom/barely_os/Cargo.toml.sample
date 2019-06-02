@@ -1,0 +1,10 @@
+[package]
+name = "barelyos"
+version = "0.1.0"
+authors = ["Adam Ransom"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.release]
+panic = "abort"

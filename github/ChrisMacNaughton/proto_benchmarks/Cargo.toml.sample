@@ -1,0 +1,36 @@
+[package]
+name = "proto_benchmarks"
+version = "0.1.0"
+authors = ["Chris MacNaughton <chris@centaurisolutions.nl>"]
+build = "build.rs"
+
+[dependencies]
+protobuf = "*"
+capnp = "*"
+
+[build-dependencies]
+capnpc = "*"
+protobuf-codegen-pure = "~2"
+
+[dev-dependencies]
+criterion = "0.1.2"
+
+[[bench]]
+name = "basic_read"
+harness = false
+
+[[bench]]
+name = "complex_read"
+harness = false
+
+[[bench]]
+name = "basic_write"
+harness = false
+
+[[bench]]
+name = "complex_write"
+harness = false
+
+[[bench]]
+name = "complex_build"
+harness = false

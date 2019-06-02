@@ -1,0 +1,10 @@
+[package]
+name = "irontray"
+version = "0.1.0"
+authors = ["Guillaume Pasquet <dev@etenil.net>"]
+
+[dependencies]
+getopts = "0.2"
+toml = "0.1"
+log = "0.3"
+syslog = "~3.1.0"

@@ -1,0 +1,17 @@
+[package]
+name = "rune"
+version = "0.1.0"
+authors = ["Alexander von Gluck IV <kallisti5@unixzen.com>"]
+license = "MIT"
+
+[dependencies]
+mbr = "*"
+getopts = "*"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+reqwest = "*"
+url = "*"
+fatfs = "0.2.0"
+itertools = "0.5.9"
+indicatif = "*"

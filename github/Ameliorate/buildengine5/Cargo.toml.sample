@@ -1,0 +1,28 @@
+[package]
+authors = ["Amelorate <ameilorate2@gmail.com>"]
+description = "Provides a game engine for byond-like tile based games like Space Station 13."
+homepage = "http://buildstation.proboards.com/"
+license = "MIT"
+name = "buildengine5"
+readme = "README.md"
+repository = "https://github.com/Ameliorate/buildengine5"
+version = "0.2.0"
+
+[[bin]]
+name = "buildengine5bin"
+path = "src/bin.rs"
+
+[dependencies]
+bincode = "0.5.4"
+byteorder = "0.5.1"
+either = "0.1.6"
+env_logger = "0.3.3"
+hlua = "0.1.8"
+lazy_static = "0.2.0"
+log = "0.3.6"
+serde = "0.7.0"
+serde_macros = "0.7.2"
+
+[lib]
+name = "buildengine5lib"
+path = "src/lib.rs"

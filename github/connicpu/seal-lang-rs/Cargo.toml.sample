@@ -1,0 +1,20 @@
+[package]
+authors = ["Connor Hilarides <connorcpu@live.com>"]
+build = "build.rs"
+name = "seal-lang"
+version = "0.1.0"
+
+[build-dependencies]
+
+[build-dependencies.lalrpop]
+version = "0.12.4"
+
+[dependencies]
+lalrpop-util = "0.12.4"
+lazy_static = "0.2.2"
+num = "0.1.36"
+serde = "0.9.6"
+serde_derive = "0.9.6"
+serde_json = "0.9.5"
+simd = "0.2.0"
+unicode-xid = "0.0.4"

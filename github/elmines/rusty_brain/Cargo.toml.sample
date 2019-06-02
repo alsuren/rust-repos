@@ -1,0 +1,8 @@
+[package]
+name = "rusty_brain"
+description = "Deep learning and computation library for Rust"
+version = "0.1.0"
+authors = ["Ethan Mines <elmines325@gmail.com>"]
+
+[dependencies]
+ndarray = "0.12.1"

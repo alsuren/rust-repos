@@ -1,0 +1,77 @@
+[package]
+name = "learnopengl-gfxrs"
+version = "0.1.0"
+authors = ["solarsail <newleaf.lu@gmail.com>"]
+
+[dependencies]
+gfx = "0.16"
+glutin = "0.9"
+gfx_window_glutin = "0.17"
+gfx_device_gl = "0.14"
+image = "0.15"
+cgmath = "0.15"
+find_folder = "0.3"
+lazy_static = "0.2"
+structopt = "0.1"
+structopt-derive = "0.1"
+spin_sleep = "0.3"
+
+[[bin]]
+name = "hello-window"
+path = "src/01-getting-started/103-hello-window/main.rs"
+
+[[bin]]
+name = "hello-triangle"
+path = "src/01-getting-started/104-hello-triangle/main.rs"
+
+[[bin]]
+name = "hello-triangle-revised"
+path = "src/01-getting-started/104-hello-triangle-revised/main.rs"
+
+[[bin]]
+name = "shaders"
+path = "src/01-getting-started/105-shaders/main.rs"
+
+[[bin]]
+name = "textures"
+path = "src/01-getting-started/106-textures/main.rs"
+
+[[bin]]
+name = "transformations"
+path = "src/01-getting-started/107-transformations/main.rs"
+
+[[bin]]
+name = "coordinate"
+path = "src/01-getting-started/108-coordinate/main.rs"
+
+[[bin]]
+name = "camera"
+path = "src/01-getting-started/109-camera/main.rs"
+
+[[bin]]
+name = "colors"
+path = "src/02-lighting/201-colors/main.rs"
+
+[[bin]]
+name = "basic-lighting"
+path = "src/02-lighting/202-basic-lighting/main.rs"
+
+[[bin]]
+name = "basic-lighting-view"
+path = "src/02-lighting/202-basic-lighting/main_view.rs"
+
+[[bin]]
+name = "basic-lighting-revised"
+path = "src/02-lighting/202-basic-lighting-revised/main.rs"
+
+[[bin]]
+name = "materials"
+path = "src/02-lighting/203-materials/main.rs"
+
+[[bin]]
+name = "lighting-maps"
+path = "src/02-lighting/204-lighting-maps/main.rs"
+
+[[bin]]
+name = "multiple-lights"
+path = "src/02-lighting/206-multiple-lights/main.rs"

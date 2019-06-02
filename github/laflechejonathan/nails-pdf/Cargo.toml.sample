@@ -1,0 +1,11 @@
+[package]
+name = "nails-pdf"
+authors = ["Jonathan Lafleche <laflechejonathan@gmail.com>"]
+version = "0.0.1"
+readme = "README.md"
+
+[dependencies]
+inflate = "0.2"
+pest = "0.4"
+regex = "0.2.1"
+maplit = "0.1.4"

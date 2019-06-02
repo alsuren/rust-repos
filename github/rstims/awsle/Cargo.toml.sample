@@ -1,0 +1,14 @@
+[package]
+name = "awsle"
+version = "0.1.0"
+authors = ["Ryan Stimmler <rstimmler4@gmail.com>"]
+
+[dependencies]
+rusoto_core = "0.28.0"
+rusoto_acm = "0.28.0"
+rusoto_cloudfront = "0.28.0"
+rusoto_s3 = "0.28.0"
+clap = "2.26.1"
+rust-ini = "0.9"
+spinner = "0.3"
+acme-client = { version = "0.4", path = "./acme-client" }

@@ -1,0 +1,8 @@
+[package]
+name = "libdottxt"
+version = "0.1.0"
+authors = ["Henry Webster <hwebster@mail.depaul.edu>"]
+edition = "2018"
+
+[dependencies]
+markov = "1.0.2"

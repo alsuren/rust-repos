@@ -1,0 +1,8 @@
+[package]
+name = "forexrs"
+version = "0.1.0"
+authors = ["Caio Alonso <caio@caioalonso.com>"]
+
+[dependencies]
+time = "0.1.38"
+clap = "2.29.0"

@@ -1,0 +1,21 @@
+[package]
+
+name = "resolve"
+description = "DNS communication protocol"
+
+documentation = "https://docs.rs/resolve/"
+homepage = "https://github.com/murarth/resolve"
+repository = "https://github.com/murarth/resolve"
+
+keywords = [ "dns", "host", "resolver" ]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+
+version = "0.2.0"
+authors = ["Murarth <murarth@gmail.com>"]
+
+[dependencies]
+idna = "0.1"
+libc = "0.2"
+log = "0.4"
+rand = "0.5"

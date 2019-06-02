@@ -1,0 +1,71 @@
+[package]
+name = "rub"
+version = "0.0.5-pre"
+authors = ["Jason Ozias <jason.ozias@ipaper.com>"]
+description = "Rust Builder"
+documentation = "http://rust-builder.github.io/rub"
+homepage = "http://rust-builder.github.io/rub"
+repository = "https://github.com/rust-builder/rub"
+readme = "README.md"
+license = "MIT"
+keywords = ["buildable","rub"]
+build = "build.rs"
+
+[features]
+default = [ "cargo_rub", "rust_rub" ]
+cargo   = [ "cargo_rub" ]
+clj     = [ "clj_rub" ]
+mongo   = [ "mongo_rub" ]
+node    = [ "node_rub" ]
+python  = [ "python_rub" ]
+rust    = [ "rust_rub" ]
+v8      = [ "v8_rub" ]
+all     = [ "cargo", "clj", "mongo", "node", "python", "rust", "v8" ]
+
+[build-dependencies]
+time = "*"
+
+[dependencies.buildable]
+git = "https://github.com/rust-builder/buildable.git"
+
+[dependencies.cargo_rub]
+git = "https://github.com/rust-builder/cargo-rub.git"
+optional = true
+
+[dependencies.clj_rub]
+git = "https://github.com/rust-builder/clj-rub.git"
+optional = true
+
+[dependencies.mongo_rub]
+git = "https://github.com/rust-builder/mongo-rub.git"
+optional = true
+
+[dependencies.node_rub]
+git = "https://github.com/rust-builder/node-rub.git"
+optional = true
+
+[dependencies.peg]
+git = "https://github.com/kevinmehall/rust-peg.git"
+
+[dependencies.python_rub]
+git = "https://github.com/rust-builder/python-rub.git"
+optional = true
+
+[dependencies.repl]
+git = "https://github.com/rustyhorde/repl.git"
+
+[dependencies.rl-sys]
+git = "https://github.com/rustyhorde/readline-sys.git"
+
+[dependencies.rub_rub]
+git = "https://github.com/rust-builder/rub-rub.git"
+optional = true
+
+[dependencies.rust_rub]
+git = "https://github.com/rust-builder/rust-rub.git"
+optional = true
+
+[dependencies.v8_rub]
+git = "https://github.com/rust-builder/v8-rub.git"
+version = "*"
+optional = true

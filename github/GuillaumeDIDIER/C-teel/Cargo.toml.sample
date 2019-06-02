@@ -1,0 +1,12 @@
+[package]
+name = "C_teel"
+version = "0.1.0"
+authors = ["Guillaume DIDIER <guillaume.didier@polytechnique.edu>"]
+
+[dependencies]
+regex = "^0.1.56"
+clap = "~2.19.0"
+
+[dependencies.nom]
+version = "^2.0"
+features = ["regexp", "verbose-errors"]

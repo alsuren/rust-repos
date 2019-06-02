@@ -1,0 +1,40 @@
+[package]
+name = "audiostream"
+version = "0.1.3"
+authors = [ "peter@taricorp.net" ]
+
+documentation = "http://rustdoc.taricorp.net/audiostream/audiostream/"
+repository = "https://bitbucket.org/tari/audiostream.rs/"
+
+[features]
+default = ["vorbisfile", "ao"]
+# Experimental JIT vectorized interleaving
+interleave-jit = ["interleave_jit"]
+
+[dependencies]
+lazy_static = "*"
+libc = "*"
+log = "*"
+num = "*"
+rand = "*"
+rustc-serialize = "*"
+# These should be dev-dependencies but it appears we can't conditionally
+# use a plugin.
+quickcheck_macros = "*"
+quickcheck = "*"
+
+[dev-dependencies]
+docopt = "*"
+docopt_macros = "*"
+
+[dependencies.vorbisfile]
+version = "*"
+optional = true
+
+[dependencies.ao]
+version = "*"
+optional = true
+
+[dependencies.interleave_jit]
+path = "interleave-jit"
+optional = true

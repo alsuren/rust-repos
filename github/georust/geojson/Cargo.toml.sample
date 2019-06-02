@@ -1,0 +1,29 @@
+[package]
+
+name = "geojson"
+description = "Library for serializing the GeoJSON vector GIS file format"
+version = "0.16.0"
+authors = ["Corey Farwell <coreyf@rwell.org>",
+           "Blake Grotewold <hello@grotewold.me>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/georust/geojson"
+readme = "README.md"
+documentation = "https://docs.rs/geojson/"
+keywords = ["geojson", "gis", "json", "geo"]
+edition = "2018"
+
+[dependencies]
+serde = "~1.0"
+serde_json = "~1.0"
+geo-types = { version = "0.4", optional = true }
+num-traits = "0.2"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "parse"
+harness = false
+
+[package.metadata.docs.rs]
+features = [ "geo-types" ]

@@ -1,0 +1,36 @@
+[package]
+name = "urdf-viz"
+version = "0.15.0"
+authors = ["Takashi Ogura <t.ogura@gmail.com>"]
+description = "URDF visualization"
+license = "Apache-2.0"
+keywords = ["robotics", "urdf", "visualization"]
+categories = ["visualization"]
+repository = "https://github.com/OTL/urdf-viz"
+documentation = "http://docs.rs/urdf-viz"
+readme = "README.md"
+exclude = ["img/*", "ci/*"]
+
+[features]
+default = ["assimp"]
+
+[dependencies]
+alga = "0.8.0"
+env_logger = "0.4.2"
+failure = "0.1"
+k = "0.14.0"
+kiss3d = "0.18.0"
+log = "0.3"
+nalgebra = "0.17.0"
+rand = "0.3.0"
+serde = "1.0"
+serde_derive = "1.0"
+structopt = "0.2.0"
+urdf-rs = "0.4.2"
+rouille = "2.1.0"
+assimp = { version = "0.3.1", optional = true }
+assimp-sys = "0.3.1"
+
+[[bin]]
+name = "urdf-viz"
+path = "src/urdf_viewer.rs"

@@ -1,0 +1,38 @@
+[package]
+name = "scratchpad"
+version = "2.0.0"
+authors = ["Theodore Cipicchio <okready@users.noreply.github.com>"]
+license = "MIT/Apache-2.0"
+description = "Stack-like memory allocator with double-ended allocation support"
+documentation = "https://docs.rs/scratchpad"
+homepage = "https://github.com/okready/scratchpad"
+repository = "https://github.com/okready/scratchpad"
+readme = "README.md"
+categories = ["data-structures", "embedded", "memory-management", "no-std"]
+keywords = ["stack", "pool", "memory", "allocator", "no_std"]
+
+[badges]
+travis-ci = { repository = "okready/scratchpad" }
+
+[features]
+default = ["std"]
+
+# Allow `std` library usage (used for `Box` and `Vec` support).
+std = []
+
+# Allow `alloc` library usage (used for `Box` and `Vec` support without using
+# `std`). Requires a nightly toolchain. Ignored if the `std` feature is
+# enabled.
+alloc = []
+
+# Allow miscellaneous unstable features. Requires a nightly toolchain.
+unstable = []
+
+[dependencies]
+stable_deref_trait = { version = "1.0", default-features = false }
+
+[build-dependencies]
+rustc_version = "0.2"
+
+[dev-dependencies]
+arrayvec = { version = "0.4", default-features = false }

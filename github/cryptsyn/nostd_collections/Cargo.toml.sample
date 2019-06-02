@@ -1,0 +1,32 @@
+[package]
+name = "nostd_collections"
+version = "0.1.0"
+authors = ["wmiller848 <wmiller848@users.noreply.github.com>"]
+
+[lib]
+crate-type = ["lib"]
+
+[profile.dev]
+opt-level = 0
+debug = true
+debug-assertions = true
+panic = 'abort'
+
+[profile.release]
+opt-level = 3
+debug = false
+debug-assertions = false
+panic = 'abort'
+
+[profile.test]
+opt-level = 1
+debug = 2
+debug-assertions = true
+
+[profile.bench]
+opt-level = 3
+debug = false
+debug-assertions = false
+
+[dependencies]
+rand = { git = "https://github.com/cryptsyn/rand.git", branch = "0.5.4-nightly", default-features = false, features = ["nightly", "alloc"] }

@@ -1,0 +1,8 @@
+[package]
+name = "life"
+version = "0.1.0"
+authors = ["owen <stensonowen@gmail.com>"]
+
+[dependencies]
+rand = "0.3.14"
+terminal_size = "0.1.5"

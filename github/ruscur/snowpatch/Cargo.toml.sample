@@ -1,0 +1,46 @@
+#
+# snowpatch - continuous integration for patch-based workflows
+#
+# Copyright (C) 2016-2018 IBM Corporation
+# Authors:
+#     Russell Currey <ruscur@russell.cc>
+#     Andrew Donnellan <andrew.donnellan@au1.ibm.com>
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 2 of the License, or (at your option)
+# any later version.
+#
+# Cargo.toml - cargo build configuration file
+#
+
+[package]
+name = "snowpatch"
+version = "0.2.0"
+authors = ["Russell Currey <ruscur@russell.cc>",
+	   "Andrew Donnellan <andrew.donnellan@au1.ibm.com>"]
+homepage = "https://github.com/ruscur/snowpatch"
+repository = "https://github.com/ruscur/snowpatch.git"
+documentation = "https://github.com/ruscur/snowpatch/tree/master/docs"
+description = "continuous integration for patch-based workflows"
+readme = "README.md"
+license = "GPL-2.0+"
+keywords = ["CI", "patch", "patchwork", "jenkins", "git"]
+build = "build.rs"
+
+[dependencies]
+reqwest = "0.9"
+git2 = "0.7"
+url = "1.7"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+toml = "0.4"
+tempdir = "0.3"
+docopt = "1.0"
+log = "0.4"
+env_logger = "0.5"
+base64 = "0.9"
+
+[build-dependencies]
+vergen = "3"

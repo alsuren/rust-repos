@@ -1,0 +1,25 @@
+[package]
+name = "ninj"
+version = "0.1.0"
+authors = ["Mara Bos <m-ou.se@m-ou.se>"]
+edition = "2018"
+
+[lib]
+path = "lib/lib.rs"
+
+[dependencies]
+pile = "0.1"
+raw-string = "0.3.5"
+structopt = "0.2.14"
+crossbeam = "0.6.0"
+byteorder = "1.2.7"
+memchr = "2.1.2"
+indexmap = "1.0.2"
+log = "0.4.6"
+chrono = "0.4.6"
+time = "0.1.42"
+nix = "0.13.0"
+term_size = "0.3"
+
+[profile.dev]
+opt-level = 3

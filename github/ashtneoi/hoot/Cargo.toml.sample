@@ -1,0 +1,16 @@
+[package]
+name = "hoot"
+version = "0.1.0"
+authors = ["ashtneoi <ashtneoi@gmail.com>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+description = "async-lib-agnostic HTTP 1.x server lib"
+homepage = "https://github.com/ashtneoi/hoot"
+repository = "https://github.com/ashtneoi/hoot"
+keywords = ["http"]
+categories = ["web-programming::http-server"]
+
+[dependencies]
+http = "0.1.15"
+lazy_static = "1.2.0"
+regex = "1.1.0"

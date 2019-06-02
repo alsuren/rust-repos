@@ -1,0 +1,8 @@
+[package]
+name = "cross-gui-test"
+version = "0.1.0"
+authors = ["Valakhanovich Heorhi <valahanovich@tut.by>"]
+
+[dependencies.cross-gui]
+version = "*"
+path = "../cross-gui"

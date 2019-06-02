@@ -1,0 +1,8 @@
+[package]
+name = "ocl"
+version = "0.1.0"
+authors = ["hashmap <hashmap@gmail.com>"]
+
+[dependencies]
+ocl = "0.19"
+hashbrown = "0.1"

@@ -1,0 +1,23 @@
+[package]
+name = "core"
+version = "0.1.0"
+authors = ["J/A <archer884@gmail.com>"]
+
+[dependencies]
+chrono = "*"
+clap = { version = "*", features = ["unstable", "suggestions", "color"] }
+crockford = "*"
+gasoline-data = { path = "../gasoline-data" }
+lazy_static = "*"
+rocket = "*"
+rocket_codegen = "*"
+rocket_contrib = "*"
+rocket_cors = "*"
+rwt = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+stopwatch = "*"
+
+[features]
+default = []

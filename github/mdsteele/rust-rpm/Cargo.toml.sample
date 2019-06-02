@@ -1,0 +1,22 @@
+[package]
+name = "rpmpkg"
+version = "0.1.0"
+authors = ["Matthew D. Steele <mdsteele@alum.mit.edu>"]
+description = "A library for reading/writing RPM package files"
+repository = "https://github.com/mdsteele/rust-rpm"
+keywords = ["package", "rpm"]
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+byteorder = "1"
+bzip2 = "0.3"
+cpio = { git = "https://github.com/jcreekmore/cpio-rs", rev = "6d7334d5201e" }
+flate2 = "1"
+md5 = "0.3"
+sha1 = { version = "0.6", features = ["std"] }
+xz2 = "0.1"
+
+[dev-dependencies]
+chrono = "0.4"
+clap = "2.30"

@@ -1,0 +1,15 @@
+[package]
+name = "clarifai"
+version = "2.0.0-alpha1"
+authors = ["Kevin Most<kmost@clarifai.com>"]
+
+
+[dependencies]
+hyper = "0.9.10"
+serde = "0.8"
+serde_json = "0.8"
+chrono = { version= "0.2.25", features = ["serde"] }
+# ease = "*"
+
+[features]
+static_in_const = []

@@ -1,0 +1,11 @@
+[package]
+name = "dpll"
+version = "0.1.0"
+authors = ["mhn"]
+
+[dependencies]
+
+[profile.release]
+debug = false
+lto = true
+opt-level = 3

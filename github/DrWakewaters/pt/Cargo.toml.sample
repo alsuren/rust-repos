@@ -1,0 +1,25 @@
+[package]
+name = "pt"
+version = "0.1.0"
+authors = ["Christian <christian-carlsson@outlook.com>"]
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+bincode = "*"
+png = "*"
+cgmath = "*"
+pcg_rand = "*"
+rand = "*"
+simd = "*"
+time = "*"
+
+[features]
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true
+codegen-units = 1
+incremental = false
+overflow-checks = false

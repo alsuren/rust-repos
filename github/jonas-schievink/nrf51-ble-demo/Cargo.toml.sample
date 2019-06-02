@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "rubble",
+    "rubble-nrf52",
+    "rubble-demo",
+]
+
+[profile.dev]
+opt-level = "s"
+
+[profile.release]
+opt-level = "s"
+debug = true
+lto = true
+codegen-units = 1

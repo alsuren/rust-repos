@@ -1,0 +1,16 @@
+[package]
+name = "git-backup"
+version = "0.1.1"
+authors = ["Peter Bjorklund <piot@hotmail.com>"]
+description = "Bundles multiple repositories and copies to target directory."
+license = "MIT"
+repository = "https://github.com/piot/git-backup"
+
+[dependencies]
+serde = "1.0.85"
+serde_derive = "1.0.85"
+serde_json = "1.0.36"
+structopt = "0.2.14"
+colored = "1.7.0"
+pad = "0.1.5"
+dirs = "1.0.4"

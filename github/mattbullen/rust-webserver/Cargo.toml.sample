@@ -1,0 +1,18 @@
+[package]
+
+name = "rust-webserver"
+version = "1.0.0"
+authors = ["mattbullenprogramming@gmail.com"]
+
+[features]
+unstable = []
+
+[[bin]]
+name = "hello"
+
+[dependencies]
+iron = "*"
+rustc-serialize = "0.3"
+
+[dependencies.router]
+git = "https://github.com/iron/router.git"

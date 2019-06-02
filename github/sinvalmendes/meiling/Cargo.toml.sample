@@ -1,0 +1,11 @@
+[package]
+name = "meiling"
+version = "0.0.1"
+authors = ["Sinval Vieira <sinvalneto01@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+config = "0.9"
+git2 = "0.8.0"
+clap = "2.33.0"
+shellfn = "0.1.1"

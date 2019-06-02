@@ -1,0 +1,32 @@
+[package]
+name = "space-boss-battles"
+version = "0.1.0"
+authors = ["Juuso Tuononen <jutuon@outlook.com>"]
+
+[features]
+gles = ["gl/gles"]
+glutin_window = ["glutin"]
+
+[dependencies]
+gl = { path = "gl" }
+cgmath = "0.15.0"
+rand = "0.4.1"
+
+[dependencies.glutin]
+version = "0.11"
+optional = true
+
+[dependencies.image]
+version = "0.15.0"
+default-features = false
+features = ["png_codec"]
+
+[dependencies.sdl2]
+version = "0.31"
+default-features = false
+features = ["mixer"]
+
+[target.'cfg(target_os = "emscripten")'.dependencies]
+emscripten-sys = "0.3"
+
+[workspace]

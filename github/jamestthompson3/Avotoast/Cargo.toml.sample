@@ -1,0 +1,15 @@
+[package]
+name = "avotoast"
+version = "0.1.0"
+authors = ["jamestthompson3 <jamestthompson3@gmail.com>"]
+
+[dependencies]
+pem = "0.4"
+openssl = "0.10.2"
+futures = "0.1"
+hyper = "0.11"
+tokio-core = "0.1"
+serde = "1.0.27"
+serde_json = "1.0.9"
+byteorder = "1.2.1"
+base64 = "0.9.0"

@@ -1,0 +1,24 @@
+[package]
+name = "jieba"
+version = "0.1.3"
+
+license       = "MIT"
+authors       = ["mitum <dangcheng@hotmail.com>"]
+description   = "segment"
+documentation = "https://docs.rs/sincere"
+homepage      = "https://github.com/mitum/sincere"
+repository    = "https://github.com/mitum/sincere"
+keywords      = ["segment", "words", "jieba"]
+readme        = "README.md"
+build         = "build.rs"
+exclude       = [
+    ".gitignore",
+    ".travis.yml",
+    "deploy.sh",
+    "test/**/*",
+    "cjieba/.gitignore",
+    "cjieba/.travis.yml"
+]
+
+[build-dependencies]
+gcc = { version = "0.3", features = ["parallel"] }

@@ -1,0 +1,9 @@
+[package]
+name = "draw-rs"
+version = "0.1.0"
+authors = ["self-unaware <mipsmartin@gmail.com>"]
+license = ["MIT"]
+
+[dependencies]
+image = "*"
+rusttype = "*"

@@ -1,0 +1,19 @@
+[package]
+name = "asteroids"
+version = "0.1.0"
+authors = ["snarf95 <snarf95@hotmail.com>"]
+
+[dependencies]
+gfx = "*"
+gfx_window_glutin = "*"
+glutin = "*"
+cgmath = "*"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'abort'

@@ -1,0 +1,10 @@
+[package]
+
+name = "rqou-ddns"
+version = "0.0.1"
+authors = [ "Robert Ou <rqou@robertou.com>" ]
+
+
+[dependencies]
+pnetlink = "0.0.2"
+pnet = "0.16"

@@ -1,0 +1,37 @@
+[package]
+name = "pickledb"
+version = "0.4.0"
+authors = ["seladb <pcapplusplus@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+description = "A lightweight and simple key-value store written in Rust, heavily inspired by [Python's PickleDB](https://pythonhosted.org/pickleDB/)"
+repository = "https://github.com/seladb/pickledb-rs"
+homepage = "https://github.com/seladb/pickledb-rs"
+documentation = "http://docs.rs/pickledb"
+keywords = ["database", "key-value-store", "db", "kv", "pickledb"]
+categories = ["database-implementations", "data-structures"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "seladb/pickledb-rs" }
+
+[dependencies]
+serde = { version = "1.0.82", features = ["derive"] }
+serde_json = "1.0"
+bincode = "1.0.1"
+serde_yaml = "0.8.8"
+serde_cbor = "0.9.0"
+
+[dev-dependencies]
+rand = "0.6.3"
+rstest = "0.2.2"
+matches = "0.1.8"
+fs2 = "0.4.3"
+
+[[example]]
+name = "hello_world"
+path = "examples/hello_world/src/main.rs"
+
+[[example]]
+name = "lists"
+path = "examples/lists/src/main.rs"

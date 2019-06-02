@@ -1,0 +1,16 @@
+[workspace]
+
+members = [
+    "oarray",
+    "ga_algo",
+    "ga_hill",
+    "ga_inc",
+    "gp_algo",
+    "gp_inc",
+    "results_analysis"
+]
+
+[profile.release]
+debug = true
+lto = true
+#codegen-units = 1

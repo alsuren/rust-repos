@@ -1,0 +1,8 @@
+[package]
+name = "ccast"
+version = "0.1.0"
+authors = ["Alex Mitchell <alex@alexthemitchell.com>"]
+
+[dependencies]
+cursive = "0.7.5"
+rust_cast = "0.10.0"

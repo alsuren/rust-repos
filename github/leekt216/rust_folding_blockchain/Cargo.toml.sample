@@ -1,0 +1,13 @@
+[package]
+name = "rust_folding_blockchain"
+version = "0.1.0"
+authors = ["leekt <leekt216@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+rust-crypto="^0.2"
+hex = "0.3.2"
+leveldb = "0.8.4"

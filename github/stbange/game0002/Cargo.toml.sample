@@ -1,0 +1,8 @@
+[package]
+name = "game0002"
+version = "0.1.0"
+authors = ["Stephan Bange <stephan.bange@btc-ag.com>"]
+edition = "2018"
+
+[dependencies]
+easycurses = "0.12.2"

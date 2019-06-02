@@ -1,0 +1,18 @@
+[package]
+
+name = "bansuri"
+version = "0.0.1"
+authors = [ "Rajaram <zimbabao@gmail.com>"]
+
+[dependencies]
+
+getopts = "0.2"
+nom = "3.2.0"
+
+[lib]
+name = "bansuri_lib"
+path = "src/lib/bansuri.rs"
+
+[[bin]]
+name = "bansuri_cli"
+path = "src/main.rs"

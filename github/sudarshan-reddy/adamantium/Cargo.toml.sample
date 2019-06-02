@@ -1,0 +1,9 @@
+[package]
+name = "adamantium"
+version = "0.1.0"
+authors = ["Sudarshan <sudar.theone@gmail.com>"]
+
+[dependencies]
+
+"termios" = "*"
+libc = "0.2.36"

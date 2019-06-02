@@ -1,0 +1,19 @@
+[package]
+name = "rquake"
+version = "0.1.0"
+authors = ["Maurice Gilden <MauriceG@gmx.net>"]
+description = "Handmade Quake in Rust."
+license = "GPLv2"
+build = "build.rs"
+
+[dependencies]
+rquake-fs = { path = "crates/rquake-fs" }
+rquake-common = { path ="crates/rquake-common" }
+rquake-engine = { path = "crates/rquake-engine" }
+clap = "2.19.3"
+
+[target.'cfg(windows)'.dependencies]
+rquake-win = { path = "crates/rquake-win" }
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1.1"

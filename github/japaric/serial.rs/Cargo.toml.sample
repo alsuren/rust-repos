@@ -1,0 +1,14 @@
+[package]
+
+authors = ["Jorge Aparicio <japaricious@gmail.com>"]
+name = "serial"
+version = "0.0.0"
+
+[dependencies.termios]
+git = "https://github.com/japaric/termios.rs"
+
+[dev-dependencies.quickcheck]
+git = "https://github.com/burntsushi/quickcheck"
+
+[dev-dependencies.quickcheck_macros]
+git = "https://github.com/burntsushi/quickcheck"

@@ -1,0 +1,24 @@
+[package]
+name = "dmgr"
+version = "0.1.0"
+authors = ["Thomas Brigham"]
+description = "Start, stop, and manage your local services"
+
+[dependencies]
+iron = "*"
+router = "*"
+log = "*"
+log4rs = "*"
+home = "*"
+clap = "*"
+toml = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+prettytable-rs = "*"
+backtrace = "*"
+shlex = "*"
+sysinfo = "*"
+
+[dependencies.logger]
+git = "https://github.com/iron/logger.git"

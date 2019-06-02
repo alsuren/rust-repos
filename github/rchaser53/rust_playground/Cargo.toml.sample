@@ -1,0 +1,20 @@
+[package]
+authors = ["rchaser53 <tayoshizawa29@gmail.com>"]
+name = "like_cron"
+version = "0.1.0"
+
+[dependencies]
+crossbeam = "0.3.2"
+futures = "0.1.18"
+futures-cpupool = "0.1.8"
+hyper = "0.10.13"
+image = "0.18.0"
+native-tls = "0.1"
+num_cpus = "1.8.0"
+rand = "0.4.2"
+rustfmt = "0.10.0"
+serde_json = "1.0.9"
+time = "0.1.39"
+tokio-core = "0.1.12"
+tokio-io = "0.1.4"
+tokio-tls = "0.1"

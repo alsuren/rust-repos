@@ -1,0 +1,34 @@
+[workspace]
+members = [
+    "src/logger",
+    "src/crates/*",
+    "UI/*"
+]
+
+[package]
+name = "artid-core"
+version = "0.1.0"
+authors = ["Gabriel Dos Ramos Albo <dosramosgabriel@gmail.com>"]
+edition = "2018"
+
+[lib]
+path = "src/core/lib.rs"
+test = true
+doctest = true
+bench = true
+doc = true
+
+[dependencies]
+env_path = {path = "src/crates/env_path", features = ["serde"]}
+fn_box = {path = "src/crates/fn_box"}
+debug_closure = {path = "src/crates/debug_closure"}
+
+chrono = {version = "0.4.5", features = ["serde"]}
+log = "0.4.3"
+serde = "1.0.71"
+serde_derive = "1.0.71"
+sha3 = "0.8.1"
+toml = "0.4.10"
+
+[dev-dependencies]
+tempfile = "3.0.3"

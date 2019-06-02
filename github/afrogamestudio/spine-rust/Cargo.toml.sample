@@ -1,0 +1,11 @@
+[package]
+name = "spine-rust"
+version = "0.1.1"
+authors = ["Pontjho Mokhonoana <pontjho@gmail.com>"]
+description = "A spine loader and runtime"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+serde = "1.0.38"
+serde_derive = "1.0.38"
+serde_json = "1.0"

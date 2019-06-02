@@ -1,0 +1,16 @@
+[package]
+name = "tupi"
+version = "0.1.0"
+authors = ["Denilson das Mercês Amorim <denimorim@gmail.com>"]
+
+[dependencies]
+
+[dev-dependencies]
+regex = "0.2"
+lazy_static = "0.2"
+
+[[bin]]
+name = "tupi"
+path = "src/main.rs"
+doc = false
+

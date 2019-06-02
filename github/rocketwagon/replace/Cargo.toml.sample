@@ -1,0 +1,8 @@
+[package]
+name = "replace"
+version = "0.1.1"
+authors = ["zsiegel <zac@rw.co>"]
+
+[dependencies]
+regex = "0.2"
+clap = "2.29.2"

@@ -1,0 +1,16 @@
+[package]
+name = "mergeify"
+version = "0.1.0"
+authors = ["goncalopalaio"]
+edition = "2018"
+
+[dependencies]
+imgui-sdl2 = "0.5.0"
+imgui-opengl-renderer = "0.4.0"
+sdl2 = "0.32.1"
+gl = "0.10.0"
+imgui = "0.0.22"
+
+git2 = "0.8"
+
+rust-ini = "0.13"

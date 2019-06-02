@@ -1,0 +1,14 @@
+[package]
+name = "qbox"
+version = "0.0.1"
+authors = ["Liigo Zhuang <com.liigo@gmail.com>"]
+
+[dependencies.fmt]
+git = "https://github.com/liigo/fmt-rs"
+
+[dependencies.rust-hl-lua]
+git = "https://github.com/tomaka/rust-hl-lua"
+
+[dependencies.mysql]
+git = "https://github.com/blackbeam/rust-mysql-simple"
+default-features = false

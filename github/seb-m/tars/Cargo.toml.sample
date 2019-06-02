@@ -1,0 +1,33 @@
+[package]
+name = "tars"
+version = "0.0.1"
+authors = ["Sebastien Martini <seb@dbzteam.org>"]
+license = "MIT/ASL2"
+repository = "https://github.com/seb-m/tars"
+homepage = "https://github.com/seb-m/tars"
+documentation = "http://seb.dbzteam.org/tars/"
+readme = "README.md"
+description = """
+Data structure containers with protected memory
+"""
+keywords = ["crypto", "security", "malloc"]
+
+[lib]
+name = "tars"
+
+[features]
+# Disable mlock calls on memory pages allocations, may be needed in
+# environments with restricted resources limits.
+no_mlock = []
+
+# Enable detailed statistics collection of memory allocations, should
+# be useful only for debugging.
+malloc_stats = []
+
+[dependencies]
+libc = "0.1.5"
+rand = "0.3.10"
+num = "0.1.27"
+
+[dev-dependencies]
+log = "0.3.1"

@@ -1,0 +1,26 @@
+[package]
+name = "rusty-slackbot"
+version = "0.12.3"
+authors = ["Steven Pequeno <steven@pequeno.in>"]
+description = "a slack bot for sanantoniodevs.slack.com"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/epequeno/rusty"
+readme = "README.md"
+keywords = ["bot", "slack", "rss"]
+categories = ["web-programming"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+slack = "0.22"
+slack_api = "0.21"
+openssl-probe = "0.1"
+env_logger = "0.6"
+log = "0.4"
+linked_hash_set = "0.1"
+atom_syndication = "0.6"
+reqwest = "0.9"
+
+[dependencies.rss]
+version = "1"
+features = ["from_url"]

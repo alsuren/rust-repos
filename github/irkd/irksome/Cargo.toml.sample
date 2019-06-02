@@ -1,0 +1,13 @@
+[package]
+authors = ["Barret Rennie <barret@brennie.ca>"]
+license = "MIT"
+name = "irksome"
+version = "0.0.2-dev"
+
+[badges]
+
+[badges.circle-ci]
+repository = "irkd/irksome"
+
+[dependencies]
+combine = "3.0.0-alpha.5"

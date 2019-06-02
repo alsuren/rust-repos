@@ -1,0 +1,12 @@
+[package]
+name = "map_rust"
+version = "0.0.0"
+authors = ["SeongChan Lee <foriequal@gmail.com>"]
+
+[dependencies]
+rand = "*"
+itertools = "*"
+rustc-serialize = "*"
+url = "*"
+zmq = "*"
+getopts = "*"

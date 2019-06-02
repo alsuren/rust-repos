@@ -1,0 +1,15 @@
+[package]
+name = "pjrb"
+version = "0.1.0"
+authors = ["joris"]
+build = "build.rs"
+
+[dependencies.regex]
+version = "0.2.1"
+
+[dependencies]
+lalrpop-util = ">= 0.12.5"
+
+[build-dependencies]
+lalrpop = ">= 0.12.5"
+

@@ -1,0 +1,11 @@
+[package]
+name = "smd_music"
+version = "0.1.0"
+authors = ["MarimeGui <lepro.guillaume@gmail.com>"]
+
+[lib]
+name = "smd_music"
+
+[dependencies]
+clap = "2.31.2"
+ez_io = { git = "https://github.com/MarimeGui/ez_io" }

@@ -1,0 +1,25 @@
+[package]
+name = "grep_vn_walk"
+version = "0.2.0"
+description = "Find walkthrough for VN"
+authors = ["Douman <douman@gmx.se>"]
+license = "Apache-2.0"
+readme = "README.md"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "README.md"
+]
+
+[dependencies.yukikaze]
+version = "0.2"
+default-features = false
+features = ["rt", "flate2-c", "encoding"]
+
+[dependencies]
+lazy-panic = "0.3"
+regex = "1"
+
+[profile.release]
+lto = true
+opt-level = "z"

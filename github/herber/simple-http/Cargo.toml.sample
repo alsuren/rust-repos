@@ -1,0 +1,11 @@
+[package]
+name = "http-playground"
+version = "0.1.0"
+authors = ["Tobias Herber <tobihrbr@gmail.com>"]
+
+[dependencies]
+tokio = "0.1"
+
+[[bin]]
+name = "http-playground"
+path = "src/lib.rs"

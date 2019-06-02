@@ -1,0 +1,25 @@
+# Copyright 2017-2018 Peter Williams
+# Licensed under the MIT License.
+
+[package]
+name = "elfx86exts"
+version = "0.3.0"
+authors = ["Peter Williams <peter@newton.cx>"]
+description = "Decode a x86 binaries (ELF or MachO) and print out which instruction set extensions they use."
+homepage = "https://github.com/pkgw/elfx86exts"
+repository = "https://github.com/pkgw/elfx86exts"
+documentation = "https://docs.rs/crate/elfx86exts"
+readme = "README.md"
+keywords = ["disassembly", "ELF", "MachO", "x86"]
+categories = ["command-line-utilities", "development-tools::debugging", "parsing"]
+license = "MIT"
+
+[dependencies]
+capstone = "^0.6"
+clap = "^2.33"
+object = "^0.12"
+memmap = "^0.7.0"
+
+[dev-dependencies]
+assert_cmd = "0.11"
+escargot = "0.5"

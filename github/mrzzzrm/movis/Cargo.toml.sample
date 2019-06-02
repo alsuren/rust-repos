@@ -1,0 +1,25 @@
+[package]
+name = "movis"
+version = "0.1.0"
+authors = ["mrzzzrm <mrzesn@t-online.de>"]
+
+[lib]
+name = "movis"
+path = "src/lib.rs"
+
+[[bin]]
+name="movis"
+path="src/main.rs"
+
+# [dependencies.ovisbp]
+# path="src/ovisbp"
+# version="*"
+
+[dependencies]
+ovisbp={git="https://github.com/lanice/ovisbp"}
+sdl2 = "0.12.0"
+sdl2_image = "0.6"
+tiled = "0.1.4"
+glm = "0.2.0"
+stopwatch = "0.0.6"
+time = "*"

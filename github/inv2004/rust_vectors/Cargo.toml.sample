@@ -1,0 +1,22 @@
+[package]
+name = "rust_vectors"
+version = "0.1.0"
+authors = ["inv2004 <inv2004@gmail.com>"]
+
+[dependencies]
+rand = "*"
+lazy_static = "*"
+order-stat = "*"
+
+#[target.'cfg(...)']
+#rustflags = [ "-C", "force-overflow-checks=off" ]
+
+[profile.bench]
+opt-level = 2
+# debug = false
+# rpath = false
+# lto = false
+# debug-assertions = false
+# codegen-units = 1
+# panic = 'unwind'
+

@@ -1,0 +1,21 @@
+[package]
+name = "uconnect"
+version = "0.1.0"
+authors = ["Kirill Pimenov <kpimenov@suse.de>"]
+
+[dependencies]
+# Options parsing
+clap = "1.4"
+
+# Logging
+log = "0.3"
+flexi_logger = "0.3"
+
+# HTTP client
+hyper = "0.6"
+
+# JSON support
+rustc-serialize = "0.3"
+
+# XML support (for zypper)
+xml-rs = "0.2"

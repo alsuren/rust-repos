@@ -1,0 +1,9 @@
+[package]
+name = "rust-reverse-shell"
+version = "0.0.1"
+authors = ["Hayden Pope <stilbruch39@gmail.com>"]
+
+[dependencies]
+
+[profile.release]
+lto = true

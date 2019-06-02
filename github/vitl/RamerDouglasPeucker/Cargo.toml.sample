@@ -1,0 +1,9 @@
+[package]
+name = "ramer_douglas_peucker"
+version = "1.0.1"
+authors = ["Vitaly Voronin <vitl17@gmail.com>"]
+
+[lib]
+name = "ramer_douglas_peucker"
+path = "src/lib.rs"
+doctest = false

@@ -1,0 +1,22 @@
+[package]
+name = "emerald-rocksdb"
+description = "Rust wrapper for Facebook's RocksDB embeddable database"
+version = "0.10.3"
+authors = ["Tyler Neely <t@jujit.su>", "David Greenberg <dsg123456789@gmail.com>"]
+license = "Apache-2.0"
+keywords = ["database", "embedded", "LSM-tree", "persistence"]
+homepage = "https://github.com/ETCDEVTeam/emerald-rocksdb"
+exclude = [
+    ".gitignore",
+    ".travis.yml",
+    "deploy.sh",
+    "test/**/*",
+]
+
+[features]
+default = []
+valgrind = []
+
+[dependencies]
+libc = "0.2"
+emerald-librocksdb-sys = { path = "librocksdb-sys", version = "5.11.3" }

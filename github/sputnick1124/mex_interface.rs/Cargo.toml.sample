@@ -1,0 +1,14 @@
+[package]
+name = "mex_interface"
+version = "0.1.0"
+authors = ["stocktonno"]
+
+[lib]
+name = "mex_interface"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "0.2.0"
+
+[build-dependencies]
+bindgen = "0.26.3"

@@ -1,0 +1,10 @@
+[package]
+name = "ring"
+version = "0.1.0"
+authors = ["Takafumi Hirata <takhirata6@gmail.com>"]
+
+[dependencies.socket]
+git = "https://github.com/totem3/rust-socket.git"
+
+[dependencies]
+libc = "*"

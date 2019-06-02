@@ -1,0 +1,18 @@
+[package]
+name = "video-metadata"
+version = "0.1.4"
+authors = [
+  "Guillaume Gomez <guillaume1.gomez@gmail.com>",
+  "Emilio Cobos Álvarez <ecoal95@gmail.com>"
+]
+
+description = "Video metadata parser"
+repository = "https://github.com/guillaumegomez/video-metadata-rs"
+license = "MIT"
+
+[lib]
+name = "video_metadata"
+
+[dependencies]
+ogg_metadata = "0.3"
+mp4parse = { git = "https://github.com/GuillaumeGomez/mp4parse-rust" }

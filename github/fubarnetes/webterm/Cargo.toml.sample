@@ -1,0 +1,32 @@
+[package]
+name = "webterm"
+version = "0.1.0"
+authors = ["fabian.freyer@physik.tu-berlin.de"]
+edition = "2018"
+license = "BSD-3-Clause"
+
+[dependencies]
+actix-web= "0.7.19"
+actix= "0.7.9"
+askama = { version = "0.8.0", features= ["with-actix-web"] }
+futures = "0.1.27"
+libc = "0.2.56"
+log = "0.4.6"
+pretty_env_logger = "0.3.0"
+serde = "1.0.91"
+serde_json = "1.0.39"
+tokio = "0.1.21"
+tokio-codec= "0.1.1"
+tokio-io= "0.1.12"
+tokio-pty-process = "*"
+
+[patch.crates-io]
+tokio-pty-process = {path = "vendor/stund/tokio-pty-process"}
+
+[lib]
+name = "webterm"
+path = "src/lib.rs"
+
+[[bin]]
+name = "webterm-server"
+path = "src/server.rs"

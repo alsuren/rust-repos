@@ -1,0 +1,13 @@
+[package]
+name = "grunge"
+version = "0.0.1"
+authors = [ "atheriel@gmail.com" ]
+
+[[lib]]
+name = "grunge"
+
+[dependencies.cgmath]
+git = "https://github.com/bjz/cgmath-rs.git"
+
+[dependencies.image]
+git = "https://github.com/PistonDevelopers/rust-image.git"

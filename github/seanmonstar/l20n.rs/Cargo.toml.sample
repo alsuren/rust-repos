@@ -1,0 +1,12 @@
+[package]
+
+name = "l20n"
+version = "0.1.2"
+authors = ["Sean McArthur <sean.monstar@gmail.com"]
+license = "MIT"
+description = "Deprecated l20n implementation. Look for https://github.com/projectfluent/fluent-rs instead."
+repository = "https://github.com/seanmonstar/l20n.rs"
+keywords = []
+
+[dependencies]
+serde = "0.6"

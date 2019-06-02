@@ -1,0 +1,18 @@
+[package]
+name = "overseer_voxel"
+version = "0.1.0"
+authors = ["Aceeri <conmcclusk@gmail.com>"]
+
+[dependencies]
+cgmath = "0.9.1"
+collision = { path = "../collision-rs" }
+num-traits = "0.1.32"
+glutin = "0.5.0"
+gfx = "0.11.0"
+gfx_core = "0.3.0"
+gfx_device_gl = "0.10.0"
+gfx_window_glutin = "0.11.0"
+time = "0.1.35"
+regex = "0.1.68"
+rand = "0.3"
+bit-set = "0.4.0"

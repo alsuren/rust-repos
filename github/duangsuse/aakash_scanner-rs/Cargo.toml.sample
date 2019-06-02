@@ -1,0 +1,13 @@
+[package]
+name = "aakash_scanner"
+description="simple tool for detecting 阿三 in Chinese telegram groups"
+version = "0.1.0"
+authors = ["duangsuse <fedora-opensuse@outlook.com>"]
+
+[dependencies]
+regex = "0.2.2"
+telebot = "0.1.1"
+rustbreak = "1.3.0"
+tokio-core = "0.1.9"
+futures = "0.1.14"
+lazy_static= "0.2"

@@ -1,0 +1,14 @@
+[package]
+name = "grafanotate"
+version = "0.1.0"
+authors = ["Grant <ghunter@drivewyze.com>"]
+
+[dependencies]
+slack = "*"
+chrono = "*"
+hyper = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+toml = "*"
+rustc-serialize = "*"

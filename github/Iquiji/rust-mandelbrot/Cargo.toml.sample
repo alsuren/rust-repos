@@ -1,0 +1,13 @@
+[package]
+name = "rust-mandelbrot-manualrank"
+version = "0.1.1"
+authors = ["iquiji"]
+
+[dependencies]
+image = "0.20"
+num = "0.2"
+hsl = "0.1"
+indicatif = "0.9"
+rayon = "1"
+rug = "1.2"
+

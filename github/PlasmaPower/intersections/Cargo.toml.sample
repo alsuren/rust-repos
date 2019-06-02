@@ -1,0 +1,24 @@
+[package]
+authors = ["Lee Bousfield <ljbousfield@gmail.com>"]
+name = "gene-seq-intersections"
+description = "Count intersections between genes and sequences"
+repository = "https://github.com/plasmapower/intersections"
+readme = "README.md"
+version = "0.3.1"
+license = "MIT"
+
+[[bin]]
+name = "intersections"
+path = "src/main.rs"
+
+[dependencies]
+clap = {version = "2", features = ["yaml"]}
+csv = "1.0.0-beta.3"
+env_logger = "0.4"
+jobsteal = "0.5"
+log = "0.3"
+serde = "1"
+serde_derive = "1"
+twox-hash = "1"
+typed-arena = "1"
+fnv = "1"

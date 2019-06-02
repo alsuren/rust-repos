@@ -1,0 +1,16 @@
+[package]
+name = "yaal"
+description = "Yet another Acestream launcher"
+version = "0.1.0"
+authors = ["Jose Narvaez <goyox86@gmail.com>"]
+
+[dependencies]
+clap = "2.29.0"
+colored = "1.6.0"
+failure = "0.1.1"
+lazy_static = "1.0"
+notify-rust = "3.4.2"
+rexpect = "0.2.0"
+sha1 = "0.4.0"
+spinners = "1.0.0"
+sysinfo = "0.4.1"

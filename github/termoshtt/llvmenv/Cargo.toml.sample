@@ -1,0 +1,33 @@
+[package]
+name = "llvmenv"
+version = "0.2.2-alpha.1"
+authors = ["Toshiki Teramura <toshiki.teramura@gmail.com>"]
+
+description   = "Manage LLVM/Clang builds"
+documentation = "https://docs.rs/llvmenv"
+repository    = "https://github.com/termoshtt/llvmenv"
+keywords      = ["env", "llvm", "clang"]
+license       = "MIT"
+readme        = "README.md"
+categories    = []
+
+edition = '2018'
+
+[dependencies]
+dirs = "2.0"
+env_logger = "0.6"
+failure = "0.1"
+fs_extra = "1.1"
+glob = "0.3"
+itertools = "0.8"
+log = "0.4"
+num_cpus = "1"
+regex = "1"
+reqwest = "0.9"
+serde = "1"
+serde_derive = "1"
+shellexpand = "1"
+structopt = "0.2"
+tempfile= "3"
+toml = "0.5"
+url = "1"

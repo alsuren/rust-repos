@@ -1,0 +1,14 @@
+[package]
+name = "typenum-ratio"
+version = "0.2.0"
+authors = ["Dylan MacKenzie <ecstaticmorse@gmail.com>"]
+license = "MIT"
+description = "Compile-time rational arithmetic using typenum"
+readme = "README.md"
+
+[dependencies]
+typenum = "1.10.0"
+
+[patch.crates-io.typenum]
+git = "https://github.com/ecstatic-morse/typenum"
+branch = "gcd"

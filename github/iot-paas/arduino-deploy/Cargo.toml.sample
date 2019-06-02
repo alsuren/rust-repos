@@ -1,0 +1,9 @@
+[package]
+name = "arduino-deploy"
+version = "0.1.0"
+authors = ["Dawson Freitas Israel <dawsonfi@gmail.com>"]
+
+[dependencies]
+mqtt3 = "*"
+netopt = "*"
+mqttc = "*"

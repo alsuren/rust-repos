@@ -1,0 +1,17 @@
+[package]
+name = "rust_random_text_generation"
+version = "0.1.0"
+authors = ["joakin <joaquin@chimeces.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+clap = "2"
+actix-web = "0.7"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "sentence_generator"
+harness = false

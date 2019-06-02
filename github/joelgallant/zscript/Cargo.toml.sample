@@ -1,0 +1,9 @@
+[package]
+name = "zscript"
+version = "0.1.0"
+authors = ["Joel Gallant <joel@joelgallant.me>"]
+edition = "2018"
+
+[dependencies]
+snafu = "0.2"
+nom = "5.0.0-alpha2"

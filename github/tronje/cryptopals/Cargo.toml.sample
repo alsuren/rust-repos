@@ -1,0 +1,15 @@
+[package]
+name = "cryptopals"
+version = "0.2.0"
+authors = ["tronje <hi@tron.je>"]
+
+[lib]
+name = "cryptopals"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cryptopals_bin"
+path = "src/main.rs"
+
+[dependencies]
+rustc-serialize = "0.3"

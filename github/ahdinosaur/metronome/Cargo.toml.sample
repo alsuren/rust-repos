@@ -1,0 +1,11 @@
+[package]
+name = "metronome"
+version = "0.1.0"
+authors = ["Michael Williams <michael.williams@enspiral.com>"]
+
+[dependencies]
+num = "0.1"
+
+[dependencies.ncurses]
+version = "5.91.0"
+features = ["wide"]

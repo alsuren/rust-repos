@@ -1,0 +1,42 @@
+[package]
+name = "rust-api"
+version = "0.1.0"
+authors = ["alextanhongpin <alextan@seekasia.com>"]
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+rocket_contrib = "0.3.6"
+serde = "1.0.29"
+serde_json = "1.0.10"
+serde_derive = "1.0.29"
+r2d2 = "0.8.2"
+r2d2_postgres = "0.14.0"
+
+# At the time of writing, uuid version 0.5 is required for postgres
+[dependencies.uuid]
+version = "0.5"
+features = ["v4", "serde"]
+
+[dependencies.chrono]
+version = "0.4.0"
+features = ["serde"]
+
+[dependencies.postgres]
+version = "0.15.2"
+features = ["with-bit-vec", "with-chrono", "with-serde_json", "with-uuid"]
+
+[development]
+address = "localhost"
+port = 8000
+workers = 16
+log = "normal"
+limits = { forms = 32768 }
+
+# [production]
+# address = "0.0.0.0"
+# port = 80
+# workers = [number_of_cpus * 2]
+# log = "critical"
+# secret_key = [randomly generated at launch]
+# limits = { forms = 32768 }

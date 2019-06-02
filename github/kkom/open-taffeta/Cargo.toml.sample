@@ -1,0 +1,95 @@
+[package]
+authors = ["apiraino <apiraino@users.noreply.github.com>", "kkom <kkom@users.noreply.github.com>"]
+name = "open-taffeta"
+version = "0.3.0"
+edition = "2018"
+description = "Self-hosted website controlling access to a building."
+readme = "README"
+license = "MIT"
+
+[package.metadata.deb]
+maintainer = "apiraino <apiraino@users.noreply.github.com>"
+copyright = "2018-2019, apiraino <apiraino@users.noreply.github.com>"
+extended-description = "Self-hosted website controlling access to a building."
+depends = "$auto"
+section = "utility"
+priority = "optional"
+assets = [
+    ["target/release/open-taffeta", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/open-taffeta/README", "644"],
+    ["scripts/open-taffeta.service","etc/systemd/system/","644"],
+    ["scripts/settings","etc/open-taffeta/settings","644"],
+    ["Rocket.toml","etc/open-taffeta/Rocket.toml","644"],
+    ["app.db","etc/open-taffeta/app.db","644"]
+]
+
+[package.metadata.deb.variants.x86]
+assets = [
+    ["target/i686-unknown-linux-gnu/release/open-taffeta", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/open-taffeta/README", "644"],
+    ["scripts/open-taffeta.service","etc/systemd/system/","644"],
+    ["scripts/settings","etc/open-taffeta/settings","644"],
+    ["Rocket.toml","etc/open-taffeta/Rocket.toml","644"],
+    ["app.db","etc/open-taffeta/app.db","644"]
+]
+
+[package.metadata.deb.variants.armv6]
+assets = [
+    ["target/arm-unknown-linux-gnueabihf/release/open-taffeta", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/open-taffeta/README", "644"],
+    ["scripts/open-taffeta.service","etc/systemd/system/","644"],
+    ["scripts/settings","etc/open-taffeta/settings","644"],
+    ["Rocket.toml","etc/open-taffeta/Rocket.toml","644"],
+    ["app.db","etc/open-taffeta/app.db","644"]
+]
+
+[lib]
+name = "open_taffeta_lib"
+path = "src/lib.rs"
+
+[dependencies]
+rocket = { version = "0.4.1", features = ["tls"] }
+rocket_cors = "0.5.0"
+
+# validation for input struct deserialized
+validator = "0.8.0"
+validator_derive = "0.8.0"
+
+slug = "0.1.4"
+
+diesel = { version = "1.4.2", features = ["chrono", "sqlite", "r2d2"] }
+
+serde = "1.0.91"
+serde_derive = "1.0.91"
+serde_json = "1.0.39"
+
+env_logger = "0.6.1"
+log = "0.4.6"
+dotenv = "0.14.1"
+dotenv_codegen = "0.14.1"
+chrono = { version = "0.4.6", features = ["serde"] }
+reqwest = "0.9.17"
+rand = "0.6.5"
+audit = "0.1.1"
+openssl-sys = "0.9.47"
+sha1 = "0.6.0"
+crypto-hash = "0.3.3"
+
+[dependencies.rocket_contrib]
+version = "0.4.1"
+default-features = false
+features = ["json"]
+
+# commented out for xcompiling for Raspi1
+#[dependencies.libsqlite3-sys]
+#version = "0.12.0"
+#features = ["bundled"]
+
+# commented out for xcompiling for Raspi1
+#[dependencies.openssl-sys]
+#version = "0.9.41"
+#features = ["bundled"]
+
+# https://vfoley.xyz/rust-compile-speed-tips/#avoid-lto
+[profile.dev]
+lto=false

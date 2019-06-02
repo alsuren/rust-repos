@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "pmem-sys",
+    "pmemblk-sys",
+    "pmemlog-sys",
+    "pmemobj-sys",
+    "pmempool-sys",
+    "vmem-sys",
+    "vmmalloc-sys",
+]

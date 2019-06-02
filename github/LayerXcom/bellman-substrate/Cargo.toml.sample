@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "bellman",
+    "pairing",
+    "sapling-crypto",
+    "zcash_primitives",    
+    "bellman-verifier",
+    "jubjub",
+]
+
+[profile.release]
+lto = true
+panic = 'abort'
+codegen-units = 1

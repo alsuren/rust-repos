@@ -1,0 +1,11 @@
+[package]
+name = "totp-cli"
+version = "0.1.0"
+authors = ["Rodolphe Breard <rodolphe@what.tf>"]
+description = "Minimalist TOTP client without key persistence."
+repository = "https://github.com/breard-r/totp-cli"
+keywords = ["2fa", "totp"]
+license = "ISC"
+
+[dependencies]
+r2fa = "^0.4.0"

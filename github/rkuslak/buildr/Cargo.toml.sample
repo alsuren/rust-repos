@@ -1,0 +1,8 @@
+[package]
+name = "buildr"
+version = "0.0.1"
+authors = ["Ron Kuslak <rkuslak@outlook.com>"]
+
+[dependencies]
+build_engine = { path = "./build_engine" }
+getopts = "*"

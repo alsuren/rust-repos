@@ -1,0 +1,30 @@
+[package]
+name = "galvanic-assert"
+version = "0.9.0"
+authors = ["Christopher Bacher <mindsbackyard@gmail.com>"]
+
+description = """A comprehensive set of matcher-based assertions and expectations for easier testing.
+
+Supports checking properties of numbers, objects, enum variants, collections, panics, and more.
+Stuctural matching enables you to integrate matchers into struct decompositions for less code repetition.
+It's easy to write your own matchers for assertions too.
+This crate will be part of the galvanic test framework (in development).
+You can also use the assertions in another test framework of your choice.
+Works on: stable, beta, and nightly"""
+
+homepage = "https://github.com/mindsbackyard/galvanic-assert"
+repository = "https://github.com/mindsbackyard/galvanic-assert"
+documentation = "https://docs.rs/galvanic-assert"
+
+readme = "Readme.md"
+
+license = "Apache-2.0"
+
+keywords = ["test", "assert", "matching", "fluent", "hamcrest"]
+categories = ["development-tools::testing"]
+
+[badges]
+travis-ci = { repository = "mindsbackyard/galvanic-assert" }
+
+[dev-dependencies]
+tempfile = "^3"

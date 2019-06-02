@@ -1,0 +1,24 @@
+[package]
+name = "fp_rust"
+version = "0.1.39"
+license = "MIT"
+authors = ["JunYi JohnTeee Lee <johnteee@gmail.com>"]
+include = ["src/**/*.rs", "Cargo.toml"]
+readme = "README.md"
+description = "Implement fp features for Rust"
+documentation = "https://docs.rs/fp_rust/"
+homepage = "https://github.com/TeaEntityLab/fpRust"
+repository = "https://github.com/TeaEntityLab/fpRust"
+keywords = ["functional","rx","monad","optional","pubsub"]
+
+[badges.maintenance]
+status = "actively-developed"
+
+[lib]
+name = "fp_rust"
+path = "src/lib.rs"
+
+[features]
+default = []
+
+[dependencies]

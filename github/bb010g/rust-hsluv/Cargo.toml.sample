@@ -1,0 +1,18 @@
+[package]
+authors = ["Brayden Banks <bb010g@gmail.com>"]
+categories = ["encoding"]
+description = "Human-friendly HSL (revision 4)"
+keywords = ["color", "husl", "hsl", "luv", "rgb"]
+license = "MIT"
+name = "hsluv"
+readme = "README.md"
+repository = "https://github.com/bb010g/rust-hsluv.git"
+version = "0.2.0"
+exclude = ["snapshot*.json"]
+
+[dev-dependencies]
+json = "0.11.13"
+lazy_static = "1.0.0"
+
+[badges]
+travis-ci = { repository = "https://github.com/bb010g/rust-hsluv.git" }

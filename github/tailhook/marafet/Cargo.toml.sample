@@ -1,0 +1,30 @@
+[package]
+
+name = "marafet"
+description = "The template to virtual dom preprocessor"
+license = "MIT"
+readme = "README.rst"
+keywords = ["templates", "js", "css"]
+homepage = "http://github.com/tailhook/marafet"
+version = "0.1.0"
+authors = ["paul@colomiets.name"]
+
+[dependencies]
+unicode-segmentation = "*"
+argparse = "*"
+
+[dependencies.marafet_util]
+path = "marafet_util"
+
+[dependencies.marafet_parser]
+path = "marafet_parser"
+
+[dependencies.marafet_css]
+path = "marafet_css"
+
+[dependencies.marafet_es5citojs]
+path = "marafet_es5citojs"
+
+[[bin]]
+name = "marafet"
+path = "src/main.rs"

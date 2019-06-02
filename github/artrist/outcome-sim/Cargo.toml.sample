@@ -1,0 +1,29 @@
+[package]
+name = "outcome"
+version = "0.3.1"
+authors = ["Adam Adamsky <adamadamsky@protonmail.com>"]
+description = "World simulation engine library."
+homepage = "https://github.com/adamsky/outcome"
+readme = "README.md"
+license-file = "LICENSE"
+
+[dependencies]
+serde = "1.0.33"
+serde_derive = "1.0.33"
+serde_yaml = "0.7.3"
+serde_json = "1.0.11"
+rayon = "1.0.1"
+semver = "0.9.0"
+log = "0.4.6"
+strsim = "0.8.0"
+flate2 = "1.0.6"
+caldyn = "0.4.3"
+getopts = "0.2.18"
+rlua = "0.16.2"
+image = "0.21.0"
+libloading = "0.5.0"
+regex = "1.1.5"
+dunce = "1.0.0"
+
+[dev-dependencies]
+simplelog = "0.5.3"

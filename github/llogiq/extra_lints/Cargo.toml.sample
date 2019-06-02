@@ -1,0 +1,16 @@
+[package]
+
+name = "extra_lints"
+version = "0.0.1"
+authors = [ "Andre Bogus <bogusandre@gmail.com>" ]
+license = "MIT"
+keywords = ["lint"]
+description = "Catch more bugs"
+
+[lib]
+name = "extra_lints"
+plugin = true
+crate_type = ["dylib"]
+
+[dev-dependencies.compiletest]
+git = "https://github.com/laumann/compiletest-rs.git"

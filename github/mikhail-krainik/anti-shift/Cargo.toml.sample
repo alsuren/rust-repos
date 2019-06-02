@@ -1,0 +1,9 @@
+[package]
+name = "test_rscam"
+version = "0.1.0"
+authors = ["Mikhail Krainik"]
+
+[dependencies]
+rscam = "0.5.4"
+chrono = "0.4.4"
+dbus = "0.6.2"

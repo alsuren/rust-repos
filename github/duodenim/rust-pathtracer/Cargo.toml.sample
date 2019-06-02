@@ -1,0 +1,11 @@
+[package]
+name = "rust-pathtracer"
+version = "0.1.0"
+authors = ["Joseph Schulte <schulteajoseph@gmail.com>"]
+
+[dependencies]
+rand = "0.5.5"
+png = "0.13.1"
+rayon = "1.0.3"
+obj = "0.9.0"
+clap = "2.32.0"

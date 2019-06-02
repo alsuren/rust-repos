@@ -1,0 +1,9 @@
+[package]
+name = "configurator"
+version = "0.1.0"
+authors = ["Wendell Smith <wackywendell@gmail.com>"]
+
+[dependencies]
+getopts = "^0.2.14"
+# getopts = { git = "https://github.com/wackywendell/getopts", branch="iteropts" }
+toml = "^0.1.23"

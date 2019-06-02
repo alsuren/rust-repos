@@ -1,0 +1,16 @@
+[package]
+
+name = "se-toolkit"
+version = "0.0.1"
+
+[dependencies]
+rustful = "0.5"
+cassandra="*"
+cql_bindgen = "0.1.*"
+
+
+#[dependencies.cassandra]
+#git = "http://github.com/phact/cassandra-rs"
+
+#[dependencies.cql_bindgen]
+#git = "https://github.com/phact/cql-bindgen"

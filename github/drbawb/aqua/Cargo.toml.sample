@@ -1,0 +1,55 @@
+[package]
+name = "aqua"
+version = "0.1.0"
+authors = ["Robbie Straw <drbawb@fatalsyntax.com>"]
+
+[workspace]
+
+[[bin]]
+name = "aqua"
+
+[[bin]]
+name = "aqua-find"
+path = "src/bin/aqua_find.rs"
+doc = false
+
+[[bin]]
+name = "aqua-thumbfix"
+path = "src/bin/aqua_thumbfix.rs"
+doc = false
+
+[[bin]]
+name = "aqua-watch"
+path = "src/bin/aqua_watch.rs"
+doc = false
+
+[[bin]]
+name = "import"
+path = "src/bin/import.rs"
+doc = false
+
+[dependencies]
+aqua-web = { version = "0.1.0", path = "aqua-web" }
+clap = "2.0"
+conduit = "0.8"
+diesel = { version = "0.10", features = ["postgres"] }
+diesel_codegen = { version = "0.10", features = ["postgres"] }
+dotenv = "0.8"
+env_logger = "0.3"
+glob = "0.2"
+handlebars = { version = "0.25", features = ["serde_type"] }
+image = "0.10"
+log = "0.3"
+mime_guess = "1.8"
+notify = "4.0"
+r2d2 = "0.7"
+r2d2-diesel = "0.10"
+rust-crypto = "0.2"
+rusqlite = { version = "0.9", features = ["bundled"] }
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+time = "0.1"
+
+[dependencies.conduit-hyper]
+git = "https://github.com/sfackler/conduit-hyper"

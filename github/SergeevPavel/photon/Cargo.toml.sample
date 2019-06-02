@@ -1,0 +1,25 @@
+[package]
+name = "photon"
+version = "0.1.0"
+authors = ["Pavel Sergeev <pavel.sergeev@jetbrains.com>"]
+edition = "2018"
+
+[dependencies]
+log = "*"
+glutin = "0.19.0"
+gleam = "0.6.15"
+euclid = "0.19.5"
+env_logger = "0.6.0"
+app_units = "0.7.1"
+byteorder = "1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+fxhash = "0.2.1"
+crossbeam = "*"
+thread_profiler = { version = "*", features = ["thread_profiler"] }
+
+[dependencies.webrender]
+git = "https://github.com/servo/webrender"
+rev = "e2dd5aa76af2775f1da110f70c6a05159bd725d5"
+# features = ["pathfinder"]
+# features = ["thread_profiler"]

@@ -1,0 +1,17 @@
+[package]
+name = "game-of-life"
+version = "0.1.0"
+authors = ["Dominik Moritz <domoritz@gmail.com>"]
+license = "MIT"
+readme = "Readme.md"
+
+[dependencies]
+maplit = "0.1.3"
+
+[lib]
+name = "gollib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "game"
+path = "src/main.rs"

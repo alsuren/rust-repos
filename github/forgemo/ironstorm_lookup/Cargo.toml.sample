@@ -1,0 +1,16 @@
+[package]
+name = "ironstorm_lookup"
+version = "1.0.2"
+authors = ["Mohammed El Batya"]
+license = "MIT OR Apache-2.0"
+description     = "Lightning fast lookup table for auto completion, type ahead, suggestion engines."
+documentation   = "http://forgemo.github.io/docs/ironstorm_lookup/ironstorm_lookup"
+homepage        = "https://github.com/forgemo/ironstorm_lookup/blob/master/README.md"
+repository      = "https://github.com/forgemo/ironstorm_lookup"
+readme          = "README.md"
+keywords        = ["lookup", "suggestion", "typeahead",  "completion", "suffix"]
+
+
+[dependencies]
+suffix = "0.4"
+itertools = "0.4"

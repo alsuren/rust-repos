@@ -1,0 +1,28 @@
+cargo-features = ["edition"]
+
+[package]
+edition = "2018"
+name = "tprime"
+version = "0.0.0"
+authors = ["Jeremy Banks <_@jeremy.ca>"]
+
+[lib]
+path = "src/web.rs"
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "tprime"
+path = "src/bin.rs"
+
+[dependencies]
+wasm-bindgen = {version = "^0.2.15", features = ["serde-serialize"]}
+js-sys = "0.2.0"
+web-sys = "0.0.1"
+serde="1.0.71"
+serde_derive="1.0.71"
+serdebug="1.0.5"
+rand="0.5.5"
+rand_core="0.2.1"
+log="0.4.3"
+env_logger="0.5.12"
+

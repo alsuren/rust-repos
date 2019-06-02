@@ -1,0 +1,7 @@
+[package]
+name = "seo2"
+version = "0.1.0"
+authors = ["laarmen"]
+
+[dependencies]
+nom-lua53 = { git = "https://github.com/doomrobo/nom-lua53"}

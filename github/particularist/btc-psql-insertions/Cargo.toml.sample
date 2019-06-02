@@ -1,0 +1,13 @@
+[package]
+name = "btc-psql-insertions"
+version = "0.1.0"
+authors = ["Ray Diaz <rdiaz@tendrilinc.com>"]
+
+[dependencies]
+postgres = "0.15"
+flate2 = "1.0"
+csv = "1"
+quicli = "0.3"
+serde = "1.0.80"
+serde_derive = "1.0.80"
+serde_bytes = "0.10.4"

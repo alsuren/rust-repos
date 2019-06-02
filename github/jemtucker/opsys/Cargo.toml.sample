@@ -1,0 +1,28 @@
+[package]
+name = "opsys"
+version = "0.1.0"
+authors = ["Jem Tucker <jem.tucker@gmail.com>"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0"
+spin = "0.4"
+bitflags = "0.7.0"
+once = "0.2.1"
+multiboot2 = "0.1.0"
+x86_64 = "0.1.2"
+
+[dependencies.x86]
+version = "0.7.0"
+default-features = false
+
+[dependencies.alloc_opsys]
+path = "libs/alloc_opsys"

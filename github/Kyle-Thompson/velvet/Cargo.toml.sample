@@ -1,0 +1,18 @@
+[package]
+name = "messenger"
+version = "0.1.0"
+authors = ["Kyle Thompson <kyle.thompson228@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+crossbeam = "0.2"
+rand = "0.3"
+rust-crypto = "^0.2"
+
+[[bin]]
+path = "src/client.rs"
+name = "client"
+
+[[bin]]
+path = "src/server.rs"
+name = "server"

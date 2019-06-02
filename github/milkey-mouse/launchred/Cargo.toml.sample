@@ -1,0 +1,10 @@
+[package]
+name = "launchred"
+version = "0.1.0"
+authors = ["Milkey Mouse <milkeymouse@meme.institute>"]
+edition = "2018"
+
+[dependencies]
+ansi_term = "0.11.0"
+openpty = "0.1.0"
+libc = "0.2.49"

@@ -1,0 +1,15 @@
+[package]
+name = "joy"
+version = "0.1.0"
+authors = ["Kevin Rauwolf <sweetpea-git@tentacle.net>"]
+
+[dependencies]
+hyper = "*"
+serde = "*"
+serde_json = "*"
+iron = "*"
+handlebars = "*"
+handlebars-iron = "*"
+logger = "*"
+error-chain = "*"
+time = "*"

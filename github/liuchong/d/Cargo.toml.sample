@@ -1,0 +1,26 @@
+[package]
+name = "d"
+version = "0.0.1"
+authors = ["Liu Chong <mail@liuchong.io>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/liuchong/d"
+homepage = "https://github.com/liuchong/d"
+documentation = "https://docs.rs/d"
+description = """
+D is a simple standalone httpd.
+"""
+keywords = ["d", "httpd", "http-server", "http", "server"]
+
+[dependencies]
+clap = "2.32"
+futures = "0.1"
+futures-fs = { git = "https://github.com/liuchong/futures-fs.git" }
+hyper = "0.12"
+log = "0.4"
+mime_guess = "1.8"
+num_cpus = "1.0"
+percent-encoding = "1.0"
+pretty_env_logger = "0.3"
+regex = "1.1"
+tokio-fs = "0.1"

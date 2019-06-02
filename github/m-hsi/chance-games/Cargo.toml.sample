@@ -1,0 +1,8 @@
+[workspace]
+name = "chance_games"
+version = "0.1.0"
+authors = ["Michael Hsi <tsaiyu.hsi@gmail.com>"]
+members = [ "accessories", "games" ]
+
+[profile.release]
+panic = 'abort'

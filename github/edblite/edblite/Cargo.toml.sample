@@ -1,0 +1,7 @@
+[package]
+name = "edblite"
+version = "0.1.0"
+authors = ["Germán Fuentes Capella <german.fuentescapella@edblite.org>"]
+
+[dependencies]
+url = { git = "https://github.com/servo/rust-url" }

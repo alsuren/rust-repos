@@ -1,0 +1,14 @@
+[package]
+name = "inflector"
+version = "0.1.0"
+authors = ["Nathan Faucett <nathanfaucett@gmail.com>"]
+
+keywords = ["inflector"]
+description = "inflector for rust"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-inflector.git"
+homepage = "https://github.com/nathanfaucett/rs-inflector"
+
+[dependencies]
+regex = {version ="0.2"}

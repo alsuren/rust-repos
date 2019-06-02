@@ -1,0 +1,31 @@
+[package]
+name = "rhd"
+version = "0.0.1-pre"
+authors = ["Jason Ozias <jason.ozias@ipaper.com>"]
+description = "Rusty Horde Daemon"
+documentation = "http://rustyhorde.github.io/rhd"
+homepage = "http://rustyhorde.github.io/rhd"
+repository = "https://github.com/rustyhorde/rhd"
+readme = "README.md"
+license = "MIT"
+keywords = ["rust","rustyhorde","rhd"]
+build = "build.rs"
+
+[build-dependencies]
+vergen = "*"
+
+[dependencies]
+docopt = "*"
+libmultilog = "*"
+log = "*"
+rand = "*"
+regex = "*"
+rustc-serialize = "*"
+time = "*"
+toml = "*"
+
+[dependencies.librhd]
+git = "https://github.com/rustyhorde/librhd.git"
+
+[dependencies.mio]
+git = "https://github.com/rustyhorde/mio.git"

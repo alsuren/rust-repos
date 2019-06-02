@@ -1,0 +1,10 @@
+[package]
+name = "hello_cargo"
+version = "0.1.0"
+authors = ["gearle"]
+edition = "2018"
+
+[dependencies]
+rand = "0.3"
+piston = "*"
+piston_window = "*"

@@ -1,0 +1,9 @@
+[package]
+name = "matasano"
+version = "0.1.0"
+authors = ["Ben Frengley <ben.frengley@gmail.com>"]
+
+[dependencies]
+assert_approx_eq = "1.0.0"
+aes = "0.3.1"
+block-modes = "0.2.0"

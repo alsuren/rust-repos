@@ -1,0 +1,17 @@
+[package]
+authors = ["Curtis McEnroe <programble@gmail.com>"]
+name = "viola"
+version = "0.0.0"
+
+[[bin]]
+name = "vio"
+
+[[test]]
+name = "property"
+path = "tests/property/test.rs"
+
+[dependencies]
+
+[dev-dependencies]
+quickcheck = "0.3.1"
+quickcheck_macros = "0.2.28"

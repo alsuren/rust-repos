@@ -1,0 +1,39 @@
+[package]
+name = "lights"
+version = "0.1.0"
+authors = ["Aleksey Kladov <aleksey.kladov@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+cgmath = "0.7"
+env_logger = "0.3"
+gl = "0.5"
+image = "0.6"
+itertools = "0.4"
+log = "0.3"
+quick-error = "0.2"
+time = "0.1"
+tobj = "0.1"
+
+[dependencies.glium]
+version = "0.13"
+features = ["glutin"]
+
+[profile.release]
+debug = true
+
+[[bin]]
+name = "mirror"
+path = "src/bin/mirror/main.rs"
+
+[[bin]]
+name = "crysis"
+path = "src/bin/crysis/main.rs"
+
+[[bin]]
+name = "spot"
+path = "src/bin/spot/main.rs"
+
+[[bin]]
+name = "army"
+path = "src/bin/army/main.rs"

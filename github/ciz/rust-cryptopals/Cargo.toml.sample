@@ -1,0 +1,22 @@
+[package]
+
+name = "cryptopals"
+version = "0.0.1"
+authors = ["Vítězslav Čížek <civ@blema.cz>"]
+
+[dependencies.openssl]
+git = "https://github.com/sfackler/rust-openssl"
+
+[dependencies.rust-crypto]
+git = "https://github.com/DaGenix/rust-crypto"
+
+[dependencies.rustful]
+git = "https://github.com/Ogeon/rustful"
+
+[[bin]]
+name = "webs"
+path = "src/webs/main.rs"
+
+[[bin]]
+name = "cryptopals"
+path = "src/main.rs"

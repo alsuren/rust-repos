@@ -1,0 +1,40 @@
+[package]
+name = "my_parser"
+version = "0.1.0"
+authors = ["石博文 <sbw@sbw.so>"]
+build = "src/build.rs"
+
+[lib]
+name = "parser"
+path = "src/lib.rs"
+
+[[example]]
+name = "lexer"
+[[example]]
+name = "parser_struct"
+[[example]]
+name = "parser_boolean_expr"
+[[example]]
+name = "parser_test_c"
+[[example]]
+name = "parser_expr"
+[[example]]
+name = "parser_assign_stmt"
+[[example]]
+name = "type_analyzer"
+[[example]]
+name = "llvm_ir_gen"
+[[example]]
+name = "clint"
+path = "examples/programs/clint.rs"
+[[example]]
+name = "llvm"
+path = "examples/programs/llvm.rs"
+
+[dependencies]
+id_tree = "*"
+llvm-sys = "60"
+matches = "*"
+log = "*"
+env_logger = "*"
+inkwell = { git = "https://github.com/TheDan64/inkwell", branch = "llvm6-0" }

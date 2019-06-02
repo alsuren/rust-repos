@@ -1,0 +1,22 @@
+[package]
+name = "speechtux"
+version = "0.1.0"
+authors = ["Ferry Jérémie <ferryjeremie@free.fr>"]
+
+[lib]
+name = "speechtux"
+crate-type = ["rlib", "dylib"]
+
+[dependencies]
+tempfile = "3"
+libc = "0.2"
+rocket = "0.4"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+uuid = { version = "0.7", features = ["v4"] }
+
+[dependencies.rocket_contrib]
+version = "0.4.0"
+default-features = false
+features = ["json"]

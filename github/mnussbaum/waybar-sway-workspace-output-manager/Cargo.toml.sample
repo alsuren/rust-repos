@@ -1,0 +1,21 @@
+[package]
+name = "waybar-sway-workspace-output-manager"
+version = "0.2.0"
+authors = ["mnussbaum <michaelnussbaum08@gmail.com>"]
+edition = "2018"
+description = "A daemon that outputs Waybar custom module text for Sway workspaces"
+documentation = "https://github.com/mnussbaum/waybar-sway-workspace-output-manager"
+homepage = "https://github.com/mnussbaum/waybar-sway-workspace-output-manager"
+repository = "https://github.com/mnussbaum/waybar-sway-workspace-output-manager"
+readme = "README.md"
+
+keywords = ["sway", "waybar"]
+license = "MIT"
+
+[dependencies]
+dirs = "1.0"
+failure = "0.1"
+i3ipc = "0.9"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"

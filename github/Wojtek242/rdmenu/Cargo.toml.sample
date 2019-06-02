@@ -1,0 +1,17 @@
+[package]
+name = "rdmenu"
+version = "0.0.1"
+authors = ["Wojciech Kozlowski <wk@wojciechkozlowski.eu>"]
+license = "AGPL-3.0"
+keywords = ["wm"]
+repository = "https://github.com/Wojtek242/rwm"
+homepage = "https://github.com/Wojtek242/rwm"
+documentation = "https://docs.rs/rwm"
+description = """
+Library for the rdmenu launcher.
+"""
+
+[dependencies]
+clap = "2"
+libc = "0.2"
+structopt = "0.2"

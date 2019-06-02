@@ -1,0 +1,16 @@
+[package]
+name = "rsg2"
+version = "0.1.0"
+authors = ["aliang <aliang2344@gmail.com>"]
+
+[dependencies]
+time = "0.1"
+mio = "0.4"
+
+[[bin]]
+name = "entry"
+path = "src/entry.rs"
+
+[[bin]]
+name = "receiver"
+path = "src/receiver.rs"

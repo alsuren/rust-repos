@@ -1,0 +1,13 @@
+[package]
+
+name = "InChain"
+version = "0.0.1"
+authors = ["Chris Garrett <cmg@pzuraq.co>"]
+
+[dependencies.curl]
+
+git = "https://github.com/carllerche/curl-rust"
+
+[[bin]]
+
+name = "in_chain"

@@ -1,0 +1,17 @@
+[package]
+name = "test"
+version = "0.2.5"
+authors = ["Valentine Valyaeff <valentine.valyaeff@gmail.com>"]
+description = "Drone RTOS test runtime"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/drone-os/drone-test"
+
+[dependencies]
+sc = "0.2"
+
+[features]
+panic_item = []
+default = []
+
+[lib]

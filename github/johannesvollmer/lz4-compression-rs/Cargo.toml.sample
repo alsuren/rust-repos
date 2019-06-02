@@ -1,0 +1,16 @@
+[package]
+name = "lz4-compression"
+version = "0.6.0"
+authors = ["johannesvollmer <johannes.boenki@t-online.de>, ticki <Ticki@users.noreply.github.com>"]
+edition = "2018"
+
+description = "Pure Rust implementation of LZ4 compression and decompression as a library"
+keywords = ["compression", "lz4", "compress", "decompression", "decompress"]
+categories = [ "algorithms", "compression", "encoding" ]
+license = "MIT"
+readme = "README.md"
+
+repository = "https://github.com/johannesvollmer/lz4-compression-rs"
+
+[dependencies]
+byteorder = "1.3.1"

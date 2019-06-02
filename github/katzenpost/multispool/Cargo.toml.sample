@@ -1,0 +1,40 @@
+[package]
+name = "multispool"
+version = "0.0.0"
+authors = ["David Stainton <dawuud@riseup.net>"]
+
+[lib]
+doctest = false
+
+[dependencies]
+futures = "0.1.*"
+futures-cpupool = "0.1.*"
+log = "0.4.3"
+log4rs = "0.8.0"
+clap = "2.32.0"
+sled = "0.19.0"
+sphinxcrypto = "0.0.19"
+base64 = "0.10.1"
+byteorder = "1.2.6"
+arrayref = "0.3.5"
+ed25519-dalek = "1.0.0-pre.1"
+serde = "1.0.89"
+serde_cbor = "0.9.0"
+serde_derive = "1.0.89"
+serde_bytes = "0.10.5"
+hyperlocal = "0.6.0"
+hyper = "0.12.25"
+
+[dependencies.rand]
+version = "0.6"
+features = ["i128_support"]
+
+[dev-dependencies]
+tempfile = "3.0.5"
+
+[build-dependencies]
+protoc-rust-grpc = "0.5.0"
+
+[[bin]]
+name = "spool_server"
+test = false

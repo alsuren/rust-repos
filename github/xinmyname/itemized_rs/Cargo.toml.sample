@@ -1,0 +1,9 @@
+[package]
+name = "itemized_rs"
+version = "0.1.0"
+authors = ["Andy Sherwood <sherwooda@cleanwaterservices.org>"]
+
+[dependencies]
+regex = "0.2.2"
+lazy_static = "0.2.8"
+

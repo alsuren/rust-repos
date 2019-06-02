@@ -1,0 +1,15 @@
+[package]
+name = "rust-buildpack-example-actix"
+version = "0.1.0"
+authors = ["Eric Kidd <git@randomhacks.net>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "0.7"
+env_logger = "*"
+futures = "*"
+log = "*"
+postgres = "*"
+r2d2_postgres = "*"
+serde = "*"
+serde_derive = "*"

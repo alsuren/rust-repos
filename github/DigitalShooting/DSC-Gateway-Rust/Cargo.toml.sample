@@ -1,0 +1,8 @@
+[package]
+name = "dsc-gateway-rust"
+version = "0.1.0"
+authors = ["Jannik Lorenz <dev@janniklorenz.de>"]
+
+[dependencies]
+
+mdns = "0.3.1"

@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    "build-tools",
+    "oatie",
+    "edit-common",
+    "edit-server",
+    "edit-client",
+]
+
+[profile.dev]
+debug = true
+
+[profile.release]
+debug = true
+
+[patch.crates-io]
+wasm-bindgen = { git = "http://github.com/tcr/wasm-bindgen", rev = "90193ea" }
+wasm-bindgen-cli-support = { git = "http://github.com/tcr/wasm-bindgen", rev = "90193ea" }
+wasm-bindgen-shared = { git = "http://github.com/tcr/wasm-bindgen", rev = "90193ea" }
+web-sys = { git = "http://github.com/tcr/wasm-bindgen", rev = "90193ea" }
+js-sys = { git = "http://github.com/tcr/wasm-bindgen", rev = "90193ea" }

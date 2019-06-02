@@ -1,0 +1,13 @@
+[package]
+name = "prometheus"
+version = "0.1.0"
+authors = ["Moises Silva <moises.silva@gmail.com>"]
+
+[dependencies]
+tiny_http = "0.5.5"
+sys-info = "0.4.1"
+time = "0.1.35"
+log = "*"
+slog = "0.7.0"
+slog-term = "0.7.0"
+slog-stdlog = "0.7.0"

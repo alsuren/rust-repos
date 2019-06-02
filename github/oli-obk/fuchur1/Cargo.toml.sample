@@ -1,0 +1,8 @@
+[package]
+
+name = "fuchur_beschaeftigung"
+version = "0.0.1"
+authors = ["oliver"]
+
+[dependencies.gosu-rs]
+git = "https://github.com/oli-obk/gosu-rs.git"

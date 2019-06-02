@@ -1,0 +1,12 @@
+[package]
+name = "managed-alias"
+version = "0.1.0"
+authors = ["RyanBluth <ryanbluth93@gmail.com>"]
+
+[dependencies]
+term-table = "0.1.5"
+
+[dependencies.clap]
+version = "2.26.2"
+default-features = false
+features = [ "wrap_help", "color", "vec_map" ]

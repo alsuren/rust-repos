@@ -1,0 +1,8 @@
+[package]
+name = "eventhandle"
+version = "0.1.1"
+authors = ["CugeDe <guerin_q@epitech.eu>"]
+
+[dependencies]
+nix="*"
+libc="*"

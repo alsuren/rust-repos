@@ -1,0 +1,20 @@
+[package]
+name = "tetris_clone"
+version = "0.1.0"
+authors = ["emahler <join.together@gmail.com>"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+piston_window = "*"
+image = "*"
+piston = "*"
+num-traits = "*"
+cgmath = "*"
+rand = "*"
+ndarray = "*"
+
+# as of this writing, piston_window can't use the latest versions of these libraries
+gfx = "0.16.*"
+gfx_device_gl = "0.14.*"

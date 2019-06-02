@@ -1,0 +1,13 @@
+[package]
+name = "d"
+version = "0.1.0"
+authors = ["lightning1141 <lightning1141@gmail.com>"]
+
+[dependencies]
+log = "0.4"
+log4rs = "0.8"
+env_logger = "0.5"
+clap = "2.26"
+reqwest = "0.9"
+regex = "1.0"
+failure = "0.1"

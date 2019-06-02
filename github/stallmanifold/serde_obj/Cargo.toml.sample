@@ -1,0 +1,9 @@
+[package]
+name = "serde_obj"
+version = "0.1.0"
+authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+description = "Serde framework bindings for Wavefront OBJ file format."
+
+[dependencies]
+serde = "1.0.80"
+wavefront_obj = { git = "https://github.com/stallmanifold/wavefront-obj" }

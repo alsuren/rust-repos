@@ -1,0 +1,11 @@
+[package]
+name = "morrigans"
+version = "0.1.0"
+authors = ["camfulton <camfulton@gmail.com>"]
+
+[dependencies]
+ggez = { version = "0.4.1", features = ["cargo-resource-root"] }
+piston-music = "0.24.0"
+
+[profile.release]
+lto = true

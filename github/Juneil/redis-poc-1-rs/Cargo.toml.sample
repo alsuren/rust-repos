@@ -1,0 +1,9 @@
+[package]
+name = "redis-poc-1"
+version = "0.1.0"
+authors = ["julienfauville"]
+
+[dependencies]
+redis = "0.9.0"
+log = "0.4.5"
+pretty_env_logger = "0.2.4"

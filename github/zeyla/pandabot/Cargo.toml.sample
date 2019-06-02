@@ -1,0 +1,20 @@
+[package]
+name = "panda"
+version = "0.1.0"
+authors = ["Zeyla Hellyer <zeyla@hellyer.dev>"]
+
+[dependencies]
+chrono = "0.4"
+env_logger = "~0.4"
+log = "0.3"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+typemap = "0.3"
+
+[dependencies.serenity]
+branch = "master"
+git = "https://github.com/serenity-rs/serenity"
+
+[patch.crates-io]
+openssl = { git = "https://github.com/ishitatsuyuki/rust-openssl", branch = "0.9.x" }

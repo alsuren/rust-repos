@@ -1,0 +1,28 @@
+[package]
+name = "rustyhorde"
+version = "0.1.0"
+authors = ["Alex Hortin <hortinstein@gmail.com>"]
+
+[dependencies]
+term-painter = "0.2.3"
+reqwest = "0.7.2"
+serde = "1.0.27"
+serde_json = "1.0.10"
+serde_derive = "1.0.27"
+
+[lib]
+name = "getcointicker"
+path = "src/getcointicker/getcointicker.rs"
+
+
+[profile.debug]
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'abort'

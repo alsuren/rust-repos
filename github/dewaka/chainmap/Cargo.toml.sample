@@ -1,0 +1,10 @@
+[package]
+name = "chainmap"
+version = "0.1.0"
+authors = ["Chathura Colombage <dcdewaka@gmail.com>"]
+
+[dependencies]
+
+[[bin]]
+name = "chainmap-example"
+path = "src/example.rs"

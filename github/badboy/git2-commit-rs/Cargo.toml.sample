@@ -1,0 +1,15 @@
+[package]
+authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
+name = "git2-commit"
+version = "0.1.0"
+
+[dependencies]
+git2 = "0.7.5"
+url = "1.7.0"
+structopt = "0.2.10"
+log = "0.4.5"
+env_logger = "0.5.13"
+
+[[bin]]
+name = "git2-commit"
+doc = false

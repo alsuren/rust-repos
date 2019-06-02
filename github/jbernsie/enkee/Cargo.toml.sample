@@ -1,0 +1,38 @@
+[package]
+name = "enkee"
+version = "1.1.2"
+authors = ["Josh Burns <joshyburnss@gmail.com>"]
+edition = "2018"
+license = "LICENSE"
+readme = "README.md"
+description = "The password manager for nerds"
+
+[dependencies]
+clap = "2.32.0"
+rusqlite = "0.16.0"
+rand = "0.6.5"
+encryptfile = "0.1.3"
+
+[lib]
+name = "libenkee"
+path = "src/lib/mod.rs"
+
+[[bin]]
+name = "enkee"
+path = "src/bin/enkee.rs"
+
+[package.metadata.deb]
+maintainer = "Josh Burns <joshyburnss@gmail.com>"
+copyright = "2019, Josh Burns <joshyburnss@gmail.com>"
+extended-description = """\
+The password manager for nerds, a small command-line program \
+that uses sqlite as a backend and some custom encryption to \
+create a portable and secure password database.
+"""
+depends = "$auto libsqlite3-dev sqlite3"
+section = "utility"
+priority = "optional"
+assets = [
+    ["target/release/enkee", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/enkee/README", "644"],
+]

@@ -1,0 +1,11 @@
+[package]
+name = "izhikevich-neurons"
+version = "0.1.0"
+authors = ["Michael Neumann <mneumann@ntecs.de>"]
+edition = "2018"
+
+[dependencies]
+
+[dev-dependencies]
+gnuplot = "0.0.30"
+rand = "0.6"

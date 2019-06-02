@@ -1,0 +1,24 @@
+[package]
+name = "batsim-rs"
+version = "0.2.0"
+authors = [ "FAURE Adrien <adrien.faure@protonmail.com>" ]
+readme = "README.md"
+documentation = "https://github.com/adfaure/batsim.rs"
+homepage = "https://github.com/adfaure/batsim.rs"
+
+license = "MIT"
+description = """
+  API written in rust for the batsim - Batch scheduler simulator.
+"""
+
+[lib]
+name = "batsim"
+path = "src/libbatsim/lib.rs"
+
+[dependencies]
+zmq = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+log = "0.3.7"
+env_logger = "0.4.3"

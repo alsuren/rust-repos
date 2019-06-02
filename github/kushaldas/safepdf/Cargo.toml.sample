@@ -1,0 +1,8 @@
+[package]
+name = "safepdf"
+version = "0.1.0"
+authors = ["Kushal Das <mail@kushaldas.in>"]
+
+[dependencies]
+clap = "2.32.0"
+image = "0.19.0"

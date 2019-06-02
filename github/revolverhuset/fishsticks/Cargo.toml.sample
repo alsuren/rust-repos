@@ -1,0 +1,64 @@
+[package]
+authors = ["Magnus Hoff <maghoff@gmail.com>"]
+build = "build.rs"
+name = "fishsticks"
+version = "0.1.0"
+
+[build-dependencies]
+quote = "0.3.10"
+walkdir = "1"
+
+[build-dependencies.diesel]
+default-features = false
+features = ["sqlite"]
+version = "0.13"
+
+[dependencies]
+bart = "0.1.0"
+bart_derive = "0.1.0"
+bodyparser = "0.8.0"
+getopts = "^0.2.14"
+iron = "^0.5.1"
+itertools = "0.5.6"
+lazy_static = "0.2.2"
+num = "0.1.36"
+quick-error = "^1.1.0"
+rand = "0.3.14"
+reqwest = "0.9.16"
+router = "^0.5"
+serde = "1.0.90"
+serde_derive = "1.0.90"
+serde_json = "1.0.39"
+strsim = "0.6.0"
+time = "0.1.35"
+urlencoded = "0.5"
+matrix_bot_api = { git = "https://github.com/maghoff/matrix_bot_api.git" }
+crossbeam = "0.3.2"
+
+[dependencies.diesel]
+default-features = false
+features = ["sqlite"]
+version = "0.13"
+
+[dependencies.diesel_codegen]
+default-features = false
+features = ["sqlite"]
+version = "0.13"
+
+[dependencies.sharebill]
+path = "libs/sharebill"
+
+[dependencies.uuid]
+features = ["use_std", "v4"]
+version = "^0.2"
+
+[patch.crates-io]
+fractal-matrix-api = { version = "3.30.0", git = "https://github.com/maghoff/fractal-matrix-api.git", default-features = false }
+
+[profile]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

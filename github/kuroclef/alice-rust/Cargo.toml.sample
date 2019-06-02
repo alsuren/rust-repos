@@ -1,0 +1,12 @@
+[package]
+name = "alice"
+version = "0.1.0"
+authors = ["Kazumi Moriya <kuroclef@gmail.com>"]
+
+[dependencies]
+gdk-pixbuf = "*"
+gtk = "*"
+
+[[bin]]
+name = "alice"
+path = "alice.rs"

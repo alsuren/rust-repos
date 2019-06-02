@@ -1,0 +1,17 @@
+[package]
+
+name = "dual"
+description = "Dual numbers"
+version = "0.2.0"
+authors = [ "mpotanin@gmail.com" ]
+repository = "https://github.com/potan/dual.rs"
+license = "LGPL-3.0"
+
+[lib]
+name = "dual"
+
+[dependencies]
+num = "0.1"
+
+#[dependencies.onezero]
+#git = "https://github.com/japaric/onezero.rs"

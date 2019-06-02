@@ -1,0 +1,17 @@
+[package]
+
+name = "Lolpranz"
+version = "0.0.1"
+authors = ["Lolirofle <lolipopple@hotmail.com>", "Pranz <jesper.fridefors@gmail.com>"]
+
+[dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs.git"
+
+[dependencies.2dgl]
+git = "https://github.com/Lolirofle/2dgl"
+
+[dependencies.time]
+git = "https://github.com/rust-lang/time"
+
+[dependencies.num]
+git = "https://github.com/rust-lang/num"

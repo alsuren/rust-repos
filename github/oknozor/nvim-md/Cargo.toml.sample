@@ -1,0 +1,26 @@
+[package]
+name = "illumination"
+version = "0.1.0"
+authors = ["okno <paul.delafosse@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+neovim-lib = "0.6"
+horrorshow = "0.6.2"
+webkit2gtk = "0.5.1"
+pulldown-cmark = "0.4.0"
+pango = "0.5"
+fragile = "0.3.0"
+glib= "0.6"
+
+[dependencies.log]
+version = "0.4"
+features = ["max_level_debug", "release_max_level_warn"]
+
+[dependencies.gtk]
+features = ["v3_22"]
+version = "0.5"
+
+[dependencies.sourceview]
+features = ["v3_22"]
+version = "0.5"

@@ -1,0 +1,13 @@
+[package]
+name = "frpong"
+version = "0.1.0"
+authors = ["David Komer <david.komer@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+wasm-bindgen = "0.2"

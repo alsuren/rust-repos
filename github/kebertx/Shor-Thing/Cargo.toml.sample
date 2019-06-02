@@ -1,0 +1,7 @@
+[package]
+name = "shor-thing"
+version = "0.1.0"
+authors = ["Jesse Maes <kebertyx@gmail.com>"]
+
+[dependencies.quantum]
+path = "./quantum"

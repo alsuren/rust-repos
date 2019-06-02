@@ -1,0 +1,20 @@
+[package]
+name = "reliable-rw"
+version = "0.1.0"
+authors = [
+    "Stacey Ell <stacey.ell@gmail.com>"
+]
+
+[lib]
+name = "reliable_rw"
+path = "src/reliable_rw.rs"
+
+
+[[bin]]
+name = "reliable-encap"
+path = "src/reliable_encap.rs"
+
+
+[[bin]]
+name = "reliable-write"
+path = "src/reliable_write.rs"

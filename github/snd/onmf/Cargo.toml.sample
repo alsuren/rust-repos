@@ -1,0 +1,25 @@
+[package]
+authors = ["Maximilian Krüger <kruemaxi@gmail.com>"]
+build = "build.rs"
+description = ""
+documentation = "https://snd.github.io/onmf/onmf/index.html"
+homepage = "https://github.com/snd/onmf"
+keywords = ["machine learning"]
+license = "MIT OR Apache-2.0"
+name = "onmf"
+readme = "README.md"
+repository = "https://github.com/snd/onmf.git"
+version = "0.1.0"
+
+[dependencies]
+clap = "1.5.5"
+image = "0.6.1"
+nalgebra = "0.4.0"
+num = "0.1.30"
+quick-error = "0.2.1"
+rand = "0.3.12"
+rblas = "0.0.13"
+
+[dependencies.ndarray]
+features = ["rblas"]
+version = "0.3.0"

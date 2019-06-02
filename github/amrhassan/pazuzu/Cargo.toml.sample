@@ -1,0 +1,15 @@
+[package]
+name = "pazuzu"
+version = "0.1.0"
+authors = ["Amr Hassan <amr.hassan@gmail.com>"]
+
+[dependencies]
+glob = "*"
+argparse = "*"
+tar = "0.4"
+hyperlocal = "*"
+hyper = "*"
+serde = "*"
+serde_json = "*"
+clap = "*"
+yaml-rust = "*"

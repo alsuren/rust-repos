@@ -1,0 +1,15 @@
+[package]
+
+name = "succinct.rs"
+version = "0.0.1"
+authors = ["Ben Gamari <ben@smart-cactus.org>", "Laura Dietz <dietz@smart-cactus.org>"]
+
+[lib]
+
+name = "succinct"
+path = "src/lib.rs"
+
+[dev-dependencies]
+
+quickcheck = "*"
+quickcheck_macros = "*"

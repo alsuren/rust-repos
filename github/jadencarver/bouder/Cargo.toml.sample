@@ -1,0 +1,14 @@
+[package]
+name = "bouder"
+version = "0.1.0"
+authors = ["Jaden Carver <jaden.carver@gmail.com>"]
+
+[dependencies]
+clap = { version = "*" }
+hyper = { version = "*" }
+serde = { version = "*" }
+serde_json = { version = "*" }
+serde_macros = { version = "*" }
+termion = { version = "*" }
+semver = "0.2.0"
+tar = { version = "*" }

@@ -1,0 +1,18 @@
+[package]
+name = "typed-builder"
+description = "Compile-time type-checked builder derive"
+version = "0.3.0"
+authors = ["IdanArye <idanarye@gmail.com>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/idanarye/rust-typed-builder"
+documentation = "https://idanarye.github.io/rust-typed-builder/"
+readme = "README.md"
+keywords = ["builder"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = {version = "0.15.26", features = ["full", "extra-traits"]}
+quote = "0.6.11"
+proc-macro2 = "0.4.27"

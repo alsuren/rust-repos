@@ -1,0 +1,8 @@
+[package]
+name = "burping"
+version = "0.1.0"
+authors = ["Eugene Mamin <TheDZhon@gmail.com>"]
+
+[dependencies]
+libc = "0.2.11"
+nix = "0.5.0"

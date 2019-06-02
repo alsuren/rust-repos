@@ -1,0 +1,14 @@
+[package]
+name = "internet-of-coffee"
+version = "0.1.0"
+authors = ["Johan Burell <johan.burell@valtech.se>"]
+
+[dependencies]
+iron = "0.4.0"
+libusb = "0.3.0"
+phant = "0.1.5"
+chrono = "0.2.25"
+regex = "0.1.80"
+ansi_term = "0.9"
+sdl2 = "0.24.0"
+sdl2_ttf = "0.24.0"

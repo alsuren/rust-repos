@@ -1,0 +1,18 @@
+[package]
+name = "stack_alloc"
+version = "0.1.0"
+authors = ["Mark Barbone <mark.l.barbone@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+categories = ["memory-management", "no-std"]
+
+[features]
+default = []
+debug_logs = ["libc"]
+test_memory_source = ["libc"]
+
+[dependencies]
+libc = {version = "0.2", optional=true}
+
+[lib]
+doctest = false

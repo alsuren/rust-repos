@@ -1,0 +1,32 @@
+[package]
+build = "build.rs"
+name = "heka"
+version = "0.0.1"
+authors = ["Mike Trinkala <trink@mozilla.com>"]
+
+[lib]
+name = "heka"
+path = "src/lib.rs"
+#crate-type = ["staticlib"]
+
+[[bin]]
+name = "heka_rs"
+path = "src/main.rs"
+test = false
+doctest = false
+bench = false
+doc = false
+plugin = false
+
+[dependencies.rlibc]
+git = "https://github.com/rust-lang/rlibc"
+
+[dependencies.protobuf]
+git = "https://github.com/stepancheg/rust-protobuf"
+
+[dependencies.uuid]
+git = "https://github.com/rust-lang/uuid"
+
+[dependencies.regex]
+
+[dependencies.regex_macros]

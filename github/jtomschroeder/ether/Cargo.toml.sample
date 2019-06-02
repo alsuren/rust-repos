@@ -1,0 +1,21 @@
+[package]
+name = "ether"
+version = "0.1.4"
+authors = ["Tom Schroeder <j.tom.schroeder@gmail.com>"]
+description = "Library for parsing and manipulating network data, packet captures."
+
+exclude = ["etc/*"]
+
+documentation = "https://docs.rs/ether"
+homepage = "https://github.com/jtomschroeder/ether"
+repository = "https://github.com/jtomschroeder/ether"
+
+readme = "README.md"
+license = "MIT"
+keywords = ["networking", "pcap"]
+
+[dependencies]
+num = "0.1"
+libc = "0.2"
+glob = "0.2"
+futures = "0.1"

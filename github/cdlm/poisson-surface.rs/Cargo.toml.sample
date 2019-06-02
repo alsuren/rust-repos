@@ -1,0 +1,13 @@
+[package]
+name = "poisson"
+version = "0.1.0"
+authors = ["Damien Pollet <damien.pollet@gmail.com>"]
+
+[dependencies]
+rand = "*"
+piston = "*"
+piston_window = "*"
+piston2d-graphics = "*"
+
+fps_counter = "*"
+find_folder = "*"

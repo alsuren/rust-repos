@@ -1,0 +1,8 @@
+[package]
+name = "testing_piston"
+version = "0.1.0"
+authors = ["bluecereal <fuck off dis my email>"]
+
+[dependencies]
+piston_window="*"
+gfx = { git = "https://github.com/gfx-rs/gfx.git", branch = "master" }

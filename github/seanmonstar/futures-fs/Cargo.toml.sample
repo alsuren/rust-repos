@@ -1,0 +1,16 @@
+[package]
+name = "futures-fs"
+version = "0.0.5" # don't forget to update html_root_url
+authors = ["Sean McArthur <sean@seanmonstar.com>"]
+description = "A Futures implementation for File System operations"
+repository = "https://github.com/seanmonstar/futures-fs"
+documentation = "https://docs.rs/futures-fs"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["futures", "fs", "file", "async"]
+categories = ["asynchronous", "filesystem"]
+
+[dependencies]
+bytes = "0.4.3"
+futures = "0.1.13"
+futures-cpupool = "0.1"

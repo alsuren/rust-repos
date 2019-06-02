@@ -1,0 +1,21 @@
+[package]
+name = "nvmitm"
+version = "0.0.1"
+authors = ["arcnmx"]
+
+description = "nvmitm"
+keywords = []
+
+documentation = "http://arcnmx.github.io/nvmitm/nvmitm"
+repository = "https://github.com/arcnmx/nvmitm"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+nvapi-sys = { version = "0.0.2", git = "https://github.com/arcnmx/nvapi-rs.git", default-features = false }
+lazy_static = "0.2.9"
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.2"
+kernel32-sys = "0.2"
+# winapi = { git = "https://github.com/retep998/winapi-rs.git", branch = "dev", features = ["libloaderapi", "memoryapi"] }

@@ -1,0 +1,15 @@
+[package]
+name = "minelaunch"
+version = "0.1.2"
+authors = ["Robert Fuchs <robertfuchsyoshi@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+flate2 = "1.0"
+reqwest = "0.9.10"
+tempfile = "3.0.7"
+tar = "0.4"
+walkdir = "2.2.7"
+sha1 = { version = "0.6", features = ["std"] }

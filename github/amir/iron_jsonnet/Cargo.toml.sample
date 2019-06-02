@@ -1,0 +1,14 @@
+[package]
+name = "iron_jsonnet"
+version = "0.1.0"
+authors = ["Amir Saeid <amir@glgdgt.com>"]
+build = "build.rs"
+
+[dependencies]
+iron = "0.5.*"
+libc = "0.2.*"
+router = "*"
+yaml-rust = "0.3"
+serde = "1.0"
+serde_json = "1.0"
+serde_yaml = "0.7"

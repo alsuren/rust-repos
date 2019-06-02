@@ -1,0 +1,22 @@
+[package]
+name = "falcon_capstone"
+version = "0.2.1"
+authors = ["Marco Milanese <marcomilanese7@gmail.com>", "Alex Eubanks <endeavor@rainbowsandpwnies.com>"]
+homepage = "https://github.com/falconre/falcon_capstone"
+repository = "https://github.com/falconre/falcon_capstone"
+description = "Capstone bindings in rust"
+readme = "README.md"
+license = "LGPL-3.0"
+build = "build.rs"
+
+[lib]
+name = "falcon_capstone"
+
+[dependencies]
+libc = "0.2"
+
+[features]
+static = []
+
+[build-dependencies]
+bindgen = "0.30.0"

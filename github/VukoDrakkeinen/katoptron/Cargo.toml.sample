@@ -1,0 +1,51 @@
+[package]
+name = "katoptron"
+version = "0.2.0"
+edition = '2018'
+license = "ISC"
+authors = ["VukoDrakkeinen <sneyk8+git@gmail.com>"]
+publish = false
+
+[workspace]
+members = ["wstr_macro"]
+
+[dependencies]
+ron = "^0.4.2"
+clap = "^2.33.0"
+dirs = "^1.0.5"
+serde = "^1.0.90"
+bincode = "^1.1.3"
+failure = "^1.0"
+hostname = "^0.1.5"
+byteorder = "^1.3.1"
+crossbeam = "^0.7.1"
+serde_derive = "^1.0.90"
+failure_derive = "^1.0"
+display_derive = "^1.0"
+wstr_macro = { path = "wstr_macro" }
+libc = "^0.2.54"
+
+[target."cfg(unix)".dependencies]
+dbus = "^0.6.4"
+notify-rust = "^3.5.0"
+
+[target."cfg(windows)".dependencies]
+scopeguard = "^1.0.0"
+winapi = { version = "^0.3.7", features = ["winuser"] }
+
+[lib]
+name = "katoptron"
+path = "src/lib.rs"
+
+[[bin]]
+name = "katoptron-send"
+path = "src/send/main.rs"
+
+[[bin]]
+name = "katoptron-recv"
+path = "src/recv/main.rs"
+
+[patch.crates-io]
+failure = { git = "https://github.com/rust-lang-nursery/failure/" }
+failure_derive = { git = "https://github.com/rust-lang-nursery/failure/" }
+display_derive = { git = "https://github.com/withoutboats/display_derive" }

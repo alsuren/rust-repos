@@ -1,0 +1,22 @@
+[package]
+name = "derpy"
+version = "0.1.0"
+authors = ["Oliver Maskery <omaskery@googlemail.com>"]
+repository = "http://github.com/omaskery/derpy"
+description = "derpy is a simple language & vcs agnostic dependency manager"
+homepage = "https://crates.io/crates/derpy"
+readme =  "README.md"
+license = "MIT"
+
+[badges]
+maintenance = { status = "experimental" }
+
+[dependencies]
+clap = "2.31.2"
+serde = "1.0.43"
+serde_derive = "1.0.43"
+serde_json = "1.0.16"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+subprocess = "0.1.12"
+strfmt = "0.1.6"

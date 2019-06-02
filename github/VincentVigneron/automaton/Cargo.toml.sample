@@ -1,0 +1,16 @@
+[package]
+name = "automaton"
+version = "0.1.0"
+authors = ["vigneron <vincent.vigneron@univ-angers.fr>"]
+
+[[bin]]
+doc = false
+name = "dfa"
+path = "src/main.rs"
+
+[dependencies]
+itertools = "0.4"
+
+[badges]
+travis-ci = { repository = "Razican/vsop87-rs", branch = "master" }
+codecov = { repository = "Razican/vsop87-rs", branch = "master", service = "github" }

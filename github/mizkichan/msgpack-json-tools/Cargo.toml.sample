@@ -1,0 +1,17 @@
+[package]
+name = "msgpack-json-tools"
+version = "0.1.0"
+authors = ["Mizki SUZUMORI <suzumorimizuki@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+matches = "0.1"
+structopt = "0.2"
+
+[[bin]]
+name = "json2msgpack"
+path = "src/json2msgpack.rs"
+
+[[bin]]
+name = "msgpack2json"
+path = "src/msgpack2json.rs"

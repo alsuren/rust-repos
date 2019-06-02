@@ -1,0 +1,13 @@
+[package]
+name = "cuckoo"
+version = "0.1.0"
+authors = [
+    "Dan Sebastian Thrane <dthrane@gmail.com>",
+    "Brian Alberg <ba@xirov.com>",
+    "Anders Busch <andersbusch@gmail.com>"
+]
+
+[dependencies]
+config = "0.7.0"
+imap = "0.3.3"
+openssl = "0.9.17"

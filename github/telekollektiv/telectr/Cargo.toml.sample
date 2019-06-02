@@ -1,0 +1,8 @@
+[package]
+name = "telectr"
+version = "0.1.0"
+authors = ["kpcyrd <git@rxv.cc>"]
+
+[dependencies]
+redis = "0.7.0"
+ws = "0.5.2"

@@ -1,0 +1,12 @@
+[package]
+name = "run"
+version = "0.1.0"
+authors = ["Dmytro Shulyakov <dmytro.shulyakov@globallogic.com>"]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[dependencies]

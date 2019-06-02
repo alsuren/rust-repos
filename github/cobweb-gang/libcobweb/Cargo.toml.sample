@@ -1,0 +1,24 @@
+[package]
+name = "cobweb"
+version = "0.2.2"
+authors = ["David Bernado <dbernado@protonmail.com>"]
+homepage = "https://cobweb-gang.github.io"
+repository = "https://github.com/cobweb-gang/libcobweb"
+documentation = "https://docs.rs/cobweb"
+edition = "2018"
+description = "A Rust library for creating encrypted VPNs, focused on simplicity and security"
+license = "AGPL-3.0"
+license-file = "LICENSE"
+readme = "README.md"
+keywords = ["vpn", "tun", "encryption", "network"]
+
+[dependencies]
+futures = "0.1.23"
+tun-tap = "0.1.1"
+keybob = "0.3.1"
+tun-tap-mac = "0.1.2"
+tokio-core = "0.1.17"
+
+[dependencies.miscreant]
+version = "0.4.2"
+features = ["soft-aes"]

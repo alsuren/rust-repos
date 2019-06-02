@@ -1,0 +1,14 @@
+[package]
+authors = ["Maurice Kayser"]
+keywords = ["c", "c++", "conversion", "convert", "cpp", "default", "enum", "ffi", "from", "from-primitive", "fromprimitive", "primitive"]
+license = "MIT/Apache-2.0"
+name = "from_primitive"
+readme = "README.md"
+version = "1.1.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "0.6"
+syn = "0.15"

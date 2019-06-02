@@ -1,0 +1,19 @@
+[workspace]
+members = ["bindgen-openal-sys"]
+
+[package]
+name = "alkaline"
+version = "0.1.0"
+authors = ["FaultyRAM <explodingpsu@gmail.com>"]
+description = "Safe, high-level bindings to OpenAL."
+repository = "https://github.com/FaultyRAM/alkaline-rs"
+readme = "README.md"
+keywords = ["OpenAL", "audio", "spatialization", "3D"]
+categories = ["multimedia::audio", "no-std"]
+license = "Apache-2.0 OR MIT"
+
+[dependencies.bindgen-openal-sys]
+path = "bindgen-openal-sys"
+
+[profile.release]
+codegen-units = 1

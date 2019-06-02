@@ -1,0 +1,16 @@
+[workspace]
+members = [
+  "src/getting-started",
+  "src/hello-world",
+  "src/display",
+  "src/microbit",
+  "src/serial",
+]
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+debug = true
+lto = true

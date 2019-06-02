@@ -1,0 +1,11 @@
+[package]
+name = "killline"
+version = "0.1.0"
+authors = ["Camden Narzt <c.narzt@me.com>"]
+
+[dependencies]
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "kl"

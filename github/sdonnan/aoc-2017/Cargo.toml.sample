@@ -1,0 +1,8 @@
+[package]
+name = "advent-of-code-2017"
+version = "0.1.0"
+authors = ["Stuart Donnan <donnan.stuart@gmail.com>"]
+
+[dependencies]
+unicode-segmentation = "0.1.*"
+petgraph = "0.4.*"

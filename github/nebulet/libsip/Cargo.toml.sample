@@ -1,0 +1,12 @@
+[package]
+name = "sip"
+version = "0.1.0"
+authors = ["Lachlan Sneff <lachlan.sneff@gmail.com>"]
+
+[dependencies]
+
+[dependencies.nebulet_abi]
+git = "https://github.com/nebulet/abi"
+
+[profile.release]
+panic = "abort"

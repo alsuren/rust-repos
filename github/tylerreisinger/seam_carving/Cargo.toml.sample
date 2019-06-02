@@ -1,0 +1,8 @@
+[package]
+name = "seam_carving"
+version = "0.1.0"
+authors = ["Tyler Reisinger <reisinger.tyler@gmail.com>"]
+
+[dependencies]
+image = "0.14"
+cgmath = "0.15"

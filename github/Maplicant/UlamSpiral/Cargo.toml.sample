@@ -1,0 +1,9 @@
+[package]
+name = "UlamSpiral"
+version = "0.1.0"
+authors = ["Maurits van Altvorst <mvanaltvorst@icloud.com>"]
+
+[dependencies]
+image = "*" # Image library
+primal = "*" # Prime sieve
+clap = "*" # Argument parsing

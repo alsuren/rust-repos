@@ -1,0 +1,15 @@
+[package]
+
+name = "stunnel"
+version = "0.2.0"
+authors = ["airtrack <airtrack.sk@gmail.com>"]
+
+[dependencies]
+
+rust-crypto = "*"
+time = "*"
+rand = "*"
+log = { version = "*", features = ["std"] }
+getopts = "0.2"
+crc = "1.4.0"
+crossbeam-channel = "0.2"

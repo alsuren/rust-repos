@@ -1,0 +1,18 @@
+[package]
+name = "local-nix-cache"
+version = "0.1.0"
+authors = ["Andreas Rammhold <andreas@rammhold.de>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+tempdir = "0.3.7"
+reqwest = "0.9.15"
+env_logger = "0.6.1"
+
+[dependencies.actix-web]
+version = "0.7"
+
+[dependencies.libnixstore-sys]
+version = "0.1.0"
+# path = "../libnixstore-sys"

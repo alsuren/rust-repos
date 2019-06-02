@@ -1,0 +1,36 @@
+[package]
+name = "git-mask"
+version = "0.1.1-pre"
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "git-mask executable implementation"
+documentation = "http://rustyhorde.github.io/git-mask"
+homepage = "http://rustyhorde.github.io/git-mask"
+repository = "https://github.com/rustyhorde/git-mask"
+readme = "README.md"
+license = "MIT"
+keywords = ["rust","rustyhorde","git-mask"]
+build = "build.rs"
+
+[build-dependencies]
+vergen = "*"
+
+[dependencies]
+docopt = "*"
+libmultilog = "*"
+log = "*"
+rustc-serialize = "*"
+
+[dependencies.libgitmask]
+path = "libgitmask"
+
+[[bin]]
+name = "git-mask"
+path = "src/main.rs"
+
+[[bin]]
+name = "git-mask-smudge"
+path = "git-mask-smudge/src/main.rs"
+
+[[bin]]
+name = "git-mask-clean"
+path = "git-mask-clean/src/main.rs"

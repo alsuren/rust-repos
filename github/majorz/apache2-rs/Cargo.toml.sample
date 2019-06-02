@@ -1,0 +1,8 @@
+[package]
+
+name = "apache2"
+version = "0.0.2"
+
+[dependencies]
+libc = "*"
+interpolate_idents = "0.0.4"

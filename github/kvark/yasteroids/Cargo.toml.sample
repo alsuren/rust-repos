@@ -1,0 +1,19 @@
+[package]
+
+name = "yasteroids"
+version = "0.4.0"
+authors = [
+"Dzmitry Malyshau <kvarkus@gmail.com>",
+]
+
+[features]
+default = []
+
+[dependencies]
+cgmath = "0.8"
+gfx = "0.14"
+gfx_window_glutin = "0.14"
+glutin = "0.7"
+pegasus = "0.3"
+rand = "0.3"
+specs = "0.7.1"

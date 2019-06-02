@@ -1,0 +1,12 @@
+[package]
+name = "cantaloupe"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+amethyst = "0.10.0"
+
+[dependencies.shred]
+version = "0.7.1"
+features = ["nightly"]

@@ -1,0 +1,14 @@
+[package]
+name = "glusterfs-fuse"
+version = "0.1.0"
+authors = ["Chris Holcombe <xfactor973@gmail.com>"]
+
+[dependencies]
+clap = "*"
+env_logger = "*"
+fuse = "*"
+gfapi-sys = "*"
+libc = "*"
+log = "*"
+sequence_trie = "0.0.13"
+time = "*"

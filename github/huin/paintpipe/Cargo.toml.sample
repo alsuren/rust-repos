@@ -1,0 +1,13 @@
+[package]
+name = "paintpipe"
+version = "0.1.0"
+authors = ["John Beisley <johnbeisleyuk@gmail.com>"]
+
+[dependencies]
+error-chain = "0.9.0"
+piston = "0.31.3"
+piston2d-graphics = "0.20.1"
+piston_window = "0.63.0"
+pistoncore-event_loop = "0.31.3"
+pistoncore-input = "0.17.1"
+time = "0.1.36"

@@ -1,0 +1,17 @@
+[package]
+name = "cryptopals"
+version = "0.1.0"
+authors = ["Philipp Jovanovic <philipp@jovanovic.io>"]
+
+[dependencies]
+rand = "*"
+time = "*"
+nickel = "*"
+hyper = "*"
+openssl = "*"
+regex = "*"
+url = "*"
+
+#[dependencies.openssl]
+#git = "https://github.com/sfackler/rust-openssl.git"
+

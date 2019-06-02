@@ -1,0 +1,10 @@
+[package]
+name = "tokenator"
+version = "0.1.0"
+authors = ["Ivan Kozik <ivan@ludios.org>"]
+
+[dependencies]
+blake2-rfc = "*"
+rustc-serialize = "*"
+constant_time_eq = "*"
+dump = "*"

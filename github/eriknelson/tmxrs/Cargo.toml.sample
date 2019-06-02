@@ -1,0 +1,15 @@
+[package]
+
+name = "tmxrs"
+version = "0.0.1"
+authors = ["Erik Nelson <erik@nelsk.com>"]
+
+[dependencies.rust-sfml]
+
+git = "https://github.com/eriknelson/rust-sfml.git"
+rev = "e3bbded7865d9b2ce07c23bb8273e6cd1d993bcf"
+
+[[bin]]
+
+name = "mapload"
+path = "./src/examples/mapload/main.rs"

@@ -1,0 +1,21 @@
+[package]
+name = "swf"
+version = "0.1.0"
+authors = ["Mike Welsh"]
+repository = "https://github.com/Herschel/swf-rs.git"
+homepage = "https://github.com/Herschel/swf-rs.git"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+description = "Read and write the Adobe Flash SWF file format."
+
+[dependencies]
+clippy = {version = "*", optional = true}
+byteorder = "1.0"
+enum_primitive = "0.1.1"
+num = "0.1"
+encoding_rs = "*"
+log = "0.4"
+libflate = "*"
+
+[features]
+default = []

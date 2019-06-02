@@ -1,0 +1,29 @@
+[package]
+name = "rusty-keychain"
+description = "Password manager written in Rust, using gpg and git for sync"
+version = "0.1.0"
+authors = ["Marcelino Coll Rovira <coll.marce@gmail.com>"]
+readme = "README.md"
+keywords = ["manager", "password", "gpg", "security"]
+license = "GPLv3"
+
+[[bin]]
+name = "rk-clear"
+path = "src/rk-clear/main.rs"
+
+[[bin]]
+name = "rk"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.13.0"
+git2 = "0.4.4"
+log = "0.3.6"
+log4rs = { version= "0.4.8", features = ["yaml"] }
+yaml-rust = "0.3.3"
+gpgme = "0.4.0"
+rand = "0.3.14"
+rmp = "0.7.5"
+sha2 = "0.1.2"
+clipboard = "0.1.2"
+libc = "*"

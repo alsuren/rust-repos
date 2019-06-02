@@ -1,0 +1,10 @@
+[package]
+authors = ["Edward Yang <edward.yang6771@gmail.com>"]
+name = "nnlearn"
+version = "0.1.0"
+
+[dependencies]
+mnist = "0.4.0"
+rand = "0.3.15"
+rayon = "0.8.2"
+rulinalg = "0.4.2"

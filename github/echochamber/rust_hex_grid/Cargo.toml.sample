@@ -1,0 +1,15 @@
+[package]
+name = "board_v2"
+version = "0.1.0"
+authors = ["Jason Schein <JasonSchein@gmail.com>"]
+
+[dependencies]
+piston = "0.22.0"
+piston_window = "0.45.0"
+rand = "0.3.14"
+find_folder = "0.3.0"
+piston2d-sprite = "0.26.0"
+piston2d-graphics = "0.16.0"
+piston2d-opengl_graphics = "0.28.2"
+gfx_device_gl = "0.10.0"
+hex2d = "0.1.0"

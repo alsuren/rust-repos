@@ -1,0 +1,13 @@
+[package]
+name = "reddit-client-gtk-rs"
+version = "0.1.0"
+authors = ["Johan Bjäreholt <johan@bjareho.lt>"]
+edition = "2018"
+
+[dependencies]
+redditor = { git = "https://github.com/johan-bjareholt/redditor.git" }
+#redditor = { path = "../redditor" }
+webkit2gtk = "0.6"
+glib = "0.7"
+gdk = "0.10"
+gtk = { version = "0.6", features = ["v3_22"] }

@@ -1,0 +1,21 @@
+[package]
+name = "iridium-server"
+version = "0.1.0"
+authors = ["gustorn <gustorn@gmail.com>"]
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "iridium"
+
+[[bin]]
+path = "src/main.rs"
+name = "iridium_server"
+
+[dependencies]
+flate2 = "1.0"
+itertools = "0.7"
+rand = "0.4"
+quick-xml = "0.9.4"
+rocket = "0.3.2"
+rocket_codegen = "0.3.2"
+strsim = "0.6.0"

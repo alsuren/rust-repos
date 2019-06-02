@@ -1,0 +1,13 @@
+[package]
+name = "imprint"
+version = "0.3.0"
+authors = ["Phil Ruffwind <rf@rufflewind.com>"]
+description = "Type-level manipulation of values."
+documentation = "https://docs.rs/imprint"
+repository = "https://github.com/Rufflewind/imprint"
+license = "MIT/Apache-2.0"
+exclude = [".gitignore", "README.md", "docs/*"]
+
+[dependencies]
+num = "^0.1.36"
+num-iter = "^0.1.32"

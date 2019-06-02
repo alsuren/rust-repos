@@ -1,0 +1,25 @@
+[package]
+name    = "miserve"
+version = "0.1.0"
+
+authors = ["meh. <meh@schizofreni.co>"]
+license = "GPLv3"
+
+[dependencies]
+# base dependencies
+log        = "*"
+env_logger = "*"
+bitflags   = "*"
+time       = "0.1.12"
+num_cpus   = "*"
+
+# windowing dependencies
+glutin = { git = "https://github.com/tomaka/glutin" }
+x11    = "2.0"
+
+[dependencies.servo]
+git  = "https://github.com/servo/servo"
+path = "components/servo"
+
+default-features = false
+features = []

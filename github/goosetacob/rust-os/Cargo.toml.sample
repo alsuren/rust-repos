@@ -1,0 +1,10 @@
+[package]
+name = "rust-os"
+version = "0.1.0"
+authors = ["Gustavo Blanco <gustavo.jr.blanco@gmail.com>"]
+
+# define build target so we don't need to keep using the --target flag
+[package.metadata.bootimage]
+default-target = "x86_64-goosetaco-none.json"
+
+[dependencies]

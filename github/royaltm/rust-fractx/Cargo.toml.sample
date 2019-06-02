@@ -1,0 +1,41 @@
+[package]
+name = "fractx"
+version = "0.2.1"
+authors = [ "Wojciech Kaczmarek", "Rafał Michalski <royal@yeondir.com>" ]
+
+publish = false
+
+description = "All your base are belong to z*z + c."
+homepage = "https://github.com/royaltm/rust-fractx"
+repository = "https://github.com/royaltm/rust-fractx.git"
+keywords = ["mandelbrot"]
+
+readme = "README.md"
+license-file = "LICENSE"
+
+[[bin]]
+name = "fractx"
+path = "src/main.rs"
+doc = false
+test = false
+required-features = ["binaries"]
+
+[lib]
+doc = false
+test = true
+
+[features]
+default = ["binaries"]
+image-buffer = ["image"]
+parallel = ["num_cpus", "scoped_threadpool"]
+binaries = ["parallel", "image-buffer", "clap"]
+
+[dependencies]
+clap = { version = "^2.33", optional = true }
+image = { version = "0.21", optional = true }
+num_cpus = { version = "^1.10", optional = true }
+scoped_threadpool = { version = "0.1", optional = true }
+
+[dependencies.num-traits]
+version = "0.2"
+default-features = false

@@ -1,0 +1,13 @@
+[package]
+name = "nbid"
+version = "0.1.0"
+authors = ["Alex Yang <aleozlx@gmail.com>"]
+build = "src/build.rs"
+
+[dependencies]
+regex = "1"
+chrono = "*"
+
+[profile.release]
+lto = true
+panic = 'abort'

@@ -1,0 +1,10 @@
+[package]
+name = "minimal-version-selection"
+version = "0.1.0"
+authors = ["AljoschaMeyer <mail@aljoscha-meyer.de>"]
+description = "https://research.swtch.com/vgo-mvs"
+repository = "https://github.com/AljoschaMeyer/minimal-version-selection-rs"
+readme = "README.md"
+license = "AGPL-3.0"
+
+[dependencies]

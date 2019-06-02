@@ -1,0 +1,20 @@
+[package]
+name = "rfsapi"
+description = "Raw Filesystem API -- enable simpler browsing with ease"
+repository = "https://github.com/nabijaczleweli/rfsapi-rs"
+readme = "README.md"
+keywords = ["http", "client", "https", "file", "directory"]
+categories = ["web-programming"]
+license = "MIT"
+version = "0.2.0"
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>"]
+
+[dependencies]
+serde_derive = "1.0"
+hyper = "0.11"
+serde = "1.0"
+time = "0.1"
+mime = "0.3"
+
+[dev-dependencies]
+serde_json = "1.0"

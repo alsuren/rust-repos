@@ -1,0 +1,13 @@
+[package]
+name = "svdselector"
+version = "0.1"
+authors = ["Andrey Zgarbul <zgarbul.andrey@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+gtk = "0.6"
+svd-parser = "0.7"
+either = "1.5"
+indexmap = "1.0"
+regex = "1.1"
+lazy_static = "1.3"

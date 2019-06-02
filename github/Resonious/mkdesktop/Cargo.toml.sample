@@ -1,0 +1,22 @@
+[package]
+name = "mkdesktop"
+version = "0.1.0"
+authors = ["Nigel Baillie <metreckk@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+clap = "~2.27.0"
+path_abs = "~0.4"
+dirs = "1.0.5"
+regex = "1"
+lazy_static = "1.3.0"
+gdk-pixbuf = "0.6.0"
+glib = "0.7.1"
+gio = "0.6.0"
+inotify = "0.7"
+
+[dependencies.gtk]
+version = "0.6.0"
+features = ["v3_16"]
+

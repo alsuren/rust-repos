@@ -1,0 +1,23 @@
+[package]
+authors = ["Anthony DiMarco <ocramida@gmail.com>", "Jimmy Cuadra <jimmy@jimmycuadra.com>", "Matthew Mayer <matthewkmayer@gmail.com>", "Nikita Pekin <contact@nikitapek.in>"]
+description = "AWS SDK for Rust - Amazon Simple Storage Service @ 2006-03-01"
+documentation = "https://rusoto.github.io/rusoto/rusoto_s3/index.html"
+keywords = ["AWS", "Amazon", "s3"]
+license = "MIT"
+name = "rusoto_s3"
+readme = "README.md"
+repository = "https://github.com/rusoto/rusoto"
+version = "0.37.0"
+homepage = "https://www.rusoto.org/"
+
+[build-dependencies]
+
+[dependencies]
+futures = "0.1.16"
+xml-rs = "0.7"
+rusoto_core = { git = "https://github.com/hyunsik/rusoto_core.git" }
+
+[features]
+default = ["native-tls"]
+native-tls = ["rusoto_core/native-tls"]
+rustls = ["rusoto_core/rustls"]

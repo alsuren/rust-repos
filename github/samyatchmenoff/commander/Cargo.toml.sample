@@ -1,0 +1,28 @@
+[package]
+name = "commander"
+version = "0.0.0"
+authors = [ "https://github.com/samyatchmenoff" ]
+
+[dependencies]
+rand = "0.3"
+
+[dependencies.piston]
+git = "https://github.com/PistonDevelopers/piston.git"
+
+[dependencies.piston2d-graphics]
+git = "https://github.com/PistonDevelopers/graphics.git"
+
+[dependencies.cgmath]
+git = "https://github.com/bjz/cgmath-rs.git"
+
+[dependencies.pistoncore-glfw_window]
+git = "https://github.com/PistonDevelopers/glfw_game_window.git"
+
+[dependencies.piston2d-opengl_graphics]
+git = "https://github.com/PistonDevelopers/opengl_graphics.git"
+
+[dependencies.vorbisfile]
+git = "https://github.com/tari/vorbisfile.rs.git"
+
+[dependencies.openal-rs]
+git = "https://github.com/jpernst/openal-rs.git"

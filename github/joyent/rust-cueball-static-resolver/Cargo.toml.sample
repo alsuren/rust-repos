@@ -1,0 +1,13 @@
+[package]
+name = "cueball-static-resolver"
+version = "0.1.0"
+authors = ["Kelly McLaughlin <kelly.mclaughlin@joyent.com>"]
+edition = "2018"
+
+[dependencies]
+cueball = { git = 'https://github.com/joyent/rust-cueball' }
+
+[dev-dependencies]
+cueball-tcp-stream-connection = { git = 'https://github.com/joyent/cueball-tcp-stream-connection' }
+slog = "2.4.1"
+slog-term = "2.4.0"

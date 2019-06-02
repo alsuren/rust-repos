@@ -1,0 +1,7 @@
+[package]
+name = "fier-lang"
+version = "0.1.0"
+authors = ["Scottlr <xscott@hotmail.co.uk>"]
+
+[dependencies]
+clippy = {version = "*", optional = true}

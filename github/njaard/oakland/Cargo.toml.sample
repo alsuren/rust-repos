@@ -1,0 +1,16 @@
+[package]
+name = "oakland"
+version = "0.1.0"
+description="An experimental GUI library for X-Windows"
+authors = ["Charles Samuels <ks@ks.ax>"]
+edition="2018"
+keywords=["gui","x-windows", "x11"]
+
+[dependencies]
+xcb =  {version="0.8", features=["render"] }
+xcb-util =  {version="0.2", features=["icccm"] }
+cairo = {git="https://github.com/njaard/rust-cairo"}
+libc = "0.2"
+nix = "0.13"
+antidote = "1"
+image="0.21"

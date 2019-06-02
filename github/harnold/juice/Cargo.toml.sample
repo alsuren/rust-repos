@@ -1,0 +1,9 @@
+[package]
+name = "juice"
+version = "0.1.0"
+authors = ["Holger Arnold <holgerar@gmail.com>"]
+
+[dependencies]
+bitflags = "^0.9.1"
+clang-sys = { version = "^0.21.0", features = ["clang_3_9"] }
+libc = "^0.2.26"

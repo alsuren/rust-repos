@@ -1,0 +1,8 @@
+[package]
+name = "blogdb"
+version = "0.1.0"
+authors = ["Nikica Jokic <neektza@gmail.com>"]
+
+[dependencies]
+byteorder = "0.4.2"
+time = "0.1.34"

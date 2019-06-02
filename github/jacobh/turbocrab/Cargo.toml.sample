@@ -1,0 +1,21 @@
+[package]
+name = "turbocrab"
+version = "0.1.0"
+authors = ["Jacob Haslehurst <jacob@haslehurst.net>"]
+
+[dependencies]
+hyper = "0.11"
+hyper-tls = "0.1"
+futures = "0.1"
+url = "1.0"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-file-unix = "0.4"
+# failure = "0.1"
+crossbeam-channel = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"
+sled = "0.15"
+ring = "0.12"
+base64 = "0.9"

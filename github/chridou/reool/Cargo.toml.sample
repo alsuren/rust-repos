@@ -1,0 +1,36 @@
+[package]
+name = "reool"
+version = "0.9.0"
+authors = ["Christian Douven <chridou@users.noreply.github.com>"]
+readme = "README.md"
+license = "Apache-2.0/MIT"
+description = "An asynchrounous connection pool for Redis based on tokio and redis-rs"
+documentation = "https://docs.rs/reool"
+homepage = "https://github.com/chridou/reool"
+repository = "https://github.com/chridou/reool"
+keywords = ["redis", "connection", "connection-pool", "tokio", "async"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+parking_lot = "0.7"
+futures = "0.1"
+tokio = "0.1"
+tokio-timer = "0.2"
+redis = "0.10"
+rand = "0.6"
+metrix = { version = "0.9", optional = true }
+
+[features]
+default = []
+
+[dev-dependencies]
+pretty_env_logger = "0.3"
+
+[[example]]
+name = "metrix_single_node"
+required-features = ["metrix"]
+
+[[example]]
+name = "metrix_multi_node"
+required-features = ["metrix"]

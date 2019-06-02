@@ -1,0 +1,8 @@
+[package]
+name = "snek-preprocessor"
+version = "0.1.0"
+authors = ["Ericko Samudera <ericko.samudera@gmail.com>"]
+
+[dependencies]
+regex = "1.0"
+lazy_static = "1.0"

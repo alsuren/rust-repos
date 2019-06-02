@@ -1,0 +1,15 @@
+[package]
+name = "copyrighter"
+version = "0.1.0"
+authors = ["Matt Kline <matthew.kline@flukenetworks.com>"]
+edition = "2018"
+
+[dependencies]
+getopts = "0.2" # Args parsing
+itertools = "0.5" # Additional iterator operations (e.g. join)
+lazy_static = "1" # Lazy static init (of regexes, mostly)
+memmap = "0.7" # We move file contents around by memory mapping them
+rayon = "1" # Parallelism!
+rayon-hash = "0.4"
+regex = "1"
+time = "0.1" # Fiddling with Git commit times

@@ -1,0 +1,21 @@
+[package]
+name = "ruga"
+version = "0.2.0"
+authors = ["thiolliere <guillaume.thiolliere@opmbx.org>"]
+
+[[bin]]
+name = "ruga"
+
+[dependencies]
+graphics = { path = "src/graphics" }
+configuration = { path = "src/configuration" }
+baal = { git = "https://github.com/thiolliere/baal" }
+specs = "0.7"
+glium = "*"
+time = "*"
+lazy_static = "*"
+toml = "0.2"
+rand = "*"
+png = "*"
+fnv = "*"
+gilrs = "*"

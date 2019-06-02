@@ -1,0 +1,27 @@
+[package]
+name = "hotwings-cli"
+version = "0.1.0"
+authors = ["Alex Yang <aleozlx@gmail.com>"]
+description = "The official Hotwings command line interface"
+license = "MIT"
+edition = "2018"
+
+[[bin]]
+name = "hwcli"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.32.0"
+regex = "1"
+chrono = "0.4.6"
+yaml-rust = "0.4.3"
+colored = "1.6"
+handlebars = "1.1.0"
+nix = "0.10.0"
+log = "0.4"
+fern = "0.5"
+dirs = "1.0.4"
+rand = "0.6.5"
+toml = "0.5.0"
+serde = "1"
+serde_derive = "1"

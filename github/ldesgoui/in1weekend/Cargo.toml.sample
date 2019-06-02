@@ -1,0 +1,26 @@
+[package]
+name = "in1weekend"
+version = "0.0.0"
+authors = ["ldesgoui <ldesgoui@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2"
+failure = "0.1"
+image = "0.20"
+indicatif = "0.9"
+nalgebra = "0.16"
+ncollide3d = "0.17"
+noise = "0.5"
+palette = "0.4"
+rand = "0.5"
+rayon = "1"
+
+[profile.dev]
+debug = false
+opt-level = 3
+codegen-units = 1
+
+[profile.release]
+codegen-units = 1
+lto = true

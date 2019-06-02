@@ -1,0 +1,14 @@
+[package]
+name = "image-host"
+version = "0.1.0"
+authors = ["Kurt Kartaltepe <kkartalepe@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+iron  = "*"
+router  = "*"
+params  = "*"
+hyper = "*"
+serde = "*"
+serde_json = "*"
+liquid = "0.9"

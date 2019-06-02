@@ -1,0 +1,32 @@
+[package]
+name = "timezone-bot-web"
+version = "0.1.0"
+authors = ["jude-lafitteIII <judewrs@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = {version = "0.7", features = ["alpn"]}
+actix = "0.7"
+askama = "0.6"
+
+mysql = "14.2"
+dotenv = "0.10"
+
+futures = "0.1"
+
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+sha2 = "0.8"
+
+base64 = "0.9"
+
+urlencoding = "1.0"
+
+env_logger = "0.6"
+
+chrono = "0.4"
+chrono-tz = "0.4"
+
+rand = "0.6"

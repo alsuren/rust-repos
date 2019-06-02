@@ -1,0 +1,40 @@
+[package]
+name = "rust_pca9685"
+description = "A library for interacting with the Adafruit PCA9685"
+documentation = "https://sjohnson.maiome.xyz/rust-pca9685/"
+homepage = "https://glow.dev.maio.me/sjohnson/rust-pca9685"
+repository = "https://glow.dev.maio.me/sjohnson/rust-pca9685"
+version = "0.1.0"
+authors = ["Sean Johnson <sean.johnson@maio.me>", "Julian Itwaru <jrk57j@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+env_logger = "0.5.10"
+i2cdev = "0.4.0"
+log = "0.4.0"
+
+# Dependencies for CLI tools that ride alongside this library
+quicli = { version = "0.3.0", optional = true }
+ctrlc = { version = "3.0", features = ["termination"], optional = true }
+
+[dev-dependencies]
+env_logger = "0.5.10"
+
+[features]
+# By default, no additional packages beyond `env_logger`, `i2cdev`, and `log` are required
+default = []
+
+# With cli tooling
+cli = ["quicli", "ctrlc"]
+
+[[bin]]
+name = "pw2deg"
+required-features = ["cli"]
+
+[[bin]]
+name = "deg2pw"
+required-features = ["cli"]
+
+[[bin]]
+name = "sweep"
+required-features = ["cli"]

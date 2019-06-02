@@ -1,0 +1,12 @@
+[package]
+name = "gr_trace"
+version = "0.1.0"
+authors = ["Sean Purcell <me@seanp.xyz>"]
+
+[dependencies]
+glium = "0.23.0"
+image = "0.21.0"
+time = "0.1.42"
+clap = "2.33.0"
+cgmath = "0.17.0"
+

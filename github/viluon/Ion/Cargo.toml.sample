@@ -1,0 +1,8 @@
+[package]
+name = "ion"
+version = "0.1.0"
+authors = [ "Andrew Kvapil <viluon@espiv.net>" ]
+
+[dependencies.gtk]
+version = "*"
+features = ["v3_16"]

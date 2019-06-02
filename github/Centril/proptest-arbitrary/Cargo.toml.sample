@@ -1,0 +1,39 @@
+[package]
+name          = "proptest-arbitrary"
+version       = "0.3.0"
+authors       = ["Mazdak Farrokhzad <twingoow@gmail.com>"]
+license       = "MIT/Apache-2.0"
+readme        = "README.md"
+
+repository    = "https://github.com/Centril/proptest-arbitrary"
+documentation = "https://docs.rs/proptest-arbitrary"
+
+keywords      = ["arbitrary", "property", "testing", "quickcheck", "hypothesis"]
+categories    = ["development-tools::testing"]
+
+description = """
+The Arbitrary trait for proptest and implementations for the standard library.
+"""
+
+[badges]
+
+maintenance = { status = "experimental" }
+
+[features]
+
+default = ["frunk"]
+
+# Enables nightly features of Rust.
+unstable = []
+
+# Uses frunk_core for Hlist and Generic.
+frunk = ["frunk_core"]
+
+[dependencies]
+proptest = "0.4.0"
+
+rand = "0.4.2"
+
+frunk_core = { version = "0.0.21", optional = true }
+
+bit-set  = "0.4.0"

@@ -1,0 +1,20 @@
+[package]
+name = "rusttracer"
+version = "0.1.0"
+authors = ["Jonathan Featherstone <jfeatherstone@instructure.com>"]
+
+[profile.release]
+debug = true
+
+[lib]
+name = "rtlib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rtbin"
+path = "src/main.rs"
+
+[dependencies.sdl2]
+version = "0.31.0"
+default-features = false
+features = ["gfx"]

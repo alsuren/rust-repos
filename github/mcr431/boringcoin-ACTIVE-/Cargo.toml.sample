@@ -1,0 +1,17 @@
+[package]
+name = "boringcoin"
+version = "0.1.0"
+authors = ["Matthew Russo <mcr431@nyu.edu>"]
+
+[dependencies]
+sodiumoxide = "0.0.16"
+byteorder = "1.2.2"
+
+[lib]
+name = "boringcoin_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "boringcoin"
+path = "src/main.rs"
+

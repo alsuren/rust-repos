@@ -1,0 +1,12 @@
+[package]
+name = "turtle-rs"
+version = "0.1.0"
+authors = ["Julian Fuchs"]
+
+[lib]
+name = "turtle"
+path = "src/lib.rs"
+
+[dependencies]
+sdl2 = "0.24.0"
+image = "0.10.3"

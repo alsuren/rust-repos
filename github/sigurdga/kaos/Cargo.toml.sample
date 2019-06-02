@@ -1,0 +1,11 @@
+[package]
+name = "kaos"
+version = "0.1.0"
+authors = ["Sigurd Gartmann <sigurdga@sigurdga.no>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "0.1.4"
+spin = "0.3.4"

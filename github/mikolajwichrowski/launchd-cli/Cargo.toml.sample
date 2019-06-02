@@ -1,0 +1,9 @@
+[package]
+name = "launchd-cli"
+version = "0.1.0"
+authors = ["mikolajwichrowski"]
+edition = "2018"
+
+[dependencies]
+clap = "~2.32"
+structopt = "0.2"

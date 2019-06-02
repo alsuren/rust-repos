@@ -1,0 +1,13 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Sean Humeniuk <seanhumeniuk@gmail.com>"]
+
+[dependencies]
+rand = "*"
+image = "*"
+toml = "*"
+tdmath = { git = "https://github.com/sean-h/tdmath.git" }
+cmdpro = { git = "https://github.com/sean-h/cmdpro.git" }
+threadpool = "*"
+modelloader = { git = "https://github.com/sean-h/modelloader.git" }

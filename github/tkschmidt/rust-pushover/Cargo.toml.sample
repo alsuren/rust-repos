@@ -1,0 +1,9 @@
+[package]
+
+name = "pushover"
+version = "0.0.1"
+authors = ["Ed Brereton <edbrereton@gmail.com>"]
+
+[[example]]
+name = "basicnotification"
+path = "examples/basicnotification.rs"

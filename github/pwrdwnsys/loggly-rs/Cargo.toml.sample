@@ -1,0 +1,14 @@
+[package]
+name = "loggly"
+version = "0.1.0"
+authors = ["pwrdwnsys <pwrdwnsys@users.noreply.github.com>"]
+description = "Unofficial Rust library for the Loggly API"
+repository = "https://github.com/pwrdwnsys/loggly-rs"
+readme = "README.md"
+keywords = ["loggly"]
+license = "MIT"
+license-file = "LICENSE"
+
+[dependencies]
+hyper = "^0.9.1"
+rustc-serialize = "^0.3.19"

@@ -1,0 +1,21 @@
+[package]
+name = "sample"
+version = "0.1.0"
+authors = [" <kan>"]
+
+[dependencies]
+serde_json="*"
+serde_derive="*"
+serde="*"
+tera="*"
+chrono="*"
+xml-rs = "*"
+rocket="*"
+rocket_codegen="*"
+lazy_static="*"
+hyper="*"
+
+[dependencies.rocket_contrib]
+version="*"
+default-features = false
+features = ["tera_templates"]

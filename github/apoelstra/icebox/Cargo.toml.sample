@@ -1,0 +1,24 @@
+[package]
+name = "icebox"
+version = "1.0.1"
+authors = ["Andrew Poelstra <apoelstra@wpsoftware.net>"]
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "icboc"
+path = "src/main.rs"
+
+[dependencies]
+base64 = "0.5"
+bitcoin = "0.9"
+byteorder = "1.0"
+rust-crypto = "0.2"
+hex = "0.2"
+hid = "0.3"
+log = "0.3"
+secp256k1 = "0.6"
+simplelog = "0.4"
+time = "0.1"
+

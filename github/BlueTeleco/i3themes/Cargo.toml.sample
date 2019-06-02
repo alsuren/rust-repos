@@ -1,0 +1,8 @@
+[package]
+name = "i3themes"
+version = "0.1.0"
+authors = ["lucas"]
+
+[dependencies]
+getopts   = "0.2"
+yaml-rust = "0.4.0"

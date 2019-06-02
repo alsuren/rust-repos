@@ -1,0 +1,16 @@
+[package]
+name = "fragmentos"
+version = "0.1.0"
+authors = ["real"]
+
+[dependencies]
+
+rand = "0.3.16"
+arrayref = "0.3.4"
+ring = "0.12.1"
+reed-solomon-erasure = {version = "2.3", features = ["pure-rust"] }
+
+futures = "0.1.15"
+tokio-core = "0.1.9"
+
+

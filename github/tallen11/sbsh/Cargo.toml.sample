@@ -1,0 +1,8 @@
+[package]
+name = "sbsh"
+version = "0.1.0"
+authors = ["Tate Allen <tatea7@yahoo.com>"]
+
+[dependencies]
+termion = "1"
+nix = "0.10.0"

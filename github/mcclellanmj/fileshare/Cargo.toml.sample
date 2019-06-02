@@ -1,0 +1,18 @@
+[package]
+name = "personal-file-share"
+version = "0.1.0"
+authors = ["Matt McClellan <mcclellan.mj@gmail.com>"]
+
+[dependencies]
+iron = "0.4"
+iron-sessionstorage = "0.5"
+hyper = "0.9"
+router = "0.2"
+url = "1.1"
+rusqlite = "0.7"
+rustc-serialize = "0.3"
+uuid = { version = "0.3", features = ["v4"] }
+lettre = { git = "https://github.com/lettre/lettre.git", rev="90b00ae4ffc8828041160dc4cb579d53f4173c8e" }
+time = "0.1"
+liquid = "0.9"
+params = "0.5"

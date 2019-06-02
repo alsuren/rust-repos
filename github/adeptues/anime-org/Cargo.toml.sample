@@ -1,0 +1,13 @@
+[package]
+name = "anime-org"
+version = "0.1.0"
+authors = ["Thomas Helmkay <thomas.helmkay@e-healthinnovations.com>"]
+
+[dependencies]
+serde = "1.0.83"
+serde_derive = "1.0.83"
+serde-xml-rs = "0.2.1"
+regex = "1.1.0"
+structopt = "0.2.10"
+log = "0.4"
+env_logger = "0.6.0"

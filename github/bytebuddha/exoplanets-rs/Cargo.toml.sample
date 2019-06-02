@@ -1,0 +1,24 @@
+[package]
+name = "exoplanet-archive"
+version = "0.1.0"
+authors = ["Patrick Greene <pmg41494@protonmail.com>"]
+edition = "2018"
+description = """
+WIP Unofficial Library for parsing data from the Exoplanet Archive API.
+"""
+documentation = "https://docs.rs/exolanets"
+homepage = "https://github.com/bytebuddha/exoplanets-rs"
+repository = "https://github.com/Bytebuddha/exoplanets-rs"
+readme = "Readme.md"
+keywords = ["exoplanets", "space", "nasa"]
+license = "MIT"
+
+[dependencies]
+reqwest = "0.9.14"
+serde = "1.0.90"
+serde_derive = "1.0.90"
+serde_json = "1.0.39"
+
+[dependencies.chrono]
+version = "0.4.6"
+features = ["serde"]

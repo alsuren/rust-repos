@@ -1,0 +1,11 @@
+[package]
+name = "sbpdump"
+version = "0.1.1"
+authors = ["Mark Fine <mark.fine@gmail.com>"]
+license = "MIT"
+description = "A SBP frame analysis tool"
+repository = "https://github.com/mfine/sbpdump"
+
+[dependencies]
+clap = "2.33.0"
+serde_json = "1.0"

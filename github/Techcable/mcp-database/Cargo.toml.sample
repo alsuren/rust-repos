@@ -1,0 +1,19 @@
+[package]
+name = "mcp-database"
+version = "0.1.0"
+authors = ["Techcable <Techcable@techcable.net>"]
+
+[dependencies]
+# Utils
+byteorder = "1.2.6"
+itertools = "0.7.8"
+# Database
+lmdb = "0.8.0"
+lmdb-sys = "0.8.0"
+# Serialization
+csv = "1"
+serde = "1"
+serde_derive = "1"
+
+# SRG files
+srglib = { git = "https://github.com/Techcable/srglib-rust" }

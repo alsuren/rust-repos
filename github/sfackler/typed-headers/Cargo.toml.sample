@@ -1,0 +1,15 @@
+[package]
+name = "typed-headers"
+version = "0.1.1"
+authors = ["Steven Fackler <sfackler@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = "Typed HTTP header serialization and deserialization."
+repository = "https://github.com/sfackler/typed-headers"
+readme = "README.md"
+
+[dependencies]
+base64 = "0.10"
+bytes = "0.4"
+chrono = "0.4"
+http = "0.1.15"
+mime = "0.3"

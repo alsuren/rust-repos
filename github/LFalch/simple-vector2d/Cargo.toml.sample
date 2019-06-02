@@ -1,0 +1,27 @@
+[package]
+name = "simple-vector2d"
+version = "0.1.4"
+authors = ["LFalch <lucas@wasd.dk>"]
+description="Simple 2D vector implementation"
+documentation="https://docs.rs/simple-vector2d/"
+repository="https://github.com/LFalch/simple-vector2d"
+homepage="https://github.com/LFalch/simple-vector2d"
+readme="README.md"
+keywords=["vectors"]
+license="MIT"
+exclude = [
+    ".gitignore",
+    "README.md",
+    ".travis.yml",
+    "appveyor.yml"
+]
+
+[dependencies]
+num-traits = "0.1.35"
+rustc-serialize = {version = "0.3", optional = true}
+serde_derive = {version = ">=0.9.0, ~1", optional = true}
+serde = {version = ">=0.9.0, ~1", optional = true}
+
+[features]
+default = []
+serde-serial = ["serde", "serde_derive"]

@@ -1,0 +1,9 @@
+[package]
+name = "oxyql"
+version = "0.1.0"
+authors = ["Tom Basche <tcbasche@gmail.com>"]
+description = "Rust Postgres client"
+
+[dependencies]
+postgres = "0.15"
+clap = "2.26.0"

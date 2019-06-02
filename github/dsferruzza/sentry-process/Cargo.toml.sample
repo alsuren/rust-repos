@@ -1,0 +1,19 @@
+[package]
+name = "sentry-process"
+version = "1.0.1"
+authors = ["David Sferruzza <david.sferruzza@gmail.com>"]
+edition = "2018"
+description = "Report failed processes/scripts to Sentry"
+repository = "https://gitlab.com/dsferruzza/sentry-process"
+readme = "README.md"
+categories = ["command-line-utilities"]
+keywords = ["sentry"]
+license = "MIT"
+
+[badges]
+gitlab = { repository = "dsferruzza/sentry-process", branch = "master" }
+
+[dependencies.sentry]
+version = "0.15.*"
+default-features = false
+features = ["with_client_implementation", "with_default_transport", "with_device_info", "with_rust_info"]

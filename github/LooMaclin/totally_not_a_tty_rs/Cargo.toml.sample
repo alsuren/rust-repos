@@ -1,0 +1,9 @@
+[package]
+name = "totally_not_a_tty_rs"
+version = "0.1.0"
+authors = ["loomaclin <loo.maclin@protonmail.com>"]
+
+[dependencies]
+futures = "=0.1.19"
+tokio-core = "=0.1.15"
+telebot = "=0.2.7"

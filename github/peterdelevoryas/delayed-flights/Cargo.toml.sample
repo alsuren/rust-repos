@@ -1,0 +1,8 @@
+[package]
+name = "delayed-flights"
+version = "0.1.0"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+
+[dependencies]
+bzip2 = { git = "https://github.com/alexcrichton/bzip2-rs" }
+httparse = { git = "https://github.com/seanmonstar/httparse" }

@@ -1,0 +1,47 @@
+# file : Cargo.toml
+#
+# Copyright (C) 2018  Joshua Barretto <joshua.s.barretto@gmail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+[package]
+name = "tupai"
+version = "0.1.0"
+license = "GNU General Public License v3"
+authors = ["Joshua Barretto <joshua.s.barretto@gmail.com>"]
+build = "build-config.rs"
+
+[profile.dev]
+panic = "abort"
+#rustc_args = "-g --omit=obj,link"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+rlibc = "1.0.0"
+volatile = "0.1.0"
+spin = "0.4.5"
+cstr_core = "0.1.0"
+bitflags = "1.0.1"
+bimap = { git = "https://github.com/zesterer/bimap-rs" }
+
+[dependencies.lazy_static]
+version = "1.0.0"
+features = ["spin_no_std"]
+
+[dependencies.arrayvec]
+version = "0.4.7"
+default-features = false
+features = []

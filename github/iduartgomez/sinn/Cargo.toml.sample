@@ -1,0 +1,17 @@
+[package]
+name = "sinn"
+version = "0.0.1"
+authors = ["IDG <iduartgomez@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+tf-rs = { version = "0.0.3", git = "https://github.com/iduartgomez/tf-rs" }
+syntaxnet-sys = { version = "*", path = "./syntaxnet-sys" }
+prost = "0.2"
+prost-derive = "0.2"
+bytes = "~0.4"
+nom = "~3.1"
+uuid = { version = "0.4", features = ["v4"] }
+
+[build-dependencies]
+prost-build = "0.2"

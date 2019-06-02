@@ -1,0 +1,15 @@
+[package]
+name = "rust-sql-engine"
+version = "0.0.1-SNAPSHOT"
+authors = ["Alex-Diez <alexvic.amatory@gmail.com>"]
+
+[lib]
+name = "sql"
+path = "src/lib.rs"
+
+[[test]]
+name = "test"
+path = "test/lib.rs"
+
+[dev-dependencies]
+expectest = "*"

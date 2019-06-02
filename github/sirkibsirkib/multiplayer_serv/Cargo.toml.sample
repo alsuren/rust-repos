@@ -1,0 +1,21 @@
+[package]
+name = "multiplayer_serv"
+version = "0.1.0"
+authors = ["sirkibsirkib <christopher.esterhuyse@gmail.com>"]
+
+[dependencies]
+clap = "2.26.2"
+piston_window = "0.70.0"
+serde = "1.0.15"
+serde_derive = "1.0.15"
+bidir-map = "1.0.0"
+bincode = "0.9.2"
+rand = "0.3"
+find_folder = "0.3.0"
+byteorder = "1.1.0"
+noise = "0.4.1"
+gfx_device_gl = "0.14.4"
+lazy_static = "0.2.9"
+image = "0.17.0"
+if_chain = "0.1.2"
+array-init = "0.0.2"

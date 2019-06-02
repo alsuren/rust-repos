@@ -1,0 +1,34 @@
+[package]
+name = "jira-cli"
+version = "0.1.0"
+authors = ["Cainã Costa <me@cfcosta.com>"]
+
+[[bin]]
+name = "jira-cli"
+
+[dependencies]
+# HTTP Client
+reqwest = "*"
+hyper = "*"
+
+# Serialization
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+toml = { git = "https://github.com/cfcosta/toml-rs.git" , features = ["serde"] }
+
+# CLI Handling
+clap = "*"
+
+# Logging
+log = "*"
+
+# Terminal Coloring
+termion = "*"
+
+# XDG path support
+xdg-basedir = "*"
+
+# Word wrapping and hyphenation
+textwrap = "*"
+hyphenation = "*"

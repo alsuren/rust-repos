@@ -1,0 +1,13 @@
+[package]
+name = "weechat-rs"
+version = "0.1.0"
+authors = ["Abhilash Raj <raj.abhilash1@gmail.com>"]
+license = "Apache 2.0"
+repository = "https://github.com/maxking/weechat-rs"
+readme = "README.md"
+links = "weechatrelay"
+build = "build.rs"
+
+[dependencies]
+libc = "^0.2.0"
+ncurses = "*"

@@ -1,0 +1,26 @@
+[package]
+name = "wgconfd"
+version = "0.1.2"
+edition = "2018"
+authors = [ "Hristo Venev <hristo@venev.name>" ]
+license = "LGPL-3.0"
+description = "A configuration manager for WireGuard"
+repository = "https://git.venev.name/hristo/wgconfd"
+readme = "README.md"
+keywords = [ "wireguard" ]
+
+[dependencies]
+arrayref = { version = "0.3.5" }
+base64 = { version = "0.10.1" }
+serde = { version = "1.0" }
+serde_derive = { version = "1.0" }
+serde_json = { version = "1.0" }
+chrono = { version = "0.4.6", default-features = false }
+toml = { version = "0.5.0", optional = true }
+
+[features]
+default = [ "toml" ]
+
+[profile.release]
+panic = "abort"
+lto = true

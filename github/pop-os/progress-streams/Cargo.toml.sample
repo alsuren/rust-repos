@@ -1,0 +1,10 @@
+[package]
+name = "progress-streams"
+version = "1.0.0"
+description = "Progress callbacks for types which implement Read/Write"
+repository = "https://github.com/pop-os/progress-streams"
+authors = ["Michael Aaron Murphy <mmstickman@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["progress", "streams", "read", "write", "callback"]
+categories = ["data-structures", "rust-patterns"]

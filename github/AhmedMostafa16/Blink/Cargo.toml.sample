@@ -1,0 +1,14 @@
+[package]
+name = "blink"
+version = "0.1.1"
+authors = ["Ahmed Mostafa <amk67482@gmail.com>"]
+license = "GNU GPLv3"
+repository = "https://github.com/mgattozzi/chiisai.git"
+homepage = "https://github.com/mgattozzi/chiisai"
+readme = "README.md"
+description = "Fast, micro and reliable microservice library"
+
+[dependencies]
+hyper = "0.11"
+futures = "0.1"
+url = "1.7"

@@ -1,0 +1,27 @@
+[package]
+name = "image_colors"
+version = "0.5.1"
+authors = ["Noah Rinehart <rinehart.noah@gmail.com>"]
+description = "Get colors from an image. Optionally sort by most common."
+homepage = "https://github.com/noahrinehart/image_colors"
+repository = "https://github.com/noahrinehart/image_colors"
+readme = "README.md"
+keywords = ["image", "colors", "pixels", "sorted"]
+license = "MIT"
+categories = ["multimedia", "command-line-utilities"]
+
+[lib]
+name = "image_colors"
+path = "src/lib.rs"
+
+[[bin]]
+name = "image_colors"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+image = "0.15.0"
+ansi_term = "0.9.0"
+log = "0.3.8"
+env_logger = "0.4.3"
+clap = {version="2.26.0", features=["yaml"]}

@@ -1,0 +1,41 @@
+[package]
+name = "dcpu16"
+version = "0.4.0"
+authors = ["Gustav Larsson <gustav.m.larsson@gmail.com>"]
+description = "DCPU-16 assembler, disassembler and emulator"
+repository = "https://github.com/gustavla/dcpu16"
+readme = "README.md"
+keywords = ["dcpu16", "cpu", "emulator", "simulator", "assembler"]
+license = "MIT"
+
+[dependencies]
+getopts = "0.2"
+
+[lib]
+name = "dcpu16"
+path = "src/lib.rs"
+test = false
+doctest = false
+
+[[bin]]
+name = "dcpu16"
+path = "src/bin/emulator.rs"
+test = false
+
+[[bin]]
+name = "dcpu16-assembler"
+path = "src/bin/assembler.rs"
+test = false
+
+[[bin]]
+name = "dcpu16-disassembler"
+path = "src/bin/disassembler.rs"
+test = false
+
+[[bin]]
+name = "dcpu16-tokenizer"
+path = "src/bin/tokenizer.rs"
+test = false
+
+[[test]]
+name = "tests"

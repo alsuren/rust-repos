@@ -1,0 +1,13 @@
+[package]
+name = "update_server"
+version = "0.1.0"
+authors = ["Robert Helmer <rhelmer@rhelmer.org>"]
+
+[dependencies]
+iron = "0.5.1"
+serde = "1.0.8"
+serde_derive = "1.0.8"
+serde_json = "1.0.2"
+diesel = { version = "0.13.0", features = ["postgres"] }
+diesel_codegen = { version = "0.13.0", features = ["postgres"] }
+dotenv = "0.9.0"

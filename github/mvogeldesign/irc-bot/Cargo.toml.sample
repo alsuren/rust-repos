@@ -1,0 +1,11 @@
+[package]
+name = "irc-bot"
+version = "0.1.0"
+authors = ["Matthew Vogel <matthew@apnic.net>"]
+edition = "2018"
+
+[dependencies]
+irc = "0.13.6"
+env_logger = "*"
+failure = "0.1"
+futures = "0.1"

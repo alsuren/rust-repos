@@ -1,0 +1,9 @@
+[package]
+name = "chatbot"
+version = "0.1.0"
+authors = ["Michael Younkin <younkin.michael@gmail.com>"]
+
+[dependencies]
+rand = "0.3.14"
+regex = "0.1"
+lazy_static = "0.1.15"

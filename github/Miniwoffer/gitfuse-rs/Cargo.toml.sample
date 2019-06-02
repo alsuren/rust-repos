@@ -1,0 +1,13 @@
+[package]
+name = "gitfuse-rs"
+version = "0.1.0"
+authors = ["Miniwoffer <odinhorst@hotmail.com>"]
+
+[dependencies]
+clap = "2.32.0"
+fuse = "0.3.1"
+git2 = "0.7.1"
+time = "0.1"
+libc = "0.2"
+
+clippy = {version = "*", optional = true}

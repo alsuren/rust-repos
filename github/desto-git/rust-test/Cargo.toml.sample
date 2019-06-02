@@ -1,0 +1,12 @@
+[package]
+name = "snake-rs"
+version = "0.1.0"
+authors = ["desto"]
+
+[dependencies]
+rand = "0.6.5"
+
+[dependencies.sdl2]
+version = "0.32"
+default-features = false
+features = ["image","ttf"] # "gfx","mixer"

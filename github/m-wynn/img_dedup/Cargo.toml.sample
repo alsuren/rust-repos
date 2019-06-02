@@ -1,0 +1,36 @@
+[package]
+authors = ["Matthew Wynn <matthew@matthewwynn.com>"]
+description = "Deduplicates images in a folder"
+edition = "2018"
+name = "img_dedup"
+version = "0.1.0"
+
+[dependencies]
+bit-vec = "0.4.0"
+failure = "0.1"
+failure_derive = "0.1"
+image = "0.19.0"
+itertools = "0.8.0"
+lazy_static = "1.2.0"
+log = "0.4"
+rand = "0.6.3"
+rayon = "1.0.3"
+simplelog = "0.5"
+walkdir = "2.2.7"
+relm = "0.15.0"
+relm-derive = "0.15.0"
+relm-attributes = "0.15.0"
+relm-core = "0.15.0"
+structopt = "0.2.15"
+
+# Need GTK 3.10 for Stack
+[dependencies.gtk]
+features = ["embed-lgpl-docs", "v3_10"]
+version = "0.5.0"
+
+[dependencies.img_hash]
+features = ["rust-image"]
+version = "2.1.0"
+
+[features]
+default = ["relm/unstable", "relm-attributes/unstable", "relm-derive/unstable"]

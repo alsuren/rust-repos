@@ -1,0 +1,9 @@
+[package]
+name = "plant-stats"
+version = "0.1.0"
+authors = ["SpiveeWorks <spiveehere@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+piston_app = { git = "https://github.com/spiveeworks/piston_app" }
+piston_window = "0.89"

@@ -1,0 +1,37 @@
+[package]
+name = "myrt"
+version = "0.1.0"
+authors = ["Oliver Hunt <github@nerget.com>"]
+edition = "2018"
+
+[lib]
+name = "raytrace_rs"
+path = "src/lib.rs"
+lto = true
+
+[dependencies]
+image = "*"
+genmesh = "*"
+rand = "*"
+packed_simd = "*"
+obj = { version = "*", features = ["genmesh"]}
+num_cpus="*"
+xml-rs="*"
+order-stat ="*"
+
+[dependencies.clap]
+features = ["yaml"]
+git = "https://github.com/clap-rs/clap.git"
+branch = "master"
+
+[profile.release]
+debug = true
+lto = true
+
+[[example]]
+name = "myrt"
+path = "examples/myrt.rs"
+lto = true
+
+[dev-dependencies]
+sdl2 = "*"

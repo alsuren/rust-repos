@@ -1,0 +1,17 @@
+[package]
+name = "glip"
+version = "0.6.0"
+authors = ["Tomohisa Oda <linyows@gmail.com>"]
+homepage = "https://github.com/linyows/glip"
+license = "MIT"
+edition = "2018"
+readme = "README.md"
+repository = "https://github.com/linyows/glip"
+description = "Geographic location for IP Address with MaxmindDB."
+
+[dependencies]
+maxminddb = "0.12.0"
+reqwest = "0.9.8"
+libflate = "0.1.19"
+clap = "2.32"
+lazy_static = "1.2.0"

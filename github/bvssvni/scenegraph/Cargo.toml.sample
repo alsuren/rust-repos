@@ -1,0 +1,12 @@
+[package]
+
+name = "scenegraph"
+version = "0.0.0"
+authors = [ "UberLambda <paolo.jovon@gmail.com>",
+            "bvssvni <bvssvni@gmail.com>" ]
+tags = []
+
+[[lib]]
+
+name = "scenegraph"
+path = "src/lib.rs"

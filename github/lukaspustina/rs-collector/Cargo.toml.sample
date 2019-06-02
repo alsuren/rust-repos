@@ -1,0 +1,57 @@
+[package]
+name = "rs-collector"
+version = "0.1.7"
+authors = ["Lukas Pustina <lukas@pustina.net>"]
+description = "An scollector compatible telemetry collector written in Rust"
+repository = "https://github.com/lukaspustina/rs-collector.git"
+documentation = "http://lukaspustina.github.io/rs-collector"
+readme = "README.md"
+license = "MIT"
+keywords = ["bosun", "scollector", "command", "line", "metric"]
+include = [
+  "README.md",
+  "LICENSE",
+  "**/*.rs",
+  "Cargo.toml",
+]
+
+[badges]
+travis-ci = { repository = "lukaspustina/rs-collector", branch = "master" }
+
+[[bin]]
+name = "rs-collector"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+bosun_emitter = "1.1.0"
+chan = "0.1"
+chan-signal = "0.3"
+chrono = "0.4"
+clap = "2"
+env_logger = "0.4"
+get_if_addrs = "0.5"
+is_executable = "0.1.0"
+itertools = "0.7"
+log = "0.3"
+regex = "1.0"
+rustc-serialize = "0.3"
+time = "0.1"
+# toml > 0.2 requires serde
+toml = "0.2"
+
+[dependencies.mongodb]
+version = "0.3.5"
+features = ["ssl"]
+
+[dependencies.mysql]
+version = "13.1"
+default-features = false
+features = ["ssl"]
+
+[target.'cfg(target_os = "linux")'.dependencies]
+procinfo = "0.4"
+
+[dev-dependencies]
+mktemp = "0.3.1"
+

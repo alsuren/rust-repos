@@ -1,0 +1,12 @@
+[package]
+name = "iranika_os"
+version = "0.1.0"
+authors = ["iranika <7370486+iranika@users.noreply.github.com>"]
+
+[dependencies]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

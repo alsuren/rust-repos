@@ -1,0 +1,12 @@
+[package]
+
+name = "rust-psm"
+version = "0.0.1"
+authors = ["Henry Estela <henryestela@gmail.com>"]
+
+[lib]
+name = "rust_psm"
+
+[dependencies]
+libc = "0.2"
+uuid = "0.2"

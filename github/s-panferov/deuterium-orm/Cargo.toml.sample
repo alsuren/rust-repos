@@ -1,0 +1,43 @@
+[package]
+
+name = "deuterium_orm"
+version = "0.5.0"
+description = "Simple ORM for Rust"
+authors = ["Stanislav Panferov <fnight.m@gmail.com>"]
+keywords = ["sql", "orm"]
+license = "MIT"
+
+[lib]
+name = "deuterium_orm"
+path = "src/lib.rs"
+
+[features]
+default = ["pg"]
+pg = ["postgres", "r2d2_postgres", "r2d2"]
+
+[[test]]
+name = "tests"
+
+[dependencies]
+regex = "*"
+regex_macros = "*"
+time = "*"
+deuterium = "*"
+byteorder = "*"
+num = "*"
+enum_primitive = "*"
+
+[dependencies.postgres]
+version = "*"
+optional = true
+
+[dependencies.r2d2]
+version = "*"
+optional = true
+
+[dependencies.r2d2_postgres]
+version = "*"
+optional = true
+
+[dev-dependencies.deuterium_plugin]
+version = "*"

@@ -1,0 +1,27 @@
+[package]
+name = "r-shellitems"
+version = "0.0.8"
+authors = ["Matthew Seyer <https://github.com/forensicmatt/r-shellitems>"]
+
+[lib]
+name = "rshellitems"
+
+[dependencies]
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+byteorder = "1"
+bitflags = "0.9.1"
+encoding = "0.2"
+log = "*"
+env_logger = "*"
+trace-error = "*"
+
+[dependencies.chrono]
+version = "*"
+features = ["serde", "rustc-serialize"]
+
+[dependencies.r-winstructs]
+version = ">0.3.0"
+branch = "master"
+git = "https://github.com/forensicmatt/r-winstructs"

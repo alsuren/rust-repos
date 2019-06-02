@@ -1,0 +1,17 @@
+[package]
+name = "tokio-evacuate"
+description = "A future for coordinating controlled shutdown of participants."
+version = "2.0.0"
+authors = ["Toby Lawrence <toby@nuclearfurnace.com>"]
+license = "MIT"
+
+[dependencies]
+futures = "^0.1"
+parking_lot = "^0.7"
+slab = "^0.4"
+tokio-executor = "^0.1"
+tokio-sync = "^0.1"
+tokio-timer = "^0.2"
+
+[dev-dependencies]
+tokio = { version = "^0.1", features = ["reactor", "timer", "tokio-current-thread"] }

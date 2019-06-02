@@ -1,0 +1,8 @@
+[package]
+name = "tinyc"
+version = "0.1.0"
+authors = ["efenniht"]
+build = "build.rs"
+
+[build-dependencies]
+peg = { version = "0.5" }

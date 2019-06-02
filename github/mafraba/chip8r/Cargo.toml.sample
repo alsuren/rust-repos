@@ -1,0 +1,11 @@
+[package]
+name = "chip8r"
+version = "0.1.0"
+authors = ["Manuel Franco <mafraba@gmail.com>"]
+
+[dependencies]
+byteorder = "1"
+chan = "*"
+clap = "~2.19.0"
+rand = "0.3"
+termion = "1"

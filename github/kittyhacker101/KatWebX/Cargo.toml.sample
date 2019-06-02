@@ -1,0 +1,67 @@
+[package]
+name = "katwebx"
+license = "MIT"
+version = "1.0.0-pre2"
+exclude = [".gitignore", ".travis.yml", "appveyor.yml", "conf.toml", "/ci*", "/html/*test*", "*.br"]
+documentation = "https://katwebx.kittyhacker101.tk"
+repository = "https://github.com/kittyhacker101/KatWebX"
+authors = ["kittyhacker101 <kittyhacker101@protonmail.com>"]
+description = "A fast static web server and reverse proxy for the modern web. More information is available in the project's GitHub repository."
+categories = ["network-programming", "web-programming::http-server", "web-programming::websocket"]
+
+[badges]
+travis-ci = { repository = "kittyhacker101/KatWebX", branch = "master" }
+is-it-maintained-issue-resolution = { repository = "kittyhacker101/KatWebX" }
+is-it-maintained-open-issues = { repository = "kittyhacker101/KatWebX" }
+maintenance = { status = "experimental" }
+
+[[bin]]
+name = "katwebx"
+
+[dependencies] # Last reviewed on January 22, 2019
+# The libraires below rarely require updating (every 3 months or less). All new versions should be tested and reviewed before use.
+base64 = "=0.10.1"
+chrono = "=0.4.6"
+exitcode = "=1.1.2"
+futures = "=0.1.26"
+futures-cpupool = "=0.1.8" # Currently can't be upgraded to latest version
+htmlescape = "=0.3.1"
+toml = "=0.4.10"
+lazy_static = "=1.3.0"
+mime = "=0.3.13"
+mime_guess = "=2.0.0-alpha.6"
+number_prefix = "=0.2.8"
+percent-encoding = "=1.0.1"
+webpki = "=0.19.1"
+
+# The libraires below should be updated often (at least once a month), with new versions being tested before use.
+actix = "0.8.1"
+brotli = "3.3.0"
+bytes = "0.4.12"
+regex = "1.1.2"
+serde = "1.0.91"
+serde_derive = "1.0.89"
+
+# The libraires below should always use the lastest version whenever possible.
+rustls = ">=0.15.2"
+#actix-codec = ">=0.1.2"
+#actix-web-actors = ">=1.0.0-beta.4"
+openssl = { version = ">=0.10.22", features = ["vendored"] }
+actix-web = { version = ">=1.0.0-rc", default-features = false, features = ["client",  "flate2-rust", "rust-tls"] }
+actix-http = { version = ">=0.1.0-alpha.5", default-features = false, features = ["brotli", "flate2-rust", "ssl"] }
+actix-server = { version = ">=0.4.2", default-features = false, features = ["rust-tls"] }
+
+[target.'cfg(unix)'.dependencies]
+listenfd = "=0.3.3"
+signal-hook = "=0.1.8"
+
+[profile.dev]
+opt-level = 1
+rpath = true
+
+[profile.release]
+lto = true
+panic = 'abort'
+
+[profile.bench]
+lto = true

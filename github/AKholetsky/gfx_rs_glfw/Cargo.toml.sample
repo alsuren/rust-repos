@@ -1,0 +1,12 @@
+[package]
+name = "gfx_example"
+version = "0.1.0"
+authors = ["Anton Kholetsky <anton.kholetskiy@hiqo-solutions.com>"]
+
+[dependencies]
+gfx = "0.17.1"
+gfx_macros = "0.2.1"
+
+[dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs.git"
+default-features = false

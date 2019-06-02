@@ -1,0 +1,13 @@
+[package]
+name = "rust-lp"
+version = "0.0.1"
+authors = ["Bram van den Heuvel <bram@vandenheuvel.online>"]
+license = "MIT"
+repository = "https://github.com/vandenheuvel/rust-lp"
+description = "A solver for linear programs"
+
+[dependencies]
+approx = "0.3.0"
+
+[features]
+miplib_tests = []

@@ -1,0 +1,15 @@
+[package]
+
+name = "ws-protocol"
+version = "0.1.0"
+authors = ["John P Mayer Jr <john.p.mayer.jr@gmail.com>"]
+
+[dependencies.rust-crypto]
+
+git = "https://github.com/DaGenix/rust-crypto.git"
+
+[lib]
+
+name = "ws-protocol"
+
+path = "src/lib.rs"

@@ -1,0 +1,10 @@
+[package]
+name = "phoenix_diagnostics_rust"
+version = "0.1.0"
+authors = ["mani"]
+
+[dependencies]
+ssh2 = "0.3"
+human-panic = "1.0.1"
+encoding_rs = "0.8.13"
+reqwest = "0.9.5"

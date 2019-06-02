@@ -1,0 +1,14 @@
+[package]
+name = "rscube"
+version = "0.1.0"
+authors = ["Roland Kovacs <zen3ger@gmail.com>"]
+
+[dependencies]
+cgmath = "0.16.0"
+gfx = "0.16.1"
+gfx_device_gl = "0.14.4"
+gfx_window_glutin = "0.18.0"
+glutin = "0.10.0"
+lyon = "0.10.0"
+rand = "0.4"
+resvg = "0.2"

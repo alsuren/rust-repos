@@ -1,0 +1,7 @@
+[package]
+name = "rust_wm"
+version = "0.1.0"
+authors = ["IMFUZZ <da.junior.du@gmail.com>"]
+
+[dependencies]
+wlc = { version = "2.0.1", features = ["render", "serialization"] }

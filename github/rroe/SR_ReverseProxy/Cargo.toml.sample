@@ -1,0 +1,11 @@
+[package]
+
+name = "reverseproxy"
+version = "0.0.1"
+authors = [ "Richard Roe <rroe@stetson.edu>" ]
+
+[dependencies]
+
+rand = "*"
+log = "*"
+time = "*"

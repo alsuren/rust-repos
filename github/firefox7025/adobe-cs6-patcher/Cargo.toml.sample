@@ -1,0 +1,9 @@
+[package]
+name = "adobe-cs6-patcher"
+version = "0.1.0"
+authors = ["alexa"]
+
+[dependencies]
+glob = "0.2.11"
+blake2 = "0.7"
+digest = { version = "0.7", features = ["std"]}

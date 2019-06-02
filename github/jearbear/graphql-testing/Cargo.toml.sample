@@ -1,0 +1,9 @@
+[package]
+authors = ["Jerry Tegno <jerry@stripe.com>"]
+name = "graphql"
+version = "0.1.0"
+[dependencies]
+juniper = "0.9.2"
+juniper_rocket = "0.1.2"
+rocket = "0.3.16"
+rocket_codegen = "0.3.16"

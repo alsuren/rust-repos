@@ -1,0 +1,10 @@
+[package]
+name = "linux"
+version = "0.1.0"
+authors = ["syfriday <syfriday@mint>"]
+
+[dependencies]
+getopts = "0.2.15"
+libc = "0.2.34"
+regex = "0.2.3"
+

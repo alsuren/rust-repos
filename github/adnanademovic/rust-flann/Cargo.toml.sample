@@ -1,0 +1,21 @@
+[package]
+authors = ["Adnan Ademovic <adnanademovic100@gmail.com>", "Geordon Worley <vadixidav@gmail.com>"]
+description = "Bindings for the FLANN library"
+license = "MIT"
+name = "flann"
+readme = "README.md"
+repository = "https://github.com/rust-flann/rust-flann"
+documentation = "https://docs.rs/flann/"
+version = "0.1.0"
+
+[dependencies]
+generic-array = "0.12.0"
+itertools = "0.8.0"
+failure = "0.1.5"
+
+[dependencies.flann-sys]
+path = "flann-sys"
+version = "0.1.0"
+
+[dev-dependencies]
+assert_approx_eq = "1.1.0"

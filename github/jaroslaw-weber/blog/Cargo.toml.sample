@@ -1,0 +1,13 @@
+[package]
+name = "blog"
+version = "0.1.0"
+authors = ["Jaroslaw Weber <jaroslaw.weber@gmail.com>"]
+
+[dependencies]
+slime = {git = "https://github.com/jaroslaw-weber/slime"}
+toml = "0.4.5"
+easy_fs = {git = "https://github.com/jaroslaw-weber/easy_fs"} 
+comrak = "0.2"
+chrono = "0.4.0"
+serde_derive = "1.0.55"
+serde = "1.0.55"

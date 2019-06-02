@@ -1,0 +1,10 @@
+[package]
+name = "ffistr"
+version = "0.0.1"
+authors = ["Russ <rmorris@infocyte.com>"]
+
+[dependencies]
+libc = "*"
+
+[build-dependencies]
+gcc = "*"

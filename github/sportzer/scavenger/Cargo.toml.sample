@@ -1,0 +1,8 @@
+[package]
+name = "scavenger"
+version = "0.2.0"
+authors = ["Steven Portzer <stevenportzer@gmail.com>"]
+
+[dependencies]
+pancurses = "0.8"
+rand = "0.3"

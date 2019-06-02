@@ -1,0 +1,8 @@
+[package]
+name = "albedo"
+version = "0.1.0"
+authors = ["Tony <chengnuo128@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocksdb = "0.10.1"

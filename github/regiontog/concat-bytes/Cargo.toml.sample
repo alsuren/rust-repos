@@ -1,0 +1,3 @@
+[workspace]
+members = [ "crates/proc-concat-bytes", "crates/proc-concat-bytes-impl" ]
+exclude = ["crates"]

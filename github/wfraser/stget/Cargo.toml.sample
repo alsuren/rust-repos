@@ -1,0 +1,24 @@
+[package]
+name = "stget"
+version = "0.1.0"
+authors = ["Bill Fraser <wfraser@codewise.org>"]
+
+[dependencies]
+base32 = "0.3"
+bufstream = "0.1"
+byteorder = "1.0"
+clap = "2.25"
+env_logger = "0.5"
+error-chain = "0.12"
+libc = "0.2"
+log = "0.4"
+lz4-compress = "0.1"
+protobuf = "2.0"
+ring = "0.13.0-alpha"
+webpki = "0.18.0-alpha"
+
+[dependencies.rustls]
+version = "0.12"
+# This feature is needed because we implement our own certificate validation instead of relying on
+# any certificate root or web PKI:
+features = ["dangerous_configuration"]

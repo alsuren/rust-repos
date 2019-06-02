@@ -1,0 +1,18 @@
+[package]
+name = "sfcgal-sys"
+version = "0.1.0"
+authors = ["Matthieu Viry <matthieu.viry@univ-grenoble-alpes.fr>"]
+license = "MIT/Apache-2.0"
+edition = "2018"
+build = "build.rs"
+description = """
+Low-level FFI bindings to SFCGAL.
+"""
+readme = "README.md"
+homepage = "https://github.com/mthh/sfcgal-sys"
+repository = "https://github.com/mthh/sfcgal-sys"
+categories = ["external-ffi-bindings"]
+
+[build-dependencies]
+bindgen = "0.47.1"
+cc = "~1.0"

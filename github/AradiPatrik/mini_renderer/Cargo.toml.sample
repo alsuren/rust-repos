@@ -1,0 +1,12 @@
+[package]
+name = "mini_renderer"
+version = "0.1.0"
+authors = ["Aradi Patrik <aradipatrik@gmail.com>"]
+
+[dependencies]
+image = "*"
+wavefront_obj = "5.1.0"
+num = "*"
+cgmath = "0.16.1"
+rand = "0.5"
+minifb = "0.10"

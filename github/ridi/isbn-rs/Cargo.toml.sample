@@ -1,0 +1,15 @@
+[package]
+name = "isbn"
+version = "0.2.0"
+authors = ["Jihyeok Seo <limeburst@ridi.com>"]
+description = "A library for handling ISBNs."
+license = "MIT"
+repository = "https://github.com/ridi/isbn-rs"
+edition = "2018"
+
+[build-dependencies]
+codegen = "0.1"
+roxmltree = "0.4"
+
+[dependencies]
+arrayvec = { version = "0.4", default-features = false }

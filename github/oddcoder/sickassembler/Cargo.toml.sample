@@ -1,0 +1,28 @@
+[package]
+name = "sickassembler"
+version = "0.1.0"
+authors = [
+	"oddcoder <ahmedsoliman@oddcoder.com>",
+	"shakram02 <ahmedhamdyau@gmail.com>",
+	"Youssefares <Youssefares@ymail.com>"
+]
+
+
+[lib]
+name = "sick_lib"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "sick_assembler"
+path = "src/bin/main.rs"
+
+[dependencies]
+getopts = "*"
+regex = "*"
+log = "*"
+env_logger = "*"
+lazy_static = "*"
+parking_lot = "*"
+prettytable-rs = "*"
+term = "*"
+meval = "0.0.9"

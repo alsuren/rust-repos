@@ -1,0 +1,23 @@
+[package]
+name = "stm32f1_blinky"
+version = "0.1.0"
+authors = ["KONDO Nobuhiro <kondou.nobuhiro@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+stm32cubef1 = {path = "../stm32cubef1"}
+nostd_tool = {path = "../nostd_tool"}
+
+[build-dependencies]
+
+[dependencies.lazy_static]
+version = "0.2"
+features = ["spin_no_std"]
+
+[dependencies.spin]
+version = "0.4"
+optional = true
+
+[features]
+nightly = []
+spin_no_std = ["nightly", "spin"]

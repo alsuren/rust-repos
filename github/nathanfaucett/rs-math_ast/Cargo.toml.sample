@@ -1,0 +1,19 @@
+[package]
+name = "math_ast"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["math", "language", "ast"]
+description = "math language ast"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-math_ast.git"
+homepage = "https://github.com/nathanfaucett/rs-math_ast"
+
+[dependencies]
+serde = {version = "*"}
+serde_derive = {version = "*"}
+lexer = {git = "https://github.com/nathanfaucett/rs-lexer.git"}
+collection_traits = {git = "https://github.com/nathanfaucett/rs-collection_traits.git"}
+
+[dev-dependencies]

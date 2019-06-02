@@ -1,0 +1,9 @@
+[package]
+name = "midomoji-clone"
+version = "0.1.0"
+authors = ["ng3rdstmadgke <ng3rdstmagke@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+memmap = "0.7.0"
+csv = "1"

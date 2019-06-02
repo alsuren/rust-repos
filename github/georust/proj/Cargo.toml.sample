@@ -1,0 +1,24 @@
+[package]
+name = "proj"
+description = "Rust bindings for PROJ.4 v6.0.x"
+version = "0.9.5"
+authors = [
+  "Corey Farwell <coreyf@rwell.org>",
+  "Alex Morega <alex@grep.ro>",
+  "Stephan Hügel <urschrei@gmail.com>"
+]
+repository = "https://github.com/georust/proj"
+keywords = ["proj", "projection", "osgeo", "geo"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+proj-sys = "0.10.0"
+geo-types ="0.4.1"
+libc = "0.2.50"
+num-traits = "0.2.6"
+failure = "0.1.3"
+
+[dev-dependencies]
+assert_approx_eq = "1.1.0"

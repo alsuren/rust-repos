@@ -1,0 +1,59 @@
+# http://doc.crates.io/manifest.html
+[package]
+name = "kvs"
+version = "0.1.0"
+authors = ["Alexander Merritt <merritt.alex@gatech.edu>"]
+
+[dependencies]
+libc = "0.2.7"
+log = "0.3.5"
+time = "0.1.34"
+rand = "0.3.14"
+crossbeam = "0.2.5"
+itertools = "0.4.13"
+lazy_static = "0.2.1"
+quicksort = "1.0.0"
+#lazysort = "0.1.1"
+clap = "2.5.1"
+syscall = "0.2.1"
+#clippy = "*"
+num = "0.1.32"
+parking_lot = "0.2.6"
+
+[features]
+default = []
+# you generally want to enable this
+# --features "rdrand [others]"
+rdrand = []
+# use a single cache line for the epoch (slow)
+epochcl = []
+# change the behavior of PUT: overwrite objects that exist,
+# append on insertion
+putow = []
+
+# Below features are used only for bin/ycsb.rs and bin/trace.rs
+extern_ycsb = []
+# Access RAMCloud library for bin/ycsb.rs
+# --features "extern_ycsb rc [others]"
+rc = []
+# --features "extern_ycsb mica [others]"
+mica = []
+leveldb = []
+# --features "extern_ycsb masstree [others]"
+masstree = []
+# --features "extern_ycsb redis [others]"
+redis = []
+
+# http://doc.crates.io/manifest.html#the-%5Bprofile.*%5D-sections
+[profile.release]
+opt-level = 3
+debug-assertions = false
+# lto=true debug=true -> LLVM bugs, so do not mix
+# https://github.com/rust-lang/rust/issues/34122
+debug = true
+lto = false
+
+[profile.bench]
+debug-assertions = false
+debug = false
+opt-level = 3

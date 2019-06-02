@@ -1,0 +1,51 @@
+[package]
+name = "rustfractals"
+version = "0.1.0"
+authors = ["Eliot Krone <krondev@protonmail.ch>"]
+license = "Apache-2.0"
+repository = "https://github.com/krondev/rust-fractals"
+
+[dependencies]
+num = "0.2"
+image = "0.13.0"
+num-complex = "0.2"
+cfg-if = "0.1.2"
+console_error_panic_hook = { version = "0.1.1", optional = true }
+wee_alloc = { version = "0.4.2", optional = true }
+futures = "0.1"
+js-sys = "0.3.5"
+wasm-bindgen = { version = "0.2.28", features = ['serde-serialize'] }
+wasm-bindgen-futures = "0.3.5"
+rayon = "1.0"
+log = "0.4"
+fern = "0.5.7"
+chrono = "0.4.6"
+clap = "2.22"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.2"
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
+debug = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'CanvasRenderingContext2d',
+  'ErrorEvent',
+  'Event',
+  'ImageData',
+  'Navigator',
+  'Window',
+  'Worker',
+  'DedicatedWorkerGlobalScope',
+  'MessageEvent',
+]

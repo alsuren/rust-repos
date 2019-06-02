@@ -1,0 +1,35 @@
+[package]
+name = "firefox-send"
+version = "0.1.0"
+authors = ["quininer <quininer@live.com>"]
+description = "send.firefox.com command client"
+license = "CC0-1.0"
+
+[[bin]]
+name = "firefox-send"
+path = "src/bin/main.rs"
+doc = false
+required-features = [ "bin" ]
+
+[dependencies]
+structopt = { version = "0.1", optional = true }
+structopt-derive = { version = "0.1", optional = true }
+
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+rustc-hex = "1.0"
+base64 = "0.7"
+
+error-chain = "0.11"
+mime_guess = "2.0.0-alpha"
+ring = "0.12"
+seckey = "0.6"
+hyper = "0.11"
+reqwest = "0.8"
+
+[features]
+bin = [ "structopt", "structopt-derive" ]
+
+[profile.release]
+lto = true

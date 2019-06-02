@@ -1,0 +1,15 @@
+[package]
+name = "rust_opengl"
+version = "0.0.1"
+authors = ["Gerlof Fokkema"]
+
+[dependencies]
+cgmath = "0.3.1"
+genmesh = "*"
+image = "*"
+obj = "0.3.0"
+time = "*"
+
+[dependencies.glium]
+version = "0.9.1"
+features = ["cgmath", "glutin", "image"]

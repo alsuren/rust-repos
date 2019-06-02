@@ -1,0 +1,20 @@
+[package]
+name = "twilight-line"
+description = "another tunnel proxy"
+version = "0.1.0"
+authors = ["kaien <kaienkira@gmail.com>"]
+publish = false
+
+[dependencies]
+
+[lib]
+name = "twilight_line"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tl-server"
+path = "src/bin/tl_server.rs"
+
+[[bin]]
+name = "tl-client"
+path = "src/bin/tl_client.rs"

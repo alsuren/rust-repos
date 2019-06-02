@@ -1,0 +1,10 @@
+[package]
+authors = ["Machtan <jako3047@gmail.com>"]
+name = "glorious"
+version = "0.2.0"
+
+[dependencies]
+ref_filter_map = "1.0"
+sdl2 = "0.21"
+sdl2_image = "0.21"
+sdl2_ttf = "0.21"

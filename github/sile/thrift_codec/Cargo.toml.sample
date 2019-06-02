@@ -1,0 +1,30 @@
+[package]
+name = "thrift_codec"
+version = "0.1.1"
+authors = ["Takeru Ohta <phjgt308@gmail.com>"]
+description = "A library for encoding/decoding binaries specified by the thrift protocol"
+homepage = "https://github.com/sile/thrift_codec"
+repository = "https://github.com/sile/thrift_codec"
+readme = "README.md"
+keywords = ["thrift"]
+license = "MIT"
+
+[badges]
+travis-ci = {repository = "sile/thrift_codec"}
+codecov = {repository = "sile/thrift_codec"}
+
+[dependencies]
+byteorder = "1"
+trackable = "0.2"
+serde = { version = "1", optional = true, default-features = false, features = ["derive"] }
+
+[dev-dependencies]
+clap = "2"
+serdeconv = "0.3"
+
+[[example]]
+name = "decode_message"
+required-features = ["serde"]
+
+[[example]]
+name = "encode_message"

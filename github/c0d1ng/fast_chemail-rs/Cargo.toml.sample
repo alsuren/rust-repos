@@ -1,0 +1,15 @@
+[package]
+name = "fast_chemail"
+version = "0.9.6"
+description = "Check email address"
+
+authors = ["Andreas"]
+repository = "https://github.com/c0d1ng/fast_chemail-rs.git"
+documentation = "https://docs.rs/fast_chemail"
+
+readme = "README.md"
+keywords = ["check", "email"]
+license = "MPL-2.0"
+
+[dependencies]
+ascii_utils = "^0"

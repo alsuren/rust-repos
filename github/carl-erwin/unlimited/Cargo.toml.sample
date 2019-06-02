@@ -1,0 +1,20 @@
+[package]
+name = "unlimited"
+version = "0.0.4"
+authors = ["Carl-Erwin Griffith <carl.erwin@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+doc = false
+name = "unlimited"
+path = "src/main.rs"
+
+[dependencies]
+libc = "*"
+clap = "*"
+termion = "*"
+
+[profile.release]
+#lto = true
+debug = true
+opt-level = 3

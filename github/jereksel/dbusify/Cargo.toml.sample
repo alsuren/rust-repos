@@ -1,0 +1,16 @@
+[package]
+name = "dbusify"
+version = "0.1.1"
+authors = ["Andrzej Ressel <jereksel@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rspotify = "0.4.0"
+itertools = "0.7.8"
+dbus = "0.6.2"
+hyper = "0.12.10"
+futures = "0.1.21"
+webbrowser = "0.2.2"
+config = "0.9"
+rspotify_hyper = "0.2.0"
+dirs = "1.0"

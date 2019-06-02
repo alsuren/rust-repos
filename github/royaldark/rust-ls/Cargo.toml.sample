@@ -1,0 +1,11 @@
+[package]
+name = "ls"
+version = "0.1.0"
+authors = ["Joe Einertson <jeinerts@umm>"]
+
+[dependencies]
+clap = "2.29.0"
+users = "0.6.0"
+chrono = "0.4"
+colored = "1.6"
+libc = "0.2"

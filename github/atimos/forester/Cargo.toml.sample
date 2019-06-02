@@ -1,0 +1,18 @@
+[package]
+name = "forester"
+version = "0.1.0"
+authors = ["Alexander Seppälä <dev@timot.se>"]
+
+[[bin]]
+name = "treehouse"
+path = "src/treehouse.rs"
+
+[dependencies]
+serde_json = "0.8"
+job = { path = "src/job" }
+
+[profile.dev]
+panic="abort"
+
+[profile.release]
+panic="abort"

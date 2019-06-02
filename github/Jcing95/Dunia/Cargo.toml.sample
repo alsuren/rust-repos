@@ -1,0 +1,9 @@
+[package]
+name = "dunia"
+version = "0.1.0"
+authors = ["Jcing <jasin95@googlemail.com>"]
+edition = "2018"
+
+[dependencies]
+sdl2 = { version = "0.32.0", features = ["bundled", "static-link"] }
+gl = "0.11.0"

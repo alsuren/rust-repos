@@ -1,0 +1,9 @@
+[package]
+name = "um"
+version = "0.1.0"
+authors = ["Sam Lakerveld <darkwater124@gmail.com>"]
+
+[dependencies]
+bytes   = "0.4.6"
+futures = "0.1.20"
+tokio   = "0.1.4"

@@ -1,0 +1,12 @@
+[package]
+name = "piinguin"
+version = "0.1.0"
+authors = ["Sentry <hello@sentry.io>"]
+
+[dependencies]
+yew = { git = "https://github.com/DenisKolodin/yew", features = ["toml", "yaml", "msgpack", "cbor"] }
+stdweb = "*"
+semaphore-general = { git = "https://github.com/getsentry/semaphore", version = "*" }
+serde = "1.0.76"
+failure = "*"
+serde_json = "*"

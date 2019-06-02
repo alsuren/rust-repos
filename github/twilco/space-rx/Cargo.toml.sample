@@ -1,0 +1,20 @@
+[package]
+name = "space-rx"
+version = "0.2.0"
+authors = ["Tyler Wilcock <tyler.l.wilcock@gmail.com>"]
+description = "Rust wrapper over the unofficial SpaceX API."
+homepage = "https://github.com/twilco/space_rx"
+repository = "https://github.com/twilco/space_rx"
+keywords = ["spacex", "api", "wrapper"]
+categories = ["api-bindings"]
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+failure = "0.1.2"
+derive_builder = "0.6.0"
+reqwest = "0.8.8"
+serde = "1.0.76"
+serde_derive = "1.0.76"
+serde_json = "1.0.26"
+url = "1.7.1"

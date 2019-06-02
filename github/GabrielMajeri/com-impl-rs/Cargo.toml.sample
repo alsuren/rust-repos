@@ -1,0 +1,16 @@
+[package]
+name = "com-impl"
+version = "0.1.0"
+authors = ["Gabriel Majeri <gabriel.majeri6@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+com-impl-macro = { path = "com-impl-macro" }
+
+[dev-dependencies.winapi]
+version = "0.3"
+features = [
+    "winerror",
+    "unknwnbase",
+    "dxgi",
+]

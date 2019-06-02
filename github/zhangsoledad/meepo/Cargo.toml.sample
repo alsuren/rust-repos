@@ -1,0 +1,12 @@
+[package]
+name = "meepo"
+version = "0.1.0"
+authors = ["zhangsoledad <787953403@qq.com>"]
+license = "MIT"
+
+[dependencies]
+meepo-macros = { path = "./macros" }
+lru-cache = "0.1.1"
+
+[dev-dependencies]
+tiny-keccak = "1.4"

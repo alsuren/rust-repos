@@ -1,0 +1,8 @@
+[package]
+name = "garage"
+version = "0.1.0"
+authors = ["Samuel Resendez <saresend@usc.edu>"]
+
+[dependencies]
+clap = "2.29.2"
+diesel = { version = "1.0.0", features=["sqlite"]}

@@ -1,0 +1,21 @@
+[package]
+name = "modman"
+version = "0.1.0"
+authors = ["Matt Kline <matt@bitbashing.io>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+getopts = "0.2"
+sha2 = "0.8"
+semver = "0.9"
+zip = "0.4"
+log = "0.4"
+atty = "0.2"
+stderrlog = "0.4"
+generic-array = "0.12"
+hex = "0.3"
+memmap = "0.7"

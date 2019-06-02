@@ -1,0 +1,10 @@
+[package]
+name = "ray_tracer_weekend"
+version = "0.1.0"
+authors = ["Jeremy Mikkola <jeremy@jeremymikkola.com>"]
+edition = "2018"
+
+[dependencies]
+png = "0.14.0"
+rand = "0.6.5"
+rayon = "1.0.3"

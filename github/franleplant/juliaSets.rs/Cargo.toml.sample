@@ -1,0 +1,13 @@
+[package]
+name = "fractals"
+version = "0.1.0"
+authors = ["Fran Guijarro <franleplant@gmail.com>"]
+
+
+[dependencies]
+image = "*"
+num = "0.1"
+conrod = "*"
+gif = "*"
+rayon = "*"
+clap = {version = "*", features = ["yaml"]}

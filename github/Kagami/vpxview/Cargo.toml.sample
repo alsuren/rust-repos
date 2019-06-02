@@ -1,0 +1,22 @@
+[package]
+name = "vpxview"
+version = "0.0.0"
+authors = ["Kagami Hiiragi <kagami@genshiken.org>"]
+
+[dependencies]
+libc = "*"
+
+[dependencies.gfx]
+git = "https://github.com/gfx-rs/gfx-rs"
+
+[dependencies.gfx_device_gl]
+git = "https://github.com/gfx-rs/gfx_device_gl"
+
+[dependencies.gfx_window_glutin]
+git = "https://github.com/gfx-rs/gfx_window_glutin"
+
+[dependencies.glutin]
+git = "https://github.com/tomaka/glutin"
+
+[dependencies.gfx_text]
+git = "https://github.com/PistonDevelopers/gfx_text"

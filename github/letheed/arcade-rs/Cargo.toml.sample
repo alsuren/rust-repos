@@ -1,0 +1,16 @@
+[package]
+name = "arcade-rs"
+version = "0.1.0"
+authors = ["Letheed <letheed@outlook.com>"]
+description = "Rust + SDL2 tutorial game by AydenKoans"
+repository = "https://github.com/letheed/arcade-rs"
+license = "MIT"
+publish = false
+
+[dependencies]
+time = "0.1"
+
+[dependencies.sdl2]
+version = "0.29"
+default-features = false
+features = ["image"]

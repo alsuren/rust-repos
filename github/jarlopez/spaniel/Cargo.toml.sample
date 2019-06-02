@@ -1,0 +1,14 @@
+[package]
+name = "spaniel"
+version = "0.1.0"
+authors = ["Johan Mickos <johanmi@kth.se>"]
+description = "Base implementation of a Stream Processing Network Library (SPNL)"
+repository = "https://github.com/jarlopez/spaniel"
+license = "WTFPL"
+
+[dependencies]
+bytes = "0.4.8"
+byteorder = "1.1"
+futures = "0.1.21"
+tokio-io = "0.1.7"
+

@@ -1,0 +1,20 @@
+[package]
+name = "kuromoji"
+version = "0.1.0"
+authors = ["Paul Masurel <paul.masurel@gmail.com>"]
+
+[dependencies]
+fst = {version="0.3", default-features=false}
+byteorder = "1.2"
+
+[[bin]]
+name = "build-fst"
+path = "src/build_fst.rs"
+
+[[bin]]
+name = "build-cost"
+path = "src/build_cost.rs"
+
+[profile.dev]
+#https://github.com/rust-lang/rust/issues/46367
+opt-level = 1

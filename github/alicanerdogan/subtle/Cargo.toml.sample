@@ -1,0 +1,14 @@
+[package]
+name = "subtle"
+version = "0.1.0"
+authors = ["Alican Erdogan <alican.erdogan@zalando.de>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+indicatif = "0.11.0"
+reqwest = "0.9.17"
+dialoguer = "0.4.0"
+xmlrpc = "0.13.1"
+zip = "0.5.2"
+console = "0.7.5"

@@ -1,0 +1,13 @@
+[package]
+name = "carbon"
+version = "0.1.0"
+authors = ["yodalee <lc85301@gmail.com>"]
+
+[dependencies]
+pest = "^1.0"
+pest_derive = "^1.0"
+lazy_static = "1.0.0"
+
+[[bin]]
+name = "CParser"
+path = "bin/parser.rs"

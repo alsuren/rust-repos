@@ -1,0 +1,21 @@
+[package]
+name = "rocksbin"
+version = "0.3.0"
+authors = ["Birk Tjelmeland <birktjelmeland@yahoo.no>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/birktj/rocksbin-db"
+homepage = "https://github.com/birktj/rocksbin-db"
+documentation = "https://docs.rs/rocksbin"
+description = "A simple rocksdb wrapper using serde and bincode for automatic serialization"
+keywords = ["database", "persistence"]
+
+[dependencies]
+rocksdb = "0.11"
+serde = "1.0"
+bincode = "1.0"
+
+[dev-dependencies]
+tempfile = "3.0"
+serde_derive = "1.0"
+serde_json = "1.0"

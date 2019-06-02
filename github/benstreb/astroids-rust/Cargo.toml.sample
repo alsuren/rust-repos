@@ -1,0 +1,23 @@
+[package]
+
+name = "astroids-rust"
+version = "0.0.0"
+authors = [
+    "Benjamin <bstreb@gmail.com>"
+]
+
+[[bin]]
+name = "astroids-rust"
+path = "src/main.rs"
+
+[dependencies]
+piston = '*'
+piston_window = '*'
+piston2d-graphics = '*'
+piston2d-opengl_graphics = '*'
+image = '*'
+rand = '*'
+num = { version = '*', features = ["rational"] }
+
+[dev-dependencies]
+expectest = "*"

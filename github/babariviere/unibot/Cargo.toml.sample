@@ -1,0 +1,15 @@
+[package]
+name = "unibot"
+version = "0.1.0"
+authors = ["notkild <notkild@gmail.com>"]
+
+[lib]
+name = "libunibot"
+
+[dependencies]
+clap = "2.18"
+error-chain = "0.8"
+hyper = "0.10"
+hyper-native-tls = "0.2"
+select = "0.3"
+term = "*"

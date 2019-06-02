@@ -1,0 +1,10 @@
+[package]
+name = "hauto-backend"
+version = "0.1.0"
+authors = ["ybergeek <alf.jansson66@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+dotenv = "0.9.0"
+chrono =  {version = "0.4" }
+diesel = { version = "1.0.0", features = ["mysql"] }

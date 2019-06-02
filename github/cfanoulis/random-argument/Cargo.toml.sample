@@ -1,0 +1,10 @@
+[package]
+name = "random-argument"
+version = "0.0.1-indev"
+authors = ["Charalampos Fanoulis <charalampos.fanoulis@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.3"
+regex = "1.1.0"
+json = "0.11.13"

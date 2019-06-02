@@ -1,0 +1,47 @@
+[package]
+name = "lark"
+version = "0.1.0"
+authors = [
+    "Jonathan Turner <jonathan.d.turner@gmail.com>",
+    "Yehuda Katz <wycats@gmail.com>",
+    "Niko Matsakis <niko@alum.mit.edu>"
+]
+edition = '2018'
+description = "Lark programming language, a Salsa-based compiler experiment."
+readme = "readme.md"
+keywords = ["lark"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/lark-exploration/lark"
+
+[profile.dev]
+opt-level = 1
+
+[workspace]
+members = ["components/lark-actor", "components/lark-build", "components/lark-cli", "components/lark-collections", "components/lark-debug-derive", 
+           "components/lark-debug-with", "components/lark-entity", "components/lark-error", "components/lark-eval", "components/lark-hir", "components/lark-intern", 
+           "components/lark-language-server", "components/lark-parser", "components/lark-pretty-print", "components/lark-query-system", "components/lark-span", 
+           "components/lark-string", "components/lark-test", "components/lark-test-generate", "components/lark-ty", "components/lark-type-check", "components/lark-unify"]
+
+[dependencies]
+lark-cli = { path = "components/lark-cli", version = "0.1.0" }
+
+[dev-dependencies]
+env_logger = "0.6"
+languageserver-types = "0.54.0"
+lark-debug-derive = { path = "components/lark-debug-derive", version = "0.1.0" }
+lark-debug-with = { path = "components/lark-debug-with", version = "0.1.0" }
+lark-entity = { path = "components/lark-entity", version = "0.1.0" }
+lark-hir = { path = "components/lark-hir", version = "0.1.0" }
+lark-intern = { path = "components/lark-intern", version = "0.1.0" }
+lark-language-server = { path = "components/lark-language-server", version = "0.1.0" }
+lark-query-system = { path = "components/lark-query-system", version = "0.1.0" }
+lark-parser = { path = "components/lark-parser", version = "0.1.0" }
+lark-span = { path = "components/lark-span", version = "0.1.0" }
+lark-string = { path = "components/lark-string", version = "0.1.0" }
+lark-test = { path = "components/lark-test", version = "0.1.0" }
+lark-test-generate = { path = "components/lark-test-generate", version = "0.1.0" }
+lazy_static = "1.2.0"
+serde = "1.0"
+serde_json = "1.0"
+unindent = "0.1.3"
+url = "1.7"

@@ -1,0 +1,31 @@
+[package]
+
+name = "monte-carlo-test"
+version = "0.0.1"
+authors = ["Paho Lurie-Gregg <paho@paholg.com>"]
+
+build = "build.rs"
+
+
+[dependencies]
+  time = "*"
+  dimensioned = "0.6.0"
+
+[build-dependencies]
+  tango = "*"
+
+[[bin]]
+  name = "no-units"
+  path = "./src/no-units.rs"
+
+[[bin]]
+  name = "units-outside"
+  path = "./src/units-outside.rs"
+
+[[bin]]
+  name = "units-inside"
+  path = "./src/units-inside.rs"
+
+[[bin]]
+  name = "conversion"
+  path = "./src/conversion.rs"

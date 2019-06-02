@@ -1,0 +1,9 @@
+[package]
+name = "rust_nes"
+version = "0.1.0"
+authors = ["w1n5t0n99 <reedelam@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bitflags = "1.0"
+nes_rom = "0.1.0"

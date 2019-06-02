@@ -1,0 +1,8 @@
+[package]
+name = "rust-gae-gcb"
+version = "0.1.0"
+authors = ["nirasan <niranirao@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+hyper = "0.12.25"

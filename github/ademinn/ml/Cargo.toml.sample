@@ -1,0 +1,28 @@
+[package]
+
+name = "ml"
+version = "0.0.1"
+authors = ["Andrey Demin <ademinn@gmail.com>"]
+
+[dependencies.GSL]
+
+git = "https://github.com/GuillaumeGomez/rust-GSL.git"
+
+[dependencies.common]
+
+path = "src/common"
+
+[[bin]]
+
+name = "knn"
+path = "src/knn/main.rs"
+
+[[bin]]
+
+name = "linear"
+path = "src/linear/main.rs"
+
+[[bin]]
+
+name = "logistic"
+path = "src/logistic/main.rs"

@@ -1,0 +1,11 @@
+[package]
+name = "win95-maze"
+version = "0.1.0"
+authors = ["clrnd <welcometothechango@gmail.com>"]
+
+[dependencies]
+gl = "*"
+glfw = "*"
+image = "*"
+cgmath = "*"
+rand = "0.4"

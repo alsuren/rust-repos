@@ -1,0 +1,25 @@
+[package]
+  name = "spin"
+  version = "0.1.0"
+  authors = ["Paho Lurie-Gregg <paho@paholg.com>"]
+
+[features]
+  default = ["sim"]
+  sim = ["glium"]
+  spin = ["zinc/mcu_stm32f4", "macro_zinc", "rust-libcore"]
+
+[dependencies]
+  typenum = "*"
+  generic-array = "*"
+  # dimensioned = "0.5"
+  rand = "*"
+  # rand = { git = "https://github.com/jethrogb/rand", branch = "core", default-features = false }
+  # approx = { git = "https://github.com/paholg/approx", branch = "no_std" }
+
+  # Sim
+  glium = { version = "*", optional = true }
+
+  # Microcontroller
+  zinc = { git = "https://github.com/hackndev/zinc", optional = true }
+  macro_zinc = { git = "https://github.com/hackndev/zinc", path = "macro_zinc", optional = true }
+  rust-libcore = { version = "*", optional = true }

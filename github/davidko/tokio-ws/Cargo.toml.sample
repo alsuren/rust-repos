@@ -1,0 +1,17 @@
+[package]
+name = "tokio-ws"
+version = "0.1.0"
+authors = ["David Ko <david@barobo.com>"]
+
+[dependencies]
+bitflags = "^0.7"
+futures = "0.1"
+httparse = "*"
+env_logger = "*"
+log = "*"
+openssl = "0.7.14"
+rustc-serialize = "*"
+tokio-core = "0.1"
+tokio-service = "0.1"
+tokio-proto = "0.1"
+

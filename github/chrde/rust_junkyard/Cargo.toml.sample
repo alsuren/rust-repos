@@ -1,0 +1,22 @@
+[package]
+name = "rust_junkyard"
+version = "0.1.0"
+authors = ["Christian de la Hoz <apigolas@gmail.com>"]
+
+[dependencies]
+tcod = { git = "https://github.com/tomassedovic/tcod-rs.git", branch = "master", features = ["serialization"] }
+rand = "0.3"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+glium = "0.16.0"
+image = "0.12.2"
+cgmath = "0.12.0"
+approx = "0.1.1"
+docopt = "0.7.0"
+regex = "0.2.1"
+rand= "0.3"
+[dependencies.sdl2]
+version = "0.27"
+default-features = false
+features = ["image", "ttf"]

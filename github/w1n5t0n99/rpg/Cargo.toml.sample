@@ -1,0 +1,8 @@
+[package]
+name = "rpg"
+version = "0.1.0"
+authors = ["relam"]
+
+[dependencies]
+rand = "0.3.14"
+clap = "~2.32"

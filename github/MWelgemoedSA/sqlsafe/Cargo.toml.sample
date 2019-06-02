@@ -1,0 +1,22 @@
+[package]
+name = "sqlsafe"
+version = "0.1.0"
+authors = ["Martin Welgemoed <mwelgemoedsa@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+regex = "0.1"
+lalrpop-util = "0.11.0"
+rustyline = "0.2.3"
+rusqlite = "0.7.3" #Just for testing
+
+[build-dependencies]
+lalrpop = "0.11.0"
+
+[lib]
+name = "sqlsafe"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sqlsafeshell"
+path = "src/main.rs"

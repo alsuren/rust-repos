@@ -1,0 +1,8 @@
+[package]
+name = "git-explorer"
+version = "0.1.0"
+authors = ["Pierre Carion <pcarion@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "*"
+byteorder = "*"

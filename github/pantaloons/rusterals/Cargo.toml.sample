@@ -1,0 +1,14 @@
+[package]
+name = "rusterals"
+version = "0.1.0"
+authors = ["Michael McGee <michael@mcgee.nz>"]
+
+[profile.release]
+panic = "abort"
+debug = true
+
+[dependencies]
+ws = "*"
+json = "*"
+rand = "*"
+time = "*"

@@ -1,0 +1,9 @@
+[package]
+name = "daedalus"
+version = "0.1.0"
+authors = ["leimig <me@higgorleimig.com>"]
+
+[dependencies]
+clap = "2.30.0"
+rand = "0.4.2"
+time = "0.1.39"

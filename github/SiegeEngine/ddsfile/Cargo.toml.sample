@@ -1,0 +1,16 @@
+[package]
+name = "ddsfile"
+version = "0.3.0-unstable"
+authors = ["Mike Dilger <mike@optcomp.nz>"]
+description = "DirectDraw Surface file format parser/composer"
+repository = "https://github.com/SiegeEngine/ddsfile"
+documentation = "https://docs.rs/ddsfile"
+license = "MIT"
+keywords = [ "dds" ]
+readme = "README.md"
+
+[dependencies]
+bitflags = "1.0"
+byteorder = "1.2"
+enum_primitive = "0.1"
+error-chain = "0.12"

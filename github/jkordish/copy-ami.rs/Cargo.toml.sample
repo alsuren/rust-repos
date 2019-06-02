@@ -1,0 +1,35 @@
+[package]
+name     = "copy-ami-rs"
+version  = "0.1.1"
+authors  = ["Joseph Kordish <joe@unicornclouds.com>"]
+readme   = "README.md"
+license  = "The MIT License (MIT)"
+keywords = [
+  "aws",
+  "ami"
+]
+
+[[bin]]
+name = "copy-ami"
+
+[dependencies]
+rusoto_core  = "0.31"
+rusoto_ec2   = "0.31"
+rusoto_sts   = "0.31"
+crossbeam    = "^0.3"
+slog         = "2"
+slog-term    = "2"
+slog-async   = "2"
+clippy       = { version="*", optional = true }
+
+[features]
+default=[]
+
+[profile.release]
+panic            = "unwind"
+lto              = true
+debug            = false
+rpath            = false
+opt-level        = 3
+codegen-units    = 1
+debug-assertions = false

@@ -1,0 +1,14 @@
+[package]
+name = "paths"
+version = "0.1.0"
+authors = ["Ryan Norris <rynorris@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+nom = "^4.2"
+rand = "0.6.5"
+sdl2 = { version = "0.31", features = ["unsafe_textures"] }
+threadpool = "1.7.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"

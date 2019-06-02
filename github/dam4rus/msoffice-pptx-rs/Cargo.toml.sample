@@ -1,0 +1,25 @@
+[package]
+name = "msoffice_pptx"
+version = "0.2.1"
+edition = "2018"
+description = "pptx file format deserializer"
+authors = ["Kalmár Róbert <rfrostkalmar@gmail.com>"]
+keywords = ["office", "pptx", "ppt"]
+license = "MIT"
+repository = "https://github.com/dam4rus/msoffice-pptx-rs.git"
+homepage = "https://github.com/dam4rus/msoffice-pptx-rs"
+readme = "README.md"
+exclude = [
+    "tests/samplepptx.pptx",
+]
+
+[dependencies]
+zip = "0.5.2"
+log = "0.4.6"
+msoffice_shared = "0.1.1"
+#msoffice_shared = { path="../msoffice_shared" }
+enum_from_str = "0.1.0"
+enum_from_str_derive = "0.1.0"
+
+[dev-dependencies]
+simple_logger = "1.2.0"

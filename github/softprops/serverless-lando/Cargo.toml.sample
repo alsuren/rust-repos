@@ -1,0 +1,10 @@
+[package]
+name = "lambda"
+version = "0.1.0"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+lando = "0.2"

@@ -1,0 +1,30 @@
+[package]
+name = "conrod-gfx-ll-example"
+version = "0.0.0"
+authors = ["Daniel Cassidy <mail@danielcassidy.me.uk>"]
+
+[features]
+default = ["gfx-backend-dx12"]
+vulkan = ["gfx-backend-vulkan"]
+
+[dependencies]
+conrod = { version = "0.61.1", features = ["winit"] }
+gfx-hal = { git = "https://github.com/gfx-rs/gfx.git", rev = "2632c44" }
+glsl-to-spirv-macros = "0.1.1"
+glsl-to-spirv-macros-impl = "0.1.0"
+rand = "0.5.5"
+rusttype = "0.5"
+winit = "0.17.2"
+
+[target.'cfg(windows)'.dependencies]
+gfx-backend-dx12 = { git = "https://github.com/gfx-rs/gfx.git", rev = "2632c44", optional = true }
+gfx-backend-vulkan = { git = "https://github.com/gfx-rs/gfx.git", rev = "2632c44", optional = true }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+gfx-backend-metal = { git = "https://github.com/gfx-rs/gfx.git", rev = "2632c44" }
+
+[target.'cfg(not(any(windows, target_os = "macos")))'.dependencies]
+gfx-backend-vulkan = { git = "https://github.com/gfx-rs/gfx.git", rev = "2632c44" }
+
+[patch.crates-io]
+conrod = { git = "https://github.com/djcsdy/conrod.git", rev = "cdfaa1a" }

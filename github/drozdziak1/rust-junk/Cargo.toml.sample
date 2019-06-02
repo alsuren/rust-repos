@@ -1,0 +1,58 @@
+[package]
+name = "rust-junk"
+version = "0.1.0"
+authors = ["Stan Drozd <drozdziak1@gmail.com>"]
+
+[dependencies]
+rand = "*"		# temp_converter tests, sdencrypt key generation
+time = "*"		# y2sec, ff_stats
+rust-crypto = "*"	# sdencrypt
+base64 = "*"		# Same
+rpassword = "*"		# Same
+rusqlite = "*"		# ff_stats
+
+# chat
+bytes = "*"
+futures = "*"
+futures-cpupool = "*"
+tokio-core = "*"
+tokio-io = "*"
+tokio-proto = "*"
+tokio-service = "*"
+tokio-timer = "*"
+
+[[bin]]
+name = "temp_converter"
+path = "src/temp_converter/main.rs"
+
+[[bin]]
+name = "y2sec"
+path = "src/y2sec/main.rs"
+
+[[bin]]
+name = "ff_stats"
+path = "src/ff_stats/main.rs"
+
+[[bin]]
+name = "sdencrypt"
+path = "src/sdencrypt/main.rs"
+
+[[bin]]
+name = "fizzbuzz"
+path = "src/fizzbuzz/main.rs"
+
+[[bin]]
+name = "rps"
+path = "src/rock_paper_scissors/main.rs"
+
+[[bin]]
+name = "collatz"
+path = "src/collatz/main.rs"
+
+[[bin]]
+name = "chatserv"
+path = "src/chat/server/main.rs"
+
+[[bin]]
+name = "chatclient"
+path = "src/chat/client/main.rs"

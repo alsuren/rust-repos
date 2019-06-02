@@ -1,0 +1,9 @@
+[package]
+name = "disparity"
+version = "0.1.0"
+authors = ["lorinc <serfozo.lorinc@gmail.com>"]
+
+[dependencies]
+png = "0.12.0"
+time = "0.1.40"
+rayon = "1.0"

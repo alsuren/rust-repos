@@ -1,0 +1,11 @@
+[package]
+name = "bq76920"
+version = "0.1.0"
+authors = ["Ze'ev Klapow <zklapow@hubspot.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.embedded-hal]
+version = "0.2.2"
+features = ["unproven"]

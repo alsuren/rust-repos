@@ -1,0 +1,20 @@
+[package]
+name = "monero-rpc"
+version = "0.1.0"
+authors = ["Artem Vorotnikov <artem@vorotnikov.me>"]
+edition = "2018"
+
+[dependencies]
+chrono = { version = "*", features = ["serde"] }
+failure = "*"
+futures-preview = { version = "0.3.0-alpha.16", features = ["compat"] }
+fixed-hash = "0.3"
+hex = { git = "https://github.com/KokaKiwi/rust-hex" }
+jsonrpc-core = "*"
+log = "*"
+monero = { git = "https://github.com/monero-rs/monero-rs", features = ["serde"] }
+reqwest = "*"
+rustc-hex = "*"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "*", features = ["arbitrary_precision"] }
+uuid = { version = "*", features = ["v4"] }

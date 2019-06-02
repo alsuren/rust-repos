@@ -1,0 +1,27 @@
+[package]
+name = "genrl"
+version = "0.0.1"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[lib]
+name = "genrl"
+path = "src/lib.rs"
+
+#[[bin]]
+#name = "train-cartpole"
+#path = "examples/train-cartpole.rs"
+
+[dependencies]
+genrl_kernels = { path = "kernels" }
+bit-set = "*"
+matches = "*"
+rand = "*"
+rustc-serialize = "*"
+densearray = "^0.1"
+float = "^0.1"
+iter_utils = "^0.1"
+#neuralops = { path = "../neuralops" }
+#operator = { path = "../liboperator" }
+rng = "^0.1"
+sharedmem = "^0.1"
+stopwatch = { path = "../stopwatch" }

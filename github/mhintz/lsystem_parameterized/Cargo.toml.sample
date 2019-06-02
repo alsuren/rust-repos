@@ -1,0 +1,17 @@
+[package]
+authors = ["Mark Hintz <markinportland7@gmail.com>"]
+name = "lsystem"
+version = "0.1.0"
+
+[dependencies]
+num = "*"
+rand = "*"
+num-traits = "*"
+glium = "^0.15.0"
+cgmath = "^0.10.0"
+arcball-cgmath = "^0.4.0"
+matrixstack = "^0.1.4"
+half_edge_mesh = "^1.0.7"
+convex_hull = "^0.1.2"
+vertex_index_mesh = { path = "vertex_index_mesh" }
+line_mesh = { path = "line_mesh" }

@@ -1,0 +1,15 @@
+[package]
+name = "trace"
+version = "0.1.0"
+authors = ["Kevin <kph1958@rit.edu>"]
+
+[dependencies]
+grep = "0.1.8"
+walkdir = "2.1.4"
+memmap = "0.6.2"
+regex = "0.2.10"
+lazy_static = "1.0.0"
+serde = "1.0.37"
+serde_json = "1.0.13"
+serde_yaml = "0.7.3"
+serde_derive = "1.0.37"

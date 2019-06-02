@@ -1,0 +1,47 @@
+[package]
+name = "gtin-validate"
+version = "1.2.0"
+authors = ["Austin Hartzheim <inbox@austinhartzheim.me>"]
+readme = "README.md"
+license = "MIT/Apache-2.0"
+keywords = ["upc", "ean", "gtin"]
+repository = "https://github.com/austinhartzheim/rust-gtin-validate/"
+description = """
+Validate GTIN barcodes including UPC-A and EAN-13.
+
+This module has built-in support for GTIN-8, GTIN-12 (UPC-A), GTIN-13 (EAN-13), and GTIN-14 codes.
+"""
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "LICENSE-MIT",
+    "LICENSE-APACHE"
+]
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+# Enhanced criterion blackbox functionality is only available on nightly for now.
+#criterion = { version = "0.2", features = ['real_blackbox'] }
+proptest = "0.7"
+
+[[bench]]
+name = "gtin8"
+harness = false
+
+[[bench]]
+name = "gtin12"
+harness = false
+
+[[bench]]
+name = "gtin13"
+harness = false
+
+[[bench]]
+name = "gtin14"
+harness = false
+
+[badges]
+travis-ci = { repository = "austinhartzheim/rust-gtin-validate" }
+coveralls = { repository = "austinhartzheim/rust-gtin-validate", branch = "master", service = "github" }

@@ -1,0 +1,11 @@
+[package]
+name = "tcp_replayer"
+version = "0.1.0"
+authors = ["Luke Jeremy <luke.jeremy@me.com>"]
+
+[dependencies]
+simplelog = "^0.5.0"
+log = "0.4"
+docopt = "1"
+serde = "1.0"
+serde_derive = "1.0"

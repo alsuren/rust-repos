@@ -1,0 +1,15 @@
+[package]
+name = "pbr-demo"
+version = "0.1.0"
+authors = ["Sam Sartor <ssartor@mines.edu>",
+           "Daichi Jameson <djameson@mines.edu>"]
+
+[dependencies]
+gfx = "*"
+winit = "*"
+gfx_app = "*"
+gfx_window_glutin = "*"
+cgmath = "*"
+image = "*"
+clap = "*"
+rand = "*"

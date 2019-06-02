@@ -1,0 +1,57 @@
+[package]
+name = "nuclear_os"
+version = "0.1.0"
+authors = ["Ryland Morgan <ryland.hugo@gmail.com>"]
+edition = "2018"
+
+# ================== #
+# Crate Dependencies #
+# ================== #
+[dependencies]
+# PC Keyboard Interface
+pc-keyboard = "0.3.1"
+
+# Volatile reads and writes
+volatile = "0.2.3"
+
+# Spinlocks
+spin = "0.4.6"
+
+# Serial Port Interface
+uart_16550 = "0.1.0"
+
+# General x86_64 stuff
+# My patch got merged, so we can use their version
+x86_64 = "0.3.4"
+
+# Intel 8259 PIC
+pic8259_simple = "^0.1"
+
+# Bit flags
+bitflags = "1.0.4"
+
+# Bootloader
+bootloader = "0.3"
+
+# Lazy Static
+[dependencies.lazy_static]
+version = "1.1.0"
+features = ["spin_no_std"]
+
+# Fat Filesystem
+[dependencies.fatfs]
+version = "0.3"
+features = ["core_io", "alloc"]
+default-features = false
+
+# =============== #
+# Bootloader Info #
+# =============== #
+[package.metadata.bootimage]
+default-target = "x86_64-nuclear_os.json" # This target is used if no `--target` is passed
+output = "nuclearos.bin"                  # The output file name
+minimum-image-size = 0                    # The minimum output file size (in MiB)
+
+									 # The command invoked on `bootimage run` 
+									 # (the "{}" will be replaced with the path to the bootable disk image)
+run-command = ["C:\\Program Files\\qemu\\qemu-system-x86_64", "-drive", "format=raw,file={}", "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04"]

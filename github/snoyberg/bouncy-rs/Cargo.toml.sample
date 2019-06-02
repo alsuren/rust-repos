@@ -1,0 +1,7 @@
+[package]
+name = "bouncy"
+version = "0.1.0"
+authors = ["Michael Snoyman <michael@snoyman.com>"]
+
+[dependencies]
+pancurses = { version = "0.16", features = ["wide"] }

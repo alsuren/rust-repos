@@ -1,0 +1,17 @@
+[package]
+authors = ["Aleksei Voronov <despawn@gmail.com>"]
+description = "Toy spreadsheet"
+name = "spready"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/despawnerer/spready"
+readme = "README.md"
+
+[build-dependencies]
+lalrpop = "0.15.2"
+
+[dependencies]
+arrayvec = "0.4.7"
+lalrpop-util = "0.15.2"
+lazy_static = "1.0.1"
+regex = "1.0.1"

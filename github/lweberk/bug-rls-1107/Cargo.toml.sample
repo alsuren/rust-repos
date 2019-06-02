@@ -1,0 +1,8 @@
+[package]
+name    = "tmp_rocket"
+version = "0.1.0"
+authors = ["Leonhard Weber <leonhard.weber@voipir.cl>"]
+
+[dependencies]
+rocket         = {version = "*"}
+rocket_codegen = {version = "*"}

@@ -1,0 +1,15 @@
+[package]
+name = "helio"
+version = "0.1.0"
+authors = ["Juan Morales <crispamares@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+derive_builder = "0.5.1"
+num-traits = "0.2" 
+svg = "0.5.10"
+chrono = "0.4"
+
+[dev-dependencies]
+csv = "1"
+itertools = "0.7"

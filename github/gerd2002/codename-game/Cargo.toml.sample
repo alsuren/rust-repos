@@ -1,0 +1,10 @@
+[package]
+name = "codename"
+version = "0.1.0"
+authors = ["Gerd Sattler <gerd@disroot.org>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+stdweb = "0.4.12"

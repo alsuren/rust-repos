@@ -1,0 +1,11 @@
+[package]
+name = "project2"
+version = "0.1.0"
+authors = ["Philip Van Raalte <phil.vanraalte@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+sha1 = "0.4.0"
+lazy_static = "1.0.0"

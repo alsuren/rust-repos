@@ -1,0 +1,28 @@
+[package]
+name = "rust_intro"
+version = "0.1.0"
+authors = ["Yale Cason <yale.cason@gmail.com>"]
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "safety"
+path = "src/safety.rs"
+
+[[bin]]
+name = "memory"
+path = "src/memory.rs"
+
+[[bin]]
+name = "types"
+path = "src/types.rs"
+
+[[bin]]
+name = "concurrent"
+path = "src/concurrent.rs"
+
+[[bin]]
+name = "traits"
+path = "src/traits.rs"

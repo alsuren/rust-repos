@@ -1,0 +1,15 @@
+[package]
+name = "note"
+version = "0.1.0"
+authors = ["psychoss <626377748@qq.com>"]
+
+[dependencies]
+tiny_http = "0.5"
+time = "*"
+rustc-serialize = "0.3.16"
+rusqlite = "0.6.0"
+
+
+[[bin]]
+name = "note"
+path="src/bin/main.rs"

@@ -1,0 +1,14 @@
+[package]
+name = "statecs-test"
+version = "0.1.0"
+authors = ["Stephen Sherratt <stephen@sherra.tt>"]
+
+build = "build.rs"
+
+[dependencies]
+serde = "0.9"
+serde_derive = "0.9"
+
+[build-dependencies]
+statecs = { path = "/home/steve/src/statecs" }
+#statecs = { git = "https://github.com/stevebob/statecs.git", rev = "4bf4042" }

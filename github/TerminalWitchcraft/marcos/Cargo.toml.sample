@@ -1,0 +1,44 @@
+[package]
+name = "marcos"
+version = "0.1.0"
+authors = ["Hitesh Paul <hiteshpaul94@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+path = "src/main.rs"
+name = "mcf"
+
+[dependencies]
+toml = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+log = "0.4"
+fern = "0.5"
+clap = "2"
+walkdir = "2.2.6"
+alphanumeric-sort = "1.0.3"
+mime_guess = "2.0.0-alpha.6"
+uname = "0.1.1"
+users = "0.8.0"
+systemstat = "0.1.3"
+failure = "0.1.2"
+failure_derive = "0.1.3"
+dirs = "1.0.5"
+unicode-width = "0.1.5"
+
+[dependencies.cursive]
+version = "0.9"
+default-features = false
+features = ["termion-backend"]
+
+
+# Some crates to consider
+# fsort
+# tokio-fs
+# sys-info
+# walkdir
+# fs_extra
+# fs_swap
+# alphanumeric-sort
+# path_abs
+# rexiv2

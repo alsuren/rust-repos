@@ -1,0 +1,10 @@
+[package]
+
+name = "manilla"
+version = "0.1.0"
+authors = [ "William Yao <williamyaoh@gmail.com>" ]
+
+[dependencies]
+
+rustc-serialize = "=0.3.22"
+docopt = "=0.7.0"

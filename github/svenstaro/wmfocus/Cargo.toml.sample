@@ -1,0 +1,46 @@
+[package]
+name = "wmfocus"
+description = "Visually focus windows by label"
+version = "1.1.2"
+repository = "https://github.com/svenstaro/wmfocus"
+authors = ["Sven-Hendrik Haase <svenstaro@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["wm", "window", "manager", "i3"]
+categories = ["command-line-utilities", "command-line-interface"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "svenstaro/wmfocus", branch = "master" }
+maintenance = { status = "actively-developed" }
+
+[features]
+i3 = ["i3ipc"]
+
+[dependencies]
+cairo-sys-rs = "0.8"
+clap = "2.33"
+css-color-parser = "0.1"
+font-loader = "0.8"
+i3ipc = { version = "0.10", optional = true }
+itertools = "0.8"
+log = "0.4"
+pretty_env_logger = "0.3"
+regex = "1.1"
+xcb = "0.8"
+xkbcommon = "0.4"
+
+[dependencies.cairo-rs]
+version = "0.6.0"
+features = ["xcb"]
+
+[dependencies.xcb-util]
+version = "0.2"
+features = ["keysyms"]
+
+[dependencies.x11]
+version = "2.18.1"
+features = ["xlib"]
+
+[profile.release]
+lto = true

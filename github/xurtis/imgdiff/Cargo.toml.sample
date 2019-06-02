@@ -1,0 +1,8 @@
+[package]
+name = "imgdiff"
+version = "0.1.0"
+authors = ["Curtis Millar <curtis@curtism.me>"]
+
+[dependencies]
+image = "0.18.0"
+rayon = "0.9.0"

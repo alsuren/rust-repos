@@ -1,0 +1,10 @@
+[package]
+name = "grimmbox"
+version = "0.1.0"
+
+[dependencies]
+gag = "*"
+log = "*"
+env_logger = "*"
+rustbox = "*"
+unicode-segmentation = "*"

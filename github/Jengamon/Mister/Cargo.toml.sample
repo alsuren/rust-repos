@@ -1,0 +1,45 @@
+[package]
+name = "mister"
+version = "0.1.0"
+authors = ["Bob Hostern <bob.hostern@gmail.com>"]
+license = "NONE"
+readme = "NOTES.md"
+
+[dependencies]
+# specs = "^0.7"
+# TODO: Because we're a drawing application, write the rendering system in a renderer agnostic way!
+# Essentially, use gfx to its limit in generization to write the rendering system
+gfx = "^0.17"
+gfx_device_gl = "^0.15"
+glutin = "^0.12"
+gfx_window_glutin = "^0.20"
+slog = "^2.1"
+slog-term = "^2.3"
+#rusttype = "^0.2"
+palette = "^0.2"
+exoquant = "^0.2"
+rand = "0.3"
+#conrod = "^0.55"
+nalgebra = "0.11"
+
+# TODO: Add palette-rs, image, backtrace-rs, error-chain, clap, byteorder | serde
+# Byteorder is if we want to write the format ourselves
+# Serde allows for simple serialization.
+#
+# It basically comes down to: Do we want to abstract away the on-disk format?
+# Probably not, so we'll use byteorder.
+#
+# NOTE for image: Unneccessary in mister once native plugins land, or a binding to the scripting language is made (prob. both)
+# In fact, I'm probably not going to add image as a library to mister, but as one to the plugin I make right after to handle
+# some importing and exporting.
+# IMPORTANT NOTE (due to image): Import/export plugins must POTENTIALLY support more than one format.
+# TODO: Add slog outputs
+
+mister-core = {path = "mister_core"}
+mister-gui = {path = "mister_gui"}
+
+[[bin]]
+name = "mister"
+path = "src/main.rs"
+
+[workspace]

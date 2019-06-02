@@ -1,0 +1,10 @@
+[package]
+name = "tokio-examples"
+version = "0.1.0"
+authors = ["xuyang <yang.xu@nbltrust.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1.26"
+bytes = "0.4.12"
+tokio = "0.1.19"

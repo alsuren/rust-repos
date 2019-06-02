@@ -1,0 +1,8 @@
+[package]
+name = "gl_mandelbrot"
+version = "0.1.0"
+authors = ["PeerHenry <peerhenry@gmail.com>"]
+
+[dependencies]
+glutin = "0.19.0"
+gl = "*"

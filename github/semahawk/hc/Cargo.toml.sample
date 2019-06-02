@@ -1,0 +1,14 @@
+[package]
+name = "hc"
+version = "0.1.2"
+authors = ["Szymon Urbaś <szymon.urbas@aol.com>"]
+license = "BSD-2-Clause"
+description = "Handy calculator for haxor calculations"
+repository = "https://github.com/semahawk/hc"
+homepage = "https://semahawk.github.io/hc/"
+readme = "README.md"
+
+[dependencies]
+getopts = "0.2"
+itertools = "0.5.4"
+rustyline = "1.0.0"

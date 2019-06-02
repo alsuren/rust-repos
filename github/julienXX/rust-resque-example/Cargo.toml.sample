@@ -1,0 +1,11 @@
+[package]
+name = "rust-resque-example"
+version = "0.1.0"
+authors = ["Julien Blanchard <julien@sideburns.eu>"]
+
+[dependencies]
+rustc-serialize = "0.3.16"
+
+[dependencies.redis]
+git = "https://github.com/mitsuhiko/redis-rs.git"
+tag = "0.5.1"

@@ -1,0 +1,9 @@
+[package]
+name = "asmrt"
+version = "0.1.0"
+authors = ["Anton <singaraiona@gmail.com>"]
+
+[dependencies]
+encode = { path = "encode" }
+memmap = "^0.5.2"
+fnv = "*"

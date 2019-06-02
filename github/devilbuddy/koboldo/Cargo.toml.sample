@@ -1,0 +1,10 @@
+[package]
+name = "rust-sdl2-game"
+version = "0.1.0"
+authors = ["Magnus <magnus.ornebringe@gmail.com>"]
+
+[dependencies]
+sdl2 = "0.12.1"
+sdl2_image = "0.6.0"
+rand = "0.3.11"
+nalgebra = "0.4.0"

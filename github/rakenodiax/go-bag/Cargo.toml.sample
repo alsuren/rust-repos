@@ -1,0 +1,12 @@
+[package]
+name = "go-bag"
+version = "0.1.0"
+authors = ["Kellen Frodelius-Fujimoto <kellen@kellenfujimoto.com>"]
+description = "A toolkit for writing applications for the Go board game"
+license = "MIT"
+publish = true
+
+[lib]
+name = "go"
+
+[dependencies]

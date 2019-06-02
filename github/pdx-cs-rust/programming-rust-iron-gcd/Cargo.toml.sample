@@ -1,0 +1,15 @@
+# Copyright © 2018 Jim Blandy, Jason Orendorff, Bart Massey
+# This work is released under the "MIT License".
+# Please see the file LICENSE in the source
+# distribution of this software for license terms.
+
+[package]
+name = "iron-gcd"
+version = "0.1.0"
+authors = ["Bart Massey <bart@cs.pdx.edu>"]
+
+[dependencies]
+iron = "0.5.1"
+mime = "0.2.3"
+router = "0.5.1"
+urlencoded = "0.5.0"

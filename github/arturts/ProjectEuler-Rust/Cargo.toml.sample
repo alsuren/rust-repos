@@ -1,0 +1,8 @@
+[package]
+name = "project_euler"
+version = "0.1.0"
+authors = ["Artur de Oliveira Tsuda <artur.o.tsuda@gmail.com>"]
+
+[lib]
+name = "project_euler"
+path = "src/lib.rs"

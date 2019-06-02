@@ -1,0 +1,24 @@
+[package]
+name = "bounce"
+version = "0.0.2"
+authors = ["owen <owen@oms.sh>"]
+license = "AGPL"
+
+[dependencies]
+
+# async
+bytes = "0.4.2"
+futures = "0.1.13"
+tokio-io = "0.1.1"
+tokio-core = "0.1.6"
+
+# parsing
+toml = "0.4.2"
+serde = "1.0.10"
+serde_derive = "1.0.10"
+docopt = "0.8.1"
+
+rpassword = "0.4.1"
+
+time = "0.1.37"
+log = "0.3.7"

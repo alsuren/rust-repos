@@ -1,0 +1,12 @@
+[package]
+name = "scripts"
+version = "0.1.0"
+authors = ["dineshadepu <adepu.dinesh.a@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+prestige = {path = "../prestige"}
+simple_shapes = {path = "../simple_shapes"}
+indicatif = "0.10.1"
+quicli = "0.4"
+structopt = "0.2"

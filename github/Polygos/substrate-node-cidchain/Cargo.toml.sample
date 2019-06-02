@@ -1,0 +1,31 @@
+[package]
+authors = ['Polygos']
+build = 'build.rs'
+edition = '2018'
+name = 'substrate-node-cidchain'
+version = '1.0.0'
+
+[profile.release]
+panic = 'unwind'
+
+[[bin]]
+name = 'cidchain'
+path = 'node/src/main.rs'
+
+[workspace]
+members = [
+	"node/runtime",
+	"node/cli",
+	"node/executor",
+	"node/primitives",
+	"node/service",
+]
+exclude = ["node/runtime/wasm"]
+
+[build-dependencies]
+vergen = '3'
+
+[dependencies]
+cidchain-cli = { path = "node/cli" }
+error-chain = "0.12"
+

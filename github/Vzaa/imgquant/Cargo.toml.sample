@@ -1,0 +1,11 @@
+[package]
+name = "imgquant"
+version = "0.1.0"
+authors = ["Vzaa <Vzaa@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+image = "0.21"
+rayon = "1.0"
+itertools = "0.8"

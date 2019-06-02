@@ -1,0 +1,13 @@
+[package]
+name = "rustpg"
+version = "0.1.0"
+authors = ["Johannes Hupe <johannes.hupe.jh@gmail.com>"]
+edition = "2018"
+description = "A package to generate parsers based on a language description. Especially useful in buildscript"
+
+[lib]
+name = "rustpg"
+path = "src/lib.rs"
+
+
+[dependencies]

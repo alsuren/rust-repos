@@ -1,0 +1,39 @@
+[package]
+name = "sarchive"
+version = "0.4.2"
+authors = ["Andy Georges <itkovian@gmail.com>"]
+edition = "2018"
+description = "Archiving tool for slurm job scripts"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/itkovian/sarchive"
+repository = "https://github.com/itkovian/sarchive"
+keywords = ["slurm", "cli", "archival"]
+categories = ["command-line-utilities"]
+
+
+[dependencies]
+clap = "2.33"
+crossbeam = "0.7.1"
+crossbeam-channel = "0.3.7"
+crossbeam-queue = "0.1.2"
+crossbeam-utils = "0.6.5"
+notify = "^4.0.11"
+libc = "^0.2.4"
+log = "^0.4.6"
+rayon = "^1.0.3"
+fern = "0.5.8"
+syslog = "4.0.1" 
+chrono = "0.4.6"
+
+[dev-dependencies]
+tempfile = "3.0.7"
+
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+sarchive = { path = "/usr/bin/sarchive" }
+
+[package.metadata.rpm.files]
+service = { path = "/usr/lib/systemd/system/sarchive.service" }

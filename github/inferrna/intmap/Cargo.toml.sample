@@ -1,0 +1,16 @@
+[package]
+name = "intmap"
+version = "0.1.0"
+authors = ["Илья Ефимов <inferrna@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "*"
+
+[dev-dependencies]
+criterion = "*"
+
+[[bench]]
+path = "src/bencher.rs"
+name = "bencher"
+harness = false

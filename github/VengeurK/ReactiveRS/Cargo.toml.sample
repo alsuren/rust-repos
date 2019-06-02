@@ -1,0 +1,16 @@
+[package]
+name = "ppr"
+version = "0.1.0"
+authors = ["Marc <vengeurk@gmail.com>"]
+
+[dependencies]
+timebomb = "0.1.2"
+crossbeam = "0.3.0"
+piston = "0.35.0"
+piston2d-graphics = "0.24.0"
+pistoncore-glutin_window = "0.43.0"
+piston2d-opengl_graphics = "0.50.0"
+
+[lib]
+name = "reactive_rs"
+path = "src/lib.rs"

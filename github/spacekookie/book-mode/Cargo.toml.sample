@@ -1,0 +1,12 @@
+[package]
+name = "book-mode"
+description = "A utility for keeping track of books"
+version = "0.1.0"
+authors = ["Katharina Fey <kookie@spacekookie.de>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33"
+regex = "1.1"
+prettytable-rs = "0.8"
+chrono = "0.4"

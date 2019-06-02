@@ -1,0 +1,9 @@
+[package]
+name = "chip8_emul"
+version = "0.1.0"
+authors = ["amk"]
+
+[dependencies]
+rand = "0.5.4"
+sdl2 = "0.31.0"
+adi_clock = "0.3.0"

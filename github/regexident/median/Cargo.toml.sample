@@ -1,0 +1,34 @@
+[package]
+authors = ["Vincent Esche <regexident@gmail.com>"]
+categories = ["algorithms"]
+description = "An implementation of an efficient O(n) median filter."
+documentation = "https://docs.rs/median"
+homepage = "https://github.com/regexident/median"
+keywords = [
+    "median",
+    "filter",
+    "dsp",
+    "signal-processing",
+]
+license = "MPL-2.0"
+name = "median"
+readme = "README.md"
+repository = "https://github.com/regexident/median"
+version = "0.3.0"
+
+[dependencies.missing_mpl]
+optional = true
+version = "~0.1"
+
+[dependencies]
+generic-array = "^0.11"
+
+[dev-dependencies]
+arraydeque = "0.4.2"
+noisy_float = "0.1.4"
+rand = "0.4.2"
+
+[features]
+default = ["std"]
+nightly = ["missing_mpl"]
+std = []

@@ -1,0 +1,15 @@
+[package]
+name = "vulkan-comparison"
+version = "0.1.0"
+authors = ["Brandon Pollack <brandonpollack23@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ash = ""
+winit = ""
+winapi = ""
+memoffset = ""
+
+[dependencies.cgmath]
+version = ""
+features = ["swizzle"]

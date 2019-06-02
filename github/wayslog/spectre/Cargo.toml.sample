@@ -1,0 +1,32 @@
+[package]
+name = "spectre"
+version = "0.1.0"
+authors = ["wayslog <wayslog@163.com>"]
+
+description = "Spectre is a time-series database for experiment"
+# These URLs point to more information about the repository.
+homepage = "https://github.com/wayslog/spectre"
+repository = "https://github.com/wayslog/spectre"
+
+# This points to a file in the repository (relative to this `Cargo.toml`). The
+# contents of this file are stored and indexed in the registry.
+# readme = "README.txt"
+
+# This is a small list of keywords used to categorize and search for this
+# package.
+keywords = ["time-series", "database"]
+
+# This is a string description of the license for this package. Currently
+# crates.io will validate the license provided against a whitelist of known
+# license identifiers from http://spdx.org/licenses/. Multiple licenses can be
+# separated with a `/`.
+license = "MIT"
+
+[dependencies]
+log = "0.3.6"
+env_logger = "0.3.5"
+byteorder = "0.5.3"
+crossbeam = "0.2.10"
+lru_time_cache = "0.5.0"
+itertools = "0.5.5"
+fnv = "1.0.5"

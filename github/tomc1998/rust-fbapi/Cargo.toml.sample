@@ -1,0 +1,13 @@
+[package]
+name = "fbapi"
+version = "0.1.0"
+authors = ["Thomas Cheng <thomascheng1998@googlemail.com>"]
+
+[dependencies]
+
+hyper = "0.10"
+hyper-native-tls = "0.2.4"
+
+serde = "0.9.11"
+serde_derive = "0.9.11"
+serde_json = "0.9.9"

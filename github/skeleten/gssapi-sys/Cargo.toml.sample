@@ -1,0 +1,13 @@
+[package]
+name = "gssapi-sys"
+version = "0.1.0"
+authors = ["Jan Pelle Thomson <thomson@vkm.tu-darmstadt.de>"]
+
+[features]
+default = [ "krb5" ]
+om_string = []
+krb5 = [ "krb5-sys" ]
+
+[dependencies.krb5-sys]
+version = "0.1"
+optional = true

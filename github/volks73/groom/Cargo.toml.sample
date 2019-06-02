@@ -1,0 +1,32 @@
+[package]
+name = "Groom"
+description = "A command line utility for processing Mustache templates"
+version = "0.1.1"
+authors = ["Christopher Field <cfield2@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+keywords = ["cli", "mustache", "template"]
+categories = ["command-line-utilities", "text-processing"]
+homepage = "https://github.com/volks73/groom"
+repository = "https://github.com/volks73/groom"
+documentation = "https://volks73.github.io/groom"
+build = "build.rs"
+
+[[bin]]
+name = "groom"
+path = "src/main.rs"
+doc = false
+
+[lib]
+name = "groom"
+
+[dependencies]
+ansi_term = "0.10"
+atty = "0.2"
+clap = "2.27"
+log = "0.3"
+loggerv = "0.6"
+mustache = "0.9"
+serde = "1.0"
+serde_yaml = "0.7"
+

@@ -1,0 +1,22 @@
+[package]
+name = "yampa"
+version = "0.2.1"
+authors = ["Alberto Leal <mailforalberto@gmail.com>"]
+
+[dependencies]
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+argon2rs = "0.2.5"
+ring = "0.7"
+ring-pwhash = "0.1.1"
+secstr = "0.2.1"
+byteorder = "1.0"
+termion = "1.1.1"
+clap = "2.20"
+lazy_static = "0.2"
+version = "2"
+colored = "1.4"
+
+[dev-dependencies]
+rusterpassword = "0.2.0"

@@ -1,0 +1,17 @@
+[package]
+name = "leo"
+version = "0.1.0"
+authors = ["MC mattscamp@gmail.com"]
+
+[dependencies]
+rustc-serialize = "0.3"
+walkdir = "0.1"
+ansi_term = "0.7"
+getopts = "0.2.0"
+regex = "0.1"
+sys-info = "*"
+memmap = "0.4.0"
+matcha = { git = "https://github.com/mattscamp/matcha.git" }
+
+[[bin]]
+name = "leo"

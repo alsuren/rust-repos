@@ -1,0 +1,7 @@
+[package]
+name = "qqfind"
+version = "0.1.0"
+authors = ["Dmitry Polyanitsa <coffeecup.winner@gmail.com>"]
+
+[dependencies]
+inotify = "0.6"

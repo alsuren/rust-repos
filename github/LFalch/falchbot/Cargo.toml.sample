@@ -1,0 +1,14 @@
+[package]
+name = "falchbot"
+version = "0.0.1"
+authors = ["lucas <lucas@wasd.dk>"]
+edition = "2018"
+
+[dependencies]
+serenity = "0.4"
+rand = "0.3"
+typemap = "0.3.3"
+stalch = {git = "http://github.com/LFalch/stalch.git"}
+seximal = {git = "http://github.com/LFalch/seximal.git"}
+hyper = "0.10"
+base64 = "0.7"

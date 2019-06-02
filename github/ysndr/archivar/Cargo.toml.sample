@@ -1,0 +1,39 @@
+[package]
+name = "archivar"
+version = "0.1.0"
+authors = ["Yannik Sander <me@ysndr.de>"]
+
+
+[lib]
+name = "libarchivar"
+path = "src/lib.rs"
+
+[[bin]]
+name = "archivar"
+path = "src/main.rs"
+
+[dependencies]
+structopt = "0.2"
+
+log = "0.4"
+fern = "0.5"
+
+chrono = "0.4"
+
+error-chain = "0.12.0"
+
+
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"
+
+predicates = "0.9"
+assert_fs = "0.9"
+
+fs_extra = "1.1.0"
+
+[dependencies.shell]
+git = "https://github.com/ysndr/shell-rs"
+
+[dev-dependencies]
+pretty_assertions = "0.5"

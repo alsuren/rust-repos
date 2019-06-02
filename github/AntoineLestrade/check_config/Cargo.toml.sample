@@ -1,0 +1,15 @@
+[package]
+name = "check_config"
+version = "0.1.0"
+authors = ["Antoine Lestrade"]
+
+[dependencies]
+term = "0.4.4"
+getopts = "0.2.14"
+lazy_static = "0.2.2"
+regex = "0.2.1"
+xml-rs = "0.3.4"
+toml = "0.3.2"
+
+serde = "0.9.14"
+serde_derive = "0.9.14"

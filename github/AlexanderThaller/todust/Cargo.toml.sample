@@ -1,0 +1,27 @@
+[package]
+name = "todust"
+version = "0.2.0"
+authors = ["Alexander Thaller <alexander.thaller@trivago.com>"]
+license = "MIT"
+
+[dependencies]
+csv = "1.0.0-beta.5"
+failure = "0.1"
+log = "0.4"
+serde = "1"
+serde_derive = "1"
+tempdir = "0.3"
+prettytable-rs = "0.6"
+text_io = "0.1"
+
+[dependencies.chrono]
+features = ["serde"]
+version = "0.4"
+
+[dependencies.uuid]
+features = ["serde", "v4"]
+version = "0.6"
+
+[dependencies.clap]
+features = ["yaml"]
+version = "2"

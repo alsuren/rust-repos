@@ -1,0 +1,16 @@
+[package]
+name = "lumos"
+version = "0.1.0"
+authors = ["Alexey Golubev <dr.freecx@gmail.com>",
+           "Vova Abdrakhmanov <369565@gmail.com>"]
+
+[dependencies]
+tini = "0.2"
+backlight = { path = "backlight" }
+
+# for logger
+# log = "0.3"
+# 
+# for keylogger
+# glob = "*"
+# libc = "*"

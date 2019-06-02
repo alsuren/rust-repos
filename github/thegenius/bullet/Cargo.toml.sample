@@ -1,0 +1,27 @@
+[package]
+name = "cargo-bullet"
+version = "0.2.3"
+authors = ["wang wei <soulww@163.com>"]
+edition = "2018"
+
+description = "This is a configurable project generator"
+homepage = "https://github.com/thegenius/bullet"
+keywords = ["generator"]
+categories = ["command-line-utilities"]
+license = "Apache-2.0/MIT"
+maintenance = { status = "actively-developed" }
+readme = "README.md"
+exclude = ["release/*.exe"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"
+clap = "2.32.0"
+tera = "0.11"
+walkdir = "2"
+lazy_static = "1.2.0"
+config = "0.9"
+toml = "0.4"
+dirs = "1.0"
+git2 = "0.7"

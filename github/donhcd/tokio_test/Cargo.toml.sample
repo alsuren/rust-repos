@@ -1,0 +1,23 @@
+[package]
+name = "tokio_test"
+version = "0.1.0"
+authors = ["Donald Huang <don@sigmacomputing.io>"]
+
+[dependencies]
+curl = "0.3.6"
+futures = "0.1.0"
+lazy_static = "0.1"
+tokio-core = "0.1.0"
+tokio-curl = "0.1.0"
+
+[[bin]]
+name = "curl"
+path = "src/main.rs"  
+
+[[bin]]
+name = "listener"
+path = "src/foo/main2.rs"  
+
+[[bin]]
+name = "curl2"
+path = "src/foo/main.rs"  

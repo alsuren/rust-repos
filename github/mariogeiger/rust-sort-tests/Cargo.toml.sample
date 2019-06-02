@@ -1,0 +1,9 @@
+[package]
+name = "quick_sort"
+version = "0.1.0"
+authors = ["Mario Geiger <geiger.mario@gmail.com>"]
+
+[dependencies]
+rand = "*"
+time = "*"
+gnuplot = "*"

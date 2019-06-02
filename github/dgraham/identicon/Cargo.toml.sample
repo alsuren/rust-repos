@@ -1,0 +1,18 @@
+[package]
+name = "identicon"
+version = "0.1.1"
+authors = ["David Graham <david.malcom.graham@gmail.com>"]
+description = "A port of GitHub's identicon algorithm to Rust."
+repository = "https://github.com/dgraham/identicon"
+license = "MIT"
+
+[lib]
+name = "identicon"
+
+[dependencies]
+digest = { version = "0.7", features = ["std"] }
+image = { version = "0.19", default-features = false, features = ["png_codec"] }
+md-5 = { version = "0.7", features = ["asm"] }
+
+[[bin]]
+name = "identicon"

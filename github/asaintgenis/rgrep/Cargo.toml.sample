@@ -1,0 +1,8 @@
+[package]
+name = "rgrep"
+version = "0.1.0"
+authors = ["Arthur Saint-Genis <arthur@codeshuffle.org>"]
+
+[dependencies]
+clap = "2.31.2"
+colored = "1.6.1"

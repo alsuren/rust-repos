@@ -1,0 +1,16 @@
+cargo-features = ["edition"]
+
+[package]
+edition = "2018"
+name = "enstructor"
+version = "0.1.0"
+authors = ["max"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = {version = "^0.14.4", features = ["full", "extra-traits"]}
+quote = "^0.6.3"
+proc-macro2 ={ version = "0.4.6" , features = ["nightly"] }
+heck = "0.3.0"

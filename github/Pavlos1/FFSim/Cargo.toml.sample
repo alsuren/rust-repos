@@ -1,0 +1,19 @@
+[package]
+name = "ffsim"
+version = "0.1.0"
+authors = ["Pavel Zakopaylo <zakopaylo2@gmail.com>"]
+
+[lib]
+crate-type = ["dylib"]
+doctest = false
+
+[dependencies]
+triple_buffer = "*"
+
+[dependencies.xplm]
+git = "https://github.com/Pavlos1/rust-xplm"
+branch = "windows"
+
+[dependencies.serial]
+git = "https://github.com/Pavlos1/serial-rs"
+branch = "master"

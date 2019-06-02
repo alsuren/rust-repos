@@ -1,0 +1,25 @@
+[package]
+name = "linux-toolkit"
+version = "0.1.0"
+authors = ["David Craven <david@craven.ch>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "*"
+memmap = "*"
+nix = "*"
+rand = "*"
+
+[dependencies.wayland-client]
+version = "0.21"
+git = "https://github.com/smithay/wayland-rs"
+features = ["cursor", "dlopen", "native_lib"]
+
+[dependencies.wayland-protocols]
+version = "0.21"
+git = "https://github.com/smithay/wayland-rs"
+features = ["native_client", "unstable_protocols"]
+
+[dependencies.xkbcommon]
+version = "0.4"
+features = ["wayland"]

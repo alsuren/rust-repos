@@ -1,0 +1,11 @@
+[package]
+name = "cli"
+version = "0.1.0"
+authors = ["Amanibhavam <iam@defn.sh>"]
+
+[dependencies]
+quale = "1.0"
+clap = {version = "~2.32.0", features = ["yaml"]}
+
+[dependencies.shell]
+git = "https://github.com/google/rust-shell"

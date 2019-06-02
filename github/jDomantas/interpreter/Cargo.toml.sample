@@ -1,0 +1,14 @@
+[package]
+name = "interpreter"
+version = "0.1.0"
+authors = ["Domantas Jadenkus <djadenkus@gmail.com>"]
+
+[dependencies]
+codemap = { git = "https://github.com/kevinmehall/codemap", rev = "0fcf9ed678dc14736a8d4bb4c72ff113728a24cb" }
+
+[dev-dependencies]
+walkdir = "1"
+
+[[bin]]
+name = "test_bin"
+path = "src/bin.rs"

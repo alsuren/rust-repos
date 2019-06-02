@@ -1,0 +1,54 @@
+[package]
+name = "war-against-machines"
+version = "0.3.1"
+authors = ["Expenses <expenses@airmail.cc>"]
+
+[dependencies]
+
+# General
+## Random number generation
+rand = "*"
+## Unit pathfinding
+pathfinding = "*"
+## To use `Ord` functions like `min_by_key` with `f32`s
+ord_subset = "*"
+## Line drawing for line-of-sight
+line_drawing = "*"
+## Deriving is_enum
+derive_is_enum_variant = "*"
+# Serialization/deserialization
+serde = "*"
+serde_derive = "*"
+## Human-readable settings
+toml = "*"
+## Efficiently-serialized data
+bincode = "*"
+## Error handling
+error-chain = "*"
+## Networking
+skynet = "*"
+## Font rendering
+runic = {git = "https://github.com/expenses/runic"}
+## UI
+pedot = {git = "https://github.com/expenses/pedot"}
+
+# Resource loading
+## Loading images
+image = "*"
+## Loading and playing sounds
+rodio = "*"
+
+# OpenGl!
+glium = {git = "https://github.com/expenses/glium", branch = "glutin_bump"}
+
+# Logging
+log = "*"
+env_logger = "*"
+
+## For `retain_mut`
+[dependencies.odds]
+version = "*"
+features = ["std-vec"]
+
+[replace]
+'glium:0.22.0' = {git = "https://github.com/expenses/glium", branch = "glutin_bump"}

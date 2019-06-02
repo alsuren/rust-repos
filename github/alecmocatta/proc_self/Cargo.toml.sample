@@ -1,0 +1,21 @@
+[package]
+name = "proc_self"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+authors = ["Alec Mocatta <alec@mocatta.net>"]
+categories = ["development-tools"]
+keywords = ["proc","procfs"]
+description = """
+Cross-platform `/proc/self` functionality.
+
+This library enables limited `/proc/self` functionality, including getting the current executable, open file descriptors, and paths for open file descriptors that can be passed to e.g. `exec` (for those systems without `fexecve`).
+
+Integrated into https://github.com/alecmocatta/palaver
+"""
+repository = "https://github.com/alecmocatta/palaver"
+homepage = "https://github.com/alecmocatta/palaver"
+documentation = "https://docs.rs/palaver/0.1.1"
+readme = "README.md"
+
+[badges]
+maintenance = { status = "deprecated" }

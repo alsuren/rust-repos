@@ -1,0 +1,24 @@
+[package]
+name = "rijksdriehoek"
+version = "0.1.0"
+authors = ["Johan Govers <johan@otherweb.eu>"]
+license = "MIT/Apache-2.0"
+edition = '2018'
+
+description = "Convert coordinates between rijksdriehoek and wgs84"
+documentation = "https://docs.rs/rijksdriehoek"
+homepage = "https://github.com/SahiBkom/rijksdriehoek"
+
+repository = "https://github.com/SahiBkom/rijksdriehoek"
+keywords = ["rijksdriehoek", "rd", "wgs84", "coordinates", "transforms"]
+categories = ["algorithms", "embedded", "science", "parsing"]
+
+[dependencies]
+num-traits = "0.2"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "benchmark"
+harness = false

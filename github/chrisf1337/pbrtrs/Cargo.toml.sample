@@ -1,0 +1,15 @@
+[package]
+name = "pbrtrs"
+version = "0.1.0"
+authors = ["Christopher Fu <chrisf1337@gmail.com>"]
+
+[dependencies]
+alga = "*"
+num = "*"
+
+[dev-dependencies]
+pretty_assertions = "*"
+
+[features]
+default = []
+float_as_f64 = []

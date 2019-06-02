@@ -1,0 +1,21 @@
+[package]
+
+name = "rust_bot"
+version = "0.0.1"
+authors = ["Billy Rhoades <billyarhoades@gmail.com>"]
+
+[dependencies]
+
+"irc" = { version = "^0.13" }
+"hyper" = { version = "^0.11" }
+"serde" = { version = "^1.0" }
+futures = { version = "^0.1.17" }
+tokio-core = { version = "^0.1" }
+serde_json = { version = "^1.0" }
+serde_derive = { version = "^1.0" }
+hyper-tls = { version = "^0.1" }
+cached = { version = "^0.4" }
+lazy_static = { version = "^1.0" }
+regex = { version = "^0.2" }
+#"discord" = { version = "^0.7" }
+#"openssl-sys" = { version = "0.9.24" }

@@ -1,0 +1,16 @@
+[package]
+name = "hodok"
+version = "0.0.0-42"
+authors = ["Paul Loyd <pavelko95@gmail.com>"]
+
+[dependencies]
+byteorder = "*"
+httparse = "*"
+libc = "*"
+log = "*"
+rustc-serialize = "*"
+sha1 = "*"
+
+[dependencies.rscam]
+version = "*"
+features = ["no_wrapper"]

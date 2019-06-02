@@ -1,0 +1,82 @@
+[package]
+name = "Advent of Code 2015"
+version = "0.1.0"
+authors = ["Andreas Neuhaus <zargony@zargony.com>"]
+description = "Solutions to the Advent of Code 2015 puzzles"
+
+[dependencies]
+nom = "1"
+onig = "1"
+rust-crypto = "0.2"
+
+[[bin]]
+name = "day01"
+
+[[bin]]
+name = "day02"
+
+[[bin]]
+name = "day03"
+
+[[bin]]
+name = "day04"
+
+[[bin]]
+name = "day05"
+
+[[bin]]
+name = "day06"
+
+[[bin]]
+name = "day07"
+
+[[bin]]
+name = "day08"
+
+[[bin]]
+name = "day09"
+
+[[bin]]
+name = "day10"
+
+[[bin]]
+name = "day11"
+
+[[bin]]
+name = "day12"
+
+[[bin]]
+name = "day13"
+
+[[bin]]
+name = "day14"
+
+[[bin]]
+name = "day15"
+
+[[bin]]
+name = "day16"
+
+[[bin]]
+name = "day17"
+
+[[bin]]
+name = "day18"
+
+[[bin]]
+name = "day19"
+
+[[bin]]
+name = "day20"
+
+[[bin]]
+name = "day21"
+
+[[bin]]
+name = "day22"
+
+[[bin]]
+name = "day23"
+
+[[bin]]
+name = "day25"

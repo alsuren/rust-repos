@@ -1,0 +1,9 @@
+[package]
+name = "parser"
+version = "0.1.0"
+authors = ["Vincent Isambart <vincent.isambart@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.1.0"
+bitflags = "1.0.4"

@@ -1,0 +1,11 @@
+[package]
+name = "ranges"
+version = "0.1.0"
+authors = ["Endre Bakken Stovner"]
+
+[dependencies]
+num = "0.1.36"
+libc = "0.2.16"
+
+[lib]
+crate-type = ["rlib", "dylib"]

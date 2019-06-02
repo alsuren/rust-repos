@@ -1,0 +1,14 @@
+[package]
+name = "rgparse"
+version = "0.1.2"
+authors = ["Pranav Marathe <pmarathe25@gmail.com>"]
+license = "MIT"
+edition = "2018"
+description = "A simple command-line parser"
+repository = "https://github.com/pmarathe25/RgParse"
+
+[[bin]]
+name = "example"
+path = "examples/basic.rs"
+
+[dependencies]

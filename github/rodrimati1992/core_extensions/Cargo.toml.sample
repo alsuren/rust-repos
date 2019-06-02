@@ -1,0 +1,63 @@
+[package]
+name = "core_extensions"
+version = "0.1.6"
+authors = ["rodrimati1992 <rodrimatt1985@gmail.com>"]
+description="This crate provides many extensions to core/std library types."
+license="MIT/Apache-2.0"
+readme="readme.md"
+repository="https://github.com/rodrimati1992/core_extensions"
+keywords = ["no-std"]
+categories = [ "no-std" ]
+include = [
+    "Cargo.toml", 
+    "src_core_extensions/**/*.rs", 
+    "build.rs", 
+    "./readme.md", 
+    "./APACHE_license", "./MIT_license"
+]
+
+[badges]
+travis-ci = { repository =  "rodrimati1992/core_extensions/" }
+
+[features]
+default = ["std","serde_"]
+
+std=[]
+
+serde_=["serde","serde_derive"]
+
+
+[dev-dependencies]
+rand = "0.4"
+rand_derive = "0.3"
+
+
+[dependencies.serde_derive]
+version = "1.0"
+optional=true
+
+[dependencies.serde]
+version = "1.0"
+default-features = false
+optional=true
+
+[dependencies.typenum]
+version="1.10"
+features=["no_std"]
+default-features = false
+optional=true
+
+
+
+[build-dependencies]
+rustc_version = "0.2"
+
+
+[lib]
+name = "core_extensions"
+path = "src_core_extensions/lib.rs"
+
+
+# [[bin]]
+# name="core_extensions_main"
+# path="src_core_extensions/main.rs"

@@ -1,0 +1,22 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+stderrlog = "0.4"
+structopt = "0.2"
+
+[dependencies.error-chain]
+version = "0.12"
+default-features = false  # disable pulling in backtrace
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"
+
+# Uncomment to sacrifice Drop-on-panic cleanup for 20K space saving
+#panic = 'abort'

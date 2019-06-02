@@ -1,0 +1,13 @@
+[package]
+name = "rust-two-libc-versions"
+version = "0.1.0"
+authors = ["Thorben Kroeger <thorbenkroeger@gmail.com>"]
+
+[dependencies]
+libc = "*"
+image = "*"
+
+[dependencies.mozjpeg-sys]
+git = "https://github.com/thorbenk/mozjpeg-sys.git"
+
+

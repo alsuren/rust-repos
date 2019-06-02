@@ -1,0 +1,8 @@
+[package]
+name = "ezgl"
+version = "0.4.1"
+authors = ["Akourne Burschstein <Crocodoctopus@gmail.com>"]
+
+[dependencies]
+gl = "0.10.0"
+png = "^0.11"

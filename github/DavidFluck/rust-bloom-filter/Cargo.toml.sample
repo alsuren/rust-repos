@@ -1,0 +1,8 @@
+[package]
+name = "bloom-filter"
+version = "0.1.0"
+authors = [ "David Fluck <fluck.d@gmail.com>" ]
+
+[dependencies]
+byteorder = "0.5.3"
+bit-vec = "0.4.3"

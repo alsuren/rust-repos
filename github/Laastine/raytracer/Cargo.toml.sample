@@ -1,0 +1,11 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Mikko Kaistinen <mikko.kaistinen@kapsi.fi>"]
+
+[dependencies]
+gfx = "0.17.1"
+gfx_core = "0.8.3"
+gfx_device_gl = "0.15.5"
+glutin = "0.19.0"
+image = "0.21.0"

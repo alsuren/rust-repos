@@ -1,0 +1,23 @@
+[package]
+name = "20min"
+version = "0.0.1"
+authors = ["Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>"]
+description = "A command line working timer"
+repository = "https://gitlab.com/grauwoelfchen/20min"
+keywords = []
+license = "Apache-2.0"
+
+[[bin]]
+name = "20min"
+path = "src/main.rs"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+structopt = { version = "0.2.12", default-features = false }
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false
+features = ["user-hooks"]

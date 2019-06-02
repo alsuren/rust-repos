@@ -1,0 +1,20 @@
+cargo-features = ["profile-overrides"]
+
+[package]
+name = "discord-mpd"
+version = "0.1.0"
+authors = ["Boris-Chengbiao Zhou <bobo1239@web.de>"]
+edition = "2018"
+
+[dependencies]
+shared = { path = "shared" }
+discord = { path = "discord" }
+web = { path = "web" }
+crossbeam-utils = "0.6.3"
+
+# Enable optimization of dependencies even when using a non-release build as
+# igo-rs (from romanize) overflows the stack otherwise.
+[profile.dev.overrides."*"]
+opt-level = 3
+
+[workspace]

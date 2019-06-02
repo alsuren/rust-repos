@@ -1,0 +1,20 @@
+[package]
+name = "tokio-socks5"
+version = "0.1.4"
+authors = ["cssivision <cssivision@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/cssivision/tokio-socks5-rs"
+homepage = "https://github.com/cssivision/tokio-socks5-rs"
+description = "async socks5 protocol"
+readme = "README.md"
+
+[dependencies]
+futures = "0.1"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-timer = "0.1"
+
+[dev-dependencies]
+log = "0.3"
+env_logger = "0.3"
+trust-dns-resolver = "0.7"

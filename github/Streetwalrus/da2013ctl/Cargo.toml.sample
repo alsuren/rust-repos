@@ -1,0 +1,10 @@
+[package]
+name = "da2013ctl"
+version = "1.0.0"
+authors = ["Dan Elkouby <streetwalkermc@gmail.com>"]
+
+[dependencies]
+byteorder = "1.0"
+getopts = "0.2"
+libudev = { git = "https://github.com/Streetwalrus/libudev-rs" }
+nix = "0.8"

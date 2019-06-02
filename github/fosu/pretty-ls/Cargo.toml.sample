@@ -1,0 +1,9 @@
+[package]
+name = "pls"
+version = "1.0.3"
+authors = ["Rose <lain@lain.org.uk>"]
+
+[dependencies]
+ansi_term = "0.7.2"
+time = "0.1.35"
+getopts = "0.2.14"

@@ -1,0 +1,37 @@
+[package]
+
+name = "open_analytics"
+version = "0.0.1"
+authors = ["Sam Vevang <sam.vevang@gmail.com>"]
+
+[dependencies]
+
+postgres = { version = "0.9", features = ["rustc-serialize", "chrono"] }
+router = "0.0.13"
+time = "0.1.32"
+r2d2 = "0.6.0"
+rustc-serialize = "0.3"
+persistent = "*"
+staticfile = "*"
+
+[dependencies.chrono]
+version = "0.2"
+features = ["rustc-serialize"]
+
+[dependencies.iron]
+
+version = "0.2.2"
+
+[dependencies.mount]
+
+git = "https://github.com/iron/mount.git"
+
+[dependencies.bodyparser]
+
+git = "https://github.com/iron/body-parser.git"
+
+[dependencies.r2d2_postgres]
+
+git = "https://github.com/sfackler/r2d2-postgres.git"
+version = "0.9.2"
+

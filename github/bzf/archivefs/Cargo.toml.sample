@@ -1,0 +1,13 @@
+[package]
+name = "archivefs"
+version = "0.1.0"
+authors = ["André Ligné <hello@bzf.se>"]
+build = "build.rs"
+
+[dependencies]
+libc = "0.2"
+walkdir = "2"
+
+[lib]
+name = "archivefs"
+crate-type = ["dylib"]

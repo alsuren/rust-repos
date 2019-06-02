@@ -1,0 +1,8 @@
+[package]
+name = "feeder"
+version = "0.1.0"
+authors = ["fulara <ntszar@gmail.com>"]
+
+[dependencies]
+rppal = "0.8"
+structopt = "0.2"

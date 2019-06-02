@@ -1,0 +1,20 @@
+[package]
+name = "phoronix-reader"
+version = "0.2.3"
+authors = ["Michael Aaron Murphy <mmstickman@gmail.com>"]
+description = "A simple CLI and GTK Phoronix homepage reader application."
+repository = "https://github.com/mmstick/phoronix-reader"
+readme = "README.md"
+keywords = ["phoronix"]
+license = "GPL-2.0"
+
+[features]
+enable_gtk = ["gtk", "gdk"]
+enable_colors = ["term"]
+
+[dependencies]
+hyper = "0.9.2"
+select = "0.3.0"
+term = { version = "0.4.4", optional = true }
+gtk = { version = "0.0.7", features = ["v3_16"], optional = true }
+gdk = { version = "0.3.0", optional = true }

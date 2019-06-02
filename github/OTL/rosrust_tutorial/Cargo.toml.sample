@@ -1,0 +1,23 @@
+[package]
+name = "rosrust_tutorial"
+version = "0.1.0"
+authors = ["Takashi Ogura <t.ogura@gmail.com>"]
+build = true
+
+[dependencies]
+
+rosrust = "0.5.0"
+serde = "1.0.2"
+serde_derive = "1.0.2"
+env_logger = "0.4.2"
+
+[[bin]]
+name = "publisher"
+path = "src/publisher.rs"
+
+[[bin]]
+name = "subscriber"
+path = "src/subscriber.rs"
+
+[build-dependencies]
+rosrust = "0.5.0"

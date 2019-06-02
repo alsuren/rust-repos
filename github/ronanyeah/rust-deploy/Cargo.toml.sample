@@ -1,0 +1,15 @@
+[package]
+name = "rust-deploy"
+version = "0.1.0"
+authors = ["Ronan <ronan_mccabe@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+http = "*"
+reqwest = "*"
+juniper = "*"
+serde_json = "*"
+
+[[bin]]
+name = "index"
+path = "index.rs"

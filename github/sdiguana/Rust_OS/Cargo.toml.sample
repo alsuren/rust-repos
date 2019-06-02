@@ -1,0 +1,9 @@
+[package]
+name = "whippet_os"
+version = "0.1.0"
+authors = ["jon <jlipstate@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]

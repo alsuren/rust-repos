@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "utils",
+    "db",
+    "http",
+    "actors",
+    "bot",
+    "web",
+    "launcher",
+]
+
+[profile.release]
+opt-level = "z"
+lto = true

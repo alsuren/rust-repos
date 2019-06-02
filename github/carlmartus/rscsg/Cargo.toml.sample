@@ -1,0 +1,15 @@
+[package]
+name = "rscsg"
+version = "0.2.0"
+authors = ["Martin Sandgren <carlmartus@gmail.com>"]
+
+[dependencies]
+bitflags = "1.0"
+
+[[example]]
+name = "gl"
+path = "examples/gl.rs"
+
+[dev-dependencies]
+png = "0.12.0"
+lingo = { git = "https://github.com/carlmartus/lingo", rev = "549c85cb" }

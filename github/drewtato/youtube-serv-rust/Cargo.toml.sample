@@ -1,0 +1,11 @@
+[package]
+name = "youtube-serv-rust"
+version = "0.1.0"
+authors = ["drewtato <ai@andrewirino.com>"]
+edition = "2018"
+
+[dependencies]
+serde_json = "1"
+term = "0.5"
+typed-html = "0.1"
+rocket = "0.4"

@@ -1,0 +1,13 @@
+[package]
+name = "ixy-net"
+version = "0.1.0"
+authors = ["HeroicKatora <andreas.molzer@gmx.de>"]
+edition = "2018"
+
+[dependencies]
+ixy = { path = "ixy.rs" }
+smoltcp = { path = "smoltcp", default-features = false, features = ["std", "proto-ipv4", "socket-udp"]}
+
+[dev-dependencies]
+env_logger = "0.6"
+structopt = "0.2"

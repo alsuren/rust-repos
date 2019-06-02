@@ -1,0 +1,10 @@
+[package]
+name = "phack"
+version = "0.1.0"
+authors = ["timglabisch <tim@ainfach.de>"]
+
+[dependencies]
+semver = "*"
+cargo = "0.4.0"
+curl = "*"
+rustc-serialize = "*"

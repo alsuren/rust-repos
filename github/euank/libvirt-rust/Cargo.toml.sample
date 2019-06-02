@@ -1,0 +1,21 @@
+[package]
+name = "libvirt"
+version = "0.1.0"
+authors = ["Darius C. <darius.clark@cloudvlts.net>"]
+description = "Libvirt bindings for rust"
+license = "MIT"
+repository = "https://github.com/cloudvlts/libvirt-rs"
+keywords = ["virtualization", "kvm"]
+
+
+[dependencies]
+libc = "0.2"
+xml-rs = "0.8"
+
+[dependencies.libvirt-sys]
+path = "libvirt-sys"
+version = "1.2.18"
+
+[features]
+default = []
+integ-tests = []

@@ -1,0 +1,15 @@
+[package]
+name = "serde_edn"
+version = "0.0.1"
+authors = ["Alexei Nunez <alexeirnunez@gmail.com>"]
+license = "MIT"
+description = "EDN support for rust-serde"
+repository = "https://github.com/arnm/edn"
+readme = "README.md"
+keywords = ["serialization", "deserializatin", "edn"]
+
+[dependencies]
+serde = "*"
+
+[dev-dependencies]
+serde_macros = "*"

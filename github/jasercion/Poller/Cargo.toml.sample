@@ -1,0 +1,11 @@
+[package]
+name = "poller"
+version = "0.1.0"
+authors = ["Joe Asercion <jasercion.gwu@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+url = "*"
+serde = "*"
+serde_json = "*"
+reqwest = "*"

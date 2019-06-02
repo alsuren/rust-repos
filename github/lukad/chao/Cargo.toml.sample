@@ -1,0 +1,9 @@
+[workspace]
+
+members = [
+    "chao",
+    "libchao",
+]
+
+[profile.release]
+opt-level = 2

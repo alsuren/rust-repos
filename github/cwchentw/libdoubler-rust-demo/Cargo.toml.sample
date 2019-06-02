@@ -1,0 +1,10 @@
+[package]
+name = "libdoubler"
+version = "0.1.0"
+authors = ["Michael Chen <cwchen123@gmail.com>"]
+
+[lib]
+name = "doubler"
+crate_type = ["dylib"]
+
+[dependencies]

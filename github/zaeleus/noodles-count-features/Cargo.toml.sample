@@ -1,0 +1,18 @@
+[package]
+name = "noodles-count-features"
+version = "0.1.0"
+authors = ["Michael Macias <zaeleus@gmail.com>"]
+license = "MIT"
+edition = "2018"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+
+[dependencies]
+clap = "2.32.0"
+csv = "1.0.5"
+env_logger = "0.6.0"
+interval-tree = { git = "https://github.com/zaeleus/interval-tree.git" }
+log = "0.4.5"
+noodles = { git = "https://github.com/zaeleus/noodles.git" }

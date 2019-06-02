@@ -1,0 +1,21 @@
+[package]
+
+name = "simdty"
+version = "0.0.3"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+homepage = "https://github.com/huonw/simdty"
+repository = "https://github.com/huonw/simdty"
+documentation = "http://huonw.github.io/simdty/simdty/"
+license = "MIT/Apache-2.0"
+keywords = ["numerics", "simd"]
+readme = "README.md"
+description = """
+Definitions of many SIMD types.
+"""
+
+
+build = "build.rs"
+
+[features]
+unstable = []

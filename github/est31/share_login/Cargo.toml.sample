@@ -1,0 +1,14 @@
+[package]
+name = "share_login"
+description = "HTTP server to share accounts between multiple minetest servers"
+version = "0.1.0"
+readme = "README.md"
+authors = ["est31 <MTest31@outlook.com>"]
+
+[dependencies]
+rusqlite = "0.7.3"
+rotor = "0.6.3"
+rotor-http = "0.7.0"
+rustc-serialize = "0.3"
+log = "0.3.6"
+env_logger = "0.3.3"

@@ -1,0 +1,15 @@
+[package]
+name = "rust_os"
+version = "0.1.0"
+authors = ["Praktikant"]
+
+[dependencies]
+bootloader = "0.3.7"
+volatile = "0.2.5"
+lazy_static = { version = "1.2.0", features = ["spin_no_std"] }
+spin = "0.4.10"
+uart_16550 = "0.1.0"
+x86_64 = "0.3.4"
+
+[package.metadata.bootimage]
+default-target = "x86_64-rust-os.json"

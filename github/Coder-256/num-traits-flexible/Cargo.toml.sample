@@ -1,0 +1,18 @@
+[package]
+authors = ["The Rust Project Developers", "Jacob Greenfield"]
+description = "Numeric traits for generic mathematics"
+documentation = "https://docs.rs/num-traits-flexible"
+homepage = "https://github.com/Coder-256/num-traits-flexible"
+keywords = ["mathematics", "numerics"]
+categories = ["algorithms", "science", "no-std"]
+license = "MIT"
+repository = "https://github.com/Coder-256/num-traits-flexible"
+name = "num-traits-flexible"
+version = "1.0.0"
+edition = "2018"
+readme = "README.md"
+exclude = ["/ci/*", "/.travis.yml"]
+
+[features]
+default = ["std"]
+std = []

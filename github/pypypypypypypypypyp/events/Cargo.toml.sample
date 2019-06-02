@@ -1,0 +1,8 @@
+[package]
+name = "events"
+version = "0.1.0"
+authors = ["pypypypypypypypypyp"]
+
+[dependencies]
+winit = "0.18"
+serde = { version = "1.0.89", features = ["derive"] }

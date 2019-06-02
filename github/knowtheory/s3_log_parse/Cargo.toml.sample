@@ -1,0 +1,15 @@
+[package]
+
+name = "s3_log_parser"
+version = "0.0.1"
+authors = ["Ted Han <ted@knowtheory.net>"]
+
+[dependencies]
+time = "0.1"
+csv = "*"
+rustc-serialize = "0.3"
+
+[dependencies.chrono]
+version = "0.2"
+features = ["rustc-serialize"]
+

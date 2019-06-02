@@ -1,0 +1,22 @@
+[package]
+name = "angolmois"
+version = "2.0.0-alpha2"
+authors = ["Kang Seonghoon <public+git@mearie.org>"]
+
+description = "Angolmois: The simple BMS player"
+homepage = "https://github.com/lifthrasiir/angolmois-rust"
+license = "GPL-2.0+"
+
+[dependencies.sdl]
+git = "https://github.com/lifthrasiir/rust-sdl.git"
+
+[dependencies.sdl_image]
+git = "https://github.com/lifthrasiir/rust-sdl.git"
+
+[dependencies.sdl_mixer]
+git = "https://github.com/lifthrasiir/rust-sdl.git"
+
+[[bin]]
+name = "angolmois"
+path = "angolmois.rs"
+

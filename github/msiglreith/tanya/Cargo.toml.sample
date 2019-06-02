@@ -1,0 +1,44 @@
+[package]
+name = "tanya"
+version = "0.1.0"
+authors = ["msiglreith <m.siglreith@gmail.com>"]
+edition = '2018'
+
+[lib]
+name = "tanya"
+path = "src/lib.rs"
+
+[workspace]
+members = [
+    "libash-vma",
+    "libjobs",
+    "librender",
+    "libecs",
+    "libecs2",
+    "libecs_derive",
+    "libui",
+]
+
+[dependencies]
+tanya-jobs = { path = "libjobs" }
+tanya-render = { path = "librender" }
+tanya-ecs = { path = "libecs" }
+tanya-ecs-derive = { path = "libecs_derive" }
+tanya-ui = { path = "libui" }
+
+[dev-dependencies]
+failure = "0.1.2"
+winit = "0.17"
+
+[[example]]
+name = "jobs"
+path = "examples/jobs.rs"
+
+[[example]]
+name = "ecs"
+path = "examples/ecs.rs"
+
+[[example]]
+name = "hati"
+path = "examples/hati.rs"
+

@@ -1,0 +1,15 @@
+[package]
+name = "thin_cstr"
+version = "0.1.0"
+authors = ["kennytm <kennytm@gmail.com>"]
+description = "An experimental crate which provides a truly thin std::ffi::CStr"
+repository = "https://github.com/kennytm/thin_cstr"
+keywords = ["cstr", "cstring", "ffi"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+
+[badges]
+maintenance = { status = "experimental" }
+travis-ci = { repository = "kennytm/thin_cstr"  }
+
+[dependencies]

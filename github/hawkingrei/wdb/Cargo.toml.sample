@@ -1,0 +1,26 @@
+[package]
+name = "wdb"
+version = "0.1.0"
+authors = ["真人 <weizhen.wang@duitang.com>"]
+
+[features]
+static-link = ["rocksdb/static-link"]
+
+[[test]]
+name = "test"
+path = "tests/test.rs"
+
+[dependencies.rocksdb]
+git = "https://github.com/pingcap/rust-rocksdb.git"
+
+[dependencies]
+clippy = {version = "*", optional = true}
+libc = "0.2"
+tempdir = "0.3.4"
+crc = "1.2"
+
+[[bin]]
+name = "wdb"
+
+[dev-dependencies]
+byteorder = "1.0.0"

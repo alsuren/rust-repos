@@ -1,0 +1,38 @@
+[package]
+name = "ndbam-tools"
+version = "0.1.0"
+authors = ["Mykola Orliuk <virkony@gmail.com>"]
+license = "LGPL-3.0"
+edition = "2018"
+
+[dependencies]
+structopt = "0.2"
+clap = "2.21"
+nom = "4.2"
+colored = "1.8"
+crypto-hash = "0.3"
+hex = "0.3"
+bytesize = "1"
+atty = "0.2"
+tempfile = "3.0"
+walkdir = "2"
+
+[dev-dependencies]
+# unit-tests
+totems = "0"
+
+# integration tests
+assert_cmd = "0.11"
+assert_fs = "0.11"
+shellwords = "1.0.0"
+cucumber_rust = { version = "0.5.1", default-features = false }
+predicates = "1.0"
+spectral = "0.6.0"
+
+[[test]]
+name = "cucumber"
+harness = false # Allows Cucumber to print output instead of libtest
+
+[lib]
+name = "ndbam"
+path = "src/lib.rs"

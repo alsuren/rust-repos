@@ -1,0 +1,23 @@
+[package]
+name = "combustion"
+version = "0.1.0"
+authors = ["Brent Carmer <bcarmer@gmail.com>"]
+
+[lib]
+crate-type = ["rlib", "dylib"]
+
+[dependencies]
+rand = "^0"
+regex = "^0"
+getopts = "^0"
+num_cpus = "^0"
+libc = "^0"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

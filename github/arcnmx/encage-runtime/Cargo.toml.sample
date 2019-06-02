@@ -1,0 +1,31 @@
+[package]
+name = "encage-runtime"
+version = "0.0.0-pre.1"
+authors = ["arcnmx"]
+
+description = "Linux container runtime"
+documentation = "http://arcnmx.github.io/encage-runtime/encage_runtime/"
+repository = "https://github.com/arcnmx/encage-runtime"
+readme = "README.md"
+keywords = ["oci", "open", "container", "docker", "runc"]
+license = "MIT"
+
+[profile.release]
+opt-level = 3
+lto = true
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "encage-run"
+path = "src/main.rs"
+
+[dependencies]
+ocf = { version = "=0.2.0-alpha.6", optional = true }
+nix = { git = "https://github.com/arcnmx/nix-rust", branch = "refactor", features = ["execvpe"] }
+void = "^0.0.5"
+quick-error = "^0.2.1"
+clap = "^1.5.5"
+tempdir = "^0.3.4"
+libc = "^0.2.6"

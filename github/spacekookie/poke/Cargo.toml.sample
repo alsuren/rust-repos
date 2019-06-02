@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    # Common "poke" library
+    'libpoke',
+    # Utility CLI
+    'poke',
+    # Poke Daemon (and a pun)
+    'poked',
+]

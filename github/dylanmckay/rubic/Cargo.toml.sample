@@ -1,0 +1,27 @@
+[package]
+name = "rubic"
+version = "0.1.1"
+authors = ["Dylan McKay <me@dylanmckay.io>"]
+
+description = "Ruby parser and compiler"
+documentation = "https://docs.rs/rubic"
+repository = "https://github.com/dylanmckay/rubic"
+
+readme = "README.md"
+license = "MIT"
+
+keywords = ["ruby", "llvm"]
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "tokenize"
+path = "tools/tokenize.rs"
+
+[[bin]]
+name = "parse"
+path = "tools/parse.rs"
+
+[dependencies]
+error-chain = "0.7"

@@ -1,0 +1,23 @@
+[package]
+name = "ssh_permit_a38"
+description = "Central managment and deployment for SSH keys"
+version = "0.2.0"
+authors = ["Bernhard Janetzki <boerni@gmail.com>"]
+
+[[bin]]
+name = "ssh-permit-a38"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.30"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+chrono = "0.4"
+ssh2 = "0.3"
+colored = "1.6"
+difference = "2.0"
+rpassword = "1.0.0"
+
+[dev-dependencies]
+assert_cli = "0.5"

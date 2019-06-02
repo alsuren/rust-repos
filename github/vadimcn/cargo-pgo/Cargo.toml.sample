@@ -1,0 +1,19 @@
+[workspace]
+members = ["profiler-rt", "profdata"]
+
+[package]
+name = "cargo-pgo"
+version = "0.1.0"
+authors = ["Vadim Chugunov <vadimcn@gmail.com>"]
+
+[features]
+default = ["standalone"]
+standalone = ["profiler-rt", "profdata"]
+
+[[bin]]
+name = "cargo-pgo"
+path = "src/main.rs"
+
+[dependencies]
+profiler-rt = { path = "profiler-rt", optional = true }
+profdata = { path = "profdata", optional = true }

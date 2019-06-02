@@ -1,0 +1,8 @@
+[workspace]
+members= [
+  "lib/scim-core-schemas",
+  "lib/scim-predefs",
+  "bin/scim2rust",
+  "lib/client",
+  "lib/server",
+]

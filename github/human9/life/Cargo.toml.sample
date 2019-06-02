@@ -1,0 +1,25 @@
+[package]
+name = "life"
+version = "0.1.0"
+authors = ["John <salamonj9@gmail.com>"]
+
+[features]
+default = ["gpu_cache", "conrod_glium", "winit", "glutin"]
+gpu_cache = ["rusttype/gpu_cache"]
+conrod_glium = ["conrod/glium"]
+winit = ["conrod/winit"]
+glutin = ["glium/glutin"]
+
+[dependencies]
+sifter = { path = "../sifter" }
+gl = "0.10.0"
+glium = "*"
+rand = "*"
+conrod = "0.57.0"
+rusttype = "*"
+petgraph = "*"
+glium_text_rusttype = "*"
+cgmath = "*"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

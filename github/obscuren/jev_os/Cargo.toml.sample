@@ -1,0 +1,14 @@
+[package]
+name = "jev_os"
+version = "0.1.0"
+authors = ["Jeffrey Wilcke <i@jev.io>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "*"
+spin = "*"
+
+[dependencies.multiboot2]
+git = "https://github.com/phil-opp/multiboot2-elf64"

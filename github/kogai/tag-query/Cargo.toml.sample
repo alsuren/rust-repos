@@ -1,0 +1,20 @@
+[package]
+name = "bento-photo"
+version = "0.1.0"
+authors = ["小飼慎一 <kogai0121@gmail.com>"]
+
+[dependencies]
+dotenv = "0.10.0"
+router = "*"
+handlebars = "0.25.2"
+handlebars-iron = "0.23.0"
+rustc-serialize = "0.3.23"
+mount = "0.3.0"
+staticfile = "0.4.0"
+reqwest = "0.5.1"
+serde_json = "0.9"
+iron-sessionstorage = "0.6.6"
+urlencoded = "0.5.0"
+
+[dependencies.iron]
+version = "*"

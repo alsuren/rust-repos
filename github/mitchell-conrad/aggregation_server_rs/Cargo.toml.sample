@@ -1,0 +1,10 @@
+[package]
+name = "aggregation_server"
+version = "0.1.0"
+authors = ["mitchell-conrad <mitchell.w.conrad@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+diesel = { version = "1.0.0", features = ["postgres"] }
+dotenv = "0.9.0"
+structopt = "0.2.14"

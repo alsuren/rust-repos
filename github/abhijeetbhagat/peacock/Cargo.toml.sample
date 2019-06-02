@@ -1,0 +1,12 @@
+[package]
+name = "peacock"
+version = "0.1.0"
+authors = ["abhibhag"]
+build = "build.rs"
+
+[dependencies]
+glium = "*"
+gstreamer = "*"
+
+[profile.release]
+debug=true

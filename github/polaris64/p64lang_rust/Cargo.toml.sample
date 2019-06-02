@@ -1,0 +1,12 @@
+[package]
+name = "p64lang"
+version = "0.1.0"
+authors = ["Simon Pugnet <simon@polaris64.net>"]
+
+[features]
+default = ["std"]
+no_std = ["nom/alloc"]
+std = ["nom/std"]
+
+[dependencies]
+nom = { version = "4.0.0", default-features = false }

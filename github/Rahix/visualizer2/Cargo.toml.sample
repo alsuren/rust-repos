@@ -1,0 +1,13 @@
+[package]
+name = "visualizer2"
+version = "0.0.0"
+authors = ["Rahix <rahix@rahix.de>"]
+edition = "2018"
+
+[workspace]
+members = [
+    "vis-core",
+    "spectral",
+    "noambition",
+    "noa-35c3",
+]

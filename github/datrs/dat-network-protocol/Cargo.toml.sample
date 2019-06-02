@@ -1,0 +1,13 @@
+[package]
+name = "dat-network-protocol"
+description = "Dat Network Protocol protobuf definitions."
+version = "0.1.4"
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+protobuf = "2.0.4"
+
+[build-dependencies]
+protoc-rust = "2.0.4"

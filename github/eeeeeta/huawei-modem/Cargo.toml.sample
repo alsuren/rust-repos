@@ -1,0 +1,31 @@
+[package]
+authors = ["eeeeeta <eeeeeta@users.noreply.github.com>"]
+edition = "2018"
+name = "huawei-modem"
+description = "A set of utilities for interfacing with USB 3G/HSDPA/UMTS modems (particularly Huawei models) that use the Hayes/AT command set."
+license = "CC0-1.0"
+documentation = "https://docs.rs/huawei-modem"
+homepage = "https://git.theta.eu.org/huawei-modem.git/about/"
+repository = "https://git.theta.eu.org/huawei-modem.git/"
+readme = "README.md"
+keywords = ["sms", "gsm", "pdu", "modem", "huawei"]
+maintenance = { status = "passively-maintained" }
+version = "0.2.0"
+
+[dependencies]
+bytes = "0.4"
+derive_is_enum_variant = "0.1"
+encoding = "0.2"
+env_logger = "0.4"
+failure = "0.1"
+failure_derive = "0.1"
+futures = "0.1"
+log = "0.3"
+nom = "3.2"
+num = "0.1"
+num-derive = "0.1"
+rand = "0.4"
+tokio-codec = "0.1"
+tokio-core = "0.1"
+tokio-file-unix = "0.4"
+tokio-io = "0.1"

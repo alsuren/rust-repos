@@ -1,0 +1,8 @@
+[package]
+name = "libharmony-rs"
+version = "0.1.0"
+authors = ["Lucille Blumire <llblumire@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+itertools = "*"

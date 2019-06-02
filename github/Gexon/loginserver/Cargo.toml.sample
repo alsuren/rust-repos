@@ -1,0 +1,11 @@
+[package]
+name = "loginserver"
+version = "0.1.0"
+authors = ["Gexon <alimgan@gmail.com>"]
+
+[dependencies]
+getopts = "*"
+mysql = "*"
+rust-crypto = "^0.2"
+rustc-serialize = "0.3.19"
+time = "0.1.35"

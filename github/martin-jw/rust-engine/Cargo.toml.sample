@@ -1,0 +1,11 @@
+[package]
+name = "rusteng"
+version = "0.1.0"
+authors = ["martin-jw <martin.jirlow@gmail.com>"]
+
+[dependencies]
+gl = "*"
+glutin = "*"
+nalgebra = "*"
+time = "*"
+typemap = "*"

@@ -1,0 +1,37 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "The repomon server"
+documentation = "http://docs.rs/repomons"
+homepage = "http://docs.rs/repomons"
+keywords = ["git", "repository", "monitor", "server"]
+license = "MIT/Apache-2.0"
+name = "repomons"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/repomons"
+version = "0.1.0"
+
+[dependencies]
+bincode = "0"
+clap = "2"
+colored = "1"
+error-chain = "0"
+futures = "=0.1.21"
+getset = "0"
+git2 = "0"
+repomon = "0"
+slog-async = "2"
+slog-term = "2"
+term = "0"
+tokio-core = "0"
+tokio-io = "0"
+toml = "0"
+rand = "0"
+uuid = { version = "0", features = ["serde", "use_std", "v4" ] }
+slog-try = "0"
+
+[dependencies.slog]
+features = ["max_level_trace", "release_max_level_trace"]
+version = "=2.1.1"
+
+[patch.crates-io]
+repomon = { path = '../repomon' }

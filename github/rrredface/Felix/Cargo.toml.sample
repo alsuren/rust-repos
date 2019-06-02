@@ -1,0 +1,14 @@
+[package]
+name = "felix"
+version = "0.1.0"
+authors = ["rrred"]
+
+[dependencies]
+discord = "*"
+lazy_static = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+hyper = "0.10.13"
+rand = "*"
+

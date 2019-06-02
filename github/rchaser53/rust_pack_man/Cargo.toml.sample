@@ -1,0 +1,22 @@
+[package]
+authors = ["rchaser53 <tayoshizawa29@gmail.com>"]
+name = "rust_pack_man"
+version = "0.1.1"
+
+[dependencies]
+enum_primitive = "0.1.1"
+env_logger = "0.4.3"
+lazy_static = "0.2.9"
+log = "0.3.8"
+num = "0.1.40"
+rand = "0.3.16"
+
+[dependencies.sdl2]
+default-features = false
+features = [
+    "ttf",
+    "image",
+    "gfx",
+    "mixer",
+]
+version = "0.31"

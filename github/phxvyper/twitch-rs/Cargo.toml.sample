@@ -1,0 +1,10 @@
+[package]
+name = "twitch-rs"
+version = "0.1.0"
+authors = ["tristen"]
+
+[dependencies]
+ws = "*"
+url = "*"
+regex = "*"
+time = "*"

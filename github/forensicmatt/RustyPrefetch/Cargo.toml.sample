@@ -1,0 +1,47 @@
+[package]
+name = "RustyPrefetch"
+version = "0.2.0"
+authors = ["matthew seyer <https://github.com/forensicmatt/RustyPrefetch>"]
+build = "build.rs"
+
+[[bin]]
+name = "DecompressPrefetch"
+path = "examples/DecompressPrefetch.rs"
+
+[[bin]]
+name = "RustyPrefetch"
+path = "src/main.rs"
+
+[lib]
+name = "rustyprefetch"
+crate-type = ["cdylib","lib"]
+
+[dependencies.r-winstructs]
+version = "*"
+branch = "master"
+git = "https://github.com/forensicmatt/r-winstructs"
+
+[dependencies]
+log = "0.3"
+libc = "0.2"
+clap = "*"
+byteorder = "*"
+encoding = "0.2"
+bitflags = "0.7"
+time = "*"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+seek_bufread = "~1.2"
+
+[dependencies.jmespath]
+version = "^0.1.1"
+
+[dependencies.chrono]
+version = "*"
+features = ["serde", "rustc-serialize"]
+
+[dependencies.cpython]
+version = "*"
+default-features = false
+features = ["python27-sys"]

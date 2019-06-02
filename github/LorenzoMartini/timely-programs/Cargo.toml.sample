@@ -1,0 +1,14 @@
+[package]
+
+name = "timely-programs"
+version = "0.0.0"
+authors = ["Lorenzo Martini <lmartini@student.ethz.ch>"]
+readme = "README.md"
+
+description = "A set of programs to measure timely performance"
+
+[dependencies]
+timely = {  git = "https://github.com/frankmcsherry/timely-dataflow" }
+timely-affinity = { git = "https://github.com/LorenzoMartini/timely-affinity", branch = "lmartini/execute_from" }
+hdrhist = "^0.5.0"
+getopts="*"

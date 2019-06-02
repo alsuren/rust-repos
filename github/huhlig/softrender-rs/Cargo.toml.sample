@@ -1,0 +1,25 @@
+[package]
+name = "render"
+version = "0.1.0"
+edition = "2018"
+authors = ["Hans W. Uhlig <hans.uhlig@ibm.com>"]
+
+[dependencies]
+byteorder = "*"
+minifb    = "*"
+
+[[bin]]
+name = "canvas"
+path = "src/demo_canvas.rs"
+
+[[bin]]
+name = "icosahedron"
+path = "src/demo_icosahedron.rs"
+
+[[bin]]
+name = "rasterizer"
+path = "src/demo_rasterizer.rs"
+
+[[bin]]
+name = "raytracer"
+path = "src/demo_raytracer.rs"

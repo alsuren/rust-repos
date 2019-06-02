@@ -1,0 +1,28 @@
+[package]
+name = "translucence"
+version = "0.1.0"
+authors = ["crhino <piraino.chris@gmail.com>"]
+
+[dependencies]
+marid = ">=0.0.2"
+transit = { version = "*", features = ["json_serialization"] }
+
+log = "*"
+env_logger = "*"
+
+iron = "*"
+router = "*"
+
+time = "*"
+
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+
+docopt = "*"
+docopt_macros = "*"
+rustc-serialize = "*"
+
+[dev-dependencies]
+chan = ">=0.1.14"
+ferrous_threads = ">=0.1.1"

@@ -1,0 +1,11 @@
+[package]
+name = "aoc18"
+version = "0.1.0"
+authors = ["Ske <voltasalt@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+console = "0.7"
+indicatif = "0.10"
+regex = "1.1"
+reqwest = "0.9"

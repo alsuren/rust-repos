@@ -1,0 +1,13 @@
+[package]
+name = "sudoku-cli"
+version = "0.1.0"
+authors = ["jk"]
+
+[lib]
+name = "sudoku"
+crate-type = ["rlib", "dylib"]
+
+[dependencies]
+time = "0.1"
+rand = "0.3"
+clap = "2.24.2"

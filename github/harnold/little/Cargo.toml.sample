@@ -1,0 +1,7 @@
+[package]
+name = "little"
+version = "0.1.0"
+authors = ["Holger Arnold <holgerar@gmail.com>"]
+
+[dependencies]
+juice = { path = "../juice" }

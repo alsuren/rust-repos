@@ -1,0 +1,19 @@
+[package]
+name = "mcc4"
+version = "0.1.0"
+authors = ["Paul Gey <narpfel@gmx.de>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+
+[features]
+noparallel = []
+
+[dependencies]
+rayon = "1"
+rand = "0.6"
+rand_xoshiro = "0.1"
+rand_os = "0.1"
+log = "0.4"
+env_logger = "0.6"

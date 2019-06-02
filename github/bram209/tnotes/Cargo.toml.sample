@@ -1,0 +1,11 @@
+[package]
+name = "tnotes"
+version = "0.1.0"
+authors = ["Bram Hoendervangers <bram.hoendervangers@gmail.com>"]
+
+[dependencies]
+rustbox = "*"
+#clippy = "*"
+
+[[bin]]
+name = "tnotes"

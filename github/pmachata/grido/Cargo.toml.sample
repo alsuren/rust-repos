@@ -1,0 +1,15 @@
+# -*-conf-*-
+
+[package]
+name = "grido"
+version = "0.0.1"
+authors = [ "Petr Machata <pmachata@gmail.com>" ]
+license = "GPL-3.0"
+
+[[bin]]
+name = "grido"
+
+[dependencies]
+ncurses = "*"
+time = "0.1.35"
+rand = "0.3"

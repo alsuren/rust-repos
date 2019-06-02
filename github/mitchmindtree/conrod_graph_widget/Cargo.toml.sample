@@ -1,0 +1,13 @@
+[package]
+name = "conrod_graph_widget"
+version = "0.1.0"
+authors = ["mitchmindtree <mitchell.nordine@gmail.com>"]
+description = "A general use widget for viewing and controlling graphs."
+
+[dependencies]
+conrod = "0.56"
+conrod_derive = "0.1"
+
+[dev-dependencies]
+conrod = { version = "0.56", features = ["winit", "glium"] }
+petgraph = "0.4"

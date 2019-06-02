@@ -1,0 +1,33 @@
+[package]
+name = "rusty_xkcd"
+version = "0.1.2"
+authors = ["Kixiron <kixiron.contact@gmail.com>"]
+edition = "2018"
+description = "An API wrapper for xkcd.com"
+documentation = "https://docs.rs/rusty_xkcd"
+repository = "https://github.com/Kixiron/rusty_xkcd"
+readme = "README.md"
+keywords = [
+    "xkcd",
+    "comic",
+    "api",
+    "wrapper",
+    "rest"
+]
+license = "MIT"
+exclude = [
+    "benches/*",
+    "tests/*",
+    ".travis.yml",
+    ".gitlab-ci.yml",
+    ".gitignore",
+    "target/*"
+]
+
+[dependencies]
+quick-error = "1.2.2"
+serde_json = "1.0.39"
+reqwest = "0.9.11"
+scraper = "0.9.1"
+chrono = "0.4.6"
+rand = "0.6.5"

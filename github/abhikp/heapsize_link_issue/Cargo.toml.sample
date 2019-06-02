@@ -1,0 +1,11 @@
+[package]
+name = "heapsize_issue"
+version = "0.1.0"
+authors = ["Abhik Pramanik <abhikp@gmail.com>"]
+
+[dependencies]
+heapsize = "*"
+
+[lib]
+name = "heapsize_issue"
+crate-type = ["lib", "cdylib"]

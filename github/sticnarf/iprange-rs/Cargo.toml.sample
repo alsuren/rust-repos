@@ -1,0 +1,19 @@
+[package]
+name = "iprange"
+version = "0.6.2"
+authors = ["Yilin Chen <sticnarf@gmail.com>"]
+description = "A library to manage IP ranges"
+repository = "https://github.com/sticnarf/iprange-rs"
+readme = "README.md"
+documentation = "https://docs.rs/iprange/"
+categories = ["network-programming"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "sticnarf/iprange-rs" }
+
+[dependencies]
+ipnet = "2.0.0"
+
+[dev-dependencies]
+rand = "0.3.17"

@@ -1,0 +1,16 @@
+[package]
+name = "flightdata"
+version = "0.2.1"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+
+[dependencies]
+hyper = "0.10"
+curl = "0.4"
+httparse = { git = "https://github.com/seanmonstar/httparse" }
+native-tls = "0.1"
+hyper-native-tls = "0.2"
+zip = "0.2"
+mysql = "10.0"
+csv = "0.15"
+docopt = "*"
+rustc-serialize = "*"

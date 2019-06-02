@@ -1,0 +1,21 @@
+[package]
+name = "glory3"
+version = "0.1.0"
+authors = ["Harrison Dews <harrisondews@gmail.com>"]
+
+[dependencies]
+
+specs = "0.7.1"
+cgmath = "0.12.0"
+time="0.1"
+
+gfx="0.12.2"
+gfx_device_gl="0.11"
+glutin="0.6"
+gfx_window_glutin="0.12"
+
+log="0.3.6"
+env_logger="0.4.1"
+
+gwrap = { git = "https://github.com/bluecereal/gwrap", version = "0.2.3" }
+duplex = { git = "https://github.com/bluecereal/rsduplex", version = "1.0.1"}

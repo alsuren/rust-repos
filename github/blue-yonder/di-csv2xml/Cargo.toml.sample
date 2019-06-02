@@ -1,0 +1,23 @@
+[package]
+name = "di-csv2xml"
+version = "1.0.8"
+authors = ["Markus Klein <markus.klein@blue-yonder.com>"]
+license = "MIT"
+publish = false
+edition = "2018"
+
+[profile.release]
+lto = true
+panic = "abort"
+
+[dependencies]
+quicli = "0.4.0"
+csv = "1.0.7"
+indicatif = "0.11.0"
+strum = "0.15.0"
+strum_macros = "0.15.0"
+structopt = "0.2.15"
+quick-xml = "0.14.0"
+
+[dev-dependencies]
+assert_cli = "0.6.3"

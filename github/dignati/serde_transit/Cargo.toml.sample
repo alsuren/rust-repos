@@ -1,0 +1,13 @@
+[package]
+name = "serde_transit"
+version = "0.1.0"
+authors = ["Ole Krüger <ole@kru.gr>"]
+description = "Transit serialization for Rust"
+license = "MIT"
+
+[dependencies]
+serde = "^1"
+serde_json = "^1"
+
+[dev-dependencies]
+serde_derive = "^1"

@@ -1,0 +1,15 @@
+[package]
+name = "todo-backend-rust"
+version = "0.1.0"
+authors = ["flada-auxv <aseknock@gmail.com>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+persistent = "*"
+bodyparser = "*"
+unicase = "*"
+rustc-serialize = "*"
+postgres = "*"
+r2d2 = "*"
+r2d2_postgres= "*"

@@ -1,0 +1,11 @@
+[package]
+name = "who_casa"
+version = "0.1.0"
+authors = ["IvanTurgenev <kenneth19949@gmail.com>"]
+
+[dependencies]
+toml = "0.4"
+log = "0.3"
+serde = "1.0"
+serde_derive = "1.0"
+regex = "0.2"

@@ -1,0 +1,17 @@
+[package]
+name = "timeseries"
+version = "0.1.3"
+authors = ["Krzysztof Langner <klangner@gmail.com>"]
+description = "time Series library"
+keywords = ["timeseries"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/klangner/timeseries.rs"
+homepage = "https://github.com/klangner/timeseries.rs"
+documentation = "https://docs.rs/timeseries"
+readme = "README.md"
+edition = "2018"
+
+
+[dependencies]
+chrono = "0.4"
+rand = "0.6"

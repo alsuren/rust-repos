@@ -1,0 +1,35 @@
+[package]
+name = "deribit"
+version = "0.1.9"
+authors = ["Weiyüen Wu <doomsplayer@gmail.com>"]
+edition = "2018"
+description = "Rust client for deribit, nightly only. Please look at tests/examples for detail usage at current stage."
+license = "MIT"
+documentation = "https://docs.rs/deribit"
+repository = "https://github.com/dovahcrow/deribit-rs"
+readme = "README.md"
+
+[dependencies]
+futures01 = { version = "0.1", package = "futures"}
+futures-preview = { version = "0.3.0-alpha.16", features = ["compat", "nightly", "async-await"]}
+tokio = "0.1"
+tungstenite = "0.6"
+tokio-tungstenite = "0.6"
+url = "1"
+serde = "1"
+serde_json = "1"
+serde_derive = "1"
+failure = "0.1"
+log = "0.4"
+derive_builder = "0.7"
+pin-utils = "0.1.0-alpha.3"
+shrinkwraprs = "0.2"
+regex = "1"
+lazy_static = "1"
+
+[dev-dependencies]
+env_logger = "0.6"
+dotenv = "0.13.0"
+fluid = "0.4"
+runtime = "0.3.0-alpha.4"
+runtime-tokio = "0.3.0-alpha.4"

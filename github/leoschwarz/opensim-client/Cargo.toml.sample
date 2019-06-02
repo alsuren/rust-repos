@@ -1,0 +1,38 @@
+[package]
+name = "opensim-client"
+version = "0.1.0"
+authors = ["Leo Schwarz <mail@leoschwarz.com>"]
+license = "GPL-3.0-or-later"
+
+[dependencies]
+#imgui = "0.0.17"
+addressable_queue = "0.2.0"
+alga = "0.5.2"
+chashmap = "2.2"
+crossbeam-channel = "0.1"
+failure = "0.1"
+futures = "0.1"
+# TODO: https://github.com/alexcrichton/futures-await/issues/79
+#futures-await = "0.1.0"
+futures-await = { git = "https://github.com/ngg/futures-await", branch = "0.1", version = "0.1" }
+glium = "0.20.0"
+lazy_static = "1.0.0"
+#multiqueue = "0.3.2"
+# use git version until https://github.com/leoschwarz/multiqueue/commit/998c381b05e287cd238cd0dccbcb7771c1442328 lands in crates.io version.
+multiqueue = { git = "https://github.com/leoschwarz/multiqueue" }
+opensim_networking = { git = "https://github.com/leoschwarz/opensim-networking" }
+opensim_types = { git = "https://github.com/leoschwarz/opensim-networking" }
+parking_lot = "0.5.4"
+rmp-serde = "0.13.7"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+#simple_disk_cache = "0.1"
+simple_disk_cache = { git = "https://github.com/leoschwarz/simple_disk_cache" }
+slog = "2.0"
+specs = "0.10"
+tokio = "0.1.1"
+tokio-core = "0.1.10"
+toml = "0.4.5"
+typed_rwlock = { git = "https://github.com/leoschwarz/typed_rwlock" }
+typenum = "1.9"

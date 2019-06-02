@@ -1,0 +1,12 @@
+[package]
+
+name = "rs_in_jung"
+version = "0.0.1"
+authors = ["ReolSt <roxman98@naver.com>"]
+description = "InJung Compiler"
+repository = "https://github.com/ReolSt/RsInJung"
+readme = "README.md"
+license = "GNU General Public License v3.0"
+
+[dependencies]
+getopts =  "*"

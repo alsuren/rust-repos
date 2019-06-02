@@ -1,0 +1,13 @@
+[package]
+name = "gitclass"
+version = "0.8.0"
+authors = ["mttaggart <michael.t.taggart@gmail.com>"]
+license = "MIT"
+description = "Tool for teachers to manage classes using git"
+repository = "https://github.com/mttaggart/gitclass"
+readme = "README.md"
+
+[dependencies]
+clap = {version = "^2.32.0", features=["yaml"]}
+json = "^0.11.13"
+git2 = "^0.7.5"

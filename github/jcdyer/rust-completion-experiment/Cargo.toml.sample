@@ -1,0 +1,28 @@
+[package]
+name = "completion"
+version = "0.1.0"
+authors = ["J. Cliff Dyer <jcd@sdf.org>"]
+edition = "2018"
+
+[dependencies]
+structopt = {version = "*", optional = true}
+mysql = "*"
+opaquekeys = {"path" = "opaquekeys"}
+reqwest = {git = "https://github.com/seanmonstar/reqwest", features = ["native-tls-vendored"]}
+serde = "1"
+serde_derive = "1"
+serde_json = "*"
+rocket = {version = "0.4", optional = true}
+rocket_contrib = {version = "*", optional = true}
+
+[features]
+cli = ["structopt"]
+web = ["rocket", "rocket_contrib"]
+
+[[example]]
+name = "cli"
+required-features = ["cli"]
+
+[[example]]
+name = "web"
+required-features = ["web"]

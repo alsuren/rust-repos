@@ -1,0 +1,10 @@
+[package]
+name = "matasano"
+version = "0.1.0"
+authors = ["Colin Mitchell <muffinista@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+openssl = "0.9.9"
+rand = "0.4"
+percent-encoding = "1.0.0"

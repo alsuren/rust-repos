@@ -1,0 +1,16 @@
+[package]
+name = "wadatsumi"
+version = "0.1.0"
+authors = ["Ryan Leckey <ryan@launchbadge.com>"]
+edition = "2018"
+
+[dependencies]
+num-derive = "0.2.4"
+num-traits = "0.2.6"
+unchecked_unwrap = "1.0.1"
+derive_more = "0.14.0"
+failure = "0.1"
+byteorder = "1.3.1"
+pretty_env_logger = "0.3.0"
+log = "0.4.6"
+bitintr = { version = "0.2.0", features = [ "unstable" ] }

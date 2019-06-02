@@ -1,0 +1,27 @@
+[package]
+name = "advent_of_code_2018"
+version = "0.1.0"
+authors = ["Andrew Goacher <a.goacher@shieldsafety.co.uk>"]
+
+[[bin]]
+name="day-1"
+path="src/day_1.rs"
+
+[[bin]]
+name="day-2"
+path="src/day_2.rs"
+
+[[bin]]
+name="day-3"
+path="src/day_3.rs"
+
+[[bin]]
+name="day-4"
+path="src/day_4.rs"
+
+
+
+[dependencies]
+clap = "2"
+regex = "1.1.0"
+chrono = "0.4"

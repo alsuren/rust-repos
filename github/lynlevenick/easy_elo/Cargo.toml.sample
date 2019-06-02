@@ -1,0 +1,17 @@
+[package]
+name = "easy_elo"
+version = "0.1.0"
+authors = ["Lyn Levenick <lyn.levenick@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+serde_codegen = "^0.6.2"
+syntex = "^0.17.0"
+
+[dependencies]
+chrono = "^0.2.16"
+ease = "^0.4.1"
+getopts = "^0.2.14"
+num = "^0.1.27"
+serde = "^0.6.1"
+serde_json = "^0.6.0"

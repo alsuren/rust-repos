@@ -1,0 +1,32 @@
+[package]
+name = "gfx-render"
+version = "0.1.0"
+authors = ["omni-viral <scareaangel@gmail.com>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/gfx-rs/gfx-render.git"
+documentation = "https://docs.rs/crate/gfx-render/0.1.0/gfx-render"
+
+[features]
+profile = ["flame"]
+[dependencies]
+crossbeam-channel = "0.1"
+failure = "0.1"
+flame = { version = "0.2", optional = true }
+gfx-hal = { version = "0.1", git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b", features = ["serde"] }
+gfx-memory = { git = "https://github.com/gfx-rs/gfx-memory", rev = "4f6e410" }
+log = "0.4"
+regex = { version = "1.0", optional = true }
+serde = { version = "1.0", optional = true }
+winit = "0.15"
+
+[target.'cfg(all(features = "serde", features = "regex"))'.dependencies]
+serde_regex = { version = "0.2" }
+
+[target.'cfg(not(target_os = "macos"))'.dependencies]
+gfx-backend-vulkan = { version = "0.1", optional = true, git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b" }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+gfx-backend-metal = { version = "0.1", optional = true, git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b" }
+
+[target.'cfg(windows)'.dependencies]
+gfx-backend-dx12 = { version = "0.1", optional = true, git = "https://github.com/gfx-rs/gfx", rev = "6cb2a800b" }

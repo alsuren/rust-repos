@@ -1,0 +1,10 @@
+[package]
+name = "dataframes"
+version = "0.1.0"
+authors = ["Giorgos Georgiou <giorgos.georgiou@outlook.com>"]
+
+[dependencies]
+quick-error = "*"
+
+[dev-dependencies]
+maplit = "*"

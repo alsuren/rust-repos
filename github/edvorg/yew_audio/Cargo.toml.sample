@@ -1,0 +1,15 @@
+[package]
+name = "yew_audio"
+version = "0.1.3"
+authors = ["Eduard Knyshov <edvorg@gmail.com>"]
+description = "WebAudio API bindings for Yew frontend framework"
+edition = "2018"
+repository = "https://github.com/edvorg/yew_audio"
+license-file = "LICENSE"
+
+[dependencies]
+yew = "0.4.0"
+stdweb = "0.4.10"
+stdweb-derive = "0.5.0"
+serde = "1.0.0"
+serde_derive = "1.0.0"

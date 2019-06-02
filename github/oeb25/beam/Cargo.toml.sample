@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "beam",
+    "mg",
+    "collada"
+]
+
+[profile.dev]
+opt-level = 3

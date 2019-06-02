@@ -1,0 +1,36 @@
+[package]
+name = "record-usage"
+version = "0.1.0"
+authors = ["Wei Mao"]
+
+[dependencies.winapi]
+version = "0.3.5"
+features = [
+    #
+    # keep the list in sync with wrapper.rs
+    #
+
+    # winapi::shared::
+    "basetsd",
+    "guiddef",
+    "minwindef",
+    "windef",
+    "winerror",
+
+    # winapi::um::
+    "minwinbase",
+    "winbase",
+    "winnt",
+    "winuser",
+    "wow64apiset",
+
+    # winapi.um::*api
+    "consoleapi",
+    "errhandlingapi",
+    "handleapi",
+    "libloaderapi",
+    "memoryapi",
+    "processthreadsapi",
+    "synchapi",
+    "sysinfoapi",
+]

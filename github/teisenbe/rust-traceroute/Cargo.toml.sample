@@ -1,0 +1,15 @@
+[package]
+name = "traceroute"
+version = "0.1.2"
+description = "Library for finding hosts on a path to a destination"
+authors = ["Todd Eisenberger <todd@teisen.be>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/teisenbe/rust-traceroute"
+keywords = ["icmp", "tracert", "traceroute"]
+
+[dependencies]
+libc = "0.1.10"
+socket = "0.0.7"
+rand = "0.3"
+time = "0.1"

@@ -1,0 +1,19 @@
+[package]
+name = "uri"
+version = "0.3.0"
+authors = ["Jean Piere Dudey <jeandudey@hotmail.com>"]
+repository = "https://github.com/jeandudey/uri-rs.git"
+homepage = "https://github.com/jeandudey/uri-rs.git"
+license = "Apache-2.0"
+readme = "README.md"
+documentation = "http://jeandudey.github.io/uri-rs/"
+description = "uri is a library to help in the creation and parsing of an uri."
+
+[dependencies]
+regex = "0.1"
+clippy = {version = "0.0.64", optional = true}
+lazy_static = "0.2"
+
+[features]
+default = []
+dev = ["clippy"]

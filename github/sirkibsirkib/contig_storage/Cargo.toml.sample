@@ -1,0 +1,11 @@
+[package]
+name = "contig_storage"
+version = "0.1.0"
+authors = ["Christopher Esterhuyse <christopher.esterhuyse@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+bit-vec = "0.5.0"
+
+[dev-dependencies]

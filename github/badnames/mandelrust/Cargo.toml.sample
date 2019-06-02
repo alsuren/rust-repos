@@ -1,0 +1,15 @@
+[package]
+name = "mandelbrot_renderer"
+version = "0.2.0"
+authors = ["Moritz Schalk <schalk.moritz@yahoo.de>"]
+
+[dependencies]
+sdl2 = "0.31"
+num-complex = "0.2"
+palette = "0.4.1"
+argparse = "0.2.1"
+image = "*"
+num_cpus = "0.2"
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs"

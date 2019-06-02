@@ -1,0 +1,29 @@
+[package]
+name = "vault13"
+version = "0.1.0"
+authors = ["Dmytro Lysai <d@emphased.net>"]
+license = "GPL-3.0"
+edition = "2018"
+
+[dependencies]
+atoi = "0.3"
+bit-vec = "0.5"
+bstring = "0.1"
+byteorder = "1.2"
+clap = "2.33"
+enumflags = "0.4"
+enumflags_derive = "0.4"
+enum-map = "0.4"
+enum-map-derive = "0.4"
+enum-primitive-derive = "0.1"
+env_logger = "0.6"
+flate2 = "1.0"
+if_chain = "0.1"
+log = "0.4"
+matches = "0.1"
+measure_time = "0.6"
+num-traits = "0.1"
+png = "0.13"
+rand = "0.6"
+sdl2 = { version = "0.32.1", features = ["unsafe_textures"] }
+slotmap = "0.3"

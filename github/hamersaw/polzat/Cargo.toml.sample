@@ -1,0 +1,15 @@
+[package]
+name = "polzat"
+version = "0.1.0"
+authors = ["Dan Rammer <hamersaw@gmail.com>"]
+
+[dependencies]
+curl = "0.*"
+docopt = "0.6.*"
+grpc = { git = "https://github.com/stepancheg/grpc-rust" }
+futures = "0.1"
+futures-cpupool = "0.1"
+protobuf = { git = "https://github.com/stepancheg/rust-protobuf" }
+regex = "*"
+rustc-serialize = "0.3.*"
+threadpool = "1.3.*"

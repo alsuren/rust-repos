@@ -1,0 +1,13 @@
+[package]
+name = "aecia-xxhash"
+version = "0.1.5"
+authors = ["A.W. Stanley <aws@sysfunc.net>"]
+edition = "2018"
+license = "zlib"
+
+[dependencies.aecia-io]
+git = "https://github.com/aecia/aecia-io.rs"
+
+[features]
+# Default (enables `#![no_std]`)
+default = []

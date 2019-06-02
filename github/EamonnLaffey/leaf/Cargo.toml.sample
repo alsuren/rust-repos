@@ -1,0 +1,9 @@
+[package]
+name = "leaf"
+version = "0.1.0"
+authors = ["Eamonn Laffey <eamonn.laffey@gmail.com>"]
+
+[dependencies]
+gfx = "*"
+glutin = "*"
+gfx_window_glutin = "*"

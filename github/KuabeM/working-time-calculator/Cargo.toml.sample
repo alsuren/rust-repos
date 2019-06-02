@@ -1,0 +1,8 @@
+[package]
+name = "working-time-calc"
+version = "0.1.0"
+authors = ["Korbinian Maier <korbinian.maier@tum.de>"]
+
+[dependencies]
+time = "0.1"
+log = "0.4.1"

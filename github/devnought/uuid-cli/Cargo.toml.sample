@@ -1,0 +1,15 @@
+[package]
+name = "uuid-cli"
+version = "0.2.1"
+authors = ["Kyle Gretchev <kgretcehv@gmail.com>"]
+description = "Generate UUIDs"
+edition = "2018"
+
+[dependencies]
+uuid = { version = "0.7", features = ["v4"] }
+clipboard = "0.5"
+structopt = "0.2"
+
+[[bin]]
+name = "uuid"
+path = "src/main.rs"

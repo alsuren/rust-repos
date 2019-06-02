@@ -1,0 +1,11 @@
+[package]
+name = "zesty_green_falacious_refuse"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+amethyst = "0.10.0"
+nalgebra = "0.17.2"
+specs-derive = "0.4.0"
+nom = "4.2.1"

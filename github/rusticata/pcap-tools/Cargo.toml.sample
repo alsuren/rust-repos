@@ -1,0 +1,43 @@
+[package]
+name = "pcap-tools"
+version = "0.1.1"
+description = "Tools for PCAP/PCAPNG files"
+authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/rusticata/pcap-tools"
+repository = "https://github.com/rusticata/pcap-tools.git"
+
+readme = "README.md"
+categories = ["network-programming"]
+
+include = [
+  "LICENSE-*",
+  ".gitignore",
+  ".travis.yml",
+  "Cargo.toml",
+  "src/*.rs",
+  "src/*/*.rs"
+]
+
+[[bin]]
+name = "pcap-rewrite"
+path = "src/pcap-rewrite/main.rs"
+
+[[bin]]
+name = "pcap-info"
+path = "src/pcap-info/main.rs"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+nom = "4.0"
+circular = "0.2.0"
+
+[dependencies.clap]
+version = "2"
+default-features = false
+
+[dependencies.pcap-parser]
+version = "0.5"
+features = ["data"]

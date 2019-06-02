@@ -1,0 +1,20 @@
+[package]
+name = "rust-8"
+version = "0.1.0"
+authors = ["Jordan Werthman <jordanwerthman@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+console_error_panic_hook = "0.1.6"
+env_logger = "*"
+log = "0.4.6"
+rand = "0.6"
+wasm-bindgen = "0.2"
+
+# Do not include unsupported piston when compiling to WASM:
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+piston_window = "0.89.0"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "rust8"

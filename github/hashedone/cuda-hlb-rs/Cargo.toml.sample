@@ -1,0 +1,10 @@
+[package]
+name = "cuda-hlb"
+version = "0.1.0"
+authors = ["Bartłomiej Kuras <hash.deb@gmail.com>"]
+
+[dependencies]
+libc = "^0.2"
+error-chain = "^0.10"
+interpolate_idents = "^0.1.7"
+

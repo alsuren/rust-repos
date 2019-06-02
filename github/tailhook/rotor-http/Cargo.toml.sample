@@ -1,0 +1,36 @@
+[package]
+name = "rotor-http"
+description = """
+    The mio-based http server and client (+ websockets planned)
+"""
+license = "MIT"
+readme = "README.rst"
+keywords = ["mio", "http", "websocket", "rotor"]
+homepage = "http://github.com/tailhook/rotor-http"
+version = "0.7.0"
+authors = ["paul@colomiets.name", "pyfisch@gmail.com"]
+
+[dependencies]
+httparse = "1.1"
+rotor = "0.6.2"
+rotor-stream = "0.6.1"
+quick-error = "1.0.0"
+matches = "0.1"
+serde = { version = "0.7", optional = true }
+serde_json = { version = "0.7", optional = true }
+serde_macros = { version = "0.7", optional = true }
+log = "0.3.1"
+
+[dev-dependencies]
+libc = "0.1"
+net2 = "0.2"
+rotor-test = "0.2.0"
+url = "0.5.7"
+argparse = "0.2.1"
+env_logger = "0.3.2"
+
+[lib]
+name = "rotor_http"
+
+[features]
+nightly = ["serde", "serde_json", "serde_macros"]

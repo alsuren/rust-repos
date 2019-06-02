@@ -1,0 +1,18 @@
+[package]
+name = "memetron_420"
+version = "0.1.0"
+authors = ["Isaac Post <post.isaac@gmail.com>", "Paul Butler <paul.butler@twosigma.com>"]
+
+[dependencies]
+time = "*"
+clippy = {version = "*", optional = true}
+
+[[bin]]
+name = "MyBot"
+path = "src/main.rs"
+
+#[profile.dev]
+#debug = true
+#
+#[profile.release]
+#debug = true

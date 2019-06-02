@@ -1,0 +1,17 @@
+[package]
+name = "rswm"
+version = "0.0.0"
+
+[dependencies]
+log = "*"
+log4rs = "*"
+libc = "*"
+mustache = "*"
+
+[dependencies.x11]
+version = "2.12.0"
+features = ["xlib", "xinput", "xinerama"]
+
+[[bin]]
+name = "rswm"
+path = "main.rs"

@@ -1,0 +1,29 @@
+[package]
+name = "maestro"
+version = "0.1.0"
+authors = ["TSH Labs"]
+description = "A basic init process for use in containers"
+homepage = "https://github.com/tshlabs/maestro"
+documentation = "https://docs.rs/maestro/"
+repository = "https://github.com/tshlabs/maestro.git"
+readme = "README.md"
+license = "Apache-2.0/MIT"
+keywords = ["init", "pid1", "container"]
+
+[dependencies]
+clap = "2.32"
+libc = "0.2.43"
+nix = "0.11.0"
+signal-hook = "0.1.5"
+
+[lib]
+name = "maestro"
+path = "src/maestro/lib.rs"
+
+[[bin]]
+name = "maestro"
+path = "src/bin/maestro.rs"
+doc = false
+
+[badges]
+travis-ci = { repository = "tshlabs/maestro" }

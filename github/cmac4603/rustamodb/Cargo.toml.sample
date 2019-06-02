@@ -1,0 +1,18 @@
+[package]
+name = "rustamodb"
+version = "0.0.6"
+authors = ["Colin MacRae <cmac4603@users.noreply.github.com>"]
+description = "A rust library for AWS DynamoDB."
+keywords = ["dynamo", "dynamodb", "aws", "nosql"]
+categories = ["database", "data-structures"]
+repository = "https://github.com/cmac4603/rustamodb"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+lazy_static = "~1.2.0"
+rusoto_core = "~0.32.0"
+rusoto_dynamodb = "~0.32.0"
+
+[badges]
+travis-ci = { repository = "cmac4603/rustamodb" }

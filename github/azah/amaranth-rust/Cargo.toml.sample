@@ -1,0 +1,15 @@
+[package]
+name = "amaranth"
+version = "0.1.0"
+authors = ["Andrew Zah <zah@andrewzah.com>"]
+
+[dependencies]
+env_logger = "0.5.11"
+difference = "2.0.0"
+kankyo = "~0.2"
+serenity = "0.5.5"
+typemap = "0.3.3"
+reqwest = "0.8.7"
+serde = "1.0.70"
+serde_json = "1.0.24"
+serde_derive = "1.0.70"

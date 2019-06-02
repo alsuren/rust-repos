@@ -1,0 +1,17 @@
+[package]
+name = "xirr"
+version = "0.2.1"
+edition = "2018"
+authors = ["Chandra Sekar S"]
+license = "Apache-2.0"
+repository = "https://github.com/cskr/xirr"
+description = "XIRR for Rust"
+readme = "README.md"
+documentation = "https://docs.rs/xirr"
+exclude = ["tests/*"]
+
+[dependencies]
+chrono = "0.4.6"
+
+[dev-dependencies]
+csv = "^1.0.0"

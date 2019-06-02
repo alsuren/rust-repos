@@ -1,0 +1,11 @@
+[package]
+name = "cosmopp"
+version = "0.1.1"
+authors = ["Strebel, Dominik <dominik.strebel@empa.ch>"]
+
+[dependencies]
+netcdf = { git = "https://github.com/mhiley/rust-netcdf" }
+ndarray = "0.11.2"
+clap = "2.32.0"
+glob = "0.2.11"
+rayon = "1.0"

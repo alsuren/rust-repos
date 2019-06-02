@@ -1,0 +1,10 @@
+[package]
+
+name = "conway_rs"
+version = "0.0.1"
+authors = ["Cam Jackson <camjackson89@gmail.com>"]
+
+[dependencies]
+rand = "*"
+glium = "*"
+glutin = "*"

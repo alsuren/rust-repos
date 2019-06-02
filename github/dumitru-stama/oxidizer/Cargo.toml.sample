@@ -1,0 +1,33 @@
+[package]
+name = "oxidizer"
+version = "0.1.0"
+authors = ["dumitru-stama <dumitru.stama@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+libc = "0.2"
+sha2 = { version = "0.8", default-features = false }
+
+[features]
+
+[build-dependencies]
+cc = "1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.dev]
+panic = "abort"
+lto = true
+codegen-units = 1
+incremental = false
+opt-level = "z"
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
+incremental = false
+opt-level = "z"
+

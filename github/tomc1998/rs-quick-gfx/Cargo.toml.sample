@@ -1,0 +1,24 @@
+[package]
+name = "quick-gfx"
+version = "0.4.0"
+authors = ["Thomas Cheng <thomascheng1998@googlemail.com>"]
+
+[dependencies]
+glium = "0.17.0"
+winit = "0.7.5"
+rusttype = "0.2.1"
+image = "0.15.0"
+
+[dev-dependencies]
+bencher = "*"
+
+[profile.bench]
+opt-level = 3
+codegen-units = 1
+debug = true
+
+[features]
+
+# Set this feature whilst benching, enables unstable nightly features for
+# benching.
+bench = []

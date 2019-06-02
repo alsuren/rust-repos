@@ -1,0 +1,26 @@
+[package]
+name = "kitty-rs"
+version = "0.1.0"
+authors = ["alex"]
+edition = "2018"
+
+[dependencies]
+rand = "^0.6"
+log = "^0.4"
+chrono = "^0.4"
+reqwest = "^0.9"
+serde_json = "^1.0"
+toml = "^0.4"
+uwl = "^0.3"
+
+[dependencies.serenity]
+git = "https://github.com/acdenisSK/serenity"
+branch = "v0.6.x"
+#path = "../serenity"
+
+[dependencies.serde]
+version = "^1.0"
+features = ["derive"]
+
+[dependencies.moute]
+git = "https://github.com/acdenisSK/moute"

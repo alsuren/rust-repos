@@ -1,0 +1,19 @@
+[package]
+name = "data_structure"
+version = "0.1.0"
+authors = ["caoyong <caoyong@bytedance.com>"]
+
+[[bin]]
+name = "binary"
+path = "src/binary.rs"
+
+[[bin]]
+name = "expr"
+path = "src/expr.rs"
+
+[[bin]]
+name = "capacity_stack"
+path = "src/capacity_stack.rs"
+
+[dependencies]
+elapsed = "0.1"

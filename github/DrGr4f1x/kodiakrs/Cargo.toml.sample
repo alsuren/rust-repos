@@ -1,0 +1,11 @@
+[package]
+name = "kodiakrs2"
+version = "0.1.0"
+authors = ["David Elder <elddm1@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[lib]
+name = "kodiak"
+path = "src/lib.rs"

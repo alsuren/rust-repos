@@ -1,0 +1,9 @@
+[package]
+name = "libp2p-crypto"
+version = "0.1.0"
+authors = ["Wim Looman <wim@nemo157.com>"]
+
+[dependencies]
+ring = "0.12.1"
+untrusted = "0.5.1"
+rust-crypto = "0.2.36"

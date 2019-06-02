@@ -1,0 +1,12 @@
+[package]
+name = "spacebar-common"
+version = "0.0.1"
+authors = ["Chad Baxter <cbaxter@mail.umw.edu>"]
+description = "The common library for Project Spacebar"
+homepage = "https://spaceba.rs/"
+documentation = "https://spaceba.rs/docs/"
+repository = "https://www.github.com/LogoiLab/spacebar-common"
+publish = true
+license-file = "LICENSE.md"
+
+[dependencies]

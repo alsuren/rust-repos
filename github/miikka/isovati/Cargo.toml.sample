@@ -1,0 +1,16 @@
+[package]
+
+name = "isovati"
+version = "0.0.1"
+authors = [ "Miikka Koskinen <miikka.koskinen@iki.fi>" ]
+
+[[bin]]
+
+name = "isovati"
+
+[dependencies]
+
+openssl = "^0.7"
+toml = "^0.1"
+bufstream = "^0.1"
+rand = "^0.3"

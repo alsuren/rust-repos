@@ -1,0 +1,20 @@
+[package]
+authors = ["James Waples <james@wapl.es>"]
+categories = ["embedded", "no-std"]
+keywords = ["no-std", "esp8266", "wifi", "embedded-hal-driver"]
+name = "esp8266-at"
+repository = "https://github.com/jamwaffles/esp8266-at"
+version = "0.1.0"
+edition = "2018"
+[dependencies]
+embedded-hal = "0.2.2"
+heapless = "0.4.2"
+
+[dev-dependencies]
+cortex-m = "0.5.8"
+cortex-m-rt = "0.6.6"
+panic-itm = "0.4.0"
+
+[dev-dependencies.stm32f1xx-hal]
+version = "0.2.0"
+features = [ "rt", "stm32f103" ]

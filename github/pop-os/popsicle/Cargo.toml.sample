@@ -1,0 +1,23 @@
+[package]
+name = "popsicle"
+description = "USB Flasher"
+version = "0.1.5"
+authors = [
+    "Jeremy Soller <jeremy@system76.com>",
+    "Michael Aaron Murphy <michael@system76.com>",
+]
+license = "MIT"
+readme = "README.md"
+edition = "2018"
+
+[lib]
+name = "popsicle"
+path = "src/lib.rs"
+
+[workspace]
+members = ["cli", "gtk"]
+
+[dependencies]
+libc = "0.2"
+mnt = "0.3.1"
+err-derive = "0.1.5"

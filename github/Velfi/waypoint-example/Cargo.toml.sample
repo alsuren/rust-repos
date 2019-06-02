@@ -1,0 +1,14 @@
+[package]
+name = "Game Skunkworks"
+version = "0.1.0"
+authors = ["Zelda Hessler <zelda.hessler@gmail.com>"]
+
+[lib]
+name = "skunkworks"
+path = "src/lib.rs"
+
+[dependencies]
+ggez = "0.4.3"
+nalgebra = "0.14.1"
+cgmath = "0.16.1"
+rand = "*"

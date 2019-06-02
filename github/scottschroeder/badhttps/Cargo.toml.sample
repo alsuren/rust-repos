@@ -1,0 +1,8 @@
+[package]
+name = "badhttps"
+version = "0.1.0"
+authors = ["Scott Schroeder <scottschroeder@sent.com>"]
+
+[dependencies]
+native-tls = { git = "https://github.com/scottschroeder/rust-native-tls", branch = "noverify" }
+reqwest = { git = "https://github.com/scottschroeder/reqwest", branch = "noverify" }

@@ -1,0 +1,14 @@
+[package]
+name = "tictactoe-rust"
+version = "0.1.4"
+authors = ["Alex Lai <x7lai@uwaterloo.ca>"]
+edition = "2018"
+description = "Tictactoe written in rust"
+repository = "https://github.com/alexlai97/tictactoe-rust"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+clap = "2.32.0"
+rand = "0.6"
+ansi_term = "0.9"

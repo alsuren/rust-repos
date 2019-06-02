@@ -1,0 +1,12 @@
+[package]
+name = "mcskinview"
+version = "0.1.0"
+authors = ["Alexander Wauck <alex@impulse101.org>"]
+
+[dependencies]
+glium = { version = "*", features = ["glutin", "image", "nalgebra", "cgmath"] }
+image = "0.3.15"
+nalgebra = "*"
+num = "0.1.27"
+getopts = "0.2.14"
+inotify = "*"

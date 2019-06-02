@@ -1,0 +1,9 @@
+[package]
+name = "pdb"
+version = "0.1.0"
+authors = ["Kenya Nara <penta2himajin@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2"
+nix = "0.13.0"

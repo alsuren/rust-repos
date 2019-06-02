@@ -1,0 +1,18 @@
+[package]
+name = "hsme"
+version = "0.1.0"
+authors = ["Kai Schmidt <kaikaliischmidt@gmail.com>"]
+
+[lib]
+name = "hsm"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hsm"
+path = "src/main.rs"
+
+[dependencies]
+rand = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"

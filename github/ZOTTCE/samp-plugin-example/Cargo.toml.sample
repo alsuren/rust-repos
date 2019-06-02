@@ -1,0 +1,12 @@
+[package]
+name = "samp-plugin"
+version = "0.1.0"
+authors = ["ZOTTCE <zottce@gmail.com>"]
+
+[lib]
+name = "plugin"
+crate-type = ["dylib"]
+
+[dependencies]
+samp-sdk = "0.8.1"
+memcache = "0.7"

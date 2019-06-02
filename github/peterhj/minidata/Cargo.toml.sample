@@ -1,0 +1,24 @@
+[package]
+name = "minidata"
+version = "0.0.1"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[features]
+mpi = ["mpich"]
+
+[lib]
+name = "minidata"
+path = "src/lib.rs"
+
+[dependencies]
+arrayidx = { path = "../arrayidx" }
+byteorder = "*"
+colorimage = { path = "../colorimage" }
+extar = { path = "../extar" }
+lmdb = "*"
+memarray = { path = "../memarray" }
+mpich = { path = "../libmpich", optional = true }
+rand = "^0.5"
+sharedmem = { path = "../sharedmem" }
+string_cache = "*"
+time = "*"

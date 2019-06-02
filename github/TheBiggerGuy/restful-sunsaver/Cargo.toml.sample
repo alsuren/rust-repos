@@ -1,0 +1,31 @@
+[package]
+name = "restful-sunsaver"
+version = "0.1.0"
+authors = ["Guy Taylor <thebigguy.co.uk@gmail.com>"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "TheBiggerGuy/restful-sunsaver" }
+
+[dependencies]
+libmodbus-rs= "0.8.*"
+
+log = "0.4.*"
+env_logger = "0.6.*"
+
+actix-web = "0.7.*"
+http = "0.1"
+
+serde = "1.0.*"
+serde_derive = "1.0.*"
+serde_json = "1.0.*"
+
+clap = "2.33.*"
+retry = "0.4.*"
+hex-slice = "0.1.*"
+
+enum_primitive = "0.1.*"
+bitflags = "1.*"
+
+[dev-dependencies]
+tempdir = "0.3.*"

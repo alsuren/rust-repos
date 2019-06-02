@@ -1,0 +1,23 @@
+[package]
+name = "zas"
+version = "0.21.0"
+authors = ["Juan Ibiapina <juanibiapina@gmail.com>"]
+description = "Simple router for local web development"
+license = "MIT"
+homepage = "https://github.com/juanibiapina/zas"
+readme = "README.md"
+
+[dependencies]
+hyper = "*"
+futures = "*"
+tokio-core = "*"
+toml = "*"
+xdg = "*"
+clap = "*"
+tempdir = "*"
+
+[lib]
+doc = false
+
+[[bin]]
+name = "zas"

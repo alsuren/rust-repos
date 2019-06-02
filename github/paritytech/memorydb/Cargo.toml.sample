@@ -1,0 +1,16 @@
+[package]
+name = "memorydb"
+version = "0.1.1"
+authors = ["Parity Technologies <admin@parity.io>"]
+description = "in-memory implementation of hashdb"
+license = "GPL-3.0"
+repository = "https://github.com/paritytech/memorydb"
+
+[dependencies]
+elastic-array = "0.10"
+heapsize = "0.4"
+ethereum-types = "0.3"
+keccak-hash = "0.1.1"
+hashdb = "0.1.2"
+plain_hasher = { git="https://github.com/paritytech/parity" } # TODO: change to 0.1.1 as soon as the crate ownership is fixed
+rlp = "0.2.2"

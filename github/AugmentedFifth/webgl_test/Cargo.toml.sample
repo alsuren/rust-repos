@@ -1,0 +1,32 @@
+[package]
+name = "webgl_test"
+version = "0.1.0"
+authors = ["z"]
+
+[dependencies]
+bincode = "1.0.1"
+byteorder = { version = "1.2.4", default-features = false }
+jpeg-decoder = { version = "0.1.15", default-features = false }
+lazy_static = "1.1.0"
+nalgebra = "0.16.0"
+ncollide3d = "0.17.1"
+nphysics3d = { path = "./nphysics/build/nphysics3d" }
+pcg_rand = "0.9.1"
+png = "0.12.0"
+rand = "0.5.5"
+wasm-bindgen = "0.2.17"
+webgl_test_common = { path = "./webgl_test_common" }
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+opt-level = 3
+debug = true  # For wasm-bindgen
+rpath = false
+lto = "fat"
+debug-assertions = false
+codegen-units = 1
+panic = "abort"
+incremental = false
+overflow-checks = false

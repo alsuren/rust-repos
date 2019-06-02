@@ -1,0 +1,26 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "UTF-8 slice validation, with incomplete results to support byte streams."
+documentation = "https://docs.rs/vatfluid"
+homepage = "https://rustyhorde.github.io/vatfluid/"
+keywords = ["UTF-8", "slice", "validation"]
+license = "MIT/Apache-2.0"
+name = "vatfluid"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/vatfluid"
+version = "0.3.0"
+
+[dependencies]
+error-chain = "0.10.0"
+
+[dev-dependencies]
+assert_matches = "1.1.0"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

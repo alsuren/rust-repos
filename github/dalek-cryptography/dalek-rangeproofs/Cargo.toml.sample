@@ -1,0 +1,37 @@
+[package]
+name = "dalek-rangeproofs"
+version = "0.1.0"
+authors = ["Henry de Valence <hdevalence@hdevalence.ca>",
+           "Isis Agora Lovecruft <isis@patternsinthevoid.net>"]
+readme = "README.md"
+license = "CC0-1.0"
+repository = "https://github.com/isislovecruft/dalek-rangeproofs"
+documentation = "https://docs.rs/dalek-rangeproofs"
+categories = ["cryptography"]
+keywords = ["cryptography", "curve25519", "zero-knowledge", "NIZK", "rangeproof"]
+description = "A pure-Rust implementation of a non-interactive zero-knowledge rangeproof scheme."
+exclude = [
+    ".gitignore"
+]
+
+[dependencies]
+sha2 = "^0.4"
+
+[dependencies.rand]
+version = "^0.3"
+
+[dependencies.serde]
+version = "1.0"
+
+[dependencies.serde_derive]
+version = "1.0"
+
+[dev-dependencies.serde_cbor]
+version = "0.6"
+
+[dependencies.curve25519-dalek]
+features = ["yolocrypto", "serde", "nightly"]
+version = "^0.8"
+
+[features]
+bench = []

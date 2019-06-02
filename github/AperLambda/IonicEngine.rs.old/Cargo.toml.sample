@@ -1,0 +1,21 @@
+[package]
+name = "ionic_engine"
+version = "1.0.0-1"
+authors = ["w67clement <w67clement@gmail.com"]
+repository = "https://github.com/AperEntertainment/ionic_engine.git"
+readme = "README.md"
+
+[dependencies]
+gl = "0.6.*"
+nalgebra = "0.9.*"
+libc = "0.2.20"
+
+[dependencies.glfw]
+git = "https://github.com/PistonDevelopers/glfw-rs.git"
+# Okay, Windows users, don't use `default-features = false`...
+# It's really stupid...
+# If the compile doesn't works, install CMake and glfw libraries on your system...
+#default-features = false
+
+[dependencies.aperutils]
+git = "https://github.com/AperEntertainment/aper-utils.git"

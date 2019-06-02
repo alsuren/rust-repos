@@ -1,0 +1,12 @@
+[package]
+name = "cmsis-dsp-sys"
+version = "0.1.0"
+authors = ["Jacob Rosenthal <jacobrosenthal@gmail.com>"]
+edition = "2018"
+links = "cmsis-dsp"
+
+[dependencies]
+cty = "0.2.0"
+
+[build-dependencies]
+bindgen = "0.49.0"

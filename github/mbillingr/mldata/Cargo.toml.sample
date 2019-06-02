@@ -1,0 +1,11 @@
+[package]
+name = "mldata"
+version = "0.1.0"
+authors = ["mbilling"]
+
+[dependencies]
+app_dirs = "1.2"
+hdf5-sys = "0.4"
+ndarray = "0.11"
+num = "0.1"
+reqwest = "0.8"

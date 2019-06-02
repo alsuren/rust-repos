@@ -1,0 +1,7 @@
+[package]
+name = "rsh"
+version = "0.1.0"
+authors = ["Andrew <andrew.frailing@promessinc.com>"]
+
+[dependencies]
+net2 = "*"

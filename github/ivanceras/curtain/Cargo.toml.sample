@@ -1,0 +1,50 @@
+[package]
+name = "curtain"
+version = "0.2.0"
+authors = ["Jovansonlee Cesar <ivanceras@gmail.com>"]
+license = "Apache-2.0"
+description = "A CRUD app for postgres"
+readme = "README.md"
+repository = "https://github.com/ivanceras/curtain"
+documentation = "https://docs.rs/curtain"
+keywords = ["crud", "database", "data", "records"]
+
+[features]
+standalone = []
+webserver = []
+default = ["webserver"]
+
+[[bin]]
+name = "iron_curtain"
+
+[dependencies]
+hyper = "0.10"
+rustc-serialize = "0.3"
+uuid = {version = "0.4", features = ["v4"]}
+iron = "0.3"
+mount = "0.1"
+router = "0.1"
+persistent = "0.1"
+rand = "0.3"
+log = "0.3"
+log4rs = {version = "0.4", features = ["yaml"]}
+env_logger = "0.3"
+unicase = "1.4"
+chrono = {version = "0.2", features = ["rustc-serialize"]}
+url = "1.2"
+
+[dependencies.inquerest]
+version = "0.2"
+#path = "../inquerest"
+
+[dependencies.rustorm]
+version = "0.7"
+#path = "../rustorm"
+features = ["postgres","uuid"]
+git = "https://github.com/ivanceras/rustorm"
+
+
+
+
+
+

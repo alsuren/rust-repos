@@ -1,0 +1,26 @@
+[package]
+name = "gdi"
+version = "0.1.0"
+authors = ["Gabriel Majeri <gabriel.majeri6@gmail.com>"]
+description = "Object-oriented wrapper around the Windows Graphics Device Interface API."
+repository = "https://github.com/GabrielMajeri/gdi-rs"
+readme = "README.md"
+keywords = ["gdi", "windows", "graphics", "gui"]
+categories = ["rendering::graphics-api", "gui", "os::windows-apis"]
+license = "Apache-2.0/MIT"
+
+exclude = [
+	# Only needed when developing.
+	".editorconfig",
+	"docs/**"
+]
+
+[badges]
+appveyor = { repository = "https://ci.appveyor.com/project/GabrielMajeri/gdi-rs" }
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["wingdi", "winuser"] }
+windows-utils = { git = "https://github.com/GabrielMajeri/windows-utils-rs" }
+
+[target.'cfg(windows)'.dev-dependencies]
+winit = "0.10"

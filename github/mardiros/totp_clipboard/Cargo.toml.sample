@@ -1,0 +1,31 @@
+[package]
+name = "totp_clipboard"
+version = "0.1.0"
+authors = ["Guillaume Gauvrit <guillaume@gauvr.it>"]
+
+readme = "README.md"
+keywords = ["totp", "systray", "application"]
+categories = ["GUI", "Authentication"]
+description = """GUI TOTP client to get totp code in two click."""
+license = "BSD-3-Clause"
+#documentation = "https://docs.rs/crate/totp_clipboard"
+homepage = "https://github.com/mardiros/totp_clipboard"
+repository = "https://github.com/mardiros/totp_clipboard"
+
+
+[[bin]]
+name = "totp-clipboard"
+path = "src/main.rs"
+
+[dependencies]
+
+log = "^0.4"
+pretty_env_logger = "^0.2"
+
+libreauth = "^0.8.0"
+clipboard = "^0.4.6"
+serde_json = "^1.0"
+libappindicator = "^0.3.0"
+
+gtk = "^0.2.0"
+gtk-sys="^0.4"

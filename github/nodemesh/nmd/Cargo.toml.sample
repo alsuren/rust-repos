@@ -1,0 +1,20 @@
+[package]
+name = "nmd"
+version = "0.1.0"
+authors = ["Jason Sommer <j@jsdir.net>"]
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+ws = "*"
+nalgebra = "*"
+protobuf = "*"
+iron = "0.3.0"
+staticfile = "0.2.0"
+mount = "0.1.0"
+
+[dependencies.zmq]
+git = "https://github.com/erickt/rust-zmq.git"
+
+[dependencies.libnm]
+path = "../libnm"

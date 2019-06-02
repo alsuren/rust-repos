@@ -1,0 +1,14 @@
+[package]
+name = "tremor"
+version = "0.1.2"
+authors = ["Dan Firth <locallycompact@gmail.com>"]
+description = "Utility library for interacting with baserock definitions"
+license = "ISC"
+homepage = "http://baserock.org"
+repository = "https://gitlab.com/baserock/tremor"
+readme = "README"
+
+[dependencies]
+serde = "0.8.8"
+serde_yaml = "0.4.0"
+serde_macros = "0.8.8"

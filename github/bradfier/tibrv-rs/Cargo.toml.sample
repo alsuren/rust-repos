@@ -1,0 +1,40 @@
+[package]
+name = "tibrv"
+version = "0.4.0"
+authors = ["Richard Bradfield <bradfier@fstab.me>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["tibrv", "rendezvous", "messaging"]
+repository = "https://github.com/bradfier/tibrv-rs"
+homepage = "https://github.com/bradfier/tibrv-rs"
+documentation = "https://bradfier.github.io/tibrv-rs/"
+description = """
+Bindings to the C library provided by TIBCO Rendezvous, a "high performance
+message oriented middleware" commonly used in the financial industry.
+"""
+categories = ["api-bindings"]
+
+[badges]
+travis-ci = { repository = "bradfier/tibrv-rs" }
+
+[dependencies]
+chrono = "0.4"
+failure = "^0.1"
+failure_derive = "^0.1"
+tibrv-sys = { version = "0.4.0", path = "tibrv-sys" }
+tokio = { version = "^0.1.3", optional = true }
+mio = { version = "0.6.14", optional = true }
+futures = { version = "0.1.18", optional = true }
+
+[features]
+tibrv_8_2 = ["tibrv-sys/tibrv_8_2"]
+tibrv_8_3 = ["tibrv_8_2", "tibrv-sys/tibrv_8_3"]
+tibrv_8_4 = ["tibrv_8_3", "tibrv-sys/tibrv_8_4"]
+async = ["tokio", "futures", "mio"]
+
+[[example]]
+name = "async_echo"
+required-features = [ "async" ]
+
+[[example]]
+name = "echo"

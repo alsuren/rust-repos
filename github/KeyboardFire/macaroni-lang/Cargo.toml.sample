@@ -1,0 +1,9 @@
+[package]
+name = "macaroni-lang"
+version = "0.0.1"
+authors = ["KeyboardFire <andy@keyboardfire.com>"]
+
+[dependencies]
+rand = "*"
+time = "*"
+getopts = "*"

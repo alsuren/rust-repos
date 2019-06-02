@@ -1,0 +1,22 @@
+[package]
+name = "veda"
+version = "0.1.0"
+authors = ["wayslog@163.com"]
+description = "Veda is a time series database in order to monitor."
+documentation = "https://docs.rs/veda"
+homepage = "https://github.com/wayslog/veda"
+repository = "https://github.com/wayslog/veda"
+readme = "README.md"
+keywords = ["time-series", "time", "database", "graph"]
+categories = ["database", "database-implementations"]
+license = "Apache-2.0/MIT"
+
+[[bin]]
+name="veda"
+path="bin/veda.rs"
+
+[lib]
+name="libveda"
+path="src/lib.rs"
+
+[dependencies]

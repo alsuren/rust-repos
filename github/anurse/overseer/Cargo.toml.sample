@@ -1,0 +1,11 @@
+[package]
+
+name = "overseer"
+version = "0.0.1"
+authors = ["anurse <andrew@andrewnurse.net>"]
+
+[lib]
+name = "overseer"
+
+[[bin]]
+name = "overseer"

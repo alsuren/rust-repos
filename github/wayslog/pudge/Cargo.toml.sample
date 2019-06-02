@@ -1,0 +1,17 @@
+[package]
+name = "pudge"
+version = "0.1.0"
+authors = ["wayslog <wayslog@163.com>"]
+
+[[bin]]
+name="pudged"
+path="bin/pudged.rs"
+
+[lib]
+name = "libpudge"
+path = "src/lib.rs"
+
+[dependencies]
+log = "0.3.6"
+env_logger = "0.4.1"
+crossbeam = "0.2.10"

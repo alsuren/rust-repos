@@ -1,0 +1,8 @@
+[package]
+name = "rust-rpg"
+version = "0.1.0"
+authors = ["Slavynskiy Pavlo <pavloslav@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+sdl2 = "0.30.0"

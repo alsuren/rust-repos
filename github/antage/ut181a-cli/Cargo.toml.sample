@@ -1,0 +1,26 @@
+[package]
+name = "ut181a-cli"
+version = "0.2.0"
+authors = ["Anton Ageev <antage@gmail.com>"]
+categories = ["hardware-support"]
+description = "Uni-T UT181A DMM remote control CLI"
+include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
+keywords = ["dmm", "ut181a"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/antage/ut181a-cli"
+
+[dependencies]
+ansi_term = "^0.10.2"
+clap = "~2.29.0"
+error-chain = "^0.11.0"
+hid = "^0.4.1"
+ut181a = "^0.2.0"
+
+[features]
+default = []
+static = ["hid/static"]
+build = ["static", "hid/build"]
+
+[badges]
+travis-ci = { repository = "antage/ut181a-cli" }

@@ -1,0 +1,18 @@
+[package]
+authors = ["Alex Burka <rust@alexburka.com>"]
+name = "bf"
+version = "0.1.0"
+build = "build.rs"
+
+license = "MIT"
+
+[features]
+profile = []
+
+[[bin]]
+name = "demo"
+path = "src/demo.rs"
+
+[build-dependencies]
+foreman = "0.4"
+

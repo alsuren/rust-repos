@@ -1,0 +1,12 @@
+[package]
+name = "cladogenesis"
+version = "0.9.27"
+authors = ["Trevor"]
+
+[dependencies]
+rand = "0.3.14"
+csv = "0.14.7"
+time = "0.1.35"
+rustc-serialize = "0.3.19"
+clap = "2.12.1"
+pbr = "0.3.1"

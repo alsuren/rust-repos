@@ -1,0 +1,9 @@
+[package]
+name = "rusty-bolt"
+version = "0.1.0"
+authors = ["Nigel Small <nigel@nigelsmall.name>"]
+
+[dependencies]
+log = "0.3.7"
+neo4j = { path = "neo4j" }
+packstream = { path = "packstream" }

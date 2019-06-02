@@ -1,0 +1,13 @@
+[package]
+name = "inied"
+version = "0.1.1"
+authors = ["Josip Medved <jmedved@jmedved.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2"
+
+[profile.release]
+lto = true
+opt-level = 3
+panic = "abort"

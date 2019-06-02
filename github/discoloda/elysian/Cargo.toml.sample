@@ -1,0 +1,17 @@
+[package]
+name = "elysian"
+version = "0.1.0"
+authors = ["Vincent Burns <discoloda@gmail.com>"]
+
+[dependencies]
+lazy_static = "0.1.*"
+winit = "0.5"
+num = "0.1"
+
+[[bin]]
+name = "break"
+path = "src/main.rs"
+
+[lib]
+name = "elysian"
+path = "src/lib.rs"

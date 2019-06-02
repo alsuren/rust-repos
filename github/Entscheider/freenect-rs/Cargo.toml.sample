@@ -1,0 +1,22 @@
+[package]
+name = "freenectrs"
+version = "0.1.0"
+authors = ["Entscheider"]
+description = "A rust wrapper for libfreenect"
+license = "Apache-2.0"
+categories = ["api-bindings"]
+repository = "https://github.com/Entscheider/freenect-rs"
+documentation = "https://docs.rs/freenectrs"
+
+[dependencies]
+libc = "0.2"
+
+[[example]]
+name="kinect_live"
+path="examples/kinect_live.rs"
+
+[dev-dependencies]
+image = "0.12"
+genmesh = "0.4"
+obj = { version = "0.5", features = ["usegenmesh"] }
+glium = "0.16"

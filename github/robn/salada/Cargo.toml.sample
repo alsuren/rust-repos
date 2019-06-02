@@ -1,0 +1,22 @@
+[package]
+name        = "salada"
+version     = "0.0.5"
+description = "JMAP server"
+license     = "MIT"
+authors     = [ "Robert Norris <robn@robn.io>" ]
+repository  = "https://github.com/robn/salada"
+
+[[bin]]
+name = "salada"
+
+[dependencies]
+hyper = "*"
+rustc-serialize = "*"
+rusqlite = "*"
+log = "*"
+time = "*"
+mime_guess = "*"
+uuid = "*"
+
+[dependencies.jmap]
+git = "https://github.com/robn/jmap-rs"

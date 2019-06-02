@@ -1,0 +1,20 @@
+[package]
+name = "rdxsort"
+version = "0.3.0"
+authors = ["Marco Neumann <marco@crepererum.net>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/crepererum/rdxsort-rs.git"
+documentation = "https://crepererum.github.io/rdxsort-rs/"
+description = "Fast Radix Sort"
+keywords = ["sort", "radix"]
+
+[dev-dependencies]
+quicksort = "1.0.0"
+rand = "0.3"
+
+[features]
+unstable = []
+
+[profile.bench]
+debug = true

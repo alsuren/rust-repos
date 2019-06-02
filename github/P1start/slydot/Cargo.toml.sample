@@ -1,0 +1,11 @@
+[package]
+name = "slydot"
+version = "0.0.0"
+authors = ["P1start"]
+
+[dependencies]
+piston = "0.10.1"
+piston_window = "0.20.0"
+piston2d-opengl_graphics = "0.11.0"
+piston2d-graphics = "0.9.0"
+vec_map = "0.3.0"

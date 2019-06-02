@@ -1,0 +1,11 @@
+[package]
+name = "aa"
+version = "0.1.0"
+authors = ["Evgeny Rozaliev <rozaliev@gmail.com>"]
+
+[dependencies]
+mio = "*"
+log = "*"
+env_logger = "*"
+clap = {version = "2", features = ["yaml"]}
+httparse = "*"

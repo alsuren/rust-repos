@@ -1,0 +1,15 @@
+[package]
+name = "norx-rust"
+version = "0.0.0"
+authors = []
+
+[lib]
+name = "norx"
+path = "norx.rs"
+
+[[bin]]
+name = "example"
+path = "example.rs"
+
+[dependencies]
+num = ">= 0.1.22"

@@ -1,0 +1,13 @@
+[package]
+name = "kdftool"
+version = "0.1.0"
+authors = ["Alexey Karakulov <ankarakulov@gmail.com>"]
+
+[dependencies]
+rust-crypto = "0.2"
+regex = "1.0"
+clap = "2.31"
+bip39 = "0.5"
+base64 = "0.9"
+secp256k1 = "0.9"
+bitcoin = "0.13"

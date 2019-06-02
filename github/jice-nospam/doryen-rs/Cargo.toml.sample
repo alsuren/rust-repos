@@ -1,0 +1,22 @@
+[package]
+name = "doryen-rs"
+version = "1.0.1"
+authors = ["jice <jice.nospam@gmail.com>"]
+description = "Pure rust OpenGL accelerated roguelike console API with native/wasm support"
+license = "MIT"
+documentation = "https://docs.rs/doryen-rs"
+repository = "https://github.com/jice-nospam/doryen-rs"
+keywords = ["roguelike", "console", "opengl", "wasm"]
+
+[workspace]
+
+[dependencies]
+uni-gl = "0.1.*"
+uni-app = "0.1.*"
+
+[dependencies.image]
+version = "0.19.0"
+default-features = false
+features = ["png_codec"]
+
+[features]

@@ -1,0 +1,36 @@
+[package]
+name = "s3lsio"
+version = "0.1.22"
+authors = ["Chris Jones"]
+license = "Apache-2.0"
+readme = "README.md"
+keywords = ["aws", "s3"]
+repository = "https://github.com/lambdastackio/s3lsio"
+homepage = "http://www.lambdastack.io/s3lsio"
+documentation = "https://lambdastackio.github.io/s3lsio/s3lsio"
+description = """
+S3lsio is a command line utility for AWS S3 operations. It support V2 and V4 signatures. It also does benchmarking for S3.
+It can be used in scripts, called from other apps, cron etc. It's driven by JSON and can return data in JSON. It can also
+be used to keep buckets in sync. It also performs Ceph RGW Admin features for those familiar with Ceph.
+Install: [Cargo install s3lsio] OR download at http://www.lambdastack.io/s3lsio
+For help just run the cli: [s3lsio -h]
+"""
+
+[features]
+nightly = []
+
+[dependencies]
+lsio = "0.1"
+aws-sdk-rust = "0.1"
+clap = "2"
+url = "1"
+env_logger = "0.3"
+term = "0.4"
+rustc-serialize = "0.3"
+pbr = "1.0.0-alpha.1"
+toml = "0.2"
+md5 = "0.2"
+time = "0.1"
+chrono = "0.2"
+rand = "0.3"
+#clippy = "0.0"

@@ -1,0 +1,11 @@
+[package]
+name = "envpopulate"
+version = "0.1.0"
+authors = ["Nikita Nefedov <inefedor@gmail.com>"]
+edition = "2018"
+description = "Populates your .env file from .env.dist"
+license = "MIT"
+
+[dependencies]
+text_io = "0.1.7"
+clap = "2.32.0"

@@ -1,0 +1,9 @@
+[package]
+name = "etherscan"
+version = "0.1.0"
+authors = ["destecx"]
+
+[dependencies]
+reqwest = "0.8"
+serde = "1.0"
+serde_json = "1.0"

@@ -1,0 +1,15 @@
+[package]
+name = "randoom"
+version = "0.2.0"
+authors = ["bencelaszlo <bencelaszlo@protonmail.com>"]
+
+[dependencies.clap]
+version = "2.32.0"
+default-features = false
+features = ["suggestions", "color", "wrap_help"]
+
+[dependencies.rand]
+version = "0.6.5"
+
+[dependencies.colored]
+version = "1.7.0"

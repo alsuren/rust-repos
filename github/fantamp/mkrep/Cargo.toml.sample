@@ -1,0 +1,11 @@
+[package]
+name = "mkrep"
+version = "0.1.0"
+authors = ["Andrey Mescheryakov <fant.amp@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+calamine = "0.15.3"
+chrono = "0.4"
+clap = "2.32"
+htmlescape = "0.3.1"

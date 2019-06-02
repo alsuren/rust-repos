@@ -1,0 +1,10 @@
+[package]
+name = "game_of_life"
+version = "0.1.2"
+authors = ["smeag0l <dan.needham@protonmail.com>"]
+
+edition = "2018"
+
+[dependencies]
+termion = "*"
+rand = "*"

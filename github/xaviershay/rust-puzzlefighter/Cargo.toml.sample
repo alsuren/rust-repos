@@ -1,0 +1,35 @@
+[package]
+name = "puzzlefighter"
+version = "0.1.0"
+authors = ["Xavier Shay <xavier@rhnh.net>"]
+
+[[test]]
+name = "tests"
+
+[features]
+animation_test = []
+
+[dependencies]
+piston = "*"
+piston_window = "*"
+pistoncore-sdl2_window = "*"
+piston2d-graphics = "*"
+# piston2d-sprite = "*"
+find_folder = "*"
+gfx = "*"
+gfx_device_gl = "*"
+piston-gfx_texture = "*"
+uuid = "*"
+piston-ai_behavior = "*"
+rand = "*"
+bitflags = "*"
+
+[dependencies.piston2d-sprite]
+git = "https://github.com/PistonDevelopers/sprite"
+
+[[example]]
+name = "generate_tiles"
+path = "examples/generate_tiles.rs"
+
+[dev_dependencies]
+tempdir = "0.3"

@@ -1,0 +1,25 @@
+[package]
+name = "hydra"
+version = "0.1.0"
+authors = ["Joe Wilm <joe@jwilm.com>"]
+description = "Squatting"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+mio = "0.5"
+openssl = { version = "0.7.9", optional = true }
+hyper = { version = "0.8", default-features = false }
+log = "*"
+httparse = "*"
+
+[dependencies.solicit]
+# version = "0.4"
+# path = "../solicit"
+git = "https://github.com/jwilm/solicit"
+rev = "62a60dbc3c7a4a7de057870c3b33cfa08e1b77df"
+
+[features]
+tls = ["openssl"]
+
+[dev-dependencies]
+env_logger = "*"

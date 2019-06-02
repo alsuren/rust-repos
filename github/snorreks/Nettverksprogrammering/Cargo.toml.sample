@@ -1,0 +1,10 @@
+[package]
+name = "nettverksprogrammering"
+version = "0.1.0"
+authors = ["Snorre Strand <snorrestrand@hotmail.com>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.2.0"
+diesel = { version = "1.0.0", features = ["postgres"] }
+dotenv = "0.9.0"

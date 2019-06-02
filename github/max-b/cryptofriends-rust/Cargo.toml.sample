@@ -1,0 +1,27 @@
+[package]
+name = "cryptofriends"
+version = "0.1.0"
+authors = ["Maxb <maxb.personal@gmail.com>"]
+
+[dependencies]
+base64 = "0.8.0"
+itertools = "0.7.4"
+rust-crypto = { git = "https://github.com/max-b/rust-crypto", branch = "sha1-public" }
+rand = "0.5.4"
+byteorder = "1.2.3"
+hyper = "0.12"
+url = "1.7.1"
+reqwest = "0.8.6"
+num-traits = "0.2"
+num-integer = "0.1.39"
+digest = "0.8.0"
+rayon = "1.0"
+md4 = { git = "https://github.com/max-b/cryptopals-md4" }
+
+[dependencies.num-bigint]
+version = "0.2"
+features = ["rand"]
+
+[dependencies.openssl]
+git = "https://github.com/max-b/rust-openssl.git"
+branch = "from-u32"

@@ -1,0 +1,14 @@
+[package]
+name = "physics_proj"
+version = "0.0.1"
+authors = ["tcreeds <tcreeds@gmail.com>"]
+
+[dependencies]
+glium = "*"
+glutin = "*"
+
+[dependencies.nalgebra]
+git = "https://github.com/sebcrozet/nalgebra"
+
+[dependencies.itertools]
+git = "https://github.com/bluss/rust-itertools"

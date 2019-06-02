@@ -1,0 +1,18 @@
+[package]
+name = "workbench"
+version = "0.1.0"
+authors = [
+    "Sam Sartor <ssartor@mines.edu>",
+]
+
+[dependencies]
+flight = { git="https://github.com/flight-rs/flight" }
+clap = "*"
+simplelog = "*"
+glutin = "*"
+gfx_window_glutin = "*"
+gfx_device_gl = "*"
+nalgebra = "*"
+gfx = "*"
+log = "*"
+ncollide = "*"

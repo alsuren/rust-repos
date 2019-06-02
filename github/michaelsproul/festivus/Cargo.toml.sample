@@ -1,0 +1,23 @@
+[package]
+name = "festivus"
+version = "0.1.0"
+authors = ["Michael Sproul <micsproul@gmail.com>"]
+
+[dependencies]
+
+iron = "0.2"
+router = "*"
+urlencoded = "*"
+r2d2 = "*"
+r2d2_postgres = "*"
+chrono = "0.2"
+rustc-serialize = "0.3"
+plugin = "*"
+typemap = "*"
+
+[dependencies.postgres]
+version = "*"
+features = ["chrono"]
+
+[dependencies.iron-postgres-middleware]
+git = "https://github.com/martinsp/iron-postgres-middleware.git"

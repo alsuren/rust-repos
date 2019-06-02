@@ -1,0 +1,19 @@
+[package]
+name = "czml"
+version = "0.0.1"
+authors = ["Quentin Baradat"]
+
+description = "This crate provides CZML content writing tools for use with Cesium"
+repository = "https://github.com/quentinbaradat/czml-rs"
+readme = "README.md"
+keywords = ["czml", "json", "cesium"]
+license = "MIT/Apache-2.0"
+
+[lib]
+name = "czml"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

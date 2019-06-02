@@ -1,0 +1,18 @@
+[package]
+name = "cloud-persistent-storage"
+version = "0.1.0"
+authors = ["Mathieu Fenniak <mathieu@fenniak.net>"]
+
+[dependencies]
+rusoto = {version = "0.23", features = ["ec2"]}
+log = "*"
+env_logger = "*"
+aws_instance_metadata = "0.1"
+chrono = "0.2"
+serde = "0.9"
+serde_derive = "0.9"
+serde_yaml = "0.6"
+getopts = "0.2.4"
+
+[dev-dependencies]
+hyper = "0.10"

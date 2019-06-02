@@ -1,0 +1,50 @@
+[package]
+authors = ["Konstantin Stepanov <me@kstep.me>"]
+build = "build.rs"
+description = "Systemd generator for crontab files support"
+keywords = ["cron", "crontab", "systemd", "generator"]
+license = "MIT"
+name = "systemd-crontab-generator"
+readme = "README.md"
+repository = "https://github.com/systemd-cron/systemd-cron-next"
+version = "1.0.2"
+
+[build-dependencies]
+handlebars = "0.12.0"
+rustc-serialize = "0.3.20"
+
+[dependencies]
+cronparse = "0.5.0"
+docopt = "0.6.78"
+glob = "0.2.10"
+kernlog = "0.2.1"
+libc = "0.2.2"
+log = "0.3.4"
+md5 = "0.1.1"
+pgs-files = "0.0.6"
+rustc-serialize = "0.3.20"
+tempfile = "1.1.3"
+time = "0.1.34"
+users = "0.5.1"
+
+[features]
+persistent = []
+randomized-delay = []
+sched-boot = []
+sched-daily = []
+sched-hourly = []
+sched-minutely = []
+sched-monthly = []
+sched-quarterly = []
+sched-semi-annually = []
+sched-weekly = []
+sched-yearly = []
+
+[profile]
+
+[profile.release]
+codegen-units = 1
+debug = false
+debug-assertions = false
+lto = true
+opt-level = 3

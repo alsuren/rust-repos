@@ -1,0 +1,31 @@
+[package]
+authors = ["Eirik Albrigtsen <sszynrae@gmail.com>"]
+name = "volf"
+version = "0.0.0"
+
+[[bin]]
+doc = false
+name = "volf"
+path = "src/main.rs"
+
+[dependencies]
+clap = "*"
+env_logger = "*"
+hubcaps = "0.3.0"
+hyper = "*"
+hyper-native-tls = "0.2.2"
+log = "*"
+serde = "0.9.11"
+serde_derive = "0.9.11"
+serde_json = "0.9.9"
+
+[dependencies.github-rs]
+path = "../github-rs"
+
+[lib]
+name = "volf"
+path = "src/lib.rs"
+
+[[test]]
+harness = false
+name = "testmain"

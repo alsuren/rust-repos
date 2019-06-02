@@ -1,0 +1,23 @@
+[package]
+
+name = "ggj2016"
+version = "0.1.0"
+authors = [
+    "Sven-Hendrik Haase <svenstaro@gmail.com>",
+    "Rafael Epplée <raffomania@gmail.com>",
+]
+
+[[bin]]
+name = "ggj2016"
+
+[dependencies]
+piston = "0.17.0"
+piston2d-graphics = "0.13.1"
+piston2d-opengl_graphics = "0.23.0"
+piston_window = "0.34.0"
+piston-ai_behavior = "0.11.0"
+
+time = "0.1.34"
+rand = "0.3.13"
+
+cgmath = "0.7.0"

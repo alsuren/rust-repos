@@ -1,0 +1,9 @@
+[package]
+name = "Web"
+version = "0.1.0"
+authors = ["ubuntu"]
+edition = "2018"
+
+[dependencies]
+Lumi = { git = "https://github.com/Sabanadesan/lumi" }
+LumiLearn = { git = "https://github.com/Sabanadesan/lumilearn" }

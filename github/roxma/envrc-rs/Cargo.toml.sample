@@ -1,0 +1,15 @@
+[package]
+name = "envrc"
+version = "0.5.0"
+authors = ["roxma <roxma@qq.com>"]
+license = "MIT"
+repository = "https://github.com/roxma/envrc-rs"
+description = "Auto source bash .envrc of your workspace"
+
+
+[[bin]]
+name = "envrc"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2"

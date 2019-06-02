@@ -1,0 +1,37 @@
+[package]
+name = "sos2"
+version = "0.1.0"
+authors = ["Sian Cao <yinshuiboy@gmail.com"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0.*"
+multiboot2 = { git = "https://github.com/sonald/multiboot2-elf64" }
+spin = "0.4.*"
+bitflags = "0.8.*"
+bit_field = "0.7.*"
+x86_64 = "0.1.*"
+
+[dependencies.kheap_allocator]
+path = "./libs/kheap_allocator"
+
+[dependencies.lazy_static]
+version = "0.2.*"
+features = ["spin_no_std"]
+
+# The development profile, used for `cargo build`.
+[profile.dev]
+panic = "abort"
+
+# The release profile, used for `cargo build --release`.
+[profile.release]
+panic = "abort"
+
+[features]
+# no features by default
+default = []
+
+test = []
+kdebug = []

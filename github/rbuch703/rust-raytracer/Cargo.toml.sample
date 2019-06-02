@@ -1,0 +1,8 @@
+[package]
+name = "rust-raytracer"
+version = "0.1.0"
+authors = ["rbuchhol"]
+
+[dependencies]
+png= ">=0.13"
+rand= ">0.4.0"

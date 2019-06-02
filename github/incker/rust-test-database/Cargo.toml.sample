@@ -1,0 +1,17 @@
+[package]
+name = "event_log_store"
+version = "0.1.0"
+authors = ["incker <sagan.stanislav@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+fs2 = "0.4.3"
+
+[dev-dependencies]
+criterion = "0.2.10"
+rocksdb = "0.11.0"
+rand = "0.6.5"
+
+[[bench]]
+name = "store_bench"
+harness = false

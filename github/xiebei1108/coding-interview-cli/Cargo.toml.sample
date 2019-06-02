@@ -1,0 +1,23 @@
+[package]
+name = "cinterview"
+version = "0.1.0"
+authors = ["mutexlock <xiebei1108@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+dirs = "1.0.4"
+docopt = "1.0.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0.38"                      # A JSON serialization file format
+indicatif = "0.11"
+reqwest = "0.9.9"                # higher level HTTP client library
+scraper = "0.9.1"                  # HTML parsing and querying with CSS selectors
+select = "0.4.2"   
+termion = "1.5.1"
+lazy_static = "1.2.0"            # A macro for declaring lazily evaluated statics in Rust.
+regex = "1.1.0"         
+console = "0.7.5"                        # A terminal and console abstraction for Rust
+rayon = "1.0.3"               # Simple work-stealing parallelism for Rust
+fantoccini = "0.11.6"          # High-level API for programmatically interacting with web pages through WebDriver.
+futures = "0.1.25"                # An implementation of futures and streams featuring zero allocations, composability, and itera…

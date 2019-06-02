@@ -1,0 +1,17 @@
+[package]
+name = "loopdev"
+description = "Setup and control loop devices"
+version = "0.2.1"
+authors = ["Michael Daffin <michael@daffin.io>"]
+license = "MIT"
+documentation = "https://docs.rs/loopdev"
+repository = "https://github.com/mdaffin/loopdev"
+readme = "README.md"
+keywords = ["loop", "losetup"]
+
+[badges]
+travis-ci = { repository = "serde-rs/serde" }
+
+[dependencies]
+errno = "0.2"
+libc = "0.2"

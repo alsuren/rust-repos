@@ -1,0 +1,13 @@
+[package]
+name = "trdl"
+version = "0.1.0"
+authors = ["JeremySorensen <jeremy.a.sorensen@gmail.com>"]
+
+[dependencies]
+gl = "*"
+libc = "*"
+
+[lib]
+name = "trdl"
+path = "src/lib.rs"
+

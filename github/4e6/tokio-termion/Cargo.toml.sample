@@ -1,0 +1,7 @@
+[package]
+name = "tokio-termion"
+version = "0.1.0"
+authors = ["Dmitry Bushev <bushevdv@gmail.com>"]
+
+[dependencies]
+termion = { git = "https://github.com/4e6/termion", branch = "tokio-termion" }

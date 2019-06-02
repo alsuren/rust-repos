@@ -1,0 +1,14 @@
+[package]
+name = "cargo-c"
+version = "0.1.0"
+authors = ["Luca Barbato <lu_zero@gentoo.org>"]
+description = "Helper program to build and install c-like libraries"
+license = "MIT"
+edition = "2018"
+readme = "README.md"
+
+[dependencies]
+cargo_metadata = "0.7"
+structopt = "0.2"
+regex = "1"
+cbindgen = "0.8.7"

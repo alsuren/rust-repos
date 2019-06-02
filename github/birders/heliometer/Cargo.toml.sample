@@ -1,0 +1,34 @@
+[package]
+name = "heliometer"
+version = "0.5.10"
+description = "A basic Brainfuck interpreter"
+authors = [ "LEARAX57H <willculhane3@gmail.com>",
+            "vpzomtrrfrt <eric@gloriouswill.com>" ]
+
+keywords = ["bf", "brainfuck"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/birders/heliometer"
+documentation = "https://birders.github.io/heliometer/master/heliometer/"
+
+[badges]
+travis-ci = { repository = "birders/heliometer" }
+coveralls = { repository = "birders/heliometer" }
+
+[lib]
+name = "heliometer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "helio"
+path = "src/main.rs"
+
+[[bench]]
+name = "algorithms"
+harness = false
+
+[dependencies]
+
+[dev-dependencies]
+assert_cli = "0.5.4"
+criterion = "0.2.3"

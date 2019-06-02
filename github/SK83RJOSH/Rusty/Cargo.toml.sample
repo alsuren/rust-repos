@@ -1,0 +1,8 @@
+[package]
+authors = ["SK83RJOSH <sk83rjosh83@yahoo.com>"]
+name = "irc_bot"
+version = "0.1.0"
+
+[dependencies.irc]
+default-features = false
+version = "*"

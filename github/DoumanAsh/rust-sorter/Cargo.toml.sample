@@ -1,0 +1,12 @@
+[package]
+name = "sorter"
+version = "0.4.0"
+authors = ["Douman <custparasite@gmx.se>"]
+license = "MIT"
+repository = "https://github.com/DoumanAsh/rust-sorter"
+description = "Simple rust implementation of all existing sorts"
+
+[lib]
+name = "sorter"
+path = "src/lib.rs"
+test = false

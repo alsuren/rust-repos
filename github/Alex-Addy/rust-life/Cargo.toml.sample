@@ -1,0 +1,9 @@
+[package]
+name = "gameoflife"
+version = "0.1.0"
+authors = ["Alex Addy <alex.addy@gmail.com>"]
+
+[dependencies]
+termion = "1.1.4"
+rand = "0.3"
+clap = "2.20.5"

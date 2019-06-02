@@ -1,0 +1,15 @@
+[package]
+name = "NEAT-Pong"
+version = "0.1.0"
+authors = ["loovjo <jonathan.loov@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+sdl2 = "0.31"
+ytesrev = "0.2.4"
+lazy_static = "1.2"
+rand = "0.5"
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"
+palette = "0.4"

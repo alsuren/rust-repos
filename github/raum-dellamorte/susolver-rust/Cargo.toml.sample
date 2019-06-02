@@ -1,0 +1,8 @@
+[package]
+name = "susolver-rust"
+version = "0.1.0"
+authors = ["Raum Dellamorte <elementalsin@gmail.com>"]
+
+[dependencies]
+num = "0.1"
+linked_hash_set = "0.1.3"

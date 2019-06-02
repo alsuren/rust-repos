@@ -1,0 +1,19 @@
+[package]
+name = "Mordred"
+version = "0.1.0"
+authors = ["palloc <palloc.mknet10@gmail.com>"]
+
+[dependencies]
+iron = "*"
+rustc-serialize = "*"
+router = "*"
+postgres = "*"
+iron-sessionstorage = "0.6.6"
+urlencoded = "0.5.0"
+mime = "*"
+csv = "*"
+serde_json = "*"
+serde = "*"
+serde_derive = "*"
+bodyparser = "*"
+persistent = "*"

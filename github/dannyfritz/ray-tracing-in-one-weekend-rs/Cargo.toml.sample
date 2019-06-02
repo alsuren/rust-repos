@@ -1,0 +1,18 @@
+[package]
+name = "ray-tracing-in-one-weekend-rs"
+version = "0.1.0"
+authors = ["Danny Fritz <dannyfritz@gmail.com>"]
+
+[dependencies]
+rand = "0.5.3"
+ncollide3d = "0.16.2"
+nalgebra = "0.15.3"
+rayon = "1.0"
+
+[dependencies.image]
+version = "0.19.0"
+default-features = false
+features = ["png_codec"]
+
+[features]
+default = []

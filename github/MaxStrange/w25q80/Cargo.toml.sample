@@ -1,0 +1,9 @@
+[package]
+name = "w25q80"
+version = "0.1.0"
+authors = ["Max Strange <maxfieldstrange@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+embedded-hal = "0.2.2"
+noio = { git = "https://github.com/MaxStrange/noio" }

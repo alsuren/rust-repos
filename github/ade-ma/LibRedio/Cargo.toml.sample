@@ -1,0 +1,48 @@
+[package]
+name = "libredio"
+version = "0.0.3"
+authors = ["Ian Daniher <itdaniher@gmail.com>"]
+
+[dependencies.time]
+
+#[dependencies.usb]
+#git = "https://github.com/kevinmehall/rust-usb"
+
+[dependencies.toml]
+git = "https://github.com/alexcrichton/toml-rs"
+
+[dependencies.num]
+git = "https://github.com/rust-lang/num"
+
+[dependencies.bitfount]
+path = "src/bitfount"
+
+[dependencies.dsputils]
+path = "src/dsputils"
+
+[dependencies.kissfft]
+path = "src/kissfft"
+
+[dependencies.kpn]
+path = "src/kpn"
+
+#[dependencies.oblw]
+#path = "src/oblw"
+
+[dependencies.pasimple]
+path = "src/pasimple"
+
+[dependencies.rtlsdr]
+path = "src/rtlsdr"
+
+[dependencies.samplerate]
+path = "src/samplerate"
+
+[dependencies.vidsink]
+path = "src/vidsink"
+
+#[dependencies.wavio]
+#path = "src/wavio"
+
+[[bin]]
+name = "ratpak"

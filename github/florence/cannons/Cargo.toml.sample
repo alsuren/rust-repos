@@ -1,0 +1,11 @@
+[package]
+name = "cannons"
+version = "0.1.0"
+authors = ["Spencer Florence <spencer@florence.io>"]
+
+[dependencies]
+piston_window = "0.69.1"
+piston = "0.32.0"
+piston2d-graphics = "0.21.0"
+piston-float = "0.3.0"
+vecmath = "0.3.0"

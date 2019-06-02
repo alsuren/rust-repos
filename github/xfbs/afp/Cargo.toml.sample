@@ -1,0 +1,22 @@
+[package]
+name = "afp"
+version = "0.1.0"
+authors = ["Patrick Elsen <pelsen@xfbs.net>"]
+edition = "2018"
+repository = "https://github.com/xfbs/afp"
+description = "Ein kleines Tool, um für die Amateurfunkprüfung zu lernen."
+
+[dependencies]
+gio = "^0"
+gdk = "^0"
+glib = "^0"
+cairo-rs = "^0"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+rand = "0.6"
+permutation = "0.2"
+directories = "2.0.1"
+
+[dependencies.gtk]
+version = "0.6.0"
+features = ["v3_16"]

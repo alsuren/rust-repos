@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "node",
+    "executor",
+    "client",
+    "exowasm-std",
+]
+exclude = [
+    "cryptocurrency",
+]

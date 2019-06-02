@@ -1,0 +1,24 @@
+[package]
+name = "uavcan_s32k"
+version = "0.0.1"
+authors = ["Kjetil Kjeka <kjetilkjeka@gmail.com>"]
+description = "Template for getting started with development on the NXP s32k144evb evaluation board"
+keywords = ["arm", "cortex-m", "s32k144", "template"]
+categories = ["embedded", "no-std", "hardware-support"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/kjetilkjeka/s32k144evb.rs"
+
+[dependencies]
+s32k144 = "0.6.1"
+s32k144evb = {default-features = false, git = "https://github.com/kjetilkjeka/s32k144evb.rs.git"}
+embedded_types = "0.3.1"
+cortex-m = "0.3.1"
+
+[dependencies.uavcan]
+git = "https://github.com/UAVCAN/uavcan.rs.git"
+default-features = false
+
+[dev-dependencies]
+dsdl = {git = "https://github.com/UAVCAN/uavcan.rs.git"}
+s32k144evb = {default-features = true, git = "https://github.com/kjetilkjeka/s32k144evb.rs.git"}
+alloc-cortex-m = "0.3.1"

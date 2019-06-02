@@ -1,0 +1,10 @@
+[package]
+name = "rusty_euler"
+version = "0.1.0"
+authors = ["tron"]
+
+[dependencies]
+rand="0.3.0"
+bit-vec = "0.4.3"
+log = "0.3"
+num = "0.1.37"

@@ -1,0 +1,14 @@
+[package]
+name = "meow"
+version = "0.1.0"
+authors = ["tigercosmos <phy.tiger@gmail.com>"]
+
+[dependencies]
+imageproc = "0.18.0"
+rusttype = "0.7.5"
+image = "0.21.0"
+serde_json = "*"
+serde = "*"
+rand = "*"
+serde_derive = "*"
+clap = {version = "~2.32.0", features = ["yaml"]}

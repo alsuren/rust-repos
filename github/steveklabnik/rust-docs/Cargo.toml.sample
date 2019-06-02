@@ -1,0 +1,11 @@
+[package]
+authors = ["Steve Klabnik <steve@steveklabnik.com>"]
+name = "rust-docs"
+version = "0.1.0"
+
+[dependencies]
+dotenv = "0.9.0"
+futures = "0.1.11"
+
+[dependencies.sparkles]
+git = "https://github.com/steveklabnik/sparkles"

@@ -1,0 +1,15 @@
+[package]
+authors = ["Brad Gibson <b2b@humanenginuity.com>"]
+name = "atoi"
+version = "0.1.0"
+
+[dependencies]
+
+[profile.release]
+codegen-units = 1
+debug = true
+debug-assertions = false
+lto = true
+opt-level = 3
+panic = "unwind"
+rpath = false

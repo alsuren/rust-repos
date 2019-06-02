@@ -1,0 +1,18 @@
+[package]
+name = "kaffeesahne"
+version = "0.1.0"
+authors = ["Moritz Ulrich <moritz@tarn-vedra.de>"]
+
+[[bin]]
+name = "kaffeesahne"
+doc = false
+
+[dependencies]
+glium = "*"
+nalgebra = "*"
+tobj = "*"
+image = "*"
+newtype_derive = "*"
+custom_derive = "*"
+bitflags = "*"
+alga = "*"

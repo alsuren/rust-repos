@@ -1,0 +1,16 @@
+[package]
+name = "loft"
+version = "0.1.0"
+authors = ["AmiliaM <amiliamac@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "*"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+websocket = "*"
+futures = "0.1"
+failure = "*"
+tokio = "*"
+xirc = { path = "../xirc" }

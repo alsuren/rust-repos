@@ -1,0 +1,9 @@
+[package]
+name = "hangman"
+version = "0.1.0"
+authors = ["Andrew Radev <andrey.radev@gmail.com>"]
+
+[dependencies]
+rand = "*"
+structopt = "*"
+structopt-derive = "*"

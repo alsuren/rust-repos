@@ -1,0 +1,15 @@
+[package]
+name = "syncjack2"
+version = "0.1.0"
+authors = ["OneMoreRocks <contact@onemore.rocks>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.2.0"
+svg = "0.5"
+wasm-bindgen = "0.2"
+
+[lib]
+name = "syncjack2lib"
+path = "src/lib.rs"
+#crate-type = ["cdylib"]

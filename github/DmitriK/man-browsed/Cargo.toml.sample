@@ -1,0 +1,15 @@
+[package]
+name = "man-browsed"
+version = "0.2.0"
+authors = ["Dmitri Kourennyi <dkour@mykolab.com>"]
+license = "GPLv3"
+
+[dependencies]
+clap  = "^2.20"
+iron = "^0.5"
+mime = "^0.2"
+regex = "^0.2"
+router = "^0.5"
+
+[profile.release]
+lto = true

@@ -1,0 +1,35 @@
+[package]
+name = "piston-cube"
+version = "0.1.0"
+authors = ["gguai <guaitolinigabriel@gmail.com>"]
+
+[[bin]]
+name = "piston-cube"
+
+[[bin]]
+name = "cube"
+path = "src/main-cube.rs"
+
+[[bin]]
+name = "gabs-game"
+path = "src/main-game.rs"
+
+[[bin]]
+name = "noise"
+path = "src/main-noise.rs"
+
+
+[dependencies]
+tcod = { version = "0.11", features = ["serialization"] }
+camera_controllers = "0.23.0"
+shader_version = "0.3.0"
+gfx = "0.17.1"
+gfx_device_gl = "0.15.0"
+piston = "0.35.0"
+piston_window = "0.76.0"
+piston2d-graphics = "0.25.0"
+pistoncore-glutin_window = "0.44.0"
+piston2d-opengl_graphics = "0.51.0"
+vecmath = "0.3.0"
+rand = "*"
+worldgen = "0.4.0"

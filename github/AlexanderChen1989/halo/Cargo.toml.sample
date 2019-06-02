@@ -1,0 +1,16 @@
+[package]
+name = "halo"
+version = "0.1.0"
+authors = ["Alex Chen <alexanderchenmh@gmail.com>"]
+description = "elm inspired state manager in rust"
+repository = "https://github.com/AlexanderChen1989/halo"
+readme = "./README.md"
+keywords = ["state", "immutable", "elm", "redux"]
+license = "MIT"
+
+[lib]
+name = "halo"
+
+[[example]]
+name = "counter"
+path = "examples/counter/main.rs"

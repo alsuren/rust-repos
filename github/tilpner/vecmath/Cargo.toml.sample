@@ -1,0 +1,8 @@
+[package]
+name = "vecmath"
+version = "0.0.1"
+authors = ["Till Hoeppner <hoeppner.till@gmail.com>"]
+
+[lib]
+name = "vecmath"
+path = "src/lib.rs"

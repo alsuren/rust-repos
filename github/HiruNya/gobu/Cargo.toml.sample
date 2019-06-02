@@ -1,0 +1,19 @@
+[package]
+name = "gobu"
+version = "0.2.0"
+authors = ["Hiruna Jayamanne <hirunav2@gmail.com>"]
+
+[dependencies]
+piston_window = { version = "*" }
+nom = "4"
+serde = "1"
+serde_derive = "1"
+toml = "0.4"
+indexmap = "1"
+rodio = "0.8"
+gfx_device_gl = "*"
+coord = { version = "0.11", features = ["serialize"] }
+gfx_glyph = { version = "0.12", optional = true }
+
+[features]
+gfx_glyph_text = ["gfx_glyph"]

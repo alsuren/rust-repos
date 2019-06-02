@@ -1,0 +1,12 @@
+[package]
+name = "rust-sprite-sheet-packer"
+license = "MIT"
+version = "0.1.0"
+authors = ["Maxim Maslennikov <q.leklee@gmail.com>"]
+
+[lib]
+name = "packer"
+crate-type = ["rlib"]
+
+[dependencies]
+image = "*"

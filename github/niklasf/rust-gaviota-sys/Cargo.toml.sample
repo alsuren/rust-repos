@@ -1,0 +1,18 @@
+[package]
+name = "gaviota-sys"
+version = "0.1.8" # remember to update html_root_url
+description = "Low level bindings for libgtb, a library for Gaviota tablebase probing"
+repository = "https://github.com/niklasf/rust-gaviota-sys"
+readme = "README.md"
+license = "MIT AND Zlib"
+authors = ["Niklas Fiekas <niklas.fiekas@backscattering.de>"]
+categories = ["external-ffi-bindings", "games"]
+keywords = ["chess", "gaviota", "tablebase"]
+exclude = ["tables/**/*.cp4"]
+
+[build-dependencies]
+bindgen = "0.49"
+cc = "1.0"
+
+[badges]
+travis-ci = { repository = "niklasf/rust-gaviota-sys", branch = "master" }

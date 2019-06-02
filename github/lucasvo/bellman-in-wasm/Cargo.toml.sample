@@ -1,0 +1,19 @@
+[package]
+name = "bwsm"
+version = "0.1.0"
+authors = ["Lucas Vogelsang <l@lucasvo.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[dependencies]
+wasm-bindgen="0.2"
+#bellman= {path="/home/vagrant/work/zbi/bellman"}
+bellman = "0.1"
+#pairing = "{path="/home/vagrant/work/zbi/pairing"}
+rand = "0.4"
+
+[dependencies.pairing]
+version = "0.14.2"
+features = ["expose-arith"]

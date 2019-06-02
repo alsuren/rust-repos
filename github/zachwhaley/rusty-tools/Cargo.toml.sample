@@ -1,0 +1,15 @@
+[package]
+name = "rusty-tools"
+version = "0.0.0"
+
+[dependencies]
+libc = "*"
+termios = "*"
+
+[[bin]]
+name = "page"
+path = "src/page.rs"
+
+[[bin]]
+name = "find"
+path = "src/find.rs"

@@ -1,0 +1,16 @@
+[package]
+name = "bucketsort"
+version = "0.1.0"
+authors = ["Nico <Nico.Westerbeck@mailbox.tu-dresden.de>"]
+
+[dependencies]
+getopts = "0.2"
+time = "0.1"
+byteorder = "0.5"
+crossbeam = "0.2"
+
+clippy = {version = "*", optional = true}
+
+[features]
+lints = ["clippy"]
+

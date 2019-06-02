@@ -1,0 +1,14 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Nyári Dávid Tamás <nyaridavid@gmail.com>"]
+
+[dependencies]
+rtrace = { path = "./rtrace", version = "0.1.0"}
+image = "*"
+approx = "~0"
+nalgebra = "~0"
+
+[profile.release]
+debug = true
+opt-level = 3

@@ -1,0 +1,29 @@
+[package]
+name = "bearbot"
+version = "0.1.0"
+authors = ["Giovanni Capuano <webmaster@giovannicapuano.net>"]
+
+[dependencies]
+slackbot = { git = "https://github.com/RoxasShadow/slackbot", branch = "regex" }
+
+regex        = "0.1"
+hyper        = "0.9"
+url          = "1.2"
+lazy_static  = "0.2"
+
+serde        = "0.8"
+serde_json   = "0.8"
+serde_derive = "0.8"
+
+dotenv     = "0.8"
+iron       = "0.4"
+logger     = { git = "https://github.com/iron/logger" }
+log        = "0.3"
+
+[lib]
+name = "bearbot"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bearbot"
+path = "src/main.rs"

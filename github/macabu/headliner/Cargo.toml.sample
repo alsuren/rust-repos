@@ -1,0 +1,12 @@
+[package]
+name = "headliner"
+version = "0.1.0"
+authors = ["Matheus Macabu <macabu.matheus@gmail.com>"]
+
+[dependencies]
+human-panic = "0.4.0"
+docopt = "0.8.3"
+serde = "1.0.45"
+serde_derive = "1.0.45"
+csv = "1.0.0-beta.5"
+rayon = "1.0.1"

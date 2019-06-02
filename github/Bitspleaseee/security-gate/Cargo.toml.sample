@@ -1,0 +1,26 @@
+[package]
+name = "security-gate"
+version = "0.1.0"
+authors = ["Ole Martin Ruud <barskern@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.1.0"
+log = "0.4.5"
+fern = "0.5.6"
+regex = "1"
+rocket = "0.3.16"
+rocket_codegen = "0.3.16"
+chrono = "0.4"
+clap = "2.32.0"
+tarpc = { git = "https://github.com/google/tarpc.git", branch = "master" }
+tarpc-plugins = { git = "https://github.com/google/tarpc", rev = "5e4b97e" }
+serde = "1.0"
+serde_derive = "1.0"
+rpassword = "2.0.0"
+datatypes = { git = "https://github.com/Bitspleaseee/datatypes.git" }
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]

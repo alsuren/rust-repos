@@ -1,0 +1,10 @@
+
+[package]
+name = "ibus-keysend"
+version = "2.0.0"
+authors = ["gemmarx <gemmarx@users.noreply.github.com>"]
+
+[dependencies]
+clap = { version="*", features = ["yaml"] }
+dbus = "^0.6.1"
+

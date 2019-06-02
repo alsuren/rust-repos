@@ -1,0 +1,26 @@
+[package]
+name = "text-tables"
+version = "0.3.1"
+authors = ["Richard Dodd <richard.dodd@itp-group.co.uk>"]
+description = "A terminal/text table prettifier with no dependencies"
+repository = "https://github.com/derekdreery/text-table"
+homepage = "https://github.com/derekdreery/text-table"
+readme = "README.md"
+categories = ["command-line-utilities", "text-processing"]
+keywords = ["table", "cli", "terminal", "ascii", "pretty"]
+license = "MIT/Apache-2.0"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "README.md"
+]
+
+
+[dependencies]
+
+[badges]
+travis-ci = { repository = "derekdreery/text-table-rs" }
+appveyor = { repository = "derekdreery/text-table-rs" }
+is-it-maintained-issue-resolution = { repository = "derekdreery/text-table-rs" }
+is-it-maintained-open-issues = { repository = "derekdreery/text-table-rs" }
+

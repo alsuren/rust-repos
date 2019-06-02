@@ -1,0 +1,10 @@
+[package]
+name = "ttk91"
+version = "0.1.0"
+authors = ["Sami Kukkonen <sami@samikukkonen.fi>"]
+
+[dependencies]
+byteorder = "1"
+num-derive = "0.2"
+num-traits = "0.2"
+prettytable-rs = "^0.8"

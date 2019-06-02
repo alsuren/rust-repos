@@ -1,0 +1,18 @@
+[package]
+name = "cargo-git-registry"
+version = "0.1.0"
+authors = ["Marcin Sas-Szymanski <marcin.sas-szymanski@anixe.pl>"]
+
+[dependencies]
+structopt = "*"
+url = "*"
+failure = "*"
+git2 = "*"
+directories = "*"
+toml = "*"
+serde = "*"
+serde_derive = "*"
+relative-path = "*"
+regex = "*"
+cargo = { git = "https://github.com/synek317/cargo", branch = "synek317_generate_index_metadata" }
+semver = "*"

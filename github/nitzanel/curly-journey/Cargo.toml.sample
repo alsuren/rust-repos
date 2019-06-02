@@ -1,0 +1,10 @@
+[package]
+name = "gl_tut"
+version = "0.1.0"
+authors = ["Nitzan Elbaz <nitzan@claysciences.com>"]
+
+[dependencies]
+glium = "*"
+image = "*"
+noise = "0.5.1"
+rand = "*"

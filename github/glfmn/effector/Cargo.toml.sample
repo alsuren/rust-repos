@@ -1,0 +1,8 @@
+[package]
+name = "effector"
+version = "0.1.0"
+authors = ["Gwen Lofman <Gwen@Lofman.co>"]
+
+[dependencies]
+cgmath = "0.12.0"
+slog = "2.0.0-3.1"

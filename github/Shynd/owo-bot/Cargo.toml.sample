@@ -1,0 +1,10 @@
+[package]
+name = "owo-bot"
+version = "0.1.0"
+authors = ["Shynd <shynd@protonmail.com>"]
+
+[dependencies]
+env_logger = "~0.4"
+kankyo = "~0.1"
+log = "~0.3"
+serenity = "0.5.1"

@@ -1,0 +1,22 @@
+[package]
+name = "adventofcode2016"
+version = "0.1.0"
+authors = ["Chris Leech <leech@pobox.com>"]
+
+[dependencies]
+scan_fmt = "*"
+itertools = "*"
+rust-crypto = "*"
+permutohedron = "*"
+clap = "*"
+nalgebra = "*"
+rustc-serialize = "*"
+arrayvec = "*"
+num_cpus = "*"
+fnv = "*"
+nom = "*"
+lazy_static = "*"
+num = "*"
+
+[features]
+default=[]

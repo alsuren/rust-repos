@@ -1,0 +1,16 @@
+[package]
+name = "doco"
+version = "0.1.0"
+authors = ["Do Nhat Minh <mrordinaire@gmail.com>", "Renato Costa", "Shayan Mohammed"]
+keywords = ["documentation"]
+categories = ["documentation"]
+
+[dependencies]
+lazy_static = "1.0"
+mustache = "*"
+nom = "3.2"
+rand = "0.4"
+regex = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

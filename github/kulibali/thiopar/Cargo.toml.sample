@@ -1,0 +1,13 @@
+[package]
+name = "thiopar"
+version = "0.1.0"
+authors = ["Gordon Tisher <gordon@balafon.net>"]
+description = "Thiopar is a library for numerics in Rust."
+documentation = "https://github.com/kulibali/thiopar"
+homepage = "https://github.com/kulibali/thiopar"
+repository = "https://github.com/kulibali/thiopar"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+num = "0.1"

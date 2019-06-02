@@ -1,0 +1,14 @@
+[package]
+name = "aspen"
+version = "0.3.1"
+authors = ["Nathan Kent <nate@nkent.net>","Daniel Eades <danieleades@hotmail.com>"]
+license = "MIT"
+description = "A behavior tree implementation in Rust"
+keywords = ["behavior", "tree", "fsm", "state", "ai"]
+documentation = "https://docs.rs/aspen"
+repository = "https://github.com/danieleades/aspen"
+readme = "README.adoc"
+edition = "2018"
+
+[dependencies]
+log = "0.4.6"

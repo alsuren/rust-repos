@@ -1,0 +1,28 @@
+[package]
+name = "aladdin"
+version = "0.1.0"
+authors = [
+    "Paul Loyd <pavelko95@gmail.com>",
+    "Ivan Skorokhodov <iskorokhodov@gmail.com>"
+]
+
+[features]
+place-bets = []
+
+[dependencies]
+log = "^0.3.6"
+env_logger = "^0.3.4"
+time = "^0.1.35"
+hyper = "^0.9.10"
+kuchiki = {version = "^0.3.3", features = ["hyper"]}
+regex = "^0.1.73"
+lazy_static = "^0.2.1"
+url = "^1.2"
+mime = "^0.2.2"
+serde = "^0.8.5"
+serde_json = "^0.8.1"
+serde_derive = "^0.8.5"
+websocket = "^0.17.1"
+rusqlite = "^0.7.3"
+backtrace = "^0.2"
+parking_lot = "^0.3"

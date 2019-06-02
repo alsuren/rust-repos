@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "./core/extern_api",
+    "./core/gpu_strategy",
+    "./core/implicit",
+    "./core/strategy",
+    "./testsuite",
+    "./util/aabb-quadtree",
+    "./util/buffer_dump",
+    "./util/buffer_view",
+    "./util/debug_helpers",
+    "./util/gpu-interp",
+    "./util/line-stitch",
+    "./util/vectorphile"
+]

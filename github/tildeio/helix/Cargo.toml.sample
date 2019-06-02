@@ -1,0 +1,34 @@
+[package]
+name = "helix"
+version = "0.7.5"
+authors = ["Godhuda <engineering+godhuda@tilde.io>"]
+description = "Embed Rust in your Ruby"
+documentation = "https://usehelix.com/documentation"
+homepage = "https://usehelix.com"
+repository = "https://github.com/tildeio/helix"
+readme = "README.md"
+keywords = ["ruby", "rails", "binding", "extension", "embed"]
+categories = ["api-bindings"]
+license = "ISC"
+include = [
+  "src/**/*.rs",
+  "Cargo.toml"
+]
+
+[badges]
+travis-ci = { repository = "tildeio/helix", branch = "master" }
+appveyor = { repository = "tildeio/helix", branch = "master", service = "github" }
+
+[workspace]
+members = ["examples/calculator", "examples/console", "examples/docopt", "examples/duration", "examples/game_of_life", "examples/geometry", "examples/json_builder", "examples/membership", "examples/text_transform", "examples/turbo_blank", "examples/unit"]
+
+[dependencies]
+libc = "0.2.0"
+
+[dependencies.libcruby-sys]
+path = "crates/libcruby-sys"
+version = "0.7.5"
+
+[dependencies.cstr-macro]
+path = "crates/cstr-macro"
+version = "0.1.0"

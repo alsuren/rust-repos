@@ -1,0 +1,8 @@
+[package]
+name = "rust-tensorflow"
+version = "0.1.0"
+authors = ["Matthew Moore <m3moore@gmail.com>"]
+
+[dependencies]
+tensorflow = "0.9"
+image = "*"

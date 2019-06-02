@@ -1,0 +1,13 @@
+[package]
+name = "drawbytes"
+version = "0.1.0"
+authors = ["jdeeny <jdeeny@gmail.com>"]
+publish = false
+license = "MIT"
+
+[lib]
+name = "drawbytes"
+plugin = true
+crate-type = ["dylib"]
+
+[dependencies]

@@ -1,0 +1,29 @@
+
+[workspace]
+
+members = [
+  "src/core",
+  "src/pretty",
+  "src/hast",
+  "src/theory",
+  "src/cc",
+  "src/run",
+  "src/parser",
+  "src/solver",
+  "src/tseitin",
+]
+
+# default-members = [ …
+
+[profile.release]
+
+opt-level = 3
+
+lto = true # helps a lot with inlining
+
+# for `perf`:
+#debug = true 
+#lto = false
+
+[profile.dev]
+opt-level = 1

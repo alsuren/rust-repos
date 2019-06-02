@@ -1,0 +1,23 @@
+[package]
+name = "rust_db"
+version = "0.1.0"
+authors = ["Lucio Franco <lucio.franco@du.edu>"]
+
+[lib]
+name = "rust_db"
+path = "src/lib.rs"
+
+[[bin]]
+name = "db-server"
+path = "src/main.rs"
+
+[[bin]]
+name="db-cli"
+path = "cli/src/main.rs"
+
+[dependencies]
+log = "*"
+bincode="*"
+rustc-serialize = "0.3.*"
+mio = "0.5"
+getopts = "0.2"

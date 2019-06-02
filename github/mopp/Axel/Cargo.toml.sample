@@ -1,0 +1,30 @@
+[package]
+name    = "axel"
+version = "0.2.0"
+authors = ["mopp <hello@mopp.jp>"]
+
+
+[lib]
+crate-type = ["staticlib"]
+path = "src/kernel.rs"
+
+
+[dependencies]
+bitflags   = "1.0.0"
+multiboot2 = { git = "https://github.com/phil-opp/multiboot2-elf64.git" }
+rlibc      = "1.0"
+spin       = "0.4.9"
+# Just for x86_32
+# multiboot  = { git = "https://github.com/gz/rust-multiboot.git" }
+
+[dependencies.lazy_static]
+features = ["spin_no_std"]
+version = "1.0.0"
+
+
+[profile.dev]
+panic = "abort"
+
+
+[profile.release]
+panic = "abort"

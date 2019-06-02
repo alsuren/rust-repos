@@ -1,0 +1,26 @@
+[package]
+
+name = "rusti"
+version = "0.0.1"
+authors = [ "Murarth <murarth@gmail.com>" ]
+
+[lib]
+
+name = "rusti"
+path = "src/rusti/lib.rs"
+
+[[bin]]
+
+name = "rusti"
+doc = false
+test = false
+
+[dependencies]
+env_logger = "0.3"
+getopts = "0.2"
+linefeed = "0.2"
+log = "0.3"
+tempfile = "1.1"
+
+[dev-dependencies]
+assert_matches = "1.0"

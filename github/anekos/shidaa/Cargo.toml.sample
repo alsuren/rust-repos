@@ -1,0 +1,17 @@
+[package]
+name = "shidaa"
+version = "0.1.0"
+authors = ["anekos <anekos@snca.net>"]
+edition = "2018"
+
+[dependencies]
+apng-encoder = "*"
+clap = "*"
+css-color-parser = "*"
+failure = "*"
+rand = "0.6"
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false
+features = ["precommit-hook", "run-cargo-test", "run-cargo-clippy"]

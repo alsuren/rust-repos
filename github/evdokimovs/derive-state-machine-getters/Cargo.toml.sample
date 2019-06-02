@@ -1,0 +1,15 @@
+[package]
+name = "derive-state-machine-getters"
+version = "0.1.0"
+authors = ["Semen Evdokimov <evdokimovs@protonmail.ch>"]
+edition = "2018"
+
+# Something
+# Another something
+
+[dependencies]
+syn = "0.15.34"
+quote = "0.6.12"
+
+[lib]
+proc-macro = true

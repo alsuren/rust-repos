@@ -1,0 +1,12 @@
+[package]
+name = "rust-jdbc-test"
+version = "0.1.0"
+authors = ["di3663"]
+
+[dependencies.jvm]
+git = "http://github.com/di3663/rust-jvm"
+version = "*"
+
+[dependencies.jdbc]
+git = "http://github.com/di3663/rust-jdbc"
+version = "*"

@@ -1,0 +1,34 @@
+[package]
+name = "fest"
+authors = ["Jonas Platte <mail@jonasplatte.de>"]
+license = "GPL-3.0+"
+version = "0.1.0"
+repository = "https://github.com/fest-im/fest"
+build = "build/build.rs"
+
+[dependencies]
+chrono = "0.4.6"
+fern = "0.5.7"
+futures-await = "0.1.1"
+gio = "0.5.1"
+glib = "0.6.1"
+hyper = "0.12.19"
+hyper-tls = "0.3.1"
+log = "0.4.6"
+ruma-client = "0.1.0"
+ruma-events = "0.11.0"
+ruma-identifiers = "0.11.0"
+tokio-core = "0.1.17"
+url = "1.7.2"
+
+[dependencies.gtk]
+features = ["v3_22_26"]
+version = "0.5.0"
+
+[features]
+default = ["logging_color"]
+logging_color = ["fern/colored"]
+
+[patch.crates-io]
+ruma-events = { git = "https://github.com/ruma/ruma-events", branch = "synapse-workarounds" }
+ruma-identifiers = { git = "https://github.com/ruma/ruma-identifiers", branch = "synapse-workarounds" }

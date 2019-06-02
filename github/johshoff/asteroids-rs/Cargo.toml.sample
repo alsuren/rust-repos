@@ -1,0 +1,16 @@
+[package]
+name = "game_client"
+version = "0.1.0"
+authors = ["Johannes Hoff <johshoff@gmail.com>"]
+
+[dependencies]
+clock_ticks = "0.0.5"
+rustc-serialize = "0.3"
+nalgebra = "*"
+capnp = "*"
+mio = "*"
+
+[dependencies.glium]
+version = "*"
+features = ["nalgebra"]
+

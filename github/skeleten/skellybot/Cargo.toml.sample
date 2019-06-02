@@ -1,0 +1,21 @@
+[package]
+name = "skellybot"
+version = "0.1.0"
+authors = ["skeleten <skele@ymail.com>"]
+
+[features]
+default = ["debug"]
+debug = []
+
+[dependencies]
+error-chain = "0.10"
+diesel = { version = "0.11.0", features = ["postgres"] }
+diesel_codegen = { version = "0.11.0", features = ["postgres"] }
+dotenv = "0.8.0"
+chrono = "0.3"
+log = "0.3"
+env_logger = "0.4"
+
+[dependencies.discord]
+version = "0.7"
+default-features = false

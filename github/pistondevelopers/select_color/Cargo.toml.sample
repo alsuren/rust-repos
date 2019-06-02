@@ -1,0 +1,22 @@
+[package]
+
+name = "select_color"
+version = "0.18.0"
+authors = [
+    "Sven Nilsen <bvssvni@gmail.com>"
+]
+keywords = ["select", "color", "piston"]
+description = "A library for color selection"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/pistondevelopers/select_color.git"
+homepage = "https://github.com/pistondevelopers/select_color"
+documentation = "https://docs.rs/select_color"
+
+[lib]
+
+name = "select_color"
+path = "src/lib.rs"
+
+[dependencies]
+image = "0.21.0"

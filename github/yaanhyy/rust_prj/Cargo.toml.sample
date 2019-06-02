@@ -1,0 +1,14 @@
+[package]
+name = "yaanhyy_rust"
+version = "0.1.0"
+authors = ["yaanhyy <yaanhyy@gmail.com>"]
+license = "MIT"
+description = "cargo mod example"
+edition = "2018"
+[dependencies]
+futures = "0.1"
+tokio = "0.1"
+mongodb = "0.3.12"
+bson = "0.13.0"
+hello_macro = { path = "hello_macro" }
+hello_macro_derive = { path = "hello_macro/hello_macro_derive" }

@@ -1,0 +1,54 @@
+[package]
+authors = ["Owen Sanchez <pengowen816@gmail.com>"]
+name = "horde_survival"
+version = "0.1.0"
+
+[dependencies]
+lazy_static = "0.2.8"
+regex = "0.2.2"
+shred-derive = "0.5.0"
+slog-term = "2.4.0"
+slog-async = "2.3.0"
+slog = "2.2.3"
+ui = { path = "ui" }
+serde = "1.0.70"
+quick-error = "1.2.2"
+directories = "1.0.1"
+ron = "0.3.0"
+
+[dependencies.assets]
+path = "assets"
+
+[dependencies.common]
+path = "common"
+
+[dependencies.control]
+path = "control"
+
+[dependencies.graphics]
+path = "graphics"
+
+[dependencies.image_utils]
+path = "image_utils"
+
+[dependencies.math]
+path = "math"
+
+[dependencies.physics]
+path = "physics"
+
+[dependencies.window]
+path = "window"
+
+[workspace]
+members = [
+	"common",
+	"control",
+	"graphics",
+	"image_utils",
+	"math",
+	"physics",
+	"window",
+	"ui",
+	"assets",
+]

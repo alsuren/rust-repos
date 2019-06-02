@@ -1,0 +1,13 @@
+[package]
+name = "canarywatcher"
+version = "0.2.1"
+authors = ["Patrick Uiterwijk <patrick@puiterwijk.org>"]
+description = "Lock your system when canary directory is touched"
+license = "GPL-3.0"
+
+[dependencies]
+inotify = "0.5.1"
+fuse = "0.3.1"
+libc = "0.2.41"
+time = "0.1.40"
+procinfo = "0.4.2"

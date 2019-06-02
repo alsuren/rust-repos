@@ -1,0 +1,13 @@
+[package]
+name = "wsl-agent-bridge"
+version = "1.0.0"
+authors = ["Bobby Reynolds <bobby@reynoldsbd.net>"]
+license = "MIT OR Apache-2.0"
+edition = "2018"
+
+[dependencies]
+directories = "1.0"
+futures = "0.1"
+tokio = "0.1"
+tokio-named-pipe = { git = "https://github.com/Azure/iotedge" }
+tokio-uds-windows = { git = "https://github.com/Azure/tokio-uds-windows" }

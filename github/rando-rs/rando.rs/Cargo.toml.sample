@@ -1,0 +1,21 @@
+[package]
+name = "rando"
+version = "0.2.0"
+authors = ["c74d <8573dd@gmail.com>"]
+
+description = "A library for iteration in random order."
+keywords = ["iter", "iteration", "iterator", "rand", "random"]
+license = "Apache-2.0"
+readme = "README.mkd"
+repository = "https://github.com/rando-rs/rando.rs"
+
+[dependencies]
+get-trait = "0.1.0"
+iter-trait = "0.3.1"
+len-trait = "0.6.1"
+rand = "0.5.0"
+smallvec = "0.6.1"
+
+[dev-dependencies]
+quickcheck = "0.6.2"
+version-sync = "0.5.0"

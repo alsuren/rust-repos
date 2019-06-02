@@ -1,0 +1,16 @@
+[package]
+name = "lru-weighted-cache"
+version = "0.1.2"
+authors = ["Elf M. Sternberg <elf.sternberg@gmail.com>"]
+edition = "2018"
+license = "MPL-2.0+"
+description = "Weighted LRU Cache"
+repository = "https://github.com/elfsternberg/lru-weighted-cache"
+readme = "./README.md"
+categories = ["data-structures"]
+keywords = ["lru", "cache", "weights"]
+
+[dependencies]
+
+[dev-dependencies]
+pretty_assertions = "0.5"

@@ -1,0 +1,14 @@
+[package]
+name = "rgb2yuv420"
+version = "0.2.3"
+authors = ["Marcell Bán <Marcell.Ban@ccsys.eu>"]
+description = "Simple RGB to YUV420 converter"
+license = "MIT OR Apache-2.0"
+keywords = ["rgb", "yuv", "rgb2yuv", "yuv420"]
+repository = "https://github.com/marcellBan/rgb2yuv420-rs"
+documentation = "https://docs.rs/rgb2yuv420/"
+
+[dependencies]
+
+[dev-dependencies]
+png = "0.12"

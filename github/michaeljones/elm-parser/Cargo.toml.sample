@@ -1,0 +1,18 @@
+[package]
+name = "elm-parser"
+version = "0.1.0"
+authors = ["Michael Jones <michael@zaptic.com>"]
+
+[[bin]]
+name = "elm-parser-dump"
+path = "src/dump.rs"
+
+[[bin]]
+name = "elm-parser-check"
+path = "src/check.rs"
+
+[dependencies]
+nom = { version = "4.0.0", features = ["regexp", "verbose-errors"] }
+regex = { version = "^1.0" }
+walkdir = "2"
+clap = "2.32.0"

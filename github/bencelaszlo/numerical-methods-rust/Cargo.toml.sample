@@ -1,0 +1,17 @@
+[package]
+name = "numerical_methods_rust"
+version = "1.0.0"
+authors = ["bencelaszlo <bencelaszlo@protonmail.com>"]
+
+[dependencies]
+coarsetime = "^0.1.10"
+
+[profile.dev]
+opt-level = 3
+codegen-units = 16
+debug = 2
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+debug = false

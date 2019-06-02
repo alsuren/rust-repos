@@ -1,0 +1,31 @@
+[package]
+name = "avvy"
+version = "0.1.0"
+authors = ["Xavier Lange <xrlange@gmail.com>"]
+
+[dependencies]
+log = {version = "0.4.3" } # best perf: , features = ["max_level_off"]
+serde = "1.0.70"
+serde_derive = "1.0.70"
+serde_json = "1.0.24"
+integer-encoding = "1.0.5"
+byteorder = "1.2.3"
+env_logger = "0.5.10"
+fnv = "1.0.6"
+smallvec = { version="0.6.3", features=["serde"] }
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "criterion"
+harness = false
+
+[profile.release]
+lto = true
+codegen-units = 1
+debug = true
+
+[profile.bench]
+lto = true
+codegen-units = 1

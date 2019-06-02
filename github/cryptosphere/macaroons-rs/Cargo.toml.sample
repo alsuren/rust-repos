@@ -1,0 +1,16 @@
+[package]
+name        = "macaroons"
+description = "Cookie-like bearer credentials with caveats for distributed authorization"
+version     = "0.3.3"
+authors     = ["Tony Arcieri <bascule@gmail.com>"]
+homepage    = "https://github.com/cryptosphere/macaroons-rs"
+repository  = "https://github.com/cryptosphere/macaroons-rs.git"
+readme      = "README.md"
+license     = "MIT"
+keywords    = ["cookies", "authorization", "credentials"]
+categories  = ["authentication","cryptography"]
+
+[dependencies]
+sodiumoxide     = "^0"
+libsodium-sys   = "^0"
+rustc-serialize = "^0.3"

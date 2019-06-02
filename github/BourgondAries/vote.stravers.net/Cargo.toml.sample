@@ -1,0 +1,24 @@
+[package]
+name = "ironweb"
+version = "0.1.0"
+authors = ["Bourgond Aries <macocio@gmail.com>"]
+
+[dependencies]
+chrono = "0.2.21"
+clippy = "0.0.58"
+cookie = "0.2.2"
+dotenv = "0.8.0"
+dotenv_macros = "0.8.0"
+env_logger = "0.3.3"
+iron = "0.3.0"
+log = "0.3.5"
+maud = "0.8.0"
+maud_macros = "0.8.0"
+mount = "0.1.0"
+oven = "0.3.0"
+postgres = "0.11.6"
+rand = "0.3.14"
+router = "0.1.1"
+staticfile = "0.2.0"
+time = "0.1.34"
+urlencoded = "0.3.0"

@@ -1,0 +1,11 @@
+[package]
+name = "svgtess"
+version = "0.1.0"
+authors = ["khanp"]
+
+[dependencies]
+cgmath = "0.16.1"
+
+[[example]]
+name = "gfx_basic"
+path = "examples/gfx_basic"

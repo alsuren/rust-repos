@@ -1,0 +1,20 @@
+cargo-features = ["edition"]
+
+[package]
+name = "imagr"
+version = "0.1.0"
+edition = "2018"
+authors = ["Reilly Tucker Siemens <reilly@tuckersiemens.com>", "Geoff Shannon <geoffpshannon@gmail.com>"]
+
+[dependencies]
+failure = "0.1"
+failure_derive = "0.1"
+http = "0.1.7"
+hyper = "0.12.5"
+hyper-tls = "0.3.0"
+pretty_env_logger = "0.2.3"
+futures = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+tokio-async-await = "0.1"

@@ -1,0 +1,15 @@
+[package]
+name = "ProjectEuler"
+version = "0.1.0"
+authors = ["Technipion"]
+edition = "2018"
+
+[dependencies]
+num = "*"
+md5 = "*"
+chrono = "*"
+reqwest = "*"
+regex = "*"
+lazy_static = "*"
+sysinfo = "*"
+uname = "*"

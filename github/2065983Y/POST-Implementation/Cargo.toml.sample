@@ -1,0 +1,32 @@
+[package]
+name = "postImpl"
+version = "0.1.0"
+authors = ["y2k"]
+
+[dependencies]
+hyper="0.10.*"
+iron="*"
+router="*"
+serde="*"
+serde_json="*"
+serde_derive="*"
+num="*"
+num-derive="*"
+num-traits="*"
+curl="*"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "connector"
+path = "src/connector.rs"
+
+[[bin]]
+name = "test"
+path = "src/test.rs"
+
+[[bin]]
+name = "test2"
+path = "src/test2.rs"

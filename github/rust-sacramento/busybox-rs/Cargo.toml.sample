@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "yes"
+]
+
+[profile.release]
+lto = true
+codegen-units = 1

@@ -1,0 +1,8 @@
+[package]
+name = "interpreter"
+version = "0.1.0"
+authors = ["n4to4 <n4to4k@gmail.com>"]
+
+[dependencies]
+pretty_assertions = "0.5.1"
+downcast-rs = "1.0.3"

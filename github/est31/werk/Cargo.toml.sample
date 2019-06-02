@@ -1,0 +1,9 @@
+[workspace]
+members = [
+	"werk-sys",
+	"werk",
+	"werk_test",
+]
+
+[profile.release]
+debug = true

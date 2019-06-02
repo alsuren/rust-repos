@@ -1,0 +1,10 @@
+[package]
+name = "hyper-microservice"
+version = "0.1.0"
+authors = ["alextanhongpin <alextan220990@gmail.com>"]
+
+[dependencies]
+env_logger = '0.6.1'
+hyper = '0.12.28'
+log = '0.4.6'
+futures = "0.1.26"

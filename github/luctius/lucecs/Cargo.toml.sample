@@ -1,0 +1,29 @@
+[package]
+authors = ["Cor <prive@corpeters.nl>"]
+name = "rl_ecs"
+version = "0.1.0"
+edition = "2018"
+license = "MIT OR Apache-2.0"
+
+[[bench]]
+harness = false
+name = "simple"
+
+[dependencies]
+log = "0.3.8"
+
+[dependencies.rl_ecs-derive]
+git = "https://github.com/luctius/rl_ecs-derive.git"
+
+[dev-dependencies]
+criterion = "^0.2"
+simple_logger = "0.4.0"
+
+[profile]
+[profile.release]
+debug = true
+lto = true
+
+[profile.bench]
+debug = true
+lto = true

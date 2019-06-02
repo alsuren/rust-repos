@@ -1,0 +1,20 @@
+[package]
+name = "protego"
+version = "0.1.0"
+authors = ["sadkovoy <dmitriy.sadkovoy@gmail.com>"]
+
+[dependencies]
+actix = "0.7"
+actix-web = { version="0.7", features=["alpn"] }
+actix-redis = "0.5.1"
+
+chrono = "0.4.6"
+
+env_logger = "0.5"
+
+futures = "0.1.25"
+
+redis-async = "0.4.3"
+
+serde = "1.0.80"
+serde_derive = "1.0.80"

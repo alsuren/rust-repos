@@ -1,0 +1,9 @@
+[package]
+name = "amethyst-snake"
+version = "0.1.0"
+authors = ["Alex Addy <alex.addy@gmail.com>"]
+
+[dependencies]
+#amethyst = "0.7"
+amethyst = { git = "https://github.com/Xaeroxe/amethyst", branch = "winit-up" }
+rand = "0.5"

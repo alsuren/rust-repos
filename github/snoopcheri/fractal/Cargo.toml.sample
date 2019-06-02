@@ -1,0 +1,16 @@
+[package]
+name = "fractal"
+version = "0.1.0"
+authors = ["Sargon <sargon@me.com>"]
+
+[[bin]]
+name = "fractal"
+path = "src/main.rs"
+
+[dependencies]
+error-chain = "*"
+num = "*"
+image = "*"
+clap = "*"
+rayon = "*"
+num_cpus = "*"

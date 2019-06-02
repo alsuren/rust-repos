@@ -1,0 +1,10 @@
+[package]
+name = "typed_messages"
+version = "0.1.0"
+authors = ["Frans Skarman <frans.skarman@gmail.com>"]
+
+[dependencies]
+serde = "1.0"
+serde_json = "1.0"
+error-chain = "0.11"
+

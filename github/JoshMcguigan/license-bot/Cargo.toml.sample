@@ -1,0 +1,12 @@
+[package]
+name = "license-bot"
+version = "0.1.0"
+authors = ["Josh Mcguigan <>"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+reqwest = "0.8.5"
+time = "0.1"
+dotenv = "0.11.0"
+base64 = "0.9.0"
+rraw = { git = "https://github.com/JoshMcguigan/rraw", rev = "dd1126b" }

@@ -1,0 +1,26 @@
+[package]
+name = "nasbench"
+version = "0.1.1"
+authors = ["Takeru Ohta <phjgt308@gmail.com>"]
+edition = "2018"
+description = "A Rust port of NASBench: https://github.com/google-research/nasbench"
+homepage = "https://github.com/sile/nasbench"
+repository = "https://github.com/sile/nasbench"
+readme = "README.md"
+keywords = ["nas", "benchmark-datasets"]
+license = "MIT"
+
+[badges]
+travis-ci = {repository = "sile/nasbench-rs"}
+codecov = {repository = "sile/nasbench-rs"}
+
+[dependencies]
+base64 = "0.10"
+bytecodec = "0.4"
+byteorder = "1"
+crc = "1"
+md5 = "0.6"
+protobuf_codec = "0.2"
+serde_json = "1"
+structopt = "0.2"
+trackable = "0.2"

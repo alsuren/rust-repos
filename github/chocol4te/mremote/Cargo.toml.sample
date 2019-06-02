@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "controller",
+    "receiver",
+]
+
+[profile.dev]
+opt-level = "s"
+
+[profile.release]
+lto = true
+opt-level = "s"
+debug = true

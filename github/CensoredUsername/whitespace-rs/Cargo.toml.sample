@@ -1,0 +1,40 @@
+[package]
+name = "whitespacers"
+version = "0.2.0"
+authors = [ "CensoredUsername cens.username@gmail.com" ]
+
+description = "A whitespace JIT-compiler, for when your whitespace just isn't executing fast enough."
+
+documentation = "https://censoredusername.github.io/whitespace-rs/whitespacers/index.html"
+repository = "https://github.com/CensoredUsername/whitespace-rs"
+
+readme = "README.md"
+keywords = ["whitespace", "wsc"]
+license = "MPL-2.0"
+
+exclude = [
+    "commit_docs.sh",
+]
+
+[lib]
+name = "whitespacers"
+path = "src/lib.rs"
+
+[[bin]]
+name = "wsc"
+path = "src/main.rs"
+
+
+[dependencies]
+itertools  = "0.*.*"
+crossbeam  = "0.*.*"
+fnv        = "1.*.*"
+bitflags   = "^0.9.1"
+num-bigint = "0.*.*"
+num-traits = "0.*.*"
+dynasm     = "^0.2.0"
+dynasmrt   = "^0.2.0"
+
+[profile.release]
+debug = true
+lto = true

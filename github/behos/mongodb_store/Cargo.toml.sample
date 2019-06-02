@@ -1,0 +1,14 @@
+[package]
+name = "mongodb_store"
+version = "0.1.1"
+authors = ["Giorgos Georgiou <4.blood@gmail.com>"]
+
+[dependencies]
+mongodb = "*"
+log = "*"
+serde = "*"
+bson = "*"
+
+[dev-dependencies]
+serde_derive = "*"
+uuid = { version = "*", features = ["v4"] }

@@ -1,0 +1,17 @@
+[package]
+name = "sassas"
+version = "0.1.0"
+authors = ["Matt Macy <mmacy@mattmacy.io>"]
+build = "build.rs"
+
+[dependencies]
+clap = "2.24"
+memmap = "^0.5"
+itertools= "0.6"
+num = "^0.1"
+regex = "0.2"
+dyon = "^0.24"
+unborrow = "^0.3"
+
+[build-dependencies]
+bindgen = "^0.23.1"

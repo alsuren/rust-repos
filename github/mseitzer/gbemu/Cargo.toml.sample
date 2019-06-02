@@ -1,0 +1,8 @@
+[package]
+name = "gbemu"
+version = "0.1.0"
+
+[dependencies]
+argparse = "0.2.1"
+bitflags = "0.7.0"
+sdl2 = "0.17.0"

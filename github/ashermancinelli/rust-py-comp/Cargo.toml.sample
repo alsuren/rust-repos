@@ -1,0 +1,13 @@
+[package]
+name = "rust2py"
+authors = []
+version = "0.1.0"
+
+[lib]
+name = "rust2py"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+path = "../../../sources/rust-cpython"
+version = "0.2"
+features = ["extension-module"]

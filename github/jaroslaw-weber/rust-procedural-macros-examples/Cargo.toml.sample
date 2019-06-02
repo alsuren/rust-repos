@@ -1,0 +1,10 @@
+[package]
+name = "procedural_macros_simple_examples"
+version = "0.1.0"
+authors = ["Jaroslaw Weber<jaroslaw.weber@gmail.com>"]
+
+[dependencies]
+
+[lib]
+proc-macro = true
+

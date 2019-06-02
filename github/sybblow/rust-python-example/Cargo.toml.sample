@@ -1,0 +1,17 @@
+[package]
+name = "rust_python_example"
+version = "0.1.0"
+authors = []
+
+[lib]
+name = "rust_python_example"
+crate-type = ["dylib"]
+
+[dependencies]
+interpolate_idents = "*"
+ramp = "*"
+
+[dependencies.cpython]
+version = "*"
+default-features = false
+features = ["python3-sys"]

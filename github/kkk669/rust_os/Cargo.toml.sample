@@ -1,0 +1,11 @@
+[package]
+name = "rust_os"
+version = "0.1.0"
+authors = ["Kenta Kubo <601636+kkk669@users.noreply.github.com>"]
+
+[dependencies]
+fixedvec = "0.2.3"
+
+[profile.release]
+debug = true
+lto = true

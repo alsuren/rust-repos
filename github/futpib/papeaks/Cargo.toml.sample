@@ -1,0 +1,11 @@
+[package]
+name = "papeaks"
+version = "0.1.0"
+authors = ["futpib <futpib@gmail.com>"]
+
+[dependencies]
+libpulse-binding = "2.4.0"
+arrayref = "0.3.5"
+lazy_static = "1.2.0"
+clap = "2.32.0"
+byteorder = "1.2.7"

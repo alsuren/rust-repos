@@ -1,0 +1,8 @@
+[package]
+authors = ["Purple Myst <PurpleMyst@users.noreply.github.com>"]
+name = "schemers"
+version = "0.1.0"
+[dependencies]
+gc = "0.3.2"
+gc_derive = "0.3.2"
+nom = "4.0.0"

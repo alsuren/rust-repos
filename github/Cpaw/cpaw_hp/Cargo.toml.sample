@@ -1,0 +1,26 @@
+[package]
+name = "cpaw_hp"
+version = "0.1.0"
+authors = ["Chihiro Hasegawa <pgm3rdlinuxor1000@gmail.com>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+handlebars-iron = "*"
+handlebars = "*"
+params = "*"
+rusqlite = "*"
+lazy_static = "*"
+staticfile = "*"
+mount = "*"
+rustc-serialize = "*"
+rust-crypto = "*"
+serde = "*"
+rand = "*"
+time = "*"
+iron-sessionstorage = "*"
+maplit = "*"
+serde_json = "*"
+dotenv = "*"
+serde_derive = "*"
+base64 = "*"

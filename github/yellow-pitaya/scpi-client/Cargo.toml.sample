@@ -1,0 +1,22 @@
+[package]
+name = "redpitaya-scpi"
+description = "Controlling your redpitaya via SCPI commands"
+license = "MIT"
+version = "0.27.1"
+authors = ["Sanpi <sanpi@homecomputing.fr>"]
+repository = "https://github.com/yellow-pitaya/scpi-client"
+documentation = "https://docs.rs/redpitaya-scpi/"
+keywords = ["redpitaya", "scpi"]
+categories = ["hardware-support"]
+
+[dependencies]
+log = "0.4"
+
+[badges]
+travis-ci = { repository = "yellow-pitaya/scpi-client" }
+gitlab = { repository = "yellow-pitaya/scpi-client" }
+
+[features]
+default = []
+
+mock = []

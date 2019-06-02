@@ -1,0 +1,22 @@
+[package]
+name = "shapes"
+version = "0.1.0"
+authors = ["Dom Williams <me@domwillia.ms>"]
+
+[lib]
+path = "src/lib.rs"
+
+# [[bin]]
+# name = "renderer"
+# path = "src/renderer.rs"
+
+[dependencies]
+nphysics3d = "0.8"
+ncollide3d = "0.15"
+nalgebra = "0.14"
+body_tree = { path = "./body_tree" }
+generic_mutation = { path = "./generic_mutation", features = ["serialize"] }
+rand = "0.5.0"
+
+[workspace]
+exclude = ["renderer"]

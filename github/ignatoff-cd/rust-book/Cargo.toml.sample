@@ -1,0 +1,21 @@
+[package]
+name = "book"
+version = "0.1.0"
+description = "One project on rust"
+authors = ["kignatov <kignatov@rambler-co.ru>"]
+
+[package.metadata.settings]
+default-data-path="/var/lib/example"
+
+[features]
+defaulkt=["mysql"]
+
+[build-dependencies]
+syntex = "^0.58"
+
+[dependencies]
+serde = "1.0"
+serde_json = "1.0"
+time = {git = "https://github.com/rust-lang/time", branch = "master"}
+mysql = {version = "11.2", optional = "true"}
+sqlite = {version = "0.23.4", optional = "true"}

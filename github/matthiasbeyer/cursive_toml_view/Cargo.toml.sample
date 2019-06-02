@@ -1,0 +1,10 @@
+[package]
+name = "cursive_toml_view"
+version = "0.1.0"
+authors = ["Matthias Beyer <mail@beyermatthias.de>"]
+
+[dependencies]
+cursive = "0.7.5"
+failure = "0.1"
+toml    = "0.4"
+

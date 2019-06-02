@@ -1,0 +1,10 @@
+[package]
+name = "reuler"
+version = "0.1.0"
+authors = ["Stephen Lazaro <stephen.lazaro@gmail.com>"]
+
+[dependencies]
+itertools = "0.7.3"
+
+[dev-dependencies]
+quickcheck = "0.3"

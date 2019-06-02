@@ -1,0 +1,21 @@
+[package]
+name = "roller"
+version = "0.0.1"
+authors = ["Roman Zaynetdinov <roman@zaynetro.com>"]
+description = "Pillar compatible cassandra migrations written in Rust"
+repository = "https://github.com/zaynetro/roller"
+readme = "README.md"
+license = "MIT"
+keywords = ["cassandra", "migrations"]
+
+[dependencies]
+cdrs = "1.0"
+log = "0.3"
+env_logger = "0.4"
+glob = "0.2"
+time = "0.1"
+regex = "0.2"
+lazy_static = "0.2"
+config = "0.7"
+serde = "1.0"
+serde_derive = "1.0"

@@ -1,0 +1,20 @@
+[package]
+name = "tomlcli"
+version = "0.2.0"
+authors = ["Sergey Sova <mail@sergeysova.com>"]
+license = "MIT"
+homepage = "https://github.com/sergeysova/tomlcli.rs"
+repository = "https://github.com/sergeysova/tomlcli.rs"
+documentation = "https://docs.rs/tomlcli/"
+readme = "README.md"
+description = "Pretty print and query TOML files"
+keywords = ["toml", "cli", "print", "console", "terminal"]
+
+[dependencies]
+toml = "0.4.5"
+colored = "1.6.0"
+clap = "2.29.2"
+
+[[bin]]
+name = "toml"
+path = "./src/main.rs"

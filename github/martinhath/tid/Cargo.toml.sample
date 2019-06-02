@@ -1,0 +1,13 @@
+[package]
+name = "tid"
+version = "0.1.0"
+authors = ["Martin Hafskjold Thoresen <martinhath@gmail.com>"]
+description = "A dead simple timing wrapper for rough performance measurements"
+keywords = ["profile", "time"]
+categories = ["date-and-time", "development-tools"]
+license = "MIT"
+homepage = "https://www.github.com/martinhath/tid"
+readme = "README.md"
+
+[dependencies]
+time = "0.1"

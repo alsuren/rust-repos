@@ -1,0 +1,13 @@
+[package]
+name = "file_monitor"
+version = "0.1.0"
+authors = ["sn2234 <sn2234@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde_derive="*"
+serde="*"
+serde_json="*"
+log="*"
+log4rs={version="*", features=["rolling_file_appender"]}
+chrono="*"

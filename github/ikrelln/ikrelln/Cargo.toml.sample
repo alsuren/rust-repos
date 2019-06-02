@@ -1,0 +1,56 @@
+[package]
+name = "ikrelln"
+version = "0.3.0"
+authors = ["François Mockers <mockersf@gmail.com>"]
+build = "build.rs"
+edition = "2018"
+
+[lib]
+name = "ikrelln"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ikrelln"
+path = "src/bin.rs"
+
+[dependencies]
+log = "0.4"
+fern = "0.5"
+chrono = { version = "0.4", features = [ "serde" ] }
+mime = "0.3"
+lazy_static = "1.3"
+
+clap = "2.33"
+structopt = "0.2"
+hocon = "0.3"
+
+uuid = { version = "0.7", features = ["serde", "v4"] }
+
+serde = { version = "1.0", features = [ "derive" ] }
+serde_json = "1.0"
+serde_urlencoded = "0.5"
+
+futures = "0.1"
+env_logger = "0.6"
+actix = "0.7"
+actix-web = "0.7"
+
+failure = "0.1"
+
+diesel = { version = "1.4", features = [ "chrono" ] }
+libsqlite3-sys = { version = "0.14", features = ["bundled"], optional = true }
+openssl-sys = { version = "0.9", optional = true }
+
+http = "0.1"
+
+cpython = { version = "0.2", optional = true }
+
+[patch.crates-io]
+# Needed for Postgres. Patches the build script to support cross-compilation.
+pq-sys = { git = 'https://github.com/golddranks/pq-sys' }
+
+[features]
+default = [ "postgres" ]
+postgres = [ "diesel/postgres", "openssl-sys" ]
+sqlite = [ "diesel/sqlite", "libsqlite3-sys" ]
+python = [ "cpython" ]

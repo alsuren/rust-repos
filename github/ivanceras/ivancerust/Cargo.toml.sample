@@ -1,0 +1,41 @@
+[package]
+
+name = "ivancerust"
+version = "0.0.1"
+authors = ["ivan ceras <ivanceras@gmail.com>"]
+
+
+[lib]
+name = "ivancerust"
+path = "./src/lib.rs"
+
+[dependencies.time]
+git = "https://github.com/rust-lang/time"
+
+[dependencies.regex]
+
+
+
+[[example]]
+name = "render_lucy"
+path = "./examples/render_lucy.rs"
+
+
+
+[[example]]
+name = "render_shapes"
+path = "./examples/render_shapes.rs"
+
+
+[[example]]
+name = "render_bunny"
+path = "./examples/render_bunny.rs"
+
+[[example]]
+name = "test_at_lod"
+path = "./examples/tests/test_at_lod.rs"
+
+
+[[example]]
+name = "test_morton"
+path = "./examples/tests/test_morton.rs"

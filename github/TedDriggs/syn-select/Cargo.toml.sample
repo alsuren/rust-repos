@@ -1,0 +1,15 @@
+[package]
+name = "syn-select"
+version = "0.1.4"
+authors = ["Ted Driggs <t.driggs@outlook.com>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/TedDriggs/syn-select"
+documentation = "https://docs.rs/syn-select/0.1.4"
+description = """
+A lightweight selector engine for searching Rust source code.
+"""
+readme = "README.md"
+
+[dependencies]
+syn = { version = "0.15.26", features = ["full", "visit", "extra-traits"] }

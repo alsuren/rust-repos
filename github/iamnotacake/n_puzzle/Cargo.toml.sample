@@ -1,0 +1,12 @@
+[package]
+name = "n_puzzle"
+version = "0.1.0"
+authors = ["alischyn"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+argparse = "0.2.2"
+crossterm = "0.9.3"
+crossterm_terminal = "0.2.2"

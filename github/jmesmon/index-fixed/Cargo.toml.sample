@@ -1,0 +1,15 @@
+[package]
+name = "index-fixed"
+version = "0.3.0"
+authors = ["Cody P Schafer <dev@codyps.com>"]
+license = "Apache-2.0 OR MIT"
+keywords = ["slice", "array", "const", "fixed", "index"]
+repository = "https://github.com/jmesmon/index-fixed"
+documentation = "https://docs.rs/index-fixed"
+description = "convert slices into arrays using indexes ([T] -> [T;N])"
+include = [ "Cargo.toml", "**/*.rs" ]
+
+[badges]
+travis-ci = { repository = "jmesmon/index-fixed" }
+
+[dependencies]

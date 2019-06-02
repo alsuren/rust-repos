@@ -1,0 +1,26 @@
+[package]
+
+name = "rusty_blank"
+version = "0.3.5"
+authors = ["Mark Lee"]
+repository = "https://github.com/malept/rusty_blank"
+publish = false
+
+[package.metadata.thermite]
+
+github_releases = true
+github_release_type = "latest"
+# Only for github_release_type = "cargo"
+# git_tag_format = "v%s-rust"
+git_tag_regex = "^v(\\d+\\.\\d+\\.\\d+)-rust$"
+
+[lib]
+
+crate-type = ["cdylib"]
+
+[dependencies]
+
+ruru = "0.9"
+
+[replace]
+"ruby-sys:0.2.20" = { git = "http://github.com/malept/ruby-sys", branch = "test-osx-and-static-builds" }

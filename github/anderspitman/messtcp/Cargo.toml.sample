@@ -1,0 +1,12 @@
+[package]
+name = "messend"
+version = "0.2.0"
+authors = ["Anders Pitman <tapitman11@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "*"
+byteorder = "*"
+
+[lib]
+crate-type = ["staticlib", "rlib", "cdylib"]

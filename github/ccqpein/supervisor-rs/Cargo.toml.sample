@@ -1,0 +1,17 @@
+[package]
+name = "supervisor-rs"
+version = "0.5.2"
+authors = ["ccQpein"]
+edition = "2018"
+
+[dependencies]
+yaml-rust = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
+
+[[bin]]
+name = "supervisor-rs-server"
+path = "src/bin/server.rs"
+
+[[bin]]
+name = "supervisor-rs-client"
+path = "src/bin/client.rs"

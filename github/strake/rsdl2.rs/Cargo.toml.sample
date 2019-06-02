@@ -1,0 +1,16 @@
+[package]
+name = "rsdl2"
+version = "0.3.0"
+authors = ["M Farkas-Dyck <strake888@gmail.com>"]
+description = "Simple DirectMedia Layer"
+license = "Zlib"
+
+[dependencies]
+flags = "0.1"
+drop-ptr = "0.1"
+libc = { version = "0.2", default-features = false }
+null-terminated = "0.3"
+
+[dependencies.rsdl2-sys]
+path = "sys"
+version = "0.1"

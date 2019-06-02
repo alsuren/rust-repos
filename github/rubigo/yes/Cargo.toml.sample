@@ -1,0 +1,23 @@
+[package]
+name = "rubigo-yes"
+version = "0.3.0"
+authors = ["Patrick Elsen <pelsen@xfbs.net>"]
+
+description = "Repeatedly print a string to a stream."
+documentation = "https://rubigo.github.io/coreutils/doc/rubigo_yes"
+homepage = "https://rubigo.github.io/coreutils"
+repository = "https://github.com/rubigo/yes"
+
+readme = "README.md"
+keywords = ["coreutils", "security", "unix", "posix", "linux"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+
+[dependencies.clap]
+version = "2.25.1"
+default-features = false
+features = []
+
+[dev-dependencies]
+regex = "0.2"

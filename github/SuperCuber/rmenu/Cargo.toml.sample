@@ -1,0 +1,13 @@
+[package]
+name = "rmenu"
+version = "0.1.4"
+authors = ["SuperCuber <amit.gold00@gmail.com>"]
+description = "A rofi and dmenu inspired menu"
+repository = "https://www.github.com/SuperCuber/rmenu"
+readme = "README.md"
+keywords = ["rofi", "dmenu", "menu"]
+categories = ["command-line-utilities", "gui"]
+license = "WTFPL"
+
+[dependencies]
+conrod = { version = "0.58.*", features = ["glium", "winit"] }

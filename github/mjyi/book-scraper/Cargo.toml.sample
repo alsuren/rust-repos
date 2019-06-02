@@ -1,0 +1,11 @@
+[package]
+name = "book-scraper"
+version = "0.1.0"
+authors = ["Fish_ <liumy.f@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.1.18"
+futures = "0.1.25"
+reqwest = "0.9.12"
+kuchiki = "0.7.2"

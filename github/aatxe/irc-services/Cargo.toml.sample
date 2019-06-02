@@ -1,0 +1,27 @@
+[package]
+
+name = "irc-services"
+version = "0.0.1"
+authors = ["Aaron Weiss <aaronweiss74@gmail.com>"]
+
+[features]
+
+all = ["democracy", "derp", "resistance"]
+democracy = []
+derp = []
+resistance = ["rand"]
+
+[dependencies.irc]
+
+irc = "*"
+features = ["ssl"]
+
+[dependencies.rand]
+
+rand = "*"
+optional = true
+
+[dependencies]
+
+openssl = "*"
+rustc-serialize = "*"

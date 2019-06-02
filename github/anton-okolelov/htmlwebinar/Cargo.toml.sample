@@ -1,0 +1,9 @@
+[package]
+name = "htmlwebinar"
+version = "0.1.0"
+authors = ["Anton <varan@teasernet.com>"]
+
+[dependencies]
+router = "*"
+[dependencies.iron]
+version = "*"

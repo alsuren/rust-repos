@@ -1,0 +1,9 @@
+[package]
+name = "workup"
+version = "0.1.0"
+authors = ["Nolan Clark <naclark1999@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+yaml-rust = "0.4"
+pancurses = "0.16"

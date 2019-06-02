@@ -1,0 +1,18 @@
+[package]
+name = "simeon"
+version = "0.0.1"
+authors = ["Andrzej Janik <vosen@vosen.pl>"]
+
+[profile.dev]
+opt-level = 0
+debug = true
+lto = false
+
+[profile.test]
+opt-level = 0
+debug = true
+lto = false
+
+[dependencies]
+unicode-xid = "0.0.3"
+libc = "0.1.10"

@@ -1,0 +1,13 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["Samuel Damashek <samuel.damashek@gmail.com>"]
+
+[dependencies]
+nom = "3.2.1"
+rand = "0.4"
+
+[dependencies.sdl2]
+version = "0.31.0"
+default-features = false
+features = ["gfx"]

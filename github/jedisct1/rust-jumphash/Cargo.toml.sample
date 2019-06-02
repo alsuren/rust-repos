@@ -1,0 +1,25 @@
+[package]
+name = "jumphash"
+version = "0.1.5"
+authors = ["Frank Denis <github@pureftpd.org>"]
+description = "A Fast, Minimal Memory, Consistent Hash Algorithm"
+keywords = ["hash"]
+readme = "README.md"
+license = "ISC"
+homepage = "https://github.com/jedisct1/rust-jumphash"
+repository = "https://github.com/jedisct1/rust-jumphash"
+categories = ["algorithms", "concurrency"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "jedisct1/rust-jumphash" }
+appveyor = { repository = "jedisct1/rust-jumphash" }
+
+[dependencies]
+siphasher = "~0.2"
+rand = "~0.6"
+
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = 3

@@ -1,0 +1,36 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+description = "An attempt at building an operating system, make sure you're vaccinated."
+authors = ["Alexandre Frigon <alexandre.frigon.1@gmail.com>"]
+edition = "2018"
+
+documentation = ""
+homepage = ""
+repository = "https://github.com/tetanos/TetanOS"
+readme = "https://github.com/tetanos/TetanOS/blob/master/README.md"
+license-file = "https://github.com/tetanos/TetanOS/blob/master/LICENSE"
+keywords = ["operating", "system", "os", "tetanus", "tetanos", "vaxx", "vaccinated"]
+categories = ["no-std"]
+
+[lib]
+name = "kernel"
+path = "src/lib.rs"
+crate-type = ["staticlib"]
+
+[badges]
+travis-ci = { repository = "https://github.com/tetanos/TetanOS", branch = "master" }
+maintenance = { status = "experimental" }
+
+[dependencies]
+spin = "0.4.9"
+volatile = "0.2.3"
+x86_64 = "0.4.0"
+pc-keyboard = "0.3.1"
+
+[dev-dependencies]
+array-init = "0.0.3"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]

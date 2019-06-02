@@ -1,0 +1,34 @@
+[package]
+name = "montar"
+version = "0.1.0"
+authors = ["orasunis <orasunis@protonmail.com>"]
+
+repository = "https://github.com/orasunis/montar"
+documentation = "https://docs.rs/montar"
+
+description = "A minecraft server written in rust."
+readme = "README.md"
+keywords = ["minecraft", "server"]
+categories = ["network-programming"]
+license = "Unlicense"
+
+include = ["Cargo.toml", "src/**/*.rs", "README.md", "UNLICENSE"]
+
+[dependencies]
+tokio = "0.1"
+
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+
+log = { version = "0.4", features = ["serde"] }
+fern = "0.5"
+chrono = { version = "0.4", features = ["serde"] }
+
+[lib]
+name = "montar"
+path = "src/lib.rs"
+
+[[bin]]
+name = "montar-start"
+path = "src/bin/montar.rs"

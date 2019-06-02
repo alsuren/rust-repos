@@ -1,0 +1,54 @@
+[package]
+name = "evredis"
+version = "0.1.0"
+description = "A Redis clone built on actix and evmap"
+authors = ["Matthijs Wolting <matthijswolting@gmail.com>"]
+license = "AGPL-3.0"
+readme = "README.md"
+repository = "https://github.com/mwolting/evredis"
+edition = "2018"
+
+
+[[bin]]
+name = "evredis"
+path = "src/bin/evredis.rs"
+
+
+[dependencies]
+app_dirs = "1.2"
+dotenv = "0.13"
+
+config = "0.9"
+serde = "1.0"
+serde_derive = "1.0"
+
+log = "0.3"
+slog = { version = "2.4", features = ["release_max_level_warn"] }
+slog-async = "2.3"
+slog-envlogger = "2.1"
+slog-json = "2.3"
+slog-scope = "4.1"
+slog-stdlog = { git = "https://github.com/slog-rs/stdlog.git" }
+slog-term = "2.4"
+
+quick-error = "1.2"
+smallvec = "0.6"
+
+clap = "2.32"
+structopt = "0.2"
+ctrlc = "3.1"
+
+actix = "0.7"
+actix_derive = "0.4"
+actix-net = "0.2"
+bytes = "0.4"
+futures = "0.1"
+tokio-codec = "0.1"
+tokio-io = "0.1"
+tokio-tcp = "0.1"
+
+evmap = "4.2"
+uuid = "0.7"
+
+semver = { version = "0.9", features = ["serde"] }
+

@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "lib",
+    "server",
+    "client"
+]
+
+[profile.bench]
+# For profiling
+debug = true
+
+[profile.release]
+# For profiling; https://github.com/rust-lang/cargo/issues/4240
+debug = true

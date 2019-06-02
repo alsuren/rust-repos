@@ -1,0 +1,34 @@
+[package]
+# General package information
+name = "block-compression"
+version = "0.1.0"
+description = "Tools to operate on block compressed (a.k.a. DDS / S3TC) textures."
+keywords = ["texture", "compression", "dds", "bc"]
+categories = ["rendering::data-formats", "game-engines", "multimedia::encoding", "multimedia::images"]
+
+exclude = [
+	# The tests contain the images, which are pretty big, so they should not be packaged with the crate.
+	"tests/**"
+]
+
+# Information useful for developers.
+repository = "https://github.com/GuildMasterInfinite/block-compression-rs"
+license = "MIT/Apache-2.0"
+authors = ["Gabriel Majeri <gabriel.majeri6@gmail.com>"]
+
+[badges]
+# Info about CI services.
+travis-ci = { repository = "https://travis-ci.org/GuildMasterInfinite/block-compression-rs/" }
+appveyor = { repository = "https://ci.appveyor.com/project/GuildMasterInfinite/block-compression-rs" }
+codecov = { repository = "https://codecov.io/gh/GuildMasterInfinite/block-compression-rs" }
+
+[dependencies]
+bitflags = "0.9.1"
+serde = "^1.0"
+serde_derive = "^1.0"
+bincode = "0.8.0"
+
+[dev-dependencies.image]
+version = "0.14"
+default-features = false
+features = ["bmp"]

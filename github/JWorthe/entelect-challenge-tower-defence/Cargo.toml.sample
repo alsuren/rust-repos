@@ -1,0 +1,38 @@
+[package]
+name = "zombot"
+version = "3.0.0"
+
+[dependencies]
+serde_derive = "1.0.71"
+serde = "1.0.71"
+serde_json = "1.0.26"
+
+rand = "0.5.5"
+time = "0.1.4"
+rayon = "1.0.2"
+
+arrayvec = "0.4.7"
+
+lazy_static = { version = "1.1.0", optional = true }
+
+[dev-dependencies]
+proptest = "0.8.4"
+
+[features]
+benchmarking = []
+single-threaded = []
+debug-decisions = []
+reduced-time = []
+extended-time = []
+
+energy-cutoff = []
+discard-poor-performers = []
+heuristic-random = ["lazy_static"]
+full-monte-carlo-tree = []
+static-opening = []
+weighted-win-ratio = []
+
+default = ["energy-cutoff", "discard-poor-performers", "static-opening", "weighted-win-ratio"]
+
+[profile.release]
+debug = true

@@ -1,0 +1,34 @@
+[package]
+
+name = "hello_world"
+version = "0.1.0"
+authors = ["furuhama yusuke <yuuuuusuke0210@gmail.com>"]
+description = "My trial of `The Rust Programming Language - second edition`."
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+
+num = "*"
+rand = "*"
+libc = "*"
+adder = { path = "adder" }
+prog_rust = { path = "prog_rust" }
+minigrep = { path = "minigrep" }
+failure = "*"
+regex = "*"
+
+[build-dependencies]
+
+cc = "*"
+
+[profile.dev]
+
+# opt-level can be from 0 to 3
+opt-level = 0
+
+[profile.release]
+
+opt-level = 3
+
+[workspace]

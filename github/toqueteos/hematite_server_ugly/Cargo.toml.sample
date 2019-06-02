@@ -1,0 +1,31 @@
+[package]
+
+name = "minero-api"
+version = "0.0.1"
+description = "A fully vanilla compatible Minecraft server."
+keywords = [
+	"client",
+	"minecraft",
+	"mod",
+	"moddable",
+	"modding",
+	"server",
+]
+authors = [
+	"Carlos Cobo <toqueteos@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+documentation = "https://github.com/minero/minero-api"
+repository = "https://github.com/minero/minero-api.git"
+homepage = "https://github.com/minero/minero-api"
+
+[dependencies]
+rand = "*"
+#rust-crypto = "*"
+rustc-serialize = "*"
+time = "*"
+uuid = "*"
+
+[dev-dependencies]
+log = "0.2"

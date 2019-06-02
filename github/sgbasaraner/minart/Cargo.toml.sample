@@ -1,0 +1,11 @@
+[package]
+name = "minart"
+version = "0.1.0"
+authors = ["Sarp Basaraner <sarpbasaraner@gmail.com>"]
+description = "An image resizing tool to simplify the process of image resizing for iOS projects."
+repository = "https://github.com/sgbasaraner/minart"
+license = " GPL-2.0-only"
+
+[dependencies]
+image = "*"
+

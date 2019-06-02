@@ -1,0 +1,27 @@
+[package]
+name = "concread"
+version = "0.1.2"
+authors = ["William Brown <william@blackhats.net.au>"]
+
+description = "Concurrently Readable Data-Structures for Rust"
+documentation = "https://docs.rs/concread/latest/concread/"
+homepage = "https://github.com/Firstyear/concread/"
+repostiory = "https://github.com/Firstyear/concread/"
+readme = "README.md"
+keywords = ["data-structures", "concread", "concurrency", "parallel",]
+categories = ["data-structures", "memory-management",]
+license = "MPL-2.0"
+license-file = "LICENSE.md"
+
+[dependencies]
+crossbeam-epoch = "0.5"
+crossbeam-utils = "0.5"
+parking_lot = "0.6"
+
+[dev-dependencies]
+time = "0.1"
+
+[[bin]]
+name = "unsound"
+path = "src/unsound.rs"
+

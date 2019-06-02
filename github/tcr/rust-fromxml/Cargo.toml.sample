@@ -1,0 +1,16 @@
+[package]
+
+name = "fromxml"
+version = "1.2.0"
+authors = ["Tim Cameron Ryan <tim@technical.io>"]
+license = "MIT/Apache-2.0"
+description = """
+Macro to parse XML data into structs.
+"""
+
+[lib]
+name = "fromxml"
+crate-type = ["rlib"]
+
+[dependencies]
+xml-rs = "0.1.9"

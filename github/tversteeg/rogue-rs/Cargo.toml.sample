@@ -1,0 +1,22 @@
+[package]
+name = "rogue"
+version = "0.1.0"
+description = "Helper algorithms for creating a roguelike"
+readme = "README.md"
+keywords = ["roguelike", "dungeon", "algorithm", "game"]
+authors = ["Thomas Versteeg <thomasversteeg@gmx.com>"]
+repository = "https://github.com/tversteeg/rogue-rs.git"
+homepage = "https://github.com/tversteeg/rogue-rs"
+
+[dependencies]
+rand = "0.3"
+
+[[example]]
+name = "simple_game"
+path = "examples/main.rs"
+
+# Dev dependencies
+[dev-dependencies.cursive]
+version = "0.7"
+default-features = false
+features = ["termion-backend"]

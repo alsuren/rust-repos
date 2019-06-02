@@ -1,0 +1,15 @@
+[package]
+authors = ["Sebastian Thiel <byronimo@gmail.com>"]
+name = "npm-tools"
+version = "0.1.0"
+
+[dependencies]
+quick-error = "1.1.0"
+semver = "0.2.3"
+serde = "0.8"
+serde_json = "0.8"
+
+[dev-dependencies]
+fs-utils = "*"
+hamcrest = "*"
+tempdir = "^0.3"

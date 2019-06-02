@@ -1,0 +1,20 @@
+[package]
+name = "internet-of-coffee"
+version = "0.1.0"
+authors = ["Johan Burell <johan.burell@valtech.se>"]
+
+[dependencies]
+libusb = "0.3.0"
+chrono = "0.2.25"
+regex = "0.1.80"
+ansi_term = "0.9"
+#sdl2 = "0.27.0"
+rand = "0.3.14"
+#libevdev-sys = "0.1.1"
+#libc = "*"
+event_parse = { version = "*", path = "event_parse" }
+
+[dependencies.sdl2]
+version = "0.27.0"
+default-features = false
+features = ["ttf", "image"]

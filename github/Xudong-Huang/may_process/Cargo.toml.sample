@@ -1,0 +1,36 @@
+[package]
+name = "may_process"
+version = "0.1.0"
+authors = ["Xudong Huang <huangxu008@hotmail.com>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/Xudong-Huang/may_process"
+homepage = "https://github.com/Xudong-Huang/may_process"
+documentation = "https://docs.rs/may_process"
+description = """
+asynchronous process library that can be used in coroutines
+"""
+categories = ["asynchronous"]
+
+[badges]
+travis-ci = { repository = "Xudong-Huang/may_process" }
+appveyor = { repository = "Xudong-Huang/may_process" }
+
+[dependencies]
+may = { git = "https://github.com/Xudong-Huang/may.git" }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+may_signal = { git = "https://github.com/Xudong-Huang/may_signal.git" }
+
+[target.'cfg(windows)'.dependencies.winapi]
+version = "0.3"
+features = [
+  "handleapi",
+  "winerror",
+  "minwindef",
+  "processthreadsapi",
+  "synchapi",
+  "threadpoollegacyapiset",
+  "winbase",
+  "winnt",
+]

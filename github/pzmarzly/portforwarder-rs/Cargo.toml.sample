@@ -1,0 +1,20 @@
+[package]
+name = "portforwarder-rs"
+version = "0.1.0"
+description = "Forwards ports on UPnP-enabled gateways. Inspired by portmapper (written in Java). Command line and lib."
+authors = ["Paweł Zmarzły <pawo2500@gmail.com>"]
+homepage = "https://github.com/pzmarzly/portforwarder-rs"
+repository = "https://github.com/pzmarzly/portforwarder-rs"
+keywords = ["upnp", "port", "forwarding", "network", "forward"]
+readme = "README.md"
+categories = ["network-programming", "command-line-utilities"]
+license = "MIT"
+
+[dependencies]
+get_if_addrs = "0.4.0"
+igd = "0.6.0"
+chan = "0.1.21"
+chan-signal = "0.3.1"
+
+[profile.release]
+lto = true

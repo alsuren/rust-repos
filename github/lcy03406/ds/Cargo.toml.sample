@@ -1,0 +1,19 @@
+[package]
+name = "ds"
+version = "0.1.0"
+authors = ["lichengyu <lichengyu1985@163.com>"]
+
+[dependencies]
+mio = "*"
+log = "*"
+env_logger = "*"
+byteorder = "*"
+serde = "*"
+serde_macros = "*"
+serde_json = "*"
+protobuf = "*"
+rustc-serialize = "*"
+toml = "*"
+time = "*"
+
+[dev-dependencies]

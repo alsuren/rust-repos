@@ -1,0 +1,27 @@
+[package]
+authors = ["Your Name <you@example.com>"]
+name = "gfx-hal-demo"
+version = "0.1.0"
+
+[dependencies]
+glsl-to-spirv = "0.1.6"
+image = "0.19.0"
+winit = "0.17.2"
+
+[dependencies.gfx-backend-vulkan]
+git = "https://github.com/gfx-rs/gfx"
+
+[dependencies.gfx-hal]
+git = "https://github.com/gfx-rs/gfx"
+
+[[bin]]
+path = "./src/main.rs"
+name = "main"
+
+[[bin]]
+path = "./src/rect.rs"
+name = "rect"
+
+[[bin]]
+path = "./src/triangle.rs"
+name = "triangle"

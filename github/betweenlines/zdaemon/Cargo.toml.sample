@@ -1,0 +1,17 @@
+[package]
+name = "zdaemon"
+version = "0.0.2"
+authors = [ "Peter Hayes <peter.hayes@betweenlines.co.uk>" ]
+license = "MPL-2.0"
+description = "Boilerplate for creating daemons in Rust and exposing services via ZeroMQ sockets."
+keywords = ["zdaemon"]
+repository = "https://github.com/betweenlines/zdaemon"
+
+[dev-dependencies]
+
+tempdir = "0.3.*"
+
+[dependencies]
+
+czmq = "0.1"
+rustc-serialize = "0.3.*"

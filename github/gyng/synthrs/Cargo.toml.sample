@@ -1,0 +1,40 @@
+[package]
+
+name = "synthrs"
+version = "0.1.0"
+authors = [
+    "ng.guoyou@gmail.com",
+    "stacey.ell@gmail.com"
+]
+edition = "2018"
+
+[dependencies]
+
+byteorder = "1.2.7"
+num = "0.2.0"
+rand = "0.6.5"
+
+[lib]
+
+name = "synthrs"
+path = "src/lib.rs"
+
+[[example]]
+
+name = "simple"
+path = "examples/simple.rs"
+
+[[example]]
+
+name = "telecoms"
+path = "examples/telecoms.rs"
+
+[[example]]
+
+name = "filters"
+path = "examples/filters.rs"
+
+[[example]]
+
+name = "midi"
+path = "examples/midi.rs"

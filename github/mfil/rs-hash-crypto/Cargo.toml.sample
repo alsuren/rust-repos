@@ -1,0 +1,9 @@
+[package]
+name = "hash-crypto"
+version = "0.1.0"
+authors = ["Max Fillinger <max@max-fillinger.net>"]
+
+[dependencies]
+itertools = "0.7.0"
+openssl = "0.10.12"
+rand = "0.4.0"

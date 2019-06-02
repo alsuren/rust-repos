@@ -1,0 +1,25 @@
+[package]
+name = "helios"
+version = "0.1.0"
+authors = ["gloit <gloit042@gmail.com>"]
+license = "MIT"
+edition = "2018"
+categories = ["feed"]
+keywords = ["rss", "xml", "subscribe"]
+
+
+[dependencies]
+url = "1.7.1"
+chrono = "0.4"
+log = "0.4"
+mime = "0.3"
+failure = "0.1.2"
+quick-xml = "0.12"
+futures = "0.1"
+curl = "0.4"
+tokio = "0.1"
+env_logger = "0.6"
+
+[[exmaple]]
+name = "single_feed_stream"
+path = "examples/single_feed_stream.rs"

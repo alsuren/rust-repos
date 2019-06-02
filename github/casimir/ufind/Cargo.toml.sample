@@ -1,0 +1,18 @@
+[package]
+name = "ufind"
+version = "0.3.1"
+authors = ["Martin Chaine <martin@casimir.me>"]
+description = "Finds you all sort of funky characters"
+repository = "https://github.com/casimir/ufind"
+license = "MIT"
+keywords = ["digraph"]
+build = "build.rs"
+
+[dependencies]
+atty = "0.2"
+clap = "2.20"
+
+[build-dependencies]
+clap = "2.20"
+
+# vim: ft=ini

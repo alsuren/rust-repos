@@ -1,0 +1,38 @@
+[package]
+name = "volunode"
+version = "0.1.0"
+authors = [
+    "Artem Vorotnikov <artem@vorotnikov.me>",
+]
+description = "BOINC client for Linux"
+repository = "https://github.com/volunode/volunode-rs"
+keywords = [
+    "boinc",
+    "rpc",
+    "api",
+]
+categories = [
+    "boinc",
+]
+license = "GPL-3.0"
+
+[dependencies]
+boinc_app_api = { git = "https://github.com/volunode/boinc-app-api-rs" }
+bytes = "*"
+chan = "*"
+chrono = "*"
+error-chain = "*"
+futures = "*"
+futures-await = "*"
+futures-spawn = "*"
+futures-cpupool = "*"
+rust-crypto = "*"
+serde = "*"
+serde_json = "*"
+tokio-core = "*"
+tokio-io = "*"
+tokio-proto = "*"
+tokio-service = "*"
+treexml = { git = "https://github.com/rahulg/treexml-rs" }
+treexml_util = { git = "https://github.com/vorot93/treexml-util" }
+uuid = { version = "*", features = ["use_std", "serde", "v4"] }

@@ -1,0 +1,9 @@
+[package]
+name = "rust-ruuvitag"
+version = "0.1.0"
+authors = ["Mikko Viitamäki <mikko.viitamaki+github@gmail.com>"]
+
+[dependencies]
+blurz = "0.3.0"
+ruuvitag =  { path = "/home/mikko/ohjelmointi/github/ruuvitag-lib", version="0.1.0" }
+clap = "*"

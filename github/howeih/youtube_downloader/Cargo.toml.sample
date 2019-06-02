@@ -1,0 +1,10 @@
+[package]
+name = "youtube_downloader"
+version = "0.1.0"
+authors = ["howeih <howeih@gmail.com>"]
+
+
+[dependencies]
+url = "1.6.0"
+reqwest = "0.8.2"
+pbr = "1.0.0"

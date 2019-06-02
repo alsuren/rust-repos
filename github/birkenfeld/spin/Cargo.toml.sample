@@ -1,0 +1,27 @@
+[package]
+name = "spin"
+version = "0.1.0"
+authors = ["Georg Brandl <g.brandl@fz-juelich.de>"]
+license = "GPL-2.0"
+edition = "2018"
+
+[workspace]
+
+[[bin]]
+name = "spin_srv"
+path = "src/srv/main.rs"
+
+[[bin]]
+name = "spin_db"
+path = "src/db/main.rs"
+
+[dependencies]
+log = "*"
+time = "*"
+fxhash = "*"
+
+[dependencies.spin_core]
+path = "src/core"
+
+[dependencies.spin_devices]
+path = "src/dev"

@@ -1,0 +1,21 @@
+[package]
+name = "gc_input_viewer"
+version = "0.3.0"
+authors = ["Isaac Lozano <109lozanoi@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+dtm2txt = {git = "https://github.com/Isaac-Lozano/dtm2txt.git"}
+serialport = "3.1.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde_yaml = "0.8"
+
+[dependencies.sdl2]
+version = "0.31.0"
+features = ["image"]
+
+[dependencies.winapi]
+version = "0.3.6"
+features = ["psapi", "memoryapi", "processthreadsapi"]

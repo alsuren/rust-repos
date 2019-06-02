@@ -1,0 +1,31 @@
+[package]
+name = "irs"
+version = "0.1.0"
+authors = ["Josh Gao <josh@insolit.us>"]
+
+license = "Apache-2.0"
+description = "rust irc client"
+
+[lib]
+name = "irs"
+
+[[bin]]
+name = "irs"
+doc = false
+
+[dependencies]
+rand = "0.3"
+
+serde = "0.8"
+serde_json = "0.8"
+
+mio = "0.6"
+mio-uds = "0.6"
+unix_socket = "0.4"
+
+protobuf = "1.0.24"
+
+irc = "0.11"
+irc_message = "1.0"
+
+cursive = "0.3"

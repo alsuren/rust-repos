@@ -1,0 +1,8 @@
+[package]
+name = "rusttrace"
+version = "0.1.0"
+authors = ["Chew Esmero <chew.esmero@gmail.com>"]
+links = "trace"
+build = "build.rs"
+
+[dependencies]

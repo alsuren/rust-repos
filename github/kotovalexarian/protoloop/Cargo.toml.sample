@@ -1,0 +1,14 @@
+[package]
+name = "protoloop"
+version = "0.0.0"
+license = "MIT"
+edition = "2018"
+readme = "README.md"
+description = "Tunneling connections over multiple transports"
+homepage = "https://github.com/kotovalexarian/protoloop"
+repository = "https://github.com/kotovalexarian/protoloop.git"
+authors = ["Alex Kotov <kotovalexarian@gmail.com>"]
+categories = ["network-programming"]
+keywords = []
+
+[dependencies]

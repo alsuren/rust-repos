@@ -1,0 +1,10 @@
+[package]
+name = "umbreon"
+version = "0.1.0"
+authors = ["by77er"]
+
+[dependencies]
+sys-info = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"

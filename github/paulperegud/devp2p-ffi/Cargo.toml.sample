@@ -1,0 +1,20 @@
+[package]
+name = "devp2p-ffi"
+version = "0.1.0"
+authors = ["Paul Peregud <paulperegud@gmail.com>"]
+publish = false
+
+[dependencies]
+libc = "0.2.7"
+ethcore-network = { git = "https://github.com/ethcore/parity", tag = "v1.5.0" }
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[features]
+
+# signaled by rust_ext; cargo is mad if it's not listed here
+python27-sys = []
+python3-sys = []
+

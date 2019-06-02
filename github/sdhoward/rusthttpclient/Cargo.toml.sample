@@ -1,0 +1,11 @@
+[package]
+name = "client"
+version = "0.2.0"
+
+[dependencies]
+hyper = "0.6"
+libc = "0.1.10"
+
+[lib]
+name = "rusthttpclient"
+crate-type = ["rlib", "dylib"]

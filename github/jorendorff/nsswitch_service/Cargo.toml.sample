@@ -1,0 +1,12 @@
+[package]
+name = "nsswitch_service"
+version = "0.1.0"
+authors = ["Jason Orendorff <jason.orendorff@gmail.com>"]
+
+[dependencies]
+libc = "0.2.36"
+
+[[example]]
+path = "examples/nss_loopback.rs"
+name = "nss_loopback"
+crate-type = ["cdylib"]

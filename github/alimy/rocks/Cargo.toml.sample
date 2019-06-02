@@ -1,0 +1,27 @@
+[package]
+name = "rocks"
+version = "0.1.0"
+authors = ["Michael Li <alimy@gility.net>"]
+description = "Rust tutorial example"
+license = "Apache-2.0"
+
+[workspace]
+members = [
+    "guessing-game",
+    "rocks-ctl",
+    "variables",
+    "ownership",
+    "communicator",
+    "actix-sample",
+    "network-sample",
+    "collections",
+    "generics",
+    "minigrep"
+]
+
+[dependencies]
+guessing-game = { path = "guessing-game" }
+ownership = { path = "ownership" }
+communicator = { path = "communicator" }
+collections = { path = "collections" }
+clap = "2"

@@ -1,0 +1,25 @@
+[package]
+name    = "gauss"
+version = "0.5.0"
+
+repository = "https://github.com/RoxasShadow/gauss"
+authors    = ["Giovanni Capuano <webmaster@giovannicapuano.net>"]
+license    = "WTFPL"
+
+description = "Sono bello."
+keywords    = ["bot", "irc"]
+
+[dependencies]
+irc = "0.11"
+
+regex       = "0.1"
+lazy_static = "0.2"
+time        = "0.1"
+kuchiki     = { version = "0.3", features = ["hyper"] }
+rustfm      = "0.1"
+hyper       = "0.9"
+redis       = "0.5"
+
+serde        = "0.8"
+serde_json   = "0.8"
+serde_derive = "0.8"

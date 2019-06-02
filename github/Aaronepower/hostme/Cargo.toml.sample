@@ -1,0 +1,8 @@
+[package]
+authors = ["Aaron Power <theaaronepower@gmail.com>"]
+name = "hostme"
+version = "0.1.0"
+[dependencies]
+futures = "*"
+hyper = { git = "https://github.com/hyperium/hyper"}
+mime = "*"

@@ -1,0 +1,16 @@
+[package]
+name = "docker"
+description = "Docker Remote API in Rust"
+version = "0.0.41"
+authors = ["Graham Lee <ghmlee@ghmlee.com>"]
+license = "Apache-2.0"
+homepage = "https://github.com/ghmlee/rust-docker"
+repository = "https://github.com/ghmlee/rust-docker.git"
+documentation = "https://ghmlee.github.io/rust-docker/doc/docker"
+readme = "README.md"
+keywords = ["docker"]
+
+[dependencies]
+openssl = "0.6.7"
+unix_socket = "0.4.6"
+rustc-serialize = "0.3.16"

@@ -1,0 +1,11 @@
+[package]
+name = "sortable_challenge"
+version = "0.1.0"
+authors = ["Damien Schoof <damien.schoof@gmail.com>"]
+
+
+[dependencies]
+clippy = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"

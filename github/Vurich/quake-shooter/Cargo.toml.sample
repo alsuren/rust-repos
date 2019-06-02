@@ -1,0 +1,12 @@
+[package]
+name = "quake-shooter"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+amethyst = { git = "https://github.com/Vurich/amethyst.git" }
+amethyst-bsp = { git = "https://github.com/Vurich/amethyst-bsp.git" }
+amethyst-anysource = { git = "https://github.com/Vurich/amethyst-anysource.git" }
+amethyst-pk3 = { git = "https://github.com/Vurich/amethyst-pk3.git" }
+serde = "1.0"

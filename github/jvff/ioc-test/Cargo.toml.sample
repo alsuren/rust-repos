@@ -1,0 +1,16 @@
+[package]
+name = "ioc-test"
+version = "0.1.0"
+authors = ["Janito Vaqueiro Ferreira Filho <janito.vff@gmail.com>"]
+
+[dependencies]
+bytes = "0.4"
+futures = "0.1"
+ordered-float = "0.5"
+tokio-io = "0.1"
+tokio-core = "0.1"
+tokio-proto = { git = "https://github.com/jvff/tokio-proto", branch = "generic_error" }
+tokio-process = "0.1"
+tokio-service = "0.1"
+error-chain = "0.10"
+termion = "1.5"

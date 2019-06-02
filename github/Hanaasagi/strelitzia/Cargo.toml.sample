@@ -1,0 +1,21 @@
+[package]
+name = "strelitzia"
+version = "0.1.0"
+authors = ["Hanaasagi <ambiguous404@gmail.com>"]
+
+[lib]
+name = "strelitzia"
+
+[[bin]]
+name = "strelitzia"
+path = "src/bin/strelitzia.rs"
+
+[dependencies]
+cpython = "0.1"
+libc = "0.2"
+config = "0.8"
+nix = "0.9"
+signal = "0.4"
+log = "0.4"
+env_logger = "0.5"
+time = "0.1"

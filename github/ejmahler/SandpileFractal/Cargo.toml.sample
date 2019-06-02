@@ -1,0 +1,14 @@
+[package]
+name = "sandpile_fractal"
+version = "0.1.0"
+authors = ["Elliott Mahler <emahler@usc.edu>"]
+
+[dependencies]
+image = "*"
+rayon = "*"
+serde = "*"
+serde_derive = "*"
+bincode = "*"
+
+[dev-dependencies]
+rand = "*"

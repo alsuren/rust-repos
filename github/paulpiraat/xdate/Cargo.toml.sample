@@ -1,0 +1,14 @@
+[package]
+name = "xclock"
+version = "0.2.0"
+authors = ["Paul Boelens <info@paulboelens.com"]
+description = "Get the current datetime"
+documentation = "Run ./xclock"
+license = "MIT"
+homepage = ""
+repository = ""
+
+[dependencies]
+chrono = "0.4.5"
+clap = "~2.32"
+xcb = "0.8.2"

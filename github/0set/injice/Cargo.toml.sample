@@ -1,0 +1,8 @@
+[package]
+name = "injice"
+version = "0.1.0"
+authors = ["Will Tange <will@brt.sexy>"]
+
+[dependencies]
+kernel32-sys = "*"
+winapi = "*"

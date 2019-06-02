@@ -1,0 +1,25 @@
+[package]
+name = "bezier"
+version = "0.1.0"
+authors = ["Christian Nyumbayire <chritchens@gmail.com>"]
+
+[lib]
+name = "bezier_lib"
+
+[[bin]]
+name = "bezier"
+
+[dependencies]
+serde = "^1"
+serde_derive = "^1"
+serde_json = "^1"
+serde_cbor = "^0.9"
+hex = "^0.3"
+sodiumoxide = "^0.1"
+rocksdb = "^0.10"
+structopt = "^0.2"
+clap = "^2.32"
+mitrid_core = "^0.9"
+
+[dev-dependencies]
+tempfile = "^3"

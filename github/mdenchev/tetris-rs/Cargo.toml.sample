@@ -1,0 +1,11 @@
+[package]
+name = "tetris-rs"
+version = "0.1.0"
+authors = ["Michail Denchev <>"]
+
+[dependencies]
+kiss3d = "0.16"
+nalgebra = "0.16"
+rand = { version = "0.6", features = ["stdweb"] }
+stdweb = "0.4"
+serde = "1.0"

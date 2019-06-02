@@ -1,0 +1,13 @@
+[package]
+name = "rustyboy"
+version = "0.1.0"
+authors = ["jtlatlik <jtlatlik@techfak.uni-bielefeld.de>"]
+
+[dependencies]
+sdl2 = "0.12"
+getopts = "0.2.14"
+readline = "0.0.11"
+log = "0.3.5"
+time = "0.1.34"
+libc = "0.2.6"
+bitflags = "0.4.0"

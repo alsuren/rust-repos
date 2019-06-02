@@ -1,0 +1,9 @@
+[package]
+name = "pycompile"
+version = "0.1.0"
+authors = ["Windel Bouwman <windel@windel.nl>"]
+edition = "2018"
+
+[dependencies]
+rustpython_parser = {path = "../RustPython/parser"}
+glob = "0.3.0"

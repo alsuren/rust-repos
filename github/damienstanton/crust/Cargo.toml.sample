@@ -1,0 +1,8 @@
+[package]
+name = "crust"
+version = "0.1.0"
+authors = ["Damien Stanton <damien.stanton@gmail.com>"]
+edition = "2018"
+
+[build-dependencies]
+cc = { version = "1.0", features = ["parallel"] }

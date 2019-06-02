@@ -1,0 +1,41 @@
+[package]
+name = "learn_gfx_2d"
+version = "0.1.0"
+authors = ["Justin Hamilton <justinanthonyhamilton@gmail.com>"]
+
+[dependencies]
+cgmath = "*"
+gfx = "*"
+gfx_window_glutin = "*"
+glutin = "*"
+image = "*"
+time = "*"
+
+[[example]]
+name = "kitten_bouncing"
+path = "examples/kitten_bouncing/src/main.rs"
+
+[[example]]
+name = "kitten_keyboard"
+path = "examples/kitten_keyboard/src/main.rs"
+
+[[example]]
+name = "square_interpolated"
+path = "examples/square_interpolated/src/main.rs"
+
+[[example]]
+name = "square_elements"
+path = "examples/square_elements/src/main.rs"
+
+
+[[example]]
+name = "triangle_basic"
+path = "examples/triangle_basic/src/main.rs"
+
+[[example]]
+name = "triangle_flashing"
+path = "examples/triangle_flashing/src/main.rs"
+
+[[example]]
+name = "triangle_interpolated"
+path = "examples/triangle_interpolated/src/main.rs"

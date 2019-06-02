@@ -1,0 +1,12 @@
+[package]
+name = "tungsten"
+version = "0.1.0"
+authors = ["Layl <LaylConway@users.noreply.github.com>"]
+description = "A game framework for Rust"
+keywords = ["gamedev"]
+repository = "https://github.com/carbidegames/tungsten"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+dynamic = "0.2.1"
+time = "0.1.35"

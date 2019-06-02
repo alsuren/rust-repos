@@ -1,0 +1,10 @@
+[package]
+name = "omega_san"
+version = "0.1.0"
+authors = ["Kyle Clemens <jkc.clemens@gmail.com>"]
+
+[dependencies]
+discord = "0.8"
+dotenv = "0.10"
+regex = "0.2"
+lazy_static = "0.2"

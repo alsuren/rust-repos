@@ -1,0 +1,16 @@
+[package]
+name = "rt"
+version = "0.1.0"
+authors = ["James Forcier <csssuf@csssuf.net>"]
+
+[dependencies]
+rustc-serialize = "*"
+bencode = "0.1.15"
+iron = "0.5.*"
+router = "*"
+params = "*"
+persistent = "*"
+clap = "2"
+toml = "0.3"
+serde_derive = "0.9"
+serde = "0.9"

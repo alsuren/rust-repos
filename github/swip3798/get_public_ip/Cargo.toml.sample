@@ -1,0 +1,12 @@
+[package]
+name = "get_public_ip"
+version = "1.0.0"
+authors = ["swip3798"]
+edition = "2018"
+
+[dependencies]
+reqwest = "*"
+serde = { version = "1.0", features = ["derive"] }
+
+# serde_json is just for the example, not required in general
+serde_json = "1.0"

@@ -1,0 +1,99 @@
+[package]
+name = "wc"
+version = "0.1.0"
+authors = ["steve"]
+
+[profile.release]
+lto=true
+opt-level = 3
+#panic = 'abort'
+debug = false
+debug-assertions = false
+target-cpus='native'
+
+[[bin]]
+name = "text"
+path = "src/text.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "wc"
+path = "src/main.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "gb"
+path = "src/gb.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "csv"
+path = "src/csv.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "respeed"
+path = "src/respeed.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "walktar"
+path = "src/walktar.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "du2"
+path = "src/du.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "et"
+path = "src/et.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "et2"
+path = "src/et2.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "xmltst"
+path = "src/xmltst.rs"
+crate-type = ["bin"]
+
+[[bin]]
+name = "fancyre"
+path = "src/fancyre.rs"
+crate-type = ["bin"]
+
+
+[dependencies]
+quick-xml = "0.12.0"
+failure = "0.1.1"
+bytecount = "0.2.0"
+clap = "2.29.0"
+rand="0.3"
+heapsize = "0.4.1"
+libc = "0.2.34"
+fnv = "1.0.3"
+csv = "1.0.0-beta.5"
+regex = "0.2.5"
+
+futures = "0.1.18"
+
+flate2 = "0.2"
+tar = "0.4.14"
+users = "0.5.0"
+prettytable-rs = "^0.6"
+built = "0.2.3"
+encoding_rs = "0.7.2"
+
+fancy-regex = "0.1.0"
+
+[features]
+avx-accel = ["bytecount/avx-accel"]
+simd-accel = [
+  "bytecount/simd-accel",
+  "regex/simd-accel",
+  "encoding_rs/simd-accel",
+]

@@ -1,0 +1,40 @@
+[package]
+name = "tss-sapi"
+version = "0.0.3-pre"
+authors = ["Doug Goldstein <doug@starlab.io>"]
+license = "MIT/Apache-2.0"
+description = "Bindings to the TPM 2.0 TSS SAPI"
+repository = "https://gitlab.com/starlab-io/tss-sapi.git"
+homepage = "https://gitlab.com/starlab-io/tss-sapi"
+documentation = "https://docs.rs/tss-sapi"
+readme = "README.md"
+keywords = ["tpm", "tss", "sapi"]
+categories = ["api-bindings"]
+build = "build.rs"
+links = "sapi"
+
+[badges]
+gitlab = { repository = "starlab-io/tss-sapi" }
+
+[dependencies]
+enum-primitive-derive = "0.1.2"
+error-chain = "0.10.0"
+log = "0.3"
+num-traits = "0.1"
+try_from = "0.2.2"
+
+#[build-dependencies]
+#bindgen = "=0.25.3"
+
+[dev-dependencies]
+pretty_env_logger = "0.1.1"
+
+[features]
+
+default = ["tcti-device", "tcti-socket"]
+
+# links to the tcti-device library
+tcti-device = []
+
+# links to the tcti-socket library
+tcti-socket = []

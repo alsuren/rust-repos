@@ -1,0 +1,11 @@
+[package]
+name = "scott"
+version = "0.1.0"
+authors = ["appositum <appositum@protonmail.com>"]
+
+[dependencies]
+serenity = "0.5.9"
+chrono = "0.4"
+log = "0.4"
+env_logger = "0.5.13"
+rand = "0.5.0"

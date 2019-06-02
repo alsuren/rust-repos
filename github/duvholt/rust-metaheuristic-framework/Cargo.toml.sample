@@ -1,0 +1,16 @@
+[package]
+authors = ["Christian Duvholt <christian@duvholt.net>"]
+name = "rustoa"
+version = "0.0.1"
+
+[dependencies]
+rand = "0.4.2"
+clap = "2.30.0"
+serde_json = "1.0.9"
+serde = "1.0"
+serde_derive = "1.0"
+assert_approx_eq = "1.0.0"
+ansi_term = "0.11"
+statistical = "0.1.1"
+ordered-float = "0.5.0"
+itertools = "0.7.8"

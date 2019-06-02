@@ -1,0 +1,21 @@
+[package]
+name = "irwir"
+authors = ["Alexander Sosedkin <monk@unboiled.info>"]
+description = "An input remapper for linux"
+keywords = ["uinput", "linux", "input", "input-remapping"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/t184256/irwir"
+version = "0.1.0"
+
+[dependencies]
+gluon = { git = "https://github.com/Marwes/gluon", branch = "issue_591" }
+gluon_codegen = { git = "https://github.com/Marwes/gluon", branch = "issue_591" }
+gluon_vm = { git = "https://github.com/Marwes/gluon", branch = "issue_591" }
+indoc = "0.2.6"
+input-linux = { version = "0.0.1", features = [ "with-serde" ] }
+log = "0.4.3"
+ref_slice = "1.1.1"
+ron = "0.3.0"
+serde = "1.0.70"
+serde_derive = "1.0.70"
+toml = "0.4.6"

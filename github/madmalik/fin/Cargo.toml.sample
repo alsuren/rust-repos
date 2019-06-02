@@ -1,0 +1,15 @@
+[package]
+name = "clean-float"
+version = "0.0.2"
+description = "NaN-free floiting point numbers. Not ready to be used yet!"
+authors = ["tellen <matthias.tellen@gmail.com>"]
+keywords = ["float", "NaN", "finite", "infinite"]
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+num-traits = "^0.1.40"
+lazy_static = "^0.2.9"
+backtrace = "0.3.3"
+failure = { git = "https://github.com/withoutboats/failure.git"}
+failure_derive = { git = "https://github.com/withoutboats/failure_derive"}

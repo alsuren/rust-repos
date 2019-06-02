@@ -1,0 +1,21 @@
+[package]
+name = "dnssec_verifier"
+version = "0.1.0"
+authors = ["Vicky Shrestha <vicky@cloudflare.com>"]
+edition = "2018"
+
+[dependencies]
+log = "*"
+env_logger = "*"
+ring = "*"
+untrusted = "*"
+domain= "*"
+bytes = "*"
+base64 = "*"
+chrono = "0.4"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

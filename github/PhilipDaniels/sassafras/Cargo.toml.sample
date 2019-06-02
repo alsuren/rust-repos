@@ -1,0 +1,22 @@
+[package]
+name = "sassafrasc"
+version = "0.1.0"
+authors = ["Philip Daniels <Philip.Daniels1971@gmail.com>"]
+
+[dependencies]
+structopt = "0.2.8"
+built = "0.3.0"
+clap = "2.31.2"
+sassafras = { path = "sassafras" }
+libc = "*"
+
+[profile.release]
+lto = true
+
+[workspace]
+members = [
+    "sassafras"
+]
+
+[features]
+capi = []

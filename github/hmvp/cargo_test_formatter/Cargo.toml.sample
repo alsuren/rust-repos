@@ -1,0 +1,11 @@
+[package]
+name = "cargo_test_formatter"
+version = "0.2.0"
+authors = ["Hmvp <github@hmvp.nl>"]
+
+[dependencies]
+RustyXML = "0.1.1"
+
+[dependencies.nom]
+version = "^3.2"
+features = ["verbose-errors"]

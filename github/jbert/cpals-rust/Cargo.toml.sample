@@ -1,0 +1,21 @@
+[package]
+name = "cpals"
+version = "0.1.0"
+authors = ["John Berthels <john.berthels@gmail.com>"]
+
+[dependencies]
+itertools="*"
+base64="*"
+maplit="*"
+openssl="*"
+rand="0.5"
+byteorder="*"
+digest="*"
+block-buffer="*"
+byte-tools="*"
+fake-simd="*"
+hyper="*"
+url="*"
+reqwest="*"
+num={version = "0.2", features=["rand"]}
+

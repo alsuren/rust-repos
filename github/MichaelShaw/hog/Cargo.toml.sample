@@ -1,0 +1,10 @@
+[package]
+name = "hog"
+version = "0.1.0"
+authors = ["Michael Shaw <michaeljshaw@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+num-traits = "0.1"
+num-integer = "0.1"
+colored = "1.5"

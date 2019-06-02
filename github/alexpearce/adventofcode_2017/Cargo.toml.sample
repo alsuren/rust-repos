@@ -1,0 +1,10 @@
+[package]
+name = "adventofcode_2017"
+version = "0.1.0"
+authors = ["Alex Pearce <alex@alexpearce.me>"]
+
+[dependencies]
+
+[lib]
+name = "aoc17"
+path = "src/lib.rs"

@@ -1,0 +1,29 @@
+[package]
+name = "dryad"
+version = "0.1.2"
+authors = ["m4b <m4b.github.io@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[build-dependencies]
+gcc = "0.3"
+
+[dependencies]
+libc = "0.2"
+crossbeam = "0.2.9"
+colorify = { version = "0.2.2", optional = true }
+syscall = "0.2.1"
+
+[features]
+default = ["color"]
+color = ["colorify"]
+
+[dependencies.goblin]
+version = "0.0.14"
+default-features = false
+features = ["elf64", "elf32", "std"]
+
+[dependencies.asm]
+version = "0.1"
+path = "asm"

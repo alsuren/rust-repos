@@ -1,0 +1,32 @@
+[package]
+name = "codecon"
+version = "0.1.0"
+authors = ["Arnaud Marant <arnaudmarant@gmail.com>"]
+
+[[bin]]
+name = "base_arithmetic"
+path = "src/base_arithmetic.rs"
+
+[[bin]]
+name = "expecto_palindronum"
+path = "src/expecto_palindronum.rs"
+
+[[bin]]
+name = "mug_color"
+path = "src/mug_color.rs"
+
+[[bin]]
+name = "laundry_day"
+path = "src/laundry_day.rs"
+
+[[bin]]
+name = "messed_up_rugby"
+path = "src/messed_up_rugby.rs"
+
+[[bin]]
+name = "a_compliance_problem"
+path = "src/a_compliance_problem.rs"
+
+[[bin]]
+name = "yet_another_compliance_problem"
+path = "src/yet_another_compliance_problem.rs"

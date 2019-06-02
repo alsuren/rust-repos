@@ -1,0 +1,29 @@
+[package]
+name = "communiqué"
+version = "0.1.0"
+edition = "2018"
+authors = ["Sam Whited <sam@samwhited.com>"]
+license = "BSD-2-Clause"
+description = "A modern XMPP client with a GTK3+ UI."
+homepage = "https://mellium.im"
+repository = "https://bitbucket.org/mellium/yokel.git"
+readme = "README.md"
+keywords = ["chat", "xmpp", "jabber"]
+
+[dependencies]
+cairo-rs = "0.5"
+dirs = "1.0"
+gdk = "0.9"
+gdk-pixbuf = "0.5"
+gio = "0.5"
+glib = "0.6"
+lazy_static = "1.2"
+regex = "1.1"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+unicode-segmentation = "1.2"
+
+[dependencies.gtk]
+version = "0.5"
+features = ["v3_16"]

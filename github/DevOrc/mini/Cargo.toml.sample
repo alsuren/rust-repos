@@ -1,0 +1,8 @@
+[package]
+name = "mini"
+version = "0.1.0"
+authors = ["DevOrc <ncharlton002@gmail.com>"]
+
+[dependencies]
+irc = "0.12.3"
+cannon = {path = "tui"}

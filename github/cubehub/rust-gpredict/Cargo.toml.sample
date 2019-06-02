@@ -1,0 +1,17 @@
+[package]
+name = "gpredict"
+version = "0.2.6"
+authors = ["Andres Vahter <andres.vahter@gmail.com>"]
+
+[dependencies]
+libc = "0.2.*"
+time = "*"
+log = "*"
+rustc-serialize = "*"
+
+[dev-dependencies]
+log = "*"
+fern = "*"
+
+[dependencies.coordinates]
+git = "https://github.com/cubehub/rust-coordinates.git"

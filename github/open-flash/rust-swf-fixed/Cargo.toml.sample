@@ -1,0 +1,20 @@
+[package]
+name = "swf-fixed"
+version = "0.1.4"
+description = "SWF fixed-point numbers for Rust"
+documentation = "https://github.com/open-flash/rust-swf-fixed"
+homepage = "https://github.com/open-flash/rust-swf-fixed"
+repository = "https://github.com/open-flash/rust-swf-fixed"
+readme = "./README.md"
+authors = ["Charles Samborski <demurgos@demurgos.net>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+
+[badges]
+travis-ci = { repository = "open-flash/rust-swf-fixed", branch = "master" }
+
+[dependencies]
+serde = "^1.0.89"
+
+[dev-dependencies]
+serde_json = "^1.0.39"

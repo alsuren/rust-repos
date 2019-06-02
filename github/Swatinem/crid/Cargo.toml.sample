@@ -1,0 +1,18 @@
+[package]
+name = "crid-src"
+version = "0.1.0"
+authors = ["Arpad Borsos <arpad.borsos@googlemail.com>"]
+publish = false
+
+[workspace]
+members = ["crid", "wasm"]
+
+[dependencies]
+crid = { path = "crid" }
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "crid-bench"
+harness = false

@@ -1,0 +1,9 @@
+[package]
+name = "eobcanka-rust"
+version = "0.1.0"
+authors = ["Qubeo <32247672+Qubeo@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+pcsc = "2.0.0"
+bytes = "0.4"

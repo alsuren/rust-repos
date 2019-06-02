@@ -1,0 +1,22 @@
+[package]
+name = "pogpen"
+description = "renders parameter inputs and a markdown file to an easy-to-use operations game plan"
+version = "0.2.0"
+authors = ["Liam Dawson <liam@liamdawson.me>"]
+readme = "README.md"
+categories = ["command-line-utilities"]
+license = "Apache-2.0/MIT"
+
+[badges]
+travis-ci = { repository = "liamdawson/pogpen" }
+appveyor = { repository = "liamdawson/pogpen", service = "github" }
+
+[dependencies]
+pulldown-cmark = "0.0.14"
+clap = "2.26.0"
+handlebars = "0.26.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"
+serde_json = {version = "1.0.2", features = ["preserve_order"]}
+linked-hash-map = {version = "0.5", features = ["serde_impl"]}

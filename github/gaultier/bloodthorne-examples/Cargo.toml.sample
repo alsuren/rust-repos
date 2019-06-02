@@ -1,0 +1,8 @@
+[package]
+name = "bloodthorne_examples"
+version = "0.1.0"
+authors = ["philippe gaultier <philigaultier@gmail.com>"]
+
+[dependencies]
+bloodthorne = { git = "https://github.com/gaultier/bloodthorne.git" }
+env_logger = "*"

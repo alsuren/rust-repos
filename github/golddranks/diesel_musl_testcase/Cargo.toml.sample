@@ -1,0 +1,8 @@
+[package]
+name = "diesel_musl_testcase"
+version = "0.1.0"
+authors = ["Kontio Pyry <pyry.kontio@drasa.eu>"]
+
+[dependencies]
+diesel = { version="0.15", features = ["postgres"] }
+diesel_codegen = { version="0.15", features = ["postgres"], default-features = false }

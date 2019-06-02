@@ -1,0 +1,27 @@
+[package]
+name = "ttf-noto-sans"
+version = "0.1.1"
+authors = ["gifnksm <makoto.nksm+github@gmail.com>"]
+description = "Noto Sans TrueType fonts for embedding into your application binary."
+documentation = "https://docs.rs/ttf-noto-sans/0.1.0/ttf_noto_sans/"
+repository = "https://github.com/gifnksm/ttf-noto-sans"
+readme = "README.md"
+keywords = ["truetype", "font", "noto", "sans"]
+categories = ["games", "gui"]
+license = "MIT/Apache-2.0"
+
+[badges]
+travis-ci = { repository = "gifnksm/ttf-noto-sans" }
+
+[dependencies]
+
+[dev-dependencies]
+conrod = {version = "0.51", features = ["piston"]}
+piston_window = "0.63"
+
+[features]
+default = ["regular"]
+bold = []
+bold_italic = []
+italic = []
+regular = []

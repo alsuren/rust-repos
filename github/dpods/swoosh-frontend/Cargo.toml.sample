@@ -1,0 +1,17 @@
+[package]
+name = "paragon"
+version = "0.1.0"
+authors = ["David Glassanos <david.glassanos@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+paragon_framework = { path = "../framework" }
+toml = "0.4"
+lazy_static = "1.2.0"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+tera = "0.11.20"
+dotenv = "0.13.0"
+log = "0.4.0"
+log4rs = "0.8.1"
+cookie = "0.11"

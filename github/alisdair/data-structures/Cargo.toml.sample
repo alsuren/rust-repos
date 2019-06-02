@@ -1,0 +1,14 @@
+[package]
+name = "data_structures"
+version = "0.1.0"
+authors = ["Alisdair McDiarmid <alisdair@mcdiarmid.org>"]
+
+[dependencies]
+rand = "0.3"
+
+[dev-dependencies]
+bencher = "0.1.2"
+
+[[bench]]
+name = "binary_heap_bench"
+harness = false

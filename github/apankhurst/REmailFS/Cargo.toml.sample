@@ -1,0 +1,16 @@
+[package]
+name = "remailfs"
+version = "0.1.0"
+authors = ["Alex Pankhurst <alexspankhurs@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2.53"
+time = "0.1.42"
+fuse = "0.3.1"
+rand = "0.6.0"
+getopts = "0.2.19"
+imap = "1.0.1"
+imap-proto = "0.7.0"
+native-tls = "0.2.3"
+mailparse = "0.6.5"

@@ -1,0 +1,14 @@
+[package]
+name = "docker-localbind"
+version = "0.1.0"
+authors = ["Ronald Volgers"]
+edition = "2018"
+
+[[bin]]
+name = "localbind"
+path = "src/main.rs"
+
+[dependencies]
+nix = "0.13.0"
+structopt = { version = "0.2.15", default-features = false }
+

@@ -1,6 +1,6 @@
 [package]
 name = "imgui-ext"
-version = "0.1.9"
+version = "0.2.0"
 authors = ["german gomez <germangb42@gmail.com>"]
 edition = "2018"
 description = "A crate to build debug UIs on structs using a derive macro (based on the imgui crate)"
@@ -19,7 +19,14 @@ members = ["imgui_derive", "example"]
 
 [dependencies]
 imgui = "0.0.23"
-imgui-ext-derive = { version = "0.1.9", path = "imgui_derive" }
+imgui-ext-derive = { version = "0.2.0", path = "imgui_derive" }
+
+[features]
+default = ["matrix"]
+
+# Support for annotations on 2D arrays (matrices). Though enabled by default, this is
+# kept as a feature because imgui doesn't have native support for 2D arrays. Only 1D.
+matrix = []
 
 [patch.crates-io]
 imgui-sdl2 = { git = "https://github.com/germangb/rust-imgui-sdl2.git", branch = "imgui_23"}

@@ -1,0 +1,13 @@
+[package]
+name = "ssh-menu"
+version = "0.5.0"
+authors = ["Matt <mattew@gmail.com>"]
+
+[dependencies]
+tini = "*"
+clap = "*"
+
+[dependencies.cursive]
+version = "*"
+default-features = false
+features = ["termion-backend"]

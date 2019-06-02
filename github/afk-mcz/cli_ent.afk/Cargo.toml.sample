@@ -1,0 +1,10 @@
+[package]
+name = "afk-cli-ent"
+version = "0.1.0"
+authors = ["Arlefreak <hi@arlefreak.com>"]
+
+[dependencies]
+clap = "*"
+termion = "*"
+afk_api = { path = "./afk_api/" }
+afk_cli = { path = "./afk_cli/" }

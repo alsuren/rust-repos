@@ -1,0 +1,10 @@
+[package]
+name = "compsim-rs"
+version = "0.1.0"
+authors = ["kevin"]
+
+[dependencies]
+num = "*"
+enum_primitive = "*"
+snowflake = "1.2.0"
+rand = "0.3"

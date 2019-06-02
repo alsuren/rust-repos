@@ -1,0 +1,29 @@
+[package]
+name = "RobotS"
+version = "0.3.0"
+authors = ["Felix Raimundo <gamaz3ps@gmail.com>"]
+documentation = "http://gamazeps.github.io/RobotS/"
+license = "MIT"
+description = "Actor framework"
+
+[features]
+default = []
+dev = []
+
+[dependencies]
+rand = "0.3.0"
+# Logging
+log = "0.3"
+env_logger = "0.3"
+
+[lib]
+name = "robots"
+path = "src/lib.rs"
+
+[[test]]
+name = "test"
+path = "test/test.rs"
+
+[[bench]]
+name = "bench"
+path = "benches/bench.rs"

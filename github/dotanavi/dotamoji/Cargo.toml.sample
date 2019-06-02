@@ -1,0 +1,11 @@
+[package]
+name = "dotamoji"
+version = "0.1.0"
+authors = ["Ota Daichi <daichi.ota@naviplus.co.jp>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0.0"
+serde_derive = "1.0.0"
+bincode = "1.0.0"
+fnv = "1.0.0"

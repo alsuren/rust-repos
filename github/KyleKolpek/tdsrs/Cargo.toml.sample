@@ -1,0 +1,8 @@
+[package]
+name = "tdsrs"
+version = "0.1.0"
+authors = ["Kyle"]
+
+[dependencies]
+byteorder = "1.0.0"
+openssl = "0.9.10"

@@ -1,0 +1,21 @@
+[package]
+name = "irc_robot"
+version = "0.1.0"
+authors = ["石博文 <sbw@sbw.so>"]
+
+[lib]
+name = "irc"
+
+[dependencies]
+regex = "*"
+rand = "*"
+hyper = "*"
+mio = "*"
+bson = "*"
+mongodb = "*"
+image = "*"
+rustc-serialize = "*"
+clap = "*"
+log = "*"
+env_logger = "*"
+clippy = "*"

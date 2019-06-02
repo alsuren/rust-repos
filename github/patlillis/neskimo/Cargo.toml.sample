@@ -1,0 +1,22 @@
+[package]
+name = "neskimo"
+version = "0.3.0"
+authors = ["Pat Lillis <lillispm@gmail.com>"]
+
+[lib]
+name = "neskimolib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "neskimo"
+path = "src/main.rs"
+
+[dependencies]
+arrayvec = "0.4.7"
+clap = "2.23.3"
+enum_primitive = "0.1"
+log = "0.3"
+maplit = "1.0.0"
+num = "0.1"
+sdl2 = "0.31"
+time = "*"

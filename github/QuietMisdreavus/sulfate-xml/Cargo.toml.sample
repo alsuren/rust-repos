@@ -1,0 +1,8 @@
+[package]
+name = "sulfate-xml"
+version = "0.1.0"
+authors = ["QuietMisdreavus <grey@quietmisdreavus.net>"]
+license = "MPL-2.0"
+
+[dependencies]
+xml-rs = "0.6.0"

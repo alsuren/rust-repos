@@ -1,0 +1,9 @@
+[package]
+name = "sealab-alexa"
+version = "0.1.0"
+authors = ["Matthew Mayer <matthewkmayer@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lambda_runtime = "0.1"
+alexa_sdk = "0.1.3"

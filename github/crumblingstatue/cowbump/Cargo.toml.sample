@@ -1,0 +1,18 @@
+[package]
+name = "cowbump"
+version = "0.1.0"
+authors = ["Mika Attila <radiantstatue@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1.5"
+walkdir = "2.2.7"
+serde = "1.0.87"
+serde_derive = "1.0.87"
+bincode = "1.1.1"
+image = "0.21.0"
+
+[dependencies.sfml]
+git = "https://github.com/jeremyletang/rust-sfml.git"
+default-features = false
+features = ["graphics"]

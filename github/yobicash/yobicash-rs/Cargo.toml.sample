@@ -1,0 +1,31 @@
+[package]
+name = "yobicash"
+version = "0.1.0"
+authors = ["Christian Nyumbayire <christian@yobicash.org>"]
+license = "MIT"
+description = "Yobicash Rust Client"
+repository = "https://github.com/yobicash/yobicash-rs"
+readme = "README.md"
+keywords = ["cli", "cryptocurrency", "storage", "network", "p2p"]
+categories = ["cryptography", "database", "network-programming"]
+
+[dependencies]
+error-chain = "^0.11"
+bytes = { version = "^0.4", features = ["serde"] }
+futures = "^0.1"
+futures-await = "^0.1"
+unqlite = { version = "^1.3", git = "https://github.com/yobicash/unqlite.rs" }
+structopt = "^0.1"
+structopt-derive = "^0.1"
+serde = "^1"
+serde_derive = "^1"
+serde_json = "^1"
+libyobicash = { version = "^0.9", git = "https://github.com/yobicash/libyobicash" }
+
+[[bin]]
+name = "yobicashd"
+path = "src/yobicashd.rs"
+
+[[bin]]
+name = "yobicash-cli"
+path = "src/yobicash_cli.rs"

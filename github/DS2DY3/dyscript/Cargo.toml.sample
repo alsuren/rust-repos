@@ -1,0 +1,18 @@
+[package]
+name = "dyscript"
+version = "0.0.0"
+authors = ["ds2dy3<https://github.com/ds2dy3>"]
+description = "A C# like typed script language"
+keywords = ["script language", "typed", "dynamic"]
+license = "MIT"
+repository = "https://github.com/DS2DY3/dyscript"
+readme = "./README.md"
+
+
+[lib]
+name = "dy"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dy"
+path = "src/main.rs"

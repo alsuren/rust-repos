@@ -1,0 +1,23 @@
+[package]
+name = "hakka"
+version = "0.2.2"
+authors = ["Simon Whitehead <chemnova@gmail.com>"]
+
+[lib]
+name = "vm"
+path = "vm/src/lib.rs"
+
+[[bin]]
+name = "training-1"
+path = "training-1/src/main.rs"
+
+[dependencies]
+byteorder = "0.5.3"
+rs6502 = "0.3.0"
+find_folder = "0.3.0"
+app_dirs = "1.1.1"
+rustc-serialize = "0.3.22"
+
+[dependencies.sdl2]
+version = "^0.29"
+features = ["image", "ttf"]

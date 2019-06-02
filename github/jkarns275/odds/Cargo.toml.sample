@@ -1,0 +1,13 @@
+[package]
+name = "pds"
+version = "0.1.0"
+authors = ["Joshua Karns <jkarns275@gmail.com>"]
+
+[[bin]]
+name = "pds-bin"
+path = "src/lib.rs"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"

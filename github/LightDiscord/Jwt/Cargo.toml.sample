@@ -1,0 +1,23 @@
+[package]
+name = "libjwt"
+version = "0.1.0"
+authors = ["LightDiscord <arnaud@lightdiscord.me>"]
+repository = "https://github.com/LightDiscord/Jwt"
+license = "MIT"
+readme = "README.md"
+description = "Another JWT implementation written in Rust"
+
+[lib]
+name = "libjwt"
+path = "src/lib.rs"
+
+[dependencies]
+error-chain = "0.11.0"
+serde = "^1"
+serde_json = "^1"
+serde_derive = "^1"
+base64 = "0.9.0"
+openssl = "0.10.5"
+
+[features]
+default = []

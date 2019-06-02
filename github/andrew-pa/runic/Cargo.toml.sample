@@ -1,0 +1,23 @@
+[package]
+name = "runic"
+version = "0.6.5"
+authors = ["Andrew <andrew.pa@outlook.com>"]
+
+[dependencies]
+winit = "0.15"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser", "winbase", "d2d1" ] }
+
+[target.'cfg(target_os="macos")'.dependencies]
+objc = "0.2"
+cocoa = "0.14"
+
+[target.'cfg(any(target_os="macos", target_os="linux"))'.dependencies]
+cairo-sys-rs = "0.4"
+pango-sys = "0.4"
+pangocairo-sys = "0.4"
+gobject-sys = "0.4"
+
+[target.'cfg(linux)'.dependencies]
+x11-dl = "2.15"

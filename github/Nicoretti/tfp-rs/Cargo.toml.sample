@@ -1,0 +1,27 @@
+[workspace]
+
+[package]
+name = "tftp-rs"
+description = "tftp librar"
+repository = "https://github.com/Nicoretti/tftp-rs"
+readme = "README.md"
+license-file = "LICENSE"
+keywords = ["tftp"]
+version = "0.1.0"
+
+[lib]
+name = "tftp"
+path = "src/tftp/lib.rs"
+
+[[bin]]
+name = "tftp-rs"
+test = false
+doc = false
+
+[dependencies]
+byteview = { path = "byteview" }
+nom = "3.0.0"
+error-chain = "0.9.0"
+term-painter = "0.2.3"
+clap = "2.16.2"
+

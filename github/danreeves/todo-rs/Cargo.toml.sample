@@ -1,0 +1,10 @@
+[package]
+name = "todo-rs"
+version = "0.1.0"
+authors = ["Dan Reeves <hey@danreev.es>"]
+repository = "https://github.com/danreeves/todo-rs"
+
+[dependencies]
+tui = "0.2.3"
+termion = "1.5.1"
+chrono = "0.4.0"

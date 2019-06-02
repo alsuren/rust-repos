@@ -1,0 +1,29 @@
+[package]
+
+name = "mongodb"
+version = "0.0.1"
+authors = [ "Oussama Gammoudi <oussama_gammoudi@hotmail.com>" ]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = "Rust MongoDB Driver, WIP"
+
+documentation = "https://github.com/zorend/mongodb-rs"
+homepage = "https://github.com/zorend/mongodb-rs"
+repository = "https://github.com/zorend/mongodb-rs"
+
+exclude = [
+    "target/*",
+    ".git/*",
+    ".project",
+    ".gitignore"
+]
+
+
+[dependencies]
+bson-rs = "*"
+byteorder = "*"
+
+
+[[bin]]
+
+name = "mongodb_test"

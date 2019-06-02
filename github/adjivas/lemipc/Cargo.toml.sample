@@ -1,0 +1,32 @@
+[package]
+name = "lemipc"
+version = "0.1.1"
+authors = ["adjivas <adjivas@users.noreply.github.com>"]
+description = "subject of lemipc game"
+documentation = "http://adjivas.github.io/lemipc/lemipc"
+repository = "https://github.com/adjivas/lemipc.git"
+readme = "https://raw.githubusercontent.com/adjivas/lemipc/master/README.md"
+keywords = ["ipc", "semaphore", "segment", "message"]
+license = "GPL-3.0"
+
+[[bin]]
+name = "lemipc"
+doc = false
+
+[dependencies.sem]
+path = "lib/sem"
+
+[dependencies.shm]
+path = "lib/shm"
+
+[dependencies.sig]
+path = "lib/sig"
+
+[dependencies.msg]
+path = "lib/msg"
+
+[dependencies.io-synesthesist]
+path = "lib/io"
+
+[features]
+signal = []

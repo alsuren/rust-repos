@@ -1,0 +1,17 @@
+[package]
+name = "kdri"
+version = "0.4.3"
+authors = ["Chang Spivey <chang.spivey@gmail.com>"]
+description = "Library that lets you control Kettler devices via bluetooth"
+repository = "https://github.com/ChangSpivey/kdri"
+readme = "README.md"
+keywords = ["kettler", "bluetooth", "SPP", "RFCOMM", "remote"]
+license = "GPL-3.0"
+
+[dependencies]
+bluetooth-serial-port = "0.4"
+mio = "0.6"
+enum_primitive = "0.1.0"
+
+[lib]
+name = "kdri"

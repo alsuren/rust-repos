@@ -1,0 +1,23 @@
+[package]
+name = "wakkave"
+version = "0.1.0"
+authors = ["Steve Sweetney <stevesweetney@gmail.com>"]
+build = "build.rs"
+
+[workspace]
+members = [
+    "backend",
+    "frontend",
+]
+
+[dependencies]
+capnp = "0.8.17"
+
+[build-dependencies]
+capnpc = "0.8.9"
+failure = "0.1.1"
+sass-rs = "0.2.1"
+
+[profile.release]
+debug = false
+lto = true

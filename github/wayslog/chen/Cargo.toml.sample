@@ -1,0 +1,28 @@
+[package]
+name = "chen"
+version = "0.1.0"
+authors = ["wayslog <wayslog@163.com>"]
+
+[[bin]]
+name="chen"
+path="bin/chen.rs"
+
+[lib]
+name="libchen"
+path="src/lib.rs"
+
+[dependencies]
+rocket = "0.2.6"
+rocket_codegen = "0.2.6"
+hyper = "*"
+log="*"
+env_logger="*"
+dotenv="*"
+lazy_static="*"
+crossbeam = "*"
+num_cpus = "*"
+serde="*"
+serde_derive = "*"
+serde_json = "*"  # just for the example, not required in general
+fnv = "*"
+itertools = "*"

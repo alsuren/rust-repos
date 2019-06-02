@@ -1,0 +1,18 @@
+[package]
+name = "hestenes"
+version = "0.1.0"
+authors = ["Jakub Hlusička <limeth@protonmail.com>"]
+
+[features]
+default = ["max-dimension-8"]
+max-dimension-8 = []
+max-dimension-16 = []
+max-dimension-32 = []
+max-dimension-64 = []
+
+[dependencies]
+num-traits = "0.1"
+typenum = "1.9.0"
+generic-array = "0.9.0"
+alga = "0.5.2"
+nalgebra = "0.14.0" # TODO: Large dependency, consider removing in the future

@@ -1,0 +1,12 @@
+[package]
+name = "sudokusolver"
+version = "0.1.0"
+authors = ["Adam Szopa <adam@szopa.org.pl>"]
+
+[dependencies]
+bencher = "0.1.2"
+crossbeam = "0.2"
+
+[[bench]]
+name = "bench"
+harness = false

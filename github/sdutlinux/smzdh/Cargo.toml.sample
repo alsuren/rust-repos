@@ -1,0 +1,23 @@
+[package]
+name = "smzdh"
+version = "0.1.0"
+authors = ["paomian <qtang@leancloud.rocks>"]
+
+[dependencies]
+hyper = "*"
+router = "*"
+rustc-serialize= "*"
+websocket = "*"
+log = "*"
+lazy_static = "*"
+iron = "*"
+rand = "*"
+redis = "*"
+clippy = "*"
+env_logger = "*"
+chrono = { version = "*", features = ["rustc-serialize"] }
+nom = { version = "*", features = ["regexp"] }
+
+[dependencies.smzdh_commons]
+version = "*"
+path = "smzdh_commons"

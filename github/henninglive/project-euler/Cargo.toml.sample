@@ -1,0 +1,9 @@
+[package]
+name = "project-euler"
+version = "0.1.0"
+authors = ["Henning Ottesen <henning@live.no>"]
+edition = "2018"
+
+[dependencies]
+num = "0.2"
+bit-vec = "0.5"

@@ -1,0 +1,32 @@
+[package]
+name = "rs_sudoku"
+version = "0.1.3-alpha.0"
+authors = ["Elliott Clark <elliott.neil.clark@gmail.com>"]
+keywords = ["sudoku"]
+categories = ["games"]
+homepage = "https://docs.rs/rs_sudoku/"
+repository = "https://gitlab.com/eclark/rs-sudoku"
+description = "A library to solve sudoku puzzles using explainable methods."
+license = "Apache-2.0"
+edition = "2018"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "parse_solve"
+harness = false
+
+[[bench]]
+name = "iter_compare"
+harness = false
+
+[[bench]]
+name = "iter_comb_compare"
+harness = false
+
+[profile.release]
+debug = true
+lto = true

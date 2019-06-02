@@ -1,0 +1,13 @@
+[package]
+name = "ddons"
+version = "0.1.0"
+authors = ["Stanko Krtalić <stanko.krtalic@gmail.com>"]
+
+[dependencies]
+curl = "0.4.6"
+serde = "0.9.12"
+serde_json = "0.9.9"
+serde_yaml = "0.6.2"
+clap = "2.22.1"
+log = "0.3.7"
+log4rs = "0.6.2"

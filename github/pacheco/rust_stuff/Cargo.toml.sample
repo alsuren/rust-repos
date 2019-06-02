@@ -1,0 +1,23 @@
+[package]
+name = "rust_stuff"
+version = "0.1.0"
+authors = ["Leandro Pacheco <contact@leandropacheco.com>"]
+
+[dependencies]
+rand = "0.3"
+time = "0.1"
+bytes = "0.3"
+net2 = "*"
+mio = "0.5"
+log = "0.3"
+env_logger = "0.3"
+chan = ""
+byteorder = ""
+fnv = "*"
+
+serde = "*"
+serde_derive = "*"
+bincode = "*"
+
+[profile.release]
+debug = true

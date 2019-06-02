@@ -1,0 +1,9 @@
+[package]
+
+name = "eyl-shell"
+version = "0.0.0"
+authors = ["Jon Eyolfson <jon@eyl.io>"]
+
+[dependencies.wayland]
+
+git = "https://github.com/eyolfson/rust-wayland"

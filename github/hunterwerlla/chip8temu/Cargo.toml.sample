@@ -1,0 +1,10 @@
+[package]
+name = "chip8temu"
+version = "0.1.0"
+authors = ["Hunter Werlla <Hunter@werlla.com>"]
+
+[dependencies]
+rand = "*"
+glium = "0.15.0"
+image = "0.5"
+time = "*"

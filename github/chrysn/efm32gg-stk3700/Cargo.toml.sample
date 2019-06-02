@@ -1,0 +1,33 @@
+[package]
+name = "efm32gg-stk3700"
+version = "0.1.0"
+authors = ["chrysn <chrysn@fsfe.org>"]
+
+categories = ["embedded", "no-std", "hardware-support"]
+description = "Board support crate for the EFM32GG-STK3700 Starter Kit"
+keywords = ["arm", "cortex-m", "efm32", "efm32gg"]
+license = "MIT OR Apache-2.0"
+
+readme = "README.md"
+repository = "https://github.com/chrysn/efm32gg-stk3700"
+documentation = "https://docs.rs/efm32gg-stk3700"
+
+[dependencies]
+cortex-m = "0.5.2"
+efm32gg990 = "0.1.2"
+embedded-hal = { version = "0.2.1", features = ["unproven"] }
+
+efm32gg-hal = "0.1.0"
+
+[dev-dependencies]
+# only for examples
+
+cortex-m-rt = "0.5.0"
+cortex-m-semihosting = "0.3.0"
+panic-semihosting = "0.2.0"
+
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"

@@ -1,0 +1,8 @@
+[package]
+name = "displaymngr"
+version = "0.1.0"
+authors = ["Sergi Jimenez <tripledes@gmail.com>"]
+
+[dependencies]
+xcb = { version = "0.8", features = ["randr","xlib_xcb"] }
+libc = "0.2.45"

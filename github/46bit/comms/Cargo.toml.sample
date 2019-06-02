@@ -1,0 +1,22 @@
+[package]
+name = "comms"
+version = "0.1.4"
+authors = ["Michael Mokrysz <hi@46b.it>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/46bit/comms.git"
+homepage = "https://github.com/46bit/comms"
+documentation = "https://46bit.github.io/comms/comms/"
+readme = "README.md"
+description = "Experimental library for communicating with groups of Tokio server clients."
+
+[dependencies]
+futures = "0.1"
+tokio-timer = "0.1"
+clippy = {version = "0.0", optional = true}
+
+[dev-dependencies]
+quickcheck = "0.2"
+
+[features]
+default = []
+dev = ["clippy"]

@@ -1,0 +1,16 @@
+[package]
+name = "orset"
+version = "0.2.0"
+authors = ["Andrew J. Stone <andrew.j.stone.1@gmail.com>"]
+description = "An Observe Remove Set CRDT with delta mutation"
+repository = "https://github.com/andrewjstone/orset"
+keywords = ["orset", "crdt"]
+license = "Apache-2.0"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+
+[dev-dependencies]
+quickcheck = "0.2"
+rand = "0.3"

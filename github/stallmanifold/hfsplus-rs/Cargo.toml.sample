@@ -1,0 +1,9 @@
+[package]
+name = "hfsplus"
+version = "0.1.1"
+authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+
+[dependencies]
+
+[dependencies.util]
+path = "src/util"

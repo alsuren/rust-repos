@@ -1,0 +1,34 @@
+[package]
+name = "telemacher"
+version = "0.1.0"
+authors = ["john wells <john@attackgoat.com>"]
+
+[dependencies]
+num_cpus = "1.0"        # For thread-pool size guessing
+chrono = "0.4"          # For date/time parsing 
+lru-cache = "0.1.1"     # As a stand-in for proper redis
+urlencoding = "1.0.0"   # Used by Google/Dark Sky client code
+
+# CLI parser https://github.com/kbknapp/clap-rs
+clap = { version = "2.31", features = ["yaml"] }
+
+# HTTP Client https://github.com/seanmonstar/reqwest
+reqwest = "0.8.5"
+
+# HTTP server
+futures = "0.1.11"
+tokio-minihttp = { git = "https://github.com/attackgoat/tokio-minihttp", branch = "master" }
+tokio-core = "0.1.0"
+tokio-io = "0.1"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+
+# Multipart parser https://github.com/abonander/multipart
+multipart = { version = "0.14.2", features = ["server"] }
+
+# JSON https://github.com/maciejhirsz/json-rust
+json = "0.11.13"
+
+# NLU
+snips-nlu-lib = { git = "https://github.com/snipsco/snips-nlu-rs", branch = "master" }
+snips-nlu-ontology = { git = "https://github.com/snipsco/snips-nlu-ontology", tag = "0.54.3" }

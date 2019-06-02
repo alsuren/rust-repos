@@ -1,0 +1,10 @@
+[package]
+name = "rusty_server"
+version = "0.1.0"
+authors = ["Navrin <navman360@gmail.com>"]
+
+[dependencies]
+
+[lib]
+name = "rusty_server"
+path = "src/lib.rs"

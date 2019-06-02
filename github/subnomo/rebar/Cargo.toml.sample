@@ -1,0 +1,14 @@
+[package]
+name = "rebar"
+version = "0.3.0"
+authors = ["Alex Taylor <alex@subnomo.me>"]
+
+[dependencies]
+chan = "0.1.19"
+chan-signal = "0.2.0"
+dirs = "1.0.5"
+notify = "4.0.1"
+serde = "0.9.8"
+serde_derive = "0.9.8"
+time = "0.1.36"
+toml = "0.3"

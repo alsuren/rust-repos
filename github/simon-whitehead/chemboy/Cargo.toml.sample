@@ -1,0 +1,21 @@
+[package]
+name = "chemboy"
+version = "0.0.1"
+authors = ["simonwhitehead"]
+
+[dependencies]
+byteorder = "*"
+rand = "*"
+image = "*"
+gfx_core = "*"
+gfx_device_gl = "*"
+gl = "*"
+piston = "*"
+piston2d-graphics = "0.23.0"
+piston2d-opengl_graphics = "*"
+piston_window = "*"
+conrod = { version = "*", features = ["piston"] }
+find_folder = "*"
+
+[dependencies.clap]
+version = "2"

@@ -1,0 +1,40 @@
+[package]
+name = "diffract"
+version = "0.1.0"
+authors = ["Sarah Mount <sarah.mount@kcl.ac.uk>"]
+include = ["src/**/*", "grammars/*", "Cargo.toml"]
+repository = "https://github.com/softdevteam/diffract"
+homepage = "https://github.com/softdevteam/diffract.git"
+license = "UPL"
+description = "Generate source code diffs based on ASTs."
+build = "build.rs"
+
+[[bin]]
+doc = false
+name = "diffract"
+
+[lib]
+name = "diffract"
+path = "src/lib/mod.rs"
+
+[build-dependencies]
+glob = "0.2"
+
+[dev-dependencies]
+serde-xml-rs = "0.2"
+
+[dependencies]
+docopt = "1.0"
+dot = "0.1"
+env_logger = "0.5"
+log = "0.4"
+multiset = { git = "https://github.com/jmitchell/multiset" }
+quick-error = "1.2"
+rust-crypto = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+term = "0.5"
+cfgrammar = { git = "https://github.com/softdevteam/grmtools" }
+lrlex = { git = "http://github.com/softdevteam/grmtools" }
+lrpar = { git = "http://github.com/softdevteam/grmtools" }
+lrtable = { git = "http://github.com/softdevteam/grmtools" }

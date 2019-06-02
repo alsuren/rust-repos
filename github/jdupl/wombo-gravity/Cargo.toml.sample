@@ -1,0 +1,12 @@
+[package]
+name = "wombo"
+version = "0.1.0"
+authors = ["Justin Duplessis <drfoliberg@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+bincode = "0.3.0"
+
+[[bin]]
+path = "src/main/rust/main.rs"
+name = "wombo"

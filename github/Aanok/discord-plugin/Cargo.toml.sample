@@ -1,0 +1,27 @@
+[package]
+name = "discord-plugin"
+version = "0.1.0"
+authors = ["Fabrizio Baldini <fabrizio.baldini@protonmail.com>"]
+build = "build.rs"
+license = "GPL-3.0"
+
+[build-dependencies]
+gcc = "*"
+pkg-config = "*"
+
+[lib]
+name = "discordplugin"
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "*"
+clippy = {version = "*", optional = true}
+
+[dependencies.discord]
+git = "https://github.com/SpaceManiac/discord-rs.git"
+# disable "voice" -> opus/sodiumoxide
+default-features = false
+features = []
+
+[features]
+default = []

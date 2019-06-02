@@ -1,0 +1,11 @@
+[package]
+name = "heroku-hello-rust-rocket"
+version = "0.1.0"
+authors = ["Oliver Forral <intrepion@gmail.com>"]
+
+[dependencies]
+rocket = "0.2.6"
+rocket_codegen = "0.2.6"
+
+[dev-dependencies]
+rocket = { version = "0.2.6", features = ["testing"] }

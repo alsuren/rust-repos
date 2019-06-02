@@ -1,0 +1,22 @@
+[package]
+name = "stpsyr-server"
+version = "0.1.0"
+authors = ["KeyboardFire <andy@keyboardfire.com>"]
+build = "compile_sass.rs"
+
+[dependencies]
+stpsyr = "*"
+iron = "0.5.1"
+router = "0.5.1"
+iron-sessionstorage = "0.6.6"
+params = "0.6.0"
+mount = "0.3.0"
+persistent = "0.3.0"
+logger = "0.3.0"
+simplelog = "0.4.2"
+postgres = "0.15.1"
+rust-crypto = "0.2.36"
+rand = "0.3.16"
+
+[build-dependencies]
+sass-rs = "0.2.0"

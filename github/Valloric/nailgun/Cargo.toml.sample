@@ -1,0 +1,32 @@
+[package]
+
+name = "nailgun"
+version = "0.1.0"
+authors = [ "val@markovic.io" ]
+license = "Apache-2.0"
+description = "A PEG parser generator."
+repository = "https://github.com/Valloric/nailgun"
+homepage = "https://github.com/Valloric/nailgun"
+exclude = [
+  "Vagrantfile",
+  ".travis.yml",
+  ".gitignore",
+  "bootstrap.sh",
+  "update_rustc.sh"
+]
+keywords = ["peg", "parser", "parsing", "expression", "grammar"]
+
+[[bin]]
+
+name = "nailgun"
+path = "nailgun.rs"
+
+[lib]
+
+name = "inlined_parser"
+path = "inlined_parser.rs"
+
+[dependencies]
+getopts = "0.2.0"
+tempdir = "0.3"
+

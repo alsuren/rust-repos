@@ -1,0 +1,8 @@
+[package]
+name = "rs"
+version = "0.2.0"
+authors = ["sdfnz"]
+
+[dependencies]
+
+pad = { path = "./src/pad" }

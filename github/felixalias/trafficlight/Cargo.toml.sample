@@ -1,0 +1,14 @@
+[package]
+name = "trafficlight"
+version = "0.1.0"
+authors = ["Felix Jodoin <felix@fjstudios.net>"]
+
+[dependencies]
+hyper = "0.9.x"
+rustc-serialize = "*"
+log = "0.3.x"
+env_logger = "0.3.x"
+
+[dev-dependencies]
+yup-hyper-mock = "*" # versions don't correspond to hyper versioning :|
+assert_matches = "*"

@@ -1,0 +1,24 @@
+[package]
+name = "javabc"
+version = "0.1.2"
+authors = ["Dylan McKay <me@dylanmckay.io>"]
+
+description = "Java bytecode manipulation library"
+documentation = "https://docs.rs/javabc"
+repository = "https://github.com/dylanmckay/javabc"
+
+license = "MIT"
+
+keywords = ["java", "bytecode", "vm"]
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "dump"
+path = "tools/dump.rs"
+
+[dependencies]
+byteorder = "0.5"
+error-chain = "0.7"
+bitflags = "0.7"

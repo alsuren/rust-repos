@@ -1,0 +1,11 @@
+[package]
+name = "rs-gold-report"
+version = "0.1.0"
+authors = ["Stanislav Ursache <stanislavursache@outlook.com>"]
+
+[dependencies]
+walkdir = "2.1.4"
+grep = "0.1.8"
+
+chrono = { version = "0.4.2", features = ["serde"] }
+rusqlite = { version = "0.13.0", features = ["bundled", "chrono", "serde_json"] }

@@ -1,0 +1,17 @@
+[package]
+name = "plasma-qg"
+version = "0.1.0"
+authors = ["SHUHEI HIYA"]
+
+[dependencies]
+
+
+[[bin]]
+path = "childchain/main.rs"
+name = "plasma-qg"
+
+[workspace]
+members = [
+	"qg-api",
+	"vm",
+]

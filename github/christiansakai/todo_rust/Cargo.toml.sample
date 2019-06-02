@@ -1,0 +1,17 @@
+[package]
+name = "todo"
+version = "0.0.1"
+authors = ["Christian Sakai <christianmsakai@gmail.com>"]
+
+[dependencies]
+rocket = "0.3.17"
+rocket_codegen = "0.3.17"
+serde = "1.0.79"
+serde_derive = "1.0.79"
+diesel = { version = "1.0.0", features = ["r2d2", "postgres"] }
+dotenv = "0.13.0"
+
+[dependencies.rocket_contrib]
+version = "0.3.17"
+default-features = false
+features = ["tera_templates"]

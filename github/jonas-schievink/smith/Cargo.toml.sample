@@ -1,0 +1,19 @@
+[package]
+name = "smith"
+version = "0.1.0"
+authors = ["Jonas Schievink <jonasschievink@gmail.com>"]
+license = "CC0"
+description = "A simple SSH agent with lazy unlocking"
+
+[dependencies]
+log = "0.4"
+env_logger = "0.5"
+clap = "2.0"
+libc = "0.2"
+byteorder = "1.0"
+base64 = "0.9"
+openssl = "0.10"
+bitflags = "1"
+quick-error = "1"
+# Binary-only:
+xdg = "2"

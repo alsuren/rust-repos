@@ -1,0 +1,8 @@
+[package]
+name = "rusty-sokoban"
+version = "0.1.0"
+authors = ["Gabriel Martinez <reitaka@gmail.com>"]
+
+[dependencies]
+ggez = "0.3"
+rustbox = "0.9"

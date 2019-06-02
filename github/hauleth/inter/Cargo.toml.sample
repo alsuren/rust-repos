@@ -1,0 +1,12 @@
+[package]
+authors = ["Łukasz Niemier <lukasz@niemier.pl>"]
+description = "Interval arithmetic in Rust"
+keywords = ["math", "arithmetic", "intervals"]
+license = "MIT"
+name = "inter"
+repository = "https://github.com/hauleth/inter.git"
+version = "0.0.1"
+
+[dependencies]
+libc = "0.2.14"
+num-traits = "0.1.33"

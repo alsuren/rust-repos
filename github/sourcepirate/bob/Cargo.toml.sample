@@ -1,0 +1,16 @@
+[package]
+name = "bob"
+version = "0.1.1"
+authors = ["sourcepirate <plasmashadowx@gmail.com>"]
+
+[dependencies]
+serde_derive = "*"
+serde_json = "*"
+serde = "*"
+clap = "*"
+reqwest = "*"
+pbr = "*"
+flate2 = "*"
+tar = "*"
+log = "*"
+glob = "*"

@@ -1,0 +1,18 @@
+[package]
+name = "arcade-rs"
+version = "0.1.0"
+authors = ["Stefan Müller <s.mueller@it.kls-glt.de>"]
+
+[dependencies]
+
+[workspace]
+members = [
+  "arcade-rs-1-1",
+  "arcade-rs-1-2",
+  "arcade-rs-1-3",
+  "arcade-rs-1-4",
+  "arcade-rs-1-5",
+  "arcade-rs-1-6",
+  "arcade-rs-1-7",
+  "arcade-rs-1-8",
+]

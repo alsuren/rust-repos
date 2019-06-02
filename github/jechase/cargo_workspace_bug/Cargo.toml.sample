@@ -1,0 +1,10 @@
+[workspace]
+
+[package]
+name = "demo"
+version = "0.1.0"
+authors = ["Josh Chase <jcjoshuachase@gmail.com>"]
+
+[dependencies]
+child_one = { path = "./child_one" }
+child_two = { path = "./child_two" }

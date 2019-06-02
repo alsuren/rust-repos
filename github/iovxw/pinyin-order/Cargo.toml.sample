@@ -1,0 +1,27 @@
+[package]
+name = "pinyin-order"
+version = "0.1.1"
+authors = ["iovxw <iovxw@outlook.com>"]
+license = "Unlicense"
+readme = "README.md"
+homepage = "https://github.com/iovxw/pinyin-order"
+repository = "https://github.com/iovxw/pinyin-order"
+documentation = "https://docs.rs/pinyin-order"
+description = "A Rust library that helps sort a string vector by Pinyin. Rust 字符串向量按拼音排序"
+keywords = ["pinyin", "hanzi", "Chinese", "sort", "order"]
+build = "build.rs"
+include = [
+    "**/*.rs",
+    "build.rs",
+    "Cargo.toml",
+    "UNLICENSE",
+    "README.md",
+    "pinyin-data/pinyin.txt",
+]
+
+[dependencies]
+phf = "0.7"
+
+[build-dependencies]
+phf_codegen = "0.7"
+regex = "0.2"

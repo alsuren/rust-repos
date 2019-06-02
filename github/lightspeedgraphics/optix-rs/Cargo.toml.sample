@@ -1,0 +1,13 @@
+[package]
+name = "optix"
+version = "0.2.0"
+authors = ["Lightspeed Graphics <devs@lightspeedgraphics.co.nz`>"]
+keywords = ["optix", "rendering", "cuda"]
+description = "Rust wrapper for NVIDIA OptiX."
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[dependencies]
+bitflags = "1.0"
+lazy_static = "1.0"
+shared_library = "0.1.8"

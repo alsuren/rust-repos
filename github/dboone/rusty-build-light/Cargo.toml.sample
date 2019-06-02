@@ -1,0 +1,12 @@
+[package]
+
+name = "rusty-build-light"
+version = "0.0.1"
+authors = [ "dboone <boonesoftware@gmail.com>" ]
+
+[dependencies]
+iron = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+serial = "0.3.3"

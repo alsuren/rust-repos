@@ -1,0 +1,8 @@
+[package]
+name = "cnsat"
+version = "0.1.0"
+authors = ["cnogueira"]
+
+[dependencies]
+fnv = "1.0.3"
+dimacs = "0.2.0"

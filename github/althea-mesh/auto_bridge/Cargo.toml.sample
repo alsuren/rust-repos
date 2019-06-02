@@ -1,0 +1,19 @@
+[package]
+name = "auto-bridge"
+version = "0.1.0"
+authors = ["Jehan <jehan.tremback@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+web30 = { git = "https://github.com/althea-mesh/web30", branch = "master" }
+actix = "0.7.9"
+futures = "0.1.26"
+failure = "0.1.5"
+num256 = "0.2.11"
+clarity = "0.1.20"
+futures-timer = "0.1.1"
+rand = "0.6.5"
+num = "0.2"
+
+[patch.crates-io]
+clarity = { git = "https://github.com/althea-mesh/clarity" }

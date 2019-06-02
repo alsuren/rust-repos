@@ -1,0 +1,14 @@
+[package]
+edition = "2018"
+name = "meow-forth"
+version = "0.1.0"
+authors = [
+    "Alice Jenkinson <c@zero-x.nz>"
+]
+
+[dependencies]
+rustyline = { version = "2.1.0", optional = true }
+
+[features]
+default = [ "std" ]
+std = [ "rustyline" ]

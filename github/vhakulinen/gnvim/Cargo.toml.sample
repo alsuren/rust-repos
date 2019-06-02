@@ -1,0 +1,35 @@
+[package]
+name = "gnvim"
+version = "0.1.0"
+authors = ["Ville Hakulinen <ville.hakulinen@gmail.com>"]
+
+[profile.dev]
+debug = true
+
+[features]
+unstable = []
+
+[dependencies]
+neovim-lib = "0.6"
+structopt = "0.2"
+
+gio = "0.5"
+cairo-rs = "0.5"
+pango = "0.5"
+pangocairo = "0.6"
+glib = "0.6"
+gdk = "0.9"
+gdk-pixbuf = "0.5"
+
+pulldown-cmark = { version = "0.2", default-features = false }
+ammonia = "2"
+syntect = "3"
+lazy_static = "1.2.0"
+
+[dependencies.gtk]
+version = "0.5"
+features = ["v3_18"]
+
+[dependencies.webkit2gtk]
+version = "0.5"
+features = ["v2_14"]

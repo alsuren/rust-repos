@@ -1,0 +1,10 @@
+[package]
+name = "corsairlink"
+version = "0.1.0"
+authors = ["David Goodlad <david@goodlad.net>"]
+
+[dependencies]
+byteorder = "1"
+hex-slice = "0.1.4"
+error-chain = "0.11.0"
+libusb = "0.3"

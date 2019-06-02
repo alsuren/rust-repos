@@ -1,0 +1,37 @@
+[package]
+name = "spe3d"
+version = "0.1.1"
+authors = ["Robert Schütte <schuetterobert@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/Roba1993/SPE3D"
+description = "Fast and Easy Download Manager for Servers"
+autobins = false
+edition = "2018"
+
+[[bin]]
+name = "spe3d"
+doc = false
+path = "src/bin/main.rs"
+
+[dependencies]
+reqwest = "0.9.9"
+regex = "1.0.0"
+error-chain = "0.11.0"
+dlc-decrypter = "0.2.1"
+jd-decrypter = "0.1.1"
+base64 = "0.9.3"
+
+# md5 hasher
+md-5 = "0.7.0"
+digest = { version = "0.7.0", features = ["std"]}
+
+# serialisation of the data
+serde = "1.0.56"
+serde_derive = "1.0.56"
+serde_json = "1.0.17"
+toml = "0.4.6"
+
+# http server
+warp = "0.1.11"
+bytes = "0.4.9"
+futures = "0.1.25"

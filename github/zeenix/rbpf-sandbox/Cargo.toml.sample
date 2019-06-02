@@ -1,0 +1,10 @@
+[package]
+name = "rbpf-sandbox"
+version = "0.1.0"
+authors = ["Zeeshan Ali <zeenix@gmail.com>"]
+build = "src/build.rs"
+
+[dependencies]
+rbpf = { git = "https://github.com/qmonnet/rbpf" }
+byteorder = "0.5.3"
+elf = "0.0.10"

@@ -1,0 +1,35 @@
+[package]
+
+name = "layers"
+version = "0.5.3"
+authors = ["The Servo Project Developers"]
+license = "MIT/Apache-2.0"
+
+[features]
+default = []
+plugins = ["heapsize"]
+
+[dependencies]
+libc = "0.2"
+rustc-serialize = "0.3.16"
+log = "0.3.4"
+gleam = "0.2"
+euclid = "0.10"
+servo-skia = "0.20130412.23"
+
+[dependencies.heapsize]
+version = ">=0.2.2, <0.4"
+optional = true
+
+[target.x86_64-apple-darwin.dependencies]
+core-foundation = "0.2.0"
+cgl = "0.1"
+io-surface = "0.5.0"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+glx = "0.1.0"
+servo-egl = "0.2"
+x11 = { version = "2.3.0", features = ["xlib"] }
+
+[target.arm-linux-androideabi.dependencies]
+servo-egl = "0.2"

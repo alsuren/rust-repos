@@ -1,0 +1,28 @@
+[package]
+name = "centipede"
+version = "0.2.0"
+authors = [
+    "Omer <omer@kzencorp.com>",
+    "Gary <gary@kzencorp.com>"
+]
+
+[lib]
+crate-type = ["lib"]
+
+[dependencies]
+curv = { git = "https://github.com/KZen-networks/curv", features =  ["ec_secp256k1"]}
+bulletproof = {git = "https://github.com/KZen-networks/bulletproofs"}
+serde_derive = "1.0"
+serde = "1.0"
+rayon = "1.0.3"
+
+[patch.crates-io]
+rust-gmp = { version = "0.5.0", features = ["serde_support"], git = "https://github.com/KZen-networks/rust-gmp" }
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "v_backup"
+path = "benches/v_backup.rs"
+harness = false

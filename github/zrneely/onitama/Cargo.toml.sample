@@ -1,0 +1,21 @@
+[package]
+name = "onitama"
+version = "0.1.0"
+authors = ["Zachary Neely <zrussellneely@gmail.com> <zrussellneely@gmail.com>"]
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+env_logger = "0.5"
+eventual = "0.1"
+lazy_static = "1"
+log = "0.4"
+parking_lot = "0.5"
+rand = "0.4"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+uuid = { version = "0.5", features = ["serde", "v4"] }
+wamp = { git = "https://github.com/zrneely/wamp-rs.git" }
+
+[profile.release]
+lto = true

@@ -1,0 +1,22 @@
+[package]
+name = "wonderful"
+version = "0.1.0"
+authors = ["Jeremy Rodi <me@medcat.me>"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+redis = "0.8"
+clap = "2.26"
+log = "0.3"
+simplelog = "^0.4.2"
+shellwords = "0.1"
+# until the discord crate is updated.
+# discord = "0.8"
+# discord = { git = "https://github.com/medcat/discord-rs" }
+discord = { path = "../discord-rs" }
+rand = "0.3"
+hyper = "^0.9"
+regex = "*"
+lazy_static = "0.2"

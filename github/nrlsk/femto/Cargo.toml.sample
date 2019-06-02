@@ -1,0 +1,9 @@
+[package]
+name = "femto"
+version = "0.1.0"
+authors = ["Izzy <me@lskh.io>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2.16"
+termion = "1.5.2"

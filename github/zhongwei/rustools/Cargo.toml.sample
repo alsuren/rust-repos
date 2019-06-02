@@ -1,0 +1,65 @@
+[package]
+name = "rustools"
+version = "0.1.0"
+authors = ["Wei Zhong <zhongwei99@163.com>"]
+keywords = ["rocket", "clap", "cli", "web", "server"]
+
+[badges]
+travis-ci = { repository = "zhongwei/rustools" }
+appveyor = { repository = "zhongwei/rustools" }
+
+[lib]
+name = "rustools"
+path = "src/lib.rs"
+
+[[bin]]
+name = "http"
+path = "src/bin/http.rs"
+
+[[bin]]
+name = "cli"
+path = "src/bin/cli.rs"
+
+[[bin]]
+name = "show"
+path = "src/bin/show_posts.rs"
+
+[[bin]]
+name = "wt"
+path = "src/bin/write_post.rs"
+
+[[bin]]
+name = "del"
+path = "src/bin/del_post.rs"
+
+[[bin]]
+name = "pub"
+path = "src/bin/pub_post.rs"
+
+[[bin]]
+name = "rocksdb"
+path = "src/bin/rocksdb.rs"
+
+[[test]]
+name = "test"
+path = "tests/rustools.rs"
+
+[[example]]
+name = "example"
+path = "examples/rustools.rs"
+
+[[bench]]
+name = "bench"
+path = "benches/rustools.rs"
+
+[features]
+
+[dependencies]
+clap = {version = "2", features=["yaml"]}
+rocket = "0.3.5"
+rocket_codegen = "0.3.5"
+diesel = { version = "1.0.0", features = ["postgres"] }
+diesel_infer_schema = { version = "1.0.0", features = ["postgres"] }
+dotenv = "0.10.1"
+rocksdb = "0.8.2"
+

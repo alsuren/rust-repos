@@ -1,0 +1,17 @@
+[package]
+name = "retry-cmd"
+version = "0.4.1"
+authors = ["Timo Furrer <tuxtimo@gmail.com>"]
+description = "Retry commands on the command line without all the loops you always used!"
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/timofurrer/retry"
+repository = "https://github.com/timofurrer/retry"
+edition = "2018"
+
+[[bin]]
+name = "retry"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2"

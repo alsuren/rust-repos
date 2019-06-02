@@ -1,0 +1,9 @@
+[package]
+name = "rbrainfuck"
+version = "0.1.0"
+authors = ["Stuart Reilly <stu@reilly-family.co.uk>"]
+
+[dependencies]
+exit-code = "1"
+error-chain = "*"
+nom = "3.1"

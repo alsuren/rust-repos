@@ -1,0 +1,12 @@
+[package]
+name = "quantumc"
+version = "0.1.0"
+authors = ["aticu <15schnic@gmail.com>"]
+
+[[bin]]
+name = "quantumc"
+doc = false
+
+[dependencies]
+lazy_static = "0.2"
+char-iter = "0.1"

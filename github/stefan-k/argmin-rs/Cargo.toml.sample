@@ -1,0 +1,41 @@
+[package]
+name = "argmin"
+version = "0.0.10"
+authors = ["Stefan Kroboth <stefan.kroboth@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "WIP optimization toolbox for Rust"
+documentation = "https://stefan-k.github.io/argmin-rs/argmin/"
+homepage = "https://github.com/stefan-k/argmin-rs"
+repository = "https://github.com/stefan-k/argmin-rs"
+readme = "README.md"
+keywords = ["optimization", "math", "science", "HPC"]
+categories = ["science"]
+#license-file = "LICENSE-APACHE"
+exclude = [ 
+	".travis.yml",
+	"push_docs",
+]
+
+[dependencies]
+# clippy = {version = "*", optional = true}
+# error-chain = "*"
+# num = "*"
+# rand = "*"
+# ndarray = "*"
+# ndarray-linalg = { version = "*", features = ["openblas"] }
+
+clippy = {version = "0.0.188", optional = true}
+error-chain = "0.11.0"
+num = "0.1.42"
+rand = "0.4.2"
+ndarray = "0.11.1"
+#ndarray-linalg = { version = "*", default-features = openblas }
+ndarray-linalg = { version = "0.9.0", features = ["openblas"] }
+futures = "0.1.18"
+futures-cpupool = "0.1.8"
+
+[features]
+default = []
+
+[badges]
+travis-ci = { repository = "stefan-k/argmin-rs", branch = "master" }

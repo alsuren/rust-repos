@@ -1,0 +1,33 @@
+[package]
+name = "abyme"
+version = "0.1.0"
+authors = ["Mitchell Riley <mitchell.v.riley@gmail.com>"]
+
+# [lib]
+# name="abyme_lib"
+
+[[bin]]
+name = "abyme"
+path = "src/main.rs"
+doctest = false
+
+[dependencies]
+maplit = "*"
+itertools = "*"
+
+toml = "*"
+
+num = "*"
+rug = "*"
+
+gfx = "0.17.1"
+gfx_core = "*"
+gfx_window_glutin = "*"
+glutin = "*"
+
+euclid = ">=0.17.2"
+lyon = ">=0.10"
+
+# [dev-dependencies]
+# quickcheck = "0.6"
+# quickcheck_macros = "0.6"

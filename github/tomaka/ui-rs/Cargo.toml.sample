@@ -1,0 +1,23 @@
+[package]
+
+name = "ui"
+version = "0.0.1"
+authors = ["Pierre Krieger <pierre.krieger1708@gmail.com>"]
+
+[dependencies]
+nalgebra = "*"
+
+[dev-dependencies]
+glutin = "*"
+glium = "*"
+
+[dev-dependencies.glium_renderer]
+path = "glium_renderer"
+
+[[example]]
+name = "widget"
+path = "examples/widget.rs"
+
+[[example]]
+name = "game-ui"
+path = "examples/game-ui/main.rs"

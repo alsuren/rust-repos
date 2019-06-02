@@ -1,0 +1,11 @@
+[package]
+name = "lp"
+version = "0.1.0"
+authors = ["Kevin Souto <soutokevin@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+kamadak-exif = "0.3"

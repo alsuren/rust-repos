@@ -1,0 +1,24 @@
+[package]
+name = "monchan"
+version = "0.1.0"
+authors = ["Novotnik, Petr <petr.novotnik@firma.seznam.cz>"]
+
+[dependencies]
+getopts = "*"
+log = "*"
+env_logger = "*"
+byteorder = "*"
+stopwatch = "*"
+time = "*"
+
+[dependencies.kafka]
+# path = "../kafka-rust"
+git = "https://github.com/spicavigo/kafka-rust.git"
+branch = "master"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false

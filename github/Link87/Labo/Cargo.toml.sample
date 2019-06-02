@@ -1,0 +1,10 @@
+[package]
+name = "labo"
+version = "0.1.0"
+authors = ["Marvin <m.gazibaric@live.de>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1"
+telegram-bot-fork = "0.7.7"
+tokio = "0.1"

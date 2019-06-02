@@ -1,0 +1,13 @@
+[package]
+name = "pinteger"
+version = "0.1.1"
+authors = ["Scott McMurray <scottmcm@users.noreply.github.com>"]
+description = "Positive integer types"
+license = "AFL-3.0"
+
+[dependencies]
+
+[features]
+default = ["std"]
+std = []
+nightly = []

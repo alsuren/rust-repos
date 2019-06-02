@@ -1,0 +1,39 @@
+[package]
+name = "cobalt-migrate-jekyll"
+version = "0.1.0"
+authors = ["Ed Page <eopage@gmail.com>"]
+description = "Migration from Jekyll to cobalt.rs"
+repository = "https://github.com/cobalt-org/cobalt-migrate-jekyll"
+readme = "README.md"
+keywords = ["static", "site", "generator"]
+categories = ["command-line-utilities"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "cobalt-org/cobalt-migrate-jekyll" }
+appveyor = { repository = "cobalt-org/cobalt-migrate-jekyllrs" }
+
+[dependencies]
+cobalt-bin = "0.12"
+clap = "2.32"
+liquid = {version = "0.14.3", features=["serde"]}
+log = "0.4"
+env_logger = "0.5"
+regex = "1.0"
+error-chain = "0.12"
+lazy_static = "1.0"
+itertools = "0.7"
+serde = "1.0"
+serde_yaml = "0.7"
+serde_json = "1.0"
+toml = "0.4.6"
+normalize-line-endings = "0.2.2"
+
+[dev-dependencies]
+assert_cmd = "0.9"
+assert_fs = "0.9"
+predicates = "0.9"
+difference = "2.0"
+
+[features]
+default = []

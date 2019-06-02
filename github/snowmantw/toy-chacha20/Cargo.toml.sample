@@ -1,0 +1,7 @@
+[package]
+name = "toy-chacha20"
+version = "0.1.0"
+authors = ["Greg Weng <chenghui.weng@rakuten.com>"]
+
+[dependencies]
+rayon = "1.0.2"

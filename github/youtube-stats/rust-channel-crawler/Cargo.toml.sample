@@ -1,0 +1,16 @@
+[package]
+name = "rust-channel-crawler"
+version = "0.1.0"
+authors = ["sguzman"]
+edition = "2018"
+
+[[bin]]
+name = "channel-crawler"
+path = "src/main.rs"
+
+[dependencies]
+postgres = "0.15.2"
+reqwest = "0.9.17"
+scraper = "0.10.0"
+serde_json = "1.0.39"
+serde = "1.0.91"

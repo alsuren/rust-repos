@@ -1,0 +1,21 @@
+[package]
+name = "market"
+version = "0.1.0"
+authors = ["Argumate <argumate@argumate.com>"]
+readme = "README.md"
+license = "Apache-2.0"
+homepage = "https://github.com/argumate/market"
+edition = "2018"
+
+[dependencies]
+time = "0.1.38"
+failure = "0.1.1"
+getopts = "0.2.15"
+rusqlite = "0.13.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+uuid = { version = "0.5", features = ["v4"] }
+futures = "0.1.23"
+actix = "0.7.3"
+actix-web = "0.7.3"

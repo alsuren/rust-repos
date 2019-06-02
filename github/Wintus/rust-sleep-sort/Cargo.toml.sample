@@ -1,0 +1,13 @@
+[package]
+authors = ["Yuya <yuya.maemichi@gmail.com>"]
+name = "rust_sleep_sort"
+version = "0.1.0"
+
+[[bin]]
+name = "sleep_sort"
+
+[dependencies]
+rand = "0.3.15"
+
+[lib]
+name = "sleep_sort"

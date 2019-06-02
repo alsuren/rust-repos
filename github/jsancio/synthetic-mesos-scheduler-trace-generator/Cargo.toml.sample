@@ -1,0 +1,14 @@
+[package]
+name = "mesos-scheduler-trace-gen"
+version = "0.1.0"
+authors = ["José Armando García Sancio <jsancio@gmail.com>"]
+
+[dependencies]
+docopt = "0.6.78"
+docopt_macros = "0.6.81"
+rand = "0.3.14"
+rustc-serialize = "0.3.18"
+time = "0.1.34"
+
+[dependencies.protobuf]
+git = "https://github.com/stepancheg/rust-protobuf.git"

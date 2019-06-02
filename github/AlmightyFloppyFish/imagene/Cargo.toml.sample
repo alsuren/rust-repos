@@ -1,0 +1,11 @@
+[package]
+name = "imagene"
+version = "0.1.0"
+authors = ["Simon <simon.larsson-general@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+image = "*"
+colored = "*"
+imageproc = "*"
+rusttype = "*"

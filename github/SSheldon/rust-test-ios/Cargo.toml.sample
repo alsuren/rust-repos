@@ -1,0 +1,15 @@
+[package]
+name = "rust-test-ios"
+version = "0.1.1"
+authors = ["Steven Sheldon"]
+
+[dependencies]
+lazy_static = "0.2"
+regex = "0.1"
+serde_json = "0.7"
+walkdir = "0.1"
+
+[dependencies.toml]
+version = "0.1"
+default-features = false
+features = ["serde"]

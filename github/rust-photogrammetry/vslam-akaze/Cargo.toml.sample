@@ -1,0 +1,9 @@
+[package]
+name = "vslam-akaze"
+version = "0.1.0"
+authors = ["Geordon Worley <vadixidav@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+akaze = { git = "https://github.com/vadixidav/akaze-rust.git" }
+vslam = { git = "https://github.com/rust-photogrammetry/vslam.git" }

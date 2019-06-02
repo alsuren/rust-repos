@@ -1,0 +1,13 @@
+# Copyright © 2018 Bart Massey
+# [This work is licensed under the "MIT License"]
+# Please see the file LICENSE in the source
+# distribution of this software for license terms.
+
+[package]
+name = "rfc868-server"
+version = "0.1.0"
+authors = ["Bart Massey <bart@cs.pdx.edu>"]
+
+[dependencies]
+chrono = "0.4"
+byteorder = "1.2"

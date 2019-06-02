@@ -1,0 +1,9 @@
+[package]
+name = "karakuri"
+license = "MIT"
+description = "An automata framework in development that helps in the creation of chatbots and other \"intelligent\" agents in Rust."
+version = "0.1.0"
+authors = ["Istvan LAKATOS <lakatos.isti@gmail.com>"]
+edition = "2018"
+
+[dependencies]

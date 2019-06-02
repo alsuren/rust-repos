@@ -1,0 +1,18 @@
+[package]
+name = "rpm"
+version = "1.0.0"
+authors = ["chris"]
+
+
+[[bin]]
+name = "rpm"
+path = "src/main.rs"
+
+
+[dependencies]
+getch = "*"
+clap = "*"
+
+serde = "*"
+serde_derive = "*"
+serde_json = "*"

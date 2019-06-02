@@ -1,0 +1,12 @@
+[package]
+name = "bibz_rouge"
+version = "0.1.0"
+authors = ["Dave Laptop"]
+edition = "2018"
+
+[dependencies]
+tcod = { version = "0.12", features = ["serialization"] }
+rand = "0.3.9"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

@@ -1,0 +1,21 @@
+[package]
+
+name = "rust_url_capi"
+version = "0.0.1"
+authors = ["Valentin Gosu <valentin.gosu@gmail.com>"]
+
+[profile.dev]
+opt-level = 3
+debug = true
+rpath = true
+lto = true
+
+[lib]
+name = "rust_url_capi"
+crate-type = ["staticlib"]
+
+[dependencies.url]
+git = "https://github.com/valenting/rust-url"
+branch = "oxidation"
+#path = "../rust-url"
+

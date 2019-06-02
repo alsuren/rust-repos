@@ -1,0 +1,13 @@
+[package]
+name = "unzipr"
+version = "0.4.0"
+authors = ["Taivo Käsper <taivo.kasper@gmail.com>"]
+
+[[bin]]
+name = "unzipr"
+path = "src/mod.rs"
+
+[dependencies]
+clap = "2.29.4"
+zip = "0.3.0"
+failure = "0.1.1"

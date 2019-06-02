@@ -1,0 +1,19 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["kernel"]
+description = "a minimal kernel in rust"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Bakasho/rs-kernel.git"
+homepage = "https://github.com/Bakasho/rs-kernel"
+
+[dependencies.memory_area]
+#git = "https://github.com/nathanfaucett/rs-memory_area.git"
+path = "../rs-memory_area"
+
+[dependencies.errno]
+#git = "https://github.com/nathanfaucett/rs-errno.git"
+path = "../rs-errno"

@@ -1,0 +1,23 @@
+[package]
+name = "2i-emulator"
+version = "2.0.1"
+authors = ["Klemens Schölhorn <klemens@schoelhorn.eu>"]
+license = "GPL-3.0-or-later"
+
+[lib]
+name = "emulator"
+path = "src/emulator/lib.rs"
+
+[[bin]]
+name = "2i-emulator"
+path = "src/cli/main.rs"
+
+[dependencies]
+rustyline = { git = "https://github.com/klemens/rustyline.git", branch = "2i-emulator"}
+chrono = "0.4"
+cmdline-parser = "0.1"
+regex = "0.2"
+
+[dependencies.clap]
+version = "^2"
+default-features = false

@@ -1,0 +1,14 @@
+[package]
+name = "thermite"
+version = "0.1.0"
+authors = ["Evan Higgins <evan.higgins06@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0"
+spin = "0.4.5"
+volatile = "0.2.3"
+multiboot2 = "0.1.0"
+bitflags = "0.7.0"

@@ -1,6 +1,6 @@
 [package]
 name = "xpq"
-version = "0.1.0-beta.2"
+version = "0.1.0-beta.3"
 authors = ["Fabio B. Silva <fabio.bat.silva@gmail.com>"]
 description = "Simple Parquet command line toolkit."
 documentation = "https://github.com/FabioBatSilva/xpq"
@@ -11,12 +11,16 @@ readme = "README.md"
 license = "MIT"
 
 [dependencies]
+csv = "1.0.7"
 rand = "0.6.5"
 clap = "2.33.0"
+either = "1.5.2"
 walkdir = "2.2.7"
 tabwriter = "1.1.0"
+quick-error = "1.2.2"
 unicode-width = "0.1.5"
-parquet = { git = "https://github.com/apache/arrow", rev = "b38936f0" }
+streaming-stats = "0.2"
+parquet = { git = "https://github.com/apache/arrow", rev = "445482e" }
 
 [dev-dependencies]
 tempfile = "3.0.7"

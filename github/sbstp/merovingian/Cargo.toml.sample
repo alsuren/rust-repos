@@ -1,0 +1,32 @@
+[package]
+name = "mero"
+version = "0.1.0"
+authors = ["Simon Bernier St-Pierre <sbernierstpierre@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+attohttpc = { version = "0.4", features = ["json"] }
+bincode = "1"
+chardet = "0.2"
+csv = "1"
+dirs = "1"
+encoding_rs = "0.8"
+lazy_static = "1"
+log = "0.4"
+libflate = "0.1"
+open = "1"
+rusqlite = { version = "0.18", features = ["bundled", "uuid"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.8"
+signal-hook = "0.1"
+strsim = "0.8"
+structopt = "0.2"
+subparse = "0.5.0"
+tera = "0.11"
+uuid = { version = "0.7", features = ["v4"] }
+whatlang = "0.6"
+
+[profile.dev]
+opt-level = 1
+debug = 1

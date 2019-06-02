@@ -1,0 +1,18 @@
+[package]
+name = "pbrt_rs"
+version = "0.0.1"
+authors = ["Adrien Gruson <adrien.gruson@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "pbrt_rs"
+doc = false
+
+[dependencies]
+pest = "2.1"
+pest_derive = "2.1"
+clap = "2.33"
+env_logger = "0.6"
+log = "0.4"
+cgmath = "0.17"
+ply-rs = "0.1"

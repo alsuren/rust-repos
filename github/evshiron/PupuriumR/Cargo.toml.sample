@@ -1,0 +1,19 @@
+[package]
+
+name = "pupurium_r"
+version = "0.1.0"
+authors = [ "evshiron", "doylecnn" ]
+links = "CQP"
+build = "build.rs"
+
+[dependencies]
+encoding = "*"
+
+[dependencies.cqpsdk]
+git = "https://github.com/evshiron/cqpsdk-rust"
+
+[lib]
+
+name = "pupurium_r"
+crate-type = [ "dylib" ]
+

@@ -1,0 +1,7 @@
+[package]
+name = "wemos-ws-led-backend-rs"
+version = "0.1.0"
+authors = ["Alessio Coltellacci <alessio.coltellacci@clever-cloud.com>"]
+
+[dependencies]
+ws = "0.7"

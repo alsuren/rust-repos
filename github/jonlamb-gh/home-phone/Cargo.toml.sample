@@ -1,0 +1,14 @@
+[package]
+name = "home-phone"
+version = "0.1.0"
+authors = ["Jon Lamb"]
+edition = "2018"
+
+[dependencies]
+liblinphone-sys = { git = "https://github.com/jonlamb-gh/liblinphone-sys.git" }
+phonenumber = "0.2"
+ctrlc = "3.1"
+chrono = "0.4"
+
+# rpi embedded-hal impl
+# https://crates.io/crates/rppal

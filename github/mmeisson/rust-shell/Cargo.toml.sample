@@ -1,0 +1,8 @@
+[package]
+name = "minishell"
+version = "0.1.0"
+authors = ["mmeisson <mmeisson@student.42.fr>"]
+
+[dependencies]
+clap = { version = "~2.32", features = [ "yaml" ] }
+stringreader = "0.1.1"

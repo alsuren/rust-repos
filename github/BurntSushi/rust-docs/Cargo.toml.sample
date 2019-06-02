@@ -1,0 +1,29 @@
+[package]
+name = "docs"
+version = "0.1.0"
+authors = ["Andrew Gallant <jamslam@gmail.com>"]
+description = "A meta package for burntsushi's crate docs."
+documentation = "http://burntsushi.net/rustdoc/docs/"
+homepage = "https://github.com/BurntSushi"
+readme = "README.md"
+keywords = ["burntsushi"]
+license = "Unlicense/MIT"
+
+[dependencies]
+aho-corasick = "*"
+byteorder = "*"
+cbor = "*"
+chan = "*"
+chan-signal = "*"
+csv = "*"
+docopt = "*"
+fst = "*"
+memchr = "*"
+quickcheck = "*"
+regex = "*"
+regex-syntax = "*"
+streaming-stats = "*"
+suffix = "*"
+tabwriter = "*"
+utf8-ranges = "*"
+walkdir = "*"

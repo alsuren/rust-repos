@@ -1,0 +1,11 @@
+[package]
+name = "timer-based-config-load-server"
+version = "0.1.0"
+authors = ["siliang cao <siliang.cao@gmail.com>"]
+
+[dependencies]
+crossbeam = "0.2"
+toml = "0.2"
+unix_socket = "0.5"
+tokio-core = "0.1.3"
+futures = "0.1.7"

@@ -1,0 +1,35 @@
+[package]
+name = "indextree"
+version = "3.2.0"
+license = "MIT"
+readme = "README.md"
+keywords = ["tree", "arena", "index", "indextree", "trie"]
+authors = ["Sascha Grunert <mail@saschagruenrt.de>"]
+repository = "https://github.com/saschagrunert/indextree"
+homepage = "https://github.com/saschagrunert/indextree"
+documentation = "https://docs.rs/indextree"
+description = "Arena based tree structure by using indices instead of reference counted pointers"
+categories = ["data-structures"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "saschagrunert/indextree", branch = "master" }
+appveyor = { repository = "saschagrunert/indextree", branch = "master", service = "github" }
+
+[features]
+deser = [ "serde", "serde_derive" ]
+derive-eq = []
+par_iter = ["rayon"]
+
+[dependencies]
+failure = { version = "0.1.5", features = ["derive"] }
+rayon = { version = "1.0.3", optional = true }
+serde = { version = "1.0.90", optional = true }
+serde_derive = { version = "1.0.90", optional = true }
+
+[[example]]
+name = "parallel_iteration"
+required-features = ["par_iter"]
+
+[[example]]
+name = "simple"

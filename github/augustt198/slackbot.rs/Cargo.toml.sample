@@ -1,0 +1,15 @@
+[package]
+
+name = "slackbot"
+version = "0.0.1"
+authors = ["August <augustt198@gmail.com>"]
+
+[lib]
+name = "slackbot"
+path = "src/main.rs"
+
+[dependencies.http]
+git = "https://github.com/chris-morgan/rust-http"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

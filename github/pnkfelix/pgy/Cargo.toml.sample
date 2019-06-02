@@ -1,0 +1,15 @@
+[package]
+name = "pgy"
+version = "0.1.0"
+authors = ["pnkfelix"]
+
+[dependencies.pgy_runtime]
+git = "http://github.com/pnkfelix/pgy_runtime.git"
+# path = "/home/pnkfelix/Dev/Rust/pgy_runtime"
+
+[[test]]
+name = "micro_grammars"
+test = true
+
+# micro_grammars is just a driver that runs a sub-crate's tests.
+harness = false

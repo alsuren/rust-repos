@@ -1,0 +1,24 @@
+[package]
+name = "lhef"
+version = "0.1.0"
+authors = ["Torsten Weber <tweber@physik.rwth-aachen.de>"]
+license = "MIT/Apache-2.0"
+description = "A library to read and write files in the LesHouchesEvents format"
+repository = "https://github.com/tweber12/lhef-rs"
+readme = "README.md"
+keywords = ["physics", "hep", "lhe", "leshouches"]
+categories = ["science"]
+
+[badges]
+appveyor = { repository = "https://github.com/tweber12/lhef-rs" }
+travis-ci = { repository = "https://github.com/tweber12/lhef-rs" }
+
+[dependencies]
+nom = "3.2.1"
+lorentz_vector = { git = "https://github.com/tweber12/lorentz_vector_rs" }
+
+[dev-dependencies]
+quickcheck = "0.6.0"
+serde = { version = "1.0.27", features=["derive"] }
+serde_json = "1.0.9"
+lorentz_vector = { git = "https://github.com/tweber12/lorentz_vector_rs", features = ["serde"] }

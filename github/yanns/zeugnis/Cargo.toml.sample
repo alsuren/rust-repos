@@ -1,0 +1,12 @@
+[package]
+name = "zeugnis"
+version = "0.1.0"
+authors = ["Yann Simon <yann.simon.fr@gmail.com>"]
+
+[dependencies]
+iron = "0.5"
+maud = { version = "*", features = ["iron"] }
+maud_macros = "*"
+
+[profile.release]
+lto = true

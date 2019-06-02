@@ -1,0 +1,16 @@
+[package]
+
+name = "discrete"
+version = "0.2.1"
+authors = ["bvssvni <bvssvni@gmail.com>"]
+keywords = ["mathematics", "combinatorics", "phantom-types"]
+description = "Combinatorial phantom types for discrete mathematics"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/advancedresearch/discrete.git"
+homepage = "https://github.com/advancedresearch/discrete"
+
+[lib]
+
+name = "discrete"
+path = "src/lib.rs"

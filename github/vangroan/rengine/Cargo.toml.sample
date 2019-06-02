@@ -1,0 +1,30 @@
+[package]
+name = "rengine"
+version = "0.0.0"
+authors = ["Willem Victor <wimpievictor@gmail.com>"]
+edition = "2018"
+description = "Game engine/framework that aggregates several existing libraries"
+categories = ["game-engines"]
+license = "MIT"
+
+[dependencies]
+crossbeam = "0.7.1"
+gfx = "0.18.0"
+gfx_core = "0.9.0"
+gfx_device_gl = "0.16.0"
+gfx_window_glutin = "0.30.0"
+glutin = "0.20.0"
+image = "0.21.1"
+nalgebra = "0.18.0"
+nalgebra-glm = "0.4.0"
+num-traits = "0.2.6"
+shred = "0.7.0"
+shred-derive = "0.5.0"
+specs = { version = "0.14.3", default_features = false } # disable rayon due to CPU usage bug
+specs-derive = "0.4.0"
+
+[dev-dependencies]
+criterion = "0.2.11"
+
+[[bench]]
+name = "voxel"

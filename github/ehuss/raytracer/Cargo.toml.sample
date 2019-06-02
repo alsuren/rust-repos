@@ -1,0 +1,21 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+
+[dependencies]
+num-traits = "0.1.36"
+rand = "0.3.15"
+image = "0.12.3"
+derive-new = "0.4.0"
+minifb = { version = "0.9.0", optional = true }
+clap = "2.20.5"
+
+[features]
+default = ["gui"]
+gui = ["minifb"]
+
+[profile.release]
+lto = true
+debug = true
+# Other things that seem to help, but can't be specified in Cargo.toml:
+# -C target-cpu=haswell

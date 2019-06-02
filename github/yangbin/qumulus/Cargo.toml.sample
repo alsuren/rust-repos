@@ -1,0 +1,16 @@
+[package]
+name = "qumulus"
+version = "0.1.0"
+authors = ["Kwok Yang Bin <yangbin@fragnetics.com>"]
+
+[dependencies]
+bincode = "*"
+env_logger = "*"
+log = "*"
+mioco = { git = "https://github.com/dpc/mioco.pre-0.9.git" }
+rand = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+threadpool = "*"
+time = "*"

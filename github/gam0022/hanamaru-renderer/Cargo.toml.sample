@@ -1,0 +1,12 @@
+[package]
+name = "hanamaru-renderer"
+version = "0.1.0"
+authors = ["gam0022 <gam0022@gmail.com>"]
+
+[dependencies]
+image = "*"
+num = "*"
+rand = "0.3"
+rayon = "1.0"
+time = "0.1"
+getopts = "0.2"

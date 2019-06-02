@@ -1,0 +1,9 @@
+[package]
+name = "dlfs2"
+version = "0.1.0"
+authors = ["Takeru Ohta <phjgt308@gmail.com>"]
+publish = false
+
+[dependencies]
+ndarray = "0.12"
+ndarray-linalg = {version = "0.10", features = ["openblas"]}

@@ -1,0 +1,32 @@
+[package]
+
+name = "apod-rs"
+version = "0.0.1"
+authors = ["Prudhvi Krishna Surapaneni"]
+
+[[bin]]
+
+name = "apod-rs"
+path = "src/main.rs"
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+
+[dependencies]
+rustc-serialize = "*"
+regex = "*"
+regex_macros = "*"
+docopt = "*"
+docopt_macros = "*"
+
+[dependencies.curl]
+git = "https://github.com/carllerche/curl-rust"

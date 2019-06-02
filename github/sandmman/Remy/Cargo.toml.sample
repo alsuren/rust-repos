@@ -1,0 +1,10 @@
+[package]
+name = "remy"
+version = "0.1.0"
+authors = ["Aaron Liberatore <aaron.liberatore@gmail.com>"]
+
+[dependencies]
+
+num = "0.1.25"
+byteorder = "0.4.2"
+enum_primitive = "0.1.0"

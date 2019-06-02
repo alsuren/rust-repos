@@ -1,0 +1,9 @@
+[package]
+name = "pnetutils"
+version = "0.1.0"
+authors = ["Manuel Landesfeind <manuel@landesfeind.de>"]
+
+[dependencies]
+#pnet = "*"
+pnet = { git = "https://github.com/landesfeind/libpnet" }
+clap = "*"

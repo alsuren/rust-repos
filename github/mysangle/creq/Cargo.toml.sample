@@ -1,0 +1,15 @@
+[package]
+name = "creq"
+version = "0.1.0"
+description = "command line tool for HTTP request"
+authors = ["mysangle <mysangle@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+futures = "0.1.11"
+env_logger = "0.3"
+tokio-core = "0.1.6"
+
+[dependencies.hyper]
+git = "https://github.com/mysangle/hyper.git"
+branch = "mysangle"

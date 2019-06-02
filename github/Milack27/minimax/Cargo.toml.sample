@@ -1,0 +1,13 @@
+[package]
+name = "minimax"
+version = "0.1.0"
+authors = ["André Vicente Milack <andrevicente.m@gmail.com>"]
+edition = "2018"
+
+[workspace]
+members = [
+    "game_2048",
+    "tic_tac_toe",
+]
+
+[dependencies]

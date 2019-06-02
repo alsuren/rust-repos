@@ -1,0 +1,9 @@
+[package]
+name = "kamino"
+version = "0.1.0"
+authors = ["killertux <bruno.canguru@hotmail.com>"]
+edition = "2018"
+
+[dependencies]
+mysql_binlog = "0.2.0"
+notify = "4.0.0"

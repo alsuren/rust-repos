@@ -1,0 +1,16 @@
+[package]
+name = "xondara"
+version = "0.1.0"
+authors = ["Alexander Kuvaev <alexander@kuvaev.me>"]
+
+[dependencies]
+glutin = "*"
+gfx_core = "*"
+gfx_device_gl = "*"
+gfx_window_glutin = "*"
+gfx = "*"
+
+[dependencies.image]
+version = "*"
+default-features = false
+features = ["png_codec"]

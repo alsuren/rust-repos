@@ -1,0 +1,65 @@
+[package]
+name = "moonfire-nvr"
+version = "0.1.0"
+authors = ["Scott Lamb <slamb@slamb.org>"]
+edition = "2018"
+
+[features]
+
+# The nightly feature is used within moonfire-nvr itself to gate the
+# benchmarks. Also pass it along to crates that can benefit from it.
+nightly = ["db/nightly", "parking_lot/nightly", "smallvec/union"]
+
+# The bundled feature includes bundled (aka statically linked) versions of
+# native libraries where possible.
+bundled = ["rusqlite/bundled"]
+
+[workspace]
+members = ["base", "db", "ffmpeg"]
+
+[dependencies]
+base = { package = "moonfire-base", path = "base" }
+base64 = "0.10.0"
+bytes = "0.4.6"
+byteorder = "1.0"
+cursive = "0.12"
+db = { package = "moonfire-db", path = "db" }
+docopt = "1.0"
+failure = "0.1.1"
+ffmpeg = { package = "moonfire-ffmpeg", path = "ffmpeg" }
+futures = "0.1"
+futures-cpupool = "0.1"
+fnv = "1.0"
+http = "0.1.5"
+http-serve = "0.1.0"
+hyper = "0.12.9"
+lazy_static = "1.0"
+libc = "0.2"
+log = { version = "0.4", features = ["release_max_level_info"] }
+memchr = "2.0.2"
+memmap = "0.7"
+mylog = { git = "https://github.com/scottlamb/mylog" }
+openssl = "0.10"
+parking_lot = { version = "0.8", features = [] }
+reffers = "0.5.1"
+regex = "1.0"
+ring = "0.14.6"
+rusqlite = "0.18"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+smallvec = "0.6"
+time = "0.1"
+tokio = "0.1.8"
+tokio-signal = "0.2"
+url = "1.4"
+uuid = { version = "0.7", features = ["serde", "std", "v4"] }
+
+[dev-dependencies]
+reqwest = "0.9.5"
+tempdir = "0.3"
+
+[profile.release]
+debug = true
+
+[profile.bench]
+debug = true

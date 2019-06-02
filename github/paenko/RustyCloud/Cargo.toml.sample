@@ -1,0 +1,17 @@
+[package]
+name = "RustyCloud"
+version = "0.1.0"
+authors = ["Kevin Per <kevp.per@gmail.com>"]
+
+[dependencies]
+rustful= "0.9"
+rustc-serialize = "*"
+uuid = {version="*",features=["rustc-serialize","v4"]}
+bincode = "*"
+iron = "*"
+router = "*"
+params = "*"
+chrono = { version = "0.2", features = [ "rustc-serialize"] }
+base64 ="*"
+hyper ="*"
+bodyparser="*"

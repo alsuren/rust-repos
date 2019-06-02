@@ -1,0 +1,15 @@
+[package]
+name = "salt-lending-exchange-challenge"
+version = "0.1.0"
+authors = ["Hunter Trujillo <cryptoquick@pm.me>"]
+edition = "2018"
+publish = false
+
+[workspace]
+members = [
+    "app",
+    "daemon"
+]
+
+[dependencies]
+shellfn = "0.1.1"

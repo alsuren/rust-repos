@@ -1,0 +1,14 @@
+[package]
+name = "redox"
+version = "0.1.0"
+authors = ["Viktor Holmgren <viktor.holmgren@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "0.1.4"
+spin = "0.3.4"
+
+[dependencies.multiboot2]
+git = "https://github.com/phil-opp/multiboot2-elf64"

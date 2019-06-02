@@ -1,0 +1,9 @@
+[package]
+name = "modelm-linux"
+version = "0.1.0"
+authors = ["Miles Steele <miles@milessteele.com>"]
+
+[dependencies]
+rand = "*"
+log = "*"
+ears = "*"

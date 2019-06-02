@@ -1,0 +1,11 @@
+[package]
+name = "projektor2-rs"
+version = "0.1.0"
+authors = ["Oleg Yamnikov <bgeyts667@gmail.com>"]
+
+[dependencies]
+gio = "0.4"
+glib = "0.5"
+gtk = {version = "0.4", features = ["v3_10"]}
+gdk = "0.8"
+gdk-pixbuf = "0.4"

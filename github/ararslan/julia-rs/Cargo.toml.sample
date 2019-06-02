@@ -1,0 +1,7 @@
+[package]
+name = "julia"
+version = "0.0.1"
+authors = ["Alex Arslan <ararslan@comcast.net>"]
+
+[dependencies]
+libc = "*"

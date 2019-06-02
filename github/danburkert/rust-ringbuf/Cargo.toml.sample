@@ -1,0 +1,20 @@
+[package]
+
+name = "ringbuf"
+version = "0.1.0"
+authors = [ "dan@danburkert.com" ]
+
+[[lib]]
+name = "ringbuf"
+
+[[bin]]
+name = "bench"
+
+[[bin]]
+name = "alloc"
+
+[dependencies.criterion]
+git = "https://github.com/japaric/criterion.rs"
+
+[dependencies.quickcheck]
+git = "https://github.com/BurntSushi/quickcheck"

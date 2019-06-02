@@ -1,0 +1,28 @@
+[package]
+name = "mmind"
+description = "Knuth's Algorithm for Mastermind"
+version = "0.0.2"
+authors = ["Dan Connolly <dckc@madmode.com>"]
+
+keywords = ["algorithms", "games"]
+
+exclude = [
+    ".hg/*",
+    "*.orig",
+    "*~",
+]
+
+license = "MIT"
+
+[dependencies]
+rand = "0.3.14"
+bit-set = "0.4.0"
+bit-vec = "0.4.3"
+
+[lib]
+name = "mastermind"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mmind"
+path = "src/main.rs"

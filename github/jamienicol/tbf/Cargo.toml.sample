@@ -1,0 +1,17 @@
+[package]
+name = "tbf"
+version = "0.1.0"
+authors = ["Jamie Nicol <jamie@jamienicol.me>"]
+
+[profile.dev]
+opt-level = 1
+
+[dependencies]
+nalgebra = "0.16"
+specs = "0.10"
+specs-derive = "0.1"
+tiled = "0.7"
+
+[dependencies.ggez]
+git = "https://github.com/ggez/ggez"
+branch = "devel"

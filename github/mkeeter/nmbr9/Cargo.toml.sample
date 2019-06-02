@@ -1,0 +1,10 @@
+[package]
+name = "nmbr9"
+version = "0.1.0"
+authors = ["Matt Keeter <matt.j.keeter@gmail.com>"]
+
+[dependencies]
+arrayvec = "0.4.7"
+lazy_static = "1.0"
+colored = "1.6"
+rayon = "1.0.2"

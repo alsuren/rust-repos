@@ -1,0 +1,15 @@
+[package]
+
+name = "sdltest"
+version = "0.0.1"
+authors = ["Alex <apoltarjonoks@gmail.com>"]
+
+
+[dependencies]
+    sdl2 = "*"
+    sdl2_image = "*"
+
+[dependencies.sdl2_game_engine]
+path = "sdl2_game_engine"
+version = "0.0.1"
+

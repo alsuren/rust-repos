@@ -1,0 +1,8 @@
+[package]
+name = "tts"
+version = "0.1.0"
+authors = ["Connor Hilarides <connorcpu@live.com>"]
+
+[dependencies]
+winapi = "*"
+ole32-sys = "*"

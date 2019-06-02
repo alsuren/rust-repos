@@ -1,0 +1,29 @@
+[package]
+name = "sassaurs"
+version = "0.1.0"
+authors = ["Justin Latimer <justinlatimer@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/justinlatimer/sassaurs"
+homepage = "https://github.com/justinlatimer/sassaurs"
+documentation = "https://github.com/justinlatimer/sassaurs"
+description = """
+Sass compiler
+"""
+
+[lib]
+name = "sassaurs"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "sassaurs_spec"
+path = "src/spec/bin.rs"
+
+[dependencies]
+docopt = "*"
+docopt_macros = "*"
+rustc-serialize = "*"
+glob = "*"
+littletest = "*"
+regex = "*"
+regex_macros = "*"

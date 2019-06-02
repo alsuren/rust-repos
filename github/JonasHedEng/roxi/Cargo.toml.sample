@@ -1,0 +1,17 @@
+[package]
+
+name = "Roxi"
+version = "0.1.0"
+authors = [
+    "Jonas Hedman Engström <jonas.hedeng@gmail.com>"
+]
+
+[[bin]]
+name = "roxi"
+
+[dependencies]
+piston = "0.22.0"
+piston2d-graphics = "0.16.0"
+pistoncore-glutin_window = "0.26.0"
+piston2d-opengl_graphics = "0.28.0"
+image = "*"

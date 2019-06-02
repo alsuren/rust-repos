@@ -1,0 +1,13 @@
+[package]
+name = "computus"
+version = "1.0.0"
+authors = ["David Hewson <dev@daveid.co.uk>"]
+
+description = "Computus Easter calculation in Rust"
+homepage = "https://github.com/dten/computus"
+repository = "https://github.com/dten/computus"
+keywords = ["easter", "date", "calendar", "gregorian", "julian"]
+readme = "README.md"
+license = "MIT"
+
+[dependencies]

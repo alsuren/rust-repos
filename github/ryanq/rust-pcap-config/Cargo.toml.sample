@@ -1,0 +1,16 @@
+[package]
+name = "pcap-config"
+version = "0.1.1"
+authors = ["Ryan Quattlebaum <ryan.quattlebaum@icloud.com>"]
+description = """
+A library to run the pcap-config tool at build time to find the compiler flags
+for linking libpcap.
+"""
+documentation = "http://ryanq.github.io/rust-pcap-config/pcap_config/index.html"
+homepage = "http://ryanqgithub.io/rust-pcap-config/pcap_config/index.html"
+repository = "https://github.com/ryanq/rust-pcap-config"
+
+readme = "README.md"
+license-file = "LICENSE.md"
+
+keywords = ["pcap", "pcap-config", "build-dependencies"]

@@ -1,0 +1,11 @@
+[package]
+name = "rust_jvm"
+version = "0.1.0"
+authors = ["CasterKKK <574384564@qq.com>"]
+
+[dependencies]
+clap = {version = "2.31", features = ["yaml"]}
+zip = "0.3"
+byteorder = "1"
+mopa = "0.2.2"
+hex-slice = "0.1.4"

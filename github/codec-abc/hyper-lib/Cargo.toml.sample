@@ -1,0 +1,15 @@
+[package]
+name = "test_hyper"
+version = "0.1.0"
+authors = ["you@example.com"]
+
+[dependencies.hyper]
+version = "0.6"
+default-features = false
+
+[dependencies.libc]
+version = "0.1"
+
+[lib]
+name = "test_hyper"
+crate-type = ["staticlib"]

@@ -1,0 +1,22 @@
+[package]
+name = "minecraft_downloader"
+description = "Download Minecraft's server.jar file"
+version = "0.1.1"
+authors = ["Caleb Marble <marblenix@users.noreply.github.com>"]
+edition = "2018"
+homepage = "https://github.com/marblenix/minecraft_downloader"
+repository = "https://github.com/marblenix/minecraft_downloader"
+keywords = ["minecraft", "management", "utility"]
+license = "MIT"
+publish = false
+
+[dependencies]
+reqwest = "*"
+serde = "1"
+serde_json = "1"
+rust-crypto = "*"
+clap = "2"
+
+# Windows cannot statically link openssl libraries
+[target.'cfg(unix)'.dependencies]
+openssl = { version = "*", features = ["vendored"] }

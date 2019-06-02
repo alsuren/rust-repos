@@ -1,0 +1,30 @@
+[package]
+name = "rustnabi"
+version = "0.1.0"
+authors = ["aaron"]
+#build = "src/build.rs"
+#
+#[build-dependencies]
+#dotenv = "*"
+#indexmap = { version = "*", features = ["serde-1"] }
+
+[dependencies]
+ws = "*"
+dotenv = "*"
+pretty_env_logger = "*"
+log = "*"
+postgres = "*"
+diesel = { version = "*", features = ["postgres", "serde_json", "network-address", "chrono"] }
+# Diesel dependencies *must* version-match!
+ipnetwork = "0.12.8" # IP address type that Diesel uses
+chrono = "0.4.5"
+diesel-derive-enum = { version = "*", features = ["postgres"] }
+serde_json = "*"
+ring = "*"
+lazy_static= "*" # for using a global RNG, as recommended in `ring` docs
+rand = "*"
+hyper = "*"
+
+serde = "*"
+serde_yaml = "*"
+serde_derive = "*"

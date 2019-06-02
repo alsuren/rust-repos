@@ -1,0 +1,7 @@
+[package]
+authors = ["Martin Sehnoutka <msehnout@redhat.com>"]
+name = "netcat"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.20.5"

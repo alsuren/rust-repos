@@ -1,0 +1,15 @@
+[workspace]
+
+
+members = [
+    "frontend-wasm",
+    "frontend-sdl",
+    "nes",
+]
+
+[profile.test]
+opt-level = 3
+
+[profile.release]
+lto = true
+#debug = true

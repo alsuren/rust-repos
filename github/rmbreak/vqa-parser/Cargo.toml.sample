@@ -1,0 +1,11 @@
+[package]
+name = "vqa-parser"
+version = "0.1.0"
+authors = ["Mack Stump <mack.stump@gmail.com>"]
+
+[dependencies]
+bitflags = "0.9"
+nom = "3"
+
+[dev-dependencies]
+cpal = "0.5"

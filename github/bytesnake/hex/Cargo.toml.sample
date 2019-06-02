@@ -1,0 +1,19 @@
+[workspace]
+
+members = [
+    "conf",
+    "database",
+    "database/gossip",
+    "music-container",
+    "server",
+    "server/protocol",
+    "zyklop",
+    "cli",
+    "nightly-worker"
+]
+
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = "s" 
+debug = false
+lto = true

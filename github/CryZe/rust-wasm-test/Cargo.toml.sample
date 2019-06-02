@@ -1,0 +1,16 @@
+[package]
+name = "hello-world"
+version = "0.1.0"
+authors = ["Christopher Serr <christopher.serr@gmail.com>"]
+build = "build.rs"
+
+[profile.release]
+lto = true
+
+[build-dependencies]
+lalrpop = "0.12.0"
+
+[dependencies]
+webplatform = "0.4.2"
+libc = "*"
+lalrpop-util = "0.12.0"

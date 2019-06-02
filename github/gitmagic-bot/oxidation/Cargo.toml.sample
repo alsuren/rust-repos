@@ -1,0 +1,13 @@
+[package]
+name = "oxidation_app"
+version = "0.1.0"
+authors = ["Ethan Brooks <EB5473@gmail.com>"]
+description = "A bittorrent application, written in Rust."
+repository = "https://github.com/CalmBit/oxidation"
+readme = "README.md"
+keywords = ["bittorrent", "oxidation"]
+license = "GPL-3.0"
+
+[dependencies]
+
+oxidation_bencode = "^0.1.0"

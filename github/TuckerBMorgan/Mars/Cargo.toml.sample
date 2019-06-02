@@ -1,0 +1,19 @@
+[package]
+name = "mars"
+version = "0.1.0"
+authors = ["wintermute"]
+edition = "2018"
+
+[dependencies]
+minifb = "*"
+#{ git = "/Users/tucker_morgan/Documents/rust_minifb"}
+rand = "*"
+image = "*"
+spmc = "*"
+num_cpus = "1.0"
+rayon = "1.0"
+euclid = "*"
+
+[profile.release]
+lto = true
+codegen-units = 1

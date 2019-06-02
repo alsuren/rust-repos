@@ -1,0 +1,9 @@
+[package]
+name = "rvm"
+version = "0.2.1"
+authors = ["Steffen Kunert <kunste0@googlemail.com>"]
+
+[dependencies]
+getopts = "*"
+rustc_version_runtime = "*"
+time = "*"

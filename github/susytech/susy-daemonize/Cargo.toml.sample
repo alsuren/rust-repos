@@ -1,0 +1,31 @@
+[package]
+edition = "2018"
+name = "susy-daemonize"
+version = "0.3.0"
+authors = ["Susytech <admin@superstring.ch>", "Paritytech <admin@parity.io>"]
+description = "A more advanced daemonizer"
+documentation = "https://docs.rs/susy-daemonize"
+readme = "README.md"
+keywords = ["daemon", "daemonize", "unix"]
+categories = ["os::unix-apis"]
+license = "GPL-3.0"
+repository = "https://github.com/susytech/susy-daemonize"
+[dependencies.ansi_term]
+version = "0.11"
+registry="susytech"
+
+[dependencies.failure]
+version = "0.1"
+registry="susytech"
+
+[dependencies.libc]
+version = "0.2"
+registry="susytech"
+
+[dependencies.log]
+version = "0.4"
+registry="susytech"
+
+[dependencies.mio]
+version = "0.6"
+registry="susytech"

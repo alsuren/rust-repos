@@ -1,0 +1,30 @@
+[package]
+name = "relint"
+version = "0.0.1"
+authors = [ "Ed Page <eopage@byu.net>" ]
+description = """
+Regular expression based code linting
+"""
+documentation = "https://github.com/epage/relint"
+homepage = "https://github.com/epage/relint"
+readme = "README.md"
+keywords = ["regex", "lint"]
+license = "Unlicense/MIT"
+categories = ["command-line-utilities", "development-tools", "text-processing"]
+
+[[bin]]
+name = "relint"
+
+[dependencies]
+clap = "2.19"
+grep = "0.1.4"
+ignore = "0.1.5"
+toml = "0.2.1"
+slog = "1.4.1"
+slog-term = "1.4.0"
+slog-scope = "0.2.2"
+libc = "0.2"
+
+[target.'cfg(windows)'.dependencies]
+kernel32-sys = "0.2.2"
+winapi = "0.2.8"

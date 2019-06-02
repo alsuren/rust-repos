@@ -1,0 +1,18 @@
+[package]
+name = "primus_polygoni"
+version = "0.1.0"
+authors = ["Thomas Koehler <basta.t.k+git@gmail.com>"]
+
+[dependencies]
+gfx = { git = "https://github.com/gfx-rs/gfx", rev = "16f4e20384b8b4e89a0b7402b3743d5de7ce4460" }
+gfx_device_gl = { git = "https://github.com/gfx-rs/gfx", rev = "16f4e20384b8b4e89a0b7402b3743d5de7ce4460" }
+gfx_window_glutin = { git = "https://github.com/gfx-rs/gfx", rev = "16f4e20384b8b4e89a0b7402b3743d5de7ce4460" }
+winit = "^0.5"
+glutin = "^0.7"
+nalgebra = "^0.11"
+alga = "^0.5"
+time = "^0.1"
+rand = "^0.3"
+noise = "^0.4"
+image = "^0.12"
+rayon = "^0.6"

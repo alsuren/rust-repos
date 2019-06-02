@@ -1,0 +1,18 @@
+[package]
+name = "hashtag"
+version = "0.1.11"
+authors = ["David Pedersen <david.pdrsn@gmail.com>"]
+description = "A hashtag parser"
+license = "MIT"
+repository = "https://github.com/tonsser/hashtag-rs"
+readme = "README.md"
+categories = ["parser-implementations"]
+
+[dependencies]
+serde = "1.0.21"
+serde_json = "1.0.6"
+serde_derive = "1.0.21"
+
+[[bin]]
+name = "benchmark"
+path = "src/benchmark.rs"

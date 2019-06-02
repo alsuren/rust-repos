@@ -1,0 +1,24 @@
+[package]
+name = "puccinia"
+version = "0.1.0"
+authors = ["Ellie Frost <web@stillinbeta.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+crossbeam-channel = "0.3.6"
+tokio = "0.1.18"
+futures = "0.1"
+
+[dependencies.cursive]
+git = "https://github.com/stillinbeta/Cursive.git"
+rev = "36535109ca5ca6fc0972ce11f7d44760bdb663bc"
+features = ["termion-backend", "termion-telnet-backend" ]
+
+[dependencies.termion]
+git =  "https://github.com/stillinbeta/termion.git"
+rev = "c13e858d3f4a1eef1317f10c8ed0237c61f38018" 
+
+[dependencies.termiontelnet]
+git = "https://github.com/stillinbeta/termiontelnet.git"
+rev = "5abf39f520080f8c44bfc8e7f882f30c1d55e5f2"

@@ -1,0 +1,26 @@
+[package]
+name = "garden"
+version = "0.1.0"
+authors = ["Andrey Kutejko <andy128k@gmail.com>", "Alexey Suslov <alexey.suslov@gmail.com>"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+regex = "1"
+hex = "0.3.2"
+semver = { version = "0.9.0", features = ["serde"] }
+failure = "0.1.1"
+structopt = "0.2"
+reqwest = "0.8.5"
+url = "1.7.0"
+url_serde = "0.2.0"
+md5 = "0.3.7"
+sha1 = "0.6.0"
+sha2 = "0.7.0"
+sha3 = "0.7.3"
+indicatif = "0.9.0"
+dialoguer = "0.1.0"
+
+[dev-dependencies]
+assert_cli = "0.6"

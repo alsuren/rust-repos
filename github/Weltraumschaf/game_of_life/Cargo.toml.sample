@@ -1,0 +1,18 @@
+[package]
+name = "game_of_life"
+version = "1.0.0"
+authors = ["Sven Strittmatter <sven.strittmatter@iteratec.de>"]
+repository = "https://github.com/Weltraumschaf/game_of_live"
+readme = "README.md"
+license = "http://weltraumschaf.de/the-beer-ware-license.txt"
+
+[badges]
+travis-ci = { repository = "Weltraumschaf/game_of_live", branch = "master" }
+codecov = { repository = "Weltraumschaf/game_of_live", branch = "master", service = "github" }
+
+[dependencies]
+clap = "2.29.2"
+rand = "0.4"
+
+[dev-dependencies]
+hamcrest = "0.1.5"

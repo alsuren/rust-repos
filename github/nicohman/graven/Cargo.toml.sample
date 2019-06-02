@@ -1,0 +1,16 @@
+[package]
+name = "graven"
+version = "0.1.0"
+authors = ["nicohman <nicohman@demenses.net>"]
+repository="https://git.sr.ht/~nicohman/graven"
+description="A GUI version of the raven theme manager"
+keywords=["linux","gui","customization"]
+categories=["gui","command-line-interface"]
+license="GPL-3.0"
+[[bin]]
+name = "graven"
+path = "src/gui.rs"
+[dependencies]
+azul = { git = "https://github.com/maps4print/azul", rev = "984b20c7e5933d93453c0cb5d9e9956be2cab94d" }
+ravenlib = "1.2.3"
+reqwest = "0.9.5"

@@ -1,0 +1,19 @@
+[package]
+name = "crucio"
+version = "0.1.0"
+authors = ["Sindre Ilebekk Johansen <sindre@sindrejohansen.no>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/sindreij/crucio"
+description = "Crucio is a test harness used to see how a webservice behaves when its dependencies has a specific failure mode."
+
+[dependencies]
+futures-preview = { version = "0.3.0-alpha.16", features = ["async-await", "nightly", "compat"] }
+hyper = "0.12"
+tokio = "0.1"
+structopt = "0.2"
+snafu = "0.4.1"
+rand = "0.6.5"
+log = "0.4"
+pretty_env_logger = "0.3"

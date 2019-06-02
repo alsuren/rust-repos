@@ -1,0 +1,26 @@
+[package]
+name = "feed"
+version = "2.1.0"
+authors = ["Chris Palmer <pennstate5013@gmail.com>"]
+description = "Deprecated. This project has been merged with the rss crate."
+repository = "https://github.com/red-oxide/feed"
+
+readme = "README.md"
+keywords = ["rss", "feed"]
+categories = ["parsing"]
+license = "LGPL-3.0"
+exclude = ["rsc", ".pullapprove.yml", ".gitignore", ".rustfmt.toml", ".travis.yml"]
+
+[badges]
+travis-ci = { repository = "red-oxide/feed" }
+
+[dependencies]
+chrono = "0.3"
+curl = "0.4"
+mime = "0.2"
+rss = "0.4"
+url = "1.2"
+
+[features]
+default  = []
+unstable = []

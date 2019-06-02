@@ -1,0 +1,56 @@
+[package]
+name = "rest_in_rust"
+version = "0.1.0"
+authors = ["Christian <krampenschiesser@gmail.com>"]
+description = "Basic http1 server based on tokio and http crate"
+#documentation = "https://docs.rs/rest_in_rust"
+homepage = "https://github.com/krampenschiesser/rest_in_rust"
+repository = "https://github.com/krampenschiesser/rest_in_rust"
+readme = "README.md"
+categories = ["http", "rest"]
+keywords = ["http", "server", "rest", "tokio"]
+license = "Apache/MIT"
+exclude = [
+  "examples/certificate.p12",
+  ".travis.yml",
+  "appveyor.yml"
+]
+
+[features]
+unstable = ["clippy"]
+
+[dependencies]
+clippy = {version = "*", optional = true}
+
+tokio-tls = {version="0.1.4", features = ["tokio-proto"]}
+native-tls = "0.1.5"
+tokio-service = "0.1.0"
+tokio-proto = "0.1.1"
+tokio-io = "0.1.6"
+bytes = "0.4.6"
+httparse = "1.2.4"
+futures = "0.1.18"
+futures-cpupool = "0.1.8"
+route-recognizer = "0.1.12"
+url = "1.7.0"
+serde = "1.0.33"
+serde_json = "1.0.12"
+serde_derive = "1.0.33"
+log = "0.4.1"
+brotli= "1.2.0"
+miniz_oxide = "0.1.2"
+state = "0.4.0"
+http = "0.1.5"
+mime-sniffer = "0.1.2"
+mime_guess = "1.8.2"
+sha1 = "0.6.0"
+
+[dev-dependencies]
+reqwest = "0.8.5"
+env_logger = "0.5.6"
+spectral = "0.6.0"
+tempdir = "0.3.6"
+
+[badges]
+appveyor = { repository = "https://github.com/krampenschiesser/rest_in_rust", branch = "master", service = "github" }
+travis-ci = { repository = "https://github.com/krampenschiesser/rest_in_rust", branch = "master" }

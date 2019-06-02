@@ -1,0 +1,23 @@
+[package]
+name = "lpc1347"
+version = "0.2.2"
+authors = ["Axel Sundbom <axel.sundbom@grepit.se>",
+           "Henrik Tjäder <henrik@grepit.se>"
+          ]
+description = "Peripheral access for the nxp lpc1347"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+cortex-m = "0.5.0"
+bare-metal = "0.2.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.5.0"
+
+[features]
+rt = ["cortex-m-rt/device"]
+
+[package.metadata.docs.rs]
+features = ["rt"]

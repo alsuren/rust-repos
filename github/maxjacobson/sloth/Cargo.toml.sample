@@ -1,0 +1,16 @@
+[package]
+name = "sloth"
+version = "0.1.0"
+authors = ["Max Jacobson <max@hardscrabble.net>"]
+license = "MIT"
+readme = "README.md"
+description = "CLI tool for browsing the news"
+homepage = "https://github.com/maxjacobson/sloth"
+exclude = [
+  "TODO.txt"
+]
+
+[dependencies]
+hyper = "0.9.14"
+rustyline = "1.0.0"
+toml = "0.2.1"

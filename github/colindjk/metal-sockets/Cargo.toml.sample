@@ -1,0 +1,8 @@
+[package]
+name = "metal-sockets"
+version = "0.1.0"
+authors = ["kibbles"]
+
+[dependencies]
+mio="0.6"
+http-muncher="0.3"

@@ -1,0 +1,54 @@
+[package]
+authors = ["MaidSafe Developers <dev@maidsafe.net>"]
+build = "build.rs"
+description = "Implementation of the 'Vault' node for the SAFE Network."
+documentation = "https://docs.rs/safe_vault"
+homepage = "https://maidsafe.net"
+license = "GPL-3.0"
+name = "safe_vault"
+readme = "README.md"
+repository = "https://github.com/maidsafe/safe_vault"
+version = "0.15.0"
+
+[dependencies]
+accumulator = "~0.5.0"
+config_file_handler = "~0.7.0"
+clap = "~2.14.1"
+fake_clock = "~0.1.0"
+fs2 = "~0.2.5"
+hex = "~0.2.0"
+itertools = "~0.5.9"
+lru_time_cache = "~0.6.0"
+log = "~0.3.7"
+maidsafe_utilities = "~0.13.0"
+quick-error = "~1.1.0"
+rand = "~0.3.14"
+routing = { git = "https://github.com/Thierry61/routing.git" }
+rust_sodium = "~0.3.0"
+serde = "~1.0.6"
+serde_derive = "~1.0.6"
+serde_json = "~1.0.2"
+tiny-keccak = "~1.2.1"
+unwrap = "~1.1.0"
+
+[build-dependencies]
+hyper = {version = "~0.9.10", optional = true}
+
+[dev-dependencies]
+tempdir = "~0.3.5"
+
+[features]
+generate-diagrams = ["hyper"]
+use-mock-crust = ["routing/use-mock-crust", "lru_time_cache/fake_clock"]
+use-mock-routing = ["lru_time_cache/fake_clock"]
+use-mock-crypto = ["routing/use-mock-crypto"]
+# Activate feature with command: cargo build --features "local-network"
+# Following line will also activate the feature in routing and (transitively) crust.
+local-network = ["routing/local-network"]
+
+[[test]]
+name = "tests"
+
+[[bin]]
+name = "safe_vault"
+doc = false

@@ -1,0 +1,9 @@
+[package]
+name = "frame-timing"
+version = "0.1.0"
+authors = ["David LeGare <excaliburhissheath@gmail.com>"]
+
+[dependencies]
+bencher = "0.1.5"
+clap = "2.19"
+lazy_static = "0.2"

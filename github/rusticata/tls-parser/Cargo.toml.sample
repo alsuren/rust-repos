@@ -1,0 +1,49 @@
+[package]
+description = "Parser for the TLS protocol"
+license = "MIT/Apache-2.0"
+keywords = ["TLS","SSL","protocol","parser","nom"]
+homepage = "https://github.com/rusticata/tls-parser"
+repository = "https://github.com/rusticata/tls-parser.git"
+documentation = "https://docs.rs/tls-parser"
+name = "tls-parser"
+version = "0.7.1"
+authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
+categories = ["parsing"]
+readme = "README.md"
+build = "build.rs"
+
+include = [
+  "LICENSE-*",
+  ".gitignore",
+  ".travis.yml",
+  "Cargo.toml",
+  "benches/*.rs",
+  "build.rs",
+  "src/*.rs",
+  "tests/*.rs",
+  "scripts/tls-ciphersuites.txt",
+  "scripts/extract-iana-ciphers.py"
+]
+
+[lib]
+name = "tls_parser"
+
+[features]
+default = []
+serialize = []
+
+[dependencies]
+nom = {version = "4.0", features=["verbose-errors"] }
+phf = "0.7.16"
+enum_primitive = "^0.1"
+rusticata-macros = "1.1"
+cookie-factory = "0.2"
+
+[dev-dependencies]
+pretty_assertions = "0.6"
+
+[build-dependencies]
+phf_codegen = "0.7.16"
+
+[badges]
+travis-ci = { repository = "rusticata/tls-parser" }

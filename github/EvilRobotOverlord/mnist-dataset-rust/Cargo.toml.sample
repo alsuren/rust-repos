@@ -1,0 +1,11 @@
+[package]
+name = "mnist-dataset-rust"
+version = "0.1.0"
+authors = ["n-kartha <niranjankartha@gmail.com>"]
+
+[dependencies]
+flate2 = "1.0.1"
+tar = "0.4.15"
+ndarray = { version = "0.11.2", features = ["serde-1"] }
+bincode = "1.0.1"
+byteorder = "1.2.3"

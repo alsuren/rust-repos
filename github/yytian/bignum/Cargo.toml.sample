@@ -1,0 +1,10 @@
+[package]
+name = "bignum"
+version = "0.4.0"
+authors = ["Jim Tian <yytian@uwaterloo.ca>"]
+
+[dependencies]
+rayon = "0.5.0"
+
+[dev-dependencies]
+quickcheck = "0.4.0"

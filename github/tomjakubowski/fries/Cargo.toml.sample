@@ -1,0 +1,15 @@
+[package]
+
+name = "fries"
+version = "0.1.0"
+authors = ["Tom Jakubowski <tom@crystae.net>"]
+
+[[bin]]
+
+name = "fries"
+path = "src/fries.rs"
+
+[dependencies.rust-sfml]
+
+git = "https://github.com/tomjakubowski/rust-sfml"
+branch = "update-pixels-slice"

@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "./fluix-syntax",
+    # "./fluix-vm",
+    # "./fluix-compiler",
+    "./fluix-cli",
+    "./fluix-directives",
+    "./fluix-check",
+    "./fluix-exec"
+]

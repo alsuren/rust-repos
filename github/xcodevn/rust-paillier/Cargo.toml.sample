@@ -1,0 +1,15 @@
+[package]
+name = "rust-gm-paillier"
+version = "0.1.0"
+authors = ["Thông <xcodevn@gmail.com>"]
+description = "A quick implementation of GM and Paillier crypto systems"
+repository = "https://github.com/xcodevn/rust-paillier"
+license = "MIT"
+keywords = [ "paillier", "Goldwasser-Micali", "homomorphic", "cryptosystem" ]
+
+[lib]
+name = "gm_paillier"
+
+[dependencies]
+gmp = { path = "gmp", version = "0.3.1"  }
+rand = "0.3"

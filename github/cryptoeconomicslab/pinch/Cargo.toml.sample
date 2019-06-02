@@ -1,0 +1,17 @@
+[package]
+name = "pinch"
+version = "0.1.0"
+authors = ["sg <sg@cryptoeconomicslab.com>"]
+
+[dependencies]
+clap = "^2.32.0"
+hyper = "0.12.9"
+url = "1.7.1"
+
+[dependencies.mst]
+git = "https://github.com/tmontaigu/rust-mst"
+branch = "master"
+
+[dependencies.hyper-sync]
+git = "https://github.com/khvzak/hyper-sync"
+branch = "master"

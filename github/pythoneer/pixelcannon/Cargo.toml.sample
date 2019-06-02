@@ -1,0 +1,11 @@
+[package]
+name = "pixelcannon"
+version = "0.1.0"
+authors = ["Dustin Bensing <dustin.bensing@googlemail.com>"]
+
+[dependencies]
+orbclient = "*"
+orbimage = { git = "https://github.com/redox-os/orbimage.git" }
+
+#[profile.release]
+#debug = true

@@ -1,0 +1,23 @@
+[package]
+name = "twelve_factor"
+version = "0.0.3"
+authors = ["esolis <esolis@homeaway.com>"]
+edition = "2018"
+description = "A mashup of libraries that produce a 12factor compliat application with logs, metrcs, secrets, etc"
+repository = "https://github.com/dashpipe/12factor-rs"
+readme = "README.md"
+keywords = ["observability"]
+categories = ["Configuration"]
+license = "Apache-2.0"
+
+[dependencies]
+config = "0.9"
+log = "0.4"
+flexi_logger = "0.11.4"
+getopts = "0.2"
+hyper = "0.12"
+hyper-router = "0.5"
+prometheus = "0.6"
+serde = { version = "1.0", features = ["derive"] }
+lazy_static = "1.3"
+futures = "0.1"

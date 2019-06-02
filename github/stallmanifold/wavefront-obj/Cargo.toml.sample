@@ -1,0 +1,24 @@
+[package]
+name = "wavefront_obj"
+version = "0.4.1"
+authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+edition = "2018"
+readme = "README.md"
+repository = "https://github.com/stallmanifold/wavefront-obj"
+keywords = ["wavefront", "obj", "geometry processing", "shading", "graphics", "mtl"]
+
+[lib]
+name = "wavefront"
+
+[dependencies]
+quickcheck = "0.7.2"
+rand = "0.5.5"
+
+[profile.bench]
+opt-level = 2
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

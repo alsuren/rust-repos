@@ -1,0 +1,18 @@
+[package]
+name = "progress-rs"
+version = "0.2.0"
+authors = ["Norbert Melzer <timmelzer@gmail.com>"]
+
+description = "Display a progressbar on the terminal"
+repository = "https://github.com/NobbZ/progress-rs.git"
+
+license = "MIT"
+license-file = "LICENSE"
+
+[lib]
+name = "progress"
+
+[dependencies]
+terminal_size = "^0.1.5"
+
+[dev-dependencies]

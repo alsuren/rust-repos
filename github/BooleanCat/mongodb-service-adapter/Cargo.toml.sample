@@ -1,0 +1,9 @@
+[package]
+name = "mongodb-service-adapter"
+version = "0.1.0"
+authors = ["pivotal"]
+
+[dependencies]
+
+[dev-dependencies]
+tempdir = "0.3"

@@ -1,0 +1,11 @@
+[package]
+name = "sofa-serialize"
+version = "0.1.0"
+authors = ["Aurora <aurora@aventine.se>"]
+
+[[bin]]
+name = "sofa-serialize"
+
+[dependencies]
+byteorder = "0.4"
+rustc-serialize = "0.3"

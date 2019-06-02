@@ -1,0 +1,18 @@
+[package]
+name = "notes"
+version = "0.1.0"
+authors = ["swj"]
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+notify = "4.0.0"
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+serde = "1.0"
+serde_derive = "1.0"
+pulldown-cmark = "0.1.0"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["tera_templates"]

@@ -1,0 +1,18 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+authors = ["Chris Vittal <christopher.vittal@gmail.com>"]
+description = "Solutions to Advent of Code 2017"
+license = "MIT"
+
+[dependencies]
+bit-vec = "0.4"
+itertools = "0.7"
+lazy_static = "1"
+libc = "0.2"
+pathfinding = "0.6"
+petgraph = "0.4"
+regex = "0.2"
+
+[profile.release]
+lto = true

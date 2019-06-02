@@ -1,0 +1,19 @@
+[package]
+name = "soundvis"
+version = "0.1.0"
+authors = ["Andreas Rammhold <andreas@rammhold.de>"]
+
+[dependencies]
+threadpool = "1"
+apodize = "0.2"    # iterators that yield generalized cosine, hanning, hamming, blackman, nuttall and triangular
+byte-slice-cast = "0.1"
+byteorder = "1.2"            # Library for reading/writing numbers in big-endian and little-endian.
+failure = "0.1.1"
+failure_derive = "0.1.1"
+num_cpus = "1.8"          # Get the number of CPUs on a machine.
+glib = "0.4"
+glium = "0.20"                      # Elegant and safe OpenGL wrapper.  Glium is an intermediate layer between OpenGL and your …
+gstreamer = "0.10.1"
+gstreamer-app = "0.10.1"
+num = "0.1"       # A collection of numeric types and traits for Rust, including bigint, complex, rational, ran…
+rustfft = "2.1"    # A mixed-radix FFT library.

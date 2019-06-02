@@ -1,0 +1,9 @@
+[package]
+name = "ownlisp"
+version = "0.1.0"
+authors = ["Daniel Rivas Perez <drivas12@googlemail.com>"]
+edition = "2018"
+
+[dependencies]
+rustyline = "4.1.0"
+nom = "5.0.0-beta2"

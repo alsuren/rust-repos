@@ -1,0 +1,12 @@
+[package]
+name = "idea-runner"
+version = "0.1.0"
+authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+
+[[bin]]
+name = "idea"
+
+[profile.release]
+opt-level = 3
+
+[dependencies]

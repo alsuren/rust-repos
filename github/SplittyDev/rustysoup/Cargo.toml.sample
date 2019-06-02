@@ -1,0 +1,14 @@
+[package]
+name = "rustysoup"
+version = "0.0.1"
+authors = ["Splitty <splittydev@gmail.com>"]
+description = "Library for extracting data from any website."
+readme = "README.md"
+repository = "https://github.com/SplittyDev/rustysoup"
+documentation = "https://docs.rs/rustysoup"
+keywords = ["html", "extract", "data", "beautifulsoup", "bs4"]
+license = "MIT"
+
+[dependencies]
+reqwest = "^0.1"
+html5ever = "^0.10"

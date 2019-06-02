@@ -1,0 +1,12 @@
+[package]
+name = "rustbn-js"
+version = "0.1.2"
+authors = ["holgerd77 <Holger.Drewes@gmail.com>",
+           "cdetrio <cdetrio@gmail.com>",
+           "Alex Beregszaszi <alex@rtfs.hu>"]
+publish = false
+
+[dependencies]
+ethereum-bn128 = { git = "https://github.com/ewasm/ethereum-bn128.rs" }
+parity-bytes = { git = "https://github.com/paritytech/parity-common" }
+rustc-hex = "1.0"

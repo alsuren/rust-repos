@@ -1,0 +1,17 @@
+[package]
+name = "feldspar2"
+version = "0.2.0"
+authors = ["zmeadows <zmeadows@gmail.com>"]
+
+[dependencies]
+colored = "1.6"
+log = "0.4.1"
+bitflags = "1.0.3"
+prettytable-rs = "^0.6"
+num_cpus = "1.0"
+rand = "*"
+chrono = "0.4"
+clap = {version = "~2.27.0", features = ["yaml"]}
+
+[profile.release]
+debug = true

@@ -1,0 +1,13 @@
+[package]
+name = "psmesos"
+version = "0.0.1"
+authors = ["diego <Diego Oliveira <diego@diegooliveira.com>>"]
+
+[dependencies]
+rustc-serialize = "*"
+#docopt = "*"
+getopts = "*"
+log = "*"
+hyper = "*"
+regex = "*"
+term = "*"

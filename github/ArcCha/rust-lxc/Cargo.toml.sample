@@ -1,0 +1,14 @@
+[package]
+name = "rust-lxc"
+version = "0.0.1"
+authors = ["Adam Piekarczyk <adam1piekarczyk@gmail.com>", 
+           "Jakub Łabaj <uaaabbjjkl@gmail.com>"]
+
+[dependencies]
+libc = "0.1.4"
+
+[lib]
+name = "liblxc"
+
+[[bin]]
+name = "main-lxc"

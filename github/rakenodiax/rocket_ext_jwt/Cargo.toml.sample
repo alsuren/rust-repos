@@ -1,0 +1,14 @@
+[package]
+name = "rocket_ext_jwt"
+version = "0.1.0"
+authors = ["Kellen Frodelius-Fujimoto <kellen@kellenfujimoto.com>"]
+description = "Rocket web framework: request guards and responses for Javascript Web Tokens"
+keywords = ["rocket", "auth", "jwt"]
+categories = ["authentication", "cryptography", "data-structures"]
+repository = "https://github.com/rakenodiax/rocket_ext_jwt"
+license = "MIT"
+
+[lib]
+name = "rocket_jwt"
+
+[dependencies]

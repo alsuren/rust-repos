@@ -1,0 +1,19 @@
+[package]
+name = "rust_midi_patcher"
+version = "0.1.0"
+authors = ["shybyte <ein@volloeko.de>"]
+edition = "2018"
+
+[dependencies]
+midi2opc = { git = "https://github.com/shybyte/midi2opc" }
+#midi2opc = { path = '../midi2opc' }
+midi-message = { git = "https://github.com/shybyte/midi-message-rs" }
+portmidi = "^0.2.4"
+chan-signal = "^0.3.2"
+chan = "^0.1.23"
+risp = "^0.7.0"
+notify = "^4.0.6"
+libc = "0.2"
+
+[patch.crates-io]
+#"risp" = { path = '../risp' }

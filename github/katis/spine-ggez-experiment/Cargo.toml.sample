@@ -1,0 +1,15 @@
+[package]
+name = "ggez-spine"
+version = "0.1.0"
+authors = ["Joni Katajamäki <joni.katajamaki@wunderdog.fi>"]
+
+[profile.dev]
+opt-level=1
+
+[dependencies]
+spine-data = "0.2"
+interpolation = "0.1.0"
+
+[dependencies.ggez]
+version = "0.3"
+features = ["cargo-resource-root"]

@@ -1,0 +1,20 @@
+[package]
+name = "newtype-ops"
+version = "0.1.4"
+authors = ["Michael Lamparski <diagonaldevice@gmail.com>"]
+description = "Mass-derive many operators for newtypes. Wartier than newtype_derive."
+documentation = "https://docs.rs/newtype-ops"
+repository = "https://github.com/ExpHP/newtype-ops"
+license = "WTFPL"
+keywords = ["helper", "macro"]
+edition = "2018"
+readme = "README.md"
+
+[dependencies]
+
+[features]
+
+# For debug purposes only.
+#
+# Activates trace_macros!(). Requires a nightly compiler.
+debug-trace-macros = []

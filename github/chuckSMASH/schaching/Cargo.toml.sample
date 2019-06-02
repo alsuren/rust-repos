@@ -1,0 +1,9 @@
+[package]
+name = "schaching"
+version = "0.1.0"
+authors = ["Chuck Bassett <3101367+chucksmash@users.noreply.github.com>"]
+
+[dependencies]
+lazy_static = "1.1.0"
+regex = "1"
+termion = "1.5"

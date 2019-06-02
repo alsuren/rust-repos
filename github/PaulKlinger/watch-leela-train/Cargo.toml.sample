@@ -1,0 +1,8 @@
+[package]
+name = "watch_leela_train"
+version = "0.6.0"
+authors = ["Paul Klinger <klinger.paul@gmail.com>"]
+
+[dependencies]
+regex = "0.2"
+memchr = "2.0.1"

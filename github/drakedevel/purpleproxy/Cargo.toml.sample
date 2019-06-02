@@ -1,0 +1,30 @@
+[package]
+
+name = "purpleproxy"
+version = "0.1.0"
+authors = [ "Andrew Drake <adrake@adrake.org>",
+            "Kevin Murphy <kemurphy.cmu@gmail.com>" ]
+
+build = "build.rs"
+
+[lib]
+
+name = "purpleproxy"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[build-dependencies.rust-bindgen]
+
+git = "https://github.com/kemurphy/rust-bindgen.git"
+branch = "regex-filter"
+
+[build-dependencies]
+
+capnpc = "*"
+toml = "*"
+rustc-serialize = "*"
+
+[dependencies]
+
+capnp = "*"
+capnp-rpc = "*"

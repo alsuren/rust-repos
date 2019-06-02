@@ -1,0 +1,13 @@
+[package]
+authors = ["Jimmy Cuadra <jimmy@jimmycuadra.com>"]
+name = "rustin"
+edition = "2018"
+version = "0.1.0"
+
+[dependencies]
+futures-preview = "0.3.0-alpha.13"
+regex = "1.1.0"
+
+[dependencies.serde]
+version = "1.0.87"
+features = ["derive"]

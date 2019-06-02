@@ -1,0 +1,11 @@
+[package]
+name = "report_gen"
+version = "0.1.0"
+authors = ["pixinator <pixinator@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+postgres = "*"
+ansi_term = "*"
+csv = "*"
+chrono = "*"

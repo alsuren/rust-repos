@@ -1,0 +1,8 @@
+[package]
+name = "botfight"
+version = "0.1.0"
+authors = ["Willem van de Krol"]
+
+[dependencies]
+serde = "*"
+serde_macros = "*"

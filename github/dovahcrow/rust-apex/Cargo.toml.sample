@@ -1,0 +1,18 @@
+[package]
+name = "rust-apex"
+version = "0.3.4-alpha.0"
+authors = ["Weiyüen Wu <doomsplayer@gmail.com>"]
+description = "Rust support for apex"
+homepage = "https://github.com/doomsplayer/rust-apex"
+license = "MIT"
+repository = "https://github.com/doomsplayer/rust-apex"
+readme = "README.md"
+keywords = ["apex", "lambda", "aws"]
+documentation = "https://github.com/apex/apex/tree/master/_examples/rust"
+
+[dependencies]
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+failure = { version = "0.1", features = []}
+# rust-apex-derive = { path = "./rust-apex-derive"}

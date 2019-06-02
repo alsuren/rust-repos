@@ -1,0 +1,8 @@
+[package]
+name = "parsr"
+version = "0.1.0"
+authors = ["Sean Smith <scsmithr@gmail.com>"]
+
+[dependencies]
+regex = "1"
+clap = "2.32.0"

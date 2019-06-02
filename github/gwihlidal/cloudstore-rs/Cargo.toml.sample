@@ -1,0 +1,43 @@
+[package]
+name = "cloudstore"
+version = "0.0.2"
+authors = ["Graham Wihlidal <graham@wihlidal.ca>"]
+description = "A gRPC microservice, written in rust, that marshalls objects and files to cloud storage like AWS S3, Google Cloud Storage, or other providers."
+homepage = "https://github.com/gwihlidal/cloudstore-rs"
+repository = "https://github.com/gwihlidal/cloudstore-rs"
+readme = "README.md"
+keywords = ["aws", "s3", "cloud", "storage", "gce", "minio", "rust", "grpc", "opentracing", "jaeger"]
+license = "MIT"
+
+[dependencies]
+protobuf            = "1.4.3"
+futures             = "0.1.18"
+futures-cpupool     = "0.1.8"
+tls-api             = "0.1.14"
+grpc                = "0.2.1"
+rusoto_core         = "0.31.0"
+rusoto_s3           = "0.31.0"
+rusoto_credential   = "0.10.0"
+google-storage1     = "1.0.7+20171101"
+file                = "1.1.1"
+hostname            = "0.1"
+rand                = "0.4"
+rustracing          = "0.1"
+rustracing_jaeger   = "0.1.5"
+trackable           = "0.2"
+thrift_codec        = "0.1"
+env_logger          = "0.5"
+log                 = "0.4.1"
+
+[build-dependencies]
+protoc-rust-grpc    = "0.2.1"
+
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
+test = false
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+test = false

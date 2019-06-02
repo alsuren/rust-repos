@@ -1,0 +1,12 @@
+[package]
+name = "wustos"
+version = "0.1.0"
+authors = ["Todd Eisenberger <todd@teisen.be>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+wustos_kalloc = { git = "https://github.com/teisenbe/wustos_kalloc" }
+#x86 = { git = "https://github.com/gz/rust-x86" }
+x86 = { path = "../rust-x86" }

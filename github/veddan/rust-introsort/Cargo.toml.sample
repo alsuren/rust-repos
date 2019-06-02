@@ -1,0 +1,38 @@
+[package]
+name = "introsort"
+version = "0.6.0"
+authors = [ "Viktor Dahl <pazaconyoman@gmail.com>" ]
+description = """
+Fast sorting compatible with #[no_std].
+Also has (optional) support for efficient and robust sorting of floating point numbers.
+
+Currently, introsort only builds on nightly"""
+keywords = ["sorting", "sort", "float"]
+license = "Apache-2.0/MIT"
+repository = "https://github.com/veddan/rust-introsort"
+readme = "README.md"
+
+[features]
+default = [ "float" ]
+float = ["num-traits", "unreachable"]
+
+[lib]
+name = "introsort"
+path = "src/lib.rs"
+test = false
+bench = false
+
+[dependencies.unreachable]
+version = "0.1.1"
+optional = true
+
+[dependencies.num-traits]
+version = "0.1.36"
+optional = true
+
+[dev-dependencies]
+rand = "0.3.11"
+
+[profile.test]
+opt-level = 1
+

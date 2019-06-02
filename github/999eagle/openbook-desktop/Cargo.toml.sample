@@ -1,0 +1,33 @@
+[package]
+name = "openbook-desktop"
+version = "0.1.0"
+authors = ["Sophie Tauchert <999eagle@999eagle.moe>"]
+edition = "2018"
+
+[package.metadata.flutter]
+version = "3757390fa4b00d2d261bfdf5182d2e87c9113ff9"
+
+[dependencies]
+flutter-engine = "0.2.0"
+log = "0.4"
+fern = { version = "0.5", features = ["colored"] }
+chrono = "0.4"
+dirs = "1.0"
+base64 = "0.10"
+aes = "0.3"
+block-modes = "0.3"
+rand = "0.5"
+serde = "1.0"
+serde_json = "1.0"
+
+[patch.crates-io]
+flutter-download = { git = "https://github.com/999eagle/flutter-rs.git", branch = "patch-target-cross-compile" }
+flutter-engine = { git = "https://github.com/999eagle/flutter-rs.git" }
+
+[build-dependencies]
+flutter-download = "0.1.0"
+cargo_toml = "0.6.4"
+serde_derive = "1.0.89"
+serde = "1.0.89"
+winres = "0.1.9"
+cc = "1.0"

@@ -1,0 +1,13 @@
+[package]
+name = "mapper"
+version = "0.1.0"
+authors = ["Axylos <robertdraketalley@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+fuse = "0.3.1"
+time = "*"
+libc = "*"
+log = "*"
+syslog = "*"
+serde_json = "*"

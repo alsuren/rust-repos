@@ -1,0 +1,16 @@
+[package]
+name = "soft_render"
+version = "0.1.0"
+authors = ["doup <asier@illarra.com>"]
+
+[dependencies]
+cgmath = "0.15.0"
+image = "0.17.0"
+rand = "0.3"
+time = "0.1"
+wavefront_obj = "5.1.0"
+
+[dependencies.sdl2]
+version = "0.30"
+default-features = false
+features = ["gfx"]

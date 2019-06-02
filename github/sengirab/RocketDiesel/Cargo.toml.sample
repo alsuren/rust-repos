@@ -1,0 +1,20 @@
+[package]
+name = "rocket_diesel"
+version = "0.1.0"
+authors = ["benjamin <bbloot@dynasource.com>"]
+
+[dependencies]
+authentication = {path = "./src/authentication"}
+database = {path = "./src/database"}
+server = {path = "./src/server"}
+macros = {path = "./src/macros"}
+error = {path = "./src/error"}
+
+[workspace]
+members = [
+    "./src/authentication",
+    "./src/database",
+    "./src/server",
+    "./src/macros",
+    "./src/error",
+]

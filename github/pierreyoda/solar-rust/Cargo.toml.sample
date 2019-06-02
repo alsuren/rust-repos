@@ -1,0 +1,19 @@
+[package]
+name = "solar-rust"
+version = "0.1.0"
+authors = ["pierreyoda <pierreyoda@users.noreply.github.com>"]
+
+[lib]
+name = "solar_rustlib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "solar-rust"
+path = "src/bin/main.rs"
+
+[dependencies]
+rand = "0.3.15"
+gfx_device_gl = "*"
+piston_window = "0.48.0"
+piston2d-graphics = "0.16.0"
+conrod = "0.35.0"

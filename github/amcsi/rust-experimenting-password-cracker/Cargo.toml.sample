@@ -1,0 +1,7 @@
+[package]
+name = "password-cracker"
+version = "0.1.0"
+authors = ["Attila Szeremi <attila@szeremi.org>"]
+
+[dependencies]
+rayon = "1.0.1"

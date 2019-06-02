@@ -1,0 +1,20 @@
+[package]
+name = "pickle"
+version = "0.1.0"
+license = "MIT/Apache-2.0"
+authors = ["Fedor Gogolev <knsd@knsd.net>"]
+description = "Deserialization of Python objects using the Pickle format."
+repository = "https://github.com/knsd/pickle"
+documentation = "http://knsd.github.io/pickle"
+readme = "README.md"
+
+[dependencies]
+num = "0.1.29"
+byteorder = "0.4.2"
+quick-error = "0.2.2"
+from-ascii = "0.0.1"
+unicode_names = "0.1.7"
+clippy = {version = "0.0", optional = true}
+
+[features]
+default=[]

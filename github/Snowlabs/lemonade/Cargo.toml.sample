@@ -1,0 +1,33 @@
+[package]
+name = "lemonade"
+version = "0.1.0"
+description = "A lemonbar replacement written in rust"
+repository = "https://github.com/Snowlabs/lemonade"
+readme = "README.md"
+license = "MIT"
+authors = ["Sheheryar Parvaz <skipper308@hotmail.ca>"]
+
+[dependencies]
+cairo-sys-rs = "^0"
+cairo-rs = { version = "^0", features = ["xcb"] }
+pango = "^0"
+pangocairo = "^0"
+xcb = { version = "^0", features = ["thread"] }
+gdk = { version = "^0", optional = true }
+gdk-pixbuf = { version = "^0", optional = true }
+
+# bin deps
+regex = "^0"
+clap = "^2"
+
+[features]
+default = ["image"]
+image = ["gdk", "gdk-pixbuf"]
+
+[profile.release]
+lto = false
+
+[[bin]]
+name = "lemonade"
+path = "src/bin/main.rs"
+doc = false

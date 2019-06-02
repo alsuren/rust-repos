@@ -1,0 +1,15 @@
+[package]
+name = "rust-web-bakeoff"
+version = "0.1.0"
+authors = ["Adam Keys <adam@therealadam.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+
+nickel = "*"
+
+actix-web = "0.7"
+env_logger = "0.5"

@@ -1,0 +1,10 @@
+[package]
+name = "trials-of-transposition"
+version = "0.1.0"
+authors = ["Lucas Myers <myerscode@gmail.com>"]
+
+[dependencies]
+rand = "*"
+
+[profile.release]
+lto = true

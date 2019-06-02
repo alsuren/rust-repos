@@ -1,0 +1,15 @@
+[package]
+authors = ["Igor Gulamov", "Roman Semenov"]
+description = "Pedersen hash circuit demo for ethereum friendly curve"
+license = "MIT/Apache-2.0"
+name = "pedersen-test"
+version = "0.0.1"
+edition = "2018"
+
+[dependencies]
+rand = "0.4"
+
+bellman = { git = 'https://github.com/matterinc/bellman', tag = "0.2.0" }
+sapling-crypto = { git = 'https://github.com/matterinc/sapling-crypto' }
+
+

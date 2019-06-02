@@ -1,0 +1,10 @@
+[package]
+name = "backr"
+version = "0.1.0"
+authors = ["Adam Krupicka <akr@mail.muni.cz>"]
+
+[dependencies]
+glium = "*"
+x11 = { version = "*", features = ["xlib"] }
+clap = "*"
+rand = "*"

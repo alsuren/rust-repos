@@ -1,0 +1,26 @@
+[package]
+name = "wordnet-angular"
+version = "0.1.0"
+authors = ["John McCrae <john@mccr.ae>"]
+
+[[bin]]
+name = "wordnet-angular"
+path = "src/main.rs"
+
+[[bin]]
+name = "wordnet-rdf-dump"
+path = "src/dump.rs"
+
+[dependencies]
+rocket = "0.4.0-rc.1"
+rocket_codegen = "0.4.0-rc.1"
+pear_codegen = "0.1.2"
+stable-skiplist = "0.1.1"
+xml-rs = "0.6"
+quick-error = "1.2.1"
+clap = "2.26.1"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+handlebars = "0.29.1"
+rusqlite = "0.12.0"

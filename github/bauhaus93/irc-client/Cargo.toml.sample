@@ -1,0 +1,12 @@
+[package]
+name = "irc_client"
+version = "0.1.0"
+authors = ["Jakob Fischer <JakobFischer93@gmail.com>"]
+
+[dependencies]
+
+regex = "0.2.1"
+lazy_static = "0.2.4"
+log = "0.3.7"
+openssl = "0.9.8"
+chrono = "0.3.0"

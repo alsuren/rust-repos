@@ -1,0 +1,46 @@
+[package]
+authors = ["Mark Simulacrum <mark.simulacrum@gmail.com>"]
+name = "advent-of-code"
+version = "0.1.0"
+
+[workspace]
+members = ["aoc-macro", "y2018"]
+
+[dependencies]
+failure = "0.1"
+smallvec = "0.6"
+itertools = "0.7"
+bitflags = "1.0"
+petgraph = "0.4.13"
+memchr = "2.0"
+quickcheck = "0.7"
+primal = "0.2"
+fnv = "1.0"
+openssl = "0.10"
+itoa = "0.4"
+md5 = "0.6"
+permutohedron = "0.2.4"
+packed_simd = "0.3.1"
+
+[[bin]]
+name = "y2016"
+path = "src/bin/y2016/main.rs"
+bench = true
+
+[[bin]]
+name = "y2017"
+path = "src/bin/y2017/main.rs"
+bench = true
+
+[[bin]]
+name = "y2017-day15"
+path = "src/bin/y2017/day15.rs"
+bench = false
+
+[profile.release]
+debug = true
+
+[profile.bench]
+debug = true
+incremental = false
+codegen-units = 1

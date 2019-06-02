@@ -1,0 +1,22 @@
+[package]
+name = "reti"
+version = "0.1.0"
+authors = ["Armin Widegreen <armin.widegreen@gmail.com>"]
+
+[[bin]]
+path = "src/main.rs"
+name = "reti"
+
+[dependencies]
+tempfile = "*"
+rust-ini = "*"
+reti-storage = { path = "storage" }
+reti-printing = { path = "printing" }
+chrono = "*"
+curl = "*"
+config = "*"
+xdg = "*"
+failure = "*"
+
+[dependencies.clap]
+version = "2.*"

@@ -1,0 +1,10 @@
+[package]
+name = "pathfinder_ncurses_rs"
+version = "0.1.0"
+authors = ["olivier"]
+
+[dependencies]
+pancurses = "*"
+byteorder = "*"
+nom = "*"
+pathfinding = "*"

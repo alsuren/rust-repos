@@ -1,0 +1,7 @@
+[package]
+name = "risc_v_assembler"
+version = "0.1.0"
+authors = ["Erick Hernandez"]
+
+[dependencies]
+lexer = { path = "lexer" }

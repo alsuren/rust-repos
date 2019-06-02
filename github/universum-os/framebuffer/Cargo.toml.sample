@@ -1,0 +1,11 @@
+[package]
+name = "universum-framebuffer"
+version = "0.1.0"
+authors = ["Michael Zaversnik <Michael.Zaversnik@studmail.w-hs.de>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = { version = "1.0", features = ["spin_no_std"] }
+log = "0.4"
+spin = "0.4"
+unifont = { git = "https://gitlab.com/mickiboy/unifont-rs.git", features = ["no-std"] }

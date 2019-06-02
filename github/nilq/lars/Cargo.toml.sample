@@ -1,0 +1,18 @@
+[package]
+name = "lars"
+version = "0.2.3"
+authors = ["nilq <i.am@nilq.dk>"]
+description = "A library for basic linear algebra."
+keywords = ["math", "matrix", "vector"]
+license = "MIT"
+repository = "https://github.com/nilq/lars"
+homepage = "https://github.com/nilq/lars"
+documentation = "https://github.com/nilq/lars"
+
+[lib]
+name = "lars"
+path = "src/lib.rs"
+
+[dependencies]
+num  = "0.1.32"
+rand = "0.3.14"

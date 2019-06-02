@@ -1,0 +1,23 @@
+[package]
+name = "robo-quest"
+version = "0.1.0"
+authors = ["Sunjay Varma <varma.sunjay@gmail.com>"]
+
+[dependencies]
+specs = "*"
+specs-derive = "*"
+shred = "*"
+shred-derive = "*"
+failure = "*"
+nalgebra = "*"
+ncollide2d = "*"
+nphysics2d = "*"
+
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dependencies.sdl2]
+version = "*"
+default-features = false
+features = ["image"]

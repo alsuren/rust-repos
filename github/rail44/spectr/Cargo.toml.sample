@@ -1,0 +1,10 @@
+[package]
+name = "spectr"
+version = "0.1.0"
+authors = ["Satoshi Amemiya"]
+
+[dependencies]
+docopt_macros = "*"
+docopt = "*"
+rustc-serialize = "*"
+peg = "*"

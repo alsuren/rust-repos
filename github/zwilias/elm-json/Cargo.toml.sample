@@ -1,0 +1,41 @@
+[package]
+name = "elm-json"
+version = "0.2.0"
+authors = ["ilias <mail@ilias.xyz>"]
+edition = "2018"
+
+[dependencies]
+indexmap = "1"
+itertools = "0.8"
+failure = "0.1"
+petgraph = "0.4"
+slog = { version = "2", features = ["max_level_trace", "release_max_level_debug"] }
+textwrap = "0.11"
+bincode = "1.1.3"
+slog-term = "2.4.0"
+slog-async = "2.3.0"
+serde  = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = "2.33.0"
+colored = "1.7"
+dialoguer = "0.3"
+dirs = "1.0"
+fs2 = "0.4"
+chttp = "0.4"
+
+[dev-dependencies]
+assert_cmd = "0.11"
+assert_fs = "0.11"
+predicates = "1"
+
+[lib]
+name = "elm_json"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "elm-json"
+path = "src/bin/main.rs"
+
+[profile.release]
+lto = true
+panic = 'abort'

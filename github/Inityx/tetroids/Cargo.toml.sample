@@ -1,0 +1,11 @@
+[package]
+name = "tetroids"
+version = "0.1.0"
+authors = ["Andrew Tolvstad>"]
+
+[dependencies]
+rand = "*"
+
+[dependencies.x11]
+version = "2.14.0"
+features = ["xlib", "xinput"]

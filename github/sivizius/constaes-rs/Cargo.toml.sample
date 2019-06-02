@@ -1,0 +1,10 @@
+[package]
+name        = "constaes"
+version     = "0.1.1"
+description = "encrypt data at compilation time."
+authors     = ["sivizius <sivizius@ohai.su>"]
+edition     = "2018"
+license     = "MIT"
+repository  = "https://github.com/sivizius/constaes-rs"
+
+[dependencies]

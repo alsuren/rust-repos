@@ -1,0 +1,16 @@
+[package]
+name = "percephash"
+version = "0.1.0"
+authors = ["Shamir Khodzha <khodzha.sh@gmail.com>"]
+
+[dependencies]
+image = "0.13.0"
+serde = "1.0.8"
+serde_json = "1.0"
+rust-crypto = "0.2.36"
+hyper = "0.10.13"
+multipart = "0.13.3"
+
+[dependencies.img_hash]
+version = "2.0"
+features = ["rust-image"]

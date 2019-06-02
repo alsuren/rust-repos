@@ -1,0 +1,11 @@
+[package]
+name = "gitfu"
+version = "0.1.0"
+authors = ["Sudarsan <sudar.theone@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+git2 = "0.8"
+failure = "0.1.5"
+lettre = "0.9"
+lettre_email = "0.9"

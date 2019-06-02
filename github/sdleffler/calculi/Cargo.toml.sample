@@ -1,0 +1,8 @@
+[package]
+name = "calculi"
+version = "0.1.0"
+authors = ["Sean Leffler <sean@errno.com>"]
+
+[dependencies]
+clap = "2.3.0"
+nom = "1.2.2"

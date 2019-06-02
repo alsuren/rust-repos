@@ -1,0 +1,22 @@
+[package]
+authors = ["Jorge Aparicio <jorge@japaric.io>"]
+description = "Peripheral access API for STM32F103XX microcontrollers"
+documentation = "https://docs.rs/stm32f103xx"
+keywords = ["no-std", "arm", "cortex-m", "stm32"]
+license = "MIT OR Apache-2.0"
+name = "stm32f103xx"
+repository = "https://github.com/japaric/stm32f103xx"
+version = "0.8.0"
+
+[dependencies]
+bare-metal = "0.1.1"
+cortex-m = "0.4.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+features = ["abort-on-panic"]
+optional = true
+version = "0.3.12"
+
+[features]
+rt = ["cortex-m-rt"]

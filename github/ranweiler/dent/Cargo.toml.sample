@@ -1,0 +1,20 @@
+[package]
+authors = ["Joe Ranweiler <joe@lemma.co>"]
+description = "Library and tool for summarizing and comparing small data sets."
+keywords = ["statistics", "testing"]
+license-file = "LICENSE"
+readme = "README.md"
+repository = "https://github.com/ranweiler/dent"
+name = "dent"
+version = "0.4.1"
+
+[dependencies]
+clap = "2.26.1"
+stamp = "0.1"
+term = "0.4.6"
+term_size = "0.3.0"
+
+[[bin]]
+name = "dent"
+path = "src/bin.rs"
+doc = false

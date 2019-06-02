@@ -1,0 +1,20 @@
+[package]
+name = "mavlink"
+version = "0.4.2"
+authors = ["Tim Ryan"]
+build = "build/main.rs"
+description = "Parses the MAVLink data interchange format for UAVs."
+license = "MIT/Apache-2.0"
+repository = "https://github.com/3drobotics/rust-mavlink"
+
+[build-dependencies]
+crc16 = "0.3.3"
+byteorder = "0.5.3"
+xml-rs = "0.2"
+
+[[bin]]
+name = "mavlink-dump"
+
+[dependencies]
+crc16 = "0.3.3"
+byteorder = "0.5.3"

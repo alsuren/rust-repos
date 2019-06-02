@@ -1,0 +1,26 @@
+[package]
+name = "color_counter"
+version = "0.2.2"
+authors = ["Adilson Neto <almeidneto@gmail.com>"]
+edition = "2018"
+
+readme = "README.md"
+
+keywords = ["cli", "command", "color"]
+categories = ["command-line-utilities"]
+
+description = "A crate to inspect an image for most frequent colors."
+repository = "https://github.com/aaneto/color_counter.rs"
+license = "MIT"
+
+[dependencies]
+color_processing = "0.3.0"
+clap = "2.33.0"
+
+[dependencies.image]
+version = "0.21.0"
+features = ["gif_codec", "jpeg", "ico", "png_codec", "pnm", "tga", "tiff", "webp", "bmp", "hdr", "dxt"]
+default-features = false
+
+[features]
+jpeg_rayon = ["image/jpeg_rayon"]

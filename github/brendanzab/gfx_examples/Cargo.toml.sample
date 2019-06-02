@@ -1,0 +1,48 @@
+[package]
+name = "gfx-examples"
+version = "0.0.1"
+
+[[bin]]
+name = "cube"
+path = "src/cube/main.rs"
+
+[[bin]]
+name = "deferred"
+path = "src/deferred/main.rs"
+
+[[bin]]
+name = "performance"
+path = "src/performance/main.rs"
+
+[[bin]]
+name = "terrain"
+path = "src/terrain/main.rs"
+
+[[bin]]
+name = "triangle"
+path = "src/triangle/main.rs"
+
+[dependencies]
+gfx_gl = "*"
+glfw = "*"
+cgmath = "*"
+rand = "*"
+time = "*"
+genmesh = "*"
+noise = "*"
+
+[dependencies.gfx]
+git = "https://github.com/gfx-rs/gfx-rs"
+version = "*"
+
+[dependencies.gfx_device_gl]
+git = "https://github.com/gfx-rs/gfx_device_gl"
+version = "*"
+
+[dependencies.gfx_macros]
+git = "https://github.com/gfx-rs/gfx-rs"
+plugin = true
+version = "*"
+
+[dependencies.glutin]
+git = "https://github.com/tomaka/glutin"

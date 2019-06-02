@@ -1,0 +1,12 @@
+[package]
+
+name = "ofs"
+version = "0.0.1"
+authors = ["Jon0"]
+
+[dependencies]
+
+fuse = "0.3"
+libc = "0.2"
+mio = "0.6"
+rustls = "0.8"

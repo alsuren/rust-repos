@@ -1,0 +1,35 @@
+[package]
+name = "rustic-application"
+version = "0.1.0"
+authors = ["Max Jöhnk <maxjoehnk@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+repository = "https://github.com/rustic-music-player/application"
+homepage = "https://github.com/rustic-music-player/application"
+
+[dependencies]
+env_logger = "0.5"
+log = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4.5"
+url = "1.7"
+failure = "0.1"
+
+[dependencies.rustic-core]
+git = "https://github.com/rustic-music-player/core"
+
+[dependencies.rustic-memory-store]
+git = "https://github.com/rustic-music-player/memory-store"
+
+[dependencies.rustic-sqlite-store]
+git = "https://github.com/rustic-music-player/sqlite-store"
+
+[dependencies.rustic-http-frontend]
+git = "https://github.com/rustic-music-player/http-frontend"
+
+[dependencies.rustic-mpd-frontend]
+git = "https://github.com/rustic-music-player/mpd-frontend"
+
+[dependencies.rustic-qt-frontend]
+path = "../qt-frontend"

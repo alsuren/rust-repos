@@ -1,0 +1,10 @@
+[package]
+name = "pinger"
+version = "0.1.0"
+authors = ["Wouter de Vries <wouter@wouter-web.nl>"]
+
+[dependencies]
+libc = "0.2.11"
+argparse = "0.2.1"
+time = "0.1.35"
+byteorder = "0.5.3"

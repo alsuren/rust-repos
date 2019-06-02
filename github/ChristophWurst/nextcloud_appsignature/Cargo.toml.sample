@@ -1,0 +1,19 @@
+[package]
+name = "nextcloud_appsignature"
+version = "0.2.0"
+authors = ["Christoph Wurst <christoph@winzerhof-wurst.at>"]
+description = "Library to sign Nextcloud apps"
+readme = "README.md"
+repository = "https://github.com/ChristophWurst/nextcloud_appsignature"
+keywords = ["nextcloud"]
+license = "GPL-3.0"
+exclude = [
+    ".vscode",
+]
+
+[dependencies]
+base64 = "0.10"
+failure = "0.1"
+futures = "0.1"
+hex = "0.3"
+openssl = "0.10"

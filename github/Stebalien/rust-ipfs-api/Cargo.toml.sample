@@ -1,0 +1,15 @@
+[package]
+name = "ipfs-api"
+version = "0.1.0"
+authors = ["Steven Allen <steven@stebalien.com>"]
+
+[dependencies]
+url = "*"
+protobuf = "*"
+rust-base58 = "*"
+lazy_static = "*"
+multipart = "^0.6.0-alpha"
+hyper = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"

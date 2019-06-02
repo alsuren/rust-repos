@@ -1,0 +1,16 @@
+[package]
+name = "rust8"
+version = "0.1.0"
+authors = ["alex <wendt.alexander@googlemail.com>"]
+
+[dependencies]
+
+log = "*"
+log4rs = "*"
+
+rand = "*"
+
+piston = "*"
+piston2d-graphics = "*"
+pistoncore-glutin_window = "*"
+piston2d-opengl_graphics = "*"

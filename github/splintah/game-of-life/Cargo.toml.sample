@@ -1,0 +1,20 @@
+[package]
+authors = ["Splinter Suidman (splintah)", "Sybrand Aarnoutse (syberant)"]
+name = "game-of-life"
+version = "1.0.0"
+
+[lib]
+name = "game_of_life"
+path = "./src/lib/mod.rs"
+
+[features]
+# This feature is only used for benchmarks since the test crate is unstable.
+bench = []
+
+[dependencies]
+rand = "0.5"
+rayon = "1.0"
+clap = "~2.31.0"
+glutin = "0.17.0"
+gl = "0.10.0"
+cgmath = "0.16.1"

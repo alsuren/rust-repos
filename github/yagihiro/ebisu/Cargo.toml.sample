@@ -1,0 +1,10 @@
+[package]
+name = "ebisu"
+version = "0.1.0"
+authors = ["yagihiro <yagihiro@gmail.com>"]
+
+[dependencies]
+mysql = "*"
+url = "*"
+log = "*"
+ansi_term = "*"

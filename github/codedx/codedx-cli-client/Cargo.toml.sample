@@ -1,0 +1,19 @@
+[package]
+name = "codedx-client"
+version = "0.2.0"
+authors = ["Dylan Halperin <dylan@dylemma.io>"]
+
+[dependencies]
+clap = "2.26.2"
+colored = "1.5.3"
+hyper = "0.11"
+url = "1.5.1"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+reqwest = "0.8"
+rpassword = "2.0.0"
+
+[dependencies.nom]
+version = "3.2"
+features = ["verbose-errors"]

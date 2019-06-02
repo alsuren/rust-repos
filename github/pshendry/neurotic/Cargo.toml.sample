@@ -1,0 +1,18 @@
+[package]
+name = "neurotic"
+version = "0.1.0"
+authors = ["Paul Hendry <paul@pshendry.com>"]
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+nalgebra = "0.14.0"
+rand = "^0.4.2"
+typenum = "1.7.0"
+
+[dev-dependencies]
+byteorder = "^1.2.1"
+# clippy = { version = "*" }
+flate2 = "^1.0.1"
+itertools = "0.7.6"

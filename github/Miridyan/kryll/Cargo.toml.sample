@@ -1,0 +1,19 @@
+[package]
+name = "kryll"
+version = "0.1.1"
+authors = ["Miridyan <Michael.R.Ditto@gmail.com>"]
+
+[dependencies]
+toml = "0.2.1"
+strfmt = "0.1.5"
+pandoc = "0.4.3"
+rustc-serialize = "0.3.19"
+
+[lib]
+name = "kryll"
+path = "src/kryll/lib.rs"
+crate-type = ["rlib"]
+
+[[bin]]
+name = "kryll"
+path = "src/main.rs"

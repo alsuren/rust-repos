@@ -1,0 +1,31 @@
+[package]
+name = "ceph-usage"
+description = "Gather ceph cluster usage and make available over protobuf api"
+version = "0.1.2"
+authors = ["Chris Holcombe <xfactor973@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[package.metadata.deb]
+maintainer = "Chris Holcombe <xfactor973@gmail.com>"
+depends = "libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.2.8.dfsg), libnspr4 (>= 2:4.13.1), libsodium18 (>= 1.0.8), libzmq5 (>= 4.1.4), libgcc1 (>= 1:4.9.3), librados2 (>= 0.80), libstdc++6 (>= 4.8.4), libblkid1 (>= 2.20), libuuid1 (>= 2.20), libbz2-1.0 (>= 1.0.6), libnss3 (>= 2:3.28.4), libc6 (>= 2.19)"
+section = "utility"
+assets = [
+	["target/release/client", "usr/bin/ceph-usage-client", "755"],
+	["target/release/ceph-usage", "usr/sbin/", "755"],
+	["systemd/ceph-usage.service", "etc/systemd/system/", "644"],
+	["systemd/environment", "etc/ceph-usage/environment", "664"],
+	["README.md", "usr/share/doc/ceph-usage/README", "644"],
+]
+
+[workspace]
+
+[dependencies]
+api = { path = "api" }
+ceph_usage = "~0.1"
+clap = "~2.29"
+client = { path = "client"}
+log = "~0.3"
+protobuf = "~1.4"
+simplelog = "~0.4"
+zmq = "~0.8"

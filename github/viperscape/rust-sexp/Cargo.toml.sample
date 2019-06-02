@@ -1,0 +1,12 @@
+[package]
+
+name = "sexp"
+version = "0.0.1"
+authors = ["Chris Gill <chrisfgill@gmail.com>", "Moritz Kaufmann"]
+
+[[bin]]
+name = "demo"
+path = "examples/main.rs"
+
+[dependencies]
+regex = "0.1.8"

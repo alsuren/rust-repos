@@ -1,0 +1,12 @@
+[package]
+name = "rl"
+version = "0.1.0"
+authors = ["Joe Clay <27cupsofcoffee@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tetra = "0.2.0"
+specs = "0.14.1"
+
+[profile.dev]
+opt-level = 2

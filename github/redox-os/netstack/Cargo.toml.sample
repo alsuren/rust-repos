@@ -1,0 +1,36 @@
+[package]
+name = "redox_netstack"
+version = "0.1.0"
+
+[[bin]]
+name = "dnsd"
+path = "src/dnsd/main.rs"
+
+[[bin]]
+name = "smolnetd"
+path = "src/smolnetd/main.rs"
+
+[lib]
+name = "redox_netstack"
+path = "src/lib/lib.rs"
+
+[dependencies]
+netutils = { git = "https://gitlab.redox-os.org/redox-os/netutils.git" }
+redox_event = { git = "https://gitlab.redox-os.org/redox-os/event.git" }
+redox_syscall = "0.1"
+byteorder = { version = "1.0", default-features = false }
+dns-parser = "0.7.1"
+
+[dependencies.log]
+version = "0.3"
+default-features = false
+features = ["release_max_level_warn"]
+
+[dependencies.smoltcp]
+path = "smoltcp"
+default-features = false
+features = ["std", "socket-raw", "proto-ipv4", "socket-udp", "socket-tcp", "socket-icmp"]
+#For debugging: "log", "verbose"
+
+[profile.release]
+lto = true

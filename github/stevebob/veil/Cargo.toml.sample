@@ -1,0 +1,37 @@
+[package]
+name = "veil"
+version = "0.1.0"
+authors = ["Stephen Sherratt <stephen@sherra.tt>"]
+build = "build.rs"
+
+[dependencies]
+cgmath = { version = "0.14", features = ["eders"] }
+enum_primitive = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+rand = "0.3"
+itertools = "0.6"
+handlebars = "0.26"
+maplit = "0.1.4"
+
+gfx = "0.16"
+gfx_window_glutin = "0.16.0"
+gfx_device_gl = "0.14.1"
+glutin = "0.8.1"
+winit = "0.6.4"
+gfx_text = "0.17"
+genmesh = "0.5"
+image = "0.14"
+
+[build-dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+handlebars = "0.26"
+image = "0.14"
+
+[replace]
+"winit:0.6.4" = { git = "https://github.com/stevebob/winit.git", branch = "x11-hidpi-fix" }
+"glutin:0.8.1" = { git = "https://github.com/stevebob/glutin.git", branch = "winit-0.6.4" }
+"image:0.14.0" = { git = "https://github.com/stevebob/image.git", branch = "resize-fixes" }

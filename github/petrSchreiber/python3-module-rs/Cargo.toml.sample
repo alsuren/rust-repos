@@ -1,0 +1,13 @@
+[package]
+name = "python3-module-rs"
+version = "0.1.0"
+authors = ["petrSchreiber <petrschreiber@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "python3_module_rs"
+crate-type = ["dylib"]
+
+[dependencies.cpython]
+version = "0.2.1"
+features = ["extension-module"]

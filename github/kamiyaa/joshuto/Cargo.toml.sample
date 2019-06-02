@@ -1,0 +1,49 @@
+[package]
+name = "joshuto"
+version = "0.7.1"
+authors = ["Jiayi Zhao <jeff.no.zhao@gmail.com>"]
+description = "Terminal file manager inspired by ranger"
+homepage = "https://github.com/kamiyaa/joshuto"
+license = "LGPL-3"
+edition = "2018"
+
+[dependencies]
+chrono = "0.4.6"
+dirs = "1.0.5"
+fs_extra = "1.1.0"
+lazy_static = "1.3.0"
+libc = "0.2.51"
+tree_magic = "0.2.1"
+notify = "4.0.10"
+open = "1.2.2"
+rustyline = "3.0.0"
+serde = "1.0.90"
+serde_derive = "1.0.90"
+structopt = "0.2.14"
+toml = "0.5.0"
+unicode-width = "0.1.5"
+whoami = "0.5.0"
+xdg = "2.2.0"
+
+# clap = "*"
+# fs_extra = "*"
+# lazy_static = "*"
+# libc = "*"
+# mime_guess = "1.8.6"
+# serde = "*"
+# serde_derive = "*"
+# toml = "*"
+# wcwidth = "*"
+# whoami = "*"
+# xdg = "*"
+
+[dependencies.ncurses]
+version = "5.99.0"
+features = [ "extended_colors", "panel", "wide" ]
+
+[dependencies.wordexp]
+version = "0.1.0"
+path = "lib/wordexp-rs"
+
+[features]
+default = []

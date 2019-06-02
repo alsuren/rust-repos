@@ -1,0 +1,50 @@
+[package]
+name = "ugdb"
+version = "0.1.3"
+authors = ["ftilde <ftilde@protonmail.com>"]
+description = "An alternative TUI for gdb"
+repository = "https://github.com/ftilde/ugdb"
+readme = "README.md"
+license = "MIT"
+keywords = ["tui", "gdb"]
+
+[[bin]]
+doc = false
+name = "ugdb"
+
+[patch.crates-io]
+unsegen = { git = "https://github.com/ftilde/unsegen" }
+
+[dependencies]
+chan = "0.1"
+chan-signal = "0.3"
+structopt = "0.2.1"
+time = "0.1"
+backtrace = "0.3"
+termion = "1.5"
+nix = "0.13"
+flexi_logger = "^0.11.2"
+log = "0.4"
+derive_more = "0.14"
+
+# For IPC
+json = "0.11"
+rand = "0.3"
+unix_socket = "0.5"
+
+unsegen = "0.1.2"
+unsegen_signals = "0.1"
+unsegen_terminal = "0.1"
+unsegen_jsonviewer = "0.1"
+unsegen_pager = "0.1.1"
+
+# gdbmi
+nom = "2.1"
+
+# gdb-expression-parsing
+lalrpop-util = "0.16.3"
+
+[build-dependencies]
+git2 = "0.6"
+toml = "0.4"
+lalrpop = "0.16.3"

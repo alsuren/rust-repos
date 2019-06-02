@@ -1,0 +1,46 @@
+[package]
+name = "gexiv2-sys"
+description = """
+This library provides Rust FFI declarations for the gexiv2 library, which
+is a GObject-based wrapper around the Exiv2 library, which provides read
+and write access to the Exif, XMP, and IPTC metadata in media files. Only
+FFI declarations are provided here; for a usable Rust library, consider
+the `rexiv2` crate.
+"""
+
+version = "1.0.0"
+authors = ["Felix Crux <felixc@felixcrux.com>"]
+license = "GPL-3.0+"
+documentation = "https://felixcrux.com/files/doc/gexiv2_sys/"
+homepage = "https://github.com/felixc/gexiv2-sys"
+repository = "https://github.com/felixc/gexiv2-sys"
+keywords = ["metadata", "exif", "iptc", "xmp", "photo"]
+categories = ["external-ffi-bindings", "multimedia::images"]
+readme = "README.md"
+links = "gexiv2"
+build = "build.rs"
+
+include = [
+  "Cargo.toml",
+  "README.md",
+  "CHANGELOG",
+  "LICENSE",
+  "SETUP.md",
+  "src/**/*",
+  "build.rs",
+]
+
+[dependencies]
+libc = "0.2"
+bitflags = { version = "1.0", optional = true}
+glib-sys = { version = "0.5", optional = true }
+
+[build-dependencies]
+pkg-config = "0.3"
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[features]
+raw-tag-access = ["glib-sys"]
+xmp-packet-access = ["bitflags"]

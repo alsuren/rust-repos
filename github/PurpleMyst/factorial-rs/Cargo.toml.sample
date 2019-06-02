@@ -1,0 +1,17 @@
+[package]
+name = "factorial-rs"
+version = "0.1.0"
+authors = ["Purple Myst <PurpleMyst@users.noreply.github.com>"]
+
+[lib]
+name = "factorial_rs"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+version = "*"
+features = ["extension-module"]
+
+# XXX: This library probably isn't very efficient. If we care about speed any,
+# it might be interesting to use GMP instead.
+[dependencies.num-bigint]
+version = "*"

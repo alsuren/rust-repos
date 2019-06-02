@@ -1,0 +1,10 @@
+[package]
+name = "metrix"
+version = "0.1.0"
+authors = ["Benjamin Eckardt <benjamin.eckardt@gmx.net>"]
+
+[dependencies]
+log = "0.3"
+env_logger = "0.4"
+ignore = "0.2"
+prettytable-rs = "0.6"

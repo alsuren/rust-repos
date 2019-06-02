@@ -1,0 +1,9 @@
+[package]
+name = "handlemaker"
+version = "0.1.0"
+authors = ["g4lvanix <elia@dl1ye.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "^0.6"
+clap = "^2.0"

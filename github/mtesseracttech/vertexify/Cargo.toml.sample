@@ -1,0 +1,9 @@
+[package]
+name = "vertexify"
+version = "0.1.0"
+authors = ["MT <mtesseracttech@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+straal = {git = "https://github.com/mtesseracttech/straal", branch = "develop" }
+glium = "*"

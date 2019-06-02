@@ -1,0 +1,11 @@
+[package]
+name = "flaskcomparison"
+version = "0.1.0"
+authors = ["loki <carl-campbell-III@yandex.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = {version ="0.7.19", features = ["ssl"]}
+openssl = "0.10"
+rand = "0.6"
+

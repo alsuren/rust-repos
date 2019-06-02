@@ -1,0 +1,19 @@
+[package]
+name = "rpbot"
+version = "0.1.0"
+authors = ["drew"]
+edition = "2018"
+
+[dependencies]
+env_logger = "~0.4"
+log = "~0.3"
+kankyo = "~0.1"
+typemap = "0.3"
+rand = "0.6.3"
+regex = "1.1.0"
+lazy_static = "1.2.0"
+calamine = "0.15.3"
+
+[dependencies.serenity]
+version = "0.5.11"
+features = ["cache", "framework", "standard_framework"]

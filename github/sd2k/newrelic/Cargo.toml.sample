@@ -1,0 +1,25 @@
+[package]
+name = "newrelic"
+description = """
+Idiomatic Rust bindings to the New Relic C SDK.
+
+Note: versions 0.1.0 onwards of this crate are completely incompatible
+with previous versions as they move away from the deprecated New Relic SDK
+to the newer New Relic C SDK. This has additional requirements: see
+https://docs.newrelic.com/docs/agents/c-sdk/get-started/introduction-c-sdk
+for details.
+"""
+version = "0.2.0"
+authors = ["Ben Sully <ben@bsull.io>"]
+categories = ["api-bindings"]
+edition = "2018"
+repository = "https://github.com/sd2k/newrelic"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+derive_more = "0.14.0"
+log = ">0.4.0"
+newrelic-sys = "0.1"
+
+[badges]
+maintenance = { status = "passively-maintained" }

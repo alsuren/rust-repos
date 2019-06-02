@@ -1,0 +1,17 @@
+[package]
+name = "rsub"
+version = "0.1.0"
+authors = ["icew4ll <icew4ll.io>"]
+
+[dependencies]
+subprocess = "0.1.12"
+error-chain = "0.11.0"
+duct = "0.10.0"
+csv = "1.0.0-beta.5"
+colored = "1.6.0"
+console = "0.6.1"
+ssl-expiration = "0.1.1"
+ssh2 = "0.3.2"
+regex = "0.2.10"
+lazy_static = "1.0.0"
+glob = "0.2.11"

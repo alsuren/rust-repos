@@ -1,0 +1,13 @@
+[package]
+name = "pixelflut"
+version = "0.1.0"
+authors = ["Max Bruckner <max@maxbruckner.de>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.3"
+serde = "1.0.92"
+serde_derive = "1.0.92"
+config = "0.9.3"
+image = "0.21.1"
+ctrlc = "3.1.2"

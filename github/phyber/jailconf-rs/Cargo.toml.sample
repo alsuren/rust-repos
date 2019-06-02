@@ -1,0 +1,15 @@
+[package]
+name = "jailconf"
+version = "0.1.0"
+authors = ["David O'Rourke <david.orourke@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.nom]
+version = "4.1.1"
+features = ["std", "verbose-errors"]
+
+# Used by cargo test
+[dev-dependencies]
+indoc = "0.3"

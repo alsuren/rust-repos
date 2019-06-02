@@ -1,0 +1,16 @@
+[package]
+name = "rcov"
+version = "0.0.0"
+authors = ["Sunjay Varma <varma.sunjay@gmail.com>"]
+
+[dependencies]
+
+[lib]
+name = "rcov"
+path = "src/lib.rs"
+plugin = true
+
+[[example]]
+name = "sample"
+path = "examples/sample/main.rs"
+

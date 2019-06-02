@@ -1,0 +1,13 @@
+[package]
+name = "rust_fluent"
+version = "0.2.0"
+authors = ["takkanm"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/takkanm/rust_fluent"
+homepage = "https://github.com/takkanm/rust_fluent"
+description = "fluentd client for rust"
+
+[dependencies]
+serde = "1.0.1"
+serde_json = "1.0"
+time = "0.1.34"

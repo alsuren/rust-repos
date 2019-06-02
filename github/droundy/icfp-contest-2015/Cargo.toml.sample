@@ -1,0 +1,20 @@
+[package]
+name = "solve-davar"
+version = "1.0.0"
+authors = [
+  "Ξίφων Roundy <xiphonroundy@gmail.com>",
+  "David Roundy <roundyd@physics.oregonstate.edu>",
+  "Paho Lurie-Gregg <paholg1@gmail.com>",
+  "Brenden Vischer <br.vischer@gmail.com>",
+  "Elliott Capek <elliotc12@gmail.com>",
+]
+
+[lib]
+name = "davar"
+
+[dependencies]
+  rustc-serialize = "*"
+  num = "*"
+  getopts = "0.2"
+  time = "0.1.32"
+  ncurses = "*"

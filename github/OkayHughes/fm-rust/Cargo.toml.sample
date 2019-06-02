@@ -1,0 +1,17 @@
+[package]
+
+name="fm-rust"
+authors = ["Owen Hughes <okayhughes@gmail.com>", "Caleb Jones <bionicle.dragon@gmail.com>"]
+version = "0.0.0"
+
+[dependencies.rust-portaudio]
+
+git = "https://github.com/jeremyletang/rust-portaudio.git"
+
+[dependencies.conrod]
+
+git = "https://github.com/PistonDevelopers/conrod.git"
+
+[[bin]]
+
+name = "fm-rust"

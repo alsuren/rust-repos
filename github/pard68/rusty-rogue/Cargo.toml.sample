@@ -1,0 +1,9 @@
+[package]
+name = "rusty-rogue"
+version = "0.7.0"
+authors = ["Ian S Pringle <ipringle@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+tcod = "0.13"
+rand = "0.3.9"

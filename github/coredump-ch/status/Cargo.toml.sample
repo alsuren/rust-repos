@@ -1,0 +1,18 @@
+[package]
+name = "coredump-status"
+version = "0.2.2"
+authors = [
+    "Raphael Nestler <raphael.nestler@gmail.com>",
+    "Danilo Bargen <mail@dbrgn.ch>",
+    "Stefan Schindler <stefan@estada.ch>",
+]
+repository = "https://github.com/coredump-ch/status"
+readme = "./README.rst"
+keywords = ["json", "spaceapi"]
+
+[dependencies]
+docopt = "1"
+serde = "1"
+serde_derive = "1"
+env_logger = "0.6"
+spaceapi-server = "0.4"

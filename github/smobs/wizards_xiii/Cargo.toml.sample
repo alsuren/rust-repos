@@ -1,0 +1,11 @@
+[package]
+name = "wizards_xiii"
+version = "0.1.0"
+authors = ["Toby Smyth <tobs169@gmail.com>"]
+
+[dependencies]
+piston_window = "0.67.0"
+specs = "0.9.1"
+alga = "0.5"
+nalgebra = "0.12"
+ncollide = "0.12"

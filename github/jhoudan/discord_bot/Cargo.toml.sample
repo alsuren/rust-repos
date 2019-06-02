@@ -1,0 +1,13 @@
+[package]
+name = "discord_bot"
+version = "1.0.0"
+authors = ["jhoudan <jerom.houdan@gmail.com>"]
+
+[dependencies]
+discord = "*"
+mysql = "*"
+hyper = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+rand = "*"

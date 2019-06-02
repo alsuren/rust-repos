@@ -1,0 +1,24 @@
+[package]
+
+name = "parview"
+version = "0.3.0"
+authors = [ "wendell.smith@yale.edu" ]
+
+[dependencies]
+docopt = "*"
+docopt_macros = "*"
+nalgebra = "*"
+rand = "*"
+glfw = "0.2.*"
+flate2 = "*"
+serde = "*"
+serde_macros = "*"
+serde_json = "*"
+rustc-serialize = "*"
+toml = "*"
+
+[dependencies.kiss3d]
+git = "https://github.com/sebcrozet/kiss3d"
+
+[dependencies.kiss3d_recording]
+git = "https://github.com/sebcrozet/kiss3d_recording"

@@ -1,0 +1,46 @@
+[package]
+name = "lasgun"
+version = "0.1.0"
+authors = ["Nick Frasser <nfrasser@gmail.com>"]
+description = "A ray tracing library in Rust"
+repository = "https://github.com/nfrasser/lasgun.git"
+license = "MIT"
+edition = "2018"
+
+[features]
+default = ["bin"]
+lib = []
+bin = ["image/png_codec", "num_cpus"]
+
+[[bin]]
+name = "cli"
+required-features = ["bin"]
+
+[[example]]
+name = "playground"
+path = "src/examples/playground.rs"
+required-features = ["bin"]
+
+[[example]]
+name = "simple"
+path = "src/examples/simple.rs"
+required-features = ["bin"]
+
+[[example]]
+name = "simplecows"
+path = "src/examples/simplecows.rs"
+required-features = ["bin"]
+
+[dependencies]
+rand = "^0.4"
+cgmath = "^0.16"
+obj = "^0.9"
+typed-arena = "^1.4"
+partition = "^0.1"
+num_cpus = { version = "^1.0", optional = true }
+
+[dependencies.image]
+version = "*"
+optional = true
+default-features = false
+features = ["png_codec"]

@@ -1,0 +1,11 @@
+[package]
+name = "qalam"
+version = "0.0.1"
+authors = ["The Qalam Project Developers"]
+
+[dependencies]
+gtk = { git = "https://github.com/gtk-rs/gtk.git", features = ["v3_16"] }
+gdk = { git = "https://github.com/gtk-rs/gdk.git" }
+
+[features]
+#default = ["gtk_3_22"]

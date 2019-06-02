@@ -1,0 +1,20 @@
+[package]
+
+name = "manlist"
+version = "0.0.1"
+authors = ["adjivas <adjivas@users.noreply.github.com>"]
+description = "Lists all man.1 and returns a structure"
+license = "GNUv3"
+repository = "https://github.com/adjivas/manlist"
+
+[lib]
+name = "manslib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/bin.rs"
+
+[dependencies]
+glob = "*"
+

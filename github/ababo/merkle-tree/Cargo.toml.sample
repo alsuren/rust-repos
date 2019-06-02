@@ -1,0 +1,9 @@
+[package]
+name = "merkle-tree"
+version = "0.1.0"
+authors = ["semion.ababo@gmail.com"]
+
+[dependencies]
+digest = "0.4.0"
+generic-array = "0.6"
+sha2 = "0.4.2"

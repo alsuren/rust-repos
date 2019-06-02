@@ -1,0 +1,15 @@
+[package]
+name = "disp"
+version = "0.0.1"
+authors = ["Yusuke Tsutsumi <yusuke@tsutsumi.io>"]
+
+[dependencies]
+getopts = "0.2"
+libc = ""
+pest = "^2.0"
+pest_derive = "^2.0"
+llvm-sys = "60"
+inference = {path = "inference"}
+
+[features]
+debug = []

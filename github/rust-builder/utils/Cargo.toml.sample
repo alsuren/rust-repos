@@ -1,0 +1,17 @@
+[package]
+name = "utils"
+version = "0.0.4-pre"
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "Common utilities suitable for use in Rust Builders"
+documentation = "http://rust-builder.github.io/utils"
+homepage = "http://rust-builder.github.io/utils"
+repository = "https://github.com/rust-builder/utils"
+readme = "README.md"
+license = "MIT"
+keywords = ["rub","utils"]
+
+[dependencies.commandext]
+git = "https://github.com/rust-builder/commandext.git"
+
+[lib]
+name = "utils"

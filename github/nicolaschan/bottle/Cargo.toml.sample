@@ -1,0 +1,11 @@
+[package]
+name = "bottle"
+version = "0.1.0"
+authors = ["Nicolas Chan <nicolas@nicolaschan.com>"]
+
+[dependencies]
+websocket = "0.20.2"
+tokio = "0.1.5"
+[dependencies.pancurses]
+version = "0.15"
+features = ["wide"]

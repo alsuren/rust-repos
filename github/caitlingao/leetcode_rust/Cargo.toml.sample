@@ -1,0 +1,45 @@
+[package]
+name = "leetcode_for_rust"
+version = "0.1.30"
+authors = ["Caitlin Gao <caitlin.gaoo@google.com>"]
+homepage = "https://github.com/caitlingao/leetcode_rust"
+repository = "https://github.com/caitlingao/leetcode_rust"
+description = "leetcode for rust"
+license = "MIT"
+edition = "2018"
+
+include = [
+    "Cargo.toml",
+    "LICENSE",
+    "README.md",
+    "src/lib.rs",
+    "src/cd0001_two_sum/mod.rs",
+    "src/cd0015_three_sum/mod.rs",
+    "src/cd0020_valid_parentheses/mod.rs",
+    "src/cd0022_generate_parentheses/mod.rs",
+    "src/cd0036_valid_sudoku/mod.rs",
+    "src/cd0037_sudoku_solver/mod.rs",
+    "src/cd0050_powx_n/mod.rs",
+    "src/cd0051_n_queens/mod.rs",
+    "src/cd0052_n_queens_ii/mod.rs",
+    "src/cd0069_sqrtx/mod.rs",
+    "src/cd0098_validate_binary_search_tree/mod.rs",
+    "src/cd0102_binary_tree_level_order_traversal/mod.rs",
+    "src/cd0104_maximum_depth_of_binary_tree/mod.rs",
+    "src/cd0111_minimum_depth_of_binary_tree/mod.rs",
+    "src/cd0122_best_time_to_buy_and_sell_stock_ii/mod.rs",
+    "src/cd0169_majority_element/mod.rs",
+    "src/cd0206_reverse_linked_list/mod.rs",
+    "src/cd0208_implement_trie_prefix_tree/mod.rs",
+    "src/cd0232_implement_queue_using_stacks/mod.rs",
+    "src/cd0239_sliding_window_maximum/mod.rs",
+    "src/cd0242_valid_anagram/mod.rs",
+    "src/cd0367_valid_perfect_square/mod.rs",
+    "src/cd0703_kth_largest_element_in_a_stream/mod.rs",
+]
+
+[lib]
+name = "leetcode_for_rust"
+crate-type = ["rlib", "staticlib"]
+
+[dependencies]

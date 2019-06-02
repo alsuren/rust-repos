@@ -1,0 +1,22 @@
+[package]
+name = "ses-vimsi-service-rs"
+version = "0.1.0"
+authors = ["eyifemo <phil.mo@ericsson.com>"]
+
+[dependencies]
+rocket = "0.3.2"
+rocket_codegen = "0.3.2"
+r2d2_postgres = "0.13.0"
+r2d2 = "0.7.3"
+postgres = "0.15.1"
+lazy_static = "0.2.8"
+requests = "0.0.30"
+serde = "1.0.11"
+serde_derive = "1.0.11"
+serde_json = "1.0.2"
+bytes = "0.4"
+futures = "0.1"
+tokio-io = "0.1"
+tokio-core = "0.1"
+tokio-proto = "0.1"
+tokio-service = "0.1"

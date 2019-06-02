@@ -1,0 +1,38 @@
+[package]
+name = "wmutils-rust"
+version = "0.1.0"
+authors = ["Adam <sector-f on github>"]
+
+[dependencies]
+clap = "2.2.5"
+
+[dependencies.xcb]
+git = "https://github.com/rtbo/rust-xcb.git"
+
+[[bin]]
+name = "pfw"
+path = "src/pfw.rs"
+
+[[bin]]
+name = "wtf"
+path = "src/wtf.rs"
+
+[[bin]]
+name = "mapw"
+path = "src/mapw.rs"
+
+[[bin]]
+name = "killw"
+path = "src/killw.rs"
+
+[[bin]]
+name = "wattr"
+path = "src/wattr.rs"
+
+[[bin]]
+name = "wrs"
+path = "src/wrs.rs"
+
+[[bin]]
+name = "lsw"
+path = "src/lsw.rs"

@@ -1,0 +1,19 @@
+[package]
+authors = ["Hasan <hasantiny@gmail.com>"]
+description = "Telegram Bot Api library"
+keywords = ["async", "telegram", "bot", "api"]
+license = "MIT"
+name = "tg_botapi"
+readme = "README.md"
+repository = "https://github.com/JuanPotato/rust-tg-botapi"
+version = "0.6.0-alpha.2"
+edition = "2018"
+
+
+[dependencies]
+reqwest = { version = "0.9", features = ["trust-dns"] }
+tokio = "0.1"
+futures-preview = { version = "0.3.0-alpha.16", features = ["compat"] }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

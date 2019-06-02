@@ -1,0 +1,21 @@
+[package]
+name = "frc-elo"
+version = "0.1.0"
+authors = ["Carl Colglazier <carl@carlcolglazier.com>"]
+
+[dependencies]
+diesel = "0.11.4"
+curl = "0.4.6"
+rustc-serialize = "0.3.22"
+diesel_codegen = { version = "0.11.0", default-features = false, features = ["sqlite", "dotenv"] }
+dotenv = "0.8.0"
+serde = "0.9.8"
+serde_derive = "0.9.8"
+serde_json = "0.9.8"
+csv = "0.15.0"
+pbr = "1.0.0-alpha.2"
+clap = { version = "2.20.5", features = ["yaml"] }
+rand = "0.3"
+tera = "0.9.0"
+chrono = "0.3"
+probability = "0.15.5"

@@ -1,6 +1,6 @@
 [package]
 name = "eetf"
-version = "0.3.6"
+version = "0.4.0"
 authors = ["Takeru Ohta <phjgt308@gmail.com>"]
 description = "Library for encoding/decoding Erlang External Term Format"
 documentation = "https://docs.rs/eetf"
@@ -9,8 +9,13 @@ repository = "https://github.com/sile/eetf"
 readme = "README.md"
 keywords = ["erlang"]
 license = "MIT"
+edition = "2018"
+
+[badges]
+travis-ci = {repository = "sile/eetf"}
+codecov = {repository = "sile/eetf"}
 
 [dependencies]
-num = "0.1"
-byteorder = "0.5"
+num = "0.2"
+byteorder = "1"
 libflate = "0.1"

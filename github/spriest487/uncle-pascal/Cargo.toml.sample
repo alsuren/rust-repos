@@ -1,0 +1,26 @@
+[package]
+name = "pascal2"
+version = "0.1.0"
+authors = ["spriest487 <spriest487@googlemail.com>"]
+edition = "2018"
+
+[dependencies]
+pas_common = { path = "pas_common" }
+pas_pp = { path = "pas_pp" }
+pas_syn = { path = "pas_syn" }
+pas_typecheck = { path = "pas_typecheck" }
+pas_ir = { path = "pas_ir" }
+pas_backend_c = { path = "pas_backend_c" }
+
+structopt = "0.2.14"
+codespan = "0.2.1"
+codespan-reporting = "0.2.1"
+
+[workspace]
+members = [
+    "pas_common",
+    "pas_syn",
+    "pas_typecheck",
+    "pas_pp",
+    "pas_ir",
+]

@@ -1,0 +1,8 @@
+[package]
+name = "lib_uapi_linux"
+version = "0.1.0"
+authors = ["William Laeder <codylaeder@gmail.com>"]
+build="build.rs"
+
+[build-dependencies]
+bindgen = "*"

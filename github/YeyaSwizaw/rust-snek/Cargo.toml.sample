@@ -1,0 +1,14 @@
+[package]
+name = "snek"
+version = "0.3.0"
+authors = ["Samuel Sleight <samuel.sleight@gmail.com>"]
+description = "A simple library and macro for using dynamic libraries"
+repository = "https://github.com/YeyaSwizaw/rust-snek"
+documentation = "http://www.samuelsleight.co.uk/rust-docs/snek/snek/"
+keywords = ["dynamic", "library", "snek", "load", "shared"]
+license = "Apache-2.0"
+
+[dependencies]
+libc = "0.2.7"
+winapi = "0.2.5"
+kernel32-sys = "0.2.1"

@@ -1,0 +1,24 @@
+[package]
+name = "crustopals"
+version = "0.1.0"
+authors = ["jackvnimble <jack.wilson.v@gmail.com>"]
+
+[dependencies]
+byteorder = "*"
+rand = "*"
+hex = "0.3.1"
+base64 = "0.9.3"
+lazy_static = "1.1.0"
+fake-simd = "*"
+simple-server = "*"
+reqwest = "*"
+
+[dependencies.sha1]
+git = "https://github.com/id4ho/rust-sha1"
+branch = "crustopals"
+features = ["std"]
+
+[dependencies.md4]
+git = "https://github.com/id4ho/hashes"
+branch = "crustopals"
+features = ["std"]

@@ -1,0 +1,10 @@
+[package]
+name = "hyper-proto-sse"
+version = "0.1.6"
+authors = ["Alex <do.not@email.pls>"]
+
+[dependencies]
+hyper = "*"
+futures = "0.1.21"
+tokio-core = "*"
+bytes = "*"

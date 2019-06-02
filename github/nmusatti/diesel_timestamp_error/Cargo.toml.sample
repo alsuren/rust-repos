@@ -1,0 +1,10 @@
+[package]
+name = "diesel_timestamp_error"
+version = "0.1.0"
+authors = ["Nicola Musatti <nicola.musatti@gmail.com>"]
+
+[dependencies]
+chrono = "0.4"
+diesel = { version = "0.16", features = [ "chrono", "sqlite" ] }
+diesel_codegen = { version = "0.16", features = [ "sqlite" ] }
+dotenv = "0.10"

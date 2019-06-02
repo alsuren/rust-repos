@@ -1,0 +1,28 @@
+[package]
+name = "disruptor"
+version = "0.0.1-pre"
+authors = ["Simon Ruggier <Simon.Ruggier@gmail.com>"]
+description = "Fast inter-task communication for Rust"
+homepage = "https://github.com/sruggier/rust-disruptor"
+repository = "https://github.com/sruggier/rust-disruptor.git"
+keywords = ["channels", "message passing", "disruptor"]
+license = "MIT/Apache-2.0"
+
+[profile.release]
+lto = true
+
+[profile.dev]
+opt-level = 3
+lto = true
+
+[profile.test]
+opt-level = 3
+lto = true
+
+[profile.bench]
+lto = true
+
+[dependencies]
+time = "0.1"
+log = "0.3.5"
+getopts = "0.2.14"

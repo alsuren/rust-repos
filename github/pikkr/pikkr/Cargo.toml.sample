@@ -1,0 +1,20 @@
+[package]
+name = "pikkr"
+version = "0.16.1"
+authors = ["Keiji Yoshida <kjmrknsn@gmail.com>"]
+description = "JSON Parser which picks up values directly without performing tokenization in Rust"
+documentation = "https://pikkr.github.io/doc/pikkr/"
+homepage = "https://github.com/pikkr/pikkr"
+repository = "https://github.com/pikkr/pikkr"
+readme = "README.md"
+keywords = ["pikkr", "json", "simd"]
+categories = ["algorithms", "data-structures", "parser-implementations", "parsing", "text-processing"]
+license = "MIT/Apache-2.0"
+
+[features]
+default = []
+avx-accel = ["x86intrin"]
+
+[dependencies]
+x86intrin = { version = "0.4.3", optional = true }
+fnv = "1.0.5"

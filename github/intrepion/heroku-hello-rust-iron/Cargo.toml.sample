@@ -1,0 +1,7 @@
+[package]
+name = "heroku-hello-rust-iron"
+version = "0.1.0"
+authors = ["Oliver Forral <intrepion@gmail.com>"]
+
+[dependencies]
+iron = "0.5.1"

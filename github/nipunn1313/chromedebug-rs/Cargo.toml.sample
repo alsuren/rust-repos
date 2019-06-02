@@ -1,0 +1,10 @@
+[package]
+name = "chromedebug"
+version = "0.1.0"
+authors = ["Nipunn Koorapati <nipunn@dropbox.com>"]
+
+[dependencies]
+websocket = "0.17.1"
+serde = "0.8.23"
+serde_derive = "=0.8.17"
+serde_json = "=0.8.3"

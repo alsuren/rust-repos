@@ -1,0 +1,38 @@
+[package]
+name = "gotham-micro"
+version = "0.1.0"
+authors = ["Ryan Barth <ryan@barth.tech>"]
+
+[dependencies]
+gotham = { git = "https://github.com/gotham-rs/gotham.git" }
+gotham_derive = { git = "https://github.com/gotham-rs/gotham.git" }
+#gotham = "0.1.2"
+#gotham_derive = "0.1.0"
+#gotham_middleware_diesel = { git = "https://github.com/gotham-rs/middleware-diesel.git", branch = "feature/initial-concept" }
+gotham_middleware_diesel = { path = "../gotham-rs/middleware-diesel" }
+futures = "*"
+hyper = "*"
+chrono = "*"
+fern = "*"
+mime = "*"
+log = "*"
+dotenv = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+r2d2 = "*"
+r2d2-diesel = "*"
+
+[dependencies.diesel]
+version = "*"
+features = ["postgres", "chrono", "sqlite", "mysql", "serde_json"]
+
+[dependencies.diesel_codegen]
+version = "*"
+features = ["postgres", "sqlite", "mysql"]
+
+[features]
+default = ["postgres"]
+postgres = []
+mysql = []
+sqlite = []

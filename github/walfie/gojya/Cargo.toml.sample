@@ -1,0 +1,18 @@
+[package]
+authors = ["Walfie <walfington@gmail.com>"]
+name = "gojya"
+version = "0.1.0"
+
+[dependencies]
+ansi_term = "0.9"
+chrono = "0.4"
+error-chain = "0.10"
+futures = "0.1"
+html5ever = "0.18"
+structopt = "0.0.5"
+structopt-derive = "0.0.5"
+tokio-core = "0.1"
+
+[dependencies.olifants]
+git = "https://github.com/walfie/olifants"
+rev = "3632bb1d8b35dafbf9cfff84da3f69890e61c3f3"

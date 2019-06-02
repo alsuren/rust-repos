@@ -1,0 +1,26 @@
+[package]
+name = "ulverify"
+version = "0.1.0"
+authors = ["Daniel Basedow <daniel.basedow@gmail.com>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+opt-level = 'z'
+debug = false
+panic = 'abort'
+
+[dependencies]
+bytes = "0.4.10"
+http = "0.1"
+serde_json = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+regex = "1"
+regex-syntax = "0.6"
+reqwest = "0.9"
+mach_object = "0.1"
+plist = "0.3"
+clap = "~2.32"
+zip = "0.4"
+apk-rs = { git = "https://github.com/dbasedow/apk-rs" }

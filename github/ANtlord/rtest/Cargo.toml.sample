@@ -1,0 +1,13 @@
+[package]
+name = "rtest"
+version = "0.1.0"
+authors = ["lantlord <antlord92@gmail.com>"]
+
+[dependencies]
+getopts = "0.2"
+imap = "0.3.2"
+openssl = "0.9.14"
+iconv = { git = 'https://github.com/y-stm/rust-iconv' }
+bson = "0.9"
+serde = "1.0"
+chrono = "0.4"

@@ -1,0 +1,22 @@
+[package]
+name = "http_io"
+version = "0.2.4"
+authors = ["Remi Bernotavicius <remi@abort.cc>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/bobbobbio/http_io"
+homepage = "https://github.com/bobbobbio/http_io"
+description = """
+A library with limited dependencies containing an HTTP client and server.
+"""
+
+[badges]
+travis-ci = { repository = "bobbobbio/http_io" }
+
+[features]
+default = ["std", "openssl"]
+std = []
+
+[dependencies]
+hashbrown = "^0.3"
+openssl = { version = "^0.10", optional = true }

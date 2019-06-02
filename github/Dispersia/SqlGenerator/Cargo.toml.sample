@@ -1,0 +1,15 @@
+[package]
+name = "sql_generator"
+version = "0.1.0"
+authors = ["Aaron Housh <dispersias@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "sql_gen_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sql_gen_bin"
+path = "src/bin.rs"
+
+[dependencies]

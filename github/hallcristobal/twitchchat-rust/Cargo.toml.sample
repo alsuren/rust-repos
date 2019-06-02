@@ -1,0 +1,18 @@
+[package]
+name = "twitch-bot"
+version = "0.1.0"
+authors = ["Cristobal Hall-Ramos <crishallramos@yahoo.com>"]
+
+[dependencies]
+log = "0.4.3"
+env_logger = "0.5.10"
+chrono = "0.4.4"
+quick-error = "1.2.2"
+
+[[bin]]
+name = "twitch_chat"
+path = "src/bin/main.rs"
+
+[lib]
+name = "twitch_chat_lib"
+path = "src/lib/lib.rs"

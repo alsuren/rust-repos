@@ -1,0 +1,12 @@
+[package]
+
+name = "BEAR"
+version = "1.0.0"
+authors = ["Bob Hosten <bob.hostern@gmail.com>"]
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"
+
+[[bin]]
+name = "bear"

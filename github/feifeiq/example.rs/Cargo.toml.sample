@@ -1,0 +1,14 @@
+[package]
+name = "example"
+version = "0.1.0"
+authors = ["feifeiq <feifeiq@foxmail.com>"]
+
+[[bin]]
+name = "example"
+path = "src/array.rs"
+
+[dependencies]
+num="*"
+chrono="*"
+time="*"
+encoding = "*"

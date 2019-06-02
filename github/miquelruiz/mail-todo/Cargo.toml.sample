@@ -1,0 +1,23 @@
+[package]
+
+name = "mail-todo"
+version = "0.0.6"
+authors = [ "Miquel Ruiz <mruiz@cpan.org>" ]
+
+[dependencies]
+
+dirs = "*"
+email = "*"
+env_logger = "*"
+getopts = "*"
+glib = "*"
+imap = { git = "https://github.com/mattnenterprise/rust-imap" }
+libresolv-sys = { path = "libresolv-sys", version = "0.1.0" }
+log = "*"
+notify-rust = "*"
+native-tls = "*"
+regex = "*"
+
+[dependencies.gtk]
+version = "*"
+features = ["v3_10"]

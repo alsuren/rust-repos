@@ -1,0 +1,30 @@
+[package]
+name = "plexlooper"
+version = "0.1.0"
+authors = ["Jens-Christian Fischer <jens-christian.fischer@switch.ch>"]
+
+[dependencies]
+vst = { git = 'https://github.com/rust-dsp/rust-vst' }
+easyvst = { git = 'https://github.com/Boscop/easyvst' }
+rand = "0.3"
+time = "0.1.40"
+log = "0.3.0"
+log-panics = "*"
+simplelog = "*"
+num-traits = "*"
+asprim = "*"
+tinyui = { git = 'https://github.com/jcfischer/tinyui-rs.git' }
+app_dirs = "^1.2.1"
+
+
+[dev-dependencies]
+
+
+[lib]
+name = "plexlooper"
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[[bin]]
+name = "standalone"
+path = "./src/standalone.rs"

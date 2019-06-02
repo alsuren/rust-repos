@@ -1,0 +1,20 @@
+[package]
+name = "oneliner"
+version = "0.1.0"
+authors = ["Maël <contact@maeln.com>"]
+
+[profile.release]
+#debug = false
+#lto = true
+#opt-level = "z"
+debug = true
+lto = false
+opt-level = 2
+
+[dependencies]
+rand = "0.6.1"
+csv = "1.0.2"
+clap = "2.32"
+crossbeam = "0.5.0"
+regex = "1.0.6"
+lazy_static = "1.2.0"

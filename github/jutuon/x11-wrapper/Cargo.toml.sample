@@ -1,0 +1,14 @@
+[package]
+name = "x11-wrapper"
+version = "0.1.0"
+authors = ["Juuso Tuononen <jutuon@outlook.com>"]
+
+[dependencies]
+x11 = "2.17"
+x11-dl = { version = "2.17", optional = true }
+bitflags = "1.0"
+lazy_static = "1.0"
+
+[features]
+
+runtime-linking = ["x11-dl"]

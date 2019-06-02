@@ -1,0 +1,11 @@
+[package]
+name = "ruby-primes-with-rust"
+version = "0.1.0"
+authors = ["Andrew Speed <andrew.cspeed@gmail.com>"]
+
+[dependencies]
+primal = "0.2.3"
+
+[lib]
+name = "ruby_primes_with_rust"
+crate-type = ["dylib"]

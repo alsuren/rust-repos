@@ -1,0 +1,19 @@
+[package]
+name = "riot-sys"
+version = "0.1.8"
+authors = ["Ben Stuart <mail@bstuart.de>"]
+license = "MIT OR Apache-2.0"
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.36.0"
+git2 = "0.7.1"
+config = "0.8.0"
+serde = "1.0.43"
+serde_derive = "1.0.43"
+
+[features]
+samr21-xpro = []
+
+[dependencies]
+cty = "0.1.5"

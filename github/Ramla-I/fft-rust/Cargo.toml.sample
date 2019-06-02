@@ -1,0 +1,23 @@
+[package]
+name = "fft-rust"
+version = "0.1.0"
+authors = ["Ramla <ijazramla@gmail.com>"]
+
+[dependencies]
+mish = "0.2.0"
+cfg-if = "0.1"
+libm = "0.1.2"
+
+[dependencies.num-complex]
+version = "0.2.0"
+default-features = false
+
+[dependencies.log]
+default-features = false
+version = "0.3.7"
+
+[dependencies.immintrin]
+git = "https://github.com/kevinaboos/rust-immintrin.git"
+
+[dependencies.rand]
+version = "0.6.5"

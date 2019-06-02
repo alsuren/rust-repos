@@ -1,0 +1,17 @@
+[package]
+
+name = "snaked"
+version = "0.0.1"
+authors = ["Liotitch <rph.vaillant@gmail.com>"]
+
+[dependencies.sparkle]
+
+path = "../Sparkle/sparkle"
+
+[dependencies.sparkle_macros]
+
+path = "../Sparkle/sparkle_macros"
+
+[dependencies.rust-sfml]
+
+git = "https://github.com/jeremyletang/rust-sfml"

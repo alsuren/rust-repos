@@ -1,0 +1,22 @@
+[package]
+name = "mdp"
+version = "0.0.2"
+authors = ["Ben Zhang <benzh@cs.berkeley.edu>"]
+
+[dependencies]
+base64 = "0.7.0"
+# clippy = "*"
+env_logger = "*"
+lazy_static = "0.2"
+log = "*"
+pulldown-cmark = "0.0.8"
+reqwest = "0.7.3"
+structopt = "0.1.0"
+structopt-derive = "0.1.0"
+termion = "1.1.1"
+termios = "0.2.2"
+
+[[bin]]
+name = "mdp"
+doc = false
+path = "src/bin/mdp.rs"

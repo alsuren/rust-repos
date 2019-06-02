@@ -1,0 +1,26 @@
+[package]
+name = "forkjoin-benchmarking"
+version = "0.1.0"
+authors = ["Linus Färnstrand <faern@faern.net>"]
+
+[dependencies]
+argparse = "*"
+time = "*"
+# forkjoin = "2.3.*"
+
+[dependencies.criterion]
+#path = "../criterion/criterion.rs/"
+git = "https://github.com/faern/criterion.rs"
+branch = "forkjoin_additions"
+
+[dependencies.forkjoin]
+#path = "../forkjoin/"
+git = "https://github.com/faern/forkjoin"
+branch = "affinity_linux"
+
+# [profile.release]
+# lto = true
+
+[features]
+threadstats = ["forkjoin/threadstats"]
+linux-affinity = ["forkjoin/linux-affinity"]

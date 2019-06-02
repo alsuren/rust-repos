@@ -1,0 +1,7 @@
+[package]
+name = "stupid-cli"
+version = "0.1.0"
+authors = ["José manuel Barroso Galindo <theypsilon@gmail.com>"]
+
+[dependencies]
+stupid = { path = "stupid" }

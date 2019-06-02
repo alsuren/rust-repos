@@ -1,0 +1,13 @@
+[package]
+name = "cool_sine_synth"
+version = "0.0.1"
+authors = ["Bob Webb <bob.wbb@gmail.com>"]
+
+[dependencies]
+vst2 = { git = "https://github.com/rust-dsp/rust-vst" }
+sdl2 = "0.30.0"
+libc = "*"
+
+[lib]
+name = "sine_synth"
+crate-type = ["cdylib"]

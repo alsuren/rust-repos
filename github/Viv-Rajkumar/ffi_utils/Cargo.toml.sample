@@ -1,0 +1,13 @@
+[package]
+authors = ["MaidSafe Developers <dev@maidsafe.net>"]
+description = "Rust FFI Utils"
+documentation = "http://docs.maidsafe.net/ffi_utils"
+homepage = "http://maidsafe.net"
+license = "GPL-3.0"
+name = "ffi_utils"
+readme = "README.md"
+repository = "https://github.com/maidsafe/ffi_utils"
+version = "0.0.1"
+
+[dependencies]
+clippy = {version = "=0.0.99", optional = true}

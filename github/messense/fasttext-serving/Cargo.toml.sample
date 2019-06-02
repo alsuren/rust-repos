@@ -1,0 +1,42 @@
+[package]
+name = "fasttext-serving"
+version = "0.4.3"
+authors = ["Messense Lv <messense@icloud.com>"]
+description = "fastText model serving API server"
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/messense/fasttext-serving.git"
+exclude = ["models/*"]
+
+[package.metadata.deb]
+maintainer = "Messense Lv <messense@icloud.com>"
+copyright = "2018, Messense Lv. <messense@icloud.com>"
+license-file = ["LICENSE", "3"]
+extended-description = "fastText model serving API server"
+depends = "$auto"
+section = "text"
+priority = "optional"
+assets = [
+    # binary
+    ["target/release/fasttext-serving", "usr/bin/", "755"],
+]
+
+[dependencies]
+rocket = "0.4.1"
+rocket_contrib = { version = "0.4.1", default-features = false, features = ["json"] }
+fasttext = "0.4"
+clap = "2.30"
+rayon = "1.0"
+futures = "0.1.23"
+grpcio = { version = "0.4", default-features = false, features = ["protobuf-codec"] }
+protobuf = "2.2"
+log = "0.4.4"
+pretty_env_logger = "0.3.0"
+ctrlc = { version = "3.0", features = ["termination"] }
+num_cpus = "1.8.0"
+jemallocator = { version = "0.3.0", features= ["unprefixed_malloc_on_supported_platforms"] }
+
+[profile.release]
+lto = true
+debug = true

@@ -1,0 +1,12 @@
+[package]
+name = "extern"
+version = "0.1.0"
+authors = [ "douglas.linder@gmail.com" ]
+
+[lib]
+name = "extern"
+path = "src/test.rs"
+crate-type = ["dylib", "staticlib"]
+
+[dependencies]
+libc = "0.1.3"

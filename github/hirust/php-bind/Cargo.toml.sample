@@ -1,0 +1,13 @@
+[package]
+name = "rust bindings for php"
+version = "0.1.0"
+authors = ["hackmasker <hackmasker@gmail.com>"]
+version = "7.3.0"
+build = "build.rs"
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+bindgen = "0.49.3"
+cc = "1.0"
+num_cpus = "1.0"

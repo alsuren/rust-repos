@@ -1,0 +1,17 @@
+[package]
+name = "nes-rs"
+version = "0.1.0"
+authors = ["Walter Kuppens <reshurum@gmail.com>"]
+
+[dependencies]
+byteorder = "0.5"
+enum_primitive = "0.1"
+getopts = "0.2"
+num = "0.1"
+chrono = "0.3"
+rustyline = "1.0.0"
+
+[dependencies.sdl2]
+version = "0.31"
+default-features = false
+features = ["gfx", "mixer"]

@@ -1,0 +1,11 @@
+[package]
+name = "node-process"
+version = "0.0.0"
+authors = ["Tim Hall <tim.hall.engr@gmail.com>"]
+repository = "https://github.com/timhall/node-process-rs"
+license = "MIT"
+description = "Portable Node.js process"
+
+[dependencies]
+futures = "0.1"
+node-sys = { path = "node-sys", version = "10.9.0" }

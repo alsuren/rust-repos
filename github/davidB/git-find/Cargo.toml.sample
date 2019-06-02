@@ -1,0 +1,44 @@
+[package]
+name = "git-find"
+version = "0.4.1"
+authors = ["David Bernard <david.bernard.31@gmail.com>"]
+description = "A tool (cli & lib) to find local git repositories."
+readme = "README.md"
+license = "CC0-1.0"
+keywords = ["git", "find", "search"]
+categories = ["command-line-utilities", "development-tools"]
+repository = "https://github.com/davidB/git-find"
+homepage = "https://github.com/davidB/git-find"
+
+[badges.appveyor]
+repository = "davidB/git-find"
+
+[badges.travis-ci]
+repository = "davidB/git-find"
+
+[dependencies]
+slog = { version= "2.4.1", features = ["max_level_trace", "release_max_level_warn"] }
+slog-async = "2.3.0"
+slog-term = "2.4.0"
+walkdir = "2.2.7"
+gtmpl = "0.5.6"
+gtmpl_derive = "0.3.3"
+gtmpl_value= "0.3.3"
+structopt = "0.2.16"
+git2 = { version = "0.8.0", features = [], default-features = false }
+regex = "1.1.6"
+
+[dev-dependencies]
+spectral = "0.6.0"
+
+[[bin]]
+name = "git-find"
+path = "src/main.rs"
+doc = false
+
+[target.'cfg(all(unix, not(target_os = "redox")))'.dependencies]
+libc = "0.2"
+
+[target.'cfg(windows)'.dependencies]
+kernel32-sys = "0.2"
+winapi = "0.3"

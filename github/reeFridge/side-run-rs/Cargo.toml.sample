@@ -1,0 +1,14 @@
+[package]
+name = "side-run"
+version = "0.1.0"
+authors = ["reeFridge <reefridgerator@gmail.com>"]
+
+[dependencies]
+byteorder = "1"
+piston_window = "0.70.0"
+conrod = { version = "0.55", features = ["piston"] }
+find_folder = "0.3"
+vecmath = "0.3"
+cgmath = "0.15"
+collision = "0.12"
+piston-button_tracker = { path = "./libs/button_tracker" }

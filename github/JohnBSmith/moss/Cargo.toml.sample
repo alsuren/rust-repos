@@ -1,0 +1,44 @@
+[package]
+name = "moss"
+version = "0.0.4"
+authors = ["Finn <finn.bcd@gmail.com>"]
+license = "CC0-1.0"
+edition = "2018"
+
+description = "Experimental Moss interpreter"
+keywords = ["scripting", "language"]
+homepage = "https://johnbsmith.github.io/moss/home.htm"
+repository = "https://github.com/JohnBSmith/moss"
+readme = "README.md"
+
+[features]
+# default = ["long-none"]
+# default = ["long-none", "la", "math-la", "math-sf"]
+default = ["long-gmp", "la", "math-la", "math-sf", "graphics"]
+la = []
+math-la = []
+math-sf = []
+long-none = []
+long-gmp = []
+graphics = []
+
+[lib]
+name = "moss"
+path = "src/lib.rs"
+
+[[bin]]
+name = "moss"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+libc = "0.2"
+
+[target.'cfg(unix)'.dependencies]
+termios = "0.2"
+
+[profile.dev]
+debug = true
+
+
+

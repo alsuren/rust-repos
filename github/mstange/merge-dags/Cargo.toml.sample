@@ -1,0 +1,8 @@
+[package]
+authors = ["Markus Stange <mstange@themasta.com>"]
+name = "merge-dags"
+version = "0.1.0"
+
+[dependencies]
+euclid = "0.17.2"
+num = "0.1.42"

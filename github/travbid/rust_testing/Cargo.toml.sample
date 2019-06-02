@@ -1,0 +1,10 @@
+[package]
+name = "rust_pose"
+version = "0.1.0"
+authors = ["travers"]
+
+[build-dependencies]
+# bindgen = "^0.33.2"
+
+[dependencies]
+libc = "^0.2.40"

@@ -1,0 +1,15 @@
+[package]
+name = "complex-writeout"
+version = "0.1.0"
+authors = ["Alex Addy <alex.addy@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+num-complex = "0.2"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "vec_conversion"
+harness = false

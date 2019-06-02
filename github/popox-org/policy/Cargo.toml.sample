@@ -1,0 +1,9 @@
+[package]
+name = "policy"
+version = "0.1.0"
+authors = ["namrata"]
+edition = "2018"
+
+[dependencies]
+chashmap = "2.2.2"
+crossbeam-deque = "0.7"

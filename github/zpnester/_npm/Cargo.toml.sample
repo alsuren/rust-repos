@@ -1,0 +1,9 @@
+[package]
+name = "_npm"
+version = "0.0.0"
+authors = ["Andriy Nesterenko <zpnester@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde_json = "*"
+path-absolutize = "*"

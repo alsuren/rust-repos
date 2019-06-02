@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "tibc",
+    "tibc_internals",
+    "tibc_parser"
+]
+
+[profile.release]
+lto = true
+codegen-units = 1

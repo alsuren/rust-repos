@@ -1,0 +1,32 @@
+[package]
+name = "reserves"
+version = "0.1.0"
+authors = ["Steven Roose <steven@stevenroose.org>"]
+
+
+[dependencies]
+clap = "2.32"
+log = "0.4.5"
+fern = "0.5.6"
+protobuf = "2.0.4"
+hex = "0.3.2"
+rust-crypto = "0.2.36"
+
+trezor = { git = "https://github.com/stevenroose/rust-trezor-api.git", branch = "devel" }
+rpassword = "2.0.0"
+
+#bitcoin = { version = "0.15", features = [ "serde-decimal" ] }
+bitcoin = { git = "https://github.com/stevenroose/rust-bitcoin.git", branch = "devel", features = [ "serde-decimal" ] }
+secp256k1 = "0.12"
+bitcoin-amount = { version = "0.1.4", features = [ "serde" ] }
+bitcoinconsensus = "0.16.3"
+
+bitcoincore-rpc = { git = "https://github.com/stevenroose/rust-bitcoincore-rpc.git", branch = "devel" }
+bitcoincore-rpc-json = { git = "https://github.com/stevenroose/rust-bitcoincore-rpc.git", branch = "devel" }
+
+
+[patch.crates-io]
+bitcoin = { path = "/home/steven/code/rust/bitcoin" }
+bitcoincore-rpc = { path = "/home/steven/code/rust/bitcoincore-rpc/client" }
+bitcoincore-rpc-json = { path = "/home/steven/code/rust/bitcoincore-rpc/json" }
+trezor = { path = "/home/steven/code/rust/trezor-api" }

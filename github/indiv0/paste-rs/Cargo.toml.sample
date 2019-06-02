@@ -1,0 +1,21 @@
+[package]
+
+name = "paste"
+version = "0.0.0"
+authors = [ "Nikita Pekin <contact@nikitapek.in>" ]
+
+[[bin]]
+
+name = "paste"
+
+[dependencies.nickel]
+
+git = "https://github.com/nickel-org/nickel.rs"
+
+[dependencies.url]
+
+git = "https://github.com/servo/rust-url"
+
+[dependencies.mysql]
+
+git = "https://github.com/Indiv0/rust-mysql-simple"

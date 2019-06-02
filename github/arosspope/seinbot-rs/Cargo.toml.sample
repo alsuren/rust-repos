@@ -1,0 +1,29 @@
+[package]
+name = "seinbot-rs"
+version = "1.0.3"
+authors = ["arosspope <andrew.pope456@gmail.com>"]
+edition = "2018"
+description = "A seinfeld twitter bot using markov chains in rust."
+license = "MIT"
+homepage = "https://github.com/arosspope/seinbot-rs.git"
+repository = "https://github.com/arosspope/seinbot-rs.git"
+readme = "README.md"
+keywords = ["markov-chain", "seinfeld", "bot", "text-generation", "lambda"]
+
+[dependencies]
+markov = "1.0"
+egg-mode = "0.12"
+glob = "0.3"
+rand = "0.6"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+chrono = "0.4"
+tokio = "0.1"
+tokio-core = "0.1"
+futures = "0.1"
+log = "0.4"
+getopts = "0.2"
+simple_logger = "1.0.1"
+lambda_runtime = "0.2.0"
+simple-error = "0.1"

@@ -1,0 +1,14 @@
+[package]
+
+name = "http_headers"
+version = "0.0.2"
+description = "High performance parser of http headers. [Under development]"
+authors = ["Settler <settlersan@gmail.com>"]
+
+exclude = [".idea/*", "out/*", "*.iml"]
+
+[profile.test]
+opt-level = 3
+debug = false
+rpath = false
+lto = false

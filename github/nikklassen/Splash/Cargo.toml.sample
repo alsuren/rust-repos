@@ -1,0 +1,23 @@
+[package]
+
+license = "GPL-3.0"
+name = "splash"
+readme = "README"
+version = "0.0.1"
+
+links = "readline"
+
+[profile.dev]
+debug = true
+
+[profile.test]
+debug = true
+
+[dependencies]
+combine = "^3.3.2"
+getopts = "^0.2.4"
+lazy_static = "^0.2.8"
+libc = "0.2.22"
+nix = "^0.11.0"
+tempfile = "^2.1.5"
+bitflags = "^1.0.3"

@@ -1,0 +1,10 @@
+[package]
+name = "compression"
+version = "0.1.0"
+authors = ["Sayantan Khan <bolt.khan@gmail.com>"]
+
+[dependencies]
+image = "*"
+# nalgebra = "*"
+ndarray = "*"
+linxal = "*"

@@ -1,0 +1,61 @@
+[package]
+name = "tk-http"
+version = "0.3.9"
+description = """
+    A full-features asynchronous HTTP implementation for tokio-rs stack,
+    including websockets.
+"""
+authors = [
+    "Alexey Popravka <alexey.popravka@horsedevel.com>",
+    "Paul Colomiets <paul@colomiets.name>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["http", "websockets", "tokio"]
+categories = [
+    "asynchronous",
+    "network-programming",
+    "web-programming::http-client",
+    "web-programming::http-server",
+    "web-programming::websocket",
+    ]
+homepage = "https://github.com/swindon-rs/tk-http/"
+repository = "https://github.com/swindon-rs/tk-http/"
+documentation = "https://docs.rs/tk-http"
+
+[dependencies]
+
+futures = "0.1.13"
+httparse = "1.2.2"
+tokio-core = "0.1.12"
+tokio-io = "0.1.4"
+tk-bufstream = "0.3.0"
+netbuf = "0.4.0"
+quick-error = "1.2.1"
+matches = "0.1.4"
+log = "0.4.1"
+url = "1.4.0"
+sha1 = "0.4.0"
+byteorder = "1.2.1"
+rand = "0.4.2"
+tk-sendfile = { version="0.4.0", optional=true }
+httpdate = { version="0.3.0", optional=true }
+
+[features]
+# TODO(tailhook) remove "sendfile" feature on next major bump
+default = ["sendfile", "date_header"]
+sendfile = ["tk-sendfile"]
+date_header = ["httpdate"]
+
+[dev-dependencies]
+env_logger = "0.4.3"
+argparse = "0.2.1"
+futures-cpupool = "0.1.8"
+time = "0.1.39"
+tk-listen = "0.1.0"
+
+rustls = "0.12.0"
+tokio-rustls = "0.5.0"
+webpki = "0.18.0-alpha"
+
+native-tls = "0.1"
+tokio-tls = "0.1.4"

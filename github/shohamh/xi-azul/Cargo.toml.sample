@@ -1,0 +1,12 @@
+[package]
+name = "xi-azul"
+version = "0.1.0"
+authors = ["shohamh <shohamh@hotmail.com>"]
+edition = "2018"
+
+[dependencies]
+azul = { path = "azul" }
+xrl = { path = "xrl" }
+futures = "0.1.23"
+tokio = "0.1.7"
+crossbeam = "0.5"

@@ -1,0 +1,13 @@
+[package]
+name = "mandelbrot"
+version = "0.1.0"
+authors = ["Mateusz Dobek <mat.dobek@gmail.com>"]
+
+[features]
+default = []
+debug-stderr = []
+
+[dependencies]
+num = "0.1.27"
+gif = "0.10.0"
+crossbeam = "0.2.8"

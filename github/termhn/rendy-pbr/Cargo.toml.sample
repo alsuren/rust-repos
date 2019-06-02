@@ -1,0 +1,48 @@
+[package]
+name = "rendy-pbr"
+version = "0.1.0"
+authors = ["Gray Olson <gray@grayolson.com>"]
+edition = "2018"
+
+[profile.release]
+debug = true
+
+[profile.dev]
+opt-level = 1
+
+[features]
+default = ["rendy"]
+metal = ["rendy/metal"]
+dx12 = ["rendy/dx12"]
+vulkan = ["rendy/vulkan"]
+empty = ["rendy/empty"]
+rd = ["renderdoc"]
+
+[dependencies]
+genmesh = "0.6"
+nalgebra = "0.17"
+env_logger = "0.5"
+failure = "0.1"
+lazy_static = "1.0"
+image = "0.20.1"
+log = "0.4"
+palette = "0.4"
+rand = "0.6"
+derivative = "1.0"
+specs = "0.14"
+specs-hierarchy = "0.3"
+hibitset = "0.5"
+ron = "0.5"
+serde = "1.0"
+
+[dependencies.renderdoc]
+version = "0.4"
+optional = true
+
+[dependencies.gltf]
+version = "0.12"
+
+[dependencies.rendy]
+optional = true
+version = "0.2"
+features = ["texture-image", "shader-compiler"]

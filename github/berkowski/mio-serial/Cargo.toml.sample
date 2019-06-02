@@ -1,0 +1,36 @@
+[package]
+name = "mio-serial"
+version = "3.2.14"
+authors = ["Zac Berkowitz <zac.berkowitz@gmail.com>"]
+description = "A serial port implementation for mio"
+license = "MIT"
+homepage = "https://github.com/berkowski/mio-serial"
+repository = "https://github.com/berkowski/mio-serial"
+documentation = "http://docs.rs/mio-serial"
+readme = "README.md"
+keywords = ["rs232", "serial", "mio"]
+categories = ["asynchronous", "hardware-support"]
+
+[badges]
+appveyor = { repository = "berkowski/mio-serial", service = "github" }
+travis-ci = { repository = "berkowski/mio-serial", service = "github" }
+
+[features]
+default = ["libudev"]
+
+libudev = ["serialport/libudev"]
+
+[dependencies]
+mio = "^0.6"
+serialport = { version = "~3.2", default-features = false }
+
+[target.'cfg(unix)'.dependencies]
+nix = "^0.14"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["commapi", "handleapi", "winbase"] }
+mio-named-pipes = "0.1.5"
+
+[[example]]
+name = "serial_printline"
+path = "examples/serial_printline.rs"

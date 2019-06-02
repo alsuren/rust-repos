@@ -1,0 +1,15 @@
+[package]
+name = "walkie-talkie-pi"
+version = "0.1.0"
+authors = ["alex <ediacarium@github.com>"]
+
+[dependencies]
+bincode = "*"
+serde = "1.0"
+serde_derive = "1.0"
+log = "*"
+env_logger = "*"
+rand = "*"
+getopts = "*"
+alsa = "*"
+byteorder = "*"

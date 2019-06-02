@@ -1,0 +1,17 @@
+[dependencies]
+rand = "*"
+regex = "*"
+zip = "*"
+
+[package]
+name = "weirustqi"
+version = "0.1.0"
+authors = ["Eduardo ES Riccardi <ed+git@kukino.uk>"]
+
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1

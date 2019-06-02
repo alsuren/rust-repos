@@ -1,0 +1,13 @@
+[package]
+name = "backuper"
+version = "0.1.0"
+authors = ["João Paulo Pulga <joaopaulo1339@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+clap = "*"
+walkdir = "*"
+zip = "*"

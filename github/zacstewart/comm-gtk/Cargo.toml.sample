@@ -1,0 +1,22 @@
+[package]
+name = "comm-gtk"
+version = "0.1.0"
+authors = ["Zac Stewart <zgstewart@gmail.com>"]
+
+[dependencies.comm]
+#path = "../comm-rs"
+git = "https://github.com/zacstewart/comm.git"
+
+[dependencies]
+env_logger = "0.4.3"
+gdk = "0.7"
+gio = "0.3"
+glib = "0.4"
+log = "0.3.8"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"
+
+[dependencies.gtk]
+version = "0.3.0"
+features = ["v3_10"]

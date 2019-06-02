@@ -1,0 +1,19 @@
+[package]
+name = "hollow_heap"
+version = "0.1.0"
+authors = ["Alexander Popiak <alexander.popiak@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+generational-arena = "0.2.0"
+
+[dev-dependencies]
+proptest = "0.8.7"
+
+[[example]]
+name = "simple_examples"
+crate-type = ["bin"]
+
+[[example]]
+name = "dijkstra"
+crate-type = ["lib"]

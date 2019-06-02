@@ -1,0 +1,12 @@
+[package]
+name = "assembler"
+version = "0.1.0"
+authors = ["Keringar <git@keringar.xyz>"]
+
+[dependencies]
+cgmath = "0.14"
+gfx = "0.16"
+gfx_device_gl = "0.14"
+gfx_window_glutin = "0.16"
+glutin = "0.8"
+specs = "0.9"

@@ -1,0 +1,19 @@
+[package]
+name = "el"
+version = "0.1.0"
+authors = ["Michael Hoy <mjh@mjhoy.com>"]
+
+[[bin]]
+doc = false
+name = "el"
+
+[dependencies]
+log    = "0.3.6"
+
+[dependencies.log4rs]
+version = "0.4.8"
+features = ["yaml"]
+
+[dependencies.ncurses]
+git = "https://github.com/mjhoy/ncurses-static-rs"
+features = ["wide"]

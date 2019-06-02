@@ -1,0 +1,17 @@
+[package]
+name = "rustdemux_plugin"
+version = "0.1.0"
+authors = ["Geoffroy Couprie <geo.couprie@gmail.com>", "Guillaume Gomez <guillaume1.gomez@gmail.com>"]
+build = "build.rs"
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "^0.2.0"
+nom  = "^2.0.0"
+vlc_module = { git = "https://github.com/Geal/vlc_module.rs.git" }
+va_list-rs = { git = "https://github.com/GuillaumeGomez/va_list-rs" }
+
+[dependencies.flavors]
+git = "https://github.com/Geal/flavors"

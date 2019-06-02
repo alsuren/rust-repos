@@ -1,0 +1,9 @@
+[package]
+name = "rustscripts"
+version = "0.2.0"
+authors = [ "wackywendell@gmail.com" ]
+
+[dependencies]
+rand = "*"
+unicode-segmentation = "*"
+getopts = "*"

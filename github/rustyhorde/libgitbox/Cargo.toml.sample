@@ -1,0 +1,30 @@
+[package]
+name = "libgitbox"
+version = "0.1.1-pre"
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "git-box library"
+documentation = "http://rustyhorde.github.io/git-box"
+homepage = "http://rustyhorde.github.io/git-box"
+repository = "https://github.com/rustyhorde/git-box"
+readme = "README.md"
+license = "MIT"
+keywords = ["git-box","libgitbox"]
+build = "build.rs"
+
+[features]
+default = ["all"]
+all = ["file", "ssh2", "artifactory"]
+artifactory  = ["curl"]
+file = []
+nightly = ["clippy"]
+
+[build-dependencies]
+vergen = "~0.1.0"
+
+[dependencies]
+clippy = { version = "~0.0.30", optional = true }
+curl = { version = "~0.2.16", optional = true }
+log = "~0.3.5"
+rustc-serialize = "~0.3.16"
+sha1 = "~0.1.1"
+ssh2 = { version = "~0.2.10", optional = true }

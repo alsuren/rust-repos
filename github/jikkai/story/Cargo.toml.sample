@@ -1,0 +1,15 @@
+[package]
+name = "story"
+version = "0.0.1"
+
+[dependencies]
+toml = "*"
+iron = "*"
+router = "*"
+mount = "*"
+staticfile = "*"
+rustc-serialize = "*"
+handlebars-iron = "*"
+hoedown = "*"
+url = "*"
+regex = "*"

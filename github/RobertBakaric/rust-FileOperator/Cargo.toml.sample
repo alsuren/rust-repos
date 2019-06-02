@@ -1,0 +1,14 @@
+[package]
+name = "fo"
+version = "0.1.0"
+authors = ["robert <rbakaric@exaltum.eu>"]
+edition = "2018"
+
+
+[workspace]
+
+[dependencies]
+clap = "*"
+regex = "*"
+folib = { path = "folib" }
+

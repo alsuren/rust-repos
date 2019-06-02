@@ -1,0 +1,19 @@
+[package]
+name = "fplist"
+version = "0.1.2"
+authors = ["acdenisSK <acdenissk69@gmail.com>"]
+edition = "2018"
+description = "An immutable persistent singly-linked list"
+repository = "https://github.com/acdenisSK/plist"
+license = "MIT"
+
+[dev-dependencies]
+serde_json = "^1.0"
+
+[dependencies.serde]
+version = "^1.0"
+optional = true
+
+[features]
+multithreaded = []
+serde_impls = ["serde"]

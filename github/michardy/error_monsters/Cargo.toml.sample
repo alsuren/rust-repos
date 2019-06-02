@@ -1,0 +1,7 @@
+[package]
+name = "error-monsters"
+version = "0.1.0"
+authors = ["Michael Hardy <98.michael.hardy@gmail.com>"]
+
+[dependencies]
+error_monsters_404 = { path = "error_monsters_404" }

@@ -1,0 +1,10 @@
+[package]
+name = "nestle"
+version = "0.1.0"
+authors = ["Jenn Wheeler <jwheelerac@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1.2.7"
+clap = "2.32.0"
+sdl2 = "0.31.0"

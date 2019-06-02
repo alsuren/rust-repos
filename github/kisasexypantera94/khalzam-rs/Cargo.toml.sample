@@ -1,0 +1,23 @@
+[package]
+name = "khalzam"
+version = "0.3.7"
+authors = ["kisasexypantera94 <green.grinya@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Simple audio recognition library, port of khalzam-go"
+repository = "https://github.com/kisasexypantera94/khalzam-rs"
+readme = "README.md"
+exclude = ["assets/**"]
+categories = ["multimedia", "multimedia::audio"]
+keywords = ["audio", "recognition", "shazam"]
+
+[dependencies]
+postgres = "0.15"
+minimp3 = "0.3.2"
+rustfft = "3.0.0"
+hashbrown = "0.1"
+
+[dev-dependencies]
+tokio = "0.1.17"
+futures = "0.1.25"
+tokio-threadpool = "0.1.12"

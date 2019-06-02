@@ -1,0 +1,7 @@
+[package]
+name = "sa"
+version = "0.1.0"
+authors = ["Mike Krinkin <krinkin@google.com>"]
+
+[dependencies]
+sparse_table = { git = "https://github.com/krinkinmu/rust-sparse-table.git" }

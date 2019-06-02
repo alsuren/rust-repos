@@ -1,0 +1,20 @@
+[package]
+name = "genv"
+version = "0.1.0"
+authors = ["Brian Steffens <briansteffens@gmail.com>"]
+
+[[bin]]
+name = "genv"
+path = "src/genv.rs"
+
+[[bin]]
+name = "genv-server"
+path = "src/genv-server.rs"
+
+[dependencies]
+iron = "*"
+persistent = "*"
+urlencoded = "*"
+serde = "*"
+serde_json = "*"
+hyper = "0.8"

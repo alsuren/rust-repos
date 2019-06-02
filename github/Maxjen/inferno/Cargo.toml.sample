@@ -1,0 +1,9 @@
+[package]
+name = "inferno"
+version = "0.1.0"
+authors = ["Max Jensen <maxjen@gmail.com>"]
+
+[dependencies]
+glium = "*"
+image = "*"
+rusttype = "0.1"

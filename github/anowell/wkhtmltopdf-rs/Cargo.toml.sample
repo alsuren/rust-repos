@@ -1,0 +1,22 @@
+[package]
+name = "wkhtmltopdf"
+version = "0.3.0"
+license = "MIT"
+authors = ["Anthony Nowell <anowell@gmail.com>"]
+
+description = "High-level bindings to wkhtmltopdf"
+documentation = "https://anowell.github.io/wkhtmltopdf-rs/wkhtmltopdf/"
+repository = "https://github.com/anowell/wkhtmltopdf-rs"
+readme = "README.md"
+keywords = ["wkhtmltox", "wkhtmltopdf", "wkhtmltoimage", "pdf", "html"]
+
+[dependencies]
+wkhtmltox-sys = "0.1.0"
+url = "1.1.1"
+lazy_static = "0.2.1"
+log = "0.3"
+quick-error = "1.1.0"
+thread-id = "2.0.0"
+
+[dev-dependencies]
+env_logger = "0.3"

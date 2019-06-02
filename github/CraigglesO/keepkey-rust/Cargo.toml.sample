@@ -1,0 +1,12 @@
+[package]
+name = "keepkey"
+version = "0.1.0"
+authors = ["Craig OConnor <oconnorct1@gmail.com>"]
+
+[dependencies]
+log = "0.3"
+parking_lot = "0.4"
+quick-protobuf = "0.4.0"
+byteorder = "1.1.0"
+hidapi = { git = "https://github.com/paritytech/hidapi-rs" }
+libusb = { git = "https://github.com/paritytech/libusb-rs" }

@@ -1,0 +1,13 @@
+[package]
+name = "mxnet-rs"
+version = "0.1.0"
+authors = ["SunDoge <384813529@qq.com>"]
+edition = "2018"
+
+[dependencies]
+mxnet-sys = { path="mxnet-sys" }
+ndarray = "0.12"
+enum-str-derive = { git = "https://github.com/SunDoge/rust-enum-str-derive", branch = "dev" }
+
+[dev-dependencies]
+codegen = { git="https://github.com/SunDoge/codegen.git", branch = "function" }

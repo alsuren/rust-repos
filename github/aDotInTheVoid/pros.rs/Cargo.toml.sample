@@ -1,0 +1,30 @@
+[package]
+name = "pros_rs"
+version = "0.1.0"
+authors = ["Nixon <nixon.emoony@gmail.com>"]
+edition = "2018"
+license = "MPL-2.0"
+
+[dependencies]
+cortex_a9_types = {path="./cortex_a9_types"}
+
+[build-dependencies]
+#pros_bindgen = "0.2.0"
+bindgen = "0.49.0"
+cbindgen = "0.8.3"
+
+
+[workspace]
+members = [
+    "cortex_a9_types"
+]
+
+[dev-dependencies]
+libc = "0.2"
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.release]
+opt-level = 's'
+lto = true

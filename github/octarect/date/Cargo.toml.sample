@@ -1,0 +1,8 @@
+[package]
+name = "rust_date"
+version = "0.1.0"
+authors = ["rk0der <ryo.alter@gmail.com>"]
+
+[dependencies]
+chrono = "0.3.0"
+getopts = "0.2.4"

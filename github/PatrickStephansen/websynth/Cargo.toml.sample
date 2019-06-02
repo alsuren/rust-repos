@@ -1,0 +1,12 @@
+[package]
+name = "websynth"
+version = "0.1.0"
+authors = ["Patrick Stephansen <pstephansen89@gmail.com>"]
+
+[dependencies]
+rand = "0.5"
+wasm-bindgen = "0.2.15"
+console_error_panic_hook = "0.1.3"
+
+[lib]
+crate-type = ["cdylib"]

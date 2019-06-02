@@ -1,0 +1,14 @@
+[package]
+name = "pathtr"
+version = "0.1.0"
+authors = ["Jonathan Karlsson <karlsjona@gmail.com>"]
+
+[dependencies]
+image = "*"
+rand = "*"
+rand_xorshift = "*"
+cpuprofiler = "*"
+time = "*"
+sdl2 = "*"
+threadpool = "*"
+

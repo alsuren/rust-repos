@@ -1,0 +1,14 @@
+[package]
+name = "grm"
+version = "0.3.0"
+authors = ["Julian Didier (theredfish) <did.julian@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+glob = "0.2.11"
+diesel = { version = "1.3.3", features = ["sqlite"] }
+diesel_migrations = {version = "1.3.0", features = ["sqlite"]}
+dotenv = "0.13.0"
+libsqlite3-sys = { version = ">=0.8.0, <0.11.0", features = ["min_sqlite_version_3_7_16", "bundled"] }
+dunce = "0.1.1"
+clap = "2.32.0"

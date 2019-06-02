@@ -1,0 +1,20 @@
+[package]
+name = "subotai"
+version = "1.0.4-pre"
+authors = ["PabloMansanet <pablomansanet@gmail.com>"]
+description = "Kademlia based DHT"
+repository = "https://github.com/PabloMansanet/subotai"
+readme = "README.md"
+keywords = ["kademlia", "DHT", "p2p", "kad", "network"]
+documentation = "https://PabloMansanet.github.io/subotai/subotai"
+license = "MIT"
+
+[dependencies]
+itertools = "0.*.*"
+rand = "0.*.*"
+bincode = "0.*.*"
+serde = "0.*.*"
+serde_macros = "0.*.*"
+bus = "1.*.*"
+time = "0.*.*"
+sha1 = "0.*.*"

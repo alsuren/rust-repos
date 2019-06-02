@@ -1,0 +1,7 @@
+[package]
+name = "rust-demangle"
+version = "0.1.0"
+authors = ["Vancir <vancirprince@gmail.com>"]
+
+[dependencies]
+cpp_demangle = "0.2.12"

@@ -1,0 +1,12 @@
+[package]
+name = "shroom"
+version = "0.1.0"
+authors = ["Ben Brittain <ben@brittain.org>"]
+build = "./build.rs"
+
+[lib]
+name = "shroom"
+crate-type = ["staticlib"]
+
+[dependencies]
+sel4-sys = { path="/home/ben/workspace/rust-sel4", branch="master", features = ["SEL4_DEBUG"] }

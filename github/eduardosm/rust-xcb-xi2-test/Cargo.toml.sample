@@ -1,0 +1,20 @@
+[package]
+name = "rust-xcb-xi2-test"
+version = "0.1.0"
+authors = ["Eduardo Sánchez Muñoz <esm@eduardosm.net>"]
+
+[[bin]]
+name = "xi2-test"
+path = "src/xi2-test.rs"
+
+[[bin]]
+name = "xi2-test-2"
+path = "src/xi2-test-2.rs"
+
+[dependencies.xcb]
+"version" = "0.7.6"
+"features" = ["xinput"]
+
+[replace."xcb:0.7.6"]
+git = "https://github.com/eduardosm/rust-xcb.git"
+branch = "xinput-improvements"

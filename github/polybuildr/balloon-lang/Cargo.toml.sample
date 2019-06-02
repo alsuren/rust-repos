@@ -1,0 +1,27 @@
+[package]
+name = "balloon"
+version = "0.1.0"
+authors = [
+  "Vivek Ghaisas <v.a.ghaisas@gmail.com>",
+  "Siddharth Bhat <siddu.druid@gmail.com>" # LLVM JITing
+]
+build = "build.rs"
+
+[build-dependencies]
+peg = { version = "0.5" }
+
+[features]
+cargo-clippy = []
+file-tests = []
+llvm-backend = ["llvm-sys", "libc", "itertools"]
+
+[dependencies]
+ansi_term = "0.9.0"
+rustyline = "1.0.0"
+fnv = "1.0.5"
+linear-map = "1.1.0"
+hyper = "0.10"
+llvm-sys = {version = "40.0.0", optional = true}
+itertools = {version = "0.6.0", optional = true}
+libc = {version = "0.2", optional = true}
+clippy = {version = "*", optional = true}

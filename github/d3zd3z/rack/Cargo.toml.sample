@@ -1,0 +1,50 @@
+[package]
+authors = ["David Brown <david.brown@linaro.org>"]
+categories = [
+    "filesystem",
+    "command-line-utilities",
+]
+description = "Utilities for various snapshot and cloning operations in ZFS"
+keywords = [
+    "system",
+    "backup",
+    "zfs",
+]
+license = "MIT"
+name = "rack"
+publish = false
+readme = "README.md"
+repository = "https://github.com/d3zd3z/rack"
+version = "0.1.0"
+edition = "2018"
+
+[[bin]]
+doc = false
+name = "rack"
+test = false
+
+[dependencies]
+chrono = "0.4"
+dirs = "1.0"
+failure = "0.1.3"
+failure_derive = "0.1.3"
+regex = "1.0"
+structopt = "0.2.13"
+structopt-derive = "0.2.13"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"
+serde_json = "1.0.38"
+
+[dependencies.clippy]
+optional = true
+version = "0.0.146"
+
+[dependencies.rsure]
+path = "../../wd/rsure"
+
+[features]
+default = []
+
+[lib]
+name = "rack"

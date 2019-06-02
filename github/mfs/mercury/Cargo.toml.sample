@@ -1,0 +1,11 @@
+[package]
+name = "mercury"
+version = "0.1.0"
+authors = ["Mike Sampson <mike@sambodata.com>"]
+
+[dependencies]
+piston_window = "*"
+gfx_device_gl ="0.8.2"
+gfx = "*"
+piston2d-gfx_graphics = "*"
+cfor="*"

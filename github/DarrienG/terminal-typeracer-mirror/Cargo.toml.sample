@@ -1,0 +1,34 @@
+[package]
+name = "typeracer"
+version = "1.0.5"
+authors = ["DarrienG <darrienglasser@outlook.com>"]
+edition = "2018"
+# Packaging for crates.io
+# We don't want assets included and the like
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
+
+[dependencies]
+# For rendering in the terminal
+# Build at HEAD until clone is put into a release
+tui = { git = "https://github.com/fdehau/tui-rs.git" }
+termion = "1.5"
+unicode-width = "0.1.5"
+
+# For storing lang pack
+directories = "1.0"
+
+# For downloading lang pack
+reqwest = "0.9.17"
+
+# For deflating lang pack
+flate2 = "1.0"
+tar = "0.4.26"
+
+# For picking random files
+rand = "0.6.5"
+
+# Command line optoins
+clap = "2.33.0"

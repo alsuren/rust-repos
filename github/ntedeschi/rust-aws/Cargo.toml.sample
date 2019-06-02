@@ -1,0 +1,8 @@
+[package]
+name = "rust-aws"
+version = "0.1.0"
+authors = ["anatta"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.1"

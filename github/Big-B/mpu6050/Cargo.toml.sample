@@ -1,0 +1,18 @@
+[package]
+name = "mpu6050"
+version = "0.1.0"
+authors = ["Brandon Mittman <BrandonMittman@gmail.com>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+description = "A platform agnostic driver to interface with the MPU6050 6-Axis accelerometer and gyroscope via I2C"
+readme = "README.md"
+keywords = ["mpu6050", "embedded-hal-driver", "accelerometer", "gyroscope"]
+
+[dependencies]
+embedded-hal = "*"
+generic-array = "*"
+bitfield = "*"
+libm = "*"
+
+[dev-dependencies]
+linux-embedded-hal = "*"

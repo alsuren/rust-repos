@@ -1,0 +1,8 @@
+[package]
+name = "snake"
+version = "0.1.0"
+authors = ["jmjoy"]
+
+[dependencies]
+rustbox = "*"
+rand = "0.3"

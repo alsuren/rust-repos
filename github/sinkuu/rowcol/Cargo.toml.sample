@@ -1,0 +1,23 @@
+[package]
+name = "rowcol"
+description = "Simple fixed-size vectors/matrices, allocated on the stack"
+version = "0.3.3"
+authors = ["sinkuu <sinkuupump@gmail.com>"]
+license = "MIT/Apache-2.0"
+documentation = "https://docs.rs/rowcol/"
+readme = "README.md"
+repository = "https://github.com/sinkuu/rowcol"
+keywords = ["matrix", "array", "stack"]
+
+[dependencies]
+typenum = "1.5.0"
+num = "0.1.36"
+unicode-width = { version = "0.1.3", optional = true }
+approx = { version = "0.1.1" }
+nodrop = { version = "0.1.8", default-features = false }
+
+[features]
+default = ["std", "unicode_width"]
+std = ["nodrop/std"]
+use_needs_drop = ["nodrop/use_needs_drop"]
+unicode_width = ["unicode-width"]

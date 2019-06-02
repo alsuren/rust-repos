@@ -1,0 +1,23 @@
+[package]
+name = "patricia-trie"
+version = "0.1.1"
+authors = ["Parity Technologies <admin@parity.io>"]
+description = "Merkle-Patricia Trie (Ethereum Style)"
+repository = "https://github.com/paritytech/patricia-trie"
+license = "GPL-3.0"
+
+[dependencies]
+elastic-array = "0.10"
+log = "0.3"
+rand = "0.4"
+ethereum-types = "0.3"
+ethcore-bytes = "0.1.1"
+keccak-hash = "0.1.1"
+hashdb = "0.1.2"
+rlp = "0.2.2"
+triehash = "0.1.2"
+memorydb = "0.1.1"
+ethcore-logger = "1.12.0"
+
+[dev-dependencies]
+trie-standardmap = "0.1.0"

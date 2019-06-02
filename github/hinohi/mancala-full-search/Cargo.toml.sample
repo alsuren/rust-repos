@@ -1,0 +1,8 @@
+[package]
+name = "mancala-full-search"
+version = "0.1.0"
+authors = ["Daiju Nakayama <42.daiju@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+getopts = "*"

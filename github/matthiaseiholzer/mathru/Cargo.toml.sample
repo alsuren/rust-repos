@@ -1,0 +1,58 @@
+[package]
+name = "mathru"
+version = "0.1.4"
+description = "Simple mathematics library written in Rust"
+authors = ["Matthias Eiholzer <matthias.eiholzer@gmail.com>"]
+exclude = ["literature/*", "tests/*", "backup/*", ".gitignore"]
+keywords = ["math", "linear", "algebra", "matrix", "vector"]
+categories = ["science", "algorithms", "data-structures"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/matthiaseiholzer/mathru"
+autobenches = false
+edition = "2018"
+
+[lib]
+name = "mathru"
+path = "src/lib.rs"
+
+[features]
+#default = ["native"]
+default = ["blaslapack"]
+blaslapack = ["lapack", "blas", "lapack-src", "blas-src"]
+native = []
+
+[dependencies]
+
+rand = "0.6"
+
+[dependencies.serde]
+version =  "1.0"
+features = ["derive"]
+
+[dependencies.lapack]
+version = "0.16"
+optional = true
+
+[dependencies.blas]
+version = "0.20"
+optional = true
+
+[dependencies.blas-src]
+version = "0.2"
+features = ["openblas"]
+optional = true
+
+[dependencies.lapack-src]
+version = "0.2"
+features = ["openblas"]
+optional = true
+
+[dev-dependencies]
+serde_json = "1.0"
+criterion = "0.2"
+
+[[bench]]
+name = "benchmark"
+path = "benches/lib.rs"
+harness = false

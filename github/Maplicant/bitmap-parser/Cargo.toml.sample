@@ -1,0 +1,8 @@
+[package]
+name = "redditPlaceHeatmap"
+version = "0.1.0"
+authors = ["Maurits van Altvorst <mvanaltvorst@icloud.com>"]
+
+[dependencies]
+ws = "*"
+image = "*"

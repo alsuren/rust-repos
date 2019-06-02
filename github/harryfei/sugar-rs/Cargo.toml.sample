@@ -1,0 +1,15 @@
+[package]
+authors = ["fangyuanziti <tiziyuanfang@gmail.com>"]
+name = "sugar"
+version = "0.2.0"
+repository = "https://github.com/fangyuanziti/sugar-rs.git"
+documentation = "https://docs.rs/sugar/"
+license = "MIT"
+description= "Rust syntax sugar collections."
+readme = "README.md"
+categories = ["rust-patterns"]
+
+[dependencies]
+maplit = "1.0.1"
+vec_box = "1.0.0"
+min_max_macros = "0.1.1"

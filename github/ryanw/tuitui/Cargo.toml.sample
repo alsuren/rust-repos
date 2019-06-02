@@ -1,0 +1,22 @@
+[package]
+name = "tuitui"
+version = "0.1.0"
+authors = ["Ryan Williams <ryan@ryanwillia.ms>"]
+license = "MIT"
+repository = "https://github.com/ryanwilliams/tuitui"
+
+[lib]
+name = "tuitui"
+
+[dependencies]
+termion = { optional = true, version = "~1.5.1" }
+log = "~0.4.6"
+downcast-rs = "~1.0.3"
+
+[profile.release]
+lto = true
+#panic = 'abort'
+
+[features]
+default = ["termion"]
+gui = []

@@ -1,0 +1,10 @@
+[package]
+name = "gl_test"
+version = "0.1.0"
+authors = ["TheZoq2 <frans.skarman@gmail.com>"]
+
+include = ["data/shaders/*"]
+
+[dependencies]
+glium = "*"
+nalgebra = "*"

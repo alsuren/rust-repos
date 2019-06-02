@@ -1,0 +1,10 @@
+[package]
+name = "rust_c-abi_library_template"
+version = "0.1.0"
+description = "A template for building C-ABI Rust libraries to be called from other languages."
+authors = ["Sean Bolton <sean@smbolton.com>"]
+license = "MIT"
+
+[lib]
+#path = "src/my_lib_name.rs"
+crate-type = ["cdylib"]

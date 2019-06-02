@@ -1,0 +1,30 @@
+[package]
+name = "ludum_dare_40"
+version = "0.1.0"
+authors = ["zack <zwparchman@gmail.com>"]
+
+[dependencies]
+libc = "*"
+lazy_static = "*"
+cached = "0.4.1"
+nalgebra = "0.13.1"
+hibitset = "*"
+synth = "*"
+log = "0.4"
+pretty_env_logger = "*"
+derive_builder = "*"
+rlua = "*"
+smart-default = "0.2.0"
+
+rlua-table-derive = { git = "https://github.com/zwparchman/rlua-table-derive" }
+
+quickersort = "3.0"
+rand = "0.3"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+debug = true
+# lto = true

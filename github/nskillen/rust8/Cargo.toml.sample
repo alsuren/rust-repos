@@ -1,0 +1,8 @@
+[package]
+name = "rust-8"
+version = "0.1.0"
+authors = ["Nathan Skillen <nskillen@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+sdl2 = "0.13"

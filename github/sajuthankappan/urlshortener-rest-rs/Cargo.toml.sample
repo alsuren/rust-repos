@@ -1,0 +1,19 @@
+[package]
+name = "urlshortener_rest"
+version = "0.1.2"
+authors = ["Saju Thankappan <sajuthankappan@gmail.com>"]
+description = "Urlshortener rest"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/sajuthankappan/urlshortener-rest-rs"
+
+[dependencies]
+iron = "*"
+router = "*"
+hyper = "*"
+unicase = "*"
+mount = "*"
+bodyparser = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+urlshortener = { git = "https://github.com/sajuthankappan/urlshortener-rs" }

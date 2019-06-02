@@ -1,0 +1,15 @@
+[package]
+name = "hjq"
+version = "0.1.0"
+authors = ["Ryan P. Brewster <RyanPBrewster@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+serde_json = "1.0"
+structopt = "0.2"
+rocksdb = "0.12.1"
+
+[[bin]]
+name = "hjq"
+path = "./src/bin/main.rs"

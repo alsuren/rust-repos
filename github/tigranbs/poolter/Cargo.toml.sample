@@ -1,0 +1,14 @@
+[package]
+name = "poolter"
+description = """
+    Thread Pool implementation for Rust using JavaScript Promise like functional syntax
+"""
+license = "MIT"
+version = "0.1.0"
+authors = ["Tigran Bayburtsyan <tigran@bayburtsyan.com>"]
+keywords = ["thread-pool", "thread", "concurrency"]
+documentation = "https://github.com/tigranbs/poolter"
+homepage = "https://github.com/tigranbs/poolter"
+
+[dependencies]
+num_cpus = "1.0"

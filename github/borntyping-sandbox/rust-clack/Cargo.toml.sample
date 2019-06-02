@@ -1,0 +1,12 @@
+[package]
+name = "clack"
+version = "0.0.1"
+authors = ["Sam Clements <sam@borntyping.co.uk>"]
+
+[[bin]]
+name = "clack"
+path = "src/main.rs"
+
+[dependencies]
+rustc-serialize = "0.2.7"
+getopts = "0.1.4"

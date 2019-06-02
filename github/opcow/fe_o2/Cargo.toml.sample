@@ -1,0 +1,11 @@
+
+[package]
+edition = '2018'
+name = "fe_o2"
+version = "0.1.0"
+authors = ["<mitch.crane@gmail.com>"]
+
+[dependencies]
+clap = "2.32.0"
+ascii = "0.9.1"
+termcolor ="1.0.4"

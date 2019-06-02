@@ -1,0 +1,39 @@
+[package]
+name = "pem-iterator"
+version = "0.2.0"
+authors = ["Popog"]
+description = "Iterate over PEM-encoded data"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/Popog/pem-iterator"
+readme = "README.md"
+documentation = "https://docs.rs/pem-iterator/"
+keywords = ["pem", "decode", "parser", "iterator", "crypto"]
+categories = ["cryptography", "no-std", "encoding"]
+
+[dependencies]
+
+[features]
+default = ["std"]
+std = []
+generators = []
+
+
+[dev-dependencies]
+pem = "0.4"
+rand = "0.3"
+
+
+[[example]]
+name = "std-chunked-ignore"
+required-features = ["std"]
+
+[[example]]
+name = "std-chunked-known"
+required-features = ["std"]
+
+[[example]]
+name = "std-chunked-unknown"
+required-features = ["std"]
+
+[[example]]
+name = "single-mismatch"

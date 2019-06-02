@@ -1,0 +1,17 @@
+[package]
+name = "simple-compiler"
+version = "0.1.0"
+authors = ["Mario Nachbaur <mario.nachbaur@outlook.com>"]
+
+description = "Very simple lexer, parser and compiler"
+keywords = ["lexer", "parser", "compiler", "transpiler", "toy language"]
+readme = "README.md"
+
+repository = "https://github.com/marionauta/simple-compiler"
+license = "MIT"
+
+[lib]
+name = "simcom"
+
+[profile.release]
+lto = true

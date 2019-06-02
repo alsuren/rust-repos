@@ -1,0 +1,25 @@
+[package]
+name = "peel-ip"
+version = "0.2.0"
+license = "MIT"
+readme = "README.md"
+keywords = ["packets", "ip", "tree", "parser", "tcp"]
+authors = ["Sascha Grunert <mail@saschagrunert.de>"]
+repository = "https://github.com/saschagrunert/peel-ip"
+homepage = "https://github.com/saschagrunert/peel-ip"
+documentation = "https://docs.rs/peel-ip"
+description = "Packet parsing for the Internet Protocol Suite"
+categories = ["parsing"]
+
+[badges]
+travis-ci = { repository = "saschagrunert/peel-ip", branch = "master" }
+appveyor = { repository = "saschagrunert/peel-ip", branch = "master", service = "github" }
+
+[dependencies]
+log = "0"
+peel = "0"
+nom = {version = "2", features = ["verbose-errors"]}
+path = "0"
+
+[dev-dependencies]
+time = "0"

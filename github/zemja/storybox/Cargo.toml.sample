@@ -1,0 +1,13 @@
+[package]
+name = "storybox"
+version = "0.0.0"
+authors = ["Ethan Ansell <mail@zemja.org>"]
+
+[dependencies]
+term = "0.5.1"
+isatty = "0.1.6"
+lazy_static = "1.0.0"
+maplit = "1.0.1"
+regex = "0.2.10"
+bigdecimal = "0.0.11"
+num-bigint = "0.1.43"

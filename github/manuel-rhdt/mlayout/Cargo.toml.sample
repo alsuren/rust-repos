@@ -1,0 +1,26 @@
+[package]
+name = "math-render"
+version = "0.1.0"
+authors = ["Manuel Reinhardt <manuel.jr16@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+quick-xml = "0.4"
+#harfbuzz-sys = "0.1.5"
+harfbuzz-sys = { git = "https://github.com/manuel-rhdt/rust-harfbuzz.git" }
+harfbuzz_rs = { git = "https://github.com/manuel-rhdt/harfbuzz_rs.git" }
+bitflags = "0.7"
+vec_map = "0.7.*"
+
+[dev-dependencies]
+image = "*"
+svg = "0.5.1"
+freetype-rs = "0.11.0"
+
+[build-dependencies]
+rustc-serialize = "0.3"
+
+[features]
+default = ["mathml_parser"]
+
+mathml_parser = []

@@ -1,0 +1,11 @@
+[package]
+name = "shiny"
+version = "1.0.0"
+authors = ["Aleksey Fedotov <0xc0dec@gmail.com>"]
+
+[dependencies]
+vulkano = "0.10"
+vulkano-win = "0.10"
+vulkano-shader-derive = "0.10"
+winit = "0.17"
+nalgebra-glm = "0.1"

@@ -1,0 +1,12 @@
+[package]
+name = "easy-miner"
+version = "0.1.0"
+authors = ["Max Reitz <xanclic@xanclic.moe>"]
+
+[dependencies]
+gdk-pixbuf = "0.4.0"
+rand = "0.4"
+
+[dependencies.gtk]
+version = "0.4.0"
+features = ["v3_10"]

@@ -1,0 +1,14 @@
+[package]
+authors = ["MaidSafe Developers <dev@maidsafe.net>"]
+description = "Serialisable SocketAddr"
+documentation = "http://docs.maidsafe.net/socket_addr/latest"
+homepage = "http://maidsafe.net"
+license = "GPL-3.0/MaidSafe.net Commercial License 1.0"
+name = "socket_addr"
+readme = "README.md"
+repository = "https://github.com/maidsafe/socket_addr"
+version = "0.1.0"
+
+[dependencies]
+clippy = {version = "~0.0.45", optional = true}
+rustc-serialize = "~0.3.18"

@@ -1,0 +1,27 @@
+[project]
+
+name = "declmagic"
+version = "0.0.1"
+authors = ["Pierre Krieger <pierre.krieger1708@gmail.com>"]
+tags = []
+
+[[lib]]
+name = "declmagic"
+
+[dependencies.rust-hl-lua]
+git = "https://github.com/tomaka/rust-hl-lua"
+
+[dependencies.nphysics]
+git = "https://github.com/sebcrozet/nphysics"
+
+[dependencies.gl]
+path = "deps/gl"
+
+[dependencies.stb_image]
+path = "deps/stb-image"
+
+#[dependencies.glfw]
+#git = "https://github.com/bjz/glfw-rs"
+
+#[dependencies.ears]
+#git = "https://github.com/jeremyletang/ears"

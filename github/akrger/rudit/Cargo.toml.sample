@@ -1,0 +1,8 @@
+[package]
+name = "rudit"
+version = "0.1.0"
+authors = ["André Krüger <zeldamer@t-online.de>"]
+
+[dependencies]
+termion = "*"
+gapbuffer = { path = "gapbuffer" }

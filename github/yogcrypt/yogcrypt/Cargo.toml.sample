@@ -1,0 +1,28 @@
+[package]
+name = "yogcrypt"
+version = "0.1.0"
+authors = ["The YogCrypt Project Contributors"]
+readme = "README.md"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/yogcrypt/yogcrypt"
+categories = ["cryptography"]
+keywords = ["cryptography", "sm2", "sm3", "sm4"]
+description = "A high-performance, general purpose crypto library in pure Rust"
+exclude = [
+    ".gitignore",
+    ".travis.yml",
+]
+
+[badges]
+travis-ci = { repository = "yogcrypt/yogcrypt", branch = "master" }
+
+[dependencies]
+rand = "0.5.4"
+lazy_static = "1.0.2"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "yogcrypt_benchmarks"
+harness = false

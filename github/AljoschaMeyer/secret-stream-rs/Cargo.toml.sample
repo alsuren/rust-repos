@@ -1,0 +1,15 @@
+[package]
+name = "secret_stream"
+version = "0.3.0"
+authors = ["AljoschaMeyer <mail@aljoscha-meyer.de>"]
+description = "Convenient combination of secret-handshake and box-stream."
+repository = "https://github.com/AljoschaMeyer/secret-stream-rs"
+readme = "README.md"
+license = "AGPL-3.0"
+
+[dependencies]
+futures-core = "0.2.0-alpha"
+futures-io = "0.2.0-alpha"
+sodiumoxide = "0.0.16"
+secret_handshake = "5.0.0"
+box_stream = "0.5.0"

@@ -1,0 +1,9 @@
+[package]
+
+name = "subbuster"
+version = "0.7.3"
+authors = ["Charles Hubain <github@haxelion.eu>"]
+
+[profile.release]
+opt-level = 3
+debug = false

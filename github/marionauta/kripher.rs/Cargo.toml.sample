@@ -1,0 +1,26 @@
+[package]
+name = "kripher"
+version = "1.0.0"
+authors = ["Mario Nachbaur <mario.nachbaur@outlook.com>"]
+
+description = "File encoder based on an own algorithm."
+keywords = ["encode", "decode"]
+readme = "README.md"
+
+repository = "https://github.com/marionauta/kripher.rs"
+license = "MIT"
+
+exclude = ["man/*", ".travis.yml", ".gitignore"]
+
+[lib]
+name = "kripher"
+
+[[bin]]
+name = "kripher"
+doc = false
+
+[dependencies.easio]
+git = "https://github.com/marionauta/easio"
+
+[profile.release]
+lto = true

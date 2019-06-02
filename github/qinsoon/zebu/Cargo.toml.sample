@@ -1,0 +1,58 @@
+# Copyright 2017 The Australian National University
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#     http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+ 
+[package]
+name = "mu"
+version = "0.0.1"
+authors = [ "Your name <you@example.com>" ]
+build = "build.rs"
+
+[lib]
+crate-type = ["staticlib", "rlib", "dylib"]
+doctest = false
+
+[features]
+default = ["aot"]
+aot = []
+jit = []
+
+[build-dependencies]
+cc = "*"
+built = "*"
+
+[dependencies]
+mu_ast = {path = "src/ast"}
+mu_utils = {path = "src/utils"}
+rodal = { git = "https://gitlab.anu.edu.au/mu/rodal", branch = "rust-1.30.1", version = "^0.3.18" }
+
+libc="*"
+field-offset = "*"
+libloading = "*"
+lazy_static = "0.2.11"
+log = "0.3.8"
+stderrlog = "0.2.3"
+num = "*"
+hprof = "*"
+memmap = "*"
+memsec = "0.1.9"
+serde = "*"
+serde_derive = "*"
+time = "*"
+maplit = "*"
+docopt = "0.8.1"
+petgraph = "*"
+extprim = "*"
+num-traits = "*"
+built = "*"
+mu_gc = { path = "src/gc"}

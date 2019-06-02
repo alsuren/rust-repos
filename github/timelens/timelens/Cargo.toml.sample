@@ -1,0 +1,35 @@
+[package]
+name = "timelens"
+version = "0.1.1"
+authors = ["Sebastian Morr <sebastian@morr.cc>"]
+edition = "2018"
+repository = "https://github.com/timelens/timelens"
+homepage = "https://timelens.io"
+license = "GPL-2.0-or-later"
+readme = "README.md"
+documentation = "https://timelens.io"
+description = """
+Timelens creates visual timelines from video files, which visualize
+the videos' color development and can be integrated into video players.
+That way, users can navigate videos more precisely and actively.
+
+Additionally, Timelens can create thumbnail grids, which can be used
+to display preview images when the user hovers over the visual timeline.
+Timelens can output a VTT file, which references the thumbnails' positions.
+
+Project homepage: https://timelens.io
+"""
+
+[dependencies]
+gstreamer = "0.12.2"
+gstreamer-app = "0.12.2"
+colored = "1.7.0"
+
+[dependencies.clap]
+version = "2.32.0"
+features = ["wrap_help"]
+
+[dev-dependencies]
+assert_cmd = "0.11.0"
+predicates = "1.0.0"
+assert_fs = "0.11.3"

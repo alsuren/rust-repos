@@ -1,0 +1,15 @@
+[package]
+name = "storms-and-swords"
+version = "0.1.0"
+authors = ["tucker, mooman219"]
+
+[dependencies]
+image = "*"
+glutin = "0.9"
+cgmath = "*"
+threadpool = "*"
+gl = "*"
+lazy_static = "0.2.8"
+frame_timer = "*"
+rand = "*"
+rusttype = "0.3.0"

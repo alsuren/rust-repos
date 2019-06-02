@@ -1,0 +1,26 @@
+[package]
+name = "elm-eureka"
+description = "A parser for the elm programming language"
+keywords = ["parser","elm","programming language"]
+version = "0.1.0"
+authors = ["Nicola Papale"]
+build = "build.rs"
+repository = "https://github.com/nicopap/elm-eureka"
+readme = "README.md"
+categories = ["parser-implementations", "text-processing"]
+license = "LGPL3"
+
+[build-dependencies]
+lalrpop = "0.15.1"
+
+[dependencies]
+serde_json = "1.0"
+lalrpop-util = "0.15.1"
+itertools = "0.7.6"
+walkdir = "2"
+quick-error = "1.2.1"
+fxhash = "0.2.1"
+string-interner = "0.6.3"
+
+[dev-dependencies]
+pretty_assertions = "0.4.0"

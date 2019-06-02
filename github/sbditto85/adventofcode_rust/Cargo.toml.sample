@@ -1,0 +1,10 @@
+[package]
+name = "adventofcode"
+version = "0.1.0"
+authors = ["Casey Allred <sbditto85@gmail.com>"]
+
+[dependencies]
+
+[dependencies.nom]
+version = "^3.2"
+features = ["nightly", "verbose-errors"]

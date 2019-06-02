@@ -1,0 +1,15 @@
+[package]
+name = "goldsrs"
+version = "0.1.0"
+authors = ["Vurich <jackefransham@hotmail.co.uk>"]
+
+[dependencies]
+ioendian = "*"
+memmap = "*"
+termcolor = "*"
+
+[dev-dependencies]
+rand = "*"
+
+[features]
+nightly = []

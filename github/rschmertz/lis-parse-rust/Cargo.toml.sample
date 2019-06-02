@@ -1,0 +1,8 @@
+[package]
+name = "lis-parse-rust"
+version = "0.1.0"
+authors = ["Bob Schmertz <rschmertz@yahoo.com>"]
+
+[dependencies]
+regex = "0.1"
+clap = "2.20"

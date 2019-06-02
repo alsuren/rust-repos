@@ -1,0 +1,10 @@
+[package]
+name = "imageset-augment"
+version = "0.1.0"
+authors = ["shaitao <228164917@qq.com>"]
+
+[dependencies]
+image = "*"
+clap = "2"
+rayon = "1.0"
+rand = "0.5"

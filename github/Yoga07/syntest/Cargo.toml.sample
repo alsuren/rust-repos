@@ -1,0 +1,8 @@
+[package]
+name = "syntest"
+version = "0.1.0"
+authors = ["Yoga07 <yogeshwar_1997@hotmail.com>"]
+edition = "2018"
+
+[dependencies]
+syn = {version="0.15.26",features=["parsing","full","extra-traits"]}

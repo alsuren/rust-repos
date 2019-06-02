@@ -1,0 +1,21 @@
+[package]
+name = "hdf5-sys"
+version = "0.4.1"
+license = "Apache-2.0/MIT"
+authors = [
+  "Gustav Larsson <gustav.m.larsson@gmail.com>",
+  "Ivan Ukhov <ivan.ukhov@gmail.com>",
+]
+description = "The package provides bindings to HDF5."
+documentation = "https://docs.rs/hdf5-sys"
+homepage = "https://github.com/stainless-steel/hdf5-sys"
+repository = "https://github.com/stainless-steel/hdf5-sys"
+build = "build.rs"
+links = "hdf5"
+exclude = ["source/tools/testfiles/*", "source/tools/*/testfiles/*"]
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+pkg-config = "0.3"

@@ -1,0 +1,15 @@
+[package]
+name = "psf"
+version = "0.1.0"
+authors = ["Manorhos <n.h.wiessner@gmail.com>"]
+
+[dependencies]
+flate2 = "1.0.1"
+crc = "^1.0.0"
+quick-error = "^1.0.0"
+nom = "3.2.1"
+byteorder = "1.2.2"
+log = "0.4"
+
+[dev-dependencies]
+env_logger = { version = "0.6", default-features = false, features = ["atty", "termcolor"] }

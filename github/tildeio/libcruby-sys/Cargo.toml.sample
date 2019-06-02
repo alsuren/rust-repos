@@ -1,0 +1,15 @@
+[package]
+name = "libcruby-sys"
+version = "0.1.0"
+authors = [
+  "Godfrey Chan <godfreykfc@gmail.com>",
+  "Yehuda Katz <wycats@gmail.com>",
+  "Peter Wagenet <peter.wagenet@gmail.com>"
+]
+
+[dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+cstr-macro = "0.1"
+lazy_static = "1.1"

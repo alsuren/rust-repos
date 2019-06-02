@@ -1,0 +1,32 @@
+[package]
+name = "rocket"
+version = "0.1.0"
+authors = ["Andrew Aldridge <i80and@foxquill.com>"]
+
+[dependencies]
+bytecount = "0.3"
+glob = "0.2"
+handlebars = "0.30"
+lazy_static = "1.0"
+lazycell = "0.6"
+log = "0.4"
+num_cpus = "1.8"
+rand = "0.4"
+regex = "0.2"
+scoped_threadpool = "0.1.8"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+simple-logging = "2.0"
+time = "0.1"
+toml = "0.4"
+typed-arena = "1.3"
+walkdir = "2.0"
+
+[dependencies.syntect]
+version = "2.0"
+default-features = false
+features = ["parsing", "assets", "dump-load", "html"]
+
+[profile.release]
+lto = true

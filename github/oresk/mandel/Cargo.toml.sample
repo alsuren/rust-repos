@@ -1,0 +1,10 @@
+[package]
+name = "mandel"
+version = "0.1.0"
+authors = ["Lovro Oreskovic <lovro@oreskovic.me>"]
+edition = "2018"
+
+[dependencies]
+num = "0.2"
+clap = "2.33.0"
+image = "0.21.1"

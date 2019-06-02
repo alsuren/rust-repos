@@ -1,0 +1,9 @@
+[package]
+name = "setup"
+version = "0.1.0"
+authors = ["Nathaniel Tracy-Amoroso | Snurr Research Group"]
+
+[dependencies]
+rand = "0.5.1"
+fs_extra = "1.1.0"
+cpython = "0.1"

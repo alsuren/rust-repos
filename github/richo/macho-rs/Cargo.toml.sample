@@ -1,0 +1,12 @@
+[package]
+authors = ["Richo Healey <richo@psych0tik.net>"]
+description = "Mach-O parser in rust"
+documentation = "http://richo.psych0tik.net/macho-rs/macho"
+license = "MIT"
+name = "macho"
+repository = "https://github.com/richo/macho-rs"
+version = "0.4.1"
+
+[dependencies]
+nom = "1.*"
+uuid = "0.3.1"

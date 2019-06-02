@@ -1,0 +1,21 @@
+[package]
+name = "stm_button"
+version = "0.0.1"
+authors = ["Georg Brandl <g.brandl@fz-juelich.de>"]
+license = "GPL-2.0+"
+edition = "2018"
+
+[profile.release]
+lto = true
+codegen-units = 1
+debug = true
+
+[dependencies]
+arm = { package = "cortex-m", version = "0.5.8" }
+nb = "0.1.1"
+cortex-m-rt = "0.6.6"
+cortex-m-semihosting = "0.3.2"
+panic-semihosting = "0.5.1"
+stm32l0 = { version = "0.5.0", features = ["rt", "stm32l0x3"] }
+embedded-hal = "0.2.2"
+embedded-sdmmc = { git = "https://github.com/birkenfeld/embedded-sdmmc-rs" }

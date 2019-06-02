@@ -1,0 +1,8 @@
+[package]
+name = "sodium"
+version = "0.1.0"
+authors = ["Mark Nguyen <misteraznkid@yahoo.com>"]
+build = "build.rs"
+
+[dependencies]
+libc = "0.2.43"

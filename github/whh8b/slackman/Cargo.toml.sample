@@ -1,0 +1,13 @@
+[package]
+
+name="slack_man"
+version="0.0.1"
+authors = ["Will Hawkins"]
+
+[dependencies]
+hyper-native-tls = "*"
+iron = "0.5.*"
+params = { path = "params" }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

@@ -1,0 +1,13 @@
+[package]
+name = "nmbr-signed"
+version = "0.0.1"
+authors = ["John Faucett <jwaterfaucett@gmail.com>"]
+description = "A signed trait for dealing with sign properties of numbers"
+license = "MIT"
+homepage = "https://github.com/jwaterfaucett/rs-nmbr_signed"
+repository = "https://github.com/jwaterfaucett/rs-nmbr_signed.git"
+keywords = ["mathematics", "numerics", "numbers"]
+
+[dependencies]
+nmbr-float = "0.0.1"
+nmbr-identities = "0.0.1"

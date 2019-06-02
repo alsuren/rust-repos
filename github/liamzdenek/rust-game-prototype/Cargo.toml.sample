@@ -1,0 +1,7 @@
+[package]
+name = "mars-colony"
+version = "0.0.2"
+authors = ["Liam <liamzdenek@gmail.com>"]
+
+[dependencies]
+engine = { path = "./components/engine" }

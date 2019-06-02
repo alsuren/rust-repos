@@ -1,0 +1,41 @@
+[package]
+name = "roadsim2d"
+version = "0.1.0"
+authors = ["clynamen <clynamen@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+piston = "0.40.0"
+piston_window = "0.87.0"
+piston2d-graphics  = "0.30.0"
+cgmath = "0.16.1"
+rand = "0.4.3"
+rosrust = "0.7.1"
+rosrust_codegen = "0.7.0"
+euclid = "0.19.2"
+conrod = "0.61.1"
+floating-duration = "0.1.2"
+nalgebra = "0.16"
+ncollide2d = "0.17"
+nphysics2d = "0.9"
+specs = "0.14.0"
+specs-derive = "0.3.0"
+glium = "0.23.0"
+image = "0.21.0"
+num = "0.2.0"
+pathfinding = "1.1.10"
+find_folder = "0.3.0"
+piston2d-opengl_graphics = "0.59.0"
+gfx = "0.17.1"
+gfx_text = "0.23.0"
+serde = "1.0.86"
+serde_derive = "1.0.86"
+toml = "0.4.10"
+serde_yaml = "*"
+
+[build-dependencies]
+rosrust_codegen = "0.7.0"
+
+[lib]
+name = "roadsim2dlib"
+path = "src/lib.rs"

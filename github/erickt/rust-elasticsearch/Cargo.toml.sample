@@ -1,0 +1,15 @@
+[package]
+name = "elasticsearch"
+version = "0.2.0"
+authors = [ "erick.tryzelaar@gmail.com" ]
+
+[[lib]]
+name = "elasticsearch"
+path = "src/elasticsearch/lib.rs"
+
+[[example]]
+name = "example"
+path = "examples/main.rs"
+
+[dependencies.http]
+git = "https://github.com/chris-morgan/rust-http"

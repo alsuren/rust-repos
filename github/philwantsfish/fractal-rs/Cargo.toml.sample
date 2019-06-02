@@ -1,0 +1,9 @@
+[package]
+name = "sierpinski"
+version = "0.1.0"
+authors = ["Philip OKeefe <okeefephil@gmail.com>"]
+
+[dependencies]
+image = "*"
+rand = "*"
+line_drawing = "0.6.0"

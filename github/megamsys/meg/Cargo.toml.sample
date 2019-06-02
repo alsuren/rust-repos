@@ -1,0 +1,44 @@
+[project]
+name = "meg"
+version = "0.1.0"
+authors = ["Yeswanth Kumar <getyesh@megam.io>, Kishorekumar Neelamegam <nkishore@megam.io>"]
+
+[lib]
+name = "meg"
+path = "src/meg/lib.rs"
+
+[dependencies]
+curl = "0.2.10"
+rust_cli = "0.1.0"
+num_cpus = "0.1"
+docopt = "0.6.64"
+env_logger = "0.3.1"
+rustc-serialize = "0.3.14"
+toml = "0.1.20"
+libc = "0.1.8"
+megam_api = "0.1.10"
+rand = "0.3.8"
+term-painter = "0.1.1"
+megam_rustyprint = "0.2.0"
+log = "0.3.1"
+
+[dev-dependencies]
+tempdir = "0.3.4"
+
+[dependencies.hamcrest]
+
+git = "https://github.com/carllerche/hamcrest-rust.git"
+
+[dependencies.yaml-rust]
+git = "https://github.com/chyh1990/yaml-rust.git"
+
+[[bin]]
+name = "meg"
+test = false
+doc = false
+
+[[test]]
+name = "tests"
+
+[[test]]
+name = "resolve"

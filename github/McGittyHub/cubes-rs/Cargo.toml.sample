@@ -1,0 +1,26 @@
+[package]
+name = "cubes-rs"
+version = "0.1.0"
+authors = ["snarf95 <snarf95@hotmail.com>"]
+
+[dependencies]
+arrayvec = "*"
+bit_field = "*"
+collision = "*"
+gfx = "*"
+gfx_core = "*"
+gfx_glyph = "*"
+gfx_window_glutin = "*"
+glutin = "*"
+noise = "*"
+cgmath = "*"
+smallvec = "*"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'abort'

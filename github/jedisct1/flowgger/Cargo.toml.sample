@@ -1,0 +1,50 @@
+cargo-features = ["edition"]
+
+[package]
+edition = "2018"
+name = "flowgger"
+version = "0.2.6"
+authors = ["Frank Denis <github@pureftpd.org>"]
+build = "build.rs"
+
+[features]
+capnp-recompile = ["capnpc"]
+coroutines = ["coio"]
+
+default = ["kafka"]
+
+[build-dependencies.capnpc]
+version = "*"
+optional = true
+
+[dependencies]
+capnp = "*"
+chrono = "*"
+clap = "*"
+flate2 = "*"
+log = "*"
+rand = "*"
+redis = "*"
+serde = "~0.8"
+serde_json = "~0.8"
+toml = "~0.2"
+
+[dependencies.coio]
+git = "https://github.com/zonyitoo/coio-rs"
+optional = true
+
+[dependencies.kafka]
+git = "https://github.com/spicavigo/kafka-rust"
+features = ["snappy", "gzip", "security"]
+optional = true
+
+[dependencies.openssl]
+version = "~0.9"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+panic = "abort"

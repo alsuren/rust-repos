@@ -1,0 +1,16 @@
+[package]
+name = "hello_world"
+version = "0.0.1"
+authors = ["<c-vld@ya.ru>"]
+
+build = "build.rs"
+
+[[bin]]
+name = "hello_world"
+path = "./src/_main.rs~"
+
+[build-dependencies]
+syntex = "0.26"
+
+[build-dependencies.encoding_literals]
+path = "./encoding_literals"

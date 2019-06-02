@@ -1,0 +1,26 @@
+[package]
+name = "rust-xmlrpc"
+version = "0.0.6"
+description = "Minimal Rust XML-RPC library"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/gch/rust-xmlrpc"
+authors = ["Galen Clark Haynes <gch@users.noreply.github.com>"]
+
+[lib]
+name = "xmlrpc"
+path = "src/lib.rs"
+
+[dependencies]
+rustc-serialize = "0.2.7"
+xml-rs = "0.1.12"
+hyper = "0.1.0"
+
+[[example]]
+name = "simple"
+path = "examples/simple.rs"
+
+[[example]]
+name = "ros_client_example"
+path = "examples/ros_client_example.rs"
+

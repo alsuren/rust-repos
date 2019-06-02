@@ -1,0 +1,11 @@
+[package]
+name = "ferrite-core"
+version = "0.1.0"
+authors = ["peterheesterman"]
+
+[dependencies]
+
+
+[lib]
+name = "ferrite"
+crate-type = ["dylib"]

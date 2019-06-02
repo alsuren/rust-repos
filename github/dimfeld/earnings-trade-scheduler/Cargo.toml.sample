@@ -1,0 +1,25 @@
+[package]
+name = "earnings-trade-scheduler"
+version = "1.1.0"
+authors = ["Daniel Imfeld <dimfeld>"]
+
+[dependencies]
+chrono = { version = "0.4.0", features = ["serde"] }
+clap = "2.29"
+crossbeam = "0.3.2"
+csv = "1.0.0"
+failure="0.1.1"
+htmlescape="0.3.1"
+itertools="0.7.6"
+json="0.11"
+lazy_static="1.0.0"
+regex="1.0"
+scraper="0.4.0"
+serde = "1.0.9"
+serde_derive = "1.0.9"
+serde_json = "1.0"
+slog = "2.1"
+sloggers="0.2.6"
+structopt = "0.1.0"
+structopt-derive = "0.1.0"
+reqwest="0.8.4"

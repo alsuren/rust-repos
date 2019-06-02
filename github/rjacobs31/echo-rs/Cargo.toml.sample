@@ -1,0 +1,7 @@
+[package]
+name = "echo-rs"
+version = "0.1.1"
+authors = ["Rudolph Jacobs <jacobsrudolph@yahoo.com>"]
+
+[dependencies]
+tokio = "0.1.5"

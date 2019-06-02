@@ -1,0 +1,8 @@
+[package]
+name = "shapefile-utils"
+version = "0.1.0"
+authors = ["Fabian Schmidt <fschmidt95@googlemail.com>"]
+
+[dependencies]
+byteorder = "1.0.0"
+dbf = "0.1.1"

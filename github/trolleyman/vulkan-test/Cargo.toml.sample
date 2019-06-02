@@ -1,0 +1,14 @@
+[package]
+name = "vulkan-test"
+version = "0.1.0"
+authors = ["trolleyman <cgtrolley@gmail.com>"]
+build = "src/build.rs"
+
+[build-dependencies]
+vulkano-shaders = { git = "https://github.com/tomaka/vulkano" }
+glsl-to-spirv = { git = "https://github.com/tomaka/vulkano" }
+
+[dependencies]
+vulkano = { git = "https://github.com/tomaka/vulkano" }
+vulkano-shaders = { git = "https://github.com/tomaka/vulkano" }
+glutin = "^0.4.9"

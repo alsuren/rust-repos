@@ -1,0 +1,43 @@
+[package]
+authors = ["eater <hello@eaterofco.de>"]
+name = "black-widow"
+version = "0.1.0"
+
+[[bin]]
+name = "bw"
+path = "src/main.rs"
+
+[dependencies]
+byteorder = "1.2.4"
+bytes = "0.4.9"
+futures = "0.1.23"
+ring = "0.13.2"
+rust-crypto = "0.2.36"
+toml = "0.4.6"
+untrusted = "0.6.2"
+serde_derive = "1.0.70"
+serde = "1.0.70"
+crossbeam-channel = "0.2.4"
+clap = "2.32.0"
+serde_json = "1.0.24"
+base64 = "0.9.2"
+
+[dependencies.tun-tap]
+git = "https://github.com/vorner/tuntap"
+default-features = false
+
+[dependencies.nix]
+version = "0.11.0"
+optional = true
+
+[dependencies.pyo3]
+features = ["python3"]
+optional = true
+version = "0.4.0"
+
+[dependencies.uuid]
+features = ["v4"]
+version = "0.6.5"
+
+[features]
+python-router = ["pyo3", "nix"]

@@ -1,0 +1,9 @@
+[package]
+name = "bletchley"
+version = "0.1.0"
+authors = ["Paweł Świątkowski"]
+build = "build.rs"
+
+[dependencies]
+clap = "~2.19.0"
+bletchley_lib = { path = 'bletchley_lib' }

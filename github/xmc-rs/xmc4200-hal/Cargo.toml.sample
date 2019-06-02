@@ -1,0 +1,10 @@
+[package]
+name = "xmc4200-hal"
+version = "0.1.0"
+authors = ["Lucas Brendel <lucasbrendel@gmail.com>"]
+edition = "2018"
+description = "Hardware abstraction layer for XMC4200 microcontrollers"
+license = "MIT"
+keywords = ["embedded-hal", "arm", "infineon", "xmc"]
+
+[dependencies]

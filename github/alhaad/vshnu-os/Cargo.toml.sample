@@ -1,0 +1,11 @@
+[package]
+name = "vshnu-os"
+version = "0.0.1"
+authors = ["Alhaad Gokhale"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+rlibc = "1.0"

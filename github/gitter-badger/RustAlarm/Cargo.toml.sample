@@ -1,0 +1,14 @@
+[package]
+name = "rust_alarm"
+version = "0.1.0"
+authors = ["mchapala ch.murali@gmail.com"]
+
+[dependencies]
+hyper = { git="https://github.com/hyperium/hyper", branch = "tokio"}
+futures = { git = "https://github.com/alexcrichton/futures-rs"}
+tokio-core =  {git = "https://github.com/tokio-rs/tokio-core"}
+tokio-proto = {git = "https://github.com/tokio-rs/tokio-proto"}
+tokio-service = {git = "https://github.com/tokio-rs/tokio-service"}
+url = "*"
+#[replace]
+#"tokio-core:0.1.0" = { git = "https://github.com/tokio-rs/tokio-core" }

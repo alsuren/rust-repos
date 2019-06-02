@@ -1,0 +1,46 @@
+[package]
+name = "vpncloud"
+version = "0.8.0"
+authors = ["Dennis Schwerdel <schwerdel@informatik.uni-kl.de>"]
+build = "build.rs"
+license = "GPL-3.0"
+description = "Peer-to-peer VPN"
+homepage = "https://github.com/dswd/vpncloud.rs"
+repository = "https://github.com/dswd/vpncloud.rs"
+keywords = ["vpn", "p2p", "tun", "tap", "network"]
+readme = "README.md"
+
+[dependencies]
+time = "0.1"
+docopt = "0.6"
+rustc-serialize = "0.3"
+log = "0.3"
+signal = "0.3"
+libc = "0.2"
+aligned_alloc = "0.1"
+rand = "0.3"
+fnv = "1"
+net2 = "0.2"
+bitflags = "0.7"
+yaml-rust = "0.3"
+igd = "0.5"
+siphasher = "0.2"
+daemonize = "0.2"
+
+[build-dependencies]
+gcc = "0.3"
+pkg-config = "0.3"
+
+[features]
+default = []
+bench = []
+system-libsodium = []
+
+[profile.release]
+lto = true
+
+[profile.dev]
+lto = false
+
+[profile.test]
+lto = false

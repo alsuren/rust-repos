@@ -1,0 +1,13 @@
+[package]
+name = "multiline-console"
+version = "0.1.0"
+authors = ["Avarel <avarelpm@gmail.com>"]
+repository = "https://github.com/Avarel/multiline-console"
+homepage = "https://github.com/Avarel/multiline-console"
+description = "A multiline console prompt for Rust."
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+console = { git = "https://github.com/Avarel/console" }

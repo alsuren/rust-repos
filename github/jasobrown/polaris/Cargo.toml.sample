@@ -1,0 +1,15 @@
+[package]
+
+name = "polaris"
+version = "0.0.1"
+authors = ["Jason Brown <jasedbrown@gmail.com>"]
+
+[lib]
+name = "polaris"
+
+[dependencies]
+getopts = "0.2.3"
+log = "0.2.2"
+rand = "0.1.2"
+time = "0.1.16"
+

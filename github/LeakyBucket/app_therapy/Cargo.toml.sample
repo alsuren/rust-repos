@@ -1,0 +1,25 @@
+[package]
+name = "app_therapy"
+version = "0.1.0"
+authors = ["leakybucket <DamnBigMan@gmail.com>"]
+
+[dependencies]
+postgres = "*"
+
+# config parsing
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+
+# Because types
+byteorder = "*"
+
+# message encryption
+sodiumoxide = "*"
+
+# message parsing
+nom = "^2.0"
+
+# For arg stuff
+docopt = "*"
+rustc-serialize = "*"

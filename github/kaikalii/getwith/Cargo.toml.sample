@@ -1,0 +1,26 @@
+[dependencies]
+quote = '0.6.8'
+proc-macro2 = "0.4"
+
+[dependencies.syn]
+version = '0.15.4'
+
+[lib]
+proc-macro = true
+
+[package]
+authors = ['kaikalii <kaikaliischmidt@gmail.com']
+categories = ['development-tools::procedural-macro-helpers']
+description = 'A procedural macro for generating functional-style accessors on fields as well as some convenient trait impls.'
+keywords = [
+    'macro',
+    'getters',
+    'traits',
+    'functional',
+    'immutable',
+]
+license = 'MIT'
+name = 'stoic_derive'
+readme = 'readme.md'
+repository = 'https://github.com/kaikalii/stoic_derive'
+version = '0.0.1'

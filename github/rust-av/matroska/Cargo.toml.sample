@@ -1,0 +1,26 @@
+[package]
+name = "matroska"
+description = "Matroska/WebM demuxer"
+version = "0.1.0"
+authors = ["Luca Barbato <lu_zero@gentoo.org>"]
+readme = "README.md"
+license = "MIT"
+
+[lib]
+name = "matroska"
+path = "src/lib.rs"
+
+[dependencies]
+nom = "^4.0"
+cookie-factory = "^0.2"
+av-data = { git = "https://github.com/rust-av/rust-av" }
+av-format = { git = "https://github.com/rust-av/rust-av" }
+circular = "0.2"
+log = "0.4"
+
+[dev-dependencies]
+quickcheck = "0.8"
+pretty_env_logger = "0.3"
+
+[workspace]
+members = ["tools"]

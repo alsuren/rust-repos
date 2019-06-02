@@ -1,0 +1,13 @@
+[package]
+name = "one-year"
+version = "0.1.0"
+authors = ["kakaka19 <kkatum@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4.6"
+pbr = "1.0.1"
+
+[[bin]]
+name = "oneyear"
+path = "src/main.rs"

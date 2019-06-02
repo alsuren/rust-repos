@@ -1,0 +1,10 @@
+[package]
+name = "using_math_lib"
+version = "0.1.0"
+authors = ["Harrison Dews <harrisondews@gmail.com>"]
+
+[dependencies]
+gfx = "0.12.1"
+gfx_window_glutin = "0.12"
+glutin = "0.6"
+gfx_device_gl = "0.11"

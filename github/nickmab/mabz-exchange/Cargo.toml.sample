@@ -1,0 +1,7 @@
+[package]
+name = "mabz_exchange"
+version = "0.1.0"
+authors = ["nickmab <nickmab@gmail.com>"]
+
+[dependencies.mabz_exchange_lib]
+path = "src/mabz_exchange_lib"

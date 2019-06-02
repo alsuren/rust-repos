@@ -1,0 +1,34 @@
+[package]
+name = "basic"
+version = "0.2.0"
+authors = ["stevesweetney <stevesweetney@gmail.com>"]
+edition = "2018"
+
+[lib]
+name="basic"
+path="src/lib.rs"
+
+[[bin]]
+name="basic"
+path="src/main.rs"
+
+[dependencies]
+image = "*"
+clap = "2.33.0"
+gifski = "0.8.7"
+imgref = "1.3.5"
+rgb = "0.8"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.bench]
+lto = true
+
+[profile.release]
+lto = true
+

@@ -1,0 +1,37 @@
+[package]
+authors = ["Ross Allan <ross@fabulousfabrications.uk>"]
+categories = ["embedded", "no-std"]
+description = "USB Keyboard firmware for blue pill development board"
+keywords = ["arm", "cortex-m", "keyboard"]
+license = "Apache-2.0"
+
+name = "blue-pill-keyboard"
+repository = "https://github.com/nallar/BluePillKeyboard"
+version = "0.0.1"
+[dependencies]
+bare-metal = "0.1.1"
+cortex-m = "0.4.2"
+cortex-m-semihosting = "0.2.0"
+cortex-m-rtfm = "0.3.1"
+vcell = "*"
+
+[dependencies.stm32f103xx-hal]
+git = "https://github.com/japaric/stm32f103xx-hal.git"
+
+[dependencies.cortex-m-rt]
+features = ["abort-on-panic"]
+version = "0.3.12"
+
+[profile]
+[profile.dev]
+codegen-units = 1
+debug = true
+incremental = false
+lto = true
+opt-level = 0
+
+[profile.release]
+codegen-units = 1
+debug = true
+incremental = false
+lto = true

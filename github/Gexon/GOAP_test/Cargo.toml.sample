@@ -1,0 +1,7 @@
+[package]
+name = "GOAP_test"
+version = "0.1.0"
+authors = ["Gexon <alimgan@gmail.com>"]
+
+[dependencies]
+gpgoap = { git = "https://github.com/Gexon/gpgoap-rs"}

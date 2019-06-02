@@ -1,0 +1,16 @@
+[package]
+name = "drm-cdi"
+version = "0.1.0"
+description = "Sample implementation of a Container Device Interface for Linux DRM GPUs"
+repository = "https://github.com/devurandom/drm-cdi-rs"
+documentation = "https://docs.rs/libdrm-sweet"
+authors = ["Dennis Schridde <devurandom@gmx.net>"]
+license = "GPL-3.0+"
+keywords = ["libdrm", "drm", "gpu", "linux"]
+categories = ["hardware-support", "os", "rendering"]
+
+[dependencies]
+libdrm_sweet = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

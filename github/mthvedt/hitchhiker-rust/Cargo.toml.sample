@@ -1,0 +1,27 @@
+[package]
+name = "htree"
+version = "0.1.0"
+authors = ["Mike Thvedt <mike.thvedt@gmail.com>"]
+
+[dependencies]
+# chain = { path = "../chain" }
+futures = "0.1.6"
+typed-arena = "1.2.0"
+
+# TODO: these used by testlib. Need better isolation.
+# adamantium = "0.0.1"
+# adamantium = { git = "https://github.com/mthvedt/adamantium.git" }
+rand = "0.3"
+time = "0.1"
+
+# Test deps. TODO: isolate.
+bytebuffer = "0.2"
+
+[dev-dependencies]
+
+# bytebuffer = "0.2"
+
+# TODO: scrub quickcheck.
+
+# quickcheck = "0.3"
+# quickcheck_macros = "0.2"

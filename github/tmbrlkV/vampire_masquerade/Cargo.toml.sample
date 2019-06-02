@@ -1,0 +1,23 @@
+[package]
+name = "vampire_masquerade"
+version = "0.1.0"
+authors = ["errmac"]
+edition = "2018"
+
+[dependencies]
+dotenv = "0.13.0"
+diesel = { version = "1.4.2", features = ["postgres", "r2d2"] }
+futures = "0.1.26"
+juniper = "0.11.1"
+warp = "0.1.15"
+juniper_warp = "0.2.0"
+r2d2 = "0.8.4"
+pretty_env_logger = "0.3.0"
+
+[lib]
+name = "app_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "app"
+path = "src/main.rs"

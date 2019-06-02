@@ -1,0 +1,8 @@
+[package]
+
+name = "git-scrub"
+version = "0.0.1"
+authors = ["Aaron Weiss <aaronweiss74@gmail.com>"]
+
+[dependencies]
+git2 = "0.3.3"

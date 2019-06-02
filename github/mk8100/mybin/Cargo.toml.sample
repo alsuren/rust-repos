@@ -1,0 +1,9 @@
+[package]
+name = "mybin"
+version = "0.2.0"
+authors = ["makowal"]
+edition = "2018"
+
+[dependencies]
+matrix  = { path = "../matrix"}
+add-two = { path = "../add-two"}

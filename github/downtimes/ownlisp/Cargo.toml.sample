@@ -1,0 +1,18 @@
+[package]
+name = "ownlisp"
+version = "0.0.7"
+authors = ["Michael Auracher <michael.auracher@gmail.com>"]
+
+[profile.dev]
+opt-level = 0
+debug = true
+
+[target.'cfg(unix)'.dependencies]
+editline = { path = "editline" }
+
+[dependencies]
+itertools = "0.7.8"
+lazy_static = "1.1"
+pest = "2.0"
+pest_derive = "2.0"
+failure = "0.1.2"

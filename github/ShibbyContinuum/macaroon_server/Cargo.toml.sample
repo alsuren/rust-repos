@@ -1,0 +1,18 @@
+[package]
+name = "macaroon_server"
+version = "0.1.0"
+authors = ["Shibby"]
+
+[dependencies]
+rand = "0.3.14"
+hex = "0.2.0"
+redis = "0.6.0"
+tiny-keccak = "1.0"
+byteorder = "0.5.3"
+
+[dependencies.macaroons]
+git = "https://github.com/panicbit/rust-macaroons.git"
+branch = "dev"
+
+[dependencies.serde_json]
+version = "*"

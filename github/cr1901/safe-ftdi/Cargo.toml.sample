@@ -1,0 +1,19 @@
+[package]
+name = "safe-ftdi"
+version = "0.2.1"
+license = "MIT/Apache-2.0"
+description = "A safe wrapper around libftdi."
+repository = "https://github.com/cr1901/safe-ftdi"
+authors = ["William D. Jones <thor0505@comcast.net>"]
+keywords = ["ftdi", "bitbang", "jtag", "mpsse"]
+categories = ["api-bindings", "embedded"]
+readme = "README.md"
+
+[dependencies]
+libftdi1-sys = "0.1.0"
+
+[dev-dependencies]
+argparse = "0.2.2"
+bitreader = "0.3.1"
+bitflags = "1.0.4"
+byteorder = "1.2.6"

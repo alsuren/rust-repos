@@ -1,0 +1,12 @@
+[package]
+name = "betacode"
+version = "0.1.0"
+authors = ["Scott Morton <mortonsc@umich.edu>"]
+
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+
+[dev-dependencies]
+unicode-normalization = "0.1.0"

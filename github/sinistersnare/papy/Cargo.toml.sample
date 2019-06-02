@@ -1,0 +1,26 @@
+[package]
+
+name = "papy"
+version = "0.1.0"
+authors = ["Davis Silverman <sinistersnare@gmail.com>"]
+
+[lib]
+name = "papy"
+path = "src/papy/lib.rs"
+test=true
+
+[[bin]]
+name = "papy"
+path = "src/bin/papy.rs"
+
+[dependencies.spellck]
+git = "https://github.com/huonw/spellck"
+#path = "../spellck"
+
+[dependencies.scan]
+
+git = "https://github.com/DanielKeep/rust-scan.git"
+
+[dependencies.scan_util]
+
+git = "https://github.com/DanielKeep/rust-scan-util.git"

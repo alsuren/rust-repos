@@ -1,0 +1,11 @@
+[package]
+name = "lituria"
+version = "0.1.0"
+authors = ["Guillaume Danjou <guillaumedanjou50@gmail.com>"]
+
+[dependencies]
+amethyst = "0.8"
+
+[dependencies.shred]
+version = "0.7.0-alpha5"
+features = ["nightly"]

@@ -1,0 +1,12 @@
+[package]
+name = "biors"
+version = "0.1.0"
+authors = ["Gabriel Majeri <gabriel.majeri6@gmail.com>"]
+build = "build.rs"
+publish = false
+
+[dependencies]
+x86 = "0.8"
+
+[build-dependencies]
+cc = "1"

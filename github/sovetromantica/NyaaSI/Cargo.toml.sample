@@ -1,0 +1,11 @@
+[package]
+name = "NyaaSI"
+version = "0.1.0"
+authors = ["sovetromantica <shindakioku@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+toml = "*"
+serde = { version = "1.0.89", features = ["derive"] }
+openssl = { version = "0.10", features = ["vendored"] }
+reqwest = "0.9.12"

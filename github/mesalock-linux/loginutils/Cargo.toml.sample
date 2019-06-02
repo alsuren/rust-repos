@@ -1,0 +1,11 @@
+[package]
+name = "loginutils"
+version = "0.1.0"
+authors = ["Mingshen Sun <mssun@mesalock-linux.org>"]
+
+[dependencies]
+libc = "0.2"
+pwhash = "0.1"
+lazy_static = "1.0"
+termios = "0.3"
+isatty = "0.1"

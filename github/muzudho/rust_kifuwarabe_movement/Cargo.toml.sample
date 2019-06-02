@@ -1,0 +1,11 @@
+[package]
+name = "kifuwarabe_movement"
+version = "0.1.0"
+authors = ["muzudho <muzudho1@gmail.com>"]
+
+[dependencies]
+lazy_static = "1.1.0"
+
+[dependencies.kifuwarabe_position]
+git = "https://github.com/muzudho/rust_kifuwarabe_position.git"
+rev = "787e037bba474541ef74e05f34e0d890c6350427"

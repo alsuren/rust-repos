@@ -1,0 +1,8 @@
+[package]
+name = "corrosion"
+version = "0.1.0"
+authors = ["Doshmajhan <cpc1007@rit.edu>"]
+
+[dependencies]
+getopts = "0.2"
+pnet = "0.20.0"

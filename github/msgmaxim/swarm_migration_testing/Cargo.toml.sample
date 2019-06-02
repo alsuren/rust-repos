@@ -1,0 +1,26 @@
+[package]
+name = "config_gen"
+version = "0.1.0"
+authors = ["Maxim Shishmarev <maxim@loki.network>"]
+edition = "2018"
+
+[dependencies]
+toml = "*"
+serde_derive = "*"
+serde = "*"
+simple-server = "*"
+serde_json="*"
+log="*"
+env_logger="*"
+rand = "*"
+reqwest = "*"
+tokio = "*"
+futures = "*"
+hex = "*"
+rand_core = "*"
+log4rs = "0.8.1"
+hyper = "*"
+rayon = "1.0.3"
+actix-web = "*"
+ctrlc = "3.1.2"
+byteorder = "*"

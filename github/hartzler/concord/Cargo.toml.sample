@@ -1,0 +1,10 @@
+[package]
+name = "concord"
+version = "0.1.0"
+authors = ["Matt Hartzler <matt@cryptopanic.org>"]
+
+[dependencies]
+protobuf = "1.0.21"
+docopt = "0.6"
+rustc-serialize = "0.3"
+rand = "0.3"

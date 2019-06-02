@@ -1,0 +1,25 @@
+[package]
+name = "limn"
+version = "0.0.1"
+authors = ["Chris Tolliday <ctolliday@gmail.com>"]
+keywords = ["ui", "widgets", "gui", "interface", "graphics"]
+categories = ["gui"]
+description = "Cross platform, event driven GUI library."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/christolliday/limn.git"
+homepage = "https://github.com/christolliday/limn"
+
+[workspace]
+
+[dependencies]
+limn-core = { path = "core", version = "0.0.1" }
+
+[dev-dependencies]
+euclid = "0.16"
+gleam = "0.4.20"
+find_folder = "0.3.0"
+chrono = "0.4"
+env_logger = "0.4"
+lipsum = "0.4"
+rand = "0.3"
+lazy_static = "0.2.2"

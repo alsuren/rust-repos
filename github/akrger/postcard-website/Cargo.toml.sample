@@ -1,0 +1,21 @@
+[package]
+name = "ak_website"
+version = "0.1.0"
+authors = ["André Krüger <zeldamer@t-online.de>"]
+
+[dependencies]
+rocket = { git = "https://github.com/SergioBenitez/Rocket" }
+rocket_codegen = { git = "https://github.com/SergioBenitez/Rocket" }
+rocket_contrib = { git = "https://github.com/SergioBenitez/Rocket", default_features = false, features = ["tera_templates", "json"] }
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+diesel = { version = "*", features = ["postgres", "network-address", "chrono"] }
+dotenv = "*"
+chrono = { version = "*", features = ["serde"] }
+dotenv_codegen = "*"
+r2d2 = "*"
+r2d2-diesel = "*"
+ipnetwork = "*"
+data-encoding = "*"
+ring = "0.13.0-alpha"

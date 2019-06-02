@@ -1,0 +1,41 @@
+[package]
+authors = ["Michael Aaron Murphy <mmstickman@gmail.com>"]
+description = "Concurrent / parallel / distributed command-line job server & client"
+license = "MIT OR Apache-2.0"
+name = "concurr"
+readme = "README.md"
+repository = "https://github.com/mmstick/concurr"
+version = "0.1.0"
+
+[[bin]]
+name = "concurr"
+path = "src/client/main.rs"
+
+[[bin]]
+name = "concurr-jobsd"
+path = "src/server/main.rs"
+
+[dependencies]
+app_dirs = "1.2.1"
+bytes = "0.4"
+chashmap = "2.2.0"
+coco = "0.3.0"
+futures = "0.1"
+lazy_static = "0.2.8"
+libc = "0.2"
+native-tls = "0.1"
+num_cpus = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+toml = "0.4"
+
+[dependencies.tokio-tls]
+features = ["tokio-proto"]
+version = "0.1"
+
+[lib]
+path = "src/shared/lib.rs"

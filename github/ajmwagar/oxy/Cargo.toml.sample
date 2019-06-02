@@ -1,0 +1,13 @@
+[package]
+name = "oxy"
+version = "0.2.0"
+authors = ["Avery Wagar <ajmw.subs@gmail.com>", "Gabe Guadalupe <gabrieljguadalupe@gmail.com>"]
+edition = "2018"
+description = "A rust crate for Doxidize and Dioxin."
+license = "MIT"
+
+[dependencies]
+scrap = "0.5.0"
+serde_derive = "1.0.88"
+bincode = "1.1.2"
+serde = "1.0.88"

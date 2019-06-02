@@ -1,0 +1,47 @@
+[package]
+name = "coro-demo"
+version = "0.1.0"
+authors = ["Y. T. Chung <zonyitoo@gmail.com>"]
+
+[lib]
+name = "cosupport"
+
+[[bin]]
+name = "tcp-echo"
+path = "src/bin/echoserver.rs"
+
+[[bin]]
+name = "http-echo"
+path = "src/bin/httpechoserver.rs"
+
+[[bin]]
+name = "autoexit"
+path = "src/bin/test_autoexit.rs"
+
+[[bin]]
+name = "udp-echo"
+path = "src/bin/udpechoserver.rs"
+
+[dependencies]
+#coroutine = "*"
+num_cpus = "*"
+deque = "*"
+log = "*"
+env_logger = "*"
+#mio = "*"
+clap = "*"
+hyper = "*"
+rand = "*"
+openssl = "*"
+
+#[dependencies.deque]
+#path = "/Users/zonyitoo/Projects/deque"
+
+[dependencies.mio]
+git = "https://github.com/carllerche/mio.git"
+#path = "/Users/zonyitoo/Projects/mio"
+#git = "https://github.com/zonyitoo/mio.git"
+
+[dependencies.coroutine]
+git = "https://github.com/rustcc/coroutine-rs.git"
+#rev = "b17d2a061a763a43f034a5c491387fc1dd5fd2cf"

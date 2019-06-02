@@ -1,0 +1,29 @@
+[package]
+authors = ["Chris Manning <cmanning999@gmail.com>"]
+name = "lunch"
+version = "0.1.0"
+license = "GPL-3.0"
+description = "Command line desktop application launcher"
+keywords = ["launch", "launcher", "lunch"]
+categories = ["command-line-utilities", "os"]
+homepage = "https://github.com/chrismanning/lunch"
+repository = "https://github.com/chrismanning/lunch"
+
+[dependencies]
+clap = "2.29"
+derive_builder = "0.5"
+env_logger = "0.4"
+error-chain = "0.11"
+log = "0.3"
+maplit = "1.0"
+xdg = "2.1"
+peeking_take_while = "0.1"
+users = "*"
+
+[dev-dependencies]
+tempdir = "0.3"
+spectral = "0.6"
+
+[badges]
+maintenance = { status = "experimental" }
+travis-ci = { repository = "chrismanning/lunch", branch = "master" }

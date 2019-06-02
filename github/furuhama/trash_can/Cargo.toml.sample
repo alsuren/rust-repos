@@ -1,0 +1,16 @@
+[package]
+name = "trash_can"
+version = "0.1.0"
+authors = ["furuhama <furuhama@users.noreply.github.com>"]
+
+[dependencies]
+reqwest = "*"
+futures = "*"
+hyper = "*"
+tokio = "*"
+tokio-core = "*"
+dotenv = "*"
+dotenv_codegen = "*"
+serde_json = "*"
+nickel = "*"
+log = "*"

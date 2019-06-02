@@ -1,0 +1,22 @@
+# Copyright © 2017 Bart Massey
+
+# This work is made available under the "MIT License".
+# Please see the file LICENSE in this distribution
+# for license terms.
+
+[package]
+name = "dheap"
+version = "0.1.0"
+authors = ["Bart Massey <bart@cs.pdx.edu>"]
+
+[dev-dependencies]
+criterion = { git = "https://github.com/japaric/criterion.rs.git" }
+rand = "0"
+
+[lib]
+name = "dheap"
+
+# https://stackoverflow.com/a/46017284
+
+[[example]]
+name = "sort"

@@ -1,0 +1,12 @@
+[package]
+name = "catalyst"
+version = "0.1.0"
+authors = ["Mariell Hoversholm <proximyst@proximyst.com>"]
+edition = "2018"
+
+[dependencies]
+
+[features]
+default = ["no_std"]
+
+no_std = []

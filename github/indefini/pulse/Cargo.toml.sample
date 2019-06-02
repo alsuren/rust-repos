@@ -1,0 +1,29 @@
+[package]
+name = "pulse"
+version = "0.1.0"
+authors = ["chris <chris@indefini.org>"]
+
+[lib]
+name = "pulse"
+#crate-type = ["dylib"]
+
+[dependencies]
+uuid = {version ="0.4", features = [ "serde", "v4" ] }
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+libloading = "0.3"
+libc = "*"
+backtrace = "0.3"
+
+[dependencies.dormin]
+#git = "https://github.com/indefini/dormin.git"
+path = "/home/chris/code/dormin/"
+features = ["evas"]
+
+[dependencies.joker-sys]
+path = "/home/chris/code/joker"
+#git = "https://github.com/drasich/joker.git"
+#git = "ssh://git@gitlab.com/indefini/joker.git"
+#branch = "panel"
+

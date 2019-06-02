@@ -1,0 +1,11 @@
+[package]
+name = "miniz"
+version = "0.0.0"
+authors = ["alexchandel@gmail.com"]
+
+[lib]
+name = "miniz"
+
+[dependencies]
+bitflags = "0.7.0"
+libc = "0.2.12"

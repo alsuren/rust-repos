@@ -1,0 +1,21 @@
+[package]
+name = "rocket_extra_codegen"
+version = "0.1.0"
+authors = ["torfmaster <briefe@kebes.de>", "Woyten <woyten.tielesch@online.de>"]
+description = "Additional macros for rocket.rs"
+repository = "https://github.com/Woyten/rocket_extra_codegen"
+readme = "README.md"
+keywords = ["derive", "macros", "rocket"]
+license = "MIT"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "0.15.26"
+quote = "0.6.3"
+
+[dev-dependencies]
+rocket = "0.4.0"
+compiletest_rs = "0.3.18"

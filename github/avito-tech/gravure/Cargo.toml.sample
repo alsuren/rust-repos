@@ -1,0 +1,32 @@
+[package]
+name = "avito_gravure"
+version = "0.0.1"
+authors = [ "Kirill Paltsev <kpaltsev@avito.ru>",
+"Aleksey Moiseev <amoiseev@avito.ru>",
+"Frol Kruchkov <fkuchkov@avito.ru>",
+"Sergey Noskov <snoskov@avito.ru>" ]
+description = "Microservice for image processing"
+license = "MIT"
+
+[dependencies]
+image = "^0.16"
+url="^1.2"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+"quick-error"="~1"
+clap = "^2"
+hyper="^0.11"
+tokio-core="^0.1"
+tokio-io="^0.1"
+futures="^0.1"
+futures-pool = { git = "https://github.com/carllerche/futures-pool" }
+regex="^0.1"
+liquid="^0.10"
+multipart="^0.8"
+num_cpus="^1"
+slog="^2.0"
+slog-json="^2.0"
+slog-term="^2.2"
+slog-async="^2.1"
+slog-scope="^4.0"

@@ -1,0 +1,20 @@
+[package]
+name = "shoehorn_circle"
+version = "0.1.0"
+edition = "2018"
+authors = ["storyfeet <thebeaky@psmail.net>"]
+
+[dependencies]
+
+card_deck={path="../../mlibs/card_deck"}
+lazyf={path="../../mlibs/lazyf"}
+rand = "*"
+enum_derive="*"
+#custom_derive="*"
+macro-attr="*"
+itertools="*"
+serde="*"
+serde_derive="1.0.71"
+serde_json="1.0.26"
+marksman_escape="0.1.2"
+bracket_parse={path="../../mlibs/bracket_parse/"}

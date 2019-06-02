@@ -1,0 +1,18 @@
+[package]
+name = "icevision-score"
+version = "0.1.0"
+authors = ["Artyom Pavlov <newpavlov@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "Scoring software used in the IceVision competition"
+repository = "https://github.com/icevision/score"
+edition = "2018"
+
+[dependencies]
+structopt = "0.2"
+csv = "1"
+serde_derive = "1"
+serde = "1"
+log = "0.4"
+
+[profile.release]
+lto = true

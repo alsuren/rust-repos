@@ -1,0 +1,28 @@
+[package]
+name = "airjump"
+version = "0.1.0"
+authors = ["thiolliere <guillaume.thiolliere@opmbx.org>"]
+license = "MIT/Apache-2.0"
+
+[features]
+default = []
+exclude_all = [] # exclude map.svg and config.toml from the binary
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+lazy_static = "1"
+glium = "0.21"
+svgparser = "0.8"
+fnv = "1.0"
+time = "0.1"
+fps_clock = "2"
+vecmath = "0.3"
+libc = "0.2"
+stdweb = "0.4"
+
+[dependencies.rodio]
+version = "0.8"
+default-features = false
+features = ["flac", "vorbis", "wav"]

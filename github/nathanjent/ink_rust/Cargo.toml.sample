@@ -1,0 +1,25 @@
+[package]
+authors = ["Nathan Jent <nathanjent@nathanjent.com>"]
+name = "ink_rust"
+version = "0.0.1"
+
+[[bin]]
+name = "ink_rust"
+
+[dependencies]
+encoding = "0.2.33"
+error-chain = "0.8.1"
+find_folder = "0.3.0"
+piston2d-graphics = "0.21.1"
+piston_window = "0.64.0"
+slog = "1.4.1"
+svgdom = "0.3.1"
+svgparser = "0.2.1"
+
+[dependencies.clap]
+features = ["yaml"]
+version = "~2.19.0"
+
+[dependencies.conrod]
+features = ["glium", "winit", "piston"]
+version = "0.51.0"

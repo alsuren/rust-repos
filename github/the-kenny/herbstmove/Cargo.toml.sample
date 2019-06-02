@@ -1,0 +1,12 @@
+[package]
+name = "herbstmove"
+version = "0.1.0"
+authors = ["Moritz Ulrich <moritz@tarn-vedra.de>"]
+
+[dependencies]
+getopts = "0.2.14"
+
+[dependencies.x11]
+version = "2.5.1"
+features = ["xlib", "xinput"]
+

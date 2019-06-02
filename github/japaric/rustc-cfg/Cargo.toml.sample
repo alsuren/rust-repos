@@ -1,0 +1,12 @@
+[package]
+authors = ["Jorge Aparicio <jorge@japaric.io>"]
+description = "Runs `rustc --print cfg` and parses the output"
+documentation = "https://docs.rs/rustc-cfg"
+keywords = ["cfg", "rustc", "target", "parser"]
+license = "MIT OR Apache-2.0"
+name = "rustc-cfg"
+repository = "https://github.com/japaric/rustc-cfg"
+version = "0.4.0"
+
+[dependencies]
+failure = "0.1.3"

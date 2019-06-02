@@ -1,0 +1,10 @@
+[package]
+name = "river"
+version = "0.3.3"
+authors = ["thomas"]
+
+[dependencies]
+image = "*"
+clap = "*"
+termion = "*"
+exoquant = "*"

@@ -1,0 +1,15 @@
+[package]
+name = "runtime-fmt"
+version = "0.3.0"
+authors = ["Tad Hardesty <tad@platymuus.com>"]
+
+description = "Runtime-based string formatting"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+keywords = ["format", "fmt", "runtime", "string", "formatting"]
+
+repository = "https://github.com/SpaceManiac/runtime-fmt"
+documentation = "https://docs.rs/runtime-fmt"
+
+[dev-dependencies]
+runtime-fmt-derive = { path = "runtime-fmt-derive", version = "=0.2.0" }

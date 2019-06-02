@@ -1,0 +1,11 @@
+[package]
+name = "rocket_web"
+version = "0.1.0"
+authors = ["redeff <14carlosoto@gmail.com>"]
+
+[dependencies]
+rocket = "0.2.6"
+rocket_codegen = "0.2.6"
+diesel = { version = "0.13.0", features = ["postgres"] }
+diesel_codegen = { version = "0.13.0", features = ["postgres"] }
+dotenv = "0.9.0"

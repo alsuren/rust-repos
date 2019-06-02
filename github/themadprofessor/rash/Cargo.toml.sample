@@ -1,0 +1,33 @@
+[package]
+name = "rash"
+version = "0.6.0"
+authors = ["Stuart Reilly <stu@reilly-family.co.uk>"]
+readme = "Readme.md"
+publish = true
+repository = "https://github.com/themadprofessor/rash"
+description = "Rust-based file hashing tool"
+categories = ["cryptography", "command-line-utilities"]
+keywords = ["hash", "digest", "crypto", "sha3", "md5"]
+license = "MIT/Apache-2.0"
+exclude = [".idea/*", ".gitignore", "rash.iml", "contrib/*"]
+build = "build.rs"
+
+[build-dependencies]
+clap = "2.31"
+
+[dependencies]
+failure = "0.1"
+clap = "2.31"
+md-5 = "0.7"
+digest = {version = "0.7", features = ["std"]}
+blake2 = "0.7"
+ripemd160 = "0.7"
+sha-1 = "0.7"
+whirlpool = "0.7"
+sha2 = "0.7"
+sha3 = "0.7"
+groestl = "0.7"
+
+[dev-dependencies]
+assert_cli = "0.6"
+test-case-derive = "0.2"

@@ -1,0 +1,21 @@
+[package]
+name = "localc"
+version = "0.1.0"
+authors = ["lausek <root@lausek.eu>"]
+
+[features]
+v0-1 = []
+v1-0 = ["v0-1"]
+
+[lib]
+name = "localc"
+path = "src/lib.rs"
+
+[[bin]]
+name = "localc-repl"
+path = "src/bin.rs"
+
+[dependencies]
+regex = "*"
+rand = "0.6.0"
+lazy_static = "*"

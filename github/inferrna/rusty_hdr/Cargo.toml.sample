@@ -1,0 +1,28 @@
+[package]
+name = "rusty_hdr"
+version = "0.1.0"
+authors = ["Илья Ефимов <inferrna@gmail.com>"]
+edition = "2018"
+
+[dependencies.rawloader]
+path = "/home/inferno/dev/rawloader"
+
+[dependencies.demosaic]
+path = "/home/inferno/.dev/demosaic"
+
+[dependencies.demosaic_c]
+path = "/home/inferno/.dev/demosaic_c"
+
+[dependencies]
+bayer = "*"
+image = "*"
+gnuplot = "*"
+resize = "*"
+rayon = "*"
+time = "*"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3

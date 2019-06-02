@@ -1,0 +1,25 @@
+[package]
+name = "jsrs"
+version = "0.1.0"
+authors = [
+    "Terry Sun <terrynsun@gmail.com>",
+    "Saghm Rossi <saghmrossi@gmail.com>"
+]
+
+[dependencies.jsrs-parser]
+git = "https://github.com/rustoscript/js.rs-parser.git"
+
+[dependencies.jsrs-common]
+git = "https://github.com/rustoscript/js.rs-common.git"
+
+[dependencies.french_press]
+git = "https://github.com/rustoscript/french-press"
+
+[dependencies]
+rustyline = "0.2.2"
+uuid = "0.1"
+walkdir = "0.1"
+unescape = "0.1.0"
+docopt = "0.6"
+docopt_macros = "0.6"
+rustc-serialize = "0.3"

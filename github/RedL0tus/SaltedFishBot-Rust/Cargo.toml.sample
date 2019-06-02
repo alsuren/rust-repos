@@ -1,0 +1,17 @@
+[package]
+name = "salted_fish_bot"
+version = "0.1.0"
+authors = ["Kay <redl0tus@noreply.github.com>"]
+
+[dependencies]
+log = { version = "~0.4", features = ["max_level_debug", "release_max_level_warn"] }
+clap = "~2.31"
+toml = "~0.4"
+fern = { version = "~0.5", features = ["colored"] }
+serde = "~1.0"
+chrono = "~0.4"
+futures = "~0.1"
+rusqlite = "~0.13"
+tokio-core = "~0.1"
+serde_derive = "~1.0"
+telegram-bot = { git = "https://github.com/telegram-rs/telegram-bot" }

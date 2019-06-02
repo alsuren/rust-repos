@@ -1,0 +1,30 @@
+[package]
+name = "indexing-str"
+version = "0.2.0"
+edition = "2018"
+
+authors = [
+    "bluss",
+    "Christopher Durham (CAD97) <cad97@cad97.com>",
+]
+description = "Sound unchecked indexing using “generativity”; a fork of bluss/indexing"
+repository = "https://github.com/CAD97/indexing"
+readme = "./README.md"
+keywords = ["data-structure","generativity","no_std","indexing"]
+categories = ["no-std","rust-patterns"]
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "indexing"
+
+[dependencies]
+new_debug_unreachable = "1.0.3"
+
+[features]
+doc = [] # opt in to #[doc(cfg(...))]
+
+[dev-dependencies]
+trybuild = "1.0.4"
+
+[package.metadata.docs.rs]
+all-features = true

@@ -1,0 +1,41 @@
+[package]
+name = "stm32_f3_discovery_experiments"
+version = "0.1.0"
+edition = "2018"
+authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
+readme = "README.md"
+description = "Experimenting with Rust on the STM32F3 Discovery board"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/PhilboBaggins/stm32f3-discovery-experiments"
+
+[dependencies]
+cortex-m = "0.5.8"
+cortex-m-rt = "0.6.5"
+cortex-m-semihosting = "0.3.2"
+panic-halt = "0.2.0"
+
+# Uncomment for the panic example.
+# panic-itm = "0.4.0"
+
+# Uncomment for the allocator example.
+# alloc-cortex-m = "0.3.5"
+
+# Uncomment for the device example.
+# [dependencies.stm32f30x]
+# features = ["rt"]
+# version = "0.7.1"
+
+[dependencies.f3]
+features = ["rt"]
+version = "0.6.1"
+
+# this lets you use `cargo fix`!
+[[bin]]
+name = "stm32_f3_discovery_experiments"
+test = false
+bench = false
+
+[profile.release]
+lto = true # better optimizations
+codegen-units = 1 # better optimizations
+debug = true # symbols are nice and they don't increase the size on Flash

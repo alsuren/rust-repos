@@ -1,0 +1,9 @@
+[package]
+name = "rustcgi"
+version = "0.1.0"
+authors = ["Cedrick Cooke <development@cedrickc.net>"]
+
+[dependencies]
+fastcgi = "1.0.0-beta"
+
+

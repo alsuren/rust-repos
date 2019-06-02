@@ -1,0 +1,10 @@
+[package]
+
+name = "mutant"
+version = "0.0.1"
+authors = ["Geoffroy Couprie <geo.couprie@gmail.com>"]
+license="MIT+Apache2"
+
+[lib]
+name = "mutant"
+crate-type = ["dylib"]

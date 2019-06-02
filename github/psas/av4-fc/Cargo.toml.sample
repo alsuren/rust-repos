@@ -1,0 +1,11 @@
+[package]
+name = "mpu9150"
+version = "0.1.0"
+authors = ["jamey <jamey@minilop.net>"]
+
+[dependencies]
+i2cdev = "0.3.1"
+byteorder = "0.5"
+
+[features]
+nightly = []

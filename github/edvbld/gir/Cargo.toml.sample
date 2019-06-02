@@ -1,0 +1,8 @@
+[package]
+name = "gir"
+version = "0.1.0"
+authors = ["Erik Duveblad <e@dvbld.com>"]
+
+[dependencies]
+sha1 = "0.2.0"
+deflate = "0.7.2"

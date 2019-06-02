@@ -1,0 +1,29 @@
+[package]
+
+name = "reifenfeuerd"
+version = "0.0.1"
+authors = [ "iximeow <me@iximeow.net>" ]
+license = "MIT"
+repository = "https://github.com/iximeow/reifenfeuerd"
+description = """
+a nice twitter client
+"""
+
+[[bin]]
+name = "reifenfeuerd"
+path = "src/main.rs"
+
+[dependencies]
+"termios" = "0.2.2"
+"termion" = "1.4.0"
+"hyper" = "*"
+hyper-tls = "*"
+"oauthcli" = "1.0.6"
+"url" = "*"
+"tokio-core" = "*"
+"futures" = "*"
+"serde_json" = "*"
+"chan" = "*"
+chrono = { version = "0.4", features = ["serde"] }
+serde = "*"
+serde_derive = "*"

@@ -1,0 +1,10 @@
+[package]
+name = "conf_robber"
+version = "0.1.0"
+authors = ["Jack <khevse@gmail.com>"]
+
+[dependencies]
+log = "0.3"
+logger = { path = "./libs/logger" }
+conf_v8 = { path = "./libs/conf_v8" }
+file_system = { path = "./libs/file_system" }

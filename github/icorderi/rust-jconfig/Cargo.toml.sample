@@ -1,0 +1,20 @@
+[package]
+authors = ["Ignacio Corderi <icorderi@msn.com>"]
+name = "jconfig"
+version = "0.1.0"
+
+description = "Configuration / settings backed by JSON files"
+keywords = ["json", "config", "configuration", "settings"]
+
+repository = "https://github.com/icorderi/rust-jconfig"
+homepage = "https://github.com/icorderi/rust-jconfig"
+documentation = "https://icorderi.github.io/rust-jconfig/index.html"
+
+license = "MIT/Apache-2.0"
+
+[dependencies]
+log = "0.3"
+quick-error = "1.0"
+rustc-serialize = "0.3"
+traitobject = "0.0"
+unicase = "1.4"

@@ -1,0 +1,34 @@
+[package]
+name = "pbar"
+version = "0.1.0"
+authors = ["koushiro <https://github.com/koushiro>"]
+description = "A terminal progress bar library for rust."
+#documentation = "http://doc.rust-lang.org/pbar"
+homepage = "https://github.com/koushiro/pbar"
+repository = "https://github.com/koushiro/pbar"
+readme = "README.md"
+keywords = ["terminal", "progress", "bar", "cli"]
+categories = ["command-line-interface", "command-line-utilities"]
+license = "MIT"
+publish = false
+
+[dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+chrono = "0.4"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["consoleapi", "processenv","winbase",  "wincon", "winnt"] }
+
+[[example]]
+name = "simple"
+path = "examples/simple.rs"
+
+[[example]]
+name = "multiple"
+path = "examples/multiple.rs"
+
+[[example]]
+name = "year_progress"
+path = "examples/year_progress.rs"

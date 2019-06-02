@@ -1,0 +1,7 @@
+[package]
+name = "multisig-find"
+version = "0.1.0"
+authors = ["Tomasz Drwięga <tomusdrw@gmail.com>"]
+
+[dependencies]
+web3 = { git="https://github.com/tomusdrw/rust-web3.git" }

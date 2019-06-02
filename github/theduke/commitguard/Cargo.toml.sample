@@ -1,0 +1,10 @@
+[package]
+name = "commitguard"
+version = "0.1.0"
+authors = ["theduke <chris@theduke.at>"]
+license = "MIT"
+
+[dependencies]
+
+[build-dependencies]
+cargo-readme = "2.*"

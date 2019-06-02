@@ -1,0 +1,14 @@
+[package]
+name = "tetris-wlroots"
+description = "Tetris as a Wayland compositor"
+version = "1.0.0"
+repository = "https://github.com/timidger/tetris-wlroots/"
+keywords = ["Wayland", "compositor", "window", "game", "wlroots", "tetris"]
+readme = "README.md"
+license = "MIT"
+authors = ["Timidger <APragmaticPlace@gmail.com>"]
+
+[dependencies]
+wlroots = { git = "https://github.com/swaywm/wlroots-rs/" }
+rusttype = "0.7"
+rand = "0.4"

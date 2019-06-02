@@ -1,0 +1,11 @@
+[package]
+name = "amitdb"
+version = "0.1.0"
+authors = ["amit"]
+
+[dependencies]
+serde_json = "1.0"
+jmespath = "^0.2.0"
+url = "1.7.1"
+rand = "*"
+chrono = "*"

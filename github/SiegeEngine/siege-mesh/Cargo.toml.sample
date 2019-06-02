@@ -1,0 +1,21 @@
+[package]
+name = "siege-mesh"
+version = "0.4.0"
+authors = ["Mike Dilger <mike@optcomp.nz>"]
+description = "Mesh Asset library for the Siege Engine"
+repository = "https://github.com/SiegeEngine/siege-mesh"
+readme = "README.md"
+keywords = [ "siege", "mesh", "graphics" ]
+license = "MIT"
+
+[features]
+default = ["siege-math"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"
+error-chain = "0.12"
+siege-math = { git = "https://github.com/SiegeEngine/siege-math", optional = true }
+cgmath = { version = "0.16", features = ["serde"], optional = true }
+nalgebra = { version = "0.16", features = ["serde-serialize"], optional = true }

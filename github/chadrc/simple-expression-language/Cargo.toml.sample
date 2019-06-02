@@ -1,0 +1,15 @@
+# [package]
+# name = "simple-expression-language"
+# version = "0.1.0"
+# authors = ["chadcollins <chadrcollins91@gmail.com>"]
+# edition = "2018"
+
+[workspace]
+
+members = [
+    "sel_executor",
+    "sel_common",
+    "sel_compiler",
+    "sel_tokenizer",
+    "test_bed"
+]

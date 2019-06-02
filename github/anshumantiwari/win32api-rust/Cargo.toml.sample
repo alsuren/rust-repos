@@ -1,0 +1,9 @@
+[package]
+name = "test_test"
+version = "0.1.0"
+authors = ["Shubhendra Singh Chauhan <withshubh@gmail.com>"]
+
+[dependencies]
+
+winapi = "0.2.7"
+user32-sys = "0.2.0"

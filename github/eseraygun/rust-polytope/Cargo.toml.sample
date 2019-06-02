@@ -1,0 +1,14 @@
+[package]
+name = "polytope"
+version = "0.1.2"
+authors = ["Eser Aygün <eser.aygun@gmail.com>"]
+description = "Data structures and methods for constructing polytopes."
+documentation = "https://docs.rs/polytope/"
+repository = "https://github.com/eseraygun/rust-polytope/"
+readme = "README.md"
+keywords = ["polytope", "geometry", "hypercube", "multidimensional", "multi-dimensional"]
+categories = ["algorithms", "rendering", "science", "visualization"]
+license = "Apache-2.0"
+license-file = "LICENSE"
+
+[dependencies]

@@ -1,0 +1,10 @@
+[package]
+name = "pid1-rust"
+version = "0.1.0"
+authors = ["Chris Done <chrisdone@gmail.com>"]
+
+[dependencies]
+users = "0.7.0"
+chan-signal = "0.3.2"
+chan = "0.1"
+nix = "0.10.0"

@@ -1,0 +1,15 @@
+[package]
+name = "timetable"
+description = "Construct timetables from General Transit Feed Specification (GTFS)"
+version = "0.1.0"
+authors = ["Vincent Ollivier <v@vinc.cc>"]
+repository = "https://github.com/vinc/timetable"
+license = "MIT"
+
+[dependencies]
+transitfeed = { git = "https://github.com/bfrog/transitfeed" }
+chrono = "0.4.0"
+getopts = "0.2.15"
+colored = "1.6.0"
+zip = "0.2.6"
+reqwest = "0.9.16"

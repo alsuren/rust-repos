@@ -1,0 +1,15 @@
+[package]
+name = "niftimath"
+version = "0.1.0"
+authors = ["clement"]
+edition = "2018"
+
+[dependencies]
+count_cache = "0.1"
+docopt = "1.0"
+ndarray = "0.12"
+ndarray-parallel = "0.9"
+nifti = { version = "0.7", features = ["ndarray_volumes"] }
+rayon = "1.0"
+serde = "1.0"
+serde_derive = "1.0"

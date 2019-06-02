@@ -1,0 +1,17 @@
+[package]
+name = "capnp-wrap"
+version = "0.1.0"
+authors = ["Raketa"]
+
+[lib]
+proc-macro = true
+
+[dev-dependencies]
+capnp = "0.8"
+
+[dependencies]
+syn = "0.11"
+quote = "0.3"
+
+[build-dependencies]
+capnpc = "0.8"

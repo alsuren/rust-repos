@@ -1,0 +1,10 @@
+[package]
+name = "testignorerepo"
+version = "0.1.0"
+authors = ["km42"]
+
+[dependencies]
+image = "*"
+
+[dependencies.cgmath]
+git = "https://github.com/brendanzab/cgmath"

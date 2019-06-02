@@ -1,0 +1,9 @@
+[package]
+name = "password_gen"
+version = "0.1.0"
+authors = ["Leobardis1 <10406754+Leobardis1@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+clap="2.33.0"
+rand="0.6.5"

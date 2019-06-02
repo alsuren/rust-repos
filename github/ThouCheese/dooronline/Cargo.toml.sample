@@ -1,0 +1,35 @@
+[package]
+name = "dooronline"
+version = "0.1.0"
+authors = ["Luuk Wester <luuk.wester@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "*"
+rocket_cors = "*"
+sysfs_gpio = "*"
+dotenv = "*"
+jwt = { package = "jsonwebtoken", version = "*" }
+argon2rs = "*"
+rand = "*"
+rand_core = "*"
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+maud = { version = "*", features = ["rocket"] }
+chrono = { version = "*", features = ["serde"] }
+
+[dependencies.diesel]
+version = "*"
+default-features = false
+features = ["postgres", "chrono", ]
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["diesel_postgres_pool", "json"]
+
+[profile.dev]
+incremental = true
+
+# [profile.release]
+# lto = true

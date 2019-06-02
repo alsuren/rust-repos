@@ -1,0 +1,9 @@
+[package]
+name = "club_backend"
+version = "0.1.0"
+authors = ["Starccy <452276725@qq.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+rocket_codegen = "0.4.0"

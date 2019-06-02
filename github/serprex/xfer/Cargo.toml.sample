@@ -1,0 +1,16 @@
+[package]
+name = "xfer"
+version = "0.0.0"
+authors = ["serprex"]
+
+[[bin]]
+name = "xfer"
+path = "xfer.rs"
+
+[[bin]]
+name = "vmrepl"
+path = "vmrepl.rs"
+
+[dependencies]
+lazy_static = "*"
+#rustyline = "0.1.0"

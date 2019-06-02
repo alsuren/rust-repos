@@ -1,0 +1,10 @@
+[package]
+name = "hl-portfolio-analysis"
+version = "0.1.0"
+authors = ["Matthew Forrester <matthew.forrester@speechmarks.com>"]
+edition = "2018"
+
+[dependencies]
+csv = "1"
+serde = { version = "1.0", features = ["derive"] }
+quick-error = { version = "1.2.2" }

@@ -1,0 +1,28 @@
+[package]
+
+name = "alexandria-server"
+version = "0.0.1"
+authors = ["Corey Richardson <corey@octayn.net>"]
+
+[dependencies]
+iron = "*"
+logger = "*"
+router = "*"
+persistent = "*"
+hyper = "*"
+url = "*"
+lazy_static = "*"
+postgres = "*"
+mount = "*"
+bodyparser = "*"
+time = "*"
+rust-crypto = "*"
+
+[dependencies.alexandria]
+git = "https://github.com/cmr/alexandria-common"
+
+[dependencies.urlencoded]
+git = "https://github.com/iron/urlencoded"
+
+[dependencies.static]
+git = "https://github.com/cmr/static"

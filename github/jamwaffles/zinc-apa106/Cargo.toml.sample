@@ -1,0 +1,23 @@
+[package]
+name = "zinc_from_scratch_launchpad"
+version = "0.1.0"
+authors = ["James Waples <jamwaffles@gmail.com>"]
+
+[dependencies]
+rust-libcore = "*"
+
+[dependencies.zinc]
+git = "https://github.com/hackndev/zinc"
+features = [ "mcu_tiva_c" ]
+
+[dependencies.macro_platformtree]
+git = "https://github.com/hackndev/zinc"
+path = "/macro_platformtree"
+
+[dependencies.ioreg]
+git = "https://github.com/hackndev/zinc"
+path = "/ioreg"
+
+[dependencies.platformtree]
+git = "https://github.com/hackndev/zinc"
+path = "/platformtree"

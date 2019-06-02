@@ -1,0 +1,21 @@
+[package]
+name = "media_box"
+version = "0.1.0"
+authors = ["passchaos <greedwolf.dss@gmail.com>"]
+
+[dependencies]
+getopts = "*"
+num = "*"
+ramp = "*"
+hyper = "*"
+mime = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+# ring = "*"
+rust-crypto = "*"
+rand = "*"
+base64 = "*"
+url = "*"
+log = "*"
+env_logger = "*"

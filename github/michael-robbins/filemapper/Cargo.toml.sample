@@ -1,0 +1,15 @@
+[package]
+name = "file_mapper"
+version = "0.1.0"
+authors = ["Michael Robbins <michael@dalmura.com.au>"]
+homepage = "https://github.com/michael-robbins/filemapper"
+repository = "https://github.com/michael-robbins/filemapper"
+
+[dependencies]
+yaml-rust = "0.*.*"
+getopts = "0.*.*"
+flate2 = "1.*.*"
+bzip2 = "0.*.*"
+log = "0.*.*"
+env_logger = "0.*.*"
+csv = "1.*.*"

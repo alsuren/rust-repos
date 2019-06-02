@@ -1,0 +1,8 @@
+[package]
+name = "tis-100"
+version = "0.1.0"
+authors = ["Tyler Hall <tylerwhall@gmail.com>"]
+
+[dependencies]
+regex = "0.1.8"
+ncurses = "5.73.0"

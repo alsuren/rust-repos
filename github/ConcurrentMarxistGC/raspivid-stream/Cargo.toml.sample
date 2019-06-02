@@ -1,0 +1,13 @@
+[package]
+name = "raspivid-stream"
+version = "0.1.0"
+authors = ["ConcurrentMarxistGC <concurrentmarxistgc@users.noreply.github.com>"]
+
+[dependencies]
+lazy_static="*"
+iron="0.6"
+log="0.3"
+env_logger="*"
+serde="*"
+serde_derive="*"
+toml="0.4"

@@ -1,0 +1,10 @@
+[package]
+name = "rust_chip8"
+version = "0.1.0"
+authors = ["Aengus McMillin <aengusm@fb.com>"]
+
+[dependencies]
+byteorder = "0.5"
+time = "0.1"
+sdl2 = "0.19"
+rand = "0.3"

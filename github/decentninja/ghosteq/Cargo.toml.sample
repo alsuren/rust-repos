@@ -1,0 +1,8 @@
+[package]
+name = "ghosteq"
+version = "0.1.0"
+
+[dependencies]
+hound = "3.2.0"
+image="*"
+stft = "*"

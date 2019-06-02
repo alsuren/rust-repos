@@ -1,0 +1,9 @@
+[package]
+name = "game"
+version = "0.1.0"
+authors = ["demivan"]
+
+[dependencies]
+amethyst = "0.6.0"
+genmesh = "0.5.0"
+amethyst_renderer = "0.6.1"

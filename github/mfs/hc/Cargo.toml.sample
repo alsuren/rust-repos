@@ -1,0 +1,10 @@
+[package]
+name = "hc"
+version = "0.1.0"
+authors = ["Mike Sampson <mike@sambodata.com>"]
+
+[dependencies]
+clap = "2.29.0"
+term = "0.5.1"
+rand = "0.4"
+libc = "*"

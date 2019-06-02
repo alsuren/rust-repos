@@ -1,0 +1,10 @@
+[package]
+name = "sdf-text"
+version = "0.1.0"
+authors = ["Radek Brich <radek.brich@devl.cz>"]
+
+[dependencies]
+freetype-rs = { git = "https://github.com/rbrich/freetype-rs" }
+glium = "0.17.1"
+roots = "0.0.2"
+rect_packer = "0.2.0"

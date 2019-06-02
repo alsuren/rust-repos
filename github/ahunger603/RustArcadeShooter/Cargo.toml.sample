@@ -1,0 +1,11 @@
+[package]
+name = "RustArcadeShooter"
+version = "0.1.0"
+authors = ["Ashton Hunger <ahunger@pdx.edu>"]
+build = "build.rs"
+
+[dependencies]
+ggez = "0.4"
+nalgebra = "0.14.1"
+ncollide = "0.14.1"
+rand = "0.3.0"

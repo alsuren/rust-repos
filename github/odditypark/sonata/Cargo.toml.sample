@@ -1,0 +1,16 @@
+[lib]
+path = "src/sonata.rs"
+
+[package]
+name = "sonata"
+version = "0.1.0"
+authors = ["clearloop <udtrokia@gmail.com>"]
+edition = "2018"
+readme = "README.md"
+description = "Abstract unconstrained sonata in s-expr."
+license = "MIT"
+documentation = "https://docs.rs/sonata"
+homepage = "https://github.com/clearloop/sonata"
+repository = "https://github.com/clearloop/sonata"
+categories = ["no-std"]
+keywords = ["s-expr", "lisp", "language"]

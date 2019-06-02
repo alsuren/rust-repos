@@ -1,0 +1,10 @@
+[package]
+name = "rnps"
+version = "0.1.0"
+authors = ["John Sirois <john.sirois@gmail.com>"]
+
+[dependencies]
+html5ever = "*"
+hyper = "*"
+hyper-native-tls = "*"
+url = "*"

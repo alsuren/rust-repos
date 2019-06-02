@@ -1,0 +1,22 @@
+[package]
+name = "eden-server"
+version = "0.2.0"
+authors = ["Claus Matzinger <claus.matzinger+kb@gmail.com>"]
+
+[features]
+default = []
+
+[dependencies]
+medallion = "^1.1"
+serde = "^0.9.6"
+serde_derive = "^0.9.6"
+serde_json = "^0.9.6"
+iron = "^0.5.1"
+chrono = "*"
+bodyparser = {git = "https://github.com/iron/body-parser.git"}
+persistent = "*"
+log4rs = { version = "*", features = ["serde_yaml"] }
+log = "*"
+toml = "0.3.0"
+cratedb = "^0.2.0"
+clap = "*"

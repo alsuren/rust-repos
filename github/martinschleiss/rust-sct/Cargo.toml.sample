@@ -1,0 +1,12 @@
+[package]
+name = "rust-sct"
+version = "0.1.0"
+authors = ["martin"]
+build= "src/sct.rs"
+
+[dependencies]
+getopts = "0.2.14"
+time = "0.1.34"
+
+[build-dependencies]
+gcc = "*"

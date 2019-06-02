@@ -1,0 +1,16 @@
+[package]
+name = "buddhabrot"
+version = "0.1.0"
+authors = ["Leland Batey <lelandbatey@gmail.com>"]
+
+[dependencies]
+argparse = "*"
+regex = "0.2"
+image = "*"
+rand = "0.3"
+time = "*"
+num = "0.1"
+
+serde_derive = "1.0"
+serde = "1.0"
+serde_json = "1.0"

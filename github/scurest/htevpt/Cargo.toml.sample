@@ -1,0 +1,12 @@
+[package]
+name = "htevpt"
+version = "0.1.0"
+authors = ["scurest <scurest@users.noreply.github.com>"]
+license = "0BSD"
+
+[dev-dependencies]
+httparse = "1.2.4" # used for benching
+
+[profile.bench]
+lto = true
+opt-level = 3

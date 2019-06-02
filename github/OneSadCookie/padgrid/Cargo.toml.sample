@@ -1,0 +1,15 @@
+[package]
+name = "padgrid"
+version = "0.1.0"
+authors = ["Keith Bauer <onesadcookie@gmail.com>"]
+
+[dependencies]
+futures = "*"
+hyper = { git = "https://github.com/hyperium/hyper.git" }
+image = "*"
+lazy_static = "*"
+log = "*"
+regex = "*"
+rocket = "0.3.16"
+rocket_codegen = "0.3.16"
+tokio-core = "*"

@@ -1,0 +1,9 @@
+[package]
+name = "rusgit"
+version = "3.0.0"
+authors = ["miyagaw61 <miyagaw61@gmail.com>"]
+
+[dependencies]
+clap = "2.29"
+colored = "1.6"
+regex = "0.2.5"

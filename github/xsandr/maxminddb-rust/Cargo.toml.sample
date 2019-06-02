@@ -1,0 +1,18 @@
+[package]
+name = "maxminddb"
+version = "0.1.0"
+authors = ["Alexandr Karasev <xsandr.k@gmail.com>"]
+edition = "2018"
+
+[profile.bench]
+debug = true
+
+[dependencies]
+
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "benchmark"
+harness = false

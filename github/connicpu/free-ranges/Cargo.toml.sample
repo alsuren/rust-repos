@@ -1,0 +1,13 @@
+[package]
+name = "free-ranges"
+version = "1.0.7"
+authors = ["Connie Hilarides <conni_h@outlook.com>"]
+license = "MIT"
+repository = "https://github.com/Connicpu/free-ranges"
+documentation = "https://docs.rs/free-ranges"
+readme = "README.md"
+keywords = ["free", "range", "ranges", "indices", "datastructures"]
+categories = ["data-structures"]
+description = """
+An efficient data structure for keeping track of indices which are either free or not
+"""

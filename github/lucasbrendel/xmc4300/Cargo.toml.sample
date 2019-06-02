@@ -1,0 +1,16 @@
+[package]
+name = "xmc4300"
+version = "0.1.0"
+authors = ["Lucas Brendel <lucasbrendel@gmail.com>"]
+
+[dependencies]
+cortex-m = "0.5.8"
+bare-metal = "0.2.4"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.7"
+
+[features]
+rt = ["cortex-m-rt"]

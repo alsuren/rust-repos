@@ -1,0 +1,11 @@
+[package]
+name = "blaze"
+version = "0.1.0"
+authors = ["Jonathan"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1"
+lazy_static = "1"
+libc = "0.2"
+static_assertions = "0.3"

@@ -1,0 +1,472 @@
+[package]
+name="apue"
+version = "0.0.2"
+authors = ["philipp.keller@gmail.com"]
+description = "Code from 'Advanced Programming in the UNIX environment' (APUE) ported to Rust"
+homepage = "https://github.com/philippkeller/apue-rust"
+repository = "https://github.com/philippkeller/apue-rust"
+keywords = [
+  "unix",
+  "book",
+  "libc"
+]
+build = "my_build.rs"
+
+[lib]
+name = "apue"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "*"
+errno = "*"
+clap = "*"
+regex = "*"
+rand = "*"
+num = "*"
+
+[build-dependencies]
+gcc = { version = "0.3", features = ["parallel"] }
+
+[[bin]]
+name="f03-list-files"
+path = "src/bin/01-overview/f03-list-files.rs"
+
+[[bin]]
+name="f04-copy-stdin-stdout"
+path = "src/bin/01-overview/f04-copy-stdin-stdout.rs"
+
+[[bin]]
+name="f05-copy-stdin-stdout2"
+path = "src/bin/01-overview/f05-copy-stdin-stdout2.rs"
+
+[[bin]]
+name="f06-getpid"
+path = "src/bin/01-overview/f06-getpid.rs"
+
+[[bin]]
+name="f07-read-execute"
+path = "src/bin/01-overview/f07-read-execute.rs"
+
+[[bin]]
+name="f08-strerror-perror"
+path = "src/bin/01-overview/f08-strerror-perror.rs"
+
+[[bin]]
+name="f09-userid-groupid"
+path = "src/bin/01-overview/f09-userid-groupid.rs"
+
+[[bin]]
+name="f10-read-execute2"
+path = "src/bin/01-overview/f10-read-execute2.rs"
+
+[[bin]]
+name="f14-limits"
+path = "src/bin/02-unix-standards/f14-limits.rs"
+
+[[bin]]
+name="f16-pathname-alloc-space"
+path = "src/bin/02-unix-standards/f16-pathname-alloc-space.rs"
+
+[[bin]]
+name="f17-open-max"
+path = "src/bin/02-unix-standards/f17-open-max.rs"
+
+[[bin]]
+name="f01-seek-stdio"
+path = "src/bin/03-fileio/f01-seek-stdio.rs"
+
+[[bin]]
+name="f02-file-with-hole"
+path = "src/bin/03-fileio/f02-file-with-hole.rs"
+
+[[bin]]
+name="f05-copy-stdin-stdout"
+path = "src/bin/03-fileio/f05-copy-stdin-stdout.rs"
+
+[[bin]]
+name="f11-fcntl"
+path = "src/bin/03-fileio/f11-fcntl.rs"
+
+[[bin]]
+name="f12-setfl"
+path = "src/bin/03-fileio/f12-setfl.rs"
+
+[[bin]]
+name="e02-dup2"
+path = "src/bin/03-fileio/e02-dup2.rs"
+
+[[bin]]
+name="e06-read-write-seek"
+path = "src/bin/03-fileio/e06-read-write-seek.rs"
+
+[[bin]]
+name="f03-file-type"
+path = "src/bin/04-files-and-directories/f03-file-type.rs"
+
+[[bin]]
+name="f08-access"
+path = "src/bin/04-files-and-directories/f08-access.rs"
+
+[[bin]]
+name="f09-umask"
+path = "src/bin/04-files-and-directories/f09-umask.rs"
+
+[[bin]]
+name="f12-chmod"
+path = "src/bin/04-files-and-directories/f12-chmod.rs"
+
+[[bin]]
+name="f16-unlink"
+path = "src/bin/04-files-and-directories/f16-unlink.rs"
+
+[[bin]]
+name="f21-futimens"
+path = "src/bin/04-files-and-directories/f21-futimens.rs"
+
+[[bin]]
+name="f22-path-traversal"
+path = "src/bin/04-files-and-directories/f22-path-traversal.rs"
+
+[[bin]]
+name="f23-chdir"
+path = "src/bin/04-files-and-directories/f23-chdir.rs"
+
+[[bin]]
+name="f24-getcwd"
+path = "src/bin/04-files-and-directories/f24-getcwd.rs"
+
+[[bin]]
+name="f25-st_dev"
+path = "src/bin/04-files-and-directories/f25-st_dev.rs"
+
+[[bin]]
+name="e06-cp-sparse"
+path = "src/bin/04-files-and-directories/e06-cp-sparse.rs"
+
+[[bin]]
+name="e16-dir-tree-depth"
+path = "src/bin/04-files-and-directories/e16-dir-tree-depth.rs"
+
+[[bin]]
+name="e17-unlink-fd1"
+path = "src/bin/04-files-and-directories/e17-unlink-fd1.rs"
+
+[[bin]]
+name="e01-setbuf-setvbuf"
+path = "src/bin/05-stdio/e01-setbuf-setvbuf.rs"
+
+[[bin]]
+name="e02-fgets-4"
+path = "src/bin/05-stdio/e02-fgets-4.rs"
+
+[[bin]]
+name="e07-fmemopen-bsd"
+path = "src/bin/05-stdio/e07-fmemopen-bsd.rs"
+
+[[bin]]
+name="f04-getc"
+path = "src/bin/05-stdio/f04-getc.rs"
+
+[[bin]]
+name="f05-fgets"
+path = "src/bin/05-stdio/f05-fgets.rs"
+
+[[bin]]
+name="f11-check-buffered"
+path = "src/bin/05-stdio/f11-check-buffered.rs"
+
+[[bin]]
+name="f12-tmpnam-tmpfile"
+path = "src/bin/05-stdio/f12-tmpnam-tmpfile.rs"
+
+[[bin]]
+name="f13-mkstemp"
+path = "src/bin/05-stdio/f13-mkstemp.rs"
+
+[[bin]]
+name="f15-fmemopen"
+path = "src/bin/05-stdio/f15-fmemopen.rs"
+
+[[bin]]
+name="e01-shadow-pw"
+path = "src/bin/06-system-data-files/e01-shadow-pw.rs"
+
+[[bin]]
+name="e03-uname"
+path = "src/bin/06-system-data-files/e03-uname.rs"
+
+[[bin]]
+name="e04-time_t-wrap"
+path = "src/bin/06-system-data-files/e04-time_t-wrap.rs"
+
+[[bin]]
+name="e05-strftime"
+path = "src/bin/06-system-data-files/e05-strftime.rs"
+
+[[bin]]
+name="f02-getpwnam"
+path = "src/bin/06-system-data-files/f02-getpwnam.rs"
+
+[[bin]]
+name="f11-strftime"
+path = "src/bin/06-system-data-files/f11-strftime.rs"
+
+#[[bin]]
+#name="f01-main"
+#path = "src/bin/07-process-env/f01-main.rs"
+
+[[bin]]
+name="f03-atexit"
+path = "src/bin/07-process-env/f03-atexit.rs"
+
+#[[bin]]
+#name="f04-echo"
+#path = "src/bin/07-process-env/f04-echo.rs"
+
+[[bin]]
+name="f16-rlimits"
+path = "src/bin/07-process-env/f16-rlimits.rs"
+
+[[bin]]
+name="e05-atexit-type"
+path = "src/bin/07-process-env/e05-atexit-type.rs"
+
+[[bin]]
+name="f01-fork"
+path = "src/bin/08-process-cntl/f01-fork.rs"
+
+[[bin]]
+name="f03-vfork"
+path = "src/bin/08-process-cntl/f03-vfork.rs"
+
+[[bin]]
+name="f06-exit-status"
+path = "src/bin/08-process-cntl/f06-exit-status.rs"
+
+[[bin]]
+name="f08-avoid-zombie"
+path = "src/bin/08-process-cntl/f08-avoid-zombie.rs"
+
+[[bin]]
+name="f12-race-condition"
+path = "src/bin/08-process-cntl/f12-race-condition.rs"
+
+[[bin]]
+name="f16-exec"
+path = "src/bin/08-process-cntl/f16-exec.rs"
+
+[[bin]]
+name="f17-echo-all"
+path = "src/bin/08-process-cntl/f17-echo-all.rs"
+
+[[bin]]
+name="f20-exec-interpreter"
+path = "src/bin/08-process-cntl/f20-exec-interpreter.rs"
+
+[[bin]]
+name="f23-system"
+path = "src/bin/08-process-cntl/f23-system.rs"
+
+[[bin]]
+name="f24-userid-system"
+path = "src/bin/08-process-cntl/f24-userid-system.rs"
+
+[[bin]]
+name="f25-userid-print"
+path = "src/bin/08-process-cntl/f25-userid-print.rs"
+
+[[bin]]
+name="f28-accounting"
+path = "src/bin/08-process-cntl/f28-accounting.rs"
+
+[[bin]]
+name="f29-acdata"
+path = "src/bin/08-process-cntl/f29-acdata.rs"
+
+[[bin]]
+name="f30-nice"
+path = "src/bin/08-process-cntl/f30-nice.rs"
+
+[[bin]]
+name="f31-times"
+path = "src/bin/08-process-cntl/f31-times.rs"
+
+[[bin]]
+name="e02-vfork-stack"
+path = "src/bin/08-process-cntl/e02-vfork-stack.rs"
+
+[[bin]]
+name="e03-waitid"
+path = "src/bin/08-process-cntl/e03-waitid.rs"
+
+[[bin]]
+name="e06-zombie"
+path = "src/bin/08-process-cntl/e06-zombie.rs"
+
+[[bin]]
+name="e07-exec-opendir"
+path = "src/bin/08-process-cntl/e07-exec-opendir.rs"
+
+[[bin]]
+name="f12-orphan-process-grp"
+path = "src/bin/09-process-relations/f12-orphan-process-grp.rs"
+
+[[bin]]
+name="e02-child-session"
+path = "src/bin/09-process-relations/e02-child-session.rs"
+
+[[bin]]
+name="f02-sigusr"
+path = "src/bin/10-signals/f02-sigusr.rs"
+
+[[bin]]
+name="f05-nonreentrant"
+path = "src/bin/10-signals/f05-nonreentrant.rs"
+
+[[bin]]
+name="f06-sigcld-systemv"
+path = "src/bin/10-signals/f06-sigcld-systemv.rs"
+
+[[bin]]
+name="f07-sleep-impl"
+path = "src/bin/10-signals/f07-sleep-impl.rs"
+
+[[bin]]
+name="f10-read-timeout"
+path = "src/bin/10-signals/f10-read-timeout.rs"
+
+[[bin]]
+name="f12-sigset-impl"
+path = "src/bin/10-signals/f12-sigset-impl.rs"
+
+[[bin]]
+name="f14-print-signal-mask"
+path = "src/bin/10-signals/f14-print-signal-mask.rs"
+
+[[bin]]
+name="f15-sigpending"
+path = "src/bin/10-signals/f15-sigpending.rs"
+
+[[bin]]
+name="f22-signal-protection"
+path = "src/bin/10-signals/f22-signal-protection.rs"
+
+[[bin]]
+name="f23-sigsuspend-global"
+path = "src/bin/10-signals/f23-sigsuspend-global.rs"
+
+[[bin]]
+name="f25-abort"
+path = "src/bin/10-signals/f25-abort.rs"
+
+[[bin]]
+name="f26-system-ed"
+path = "src/bin/10-signals/f26-system-ed.rs"
+
+[[bin]]
+name="f29-sleep"
+path = "src/bin/10-signals/f29-sleep.rs"
+
+[[bin]]
+name="f31-sigtstp-handler"
+path = "src/bin/10-signals/f31-sigtstp-handler.rs"
+
+[[bin]]
+name="e02-sig2str"
+path = "src/bin/10-signals/e02-sig2str.rs"
+
+[[bin]]
+name="e05-timers"
+path = "src/bin/10-signals/e05-timers.rs"
+
+[[bin]]
+name="e06-sync-parent-child"
+path = "src/bin/10-signals/e06-sync-parent-child.rs"
+
+[[bin]]
+name="e09-all-signals"
+path = "src/bin/10-signals/e09-all-signals.rs"
+
+[[bin]]
+name="e10-sleep60"
+path = "src/bin/10-signals/e10-sleep60.rs"
+
+[[bin]]
+name="e11-stdin-stdout-100"
+path = "src/bin/10-signals/e11-stdin-stdout-100.rs"
+
+[[bin]]
+name="e12-fwrite-1gb"
+path = "src/bin/10-signals/e12-fwrite-1gb.rs"
+
+[[bin]]
+name="f02-thread-id"
+path = "src/bin/11-threads/f02-thread-id.rs"
+
+[[bin]]
+name="f03-thread-exit"
+path = "src/bin/11-threads/f03-thread-exit.rs"
+
+[[bin]]
+name="f04-bogus-pthread-exit"
+path = "src/bin/11-threads/f04-bogus-pthread-exit.rs"
+
+[[bin]]
+name="f05-thread-cleanup"
+path = "src/bin/11-threads/f05-thread-cleanup.rs"
+
+[[bin]]
+name="f10-mutex"
+path = "src/bin/11-threads/f10-mutex.rs"
+
+[[bin]]
+name="f11-two-mutexes"
+path = "src/bin/11-threads/f11-two-mutexes.rs"
+
+[[bin]]
+name="f12-simplified-locking"
+path = "src/bin/11-threads/f12-simplified-locking.rs"
+
+[[bin]]
+name="f13-timedlock"
+path = "src/bin/11-threads/f13-timedlock.rs"
+
+[[bin]]
+name="f14-reader-writer-lock"
+path = "src/bin/11-threads/f14-reader-writer-lock.rs"
+
+[[bin]]
+name="f15-conditional-var"
+path = "src/bin/11-threads/f15-conditional-var.rs"
+
+[[bin]]
+name="f16-barrier"
+path = "src/bin/11-threads/f16-barrier.rs"
+
+[[bin]]
+name="e01-pass-struct"
+path = "src/bin/11-threads/e01-pass-struct.rs"
+
+[[bin]]
+name="f04-detached-thread"
+path = "src/bin/12-thread-control/f04-detached-thread.rs"
+
+[[bin]]
+name="f08-recursive-mutex"
+path = "src/bin/12-thread-control/f08-recursive-mutex.rs"
+
+[[bin]]
+name="f11-getenv-nonreentrant"
+path = "src/bin/12-thread-control/f11-getenv-nonreentrant.rs"
+
+[[bin]]
+name="f12-getenv-reentrant"
+path = "src/bin/12-thread-control/f12-getenv-reentrant.rs"
+
+[[bin]]
+name="f13-getenv-setspecific"
+path = "src/bin/12-thread-control/f13-getenv-setspecific.rs"
+
+[[bin]]
+name="f16-signal-handling"
+path = "src/bin/12-thread-control/f16-signal-handling.rs"

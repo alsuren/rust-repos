@@ -1,0 +1,14 @@
+[package]
+name = "rr-mux"
+version = "0.7.1"
+authors = ["Ryan Kurte <ryankurte@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/ryankurte/rust-rr-mux"
+description = "A Request Response Multiplexer for building protocol handlers etc."
+license = "MIT"
+
+[dependencies]
+futures = "0.1.25"
+log = "0.4.6"
+derive_builder = "0.7.0"
+

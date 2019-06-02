@@ -1,0 +1,12 @@
+[package]
+name = "raptortime"
+version = "0.1.0"
+authors = ["VelocityRa <makren67@gmail.com>"]
+
+[dependencies]
+argparse = "*"
+log = "*"
+env_logger = "*"
+byteorder = "0.5"
+enum_primitive = "*"
+num = "*"

@@ -1,0 +1,11 @@
+[project]
+name = "mittens"
+version = "0.0.0"
+authors = ["Erik Price"]
+
+[[bin]]
+name = "mittens"
+path = "src/bin/mittens.rs"
+
+[dependencies.knuckle]
+git = "https://github.com/erik/knuckle"

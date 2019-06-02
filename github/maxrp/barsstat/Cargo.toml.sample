@@ -1,0 +1,14 @@
+[package]
+name = "barsstat"
+version = "0.0.1"
+authors = [ "Max Parmer <maxp@trystero.is>" ]
+build = "build.rs"
+
+[build-dependencies.gcc]
+gcc = "0.3.5"
+
+[dependencies.time]
+time = "0.1.25"
+
+[[bin]]
+name = "barsstat"

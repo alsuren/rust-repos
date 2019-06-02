@@ -1,0 +1,35 @@
+[package]
+name = "Habitat Builder"
+version = "0.1.0"
+authors = ["Travis Elliott Davis <edavis@chef.io>", "Josh Black <jblack@chef.io>"]
+
+[dependencies]
+chrono = { version = "*", features = ["serde"] }
+clap = "*"
+diesel = { version = "*", features = ["postgres", "chrono"] }
+diesel_migrations = "*"
+failure = "*"
+r2d2 = "*"
+r2d2-diesel = "*"
+rocket = "*"
+rocket_codegen = "*"
+rocket_contrib = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+tempdir = "*"
+toml = { version = "*", default-features = false }
+url = "*"
+rusoto_core = "*"
+rusoto_s3 = "*"
+rusoto_credential = "*"
+
+[dependencies.habitat_core]
+git = "https://github.com/habitat-sh/core.git"
+
+
+[[bin]]
+name = "builder"
+path = "src/main.rs"
+doc = false
+

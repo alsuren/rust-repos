@@ -1,0 +1,21 @@
+[package]
+name = "warp-diesel-ructe-sample"
+version = "0.1.0"
+authors = ["Rasmus Kaj <kaj@kth.se>"]
+edition = "2018"
+
+build = "src/build.rs"
+
+[build-dependencies]
+ructe = { version = "0.6.2", features = ["sass", "mime03", "warp"] }
+
+[dependencies]
+warp = "0.1.14"
+mime = "0.3.0"
+env_logger = "0.6.0"
+log = "0.4.6"
+diesel = { version = "1.0.0", features = ["r2d2", "postgres"] }
+dotenv = "0.14.1"
+serde = { version = "1.0.0", features = ["derive"] }
+bcrypt = "0.4.0"
+rand = "0.6.0"

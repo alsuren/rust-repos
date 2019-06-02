@@ -1,0 +1,56 @@
+[package]
+name = "xcbalt"
+version = "0.1.0"
+authors = ["Eduardo Sánchez Muñoz <esm@eduardosm.net>"]
+license = "MIT/Apache-2.0"
+build = "build.rs"
+
+[features]
+xlib_xcb = ["x11/xlib"]
+
+composite = ["xfixes"]
+damage = ["xfixes"]
+dpms = []
+dri2 = []
+dri3 = []
+ge = []
+glx = []
+present = ["render", "xfixes", "sync"]
+randr = ["render"]
+record = []
+render = []
+res = []
+screensaver = []
+shape = []
+shm = []
+sync = []
+xevie = []
+xf86dri = []
+xf86vidmode = []
+xfixes = ["render", "shape"]
+xinerama = []
+xinput = ["xfixes"]
+xkb = []
+xprint = []
+xselinux = []
+xtest = []
+xvmc = ["xv"]
+xv = ["shm"]
+
+# ge and xf86vidmode are apparently nor built neither installed by libxcb C project
+# all others are in debug_all whose purpose is to check build of extensions
+debug_all_exts = ["composite", "damage", "dpms", "dri2", "dri3", "glx", "present",
+                  "randr", "record", "render", "res", "screensaver", "shape", "shm",
+                  "sync", "xevie", "xf86dri", "xfixes", "xinerama", "xinput", "xkb",
+                  "xprint", "xselinux", "xtest", "xvmc", "xv"]
+debug_all = ["debug_all_exts", "xlib_xcb"]
+all_exts = ["debug_all_exts", "ge", "xf86vidmode"]
+all = ["all_exts", "xlib_xcb"]
+
+[dependencies]
+libc = "0.2"
+
+[dependencies.x11]
+version = "2.15"
+optional = true
+features = ["xlib"]

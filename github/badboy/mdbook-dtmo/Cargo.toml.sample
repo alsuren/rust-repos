@@ -1,0 +1,24 @@
+[package]
+name = "mdbook-dtmo"
+version = "0.3.3-alpha.0"
+authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
+# Don't publish it to crates.io
+publish = false
+
+[dependencies]
+clap = "2.32.0"
+chrono = "0.4"
+env_logger = "0.5.10"
+iron = "0.6.0"
+log = "0.4.5"
+mdbook = { git = "https://github.com/badboy/mdBook", branch = "fix-section-numbering" }
+open = "1.2.2"
+staticfile = "0.5.0"
+ws = "0.7.8"
+notify = "4.0"
+
+[dependencies.mdbook-mermaid]
+git = "https://github.com/badboy/mdbook-mermaid"
+
+[dependencies.mdbook-toc]
+git = "https://github.com/badboy/mdbook-toc"

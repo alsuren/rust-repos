@@ -1,0 +1,22 @@
+[package]
+name = "HttpFramework-rust"
+version = "0.0.1"
+authors = ["rooat.com welling1234@gmail.com>"]
+keywords = ["web-framework", "http", "efficiency"]
+description = "Fast http web framework for Rust"
+categories = ["network-programming", "web-programming"]
+exclude = [".gitignore", "examples/*"]
+readme = "README.md"
+license = "LSC"
+hompage = "https://github.com/rooat/HttpFramework-rust"
+repository = "https://github.com/rooat/HttpFramework-rust"
+
+[dependencies]
+bytes = "0.4"
+futures = "0.1"
+httparse = "1.1"
+tokio = "0.1"
+tokio-io = "0.1"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+tokio-codec = "0.1"

@@ -1,0 +1,16 @@
+[package]
+name = "finance"
+version = "0.0.0"
+authors = ["Mohamed Hayibor <mohamedhayibor@gmail.com>"]
+
+publish = true
+description = "This crate provides utility functions for the most common operations in Finance."
+
+documentation = "https://github.com/mohamedhayibor/finance"
+repository = "https://github.com/mohamedhayibor/finance"
+
+license = "GPL-2.0"
+keywords = ["finance", "worth", "financial", "value", "calculations"]
+
+[dependencies]
+round = "0.1.0"

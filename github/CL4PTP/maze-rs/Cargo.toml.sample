@@ -1,0 +1,18 @@
+[package]
+name = "maze"
+version = "0.3.0"
+authors = ["Bence Meszaros <bence.me@gmail.com>"]
+
+[lib]
+crate-type = ["rlib", "dylib"]
+
+[dependencies]
+rand = "0.3.8"
+mmap = "0.1.1"
+num_cpus = "0.2.6"
+docopt = "0.6.70"
+docopt_macros = "0.6.70"
+rustc-serialize = "0.3.15"
+regex = "0.1.41"
+byteorder = "0.3.11"
+libc = "0.1.8"

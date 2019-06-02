@@ -1,0 +1,18 @@
+[package]
+name = "tt-cli"
+version = "0.6.0"
+authors = ["XX <freecoder.xx@gmail.com>"]
+edition = "2018"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+
+[dependencies]
+clap = "2.32"
+config = "0.9"
+serde = { version = "1.0", features = ["derive"] }
+tt-core = { name = "tt_core", git = "https://github.com/t-workware/tt-core.git" }
+
+[dev-dependencies]
+file_assertions = { git = "https://github.com/XX/file_assertions.git" }

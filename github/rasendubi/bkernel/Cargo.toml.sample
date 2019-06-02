@@ -1,0 +1,35 @@
+[package]
+name = "bkernel"
+version = "0.0.1"
+authors = ["Alexey Shmalko <rasen.dubi@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = { package = "futures-preview", version = "0.3.0-alpha.16", default-features = false }
+dev = { path = "./dev" }
+stm32f4 = { path = "./stm32f4" }
+smalloc = { path = "./smalloc" }
+linkmem = { path = "./linkmem" }
+breactor = { path = "./breactor" }
+
+[[bin]]
+name = "bkernel"
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = true
+debug-assertions = false
+panic = 'abort'
+incremental = false
+
+[profile.dev]
+panic = 'abort'
+
+[workspace]
+members = [
+  "dev",
+  "smalloc",
+  "linkmem",
+  "breactor",
+]

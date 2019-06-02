@@ -1,0 +1,18 @@
+[package]
+name = "pod"
+version = "0.0.1"
+authors = ["Dylan Clark"]
+edition = "2018"
+
+[dependencies]
+cursive			= "0.10.0"
+log				= "0.4.0"
+num_cpus		= "1.10.0"
+rayon			= "1.0.3"
+reqwest			= "0.9.10"
+serde			= {version = "1.0.88", features = ["derive"] }
+slog			= "2.4.1"
+slog-term		= "2.4.0"
+slog-async		= "2.3.0"
+toml			= "0.4.10"
+uuid			= {version = "0.7.2", features = ["v4"]}

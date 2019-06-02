@@ -1,0 +1,9 @@
+[package]
+name = "hough-transform"
+version = "0.1.0"
+authors = ["Max Beutel"]
+
+[dependencies]
+nalgebra = "~0.11"
+imageproc = "~0.7.0"
+image = "~0.12.0"

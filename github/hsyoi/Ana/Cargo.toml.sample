@@ -1,0 +1,35 @@
+[package]
+name = "ana"
+version = "0.8.0"
+description = "A judge in Rust"
+license = "MIT"
+readme = "README.md"
+repository = "https://gitlab.com/hr567/Ana"
+authors = ["hr567 <hr567@hr567.me>"]
+edition = "2018"
+
+[dependencies]
+caps = "0.3"
+clap = "2.*"
+env_logger = "0.6"
+# fuse = "0.3"
+libmount = "0.1"
+log = "0.4"
+nix = "0.13"
+serde = "1.*"
+serde_json = "1.*"
+serde_derive = "1.*"
+tempfile = "3.*"
+uuid = { version = "0.7", features = ["v4"] }
+zmq = "0.9"
+
+[dev-dependencies]
+
+[build-dependencies]
+bindgen = "0.49"
+
+[features]
+default = ["gcc", "gxx"]
+
+gcc = []
+gxx = []

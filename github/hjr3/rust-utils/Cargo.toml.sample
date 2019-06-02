@@ -1,0 +1,16 @@
+[package]
+name = "rnd"
+version = "0.1.0"
+authors = ["Herman J. Radtke III <hermanradtke@gmail.com>"]
+
+[dependencies]
+
+rand = "0.3"
+
+[[bin]]
+name = "rnd"
+path = "src/rnd/main.rs"
+
+[[bin]]
+name = "shf"
+path = "src/shf/main.rs"

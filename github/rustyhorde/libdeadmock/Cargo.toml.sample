@@ -1,0 +1,73 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "API Mocking and Virtualization"
+documentation = "https://docs.rs/libdeadmock"
+edition = "2018"
+homepage = "https://github.com/rustyhorde/libdeadmock"
+keywords = [
+    "API",
+    "mock",
+    "virtualization",
+]
+license = "MIT/Apache-2.0"
+name = "libdeadmock"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/libdeadmock"
+version = "0.1.6"
+
+[dependencies]
+bitflags = "1"
+bytes = "0"
+cached = "0"
+chrono = "0"
+clap = "2"
+futures = "0.1"
+getset = "0"
+http = "0"
+httparse = "1"
+hyper = "0"
+hyper-proxy = "0"
+hyper-tls = "0"
+lazy_static = "1"
+regex = "1"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+slog-async = "2"
+slog-term = "2"
+slog-try = "0"
+toml = "0"
+tokio-codec = "0"
+tokio-io = "0"
+tomlenv = "0"
+typed-headers = "0"
+
+[dependencies.libeither]
+version = "0"
+features = ["serde", "unstable"]
+
+[dependencies.slog]
+version = "2"
+features = ["max_level_trace", "release_max_level_trace"]
+
+[dependencies.tokio]
+version = "0"
+features = ["async-await-preview"]
+
+[dependencies.uuid]
+version = "0"
+features = ["serde", "u128", "v4"]
+
+[features]
+default = ["exact_match", "pattern_match"]
+exact_match = ["url", "method", "header", "headers"]
+pattern_match = ["url"]
+
+# Request Parts
+headers = []
+header = []
+url = []
+method = []
+
+[patch.crates-io]
+cached = { path = "../cached" }

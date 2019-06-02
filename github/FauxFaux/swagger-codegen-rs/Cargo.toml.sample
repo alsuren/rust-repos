@@ -1,0 +1,15 @@
+[package]
+name = "swagger-codegen"
+version = "0.1.0"
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+
+[dependencies]
+cast = "0.2"
+failure = "0.1"
+heck = "0.3"
+ordered-float = "0.5"
+result = "1"
+yaml-rust = "0.4"
+
+[dev-dependencies]
+tempfile-fast = "0.2"

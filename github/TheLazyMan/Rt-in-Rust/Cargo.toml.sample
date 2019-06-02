@@ -1,0 +1,11 @@
+[package]
+name = "path-tracing"
+version = "0.1.0"
+authors = ["Sergey <l.sergey.borzov.l@gmail.com>"]
+
+[dependencies]
+gl_generator = "0.5.0"
+glfw = "0.25.0"
+png = "0.13.0"
+num = "0.2.0"
+cgmath = "0.16.1"

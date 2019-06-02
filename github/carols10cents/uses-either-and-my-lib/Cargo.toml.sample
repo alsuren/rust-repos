@@ -1,0 +1,8 @@
+[package]
+name = "uses-either-and-my-lib"
+version = "0.1.0"
+authors = ["Carol (Nichols || Goulding) <carol.nichols@gmail.com>"]
+
+[dependencies]
+either-using-library = { path = "/Users/carolnichols/rust/either-using-library" }
+either = "=1.0.0"

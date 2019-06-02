@@ -1,0 +1,11 @@
+[package]
+name = "testjs-example"
+version = "0.1.0"
+authors = ["Hajime Fukuda <hajime.fukuda@me.com>"]
+
+[dependencies]
+
+[package.metadata.testjs]
+node = "nodejs"
+target = "asmjs-unknown-emscripten"
+prelude = "tests/test.js"

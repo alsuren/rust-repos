@@ -1,0 +1,18 @@
+[package]
+name = "trucash"
+version = "0.1.0"
+authors = ["Full Name <erwintaketeshi1@protonmail.com>"]
+
+[dependencies]
+rkv = "*"
+curve25519-dalek = { version = "1.0.0-pre.0", features = ["serde"] }
+rand = "0.5"
+bulletproofs = {path = "../bulletproofs"}
+merlin = "1.0.0-pre.0"
+byteorder = "*"
+sha2 = "*"
+ed25519-dalek = {path = "../ed25519-dalek"}
+
+[[bin]]
+path = "./trucash/main.rs"
+name = "trucashd"

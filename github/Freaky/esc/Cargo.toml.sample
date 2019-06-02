@@ -1,0 +1,12 @@
+[package]
+name = "esc"
+version = "0.1.0"
+authors = ["Thomas Hurst <tom@hur.st>"]
+
+[dependencies]
+tantivy = "0.7.0"
+walkdir = "2.2.5"
+mailparse = "0.6.3"
+crossbeam = "0.4.1"
+structopt = "0.2.10"
+

@@ -1,0 +1,23 @@
+[package]
+authors = ["Fraser Hutchison <fraser.hutchison@maidsafe.net>"]
+description = "A cross-platform library which returns the full path to the Git binary if it can be found."
+documentation = "https://docs.rs/find_git"
+keywords = ["git"]
+license = "MIT/Apache-2.0"
+name = "find_git"
+readme = "README.md"
+repository = "https://github.com/Fraser999/Find-Git.git"
+version = "1.2.0"
+
+[lib]
+name = "find_git"
+path = "src/lib.rs"
+
+[[bin]]
+name = "find_git"
+path = "src/bin.rs"
+doc = false
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.3"
+winreg = "0.5"

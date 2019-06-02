@@ -1,0 +1,14 @@
+[package]
+name = "mcmuch-rust-website"
+version = "0.0.1"
+authors = ["Skye M. <skyem@hotmail.co.uk>"]
+
+[dependencies]
+iron = "*"
+staticfile = "*"
+mount = "*"
+handlebars-iron = "*"
+logger = "*"
+serde_json = "*"
+rustc-serialize = "*"
+router = "*"

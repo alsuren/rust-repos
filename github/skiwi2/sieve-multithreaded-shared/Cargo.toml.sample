@@ -1,0 +1,10 @@
+[package]
+name = "sieve_multithreaded_shared"
+version = "0.1.0"
+authors = ["skiwi <frank_skiwi@hotmail.com>"]
+
+[dependencies]
+num = "0.1.32"
+bit-vector = { git = "https://github.com/skiwi2/bit-vector.git" }
+crossbeam = "0.2.9"
+stopwatch = "0.0.7"

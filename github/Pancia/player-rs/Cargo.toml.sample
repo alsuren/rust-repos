@@ -1,0 +1,13 @@
+[package]
+name = "player-rs"
+version = "0.1.0"
+authors = ["pancia <nsa.anthony@gmail.com>"]
+
+[dependencies]
+clap = "2.27.1"
+rand = "0.3"
+
+[dev-dependencies]
+itertools = "0.7.3"
+quickcheck = "0.4"
+uuid = "0.4"

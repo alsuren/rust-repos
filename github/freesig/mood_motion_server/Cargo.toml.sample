@@ -1,0 +1,13 @@
+[package]
+name = "mood_motion_server"
+version = "0.1.0"
+authors = ["Tom Gowan <s3549186@student.rmit.edu.au>"]
+
+[dependencies]
+glium = "0.17.1"
+glium_text_rusttype = "0.2.0"
+cgmath = "0.15.0"
+serial = "0.4"
+serde = "1.0.15"
+serde_json = "1.0.3"
+serde_derive = "1.0.15"

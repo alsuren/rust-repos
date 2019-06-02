@@ -1,0 +1,14 @@
+[package]
+name = "nemo"
+version = "0.2.1"
+authors = ["Sean Bowe <ewillbefull@gmail.com>"]
+description = "Session types for asynchronous networking"
+keywords = ["session", "types"]
+readme = "README.md"
+homepage = "https://github.com/ebfull/nemo"
+repository = "https://github.com/ebfull/nemo"
+documentation = "https://ebfull.github.io/nemo/"
+license = "MIT"
+
+[dev-dependencies]
+compiletest_rs = "0.0.10"

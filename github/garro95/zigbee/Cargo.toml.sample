@@ -1,0 +1,16 @@
+[package]
+name = "zigbee"
+version = "0.0.1"
+authors = ["Gianmarco Garrisi <gianmarcogarrisi@tutanota.com>"]
+description = "An API for zigbee: Low-power, low-cost, low-complexity networking for the Internet of Things"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/garro95/zigbee"
+readme = "README.md"
+keywords = ["zigbee", "network", "smart", "IoT", "standard"]
+categories = ["network-programming"]
+
+[dependencies]
+futures-preview = "0.3.0-alpha.1"
+bitfield = "0.13"
+serde = "1"
+serde_derive = "1"

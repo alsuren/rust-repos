@@ -1,0 +1,12 @@
+[package]
+name = "rusty_royale"
+version = "0.1.0"
+authors = ["Lenard Pratt <striderman34@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = {version ="*",features=["derive"]}
+url = "*"
+reqwest = "=0.9.8"
+serde_json = "*"
+failure="0.1.5"

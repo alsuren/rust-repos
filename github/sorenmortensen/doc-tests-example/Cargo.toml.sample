@@ -1,0 +1,9 @@
+[package]
+name = "doc-tests-example"
+version = "0.1.0"
+authors = ["Søren Mortensen <soren@sorenmortensen.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]

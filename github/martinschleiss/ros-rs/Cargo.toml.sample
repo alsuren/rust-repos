@@ -1,0 +1,9 @@
+[package]
+name = "ros-rs"
+version = "0.1.0"
+authors = ["Martin Schleiss"]
+
+[dependencies]
+rustc-serialize = "0.3.19"
+websocket = "0.17.1"
+url = "1.0"

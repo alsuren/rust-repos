@@ -1,0 +1,11 @@
+[package]
+name = "slackstats"
+version = "0.1.0"
+authors = ["Andrew Vaccaro <atvaccaro@gmail.com>"]
+
+[dependencies]
+serde_json = "1.0"
+
+[[bin]]
+name = "main"
+doc = false

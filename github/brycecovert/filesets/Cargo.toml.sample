@@ -1,0 +1,23 @@
+[package]
+name = "filesets"
+description = "Your swiss-army knife for dealing with identical files."
+version = "0.1.1"
+license = "MIT"
+categories = ["command-line-utilities", "filesystem"]
+authors = ["Bryce Covert <filesets@brycecovertoperations.com>"]
+edition = "2018"
+homepage = "https://github.com/brycecovert/filesets"
+repository = "https://github.com/brycecovert/filesets"
+
+[dependencies]
+clap = "2.33.0"
+rust-crypto = "^0.2"
+threadpool = "1.7.1"
+pbr = "1.0.1"
+walkdir = "2.2.7"
+
+[profile.release]
+lto = true
+panic = 'abort'
+
+

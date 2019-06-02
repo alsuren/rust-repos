@@ -1,0 +1,26 @@
+[package]
+name = "colm"
+version = "0.1.1"
+authors = ["quininer <quininer@live.com>"]
+description = "A block cipher based Encrypt-Linear mix-Encrypt mode"
+repository = "https://github.com/quininer/colm"
+keywords = [ "block-cipher", "cryptography", "misuse-resistance", "aead" ]
+categories = [ "cryptography", "no-std" ]
+license = "MIT"
+
+[features]
+default = [ "x16" ]
+x16 = []
+x32 = []
+
+[dependencies]
+arrayref = "0.3"
+subtle = { version = "0.7", default-features = false }
+
+[dev-dependencies]
+libc = "*"
+openssl = "*"
+openssl-sys = "*"
+generic-array = "0.9"
+aes = "0.2"
+rand = "0.5"

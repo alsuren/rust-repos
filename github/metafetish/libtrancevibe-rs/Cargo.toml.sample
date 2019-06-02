@@ -1,0 +1,13 @@
+[package]
+name = "libtrancevibe"
+version = "0.2.0"
+authors = ["Kyle Machulis <kyle@machul.is>"]
+description = "Rust library for accessing the Rez Trancevibrator"
+license = "BSD-3-Clause"
+homepage = "http://github.com/metafetish/libtrancevibe-rs"
+repository = "https://github.com/metafetish/libtrancevibe-rs.git"
+readme = "README.md"
+keywords = ["usb", "hardware"]
+
+[dependencies]
+libusb="0.2.2"

@@ -1,0 +1,25 @@
+[package]
+name = "langserver"
+version = "0.5.0"
+license = "MIT"
+description = "LangServer runs LangPacks"
+
+[[bin]]
+name = "langserver"
+
+[lib]
+name = "langserver"
+
+[dependencies]
+base64 = "0.4.0"
+quick-error = "1.0.0"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+wait-timeout = "0.1"
+libc = "0.2"
+hyper = "0.10.5"
+env_logger = "0.3"
+log = "0.3"
+time = "0.1"
+

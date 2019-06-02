@@ -1,0 +1,42 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "Kroger mobile order monitoring server"
+documentation = "http://docs.rs/atters"
+homepage = "http://docs.rs/atters"
+keywords = ["kroger", "order", "monitor"]
+license = "MIT/Apache-2.0"
+name = "atters"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/atters"
+version = "0.1.0"
+
+[dependencies]
+atter = "0"
+bincode = "0"
+chrono = { version = "0", features = ["serde"] }
+clap = "2"
+either = { version = "1", features = ["serde"] }
+error-chain = "0"
+futures = "=0.1.21"
+getset = "0"
+lazy_static = "1"
+libeko = "0"
+regex = "0"
+rusqlite = "0"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+slog-async = "2"
+slog-term = "2"
+slog-try = "0"
+tokio-core = "0"
+tokio-io = "0"
+uuid = { version = "0", features = ["serde", "use_std", "v4" ] }
+
+[dependencies.slog]
+features = ["max_level_trace", "release_max_level_trace"]
+version = "=2.1.1"
+
+[patch.crates-io]
+atter = { path = "../atter" }
+libeko = { path = '../libeko' }

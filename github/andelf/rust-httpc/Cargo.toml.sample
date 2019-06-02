@@ -1,0 +1,29 @@
+[package]
+
+name    = "httpc"
+version = "0.0.1-dev"
+authors = [ "Andelf<andelf@gmail.com>" ]
+
+[lib]
+
+name       = "httpc"
+path       = "src/httpc/lib.rs"
+
+[dependencies.url]
+
+git = "https://github.com/servo/rust-url.git"
+
+[[bin]]
+
+name = "main"
+path = "examples/main.rs"
+
+[[bin]]
+
+name = "youdao_fanyi"
+path = "examples/youdao_fanyi.rs"
+
+[[bin]]
+
+name = "test"
+path = "examples/test.rs"

@@ -1,0 +1,31 @@
+[package]
+name = "loop_blinn_ex"
+version = "0.1.0"
+authors = ["S.Percentage <Syn.Tri.Naga@gmail.com>"]
+build = "build.rs"
+
+[features]
+StemDarkening = []
+
+[dependencies]
+appframe = { git = "https://github.com/Pctg-x8/appframe", features = ["with_ferrite", "manual_rendering"] }
+ferrite = { git = "https://github.com/Pctg-x8/ferrite", features = ["FeImplements", "FePresentation"] }
+libc = "0.2"
+
+# pathfinder_font_renderer = { git = "https://github.com/Pctg-x8/pathfinder" }
+pathfinder_font_renderer = { path = "../foreign/pathfinder/font-renderer" }
+pathfinder_partitioner = { git = "https://github.com/Pctg-x8/pathfinder" }
+pathfinder_path_utils = { git = "https://github.com/Pctg-x8/pathfinder" }
+app_units = "0.6"
+lyon = "0.10"
+euclid = "0.17"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc = "0.2"
+core-graphics = "0.13"
+core-text = "9.2"
+foreign-types-shared = "0.1"
+appkit = { git = "https://github.com/Pctg-x8/appkit-rs" }
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["winuser"] }

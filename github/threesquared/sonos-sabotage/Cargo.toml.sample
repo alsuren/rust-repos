@@ -1,0 +1,19 @@
+[package]
+name = "sonos-sabotage"
+version = "0.1.0"
+authors = ["threesquared <ben@3sq.re>"]
+
+[[bin]]
+name = "sonos-sabotage"
+path = "src/main.rs"
+
+[dependencies]
+sonos = "0.1.2"
+clap = "~2.32"
+lazy_static = "1.0"
+rand = "0.5"
+regex = "1"
+galvanic-mock = "*"
+
+[replace]
+"sonos:0.1.2" = { git = "https://github.com/threesquared/sonos.rs", branch = "bump-ssdp" }

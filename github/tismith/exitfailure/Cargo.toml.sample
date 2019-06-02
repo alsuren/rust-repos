@@ -1,0 +1,22 @@
+[package]
+name = "exitfailure"
+version = "0.5.1"
+authors = ["Toby Smith <toby@tismith.id.au>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/tismith/exitfailure"
+description = "A basic newtype wrappers for use with ? in main"
+categories = ["command-line-interface"]
+keywords = ["newtype", "failure", "error", "command-line", "cli"]
+
+[dependencies]
+failure = "0.1.2"
+
+[dev-dependencies]
+assert_cmd = "0.11.0"
+predicates = "1.0.0"
+
+[badges]
+travis-ci = { repository = "tismith/exitfailure", branch = "master" }
+appveyor = { repository = "tismith/exitfailure", branch = "master", service = "github" }
+codecov = { repository = "tismith/exitfailure", branch = "master", service = "github" }

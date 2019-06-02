@@ -1,0 +1,9 @@
+[package]
+name = "rust-montecarlo"
+version = "0.1.0"
+authors = ["Igor Laborie <ilaborie@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+stopwatch = "0.0.7"

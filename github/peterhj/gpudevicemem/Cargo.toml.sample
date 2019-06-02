@@ -1,0 +1,33 @@
+[package]
+name = "gpudevicemem"
+version = "0.0.1"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[lib]
+name = "gpudevicemem"
+path = "src/lib.rs"
+
+[features]
+cuda9 = ["f16", "cuda_blas/cuda9"]
+default = []
+f16 = ["float", "cuda_dnn/f16", "memarray/f16"]
+nccl = ["cuda_coll"]
+
+[build-dependencies]
+bindgen = "^0.38"
+cc = "*"
+walkdir = "*"
+
+[dependencies]
+arrayidx = { path = "../arrayidx" }
+#cuda = { path = "../libcuda" }
+cuda = "^0.3"
+cuda_blas = { path = "../cuda_blas" }
+cuda_coll = { path = "../cuda_coll", optional = true }
+cuda_dnn = { path = "../cuda_dnn" }
+cuda_rand = { path = "../cuda_rand" }
+float = { path = "../float", optional = true }
+lazy_static = "*"
+memarray = { path = "../memarray" }
+num-traits = "^0.2"
+parking_lot = { version = "^0.5", features = ["nightly"] }

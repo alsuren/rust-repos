@@ -1,0 +1,20 @@
+[workspace]
+members = [
+    "server",
+    "client",
+    "common",
+    "world",
+    "voxygen",
+    "server-cli",
+    "login-cli",
+    "headless"
+]
+
+[profile.dev]
+
+[profile.release]
+debug = true
+
+# TODO: Enable upon version release
+#lto = true
+#overflow-checks = false

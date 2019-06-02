@@ -1,0 +1,8 @@
+[package]
+name = "multipad"
+version = "0.1.0"
+authors = ["Romain Fontaine <romain-fontaine@outlook.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+term-painter = "0.2.2"

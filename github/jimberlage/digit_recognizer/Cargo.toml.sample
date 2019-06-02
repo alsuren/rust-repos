@@ -1,0 +1,10 @@
+[package]
+
+name = "digit_recognizer"
+version = "0.0.5"
+authors = ["Jim Berlage <james.berlage@gmail.com>"]
+
+[dependencies]
+
+csv = "0.14"
+num = "*"

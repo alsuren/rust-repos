@@ -1,0 +1,15 @@
+[package]
+
+name = "nginx-rs"
+version = "0.0.1"
+
+[dependencies]
+term = "*"
+itertools = "*"
+
+[lib]
+name = "nrust"
+crate-type = ["dylib"]
+
+[[bin]]
+name = "nginx-make"

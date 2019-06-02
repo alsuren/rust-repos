@@ -1,0 +1,11 @@
+[package]
+name = "trust_seq"
+version = "0.1.0"
+authors = ["bio"]
+edition = "2018"
+
+[dependencies]
+getopts = "0.2.4"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"

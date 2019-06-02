@@ -1,0 +1,63 @@
+[package]
+edition = "2018"
+name = "anne-key"
+description = "Firmware for Anne Pro Keyboard"
+repository = "https://github.com/ah-/anne-key"
+keywords = ["no-std", "arm", "cortex-m", "anne", "pro", "keyboard"]
+categories = ["embedded", "no-std"]
+authors = ["Andreas Heider <andreas@heider.io>"]
+license = "Apache-2.0"
+version = "0.0.2"
+
+[dependencies]
+bare-metal = { version = "0.2.4", features = ["const-fn"] }
+bit_field = "0.9.0"
+cortex-m = "0.5.8"
+cortex-m-rt = "0.6.5"
+cortex-m-semihosting = "0.3.1"
+nb = "0.1.1"
+vcell = "0.1.0"
+
+[patch.crates-io.cortex-m]
+# for SCB::system_reset2
+git = "https://github.com/hdhoang/cortex-m"
+branch = "static-system_reset2"
+
+[dependencies.rtfm]
+package = "cortex-m-rtfm"
+version = "0.4.2"
+
+[dependencies.hal]
+package = "stm32l151-hal"
+git = "https://github.com/hdhoang/stm32l151-hal"
+branch = "stm32l1-0.5"
+
+[dependencies.embedded-hal]
+features = ["unproven"]
+version = "0.2.2"
+
+[dependencies.stm32l1]
+features = ["stm32l151", "rt"]
+version = "0.5"
+
+[dependencies.panic-abort]
+version = "0.3.1"
+optional = true
+
+[dependencies.panic-semihosting]
+version = "0.5.1"
+optional = true
+
+[features]
+default = ["panic-abort"]
+use_semihosting = ["panic-semihosting"]
+
+[profile.release]
+debug = true
+lto = true
+opt-level = 3
+
+[profile.dev]
+debug = true
+lto = false
+opt-level = 3

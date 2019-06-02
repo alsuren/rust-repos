@@ -1,0 +1,21 @@
+[package]
+name = "rusty_nets"
+version = "0.0.1"
+authors = ["pbielak"]
+edition = "2018"
+
+[lib]
+name = "rusty_nets"
+path = "src/lib.rs"
+
+[dependencies]
+ndarray = "0.12.1"
+petgraph = "0.4.13"
+rand = "0.6.5"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "fb-forum-read"
+harness = false

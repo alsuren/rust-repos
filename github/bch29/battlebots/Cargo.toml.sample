@@ -1,0 +1,14 @@
+[package]
+name = "battlebots"
+version = "0.1.0"
+authors = ["brad <bradleyhardy@live.com>"]
+
+[dependencies]
+cgmath = "*"
+serde = "*"
+serde_json = "*"
+glium = "*"
+rand = "*"
+crossbeam = "*"
+render_utils = { version = "*", path = "render_utils" }
+battlebots_support = { version = "*", path = "support" }

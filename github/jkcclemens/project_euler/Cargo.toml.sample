@@ -1,0 +1,11 @@
+[package]
+name = "project_euler"
+version = "0.1.0"
+authors = ["Kyle Clemens <jkc.clemens@gmail.com>"]
+
+[dependencies]
+num = "0.1"
+itertools = "0.7"
+fibonacci = "0.1"
+permutohedron = "0.2"
+chrono = "0.4"

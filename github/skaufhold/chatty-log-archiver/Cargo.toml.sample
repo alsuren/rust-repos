@@ -1,0 +1,20 @@
+[package]
+name = "twitch-archiver"
+version = "0.1.0"
+authors = ["Stefan Kaufhold <cere@fastmail.fm>"]
+
+[dependencies]
+diesel = { version = "0.16.0", features = ["postgres", "chrono"] }
+diesel_codegen = { version = "0.16.0", features = ["postgres"] }
+nom = { version = "^3.2", features = ["regexp"] }
+chrono = "^0.4"
+error-chain = "^0.11"
+quicli = "0.2"
+
+[lib]
+name = "twitch_archiver"
+path = "src/lib.rs"
+
+[[bin]]
+name = "twitch_archiver"
+path = "src/bin.rs"

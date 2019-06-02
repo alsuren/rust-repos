@@ -1,0 +1,19 @@
+[package]
+name = "tinyrick"
+description = "a freeform Rust build system"
+version = "0.0.10"
+authors = ["Andrew Pennebaker <andrew.pennebaker@gmail.com>"]
+license = "BSD-2-Clause"
+homepage = "https://github.com/mcandre/tinyrick"
+documentation = "https://docs.rs/tinyrick/"
+
+[dependencies]
+getopts = "0.2.18"
+lazy_static = "1.1.0"
+
+[lib]
+name = "tinyrick"
+
+[[bin]]
+name = "tinyrick"
+path = "src/tinyrick.rs"

@@ -1,0 +1,9 @@
+[package]
+name = "online-machine-learning"
+version = "0.1.0"
+authors = ["mayah"]
+
+[dependencies]
+byteorder = "*"
+getopts = "^0.2"
+rand = "*"

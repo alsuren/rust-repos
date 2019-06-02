@@ -1,0 +1,26 @@
+[package]
+name = "cmp6102"
+version = "1.0.0"
+authors = ["Tom Gardiner <Thomas.Gardiner3@mail.bcu.ac.uk>"]
+
+[dependencies]
+piston="^0.31.3"
+piston_window = "^0.63.0"
+conrod = { version = "^0.51.0", features = [ "piston" ] }
+find_folder = "^0.3.0"
+rand = "^0.3.15"
+time = "^0.1.36"
+clap = "^2.23.3"
+rayon = "0.8.2"
+open = "1.2.0"
+
+[dev-dependencies]
+assert_approx_eq = "1.0.0"
+
+[[bin]]
+name = "main"
+path = "src/bin/main/main.rs"
+
+[[bin]]
+name = "tests"
+path = "src/bin/tests.rs"

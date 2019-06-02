@@ -1,0 +1,18 @@
+[package]
+name = "monitor"
+version = "0.1.0"
+authors = ["piaoliu <441594700@qq.com>"]
+
+[dependencies]
+etcd = "^0.6.0"
+serde_json = "^1.0.4"
+serde_derive = "^1.0.15"
+serde = "^1.0.15"
+toml = "^0.4.5"
+time = "^0.1.38"
+influx_db_client = "^0.3.0"
+clap = "^2.19.0"
+log = "^0.3.8"
+
+[patch.crates-io]
+influx_db_client = { git = 'https://github.com/driftluo/InfluxDBClient-rs' }

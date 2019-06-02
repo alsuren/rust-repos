@@ -1,0 +1,15 @@
+[package]
+name = "yandex_translate"
+version = "2.1.0"
+authors = ["norbytus <norbyt93@gmail.com>"]
+description = "Rust wrapper on Yandex api translator https://tech.yandex.ru/translate/"
+repository = "https://github.com/Norbytus/yandex_translate_rust"
+keywords = ["yandex", "translate"]
+license = "Apache-2.0"
+
+[dependencies]
+hyper = "0.10.5"
+hyper-native-tls = "0.2.2"
+serde_json = "1.0.2"
+serde_derive = "1.0.8"
+serde = "1.0.8"

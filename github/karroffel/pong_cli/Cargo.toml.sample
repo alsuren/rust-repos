@@ -1,0 +1,8 @@
+[package]
+name = "pong_cli"
+version = "0.1.0"
+authors = ["karroffel"]
+
+[dependencies]
+ncurses = "5.2.0"
+rand = "*"

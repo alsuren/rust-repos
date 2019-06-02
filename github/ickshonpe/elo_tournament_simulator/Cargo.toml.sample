@@ -1,0 +1,10 @@
+[package]
+name = "ELO_Tournament_Simulator"
+version = "0.1.0"
+authors = ["David Curthoys <david.curthoys@googlemail.com>"]
+
+[dependencies]
+rand = "*"
+serde = "*"
+serde_derive = "*"
+serde_yaml = "*"

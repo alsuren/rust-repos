@@ -1,0 +1,26 @@
+[package]
+name = "better-than-basic"
+version = "0.1.0"
+authors = ["James Sanderson <zofrex@gmail.com>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+handlebars-iron = "*"
+urlencoded = "*"
+persistent = "*"
+cookie = "*"
+lru-cache = "*"
+rand = "*"
+hyperlocal = "*"
+toml = "*"
+serde = "*"
+serde_derive = "*"
+hyper = "*"
+staticfile = "*"
+mount = "*"
+url = "*"
+bcrypt = "*"
+
+[profile.release]
+lto = true

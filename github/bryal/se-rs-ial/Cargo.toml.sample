@@ -1,0 +1,28 @@
+[package]
+name = "se_rs_ial"
+version = "0.1.2"
+authors = ["bryal <96.bryal@gmail.com>"]
+description = "Cross-platform serial communications"
+repository = "https://github.com/bryal/se-rs-ial"
+documentation = "https://bryal.github.io/se-rs-ial/se_rs_ial/"
+readme = "README.md"
+keywords = ["windows", "unix", "terminal", "serial", "communications"]
+license = "MIT"
+
+[dependencies]
+libc = "*"
+bitflags = "*"
+
+[target.i686-unknown-linux-gnu.dependencies.serial]
+git = "https://github.com/bryal/serial.rs"
+[target.x86-unknown-linux-gnu.dependencies.serial]
+git = "https://github.com/bryal/serial.rs"
+[target.x86_64-unknown-linux-gnu.dependencies.serial]
+git = "https://github.com/bryal/serial.rs"
+
+[target.i686-pc-windows-gnu.dependencies.serial-win]
+serial-win = "*"
+[target.x86-pc-windows-gnu.dependencies.serial-win]
+serial-win = "*"
+[target.x86_64-pc-windows-gnu.dependencies.serial-win]
+serial-win = "*"

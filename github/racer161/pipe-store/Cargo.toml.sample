@@ -1,0 +1,9 @@
+[package]
+name = "pipe-store"
+version = "0.1.0"
+authors = ["Ethan Spurlock <ethan@spurlock.io>"]
+
+[dependencies]
+ot_core = {path = "../ot_core/"}
+rand = "*"
+serde_json = "*"

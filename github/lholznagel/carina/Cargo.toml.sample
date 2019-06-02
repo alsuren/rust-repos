@@ -1,0 +1,14 @@
+[profile.release]
+lto = true
+panic = 'abort'
+
+[workspace]
+members = [
+  "cli",
+  "core",
+  "core_protocol",
+  "hooks",
+  "peer",
+  "peer_cli",
+  "protocol"
+]

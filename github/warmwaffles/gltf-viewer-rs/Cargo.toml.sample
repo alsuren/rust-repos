@@ -1,0 +1,11 @@
+[package]
+name = "gltf-viewer"
+version = "0.1.0"
+authors = ["Matthew Johnston <warmwaffles@gmail.com>"]
+
+[dependencies]
+gltf = { path = "../gltf" }
+glium = "0.16.0"
+env_logger = "*"
+log = "*"
+quick-error = "*"

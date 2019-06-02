@@ -1,0 +1,27 @@
+[package]
+name = "yarg"
+version = "0.1.0"
+authors = ["Alex Legg <alex@legg.info>"]
+edition = "2018"
+
+[[bin]]
+name = "yarg"
+path = "src/bin/win/main.rs"
+
+[[bin]]
+name = "yargas"
+path = "src/bin/asm/main.rs"
+
+[dependencies]
+sdl2 = { version = "0.31.0", features = ["bundled"] }
+lazy_static = "1.1.0"
+failure = "0.1.3"
+num-traits = "0.2"
+bincode = "1.0.1"
+serde = { version = "1.0.71", features = ["derive"] }
+
+[target.'cfg(windows)'.dependencies]
+direct2d = { version = "0.2" }
+directwrite = { version = "0.1.2" }
+dxgi = { version = "0.1.6" }
+winapi = { version = "0.3", features = ["winuser", "libloaderapi", "memoryapi"] }

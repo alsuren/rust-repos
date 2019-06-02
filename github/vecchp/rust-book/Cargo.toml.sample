@@ -1,0 +1,11 @@
+[package]
+name = "rust-book"
+version = "0.1.0"
+authors = ["Paul"]
+
+[dependencies]
+time = "0.1.36"
+
+[lib]
+name = "price"
+path = "src/price.rs"

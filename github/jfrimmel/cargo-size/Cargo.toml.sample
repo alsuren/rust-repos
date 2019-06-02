@@ -1,0 +1,16 @@
+[package]
+name = "cargo-size"
+version = "0.1.1"
+authors = ["J. Frimmel <jfrimmel@github.com>"]
+edition = "2018"
+
+description = "a custom command extending 'cargo' to print the memory usage"
+repository = "https://github.com/jfrimmel/cargo-size"
+readme = "README.md"
+keywords = ["cargo", "size", "elf", "sections"]
+license = "MIT"
+
+[dependencies]
+colored = "1.6.1"
+elf = "0.0.10"
+ldscript-parser = "0.1.0"

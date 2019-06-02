@@ -1,0 +1,11 @@
+[package]
+name = "rust-jwt"
+version = "0.1.0"
+authors = ["Jake Goldsborough <rjgoldsborough@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+
+[dependencies.openssl]
+version = "0.8.3"
+features = ["hmac"]

@@ -1,0 +1,33 @@
+[package]
+
+	name        = "slog_unwraps"
+	version     = "0.1.5"
+	authors     = [ "Naja Melan <najamelan@autistici.org>" ]
+	readme      = "README.md"
+	license     = "Unlicense"
+
+	repository  = "https://github.com/najamelan/slog_unwraps"
+	description = "Syntactic sugar to slog an error before unwrapping"
+	categories  = [ "development-tools", "development-tools::debugging" ]
+	keywords    = [ "logging", "slog", "unwrap", "panic", "log"         ]
+
+	edition     = "2018"
+
+[badges]
+
+	travis-ci   = { repository = "najamelan/slog_unwraps" }
+	maintenance = { status     = "actively-developed"     }
+
+[dependencies]
+
+	slog      = "2.4.1"
+	backtrace = "0.3.14"
+	regex     = "1.1.2"
+
+
+[dev-dependencies]
+
+	pretty_assertions = "0.6.1"
+	slog-term         = "2.4.0"
+
+

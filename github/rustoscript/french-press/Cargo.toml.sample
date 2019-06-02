@@ -1,0 +1,42 @@
+[package]
+name = "french_press"
+version = "0.1.0"
+authors = ["David Mally <djmally@gmail.com>"]
+
+[dependencies]
+matches = "0.1.2"
+clippy = "0.0.63"
+
+[dependencies.jsrs-common]
+git = "https://github.com/rustoscript/js.rs-common.git"
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
+
+[profile.test]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1

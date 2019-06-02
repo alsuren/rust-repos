@@ -1,0 +1,7 @@
+[package]
+name = "rl_replays"
+version = "0.1.0"
+authors = ["Simon Smith"]
+
+[dependencies]
+nom = { version = "^3.2", features = ["verbose-errors"] }

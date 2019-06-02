@@ -1,0 +1,48 @@
+[package]
+name = "noaa-apt"
+version = "1.1.0"
+authors = ["Martin Bernardi <martinber.710@gmail.com>"]
+build = "src/build.rs"
+
+[profile.dev]
+# So the dev builds run faster, otherwise they are extremely slow
+opt-level = 3
+
+[profile.release]
+# I don't like silent overflows
+overflow-checks = true
+
+[features]
+default = ["gui"]
+gui = ["gtk", "gdk", "gio", "glib"]
+static_ssl = ["openssl/vendored"] # Not valid for Windows
+
+[dependencies]
+num = "*"
+hound = "*"
+rustfft = "*"
+approx = "*"
+png = "*"
+log = "*"
+simple_logger = "*"
+argparse = "*"
+reqwest = "*"
+directories = "*"
+toml = "*"
+filetime = "*"
+chrono = "*"
+serde = { version = "*", features = ["derive"] }
+
+# openssl is a indirect dependency because of reqwest, I have to add openssl as
+# a direct dependency if I want to enable the "vendored" feature, but for
+# Windows it breaks the build. Looks like adding it as an optional dependency is
+# working for both cases
+openssl = { version = "0.10", optional = true }
+
+gtk = { git = "https://github.com/gtk-rs/gtk.git", optional = true, features = ["v3_16"] }
+gdk = { git = "https://github.com/gtk-rs/gdk.git", optional = true }
+gio = { git = "https://github.com/gtk-rs/gio.git", optional = true }
+glib = { git = "https://github.com/gtk-rs/glib.git", optional = true }
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["shellapi"] }

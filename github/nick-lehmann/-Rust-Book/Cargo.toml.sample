@@ -1,0 +1,8 @@
+[package]
+name = "Rust"
+version = "0.1.0"
+authors = ["Nick Lehmann <nicklehmann@protonmail.ch>"]
+edition = "2018"
+
+[dependencies]
+ndarray = "0.12.1"

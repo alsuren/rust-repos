@@ -1,0 +1,17 @@
+[package]
+name = "blockgame"
+version = "0.1.0"
+authors = ["MinusKelvin <mark.carlson@minuskelvin.net>"]
+edition = "2018"
+
+[dependencies]
+glfw-wrapper = { git = "https://github.com/MinusKelvin/glfw-wrapper.git" }
+gl = "0.12"
+rand = "0.6"
+serde_json = "1"
+serde = { version = "1", features = ["derive"] }
+nalgebra = { version = "0.18", features = ["serde-serialize"] }
+enumset = { version = "0.3", features = ["serde"] }
+enum-map = { version = "0.5", features = ["serde"] }
+image = "0.21"
+specs = "0.14"

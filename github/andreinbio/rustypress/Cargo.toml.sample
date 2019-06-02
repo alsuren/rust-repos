@@ -1,0 +1,8 @@
+[package]
+name = "rustypress"
+version = "0.1.0"
+authors = ["Andrei Nagacevschi <andrein_bio@yahoo.com>"]
+
+[dependencies]
+hyper = "0.11"
+futures = "0.1"

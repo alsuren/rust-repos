@@ -1,0 +1,19 @@
+[package]
+name = "dr3th3rn3t"
+version = "0.1.0"
+authors = ["Benjamin Lipp and Julian Herr"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+cortex-m = "0.1.4"
+r0 = "0.1.0"
+bit_field = "0.7.0"
+net = {git = "https://github.com/blipp/net.git"}
+
+[dependencies.stm32f7_discovery]
+git = "https://github.com/blipp/stm32f7-discovery.git"
+version = "0.1.0"
+
+[profile.release]
+debug = true
+lto = true

@@ -1,0 +1,31 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "MIO client/server library for nailgun command muxer"
+documentation = "http://rustyhorde.github.io/libnail"
+homepage = "http://rustyhorde.github.io/libnail"
+keywords = ["nailgun", "mux", "command line"]
+license = "MIT/Apache-2.0"
+name = "libnail"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/libnail"
+version = "0.1.0"
+
+[dependencies]
+byteorder = "0.5.3"
+bytes = "0.3.0"
+lazy_static = "0.2.1"
+mio = "0.5.1"
+rand = "0.3.14"
+regex = "0.1.71"
+slab = "0.2.0"
+
+[dependencies.clippy]
+optional = true
+version = "~0.0.75"
+
+[dependencies.uuid]
+features = ["v4"]
+version = "0.2.2"
+
+[features]
+lint = ["clippy"]

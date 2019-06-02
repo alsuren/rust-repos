@@ -1,0 +1,10 @@
+[package]
+name = "rustice"
+version = "0.0.1"
+authors = ["Erik Zscheile <erik.zscheile@gmail.com>"]
+
+[dependencies]
+logos = "0.9.7"
+nom = "4.1"
+readfilez = "0.0.1"
+termcolor = "1"

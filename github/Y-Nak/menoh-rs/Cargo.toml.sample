@@ -1,0 +1,11 @@
+[package]
+name = "menoh"
+version = "0.1.0"
+authors = ["Y-Nak <nak.yoshitomo@gmail.com>"]
+
+[dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+image = "*"
+matches = "0.1"

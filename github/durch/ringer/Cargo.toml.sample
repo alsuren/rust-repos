@@ -1,0 +1,40 @@
+[package]
+name = "ringer"
+version = "0.1.0"
+authors = ["Drazen Urch <github@drazenur.ch>"]
+
+[[bin]]
+name = "checker"
+path = "src/bin/checker.rs"
+
+[[bin]]
+name = "api-server"
+path = "src/bin/api-server/main.rs"
+
+[lib]
+name = "ringer"
+path = "src/lib.rs"
+
+[dependencies]
+chrono = "*"
+chrono-humanize = "*"
+time = "*"
+diesel = { version = "*", features = ["postgres" , "chrono", "serde_json"] }
+diesel_codegen = { version = "*", features = ["postgres"] }
+dotenv = "*"
+error-chain = "*"
+curl = "*"
+sharp_pencil = "*"
+hyper = "*"
+unicase = "*"
+url = "*"
+pwhash = "*"
+rand = "*"
+
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+futures = "*"
+futures-cpupool = "*"
+
+lazy_static = "*"

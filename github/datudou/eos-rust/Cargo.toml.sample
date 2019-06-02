@@ -1,0 +1,22 @@
+[package]
+name = "eos-rust"
+version = "0.1.0"
+authors = ["datudou <wangqianyi.cs@gmail.com>"]
+
+
+[workspace]
+members = [
+    "eos-api",
+    "eos-cli",
+    "eos-keys",
+    "eos-wallet",
+]
+
+[dependencies]
+bytes = "0.4.9"
+eos-api = { path = "eos-api" }
+keys = { path = "eos-keys" }
+clap = {version = "2.32", features = ["yaml"]}
+
+
+

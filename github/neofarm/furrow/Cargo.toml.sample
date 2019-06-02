@@ -1,0 +1,12 @@
+[package]
+name = "furrow"
+version = "0.1.0"
+authors = ["Nick Riley <samueladams92@gmail.com>"]
+
+[dependencies]
+postgres = "0.15.2"
+r2d2_postgres = "0.14.0"
+r2d2 = "0.8.2"
+
+[profile.debug]
+debug = 2

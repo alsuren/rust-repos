@@ -1,0 +1,13 @@
+[package]
+name = "bfjit"
+version = "0.1.0"
+authors = ["Matej <dobrakmato@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+memmap = "0.7.0"
+bitflags = "1.0.5"
+clap = "2.33.0"
+
+[dev-dependencies]
+matches = "0.1.8"

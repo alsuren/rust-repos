@@ -1,0 +1,11 @@
+[package]
+name = "rbrute"
+version = "0.1.0"
+authors = ["Attenuation <ouyangjun1999@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "*"
+clap = "*"
+env_logger = "*"
+dns-lookup = "1.0.0"

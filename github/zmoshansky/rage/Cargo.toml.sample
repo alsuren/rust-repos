@@ -1,0 +1,18 @@
+[package]
+name = "rage"
+version = "0.1.0"
+authors = ["zach <zmoshansky@gmail.com>"]
+description = "Rust Advanced GUI Extravaganza"
+
+[dependencies]
+piston_window = "0.40.0"
+piston = "0.19.0"
+pistoncore-sdl2_window = "0.26.0"
+rose_tree = "0.1.1"
+
+# For graphics calls
+piston2d-graphics = "0.16.0"
+
+# For image widget
+gfx_device_gl = "0.9.0"
+piston-gfx_texture= "0.14.0"

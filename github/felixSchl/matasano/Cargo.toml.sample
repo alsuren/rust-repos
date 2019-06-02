@@ -1,0 +1,12 @@
+[package]
+name = "matasano"
+version = "0.1.0"
+authors = ["Felix Schlitter <felixschlitter@gmail.com>"]
+
+[dependencies]
+regex = "0.1.48"
+rustc-serialize = "0.3"
+bit-vec = "0.4.3"
+crossbeam = "0.1.5"
+simple_parallel = "0.3"
+openssl = "0.7.5"

@@ -1,0 +1,12 @@
+[package]
+name = "flandre_os_kernel"
+version = "0.1.0"
+authors = ["lws <chenkun_lws@126.com>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+bootloader = "0.5"
+
+[package.metadata.bootimage]
+default-target = "x86_64-flandre_os.json"

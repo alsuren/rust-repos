@@ -1,0 +1,12 @@
+[package]
+name = "suanpan"
+version = "0.1.0"
+authors = ["AkariAkaori <akariakaori@gmail.com>"]
+description = "Inspect, convert and otherwise manipulate data structures encoding numbers as place-value sequences."
+repository = "https://github.com/bpwpb/suanpan"
+readme = "README.md"
+keywords = ["endian", "bit", "positional", "mathematics"]
+categories = ["encoding"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]

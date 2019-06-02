@@ -1,0 +1,11 @@
+[package]
+name = "SudokuSolver"
+version = "0.1.0"
+authors = ["avtrujillo <alexandervtrujillo@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+arrayvec = "0.4.10"
+smallvec = "0.6.9"
+itertools = "0.8.0"

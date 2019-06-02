@@ -1,0 +1,19 @@
+[package]
+name = "ttdash"
+version = "0.1.0"
+authors = ["Matt Jones <jonesmr@gmail.com>"]
+
+[dependencies]
+chrono = "*"
+chrono-tz = "*"
+getopts = "*"
+image = "*"
+imageproc = "*"
+protobuf = "*"
+reqwest = "*"
+rppal = "*"
+rusttype = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+simple-server = "*"

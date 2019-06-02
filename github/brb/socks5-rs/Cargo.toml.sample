@@ -1,0 +1,18 @@
+[package]
+name = "socks5-rs"
+version = "0.1.0"
+authors = ["Martynas Pumputis <martynasp@gmail.com>"]
+
+[dependencies]
+mio = "0.6.14"
+bytes = "0.4"
+deque = "0.3"
+tcph = { path = "tcph" }
+workers = { path = "workers" }
+
+
+[workspace]
+
+[profile.release]
+debug = true
+lto = false

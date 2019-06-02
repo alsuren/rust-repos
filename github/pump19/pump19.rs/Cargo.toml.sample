@@ -1,0 +1,17 @@
+[package]
+name = "pump19"
+version = "0.1.0"
+license = "MIT"
+authors = ["Twisted Pear"]
+
+[dependencies]
+env_logger = "^0.4.3"
+irc = { version = "^0.12.5", features = ["toml"] }
+log = "^0.3.8"
+postgres = "^0.15.1"
+r2d2 = "^0.7.4"
+r2d2_postgres = "^0.13.0"
+serde = "^1.0.18"
+serde_derive = "^1.0.18"
+toml = "^0.4.5"
+xdg = "^2.1.0"

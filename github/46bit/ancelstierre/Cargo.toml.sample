@@ -1,0 +1,15 @@
+[package]
+name = "ancelstierre"
+version = "0.0.1"
+authors = ["Michael Mokrysz <hi@46b.it>"]
+
+[dependencies]
+clap = "2.31.2"
+spade = "1.7.0"
+nalgebra = "0.17"
+rand = "0.6.5"
+piston_window = "0.81.0"
+
+[[bin]]
+name = "ancelstierre"
+doc = false

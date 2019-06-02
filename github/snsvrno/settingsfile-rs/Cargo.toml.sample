@@ -1,0 +1,24 @@
+[package]
+name = "settingsfile"
+version = "0.2.8"
+authors = ["snsvrno <snsvrno@tuta.io>"]
+
+license = "MIT"
+description = "a library for easy interaction with complex configuration / settings files in multiple formats."
+repository = "https://github.com/snsvrno/settingsfile-rs"
+readme = "README.md"
+keywords = ["configuration","settings","config"]
+categories = ["config"]
+
+exclude = [ "/tests" ]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+failure = "0.1"
+log = "0.4"
+dirs = "1.0"
+
+[dev-dependencies]
+ron = "0.4"
+tempfile = "3"

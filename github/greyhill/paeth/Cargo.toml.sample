@@ -1,0 +1,18 @@
+[package]
+name = "paeth"
+version = "0.1.0"
+authors = ["Madison McGaffin <greyhill@gmail.com>"]
+
+[dependencies.nalgebra]
+version = "0.8"
+
+[dependencies.num]
+version = '0.1.32'
+
+[dependencies.image]
+version = '*'
+
+[dependencies.proust]
+git = "https://github.com/greyhill/proust"
+version = "0.0.5"
+

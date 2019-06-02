@@ -1,0 +1,12 @@
+[package]
+name = "webypass"
+version = "0.1.0"
+authors = ["Virgil Dupras <hsoft@hardcoded.net>"]
+
+[dependencies]
+hyper = "0.9"
+liquid = "0.8"
+
+[dependencies.kuchiki]
+version = "0.3"
+default-features = false

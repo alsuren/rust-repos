@@ -1,0 +1,8 @@
+[package]
+name = "hayaemon"
+version = "0.1.1"
+authors = ["kbone <kbonehobby@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+pancurses = "0.16.0"

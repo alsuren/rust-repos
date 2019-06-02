@@ -1,0 +1,20 @@
+[package]
+name = "bitpacking"
+version = "0.6.0"
+authors = ["Paul Masurel <paul.masurel@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["integer", "compression", "bitpacking"]
+description = "Fast integer compression/decompression via SIMD bit-packing. Port of simdcomp to rust."
+
+[dependencies]
+crunchy = "0.2.2"
+
+[dev-dependencies]
+rand = "0.6"
+criterion = "0.2"
+
+[[bench]]
+name = "bitpacking_bench"
+path = "src/bitpacking_bench.rs"
+harness = false

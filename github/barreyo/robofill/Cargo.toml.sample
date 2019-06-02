@@ -1,0 +1,19 @@
+[package]
+name = "robofill"
+version = "0.1.0"
+authors = ["Johan Backman <johback@student.chalmers.se>"]
+
+[features]
+default = []
+
+[dependencies]
+cgmath = "0.15"
+clippy = {version = "0.0.165", optional = true}
+piston2d-graphics = "0.21"
+piston2d-sprite = "0.37"
+specs = "0.9"
+specs-derive = "0.1"
+
+[dependencies.ggez]
+version = "0.3"
+features = ["cargo-resource-root"]

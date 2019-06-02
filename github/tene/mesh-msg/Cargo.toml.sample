@@ -1,0 +1,14 @@
+[package]
+name = "mesh-msg"
+version = "0.1.0"
+authors = ["Stephen Weeks <tene@allalone.org>"]
+edition = "2018"
+
+[dependencies]
+bytes = "0.4.11"
+crossbeam = "0.7.1"
+failure = "0.1.5"
+linefeed = "0.5.4"
+
+[dependencies.mio-framed]
+path = "lib-mio-framed"

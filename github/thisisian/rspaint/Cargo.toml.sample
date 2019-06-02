@@ -1,0 +1,11 @@
+[package]
+name = "rspaint"
+version = "0.1.0"
+authors = ["Ian Winter <iwinter@pdx.edu>"]
+
+[dependencies]
+gtk = "0.4.1"
+gio = "0.4.1"
+gdk = "0.8.0"
+cairo-rs = "0.4.1"
+lazy_static = "1.1.0"

@@ -1,0 +1,95 @@
+[package]
+name = "rust-patterns"
+version = "0.0.0"
+authors = ["Alexander Smoktal <cosm.ua@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+lazy_static = "0.2.10"
+
+# Creational
+[[bin]]
+name = "abstract_factory"
+path = "src/creational/abstract_factory.rs"
+
+[[bin]]
+name = "builder"
+path = "src/creational/builder.rs"
+
+[[bin]]
+name = "factory_method"
+path = "src/creational/factory_method.rs"
+
+[[bin]]
+name = "prototype"
+path = "src/creational/prototype.rs"
+
+[[bin]]
+name = "singleton"
+path = "src/creational/singleton.rs"
+
+# Structural
+[[bin]]
+name = "adapter"
+path = "src/structural/adapter.rs"
+
+[[bin]]
+name = "bridge"
+path = "src/structural/bridge.rs"
+
+[[bin]]
+name = "composite"
+path = "src/structural/composite.rs"
+
+[[bin]]
+name = "decorator"
+path = "src/structural/decorator.rs"
+
+[[bin]]
+name = "facade"
+path = "src/structural/facade.rs"
+
+[[bin]]
+name = "flyweight"
+path = "src/structural/flyweight.rs"
+
+[[bin]]
+name = "proxy"
+path = "src/structural/proxy.rs"
+
+# Behavioral
+[[bin]]
+name = "chain_of_responsibility"
+path = "src/behavioral/chain_of_responsibility.rs"
+
+[[bin]]
+name = "command"
+path = "src/behavioral/command.rs"
+
+[[bin]]
+name = "iterator"
+path = "src/behavioral/iterator.rs"
+
+[[bin]]
+name = "mediator"
+path = "src/behavioral/mediator.rs"
+
+[[bin]]
+name = "memento"
+path = "src/behavioral/memento.rs"
+
+[[bin]]
+name = "observer"
+path = "src/behavioral/observer.rs"
+
+[[bin]]
+name = "state"
+path = "src/behavioral/state.rs"
+
+[[bin]]
+name = "strategy"
+path = "src/behavioral/strategy.rs"
+
+[[bin]]
+name="visitor"
+path = "src/behavioral/visitor.rs"

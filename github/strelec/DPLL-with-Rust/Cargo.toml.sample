@@ -1,0 +1,22 @@
+[package]
+name = "dpll-rust"
+version = "0.1.0"
+authors = ["Rok Kralj <info@rok-kralj.net>"]
+
+[dependencies]
+bit-set = "*"
+
+[profile.release]
+lto = true
+
+[lib]
+name = "solver"
+path = "src/solver/mod.rs"
+
+[[bin]]
+name = "solve"
+path = "src/main.rs"
+
+[[bin]]
+name = "generate"
+path = "src/generate.rs"

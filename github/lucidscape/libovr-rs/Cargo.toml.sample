@@ -1,0 +1,16 @@
+[package]
+name = "libovr"
+version = "0.1.3"
+authors = [
+    "Lucidscape Technologies Inc.",
+    "Braden Evans <braden@lucidscape.com>"
+]
+build = "build.rs"
+description = " Rust bindings for LibOVR (Oculus Rift SDK)."
+keywords = ["VR", "Oculus", "LibOVR"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/lucidscape/libovr-rs"
+#documentation = ""
+
+[dependencies]

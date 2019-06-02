@@ -1,0 +1,11 @@
+[package]
+name = "space_game"
+version = "0.1.0"
+authors = ["Jayshua Nelson <me@jayshuanelson.com>"]
+
+[dependencies]
+dcpu16_emulator = {path = "../dcpu16_emulator"}
+glium = "*"
+docopt = "0.8"
+serde = "1.0"
+serde_derive = "1.0"

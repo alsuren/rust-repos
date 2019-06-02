@@ -1,0 +1,10 @@
+[package]
+name = "libsensors-sys"
+version = "0.1.1"
+authors = ["nyantec GmbH <dev@nyantec.com>"]
+license = "MirOS"
+description = "Rust bindings to libsensors"
+categories = ["external-ffi-bindings"]
+repository = "https://github.com/nyantec/libsensors-sys"
+
+[dependencies]

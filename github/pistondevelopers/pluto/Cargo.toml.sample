@@ -1,0 +1,28 @@
+[package]
+
+name = "pluto"
+version = "0.0.2"
+authors = [
+    "bvssvni <bvssvni@gmail.com>",
+    "Haggus <matt.mrowiec@gmail.com>"
+]
+keywords = ["gamedev", "competition", "piston"]
+description = "Server software for Pluto, the Rust gamedev competition"
+license = "MIT"
+repository = "https://github.com/PistonDevelopers/redox.git"
+homepage = "https://github.com/PistonDevelopers/redox"
+
+[[bin]]
+
+name = "redox"
+path = "src/main.rs"
+
+[dependencies]
+iron = "0.3.0"
+postgres = "0.11.0"
+staticfile = "0.2.0"
+mount = "0.1.0"
+router = "0.1.0"
+logger = "0.0.3"
+handlebars-iron = "0.15.1"
+rustc-serialize = "0.3.16"

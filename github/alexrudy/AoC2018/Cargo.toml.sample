@@ -1,0 +1,26 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["Alex Rudy <alex.rudy@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "aoc2018"
+path = "src/main.rs"
+
+[workspace]
+
+[dependencies]
+carts = { path = "carts" }
+goblinwars = { path = "goblinwars" }
+geometry = { path = "geometry" }
+waterfall = { path = "waterfall" }
+docopt = "1"
+serde = "1.0"
+serde_derive = "1.0"
+itertools = "0.7.11"
+regex = "1"
+lazy_static = "1.2.0"
+chrono = "0.4"
+rayon = "1.0"
+failure = "0.1"

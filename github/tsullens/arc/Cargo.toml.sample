@@ -1,0 +1,10 @@
+[package]
+name = "arc"
+version = "0.0.1"
+authors = ["Tyler Sullens <tsullens@mix.wvu.edu>"]
+
+[dependencies]
+regex = "1.0.0"
+lazy_static = "1.0"
+rand = "0.5.0"
+config = "0.8.0"

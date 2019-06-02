@@ -1,0 +1,46 @@
+[package]
+name = "kbdi"
+version = "0.4.3"
+authors = ["Brendan Molloy <brendan@bbqsrc.net>"]
+publish = false
+edition = "2018"
+
+[features]
+legacy = []
+
+[[bin]]
+name = "kbdi-legacy"
+required-features = ["legacy"]
+doc = false
+path = "src/bin/kbdi_legacy.rs"
+
+[[bin]]
+name = "kbdi"
+required-features = []
+doc = false
+path = "src/bin/kbdi.rs"
+
+[dependencies]
+log = "*"
+env_logger = "*"
+libloading = "0.5.0"
+lazy_static = "1.2.0"
+sentry = "0.12.0"
+winapi = { version = "0.3", features = ["everything"] }
+
+[dependencies.winreg]
+version = "0.6"
+default-features = false
+features = []
+
+[dependencies.clap]
+version = "2.32.0"
+default-features = false
+features = []
+
+[build-dependencies]
+embed-resource = "1.1"
+
+[profile.release]
+lto = true
+debug = true

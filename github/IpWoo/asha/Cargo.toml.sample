@@ -1,0 +1,13 @@
+[package]
+
+name = "asha"
+version = "0.0.1"
+authors = [ "Wesley Woo <wesley_woo@yeah.com>" ]
+
+[[bin]]
+
+name = "asha"
+
+[feature]
+
+default = []

@@ -1,0 +1,16 @@
+[package]
+name = "wechatpay"
+version = "0.1.4"
+authors = ["Qian Linfeng <thewawar@gmail.com>"]
+license = "MIT"
+description = "Wechat payment server SDK"
+keywords = ["wechat", "pay", "sdk", "wechatpay"]
+repository = "https://github.com/local-group/rust-wechatpay"
+
+[dependencies]
+time = "0.1"
+uuid = {version="0.2", features=["v4"]}
+md5 = "0.2.0"
+xml-rs = "0.3.4"
+url = "1.2.0"
+curl = "0.3.2"

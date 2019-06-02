@@ -1,0 +1,10 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Tang King Fai <xosdy.t@gmail.com>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+nalgebra = "0.18.0"
+image = "0.21.1"

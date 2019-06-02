@@ -1,0 +1,13 @@
+[package]
+name = "scheme2c"
+version = "0.1.0"
+authors = ["BookOwl <stanleybookowl@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lalrpop-util = "0.16.2"
+regex = "0.2.0"
+
+# Add a build-time dependency on the lalrpop library:
+[build-dependencies]
+lalrpop = "0.16.2"

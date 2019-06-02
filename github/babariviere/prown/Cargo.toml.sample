@@ -1,0 +1,11 @@
+[package]
+name = "prown"
+version = "0.1.0"
+authors = ["notkild <notkild@gmail.com>"]
+
+[dependencies]
+toml = "0.2"
+clap = "2.19"
+glob = "0.2"
+notify = "3.0"
+app_dirs = "1.1"

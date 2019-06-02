@@ -1,0 +1,8 @@
+[package]
+name = "art_pattern"
+version = "0.1.0"
+authors = ["Jia Ye <planet0104@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+stdweb = "0.4.8"

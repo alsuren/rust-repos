@@ -1,0 +1,20 @@
+[package]
+name = "jfactor"
+version = "0.1.0"
+authors = ["Juergen Stuber <juergen@jstuber.net>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["encoding"]
+repository = "https://github.com/starblue/jfactor"
+homepage = "https://github.com/starblue/jfactor"
+documentation = "https://starblue.github.io/jfactor"
+description = """
+A library for factoring integers and computing various related functions.
+"""
+
+[dependencies]
+num = "0.1"
+primal = "0.2"
+
+[features]
+bench = []

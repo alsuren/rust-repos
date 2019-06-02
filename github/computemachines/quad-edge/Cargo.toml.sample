@@ -1,0 +1,10 @@
+[package]
+name = "mesh"
+version = "0.1.0"
+authors = ["Tyler Parker <tparker@computemachines.com>"]
+
+[dependencies]
+
+[lib]
+name = "mesh"
+crate-type = ["dylib"]

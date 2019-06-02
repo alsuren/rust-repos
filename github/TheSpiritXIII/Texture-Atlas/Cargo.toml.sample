@@ -1,0 +1,12 @@
+[package]
+name = "texture_atlas"
+version = "0.2.0"
+authors = ["TheSpiritXIII <thespiritxiii@gmail.com>"]
+license = "MIT"
+
+[features]
+default = ["image"]
+
+[dependencies.image]
+version = "0.15"
+optional = true

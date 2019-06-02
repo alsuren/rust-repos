@@ -1,0 +1,10 @@
+[package]
+name = "importer"
+version = "0.0.1"
+authors = ["Dennis Pettersson <mail@dennispettersson.se>"]
+
+[dependencies]
+rust-crypto = "^0.2"
+toml = "^0.1"
+rusqlite = "^0.7"
+notify = "2.6.2"

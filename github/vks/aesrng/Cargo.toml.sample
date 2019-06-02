@@ -1,0 +1,22 @@
+[package]
+authors = ["Vinzent Steinberg <Vinzent.Steinberg@gmail.com>"]
+categories = ["cryptography"]
+description = "Fast-key-erasure random-number generator using AES-NI"
+keywords = ["crypto", "rijndael", "stream-cipher"]
+license = "BSD-2-Clause"
+name = "aesrng"
+repository = "https://github.com/vks/aesrng"
+version = "0.1.0"
+
+[[bench]]
+harness = false
+name = "rngs"
+
+[dependencies]
+rand_core = "0.4"
+
+[dev-dependencies]
+criterion = "0.2"
+itertools = "0.8"
+rand_xoshiro = "0.1"
+rand = "0.6"

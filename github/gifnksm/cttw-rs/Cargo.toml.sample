@@ -1,0 +1,18 @@
+[package]
+name = "cttw"
+version = "0.0.10"
+authors = ["gifnksm <makoto.nksm+github@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/gifnksm/cttw-rs"
+description = "Compile time twittering"
+
+[lib]
+name = "cttw"
+crate-type = ["dylib"]
+
+[dependencies]
+rust-crypto = "0.2"
+rustc-serialize = "0.3"
+twitter-api = "0.2"
+oauth-client = "0.1"

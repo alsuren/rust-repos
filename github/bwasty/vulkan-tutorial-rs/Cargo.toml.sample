@@ -1,0 +1,17 @@
+[package]
+name = "vulkan-tutorial-rs"
+version = "0.1.0"
+authors = ["Benjamin Wasty <benny.wasty@gmail.com>"]
+autobins = true
+
+[dependencies]
+vulkano = "0.11.1"
+vulkano-shaders = "0.11.1"
+image = "0.20.1"
+vulkano-win = "0.11.1"
+winit = "0.18.0"
+cgmath = "0.17.0"
+
+# [[bin]]
+# name = "main"
+# path = "src/bin/00_base_code.rs"

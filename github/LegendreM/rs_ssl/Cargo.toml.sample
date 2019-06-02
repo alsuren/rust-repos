@@ -1,0 +1,8 @@
+[package]
+edition = "2018"
+name = "rs_ssl"
+version = "0.1.0"
+authors = ["mlegendre <legendre.maxime.isn@gmail.com>"]
+
+[dependencies]
+md5 = "0.6.1"

@@ -1,0 +1,71 @@
+[package]
+name = "hackerrank"
+version = "0.1.0"
+authors = ["Arnaud M <arnaudmarant@gmail.com>"]
+
+[dependencies]
+num = "*"
+
+[[bin]]
+name = "solve_me_first"
+path = "src/algorithms/warmup/solve_me_first.rs"
+
+[[bin]]
+name = "solve_me_second"
+path = "src/algorithms/warmup/solve_me_second.rs"
+
+[[bin]]
+name = "a_very_big_sum"
+path = "src/algorithms/warmup/a_very_big_sum.rs"
+
+[[bin]]
+name = "diagonal_difference"
+path = "src/algorithms/warmup/diagonal_difference.rs"
+
+[[bin]]
+name = "plus_minus"
+path = "src/algorithms/warmup/plus_minus.rs"
+
+[[bin]]
+name = "staircase"
+path = "src/algorithms/warmup/staircase.rs"
+
+[[bin]]
+name = "time_conversion"
+path = "src/algorithms/warmup/time_conversion.rs"
+
+[[bin]]
+name = "library_fine"
+path = "src/algorithms/warmup/library_fine.rs"
+
+[[bin]]
+name = "caesar_cipher"
+path = "src/algorithms/warmup/caesar_cipher.rs"
+
+[[bin]]
+name = "extra_long_factorials"
+path = "src/algorithms/warmup/extra_long_factorials.rs"
+
+[[bin]]
+name = "fibonacci_modified"
+path = "src/algorithms/dynamic_programming/fibonacci_modified.rs"
+
+[[bin]]
+name = "the_maximum_subarray"
+path = "src/algorithms/dynamic_programming/the_maximum_subarray.rs"
+
+[[bin]]
+name = "the_coin_change_problem"
+path = "src/algorithms/dynamic_programming/the_coin_change_problem.rs"
+
+[[bin]]
+name = "candies"
+path = "src/algorithms/dynamic_programming/candies.rs"
+
+[[bin]]
+name = "stock_maximize"
+path = "src/algorithms/dynamic_programming/stock_maximize.rs"
+
+[[bin]]
+name = "maximise_sum"
+path = "src/algorithms/search/maximise_sum.rs"

@@ -1,0 +1,11 @@
+[package]
+name = "from_wrap"
+version = "0.2.1"
+authors = ["XX <freecoder.xx@gmail.com>"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "*"
+quote = "*"

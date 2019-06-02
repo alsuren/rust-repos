@@ -1,0 +1,21 @@
+[package]
+name = "netzact"
+version = "0.1.0"
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+
+[dependencies]
+bitflags = "1"
+cast = "0.2"
+clap = "2"
+dns-lookup = "1"
+failure = "0.1"
+libc = "0.2"
+nix = "0.11"
+rayon = "1"
+
+[dependencies.nom]
+version = "4.0.0"
+features = ["verbose-errors"]
+
+[profile.release]
+lto = true

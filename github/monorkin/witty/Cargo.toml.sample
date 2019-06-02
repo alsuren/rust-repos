@@ -1,0 +1,23 @@
+[package]
+name = "witty"
+version = "1.0.0"
+authors = ["Stanko Krtalić Rusendić <stanko.krtalic@gmail.com>"]
+description = "wit.ai client library"
+documentation = "https://github.com/Stankec/witty"
+homepage = "https://github.com/Stankec/witty"
+repository = "https://github.com/Stankec/witty"
+readme = "README.md"
+keywords = ["wit", "nlp", "natural", "language"]
+categories = ["api-bindings", "parsing", "text-processing"]
+license-file = "LICENSE.txt"
+
+
+[dependencies]
+futures = "0.1.14"
+hyper = "0.11.6"
+hyper-rustls = "0.11.0"
+tokio-core = "0.1.10"
+serde = "1.0.0"
+serde_json = "1.0.0"
+serde_derive = "1.0.0"
+serde_urlencoded = "0.5.1"

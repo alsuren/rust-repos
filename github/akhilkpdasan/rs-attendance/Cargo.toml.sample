@@ -1,0 +1,23 @@
+[package]
+name = "attendance-rs"
+version = "0.2.0"
+authors = ["Akhil kp <akhilkpdasan@gmail.com>"]
+
+[dependencies]
+diesel = { version = "*", features = ["postgres"] }
+dotenv = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+actix = "*"
+actix-web = "0.5.1"
+futures = "0.1"
+bytes = "*"
+http = "*"
+num_cpus = "*"
+r2d2 = "*"
+r2d2-diesel = "*"
+env_logger = "*"
+bcrypt = "0.2.0"
+jsonwebtoken = "4.0.1"
+time = "0.1.39"

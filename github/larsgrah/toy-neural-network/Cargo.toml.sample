@@ -1,0 +1,8 @@
+[package]
+name = "toy-network"
+version = "0.1.0"
+authors = ["lars <lars@kloud.software>"]
+
+[dependencies]
+rand = "0.5.5"
+ndarray = "0.12.0"

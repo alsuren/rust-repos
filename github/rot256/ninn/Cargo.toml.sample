@@ -1,0 +1,38 @@
+[package]
+name = "ninn"
+version = "0.1.0"
+authors = ["Mathias Hall-Andersen <mathias@hall-andersen.dk>", "Dirkjan Ochtman <dirkjan@ochtman.nl>"]
+description = "Futures-based nQUIC implementation"
+keywords = ["quic", "tokio"]
+categories = ["network-programming"]
+repository = "https://github.com/rot256/ninn"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+bytes = "0.4.7"
+failure = "0.1"
+failure_derive = "0.1"
+futures = "0.1"
+hex = "0.3.2"
+log = "0.4"
+tokio = "0.1"
+tokio-core = "*"
+rand = "=0.5.0-pre.2"
+ring = "0.13.0-alpha"
+webpki = "0.18.0-alpha"
+webpki-roots = "0.14"
+lazy_static = "*"
+
+[dependencies.rustls]
+git = "https://github.com/ctz/rustls"
+branch = "jbp-tls13-draft-28"
+features = ["quic"]
+
+[dependencies.snow]
+git = "https://github.com/rot256/snow"
+branch = "master"
+
+[dev-dependencies]
+env_logger = "0.5"
+untrusted = "0.6"
+hex = "*"

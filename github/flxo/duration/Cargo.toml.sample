@@ -1,0 +1,8 @@
+[package]
+name = "duration"
+version = "0.1.0"
+authors = ["Felix Obenhuber <felix@obenhuber.de>"]
+
+[dependencies]
+error-chain = "0.9.0"
+term-painter = "0.2.3"

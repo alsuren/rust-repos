@@ -1,0 +1,9 @@
+[package]
+name = "grep-baby"
+version = "0.1.0"
+authors = ["Francososa <franky.sosa@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "0.2.2"
+clap = "2.24.2"

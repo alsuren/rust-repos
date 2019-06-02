@@ -1,0 +1,14 @@
+[package]
+name = "puk"
+version = "0.1.0"
+authors = ["Nikita Krupitskas <krupitskaz@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+vulkano = "0.12"
+vulkano-shaders = "0.12"
+vulkano-win = "0.12"
+cgmath = "0.17"
+image = "0.21"
+winit = "0.19"
+time = "0.1.37"

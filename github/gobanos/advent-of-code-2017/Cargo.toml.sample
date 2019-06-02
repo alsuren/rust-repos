@@ -1,0 +1,23 @@
+[package]
+name = "aoc2017"
+version = "0.1.0"
+authors = ["Grégory OBANOS <gregory.obanos@gmail.com>"]
+
+[dependencies]
+# WORKSPACE DEPS
+day7_parser = { path = "day7_parser" }
+day8_parser = { path = "day8_parser" }
+day9_parser = { path = "day9_parser" }
+day12_parser = { path = "day12_parser" }
+day18_parser = { path = "day18_parser" }
+day20_parser = { path = "day20_parser" }
+day21_parser = { path = "day21_parser" }
+day23_parser = { path = "day23_parser" }
+day25_parser = { path = "day25_parser" }
+
+# EXTERNAL DEPS
+petgraph = "*"
+time = "*"
+rayon = "*"
+
+[workspace]

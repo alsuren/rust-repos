@@ -1,0 +1,14 @@
+[package]
+name = "ndo"
+version = "0.1.0"
+authors = ["Søren Mortensen <soren@sorenmortensen.com>"]
+license = "MIT"
+
+[workspace]
+members = [
+    "libndo",
+]
+
+[dependencies]
+clap = "~2.31"
+libndo = { path = "libndo" }

@@ -1,0 +1,40 @@
+[package]
+name = "repassync"
+version = "0.1.0"
+authors = ["Lucas Satabin <lucas.satabin@gnieh.org>"]
+
+[build-dependencies]
+pkg-config = "0.3"
+xml-rs = "0.7"
+
+[dependencies]
+rand = "0.3"
+char-iter = "0.1"
+xdg = "2.1"
+secstr = "0.3"
+byteorder = "1.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_cbor = "0.6"
+serde_bytes = "0.10"
+pwquality = "0.2"
+env_logger = "0.4"
+log = "0.3"
+
+[dependencies.chrono]
+version = "0.4"
+features = ["serde"]
+
+[dependencies.openssl]
+version = "0.9"
+features = ["v110"]
+
+[dependencies.gtk]
+version = "0.2.0"
+features = ["v3_22"]
+
+[dependencies.gio]
+version = "0.2.0"
+
+[dependencies.glib]
+version = "0.3.1"

@@ -1,0 +1,9 @@
+[package]
+name = "rocket-api-test"
+version = "0.1.0"
+authors = ["Nicolas Ribonnet <nicolas.ribonnet@outlook.com>"]
+
+[dependencies]
+rocket = "0.3.9"
+rocket_codegen = "0.3.9"
+rocket_contrib = "0.3.9"

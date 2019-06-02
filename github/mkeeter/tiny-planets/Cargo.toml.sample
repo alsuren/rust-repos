@@ -1,0 +1,22 @@
+[package]
+name = "tiny-planets-rs"
+version = "0.1.0"
+authors = ["Matt Keeter <matt.j.keeter@gmail.com>"]
+
+[dependencies]
+glium = "*"
+libloading = "*"
+winit = "*"
+objc = "*"
+notify = "4.0.0"
+cgmath = "*"
+ctrlc = { version = "3.0", features = ["termination"] }
+num-traits = "*"
+noise = "*"
+rand = "0.4"
+image = "*"
+
+[lib]
+name = "live"
+path = "src/live.rs"
+crate-type = ["cdylib"]

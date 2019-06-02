@@ -1,0 +1,15 @@
+[package]
+
+name = "llvm"
+version = "0.1.0"
+authors = [
+    "KokaKiwi <kokakiwi@kokakiwi.net>",
+]
+documentation = "http://kokakiwi.github.io/rust-llvm/doc/llvm/"
+
+[dependencies]
+# libc = "*"
+
+[dependencies.llvm-sys]
+path = "llvm-sys"
+version = "0.0.1"

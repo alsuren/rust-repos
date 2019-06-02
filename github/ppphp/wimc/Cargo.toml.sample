@@ -1,0 +1,13 @@
+[package]
+name = "wimc"
+version = "0.1.0"
+authors = ["ppphp"]
+
+[dependencies]
+toml = "*"
+serde_derive = "*"
+serde = "*"
+
+[dependencies.gtk]
+version = "0.3.0"
+features = ["v3_10"]

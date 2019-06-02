@@ -1,0 +1,11 @@
+[package]
+
+name = "selecta"
+version = "0.0.1"
+authors = ["James Sadler <freshtonic@gmail.com>"]
+
+[lib]
+name = "selecta_rs"
+doctest = false
+test = true
+doc = false

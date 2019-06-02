@@ -1,0 +1,23 @@
+[package]
+name = "gstuff"
+version = "0.5.2"
+authors = ["ArtemGr <artemciy@gmail.com>"]
+
+description = "Small macro and trinkets that make my life easier."
+documentation = "https://docs.rs/gstuff/"
+repository = "https://github.com/ArtemGr/gstuff.rs"
+license = "MIT"
+
+[lib]
+name = "gstuff"
+path = "gstuff.rs"
+doctest = false
+
+[features]
+nightly = []
+
+[dependencies]
+lazy_static = "1"
+libc = "0.2"
+term = "0.5"
+term_size = "0.3"

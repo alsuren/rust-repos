@@ -1,0 +1,26 @@
+[package]
+name = "generic-dns-update"
+version = "1.1.5-pre"
+authors = ["Damien Lecan <dev@dlecan.com>"]
+description = "A cross-platform tool to update DNS zonefiles (such as Gandi.net) when you have a dynamic public IP address."
+homepage = "https://github.com/dlecan/generic-dns-update/"
+repository = "https://github.com/dlecan/generic-dns-update/"
+readme = "README.md"
+license = "MIT"
+
+[[bin]]
+name="gdu"
+
+[dependencies]
+clap = "2"
+log = "0.3"
+env_logger = "0.3"
+rustc-serialize = "0.3"
+regex = "0.1"
+hyper = "0"
+time = "0.1"
+xml-rs = "0.1"
+num = "0"
+
+[package.metadata.release]
+upload-doc = false

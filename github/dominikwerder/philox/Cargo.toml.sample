@@ -1,0 +1,17 @@
+[project]
+name = "philox"
+version = "0.0.0"
+authors = ["Dominik Werder <dominik.werder@gmail.com>"]
+edition = "2018"
+keywords = ["random", "rng"]
+categories = ["algorithms", "science"]
+license = "MIT"
+repository = "https://github.com/dominikwerder/philox"
+description = "Philox4x32-10 random number generator"
+
+[lib]
+doctest = false
+
+[dependencies]
+generic-array = "0.12"
+typenum = "1.10"

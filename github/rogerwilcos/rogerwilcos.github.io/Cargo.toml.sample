@@ -1,0 +1,7 @@
+[package]
+name = "rogercv"
+version = "0.1.0"
+authors = ["Roger Wilco <roger.wilco@protonmail.com>"]
+
+[dependencies]
+yew = { git = "https://github.com/DenisKolodin/yew", features = ["toml", "yaml", "msgpack", "cbor"] }

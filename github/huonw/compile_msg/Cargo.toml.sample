@@ -1,0 +1,20 @@
+[project]
+
+name = "compile_msg"
+version = "0.1.5"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+homepage = "https://github.com/huonw/compile_msg"
+repository = "https://github.com/huonw/compile_msg"
+license = "MIT/Apache-2.0"
+keywords = ["macro", "plugin"]
+readme = "README.md"
+description = """
+A plugin for emitting errors, warnings and notes to the developer at
+compile time.
+"""
+
+[lib]
+
+name = "compile_msg"
+plugin = true

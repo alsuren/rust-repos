@@ -1,0 +1,24 @@
+[package]
+name = "robot-com"
+version = "0.1.0"
+authors = ["Dakota James owen Keeler <Bearzrobotics@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+#byte-unit = "1.1"
+rand = "0.6"
+
+# can handle the serlization and deserlization of data in rust
+protocol = "1.0"
+protocol-derive = "1.0"
+
+# used for leb128 format for encoding data Network tables 3.0
+codicon = "1.0"
+lebicon = "2.0"
+
+# load cofig
+rust-ini = "0.13"
+
+nalgebra = "0.16"
+
+mdns = "0.3.0"

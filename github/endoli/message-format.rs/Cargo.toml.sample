@@ -1,0 +1,15 @@
+[package]
+name = "message-format"
+version = "0.0.1"
+authors = ["Bruce Mitchener <bruce.mitchener@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+description = "An implementation of ICU MessageFormats for Rust."
+keywords = ["format", "i18n", "localization", "l10n", "internationalization"]
+homepage = "https://github.com/endoli/message-format.rs"
+repository = "https://github.com/endoli/message-format.rs"
+documentation = "https://endoli.github.io/message-format.rs/"
+
+[dependencies]
+language-tags = "0.2.2"
+nom = "3"

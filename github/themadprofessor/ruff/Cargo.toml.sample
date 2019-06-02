@@ -1,0 +1,10 @@
+[package]
+name = "ruff"
+version = "0.1.0"
+authors = ["Stuart Reilly <stu@reilly-family.co.uk>"]
+
+[dependencies]
+error-chain = "*"
+nom = "*"
+byteorder = "*"
+serde = { version = "*", optional = true, features = ["derive"]}

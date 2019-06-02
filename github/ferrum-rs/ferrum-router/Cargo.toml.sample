@@ -1,0 +1,21 @@
+[package]
+name = "ferrum-router"
+version = "0.2.1"
+description = "A router for the Ferrum framework."
+readme = "README.md"
+repository = "https://github.com/ferrum-rs/ferrum-router"
+keywords = ["ferrum", "web", "http", "routing", "router"]
+license = "MIT"
+authors = [
+    "Jonathan Reem <jonathan.reem@gmail.com>",
+    "Alexander Meshcheryakov <freecoder.xx@gmail.com>"
+]
+
+[dependencies]
+ferrum = "0.2"
+url = "1.6"
+route-recognizer = "0.1"
+regex = "0.2"
+
+[features]
+nightly = []

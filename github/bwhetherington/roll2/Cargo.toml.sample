@@ -1,0 +1,8 @@
+[package]
+name = "roll"
+version = "0.1.0"
+edition = "2018"
+authors = ["Benjamin Hetherington <b.w.hetherington@gmail.com>"]
+
+[dependencies]
+rand = "*"

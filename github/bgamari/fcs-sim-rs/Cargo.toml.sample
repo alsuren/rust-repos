@@ -1,0 +1,17 @@
+[package]
+name = "rust"
+version = "0.1.0"
+authors = ["Ben Gamari <ben@smart-cactus.org>"]
+
+[dependencies]
+num-traits = "0.2.6"
+rand = "0.6.5"
+nalgebra = "0.18"
+rayon = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+csv = "1.0"
+
+[[bin]]
+name = "rust"
+path = "main.rs"

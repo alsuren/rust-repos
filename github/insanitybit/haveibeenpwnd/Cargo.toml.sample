@@ -1,0 +1,20 @@
+[package]
+name = "haveibeenpwnd"
+version = "0.2.1"
+authors = ["insanitybit <insanitybit@gmail.com>"]
+
+description = "Provides a client for the Have I Been Pwnd API"
+license = "MIT"
+keywords = ["pwnd", "haveibeenpwnd", "haveibeenpwned"]
+
+repository = "https://github.com/insanitybit/haveibeenpwnd"
+readme = "README.md"
+
+
+[dependencies]
+hyper = "0.10.*"
+hyper-rustls = "0.3.*"
+serde = "0.8.*"
+serde_json = "0.8.*"
+error-chain = "0.4.*"
+url = "1.2.*"

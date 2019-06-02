@@ -1,0 +1,19 @@
+[package]
+name = "memento"
+version = "0.1.0"
+authors = ["TSH Labs"]
+description = "A Whisper implementation in Rust"
+homepage = "https://github.com/tshlabs/memento"
+documentation = "https://docs.rs/memento/"
+repository = "https://github.com/tshlabs/memento.git"
+readme = "README.md"
+license = "Apache-2.0/MIT"
+keywords = ["whisper", "graphite", "carbon", "metrics"]
+
+[workspace]
+
+[dependencies]
+chrono = "0.4.0"
+fs2 = "0.4.2"
+memmap = "0.6.2"
+memento-core = { path = "core" }

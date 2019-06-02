@@ -1,0 +1,15 @@
+[package]
+name = "ledgy"
+version = "0.1.8"
+authors = ["arlo <arlo@indeed.com>"]
+
+[dependencies]
+chrono = { version = "*", features = ["serde"] }
+rocket = "*"
+rocket_codegen = "*"
+rocket_contrib = "*"
+rusqlite = { version = "*", features = ["chrono"] }
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+time = "*"

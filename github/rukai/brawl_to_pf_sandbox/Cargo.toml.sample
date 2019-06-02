@@ -1,0 +1,20 @@
+[package]
+name = "brawl_exporter"
+version = "0.1.0"
+authors = ["Rukai <rubickent@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+brawllib_rs = "0.16"
+pf_sandbox_lib = "0.3"
+cgmath = "0.17"
+ref_slice = "1"
+treeflection = "0.1"
+getopts = "0.2"
+env_logger = "0.6"
+log = "0.4"
+noisy_float = "0.1"
+num-traits = "0.2"
+
+[profile.release]
+debug-assertions = true

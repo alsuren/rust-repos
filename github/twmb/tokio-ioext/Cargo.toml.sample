@@ -1,0 +1,15 @@
+[package]
+name = "tokio-ioext"
+version = "0.1.0"
+authors = ["Travis Bischel <twmb@lavabit.com>"]
+description = "Niche extension functions for tokio-io"
+documentation = "https://docs.rs/tokio-ioext"
+repository = "https://github.com/twmb/tokio-ioext"
+readme = "README.md"
+keywords = ["futures", "future", "io", "async"]
+categories = ["asynchronous"]
+license = "MIT"
+
+[dependencies]
+futures = "0.1"
+tokio-io = "0.1"

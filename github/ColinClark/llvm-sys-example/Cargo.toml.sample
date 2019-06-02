@@ -1,0 +1,8 @@
+[package]
+name = "llvm-sys-example"
+version = "0.1.0"
+authors = ["colin clark <colin@clark.ws>"]
+
+[dependencies]
+inkwell = { git = "https://github.com/TheDan64/inkwell", branch = "llvm6-0" }
+

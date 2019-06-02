@@ -1,0 +1,11 @@
+[package]
+name = "Portal2"
+version = "0.1.0"
+authors = ["Callum <cgtrolley@gmail.com>"]
+
+[dependencies]
+cgmath = "0.12.0"
+glium = "0.15.0"
+png = "0.5.2"
+log = "0.3"
+simplelog = "0.4.2"

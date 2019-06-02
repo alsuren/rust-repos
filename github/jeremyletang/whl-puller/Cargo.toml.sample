@@ -1,0 +1,23 @@
+[package]
+name = "whlp"
+version = "0.1.0"
+authors = ["jeremyletang <letang.jeremy@gmail.com>"]
+
+[dependencies]
+chrono = "^0.3"
+clap = "2.20.3"
+diesel = { version = "0.11.4", features = ["postgres", "large-tables", "chrono"] }
+diesel_codegen = { version = "0.11.0", features = ["postgres"] }
+dotenv = "0.8.0"
+env_logger = "0.4.0"
+hyper = "0.10.4"
+log = "0.3.6"
+regex = "0.2.1"
+reqwest = "0.4.0"
+serde = "^0.9.8"
+serde_json = "0.9.8"
+# serde_xml = "0.9.1"
+serde_derive = "0.9.8"
+time = "0.1.36"
+xml-rs = "0.3.5"
+uuid = { version = "0.4", features = ["v4"] }

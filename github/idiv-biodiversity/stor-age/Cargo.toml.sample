@@ -1,6 +1,6 @@
 [package]
 name = "stor-age"
-version = "0.1.1"
+version = "0.2.1"
 authors = ["Christian Krause <christian.krause@mailbox.org>"]
 description = "show aging of directories"
 license = "GPL-3.0-or-later"
@@ -16,9 +16,21 @@ edition = "2018"
 atty = "^0.2"
 bytesize = "^1"
 lazy_static = "^1"
-mktemp = "^0.4"
 regex = "^1"
 
 [dependencies.clap]
 version = "^2"
 features = ["wrap_help"]
+
+[dependencies.tempfile]
+version = "^3"
+optional = true
+
+[features]
+default = []
+spectrum-scale = ["tempfile"]
+
+[dev-dependencies]
+assert_cmd = "^0.11"
+predicates = "^1"
+tempfile = "^3"

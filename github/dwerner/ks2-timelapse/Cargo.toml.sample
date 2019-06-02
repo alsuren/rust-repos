@@ -1,0 +1,13 @@
+[package]
+name = "ks2-timelapse"
+version = "0.1.0"
+authors = ["Daniel Werner <dan.werner@gmail.com>"]
+
+[dependencies]
+futures = "0.1"
+hyper = "0.12"
+tokio = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde_yaml = "0.8"

@@ -1,0 +1,14 @@
+[package]
+name = "LWN"
+version = "0.1.0"
+authors = ["pigprogrammer"]
+
+[dependencies]
+structopt = "0.2.10"
+rustyline = "1.0.0"
+lalrpop-util = "0.15.2"
+failure = "0.1.2"
+fnv = "1.0.6"
+
+[build-dependencies]
+lalrpop = "0.15.2"

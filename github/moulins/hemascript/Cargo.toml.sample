@@ -1,0 +1,15 @@
+[package]
+name = "hemascript"
+version = "0.1.0"
+authors = ["moulins <<>>"]
+
+[dependencies]
+lazy_static = "1.0"
+
+[lib]
+name = "hemascript_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hemascript"
+path = "src/main.rs"

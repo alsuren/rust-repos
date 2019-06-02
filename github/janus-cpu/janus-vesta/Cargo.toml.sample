@@ -1,0 +1,13 @@
+[package]
+
+name = "vesta"
+version = "0.1.0"
+authors = [ "michael@errs.io" ]
+
+[[bin]]
+name = "vesta"
+
+[dependencies]
+getopts = "0.2"
+log = "*"
+simplelog = "*"

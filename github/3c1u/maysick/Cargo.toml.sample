@@ -1,0 +1,24 @@
+[package]
+authors = ["murueka <298748+3c1u@users.noreply.github.com>"]
+name = "maysick"
+version = "0.2.0"
+description = "A programming language of directories."
+edition = "2018"
+
+[lib]
+name = "maysick"
+path = "lib/lib.rs"
+
+[[bin]]
+name = "maysick"
+path = "src/main.rs"
+
+[[bin]]
+name = "maylsp"
+path = "lsp-server/main.rs"
+
+[dependencies]
+clap = "*"
+nom = "*"
+rand = "0.6.5"
+encoding_rs = "^0.8.17"

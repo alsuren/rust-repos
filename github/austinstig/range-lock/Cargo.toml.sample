@@ -1,0 +1,19 @@
+[package]
+name = "range-lock"
+version = "0.1.1"
+authors = ["Austinstig <austinstig@gmail.com>"]
+
+[lib]
+name = "range_lock"
+path = "src/lib.rs"
+test = true
+
+[[bin]]
+name="rlock-bin"
+path="src/main.rs"
+
+[dependencies]
+may = "0.1.0"
+derive-new = "0.5.0"
+derive_is_enum_variant = "0.1.1"
+num = "0.1.41"

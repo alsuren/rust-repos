@@ -1,0 +1,10 @@
+[package]
+name = "st_startup_manager"
+version = "0.1.0"
+authors = ["Dennis Duda <github@seritools.de>"]
+license = "MIT"
+
+[dependencies]
+serde = "0.9"
+serde_derive = "0.9"
+toml = "0.3"

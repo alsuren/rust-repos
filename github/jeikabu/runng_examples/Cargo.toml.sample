@@ -1,0 +1,36 @@
+[package]
+name = "runng_examples"
+version = "0.1.0"
+authors = ["Jake W <jeikabu@gmail.com>"]
+
+description = "High-level wrapper around nng (Nanomsg-Next-Generation) aka Nanomsg2"
+keywords = ["nng", "nanomsg", "zeromq"]
+categories = ["network-programming"]
+license = "MIT"
+repository = "https://github.com/jeikabu/runng_examples"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+backtrace = "0.3"
+futures = "0.1"
+log = "0.4"
+runng = { version = "0.1", path = "../runng/runng" }
+
+[patch.crates-io]
+cty = { git = 'https://github.com/jeikabu/cty' }
+
+[dev-dependencies]
+clap = "2.32"
+criterion = "0.2"
+env_logger = "0.6"
+futures-timer = "0.1"
+tokio = "0.1"
+
+[[bench]]
+name = "reqrep_bench"
+harness = false
+
+[[bench]]
+name = "pushpull_bench"
+harness = false

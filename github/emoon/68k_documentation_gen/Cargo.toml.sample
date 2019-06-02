@@ -1,0 +1,13 @@
+[package]
+name = "68k_documentation_table_gen"
+version = "0.1.0"
+authors = ["Daniel Collin <daniel@collin.com>"]
+build = "build.rs"
+
+[dependencies]
+rayon = "0.5"
+
+[build-dependencies]
+gcc = "0.3.40"
+
+

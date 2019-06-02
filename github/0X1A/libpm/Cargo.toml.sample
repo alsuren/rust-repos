@@ -1,0 +1,23 @@
+[package]
+name = "libpm"
+version = "0.1.0"
+authors = ["Alberto Corona <ac@albertocorona.com>"]
+description = "A package management library"
+repository = "https://gitlab.com/0X1A/libpm"
+license = "BSD-3-Clause"
+
+[dependencies]
+serde_derive = "0.9"
+serde = "0.9"
+serde_json = "0.9"
+toml = { version = "0.3", features = ["serde"], default-features = false }
+tar = "0.4"
+time = "0.1"
+walkdir = "1"
+git2 = "0.6"
+rust-crypto = "0.2"
+flate2 = "0.2"
+curl = "0.4"
+ansi_term = "0.9"
+ring = "0.7"
+log = "0.3"

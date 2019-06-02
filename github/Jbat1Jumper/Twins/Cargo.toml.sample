@@ -1,0 +1,21 @@
+[package]
+name = "twins"
+version = "0.1.0"
+authors = ["Nikita Zdanovitch <nzdanovitch@gmail.com>"]
+
+[dependencies]
+ggez = "0.4"
+image = "0.19.0"
+log = "0.4"
+nalgebra = "0.16"
+rand = "0.4"
+petgraph = "0.4"
+
+[[bin]]
+name = "main2"
+path = "src/ggez_backend.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+

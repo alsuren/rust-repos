@@ -1,0 +1,14 @@
+[package]
+name = "berbalang"
+version = "0.1.0"
+authors = ["Oblivia Simplex <oblivia@paranoici.org>"]
+edition = "2018"
+
+[lib]
+name = "lib_berbalang"
+path = "src/lib.rs"
+
+[[bin]]
+name = "berbalang"
+path = "src/bin/berbalang.rs"
+[dependencies]

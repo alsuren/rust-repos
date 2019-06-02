@@ -1,0 +1,37 @@
+[package]
+name = "secure-session"
+version = "0.3.1"
+authors = [ "heartsucker <heartsucker@autistici.org>" ]
+description = "Signed, encrypted session cookies for Iron"
+homepage = "https://github.com/heartsucker/rust-secure-session"
+repository = "https://github.com/heartsucker/rust-secure-session"
+documentation = "https://docs.rs/secure-session"
+readme = "README.md"
+license = "MIT"
+keywords = [ "iron", "session", "web", "security" ]
+categories = [ "web-programming", "authentication", "cryptography" ]
+
+[badges]
+travis-ci = { repository = "heartsucker/rust-secure-session", branch = "master" }
+appveyor = { repository = "heartsucker/rust-secure-session", branch = "master", service = "github" }
+
+[lib]
+name = "secure_session"
+path = "./src/lib.rs"
+
+[dependencies]
+bincode = "0.9"
+chrono = { version = "0.4", features = [ "serde" ] }
+cookie = { version = "0.10", features = [ "percent-encode" ] }
+data-encoding = "2"
+iron = ">=0.5, <0.7"
+log = "0.3"
+rand = "0.3"
+rust-crypto = "0.2"
+serde = "1"
+serde_derive = "1"
+typemap = "0.3"
+
+[dev-dependencies]
+hyper = "0.10"
+iron-test = ">=0.5, <0.7"

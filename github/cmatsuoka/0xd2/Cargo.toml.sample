@@ -1,0 +1,26 @@
+[package]
+name = "d2"
+version = "0.2.0"
+authors = ["Claudio Matsuoka <cmatsuoka@gmail.com>"]
+exclude = ["*.png"]
+publish = false
+
+[[bin]]
+name = "0xd2"
+path = "src/main.rs"
+
+[dependencies]
+#oxdz = { git = "https://github.com/cmatsuoka/oxdz" }
+oxdz = { path = "../oxdz" }
+getopts = "0.2"
+memmap = "0.6"
+cpal = "0.8"
+libc = "0.2"
+rand = "0.4"
+
+[target.'cfg(unix)'.dependencies]
+termios = "0.3"
+
+[target.'cfg(windows)'.dependencies]
+kernel32-sys = "0.2"
+winapi = "0.2"

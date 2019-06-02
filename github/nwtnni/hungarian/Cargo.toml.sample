@@ -1,0 +1,26 @@
+[package]
+name = "hungarian"
+version = "1.1.0"
+authors = ["Newton Ni <nwtnni@gmail.com>"]
+description = "A simple, fast implementation of the Hungarian (Kuhn-Munkres) algorithm."
+repository = "https://github.com/nwtnni/hungarian"
+readme = "README.md"
+keywords = ["hungarian", "munkres", "kuhn-munkres", "algorithms", "assignment"]
+categories = ["algorithms"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "nwtnni/hungarian" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+fixedbitset = "0.1.8"
+num-traits = "0.2.1"
+ndarray = "0.11.1"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "benchmark"
+harness = false

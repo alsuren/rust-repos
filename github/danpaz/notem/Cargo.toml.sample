@@ -1,0 +1,12 @@
+[package]
+name = "notem"
+description = "A simple note taking command line tool"
+version = "0.2.0"
+authors = ["Daniel Paz-Soldan <daniel.pazsoldan@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/danpaz/notem"
+readme = "README.md"
+
+[dependencies]
+chrono = "0.4"
+which = "1.0"

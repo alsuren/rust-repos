@@ -1,0 +1,17 @@
+[package]
+name = "chip8-tismith"
+version = "0.0.1"
+authors = ["Toby Smith <toby@tismith.id.au>"]
+license = "MIT"
+
+[dependencies]
+failure = "0.1.2"
+log = "0.4.3"
+stderrlog = "0.4.1"
+clap = "2.32.0"
+exitfailure = "0.5.1"
+rand = "0.5.4"
+sdl2 = "0.31.0"
+
+[dev-dependencies]
+assert_cli = "0.6"

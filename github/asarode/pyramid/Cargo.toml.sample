@@ -1,0 +1,14 @@
+[package]
+name = "pyramid_grok"
+version = "0.2.0"
+authors = ["Arjun Sarode <sarodearjun57@gmail.com>"]
+description = "Testing out some Rust for making image pyramids."
+license = "MIT"
+
+[[bin]]
+name = "pyramid"
+doc = false
+
+[dependencies]
+clap = "~2.19.0"
+image = "0.14.0"

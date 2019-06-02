@@ -1,0 +1,18 @@
+[package]
+name = "headugh"
+version = "0.1.0"
+authors = ["ian"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[dependencies]
+unicode-segmentation = "^1.2.1"
+clap = "^2.32.0"
+
+[lib]
+name = "libheadugh"
+path = "src/lib.rs"
+
+[[bin]]
+name = "headugh"
+path = "src/main.rs"

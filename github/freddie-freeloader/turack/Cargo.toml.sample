@@ -1,0 +1,11 @@
+[package]
+
+name = "turack"
+version = "0.1.0"
+authors = ["Jonas <mail@benn.in>"]
+
+[dependencies]
+
+rand = "0.3.14"
+clap = "2.26.2"
+rustyline = "1.0.0"

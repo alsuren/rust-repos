@@ -1,0 +1,21 @@
+[package]
+name = "sqlite-vacuum"
+version = "0.1.0"
+authors = ["Armando Perez <gmandx@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+atty = "^0.2"
+clap = "^2"
+console = "^0.6"
+crossbeam-channel = "^0.2"
+failure = "^0.1"
+lazy_static = "^1"
+num_cpus = "^1"
+sqlite = "^0.23"
+walkdir = "^2"
+
+[profile.release]
+lto = true
+debug-assertions = false
+codegen-units = 1

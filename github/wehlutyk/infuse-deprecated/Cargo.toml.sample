@@ -1,0 +1,41 @@
+[package]
+name = "infuse"
+version = "0.1.0"
+authors = ["Sébastien Lerique <sl@mehho.net>"]
+
+[lib]
+name = "infuse"
+path = "src/lib.rs"
+
+[[bin]]
+name = "infuser"
+path = "src/main.rs"
+
+[dependencies]
+bodyparser = "0.3.0"
+clippy = "*"
+cookie = "0.2.4"
+diesel = "0.6.2"
+diesel_codegen = { version = "0.6.2", default-features = false, features = ["nightly", "postgres"] }
+dotenv = "0.8.0"
+dotenv_macros = "0.8.0"
+env_logger = "0.3.3"
+iron = "0.3.0"
+hyper = "0.8.1"
+log = "0.3.6"
+logger = "0.0.3"
+mount = "0.1.0"
+multipart = "0.7.0"
+params = "0.2.2"
+persistent = "0.1.0"
+queryst = "1.0.0"
+r2d2 = "0.7.0"
+r2d2-diesel = "0.6.0"
+router = "0.1.1"
+rust-crypto = "^0.2"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+staticfile = "0.2.0"
+urlencoded = "0.3.0"
+valico = "1.0.0"

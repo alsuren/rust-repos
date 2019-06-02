@@ -1,0 +1,20 @@
+[package]
+name = "mercury-kernel"
+version = "0.1.0"
+authors = [
+    "Firox263 <firox263@gmail.com>",
+    "The Mercury Project <https://www.github.com/MercuryProject>"
+]
+
+[dependencies]
+rlibc = "0.1.4"
+spin = "0.3.4"
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

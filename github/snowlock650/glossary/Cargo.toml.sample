@@ -1,0 +1,14 @@
+[package]
+name = "indexer"
+version = "0.1.0"
+authors = ["Ray Liao <ray.liao@audatex.com>"]
+
+[lib]
+name = "indexerlib"
+path = "src/lib.rs"
+
+[dependencies]
+docopt = "0.6.70"
+rustc-serialize = "0.3"
+regex = "^0.1.0"
+itertools = "0.3"

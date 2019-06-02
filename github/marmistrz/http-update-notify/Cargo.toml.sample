@@ -1,0 +1,18 @@
+[package]
+name = "hun"
+version = "0.1.1"
+authors = ["Marcin Mielniczuk <marmistrz.dev@zoho.eu>"]
+edition = "2018"
+
+[dependencies]
+# current lettre doesn't support openssl 1.1.1
+lettre = {git = "https://github.com/lettre/lettre"}
+lettre_email = {git = "https://github.com/lettre/lettre"}
+serde = "1"
+serde_derive = "1"
+toml = "0.4"
+failure = "0.1"
+reqwest = "0.9.3"
+log = "0.4"
+env_logger = "0.5"
+structopt = "0.2"

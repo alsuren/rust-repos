@@ -1,0 +1,8 @@
+[package]
+name = "universum-boot"
+version = "0.1.0"
+authors = ["Michael Zaversnik <Michael.Zaversnik@studmail.w-hs.de>"]
+edition = "2018"
+
+[dependencies]
+universum-framebuffer = { git = "https://github.com/universum-os/framebuffer.git" }

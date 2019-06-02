@@ -1,0 +1,18 @@
+[package]
+name = "rckit"
+license = "MIT"
+version = "0.1.0"
+description="redis cluster toolkit"
+authors = ["lintanghui <lintanghui@bilibili.com>"]
+repository = "https://github.com/lintanghui/rckit"
+documentation = "https://docs.rs/rckit/"
+
+[dependencies]
+clap = {version = "2.32", features = ["yaml"]}
+redis="0.9.0"
+[lib]
+name="rckit"
+path="src/lib.rs"
+[[bin]]
+name="rckit"
+path="bin/main.rs"

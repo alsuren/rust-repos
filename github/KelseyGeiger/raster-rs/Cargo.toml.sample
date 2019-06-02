@@ -1,0 +1,8 @@
+[package]
+name = "raster-rs"
+version = "0.1.0"
+authors = ["Kelsey Geiger <kielgeiger@gmail.com>"]
+
+[dependencies]
+linear = { git = "https://github.com/KelseyGeiger/linea-rs" }
+sdl2 = "*"

@@ -1,0 +1,12 @@
+[package]
+name = "rb-proxy"
+version = "0.1.0"
+authors = ["Danil Guskov <d.guskov@corp.mail.ru>"]
+edition = "2018"
+
+[dependencies]
+clap = "=2.31.2"
+hyper = "0.12.24"
+warp = "0.1.13"
+tokio = "*"
+futures = "*"

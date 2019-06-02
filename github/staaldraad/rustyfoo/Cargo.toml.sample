@@ -1,0 +1,7 @@
+[package]
+name = "fox"
+version = "0.1.0"
+authors = ["root"]
+
+[dependencies]
+bark = { git = "file:///tmp/somerepo" }

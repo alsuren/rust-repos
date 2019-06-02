@@ -1,0 +1,16 @@
+[package]
+name = "ioctl"
+version = "0.3.4"
+authors = ["Corey Richardson <corey@octayn.net>"]
+description = "DEPRECATED in favor of nix"
+license = "BSL-1.0/Apache-2.0"
+repository = "https://github.com/cmr/ioctl"
+documentation = "https://docs.rs/ioctl"
+
+[dependencies]
+bitflags = "*"
+libc = "*"
+nix = "*"
+
+[features]
+unstable = []

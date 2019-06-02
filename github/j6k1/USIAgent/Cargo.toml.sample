@@ -1,0 +1,10 @@
+[package]
+name = "usiagent"
+version = "0.1.0"
+authors = ["jinpu"]
+
+[dependencies]
+chrono = "0.4"
+rand = "0.4"
+[dependencies.queuingtask]
+git = "https://github.com/j6k1/queuingtask.git"

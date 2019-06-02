@@ -1,0 +1,35 @@
+[package]
+name = "bolt"
+version = "0.2.0"
+authors = ["J. Ayo Akinyele <ayo@yeletech.org>"]
+description = "library for Blind Off-chain Lightweight Transactions (BOLT)"
+keywords = ["zcash", "payment channels", "bolt"]
+readme = "README.md"
+homepage = "https://github.com/ZcashFoundation/libbolt"
+repository = "https://github.com/ZcashFoundation/libbolt"
+license = "MIT License"
+
+[dependencies]
+rand = "0.5"
+rand_core = "0.4.0"
+bn = { git = "https://github.com/ZcashFoundation/bn", branch = "master" }
+bincode = "0.6.1"
+sodiumoxide = "0.0.16"
+serde = "1.0"
+serde_derive = "1.0"
+time = "*"
+rustc-serialize = "0.3"
+secp256k1 = { git = "https://github.com/ZcashFoundation/rust-secp256k1", branch = "master", features = ["rand"] }
+curve25519-dalek = "1.0.0-pre.0"
+merlin = "1.0.0"
+bulletproofs = { git = "https://github.com/dalek-cryptography/bulletproofs", branch = "main" }
+sha2 = { version = "0.8", default-features = false }
+
+[dev-dependencies.bincode]
+version = "~0.6.0"
+default-features = false
+features = ["rustc-serialize"]
+
+[lib]
+crate-type = ["lib", "cdylib"]
+

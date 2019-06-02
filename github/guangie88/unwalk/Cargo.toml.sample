@@ -1,0 +1,37 @@
+[package]
+name = "unwalk"
+version = "0.2.0-beta1"
+authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
+description = "Walk directory recursively to un-gzip files"
+documentation = "https://docs.rs/unwalk"
+repository = "https://github.com/guangie88/unwalk"
+readme = "README.md"
+keywords = ["gz", "gzip", "unzip", "walk", "cli"]
+categories = ["command-line-utilities", "compression"]
+license-file = "LICENSE"
+
+[badges]
+travis-ci = { repository = "guangie88/unwalk" }
+codecov = { repository = "guangie88/unwalk" }
+
+[dependencies]
+clap = "=2.31.2"
+failure = "=0.1.1"
+serde = "=1.0.37"
+serde_derive = "=1.0.37"
+structopt = "=0.2.6"
+structopt-derive = "=0.2.6"
+toml = "=0.4.5"
+unwalk-base = { path = "base", version = "0.2.0-beta1" }
+unwalk-gz = { path = "gz", version = "0.2.0-beta1" }
+walkdir = "=2.1.4"
+
+[workspace]
+members = [
+    "base",
+    "gz",
+]
+
+[[bin]]
+name = "unwalk"
+path = "src/main.rs"

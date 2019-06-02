@@ -1,0 +1,15 @@
+[package]
+name = "finally-block"
+version = "0.1.1"
+authors = ["Seulgi Kim <seulgi.kim@kodebox.io>"]
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+repository = "http://github.com/CodeChain-io/rust-finally-block"
+keywords = ["control", "raii", "finally", "block"]
+description = """
+Final block is a block that is executed when it dropped.
+It helps a user to write the deferred statements that should be executed even some statements return early.
+"""
+
+[dependencies]

@@ -1,0 +1,10 @@
+[package]
+name = "test_grgalgebra"
+version = "0.0.1"
+authors = ["bumzack"]
+
+[dependencies]
+grgalgebra = { path = "grgalgebra" }
+
+[profile.release]
+debug = false

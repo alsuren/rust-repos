@@ -1,0 +1,9 @@
+[package]
+name = "nes"
+version = "0.1.0"
+authors = ["acolley <alnessy@hotmail.com>"]
+
+[dependencies]
+byteorder = "0.5.3"
+clap = "2.11.3"
+nom = "1.2.4"

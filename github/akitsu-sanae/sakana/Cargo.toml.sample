@@ -1,0 +1,9 @@
+[package]
+name = "sakana"
+version = "0.1.0"
+authors = ["akitsu-sanae <akitsu.sanae@gmail.com>"]
+
+[dependencies]
+piston_window = "*"
+find_folder = "*"
+

@@ -1,0 +1,21 @@
+[package]
+name = "jam"
+version = "0.1.0"
+authors = ["Javier Pollak <javi.po.123@gmail.com>"]
+
+[dependencies]
+libc = "0.2"
+clap = "2.26.2"
+jack = "0.6"
+slog = "2.4.1"
+slog-term = "2.4.0"
+slog-async = "2.3.0"
+sloggers = "0.3.1"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+# log = "0.3"
+# env_logger = "0.3"
+
+# [profile.release]
+# lto = true

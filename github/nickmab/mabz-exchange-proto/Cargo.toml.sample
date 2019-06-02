@@ -1,0 +1,8 @@
+[package]
+name = "mabz_exchange_proto"
+version = "0.1.0"
+authors = ["nickmab <nickmab@gmail.com>"]
+
+[dependencies]
+bincode = "*"
+rustc-serialize = "*"

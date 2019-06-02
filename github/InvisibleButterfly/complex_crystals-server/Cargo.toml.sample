@@ -1,0 +1,11 @@
+[package]
+name = "complex_crystals-server"
+version = "0.1.0"
+authors = ["97nomad <97nomad@gmail.com>"]
+
+[dependencies]
+iron = "*"
+rustc-serialize = "*"
+time = "*"
+getopts = "*"
+rand = "*"

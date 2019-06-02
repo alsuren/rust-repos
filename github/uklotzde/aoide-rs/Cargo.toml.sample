@@ -1,0 +1,43 @@
+[package]
+name = "aoide"
+version = "0.0.4"
+authors = [ "Uwe Klotz <uwe.klotz@gmail>", "et al." ]
+license = "AGPL-3.0-or-later"
+description = "Backend services for curating and enjoying your music"
+keywords = ["music", "library", "management"]
+publish = false
+edition = "2018"
+
+[workspace]
+members = [
+  "./",
+  "core",
+  "storage",
+]
+
+[patch.crates-io]
+aoide-core = { path = "core" }
+aoide-storage = { path = "storage" }
+
+[dependencies]
+aoide-core = "*"
+aoide-storage = "*"
+clap = "*"
+diesel = { version = "*", features = ["r2d2", "sqlite"] }
+diesel_migrations =  { version = "*", features = ["sqlite"] }
+env_logger = "*"
+failure = { version = "*", features = ["std"] }
+futures = "*"
+hyper = "*"
+log = "^0.4"
+mime = "^0.3"
+serde = "*"
+serde_json = "*"
+warp = "*"
+
+[dev-dependencies]
+serde_urlencoded = "*"
+
+[profile.release]
+lto = true
+codegen-units = 1

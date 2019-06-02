@@ -1,0 +1,28 @@
+[package]
+authors = ["Taryn Hill <taryn@phrohdoh.com>"]
+description = "Programmatic manipulation of Electronic Art's BIG format"
+include = ["src/**/*.rs", "Cargo.toml"]
+license = "MIT"
+name = "easage"
+repository = "https://github.com/Phrohdoh/easage"
+version = "0.0.2"
+
+[[bin]]
+doc = false
+name = "easage"
+path = "src/bin/easage.rs"
+required-features = ["clap"]
+
+[dependencies]
+byteorder = "1.1.0"
+failure = "0.1.1"
+memmap = "0.6"
+owning_ref = "0.3.3"
+walkdir = "1"
+
+[dependencies.clap]
+optional = true
+version = "2.26"
+
+[dev-dependencies]
+assert_matches = "1.1.0"

@@ -1,0 +1,20 @@
+[package]
+name = "x11-screenshot"
+version = "0.2.0"
+authors = ["TheHellBox <thehellbox11@gmail.com>"]
+keywords = ["X11", "screen", "screenshot", "capture"]
+license = "MIT"
+repository = "https://github.com/TheHellBox/x11-screenshot-rs"
+description = "Screenshots with x11"
+
+[dependencies.image]
+version = "0.21.0"
+default-features = false
+
+[dependencies.x11]
+version = "2.16.0"
+features = ["xlib"]
+
+[[example]]
+name = "basic"
+required-features = ["image/png_codec"]

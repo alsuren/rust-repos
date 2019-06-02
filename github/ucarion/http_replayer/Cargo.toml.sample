@@ -1,0 +1,8 @@
+[package]
+name = "http_replayer"
+version = "0.0.1"
+authors = ["Ulysse Carion <ulysse@ulysse.io>"]
+
+[dependencies]
+hyper = "*"
+rustc-serialize = "*"

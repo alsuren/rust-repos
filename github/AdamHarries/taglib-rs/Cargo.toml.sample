@@ -1,0 +1,15 @@
+[package]
+name = "taglib-rs"
+version = "0.1.0"
+authors = ["Adam Harries <harries.adam@gmail.com>"]
+
+[lib]
+name = "taglib"
+path = "src/lib.rs"
+
+[workspace]
+members = ["taglib-sys"]
+
+[dependencies]
+libc = "0.2"
+taglib-sys = {path = "taglib-sys"}

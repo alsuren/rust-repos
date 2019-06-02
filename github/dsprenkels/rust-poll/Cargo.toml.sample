@@ -1,0 +1,8 @@
+[package]
+name = "poll"
+version = "0.1.0"
+authors = ["Daan Sprenkels <dsprenkels@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+libc = "0.2"

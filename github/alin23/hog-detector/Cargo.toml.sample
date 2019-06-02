@@ -1,0 +1,11 @@
+[package]
+authors = ["Alin Panaitiu <alin.p32@gmail.com>"]
+name = "hog_detector"
+version = "0.1.0"
+
+[dependencies]
+rmp-serde = "0.13.7"
+serde = "1.0.17"
+serde_derive = "1.0.18"
+serde_json = "1.0.5"
+sysinfo = "0.3.17"

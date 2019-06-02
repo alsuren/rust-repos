@@ -1,0 +1,26 @@
+[package]
+name = "string-intern"
+description = """
+    Another implementation of string interning. Unique features: allows to
+    define a type for each kind of interned values and a validator for the
+    values of that type.
+"""
+license = "MIT/Apache-2.0"
+readme = "README.rst"
+keywords = ["intern", "string", "atom"]
+homepage = "http://github.com/tailhook/string-intern"
+documentation = "http://docs.rs/string-intern"
+version = "0.1.7"
+authors = ["paul@colomiets.name"]
+
+[features]
+default = ["rustc-serialize", "serde"]
+
+[dependencies]
+lazy_static = "0.2.1"
+
+rustc-serialize = { version = "0.3.19", optional = true }
+serde = { version = "1.0.8", optional = true }
+
+[dev-dependencies]
+serde_json = "1.0.2"

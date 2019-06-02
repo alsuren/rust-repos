@@ -1,0 +1,10 @@
+[package]
+name = "first"
+version = "0.1.0"
+authors = ["Vladimir Shakhov <bogdad@gmail.com>"]
+
+[dependencies]
+hyper = "0.9.1"
+rand = "0.3"
+iron = "*"
+router = "*"

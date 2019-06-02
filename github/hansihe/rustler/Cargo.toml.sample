@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "erl_nif_sys",
+  "rustler",
+  "rustler_codegen",
+  "rustler_tests/native/rustler_test",
+]

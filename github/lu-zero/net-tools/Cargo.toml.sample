@@ -1,0 +1,12 @@
+[package]
+name = "net-tools"
+version = "0.1.0"
+authors = ["lu_zero"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2"
+iproute2 = "0.0"
+termcolor = "1"
+futures = "0.1.24"
+tokio-core = "0.1.17"

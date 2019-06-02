@@ -1,0 +1,41 @@
+[package]
+name = "srv"
+version = "0.1.0"
+authors = ["David Ross <daboross@daboross.net>"]
+edition = "2018"
+
+[dependencies]
+bytes = "0.4"
+chrono = "0.4"
+derive_more = "0.14"
+err-ctx = "0.2"
+fern = "0.5"
+hyper = "0.12"
+hyper-tls = "0.3"
+log = "0.4"
+log-panics = "2"
+ndarray = "0.12"
+serde_json = "1"
+smart-default = "0.5"
+string_morph = "0.1.0"
+structopt = "0.2"
+tokio = "0.1"
+websocket = "0.22"
+
+[dependencies.cursive]
+version = "0.12.1-alpha.0"
+default-features = false
+features = ["crossterm-backend"]
+git = "https://github.com/gyscos/Cursive.git"
+
+[dependencies.old_futures]
+package = "futures"
+version = "0.1"
+
+[dependencies.futures-preview]
+version = "0.3.0-alpha"
+features = ["compat"]
+
+[dependencies.screeps-api]
+version = "0.5"
+git = "https://github.com/daboross/rust-screeps-api.git"

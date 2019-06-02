@@ -1,0 +1,9 @@
+[package]
+
+name = "rust_hyper"
+version = "0.0.1"
+authors = ["zmpeg <zandstra.matt@gmail.com>"]
+
+[dependencies]
+fern = "0.1.12"
+fern_macros = "0.1.6"

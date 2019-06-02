@@ -1,0 +1,9 @@
+[package]
+name = "server"
+version = "0.1.0"
+authors = ["Miguel Martin <miguel@miguel-martin.com>"]
+
+[dependencies]
+tiny_http = "0.2"
+rand = "0.3"
+ascii = "0.5"

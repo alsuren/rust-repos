@@ -1,0 +1,16 @@
+[package]
+name = "kmod"
+version = "0.1.0"
+authors = ["Sascha Grunert <mail@saschagrunert.de>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+#[dependencies]
+#libc = { version = "0.2", default-features = false }

@@ -1,0 +1,14 @@
+[package]
+name = "adele"
+version = "0.1.0"
+authors = ["Trevor Merrifield <trevorm42@gmail.com>"]
+build = "build.rs" # LALRPOP processing
+
+[dependencies.lalrpop-util]
+version = "0.12.0"
+
+[build-dependencies.lalrpop]
+version = "0.12.0"
+
+[dependencies]
+petgraph = "0.2.7"

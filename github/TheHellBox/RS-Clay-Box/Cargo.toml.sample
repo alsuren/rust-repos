@@ -1,0 +1,17 @@
+[package]
+name = "RS-Clay-Box"
+version = "0.0.1"
+authors = ["TheHellBox <thehellbox11@gmail.com>", "UDaV73rus <udav73rus@mail.ru>", "Renounce <sir_renounce@mail.ru>"]
+
+[dependencies]
+glium = "0.18.0"
+specs = "0.10.0"
+nalgebra = "0.13.1"
+nphysics3d = "*"
+ncollide="*"
+tobj = "0.1.6"
+image = "0.16.0"
+rlua="0.9.7"
+time="*"
+cobalt = "0.22.0"
+bytevec = "*"

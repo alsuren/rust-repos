@@ -1,0 +1,14 @@
+[package]
+name = "midi-to-wav"
+version = "0.0.1"
+authors = [ "Ng Guoyou" ]
+edition = "2018"
+
+[dependencies]
+docopt = "1"
+serde = "1.0"
+serde_derive = "1.0"
+
+[dependencies.synthrs]
+git = "https://github.com/gyng/synthrs"
+rev = "9e9724c2a970c1da15147c4ff603c7d24c258abc"

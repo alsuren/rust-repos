@@ -1,0 +1,23 @@
+[package]
+name = "rook"
+version = "0.1.0"
+authors = ["Alex Lagerstedt <alex.lagerstedt@gmail.com>"]
+
+[lib]
+name = "rook"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rook-engine"
+path = "src/uci.rs"
+
+[[bin]]
+name = "rook-cli"
+path = "src/main.rs"
+
+[dependencies]
+#ansi_term = "0.7"
+#bitflags = "0.5.0"
+lazy_static = "0.2.0"
+rand = "0.3.0"
+time = "0.1.*"

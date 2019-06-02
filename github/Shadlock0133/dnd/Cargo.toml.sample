@@ -1,0 +1,9 @@
+[package]
+name = "dnd"
+version = "0.1.0"
+authors = ["Admexter <mypancakes@wp.pl>"]
+
+[dependencies]
+rand = "0.3.18"
+piston_window = "0.73"
+conrod = { version = "0.56", features = ["piston"] }

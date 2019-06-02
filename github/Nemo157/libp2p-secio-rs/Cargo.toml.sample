@@ -1,0 +1,25 @@
+[package]
+authors = ["Wim Looman <wim@nemo157.com>"]
+name = "libp2p-secio"
+version = "0.1.0"
+
+[dependencies]
+bytes = "0.4.4"
+futures-await = "0.1.1"
+protobuf = "=1.5.1"
+slog = "2.0.12"
+tokio-core = "*"
+tokio-io = "0.1.2"
+
+[dependencies.libp2p-crypto]
+path = "../libp2p-crypto-rs"
+
+[dependencies.libp2p-identity]
+path = "../libp2p-identity-rs"
+
+[dependencies.mhash]
+features = ["generation", "sha2"]
+version = "0.3.0"
+
+[dependencies.msgio]
+path = "../msgio-rs"

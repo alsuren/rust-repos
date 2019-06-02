@@ -1,0 +1,125 @@
+[package]
+name = "advent2017"
+version = "1.0.0"
+build = "build.rs"
+
+[lib]
+name = "advent2017"
+
+[workspace]
+
+[[bin]]
+name = "advent1"
+path = "src/1/1.rs"
+
+[[bin]]
+name = "advent2-1"
+path = "src/2/2.rs"
+
+[[bin]]
+name = "advent2-2"
+path = "src/2/2.2.rs"
+
+[[bin]]
+name = "advent3-1"
+path = "src/3/3.1.rs"
+
+[[bin]]
+name = "advent3-2"
+path = "src/3/3.2.rs"
+
+[[bin]]
+name = "advent4-2"
+path = "src/4/4.1.rs"
+
+[[bin]]
+name = "advent5-2"
+path = "src/5/5.1.rs"
+
+[[bin]]
+name = "advent6-1"
+path = "src/6/6.1.rs"
+
+[[bin]]
+name = "advent6-2"
+path = "src/6/6.1.rs"
+
+[[bin]]
+name = "advent7-1"
+path = "src/7/7.1.rs"
+
+[[bin]]
+name = "advent7-2"
+path = "src/7/7.1.rs"
+
+[[bin]]
+name = "advent8-1"
+path = "src/8/8.1.rs"
+
+[[bin]]
+name = "advent8-2"
+path = "src/8/8.1.rs"
+
+[[bin]]
+name = "advent9-1"
+path = "src/9/9.1.rs"
+
+[[bin]]
+name = "advent10-1"
+path = "src/10/main.rs"
+
+[[bin]]
+name = "advent10-2"
+path = "src/10/main.rs"
+
+[[bin]]
+name = "advent11-1"
+path = "src/11/11.1.rs"
+
+[[bin]]
+name = "advent12-1"
+path = "src/12/12.1.rs"
+
+[[bin]]
+name = "advent13-1"
+path = "src/13/13.1.rs"
+
+[[bin]]
+name = "advent14"
+path = "src/14/14.rs"
+
+[[bin]]
+name = "advent15"
+path = "src/15/15.rs"
+
+[[bin]]
+name = "advent16"
+path = "src/16/16.rs"
+
+[[bin]]
+name = "advent17"
+path = "src/17/17.rs"
+
+[[bin]]
+name = "advent18"
+path = "src/18/18.rs"
+
+[[bin]]
+name = "advent19"
+path = "src/19/19.rs"
+
+[[bin]]
+name = "advent20"
+path = "src/20/20.rs"
+
+[dependencies]
+itertools = "0.7.4"
+regex = "0.2"
+lazy_static = "0.1.1"
+rand = "0.3.15"
+
+[dependencies.lalrpop-util]
+version = "0.13.1"
+
+[build-dependencies]
+lalrpop = "0.13.1"

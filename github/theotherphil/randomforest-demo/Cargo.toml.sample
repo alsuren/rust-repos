@@ -1,0 +1,10 @@
+[package]
+name = "randomforest-demo"
+version = "0.1.0"
+authors = ["Phil Ellison <phil.j.ellison@gmail.com>"]
+
+[dependencies]
+image = "0.10.0"
+imageproc = { path = "../imageproc" }
+rand = "0.3.14"
+randomforest = { path = "../randomforest" }

@@ -1,0 +1,24 @@
+[package]
+name = "disqus-proxy"
+version = "0.1.0"
+authors = ["Li Jinpei <leekingp1994@163.com>"]
+edition = "2018"
+
+[dependencies]
+toml = "0.4"
+clap = { version = "2.0", features = ["yaml"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+actix-web = { version = "0.7", features = ["rust-tls"] }
+quick-error = "1.2"
+rustls = "0.14"
+futures = "0.1"
+env_logger = "0.6"
+log = "0.4"
+tokio-postgres = { git = "https://github.com/sfackler/rust-postgres.git", rev = "4f084e7b647a26dcaa8da5301be93304cffe092f" }
+redis-async = "0.4"
+lru-cache = "0.1"
+futures-locks = "0.3"
+bytes = "0.4"
+ring = "0.13"
+rand = "0.6"

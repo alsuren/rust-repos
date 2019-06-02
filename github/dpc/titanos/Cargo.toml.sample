@@ -1,0 +1,35 @@
+[package]
+name = "titanos"
+version = "0.0.1"
+authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
+
+[profile.release]
+opt-level = 3
+debug = true
+rpath = false
+lto = true
+
+[profile.dev]
+opt-level = 1
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+
+[features]
+default = []
+
+selftest = [ "titanium/selftest", "titanium_arm_pl011/selftest" ]
+
+[[bin]]
+name = "titanos"
+path = "src/main.rs"
+
+[dependencies]
+rust-libcore = "0.0.3"
+titanium_arm_pl011 = { path = "lib/titanium_arm_pl011" }
+titanium = { path = "lib/titanium" }
+
+# TODO: Maybe soon... for #[test] running on host
+#[dependencies.std]
+#git = "https://github.com/dpc/libstd-git.rs.git"

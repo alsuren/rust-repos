@@ -1,0 +1,12 @@
+[package]
+name = "qt_rs_calc"
+version = "0.1.0"
+build = "build.rs"
+links = "qt_rs_calc"
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+rust_qt_binding_generator = { git = "git://anongit.kde.org/rust-qt-binding-generator" }
+

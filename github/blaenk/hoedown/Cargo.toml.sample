@@ -1,0 +1,20 @@
+[package]
+name = "hoedown"
+version = "6.0.0"
+authors = ["Jorge Israel Peña <jorge.israel.p@gmail.com>"]
+description = "bindings for the Hoedown markdown processor"
+repository = "https://github.com/blaenk/hoedown"
+license = "BSD-3-Clause"
+keywords = ["markdown"]
+build = "build.rs"
+
+[dependencies]
+bitflags = "0.5"
+libc = "0.2"
+
+[dev-dependencies]
+glob = "0.2"
+timebomb = "0.1.2"
+
+[build-dependencies]
+gcc = "0.3"

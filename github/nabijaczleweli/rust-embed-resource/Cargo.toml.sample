@@ -1,0 +1,28 @@
+[package]
+name = "embed-resource"
+description = "A Cargo library to handle compilation and inclusion of Windows resources in the most resilient fashion imaginable"
+documentation = "https://rawcdn.githack.com/nabijaczleweli/rust-embed-resource/doc/embed_resource/index.html"
+repository = "https://github.com/nabijaczleweli/rust-embed-resource"
+readme = "README.md"
+keywords = ["cargo", "build", "windows", "resource", "manifest"]
+categories = ["development-tools", "os::windows-apis"]
+license = "MIT"
+# Remember to also update in appveyor.yml
+# Remember to also update in src/lib.rs ~L40 (Cargo.toml example)
+version = "1.2.0"
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>",
+           "Cat Plus Plus <piotrlegnica@piotrl.pl>",
+           "Liigo <liigo@qq.com>",
+           "azyobuzin <azyobuzin@users.sourceforge.jp>",
+           "Peter Atashian <retep998@gmail.com>",
+           "pravic <ehysta@gmail.com>",
+           "Gabriel Majeri <gabriel.majeri6@gmail.com>"]
+exclude = ["*.enc"]
+
+
+[target.'cfg(all(target_os = "windows", target_env = "msvc"))'.dependencies]
+vswhom = "0.1.0"
+
+[target.'cfg(all(target_os = "windows", target_env = "msvc"))'.dependencies.winreg]
+version = "0.5"
+default-features = false

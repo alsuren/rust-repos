@@ -1,0 +1,15 @@
+[package]
+name = "rtree"
+version = "0.1.0"
+authors = ["weaming <garden.yuen@gmail.com>"]
+
+[dependencies]
+clap = "2.32.0"
+
+[lib]
+name = "filetree"
+path = "src/filetree/lib.rs"
+
+[[bin]]
+name = "rtree"
+path = "src/main.rs"

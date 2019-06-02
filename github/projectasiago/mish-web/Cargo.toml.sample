@@ -1,0 +1,12 @@
+[package]
+name = "mish-web"
+version = "0.1.0"
+authors = ["chris13524 <chris@hichris.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+projectasiago_mish = { git = "https://github.com/projectasiago/mish" }
+projectasiago_feta = { git = "https://github.com/projectasiago/feta" }
+wasm-bindgen = "0.1"

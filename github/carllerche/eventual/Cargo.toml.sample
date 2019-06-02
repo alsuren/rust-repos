@@ -1,0 +1,31 @@
+[package]
+
+name          = "eventual"
+version       = "0.1.7"
+license       = "MIT"
+authors       = ["Carl Lerche <me@carllerche.com>"]
+description   = "Future & Stream abstraction"
+documentation = "https://carllerche.github.io/eventual/eventual"
+homepage      = "https://github.com/carllerche/eventual"
+repository    = "https://github.com/carllerche/eventual"
+readme        = "README.md"
+keywords      = ["async", "concurrency", "future", "stream"]
+exclude       = [
+  ".gitignore",
+  ".travis.yml",
+  "deploy.sh",
+  "test/**/*",
+]
+
+[dependencies]
+log     = "0.3.0"
+time    = "0.1.25"
+syncbox = "0.2.3"
+
+[dev-dependencies]
+env_logger = "0.3.0"
+
+[[test]]
+
+name = "test"
+path = "test/test.rs"

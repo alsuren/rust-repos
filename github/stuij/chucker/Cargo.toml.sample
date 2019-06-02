@@ -1,0 +1,10 @@
+[package]
+name = "chucker"
+version = "0.1.0"
+authors = ["Ties Stuij <ties@stuij.se>"]
+
+[dependencies]
+libc = "0.2"
+byteorder = "0.4"
+tuntap = { git = "https://github.com/stuij/tuntap-rust" }
+net-bits = { git = "https://github.com/stuij/net-bits"  }

@@ -1,0 +1,19 @@
+[package]
+name = "ulc"
+version = "0.1.0"
+authors = ["baton <batonius.kirov@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+lalrpop-util = "*"
+rustyline = "1.0.0"
+
+[build-dependencies]
+lalrpop = "*"
+
+[profile.release]
+lto=true
+
+[features]
+default = []
+nightly = []

@@ -1,0 +1,16 @@
+[package]
+name = "togglrust"
+version = "0.1.0"
+authors = ["Cédric Cabessa <ced@ryick.net>"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.10.1"
+chrono = { version = "0.4.6", features = ["serde"] }
+futures = "0.1.25"
+hyper = "0.12.25"
+hyper-tls = "0.3.2"
+serde = "1.0.89"
+serde_derive = "1.0.89"
+serde_json = "1.0.39"
+tokio = "0.1.18"

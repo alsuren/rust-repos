@@ -1,0 +1,26 @@
+[package]
+name = "check_journal"
+version = "1.0.5"
+authors = ["Christian Kauhaus <kc@flyingcircus.io>"]
+description = "Nagios/Icinga compatible plugin to search `journalctl` output for matching lines"
+readme = "README.md"
+repository = "https://github.com/flyingcircusio/check_journal"
+keywords = ["monitoring", "journal"]
+license = "BSD-3-Clause"
+
+[dependencies]
+clap = { version = "2", features = ["wrap_help"] }
+derive-error-chain = "0.11"
+error-chain = "0.11"
+lazycell = "1"
+lazy_static = "1"
+nix = "0.11"
+regex = "1"
+reqwest = "0.8"
+serde = "1"
+serde_derive = "1"
+serde_yaml = "0.7"
+subprocess = "0.1"
+
+[profile.release]
+lto = true

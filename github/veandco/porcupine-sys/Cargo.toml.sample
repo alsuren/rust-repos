@@ -1,0 +1,14 @@
+[package]
+name = "porcupine-sys"
+version = "0.0.4"
+description = "Rust bindings to Porcupine"
+authors = ["Lilis Iskandar <lilis@veand.co>"]
+license = "MIT"
+repository = "https://github.com/veandco/porcupine-sys.git"
+homepage = "https://github.com/veandco/porcupine-sys"
+documentation = "https://docs.rs/porcupine-sys/"
+build = "build.rs"
+exclude = ["assets/*.ppn", "assets/*.pv", "assets/*.raw"]
+
+[dependencies]
+libc = "0.2"

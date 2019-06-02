@@ -1,0 +1,17 @@
+[package]
+name = "prometheus-scrape"
+version = "0.1.1"
+authors = ["Casey Marshall <git@cmars.tech>"]
+description = "Rust parser for the Prometheus exposition text format"
+keywords = ["prometheus", "metrics"]
+categories = ["parser-implementations", "encoding"]
+license = "Apache-2.0"
+
+[dependencies]
+chrono = "0.4.6"
+lazy_static = "1.2.0"
+regex = "1"
+
+[replace]
+"chrono:0.4.6" = { git = 'https://github.com/cmars/chrono', branch = 'negative_timestamp_millis' }
+

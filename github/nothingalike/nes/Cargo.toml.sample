@@ -1,0 +1,9 @@
+[package]
+name = "nes"
+version = "0.1.0"
+authors = ["Kyle Johns <kyle.johns@arcseed.com>"]
+
+[dependencies]
+rand = "0.4"
+libsecp256k1 = "0.1.12"
+blake2 = "0.7.0"

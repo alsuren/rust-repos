@@ -1,0 +1,7 @@
+[package]
+name = "hocon"
+version = "0.1.0"
+authors = ["Ryan Senior <ryan.senior@puppet.com>", "Andrew Roetker <andrew.roetker@puppet.com"]
+
+[dependencies]
+nom = "^2.0"

@@ -1,0 +1,21 @@
+[package]
+name = "orbit_sim"
+version = "0.1.0"
+authors = ["Johnathan Van Why <jrvanwhy@gmail.com>"]
+
+[dependencies]
+nalgebra = "0.2.20"
+kiss3d = "0.1.2"
+
+[profile.dev]
+opt-level = 3
+debug = false
+
+[profile.release]
+lto = true
+
+[profile.test]
+debug = false
+
+[profile.bench]
+lto = true

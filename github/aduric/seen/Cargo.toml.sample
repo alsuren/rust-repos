@@ -1,0 +1,18 @@
+[package]
+name = "seen"
+version = "0.1.0"
+authors = ["Adnan Duric <aduric@gmail.com>"]
+
+[dependencies]
+iron = "0.5"
+plugin = "0.2"
+persistent = "0.3"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+[dependencies.graffiti]
+git = "https://github.com/aduric/graffiti.git"
+
+[dependencies.bodyparser]
+git = "https://github.com/iron/body-parser.git"

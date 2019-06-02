@@ -1,0 +1,17 @@
+[package]
+name = "system-register-protocol"
+version = "0.1.0"
+authors = ["Benjamin Kampmann <ben@gnunicorn.org>"]
+
+[dependencies]
+
+[dev-dependencies]
+rand = "0.3.0"
+
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winreg = "0.4"
+
+
+[target.'cfg(target_os = "macos")'.dependencies]
+libc  = "0.2"

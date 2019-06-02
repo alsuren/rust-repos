@@ -1,0 +1,9 @@
+[package]
+name = "conway"
+version = "0.1.0"
+authors = ["panicbit <panicbit@users.noreply.github.com>"]
+
+[dependencies]
+rand = "0.6.5"
+rustbox = "0.11.0"
+

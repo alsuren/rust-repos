@@ -1,0 +1,12 @@
+[package]
+name = "aught_common"
+version = "0.1.0"
+authors = ["ThermalSpan"]
+readme = "README.md"
+license-file = "License.txt"
+description = "The interface used to between the Aught server and aught_client"
+
+[dependencies]
+serde = "1.0.27"
+serde_derive = "1.0.27"
+serde_json = "1.0.9"

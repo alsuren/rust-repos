@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "ecap",
+    "erased-ecap",
+    "ecap-sys",
+    "ecap-cpp",
+    "ecap-common",
+    "ecap-common-link",
+    "sample-adapters/*",
+]
+
+[patch.crates-io]
+mopa = { git = "https://github.com/Mark-Simulacrum/mopa", branch = "fork" }

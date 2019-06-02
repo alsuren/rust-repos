@@ -1,0 +1,28 @@
+[package]
+name = "urls2disk"
+version = "0.1.2" # don't forget to update html_root_url
+authors = ["Brian Myers <brian.carl.myers@gmail.com>"]
+
+categories = ["web-programming::http-client"]
+description = "Http client to download urls to disk concurrently, optionally converting them to PDF"
+documentation = "https://docs.rs/urls2disk"
+homepage = "https://github.com/bcmyers/urls2disk"
+keywords = ["http", "pdf", "scrape", "scraping"]
+license = "MIT"
+publish = false
+readme = "README.md"
+repository = "https://github.com/bcmyers/urls2disk"
+
+[dependencies]
+cfg-if = "0.1"
+clippy = { version = "0.0", optional = true }
+crossbeam = "0.3"
+failure = "0.1"
+lazy_static = "1.0"
+log = "0.4"
+num_cpus = "1.8"
+reqwest = "0.8"
+url = "1.7"
+
+[badges]
+travis-ci = { repository = "bcmyers/urls2disk", branch = "master" }

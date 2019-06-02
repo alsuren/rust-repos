@@ -1,0 +1,18 @@
+[package]
+name = "lotr-watcher"
+version = "0.1.0"
+authors = ["Renato Zannon <renato@rrsz.com.br>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+lettre = "0.9"
+lettre_email = "0.9"
+reqwest = "0.9"
+rusoto_core = "0.38"
+rusoto_s3 = "0.38"
+select = "0.4"
+blake2 = "0.8"
+openssl-probe = "0.1"
+env_logger = "0.6"
+futures = "0.1"

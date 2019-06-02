@@ -1,0 +1,67 @@
+[package]
+name = "wireguard"
+version = "0.0.0"
+authors = ["WireGuard Development Team <team@wireguard.com>"]
+license = "GPL-3.0"
+repository = "https://git.zx2c4.com/wireguard-rs/"
+description = "Userspace implementation of WireGuard, a fast, modern and secure VPN tunnel."
+
+[lib]
+name = "wireguard"
+path = "src/lib.rs"
+
+[[bin]]
+name = "wireguard-rs"
+path = "src/main.rs"
+required-features = ["binary"]
+
+[features]
+binary = [ "daemonize", "structopt", "structopt-derive", "fern", "chrono", "colored" ]
+
+[profile.release]
+debug = true
+
+[dev-dependencies]
+criterion = "0.2.0"
+
+[[bench]]
+name = "criterion"
+harness = false
+
+[dependencies]
+base64 = "^0.5"
+blake2-rfc = "0.2"
+byteorder = "^1.2"
+bytes = "0.4"
+chacha20-poly1305-aead = "^0.1"
+derive_deref = "^1.0"
+failure = "^0.1"
+futures = "^0.1"
+futures-cpupool = "^0.1"
+lazy_static = "^1"
+libc = { git = "https://github.com/rust-lang/libc" }
+log = "^0.4"
+hex = "^0.3"
+notify = "^4.0"
+rand = "0.5.0-pre.2"
+nix = { git = "https://github.com/mcginty/nix", branch = "ipv6-pktinfo" }
+mio = "^0.6"
+rips-packets = "0.1"
+snow = { git = "https://github.com/mcginty/snow", branch = "wireguard" }
+socket2 = "^0.3"
+subtle = "^0.6"
+tokio-io = "^0.1"
+tokio-core = "^0.1"
+tokio-uds = "^0.1"
+tokio-utun = "^0.1.10"
+tokio-signal = "^0.1"
+tokio-timer = "^0.2"
+treebitmap = "^0.2"
+x25519-dalek = "0.2"
+
+daemonize = { git = "https://github.com/mcginty/daemonize", optional = true }
+chrono = { version = "^0.4", optional = true }
+colored = { version = "^1.6", optional = true }
+structopt = { version = "^0.1", optional = true }
+structopt-derive = { version = "^0.1", optional = true }
+fern = { version = "^0.5", features = ["colored"], optional = true }

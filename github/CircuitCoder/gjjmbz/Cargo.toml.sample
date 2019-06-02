@@ -1,0 +1,12 @@
+[package]
+name = "gjjmbz"
+version = "0.1.0"
+authors = ["Liu Xiaoyi <circuitcoder0@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2.15"
+paw-structopt = "1.0.0"
+paw = "1.0.0"
+rand = "0.6.5"
+hex = "0.3.2"

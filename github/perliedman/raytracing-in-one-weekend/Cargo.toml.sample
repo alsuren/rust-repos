@@ -1,0 +1,13 @@
+[package]
+name = "rt-in-1-week"
+version = "0.1.0"
+authors = ["Per Liedman <per.liedman@dotnetmentor.se>"]
+
+[dependencies]
+rand = "0.4"
+png = "0.11"
+console = "0.6.1"
+indicatif = "0.9.0"
+clap = "2"
+rayon = "1.0.1"
+tobj = "0.1.6"

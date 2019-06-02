@@ -1,0 +1,15 @@
+[package]
+name = "peekaboo"
+version = "0.1.0"
+authors = ["kujenga <ataylor0123@gmail.com>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+redis = "*"
+image = "*"
+num = "*"
+time = "*"
+urlencoded = "*"
+handlebars = "*"
+rustc-serialize = "0.3"

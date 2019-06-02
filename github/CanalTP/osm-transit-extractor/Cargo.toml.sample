@@ -1,0 +1,17 @@
+[package]
+name = "osm_transit_extractor"
+version = "0.1.4"
+authors = ["Pascal Rhod <pascal.rhod@canaltp.fr>", "Noémie Lehuby <noemie.lehuby@canaltp.fr>"]
+
+[dependencies]
+csv = "1.0.0-beta.4"
+osmpbfreader = "0.11.1"
+wkt = "0.0.6"
+serde = "1.0.12"
+serde_derive = "1.0.12"
+structopt = "0.1.0"
+structopt-derive = "0.1"
+tempdir = "0.3.5"
+log = "0.4.1"
+simple_logger = "0.4.0"
+geo-types = "0.1.1"

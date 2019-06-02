@@ -1,0 +1,9 @@
+[package]
+name = "sentire"
+version = "0.1.0"
+authors = ["nyfair <nyfair2012@gmail.com>"]
+
+[dependencies]
+libc = "*"
+sdl2 = "*"
+rust-ini = "*"

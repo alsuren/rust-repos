@@ -1,0 +1,12 @@
+[package]
+name = "sat"
+version = "0.1.0"
+authors = ["Ruifeng"]
+
+[dependencies]
+rand = "0.3"
+time = "0.1.37"
+
+[[bin]]
+name = "set"
+doc = false

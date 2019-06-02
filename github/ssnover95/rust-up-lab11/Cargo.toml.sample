@@ -1,0 +1,14 @@
+[package]
+authors = ["Shane Snover <ssnover95@gmail.com>"]
+name = "lab11"
+version = "0.1.0"
+
+[dependencies.msp430]
+version = "0.1.0"
+
+[dependencies.msp430g2553]
+features = ["rt"]
+version = "0.1.0"
+
+[profile.release]
+lto = true

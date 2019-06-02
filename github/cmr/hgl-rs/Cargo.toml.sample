@@ -1,0 +1,15 @@
+[package]
+
+name = "hgl"
+version = "0.0.1"
+authors = ["Corey Richardson"]
+
+[dependencies.gl]
+
+git = "https://github.com/bjz/gl-rs.git"
+
+# this is only a test dep
+
+[dependencies.glfw]
+
+git = "https://github.com/bjz/glfw-rs.git"

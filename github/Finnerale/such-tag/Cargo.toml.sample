@@ -1,0 +1,18 @@
+[package]
+name = "such-tag"
+version = "0.1.0"
+authors = ["Finnerale <git@leopoldluley.de>"]
+edition = "2018"
+
+[dependencies]
+smallvec = "0.6.8"
+
+[dependencies.glib]
+git = "https://github.com/gtk-rs/glib.git"
+version = "0.6.0"
+features = ["dox"]
+
+[dependencies.gtk]
+git = "https://github.com/gtk-rs/gtk.git"
+version = "0.5.0"
+features = ["v3_20"]

@@ -1,0 +1,9 @@
+[package]
+name = "bubblestein3d"
+version = "0.1.0"
+authors = ["lightofanima"]
+
+[dependencies]
+sdl2 = "0.28"
+nalgebra = "0.10.*"
+image = "*"

@@ -1,0 +1,21 @@
+[package]
+name = "green_moon"
+version = "0.1.0"
+authors = ["Willi Kappler, grandor@gmx.de"]
+license = "MIT"
+description = "simple 2D game engine for Rust."
+readme = "README.md"
+repository = "https://github.com/willi-kappler/green_moon"
+exclude = ["*.png", "example", "target"]
+keywords = ["2D", "game", "engine", "game engine", "SDL"]
+documentation = "https://docs.rs/green_moon/0.1.0/green_moon/"
+
+
+
+[dependencies]
+error-chain = "0.7.2"
+
+[dependencies.sdl2]
+version = "0.27"
+features = ["image"]
+#features = ["ttf","image","gfx","mixer"]

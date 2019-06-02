@@ -1,0 +1,16 @@
+[package]
+name = "coterie"
+version = "0.1.0"
+authors = ["Dan Rammer <hamersaw@gmail.com>"]
+
+[build-dependencies]
+protobuf = "1.0"
+
+[dependencies]
+argparse = "0.2"
+csv = "0.14"
+env_logger = "0.3"
+log = "0.3"
+nom = "1.0"
+protobuf = "1.0"
+toml = "0.1"

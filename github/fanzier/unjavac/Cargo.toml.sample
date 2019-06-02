@@ -1,0 +1,14 @@
+[package]
+name = "unjavac"
+version = "0.1.0"
+authors = ["Fabian Zaiser <fabian.zaiser@gmail.com>"]
+
+[[bin]]
+name = "unjavac"
+doc = false
+
+[dependencies]
+bitflags = "1"
+byteorder = "1"
+clap = "2"
+petgraph = "0.4"

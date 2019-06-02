@@ -1,0 +1,10 @@
+[package]
+
+name = "rustclient"
+version = "0.0.1"
+authors = [ "Kevin Burke <kev@inburke.com>" ]
+description = "a http client for rust"
+license = "MIT"
+
+[dependencies.url]
+url = "~0.2.16"

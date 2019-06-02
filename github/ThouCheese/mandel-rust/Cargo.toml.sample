@@ -1,0 +1,12 @@
+[package]
+name = "mandel-rust"
+version = "0.1.0"
+authors = ["luuk <luuk.wester@gmail.com>"]
+
+[dependencies]
+rayon = "*"
+bmp = "*"
+
+[profile.release]
+lto = true
+# panic = 'abort'  # does not work with lto = true

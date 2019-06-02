@@ -1,0 +1,24 @@
+[package]
+name = "zenlog"
+version = "0.1.0"
+authors = ["Evgeny Safronov <division494@gmail.com>"]
+
+build = "build.rs"
+
+[dependencies]
+serde = "0.7"
+# For generic configuration source.
+serde_json = "0.7"
+
+# Catch runtime signals.
+chan-signal = "*"
+mio = "*"
+
+# Logging subsystem.
+libc = "*"
+log = "*"
+chrono = "*"
+termion = "1"
+
+[build-dependencies]
+serde_codegen = "*"

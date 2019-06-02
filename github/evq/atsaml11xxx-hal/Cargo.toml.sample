@@ -1,0 +1,47 @@
+[package]
+name = "atsaml11xxx-hal"
+version = "0.1.0"
+authors = ["eV <ev@7pr.xyz>"]
+
+[dependencies]
+arrayvec = { version = "0.4.7", default-features = false }
+cortex-m = "0.6"
+cortex-m-rt = { version = "0.6", optional = true }
+embedded-hal = { version = "0.2.2", features = ["unproven"] }
+nb = "~0.1"
+rand_core = { version = "0.2", default-features = false }
+
+[dependencies.atsaml11xxx]
+git = "https://github.com/evq/atsaml11xxx"
+rev = "27e4016395dce588b85b627e46443e0e53cf57ea"
+
+[dev-dependencies]
+rand_core = { version = "0.2", default-features = false }
+
+[target."thumbv8m.base-none-eabi".dev-dependencies]
+cortex-m-semihosting = "0.3"
+panic-semihosting = "0.5"
+
+[target.x86_64-unknown-linux-gnu.dev-dependencies]
+hex-literal = "0.1.2"
+rust-crypto = "^0.2"
+
+[features]
+default = ["rt"]
+rt = ["atsaml11xxx/rt", "cortex-m-rt/device"]
+
+[profile.release]
+debug = false
+lto = true
+
+[[example]]
+name = "blink"
+required-features = ["rt"]
+
+[[example]]
+name = "hello"
+required-features = ["rt"]
+
+[[example]]
+name = "rng"
+required-features = ["rt"]

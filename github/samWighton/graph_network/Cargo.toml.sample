@@ -1,0 +1,8 @@
+[package]
+name = "permissions"
+version = "0.1.0"
+authors = ["Sam Wighton <sam@samuelwighton.com>"]
+
+[dependencies]
+rand = "0.3.0"
+rustc-serialize = "0.3"

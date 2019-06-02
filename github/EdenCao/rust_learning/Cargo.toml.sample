@@ -1,0 +1,127 @@
+[package]
+name = "rust_learning"
+version = "0.1.0"
+authors = ["caoyong <edencaox@gmail.com>"]
+
+[[bin]]
+name = "guess"
+path = "src/guess.rs"
+
+[[bin]]
+name = "mutable"
+path = "src/mutable.rs"
+
+[[bin]]
+name = "shadow"
+path = "src/shadowing.rs"
+
+[[bin]]
+name = "types"
+path = "src/type.rs"
+
+[[bin]]
+name = "fn"
+path = "src/fn.rs"
+
+[[bin]]
+name = "condition"
+path = "src/condition.rs"
+
+[[bin]]
+name = "loop"
+path = "src/loop.rs"
+
+[[bin]]
+name="owner"
+path = "src/owner.rs"
+
+[[bin]]
+name = "ref"
+path = "src/ref.rs"
+
+[[bin]]
+name = "slice"
+path = "src/slice.rs"
+
+[[bin]]
+name = "struct"
+path = "src/struct.rs"
+
+[[bin]]
+name = "struct_ex"
+path = "src/struct_ex.rs"
+
+[[bin]]
+name = "impl"
+path = "src/impl.rs"
+
+[[bin]]
+name = "enum"
+path = "src/enum.rs"
+
+[[bin]]
+name = "match"
+path = "src/match.rs"
+
+[[bin]]
+name = 'iflet'
+path = "src/iflet.rs"
+
+[[bin]]
+name = "generics"
+path = "src/generics.rs"
+
+[[bin]]
+name = 'trait'
+path = "src/trait.rs"
+
+[[bin]]
+name = "cmd"
+path = "src/cmd.rs"
+
+[[bin]]
+name = "read"
+path = "src/read.rs"
+
+[[bin]]
+name = "closure"
+path = "src/closure.rs"
+
+[[bin]]
+name = "box"
+path = "src/box.rs"
+
+[[bin]]
+name = "rc"
+path = "src/rc.rs"
+
+[[bin]]
+name = "refcall"
+path = "src/refcall.rs"
+
+[[bin]]
+name = "cycle_ref"
+path = "src/cycle_ref.rs"
+
+[[bin]]
+name = "weak_ref"
+path = "src/weak_ref.rs"
+
+[[bin]]
+name = "multiple_thread"
+path = "src/multiple_thread.rs"
+
+[[bin]]
+name = "channel"
+path = "src/channel.rs"
+
+[[bin]]
+name = "share_memo"
+path = "src/shared_mem.rs"
+
+[[bin]]
+name = "blog"
+path = "src/blog.rs"
+
+[dependencies]
+rand = "0.5.5"

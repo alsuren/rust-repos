@@ -1,0 +1,8 @@
+[package]
+name = "rparser"
+version = "0.1.0"
+authors = ["Piotr <piotr@beesoft.pl>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "*"

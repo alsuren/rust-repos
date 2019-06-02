@@ -1,0 +1,24 @@
+[package]
+
+name = "shared_slice"
+version = "0.0.4"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+homepage = "https://github.com/huonw/shared_slice"
+repository = "https://github.com/huonw/shared_slice"
+documentation = "http://huonw.github.io/shared_slice/shared_slice/"
+license = "MIT/Apache-2.0"
+keywords = ["data-structures"]
+readme = "README.md"
+description = """
+Thread-local and thread-safe shared slice types, like `&[T]` but
+without lifetimes. This library depends only on `alloc` and `core`, so
+can be used in environments without `std`.
+"""
+
+[dev-dependencies]
+
+rand = "0.3"
+
+[features]
+unstable = []

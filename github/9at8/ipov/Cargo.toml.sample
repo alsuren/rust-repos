@@ -1,0 +1,25 @@
+[package]
+name = "ipov"
+version = "0.1.0"
+authors = ["Aditya Thakral <aditya.1998thakral@gmail.com>", "Archer Zhang <archer.xn@gmail.com>", "Peter Huang <peter.huang339@gmail.com>", "Winnie Ren <winnierjren@gmail.com>"]
+
+[dependencies]
+hound = "3.4.0"
+ears = { git = "https://github.com/jhasse/ears" }
+iron = "0.6.0"
+
+[[bin]]
+name="encode"
+path="src/encoder_cmd.rs"
+
+[[bin]]
+name="decode"
+path="src/decoder_cmd.rs"
+
+[[bin]]
+name="echo"
+path="src/echo_cmd.rs"
+
+[[bin]]
+name="server"
+path="src/main.rs"

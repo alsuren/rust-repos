@@ -1,0 +1,48 @@
+[package]
+name = "sokoban-solver"
+version = "0.1.0"
+authors = ["Martin Taibr <taibr.martin@gmail.com>"]
+edition = '2018'
+
+
+# abort on panic might be better when using threads
+# (https://vorner.github.io/2018/07/22/dont_panic.html)
+
+[profile.dev]
+panic = 'abort'
+
+# criterion seems to be using profile.release
+[profile.release]
+panic = 'abort'
+
+# makes compilation unacceptably slow (over a minute for simple changes)
+#lto = true
+
+# 5-10% speedup, doesn't seem to affect compile time for simple changes
+codegen-units = 1
+
+# for profiling, doesn't effect performance
+debug = true
+
+[features]
+graph = ["dot"]
+# note to self: when adding features, update .gitlab.ci and git hooks
+
+[dev-dependencies]
+criterion = { version = "0.2.4", features = ['real_blackbox'] }
+assert_cmd = "0.11.0"
+difference = "2.0.0"
+
+[[bench]]
+name = "criterion_benches"
+harness = false
+
+[dependencies]
+clap = "2.32.0"
+separator = "0.4"
+log = { version = "0.4.3", features = ["release_max_level_info"] }
+env_logger = "0.6.0"
+fnv = "1.0.6"
+prettytable-rs = "0.8.0"
+typed-arena = "1.4.1"
+dot = { version = "0.1.4", optional = true }

@@ -1,0 +1,35 @@
+[package]
+name = "renderer"
+version = "0.1.0"
+authors = ["Ivan Komarov <Ivan.Komarov@dfyz.info>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "*"
+memmap = "*"
+num_cpus = "*"
+owning_ref = "*"
+png = "*"
+rust-ini = "*"
+stb_truetype = "*"
+xml-rs = "*"
+indexmap = "*"
+
+[dependencies.failure]
+version = "*"
+default-features = false
+features = ["std"]
+
+[dev-dependencies]
+criterion = "*"
+
+[[bench]]
+name = "tile_pixels_benchmark"
+harness = false
+
+[features]
+perf-stats = []
+
+# So that we have line numbers in backtraces with RUST_BACKTRACE=1.
+[profile.release]
+debug = true

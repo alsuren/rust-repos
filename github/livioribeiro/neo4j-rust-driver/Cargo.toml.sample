@@ -1,0 +1,12 @@
+[package]
+name = "neo4j-rust-driver"
+version = "0.1.0"
+authors = ["Livio Ribeiro <livioribeiro@outlook.com>"]
+
+[dependencies]
+byteorder = "0.5"
+rustc-serialize = "0.3"
+log = "0.3"
+
+[dev-dependencies]
+env_logger = "0.3"

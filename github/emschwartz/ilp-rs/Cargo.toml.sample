@@ -1,0 +1,18 @@
+[workspace]
+
+members = [
+  "./crates/interledger",
+  "./crates/interledger-api",
+  "./crates/interledger-btp",
+  "./crates/interledger-ccp",
+  "./crates/interledger-http",
+  "./crates/interledger-ildcp",
+  "./crates/interledger-packet",
+  "./crates/interledger-router",
+  "./crates/interledger-service",
+  "./crates/interledger-service-util",
+  "./crates/interledger-spsp",
+  "./crates/interledger-store-memory",
+  "./crates/interledger-store-redis",
+  "./crates/interledger-stream",
+]

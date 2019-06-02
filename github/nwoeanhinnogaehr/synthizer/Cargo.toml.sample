@@ -1,0 +1,30 @@
+[package]
+
+name = "synthizer"
+version = "0.0.1"
+authors = ["Noah Weninger"]
+
+[dependencies]
+rustc-serialize = "*"
+regex = "*"
+regex_macros = "*"
+cbox = "*"
+bit-set = "*"
+sound_stream = "*"
+hound = "*"
+vec_map = "*"
+docopt = "*"
+docopt_macros = "*"
+llvm-sys = "*"
+clippy = "*"
+
+[dependencies.llvm-alt]
+git = "https://github.com/nwoeanhinnogaehr/llvm-rs"
+
+[lib]
+name = "interpreter"
+path = "src/interpreter/lib.rs"
+
+[[bin]]
+name = "synthizer"
+path = "src/cli/main.rs"

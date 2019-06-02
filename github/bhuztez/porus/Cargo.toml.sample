@@ -1,0 +1,18 @@
+[package]
+name = "porus"
+description = "porus library"
+version = "0.0.0"
+authors = ["bhuztez <bhuztez@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+porus_macros = { path = "porus_macros" }
+
+[features]
+local-judge = []
+online-judge = []
+
+[profile.release]
+panic = "abort"
+opt-level = 2
+incremental = false

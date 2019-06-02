@@ -1,0 +1,11 @@
+[package]
+name = "brrt"
+version = "0.1.0"
+authors = [
+    "Naftuli Tzvi Kay <rfkrocktk@gmail.com>"
+]
+
+build = "build.rs"
+
+[dependencies]
+toml = "0.1.30"

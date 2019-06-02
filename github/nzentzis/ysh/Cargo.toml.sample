@@ -1,0 +1,16 @@
+[package]
+name = "ysh"
+version = "0.1.0"
+authors = ["Noah Zentzis <nzentzis@gmail.com>"]
+
+[dependencies]
+regex       = "0.2"
+lazy_static = "0.2"
+termion     = "1.5"
+libc        = "0.2"
+nix         = "0.9"
+globset     = "0.4"
+crossbeam   = "0.4"
+walkdir     = "2.1"
+parking_lot = "0.5"
+futures     = "0.1"

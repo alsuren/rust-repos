@@ -1,0 +1,13 @@
+[package]
+name = "grabinput"
+version = "0.3.0"
+edition = "2018"
+authors = ["J/A <archer884@gmail.com>"]
+exclude = ["examples/*"]
+description = "Unixy lib for reading from a file or from stdin"
+repository = "https://github.com/archer884/grabinput.git"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+keywords = ["stdin", "file", "read", "input", "simple"]
+
+[dependencies]

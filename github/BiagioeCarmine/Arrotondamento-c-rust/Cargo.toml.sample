@@ -1,0 +1,10 @@
+[package]
+name = "Arrotondamento-c"
+version = "0.1.0"
+authors = ["Carmine Zaccagnino <zaccagnino@hotmail.it>", "Biagio Grimolizzi <biagiogrimos@gmail.com>"]
+
+[lib]
+name = "arrotondamento"
+crate-type = ["dylib"]
+
+[dependencies]

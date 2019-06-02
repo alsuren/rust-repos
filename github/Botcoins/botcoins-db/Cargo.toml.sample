@@ -1,0 +1,16 @@
+[package]
+name = "botcoins-db"
+version = "0.1.0"
+authors = ["ConcurrentMarxistGC <concurrentmarxistgc@users.noreply.github.com>"]
+
+[dependencies]
+lmdb-rs = "0.7.6"
+bincode="*"
+serde="*"
+serde_derive="*"
+tokio = { version = "*", optional = true }
+
+[features]
+io=["tokio", ]
+client=["io"]
+server=["io"]

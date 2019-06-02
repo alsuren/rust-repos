@@ -1,0 +1,17 @@
+[package]
+name = "trader"
+version = "0.0.1"
+author = ["MÓZES Ádám István <mozes.adam.istvan@gmail.com>"]
+
+[dependencies]
+clap="*"
+websocket="0.20.2"
+rustc-serialize="*"
+serde="*"
+serde_json="*"
+serde_derive="*"
+unescape="*"
+log="*"
+csv="*"
+env_logger="*"
+time = "0.1"

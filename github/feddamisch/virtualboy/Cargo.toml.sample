@@ -1,0 +1,25 @@
+[package]
+name = "virtualboy"
+version = "0.1.0"
+description = "Rust port of systemd's detect-virt functionality"
+repository = "https://github.com/feddamisch/virtualboy"
+authors = [
+    "Federico Damián Schonborn <schonbornfedericodamian@gmail.com>"
+]
+license = "MIT"
+edition = "2018"
+
+[lib]
+name = "virtualboy"
+path = "src/lib.rs"
+
+[[bin]]
+name = "virtualboy"
+path = "src/bin/virtualboy/main.rs"
+
+[dependencies]
+structopt = "0.2.15"
+
+[features]
+default = ["systemd"]
+systemd = [] # Enable systemd-accurate behaviour.

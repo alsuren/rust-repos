@@ -1,0 +1,14 @@
+[package]
+name = "rrpg"
+version = "0.0.1"
+authors = ["psyomn <lethaljellybean@gmail.com>"]
+
+[[bin]]
+name = "rrpg"
+doc = false
+
+[dependencies]
+rand = "0.3"
+term = "0.2"
+rustbox = "*"
+

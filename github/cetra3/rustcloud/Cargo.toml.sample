@@ -1,0 +1,16 @@
+[package]
+name = "rustcloud"
+version = "0.0.4"
+authors = ["Peter Lesty <peter@parashift.com.au"]
+description = "Downloads tracks from soundcloud"
+
+[dependencies]
+hyper = "0.10.8"
+hyper-native-tls = "*"
+rustc-serialize = "0.3"
+term-painter = "*"
+id3 = "*"
+chrono = "*"
+filetime = "0.1.9"
+threadpool = "0.2.1"
+regex = "*"

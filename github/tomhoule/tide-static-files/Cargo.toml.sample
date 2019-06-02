@@ -1,0 +1,19 @@
+[package]
+name = "tide-static-files"
+version = "0.1.0"
+authors = ["Tom Houlé <tom@tomhoule.com>"]
+edition = "2018"
+
+[dependencies]
+http = "0.1.16"
+http-service = "*"
+regex = "1.1.2"
+tide = "*"
+futures-preview = "0.3.0-alpha.16"
+tokio-fs = "0.1.6"
+log = "0.4.6"
+
+[dev-dependencies]
+tokio = "0.1.17"
+tokio-threadpool = "0.1.12"
+tempfile = "3.0.7"

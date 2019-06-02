@@ -1,0 +1,37 @@
+[package]
+name = "sysfunc-networking-traits"
+version = "0.0.3"
+authors = ["A.W. Stanley <aws@sysfunc.net>"]
+edition = "2018"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/sysfunc/sysfunc-networking-traits.rs/"
+homepage = "https://github.com/sysfunc/sysfunc-networking-traits.rs/"
+categories = ["no-std"]
+include = [
+    "src/ip/tcp.rs",
+    "src/ip/udp.rs",
+    "src/ip/mod.rs",
+    "src/lib.rs",
+    "Cargo.toml",
+    "README.md",
+    "LICENCE",
+    "CHANGES.md",
+]
+
+description = """
+Simple networking traits #![no_std].
+"""
+
+# Remove this before the cargo-ready commit.
+publish = false
+
+[features]
+default = []
+no-core = []
+
+[workspace]
+members = [
+    ".",
+    "./impl/sysfunc-networking-traits-impl-std"
+]

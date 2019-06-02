@@ -1,0 +1,9 @@
+[package]
+name = "6shell"
+version = "0.1.0"
+authors = ["lærling <laerling@posteo.de>"]
+
+[dependencies]
+conch-parser = "^0.1.0"
+conch-runtime = "^0.1.4"
+tokio-core = "^0.1.17"

@@ -1,0 +1,10 @@
+[package]
+name = "ckb-vm-play"
+version = "0.1.0"
+authors = ["mohanson <mohanson@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+ckb-vm = { path = "/src/ckb-vm" }
+rog = "0.1"
+bytes = "0.4"

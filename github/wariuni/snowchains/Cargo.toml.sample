@@ -1,0 +1,92 @@
+[package]
+name = "snowchains"
+version = "0.2.0"
+edition = "2018"
+authors = ["Ryo Yamashita <qryxip@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "Tools for online programming contests"
+repository = "https://github.com/qryxip/snowchains"
+documentation = "https://docs.rs/snowchains"
+readme = "README.md"
+keywords = ["windows", "cli"]
+categories = ["command-line-utilities"]
+
+[badges]
+travis-ci = { repository = "qryxip/snowchains" }
+codecov = { repository = "qryxip/snowchains" }
+
+[dependencies]
+atty = "0.2.11"
+chrono = { version = "0.4.6", features = ["serde"] }
+combine = "3.8.1"
+cookie = "0.12.0"
+crossbeam-utils = "0.6.5"
+ctrlc = "3.1.2"
+derive-new = "0.5.6"
+derive_more = "0.14.0"
+diff = "0.1.11"
+dirs = "1.0.5"
+dunce = "1.0.0"
+ego-tree = "0.6.0"
+either = "1.5.2"
+failure = "0.1.5"
+fs2 = "0.4.3"
+futures = "0.1.27"
+heck = "0.3.1"
+hex = "0.3.2"
+if_chain = "0.1.3"
+indexmap = { version = "1.0.2", features = ["serde-1"] }
+itertools = "0.8.0"
+maplit = "1.0.1"
+mime = "0.3.13"
+num-traits = "0.2.6"
+num_cpus = "1.10.0"
+once_cell = "0.2.0"
+prettytable-rs = { version = "0.8.0", default_features = false }
+rand = "0.6.5"
+rayon = "1.0.3"
+regex = "1.1.6"
+reqwest = { version = "0.9.17", default_features = false, features = ["rustls-tls"] }
+robots_txt = "0.6.0"
+rpassword = "3.0.2"
+scraper = "0.10.0"
+serde = { version = "1.0.91", features = ["derive"] }
+serde_json = "1.0.39"
+serde_urlencoded = "0.5.5"
+serde_yaml = "0.8.9"
+sha2 = "0.8.0"
+smallvec = "0.6.9"
+snowchains_proc_macros = { path = "./proc_macros", version = "0.1.0" }
+structopt = { git = "https://github.com/TeXitoi/structopt", rev = "cd28127012be63f2622fd0e6180621f07d903ccf", features = ["wrap_help"] }
+strum = "0.15.0"
+strum_macros = "0.15.0"
+take_mut = "0.2.2"
+termcolor = "1.0.4"
+tokio = "0.1.20"
+tokio-process = "0.2.3"
+toml = "0.5.1"
+toml_edit = "0.1.3"
+unicode-width = "0.1.5"
+url = "1.7.2"
+webbrowser = "0.5.1"
+which = "2.0.1"
+yaml-rust = "0.4.3"
+zip = "0.5.2"
+
+[target.'cfg(not(windows))'.dependencies]
+term_size = "0.3.1"
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.3.7"
+winapi-util = "0.1.2"
+
+[target.'cfg(unix)'.dependencies]
+signal-hook = { version = "0.1.9", features = ["tokio-support"] }
+
+[dev-dependencies]
+difference = "2.0.0"
+md5 = "0.6.1"
+pretty_assertions = "0.6.1"
+stable_deref_trait = "1.1.1"
+tempdir = "0.3.7"
+warp = "0.1.15"

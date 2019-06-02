@@ -1,0 +1,16 @@
+[package]
+name = "rust-macros"
+version = "0.1.0"
+authors = ["Karl Cronburg <karl.cronburg@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "main2"
+path = "src/main2.rs"
+
+#[dependencies]
+

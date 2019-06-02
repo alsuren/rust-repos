@@ -1,0 +1,21 @@
+[package]
+name = "rshark"
+version = "0.0.1"
+license = "Apache-2.0 OR MIT"
+authors = ["Jonathan Anderson <jonathan.anderson@mun.ca>"]
+description = "Rusty Shark is a tool for deep inspection of malicious packets."
+documentation = "http://musec.github.io/rusty-shark/rshark"
+repository = "https://github.com/musec/rusty-shark"
+readme = "README.md"
+
+[dependencies]
+byteorder = "0.5.2"
+docopt = "0.6.80"
+num = "0.1.32"
+pcap = "0.5.7"
+promising-future = "0.2.2"
+rustc-serialize="0.3.19"
+
+[[bin]]
+doc = false
+name = "rshark"

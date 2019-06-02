@@ -1,0 +1,21 @@
+[package]
+name = "dbench"
+version = "0.1.0"
+description = "A simple database query benchmarker"
+authors = ["Giovanni Berti <dev.giovanniberti@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/giovanniberti/dbench"
+keywords = ["database", "benchmark", "query", "mysql", "postgres"]
+
+[dependencies]
+mysql = "8.0.0"
+clap = "2.19.2"
+time = "0.1"
+rpassword = "0.3"
+num = "0.1.36"
+postgres = "0.13.4"
+regex = "0.1"
+lazy_static = "0.2.2"
+rayon = "0.6.0"
+r2d2 = "0.7.1"
+r2d2_postgres = "0.11.1"

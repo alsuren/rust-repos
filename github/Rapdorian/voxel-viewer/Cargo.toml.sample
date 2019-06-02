@@ -1,0 +1,11 @@
+[package]
+name = "view_3d"
+version = "0.1.0"
+authors = ["James Pruitt <jamescpruitt@gmail.com>"]
+
+[dependencies]
+rvt = { git = "https://github.com/Rapdorian/voxel-format.git" }
+nalgebra = "0.9.*"
+
+[dependencies.kiss3d]
+git = "https://github.com/sebcrozet/kiss3d"

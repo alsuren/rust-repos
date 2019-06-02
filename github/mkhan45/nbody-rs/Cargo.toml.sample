@@ -1,0 +1,13 @@
+[package]
+name = "nbodyrs"
+version = "0.1.0"
+authors = ["fish <mikail.khan45@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ggez = "0.5.0-rc.1"
+nalgebra = "0.17.2"
+rand = "0.6.5"
+mint = "0.5.1"
+rayon = "1.0.3"
+serde_json = "1.0"

@@ -1,0 +1,17 @@
+[package]
+name = "luhn-rs"
+version = "0.0.1"
+authors = ["Andrew Dunham <andrew@du.nham.ca>"]
+
+description = "Luhn generation and validation that supports arbitrary alphabets"
+repository = "https://github.com/andrew-d/luhn-rs"
+readme = "README.md"
+keywords = ["luhn", "checksum"]
+license = "MIT"
+
+[lib]
+name = "luhn"
+
+[dev-dependencies]
+rand = "0.3, < 0.3.18"
+libc = "0.2, < 0.2.41"

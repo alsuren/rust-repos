@@ -1,0 +1,20 @@
+[package]
+name = "filter"
+version = "0.1.0"
+authors = ["Felix Govaers <felix.govaers@fkie.fraunhofer.de>"]
+
+[dependencies]
+
+rand = "0.3.14"
+# gnuplot = "0.0.22"
+# gnuplot = {path = "../RustGnuplot"}
+# matplotlib = {path = "../matplotlib-rs"}
+cpython = "0.1.0"
+
+[dependencies.rusty-machine]
+version="*"
+
+[[test]]
+name = "filter"
+path = "tests/lib.rs"
+

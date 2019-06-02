@@ -1,0 +1,22 @@
+[package]
+name = "bitbar-version"
+version = "0.1.0"
+authors = ["Fenhl <fenhl@fenhl.net>"]
+edition = "2018"
+
+[[bin]]
+name = "bitbar-version"
+path = "src/main.rs"
+doc = false
+test = false
+bench = false
+
+[dependencies]
+plist = "*"
+reqwest = "*"
+semver = "*"
+serde = "1"
+serde_derive = "1"
+
+[dependencies.bitbar]
+git = "https://github.com/fenhl/rust-bitbar"

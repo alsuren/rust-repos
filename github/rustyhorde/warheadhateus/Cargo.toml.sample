@@ -1,0 +1,33 @@
+[package]
+authors = ["Jason Ozias <jason.ozias@gmail.com>"]
+description = "AWS Authorization Header Generation (AWS Signature Version 4)"
+documentation = "http://rustyhorde.github.io/warheadhateus"
+homepage = "http://rustyhorde.github.io/warheadhateus"
+keywords = ["aws", "authorization", "header", "s3"]
+license = "MIT/Apache-2.0"
+name = "warheadhateus"
+readme = "README.md"
+repository = "https://github.com/rustyhorde/warheadhateus"
+version = "0.2.2-pre"
+
+[dependencies]
+chrono = "~0.2.19"
+log = "~0.3.5"
+rustc-serialize = "~0.3.18"
+sodium-sys = "~0.0.4"
+urlparse = "~0.7.3"
+
+[dependencies.clippy]
+optional = true
+version = "~0.0.43"
+
+[dev-dependencies]
+bitflags = "0.4.0"
+clap = "2.1.2"
+curl = "~0.2.16"
+env_logger = "~0.3.2"
+regex = "~0.1.54"
+xml-rs = "~0.3.0"
+
+[features]
+lint = ["clippy"]

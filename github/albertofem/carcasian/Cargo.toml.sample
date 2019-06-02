@@ -1,0 +1,20 @@
+[package]
+name = "carcasian"
+version = "1.0.0-alpha"
+authors = ["Alberto Fernández <albertofem@gmail.com>"]
+
+[lib]
+name = "carcasian"
+path = "src/lib.rs"
+
+[[bin]]
+name = "carcasian-server"
+path = "src/server.rs"
+
+[[bin]]
+name = "carcasian-client"
+path = "src/client.rs"
+
+[dependencies]
+argparse = "*"
+mioco = "*"

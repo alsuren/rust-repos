@@ -1,0 +1,9 @@
+[package]
+name = "ndarray-experimental"
+version = "0.1.0"
+authors = ["bluss"]
+
+[dependencies]
+
+ndarray = "0.6.9"
+rayon = "0.5.0"

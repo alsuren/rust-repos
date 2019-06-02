@@ -1,0 +1,22 @@
+[package]
+name = "rvue"
+version = "0.1.0"
+description = "A StudentVUE API client library."
+readme = "README.md"
+documentation = "https://docs.rs/rvue"
+repository = "https://github.com/jcorme/rvue"
+license = "MIT"
+authors = ["Jason Chen <me@nulle.xyz>"]
+keywords = ["studentvue", "parentvue"]
+
+[features]
+serde-serialize = ["serde", "serde_derive"]
+
+[dependencies]
+chrono = { version = "0.3", features = ["serde"] }
+regex = "0.2.1"
+reqwest = "0.4.0"
+xml-rs = "0.4.0"
+
+serde = { version = "0.9", optional = true }
+serde_derive = { version = "0.9", optional = true }

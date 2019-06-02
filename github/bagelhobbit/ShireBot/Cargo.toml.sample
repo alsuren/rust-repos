@@ -1,0 +1,12 @@
+[package]
+name = "discord_test"
+version = "0.2.0"
+authors = ["bagelhobbit <evanturner45@gmail.com>"]
+
+[dependencies]
+
+
+[dependencies.serenity]
+version = "0.4"
+default-features=true
+features = ["framework", "standard_framework", "voice", "cache"]

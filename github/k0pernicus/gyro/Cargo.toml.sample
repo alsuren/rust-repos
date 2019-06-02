@@ -1,0 +1,21 @@
+[package]
+name = "gyro"
+version = "0.1.0"
+authors = ["k0pernicus <antonin.carette@gmail.com>"]
+
+[lib]
+name = "libgyro"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gyro"
+path = "src/main.rs"
+
+[dependencies]
+ansi_term = "0.9"
+clap = "2.20.0"
+chrono = { version = "0.2", features = ["serde", "rustc-serialize"] }
+git2 = "0.6"
+rustc-serialize = "0.3.22"
+toml = "0.2"
+walkdir = "1"

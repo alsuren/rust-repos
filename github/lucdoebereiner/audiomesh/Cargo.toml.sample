@@ -1,0 +1,12 @@
+[package]
+name = "audiomesh"
+version = "0.1.0"
+authors = ["luc"]
+
+[dependencies]
+jack = "0.6"
+rand = "0.5"
+
+[profile.release]
+opt-level = 3
+lto = true

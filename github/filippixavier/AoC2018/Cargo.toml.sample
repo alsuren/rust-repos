@@ -1,0 +1,37 @@
+[package]
+name = "aoc_2018"
+version = "0.1.0"
+authors = ["Xavier Filippi <gueltir@gmail.com>"]
+
+[dependencies]
+regex = "1.1.0"
+sdl2 = "0.32"
+
+[features]
+default = ["day1"]
+day1 = []
+day2 = ["nday"]
+day3 = ["nday"]
+day4 = ["nday"]
+day5 = ["nday"]
+day6 = ["nday"]
+day7 = ["nday"]
+day8 = ["nday"]
+day9 = ["nday"]
+day10 = ["nday"]
+day11 = ["nday"]
+day12 = ["nday"]
+day13 = ["nday"]
+day14 = ["nday"]
+day15 = ["nday"]
+day16 = ["nday"]
+day17 = ["nday"]
+day18 = ["nday"]
+day19 = ["nday"]
+day20 = ["nday"]
+day21 = ["nday"]
+day22 = ["nday"]
+day23 = ["nday"]
+day24 = ["nday"]
+day25 = ["nday"]
+nday = []

@@ -1,0 +1,13 @@
+[package]
+name = "activities"
+version = "0.3.0"
+authors = ["Mario Geiger <geiger.mario@gmail.com>"]
+repository = "https://github.com/antigol/activities.git"
+
+[dependencies]
+rand = "*"
+time = "*"
+num_cpus = "*"
+
+[profile.release]
+opt-level = 3

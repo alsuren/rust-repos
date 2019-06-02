@@ -1,0 +1,8 @@
+[package]
+name = "rack-kata"
+version = "0.1.0"
+authors = ["Ryan Faulhaber <faulhaberryan@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+indextree = { git = "https://github.com/saschagrunert/indextree" }

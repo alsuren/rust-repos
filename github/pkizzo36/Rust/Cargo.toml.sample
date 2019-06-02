@@ -1,0 +1,22 @@
+[package]
+name = "mars2"
+version = "0.1.0"
+authors = ["Ticki <Ticki@users.noreply.github.com>"]
+description = "A Mattermost and Slack API wrapper."
+repository = "https://github.com/ticki/mars"
+documentation = "https://docs.rs/crate/mars"
+license = "MIT"
+keywords = ["mattermost", "slack", "api", "chat", "bot"]
+exclude = ["target", "Cargo.lock"]
+
+[dependencies]
+hyper = "0"
+serde = "0"
+serde_json = "0"
+serde_macros = "0"
+extra = "0"
+
+[dependencies.url]
+version = "1"
+features = ["query_encoding"]
+

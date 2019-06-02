@@ -1,0 +1,16 @@
+[package]
+name = "rubancw"
+version = "0.1.0"
+authors = ["Vladislav <vladislav.oleshko@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+regex="*"
+select="*"
+requests="*"
+tui = "*"
+termion = "*"
+priomutex="*"
+clap="*"

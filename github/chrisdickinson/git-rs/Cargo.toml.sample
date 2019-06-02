@@ -1,0 +1,35 @@
+[package]
+name = "git_rs"
+version = "0.1.0"
+description = "A (work in progress) pure rust git implementation."
+authors = ["Chris Dickinson <christopher.s.dickinson@gmail.com>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+hex = "0.3.2"
+error-chain = "0.12.0"
+flate2 = "1.0.6"
+byteorder = "1.2.7"
+chrono = "0.4.6"
+memmap = "0.7.0"
+rust-crypto = "0.2.36"
+rayon = "1.0.3"
+lru = "0.1.11"
+crc = "^1.0.0"
+
+[lib]
+name = "git_rs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "git_rs_log"
+path = "src/bin/log.rs"
+
+[[bin]]
+name = "git_rs_read_tree"
+path = "src/bin/read_tree.rs"
+
+[[bin]]
+name = "git_rs_index_pack"
+path = "src/bin/index_pack.rs"

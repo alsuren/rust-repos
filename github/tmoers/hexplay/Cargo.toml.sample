@@ -1,0 +1,19 @@
+[package]
+name = "hexplay"
+version = "0.2.1"
+authors = ["Tom Moers <tmoers@users.noreply.github.com>"]
+description = "Format u8 slices like an hex editor"
+
+license = "MIT"
+readme = "README.md"
+documentation = "https://docs.rs/crate/hexplay"
+repository = "https://github.com/tmoers/hexplay"
+categories = ["development-tools", "visualization"]
+keywords = ["display", "hex"]
+
+[badges]
+travis-ci = { repository = "tmoers/hexplay" }
+
+[dependencies]
+atty = "0.2"
+termcolor = "0.3"

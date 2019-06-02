@@ -1,0 +1,25 @@
+[package]
+name = "fiveo-wasm-target"
+version = "0.3.3"
+authors = ["Gary Tierney <gary.tierney@gmx.com>"]
+
+[dependencies]
+rlibc = "1.0.0"
+
+[dependencies.wee_alloc]
+version = "0.2.0"
+features = ["size_classes"]
+
+[dependencies.fiveo]
+version = "0.3.2"
+features = ["webassembly"]
+
+[features]
+profiling = []
+
+[lib]
+path = "./src/bindings/ffi/lib.rs"
+crate-type = ["cdylib"]
+
+[profile.release]
+debug = true

@@ -1,0 +1,22 @@
+[package]
+name = "miniscript"
+version = "0.1.0"
+authors = ["Daniel Wanner <daniel.wanner@tubber.xyz>"]
+edition = "2018"
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+bincode = "*"
+enum-primitive-derive = "*"
+num-traits = "*"
+
+[[example]]
+name = "parser"
+path = "examples/parser.rs"
+crate-type = ["bin"]
+
+[[example]]
+name = "binary-encode"
+path = "examples/binary_encode.rs"
+crate-type = ["bin"]

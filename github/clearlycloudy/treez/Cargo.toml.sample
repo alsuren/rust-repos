@@ -1,0 +1,21 @@
+[package]
+name = "treez"
+version = "0.12.0"
+authors = ["Yuan Liu <yuan6liu@gmail.com>"]
+description = "A collection of useful tree data structures."
+repository = "https://github.com/clearlycloudy/treez/"
+keywords = [ "segment", "red-black", "autograd", "sarsa", "mtcs" ]
+license = "BSD-2-Clause"
+documentation = "https://docs.rs/treez/0.11.0/treez/"
+readme = "README.md"
+
+[dependencies]
+rand = "0.5.5"
+chrono = "0.4.0"
+num = "0.1.41"
+mazth = "0.0.0"
+crossbeam = "0.4.1"
+
+[lib]
+name = "treez"
+path = "src/mod.rs"

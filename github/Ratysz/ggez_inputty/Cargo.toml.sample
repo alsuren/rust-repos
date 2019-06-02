@@ -1,0 +1,26 @@
+[package]
+name = "ggez_inputty"
+version = "0.1.0"
+authors = ["Ratys <alexander.sepity@gmail.com>"]
+
+[lib]
+name = "ggez_inputty"
+path = "src/lib.rs"
+
+[dependencies]
+ggez = "0.4"
+log = "0.4"
+
+[dev-dependencies]
+chrono = "0.4"
+fern = "0.5"
+rand = "0.4"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'abort'

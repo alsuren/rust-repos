@@ -1,0 +1,8 @@
+[package]
+name = "hello_gtk"
+version = "0.1.0"
+authors = ["Patrick Barrett <patrickbarrett@exosite.com>"]
+
+[dependencies]
+gtk = "^0"
+hyper = "^0"

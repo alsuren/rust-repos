@@ -1,0 +1,30 @@
+[package]
+name = "subatomic"
+version = "0.1.0"
+authors = ["Wesley Aptekar-Cassels <W.Aptekar@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.release]
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
+
+[dependencies]
+clippy = {version = "*", optional = true}
+rlibc = "1.0.0"
+volatile = "0.2.1"
+spin = "0.4.6"
+multiboot2 = "0.3.1"
+cpuio = "0.2.0"
+bitflags = "0.7.0"
+x86_64 = "0.1.2"
+
+[dependencies.lazy_static]
+version = "0.2.8"
+features = ["spin_no_std"]
+
+[features]
+default = []

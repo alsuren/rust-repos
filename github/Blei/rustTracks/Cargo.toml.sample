@@ -1,0 +1,18 @@
+[package]
+name = "rusttracks"
+version = "0.0.1"
+authors = ["Philipp Brüschweiler <blei42@gmail.com>"]
+
+[dependencies.gtk]
+path = "../dumb-gtk"
+
+[dependencies.timerfd]
+path = "../timerfd"
+
+[dependencies.hyper]
+git = "https://github.com/hyperium/hyper.git"
+
+[dependencies]
+url = "*"
+rustc-serialize = "*"
+libc = "*"

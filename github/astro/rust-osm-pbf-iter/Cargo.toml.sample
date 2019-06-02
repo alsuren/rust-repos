@@ -1,0 +1,17 @@
+[package]
+name = "osm_pbf_iter"
+version = "0.1.0"
+authors = ["Astro <astro@spaceboyz.net>"]
+license = "GPL-3.0"
+description = "Parse OpenStreetMap .pbf dumps while trying to avoid copying"
+
+[profile.release]
+debug = true
+lto = true
+opt-level = 3
+
+[dependencies]
+byteorder = "1.2"
+flate2 = { version = "1.0", features = ["zlib"], default-features = false }
+num_cpus = "1.8"
+protobuf_iter = "0.1.1"

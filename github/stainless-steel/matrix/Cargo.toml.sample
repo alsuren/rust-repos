@@ -1,0 +1,30 @@
+[package]
+name = "matrix"
+version = "0.22.0"
+license = "Apache-2.0/MIT"
+authors = [
+    "Ivan Ukhov <ivan.ukhov@gmail.com>",
+    "Marcel Hellwig",
+]
+description = "The package provides a matrix laboratory."
+documentation = "https://docs.rs/matrix"
+homepage = "https://github.com/stainless-steel/matrix"
+repository = "https://github.com/stainless-steel/matrix"
+readme = "README.md"
+categories = ["science"]
+keywords = ["linear-algebra"]
+
+[features]
+acceleration = ["blas", "lapack"]
+acceleration-src = ["openblas-src"]
+
+[dependencies]
+blas = { version = "0.20", optional = true }
+lapack = { version = "0.16", optional = true }
+num-complex = { version = "0.2", default-features = false }
+num-traits = "0.2"
+openblas-src = { version = "0.7", optional = true }
+
+[dev-dependencies]
+assert = "0.7"
+random = "0.12"

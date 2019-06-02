@@ -1,0 +1,16 @@
+[package]
+name = "fastlog"
+version = "0.2.0"
+authors = ["Wangshan Lu <wisagan@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/WiSaGaN/fastlog.git"
+description = """
+A high performance asynchronous logger
+"""
+keywords = ["async", "fastlog", "log"]
+
+[dependencies]
+crossbeam-channel = "0.3.8"
+log = { version = "0.4.6", features = ["std"] }
+time = "0.1"

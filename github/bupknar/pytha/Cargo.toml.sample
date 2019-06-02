@@ -1,0 +1,8 @@
+[package]
+name = "pytha"
+version = "0.1.0"
+authors = ["Bram Senders <bram@luon.net>"]
+
+[dependencies]
+sdl2 = "0.22.0"
+nalgebra = "0.8.2"

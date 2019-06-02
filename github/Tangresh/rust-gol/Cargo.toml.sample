@@ -1,0 +1,11 @@
+[package]
+name = "rust-gol"
+version = "0.1.0"
+authors = ["Dominik Menzi <dmenzi@tangresh.ch>"]
+
+[dependencies]
+conrod = "*"
+#piston_window = "*"
+
+[dev-dependencies]
+expectest = "*"

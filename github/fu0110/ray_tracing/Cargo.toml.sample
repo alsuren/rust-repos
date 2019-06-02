@@ -1,0 +1,11 @@
+[package]
+name = "ray_tracing"
+version = "2.0.0"
+authors = ["mango0110 <1119369173@qq.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "*"
+lazy_static = "*"
+thread_pool = {path="../thread_pool"}
+image = "*"

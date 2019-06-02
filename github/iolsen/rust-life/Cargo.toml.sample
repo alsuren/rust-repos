@@ -1,0 +1,8 @@
+[package]
+name = "rust-life"
+version = "0.1.0"
+authors = ["Ian Olsen <ian.olsen@gmail.com>"]
+
+[dependencies]
+rand = "0.6.0"
+getch = "0.2.0"

@@ -1,0 +1,22 @@
+[package]
+authors = ["panicbit <panicbit.dev@gmail.com>", "Andre Bogus <bogusandre@gmail.com>"]
+categories = ["development-tools::testing"]
+description = "Derives quickcheck traits"
+keywords = ["quickcheck", "testing", "derive", "macro"]
+license = "MIT/Apache-2.0"
+name = "quickcheck_derive"
+readme = "README.md"
+repository = "https://github.com/panicbit/quickcheck_derive"
+version = "0.2.1"
+
+[dependencies]
+proc-macro2 = "0.4"
+syn = "0.14"
+synstructure = "0.9"
+
+[dev-dependencies]
+quickcheck = "0.7.1"
+rand = "0.5.5"
+
+[lib]
+proc_macro = true

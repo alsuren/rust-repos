@@ -1,0 +1,19 @@
+[package]
+name = "tox"
+version = "0.1.0"
+authors = [ ]
+
+[lib]
+name = "tox"
+
+[[example]]
+name = "bot"
+
+[[example]]
+name = "test"
+
+[dependencies.rest_easy]
+git = "https://github.com/mahkoh/rest_easy"
+
+[dependencies.comm]
+git = "https://github.com/mahkoh/comm"

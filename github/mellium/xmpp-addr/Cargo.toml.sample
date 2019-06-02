@@ -1,0 +1,28 @@
+[package]
+name = "xmpp-addr"
+# Remember to bump html_root_url in src/lib.rs as well.
+version = "0.13.1"
+edition="2018"
+authors = ["Sam Whited <sam@samwhited.com>"]
+license = "MIT/Apache-2.0"
+description = """
+An implementation of the XMPP Address format (Jabber ID) defined in RFC 7622.
+"""
+repository = "https://bitbucket.org/mellium/xmpp-addr/"
+readme = "README.md"
+keywords = ["xmpp", "jabber", "jid", "rfc7622", "rfc6120"]
+documentation = "https://docs.rs/xmpp-addr"
+categories = []
+
+exclude = [
+    "bitbucket-pipelines.yml",
+]
+
+[features]
+default = []
+
+try_from = []
+
+[dependencies]
+idna = "0.1.4"
+unicode-normalization = "0.1.5"

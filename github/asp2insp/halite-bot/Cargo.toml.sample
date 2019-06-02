@@ -1,0 +1,14 @@
+[package]
+name = "Asp2InspBot"
+version = "0.1.0"
+authors = ["Josiah Gaskin <josiahgaskin@gmail.com>"]
+
+publish = false
+vcs = "None"
+
+[dependencies]
+
+
+[[bin]]
+path = "src/MyBot.rs"
+name = "MyBot"

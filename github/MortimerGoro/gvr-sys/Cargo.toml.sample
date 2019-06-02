@@ -1,0 +1,12 @@
+[package]
+name = "gvr-sys"
+description = "Rust bindings for Google VR SDK"
+version = "0.7.0"
+authors = ["Imanol Fernandez <mortimergoro@gmail.com>", "Google VR Team"]
+build = "build.rs"
+
+homepage = "https://github.com/MortimerGoro/gvr-sys"
+repository = "https://github.com/MortimerGoro/gvr-sys"
+keywords = ["vr", "daydream", "cardboard", "sdk", "google"]
+license = "Apache-2.0"
+

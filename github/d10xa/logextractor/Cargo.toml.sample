@@ -1,0 +1,11 @@
+[package]
+name = "logextractor"
+version = "0.1.0"
+authors = ["d10xa <d10xa@mail.ru>"]
+edition = "2018"
+
+[dependencies]
+getopts = "0.2.18"
+sha1 = "0.6.0"
+tempfile = "3.0.7"
+regex = "1.1.6"

@@ -1,0 +1,10 @@
+[package]
+name = "toygrep"
+version = "0.1.0"
+authors = ["Jan Weidner <jw3126@gmail.com>"]
+
+[dependencies]
+clap = "2.31"
+
+[dev-dependencies]
+assert_cli = "0.5"

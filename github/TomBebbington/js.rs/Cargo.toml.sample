@@ -1,0 +1,21 @@
+[project]
+
+name = "js"
+version = "0.0.1"
+authors = ["Tom Bebbington <tophattedcoder@gmail.com>"]
+
+[lib]
+
+name = "js"
+path = "src/lib/lib.rs"
+
+[[bin]]
+
+name = "js"
+path = "src/bin/bin.rs"
+
+[dependencies.jit]
+git = "https://github.com/TomBebbington/jit.rs.git"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

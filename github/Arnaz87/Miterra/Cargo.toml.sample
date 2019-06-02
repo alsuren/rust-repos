@@ -1,0 +1,12 @@
+[package]
+name = "miterra"
+version = "0.1.0"
+authors = ["Arnaud Castellanos Galea <poderosoarnaud@gmail.com>"]
+
+[dependencies]
+gfx = "0.17"
+gfx_device_gl = "0.15"
+gfx_window_glutin = "0.20"
+glutin = "0.12"
+cgmath = "0.16"
+image = "0.18"

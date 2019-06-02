@@ -1,0 +1,21 @@
+[package]
+name = "serde_yaml"
+version = "0.0.1"
+authors = ["Sebastian Thiel <byronimo@gmail.com>"]
+license = "MIT"
+description = "YAML support for rust-serde"
+repository = "https://github.com/serde-rs/yaml"
+readme = "README.md"
+keywords = ["serialization", "deserializatin", "yaml"]
+build = "src/build.rs"
+
+[dependencies]
+serde = "*"
+num = "*"
+
+[features]
+foo = []
+
+[build-dependencies]
+syntex = "*"
+serde_codegen = "*"

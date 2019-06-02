@@ -1,0 +1,11 @@
+[package]
+name = "ictmon"
+version = "0.2.0"
+authors = ["Alex6323 <Al3k5@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+zmq = "0.9.0"
+tokio = "0.1.14"
+lazy_static = "1"
+clap = { version = "2.32.0", features = ["yaml"] }

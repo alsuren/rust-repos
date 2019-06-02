@@ -1,0 +1,26 @@
+[package]
+name = "passive-packet"
+version = "0.1.0"
+authors = ["Daniel Lockyer <thisisdaniellockyer@gmail.com>"]
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[dependencies.pnet]
+version = "0.20.0"
+features = ["pcap"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+curl = "0.4.8"
+iron = "0.6"
+staticfile = "0.5"
+mount = "0.4"
+peel-ip = { git = "https://github.com/neosilky/peel-ip" }

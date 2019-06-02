@@ -1,0 +1,21 @@
+[package]
+name = "toml-json"
+version = "0.0.1"
+authors = ["James Lal [:lightsofapollo] <james@lightsofapollo.com>"]
+
+[dependencies]
+toml = "0.2.0"
+rustc-serialize= "0.3.19"
+getopts = "0.2.14"
+
+[[bin]]
+path = "src/bin/toml-json.rs"
+name = "toml-json"
+
+[[bin]]
+path = "src/bin/json-toml.rs"
+name = "json-toml"
+
+[lib]
+name = "tomljson"
+path = "src/tomljson/lib.rs"

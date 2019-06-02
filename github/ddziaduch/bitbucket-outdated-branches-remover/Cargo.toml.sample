@@ -1,0 +1,8 @@
+[package]
+name = "bitbucket-outdated-branches-remover"
+version = "0.1.0"
+authors = ["ddziaduch"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.9"

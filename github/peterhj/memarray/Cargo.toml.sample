@@ -1,0 +1,23 @@
+[package]
+name = "memarray"
+version = "0.0.1"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[lib]
+name = "memarray"
+path = "src/lib.rs"
+
+[features]
+default = []
+f16 = ["float"]
+mkl = ["bindgen"]
+#mkl_gnu = ["bindgen"]
+
+[build-dependencies]
+bindgen = { version = "*", optional = true }
+
+[dependencies]
+arrayidx = { path = "../arrayidx" }
+byteorder = "*"
+float = { path = "../float", optional = true }
+sharedmem = { path = "../sharedmem" }

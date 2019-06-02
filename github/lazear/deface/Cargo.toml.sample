@@ -1,0 +1,16 @@
+[package]
+name = "deface"
+version = "0.1.2"
+authors = ["Michael <Michael@LAZEAR-WORK>"]
+repository = "https://github.com/lazear/deface.git"
+homepage = "https://github.com/lazear/deface"
+license = "MIT"
+readme = "README.md"
+description = "Lightweight markup to HTML converter"
+keywords = ["markdown", "markup"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+myriad = "*"

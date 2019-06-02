@@ -1,0 +1,12 @@
+[workspace]
+members = [
+  "lib/",
+  "codegen/",
+  "examples/ini",
+  # "examples/http",
+  "examples/media_type",
+  # "examples/exprs",
+  "examples/parens",
+  "examples/json",
+  "examples/uri",
+]

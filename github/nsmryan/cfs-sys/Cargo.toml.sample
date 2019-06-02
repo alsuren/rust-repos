@@ -1,0 +1,18 @@
+[package]
+name = "cfs-sys"
+version = "0.1.0"
+authors = ["nsmryan <nsmryan@gmail.com>"]
+readme="README.md"
+keywords=["space", "sys", "ffi", "bindgen", "cfs"]
+categories=["api-bindings", "embedded"]
+homepage="https://github.com/nsmryan/cfs-sys"
+license="MIT"
+description="Bindings for NASA's cFE, cFS, and OSAL for flight software systems. Write CFS Apps in Rust!"
+
+[lib]
+name="cfs_sys"
+crate-type=["rlib"]
+
+[build-dependencies]
+bindgen="0.26.3"
+

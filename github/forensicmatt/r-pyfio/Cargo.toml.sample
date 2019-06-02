@@ -1,0 +1,15 @@
+[package]
+name = "r-pyfio"
+version = "0.1.0"
+authors = ["matthew seyer <https://github.com/forensicmatt/r-pyfio>"]
+
+[lib]
+name = "rpyfio"
+
+[dependencies]
+trace-error = "0.1.5"
+
+[dependencies.cpython]
+version = "*"
+default-features = false
+features = ["python27-sys"]

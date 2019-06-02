@@ -1,0 +1,10 @@
+[package]
+name = "libregui"
+version = "0.1.0"
+authors = ["Altenius <jacobjm18@gmail.com>"]
+edition = "2018"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.6", features = ["winuser", "wincon", "errhandlingapi", "wingdi"] }
+libc = "0.2"
+widestring = "0.4"

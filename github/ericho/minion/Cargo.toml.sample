@@ -1,0 +1,16 @@
+[package]
+name = "minion"
+version = "0.1.0"
+authors = ["Erich Cordoba <erich.cm@yandex.com>"]
+
+[dependencies]
+tokio-core = "0.1.15"
+tokio = "0.1.6"
+futures = "0.1.18"
+walkdir = "*"
+regex = "0.2"
+serde = "1"
+serde_json = "1"
+serde_derive = "1"
+structopt = "0.2"
+sysinfo = "0.5"

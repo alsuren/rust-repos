@@ -1,0 +1,22 @@
+[package]
+name = "frames"
+version = "0.1.0"
+authors = ["jesskfulwood <jesskfulwood@gmail.com>"]
+
+[dependencies]
+failure = "0.1.3"
+num = "0.2.0"
+new-ordered-float = "1.0.2"
+csv = "1.0.2"
+bit-vec = "0.5.0"
+serde = "1.0.80"
+smallvec = "0.6.5"
+frunk = "0.2.2"
+frames-derive = { path = "frames-derive" }
+
+[dev-dependencies]
+tempdir = "0.3.7"
+rand = "0.5.5"
+
+[features]
+unstable = []

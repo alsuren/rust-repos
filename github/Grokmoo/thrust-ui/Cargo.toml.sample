@@ -1,0 +1,11 @@
+[package]
+name = "thrust-ui"
+version = "0.1.0"
+authors = ["Jared Stephen <grok_moo@yahoo.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"
+log = "0.4"

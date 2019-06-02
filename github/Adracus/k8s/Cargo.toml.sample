@@ -1,0 +1,11 @@
+[package]
+name = "k8s"
+version = "0.1.0"
+authors = ["Axel Christ <adracus@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+http = "0.1"
+url = "1.7"
+serde_json = "1.0"
+chrono = "0.4"

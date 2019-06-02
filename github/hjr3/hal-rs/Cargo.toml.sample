@@ -1,0 +1,18 @@
+[package]
+
+name = "hal"
+version = "0.0.6"
+description = "A pure rust library for generating Hypertext Application Language (Hal) responses."
+license = "MIT/Apache-2.0"
+authors = [ "herman@hermanradtke.com" ]
+
+documentation = "http://hermanradtke.com/hal-rs"
+homepage = "http://hermanradtke.com/hal-rs"
+repository = "https://github.com/hjr3/hal-rs"
+
+[lib]
+
+name = "hal"
+
+[dependencies]
+rustc-serialize = "~0.3"

@@ -1,0 +1,16 @@
+[package]
+name = "indexer"
+version = "0.1.0"
+authors = ["ingalls <ingalls@protonmail.com>"]
+
+[dependencies]
+rayon = "1.0"
+geojson = "0.11.1"
+serde_json = "1.0"
+serde_derive = "1.0"
+serde = "1.0"
+geojson_rewind = "0.2"
+
+[dependencies.clap]
+features = ["yaml"]
+version = "2.31.2"

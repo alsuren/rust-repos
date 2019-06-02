@@ -1,0 +1,10 @@
+[package]
+name = "SandRust"
+version = "0.1.0"
+authors = ["Ivaylo Novakov <inovakov@gmail.com>"]
+
+[dependencies]
+
+[[bin]]
+name = "sand_rust"
+path = "src/main.rs"

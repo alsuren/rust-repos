@@ -1,0 +1,18 @@
+[package]
+
+name = "habitrpg-viewer"
+version = "0.0.3"
+authors = ["Jonas Hietala <mail@jonashietala.se>"]
+
+[dependencies.habitrpg]
+
+git = "https://github.com/treeman/libhabitrpg"
+
+[dependencies.time]
+
+git = "https://github.com/rust-lang/time"
+
+[dependencies]
+
+getopts = "0.2"
+

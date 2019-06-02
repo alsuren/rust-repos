@@ -1,0 +1,17 @@
+[package]
+name = "rusterpassword"
+version = "0.2.2"
+authors = [ "Greg V <greg@unrelenting.technology>" ]
+keywords = [ "Security", "Password", "MasterPassword" ]
+categories = [ "cryptography" ]
+description = "An implementation of the Master Password algorithm."
+license = "Unlicense"
+readme = "README.md"
+homepage = "https://github.com/myfreeweb/rusterpassword"
+repository = "https://github.com/myfreeweb/rusterpassword"
+
+[dependencies]
+libc = "0.2"
+secstr = "0.3"
+byteorder = "1"
+libsodium-sys = "0"

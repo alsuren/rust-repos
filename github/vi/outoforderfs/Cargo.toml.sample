@@ -1,0 +1,13 @@
+[package]
+name = "outoforderfs"
+version = "0.1.1"
+authors = ["Vitaly _Vi Shukela <vi0oss@gmail.com>"]
+description = "Randomized write delays for filesystem tests. Mount your filesystem though the outoforderfs, then interrupt the latter with Cltr+C to check how will the former react to losing a random subset of N last written blocks"
+license = "MIT"
+repository = "https://github.com/vi/outoforderfs"
+
+[dependencies]
+fuse = "0.2"
+time = "0.1"
+chan-signal = "0.1.5"
+rand = "0.3"

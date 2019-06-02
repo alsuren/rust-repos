@@ -1,0 +1,23 @@
+[package]
+name = "repay"
+version = "0.2.1"
+authors = ["ramn <github@rymdimperiet.org>"]
+description = "CLI for calculating repayments"
+edition = "2018"
+
+documentation = "https://docs.rs/repay"
+homepage = "https://github.com/ramn/repay"
+repository = "https://github.com/ramn/repay"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+keywords = ["repay", "money", "cli"]
+
+[dependencies]
+num = "0.2.0"
+
+[dev-dependencies]
+pretty_assertions = "0.5.1"
+
+[[bin]]
+name = "repay"
+doc = false

@@ -1,0 +1,10 @@
+[package]
+name = "hofstadter_butterfly"
+version = "0.3.2"
+authors = ["colt-browning <zabolotis@mail.ru>"]
+edition = "2018"
+
+[dependencies]
+bigdecimal = "0.0.15"
+line_drawing = "0.7"
+repng = "0.2"

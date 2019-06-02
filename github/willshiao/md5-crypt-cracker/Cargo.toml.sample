@@ -1,0 +1,14 @@
+[package]
+name = "cs165_project1"
+version = "0.1.0"
+authors = ["Calvin <tacalvin123@gmail.com>", "William Shiao <willshiao@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rust-crypto = "0.2.36"
+hex = "0.3.2"
+crossbeam-channel = "0.3.6"
+base64 = "0.10.0"
+indicatif = "0.11.0"
+smallvec = "0.6.7"
+smallstr = "0.1"

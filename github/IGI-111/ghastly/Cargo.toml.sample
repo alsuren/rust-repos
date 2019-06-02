@@ -1,0 +1,11 @@
+[package]
+name = "ghastly"
+version = "0.1.1"
+authors = ["IGI-111 <igi.222@gmail.com>"]
+
+[dependencies]
+hound = "3.3.0"
+image = "0.18.0"
+rustfft = "2.0.0"
+num = "0.1.41"
+palette = "0.2.1"

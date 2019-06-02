@@ -1,0 +1,8 @@
+[package]
+name = "queen-net"
+version = "0.1.0"
+authors = ["danc <dangcheng@hotmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2"

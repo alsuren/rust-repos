@@ -1,0 +1,12 @@
+[package]
+name = "simple-game"
+version = "0.1.0"
+authors = ["md <mdenchev@users.noreply.github.com>"]
+
+[dependencies]
+ggez = { git = "https://github.com/ggez/ggez" }
+lazy_static = "0.2"
+rand = "0.3"
+
+[profile.dev]
+opt-level = 1

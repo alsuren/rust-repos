@@ -1,0 +1,9 @@
+cargo-features = ["edition"]
+
+[workspace]
+members = [
+    "novelist-core",
+    "novelist-gtk",
+    "novelist-codegen",
+    "novelist-app"
+]

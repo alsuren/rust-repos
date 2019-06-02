@@ -1,0 +1,25 @@
+[package]
+name = "gl-abstractions"
+version = "0.1.2"
+authors = [ "Hampus Avekvist <hampus@avekvist.com>" ]
+description = "Rust bindings to GLFW and Glad in one little package"
+keywords = [ "bindings", "glad", "glfw", "opengl" ]
+license = "MIT"
+repository = "https://github.com/AvekvistSeffra/gl-abstractions"
+readme = "README.md"
+categories = [ "api-bindings" ]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "AvekvistSeffra/gl-abstractions", master = "branch" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies.glad-sys]
+git = "https://github.com/AvekvistSeffra/glad-sys"
+version = "0.1.0"
+default-features = false
+features = [ "opengl_46" ]
+
+[dependencies.glfw]
+git = "https://github.com/PistonDevelopers/glfw-rs"
+version = "0.26.1"

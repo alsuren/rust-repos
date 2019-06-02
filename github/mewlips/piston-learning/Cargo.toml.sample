@@ -1,0 +1,22 @@
+[package]
+
+name = "piston-learning"
+version = "0.1.0"
+authors = ["mewlips@gamil.com"]
+
+[dependencies.piston]
+
+git = "https://github.com/PistonDevelopers/piston.git"
+
+[dependencies.glfw_game_window]
+
+git = "https://github.com/PistonDevelopers/glfw_game_window.git"
+
+[dependencies.opengl_graphics]
+
+git = "https://github.com/PistonDevelopers/opengl_graphics.git"
+#git = "https://github.com/TyOverby/opengl_graphics.git"
+
+[[bin]]
+
+name = "piston-learning"

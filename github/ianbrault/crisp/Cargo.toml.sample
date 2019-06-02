@@ -1,0 +1,15 @@
+[package]
+name = "crisp"
+version = "0.1.0"
+authors = ["Ian Brault <ianbrault@ucla.edu>"]
+
+[lib]
+name = "crisp"
+path = "src/lib.rs"
+
+[[bin]]
+name = "crisp"
+path = "src/main.rs"
+
+[dependencies]
+clap = "^2.32.0"

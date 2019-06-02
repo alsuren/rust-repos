@@ -1,0 +1,18 @@
+[package]
+name = "film-o-mat"
+version = "0.1.0"
+authors = [
+    "Fabian Gutendorf <fgutendorf@uos.de>",
+    "Anna Sandor <asandor@uos.de",
+    "Benedikt Schumacher <bschumacher@uos.de>",
+    "Arno Stiefvater <astiefvater@uos.de",
+]
+
+[dependencies]
+term-painter = "0.2"
+clap = "2.20"
+regex = "0.2"
+curl = "0.4.3"
+flate2 = "0.2"
+rusqlite = "0.9"
+os_type = "0.5"

@@ -1,0 +1,17 @@
+[package]
+name = "fuzz"
+version = "0.1.0"
+authors = ["Seb Glazebrook <sebastian.glazebrook@redbubble.com>"]
+
+[dependencies]
+
+ncurses = "*"
+crossbeam = "*"
+clipboard = "*"
+log = "*"
+env_logger = "*"
+libc = "*"
+
+
+[dependencies.directory_filter]
+git = "http://github.com/sebglazebrook/directory_filter.git"

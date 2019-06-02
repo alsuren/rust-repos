@@ -1,0 +1,20 @@
+[package]
+name = "dupl-server"
+description = "High performance documents stream clustering server."
+version = "0.7.7"
+license = "MIT"
+authors = ["Alexey Voznyuk <me@swizard.info>"]
+
+[dependencies]
+clap = "2.31"
+serde = "1.0"
+simple-signal = "1.1"
+unix-daemonize = "0.1"
+zmq = { git = "https://github.com/erickt/rust-zmq.git" }
+bin-merge-pile = { git = "https://bitbucket.org/swizard/bin-merge-pile.git" }
+dupl_server_proto = { git = "https://github.com/swizard0/dupl-server-proto.git" }
+hash-dupl = { git = "https://github.com/swizard0/hash-dupl.git" }
+yauid-rs = { git = "https://github.com/swizard0/yauid-rs.git" }
+
+[dev-dependencies]
+rand = "0.4"

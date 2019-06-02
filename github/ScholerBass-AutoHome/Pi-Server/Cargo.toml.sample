@@ -1,0 +1,18 @@
+[package]
+
+name = "iron-home"
+version = "0.0.2"
+authors = ["Andrew Bass <andybass009@gmail.com>"]
+
+[dependencies]
+router = "*"
+rustc-serialize = "*"
+
+[dependencies.iron]
+version = "*"
+
+[dependencies.bodyparser]
+git = "https://github.com/iron/body-parser.git"
+
+[dependencies.wiringpi]
+git = "https://github.com/Ogeon/rust-wiringpi.git"

@@ -1,0 +1,9 @@
+[package]
+name = "kiss-ui"
+version = "2.0.0-alpha"
+authors = ["Austin Bonander <austin.bonander@gmail.com>"]
+
+[dependencies]
+
+[target.x86_64-unknown-linux-gnu.dependencies]
+gtk = "*"

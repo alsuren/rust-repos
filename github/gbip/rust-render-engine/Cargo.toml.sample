@@ -1,0 +1,40 @@
+[package]
+name = "render_engine"
+version = "0.3.2"
+authors = ["Paul Florence <florencepaul@hotmail.fr>", "Louis Jean <>"]
+
+[[bin]]
+name = "bench"
+path = "bench/bench.rs"
+
+[[bin]]
+name = "render_engine"
+path = "src/main.rs"
+
+[lib]
+name = "lib_render"
+path = "src/lib.rs"
+
+[dependencies]
+serde_derive = "1.0.*"
+serde_json = "1.0.*"
+image = "0.12"
+clippy = {version = "0.0.134", optional = true}
+getopts = "0.2"
+num = "0.1"
+colored="1.4.*"
+scoped-pool="1.0.0"
+pbr={git = "https://github.com/a8m/pb"}
+rand="*"
+
+[dependencies.serde]
+version = "1.0.*"
+default-features = false
+features = ["alloc","collections","std"]
+
+[features]
+default = ["clippy"]
+
+[profile.release]
+debug = true
+lto = false

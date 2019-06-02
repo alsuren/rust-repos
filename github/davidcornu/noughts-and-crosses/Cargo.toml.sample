@@ -1,0 +1,10 @@
+[package]
+name = "noughts-and-crosses"
+version = "1.0.0"
+authors = ["David Cornu <me@davidcornu.com>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+termion = "1.5.2"
+unicode-segmentation = "1.2.1"

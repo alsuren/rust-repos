@@ -1,0 +1,25 @@
+[package]
+name = "solasm"
+version = "0.1.0"
+authors = ["g. nicholas d'andrea <nick@gnidan.org>"]
+build = "build.rs"
+
+[dependencies]
+clap = "2.23.1"
+rustc-serialize = "0.3"
+bigint = "1.0"
+peg-syntax-ext = "0.5.0"
+
+[build-dependencies]
+peg = { version = "0.5" }
+
+[lib]
+name = "solasm"
+
+[[bin]]
+name = "solasm"
+test = false
+doc = false
+
+[badges]
+travis-ci = { repository = "gnidan/solasm" }

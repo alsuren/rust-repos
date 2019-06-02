@@ -1,0 +1,28 @@
+[package]
+name = "scene_renderer"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["scene_renderer"]
+description = "scene renderer"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-scene_renderer.git"
+homepage = "https://github.com/nathanfaucett/rs-scene_renderer"
+
+[dependencies]
+hash_map = {git = "https://github.com/nathanfaucett/rs-hash_map.git"}
+map = {git = "https://github.com/nathanfaucett/rs-map.git"}
+insert = {git = "https://github.com/nathanfaucett/rs-insert.git"}
+remove = {git = "https://github.com/nathanfaucett/rs-remove.git"}
+
+vector = {git = "https://github.com/nathanfaucett/rs-vector.git"}
+stack = {git = "https://github.com/nathanfaucett/rs-stack.git"}
+
+iterable = {git = "https://github.com/nathanfaucett/rs-iterable.git"}
+iterable_mut = {git = "https://github.com/nathanfaucett/rs-iterable_mut.git"}
+
+impl_any = {git = "https://github.com/nathanfaucett/rs-impl_any.git"}
+shared = {git = "https://github.com/nathanfaucett/rs-shared.git"}
+
+scene_graph = {git = "https://github.com/nathanfaucett/rs-scene_graph.git"}

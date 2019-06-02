@@ -1,0 +1,19 @@
+[package]
+name = "chess-rs"
+version = "0.1.0"
+authors = ["snarf95 <snarf95@hotmail.com>"]
+
+[dependencies]
+rand = "*"
+rayon = "*"
+smallvec = "*"
+three = { git = "https://github.com/three-rs/three.git" }
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

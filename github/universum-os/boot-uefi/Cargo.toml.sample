@@ -1,0 +1,14 @@
+[package]
+name = "universum-boot-uefi"
+version = "0.1.0"
+authors = ["Michael Zaversnik <Michael.Zaversnik@studmail.w-hs.de>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+uefi = { git = "https://github.com/GabrielMajeri/uefi-rs.git" }
+uefi-alloc = { git = "https://github.com/GabrielMajeri/uefi-rs.git" }
+uefi-exts = { git = "https://github.com/GabrielMajeri/uefi-rs.git" }
+universum-boot = { git = "https://github.com/universum-os/boot.git" }
+universum-framebuffer = { git = "https://github.com/universum-os/framebuffer.git" }
+universum-kernel = { git = "https://github.com/universum-os/kernel.git" }

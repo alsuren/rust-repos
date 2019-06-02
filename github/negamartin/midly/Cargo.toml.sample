@@ -1,0 +1,19 @@
+[package]
+name = "midly"
+version = "0.1.3"
+authors = ["negamartin"]
+include = [
+  "/src/*",
+  "/Cargo.toml",
+]
+description = "A Rusty ultra-fast, safe, easy to use MIDI parsing library designed for multi-MB files"
+repository = "https://github.com/negamartin/midly"
+readme = "README.md"
+keywords = ["parser","audio"]
+categories = ["multimedia","multimedia::audio","multimedia::encoding"]
+license = "Unlicense"
+
+[dependencies]
+error-chain = "0.11"
+bit = "0.1"
+rayon = "0.9"

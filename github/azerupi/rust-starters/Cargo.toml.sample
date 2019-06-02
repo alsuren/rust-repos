@@ -1,0 +1,20 @@
+[package]
+name = "rust-starters"
+version = "0.1.0"
+authors = ["Mathieu David <mathieudavid@mathieudavid.org>"]
+
+[dependencies]
+rocket = "0.2.8"
+rocket_codegen = "0.2.8"
+rocket_contrib = { version = "0.2.8", features = ["tera_templates"] }
+
+diesel = { version = "0.13.0", features = ["postgres", "chrono"] }
+diesel_codegen = { version = "0.13.0", features = ["postgres"] }
+dotenv = "0.9.0"
+
+serde = "0.9.0"
+serde_derive = "0.9.0"
+serde_json = "0.9.0"
+
+chrono = { version = "0.3.0", features = ["serde"] }
+error-chain = "0.10.0"

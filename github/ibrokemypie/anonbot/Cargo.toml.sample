@@ -1,0 +1,10 @@
+[package]
+name = "anonmsg"
+version = "0.1.0"
+authors = ["Conor Randall <ibrokemypie@bastardi.net>"]
+
+[dependencies]
+serenity = "~0.5"
+typemap = "~0.3.3"
+blake2 = "~0.8"
+rand = "~0.5"

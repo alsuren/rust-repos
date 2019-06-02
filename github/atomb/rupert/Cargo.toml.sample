@@ -1,0 +1,27 @@
+[package]
+name = "rupert"
+version = "0.0.1"
+authors = ["Aaron Tomb <aarontomb@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+batsat = "0.2.0"
+
+[dev-dependencies]
+quickcheck = "0.6.2"
+heapsize = "0.4.2"
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+panic = "abort"

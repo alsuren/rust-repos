@@ -1,0 +1,31 @@
+[package]
+
+name = "acronymy"
+version = "0.0.1"
+authors = [ "David Renshaw <dwrenshaw@gmail.com>" ]
+
+[[bin]]
+
+name = "acronymy"
+path = "src/main.rs"
+
+[[bin]]
+
+name = "initdb"
+path = "src/initdb.rs"
+
+[dependencies.sqlite3]
+git = "https://github.com/linuxfood/rustsqlite.git"
+
+[build-dependencies]
+capnpc = "0.8"
+
+[dependencies]
+url = "1.1.1"
+time = "0.1.3"
+futures = "0.1"
+tokio-core = "0.1"
+mio-uds = "0.6"
+capnp = "0.8"
+capnp-rpc = "0.8"
+sandstorm = "0.0.6"

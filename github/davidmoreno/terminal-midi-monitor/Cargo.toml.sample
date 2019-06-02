@@ -1,0 +1,19 @@
+[package]
+name = "terminal-midi-monitor"
+version = "0.3.0"
+authors = ["David Moreno <dmoreno@coralbits.com>"]
+edition = "2018"
+description = "Terminal ALSA MIDI Sequencer MIDI Monitor"
+repository = "https://github.com/davidmoreno/terminal-midi-monitor"
+readme = "README.md"
+keywords = ["ALSA", "MIDI", "Monitor", "Terminal"]
+categories = ["command-line-utilities"]
+license = "GPL-3.0"
+
+[dependencies]
+
+alsa = "0.2.1"
+libc = "0.2"
+colored = "1.7"
+lazy_static = "1.3.0"
+clap = "2.32.0"

@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "kernel",
+    "test_runner"
+]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

@@ -1,0 +1,79 @@
+[package]
+name = "fits_web_ql"
+version = "4.1.17"
+authors = ["jvo203 <chris.zapart@nao.ac.jp>"]
+edition = "2018"
+
+[features]
+default = ["hevc"]
+jvo = []
+use-intrinsics = []
+hevc = []
+vp9 = []
+production = []
+cdn = []
+cuda = []
+opencl = ["ocl", "rand"]
+zfp = ["zfp-sys"]
+
+[build-dependencies]
+bindgen = "*"
+metadeps = "*"
+ispc = "*"
+
+[package.metadata.pkg-config]
+x265 = "2.8"
+vpx = "1.7.0"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+thread-priority = "*"
+
+[dependencies]
+jemallocator = "*"
+actix = "0.7"
+actix-web = "*"
+serde_json = "*"
+chrono = "*"
+dirs = "*"
+#//cannot be used with a non-nightly stable Rust?
+#half = { version = "*", features = ["use-intrinsics"] }
+half = "*"
+lazy_static = "*"
+scan_fmt = "0.2.1"
+bytes = "*"
+byteorder = "*"
+uuid = { version = "*", features = ["v3", "v4"] }
+percent-encoding = "*"
+futures = "*"
+parking_lot = "*"
+rusqlite = "0.17.0"
+rayon = "*"
+time = "*"
+num-integer = "*"
+num-rational = "*"
+libvpx-native-sys = {version = "*", git = "https://github.com/jvo203/rust-vpx.git", features = ["generate"]}
+num = "*"
+num_cpus = "*"
+serde = "*"
+serde_derive = "*"
+bincode = "*"
+curl = "*"
+timer = "*"
+positioned-io = "*"
+atomic = "*"
+log = "*"
+flexi_logger = "*"
+regex = "*"
+lz4-compress = "*"
+postgres = "*"
+tar = "*"
+flate2 = "*"
+ispc = "*"
+ocl = {version = "*", optional = true}
+rand = {version = "*", optional = true}
+zfp-sys = {version = "*", optional = true}#, features = ["cuda"]}
+
+#rulinalg = "*"
+#linearkalman = "*"
+#rav1e = { git = "https://github.com/xiph/rav1e.git", branch = "master" }
+#openjpeg2-sys = "*"

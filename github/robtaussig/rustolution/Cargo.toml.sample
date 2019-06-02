@@ -1,0 +1,9 @@
+[package]
+name = "shapes_of_war"
+version = "0.1.0"
+authors = ["Rob Taussig <robert.taussig@gmail.com>"]
+
+[dependencies]
+rand = "0.4.2"
+names = "0.10.0"
+linked-hash-map = "0.5.1"

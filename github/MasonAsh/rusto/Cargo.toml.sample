@@ -1,0 +1,13 @@
+[package]
+name = "rusto"
+version = "0.1.0"
+authors = ["Mason Ashbridge <masonjash@gmail.com>"]
+
+[dependencies]
+gl="*"
+sdl2="*"
+byteorder="*"
+cgmath="*"
+rand="*"
+image = "*"
+assimp = "*"

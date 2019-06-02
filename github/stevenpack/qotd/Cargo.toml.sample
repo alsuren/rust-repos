@@ -1,0 +1,14 @@
+[package]
+name = "qotd"
+version = "0.1.0"
+authors = ["stevenpack <steven_john_pack@yahoo.com.au>"]
+
+[[bin]]
+name = "qotd-server"
+path = "src/main.rs"
+
+[dependencies]
+rand = "0.3"
+
+[dependencies.mio]
+git = "https://github.com/carllerche/mio"

@@ -1,0 +1,18 @@
+[package]
+name = "PixarRT"
+version = "0.1.0"
+authors = ["Jeremy Fitzhardinge <jeremy@goop.org>"]
+edition = "2018"
+
+[features]
+vec-simd = []
+
+[dependencies]
+rand = "0.6.3"
+rayon = "1.0.3"
+lazy_static = "1.2.0"
+
+[profile.release]
+debug = true
+# LTO seems much *slower*
+#lto = true

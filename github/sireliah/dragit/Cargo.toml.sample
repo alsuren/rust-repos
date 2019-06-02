@@ -1,0 +1,13 @@
+[package]
+name = "dragit"
+version = "0.1.0"
+authors = ["sireliah <sajuukk@gmail.com>"]
+
+[dependencies]
+blurz = { git = "https://github.com/szeged/blurz.git" }
+dbus = "0.6"
+glib = "^0"
+gio = "^0"
+gdk = "^0"
+gtk = "^0"
+cairo-rs = "^0"

@@ -1,0 +1,8 @@
+[package]
+name = "rogan"
+version = "0.1.0"
+authors = ["Srishan Bhattarai <srishanbhattarai@gmail.com>"]
+
+[dependencies]
+clap = "2.3"
+reqwest = "0.9"

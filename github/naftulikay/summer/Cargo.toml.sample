@@ -1,0 +1,10 @@
+[package]
+name = "summer"
+version = "0.1.0"
+authors = ["Naftuli Kay <me@naftuli.wtf>"]
+edition = "2018"
+
+[dependencies]
+hex = "0.3"
+sha2 = "0.8"
+rayon = "1.0"

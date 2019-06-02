@@ -1,0 +1,22 @@
+[package]
+authors = ["eeeeeta <eeeeeta@users.noreply.github.com>"]
+description = "JACK bindings for Rust (part of the SQA project)"
+documentation = "https://docs.rs/sqa-jack"
+keywords = ["jack", "audio", "sqa"]
+license = "CC0-1.0"
+name = "sqa-jack"
+readme = "README.md"
+repository = "https://github.com/eeeeeta/sqa"
+version = "0.6.1"
+
+[dependencies]
+bitflags = "0.7"
+failure = "0.1"
+failure_derive = "0.1"
+jack-sys = "0.1"
+lazy_static = "0.1"
+libc = "0.2"
+
+[features]
+default = ["test-xruns"]
+test-xruns = []

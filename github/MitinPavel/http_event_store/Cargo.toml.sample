@@ -1,0 +1,25 @@
+[package]
+name = "http_event_store"
+version = "0.2.0"
+authors = ["Pavlo Mitin <mitin.pavel@gmail.com>"]
+description = "Greg's Event Store Rust HTTP Client"
+keywords = ["EventStore", "EventSourcing", "CQRS", "RESTful", "AtomPub"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/MitinPavel/http_event_store"
+build = "build.rs"
+
+[features]
+default = ["serde_codegen"]
+unstable = ["serde_macros"]
+
+[build-dependencies]
+serde_codegen = { version = "^0.8", optional = true }
+
+[dependencies]
+hyper = "^0.9"
+serde = "^0.8"
+serde_json = "^0.8"
+serde_macros = { version = "^0.8", optional = true }
+uuid = { version = "^0.3", features = ["serde", "v4"] }
+chrono = { version = "^0.2", features = ["serde"] }

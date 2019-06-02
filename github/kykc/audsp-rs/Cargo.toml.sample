@@ -1,0 +1,11 @@
+[package]
+name = "audsp"
+version = "0.0.1"
+authors = ["kykc <ya@tomatl.org>"]
+
+[lib]
+name = "audsp"
+crate-type = ["dylib", "staticlib"]
+
+[dependencies]
+num = "*"

@@ -1,0 +1,19 @@
+[package]
+name = "prng"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["prng", "pseudo", "random", "generator"]
+description = "pseudo random number generator"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-prng.git"
+homepage = "https://github.com/nathanfaucett/rs-prng"
+
+
+[dependencies]
+rng = {git = "https://github.com/nathanfaucett/rs-rng.git"}
+
+[dev-dependencies]
+num_cpus = {version = "1.2"}
+rand = {version = "0.3"}

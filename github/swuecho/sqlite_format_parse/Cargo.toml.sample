@@ -1,0 +1,7 @@
+[package]
+name = "sqlite_parser"
+version = "0.1.0"
+authors = ["Hao Wu <hwu@intellisurvey.com>"]
+
+[dependencies.sqlite]
+path = "./sqlite"

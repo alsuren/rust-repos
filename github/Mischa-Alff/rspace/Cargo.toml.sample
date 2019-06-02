@@ -1,0 +1,12 @@
+[package]
+name = "space"
+version = "0.1.0"
+authors = ["Mischa Aster Alff <mischa.alff@gmail.com>"]
+
+[dependencies]
+piston2d-graphics = "*"
+piston2d-opengl_graphics = "*"
+piston_window = "*"
+num = "*"
+rand = "*"
+time = "*"

@@ -1,0 +1,16 @@
+[package]
+name = "string-to-lines"
+version = "0.1.0"
+authors = ["Uladzislau Maslakou"]
+
+[dependencies]
+unicode-width="0.1.5"
+
+[dev-dependencies]
+criterion = "0.2"
+lipsum = "0.6"
+
+[[bench]]
+name = "bench"
+harness = false
+path = "src/benches/bench.rs"

@@ -1,0 +1,51 @@
+[package]
+authors = ["Garrett Berg <vitiral@gmail.com>"]
+name = "stdcli"
+version = "0.1.0"
+keywords = [
+    "lib",
+    "cli",
+    "meta",
+]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/vitiral/stdcli"
+
+[dependencies]
+chrono = "0.4.0"
+console = "0.5.0"
+ctrlc = "3.0.3"
+dialoguer = "0.1.0"
+failure = "0.1.0"
+failure_derive = "0.1.1"
+fern = "0.4.3"
+indicatif = "0.8.0"
+itertools = "0.7.3"
+lazy_static = "0.2.11"
+libc = "0.2.33"
+log = "0.3.8"
+loggerv = "0.6.0"
+maplit = "1.0.0"
+rand = "0.3.18"
+rayon = "0.9.0"
+regex = "0.2.2"
+reqwest = "0.8.1"
+semver = "0.9.0"
+serde = "1.0.21"
+serde_derive = "1.0.21"
+serde_json = "1.0.6"
+serde_yaml = "0.7.3"
+shellexpand = "1.0.0"
+structopt = "0.1.6"
+structopt-derive = "0.1.6"
+tar = "0.4.14"
+tempdir = "0.3.5"
+toml = "0.4.5"
+walkdir = "2.0.1"
+
+[dependencies.tabwriter]
+features = ["ansi_formatting"]
+version = "1.0.3"
+
+[features]
+default = ["logging"]
+logging = []

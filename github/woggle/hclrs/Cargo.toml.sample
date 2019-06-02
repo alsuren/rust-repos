@@ -1,0 +1,33 @@
+[package]
+name = "hclrs"
+version = "0.2.8"
+authors = ["Charles Reiss <cr4bd@virginia.edu>"]
+
+build = "build.rs" # LARLRPOP preprocessing
+
+[features]
+default = ["strict-boolean-ops", "require-mux-default", "disallow-multiple-mux-default"]
+strict-boolean-ops = []
+strict-wire-widths-binary = []
+require-mux-default = []
+disallow-multiple-mux-default = []
+
+[profile.release]
+lto = true
+
+# Parser runtime library
+[dependencies.lalrpop-util]
+version = "0.15.2"
+
+# Parser library
+[build-dependencies.lalrpop]
+version = "0.15.2"
+
+[dependencies.log]
+version = "0.4.3"
+
+[dependencies.env_logger]
+version = "0.5.11"
+
+[dependencies.getopts]
+version = "0.2.18"

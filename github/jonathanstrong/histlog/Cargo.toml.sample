@@ -1,0 +1,18 @@
+[package]
+name = "histlog"
+version = "0.1.6"
+authors = ["Jonathan Strong <jonathan.strong@gmail.com>"]
+edition = "2018"
+description = "For use with the hdrhistogram crate, provides off-thread serialization of HdrHistogram interval logs to file."
+homepage = "https://github.com/jonathanstrong/histlog"
+repository = "https://github.com/jonathanstrong/histlog"
+license = "MIT"
+license-file = "LICENSE"
+readme = "README.md"
+keywords = ["statistics", "analytics", "sampling", "hdrhistogram", "histogram"]
+categories = ["development-tools::profiling", "asynchronous", "filesystem", "encoding"]
+
+[dependencies]
+hdrhistogram = "6"
+crossbeam-channel = "0.3"
+chrono = "0.4"

@@ -1,0 +1,17 @@
+[package]
+name = "rtplot"
+version = "0.1.0"
+authors = ["ostrosco <ostrosco@fastmail.fm>"]
+edition = "2018"
+
+[dependencies]
+glium = "0.22"
+cgmath = "0.17"
+glium_text_rusttype = "0.3"
+itertools-num = "0.1"
+num = "0.2"
+ttf-noto-sans = "0.1"
+slice-deque = "0.1"
+
+[dev-dependencies]
+rand = "0.6"

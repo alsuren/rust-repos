@@ -1,0 +1,34 @@
+[package]
+name = "subslice"
+version = "0.2.2"
+authors = ["bluss", "strake"]
+description = "Fast subslice search"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/strake/subslice.rs"
+
+keywords = ["substring-search", "subslice-search", "subsequence-search", "find"]
+categories = ["algorithms", "no-std"]
+
+[dependencies]
+memchr = { version = "2.0", default-features = false }
+unchecked-index = { version = "0.2.2", optional = true }
+jetscii = {version = "0.3", features= ["unstable"], optional = true }
+galil-seiferas = { version = "0.1.1", optional = true }
+
+[dev-dependencies]
+itertools = "0.7.0"
+odds = { version = "0.2.26" }
+macro-attr = "0.2"
+newtype_derive = "0.1"
+rand = "0.3.10"
+quickcheck = { version = "0.5", default-features = false }
+
+[features]
+# Internal features for testing & benchmarking & development
+pattern = []
+test-set = []
+benchmarks = ["galil-seiferas", "pattern", "unchecked-index"]
+all = ["jetscii", "pattern", "test-set"]
+
+[package.metadata.release]
+no-dev-version = true

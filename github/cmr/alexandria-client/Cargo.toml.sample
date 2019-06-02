@@ -1,0 +1,12 @@
+[package]
+
+name = "alexandria_client"
+version = "0.0.1"
+authors = ["Corey Richardson <corey@octayn.net>"]
+
+[dependencies.alexandria]
+git = "https://github.com/cmr/alexandria-common"
+
+[dependencies]
+hyper = "*"
+url = "*"

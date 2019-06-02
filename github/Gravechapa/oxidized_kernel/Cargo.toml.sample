@@ -1,0 +1,28 @@
+[package]
+name = "oxidized_kernel"
+version = "0.1.0"
+authors = ["Gravechapa <Gravechapa@protonmail.com>"]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0"
+spin = "0.4.6"
+multiboot2 = {git = "https://github.com/Gravechapa/multiboot2-elf64", branch = "gravechapa"}
+#multiboot2 = {path = "/home/upagah/rust_projects/multiboot2-elf64/"}
+bitflags = "1.0.1"
+x86_64 = "0.1.2"
+once = "0.3.3"
+bit_field = "0.9.0"
+raw-cpuid = "3.0.0"
+
+[dependencies.lazy_static]
+version = "0.2.4"
+features = ["spin_no_std"]

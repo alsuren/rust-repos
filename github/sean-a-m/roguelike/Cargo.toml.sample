@@ -1,0 +1,12 @@
+[package]
+name = "rl"
+version = "0.1.0"
+authors = ["sean <ut.seanm@gmail.com>"]
+
+[dependencies]
+rustty = "*"
+ndarray = "0.9.1"
+
+[dependencies.uuid]
+version = "*"
+features = ["v4"]

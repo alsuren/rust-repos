@@ -1,0 +1,19 @@
+[package]
+name = "multi-producer-sink"
+version = "0.5.2"
+authors = ["AljoschaMeyer <mail@aljoscha-meyer.de>"]
+description = "Provides handles to sinks, allowing multiple different tasks to write to the same underlying sink."
+repository = "https://github.com/AljoschaMeyer/multi-producer-sink"
+readme = "README.md"
+license = "AGPL-3.0"
+
+[dependencies]
+futures-core = "0.2.0-alpha"
+futures-channel = "0.2.0-alpha"
+futures-sink = "0.2.0-alpha"
+futures-util = "0.2.0-alpha"
+indexmap = "0.4.1"
+
+[dev-dependencies]
+atm-async-utils = "0.2.0"
+futures = "0.2.0-alpha"

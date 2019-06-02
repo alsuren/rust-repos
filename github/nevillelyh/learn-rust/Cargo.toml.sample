@@ -1,0 +1,16 @@
+[package]
+name = "learn-rust"
+version = "0.1.0"
+authors = ["Neville Li <neville@spotify.com>"]
+
+[dependencies]
+rand = "0.4.6"
+
+[profile.release]
+panic = 'abort'
+
+[workspace]
+members = [
+    #"adder",
+    #"add-one",
+]

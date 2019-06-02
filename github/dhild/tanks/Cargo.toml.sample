@@ -1,0 +1,28 @@
+[package]
+name = "tanks"
+version = "0.1.0"
+authors = ["D. Ryan Hild <d.ryan.hild@gmail.com>"]
+
+[dependencies]
+log4rs = "^0.6"
+log = "^0.3"
+gfx = "0.14"
+gfx_device_gl = "0.13"
+gfx_window_glutin = "0.14"
+glutin = "0.7"
+cgmath = "0.12"
+specs = "0.8"
+rand = "0.3"
+rusttype = "0.2"
+lazy_static = "0.2"
+
+[features]
+default = []
+
+[package.metadata.android]
+android_version = 18
+fullscreen = true
+package_name = "net.dryanhild.rust.tanks"
+project_name = "rust.tanks"
+package_label = "Rusty Tanks"
+build_targets = ["arm-linux-androideabi", "i686-linux-android"]

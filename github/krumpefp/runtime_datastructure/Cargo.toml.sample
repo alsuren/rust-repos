@@ -1,0 +1,13 @@
+[package]
+name = "runtime_datastructure"
+version = "0.1.0"
+authors = ["Filip Krumpe <filip.krumpe@fmi.uni-stuttgart.de>"]
+
+[lib]
+name = "rt_datastructure"
+crate-type = ["rlib", "dylib"]
+
+[dependencies]
+lazy_static = "0.2.6"
+rand = "0.3.15"
+regex = "0.2"

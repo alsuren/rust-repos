@@ -1,0 +1,42 @@
+[package]
+name = "gfx_gltf_anim"
+version = "0.1.0"
+authors = ["Forest Sharp <forestcollinssharp@gmail.com>"]
+build = "build.rs"
+
+[features]
+default = []
+dx11 = ["gfx-backend-dx11"]
+dx12 = ["gfx-backend-dx12"]
+vulkan = ["gfx-backend-vulkan"]
+metal = ["gfx-backend-metal"]
+
+[dependencies]
+cimgui = { git = "https://github.com/ForestCSharp/cimgui-rs.git" }
+num = "*"
+winit = "0.19"
+image = "0.21"
+nalgebra-glm = "0.4"
+time = "0.1.42"
+glsl-to-spirv = "0.1"
+gltf = "0.12"
+rand = "0.6.5"
+memoffset = "0.3"
+
+#Parallelism
+scoped_threadpool = "0.1.9"
+num_cpus = "1.10.0"
+
+log = "0.4.6"
+env_logger = "0.6.1"
+
+gfx-hal = { git = "https://github.com/gfx-rs/gfx.git" }
+
+
+# gfx-backend-vulkan = { git = "https://github.com/ForestCSharp/gfx.git", optional = true }
+gfx-backend-vulkan = { git = "https://github.com/gfx-rs/gfx.git", optional = true }
+[target.'cfg(windows)'.dependencies]
+gfx-backend-dx11 = { git = "https://github.com/gfx-rs/gfx.git", optional = true}
+gfx-backend-dx12 = { git = "https://github.com/gfx-rs/gfx.git", optional = true}
+[target.'cfg(target_os = "macos")'.dependencies]
+gfx-backend-metal = { git = "https://github.com/gfx-rs/gfx.git", optional = true }

@@ -1,0 +1,14 @@
+[package]
+name = "life-gl"
+version = "0.1.0"
+authors = ["Stephen Sherratt <sfsherratt@gmail.com>"]
+
+[dependencies]
+simon = "0.1"
+rand = "0.5"
+cgmath = "0.16"
+gfx = "0.17"
+gfx_device_gl = "0.15"
+gfx_window_glutin = "0.26"
+glutin = "0.18"
+nom = "4.0"

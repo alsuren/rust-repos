@@ -1,0 +1,31 @@
+[package]
+name = "cuda_api_types"
+version = "0.1.0-devel"
+edition = "2018"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+license = "Apache-2.0 OR MIT"
+
+[features]
+default         = []
+fresh           = ["bindgen"]
+cuda_6_5        = []
+cuda_7_0        = ["cuda_gte_7_0"]
+cuda_7_5        = ["cuda_gte_7_0", "cuda_gte_7_5"]
+cuda_8_0        = ["cuda_gte_7_0", "cuda_gte_7_5", "cuda_gte_8_0"]
+cuda_9_0        = ["cuda_gte_7_0", "cuda_gte_7_5", "cuda_gte_8_0", "cuda_gte_9_0"]
+cuda_9_1        = ["cuda_gte_7_0", "cuda_gte_7_5", "cuda_gte_8_0", "cuda_gte_9_0", "cuda_gte_9_1"]
+cuda_9_2        = ["cuda_gte_7_0", "cuda_gte_7_5", "cuda_gte_8_0", "cuda_gte_9_0", "cuda_gte_9_1", "cuda_gte_9_2"]
+cuda_10_0       = ["cuda_gte_7_0", "cuda_gte_7_5", "cuda_gte_8_0", "cuda_gte_9_0", "cuda_gte_9_1", "cuda_gte_9_2", "cuda_gte_10_0"]
+cuda_gte_7_0    = []
+cuda_gte_7_5    = []
+cuda_gte_8_0    = []
+cuda_gte_9_0    = []
+cuda_gte_9_1    = []
+cuda_gte_9_2    = []
+cuda_gte_10_0   = []
+
+[build-dependencies]
+bindgen = { version = "^0.46", optional = true }
+
+[dependencies]
+static_assertions = "0.3.1"

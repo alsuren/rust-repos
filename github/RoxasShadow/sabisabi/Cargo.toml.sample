@@ -1,0 +1,16 @@
+[package]
+name    = "sabisabi"
+version = "0.4.1"
+
+repository  = "https://github.com/RoxasShadow/sabisabi"
+authors     = ["Giovanni Capuano <webmaster@giovannicapuano.net>"]
+license     = "WTFPL"
+description = "Guessing game for Anki"
+keywords    = ["Anki", "Memorization", "game", "guessing"]
+
+[dependencies]
+regex       = "0.1"
+lazy_static = "0.2"
+rand        = "0.3"
+ansi_term   = "0.8"
+clap        = "2.10"

@@ -1,0 +1,13 @@
+[package]
+name = "http-cacher"
+version = "0.1.0"
+authors = ["White-Oak <lpzhelud@gmail.com>"]
+
+[dependencies]
+hyper = "*"
+serde = "0.8"
+serde_json = "0.8"
+serde_derive = "0.8"
+diesel = {version = "0.8.0", features = ["sqlite"], default-features= false}
+diesel_codegen = { version = "0.8.0", features = ["sqlite"] }
+dotenv = "0.8.0"

@@ -1,0 +1,11 @@
+[package]
+name = "AdventOfCode2018"
+version = "0.1.0"
+authors = ["Adam Kinnell <adamkinnell13@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+itertools = "0.8.0"
+criterion = "0.2.5"
+regex = "1.1.0"
+lazy_static = "1.2.0"

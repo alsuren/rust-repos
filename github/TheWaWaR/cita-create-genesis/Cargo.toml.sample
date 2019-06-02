@@ -1,0 +1,24 @@
+[package]
+name = "cita-create-genesis"
+version = "0.1.0"
+authors = ["Qian Linfeng <thewawar@gmail.com>"]
+
+[dependencies]
+sputnikvm = { version = "0.10" }
+sputnikvm-stateful = { version = "0.10" }
+sputnikvm-network-classic = { version = "0.10" }
+etcommon-bigint = "0.2"
+etcommon-trie = "0.3"
+etcommon-block = "0.3"
+etcommon-rlp = "0.2"
+sha3 = "0.6"
+rand = "0.3"
+ethabi = "5.1.1"
+clap = "2.32.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde_yaml = "0.7.5"
+lazy_static = "0.2"
+etcommon-hexutil = "0.2"
+rustc-hex = "2.0.0"

@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "lprun",
+    "lprun-bin"
+]
+
+[patch.crates-io]
+prettytable-rs = { git = "https://github.com/snsvrno/prettytable-rs", branch = "add_columns" }

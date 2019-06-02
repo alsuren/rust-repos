@@ -1,0 +1,24 @@
+[package]
+name = "highlighter"
+version = "0.1.0"
+authors = ["Makoto Onuki <makoto.onuki@gmail.com>"]
+
+[lib]
+name = "highlighter"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hl"
+path = "src/main.rs"
+
+[dependencies]
+regex = "*"
+pcre = { git = "https://github.com/omakoto/rust-pcre" }
+bitflags = "*"
+toml = "*"
+lazy_static = "*"
+fileinput = "*"
+clap = "2"
+
+log = "*"
+env_logger = "*"

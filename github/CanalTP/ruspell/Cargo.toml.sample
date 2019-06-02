@@ -1,0 +1,19 @@
+[package]
+authors = ["Navitia <navitia@kisio.org>"]
+description = "Spell-checker for transportation data."
+name = "ruspell"
+version = "0.1.0"
+[dependencies]
+csv = "1.0.0-beta.5"
+encoding = "0.2.33"
+error-chain = "0.11.0"
+regex = "1.0.0"
+serde = "1.0.44"
+serde_derive = "1.0.44"
+serde_yaml = "0.7.4"
+structopt = "0.2.8"
+unicode-normalization = "0.1.5"
+
+[dependencies.ispell]
+git = "https://github.com/lise-henry/rust-ispell"
+rev = "e7933097aba283d51f2d373c59a781e4ccca24eb"

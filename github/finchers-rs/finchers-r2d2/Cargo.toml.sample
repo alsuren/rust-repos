@@ -1,0 +1,43 @@
+[package]
+name = "finchers-r2d2"
+version = "0.1.3"
+authors = ["Yusuke Sasaki <yusuke.sasaki.nuem@gmail.com>"]
+description = """
+[DEPRECATED]
+Generic connection pooling support for Finchers, based on r2d2.
+"""
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/finchers-rs/finchers-r2d2.git"
+
+maintenance = { status = "deprecated" }
+
+include = [
+  "Cargo.toml",
+  "build.rs",
+  "src/**/*",
+  "tests/**/*",
+  "examples/**/*",
+  "benches/**/*",
+  "LICENSE-MIT",
+  "LICENSE-APACHE",
+]
+
+[package.metadata.docs.rs]
+# FIXME: remove it as soon as the rustc version used in docs.rs is updated
+rustdoc-args = ["--cfg", "finchers_inject_extern_prelude"]
+
+[dependencies]
+finchers = "0.12"
+
+futures = "0.1.24"
+log = "0.4.5"
+r2d2 = "0.8.2"
+tokio-executor = "0.1.5"
+tokio-threadpool = "0.1.7"
+
+[dev-dependencies]
+pretty_env_logger = "0.2.4"
+r2d2_sqlite = "0.6.0"
+rusqlite = "0.14.0"
+serde = { version = "1.0.79", features = ["derive"] }

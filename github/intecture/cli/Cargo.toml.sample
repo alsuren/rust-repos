@@ -1,0 +1,31 @@
+[package]
+
+name = "intecture-cli"
+version = "0.3.4"
+authors = [ "Peter Hayes <peter.hayes@betweenlines.co.uk>" ]
+license = "MPL-2.0"
+description = "CLI component for Intecture infrastructure. Intecture is the developer friendly, multi-lingual configuration management tool."
+keywords = ["intecture", "incli", "cli"]
+homepage = "https://intecture.io"
+repository = "https://github.com/intecture/cli"
+
+[dependencies]
+
+czmq = "0.1"
+docopt = "0.6"
+intecture-api = "0.3"
+rustc-serialize = "0.3"
+serde = "0.9"
+serde_json = "0.9"
+ssh2 = "0.3"
+time = "0.1"
+zdaemon = "0.0.2"
+
+[dev-dependencies]
+
+tempdir = "0.3"
+
+[[bin]]
+
+name = "incli"
+path = "src/main.rs"

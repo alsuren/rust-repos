@@ -1,0 +1,23 @@
+[package]
+name = "htwdresden"
+version = "0.3.4"
+authors = ["Kilian Koeltzsch <me@kilian.io>"]
+
+description = "Library for accessing organisational data from the University of Applied Sciences Dresden (HTW Dresden)."
+documentation = "https://docs.rs/htwdresden/"
+homepage = "https://github.com/kiliankoe/htwdresden-rs"
+repository = "https://github.com/kiliankoe/htwdresden-rs"
+
+readme = "README.md"
+keywords = ["university", "htw", "dresden"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "kiliankoe/htwdresden-rs" }
+
+[dependencies]
+reqwest = "0.3"
+serde = "0.8"
+serde_derive = "0.8"
+serde_json = "0.8"
+chrono = "0.3"

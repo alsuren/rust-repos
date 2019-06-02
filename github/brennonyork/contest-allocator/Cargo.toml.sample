@@ -1,0 +1,8 @@
+[package]
+name = "contest-allocator"
+version = "0.1.0"
+authors = ["Brennon York <brennon.york@gmail.com>"]
+
+[dependencies]
+clap = { version = "2.19", features = ["yaml"] }
+csv = { version = "0.14" }

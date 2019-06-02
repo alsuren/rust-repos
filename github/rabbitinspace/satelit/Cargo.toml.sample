@@ -1,0 +1,14 @@
+[package]
+name = "satelit"
+version = "0.1.0"
+authors = ["Igor Nikitin <rabbitinspace@icloud.com>"]
+edition = "2018"
+
+[workspace]
+members = [
+    ".",
+    "satelit-import",
+]
+
+[dependencies]
+satelit-import = { path = "./satelit-import" }

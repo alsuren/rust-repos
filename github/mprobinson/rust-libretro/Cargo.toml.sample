@@ -1,0 +1,8 @@
+[package]
+name = "rust-libretro"
+version = "0.0.1"
+authors = ["Mike Robinson <mikeprobinsonuk@gmail.com>"]
+
+[lib]
+name = "rust-libretro"
+crate-type = ["dylib"]

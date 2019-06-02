@@ -1,0 +1,20 @@
+[package]
+
+name = "rustrest"
+version = "0.0.1"
+authors = ["Glyn Normington <glyn.normington@gmail.com>"]
+
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[dependencies]
+hyper = "0.10.7"
+hyper-native-tls = "0.2.2"
+futures = "0.1.13"
+tokio-core = "0.1.6"
+pretty_env_logger = "0.1.0"

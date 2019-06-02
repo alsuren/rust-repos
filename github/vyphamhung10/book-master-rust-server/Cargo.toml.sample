@@ -1,0 +1,25 @@
+[package]
+authors = ["TatriX <tatrics@gmail.com>"]
+name = "book-master"
+version = "0.0.1"
+edition = "2018"
+
+[dependencies]
+dotenv = "0.13.0"
+rocket = "0.4.0"
+rocket_contrib = {version = "0.4.0", default-features = false, features = ["json"]}
+rocket_cors = { version = "0.4.0", default-features = false }
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+rust-crypto = "0.2.36"
+frank_jwt = "3.1.0"
+chrono = {version = "0.4", features = ["serde"]}
+diesel = {version = "1.4.1", features = ["postgres", "chrono", "r2d2"]}
+validator = "0.8.0"
+validator_derive = "0.8.0"
+slug = "0.1.2"
+rand = "0.6.3"
+
+[dev-dependencies]
+reqwest = "0.9.6"
+lazy_static = "1.2.0"

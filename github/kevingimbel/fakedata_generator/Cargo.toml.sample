@@ -1,0 +1,21 @@
+[package]
+name = "fakedata_generator"
+version = "0.2.2"
+authors = ["Kevin Gimbel <hallo@kevingimbel.com>"]
+edition = "2018"
+license = "MIT"
+description = "Generate fake data with various generators."
+repository = "https://github.com/kevingimbel/fakedata_generator"
+
+[dependencies]
+rand = "0.6.5"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "generator_benchmark"
+harness = false

@@ -1,0 +1,19 @@
+[package]
+name = "caduceus"
+version = "0.0.1"
+authors = ["Jihyeok Seo <me@limeburst.net>"]
+
+description = "Mercurial implementation in Rust"
+homepage = "https://github.com/limeburst/caduceus"
+repository = "https://github.com/limeburst/caduceus"
+readme = "README.md"
+license = "GPL-2.0"
+
+[[bin]]
+name = "cs"
+
+[dependencies]
+ascii = "0.6.0"
+byteorder = "0.4.2"
+rustc-serialize = "0.3.16"
+time = "0.1.34"

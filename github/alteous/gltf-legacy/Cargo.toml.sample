@@ -1,0 +1,29 @@
+[package]
+name = "gltf-legacy"
+version = "0.1.0"
+authors = ["alteous <alteous@outlook.com>"]
+description = "glTF 1.0 asset loader"
+documentation = "https://docs.rs/gltf-legacy"
+repository = "https://github.com/alteous/gltf-legacy"
+readme = "README.md"
+keywords = ["glTF", "3D", "asset", "model", "scene"]
+license = "MIT/Apache-2.0"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[features]
+default = []
+extras = []
+KHR_binary_glTF = []
+
+[[example]]
+name = "gltf-display"
+path = "examples/display/main.rs"
+

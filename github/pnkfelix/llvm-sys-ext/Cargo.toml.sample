@@ -1,0 +1,18 @@
+[package]
+name = "llvm-sys-ext"
+version = "0.1.0"
+authors = ["pnkfelix"]
+
+build = "build.rs"
+
+[build-dependencies]
+gcc = "0.3"
+
+[lib]
+name = "llvm_sys_ext"
+path = "src/lib.rs"
+
+[dependencies]
+semver = "*"
+libc = "*"
+llvm-sys = "*"

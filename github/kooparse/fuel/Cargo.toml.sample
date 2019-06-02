@@ -1,0 +1,24 @@
+[package]
+name = "fuel"
+version = "0.1.0"
+authors = ["Alexandre Chêne <kooparse@protonmail.com>"]
+
+[dependencies]
+gl = "0.6.0"
+glutin = "0.15.0"
+nalgebra = "0.14.0"
+fuel_types = { version = "*", path = "fuel_types" }
+fuel_render = { version = "*", path = "fuel_render" }
+fuel_camera = { version = "*", path = "fuel_camera" }
+fuel_core = { version = "*", path = "fuel_core" }
+fuel_importer = { version = "*", path = "fuel_importer" }
+fuel_window = { version = "*", path = "fuel_window" }
+gltf = "0.11.0"
+
+[[example]]
+name = "cube"
+path = "examples/cube/main.rs"
+
+[[example]]
+name = "light"
+path = "examples/light/main.rs"

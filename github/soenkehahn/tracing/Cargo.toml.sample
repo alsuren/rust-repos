@@ -1,0 +1,16 @@
+[package]
+name = "tracing"
+version = "0.1.0"
+authors = ["Sönke Hahn <soenkehahn@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+indextree = "1.0.1"
+libc = "0.2.21"
+log = "0.3.6"
+nix = "0.8.1"
+spawn-ptrace = "0.1"
+tempfile = "*"
+
+[features]
+ci = []

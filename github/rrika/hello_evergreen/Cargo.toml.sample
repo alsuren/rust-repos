@@ -1,0 +1,30 @@
+[package]
+name = "hello_evergreen"
+version = "0.1.0"
+authors = []
+
+[dependencies]
+getopts = "0.2"
+libc = "*"
+num = "*"
+num-derive = "*"
+nix = "*"
+
+[dependencies.image]
+version = "*"
+features = ["png_codec"]
+
+[dependencies.xcb]
+version = "*"
+features = ["dri3"]
+
+[dependencies.wayland-client]
+version = "*"
+default-features = false # opt out of wayland-egl dependency
+features = ["cursor"]
+# path = "../wayland-client-rs/wayland-client/"
+
+[dependencies.wayland-protocols]
+version = "*"
+features = ["unstable_protocols", "client"]
+# path = "../wayland-client-rs/wayland-protocols/"

@@ -1,0 +1,127 @@
+[package]
+name = "nebulet"
+version = "0.1.0"
+authors = ["Lachlan Sneff <lachlan.sneff@gmail.com>"]
+
+[package.metadata.bootimage]
+default-target = "x86_64-nebulet.json"
+output = "bootimage.bin"
+run-command = [
+    "qemu-system-x86_64",
+    "-machine", "q35,accel=kvm:xen:hax:tcg",
+    "-drive", "format=raw,file={}"
+]
+package-file = "initfs.tar"
+
+[package.metadata.cargo-xbuild]
+memcpy = true
+
+[package.metadata.bootimage.bootloader]
+name = "bootloader"
+target = "x86_64-bootloader.json"
+
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = 3
+
+[profile.dev]
+debug-assertions = true
+panic = "abort"
+opt-level = 3
+
+[workspace]
+members = [
+    "tools",
+    "lib/nebulet-derive",
+]
+exclude = [
+    "target/x86_64-nebulet/release/bootloader",
+    "target/x86_64-nebulet/debug/bootloader",
+    "userspace",
+]
+
+[features]
+default = ["vga", "serial"]
+vga = [] # log to vga
+serial = [] # log to serial
+
+# Sources that may be trusted for providing entropy
+# None of them are trusted by default
+# The first working, trusted source will be used to seed,
+# and periodically reseed, a CPRNG.
+# http://blog.cr.yp.to/20140205-entropy.html
+virtio_entropy = []
+rdseed_entropy = []
+jitter_entropy = []
+rdrand_entropy = []
+
+[dependencies]
+# the actual bootloader
+bootloader = { git = "https://github.com/lachlansneff/bootloader", branch = "bootinfo" }
+# regular dependencies
+spin = "0.4.9"
+bitflags = "1.0"
+bit_field = "0.9.0"
+hashmap_core = "0.1.8"
+acpi = { git = "https://github.com/rust-osdev/acpi" }
+
+# lib/
+[dependencies.nebulet-derive]
+path = "lib/nebulet-derive"
+
+[dependencies.lazy_static]
+version = "1.0.0"
+features = ["spin_no_std"]
+
+[dependencies.rand_core]
+version = "0.2"
+default-features = false
+
+[dependencies.rand]
+version = "0.5"
+default-features = false
+
+[dependencies.raw-cpuid]
+version = "3.1.0"
+features = ["nightly"]
+
+[dependencies.nebulet_abi]
+git = "https://github.com/nebulet/abi"
+
+# Cranelift compiler
+[dependencies.target-lexicon]
+version = "0.0.3"
+default-features = false
+
+[dependencies.cranelift-codegen]
+version = "0.18.1"
+default-features = false
+features = ["core"]
+
+[dependencies.cranelift-frontend]
+version = "0.18.1"
+default-features = false
+features = ["core"]
+
+[dependencies.cranelift-wasm]
+version = "0.18.1"
+default-features = false
+features = ["core"]
+
+[dependencies.cranelift-native]
+version = "0.18.1"
+default-features = false
+features = ["core"]
+
+[dependencies.wasmparser]
+version = "0.17.2"
+default_features = false
+features = ["core"]
+
+# [replace]
+# "hashmap_core:0.1.8" = { git = "https://github.com/lachlansneff/hashmap_core" }
+# "cranelift-codegen:0.13.0" = { git = "https://github.com/nebulet/cranelift", branch = "broken-no_std"}
+# "cranelift-native:0.13.0" = { git = "https://github.com/nebulet/cranelift", branch = "broken-no_std" }
+# "raw-cpuid:4.0.0" = { path = "../rust-cpuid" }
+# "hashmap_core:0.1.7" = { path = "../hashmap_core" }

@@ -1,0 +1,18 @@
+[package]
+name = "rbspy-testdata"
+version = "0.1.2"
+authors = ["Kamal Marhubi <kamal@marhubi.com>"]
+description = "Test data for rbspy"
+license = "MIT"
+repository = "https://github.com/rbspy/rbspy-testdata"
+homepage = "https://github.com/rbspy/rbspy-testdata"
+readme = "README.md"
+
+
+[dependencies]
+byteorder = "0.5"
+elf = "0.0.10"
+failure = "0.1.1"
+flate2 = "0.2.14"
+libc = "0.2.15"
+read-process-memory = "0.1.0"

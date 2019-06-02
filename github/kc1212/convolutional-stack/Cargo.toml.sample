@@ -1,0 +1,12 @@
+[package]
+name = "convolutional-stack"
+version = "0.1.0"
+authors = ["kc1212 <kc1212@users.noreply.github.com>"]
+
+[dependencies]
+rand = "0.3"
+cairo-rs = "0.1"
+
+[dependencies.gtk]
+version = "0.1"
+features = ["v3_16"]

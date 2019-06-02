@@ -1,0 +1,47 @@
+[package]
+name = "rust_keylock"
+version = "0.9.0"
+authors = ["aston <astonbitecode@gmail.com>"]
+description = "A password manager with goals to be Secure, Simple to use, Portable and Extensible"
+keywords = ["password", "manager", "safe", "encryption", "key"]
+license = "GPL-3.0"
+documentation = "https://rust-keylock.github.io/rust-keylock-lib/rust_keylock/"
+repository = "https://github.com/rust-keylock/rust-keylock-lib"
+homepage = "https://rust-keylock.github.io/"
+readme = "README.md"
+categories = ["cryptography", "authentication"]
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "rust-keylock/rust-keylock-lib", branch = "master" }
+
+[lib]
+name = "rust_keylock"
+crate-type = ["rlib", "dylib"]
+
+[dependencies]
+ctr = "0.3"
+aes-ctr = "0.3"
+sha2 = "0.8"
+sha3 = "0.8"
+hkdf = "0.7"
+stream-cipher = "0.3"
+bcrypt = {git = "https://github.com/astonbitecode/rust-bcrypt.git"}
+toml = "0.4"
+base64 = "0.10"
+rand = "0.6"
+log = "0.4"
+secstr = "0.3"
+hyper = "0.12"
+http = "0.1"
+futures = "0.1"
+hyper-tls = "0.3"
+native-tls = "0.2"
+xml-rs = "0.8"
+openssl-probe = "0.1"
+clipboard = "0.5"
+dirs = "1.0"
+tokio = "0.1"
+
+[dev-dependencies]
+lazy_static = "1.2"

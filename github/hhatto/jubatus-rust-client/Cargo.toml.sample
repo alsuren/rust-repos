@@ -1,0 +1,22 @@
+[package]
+authors = ["hhatto <hhatto.jp@gmail.com>"]
+description = "jubatus client"
+documentation = "http://hhatto.github.io/jubatus-rust-client/jubatus/"
+keywords = ["jubatus"]
+license = "MIT"
+name = "jubatus"
+repository = "https://github.com/hhatto/jubatus-rust-client"
+version = "0.1.0"
+
+[dependencies]
+rmp = "^0.8"
+rmp-serde = "0.13"
+rmpv = "0.4"
+
+[dev-dependencies]
+rand = "0.3"
+
+[dependencies.msgpack-rpc]
+git = "https://github.com/hhatto/msgpack-rpc-rust.git"
+branch = "master"
+optional = false

@@ -1,0 +1,15 @@
+[package]
+name = "rgui"
+version = "0.1.0"
+authors = ["Luminiscental <luminiscental01@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+vulkano = { git = "https://github.com/vulkano-rs/vulkano" }
+vulkano-win = { git = "https://github.com/vulkano-rs/vulkano" }
+vulkano-shaders = { git = "https://github.com/vulkano-rs/vulkano" }
+winit = "0.19"
+log = "0.4"
+env_logger = "0.6"
+cgmath = "0.17"
+

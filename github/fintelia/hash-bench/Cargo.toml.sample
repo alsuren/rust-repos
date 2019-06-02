@@ -1,0 +1,9 @@
+[package]
+name = "hash-bench"
+version = "0.1.0"
+authors = ["Jonathan Behrens <fintelia@gmail.com>"]
+
+[dependencies]
+rand = "0.4.2"
+rahashmap = { git = "https://github.com/fintelia/rahashmap", branch = "no-reorder", rev = "69fd2e503dc931821117143a5961952b45d02e1a" }
+fnv = "1.0.6"

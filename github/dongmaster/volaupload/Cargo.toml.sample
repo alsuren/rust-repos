@@ -1,0 +1,15 @@
+[package]
+
+name = "volaupload"
+version = "0.0.1"
+authors = ["Dongmaster <dongmaster@users.noreply.github.com>"]
+
+[dependencies]
+getopts = "*"
+rustc-serialize = "*"
+regex = "0.1.8"
+
+[dependencies.curl]
+
+git = "https://github.com/carllerche/curl-rust.git"
+

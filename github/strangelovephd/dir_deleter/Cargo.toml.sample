@@ -1,0 +1,8 @@
+[package]
+name = "dir_deleter"
+version = "0.1.0"
+authors = ["sisyphus"]
+edition = "2018"
+
+[dependencies]
+dir_deleter = { path = "." }

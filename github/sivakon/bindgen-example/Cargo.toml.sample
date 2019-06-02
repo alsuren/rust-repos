@@ -1,0 +1,8 @@
+[package]
+name = "bzip"
+version = "0.1.0"
+authors = ["Sivaram Konanki <sivaram.konanki@p45535.intra.rakuten.co.jp>"]
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.26.3"

@@ -1,0 +1,8 @@
+[package]
+name = "test-term-coloring"
+version = "0.1.0"
+authors = ["kennytm <kennytm@gmail.com>"]
+
+[dependencies]
+fnv = "1"
+rayon = "0.9"

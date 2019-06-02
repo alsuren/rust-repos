@@ -1,0 +1,18 @@
+[package]
+name = "salesforce-api"
+version = "0.2.0"
+authors = ["Daniel Stokes <dstokes@localhost>"]
+
+[dependencies]
+rand = "0.5.5"
+reqwest = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+hyper = "*"
+dotenv = "0.13.0"
+regex = "1.1.6"
+
+[lib]
+name = "test"
+path = "src/lib.rs"

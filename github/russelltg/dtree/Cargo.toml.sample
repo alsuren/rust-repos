@@ -1,0 +1,19 @@
+[package]
+name = "dtree"
+description = "Dialog tree file format + parser + executor"
+version = "0.1.0"
+authors = ["Russell Greene <russellgreene8@gmail.com>"]
+license-file = "LICENSE"
+repository = "https://github.com/russelltg/dtree"
+edition = "2018"
+
+[dependencies]
+nom = "4"
+
+[lib]
+name = "dtree"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dtree"
+path = "src/bin.rs"

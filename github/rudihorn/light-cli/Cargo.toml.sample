@@ -1,0 +1,25 @@
+[package]
+name = "light-cli"
+version = "0.1.0"
+authors = ["Rudi Horn <dyn-git@rudi-horn.de>"]
+keywords = ["embedded-hal-crate", "cli", "serial", "terminal"]
+categories = ["embedded", "no-std"]
+description = "simple heapless command line interface parser for embedded devices"
+repository = "https://github.com/rudihorn/light-cli"
+documentation = "https://rudihorn.github.io/light-cli/light_cli/index.html"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+nb = "0.1.1"
+embedded-hal = "0.2.2"
+heapless = "0.4.2"
+
+[target."thumbv7m-none-eabi".dev-dependencies]
+cortex-m = "0.5.8"
+cortex-m-rt = "0.6.7"
+  panic-abort = "0.3.1"
+stm32f1xx-hal = { version = "0.2.1", features = ["stm32f103"] }
+
+[features]
+doc = []

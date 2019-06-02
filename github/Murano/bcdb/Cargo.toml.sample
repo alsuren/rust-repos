@@ -1,0 +1,21 @@
+[package]
+name = "bcdb"
+version = "0.1.0"
+authors = ["murano <murano1980@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "mdbx"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dependencies]
+libc = "0.2.33"
+
+[build-dependencies]
+bindgen = "0.26.3"
+pkg-config = "0.3"
+cmake = "0.1.29"

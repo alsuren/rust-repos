@@ -1,0 +1,13 @@
+[package]
+name = "dibs"
+version = "0.1.0"
+authors = ["Michael Woerister <michaelwoerister@posteo>"]
+
+[dependencies]
+byteorder = "1"
+metrohash = "1"
+bitflags = "1"
+parking_lot = "0.6"
+
+[dev-dependencies]
+rand = "0.5"

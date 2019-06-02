@@ -1,0 +1,28 @@
+[package]
+name = "storm"
+version = "0.2.0"
+authors = ["Geoff Clements <ro2kz0@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+log = "0.4"
+fern = "0.5"
+tokio-core = "0.1"
+tokio-timer = "0.2"
+tokio-codec = "0.1"
+tokio-io = "0.1"
+tokio-tcp = "0.1"
+tokio-signal = "0.2"
+futures = "0.1"
+bytes = "0.4"
+actix = "0.7"
+rand = "0.5"
+mac_address = "0.8"
+gstreamer = "0.11"
+thread-control = "0.1"
+
+[dependencies.clap]
+version = "2.32"
+default-features = false
+features = ["wrap_help"]

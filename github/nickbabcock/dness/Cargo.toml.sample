@@ -1,0 +1,57 @@
+[package]
+name = "dness"
+version = "0.1.2-pre"
+authors = ["Nick Babcock <nbabcock19@hotmail.com>"]
+description = "a dynamic dns client"
+homepage = "https://github.com/nickbabcock/dness"
+repository = "https://github.com/nickbabcock/dness"
+publish = false
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+trust-dns-resolver = "0.11"
+reqwest = "0.9"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+toml = "0.5"
+structopt = "0.2.16"
+failure = "0.1.3"
+chrono = "0.4"
+
+[dependencies.log]
+version = "0.4"
+features = ["serde"]
+
+# Disable logging timestamp info (ie: the humantime feature) as mechanisms like
+# systemd / journald will show the timestamp that received the log line at.
+# Ideally, log formatting should be configurable, but this is a good first step
+[dependencies.env_logger]
+version = "0.6"
+default-features = false
+features = ["termcolor", "atty", "regex"]
+
+[dev-dependencies.actix-web]
+version = "0.7"
+default-features = false
+
+[package.metadata.deb]
+extended-description = """dness is a command line dynamic dns client"""
+depends = "libssl1.1"
+section = "utility"
+priority = "optional"
+provides = "dness"
+conflicts = "dness-musl"
+assets = [
+    ["target/release/dness", "usr/bin/dness", "755"],
+    ["assets/bare-config.toml", "etc/dness/dness.conf", "600"],
+    ["assets/dness.service", "etc/systemd/system/dness.service", "644"],
+    ["assets/dness.timer", "etc/systemd/system/dness.timer", "644"]
+]
+conf-files = ["etc/dness/dness.conf"]
+
+[package.metadata.deb.variants.musl]
+depends = ""
+conflicts = "dness"

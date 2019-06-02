@@ -1,0 +1,51 @@
+[package]
+name = "rustful"
+version = "0.4.0"
+authors = ["Erik Hedvall <hello@erikhedvall.nu>"]
+exclude = ["scripts/*", "examples/*", ".travis.yml", "appveyor.yml", ".gitignore"]
+description = "A light HTTP framework, with some REST-like features and the ambition of being simple, modular and non-intrusive."
+documentation = "http://ogeon.github.io/docs/rustful/master/rustful/index.html"
+repository = "https://github.com/Ogeon/rustful"
+readme = "README.md"
+keywords = ["web", "rest", "framework", "http", "routing"]
+license = "MIT"
+build = "build/main.rs"
+
+[lib]
+name = "rustful"
+path = "src/lib.rs"
+
+[features]
+default = ["rustc_json_body", "ssl", "multipart"]
+rustc_json_body = ["rustc-serialize"]
+ssl = ["hyper/ssl"]
+
+benchmark = []
+strict = []
+
+[dependencies]
+time = "0.1"
+url = "0.2"
+anymap = "0.11"
+phf = "0.7"
+
+[dependencies.hyper]
+version = "0.6"
+default-features = false
+
+[dependencies.multipart]
+version = "0.3"
+default-features = false
+features = ["server"]
+optional = true
+
+[dependencies.rustc-serialize]
+version = "0.3"
+optional = true
+
+[dev-dependencies]
+unicase = "1.0"
+tempdir = "0.3"
+
+[build-dependencies]
+phf_codegen = "0.7"

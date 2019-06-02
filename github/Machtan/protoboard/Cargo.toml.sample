@@ -1,0 +1,20 @@
+[package]
+name = "protoboard"
+version = "0.1.0"
+authors = ["Machtan <jako3047@gmail.com>"]
+
+[dependencies]
+env_logger = "0.3"
+log = "0.3"
+lru_time_cache = "0.4"
+rand = "0.3"
+serde = "0.7"
+serde_json = "0.7"
+toml = { version = "0.1", features = ["serde"], default_features = false }
+
+glorious = { git = "https://github.com/Machtan/glorious" }
+sdl2 = "0.19"
+sdl2_image = "0.19"
+sdl2_ttf = "0.19"
+
+spec = { path = "spec" }

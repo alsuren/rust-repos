@@ -1,0 +1,12 @@
+[package]
+name = "guessing"
+version = "0.1.0"
+authors = ["goby<goby@foxmail.com>"]
+
+[dependencies]
+rand="0.3.0"
+mio="0.6.0"
+
+#[lib]
+#name = "embed"
+#crate-type = ["dylib"]

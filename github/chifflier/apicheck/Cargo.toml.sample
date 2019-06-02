@@ -1,0 +1,20 @@
+[package]
+name = "apicheck"
+version = "0.1.0"
+license = "MIT/Apache-2.0"
+authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
+
+[workspace]
+members = [
+	"libapicheck",
+	"apicheck_plugin",
+	"apidiff",
+]
+
+[dependencies]
+libapicheck = {path="libapicheck"}
+getopts = "0.2"
+
+[dev-dependencies]
+json = "0.11"
+pretty_assertions = "0.5.0"

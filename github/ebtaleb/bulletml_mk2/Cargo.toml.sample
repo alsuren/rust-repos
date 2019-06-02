@@ -1,0 +1,19 @@
+[package]
+name = "bulletml-rsgame"
+version = "0.1.0"
+authors = ["jmbto <kagekyio@gmail.com>"]
+
+[dependencies]
+xml-rs = "*"
+log = "*"
+env_logger = "*"
+typed-arena = "*"
+
+[dependencies.bml]
+path = "src/bml"
+[dependencies.arena-tree]
+path = "src/arena-tree"
+
+[[bin]]
+name = "papars"
+path = "src/xmlparse.rs"

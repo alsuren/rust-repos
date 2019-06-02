@@ -1,0 +1,11 @@
+[package]
+name = "rusty"
+version = "0.1.0"
+authors = ["Jon Catanio <joncatanio@gmail.com>"]
+
+[dependencies]
+slack = "0.19.*"
+slack_api = "0.18.*"
+regex = "*"
+mysql = "12.0.*"
+lazy_static = "0.2.9"

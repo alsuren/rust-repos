@@ -1,0 +1,9 @@
+[package]
+name = "falling_sand"
+version = "0.1.0"
+authors = ["anmej"]
+
+[dependencies]
+rand = "0.3"
+image = "0.13"
+piston_window = "0.66"

@@ -1,0 +1,8 @@
+[package]
+name = "swagger-split-merge-cli"
+version = "0.1.0"
+authors = ["Ivan Fraixedes <ivan@fraixed.es>"]
+
+[dependencies]
+yaml-rust = "~0.3.5"
+clap = "~2.26.2"

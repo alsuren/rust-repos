@@ -1,0 +1,11 @@
+[package]
+name = "synacor-challenge"
+version = "0.1.0"
+authors = ["tatref <tatref@github.com>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1"
+regex = "1"
+rustyline = "2.1"
+clap = "2"

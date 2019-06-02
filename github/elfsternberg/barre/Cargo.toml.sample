@@ -1,0 +1,25 @@
+[package]
+name = "barre"
+version = "0.1.0"
+authors = ["Elf M. Sternberg <elf.sternberg@gmail.com>"]
+description = "An implementation of Matt Might's Parsing With Derivatives."
+# edition = "2018"
+
+[features]
+default = []
+render_trees = []
+
+[dependencies]
+hashbrown = "0.1.7"
+
+[dev-dependencies]
+rand = "0.5.5"
+criterion = "0.2.5"
+
+[[test]]
+name = "test"
+path = "test/mod.rs"
+
+[[bench]]
+name = "bench_barre"
+harness = false

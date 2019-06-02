@@ -1,0 +1,10 @@
+[package]
+name = "arctor"
+version = "0.1.0"
+authors = ["Josh Burgess <jburgess@whiteoctober.co.uk>"]
+
+[dependencies]
+clap = "2.26.0"
+flate2 = "1.0"
+tar = "0.4"
+zip = "0.4"

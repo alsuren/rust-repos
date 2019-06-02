@@ -1,0 +1,21 @@
+[package]
+name = "zillions"
+version = "0.1.0"
+authors = ["David Renshaw <david@sandstorm.io>"]
+
+[dependencies]
+byteorder = "0.5.3"
+clap = "2.14"
+futures = "0.1.6"
+futures-cpupool = "0.1"
+rand = "0.3"
+tokio-io = "0.1"
+tokio-core = "0.1"
+
+[[bin]]
+name="commandline-client"
+path="src/commandline-client.rs"
+
+[[bin]]
+name="stresstest"
+path="src/stresstest.rs"

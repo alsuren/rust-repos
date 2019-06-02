@@ -1,0 +1,18 @@
+[package]
+name = "algorithms"
+version = "0.0.3"
+authors = ["Alex-Diez <alexvic.amatory@gmail.com>"]
+
+[lib]
+name = "algorithms"
+
+[[test]]
+name = "test"
+path = "test/lib.rs"
+
+[dependencies]
+clippy = "0.0.51"
+expectest = "0.4.1"
+stainless = "0.1.4"
+rand = "0.3.14"
+fnv = "1.0.2"

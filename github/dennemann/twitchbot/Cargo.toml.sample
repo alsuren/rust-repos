@@ -1,0 +1,8 @@
+[package]
+name = "twitchbot"
+version = "0.1.0"
+authors = ["dennemann"]
+edition = "2018"
+
+[dependencies]
+irc = "0.13.5"

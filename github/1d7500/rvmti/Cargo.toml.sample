@@ -1,0 +1,15 @@
+[package]
+name = "rvmti"
+version = "0.1.0"
+authors = ["Lv9"]
+
+[lib]
+crate_type = [ "cdylib", "dylib", "rlib" ]
+
+[dependencies]
+libc = "0.2.*"
+time = "0.1.*"
+lazy_static = "0.2.*"
+toml = "0.3.*"
+serde = "0.9.*"
+serde_derive = "0.9.*"

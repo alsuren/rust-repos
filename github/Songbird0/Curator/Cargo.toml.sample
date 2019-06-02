@@ -1,0 +1,29 @@
+[package]
+name = "curator"
+version = "1.0.1"
+authors = ["Anthony Defranceschi <chaacygg@gmail.com>"]
+
+[dependencies]
+
+rand = "0.3"
+clap = "2.16"
+
+[lib]
+
+name = "c_curator"
+
+path = "src/lib.rs"
+
+test = true
+
+doctest = true
+
+bench = true
+
+doc = true
+
+plugin = false
+
+proc-macro = false
+
+harness = true

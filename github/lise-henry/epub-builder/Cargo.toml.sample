@@ -1,0 +1,29 @@
+[package]
+name = "epub-builder"
+version = "0.4.3"
+authors = ["Elisabeth Henry <liz.henry@ouvaton.org>"]
+description = "A Rust library for generating EPUB files"
+readme = "README.md"
+keywords = ["epub"]
+repository = "https://github.com/lise-henry/epub-builder/"
+documentation = "https://docs.rs/epub-builder"
+license = "MPL-2.0"
+
+[lib]
+name = "epub_builder"
+path = "src/lib.rs"
+
+[features]
+default = ["zip-command", "zip-library"]
+zip-command = ["tempdir"]
+zip-library = ["zip"]
+
+[dependencies]
+error-chain = "0.12"
+mustache = "0.9"
+lazy_static = "1"
+chrono = "0.4"
+uuid = { version = "0.7", features = ["v4"] }
+tempdir = { version = "0.3", optional = true } 
+zip = { version = "0.5", optional = true } 
+regex = "1"

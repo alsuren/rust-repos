@@ -1,0 +1,17 @@
+[package]
+name = "sdf-play"
+version = "0.1.0"
+authors = ["Srinivas Kaza <srinivas@kaza.io>"]
+
+[dependencies]
+notify = "4.0.0"
+nalgebra-glm = "0.1"
+glium = "0.22.0"
+find_folder = "0.3.0"
+tui = "0.4.0"
+termion = "1.5.1"
+chrono = "0.4.6"
+hdf5-rs = { git="https://github.com/aldanor/hdf5-rs.git" }
+hdf5-types = { git="https://github.com/aldanor/hdf5-rs.git" }
+ndarray = "0.12.1"
+

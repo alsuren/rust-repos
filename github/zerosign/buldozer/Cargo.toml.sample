@@ -1,0 +1,15 @@
+[package]
+name = "buldozer"
+version = "0.1.0"
+authors = ["zerosign <r1nlx0@gmail.com>"]
+
+[dependencies]
+s3 = "*"
+image = "*"
+mio = "*"
+toml = "*"
+
+[profile.bench]
+opt-level = 3
+debug = false
+lto = false

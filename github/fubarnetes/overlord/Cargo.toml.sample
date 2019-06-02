@@ -1,0 +1,15 @@
+[package]
+name = "overlord"
+version = "0.1.0"
+authors = ["Fabian Freyer <fabian.freyer@physik.tu-berlin.de>"]
+
+[dependencies]
+log = "0.3"
+
+[dev-dependencies]
+pretty_env_logger = "*"
+
+[badges]
+travis-ci = { repository = "fubarnetes/overlord", branch = "master" }
+codecov = { repository = "fubarnetes/overlord", branch = "master", service = "github" }
+

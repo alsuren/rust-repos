@@ -1,0 +1,14 @@
+[package]
+name = "ripple"
+version = "0.1.0"
+authors = ["Robbie Straw <drbawb@fatalsyntax.com>"]
+
+[dependencies]
+
+[target.'cfg(unix)'.dependencies]
+rustbox = "*"
+
+[target.'cfg(windows)'.dependencies]
+kernel32-sys = "*"
+winapi = "*"
+wio = "*"

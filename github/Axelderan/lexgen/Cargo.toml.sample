@@ -1,0 +1,12 @@
+[package]
+name = "rejeks"
+version = "0.1.0"
+authors = ["Alexander Nye <alexnye@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

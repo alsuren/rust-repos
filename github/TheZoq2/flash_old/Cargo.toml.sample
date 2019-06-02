@@ -1,0 +1,11 @@
+[package]
+name = "flash"
+version = "0.1.0"
+authors = ["Frans Skarman <frans.skarman@gmail.com>"]
+
+[dependencies]
+glob = "*"
+
+[dependencies.gtk]
+version = "0.1.0"
+features = ["v3_10"]

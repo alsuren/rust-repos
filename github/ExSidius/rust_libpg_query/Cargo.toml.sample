@@ -1,0 +1,14 @@
+[package]
+name = "pg-query"
+version = "0.1.0"
+authors = ["ex"]
+edition = "2018"
+build = "build.rs"
+links = "libpg_query"
+
+[dependencies]
+libc = "0.2.0"
+
+[features]
+static = []
+dynamic = []

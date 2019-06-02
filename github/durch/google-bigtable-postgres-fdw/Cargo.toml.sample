@@ -1,0 +1,24 @@
+[package]
+name = "bigtable"
+version = "0.1.0"
+authors = ["Drazen Urch <github@drazenur.ch>"]
+build = "build.rs"
+
+[lib]
+name = "bigtable"
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "*"
+bigtable = "0.3"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+protobuf = "1.0.24"
+rustc-serialize = "0.3.22"
+goauth = "0.2.12"
+error-chain = "0.10.0"
+
+[build-dependencies]
+gcc = "*"
+bindgen = "0.20.0"

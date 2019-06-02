@@ -1,0 +1,18 @@
+[package]
+authors = ["Alexandr Shalugin <shalugin.alexandr@gmail.com>"]
+name = "rust-experiment"
+version = "0.1.0"
+
+[dependencies]
+file = "1.1.1"
+rand = "0.3.15"
+rocket = "0.2.7"
+rocket_codegen = "0.2.7"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["json"]
+version = "0.2.7"

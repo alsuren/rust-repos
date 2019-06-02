@@ -1,0 +1,8 @@
+[package]
+name = "bad-jvm-class-files"
+version = "0.1.0"
+authors = ["Christopher Wells <cwellsny@nycap.rr.com>"]
+edition = "2018"
+
+[dependencies]
+jvm-class-file-parser = { path = "../jvm-class-file-parser" }

@@ -1,0 +1,17 @@
+[package]
+name = "des"
+description = "Parallel Data Encryption Standard (DES) implementation"
+version = "0.0.5-pre"
+authors = ["Antoni Boucher <bouanto@zoho.com>"]
+license = "MIT"
+repository = "https://github.com/antoyo/des-rs"
+documentation = "https://antoyo.github.io/des-rs/des/"
+
+[dependencies]
+rayon = "=0.4.2"
+
+[features]
+nightly = []
+
+[package.metadata.release]
+upload-doc = true

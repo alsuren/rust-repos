@@ -1,0 +1,11 @@
+[package]
+name = "baby_nn"
+version = "0.1.0"
+authors = ["Andreas Pfeil"]
+
+[dependencies]
+rulinalg = "0.4.2"
+rand = "0.5.0"
+
+[dev-dependencies]
+csv = "1.0.0"

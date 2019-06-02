@@ -1,0 +1,21 @@
+[package]
+name = "kytan"
+version = "0.0.1"
+authors = ["Chang Lan <clan@eecs.berkeley.edu>"]
+edition = "2018"
+
+[dependencies]
+libc = "*"
+mio = "*"
+serde = "*"
+serde_derive = "*"
+bincode = "*"
+log = "*"
+env_logger = "*"
+dns-lookup = "*"
+snap = "*"
+rand = "*"
+transient-hashmap = "*"
+ring = "*"
+clap = "2.33.0"
+

@@ -1,0 +1,32 @@
+[package]
+name = "libpandemonium"
+version = "0.0.1"
+authors = ["Andrey Cherkashin <with.out@me.com>"]
+
+[lib]
+name = "pandemonium"
+crate-type = ["rlib"]
+
+
+[dependencies]
+time      = "0.1"
+libc      = "0.2"
+errno     = "*"
+libjail-sys = { path = "libjail-sys" }
+
+[dependencies.flat_map]
+git = "https://github.com/toffaletti/flat_map"
+
+[features]
+default = ["sysinfo", "jail"]
+sysinfo = []
+zfs = []
+jail = []
+
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false

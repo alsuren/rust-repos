@@ -1,0 +1,24 @@
+[workspace]
+members = [
+  "agent/client",
+  "agent/discovery",
+  "common/agent/models",
+  "common/logging",
+  "common/util/failure",
+  "common/util/iron",
+  "common/util/rndid",
+  "common/util/tracing",
+  "coordinator",
+  "data/aggregator",
+  "data/fetcher",
+  "data/models",
+  "data/store",
+  "replicante",
+  "replictl",
+  "streams/events",
+  "tasks",
+]
+
+# This patch is needed to make openssl (needed by kafka) work with openssl 1.0+
+[patch.crates-io]
+kafka = { git = 'https://github.com/l4l/kafka-rust', branch = 'update/openssl' }

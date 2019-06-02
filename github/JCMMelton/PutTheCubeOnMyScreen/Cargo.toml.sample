@@ -1,0 +1,29 @@
+[package]
+name = "put_the_cube_on_my_screen"
+version = "0.0.3"
+authors = ["Joseph Melton <jcmmelton@gmail.com>"]
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "alt"
+path = "src/alt.rs"
+
+[[bin]]
+name = "cube_world"
+path = "src/cube_world.rs"
+
+[dependencies]
+glium = "*"
+pistoncore-glutin_window = "*"
+shader_version = "*"
+glutin = "*"
+gl = "*"
+nalgebra = "0.16"
+nalgebra-glm = "0.1"
+ncollide3d = "0.17"
+nphysics3d = "0.9"
+rayon = "1.0.2"
+noise = "*"

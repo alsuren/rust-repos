@@ -1,0 +1,37 @@
+[package]
+name = "adventofcode2016"
+version = "0.1.0"
+authors = ["ludwig@lud.cc"]
+
+[dependencies]
+rust-crypto = "0.2.36"
+
+[[bin]]
+name = "day1"
+
+[[bin]]
+name = "day2"
+
+[[bin]]
+name = "day3"
+
+[[bin]]
+name = "day4"
+
+[[bin]]
+name = "day5"
+
+[[bin]]
+name = "day6"
+
+[[bin]]
+name = "day7"
+
+[[bin]]
+name = "day8"
+
+[[bin]]
+name = "day9"
+
+[[bin]]
+name = "day10"

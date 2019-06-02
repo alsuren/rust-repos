@@ -1,0 +1,18 @@
+[package]
+name = "pi_base"
+version = "0.1.0"
+authors = ["zuon <dev@dev.com>"]
+
+[dependencies]
+fnv = "*"
+time = "*"
+rand = "*"
+lz4 = "*"
+libc = "*"
+npnc = "*"
+notify = "*"
+futures = "0.1.23"
+threadpool = "*"
+lazy_static = "*"
+
+pi_lib = { path = "../pi_lib" }

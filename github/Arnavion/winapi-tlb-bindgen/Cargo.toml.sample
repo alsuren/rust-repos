@@ -1,0 +1,8 @@
+[package]
+name = "winapi-tlb-bindgen"
+version = "0.1.0"
+authors = ["Arnavion <arnavion@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+winapi = { version = "0.3.x", features = ["objbase", "oleauto", "winerror"] }

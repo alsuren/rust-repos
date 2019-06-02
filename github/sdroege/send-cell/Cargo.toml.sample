@@ -1,0 +1,21 @@
+[package]
+name = "send-cell"
+version = "0.1.4"
+authors = ["Sebastian Dröge <sebastian@centricular.com>"]
+description = "Immutable memory region with runtime Send checking"
+repository = "https://github.com/sdroege/send-cell"
+license = "MIT"
+categories = ["concurrency"]
+readme = "README.md"
+include = [
+    "src/lib.rs",
+    "Cargo.toml",
+    "LICENSE",
+    "README.md",
+]
+
+[dependencies]
+fragile = "0.2"
+
+[badges]
+travis-ci = { repository = "sdroege/send-cell", branch = "master" }

@@ -1,0 +1,9 @@
+[package]
+
+name = "renderer"
+version = "0.0.1"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0"
+glob = "0"

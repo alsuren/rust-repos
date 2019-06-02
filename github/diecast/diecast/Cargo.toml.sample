@@ -1,0 +1,47 @@
+# http://crates.io/manifest.html
+
+[package]
+name = "diecast"
+version = "0.0.1"
+authors = ["Jorge Israel Peña <jorge.israel.p@gmail.com>"]
+
+[profile.dev]
+# rpath = true
+# opt-level = 3
+# debug = false
+# lto = false
+# debug-assertions = false
+
+[dependencies]
+clippy = {version = "*", optional = true}
+
+serde = "1.0.41"
+serde_derive = "1.0.41"
+
+glob = "*"
+regex = "*"
+log = "*"
+docopt = "*"
+walkdir = "*"
+
+time = "*"
+
+# for Diecast.toml
+toml = "*"
+
+futures = "*"
+futures-cpupool = "*"
+futures-util = "0.2.1"
+
+num_cpus = "*"
+
+typemap = "*"
+rustc-serialize = "*"
+
+# future deps
+ansi_term = "*"
+# rustbox = "*"
+# ncurses = "*"
+
+[features]
+default = []

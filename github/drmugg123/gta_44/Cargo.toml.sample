@@ -1,0 +1,20 @@
+[dependencies.image]
+git = "https://github.com/pistondevelopers/image"
+
+[dependencies.gfx]
+git = "https://github.com/gfx-rs/gfx-rs"
+
+[dependencies.gfx_macros]
+git = "https://github.com/gfx-rs/gfx-rs"
+
+[dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs"
+
+[dependencies.cgmath]
+git = "https://github.com/bjz/cgmath-rs"
+
+[package]
+
+name = "gta_44"
+version = "0.0.1"
+authors = ["drmugg123 <drmugg123@protonmail.ch>"]

@@ -1,0 +1,14 @@
+[package]
+authors = ["Ian Johnson <ianprime0509@gmail.com>"]
+name = "ibcm"
+version = "0.2.0"
+
+[[bin]]
+doc = false
+name = "ibcm"
+path = "src/bin/ibcm.rs"
+
+[dependencies]
+clap = "2.24.2"
+error-chain = "0.10.0"
+itertools = "0.6.0"

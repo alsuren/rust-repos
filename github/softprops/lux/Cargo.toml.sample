@@ -1,0 +1,25 @@
+[package]
+name = "lux"
+version = "0.1.1"
+authors = ["softprops <d.tangren@gmail.com>"]
+description = "A kubernetes log multiplexor"
+documentation = "https://softprops.github.io/lux"
+homepage = "https://github.com/softprops/lux"
+repository = "https://github.com/softprops/lux"
+keywords = ["hyper", "kubernetes", "k8s"]
+license = "MIT"
+
+[[bin]]
+doc = false
+name = "lux"
+
+
+[dependencies]
+hyper="0.10"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+term = "0.4"
+rand = "0.3"
+url = "1.4"
+clap = "2.20"

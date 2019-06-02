@@ -1,0 +1,37 @@
+[package]
+authors = ["Christoph Groß <caemor@mailbox.org>"]
+categories = ["embedded", "hardware-support", "no-std"]
+description = "An embedded-hal based driver for ePaper displays from Waveshare formerly published as eink-waveshare-rs"
+documentation = "https://docs.rs/epd-waveshare"
+homepage = "https://github.com/caemor/epd-waveshare"
+keywords = ["ePaper", "Display", "epd", "eink"]
+license = "ISC"
+name = "epd-waveshare"
+readme = "README.md"
+repository = "https://github.com/Caemor/epd-waveshare.git"
+version = "0.3.1"
+edition = "2018"
+
+[badges]
+# Travis CI: `repository` in format "<user>/<project>" is required.
+# `branch` is optional; default is `master`
+travis-ci = { repository = "caemor/epd-waveshare" }
+
+
+[features]
+default = ["epd1in54", "epd2in9", "epd4in2", "graphics"]
+
+graphics = ["embedded-graphics"]
+epd1in54 = []
+epd2in9 = []
+epd4in2 = []
+# offers an alternative fast full lut for type_a displays, but the refresh isnt as clean looking
+type_a_alternative_faster_lut = []
+
+[dependencies.embedded-graphics]
+optional = true
+version = "0.4.3"
+
+[dependencies.embedded-hal]
+features = ["unproven"]
+version = "0.2.1"

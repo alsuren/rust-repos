@@ -1,0 +1,10 @@
+[package]
+name = "webdis-rs"
+version = "0.1.0"
+authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
+
+[dependencies]
+iron = "0.4.0"
+r2d2 = "0.7.0"
+r2d2_redis = "0.3.1"
+redis = "0.5.4"

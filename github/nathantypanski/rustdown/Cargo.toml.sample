@@ -1,0 +1,9 @@
+[package]
+
+name = "rustdown"
+version = "0.0.1"
+authors = ["Nathan Typanski <ntypanski@gmail.com>"]
+
+[dependencies]
+getopts = "0.2.9"
+url = "0.2.29"

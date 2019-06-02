@@ -1,0 +1,31 @@
+[package]
+name = "ignite-rust"
+version = "0.1.0"
+authors = ["Igor Sapego <igorsapg@gmail.com>"]
+edition = '2018'
+
+[dependencies]
+log = "0.4.6"
+rand = "0.6.0"
+paste = "0.1"
+
+[dev-dependencies]
+env_logger = "0.6.0"
+
+[profile.test]
+opt-level = 0
+debug = 2
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 16
+incremental = true
+overflow-checks = true
+
+[features]
+test = []
+
+[[bin]]
+name = "test_node_launcher"
+path = "bin/test_node_launcher.rs"
+required-features = ["test"]

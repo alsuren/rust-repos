@@ -1,0 +1,8 @@
+[package]
+name = "primesieve"
+version = "0.1.0"
+authors = ["Georg Brandl <georg@python.org>"]
+
+[dependencies]
+crossbeam = "*"
+scoped-pool = "*"

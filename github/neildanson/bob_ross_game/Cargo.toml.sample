@@ -1,0 +1,12 @@
+[package]
+name = "bob_ross"
+version = "0.1.0"
+authors = ["Neil Danson <neil.danson@gmail.com>"]
+
+[dependencies]
+byteorder = "1.2.1"
+glium = "0.19.0"
+cgmath = "0.15.0"
+image = "0.18.0"
+rodio = "0.6.0"
+rand = "0.4.2"

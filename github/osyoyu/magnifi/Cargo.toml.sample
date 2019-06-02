@@ -1,0 +1,18 @@
+[package]
+name = "magnifi"
+version = "0.1.0"
+authors = ["osyoyu <osyoyu@osyoyu.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32"
+
+tantivy = "0.9"
+tantivy-tokenizer-tiny-segmenter = "0.2"
+
+futures = "0.1"
+grpcio = "0.4"
+protobuf = "~2"
+
+[build-dependencies]
+protoc-grpcio = "1.0"

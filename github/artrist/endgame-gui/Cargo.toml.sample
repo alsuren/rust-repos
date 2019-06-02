@@ -1,0 +1,23 @@
+[package]
+name = "furnace"
+version = "0.1.1"
+authors = ["Adam Adamsky <adamadamsky@protonmail.com>"]
+
+[dependencies]
+#gfx = "0.17"
+#gfx_window_glutin = "0.26"
+glium = { version = "0.23", default-features = true }
+glutin = "0.17"
+#winit = "0.18.0"
+#imgui = { version = "0.0.21-pre", git = "https://github.com/Gekkio/imgui-rs" }
+imgui = { tag = "v0.0.22", git = "https://github.com/Gekkio/imgui-rs" }
+#imgui-gfx-renderer = { version = "0.0.22-pre", git = "https://github.com/Gekkio/imgui-rs" }
+#imgui-glium-renderer = { version = "0.0.21-pre", git = "https://github.com/Gekkio/imgui-rs" }
+imgui-glium-renderer = { tag = "v0.0.22", git = "https://github.com/Gekkio/imgui-rs" }
+#imgui-glutin-support = { version = "0.0.22-pre", git = "https://github.com/Gekkio/imgui-rs" }
+imgui-winit-support = { tag = "v0.0.22", git = "https://github.com/Gekkio/imgui-rs" }
+image = "0.20.0"
+endgame = { version = "0.1.4", git = "https://github.com/adamsky/endgame" }
+outcome = { version = "0.2.3", git = "https://github.com/adamsky/outcome" }
+#outcome = { path = "../outcome" }
+directories = "1.0.2"

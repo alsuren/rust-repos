@@ -1,0 +1,15 @@
+[package]
+name = "rocket-maud-example"
+version = "0.0.1"
+authors = ["Casper Clemence <maninalift@gmail.com>"]
+
+build = "src/build.rs"
+
+[build-dependencies]
+#
+
+[dependencies]
+rocket = "0.3.5"
+rocket_codegen = "0.3.5"
+maud = { version = "0.17.2", features = ["rocket"] }
+#mime = "~0.2"

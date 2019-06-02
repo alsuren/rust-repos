@@ -1,0 +1,43 @@
+[package]
+name = "mathbench"
+version = "0.1.2"
+authors = ["Cameron Hart <cameron.hart@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+approx = "~0.3"
+glam = "~0.5"
+mint = "~0.5"
+rand = "~0.6"
+rand_xoshiro = "~0.1"
+
+[dependencies.nalgebra]
+version = "~0.18"
+features = ["mint"]
+
+[dependencies.cgmath]
+version = "~0.17"
+features = ["mint"]
+
+[dev-dependencies]
+criterion = "~0.2"
+
+[[bench]]
+name = "eulerbench"
+harness = false
+
+[[bench]]
+name = "mat2bench"
+harness = false
+
+[[bench]]
+name = "mat3bench"
+harness = false
+
+[[bench]]
+name = "mat4bench"
+harness = false
+
+[[bench]]
+name = "transform"
+harness = false

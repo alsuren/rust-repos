@@ -1,0 +1,39 @@
+[package]
+name = "rush"
+version = "0.1.0"
+authors = ["David Kyle <david.kyle@gmail.com>"]
+license = "MIT"
+description = "rush shell, inspired by Rust itself"
+
+[build-dependencies]
+
+[dependencies]
+libc = "^0.2.27"
+lazy_static = "0.2.2"
+crossbeam = "0.2"
+rustyline = "1.0.0"
+hostname = "^0.1"
+users = "^0.5.3"
+ansi_term = "0.9"
+nix = "^0.9.0"
+tempfile = "2.1.6"
+glob = "0.2"
+errno = "0.2.3"
+bounded-spsc-queue = { git = "https://github.com/polyfractal/bounded-spsc-queue.git" }
+signal = "0.4.0"
+
+[dependencies.linefeed]
+path = "../linefeed"
+version = "*"
+
+[dependencies.rush_pat]
+path = "rush_pat"
+version = "0.1.0"
+
+[dependencies.rush_parser]
+path = "rush_parser"
+version = "0.1.0"
+
+[dependencies.rush_rt]
+path = "rush_rt"
+version = "0.1.0"

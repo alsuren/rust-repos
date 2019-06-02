@@ -1,0 +1,12 @@
+[package]
+name = "wifi_drone_object_track"
+version = "0.1.0"
+authors = ["Robert Wettstädt <robert.wett@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+wifi_drone = { path="../wifi_drone" }
+cpp = "^0.3"
+
+[build-dependencies]
+cpp_build = "0.3"

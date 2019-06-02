@@ -1,0 +1,15 @@
+[package]
+name = "rust-web-boilerplate"
+version = "0.1.0"
+authors = ["pbzweihander <pbzweihander@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tide = "0.2.0"
+futures-preview = "0.3.0-alpha.16"
+structopt = "0.2.15"
+openssl-probe = "0.1.2"
+
+[dev-dependencies]
+http-service-mock = "0.2.0"
+http-service = "0.2.0"

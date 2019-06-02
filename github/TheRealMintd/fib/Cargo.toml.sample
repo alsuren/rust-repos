@@ -1,0 +1,9 @@
+[package]
+name = "fib"
+version = "0.1.0"
+edition = '2018'
+authors = ["Mintd <johnmax2468@gmail.com>"]
+
+[dependencies]
+num-bigint = "0.2.1"
+num-traits = "0.2.6"

@@ -1,0 +1,16 @@
+[package]
+name = "aws-sg-util"
+version = "0.1.0"
+authors = ["Jonathan Constantinides <jonleecon@gmail.com>"]
+
+[dependencies]
+clap = "2.31.2"
+rusoto_core = "0.32.0"
+rusoto_ec2 = "0.32.0"
+failure = "0.1.1"
+csv = "1"
+trust-dns = "0.14.0"
+regex = "1.0.0"
+
+[profile.release]
+lto = true

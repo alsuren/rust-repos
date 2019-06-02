@@ -1,0 +1,8 @@
+[package]
+name = "hyper-xp"
+version = "0.1.0"
+authors = ["Julia Naomi <jnaomi@thoughtworks.com>"]
+
+[dependencies]
+futures = "*"
+hyper = "*"

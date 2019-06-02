@@ -1,0 +1,96 @@
+[package]
+name = "whiske-rs"
+version = "0.1.0"
+authors = ["Colin Sherratt <colin.sherratt@gmail.com>"]
+
+[dependencies.whiske-rs-engine]
+path = "src/engine"
+version = "*"
+
+[dependencies.whiske-rs-parent]
+path = "src/parent"
+version = "*"
+
+[dependencies.whiske-rs-transform]
+path = "src/transform"
+version = "*"
+
+[dependencies.whiske-rs-graphics]
+path = "src/graphics"
+version = "*"
+
+[dependencies.whiske-rs-renderer]
+path = "src/renderer"
+version = "*"
+
+[dependencies.whiske-rs-scene]
+path = "src/scene"
+version = "*"
+
+[dependencies.whiske-rs-std_graphics]
+path = "src/std_graphics"
+version = "*"
+
+[dependencies.whiske-rs-obj_loader]
+path = "src/obj_loader"
+version = "*"
+
+[dependencies.whiske-rs-no_clip]
+path = "src/no_clip"
+version = "*"
+
+[dependencies.whiske-rs-bounding]
+path = "src/bounding"
+version = "*"
+
+[dependencies.whiske-rs-system]
+path = "src/system"
+version = "*"
+
+[dependencies.whiske-rs-animation]
+path = "src/animation"
+version = "*"
+
+[dependencies.whiske-rs-name]
+path = "src/name"
+version = "*"
+
+[dependencies.whiske-rs-config]
+path = "src/config"
+version = "*"
+
+[dependencies.whiske-rs-config_menu]
+path = "src/config_menu"
+version = "*"
+
+[dependencies.whiske-rs-hairball]
+path = "src/hairball"
+version = "*"
+
+[dev-dependencies]
+glfw="*"
+cgmath="*"
+time="*"
+image="*"
+genmesh="*"
+noise="*"
+
+[dev-dependencies.snowstorm]
+git = "https://github.com/csherratt/snowstorm.git"
+
+[dev-dependencies.fibe]
+git = "https://github.com/slide-rs/fibe-rs.git"
+
+[dev-dependencies.entity]
+git = "https://github.com/whiske-rs/entity.git"
+
+[dev-dependencies.future_pulse]
+git = "https://github.com/csherratt/future_pulse.git"
+
+[dev-dependencies.gfx_mesh]
+git = "https://github.com/csherratt/gfx_mesh.git"
+
+
+[features]
+virtual_reality = ["whiske-rs-engine/virtual_reality",
+                   "whiske-rs-renderer/virtual_reality"]

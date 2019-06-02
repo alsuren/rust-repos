@@ -1,0 +1,16 @@
+[package]
+name = "rust-cargo-config-link-fail"
+version = "0.1.0"
+authors = ["qwerty19106 <qwerty19106@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+cortex-m = "0.5.7"
+
+[dev-dependencies]
+cortex-m-semihosting = "0.3"
+cortex-m-rt = "0.6.7"
+
+[dev-dependencies.panic-semihosting]
+version = "0.5"
+features = ["exit"]

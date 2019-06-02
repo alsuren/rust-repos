@@ -1,0 +1,15 @@
+[package]
+name = "scancode"
+version = "0.1.2"
+authors = ["Risto Saarelma <risto.saarelma@iki.fi>"]
+description = "Keyboard hardware scancode converter"
+keywords = ["keyboard", "input"]
+repository = "https://github.com/rsaarelm/scancode-rs"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+enum_primitive = "0.1"
+
+[dev-dependencies]
+glutin = "0.8"
+num = "0.1"

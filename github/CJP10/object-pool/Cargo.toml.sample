@@ -1,0 +1,35 @@
+[package]
+name = "object-pool"
+version = "0.3.1"
+authors = ["CJP10"]
+edition = "2018"
+description = "A thread-safe object pool with automatic return and attach/detach semantics"
+readme = "README.md"
+repository = "https://github.com/CJP10/object-pool"
+homepage = "https://github.com/CJP10/object-pool"
+documentation = "https://docs.rs/object-pool"
+keywords = ["atomic", "garbage", "non-blocking", "lock-free"]
+categories = ["concurrency", "memory-management", "data-structures"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+parking_lot = "0.7"
+
+[dev-dependencies]
+criterion = "0.2"
+criterion-plot = "0.3"
+
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.release]
+debug = true
+lto = true
+opt-level = 3
+incremental = false
+
+[profile.bench]
+lto = true
+opt-level = 3
+incremental = false

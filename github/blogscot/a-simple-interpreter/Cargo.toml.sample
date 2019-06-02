@@ -1,0 +1,9 @@
+[package]
+name = "basic-interpreter"
+version = "0.1.0"
+authors = ["iain"]
+
+[dependencies]
+mopa = "0.2.2"
+lazy_static = "1.0.0"
+regex = "1.0.0"

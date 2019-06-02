@@ -1,0 +1,33 @@
+[package]
+authors = ["nokaa <nokaa@cock.li>"]
+description = "An http library based on Golang's `net/http` written using Tokio and Futures.\n"
+homepage = "https://github.com/nokaa/hayaku"
+keywords = ["futures", "async", "tokio", "web", "hayaku", "server"]
+license = "AGPLv3"
+name = "hayaku-http"
+readme = "README.md"
+repository = "https://github.com/nokaa/hayaku"
+version = "0.1.0"
+
+[dependencies]
+futures = "0.1.6"
+log = "0.3.6"
+tokio-proto = "0.1.0"
+tokio-service = "0.1.0"
+
+[dependencies.cookie]
+git = "https://github.com/hayaku-rs/cookie"
+
+[dependencies.httbloat]
+git = "https://github.com/hayaku-rs/httbloat"
+
+[dependencies.multipart]
+default-features = false
+features = ["server"]
+version = "0.8.1"
+
+[dependencies.urlencoded]
+git = "https://github.com/nokaa/urlencoded"
+
+[dev-dependencies]
+env_logger = "0.3.5"

@@ -1,0 +1,10 @@
+[package]
+
+name = "install"
+version = "0.0.1"
+authors = ["edoipi <implicent@gmail.com>"]
+
+[dependencies]
+regex = "*"
+regex_macros = "*"
+getopts = "0.2.10"

@@ -1,0 +1,30 @@
+[package]
+name = "unicola"
+version = "0.0.0"
+authors = ["Chiu-Hsiang Hsu <wdv4758h@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.rst"
+repository = "https://github.com/wdv4758h/unicola/"
+keywords = ["unicode", "emoji"]
+build = "build.rs"
+
+[lib]
+name = "unicola"
+crate-type = ["dylib", "rlib"]
+
+[workspace]
+members = ["src/core", "src/codegen"]
+
+[build-dependencies]
+unicola_codegen = { path = "src/codegen" }
+
+[dependencies]
+phf = "0.7.18"
+unicola_core = { path = "src/core" }
+
+[features]
+default = ["width", "eac", "ffi"]
+pregen = []     # use pre-generated code
+width = []
+eac = ["unicola_codegen/eac"]
+ffi = []

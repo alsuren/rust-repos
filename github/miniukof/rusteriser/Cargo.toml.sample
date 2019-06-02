@@ -1,0 +1,13 @@
+[package]
+name = "rusteriser"
+version = "0.1.1"
+authors = ["Adam Wolski <miniukof@gmail.com>"]
+
+[dependencies]
+
+log = '*'
+env_logger = '*'
+tobj = '*'
+cgmath = '0.9.1'
+image = {version = '*', default-features = false, features = ["png_codec", "tga"]}
+rand = '*'

@@ -1,0 +1,14 @@
+[package]
+name = "fow_game"
+version = "0.1.0"
+authors = ["Michail Denchev <mdenchev@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+gltf = { git = "https://github.com/mdenchev/gltf", branch="android", features=["import", "android", "utils", "names"] }
+glium = "0.23"
+android_glue = "0.2.3"
+
+[package.metadata.android]
+package_name = "com.mdenchev.fow"
+assets = "src/assets"

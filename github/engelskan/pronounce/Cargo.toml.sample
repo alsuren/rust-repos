@@ -1,0 +1,10 @@
+[package]
+name = "pronounce"
+version = "0.0.1"
+license = "Apache-2.0/MIT"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+
+[dependencies]
+play = "*"
+reqwest = "*"
+temporary = "*"

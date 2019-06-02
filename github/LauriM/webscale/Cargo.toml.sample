@@ -1,0 +1,17 @@
+[package]
+name = "webscale"
+version = "0.9.4"
+description = "Extensible IRC bot framework."
+authors = ["Lauri Mäkinen <lauri.sakari.makinen@gmail.com>"]
+license = "MIT"
+exclude = [
+  "**/*.json",
+  "**/*.txt",
+  "Dockerfile"
+]
+
+[dependencies]
+irc = "0.11.3"
+hyper = "0.9.9"
+regex = "0.1.47"
+getopts = "0.2"

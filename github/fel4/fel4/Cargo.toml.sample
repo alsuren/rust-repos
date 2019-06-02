@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "libs/disc_image",
+    "loader/multiboot",
+    "kernel",
+    "tools/jam"
+]

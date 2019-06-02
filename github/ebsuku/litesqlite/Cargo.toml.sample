@@ -1,0 +1,7 @@
+[package]
+name = "litesqlite"
+version = "0.1.0"
+authors = ["lunga <stumenz.complex@gmail.com>"]
+
+[dependencies]
+rusqlite = "*"

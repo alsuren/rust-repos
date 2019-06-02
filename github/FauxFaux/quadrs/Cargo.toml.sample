@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "octagon",
+    "tool",
+]
+
+[profile.release]
+lto = true

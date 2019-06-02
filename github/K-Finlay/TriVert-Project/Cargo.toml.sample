@@ -1,0 +1,15 @@
+[package]
+name        = "trivert"
+version     = "0.1.0"
+authors     = ["Kyle Finlay <kyle.finlay01@gmail.com>"]
+description = "A powerful game framework written in Rust"
+license     = "Apache-2.0"
+
+[dependencies]
+trivert_math    = {version = "0.1.0", path = "src/trivert_math"}
+trivert_utility = {version = "0.1.0", path = "src/trivert_utility"}
+trivert_window  = {version = "0.1.0", path = "src/trivert_window"}
+
+[lib]
+path        = "src/lib.rs"
+crate-type  = ["dylib"]

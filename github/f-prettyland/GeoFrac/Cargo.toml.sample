@@ -1,0 +1,12 @@
+[package]
+
+name = "geofrac"
+version = "0.1.0"
+authors = ["F"]
+
+[dependencies]
+colored = "1.2"
+image = "*"
+clap = "2.5.1"
+threadpool = "1.0"
+num = "0.1"

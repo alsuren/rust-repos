@@ -1,0 +1,21 @@
+[package]
+authors = ["Wim Looman <wim@nemo157.com>"]
+name = "ripfs"
+version = "0.1.0"
+
+[dependencies]
+bytes = "0.4.4"
+futures = "0.1.21"
+maddr = "0.3.0"
+mhash = "0.3.0"
+slog = "2.0.12"
+slog-async = "2.1.0"
+slog-term = "2.2.0"
+tokio-core = "0.1.17"
+tokio-io = "0.1.2"
+
+[dependencies.libp2p]
+path = "libp2p-rs"
+
+[workspace]
+members = ["bs58-rs", "libp2p-crypto-rs", "libp2p-identity-rs", "libp2p-rs", "libp2p-secio-rs", "mhash-rs", "mplex-rs", "msgio-rs", "multistream-rs", "varmint-rs"]

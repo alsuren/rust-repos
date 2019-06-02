@@ -1,0 +1,9 @@
+[package]
+name = "hello_ggez"
+version = "0.1.0"
+authors = ["Arunscape <8227297+Arunscape@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+ggez = "0.5.0-rc.0"
+winit = "0.19.0"

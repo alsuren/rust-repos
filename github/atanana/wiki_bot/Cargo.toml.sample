@@ -1,0 +1,10 @@
+[package]
+name = "wiki_bot"
+version = "1.0.0"
+authors = ["Andrei Tanana <andrei.tanana@deltatre.it>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.17"
+select = "0.4.2"
+regex = "1.1.6"

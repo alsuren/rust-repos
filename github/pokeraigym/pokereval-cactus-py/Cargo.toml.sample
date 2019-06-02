@@ -1,0 +1,15 @@
+[package]
+name = "pokereval_cactus"
+version = "0.1.0"
+authors = ["goniX <hargonix@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pokereval_cactus = "0.1.2"
+
+[dependencies.pyo3]
+version = "0.7.0-alpha.1"
+features = ["extension-module"]

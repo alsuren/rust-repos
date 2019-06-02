@@ -1,0 +1,11 @@
+[package]
+name = "rusaw"
+version = "0.1.0"
+authors = ["ginkouno <gh.ginkouno@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+helix = "0.5.0"

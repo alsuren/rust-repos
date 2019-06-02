@@ -1,0 +1,11 @@
+[package]
+name = "strona"
+version = "0.1.0"
+authors = ["ca1ek <ca1ek@users.noreply.github.com>"]
+
+[dependencies]
+rocket = "0.2.8"
+rocket_codegen = "0.2.8"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

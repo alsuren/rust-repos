@@ -1,0 +1,20 @@
+[package]
+name = "redmud"
+version = "0.1.0"
+authors = ["Bradley Rasmussen <rasmbj@pdx.edu>"]
+license = "LGPL-3.0-or-later"
+
+[dependencies]
+argon2rs = "*"
+bytes = "0.4"
+diesel = { version = "*", features = ["postgres"] }
+futures = "0.1"
+lazy_static = "*"
+log = "*"
+rand = "0.5"
+r2d2 = ">= 0.7, < 0.9"
+r2d2-diesel = "1.0"
+simplelog = "*"
+tk-listen = "*"
+tokio = "0.1"
+tokio-io = "0.1"

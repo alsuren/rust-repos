@@ -1,0 +1,10 @@
+[package]
+name = "discord-mpv"
+version = "0.2.0"
+authors = ["Patrick Auernig <dev.patrick.auernig@gmail.com>"]
+
+[dependencies]
+discord-rpc-client = "^0.1"
+mpvipc = "1.1.5"
+regex = "*"
+chrono = "0.4"

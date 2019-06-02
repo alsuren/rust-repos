@@ -1,0 +1,49 @@
+[package]
+name = "linux-in-practice"
+version = "0.1.0"
+authors = ["toversus <toversus2357@gmail.com>"]
+
+[dependencies]
+nix = "0.11.0"
+libc = "0.2"
+time = "0.1.40"
+
+[[bin]]
+name = "fork"
+path = "03-process-management/fork.rs"
+
+[[bin]]
+name = "fork-and-exec"
+path = "03-process-management/fork-and-exec.rs"
+
+[[bin]]
+name = "sched"
+path = "04-process-scheduler/sched.rs"
+
+[[bin]]
+name = "sched-nice"
+path = "04-process-scheduler/sched-nice.rs"
+
+[[bin]]
+name = "segv"
+path = "05-memory-management/segv.rs"
+
+[[bin]]
+name = "mmap"
+path = "05-memory-management/mmap.rs"
+
+[[bin]]
+name = "filemap"
+path = "05-memory-management/filemap.rs"
+
+[[bin]]
+name = "demand-paging"
+path = "05-memory-management/demand-paging.rs"
+
+[[bin]]
+name = "cow"
+path = "05-memory-management/cow.rs"
+
+[[bin]]
+name = "cache"
+path = "06-memory-layer/cache.rs"

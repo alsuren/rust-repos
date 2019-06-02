@@ -1,0 +1,49 @@
+[package]
+name = "game_of_life"
+version = "0.1.0"
+authors = ["Fallen_Angel_admin <suc.daniil@gmail.com>"]
+
+[dependencies]
+glium = "*"
+genmesh = "*"
+clock_ticks = "*"
+obj = "*"
+rand = "*"
+lazy_static = "*"
+gl_common = "*"
+libc = "*"
+smallvec = "*"
+
+[features]
+default = ["glutin", "image", "nalgebra", "cgmath", "gl_read_buffer", "gl_depth_textures"]
+gl_read_buffer = []
+gl_uniform_blocks = []
+gl_sync = []
+gl_program_binary = []
+gl_tessellation = []
+gl_instancing = []
+gl_integral_textures = []
+gl_depth_textures = []
+gl_stencil_textures = []
+gl_texture_1d = []
+gl_texture_3d = []
+gl_texture_multisample = []
+gl_texture_multisample_array = []
+headless = []
+
+[dependencies.glutin]
+features = ["window"]
+optional = true
+
+[dependencies.cgmath]
+optional = true
+
+[dependencies.nalgebra]
+optional = true
+
+[dependencies.image]
+optional = true
+
+[build-dependencies]
+gl_generator = "*"
+khronos_api = "*"

@@ -1,0 +1,18 @@
+[package]
+name = "vec4"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["vec4", "vector", "4"]
+description = "rust vector 4 functions"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-vec4.git"
+homepage = "https://github.com/nathanfaucett/rs-vec4"
+
+[dependencies]
+approx_eq = { git = "https://github.com/nathanfaucett/rs-approx_eq.git" }
+num = { git = "https://github.com/nathanfaucett/rs-num.git" }
+signed = { git = "https://github.com/nathanfaucett/rs-signed.git" }
+vec2 = { git = "https://github.com/nathanfaucett/rs-vec2.git" }
+vec3 = { git = "https://github.com/nathanfaucett/rs-vec3.git" }

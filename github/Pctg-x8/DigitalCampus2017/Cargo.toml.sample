@@ -1,0 +1,51 @@
+[package]
+authors = ["S.Percentage <Syn.Tri.Naga@gmail.com>"]
+build = "build.rs"
+name = "dc2017"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+image = "~0.16"
+libc = "0.2"
+mio = "0.6.10"
+num = "*"
+svgparser = "0.5"
+
+[dependencies.appinstance]
+git = "https://github.com/Pctg-x8/appinstance"
+
+[dependencies.dc_web]
+git = "https://github.com/Pctg-x8/DigitalCampus2017P"
+
+[dependencies.ferrite]
+features = ["FeImplements", "FePresentation"]
+git = "https://github.com/Pctg-x8/ferrite"
+
+[dependencies.metrics]
+path = "../metrics"
+
+[dependencies.ws_common]
+features = ["with_ferrite"]
+git = "https://github.com/Pctg-x8/ws_common_rs"
+
+[features]
+debug = ["ferrite/VK_EXT_debug_report"]
+default = ["target_x11", "debug"]
+target_win32 = ["ferrite/VK_KHR_win32_surface"]
+target_x11 = ["ws_common/target_x11", "ferrite/VK_KHR_xcb_surface"]
+
+[target]
+
+[target."cfg(windows)"]
+
+[target."cfg(windows)".dependencies]
+widestring = "0.2"
+
+[target."cfg(windows)".dependencies.comdrive]
+path = "../comdrive"
+
+[target."cfg(windows)".dependencies.winapi]
+branch = "dev"
+features = ["handleapi", "synchapi"]
+git = "https://github.com/retep998/winapi-rs"

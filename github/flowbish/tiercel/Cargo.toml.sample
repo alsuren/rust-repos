@@ -1,0 +1,14 @@
+[package]
+name = "tgirc"
+version = "0.1.0"
+authors = ["Porter Smith <flowbish@gmail.com>"]
+
+[dependencies]
+irc = "^0.11.3"
+toml = "^0.1.28"
+hyper = "^0.7.2"
+rustc-serialize = "*"
+
+[dependencies.telegram-bot]
+git = "https://github.com/flowbish/telegram-bot.git"
+branch = "features"

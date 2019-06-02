@@ -1,0 +1,7 @@
+[package]
+name = "x86_mp"
+version = "0.1.0"
+authors = ["Levente Kurusa <levex@linux.com>"]
+
+[dependencies]
+byteorder = { version = "1", default-features = false }

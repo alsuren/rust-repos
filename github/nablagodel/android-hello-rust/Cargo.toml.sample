@@ -1,0 +1,8 @@
+[package]
+name = "android-hello-rust"
+version = "0.1.0"
+authors = ["creator <>"]
+edition = "2018"
+
+[dependencies]
+rand = "*"

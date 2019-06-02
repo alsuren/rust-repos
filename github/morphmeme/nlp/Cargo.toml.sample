@@ -1,0 +1,11 @@
+[package]
+name = "nlp"
+version = "0.1.0"
+authors = ["alex <alex.feng@stonybrook.edu>"]
+edition = "2018"
+
+[dependencies]
+unicode-segmentation = "1.2.1"
+len-trait = "0.6.1"
+push-trait = "0.6.0"
+itertools = "0.8.0"

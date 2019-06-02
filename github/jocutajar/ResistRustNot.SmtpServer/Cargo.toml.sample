@@ -1,0 +1,11 @@
+[package]
+name = "ResistRustNotSmtp"
+version = "0.1.0"
+authors = ["Robert Cutajar <github-commit@robajz.info>"]
+build = "src/peg.rs"
+
+[dependencies]
+peg="0.5.2"
+
+[build-dependencies]
+peg = { version = "0.5.2" }

@@ -1,0 +1,21 @@
+[package]
+name = "OpenChaoGarden"
+version = "0.1.0"
+authors = ["Phenethylamine <beta.phenylethylamine@gmail.com>"]
+
+[dependencies]
+# Render bits
+gfx = "0.17.1"
+gfx_window_glutin = "0.21.0"
+glutin = "0.13.1"
+
+# Engine-y bits
+specs = "0.10.0"
+specs-derive = "0.1.0"
+
+# Model Loading and Animating
+collada = "0.6.0"
+skeletal_animation = "0.25.0"
+
+# Gamepad
+gilrs = "0.6.0"

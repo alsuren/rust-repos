@@ -1,0 +1,14 @@
+[package]
+name = "waterrower"
+version = "0.1.0"
+authors = ["Sam Yaple <sam@yaple.net>"]
+license = "MIT"
+keywords = ["waterrower"]
+
+description = "WaterRower S4/S5"
+repository = "https://github.com/SamYaple/waterrower-rs"
+
+[dependencies]
+bufstream = "0.1"
+nix = "0.7"
+serial = "0.3"

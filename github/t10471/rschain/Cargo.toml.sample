@@ -1,0 +1,39 @@
+[package]
+name = "rschain"
+version = "0.0.1"
+authors = ["t10471 <t104711202@gmail.com>"]
+
+[dependencies]
+clap = {version = "2.32", features = ["yaml"]}
+tokio = "0.1"
+tokio-codec = "0.1"
+tokio-io = "0.1"
+tokio-fs = "0.1"
+futures = "0.1.20"
+bytes = "0.4"
+http = "0.1"
+httparse = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+time = "0.1"
+hyper = "0.12"
+ed25519-dalek = "0.9"
+sha2 = "^0.8"
+rand = "0.6"
+rust-base58 = "*"
+rocksdb = "0.10"
+protobuf = { version = "~2.0", features = ["with-bytes"] }
+protos = { path = "protos" }
+ctrlc = { version = "3.0", features = ["termination"] }
+tokio-timer = "0.2"
+dirs = "1.0"
+
+[[bin]]
+path = "rschain/main.rs"
+name = "rschain"
+
+[workspace]
+members = [
+    "protos",
+]

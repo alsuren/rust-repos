@@ -1,0 +1,16 @@
+[package]
+name = "rs-pathtracer"
+version = "0.1.0"
+authors = ["Mark Anderson <mark@illumedevelopments.co.uk>"]
+
+[dependencies]
+cgmath = "0.16.0"
+crossbeam = "0.3.2"
+image = "0.18.0"
+itertools = "0.7.8"
+num_cpus = "1.8.0"
+rand = "0.4"
+sdl2 = { version = "0.31.0", features = ["bundled", "static-link"] }
+
+[profile.release]
+debug-assertions = true

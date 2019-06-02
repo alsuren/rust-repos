@@ -1,0 +1,10 @@
+[package]
+name = "dwemthys"
+version = "0.1.0"
+authors = ["Melissa Noelle <melissamatara@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.tcod]
+git = "https://github.com/tomassedovic/tcod-rs.git"

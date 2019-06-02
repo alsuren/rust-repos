@@ -1,0 +1,25 @@
+[package]
+name = "manticore"
+version = "0.1.0"
+authors = ["Mark Wardle <mwwardle@gmail.com>", "Dan Scannell <mystik3eb@gmail.com>"]
+
+description = "A cross-platform ui toolkit"
+repository = "https://github.com/mwardle/manticore"
+license = "BSD"
+homepage = "https://github.com/mwardle/manticore"
+documentation = "https://github.com/mwardle/manticore"
+
+readme = "README.md"
+
+keywords = ["GUI", "cross-platform"]
+
+[lib]
+name = "manticore"
+
+[features]
+default = ["portaudio"]
+
+[dependencies.libc]
+[dependencies.portaudio]
+optional = true
+path = "C:/Users/Dan/projects/rust-portaudio/"

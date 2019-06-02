@@ -1,0 +1,14 @@
+[package]
+name = "constrained"
+version = "0.1.0"
+authors = ["Dylan Ede <dylanede@googlemail.com>"]
+description = "A collection of algorithms for constrained optimisation problems, written in Rust."
+repository = "https://github.com/dylanede/constrained"
+readme = "README.md"
+license = "MIT / Apache-2.0"
+keywords = ["optimization", "linear", "algebra", "programming", "quadratic"]
+
+[dependencies]
+sprs = "0.3.0"
+num = "0.1.27"
+rand = "0.3"

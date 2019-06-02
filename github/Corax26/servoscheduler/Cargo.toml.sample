@@ -1,0 +1,29 @@
+[package]
+name = "servoscheduler"
+version = "0.1.0"
+authors = ["Kevin Brodsky <corax26@gmail.com>"]
+
+[[bin]]
+name = "svsc_server"
+path = "src/server_main.rs"
+
+[[bin]]
+name = "svsc_client"
+path = "src/client_main.rs"
+
+[dependencies]
+log = "0.4"
+env_logger = "0.5.3"
+chrono = { version = "*", features = ["serde"] }
+bitflags = "*"
+num = "*"
+tarpc = "0.12.*"
+tarpc-plugins = "0.4.*"
+serde = "=1.0.66"
+serde_derive = "*"
+serde_yaml = "*"
+futures = "*"
+tokio-core = "*"
+clap = "*"
+prettytable-rs = "*"
+regex = "*"

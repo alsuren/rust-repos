@@ -1,0 +1,14 @@
+[package]
+name = "fern_macros"
+version = "0.1.8"
+authors = ["David Ross <daboross@daboross.net>"]
+description = "Deprecated crate which used to accompany the `fern` (`fern` has been independent since version 0.2)."
+
+repository = "https://github.com/daboross/fern-macros-rs"
+
+readme = "README.md"
+keywords = []
+license = "MIT"
+
+[dependencies]
+fern = "0.1.7"

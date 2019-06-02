@@ -1,0 +1,9 @@
+[package]
+name = "do"
+version = "0.1.0"
+authors = ["Till Hoeppner <till@hoeppner.ws>"]
+
+[dependencies]
+docopt = "*"
+docopt_macros = "*"
+rustc-serialize = "*"

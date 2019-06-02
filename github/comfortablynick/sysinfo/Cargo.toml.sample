@@ -1,0 +1,16 @@
+[package]
+name = "sysinfo"
+version = "0.1.0"
+authors = ["Nick Murphy <comfortablynick@gmail.com>"]
+homepage = "github.com/comfortablynick/sysinfo"
+description = "System stats for use in shell, TMUX, etc."
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+getopts = "0.2"
+systemstat = "0.1"
+chrono = "0.4"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+sys-info = "0.5"

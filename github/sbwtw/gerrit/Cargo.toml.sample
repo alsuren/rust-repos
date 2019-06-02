@@ -1,0 +1,19 @@
+[package]
+name = "gerrit"
+version = "0.2.0"
+authors = ["石博文 <sbw@sbw.so>"]
+
+[[bin]]
+name = "git-clear"
+path = "src/main.rs"
+
+[dependencies]
+hyper = "*"
+hyper-tls = "*"
+tokio-core = "*"
+futures = "*"
+clap = "*"
+log = "*"
+serde_json = "*"
+pretty_env_logger = "*"
+num_cpus = "*"

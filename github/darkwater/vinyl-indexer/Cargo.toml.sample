@@ -1,0 +1,10 @@
+[package]
+name = "vinyl-indexer"
+version = "0.1.0"
+authors = ["Sam Lakerveld <darkwater124@gmail.com>"]
+
+[dependencies]
+id3       = "0.2.3"
+itertools = "0.7.8"
+metaflac  = "0.1.8"
+rmp       = "0.8.7"

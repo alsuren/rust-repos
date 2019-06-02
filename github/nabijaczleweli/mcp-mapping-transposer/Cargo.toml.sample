@@ -1,0 +1,16 @@
+[package]
+name = "mcp-mapping-transposer"
+description = "Translate between MCP mappings"
+readme = "README.md"
+license = "MIT"
+version = "0.1.0"
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>"]
+
+
+[dependencies]
+csv = "0.14"
+zip = "0.1"
+curl = "0.3"
+clap = "2.11"
+regex = "0.1"
+bidir-map = "0.3"

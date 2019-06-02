@@ -1,0 +1,15 @@
+[package]
+authors = ["David Irvine <david.irvine@maidsafe.net>"]
+name = "rename-extensions"
+version = "0.3.0"
+description = "A simple script to rename files extensions."
+license = "GPL-3.0"
+
+[dependencies]
+clap = "~2.26.0"
+glob = "~0.2.11"
+
+[package.metadata.release]
+no-dev-version = true
+sign-commit = true
+

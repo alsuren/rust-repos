@@ -1,0 +1,10 @@
+[package]
+name = "advent"
+version = "0.1.0"
+authors = ["Guillaume Gautreau <guillaume@ghusse.com>"]
+
+[dependencies]
+elapsed = "0.1"
+regex = "1"
+datetime = "0.4.7"
+quickersort = "3.0.0"

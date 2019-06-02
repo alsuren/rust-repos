@@ -1,0 +1,14 @@
+[package]
+name = "watchdog"
+description = "Watch filesystem for changes and then run a command"
+version = "0.2.6"
+authors = ["Josh Hawkins <hawkins@users.noreply.github.com>"]
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+notify = "4.0.6"
+assert_fs = "0.9.0"
+clap = "2.32.0"
+subprocess = "0.1.16"
+globset = "0.4.2"

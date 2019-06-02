@@ -1,0 +1,28 @@
+[package]
+name = "hazel"
+version = "0.0.1"
+authors = ["Joe Fredette <jfredett@gmail.com>"]
+
+description = "Hybrid Classical/ML-oriented Chess Engine"
+repository = "https://github.com/jfredett/hazel"
+readme = "README.md"
+keywords = ["chess", "boardgame", "game"]
+categories = ["games"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "jfredett/hazel", branch = "master" }
+coveralls = { repository = "jfredett/hazel", branch = "master", service = "github" }
+
+maintenance = { status = "actively-developed" }
+is-it-maintained-issue-resolution = { repository = "jfredett/hazel" }
+is-it-maintained-open-issues = { repository = "jfredett/hazel" }
+
+# The engine
+[[bin]]
+name="hazel"
+path = "src/bin/hazel.rs"
+
+[dependencies]
+clap = "2.29.0"
+bitboard = "0.1.0"

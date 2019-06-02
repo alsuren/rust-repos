@@ -1,0 +1,54 @@
+[package]
+name = "aiarena"
+version = "0.0.1"
+authors = ["daniele <git.daniele@gmail.com>"]
+
+[lib]
+name = "aiarena"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "*"
+time = "*"
+futures = "*"
+futures-cpupool = "*"
+libc = "*"
+
+# compile release code with debug information
+[profile.release]
+debug = true
+
+# --------------------
+
+#[[bin]]
+#name = "uttt"
+#path = "examples/theaigame.rs"
+
+
+[[example]]
+name = "proc_com_parent"
+path = "examples/process_communication/proc_parent.rs"
+
+[[example]]
+name = "proc_com_child"
+path = "examples/process_communication/proc_child.rs"
+
+[[example]]
+name = "uttt_perf_minimax"
+path = "examples/ultimate_tictactoe/perf_minimax.rs"
+
+[[example]]
+name = "uttt_player_minimax"
+path = "examples/ultimate_tictactoe/player_minimax.rs"
+
+[[example]]
+name = "uttt_player_random"
+path = "examples/ultimate_tictactoe/player_random.rs"
+
+[[example]]
+name = "controller_uttt"
+path = "examples/controller/ultimate_tictactoe.rs"
+
+[[example]]
+name = "bot_uttt"
+path = "examples/controller/bot_uttt.rs"

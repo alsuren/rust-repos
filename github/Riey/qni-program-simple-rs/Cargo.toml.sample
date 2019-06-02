@@ -1,0 +1,21 @@
+[package]
+name = "qni-program-simple-rs"
+version = "0.2.0"
+authors = ["Riey <creeper844@gmail.com>"]
+edition = "2018"
+
+[features]
+ws-ssl = ["qni-connector-ws-rs/ssl"]
+
+[lib]
+name = "qni_program_simple"
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+log = "0.4.6"
+pretty_env_logger = "0.3.0"
+qni-connector-ws-rs = "0.2.5"
+qni-core-rs = "0.2.5"

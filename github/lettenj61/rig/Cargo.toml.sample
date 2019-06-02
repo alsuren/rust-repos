@@ -1,0 +1,26 @@
+[package]
+authors = ["lettenj61 <lettenj61@users.noreply.github.com>"]
+name = "rig"
+version = "0.1.0"
+
+[[bin]]
+doc = false
+name = "rig"
+
+[dependencies]
+combine = "2.2.2"
+docopt = "0.7.0"
+env_logger = "0.4.0"
+error-chain = "0.8.1"
+git2 = "0.6.4"
+java-properties = "1.0.0"
+log = "0.3.6"
+rand = "0.3.15"
+rustc-serialize = "0.3.22"
+serde = "0.9.6"
+serde_json = "0.9.5"
+tempdir = "0.3.5"
+tera = "0.7.1"
+toml = "0.3"
+url = "1.4.0"
+walkdir = "1.0.7"

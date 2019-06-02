@@ -1,0 +1,24 @@
+[package]
+name = "advent_of_code_2017"
+version = "0.1.0"
+authors = ["Olivier Pinon <opinon@asylum.fr>"]
+
+[dependencies]
+# WORKSPACES
+day7_parser = { path = "day7_parser" }
+day8_parser = { path = "day8_parser" }
+day9_parser = { path = "day9_parser" }
+day12_parser = { path = "day12_parser" }
+day16_parser = { path = "day16_parser" }
+day18_parser = { path = "day18_parser" }
+day20_parser = { path = "day20_parser" }
+day23_parser = { path = "day23_parser" }
+day25_parser = { path = "day25_parser" }
+
+# OTHER DEPS
+petgraph = "*"
+time = "*"
+rayon = "*"
+itertools = "*"
+
+[workspace]

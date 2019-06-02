@@ -1,0 +1,13 @@
+[package]
+name = "libdrm-sweet"
+version = "0.1.2"
+description = "Your friendly wrapper around libdrm"
+repository = "https://github.com/devurandom/libdrm-sweet-rs"
+documentation = "https://docs.rs/libdrm-sweet"
+authors = ["Dennis Schridde <devurandom@gmx.net>"]
+license = "LGPL-3.0+"
+keywords = ["libdrm", "drm", "gpu", "linux"]
+categories = ["hardware-support", "os", "rendering"]
+
+[dependencies]
+libdrm-sys = { version = "0.2", features = ["version_2_4_67"] }

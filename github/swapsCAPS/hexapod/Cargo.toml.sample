@@ -1,0 +1,9 @@
+[package]
+name = "hexapod"
+version = "0.1.0"
+authors = ["swapsCAPS <verstegen.daan@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+i2c-pca9685 = { git = "https://github.com/querry43/i2c-pca9685", branch = "master" }
+i2cdev = "0.3.1"

@@ -1,0 +1,17 @@
+[package]
+name = "clova"
+version = "0.0.1"
+authors = ["Daichi Mukai <mukai.daichi.37e@kyoto-u.jp>"]
+edition = "2018"
+
+[dependencies]
+lambda_runtime = { version = "0.2", git = "https://github.com/awslabs/aws-lambda-rust-runtime.git" }
+lambda_http = { version = "0.1", git = "https://github.com/awslabs/aws-lambda-rust-runtime.git" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = "0.1.15"
+
+[dev-dependencies]
+log = "0.4.6"
+simple_logger = "1.0.1"
+

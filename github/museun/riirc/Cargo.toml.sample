@@ -1,0 +1,15 @@
+[package]
+name = "riirc"
+version = "0.1.0"
+authors = ["museun <museun@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+#pancurses = {version = "0.16.0", default-features = false, features = ["win32"]}
+pancurses = { path = "c:/dev/rs/pancurses" }
+
+log = "0.4.5"
+env_logger = "0.5.13"
+toml_document = "0.1.3"
+crossbeam-channel = "0.2.6"
+chrono = "0.4.6"

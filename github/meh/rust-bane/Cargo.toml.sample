@@ -1,0 +1,21 @@
+[package]
+name    = "bane"
+version = "0.1.0"
+
+authors = ["meh. <meh@schizofreni.co>"]
+license = "WTFPL"
+
+description = "Terminal user interfaces."
+repository  = "https://github.com/meh/rust-bane"
+keywords    = ["terminal", "tui", "curses"]
+
+[dependencies]
+libc              = "0.2"
+crossbeam-channel = "0.1"
+lazy_static       = "1.0"
+bitflags          = "1.0"
+fnv               = "1.0"
+
+control-code = "0.7"
+terminfo     = "0.5"
+termios      = "0.3"

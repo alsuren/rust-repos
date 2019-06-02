@@ -1,0 +1,27 @@
+[package]
+name = "litepad"
+version = "0.1.0"
+authors = ["Tom Bebbington <10bebtho@blue-coat.org>"]
+description = "A simple, lightweight WYSIWYG markdown editor"
+repository = "https://github.com/TomBebb/litepad"
+readme = "README.md"
+keywords = ["markdown", "editor", "gui", "app", "wysiwyg"]
+categories = ["gui", "text-editors"]
+license = "GPLv3"
+
+
+[badges]
+travis-ci = { repository = "TomBebb/litepad", branch = "master" }
+
+[dependencies]
+webbrowser = "^0.2.2"
+gdk-pixbuf = "*"
+gdk = "*"
+hyper-native-tls = "*"
+hyper = "^0.10.9"
+pulldown-cmark = { version = "^0.0.11" }
+pango = "^0.1.2"
+
+[dependencies.gtk]
+version = "^0.1.2"
+features = [ "v3_18" ]

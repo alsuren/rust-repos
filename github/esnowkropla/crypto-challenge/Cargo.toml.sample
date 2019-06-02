@@ -1,0 +1,36 @@
+[package]
+
+name = "crypto_challenge"
+version = "0.0.1"
+authors = ["Elliot Snow-Kropla <esnowkropla@gmail.com>"]
+
+[lib]
+name = "crypto"
+
+[[bin]]
+name = "crypto_challenge"
+path = "src/main.rs"
+
+[[bin]]
+name = "challenge_1"
+path = "src/bin/challenge_1.rs"
+
+[[bin]]
+name = "challenge_2"
+path = "src/bin/challenge_2.rs"
+
+[[bin]]
+name = "challenge_3"
+path = "src/bin/challenge_3.rs"
+
+[[bin]]
+name = "challenge_4"
+path = "src/bin/challenge_4.rs"
+
+[[bin]]
+name = "challenge_5"
+path = "src/bin/challenge_5.rs"
+
+[[bin]]
+name = "challenge_6"
+path = "src/bin/challenge_6.rs"

@@ -1,0 +1,31 @@
+[package]
+name = "tws-rust"
+version = "0.2.0"
+authors = ["Peter Cai <peter@typeblog.net>"]
+
+[dependencies]
+base64 = "0.6"
+bytes = "0.4"
+clap = { version = "2.30", features = ["yaml"] }
+error-chain = "0.11"
+futures = "0.1"
+hmac = "0.5"
+rand = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"
+sha2 = "0.7"
+time = "0.1"
+tokio = "0.1"
+tokio-io = "0.1"
+tokio-timer = "0.2"
+tokio-executor = "0.1"
+tokio-codec = "0.1"
+#websocket = "0.20"
+
+[dependencies.websocket]
+git = "https://git.angry.im/PeterCxy/rust-websocket"
+features = ["nightly"]
+
+[profile.release]
+lto = true

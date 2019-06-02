@@ -1,0 +1,16 @@
+[package]
+name = "fula"
+version = "0.1.0"
+authors = ["Davis Silverman <davis.silverman@thehumangeo.com>"]
+
+[dependencies]
+rustful = "*"
+hyper = "*"
+log = "*"
+env_logger = "*"
+rustc-serialize = "*"
+
+diesel = "0.7"
+diesel_codegen = { version = "0.7", default-features = false, features = ["postgres"] }
+dotenv = "0.8"
+dotenv_macros = "0.9"

@@ -1,0 +1,19 @@
+[package]
+name = "new_rust_project"
+version = "0.7.0"
+authors = ["t18b219k"]
+edition = "2018"
+
+[dependencies]
+glib="0.6.1"
+gio="0.5.0"
+dbus="0.6.3"
+upower_dbus = "0.1.0"
+network-manager = "0.11.0"
+chrono = "0.4.6"
+backlight = "0.1.1"
+webkit2gtk ="0.5.1"
+regex="1.1.0"
+[dependencies.gtk]
+version="0.5.0"
+features=["v3_16"]

@@ -1,0 +1,35 @@
+[package]
+name = "frappe-dom"
+version = "0.1.0"
+description = "DOM interactions as frappe::Stream"
+categories = ["wasm", "web-programming", "gui"]
+keywords = ["frp", "reactive", "event", "stream", "signal"]
+authors = ["tock203 <tick@tock.tech>"]
+license = "MPL-2.0"
+readme = "README.md"
+repository = "https://github.com/tock203/frappe-dom"
+edition = "2018"
+
+[dev-dependencies]
+wasm-pack = "0.6.0"
+
+[dependencies]
+wasm-bindgen = { version = "0.2.38", features = ["nightly"] }
+frappe = "0.4.5"
+virtual-dom-rs = "0.6.5"
+maybe-owned = "0.3.2"
+lazy_static = "1.2"
+
+[dependencies.web-sys]
+version = "0.3.16"
+features = [
+  'Document',
+  'Element',
+  'HtmlElement',
+  'Node',
+  'Window',
+  'Event',
+  'EventTarget',
+  'EventListener'
+]
+

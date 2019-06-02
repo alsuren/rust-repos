@@ -1,0 +1,13 @@
+[package]
+name = "leveldb-rs"
+version = "0.1.0"
+authors = ["Mark H. Colburn <colburn.mark@gmail.com>"]
+description = "Leveldb implementation in Rust"
+license = "MIT"
+repository = "https://github.com/markcol/leveldb-rs"
+
+[dependencies]
+env_logger = "0.5"
+failure = "0.1"
+log = "0.4"
+structopt = "0.2"

@@ -1,0 +1,54 @@
+[package]
+name = "cryptosmelt"
+version = "0.1.0"
+authors = ["jmdx"]
+
+[dependencies]
+log = "0.4"
+fern = "0.5"
+chrono = { version = "0.4", features = ["serde"] }
+toml = "0.4"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde = "1.0"
+jsonrpc-core = "8.0"
+jsonrpc-tcp-server = "8.0"
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+
+reqwest = "0.8"
+schedule_recv = "0.1.0"
+bytes = "0.4"
+num-bigint = "0.1"
+num-integer = "0.1"
+regex = "0.2"
+lru_time_cache = "0.8"
+
+# Dependencies for our lite variant on Mithril's cryptonight implementation
+groestl = "0.3.0"
+blake = "2.0.0"
+jh-ffi = "0.0.2"
+skein-ffi = "0.0.1"
+
+# TODO document the process of installing and using diesel, this requires 'sudo apt install libpq-dev' on ubuntu
+diesel = { version = "1.0.0", features = ["postgres", "chrono"] }
+dotenv = "0.9.0"
+r2d2 = "0.8"
+r2d2-diesel = "1.0"
+
+[dependencies.rocket_contrib]
+version = "0.3.6"
+default-features = false
+features = ["json"]
+
+[dependencies.mithril]
+git = 'https://github.com/Ragnaroek/mithril'
+rev = 'a847ab68f3104b0321cba2c83269efaa975ced67'
+
+[dependencies.uuid]
+version = "0.4"
+features = ["v4"]
+
+[dependencies.concurrent-hashmap]
+version = "0.2.1"
+default-features = false

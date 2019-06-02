@@ -1,0 +1,25 @@
+[package]
+name = "radon"
+version = "0.0.0"
+authors = ["reujab <reujab@gmail.com>"]
+edition = "2018"
+description = "A noble text editor"
+repository = "https://github.com/reujab/radon"
+keywords = ["text-editor", "editor"]
+categories = ["command-line-utilities", "development-tools", "text-editors"]
+license = "Unlicense"
+
+[lib]
+name = "radon"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rn"
+path = "src/main.rs"
+
+[dependencies]
+dirs = "1"
+libloading = "0.5"
+stretch = "0.2"
+walkdir = "2"
+xmltree = "0.8"

@@ -1,0 +1,11 @@
+[package]
+name = "redis"
+version = "0.1.0"
+authors = ["Federico Ravasio <ravasio.federico@gmail.com>"]
+
+[dependencies]
+nom = "~2.2"
+mioco = "~0.8"
+
+[dev-dependencies]
+quickcheck = "~0.4"

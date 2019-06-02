@@ -1,0 +1,19 @@
+[package]
+name = "fleetwood"
+version = "0.1.0"
+authors = ["Jef <jackefransham@gmail.com>"]
+
+[dependencies]
+lazy_static = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+either = "1.5"
+tiny-keccak = "1.4"
+bincode = "1.0"
+metrohash = "1.0"
+pwasm-abi = { version = "0.2", features = ["std"] }
+pwasm-std = { version = "0.13" }
+
+[features]
+default = []
+std = []

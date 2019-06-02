@@ -1,0 +1,38 @@
+[package]
+name = "panopticon"
+version = "0.1.1"
+authors = ["Andreas Ots <qrpth@qrpth.eu>"]
+build = "build.rs"
+
+[dependencies]
+argon2rs = "0.2.5"
+chrono = "0.4.1"
+diesel = { version = "1.1.1", features = ["chrono", "postgres", "r2d2"] }
+dotenv = "0.11.0"
+elastic_reqwest = "0.20.9"
+futures = "0.1.20"
+gotham = "0.2.0"
+gotham_derive = "0.2.0"
+hyper = "0.11.24"
+log = { version = "*", features = ["max_level_info", "release_max_level_info"] }
+phf = "0.7.21"
+rand = "0.5.0-pre.0"
+reqwest = "0.8.5"
+serde = "1.0.36"
+serde_derive = "1.0.36"
+serde_json = "1.0.13"
+slog = "2.2.3"
+slog-async = "2.3.0"
+slog-scope = "4.0.1"
+slog-stdlog = "3.0.2"
+slog-term = "2.3.0"
+tera = "0.11.6"
+url = "1.7.0"
+tokio-core = "0.1.16"
+
+[build-dependencies]
+phf_codegen = "0.7.21"
+serde_json = "1.0.13"
+
+[patch.crates-io]
+argon2rs = { git = "https://github.com/bryant/argon2rs", branch = "variant-argon2id" }

@@ -1,0 +1,51 @@
+[package]
+name = "bloguen"
+description = "Generate a blogue from Markdown (again)"
+repository = "https://github.com/nabijaczleweli/bloguen"
+documentation = "https://rawcdn.githack.com/nabijaczleweli/bloguen/doc/bloguen/index.html"
+readme = "README.md"
+keywords = ["generate", "blog", "markdown"]
+categories = ["command-line-utilities", "template-engine"]
+license = "MIT"
+# Remember to also update in appveyor.yml
+version = "0.1.0"
+# Remember to also update in bloguen.md
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>"]
+
+[dependencies]
+safe-transmute = "0.10"
+rand_xorshift = "0.1"
+serde_derive = "1.0"
+lazy_static = "1.2"
+bidir-map = "1.0"
+tabwriter = "1.1"
+jetscii = "0.4"
+unicase = "2.2"
+walkdir = "2.2"
+chrono = "0.4"
+comrak = "0.4"
+rayon = "1.0"
+regex = "1.1"
+serde = "1.0"
+clap = "2.32"
+rand = "0.6"
+toml = "0.4"
+crc = "1.8"
+url = "1.7"
+
+[target.'cfg(target_os = "windows")'.dependencies.winapi]
+version = "0.3"
+features = ["lmcons", "winnls"]
+
+[target.'cfg(not(target_os = "windows"))'.dependencies.libc]
+version = "0.2"
+
+
+[target.'cfg(not(target_os = "windows"))'.build-dependencies.cc]
+version = "1.0"
+
+
+[[bin]]
+name = "bloguen"
+test = false
+doc = false

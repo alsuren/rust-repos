@@ -1,0 +1,23 @@
+[package]
+
+name = "pop3"
+version = "1.0.6"
+authors = ["Matt McCoy <mattnenterprise@yahoo.com>"]
+homepage = "https://github.com/mattnenterprise/rust-pop3"
+repository = "https://github.com/mattnenterprise/rust-pop3"
+description = "POP3 client for Rust"
+readme = "README.md"
+license = "MIT"
+
+[lib]
+name = "pop3"
+path = "src/pop3.rs"
+
+[[bin]]
+name = "example"
+path = "example.rs"
+
+[dependencies]
+openssl = "0.9"
+regex = "0.2"
+lazy_static = "0.2"

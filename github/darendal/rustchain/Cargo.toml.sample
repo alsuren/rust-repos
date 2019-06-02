@@ -1,0 +1,37 @@
+[package]
+name = "rustchain"
+version = "0.1.0"
+authors = ["Brendan Ware <bware43@gmail.com>"]
+
+[dependencies]
+
+# The core APIs, including the Serialize and Deserialize traits. Always
+# required when using Serde.
+serde = "1.0"
+
+# Support for #[derive(Serialize, Deserialize)]. Required if you want Serde
+# to work for structs and enums defined in your crate.
+serde_derive = "1.0"
+
+# Each data format lives in its own crate; the sample code below uses JSON
+# but you may be using a different one.
+serde_json = "1.0"
+
+# Rust web microservice framework. Used to iteract and view current chain through the browser
+iron = "*"
+router = "*"
+
+# Used to get current date time
+chrono = { version = "0.4", features = ["serde"] }
+
+# Used for SHA hashing
+rust-crypto = "^0.2"
+
+# Allows configs to be pulled in from a separate file
+config = "*"
+
+# Static allocation of structs, etc.
+# Used to make Settings a 'global' variable
+lazy_static = "*"
+
+reqwest = "*"

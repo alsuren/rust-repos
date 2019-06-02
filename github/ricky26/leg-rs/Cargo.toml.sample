@@ -1,0 +1,15 @@
+[package]
+name = "leg"
+version = "0.1.0"
+authors = ["Ricky Taylor <rickytaylor26@gmail.com>"]
+
+[[bin]]
+doc = false
+name = "leg"
+path = "src/bin/leg.rs"
+
+[dependencies]
+bitflags = "0.3.2"
+regex = "0.1.41"
+regex_macros = "0.1.21"
+docopt = "0.6.70"

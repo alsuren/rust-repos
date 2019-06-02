@@ -1,0 +1,15 @@
+[package]
+authors = ["Without Boats <woboats@gmail.com>"]
+description = "CLI for cargonauts web framework"
+license = "MIT OR Apache-2.0"
+name = "cargonauts-cli"
+repository = "https://github.com/cargonauts-rs/cargonauts-cli"
+version = "0.2.3"
+
+[[bin]]
+name = "cargonauts"
+
+[dependencies]
+docopt = "0.7.0"
+heck = "0.2.1"
+rustc-serialize = "0.3.24"

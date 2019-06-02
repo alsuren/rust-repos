@@ -1,0 +1,11 @@
+[package]
+
+name = "bitcoin-script-vm"
+version = "0.0.1"
+authors = [ "onokatio <onokatio@gmail.com>"]
+
+[dependencies]
+bimap = "0.3"
+sha2 = "0.8"
+ripemd160 = "0.8"
+digest = "0.8"

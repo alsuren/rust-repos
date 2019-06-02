@@ -1,0 +1,11 @@
+[package]
+name = "ded"
+version = "0.1.0"
+authors = ["Josh Preuss ✌ <josh@enjoysailing.us>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
+clap = "2.29.4"
+libc = "0.2"
+nom = "^4.0"

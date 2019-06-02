@@ -1,0 +1,42 @@
+[package]
+authors = ["David Wood <code@dtwood.co.uk>"]
+edition = "2018"
+readme = "README.md"
+name = "tiva-demo"
+version = "0.1.0"
+
+[dependencies]
+cortex-m = "0.5"
+cortex-m-rt = "0.6"
+cortex-m-semihosting = "0.3.2"
+cty = "0.1.5"
+embedded-hal = "0.2"
+tm4c129x = "0.7"
+
+[dependencies.smoltcp]
+version = "0.5"
+default_features = false
+features = [
+    "proto-ipv4",
+    "proto-ipv6",
+    "socket-raw",
+    "socket-udp",
+    "socket-tcp",
+]
+
+[dependencies.tm4c129x-hal]
+features = ["rt"]
+version = "*"
+git = "https://github.com/dtwood/tm4c-hal"
+branch = "ethernet-draft"
+
+# this lets you use `cargo fix`!
+[[bin]]
+name = "tiva-demo"
+test = false
+bench = false
+
+[profile.release]
+codegen-units = 1 # better optimizations
+debug = true # symbols are nice and they don't increase the size on Flash
+lto = true # better optimizations

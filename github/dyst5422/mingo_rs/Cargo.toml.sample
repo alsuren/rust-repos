@@ -1,0 +1,15 @@
+[package]
+name = "mingo_rs"
+version = "0.1.0"
+authors = ["jdstewar <dylan.stewart@colorado.edu>"]
+
+[dependencies]
+serde_json = "*"
+bson = "*"
+serde = "*"
+serde_derive = "*"
+regex = "*"
+log = "*"
+failure = "*"
+valico = "*"
+tantivy = "*"

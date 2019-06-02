@@ -1,0 +1,30 @@
+[package]
+name = "repos-tool"
+version = "0.1.4"
+authors = ["Kaizhao Zhang <zhangkaizhao@gmail.com>"]
+description = "A simple command line tool to manage local repositories."
+homepage = "https://github.com/zhangkaizhao/repos"
+readme = "README.md"
+keywords = ["cli", "management", "repositories"]
+categories = ["command-line-utilities"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/zhangkaizhao/repos"
+
+[lib]
+name = "repos"
+
+[dependencies]
+clap = "2.32"
+remove_empty_subdirs = "0.1.0"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4.6"
+url = "1.7"
+
+[dev-dependencies]
+tempfile = "3.0"
+
+[[bin]]
+name = "repos"
+path = "src/bin/cli.rs"
+doc = false

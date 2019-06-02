@@ -1,0 +1,16 @@
+[package]
+name = "stochastic"
+version = "0.5.2"
+license = "Apache-2.0/MIT"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+description = "The package provides means of simulating stochastic processes."
+documentation = "https://stainless-steel.github.io/stochastic"
+homepage = "https://github.com/stainless-steel/stochastic"
+repository = "https://github.com/stainless-steel/stochastic"
+
+[dependencies]
+czt = "0.3"
+probability = "0.15"
+
+[dev-dependencies]
+assert = "0.7"

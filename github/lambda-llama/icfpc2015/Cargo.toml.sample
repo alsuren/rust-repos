@@ -1,0 +1,20 @@
+[package]
+name = "play_icfp2015"
+version = "0.1.0"
+authors = ["Aleksey Kladov <aleksey.kladov@gmail.com>"]
+
+
+[dependencies]
+rand = "0.3.0"
+rustc-serialize = "0.3"
+hex2d = "0.0.14"
+getopts = "0.2"
+simple_parallel = "0.2"
+
+# [profile.release]
+# opt-level = 1
+# debug = true
+# rpath = false
+# lto = false
+# debug-assertions = false
+# codegen-units = 1

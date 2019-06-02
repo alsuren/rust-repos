@@ -1,0 +1,16 @@
+[package]
+name = "web_scraper"
+version = "0.0.1"
+authors = ["Ciaran Doherty <cad106uk@gmail.com>"]
+
+[lib]
+name = "web_scraper"
+crate-type = ["dylib"]
+
+[dependencies]
+hyper = "0.8"
+libc = "*"
+html5ever = "0.5"
+tendril = "*"
+string_cache = "*"
+url = "*"

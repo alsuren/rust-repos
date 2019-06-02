@@ -1,0 +1,18 @@
+[package]
+name = "sonic"
+version = "0.1.0"
+authors = ["Knuckles"]
+edition = "2018"
+
+[dependencies.pairing]
+version = "0.14"
+features = ["u128-support"]
+
+[dependencies]
+merlin = "1"
+rand = "0.4"
+bellman = "*"
+
+[dependencies.sapling-crypto]
+git = "https://github.com/zcash-hackworks/sapling-crypto"
+rev = "eb409fa3cf8df215ae8d35f5e385751a0c5ffb85"

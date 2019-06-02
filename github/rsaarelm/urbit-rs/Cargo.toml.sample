@@ -1,0 +1,13 @@
+[package]
+name = "urbit"
+version = "0.1.0"
+authors = ["Risto Saarelma <risto.saarelma@iki.fi>"]
+description = "Urbit utilities"
+repository = "https://github.com/rsaarelm/urbit-rs"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+fnv = "1.0"
+time = "0.1"
+num = "0.1"
+nock = "0.4"

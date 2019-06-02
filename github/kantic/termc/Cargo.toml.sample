@@ -1,0 +1,15 @@
+[package]
+name = "termc"
+version = "1.0.0"
+authors = ["jonas"]
+
+[dependencies]
+serde_json = "0.9.9"
+regex = "0.2.1"
+lazy_static = "0.2.8"
+
+[dependencies.termc_model]
+path = "termc_model"
+
+[dependencies.termc_ui]
+path = "termc_ui"

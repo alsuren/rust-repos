@@ -1,0 +1,11 @@
+[package]
+name = "yealink_firmware"
+version = "0.1.0"
+authors = ["Chabare <chabare95@gmail.com>"]
+
+[dependencies]
+clap = ""
+hyper = "0.10"
+regex = ""
+pretty-bytes = ""
+time = ""

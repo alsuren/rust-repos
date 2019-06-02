@@ -1,0 +1,21 @@
+[package]
+name = "cargo-light"
+version = "0.2.0"
+authors = ["Fisher Darling <fdarlingco@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+categories = ["command-line-utilities", "development-tools", "development-tools::cargo-plugins", "parsing"]
+keywords = ["cargo-subcommand", "plugin", "shadow", "variables"]
+
+[badges]
+maintenance = { status = "experimental" }
+
+[[bin]]
+name = "cargo-light"
+
+[dependencies]
+syn = {version="*", features=["parsing", "printing", "clone-impls", "full", "extra-traits", "visit", "fold"]}
+clap = "*"
+colored = "*"
+walkdir = "2"
+proc-macro2 = "*"

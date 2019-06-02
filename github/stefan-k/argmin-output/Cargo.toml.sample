@@ -1,0 +1,11 @@
+[package]
+name = "argmin_output"
+version = "0.0.0"
+authors = ["Stefan Kroboth <stefan.kroboth@gmail.com>"]
+
+[dependencies]
+argmin_core = { path = "../argmin-core" }
+slog = "*"
+slog-term = "*"
+slog-async = "*"
+slog-json = "*"

@@ -1,0 +1,16 @@
+[package]
+name = "arplay"
+version = "0.1.0"
+authors = ["rdspot <rdspot@arpnetwork.org>"]
+
+[dependencies]
+bytes = "0.4.8"
+
+[dependencies.ffmpeg-sys]
+version = "3.4.1"
+default-features = false
+features = ["avcodec"]
+
+[dependencies.sdl2]
+version = "0.31.0"
+features = ["unsafe_textures"]

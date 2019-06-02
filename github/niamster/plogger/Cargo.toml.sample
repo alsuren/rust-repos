@@ -1,0 +1,11 @@
+[package]
+name = "plogger"
+version = "0.1.0"
+authors = ["Dmytro Milinevskyi <dmilinevskyi@gmail.com>"]
+
+[dependencies]
+woodpecker = "0.4"
+unbytify = "0.1"
+libc = "0.2"
+mio = "0.6"
+argparse = "*"

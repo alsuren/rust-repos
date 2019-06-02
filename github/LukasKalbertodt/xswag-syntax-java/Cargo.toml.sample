@@ -1,0 +1,20 @@
+[package]
+name = "xswag-syntax-java"
+version = "0.3.0"
+authors = ["Lukas Kalbertodt <lukas.kalbertodt@gmail.com>"]
+build = "build.rs"
+
+description = "Java Parser for the xswag system"
+repository = "https://github.com/LukasKalbertodt/xswag-syntax-java"
+license = "MIT"
+
+[build-dependencies]
+lalrpop = "0.11.0"
+
+[dependencies]
+lalrpop-util = "0.11.0"
+log = "0.3"
+xswag-base = "0.3"
+
+[dev-dependencies]
+env_logger = "0.3"

@@ -1,0 +1,10 @@
+[package]
+name = "actix-web"
+version = "0.1.0"
+authors = ["Ant Weiss <anton@otomato.link>"]
+
+[dependencies]
+env_logger = "0.5"
+tera = "*"
+actix = "0.7"
+actix-web = "0.7"

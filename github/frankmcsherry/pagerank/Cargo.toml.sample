@@ -1,0 +1,20 @@
+[package]
+name = "pagerank"
+version = "0.1.0"
+authors = ["Frank McSherry <fmcsherry@me.com>"]
+
+[dependencies]
+getopts="*"
+time = "*"
+mmap="*"
+rand="*"
+byteorder="*"
+timely = "0.7"
+timely_sort="0.1.*"
+
+[profile.release]
+opt-level = 3
+debug = true
+rpath = false
+lto = false
+debug-assertions = false

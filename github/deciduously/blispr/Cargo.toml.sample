@@ -1,0 +1,15 @@
+[package]
+authors = ["deciduously <ben@deciduously.com>"]
+edition = "2018"
+name = "blispr"
+version = "0.0.1"
+[dependencies]
+hashbrown = "0.3"
+log = "0.4"
+pest = "2.1"
+pest_derive = "2.1"
+pretty_env_logger = "0.3"
+rustyline = "4.0"
+structopt = "0.2"
+[dev-dependencies]
+pretty_assertions = "0.6"

@@ -1,0 +1,16 @@
+[package]
+name = "auditable"
+version = "0.1.0"
+
+[dependencies]
+iron = "*"
+router = "*"
+bodyparser = "*"
+persistent = "*"
+rustc-serialize = "*"
+hyper = "*"
+uuid = "*"
+time = "*"
+
+[dependencies.redis]
+git = "https://github.com/mitsuhiko/redis-rs.git"

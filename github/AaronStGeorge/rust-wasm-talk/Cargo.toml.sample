@@ -1,0 +1,11 @@
+[package]
+name = "rust_wasm_talk"
+version = "0.1.0"
+authors = ["AaronStGeorge <aaronstgeorge@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = { git = 'https://github.com/alexcrichton/wasm-bindgen' }
+catlox = { path = '../cat-lox' }

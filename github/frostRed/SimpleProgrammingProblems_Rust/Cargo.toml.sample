@@ -1,0 +1,95 @@
+[package]
+name = "SimpleProgrammingProblems_Rust"
+version = "0.1.0"
+authors = ["Frost Red Lee <frostrlee@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+
+[[bin]]
+name = "ele1"
+path = "src/Elementary/1.rs"
+
+[[bin]]
+name = "ele2"
+path = "src/Elementary/2.rs"
+
+[[bin]]
+name = "ele3"
+path = "src/Elementary/3.rs"
+
+[[bin]]
+name = "ele4"
+path = "src/Elementary/4.rs"
+
+[[bin]]
+name = "ele5"
+path = "src/Elementary/5.rs"
+
+[[bin]]
+name = "ele6"
+path = "src/Elementary/6.rs"
+
+[[bin]]
+name = "ele7"
+path = "src/Elementary/7.rs"
+
+[[bin]]
+name = "ele8"
+path = "src/Elementary/8.rs"
+
+[[bin]]
+name = "ele9"
+path = "src/Elementary/9.rs"
+
+[[bin]]
+name = "ele10"
+path = "src/Elementary/10.rs"
+
+[[bin]]
+name = "ele11"
+path = "src/Elementary/11.rs"
+
+[[bin]]
+name = "lstrings1"
+path = "src/Lists_strings/1.rs"
+
+[[bin]]
+name = "lstrings2"
+path = "src/Lists_strings/2.rs"
+
+[[bin]]
+name = "lstrings3"
+path = "src/Lists_strings/3.rs"
+
+[[bin]]
+name = "lstrings4"
+path = "src/Lists_strings/4.rs"
+
+[[bin]]
+name = "lstrings5"
+path = "src/Lists_strings/5.rs"
+
+[[bin]]
+name = "lstrings6"
+path = "src/Lists_strings/6.rs"
+
+[[bin]]
+name = "lstrings7"
+path = "src/Lists_strings/7.rs"
+
+[[bin]]
+name = "lstrings8"
+path = "src/Lists_strings/8.rs"
+
+[[bin]]
+name = "lstrings9"
+path = "src/Lists_strings/9.rs"
+
+[[bin]]
+name = "lstrings10"
+path = "src/Lists_strings/10.rs"
+
+[[bin]]
+name = "lstrings11"
+path = "src/Lists_strings/11.rs"

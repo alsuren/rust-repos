@@ -1,0 +1,12 @@
+[package]
+name = "aoc18"
+version = "0.1.0"
+authors = ["Jonathan Böcker <jonathan.e.m.bocker@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+elapsed = "0.1"
+itertools = "0.7"
+strsim = "0.8.0"
+collision = "0.18.0"
+cgmath = "0.16"

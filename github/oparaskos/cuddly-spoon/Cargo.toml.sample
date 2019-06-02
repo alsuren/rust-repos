@@ -1,0 +1,9 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["Oliver Paraskos <oliver@paraskos.me.uk>"]
+
+[dependencies]
+luminance-gl = "0.13.0"
+luminance-glfw = "0.4.3"
+glfw = "0.23.0"

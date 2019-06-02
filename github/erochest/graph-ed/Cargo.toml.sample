@@ -1,0 +1,24 @@
+[package]
+name = "graph-ed"
+version = "0.1.0"
+authors = ["Eric Rochester <eric.rochester@willowtreeapps.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = { version = "0.4.6", features = ["serde"] }
+diesel = { version = "1.4.1", features = ["postgres", "chrono"] }
+dotenv = "0.13.0"
+juniper = "0.11.1"
+juniper_codegen = "0.11.1"
+juniper_rocket = "0.2.0"
+rocket = "0.4.0"
+rocket_codegen = "0.4.0"
+serde = "1.0.87"
+serde_derive = "1.0.87"
+r2d2 = "0.8.3"
+r2d2-diesel = "1.0.0"
+url = "1.7.2"
+uuid = { version = "0.7.2", features = ["v4", "v5"] }
+
+[dev-dependencies]
+spectral = "0.6.0"

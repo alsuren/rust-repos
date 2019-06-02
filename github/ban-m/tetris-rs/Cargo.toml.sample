@@ -1,0 +1,17 @@
+[package]
+name = "metaltet"
+version = "0.1.0"
+authors = ["ban-m <banmasutani@gmail.com>"]
+
+[dependencies]
+libc = "*"
+rand = "*"
+termios = "*"
+
+[[bin]]
+name = "debug"
+path = "./src/debug.rs"
+
+[[bin]]
+name = "main"
+path = "./src/main.rs"

@@ -1,0 +1,22 @@
+[package]
+
+name = "sl"
+version = "0.1.0"
+authors = [ "florian.gilcher@asquera.de" ]
+
+[[bin]]
+
+name = "sl"
+
+[lib]
+
+name = "sl"
+
+[dependencies]
+
+getopts = "0.2.14"
+libc = "0.2"
+
+[dependencies.ncurses]
+
+git = "https://github.com/jeaye/ncurses-rs.git"

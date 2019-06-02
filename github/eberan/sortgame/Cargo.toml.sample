@@ -1,0 +1,15 @@
+[package]
+name = "sortgame_rs"
+version = "0.1.0"
+authors = ["Erik Beran <eberan@gmail.com>"]
+
+#[lib]
+#path = "src/logic.rs"
+#crate-type = ["staticlib"]
+
+[dependencies]
+rayon = "0.4.2"
+
+[profile.release]
+lto = true
+#debug = true

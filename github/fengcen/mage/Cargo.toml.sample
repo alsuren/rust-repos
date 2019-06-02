@@ -1,0 +1,25 @@
+[package]
+name = "mage"
+version = "0.2.0"
+description = "An intuitive and powerful template engine."
+keywords = ["template", "html", "web", "templating"]
+authors = ["fengcen <fengcen.love@gmail.com>"]
+repository = "https://github.com/fengcen/mage.git"
+homepage = "https://github.com/fengcen/mage"
+documentation = "https://docs.rs/mage"
+readme = "README.md"
+license = "MIT"
+
+[lib]
+name = "mage"
+path = "src/lib.rs"
+
+[features]
+unstable = []
+
+[dependencies]
+eval = "^0.4"
+quick-error = "^1.1"
+glob = "^0.2"
+serde = "^0.9"
+serde_json = "^0.9"

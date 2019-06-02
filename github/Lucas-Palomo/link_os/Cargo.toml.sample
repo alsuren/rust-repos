@@ -1,0 +1,18 @@
+[package]
+name = "link_os"
+version = "0.1.0"
+authors = ["Lucas Palomo <devlpalomo>"]
+edition = "2018"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+bootloader = "0.3.12"
+
+
+[package.metadata.bootimage]
+default-target = "x86_64-link_os.json"

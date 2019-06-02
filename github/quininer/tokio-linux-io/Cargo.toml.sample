@@ -1,0 +1,19 @@
+[package]
+name = "tokio-linux-zio"
+version = "0.2.0-alpha"
+authors = ["quininer <quininer@live.com>"]
+license = "MIT"
+repository = "https://github.com/quininer/tokio-linux-zio"
+description = "Linux Zero-Copy IO"
+categories = ["network-programming"]
+keywords = ["linux", "zero-copy", "sendfile", "splice", "pipe"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.1"
+bytes = "0.4"
+iovec = "0.1"
+nix = "0.11"
+
+[dev-dependencies]
+lazy_static = "1"

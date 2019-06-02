@@ -1,0 +1,17 @@
+cargo-features = ["edition"]
+[package]
+authors = ["Alexandre Bury <alexandre.bury@gmail.com>"]
+description = "A library to model the Coinche card game."
+documentation = "http://gyscos.github.io/libcoinche/libcoinche/index.html"
+keywords = ["coinche", "game", "cards"]
+license = "MIT"
+name = "libcoinche"
+readme = "Readme.md"
+repository = "https://github.com/Gyscos/libcoinche"
+version = "0.3.0"
+edition="2018"
+
+[dependencies]
+rand = "0.5.5"
+serde = "1.0.71"
+serde_derive = "1.0.71"

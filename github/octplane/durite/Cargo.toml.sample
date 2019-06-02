@@ -1,0 +1,16 @@
+[package]
+name = "durite"
+version = "0.3.1"
+authors = ["Pierre Baillet <pierre@baillet.name>"]
+description = "DU graphite probe"
+license-file = "LICENSE"
+
+#[dependencies.du-sys]
+#path = "du-sys"
+#version = "~0.1.0"
+
+[dependencies]
+chrono = "*"
+docopt = "*"
+libc="*"
+riemann_client = "*"

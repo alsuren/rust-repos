@@ -1,0 +1,26 @@
+[package]
+name = "nut"
+version = "0.1.0"
+description = "Network user tool"
+license = "LGPL-2.1+"
+authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
+
+[dependencies]
+log = "0.3.6"
+env_logger = "*"
+nom = "^2"
+hexdump = "*"
+enum_primitive = "^0.1"
+rand = "*"
+openssl = "*"
+byteorder = "*"
+rusticata-macros = "*"
+der-parser = "*"
+tls-parser = { git = "https://github.com/rusticata/tls-parser.git", branch="serialize", features = ["serialize"] }
+
+# [dependencies.der-parser]
+# path = "../der-parser"
+
+# [dependencies.tls-parser]
+# path = "../tls-parser"
+# features = ["serialize"]

@@ -1,0 +1,16 @@
+[package]
+name = "weather_service"
+version = "0.1.0"
+authors = ["VictoremWinbringer <victor@mail.ru>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "0.7.18"
+reqwest = "0.9.12"
+serde = "1.0.89"
+serde_derive = "1.0.89"
+serde_json = "1.0.39"
+regex = "1.1.2"
+fern = "0.5.8"
+chrono = "0.4.6"
+log = "0.4.6"

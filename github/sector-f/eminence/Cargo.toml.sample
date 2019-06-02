@@ -1,0 +1,7 @@
+[package]
+name = "eminence"
+version = "0.1.0"
+authors = ["Adam <sector-f@users.noreply.github.com>"]
+
+[dependencies]
+named-vec = { git = "https://github.com/sector-f/named_vec.git" }

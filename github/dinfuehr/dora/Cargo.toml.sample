@@ -1,0 +1,36 @@
+[package]
+name = "dora"
+version = "0.0.1"
+authors = ["Dominik Inführ <dominik.infuehr@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "*"
+docopt = "0.7"
+byteorder = "*"
+libc = "*"
+time = "*"
+dora-parser = { path = "lib/dora-parser" }
+threadpool = "*"
+crossbeam-deque = "*"
+rand = "*"
+regex = "*"
+scoped_threadpool = "*"
+parking_lot = "*"
+fixedbitset = "*"
+num_cpus = "*"
+backtrace = "*"
+perfcnt = "0.4.4"
+
+[dependencies.capstone]
+git = "https://github.com/ebfe/rust-capstone.git"
+
+[profile.release]
+panic = "abort"
+
+[lib]
+name = "dora"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dora"
+path = "src/main.rs"

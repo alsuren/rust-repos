@@ -1,0 +1,21 @@
+[package]
+name = "ili9341"
+version = "0.2.0"
+description = "A platform agnostic driver to interface with the ILI9341 (ald ILI9340C) TFT LCD display"
+authors = ["Yuri Iozzelli <y.iozzelli@gmail.com>"]
+categories = ["embedded", "hardware-support", "no-std"]
+keywords = ["embedded-hal-driver", "display", "LCD"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yuri91/ili9341-rs"
+
+
+[dependencies]
+embedded-hal = "0.2.2"
+
+[dependencies.embedded-graphics]
+optional = true
+version = "0.4.7"
+
+[features]
+default = ["graphics"]
+graphics = ["embedded-graphics"]

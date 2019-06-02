@@ -1,0 +1,12 @@
+[package]
+name = "net-echo"
+version = "0.1.0"
+authors = ["aljama"]
+
+[dependencies]
+io_operations = "0.2.0"
+varint = {version = "0.9.0", features =["io-operations"] }
+[features]
+# no features by default
+default = ["io-operations"]
+io-operations = []

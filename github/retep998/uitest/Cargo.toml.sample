@@ -1,0 +1,11 @@
+[package]
+name = "uitest"
+version = "0.1.0"
+authors = ["Peter Atashian <retep998@gmail.com>"]
+
+[dependencies.winapi]
+version = "0.3"
+features = [
+    "errhandlingapi", "libloaderapi", "minwindef", "shellapi", "windef", "windowsx", "winerror",
+    "wingdi", "winnt", "winuser"
+]

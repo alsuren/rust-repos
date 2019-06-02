@@ -1,0 +1,12 @@
+[package]
+name = "kinetic-protobuf"
+version = "0.1.2"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+description = "Rust library for interfacing with Kinetic protocol buffers."
+repository = "https://github.com/peterdelevoryas/kinetic-protobuf"
+readme = "README.md"
+keywords = ["kinetic", "protobuf"]
+license = "MIT"
+
+[dependencies]
+protobuf = "1.0.24"

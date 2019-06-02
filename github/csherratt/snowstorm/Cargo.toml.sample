@@ -1,0 +1,21 @@
+[package]
+
+name = "snowstorm"
+version = "0.0.1"
+authors = ["Colin Sherratt <colin.sherratt@gmail.com>"]
+
+[dev-dependencies]
+time="*"
+
+[dependencies]
+atom="*"
+pulse="*"
+
+[[example]]
+name = "throughput"
+
+[[example]]
+name = "chain"
+
+[[example]]
+name = "chain_mpsc"

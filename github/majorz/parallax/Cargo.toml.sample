@@ -1,0 +1,14 @@
+[package]
+
+name = "mod_parallax"
+version = "0.0.5"
+
+[lib]
+name = "mod_parallax"
+crate-type = ["dylib"]
+
+[dependencies]
+interpolate_idents = "*"
+
+[dependencies.apache2]
+path = "../apache2-rs"

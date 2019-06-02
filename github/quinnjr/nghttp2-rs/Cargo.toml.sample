@@ -1,0 +1,56 @@
+[package]
+name = "nghttp2-rs"
+version = "0.1.1"
+authors = ["Joseph Quinn <quinn.josephr@protonmail.com>"]
+description = "High-level Rust library binding to libnghttp2."
+keywords = ["http2", "nghttp2", "http", "bindings", "ffi"]
+categories = ["web-programming::http-server"]
+homepage = "https://github.com/quinnjr/nghttp2-rs"
+repository = "https://github.com/quinnjr/nghttp2-rs"
+documentation = "https://docs.rs/nghttp2-rs"
+readme = "README.md"
+license = "ISC"
+
+[badges]
+maintenance = { status = "actively-developed" }
+travis-ci = { repository = "quinnjr/nghttp2-rs", branch = "master" }
+
+[workspace]
+members = [
+  "nghttp2-sys"
+]
+
+[dependencies]
+nghttp2-sys = { path = "nghttp2-sys" }
+libc = "0.2.43"
+futures = "0.1.24"
+http = "0.1.13"
+slog = "2.3.3"
+
+[dev-dependencies]
+futures-cpupool = "0.1.8"
+num_cpus = "1.8.0"
+clap = "2.32.0"
+slog-term = "2.4.0"
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 16
+panic = 'unwind'
+incremental = true
+overflow-checks = true
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 16
+panic = 'unwind'
+incremental = false
+overflow-checks = false

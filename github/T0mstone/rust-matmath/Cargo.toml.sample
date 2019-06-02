@@ -1,0 +1,15 @@
+[package]
+name = "matmath"
+version = "1.4.1"
+authors = ["T0mstone <realt0mstone@gmail.com>"]
+
+description = "Matrix and Vector Math with generic type elements"
+documentation = "https://docs.rs/matmath"
+repository = "https://github.com/T0mstone/rust-matmath"
+
+keywords = ["matrix-math", "vector-math", "matrix", "vector"]
+categories = ["data-structures"]
+license = "MIT"
+
+
+[dependencies]

@@ -1,0 +1,10 @@
+[package]
+name = "iwb-control"
+version = "0.0.1"
+authors = ["Pavel <zak0005@jmss.vic.edu.au>"]
+
+[dependencies]
+libc = "0.1.8"
+
+[dependencies.qmlrs]
+git = "https://github.com/cyndis/qmlrs.git"

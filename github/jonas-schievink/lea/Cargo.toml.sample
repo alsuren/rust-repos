@@ -1,0 +1,43 @@
+[package]
+name = "lea"
+version = "0.0.1"
+authors = ["Jonas Schievink <jonasschievink@gmail.com>"]
+repository = "https://github.com/jonas-schievink/lea"
+documentation = "https://jonas-schievink.github.io/lea/lea/index.html"
+readme = "README.md"
+license = "Apache-2.0/MIT"
+description = """
+A Lua-based language written in Rust
+"""
+
+[lib]
+name = "lea"
+path = "src/lea/lib.rs"
+
+# FIXME Is there a way to tell cargo to just not document bins?
+# (I don't like explicitly listing all bins here...)
+[[bin]]
+name = "lea"
+path = "src/bin/lea.rs"
+doc = false
+
+[[bin]]
+name = "leac"
+path = "src/bin/leac.rs"
+doc = false
+
+[[bin]]
+name = "leafmt"
+path = "src/bin/leafmt.rs"
+doc = false
+
+[dependencies]
+lea-parser = { path = "src/lea-parser" }
+lea-compiler = { path = "src/lea-compiler" }
+lea-vm = { path = "src/lea-vm" }
+lea-liblang = { path = "src/liblang" }
+clap = "1.4"
+rustc-serialize = "0.3"
+bincode = "0.4"
+term = "0.2"
+env_logger = "0.3"

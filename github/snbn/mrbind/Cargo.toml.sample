@@ -1,0 +1,12 @@
+[package]
+name = "mrbind"
+version = "0.1.0"
+authors = ["snbn <yaccasmonica@hotmail.co.jp>"]
+
+[dependencies.mruby-sys]
+path = "mruby-sys"
+
+features = ["compiler", "error"]
+
+[dependencies]
+matches = "0.1.6"

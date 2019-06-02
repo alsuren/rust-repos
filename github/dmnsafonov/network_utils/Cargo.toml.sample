@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "linux_network",
+    "ping6-datarecv",
+    "ping6-datasend",
+    "ping6_datacommon",
+    "rsndpproxy",
+    "send_box"
+]
+
+[patch.crates-io]
+seccomp-sys = { git = "https://github.com/polachok/seccomp-sys.git" }

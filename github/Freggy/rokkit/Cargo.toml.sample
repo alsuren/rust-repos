@@ -1,0 +1,8 @@
+[package]
+name = "rokkit"
+version = "0.1.0"
+authors = ["Yannic Rieger"]
+
+[dependencies]
+tokio = "0.1.7"
+rand = "0.5"

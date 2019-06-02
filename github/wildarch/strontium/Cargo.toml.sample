@@ -1,0 +1,21 @@
+[package]
+name = "strontium"
+version = "0.1.0"
+authors = ["Daan de Graaf <daandegraaf9@gmail.com>"]
+
+[lib]
+name="kernel"
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0"
+strontium-std = { path = "strontium-std" }
+
+[target.x86_64-unknown-linux-gnu.dependencies]
+clippy = "*"
+
+[dependencies.allocator]
+path = "allocator"
+
+[dependencies.raspbootin]
+path = "raspbootin"

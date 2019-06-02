@@ -1,0 +1,28 @@
+[package]
+name = "tetra"
+description = "A simple 2D game framework written in Rust"
+version = "0.2.18"
+edition = "2018"
+authors = ["Joe Clay <27cupsofcoffee@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/17cupsofcoffee/tetra"
+documentation = "https://docs.rs/tetra"
+readme = "README.md"
+keywords = ["game", "engine", "framework", "gamedev"]
+categories = ["game-engines"]
+
+[features]
+sdl2_bundled = ["sdl2/bundled"]
+sdl2_static_link = ["sdl2/static-link"]
+
+[dependencies]
+gl = "0.12.0"
+sdl2 = "0.32.2"
+image = "0.21.1"
+nalgebra-glm = "0.4.0"
+hashbrown = "0.3.0"
+glyph_brush = "0.5.0"
+rodio = "0.8.1"
+
+[dev-dependencies]
+rand = "0.6"

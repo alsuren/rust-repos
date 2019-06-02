@@ -1,0 +1,29 @@
+[package]
+name = "mhw_planner"
+version = "0.0.1"
+authors = ["Scott Harper <orcein@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "*"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "*"
+serde-aux = "*"
+scraper = "*"
+urlencoding = "1"
+itertools = "*"
+num-traits = "0.2"
+num-derive = "0.2"
+# regex = "1"
+onig = "4.3.2"
+
+glium = { version = "0.23", default-features = true }
+imgui = "0.0.24-pre"
+imgui-glium-renderer = {version = "0.0.24-pre" }
+imgui-winit-support = {version = "0.0.24-pre"}
+image = "0.21"
+
+[patch.crates-io]
+imgui = { git = "https://github.com/AberrantWolf/imgui-rs"}
+imgui-glium-renderer = { git = "https://github.com/AberrantWolf/imgui-rs"}
+imgui-winit-support = { git = "https://github.com/AberrantWolf/imgui-rs"}

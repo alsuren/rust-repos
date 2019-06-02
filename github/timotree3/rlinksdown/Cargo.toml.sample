@@ -1,0 +1,14 @@
+[package]
+authors = ["timotree3 <timorcb@gmail.com>"]
+name = "rlinksdown"
+version = "0.1.0"
+
+[dependencies]
+failure = "0.1.1"
+reqwest = "0.8.1"
+structopt = "0.1.6"
+structopt-derive = "0.1.6"
+
+[dependencies.pulldown-cmark]
+default-features = false
+version = "0.1.0"

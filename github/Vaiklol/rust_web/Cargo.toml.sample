@@ -1,0 +1,15 @@
+[package]
+name = "rust_web"
+version = "0.1.0"
+authors = ["vaiklol <samokatanet@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+quicksilver = "*"
+nphysics2d ="0.11.1"
+nalgebra = "0.18.0"
+ncollide2d = "0.19.1"
+nphysics_testbed2d = "*"
+laminar = "0.2.1"
+crossbeam = "0.7.1"
+byteorder = "1.3.1"

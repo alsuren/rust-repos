@@ -1,0 +1,18 @@
+[package]
+name = "rogue"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+amethyst = "0.10.0"
+shred-derive = "0.5.1"
+shred = "0.7.1"
+crossbeam-channel = "0.3.8"
+easycurses = "0.12.2"
+specs-hierarchy = "0.3.0"
+hibitset = "0.5.4"
+rand = "0.6.5"
+
+[profile.release]
+debug = true

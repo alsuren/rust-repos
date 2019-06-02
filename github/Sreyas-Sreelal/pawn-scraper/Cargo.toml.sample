@@ -1,0 +1,13 @@
+[package]
+name = "PawnScraper"
+version = "0.1.1"
+authors = ["Sreyas <sreyassreelal@gmail.com>"]
+
+[lib]
+name = "PawnScraper"
+crate-type = ["cdylib"]
+
+[dependencies]
+samp-sdk = {git = "https://github.com/ZOTTCE/samp-sdk"}
+scraper  = "0.8.1"
+minihttp = {git = "https://github.com/Sreyas-Sreelal/minihttp"}

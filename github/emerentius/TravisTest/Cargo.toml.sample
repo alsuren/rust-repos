@@ -1,0 +1,28 @@
+[package]
+authors = ["Emerentius <Emerentius@arcor.de>"]
+name = "sudoku-cli"
+version = "0.5.9"
+license = "AGPL-3.0"
+
+[[bin]]
+name = "rudoku"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.32.0"
+rayon = "1.0.2"
+
+[dependencies.sudoku]
+version = "0.7.0"
+features = ["unchecked_indexing"]
+git = "https://github.com/Emerentius/sudoku"
+rev = "3bfba46840930f9f56fb380c9aac779c273bf55d"
+
+[features]
+# With this feature, multithreading is used unless the --no-parallel flag is passed
+# Otherwise a single thread is used unless --parallel is passed
+parallel_by_default = []
+
+[profile.release]
+lto = true
+codegen-units = 1

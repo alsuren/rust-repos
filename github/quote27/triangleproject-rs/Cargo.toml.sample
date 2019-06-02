@@ -1,0 +1,48 @@
+[package]
+name = "triangleproject-rs"
+version = "0.0.1"
+authors = ["quote <quote@lv0.io>"]
+
+[[bin]]
+name = "triangleproject"
+path = "src/main.rs"
+
+[dependencies]
+rand = "0.1"
+clock_ticks = "*"
+
+[dependencies.gfx]
+git = "https://github.com/gfx-rs/gfx-rs"
+
+[dependencies.gfx_macros]
+git = "https://github.com/gfx-rs/gfx-rs"
+
+[dependencies.gfx_device_gl]
+git = "https://github.com/gfx-rs/gfx_device_gl"
+
+[dependencies.shader_version]
+git = "https://github.com/PistonDevelopers/shader_version"
+
+[dependencies.pistoncore-glfw_window]
+git = "https://github.com/PistonDevelopers/glfw_window"
+
+[dependencies.quack]
+git = "https://github.com/pistondevelopers/quack"
+
+[dependencies.pistoncore-input]
+git = "https://github.com/pistondevelopers/input"
+
+[dependencies.pistoncore-event]
+git = "https://github.com/PistonDevelopers/event"
+
+[dependencies.vecmath]
+git = "https://github.com/PistonDevelopers/vecmath"
+
+[dependencies.pistoncore-window]
+git = "https://github.com/PistonDevelopers/window"
+
+[dependencies.piston3d-cam]
+git = "https://github.com/PistonDevelopers/cam"
+
+[dependencies.camera_controllers]
+git = "https://github.com/PistonDevelopers/camera_controllers"

@@ -1,0 +1,12 @@
+[package]
+name = "uc-explorer"
+description = "Symbolics Microcode Explorer"
+version = "0.1.0"
+authors = ["Seth Morabito <web@loomcom.com>"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+
+[dependencies]
+clap = "^2.31"
+shellexpand = "^1.0"
+rustyline = "^2.1"

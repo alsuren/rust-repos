@@ -1,0 +1,27 @@
+[package]
+name = "gotham-example-app"
+version = "0.1.0"
+authors = ["Shaun Mangelsdorf <s.mangelsdorf@gmail.com>"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+gotham = "0.1.0"
+gotham_derive = "0.1.0"
+hyper = "0.11.2"
+futures = "*"
+serde = "*"
+serde_derive = "*"
+fern = "*"
+log = "*"
+chrono = "0.3"
+mime = "*"
+
+[lib]
+name = "gotham_example_app_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gotham_example_app"
+path = "src/bin.rs"

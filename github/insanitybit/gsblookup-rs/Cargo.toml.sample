@@ -1,0 +1,39 @@
+[package]
+name = "gsbrs"
+version = "0.7.0"
+authors = ["insanitybit <insanitybit@gmail.com>"]
+description = "Provides a client for the Google Safe Browsing Lookup API"
+license = "MIT OR Apache-2.0"
+keywords = ["Google", "SafeBrowsing", "gsb"]
+
+documentation = "https://insanitybit.github.io/gsblookup-rs/gsbrs/"
+repository = "https://github.com/insanitybit/gsblookup-rs"
+readme = "README.md"
+
+[dependencies]
+hyper = "~0.10.2"
+url = "0.5.*"
+
+[dev-dependencies]
+quickcheck = "0.2"
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false

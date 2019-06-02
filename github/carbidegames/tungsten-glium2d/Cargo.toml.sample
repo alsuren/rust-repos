@@ -1,0 +1,17 @@
+[package]
+name = "tungsten-glium2d"
+version = "0.1.0"
+authors = ["Layl <LaylConway@users.noreply.github.com>"]
+description = "2D glium frontend for the Tungsten game framework"
+keywords = ["gamedev"]
+repository = "https://github.com/carbidegames/tungsten-glium2d"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+cgmath = "0.7.0"
+#glium = "0.?.0" doesn't have array uniform support yet
+image = "0.8.0"
+tungsten = "0.1.0"
+
+[dependencies.glium]
+git = "https://github.com/tomaka/glium.git"

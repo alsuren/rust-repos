@@ -1,0 +1,22 @@
+[package]
+name = "approx"
+version = "0.1.0"
+authors = ["Łukasz Biel <lukasz.biel@anixe.pl>"]
+edition = "2018"
+
+[[bin]]
+doctest = false
+name = "approx"
+
+[lib]
+doctest = false
+
+[dependencies]
+failure          = "0.1.5"
+structopt        = "0.2.14"
+
+[dev-dependencies]
+test-case-derive = "0.2.1"
+
+[build-dependencies]
+peg              = "0.5.7"

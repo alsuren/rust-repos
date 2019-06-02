@@ -1,0 +1,9 @@
+[package]
+authors = ["lucy <lucy@luz.lu>"]
+description = "Fast implementations of wcwidth and wcswidth."
+documentation = "https://docs.rs/wcwidth"
+include = ["src/*.rs", "Cargo.toml"]
+license = "MIT"
+name = "wcwidth"
+repository = "https://github.com/lucy/wcwidth.rs"
+version = "1.0.1"

@@ -1,0 +1,17 @@
+[package]
+name = "isolation"
+version = "0.1.0"
+authors = ["NFleet Oy info@nfleet.fi"]
+
+[dependencies]
+petgraph = "0.1.11"
+scan_fmt = "0.1.1"
+getopts = "0.2"
+
+[lib]
+name = "isolation"
+path = "src/isolation/lib.rs"
+
+[[bin]]
+name = "isol"
+test = false

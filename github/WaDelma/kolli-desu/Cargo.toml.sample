@@ -1,0 +1,13 @@
+[package]
+name = "kolli-desu"
+version = "0.1.0"
+authors = ["delma <delma@del.ma>", "VoxWave <victor_bankowski@hotmail.com>"]
+edition = "2018"
+
+[workspace]
+members = ["visualise", "."]
+
+[dependencies]
+nalgebra = "0.17.2"
+alga = "0.5.2"
+mopa = "0.2.2"

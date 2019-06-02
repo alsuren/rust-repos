@@ -1,0 +1,27 @@
+[package]
+name = "da-lab"
+version = "0.1.0"
+authors = ["Toshiki Teramura <toshiki.teramura@gmail.com>"]
+
+[dependencies]
+float-cmp = "*"
+num-traits = "*"
+rand = "*"
+ndarray = { version = "0.10", features = ["blas", "serde-1"] }
+ndarray-linalg = "0.6"
+ndarray-odeint = "0.7"
+
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+rmp = "0.8"
+rmp-serde = "0.13"
+
+derive-new = "*"
+nix = "*"
+log = "*"
+time = "*"
+env_logger = "*"
+dotenv = "*"
+clap = { version = "2", features = ["yaml"] }
+uuid = { version = "0.4", features = ["v4"] }

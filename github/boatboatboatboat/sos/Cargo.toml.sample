@@ -1,0 +1,13 @@
+[package]
+name = "sosvm"
+version = "0.1.0"
+authors = ["boat"]
+
+
+[dependencies]
+lazy_static = "1.1.0"
+ordered-float = "1.0.1"
+indexmap = "*"
+slotmap = "0.3"
+pest = "2.0.2"
+pest_derive = "2.0"

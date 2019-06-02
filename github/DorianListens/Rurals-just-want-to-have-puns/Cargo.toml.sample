@@ -1,0 +1,9 @@
+[package]
+name = "puns"
+version = "0.1.0"
+authors = ["Dorian <dorian.scheidt@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+curl = "0.2"
+regex = "0.1"

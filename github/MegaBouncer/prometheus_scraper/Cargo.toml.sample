@@ -1,0 +1,19 @@
+[package]
+name = "prometheus_scraper"
+version = "0.1.0"
+authors = ["Victor Koenders <victor.koenders@gmail.com>"]
+
+[dependencies]
+shared = { path = "../libs/shared/", version = "*" }
+lazy_static = "0.2.1"
+
+[dependencies.hyper]
+version = "0.9"
+# disable hyper ssl
+#  refer to https://github.com/hyperium/hyper/issues/903#issuecomment-242798266
+default-features = false
+
+[dependencies.prometheus]
+git = "https://github.com/pingcap/rust-prometheus.git"
+default-features = false
+features = ["nightly", "hyper"]

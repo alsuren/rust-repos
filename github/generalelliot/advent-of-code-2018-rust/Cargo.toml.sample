@@ -1,0 +1,9 @@
+[package]
+name = "adventofcode2018"
+version = "0.1.0"
+authors = ["ulf"]
+
+[dependencies]
+regex = "1"
+log = "0.4.0"
+env_logger = "0.6.0"

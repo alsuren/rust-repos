@@ -1,0 +1,26 @@
+[package]
+name = "ws-tox"
+version = "0.1.0"
+authors = ["Сухарик <suhr@i2pmail.org>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dependencies.websocket]
+version = "0.22.4"
+default-features = false
+features = ["async"]
+
+[dependencies.tokio]
+version = "0.1"
+default-features = false
+features = ["tcp", "sync", "codec", "rt-full"]
+
+[dependencies.rstox]
+git = "https://github.com/tox-rs/rstox.git"
+
+[dependencies.ws-tox-protocol]
+git = "https://github.com/tox-rs/ws-tox-protocol.git"

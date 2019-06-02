@@ -1,0 +1,15 @@
+[package]
+name = "tap_parser"
+version = "0.1.0"
+authors = ["Sam Merrell <merrell.sam@gmail.com>"]
+
+[lib]
+name = "tap_parser"
+path = "src/lib.rs"
+
+[dependencies]
+regex = "0.1.69"
+term = "0.4.4"
+
+[dev-dependencies]
+hamcrest = "0.1.0"

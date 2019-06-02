@@ -1,0 +1,26 @@
+[package]
+authors = ["Young Wu <doomsplayer@gmail.com>"]
+name = "nextaction-rs"
+version = "0.2.2-pre"
+description = "Add nextaction tag to todoist obeying omnifocus' way"
+license = "MIT"
+
+[dependencies]
+hyper = "0.10"
+hyper-rustls = "0.3"
+serde = "1"
+serde_json = "1"
+serde_derive = "1"
+log = "0.3"
+env_logger = "0.4"
+url = "1.4"
+mime = "0.2"
+uuid = { version = "0.5", features = ["serde", "v4"] }
+error-chain = "0.10"
+config = "0.4"
+
+[lib]
+name = "nextaction"
+
+[badges]
+travis-ci = { repository = "doomsplayer/nextaction-rs" }

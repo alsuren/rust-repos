@@ -1,0 +1,12 @@
+[package]
+name = "LabBuilder"
+version = "0.1.0-dev"
+authors = ["Daniel Murphy"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+ipnet = "2.0"
+toml = "0.4"
+clap = "2.32"
+unicode-casefold = "0.2"

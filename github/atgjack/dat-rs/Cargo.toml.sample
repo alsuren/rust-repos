@@ -1,0 +1,16 @@
+[package]
+name = "dat"
+version = "0.1.0"
+authors = ["atgJack <jack@atg.io>"]
+
+[dependencies]
+generic-array = "0.9.0"
+digest = "0.7.1"
+blake2 = "0.7"
+lru-cache = "0.1.1"
+ed25519-dalek = "0.6.1"
+sha2 = "0.7.0"
+rand = "0.4.2"
+indexmap = "0.4.1"
+quick-protobuf = "0.6.0"
+futures = "0.1.18"

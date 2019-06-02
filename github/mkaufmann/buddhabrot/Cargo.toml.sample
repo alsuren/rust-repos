@@ -1,0 +1,10 @@
+[package]
+name = "buddhabrot"
+version = "0.1.0"
+authors = ["Moritz Kaufmann"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+image = "0.20"
+chrono = "0.4"

@@ -1,0 +1,43 @@
+[package]
+name = "papers"
+version = "0.3.1"
+authors = [
+    "Peter Gundel <peter.gundel@store2be.com",
+    "Fausto Núñez Alberro <fausto.nunez@store2be.com>",
+    "Tom Houlé <tom.houle@store2be.com>",
+]
+
+[dependencies]
+chrono = "0.4.0"
+dotenv = "0.11.0"
+error-chain = "0.11.0"
+futures = "0.1.17"
+futures-cpupool = "0.1.7"
+log = "0.3.8"
+mktemp = "0.3.1"
+lazy_static = "0.2.11"
+mime = "0.3.5"
+quickcheck = "0.4.1"
+hyper = "0.11.7"
+hyper-tls = "0.1.2"
+regex = "0.2.2"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+sloggers = "^0.2"
+rand = "0.3.18"
+rusoto_core = { git = "https://github.com/store2be/rusoto", branch = "presigned-url" }
+rusoto_s3 = { git = "https://github.com/store2be/rusoto", branch = "presigned-url" }
+structopt = "0.1.6"
+structopt-derive = "0.1.0"
+tar = "0.4.14"
+tera = "^0.10"
+tokio-core = "0.1.10"
+tokio-io = "0.1.4"
+tokio-process = "0.1.4"
+sentry = { git = "https://github.com/getsentry/sentry-rust", tag = "0.5.1" }
+uuid = { version = "0.6", features = ["v4"] }
+
+[dependencies.slog]
+version = "^2"
+features = ["max_level_debug", "release_max_level_debug"]

@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "components/test262_parser_tests",
+    "components/parser",
+    "components/evaluator",
+]
+
+[profile.release]
+lto = true
+
+[profile.bench]
+debug = true
+lto = true

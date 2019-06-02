@@ -1,0 +1,36 @@
+[package]
+name = "rench"
+version = "0.3.0"
+readme = "README.md"
+
+repository = "https://github.com/kbacha/rench"
+homepage = "https://github.com/kbacha/rench"
+
+description = "A simple http benchmark utility. Written in rust... rust + bench = rench"
+
+authors = ["Kevin Choubacha <chewbacha@gmail.com>"]
+keywords = [
+  "http",
+  "benchmark",
+  "cli"
+]
+
+categories = [
+  "web-programming",
+  "command-line-utilities",
+  "command-line-interface"
+]
+
+license = "MIT"
+
+[badges]
+circle-ci = { repository = "kbacha/rench" }
+travis-ci = { repository = "kbacha/rench" }
+
+[dependencies]
+clap = "2.29"
+reqwest = "0.9.9"
+hyper = "0.11"
+hyper-tls = "0.1"
+tokio-core = "0.1"
+futures = "0.1"

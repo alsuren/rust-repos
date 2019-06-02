@@ -1,0 +1,53 @@
+[package]
+name = "sporm"
+version = "0.1.0"
+authors = [
+    "Jovansonlee Cesar <ivanceras@gmail.com>",
+    "Mike Tang <miketang84@outlook.com>" 
+]
+license = "MIT"
+description = "An easy to use ORM for rust"
+readme = "README.md"
+repository = "https://github.com/sappworks/sporm"
+documentation = "https://github.com/sappworks/sporm"
+keywords = ["orm", "database", "sql"]
+
+[lib]
+name = "sporm"
+
+[features]
+#default = ["mysql"]
+default = []
+sqlite = ["rusqlite","r2d2_sqlite"]
+
+[dependencies.chrono]
+version = "0.2"
+features = ["serde"]
+
+[dependencies.postgres]
+#git = "https://github.com/sfackler/rust-postgres.git"
+version = "0.11"
+features = ["time", "uuid", "chrono", "serde_json"]
+
+#[dependencies.serde_json]
+#git = "https://github.com/serde-rs/json.git"
+#version = "0.7"
+
+[dependencies]
+serde = "0.7"
+serde_json = "0.7"
+serde_macros = "0.7"
+uuid = { version = "0.2", features = ["serde", "v4"] }
+log = "0.3"
+env_logger = "0.3"
+regex = "0.1"
+url = "0.2"
+time = "0.1"
+r2d2 = "0.7"
+r2d2_postgres = "0.10"
+rusqlite = { version = "0.7", optional = true }
+mysql = {version = "1.2.0", optional = true }
+
+[dependencies.r2d2_sqlite]
+version = "0.0.6"
+optional = true

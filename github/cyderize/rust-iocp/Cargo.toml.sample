@@ -1,0 +1,28 @@
+[package]
+
+name = "iocp"
+version = "0.0.6"
+authors = ["cyderize <admin@cyderize.org>"]
+
+description = "A Windows IOCP library for Rust"
+
+repository = "https://github.com/cyderize/rust-iocp.git"
+
+readme = "README.md"
+
+keywords = ["iocp", "input", "output", "completion", "port"]
+
+license = "MIT"
+
+[dependencies]
+kernel32-sys = "*"
+winapi = "*"
+
+[[example]]
+name = "example"
+path = "examples/main.rs"
+
+[dev_dependencies]
+num_cpus = "*"
+threadpool = "*"
+rand = "*"

@@ -1,0 +1,23 @@
+[package]
+name = "Dhole3D"
+version = "0.0.1"
+authors = ["George Crary <craryg@oregonstate.edu>"]
+build = "build.rs"
+rustflags = ["-C target-cpu=skylake"]
+
+[dependencies]
+sdl2 = "0.31.0"
+piston2d-graphics = "0.23.0"
+pistoncore-window = "0.30.0"
+pistoncore-input = "0.20.0"
+shader_version = "0.3.0"
+gl = "0.6.0"
+num-traits = "0.2"
+
+serde = { version = "1.0", features = ["derive"] }
+
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dependencies.pistoncore-sdl2_window]
+git = "https://github.com/PistonDevelopers/sdl2_window"

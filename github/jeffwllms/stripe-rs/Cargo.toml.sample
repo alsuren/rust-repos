@@ -1,0 +1,12 @@
+[package]
+name = "stripe-rs"
+authors = ["Tobias Schneider <schneider@jancona.com>"]
+version = "0.1.0"
+description = "Stripe bindings for Rust"
+license = "MIT"
+repository = "https://github.com/tobytailor/stripe-rs"
+
+[dependencies]
+curl = "0.2.10"
+rustc-serialize = "0.3.14"
+url = "0.2.35"

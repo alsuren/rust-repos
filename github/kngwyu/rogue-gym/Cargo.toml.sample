@@ -1,0 +1,8 @@
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+lto = false
+
+[workspace]
+members = ["act2gif", "core", "devui", "python", "uilib"]

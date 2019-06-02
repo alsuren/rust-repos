@@ -1,0 +1,18 @@
+cargo-features = ["edition"]
+
+[package]
+authors = ["Jan Nils Ferner <jn_ferner@hotmail.de>"]
+name = "game-of-life"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.11"
+
+[dev-dependencies]
+mockers = "0.12.0"
+mockers_derive = "0.12.0"
+lazy_static = "1.0"

@@ -1,0 +1,16 @@
+[package]
+name = "ipfs-client"
+version = "0.1.0"
+authors = ["Wim Looman <wim@nemo157.com>"]
+
+[dependencies]
+curl = "0.3.8"
+error-chain = "0.5.0"
+futures = "0.1.2"
+maddr = "0.2.0"
+mhash = "0.2.0"
+serde = "0.8"
+serde_derive = "0.8"
+serde_json = "0.8"
+tokio-core = "0.1.0"
+tokio-curl = "0.1.3"

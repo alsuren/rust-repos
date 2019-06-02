@@ -1,0 +1,18 @@
+[package]
+name = "pe"
+version = "0.1.0"
+authors = ["Thomas WACHE <thomas@wache.fr>"]
+
+[lib]
+name = "pe"
+crate-type = ["staticlib", "dylib", "rlib"]
+
+[dependencies]
+enum_primitive = "^0.1"
+failure = "^0.1"
+libc = "0.2"
+exe = { path = "../exe", version = "^0.1" }
+nom = { version = "^4", features = ["verbose-errors"] }
+
+[dev-dependencies]
+clap = "~2.27"

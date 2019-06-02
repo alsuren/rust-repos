@@ -1,0 +1,15 @@
+[package]
+name = "fern-journal"
+version = "0.2.0"
+license = "MIT"
+authors = ["Juhasz Sandor <blackghost1987@gmail.com>"]
+repository = "https://github.com/endticket/fern-journal"
+description = "Fern logger for Systemd Journal logging"
+
+[badges]
+circle-ci = { repository = "endticket/fern-journal", branch = "master" }
+
+[dependencies]
+log = "0.3.8"
+fern = "0.4.0"
+systemd = "0.1.0"

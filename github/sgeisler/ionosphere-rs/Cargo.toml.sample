@@ -1,0 +1,14 @@
+[package]
+name = "ionosphere"
+version = "0.3.0"
+authors = ["Sebastian Geisler <sebastian@blockstream.io>"]
+description = "Library to interact with the Blockstream satellite API"
+license = "MIT"
+
+[dependencies]
+clightningrpc = "0.1.0"
+lightning-invoice = "0.1.0"
+reqwest = "0.9"
+serde = "1.0"
+serde_derive = "1.0"
+url = "1.7"

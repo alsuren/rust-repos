@@ -1,0 +1,9 @@
+[package]
+name = "speech-dispatcher-sys"
+version = "0.1.0"
+authors = ["Nolan Darilek <nolan@thewordnerd.info>"]
+repository = "https://gitlab.com/ndarilek/speech-dispatcher-sys"
+
+[build-dependencies]
+bindgen = "0.32"
+gcc = "0.3"

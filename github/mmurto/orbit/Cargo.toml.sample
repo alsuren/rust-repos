@@ -1,0 +1,10 @@
+[package]
+authors = ["Mikko Murto <mikko.murto@gmail.com>"]
+name = "easying"
+version = "0.1.0"
+
+[dependencies]
+ggez = "*"
+
+[profile.release]
+debug = true

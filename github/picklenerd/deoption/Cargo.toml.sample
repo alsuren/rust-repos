@@ -1,0 +1,8 @@
+[package]
+name = "deoption"
+version = "0.1.0"
+authors = ["picklenerd <jordan.t.grace@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+deoption_derive = { path = "./deoption_derive" }

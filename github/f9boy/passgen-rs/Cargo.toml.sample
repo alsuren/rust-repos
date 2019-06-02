@@ -1,0 +1,18 @@
+[package]
+name = "passgen"
+version = "0.2.0"
+description = "A tool to generate random passwords written in rust"
+authors = ["Nathaniel Barragan <nathanielbarragan@gmail.com>"]
+edition = "2018"
+
+[lib]
+name="passgen"
+path="src/lib.rs"
+
+[[bin]]
+name="passgen"
+path="src/main.rs"
+
+[dependencies]
+structopt = "0.2"
+rand = "*"

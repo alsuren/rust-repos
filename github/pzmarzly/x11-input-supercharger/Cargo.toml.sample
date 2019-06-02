@@ -1,0 +1,36 @@
+[package]
+name = "x11-input-supercharger"
+version = "0.5.0-alpha"
+description = "Adds system-wide Windows-like scrolling mode and conditional clicking using keyboard"
+authors = ["Paweł Zmarzły <pawo2500@gmail.com>"]
+repository = "https://github.com/pzmarzly/x11-input-supercharger"
+keywords = ["x11", "mouse", "keyboard", "xserver", "tablet"]
+readme = "README.md"
+categories = ["command-line-utilities"]
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+serde = "1.0.89"
+serde_derive = "1.0.89"
+toml = "0.5.0"
+lazy-panic = "1.0.0"
+const-cstr = "0.3.0"
+ctrlc = "3.1.1"
+static_assets = "0.1.1"
+movie = "0.1.0"
+
+[dependencies.x11]
+version = "2.18.1"
+features = ["xlib", "xinput"]
+
+[dependencies.gtk]
+version = "0.6.0"
+features = ["v3_18"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+lto = true

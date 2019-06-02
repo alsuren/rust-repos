@@ -1,0 +1,13 @@
+[package]
+name = "knuckle"
+version = "0.1.0"
+authors = ["Erik Price"]
+build = "build.rs"
+
+[lib]
+
+name = "knuckle"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "0.1.8"

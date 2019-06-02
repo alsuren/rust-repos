@@ -1,0 +1,23 @@
+[package]
+authors = [
+    "Alexey Galakhov <agalakhov@snapview.de>",
+    "Daniel Abramov <dabramov@snapview.de>",
+    "Kornel Lesiński <kornel@geekhood.net>",
+    "Richard Diamond <wichard@vitalitystudios.com>",
+]
+description = "Rust wrapper to libvpx"
+keywords = ["vp9", "vp8", "webm", "video-encoder", "video-decoder"]
+name = "libvpx_rust"
+repository = "https://github.com/snapview/libvpx-rs"
+version = "0.1.0"
+
+[dependencies]
+libc = "*"
+time = "*"
+
+[dependencies.libvpx-native-sys]
+path = "src/sys"
+
+[lib]
+name = "libvpx_rust"
+path = "src/lib/lib.rs"

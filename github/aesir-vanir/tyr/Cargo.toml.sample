@@ -1,0 +1,28 @@
+[package]
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+license = "MIT/Apache-2.0"
+name = "tyr"
+readme = "README.md"
+version = "0.1.0"
+
+[dependencies]
+Inflector = "0"
+clap = "2"
+derive_builder = "0"
+error-chain = "0"
+getset = "0"
+lazy_static = "0"
+mimir = "0"
+mustache = "0"
+rustc-serialize = "0"
+serde = "1"
+serde_derive = "1"
+term = "0"
+
+[[bin]]
+name = "tyr"
+path = "src/main.rs"
+
+[[bin]]
+name = "cargo-tyr"
+path = "src/cli/main.rs"

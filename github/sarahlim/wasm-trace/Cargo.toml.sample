@@ -1,0 +1,12 @@
+[package]
+name = "wasm-trace"
+version = "0.1.0"
+authors = ["Sarah Lim <sarah@sarahlim.com>"]
+
+[dependencies]
+parity-wasm = "0.31"
+lazy_static = "1.0.1"
+itertools = "0.7.8"
+
+[dev-dependencies]
+parity-wasm = "0.31"

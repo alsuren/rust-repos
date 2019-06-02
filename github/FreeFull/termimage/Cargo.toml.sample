@@ -1,0 +1,9 @@
+[package]
+name = "termimage"
+version = "0.1.0"
+authors = ["Filip Szczepański <jazz2rulez@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+termion = "1.1.3"
+image = "0.10.4"

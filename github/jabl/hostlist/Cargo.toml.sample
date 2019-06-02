@@ -1,0 +1,17 @@
+[package]
+name = "hostlist"
+version = "0.2.1"
+authors = ["Janne Blomqvist <blomqvist.janne@gmail.com>"]
+edition = "2018"
+description = "Hostlist library for Rust and CLI app"
+license = "MIT"
+homepage = "https://github.com/jabl/hostlist"
+repository = "https://github.com/jabl/hostlist"
+readme = "README.md"
+
+[badges]
+travis-ci = { repository = "jabl/hostlist" }
+
+[dependencies]
+nom = { version = "^4.1", features = ["verbose-errors"] }
+clap = "2"

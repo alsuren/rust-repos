@@ -1,0 +1,22 @@
+[package]
+name = "oauth2"
+authors = ["Alex Crichton <alex@alexcrichton.com>", "Florin Lipan <florinlipan@gmail.com>", "David A. Ramos <ramos@cs.stanford.edu>"]
+version = "3.0.0-alpha.1"
+license = "MIT/Apache-2.0"
+description = "Bindings for exchanging OAuth 2 tokens"
+repository = "https://github.com/ramosbugs/oauth2-rs"
+
+[dependencies]
+base64 = "0.9"
+curl = "0.4.0"
+failure = "0.1"
+failure_derive = "0.1"
+rand = "0.6"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+sha2 = "0.7"
+url = "1.0"
+
+[dev-dependencies]
+mockito = "0.16.0"

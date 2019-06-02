@@ -1,0 +1,17 @@
+[package]
+name = "rabbitmq"
+version = "0.1.0"
+authors = ["zhangsoledad <787953403@qq.com>"]
+
+[dependencies]
+librabbitmq-sys = { path = "librabbitmq-sys" }
+libc = "0.2"
+bytes = "0.4"
+log = "0.3"
+futures = "0.1"
+time = "0.1"
+config = "0.7"
+serde_derive = "1.0"
+serde = "1.0"
+tokio-core = "0.1"
+parking_lot = "0.5"

@@ -1,0 +1,8 @@
+[package]
+name = "rxrs"
+version = "0.1.0"
+authors = ["anders martini <andersmartini2@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+#![feature(type_ascription)]

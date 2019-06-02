@@ -1,0 +1,13 @@
+[package]
+
+name = "podiff-review"
+version = "0.0.1"
+authors = [ "est31 <MTest31@outlook.com>" ]
+
+[dependencies]
+git2 = "0.3.1"
+toml = "0.1.22"
+rustc-serialize = "0.3.16"
+hyper = "0.9.1"
+url = "1.0.0"
+regex = "0.1.41"

@@ -1,0 +1,75 @@
+[package]
+name = "dose-response"
+version = "1.0.0"
+description = "Roguelike game where you play an addict"
+authors = ["Tomas Sedovic <tomas@sedovic.cz>"]
+homepage = "https://tryjumping.com/dose-response-roguelike/"
+repository = "https://github.com/tryjumping/dose-response"
+edition = "2018"
+license = "GPL-3.0"
+build = "build.rs"
+exclude = ["scripts/*", "replays/*", "screenshots/*", "ci/*",
+           "web-src/*", "*.js", "*.css", "*.html",
+           "notes.org", "SAVEDGAME.sav", "out-dir-path", "dose-response.log",
+           "videos/*", "*.mp4 "]
+
+[[bin]]
+name = "dose-response"
+path = "src/main.rs"
+
+[dependencies]
+bincode = "1.0"  # For serialising the game save state into a binary format
+bitflags = "1.0"
+clap = { version = "2.20.1", optional = true }
+chrono = { version = "0.4.0", optional = true }
+gl = { version = "0.10", optional = true }
+glutin = { version = "0.21.0", optional = true }
+image = { version = "0.20", optional = true }
+line_drawing = "0.7"
+log = "0.4.1"
+log-panics = { version = "2.0", features = ["with-backtrace"], optional = true }
+num-rational = { version = "0.2.1", default-features = false, features = ["serde"] }
+rand = { version = "0.6", features = ["serde1"] }
+rand_isaac = "0.1.0"
+sdl2 = { version = "0.31.0", features = ["bundled"], optional = true }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+simplelog = { version = "0.5.2", default-features = false, features = [], optional = true }
+toml_edit = "0.1"
+zmq = { version = "0.8", optional = true }
+
+[build-dependencies]
+rusttype = "0.7"
+image = "0.20"
+
+# Only compile winres on Windows targets.
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
+
+
+[features]
+default = ["dev"]
+prod = ["desktop", "glutin-backend"]
+dev = ["desktop", "glutin-backend", "cheating", "replay", "stats", "verifications"]
+all-backends = ["glutin-backend", "sdl-backend"]
+desktop = ["cli", "fullscreen"]
+recording = ["prod", "replay"]
+# TODO: add a "trailer" feature for the gameplay (not UI) changes under "recording"?
+# So you can record a normal game / replay too.
+
+cheating = []
+cli = ["clap", "simplelog", "log-panics"]
+fullscreen = []
+glutin-backend = ["glutin", "gl", "image"]
+remote = ["zmq"]
+replay = ["chrono"]
+sdl-backend = ["sdl2", "gl", "image"]
+sdl-static-link = ["sdl2", "sdl2/static-link"]
+stats = []
+verifications = []
+web = []
+
+
+[profile.release]
+codegen-units = 1
+lto = true

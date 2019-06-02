@@ -1,0 +1,14 @@
+[package]
+name = "ecsim"
+version = "0.1.0"
+authors = ["Jeremy Soller <jeremy@system76.com>"]
+edition = "2018"
+
+[dependencies]
+area8051 = { path = "area8051" }
+
+[features]
+default = ["debug_spi", "debug_xram"]
+debug = ["area8051/debug"]
+debug_spi = []
+debug_xram = []

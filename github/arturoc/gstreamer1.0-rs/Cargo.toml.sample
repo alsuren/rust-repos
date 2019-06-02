@@ -1,0 +1,16 @@
+[package]
+name    = "gstreamer"
+description = "Idiomatic bindings for GStreamer"
+homepage = "https://github.com/arturoc/gstreamer1.0-rs"
+repository = "https://github.com/arturoc/gstreamer1.0-rs"
+documentation = "http://rin.rs/docs/gst/"
+readme = "README.md"
+license = "MIT"
+version = "0.7.2"
+authors = [ "Arturo Castro <mail@arturocastro.net>" ]
+links = "gstreamer"
+build = "build.rs"
+
+[lib]
+name = "gst"
+path = "src/lib.rs"

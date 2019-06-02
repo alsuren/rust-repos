@@ -1,0 +1,11 @@
+[package]
+name = "tree_game"
+version = "0.1.0"
+authors = ["Alex Jones <alexander.jones@softwire.com>"]
+
+[dependencies]
+nalgebra = "*"
+num = "*"
+time = "*"
+generic_game = { path = "C:/Users/Jonesey13/projects/generic_game" }
+lazy_static = "*"

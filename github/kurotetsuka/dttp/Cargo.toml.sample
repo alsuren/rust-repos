@@ -1,0 +1,19 @@
+[package]
+
+name = "dttp"
+version = "0.3.0"
+authors = ["kurotetsuka <kurotetsuka@gmail.com>"]
+
+[dependencies]
+arcmutex = "^0.2"
+gpgme = "^0.6"
+peg = "^0.5"
+rand = "^0.3"
+regex = "^0.2"
+rustc-serialize = "^0.3"
+#rust-crypto = "*"
+#ring = "*"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+time = "^0.1"

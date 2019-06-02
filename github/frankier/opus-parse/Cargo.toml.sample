@@ -1,0 +1,16 @@
+[package]
+name = "opus-parse"
+version = "0.0.3"
+authors = [ "Frankie Robertson <frankie@robertson.name>" ]
+homepage = "https://github.com/frankier/opus-parse"
+license = "CC0-1.0"
+description = "Library to parse OPUS"
+
+[dependencies]
+itertools = "0.6.0"
+minidom = "0.3.0"
+xml-rs = "0.4.1"
+flate2 = "0.2.19"
+derive-error-chain = "0.10.1"
+error-chain = "0.10.0"
+walkdir = "2"

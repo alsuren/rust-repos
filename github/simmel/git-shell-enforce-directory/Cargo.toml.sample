@@ -1,0 +1,16 @@
+[package]
+name = "git-shell-enforce-directory"
+version = "1.0.0"
+description = "Restrict git-shell into a directory"
+authors = ["Simon Lundström <simmel@soy.se>"]
+documentation = "https://docs.rs/git-shell-enforce-directory/"
+homepage = "https://github.com/simmel/git-shell-enforce-directory"
+repository = "https://github.com/simmel/git-shell-enforce-directory"
+license = "ISC"
+
+[dependencies]
+clap = "^2.31"
+regex = "^0.2"
+exec = "^0.3"
+log = "^0.4"
+env_logger = "^0.5"

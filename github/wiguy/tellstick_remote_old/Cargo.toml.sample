@@ -1,0 +1,22 @@
+[package]
+name = "tellstick_remote"
+version = "0.1.0"
+authors = ["stian <baekkevold@gmail.com>"]
+build = "build.rs"
+
+[[bin]]
+name = "reporter"
+path = "src/reporter.rs"
+
+[[bin]]
+name = "wshandler"
+path = "src/wshandler.rs"
+
+[dependencies]
+libc = "0.1.8"
+rustc-serialize = "0.3"
+time = "0.1.26"
+log = "0.3.1"
+env_logger = "0.3.1"
+websocket = "0.13.2"
+

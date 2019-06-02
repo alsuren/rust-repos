@@ -1,0 +1,10 @@
+[package]
+name = "lifx-applet"
+version = "0.1.0"
+authors = ["videah <videah@selfish.systems>"]
+edition = "2018"
+
+[dependencies]
+systray = "0.3.0"
+lifx = {git = "https://github.com/ferristseng/rust-lifx"}
+lazy_static = "1.2.0"

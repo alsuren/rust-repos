@@ -1,0 +1,25 @@
+[package]
+name = "nuklear_rs"
+version = "0.1.0"
+authors = ["George Burton <burtonageo@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+bindgen_plugin = { version = "0.16", optional = true }
+bitflags = "0.6"
+
+[dev-dependencies]
+glium = "0.14.0"
+
+[build-dependencies]
+gcc = "0.3"
+
+[features]
+default = ["rust_allocator", "native_clipboard"]
+font_baking = []
+io = []
+malloc_allocator = []
+native_clipboard = []
+rust_allocator = []
+use_bindgen_plugin = []
+vertex_buffers = []

@@ -1,0 +1,9 @@
+[package]
+name = "cpu-usage-over-time"
+version = "0.1.0"
+authors = ["Alex Crichton <alex@alexcrichton.com>"]
+
+[dependencies]
+num_cpus = "1"
+libc = "0.2"
+log = "0.4"

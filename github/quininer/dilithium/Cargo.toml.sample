@@ -1,0 +1,26 @@
+[package]
+name = "dilithium"
+version = "0.2.0-alpha.3"
+authors = ["quininer <quininer@live.com>"]
+description = "Digital Signatures from Module Lattices"
+repository = "https://github.com/quininer/dilithium"
+license = "MIT"
+
+[features]
+default = [ "mode2" ]
+mode0 = []
+mode1 = []
+mode2 = []
+mode3 = []
+
+[dependencies]
+rand_core = { version = "0.2", default-features = false }
+arrayref = "0.3"
+itertools = "0.7"
+byteorder = "1"
+sha3 = "0.7"
+digest = "0.7"
+
+[dev-dependencies]
+rand = "0.5"
+hex = "0.3"

@@ -1,0 +1,11 @@
+[package]
+
+name = "nss"
+version = "0.1.0"
+authors = ["Mathijs van de Nes <git@mathijs.vd-nes.nl>"]
+
+[dependencies]
+libc = "0.1"
+
+[dev_dependencies]
+rustc-serialize = "0.3"

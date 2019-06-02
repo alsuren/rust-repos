@@ -1,0 +1,26 @@
+[package]
+name = "titlecase"
+description = "A tool that capitalizes text according to a style defined by John Gruber for post titles on his website Daring Fireball."
+version = "0.10.0"
+authors = ["Wesley Moore <wes@wezm.net>"]
+
+documentation = "https://docs.rs/crate/titlecase"
+repository = "https://github.com/wezm/titlecase"
+
+readme = "README.md"
+license = "MIT"
+
+keywords = ["title", "case", "capitalization", "capitalisation", "capitalize"]
+categories = ["text-processing"]
+
+[badges]
+travis-ci = { repository = "wezm/titlecase" }
+appveyor = { repository = "wezm/titlecase" }
+
+[[bin]]
+name = "titlecase"
+doc = false
+
+[dependencies]
+lazy_static = "0.2.8"
+regex = "0.2.2"

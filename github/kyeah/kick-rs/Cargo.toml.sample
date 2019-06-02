@@ -1,0 +1,23 @@
+[package]
+name = "kickstarter"
+version = "0.1.0"
+authors = ["Kevin Yeh <kevinyeah@utexas.edu>"]
+repository = "https://github.com/kyeah/kick-rs"
+description = "The real Kickstarter application."
+
+[dependencies]
+chrono = "0.2"
+docopt = "0.6"
+lazy_static = "0.1"
+postgres = "0.10"
+regex = "0.1"
+rustc-serialize = "0.3"
+toml = "0.1"
+
+[dependencies.rustorm]
+git="https://github.com/kyeah/rustorm"
+branch="bug-fixes"
+
+[dependencies.codegenta]
+git="https://github.com/kyeah/codegenta"
+branch="bug-fixes"

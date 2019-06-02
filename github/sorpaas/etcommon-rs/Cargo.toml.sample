@@ -1,0 +1,10 @@
+[workspace]
+members = [
+  "./rlp",
+  "./bigint",
+  "./hexutil",
+  "./block",
+  "./block-core",
+  "./trie",
+  "./bloom",
+]

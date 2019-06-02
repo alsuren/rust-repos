@@ -1,0 +1,22 @@
+[package]
+name = "bittorrent"
+version = "0.1.0"
+authors = ["aliang <aliang2344@gmail.com>"]
+
+[dependencies]
+rust-crypto = "0.2"
+rand = "0.3"
+url = "0.2"
+hyper = "0.6"
+time = "0.1"
+
+[dependencies.bencode]
+path = "src/bencode"
+
+[[bin]]
+name = "main"
+src = "src/main.rs"
+
+[[bin]]
+name = "bt_messages"
+src = "src/bt_messages.rs"

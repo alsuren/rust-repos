@@ -1,0 +1,21 @@
+[package]
+name = "baik"
+version = "10.0.0"
+authors = ["anak10thn <anak10thn@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+pest = "2.1.0"
+pest_derive = "2.1.0"
+serde_json = "1.0.39"
+serde = "1.0.89"
+quick-error = "1.2.2"
+clap = "2.32.0"
+
+[[bin]]
+name = "baik"
+doc = false
+
+[lib]
+name = "baik"
+path = "src/lib.rs"

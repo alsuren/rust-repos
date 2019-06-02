@@ -1,0 +1,10 @@
+[package]
+name = "advant_of_code_2018"
+version = "0.1.0"
+authors = ["Gaël Berthaud-Müller <blacksponge@tuta.io>"]
+
+[dependencies]
+regex = "1"
+chrono = "0.4"
+itertools = "0.8.0"
+rayon = "1.0.3"

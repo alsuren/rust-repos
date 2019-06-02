@@ -1,0 +1,11 @@
+[package]
+name = "pillars"
+version = "0.9.0"
+authors = ["David Curthoys <david.curthoys@googlemail.com>"]
+
+[dependencies]
+sdl2 = "0.31"
+image = "*"
+rand = "*"
+maplit = "*"
+time = "*"

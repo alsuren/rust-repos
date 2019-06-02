@@ -1,0 +1,19 @@
+[package]
+name = "pacman"
+version = "0.1.0"
+authors = ["Coeuvre Wong <coeuvre@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+log = "0.4"
+lazy_static = "1.0"
+failure = "0.1"
+env_logger = "*"
+
+bridge = { path = "src/bridge" }
+gl = { path = "src/gl" }
+stb = { path = "src/stb" }
+
+[workspace]

@@ -1,0 +1,15 @@
+[package]
+name = "packed"
+version = "0.4.2"
+authors = ["arcnmx"]
+
+description = "A safe #[repr(packed)] interface"
+keywords = ["nue", "packed", "data", "unaligned", "aligned"]
+
+documentation = "http://arcnmx.github.io/packed-rs/packed/"
+repository = "https://github.com/arcnmx/packed-rs"
+readme = "README.md"
+license = "MIT"
+
+[features]
+oibit = []

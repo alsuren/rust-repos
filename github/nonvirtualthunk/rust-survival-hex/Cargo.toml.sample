@@ -1,0 +1,78 @@
+[workspace]
+members = ["arx_common", "samvival/control", "arx_game", "samvival/game", "arx_graphics", "main", "arx_gui"]
+
+[dependencies]
+piston = "0.37.0"
+piston_window = "0.80.0"
+find_folder = "*"
+gfx_device_gl = "0.15.3"
+gfx = "0.17.0"
+piston2d-gfx_graphics = "0.51.0"
+cgmath = "0.16.1"
+lazy_static = "1.0.1"
+image = "0.19.0"
+pathfinding = "0.8.0"
+conrod = { version = "^0.60.0", features = ["piston"] }
+noisy_float = "0.1.4"
+interpolation = "0.1.0"
+dimensioned = "0.6.0"
+either = "1.4.0"
+enum-map = "0.2.23"
+rand = "0.4"
+anymap = "0.12.1"
+spectral = "0.6.0"
+log = "0.4"
+pretty_env_logger = "0.2"
+
+[dependencies.vecmath]
+git = "https://github.com/PistonDevelopers/vecmath"
+
+
+[dependencies.arx_game]
+path = "arx_game"
+version = "0.1.0"
+
+[dependencies.samvival_data]
+path = "samvival/data"
+version = "0.1.0"
+
+[dependencies.samvival_game]
+path = "samvival/game"
+version = "0.1.0"
+
+[dependencies.samvival_ai]
+path = "samvival/ai"
+version = "0.1.0"
+
+[dependencies.arx_graphics]
+path = "arx_graphics"
+version = "0.1.0"
+
+[dependencies.samvival_graphics]
+path = "samvival/graphics"
+version = "0.1.0"
+
+[dependencies.samvival_control]
+path = "samvival/control"
+version = "0.1.0"
+
+[dependencies.arx_common]
+path = "arx_common"
+version = "0.1.0"
+
+[dependencies.arx_macros]
+path = "arx_macros"
+version = "0.1.0"
+
+[dependencies.arx_gui]
+path = "arx_gui"
+version = "0.1.0"
+
+[dependencies.arx_gui_macros]
+path = "arx_gui_macros"
+version = "0.1.0"
+
+[profile.release]
+debug = true
+#[target.x86_64-apple-darwin.freetype]
+#rustc-link-lib = "freetype:dylib"

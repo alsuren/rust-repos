@@ -1,0 +1,9 @@
+[package]
+name = "reversi"
+version = "0.1.0"
+authors = ["Peat Bakke <peat@peat.org>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+sha2 = "0.8"

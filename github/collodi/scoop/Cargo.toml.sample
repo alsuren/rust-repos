@@ -1,0 +1,17 @@
+[package]
+name = "scoop"
+version = "0.1.5"
+authors = ["collodi <wkim149@gmail.com>"]
+description = "Dumb scheduler daemon"
+license = "MIT"
+
+[dependencies]
+daemonize = "0.3.0"
+chrono = "0.4.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0.17"
+docopt = "0.8.3"
+rand = "0.4"
+notify = "4.0.3"
+libc = "0.2.40"

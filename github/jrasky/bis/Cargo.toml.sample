@@ -1,0 +1,16 @@
+[package]
+name = "bis"
+version = "0.1.0"
+authors = ["Jerome Rasky <jerome@rasky.co>"]
+links = "bis_c"
+build = "build.rs"
+
+[dependencies]
+libc = "*"
+log = "*"
+env_logger = "*"
+term = "*"
+unicode-width = "*"
+
+[build-dependencies]
+gcc = "*"

@@ -1,0 +1,31 @@
+[package]
+name = "schluesselwert"
+version = "0.1.0"
+authors = ["Bastian Köcher <git@kchr.de>"]
+
+[dependencies]
+raft = "0.3.1"
+rocksdb = "0.10.1"
+tokio = "0.1.7"
+failure = "0.1.1"
+byteorder = "1.2.3"
+protobuf = "2.0.4"
+bincode = "1.0.1"
+serde_derive = "1.0.70"
+serde = "1.0.70"
+futures = "0.1"
+bytes = "0.4.9"
+tokio-io = "0.1.7"
+tokio-timer = "0.2.4"
+rand = "0.5.4"
+
+[dev-dependencies]
+tempdir = "0.3.7"
+criterion = "0.2"
+
+[[bench]]
+name = "bench_kv"
+harness = false
+
+[replace]
+"tokio-executor:0.1.2" = { git = 'https://github.com/tokio-rs/tokio.git', rev = '0490280d662f000aff674593cc9a4f69a1cd1171' }

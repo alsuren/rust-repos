@@ -1,0 +1,17 @@
+[package]
+name = "rust-tensorflow-face-detection"
+version = "0.1.0"
+authors = ["Mohamed Meftah <mohamed-ted@live.com>"]
+edition = "2018"
+
+[dependencies]
+tensorflow = "0.13.0"
+structopt = "0.2"
+image = "0.21.0"
+imageproc = "0.18.0"
+log = "0.4.6"
+pretty_env_logger = "0.3"
+serde="1.0.90"
+serde_derive="1.0.90"
+futures="0.1.26"
+actix-web="1.0.0-alpha.5"

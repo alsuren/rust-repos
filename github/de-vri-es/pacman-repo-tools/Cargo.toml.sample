@@ -1,0 +1,11 @@
+[package]
+name        = "pacman-repo-tools"
+description = "pacman repository management tools"
+version     = "0.1.0"
+license     = "BSD-2-Clause"
+authors     = ["Maarten de Vries <maarten@de-vri.es>"]
+
+[dependencies]
+maplit = "*"
+walkdir = "*"
+slice-tracker = {git = "https://github.com/de-vri-es/rust-slice-tracker"}

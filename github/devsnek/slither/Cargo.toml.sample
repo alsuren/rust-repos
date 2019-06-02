@@ -1,0 +1,41 @@
+[package]
+name = "slither"
+version = "0.1.0"
+authors = ["Gus Caplan <me@gus.host>"]
+edition = "2018"
+
+[lib]
+name = "slither"
+path = "src/lib.rs"
+
+[[bin]]
+name = "slither"
+path = "src/bin.rs"
+
+[profile.release]
+lto = true
+
+[dependencies.gc]
+path = "rust-gc/gc"
+
+[dependencies.gc_derive]
+path = "rust-gc/gc_derive"
+
+[dependencies]
+clap = "2"
+num = "0.2"
+byteorder = "1.3"
+indexmap = "1.0"
+mio = "0.6"
+lazy_static = "1.2"
+threadpool = "1.7"
+num_cpus = "1.9"
+regex = "1.1"
+rustyline = "3.0"
+unic = "0.9"
+phf = { version = "0.7" }
+ryu = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+
+[build-dependencies]
+phf_codegen = "0.7"

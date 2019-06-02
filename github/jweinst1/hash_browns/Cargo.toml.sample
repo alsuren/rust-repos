@@ -1,0 +1,11 @@
+[package]
+name = "hash_browns"
+version = "0.1.1"
+authors = ["Joshua Weinstein <jweinstein@splunk.com>"]
+edition = "2018"
+readme = "README.md"
+description = "A crate full of fast, effecient hashing functions."
+license = "MIT"
+repository = "https://github.com/jweinst1/hash_browns"
+
+[dependencies]

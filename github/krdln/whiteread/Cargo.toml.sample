@@ -1,0 +1,21 @@
+[package]
+name = "whiteread"
+version = "0.4.4"
+authors = ["Michał Krasnoborski <mkrdln@gmail.com>"]
+
+description = "Crate for easily reading whitespace-separated values from strings or input."
+
+documentation = "https://docs.rs/whiteread/0.4.3/whiteread/"
+repository = "https://github.com/krdln/whiteread"
+readme = "README.md"
+keywords = ["read", "input", "scanf", "whitespace", "iostreams"]
+categories = ["parsing"]
+license = "MIT"
+
+[[bin]]
+name = "whiteread-template"
+path = "src/main.rs"
+doc = false
+
+[dev-dependencies]
+tempfile = "2.1.5"

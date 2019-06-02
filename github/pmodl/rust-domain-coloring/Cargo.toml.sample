@@ -1,0 +1,9 @@
+[package]
+name = "domain-coloring"
+version = "0.1.3"
+authors = ["Paul Modlin <paulmodlin@vivaldi.net>"]
+
+[dependencies]
+image = "*"
+num-complex = "*"
+rayon = "*"

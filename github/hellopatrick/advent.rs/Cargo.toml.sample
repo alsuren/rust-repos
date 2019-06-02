@@ -1,0 +1,14 @@
+[package]
+name = "advent"
+version = "0.1.0"
+authors = ["Patrick Rogers <patrick@donotforget.xyz>"]
+
+[dependencies]
+regex = "1"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "speedy"
+harness = false

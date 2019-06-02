@@ -1,0 +1,9 @@
+[package]
+name = "base64"
+version = "1.0.0"
+authors = ["Nikita Zubkov <zubchick@yandex.ru>"]
+license = "MIT"
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"

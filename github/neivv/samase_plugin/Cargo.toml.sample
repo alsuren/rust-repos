@@ -1,0 +1,17 @@
+[package]
+name = "samase_plugin"
+version = "0.5.0"
+authors = ["Markus Heikkinen <ittevien@gmail.com>"]
+
+[dependencies]
+bincode = "1.0"
+byteorder = "1.2"
+flate2 = "1.0.1"
+lazy_static = "1.0"
+libc = "0.2"
+log = "0.4"
+parking_lot = "0.8"
+quick-error = "1.1.0"
+serde = "1.0.21"
+serde_derive = "1.0.21"
+thread_local = "0.3"

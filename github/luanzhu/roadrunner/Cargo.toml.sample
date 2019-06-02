@@ -1,0 +1,30 @@
+[package]
+name = "roadrunner"
+version = "0.1.1"
+authors = ["Yanhao Zhu <yanhaozhu@gmail.com>"]
+description = "A rust rest client based on hyper"
+repository = "https://github.com/luanzhu/roadrunner"
+keywords = ["rest", "client", "hyper"]
+categories = ["web-programming", "web-programming::http-client"]
+license = "MIT"
+
+[dependencies]
+hyper = "0.11"
+hyper-tls = "0.1.1"
+native-tls= "0.1"
+log = "0.3.7"
+futures = "0.1.11"
+tokio-core = "0.1.6"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+tokio-io = "0.1"
+url = "1.4.0"
+serde="1.0"
+serde_json = "1.0"
+serde_derive="1.0"
+flate2 = "0.2.19"
+encoding = "0.2.32"
+mime = "0.3"
+[dev-dependencies]
+base64 = "~0.5.0"
+env_logger = "0.4.2"

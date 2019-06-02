@@ -1,0 +1,19 @@
+[package]
+name = "ph"
+version = "0.0.0"
+
+[lib]
+name = "ph"
+crate-type = ["rlib", "staticlib", "dylib"]
+
+[profile.release]
+debug = true
+
+[dependencies]
+num_cpus = "0.2.6"
+gl = "*"
+time = "*"
+rand = "*"
+
+[dev-dependencies]
+glfw = "*"

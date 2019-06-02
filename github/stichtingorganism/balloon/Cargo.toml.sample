@@ -1,0 +1,13 @@
+[package]
+name = "balloon"
+version = "0.0.1"
+description = "Balloon Hash with Blake2b"
+authors = ["hello@organism.ai"]
+license = "Apache-2.0"
+repository = "https://github.com/stichtingorganism/balloon"
+
+[dependencies]
+blake2-rfc = "0.2"
+subtle = "0.7.0"
+num-bigint = "0.2"
+num-traits = "0.2"

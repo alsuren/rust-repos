@@ -1,0 +1,35 @@
+[package]
+name = "decksterity"
+version = "0.1.0"
+authors = ["Louis Pilfold <louis@lpil.uk>"]
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "decksterity"
+path = "src/main.rs"
+
+[dependencies]
+# Audio
+dsp-chain = "0.13" # Chaining of DSP nodes (MIT)
+claxon = "0.4"     # FLAC decoder (Apache 2.0)
+midir = "0.5"      # MIDI processing (MIT)
+jack = "0.6.0-rc1" # audio server client (MIT)
+
+# Config r/w
+serde_derive = "1.0" # Apache 2.0
+serde = "1.0"        # Apache 2.0
+toml = "0.4"         # Apache 2.0
+clap = "2.31"        # Command line argument parser - MIT
+
+# Misc
+walkdir = "2.0"     # MIT
+regex = "0.2"       # Apache 2.0
+lazy_static = "1.0" # Apache 2.0
+env_logger = "*"    # Apache 2.0
+
+# Web
+actix = "0.5"     # Apache 2.0
+actix-web = "0.5" # Apache 2.0

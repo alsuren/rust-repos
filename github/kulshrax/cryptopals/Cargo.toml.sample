@@ -1,0 +1,10 @@
+[package]
+name = "cryptopals"
+version = "0.1.0"
+authors = ["Arun Kulshreshtha <kulshrax@gmail.com>"]
+
+[dependencies]
+itertools = "0.5.7"
+openssl = "0.9.3"
+rand = "0.3.15"
+rustc-serialize = "0.3"

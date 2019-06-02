@@ -1,0 +1,10 @@
+[package]
+name = "dining_hakkers"
+version = "0.1.0"
+authors = ["Yury Gribkov <yury.gribkov@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix = "0.7.7"
+futures = "0.1.25"
+rand = "0.6.1"

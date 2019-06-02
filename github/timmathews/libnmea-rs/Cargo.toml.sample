@@ -1,0 +1,11 @@
+[package]
+name = "libnmea"
+version = "0.1.0"
+authors = ["Tim Mathews <tim@signalk.org>"]
+license = "Apache-2.0"
+
+[[bin]]
+name = "printlist"
+doc = false
+
+[dependencies]

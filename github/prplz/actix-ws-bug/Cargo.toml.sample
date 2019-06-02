@@ -1,0 +1,11 @@
+[package]
+name = "actix-ws-bug"
+version = "0.1.0"
+authors = ["Michael Himing <mhiming@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix = "0.8.1"
+actix-http = "0.2.1"
+actix-web = "1.0.0-rc"
+actix-web-actors = "1.0.0-beta.4"

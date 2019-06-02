@@ -1,0 +1,16 @@
+[package]
+name = "quiz_let_mut"
+version = "0.1.0"
+authors = ["Sebastian <vogt999@gmail.com>"]
+
+
+[dependencies]
+rand = "0.5"
+serde_json = "1.0.24"
+serde_derive = "1.0.71"
+serde = "1.0.71"
+
+[dependencies.gtk]
+version = "0.4.1"
+features = ["v3_10"]
+

@@ -1,0 +1,8 @@
+[package]
+name = "photodb"
+version = "0.1.0"
+authors = ["bwindels"]
+
+[dependencies]
+rust-sqlite = "0.3.0"
+rexiv2 = "0.4.0"

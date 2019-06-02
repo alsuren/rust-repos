@@ -1,0 +1,14 @@
+[package]
+name = "cgrust"
+version = "0.0.1"
+authors = ["Uchio KONDO <udzura@udzura.jp>"]
+description = "A libcgroup alternative written in Rust lang"
+
+[dependencies]
+
+[lib]
+name = "cgrust"
+path = "src/cgrust.rs"
+crate-type = ["dylib", "staticlib"]
+
+#[[example]]

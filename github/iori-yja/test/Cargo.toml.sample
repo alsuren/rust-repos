@@ -1,0 +1,17 @@
+[package]
+name = "nickel-test"
+version = "0.1.0"
+authors = ["Iori YONEJI <fivo.11235813@gmail.com>"]
+
+[dependencies]
+bmemcached = "*"
+r2d2 = "*"
+r2d2_sqlite = "*"
+nickel = "*"
+mustache = "*"
+rustc-serialize = "*"
+oauth-client = "*"
+toml = "*"
+nickel_cookies = "*"
+cookie = "*"
+egg-mode = "0.7.0"

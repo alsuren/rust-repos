@@ -1,0 +1,15 @@
+[package]
+name = "celly-demo"
+version = "0.1.0"
+authors = ["Dmitry Shlagoff <wessmoke@gmail.com>"]
+
+[dependencies]
+ws = "0.5"
+iron = "0.3"
+
+celly = "0.5"
+
+serde = "0.7"
+serde_macros = "*"
+
+rmp-serde = "0.9"

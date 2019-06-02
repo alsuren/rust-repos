@@ -1,0 +1,30 @@
+[package]
+name = "llama"
+version = "0.1.0"
+authors = ["archshift <gh@archshift.com>"]
+build = "build.rs"
+
+[profile.release]
+lto = true
+debug = true
+
+[profile.dev]
+opt-level = 2
+overflow-checks = false 
+
+[[bin]]
+name = "llama-ui"
+path = "llama-ui/main.rs"
+
+[dependencies]
+capstone = "0.2"
+lgl = { git = "https://github.com/archshift/lgl" }
+libc = "0.2"
+libllama = { path = "libllama" }
+log = "0.3"
+
+[build-dependencies]
+bindgen = "0.31"
+
+[features]
+trace_instructions = ["libllama/trace_instructions"]

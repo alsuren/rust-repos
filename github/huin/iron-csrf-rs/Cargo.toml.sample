@@ -1,0 +1,18 @@
+[package]
+name = "iron_csrf"
+version = "0.2.0"
+authors = ["John Beisley <johnbeisleyuk@gmail.com>"]
+
+[dependencies]
+base64 = "0.6"
+crypto-ops = "0.1"
+iron = "0.5"
+iron-sessionstorage = "0.6"
+plugin = "0.2"
+rand = "0.3"
+urlencoded = "0.5"
+
+[dev-dependencies]
+hyper = "0.10"
+mime = "0.3"
+url = "1.5"

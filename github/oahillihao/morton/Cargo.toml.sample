@@ -1,0 +1,13 @@
+[package]
+
+name = "morton"
+version = "0.1.0"
+authors = ["Hao Li <oahillihao@gmail.com>"]
+license = "MIT"
+repository = ""
+readme = "README.md"
+description = """
+A library for encoding and decoding 2-demensions Morton codes.
+"""
+
+[dependencies]

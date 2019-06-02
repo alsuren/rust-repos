@@ -1,0 +1,21 @@
+[package]
+name = "romhack"
+version = "0.1.0"
+authors = ["Christopher Serr <cryze92@gmail.com>"]
+
+[workspace]
+members = ["backend", "wasm", "ui"]
+
+[dependencies]
+romhack-backend = { path = "backend" }
+structopt = "0.2.10"
+termcolor = "1.0.1"
+failure = "0.1.2"
+
+[profile.release]
+panic = "abort"
+lto = true
+
+[patch.crates-io]
+miniz_oxide_c_api = { git = "https://github.com/CryZe/miniz_oxide", rev = "b1eade664441a89c77a4b594d9d979170b1c9da9" }
+flate2 = { git = "https://github.com/eminence/flate2-rs", rev = "be78c5a693a275452c71c7d26d369332629e8fb7" }

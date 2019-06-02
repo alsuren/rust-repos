@@ -1,0 +1,11 @@
+[package]
+name = "aivd-sudoku"
+version = "0.1.0"
+authors = ["timvisee <timvisee@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+itertools = "0.8"
+lazy_static = "1.2"
+permutator = "0.2"
+sudoku = "0.7"

@@ -1,0 +1,11 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["n_lesnikov"]
+
+[dependencies]
+regex = "1.1.0"
+itertools = "0.7.11"
+lazy_static = "1.2.0"
+chrono = "0.4.6"
+ndarray = "0.12.1"

@@ -1,0 +1,12 @@
+[package]
+name = "graphics_magick_wand_sys"
+description = "GraphicsMagickWand bindings for rust"
+version = "0.1.0"
+authors = ["Yechao Li <liyechao@unordered.xyz>"]
+edition = "2018"
+repository = "https://github.com/unordered/graphics_magick_wand_sys"
+license = "MIT"
+
+[build-dependencies]
+bindgen = "0.47"
+pkg-config = "0.3"

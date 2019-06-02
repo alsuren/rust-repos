@@ -1,0 +1,12 @@
+[package]
+name = "datachains_sim"
+version = "0.2.0"
+authors = ["MaidSafe Developers <dev@maidsafe.net>"]
+
+[dependencies]
+clap = "2.29.2"
+colored = "1.6"
+ctrlc = "3.1"
+rand = "0.3"
+tiny-keccak = "1.4"
+byteorder = "1.2"

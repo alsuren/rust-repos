@@ -1,0 +1,11 @@
+[package]
+name = "mlt"
+version = "0.1.0"
+authors = ["Blake Loring <blake@parsed.uk>"]
+
+[dependencies]
+rand = "*"
+gnuplot = "*"
+csv = "*"
+rustc-serialize = "*"
+rust_graph = { git = 'https://github.com/jawline/rust-graph.git' }

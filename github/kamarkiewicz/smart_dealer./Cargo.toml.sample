@@ -1,0 +1,39 @@
+[package]
+name = "smart_dealer"
+version = "0.1.0"
+authors = ["Kamil Markiewicz <k.a.markiewicz@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/kamarkiewicz/smart_dealer.git"
+
+[[bin]]
+name = "app"
+path = "app.rs"
+
+
+[dependencies.time]
+git = "https://github.com/kamarkiewicz/time.git"
+features = ["rustc-serialize", "postgres"]
+
+[dependencies.postgres]
+version = "*"
+features = ["rustc-serialize"]
+
+[dependencies.iron-postgres-middleware]
+git = "https://github.com/kamarkiewicz/iron-postgres-middleware.git"
+
+[dependencies.handlebars-iron]
+git = "https://github.com/sunng87/handlebars-iron.git"
+
+[dependencies.mount]
+git = "https://github.com/iron/mount.git"
+
+[dependencies]
+iron = "*"
+router = "*"
+rustc-serialize = "*"
+tojson_macros = "*"
+staticfile = "*"
+maplit = "*"
+
+# [dev-dependencies]
+

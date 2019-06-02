@@ -1,0 +1,11 @@
+[package]
+
+name = "radixsort"
+version = "0.0.1"
+authors = ["Cameron Hart <cameron.hart@gmail.com>"]
+
+[dependencies]
+num = "0.1"
+rand = "0.3"
+sortrs = "*"
+time = "0.1"

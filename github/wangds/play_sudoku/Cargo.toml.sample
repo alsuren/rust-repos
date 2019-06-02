@@ -1,0 +1,12 @@
+[package]
+name = "play_sudoku"
+version = "0.1.0"
+authors = ["David Wang <millimillenary@gmail.com>"]
+
+[features]
+default = ["flic"]
+png = ["sdl2/image"]
+
+[dependencies]
+sdl2 = "*"
+flic = { version = "*", optional = true }

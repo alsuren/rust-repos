@@ -1,0 +1,7 @@
+[package]
+authors = ["Jacob Wunder <jacob@jacobwunder.com>"]
+name = "sudoku"
+version = "0.1.0"
+[dependencies]
+clap = "*"
+csv = "*"

@@ -1,0 +1,9 @@
+[package]
+name = "grio"
+version = "0.1.0"
+authors = ["Thiago Santos <thiagossantos@gmail.com>"]
+
+[dependencies]
+glib = { git="http://github.com/gtk-rs/glib" }
+gstreamer = { git="http://github.com/thiagoss/gstreamer-rs" }
+gstreamer-pbutils = { git="http://github.com/thiagoss/gstreamer-rs" }

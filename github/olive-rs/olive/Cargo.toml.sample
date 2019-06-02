@@ -1,0 +1,28 @@
+[package]
+name = "olive"
+version = "0.1.0"
+authors = ["Jay Nagpaul <jaynagpaul@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "WASM Framework"
+
+[dependencies]
+askama_escape = "0.2.0"
+virtual-dom-rs = "0.6.6"
+wasm-bindgen = "0.2.39"
+
+[dependencies.web-sys]
+version = "0.3.16"
+features = ["Node", "Event"]
+
+# [target.'cfg(target_arch = "wasm32")'.dependencies]
+# wasm-bindgen = "0.2.39"
+
+# [target.'cfg(target_arch = "wasm32")'.dependencies.web-sys]
+# version = "0.3.16"
+# features = ["Node"]
+
+[workspace]
+members = ["olive-macros", "rsx"]
+
+# TODO: Conditional features for including the dom and server code. Enabled by default

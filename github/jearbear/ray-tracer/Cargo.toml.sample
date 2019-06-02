@@ -1,0 +1,8 @@
+[package]
+authors = ["Jerry Tegno <jerry@stripe.com>"]
+edition = "2018"
+name = "ray-tracer"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.32.0"

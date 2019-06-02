@@ -1,0 +1,18 @@
+[package]
+name = "netfuse"
+version = "0.1.1"
+license = "MIT"
+authors = ["Anthony Nowell <anowell@gmail.com>"]
+
+description = "FUSE abstraction for building networked filesystems"
+documentation = "http://anowell.github.io/netfuse/netfuse/"
+repository = "https://github.com/anowell/netfuse"
+readme = "README.md"
+keywords = ["fuse", "filesystem", "nfs", "fs"]
+
+[dependencies]
+fuse = "0.2.7"
+time = "0.1.35"
+libc = "0.2.12"
+sequence_trie = "0.0.13"
+log = "0.4.0"

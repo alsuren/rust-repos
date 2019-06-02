@@ -1,0 +1,28 @@
+cargo-features = ['edition']
+
+[package]
+name = "advent_of_rust_2017"
+version = "0.1.0"
+authors = ["Samuel Cormier-Iijima <samuel@cormier-iijima.com"]
+edition = '2018'
+
+[dependencies]
+nom = "*"
+num = "*"
+clap = "*"
+regex = "*"
+primal = "*"
+bit-vec = "*"
+bit-set = "*"
+colored = "*"
+ndarray = "*"
+petgraph = "*"
+itertools = "*"
+
+[dependencies.byteorder]
+version = "*"
+features = ["i128"]
+
+[[bin]]
+name = "aor"
+path = "src/main.rs"

@@ -1,0 +1,24 @@
+[package]
+name = "haste_map"
+version = "0.1.0"
+authors = ["Jordan Eldredge <jordan@jordaneldredge.com>"]
+
+[dependencies]
+glob = "0.2.11"
+regex = "0.2"
+serde = "1.0.58"
+serde_derive = "1.0.58"
+lazy_static = "1.0"
+bincode = "1.0.0"
+rayon = "1.0"
+num_cpus = "1.0"
+neon = "0.1.22"
+
+[lib]
+name = "nodejs_extension"
+path = "src/nodejs_extension.rs"
+crate-type = ["dylib"]
+test = false
+
+[build-dependencies]
+neon-build = "0.1.22"

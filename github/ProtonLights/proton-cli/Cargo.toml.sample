@@ -1,0 +1,28 @@
+[package]
+name = "proton_cli"
+version = "0.20.1"
+authors = ["Ramith Jayatilleka <ramith.jayatilleka@gmail.com>, Ryan Fredlund <fredl027@umn.edu>, Kayla Engelstad <engel813@umn.edu>"]
+description = "Command line utility for managing ProtonLights projects."
+homepage = "https://github.com/ProtonLights/cli"
+repository = "https://github.com/ProtonLights/cli"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+docopt = "^0.6"
+openssl = "~0.9"
+rustc-serialize = "^0.3"
+regex = "^0.2"
+postgres = {version="~0.14", features = ["with-rustc-serialize"]}
+
+[dependencies.sfml]
+version = "^0.12"
+default-features = false
+features = ["audio"]
+
+[dev-dependencies]
+tempdir = "^0.3"
+
+[[bin]]
+name = "proton_cli"
+path = "src/main.rs"

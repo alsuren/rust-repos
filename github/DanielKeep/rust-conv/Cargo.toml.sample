@@ -1,0 +1,28 @@
+[package]
+name = "conv"
+version = "0.3.4"
+authors = ["Daniel Keep <daniel.keep@gmail.com>"]
+
+description = "This crate provides a number of conversion traits with more specific semantics than those provided by 'as' or 'From'/'Into'."
+repository = "https://github.com/DanielKeep/rust-conv"
+documentation = "https://danielkeep.github.io/rust-conv/doc/conv/index.html"
+readme = "README.md"
+license = "MIT"
+keywords = ["from", "into", "conversion", "approximation"]
+
+exclude = [
+    "scripts/*",
+    "update-docs.py",
+]
+
+[features]
+default = ["std"]
+std = ["custom_derive/std"]
+
+[dependencies]
+custom_derive = { version = "0.1.5", default-features = false }
+
+[dev-dependencies]
+quickcheck = "0.2.21, < 0.2.25"
+
+winapi = "< 0.2.6" # 0.2.6 is incompatible with Rust < 1.4

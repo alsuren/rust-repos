@@ -1,0 +1,21 @@
+[package]
+name = "serde-xdr"
+description = "XDR serialization and deserialization for Serde"
+version = "0.5.1"
+authors = ["Janito Vaqueiro Ferreira Filho <janito.vff@gmail.com>"]
+homepage = "https://github.com/jvff/serde-xdr"
+readme = "README.md"
+license = "GPL-3.0"
+keywords = ["xdr", "serde", "serialization", "deserialization"]
+categories = ["encoding"]
+
+[dependencies]
+byteorder = "1.1"
+failure = "0.1"
+failure_derive = "0.1"
+serde = "1.0"
+
+[dev-dependencies]
+ordered-float = "0.5"
+serde_bytes = "0.10"
+serde_derive = "1.0"

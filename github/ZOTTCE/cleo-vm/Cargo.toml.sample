@@ -1,0 +1,10 @@
+[package]
+name = "cleovm"
+version = "0.1.0"
+authors = ["ZOTTCE <zottce@gmail.com>"]
+
+[dependencies]
+byteorder = "*"
+time = "*"
+docopt = "*"
+rustc-serialize = "*"

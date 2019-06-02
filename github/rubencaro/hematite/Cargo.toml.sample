@@ -1,0 +1,8 @@
+[package]
+name = "hematite"
+version = "0.1.0"
+authors = ["Rubén Caro <ruben.caro.estevez@gmail.com>"]
+
+[dependencies]
+actix-web = "0.7"
+rocksdb = "0.10.1"

@@ -1,0 +1,22 @@
+[package]
+name = "generic_bitset"
+version = "0.1.0"
+authors = ["Cameron Mullen <cameron.mullen@gmail.com>"]
+description = "A configurable, fixed-length bitset based on typenum and generic-array"
+
+readme = "README.md"
+
+
+keywords = ["data-structure", "container", "bitset", "bitvec", "no_std"]
+
+
+license = "MIT"
+
+categories = ["data-structures", "no-std"]
+[dependencies]
+typenum = "1.9.0"
+generic-array = "0.9.0"
+clippy = {version = "0.0.175", optional = true}
+
+[features]
+default = []

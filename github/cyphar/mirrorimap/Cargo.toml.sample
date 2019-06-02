@@ -1,0 +1,23 @@
+[package]
+name = "mirrorimap"
+version = "0.1.0"
+description = "Mirror mail between IMAP4 mailboxes."
+license = "GPL-3.0+"
+repository = "https://github.com/cyphar/mirrorimap"
+readme = "README.md"
+authors = ["Aleksa Sarai <cyphar@cyphar.com>"]
+keywords = ["email", "mailbox", "mirror", "clone", "backup"]
+categories = ["email", "command-line-utilities"]
+
+[dependencies]
+askama = "^0.5"
+clap = "^2"
+chrono = "^0.4"
+email = "0.0.18"
+gpgme = "^0.7"
+#imap = "^0.6"
+imap = { git = "https://github.com/cyphar/rust-imap", rev = "6021160e00ada29bffe91b06178111c18a2d3196" }
+lazy_static = "^1"
+native-tls = "^0.1.4"
+regex = "^0.2.3"
+rpassword = "^2"

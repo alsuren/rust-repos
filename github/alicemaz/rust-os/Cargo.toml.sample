@@ -1,0 +1,14 @@
+[package]
+name = "maz_os"
+version = "0.1.0"
+authors = ["Alice Maz <alice@alicemaz.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "0.1.4"
+spin = "0.3.4"
+
+[dependencies.multiboot2]
+git = "https://github.com/alicemaz/multiboot2-elf64"

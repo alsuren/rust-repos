@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "common",
+    "fetcher",
+    "dumper",
+    "forker",
+    "formatter",
+    "fixer",
+    "pr-issuer",
+    "github",
+    "event-handler",
+    "util/delete-forks"
+]

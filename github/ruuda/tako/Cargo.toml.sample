@@ -1,0 +1,30 @@
+[package]
+name = "tako"
+version = "0.0.0"
+license = "Apache-2.0"
+authors = [
+  "Arian van Putten <aeroboy94@gmail.com>",
+  "Ruud van Asseldonk <dev@veniogames.com>",
+  "Tako Marks <me@tako.mx>"
+]
+
+[dependencies]
+filebuffer = "0.4.0"
+
+# Disable "serde" feature from sodiumoxide; we don't use it,
+# so we can avoid the dependency.
+[dependencies.sodiumoxide]
+version = "0.0.16"
+default-features = false
+features = ["std"]
+
+[profile.release]
+# For the release build, optimize for size.
+panic = "abort"
+lto = true
+codegen-units = 1
+incremental = false
+
+# TODO: Enable this once we require Rust >= 1.28, where opt-level=z was stabilized.
+# Optimize for size, not speed.
+# opt-level = "z"

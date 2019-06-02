@@ -1,0 +1,14 @@
+[package]
+name = "yelp_scraper"
+version = "0.1.0"
+authors = ["Cindy <czwang@bu.edu>"]
+
+[dependencies]
+reqwest = "0.8.5"
+scraper = "0.5.0"
+prettytable-rs = "0.6.7"
+clap = "2.30.0"
+indicatif = "0.9.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+serde = "1.0"

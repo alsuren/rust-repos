@@ -1,0 +1,23 @@
+[package]
+name = "stm32f407"
+version = "0.3.0"
+authors = ["Cody Schafer <dev@codyps.com>"]
+description = "Peripheral access API for STM32F407 microcontrollers"
+documentation = "https://docs.rs/stm32f407"
+keywords = ["arm", "cortex-m", "stm32", "svd2rust"]
+categories = ["embedded", "hardware-support", "no-std"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/jmesmon/stm32f407"
+include = ["Cargo.toml", "**/*.rs", "generate.sh", "STM32F407.patch", "README.md", "LICENSE-*"]
+
+[dependencies]
+bare-metal = "0.1"
+cortex-m = "0.4"
+vcell = "0.1"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.3"
+
+[features]
+rt = ["cortex-m-rt"]

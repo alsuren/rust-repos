@@ -1,0 +1,10 @@
+[package]
+name = "chust-server"
+version = "0.1.0"
+authors = ["Robert Krody <krody.robi@gmail.com>", "Dragos Tiselice <dragostis@gmail.com"]
+
+[dependencies]
+getopts = "0.2.14"
+rustc-serialize = "0.3.18"
+rust-crypto = "0.2.34"
+rand = "0.3.14"

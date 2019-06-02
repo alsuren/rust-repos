@@ -1,0 +1,11 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["quasar343"]
+build = "build.rs"
+
+[dependencies]
+rand = "0.4.2"
+sdl2 = "0.31.0"
+log = "0.4.1"
+env_logger = "0.5.5"

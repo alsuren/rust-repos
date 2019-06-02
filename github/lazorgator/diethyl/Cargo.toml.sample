@@ -1,0 +1,14 @@
+[package]
+name = "diethyl"
+version = "0.1.0"
+authors = ["Trevor Miranda <trevor.mir@gmail.com>"]
+
+[lib]
+name = "diethyl"
+path = "lib/lib.rs"
+
+[[bin]]
+name = "diethyl"
+path = "main.rs"
+
+[dependencies]

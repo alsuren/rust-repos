@@ -1,0 +1,22 @@
+[package]
+name = "bbman"
+version = "0.0.2"
+authors = ["Matheus Borella (DarkRyu550) <dark.ryu.550@gmail.com>"]
+
+[lib]
+name = "bbman"
+path = "src/lib.rs"
+
+[dependencies]
+cgmath    = "*"
+collision = "*"
+glium     = "*"
+image     = "*"
+log       = "*"
+
+# Sound codec libraries
+hound  = "*" # Wave (RIFF)
+vorbis = "*" # Ogg Vorbis
+
+# Disabled due to bbman::world being deprecated
+json = "*"

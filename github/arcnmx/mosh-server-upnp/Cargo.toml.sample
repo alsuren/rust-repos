@@ -1,0 +1,15 @@
+[package]
+name = "mosh-server-upnp"
+version = "0.1.0"
+authors = ["arcnmx"]
+
+description = "mosh-server wrapper for NATs"
+keywords = ["mosh", "mosh-server", "NAT", "UPnP"]
+
+repository = "https://github.com/arcnmx/mosh-server-upnp"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+igd = "^0.7.0"
+get_if_addrs = "^0.5.3"

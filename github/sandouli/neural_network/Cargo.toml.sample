@@ -1,0 +1,11 @@
+[package]
+name = "neural_network"
+version = "0.1.0"
+authors = ["sandouli"]
+
+[dependencies]
+ndarray = "0.12.0"
+rand = "0.5.5"
+ndarray-rand = "0.8.0"
+mnist = "0.4.0"
+image = "0.13.0"

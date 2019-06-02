@@ -1,0 +1,28 @@
+[package]
+name = "cjdrs"
+version = "0.0.1"
+authors = ["Vanhala Antti <antti.vanhala@aalto.fi>"]
+license = "MIT"
+
+[lib]
+name = "cjdrs"
+path = "src/cjdrs/lib.rs"
+
+[[bin]]
+name = "cjdrs"
+doc = false
+
+[dependencies]
+rustc-serialize = "*"
+
+[dependencies.tuntap]
+git = "https://github.com/Randati/tuntap-rust.git"
+
+[dependencies.sodiumoxide]
+git = "https://github.com/dnaq/sodiumoxide.git"
+
+[dependencies.mio]
+git = "https://github.com/carllerche/mio.git"
+
+[dependencies.docopt]
+git = "git://github.com/docopt/docopt.rs"

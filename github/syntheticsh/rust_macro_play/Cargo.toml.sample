@@ -1,0 +1,9 @@
+[package]
+name = "macro_play"
+version = "0.1.0"
+authors = ["syntheticsh <syntheticsh@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+play_macro = { path = "play_macro" }
+play_macro_derive = { path = "play_macro/play_macro_derive" }

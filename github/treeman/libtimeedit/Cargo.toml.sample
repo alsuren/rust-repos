@@ -1,0 +1,14 @@
+[package]
+
+name = "timeedit"
+version = "0.0.2"
+authors = ["Jonas Hietala <mail@jonashietala.se>"]
+
+[dependencies.http]
+
+git = "https://github.com/chris-morgan/rust-http.git"
+
+[dependencies.time]
+
+git = "https://github.com/rust-lang/time"
+

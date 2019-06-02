@@ -1,0 +1,15 @@
+[package]
+name = "scrapmetal"
+version = "0.1.0"
+repository = "https://github.com/fitzgen/scrapmetal"
+license = "Apache-2.0/MIT"
+authors = ["Nick Fitzgerald <fitzgen@gmail.com>"]
+description = "Scrap Your Rust Boilerplate"
+
+[dependencies]
+
+[dev-dependencies.scrapmetal-derive]
+path = "scrapmetal-derive"
+version = "0.1.0"
+
+[workspace]

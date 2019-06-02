@@ -1,0 +1,11 @@
+[package]
+name = "rust_engine"
+version = "0.1.0"
+authors = ["Paul Schwarzwalder <pschwarz99@gmail.com>"]
+
+[dependencies]
+num = "*"
+assert_approx_eq = "1.0.0"
+gfx = "0.16"
+gfx_window_glutin = "0.16"
+glutin = "0.8"

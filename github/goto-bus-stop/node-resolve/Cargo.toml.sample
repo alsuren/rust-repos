@@ -1,0 +1,21 @@
+[package]
+name = "node-resolve"
+version = "2.2.0"
+description = "The Node.js module resolution algorithm"
+authors = ["Renée Kooi <renee@kooi.me>"]
+edition = "2018"
+repository = "https://github.com/goto-bus-stop/node-resolve"
+documentation = "https://docs.rs/node-resolve"
+license = "Apache-2.0"
+readme = "readme.md"
+
+exclude = [
+  "fixtures/*",
+]
+
+[dependencies]
+serde_json = "1.0.10"
+node-builtins = "0.1.0"
+
+[lib]
+doctest = false

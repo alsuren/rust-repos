@@ -1,0 +1,18 @@
+[package]
+name = "rustcompiler"
+version = "0.1.0"
+authors = ["Steven Liechti <steven@liechti.de>"]
+
+[[bin]]
+name = "compiler"
+path = "src/compiler.rs"
+
+[[bin]]
+name = "control"
+path = "src/control.rs"
+
+[[bin]]
+name = "interpreter"
+path = "src/interpreter.rs"
+
+[dependencies]

@@ -1,0 +1,15 @@
+[package]
+
+name = "actor"
+version = "0.0.1"
+authors = ["Jonathan Reem <jonathan.reem@gmail.com>"]
+
+[lib]
+
+name = "actor"
+path = "src/lib.rs"
+
+[dependencies.typemap]
+
+git = "https://github.com/reem/rust-typemap"
+

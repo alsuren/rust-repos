@@ -1,0 +1,10 @@
+[package]
+name = "des_test"
+version = "0.1.0"
+authors = ["Antoni Boucher <bouanto@zoho.com>"]
+
+[dependencies]
+des = "^0.0.3"
+
+[dev-dependencies]
+openssl = "^0.8"

@@ -1,0 +1,18 @@
+[package]
+name = "kirskuna"
+version = "0.1.0"
+authors = ["Miranda Kastemaa <miranda@foldplop.com>"]
+
+[lib]
+name = "kirskuna"
+path = "src/lib.rs"
+
+[[bin]]
+name = "kirskuna-bin"
+path = "src/main.rs"
+
+[dependencies]
+getopts = "0.2"
+dsp-chain = "0.13.*"
+portaudio = "0.6.*"
+portmidi = { git = "https://github.com/ahihi/portmidi-rs.git" }

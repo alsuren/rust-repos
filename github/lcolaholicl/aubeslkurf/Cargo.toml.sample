@@ -1,0 +1,13 @@
+[package]
+name = "aubeslkurf"
+version = "0.1.0"
+authors = ["lcolaholicl <lcolaholicl@gmail.com>"]
+description = "An automatic caesar cipher decoder made with love"
+license = "MIT"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+clap = "~2.33.0"
+rayon = "~1.0.3"
+lazy_static = "~1.3.0"

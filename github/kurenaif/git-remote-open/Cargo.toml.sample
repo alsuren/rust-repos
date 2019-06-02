@@ -1,0 +1,10 @@
+[package]
+name = "git-remote-open"
+version = "0.1.0"
+authors = ["kurenaif <antyobido@gmail.com>"]
+
+[dependencies]
+regex = "1"
+open = "*"
+clap = "2"
+ulid = "0.3.1"

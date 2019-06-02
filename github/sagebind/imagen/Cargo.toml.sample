@@ -1,0 +1,15 @@
+[package]
+name = "imagen"
+version = "0.2.0"
+authors = ["Stephen M. Coakley <me@stephencoakley.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+rayon = "1.0"
+structopt = "0.2"
+
+[dependencies.image]
+version = "0.21"
+default-features = false
+features = ["jpeg"]

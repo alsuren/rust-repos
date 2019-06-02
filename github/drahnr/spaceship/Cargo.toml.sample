@@ -1,0 +1,20 @@
+[package]
+name = "spaceship"
+version = "0.0.1"
+authors = ["Bernhard Schuster <bernhard@ahoi.io>"]
+license = "MIT/Apache-2.0"
+homepage = "https://ahoi.io/projects/spaceship"
+repository = "https://github.com/drahnr/spaceship"
+documentation = "https://ahoi.io/projects/spaceship"
+description = """
+Spaceship, the port of bottleship to rust
+"""
+
+[dependencies]
+iron = "*"
+router = "*"
+tera = "*"
+hyper = "*"
+regex = "0.2"
+lazy_static = "*"
+#syntect = { git = "https://github.com/trishume/syntect" }

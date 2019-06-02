@@ -1,0 +1,14 @@
+[package]
+name = "mstcc"
+version = "0.1.0"
+authors = ["malbarbo"]
+
+[dependencies]
+clap = { version = "2", features = ["wrap_help"], default-features = false }
+env_logger = { version = "0.5", default-features = false }
+fera = { version = "0.1", features = ["ext", "fun", "graph"] }
+log = "0.4"
+rand = "0.4"
+
+[dev-dependencies]
+itertools = "0.7"

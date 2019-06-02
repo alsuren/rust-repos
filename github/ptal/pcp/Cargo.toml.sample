@@ -1,0 +1,22 @@
+[package]
+
+name = "pcp"
+version = "0.6.1"
+authors = [ "Pierre Talbot <ptalbot@hyc.io>" ]
+
+[lib]
+
+name = "pcp"
+path = "src/libpcp/lib.rs"
+crate_type = ["rlib", "dylib"]
+
+[dependencies]
+
+trilean = "^1.0.1"
+intervallum = "^1.2.0"
+gcollections = "^1.4.0"
+num = "^0.1.29"
+bit-set = "^0.4.0"
+
+[dependencies.vec_map]
+version = "0.6.0"

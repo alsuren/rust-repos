@@ -1,0 +1,31 @@
+[package]
+name = "cyborg-core"
+version = "0.7.0"
+license = "MIT"
+authors = ["Sam Clements <sam@borntyping.co.uk>"]
+description = "A monitoring system"
+repository = "https://github.com/borntyping/cyborg"
+
+[dependencies]
+docopt = "^0.6.60"
+docopt_macros = "^0.6.60"
+log = "^0.3.1"
+psutil = "^0.8.3"
+rustc-serialize = "^0.3.10"
+simple_logger = "^0.3.1"
+time = "^0.1.23"
+
+[dependencies.riemann_client]
+git = "https://github.com/borntyping/rust-riemann_client.git"
+version = "^0.3.1"
+
+[dev-dependencies]
+tempdir = "^0.3.3"
+
+[[bin]]
+name = "cyborg"
+test = false
+
+[lib]
+name = "cyborg_core"
+doctest = false

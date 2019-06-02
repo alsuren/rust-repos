@@ -1,0 +1,14 @@
+[package]
+name = "dummy_xml"
+version = "0.1.6"
+authors = ["vietanhto"]
+description = "Fast Non-validating XML DOM parser."
+readme = "README.md"
+repository="https://github.com/vietanhto/dummy_xml"
+keywords = ["xml", "parser", "dom"]
+license = "MIT"
+
+[dependencies]
+
+[badges]
+travis-ci = { repository = "vietanhto/dummy_xml" }

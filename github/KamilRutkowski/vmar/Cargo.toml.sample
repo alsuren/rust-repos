@@ -1,0 +1,11 @@
+[package]
+name = "vmar"
+description = "Various mathematical algorithms implemented for rust language"
+version = "0.0.1"
+authors = ["Kamil Rutkowski"]
+
+[dependencies]
+time = "0.1.35"
+gnuplot = "0.0.21"
+rand = "0.3.15"
+num = "0.1.36"

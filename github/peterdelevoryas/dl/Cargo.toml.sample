@@ -1,0 +1,9 @@
+[package]
+name = "dl"
+version = "0.1.0"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+
+[dependencies]
+libc = "0.2.34"
+failure = "0.1.1"
+bitflags = "1.0.1"

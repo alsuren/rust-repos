@@ -1,0 +1,11 @@
+[package]
+name = "uffgabe-shell"
+version = "0.1.0"
+authors = ["Dennis Schubert <mail@dennis-schubert.de>"]
+
+[dependencies.uffgabe]
+path = "src/uffgabe"
+
+[[bin]]
+name = "uffgabe-sshshell"
+path = "src/sshshell.rs"

@@ -1,0 +1,11 @@
+[package]
+name = "rydl"
+version = "0.1.0"
+authors = [
+"Matheus de Alcantara <me@matheus.ninja>",
+"Alexander Korn <a@lxnd.me>"
+]
+
+[dependencies]
+ncurses = "5.73.0"
+hlua = "0.1.6"

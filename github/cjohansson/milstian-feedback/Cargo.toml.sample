@@ -1,0 +1,10 @@
+[package]
+name = "milstian-feedback"
+description = "My first experiment with a lightweight and dynamic internet application framework in Rust"
+version = "0.1.1"
+authors = ["Christian Johansson <christian@cvj.se>"]
+license = "GPL-3.0-only"
+repository = "https://github.com/cjohansson/milstian-feedback"
+
+[dependencies]
+chrono = "0.4"

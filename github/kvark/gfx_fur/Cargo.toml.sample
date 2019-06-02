@@ -1,0 +1,16 @@
+[package]
+name = "gfx_fur"
+version = "0.0.1"
+authors = ["Dzmitry Malyshau <kvarkus@gmail.com>"]
+
+[dependencies]
+log = "*"
+gfx = "0.6"
+gfx_phase = "0.3"
+
+### For examples
+
+[dev_dependencies]
+cgmath = "0.2"
+glutin = "*"
+gfx_window_glutin = "*"

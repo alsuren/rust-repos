@@ -1,0 +1,11 @@
+[package]
+name = "server_hello"
+version = "0.1.0"
+authors = ["Hao Wu <hwu@intellisurvey.com>"]
+
+[dependencies]
+rustful="*"
+unicase="*"
+serde="*"
+uuid="*"
+serde_macros="*"

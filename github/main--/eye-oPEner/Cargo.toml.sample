@@ -1,0 +1,19 @@
+[package]
+name = "eye-oPEner"
+version = "0.1.0"
+authors = ["main() <main@ehvag.de>"]
+
+[dependencies]
+pe = { git = "https://github.com/main--/pe-rs.git" }
+libc = "0.2"
+widestring = "0.2"
+lazy_static = "0.2"
+rand = "0.3"
+reqwest = "0.6"
+plist = "0.2"
+base64 = "0.6"
+log = "0.3"
+error-chain = "0.10"
+
+[dev-dependencies]
+env_logger = "0.4"

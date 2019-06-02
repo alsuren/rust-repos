@@ -1,0 +1,11 @@
+[package]
+name = "hands_of_time"
+version = "0.1.0"
+authors = ["paytchoo <paytchoo@users.noreply.github.com>"]
+
+[dependencies]
+rand = "0.4.2"
+
+[[bin]]
+doc = false
+name = "hands_of_time"

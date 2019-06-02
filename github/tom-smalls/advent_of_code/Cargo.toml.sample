@@ -1,0 +1,12 @@
+[package]
+name = "adventOfCode"
+version = "0.1.0"
+authors = ["Tom <tom.mckee@transficc.com>"]
+
+[[bin]]
+name = "test"
+path = "src/main/rust/main.rs"
+
+[dependencies]
+rust-crypto = "0.2.36"
+permutohedron = "0.2"

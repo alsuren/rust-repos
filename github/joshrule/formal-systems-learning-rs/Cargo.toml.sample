@@ -1,0 +1,29 @@
+[package]
+name = "formal-systems-learning-rs"
+version = "0.1.0"
+authors = ["Josh Rule <joshua.s.rule@gmail.com>"]
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/joshrule/formal-systems-learning-rs"
+homepage = "https://github.com/joshrule/formal-systems-learning-rs"
+description = "Rust simulations using 2AFC triads to learn formal systems as typed first-order term rewriting systems."
+keywords = ["term-rewriting", "hindley-milner", "learning", "program-induction", "formal systems"]
+categories = ["science", "simulation"]
+
+[dependencies]
+docopt = "1.0"
+itertools = "0.8"
+polytype = "6.1"
+programinduction = "0.7"
+rand = "0.6"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+term_rewriting = "0.5"
+toml = "0.5"
+
+[patch.crates-io]
+polytype = { path = "../../polytype-rs" }
+programinduction = { path = "../../program-induction" }
+term_rewriting = { path = "../../term-rewriting-rs" }

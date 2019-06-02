@@ -1,0 +1,8 @@
+[package]
+name = "playstation3-pup-reader"
+version = "0.1.0"
+authors = ["Jack <admin@deadcore.co.uk>"]
+
+[dependencies]
+rust-crypto = "^0.2"
+serde = "^1.0"

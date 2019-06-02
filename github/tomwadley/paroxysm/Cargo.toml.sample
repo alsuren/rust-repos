@@ -1,0 +1,14 @@
+[package]
+name = "paroxysm"
+version = "0.1.0"
+authors = ["Tom Wadley <tom@tomwadley.net>", "Rosa Nussbaum <rosa@rosanussbaum.com>"]
+description = "A collection of modes for your Lovense vibrator"
+
+[dependencies]
+serde_json = "1.0"
+time = "0.1"
+chan = "0.1"
+reqwest = "0.8"
+config = "0.7.0"
+clap = "2.27"
+chrono = "0.4"

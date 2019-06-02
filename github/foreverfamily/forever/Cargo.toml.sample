@@ -1,0 +1,12 @@
+[package]
+name = "forever"
+version = "0.1.0"
+authors = ["suyanlong <592938410@qq.com>"]
+
+[dependencies]
+hyper = "0.11"
+grpc = "0.*"
+protobuf = "1.*"
+futures = "0.1"
+futures-cpupool = "0.1"
+tls-api = "0.*"

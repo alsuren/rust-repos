@@ -1,0 +1,30 @@
+[package]
+name = "rustun"
+version = "0.3.5"
+authors = ["Takeru Ohta <phjgt308@gmail.com>"]
+description = "A library for implementing STUN server and client asynchronously"
+homepage = "https://github.com/sile/rustun"
+repository = "https://github.com/sile/rustun"
+readme = "README.md"
+keywords = ["STUN", "asynchronous"]
+categories = ["asynchronous", "network-programming"]
+license = "MIT"
+
+[badges]
+travis-ci = {repository = "sile/rustun"}
+codecov = {repository = "sile/rustun"}
+
+[dependencies]
+bytecodec = "0.4"
+factory = "0.1"
+fibers = "0.1"
+fibers_timeout_queue = "0.1"
+fibers_transport = "0.1"
+futures = "0.1"
+rand = "0.5"
+stun_codec = "0.1"
+trackable = "0.2"
+
+[dev-dependencies]
+clap = "2"
+fibers_global = "0.1"

@@ -1,0 +1,24 @@
+[package]
+authors = ["Kjetil Kjeka <kjetilkjeka@gmail.com>"]
+name = "s32k144"
+version = "0.10.0"
+
+description = "Peripheral access API for NXP S32K144 microcontrollers (generated using svd2rust)"
+repository = "https://github.com/kjetilkjeka/s32k144.rs"
+
+keywords = ["arm", "embedded", "svd2rust", "cortex-m4", "NXP"]
+categories = ["embedded", "hardware-support", "no-std"]
+
+license = "Apache-2.0/MIT"
+
+[dependencies]
+cortex-m = "0.5.8"
+bare-metal = "0.2.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.5"
+
+[features]
+rt = ["cortex-m-rt/device"]

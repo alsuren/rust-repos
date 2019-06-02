@@ -1,0 +1,12 @@
+[package]
+name = "baduk-rs"
+version = "0.1.0"
+authors = ["Michael A. Plikk <michael@plikk.com>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/mipli/baduk-rs"
+readme = "README.md"
+
+[dependencies]
+sgf-parser = "*"
+derive_more = "0.14.0"

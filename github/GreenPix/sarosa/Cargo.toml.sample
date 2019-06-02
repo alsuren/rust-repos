@@ -1,0 +1,19 @@
+[package]
+
+name = "sarosa"
+version = "0.0.1"
+authors = [
+        "Nemikolh",
+        "Vaelden <maugan.villatel@gmail.com>",
+]
+build = "build.rs"
+
+[dependencies]
+log4rs = "0.3.3"
+docopt = "0.6.*"
+rustc-serialize = "0.3"
+
+[dependencies.sarosa_engine]
+path = "./sarosa_engine"
+version = "=0.0.1"
+features = ["profiler"]

@@ -1,0 +1,17 @@
+[package]
+name = "skia"
+version = "0.1.0"
+authors = ["Marc-Antoine Arnaud <arnaud.marcantoine@gmail.com>"]
+
+[dependencies]
+chrono = {version = "0.4", features=["serde"]}
+clap = "2.32.0"
+env_logger = "0.5.10"
+log = "^0.4"
+phoenix = { git = "https://github.com/media-io/phoenix-rs", branch = "master" }
+reqwest = "0.8.6"
+serde = "1.0.70"
+serde_derive = "1.0.70"
+serde_json = "1.0.22"
+tokio-core = "0.1"
+websocket = "0.20"

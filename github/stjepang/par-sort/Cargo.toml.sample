@@ -1,0 +1,12 @@
+[package]
+name = "par-sort"
+version = "0.1.0"
+authors = ["Stjepan Glavina <stjepang@gmail.com>"]
+description = "Parallel sorting using Rayon"
+readme = "README.md"
+license = "Apache-2.0/MIT"
+
+[dependencies]
+lazy_static = "0.2"
+rand = "0.3"
+rayon = "0.8.1"

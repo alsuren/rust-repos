@@ -1,0 +1,29 @@
+[package]
+name = "tomography"
+version = "0.1.0"
+authors = ["Domenico Shura <shura1991@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+[lib]
+name = "tomography"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tomography"
+path = "src/main.rs"
+
+[dependencies]
+libc = "0.2.50"
+cfg-if = "0.1"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+core-foundation = "0.6.3"
+ioctl-rs = "0.2.0"
+ifstructs = "0.1.1"
+errno = "0.2.4"
+ctor = "0.1.8"
+smc = "0.1.0"
+
+[target.'cfg(target_os = "macos")'.build-dependencies]
+cc = "1.0.35"

@@ -1,0 +1,11 @@
+[package]
+name = "elmlike"
+version = "0.1.0"
+authors = ["Walfie <walfington@gmail.com>"]
+
+[dependencies]
+futures = "0.1"
+tokio = "0.1"
+
+[dev-dependencies]
+tokio-timer = "0.1"

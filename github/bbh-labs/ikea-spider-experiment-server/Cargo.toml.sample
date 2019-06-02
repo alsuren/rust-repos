@@ -1,0 +1,21 @@
+[package]
+name = "ikea-spider-experiment-server"
+version = "0.1.0"
+authors = ["Jacky Boen <jacky.boen@bartleboglehegarty.com"]
+
+[dependencies]
+iron = "*"
+router = "*"
+persistent = "*"
+urlencoded = "*"
+rustc-serialize = "*"
+getopts = "*"
+url = "*"
+
+[dependencies.postgres]
+version = "*"
+features = [ "chrono" ]
+
+[dependencies.chrono]
+version = "*"
+features = [ "rustc-serialize" ]

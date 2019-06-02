@@ -1,0 +1,16 @@
+[package]
+name = "nickel-cms"
+version = "0.3.0"
+authors = ["Evgeny Ukhanov <mrlsd@ya.ru>"]
+build = "src/build.rs"
+
+[dependencies]
+nickel = "*"
+rustc-serialize = "*"
+toml = "0.2.*"
+ructe = "*"
+tera = "*"
+lazy_static = "*"
+
+[build-dependencies]
+ructe = "*"

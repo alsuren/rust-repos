@@ -1,0 +1,30 @@
+[package]
+name = "diesel-issue-demo"
+version = "0.1.0"
+authors = ["Mitchell Gates <ms.fragala@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "demo"
+path = "./src/lib.rs"
+
+[[bin]]
+name = "index"
+path = "./index.rs"
+
+[dependencies]
+http = "0.1"
+now_lambda = "*"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dependencies.chrono]
+version = "0.4"
+features = ["serde", "rustc-serialize"]
+
+[dependencies.diesel]
+version = "1.4.2"
+features = ["postgres", "chrono", "serde_json"]
+
+[dependencies.serde]
+version = "1.0"

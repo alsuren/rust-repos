@@ -1,0 +1,8 @@
+[package]
+name = "shlack"
+version = "0.1.0"
+authors = ["Vignesh Mohankumar <vignesh@vigneshmohankumar.com>"]
+
+[dependencies]
+argparse = "*"
+slack = "0.13.0"

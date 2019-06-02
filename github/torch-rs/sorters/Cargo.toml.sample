@@ -1,0 +1,11 @@
+[package]
+name = "sorters"
+version = "0.1.0"
+authors = ["Patrick Chan <patrickchan1999@gmail.com>"]
+
+[dependencies]
+fs2 = "*"
+regex = "0.2"
+search_candidate = { git = "https://github.com/torch-rs/search_candidate" }
+serde = "*"
+serde-pickle = "*"

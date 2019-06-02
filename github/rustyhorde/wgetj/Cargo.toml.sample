@@ -1,0 +1,30 @@
+[package]
+name = "wgetj"
+version = "1.0.5-pre.0"
+authors = ["Jason Ozias <jason.g.ozias@gmail.com>"]
+description = "Use wget to grab Java distributions"
+documentation = "http://rustyhorde.github.io/wgetj/wgetj/wgetj/index.html"
+homepage = "http://rustyhorde.github.io/wgetj"
+repository = "https://github.com/rustyhorde/wgetj"
+readme = "README.md"
+license = "MIT"
+keywords = ["wget","java"]
+build = "build.rs"
+
+[features]
+default = []
+lint = [ "clippy" ]
+
+[build-dependencies]
+vergen = "~0.1.0"
+
+[dependencies]
+clippy = { version = "~0.0", optional = true }
+docopt = "~0.6.78"
+libmultilog = "~0.1.0"
+libwgetj = { path = "libwgetj" }
+log = "~0.3.4"
+rustc-serialize = "~0.3.16"
+
+[[bin]]
+name = "wgetj"

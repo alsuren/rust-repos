@@ -1,0 +1,23 @@
+[package]
+name = "erl_pp"
+version = "0.1.4"
+authors = ["Takeru Ohta <phjgt308@gmail.com>"]
+description = "Erlang source code preprocessor"
+homepage = "https://github.com/sile/erl_pp"
+repository = "https://github.com/sile/erl_pp"
+readme = "README.md"
+keywords = ["erlang", "preprocessor"]
+license = "MIT"
+edition = "2018"
+
+[badges]
+travis-ci = {repository = "sile/erl_pp"}
+codecov = {repository = "sile/erl_pp"}
+
+[dependencies]
+erl_tokenize = "0.3"
+glob = "0.3"
+trackable = "0.2"
+
+[dev-dependencies]
+clap = "2"

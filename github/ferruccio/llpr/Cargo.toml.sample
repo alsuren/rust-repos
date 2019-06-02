@@ -1,0 +1,21 @@
+[package]
+name = "llpr"
+version = "0.1.0"
+authors = ["Ferruccio Barletta <ferruccio.barletta@gmail.com>"]
+build = "build.rs"
+edition = "2018"
+
+[dependencies]
+quick-error = "1.2.2"
+phf = "0.7.23"
+inflate = "0.4.3"
+
+[build-dependencies]
+phf_codegen = "0.7.23"
+
+[[bench]]
+name = "benchmarks"
+harness = false
+
+[dev-dependencies]
+criterion = "0.2.5"

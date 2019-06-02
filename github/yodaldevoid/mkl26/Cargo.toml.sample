@@ -1,0 +1,72 @@
+[package]
+name = "mkl26"
+version = "0.1.0"
+authors = ["Gabriel Smith <ga29smith@gmail.com>"]
+
+[dependencies]
+arraydeque = { version = "^0.4", default-features = false }
+bit_field = "^0.8"
+cortex-m = { version = "^0.5", features = ["const-fn", "inline-asm"] }
+embedded-hal = { version = "0.2.1", features = ["unproven"] }
+nb = "0.1.1"
+void = { version = "^1", default-features = false }
+volatile-register = "^0.2"
+
+[dev_dependencies]
+cortex-m-rt = { version = "^0.5.2", features = ["device"] }
+
+[features]
+default = [ # default to everything on for docs
+    "fgpio",
+    "i2c-isr",
+    "i2c-slave",
+    "i2c-dma",
+    "spi-isr",
+    "spi-slave",
+    "spi-dma",
+    "uart-isr",
+    "uart-dma"
+]
+
+fgpio = []
+
+i2c-isr = []
+i2c-slave = ["i2c-isr"]
+i2c-dma = ["i2c-isr"]
+
+spi-isr = []
+spi-slave = ["spi-isr"]
+spi-dma = ["spi-isr"]
+
+uart-isr = []
+uart-dma = ["uart-isr"]
+
+[[example]]
+name = "adc"
+
+[[example]]
+name = "blink"
+
+[[example]]
+name = "uart"
+
+[[example]]
+name = "spi_master"
+
+[[example]]
+name = "pwm"
+
+[[example]]
+name = "pit"
+
+[profile.dev]
+debug = false
+debug-assertions = false
+incremental = false
+lto = true
+opt-level = 3
+panic = "abort"
+
+[profile.release]
+lto = true
+panic = "abort"

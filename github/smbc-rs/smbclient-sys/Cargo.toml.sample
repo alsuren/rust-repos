@@ -1,0 +1,18 @@
+[package]
+name = "smbclient-sys"
+version = "0.2.0"
+authors = ["Konstantin Gribov <grossws@gmail.com>", "Mahmut Bulut <vertexclique@gmail.com>"]
+build = "build.rs"
+links = "smbclient"
+
+repository = "https://github.com/smbc-rs/smbclient-sys"
+license = "GPL-3.0+"
+keywords = ["smbclient", "samba", "cifs"]
+description = "FFI bindings to libsmbclient"
+
+[dependencies]
+libc = "^0.2.18"
+
+[build-dependencies]
+pkg-config = "^0.3.8"
+bindgen = "^0.40.0"

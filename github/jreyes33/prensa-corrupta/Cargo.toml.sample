@@ -1,0 +1,20 @@
+[package]
+name = "prensa-corrupta"
+version = "0.1.0"
+authors = ["Jonathan Reyes <j@jreyes.org>"]
+publish = false
+
+[[bin]]
+name = "prensa-corrupta"
+
+[dependencies]
+hyper = "0.10"
+hyper-native-tls = "0.2"
+rust-crypto = "0.2"
+rand = "0.3"
+chrono = "0.2"
+url = "1.1"
+base64 = "0.2"
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"

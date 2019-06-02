@@ -1,0 +1,12 @@
+[package]
+name = "xcode-log-parse"
+version = "0.1.0"
+authors = [
+  "Danielle Tomlinson <dani@tomlinson.io>",
+  "Samuel Giddins <segiddins@segiddins.me>",
+]
+
+[dependencies]
+clap = "2"
+pest = "^1.0"
+pest_derive = "^1.0"

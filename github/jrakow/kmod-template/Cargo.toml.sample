@@ -1,0 +1,15 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+keywords = ["Linux", "kernel", "module"]
+categories = ["os::unix-apis"]
+license = "GPL-2.0-only"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+
+[profile.dev]
+panic = "abort"

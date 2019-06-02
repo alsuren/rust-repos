@@ -1,0 +1,16 @@
+[package]
+name = "ruby-fork-test"
+version = "0.1.0"
+authors = ["Julia Evans <julia@jvns.ca>"]
+
+[lib]
+name = "ruby_fork_test"
+path = "src/lib.rs"
+
+[dependencies]
+"read-process-memory" = "0.1.2"
+"libc" = "0.2.36"
+"elf" = "0.0.10"
+"failure" = "0.1.1"
+bcc = "0.0.1"
+byteorder = "1"

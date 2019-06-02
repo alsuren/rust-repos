@@ -1,0 +1,11 @@
+[package]
+name          = "opengles_rs"
+version       = "0.1.0"
+license       = "MIT"
+
+[dependencies]
+libc = "0.2.42"
+
+[lib]
+name = "opengles_rs"
+crate-type = ["staticlib", "rlib"]

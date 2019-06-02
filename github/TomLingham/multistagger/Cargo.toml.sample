@@ -1,0 +1,10 @@
+[package]
+name = "multistagger"
+version = "0.1.0"
+authors = ["Tom Lingham <tjlingham@gmail.com>"]
+
+[dependencies]
+lazy_static = "0.2.8"
+uuid = { version = "0.5.0", features = ["v4"] }
+regex = "0.2"
+rocker = { path = "../rocker" }

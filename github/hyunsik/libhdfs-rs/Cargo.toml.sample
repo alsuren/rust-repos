@@ -1,0 +1,17 @@
+[package]
+name = "libhdfs-rs"
+version = "0.0.1"
+authors = [ "Hyunsik Choi <hyunsik.choi at gmail dot com>" ]
+
+[lib]
+name = "hdfsrs"
+path = "src/lib.rs"
+
+[dependencies]
+mio = "0.4"
+
+[dependencies.protobuf]
+git = "https://github.com/stepancheg/rust-protobuf.git"
+
+[dependencies.proto]
+path = "src/proto"

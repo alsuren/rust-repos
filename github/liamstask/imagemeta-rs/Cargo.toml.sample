@@ -1,0 +1,16 @@
+[package]
+name = "imagemeta"
+version = "0.1.0"
+authors = ["Liam Staskawicz <liam@stask.net>"]
+license = "MIT/Apache-2.0"
+readme = "ReadMe.md"
+keywords = ["exif", "xmp", "metadata"]
+repository = "https://github.com/liamstask/imagemeta-rs"
+homepage = "https://github.com/liamstask/imagemeta-rs"
+documentation = "https://docs.rs/imagemeta"
+description = """
+Support for manipulating image metadata (exif, etc) in Rust.
+"""
+
+[dependencies]
+byteorder = "0.5.3"

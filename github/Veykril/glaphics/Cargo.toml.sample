@@ -1,0 +1,12 @@
+[package]
+name = "glaphics"
+version = "0.1.0"
+authors = ["Lukas Wirth <lukastw97@gmail.com>"]
+
+[dependencies]
+gl = "0.10.0"
+nalgebra = "*"
+
+[dev-dependencies]
+glfw = "0.21.0"
+image = "*"

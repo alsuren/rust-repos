@@ -1,0 +1,15 @@
+[package]
+name = "Practice_projects"
+version = "0.1.0"
+authors = ["Alexander Wilkinson <alexwilkinson@gmail.com>"]
+
+[dependencies]
+rand = "0.5.5"
+
+[lib]
+name = "main_lib"
+path = "src/projects/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"

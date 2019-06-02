@@ -1,0 +1,34 @@
+[package]
+authors = ["BurntPizza <xburntpizza@gmail.com>"]
+build = "build.rs"
+name = "ftl"
+version = "0.1.0"
+
+[[bin]]
+doc = false
+name = "ftl"
+path = "src/main.rs"
+
+[build-dependencies]
+lalrpop = "0.13.1"
+
+[dependencies]
+itertools = "0.6.0"
+lalrpop-util = "0.13.1"
+petgraph = "0.4.5"
+regex = "0.2.2"
+structopt = "0.0.5"
+structopt-derive = "0.0.5"
+strum = "0.6.0"
+strum_macros = "0.6.1"
+
+[dependencies.dataflow]
+# git = "https://github.com/BurntPizza/dataflow.git"
+path = "../dataflow"
+
+[dependencies.mrst]
+path = "../mrst"
+
+[lib]
+name = "ftl"
+path = "src/lib.rs"

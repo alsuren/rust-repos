@@ -1,0 +1,16 @@
+[package]
+authors = ["Norbert Pozar <bertapozar@gmail.com>"]
+license = "MIT"
+name = "isosurface"
+version = "0.1.0"
+
+[dependencies]
+
+[dev-dependencies]
+gnuplot = "0.0.21"
+ndarray = "0.6.0"
+
+[workspace]
+members = [
+  "isosurface-capi"
+]

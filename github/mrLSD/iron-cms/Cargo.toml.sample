@@ -1,0 +1,29 @@
+[package]
+name = "iron-cms"
+version = "0.2.80"
+authors = ["Evgeny Ukhanov <mrlsd@ya.ru>"]
+
+[dependencies]
+iron = "0.4.0"
+router = "*"
+handlebars-iron = "*"
+rustc-serialize = "*"
+time = "*"
+staticfile = "*"
+mount = "*"
+maplit = "*"
+handlebars = "*"
+params = "*"
+diesel = "0.8.1"
+r2d2 = "*"
+r2d2-diesel = "*"
+regex = "0.1"
+
+[dependencies.iron_diesel_middleware]
+git = "https://github.com/iron-cms/iron-diesel-middleware"
+
+[[bin]]
+name = "iron-cms"
+doc = false
+
+[features]

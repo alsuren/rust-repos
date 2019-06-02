@@ -1,0 +1,19 @@
+[package]
+name = "trappo"
+version = "0.1.0"
+authors = ["Diego Cabrejas <dcabrejas@protonmail.com>"]
+license = "GPL-3.0-only"
+description = "Fast and convenient remote server automation and deployment tool"
+readme = "README.md"
+documentation = "http://trappo.tk"
+homepage = "http://trappo.tk"
+repository = "https://github.com/dcabrejas/trappo"
+keywords = ["deploy", "deployment", "tool", "automation"]
+categories = ["deployment"]
+
+[dependencies]
+toml_edit = "0.1.2"
+ansi_term = "0.11.0"
+docopt = "1.0.1"
+serde = "1.0"
+serde_derive = "1.0"

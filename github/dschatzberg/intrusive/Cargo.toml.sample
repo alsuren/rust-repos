@@ -1,0 +1,16 @@
+[package]
+
+name = "intrusive-containers"
+description = "A library of intrusive data structures"
+license = "LGPL-3.0+"
+version = "0.2.4"
+authors = ["Dan Schatzberg <schatzberg.dan@gmail.com>"]
+repository = "http://github.com/dschatzberg/intrusive"
+homepage = "http://github.com/dschatzberg/intrusive"
+documentation = "https://dschatzberg.github.io/intrusive/intrusive_containers/index.html"
+
+[features]
+nostd = []
+
+[dev-dependencies]
+rand = "0.3.8"

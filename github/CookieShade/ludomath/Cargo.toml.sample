@@ -1,0 +1,14 @@
+[package]
+name = "ludomath"
+version = "1.1.1"
+authors = ["CookieShade <CookieShade@users.noreply.github.com>"]
+description = "A math library for 2D games and graphics"
+documentation = "https://docs.rs/ludomath"
+repository = "https://github.com/CookieShade/ludomath"
+readme = "README.md"
+keywords = ["game", "graphics", "vector", "math", "random"]
+categories = ["science"]
+license = "Apache-2.0"
+
+[dependencies]
+rand = "0.3"

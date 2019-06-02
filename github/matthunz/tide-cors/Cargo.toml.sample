@@ -1,0 +1,18 @@
+[package]
+name = "tide-cors"
+version = "0.1.0"
+authors = ["Matt Hunzinger <matthunz2@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "tide_cors"
+
+[dependencies]
+display_derive = "0.0.0"
+futures-preview = "0.3.0-alpha.16"
+tide = "0.2.0"
+
+[dev-dependencies]
+http-service = "0.2.0"

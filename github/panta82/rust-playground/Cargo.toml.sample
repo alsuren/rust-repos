@@ -1,0 +1,36 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["Panta <ivanpantic82@gmail.com>"]
+
+[[bin]]
+name = "hello"
+path = "src/hello.rs"
+
+[[bin]]
+name = "lets"
+path = "src/lets.rs"
+
+[[bin]]
+name = "control"
+path = "src/control.rs"
+
+[[bin]]
+name = "fns"
+path = "src/fns.rs"
+
+[[bin]]
+name = "arrays"
+path = "src/arrays.rs"
+
+[[bin]]
+name = "vectors"
+path = "src/vectors.rs"
+
+[[bin]]
+name = "strings"
+path = "src/strings.rs"
+
+[[bin]]
+name = "cat"
+path = "src/cat.rs"

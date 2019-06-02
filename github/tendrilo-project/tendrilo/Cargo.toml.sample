@@ -1,0 +1,16 @@
+[package]
+name = "tendrilo"
+version = "0.1.0"
+authors = ["kciryt <tyrick@gmail.com>"]
+
+[dependencies]
+chrono = "0.4.0"
+bincode = "0.9.2"
+hex = "0.3.1"
+regex = "0.1.41"
+rustc-serialize = "0.3"
+rust-crypto = "0.2.34"
+mio = "0.5"
+bytes = "0.2.11"
+rand = "0.3"
+byteorder = "1.2.1"

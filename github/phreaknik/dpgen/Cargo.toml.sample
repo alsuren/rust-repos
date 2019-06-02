@@ -1,0 +1,10 @@
+[package]
+authors = ["John Boyd <johnboydiv@gmail.com>"]
+name = "dpgen"
+description = "A deterministic password generator."
+version = "0.1.0"
+
+[dependencies]
+clap = "2.32"
+rpassword = "2.0"
+sha3 = "0.7.3"

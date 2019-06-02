@@ -1,0 +1,10 @@
+[package]
+name = "advent2018"
+version = "0.1.0"
+authors = ["Brendan Bates <batesbrendan@gmail.com>"]
+
+[dependencies]
+reqwest = "0.9.5"
+regex = "1"
+lazy_static = "1.2.0"
+chrono = "0.4.6"

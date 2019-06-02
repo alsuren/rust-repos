@@ -1,0 +1,68 @@
+[package]
+name = "seqtool"
+version = "0.3.0"
+authors = ["<markschl19@gmail.com>"]
+description = "General purpose tool for reading, modifying and writing biological sequences."
+license = "MIT"
+repository = "https://github.com/markschl/seq_io"
+documentation = "https://docs.rs/seq_io"
+readme = "README.md"
+
+[dependencies]
+docopt = "1.0"
+bio = "0.22"
+seq_io = "0.3"
+thread_io = { version="0.1", path="src/thread_io" }
+crossbeam = "0.4"
+lazy_static = "1.1"
+regex = "1.0"
+csv = "1.0"
+itertools = "0.7"
+bit-vec = "0.5"
+vec_map = "0.8"
+rand = "0.5"
+flate2 = "1.0"
+bzip2 = "0.3"
+lz4 = "1.22"
+zstd = "0.4"
+twoway = "0.1"
+memchr = "2.0"
+fxhash = "0.2"
+textwrap = "0.10"
+meval = "0.1"
+exprtk_rs = { version = "0.0.7", optional = true, features = [
+  "comments", "break_continue", "sc_andor", "return_statement",
+  "enhanced_features", "superscalar_unroll"
+ ] }
+bytecount = "0.3"
+maplit = "1.0"
+pattern_matching = { path = "src/pattern_matching", version = "0.1.1" }
+ref_slice = "1.1"
+byteorder = "1.2"
+read_color = "1.0"
+palette = "0.4"
+termcolor = "1.0"
+ordered-float = "0.5"
+approx = "0.3"
+
+[target.'cfg(unix)'.dependencies]
+pager = "0.14"
+
+[[bin]]
+path = "src/main.rs"
+name = "st"
+
+[dev-dependencies]
+assert_cmd = "0.9"
+predicates = "0.9"
+tempdir = "0.3"
+
+[features]
+default = []
+nightly = ["twoway/pcmp"]
+exprtk = ["exprtk_rs"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort" # smaller & faster binary

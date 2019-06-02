@@ -1,0 +1,9 @@
+[workspace]
+
+members = [
+    "command-macros",
+    "command-macros-plugin",
+]
+
+[patch.crates-io]
+command-macros-plugin = { path = "command-macros-plugin" }

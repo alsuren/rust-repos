@@ -1,0 +1,39 @@
+[package]
+name = "nes"
+version = "0.1.0"
+authors = ["Federico Ravasio <ravasio.federico@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "nes"
+path = "src/nes/lib.rs"
+bench = false
+doctest = false
+
+[[bin]]
+name = "nes"
+bench = false
+doc = false
+test = false
+
+[dependencies]
+nom = "4.2"
+log = { version = "0.4", features = ["release_max_level_info"] }
+simplelog = "0.5"
+sdl2 = "0.32.2"
+clap = "2.33"
+
+[dev-dependencies]
+pretty_assertions = "0.6"
+colored = "1.7"
+criterion = "0.2"
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+debug = true
+
+[[bench]]
+name = "frame"
+harness = false

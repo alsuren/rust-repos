@@ -1,0 +1,16 @@
+[package]
+name = "arete"
+version = "0.1.0"
+authors = ["Warren Henning <warren.henning@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+postgres = { version = "0.15.2", features = ["with-time", "with-chrono"] }
+toml = "0.5.0"
+serde = "1.0.90"
+serde_derive = "1.0.90"
+crossterm = "0.9.3"
+yaml-rust = "0.4.3"
+serde_yaml = "0.8"
+clap = "2.33.0"

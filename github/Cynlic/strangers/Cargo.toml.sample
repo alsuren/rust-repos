@@ -1,0 +1,8 @@
+[package]
+name = "chaos-plot"
+version = "0.1.0"
+authors = ["cynlic <montgomeryh@kenyon.edu>"]
+
+[dependencies]
+rand = "0.3"
+gnuplot = "0.0.22"

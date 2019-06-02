@@ -1,0 +1,10 @@
+[package]
+name = "brick"
+version = "0.1.0"
+authors = ["Karen Rustad <karen@aerofs.com>"]
+
+[dependencies]
+iron = "*"
+urlencoded = "*"
+router = "*"
+smtp = "*"

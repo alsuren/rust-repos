@@ -1,0 +1,32 @@
+[package]
+name = "termstyle"
+version = "0.1.2"
+authors = ["Garrett Berg <vitiral@gmail.com>"]
+description = """
+create and test the style and formatting of text in your terminal applications
+"""
+keywords = [
+    "terminal",
+    "color",
+    "testing",
+]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+documentation = "https://docs.rs/termstyle"
+repository = "https://github.com/vitiral/termstyle"
+
+[dependencies]
+ansi_term = "0.10"
+serde = "1.*"
+serde_derive = "1.*"
+std_prelude = "0.2"
+
+[dependencies.tabwriter]
+default-features = false
+features = ["ansi_formatting"]
+version = "1.*"
+
+[dev-dependencies]
+pretty_assertions = "0.4"
+serde_json = "1.*"
+serde_yaml = "0.7"

@@ -1,0 +1,20 @@
+[package]
+name = "rustcalc"
+version = "0.0.1"
+authors = [ "Paul Schoenfelder <paulschoenfelder@gmail.com" ]
+
+[dependencies]
+parser-combinators = "0.6.0"
+
+[lib]
+name = "rustcalc"
+path = "src/lib.rs"
+doctest = false
+test = false
+bench = false
+
+[[bin]]
+name = "rustcalc"
+doctest = false
+test = false
+bench = false

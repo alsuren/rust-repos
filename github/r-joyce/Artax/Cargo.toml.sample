@@ -1,0 +1,75 @@
+[package]
+name = "artax"
+version = "0.1.0"
+authors = ["KJ Dorow <kevin.e.dorow@wsu.edu>",
+           "Ryan Joyce <ryan.joyce@wsu.edu>",
+           "Wes Fletcher <wesley.fletcherw@wsu.edu>"]
+repository = "https://github.com/r-joyce/Artax"
+
+[dependencies]
+zmq = {git = "https://github.com/erickt/rust-zmq"}
+protobuf = "~1"
+# bincode = "0.6"
+# chrono = "0.2"
+# serde = "0.8"
+# serde_derive = "0.8"
+lzf = { git = "https://github.com/SProst/lzf-rs"}
+rustc-serialize = "0.3"
+snap = "~0.2"
+# time = "0.1"
+config = "0.8"
+
+[build-dependencies]
+protoc-rust = "~1"
+
+[[bin]]
+name = "artax"
+path = "src/main.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "worker"
+path = "src/worker.rs"
+
+[[example]]
+name = "channels"
+path = "examples/channels/src/main.rs"
+
+[[example]]
+name = "majordomo_broker"
+path = "examples/majordomo/broker/src/broker.rs"
+
+[[example]]
+name = "majordomo_client"
+path = "examples/majordomo/client/src/client.rs"
+
+[[example]]
+name = "majordomo_worker"
+path = "examples/majordomo/worker/src/worker.rs"
+
+[[example]]
+name = "protob"
+path = "examples/protob/src/main.rs"
+
+[[example]]
+name = "threadpool_broker"
+path = "examples/threadpool/broker/src/broker.rs"
+
+[[example]]
+name = "threadpool_client"
+path = "examples/threadpool/client/src/client.rs"
+
+[[example]]
+name = "threads"
+path = "examples/threads/src/main.rs"
+
+[[example]]
+name = "process_pool"
+path = "examples/procpool/src/main.rs"

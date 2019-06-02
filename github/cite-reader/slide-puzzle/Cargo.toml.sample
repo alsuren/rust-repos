@@ -1,0 +1,12 @@
+[package]
+name = "slide-puzzle"
+version = "0.1.0"
+authors = ["Alex Hill <alexander.d.hill.89@gmail.com>"]
+
+[lib]
+name = "slide_puzzle"
+path = "src/lib.rs"
+
+[[bin]]
+name = "terminal-puzzle"
+path = "terminal-puzzle/main.rs"

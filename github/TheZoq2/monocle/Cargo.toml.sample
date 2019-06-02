@@ -1,0 +1,62 @@
+[package]
+authors = ["Frans Skarman"]
+categories = ["embedded", "no-std"]
+description = "Digital signal reader"
+keywords = ["arm", "cortex-m"]
+license = "MIT OR Apache-2.0"
+name = "monocle"
+repository = "https://github.com/thezoq2/monocle"
+version = "0.0.1"
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+# These two are needed to not overrun the flash
+opt-level = 0
+lto = false
+
+[profile.release]
+lto = true
+debug = true
+opt-level = 3
+
+[dependencies]
+cortex-m = "0.5.7"
+# cortex-m-rtfm = "0.3.1"
+cortex-m-rtfm = {git = "http://github.com/ykomatsu/cortex-m-rtfm", branch = "update"}
+nb = "0.1.1"
+heapless="0.2.4"
+cortex-m-semihosting = "0.3.0"
+api = {path = "api"}
+panic-semihosting = "0.3.0"
+
+[dependencies.embedded-hal]
+version = "0.1.1"
+features = ["unproven"]
+
+# stm32f30x-hal = "0.1.2"
+# stm32f30x-hal = {path = "../../stm32f30x-hal"}
+
+[dependencies.cortex-m-rt]
+version = "0.5.0"
+features = ["device"]
+
+
+
+[dependencies.stm32f103xx-hal]
+# git = "https://github.com/japaric/stm32f103xx-hal.git"
+path = "../../stm32f103xx-hal"
+features = ["time_units"]
+
+[dependencies.stm32f103xx]
+version = "0.10.0"
+features = ["rt"]
+
+
+[dependencies.embedded-hal-time]
+path = "../embedded-hal-time"
+
+
+[dependencies.arrayvec]
+version = "0.4.7"
+default_features = false

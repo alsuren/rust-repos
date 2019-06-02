@@ -1,0 +1,21 @@
+[package]
+name = "chattium_oxide_lib"
+description = "Common files for chattium-oxide-server and chattium-oxide-client"
+repository = "https://github.com/nabijaczleweli/chattium-oxide-lib"
+readme = "README.md"
+keywords = ["chattium-oxide", "chat"]
+license = "MIT"
+version = "0.1.0"
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>"]
+
+
+[dependencies]
+serde_json = "0.8"
+serde = "0.8"
+time = "0.1"
+
+[dev-dependencies]
+rand = "0.3"
+
+[features]
+ci = []

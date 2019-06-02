@@ -1,0 +1,24 @@
+[package]
+authors = ["kngwyu <yuji.kngw.80s.revive@gmail.com>"]
+name = "fugu-shell"
+version = "0.0.1"
+
+[dependencies]
+clap = "2.29.0"
+lazy_static = "1"
+regex = "0.2"
+sloggers = "0.2.4"
+termion = "1.5.1"
+walkdir = "2.0.1"
+ascii = "0.8.6"
+
+[dependencies.slog]
+features = ["max_level_trace", "release_max_level_warn"]
+version = "2"
+
+[dependencies.clippy]
+optional = true
+version = "*"
+
+[features]
+default = []

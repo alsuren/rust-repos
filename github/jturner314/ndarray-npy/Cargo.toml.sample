@@ -1,0 +1,27 @@
+[package]
+name = "ndarray-npy"
+version = "0.4.0"
+authors = ["Jim Turner <ndarray-npy@turner.link>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/jturner314/ndarray-npy"
+description = ".npy and .npz file format support for ndarray"
+keywords = ["npy", "npz", "ndarray", "numpy", "array"]
+categories = ["parser-implementations", "encoding", "science"]
+readme = "README.md"
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "jturner314/ndarray-npy", branch = "master" }
+
+[dependencies]
+byteorder = "1.2"
+ndarray = "0.12"
+num-traits = "0.2"
+py_literal = "0.2"
+quick-error = "1.2"
+zip = { version = "0.5", default-features = false, optional = true }
+
+[features]
+default = ["compressed_npz"]
+npz = ["zip"]
+compressed_npz = ["npz", "zip/deflate"]

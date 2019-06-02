@@ -1,0 +1,45 @@
+[package]
+name = "notify-hook"
+version = "0.2.3"
+authors = ["James Kominick <james.kominick@gmail.com>"]
+license = "MIT"
+description = "GitHub PushEvent-like git post-receive hook"
+repository = "https://github.com/jaemk/notify-hook"
+readme = "README.md"
+keywords = ["cli"]
+categories = ["command-line-utilities", "development-tools"]
+exclude = [
+    "ci/",
+]
+
+[[bin]]
+name = "notify-hook"
+path = "src/main.rs"
+doc = false
+
+[badges]
+travis-ci = { repository = "jaemk/notify-hook", branch = "master" }
+
+[dependencies]
+clap = "2"
+error-chain = "0.11"
+hyper = "0.11"
+reqwest = "0.8"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+serde_qs = "0.3"
+git2 = "0.7"
+ring = "0.12"
+data-encoding = "2"
+chrono = "0.4"
+self_update = { version = "0.4", optional = true }
+
+[dev-dependencies]
+assert_cli = "0.5"
+
+[features]
+default = []
+update = ["self_update"]
+integration_tests = []
+

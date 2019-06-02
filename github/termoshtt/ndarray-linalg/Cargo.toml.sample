@@ -1,0 +1,42 @@
+[package]
+name    = "ndarray-linalg"
+version = "0.10.1-alpha.0"
+authors = ["Toshiki Teramura <toshiki.teramura@gmail.com>"]
+edition = "2018"
+
+description   = "Linear algebra package for rust-ndarray using LAPACK"
+documentation = "https://docs.rs/ndarray-linalg/"
+repository    = "https://github.com/termoshtt/ndarray-linalg"
+keywords      = ["ndarray", "lapack", "matrix"]
+license       = "MIT"
+readme        = "README.md"
+categories    = ["algorithms", "science"]
+
+[features]
+default    = []
+intel-mkl  = ["lapack-src/intel-mkl", "blas-src/intel-mkl"]
+netlib     = ["lapack-src/netlib", "blas-src/netlib"]
+openblas   = ["lapack-src/openblas", "blas-src/openblas"]
+serde-1    = ["ndarray/serde-1", "num-complex/serde"]
+
+[dependencies]
+lapacke = "0.2"
+num-traits  = "0.2"
+cauchy = "0.2.1"
+num-complex = "0.2.1"
+rand = "0.5"
+
+[dependencies.ndarray]
+version = "0.12"
+features = ["blas"]
+default-features = false
+
+[dependencies.blas-src]
+version = "0.2"
+default-features = false
+optional = true
+
+[dependencies.lapack-src]
+version = "0.2"
+default-features = false
+optional = true

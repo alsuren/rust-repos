@@ -1,0 +1,30 @@
+[workspace]
+members = [
+    "components/fxa-client",
+    "components/fxa-client/ffi",
+    "components/logins",
+    "components/logins/ffi",
+    "components/places",
+    "components/push",
+    "components/push/ffi",
+    "components/places/ffi",
+    "components/support/cli",
+    "components/support/sql",
+    "components/support/error",
+    "components/support/ffi",
+    "components/support/force-viaduct-reqwest",
+    "components/support/interrupt",
+    "components/viaduct",
+    "components/sync15",
+    "components/rc_log",
+    "megazords/fenix",
+    "megazords/lockbox",
+    "megazords/reference-browser",
+    "megazords/ios/rust",
+    "testing/sync-test",
+]
+
+[profile.release]
+opt-level = "s"
+debug = true
+lto = true

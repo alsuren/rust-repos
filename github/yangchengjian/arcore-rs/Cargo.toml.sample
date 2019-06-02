@@ -1,0 +1,11 @@
+[package]
+name = "arcore"
+version = "0.1.0"
+build = "build.rs"
+authors = ["Captcha <yangchengjian0101@gmail.com>"]
+
+[build-dependencies]
+bindgen = "0.26.3"
+
+[dependencies]
+android_injected_glue = "0.2"

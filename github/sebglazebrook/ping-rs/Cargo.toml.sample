@@ -1,0 +1,12 @@
+[package]
+name = "ping-rs"
+version = "0.1.0"
+authors = ["sebastian"]
+
+[lib]
+name = "ping"
+path = "src/lib.rs"
+
+[dependencies]
+byteorder = "1.2.1"
+pnet = "0.20.0"

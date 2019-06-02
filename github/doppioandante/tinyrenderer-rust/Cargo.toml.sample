@@ -1,0 +1,31 @@
+[package]
+name = "tinyrenderer"
+version = "0.1.0"
+authors = ["Enrico Lumetti <enrico.lumetti@gmail.com>"]
+
+[[bin]]
+name = "bresenham1"
+path = "src/bresenham1.rs"
+
+[[bin]]
+name = "bresenham2"
+path = "src/bresenham2.rs"
+
+[[bin]]
+name = "bresenham3"
+path = "src/bresenham3.rs"
+
+[[bin]]
+name = "bresenham5"
+path = "src/bresenham5.rs"
+
+[[bin]]
+name = "bresenham6"
+path = "src/bresenham6.rs"
+
+[[bin]]
+name = "wireframe"
+path = "src/wireframe.rs"
+
+[dependencies]
+tga = { path = "/home/enrico/projects/tgaimage-rust" }

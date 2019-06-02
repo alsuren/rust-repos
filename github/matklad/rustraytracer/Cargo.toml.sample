@@ -1,0 +1,24 @@
+[package]
+name = "rustraytracer"
+version = "0.1.0"
+authors = ["Aleksey Kladov <aleksey.kladov@gmail.com>"]
+license = "MIT"
+
+[workspace]
+
+[dependencies.geom]
+path = "libs/geom"
+
+[dependencies.utils]
+path = "libs/utils"
+
+[dependencies]
+rand = "*"
+regex = "*"
+rustc-serialize = "*"
+time = "*"
+rayon = "*"
+
+[profile.release]
+debug = true
+lto = true

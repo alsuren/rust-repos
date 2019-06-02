@@ -1,0 +1,8 @@
+[package]
+name = "pacman"
+version = "0.1.0"
+authors = ["Christopher Medlin <christopherjmedlin@gmail.com>"]
+
+[dependencies]
+matches = "0.1.8"
+sdl2 = "0.31.0"

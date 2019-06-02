@@ -1,0 +1,18 @@
+[package]
+authors = ["risboo6909 <ttyv00@gmail.com"]
+name = "life-rs"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.24.*"
+find_folder = "0.3.*"
+piston2d-opengl_graphics = "0.36.*"
+piston_window = "0.60.*"
+
+[dependencies.engine]
+path = "engine"
+
+[dependencies.ui]
+path = "ui"
+
+[workspace]

@@ -1,0 +1,14 @@
+[package]
+name = "jwtc"
+version = "0.1.0"
+authors = ["Grant Miner <xxgsoftware@gmail.com>"]
+
+[dependencies]
+structopt = "0.2.10"
+structopt-derive = "0.2.10"
+jsonwebtoken = "5.0.0"
+rustc-serialize = "0.3.24"
+rust-crypto = "0.2.36"
+clap = "2.32.0"
+threadpool = "1.7.1"
+num_cpus = "1.8.0"

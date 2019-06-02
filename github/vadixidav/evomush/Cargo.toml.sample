@@ -1,0 +1,21 @@
+[package]
+name = "evomush"
+version = "0.1.0"
+authors = ["Geordon Worley <vadixidav@gmail.com>"]
+
+[dependencies]
+gapush = {git = "https://github.com/vadixidav/gapush", rev = "893b998b003ca8ca5304e28550c58f935a3b9f70"}
+rand = "0.3"
+heapsize = "0.3"
+serde = "0.9"
+serde_derive = "0.9"
+sdl2 = "0.27"
+glowygraph = "0.7.2"
+glium = "0.15"
+glium_sdl2 = "0.13"
+zoom = "1.5"
+nalgebra = "0.10"
+petgraph = "0.4"
+num = "0.1"
+itertools = "0.6"
+boolinator = "2.4"

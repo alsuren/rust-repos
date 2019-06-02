@@ -1,0 +1,11 @@
+[package]
+name = "rsa_lixo"
+version = "0.1.0"
+authors = ["renanssilva"]
+
+[dependencies]
+rand = "0.3"
+rug = "1.1.0"
+base64 = "~0.6.0"
+clap = "2.31"
+gmp-mpfr-sys = "1.1"

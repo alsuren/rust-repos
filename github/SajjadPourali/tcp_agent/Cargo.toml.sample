@@ -1,0 +1,23 @@
+[package]
+name = "tcp_agent"
+version = "0.0.1-dev"
+authors = ["SajjadPourali <sajjad@securation.com>"]
+edition = "2018"
+
+[profile.release]
+opt-level = 's'
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 16
+panic = 'unwind'
+incremental = false
+overflow-checks = false
+
+[dependencies]
+futures = "0.1"
+tokio = "0.1"
+rlua="0.16"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.4"

@@ -1,0 +1,27 @@
+[workspace]
+members = [
+    "apps/*",
+    "boards/**",
+    "mcu/*",
+]
+
+[package]
+categories = ["embedded", "no-std"]
+description = "A microcontroller firmware"
+keywords = ["arm"]
+license = "MIT OR Apache-2.0"
+name = "board"
+version = "0.1.0"
+
+[dependencies]
+hal = { version = "0.1", path = "./hal" }
+board_flexperiment_mini = { version = "0.1", path = "./boards/flexperiment_mini", optional = true }
+board_flexperiment_nano = { version = "0.1", path = "./boards/flexperiment_nano", optional = true }
+board_netboard = { version = "0.1", path = "./boards/netboard", optional = true }
+
+[lib]
+path = "board.rs"
+
+[profile.release]
+## DIE error GDB debug = true
+lto = true

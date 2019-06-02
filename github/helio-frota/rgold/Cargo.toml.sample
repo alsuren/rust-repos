@@ -1,0 +1,18 @@
+[package]
+name = "rgold"
+version = "0.0.1"
+authors = ["Helio Frota <00hf11@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/helio-frota/rgold"
+keywords = ["simple game"]
+description = "A rust version of a game I made years ago."
+
+[dependencies]
+allegro = "0.0.33"
+allegro_font = "0.0.33"
+allegro_ttf = "0.0.33"
+allegro_image = "0.0.33"
+allegro_acodec = "0.0.33"
+allegro_audio = "0.0.33"
+allegro_primitives = "0.0.33"
+rand = "0.5"

@@ -1,0 +1,22 @@
+[package]
+name = "minifarm-requester-service"
+version = "0.1.0"
+homepage = "https://requester.minifarm.ro/"
+authors = ["Paul-Sebastian Manole <brokenthorn@gmail.com>"]
+description = "A REST-ful Web API for Minifarm Requester."
+repository = "https://github.com/brokenthorn/minifarm-requester-service"
+categories = ["lob", "minifarm"]
+license = "UNLICENSED"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+rocket = "^0.4.0"
+#rocket_codegen = "^0.4.0"
+rocket_contrib = "^0.4.0"
+#rocket_contrib_codegen = "^0.4.0"
+confy = "^0.3.1"
+serde = "^1.0.0"
+serde_derive = "^1.0.0"
+#serde_json = "^1.0.0"
+#diesel = { version = "^1.0.0", features = ["sqlite"] }

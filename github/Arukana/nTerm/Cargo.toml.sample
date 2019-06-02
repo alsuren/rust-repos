@@ -1,0 +1,57 @@
+[package]
+name = "nterm"
+version = "0.1.0"
+authors = [
+  "adjivas <adjivas@users.noreply.github.com>",
+]
+repository = "https://github.com/arukana/nterm.git"
+readme = "README.md"
+build = "build.rs"
+keywords = ["nterm", "terminal", "neko", "term"]
+license = "GPL-3.0"
+
+[[bin]]
+name = "n-term"
+doc  = false
+test = false
+
+[lib]
+name = "nterm"
+test = false
+doc = false
+
+[features]
+default           = []
+lints             = ["clippy", "nightly"]
+nightly           = [] # for building with nightly and unstable features
+unstable          = [] # for building with unstable features on stable Rust
+debug             = [] # for building with debug messages
+travis            = ["lints", "nightly"] # for building with travis-cargo
+
+[dependencies]
+gfx               = "*"
+freetype-rs       = "*"
+gfx_window_glutin = "*"
+gfx_device_gl     = "*"
+glutin            = "*"
+
+[dependencies.clippy]
+version           = "*"
+optional          = true
+
+[dependencies.gfx_text]
+version           = "*"
+default-features  = false
+
+[dependencies.libc]
+version           = "0.2"
+
+[dependencies.itertools]
+version           = "0.5"
+
+[dependencies.neko]
+git               = "https://github.com/Arukana/Neko.git"
+
+[dependencies.clap]
+version = "*"
+features = ["yaml", "suggestions", "color"]

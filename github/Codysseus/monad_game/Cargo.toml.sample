@@ -1,0 +1,9 @@
+[package]
+name = "monad_game"
+version = "0.1.0"
+authors = ["Cody Holliday <cody.parker.holliday@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.1"
+itertools = "0.7.8"

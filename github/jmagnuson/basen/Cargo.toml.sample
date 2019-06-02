@@ -1,0 +1,18 @@
+[package]
+name = "basen"
+version = "0.1.0"
+authors = ["jmagnuson <magnu225@umn.edu>"]
+license = "MIT"
+
+[lib]
+name = "basen"
+path = "src/lib.rs"
+
+[dependencies]
+
+#[dev-dependencies]
+clippy = {version = "~0.0.51", optional = true}
+
+[features]
+default = []
+dev = ["clippy"]

@@ -1,0 +1,13 @@
+[package]
+name = "advent_of_code_2018"
+version = "0.1.0"
+authors = ["siku2"]
+
+[dependencies]
+chrono = "*"
+clap = {version = "*", features = ["yaml"]}
+lazy_static = "*"
+num = "*"
+petgraph = "*"
+rayon = "*"
+regex = "*"

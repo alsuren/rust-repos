@@ -1,0 +1,26 @@
+[package]
+name = "cuckoo"
+version = "0.7.0"
+authors = ["Daniel Stahl <danstahl1138@gmail.com>"]
+homepage = "https://github.com/phillyfan1138/cuckoo_rust"
+repository = "https://github.com/phillyfan1138/cuckoo_rust"
+readme = "README.md"
+license = "MIT"
+description = "Cuckoo search algorithm"
+
+[dependencies]
+rand = "0.5"
+byteorder = "1.2.3"
+serde_derive = "1.0"
+serde = "1.0"
+
+[dev-dependencies]
+approx = "0.2.0"
+
+[badges]
+travis-ci = { repository = "phillyfan1138/cuckoo_rust" }
+
+[features]
+default = []
+VERBOSE_FLAG_ALL=[]
+VERBOSE_FLAG_SUMMARY=[]

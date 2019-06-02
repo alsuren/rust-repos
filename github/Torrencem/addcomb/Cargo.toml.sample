@@ -1,0 +1,11 @@
+[package]
+name = "addcomb"
+version = "0.2.0"
+authors = ["torrencem <matt@torrencefamily.net>"]
+publish = false
+
+[dependencies]
+lazy_static = "1.2.0"
+
+[dev-dependencies]
+rand = "0.6.5"

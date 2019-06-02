@@ -1,0 +1,7 @@
+[package]
+name = "rusty"
+version = "0.1.0"
+authors = ["Micah Hawkins <micahbhawkins@gmail.com>"]
+
+[dependencies.tcod]
+git = "https://github.com/tomassedovic/tcod-rs.git"

@@ -1,0 +1,10 @@
+[package]
+name = "poe_eventing"
+version = "0.1.0"
+authors = ["Frederic Desgreniers <fredericdesgreniers@gmail.com>"]
+
+[dependencies]
+failure = "0.1.1"
+regex = "1.0.1"
+poe_data = {path = "poe_data"}
+lazy_static = "1.0.1"

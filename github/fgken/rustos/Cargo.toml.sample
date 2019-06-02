@@ -1,0 +1,9 @@
+[package]
+name = "rustos"
+version = "0.0.1"
+authors = ["fg.bell.tree.333@gmail.com"]
+
+[lib]
+name = "rustos"
+crate-type = ["staticlib"]
+

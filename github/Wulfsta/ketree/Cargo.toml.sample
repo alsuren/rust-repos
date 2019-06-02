@@ -1,0 +1,20 @@
+[package]
+name = "ketree"
+version = "0.5.2"
+authors = ["Wulfsta <wulfstawulfsta@gmail.com>"]
+description = "A tree representing a symbolic expression that can be created with Ketos."
+license = "MIT/Apache-2.0"
+keywords = [ "symbolic-expression", "s-expression", "tree", "lisp" ]
+readme = "README.md"
+homepage = "https://github.com/Wulfsta/ketree"
+repository = "https://github.com/Wulfsta/ketree"
+documentation = "https://docs.rs/ketree/"
+
+[dependencies]
+ketos = "0.10"
+ketos_derive = "0.10"
+
+[lib]
+name = "ketree"
+path = "src/ketree/lib.rs"
+

@@ -1,0 +1,21 @@
+[package]
+name = "ipip"
+version = "0.1.0"
+authors = ["paomian <xpaomian@gmail.com>"]
+
+[dependencies]
+iron = "*"
+time = "*"
+hyper = "*"
+router = "*"
+clippy = "*"
+rustc-serialize = "0.3"
+bufstream = "0.1"
+
+[dependencies.log]
+version = "*"
+path = "log"
+
+[dependencies.env_logger]
+version = "*"
+path = "log/env"

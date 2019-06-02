@@ -1,0 +1,48 @@
+[package]
+name = "cardano-cli"
+version = "1.0.1"
+authors = [ "Nicolas Di Prima <nicolas.diprima@iohk.io>"
+          , "Vincent Hanquez <vincent.hanquez@iohk.io>"
+          ]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/input-output-hk/cardano-cli"
+homepage = "https://github.com/input-output-hk/cardano-cli#README.md"
+documentation = "https://github.com/input-output-hk/cardano-cli#USAGE.md"
+description = """
+The Cardano command line interface:
+
+* powerful blockchain manager: download, explore, verify, analyse;
+* manage multiple wallets: daedalus', icarus' or other kind of wallets;
+* flexible transaction build engine.
+"""
+
+
+[dependencies]
+console = "0.7"
+dialoguer = { git = "https://github.com/mitsuhiko/dialoguer", rev = "cd94ac23c995c31c16b05512d30725cdb00bedf3" }
+indicatif = "0.9"
+log = "0.4"
+dirs = "1.0"
+rand = "0.6"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"
+serde_json = "1.0"
+env_logger = "0.5"
+humantime = "1.1"
+cbor_event = "^2.1.2"
+cryptoxide = "0.1"
+exe-common      = { path = "cardano-deps/exe-common" }
+cardano-storage = { path = "cardano-deps/storage" }
+storage-units   = { path = "cardano-deps/storage-units" }
+base64 = "0.9"
+lazy_static = "1.3"
+
+[dependencies.clap]
+version = "2.32"
+default-features = false
+features = [ "suggestions", "color", "wrap_help" ]
+
+[dependencies.cardano]
+path = "cardano-deps/cardano"
+features = [ "generic-serialization" ]

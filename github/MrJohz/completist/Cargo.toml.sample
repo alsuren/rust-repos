@@ -1,0 +1,8 @@
+[package]
+name = "completist"
+version = "0.1.0"
+authors = ["Jonathan <jonathan.frere@gmail.com>"]
+
+[dependencies]
+toml = "0.1.*"
+regex = "0.1.*"

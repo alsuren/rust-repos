@@ -1,0 +1,14 @@
+[package]
+name = "mt"
+version = "0.1.0"
+authors = ["Alexander Irbis <irbis.labs@gmail.com>"]
+
+[features]
+
+[dependencies]
+ring = "0.11"
+crc = "1.4"
+
+[dev-dependencies]
+tempfile = "*"
+lazy_static = "*"

@@ -1,0 +1,33 @@
+[package]
+authors = ["600913 <600913@gmail.com>"]
+name = "ytdl"
+version = "0.1.0"
+
+[dependencies]
+flame = { version = "0.2.2", optional = true }
+flamer = { version = "^0.2.2", optional = true }
+lazy_static = "1.0.0"
+log = "0.4.1"
+rayon = "1.0.1"
+regex = "1.0.0"
+reqwest = "0.8.5"
+serde = "1.0.59"
+serde_derive = "1.0.59"
+serde_json = "1.0.17"
+structopt = "0.2.8"
+url = "1.7.0"
+
+[dependencies.fern]
+features = ["colored"]
+version = "0.5.5"
+
+[dependencies.nom]
+features = [
+    "regex",
+    "regexp_macros",
+]
+version = "^4.0"
+
+[features]
+default = []
+flame_it = ["flame", "flamer"]

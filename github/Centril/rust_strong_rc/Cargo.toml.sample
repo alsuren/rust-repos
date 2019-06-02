@@ -1,0 +1,14 @@
+[package]
+name          = "strong_rc"
+version       = "0.1.4"
+authors       = ["Mazdak Farrokhzad <twingoow@gmail.com>"]
+license       = "MIT/Apache-2.0"
+description   = "Reference counting smart pointer without weak count (requires nightly)"
+readme        = "README.md"
+keywords      = ["rc", "strong", "smart", "pointers"]
+repository    = "https://github.com/Centril/rust_strong_rc"
+homepage      = "https://github.com/Centril/rust_strong_rc"
+documentation = "https://docs.rs/strong_rc"
+
+[dev-dependencies]
+rand = "0.3.15"

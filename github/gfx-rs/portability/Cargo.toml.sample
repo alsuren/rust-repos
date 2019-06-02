@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "libportability",
+    "libportability-gfx",
+    "libportability-icd",
+]
+
+[profile.release]
+panic = "abort"

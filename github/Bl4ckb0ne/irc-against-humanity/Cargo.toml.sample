@@ -1,0 +1,8 @@
+[package]
+name = "irc-against-humanity"
+version = "0.1.0"
+authors = ["Simon Zeni <simonzeni@gmail.com>"]
+
+[dependencies]
+irc = "0.11.6"
+ctrlc = { version = "3.0", features = ["termination"] }

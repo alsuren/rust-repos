@@ -1,0 +1,17 @@
+[package]
+name = "crusht"
+version = "0.1.0"
+authors = ["Silvio Fricke <silvio.fricke@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "*"
+clap = "*"
+dirs = "*"
+env_logger = "*"
+failure = "*"
+log = "*"
+serde = "*"
+serde_derive = "*"
+serde_yaml = "*"
+url = "*"

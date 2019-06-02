@@ -1,0 +1,19 @@
+[package]
+name = "dredge"
+version = "0.1.1"
+description = "A utility for inspecting disk usage in directory trees."
+license = "GPL-3.0"
+authors = ["Michael Dunsmuir <mjdunsmuir@gmail.com>"]
+homepage = "https://github.com/mdunsmuir/dredge"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "Cargo.lock",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+]
+
+[dependencies]
+rustbox = "0.9"
+clap = { version = "2", features = ["unstable"] }

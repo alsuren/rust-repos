@@ -1,0 +1,20 @@
+[package]
+name = "genotype"
+version = "0.1.2"
+description = "An abstraction layer between genotype and phenotype, with in-place mutation."
+license = "GPL-3.0"
+authors = ["Dom Williams <me@domwillia.ms>"]
+
+homepage = "https://github.com/DomWilliams0/genotype-rs"
+repository = "https://github.com/DomWilliams0/genotype-rs"
+readme = "README.md"
+
+[features]
+serialize = ["serde", "serde_derive"]
+
+[dependencies]
+serde = { version = "1.0", optional = true }
+serde_derive = { version = "1.0", optional = true }
+
+[badges]
+travis-ci = { repository = "DomWilliams0/genotype-rs", branch = "master" }

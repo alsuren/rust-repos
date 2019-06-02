@@ -1,0 +1,11 @@
+[package]
+name = "assassin"
+version = "0.1.0"
+authors = ["Bill Robinson <dseevr@users.noreply.github.com>"]
+
+[dependencies]
+chrono = "0.4"
+fnv = "1.0.6"
+greenback = "0.0.3"
+env_logger = "0.4.3"
+log = "0.3.8"

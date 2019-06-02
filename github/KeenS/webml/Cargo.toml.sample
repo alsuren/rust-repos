@@ -1,0 +1,18 @@
+[package]
+authors = ["Sunrin SHIMURA (keen) <3han5chou7@gmail.com>"]
+name = "webml"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+nom = { version = "2.0.1", features = ["verbose-errors"]}
+petgraph = "0.4.1"
+clap = "2.32.0"
+
+[dependencies.wasm]
+git = "https://github.com/KeenS/WebAssembler-rs"
+package = "web-assembler"
+
+[dev-dependencies]
+walkdir = "2.2.7"
+# path = "../WebAssembler-rs/"

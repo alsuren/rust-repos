@@ -1,0 +1,38 @@
+[package]
+name = "moon-browser"
+version = "0.1.3"
+authors = ["Leonardo Souza <leonardostsouza@gmail.com>"]
+
+[dependencies]
+# GTK
+glib = "^0"
+gio = "^0"
+gdk = "^0"
+gtk = "^0"
+cairo-rs = { version = "^0", features = ["png"] }
+
+# IPFS API
+ipfsapi = { git = "https://github.com/leonardostsouza/rust-ipfs-api.git" }
+
+# Ethereum Interaction
+#web3 = { git = "https://github.com/tomusdrw/rust-web3" }
+
+# Formality
+formality = "^0.1.10"
+formality-document = {git = "https://github.com/MaiaVictor/formality-document.git"}
+
+# Utilities
+serde = "^1.0.80"
+serde_json = "^1.0.33"
+serde_derive = "^1.0.80"
+
+# Dependencies for testing purposes. Delete for building release
+rand = "^0.6.1"
+
+[features]
+default = ["gtk/v3_10"]
+gtk_3_10 = ["gtk/v3_10"]
+gtk_3_16 = ["gtk_3_10", "gtk/v3_16"]
+gtk_3_18 = ["gtk_3_16", "gtk/v3_18"] #for CI tools
+gtk_3_20 = ["gtk_3_18", "gtk/v3_20"] #for CI tools
+gtk_3_22 = ["gtk_3_20", "gtk/v3_22"] #for CI tools

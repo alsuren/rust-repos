@@ -1,0 +1,26 @@
+[package]
+name = "wasmduck"
+version = "0.1.0"
+authors = ["Magnus Sandén <thefreid@gmail.com>"]
+
+[dependencies]
+num-traits = "*"
+stdweb = { version = "*", optional = true }
+webgl_stdweb = { version = "*", optional = true }
+termion = { version = "*", optional = true }
+rayon = { version = "*", optional = true }
+image = { version = "*", optional = true }
+
+[features]
+x86 = ["termion", "rayon", "image"]
+wasm = ["stdweb", "webgl_stdweb", "rayon"]
+
+[[bin]]
+name = "x86"
+path = "src/main_x86.rs"
+required-features = ["x86"]
+
+[[bin]]
+name = "wasm"
+path = "src/main_wasm.rs"
+required-features = ["wasm"]

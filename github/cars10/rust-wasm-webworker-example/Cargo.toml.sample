@@ -1,0 +1,12 @@
+[package]
+name = "math"
+version = "0.1.0"
+authors = ["Carsten König <carstenkoenig92@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+path = "src/rust/lib.rs"
+
+[profile.release]
+debug = false
+lto = true

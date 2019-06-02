@@ -1,0 +1,11 @@
+[package]
+name = "coursesynth"
+version = "0.1.0"
+authors = ["Avi Weinstock <aweinstock314@gmail.com>"]
+
+[dependencies]
+futures = "0.1.14"
+hyper = { git = "https://github.com/hyperium/hyper" }
+num-traits = "0.1.39"
+rand = "0.3.15"
+serde_urlencoded="0.5.1"

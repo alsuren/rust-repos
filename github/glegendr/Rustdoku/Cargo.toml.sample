@@ -1,0 +1,17 @@
+[package]
+name = "rustdoku"
+version = "0.1.0"
+authors = ["glegendr"]
+
+[lib]
+name = "libdoku"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bindoku"
+path = "src/main.rs"
+
+[dependencies]
+colored = "1.6.1"
+rayon = "1.0.3"
+structopt = "0.2"

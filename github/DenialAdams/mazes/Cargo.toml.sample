@@ -1,0 +1,11 @@
+[workspace]
+
+members = [
+   "maze_bin",
+   "maze_wasm",
+   "maze_lib",
+]
+
+[profile.release]
+lto = true
+codegen-units = 1

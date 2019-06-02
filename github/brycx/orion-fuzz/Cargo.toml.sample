@@ -1,0 +1,45 @@
+[package]
+name = "orion-fuzz"
+version = "0.1.0"
+authors = ["brycx <brycx@protonmail.com>"]
+
+[dependencies]
+honggfuzz = "0.5.43"
+rand_chacha = "0.1.1"
+rand_core = "0.4.0"
+sodiumoxide = "0.2.1"
+ring = "0.14.6"
+blake2-rfc = "0.2.18"
+chacha = "0.3.0"
+orion = { git = "https://github.com/brycx/orion", branch = "master" }
+
+[[bin]]
+name = "high_level_api"
+path = "src/high_level_api.rs"
+
+[[bin]]
+name = "aead"
+path = "src/aead.rs"
+
+[[bin]]
+name = "hash"
+path = "src/hash.rs"
+
+[[bin]]
+name = "mac"
+path = "src/mac.rs"
+
+[[bin]]
+name = "stream"
+path = "src/stream.rs"
+
+[[bin]]
+name = "newtypes"
+path = "src/newtypes.rs"
+
+[[bin]]
+name = "kdf"
+path = "src/kdf.rs"
+
+[profile.release]
+opt-level = 3

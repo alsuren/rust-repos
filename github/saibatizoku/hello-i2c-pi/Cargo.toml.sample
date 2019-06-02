@@ -1,0 +1,7 @@
+[package]
+name = "hello-i2c-pi"
+version = "0.1.0"
+authors = ["Joaquín R <globojorro@gmail.com>"]
+
+[dependencies]
+i2cdev = "0.3.1"

@@ -1,0 +1,24 @@
+[package]
+name = "rust-learn"
+version = "0.1.0"
+authors = ["decode"]
+
+[features]
+default = []
+debug = []
+dx11 = []
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.6", features = ["winuser", "minwindef", "libloaderapi", "windef"] }
+gfx = "0.18"
+gfx_device_dx11 = "0.8.0"
+gfx-hal = "0.1.0"
+chrono = "0.4.6"
+lazy_static = "1.2.0"

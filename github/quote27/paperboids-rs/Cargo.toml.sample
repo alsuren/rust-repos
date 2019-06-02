@@ -1,0 +1,15 @@
+[package]
+name = "paperboids"
+version = "0.1.0"
+authors = ["quote <quote@dust.io>"]
+
+[dependencies]
+cgmath = "*"
+glfw-sys = "*"
+glfw = "*"
+time = "*"
+gl = "*"
+image = "*"
+rand = "*"
+tobj = "*"
+gltf = "0.11"

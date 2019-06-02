@@ -1,0 +1,14 @@
+[package]
+name = "hash-table"
+version = "0.2.2"
+authors = ["M Farkas-Dyck <strake888@gmail.com>"]
+description = "Hash Table"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+siphasher = "0.2"
+slot = "0.2"
+
+[dev-dependencies]
+quickcheck = "0.7"
+quickcheck_macros = "0.7"

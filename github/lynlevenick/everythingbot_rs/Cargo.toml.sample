@@ -1,0 +1,14 @@
+[package]
+name = "everything_bot"
+version = "0.0.3"
+authors = ["JustANull <reid.levenick@gmail.com>"]
+
+[dependencies]
+fern = "^0.3"
+hyper = "^0.7"
+irc = "^0.9"
+lazy_static = "^0.1"
+log = "^0.3"
+regex = "^0.1"
+serde = "^0.6"
+serde_json = "^0.6"

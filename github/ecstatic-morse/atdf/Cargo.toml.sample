@@ -1,0 +1,11 @@
+[package]
+authors = ["Dylan MacKenzie <ecstaticmorse@gmail.com>"]
+name = "atdf"
+version = "0.1.0"
+
+[dependencies]
+failure = "0.1.1"
+serde = "1.0.27"
+serde-xml-rs = "0.2.1"
+serde_derive = "1.0.27"
+svd-parser = "0.5.2"

@@ -1,0 +1,13 @@
+[package]
+name = "koyomi"
+version = "0.1.0"
+license = "MIT"
+authors = ["Matilda <ordinarymatilda@riseup.net>"]
+
+[dependencies]
+bitflags = "0.2"
+time = "0.1"
+
+[[test]]
+name = "epoll"
+path = "test/epoll.rs"

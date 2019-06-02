@@ -1,0 +1,18 @@
+[package]
+name = "rocketbot"
+version = "0.1.0"
+authors = ["Joe \"RocketLobster\" Thill"]
+
+[dependencies.irc]
+version = "*"
+default-features = false
+features = ["encode"]
+
+[dependencies.log]
+version = "*"
+
+[dependencies.fern]
+version = "*"
+
+[dependencies.time]
+version = "0.1"

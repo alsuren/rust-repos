@@ -1,0 +1,26 @@
+[package]
+name = "sexpr"
+version = "0.7.0"
+authors = ["Zephyr Pellerin <zv@nxvr.org>"]
+license = "MIT/Apache-2.0"
+description = "Multi-format S-expression serialization/deserialization support"
+repository = "https://github.com/zv/sexpr"
+keywords = ["sexp","s-exp","sexpr","smtlib"]
+categories = ["encoding"]
+readme = "README.org"
+documentation = "https://zv.github.io/rust/sexpr"
+
+[dependencies]
+serde = "1.0"
+num-traits = "0.1.32"
+itoa = "0.3"
+dtoa = "0.4"
+
+[dev-dependencies]
+serde_bytes = "0.10"
+serde_derive = "1.0"
+
+[[bin]]
+name = "main"
+doc = false
+

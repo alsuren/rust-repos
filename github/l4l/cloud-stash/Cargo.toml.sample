@@ -1,0 +1,26 @@
+[package]
+name = "cloud-stash"
+version = "0.1.0"
+authors = ["Kitsu <mail@kitsu.me>"]
+edition = "2018"
+
+[features]
+persistent = ["rusqlite"]
+
+[dependencies]
+docopt = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+sha3 = "*"
+reqwest = "0.9.5"
+serde_json = "1.0"
+netfuse = { git = "https://github.com/l4l/netfuse", branch = "readdir_owned" }
+libc = "0.2.12"
+fuse = "0.2.7"
+time = "*"
+rusqlite = { version = "0.13.0", features = ["blob"], optional = true }
+log = "0.4.0"
+env_logger = "0.5.10"
+
+[dev-dependencies]
+rand = "*"

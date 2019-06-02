@@ -1,0 +1,9 @@
+[package]
+authors = ["S.Percentage"]
+name = "pureshader"
+version = "0.1.0"
+[dependencies]
+lazy_static = "*"
+regex = "*"
+
+pshcompile-custom-derive = { path = "pshcompile-custom-derive" }

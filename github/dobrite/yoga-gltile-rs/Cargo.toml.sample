@@ -1,0 +1,10 @@
+[package]
+name = "yoga-gltile"
+version = "0.0.1"
+authors = ["Dave O <davidobrite@gmail.com>"]
+
+[dependencies]
+glium = "0.16.0"
+gltile = { git = "https://github.com/dobrite/gltile-rs.git" }
+pixset = { git = "https://github.com/dobrite/pixset-rs.git" }
+yoga = { git = "https://github.com/dobrite/yoga-rs.git" }

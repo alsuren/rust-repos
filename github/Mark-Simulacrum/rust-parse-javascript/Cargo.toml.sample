@@ -1,0 +1,13 @@
+[package]
+authors = ["Mark Simulacrum <mark.simulacrum@gmail.com>"]
+name = "parsejs"
+version = "0.1.0"
+
+[dependencies]
+clippy = "0.0.51"
+memchr = "0.1.7"
+
+[profile]
+
+[profile.release]
+debug = true

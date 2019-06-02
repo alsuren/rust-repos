@@ -1,0 +1,12 @@
+[package]
+name = "vlad_ser_deser"
+version = "0.1.0"
+authors = ["Vladislav Gordienko <gordienkovl153@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bytes = "0.4"
+
+vlad_lib = { path = "./vlad_lib" }
+vlad_derive = { path = "./vlad_derive" }
+

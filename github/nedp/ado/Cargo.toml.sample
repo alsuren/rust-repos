@@ -1,0 +1,8 @@
+[package]
+name = "ado"
+version = "0.1.0"
+authors = ["Ned Pummeroy <nedpummeroy@gmail.com>"]
+
+[dependencies]
+vec_map = "*"
+ncurses = "*"

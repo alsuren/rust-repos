@@ -1,0 +1,10 @@
+[package]
+name = "bist"
+version = "0.1.0"
+authors = ["Yuiki <10101661+Yuiki@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.1.15"
+bytes = "0.4.11"
+sha2 = "0.8.0"

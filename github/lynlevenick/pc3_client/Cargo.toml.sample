@@ -1,0 +1,14 @@
+[package]
+
+name = "pc3_client"
+version = "0.0.1"
+authors = ["Lyn Levenick <lyn.levenick@gmail.com>"]
+
+[dependencies.cookie]
+cookie = "*"
+[dependencies.hyper]
+hyper = "*"
+[dependencies.rand]
+rand = "*"
+[dependencies.rustc-serialize]
+rustc-serialize = "*"

@@ -1,0 +1,10 @@
+[package]
+name = "genwunsym"
+description = "Simulator of the battle mechanics of Gen One Pokémon"
+version = "0.1.0"
+authors = ["Bert Peters <bert@bertptrs.nl>"]
+edition = "2018"
+
+[dependencies]
+num = "0.2.0"
+rand = "0.6.5"

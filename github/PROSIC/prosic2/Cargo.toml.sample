@@ -1,0 +1,23 @@
+[package]
+name = "prosic"
+version = "2.2.0-alpha0"
+authors = ["Johannes Köster <johannes.koester@tu-dortmund.de>"]
+
+[dependencies]
+libprosic = "0.7.1"
+clap = {version = "2.24", features = ["yaml", "color", "suggestions"]}
+rust-htslib = "0.22"
+bio = "0.24"
+log = "0.3.*"
+fern = "0.3.*"
+csv = "0.14.*"
+itertools = "0.4.*"
+time = "*"
+serde = "1.0"
+serde_json = "1.0"
+flame = { version = "^0.1.2", optional = true }
+flamer = { version = "^0.1.2", optional = true }
+
+[features]
+default = []
+gslv2 = ["libprosic/gslv2"]

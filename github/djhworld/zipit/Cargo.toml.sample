@@ -1,0 +1,9 @@
+[package]
+name = "zipit"
+version = "0.1.0"
+authors = ["djhworld <@djhworld>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2"
+serde_json = "1.0"

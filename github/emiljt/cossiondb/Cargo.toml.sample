@@ -1,0 +1,9 @@
+[package]
+name = "corrosiondb"
+version = "0.1.0"
+authors = ["Joshua Terrasas <jcterrasas+joshua@gmail.com>"]
+
+[dependencies]
+clap = ""
+serde = { version = "", features = ["derive"] }
+toml = ""

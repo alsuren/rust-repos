@@ -1,0 +1,53 @@
+[package]
+
+name = "deneb"
+description = "Distributed directory synchronization"
+version = "0.1.0"
+
+authors = ["Radu Popescu <mail@radupopescu.net>"]
+
+license = "MPL-2.0"
+
+homepage = "https://github.com/radupopescu/deneb"
+repository = "https://github.com/radupopescu/deneb"
+
+readme = "README.md"
+
+keywords = ["filesystem", "merkle-tree", "fuse", "distributed-file-system"]
+categories = ["filesystem"]
+
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "radupopescu/deneb", branch = "master" }
+
+maintenance = { status = "experimental" }
+
+[features]
+default = ["fuse_module"]
+fuse_module = ["deneb-fuse"]
+
+[[bin]]
+name = "deneb"
+path = "src/main.rs"
+doc = false
+required-features = ["fuse_module"]
+
+[dependencies]
+deneb-core = { path = "deneb-core" }
+deneb-fuse = { path = "deneb-fuse", optional = true }
+
+bincode = "^1.1.0"
+crossbeam-channel = "^0.3.0"
+directories = "^1.0.0"
+dirs = "^1.0.0"
+failure = "^0.1.0"
+log = "^0.4.0"
+log4rs = "^0.8.0"
+nix = "^0.13.0"
+serde = { version = "^1.0.0", features = ["derive"] }
+structopt = "^0.2.0"
+structopt-derive = "^0.2.0"
+toml = "^0.5.0"
+
+[workspace]

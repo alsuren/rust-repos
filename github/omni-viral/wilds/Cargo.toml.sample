@@ -1,0 +1,43 @@
+[package]
+name = "wilds-engine"
+version = "0.1.0"
+authors = ["Zakarum <scareaangel@gmail.com>"]
+license = "MIT/Apache-2.0"
+
+[build-dependencies]
+env_logger = "0.5"
+log = "0.4"
+glsl-to-spirv = "0.1"
+
+[features]
+dx12 = ["gfx-backend-dx12", "gfx-render/gfx-backend-dx12"]
+metal = ["gfx-backend-metal", "gfx-render/gfx-backend-metal"]
+vulkan = ["gfx-backend-vulkan", "gfx-render/gfx-backend-vulkan"]
+
+[dependencies]
+asset = { git = "https://github.com/omni-viral/asset", rev = "b8923ad", features = ["fs", "ron", "sprite", "serde", "texture", "png"] }
+cgmath = { version = "0.16", features = ["swizzle", "serde"] }
+failure = "0.1"
+gfx-hal = { git = "https://github.com/gfx-rs/gfx", rev = "a3475a75c", features = ["serde"] }
+gfx-memory = { git = "https://github.com/gfx-rs/gfx-memory", rev = "06d15719" }
+gfx-render = { git = "https://github.com/gfx-rs/gfx-render", rev = "730647a" }
+log = "0.4"
+relevant = "0.1"
+ron = "0.2"
+serde = "1.0"
+smallvec = "0.4"
+specs = "0.10"
+shrev = "0.8"
+winit = "0.12"
+xfg = { git = "https://github.com/omni-viral/xfg-rs", rev = "73bb3ef" }
+gfx-backend-empty = { version = "0.1", optional = true, git = "https://github.com/gfx-rs/gfx", rev = "a3475a75c" }
+glsl-layout = { version = "0.1", features = ["cgmath"], git = "https://github.com/rustgd/glsl-layout", rev = "ddf55d05" }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+gfx-backend-metal = { version = "0.1", optional = true, git = "https://github.com/gfx-rs/gfx", rev = "a3475a75c" }
+
+[target.'cfg(not(target_os = "macos"))'.dependencies]
+gfx-backend-vulkan = { version = "0.1", optional = true, git = "https://github.com/gfx-rs/gfx", rev = "a3475a75c" }
+
+[target.'cfg(windows)'.dependencies]
+gfx-backend-dx12 = { version = "0.1", optional = true, git = "https://github.com/gfx-rs/gfx", rev = "a3475a75c" }

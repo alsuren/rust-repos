@@ -1,0 +1,22 @@
+[package]
+name = "tile_net"
+version = "2.0.4"
+authors = ["Kevin Robert Stravers <macocio@gmail.com>"]
+license = "GPL-3.0"
+keywords = ["tile", "collision"]
+documentation = "https://tile.stravers.net/tile_net"
+repository = "https://github.com/BourgondAries/TileNet"
+description = """
+Continuous tile-based collision detection and resolution.
+"""
+
+[dependencies]
+clippy = { version = "0.0", optional = true }
+interleave = "1.0"
+
+[features]
+default = []
+dev = ["clippy"]
+
+[dev-dependencies]
+sfml = "0.11"

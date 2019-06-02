@@ -1,0 +1,25 @@
+[package]
+name = "worthy-opponent"
+version = "0.1.0"
+authors = ["Steve Trout <steve.trout@gmail.com>"]
+
+[profile.release]
+debug = true
+lto = true
+
+[profile.bench]
+debug = true
+
+[[bench]]
+name = "benchmarks"
+harness = false
+
+[dependencies]
+rand = "*"
+bit-set = "*"
+tiny_http = "*"
+
+[dev-dependencies]
+quickcheck = "*"
+bencher = "*" # TODO remove
+criterion = "*"

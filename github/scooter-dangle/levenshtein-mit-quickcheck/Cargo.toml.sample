@@ -1,0 +1,7 @@
+[package]
+name = "levenshtein-mit-quickcheck"
+version = "0.1.0"
+authors = ["Scott Steele <scott.steele@distilnetworks.com>"]
+
+[dev-dependencies]
+quickcheck = "0.3.1"

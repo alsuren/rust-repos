@@ -1,0 +1,19 @@
+[package]
+name = "catch_my_bus"
+version = "0.1.0"
+authors = ["Hendrik Sollich <hendrik@hoodie.de>"]
+
+[lib]
+name = "dvbrs"
+
+[dependencies]
+hyper = "0.6"
+rustc-serialize = "0.3"
+time = "0.1"
+url = "0.2"
+toml = "0.1"
+datetime= "0.2"
+
+[dependencies.notify-rust]
+path = "../notify-rust"
+

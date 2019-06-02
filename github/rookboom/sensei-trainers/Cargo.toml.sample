@@ -1,0 +1,7 @@
+[package]
+name = "sensei-trainers"
+version = "0.1.0"
+authors = ["Johan Verwey"]
+
+[dependencies.sensei-math]
+path = "../sensei-math"

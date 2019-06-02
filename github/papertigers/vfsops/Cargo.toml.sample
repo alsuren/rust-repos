@@ -1,0 +1,16 @@
+[package]
+name = "vfsops"
+version = "0.1.1"
+description = "Report VFS op outliers by bucket group"
+authors = ["Mike Zeller <mike@mikezeller.net>"]
+repository = "https://github.com/papertigers/vfsops"
+keywords = ["illumos", "kstat", "smartos", "performance", "VFS"]
+license = "MIT"
+
+[dependencies]
+kstat = "0.1"
+clap = "2.32"
+
+[[bin]]
+path = "src/main.rs"
+name = "vfsops"

@@ -1,0 +1,28 @@
+[package]
+name = "slate"
+version = "1.4.0"
+authors = ["Juan Hernández <juan.hernandez.babon@gmail.com>"]
+description = "Manage your snippets from your command line."
+homepage = "https://github.com/jhbabon/slate"
+repository = "https://github.com/jhbabon/slate"
+readme = "README.md"
+keywords = ["slate", "snippets", "cli"]
+license = "MIT"
+
+[lib]
+name = "slate"
+path = "src/lib.rs"
+
+[[bin]]
+name = "slate"
+path = "src/bin.rs"
+doc = false
+
+[dependencies]
+docopt = "0.8"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde = "1.0"
+
+[dev-dependencies]
+rand = "0.3"

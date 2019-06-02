@@ -1,0 +1,18 @@
+[package]
+name = "kdbush"
+version = "0.1.0"
+authors = ["Jasper den Hertog <jasper@plainspace.com>"]
+edition = "2018"
+
+[lib]
+name = "kdbush"
+path = "./src/lib.rs"
+
+[dependencies]
+conv = "0.3.3"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+serde_json = "1.0.33"
+flate2 = "1.0.6"
+num = "0.2.0"
+num-traits = "0.2.6"

@@ -1,0 +1,8 @@
+[package]
+name = "forf"
+version = "0.1.0"
+authors = ["David Futcher <david.futcher@skyscanner.net>"]
+
+[dependencies]
+getopts = "*"
+glob = "*"

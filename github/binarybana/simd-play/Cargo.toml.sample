@@ -1,0 +1,20 @@
+cargo-features = ["edition"]
+
+[package]
+name = "simd-play"
+version = "0.1.0"
+authors = ["Jason Knight <Jason@JasonKnight.us>"]
+edition = '2018'
+
+[dependencies]
+packed_simd = "0.2.0"
+rand = "0.5.5"
+
+[dev-dependencies]
+criterion = "0.2"
+ndarray = { version = "0.12.0", features = ["blas"] }
+blas-src = { version = "0.2.1", features = ["intel-mkl"] }
+
+[[bench]]
+name = "bench"
+harness = false

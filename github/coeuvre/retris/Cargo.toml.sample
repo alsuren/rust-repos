@@ -1,0 +1,12 @@
+[package]
+name = "retris"
+version = "0.0.1"
+authors = ["Coeuvre Wong <coeuvre@gmail.com>"]
+
+[dependencies]
+rand = "*"
+sdl2 = "*"
+time = "*"
+
+[dependencies.hammer]
+path = "../hammer"

@@ -1,0 +1,12 @@
+[package]
+name = "ravel"
+version = "0.1.0"
+authors = ["Sergei Fomin <sergio-dna@yandex.ru>"]
+
+[dependencies]
+mio = "0.6"
+num = "0.1"
+num-derive = "0.2"
+num-traits = "0.2"
+slab = "0.4"
+byteorder = "1.2"

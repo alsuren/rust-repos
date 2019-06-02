@@ -1,0 +1,11 @@
+[package]
+name = "mandela_rust"
+version = "0.1.0"
+authors = ["Preston <taopopoo@126.com>"]
+
+[dependencies]
+time = "0.1.0"
+rust-crypto = "0.2"
+rustc-serialize = "0.3.19"
+net2 = "*"
+

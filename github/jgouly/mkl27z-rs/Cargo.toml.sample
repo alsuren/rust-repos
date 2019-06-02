@@ -1,0 +1,13 @@
+[package]
+name = "mkl27z"
+version = "0.1.0"
+authors = ["Joey Gouly <joey.gouly@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+cc = "1.0"
+
+[dependencies]
+
+[features]
+usb = []

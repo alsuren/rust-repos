@@ -1,0 +1,18 @@
+[package]
+name = "wasmboypluginhqx"
+version = "0.1.0"
+authors = ["Aaron Turner <aaron@aaronthedev.com>"]
+edition = "2018"
+
+[lib]
+name = "wasmboypluginhqx"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+clippy = {version = "*", optional = true}
+hqx = { git = "https://github.com/CryZe/wasmboy-rs" }
+
+[profile.release]
+lto = true
+opt-level = "s"

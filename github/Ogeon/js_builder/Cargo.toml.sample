@@ -1,0 +1,10 @@
+[package]
+name = "js_builder"
+version = "0.0.1"
+authors = ["Erik Hedvall <hello@erikhedvall.nu>"]
+
+[dependencies]
+string_cache = "0.2"
+
+[features]
+strict = []

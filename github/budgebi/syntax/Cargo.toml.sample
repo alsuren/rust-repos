@@ -1,0 +1,16 @@
+[package]
+name = "syntax"
+version = "0.1.0"
+authors = ["budgebi <budgebrian21@gmail.com>"]
+
+[dependencies]
+gio = "0.5.1"
+gdk = "0.9.0"
+
+[dependencies.sourceview]
+version = "0.5.0"
+features = ["v3_22"]
+
+[dependencies.gtk]
+version = "0.5.0"
+features = ["v3_22"]

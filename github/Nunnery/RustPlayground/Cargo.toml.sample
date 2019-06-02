@@ -1,0 +1,19 @@
+[package]
+name = "playground"
+version = "0.0.0"
+authors = ["Richard Harrah <topplethenunnery@gmail.com>"]
+
+[[bin]]
+name = "spinning-square"
+
+[dependencies.piston]
+git = "https://github.com/PistonDevelopers/piston.git"
+
+[dependencies.piston2d-graphics]
+git = "https://github.com/PistonDevelopers/graphics.git"
+
+[dependencies.pistoncore-glutin_window]
+git = "https://github.com/PistonDevelopers/glutin_window.git"
+
+[dependencies.piston2d-opengl_graphics]
+git = "https://github.com/PistonDevelopers/opengl_graphics.git"

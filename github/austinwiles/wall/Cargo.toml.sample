@@ -1,0 +1,11 @@
+[package]
+name = "wall"
+version = "0.1.0"
+authors = ["Austin Wiles <13wilesa@gmail.com>"]
+
+[lib]
+name = "wall"
+path = "./src/lib.rs"
+
+[dependencies]
+term = "0.2"

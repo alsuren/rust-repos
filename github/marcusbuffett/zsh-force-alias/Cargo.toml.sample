@@ -1,0 +1,25 @@
+[package]
+authors = ["Marcus Buffett <marcusbuffett@me.com>"]
+name = "zsh-force-alias"
+version = "0.1.0"
+
+[[bin]]
+name = "force-alias-server"
+path = "src/server.rs"
+
+[[bin]]
+name = "force-alias-client"
+path = "src/client.rs"
+
+[dependencies]
+bodyparser = "*"
+hyper = "*"
+iron = "*"
+lazy_static = "*"
+router = "*"
+rustc-serialize = "*"
+serde = "*"
+serde_json = "*"
+argparse = "*"
+itertools = "*"
+serde_derive = "*"

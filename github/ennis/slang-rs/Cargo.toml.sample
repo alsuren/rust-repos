@@ -1,0 +1,11 @@
+[package]
+name = "slang"
+version = "0.1.0"
+authors = ["Alexandre Bléron <alex.bleron@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+slang-sys = {path = "slang-sys"}
+libc = "*"
+num-traits = "0.2.6"
+num-derive = "0.2.4"

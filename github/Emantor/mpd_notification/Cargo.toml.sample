@@ -1,0 +1,9 @@
+[package]
+name = "mpd_notification"
+version = "0.1.0"
+authors = ["Emantor <phoenix@emantor.de>"]
+
+[dependencies]
+mpd = "0.0.11"
+time = "0.1.34"
+notify-rust = "3.2.1"

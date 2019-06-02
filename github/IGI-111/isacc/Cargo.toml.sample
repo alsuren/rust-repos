@@ -1,0 +1,9 @@
+[package]
+name = "isacc"
+version = "0.1.0"
+authors = ["IGI-111 <igi-111@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+combine = "3.8.1"
+indexmap = "1.0.2"

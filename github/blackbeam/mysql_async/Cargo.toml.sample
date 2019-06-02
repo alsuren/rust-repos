@@ -1,0 +1,48 @@
+[package]
+authors = ["blackbeam <aikorsky@gmail.com>"]
+description = "Tokio based asynchronous MySql client library."
+documentation = "https://docs.rs/mysql_async"
+keywords = ["mysql", "database", "asynchronous", "async"]
+license = "MIT/Apache-2.0"
+name = "mysql_async"
+readme = "README.md"
+repository = "https://github.com/blackbeam/mysql_async"
+version = "0.19.0"
+exclude = ["test/*"]
+edition = "2018"
+
+[dependencies]
+bit-vec = "0.5"
+byteorder = "1"
+bytes = "0.4"
+failure = "0.1"
+failure_derive = "0.1"
+fnv = "1"
+futures = "^0.1.18"
+mio = "0.6"
+mysql_common = "0.17"
+native-tls = { version = "0.2", optional = true }
+regex = "1"
+serde = "1"
+serde_json = "1"
+tokio = "^0.1.9"
+tokio-codec = "0.1"
+tokio-io = "0.1"
+tokio-named-pipes = "0.1"
+tokio-uds = "0.2"
+twox-hash = "1"
+url = "1"
+
+[dev-dependencies]
+lazy_static = "1"
+
+[features]
+nightly = []
+ssl = ['native-tls']
+
+[lib]
+name = "mysql_async"
+path = "src/lib.rs"
+
+[profile.bench]
+debug = true

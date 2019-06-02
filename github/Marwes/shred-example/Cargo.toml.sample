@@ -1,0 +1,27 @@
+[package]
+name = "gluon_specs"
+version = "0.1.0"
+authors = ["Markus Westerlind <marwes91@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+# Game stuff
+itertools = "0.8"
+specs = "0.14"
+shred = "0.7"
+specs-derive = "0.1"
+
+# Utility stuff
+log = "0.4"
+env_logger = "0.6"
+failure = "0.1"
+
+gluon = { path = "../gluon" }
+gluon_vm = { path = "../gluon/vm" }
+gluon_codegen = { path = "../gluon/codegen" }
+
+[dev-dependencies]
+amethyst = "0.10.0"
+walkdir = "2"

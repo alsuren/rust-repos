@@ -1,0 +1,9 @@
+[package]
+name = "rusty-nes"
+version = "0.1.0"
+authors = ["czapek <cyanide.space@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bitflags = "1.0.4"
+sdl2 = "0.32.1"

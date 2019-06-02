@@ -1,0 +1,16 @@
+[package]
+name = "relooper"
+version = "0.1.0"
+authors = ["Yiran Sheng <shengyiran@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+fixedbitset = "0.1.9"
+petgraph = "0.4.13"
+smallvec = "0.6.7"
+take_mut = "0.2.2"
+
+[dev-dependencies]
+quickcheck = "0.7.1"
+maplit = "1.0"
+

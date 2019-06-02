@@ -1,0 +1,22 @@
+[package]
+name = "jakar-tree"
+version = "0.8.0"
+authors = ["Siebencorgie <siebencorgie@googlemail.com>"]
+
+[dependencies]
+
+[[example]]
+name = "simple"
+path = "examples/src/store_and_read.rs"
+
+[[example]]
+name = "merge"
+path = "examples/src/tree_merge.rs"
+
+[[example]]
+name = "speed"
+path = "examples/src/speed.rs"
+
+[[example]]
+name = "test"
+path = "examples/src/test.rs"

@@ -1,0 +1,8 @@
+[package]
+name = "brainrs-app"
+version = "0.1.0"
+authors = ["aspera-non-spernit <a.c>"]
+
+[dependencies]
+brainrs = { version = "0.3.0", path = "../brainrs"}
+#brainrs = { version = "0.2.0", git = "https://github.com/aspera-non-spernit/brainrs"}

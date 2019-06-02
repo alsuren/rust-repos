@@ -1,0 +1,10 @@
+[package]
+name = "hangman"
+version = "4.7.0"
+authors = ["Jens Getreu <getreu@web.de>"]
+edition = "2018"
+
+[dependencies]
+rand = "*"
+crossterm = "0.9.3"
+custom_error = "*"

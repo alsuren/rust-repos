@@ -1,0 +1,9 @@
+[package]
+name = "teamsuperlegit"
+version = "0.1.0"
+authors = ["Team Super Legit <superlegitteam@mm.st>"]
+
+[dependencies]
+svg = "*"
+rustc-serialize = "*"
+num = "0.1.34"

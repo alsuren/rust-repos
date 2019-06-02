@@ -1,0 +1,23 @@
+[package]
+name = "rust-lioness"
+version = "0.1.5"
+authors = ["Jeffrey Burdges <burdges@gnunet.org>", "David Stainton <dawuud@riseup.net>"]
+description = "Lioness wide block cipher"
+homepage = "https://github.com/sphinx-cryptography/rust-lioness"
+repository = "https://github.com/sphinx-cryptography/rust-lioness.git"
+documentation = "https://docs.rs/rust-lioness/"
+readme = "README.md"
+keywords = ["cryptography","cipher","lioness", "sphinx", "mixnet"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+arrayref = "^0.3.4"
+rand = "^0.3"
+generic-array = "0.11.0"
+keystream = "^1.0.0"
+chacha = "^0.1.0"
+blake2b = "0.7.0"
+
+[dev-dependencies]
+rand = "^0.3"
+rustc-serialize = "0.3"

@@ -1,0 +1,26 @@
+[package]
+name = "engine_duck"
+version = "0.1.0"
+authors = ["Andres <andresnrx@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "duck_husky_wedding"
+path = "src/main.rs"
+
+[dependencies]
+failure = "0.1"
+glm = "0.2"
+serde_yaml = "0.8"
+
+[dependencies.serde]
+version = "1.0"
+features = ["serde_derive"]
+
+[dependencies.moho]
+git = "https://github.com/nrxus/moho"
+
+[dependencies.sdl2]
+version = ">=0.31.0"
+default-features = false
+features = []

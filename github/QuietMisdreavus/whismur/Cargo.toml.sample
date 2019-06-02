@@ -1,0 +1,12 @@
+[package]
+name = "discourse-bot"
+version = "0.1.0"
+authors = ["QuietMisdreavus <grey@quietmisdreavus.net>"]
+license = "GPL-3.0+"
+
+[dependencies]
+irc = "0.11.6"
+serde = "1.0.2"
+serde_derive = "1.0.2"
+serde_json = "1.0.1"
+chrono = { version = "0.3.1", features = ["serde"] }

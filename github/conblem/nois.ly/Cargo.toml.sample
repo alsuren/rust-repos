@@ -1,0 +1,12 @@
+[package]
+name = "noisly"
+version = "0.1.0"
+authors = ["Ramon Wehrli <mail@conblem.me>"]
+
+[dependencies]
+
+[build-dependencies]
+cc = "1.0"
+
+[lib]
+crate-type = ["cdylib"]

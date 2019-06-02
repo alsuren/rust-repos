@@ -1,0 +1,13 @@
+[package]
+name = "musicbox"
+version = "0.1.0"
+authors = ["David Gage <whytheplatypus@gmail.com>"]
+
+[dependencies]
+tokio-core = "0.1.9"
+toml = "0.4.5"
+
+[dependencies.librespot]
+git = "https://github.com/plietar/librespot"
+default-features = false
+features = ["alsa-backend"]

@@ -1,0 +1,7 @@
+[package]
+name = "cmplx_calc"
+version = "0.1.0"
+authors = ["idos2002 <sabanido.business@gmail.com>"]
+
+[dependencies]
+complex = { git = "https://github.com/idos2002/complex.git" }

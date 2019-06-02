@@ -1,0 +1,29 @@
+[package]
+name = "noise"
+version = "0.1.0"
+authors = ["Dan Slocombe <ds4314@ic.ac.uk>"]
+
+[[bin]]
+name = "noise"
+
+[dependencies]
+rand = "0.3"
+piston = "0.36.0"
+piston_window = "0.77.0"
+piston2d-graphics = "0.26.0"
+pistoncore-glutin_window = "0.46.0"
+piston2d-opengl_graphics = { git = "https://github.com/danslocombe/opengl_graphics" }
+gl = "0.10.0"
+bitflags = "1.0.1"
+rayon = "0.6.0"
+insertion-sort = "0.1.0"
+rustc-serialize = "0.3.22"
+clippy = {version = "*", optional = true}
+find_folder = "0.3.0"
+cgmath = "0.12.0"
+ketos = "0.10"
+ketos_derive = "0.10"
+notify = "4.0"
+
+[features]
+default = []

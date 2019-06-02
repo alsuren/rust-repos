@@ -1,0 +1,9 @@
+[package]
+name = "colors"
+version = "0.1.0"
+authors = ["Carol (Nichols || Goulding) <carol.nichols@gmail.com>", "Jake Goulding <shepmaster@mac.com>"]
+
+[dependencies]
+piston_window = "0.36.2"
+rand = "*"
+find_folder = "*"

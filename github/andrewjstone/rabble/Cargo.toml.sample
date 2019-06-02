@@ -1,0 +1,33 @@
+[package]
+name = "rabble"
+version = "0.4.1"
+authors = ["Andrew J. Stone <andrew.j.stone.1@gmail.com>"]
+description = "A library for creating location transparent actor based systems"
+repository = "https://github.com/andrewjstone/rabble"
+keywords = ["cluster", "networking", "distributed", "actor", "erlang"]
+license = "Apache-2.0"
+
+[features]
+# reexport no_timerfd feature from amy
+no_timerfd = ["amy/no_timerfd"]
+
+[dependencies]
+amy = "^0.7.2"
+orset = "0.2"
+time = "0.1"
+net2 = "0.2"
+error-chain = "0.5"
+libc = "0.2"
+log = "0.3"
+slog = {version = "1", features = ["max_level_trace"]}
+slog-stdlog = "1"
+slog-term = "1.1"
+slog-envlogger = "0.5"
+ferris = "0.1"
+protobuf = "1.0.24"
+serde = "1.0"
+serde_derive = "1.0"
+rmp-serde = "0.13"
+
+[dev-dependencies]
+assert_matches = "1.0"

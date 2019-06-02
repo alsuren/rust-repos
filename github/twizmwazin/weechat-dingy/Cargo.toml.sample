@@ -1,0 +1,18 @@
+[package]
+name = "weechat-dingy"
+version = "0.1.0"
+authors = ["Kevin Phoenix <kevin@kphoenix.us>", "Glenn Smith <couleeapps@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+backtrace = "0.3"
+byteorder = "1.2.7"
+derive_more = "0.13.0"
+libflate = "0.1"
+tokio = "0.1"
+bytes = "0.4.12"
+futures = "0.1.26"
+rand = "0.6.5"
+
+[profile.release]
+debug = true

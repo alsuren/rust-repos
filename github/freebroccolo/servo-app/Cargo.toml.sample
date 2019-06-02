@@ -1,0 +1,19 @@
+[package]
+name = "servo_app"
+version = "0.1.0"
+authors = ["Darin Morrison <freebroccolo@users.noreply.github.com>"]
+
+[[bin]]
+name = "servo_app"
+test = false
+
+[dependencies]
+servo-glutin = "0.4.23"
+
+[dependencies.glutin_app]
+git = "https://github.com/servo/servo.git"
+path = "ports/glutin"
+
+[dependencies.servo]
+git = "https://github.com/servo/servo.git"
+path = "components/servo"

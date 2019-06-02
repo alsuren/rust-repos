@@ -1,0 +1,35 @@
+[package]
+authors = ["Adrian Perez de Castro <aperez@igalia.com>"]
+name = "popsicle"
+version = "0.1.0"
+edition = "2018"
+
+[dev-dependencies]
+tempdir = "0.3"
+pretty_assertions = "*"
+
+[dependencies]
+blake2-rfc = "^0.2"
+env_logger = "^0.6"
+error-chain = "^0.12"
+lazy_static = "^1.0"
+libflate = "^0.1"
+log = "^0.4"
+memmap = "^0.7"
+regex = "^1.0"
+structopt = "^0.2"
+structopt-derive = "^0.2"
+tar = "^0.4"
+xdg = "^2.0"
+
+[dependencies.goblin]
+version = "^0.0"
+default-features = false
+features = ["std", "endian_fd"]
+
+[profile.release]
+lto = true
+
+[features]
+default = ["elf"]
+elf = ["goblin/elf32", "goblin/elf64"]

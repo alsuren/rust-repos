@@ -1,0 +1,9 @@
+[package]
+name = "countcode"
+version = "0.1.0"
+authors = ["Darshan Parajuli <parajulidarshan@gmail.com>"]
+
+[dependencies]
+ignore = "0.4.2"
+rayon = "1.0.1"
+memmap = "0.7.0"

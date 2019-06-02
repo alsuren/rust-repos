@@ -1,0 +1,18 @@
+[package]
+name = "sanitize_html"
+version = "0.4.0"
+authors = ["Andrey Kutejko <andy128k@gmail.com>"]
+description = "Rule-based HTML Sanitization library"
+keywords = ["html", "sanitize"]
+license = "MIT"
+homepage = "https://github.com/andy128k/sanitize-html-rs"
+repository = "https://github.com/andy128k/sanitize-html-rs.git"
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "andy128k/sanitize-html-rs", branch = "master" }
+
+[dependencies]
+regex = "1"
+lazy_static = "1"
+html5ever = "0.23"

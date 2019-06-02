@@ -1,0 +1,12 @@
+[package]
+name = "sankey"
+version = "0.1.0"
+authors = ["Stian Soltvedt <stian@soltvedt.info>"]
+edition = "2018"
+
+[dependencies]
+csv = "1"
+image = "0.21"
+rusttype = "0.7"
+serde = { version = "1", features = ["derive"] }
+structopt = "0.2"

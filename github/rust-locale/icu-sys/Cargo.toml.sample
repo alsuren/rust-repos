@@ -1,0 +1,24 @@
+[package]
+name = "icu-sys"
+version = "0.1.0-pre"
+description = """
+Bindings to the International Components for Unicode internationalization library
+"""
+authors = ["Jan Hudec <bulb@ucw.cz>"]
+license = "MIT"
+
+documentation = "https://docs.rs/icu-sys/"
+repository = "https://github.com/rust-locale/icu-sys/"
+readme = "README.md"
+keywords = ["i18n", "unicode", "cldr"]
+categories = ["os"]
+
+build = "build/build.rs"
+links = "icu"
+
+[build-dependencies]
+bindgen = "0.31"
+pkg-config = "0.3"
+regex = "0.2"
+
+[dependencies]

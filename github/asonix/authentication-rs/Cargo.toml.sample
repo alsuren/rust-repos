@@ -1,0 +1,11 @@
+[package]
+name = "authentication"
+description = "A User and Permission management web service"
+repository = "http://github.com/asonix/authentication-rs"
+version = "0.1.0"
+authors = ["Riley Trautman <asonix.dev@gmail.com>"]
+license = "GPL-3.0"
+
+[dependencies]
+authentication_backend = { path = "authentication_backend" }
+authentication_rocket = { path = "authentication_rocket" }

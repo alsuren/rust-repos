@@ -1,0 +1,84 @@
+[package]
+
+name = "rust-attempt"
+version = "0.1.0"
+authors = [
+    "TySkelton <skeltont@onid.oregonstate.edu>",
+]
+
+[[bin]]
+name = "rust-attempt-graphics"
+path = "src/main.rs"
+
+[dependencies]
+piston = "0.5.0"
+piston2d-opengl_graphics = "0.6.0"
+piston2d-graphics = "0.4.1"
+
+# Mein
+# shader_version = "0.2.0"
+
+[dependencies.pistoncore-sdl2_window]
+git = "https://github.com/PistonDevelopers/sdl2_window.git"
+
+[dependencies.pistoncore-event]
+git = "https://github.com/pistondevelopers/event"
+
+# [dependencies.pistoncore-sdl2_window]
+# version = "0.6.0"
+# optional = true
+
+[dependencies.pistoncore-glfw_window]
+version = "0.5.0"
+optional = true
+
+[dependencies.pistoncore-glutin_window]
+version = "0.7.1"
+optional = true
+
+# [dependencies.pistoncore-input]
+# version = "0.3.0"
+
+[build-dependencies.gcc]
+git = "https://github.com/alexcrichton/gcc-rs"
+
+[features]
+default = ["include_glutin"]
+# include_sdl2 = ["pistoncore-sdl2_window"]
+include_glfw = ["pistoncore-glfw_window"]
+include_glutin = ["pistoncore-glutin_window"]
+
+
+# [package]
+#
+# name = "jumpy"
+# version = "0.0.1"
+# authors = ["me"]
+#
+# [[bin]]
+#
+# name = "game"
+
+# [dependencies.piston]
+#
+# git = "https://github.com/PistonDevelopers/piston.git"
+
+# [dependencies.pistoncore-sdl2_window]
+#     git = "https://github.com/PistonDevelopers/sdl2_window"
+
+# [dependencies.graphics]
+#
+# git = "https://github.com/PistonDevelopers/graphics.git"
+
+# [dependencies.piston2d-opengl_graphics]
+#
+# git = "https://github.com/PistonDevelopers/opengl_graphics.git"
+
+# piston = "0.4.1"
+# piston = "*"
+# pistoncore-glutin_window = "0.5.0"
+# piston2d-opengl_graphics = "0.6.0"
+# piston2d-opengl_graphics = "*"
+# piston2d-graphics ="*"
+# pistoncore-input = "0.3.0"
+# pistoncore-input = "*"

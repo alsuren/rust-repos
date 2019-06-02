@@ -1,0 +1,18 @@
+[package]
+name = "ruxt"
+version = "0.1.0"
+authors = ["Benjamin Kimock <kimockb@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = "A fast, safe, minimal X client written entirely in Rust"
+repository = "https://github.com/saethlin/pdfpdf"
+documentation = "https://docs.rs/pdfpdf"
+readme = "README.md"
+
+keywords = ["X", "graphics"]
+
+[lib]
+crate-type = ["rlib"]
+
+[profile.release]
+lto = true
+panic = 'abort'

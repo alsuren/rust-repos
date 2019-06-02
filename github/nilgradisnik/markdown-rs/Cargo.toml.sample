@@ -1,0 +1,22 @@
+[package]
+name = "markdown-rs"
+version = "0.1.0"
+authors = ["Nil Gradisnik <nil.gradisnik@gmail.com>"]
+description = "Fast, simple, distraction free Markdown editor."
+repository = "@nilgradisnik/markdown-rs"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+gio = "0.4"
+sourceview = "0.4"
+comrak = "0.2"
+horrorshow = "0.6"
+webkit2gtk = "0.4"
+
+[dependencies.gtk]
+version = "0.4"
+features = ["v3_22"]
+
+[dev-dependencies]
+clippy = "0.0.192"

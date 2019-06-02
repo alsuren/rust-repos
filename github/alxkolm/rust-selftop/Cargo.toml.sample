@@ -1,0 +1,12 @@
+[package]
+
+name = "selftop"
+version = "0.0.1"
+authors = ["alxkolm@gmail.com"]
+
+[[bin]]
+
+name = "selftop"
+
+[dependencies]
+rustbox = "0.1.0"

@@ -1,0 +1,10 @@
+[package]
+name = "pl-vm"
+version = "0.1.0"
+authors = ["André Oliveira <p32blo@gmail.com>"]
+
+[dependencies]
+clap = { version = "2", default-features = false, features = ["color"]}
+error-chain = { version = "0.7", default-features = false }
+ansi_term = "0.9"
+pest = "0.4"

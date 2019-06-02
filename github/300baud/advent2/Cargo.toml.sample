@@ -1,0 +1,14 @@
+[package]
+name = "advent2"
+version = "0.1.0"
+authors = ["dbx <300baud@users.noreply.github.com>"]
+
+[dependencies]
+regex = "0.1.80"
+openssl = "0.9.0"
+graphsearch = "0.6.0"
+
+[lib]
+name = "advent2"
+path = "src/lib.rs"
+

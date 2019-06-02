@@ -1,0 +1,15 @@
+[package]
+name = "breakout"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[dependencies]
+log = "*"
+
+[dependencies.amethyst]
+git = "https://github.com/amethyst/amethyst.git"
+
+[dependencies.shred]
+version = "*"
+features = ["nightly"]

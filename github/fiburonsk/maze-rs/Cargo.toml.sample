@@ -1,0 +1,16 @@
+[package]
+name = "maze-rs"
+version = "0.5.0"
+authors = ["fiburonsk <10441670+fiburonsk@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+image = "0.21.0"
+
+[[bin]]
+name = "maze"
+path = "src/main.rs"
+
+[profile.release]
+lto = true

@@ -1,0 +1,10 @@
+[package]
+name = "pun-on-rust-demo"
+version = "0.2.0"
+authors = ["Matthew Mayer <matthewkmayer@gmail.com>"]
+
+[dependencies]
+rusoto = "^0.11.0"
+rustc-serialize = "^0.3.16"
+log4rs = "^0.3.3"
+log = "^0.3.3"

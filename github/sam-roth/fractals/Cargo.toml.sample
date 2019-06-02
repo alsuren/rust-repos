@@ -1,0 +1,8 @@
+[package]
+name = "fractal"
+version = "0.1.0"
+authors = ["Sam Roth <sam.roth1@gmail.com>"]
+
+[dependencies]
+glium = "*"
+rustc-serialize = "0.3"

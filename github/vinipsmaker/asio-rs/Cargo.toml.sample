@@ -1,0 +1,21 @@
+[package]
+name = "asio"
+description = "Asynchronous Socket I/O"
+license = "GPL-3.0"
+version = "0.1.0"
+authors = ["MaidSafe Developers <dev@maidsafe.net>"]
+
+[dependencies]
+mio = "0.5.1"
+
+[[example]]
+bench = false
+name = "sample"
+path = "examples/sample.rs"
+test = false
+
+[[example]]
+bench = false
+name = "client"
+path = "examples/client.rs"
+test = false

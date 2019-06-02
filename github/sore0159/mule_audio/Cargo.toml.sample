@@ -1,0 +1,10 @@
+[package]
+name = "mule_audio"
+version = "0.1.0"
+authors = ["Mule <3.7mules@gmail.com>"]
+
+[dependencies]
+portaudio="*"
+[dev-dependencies]
+termion="*"
+

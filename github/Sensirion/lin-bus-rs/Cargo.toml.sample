@@ -1,0 +1,22 @@
+[package]
+name = "lin-bus"
+version = "0.2.1"
+authors = ["Raphael Nestler <raphael.nestler@sensirion.com>"]
+description = "LIN bus driver traits and protocol implementation"
+readme = "README.md"
+keywords = ["LIN", "local", "interconnect", "network"]
+categories = ["no-std", "hardware-support"]
+license = "BSD-3-Clause"
+repository = "https://github.com/Sensirion/lin-bus-rs"
+edition = "2018"
+
+[dependencies]
+bitfield = "^0.13"
+
+[dependencies.num-traits]
+version = "^0.2"
+default-features = false
+
+[dependencies.byteorder]
+version = "^1.0"
+default-features = false

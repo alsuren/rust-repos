@@ -1,0 +1,11 @@
+[package]
+authors = ["Jorge Aparicio <japaricious@gmail.com>"]
+description = "Semihosting for RISCV processors"
+documentation = "https://docs.rs/riscv-semihosting"
+keywords = ["semihosting", "riscv"]
+license = "MIT OR Apache-2.0"
+name = "riscv-semihosting"
+repository = "https://github.com/riscv-rust/riscv-semihosting"
+version = "0.0.1"
+
+[dependencies]

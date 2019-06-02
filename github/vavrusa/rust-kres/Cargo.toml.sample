@@ -1,0 +1,12 @@
+[workspace]
+members = [
+	"crates/kres-sys",
+	"crates/kres", 
+]
+
+[profile.release]
+lto = true
+
+[profile.bench]
+debug = true
+panic = 'abort'

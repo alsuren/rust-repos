@@ -1,0 +1,26 @@
+[package]
+name = "piston2d-graphics_tree"
+version = "0.23.0"
+authors = ["Sven Nilsen <bvssvni@gmail.com>"]
+license = "MIT OR Apache-2.0"
+keywords = ["graphics", "tree", "2d", "piston"]
+description = "A 2D graphics backend for Piston-Graphics that stores and optimizes commands"
+readme = "README.md"
+repository = "https://github.com/PistonDevelopers/graphics_tree.git"
+homepage = "https://github.com/PistonDevelopers/graphics_tree"
+exclude = ["assets/*"]
+
+[lib]
+name = "graphics_tree"
+
+[dependencies]
+piston2d-graphics = "0.32.0"
+piston-texture = "0.6.0"
+image = "0.21.0"
+range = "1.0.0"
+
+[dev-dependencies]
+piston_window = "0.93.0"
+rand = "0.6.4"
+fps_counter = "1.0.0"
+vecmath = "1.0.0"

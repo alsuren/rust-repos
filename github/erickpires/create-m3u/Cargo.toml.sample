@@ -1,0 +1,11 @@
+[package]
+name = "create_m3u"
+version = "0.1.0"
+authors = ["Erick Pires <pires@erickpires.com>"]
+
+[dependencies]
+lazy_static = "0.2"
+
+[dependencies.mediainfo]
+git = "https://github.com/erickpires/rust-mediainfo"
+version = "0.1.3"

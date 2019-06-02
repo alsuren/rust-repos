@@ -1,0 +1,9 @@
+[package]
+name = "observable"
+version = "0.1.0"
+authors = ["daddinuz <daddinuz@gmail.com>"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+uuid = { version = "0.7", features = ["v4"] }

@@ -1,0 +1,28 @@
+[package]
+name = "pidgin"
+version = "0.3.0"
+authors = ["dfhoughton <dfhoughton@gmail.com>"]
+description= "simple non-recursive grammars"
+homepage = "https://github.com/dfhoughton/pidgin"
+repository = "https://github.com/dfhoughton/pidgin"
+documentation = "https://docs.rs/pidgin"
+readme = "README.md"
+keywords = [ "grammar", "regex", "parsing" ]
+categories = [ "parsing", "text-processing" ]
+license = "GPL-2.0"
+edition = "2018"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+regex = "1"
+lazy_static = "1.1.0"
+
+[dev-dependencies]
+rand = "0.5.5"
+criterion = "0.2"
+
+[[bench]]
+name = "regex_comparison"
+harness = false

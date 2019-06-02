@@ -1,0 +1,7 @@
+[package]
+name = "lua"
+version = "0.1.0"
+authors = ["irxground <irxnjhtchlnrw@gmail.com>"]
+
+[dependencies]
+lua53-sys = { path = "./lua53-sys" }

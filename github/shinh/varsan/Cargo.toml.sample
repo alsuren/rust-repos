@@ -1,0 +1,14 @@
+[package]
+name = "varsan"
+version = "0.1.0"
+authors = ["Shinichiro Hamaji <shinichiro.hamaji@gmail.com>"]
+
+[dependencies]
+errno = "*"
+libc = "*"
+regex = "*"
+rustyline = "1.0.0"
+memmap = "*"
+goblin = "*"
+owning_ref = "0.2.4"
+colored = "1.5"

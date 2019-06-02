@@ -1,0 +1,26 @@
+[package]
+name = "culqi"
+version = "0.2.1"
+description = "API bindings for the Culqi v2 HTTP API"
+authors = ["Willy Aguirre <marti1125@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/marti1125/culqi-rust"
+documentation = "https://docs.rs/culqi/0.2.1/culqi/"
+keywords = ["culqi", "v2", "api"]
+categories = ["api-bindings"]
+exclude = ["src/main.rs", "examples/new_charge.rs"]
+
+[lib]
+name = "culqi"
+doc = false
+path = "src/lib.rs"
+
+[dependencies]
+hyper = "0.10"
+hyper-native-tls = "0.2.2"
+reqwest = "0.5.1"
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+serde_qs = "0.0.2"

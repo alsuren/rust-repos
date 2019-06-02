@@ -1,0 +1,22 @@
+[package]
+name = "ser2tcp"
+version = "0.3.0"
+authors = ["Ian McIntyre <ianpmcintyre@gmail.com>"]
+description = """
+
+Multiplex a read-only serial device to TCP clients.
+
+Set an environment variable, RUST_LOG=ser2tcp=[level], where
+level is a common logging level (debug, info, etc.) if you want
+insight into the program. By default, the utility outputs errors."""
+
+[dependencies]
+bytes = "0.4"
+clap = "2.3.0"
+env_logger = "0.5.4"
+futures = "0.1"
+log = "0.4.0"
+tokio = "0.1"
+tokio-codec = "0.1"
+tokio-io = "0.1"
+tokio-serial = "0.8"

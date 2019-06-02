@@ -1,0 +1,22 @@
+[package]
+name = "unwrap"
+version = "0.1.0"
+description = "A simple command line wrapper of common decompressors for zip, rar, xz, tar, tgz, bzip, base64(more are coming)."
+authors = ["Edward Wo <edward.wo823@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/edwardwohaijun/unwrap"
+
+[dependencies]
+regex = "1.1.0"
+lazy_static = "1.2.0"
+tree_magic = "0.2.1"
+rand = "0.6.5"
+
+tar = "0.4.20"
+flate2 = "1.0.6"
+zip = "0.5"
+base64 = "0.10.1"
+rust-lzma = "0.4"
+bzip2 = "0.3.3"
+unrar = "0.4.3"

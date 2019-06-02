@@ -1,0 +1,22 @@
+[package]
+name = "coffeezerabot"
+version = "0.1.0"
+authors = ["tiberiodarferreira"]
+
+[dependencies]
+reqwest = { version = "*"}
+
+threadpool = "*"
+
+diesel = { version = "*", features = ["postgres"] }
+diesel_infer_schema = { version = "*", features = ["postgres"] }
+dotenv = "*"
+erased-serde = "*"
+flexi_logger = "*"
+log = "*"
+sysfs_gpio = "*"
+log-panics = "*"
+[dependencies.teleborg]
+git = "https://github.com/tiberiusferreira/teleborg.git"
+branch = "fix_getting_updates"
+#path = "../teleborg"

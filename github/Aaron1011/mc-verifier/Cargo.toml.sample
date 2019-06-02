@@ -1,0 +1,17 @@
+[package]
+name = "mc-verifier"
+version = "0.1.0"
+authors = ["Aaron Hill <aa1ronham@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.1.16"
+byteorder = "1.3.1"
+packet_macro = { path = "packet_macro" }
+lazy_static = "1.3.0"
+bytes = "0.4.12"
+openssl = "0.10.19"
+hex = "0.3.2"
+hyper = "0.12.25"
+hyper-tls = "0.3.1"
+num-bigint = "0.2.2"

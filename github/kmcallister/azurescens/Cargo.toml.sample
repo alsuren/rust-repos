@@ -1,0 +1,27 @@
+[package]
+name = "azurescens"
+description = "Renders interactive fractal-like animations"
+repository = "https://github.com/kmcallister/azurescens"
+readme = "README.md"
+keywords = ["OpenGL", "fractal", "art", "trippy"]
+categories = ["multimedia::video", "visualization"]
+license = "MIT/Apache-2.0"
+version = "0.1.0"
+authors = ["Keegan McAllister <mcallister.keegan@gmail.com>"]
+
+[dependencies]
+glium = "0.16"
+time = "0.1"
+image = "0.13"
+serde = "1"
+serde_derive = "1"
+tunapanel = "0.1.1"
+log = "0.3"
+env_logger = "0.4"
+
+[dev-dependencies]
+tempfile = "2"
+
+[features]
+default = []
+dynamic-shaders = []

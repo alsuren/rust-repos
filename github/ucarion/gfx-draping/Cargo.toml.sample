@@ -1,0 +1,23 @@
+[package]
+name = "gfx_draping"
+description = "Drape polygons over terrain with gfx"
+version = "0.3.0"
+authors = ["Ulysse Carion <ulysse@ulysse.io>"]
+homepage = "https://github.com/ucarion/gfx-draping"
+repository = "https://github.com/ucarion/gfx-draping"
+documentation = "https://docs.rs/gfx_draping"
+license = "MIT"
+
+[dependencies]
+gfx = "0.17"
+geo = "^0.6"
+
+[dev-dependencies]
+camera_controllers = "0.22"
+cgmath = "0.15"
+fps_counter = "0.2"
+geo = "0.6"
+geojson = "0.9"
+gfx_text = "0.18"
+piston_window = "0.70"
+vecmath = "0.3"

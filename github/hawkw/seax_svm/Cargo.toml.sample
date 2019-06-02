@@ -1,0 +1,21 @@
+[package]
+
+name = "seax_svm"
+version = "0.2.8"
+authors = ["Hawk Weisman <hi@hawkweisman.me>"]
+description = "SECD virtual machine for interpreting programs in FP languages"
+license = "MIT"
+homepage = "http://hawkweisman.me/seax"
+repository = "https://github.com/hawkw/seax_svm"
+readme = "README.md"
+keywords = ["vm","lisp","languages"]
+
+[dependencies]
+log = "0.3.1"
+byteorder = "*"
+
+[dev-dependencies]
+quickcheck = "*"
+
+[features]
+nightly = []

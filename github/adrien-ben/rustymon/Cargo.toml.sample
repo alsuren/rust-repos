@@ -1,0 +1,13 @@
+[package]
+name = "rustymon"
+version = "0.1.0"
+authors = ["Adrien Bennadji <adrien.bennadji@live.fr>"]
+edition = "2018"
+
+[dependencies]
+amethyst = "0.10.0"
+specs-derive = "0.3.0"
+serde = "1.0"
+serde_derive = "1.0"
+nalgebra = "0.16"
+ncollide2d = "0.17"

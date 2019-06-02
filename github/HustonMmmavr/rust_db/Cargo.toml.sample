@@ -1,0 +1,21 @@
+[package]
+name = "RustDb"
+version = "0.1.0"
+authors = ["HustonMavr <huston.mavr@gmail.com>"]
+
+[dependencies]
+hyper = "0.10.7"
+hyper-router = "*"
+r2d2 = "0.8.2"
+r2d2_postgres = "*"
+router = "*"
+chrono = { version = "0.4", features = ["serde", "rustc-serialize"] }
+persistent = "0.0.6"
+params = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+iron-json-response = "*"
+bodyparser = "*"
+iron = "*"
+postgres = {version = "*", features = ["with-time", "with-chrono"]}

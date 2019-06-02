@@ -1,0 +1,34 @@
+[package]
+name = "jcompiler"
+version = "0.1.0"
+authors = ["Matt Quinn <matt@mattjquinn.com>"]
+homepage = "https://github.com/mattjquinn/jcompiler"
+repository = "https://github.com/mattjquinn/jcompiler"
+description = "a compiler for the J programming language"
+readme = "README.md"
+license = "GPL-2.0"
+
+[lib]
+name = "jcompilerlib"
+path = "src/lib/mod.rs"
+
+[[bench]]
+name = "benchmarks"
+harness = false
+
+[dev-dependencies]
+criterion = "0.2"
+
+[dependencies]
+llvm-sys = "70"
+itertools = "0.4"
+rand = "0.3"
+quickcheck = "0.3"
+tempfile = "2.1"
+getopts = "0.2"
+matches = "0.1"
+ansi_term = "0.9"
+regex = "1.1.0"
+pest = "2.1.0"
+pest_derive = "2.1.0"
+ascii = "0.9.1"

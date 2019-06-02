@@ -1,0 +1,21 @@
+[package]
+name = "legend-rs"
+version = "0.1.0"
+authors = ["lzxZz <616281384@qq.com>"]
+edition = "2018"
+build = "build.rs"
+
+[[bin]]
+name = "server_login"
+path = "src/bin/server/login.rs"
+
+[[bin]]
+name = "client_login"
+path = "src/bin/client/login.rs"
+
+[dependencies]
+redis = "0.9.0"
+protobuf = "2.4"
+
+[build-dependencies]
+protoc-rust-grpc = "0.6.1"

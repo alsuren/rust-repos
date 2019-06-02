@@ -1,0 +1,12 @@
+[package]
+authors = ["Hidehito Yabuuchi <hdht.ybuc@gmail.com>"]
+name = "git-rup"
+version = "0.1.0"
+description = ""
+repository = "https://github.com/ordovicia/git-rup"
+readme = "README.md"
+include = ["src/*.rs", "Cargo.toml"]
+
+[dependencies]
+git2 = "0.6"
+getopts = "0.2.14"

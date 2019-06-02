@@ -1,0 +1,14 @@
+[package]
+name = "railsite"
+version = "0.1.0"
+authors = ["Martin Hoffmann <hn@nvnc.de>"]
+
+[dependencies]
+actix-web = "^0.7"
+htmlfn    = { git = "https://github.com/partim/htmlfn.git" }
+mime      = "^0.2"
+raildata  = { git = "https://github.com/railwayhistory/raildata.git" }
+
+[[bin]]
+name = "railsite"
+doc = false

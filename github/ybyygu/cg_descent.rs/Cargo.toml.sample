@@ -1,0 +1,16 @@
+# cargo
+
+# [[file:~/Workspace/Programming/rust-libs/cg_descent.rs/cg_descent.note::*cargo][cargo:1]]
+[package]
+name = "cg_descent"
+edition = "2018"
+version = "0.0.3"
+authors = ["Wenping Guo <ybyygu@gmail.com>"]
+
+[dependencies]
+quicli = "0.4"
+
+[build-dependencies]
+cc = "1.0"
+bindgen = "0.26.3"
+# cargo:1 ends here

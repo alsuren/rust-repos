@@ -1,0 +1,14 @@
+[package]
+name = "pokers"
+version = "0.1.0"
+authors = ["Maxfield Lewin <mslewin@gmail.com>"]
+
+[lib]
+name = "pokers"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "0.4"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+itertools = "0.7.3"

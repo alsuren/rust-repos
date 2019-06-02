@@ -1,0 +1,27 @@
+[package]
+
+name = "engine"
+version = "0.0.1"
+authors = ["Dylan McKay <me@dylanmckay.io"]
+
+[dependencies.num]
+path = "src/num"
+
+[dependencies.math]
+path = "src/math"
+
+[dependencies.geom]
+path = "src/geom"
+
+[dependencies.color]
+path = "src/color"
+
+[dependencies.gfx]
+path = "src/gfx"
+
+[dependencies.util]
+path = "src/util"
+
+[[example]]
+name = "basic"
+path = "examples/basic/main.rs"

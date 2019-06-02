@@ -1,0 +1,21 @@
+[workspace]
+members=[
+    "cfgrammar",
+    "lrlex",
+    "lrlex/examples/calclex",
+    "lrpar",
+    "lrpar/cttests",
+    "lrpar/examples/calc_parsetree",
+    "lrpar/examples/calc_actions",
+    "lrtable",
+    "nimbleparse",
+]
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'

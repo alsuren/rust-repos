@@ -1,0 +1,24 @@
+[package]
+name = "fishr"
+version = "0.1.0"
+authors = ["Marc Noirot <marc.noirot@gmail.com>"]
+license = "MIT"
+description = "Fish (><>) esoteric language interpreter"
+repository = "https://github.com/noirotm/fishr"
+keywords = ["cli", "interpreter", "esoteric", "fish"]
+readme = "README.md"
+edition = "2018"
+
+[lib]
+name = "fish"
+path = "src/fish.rs"
+
+[[bin]]
+name = "fishr"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.32"
+rand = "0.6"
+serde = "1.0"
+serde_json = "1.0"

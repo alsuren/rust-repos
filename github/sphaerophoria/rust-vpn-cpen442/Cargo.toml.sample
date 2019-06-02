@@ -1,0 +1,18 @@
+[package]
+name = "rust-vpn"
+version = "0.1.0"
+authors = ["Mick Sayson <mick@sayson.com>"]
+build = "build.rs"
+
+[dependencies]
+libc = "=0.1.10"
+net2 = "=0.2.15"
+openssl = { version = "=0.6.7", features=["aes_ctr","rfc5114"] }
+openssl-sys = { version = "=0.6.7", features=["aes_ctr","rfc5114"] }
+rustc-serialize = "=0.3.16"
+env_logger = "=0.3.1"
+log = "=0.3.2"
+
+[build-dependencies]
+pkg-config = "0.3.6"
+gcc = "0.3"

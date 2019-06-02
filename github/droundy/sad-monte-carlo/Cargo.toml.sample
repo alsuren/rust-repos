@@ -1,0 +1,37 @@
+[package]
+name = "sad-monte-carlo"
+version = "0.1.0"
+authors = ["David Roundy <roundyd@oregonstate.edu>"]
+
+[lib]
+name = "sadmc"
+path = "src/lib.rs"
+
+[dependencies]
+
+dimensioned = { git = "https://github.com/paholg/dimensioned", features=["serde"] }
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"
+clapme = "0.1.13"
+
+vector3d = "0.1.7"
+rand_core = "0.2.1"
+rand = "0.5.4"
+tempfile = "3.0.3"
+git-version = "0.3.0"
+
+# [patch.crates-io]
+# clapme = { path = "../clapme" }
+
+[dev-dependencies]
+criterion = "0.2"
+difference = "2.0"
+
+[features]
+# Treat warnings as a build error.
+strict = []
+
+[[bench]]
+name = "bench-sad"
+harness = false

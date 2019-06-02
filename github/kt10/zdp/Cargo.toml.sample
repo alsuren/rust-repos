@@ -1,0 +1,33 @@
+[package]
+name = "zdp"
+version = "0.2.0"
+authors = ["fanhui <hui.fan@mail.ru>"]
+
+[dependencies]
+error-chain = "0.11"
+
+iron = "0.6"
+reqwest = "0.8"
+
+ssh2 = "0.3"
+git2 = "0.7"
+
+r2d2 = "0.8"
+r2d2_postgres = "0.14"
+postgres = { version = "0.15", features = ["with-serde_json"] }
+
+regex = "1.0"
+
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+toml = "0.4"
+
+data-encoding = "2.1"
+ring = "0.12"
+
+threadpool = "1.7"
+lazy_static = "1.0"
+num_cpus = "1.8"
+time = "0.1"

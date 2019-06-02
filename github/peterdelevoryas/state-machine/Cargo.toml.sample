@@ -1,0 +1,12 @@
+[package]
+name = "state-machine"
+version = "0.1.0"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+
+[dependencies]
+kinetic-protobuf = "0.1"
+bytes = "0.4"
+byteorder = "1"
+protobuf = "1"
+error-chain = "0.10"
+ring = "0.9"

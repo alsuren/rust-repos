@@ -1,0 +1,12 @@
+[package]
+name = "scpl"
+version = "0.3.0"
+authors = ["leo-tom <coder.le0.1060@gmail.com>"]
+license = "GPL-3.0-or-later"
+
+[dependencies]
+image = "*"
+num = "*"
+num-complex = "*"
+num-traits = "*"
+regex = "*"

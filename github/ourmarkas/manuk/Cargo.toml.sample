@@ -1,0 +1,12 @@
+[package]
+name = "manuk"
+version = "0.1.0"
+authors = ["Deri Herdianto <derryherdianto@gmail.com>"]
+
+[dependencies]
+rocket = "0.3.9"
+rocket_codegen = "0.3.9"
+rocket_contrib = { version = "0.3.9",	default-features = false,	features = ["tera_templates"] }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

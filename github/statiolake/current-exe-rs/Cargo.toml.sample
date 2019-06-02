@@ -1,0 +1,8 @@
+[package]
+name = "current_exe"
+version = "0.1.0"
+authors = ["statiolake <statiolake@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+to_absolute = { git = "https://github.com/statiolake/to-absolute-rs" }

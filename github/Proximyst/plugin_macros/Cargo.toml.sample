@@ -1,0 +1,21 @@
+[package]
+name = "plugin_macros"
+version = "0.1.0"
+authors = ["Mariell Hoversholm <proximyst@proximyst.com>"]
+description = "Macros for doing Rust dynamic library plugins easier."
+repository = "https://github.com/Proximyst/plugin_macros"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+libloading = "~0.5"
+hashbrown = { optional = true, version = "~0.1" }
+fxhash = { optional = true, version = "~0.2" }
+failure = "~0.1"
+
+[features]
+default = [ "swisstable" ]
+
+swisstable = [ "hashbrown" ]
+fx = [ "fxhash" ]
+nightly = []

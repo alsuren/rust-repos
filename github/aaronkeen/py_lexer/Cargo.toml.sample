@@ -1,0 +1,10 @@
+[package]
+name = "py_lexer"
+version = "0.1.0"
+authors = ["Aaron Keen <aaronkeen@gmail.com>"]
+
+[dependencies]
+unicode-segmentation = "0.1.2"
+unicode_names = "0.1.7"
+regex = "0.1.41"
+lazy_static = "0.1.15"

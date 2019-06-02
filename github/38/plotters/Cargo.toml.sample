@@ -1,0 +1,32 @@
+[package]
+name = "plotters"
+version = "0.1.13"
+authors = ["Hao Hou <haohou302@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Plot Drawing Library in Pure Rust for both native and WASM applications"
+repository = "https://github.com/38/plotters"
+keywords = ["WebAssembly", "Visualization", "Plotting", "Drawing"]
+categories = ["wasm", "visualization"]
+readme = "README.md"
+exclude = ["doc-template/*"]
+
+[dependencies]
+chrono = { version = "0.4.6", optional = true }
+svg = { version = "0.5.12", optional = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+rusttype = "0.7.6"
+font-loader = "0.8.0"
+lazy_static = "^1.2"
+image = {version = "0.21.1", optional = true }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+web-sys = { version = "0.3.4", features = ['Document', 'Element', 'HtmlElement', 'Node', 'Window', 'HtmlCanvasElement', 'CanvasRenderingContext2d'] }
+js-sys= "0.3.4"
+wasm-bindgen = "0.2.43"
+
+[features]
+default = ["bitmap", "svg", "chrono"]
+bitmap = ["image"]
+datetime = ["chrono"]

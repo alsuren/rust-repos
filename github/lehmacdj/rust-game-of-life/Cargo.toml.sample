@@ -1,0 +1,8 @@
+[package]
+name = "simulation"
+version = "0.1.0"
+authors = ["Devin Lehmacher <lehmacdj@gmail.com>"]
+
+[dependencies]
+image = "0.10.4"
+rand = "*"

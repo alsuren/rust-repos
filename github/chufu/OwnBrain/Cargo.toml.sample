@@ -1,0 +1,14 @@
+[package]
+name = "own_brain"
+version = "0.1.0"
+authors = ["Eduard Gruen <eduard.gruen@greenux.de>"]
+
+[dependencies]
+
+[dependencies.mysql]
+version = "*"
+default-features = false
+features = ["pipe"]
+
+[dependencies.sciter-rs]
+path = "../rust-sciter/"

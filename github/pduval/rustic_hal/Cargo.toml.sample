@@ -1,0 +1,25 @@
+[package]
+name = "rustic_hal"
+version = "0.2.0"
+authors = ["Philippe Duval <philippe@duvalsoft.org>"]
+license = "MIT/Apache-2.0"
+description = "A rust library for creating Hal representations of resources, based on serde"
+documentation = "http://rustic-hal.duvalsoft.org/rustic_hal/"
+homepage = "http://rustic-hal.duvalsoft.org/rustic_hal/"
+repository = "https://github.com/pduval/rustic_hal"
+build = "build.rs"
+
+[lib]
+name = "rustic_hal"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "simple_serialisation"
+harness = false

@@ -1,0 +1,20 @@
+[package]
+name = "limonite"
+description = "Minecraft and reverse proxy server"
+version = "0.1.0"
+authors = ["Tatsuyuki Ishi <ishitatsuyuki@gmail.com>"]
+license = "MIT/Apache-2.0"
+
+[[bin]]
+name = "limonite"
+doc = false
+
+[lib]
+name = "limonite"
+crate-type = ["dylib"]
+
+[dependencies]
+clap = "2.20"
+toml = "0.2"
+tokio-core = "0.1"
+futures = "0.1"

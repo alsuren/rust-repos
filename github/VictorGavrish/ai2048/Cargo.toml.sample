@@ -1,0 +1,18 @@
+[workspace]
+
+members = [
+    "ai2048-bin",
+    "ai2048-test",
+    "ai2048-lib",
+    "ai2048-wasm",
+]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[profile.bench]
+opt-level = 3
+lto = true
+codegen-units = 1

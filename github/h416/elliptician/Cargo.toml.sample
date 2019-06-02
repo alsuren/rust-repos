@@ -1,0 +1,9 @@
+[package]
+name = "elipcian"
+version = "0.1.0"
+authors = ["h416 <h416@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+footile = { version = "0.3.1", default-features = false }
+image = { version = "0.21", default-features = false, features = ["jpeg", "png_codec"] }

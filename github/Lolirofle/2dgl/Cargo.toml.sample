@@ -1,0 +1,14 @@
+[package]
+
+name = "2dgl"
+version = "0.0.2"
+authors = ["Lolirofle <lolipopple@hotmail.com>"]
+
+[dependencies.time]
+git = "https://github.com/rust-lang/time"
+
+[dependencies.num]
+git = "https://github.com/rust-lang/num"
+
+[dependencies.gl]
+path = "src/gl"

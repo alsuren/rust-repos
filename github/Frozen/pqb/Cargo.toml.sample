@@ -1,0 +1,23 @@
+[package]
+name = "main"
+version = "0.1.0"
+authors = ["Konstantin <phpconf@gmail.com>"]
+
+
+[workspace]
+members = [
+    "pqb_codegen",
+    "pqb"
+    ]
+
+
+[dependencies]
+#chrono = "*"
+pqb = {path = "pqb"}
+pqb_codegen = {path = "pqb_codegen"}
+postgres = "0.15.2"
+log = "0.3"
+
+
+#[replace]
+#"pqb:0.1.0" = { path = "pqb" }

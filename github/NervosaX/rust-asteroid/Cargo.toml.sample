@@ -1,0 +1,13 @@
+[package]
+name = "gg-asteroid"
+version = "0.1.0"
+authors = ["Adam Hoddinott <adam.hoddinott@salespreso.com>"]
+
+[dependencies]
+ggez = "0.4"
+specs = "0.11.2"
+specs-derive = "*"
+shred = "0.7"
+shred-derive = "0.5"
+geo = "0.9.1"
+rand = "0.4"

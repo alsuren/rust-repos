@@ -1,0 +1,20 @@
+[package]
+name = "fastx"
+version = "0.2.0"
+authors = ["Erik Clarke <erikclarke@fastmail.com>"]
+description = "Fast, flexible FASTA+FASTQ parser library"
+license = "MIT"
+repository = "https://github.com/eclarke/fastx"
+readme = "README.md"
+exclude = ["tests/*"]
+
+[dependencies]
+itertools="0.6"
+nom="3.0"
+error-chain="*"
+
+[dev-dependencies]
+bio="0.13"
+
+[profile.release]
+debug=true

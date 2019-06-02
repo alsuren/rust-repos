@@ -1,0 +1,11 @@
+[package]
+name = "rusty_3d_game"
+version = "0.1.0"
+authors = ["Speedy Consoles <rubihome@gmx.de>"]
+
+[workspace]
+
+[dependencies]
+server = { path = "server" }
+client = { path = "client" }
+shared = { path = "shared" }

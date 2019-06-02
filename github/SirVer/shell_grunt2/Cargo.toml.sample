@@ -1,0 +1,28 @@
+[package]
+authors = ["Holger Rapp <HolgerRapp@gmx.net>"]
+name = "shell_grunt2"
+version = "0.2.0"
+edition = "2018"
+
+[dependencies]
+clap = "2.24.2"
+floating-duration = "0.1.1"
+lazy_static = "1.2.0"
+libc = "0.2.22"
+notify = "4.0.1"
+regex = "0.2.1"
+self_update = "0.4.2"
+sha1 = "0.6.0"
+term = "0.5.1"
+time = "^0.1"
+pathdiff = "0.1.0"
+
+[dependencies.ctrlc]
+features = ["termination"]
+version = "3.0"
+
+[dependencies.lua]
+# Using this because it disables readline, which gave me trouble and fixes
+# compilation on arm.
+git = "https://github.com/SirVer/rust-lua53"
+branch = "00_my_patches"

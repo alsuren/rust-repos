@@ -1,0 +1,10 @@
+[package]
+name = "langtonsant"
+version = "0.1.0"
+authors = ["Alexander Yankov <yankov.alex@gmail.com>"]
+
+[dependencies]
+termion = "1.5.1"
+clap = "2.32.0"
+palette = "0.4.1"
+nalgebra = "0.16.8"

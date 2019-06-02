@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "pdf",
+    "deflate",
+]
+
+[profile.release]
+debug = true

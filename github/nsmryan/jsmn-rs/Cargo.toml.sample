@@ -1,0 +1,22 @@
+[package]
+name = "jsmn-rs"
+version = "0.2.0"
+authors = ["Noah Ryan <nsmryan@gmail.com>"]
+readme="README.md"
+license="MIT"
+build="build.rs"
+keyworks=["parser", "json", "ffi"]
+links="jsmn"
+description="Bindings and Rustic interface to the jsmn C library for JSON parsing"
+homepage="https://github.com/nsmryan/jsmn-rs"
+
+[dependencies]
+
+[build-dependencies]
+cc="1.0.25"
+bindgen="0.26.3"
+
+[features]
+parent-links = []
+strict = []
+

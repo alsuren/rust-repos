@@ -1,0 +1,19 @@
+[package]
+name = "oslobike"
+version = "0.1.0"
+authors = ["Harald Eilertsen <haraldei@anduin.net>"]
+license = "GPL-3.0-or-later"
+description = "A rust wrapper for the Oslo City Bike open API."
+homepage = "https://code.volse.no/oslobike.git/"
+repository = "https://code.volse.no/oslobike.git/"
+readme = "README.md"
+keywords = ["oslo", "citybike", "api"]
+categories = ["api-bindings"]
+edition = "2018"
+
+[dependencies]
+dotenv = "0.13.0"
+reqwest = "0.9.10"
+serde = "1.0.88"
+serde_derive = "1.0.88"
+serde_json = "1.0.38"

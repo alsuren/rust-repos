@@ -1,0 +1,35 @@
+[package]
+name = "zxing-rs"
+version = "0.1.1"
+authors = ["higumachan <yuta.hinokuma725@gmail.com>"]
+edition = "2018"
+description = "port from [zxing-cpp](https://github.com/nu-book/zxing-cpp)"
+repository = "https://github.com/higumachan/zxing-rs"
+license = "Apache-2.0"
+
+build = "build.rs"
+include = [
+    "c_api/**/*",
+    "src/*",
+    "build.rs",
+    "Cargo.toml",
+    "submodules/zxing-cpp/core/**/*",
+]
+
+[build-dependencies]
+glob = "0.3.0"
+cc = "1.0.0"
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[dependencies]
+image = "0.21"
+num = "0.2"
+
+[features]
+parallel = ["cc/parallel"]
+
+[patch.crates-io]
+cc = { path = '/Users/yuta/repos/ghq/github.com/alexcrichton/cc-rs' }
+

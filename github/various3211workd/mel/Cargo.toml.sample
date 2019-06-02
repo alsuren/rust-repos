@@ -1,0 +1,17 @@
+[package]
+name = "mel"
+version = "1.0.2"
+authors = ["various3211workd <kd1229568@st.kobedenshi.ac.jp>"]
+edition = "2018"
+
+[dependencies]
+docopt = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+
+serde_json = "1.0"
+wincolor = "0.1"
+walkdir = "2"
+pulldown-cmark = "0.2.0"
+pbr = "*"
+reqwest = "*"

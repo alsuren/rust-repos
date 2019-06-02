@@ -1,0 +1,12 @@
+[package]
+name = "pskreporter-archive"
+version = "0.1.0"
+authors = ["Mike Walters <mike@flomp.net>"]
+edition = "2018"
+
+[dependencies]
+chrono = { version = "*", features = ["serde"] }
+diesel = { version = "*", features = ["chrono", "sqlite"] }
+serde = "*"
+serde_derive = "*"
+serde-xml-rs = { git = "https://github.com/RReverser/serde-xml-rs.git" }

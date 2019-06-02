@@ -1,0 +1,22 @@
+[package]
+name = "expression-simplifier"
+version = "1.0.0"
+authors = ["C-Bouthoorn <cbouthoorn@gmail.com>"]
+
+description = "Simplifies mathematical expressions"
+
+repository = "https://github.com/C-Bouthoorn/rust-expression-simplifier"
+
+readme = "README.md"
+
+keywords = ["math", "maths", "expression", "simplify"]
+
+categories = ["algorithms", "parser-implementations", "parsing", "science"]
+
+license = "MIT"
+
+[badges]
+
+travis-ci = { repository = "C-Bouthoorn/rust-expression-simplifier" }
+
+[dependencies]

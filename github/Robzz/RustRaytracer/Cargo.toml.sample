@@ -1,0 +1,22 @@
+[package]
+name = "rust-raytracer"
+version = "0.1.0"
+authors = ["R.Chavignat <r.chavignat@gmail.com>"]
+
+[lib]
+name = "rust_raytracer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rt"
+path = "src/main.rs"
+
+[dependencies]
+docopt = "0.6.86"
+docopt_macros = "0.6.88"
+image = "0.10.4"
+nalgebra = "0.10.1"
+num-traits = "0.1.36"
+rand = "0.3.15"
+rayon = "0.6.0"
+rustc-serialize = "0.3.22"

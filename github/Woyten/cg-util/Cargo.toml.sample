@@ -1,0 +1,12 @@
+[package]
+name = "cg-util"
+version = "0.1.0"
+authors = ["Woyten <woyten.tielesch@online.de>"]
+edition = "2018"
+
+[dependencies]
+cgmath = "0.17.0"
+glium = "0.24.0"
+nalgebra = "0.18.0"
+rand = "0.6.5"
+time = "0.1.42"

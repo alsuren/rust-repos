@@ -1,0 +1,19 @@
+[package]
+name = "truss"
+version = "0.1.0"
+authors = ["Alex Vidal <alex.vidal@gmail.com>"]
+
+[lib]
+name = "truss"
+path = "src/truss/lib.rs"
+
+[[bin]]
+name = "truss"
+path = "src/bin/truss.rs"
+
+[dependencies]
+clippy = "*"
+toml = { version = "*", default-features = false, features = ["serde"] }
+clap = "*"
+serde= "*"
+serde_macros = "*"

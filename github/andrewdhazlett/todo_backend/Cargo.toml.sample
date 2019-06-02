@@ -1,0 +1,21 @@
+[package]
+name = "todo_backend"
+version = "0.1.0"
+authors = ["andrewdhazlett <andrew@hazlett.me>"]
+
+[dependencies]
+actix = "^0.5"
+serde = "^1.0"
+serde_derive = "^1.0"
+
+[dependencies.actix-web]
+version = "^0.6"
+default-features = false
+
+[dependencies.clippy]
+version = "*"
+optional = true
+
+[dependencies.uuid]
+version = "^0.6"
+features = ["v5"]

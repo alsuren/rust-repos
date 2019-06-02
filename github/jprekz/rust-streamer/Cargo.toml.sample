@@ -1,0 +1,23 @@
+[package]
+name = "rust-streamer"
+version = "0.1.0"
+authors = ["jprekz <jprekz@users.noreply.github.com>"]
+edition = "2018"
+
+[features]
+default = []
+graphic = ["piston_window"]
+
+[dependencies]
+cpal = "0.8"
+num-complex = "0.2"
+rand = "0.6"
+
+piston_window = { version = "0.85.0", optional = true }
+
+[[example]]
+name = "ex1"
+
+[[example]]
+name = "ex2"
+required-features = ["graphic"]

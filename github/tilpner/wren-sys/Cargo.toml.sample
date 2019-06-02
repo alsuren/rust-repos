@@ -1,0 +1,11 @@
+[package]
+
+name = "wren-sys"
+version = "0.0.1"
+authors = ["Till Hoeppner <till@hoeppner.ws>"]
+
+links = "wren"
+build = "src/build.rs"
+
+[build-dependencies]
+gcc = "0.1.2"

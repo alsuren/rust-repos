@@ -1,0 +1,8 @@
+[package]
+name = "nxr"
+version = "0.1.0"
+authors = ["Matt Davies <mattie.davies@gmail.com>"]
+
+[dependencies]
+piston_window = "*"
+rand = "*"

@@ -1,0 +1,17 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+authors = ["James Cowgill <jcowgill@jcowgill.uk>"]
+edition = "2018"
+
+[lib]
+name = "aoclib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "aoc"
+path = "src/bin.rs"
+
+[dependencies]
+lazy_static = "1"
+regex = "1"

@@ -1,0 +1,19 @@
+[dependencies]
+serde = "1.0.0"
+serde_derive = "1.0.0"
+
+[package]
+authors = ["Tyler Wolf Leonhardt <tyler.wolf.leonhardt@gmail.com>"]
+description = "Provides a type which can be deserialized to a number or a string."
+exclude = [
+    ".gitignore",
+    "build.gradle",
+    "gradle",
+    "gradlew",
+    "gradlew.bat",
+    "README",
+    "test/**"
+]
+license = "MIT"
+name = "number_or_string"
+version = "0.2.0"

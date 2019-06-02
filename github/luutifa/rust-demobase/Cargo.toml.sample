@@ -1,0 +1,17 @@
+[package]
+name = "assydemo2019"
+version = "0.1.0"
+authors = ["Lauri Gustafsson <luutifa@jkry.org>"]
+edition = "2018"
+
+[dependencies]
+sdl2 = "^0"
+gl = "^0"
+rocket_sync = "^0"
+rocket_client = "^0"
+lewton = "^0"
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true

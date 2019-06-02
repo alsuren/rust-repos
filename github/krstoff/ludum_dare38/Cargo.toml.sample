@@ -1,0 +1,33 @@
+[package]
+name = "ludum_dare"
+version = "0.1.0"
+authors = ["Kristoffer Semelka <ksemelka@gmail.com>"]
+
+[dependencies]
+glium = "*"
+time = "*"
+rand = "*"
+tobj = "*"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+cocoa = "*"
+
+[target.'cfg(windows)'.dependencies]
+gdi32-sys = "*"
+kernel32-sys = "*"
+time = "*"
+user32-sys = "*"
+winapi = "*"
+xinput-sys = "*"
+
+
+[profile.release]
+opt-level = 3      # controls the `--opt-level` the compiler builds with
+debug = true       # controls whether the compiler passes `-C debuginfo`
+                   # a value of `true` is equivalent to `2`
+rpath = false      # controls whether the compiler passes `-C rpath`
+lto = false        # controls `-C lto` for binaries and staticlibs
+debug-assertions = false # controls whether debug assertions are enabled
+codegen-units = 1  # controls whether the compiler passes `-C codegen-units`
+                   # `codegen-units` is ignored when `lto = true`
+panic = 'unwind'   # panic strategy (`-C panic=...`), can also be 'abort'

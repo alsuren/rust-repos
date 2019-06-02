@@ -1,0 +1,15 @@
+[package]
+name = "gfx_test"
+version = "0.1.0"
+authors = ["Mattish <mattishd@gmail.com>"]
+
+[dependencies]
+clippy = "*"
+glium = "*"
+time = "*"
+image = "*"
+rand = "*"
+obj-rs = "0.4"
+
+[dependencies.vecmath]
+git = "https://github.com/PistonDevelopers/vecmath"

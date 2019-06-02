@@ -1,0 +1,9 @@
+[package]
+name = "what-color-is-tokio"
+version = "0.1.0"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+
+[dependencies]
+futures = "0.1"
+tokio-core = "0.1"
+native-tls = "0.1"

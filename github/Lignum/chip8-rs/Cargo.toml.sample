@@ -1,0 +1,19 @@
+[package]
+authors = ["Lignum <me@lignum.pw>"]
+name = "chip8"
+version = "0.1.0"
+
+[dependencies]
+rand = "*"
+sdl2 = "*"
+phf = "*"
+phf_macros = "*"
+time = "*"
+
+[lib]
+name = "chip8"
+path = "src/lib.rs"
+
+[[bin]]
+name = "chip8_emu"
+path = "src/main.rs"

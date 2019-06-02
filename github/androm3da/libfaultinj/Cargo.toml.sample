@@ -1,0 +1,19 @@
+
+[package]
+name="faultinj"
+version="0.1.1"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+libc = "0.2"
+lazy_static = "0.1"
+errno = "0.1"
+rand = "0.3"
+#libloading = "0.3.0"
+dylib = "0.0"
+
+[lib]
+name="faultinj"
+path="src/fault.rs"
+crate_type = ["dylib", "rlib", ]

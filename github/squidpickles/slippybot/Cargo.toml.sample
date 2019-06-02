@@ -1,0 +1,17 @@
+[package]
+name = "slippybot"
+version = "0.1.0"
+authors = ["Kevin Rauwolf <kevin@fgsake.org>"]
+
+[dependencies]
+slack = "*"
+regex = "*"
+log = "*"
+env_logger = "*"
+cron = "*"
+chrono = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+rand = "*"
+error-chain = "*"

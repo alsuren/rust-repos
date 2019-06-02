@@ -1,0 +1,11 @@
+[package]
+name = "aoc-2018"
+version = "0.1.0"
+authors = ["Nico Madysa <nico.madysa@tu-dresden.de>"]
+edition = "2018"
+
+[dependencies]
+boolinator = "*"
+nom = "*"
+intrusive-collections = "*"
+image = "*"

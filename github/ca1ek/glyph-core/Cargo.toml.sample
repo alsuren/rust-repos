@@ -1,0 +1,20 @@
+[package]
+name = "editor"
+version = "0.1.0"
+authors = ["dawid"]
+
+[lib]
+name = "editorlib"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "editor"
+path = "src/bin/bin.rs"
+
+[dependencies]
+libloading = "0.3"
+termion = "*"
+strsim = "*"
+toml = "*"
+serde_derive = "1.0"
+serde = "1.0"

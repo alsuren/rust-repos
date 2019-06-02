@@ -1,0 +1,10 @@
+[package]
+name = "ltd"
+version = "0.7.0"
+authors = ["Gianmarco Garrisi <gianmarco.garrisi@studenti.polito.it>"]
+
+[dependencies]
+petgraph = "0.4"
+quicli = "0.2"
+rand = "0.5"
+rayon = "1"

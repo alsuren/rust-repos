@@ -1,0 +1,17 @@
+[package]
+name = "sudoku-ffi"
+version = "0.3.0"
+authors = ["Emerentius <emerentius@arcor.de>"]
+readme = "README.md"
+license = "MIT/Apache2"
+
+[dependencies]
+libc = "0.2.41"
+
+[dependencies.sudoku]
+version = "0.7.0"
+#git = "https://github.com/emerentius/sudoku"
+#rev = "833f55eee011fc2dcacea942a6e5c3e42251824f"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]

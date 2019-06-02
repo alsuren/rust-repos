@@ -1,0 +1,18 @@
+[package]
+name = "ligeia"
+version = "0.1.0"
+authors = ["Alex Hoar <thealexhoar@gmail.com>"]
+
+[dependencies]
+ligeia-graphics = { path = "ligeia-graphics" }
+ligeia-softcode = { path = "ligeia-softcode" }
+ligeia-utils = { path = "ligeia-utils" }
+nalgebra = "0.16"
+ncollide2d = "0.17"
+nphysics2d = "0.9.1"
+rlua = "0.14.2"
+sdl2 = "0.31.0"
+serde = "1.0.37"
+serde_json = "1.0.13"
+specs = "0.12.3"
+specs-derive = "0.1.0"

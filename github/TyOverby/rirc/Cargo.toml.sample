@@ -1,0 +1,18 @@
+[project]
+name = "irc"
+authors = ["TyOverby <ty@pre-alpha.com>"]
+version = "0.0.0-alpha"
+
+
+[[bin]]
+name = "irc"
+path = "./src/main.rs"
+
+[dependencies.irc-message]
+git = "https://github.com/TyOverby/irc-message.git"
+
+[dependencies.console_draw]
+git = "https://github.com/TyOverby/console_draw.git"
+
+[dependencies.termbox_console]
+git = "https://github.com/TyOverby/termbox_console.git"

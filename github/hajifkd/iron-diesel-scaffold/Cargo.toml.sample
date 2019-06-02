@@ -1,0 +1,33 @@
+[package]
+name = "iron-diesel-scaffold"
+version = "0.1.0"
+authors = ["Hajime Fukuda <hajime.fukuda@me.com>"]
+build = "build.rs"
+
+[dependencies.iron]
+version = "*"
+
+[dependencies.router]
+version = "*"
+
+[dependencies.mount]
+version = "*"
+
+[dependencies.staticfile]
+version = "*"
+
+[dependencies.params]
+version = "*"
+
+[dependencies.iron_diesel_middleware]
+git = "https://github.com/darayus/iron-diesel-middleware"
+
+[dependencies]
+iron-sessionstorage = { version = "^0.6.6", git = "https://github.com/iron/iron-sessionstorage.git" }
+diesel = { version = "*", features = ["sqlite"] }
+dotenv = "*"
+askama = { version = "*", features = ["with-iron"], git = "https://github.com/hajifkd/askama", branch="iron-contenttype" }
+iron-csrf-middleware= { version = "*", path = "../iron-csrf-middleware" }
+
+[build-dependencies]
+askama = { version = "*", features = ["with-iron"], git = "https://github.com/hajifkd/askama", branch="iron-contenttype" }

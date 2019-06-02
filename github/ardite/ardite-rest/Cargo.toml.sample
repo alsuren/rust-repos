@@ -1,0 +1,28 @@
+[package]
+name = "ardite-rest"
+version = "0.1.0"
+description = "Ardite service providing a RESTful interface over HTTP."
+keywords = ["ardite", "rest"]
+authors = ["Caleb Meredith <calebmeredith8@gmail.com>"]
+license = "MIT"
+repository = "ardite/ardite-rest"
+readme = "README.md"
+
+[features]
+default = []
+driver_mongodb = ["ardite/driver_mongodb"]
+
+[dependencies]
+ansi_term = "0.7.2"
+ardite = { path = "../ardite-core" }
+clap = "2.2.1"
+inflections = "1.0.0"
+iron = "0.3.0"
+logger = "0.0.3"
+mime = "0.2.0"
+urlencoded = "0.3.0"
+
+[dev-dependencies]
+hyper = "0.8.0"
+iron-test = "0.3.0"
+serde_json = "0.7.0"

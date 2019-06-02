@@ -1,0 +1,22 @@
+[package]
+name = "rust_training"
+version = "0.0.1"
+authors = [
+	"Nico Orru <nigu.orru@gmail.com>"
+]
+
+[[bin]]
+name = "hello_world"
+path = "src/hello_world.rs"
+
+[[bin]]
+name = "modules"
+path = "src/modules/modules.rs"
+
+[[bin]]
+name = "functions"
+path = "src/functions.rs"
+
+[[bin]]
+name = "threads"
+path = "src/threads.rs"

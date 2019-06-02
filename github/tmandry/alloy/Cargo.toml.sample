@@ -1,0 +1,33 @@
+[package]
+name = "alloy"
+version = "0.0.0"
+authors = ["Tyler Mandry <tmandry@gmail.com>"]
+autobins = true
+
+[features]
+# Enables sending logs to the serial output for QEMU.
+# Disabled for integration tests, which must match an expected serial output.
+log_serial = []
+
+[[bin]]
+name = "alloy"
+path = "src/main.rs"
+required-features = ["log_serial"]
+
+[dependencies]
+bootloader_precompiled = "0.2.0"
+pic8259_simple = "0.1.0"
+spin = "0.4.6"
+volatile = "0.2.3"
+uart_16550 = "0.1.0"
+x86_64 = "0.2.8"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
+
+[dev-dependencies]
+array-init = "0.0.3"
+
+[package.metadata.bootimage]
+default-target = "x86_64-alloy.json"

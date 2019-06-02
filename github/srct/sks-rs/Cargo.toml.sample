@@ -1,0 +1,23 @@
+[package]
+name = "sks"
+version = "0.1.0"
+authors = ["Kunal Sarkhel <ksarkhel@gmu.edu>"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+rocket = "0.3"
+rocket_codegen = "0.3"
+rocket_contrib = { version = "0.3", features = ["tera_templates"] }
+log = "0.4"
+yaml-rust = ">= 0.3"
+clap = {version = "2", features = ["yaml"]}
+
+[lib]
+name = "sks_app_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sks"
+path = "src/bin.rs"

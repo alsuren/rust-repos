@@ -1,0 +1,21 @@
+[package]
+name = "utp2"
+version = "0.1.0"
+authors = ["Carl Lerche <me@carllerche.com>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/carllerche/utp"
+documentation = "https://docs.rs/utp2/0.1"
+description = """
+Non-blocking, Mio compatible, UTP implementation.
+"""
+
+[dependencies]
+mio = "0.6.9"
+bytes = "0.4"
+rand = "0.3"
+slab = "0.4.0"
+byteorder = "1.0"
+log = "0.3.7"
+
+[dev-dependencies]
+env_logger = "0.4.2"

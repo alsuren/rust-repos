@@ -1,0 +1,24 @@
+[package]
+name = "healthy"
+version = "0.0.0"
+authors = ["Arthur Asatryan <biacoder@gmail.com>"]
+description = "Health checking service written in rust programming language."
+documentation = "https://docs.rs/healthy"
+homepage = "https://github.com/Biacode/healthy"
+repository = "https://github.com/Biacode/healthy"
+keywords = ["health-check", "service", "api", "email"]
+readme = "README.md"
+license = "MIT"
+exclude = [
+    ".travis.yml",
+    ".gitignore",
+]
+
+[workspace]
+members = ["healthy-core", "healthy-config", "healthy-scheduler"]
+
+[dependencies]
+lettre = "0.6"
+log = "0.3"
+env_logger = "0.4"
+app_dirs = "1.1"

@@ -1,0 +1,18 @@
+[package]
+name = "rusty-release"
+version = "0.7.0"
+authors = ["Daniel Trstenjak <daniel.trstenjak@gmail.com>"]
+license = "BSD-3-Clause"
+description = "Make a release of a cargo project"
+repository = "https://github.com/dan-t/rusty-release"
+readme = "README.md"
+
+[dependencies]
+clap = "2.32.0"
+term = "0.5.1"
+tempfile = "3.0.6"
+toml = "0.4.10"
+semver = "0.9.0"
+serde = "1.0.87"
+serde_derive = "1.0.87"
+dirs = "1.0.4"

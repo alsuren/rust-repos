@@ -1,0 +1,13 @@
+[package]
+name = "vision"
+version = "0.1.0"
+authors = ["theotherphil"]
+
+[dependencies]
+streaming-stats = "*"
+
+[dependencies.image]
+path = "../image/"
+
+[dependencies.imageproc]
+path = "../imageproc/"

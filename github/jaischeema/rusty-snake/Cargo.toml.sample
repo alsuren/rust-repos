@@ -1,0 +1,9 @@
+[package]
+name = "snakes"
+version = "0.1.0"
+authors = ["Jais Cheema <jaischeema@gmail.com>"]
+
+[dependencies]
+piston_window = "0.70.0"
+rand = "0.5"
+find_folder = "*"

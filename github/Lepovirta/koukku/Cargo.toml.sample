@@ -1,0 +1,22 @@
+[package]
+name = "koukku"
+version = "0.1.1"
+description = "GitHub Webhook server"
+homepage = "https://github.com/Lepovirta/koukku"
+repository = "https://github.com/Lepovirta/koukku.git"
+readme = "README.md"
+license = "MIT"
+authors = ["Jaakko Pallari <jkpl@lepovirta.org>"]
+exclude = [
+    "temp",
+]
+
+[dependencies]
+hyper = "0.7.2"
+rust-ini = "0.9.2"
+serde_json = "0.6.0"
+log = "0.3"
+env_logger = "0.3"
+clap = "2.1.0"
+rustc-serialize = "0.3"
+openssl = "0.7.5"

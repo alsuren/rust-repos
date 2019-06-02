@@ -1,0 +1,36 @@
+[package]
+
+name = "isoengine"
+version = "0.0.1"
+authors = ["Sam Payson <scpayson@gmail.com>"]
+
+[dependencies]
+num      = "0.1.24"
+bitflags = "0.1.1"
+log      = "0.3.1"
+
+[features]
+
+trace_gl = []
+
+client = [ "gl", "sdl2", "png" ]
+
+server = []
+
+[dependencies.flatbuffers]
+git = "https://github.com/arbitrary-cat/flatbuffers-rs.git"
+
+[dependencies.mkprim]
+git = "https://github.com/arbitrary-cat/mkprim.git"
+
+[dependencies.sdl2]
+git      = "https://github.com/arbitrary-cat/rust-sdl2.git"
+optional = true
+
+[dependencies.png]
+git      = "https://github.com/arbitrary-cat/rust-png.git"
+optional = true
+
+[dependencies.gl]
+git      = "https://github.com/bjz/gl-rs.git"
+optional = true

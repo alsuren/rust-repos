@@ -1,0 +1,12 @@
+[package]
+name = "veritas"
+version = "0.1.0"
+authors = ["Yang Keao <keao.yang@yahoo.com>"]
+edition = "2018"
+
+[dependencies]
+crossbeam-channel = "0.3.8"
+im = "12.3.3"
+
+[dev-dependencies]
+crossbeam-queue = "0.1.2"

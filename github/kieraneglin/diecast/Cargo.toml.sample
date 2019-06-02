@@ -1,0 +1,14 @@
+[package]
+name = "diecast"
+version = "0.3.0"
+authors = ["Kieran Eglin <https://github.com/kieraneglin>"]
+
+[[bin]]
+path = "src/main.rs"
+name = "dt"
+
+[dependencies]
+git2 = "0.6"
+colored = "1.5.2"
+fs_extra = "1.0.0"
+clap = {version = "2.25.0", features = ["yaml"]}

@@ -1,0 +1,10 @@
+[package]
+name = "chores"
+version = "0.1.0"
+authors = ["Hannes Struß <x@hannesstruss.de>"]
+
+[dependencies]
+chrono = "0.4"
+sysfs_gpio = { version = "0.5" }
+rusqlite = { version = "0.13.0", features = ["chrono"] }
+uuid = { version = "0.5.1", features = ["v4"] }

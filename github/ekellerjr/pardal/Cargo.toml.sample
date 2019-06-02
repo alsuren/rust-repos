@@ -1,0 +1,13 @@
+[package]
+name = "pardal"
+version = "0.1.0"
+authors = ["Eugen Keller <ekellerjr@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4.6"
+env_logger = "0.6.0"
+dotenv = "0.13.0"
+failure = "0.1.5"
+r2d2 = "0.8.3"
+r2d2_sqlite = "0.8.0"

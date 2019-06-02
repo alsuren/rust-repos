@@ -1,0 +1,15 @@
+[package]
+name = "carl_winslow_bot"
+version = "0.1.0"
+authors = ["Bryan Mytko <bryanmytko@gmail.com>"]
+
+[dependencies]
+dotenv = "*"
+dotenv_macros = "*"
+hyper = "*"
+regex = "*"
+regex_macros = "*"
+rustc-serialize = "0.3.18"
+toml = "*"
+url = "*"
+websocket = "0.15.2"

@@ -1,0 +1,14 @@
+[package]
+name = "poc"
+version = "0.1.0"
+authors = ["Leonard Hecker <leonard@hecker.io>"]
+
+[dependencies]
+env_logger = "*"
+futures = "*"
+rand = "*"
+tokio-core = "*"
+tokio-io = "*"
+
+[patch.crates-io]
+mio = { path = "mio" }

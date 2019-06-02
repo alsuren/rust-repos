@@ -1,0 +1,23 @@
+[package]
+name = "libharu-sys"
+version = "0.0.1"
+authors = ["TKGgunter <thothgunter@live.com>"]
+build = "libharu/build.rs"
+links = "haru"
+description = "Rust bindings for c library libharu a low level pdf generation lib."
+repository = "https://github.com/TKGgunter/libharu-sys"
+keywords = ["pdf", "libharu", "haru"]
+license-file = "LICENSE"
+exclude = ["examples/*"]
+
+
+[dev-dependencies]
+image = "0.19.0"
+
+
+[dependencies]
+libc = "0.2.42"
+
+[build-dependencies]
+gcc = "0.3"
+pkg-config = "0.3"

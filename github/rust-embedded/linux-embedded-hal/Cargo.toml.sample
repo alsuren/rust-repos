@@ -1,0 +1,20 @@
+[package]
+authors = ["Jorge Aparicio <jorge@japaric.io>"]
+categories = ["embedded", "hardware-support"]
+description = "Implementation of the `embedded-hal` traits for Linux devices"
+keywords = ["Linux", "hal"]
+license = "MIT OR Apache-2.0"
+name = "linux-embedded-hal"
+repository = "https://github.com/japaric/linux-embedded-hal"
+version = "0.2.2"
+
+[dependencies]
+embedded-hal = { version = "0.2.0", features = ["unproven"] }
+i2cdev = "0.4.1"
+spidev = "0.3.0"
+sysfs_gpio = "0.5.1"
+
+[dependencies.cast]
+# we don't need the `Error` implementation
+default-features = false
+version = "0.2.2"

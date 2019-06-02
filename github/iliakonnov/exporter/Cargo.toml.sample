@@ -1,0 +1,20 @@
+[package]
+name = "exporter"
+version = "0.1.0"
+authors = ["Ilia"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = {version = "0.4", features = ["span-locations"]}
+syn = {version = "0.15", features = ["full", "extra-traits"] }
+quote = "0.6"
+
+[features]
+default = ["testing", "processor", "macros"]
+testing = []
+processor = []
+library = []
+macros = ["processor"]

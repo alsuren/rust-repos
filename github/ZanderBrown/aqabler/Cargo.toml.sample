@@ -1,0 +1,21 @@
+[package]
+name = "aqabler"
+version = "0.2.0"
+authors = ["Zander Brown <ZanderBrown@users.noreply.github.com>"]
+edition = "2018"
+
+[features]
+default = ["getopts"]
+
+[dependencies]
+getopts = { version = "0.2.19", optional = true }
+
+[[bin]]
+name="aqabler"
+path="src/bin/aqabler.rs"
+required-features = ["getopts"]
+
+[[bin]]
+name="aqavm"
+path="src/bin/aqavm.rs"
+required-features = ["getopts"]

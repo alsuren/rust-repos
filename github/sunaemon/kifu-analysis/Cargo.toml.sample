@@ -1,0 +1,20 @@
+[package]
+name = "kifu_analysis"
+version = "0.1.0"
+authors = ["sunaemon <@sunaemon0>"]
+
+[dependencies]
+dotenv = "*"
+daemonize = "*"
+clap = "*"
+clippy = {version = "*", optional = true}
+
+[features]
+default = []
+watch = ["server-lib/watch"]
+
+[dependencies.server-lib]
+path = "server-lib"
+
+[workspace]
+members = ["server-lib", "database-lib", "core-lib" ]

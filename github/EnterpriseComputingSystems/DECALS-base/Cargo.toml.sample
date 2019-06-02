@@ -1,0 +1,10 @@
+[package]
+name = "DECALS-base"
+version = "0.1.0"
+authors = ["Francesco Macagno <fjmacagno1@yahoo.com>", "Carly Robison <carlyellenrobison@gmail.com>"]
+
+[dependencies]
+net2 = "0.2"
+rand = "0.4"
+time = "0.1"
+log = "0.4"

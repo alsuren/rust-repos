@@ -1,0 +1,20 @@
+[package]
+name = "pod"
+version = "0.5.0"
+authors = ["arcnmx"]
+
+description = "Plain Old Data (POD) encoding and I/O"
+keywords = ["nue", "pod", "data", "encode", "endian"]
+
+documentation = "http://arcnmx.github.io/pod-rs/pod/"
+repository = "https://github.com/arcnmx/pod-rs"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+packed = "^0.4.0"
+uninitialized = { version = "^0.0.2", optional = true }
+read_exact = { version = "^0.0.1", optional = true }
+
+[features]
+default = ["read_exact", "uninitialized"]

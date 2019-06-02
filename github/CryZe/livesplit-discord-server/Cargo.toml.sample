@@ -1,0 +1,25 @@
+[package]
+name = "livesplit-server"
+version = "0.1.0"
+authors = ["Christopher Serr <christopher.serr@gmail.com>"]
+
+[dependencies]
+livesplit-core = "0.4.1"
+speedrun-bingo = { git = "https://github.com/CryZe/speedrun-bingo", rev = "69d80227f89265b9332bd0e7a97e110ff767555b" }
+rocket = "0.2.6"
+rocket_codegen = "0.2.6"
+parking_lot = "0.3.8"
+serde_derive = "1.0.6"
+serde = "1.0.6"
+serenity = "0.1.5"
+hyper = "0.10.4"
+hyper-rustls = "0.3.1"
+chashmap = "2.1.0"
+log = "0.3.6"
+dotenv = { git = "https://github.com/slapresta/rust-dotenv", rev = "a82fb37876603a510b2ddb04ec5b4d471fad5056" }
+rand = "0.3.15"
+image = "0.13.0"
+
+[dependencies.rocket_contrib]
+version = "0.2.6"
+features = ["handlebars_templates"]

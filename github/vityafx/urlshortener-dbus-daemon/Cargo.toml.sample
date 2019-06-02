@@ -1,0 +1,28 @@
+[package]
+name = "urlshortener-dbus-daemon"
+version = "0.1.1"
+authors = ["Victor Polevoy <maintainer@vpolevoy.com>"]
+
+description = "A very simple url shortener dbus daemon"
+readme = "README.md"
+license = "MIT"
+keywords = ["url", "short", "shortener", "link"]
+
+repository = "https://github.com/vityafx/urlshortener-dbus-daemon"
+documentation = "https://docs.rs/urlshortener-dbus-daemon"
+
+[badges]
+travis-ci = { repository = "vityafx/urlshortener-dbus-daemon" }
+
+[dependencies]
+dbus = "0.6"
+dbus-tokio = "0.2"
+futures = "0.1"
+mio = "0.6"
+tokio-core = "0.1"
+log = "0.3"
+tokio-timer = "0.1"
+urlshortener = "0.9"
+
+[dev-dependencies]
+tokio-timer = "0.1"

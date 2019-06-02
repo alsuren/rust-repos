@@ -1,0 +1,24 @@
+[package]
+name = "evm"
+version = "0.1.0"
+authors = ["Noah J <noahj@berkeley.edu>"]
+build = "build.rs"
+
+[lib]
+name = "evm"
+crate-type = ["staticlib"]
+
+[dependencies]
+etcommon-bigint = { version = "0.2", features = ["string", "rlp"], default-features = false }
+etcommon-hexutil = { version = "0.2", default-features = false }
+sha3 = "0.6"
+sputnikvm = { version = "0.9", default-features = false }
+evm-api = { path = "./api" }
+ekiden-core-common = { path = "./ekiden/core/common" }
+ekiden-core-trusted = { path = "./ekiden/core/trusted" }
+protobuf = "1.4.3"
+
+[build-dependencies]
+ekiden-tools = { path = "./ekiden/tools" }
+ekiden-core-edl = { path = "./ekiden/core/edl" }
+

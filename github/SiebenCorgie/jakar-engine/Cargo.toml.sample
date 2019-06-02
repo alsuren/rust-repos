@@ -1,0 +1,30 @@
+[package]
+name = "jakar-engine"
+version = "0.1.0"
+authors = ["Siebencorgie <siebencorgie@googlemail.com>"]
+
+[dependencies]
+winit = "0.11"
+
+vulkano = "0.9.0"
+vulkano-shaders = "0.9.0"
+vulkano-shader-derive = "0.9.0"
+vulkano-win = "0.9.0"
+
+image = "0.18.0"
+cgmath = "0.16.0"
+collision = "0.14.0"
+gltf-importer = "0.10.1"
+gltf-utils = "0.10.1"
+gltf = "0.10.1"
+
+jakar-tree = { git = "https://github.com/SiebenCorgie/jakar-tree"}
+jakar-threadpool = { git = "https://github.com/SiebenCorgie/jakar-threadpool"}
+
+[[example]]
+name = "simple"
+path = "examples/simple_scene/main.rs"
+
+[[example]]
+name = "t_speed"
+path = "examples/scene_tree_performance/main.rs"

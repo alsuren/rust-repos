@@ -1,0 +1,69 @@
+[package]
+name = "planeshift"
+version = "0.1.0"
+authors = ["Patrick Walton <pcwalton@mimiga.net>"]
+edition = "2018"
+
+[features]
+default = ["enable-winit", "enable-glutin"]
+enable-winit = ["winit"]
+enable-glutin = ["enable-winit", "glutin"]
+
+[build-dependencies.gl_generator]
+version = "0.9"
+optional = true
+
+[target.'cfg(target_os = "linux")'.build-dependencies]
+gl_generator = "0.9"
+
+[dependencies]
+bitflags = "1.0"
+euclid = "0.19"
+gl = "0.6"
+lazy_static = "1.1"
+tempfile = "3.0"
+
+[dependencies.image]
+version = "0.20"
+default-features = false
+features = ["png_codec"]
+
+[dependencies.winit]
+version = "0.17"
+optional = true
+
+[dependencies.glutin]
+version = "0.18"
+optional = true
+
+[target.'cfg(target_os = "linux")'.dependencies]
+dbus = "0.6"
+
+[target.'cfg(target_os = "linux")'.dependencies.wayland-client]
+version = "0.20"
+features = ["egl", "native_lib"]
+
+[target.'cfg(target_os = "linux")'.dependencies.wayland-sys]
+version = "0.20"
+features = ["client", "egl"]
+
+[target.'cfg(target_os = "macos")'.dependencies]
+block = "0.1"
+cgl = "0.2"
+cocoa = "0.18.4"
+core-foundation = "0.6.3"
+core-graphics = "0.17.3"
+io-surface = "0.11.1"
+objc = "0.2"
+
+[target.'cfg(target_family = "windows")'.dependencies.mozangle]
+version = "0.1"
+features = ["egl"]
+
+[target.'cfg(target_family = "windows")'.dependencies.winapi]
+version = "0.3"
+features = ["d3d11", "dcomp", "winerror", "winuser"]
+
+[dev-dependencies]
+image = "0.20"
+winit = "0.17"

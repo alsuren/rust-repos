@@ -1,0 +1,11 @@
+[package]
+name = "petgraph-sugiyama-layout"
+version = "0.1.0"
+authors = ["Yosuke ONOUE <onoue@likr-lab.com>"]
+
+[dependencies]
+petgraph = "*"
+fixedbitset = "*"
+
+[dev-dependencies]
+xml-rs = "0.6"

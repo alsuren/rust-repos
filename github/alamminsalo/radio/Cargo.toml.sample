@@ -1,0 +1,11 @@
+[package]
+name = "radio"
+version = "0.1.0"
+authors = ["antti l"]
+
+[dependencies]
+rand = "*"
+gstreamer = "*"
+notify-rust = "*"
+chrono = "*"
+

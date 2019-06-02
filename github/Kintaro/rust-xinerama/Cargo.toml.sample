@@ -1,0 +1,18 @@
+[package]
+
+name = "xinerama"
+version = "0.0.1"
+authors = ["Simon Wollwage"]
+license = "BSD"
+description = "A rust wrapper around libXinerama"
+
+[dependencies]
+libc = "*"
+
+[dependencies.xlib]
+git = "https://github.com/Kintaro/rust-xlib.git"
+branch = "wtftw"
+
+[lib]
+
+name = "xinerama"

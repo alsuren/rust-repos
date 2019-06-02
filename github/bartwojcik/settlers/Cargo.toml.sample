@@ -1,0 +1,9 @@
+[package]
+name = "settlers"
+version = "0.1.0"
+authors = ["Bartosz Wojcik <bartwojc@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+ggez = "0.3"
+cgmath = "0.15.0"

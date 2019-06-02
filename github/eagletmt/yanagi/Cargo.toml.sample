@@ -1,0 +1,16 @@
+[package]
+name = "yanagi"
+version = "0.1.0"
+authors = ["Kohei Suzuki <eagletmt@gmail.com>"]
+
+[dependencies]
+chrono = "0.3"
+hyper = "0.10"
+iron = "0.5"
+libc = "0.2"
+postgres = { version = "0.14", features = ["with-chrono"] }
+router = "0.5"
+serde = "0.9"
+serde-xml-rs = "0.1"
+serde_derive = "0.9"
+serde_json = "0.9"

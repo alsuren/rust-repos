@@ -1,0 +1,12 @@
+[package]
+name = "dht11pi_terminal"
+version = "0.1.0"
+authors = ["rschwalk <rschwalk@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+cty = "0.2.0"
+
+[build-dependencies]
+cc = "1.0"
+

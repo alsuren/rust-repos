@@ -1,0 +1,14 @@
+[package]
+name = "tico"
+version = "1.0.0"
+authors = ["Ricardo Mendes <rokusu@gmail.com>"]
+description = "Tico provides a path shortener for use with command prompts."
+documentation = "http://portocodes.github.io/tico/tico/index.html"
+homepage = "https://github.com/portocodes/tico"
+repository = "https://github.com/portocodes/tico"
+readme = "README.md"
+license = "MIT"
+
+[[bin]]
+name = "tico"
+doc = false

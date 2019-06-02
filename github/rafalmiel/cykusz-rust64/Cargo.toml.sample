@@ -1,0 +1,13 @@
+[package]
+name = "cykusz_rust64"
+version = "0.1.0"
+authors = ["Rafal Mielniczuk <rafal.mielniczuk2@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "*"
+spin = "*"
+bitflags = { path = "crates/bitflags" }
+x86 = "0.7.0"

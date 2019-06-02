@@ -1,0 +1,12 @@
+[package]
+name = "textbbs"
+version = "0.1.0"
+authors = ["Selenologist <selenologist@users.noreply.github.com>"]
+
+[dependencies]
+rand = "0.3"
+image = "*"
+glium = "*"
+rustc-serialize = "0.3" # will port to Serde when stable
+nalgebra = "*"
+time = "0.1"

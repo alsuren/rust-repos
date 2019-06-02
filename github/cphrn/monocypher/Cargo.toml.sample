@@ -1,0 +1,19 @@
+[package]
+name = "monocypher"
+version = "0.3.0"
+authors = ["js@ciphron.de"]
+description = "Bindings for the monocypher C library"
+documentation = "https://cphrn.github.io/doc/monocypher/index.html"
+license = "ISC"
+homepage = "https://www.ciphron.de"
+repository = "https://github.com/cphrn/monocypher"
+keywords = ["cryptography", "security", "encryption"]
+categories = ["cryptography"]
+
+[dependencies]
+libc = "0.2"
+hex = "0.3"
+
+[dependencies.monocypher-sys]
+path = "./monocypher_sys"
+version = "2.0.5"

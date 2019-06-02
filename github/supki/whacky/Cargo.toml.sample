@@ -1,0 +1,12 @@
+[package]
+
+name = "whacky"
+version = "0.1.0"
+authors = [ "Matvey Aksenov <matvey.aksenov@gmail.com>" ]
+
+[dependencies]
+rand = "0.3"
+
+[[bin]]
+
+name = "whacky"

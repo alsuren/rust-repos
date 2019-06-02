@@ -1,0 +1,103 @@
+[package]
+name = "chrysoberyl"
+version = "0.1.0"
+authors = ["anekos <anekos@snca.net>"]
+build = "build.rs"
+license-file = "LICENSE"
+readme = "README.md"
+description = "(Remote)?(PDF|Image|Archive) Viewer"
+repository = "http://github.com/anekos/chrysoberyl"
+edition = "2018"
+
+[[bin]]
+name = "chrysoberyl"
+doc = false
+
+[features]
+poppler_lock = []
+
+[dependencies]
+apng-encoder = "*"
+app_dirs = "*"
+argparse = "*"
+atty = "*"
+cairo-sys-rs = "0.7.0"
+closet = "*"
+cmdline-parser = "*"
+crossbeam = "0.4"
+css-color-parser = "*"
+curl = "*"
+dirs = "1.0.4"
+encoding = "*"
+enum-iterator = "*"
+enum-iterator-derive = "*"
+enum_primitive = "*"
+env_logger = "*"
+failure = "*"
+filetime = "*"
+gdk = "*"
+gdk-pixbuf = "*"
+gdk-sys = "*"
+gif = "*"
+gio-sys = "*"
+glib = "*"
+glib-sys = "*"
+globset = "*"
+gobject-sys = "*"
+lazy_static = "*"
+libarchive = "*"
+libarchive3-sys = "*"
+libc = "*"
+log = "*"
+lru-cache = "*"
+maplit = "*"
+marksman_escape = "*"
+md5 = "*"
+mkstemp-rs = "*"
+mrusty = "*"
+natord = "*"
+notify = "*"
+num = "*"
+num_cpus = "*"
+onig = "*"
+pom = "1.0"
+rand = "0.5"
+regex = "*"
+rusoto_core = "*"
+rusoto_rekognition = "*"
+rustyline = "*"
+sha2 = "*"
+shell-escape = "*"
+shellexpand = "*"
+time = "*"
+tldextract = "*"
+url = "*"
+uuid = {version = "0.7", features = ["v4"]}
+uuid_to_pokemon = "0.3"
+xml-rs = "*"
+
+[dependencies.image-meta]
+git = "https://github.com/anekos/image-meta"
+rev = "c78dedb80dc29d7ed984a14303d99ece62f505f2"
+
+# https://github.com/gtk-rs/gtk/blob/master/Cargo.toml
+[dependencies.gtk]
+version = "^0.5"
+features = ["v3_22_30"]
+
+[dependencies.cairo-rs]
+version = "*"
+features = ["png"]
+
+[dependencies.ctrlc]
+version = "*"
+features = ["termination"]
+
+[build-dependencies]
+pkg-config = "*"
+vergen = "2.*"
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false
+features = ["precommit-hook", "run-cargo-test", "run-cargo-clippy"]

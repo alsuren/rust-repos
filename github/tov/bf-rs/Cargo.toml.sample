@@ -1,0 +1,39 @@
+[package]
+name = "bf"
+version = "0.4.9-alpha.0"
+authors = ["Jesse A. Tov <jesse.tov@gmail.com>"]
+description = "An optimizing Brainfuck interpeter and JIT compiler"
+repository = "https://github.com/tov/bf-rs"
+documentation = "http://tov.github.io/bf-rs/bf/"
+readme = "README.md"
+license = "MIT"
+keywords = ["brainfuck", "interpreters", "compilers", "jit", "x64"]
+
+[badges]
+travis-ci = { repository = "tov/bf-rs" }
+
+[features]
+
+# Enables native x64 JIT; requires nightly Rust
+jit = ["dynasmrt", "dynasm"]
+
+# Enables LLVM-based JIT; requires LLVM >= 3.8
+llvm = ["llvm-sys"]
+
+# Use `u32` for counts instead of usize.
+u32count = []
+
+# Use `u16` for counts instead of usize.
+u16count = []
+
+[dependencies]
+clap = "2.24"
+
+dynasmrt = { version = "0.2.1", optional = true }
+dynasm = { version = "0.2.1", optional = true }
+
+llvm-sys = { version = "38", optional = true }
+
+[package.metadata.docs.rs]
+features = ["jit"]
+

@@ -1,0 +1,9 @@
+[package]
+
+name = "gol"
+version = "0.0.4"
+authors = ["Benjamin Fox <deadalus.ai@gmail.com>"]
+
+[lib]
+name = "gol"
+path = "src/lib.rs"

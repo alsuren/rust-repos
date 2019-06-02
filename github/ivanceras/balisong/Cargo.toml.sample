@@ -1,0 +1,19 @@
+[package]
+
+name = "balisong"
+version = "0.0.1"
+authors = [ "ivanceras@gmail.com" ]
+
+[lib]
+name = "balisong"
+
+[[bin]]
+name = "balisong"
+
+[dependencies.time]
+
+[dependencies.regex]
+
+[dependencies.num]
+
+[features]

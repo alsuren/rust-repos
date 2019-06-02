@@ -1,0 +1,20 @@
+[package]
+name = "shaaa"
+version = "0.1.0"
+authors = ["Liu Xiaoyi <circuitcoder0@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+paw-structopt = "1.0.0"
+structopt = "0.2.15"
+paw = "1.0.0"
+rand = "0.6.5"
+packed_simd = "0.3.3"
+
+[lib]
+name = "shaaa"
+path = "src/lib.rs"
+
+[features]
+default = []
+internal = []

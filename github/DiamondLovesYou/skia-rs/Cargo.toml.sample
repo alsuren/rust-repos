@@ -1,0 +1,42 @@
+[package]
+
+name = "skia"
+version = "0.1.0"
+authors = ["Richard Diamond <wichard@vitalitystudios.com>", "The Servo Project Developers"]
+description = "Rust idiomatic bindings to Google's Skia. WIP."
+repository = "https://github.com/DiamondLovesYou/skia-rs.git"
+license = "MPL-2.0"
+
+[dependencies]
+skia-sys = "0.20130412"
+euclid = "0.4"
+gleam = "0.2"
+libc = "0.2"
+glutin = "0.4"
+glium = "0.13"
+
+[target.i686-unknown-linux-gnu.dependencies]
+x11 = { version = "2.0.0", features = ["xlib"] }
+glx = "0.1.0"
+[target.x86_64-unknown-linux-gnu.dependencies]
+x11 = { version = "2.0.0", features = ["xlib"] }
+glx = "0.1.0"
+[target.arm-unknown-linux-gnueabihf.dependencies]
+x11 = { version = "2.0.0", features = ["xlib"] }
+glx = "0.1.0"
+[target.aarch64-unknown-linux-gnu.dependencies]
+x11 = { version = "2.0.0", features = ["xlib"] }
+glx = "0.1.0"
+
+[target.arm-linux-androideabi.dependencies]
+servo-egl = "0.2"
+[target.aarch64-linux-android.dependencies]
+servo-egl = "0.2"
+[target.i686-linux-android.dependencies]
+servo-egl = "0.2"
+[target.x86_64-linux-android.dependencies]
+servo-egl = "0.2"
+
+[target.x86_64-apple-darwin.dependencies]
+cgl = "0.1"
+io-surface = "0.1.0"

@@ -1,0 +1,13 @@
+[package]
+name = "tagtask"
+version = "0.1.0"
+authors = ["Shalom Yiblet <shalom.yiblet@gmail.com>"]
+
+[dependencies]
+futures = "*"
+futures-cpupool = "*"
+termion = "*"    
+ropey = "*"
+derive_builder = "*"
+lazy_static = "*"
+kdtree = "*"

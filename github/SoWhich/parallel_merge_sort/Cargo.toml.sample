@@ -1,0 +1,16 @@
+[package]
+name = "parallel_merge_sort"
+version = "0.1.0"
+authors = ["Matthew Kunjummen <mkunjummen@gmail.com>"]
+
+[dependencies]
+rayon = "1.0"
+rand = "0.5"
+
+[features]
+default = []
+builtin = []
+noparallel = []
+
+[profile.bench]
+debug = true

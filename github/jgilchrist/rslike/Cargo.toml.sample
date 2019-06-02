@@ -1,0 +1,13 @@
+[package]
+name = "rslike"
+version = "0.0.1"
+authors = ["Jonny Gilchrist <jonnygilchrist@gmail.com>"]
+
+[[bin]]
+name = "rslike"
+doc = false
+test = false
+doctest = false
+
+[dependencies]
+tcod = "0.10.0"

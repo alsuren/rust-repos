@@ -1,0 +1,20 @@
+[package]
+name = "rush"
+version = "0.0.0"
+authors = ["Panashe M. Fundira <fundirap@gmail.com>"]
+description = "The Rust shell"
+repository = "https://github.com/munyari/rush"
+readme = "README.md"
+keywords = ["shell"]
+license = "GPL-3.0"
+
+[[bin]]
+name = "rush"
+
+[dependencies]
+readline = "0.0.12"
+ansi_term = "0.7.5"
+
+[dependencies.nom]
+version = "^1.2.3"
+features = ["regexp"]

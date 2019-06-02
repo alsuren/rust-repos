@@ -1,0 +1,13 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Szymon Nowicki <szymonnowicki@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rayon = "*"
+rand = "*"
+clap = "*"
+lazy_static = "*"
+array-init = "*"
+image = "*"

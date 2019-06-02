@@ -1,0 +1,10 @@
+[package]
+name = "hammer"
+version = "0.1.0"
+authors = ["Coeuvre Wong <coeuvre@gmail.com>"]
+
+[dependencies]
+libc = "*"
+
+hammer-core = { path = "src/core" }
+hammer-window = { path = "src/window" }

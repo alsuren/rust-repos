@@ -1,0 +1,43 @@
+[package]
+name = "futures-locks"
+version = "0.3.4-pre"
+authors = ["Alan Somers <asomers@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/asomers/futures-locks"
+description = """
+Futures-aware lock primitives
+"""
+categories = ["asynchronous"]
+documentation = "https://docs.rs/futures-locks"
+exclude = [
+	".gitignore",
+	".travis.yml",
+	"release.toml"
+]
+autotests = false
+
+[package.metadata.docs.rs]
+features = ["tokio", "nightly-docs"]
+
+[features]
+default = ["tokio"]
+# For building documentation only; no functional change to the library.
+nightly-docs = []
+# Enable methods that require a Tokio executor.
+tokio = ["tokio-current-thread", "tokio-executor"]
+
+[dependencies]
+futures = "0.1.25"
+tokio-current-thread = { version = "0.1.4", optional = true }
+tokio-executor = { version = "0.1.5", optional = true }
+
+[dev-dependencies]
+# features, dependencies, dev-dependencies, and build-dependencies all share
+# the same namespace. To avoid a clash with the `tokio` feature, rename the
+# `tokio` dev-dependency. See https://github.com/rust-lang/cargo/issues/4866.
+tokio_ = { version = "0.1.8", package = "tokio" }
+
+[[test]]
+name = "functional"
+path = "tests/test.rs"

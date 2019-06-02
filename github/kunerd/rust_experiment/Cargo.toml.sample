@@ -1,0 +1,11 @@
+[package]
+name = "gta2_viewer"
+version = "0.1.0"
+authors = ["Hendrik Kunert <hendrik.kunert@henku.de>"]
+
+[dependencies]
+byteorder = "1"
+
+[dependencies.sdl2]
+git = "https://github.com/AngryLawyer/rust-sdl2"
+features = ["image"]

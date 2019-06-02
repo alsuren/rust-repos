@@ -1,0 +1,13 @@
+cargo-features = ["edition", "rename-dependency"]
+
+[package]
+name = "toyrt"
+version = "0.1.0"
+authors = ["Antoine Busch <abusch@atlassian.com>"]
+edition = '2018'
+
+[dependencies]
+cg = { package="cgmath", version="0.16" }
+minifb="0.10"
+rand = "0.5"
+rayon="1"

@@ -1,0 +1,10 @@
+[package]
+name = "toucan"
+version = "0.1.0"
+authors = ["Julien Blanchard <julien@sideburns.eu>"]
+
+[dependencies]
+hoedown = "*"
+handlebars = "*"
+rustc-serialize = "*"
+yaml-rust = "*"

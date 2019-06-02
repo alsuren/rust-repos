@@ -1,0 +1,8 @@
+[package]
+name = "parameterized_testing"
+version = "0.1.0"
+authors = ["dowwie <dkcdkg@gmail.com>"]
+
+[dependencies]
+validator = "0.8.0"
+validator_derive = "0.8.0"

@@ -1,0 +1,36 @@
+[package]
+name = "indy-crypto-fuzz-target"
+version = "0.1.0"
+authors = ["Dave Huseby <dhuseby@linuxfoundation.org>"]
+build = "build.rs"
+
+[build-dependencies]
+indy-crypto = "0.1.6"
+
+[dependencies]
+afl = "0.3"
+indy-crypto = "0.1.6"
+
+[[bin]]
+name = "generator-from-bytes-fuzz-target"
+path = "src/generator_from_bytes.rs"
+
+[[bin]]
+name = "multisignature-from-bytes-fuzz-target"
+path = "src/multisignature_from_bytes.rs"
+
+[[bin]]
+name = "signkey-from-bytes-fuzz-target"
+path = "src/signkey_from_bytes.rs"
+
+[[bin]]
+name = "signkey-new-fuzz-target"
+path = "src/signkey_new.rs"
+
+[[bin]]
+name = "signature-from-bytes-fuzz-target"
+path = "src/signature_from_bytes.rs"
+
+[[bin]]
+name = "verkey-from-bytes-fuzz-target"
+path = "src/verkey_from_bytes.rs"

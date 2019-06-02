@@ -1,0 +1,17 @@
+[package]
+name = "dlc-decrypter"
+version = "0.2.1"
+authors = ["Tobias Matt <t.matt81@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/Bubblepoint/dlc-decoder"
+description = "A decoder library for dlc files"
+
+[dependencies]
+error-chain = "0.11.0"
+base64 = "0.9.0"
+reqwest = "0.8.5"
+rust-crypto = "0.2.36"
+regex = "1.0.0"
+
+[lib]
+name = "dlc_decrypter"

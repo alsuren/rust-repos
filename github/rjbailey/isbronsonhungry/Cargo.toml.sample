@@ -1,0 +1,35 @@
+[package]
+name = "isbronsonhungry"
+version = "0.1.0"
+authors = ["Jake Bailey <rjacob.bailey@gmail.com>"]
+
+[features]
+# This allows us to use `#[cfg(unstable)]` to conditionalize the use of
+# unstable Rust features from the nightly builds.  This is handy if we want
+# to use, say, benchmaking from the `test` library when available.  Also,
+# `travis-cargo` expects this to be here when building against the nightly
+# version of Cargo.
+unstable = []
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+chrono = { version = "0.2", features = ["serde"] }
+env_logger = "0.3"
+iron = "0.4"
+lazy_static = "0.2"
+mount = "0.2"
+openssl = "< 0.8"
+params = "0.3"
+postgres = { version = "0.11", features = ["openssl", "chrono"] }
+postgres-derive-macros = "0.1"
+r2d2 = "0.7"
+r2d2_postgres = "0.10"
+serde = "0.8"
+serde_json = "0.8"
+serde_macros = "0.8"
+staticfile = "0.3"

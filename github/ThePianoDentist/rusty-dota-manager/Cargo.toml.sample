@@ -1,0 +1,22 @@
+[package]
+
+name = "dota-manager"
+version = "0.1.0"
+authors = [
+    "Johnny Knight",
+]
+
+[[bin]]
+name = "dotaman"
+
+[dependencies]
+freetype-rs = "0.10.0"
+gfx_core = "*"
+gfx_device_gl = "=0.9.0"
+find_folder = "0.3.0"
+rand = "0.3"
+piston_window = "=0.45.0"
+piston = "0.23.0"
+piston2d-graphics = "0.16.0"
+pistoncore-glutin_window = "0.27.0"
+piston2d-opengl_graphics = "0.30.0"

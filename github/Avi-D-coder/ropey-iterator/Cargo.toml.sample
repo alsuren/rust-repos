@@ -1,0 +1,41 @@
+[package]
+name = "ropey"
+version = "1.0.0"
+authors = ["Nathan Vegdahl <cessen@cessen.com>"]
+description = "A fast and robust text rope for Rust"
+documentation = "https://docs.rs/ropey"
+repository = "https://github.com/cessen/ropey"
+readme = "README.md"
+license = "MIT"
+keywords = ["rope", "text", "edit", "buffer"]
+categories = ["text-processing", "data-structures"]
+
+[badges]
+travis-ci = { repository = "cessen/ropey" }
+
+[dependencies]
+smallvec = "0.6"
+
+[dev-dependencies]
+rand = "0.5"
+proptest = "0.8"
+bencher = "0.1.5"
+unicode-segmentation = "1.2.1"
+
+#-----------------------------------------
+
+[[bench]]
+name = "create"
+harness = false
+
+[[bench]]
+name = "insert"
+harness = false
+
+[[bench]]
+name = "remove"
+harness = false
+
+[[bench]]
+name = "queries"
+harness = false

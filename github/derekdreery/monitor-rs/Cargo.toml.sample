@@ -1,0 +1,15 @@
+[package]
+
+name = "monitor-rs"
+version = "0.0.1"
+authors = ["Richard Dodd <richard.o.dodd@gmail.com>"]
+
+[dependencies]
+regex_macros = "*"
+regex = "*"
+getopts = "*"
+toml = "*"
+time = "*"
+
+[dependencies.influx]
+git = "https://github.com/derekdreery/influx-rs"

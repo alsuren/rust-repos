@@ -1,0 +1,18 @@
+[package]
+name = "spiner"
+version = "0.2.0"
+authors = ["reeFridge <reefridgerator@gmail.com>"]
+
+[dependencies.libspine-sys]
+git = "https://github.com/reeFridge/libspine-sys.git"
+
+[[example]]
+name = "rendering"
+path = "examples/rendering/src/main.rs"
+
+[dev-dependencies]
+libc = "0.2"
+image = "0.19"
+glium = "0.22"
+time = "0.1"
+rand = "0.5"

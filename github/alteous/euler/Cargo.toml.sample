@@ -1,0 +1,19 @@
+[package]
+name = "euler"
+version = "0.4.0"
+authors = ["David Harvey-Macaulay <alteous@outlook.com>"]
+description = "Mathematics library for 3D computer graphics"
+documentation = "https://docs.rs/euler"
+repository = "https://github.com/alteous/euler"
+homepage = "https://github.com/alteous/euler"
+readme = "README.md"
+keywords = ["math", "glsl", "vector", "quaternion", "matrix"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+approx = "0.1.1"
+cgmath = "0.16"
+mint = { optional = true, version = "0.5" }
+
+[features]
+default = ["cgmath/mint"]

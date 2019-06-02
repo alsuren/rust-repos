@@ -1,0 +1,11 @@
+[package]
+name = "mal"
+version = "0.1.0"
+authors = ["pierreyoda <pierreyoda@users.noreply.github.com>"]
+
+[lib]
+name = "mal"
+
+[dependencies]
+regex = "0.1.38"
+log = "0.3.1"

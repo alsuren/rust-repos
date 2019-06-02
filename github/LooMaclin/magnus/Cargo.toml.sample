@@ -1,0 +1,14 @@
+[package]
+name = "magnus"
+version = "0.1.0"
+authors = ["LooMaclin <loo.maclin@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+scrap = "0.5.0"
+engiffen = "0.8.1"
+cairo-rs = "0.6.0"
+gdk = "0.10.0"
+gio = "0.6.0"
+gtk = "0.6.0"
+notify-rust = "3.5.0"

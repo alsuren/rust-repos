@@ -1,0 +1,15 @@
+[workspace]
+members = [
+	"crates/ast",
+	"crates/check",
+	"crates/compile",
+	"crates/host",
+	"crates/interpret",
+	"crates/main",
+	"crates/model",
+	"crates/parse",
+	"crates/parse_diag",
+	"crates/test",
+	"crates/util",
+	"crates/value"
+]

@@ -1,0 +1,24 @@
+[package]
+name = "num256"
+version = "0.2.11"
+authors = ["Jehan <jehan.tremback@gmail.com>"]
+include = [
+    "**/*.rs",
+    "Cargo.toml"
+]
+description = "Implementation of 256 bit integers"
+repository = "https://github.com/althea-mesh/num256_rs"
+license-file = "LICENSE"
+
+[dependencies]
+num = "0.2"
+serde = "1.0"
+failure = "0.1"
+num-derive = "0.2"
+num-traits = "0.2.6"
+serde_derive = "1.0.80"
+lazy_static = "1.2.0"
+
+[dev-dependencies]
+serde_derive = "1.0.80"
+serde_json = "1.0.33"

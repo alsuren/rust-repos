@@ -1,0 +1,59 @@
+[package]
+name = "vibi"
+version = "0.1.0"
+authors = ["Nick Sanders <nsan1129@gmail.com>"]
+
+[features]
+eval = ["bismit/eval"]
+
+[dependencies.bismit]
+# path = "/home/nick/src/github.com/cogciprocate/bismit"
+path = "../bismit"
+# git = "https://github.com/cogciprocate/bismit.git"
+
+[dependencies.enamel]
+# git = "https://github.com/cogciprocate/enamel.git"
+path = "../enamel"
+
+[dependencies.time]
+git = "https://github.com/rust-lang/time.git"
+
+[dependencies]
+rand = "*"
+# glium = "0.14"
+# glium = "0.15"
+# glium_text = "0.9"
+glium = "0.20"
+glium_text_rusttype = "0.3"
+# image = "*"
+find_folder = "*"
+num = "*"
+vecmath = "*"
+# rustc-serialize = "*"
+colorify = "*"
+# nalgebra = "*"
+# nalgebra = "=0.14.1"
+nalgebra = { git = "https://github.com/sebcrozet/nalgebra", version = "*" }
+log = "*"
+futures = "*"
+
+# cgmath = "*"
+# piston_window = "*"
+# piston2d-opengl_graphics = "*"
+# conrod = "0.23"
+# piston = "0.16.0"
+# pistoncore-glutin_window = "0.20.0"
+# piston-viewport = "0.2.0"
+# piston2d-gfx_graphics = "0.13.0"
+# gfx = "0.8.1"
+
+# [dependencies.glium_text]
+# git = "https://github.com/tomaka/glium_text.git"
+
+# [dependencies.glium]
+# git = "https://github.com/tomaka/glium.git"
+
+# [replace]
+# "qutex:0.1.1" = { git = "https://github.com/cogciprocate/qutex" }
+# "cl-sys:0.3.0" = { git = "https://github.com/cogciprocate/cl-sys" }
+# "ocl-core:0.5.1" = { git = "https://github.com/cogciprocate/ocl-core" }

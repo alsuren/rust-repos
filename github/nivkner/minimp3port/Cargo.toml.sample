@@ -1,0 +1,11 @@
+[package]
+name = "minimp3port"
+version = "0.1.0"
+authors = ["Niv Kaminer <nivkner@zoho.com>"]
+edition = "2018"
+
+[dev-dependencies]
+byteorder = "1"
+
+[workspace]
+members = ["mp3fuzz", "play-music"]

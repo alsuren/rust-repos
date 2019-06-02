@@ -1,0 +1,11 @@
+[package]
+name = "scheduler"
+version = "0.1.0"
+authors = ["crides <zhuhaoqing@live.cn>"]
+edition = "2018"
+
+[dependencies]
+rusqlite = {version = "*", features = ["chrono"]}
+chrono = "*"
+rustyline = "4.0.0"
+fallible-streaming-iterator = "*"

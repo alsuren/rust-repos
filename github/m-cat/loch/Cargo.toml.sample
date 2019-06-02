@@ -1,0 +1,25 @@
+[package]
+authors = ["Marcin S. <scatman@bu.edu>"]
+categories = ["command-line-utilities"]
+description = "Short for 'link out check' and pronounced 'loch'."
+documentation = "https://docs.rs/loch"
+keywords = ["loch", "link", "check", "utility"]
+license = "MIT"
+name = "loch"
+readme = "README.md"
+repository = "https://github.com/m-cat/loch"
+version = "0.0.1"
+
+edition = "2018"
+
+[dependencies]
+atty = "0.2"
+clap = "2"
+curl = "0.4"
+ignore = "0.4"
+lazy_static = "1"
+regex = "1"
+termcolor = "1"
+
+[dev-dependencies]
+pretty_assertions = "0.6"

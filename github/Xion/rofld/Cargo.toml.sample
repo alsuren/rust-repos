@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "src/cli",
+    "src/lib",
+    "src/server",
+]
+
+[profile.release]
+lto = true

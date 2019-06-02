@@ -1,0 +1,13 @@
+[package]
+name = "ooxml-wpm"
+version = "0.1.0"
+authors = ["Camille TJHOA <camille.tjhoa@outlook.com>"]
+edition = "2018"
+description = """
+ooxml-wpm is an interface to convert wpm document from/into OOXML format
+"""
+
+[dependencies]
+zip = { git = "https://github.com/ctjhoa/zip-rs", branch = "wasm32", default-features = false, features = ['deflate'] }
+wpm = { git = "https://github.com/ctjhoa/wpm", branch = "master" }
+minidom = "0.10.0"

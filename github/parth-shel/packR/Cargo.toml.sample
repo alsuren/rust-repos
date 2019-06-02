@@ -1,0 +1,10 @@
+[package]
+name = "pack_r"
+version = "0.1.0"
+authors = ["parth_shel <ps@parthshel.com>"]
+
+[dependencies]
+inflate = "0.4.2"
+deflate = "0.7.18"
+regex = "1.0.0"
+lazy_static = "1.0.0"

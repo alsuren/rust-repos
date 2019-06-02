@@ -1,0 +1,27 @@
+[package]
+name = "cv"
+version = "0.2.2"
+authors = ["Ben Zhang <benzh@cs.berkeley.edu>"]
+build = "build.rs"
+repository = "https://github.com/nebgnahz/cv-rs.git"
+homepage = "https://github.com/nebgnahz/cv-rs.git"
+license = "MIT"
+readme = "README.md"
+documentation = "rust-vision.s3-website-us-west-2.amazonaws.com"
+description = "This library primarily provides a binding and API for OpenCV 3.x."
+
+[dependencies]
+bytes = "0.4"
+failure = "0.1"
+
+[dev-dependencies]
+getopts = "0.2"
+float-cmp = "0.4"
+
+[build-dependencies]
+cc = { version = "1.0", features = ["parallel"] }
+
+[features]
+cuda = []
+text = []
+tesseract = ["text"]

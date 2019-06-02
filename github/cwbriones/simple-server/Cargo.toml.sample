@@ -1,0 +1,15 @@
+[package]
+name = "simple-server"
+version = "0.1.0"
+authors = ["Christian Briones <cwbriones@gmail.com>"]
+
+[dependencies]
+hyper = "0.11.*"
+futures = "0.1.*"
+futures-fs = "*"
+futures-cpupool = "*"
+mime = "0.3.*"
+flate2 = "*"
+log = "*"
+pretty_env_logger = "*"
+time = "*"

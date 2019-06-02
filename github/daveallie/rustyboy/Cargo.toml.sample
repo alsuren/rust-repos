@@ -1,0 +1,16 @@
+[package]
+name = "rustyboy"
+version = "0.1.0"
+authors = ["Dave Allie <dave@daveallie.com>"]
+
+[features]
+default = []
+debugger = []
+frame-capture = ["image"]
+
+[dependencies]
+cpal = "0.8.2"
+glium = "0.24"
+glutin = "0.20"
+image = { version = "*", optional = true }
+clippy = { version = "*", optional = true }

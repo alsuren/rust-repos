@@ -1,0 +1,17 @@
+[package]
+name = "hazeman"
+version = "0.1.0"
+authors = ["Roger Andersen <hexjelly@hexjelly.com>"]
+
+[workspace]
+
+[dependencies]
+haze = { path = "haze" }
+# reqwest = "0.8.5"
+kuchiki = "0.7.3"
+curl = "0.4.22"
+regex = "1"
+lazy_static = "1"
+log = "0.4"
+pretty_env_logger = "0.2.4"
+failure = "0.1.5"

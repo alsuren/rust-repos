@@ -1,0 +1,18 @@
+[package]
+name = "rivet"
+version = "0.1.0"
+authors = ["Cole Reynolds <cpjreynolds@gmail.com>"]
+
+[features]
+default = []
+select = []
+
+[dependencies]
+bitflags = "0.7"
+time = "0.1"
+num = "0.1"
+rand = "0.3"
+
+[dependencies.libc]
+version = "0.2"
+git = "https://github.com/cpjreynolds/libc.git"

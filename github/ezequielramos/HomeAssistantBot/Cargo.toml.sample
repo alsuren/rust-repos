@@ -1,0 +1,26 @@
+[package]
+name = "home_assistant_bot"
+version = "0.1.0"
+authors = ["Yuri Lima <yuri.vdl@gmail.com>"]
+
+[dependencies]
+openssl = "0.10.12"
+dotenv = "0.13.0"
+env_logger = "0.5.13"
+log = "0.4.5"
+
+[dependencies.serenity]
+default-features = false
+#Removed voice
+features = [
+    "builder",
+    "cache",
+    "client",
+    "framework",
+    "gateway",
+    "http",
+    "model",
+    "standard_framework",
+    "utils",
+]
+version = "0.5.9"

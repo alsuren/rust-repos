@@ -1,0 +1,12 @@
+[package]
+name = "two_stroke"
+version = "0.1.0"
+authors = ["Jon Moroney <darakian@gmail.com>"]
+
+[dependencies]
+crossbeam-channel = "0.1"
+
+[dependencies.sdl2]
+version = "0.32"
+default-features = false
+features = ["gfx", "mixer"]

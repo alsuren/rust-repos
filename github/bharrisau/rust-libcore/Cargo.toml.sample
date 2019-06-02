@@ -1,0 +1,9 @@
+[package]
+name = "core"
+version = "1.0.0"
+authors = ["Ben Harris <mail@bharr.is>", "Matt Ickstadt <matt@icky.pw>"]
+build = "./build.rs"
+
+[lib]
+name = "core"
+path = "rust/src/libcore/lib.rs"

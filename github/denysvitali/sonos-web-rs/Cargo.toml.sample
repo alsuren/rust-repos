@@ -1,0 +1,17 @@
+[package]
+name = "sonos-web"
+version = "0.1.0"
+authors = ["Denys Vitali <denys.vitali@coelis.ch>"]
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+rocket_contrib = "0.3.6"
+ssdp = "0.6.0"
+log = "0.3"
+regex = "0.2"
+sonos = { path = "./sonos_lib" }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+ws = "*"

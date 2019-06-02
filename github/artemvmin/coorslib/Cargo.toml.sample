@@ -1,0 +1,28 @@
+[package]
+name = "coorslib"
+version = "0.4.0"
+authors = [
+    "Kevin Chang",
+    "Dylan Johnson",
+    "Artem Minyaylov"
+]
+repository = "https://github.com/artemvm/coorslib.git"
+description = "Coroutine Library in Rust"
+readme = "README.md"
+homepage = "https://github.com/artemvm/coorslib.git"
+keywords = ["coroutine", "green", "thread", "fiber", "symmetric"]
+
+[build-dependencies]
+gcc = "*"
+log = "*"
+
+[lib]
+name = "coorslib"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "^0.1.10"
+context = "0.1.2"
+
+[dev-dependencies]
+num_cpus = "*"

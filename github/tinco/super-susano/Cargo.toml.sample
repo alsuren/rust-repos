@@ -1,0 +1,28 @@
+[package]
+name = "super-susano"
+version = "0.0.1"
+authors = [
+	"Tinco Andringa <mail@tinco.nl>",
+	"Gijsbert dos Santos<gijsbert26@gmail.com>"
+]
+build = "build.rs"
+
+[[bin]]
+name = "super-susano"
+
+[dependencies]
+image = "*"
+piston = "*"
+piston_window = "*"
+piston2d-graphics = "*"
+pistoncore-glutin_window = "*"
+piston2d-opengl_graphics = "*"
+piston2d-sprite = "*"
+piston-texture = "*"
+
+[dependencies.pistoncore-sdl2_window]
+git = "https://github.com/PistonDevelopers/sdl2_game_window"
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs"
+

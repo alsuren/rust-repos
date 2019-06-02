@@ -1,0 +1,13 @@
+[package]
+name = "tunnels"
+version = "0.1.0"
+authors = ["wilsontheory <wilson.brian90@gmail.com>"]
+
+[dependencies]
+futures = "*"
+tokio = "*"
+tokio-io = "*"
+bytes = "*"
+rust-crypto = "^0.2"
+rand = "*"
+time = "*"

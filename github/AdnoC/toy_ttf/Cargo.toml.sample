@@ -1,0 +1,21 @@
+[package]
+name = "toy_ttf"
+version = "0.1.0"
+authors = ["AdnoC <adam.r.cutler@gmail.com>"]
+
+[dependencies]
+nom = "4.0"
+num-traits = "0.2" # For num-derive
+num-derive = {version = "0.2", features = ["full-syntax"]}
+widestring = "0.3"
+byte-slice-cast = "0.2"
+encoding = "0.2"
+byteorder = "1.2"
+parse_derive = {path = "parse_derive"}
+itertools = "0.7"
+image = "0.19"
+imageproc = "0.15"
+bitflags = "1.0"
+
+[dev-dependencies]
+byte_conv = "0.1"

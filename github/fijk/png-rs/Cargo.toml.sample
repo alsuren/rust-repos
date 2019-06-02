@@ -1,0 +1,8 @@
+[package]
+name = "png-rs"
+version = "0.1.0"
+authors = ["ansmith <ansmith@midwestmanufacturing.com>"]
+
+[dependencies]
+byteorder = "1"
+crc = "^1.8.1"

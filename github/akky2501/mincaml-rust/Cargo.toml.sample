@@ -1,0 +1,9 @@
+[package]
+name = "mincaml-rust"
+version = "0.1.0"
+authors = ["aki"]
+
+[dependencies]
+nom = "^2.1"
+lazy_static = "0.2.5"
+rand = "0.3"

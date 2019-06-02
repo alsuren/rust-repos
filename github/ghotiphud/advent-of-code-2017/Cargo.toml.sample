@@ -1,0 +1,12 @@
+[package]
+name = "advent-of-code-2017"
+version = "0.1.0"
+authors = ["Yale Cason <yale.cason@gmail.com>"]
+
+[dependencies]
+itertools = "0.7"
+gen-iter = "0.1.2"
+
+[dependencies.nom]
+version = "3.2"
+features = ["nightly"]

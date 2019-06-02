@@ -1,0 +1,17 @@
+[package]
+name = "howl"
+version = "0.1.0"
+authors = ["Michael Shaw <michaeljshaw@gmail.com>"]
+
+[dependencies]
+lewton = "0.5"
+alto = "1.1"
+time = "0.1"
+notify = "4.0"
+rand = "0.3"
+
+aphid = { git = "https://github.com/michaelshaw/aphid" }
+
+[[example]]
+name = "engine"
+path = "examples/engine/main.rs"

@@ -1,0 +1,30 @@
+[package]
+name = "edge-detection"
+version = "0.2.3"
+edition = "2018"
+authors = ["polyfloyd <floyd@polyfloyd.net>"]
+license = "MIT"
+repository = "https://github.com/polyfloyd/edge-detection-rs"
+description = "The canny edge detection algorithm"
+readme = "README.md"
+keywords = ["computer-vision", "canny"]
+categories = ["algorithms", "multimedia::images", "science", "visualization"]
+
+include = [
+    "src/**/*.rs",
+    "media/**/*.png",
+    "Cargo.toml",
+]
+
+[badges]
+travis-ci = { repository = "polyfloyd/edge-detection-rs", branch = "master" }
+
+[profile.dev]
+opt-level = 3
+
+[features]
+unstable = []
+
+[dependencies]
+image = "0.21"
+rayon = "1"

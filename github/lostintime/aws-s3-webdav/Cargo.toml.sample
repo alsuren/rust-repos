@@ -1,0 +1,23 @@
+[package]
+name = "aws_s3_webdav"
+version = "0.1.0"
+authors = ["lostintime <lostintime.dev@gmail.com>"]
+
+[dependencies]
+log = "0.4.5"
+env_logger = "0.5.13"
+clap = "2.32.0"
+toml = "0.4.6"
+serde = "1.0.77"
+serde_derive = "1.0.77"
+actix = "0.7.4"
+actix-web = "0.7.6"
+rusoto_core = "0.34.0"
+rusoto_s3 = "0.34.0"
+rusoto_credential = "0.11.0"
+futures = "0.1.21"
+bytes = "0.4"
+
+# enable debug for release profile when need to profile with optimizations
+# [profile.release]
+# debug = true

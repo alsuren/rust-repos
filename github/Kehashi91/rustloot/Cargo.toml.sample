@@ -1,0 +1,11 @@
+[package]
+name = "rustloot"
+version = "0.1.0"
+authors = ["kehashi91"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+serde = { version = "1.0.90", features = ["derive"] }
+serde_json = "1.0.39"
+itertools = "0.8"

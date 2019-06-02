@@ -1,0 +1,16 @@
+[package]
+
+name = "mithril-examples"
+version = "0.0.1"
+authors = ["Bryan Yap <bryan.yap@alliants.com>"]
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs"
+
+
+[dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs"
+
+
+[dependencies.mithril]
+git = "https://github.com/yggie/mithril.git"

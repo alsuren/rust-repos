@@ -1,0 +1,11 @@
+[package]
+name = "samp-chatbot-plugin"
+version = "0.1.0"
+authors = ["Sreyas <sreyassreelal@gmail.com>"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+samp-sdk = "0.8.1"
+eliza = "1.0.0"

@@ -1,0 +1,9 @@
+[package]
+authors = ["Martin Persson <mnpn03@gmail.com>"]
+name = "fe2o3"
+version = "0.1.0"
+[dependencies]
+clap = "2.29.0"
+ears = "0.4.0"
+failure = "0.1.1"
+pbr = "*"

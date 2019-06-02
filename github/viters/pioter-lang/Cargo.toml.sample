@@ -1,0 +1,8 @@
+[package]
+name = "pioter-lang"
+version = "0.6.0"
+authors = ["Łukasz Szcześniak <say.hello@viters.net>", "Łukasz Mielczarek <mielczarek.lukasz96@gmail.com"]
+
+[dependencies]
+pest = "^1.0"
+pest_derive = "^1.0"

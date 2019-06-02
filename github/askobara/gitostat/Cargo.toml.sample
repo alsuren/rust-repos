@@ -1,0 +1,22 @@
+[package]
+
+name = "gitostat"
+version = "0.4.1"
+authors = ["Arthur Skobara <skobara.arthur@gmail.com>"]
+description = "Tool for obtaining different kind of information from your git repository"
+repository = "https://github.com/askobara/gitostat"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+git2 = "0.6"
+chrono = "0.4"
+docopt = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+rustc-serialize = "^0.3"
+regex = "0.2"
+prettytable-rs = "^0.6"
+
+[dev-dependencies]
+tempdir = "0.3"

@@ -1,0 +1,19 @@
+[package]
+name = "ratch"
+version = "0.3.1"
+authors = ["Aceeri <conmcclusk@gmail.com>"]
+description = "An alternative to `watch`, with scrolling buffers."
+documentation = "https://docs.rs/crate/ratch"
+homepage = "https://github.com/aceeri/ratch"
+repository = "https://github.com/aceeri/ratch"
+license = "MIT/Apache-2.0"
+edition = "2018"
+readme = "README.md"
+keywords = ["watch", "interval", "scrolling"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = "2.23.0"
+duct = "0.11.1"
+os_pipe = "0.8.0"
+pancurses = "0.16.0"

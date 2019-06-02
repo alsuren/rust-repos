@@ -1,0 +1,12 @@
+[package]
+name = "passchk"
+version = "0.1.0"
+authors = ["J/A <archer884@gmail.com>"]
+
+[lib]
+name = "passchk"
+crate-type = ["cdylib"]
+
+[dependencies]
+lazy_static = "*"
+regex = "*"

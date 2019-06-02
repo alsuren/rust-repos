@@ -1,0 +1,7 @@
+[package]
+name = "odin"
+version = "0.1.0"
+authors = ["Kirill Zdornyy <kirill@dineserve.com>"]
+
+[dependencies]
+ws = { git = "https://github.com/housleyjk/ws-rs" }

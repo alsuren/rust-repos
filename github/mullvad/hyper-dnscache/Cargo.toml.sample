@@ -1,0 +1,27 @@
+[package]
+name = "hyper-dnscache"
+version = "0.1.0"
+authors = ["Mullvad VPN <developers@mullvad.net>", "Linus Färnstrand <linus@mullvad.net>"]
+description = """
+A caching implementation of the hyper Resolve trait.
+Can be used to customize domain resolution with timeouts and fallbacks to hardcoded or file based IP records.
+"""
+keywords = ["hyper", "dns", "cache", "resolver"]
+categories = ["caching", "network-programming", "web-programming::http-client"]
+repository = "https://github.com/mullvad/hyper-dnscache"
+license = "MIT/Apache-2.0"
+edition = "2018"
+
+[dependencies]
+err-derive = "0.1.5"
+futures = "0.1.25"
+hyper = "0.12.24"
+log = "0.4.6"
+serde_json = "1.0.38"
+tokio-fs = "0.1.5"
+tokio-io = "0.1.11"
+tokio-timer = "0.2.10"
+
+[dev-dependencies]
+env_logger = "0.6.0"
+tokio = "0.1.15"

@@ -1,0 +1,22 @@
+[package]
+authors = ["TheDoctorsLife <hoffmeyer25@gmail.com>"]
+homepage = "https://github.com/TheDoctorsLife/discord-bot"
+license = "AGPL-3.0"
+name = "discord-bot"
+readme = "README.md"
+repository = "git@github.com:TheDoctorsLife/discord-bot.git"
+version = "0.2.0"
+
+[dependencies]
+hyper = "0.9"
+serde = "0.7"
+serde_json = "0.7"
+serde_macros = "0.7"
+cleverbot_io= "1.0.0"
+
+[dependencies.discord]
+git = "https://github.com/SpaceManiac/discord-rs"
+
+[dependencies.url]
+feature = ["serde"]
+version = "1.1.1"

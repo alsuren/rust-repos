@@ -1,0 +1,18 @@
+[package]
+name = "decr"
+version = "0.1.0"
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+itertools = "0.8"
+rustfft = "3"
+
+[dependencies.clap]
+default-features = false
+version = "2"
+
+[profile.release]
+lto = true

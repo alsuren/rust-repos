@@ -1,0 +1,19 @@
+[package]
+authors = ["Mei Boudreau <xanizl@me.com>", "Zeyla Hellyer <zey@zey.moe>"]
+build = "build.rs"
+name = "yuki-image-service"
+version = "0.1.0"
+
+[dependencies]
+futures = "~0.1"
+grpc = "~0.2"
+image = "~0.17"
+imageproc = "~0.12"
+kankyo = "~0.1"
+protobuf = "^1.4"
+rand = "~0.3"
+rusttype = "~0.2"
+tls-api = "~0.1"
+
+[build-dependencies]
+protoc-rust-grpc = "=0.2.1"

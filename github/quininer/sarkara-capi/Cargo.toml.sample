@@ -1,0 +1,19 @@
+[package]
+name = "sarkara-capi"
+version = "0.1.0"
+authors = ["quininer kel <quininer@live.com>"]
+build = "build.rs"
+
+[lib]
+name = "sarkara"
+crate-type = [ "cdylib" ] # asmjs => "bin"
+
+[profile.release]
+lto = true
+
+[dependencies]
+libc = "*"
+sarkara = "*"
+
+[build-dependencies]
+rusty-cheddar = "*"

@@ -1,0 +1,23 @@
+[package]
+name = "Voxelized3D-Rust"
+version = "0.0.1"
+authors = ["russoul <russoulmc@gmail.com>"]
+build = "build.rs"
+links = "rsutil"
+
+[dependencies]
+libc = "0.2.0"
+generic-array = "0.9.0"
+ansi_term = "0.10.2"
+nalgebra = "0.14.4"
+typenum = "1.9.0"
+alga = "0.5.2"
+time = "0.1.39"
+rand = "0.4"
+noise = "0.5.1"
+num = "0.1.42"
+
+[build-dependencies]
+cc = "1.0"
+cmake = "0.1.31"
+

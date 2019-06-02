@@ -1,0 +1,21 @@
+[package]
+
+name = "iron-file-server"
+version = "0.0.1"
+authors = ["golergka <golergka@gmail.com>"]
+
+[dependencies.iron]
+
+git = "https://github.com/iron/iron.git"
+
+[dependencies.static_file]
+
+git = "https://github.com/iron/static-file.git"
+
+[dependencies.mount]
+
+git = "https://github.com/iron/mount.git"
+
+[dependencies.logger]
+
+git = "https://github.com/iron/logger.git"

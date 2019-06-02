@@ -1,0 +1,16 @@
+[package]
+name = "sorption_space_sim"
+version = "0.1.0"
+authors = ["TheHellBox <thehellbox11@gmail.com>"]
+
+[dependencies]
+rand = "0.4.2"
+nalgebra="0.14.1"
+alga = "0.5"
+glium="0.20.0"
+tobj = "0.1.6"
+image="0.19.0"
+openhmd-rs="0.1.6"
+noise="0.5.1"
+scarlet="0.2"
+rusttype="0.6"

@@ -1,0 +1,8 @@
+[package]
+name = "sliding-puzzle"
+version = "0.1.0"
+authors = ["Henning Ottesen <henning@live.no>"]
+
+[dependencies]
+quick-error = "1.2"
+pathfinding = "0.7"

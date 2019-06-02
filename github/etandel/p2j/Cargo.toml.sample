@@ -1,0 +1,9 @@
+[package]
+name = "p2j"
+version = "0.1.0"
+authors = ["Elias Tandel Barrionovo <elias.tandel@gmail.com>"]
+
+[dependencies]
+rustc-serialize="0.3"
+docopt="0.6"
+byteorder = "0.5.3"

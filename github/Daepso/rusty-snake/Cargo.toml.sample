@@ -1,0 +1,10 @@
+[package]
+name = "rusty-snake"
+version = "0.1.0"
+authors = []
+
+[dependencies]
+# TODO: replace version with released version
+amethyst = { git = "https://github.com/amethyst/amethyst", branch = "develop" }
+cgmath = "*"
+rand = "*"

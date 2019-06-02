@@ -1,0 +1,41 @@
+[package]
+name = "thrussh"
+description = "A client and server SSH library. Memory-safe, doesn't do its own crypto (based on libsodium)."
+version = "0.5.0"
+authors = ["Pierre-Étienne Meunier <pe@pijul.org>"]
+repository = "https://pijul.org/thrussh"
+homepage = "https://pijul.org/thrussh"
+documentation = "https://pijul.org/thrussh/doc/thrussh"
+license = "Apache-2.0"
+include = [
+        "Cargo.toml",
+        "src/sodium.rs",
+        "src/server/mod.rs",
+        "src/server/encrypted.rs",
+        "src/negociation.rs",
+        "src/kex.rs",
+        "src/auth.rs",
+        "src/cryptobuf.rs",
+        "src/cipher",
+        "src/cipher/mod.rs",
+        "src/cipher/chacha20poly1305.rs",
+        "src/msg.rs",
+        "src/lib.rs",
+        "src/encoding.rs",
+        "src/client",
+        "src/client/mod.rs",
+        "src/client/encrypted.rs",
+        "src/key.rs",
+        "src/session.rs",
+        "src/sshbuffer.rs",
+        "src/pty.rs"
+        ]
+
+[dependencies]
+byteorder = "0.5"
+bitflags = "0.7"
+libc = "0.2"
+libsodium-sys = "0.0.10"
+log = "0.3"
+rand = "0.3"
+rustc-serialize = "0.3"

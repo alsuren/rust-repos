@@ -1,0 +1,21 @@
+[package]
+name = "multitest"
+version = "0.1.0"
+authors = ["Loïc Damien <loic.damien@dzamlo.ch>"]
+license = "MIT OR Apache-2.0"
+
+build = "build.rs"
+
+[dependencies]
+atty = "0.2"
+clap = "2.20"
+glob = "0.2"
+liquid = "0.14"
+shell-escape = "0.1"
+regex = "0.2"
+termcolor = "0.3"
+toml = "0.4"
+
+[build-dependencies]
+clap = "2.20"
+regex = "0.2"

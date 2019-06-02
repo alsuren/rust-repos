@@ -1,0 +1,28 @@
+[package]
+name = "k"
+version = "0.14.0"
+authors = ["Takashi Ogura <t.ogura@gmail.com>"]
+description = "k is for kinematics"
+license = "Apache-2.0"
+keywords = ["kinematics", "robotics", "ik"]
+categories = ["algorithms"]
+repository = "https://github.com/OTL/k"
+documentation = "http://docs.rs/k"
+readme = "README.md"
+
+[dependencies]
+nalgebra = "0.17.0"
+urdf-rs = "0.4.2"
+log = "0.3"
+failure = "0.1"
+
+[dev-dependencies]
+kiss3d = "0.18.0"
+rand = "0.3.0"
+docmatic = "0.1"
+
+#[profile.release]
+#debug = true
+
+#[profile.bench]
+#debug = true

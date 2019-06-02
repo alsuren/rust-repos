@@ -1,0 +1,22 @@
+[package]
+name = "mdtable-cli"
+version = "1.0.0"
+license = "MIT"
+authors = ["Axel Lindeberg"]
+description = "A tool that makes creating tables in markdown much easier!"
+readme = "README.md"
+homepage = "https://github.com/AxlLind/mdtable-cli"
+repository = "https://github.com/AxlLind/mdtable-cli"
+keywords = ["cli", "markdown", "table", "md"]
+categories = ["command-line-utilities", "text-processing"]
+
+[[bin]]
+path = "src/main.rs"
+name = "mdtable"
+
+[dependencies]
+clap = "2.33.0"
+pad = "0.1.5"
+
+[profile.release]
+opt-level = 3

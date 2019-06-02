@@ -1,0 +1,7 @@
+[package]
+name = "dobc"
+version = "0.1.1"
+authors = ["Paul Johnson <paul@rustybox.co.uk>"]
+
+[dependencies]
+rust-crypto = "^0.2"

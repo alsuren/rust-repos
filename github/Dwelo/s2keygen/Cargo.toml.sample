@@ -1,0 +1,12 @@
+[package]
+name = "s2keygen"
+version = "0.1.0"
+authors = ["enoch"]
+build = "build.rs"
+
+[dependencies]
+libc = "0.2.0"
+rand = "0.3.14"
+
+[build-dependencies]
+cc = { version = "1.0.25", features = ["parallel"] }

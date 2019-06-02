@@ -1,0 +1,10 @@
+[package]
+name = "tetris"
+version = "0.1.0"
+authors = ["ben"]
+
+[dependencies]
+sdl2 = "0.31.0"
+
+[features]
+default = ["sdl2/image"]

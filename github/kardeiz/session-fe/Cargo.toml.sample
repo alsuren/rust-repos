@@ -1,0 +1,18 @@
+[package]
+authors = ["Jacob Brown <j.h.brown@tcu.edu>"]
+name = "session-fe"
+version = "0.1.2"
+
+[dependencies]
+iron = ">= 0.3, <= 0.4"
+cookie-fe = { git = "https://github.com/kardeiz/cookie-fe", optional = true }
+rand = { version = "0.3.12", optional = true }
+rustc-serialize = { version = "0.3", optional = true }
+
+[features]
+default = ["helpers"]
+helpers = ["cookie-fe", "rand", "rustc-serialize"]
+
+[dev-dependencies]
+time = "*"
+router = "*"

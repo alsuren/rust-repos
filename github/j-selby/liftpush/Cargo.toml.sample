@@ -1,0 +1,29 @@
+[package]
+name = "liftpush"
+version = "0.1.0"
+authors = ["James <jselby@jselby.net>"]
+
+[dependencies]
+iron = "0.6.0"
+router = "0.6.0"
+handlebars = "0.32.4"
+handlebars-iron = "0.26.2"
+params = "0.8.0"
+secure-session = "0.3.1"
+persistent = "0.4.0"
+
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+toml = "0.4"
+
+rand = "0.5"
+base64 = "0.9"
+tiny-keccak = "1.4.2"
+
+phf = "0.7"
+phf_macros = "0.7.22"
+
+mime_guess = "1.8.6"
+
+chrono = {version = "0.4", features = ["serde"]}

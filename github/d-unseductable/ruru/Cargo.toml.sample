@@ -1,0 +1,16 @@
+[package]
+name = "ruru"
+version = "0.9.3"
+authors = ["Dmitry Gritsay <unseductable@gmail.com>"]
+
+description = "Native Ruby extensions in Rust"
+documentation = "https://docs.rs/ruru"
+homepage = "http://this-week-in-ruru.org/"
+repository = "https://github.com/d-unseductable/ruru"
+readme = "README.md"
+keywords = ["cruby", "mri", "ruby", "ruru"]
+license = "MIT"
+
+[dependencies]
+ruby-sys = "0.3.0"
+lazy_static = "0.2.1"

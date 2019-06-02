@@ -1,0 +1,28 @@
+[package]
+authors = ["Kerem Kat <keremkat@gmail.com>, Jorge Aparicio <jorge@japaric.io>"]
+categories = ["embedded", "no-std"]
+description = "A crate to compile nRF51822 programs, which is a variant of ARM Cortex-M0"
+keywords = ["arm", "cortex-m", "template"]
+license = "MIT OR Apache-2.0"
+name = "nrf51822-quickstart"
+repository = "https://github.com/krk/nrf61822-quickstart"
+version = "0.1.1"
+
+[dependencies]
+cortex-m = "0.4.0"
+cortex-m-rt = "0.4.0"
+cortex-m-semihosting = "0.2.0"
+panic-abort = "0.1.1"
+panic-semihosting = "0.1.0"
+# Uncomment for the allocator example.
+#alloc-cortex-m = "0.3.3"
+
+# Uncomment for the device example.
+[dependencies.nrf51822]
+features = ["rt"]
+version = "0.1.2"
+
+[profile.release]
+debug = true
+lto = true
+opt-level = "s"

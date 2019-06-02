@@ -1,0 +1,12 @@
+[package]
+name = "musicbot"
+version = "0.1.0"
+authors = ["MOZGIII <mike-n@narod.ru>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.serenity]
+git = "https://github.com/serenity-rs/serenity.git"
+branch = "v0.6.x"
+features = ["cache", "framework", "standard_framework", "voice"]

@@ -1,0 +1,16 @@
+[package]
+
+name = "rustpy"
+version = "0.1.0"
+authors = [ "luke.s.metz@gmail.com" ]
+build = "build.rs"
+
+[lib]
+name = "rustpy"
+
+[dependencies]
+libc = "0.1.8"
+lazy_static = "0.1.11"
+
+[build-dependencies]
+gcc = "0.3.8"

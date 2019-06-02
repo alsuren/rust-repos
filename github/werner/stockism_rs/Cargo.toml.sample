@@ -1,0 +1,31 @@
+[package]
+name = "stockism"
+version = "0.1.0"
+authors = ["Werner <werner_a_e@yahoo.es>"]
+
+[dependencies]
+router = "*"
+diesel = { version = "0.14.0", features = ["postgres"] }
+diesel_codegen = { version = "0.14.0", features = ["postgres"] }
+dotenv = "0.9.0"
+serde = "^1.0.10"
+serde_derive = "^1.0.10"
+serde_json = "^1.0.2"
+r2d2 = "^0.7.3"
+r2d2-diesel = "^0.14.0"
+slog = "2"
+slog-term = "2"
+slog-json = "2"
+iron-cors = {git = "https://github.com/DavidBM/iron-cors-rs"}
+
+[dependencies.iron]
+version = "*"
+
+[dependencies.mount]
+git = "https://github.com/iron/mount.git"
+
+[dependencies.bodyparser]
+git = "https://github.com/iron/body-parser.git"
+
+[dependencies.params]
+git = "https://github.com/iron/params.git"

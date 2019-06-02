@@ -1,0 +1,22 @@
+[package]
+name = "stomp-server"
+version = "0.1.0"
+authors = ["Eric Dattore <eric@dattore.me>"]
+edition = "2018"
+description = "STOMP message server for websockets implemented in Rust"
+keywords = ["STOMP", "websockets", "messages", "messaging"]
+
+[lib]
+path = "src/lib.rs"
+name = "libstomp"
+
+[[bin]]
+path = "src/bin/main.rs"
+name = "stomp"
+
+[dependencies]
+bytes = "0.4"
+futures = "0.1"
+tokio = { version = "0.1", features = ["async-await-preview"] }
+websocket = { version = "0.22", features = ["async"] }
+nom = "4.2"

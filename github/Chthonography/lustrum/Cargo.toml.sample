@@ -1,0 +1,22 @@
+[package]
+name = "lustrum"
+version = "0.1.0"
+description = "An RTS game based on SCP-3008"
+authors = [ "LEARAX57H <willculhane3@gmail.com>",
+            "a-bainbridge <cattata1056@gmail.com>" ]
+
+keywords = ["game", "2d"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Chthonography/lustrum"
+documentation = "https://chthonography.github.io/lustrum/master/lustrum/"
+
+[badges]
+travis-ci = { repository = "Chthonography/lustrum" }
+
+[dependencies]
+piston_window = "0.80.0"
+vecmath = "0.3.1"
+camera_controllers = "0.24.0"
+gfx = "0.17.1"
+shader_version = "0.3.0"

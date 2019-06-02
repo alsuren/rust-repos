@@ -1,0 +1,11 @@
+[package]
+name = "bearz-robot-framwork"
+version = "0.1.0"
+authors = ["Dakota James Owen Keeler <bearzrobotics@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+linux-embedded-hal = "0.2"
+serial-embedded-hal = "0.1"
+pid = "1.2"
+robot-com = {git = "https://github.com/BearzRobotics/robot-com.git"}

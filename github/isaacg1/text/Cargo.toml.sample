@@ -1,0 +1,9 @@
+[package]
+name = "text"
+version = "0.3.0"
+authors = ["Isaac Grosof <isaacbg227@gmail.com>"]
+
+[dependencies]
+termios = "^0.2"
+libc = "^0.2.21"
+colored = "^1.5.2"

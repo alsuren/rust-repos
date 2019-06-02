@@ -1,0 +1,26 @@
+[package]
+name = "yalp"
+version = "0.1.0"
+authors = ["Marcus Klaas <mail@marcusklaas.nl>"]
+
+[dependencies]
+
+[dependencies.string-interner]
+version = "*"
+default-features = false
+features = []
+
+[dev-dependencies]
+quickcheck = "0.4"
+quickcheck_macros = "0.4"
+
+[features]
+default = []
+
+[lib]
+name = "yalp"
+
+[profile.release]
+debug = true
+lto = false
+

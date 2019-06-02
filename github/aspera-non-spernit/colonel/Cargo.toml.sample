@@ -1,0 +1,11 @@
+[package]
+name = "colonel"
+version = "0.1.0"
+authors = ["aspera-non-spernit <g.s.d>"]
+
+[dependencies]
+uefi = { path = "../uefi-rs" }
+uefi-services = { path = "../uefi-rs/uefi-services" }
+uefi-exts = { path = "../uefi-rs/uefi-exts" }
+
+log = { version = "0.4", default-features = false }

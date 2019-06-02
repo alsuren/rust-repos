@@ -1,0 +1,11 @@
+[package]
+name = "frip"
+version = "0.1.0"
+authors = ["Matt Lawlor <matt.a.lawlor@gmail.com>"]
+
+[dependencies]
+rust-htslib = "0.22.0"
+clap = "~2.27.0"
+bio = "*"
+quick-error = "*"
+lazy_static="*"

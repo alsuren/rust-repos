@@ -1,0 +1,13 @@
+[package]
+name = "rengine"
+version = "0.0.1"
+authors = ["Adrian Revk <ra.dubouchet@gmail.com>"]
+build = "src/build.rs"
+
+[dependencies]
+rand = "0.3"
+gl = "*"
+
+[dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs.git"
+default-features = false

@@ -1,0 +1,9 @@
+[package]
+name = "rustapp"
+version = "0.1.0"
+authors = ["Philip Jackson <p-jackson@live.com>"]
+
+[dependencies]
+algum = { path = "lib/algum" }
+safe-windows = { path = "lib/safe-windows" }
+winapi = "0.2.6"

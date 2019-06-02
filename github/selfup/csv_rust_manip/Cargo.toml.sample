@@ -1,0 +1,7 @@
+[package]
+name = "csv_manip"
+version = "0.1.0"
+authors = ["selfup <boudinot.regis@yahoo.com>"]
+
+[dependencies]
+fut = { git = "https://github.com/selfup/fut" }

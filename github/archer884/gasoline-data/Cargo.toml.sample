@@ -1,0 +1,13 @@
+[package]
+name = "gasoline-data"
+version = "0.1.0"
+authors = ["J/A <archer884@gmail.com>"]
+
+[dependencies]
+diesel = { version = "*", features = ["postgres"] }
+diesel_codegen = { version = "*", features = ["postgres"] }
+dotenv = "*"
+lazy_static = "*"
+r2d2 = "*"
+r2d2-diesel = "*"
+serde = "*"

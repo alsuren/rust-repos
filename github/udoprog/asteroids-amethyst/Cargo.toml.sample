@@ -1,0 +1,17 @@
+[package]
+name = "asteroids-amethyst"
+version = "0.1.0"
+authors = ["John-John Tedro <udoprog@tedro.se>"]
+license = "MIT/Apache-2.0"
+edition = "2018"
+
+[dependencies]
+amethyst = {git = "https://github.com/amethyst/amethyst", version = "*"}
+log = "0.4"
+smallvec = "0.6"
+rand = "0.5"
+ncollide2d = "0.17"
+clap = "2.32"
+
+[features]
+sdl_controller = []

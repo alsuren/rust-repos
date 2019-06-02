@@ -1,0 +1,17 @@
+[package]
+name = "ark"
+version = "0.1.0"
+authors = ["Jan Teske <jan.teske@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0.0"
+spin = "0.4.4"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

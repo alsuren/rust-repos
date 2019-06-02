@@ -1,0 +1,38 @@
+[package]
+name = "cervisia-server"
+version = "0.1.0"
+authors = ["nephtys <christopher.kaag@gmail.com>"]
+
+[dependencies]
+iron = "0.5"
+#rustix-bl = "*"
+rustix-bl = { path = "backend" }
+time = "*"
+staticfile = "0.4"
+env_logger = "*"
+mount = "0.3"
+log = "*"
+chrono = "*"
+lettre = "*"
+lettre_email = "*"
+native-tls = "^0.1"
+uuid = { version = "^0.4", features = ["v4"] }
+notify = "*"
+config = "*"
+toml = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+hyper = "0.11.9"
+reqwest = "*"
+rand = "*"
+router = "0.5"
+lazy_static = "*"
+params = "0.7"
+persistent = "0.3"
+typescriptify-derive = "0.1"
+typescriptify = "0.1"
+zip = "*"
+url = "*"
+mime = "*"
+openssl-probe = "0.1"

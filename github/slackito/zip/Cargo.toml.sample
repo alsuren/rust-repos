@@ -1,0 +1,25 @@
+[package]
+
+name = "zip"
+version = "0.1.0"
+authors = [
+    "Jorge Gorbe <slack@codemaniacs.com>",
+    "Kang Seonghoon <public+rust@mearie.org>",
+    "Nikita Pekin <contact@nikitapek.in>"
+]
+
+description = "A simple rust library for reading and writing ZIP files"
+license = "MIT"
+
+[lib]
+
+name = "zip"
+path = "src/zip/lib.rs"
+
+[[bin]]
+
+name = "zip-demo"
+path = "src/zip-demo/main.rs"
+
+[dependencies]
+maybe_utf8 = "0.2.3"

@@ -1,0 +1,45 @@
+[package]
+
+name = "cryptopals-rust"
+version = "0.0.7"
+authors = ["Derek Guenther <dguenther9@gmail.com>"]
+
+[dependencies]
+log = "0.3.1"
+openssl = "0.6.2"
+
+[lib]
+name = "cryptopalslib"
+path = "src/cryptopalslib/lib.rs"
+
+[[bin]]
+name = "1-1"
+path = "src/set1/1.rs"
+
+[[bin]]
+name = "1-2"
+path = "src/set1/2.rs"
+
+[[bin]]
+name = "1-3"
+path = "src/set1/3.rs"
+
+[[bin]]
+name = "1-4"
+path = "src/set1/4.rs"
+
+[[bin]]
+name = "1-5"
+path = "src/set1/5.rs"
+
+[[bin]]
+name = "1-6"
+path = "src/set1/6.rs"
+
+[[bin]]
+name = "1-7"
+path = "src/set1/7.rs"
+
+[[bin]]
+name = "1-8"
+path = "src/set1/8.rs"

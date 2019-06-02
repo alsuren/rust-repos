@@ -1,0 +1,36 @@
+[package]
+name = "tg-tui"
+version = "0.0.1"
+description = "Terminal user interface client for Telegram"
+authors = ["hcpl <hcpl.prog@gmail.com>"]
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/hcpl/tg-tui"
+repository = "https://github.com/hcpl/tg-tui"
+
+[dependencies]
+app_dirs = "1.1.1"
+chrono = "0.4.0"
+clap = "2.30.0"
+config = "0.8.0"
+cursive = { version = "0.8.0", default-features = false }
+enum-map = "0.2.24"
+env_logger = "0.5.4"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+lazy_static = "1.0.0"
+maplit = "1.0.1"
+pom = "1.1.0"
+rand = "0.4.2"
+serde = "1.0.27"
+serde_derive = "1.0.27"
+structopt = "0.2.4"
+structopt-derive = "0.2.4"
+textwrap = "0.9.0"
+
+[features]
+default = ["ncurses-backend"]
+
+ncurses-backend = ["cursive/ncurses-backend"]
+pancurses-backend = ["cursive/pancurses-backend"]
+termion-backend = ["cursive/termion-backend"]
+blt-backend = ["cursive/blt-backend"]

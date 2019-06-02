@@ -1,0 +1,31 @@
+[package]
+name = "gtk-betas"
+version = "0.2.0"
+authors = ["Stefan Müller <s.mueller@it.kls-glt.de>"]
+description = "Tests für die Grafische Oberfläche der 'xMZ-Mod-Touch'-Platform"
+documentation = "https://zzeroo.github.io/gtk-betas/gtk_betas/index.html"
+homepage = "https://zzeroo.github.io/gtk-betas/"
+repository = "https://github.com/zzeroo/gtk-betas.git"
+license = "GPL-2.0"
+
+[[bin]]
+name = "gtk-betas"
+path = "src/main.rs"
+doc = false
+
+[features]
+development = []
+
+[dependencies]
+error-chain = "^0"
+gdk = { git = "https://github.com/gtk-rs/gdk.git" }
+glib = { git = "https://github.com/gtk-rs/glib.git" }
+gobject-sys = { git = "https://github.com/gtk-rs/sys" }
+gtk = { git = "https://github.com/gtk-rs/gtk.git", features = ["v3_22"] }
+gtk-sys = { git = "https://github.com/gtk-rs/sys.git" }
+hyper = "^0"
+libc = "^0"
+rand = "^0"
+serde = "^0"
+serde_json = "^0"
+xmz_server = { git = "https://github.com/Kliemann-Service-GmbH/xMZ-Mod-Touch-Server.git" }

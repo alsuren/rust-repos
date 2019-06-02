@@ -1,0 +1,10 @@
+[package]
+authors = ["Yohai Berreby (filsmick) <yohaiberreby@gmail.com>"]
+name = "benchmarks"
+version = "0.1.0"
+
+[dev-dependencies]
+chan = "0.1.17"
+crossbeam = "0.2.8"
+libc = "0.2.1"
+rand = "0.3.14"

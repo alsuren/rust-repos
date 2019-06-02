@@ -1,0 +1,9 @@
+[package]
+name = "piecetable"
+version = "0.1.0"
+authors = ["Andreas From <andro.from@gmail.com>"]
+
+[dev-dependencies]
+quickcheck = "*"
+quickcheck_macros = "*"
+rand = "0.3"

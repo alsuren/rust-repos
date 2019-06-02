@@ -1,0 +1,104 @@
+[package]
+
+name = "gnuplot"
+version = "0.0.31" #auto
+license = "LGPL-3.0"
+repository = "https://github.com/SiegeLord/RustGnuplot"
+documentation = "http://siegelord.github.io/RustGnuplot/doc/gnuplot/index.html"
+keywords = ["plots", "graphics", "plotting", "gnuplot", "visualization"]
+authors = [ "SiegeLord <slabode@aim.com>" ]
+description = "Rust gnuplot controller"
+autobins = false
+autoexamples = false
+autotests = false
+autobenches = false
+categories = ["visualization"]
+edition = "2018"
+
+[lib]
+
+name = "gnuplot"
+path = "src/lib.rs"
+
+[dev-dependencies]
+
+argparse-rs = "=0.1.0"
+tempfile = "3.0"
+
+[[example]]
+
+name = "example1"
+path = "examples/example1.rs"
+
+[[example]]
+
+name = "example2"
+path = "examples/example2.rs"
+
+[[example]]
+
+name = "example3"
+path = "examples/example3.rs"
+
+[[example]]
+
+name = "example4"
+path = "examples/example4.rs"
+
+[[example]]
+
+name = "animation_example"
+path = "examples/animation_example.rs"
+
+[[example]]
+
+name = "box_and_whisker"
+path = "examples/box_and_whisker.rs"
+
+[[example]]
+
+name = "lines_3d"
+path = "examples/lines_3d.rs"
+
+[[example]]
+
+name = "points_3d"
+path = "examples/points_3d.rs"
+
+[[example]]
+
+name = "lines_points_3d"
+path = "examples/lines_points_3d.rs"
+
+[[example]]
+
+name = "readme_example"
+path = "examples/readme_example.rs"
+
+[[example]]
+
+name = "time"
+path = "examples/time.rs"
+
+[[example]]
+
+name = "gif"
+path = "examples/gif.rs"
+
+[[example]]
+
+name = "color_cycling"
+path = "examples/color_cycling.rs"
+
+[[example]]
+
+name = "dash_type"
+path = "examples/dash_type.rs"
+
+[[example]]
+
+name = "patterns"
+path = "examples/patterns.rs"
+
+[dependencies]
+byteorder = "1.3.1"

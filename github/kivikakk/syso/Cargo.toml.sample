@@ -1,0 +1,22 @@
+[package]
+name = "syso"
+version = "0.0.1"
+authors = ["Yuki Izumi <yuki@kivikakk.ee>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0.0"
+cpuio = "0.2.0"
+multiboot2 = "0.3.1"
+x86 = { git = "https://github.com/gz/rust-x86.git", default-features = false }
+
+[dependencies.hole_list_allocator]
+path = "libs/hole_list_allocator"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

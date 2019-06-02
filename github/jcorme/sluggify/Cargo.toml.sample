@@ -1,0 +1,7 @@
+[package]
+name = "sluggify"
+version = "0.1.0"
+authors = ["Jason Chen <jason+dev@ga.jcor.me>"]
+
+[dependencies]
+unicode-normalization = "*"

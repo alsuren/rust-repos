@@ -1,0 +1,8 @@
+[package]
+name = "webstorm-ts-import-fixer"
+version = "0.1.0"
+authors = ["Henry Zimmerman <hzimmerman@ocient.com>"]
+
+[dependencies]
+regex = "0.2"
+clap = "2.26.0"

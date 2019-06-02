@@ -1,0 +1,25 @@
+[workspace]
+members = [
+    "c",
+    "canvas",
+    "demo/android/rust",
+    "demo/common",
+    "demo/magicleap",
+    "demo/native",
+    "examples/canvas_minimal",
+    "examples/canvas_moire",
+    "examples/canvas_text",
+    "examples/lottie_basic",
+    "geometry",
+    "gl",
+    "gpu",
+    "lottie",
+    "renderer",
+    "simd",
+    "svg",
+    "text",
+    "ui",
+    "utils/area-lut",
+    "utils/gamma-lut",
+    "utils/svg-to-skia"
+]

@@ -1,0 +1,10 @@
+[package]
+name = "doorwayd"
+version = "0.1.0"
+authors = ["fennekki"]
+
+[dependencies]
+rust-crypto = "*"
+chrono = "*"
+rand = "*"
+xdg = "*"

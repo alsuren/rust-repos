@@ -1,0 +1,46 @@
+[package]
+name             = "editeur"
+version          = "0.1.0"
+authors          = [
+        "adjivas <adjivas@users.noreply.github.com>",
+        "brezaire <voncay@users.noreply.github.com>",
+        "jpepin <limaconoob@users.noreply.github.com>"
+]
+description      = "Character expression editor"
+documentation    = "https://arukana.github.io/Editeur/editeur"
+repository       = "https://github.com/arukana/Editeur.git"
+readme           = "README.md"
+build            = "build.rs"
+keywords         = ["character", "expression", "editor"]
+license          = "GPL-3.0"
+
+[[bin]]
+name = "editeur"
+test = false
+doc = false
+
+[lib]
+test = false
+doctest = false
+
+[features]
+default          = []
+lints            = ["clippy", "nightly"]
+nightly          = [] # for building with nightly and unstable features
+unstable         = [] # for building with unstable features on stable Rust
+debug            = [] # for building with debug messages
+travis           = ["lints", "nightly"] # for building with travis-cargo
+
+[dependencies.clippy]
+version          = "*"
+optional         = true
+
+[dependencies.clipboard]
+version          = "0.1.2"
+optional         = true
+
+[dependencies.termion]
+version          = "1.0"
+
+[dependencies.time]
+version          = "0.1"

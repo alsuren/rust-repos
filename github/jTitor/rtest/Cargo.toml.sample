@@ -1,0 +1,32 @@
+[package]
+name = "rtest"
+version = "0.0.1"
+authors = [ "jTitor <me@me.me>" ]
+
+[dependencies]
+#Simpler and easier-to-convert errors
+failure = "*"#"0.1.1"
+
+log = "*"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+#This is needed for testing on macOS,
+#as the native GUI tests will freak out
+#if window generation isn't run on the main thread.
+dispatch = "*"
+
+# [[bin]]
+# name = "rtest"
+# doc = false
+
+[[test]]
+#Path to the root file for the unit tests.
+#As with [[bin]]/[[lib]] assuming CWD prefix is "./src",
+#this assumes CWD prefix is "./tests".
+name = "lib"
+#This disables the standard Rust test harness,
+#and instead builds the test crate as a binary.
+#Unclear if Cargo will still run the resulting binary
+#when ```cargo test``` is invoked, but exit code 0
+#indicates success and exit code 1 failure.
+harness = false

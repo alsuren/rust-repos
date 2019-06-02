@@ -1,0 +1,8 @@
+[package]
+name = "chess_ctl"
+version = "0.1.0"
+authors = ["Sindre Stephansen <sindre@sindrestephansen.com>"]
+
+[dependencies]
+chess = { git = "https://github.com/kalkins/rust_chess"}
+pancurses = "0.4.*"

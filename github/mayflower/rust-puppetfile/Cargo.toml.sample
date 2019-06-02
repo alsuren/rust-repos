@@ -1,0 +1,19 @@
+[package]
+
+name = "puppetfile"
+version = "0.2.2"
+authors = ["Robin Gloster <robin.gloster@mayflower.de>"]
+license = "MIT OR Apache-2.0"
+description = "Puppetfile parser"
+documentation = "http://mayflower.github.io/rust-puppetfile"
+homepage = "https://github.com/Mayflower/rust-puppetfile"
+repository = "https://github.com/Mayflower/rust-puppetfile"
+readme = "README.md"
+keywords = ["puppetfile", "parser", "r10k"]
+
+[dependencies]
+semver = "0.2.0"
+url = "0.5.2"
+hyper = "0.7.0"
+log = "0.3.1"
+rustc-serialize = "0.3.10"

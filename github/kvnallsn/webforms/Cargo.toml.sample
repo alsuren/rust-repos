@@ -1,0 +1,13 @@
+[workspace]
+
+members = [
+    "webforms",
+    "webforms_derive",
+    "webforms_test",
+]
+
+[patch.crates-io]
+askama = { path = "../../rust/askama/askama" }
+askama_derive = { path = "../../rust/askama/askama_derive" }
+askama_escape = { path = "../../rust/askama/askama_escape" }
+askama_shared = { path = "../../rust/askama/askama_shared" }

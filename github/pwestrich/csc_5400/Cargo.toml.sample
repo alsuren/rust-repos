@@ -1,0 +1,10 @@
+[package]
+name = "csc_5400"
+version = "0.1.0"
+authors = ["Philip Westrich <pwestrich@me.com>"]
+
+[dependencies]
+
+nom 			= "1.2.*"
+num-complex = "0.1.*"
+rand 			= "0.3.*"

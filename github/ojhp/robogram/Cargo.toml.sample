@@ -1,0 +1,12 @@
+[package]
+name = "robogram"
+version = "0.1.0"
+authors = ["Owen Platt <owen@owenplatt.com>"]
+
+[dependencies]
+reqwest = "0.5"
+serde = "^0.9"
+serde_derive = "^0.9"
+
+[dev-dependencies]
+serde_json = "^0.9"

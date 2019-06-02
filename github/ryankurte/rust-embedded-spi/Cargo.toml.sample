@@ -1,0 +1,24 @@
+[package]
+name = "embedded-spi"
+description = "Rust embedded driver helper package"
+repository = "https://github.com/ryankurte/rust-embedded-spi"
+version = "0.5.6"
+authors = ["Ryan Kurte <ryankurte@gmail.com>"]
+edition = "2018"
+license = "MIT"
+
+[features]
+mock = []
+ffi = [ "libc" ]
+utils = [ "toml", "structopt", "serde", "simplelog", "linux-embedded-hal" ]
+default = [ "mock", "ffi", "utils" ]
+
+[dependencies]
+embedded-hal = { version = "0.2.3", features = ["unproven"] }
+libc = { version = "0.2.54", optional = true }
+log = "0.4.6"
+serde = { version = "1.0.91", features = ["derive"], optional = true }
+toml = { version = "0.5.1", optional = true }
+structopt = { version = "0.2.15", optional = true }
+simplelog = { version = "0.5.3", optional = true }
+linux-embedded-hal = { version = "0.2.2", optional = true }

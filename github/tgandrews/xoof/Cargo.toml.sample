@@ -1,0 +1,11 @@
+[package]
+name = "xoof"
+version = "0.1.0"
+authors = ["Tom Andrews <git@tomandrews.co.uk>"]
+
+[[bin]]
+name = "xoof"
+path = "src/main.rs"
+
+[dependencies]
+getopts = "0.2"

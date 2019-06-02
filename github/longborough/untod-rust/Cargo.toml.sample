@@ -1,0 +1,11 @@
+[package]
+name = "untod"
+version = "1.0.0"
+authors = ["Brent Longborough <brent@llwyd-consulting.cymru>"]
+
+[dependencies]
+chrono = "*"
+clap   = "2"
+time   = "*"
+clipboard = "*"
+clipboard-win = ">=2.1.2"

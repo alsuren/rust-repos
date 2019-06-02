@@ -1,0 +1,22 @@
+[package]
+name = "neodex"
+version = "0.1.0"
+authors = ["Krnik <marcin11qwerty@gmail.com>"]
+edition = "2018"
+
+[lib]
+path = "./neodex/lib.rs"
+
+[dependencies]
+nody = { path = "./nody" }
+serde = "1.0.90"
+serde_derive = "1.0.90"
+
+[workspace]
+members = [
+    "./populate",
+    "./api",
+    "./nody",
+    "./nody/nody_derive",
+    "./libs/rusted_cypher"
+]

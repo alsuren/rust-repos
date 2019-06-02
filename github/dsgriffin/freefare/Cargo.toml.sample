@@ -1,0 +1,16 @@
+[package]
+name = "freefare"
+version = "0.2.0"
+authors = ["Daniel Griffin <mail@danielgriffin.me>"]
+description = "Rust bindings for the libfreefare library"
+documentation = "https://github.com/dsgriffin/freefare"
+homepage = "https://github.com/dsgriffin/freefare"
+repository = "https://github.com/dsgriffin/freefare"
+readme = "README.md"
+keywords = ["device", "communication", "nfc"]
+license = "MIT"
+
+[dependencies]
+libc = "0.2.0"
+nfc-sys = "0.1.5"
+freefare-sys = "0.2.0"

@@ -1,0 +1,12 @@
+[package]
+name = "ulnk"
+version = "0.1.0"
+authors = ["Dominik Winecki <dominikwinecki@gmail.com>"]
+
+[dependencies]
+config = "*"
+log = "*"
+env_logger = "*"
+postgres  = "*"
+clap = "*"
+iron = "*"

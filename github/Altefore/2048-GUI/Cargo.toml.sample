@@ -1,0 +1,10 @@
+[package]
+name = "2048_gui"
+version = "0.1.0"
+authors = ["Jon, Jon, Natasha"]
+
+[dependencies]
+lib_2048 = { git = "https://bitbucket.org/AdrienChampion/rust_2048.git", rev = "3791048" }
+
+piston_window = "*"
+

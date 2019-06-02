@@ -1,0 +1,55 @@
+[package]
+name = "geekapk_r"
+version = "0.1.0"
+authors = ["duangsuse <fedora-opensuse@outlook.com>"]
+license = "AGPL-3.0"
+
+description = "GeekApk Server"
+readme = "README.md"
+documentation = "https://geekapk-r.github.io/ServerR"
+
+homepage = "https://geekapk.org"
+repository = "https://github.com/geekapk-r/ServerR"
+keywords = ["geekapk", "android", "community", "server", "restful-api", "diesel-rs", "rocket-rs"]
+publish = false
+
+[[bin]]
+name = "geekapkd"
+path = "src/main.rs"
+
+[dependencies]
+lazy_static = "1"
+
+# WebSocket API
+tungstenite = "0.5.3"
+
+# Rocket.rs Web Framework
+rocket = "0.3"
+rocket_codegen = "0.3"
+
+# ORM
+diesel = { version = "1.3", features = ["postgres"] }
+dotenv = "0.9.0"
+
+r2d2 = "0.8"
+r2d2-diesel = "1.0"
+
+yansi = "0.4"
+
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+rocket_contrib = { version = "0.3", features = ["json"] }
+
+futures = "0.1"
+hyper = "0.11"
+tokio-core = "0.1"
+
+[badges]
+travis-ci = { repository = "geekapk-r/ServerR" }
+
+is-it-maintained-issue-resolution = { repository = "geekapk/GeekApkR" }
+is-it-maintained-open-issues = { repository = "geekapk/GeekApkR" }
+
+maintenance = { status = "actively-developed" }

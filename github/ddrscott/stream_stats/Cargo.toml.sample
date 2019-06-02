@@ -1,0 +1,11 @@
+[package]
+name = "stream_stats"
+version = "0.1.1"
+authors = ["Scott Pierce <ddrscott@gmail.com>"]
+description = "Display realtime statistics from stdin. `gunzip -c foo.gz | stream_stats > foo`"
+homepage = "https://github.com/ddrscott/stream_stats"
+repository = "https://github.com/ddrscott/stream_stats"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]

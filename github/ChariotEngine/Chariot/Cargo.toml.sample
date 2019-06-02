@@ -1,0 +1,44 @@
+[package]
+name = "chariot"
+version = "0.1.0"
+authors = ["Kevin Fuller <angered.ghandi@gmail.com>", "Taryn Hill <taryn@phrohdoh.com>"]
+
+[workspace]
+members = ["crates/file_formats/dat",
+           "crates/file_formats/language",
+           "crates/file_formats/scn",
+           "crates/media",
+           "crates/resource",
+           "crates/types",
+           "crates/identifier",
+           "tools/slp_viewer"]
+
+[profile.dev]
+opt-level = 1
+
+[dependencies]
+clap = "2.17"
+lazy_static = "0.2"
+nalgebra = "0.12"
+num = "0.1"
+specs = "0.7"
+time = "0.1"
+chariot_drs = "0.1"
+chariot_slp = "0.1"
+chariot_palette = "0.1"
+
+[dependencies.chariot_dat]
+path = "crates/file_formats/dat"
+[dependencies.chariot_language]
+path = "crates/file_formats/language"
+[dependencies.chariot_scn]
+path = "crates/file_formats/scn"
+
+[dependencies.chariot_media]
+path = "crates/media"
+[dependencies.chariot_resource]
+path = "crates/resource"
+[dependencies.chariot_types]
+path = "crates/types"
+[dependencies.chariot_identifier]
+path = "crates/identifier"

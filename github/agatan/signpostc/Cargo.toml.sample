@@ -1,0 +1,7 @@
+[package]
+name = "signpostc"
+version = "0.1.0"
+authors = ["agatan <agatan039@gmail.com>"]
+
+[dependencies]
+signpostc_syntax = { path = "./syntax" }

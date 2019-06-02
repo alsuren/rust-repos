@@ -1,0 +1,9 @@
+[package]
+name = "kata-karate-chop"
+version = "0.1.0"
+authors = ["Billie Thompson <billie@billiecodes.com>"]
+
+
+[lib]
+name = "katakaratechop"
+path = "src/lib.rs"

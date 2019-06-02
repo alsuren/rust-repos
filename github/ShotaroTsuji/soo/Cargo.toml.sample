@@ -1,0 +1,10 @@
+[package]
+name = "soo"
+version = "0.1.0"
+authors = ["Shotaro Tsuji <Shotaro.Tsuji@gmail.com>"]
+
+[dependencies]
+eom = "0.10.0"
+ndarray = { version = "0.11.0", features = ["blas"] }
+toml = "0.4.2"
+broto = { git = "https://github.com/ShotaroTsuji/broto" }

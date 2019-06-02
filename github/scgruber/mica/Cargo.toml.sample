@@ -1,0 +1,9 @@
+[package]
+name = "mica"
+version = "0.1.0"
+authors = ["Sam Gruber <grubermensch@gmail.com>"]
+
+[dependencies]
+iron = "*"
+rustc-serialize = "*"
+handlebars-iron = "*"

@@ -1,0 +1,23 @@
+[package]
+name = "gtk-rs-examples"
+version = "0.0.1"
+authors = ["The Gtk-rs Project Developers"]
+
+[dependencies]
+glib = "^0"
+gdk = "^0"
+gdk-pixbuf = "^0"
+gtk = "^0"
+cairo-rs = "^0"
+
+[features]
+gtk_3_10 = ["gtk/v3_10"]
+
+[[bin]]
+name = "gtktest"
+
+[[bin]]
+name = "sync_widgets"
+
+[[bin]]
+name = "text_viewer"

@@ -1,0 +1,20 @@
+[package]
+name = "conway"
+version = "0.1.0"
+authors = ["Arnau Siches <asiches@gmail.com>"]
+
+[dependencies]
+sdl2 = "0.27"
+rand = "0.3"
+ndarray = "*"
+# rulinalg = "*"
+
+# https://docs.rs/cgmath/0.12.0/cgmath/trait.Rotation2.html
+# cgmath = "*"
+itertools = "*"
+glium = "*"
+glutin = "*"
+clippy = {version = "*", optional = true}
+
+[features]
+default = []

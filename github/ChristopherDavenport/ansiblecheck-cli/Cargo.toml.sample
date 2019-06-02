@@ -1,0 +1,7 @@
+[package]
+name = "ansiblecheck-cli"
+version = "0.1.0"
+authors = ["Christopher Davenport <chris@christopherdavenport.tech>"]
+
+[dependencies]
+clap = "~2.19.0"

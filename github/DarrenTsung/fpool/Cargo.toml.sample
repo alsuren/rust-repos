@@ -1,0 +1,16 @@
+[package]
+name = "fpool"
+version = "0.4.0"
+license = "MIT"
+authors = ["Darren Tsung <darren@onesignal.com>"]
+description = "Non-leased object-pooling."
+homepage = "https://github.com/DarrenTsung/fpool"
+repository = "https://github.com/DarrenTsung/fpool"
+readme = "README.md"
+keywords = ["pool", "object-pool"]
+
+[badges.travis-ci]
+repository = "DarrenTsung/fpool"
+branch = "master"
+
+[dependencies]

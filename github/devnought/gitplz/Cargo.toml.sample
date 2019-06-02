@@ -1,0 +1,19 @@
+[package]
+edition = "2018"
+name = "git-plz"
+version = "0.6.1"
+authors = ["Kyle Gretchev <kgretchev@gmail.com>"]
+
+[workspace]
+
+[dependencies]
+atty = "0.2"
+color_printer = { path = "color_printer" }
+command = { path = "command" }
+gitlib = { path = "gitlib" }
+structopt = { version = "0.2", default-features = false, features = [ "suggestions" ] }
+threadpool = "1.7.1"
+util = { path = "util" }
+
+[profile.release]
+lto = true

@@ -1,0 +1,9 @@
+[package]
+name = "cron"
+version = "0.1.0"
+authors = ["Guillem Nieto <gnieto.talo@gmail.com>"]
+
+[dependencies]
+time = "0.1"
+uuid = "0.1"
+threadpool = "*"

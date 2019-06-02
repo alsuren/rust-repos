@@ -1,0 +1,52 @@
+[package]
+authors = ["SAPikachu <sapikachu@gmail.com>"]
+description = "Recursive DNS resolver"
+homepage = "https://github.com/SAPikachu/euphonium"
+keywords = ["dns", "recursive", "mioco"]
+license = "MPL-2.0"
+name = "euphonium"
+readme = "README.md"
+repository = "https://github.com/SAPikachu/euphonium"
+version = "0.1.0"
+
+[dependencies]
+byteorder = "0.5.*"
+chrono = "^0.4"
+data-encoding = "^1.2.0"
+docopt = "^0.8.1"
+env_logger = "*"
+itertools = "*"
+log = "*"
+macro-attr = "*"
+mio = "^0.5.1"
+mioco = { git = "https://github.com/dpc/mioco.pre-0.9.git", rev = "23484def102216b3cfc09af4e3a9b15d622dc77e" }
+newtype_derive = "0.1.*"
+nix = "0.8.1"
+parking_lot = "^0.4"
+privdrop = "0.1.3"
+quick-error = "^1.2"
+rand = "*"
+serde = "^1.0.27"
+serde_json = "*"
+serde_yaml = "=0.7.3"
+serde_derive = "*"
+time = "*"
+treebitmap = { git = "https://github.com/sopium/treebitmap.git" }
+# trust-dns = { version = "^0.13.0", features = ["dnssec-openssl"] }
+trust-dns = { git = "https://github.com/bluejekyll/trust-dns.git", rev = "77218fa1b80aa113571a339c1171bd0ca9288b06", features = ["dnssec-openssl"] }
+# trust-dns-proto = { version = ">=0.3", features = ["dnssec-openssl"] }
+trust-dns-proto = { git = "https://github.com/bluejekyll/trust-dns.git", rev = "77218fa1b80aa113571a339c1171bd0ca9288b06", features = ["dnssec-openssl"] }
+yaml-rust = "*"
+lazy_static = "*"
+linked-hash-map = "0.5"
+pnet_datalink = "^0.20.0"
+
+[dev-dependencies]
+rustc-serialize = "*"
+timebomb = { git = "https://github.com/SAPikachu/timebomb.git" } 
+
+[replace]
+
+[lib]
+name = "eulib"
+path = "src/lib.rs"

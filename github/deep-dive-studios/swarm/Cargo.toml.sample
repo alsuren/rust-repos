@@ -1,0 +1,8 @@
+[package]
+authors = ["Ivan Dmitrievsky <ivan.dmitrievsky@gmail.com>"]
+name = "swarm"
+version = "0.0.1"
+
+[dependencies]
+attempt = { git = "https://github.com/deep-dive-studios/rust-attempt" }
+piston_window = "*"

@@ -1,0 +1,16 @@
+[package]
+name = "word-forms-rust"
+version = "0.1.0"
+authors = ["wucong <1875486458@qq.com>"]
+
+[dependencies]
+failure = "0.1.1"
+rayon = "1.0.2"
+log = "0.4.3"
+strum = "0.10.0"
+strum_macros = "0.10.0"
+lazy_static = "1.0.2"
+itertools = "0.7.8"
+cute = "0.3.0"
+difflib = "0.4.0"
+Inflector = "0.11.3"

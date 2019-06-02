@@ -1,0 +1,11 @@
+[package]
+name = "asf"
+version = "0.1.1"
+authors = ["PyYoshi <myoshi321go@gmail.com>"]
+
+[features]
+default = []
+
+[dependencies]
+log = "~0.4"
+nom = "~4.0"

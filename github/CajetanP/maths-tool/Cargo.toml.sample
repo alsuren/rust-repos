@@ -1,0 +1,12 @@
+[package]
+name = "mathstool"
+version = "0.1.0"
+authors = ["Cajetan Puchalski <cajetan.puchalski@gmail.com>"]
+
+[dependencies]
+clap = "2.26.0"
+meval = "0.0.9"
+
+[[bin]]
+name = "mathstool"
+doc = false

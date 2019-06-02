@@ -1,0 +1,19 @@
+[package]
+name = "lag"
+version = "0.1.0"
+authors = ["Marcus Ball <marcus.ball@live.com>"]
+
+[dependencies]
+mio = "0.5.0"
+bytes = "0.3.0"
+byteorder = "0.3"
+log = "0.3.5"
+env_logger = "0.3.3"
+
+[[bin]]
+name = "lag-server"
+path = "src/server/main.rs"
+
+[lib]
+name = "lag_client"
+path = "src/client/lib.rs"

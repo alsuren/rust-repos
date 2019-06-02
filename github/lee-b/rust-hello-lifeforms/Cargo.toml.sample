@@ -1,0 +1,11 @@
+[package]
+name = "lforms"
+version = "0.1.0"
+authors = [ "Lee Braiden <leebraid@gmail.com>" ]
+
+[dependencies]
+rand = "*"
+
+[[bin]]
+name = "lforms"
+

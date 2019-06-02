@@ -1,0 +1,10 @@
+[package]
+name = "tone-typer"
+version = "0.1.0"
+authors = ["Thomas English <thomas.english@eunetworks.com>"]
+edition = "2018"
+build = "build.rs"
+
+
+[dependencies]
+amethyst = { git = "https://github.com/amethyst/amethyst" }

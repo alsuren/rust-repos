@@ -1,0 +1,10 @@
+[package]
+name = "ed25519-hd-key"
+version = "0.1.0"
+authors = ["Taras Shchybovyk <tshchybo@gmail.com>"]
+
+[dependencies]
+hmac = "0.5"
+sha2 = "0.7"
+sodiumoxide = "0.0.16"
+regex = "0.2"

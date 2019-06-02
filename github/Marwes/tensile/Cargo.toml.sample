@@ -1,0 +1,28 @@
+[package]
+name = "tensile"
+version = "0.4.1-alpha.0"
+authors = ["Markus Westerlind <marwes91@gmail.com>"]
+
+license = "MIT"
+
+description = "A test framework capable of dynamic and parallel test execution"
+
+repository = "https://github.com/Marwes/tensile"
+documentation = "https://docs.rs/tensile"
+readme = "README.md"
+
+[dependencies]
+failure = "0.1"
+futures = "0.1"
+num_cpus = "1.7.0"
+structopt = "0.2.0"
+structopt-derive = "0.2.0"
+termcolor = "0.3"
+tokio-executor = "0.1"
+
+[dev-dependencies]
+tokio = "0.1"
+
+[[test]]
+name = "dog_food"
+harness = false

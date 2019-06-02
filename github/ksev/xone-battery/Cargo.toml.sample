@@ -1,0 +1,18 @@
+[package]
+name = "xone-battery"
+version = "0.1.0"
+authors = ["Kim Sevandersson<ksevandersson@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+uuid = { version = "0.3.0", features = ["v5"] }
+winapi = { version = "0.3", features = ["xinput", "winuser", "shellapi", "std", "libloaderapi", "winerror"] }
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'abort'

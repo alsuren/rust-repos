@@ -1,0 +1,37 @@
+[package]
+name = "tower-h2"
+version = "0.1.0"
+authors = [
+  "Carl Lerche <me@carllerche.com>",
+  "Oliver Gould <ver@buoyant.io>",
+]
+license = "MIT"
+description = "Provides an HTTP/2.0 Tower Service"
+publish = false
+
+[workspace]
+
+members = [
+    "tower-balance",
+    "tests",
+]
+
+[dependencies]
+bytes = "0.4"
+futures = "0.1"
+h2 = "0.1.11"
+http = "0.1"
+log = "0.4"
+tokio-connect = { git = "https://github.com/carllerche/tokio-connect" }
+tokio-io = "0.1"
+tower-service = "0.2"
+tower-http = { git = "https://github.com/tower-rs/tower-http" }
+tower = { git = "https://github.com/tower-rs/tower" }
+
+[dev-dependencies]
+env_logger = { version = "^0.5", default-features = false }
+string = "0.1"
+tokio = "0.1"
+
+[patch."https://github.com/tower-rs/tower"]
+tower-service = "0.2"

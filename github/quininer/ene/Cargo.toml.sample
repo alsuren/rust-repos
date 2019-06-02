@@ -1,0 +1,57 @@
+[package]
+name = "ene"
+version = "0.1.0"
+authors = ["quininer <quininer@live.com>"]
+description = "ENE is an end-to-end encryption tool designed for mail"
+categories = [ "cryptography", "command-line-utilities" ]
+license = "MIT"
+edition = "2018"
+
+[workspace]
+members = [ "core" ]
+
+[features]
+post-quantum = [ "ene-core/post-quantum" ]
+
+[dependencies]
+ene-core = { path = "./core" }
+
+argon2rs = { version = "0.2", features = [ "simd" ] }
+rand = "0.5"
+serde = "1"
+serde_bytes = "0.10"
+serde_cbor = "0.9"
+
+failure = "0.1"
+clap = "2"
+structopt = "0.2"
+# human-panic = "*"
+directories = "1"
+termcolor = "1"
+ttyaskpass = { git = "https://github.com/quininer/ttyaskpass", branch = "mortal" }
+seckey = { version = "^0.9.1", features = [ "nightly" ] }
+
+sled = "0.15"
+
+[build-dependencies]
+clap = "2"
+structopt = "0.2"
+ene-core = { path = "./core" }
+
+[dev-dependencies]
+escargot = "0.3"
+assert_fs = "0.9"
+assert_cmd = "0.9"
+
+[patch.crates-io]
+terminfo = { git = "https://github.com/meh/rust-terminfo", rev = "abb548b47dab42c4354c6088cf5695c6d4454ed9" }
+
+[badges]
+travis-ci = { repository = "quininer/ene" }
+appveyor = { repository = "quininer/ene" }
+
+[badges.maintenance]
+status = "experimental"
+
+[profile.release]
+lto = true

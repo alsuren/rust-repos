@@ -1,0 +1,20 @@
+[package]
+name = "toa-find"
+version = "0.1.1"
+authors = ["Douman <douman@gmx.se>"]
+categories = ["command-line-utilities"]
+description = "Kawaii GNU find replacement"
+
+homepage = "https://github.com/DoumanAsh/toa-find"
+repository = "https://github.com/DoumanAsh/toa-find"
+
+readme = "README.md"
+keywords = ["find"]
+license = "MIT"
+
+[dependencies]
+regex = "^0.2"
+walkdir = "^1"
+
+[profile.release]
+lto = true

@@ -1,0 +1,17 @@
+[package]
+
+name = "webtop"
+version = "0.0.1"
+authors = [ "Virgil Dupras <hsoft@hardcoded.net>" ]
+
+[[bin]]
+
+name = "webtop"
+
+[dependencies]
+libc = "0.1"
+time = "0.1"
+regex = "0.1"
+ncurses = "5"
+number_prefix = "0.2"
+

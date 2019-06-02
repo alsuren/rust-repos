@@ -1,0 +1,13 @@
+[package]
+name = "immi_test"
+version = "0.1.0"
+authors = ["Tyler Conrad <conradtyler0@gmail.com>"]
+edition = "2018"
+
+[dependencies.quicksilver]
+version = "0.3.2"
+default-features = true
+features = ["immi_ui"]
+
+[dependencies]
+immi = "1.0.4"

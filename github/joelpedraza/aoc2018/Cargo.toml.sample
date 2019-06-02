@@ -1,0 +1,10 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["Joel Pedraza <jpedraza@chewy.com>"]
+
+[dependencies]
+bit-set = "0.5.0"
+
+[features]
+unstable = []

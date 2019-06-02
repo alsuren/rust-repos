@@ -1,0 +1,10 @@
+[package]
+name = "reconstruction"
+version = "0.1.0"
+authors = ["Zaheer Chothia <zchothia@inf.ethz.ch>"]
+
+[dependencies]
+abomonation = "0.5"
+abomonation_derive = "0.3"
+rand = "0.4"
+timely = "0.5"

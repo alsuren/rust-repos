@@ -1,0 +1,9 @@
+[package]
+name = "hello-rust"
+version = "0.1.0"
+authors = ["gavinzhou <gavin.zhou@gmail.com>"]
+
+[dependencies]
+
+[dependencies.iron]
+version = "*"

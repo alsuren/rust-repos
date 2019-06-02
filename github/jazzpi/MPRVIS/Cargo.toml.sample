@@ -1,0 +1,21 @@
+[package]
+name = "mprvis"
+version = "0.1.0"
+authors = ["jazzpi <jasper@mezzo.de>"]
+
+[profile.dev]
+opt-level = 0
+
+[dependencies]
+
+dbus = "0.6.2"
+curl = "0.4.12"
+cairo-rs = "0.4.0"
+gio = "0.4.1"
+gdk = "0.8.0"
+gdk-pixbuf = "0.4.0"
+glib = "0.5.0"
+
+[dependencies.gtk]
+version = "0.4.1"
+features = ["v3_10"]

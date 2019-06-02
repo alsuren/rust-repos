@@ -1,0 +1,13 @@
+[package]
+name = "tinyrenderer-rs"
+version = "0.1.0"
+authors = ["reeFridge <reefridgerator@gmail.com>"]
+
+[dependencies]
+image = "*"
+sdl2 = "*"
+cgmath = "*"
+
+[dependencies.assimp]
+version = "*"
+features = ["cgmath"]

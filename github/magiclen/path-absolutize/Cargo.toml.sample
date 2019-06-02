@@ -1,0 +1,19 @@
+[package]
+name = "path-absolutize"
+version = "1.1.5"
+authors = ["Magic Len <len@magiclen.org>"]
+repository = "https://github.com/magiclen/path-absolutize"
+homepage = "https://magiclen.org/path-absolutize"
+keywords = ["path", "dot", "dedot", "absolute", "canonical"]
+categories = ["parser-implementations", "filesystem"]
+description= "A library for extending `Path` and `PathBuf` in order to get an absolute path and remove the containing dots."
+readme = "README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "magiclen/path-absolutize", branch = "master" }
+appveyor = { repository = "magiclen/path-absolutize", branch = "master", service = "github" }
+
+[dependencies]
+path-dedot = "1.1.11"
+slash-formatter = "2.2.1"

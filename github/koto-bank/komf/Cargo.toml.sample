@@ -1,0 +1,26 @@
+[package]
+name = "komf"
+version = "0.1.0"
+authors = ["TyanNN <tyannn@cocaine.ninja>"]
+
+[dependencies]
+iron = "*"
+staticfile = "*"
+mount = "*"
+
+serde = "*"
+serde_derive = "*"
+
+maud = { git = "https://github.com/lfairy/maud", features = ["iron"] }
+maud_macros = { git = "https://github.com/lfairy/maud" }
+
+multipart = { version = "0.13.6", features = [ "iron" ] }
+sha1 = "*"
+rand = "0.4.5"
+lazy_static = "*"
+chrono = { version = "*", features = [ "serde" ] }
+
+[dependencies.rustbreak]
+version = "1.4.0"
+default-features = false
+features = ["yaml"]

@@ -1,0 +1,9 @@
+[package]
+name = "perf"
+version = "0.1.0"
+authors = ["Evgeny Fomin <fominok@hotmail.com>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1"
+rayon = "1.0.3"

@@ -1,0 +1,11 @@
+[package]
+name = "cryptochallenges"
+version = "0.1.0"
+authors = ["Mark Wright <mwright@cygnacom.com>"]
+
+[dependencies]
+base64 = "*"
+rust-crypto = "*"
+rand = "*"
+itertools = "*"
+lazy_static = "*"

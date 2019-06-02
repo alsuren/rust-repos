@@ -1,0 +1,9 @@
+[package]
+name = "toffee"
+version = "0.2.0"
+authors = ["Johan Sjölin <johan.sjolin@gmail.com>"]
+
+[dependencies.sdl2]
+version = "0.31"
+default-features = false
+features = ["image", "unsafe_textures"]

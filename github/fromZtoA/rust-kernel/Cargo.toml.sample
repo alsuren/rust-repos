@@ -1,0 +1,11 @@
+[package]
+name = "rust-kernel"
+version = "0.1.0"
+authors = ["fromAtoZ <fromAtoZ.cn@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+path = "lib.rs"
+
+[dependencies]
+rlibc = "1.0.0"

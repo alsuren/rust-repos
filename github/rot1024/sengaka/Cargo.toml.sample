@@ -1,0 +1,16 @@
+[package]
+name = "sengaka"
+version = "0.2.0"
+authors = ["rot1024 <aayhrot@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+image = "0.21.0"
+num-traits = "0.2.6"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

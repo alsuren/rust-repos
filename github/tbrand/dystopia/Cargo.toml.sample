@@ -1,0 +1,41 @@
+[package]
+name = "dytp"
+version = "0.1.0"
+authors = ["taicsuzu <taichiro0709@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+dytp-cli = { path = "dytp-cli", optional = true }
+dytp-cloud = { path = "dytp-cloud", optional = true }
+dytp-component = { path = "dytp-component" }
+dytp-connection = { path = "dytp-connection" }
+dytp-future = { path = "dytp-future" }
+dytp-gateway = { path = "dytp-gateway", optional = true }
+dytp-node = { path = "dytp-node", optional = true }
+dytp-protocol = { path = "dytp-protocol" }
+clap = "*"
+env_logger = "*"
+failure = "*"
+log = "*"
+openssl = "*"
+openssl-probe = "*"
+
+[workspace]
+members = [
+  "dytp-cli",
+  "dytp-cloud",
+  "dytp-component",
+  "dytp-connection",
+  "dytp-future",
+  "dytp-gateway",
+  "dytp-node",
+  "dytp-protocol",
+]
+
+[features]
+default = []
+all = ["dytp-gateway", "dytp-node", "dytp-cloud", "dytp-cli"]
+gateway = ["dytp-gateway"]
+node = ["dytp-node"]
+cloud = ["dytp-cloud"]
+cli = ["dytp-cli"]

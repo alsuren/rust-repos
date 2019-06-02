@@ -1,0 +1,35 @@
+[package]
+name = "pericortex"
+version = "0.2.3"
+edition = "2018"
+authors = ["Deyan Ginev <d.ginev@jacobs-university.de>"]
+
+[lib]
+name = "pericortex"
+crate-type = ["lib", "dylib"]
+
+[[bin]]
+required-features = ["engrafo"]
+name = "engrafo_worker"
+path = "bin/engrafo_worker.rs"
+
+[features]
+default=[]
+engrafo=[]
+
+[package.metadata.docs.rs]
+features = ["engrafo"]
+no-default-features = true
+
+[dependencies]
+rand = "0.6.5"
+zmq = "0.9.0"
+zip = "0.5.0"
+num_cpus = "1.10.0"
+tempdir = "0.3.7"
+tempfile = "3.0.7"
+walkdir = "2.2.7"
+hostname = "0.1.5"
+log = "0.4.0"
+ansi_term = "0.11.0"
+chrono = "0.4.6"

@@ -1,0 +1,15 @@
+[package]
+name = "everustc"
+version = "0.1.1"
+authors = ["Stephane Raux <stephaneyfx@gmail.com>"]
+description = "Command-line rust code evaluator."
+license = "MIT"
+homepage = "https://github.com/stephaneyfx/everustc"
+repository = "https://github.com/stephaneyfx/everustc.git"
+keywords = ["evaluate", "interpret", "interpreter", "repl"]
+categories = ["command-line-interface", "command-line-utilities"]
+
+[dependencies]
+everust = "0.3.0"
+getopts = "0.2.14"
+rustyline = "1.0.0"

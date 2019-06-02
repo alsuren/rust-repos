@@ -1,0 +1,17 @@
+[package]
+name = "untyped_storage"
+version = "1.0.0"
+authors = ["Sergey Sherkunov <leinlawun@leinlawun.org>"]
+description = """
+untyped_storage is a secure interface for reading and writing any data into a
+buffer of any size with any byte order.
+"""
+repository = "https://github.com/leinlawun/untyped_storage"
+homepage = "https://github.com/leinlawun/untyped_storage"
+documentation = "https://github.com/leinlawun/untyped_storage"
+readme = "README.md"
+keywords = ["untyped_storage"]
+categories = ["embedded", "no-std"]
+license = "GPL-3.0"
+
+[dependencies]

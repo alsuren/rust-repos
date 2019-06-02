@@ -1,0 +1,8 @@
+[package]
+name = "libqaul"
+version = "0.0.0"
+authors = ["Katharina Fey <kookie@spacekookie.de>"]
+
+[build-dependencies]
+bindgen = "*"
+cmake = "*"

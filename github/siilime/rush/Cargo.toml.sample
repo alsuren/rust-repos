@@ -1,0 +1,25 @@
+[package]
+name = "rush"
+description = "Client / server lib for SSH 2."
+keywords = ["ssh"]
+version = "0.1.0"
+authors = ["Phil J. Laszkowicz <phil@fillip.pro>"]
+repository = "https://github.com:siilime/rush"
+license = "MIT"
+include = [
+        "Cargo.toml",
+        "src/lib.rs"
+]
+
+[dependencies]
+byteorder = "1.1"
+bitflags = "0.9"
+log = "0.3"
+
+openssl = "0.9.23"
+
+cryptovec = "0.4.1"
+tokio-core = "0.1"
+tokio-io = "0.1"
+futures = "0.1"
+env_logger = "0.4"

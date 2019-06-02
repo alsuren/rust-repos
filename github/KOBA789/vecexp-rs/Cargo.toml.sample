@@ -1,0 +1,13 @@
+[package]
+name = "vecexp-rs"
+version = "0.1.0"
+authors = ["Hidekazu Kobayashi <kobahide789@gmail.com>"]
+
+[dependencies]
+filebuffer = { git = "https://github.com/ruuda/filebuffer.git", rev = "4a55662" }
+clap = "2.20.0"
+linked-hash-map = "0.4.1"
+combine = "2.3.2"
+
+[profile.release]
+debug = true

@@ -1,0 +1,28 @@
+[package]
+name = "matto"
+version = "0.1.0"
+authors = ["daniele <d.dorazio96@gmail.com>"]
+edition = "2018"
+
+[workspace]
+members = [
+    "geo",
+]
+
+[lib]
+path = "mattors/lib.rs"
+
+[[bin]]
+name = "matto"
+path = "mattors/main.rs"
+
+[dependencies]
+geo = { path = "./geo" }
+
+image = "0.21"
+num = "0.2"
+rand = "0.6"
+structopt = "0.2"
+
+[dev-dependencies]
+maplit = "1.0"

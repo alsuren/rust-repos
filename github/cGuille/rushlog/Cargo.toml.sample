@@ -1,0 +1,33 @@
+[package]
+name = "rushlog"
+version = "0.1.0"
+authors = ["Guillaume Charmetant <gcharmetant@tea-ebook.com>"]
+
+[dependencies.mysql]
+version = "*"
+
+[dependencies.iron]
+version = "*"
+[dependencies.router]
+version = "*"
+[dependencies.iron-json-response]
+version = "*"
+
+[dependencies.serde]
+version = "*"
+[dependencies.serde_derive]
+version = "*"
+[dependencies.serde_json]
+version = "*"
+
+[dependencies.log]
+version = "*"
+[dependencies.env_logger]
+version = "*"
+
+[dependencies.time]
+version = "*"
+
+[dependencies.uuid]
+version = "*"
+features = ["v4"]

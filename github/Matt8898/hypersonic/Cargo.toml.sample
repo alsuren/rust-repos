@@ -1,0 +1,19 @@
+[package]
+name = "hypersonic"
+version = "0.1.0"
+authors = ["Matt <mattew@gmail.com>"]
+
+[dependencies]
+libc="*"
+rocket = "0.2.6"
+rocket_codegen = "0.2.6"
+rocket_contrib = "0.2.6"
+rusqlite = "*"
+regex = "*"
+lazy_static = "*"
+xml-rs = "*"
+rust-crypto = "*"
+rustc-serialize = "*"
+rand = "*"
+walkdir="*"
+auto-bitflags="1.0.3"

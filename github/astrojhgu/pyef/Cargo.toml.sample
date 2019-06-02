@@ -1,0 +1,18 @@
+[dependencies]
+rayon = '1.0.3'
+
+[dependencies.gp_daq]
+path = '../gp_daq'
+
+[dependencies.pyo3]
+features = ['extension-module']
+version = '0.6.0'
+
+[lib]
+crate-type = ['cdylib']
+name = 'native'
+
+[package]
+authors = ['Gu Junhua <jhgu@nao.cas.cn>']
+name = 'pyef'
+version = '0.1.0'

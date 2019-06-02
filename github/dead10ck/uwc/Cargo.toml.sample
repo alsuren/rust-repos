@@ -1,0 +1,31 @@
+[package]
+name = "uwc"
+version = "0.2.0"
+authors = ["Skyler Hawthorne <skyler@dead10ck.com>"]
+description = "Counts things in unicode text files"
+respository = "https://github.com/dead10ck/uwc"
+readme = "README.md"
+
+keywords = [ "wc", "unicode", "word", "count" ]
+categories = [ "command-line-utilities", "text-processing" ]
+license = "MPL-2.0"
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "dead10ck/uwc", branch = "master" }
+
+[dependencies]
+unicode-segmentation = "1.2.1"
+log = "0.4.6"
+env_logger = "0.6.0"
+lazy_static = "1.2.0"
+structopt = "0.2.14"
+structopt-derive = "0.2.14"
+failure = "0.1.5"
+tabwriter = "1.1.0"
+itertools = "0.8.0"
+rayon = "1.0.3"
+
+[profile.release]
+debug = true
+lto = true

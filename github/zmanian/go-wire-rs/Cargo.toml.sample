@@ -1,0 +1,12 @@
+[package]
+name = "amino"
+version = "0.1.0"
+authors = ["zaki"]
+
+
+[dependencies]
+amino-derive = { path = "amino-derive" }
+byteorder = "1"
+bytes = "0.4"
+chrono = "0.4.2"
+sha2 = "0.7"

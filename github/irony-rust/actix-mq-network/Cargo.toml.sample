@@ -1,0 +1,53 @@
+[package]
+name = "amq"
+version = "0.2.0"
+edition = "2018"
+authors = ["Evgeny Ukhanov <mrlsd@ya.ru>"]
+description = "Message Queue framework based on Acix for Rust"
+readme = "README.md"
+keywords = ["message", "queue", "network", "security", "actor", "futures", "actix", "async", "tokio"]
+repository = "https://github.com/irony-rust/amq.git"
+categories = ["message-queue", "security", "network-programming", "asynchronous"]
+license = "MIT"
+exclude = [".gitignore", ".travis.yml", ".cargo/config", "appveyor.yml"]
+
+[badges]
+travis-ci = { repository = "irony-rust/amq", branch = "master" }
+codecov = { repository = "irony-rust/amq", branch = "master", service = "github" }
+
+[lib]
+name = "amq"
+path = "src/lib.rs"
+
+#[workspace]
+#members = ["examples/node"]
+
+#[[bin]]
+#name = "client"
+#path = "src/client.rs"
+
+#[[bin]]
+#name = "config"
+#path = "src/config.rs"
+
+[dependencies]
+actix = "0.7"
+tokio = "0.1"
+tokio-codec = "0.1"
+tokio-io = "0.1"
+tokio-tcp = "0.1"
+futures = "0.1"
+
+bytes = "0.4"
+byteorder = "1.1"
+
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+rand = "0.5"
+sodiumoxide = "0.2"
+hex = "0.3"
+toml = "0.4"
+
+uuid = { version = "0.7", features = ["v4"] }
+log = "0.4"

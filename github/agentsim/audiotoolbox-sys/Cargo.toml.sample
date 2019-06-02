@@ -1,0 +1,16 @@
+[package]
+
+name = "audiotoolbox-sys"
+version = "0.1.0"
+description = "Bindings for Apple's AudioToolbox API generated with rust-bindgen"
+license = "MIT"
+keywords = ["audio", "toolbox", "audiotoolbox", "osx", "ios"]
+homepage = "https://github.com/agentsim/audiotoolbox-sys"
+repository = "https://github.com/agentsim/audiotoolbox-sys.git"
+build = "build.rs"
+
+[dependencies]
+libc = "0.2.1"
+
+[dev-dependencies]
+core-foundation-sys = "0.3.0"

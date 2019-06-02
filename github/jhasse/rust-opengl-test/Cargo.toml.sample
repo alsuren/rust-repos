@@ -1,0 +1,15 @@
+[package]
+name = "rust-opengl-test"
+version = "0.2.0"
+authors = [ "jhasse@bixense.com" ]
+
+[[bin]]
+name = "rust-opengl-test"
+
+[dependencies]
+log = "*"
+time = "*"
+gl = "*"
+glutin = "*"
+freetype-rs = "*"
+nalgebra = "*"

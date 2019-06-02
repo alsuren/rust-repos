@@ -1,0 +1,12 @@
+[package]
+name = "tk-bot"
+version = "0.1.0"
+authors = ["Chris Gregory <czipperz@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.12"
+rocket = "0.4.0"
+rocket_contrib = "0.4.0"
+serde = { version = "1.0.89", features = ["derive"] }
+regex = "*"

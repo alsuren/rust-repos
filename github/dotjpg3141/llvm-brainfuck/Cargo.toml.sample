@@ -1,0 +1,9 @@
+[package]
+name = "llvm-brainfuck"
+version = "0.1.0"
+authors = ["jpg"]
+
+[dependencies]
+llvm-sys = "38"
+tempfile = "2.2.0"
+argparse = "0.2.1"

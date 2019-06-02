@@ -1,0 +1,13 @@
+[package]
+name = "database_rust"
+version = "0.1.0"
+authors = ["zhuguoliang <zhuguoliangcs@163.com>"]
+
+[dependencies]
+bit-vec = "0.5.0"
+rand = "0.6.4"
+log = "0.4.6"
+
+
+[replace]
+"rand:0.6.5" = { git = "https://github.com/rust-random/rand" }

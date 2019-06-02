@@ -1,0 +1,29 @@
+[package]
+name = "vsop87"
+version = "2.0.3"
+authors = ["Iban Eguia <razican@protonmail.ch>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/Razican/vsop87-rs"
+documentation = "https://docs.rs/vsop87/"
+description = """
+Pure Rust VSOP87 algorithm implementation. Includes all VSOP87 algorith versions:
+VSOP87, VSOP87A, VSOP87B, VSOP87C, VSOP87D and VSOP87E.
+
+VSOP87 are a family of algorithms used to predict the position of planets in the
+solar system with great accuracy. That position can be used by astronomical
+software to create views of the sky, or by simulation software to know the
+position of the planets.
+"""
+keywords = ["vsop87", "simulation", "astrophysics", "astronomy"]
+categories = ["science"]
+
+[badges]
+travis-ci = { repository = "Razican/vsop87-rs", branch = "master" }
+appveyor = { repository = "Razican/vsop87-rs", branch = "master", service = "github" }
+codecov = { repository = "Razican/vsop87-rs", branch = "master", service = "github" }
+is-it-maintained-issue-resolution = { repository = "Razican/vsop87-rs" }
+is-it-maintained-open-issues = { repository = "Razican/vsop87-rs" }
+
+[dev-dependencies]
+rand = "0.3.15"

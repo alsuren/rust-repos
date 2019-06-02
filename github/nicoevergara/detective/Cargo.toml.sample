@@ -1,0 +1,8 @@
+[package]
+name = "detective"
+version = "0.1.0"
+authors = ["Nico Vergara <me@nicovergara.io>"]
+edition = "2018"
+
+[dependencies]
+structopt = { version = "0.2", default-features = false }

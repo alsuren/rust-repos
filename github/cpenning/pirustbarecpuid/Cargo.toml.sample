@@ -1,0 +1,12 @@
+[package]
+name = "pirustbarecpuid"
+version = "0.1.0"
+authors = ["Craig Pennington <cpenning@milo.org>"]
+
+[dependencies]
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort"

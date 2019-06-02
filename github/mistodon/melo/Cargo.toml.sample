@@ -1,0 +1,35 @@
+[package]
+name = "melo"
+version = "0.1.0"
+authors = ["Claire Harris <claire.harris.000@gmail.com>"]
+description = "A music notation language and compiler to MIDI."
+repository = "https://github.com/Pirh/melo"
+readme = "README.md"
+keywords = ["music", "notation", "language", "midi"]
+categories = ["command-line-utilities", "multimedia::audio"]
+license = "MIT"
+
+[[bin]]
+name = "melo"
+path = "src/main.rs"
+required-features = ["cli"]
+doc = false
+
+[dependencies]
+ansi_term = "~0.10.2"
+failure = "~0.1.1"
+rimd = "~0.0.1"
+lazy_static = "~1.0.0"
+regex = "~0.2.5"
+mktemp = { version = "~0.3.1", optional = true }
+structopt = { version = "~0.1.6", optional = true }
+structopt-derive = { version = "~0.1.6", optional = true }
+
+[dev-dependencies]
+pretty_assertions = "~0.4.1"
+
+[features]
+default = ["cli", "color"]
+cli = ["mktemp", "structopt", "structopt-derive"]
+color = []
+

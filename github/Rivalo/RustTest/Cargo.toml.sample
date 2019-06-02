@@ -1,0 +1,17 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["Rivalo <rivalo@home.nl>"]
+
+[dependencies]
+rocket = "0.3.8"
+rocket_codegen = "0.3.8"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+rocket_cors = "0.2.3"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]

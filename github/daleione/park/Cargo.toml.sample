@@ -1,0 +1,10 @@
+[package]
+name = "park"
+version = "0.0.1"
+authors = ["dalei <guoyunlei@live.com>"]
+description = "Command cli for convert toml to docker env_file format"
+license = "MIT"
+
+[dependencies]
+toml = "0.4.5"
+clap = "2.31.2"

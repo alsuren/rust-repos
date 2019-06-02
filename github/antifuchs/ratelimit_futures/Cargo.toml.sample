@@ -1,0 +1,29 @@
+[package]
+edition = '2018'
+name = "ratelimit_futures"
+version = "0.0.2-dev"
+authors = ["Andreas Fuchs <asf@boinkor.net>"]
+license = "MIT"
+repository = "https://github.com/antifuchs/ratelimit_futures"
+readme = "README.md"
+description = "Rate-limit requests using futures"
+documentation = "https://docs.rs/ratelimit_futures"
+
+[badges]
+circle-ci = { repository = "antifuchs/ratelimit_futures", branch = "master" }
+maintenance = { status = "passively-maintained" }
+
+[package.metadata.release]
+sign-commit = false
+upload-doc = false
+pre-release-commit-message = "Release {{version}} 🎉🎉"
+pro-release-commit-message = "Start next development iteration {{version}}"
+tag-message = "Release {{prefix}}{{version}}"
+dev-version-ext = "dev"
+tag-prefix = "v"
+
+[dependencies]
+futures = "0.1.25"
+ratelimit_meter = "4.0.1"
+futures-timer = "0.1.1"
+nonzero_ext = "0.1.2"

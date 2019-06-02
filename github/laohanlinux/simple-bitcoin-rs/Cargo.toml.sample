@@ -1,0 +1,59 @@
+[package]
+name = "simple_bitcoin_rs"
+version = "0.1.0"
+authors = ["Rg <daimaldd@gmail.com>"]
+
+[dependencies]
+hex = { git = "https://github.com/KokaKiwi/rust-hex.git"}
+util_rs = {git = "https://github.com/laohanlinux/util-rs.git"}
+compare = "*"
+rust-base58 = "*"
+bigint = "*"
+rust-crypto = "^0.2"
+crc = "^1.0.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+quick-error = "*"
+runtime-fmt = "*"
+byteorder = "*"
+slog = "*"
+slog-term = "*"
+slog-async = "*"
+clap = "2.6.1"
+prettytable-rs = "*"
+rocksdb = "0.8.1"
+lazy_static = "0.2.8"
+futures = "0.1"
+hyper = "0.11"
+typemap = "*"
+base64 = "*"
+threadpool = "1.0"
+io-context = "0.2.0"
+chan = "0.1.19" 
+clippy = {version = "0.0.174", optional = true}
+base_emoji = {git = "https://github.com/badboy/base-emoji-rs.git"}
+
+rocket = "0.3.5"
+rocket_codegen = "0.3.5"
+rocket_contrib = "0.3.5"
+
+tokio-request = { git = "https://github.com/NeoLegends/tokio-request" }
+tokio-core = "0.1"
+tokio-curl = "0.1"
+url = "1.2"
+
+sha2 = "0.6.0"
+time = "0.1"
+tempdir = "*"
+
+secp256k1 = {version = "0.8.1", features = ["rand", "serde"]}
+rand = "0.3"
+rustc-serialize = "0.3"
+
+[features]
+default = []
+
+[[bin]]
+path = "src/main.rs"
+name = "bitcoin"

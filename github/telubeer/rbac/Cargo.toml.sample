@@ -1,0 +1,17 @@
+[package]
+name = "rbac"
+version = "0.1.0"
+authors = ["Sergey Shlykov <s.shlykov@office.ngs.ru>"]
+
+[dependencies]
+mysql = "14.1.0"
+json = "0.11.12"
+futures = "0.1.17"
+time = "0.1"
+toml = "*"
+tokio = "0.1"
+log = "0.4"
+env_logger = "*"
+hyper = "0.12"
+serde = "*"
+serde_derive = "*"

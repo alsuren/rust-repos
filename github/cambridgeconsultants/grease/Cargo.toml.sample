@@ -1,0 +1,16 @@
+[package]
+name = "grease-workspace"
+version = "0.1.1"
+authors = [
+	"Jonathan Pallant <jonathan.pallant@cambridgeconsultants.com>",
+	"David Wood <david.wood@cambridgeconsultants.com>",
+]
+readme = "README.md"
+license-file = "COPYRIGHT"
+
+[workspace]
+members = [
+	"grease",
+	"grease-socket",
+	"grease-http",
+]

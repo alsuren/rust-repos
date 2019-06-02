@@ -1,0 +1,17 @@
+[package]
+name = "random-digits"
+version = "0.1.0"
+description = "Prints random digits."
+repository = "https://github.com/sloshwoven/random-digits"
+authors = ["sloshwoven <slosh.woven@gmail.com>"]
+edition = "2018"
+license = "BSD3"
+publish = false
+
+[dependencies]
+clap = "2.33"
+rand = "0.6"
+
+[profile.release]
+lto = true
+codegen-units = 1

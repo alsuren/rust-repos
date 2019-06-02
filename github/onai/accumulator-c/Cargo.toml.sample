@@ -1,0 +1,14 @@
+[package]
+name = "accumulator-c"
+version = "0.1.0"
+authors = ["Shriphani Palakodety <shriphanip@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+accumulator = { git = "https://github.com/cambrian/accumulator.git", tag = "v0.2.1" }
+libc = "~0.2"
+
+[lib]
+name = "accumulatorc"
+crate-type = ["dylib"]
+path = "src/lib.rs"

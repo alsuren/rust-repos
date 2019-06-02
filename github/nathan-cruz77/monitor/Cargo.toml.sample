@@ -1,0 +1,10 @@
+[package]
+name = "monitor"
+version = "0.1.0"
+authors = ["Nathan Cruz <nathan_cruz77@hotmail.com>"]
+
+[dependencies]
+hyper = "0.12"
+chrono = "0.4.6"
+tokio = "0.1.8"
+colored = "1.6"

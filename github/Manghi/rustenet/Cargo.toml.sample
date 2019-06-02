@@ -1,0 +1,11 @@
+[package]
+name = "rustenet"
+version = "0.1.0"
+authors = ["Manghi <amunimanghi@gmail.com>"]
+
+[dependencies]
+futures = "0.1"
+tokio-core = "0.1"
+tokio-proto = { git = "https://github.com/tokio-rs/tokio-proto" }
+tokio-service = { git = "https://github.com/tokio-rs/tokio-service" }
+net2 = "*"

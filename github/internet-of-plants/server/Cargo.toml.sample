@@ -1,0 +1,53 @@
+[package]
+name = "server_iop"
+version = "0.4.0"
+authors = ["Paulo Cabral Sanz <paulosanz@poli.ufrj.br>"]
+edition = "2018"
+
+[lib]
+name = "iop"
+path = "src/mod.rs"
+
+[[bin]]
+name = "iop"
+path = "src/bin/main.rs"
+
+[[bin]]
+name = "deploy-watcher"
+path = "dependencies/watcher.rs"
+
+[profile.release]
+lto = true
+
+[dependencies]
+actix = "0.7"
+actix-web = { version = "0.7", features = ["rust-tls"] }
+futures = "*"
+rustls = "*"
+
+argon2rs = "0.2"
+ring = "*"
+hex = "0.2"
+rand = "0.6"
+base64 = "0.9"
+
+diesel = { version = "1.4", features = ["postgres", "r2d2"] }
+r2d2 = "*"
+
+serde = { version = "1", features = ["derive"] }
+slugify = "0.1"
+image = "0.19"
+
+log = "0.4"
+env_logger = "0.5"
+
+validator = "0.8"
+validator_derive = "0.8"
+
+derive_more = "0.13"
+
+num_cpus = "1"
+
+codegen = { path = "./dependencies/codegen" }
+
+lazy_static = "1"

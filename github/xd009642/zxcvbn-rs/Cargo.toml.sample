@@ -1,0 +1,18 @@
+[package]
+name = "zxcvbn-rs"
+version = "0.1.0"
+authors = ["Daniel McKenna <danielmckenna93@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+lazy_static = "0.2.*"
+chrono = "0.3"
+regex = "0.2"
+fancy-regex = "0.1.0"
+keygraph-rs = "0.2.5"
+[build-dependencies]
+slog = "1.2"
+slog-stream = "1.2.0"
+slog-stdlog = "1.1.0"
+log = "0.3.6"
+num-traits = "0.1.37"

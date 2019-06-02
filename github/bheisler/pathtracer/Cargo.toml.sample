@@ -1,0 +1,16 @@
+[package]
+name = "path-tracer"
+version = "0.1.0"
+authors = ["Brook Heisler <redattack34@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+kernel = { path = "kernel" }
+common = { path = "common" }
+image = "0.20"
+obj = "0.9"
+rustacuda = { path = "../rustacuda" }
+lazy_static = "1.2"
+
+[build-dependencies]
+ptx-builder = "0.5"

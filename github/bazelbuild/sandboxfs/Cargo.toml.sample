@@ -1,0 +1,40 @@
+[package]
+authors = ["Julio Merino <jmmv@google.com>"]
+categories = ["filesystems"]
+description = "A virtual file system for sandboxing"
+homepage = "https://github.com/bazelbuild/sandboxfs"
+keywords = ["bazel", "filesystem", "fuse", "sandboxing"]
+license = "Apache-2.0"
+name = "sandboxfs"
+readme = "README.md"
+repository = "https://github.com/bazelbuild/sandboxfs"
+version = "0.1.1"
+
+[badges]
+travis-ci = { repository = "bazelbuild/sandboxfs", branch = "master" }
+
+[features]
+default = []
+profiling = ["cpuprofiler"]
+
+[dependencies]
+cpuprofiler = { version = "0.0", optional = true }
+env_logger = "0.5"
+failure = "~0.1.2"
+fuse = "0.3"
+getopts = "0.2"
+hashbrown = "0.1"
+log = "0.4"
+nix = "0.12"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+signal-hook = "0.1"
+time = "0.1"
+
+[build-dependencies]
+pkg-config = "0.3"
+
+[dev-dependencies]
+tempfile = "3"
+users = "0.9"

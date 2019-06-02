@@ -1,0 +1,12 @@
+[package]
+
+name = "promiser"
+version = "0.0.5"
+authors = ["Chris Gill"]
+description = "promise sync primitive"
+repository = "https://github.com/viperscape/rust-promise"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+rand = "0.3"

@@ -1,0 +1,18 @@
+[package]
+name = "miko"
+version = "0.1.0"
+authors = ["nameoverflow <i@hcyue.me>"]
+build = "build.rs"
+
+[dependencies]
+bytecount = "0.1.4"
+llvm-sys = "39"
+argparse = "*"
+libllvm = { path="./libllvm" }
+
+[features]
+avx-accel = ["bytecount/avx-accel"]
+simd-accel = ["bytecount/simd-accel"]
+
+[build-dependencies]
+peg = { version = "0.5" }

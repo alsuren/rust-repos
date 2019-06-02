@@ -1,0 +1,13 @@
+[package]
+name = "tagteam"
+version = "0.1.0"
+authors = ["Jerry Tegno <jerrytegno@gmail.com>"]
+
+[dependencies]
+dirs = "1.0.3"
+failure = "0.1.2"
+fs2 = "0.4.3"
+serde = "1.0.71"
+serde_derive = "1.0.71"
+structopt = "0.2.10"
+toml = "0.4.6"

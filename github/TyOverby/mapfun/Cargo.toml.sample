@@ -1,0 +1,14 @@
+[package]
+name = "mapfun"
+version = "0.1.0"
+authors = ["Ty Overby <ty@pre-alpha.com>"]
+
+[dependencies]
+osm-xml = "*"
+flame = "*"
+flamer = "*"
+aabb-quadtree = "*"
+
+[dependencies.proj5]
+version = "*"
+features = ["multithreading"]

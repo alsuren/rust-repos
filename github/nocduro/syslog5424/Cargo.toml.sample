@@ -1,0 +1,14 @@
+[package]
+name = "syslog5424"
+version = "0.1.1"
+authors = ["Mackenzie Hauck <mhauck@live.ca>"]
+
+description = "A trait based RFC5424 syslog formatter"
+
+homepage = "https://github.com/nocduro/syslog5424"
+repository = "https://github.com/nocduro/syslog5424"
+
+readme = "Readme.md"
+keywords = ["syslog", "rfc5424", "5424", "logging", "5425"]
+categories = ["encoding", "development-tools::debugging"]
+license = "MIT"

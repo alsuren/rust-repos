@@ -1,0 +1,21 @@
+[package]
+name = "utilities"
+version = "0.3.4"
+authors = ["Cade Colvin <ccolvin@evolution1.com>"]
+
+[[bin]]
+name = "fim"
+path = "src/fim/fim.rs"
+
+[[bin]]
+name = "prepend"
+path = "src/prepend/prepend.rs"
+
+[[bin]]
+name = "sizer"
+path = "src/sizer/sizer.rs"
+
+[dependencies]
+clap = "2.29.2"
+regex = "0.2.5"
+term = "0.4.6"

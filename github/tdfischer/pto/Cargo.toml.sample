@@ -1,0 +1,18 @@
+[package]
+name = "pto"
+version = "0.3.0"
+authors = ["Torrie Fischer <tdfischer@hackerbots.net>"]
+
+[dependencies]
+hyper = '*'
+rustc-serialize = '*'
+mio = '*'
+log = '*'
+env_logger = '*'
+openssl = '0.7.5'
+c-ares = '*'
+libc = '*'
+version = '*'
+
+[features]
+raw_logs = []

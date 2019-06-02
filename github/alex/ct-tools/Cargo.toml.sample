@@ -1,0 +1,53 @@
+[package]
+name = "ct-tools"
+version = "0.1.0"
+authors = ["Alex Gaynor <alex.gaynor@gmail.com>"]
+
+[dependencies]
+futures = "*"
+futures-await = "*"
+tokio = "*"
+tokio-core = "*"
+tokio-io = "*"
+tokio-process = "*"
+tokio-rustls = "*"
+tokio-service = "*"
+net2 = "*"
+
+acme-client = { version = "*", default-features = false }
+
+base64 = ">=0.10"
+
+byteorder = "*"
+
+chrono = "*"
+
+dirs = "*"
+
+structopt = "*"
+structopt-derive = "*"
+
+hex = "*"
+
+hyper = ">=0.11"
+hyper-rustls = ">=0.11"
+
+openssl = ">=0.10"
+
+ring = "*"
+
+rustls = { version = ">=0.11", features = ["dangerous_configuration"] }
+
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+
+pem = "*"
+
+prettytable-rs = "*"
+
+tera = ">=0.10.4"
+
+url = "*"
+
+webpki = ">=0.18.0"

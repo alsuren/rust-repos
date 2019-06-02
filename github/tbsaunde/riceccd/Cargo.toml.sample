@@ -1,0 +1,15 @@
+[package]
+name = "iceccd"
+version = "0.1.0"
+authors = ["Trevor Saunders <tbsaunde@tbsaunde.org>"]
+
+[dependencies]
+get_if_addrs = "0.4.0"
+byteorder = "0.5.3"
+bytes = "0.4"
+clap = "2"
+crossbeam = "0.2"
+local-socket = { git = "https://github.com/tbsaunde/local-socket" }
+minilzo = { git = "https://github.com/tbsaunde/minilzo-rs" }
+[dependencies.resolve]
+git = 'https://github.com/murarth/resolve'

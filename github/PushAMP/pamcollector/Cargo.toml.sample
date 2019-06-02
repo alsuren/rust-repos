@@ -1,0 +1,21 @@
+[package]
+name = "pamcollector"
+version = "0.3.0"
+authors = ["Zhiltsov Dmitriy <dmitriy@pushamp.com>"]
+
+[dependencies]
+clap = "2.21.2"
+serde = "0.9"
+serde_derive = "0.9"
+serde_cbor = "0.5.2"
+hyper = "0.10"
+chrono = "0.3"
+toml = "0.3"
+bytes = "0.4"
+futures = "0.1"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+log4rs="0.6.3"
+log = {version= "*"}

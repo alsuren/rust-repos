@@ -1,0 +1,9 @@
+[package]
+name = "toasty"
+version = "0.1.0"
+authors = ["Rodolfo Granata <warlock.cc@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+dbus = "0.6.4"
+shunting = "0.0.3"

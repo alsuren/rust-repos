@@ -1,0 +1,15 @@
+[package]
+name = "mudi"
+version = "0.1.0"
+authors = ["Guillaume Fraux <guillaume.fraux@ens.fr>"]
+description = "Multidimensional arrays, Fortran style"
+keywords = ["multidimensional", "array", "fortran"]
+
+[dependencies]
+compiletest_rs = {version = "0.1.1", optional = true}
+clippy = {version = "*", optional = true}
+
+[features]
+default = []
+lint = ["clippy"]
+unstable = ["compiletest_rs", "lint"]

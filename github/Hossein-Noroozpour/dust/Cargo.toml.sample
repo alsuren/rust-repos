@@ -1,0 +1,9 @@
+[package]
+name = "dust"
+version = "0.1.0"
+authors = ["Hossein Noroozpour <hossein.noroozpour@gmail.com>"]
+
+[dependencies]
+cgmath = "*"
+image = "*"
+num_cpus = "*"

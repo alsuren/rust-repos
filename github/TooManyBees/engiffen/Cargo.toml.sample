@@ -1,0 +1,44 @@
+[package]
+name = "engiffen"
+version = "0.8.1"
+authors = ["Jesse Bees <jesse@toomanybees.com>"]
+description = """
+Encodes GIF images from sequences of images. Includes an installable
+command line bin as well as the library.
+"""
+homepage = "https://github.com/TooManyBees/engiffen"
+repository = "https://github.com/TooManyBees/engiffen"
+readme = "README.md"
+documentation = "https://docs.rs/engiffen"
+keywords = ["gif", "stream", "image", "cli"]
+categories = ["multimedia", "command-line-utilities"]
+license = "MIT"
+
+exclude = [
+  "tests/*"
+]
+
+[features]
+default = ["globbing"]
+debug-stderr = []
+globbing = ["glob"]
+
+[dependencies]
+lab = "~0.4"
+image = "~0.13"
+gif = "~0.9"
+color_quant = "~1.0.0"
+getopts = "0.2.14"
+rayon = "~0.7"
+rand = "~0.3"
+fnv = "~1.0"
+glob = { version = "~0.2", optional = true }
+
+[lib]
+name = "engiffen"
+path = "src/lib.rs"
+
+[[bin]]
+name = "engiffen"
+path = "src/main.rs"
+doc = false

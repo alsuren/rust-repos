@@ -1,0 +1,30 @@
+[package]
+name = "qrterm"
+version = "0.2.3"
+authors = ["Lukas Reuter <lukas@bootsmann-games.de>"]
+description = "A simple program to generate and display QR-Codes in the Terminal"
+homepage = "https://github.com/Luxxuor/qrterm"
+repository = "https://github.com/Luxxuor/qrterm"
+keywords = ["qr", "terminal", "tool", "cli"]
+license = "mit"
+edition = "2018"
+
+[dependencies]
+qrcode = "0.8.*"
+term = "*"
+clap = "*"
+image = "0.19.*"
+regex = "*"
+lazy_static = "*"
+urlparse = "*"
+
+[dev-dependencies]
+assert_cli = "*"
+
+[profile.release]
+lto = true
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "qr"

@@ -1,0 +1,26 @@
+[package]
+name = "tunnel"
+version = "0.2.0"
+authors = ["Anicka Burova <anicka.burova@gmail.com>"]
+description = "Tunnel over various methods"
+
+[dependencies]
+aws-sdk-rust = "*"
+rust-ini = "0.9"
+
+bytes = "0.4"
+futures = "0.1"
+tokio-io = "0.1"
+tokio-core = "0.1"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+
+clap = "2"
+log = "0.3"
+log4rs = "0.7"
+
+serde = "0.9"
+serde_derive = "0.9"
+serde_yaml = "0.6"
+
+rustyline = "1.0"

@@ -1,0 +1,3 @@
+[workspace]
+members = ["noise", "rust-crypto", "sodiumoxide", "vectors"]
+exclude = ["ring"]

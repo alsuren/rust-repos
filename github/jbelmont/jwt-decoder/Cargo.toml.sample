@@ -1,0 +1,16 @@
+[package]
+name = "jwt-decoder"
+version = "0.2.1"
+authors = ["Jean-Marcel Belmont <jbelmont@foodlogiq.com>"]
+description = "A small command line utility to parse out json web token."
+readme = "README.md"
+categories = ["command-line-utilities", "jwt"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+base64 = "0.9.3"
+serde_json = "1.0.30"
+serde = "1.0.79"
+serde_derive = "1.0.79"
+chrono = "0.4.6"

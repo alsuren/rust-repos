@@ -1,0 +1,12 @@
+[package]
+name = "shenlong"
+version = "0.1.0"
+authors = ["Eric McBride <ericmcbridedeveloper@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.10.0"
+clap = "2.31.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"

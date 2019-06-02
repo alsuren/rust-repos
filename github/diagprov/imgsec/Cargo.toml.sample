@@ -1,0 +1,25 @@
+[package]
+name = "imgsec"
+version = "0.1.0"
+authors = ["Antony Vennard <antony@vennard.ch>"]
+publish = false
+
+[profile.dev]
+[profile.release]
+
+
+
+[dependencies]
+term = "0.4.4"
+num = "0.1"
+log = "*"
+
+[lib]
+name = "eimage"
+path = "lib/lib.rs"
+
+[[bin]]
+name = "imgsec"
+path = "src/main.rs"
+test = false
+doc = false

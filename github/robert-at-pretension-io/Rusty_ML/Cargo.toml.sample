@@ -1,0 +1,10 @@
+[package]
+name = "load_data"
+version = "0.1.0"
+authors = ["Robert Elliot Pahel-Short <pahelshortr6373@connect.durhamtech.edu>"]
+
+[dependencies]
+regex = "0.1"
+ansi_term = "0.7"
+bincode = "0.5.6"
+rustc-serialize = "0.3"

@@ -1,0 +1,20 @@
+
+[package]
+name = "roki"
+version = "0.1.0"
+authors = ["Michael Osei <mosei27@live.com>"]
+
+[dependencies]
+nom = "*"
+image = "*"
+glutin = "*"
+glfw = "*"
+num = "*"
+gl = "0.6.0"
+libc = "*"
+cgmath = "*"
+sdl2 = "*"
+regex = "*"
+num-traits = "*"
+nalgebra = "0.15"
+

@@ -1,0 +1,24 @@
+[package]
+name = "bongo_cat_coin"
+version = "0.1.0"
+authors = ["Q Misell <q@misell.cymru>"]
+
+[dependencies]
+rust-crypto = "~0.2"
+chrono = "~0.4"
+iron = "~0.4"
+serde = "~1.0"
+serde_json = "~1.0"
+serde_derive = "~1.0"
+erased-serde = "~0.3"
+juniper = "~0.10"
+juniper_warp = "~0.1"
+warp = "~0.1"
+hex = "~0.3"
+protobuf = "~2.0"
+regex = "~1"
+num-bigint = "~0.2"
+num-traits = "~0.2"
+num_cpus = "~0.2"
+timer = "~0.2"
+ctrlc = "~3.0"

@@ -1,0 +1,10 @@
+[package]
+name = "viking_dodgeaxe"
+version = "0.1.0"
+authors = [
+        "Hugo Aguirre <hugoo.aguirre@gmail.com>",
+        "Juan Jose Gonzalez <juanjosegzl@gmail.com>",
+]
+
+[dependencies]
+ggez = {version = "0.3", features = ["cargo-resource-root"]}

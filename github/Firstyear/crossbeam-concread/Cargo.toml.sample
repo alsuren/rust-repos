@@ -1,0 +1,13 @@
+[package]
+name = "crossbeam-concread"
+version = "0.1.0"
+authors = ["William Brown <william@blackhats.net.au>"]
+
+[dependencies]
+crossbeam-epoch = "0.5"
+
+[dev-dependencies]
+time = "0.1"
+crossbeam-utils = "0.5"
+
+

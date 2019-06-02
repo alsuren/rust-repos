@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "engine",
+    "engine/ecs_codegen",
+    "examples/template",
+    "examples/testgame",
+]

@@ -1,0 +1,20 @@
+[package]
+name = "vintergatan"
+version = "0.1.0"
+authors = ["Fedor Gorbunov <raigfp@yandex-team.ru>", "Ilya Telegin <ilya.a.telegin@gmail.com>"]
+
+[dependencies]
+getopts = "0.2"
+ws = "0.7.3"
+rand = "0.3.14"
+rustc-serialize = "0.3.16"
+vecmath = "0.3.0"
+fps_counter = "0.2.0"
+glium = "0.17.0"
+image = "0.15.0"
+glium_text_rusttype = "0.2.0"
+time = "0.1.36"
+
+[dependencies.conrod]
+version = "0.54.0"
+features = ["winit", "glium", "piston"]

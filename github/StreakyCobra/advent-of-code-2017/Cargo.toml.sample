@@ -1,0 +1,12 @@
+[package]
+name = "advent-of-code-2017"
+version = "0.1.0"
+authors = ["Fabien Dubosson <fabien.dubosson@gmail.com>"]
+
+[dependencies]
+itertools="^0.7"
+ndarray = "^0.10"
+
+[dependencies.nom]
+version = "^3.2"
+features = ["nightly"]

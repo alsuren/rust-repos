@@ -1,0 +1,19 @@
+[package]
+name = "cryptocurrency"
+version = "0.1.0"
+authors = ["ikonovalov <konovalov84@gmail.com>"]
+keywords = ["distributed", "blockchain", "cryptocurrency", "exonum"]
+license = "Apache-2.0"
+repository = "https://github.com/ikonovalov/rust-cryptocurrency-demo"
+
+
+[dependencies]
+iron = "0.5.1"
+bodyparser = "0.7.0"
+router = "0.5.1"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+exonum = "0.2.0"
+exonum-configuration = "0.2.0"
+

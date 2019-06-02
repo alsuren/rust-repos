@@ -1,0 +1,27 @@
+[package]
+name = "crypto_pals"
+version = "0.1.0"
+authors = ["sean"]
+
+[[bin]]
+name = "set1"
+path = "src/set1.rs"
+
+[[bin]]
+name = "set2"
+path = "src/set2.rs"
+
+[lib]
+name = "set3"
+path = "src/set3.rs"
+
+#[[bin]]
+#name = "set3"
+#path = "src/set3.rs"
+
+[dependencies]
+num = "*"
+openssl = "0.8"
+libc = "0.2"
+regex = "0.1"
+time = "0.1"

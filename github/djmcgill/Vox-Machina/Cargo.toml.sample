@@ -1,0 +1,30 @@
+[package]
+name = "vox_machina"
+version = "0.1.0"
+authors = ["David McGillicuddy <contact@djmcgill.co.uk>"]
+
+[dependencies]
+byteorder = "0.5.0"
+nalgebra = "0.10.1"
+glutin = "0.7"
+env_logger = "0.3"
+log = "0.3.6"
+arrayvec = "0.3"
+num = "0.1.*"
+error-chain = "*"
+
+[dependencies.gfx]
+git = "https://github.com/gfx-rs/gfx.git"
+
+[dependencies.gfx_window_glutin]
+git = "https://github.com/gfx-rs/gfx.git"
+
+[dependencies.gfx_device_gl]
+git = "https://github.com/gfx-rs/gfx.git"
+
+[dev-dependencies]
+quickcheck = "0.2"
+
+[[bin]]
+name = "vox_machina"
+path = "src/main.rs"

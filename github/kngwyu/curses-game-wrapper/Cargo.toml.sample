@@ -1,0 +1,21 @@
+[package]
+authors = ["kngwyu <yuji.kngw.80s.revive@gmail.com>"]
+name = "curses-game-wrapper"
+version = "0.0.4"
+license = "MIT"
+readme = "README.md"
+description = "wrapper for curses games to make game AI"
+[dependencies]
+ascii = "0.8.6"
+bitflags = "1.0.1"
+vte = "0.3.2"
+sloggers = "0.2.6"
+clippy = {version = "0.0.182", optional = true}
+termion = "1.5.1"
+
+[dependencies.slog]
+features = ["max_level_trace", "release_max_level_warn"]
+version = "2.0.12"
+
+[features]
+default = []

@@ -1,0 +1,10 @@
+[package]
+name = "csv2cf"
+version = "0.1.0"
+authors = ["Dmytrii Nagirniak <dnagir@gmail.com>"]
+
+[dependencies]
+csv = "1"
+itertools = "0.7.3"
+serde = "1"
+serde_derive = "1"

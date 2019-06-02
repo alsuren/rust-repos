@@ -1,0 +1,15 @@
+[package]
+name = "crate"
+version = "0.1.0"
+authors = ["xlnx <qwq@koishi.top>"]
+edition = "2018"
+
+[dependencies]
+wasm-bindgen = { version = "^0.2", features = ["serde-serialize"] }
+serde = "^1.0.85"
+serde_derive = "^1.0.85"
+ref_thread_local = "0.0"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]

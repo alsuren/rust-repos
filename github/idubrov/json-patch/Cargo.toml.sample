@@ -1,0 +1,33 @@
+[package]
+name = "json-patch"
+version = "0.2.6-alpha.0"
+authors = ["Ivan Dubrov <dubrov.ivan@gmail.com>"]
+categories = []
+keywords = ["json", "json-patch"]
+description = "RFC 6902, JavaScript Object Notation (JSON) Patch"
+repository = "https://github.com/idubrov/json-patch"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+edition = "2018"
+
+[features]
+default = ["diff"]
+nightly = []
+diff = ["treediff"]
+
+[dependencies]
+serde = "1.0.61"
+serde_derive = "1.0.61"
+serde_json = "1.0.17"
+
+[dependencies.treediff]
+version = "3.0.1"
+features = ["with-serde-json"]
+optional = true
+
+[dev-dependencies]
+rand = "0.5.0"
+
+[dev-dependencies.serde_json]
+version = "1.0.17"
+features = ["preserve_order"]

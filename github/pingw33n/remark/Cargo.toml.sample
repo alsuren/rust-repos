@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "common",
+    "log",
+    "proto",
+    "server",
+]
+
+[profile.release]
+debug = true

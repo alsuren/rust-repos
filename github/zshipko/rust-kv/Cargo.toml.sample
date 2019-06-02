@@ -1,0 +1,30 @@
+[package]
+name = "kv"
+version = "0.8.1"
+authors = ["Zach Shipko <zachshipko@gmail.com>"]
+license = "ISC"
+keywords = ["key-value-store", "database", "lmdb"]
+repository = "https://github.com/zshipko/rust-kv"
+documentation = "https://docs.rs/kv"
+description = "An embedded key/value store for Rust"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+lmdb = "0.8"
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+bincode = { version = "1.0", optional = true }
+serde_cbor = { version = "0.9", optional = true }
+serde_json = { version = "1.0", optional = true }
+rmp-serde = { version = "0.13", optional = true }
+
+[features]
+default = []
+all = ["cbor-value", "json-value", "bincode-value", "msgpack-value"]
+cbor-value = ["serde_cbor"]
+json-value = ["serde_json"]
+bincode-value = ["bincode"]
+msgpack-value = ["rmp-serde"]

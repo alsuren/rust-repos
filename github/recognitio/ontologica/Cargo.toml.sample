@@ -1,0 +1,17 @@
+[package]
+name = "ontologica"
+version = "0.1.0"
+authors = ["aaronhyperum <unysnhyperum@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "ontologica"
+path = "src/lib.rs"
+
+[dependencies]
+pest = "2.0"
+pest_derive = "2.0"
+indexmap = {version = "1.0.2", features = ["serde-1"]}
+serde = "1.0"
+serde_derive = "1.0"
+enum-kinds = "0.4.1"

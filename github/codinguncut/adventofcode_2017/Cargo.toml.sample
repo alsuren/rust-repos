@@ -1,0 +1,10 @@
+[package]
+name = "rust_first"
+version = "0.1.0"
+authors = ["Johannes Ahlmann <johannes@fluquid.com>"]
+include = ["src/**/*", "Cargo.toml"]
+
+[dependencies]
+itertools = "0.7.3"
+regex = "0.2"
+lazy_static = "1.0.0"

@@ -1,0 +1,46 @@
+[package]
+
+name = "hkg"
+version = "1.0.2"
+authors = [ "u59u75u65" ]
+
+[dependencies]
+hyper = "0.10"
+kuchiki = "*"
+rustc-serialize = "0.3"
+chrono = "0.3"
+regex = "0.1"
+cancellation = "0.1"
+termion = "1.0"
+time = "0.1"
+log = "*"
+log4rs = { version= "0.6", features = ["threshold_filter"] }
+hyper-native-tls = { github = "git@github.com:sfackler/hyper-native-tls.git" }
+crossbeam = "0.2"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2.8"
+
+[[bin]]
+name = "lihkg"
+path = "src/main.rs"
+
+[[bin]]
+name = "thread-latest-api"
+path = "src/examples/thread_latest_api.rs"
+
+
+[[bin]]
+name = "thread-api"
+path = "src/examples/thread_api.rs"
+
+[[bin]]
+name = "html-parse"
+path = "src/examples/html_parse.rs"
+
+[[bin]]
+name = "unix-time"
+path = "src/examples/unix_time.rs"

@@ -1,0 +1,11 @@
+[package]
+name = "linalg"
+version = "0.1.0"
+edition = "2018"
+license = "GPL"
+license-file = "LICENSE"
+
+[dependencies]
+clap = { version = "^2.32.0", features = ["yaml", "suggestions", "color"] }
+rand = "^0.6.1"
+rayon = "^1.0.3"

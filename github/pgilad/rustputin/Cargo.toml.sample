@@ -1,0 +1,11 @@
+[package]
+name = "rustputin"
+version = "0.1.0"
+authors = ["Gilad Peleg <giladp007@gmail.com>"]
+
+[dependencies]
+time = "*"
+rustc-serialize = "*"
+regex = "*"
+hyper = "*"
+nickel = "*"

@@ -1,0 +1,13 @@
+[package]
+name = "twitter_crawl"
+version = "0.1.0"
+authors = ["pj <pj.kyosyou@outlook.jp>"]
+edition = "2018"
+
+[dependencies]
+url = "*"
+base64 = "*"
+reqwest = "*"
+serde_json = "*"
+serde_derive = "*"
+serde = "*"

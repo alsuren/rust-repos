@@ -1,0 +1,51 @@
+[package]
+name = "rayon_adaptive"
+version = "0.1.0"
+authors = ["frederic wagner <frederic.wagner@imag.fr>"]
+edition = "2018"
+
+[dev-dependencies]
+criterion="*"
+
+[profile.release]
+debug = true
+
+[features]
+# enable this to log using rayon_logs
+logs = ["rayon_logs"]
+
+[dependencies]
+rayon_logs={optional=true, git="https://github.com/wagnerf42/rayon-logs", features=["bind"]}
+derive-divisible={git="https://github.com/wagnerf42/derive-divisible"}
+rayon="*"
+rayon-core ="*"
+itertools="*"
+rand="*"
+time = "0.1"
+smallvec = "*"
+hwloc = "*"
+libc = "*"
+crossbeam = "*"
+[[bench]]
+name = "merge_sort"
+harness = false
+
+[[bench]]
+name = "prefix"
+harness = false
+
+[[bench]]
+name = "infix"
+harness = false
+
+[[bench]]
+name = "filter_collect"
+harness = false
+
+[[bench]]
+name = "find_first"
+harness = false
+
+[[bench]]
+name = "initial_size"
+harness = false

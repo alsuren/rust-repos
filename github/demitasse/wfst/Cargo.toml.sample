@@ -1,0 +1,62 @@
+[package]
+name = "wfst"
+version = "0.6.1"
+authors = ["Daniel van Niekerk <dvn.demitasse@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/demitasse/wfst"
+documentation = "http://www.demitasse.co.za/rust/wfst"
+homepage = "https://github.com/demitasse/wfst"
+description = """
+An implementation of Weighted Finite-State Transducers (WFSTs) as described in:
+
+Mehryar Mohri, Fernando Pereira, and Michael Riley. "The design principles of a weighted finite-state transducer library," In: Theoretical Computer Science vol. 231 issue 1 (2000): pp. 17-32.
+"""
+keywords = ["wfst", "fst"]
+
+[dependencies]
+serde = "0.9.0"
+serde_derive = "0.9.0"
+serde_json = "0.9.0"
+argparse = "0.2.0"
+bincode = "0.7.0"
+rand = "0.3.14"
+linked-hash-map = "0.3.0"
+
+
+[lib]
+name = "wfst"
+path = "src/wfst.rs"
+
+[[bin]]
+name = "main_wfst"
+path = "src/main_wfst.rs"
+
+[[bin]]
+name = "main_semiring"
+path = "src/main_semiring.rs"
+
+[[bin]]
+name = "test_semiring"
+path = "src/test_semiring.rs"
+
+[[bin]]
+name = "wfstcompile"
+path = "src/wfstcompile.rs"
+
+[[bin]]
+name = "wfstprint"
+path = "src/wfstprint.rs"
+
+[[bin]]
+name = "wfstshortestdists"
+path = "src/wfstshortestdists.rs"
+
+[[bin]]
+name = "wfstshortestpaths"
+path = "src/wfstshortestpaths.rs"
+
+[[bin]]
+name = "example_shortestpath"
+path = "src/example_shortestpath.rs"
+

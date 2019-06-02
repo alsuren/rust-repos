@@ -1,0 +1,20 @@
+[package]
+name = "oxcable"
+version = "0.5.1"
+authors = ["Michael Nye <thenyeguy@gmail.com>"]
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/oxcable/oxcable"
+repository = "https://github.com/oxcable/oxcable"
+documentation = "http://oxcable.github.io/oxcable/doc/oxcable/index.html"
+description = "A signal processing framework for making music with Rust."
+exclude= [ "wav/*" ]
+
+[lib]
+name = "oxcable"
+
+[dependencies]
+byteorder = "0.4.2"
+num = { version = "0.1.27", default-features = false, features = ["complex"] }
+portaudio = "0.5.1"
+portmidi = "0.1.4"
+rand = "0.3.12"

@@ -1,0 +1,12 @@
+[package]
+
+name = "gearley-simplified"
+version = "0.0.1"
+authors = [ "pioczarn@gmail.com" ]
+
+[lib]
+name = "gearley"
+crate_type = ["lib"]
+
+[dependencies]
+cfg = "0.2"

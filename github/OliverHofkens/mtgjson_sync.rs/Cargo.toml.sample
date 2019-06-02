@@ -1,0 +1,12 @@
+[package]
+name = "mtgjson_sync"
+version = "0.1.0"
+authors = ["Oliver Hofkens <oliver@novemberfive.co>"]
+
+[dependencies]
+mtg_models = { git = "https://github.com/OliverHofkens/mtg_models.rs" }
+reqwest = "0.6.2"
+log = "0.3"
+env_logger = "0.3"
+serde_json = "1.0"
+mysql = "11.2.0"

@@ -1,0 +1,10 @@
+[package]
+name = "token_id"
+version = "0.1.0"
+authors = ["Xudong Huang <huangxu008@hotmail.com>"]
+
+[dependencies]
+token_id-plugins = { path = "src/plugins" }
+
+[workspace]
+members = ["src/plugins"]

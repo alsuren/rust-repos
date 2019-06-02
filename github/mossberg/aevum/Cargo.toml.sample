@@ -1,0 +1,16 @@
+[package]
+name = "aevum"
+version = "0.1.0"
+authors = ["Mark Mossberg <mark.mossberg@gmail.com>"]
+
+[dependencies]
+ring = "0.12.0"
+untrusted = ""
+serde = ""
+serde_derive = ""
+serde_json = ""
+bincode = ""
+
+[[bin]]
+name = "aevum"
+doc = false

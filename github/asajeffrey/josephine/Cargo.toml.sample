@@ -1,0 +1,30 @@
+[package]
+name = "josephine"
+version = "0.2.0"
+authors = ["ajeffrey@mozilla.com"]
+license = "MPL-2.0"
+description = "Josephine: using JavaScript to safely manage the lifetimes of Rust data"
+repository = "https://github.com/asajeffrey/josephine/"
+
+[lib]
+
+[features]
+debugmozjs = ["mozjs/debugmozjs"]
+smup = []
+
+[dependencies]
+josephine_derive = "0.1.0"
+libc = "0.2.30"
+log = "0.3"
+mozjs = "<0.3" # Requires the smup feature for mozjs 0.2.*
+
+[dev-dependencies]
+env_logger = "0.4"
+
+[[example]]
+name = "minidom"
+path = "examples/minidom/main.rs"
+
+[[example]]
+name = "dbllist"
+path = "examples/dbllist/main.rs"

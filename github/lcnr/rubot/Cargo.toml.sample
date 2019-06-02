@@ -1,0 +1,44 @@
+[package]
+name = "rubot"
+authors = ["lcnr/Bastian Kauschke <bastian_kauschke@hotmail.de>"]
+description = "A generic game bot written in Rust"
+keywords = ["game", "engine", "bot", "alpha", "beta"]
+categories = [ "algorithms", "game-engines" ]
+license = "MIT"
+exclude = ["fuzz/*", "baseline"]
+repository = "https://github.com/lcnr/rubot"
+version = "0.2.0"
+readme = "README.md"
+edition = "2018"
+
+[dev-dependencies]
+criterion = "0.2"
+shakmaty = "0.14"
+
+[[bench]]
+name = "time_complete"
+harness = false
+
+[[bench]]
+name = "time_partial"
+harness = false
+
+[[bench]]
+name = "steps_complete"
+harness = false
+
+[[bench]]
+name = "steps_partial"
+harness = false
+
+[[example]]
+name = "tic-tac-toe"
+test = true
+
+[[example]]
+name = "oko"
+test = true
+
+[[example]]
+name = "chess"
+test = true

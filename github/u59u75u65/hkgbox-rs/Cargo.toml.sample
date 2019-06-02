@@ -1,0 +1,29 @@
+[package]
+
+name = "hkg"
+version = "1.0.2"
+authors = [ "u59u75u65" ]
+
+[dependencies]
+hyper = "0.10"
+kuchiki = "*"
+rustc-serialize = "0.3"
+chrono = "0.2"
+regex = "0.1"
+cancellation = "0.1"
+termion = "1.0"
+time = "0.1"
+log = "*"
+log4rs = { version= "0.6", features = ["threshold_filter"] }
+hyper-native-tls = { github = "git@github.com:sfackler/hyper-native-tls.git" }
+crossbeam = "0.2"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2.8"
+
+[[bin]]
+name = "hkg"
+path = "src/main.rs"

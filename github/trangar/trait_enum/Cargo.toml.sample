@@ -1,0 +1,17 @@
+[package]
+name = "trait_enum"
+edition = "2018"
+version = "0.3.0"
+authors = ["Victor 'Trangar' Koenders"]
+description = "Easy enum wrapper that implements all traits that the wrapped objects implement"
+homepage = "https://github.com/trangar/trait_enum"
+repository = "https://github.com/trangar/trait_enum"
+readme = "readme.md"
+license = "MIT"
+
+[features]
+default = ["std"]
+std = []
+
+[dependencies]
+

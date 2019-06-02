@@ -1,0 +1,11 @@
+[package]
+name = "ltu_monopoly"
+version = "0.1.0"
+authors = ["nevvi <jonas.hedeng@gmail.com>"]
+
+[lib]
+name = "monopoly"
+path = "src/monopoly/lib.rs"
+
+[dependencies]
+rand = "*"

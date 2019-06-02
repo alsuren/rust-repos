@@ -1,0 +1,31 @@
+[package]
+name = "certchain"
+version = "0.1.0"
+authors = ["Matt Quinn <matt@mattjquinn.com>"]
+
+# Cargo requires a 'build' script for any
+# 'links' directive, but doesn't actually run
+# or check the build script's existence if a
+# target is specified in a Cargo configuration
+# script (which we do in .cargo/config).
+links = "secp256k1"
+build = "build.rs"
+
+[dependencies]
+hyper = "0.6.1"
+rust-crypto = "*"
+getopts = "0.2"
+log = "0.3.1"
+log4rs = "0.3.3"
+toml = "0.1.23"
+byteorder = "0.3.13"
+rand = "0.3.9"
+rust-base58 = "0.0.4"
+time = "0.1.32"
+rmp-serialize = "0.7.0"
+rustc-serialize = "0.3.16"
+compress = "0.1.1"
+secp256k1 = "0.3.2"
+serde = "0.6.1"
+serde_json = "0.6.0"
+serde_macros = "0.6.0"

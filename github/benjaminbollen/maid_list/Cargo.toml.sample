@@ -1,0 +1,13 @@
+[package]
+name = "maid_list"
+version = "0.1.0"
+authors = ["dally"]
+
+[dependencies]
+libc = "*"  
+glib = "*"  
+gdk = "*"  
+gtk = "*"  
+cairo-rs = "*"  
+rustc-serialize = "*"
+curl = "*"

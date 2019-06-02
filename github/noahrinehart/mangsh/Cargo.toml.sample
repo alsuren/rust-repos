@@ -1,0 +1,9 @@
+[package]
+name = "mangsh"
+version = "0.1.0"
+authors = ["Noah Rinehart <rinehart.noah@gmail.com>"]
+
+[dependencies]
+rustyline = "1.0.0"
+log = "0.3"
+nix = "0.10.0"

@@ -1,0 +1,49 @@
+[package]
+name = "signin-factory"
+version = "0.1.0"
+authors = ["LightDiscord <arnaud@lightdiscord.me>"]
+license = "MIT"
+readme = "README.md"
+description = "Sign In Factory is a module who provide authentication"
+repository = "https://github.com/islands-wars/sign-in-factory"
+
+[lib]
+name = "signin"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sif-lapin"
+path = "src/bin/lapin.rs"
+
+[[bin]]
+name = "sif-lapin-client"
+path = "src/bin/lapin-client.rs"
+
+[dependencies]
+serde_json = "^1"
+serde_derive = "^1"
+serde = "^1"
+
+bson = "0.10.0"
+mongodb = "0.3.7"
+bcrypt = "0.1.5"
+error-chain = "0.11.0"
+lapin-futures = "^0.10"
+tokio = "0.1"
+tokio-io = "0.1"
+futures = "0.1"
+log = "^0.4"
+env_logger = "^0.5"
+
+[dependencies.uuid]
+version = "0.6"
+features = ["v4"]
+
+[dependencies.libjwt]
+git = "https://github.com/LightDiscord/Jwt"
+rev = "cb030f9105ac12d618fe9317dc76fff59166663c"
+
+[features]
+default = []
+
+debug = []

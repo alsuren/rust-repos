@@ -1,0 +1,23 @@
+[package]
+name = "ofvsh"
+version = "0.3.4"
+authors = ["Marcus Geiger"]
+publish = false
+edition = "2018"
+
+[dependencies]
+ansi_term = "0.11"
+atty = "0.2"
+clap = "2.32"
+directories = "1.0"
+itertools = "0.7"
+keyring = "0.6.1"
+linefeed = "0.5"
+log = { version = "0.4.6", features = ["std", "serde"] }
+mktemp = "0.3.1"
+nix = "0.11"
+rpassword = "0.2.3"
+serde = "1.0.80"
+serde_derive = "1.0"
+ssh2 = "0.3"
+toml = "0.4.2"

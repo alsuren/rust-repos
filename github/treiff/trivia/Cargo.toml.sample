@@ -1,0 +1,9 @@
+[package]
+name = "trivia_game"
+version = "0.1.0"
+authors = ["Trevor Reiff <trevorreiff@gmail.com>"]
+
+[dependencies]
+
+curl = "0.4.8"
+serde_json = "1.0.2"

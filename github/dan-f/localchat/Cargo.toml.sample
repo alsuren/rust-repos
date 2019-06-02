@@ -1,0 +1,11 @@
+[package]
+name = "localchat"
+version = "0.1.0"
+authors = ["Daniel Friedman <dfriedman58@gmail.com>"]
+
+[dependencies]
+bytes = "0.4"
+futures = "0.1"
+libc = "0.2"
+mio = "0.6"
+tokio = "0.1"

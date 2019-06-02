@@ -1,0 +1,11 @@
+[package]
+name = "temprec"
+version = "0.1.0"
+authors = ["Bernd Amend <bernd.amend@gmail.com>"]
+
+[dependencies]
+regex = "*"
+time = "*"
+rocket = "*"
+rocket_codegen = "*"
+dht22_pi = "*"

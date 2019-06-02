@@ -1,0 +1,16 @@
+[package]
+name = "spin_bitwise"
+version = "0.1.0"
+authors = ["Andrey Cizov <acizov@gmail.com>"]
+
+[dependencies]
+rand="0.3.0"
+spin="0.4.0"
+
+[features]
+asm = []
+core_intrinsics = []
+const_fn = []
+test = []
+unstable = ["spin/asm", "core_intrinsics", "asm", "const_fn", "test"]
+default = ["unstable"]

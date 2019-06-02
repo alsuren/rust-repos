@@ -1,0 +1,13 @@
+[package]
+
+name = "rt"
+version = "0.0.1"
+authors = ["Dave <dave.willmer@gmail.com>"]
+
+[dependencies.rust-windows]
+git = "https://github.com/dwillmer/rust-windows.git"
+
+[lib]
+
+name = "rt"
+crate-type = ["rlib"]

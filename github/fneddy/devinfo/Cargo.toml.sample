@@ -1,0 +1,16 @@
+[package]
+name = "smartdecode"
+version = "0.1.0"
+authors = ["Eddy Stefes <eduard.stefes@gmail.com>"]
+
+[[bin]]
+doc = false
+name = "foo"
+path = "src/main.rs"
+
+[dependencies]
+libc = "*"
+byteorder="*"
+docopt = "0.6"
+rustc-serialize = "0.3"
+docopt_macros = "0.6"

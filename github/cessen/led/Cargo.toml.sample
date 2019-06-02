@@ -1,0 +1,29 @@
+[workspace]
+members = [
+    "sub_crates/backend",
+]
+
+[package]
+name = "Led"
+version = "0.0.2"
+authors = ["Nathan Vegdahl <cessen@cessen.com>"]
+license = "MIT"
+
+[[bin]]
+name = "led"
+path = "src/main.rs"
+
+[dependencies]
+ropey = "1.0"
+# ropey = { git = "https://github.com/cessen/ropey", branch = "master" }
+unicode-segmentation = "1.2.1"
+unicode-width = "0.1"
+serde = "1.*"
+serde_derive = "1.*"
+docopt = "0.8"
+smallvec = "0.6"
+termion = "1.5"
+
+# Local crate dependencies
+[dependencies.backend]
+path = "sub_crates/backend"

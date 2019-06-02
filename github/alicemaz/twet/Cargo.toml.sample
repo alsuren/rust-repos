@@ -1,0 +1,23 @@
+[package]
+name = "twitter"
+version = "0.1.0"
+authors = ["Alice Maz <alice@alicemaz.com>"]
+
+[dependencies]
+time = "0.1"
+uuid = "0.1"
+itertools = "0.4.3"
+rustc-serialize = "0.3"
+rust-crypto = "^0.2"
+hyper = "0.7.0"
+#regex = "0.1.41"
+#dotenv = "0.5.0"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+
+[dependencies.url]
+git = "https://github.com/alicemaz/rust-url"
+
+[dependencies.dotenv]
+path = "/home/alice/code/rust/cloned/dotenv"

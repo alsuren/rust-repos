@@ -1,0 +1,20 @@
+[package]
+name = "pemmican"
+version = "0.5.0-unstable"
+description = "Pemmican Web Framework"
+authors = ["Mike Dilger <mike@optcomp.nz>"]
+readme = "README.md"
+repository = "https://github.com/mikedilger/pemmican"
+documentation = "https://docs.rs/pemmican"
+license = "MIT OR Apache-2.0"
+keywords = [ "webserver", "framework" ]
+
+[dependencies]
+hyper = "0.11"
+futures = "0.1"
+futures-cpupool = "0.1"
+tokio-service = "0.1"
+chashmap = "2.2"
+log = "0.4"
+textnonce = "0.6"
+cookie = "0.11"

@@ -1,0 +1,8 @@
+[package]
+name = "magic_simulator"
+version = "0.1.0"
+authors = ["petur-a <peturhjac@gmail.com>"]
+
+[dependencies]
+csv = "1.0.0-beta.5"
+rand = "0.4.2"

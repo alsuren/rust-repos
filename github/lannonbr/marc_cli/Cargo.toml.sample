@@ -1,0 +1,9 @@
+[package]
+name = "marc_cli"
+version = "0.1.0"
+authors = ["Benjamin Lannon <lannonbr@clarkson.edu>"]
+
+[dependencies]
+marc="*"
+regex="*"
+rustyline="1.0.0"

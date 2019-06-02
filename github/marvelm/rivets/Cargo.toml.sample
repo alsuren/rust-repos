@@ -1,0 +1,14 @@
+[package]
+name = "rivets"
+version = "0.1.0"
+authors = ["Marvel Mathew <m@marvelmathew.ca>"]
+
+[dependencies]
+iron = "*"
+time = "*"
+
+[dependencies.selectors]
+git = "https://github.com/servo/rust-selectors.git"
+
+[dependencies.html5ever]
+git = "https://github.com/marvelm/html5ever.git"

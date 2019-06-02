@@ -1,0 +1,13 @@
+[workspace]
+members = [
+        "tracer-client",
+        "tracer-metrics",
+        "tracer-bin"
+]
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+incremental = false
+panic = "abort"

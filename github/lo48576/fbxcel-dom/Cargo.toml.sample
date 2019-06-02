@@ -1,0 +1,32 @@
+[package]
+name = "fbxcel-dom"
+version = "0.0.3"
+authors = ["YOSHIOKA Takuma <lo48576@hard-wi.red>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+description = "FBX DOM library"
+repository = "https://github.com/lo48576/fbxcel-dom"
+keywords = ["FBX", "3D", "model"]
+categories = ["rendering::data-formats"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[features]
+default = []
+
+[dependencies]
+failure = "0.1.5"
+fbxcel = { version = "0.4.3" , features = ["tree"] }
+log = "0.4.4"
+mint = "0.5"
+rgb = "0.8.12"
+string-interner = { version = "0.7", default-features = false }
+
+[dev-dependencies]
+env_logger = "0.6"
+
+[badges]
+maintenance = { status = "experimental" }
+travis-ci = { repository = "lo48576/fbxcel-dom" }

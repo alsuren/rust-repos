@@ -1,0 +1,31 @@
+[package]
+name = "Vleue"
+version = "0.1.0"
+authors = ["François Mockers <mockersf@gmail.com>"]
+
+[dependencies]
+crowbar = { git = "https://github.com/mockersf/rust-crowbar", branch = "full", features = ["errorfailure", "resulthelper"] }
+#crowbar = { path = "../rust-crowbar", features = ["errorfailure", "resulthelper"] }
+cpython = { version = "*", default-features = false, features = ["python3-sys"] }
+
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+serde_urlencoded = "*"
+serde_dynamodb = { git = "https://github.com/mockersf/serde_dynamodb" }
+serde_dynamodb_derive = { git = "https://github.com/mockersf/serde_dynamodb" }
+
+failure = "*"
+
+uuid = { version = "0.5", features = ["serde", "v4"] }
+frank_jwt = "2.5.1"
+time = "*"
+http = "*"
+mime = "*"
+chrono = { version = "0.4", features = ["serde"] }
+rusoto_core = "*"
+rusoto_dynamodb = "*"
+
+[lib]
+name = "lambda"
+crate-type = ["cdylib"]

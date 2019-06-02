@@ -1,0 +1,20 @@
+[package]
+name = "piston_game"
+version = "0.1.0"
+authors = ["TuntematonSotilas <gatobael@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+piston_window = "0.89.0"
+conrod_core = "0.63.0"
+conrod_piston = "0.63.0"
+gfx_device_gl="0.15.5"
+piston-gfx_texture = "0.35.0"
+piston2d-sprite = "0.50.0"
+piston-ai_behavior = "0.27.0"
+uuid = { version = "0.6", features = ["v4"] } 
+pathfinding = "1.1.12"
+
+[[bin]]
+name = "piston_game"
+path = "src/main.rs"

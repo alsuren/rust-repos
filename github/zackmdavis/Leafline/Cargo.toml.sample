@@ -1,0 +1,22 @@
+[package]
+name = "leafline"
+version = "0.0.18"
+authors = ["Zack M. Davis <code@zackmdavis.net>"]
+
+[dependencies]
+ansi_term = "0.6"
+argparse = "0.2"
+itertools = "0.4"
+libc = "0.2"
+log = "0.3"
+lru-cache = "0.0.7"
+parking_lot = {version = "0.6", features = ["nightly"]}
+rustc-serialize = "0.3"
+time = "0.1"
+twox-hash = "1.0"
+
+[profile.dev]
+opt-level = 2
+
+[profile.release]
+lto = true

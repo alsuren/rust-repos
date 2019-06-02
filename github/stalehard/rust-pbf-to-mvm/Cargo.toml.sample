@@ -1,0 +1,8 @@
+[package]
+name = "mvmgenerate"
+version = "0.1.0"
+authors = ["Andrey Ivanov <lekkion@gmail.com>"]
+
+[dependencies]
+hyper = "0.8"
+zip = "0.1"

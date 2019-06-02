@@ -1,0 +1,25 @@
+[package]
+name = "emojistats"
+version = "0.1.2"
+authors = ["Jonathan Kim <jkim8192@gmail.com>"]
+
+[dependencies]
+chrono-humanize = "0.0.10"
+config = "0.6.0"
+log = "0.3.8"
+nix = "0.8.1"
+rand = "0.3.15"
+time = "0.1.38"
+
+[dependencies.log4rs]
+version = "0.7.0"
+default-features = false
+features = ["file_appender", "pattern_encoder"]
+
+[dependencies.discord]
+version = "0.8.0"
+default-features = false
+
+[dependencies.postgres]
+version = "0.15.1"
+default-features = false

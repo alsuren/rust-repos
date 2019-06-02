@@ -1,0 +1,12 @@
+[package]
+name = "boggle_server"
+version = "0.1.0"
+authors = ["Geoffrey Copin <copin.geoffrey@gmail.com>"]
+
+[dependencies]
+failure = "*"
+rand = "0.4"
+unidecode = "0.3.0"
+clap = "2.31.2"
+regex = "1.0.0"
+lazy_static = "*"

@@ -1,0 +1,36 @@
+[package]
+name = "simplesched"
+version = "0.1.1"
+authors = ["Y. T. Chung <zonyitoo@gmail.com>"]
+description = "A naive coroutine based scheduler with asynchronous I/O support"
+repository = "https://github.com/zonyitoo/simplesched"
+license = "MIT"
+keywords = ["coroutine", "green", "net", "fiber"]
+
+[lib]
+name = "simplesched"
+
+[features]
+default = [
+    "openssl"
+]
+
+[dependencies]
+log = "0.3.1"
+lazy_static = "0.1.14"
+url = "0.2"
+context = "^0.1.1"
+mio = "^0.4.1"
+bytes = "^0.2.10"
+hyper = "^0.6.8"
+
+[dev-dependencies]
+env_logger = "*"
+clap = "*"
+rand = "*"
+openssl = "*"
+num_cpus = "*"
+
+[dependencies.openssl]
+version = "^0.6.4"
+optional = true

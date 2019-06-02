@@ -1,0 +1,13 @@
+[package]
+name = "sunt"
+version = "0.0.1"
+authors = ["Michael Ziegler <diese-addy@funzt-halt.net>"]
+
+[dependencies]
+error-chain = "*"
+mio = "*"
+snmp = { git = "https://github.com/Svedrin/rust-snmp", branch = "feature/response-pdus" }
+uname = "*"
+libc = "*"
+clap = "*"
+yaml-rust = "0.3"

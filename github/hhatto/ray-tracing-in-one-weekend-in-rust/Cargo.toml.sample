@@ -1,0 +1,67 @@
+[package]
+name = "ray-tracing-in-one-weekend"
+version = "0.1.0"
+authors = ["Hideo Hattori <hhatto.jp@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+
+[features]
+concurrency = []
+
+[[bin]]
+name = "genppm"
+path = "src/genppm.rs"
+
+[[bin]]
+name = "genppm2"
+path = "src/genppm2.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "main5"
+path = "src/main5.rs"
+
+[[bin]]
+name = "main55"
+path = "src/main55.rs"
+
+[[bin]]
+name = "main6"
+path = "src/main6.rs"
+
+[[bin]]
+name = "main7"
+path = "src/main7.rs"
+
+[[bin]]
+name = "main8"
+path = "src/main8.rs"
+
+[[bin]]
+name = "main9"
+path = "src/main9.rs"
+
+[[bin]]
+name = "main10"
+path = "src/main10.rs"
+
+[[bin]]
+name = "main10-2"
+path = "src/main10-2.rs"
+
+[[bin]]
+name = "main11"
+path = "src/main11.rs"
+
+[[bin]]
+name = "main12"
+path = "src/main12.rs"
+
+[[bin]]
+name = "main12-concurrent"
+path = "src/main12-concurrent.rs"
+required-features = ["concurrency"]

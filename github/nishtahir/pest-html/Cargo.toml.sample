@@ -1,0 +1,8 @@
+[package]
+name = "pest-sample"
+version = "0.1.0"
+authors = ["Nish Tahir <nish.tahir@willowtreeapps.com>"]
+
+[dependencies]
+pest = "2.0"
+pest_derive = "2.0"

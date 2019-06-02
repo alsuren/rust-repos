@@ -1,0 +1,14 @@
+[package]
+name = "gloomhell"
+version = "0.1.0"
+authors = ["Romain Vaillant <rph.vaillant@gmail.com>"]
+
+[dependencies]
+
+engine = { path = "engine" }
+
+[workspace]
+
+members = [
+    "engine",
+]

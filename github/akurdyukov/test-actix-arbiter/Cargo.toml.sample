@@ -1,0 +1,14 @@
+[package]
+name = "test-actix-arbiter"
+version = "0.1.0"
+authors = ["Alik Kurdyukov <akurdyukov@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1.25"
+tokio = "0.1.16"
+actix = "0.7"
+futures-locks = "0.3"
+log = "0.4.6"
+simple_logger = "1.0.1"
+rand = "0.6.5"

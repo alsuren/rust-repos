@@ -1,0 +1,31 @@
+[package]
+name = "bitstask"
+version = "0.0.0"
+authors = ["Adam Gashlin <agashlin@mozilla.com>"]
+
+[patch.crates-io]
+winapi = { git = "https://github.com/hcs64/winapi-rs", branch = "0.3" }
+
+[dependencies]
+bincode = "1.0"
+comical = { path = "./comical" }
+rand = { version = "0.5", features = ["i128_support"] }
+serde = "1.0"
+serde_derive = "1.0"
+wio = "0.2"
+winapi = { version = "0.3.6", features = ["basetsd",
+                                          "bits",
+                                          "errhandlingapi",
+                                          "fileapi",
+                                          "guiddef",
+                                          "minwindef",
+                                          "namedpipeapi",
+                                          "ntdef",
+                                          "processthreadsapi",
+                                          "rpcdce",
+                                          "sddl",
+                                          "taskschd",
+                                          "unknwnbase",
+                                          "winbase",
+                                          "winerror",
+                                          "winnt"] }

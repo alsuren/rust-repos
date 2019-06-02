@@ -1,0 +1,22 @@
+[package]
+name = "wasmer-plugin"
+version = "0.1.0"
+authors = ["rfm <r@robertmasen.pizza>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+wasmer_plugin_macro = {path = "./crates/wasmer_plugin_macro"}
+serde = "1"
+bincode = "1"
+serde_derive = "1"
+
+[workspace]
+members = [
+    "./crates/wasmer_plugin_macro",
+    "./examples/example_plugin",
+    "./examples/example_runner",
+]
+
+[profile.release]
+lto = true

@@ -1,0 +1,11 @@
+[package]
+name = "plt"
+version = "5.4.0"
+authors = ["Sergey Kacheev <uo0@ya.ru>"]
+
+[dependencies]
+clap = "~2.29.0"
+itertools = "0.7.7"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"

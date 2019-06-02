@@ -1,0 +1,8 @@
+[package]
+
+name = "neato-rs"
+version = "0.0.1"
+authors = ["Nathaniel Theis <nttheis@gmail.com>"]
+
+[dependencies.back]
+path = "src/back"

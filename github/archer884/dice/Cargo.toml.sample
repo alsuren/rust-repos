@@ -1,0 +1,9 @@
+[package]
+name = "dice"
+version = "2.0.0"
+authors = ["J/A <archer884@gmail.com>"]
+
+[dependencies]
+lazy_static = "*"
+rand = "*"
+regex = "*"

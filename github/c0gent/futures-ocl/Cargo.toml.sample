@@ -1,0 +1,36 @@
+[package]
+name = "futures-ocl"
+version = "0.1.0"
+authors = ["Nick Sanders <cogciprocate@gmail.com>"]
+
+# [features]
+# default = []
+
+
+[dependencies]
+# ocl = { path = "/home/nick/src/github.com/cogciprocate/ocl", features = ["finish_queue_on_map_writes"] }
+# ocl = { path = "/home/nick/src/github.com/cogciprocate/ocl", features = ["disable_event_callbacks"] }
+ocl = { path = "/home/nick/src/github.com/cogciprocate/ocl" }
+
+# ocl-core = "0.3"
+# ocl-core = { path = "/home/nick/src/github.com/cogciprocate/ocl-core", features = ["disable_event_callbacks"] }
+cl-sys = { path = "/home/nick/src/github.com/cogciprocate/cl-sys" }
+ocl-core = { path = "/home/nick/src/github.com/cogciprocate/ocl-core" }
+
+lazy_static = "*"
+libc = "*"
+colorify = "*"
+futures = "0.1"
+futures-cpupool = "0.1"
+tokio-core = "0.1"
+tokio-timer = { git = "https://github.com/tokio-rs/tokio-timer" }
+rand = "0.3"
+chrono = "0.2"
+crossbeam = "*"
+
+
+[replace]
+# "ocl-core:0.3.2" = { git = "https://github.com/cogciprocate/ocl-core" }
+
+# "cl-sys:0.2.1" = { path = "/home/nick/src/github.com/cogciprocate/cl-sys" }
+# "ocl-core:0.3.2" = { path = "/home/nick/src/github.com/cogciprocate/ocl-core" }

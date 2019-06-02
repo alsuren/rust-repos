@@ -1,0 +1,29 @@
+[package]
+name = "raster"
+version = "0.2.1"
+license = "MIT"
+authors = ["kosinix <kosinix@users.noreply.github.com>"]
+exclude = [
+    "main.rs",
+    "dev/*",
+    "tests/*",
+]
+keywords = [
+    "image", "image-processing"
+]
+readme = "README.md"
+description = "Image processing lib for Rust"
+documentation = "https://docs.rs/raster/"
+homepage = "https://github.com/kosinix/raster"
+repository = "https://github.com/kosinix/raster.git"
+
+[dependencies.image]
+version = "0.19"
+default-features = false
+features = ["jpeg", "jpeg_rayon"]
+
+[dependencies.gif]
+version = "0.10"
+
+[dependencies.png]
+version = "0.12"

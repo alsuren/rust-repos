@@ -1,0 +1,29 @@
+[package]
+name = "RustyAoC2018"
+version = "0.1.0"
+
+# The lib name is hard-coded into pipe.rs
+[lib]
+name = "algorithm"
+
+[dependencies]
+algorithmia = { git = "https://github.com/anowell/algorithmia-rust.git", rev = "84dc1f37c3054f9723648c24bfa289069bfd4791" }
+base64 = "0.5.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+fxhash = "0.2.1"
+regex = "1.0.0"
+matrix = "0.21.12"
+lazy_static = "=1.0.0"
+linked-list = "0.0.3"
+rayon = "1.0.3"
+# petgraph = "0.4.13"
+daggy = "0.6.0"
+
+# Held back to suppor rust 1.22
+thread_local = "=0.3.2"
+
+[features]
+default = []
+bench = []

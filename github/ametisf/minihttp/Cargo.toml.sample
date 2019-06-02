@@ -1,0 +1,10 @@
+[package]
+name = "minihttp"
+version = "0.1.0"
+authors = ["Frantisek Fladung <fladufra@fel.cvut.cz>"]
+edition = "2018"
+
+[[bin]]
+name = "example"
+
+[dependencies]

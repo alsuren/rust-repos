@@ -1,0 +1,16 @@
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+incremental = false
+lto = true
+
+[workspace]
+members = [
+    "src/dg",
+    "src/dg_tests",
+    "src/libdg_go",
+    "src/libdg_mcts",
+    "src/libdg_nn",
+    "src/libdg_utils"
+]

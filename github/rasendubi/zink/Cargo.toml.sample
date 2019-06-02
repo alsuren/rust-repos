@@ -1,0 +1,12 @@
+[package]
+name = "zink"
+version = "0.1.0"
+authors = ["Alexey Shmalko <rasen.dubi@gmail.com>"]
+
+[dependencies]
+mqtt-protocol = "0.4"
+serde_json = "0.9"
+rs-jsonpath = "0.1"
+clap = "2"
+itertools = "0.5"
+hyper = "0.10"

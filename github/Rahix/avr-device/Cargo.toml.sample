@@ -1,0 +1,18 @@
+[package]
+name = "avr-device"
+version = "0.1.0"
+authors = ["Rahix <rahix@rahix.de>"]
+edition = "2018"
+build = "build.rs"
+
+[features]
+atmega1280 = []
+atmega8 = []
+atmega328p = []
+atmega32u4 = []
+attiny85 = []
+
+[dependencies]
+bare-metal = "0.2.4"
+vcell = "0.1.0"
+cfg-if = "0.1.7"

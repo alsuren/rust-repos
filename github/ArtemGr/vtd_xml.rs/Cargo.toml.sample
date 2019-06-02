@@ -1,0 +1,28 @@
+[package]
+name = "vtd_xml"
+version = "0.3.2"
+authors = ["Artem <artemciy@gmail.com>"]
+links = "vtdxml"
+build = "build.rs"
+description = "VTD-XML, fast XML parser"
+documentation = "https://docs.rs/vtd_xml/"
+repository = "https://github.com/ArtemGr/vtd_xml.rs"
+keywords = ["xml"]
+categories = ["api-bindings", "parsing"]
+license = "GPL-2.0"
+
+[lib]
+name = "vtd_xml"
+path = "src/lib.rs"
+crate-type = ["rlib"]
+doctest = false 
+
+[dependencies]
+encoding = "0.2"
+gstuff = "0.4"
+lazy_static = "0.2"
+libc = "0.2"
+memmap = "0.5"
+parking_lot = "0.4"
+
+[build-dependencies]

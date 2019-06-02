@@ -1,0 +1,42 @@
+[package]
+name = "digestiflow-cli"
+version = "0.5.1"
+authors = ["Manuel Holtgrewe <manuel.holtgrewe@bihealth.de>"]
+
+[dependencies]
+# Elegant error handling
+error-chain = "0.9"
+# XPath-based access to XML
+sxd-xpath = "0.4.2"
+sxd-document = "0.3.0"
+# Command line handling
+clap = {version = "2", features = ["yaml"]}
+# Configuration management
+config = "0.9"
+# REST API client
+restson = "^0.4.1"
+serde = "^1.0"
+serde_derive = "^1.0"
+# SLOG Logging
+slog = {version = "2.4.1", features = ["max_level_trace", "release_max_level_debug"] }
+slog-term = "2.4.0"
+slog-async = "2.3.0"
+# Additional features for Derive
+derivative = "1.0.2"
+# Path helpers
+glob = "0.2.11"
+# .gz file access
+flate2 = "1.0.6"
+# byte order
+byteorder = "*"
+# RNG
+rand = "0.6.1"
+rand_xorshift = "0.1.0"
+# Parallelism library
+rayon = "1.0"
+# Path helper
+shellexpand = "1.0.0"
+# Handling of times
+chrono = "0.4.6"
+# Regular expressions
+regex = "1.1.0"

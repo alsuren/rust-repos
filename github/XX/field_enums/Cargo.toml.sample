@@ -1,0 +1,24 @@
+[package]
+name = "field_types"
+version = "1.1.0"
+authors = ["Alexander Mescheryakov <freecoder.xx@gmail.com>"]
+license = "MIT"
+
+description = "Some derive macros for deriving enums, corresponding to the fields of structs."
+readme = "README.md"
+documentation = "https://docs.rs/field_types"
+
+repository = "https://github.com/XX/field_types"
+keywords = ["struct", "field", "type", "name", "enum"]
+categories = ["rust-patterns"]
+
+[dependencies]
+quote = "0.6"
+syn = "0.15"
+heck = "0.3"
+
+[dev-dependencies]
+variant_count = "1.0"
+
+[lib]
+proc-macro = true

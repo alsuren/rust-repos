@@ -1,0 +1,18 @@
+[package]
+name = "declarative-state-machine"
+version = "0.1.0"
+authors = ["Fin Christensen <christensen.fin@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+quote = "0.6"
+syn = "0.15"
+proc-macro2 = "0.4"
+quick-error = "1"
+
+[lib]
+proc-macro = true
+
+[[bin]]
+name = "main"
+path = "src/main.rs"

@@ -1,0 +1,8 @@
+[package]
+name = "game-of-life"
+version = "0.1.0"
+authors = ["aeduin <aeduin@nanquanu.org>"]
+
+[dependencies]
+glium = "0.22.0"
+rand = "0.6.1"

@@ -1,0 +1,55 @@
+[package]
+name = "glow"
+version = "0.1.0"
+description = "GL on Whatever: a set of bindings to run GL anywhere (Open GL, OpenGL ES, and WebGL) and avoid target-specific code."
+authors = ["Joshua Groves <josh@joshgroves.com>"]
+homepage = "https://github.com/grovesNL/glow.git"
+license = "MIT OR Apache-2.0"
+build = "build.rs"
+edition = "2018"
+
+[lib]
+name = "glow"
+path = "src/lib.rs"
+
+[target.'cfg(not(any(target_arch = "wasm32")))'.dependencies]
+glutin = { version = "0.19", optional = true }
+sdl2 = { version = "0.32", optional = true }
+
+[features]
+default = []
+
+[target.wasm32-unknown-unknown.dependencies]
+js-sys = "0.3"
+wasm-bindgen = "0.2"
+slotmap = "0.3"
+
+[target.wasm32-unknown-unknown.dependencies.web-sys]
+version = "0.3"
+features = [
+  "Document",
+  "Element",
+  "HtmlCanvasElement",
+  "WebGlActiveInfo",
+  "WebGlBuffer",
+  "WebGlFramebuffer",
+  "WebGlProgram",
+  "WebGlRenderbuffer",
+  "WebGlRenderingContext",
+  "WebGl2RenderingContext",
+  "WebGlSampler",
+  "WebGlShader",
+  "WebGlSync",
+  "WebGlTexture",
+  "WebGlUniformLocation",
+  "WebGlVertexArrayObject",
+  "Window",
+]
+
+[build-dependencies]
+gl_generator = "0.9"
+
+[workspace]
+members = [
+  "examples/hello",
+]

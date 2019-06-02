@@ -1,0 +1,7 @@
+[package]
+name = "disk-usage"
+version = "0.1.0"
+authors = ["sorousht"]
+
+[dependencies]
+sysinfo = "0.2.9"

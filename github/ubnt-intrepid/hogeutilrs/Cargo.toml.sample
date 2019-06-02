@@ -1,0 +1,27 @@
+[package]
+name = "rust-miscs"
+description = "miscellaneous cli utilities written in Rust"
+version = "0.1.0"
+authors = ["Yusuke Sasaki <yusuke.sasaki.nuem@gmail.com>"]
+
+[[bin]]
+name = "files"
+path = "src/files.rs"
+
+[[bin]]
+name = "jsonargs"
+path = "src/jsonargs.rs"
+
+[[bin]]
+name = "rsmate"
+path = "src/rsmate.rs"
+
+[dependencies]
+clap = "*"
+docopt = "*"
+rustc-serialize = "*"
+handlebars = "*"
+memmap = "*"
+nix = "*"
+walkdir = "*"
+regex = "*"

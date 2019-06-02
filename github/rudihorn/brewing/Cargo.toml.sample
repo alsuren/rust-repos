@@ -1,0 +1,24 @@
+[package]
+name = "max31865"
+version = "0.1.0"
+authors = ["Rudi Horn <dyn-git@rudi-horn.de>"]
+categories = [
+    "embedded",
+    "no-std",
+]
+description = "MAX31865 with typestate"
+keywords = [
+    "arm",
+    "cortex-m",
+    "template",
+]
+
+[dependencies]
+cortex-m = "0.4.3"
+cortex-m-rtfm = "0.3.1"
+tslib = { path = "../tslib", features = ["rt"] }
+panic-abort = "0.1.1"
+
+[profile.release]
+debug = true
+lto = true

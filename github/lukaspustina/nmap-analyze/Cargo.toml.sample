@@ -1,0 +1,31 @@
+[package]
+name = "nmap-analyze"
+version = "1.0.0"
+authors = ["Lukas Pustina <lukas@pustina.net>"]
+description = "Analyzes nmap xml output and compares results with expected specification"
+repository = "https://github.com/lukaspustina/nmap-analyze.git"
+homepage = "https://github.com/lukaspustina/nmap-analyze"
+readme = "README.md"
+license = "MIT"
+keywords = ["cli", "nmap", "security"]
+
+[badges]
+travis-ci = { repository = "lukaspustina/nmap-analyze", branch = "master" }
+codecov = { repository = "lukaspustina/nmap-analyze", branch = "master", service = "github" }
+
+[dependencies]
+clams = "^0.0.13"
+error-chain = "^0.12"
+log = "^0.4"
+prettytable-rs = "^0.7"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+serde_yaml = "^0.7"
+serde-xml-rs = "^0.2"
+structopt = "0.2"
+xml-rs = "0.6.0"
+
+[dev-dependencies]
+spectral = "^0.6"
+

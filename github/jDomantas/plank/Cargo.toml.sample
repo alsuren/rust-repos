@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "plank-syntax",
+    "plank-errors",
+    "plank-frontend",
+    "plank-ir",
+    "plank-x86-backend",
+    "plank-interpreter",
+    "plank",
+    "plank-server",
+    "tests",
+]

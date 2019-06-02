@@ -1,0 +1,6 @@
+# [[test]]
+# name = "chip8_suite"
+# harness = false
+
+[workspace]
+members = ["chipster", "chip8"]

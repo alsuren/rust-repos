@@ -1,0 +1,16 @@
+[package]
+authors = ["bRad <brad@humanenginuity.com>"]
+name = "RustQuickstartTemplate"
+version = "0.1.0"
+
+[dependencies]
+
+[dependencies.assayer]
+git = "https://github.com/humanenginuity/assayer"
+optional = false
+
+[profile]
+
+[profile.release]
+lto = true
+opt-level = 3

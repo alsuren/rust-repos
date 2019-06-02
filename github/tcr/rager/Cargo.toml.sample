@@ -1,0 +1,17 @@
+[package]
+authors = ["Tim Ryan <tim@timryan.org>"]
+description = "A pager written in Rust. Like more or less."
+documentation = "http://docs.rs/rager"
+license = "MIT OR Apache-2.0"
+name = "rager"
+repository = "http://github.com/tcr/rager"
+version = "0.3.2"
+readme = "README.md"
+
+[dependencies]
+crossbeam-channel = "0.1.2"
+failure = "0.1.1"
+libc = "0.2.40"
+ransid = "0.4.7"
+termion = "1.5.1"
+structopt = "0.2.8"

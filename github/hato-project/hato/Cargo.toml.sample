@@ -1,0 +1,52 @@
+[package]
+authors = ["realityone <realityone@me.com>"]
+name = "hato"
+version = "0.1.0"
+autobins = false
+
+[[bin]]
+name = "hato-server"
+path = "src/server/main.rs"
+
+[[bin]]
+name = "hato-agent"
+path = "src/agent/main.rs"
+
+[dependencies]
+actix = "0.7"
+actix-web = "0.7"
+dotenv = "0.13"
+env_logger = "0.5"
+futures = "0.1"
+log = "0.4"
+num_cpus = "1.8"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+rust-crypto = "0.2"
+jsonwebtoken = "5.0"
+uuid = "0.7"
+listenfd = "0.3"
+failure = "0.1"
+simplelog = "0.5"
+bcrypt = "0.2"
+lazy_static = "1.2"
+[dependencies.chrono]
+features = ["serde"]
+version = "0.4"
+
+[dependencies.diesel]
+features = [
+    "postgres",
+    "uuid",
+    "chrono",
+    "serde_json",
+    "r2d2",
+    "chrono",
+]
+version = "1.4"
+
+[dependencies.clap]
+version = "2.32"
+default-features = false
+features = [ "suggestions", "color", "yaml" ]

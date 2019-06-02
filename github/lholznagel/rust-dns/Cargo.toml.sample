@@ -1,0 +1,10 @@
+[profile.release]
+lto = true
+panic = 'abort'
+
+[workspace]
+members = [
+  "cli",
+  "daemon",
+  "proto"
+]

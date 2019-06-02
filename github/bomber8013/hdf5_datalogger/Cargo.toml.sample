@@ -1,0 +1,10 @@
+[package]
+name = "hdf5_datalogger"
+version = "0.1.0"
+authors = ["Alex Porter <bomber8013@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.hdf5-sys]
+path="../hdf5-sys"

@@ -1,0 +1,7 @@
+[workspace]
+members = ["./wee_alloc", "./test", "./example", "./trace-malloc-free"]
+
+[profile.release]
+lto = true
+debug = true
+opt-level = "z"

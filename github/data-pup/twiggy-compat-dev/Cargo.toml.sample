@@ -1,0 +1,15 @@
+[workspace]
+members = [
+  "./analyze",
+  "./ir",
+  "./opt",
+  "./parser",
+  "./twiggy",
+  "./traits",
+  "./wasm-api"
+]
+
+[profile.release]
+lto = true
+debug = true
+opt-level = "s"

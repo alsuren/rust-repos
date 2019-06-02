@@ -1,0 +1,8 @@
+[package]
+name = "contest_runner"
+version = "0.1.0"
+authors = ["Boris Egorov <egorov@linux.com>"]
+
+[dependencies]
+regex = "0.2"
+diff = "0.1.10"

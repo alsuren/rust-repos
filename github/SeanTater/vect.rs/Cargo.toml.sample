@@ -1,0 +1,12 @@
+[package]
+name = "vectrs"
+version = "0.1.0"
+authors = ["Sean Gallagher <stgallag@gmail.com>"]
+
+[dependencies]
+regex = "*"
+argparse = "*"
+rand = "*"
+
+[lib]
+name = "vect"

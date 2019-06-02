@@ -1,0 +1,25 @@
+[package]
+name = "emcee-editor"
+version = "0.1.0"
+authors = ["Osspial <osspial@gmail.com>"]
+
+[dependencies]
+cgmath = { version = "0.16.1", features = ["serde"] }
+cgmath-geometry = { git = "https://github.com/Osspial/cgmath-geometry.git", features = ["cgmath-serde"] }
+
+serde = "1.0"
+serde_derive = "1.0"
+
+uuid = { version = "0.6", features = ["serde", "v4"] }
+
+derin = { git = "https://github.com/Osspial/derin", features = ["derin-serde"] }
+derin_macros = { git = "https://github.com/Osspial/derin" }
+
+gullery = { git = "https://github.com/Osspial/gullery" }
+gullery_macros = { git = "https://github.com/Osspial/gullery" }
+
+log = "0.4"
+env_logger = "0.5"
+
+[replace]
+"winit:0.11.3" = { git = "https://github.com/osspial/winit", branch = "prs_merged" }

@@ -1,0 +1,9 @@
+[package]
+name = "cryptopals"
+version = "0.1.0"
+authors = ["Gerwin Uittenbogaard"]
+edition = "2018"
+
+[dependencies]
+base64 = "*"
+hex = "*"

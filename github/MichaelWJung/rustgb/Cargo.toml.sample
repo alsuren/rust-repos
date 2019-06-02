@@ -1,0 +1,12 @@
+[package]
+name = "rustgb"
+version = "0.1.0"
+authors = ["Michael Jung <MichaelWJung@users.noreply.github.com>"]
+
+[dependencies]
+app_dirs = "1.1.1"
+
+[dependencies.sdl2]
+version = "0.31"
+default-features = false
+features = ["unsafe_textures"]

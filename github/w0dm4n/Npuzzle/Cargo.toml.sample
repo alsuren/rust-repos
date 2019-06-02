@@ -1,0 +1,12 @@
+[package]
+name = "npuzzle"
+version = "0.1.0"
+authors = ["frmarinh", "amerelo"]
+
+[dependencies]
+piston2d-opengl_graphics = "*"
+piston2d-graphics = "*"
+piston_window = "0.73.0"
+find_folder = "0.3.0"
+regex = "0.2.2"
+gfx_device_gl = "0.14.4"

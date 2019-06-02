@@ -1,0 +1,24 @@
+[package]
+name = "etf_balancer"
+description = "Balance a portfolio of ETFs across multiple accounts"
+readme = "README.md"
+repository = "https://github.com/gnmerritt/etf-balancer"
+license = "MIT"
+version = "1.0.0"
+authors = ["Nathan Merritt <gnm@the-merritts.net>"]
+exclude = [
+    "spreadsheet/*"
+]
+
+[badges]
+travis-ci = { repository = "gnmerritt/etf-balancer", branch = "master" }
+
+[dependencies]
+actix-web = "0.6.10"
+cute = "0.3.0"
+serde = "1.0"
+serde_derive = "1.0"
+streaming-stats = "0.2"
+
+[dev-dependencies]
+spectral = "0.6.0"

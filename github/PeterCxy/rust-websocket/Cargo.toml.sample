@@ -1,0 +1,51 @@
+[package]
+name = "websocket"
+version = "0.20.2"
+authors = ["cyderize <admin@cyderize.org>", "Michael Eden <themichaeleden@gmail.com>"]
+
+description = "A WebSocket (RFC6455) library for Rust."
+
+documentation = "http://cyderize.github.io/rust-websocket/doc/websocket/"
+homepage = "http://cyderize.github.io/rust-websocket/"
+repository = "https://github.com/cyderize/rust-websocket.git"
+
+readme = "README.md"
+
+keywords = ["websocket", "websockets", "rfc6455", "async", "tokio"]
+categories = ["asynchronous", "network-programming", "web-programming", "web-programming::websocket"]
+
+license = "MIT"
+
+[dependencies]
+buf_redux = "^0.6.3"
+httparse = "1.0"
+unicase = "2.0"
+url = "1.0"
+bitflags = "0.9"
+rand = "0.3"
+byteorder = "1.0"
+sha1 = "0.2"
+base64 = "0.5"
+http = "0.1.5"
+tokio = { version = "0.1.7", optional = true }
+tokio-io = { version = "0.1.7", optional = true }
+tokio-codec = { version = "0.1", optional = true }
+futures = { version = "0.1.19", optional = true }
+bytes = { version = "0.4", optional = true }
+native-tls = { version = "^0.1.2", optional = true }
+hyper = "0.12.0"
+
+[dependencies.tokio-tls]
+git = "https://github.com/enzious/tokio-tls"
+optional = true
+
+[dev-dependencies]
+futures-cpupool = "0.1"
+
+[features]
+default = ["sync", "sync-ssl", "async", "async-ssl"]
+sync = []
+sync-ssl = ["native-tls", "sync"]
+async = ["tokio", "tokio-io", "tokio-codec", "bytes", "futures"]
+async-ssl = ["native-tls", "tokio-tls", "async"]
+nightly = []

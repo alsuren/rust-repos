@@ -1,0 +1,19 @@
+[package]
+name = "kyotocabinet"
+version = "0.0.6"
+authors = ["Vee Satayamas <vsatayamas@gmail.com>"]
+description = "Kyotocabinet binding"
+documentation = "https://github.com/veer66/kyotocabinet-rs/blob/master/README.md"
+homepage = "https://github.com/veer66/kyotocabinet-rs/"
+repository = "https://github.com/veer66/kyotocabinet-rs.git"
+readme = "README.md"
+keywords = ["kyotocabinet", "database"]
+license = "LGPL-3.0"
+
+[lib]
+name = "kyotocabinet"
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
+[dependencies]
+libc = "0.2.2"

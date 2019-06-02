@@ -1,0 +1,16 @@
+[package]
+name = "catss_api_rs"
+version = "0.1.0"
+authors = ["Tarin Mahmood <mahmood.tarin@gmail.com>"]
+
+[dependencies]
+router="*"
+rustc-serialize="*"
+rand="*"
+postgres={ version="*", features=["with-chrono"] }
+dotenv = "*"
+chrono="*"
+
+[dependencies.iron]
+version="*"
+

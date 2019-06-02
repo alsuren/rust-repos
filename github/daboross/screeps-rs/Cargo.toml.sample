@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "network",
+    "ui",
+]
+
+[profile.release]
+opt-level = 3
+lto = true

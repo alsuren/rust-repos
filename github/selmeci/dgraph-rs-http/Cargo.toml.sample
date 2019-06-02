@@ -1,0 +1,22 @@
+[package]
+name = "dgraph-rs-http"
+version = "0.1.1"
+authors = ["Selmeci <selmeci.roman@gmail.com>"]
+edition = "2018"
+license = "Apache-2.0"
+homepage = "https://github.com/selmeci/dgraph-rs-http"
+exclude = [
+    "resources/*",
+    "dgraph-rust-http.iml",
+    ".idea/*",
+    "src/main.rs",
+]
+
+description = "dGraph HTTP client in Rust"
+
+[dependencies]
+serde = "1.0.89"
+serde_derive = "1.0.89"
+serde_json = "1.0.39"
+reqwest = "0.9.7"
+rand = "0.6"

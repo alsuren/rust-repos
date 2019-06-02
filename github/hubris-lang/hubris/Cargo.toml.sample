@@ -1,0 +1,49 @@
+[package]
+name = "hubris"
+version = "0.1.0"
+authors = ["Jared Roesch <jroesch@cs.washington.edu>"]
+
+[lib]
+name = "hubris"
+path = "src/hubris/lib.rs"
+
+[[bin]]
+name = "hubris"
+path = "src/bin/hubris.rs"
+
+[[bin]]
+name = "test-hubris"
+path = "src/bin/test-hubris.rs"
+
+[features]
+llvm-backend = ["llvm-sys"]
+
+[dependencies.hubris_syntax]
+path = "src/hubris_syntax"
+
+[dependencies.readline]
+git = "https://github.com/hubris-lang/rust-readline"
+
+[dependencies.pretty]
+git = "https://github.com/hubris-lang/pretty"
+
+[dependencies]
+log = "*"
+env_logger = "*"
+gcc = "*"
+docopt = "0.6"
+iron = "*"
+router = "*"
+cfg-if = "0.1"
+rustc-serialize = "0.3"
+# rmp-serde = "*"
+# serde = "*"
+# serde_json = "*"
+# serde_macros = "*"
+term = "*"
+urlencoded = "*"
+itertools = "*"
+
+[dependencies.llvm-sys]
+git = "https://github.com/hubris-lang/llvm-sys.rs"
+optional = true

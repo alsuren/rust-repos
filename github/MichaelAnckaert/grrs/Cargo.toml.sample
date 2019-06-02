@@ -1,0 +1,20 @@
+[package]
+name = "grrs"
+version = "0.1.0"
+authors = ["Michael Anckaert <michael.anckaert@sinax.be>"]
+edition = "2018"
+license = "MIT"
+description = "A simple commandline tool to search a file for a pattern"
+readme = "README.md"
+homepage = "https://github.com/michaelanckaert/grrs"
+repository = "https://github.com/michaelanckaert/grrs"
+
+[dependencies]
+structopt = "0.2.10"
+failure = "0.1.5"
+exitfailure = "0.5.1"
+
+[dev-dependencies]
+assert_cmd = "0.10"
+predicates = "1"
+tempfile = "3"

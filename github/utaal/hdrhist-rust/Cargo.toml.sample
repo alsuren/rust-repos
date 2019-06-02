@@ -1,0 +1,17 @@
+[package]
+name = "hdrhist"
+version = "0.5.1-pre"
+authors = ["Andrea Lattuada <andrea.lattuada@inf.ethz.ch>"]
+repository = "https://github.com/utaal/hdrhist"
+documentation = "https://docs.rs/hdrhist"
+
+edition = "2018"
+
+description = "Small footprint hdr histogram"
+license = "MIT"
+
+[dependencies]
+
+[dev-dependencies]
+rand = "^0.5"
+textplots = "^0.3"

@@ -1,0 +1,14 @@
+[package]
+
+name = "monster_hunter"
+version = "0.0.1"
+authors = [ "Anders Conbere <anders@conbere.org>" ]
+
+[dependencies]
+docopt = "0.6"
+rawsql = "0.1.0"
+rusqlite = "0.6.0"
+flate2 = "0.2"
+rustc-serialize = "0.3"
+encoding = "0.2"
+regex = "0.1"

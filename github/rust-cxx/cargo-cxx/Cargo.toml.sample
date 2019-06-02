@@ -1,0 +1,22 @@
+[package]
+name = "cargo-cxx"
+version = "0.1.2"
+license = "GPL-3.0-only"
+authors = ["Rui <2221870259@qq.com>"]
+description = "CXX Pakcage Manager"
+homepage = "https://github.com/ray-cast/cargo-cxx"
+repository = "https://github.com/ray-cast/cargo-cxx.git"
+edition = "2018"
+keywords = ["cxx", "build", "plugin", "package", "manager"]
+
+[lib]
+name = "cxx"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cargo-cxx"
+path = "src/main.rs"
+
+[dependencies]
+argparse = "0.2.2"
+cmake = "0.1"

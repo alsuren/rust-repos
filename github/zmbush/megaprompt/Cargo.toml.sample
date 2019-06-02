@@ -1,0 +1,26 @@
+[package]
+name = "Megaprompt"
+version = "1.0.0"
+publish = false
+authors = [ "Zachary Bush <zach@zmbush.com>" ]
+homepage = "https://github.com/zmbush/megaprompt"
+description = "A prompt designed by Zach Bush. It works for him. Feel free to use it"
+license = "Apache-2.0/MIT"
+
+[dependencies]
+git2 = "*"
+term = "*"
+time = "*"
+unix_socket = "*"
+log = "*"
+log4rs = "*"
+num = "*"
+prompt_buffer = { path = "prompt_buffer" }
+chan = "*"
+clap = "*"
+
+[workspace]
+
+[[bin]]
+name = "megaprompt"
+path = "src/main.rs"

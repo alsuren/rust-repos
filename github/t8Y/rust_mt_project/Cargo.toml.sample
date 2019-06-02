@@ -1,0 +1,11 @@
+[package]
+name = "rust_mt_project"
+version = "0.1.0"
+authors = ["takahiro"]
+
+[dependencies]
+
+[lib]
+name = "test"
+path = "src/lib.rs"
+crate-type = ["dylib"]

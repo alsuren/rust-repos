@@ -1,0 +1,10 @@
+[package]
+name = "ctrie"
+version = "0.1.0"
+authors = ["Brian Shannan <brianshannan@gmail.com>"]
+
+[dependencies]
+crossbeam = "0.2"
+
+# [profile.release]
+# debug = true

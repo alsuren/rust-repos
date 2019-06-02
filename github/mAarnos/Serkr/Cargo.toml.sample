@@ -1,0 +1,27 @@
+[package]
+name = "serkr"
+version = "0.1.0"
+authors = ["Mikko Aarnos <mikko.aarnos@gmail.com>"]
+
+exclude = ["examples/*", "test_problems/*"]
+
+build = "build.rs" 
+
+[build-dependencies.lalrpop]
+version = "*"
+
+[dependencies.lalrpop-util]
+version = "*"
+
+[dependencies.regex]
+version = "*"
+
+[dependencies.clap]
+version = "*"
+
+[dependencies.num]
+version = "*"
+
+[dependencies.clippy]
+version = "*"
+optional = true

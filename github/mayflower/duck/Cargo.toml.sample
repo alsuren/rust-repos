@@ -1,0 +1,15 @@
+[package]
+
+name = "duck"
+version = "0.0.1"
+authors = ["Robin Gloster <robin.gloster@mayflower.de>"]
+
+[dependencies]
+semver = "0.1.20"
+hyper = "0.6.15"
+puppetfile = "0.2.0"
+log = "0.3.2"
+rustc-serialize = "0.3.16"
+toml = "0.1.0"
+eventual = "0.1.4"
+cargo = "0.5.0"

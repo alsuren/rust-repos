@@ -1,0 +1,20 @@
+[package]
+name = "calibration_web_app"
+version = "0.3.0"
+authors = ["serejkaaa512"]
+
+[dependencies]
+nickel = "*"
+url = "*"
+groupable = "*"
+typemap="*"
+plugin="*"
+rustc-serialize = "*"
+time="*"
+regex="*"
+simple-chart = "*"
+
+[dependencies.mysql]
+mysql = "*"
+default-features = false
+features = ["pipe"]

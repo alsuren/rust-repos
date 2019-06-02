@@ -1,0 +1,12 @@
+[package]
+name = "nature_integrate_test_converter"
+version = "0.1.0"
+authors = ["xuebin.Li <llxxbb@yeah.net>"]
+edition = "2018"
+workspace = "../Nature"
+
+[dependencies]
+nature_common = {path = "../Nature-Common"}
+
+[lib]
+crate-type = ["dylib"]

@@ -1,0 +1,9 @@
+[package]
+
+name = "termios-sys"
+version = "0.0.6"
+authors = ["Brian Smith <github@basmith.org>"]
+description = "Rust FFI layer for libc's termios functions"
+repository = "https://github.com/basmith/termios-sys"
+license = "MIT"
+keywords = ["termios", "terminal"]

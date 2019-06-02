@@ -1,0 +1,21 @@
+[package]
+
+name = "opencl-raytrace"
+version = "0.0.0"
+authors = []
+
+[[bin]]
+
+name = "raytrace"
+path = "./src/bin.rs"
+
+[dependencies]
+cgmath = "*"
+glium = "*"
+glutin = "*"
+log = "*"
+rand = "*"
+time = "*"
+
+[dependencies.opencl]
+git = "https://github.com/luqmana/rust-opencl"

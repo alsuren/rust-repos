@@ -1,0 +1,35 @@
+[package]
+name = "lain"
+version = "0.1.0"
+authors = ["Erin <erin@hashbang.sh>"]
+
+build = "build.rs"
+
+[dependencies]
+log = "0.3"
+env_logger = "0.4"
+dotenv = "0.10"
+psutil = "1.0"
+
+toml = "0.4"
+time = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+typemap = "0.3"
+error-chain = "0.10"
+
+redis = "0.8"
+r2d2 = "0.7.2"
+r2d2_redis = "0.6.0"
+
+[dependencies.serenity]
+version = "0.2.0"
+features = ["cache", "framework"]
+
+[dependencies.diesel]
+version = "0.12.1"
+features = ["postgres"]
+
+[dependencies.diesel_codegen]
+version = "0.12.0"
+features = ["postgres"]

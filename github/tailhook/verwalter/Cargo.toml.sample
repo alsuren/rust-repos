@@ -1,0 +1,94 @@
+[package]
+name = "verwalter"
+description = """
+    Decentralized resource and configuration management daemon
+"""
+readme = "README.rst"
+keywords = ["cluster", "linux", "resource", "configuration", "management"]
+version = "0.13.4"
+homepage = "http://github.com/tailhook/verwalter"
+documentation = "http://verwalter.readthedocs.org"
+authors = ["Paul Colomiets <paul@colomiets.name>"]
+
+[dependencies]
+lua = { rev="90d38a8", git="git://github.com/tailhook/rust-lua53" }
+argparse = "0.2"
+handlebars = { version="0.26.1" }
+log = "0.4.1"
+env_logger = "0.5.3"
+tempfile = "3.0.0"
+quire = "0.4.0"
+yaml-rust = "0.4.0"
+scan_dir = "0.3"
+time = "0.1.32"
+rand = "0.5.0"
+libc = "0.2.36"
+matches = "0.1.2"
+nix = "0.11.0"
+cbor-codec = "0.7.1"
+regex = "1.0.0"
+lazy_static = "1.0.0"
+sha1 = "0.6.0"
+inotify = "0.5.0"
+itertools = "0.7.6"
+gron = "0.4.0"
+self-meter = "0.6.0"
+quick-error = "1.1.0"
+libcantal = "0.3.2"
+tera = "0.10.5"
+error-chain = "0.10.0"  # for tera
+serde = {version="1.0.0", features=["rc"]}
+serde_cbor = "0.8.2"
+serde_derive = "1.0.0"
+serde_json = "1.0.0"
+serde_millis = "0.1.1"
+serde_regex = "0.2.0"
+crossbeam = "0.4.1"
+trimmer = "0.3.6"
+void = "1.0"
+async-slot = "0.1.0"
+valuable_futures = "0.1.1"
+abstract-ns = "0.4.2"
+ns-router = "0.1.5"
+tokio-core = "0.1.10"
+tokio-io = "0.1.4"
+futures = "0.1.18"
+futures-cpupool = "0.1.5"
+tk-cantal = "0.3.2"
+tk-http = "0.3.5"
+tk-easyloop = "0.1.1"
+tk-listen = "0.1.0"
+tk-bufstream = "0.3.0"
+ns-std-threaded = "0.3.0"
+self-meter-http = "0.4.1"
+failure = "0.1.1"
+http-file-headers = "0.1.6"
+hex = "0.3.1"
+deflate = {version="0.7.17", features=["gzip"]}
+capturing-glob = "0.1.1"
+wasmi = "0.4.0"
+dir-signature = "0.2.5"
+humantime = "1.1.1"
+juniper = { git="https://github.com/graphql-rust/juniper", rev="56f71e9" }
+graphql-parser = "0.2.0"
+
+[workspace]
+exclude = ["example-configs"]
+
+[dependencies.indexed_log]
+path = "./indexed_log"
+
+[dependencies.verwalter_config]
+path = "./verwalter_config"
+
+[profile.release]
+debug = true
+lto = true
+
+[[bin]]
+name = "verwalter"
+path = "src/daemon/main.rs"
+
+[[bin]]
+name = "verwalter_render"
+path = "src/render/main.rs"

@@ -1,0 +1,9 @@
+[package]
+name = "rustdos"
+version = "0.1.0"
+authors = ["ex0dus-0x <ex0dus@codemuch.tech>"]
+
+[dependencies]
+
+hyper = "0.10.*"
+clap = "2.25.0"

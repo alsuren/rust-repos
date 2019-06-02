@@ -1,0 +1,18 @@
+[package]
+name = "banga"
+version = "0.1.0"
+authors = ["Stefan Kersten <kaoskorobase@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+fixedbitset = "0.1.9"
+jack = "0.6"
+libc = "0.2"
+midir = "0.5"
+rosc = "0.1"
+sodium-rust = "1.0"
+wmidi = "1.1"
+
+[build-dependencies]
+bindgen = "0.42.2"

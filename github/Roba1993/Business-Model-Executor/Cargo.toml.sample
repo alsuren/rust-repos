@@ -1,0 +1,14 @@
+[package]
+name = "bme"
+version = "0.1.0"
+authors = ["Robert Schütte <schuetterobert@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+
+serde_json = "1.0"
+
+bme-macro = { path = "bme-macro" }
+
+web-sys = { version = "0.3.22", features = ['console'] }

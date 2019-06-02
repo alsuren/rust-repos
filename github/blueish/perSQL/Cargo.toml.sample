@@ -1,0 +1,8 @@
+[package]
+name = "persql"
+version = "0.1.0"
+authors = ["Sam Chow <me@samc.how>"]
+edition = "2018"
+
+[dependencies]
+rexpect = "0.3.0"

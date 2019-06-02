@@ -1,0 +1,23 @@
+[package]
+name = "half_matrix"
+version = "0.2.1"
+authors = ["Joël Lupien (Jojolepro) <jojolepromain@gmail.com>"]
+edition = "2018"
+description = """
+A Half Matrix implementation.
+Used mostly to represent many to many boolean representations.
+
+For example, if you have A, B, C.
+You can say (B, A) = true and the rest = false.
+
+See the docs.rs page or the github repository for more information.
+"""
+
+keywords = ["half", "matrix", "groups"]
+documentation = "https://docs.rs/half_matrix"
+repository = "https://github.com/jojolepro/half-matrix"
+license = "Apache-2.0"
+exclude = ["doc"]
+
+[dependencies]
+hibitset = "0.5"

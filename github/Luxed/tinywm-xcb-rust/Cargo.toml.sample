@@ -1,0 +1,7 @@
+[package]
+name = "tinywm-rust-xcb"
+version = "0.1.0"
+authors = ["luxed"]
+
+[dependencies]
+xcb = "0.8"

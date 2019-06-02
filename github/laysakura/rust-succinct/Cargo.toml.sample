@@ -1,0 +1,22 @@
+[package]
+name = "succinct_rs"
+version = "0.6.0"
+authors = ["Sho Nakatani <lay.sakura@gmail.com>"]
+description = "Succinct Data Structures library for Rust."
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/laysakura/succinct.rs"
+homepage = "https://github.com/laysakura/succinct.rs"
+keywords = ["succinct", "succinct-bit-vector", "louds"] # up to 5 keywords, each keyword should have <= 20 chars
+categories = ["compression", "data-structures"]
+edition = "2018"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+rand = "0.6"
+
+[[bench]]
+name = "succinct_bench"
+harness = false

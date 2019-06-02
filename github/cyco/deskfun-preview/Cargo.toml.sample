@@ -1,0 +1,13 @@
+[package]
+name = "deskfun-preview"
+version = "0.1.0"
+authors = ["Christoph Leimbrock <christoph.leimbrock@gmx.de>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+byteorder = "1"
+image = "0.18"
+elapsed = "0.1"
+encoding = "0.2"

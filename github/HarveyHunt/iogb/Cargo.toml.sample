@@ -1,0 +1,10 @@
+[package]
+name = "iogb"
+version = "0.1.0"
+authors = ["Harvey Hunt <harveyhuntnexus@gmail.com>"]
+
+[dependencies]
+argparse = "0.2.1"
+bitflags = "0.5.0"
+time = "0.1.38"
+minifb = "0.9.2"

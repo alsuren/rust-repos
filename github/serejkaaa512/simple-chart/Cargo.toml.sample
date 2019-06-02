@@ -1,0 +1,23 @@
+[package]
+name = "simple-chart"
+version = "0.7.9"
+authors = ["serejkaaa512 <5125402@mail.ru>"]
+repository = "https://github.com/serejkaaa512/simple-chart.git"
+homepage = "https://github.com/serejkaaa512/simple-chart.git"
+license = "MIT"
+readme = "README.md"
+documentation = "http://serejkaaa512.github.io/simple-chart/"
+description = "Simple line chart in bmp format."
+
+[[bin]]
+name = "main"
+doc = false
+
+[dependencies]
+byteorder = "0.5.1"
+quick-error = "1.1.0"
+clippy = {version = "0.0.96", optional = true}
+
+[features]
+default = []
+dev = ["clippy"]

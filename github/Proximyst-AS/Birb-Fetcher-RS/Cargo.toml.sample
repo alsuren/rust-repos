@@ -1,0 +1,18 @@
+[package]
+name = "birbfetcher-rs"
+version = "0.1.0"
+authors = ["Proximyst <proximyst@proximyst.com>"]
+
+[dependencies]
+serde = "1.0.27"
+serde_json = "1.0.9"
+serde_derive = "1.0.27"
+hyper-native-tls = "0.2.4"
+hyper = "0.10"
+base64 = "0.9.0"
+sha2 = "0.7.0"
+digest = { version = "0.7", features = ["std"] }
+iron = "*"
+router = { version = "*", git = "https://github.com/iron/router.git" }
+byteorder = "*"
+rand = "0.4.*"

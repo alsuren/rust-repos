@@ -1,0 +1,25 @@
+[package]
+name = "cache-rs"
+version = "1.0.5"
+authors = ["Georg Brandl <georg@python.org>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+
+[dependencies]
+log = "*"
+time = "*"
+libc = "*"
+mlzlog = "*"
+regex = "*"
+memchr = "*"
+mlzutil = "*"
+structopt = "*"
+aho-corasick = "*"
+signal-hook = "*"
+lazy_static = "*"
+parking_lot = "*"
+daemonize = "*"
+crossbeam-channel = "*"
+postgres = { version = "*", optional = true }

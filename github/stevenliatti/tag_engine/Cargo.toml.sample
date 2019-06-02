@@ -1,0 +1,11 @@
+[package]
+name = "tag_engine"
+version = "0.1.0"
+authors = ["steven.liatti <steven.liatti@etu.hesge.ch>"]
+
+[dependencies]
+tag_manager = { path = "../tag_manager" }
+walkdir = "2"
+petgraph = "0.4.12"
+notify = "4.0.0"
+clap = "2"

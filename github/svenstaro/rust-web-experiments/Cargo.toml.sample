@@ -1,0 +1,8 @@
+[package]
+name = "rust-web-experiments"
+version = "0.1.0"
+authors = ["Sven-Hendrik Haase <svenstaro@gmail.com>"]
+
+[dependencies]
+chrono = "*"
+yew = { git = "git://github.com/DenisKolodin/yew.git" }

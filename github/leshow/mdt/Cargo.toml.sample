@@ -1,0 +1,13 @@
+[package]
+name = "mdt"
+version = "0.2.0"
+authors = ["Evan Cameron <cameron.evan@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+pulldown-cmark= { version ="0.1.2", default-features = false }
+termion = "1.5.1"
+syntect = "3.0.1"
+lazy_static = "1.1.0"
+getopts = "0.2"
+immeta = "0.4.0"

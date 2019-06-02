@@ -1,0 +1,13 @@
+[package]
+name = "rust_standalone_stack"
+version = "0.1.0"
+authors = ["Mariell Hoversholm <proximyst@proximyst.com>"]
+edition = "2018"
+publish = false
+build = "build.rs"
+
+[dependencies]
+vgabuf_err = "^0.1"
+
+[build-dependencies]
+nasm-rs = "^0.1"

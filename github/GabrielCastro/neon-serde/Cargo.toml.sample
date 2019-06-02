@@ -1,0 +1,21 @@
+[package]
+name = "neon-serde"
+version = "0.1.1"
+authors = ["Gabriel Castro <dev@GabrielCastro.ca>"]
+description = "Easily serialize object for use with neon"
+license = "MIT"
+repository = "https://github.com/GabrielCastro/neon-serde"
+readme = "readme.md"
+
+[dependencies]
+serde = "1.*"
+error-chain = "0.11.*"
+neon = "0.2.*"
+neon-runtime = "0.2.*"
+cast = "0.2.*"
+
+[dev-dependencies]
+serde_derive = "1.*"
+
+[badges]
+travis-ci = { repository = "GabrielCastro/neon-serde" }

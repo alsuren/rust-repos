@@ -1,0 +1,15 @@
+[package]
+name = "sqfs"
+version = "0.0.1"
+authors = ["Emil Renner Berthing <esmil@mailme.dk>"]
+edition = "2018"
+
+[dependencies]
+time = "*"
+clap = "*"
+yaml-rust = "*"
+virtfs = { git = "https://github.com/esmil/virtfs.git" }
+squashfs = { path = "../squashfs" }
+
+[[bin]]
+name = "sqfs"

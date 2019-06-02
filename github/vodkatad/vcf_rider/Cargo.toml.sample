@@ -1,0 +1,31 @@
+[package]
+name = "vcf_rider"
+version = "0.1.0"
+authors = ["Elena Grassi <grassi.e@gmail.com>"]
+
+[dependencies]
+bio = "*"
+rust-htslib = "0.13.0"
+itertools = "*"
+argparse = "*"
+bit-vec = "*"
+
+[[bin]]
+name = "vcf_rider"
+doc = false
+
+[[bin]]
+name = "gc_counter"
+path = "src/bin/gc_counter.rs"
+
+[[bin]]
+name = "gc_rider"
+path = "src/bin/gc_rider.rs"
+
+[[bin]]
+name = "mirna_counter"
+path = "src/bin/mirna_counter.rs"
+
+[[bin]]
+name = "indel_stats"
+path = "src/bin/indel_stats.rs"

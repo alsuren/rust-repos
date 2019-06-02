@@ -1,0 +1,49 @@
+[package]
+authors = ["{{authors}}"]
+categories = ["wasm"]
+description = "My super awesome Rust and WebAssembly project!"
+license = "Apache-2.0/MIT"
+name = "{{project-name}}"
+readme = "./README.md"
+repository = "https://github.com/rustwasm/{{project-name}}"
+version = "0.1.0"
+
+[badges]
+# Change this to your project's GitHub repo!
+travis-ci = { repository = "rustwasm/rust_wasm_template" }
+
+[lib]
+crate-type = [
+  # Build a cdylib to make a `.wasm` library.
+  "cdylib",
+  # Build an rlib for testing and benching.
+  "rlib"
+]
+
+[dependencies]
+cfg-if = "0.1.2"
+wasm-bindgen = "0.2.12"
+
+# The `console_error_panic_hook` crate provides better debugging of panics by
+# logging them with `console.error`. This is great for development, but requires
+# all the `std::fmt` and `std::panicking` infrastructure, so isn't great for
+# code size when deploying.
+console_error_panic_hook = { version = "0.1.1", optional = true }
+
+# `wee_alloc` is a tiny allocator for wasm that is only ~1K in code size
+# compared to the default allocator's ~10K. It is slower than the default
+# allocator, however.
+wee_alloc = { version = "0.4.1", optional = true }
+
+[features]
+default-features = ["console_error_panic_hook", "wee_alloc"]
+
+[profile.release]
+# Enable this option for better time and size profiling.
+# debug = true
+
+# Optimize for small code size, rather than speed.
+opt-level = "s"
+
+# Always enable link-time optimizations to shrink binary sizes.
+lto = true

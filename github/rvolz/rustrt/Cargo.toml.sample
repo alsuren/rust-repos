@@ -1,0 +1,46 @@
+[package]
+name = "rustrt"
+version = "0.1.0"
+authors = ["Rainer Volz <dev@textmulch.de>"]
+edition = "2018"
+
+[[test]]
+name = "cucumber"
+harness = false # Allows Cucumber to print output instead of libtest
+
+[[test]]
+name = "c_transformations"
+harness = false # Allows Cucumber to print output instead of libtest
+
+[[test]]
+name = "c_rays"
+harness = false # Allows Cucumber to print output instead of libtest
+
+[[test]]
+name = "c_intersections"
+harness = false # Allows Cucumber to print output instead of libtest
+
+[[test]]
+name = "c_spheres"
+harness = false # Allows Cucumber to print output instead of libtest
+
+[[test]]
+name = "c_lights"
+harness = false # Allows Cucumber to print output instead of libtest
+
+[[test]]
+name = "c_materials"
+harness = false # Allows Cucumber to print output instead of libtest
+
+[dependencies]
+float-cmp = "^0.4"
+ordered-float = "^1.0"
+derive_builder = "0.7.0"
+
+[dev-dependencies]
+cucumber_rust = "^0.5"
+round = "0.1.0"
+
+[features]
+default = ["nightly"]
+nightly = []

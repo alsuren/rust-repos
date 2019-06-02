@@ -1,0 +1,15 @@
+[package]
+name = "xtreme_game"
+version = "0.1.0"
+authors = ["Ilmari Autio <ilmari.autio@gmail.com>"]
+
+[dependencies]
+ash = "0.18"
+glsl-to-spirv = "0.1"
+winit = "0.7"
+libloading = "0.3"
+cgmath = "0.14"
+lazy_static = "1.0"
+
+[lib]
+crate-type = ["dylib"]

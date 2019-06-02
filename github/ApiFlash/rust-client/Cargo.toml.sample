@@ -1,0 +1,12 @@
+[package]
+name = "apiflash"
+description = "The official rust client of ApiFlash, website screenshot API."
+license = "MIT/Apache-2.0"
+version = "0.1.4"
+readme = "README.md"
+documentation = "https://apiflash.com/documentation"
+homepage = "https://apiflash.com"
+authors = ["Timothée Jeannin <timojeajea@gmail.com>"]
+edition = "2018"
+
+[dependencies]

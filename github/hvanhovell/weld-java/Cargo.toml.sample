@@ -1,0 +1,15 @@
+[package]
+name = "weld_java"
+version = "0.2.0"
+authors = ["Herman van Hovell <hvanhovell@databricks.com>"]
+
+[dependencies]
+libc = "0.2.0"
+weld = { git = "https://github.com/weld-project/weld", branch = "llvm-st" }
+jni = { git = "https://github.com/prevoty/jni-rs" }
+regex = "*"
+
+[lib]
+path = "src/main/rust/lib.rs"
+crate-type = ["cdylib", "rlib"]
+bench = false

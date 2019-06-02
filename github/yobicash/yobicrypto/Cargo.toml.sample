@@ -1,0 +1,36 @@
+[package]
+name = "yobicrypto"
+version = "0.2.4"
+authors = ["Christian Nyumbayire <christian@yobicash.org>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/yobicash/yobicrypto"
+description = "The Yobicash cryptographyc toolkit"
+categories = ["cryptography"]
+
+[badges]
+travis-ci = { repository = "yobicash/yobicrypto", branch = "master" }
+coveralls = { repository = "yobicash/yobicrypto", branch = "master", service = "github" }
+maintenance = { status = "experimental" }
+
+[lib]
+name = "yobicrypto"
+path = "src/lib.rs"
+
+[dependencies]
+failure = "^0.1"
+failure_derive = "^0.1"
+serde = "^1.0"
+serde_derive = "^1.0"
+rmp = "^0.8"
+rmp-serde = "^0.13"
+hex = "^0.3"
+typenum = "^1.9"
+generic-array = { version = "^0.9", features = ["serde"] }
+digest = "^0.7"
+sha2 = "^0.7"
+subtle = "^0.3"
+curve25519-dalek = { version = "^0.14", features = ["serde"] }
+ctaes-sys = { path = "ctaes-sys", version = "^0.1" }
+rand = "^0.4"
+rug = { version = "^0.9", features = ["serde"] }
+byteorder = "^1.2"

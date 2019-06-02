@@ -1,0 +1,24 @@
+[package]
+name = "framed-serial"
+description = "Add frames to serial connections. Useful for embedded devices. Can be built with no_std."
+version = "0.4.0"
+authors = ["Andrew Straw <strawman@astraw.com>"]
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/astraw/framed-serial"
+repository = "https://github.com/astraw/framed-serial"
+documentation = "https://docs.rs/framed-serial/"
+keywords = ["serial", "embedded", "frames", "no_std"]
+categories = ["network-programming"]
+readme = "README.md"
+
+[dependencies]
+embedded-serial = "0.5"
+byteorder = { version = "1", default-features = false }
+serial = {version = "0.3", optional = true }
+
+[features]
+default = ["std"]
+
+std = ["serial"]
+collections = []
+device_connected = ["std"]

@@ -1,0 +1,32 @@
+[package]
+name = "conetty"
+version = "0.1.0"
+authors = ["Xudong Huang <huangxu008@hotmail.com>"]
+license = "MIT"
+documentation = "https://docs.rs/conetty"
+homepage = "https://github.com/Xudong-Huang/conetty"
+repository = "https://github.com/Xudong-Huang/conetty"
+keywords = ["protocol", "server", "client"]
+readme = "README.md"
+description = "General client server framework for Rust based on coroutine."
+
+[lib]
+# crate-type = ["dylib"]
+
+[dependencies]
+log = "0.4"
+byteorder = "1"
+may = { git = "https://github.com/Xudong-Huang/may.git" }
+co_waiter = { git = "https://github.com/Xudong-Huang/co_waiter.git" }
+co_managed =  { git = "https://github.com/Xudong-Huang/co_managed.git" }
+
+[dev-dependencies]
+serde = "1"
+bincode = "0.9"
+token_id = { git = "https://github.com/Xudong-Huang/token_id.git" }
+token_id-plugins = { git = "https://github.com/Xudong-Huang/token_id.git" }
+env_logger = "0.4"
+serde_derive = "1"
+
+[profile.release]
+opt-level=3

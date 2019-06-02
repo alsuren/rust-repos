@@ -1,0 +1,20 @@
+[package]
+name = "uenc"
+version = "0.1.2"
+authors = ["Hiroki Kumamoto <kumabook@live.jp>"]
+description = "Command line url encoder/decoder"
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/kumabook/uenc"
+repository = "https://github.com/kumabook/uenc.git"
+
+[[bin]]
+path = "src/uenc.rs"
+name = "uenc"
+[[bin]]
+path = "src/udec.rs"
+name = "udec"
+
+[dependencies]
+url = "0.5.7"
+getopts = "0.2"

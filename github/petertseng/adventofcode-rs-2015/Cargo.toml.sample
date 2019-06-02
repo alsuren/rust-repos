@@ -1,0 +1,8 @@
+[package]
+name = "adventofcode"
+version = "0.1.0"
+authors = ["Peter Tseng <pht24@cornell.edu>"]
+edition = "2018"
+
+[dependencies]
+permutohedron = "0.2"

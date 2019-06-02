@@ -1,0 +1,20 @@
+[package]
+name = "cg"
+version = "0.1.0"
+authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
+build = "build.rs"
+
+[[bin]]
+name = "cg"
+doc = false
+
+[dependencies]
+libc = "0.2.30"
+rand = "0.3.16"
+bmp = "0.3.0"
+
+[features]
+default = ["glfw"]
+glfw = []
+glut = []
+wireframe = []

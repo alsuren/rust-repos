@@ -1,0 +1,8 @@
+[package]
+name = "woof3d"
+version = "0.1.0"
+authors = ["Graham Grochowski <ggrochow@gmail.com>"]
+
+[dependencies]
+sdl2 = "0.27.0"
+rand="0.3"

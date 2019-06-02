@@ -1,0 +1,9 @@
+[package]
+name = "synacor_challenge"
+version = "0.0.1"
+authors = ["boarder2"]
+[dependencies]
+time = "*"
+byteorder = "*"
+clap = "2.*"
+rustc-serialize = "0.3.*"

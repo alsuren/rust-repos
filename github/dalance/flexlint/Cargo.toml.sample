@@ -1,0 +1,28 @@
+[package]
+name = "flexlint"
+version = "0.2.5-pre"
+authors = ["dalance <dalance@gmail.com>"]
+repository = "https://github.com/dalance/flexlint"
+license = "MIT"
+readme = "README.md"
+description = "A flexible linter with rules defined by regular expression"
+categories = ["command-line-utilities", "development-tools"]
+edition = "2018"
+
+[dependencies]
+colored      = "1.6.1"
+failure      = "0.1.2"
+glob         = "0.2.11"
+regex        = "1.0.0"
+serde        = "1.0.66"
+serde_derive = "1.0.66"
+structopt    = "0.2.10"
+term         = "0.5.1"
+toml         = "0.4.6"
+
+[package.metadata.release]
+dev-version-ext            = "pre"
+pre-release-commit-message = "Prepare to v{{version}}"
+pro-release-commit-message = "Start next development iteration v{{version}}"
+tag-message                = "Bump version to {{version}}"
+tag-prefix                 = "v"

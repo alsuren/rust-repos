@@ -1,0 +1,11 @@
+[package]
+name = "raycane"
+version = "0.1.0"
+authors = [
+  "Arewa Olakunle <arewa.olakunle@gmail.com>",
+  "Raymond Tukpe <rtupke@gmail.com>"
+]
+
+[dependencies]
+mio = "0.6"
+ws = "*"

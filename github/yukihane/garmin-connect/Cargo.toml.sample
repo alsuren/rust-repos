@@ -1,0 +1,12 @@
+[package]
+name = "garmin-connect"
+version = "0.1.0"
+authors = ["yukihane <yukihane.feather@gmail.com>"]
+
+
+[dependencies]
+url = "1.5.1"
+futures = "0.1"
+hyper = "0.11.2"
+hyper-tls = "0.1.2"
+tokio-core = "0.1"

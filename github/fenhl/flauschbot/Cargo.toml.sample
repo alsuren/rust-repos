@@ -1,0 +1,21 @@
+[package]
+name = "flauschbot"
+version = "0.1.0"
+authors = ["Fenhl <fenhl@fenhl.net>"]
+
+[[bin]]
+name = "flauschbot"
+path = "src/main.rs"
+doc = false
+test = false
+bench = false
+
+[dependencies]
+curl = "*"
+iron = "*"
+lazy_static = "*"
+plugin = "*"
+queryst = "*"
+regex = "*"
+router = "*"
+rustc-serialize = "*"

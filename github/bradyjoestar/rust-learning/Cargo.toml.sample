@@ -1,0 +1,40 @@
+[package]
+name = "rustlearn"
+version = "0.1.0"
+authors = ["webb <bradyjoestar@gmail.com>"]
+edition = "2018"
+
+
+[[bin]]
+name = "base_language_demo"
+
+[[bin]]
+name = "complex_language_demo"
+
+[[bin]]
+name = "ownership_demo"
+
+[[bin]]
+name = "closure_iterator_demo"
+
+[[bin]]
+name = "smart_pointer_demo"
+
+[[bin]]
+name = "mod_demo"
+
+[[bin]]
+name = "thread_demo"
+
+[[bin]]
+name = "webserver_demo"
+
+[[bin]]
+name = "rustlearn"
+path = "src/main.rs"
+
+[[bin]]
+name = "bin-test"
+path = "src/bin_build_demo/bin_test.rs"
+
+[dependencies]

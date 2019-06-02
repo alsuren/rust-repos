@@ -1,0 +1,22 @@
+[package]
+name = "mqttc"
+version = "0.1.5"
+authors = ["Maksim V. <inre.storm@gmail.com>"]
+description = "Mqttc is a client for the MQTT protocol."
+repository = "https://github.com/inre/rust-mq"
+license = "MIT"
+
+[features]
+default = ["ssl"]
+ssl = ["openssl"]
+
+[dependencies]
+log = "*"
+rand = "*"
+byteorder = "*"
+mqtt3 = { git = "https://github.com/mcornejo/rust-mqtt3.git" }
+url = "*"
+openssl = { version = "0.9", optional = true, features = ["v101", "v102"] }
+
+[dev-dependencies]
+env_logger = "*"

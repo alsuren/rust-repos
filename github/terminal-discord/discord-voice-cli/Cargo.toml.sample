@@ -1,0 +1,12 @@
+[package]
+name = "discord-voice-cli"
+version = "0.1.0"
+authors = ["Noskcaj <kcajdev@gmail.com>"]
+
+[dependencies]
+cpal = "0.8.2"
+clap = "2.32.0"
+
+[dependencies.serenity]
+git = "https://github.com/terminal-discord/serenity"
+features = ["cache", "voice"]

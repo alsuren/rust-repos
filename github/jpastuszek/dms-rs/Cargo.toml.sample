@@ -1,0 +1,27 @@
+[package]
+name = "dms-rs"
+version = "0.0.1"
+authors = ["Jakub Pastuszek <jpastuszek@gmail.com>"]
+build = "build.rs"
+
+[[bin]]
+name = "dms_agent"
+path = "src/dms_agent.rs"
+
+[build-dependencies]
+capnpc = "*"
+
+[dependencies]
+clap = "2.0.6"
+log = "0.3.5"
+flexi_logger = "0.3.3"
+nanomsg = "~0.5.0"
+chrono = "*"
+time = "~0.1"
+capnp = "*"
+capnpc = "*"
+chan-signal = "0.1.5"
+chan = "0.1.17"
+url = "0.5.5"
+token_scheduler = { path = "../token_scheduler" }
+

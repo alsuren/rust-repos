@@ -1,0 +1,8 @@
+[package]
+name = "snake-in-rust"
+version = "0.1.0"
+authors = ["Lenny Boyatzis <lennyboyatzis@gmail.com>"]
+
+[dependencies]
+rand = "0.3.20"
+piston_window = "0.75.0"

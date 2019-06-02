@@ -1,0 +1,17 @@
+[package]
+name = "inquest"
+version = "0.1.0"
+authors = ["Dan Rammer <hamersaw@gmail.com>"]
+
+[dependencies]
+chan = "0.1"
+chrono = "0.2"
+curl = "0.3"
+docopt = "0.6"
+futures = "0.1"
+futures-cpupool = "0.1"
+grpc = { git = "https://github.com/stepancheg/grpc-rust" }
+protobuf = { git = "http://github.com/stepancheg/rust-protobuf" }
+#resolv = "0.1"
+rustc-serialize = "0.3"
+threadpool = "1.3"

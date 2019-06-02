@@ -1,0 +1,18 @@
+[package]
+name = "gl_context"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["gl_context"]
+description = "opengl context api helpers"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-gl_context.git"
+homepage = "https://github.com/nathanfaucett/rs-gl_context"
+
+exclude = ["examples"]
+
+[dependencies]
+gl = {version = "*"}
+regex = {version = "*"}
+collection_traits = {git = "https://github.com/nathanfaucett/rs-collection_traits.git"}

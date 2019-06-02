@@ -1,0 +1,13 @@
+[package]
+name = "fsaserver"
+version = "0.1.0"
+authors = ["Nick Driscoll <nick.a.mavros@gmail.com>"]
+
+[dependencies]
+byteorder = "1"
+
+[dependencies.sdl2]
+git = "https://github.com/AngryLawyer/rust-sdl2"
+version = "0.31"
+default-features = false
+features = ["image"]

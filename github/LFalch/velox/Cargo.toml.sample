@@ -1,0 +1,14 @@
+[workspace]
+members = [".", "velox", "velox-server", "sandbox"]
+
+[package]
+name = "velox-core"
+version = "0.1.0-wip"
+authors = ["LFalch <lucas@wasd.dk>"]
+
+[dependencies]
+simple-vector2d = {version = "0.1", features = ["serde-serial"]}
+serde = "1"
+serde_derive = "1"
+rand = "0.3"
+bincode = "0.9"

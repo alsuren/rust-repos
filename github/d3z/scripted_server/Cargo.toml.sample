@@ -1,0 +1,10 @@
+[package]
+name = "scripted_server"
+version = "0.1.0"
+authors = ["Gareth Fleming <me@d3z.me>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2"
+yaml-rust = "0.3.5"
+either = "1.5.0"

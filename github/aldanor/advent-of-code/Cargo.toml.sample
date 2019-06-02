@@ -1,0 +1,18 @@
+[package]
+name = "advent-of-code-2018"
+version = "0.1.0"
+authors = ["Ivan Smirnov <i.s.smirnov@gmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies]
+itertools = "0.7"
+lazy_static = "1.2"
+num-bigint = "0.2"
+num-integer = "0.1"
+num-traits = "0.2"
+regex = "1.1"
+
+[features]
+default = []
+bench = []

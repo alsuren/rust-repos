@@ -1,0 +1,6 @@
+[package]
+name = "rust_proxy_server"
+version = "0.1.0"
+authors = ["Zhiyi Liu<zhiyiliu2015@u.northwestern.edu>"]
+[dependencies]
+threadpool = "0.1.4"

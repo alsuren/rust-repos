@@ -1,0 +1,27 @@
+[package]
+name = "beholder_api"
+version = "0.1.0"
+authors = ["Murilo Cadanus da Costa <murilocadanus@gmail.com>"]
+description = "Beholder Rest API."
+include = ["resources/app.config"]
+
+[dependencies]
+nickel = "0.7.3"
+bson = "0.2.1"
+mongodb = "0.1.4"
+rustc-serialize = "0.3.19"
+chrono = "0.2.25"
+jwt = "0.4.0"
+hyper = "0.6.16"
+rust-crypto = "0.2.36"
+sha1 = "0.2.0"
+clap = "2.10.0"
+rust-ini = "0.9.8"
+env_logger = "0.3.4"
+log = "0.3.6"
+time = "0.1.35"
+
+[dependencies.mysql]
+version = "7.0.0"
+default-features = false
+features = ["socket"]

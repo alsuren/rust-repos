@@ -1,0 +1,13 @@
+[package]
+name = "mould-auth"
+version = "0.0.11"
+authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
+readme = "README.md"
+description = "Authorization services for Mould framework."
+repository = "https://github.com/DenisKolodin/mould-auth"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+mould = { path = "../mould" }
+serde = "1.0.2"
+serde_derive = "1.0.2"

@@ -1,0 +1,5 @@
+[workspace]
+members = ["core", "service", "client", "server"]
+
+[profile.dev]
+debug = true

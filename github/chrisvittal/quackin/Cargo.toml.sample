@@ -1,0 +1,14 @@
+[package]
+authors = ["z1mvader <z1mvader@protonmail.com>"]
+description = "Quackin is a recommender systems  framework written in Rust. We are currently focused on collaborative filtering."
+keywords = ['recommender', 'systems', 'collaborative', 'filtering']
+license = "MIT"
+name = "quackin"
+readme = "README.md"
+repository = "https://github.com/z1mvader/quackin"
+documentation = "https://docs.rs/quackin/"
+version = "0.1.1"
+
+[dependencies]
+csv = "0.15.0"
+sprs = "0.4.0"

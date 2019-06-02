@@ -1,0 +1,12 @@
+[package]
+name = "littlewing_web"
+version = "0.1.0"
+authors = ["Florian Lackner <florian.lackner@gmail.com>"]
+
+[dependencies]
+js-sys = "0.2.7"
+wasm-bindgen = "0.2"
+littlewing = { path = "littlewing" }
+
+[lib]
+crate-type = ["cdylib"]

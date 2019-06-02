@@ -1,0 +1,30 @@
+[package]
+name = "fortinbras"
+version = "0.1.0"
+authors = ["Bo Ingram <boingram6@gmail.com>"]
+build = "build.rs"
+
+[[bin]]
+name = "fortinbras"
+path = "src/bin/fortinbras.rs"
+doc = false
+
+[lib]
+name = "fortinbras"
+path = "src/lib.rs"
+
+[build-dependencies]
+serde_codegen = "0.8.11"
+
+[dependencies]
+bincode = "0.6.0"
+hyper = "0.9.10"
+iron = "0.4.0"
+log = "0.3.6"
+log4rs = { version = "0.4.8", features = [ "yaml" ] }
+router = "*"
+rustc-serialize = "0.3"
+serde = "0.8.11"
+serde_json = "0.8"
+toml = "0.2"
+unicase = "1.4.0"

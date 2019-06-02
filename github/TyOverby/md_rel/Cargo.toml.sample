@@ -1,0 +1,20 @@
+[package]
+name = "md_rel"
+version = "0.0.1"
+authors = ["Ty Overby <ty@pre-alpha.com>"]
+
+#[dependencies.try_or]
+#git = "https://github.com/TyOverby/try_or.git"
+
+[dependencies.regex]
+version = "0.2"
+default-features = false
+features = []
+
+[[bin]]
+name = "md_rel"
+path = "src/main.rs"
+
+[lib]
+name = "md_rel"
+path = "src/lib.rs"

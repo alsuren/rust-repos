@@ -1,0 +1,8 @@
+[package]
+name = "terminal-player"
+version = "0.1.0"
+authors = ["lws <chenkun_lws@126.com>"]
+
+[dependencies]
+crossterm = "0.4.2"
+png = "0.13.0"

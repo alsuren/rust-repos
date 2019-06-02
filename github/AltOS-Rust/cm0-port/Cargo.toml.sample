@@ -1,0 +1,30 @@
+[package]
+name = "cortex_m0"
+version = "0.1.0"
+authors = ["Daniel Seitz <dnseitz@gmail.com>"]
+
+[lib]
+crate-type = ["rlib"]
+
+[features]
+default = []
+
+doc = []
+dma = ["serial"]
+serial = []
+minicom = ["serial"]
+svc = ["altos_core/syscall"]
+test = ["altos_core/test"]
+
+[dependencies]
+#compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+arm = { path = "libs/arm" }
+volatile-ptr = { git = "https://github.com/AltOS-Rust/volatile" }
+altos-macros = { git = "https://github.com/AltOS-Rust/altos-core" }
+
+[dependencies.altos_core]
+git = "https://github.com/AltOS-Rust/altos-core"
+features = ["free_list_allocator", "cm0"]
+
+#[dependencies.compiler_builtins]
+#git = "https://github.com/rust-lang-nursery/compiler-builtins"

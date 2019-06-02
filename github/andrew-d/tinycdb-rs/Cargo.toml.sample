@@ -1,0 +1,30 @@
+[package]
+
+name = "tinycdb"
+version = "0.0.7"
+authors = ["Andrew Dunham <andrew@du.nham.ca>"]
+
+description = "Bindings to the TinyCDB C library (http://www.corpit.ru/mjt/tinycdb.html)"
+documentation = "http://rust-ci.org/andrew-d/tinycdb-rs/doc/tinycdb/"
+repository = "https://github.com/andrew-d/tinycdb-rs"
+readme = "README.md"
+keywords = ["bindings", "database", "cdb", "tinycdb"]
+license = "MIT"
+
+[[bench]]
+name = "bench"
+path = "./benches/bench.rs"
+test = false
+bench = true
+
+[dependencies]
+libc = "0.2"
+tinycdb-sys = "0.0.2"
+
+[dev-dependencies]
+rustc-serialize = "0.3"
+lz4 = "1.9"
+
+[profile.bench]
+opt-level = 3
+debug = true

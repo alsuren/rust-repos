@@ -1,0 +1,11 @@
+[package]
+name = "rtiow"
+version = "0.1.0"
+authors = ["Antoine Busch <abusch@atlassian.com>"]
+
+[dependencies]
+lazy_static = "*"
+rand = "*"
+log = "0.4"
+env_logger="*"
+image="*"

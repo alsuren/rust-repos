@@ -1,0 +1,21 @@
+[package]
+name = "i73"
+version = "0.1.0"
+authors = ["coderbot <coderbot16@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+cgmath = "0.16"
+hematite-nbt-serde = { git = "https://github.com/coderbot16/hematite_nbt.git" }
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+byteorder = "1.0"
+bit-vec = "0.4.4"
+nom = "3.2.1"
+rs25 = { path = "../rs25" }
+vocs = { path = "../vocs" }
+java-rand = "0.1.0"
+
+[profile.dev]
+opt-level = 3

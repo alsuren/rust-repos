@@ -1,0 +1,25 @@
+[package]
+authors = ["Scott Godwin <sgodwincs@gmail.com>"]
+build = "build.rs"
+categories = ["parsing"]
+description = "A WebIDL parser"
+homepage = "https://github.com/sgodwincs/webidl-rs"
+keywords = ["webidl", "idl"]
+license = "MIT"
+name = "webidl"
+readme = "README.md"
+repository = "https://github.com/sgodwincs/webidl-rs"
+version = "0.9.0"
+exclude = ["tests/*.zip"]
+
+[build-dependencies]
+lalrpop = "0.17"
+
+[dependencies]
+lalrpop-util = "0.17"
+
+[dev-dependencies]
+zip = "0.5"
+
+[features]
+default = []

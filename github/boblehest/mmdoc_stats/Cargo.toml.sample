@@ -1,0 +1,13 @@
+[package]
+name = "doc_stats"
+version = "0.1.0"
+authors = ["Jørn Lode <jlode90@gmail.com>"]
+
+[dependencies]
+xml-rs = "0.3"
+log = "0.3"
+env_logger = "0.3"
+custom_derive = "0.1"
+enum_derive = "0.1"
+clap = "2"
+

@@ -1,0 +1,18 @@
+[package]
+name = "fredjam2018"
+version = "0.1.0"
+authors = ["Sven-Hendrik Haase <svenstaro@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+num = "0.2"
+tui = "0.3"
+termion = "1.5"
+unicode-width = "0.1"
+rodio = "~0.8"
+itertools = "0.8"
+strum = "0.13.0"
+strum_macros = "0.13.0"
+rand = "0.6.0"
+pest = "2.1"
+pest_derive = "2.1"

@@ -1,0 +1,11 @@
+[package]
+name = "roaan"
+version = "0.1.0"
+authors = ["ttymck <tyler@tylerkontra.com>"]
+edition = "2018"
+
+[dependencies]
+console = "0.7.5"
+dialoguer = "0.3.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_cbor = "0.9"

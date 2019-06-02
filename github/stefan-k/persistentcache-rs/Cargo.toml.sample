@@ -1,0 +1,43 @@
+[package]
+name = "persistentcache"
+version = "0.1.6"
+authors = ["Stefan Kroboth <stefan.kroboth@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = "Macros for persistently caching function calls using files or Redis"
+documentation = "https://stefan-k.github.io/rust/persistentcache/"
+homepage = "https://github.com/stefan-k/persistentcache-rs"
+repository = "https://github.com/stefan-k/persistentcache-rs"
+readme = "README.md"
+keywords = ["persistent", "caching", "science", "HPC", "memoization"]
+categories = ["caching", "science"]
+license-file = "LICENSE-APACHE"
+exclude = [ 
+	".travis.yml",
+	"push_docs",
+]
+
+[dependencies]
+clippy = {version = "0.0.188", optional = true}
+redis = "0.8.0"
+bincode = "1.0.0"
+regex = "0.2.10"
+lazy_static = "1.0.0"
+fs2 = "0.4.3"
+error-chain = "0.11.0"
+persistentcache_procmacro = "0.0.3"
+
+# [dependencies.persistentcache_procmacro]
+# path = "persistentcache_procmacro"
+# version = "0.0.3"
+
+[dev-dependencies]
+num = "0.1.42"
+
+[features]
+default = []
+
+[workspace]
+members = ["persistentcache_procmacro"]
+
+[badges]
+travis-ci = { repository = "stefan-k/persistentcache-rs", branch = "master" }

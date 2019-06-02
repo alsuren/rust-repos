@@ -1,0 +1,15 @@
+[package]
+name = "avl_tree_rs"
+version = "0.1.0"
+authors = ["MarceloBRN"]
+keywords = ["tree", "collection", "avl"]
+categories = ["data-structures"]
+repository = "https://github.com/MarceloBRN/avl_tree_rust"
+description = "Full safe avl tree"
+edition = "2018"
+# [profile.test]
+# opt-level = 3
+
+
+# [profile.dev]
+# opt-level = 3

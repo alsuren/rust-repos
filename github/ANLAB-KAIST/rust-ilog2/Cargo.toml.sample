@@ -1,0 +1,26 @@
+[package]
+
+name = "ilog2"
+version = "0.2.2"
+authors = [ "Keunhong Lee <dlrmsghd@gmail.com>" ]
+
+homepage = "https://github.com/ANLAB-KAIST/rust-ilog2"
+repository = "https://github.com/ANLAB-KAIST/rust-ilog2"
+documentation = "https://github.com/ANLAB-KAIST/rust-ilog2"
+license = "MIT"
+keywords = ["integer", "logarithm", "ilog2", "bitops"]
+
+description = """
+Integer logarithm library including some bit operations.
+"""
+
+[dependencies]
+num = "*"
+
+[lib]
+name = "ilog2"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rust_ilog2_test"
+path = "src/main.rs"

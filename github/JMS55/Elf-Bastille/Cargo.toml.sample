@@ -1,0 +1,13 @@
+[package]
+name = "elf-bastille"
+version = "1.0.0"
+edition = "2018"
+
+[dependencies]
+specs = "0.14"
+specs-derive = "0.4"
+rayon = "1.0"
+rand = "0.6"
+rand_pcg = "0.1"
+glium = "0.23"
+image = "0.21"

@@ -1,0 +1,17 @@
+[package]
+name = "rust-belt"
+version = "1.2.0"
+authors = [
+    "johnthagen <johnthagen@gmail.com>",
+    "theandrewdavis <theandrewdavis@gmail.com>",
+    "mcdenhoed <mcdenhoed@gmail.com>",
+]
+edition = "2018"
+
+[dependencies]
+piston_window = "0.80.0"
+piston2d-opengl_graphics = "0.53.0"
+piston-music = "0.24.0"
+piston2d-sprite = "0.45.0"
+piston-ai_behavior = "0.24.0"
+rand = "0.5.4"

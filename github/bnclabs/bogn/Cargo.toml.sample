@@ -1,0 +1,32 @@
+[package]
+name = "bogn"
+version = "0.1.0"
+authors = ["prataprc <prataprc@gmail.com>"]
+description = "Key value data store"
+documentation = "https://docs.rs/bogn"
+homepage = "https://github.com/bnclabs/bogn"
+repository = "https://github.com/bnclabs/bogn"
+keywords = ["storage", "mvcc", "llrb", "btree", "lsm"]
+categories = ["data-structures", "database"]
+license = "AGPL-3.0"
+exclude = ["template/**"]
+readme = "README.md"
+edition = "2018"
+
+[lib]
+
+name = "bogn"
+path = "src/lib.rs"
+
+[badges]
+maintenance = { status = "actively-developed" }
+travis-ci = { repository = "bnclabs/bogn" }
+
+[dependencies]
+structopt = { version = "0.2", default-features = false }
+lazy_static = "1.2.0"
+jsondata = "0.6.0"
+rand = "0.6.4"
+
+[dev-dependencies]
+rand = "0.6.4"

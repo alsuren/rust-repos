@@ -1,0 +1,10 @@
+[package]
+name = "QuangoCore"
+version = "0.0.1"
+authors = ["olie <olie.smit0@gmail.com>"]
+
+[dependencies]
+gl = "0.6.3"
+stb_image = "0.2.2"
+glutin = "0.11.0"
+glm = "0.2.3"

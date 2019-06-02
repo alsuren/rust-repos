@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "core",
+    "plugin",
+    "sample"
+]
+
+[profile.release]
+lto = "fat"
+codegen-units = 1

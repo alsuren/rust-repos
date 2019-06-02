@@ -1,0 +1,10 @@
+[package]
+name = "tinyrenderer-rs"
+version = "0.1.0"
+authors = ["David Li <li.davidm96@gmail.com>"]
+
+[dependencies]
+image = "0.7.0"
+rand = "0.3"
+regex = "0.1"
+nalgebra = "*"

@@ -1,0 +1,14 @@
+[package]
+name = "komplexity"
+version = "0.3.5"
+authors = ["Erik Clarke <erikclarke@fastmail.com>"]
+
+[dependencies]
+bio = "~0.14"
+clap = "~2.24"
+fnv = "~1.0"
+
+[[bin]]
+name = "kz"
+path = "src/main.rs"
+

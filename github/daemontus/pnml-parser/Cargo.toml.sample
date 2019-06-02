@@ -1,0 +1,16 @@
+[package]
+name = "pnml-parser"
+version = "0.1.0"
+authors = ["Samuel Pastva <daemontus@gmail.com>"]
+license = "MIT"
+description = "A PNML parser for Rust"
+repository = "https://github.com/daemontus/pnml-parser/"
+readme = "Readme.md"
+keywords = ["pnml", "petri net", "parser"]
+
+[lib]
+name = "pnml"
+path = "src/lib.rs"
+
+[dependencies]
+xml-rs = "0.3.2"

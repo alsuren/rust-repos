@@ -1,0 +1,17 @@
+[package]
+name = "learning_open_gl"
+version = "0.1.0"
+authors = ["arielalvarez <ariel.alvarez.android@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+sdl2 = { version = "0.31.0", features = ["bundled", "static-link"] }
+gl = { path = "lib/gl" }
+render_gl_derive = { path = "render_gl_derive" }
+failure = "0.1.3"
+
+[build-dependencies]
+walkdir = "2.1"
+
+[features]
+gl_debug = ["gl/debug"]

@@ -1,0 +1,66 @@
+[package]
+name = "opengl_sdl2_demo"
+version = "0.3.0"
+authors = ["Thomspoon <Saturisk@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+cgmath = "0.14"
+image = "0.13.0"
+gl = "0.6.0"
+sdl2 = "0.30"
+
+[build-dependencies]
+gl_generator = "0.5.0"
+
+[[example]]
+name = "rectangle"
+path = "src/examples/hello_triangle/rectangle.rs"
+
+[[example]]
+name = "two_triangles"
+path = "src/examples/hello_triangle/two_triangles.rs"
+
+[[example]]
+name = "two_triangles_and_vbo"
+path = "src/examples/hello_triangle/two_triangles_and_vbo.rs"
+
+[[example]]
+name = "two_triangles_with_shaders"
+path = "src/examples/hello_triangle/two_triangles_with_shaders.rs"
+
+[[example]]
+name = "uniform"
+path = "src/examples/shaders/uniform.rs"
+
+[[example]]
+name = "triangle_vertex_colors"
+path = "src/examples/shaders/triangle_vertex_colors.rs"
+
+[[example]]
+name = "triangle_exercise_3"
+path = "src/examples/shaders/triangle_exercise_3.rs"
+
+[[example]]
+name = "rectangle_texture"
+path = "src/examples/textures/rectangle_texture.rs"
+
+[[example]]
+name = "transformation"
+path = "src/examples/transformations/transformation.rs"
+
+[[example]]
+name = "model_view_matrix"
+path = "src/examples/coordinate_systems/model_view_matrix.rs"
+
+[[example]]
+name = "mvm_more_cubes"
+path = "src/examples/coordinate_systems/mvm_more_cubes.rs"
+
+[[example]]
+name = "camera"
+path = "src/examples/camera/camera_view.rs"
+
+[[example]]
+name = "camera_class"
+path = "src/examples/camera/camera_class.rs"

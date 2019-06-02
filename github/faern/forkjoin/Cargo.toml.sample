@@ -1,0 +1,26 @@
+[package]
+
+name = "forkjoin"
+description = "A work stealing fork-join parallelism library for Rust"
+version = "2.3.0"
+authors = ["Linus Färnstrand <faern@faern.net>"]
+
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/faern/forkjoin"
+repository = "https://github.com/faern/forkjoin.git"
+documentation = "https://faern.github.io/rust-docs/forkjoin/forkjoin/"
+readme = "README.md"
+keywords = ["fork-join", "forkjoin", "work", "stealing", "parallelization"]
+
+[dependencies]
+deque = "0.3"
+rand = "0.3.*"
+num_cpus = "0.2.*"
+thread-scoped = "1.*"
+libc = "*"
+
+#[dependencies.deque]
+#git = "https://github.com/kinghajj/deque"
+
+[features]
+threadstats = []

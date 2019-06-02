@@ -1,0 +1,13 @@
+[package]
+name = "fungine"
+version = "0.1.0"
+authors = ["Mike Goddard"]
+
+[dependencies]
+downcast-rs = "0.1.2"
+stopwatch = "0.0.7"
+num_cpus = "1.4.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+erased-serde = "0.3"

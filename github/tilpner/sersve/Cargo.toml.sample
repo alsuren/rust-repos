@@ -1,0 +1,29 @@
+[package]
+
+name = "sersve"
+version = "0.0.1"
+authors = ["Till Hoeppner <till@hoeppner.ws>"]
+
+[profile.release]
+lto = true
+
+[[bin]]
+name = "sersve"
+path = "src/sersve.rs"
+
+[dependencies]
+iron = "*"
+glob = "*"
+conduit-mime-types = "*"
+mustache = "*"
+regex = "*"
+num_cpus = "*"
+serde = "*"
+serde_macros = "*"
+serde_json = "*"
+lazy_static = "*"
+libc = "*"
+docopt = "*"
+docopt_macros = "*"
+rustc-serialize = "*"
+env_logger = "*"

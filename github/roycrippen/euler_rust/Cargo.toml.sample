@@ -1,0 +1,31 @@
+[package]
+name = "euler_rust"
+version = "0.2.0"
+authors = ["roycrippen <roycrippen@gmail.com>"]
+
+[dependencies]
+rayon = "1.0"
+
+euler_library  = { path = "euler_library"  }
+euler_p001_010 = { path = "euler_p001_010" }
+euler_p011_020 = { path = "euler_p011_020" }
+euler_p021_030 = { path = "euler_p021_030" }
+euler_p031_040 = { path = "euler_p031_040" }
+euler_p041_050 = { path = "euler_p041_050" }
+euler_p051_060 = { path = "euler_p051_060" }
+euler_p061_070 = { path = "euler_p061_070" }
+euler_p071_080 = { path = "euler_p071_080" }
+euler_p081_090 = { path = "euler_p081_090" }
+euler_p091_100 = { path = "euler_p091_100" }
+euler_p101_110 = { path = "euler_p101_110" }
+euler_p111_120 = { path = "euler_p111_120" }
+euler_p121_130 = { path = "euler_p121_130" }
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 8
+panic = 'unwind'

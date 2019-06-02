@@ -1,0 +1,18 @@
+[package]
+name = "upload_server"
+version = "0.1.0"
+authors = ["Arpad Kovacs <minhmeoke@gmail.com>"]
+edition = "2015"
+
+[dependencies]
+chrono = "0.4.0"
+clap = "2.29.2"
+rust-crypto = "0.2.36"
+formdata = "0.12.2"
+mime_guess = "1.8.3"
+notify = "4.0.3"
+pretty-bytes = "0.2.2"
+rocket = "0.4.0"
+rocket_codegen = "0.4.0"
+rocket-file-cache = { git = "https://github.com/akovacs/rocket-file-cache" }
+time = "0.1.39"

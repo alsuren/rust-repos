@@ -1,0 +1,26 @@
+[package]
+name = "coeus"
+version = "0.1.0"
+authors = ["Unknown Soldiers Engineering Dept <intel@clanunknownsoldiers.com>"]
+
+[lib]
+name = "libcoeus"
+path = "src/lib.rs"
+
+[[bin]]
+name = "coeus"
+path = "src/bin/coeus_cli.rs"
+
+[dependencies]
+docopt = "1.0"
+clap = { version = "2.0", features = ["yaml"] }
+diesel = { version = "1.0", features = ["sqlite"] }
+regex = "1.0"
+reqwest = "0.8"
+serde_json = "1.0"
+csv = "1.0.1"
+lazy_static = "1.1.0"
+
+[dev-dependencies]
+diesel_migrations = { version = "1.0", features = ["sqlite"] }
+assert_approx_eq = "1.0.0"

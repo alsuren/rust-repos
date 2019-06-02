@@ -1,0 +1,10 @@
+[package]
+name = "stopwatch"
+version = "0.1.0"
+authors = ["Jay Anderson"]
+
+[[lib]]
+name = "stopwatch"
+
+[[bin]]
+name = "run"

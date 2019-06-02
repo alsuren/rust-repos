@@ -1,0 +1,10 @@
+[package]
+name = "redistcli"
+version = "0.1.0"
+authors = ["Zach <zach_41@163.com>"]
+
+[dependencies]
+log = "*"
+
+[dev-dependencies]
+env_logger = "*"

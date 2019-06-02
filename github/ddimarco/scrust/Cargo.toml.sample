@@ -1,0 +1,42 @@
+[package]
+name = "scrust"
+version = "0.1.0"
+authors = ["Daniel Di Marco <d.dimarco@gmx.de>"]
+
+[profile.release]
+# enable debug symbols in release
+debug = true
+
+[profile.dev]
+lto = false
+rpath = false
+opt-level = 0
+codegen-units = 4  # controls whether the compiler passes `-C codegen-units`
+# `codegen-units` is ignored when `lto = true      `
+
+[dependencies]
+sdl2 = "*"
+byteorder = "*"
+libc = "*"
+enum_primitive = "*"
+num = "*"
+rand = "*"
+ecs = "*"
+bresenham = "*"
+config = "*"
+
+[dependencies.scformats]
+path = "src/scformats"
+
+[dependencies.pathplanning]
+path = "src/pathplanning"
+
+[dependencies.smacker]
+path = "src/smacker-rs"
+
+[dev-dependencies]
+bencher = "*"
+
+[[bench]]
+name="render_buf"
+harness=false

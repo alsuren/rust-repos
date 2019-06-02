@@ -1,0 +1,8 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["Pengji Zhang <me@zhangpj.name>"]
+
+[dependencies]
+clap = { version = "^2.32", default-features = false }
+nom = { version = "^4.1" }

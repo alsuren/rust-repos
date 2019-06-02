@@ -1,0 +1,28 @@
+# Copyright (c) 2018 Caleb Boylan
+# [This program is licensed under the "MIT License"]
+# Please see the file LICENSE in the source
+# distribution of this software for license terms.
+
+[package]
+name = "corroboy"
+version = "0.1.0"
+authors = ["Caleb Boylan <calebboylan@gmail.com>"]
+
+[dependencies]
+piston = "0.37.0"
+piston_window = "0.80.0"
+piston2d-graphics = "0.26.0"
+pistoncore-glutin_window = "0.47.0"
+piston2d-opengl_graphics = "0.53.0"
+image = "0.19.0"
+getopts = "0.2"
+gfx_device_gl = "0.15.3"
+pistoncore-sdl2_window = "*"
+byteorder = "1.2"
+
+[profile.dev]
+overflow-checks = false
+opt-level = 3
+
+[profile.test]
+overflow-checks = false

@@ -1,0 +1,15 @@
+[package]
+name = "creeplib"
+version = "0.1.0"
+authors = ["Jeffrey McAteer <jeffrey.p.mcateer@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "creeplib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "creepdefense"
+path = "src/creepdefense.rs"
+
+[dependencies]

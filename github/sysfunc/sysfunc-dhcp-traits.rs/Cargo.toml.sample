@@ -1,0 +1,38 @@
+[package]
+name = "sysfunc-dhcp-traits"
+version = "0.0.1"
+authors = ["A.W. Stanley <aws@sysfunc.net>"]
+edition = "2018"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/sysfunc/sysfunc-dhcp-traits.rs/"
+homepage = "https://github.com/sysfunc/sysfunc-dhcp-traits.rs/"
+categories = ["no-std"]
+include = [
+    "src/dhcp/mod.rs",
+    "src/dhcp/client.rs",
+    "src/dhcp/extensions.rs",
+    "src/dhcp/enumerations.rs",
+    "src/dhcp/relay.rs",
+    "src/dhcp/server.rs",
+    "src/lib.rs",
+    "Cargo.toml",
+    "README.md",
+    "LICENCE",
+    "CHANGES.md",
+]
+
+description = """
+Simple dhcp server traits #![no_std].
+"""
+
+# Remove this before the cargo-ready commit.
+publish = false
+
+[features]
+default = []
+no-core = []
+
+[dependencies.sysfunc-networking-traits]
+git = "https://github.com/sysfunc/sysfunc-networking-traits.rs/"
+version = "0.0.3"

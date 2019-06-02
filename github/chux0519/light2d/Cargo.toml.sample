@@ -1,0 +1,9 @@
+[package]
+name = "light2d"
+version = "0.1.0"
+authors = ["chux0519"]
+edition = "2018"
+
+[dependencies]
+svpng = "0.1.1"
+rand = "0.6.5"

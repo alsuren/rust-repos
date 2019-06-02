@@ -1,0 +1,17 @@
+[package]
+name = "sfml-rust"
+version = "0.1.0"
+authors = ["MitchellHansen <mitchellhansen0@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+sfml = "0.14.0"
+quick-xml = "0.14.0"
+cgmath = "0.17.0"
+simple-stopwatch="0.1.4"
+ncollide2d = "0.19.1"
+nalgebra = "0.18.0"
+
+
+
+

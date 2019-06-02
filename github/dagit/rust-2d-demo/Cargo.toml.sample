@@ -1,0 +1,18 @@
+[package]
+name = "rust-2d-demo"
+version = "0.1.0"
+authors = ["Jason Dagit <dagitj@gmail.com>"]
+
+[profile.dev]
+opt-level = 2
+debug     = true
+
+[dependencies]
+glium      = "*"
+image      = "*"
+sdl2       = "*"
+rand       = "*"
+time       = "*"
+glium_sdl2 = { path = "./deps/glium-sdl2" }
+imgui      = { path = "./deps/imgui-rs"   }
+

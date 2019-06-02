@@ -1,0 +1,10 @@
+[package]
+name = "txt_adv"
+version = "0.1.0"
+authors = ["DeltaManiac <maxpaynered@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+num = "*"
+image= "*"
+crossbeam = "*"

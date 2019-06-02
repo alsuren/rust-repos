@@ -1,0 +1,8 @@
+[package]
+name = "adventure-engine"
+version = "0.0.1"
+authors = ["Ryan Gannon <ryanmgannon.dev@gmail.com>"]
+
+[dependencies]
+rustbox = "*"
+time = "*"

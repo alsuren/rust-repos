@@ -1,0 +1,9 @@
+[package]
+
+name = "iron-example"
+version = "0.1.0"
+authors = [ "me@mydomain.org" ]
+
+[dependencies.iron]
+
+git = "https://github.com/iron/iron.git"

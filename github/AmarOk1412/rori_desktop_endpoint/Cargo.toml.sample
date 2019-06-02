@@ -1,0 +1,12 @@
+[package]
+name = "rori_desktop_endpoint"
+version = "1.0.1"
+authors = ["AmarOk <amarok@enconn.fr>"]
+
+[dependencies]
+rustc-serialize = "*"
+regex = "*"
+log = "*"
+env_logger = "*"
+openssl = "0.10.4"
+rust-crypto = "^0.2"

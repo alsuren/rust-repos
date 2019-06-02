@@ -1,0 +1,24 @@
+[package]
+name = "libiptc-sys"
+version = "0.1.0"
+license = "GPL-3.0"
+authors = ["Vyronas Tsingaras <vyronas@vtsingaras.me>"]
+description = "Rust FFI bindings for the libiptc used to communicate with Linux's IPTables"
+repository = "https://github.com/vtsingaras/libiptc-sys"
+readme = "README.md"
+keywords = ["iptables", "netfilter"]
+links = "libiptc"
+build = "build.rs"
+
+[lib]
+name = "libiptc_sys"
+path = "src/lib.rs"
+
+[build-dependencies]
+pkg-config = "0.3.*"
+
+[dev-dependencies]
+capabilities = "0.2.*"
+
+[dependencies]
+libc = "0.2.*"

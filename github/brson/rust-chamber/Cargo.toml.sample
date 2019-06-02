@@ -1,0 +1,18 @@
+[package]
+
+name = "chamber"
+version = "0.1.0"
+authors = [ "Brian Anderson <banderson@mozilla.com>" ]
+
+[[lib]]
+name = "chamber"
+path = "src/chamber/lib.rs"
+
+# FIXME: Uncommenting this results in two 'unused manifest key: lib.crate-types' errors
+#crate-types = [ "rlib", "dylib" ]
+
+[dependencies.chamber_plugin]
+path = "src/chamber_plugin/"
+
+[dependencies.rcr_baseline]
+path = "src/rcr_baseline/"

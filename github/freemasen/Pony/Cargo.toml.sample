@@ -1,0 +1,12 @@
+[package]
+name = "pony"
+version = "0.1.10"
+authors = ["FreeMasen"]
+description = "An Express-like wrapper around Hyper"
+license = "MIT"
+
+[dependencies]
+hyper = "^0.11"
+futures = "^0.1"
+percent-encoding = "1"
+sha-1 = "0.7.0"

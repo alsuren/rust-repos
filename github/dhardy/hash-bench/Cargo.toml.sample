@@ -1,0 +1,20 @@
+[package]
+name = "hash-bench"
+version = "0.1.0"
+authors = ["Diggory Hardy <git@dhardy.name>"]
+
+[dependencies]
+rand = "0.3"
+seahash = "3.0"
+metrohash = { version = "1.0", path = "../metrohash-rs" }
+# tiny-keccak = "1.4"
+keccak-hash = "0.1.0"
+sha2 = "0.7"
+sha3 = "0.7"
+generic-array = "0.9"
+
+[profile.dev]
+opt-level = 2      # controls the `--opt-level` the compiler builds with.
+                   # 0-1 is good for debugging. 2 is well-optimized. Max is 3.
+debug = true       # include debug information (debug symbols). Equivalent to
+                   # `-C debuginfo=2` compiler flag.

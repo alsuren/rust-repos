@@ -1,0 +1,14 @@
+[package]
+name = "futures-stream-select-all"
+version = "0.1.2"
+description = "A futures library adapter for merging the output of several streams"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/swizard0/futures-stream-select-all"
+homepage = "https://github.com/swizard0/futures-stream-select-all"
+authors = ["Alexey Voznyuk <me@swizard.info>"]
+keywords = ["futures", "async", "future", "stream", "merge"]
+categories = ["asynchronous"]
+
+[dependencies]
+futures = "0.1"

@@ -1,0 +1,18 @@
+[package]
+name = "dekinai"
+version = "3.0.0"
+authors = ["Johann Rekowski <johann.rekowski@gmail.com>"]
+
+[dependencies]
+actix-web = "0.7"
+bytes = "0.4"
+redis = "0.10"
+rand = "0.6"
+failure = "^0.1.2"
+futures = "0.1"
+futures-cpupool = "0.1"
+mime = "0.3"
+mime_guess = "2.0.0-alpha"
+
+[profile.release]
+lto = true

@@ -1,0 +1,16 @@
+[package]
+name = "editorconfig"
+version = "1.0.0"
+authors = ["Andrea Cognolato <andrecogno@hotmail.it>", "Matt Horn <matt@matthorn.tech>"]
+license = "MIT"
+repository = "https://github.com/mrandri19/rust-editorconfig"
+description = "A crate that implements editorconfig"
+
+[[bin]]
+name = "editorconfig"
+doc = false
+
+[dependencies]
+argparse = "0.2.1"
+regex = "0.2"
+ordermap = "0.2.10"

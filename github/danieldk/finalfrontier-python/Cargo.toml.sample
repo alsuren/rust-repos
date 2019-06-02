@@ -1,0 +1,26 @@
+[package]
+name = "finalfusion"
+version = "0.2.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+edition = "2018"
+description = "Finalfusion Python module"
+documentation = "https://finalfusion.github.io/python"
+homepage = "https://finalfusion.github.io/"
+repository = "https://github.com/finalfusion/finalfusion-python.git"
+license = "Apache-2.0"
+
+
+[lib]
+name = "finalfusion"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.6"
+features = ["extension-module"]
+
+[dependencies]
+failure = "0.1"
+finalfusion = "0.5"
+libc = "0.2"
+numpy = "0.5"
+toml = "0.4"

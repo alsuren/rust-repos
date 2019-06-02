@@ -1,0 +1,24 @@
+[package]
+name = "phage"
+version = "0.1.1"
+authors = [ "Risto Saarelma <risto.saarelma@iki.fi>" ]
+description = "Roguelike game for 7DRL 2015"
+keywords = ["gamedev"]
+license = "GPL3"
+
+[[bin]]
+name = "phage"
+
+[profile.release]
+lto = true
+
+[dependencies]
+image = "0.15"
+time = "0.1"
+rustc-serialize = "0.3"
+
+[dependencies.calx]
+path = "calx"
+
+[dependencies.world]
+path = "world"

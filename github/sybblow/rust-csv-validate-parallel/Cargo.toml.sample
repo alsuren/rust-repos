@@ -1,0 +1,9 @@
+[package]
+name = "rust-csv-valid-parallel"
+version = "0.1.0"
+authors = ["caosiliang <siliang.cao@gmail.com>"]
+
+[dependencies]
+csv = "*"
+cue = "*"
+num_cpus = "*"

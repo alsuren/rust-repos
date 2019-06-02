@@ -1,0 +1,19 @@
+[package]
+publish = false
+name = "sengoku-hime-7-text-clean"
+version = "0.1.5"
+authors = ["Douman <douman@gmx.se>"]
+
+[dependencies]
+clipboard-win = "*"
+clipboard-master = "*"
+
+[dependencies.utils]
+path = "utils"
+
+[lib]
+name = "sengoku_hime_7_text_clean"
+path = "src/dll.rs"
+crate-type = ["cdylib"]
+
+[workspace]

@@ -1,0 +1,10 @@
+[package]
+name = "rust-raytracer"
+version = "0.1.0"
+authors = ["Emily Horsman <me@emilyhorsman.com>"]
+edition = "2018"
+
+[dependencies]
+approx = "0.3.0"
+derive_more = "0.13.0"
+nalgebra = "0.16"

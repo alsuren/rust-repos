@@ -1,0 +1,16 @@
+[package]
+name = "sev"
+version = "0.1.0"
+authors = ["Nathaniel McCallum <npmccallum@redhat.com>"]
+edition = "2018"
+
+[features]
+default = []
+
+[dependencies]
+openssl = { version = "0.10.20", optional = true }
+bitflags = "1.0.4"
+codicon = "2.1.0"
+
+[patch.crates-io]
+openssl = { git = 'https://github.com/sfackler/rust-openssl' }

@@ -1,0 +1,14 @@
+[package]
+name = "lang"
+version = "0.0.1"
+authors = ["Gulshan Singh <gulshan@umich.edu>"]
+
+[dependencies]
+peg = "*"
+rustc-serialize = "*"
+llvm_sys = "*"
+getopts = "*"
+log = "*"
+env_logger = "*"
+libc = "*"
+llvm = "*"

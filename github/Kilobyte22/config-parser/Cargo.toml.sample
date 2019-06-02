@@ -1,0 +1,11 @@
+[package]
+name = "config-parser"
+version = "0.1.2"
+authors = ["Kilobyte22 <stiepen22@gmx.de>"]
+description = "A simple parser for block based configuration files"
+keywords = ["configuration", "library"]
+repository = "https://github.com/Kilobyte22/config-parser"
+documentation = "https://kilobyte22.de/doc/config_parser/"
+license = "MIT/Apache-2.0"
+
+[dependencies]

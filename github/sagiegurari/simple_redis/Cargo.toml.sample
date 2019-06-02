@@ -1,0 +1,44 @@
+[package]
+name = "simple_redis"
+version = "0.3.44"
+authors = ["Sagie Gur-Ari <sagiegurari@gmail.com>"]
+description = "Simple and resilient redis client."
+license = "Apache-2.0"
+documentation = "https://sagiegurari.github.io/simple_redis/api/simple_redis/index.html"
+homepage = "http://github.com/sagiegurari/simple_redis"
+repository = "https://github.com/sagiegurari/simple_redis.git"
+readme = "README.md"
+keywords = ["redis", "cache", "pubsub", "database"]
+categories = ["caching", "database"]
+include = [
+    "/benches/*",
+    "/docs/*",
+    "/examples/*",
+    "/src/*",
+    "/tests/*",
+    "/Cargo.toml",
+    "/LICENSE",
+    "/README.md",
+    "/Makefile.toml"
+]
+
+[dependencies]
+redis = "^0.8.0"
+
+[features]
+default = []
+
+[badges.travis-ci]
+branch = "master"
+repository = "sagiegurari/simple_redis"
+
+[badges.appveyor]
+repository = "sagiegurari/simple_redis"
+service = "github"
+branch = "master"
+project_name = "sagiegurari/simple-redis"
+
+[badges.codecov]
+branch = "master"
+repository = "sagiegurari/simple_redis"
+service = "github"

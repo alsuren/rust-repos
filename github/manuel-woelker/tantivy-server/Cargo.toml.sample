@@ -1,0 +1,26 @@
+[package]
+name = "tantivyx-server"
+version = "0.1.0"
+authors = ["Manuel Woelker <github@manuel.woelker.org>"]
+
+[dependencies]
+
+env_logger = "0.4.0"
+log = "0.3.6"
+time = "0.1.36"
+iron = "0.5.0"
+mount = "0.3.0"
+router = "0.5.1"
+staticfile = "0.4.0"
+hyper="0.10"
+bodyparser="0.6.0"
+persistent="0.3.0"
+
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+
+tantivy = { git="https://github.com/tantivy-search/tantivy.git", rev = "b6423f9a"}
+
+
+error-chain = "0.8.1"

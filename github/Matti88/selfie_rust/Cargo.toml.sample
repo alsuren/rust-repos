@@ -1,0 +1,8 @@
+[package]
+name = "selfieRust"
+version = "0.1.0"
+authors = ["matteo.montanari25@gmail.com"]
+
+[dependencies]
+cairo-rs = "^0"
+opencv = "0.2.3"

@@ -1,0 +1,24 @@
+[package]
+name = "hm"
+version = "0.1.0"
+authors = ["josrv <josrv@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+curl = "0.4.19"
+quick-xml = "0.12.0"
+getopts = "0.2"
+arl = { git = "https://github.com/josrv/arl" }
+rust-ini = "0.13.0"
+dirs = "1.0.5"
+#simplelog = "0.5.0"
+
+[dev-dependencies]
+hamcrest = "*"
+maud = "0.20.0"
+mockito = "0.16.0"
+rexpect = "0.3.0"
+
+[[bin]]
+name = "hm"
+path = "src/main.rs"

@@ -1,0 +1,34 @@
+[package]
+name = "xipology"
+version = "0.1.0"
+authors = ["Ossi Herrala <oherrala@iki.fi>"]
+
+[[bin]]
+name = "xiporw"
+path = "xiporw/main.rs"
+
+[[bin]]
+name = "rendezvous"
+path = "rendezvous/main.rs"
+
+[[bin]]
+name = "namederivator"
+path = "namederivator/main.rs"
+
+[lib]
+name = "xipolib"
+path = "lib/lib.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+
+[dependencies]
+data-encoding = "2"
+chrono = "0.4"
+env_logger = { version = "0.5", default-features = false }
+log = "0.4"
+rand = "0.5"
+rayon = "1"
+ring = "0.13.0-alpha"
+trust-dns = { version = "0.14", default-features = false }

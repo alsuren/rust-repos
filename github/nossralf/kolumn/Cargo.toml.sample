@@ -1,0 +1,16 @@
+[package]
+name = "kolumn"
+version = "1.0.0"
+authors = ["Fredrik Larsson <nossralf@gmail.com>"]
+homepage = "https://github.com/nossralf/kolumn"
+repository = "https://github.com/nossralf/kolumn"
+readme = "README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "nossralf/kolumn" }
+appveyor = { repository = "nossralf/kolumn" }
+maintenance = { status = "experimental" }
+
+[dependencies]
+clap = "^2"

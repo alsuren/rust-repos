@@ -1,0 +1,16 @@
+[package]
+
+name = "ruster"
+version = "0.0.1"
+authors = ["Michal Budzynski <michal@virtualdesign.pl>"]
+
+[[lib]]
+name = "ruster"
+path = "src/lib.rs"
+
+[dependencies.http]
+git = "https://github.com/chris-morgan/rust-http.git"
+
+[[bin]]
+name = "ruster-example"
+test = false

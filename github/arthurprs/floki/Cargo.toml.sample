@@ -1,0 +1,46 @@
+[package]
+name = "floki"
+version = "0.1.0"
+authors = ["arthurprs <arthurprs@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "*"
+log = "*"
+env_logger = "*"
+mio = "0.5.*"
+linked-hash-map = "*"
+toml = "*"
+threadpool = "*"
+time = "*"
+num_cpus = "*"
+fnv = "*"
+twox-hash = "*"
+spin = "*"
+rand = "*"
+promising-future = "*"
+fs2 = "0.2"
+libc = "0.2.4"
+nix = "0.8"
+
+[dependencies.tendril]
+git="https://github.com/arthurprs/tendril.git"
+rev="11149061dac78e7dd73f19b5a02d521547d7a443"
+
+[dev-dependencies]
+redis = "0.5.2"
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 4
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1

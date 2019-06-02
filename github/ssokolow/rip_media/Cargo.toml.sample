@@ -1,0 +1,26 @@
+[package]
+name = "rip_media"
+version = "0.1.0"
+authors = ["Stephan Sokolow <http://www.ssokolow.com/ContactMe>"]
+
+[dependencies]
+clap = "2"
+libc = "0.2.17"
+glob = "0.2.11"
+rustyline = "1"
+
+[dependencies.error-chain]
+version = "0.9"
+default-features = false  # disable pulling in backtrace
+
+[profile.release]
+lto = true
+panic = 'abort'
+codegen-units = 1
+
+# We need to specify this explicitly so sed can swap the 3 for "z" in
+# release.sh when running with --nightly
+opt-level = 3
+
+[features]
+nightly = []

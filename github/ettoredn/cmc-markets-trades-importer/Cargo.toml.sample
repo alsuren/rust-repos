@@ -1,0 +1,10 @@
+[package]
+name = "cmcmarkets-trades-importer"
+version = "0.1.0"
+authors = ["Ettore Del Negro <ettore@ettoredelnegro.me>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+chrono-tz = "0.5.1"
+postgres = { version = "0.15", features = ["with-chrono"] }

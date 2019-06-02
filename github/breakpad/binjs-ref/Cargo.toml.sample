@@ -1,0 +1,23 @@
+[package]
+name = "binjs"
+version = "0.1.0"
+authors = ["David Teller <D.O.Teller@gmail.com>"]
+
+[features]
+default = []
+# If specified, build support for using SpiderMonkey as a parser.
+spidermonkey = []
+esprima = []
+
+[dependencies]
+env_logger = "*"
+log ="*"
+serde_json = "1.0"
+assert_matches = "*"
+clap = "*" # Should be a dev-dependency, actually.
+rand = "*"
+
+[dev-dependencies]
+env_logger = "*"
+glob = "*"
+test-logger = "*"

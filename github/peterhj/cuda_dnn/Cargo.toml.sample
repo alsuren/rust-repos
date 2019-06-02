@@ -1,0 +1,42 @@
+[package]
+name = "cuda_dnn"
+version = "0.2.0-devel"
+edition = "2018"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+license = "Apache-2.0 OR MIT"
+description = "cuDNN API bindings."
+repository = "https://github.com/peterhj/cuda_dnn"
+keywords = ["cuda", "cudnn"]
+
+[features]
+default     = ["hi"]
+fresh       = ["bindgen"]
+f16         = []
+hi          = []
+#cudnn_1_0   = []
+#cudnn_2_0   = []
+#cudnn_3_0   = []
+#cudnn_4_0   = []
+#cudnn_5_0   = []
+#cudnn_5_1   = []
+#cudnn_6_0   = []
+#cudnn_7_0   = []
+#cudnn_7_1   = []
+#cudnn_7_2   = []
+#cudnn_7_3   = []
+cudnn_7_4   = []
+cuda_6_5    = ["cuda/cuda_6_5"]
+cuda_7_0    = ["cuda/cuda_7_0"]
+cuda_7_5    = ["cuda/cuda_7_5"]
+cuda_8_0    = ["cuda/cuda_8_0"]
+cuda_9_0    = ["cuda/cuda_9_0"]
+cuda_9_1    = ["cuda/cuda_9_1"]
+cuda_9_2    = ["cuda/cuda_9_2"]
+cuda_10_0   = ["cuda/cuda_10_0"]
+
+[build-dependencies]
+bindgen = { version = "^0.46", optional = true }
+
+[dependencies]
+cuda = { git = "https://github.com/peterhj/libcuda" }
+static_assertions = "0.3.1"

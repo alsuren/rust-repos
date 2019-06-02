@@ -1,0 +1,15 @@
+[package]
+name = "rustomic"
+version = "0.1.0"
+authors = ["stefano"]
+
+[dependencies]
+chrono = "0.3"
+rocket = "0.2.6"
+rocket_codegen = "0.2.6"
+
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+
+rocket_contrib = "0.2.6"

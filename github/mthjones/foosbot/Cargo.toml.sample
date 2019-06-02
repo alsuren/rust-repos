@@ -1,0 +1,8 @@
+[package]
+name = "foosbot"
+version = "0.1.0"
+authors = ["Matt Jones <mthjones@gmail.com>"]
+
+[dependencies]
+slackbot = "*"
+rand = "*"

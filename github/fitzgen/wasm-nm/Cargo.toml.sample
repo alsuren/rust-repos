@@ -1,0 +1,27 @@
+[package]
+authors = ["Nick Fitzgerald <fitzgen@gmail.com>"]
+description = "Print the symbols that are imported in and exported from a wasm file."
+keywords = ["symbol", "wasm", "nm"]
+license = "Apache-2.0/MIT"
+name = "wasm-nm"
+readme = "./README.md"
+repository = "https://github.com/fitzgen/wasm-nm"
+version = "0.2.1"
+
+[[bin]]
+doc = false
+name = "wasm-nm"
+path = "src/bin/wasm-nm.rs"
+required-features = ["exe"]
+
+[dependencies]
+failure = "0.1.1"
+parity-wasm = "0.19.0"
+
+[dependencies.clap]
+optional = true
+version = "2.29.0"
+
+[features]
+default = ["exe"]
+exe = ["clap"]

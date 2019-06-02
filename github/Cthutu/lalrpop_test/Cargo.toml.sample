@@ -1,0 +1,13 @@
+[package]
+name = "calculator"
+version = "0.1.0"
+authors = ["Matt Davies <mattie.davies@gmail.com>"]
+edition = "2018"
+
+[build-dependencies]
+lalrpop = "0.16.2"
+
+[dependencies]
+lalrpop-util = "0.16.2"
+regex = "0.2.1"
+

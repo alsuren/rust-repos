@@ -1,0 +1,7 @@
+[project]
+name = "anode"
+version = "0.0.1"
+authors = [ "Jake Greenfield <jake@naveria.com>" ]
+
+[dependencies.toml]
+git = "https://github.com/alexcrichton/toml-rs"

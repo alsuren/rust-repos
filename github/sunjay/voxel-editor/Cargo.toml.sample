@@ -1,0 +1,12 @@
+[package]
+name = "voxel-editor"
+version = "0.1.0"
+authors = ["Sunjay Varma <varma.sunjay@gmail.com>"]
+
+[dependencies]
+nalgebra = "0.8.2"
+glfw = "0.8.0"
+
+[dependencies.kiss3d]
+git = "https://github.com/sebcrozet/kiss3d"
+

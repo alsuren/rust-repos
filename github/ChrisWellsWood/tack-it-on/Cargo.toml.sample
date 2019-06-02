@@ -1,0 +1,24 @@
+[package]
+name = "tack-it-on"
+version = "1.0.1"
+authors = ["Chris Wells Wood <cwwoodesq@gmail.com>"]
+description = "Attach notes to project files and directories with tack-it-on!"
+# documentation = "..."
+# homepage = "..."
+repository = "https://github.com/ChrisWellsWood/tack-it-on"
+readme = "README.md"
+keywords = ["notes", "organisation", "projects", "planning", "todo"] 
+categories = ["command-line-utilities"]
+license = "MIT"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+clap = "2"
+glob = "0.2.11"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+subprocess = "*"
+text_io = "0.1.6"
+tempdir = "0.3.5"
+tempfile = "3"

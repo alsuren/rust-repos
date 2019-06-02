@@ -1,0 +1,38 @@
+[package]
+name = "search"
+version = "0.0.1"
+authors = ["Radek Szymczyszyn <lavrin@gmail.com>"]
+
+[dependencies]
+env_logger = "0.3"
+image = "0.3.12"
+log = "0.3"
+rustc-serialize = "0.3.16"
+sfml = "0.9.3"
+
+[dependencies.png]
+git = "https://github.com/servo/rust-png"
+
+[dependencies.clock_ticks]
+git = "https://github.com/tomaka/clock_ticks"
+
+[lib]
+name = "search"
+path = "src/search/lib.rs"
+
+[[bin]]
+doc  = false
+name = "search"
+path = "src/bin/search.rs"
+
+[[bin]]
+name = "vis"
+path = "src/bin/vis.rs"
+
+[profile.release]
+opt-level = 3
+debug = false
+
+[profile.dev]
+opt-level = 0
+debug = true

@@ -1,0 +1,11 @@
+[package]
+name = "ld42"
+version = "0.1.0"
+authors = ["t-mw <contact@tmwhere.com>"]
+build = "build.rs"
+
+[dependencies]
+lazy_static = "1.0.0"
+rand = { version = "0.5" }
+raylib-rs = { git = "https://github.com/t-mw/raylib-rs.git" }
+regex = "0.2.6"

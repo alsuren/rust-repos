@@ -1,0 +1,23 @@
+[package]
+name = "macaroon"
+version = "0.1.1"
+authors = ["Jack Lund <jackl@geekheads.net>"]
+description = "Fully functional implementation of macaroons in Rust"
+documentation = "https://docs.rs/macaroon"
+homepage = "https://github.com/jacklund/libmacaroon-rs"
+repository = "https://github.com/jacklund/libmacaroon-rs"
+keywords = ["macaroon", "cookies", "authorization", "credentials"]
+categories = ["cryptography"]
+license = "MIT"
+
+[dependencies]
+log = "0.3.6"
+rustc-serialize = "0.3.22"
+serde = "0.9.2"
+serde_derive = "0.9.2"
+serde_json = "0.9.2"
+sodiumoxide = "0.0.13"
+
+[dev-dependencies]
+env_logger = "0.3"
+time = "0.1.36"

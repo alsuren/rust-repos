@@ -1,0 +1,26 @@
+[package]
+name = "joinkit"
+version = "0.2.0"
+authors = ["Milan Opath <milan.opath@gmail.com>"]
+description = "Iterator adaptors for efficient SQL-like joins"
+repository = "https://github.com/milancio42/joinkit"
+documentation = "http://milancio42.github.io/joinkit"
+readme = "README.md"
+keywords = ["join", "SQL", "iterator"]
+license = "MIT"
+
+[lib]
+name = "joinkit"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hjoin"
+path = "src/bin/hjoin.rs"
+
+[[bin]]
+name = "mjoin"
+path = "src/bin/mjoin.rs"
+
+[dependencies]
+clap = "2.*"
+itertools = "0.4"

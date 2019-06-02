@@ -1,0 +1,15 @@
+[package]
+name = "bittorrent"
+version = "0.1.0"
+authors = ["Josh Shi <thehandsomepanther@gmail.com>", "Brandon Fujii <brandonkfujii@gmail.com>"]
+
+[dependencies]
+bencode = "0.1.16"
+regex = "0.2"
+hyper = "0.10"
+sha1 = "0.2.0"
+urlencoding = "1.0.0"
+url = "1.4.0"
+byteorder = "1.0.0"
+rand = "0.3"
+mio = "0.6.8"

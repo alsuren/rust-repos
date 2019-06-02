@@ -1,0 +1,9 @@
+[package]
+name = "strip_mail"
+version = "0.1.0"
+authors = ["LuxF3rre <mgblaszczak@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1.1.2"
+reqwest = "0.9.11"

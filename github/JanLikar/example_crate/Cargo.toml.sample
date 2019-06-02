@@ -1,0 +1,9 @@
+[package]
+name = "example"
+version = "0.1.0"
+authors = ["Jan Likar <likar.jan@gmail.com>"]
+description = "An example crate, useful for testing purposes and documentation."
+repository = "https://github.com/JanLikar/example_crate"
+license = "Apache-2.0/MIT"
+
+[dependencies]

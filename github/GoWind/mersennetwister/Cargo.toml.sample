@@ -1,0 +1,9 @@
+[package]
+name = "mt"
+version = "0.1.0"
+authors = ["govindarajan <petrovgovind@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+time = "0.1"
+quickersort="3.0.0"

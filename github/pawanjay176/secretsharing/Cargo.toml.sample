@@ -1,0 +1,9 @@
+[package]
+name = "secretsharing"
+version = "0.1.0"
+authors = ["pawanjay176 <pawandhananjay@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+num = { version = "0.2", features = ["rand"] }

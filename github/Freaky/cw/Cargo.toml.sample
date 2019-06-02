@@ -1,0 +1,23 @@
+[package]
+name = "cw"
+version = "0.6.0"
+authors = ["Thomas Hurst <tom@hur.st>"]
+license = "MIT"
+description = "Count Words, a fast wc clone"
+readme = "README.md"
+repository = "https://github.com/Freaky/cw"
+keywords = ["wc", "word", "count"]
+categories = [ "command-line-utilities", "text-processing" ]
+edition = "2018"
+
+[dependencies]
+bytecount = "0.5"
+structopt = "0.2"
+libc = "0.2"
+memchr = "2.1"
+crossbeam-channel = "0.3"
+crossbeam-utils = "0.6"
+
+[features]
+runtime-dispatch-simd = ["bytecount/runtime-dispatch-simd"]
+generic-simd = ["bytecount/generic-simd"]

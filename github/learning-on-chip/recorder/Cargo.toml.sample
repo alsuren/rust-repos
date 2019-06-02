@@ -1,0 +1,26 @@
+[package]
+name = "recorder"
+version = "0.0.1"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/learning-on-chip/recorder"
+homepage = "https://github.com/learning-on-chip/recorder"
+description = "Recorder is a tool for recording workload patterns."
+
+[lib]
+name = "recorder"
+path = "src/lib/recorder.rs"
+
+[[bin]]
+name = "recorder"
+path = "src/bin/recorder.rs"
+doc = false
+
+[dependencies]
+arguments = "*"
+hiredis = "*"
+log = "*"
+mcpat = { version = "*", features = ["caching"] }
+sql = "*"
+sqlite = "*"
+term = "*"

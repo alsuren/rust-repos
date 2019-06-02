@@ -1,0 +1,11 @@
+[package]
+name = "mrt-rs"
+version = "0.1.0"
+authors = ["Dan Rammer <hamersaw@gmail.com>"]
+
+[dependencies]
+byteorder = "*"
+
+[[example]]
+name = "main"
+path = "examples/main.rs"

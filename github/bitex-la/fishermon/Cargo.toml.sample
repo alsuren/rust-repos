@@ -1,0 +1,29 @@
+[package]
+name = "fishermon"
+version = "0.1.1"
+authors = ["Nubis <yo@nubis.im>"]
+
+[dependencies]
+itertools = "*"
+url = "^0.5.3"
+rand = "*"
+mime_guess = "*"
+bitex = "^0.1.1"
+log = "0.3"
+env_logger = "0.3"
+toml = "0.1.30"
+rustc-serialize = "^0.3.19"
+
+[dev-dependencies]
+http_stub = "0.1.2"
+
+[lib]
+name = "fishermon"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fishermon"
+path = "src/main.rs"
+
+[features]
+nightly = []

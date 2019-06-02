@@ -1,0 +1,11 @@
+[package]
+name = "mm3d-rs"
+version = "0.1.0"
+authors = ["Pierre-Eric Pelloux-Prayer"]
+build = "build.rs"
+
+[dependencies]
+clap = { git = "file:///home/pierre-eric/perso/clap-rs/", rev="master", features = ["yaml"]}
+
+[build-dependencies]
+clap =  { git = "file:///home/pierre-eric/perso/clap-rs/", rev="master" }

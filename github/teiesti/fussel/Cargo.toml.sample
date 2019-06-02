@@ -1,0 +1,30 @@
+[package]
+name = "fussel"
+version = "0.1.0-dev"
+authors = ["Tobias Stolzmann <tobias.stolzmann@gmail.com>"]
+license = "MIT"
+keywords = ["lint", "style"]
+categories = ["development-tools"]
+description = "An analysis tool that finds bad programming habits within a codebase"
+readme = "README.md"
+documentation = "https://docs.rs/fussel"
+repository = "https://github.com/teiesti/fussel"
+
+[badges]
+travis-ci = { repository = "teiesti/fussel" }
+
+[dependencies]
+failure = "0.1"
+git2 = "0.6"
+lazy_static = "1"
+regex = "0.2"
+serde = "1"
+serde_derive = "1"
+structopt = "0.2"
+toml = "0.4"
+walkdir = "2"
+yansi = "0.3"
+
+[[bin]]
+name = "fussel"
+doc = false

@@ -1,0 +1,15 @@
+[package]
+name = "hostmaker"
+version = "0.1.0"
+authors = ["Ron Kuslak <rkuslak@outlook.com>"]
+edition = "2018"
+
+[dependencies.reqwest]
+version="*"
+default-features = false
+features = ["rustls-tls"]
+
+[dependencies]
+"cfg_parser" = {path = "./cfg_parser"}
+"lines_parser" = {path = "./lines_parser"}
+"network_mgr" = {path = "./network_mgr"}

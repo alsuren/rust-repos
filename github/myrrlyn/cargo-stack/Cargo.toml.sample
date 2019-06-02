@@ -1,0 +1,5 @@
+[workspace]
+members = ["blow"]
+
+[patch.crates-io.stackblow]
+path = "blow"

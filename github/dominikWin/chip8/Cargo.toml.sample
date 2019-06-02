@@ -1,0 +1,12 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["Dominik Winecki <dominikwinecki@gmail.com>"]
+
+[dependencies]
+clap = "*"
+log = "*"
+env_logger = "*"
+rand = "*"
+ncurses = "*"
+chrono = "*"

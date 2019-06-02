@@ -1,0 +1,16 @@
+[package]
+name = "list-ec2-instances"
+version = "0.1.0"
+authors = ["SAWADA Tadashi <cesare@mayverse.jp>"]
+
+[[bin]]
+name = "list_ec2_instances"
+path = "src/list_ec2_instances.rs"
+
+[dependencies]
+getopts = "0.2.18"
+futures = "0.1.18"
+rusoto_core = "0.33.1"
+rusoto_credential = "0.12.0"
+rusoto_ec2 = "0.33.1"
+rustc-serialize = "0.3.24"

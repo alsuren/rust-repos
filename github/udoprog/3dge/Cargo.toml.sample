@@ -1,0 +1,37 @@
+[package]
+name = "threedge"
+version = "0.1.0"
+authors = ["John-John Tedro <udoprog@tedro.se>"]
+
+[features]
+default = ["gfx-vulkan"]
+gfx-vulkan = ["vulkano", "vulkano-shader-derive", "vulkano-win"]
+
+[dependencies]
+winit = "*"
+cgmath = "0.15"
+error-chain = "*"
+bit-vec = "0.4"
+image = "*"
+shuteye = "^0"
+log = "0.3"
+env_logger = "0.4"
+lazy_static = "0.2"
+gltf-utils = "0.1"
+gltf-importer = "0.9"
+
+[dependencies.gltf]
+version = "0.9"
+features = ["names"]
+
+[dependencies.vulkano]
+version = "0.6"
+optional = true
+
+[dependencies.vulkano-shader-derive]
+version = "0.6"
+optional = true
+
+[dependencies.vulkano-win]
+version = "0.6"
+optional = true

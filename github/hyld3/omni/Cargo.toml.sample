@@ -1,0 +1,9 @@
+[package]
+name = "note"
+version = "0.2.0"
+authors = ["alex"]
+
+[dependencies]
+termion = "*"
+subprocess = "*"
+rand = "*"

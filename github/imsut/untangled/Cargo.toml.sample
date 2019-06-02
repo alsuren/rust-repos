@@ -1,0 +1,14 @@
+[package]
+
+name = "untangled"
+version = "0.0.1"
+authors = ["Ken Kawamoto <kentaro.kawamoto@gmail.com>"]
+
+
+[dependencies]
+
+argparse = "0.2.1"
+classreader = "0.2.0"
+dot = "0.1.2"
+lazy_static = "0.2.4"
+regex = "0.2.1"

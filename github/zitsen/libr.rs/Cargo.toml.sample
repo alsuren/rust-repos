@@ -1,0 +1,26 @@
+[package]
+name = "libr"
+version = "0.1.1-alpha.0"
+authors = ["Huo Linhe <linhehuo@gmail.com>"]
+license = "MIT"
+readme  = "README.md"
+repository = "https://github.com/zisten/libr.rs.git"
+description = """
+A library for types and bingings to native C functions in libR,
+providing most of embedded-R and R math functions.
+"""
+keywords = ["R", "plot", "math", "graphics"]
+build = "build.rs"
+
+[package.metadata.release]
+pre-release-commit-message = "chore(release): release {{version}}"
+pro-release-commit-message = "chore(dev): start next development iteration {{version}}"
+tag-prefix = "v"
+
+[dependencies]
+libc = "*"
+
+[build-dependencies]
+pkg-config = "*"
+bindgen = "*"
+walkdir = "2"

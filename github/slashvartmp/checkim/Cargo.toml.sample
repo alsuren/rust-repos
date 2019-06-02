@@ -1,0 +1,11 @@
+[package]
+name = "checkim"
+version = "0.1.0"
+authors = ["shri3k"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.15"               # higher level HTTP client library
+select = "0.4.2"                            # A library to extract useful data from HTML documents, suitable for web scraping.
+env_logger = "0.6.1"                # A logging implementation for `log` which is configured via an environment variable.
+scraper = "0.10.0"                 # HTML parsing and querying with CSS selectors

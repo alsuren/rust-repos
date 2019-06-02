@@ -1,0 +1,8 @@
+[package]
+name = "bfind"
+version = "0.2.1"
+authors = ["Brian Douglass <brian.douglass@mac.com>"]
+
+[dependencies]
+crossbeam="*"
+clap="*"

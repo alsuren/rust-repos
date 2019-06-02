@@ -1,0 +1,14 @@
+[package]
+name = "cards_seven_wonders"
+version = "0.1.0"
+authors = ["Christopher Fair <christopherpfair@comcast.net>"]
+keywords = ["cards", "seven", "wonders"]
+description = "Cards for the 7 wonders board game implemented in rust."
+homepage = "https://github.com/cfair/cards-seven-wonders-rs"
+license = "MIT"
+
+[lib]
+name = "cards_seven_wonders"
+
+[dependencies]
+rand = "0.3.12"

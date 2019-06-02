@@ -1,0 +1,18 @@
+[package]
+name = "linealbench"
+version = "0.1.0"
+authors = ["Min Kim <msk@dolbo.net>"]
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.2"
+lineal = { git = "https://github.com/msk/lineal", rev = "4d964fa" }
+nalgebra = "0.16"
+ndarray = "0.12"
+rand = "0.6"
+rblas = "0.0"
+
+[[bench]]
+name = "vector"
+harness = false

@@ -1,0 +1,14 @@
+[package]
+authors = ["Tim Marinin <mt@marinin.xyz>"]
+description = "Yet another Gist client"
+license = "MIT"
+name = "rust-gist"
+version = "0.1.4"
+
+[dependencies]
+docopt = "0.8.1"
+error-chain = "0.11.0"
+reqwest = "0.8.0"
+serde = "1.0.15"
+serde_derive = "1.0.15"
+serde_json = "1.0.3"

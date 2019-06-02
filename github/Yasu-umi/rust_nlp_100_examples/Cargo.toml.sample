@@ -1,0 +1,31 @@
+[package]
+name = "nlp_100_examples"
+version = "0.1.0"
+authors = ["Yasu_umiNishikawa <yasu.umi.19910101@gmail.com>"]
+
+[dependencies]
+rand = "*"
+hyper = "*"
+hyper-native-tls = "*"
+flate2 = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+regex = "*"
+mecab = "*"
+gnuplot = "*"
+url = "*"
+cabocha = "*"
+redis = "*"
+mongodb = "*"
+bson = "*"
+iron = "*"
+router = "*"
+tar = "*"
+encoding = "*"
+wordnet_stemmer = "*"
+ndarray = { version = "*", features = ["blas"] }
+blas-sys = { version = "*", default-features = false, features = ["openblas"] }
+rayon = "*"
+bzip2 = "*"
+bincode = "*"

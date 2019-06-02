@@ -1,0 +1,24 @@
+[package]
+name = "dataopen"
+version = "0.0.0"
+authors = ["Keiji Yoshida <kjmrknsn@gmail.com>"]
+description = "Collaborative Data Analysis Platform"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+argparse = "0.2"
+chrono = "0.4"
+iron = "0.6"
+ldap3 = "0.5"
+persistent = "0.4"
+redis = "0.8"
+router = "0.6"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+toml = "0.4"
+uuid = { version = "0.5", features = ["v4"] }
+
+[[bin]]
+name = "dataopen-web"
+path = "src/bin/web.rs"

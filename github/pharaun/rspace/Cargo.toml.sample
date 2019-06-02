@@ -1,0 +1,23 @@
+[package]
+name = "rspace"
+version = "0.1.0"
+authors = ["Anja Berens <pharaun666@gmail.com>"]
+
+build = "build.rs" # phf_codegen
+
+[build-dependencies]
+phf_codegen = "0.7.21"
+
+[dependencies]
+glium = "*"
+rand = "*"
+cgmath = "*"
+
+# Bit twiddling
+twiddle = "0.3.0"
+
+# Dump Vec<u32> -> files
+byteorder = "1.2.1"
+
+# phf runtime library:
+phf = "0.7.21"

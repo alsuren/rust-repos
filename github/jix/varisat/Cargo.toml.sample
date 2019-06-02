@@ -1,0 +1,24 @@
+[workspace]
+# the order here must match the topological ordering of internal dependencies
+members = [
+    "varisat-internal-macros",
+    "varisat-formula",
+    "varisat-dimacs",
+    "varisat-internal-proof",
+    "varisat-checker",
+    "varisat",
+    "varisat-lrat",
+    "varisat-cli",
+]
+
+[profile.dev]
+opt-level = 1
+
+[profile.test]
+opt-level = 1
+
+[profile.release]
+debug = true # Enables profiling
+
+[profile.bench]
+debug = true # Enables profiling

@@ -1,0 +1,58 @@
+[package]
+name = "hazptr"
+description = "hazard pointer based concurrent memory reclamation"
+version = "0.1.0"
+authors = ["Oliver Giersch"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/oliver-giersch/hazptr.git"
+documentation = "https://docs.rs/hazptr"
+keywords = ["hazard", "pointer", "concurrent", "reclamation", "lock-free"]
+edition = "2018"
+
+[features]
+default = ["std"]
+
+# disable for use in no_std crates (for limitations see README.md)
+std = ["arrayvec/std", "reclaim/std"]
+
+# reclamation threshold is based on count of hazard pointer releases
+count-release = []
+
+# attempt to reclaim records after every operation (more expensive)
+maximum-reclamation-freq = []
+# attempt to reclaim records less often (less expensive)
+reduced-reclamation-freq = []
+
+sanitize-threads = []
+
+[dependencies]
+cfg-if = "0.1.7"
+
+[dependencies.arrayvec]
+version = "0.4.10"
+default-features = false
+
+[dependencies.reclaim]
+git = "https://github.com/oliver-giersch/reclaim.git"
+branch = "master"
+default-features = false
+
+[dev-dependencies]
+matches = "0.1.8"
+rand = "0.6.5"
+
+[[example]]
+name = "hash_set"
+required-features = ["std"]
+
+[[example]]
+name = "treiber"
+required-features = ["std"]
+
+[[test]]
+name = "integration"
+required-features = ["std", "count-release", "maximum-reclamation-freq"]
+
+[profile.dev]
+#opt-level = 1

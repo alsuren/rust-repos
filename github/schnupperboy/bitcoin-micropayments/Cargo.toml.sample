@@ -1,0 +1,15 @@
+[package]
+name = "bitcoin-micropayments"
+version = "0.1.0"
+authors = ["Julius Naperkowski <jnaperkowski@sourcepark.de>"]
+
+[dependencies]
+websocket = "0.14"
+rustc-serialize = "0.3.16"
+hyper = "0.7"
+image = "*"
+regex = "0.1.43"
+regex_macros = "0.1.24"
+
+[dependencies.qrcode]
+git = "https://github.com/kennytm/qrcode-rust"

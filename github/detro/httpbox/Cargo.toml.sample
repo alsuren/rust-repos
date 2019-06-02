@@ -1,0 +1,37 @@
+[package]
+name = "httpbox"
+version = "0.1.1-dev"
+
+description = "A command line HTTP client that aims to be as feature rich as your shell scripting skills can handle"
+readme = "README.md"
+categories = ["command-line-utilities", "web-programming::http-client"]
+keywords = ["cli", "http", "client", "download", "parallel"]
+
+authors = ["Ivan De Marino <detronizator@gmail.com>"]
+
+homepage = "https://github.com/detro/httpbox"
+repository = "https://github.com/detro/httpbox.git"
+license = "Apache-2.0"
+
+exclude = [".travis.*"]
+
+[badges]
+travis-ci = { repository = "detro/httpbox" }
+
+[dependencies]
+reqwest = "0.8.5"
+clap = "2.30.0"
+log = "0.4.1"
+log4rs = "0.8.0"
+
+[lib]
+name = "httpbox"
+path = "src/lib.rs"
+
+[[bin]]
+name = "httpbox"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+panic = 'abort'

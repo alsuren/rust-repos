@@ -1,0 +1,10 @@
+[package]
+name = "bioinformatics"
+version = "0.1.0"
+authors = ["Dmitry Bushev <bushevdv@gmail.com>"]
+
+[lib]
+name = "bio"
+
+[dependencies]
+rand = "0.3"

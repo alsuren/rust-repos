@@ -1,0 +1,15 @@
+[package]
+name = "nemo"
+version = "0.1.0"
+authors = ["BookOwl <stanleybookowl@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+lalrpop = "0.12.5"
+
+[dependencies]
+lalrpop-util = "0.12.5"
+regex = "0.2"
+clap = "2.21.2"
+bounded-spsc-queue = "0.1.2"
+unicode-segmentation = "1.1.0"

@@ -1,0 +1,83 @@
+[package]
+name = "mesalink"
+version = "1.0.0"
+edition = "2018"
+authors = ["The MesaLink Project Contributors"]
+license = "BSD-3-Clause"
+readme = "README.md"
+description = "MesaLink is a memory-safe and OpenSSL-compatible TLS library based on Rustls and Ring."
+keywords = ["tls", "ssl", "rust"]
+homepage = "https://github.com/mesalock-linux/mesalink"
+repository = "https://github.com/mesalock-linux/mesalink"
+categories = ["network-programming"]
+build = "build.rs"
+
+[badges]
+travis-ci = { repository = "mesalock-linux/mesalink", branch = "master"  }
+
+[lib]
+name = "mesalink"
+crate-type = ["lib", "staticlib", "cdylib"]
+
+[features]
+client_apis = []
+server_apis = []
+default = ["client_apis", "server_apis", "error_strings", "tls13", "aesgcm", "chachapoly", "x25519", "ecdh", "ecdsa", "verifier", "sgx"]
+error_strings = ["rustls/logging"]
+tls13 = ["rustls/tls13"]
+aesgcm = ["rustls/aesgcm"]
+chachapoly = ["rustls/chachapoly"]
+x25519 = ["rustls/x25519"]
+ecdh = ["rustls/ecdh"]
+ecdsa = ["rustls/ecdsa"]
+verifier = ["rustls/dangerous_configuration"]
+sgx = ["rustls/sgx"]
+nightly = []
+jemalloc_allocator = ["jemallocator"]
+
+[dependencies]
+ring = "0.14"
+untrusted = "0.6.2"
+env_logger = "0.5"
+libc = "0.2.42"
+lazy_static = "1.0.0"
+enum_to_u8_slice_derive = "0.1"
+bitflags = "1.0.4"
+base64 = "0.10"
+parking_lot = "0.7.1"
+hashbrown = "0.1.8"
+jemallocator = { version = "0.3.0", optional = true }
+
+[dependencies.rustls]
+git = "https://github.com/mesalock-linux/rustls"
+branch = "mesalink"
+default-features = false
+
+[dependencies.webpki]
+git = "https://github.com/mesalock-linux/webpki"
+tag = "v1.0.0"
+default-features = false
+
+[dependencies.sct]
+git = "https://github.com/mesalock-linux/sct.rs"
+tag = "v1.0.0"
+default-features = false
+
+[dependencies.webpki-roots]
+git = "https://github.com/mesalock-linux/webpki-roots"
+tag = "v1.0.0"
+default-features = false
+
+[dev-dependencies]
+log = "0.4"
+env_logger = "0.5.0"
+
+[profile.release]
+lto = true
+panic = "unwind"
+overflow-checks = true
+
+[[example]]
+name = "bogo_shim"
+path = "examples/bogo_shim/bogo_shim.rs"
+required-features = ["verifier", "error_strings", "tls13", "aesgcm", "chachapoly", "x25519", "ecdh", "ecdsa"]

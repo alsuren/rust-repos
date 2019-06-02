@@ -1,0 +1,8 @@
+[package]
+name = "ac8e"
+version = "1.0.0"
+authors = ["Daniel Prilik <danielprilik@gmail.com>"]
+
+[dependencies]
+ncurses = "5.85.0"
+rand = "0.3"

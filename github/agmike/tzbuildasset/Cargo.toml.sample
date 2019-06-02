@@ -1,0 +1,13 @@
+[package]
+name = "tzbuildasset"
+description = "Trainz asset builder"
+repository = "https://github.com/agmike/tzbuildasset"
+license = "MIT"
+version = "1.0.0"
+authors = ["Mike Krasnenkov <mkrasnenkov@gmail.com>"]
+
+[dependencies]
+docopt = "*"
+lazy_static = "*"
+regex = "*"
+rustc-serialize = "*"

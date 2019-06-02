@@ -1,0 +1,31 @@
+[package]
+name = "snapshot_manager"
+version = "0.1.0"
+license = "Apache"
+authors = ["Leo Schwarz <mail@leoschwarz.com>"]
+description = "Provides a server allowing non-root users to perform zfs snapshots at most once a day."
+keywords = ["zfs", "utility"]
+repository = "https://github.com/leoschwarz/snapshot_manager"
+
+[dependencies]
+chrono = "0.4"
+clap = "2.25.1"
+env_logger = "0.5"
+iron = "0.6.0"
+log = "0.4.1"
+
+[package.metadata.deb]
+maintainer = "Leo Schwarz <mail@leoschwarz.com>"
+copyright = "2016-2017, Leo Schwarz <mail@leoschwarz.com>"
+license_file = ["LICENSE", "0"]
+extended_description = "Provides a server allowing non-root users to perform zfs snapshots at most once a day."
+depends = "$auto"
+section = "utility"
+priority = "optional"
+assets = [
+    ["target/release/snapshot_manager", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/cargo-deb/README", "644"],
+    ["assets/snapshot_manager.service", "usr/lib/systemd/system/", "644"],
+    ["assets/whitelist.template", "etc/snapshot_manager/whitelist.empty", "644"],
+]
+

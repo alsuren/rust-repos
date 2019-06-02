@@ -1,0 +1,24 @@
+[package]
+name = "travis-after-all"
+version = "2.0.0"
+authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
+
+keywords = ["travis", "ci", "hook"]
+description = "The missing `after_all_success` hook for Travis"
+
+license = "MIT"
+readme = "README.md"
+
+documentation = "http://badboy.github.io/travis-after-all-rs"
+homepage = "https://github.com/badboy/travis-after-all-rs"
+repository = "https://github.com/badboy/travis-after-all-rs"
+
+[dependencies]
+reqwest = "0.4.0"
+serde = "0.9.6"
+serde_derive = "0.9.6"
+serde_json = "0.9.5"
+
+[[bin]]
+name = "travis-after-all"
+doc = false

@@ -1,0 +1,22 @@
+[package]
+name          = "jws"
+version       = "0.2.2"
+authors       = ["Maarten de Vries <maarten@de-vri.es>"]
+description   = "JSON Web Signature for Rust"
+documentation = "http://docs/rs/jws/"
+repository    = "http://github.com/de-vri-es/jws"
+readme        = "README.md"
+keywords      = ["JWS", "JWT", "JSON", "web", "token"]
+license       = "BSD-2-Clause"
+edition       = "2018"
+
+[dependencies]
+crypto-mac    = "0.7"
+digest        = "0.8"
+hmac          = "0.7"
+sha2          = "0.8"
+serde         = "1.0"
+serde_derive  = "1.0"
+serde_json    = "1.0"
+base64        = "0.10"
+derive-error  = "0.0"

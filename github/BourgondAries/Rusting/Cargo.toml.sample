@@ -1,0 +1,10 @@
+[package]
+authors = ["Boraris"]
+name = "program"
+version = "0.1.0"
+
+[dependencies]
+# foobar = { path = "./foobar" }  # This is how you specify a path
+rand = "0.3.14"
+sfml = "0.11.2"
+time = "0.1.34"

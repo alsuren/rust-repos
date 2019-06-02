@@ -1,0 +1,21 @@
+[package]
+name = "silica-olimex-p207-demo"
+version = "0.0.1"
+authors = ["ithinuel@gmail.com"]
+description = ""
+
+documentation = ""
+homepage = ""
+repository = ""
+
+readme = "Readme.md"
+
+keywords = ["baremetal", "OS"]
+
+license = "MIT"
+
+build="build.rs"
+
+[dependencies]
+silica = { path = "../silica" }
+silica-olimex-p207 = { path = "../silica-olimex-p207" }

@@ -1,0 +1,23 @@
+[package]
+name = "gocar"
+version = "0.1.0"
+authors = ["Martin Habovštiak <martin.habovstiak@gmail.com>"]
+edition = "2018"
+
+[features]
+#build-binary = ["clap"]
+
+[lib]
+name = "gocar"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gocar"
+path = "src/main.rs"
+#required-features = ["build-binary"] 
+
+[dependencies]
+toml = "0.4.5"
+serde = "1"
+serde_derive = "1"
+#clap = { version = "2.3", optional = true }

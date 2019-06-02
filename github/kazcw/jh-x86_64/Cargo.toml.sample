@@ -1,0 +1,32 @@
+[package]
+name = "jh-x86_64"
+version = "0.2.1"
+authors = ["Kaz Wesley <keziahw@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = "Portable JH with optimizations for x86-64 cpus"
+documentation = "https://docs.rs/jh-x86_64"
+keywords = ["crypto", "jh", "hash", "digest"]
+categories = ["cryptography", "no-std"]
+repository = "https://github.com/kazcw/jh-x86_64"
+edition = "2018"
+
+[dependencies]
+block-buffer = "0.7"
+digest = "0.8"
+hex-literal = "0.1"
+lazy_static = { version = "1.2", optional = true }
+
+[dev-dependencies]
+digest = { version = "0.8", features = ["dev"] }
+
+[build-dependencies]
+cc = "1.0.3"
+
+[features]
+default = ["std","simd"]
+std = ["lazy_static"]
+simd = []
+avx2 = ["simd"]
+
+[badges]
+travis-ci = { repository = "kazcw/jh-x86_64" }

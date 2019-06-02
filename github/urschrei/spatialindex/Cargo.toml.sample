@@ -1,0 +1,14 @@
+[package]
+name = "spatialindex"
+description = "Higer-level bindings to libspatialindex"
+license = "MIT/Apache-2.0"
+version = "0.2.0"
+authors = ["Stephan Hügel <urschrei@gmail.com>"]
+keywords = ["gis", "geo", "rtree", "geospatial"]
+repository = "https://github.com/urschrei/spatialindex"
+documentation = "https://docs.rs/spatialindex"
+
+[dependencies]
+spatialindex-sys = "0.1.0"
+
+[build-dependencies]

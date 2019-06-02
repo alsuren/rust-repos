@@ -1,0 +1,14 @@
+[package]
+name = "fitrs"
+version = "0.4.2"
+authors = ["Malik Olivier Boussejra <malik@boussejra.com>"]
+description = "Parse FITS file in pure rust"
+homepage = "https://github.com/malikolivier/fitrs"
+repository = "https://github.com/malikolivier/fitrs"
+readme = "README.md"
+keywords = ["fits", "parser", "astronomy", "astrophysics", "fitrs"]
+categories = ["concurrency", "parsing", "science"]
+license = "GPL-3.0"
+
+[dependencies]
+byteorder = "1"

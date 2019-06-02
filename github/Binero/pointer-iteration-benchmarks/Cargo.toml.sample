@@ -1,0 +1,11 @@
+[package]
+name = "pointerbench"
+version = "0.1.0"
+authors = ["Jeroen Bollen <jbinero@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+permutohedron = "0.2.4"
+
+[profile.release]
+lto = true

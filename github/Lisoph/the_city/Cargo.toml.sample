@@ -1,0 +1,11 @@
+[package]
+name = "thecity"
+version = "0.1.0"
+authors = ["Daniel Hauser <daniel.hauser@liwest.at>"]
+
+[dependencies]
+sdl2 = "0.31.0"
+nalgebra = "0.16.4"
+ncollide3d = "0.17.1"
+rayon = "1.0.2"
+wavefront_obj = "5.1.0"

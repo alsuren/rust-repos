@@ -1,0 +1,14 @@
+[package]
+name = "grange"
+version = "0.1.1"
+description = "create range numbers macro"
+homepage = "https://github.com/robatipoor/grange"
+repository = "https://github.com/robatipoor/grange"
+keywords = ["range", "iterate","numbres","macro"]
+license = "MIT"
+authors = ["Mahdi <Mahdi.robatipoor@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]

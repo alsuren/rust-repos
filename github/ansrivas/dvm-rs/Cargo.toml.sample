@@ -1,0 +1,9 @@
+[package]
+name = "dvm-rs"
+version = "0.1.0"
+authors = ["Ankur Srivastava <best.ankur@gmail.com>"]
+edition="2018"
+
+[dependencies]
+clap = "2.31.2"
+chrono = "0.4"

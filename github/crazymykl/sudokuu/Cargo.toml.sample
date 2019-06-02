@@ -1,0 +1,17 @@
+[package]
+name = "sudokuu"
+version = "0.1.0"
+authors = ["Mike MacDonald <crazymykl@gmail.com>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/crazymykl/sudokuu"
+description = "A Sudoku solver"
+
+[features]
+default = []
+
+parallelism = ["rayon"]
+
+[dependencies]
+rayon = { version = "1.0.2", optional = true }
+bitflags = "1.0.4"

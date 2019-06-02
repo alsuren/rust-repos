@@ -1,0 +1,9 @@
+[package]
+name = "rakac_api"
+version = "0.1.0"
+authors = ["rak"]
+
+[dependencies]
+scgi = "0.3.4"
+rand = "0.4"
+

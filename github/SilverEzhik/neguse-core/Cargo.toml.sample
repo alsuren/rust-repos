@@ -1,0 +1,12 @@
+[package]
+name = "neguse-core"
+version = "0.1.0"
+authors = ["Ezhik <i@ezhik.me>"]
+
+[dependencies]
+neguse-taglib = { git = "https://github.com/SilverEzhik/neguse-taglib" }
+neguse-types = { git = "https://github.com/SilverEzhik/neguse-types", features = ["chrono"] }
+regex = "1"
+lazy_static = "1"
+rusqlite = "0"
+chrono = "0"

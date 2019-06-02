@@ -1,0 +1,17 @@
+[package]
+name = "mui"
+version = "0.1.0"
+authors = ["md"]
+
+[dependencies]
+piston = "*"
+piston_window = "*"
+piston2d-graphics = "*"
+pistoncore-input = "*"
+euclid = "*"
+glutin = "*"
+find_folder = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+#clippy = "*"

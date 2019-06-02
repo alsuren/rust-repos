@@ -1,0 +1,24 @@
+[package]
+publish = false
+edition = "2018"
+name = "sorting-visualization"
+version = "0.1.0"
+authors = ["Dmytro Meleshko <dmytro.meleshko@gmail.com>"]
+description = "A Rust program for visualizing sorting algorithms which uses Piston for graphics. Inspired by Hopson97/Sort-Algorithm-Visualiser."
+license = "MIT"
+repository = "https://github.com/dmitmel/sorting-visualization.git"
+homepage = "https://github.com/dmitmel/sorting-visualization"
+readme = "README.md"
+
+[dependencies]
+clap = "2.32"
+failure = "0.1"
+failure_derive = "0.1"
+piston = "0.39"
+piston2d-graphics = "0.28"
+piston2d-opengl_graphics = "0.57"
+pistoncore-sdl2_window = "0.52"
+rand = "0.5"
+
+[features]
+doc = []

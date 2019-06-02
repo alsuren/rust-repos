@@ -1,0 +1,22 @@
+[package]
+name = "tcfinder"
+version = "0.1.1"
+authors = ["Semih Helvaci <semih.helvaci92@gmail.com>"]
+
+build = "build.rs"
+
+[build-dependencies]
+cc = "1.0.37"
+
+[dependencies]
+rust-crypto = "0.2.36"
+num = "0.2.0"
+time = "0.1.42"
+docopt = "1.1.0"
+serde = { version = "1", features = ["derive"] }
+rustc-serialize = "0.3.24"
+threadpool = "1.7.1"
+pbr = "1.0.1"
+
+[profile.release]
+lto = true

@@ -1,0 +1,34 @@
+[package]
+name = "drsat"
+description = "SAT solver"
+version = "0.1.0"
+authors = ["Daniel Schemmel <daniel.schemmel@comsys.rwth-aachen.de>"]
+build = "build.rs"
+
+[lib]
+name = "libdrsat"
+
+[profile.release]
+opt-level = 3
+lto = true # enabling this significantly increases compile time, but also seems to yield a > 10% speedup
+
+# check .cargo/config, which also contains the following:
+# [build]
+# rustflags = ["-C", "target-cpu=native"]
+
+[features]
+default = []
+small_variable_ids = []
+aggressive = [ "small_variable_ids" ]
+
+[build-dependencies]
+error-chain = { version = "*" }
+git2 = { version = "*" }
+
+[dependencies]
+bzip2 = { version = "*" }
+clap = { version = "*" }
+error-chain = { version = "*" }
+flate2 = { version = "*" }
+time = { version = "*" }
+xz2 = { version = "*" }

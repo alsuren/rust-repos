@@ -1,0 +1,22 @@
+#Tested with nightly-2017-03-04
+
+[package]
+name = "rusttalk"
+version = "0.1.0"
+authors = ["Alexander Torstling <alexander@torstling.com>"]
+
+[dependencies]
+router = "0.5.1"
+iron = "0.5.1"
+rustc-serialize = "0.3"
+crossbeam = "0.2"
+hyper = "0.9"
+# Router only compatible with hyper 0.9
+hyper-router = "0.2"
+
+[lib]
+name = "pcons"
+
+[[bin]]
+name = "yo"
+path = "src/main.rs"

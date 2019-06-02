@@ -1,0 +1,18 @@
+[package]
+name = "ufeed"
+version = "0.1.0"
+authors = ["Richard Ramsden <richard@rramsden.ca>"]
+
+[dependencies]
+rocket = "0.3.17"
+rocket_codegen = "0.3.17"
+rocket_contrib = "0.3.17"
+serde="1.0"
+serde_json="1.0"
+serde_derive="1.0"
+diesel = { version = "1.3.3", features = ["postgres"]  }
+r2d2 = "*"
+r2d2-diesel = "*"
+dotenv = "*"
+jwt = "0.4.0"
+crypto = "*"

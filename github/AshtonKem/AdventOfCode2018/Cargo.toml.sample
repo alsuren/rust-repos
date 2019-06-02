@@ -1,0 +1,15 @@
+[package]
+name = "advent_of_code_2018"
+version = "0.1.0"
+authors = ["Ashton Kemerling <ashtonkemerling@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[[bin]]
+name = "one"
+path = "src/one.rs"
+
+[[bin]]
+name = "two"
+path = "src/two.rs"

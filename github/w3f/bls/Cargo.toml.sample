@@ -1,0 +1,26 @@
+[package]
+authors = ["Jack Grigg <str4d@i2pmail.org>", "Jeff Burdges <burdges@gnunet.org>"]
+description = "Aggregate BLS signatures"
+documentation = "https://docs.rs/bls"
+homepage = "https://github.com/str4d/bls"
+license = "MIT/Apache-2.0"
+name = "bls"
+repository = "https://github.com/str4d/bls"
+version = "0.0.1"
+
+[dependencies]
+arrayref = "0.3"
+rand = "0.4"
+ff = { version = "0.4", features = ["derive"] }
+# sha3 = "0.8"
+
+[dependencies.merlin] 
+version = "1.0.0"
+# features = ["debug-transcript"]
+
+[dependencies.pairing]
+git = "https://github.com/burdges/pairing"
+branch = "master-hashing-derives_borrows_etc0"
+# branch = "derives_borrows_etc0"
+# git = "https://github.com/mmaker/pairing"
+# branch = "master"

@@ -1,0 +1,32 @@
+[package]
+name = "sprocket"
+version = "0.2.0"
+authors = ["David Coffill <david@coffill.net>"]
+
+[lib]
+crate-type = ["staticlib"]
+path = "src/lib.rs"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+x86 = { git = "https://github.com/dcoffill/rust-x86.git"  }
+spin = "0.4.0"
+rlibc = "1.0"
+bitflags = "0.9"
+slice-cast = "0.1.2"
+smoltcp = { version = "0.3", default-features = false, features = ["collections", "alloc", "verbose", ] }
+log = { version = "0.3", default-features = false }
+spinlock = { path = "lib/spinlock" }
+mem_utils = { path = "lib/mem_utils" }
+kalloc = { path = "lib/kalloc" }
+pci = { path = "lib/pci" }
+simple_fs = { path = "lib/simple_fs" }
+
+[dependencies.lazy_static]
+version = "0.2"
+features = ["spin_no_std"]

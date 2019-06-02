@@ -1,0 +1,8 @@
+[package]
+name = "photash"
+version = "0.1.0"
+authors = ["Fernando Paredes <nano@fdp.io>"]
+
+[dependencies]
+libc = "0.2.37"
+rayon = "1.0.0"

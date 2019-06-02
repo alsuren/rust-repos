@@ -1,0 +1,9 @@
+[package]
+name = "compression"
+version = "0.1.0"
+authors = ["Daniel Becker <daniel.93.becker@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "*"
+argparse = "0.2.2"

@@ -1,0 +1,15 @@
+[package]
+name = "pendulum_paint"
+version = "0.1.0"
+authors = ["tttmmmyyyy <39012639+tttmmmyyyy@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+quicksilver = "*"
+nalgebra = "*"
+ncollide2d = "*"
+num-traits = "0.2"
+num-derive = "0.2"
+# 2019/05/03時点では、RLSのビルドツールがquicksilverの依存ライブラリbitflagのv1.0.5をビルドできないので1.0.4にダウングレード
+# https://github.com/rust-lang/rls/issues/1449
+# cargo update -p 'bitflags:1.0.5' --precise 1.0.4

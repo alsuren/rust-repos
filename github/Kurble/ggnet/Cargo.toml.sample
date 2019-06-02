@@ -1,0 +1,9 @@
+
+[package]
+name = "ggnet"
+version = "0.0.1"
+authors = ["brambuurlage@gmail.com"]
+
+[dependencies]
+byteorder = "1.2.2"
+ggnet_derive = { path = "ggnet-derive" }

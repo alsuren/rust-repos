@@ -1,0 +1,14 @@
+[package]
+name = "datamodel-parser"
+version = "0.2.0"
+authors = ["Joe Modjeski"]
+build = "build.rs"
+
+[build-dependencies]
+peg = { version = "0.5" }
+
+[dependencies]
+clap = {version = "2.32", features = ["yaml"]}
+serde = "1.0.80"
+serde_derive = "1.0.80"
+serde_json = "1.0.32"

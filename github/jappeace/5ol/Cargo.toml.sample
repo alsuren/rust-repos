@@ -1,0 +1,13 @@
+[package]
+name = "sol"
+version = "0.1.0"
+authors = ["jappie <superpwnzormegaman@gmail.com>"]
+license-file = "license.txt"
+
+[dependencies]
+conrod = {version = "0.60.0", features = ["piston"] }
+pistoncore-input = "0.21.0"
+find_folder = "*"
+piston_window = "*"
+chrono = "*"
+petgraph = "*"

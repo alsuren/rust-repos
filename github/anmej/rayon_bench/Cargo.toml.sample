@@ -1,0 +1,16 @@
+[package]
+name = "rayon_bench"
+version = "0.1.0"
+authors = ["anmej <no>"]
+
+[dependencies]
+rayon = "0.8.1"
+
+[lib]
+name = "mylib"
+
+[[bin]]
+name = "main"
+
+[[bin]]
+name = "window"

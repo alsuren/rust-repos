@@ -1,0 +1,19 @@
+[package]
+authors = ["David Fisher <ddf1991@gmail.com>"]
+edition = "2018"
+name = "online_codes"
+description = "Implementation of online codes, a rateless erasure coding."
+version = "0.1.0"
+repository = "https://github.com/ddfisher/online-codes"
+readme = "README.md"
+keywords = ["erasure", "fountain", "online", "code"]
+categories = ["encoding"]
+license = "MIT"
+exclude = [
+    "*.pdf",
+]
+
+[dependencies]
+rand = "0.6"
+rand_core = "0.3"
+rand_xoshiro = "0.1"

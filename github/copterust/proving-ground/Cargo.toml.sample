@@ -1,0 +1,222 @@
+[package]
+name = "proving_ground"
+description = "Examples of tiny programs for stm32f30x MCUs"
+version = "0.1.0"
+authors = ["Roma Sokolov", "Alexander Zhuravlev"]
+edition = '2018'
+
+[profile.dev]
+panic = "abort"
+debug = true
+opt-level = "s"
+lto = false
+codegen-units = 1
+incremental = false
+
+[profile.release]
+panic = "abort"
+opt-level = "z" # 3 # "z"
+codegen-units = 1
+debug = false
+lto = true
+incremental = false
+
+[dependencies]
+panic-abort = {version = "0.3.1", optional=true}
+asm-delay = {version = "0.5.3"}
+cortex-m = {version = ">=0.5.8,<0.7", optional=true, features = ["inline-asm", "const-fn"]}
+cortex-m-rt = {version = "0.6.7", optional = true}
+nb = {version = "0.1.1", optional = true}
+stm32f3 = {version = "0.7.0", optional = true}
+mpu9250 = {version = "0.12", optional = true}
+# mpu9250 = {path = "../mpu9250", optional = true}
+dcmimu = {version = "0.2.1", optional = true}
+ryu = {version = "0.2", optional = true}
+lsm303c = {version = "0.1.5", optional = true}
+# lsm303c = {path = "../lsm303c", optional = true}
+bmp280 = {version = "0.0.1", optional = true, package="bmp280-ehal"}
+shared-bus = {version = "0.1.2", optional = true, features = ["cortexm"]}
+vl53l0x = {version = "0.2.0", optional = true}
+# vl53l0x = {path = "../vl53l0x", optional = true}
+nalgebra = {version = "0.16.4", optional = true, default-features = false}
+libm = {version = "0.1.2", optional = true}
+rand = {version = "0.5.5", optional = true, default-features = false}
+cortex-m-semihosting = {version = "0.3.2", optional = true}
+heapless = {version = "0.4.2", features = ["const-fn", "smaller-atomics"], optional = true}
+
+[dependencies.panic-semihosting]
+features = ["exit"]
+version = "0.5.1"
+optional = true
+
+[dependencies.ehal]
+features = ["unproven"]
+version = "0.2.3"
+package = "embedded-hal"
+optional = true
+
+[dependencies.hal]
+version = "0.20.1"
+# path = "../alt-stm32f30x-hal"
+# git = "https://github.com/copterust/alt-stm32f30x-hal"
+# rev = "08fe718af0cf652bc689b1e8d5bfa822785f3c92"
+package = "alt-stm32f30x-hal"
+optional = true
+features = ["rt", "stm32f303"]
+
+[dependencies.won2010]
+git = "https://github.com/copterust/won2010"
+default-features = false
+optional = true
+
+[features]
+no_device = ["panic-abort", "cortex-m-rt", "cortex-m"]
+with_rt = ["panic-abort", "cortex-m-rt", "cortex-m", ]
+with_device = ["with_rt", "stm32f3/rt", "stm32f3/stm32f303"]
+with_hal = ["with_device", "nb", "ehal", "hal"]
+with_mpu = ["with_hal", "mpu9250"]
+with_dcmimu = ["with_mpu", "dcmimu"]
+with_lsm = ["with_hal", "lsm303c"]
+with_bmp = ["with_hal", "bmp280"]
+with_shared_bus = ["with_hal", "shared-bus"]
+with_vl53l0x = ["with_hal", "vl53l0x"]
+with_math = ["nalgebra", "libm", "rand"]
+with_semihosting = ["cortex-m-semihosting", "panic-semihosting"]
+with_won2010 = ["won2010"]
+with_heapless = ["heapless"]
+with_ryu = ["ryu"]
+# --all-features will include "generic", but you can't build "mini"
+# if device crate is used.
+all = ["with_dcmimu", "with_lsm", "with_heapless"]
+
+[[bin]]
+name = "mini"
+path = "mini/main.rs"
+required-features = ["no_device"]
+
+[[bin]]
+name = "pwm"
+path = "pwm/main.rs"
+required-features = ["with_device"]
+
+[[bin]]
+name = "better_pwm"
+path = "better_pwm/main.rs"
+required-features = ["with_hal"]
+
+[[bin]]
+name = "motors"
+path = "motors/main.rs"
+required-features = ["with_hal"]
+
+[[bin]]
+name = "tmtest"
+path = "tmtest/main.rs"
+required-features = ["with_hal"]
+
+[[bin]]
+name = "serial_echo"
+path = "serial_echo/main.rs"
+required-features = ["with_hal"]
+
+[[bin]]
+name = "vl53l0x"
+path = "vl53l0x/main.rs"
+required-features = ["with_vl53l0x"]
+
+[[bin]]
+name = "raw_sensors"
+path = "raw_sensors/main.rs"
+required-features = ["with_mpu"]
+
+[[bin]]
+name = "semi_sensors"
+path = "semi_sensors/main.rs"
+required-features = ["with_mpu", "with_semihosting"]
+
+[[bin]]
+name = "pin_sensors"
+path = "pin_sensors/main.rs"
+required-features = ["with_mpu"]
+
+[[bin]]
+name = "cycle_sensors"
+path = "cycle_sensors/main.rs"
+required-features = ["with_mpu", "with_semihosting"]
+
+
+[[bin]]
+name = "systick"
+path = "systick/main.rs"
+required-features = ["with_hal"]
+
+[[bin]]
+name = "therm"
+path = "therm/main.rs"
+required-features = ["with_mpu"]
+
+[[bin]]
+name = "mpu_calib"
+path = "mpu_calib/main.rs"
+required-features = ["with_mpu"]
+
+[[bin]]
+name = "bmp280"
+path = "bmp280/main.rs"
+required-features = ["with_bmp"]
+
+[[bin]]
+name = "ahrs"
+path = "ahrs/main.rs"
+required-features = ["with_dcmimu"]
+
+[[bin]]
+name = "lsm303"
+path = "lsm303/main.rs"
+required-features = ["with_lsm"]
+
+[[bin]]
+name = "lsm_mpu"
+path = "lsm_mpu/main.rs"
+required-features = ["with_lsm", "with_mpu"]
+
+[[bin]]
+name = "shared_i2c"
+path = "shared_i2c/main.rs"
+required-features = ["with_shared_bus", "with_lsm", "with_bmp"]
+
+[[bin]]
+name = "altitude"
+path = "altitude/main.rs"
+required-features = ["with_math"]
+
+[[bin]]
+name = "serial_redirect"
+path = "serial_redirect/main.rs"
+required-features = ["with_hal"]
+
+[[bin]]
+name = "nucled"
+path = "nucled/main.rs"
+required-features = ["with_hal"]
+
+[[bin]]
+name = "semi"
+path = "semi/main.rs"
+required-features = ["with_hal", "with_semihosting"]
+
+[[bin]]
+name = "dma_serial"
+path = "dma_serial/main.rs"
+required-features = ["with_hal"]
+
+[[bin]]
+name = "wonca"
+path = "wonca/main.rs"
+required-features = [ "with_mpu", "with_won2010", "with_math" ]
+
+
+[[bin]]
+name = "feed"
+path = "feed/main.rs"
+required-features = [ "with_dcmimu", "with_semihosting", "with_heapless", "with_ryu"]

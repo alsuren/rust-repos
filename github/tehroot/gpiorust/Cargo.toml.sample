@@ -1,0 +1,12 @@
+[package]
+name = "test"
+version = "0.1.0"
+authors = [""]
+
+[dependencies]
+sysfs_gpio = "0.5.1"
+chrono = "0.4.0"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"

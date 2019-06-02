@@ -1,0 +1,27 @@
+[package]
+name = "jdcloud_signer"
+description = "jdcloud.com API signer"
+version = "0.1.0"
+authors = ["LI Daobing <lidaobing@jd.com>"]
+edition = "2018"
+license = "Apache-2.0"
+
+[lib]
+name = "jdcloud_signer"
+
+[dependencies]
+http = "0.1.15"
+rust-crypto = "^0.2"
+chrono = "0.4"
+url = "1.7.2"
+uuid = { version = "0.7", features = ["v4"] }
+reqwest = { version = "0.9.9", optional = true }
+
+[dev-dependencies]
+serde_json = "1.0"
+
+[features]
+default = ["reqwest"]
+
+[badges]
+travis-ci = { repository = "jdcloud-api/jdcloud-sdk-rust-signer", branch = "master" }

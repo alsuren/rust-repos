@@ -1,0 +1,22 @@
+[package]
+name = "xor"
+description = "CLI app that implements basic XOR encryption/decryption"
+keywords = ["XOR", "encryption", "decryption", "CLI", "terminal"]
+categories = ["cryptography", "command-line-utilities"]
+version = "1.4.5"
+authors = ["gavyn <gavyn.riebau@gmail.com>"]
+documentation = "https://github.com/gavynriebau/xor"
+homepage = "https://github.com/gavynriebau/xor"
+license = "MIT"
+
+[dependencies]
+clap = "2.25.0"
+xor-utils = "0.6.0"
+log = "0.3.8"
+env_logger = "0.4.3"
+hex = "0.2.0"
+base64 = "~0.6.0"
+number_prefix = "0.2.7"
+filesystem = "0.4.2"
+#vfs = "0.2.0"
+rsfs = "0.4.1"

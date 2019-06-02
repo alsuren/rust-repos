@@ -1,0 +1,15 @@
+[package]
+name = "svg-halftone"
+version = "0.3.0"
+authors = ["Erik Vesteraas <erik@vestera.as>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2.14"
+svg-halftone-lib = { path = "svg-halftone-lib" }
+
+[workspace]
+members = [
+  "svg-halftone-lib",
+  "svg-halftone-wasm"
+]

@@ -1,0 +1,27 @@
+[package]
+name = "entropyicons"
+version = "0.1.0"
+authors = ["Martin Wallace <martin.v.wallace@ieee.org>"]
+
+[dependencies]
+diesel = { version = "0.16.0", features = ["postgres"] }
+diesel_codegen = { version = "0.16.0", features = ["postgres"] }
+dotenv = "0.10.*"
+clippy = { version = "*", optional = true}
+rocket = "*"
+rocket_codegen = "*"
+rand = "0.3"
+image = "*"
+tera = "0.10"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+chrono = { version = "0.3", features=["serde"]}
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["tera_templates", "json"]
+
+
+[features]
+default = []

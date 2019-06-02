@@ -1,0 +1,9 @@
+[package]
+name = "vd_rust"
+version = "0.1.0"
+authors = ["Eric Prykhodko <eprykhodko@getgoing.com>", "Bogdan Beloshitskyy <bbeloshitskyy@gmail.com>"]
+
+[dependencies]
+debt_tools = { git = "https://github.com/BogBel/debt_tools" }
+rocket = "0.2.6"
+rocket_codegen = "0.2.6"

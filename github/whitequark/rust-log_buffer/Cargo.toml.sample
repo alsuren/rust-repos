@@ -1,0 +1,13 @@
+[package]
+name = "log_buffer"
+version = "1.2.0"
+authors = ["whitequark <whitequark@whitequark.org>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/whitequark/rust-log_buffer"
+homepage = "https://github.com/whitequark/rust-log_buffer"
+documentation = "https://whitequark.github.io/rust-log_buffer/log_buffer"
+description = "A zero-allocation ring buffer for storing text logs"
+
+[features]
+const_fn = []

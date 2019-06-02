@@ -1,0 +1,11 @@
+[package]
+name = "deno-progressbar"
+version = "0.1.0"
+authors = ["Enok <416828041@qq.com>"]
+
+[dependencies]
+indicatif = "0.10.3"
+
+[[bin]]
+name = "deno-progressbar"
+path = "src/main.rs"

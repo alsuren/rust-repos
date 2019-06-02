@@ -1,0 +1,8 @@
+[package]
+name = "rustberry"
+version = "0.1.0"
+authors = ["kenichi"]
+
+[dependencies]
+hyper = "*.*"
+rustc-serialize="*.*"

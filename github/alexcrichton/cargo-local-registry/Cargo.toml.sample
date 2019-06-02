@@ -21,11 +21,11 @@ failure = "0.1.0"
 flate2 = "1.0.0"
 serde = { version = "1.0.91", features = ['derive'] }
 serde_json = "1.0.0"
-tar = "0.4.25"
-openssl = { version = '0.10.22', optional = true }
+tar = "0.4.26"
+openssl = { version = '0.10.23', optional = true }
 
 [dev-dependencies]
-tempfile = "3.0.0"
+tempfile = "3.0.8"
 
 [features]
 vendored-openssl = ['openssl/vendored']

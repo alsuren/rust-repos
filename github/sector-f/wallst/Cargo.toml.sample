@@ -1,0 +1,14 @@
+[package]
+name = "wallst"
+version = "0.1.0"
+authors = ["Adam <adamsimeth@gmail.com>"]
+
+[dependencies]
+clap = "2.9.*"
+image = "0.10.*"
+xcb = "0.7.*"
+palette = "0.2"
+
+[dependencies.xcb-util]
+version = "0.1"
+features = ["image", "shm"]

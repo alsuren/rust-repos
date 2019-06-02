@@ -1,0 +1,11 @@
+[package]
+name = "varpaper"
+version = "0.0.1"
+authors = ["VitalyR <vitalyankh@gmail.com>"]
+description = "Gets and sets the desktop wallpaper/background."
+repository = "https://github.com/vitalyankh/varpaper"
+keywords = ["desktop", "wallpaper"]
+categories = ["software"]
+license = "MPL"
+[dependencies]
+wallpaper="2.0.1"

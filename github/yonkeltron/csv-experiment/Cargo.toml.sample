@@ -1,0 +1,8 @@
+[package]
+name = "csv-experiment"
+version = "0.1.0"
+authors = ["Jonathan E. Magen <yonkeltron@gmail.com>"]
+
+[dependencies]
+clap = "2"
+jobsteal = "0.5.1"

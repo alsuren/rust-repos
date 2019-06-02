@@ -1,0 +1,11 @@
+[package]
+name = "samXbam"
+version = "0.1.0"
+authors = ["robert <rbakaric@exaltum.eu>"]
+
+[dependencies]
+
+rust-htslib = "*"
+bio = "*"
+clap = "*"
+regex = "*"

@@ -1,0 +1,51 @@
+[package]
+name = "sarek"
+version = "0.1.0"
+authors = ["Jan Bujak <j@exia.io>"]
+edition = "2018"
+
+repository = "https://github.com/koute/sarek"
+homepage = "https://github.com/koute/sarek"
+documentation = "https://docs.rs/sarek/*/sarek/"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["machine-learning", "framework", "tensorflow", "keras"]
+categories = []
+description = "A work-in-progress, experimental neural network library utilizing TensorFlow Keras"
+
+exclude = ["examples/mnist/data/**"]
+
+[badges]
+travis-ci = { repository = "koute/sarek", branch = "master" }
+maintenance = { status = "experimental" }
+
+[features]
+default = ["rayon"]
+
+[dependencies]
+pyo3 = { version = "= 0.7.0-alpha.1", features = ["python3"] }
+log = "0.4"
+libc = "0.2"
+smallvec = "0.6"
+lazy_static = "1"
+parking_lot = "0.7"
+decorum = "0.1"
+uuid = { version = "0.7", default-features = false, features = ["v4"] }
+rand = { version = "0.6", default-features = false, features = ["std"] }
+rand_pcg = "0.1"
+packed_simd = "0.3"
+rayon = { version = "1", optional = true }
+derive_more = "0.14"
+take_mut = "0.2"
+
+[dev-dependencies]
+env_logger = "0.6"
+panic-control = "0.1"
+testutils = { path = "testutils" }
+
+# For the `mnist` example.
+flate2 = "1"
+byteorder = "1"
+
+[workspace]
+members = [".", "testutils"]

@@ -1,0 +1,9 @@
+[dependencies]
+libc = "^0.1.8"
+rust-crypto = "*"
+docopt = "0.6.*"
+
+[package]
+name = "lsha"
+version = "0.0.1"
+authors = ["Eduardo ES Riccardi <eduardo.sabbatella@gmail.com>"]

@@ -1,0 +1,29 @@
+[package]
+name = "wasm-core"
+version = "0.2.15"
+authors = ["losfair <zhy20000919@hotmail.com>"]
+description = "Portable WebAssembly implementation"
+license = "LGPL-3.0"
+keywords = ["wasm", "webassembly"]
+repository = "https://github.com/losfair/wasm-core"
+readme = "README.md"
+
+[dependencies]
+serde = { version = "1", default-features = false }
+serde_derive = { version = "1", default-features = false }
+bincode-no-std = { version = "1.0.0", optional = true }
+bincode = { version = "1.0.0", optional = true }
+llvm-sys = { version = "60.0", optional = true }
+smallvec = { version = "0.6", optional = true }
+lazy_static = "1.0"
+parity-wasm = { version = "0.27.2", optional = true }
+libc = { version = "0.2", optional = true }
+byteorder = { version = "1", default-features = false }
+
+[features]
+default = ["std"]
+std = ["bincode"]
+no_std = ["bincode-no-std"]
+jit = ["std", "llvm-sys", "smallvec", "libc"]
+trans = ["std", "parity-wasm"]
+debug = []

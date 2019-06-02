@@ -1,0 +1,19 @@
+[package]
+name = "beagle"
+version = "0.1.0"
+authors = ["Marvel Mathew <marvel@busbud.com>"]
+
+[lib]
+name = "beagle"
+path = "src/beagle/lib.rs"
+
+[[bin]]
+name = "beaglebin"
+path = "src/main.rs"
+
+[dependencies]
+hyper = "0.9"
+regex = "0.1"
+iso8601 = "0.1.1"
+nom = "1.2.4"
+rustty = "*"

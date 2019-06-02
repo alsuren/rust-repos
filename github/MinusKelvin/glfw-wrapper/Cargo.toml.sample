@@ -1,0 +1,39 @@
+[package]
+name = "glfw-wrapper"
+version = "0.1.0"
+authors = ["MinusKelvin <me@minuskelvin.net>"]
+description = "A safe and thin wrapper around the [GLFW] window and context creation library."
+repository = "https://github.com/MinusKelvin/glfw-wrapper.git"
+readme = "README.md"
+keywords = ["glfw", "windowing", "opengl"]
+license = "MIT"
+
+[dependencies]
+enum_primitive = "0.1"
+bitflags = "1.0"
+
+[dependencies.glfw-sys]
+git = "https://github.com/MinusKelvin/glfw-sys"
+version = "3.3"
+optional = true
+
+[dev-dependencies]
+gl = "0.10.0"
+
+[features]
+default = ["glfw-sys"]
+
+expose-win32 = ["winapi"]
+expose-wgl = ["winapi"]
+#expose-cocoa = ["..."]
+#expose-nsgl = ["..."]
+expose-x11 = ["x11"]
+expose-glx = ["x11"]
+#expose-egl = ["..."]
+#expose-osmesa = ["..."]
+
+[target.'cfg(target_os="windows")'.dependencies]
+winapi = { version = "0.3.6", optional = true, features = ["windef"] }
+
+[target.'cfg(any(target_os="linux", target_os="freebsd", target_os="dragonfly"))'.dependencies]
+x11 = { version = "2.18.1", optional = true }

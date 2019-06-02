@@ -1,0 +1,9 @@
+[package]
+name = "sf"
+version = "0.1.1"
+
+[dependencies]
+colored = "*"
+
+[profile.release]
+opt-level = 2

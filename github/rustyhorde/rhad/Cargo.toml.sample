@@ -1,0 +1,30 @@
+[package]
+name = "rhad"
+version = "0.0.1-pre"
+authors = ["Jason Ozias <jason.ozias@ipaper.com>"]
+description = "Rusty Horde Agent Daemon"
+documentation = "http://rustyhorde.github.io/rhagent"
+homepage = "http://rustyhorde.github.io/rhagent"
+repository = "https://github.com/rustyhorde/rhagent"
+readme = "README.md"
+license = "MIT"
+keywords = ["rust","rustyhorde","rhagent"]
+build = "build.rs"
+
+[build-dependencies]
+vergen = "*"
+
+[dependencies]
+docopt = "*"
+libmultilog = "*"
+log = "*"
+regex = "*"
+rustc-serialize = "*"
+time = "*"
+toml = "*"
+
+[dependencies.librhd]
+git = "https://github.com/rustyhorde/librhd.git"
+
+[dependencies.mio]
+git = "https://github.com/rustyhorde/mio.git"

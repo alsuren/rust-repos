@@ -1,0 +1,10 @@
+[package]
+name = "serial_enumerate"
+version = "0.1.0"
+authors = ["geemili <minergeemili@gmail.com>"]
+
+[dependencies]
+error-chain = "0.5"
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.4"

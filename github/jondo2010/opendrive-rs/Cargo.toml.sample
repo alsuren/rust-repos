@@ -1,0 +1,17 @@
+[package]
+authors = ["John Hughes <jondo2010@gmail.com>"]
+name = "opendrive-rs"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+failure = "0.1.5"
+failure_derive = "0.1.1"
+log = "0.4.6"
+lyon_geom = { path = "lyon_geom" }
+lyon_path = "0.10.1"
+proj5 = "0.1.6"
+serde = { version = "1.0.85", features = ["derive"] }
+chrono = { version = "0.4.6", features = ["serde"] }
+euclid = {  version = "0.19.5", features = ["serde"] }
+serde-xml-rs = { branch = "master", git = "https://github.com/RReverser/serde-xml-rs" }

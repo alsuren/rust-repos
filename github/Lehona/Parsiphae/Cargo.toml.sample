@@ -1,0 +1,25 @@
+[package]
+name = "parsiphae"
+version = "0.3.0"
+authors = ["Leon von Mulert <leonvonmulert@gmail.com>"]
+exclude = [".idea/*"]
+description = "A crate for parsing and analysing the scripting language Daedalus from the game Gothic (2)."
+repository = "https://github.com/Lehona/Parsiphae"
+homepage = "https://forum.worldofplayers.de/forum/threads/1525026-WIP-Tool-Parsiphae"
+readme = "Readme.md"
+keywords = ["gothic", "daedalus", "parser", "compiler"]
+categories = ["parser-implementations"]
+license = "MIT"
+
+[dependencies]
+clap = "2.32.0"
+encoding = "0.2.33"
+glob = "0.2.11"
+lazy_static = "1.0.1"
+time = "0.1"
+
+[dependencies.nom]
+version = "4.0.0"
+features = ["verbose-errors"]
+
+

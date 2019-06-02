@@ -1,0 +1,14 @@
+[package]
+name = "polygon"
+version = "0.1.0"
+authors = ["Alexander Ovchinnikov <supersasha.ru@gmail.com>"]
+
+[features]
+default = ["fann/double"]
+
+[dependencies]
+fann = "*"
+libc = "*"
+rand = "0.3"
+sfml = "0.11.2"
+rustc-serialize = "*"

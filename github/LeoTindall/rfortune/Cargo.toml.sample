@@ -1,0 +1,20 @@
+[package]
+name = "rocket_fortune"
+version = "0.5.0"
+authors = ["Leonora Tindall <nora@nora.codes>"]
+edition = "2018"
+
+[dependencies]
+rocket = "^0.4"
+
+rusqlite = "0.14" # Held back for compatibility with rocket_contrib databases
+
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+
+[dependencies.rocket_contrib]
+version = "^0.4"
+default_features = false
+features = ["tera_templates", "json", "databases", "sqlite_pool"]
+

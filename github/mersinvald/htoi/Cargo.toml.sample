@@ -1,0 +1,17 @@
+[package]
+name = "htoi"
+version = "0.1.0"
+authors = ["Mike Lubinets <lubinetsm@yandex.ru>"]
+
+build = "build.rs"
+
+[build-dependencies]
+cc = "1.0.9"
+
+[profile.bench]
+lto = true
+codegen-units = 1
+
+[profile.release]
+#lto = true
+codegen-units = 1

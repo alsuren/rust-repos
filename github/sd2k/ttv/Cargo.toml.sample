@@ -1,0 +1,18 @@
+[package]
+name = "ttv"
+version = "0.2.2"
+authors = ["Ben Sully <ben.sully@yougov.com>"]
+edition = "2018"
+
+[dependencies]
+clap = { version = "2.32.0", features = ["yaml"] }
+env_logger = "0.6.1"
+flate2 = "1.0.7"
+indicatif = "0.11.0"
+log = "0.4.6"
+pad = "0.1.5"
+rand = "0.6.0"
+rand_chacha = "0.1.1"
+rayon = "1.0.3"
+structopt = "0.2.16"
+try_from = "0.3.2"

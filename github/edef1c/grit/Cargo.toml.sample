@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "io_at",
+    "sha1dc",
+    "gulp",
+    "git",
+    "git_delta",
+    "git_delta/fuzz",
+    "git_pack",
+    "git_pack/fuzz",
+    "verify"
+]
+
+[patch.crates-io]
+void = { path = "void" }
+flate2 = { path = "flate2" }

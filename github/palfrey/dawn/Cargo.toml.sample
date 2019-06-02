@@ -1,0 +1,35 @@
+[package]
+name = "dawn"
+version = "0.1.0"
+authors = ["Tom Parker <palfrey@tevp.net>"]
+
+[dependencies]
+actix-web = "0.7"
+hyper = "0.12"
+url = "*"
+log = "*"
+json = "*"
+log4rs = {version = ">= 0.5.0", features=["yaml_format"]}
+mustache = "0.8"
+itertools = "*"
+time = "*"
+get_if_addrs = "*"
+cookie = "*"
+serde = "1.0"
+serde_derive = "1.0"
+reqwest_mock = {optional=true, version="0.5"}
+lazy_static = "1.2"
+env_logger = "*"
+actix_lambda = {optional=true, version="0.1"}
+reqwest = {optional=true, version="0.9", features=["rustls-tls"], default-features=false}
+
+# Mocking doesn't work along with Lambda, as reqwest_mock needs an old version of reqwest, which needs OpenSSL
+# and compiling OpenSSL with musl is hard on a non-Linux box
+[features]
+default = ["mocking"]
+mocking = ["reqwest_mock"]
+lambda = ["actix_lambda", "reqwest"]
+
+[profile.release]
+lto = true
+panic = 'abort'

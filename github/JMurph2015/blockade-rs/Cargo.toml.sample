@@ -1,0 +1,18 @@
+[package]
+name = "blockade"
+version = "0.1.10"
+authors = ["Joseph Murphy <air.jmurph@gmail.com>"]
+license = "MIT"
+description = "A wrapper library to interface with the Blockade project"
+readme = "./README.md"
+documentation = "https://docs.rs/blockade"
+keywords = ["blockade", "distributed", "testing", "concurrency"]
+categories = ["development-tools::testing", "network-programming", "concurrency", "api-bindings"]
+
+[dependencies]
+log             = "0.4"
+rand            = "0.4"
+reqwest         = "0.9"
+serde           = "1.0"
+serde_derive    = "1.0"
+serde_json      = "1.0"

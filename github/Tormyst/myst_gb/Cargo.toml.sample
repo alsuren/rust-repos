@@ -1,0 +1,8 @@
+[package]
+name = "FeGaBo"
+version = "0.1.0"
+authors = ["Tormyst <tormyst@github.com>"]
+
+[dependencies]
+sdl2 = "*"
+clap = "2.32.0"

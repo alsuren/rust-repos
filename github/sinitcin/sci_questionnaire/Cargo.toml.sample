@@ -1,0 +1,18 @@
+[package]
+name = "sci_questionnaire"
+version = "0.1.0"
+authors = ["Антон Синицын <antony@email.su>"]
+build = "build.rs"
+
+[dependencies]
+rocket = { git = "https://github.com/SergioBenitez/Rocket" }
+rocket_codegen = { git = "https://github.com/SergioBenitez/Rocket" }
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+sqlite = "*"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["handlebars_templates"]
+git = "https://github.com/SergioBenitez/Rocket"

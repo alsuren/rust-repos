@@ -1,0 +1,24 @@
+[package]
+name = "wdsapi"
+version = "2.4.1"
+authors = ["Bruce Adams <bruce.adams@acm.org>"]
+
+[dependencies.chrono]
+version = "0"
+features = ["serde"]
+
+[dependencies.multipart]
+version = "0"
+default-features = false
+features = ["client", "hyper"]
+
+[dependencies.hyper]
+version = "0"
+default-features = false
+
+[dependencies]
+hyper-rustls = "0"
+lazy_static = "0"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"

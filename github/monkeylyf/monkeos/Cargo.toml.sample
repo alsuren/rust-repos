@@ -1,0 +1,11 @@
+[package]
+name = "monkeos"
+version = "0.1.0"
+authors = ["Yifeng Liu <laituan1986@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bootloader = "0.3.12"
+
+[package.metadata.bootimage]
+default-target = "x86_64-monkeos.json"

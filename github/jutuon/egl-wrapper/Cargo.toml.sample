@@ -1,0 +1,41 @@
+[package]
+name = "egl-wrapper"
+version = "0.1.0"
+authors = ["Juuso Tuononen <jutuon@outlook.com>"]
+
+
+[dependencies]
+bitflags = "1.0"
+libloading = { version = "0.5.0", optional = true }
+lazy_static = "1.0"
+
+[dependencies.egl-sys]
+git = "https://github.com/jutuon/egl-sys"
+rev = "c1a7c79f4fc3b5304044b93b80f2d7a600d4054d"
+features = [
+    "racer-autocomplete-workaround",
+    "extensions-module",
+    "EGL_KHR_create_context",
+    "EGL_EXT_platform_base",
+    "EGL_EXT_platform_x11",
+    "EGL_EXT_platform_wayland"
+]
+
+
+[dev-dependencies]
+gl = "0.10.0"
+winit = "0.9"
+opengles = "0.1"
+
+[dev-dependencies.x11-wrapper]
+git = "https://github.com/jutuon/x11-wrapper"
+rev = "8de5e37b7d8ace3b333cba31dae81f1b43e0992c"
+
+[dev-dependencies.videocore-wrapper]
+git = "https://github.com/jutuon/videocore-wrapper"
+rev = "3729eaaaac849cf80a34520b2456cac594f2c546"
+
+[features]
+runtime-linking = ["libloading", "egl-sys/function-pointer-loading"]
+
+raspberry-pi-broadcom = ["egl-sys/raspberry-pi-broadcom"]

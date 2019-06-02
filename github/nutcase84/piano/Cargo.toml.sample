@@ -1,0 +1,13 @@
+[package]
+name = "string"
+version = "0.1.0"
+authors = ["cyborg"]
+edition = "2018"
+
+[dependencies]
+vst = "*"
+rand = "*"
+
+[lib]
+name = "string"
+crate-type = ["cdylib"]

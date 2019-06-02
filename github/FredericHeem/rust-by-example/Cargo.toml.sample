@@ -1,0 +1,8 @@
+[package]
+name = "rust-by-example"
+version = "0.1.0"
+authors = ["Frederic Heem <frederic.heem@gmail.com>"]
+
+[dependencies]
+chrono = "0.2"
+rayon = "0.7.1"

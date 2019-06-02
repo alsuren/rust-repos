@@ -1,0 +1,9 @@
+[package]
+
+name = "gbrs"
+version = "0.0.1"
+authors = ["Zac Stewart <zgstewart@gmail.com>"]
+
+[dependencies]
+env_logger = "0.4.2"
+log = "0.3.7"

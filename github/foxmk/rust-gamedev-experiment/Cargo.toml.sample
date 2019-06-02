@@ -1,0 +1,13 @@
+[package]
+name = "dungeon-generator"
+version = "0.1.0"
+authors = ["Artyom Artemyev <cptn.foxmk@gmail.com>"]
+
+[dependencies]
+gfx = "0.17"
+glutin = "0.12"
+gfx_window_glutin = "0.20"
+cgmath = "0.16"
+rand = "0.4"
+genmesh = "0.5"
+image = "0.18"

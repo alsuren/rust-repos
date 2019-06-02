@@ -1,0 +1,12 @@
+[package]
+name = "home_controller"
+version = "0.1.0"
+authors = ["dyakushev <DYakushev@medlinesoft.ru>"]
+
+[dependencies]
+serial="*"
+actix-web="*"
+futures="*"
+dotenv="*"
+tokio-core="*"
+chrono="*"

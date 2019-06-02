@@ -1,0 +1,35 @@
+[package]
+name = "ml_dataflow"
+version = "0.1.0"
+authors = ["Stefan Kaufhold <cere@fastmail.fm>"]
+
+[dependencies]
+timely="0.6"
+timely_communication="0.6"
+abomonation="0.5"
+abomonation_derive="0.3"
+log="0.4"
+ndarray={version = "0.11", features = ["serde-1"]}
+ndarray-linalg = { version = "0.9", features = ["openblas"] }
+serde="1.0"
+serde_derive="1.0"
+csv="1.0"
+failure="0.1"
+derive_more="0.11"
+itertools="0.7"
+num-traits = "0.2"
+rand="0.5"
+approx="0.2"
+fnv = "1.0.5"
+ordered-float = "0.5.0"
+vec_map = "0.8.1"
+probability = "0.15.11"
+flame = { version = "0.2.2", optional = true }
+flamer = { version = "^0.2.3", optional = true }
+
+[dev-dependencies]
+flexi_logger = "0.8"
+
+[features]
+default=[]
+profile=["flame", "flamer"]

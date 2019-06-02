@@ -1,0 +1,14 @@
+[package]
+name = "i3switcher"
+description = "provides nicer behavior for workspace switching in i3"
+version = "0.3.1"
+authors = ["Robin Miller"]
+readme = "README.md"
+repository = "https://github.com/grenewode/i3switcher"
+homepage = "https://github.com/grenewode/i3switcher"
+keywords = ['i3']
+license-file = "LICENSE"
+
+[dependencies]
+i3ipc = "0.8"
+clap = "2"

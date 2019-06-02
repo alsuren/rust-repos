@@ -1,0 +1,88 @@
+[package]
+
+name = "striple"
+version = "0.0.1"
+authors = ["Emeric Chevalier <emericchevalier.pro@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/cheme/rust-striple"
+description = "striple support for rust."
+exclude = ["*"]
+include = ["src/**/*","examples/**/*","Cargo.toml","README.md"]
+
+
+[lib]
+name = "striple"
+crate-type = ["rlib", "dylib"]
+
+[features]
+default = ["public_crypto","serialize","public_openssl","cryptoecdsa","opensslrsa","opensslpbkdf2","for_c"]
+#default = ["public_crypto","serialize","cryptoecdsa","for_c"]
+#default = ["serialize","public_openssl","opensslrsa","opensslpbkdf2","for_c"]
+#default = []
+serialize = ["serde_derive","serde","base64"]
+opensslrsa = ["openssl"]
+opensslpbkdf2 = ["openssl"]
+cryptoecdsa = ["rust-crypto"]
+public_crypto = ["uuid","rust-crypto"]
+public_openssl = ["uuid","openssl"]
+for_c = ["libc"]
+
+[[example]]
+name='genbasestriples'
+path = "examples/generate_base.rs"
+
+[[example]]
+name='loadbaststriples'
+path = "examples/load_base.rs"
+
+[[example]]
+name='striple'
+path = "examples/striple.rs"
+
+
+[dependencies]
+log = "~0.3.8"
+lazy_static = "~0.2.8"
+num = "~0.1.37"
+rand = "~0.3.15"
+
+[dependencies.serde]
+version = "~1.0.10"
+optional = true
+[dependencies.serde_derive]
+version = "~1.0.10"
+optional = true
+
+
+[dependencies.base64]
+version = "~0.6.0"
+optional = true
+
+
+
+[dependencies.openssl]
+version = "~0.9.12"
+optional = true
+
+[dependencies.rust-crypto]
+version = "~0.2.36"
+optional = true
+
+[dependencies.uuid]
+version = "~0.5.0"
+optional = true
+features = ["v4"]
+
+[dependencies.libc]
+version = "~0.2.23"
+optional = true
+
+#[dev-dependencies.docopt_macros]
+#version = "~0.8.1"
+[dev-dependencies.docopt]
+version = "~0.8.1"
+
+[dev-dependencies.env_logger]
+version = "~0.4.2"
+

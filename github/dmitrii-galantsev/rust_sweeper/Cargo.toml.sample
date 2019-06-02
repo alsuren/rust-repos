@@ -1,0 +1,9 @@
+[package]
+name = "rust_sweeper"
+version = "0.1.0"
+authors = ["popi <fenixxxzzzz@gmail.com>"]
+
+[dependencies]
+rand = "*"
+conrod = "*"
+find_folder = "*"

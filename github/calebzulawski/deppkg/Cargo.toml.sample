@@ -1,0 +1,11 @@
+[package]
+name = "deppkg"
+version = "0.1.0"
+authors = ["Caleb Zulawski <caleb.zulawski@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
+goblin = "0.0.21"
+clap = { version = "2", features = ["yaml"] }
+derive_more = "0.14.0"

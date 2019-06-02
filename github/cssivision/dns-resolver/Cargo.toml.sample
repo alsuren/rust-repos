@@ -1,0 +1,19 @@
+[package]
+name = "dns-resolver"
+version = "0.1.0"
+authors = ["cssivision <cssivision@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/cssivision/dns-reolver"
+homepage = "https://github.com/cssivision/dns-reolver"
+description = "dns resolver based on future"
+readme = "README.md"
+
+[dependencies]
+lazy_static = "0.2"
+log = "0.3"
+libc = "0.2"
+rand = "0.3"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-timer = "0.1"
+futures = "0.1"

@@ -1,0 +1,10 @@
+[package]
+name = "CommonMark-rs"
+version = "0.1.0"
+authors = ["Eric L. Dattore <eric.dattore@gmail.com>"]
+
+[lib]
+name = "commonmark"
+
+[dependencies.getopts]
+version = "*"

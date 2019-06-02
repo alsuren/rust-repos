@@ -1,0 +1,22 @@
+[package]
+name = "bwadvent"
+version = "0.0.1"
+authors = ["Dabo Ross <daboross@daboross.net>"]
+
+[lib]
+name = "bwadvent"
+path = "src/rust/lib.rs"
+
+[workspace]
+members = ["./", "collisions"]
+
+[dependencies]
+nom = "2.0"
+gtk = "0.1"
+time = "0.1"
+piston = "0.31"
+piston_window = "0.64"
+piston2d-graphics = "0.21"
+piston2d-opengl_graphics = "0.42"
+image = { version = "0.12", default-features = false, features = ["png"] }
+collisions = { path = "collisions" }

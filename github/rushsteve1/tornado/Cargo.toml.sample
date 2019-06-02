@@ -1,0 +1,21 @@
+[package]
+name = "tornado"
+version = "0.1.0"
+authors = ["Steven vanZyl <rushsteve1@rushsteve1.us>", "Daniel McCrevan <danielmccrevan@gmail.com>"]
+edition = "2018"
+license = "MIT"
+repository = "https://gitlab.com/tornado-torrent/tornado"
+readme = "README.md"
+
+[dependencies]
+config = "^0.9"
+ctrlc = "^3.0"
+dirs = "^1.0"
+rouille = { git = "https://github.com/rushsteve1/rouille.git" } # Use patched Rouille until it gets upstreamed
+rss = { version = "^1.6", features = ["from_url", "serde"] }
+rust-embed = "^4.2"
+serde = { version = "^1.0", features = ["derive", "rc"] }
+serde_json = "^1.0"
+tempfile = "^3.0"
+toml = "^0.4"
+transmission = "^0.3"

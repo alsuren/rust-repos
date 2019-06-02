@@ -1,0 +1,13 @@
+# cargo-features = ["edition"]
+[package]
+name = "rudis"
+version = "0.1.0"
+authors = ["zzhang2 <zzhang2@xiaohongshu.com>"]
+# edition = "2018"
+
+[dependencies]
+serde = "1.0.79"
+serde_derive = "1.0.79"
+serde_json = "1.0.31"
+url = "1.7.1"
+net2 = "0.2.33"

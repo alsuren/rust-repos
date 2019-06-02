@@ -1,0 +1,14 @@
+[package]
+name = "cosmos"
+version = "0.1.0"
+authors = ["mabysh <max.byshnev@protonmail.com>"]
+
+[dependencies]
+nonblock = { git = "https://github.com/mabysh/nonblock-rs" }
+piecetable = { git = "https://github.com/mabysh/piecetable" }
+tokio = "*"
+tokio-threadpool = "*"
+termion = "*"
+tui = "*"
+log4rs = "*"
+log = "*"

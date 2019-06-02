@@ -1,0 +1,21 @@
+[package]
+name = "dwarf-term"
+version = "0.2.0"
+authors = ["Lokathor <zefria@gmail.com>"]
+repository = "https://github.com/Lokathor/dwarf-term-rs"
+readme = "README.md"
+keywords = ["roguelike","window"]
+description = "A window that lets you have Dwarf Fortress style graphics."
+license = "0BSD"
+
+publish = false
+
+[badges]
+appveyor = { repository = "Lokathor/dwarf-term-rs" }
+travis-ci = { repository = "Lokathor/dwarf-term-rs" }
+
+[dependencies]
+gl = "0.10"
+glutin = "0.17"
+glium = "0.22"
+retro-pixel = "0.3"

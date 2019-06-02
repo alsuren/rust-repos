@@ -1,0 +1,9 @@
+[package]
+name = "defscript"
+version = "0.2.1"
+authors = ["Jeremy Carter <Jeremy@JeremyCarter.ca>"]
+edition = "2018"
+
+[dependencies]
+exitcode = "1.1"
+atty = "0.2"

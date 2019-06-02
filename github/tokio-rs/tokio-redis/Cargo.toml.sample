@@ -1,0 +1,16 @@
+[package]
+name = "tokio-redis"
+version = "0.1.0"
+authors = ["Carl Lerche <me@carllerche.com>", "Armin Ronacher <armin.ronacher@active-4.com>"]
+
+[dependencies]
+log = "0.3.6"
+futures = "0.1"
+tokio-core = "0.1"
+tokio-io = "0.1"
+tokio-proto = "0.1"
+tokio-service = "0.1"
+
+[dev-dependencies]
+env_logger = "0.3.0"
+

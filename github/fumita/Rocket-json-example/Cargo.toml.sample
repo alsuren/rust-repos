@@ -1,0 +1,11 @@
+[package]
+name = "rocket-example"
+version = "0.1.0"
+authors = ["maikiichan <maikiilion@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+rocket_contrib = "0.4.0"
+serde = "1.0.88"
+serde_derive = "1.0.88"

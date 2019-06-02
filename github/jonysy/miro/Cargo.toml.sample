@@ -1,0 +1,46 @@
+[package]
+name = "miro"
+categories = ["science"]
+description = "A modern computer vision library."
+version = "0.0.1"
+authors = ["Jony <jonysy@users.noreply.github.com>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/lychee-eng/miro"
+readme = "README.md"
+documentation = "https://docs.rs/miro"
+
+
+[badges]
+    [badges.gitter]
+        repository = "lychee-eng/miro"
+    [badges.travis-ci]
+        repository = "lychee-eng/miro"
+
+[dependencies]
+    image = "0.12.3"
+    imageproc = "0.7.0"
+    log = "0.3.6"
+    nalgebra = "0.5.1"
+    num = "0.1.36"
+    rand = "0.3.15"
+    [dependencies.euclidean]
+        # git = "https://github.com/lychee-eng/euclidean.git"
+        path = "../euclidean"
+    [dependencies.float]
+        # git = "https://github.com/jonysy/float.git"
+        path = "../../float"
+
+[dev-dependencies]
+    speculate = "0.0.24"
+
+[features]
+    # no features by default
+    default = []
+    # The feature "pilot" depends on nothing else.
+    pilot = []
+
+# [workspace]
+# members = [
+# 	"illusions",
+# 	"mirage"
+# ]

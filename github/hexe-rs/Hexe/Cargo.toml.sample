@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "hexe",
+    "hexe_bin",
+    "hexe_core",
+]
+
+[profile.release]
+lto = true

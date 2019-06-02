@@ -1,0 +1,33 @@
+[package]
+name = "reminisce"
+version = "0.9.1"
+authors = ["Tom Bebbington <tophattedcoder@gmail.com>"]
+description = "A joystick detection and event-handling library"
+documentation = "http://www.rustdox.com/TomBebbington/reminisce/reminisce/"
+homepage = "http://tombebbington.github.io/reminisce/"
+keywords = [ "joystick", "gamepad", "input" ]
+license = "MIT"
+build = "src/build.rs"
+
+[lib]
+name = "reminisce"
+
+[features]
+sdl = [ "sdl2" ]
+default = [ "libc" ]
+
+[target.i686-unknown-linux-gnu.dependencies]
+inotify = "*"
+glob = "*"
+
+[target.x86_64-unknown-linux-gnu.dependencies]
+inotify = "*"
+glob = "*"
+
+[dependencies.libc]
+version = "*"
+optional = true
+
+[dependencies.sdl2]
+version = "*"
+optional = true

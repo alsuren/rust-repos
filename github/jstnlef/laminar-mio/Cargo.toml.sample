@@ -1,0 +1,36 @@
+[package]
+name = "laminar"
+version = "0.2.0"
+authors = [
+    "Lucio Franco <luciofranco14@gmail.com>",
+    "Fletcher Haynes <fletcher@capitalprawn.com>",
+    "TimonPost <timonpost@hotmail.nl>",
+    "Justin LeFebvre <jstnlefebvre@gmail.com>"
+]
+description = "A semi-reliable UDP protocol for multiplayer games"
+keywords = ["gamedev", "networking", "udp", "amethyst"]
+categories = ["game-engines", "network-programming"]
+exclude = ["examples/*", "docs/*", "benches/*"]
+edition = "2018"
+
+readme = "README.md"
+license = "MIT/Apache-2.0"
+
+repository = "https://github.com/amethyst/laminar"
+autobenches = false
+
+[badges]
+travis-ci = { repository = "amethyst/laminar", branch = "master" }
+
+[dependencies]
+byteorder = "1.3"
+crc = "1.8"
+lazy_static = "1.1"
+log = "0.4"
+mio = "0.6"
+
+[dev-dependencies]
+bincode = "1.0"
+criterion = "0.2"
+serde = "1.0"
+serde_derive = "1.0"

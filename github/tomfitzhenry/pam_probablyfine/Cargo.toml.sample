@@ -1,0 +1,14 @@
+[package]
+name = "pam_probablyfine"
+version = "0.1.0"
+authors = ["tomfitzhenry <tom@tom-fitzhenry.me.uk>"]
+
+[lib]
+name = "pam_probablyfine"
+crate_type = ['dylib']
+
+[dependencies]
+libc = "0.2"
+
+[dependencies.pam]
+git = 'https://github.com/tozny/rust-pam.git'

@@ -1,0 +1,9 @@
+[package]
+name = "tagr-rs"
+version = "0.1.0"
+authors = ["skarjala <skarjala@sfu.ca>"]
+edition = "2018"
+
+[dependencies]
+metaflac = "0.1"
+winit    = "0.19.1"

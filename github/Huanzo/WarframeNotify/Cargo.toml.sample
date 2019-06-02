@@ -1,0 +1,17 @@
+[package]
+name = "warframe_data"
+version = "0.1.0"
+authors = ["Batzi"]
+
+[dependencies]
+reqwest = "0.7.2"
+serde_json = "1.0.2"
+self_update = "0.4"
+
+[dependencies.winrt]
+version = "*"
+features = ["windows-data", "windows-ui"]
+
+[dependencies.gtk]
+version = "0.2.0"
+features = ["v3_10"]

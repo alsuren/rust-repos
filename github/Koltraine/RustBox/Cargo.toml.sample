@@ -1,0 +1,39 @@
+[package]
+authors = ["Afonso Bordado <afonsobordado@az8.co>"]
+license = "MIT"
+name = "RustBox"
+version = "0.1.0"
+
+[dependencies]
+# General Use
+error-chain = "^0.10"
+itertools = "^0.6"
+rand = "^0.3"
+find_folder = "^0.3"
+enum_primitive = "^0.1"
+num = "^0.1"
+
+# Map
+tiled = "^0.5"
+
+# Physics
+nalgebra = "^0.11"
+ncollide = "^0.11"
+nphysics2d = "^0.6"
+
+# Display
+piston = "^0.32"
+piston_window = "^0.66"
+piston-texture = "^0.5"
+piston2d-sprite = "^0.36"
+gfx_device_gl = "^0.14"
+gfx = "^0.16"
+gfx_core = "^0.7"
+image = "^0.13"
+#graphics = ""
+fps_counter = "^0.2"
+
+# Ui
+[dependencies.conrod]
+version = "^0.52"
+features = ["piston"]

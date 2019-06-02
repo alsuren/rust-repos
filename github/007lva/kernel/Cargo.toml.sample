@@ -1,0 +1,29 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+
+[lib]
+name = "kernel"
+path = "kernel/lib.rs"
+crate-type = ["staticlib"]
+
+[dependencies]
+bitflags = "*"
+spin = "*"
+
+[dependencies.goblin]
+git = "https://github.com/m4b/goblin.git"
+default-features = false
+features = ["no_mach", "no_mach32", "no_pe", "no_pe32", "no_endian_fd", "pure"]
+
+[dev-dependencies]
+arch_test = { path = "arch/test" }
+
+[target.'cfg(target_arch = "x86_64")'.dependencies]
+arch_x86_64 = { path = "arch/x86_64" }
+
+[profile.dev]
+panic = "unwind"
+
+[profile.release]
+panic = "abort"

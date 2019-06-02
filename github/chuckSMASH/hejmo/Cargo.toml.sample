@@ -1,0 +1,15 @@
+[package]
+name = "hejmo"
+version = "0.1.0"
+authors = ["Chuck Bassett <3101367+chucksmash@users.noreply.github.com>"]
+
+[dependencies]
+bytecount = "0.3.1"
+memchr = "2.0"
+unicode-segmentation = "1.2.1"
+regex = "1.0"
+termion = "1.0.0"
+
+[features]
+avx-accel = ["bytecount/avx-accel"]
+simd-accel = ["bytecount/simd-accel"]

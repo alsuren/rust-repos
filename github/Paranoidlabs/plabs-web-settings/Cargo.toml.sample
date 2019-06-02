@@ -1,0 +1,16 @@
+[package]
+name = "plabs-web-settings"
+version = "0.1.0"
+authors = ["Oskar <oskar@paraniodlabs.org>"]
+
+[dependencies]
+rocket = "0.3.0"
+rocket_codegen = "0.3.0"
+tera = "*"
+serde = "1.0"
+serde_derive = "1.0"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["tera_templates"]

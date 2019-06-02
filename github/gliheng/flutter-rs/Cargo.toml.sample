@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "flutter-engine",
+    "flutter-engine-sys",
+    "flutter-download",
+    "flutter-plugins",
+]
+
+exclude = [
+    "flutter-app-demo"
+]

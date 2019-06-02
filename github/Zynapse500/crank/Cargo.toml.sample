@@ -1,0 +1,46 @@
+[package]
+name = "crank"
+version = "0.1.0"
+authors = ["Christofer Nolander <christofer.nolander@gmail.com>"]
+build = "build.rs"
+
+# The main library
+[lib]
+name = "crank"
+path = "src/lib.rs"
+test = false
+doctest = false
+
+# Used for testing the library during it's development
+[[test]]
+name = "dev"
+path = "tests/tests.rs"
+test = true
+doctest = false
+
+[dependencies]
+
+# For OpenGL context and window creation
+glutin = "0.12.0"
+
+# For struct size querying
+memoffset = "0.1"
+
+# For numeric traits in generics
+num-traits = "0.1.41"
+
+# For loading png images
+image = "0.18.0"
+
+
+[build-dependencies]
+
+# For OpenGL bindings
+gl_generator = "0.8.0"
+
+
+[dev-dependencies]
+
+# For randomness
+rand = "0.4.1"
+

@@ -1,0 +1,38 @@
+[package]
+name = "opvault"
+version = "0.1.0-pre"
+description = "Access encrypted OPVault password stores"
+homepage = "https://github.com/lunaryorn/opvault.rs"
+repository = "https://github.com/lunaryorn/opvault.rs"
+keywords = ["opvault", "1password"]
+categories = ["command-line-interface", "cryptography", "database"]
+license = "GPL-3.0"
+authors = ["Sebastian Wiesner <swiesner@lunaryorn.com>"]
+
+[badges]
+travis-ci = { repository = "https://github.com/lunaryorn/opvault.rs" }
+
+[dependencies]
+error-chain = "^0.10"
+derive-error-chain = "^0.10"
+chrono = "^0.3"
+uuid = { version = "^0.5", features = ["use_std", "serde"] }
+rust-crypto = "^0.2"
+secstr = "^0.2"
+byteorder = "^1.0"
+base64 = "^0.5"
+serde = "^1"
+serde_derive = "^1"
+serde_json = "^1"
+nom = "^2.2"
+clippy = {version = "*", optional = true}
+
+[dev-dependencies]
+lazy_static = "0.2"
+
+[features]
+default = []
+
+[[bin]]
+name = "opvault"
+doc = false

@@ -1,0 +1,8 @@
+[package]
+name = "yarnpm"
+version = "0.1.0"
+authors = ["ricardo"]
+edition = "2018"
+
+[dependencies]
+walkdir = "2"

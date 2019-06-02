@@ -1,0 +1,29 @@
+[package]
+name = "rcu-clean"
+version = "0.1.6"
+authors = ["David Roundy <roundyd@physics.oregonstate.edu>"]
+description = "Smart pointers using RCU with Deref support."
+repository = "https://github.com/droundy/rcu-clean"
+keywords = ["RCU", "pointer", "lockless", "rc", "arc"]
+categories = ["memory-management", "data-structures"]
+license = "Apache-2.0/MIT"
+edition = "2018"
+readme = "README.md"
+
+[badges]
+
+travis-ci = { repository = "droundy/rcu-clean" }
+is-it-maintained-issue-resolution = { repository = "droundy/rcu-clean" }
+is-it-maintained-open-issues = { repository = "droundy/rcu-clean" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+
+serde = { version = "1.0", optional = true }
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "bench"
+harness = false

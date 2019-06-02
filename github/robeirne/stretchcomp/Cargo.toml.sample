@@ -1,0 +1,9 @@
+[package]
+name = "stretchcomp"
+description = "Scale images in X and/or Y directions."
+version = "0.1.0"
+authors = ["Ryan O'Beirne <robeirne@spoonflower.com>"]
+
+[dependencies]
+clap = "2.32.0"
+image = "0.19.0"

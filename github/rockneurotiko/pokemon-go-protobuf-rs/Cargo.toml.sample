@@ -1,0 +1,23 @@
+[package]
+name = "pokemon-go-protobuf"
+version = "0.1.4"
+authors = ["Rock Neurotiko <miguelglafuente@gmail.com>"]
+
+description = "Pokemon Go proto buffer types."
+
+documentation = "https://github.com/rockneurotiko/pokemon-go-protobuf-rs/README.md"
+repository = "https://github.com/rockneurotiko/pokemon-go-protobuf-rs"
+readme = "README.md"
+
+keywords = ["pokemon", "go", "protobuf", "types"]
+license = "Beerware"
+
+exclude = ["compile.sh", "POGOProtos/*"]
+
+[lib]
+name = "pokemon_go_protobuf"
+path = "src/lib.rs"
+
+
+[dependencies]
+protobuf = "1.0.23"

@@ -1,0 +1,27 @@
+[package]
+name = "dotcopter"
+version = "0.4.3-alpha.0"
+authors = ["Patrick Haun <bomgar85@googlemail.com>"]
+description = "A small tool to manage dotfile installation"
+repository = "https://github.com/bomgar/dotcopter"
+readme = "README.org"
+keywords = ["dotfile", "dotfiles"]
+license = "Apache-2.0"
+edition = "2018"
+
+[dependencies]
+dirs = "1.0"
+clap = "2.29"
+slog-term = "2"
+slog-async = "2"
+rust-crypto = "0.2"
+regex = "1.0"
+spectral = "0.6.0"
+
+[dependencies.slog]
+version = "2"
+features = ["release_max_level_trace", "max_level_debug"]
+
+[dependencies.yaml-rust]
+version = "0.4"
+

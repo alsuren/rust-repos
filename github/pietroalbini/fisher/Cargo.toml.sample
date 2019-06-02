@@ -1,0 +1,36 @@
+[package]
+authors = ["Pietro Albini <pietro@pietroalbini.org>"]
+description = "Webhooks catcher written in Rust"
+license = "GPL-3.0"
+name = "fisher"
+readme = "README.md"
+repository = "https://github.com/pietroalbini/fisher"
+version = "1.0.0-beta.7"
+
+[[bin]]
+doc = false
+name = "fisher"
+
+[dependencies]
+ansi_term = "0.11.0"
+error-chain = "0.12.0"
+lazy_static = "1.2.0"
+nix = "0.12.0"
+rand = "0.6.3"
+regex = "1.1.0"
+ring = "0.13.5"
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+tempdir = "^0.3"
+tiny_http = "0.6.2"
+toml = "^0.4"
+url = "^1.2"
+users = "0.8.1"
+
+[dev-dependencies]
+hyper = "^0.10"
+reqwest = "^0.8"
+
+[profile.release]
+lto = true

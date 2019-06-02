@@ -1,0 +1,16 @@
+[package]
+name = "fat"
+version = "0.0.2"
+authors = ["Thomas Bailleux <thomas@bailleux.me>"]
+license = "WTFPL"
+description = "Forensic library; parser and analyzer for FAT image"
+homepage = "https://github.com/Rustensic/fat"
+keywords = ["forensic", "library", "fat", "analysis", "parser"]
+categories = ["parser-implementations", "parsing"]
+readme = "README.md"
+
+[lib]
+name = "fat"
+
+[dependencies]
+memmap = "0.6.2"

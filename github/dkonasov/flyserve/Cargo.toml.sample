@@ -1,0 +1,7 @@
+[package]
+name = "flyserve"
+version = "0.1.0"
+authors = ["Konasov Dmitriy <d.konasov@yandex.ru>"]
+
+[dependencies]
+flyserve_api = { git = "https://github.com/dkonasov/flyserve_api.git" }

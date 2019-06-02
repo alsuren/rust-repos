@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "podcasts-data",
+    "podcasts-downloader",
+    "podcasts-gtk"
+]
+
+[profile.release]
+debug = true

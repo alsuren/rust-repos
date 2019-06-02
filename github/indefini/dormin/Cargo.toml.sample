@@ -1,0 +1,41 @@
+[package]
+name = "dormin"
+version = "0.1.0"
+authors = ["indefini <chris@indefini.org>"]
+
+[lib]
+name = "dormin"
+#crate-type = ["dylib"]
+
+[dependencies.png]
+git = "https://github.com/indefini/rust-png.git"
+#path = "/home/chris/code/indefini/rust-png"
+
+[dependencies.cypher-sys]
+#git = "https://gitlab.com/indefini/cypher.git"
+#git = "ssh://git@gitlab.com/indefini/cypher.git"
+path = "/home/chris/code/cypher"
+
+#[dependencies.uuid]
+#git = "https://github.com/drasich/uuid.git"
+#git = "https://github.com/rust-lang/uuid.git"
+
+[dependencies.lua]
+git = "https://github.com/indefini/rust-lua.git"
+#git = "https://github.com/kballard/rust-lua.git"
+
+[dependencies]
+toml = "0.3"
+byteorder = "*"
+lazy_static = "0.1.*"
+#hlua = "0.1"
+libc = "*"
+#clippy = "*"
+uuid = { version = "0.4", features = ["serde", "v4"] }
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+
+[features]
+evas = ["cypher-sys/evas"]
+

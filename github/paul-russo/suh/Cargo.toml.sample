@@ -1,0 +1,9 @@
+[package]
+name = "suh"
+version = "0.0.1"
+authors = [ "Paul Russo <paul@paulrusso.me>" ]
+license = "MIT"
+
+[dependencies]
+hyper = "0.10"
+hyper-native-tls = "0.2.2"

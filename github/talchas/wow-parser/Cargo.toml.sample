@@ -1,0 +1,20 @@
+[package]
+name = "wow-combat-log"
+version = "0.1.0"
+authors = ["Ben Segall <talchas@talchas.net>"]
+
+[profile.release]
+debug = true
+debug_assertions = true
+
+[dependencies]
+chrono = "0.2.25"
+lazy_static = "*"
+json = {version = "0.11.5", optional = true }
+reqwest = {version = "0.4", optional = true }
+clap = "2"
+itertools = "0.5.9"
+
+[features]
+default = ["wcl"]
+wcl = ["json", "reqwest"]

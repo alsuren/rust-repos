@@ -1,0 +1,17 @@
+[package]
+name = "gfx_pipeline"
+version = "0.3.0"
+description = "Standard materials and rendering pipelines for gfx_scene"
+homepage = "https://github.com/gfx-rs/gfx_pipeline"
+license = "Apache-2.0"
+keywords = ["graphics", "gamedev"]
+authors = ["The Gfx-rs Developers"]
+
+[lib]
+name = "gfx_pipeline"
+
+[dependencies]
+cgmath = "*"
+gfx = "0.6"
+gfx_phase = "0.4"
+gfx_scene = "0.4"

@@ -1,0 +1,8 @@
+[package]
+name = "tmux_ssh_pane"
+version = "0.1.0"
+
+[dependencies]
+errno = "*"
+nom = "*"
+liner = "*"

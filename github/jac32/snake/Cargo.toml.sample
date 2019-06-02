@@ -1,0 +1,8 @@
+[package]
+name = "snake"
+version = "0.2.0"
+authors = ["jac32 <jac32@st-andrews.ac.uk>"]
+
+[dependencies]
+termion = "1.0"
+rand = "0.3.0"

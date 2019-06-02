@@ -1,0 +1,12 @@
+[package]
+name = "tokio-bus"
+version = "0.1.1"
+edition = "2018"
+authors = ["Terry Kerr <root@oefd.ca>"]
+license = "MIT"
+description = "A message bus with tokio support"
+
+[dependencies]
+futures = "0.1"
+tokio = "0.1"
+bus = "2.0"

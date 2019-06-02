@@ -1,0 +1,14 @@
+[package]
+name = "prlink"
+version = "0.1.0"
+authors = ["Pradeep Gowda <pradeep@btbytes.com>"]
+
+
+[dependencies]
+glob = "*"
+clap = "*"
+clippy = { version = "*", optional = true }
+
+[dependencies.url]
+version = "1.7.0"
+features = ["query_encoding"]

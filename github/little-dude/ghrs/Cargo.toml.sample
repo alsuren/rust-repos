@@ -1,0 +1,20 @@
+[package]
+name = "gh-client-v3"
+version = "0.1.0"
+authors = ["Corentin Henry <corentinhenry@gmail.com>"]
+
+[dependencies]
+# reqwest = "*"
+# reqwest = { git = "https://github.com/little-dude/reqwest.git" }
+anterofit = "*"
+# anterofit = { path = "../anterofit" }
+mime = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+error-chain = "*"
+chrono = { version = "0.3", features = ["serde", "rustc-serialize"] }
+clippy = { git = "https://github.com/Manishearth/rust-clippy", optional = true}
+
+[features]
+default = []

@@ -1,0 +1,17 @@
+[package]
+name = "goose"
+version = "0.1.0"
+authors = ["Martin Hanzík <martin@hanzik.com>"]
+description = "Rust wrapper for duktape"
+license = "MIT"
+repository = "https://github.com/martinhanzik/goose"
+
+[workspace]
+members = ["duktape-sys"]
+
+[dependencies]
+num = "0.1"
+
+[dependencies.duktape-sys]
+path = "duktape-sys"
+version = "2.2.0"

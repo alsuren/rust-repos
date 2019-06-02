@@ -1,0 +1,28 @@
+[package]
+name = "incredi-panel"
+version = "0.1.0"
+authors = ["Misha Wagner <mishajw@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "incredi_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "incredi"
+path = "src/main.rs"
+
+[[bin]]
+name = "incredic"
+path = "src/cli.rs"
+
+[dependencies]
+yaml-rust = "*"
+quick-xml = "*"
+error-chain = "*"
+log = "*"
+env_logger = "*"
+sfml = "*"
+byteorder = "*"
+clap = "*"
+nix = "*"

@@ -1,0 +1,20 @@
+[package]
+name = "rust_rocket_example"
+version = "0.1.0"
+authors = ["teki.sei <teki.sei@uzabase.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+diesel = { version = "1.4.0", features = ["mysql"] }
+serde = "1.0.29"
+serde_json = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"
+reqwest = "0.9.11"
+url = "1.7.2"
+
+[dependencies.rocket_contrib]
+version = "0.4.0"
+default-features = false
+features = ["diesel_mysql_pool"]

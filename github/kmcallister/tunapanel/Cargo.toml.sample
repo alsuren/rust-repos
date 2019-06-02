@@ -1,0 +1,21 @@
+[package]
+name = "tunapanel"
+repository = "https://github.com/kmcallister/tunapanel"
+readme = "README.md"
+keywords = ["web", "control", "panel", "control-panel"]
+categories = ["web-programming::http-server", "config", "gui"]
+license = "MIT/Apache-2.0"
+description = "Autogenerate live Web-based control panels"
+version = "0.1.1"
+authors = ["Keegan McAllister <mcallister.keegan@gmail.com>"]
+
+[dependencies]
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+hyper = "0.10"
+error-chain = "0.10"
+log = "0.3"
+env_logger = "0.4"
+handlebars = "0.26"
+lazy_static = "0.2"

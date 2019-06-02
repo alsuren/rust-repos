@@ -1,0 +1,12 @@
+[package]
+name = "bucket"
+version = "0.1.0"
+authors = ["Tony Hammond <tony@tonyhammond.org>"]
+edition = "2018"
+
+[dependencies]
+config = "0.9"
+csv = "1"
+serde = "1.0"
+serde_derive = "1.0"
+postgres = "0.15"

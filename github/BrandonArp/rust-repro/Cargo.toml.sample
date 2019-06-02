@@ -1,0 +1,12 @@
+[package]
+name = "rust-repro"
+version = "0.1.0"
+authors = ["Brandon Arp <brandonarp@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = { version="0.7", features=["rust-tls", "flate2-rust", "brotli"]}
+futures = "0.1"
+log = "0.4.6"
+log4rs = "0.8.1"
+http = "0.1.15"

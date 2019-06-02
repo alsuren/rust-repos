@@ -1,0 +1,11 @@
+[package]
+name = "vmaf-plot"
+description = "Plot graphs from JSON files produced by libvmaf (VMAF/MS_SSIM/PSNR)"
+version = "0.1.0"
+authors = ["Mohammad AlSaleh <CE.Mohammad.AlSaleh@gmail.com>"]
+
+[dependencies]
+gnuplot = "0.0"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"

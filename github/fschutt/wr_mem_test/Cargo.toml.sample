@@ -1,0 +1,12 @@
+[package]
+name = "wr_mem_usage"
+version = "0.1.0"
+authors = ["fschutt <felix.schuett@maps4print.com>"]
+edition = "2018"
+
+[dependencies]
+webrender = { git = "https://github.com/servo/webrender.git", rev = "f1037064b74b9f3dbcdd825433b0965341583c57" }
+font-loader = "0.8.0"
+gleam = "*"
+glutin = "*"
+winit = "*"

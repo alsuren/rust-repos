@@ -1,0 +1,9 @@
+[package]
+name = "unagram"
+version = "0.1.0"
+authors = ["Søren Mortensen <soren@sorenmortensen.com>"]
+
+[dependencies]
+clap = "2.31.2"
+deque = "0.3.2"
+num_cpus = "1.0"

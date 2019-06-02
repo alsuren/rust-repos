@@ -1,0 +1,16 @@
+[package]
+name = "conway"
+version = "0.1.0"
+authors = ["g4lvanix <elia@dl1ye.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+ndarray = "0.12.1"
+gdk = "^0"
+gio = "^0"
+cairo-rs = "^0"
+
+[dependencies.gtk]
+version = "0.6.0"
+features = ["v3_22"]

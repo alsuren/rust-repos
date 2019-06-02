@@ -1,0 +1,16 @@
+[package]
+name = "intermezzos"
+version = "0.1.0"
+authors = ["Ojas Shirekar <ojas.shirekar@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+volatile = "0.1.0"
+rlibc = "1.0"
+spin = "0.4.5"
+multiboot2 = "0.1.0"
+
+[profile.release]
+panic = "abort"

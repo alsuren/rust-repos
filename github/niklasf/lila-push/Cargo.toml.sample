@@ -1,0 +1,22 @@
+[package]
+name = "lila-push"
+version = "0.1.0"
+publish = false
+description = "Web push microservice for lichess.org"
+repository = "https://github.com/niklasf/lila-push"
+readme = "README.md"
+license = "AGPL-3.0+"
+authors = ["Niklas Fiekas <niklas.fiekas@backscattering.de>"]
+edition = "2018"
+
+[dependencies]
+tide = { git = "https://github.com/rustasync/tide" }
+tide-log = { git = "https://github.com/rustasync/tide" }
+structopt = "0.2"
+web-push = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+futures-preview = { version = "0.3.0-alpha.16", features = ["compat"] }
+
+[patch.crates-io]
+http-service = { git = "https://github.com/rustasync/http-service" }
+http-service-hyper = { git = "https://github.com/rustasync/http-service" }

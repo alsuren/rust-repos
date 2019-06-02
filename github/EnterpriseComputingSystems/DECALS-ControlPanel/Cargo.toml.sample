@@ -1,0 +1,16 @@
+[package]
+name = "DECALS-ControlPanel"
+version = "0.1.0"
+authors = ["Francesco Macagno <fjmacagno1@yahoo.com>", "Carly Robison <carlyellenrobison@gmail.com>"]
+
+[dependencies]
+DECALS-base = {git = "https://github.com/EnterpriseComputingSystems/DECALS-base"}
+# DECALS-base = {path = "../DECALS-base"}
+piston_window = "0.75.0"
+conrod = { version = "0.58", features = ["piston"] }
+conrod_derive = "0.1.0"
+find_folder = "0.3.0"
+rand = "0.4"
+log = "0.4"
+simple_logger = "0.5"
+time = "0.1"

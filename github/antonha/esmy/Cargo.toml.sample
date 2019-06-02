@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "esmy",
+    "esmy_cli",
+]
+
+[profile.test] 
+opt-level = 3
+
+[profile.release]
+debug = true

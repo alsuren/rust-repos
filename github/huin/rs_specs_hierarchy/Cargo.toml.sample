@@ -1,0 +1,18 @@
+[package]
+name = "specs_hierarchy"
+version = "0.1.0"
+authors = ["John Beisley <johnbeisleyuk@gmail.com>"]
+description = "Hierarchy relationship ECS module for specs, extracted as a generalisation of Amethyst core's transform system."
+repository = "https://github.com/huin/rs_specs_hierarchy"
+keywords = ["specs", "ecs", "tree", "hierarchy"]
+categories = ["game-engines", "data-structures"]
+license = "MIT/Apache-2.0"
+
+[badges]
+maintenance = { status = "experimental" }
+
+[dependencies]
+fnv = "1.0"
+hibitset = "0.3.2"
+specs = "0.10"
+specs_bundler = { version = "0.2", optional = true }

@@ -1,0 +1,16 @@
+[package]
+name = "feaders"
+version = "0.2.0"
+description = "Header file searcher using libhif written in Rust"
+license = "GPL-3.0"
+repository = "https://github.com/shaded-enmity/feaders-rs"
+documentation = "https://github.com/shaded-enmity/feaders-rs"
+homepage = "https://github.com/shaded-enmity/feaders-rs"
+authors = ["Pavel Odvody <podvody@redhat.com>"]
+
+[dependencies]
+getopts = "0.2"
+walkdir = "0.1.5"
+regex = "0.1.58"
+yaml-rust = "0.3.2"
+threadpool = "1.0"

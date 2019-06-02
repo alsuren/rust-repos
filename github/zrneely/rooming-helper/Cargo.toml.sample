@@ -1,0 +1,11 @@
+[package]
+name = "rooming_helper"
+version = "0.1.0"
+authors = ["zrneely <zrneely@mit.edu>"]
+
+[dependencies]
+simmons_rooms = { git = "https://github.com/zrneely/simmons-rooms.git" }
+hyper = "*"
+openssl = { version = "*", features = ["tlsv1_2"] }
+regex = "*"
+time = "*"

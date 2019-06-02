@@ -1,0 +1,12 @@
+[package]
+name = "berrylogs"
+version = "0.7.0"
+authors = ["Atte Virtanen <aten.email@gmail.com>"]
+publish = false
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+glob = "0.2"
+lazy_static = "1"
+regex = "1"

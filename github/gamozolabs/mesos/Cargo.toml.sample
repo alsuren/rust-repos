@@ -1,0 +1,10 @@
+[package]
+name = "mesos"
+version = "0.1.0"
+authors = ["bfalk"]
+
+[dependencies]
+debugger = { path = "libs/debugger" }
+
+[profile.release]
+debug = true

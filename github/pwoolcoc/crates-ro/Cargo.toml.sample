@@ -1,0 +1,38 @@
+[package]
+authors = ["Paul Woolcock <paul@woolcock.us>"]
+name = "crates-no"
+version = "0.1.0"
+
+[[bin]]
+name = "generator"
+path = "src/bin/generator.rs"
+
+[[bin]]
+name = "crates-no"
+path = "src/bin/webapp.rs"
+
+[dependencies]
+clap = "2.24.2"
+collection_macros = "0.2.0"
+error-chain = "0.8.1"
+itertools = "0.6.0"
+rayon = "0.7.1"
+reqwest = "0.6.2"
+rocket = "0.3"
+rocket_codegen = "0.3"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+tera = "0.10.6"
+walkdir = "1.0.7"
+
+[dependencies.rocket_contrib]
+features = ["tera_templates"]
+version = "0.3"
+
+[dependencies.tantivy]
+version = "0.4.0"
+
+[lib]
+name = "crates_no"
+path = "src/lib.rs"

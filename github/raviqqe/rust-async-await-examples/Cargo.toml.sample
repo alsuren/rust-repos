@@ -1,0 +1,9 @@
+[package]
+name = "rust-async-await-examples"
+version = "0.1.0"
+authors = ["Yota Toyama <raviqqe@gmail.com>"]
+
+[dependencies]
+futures-await = "0.1"
+futures-cpupool = "0.1"
+lazy_static = "1"

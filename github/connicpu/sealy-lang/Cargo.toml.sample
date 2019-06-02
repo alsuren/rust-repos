@@ -1,0 +1,21 @@
+[package]
+authors = ["Connor Hilarides <connorcpu@live.com>"]
+name = "sealy-lang"
+version = "0.1.0"
+
+[workspace]
+
+[build-dependencies]
+lalrpop = "0.12.5"
+
+[dependencies]
+lalrpop-util = "0.12.5"
+lazy_static = "0.2.2"
+unicode-xid = "0.0.4"
+
+seal-lexer = { path = "lexer" }
+seal-symbols = { path = "symbols" }
+seal-ast = { path = "ast" }
+seal-parser = { path = "parser" }
+seal-parser-passes = { path = "parser-passes" }
+seal-ir = { path = "ir" }

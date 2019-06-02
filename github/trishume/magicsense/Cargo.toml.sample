@@ -1,0 +1,9 @@
+[package]
+name = "magicsense"
+version = "0.1.0"
+authors = ["Tristan Hume <tristan@thume.ca>"]
+
+[dependencies]
+walkdir = "0.1"
+regex = "0.1"
+lazy_static = "0.1.15"

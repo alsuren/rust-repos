@@ -1,0 +1,9 @@
+[package]
+
+name = "fireplace"
+version = "0.0.1"
+authors = ["John Wrenn <johnswrenn@gmail.com>"]
+
+[dependencies]
+ncurses = "5.84.0"
+getopts = "0.2"

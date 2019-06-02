@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "core",
+    "extractor",
+    "cli"
+]
+
+[profile.release]
+lto = true

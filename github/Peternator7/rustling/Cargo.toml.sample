@@ -1,0 +1,12 @@
+[package]
+name = "jscript_rs"
+version = "0.1.0"
+authors = ["Peter Glotfelty <glotfelty.2@osu.edu>"]
+build = "build.rs"
+
+[dependencies]
+lalrpop-util="*"
+
+[build-dependencies]
+lalrpop="*"
+regex="*"

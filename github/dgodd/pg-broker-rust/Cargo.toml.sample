@@ -1,0 +1,9 @@
+[package]
+name = "pg-service-broker"
+version = "0.0.1"
+authors = ["Dave Goddard <dave@goddard.id.au>"]
+
+[dependencies]
+rustc-serialize = "*"
+nickel = "*"
+

@@ -1,0 +1,9 @@
+[package]
+name = "rsh"
+version = "0.1.0"
+authors = ["benschau <bchau3440@gmail.com>"]
+
+[dependencies]
+libc = "0.2"
+nix = "0.11.0"
+rustyline = "1.0.0"

@@ -1,0 +1,10 @@
+[package]
+name = "stletiori"
+version = "0.1.0"
+authors = ["elpinal"]
+edition = "2018"
+
+[dependencies]
+colored = "1.7"
+failure = "0.1.5"
+structopt = "0.2"

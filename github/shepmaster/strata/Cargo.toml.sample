@@ -1,0 +1,21 @@
+[package]
+name = "strata"
+version = "0.1.1"
+authors = ["Jake Goulding <jake.goulding@gmail.com>"]
+edition = "2018"
+
+readme = "README.md"
+description = "A unique search technology"
+documentation = "https://docs.rs/strata"
+repository = "https://github.com/shepmaster/strata"
+
+license = "MIT OR Apache-2.0"
+
+keywords = ["search-engine"]
+
+[workspace]
+members = ["explore"]
+
+[dev-dependencies]
+quickcheck = "0.8.2"
+rand = "0.6.5"

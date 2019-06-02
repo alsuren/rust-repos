@@ -1,0 +1,23 @@
+[package]
+name = "zbx_hexporter"
+version = "0.1.0"
+authors = ["Sebastian YEPES F <syepes@gmail.com>"]
+
+[lib]
+name = "zbx_hexporter"
+crate-type = ["dylib"]
+
+[dependencies]
+clippy = "*"
+log = "*"
+log4rs = { version = "*", optional = false, features = ["toml_format", "threshold_filter"] }
+zbx = {git = "https://github.com/syepes/rust-zbx.git", version="*"}
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+

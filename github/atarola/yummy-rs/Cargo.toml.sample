@@ -1,0 +1,25 @@
+[package]
+name = "yummy-rs"
+version = "0.1.0"
+authors = ["atarola <anthony.tarola@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+avocado = "0.3.3"
+avocado_derive = "0.3.3"
+base64 = "0.10.1"
+bson = "0.13.0"
+config = "0.9"
+failure = "0.1.5"
+mongodb = "0.3.2"
+rocket = "0.4.0"
+reqwest = "0.9.15"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "*"
+url = "1.7.2"
+uuid = { version = "0.7.4", features = ["v4"] }
+
+[dependencies.rocket_contrib]
+version = "0.4.0"
+features = ["handlebars_templates"]

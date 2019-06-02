@@ -1,0 +1,47 @@
+[package]
+name = "hyper-websocket"
+version = "0.1.0"
+authors = ["Michael Smith <michael@spinda.net>"]
+license = "MPL-2.0"
+readme = "README.md"
+keywords = ["hyper", "http", "websocket", "web", "socket", "upgrade", "server"]
+repository = "https://github.com/spinda/hyper-websocket"
+homepage = "https://github.com/spinda/hyper-websocket"
+documentation = "https://docs.rs/hyper-websocket/0.1.0"
+description = """
+Upgrade hyper HTTP requests to WebSocket connections (server-side)
+"""
+categories = ["network-programming"]
+
+[badges]
+travis-ci = { repository = "spinda/hyper-websocket" }
+appveyor = { repository = "spinda/hyper-websocket" }
+
+[dependencies]
+bytes = "0.4"
+futures = "0.1"
+tokio-io = "0.1"
+
+[dependencies.hyper]
+git = "https://github.com/spinda/hyper"
+rev = "d54407ba9cb86f231052972cc1d1b50f9e9b6f74"
+
+# Select the minimum subset of features we need, so we don't force the inclusion
+# of eg. TLS support unnecessarily.
+[dependencies.websocket]
+version = "0.20"
+default-features = false
+features = ["async"]
+
+[dependencies.clippy]
+version = "*"
+optional = true
+
+[dev-dependencies]
+tokio-core = "0.1"
+tokio-service = "0.1"
+tokio-timer = "0.1"
+
+[features]
+default = []
+strict = ["clippy"]

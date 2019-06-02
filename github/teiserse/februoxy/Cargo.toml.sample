@@ -1,0 +1,11 @@
+[package]
+name = "februoxy"
+version = "0.1.0"
+authors = ["teiserse"]
+edition = "2018"
+
+[dependencies]
+hyper = "0.12.24"
+futures = "0.1.21"
+tokio = "0.1.15"
+termion = "1.5.1"

@@ -1,0 +1,9 @@
+[package]
+name = "game_dev"
+version = "0.1.0"
+authors = ["Alex"]
+
+[dependencies]
+gfx = "0.16.1"
+glutin = "0.10.0"
+gfx_window_glutin = "0.18.0"

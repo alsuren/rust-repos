@@ -1,0 +1,12 @@
+[package]
+name = "noise"
+version = "0.0.1"
+authors = ["Michael Kainer <kaini1123@gmail.com>"]
+
+[dependencies.rand]
+rand = "*"
+
+[dependencies.image]
+# Required for examples
+#rust-image = "*"
+git = "https://github.com/PistonDevelopers/image"

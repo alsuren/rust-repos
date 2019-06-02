@@ -1,0 +1,10 @@
+[package]
+name = "type-name"
+version = "0.1.0"
+authors = ["Boscop <kingboscop@gmail.com>"]
+
+[workspace]
+members = ["derive"]
+
+[dependencies]
+type-name-derive = { path = "derive" }

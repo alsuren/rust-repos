@@ -1,0 +1,8 @@
+[package]
+name = "rustroach"
+version = "0.1.0"
+authors = ["Tobias Schottdorf <tobias.schottdorf@gmail.com>"]
+
+[dependencies]
+protobuf = "1.0.0"
+hyper = "0.4.0"

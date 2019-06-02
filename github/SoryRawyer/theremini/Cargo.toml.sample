@@ -1,0 +1,8 @@
+[package]
+name = "theremini"
+version = "0.1.0"
+authors = ["rory"]
+
+[dependencies]
+cpal = "0.8.1"
+serialport = "2.3.0"

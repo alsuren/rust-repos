@@ -1,0 +1,32 @@
+[package]
+name = "pazi"
+version = "0.3.0"
+description = "A fast autojump helper"
+authors = ["Euan Kemp <euank@euank.com>"]
+homepage = "https://github.com/euank/pazi"
+repository = "https://github.com/euank/pazi"
+readme = "README.md"
+keywords = ["autojump", "shell", "productivity-tool"]
+license = "GPL-3.0"
+edition = "2018"
+
+[dependencies.clap]
+version = "~2"
+default-features = false
+# Remove 'suggestions' feature, see #60
+features = ["color", "vec_map"]
+
+[dependencies]
+crossbeam-channel = "0.3"
+directories = "~1"
+env_logger = "~0.6"
+libc = "~0.2"
+log = "~0.4"
+rmp-serde = "~0.13"
+serde = "~1"
+serde_derive = "~1"
+signal-hook = "0.1.9"
+snailquote = "0.2.0"
+tempfile = "3"
+termion = "~1"
+which = "2"

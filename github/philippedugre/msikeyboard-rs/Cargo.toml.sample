@@ -1,0 +1,7 @@
+[package]
+name = "msikeyboard-rs"
+version = "0.1.0"
+authors = ["Philippe Dugre <dugre.philippe@hotmail.com>"]
+
+[dependencies]
+hidapi = { git = "https://github.com/ruabmbua/hidapi-rs.git"}

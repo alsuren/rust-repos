@@ -1,0 +1,12 @@
+[package]
+name = "karlson"
+version = "0.2.1"
+authors = ["rumatoest"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+regex = "0.2.2"
+toml = "0.4"
+getopts = "0.2"

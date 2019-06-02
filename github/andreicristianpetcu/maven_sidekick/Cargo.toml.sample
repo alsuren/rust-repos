@@ -1,0 +1,16 @@
+[[bin]]
+name = "mvnsk"
+path = "mvnsk.rs"
+
+[dependencies]
+xml-rs = "0.7"
+xml5ever = "0.1.3"
+tendril = "0.1.3"
+walkdir = "2"
+pretty_assertions = "0.5.1"
+clap = "~2.31"
+
+[package]
+authors = ["Anonymous"]
+name = "mvns"
+version = "0.1.0"

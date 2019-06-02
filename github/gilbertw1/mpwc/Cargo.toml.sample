@@ -1,0 +1,11 @@
+[package]
+name = "mpwc"
+version = "0.1.0"
+authors = ["Bryan Gilbert <gilbertw1@gmail.com>"]
+
+[dependencies]
+rusterpassword = { git = "https://github.com/gilbertw1/rusterpassword" }
+secstr = "0.3.0"
+sodiumoxide = "0.0.15"
+clap = { git = "https://github.com/kbknapp/clap-rs.git" }
+rpassword = "2.0.0"

@@ -1,0 +1,8 @@
+[package]
+name = "csp"
+version = "0.1.0"
+authors = ["Vectorlincent <vectorlincent@gmail.com>"]
+description = "A solver for Constraint Satisfaction Problems."
+
+[dependencies]
+linked-hash-map = "*"

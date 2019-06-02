@@ -1,0 +1,15 @@
+[package]
+name = "rust_wordnik"
+version = "0.1.0"
+description = "wordnik Dictionary API client in Rust."
+license = "MIT"
+categories = ["api-bindings"]
+repository = "https://github.com/gkbrk/rust-urbandict"
+authors = ["alan <brightshadowx@gmail.com>"]
+
+[dependencies]
+reqwest = "0.7.3"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+url = "1.2"

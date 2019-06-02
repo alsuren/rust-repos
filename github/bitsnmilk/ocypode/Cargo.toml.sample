@@ -1,0 +1,9 @@
+[package]
+name = "ocypode"
+version = "0.1.0"
+authors = ["boek"]
+edition = "2018"
+
+[dependencies]
+hyper = "0.12.27"
+futures = "0.1.26"

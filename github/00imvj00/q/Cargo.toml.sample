@@ -1,0 +1,11 @@
+[package]
+name = "queue"
+edition = "2018"
+version = "0.1.0"
+authors = ["00imvj00 <vijaybambhaniya007@gmail.com>"]
+
+[dependencies]
+mio = "0.6"
+bytes = "0.4"
+slab = "0.4"
+RustMqtt = "0.1.1"

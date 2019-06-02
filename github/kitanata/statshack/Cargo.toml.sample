@@ -1,0 +1,8 @@
+[package]
+name = "statshack"
+version = "0.1.0"
+authors = ["Raymond Chandler III <raymondchandleriii@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+portaudio = "0.6.2"

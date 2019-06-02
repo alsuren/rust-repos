@@ -1,0 +1,20 @@
+[package]
+name = "dbkit-engine"
+version = "0.0.9"
+authors = ["Milosz Tanski <milosz@gmail.com>"]
+license = "Apache-2.0/MIT"
+description = "A columnar query execution engine"
+repository = "https://github.com/mtanski/dbkit"
+documentation = "https://docs.rs/dbkit-engine"
+readme = "README.md"
+
+
+[dependencies]
+toml = "^0.4"
+log = "^0.3"
+itertools = "^0.4"
+num = "^0.1"
+
+[lib]
+name = "dbkit_engine"
+path = "src/lib.rs"

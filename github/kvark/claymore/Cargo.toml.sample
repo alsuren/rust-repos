@@ -1,0 +1,48 @@
+[package]
+name = "claymore"
+version = "0.2.0"
+authors = [
+"Dzmitry Malyshau <kvarkus@gmail.com>",
+]
+
+[[bin]]
+name = "claymore"
+path = "src/main.rs"
+
+# Dependencies
+
+[dependencies]
+env_logger = "*"
+gfx = "0.6"
+glutin = "*"
+gfx_window_glutin = "0.2"
+
+[dependencies.claymore-scene]
+path = "src/scene/"
+
+[dependencies.claymore-load]
+path = "src/load/"
+
+[dependencies.claymore-game]
+path = "src/game/"
+
+# Examples
+
+[[example]]
+name = "viewer"
+path = "examples/viewer/bin.rs"
+
+[[example]]
+name = "forest"
+path = "examples/forest/bin.rs"
+
+[dev_dependencies]
+clock_ticks = "*"
+log = "*"
+rand = "*"
+rustc-serialize = "*"
+cgmath = "*"
+gfx_phase = "0.2"
+gfx_pipeline = "0.2"
+gfx_text = "0.2"
+gfx_debug_draw = "0.3"

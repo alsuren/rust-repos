@@ -1,0 +1,9 @@
+[package]
+name = "rjs"
+version = "0.0.1"
+authors = [ "Sergey Zaretsky <zaretskysa@gmail.com>" ]
+#build = "src/build.rs" # LALRPOP preprocessing
+
+[dependencies]
+clap = "2"
+peg = "0.3.0"

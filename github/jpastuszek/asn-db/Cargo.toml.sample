@@ -1,0 +1,27 @@
+[package]
+name = "asn-db"
+version = "0.1.2-alpha.0"
+authors = ["Jakub Pastuszek <jpastuszek@protonmail.com>"]
+description = "Look up IP address for matching ASN information in database from https://iptoasn.com/"
+readme = "README.md"
+keywords = ["asn", "ip", "database"]
+categories = ["database", "network-programming"]
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+serde_derive = "1.0.85"
+ipnet = "2.0.0"
+bincode = "1.0.1"
+serde = "1.0.85"
+csv = "1.0.5"
+error-context = "0.1.0"
+
+[dev-dependencies]
+criterion = "0.2.9"
+tempfile = "3.0.7"
+rand = "0.6.5"
+
+[[bench]]
+name = "db"
+harness = false

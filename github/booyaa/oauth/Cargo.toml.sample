@@ -1,0 +1,19 @@
+[package]
+name = "oauth"
+version = "0.1.0"
+authors = ["Mark Sta Ana <booyaabooyaabooyaa@gmail.com>"]
+description = "How to oauth"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+hyper = "*"
+hubcaps = { git = "https://github.com/carols10cents/hubcaps", branch = "eeyore" }
+iron = "*"
+router = "*"
+inth-oauth2 = "*"
+oven = "*"
+cookie = "0.2.5"
+handlebars-iron = "*"
+rustc-serialize = "*"
+params = "*"
+dotenv = "*"

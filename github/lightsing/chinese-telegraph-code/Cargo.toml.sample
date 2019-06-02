@@ -1,0 +1,8 @@
+[package]
+name = "chinese-telegraph-code"
+version = "0.1.0"
+authors = ["lightsing <light.tsing@gmail.com>"]
+
+[dependencies]
+lzma-rs = "0.1.0"
+bytebuffer = "0.2.1"

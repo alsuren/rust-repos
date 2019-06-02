@@ -1,0 +1,20 @@
+[package]
+name = "smithy_router_example"
+version = "0.1.0"
+authors = ["Robert Balicki <robert.balicki@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = { version = "< 0.2.39", features = ["nightly"] }
+smithy = { version = "0.0.3", features = [
+  "mouse-events",
+  "hash-change-events",
+ ], default-features = false }
+web-sys = { version = "0.3.5", features = [
+  "Location",
+  "console",
+] }
+js-sys = "0.3.5"

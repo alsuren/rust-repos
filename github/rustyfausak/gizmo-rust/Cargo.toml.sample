@@ -1,0 +1,17 @@
+[package]
+name = "gizmo-rust"
+version = "0.0.2"
+authors = ["Rusty Fausak <rustyfausak@gmail.com>"]
+
+[lib]
+name = "gizmo"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gizmo"
+path = "src/main.rs"
+
+[dependencies]
+docopt = "0.6.80"
+rustc-serialize = "0.3"
+byteorder = "0.5"

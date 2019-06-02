@@ -1,0 +1,16 @@
+[package]
+name = "rustv"
+version = "0.1.0"
+authors = ["dobkeratops <dobkeratopsgit@gmail.com>"]
+
+[[bin]]
+name = "main"
+path = "main.rs"
+
+[dependencies]
+vec_xyzw = { git = "https://github.com/dobkeratops/vec_xyzw-rs.git"}
+lininterp = { git = "https://github.com/dobkeratops/lininterp.git"}
+vecgenericindex = { git = "https://github.com/dobkeratops/rust_arrays_with_generic_index.git" }
+image = "0.18.0"
+itertools = "0.7.4"
+half = "1.0.1"

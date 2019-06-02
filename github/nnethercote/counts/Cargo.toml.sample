@@ -1,0 +1,12 @@
+[package]
+name = "counts"
+version = "0.1.0"
+authors = ["Nicholas Nethercote <nnethercote@mozilla.com>"]
+
+[dependencies]
+regex = "1.0"
+fxhash = "0.2"
+
+# Used for profiling
+#[profile.release]
+#debug = true

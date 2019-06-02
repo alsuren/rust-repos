@@ -1,0 +1,17 @@
+[package]
+name = "mobula_ui"
+version = "0.1.0"
+authors = ["Isaac Azuelos <isaac@azuelos.ca>"]
+edition = "2018"
+
+[[bin]]
+name = "mobula"
+path = "bin/main.rs"
+
+[workspace]
+
+[dependencies]
+mobula = { path = "src/mobula" }
+
+clap = { version = "2.32.0", features = ["wrap_help", "color"] }
+serde_json = "1.0.38"

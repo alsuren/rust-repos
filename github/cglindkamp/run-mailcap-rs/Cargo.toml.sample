@@ -1,0 +1,7 @@
+[package]
+name = "run-mailcap-rs"
+version = "0.1.0"
+authors = ["Christian Glindkamp <christian.glindkamp@gmail.com>"]
+
+[dependencies]
+atty = "0.2"

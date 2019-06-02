@@ -1,0 +1,9 @@
+[package]
+name = "pubsub-map"
+version = "0.1.0"
+authors = ["Stone Tickle <stone.tickle@gmail.com>"]
+
+[dependencies]
+simple-google-pubsub = { git = "https://github.com/annacrombie/simple-google-pubsub", branch = "master" }
+crossbeam-channel = "0.2"
+clap = "2.32.0"

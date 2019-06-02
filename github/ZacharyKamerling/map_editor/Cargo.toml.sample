@@ -1,0 +1,11 @@
+[package]
+name = "map_editor"
+version = "0.1.0"
+authors = ["ZacharyKamerling <ZacharyKamerling@gmail.com>"]
+
+[dependencies]
+image = "*"
+glium = "*"
+nom = "*"
+byteorder = "*"
+rusttype = "*"

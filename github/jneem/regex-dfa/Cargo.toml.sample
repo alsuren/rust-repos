@@ -1,0 +1,52 @@
+[package]
+name = "regex_dfa"
+version = "0.5.0"
+authors = ["Joe Neeman <joeneeman@gmail.com>"]
+description = "A crate for turning regexes into DFAs."
+documentation = "http://jneem.github.io/regex-dfa"
+homepage = "http://jneem.github.io/regex-dfa"
+repository = "http://github.com/jneem/regex-dfa"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+
+[dependencies]
+itertools = "0.4"
+lazy_static = "0.1"
+memchr = "0.1"
+num-traits = "0.1"
+range-map = "0.1.5"
+refinery = "0.1"
+regex-syntax = "0.2"
+utf8-ranges = "0.1"
+
+[dev-dependencies]
+matches = "0.1"
+quickcheck = "0.2"
+regex = "0.1.41"
+rand = "0.3"
+serde_json = "0.6"
+
+[[bench]]
+name = "dynamic"
+path = "benches/bench_dynamic.rs"
+test = false
+bench = true
+
+[[bench]]
+name = "default"
+path = "benches/bench_default.rs"
+test = true
+bench = true
+
+[[test]]
+name = "examples"
+path = "tests/matches.rs"
+
+[[test]]
+name = "crate"
+path = "src/lib.rs"
+
+[profile.bench]
+debug = true
+lto = true
+

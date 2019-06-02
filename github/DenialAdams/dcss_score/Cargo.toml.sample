@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+   "dcss_score_model",
+   "dcss_score_serve",
+   "dcss_score_stash",
+]
+
+[profile.release]
+lto = true

@@ -1,0 +1,9 @@
+[package]
+name = "demo-rust-code"
+version = "1.0.0"
+authors = ["Joel Parker Henderson <joel@joelparkerhenderson.com>"]
+
+[dependencies]
+error-chain = "*"
+getopts = "*"
+rand = "*"

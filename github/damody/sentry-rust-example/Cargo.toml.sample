@@ -1,0 +1,8 @@
+[package]
+name = "test_sentry"
+version = "0.1.0"
+authors = ["damody <liam.huang@4ipnet.com>"]
+
+[dependencies]
+backtrace = "0.3"
+sentry = "0.7"

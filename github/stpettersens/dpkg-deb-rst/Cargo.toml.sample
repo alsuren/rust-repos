@@ -1,0 +1,22 @@
+[package]
+name = "dpkg-deb-rst"
+description = "dpkg-deb implementation in Rust."
+version = "0.1.0"
+authors = ["Sam Saint-Pettersen <s.stpettersen+github@gmail.com>"]
+repository = "https://github.com/stpettersens/dpkg-deb-rst"
+homepage = "https://github.com/stpettersens/dpkg-deb-rst"
+license = "GPL-3.0/MIT"
+
+[dependencies]
+ark = { git = "https://github.com/stpettersens/ark.git" }
+tatar = { git = "https://github.com/stpettersens/tatar.git" }
+clioptions = "0.1.0"
+dos2unix = "0.1.0"
+regex = "0.1.77"
+serde = "1.0.5"
+serde_derive = "1.0.5"
+serde_json = "1.0.2"
+toml = "0.2.1"
+yaml-rust = "0.3.4"
+xmlJSON = "0.2.0"
+Inflector = "0.6.0"

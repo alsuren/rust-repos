@@ -1,0 +1,10 @@
+[package]
+
+name = "ber"
+version = "0.0.6"
+authors = ["dlevy47"]
+description = "BER reading/writing"
+license = "MIT"
+
+[dependencies]
+byteorder = "*"

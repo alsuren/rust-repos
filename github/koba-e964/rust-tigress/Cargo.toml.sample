@@ -1,0 +1,21 @@
+[package]
+name = "calc"
+version = "0.1.0"
+authors = ["koba-e964 <koba_max@kobas-Air.pohe>"]
+
+[features]
+default = ["docopt_macros"]
+no-docopt-macros = []
+
+[dependencies]
+peg = "0.5"
+peg-syntax-ext = "0.5"
+rustc-serialize = "0.3"
+docopt = ">=0.6.83"
+docopt_macros = { version = ">=0.6.86", optional = true }
+
+[[bin]]
+name = "calc-rust"
+path = "src/main.rs"
+test = false
+bench = false

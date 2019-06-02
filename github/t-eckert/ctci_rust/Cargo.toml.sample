@@ -1,0 +1,11 @@
+[package]
+name = "ctci_rust"
+version = "0.1.0"
+authors = ["t-eckert <t_eckert@outlook.com>"]
+edition = "2018"
+
+[[bin]]
+name = "is_unique"
+path = "ch01_arrays_and_strings/q01_is_unique.rs"
+
+[dependencies]

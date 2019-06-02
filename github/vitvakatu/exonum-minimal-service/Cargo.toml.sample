@@ -1,0 +1,12 @@
+[package]
+name = "exonum-minimal-service"
+version = "0.1.0"
+authors = ["Ilya Bogdanov <ilya.bogdanov@xdev.re>"]
+
+[dependencies]
+exonum = "0.7"
+iron = "0.6"
+bodyparser = "0.8"
+router = "0.6"
+serde_json = "1.0"
+env_logger = "0.5"

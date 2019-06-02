@@ -1,0 +1,39 @@
+[package]
+name = "rfm12b"
+version = "0.1.0"
+authors = ["Leon Tan <leon.arian.tan@gmail.com>"]
+
+[dependencies]
+cortex-m = "0.4.3"
+
+[dependencies.register]
+default-features = false
+path = "../register"
+
+[dependencies.embedded-hal]
+version = "^0.1.2"
+default-features = false
+features = ["unproven"]
+
+[dependencies.byteorder]
+default-features = false
+version = "^1.2.1"
+
+[dependencies.cast]
+default-features = false
+version = "^0.2.0"
+
+[dependencies.crc16]
+default-features = false
+version = "^0.3.4"
+
+[dependencies.arrayref]
+default-features = false
+version = "^0.3.4"
+
+[dependencies.fpa]
+default-features = false
+version = "^0.1.0"
+
+[dependencies.nb]
+version = "0.1.1"

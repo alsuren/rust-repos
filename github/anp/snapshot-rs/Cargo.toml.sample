@@ -1,0 +1,18 @@
+[package]
+name = "snapshot"
+version = "0.1.0"
+authors = ["Adam Perry <adam.n.perry@gmail.com>"]
+license = "MIT"
+description = "\"Snapshot\" or golden master regression testing."
+repository = "https://github.com/anp/snapshot-rs"
+keywords = ["test", "testing", "regression", "snapshot", "golden-master"]
+categories = ["development-tools"]
+edition = "2018"
+
+[dependencies]
+pretty_assertions = "^0.2.0"
+serde = "^1.0.7"
+serde_derive = "^1.0.8"
+serde_json = "^1.0.2"
+snapshot-proc-macro = { path = "snapshot-proc-macro", version = "0.1" }
+fs2 = "^0.4.3"

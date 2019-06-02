@@ -1,0 +1,24 @@
+[workspace]
+
+members = [
+  "cli",
+  "common",
+  "conductor",
+  "conductor_api",
+  "conductor_wasm",
+  "core_api_c_binding",
+  "core",
+  "dna_c_binding",
+  "hdk-rust",
+  "net",
+  "nodejs_waiter",
+  "sodium",
+  "dpki",
+  "test_bin",
+  "benchmarks"
+]
+exclude = [
+  "test_utils",
+  "app_spec",
+  "nodejs_conductor/native",
+]

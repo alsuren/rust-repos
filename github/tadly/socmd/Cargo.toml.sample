@@ -1,0 +1,9 @@
+[package]
+name = "socmd"
+version = "0.0.0"
+authors = ["tadly <git@tadly.de>"]
+
+[dependencies]
+strfmt = "0.1.6"
+yaml-rust = "0.4"
+argparse = "0.2.2"

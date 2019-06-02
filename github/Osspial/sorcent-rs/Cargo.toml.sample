@@ -1,0 +1,9 @@
+[package]
+name = "sorcent"
+version = "0.1.0"
+authors = ["Osspial <osspial@gmail.com>"]
+
+[dependencies]
+libc = "0.2.*"
+num = "0.1.*"
+image = "0.6.*"

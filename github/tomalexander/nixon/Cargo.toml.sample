@@ -1,0 +1,12 @@
+[package]
+authors = ["Tom Alexander <craftkiller@gmail.com>"]
+name = "nixon"
+version = "0.1.0"
+
+[dependencies]
+chrono = "0.2.25"
+hyper = "0.9.10"
+rusqlite = "0.7.3"
+serde = "0.8.15"
+serde_derive = "0.8.19"
+serde_json = "0.8.3"

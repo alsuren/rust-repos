@@ -1,0 +1,18 @@
+[package]
+name = "rsmath"
+version = "0.1.7"
+authors = ["Aleix Casanovas <aleics.casanovas@gmail.com>"]
+
+description = "An uncomplicated library for Mathematics written in Rust"
+repository = "https://github.com/aleics/rsmath"
+readme = "README.md"
+keywords = [ "math", "linear", "algebra", "matrix", "vector"]
+license = "Apache-2.0"
+
+[lib]
+name = "rsmath"
+path = "src/lib.rs"
+
+[dependencies]
+num = "0.1.35"
+rand = "0.3"

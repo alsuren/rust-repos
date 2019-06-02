@@ -1,0 +1,10 @@
+[package]
+name = "rust-hello"
+version = "0.1.0"
+authors = ["Shane Pearlman <shanemikel1@gmail.com>"]
+
+[dependencies]
+
+[features]
+debug = []
+mutex = []

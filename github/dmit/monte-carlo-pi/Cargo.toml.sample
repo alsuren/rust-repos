@@ -1,0 +1,10 @@
+[package]
+name = "monte-carlo-pi"
+version = "0.1.0"
+authors = ["dmit"]
+edition = "2018"
+
+[dependencies]
+rand  = "0.6"
+rayon = "1.0"
+xoshiro = "0.0.4"

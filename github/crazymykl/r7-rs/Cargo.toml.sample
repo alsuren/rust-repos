@@ -1,0 +1,19 @@
+[package]
+name = "r7-rs"
+version = "0.1.0"
+authors = ["Mike MacDonald (crazymykl) <crazymykl@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+peg = { version = "0.5.3" }
+
+[lib]
+name = "r7rs"
+
+[dependencies]
+num = "0.1.0"
+rustyline = "1.0.0"
+
+[features]
+default = []
+show_ast = []

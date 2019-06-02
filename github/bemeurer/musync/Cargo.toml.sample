@@ -1,0 +1,44 @@
+[package]
+name = "musync"
+version = "0.1.0"
+edition = "2018"
+authors = ["Bernardo Meurer <meurerbernardo@gmail.com>"]
+description = "A fast music syncing CLI"
+keywords = ["music", "audio", "sync", "flac", "mp3"]
+categories = ["multimedia::encoding", "multimedia::audio"]
+
+
+[dependencies]
+# Audio decoders
+magic = "0.12.2"
+claxon = "0.4.1"
+simplemad = "0.9.0"
+simplemad_sys = "0.5.0"
+lewton = "0.9.3"
+hound = "3.4.0"
+# Checksums
+hex = "0.3.2"
+time= "0.1.42"
+blake2 = "0.8.0"
+twox-hash = "1.1.2"
+byteorder = "1.3.1"
+smallvec = "0.6.9"
+#rayon = "0.9"       # Parallelism
+# Database
+sled= "0.18.1"
+# Misc
+pretty_toa = "1.0.0"
+termcolor = "1.0.4"
+#filetime = "0.1"
+#clap = "2"          # Argument parser
+
+[dev-dependencies]
+toml = "0.4.10"
+#tempdir = "0.3"
+#tempfile = "2.2"
+
+[profile.release]
+opt-level = 3
+debug = true
+#lto = true
+codegen-units = 1

@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "blockgame/client",
+    "blockgame/server",
+    "common/blockengine",
+    "common/blockengine-rendering",
+    "common/lagato",
+    "common/lagato-ggez",
+    "common/rivr",
+    "common/rivr-ggez",
+    "common/udpcon",
+    "tdgame",
+]
+
+# Debug mode performance without any optimizations is way too slow for games
+[profile.dev]
+opt-level = 1

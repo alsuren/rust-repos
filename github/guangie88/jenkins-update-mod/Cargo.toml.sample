@@ -1,0 +1,28 @@
+[package]
+name = "jenkins-update-mod"
+version = "0.1.1"
+authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
+
+[[bin]]
+name = "jenkins-mod"
+path = "src/jenkins-mod-main.rs"
+
+[[bin]]
+name = "jenkins-sync"
+path = "src/jenkins-sync-main.rs"
+
+[dependencies]
+error-chain = "0.10"
+futures = "0.1"
+futures-cpupool = "0.1"
+hyper = { version = "0.10", default-features = false }
+log = "0.3"
+log4rs = "0.6"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+structopt = "0.0"
+structopt-derive = "0.0"
+toml = "0.3"
+url = "1.4"
+walkdir = "1.0"

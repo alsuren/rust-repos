@@ -1,0 +1,31 @@
+[package]
+name = "electric-trombone"
+version = "0.1.0"
+authors = ["Jeron A. Lau <jeron.lau@plopgrizzly.com>"]
+
+[[bin]]
+name = "mute" # code running inside the trombone mute on a Pi Zero W
+path = "src/mute.rs"
+
+[[bin]]
+name = "speaker" # code playing out the speaker (currently on laptop, phone later)
+path = "src/speaker.rs"
+
+[[bin]] # TODO: remove
+name = "synth"
+path = "src/synth.rs"
+
+[dependencies]
+sample = "0.9"
+adi = { version = "0.12", default-features = false }
+byteorder = "1.2"
+pitch = "0.1"
+twang = "0.1"
+
+[features]
+microphone = ["speaker"] # ["adi/microphone"]
+speaker = ["adi/speaker"]
+
+[replace]
+"pitch:0.1.3" = { path = "../pitch" }
+"adi_speaker:0.0.1" = { path = "../adi_speaker" }

@@ -1,0 +1,16 @@
+[package]
+name = "rustgl"
+version = "0.1.0"
+authors = ["nukeop <alsw@protonmail.com>"]
+
+[dependencies]
+glutin = "0.8.0"
+gl = "0.6.1"
+
+[[bin]]
+name = "blobs"
+path = "src/blobs/main.rs"
+
+[[bin]]
+name = "render_mesh"
+path = "src/render_mesh/main.rs"

@@ -1,0 +1,9 @@
+[package]
+authors = ["Félix Saparelli <felix@passcod.name>"]
+name = "stalc"
+version = "0.0.0"
+
+[dependencies]
+lazy_static = "0.2.8"
+nom = "3.0.0"
+num = "0.1.37"

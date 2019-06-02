@@ -1,0 +1,18 @@
+[package]
+name = "operator"
+version = "0.1.0"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[lib]
+name = "operator"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "*"
+rustc-serialize = "*"
+csv = "*"
+densearray = "^0.1"
+#lazy_static = "*"
+sharedmem = "^0.1"
+rng = "^0.1"
+typemap-alt = { path = "../rust-typemap" }

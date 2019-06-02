@@ -1,0 +1,16 @@
+[package]
+name = "bspc"
+description = "Alternative bspc command"
+version = "0.4.3"
+authors = ["Mario Nachbaur <mario.nachbaur@outlook.com>"]
+
+repository = "http://github.com/marionauta/bspc"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+libc = "0.2"
+unix_socket = "0.5"
+
+[profile.release]
+lto = true

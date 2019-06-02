@@ -1,0 +1,30 @@
+[package]
+name = "file-lock"
+version = "0.0.16"
+authors = ["Alfie John <alfie@alfie.wtf>"]
+description = "File locking via POSIX advisory record locks"
+
+documentation = "https://alfiedotwtf.github.io/file-lock/"
+homepage = "https://crates.io/crates/file-lock"
+repository = "https://github.com/alfiedotwtf/file-lock"
+
+license = "MIT"
+
+build = "build.rs"
+
+[features]
+default = []
+# to satisfy travis-cargo when used with nightly compiler
+unstable = []
+
+[lib]
+name = "file_lock"
+
+[dependencies]
+libc = "*"
+
+[dev-dependencies]
+tempfile = "*"
+
+[build-dependencies]
+gcc = "*"

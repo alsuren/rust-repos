@@ -1,0 +1,14 @@
+[package]
+name = "diffsim"
+version = "0.1.0"
+authors = ["Christopher Tam <ohgodtamit@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+clap = "^2.26"
+
+[dependencies]
+clap = "~2.26"
+difflib = "~0.2.0"
+rayon = "~0.8.2"
+strsim = "~0.6.0"

@@ -1,0 +1,8 @@
+[package]
+name = "genecs"
+version = "0.1.0"
+authors = ["Jonathon Davis <jonathondevindavis@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+crossbeam-utils = "0.6.*"

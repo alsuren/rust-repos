@@ -1,0 +1,10 @@
+[package]
+name = "hammsters-game-engine"
+version = "0.1.0"
+authors = ["hammster <mail@hans-koch.me>"]
+
+[dependencies]
+rand = "*"
+
+[dependencies.sdl2]
+version = "0.28"

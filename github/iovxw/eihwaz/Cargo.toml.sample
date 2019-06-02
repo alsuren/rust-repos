@@ -1,0 +1,9 @@
+[package]
+name = "eihwaz"
+version = "0.1.0"
+authors = ["iovxw <iovxw@outlook.com>"]
+
+[dependencies]
+serde_json = "0.8"
+gtk = { git = "https://github.com/gtk-rs/gtk" }
+glib = { git = "https://github.com/gtk-rs/glib" }

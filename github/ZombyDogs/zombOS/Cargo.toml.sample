@@ -1,0 +1,12 @@
+[package]
+name = "zombOS"
+version = "0.1.0"
+authors = ["Zombo <zombydogs@gmail.com>"]
+
+[dependencies]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

@@ -1,0 +1,9 @@
+[package]
+name = "impulse_rs"
+version = "0.1.0"
+authors = ["Lucas Bittencourt <lbittencs@gmail.com>"]
+
+[dependencies]
+cgmath = "0.15"
+ggez = "0.3.3"
+rayon = "0.8.2"

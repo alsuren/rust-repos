@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "autograph",
+    "autograph-main",
+    "autograph-derive",
+    "punchcard"
+]
+exclude=["ext/darling"]

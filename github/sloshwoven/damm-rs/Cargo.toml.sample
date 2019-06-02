@@ -1,0 +1,13 @@
+[package]
+name = "damm"
+version = "0.1.0"
+description = "Damm check digit generation and validation"
+repository = "https://github.com/sloshwoven/damm-rs"
+readme = "README.md"
+keywords = ["Damm", "checkdigit"]
+categories = ["algorithms"]
+authors = ["sloshwoven <slosh.woven@gmail.com>"]
+license = "BSD3"
+
+[dependencies]
+try_from = "0.2.0"

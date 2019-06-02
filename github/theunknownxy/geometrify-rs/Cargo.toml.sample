@@ -1,0 +1,39 @@
+[package]
+name = "geometrify"
+version = "0.1.0"
+authors = ["Marco Schlumpp <marco.schlumpp@gmail.com>"]
+license = "MPL-2.0"
+
+[dependencies]
+image = "^0.14.0"
+rand = "^0.3"
+rayon = "^0.8.2"
+pbr = "^1.0.0"
+
+[dependencies.clap]
+version = "^2.24.2"
+features = ["color"]
+
+[profile.release]
+lto = true
+
+# Web
+[dependencies.rocket]
+version = "^0.2.6"
+optional = true
+
+[dependencies.rocket_codegen]
+version = "^0.2.6"
+optional = true
+
+[features]
+web = ["rocket", "rocket_codegen"]
+
+[[bin]]
+name = "cli"
+path = "src/bin/cli.rs"
+
+[[bin]]
+name = "web"
+path = "src/bin/web.rs"
+required-features = ["web"]

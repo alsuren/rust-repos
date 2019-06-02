@@ -1,0 +1,24 @@
+[package]
+name = "izzet"
+version = "0.1.0"
+authors = ["Jing Peng <pj.hades@gmail.com>"]
+description = "A tiny static site generator"
+homepage = "https://github.com/pjhades/izzet"
+repository = "https://github.com/pjhades/izzet"
+keywords = ["static", "site", "generator"]
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[lib]
+name = "izzet"
+path = "src/lib.rs"
+
+[dependencies]
+chrono = { version = "^0.4", features = ["serde"] }
+getopts = "^0.2"
+pulldown-cmark = "^0.1.0"
+serde = "^1.0"
+serde_derive = "^1.0"
+tera = "^0.10.10"
+tiny_http = "^0.5.8"
+toml = "^0.4.5"

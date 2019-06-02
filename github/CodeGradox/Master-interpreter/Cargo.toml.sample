@@ -1,0 +1,17 @@
+[package]
+name = "interpreter"
+version = "0.1.0"
+authors = ["Magnus Åsrud <magnusasrud92@gmail.com>"]
+
+[lib]
+name = "interpreter"
+
+[[bin]]
+name = "interpreter_bin"
+doc = false
+
+[[test]]
+name = "interpreter_test"
+path = "tests/lib.rs"
+
+[dependencies]

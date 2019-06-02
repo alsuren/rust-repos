@@ -1,0 +1,13 @@
+[package]
+name = "serial-key"
+version = "1.0.0"
+authors = ["James Tease <james@jamestease.co.uk>"]
+repository = "https://github.com/whostolemyhat/keygen-crate"
+homepage = "https://github.com/whostolemyhat/keygen-crate"
+documentation = "https://github.com/whostolemyhat/keygen-crate"
+license = "MIT"
+description = "Create a verifiable serial key from a seed"
+
+[dependencies]
+rand = "0.3"
+regex = "0.2"

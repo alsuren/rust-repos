@@ -1,0 +1,17 @@
+[package]
+name = "asteroids"
+version = "0.1.0"
+authors = ["Peter Higley <phigley@gmail.com>"]
+edition = "2018"
+
+[workspace]
+
+[dependencies]
+graphics = { path = "./graphics" }
+specs = "*"
+specs-derive = "*"
+quick-error = "*"
+nphysics2d = "*"
+ncollide2d = "*"
+nalgebra = "*"
+rand = "*"

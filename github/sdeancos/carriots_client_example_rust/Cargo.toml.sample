@@ -1,0 +1,13 @@
+[package]
+name = "carriots-client"
+version = "0.5.0"
+authors = ["Samuel de Ancos <sdeancos@gmail.com>"]
+
+[dependencies]
+docopt = "0.8.3"
+reqwest = "0.9.2"
+hyper = "*"
+
+[profile.release]
+lto = true
+panic = 'abort'

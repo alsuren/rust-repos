@@ -1,0 +1,17 @@
+[package]
+name = "rmapbash"
+version = "0.1.0"
+authors = ["saltire sable <saltiresable@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bitreader = "0.3"
+byteorder = "1.3"
+clap = "2.33"
+csv = "1.0"
+hematite-nbt = "0.4"
+flate2 = "1.0"
+png = "0.14"
+regex = "1.1"
+serde = "1.0"
+serde_json = "1.0"

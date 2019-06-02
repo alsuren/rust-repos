@@ -1,0 +1,9 @@
+[package]
+authors = ["xahigoyez <pierre.bertin-johannet@orange.fr>"]
+name = "lisaa_lang"
+version = "0.1.0"
+[dependencies]
+clap = "*"
+lazy_static = "*"
+rand = "*"
+time = "*"

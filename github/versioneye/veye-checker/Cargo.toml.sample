@@ -1,0 +1,26 @@
+[package]
+name = "veye_checker"
+version = "0.2.0"
+authors = ["timgluz <sulg@versioneye.com>", "reiz@versioneye.com"]
+
+[dependencies]
+sha1            = "^0.2.0"
+sha2            = "^0.6"
+base64          = "^0.6"
+md5             = "^0.3"
+getopts         = "^0.2"
+hyper           = "^0.10"
+hyper-native-tls = "0.2.2"
+csv             = "^0.15"
+regex           = "^0.2.1"
+serde           = "^1.0"
+serde_derive    = "^1.0"
+serde_json      = "^1.0"
+toml            = "^0.4"
+walkdir         = "^1.0"
+
+
+[features]
+api = []
+proxy = []
+

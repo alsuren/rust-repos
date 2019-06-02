@@ -1,0 +1,12 @@
+[package]
+name = "razer-chroma"
+version = "0.1.0"
+authors = ["Heath Farrow <heath.farrow@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+restson = "^0.3.0"
+serde = "^1.0"
+serde_derive = "^1.0"
+simple_logger = "0.5.0"
+log = "0.4.5"

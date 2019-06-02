@@ -1,0 +1,32 @@
+[package]
+name = "rustvita"
+version = "0.1.0"
+description = "Vita rust homebrew experiment"
+authors = ["Eidolon"]
+
+[dependencies]
+# Provides rust allocation intrinsics via C malloc.
+alloc_system3ds = { git = "https://github.com/rust3ds/alloc_system3ds", rev = "da38c94" }
+psp2shell = { path = "psp2shell-rs" }
+
+# This provides the llvm compiler intrinsics implemented in Rust.
+# Unimplemented intrinsics are instead pulled from llvm's implementation
+# and compiled with gcc. Env vars must be set to make this work,
+# see Makefile for details.
+#[dependencies.compiler_builtins]
+#git = "https://github.com/rust-lang-nursery/compiler-builtins"
+#features = ["c"]
+
+[profile.dev]
+debug = false
+lto = true
+
+[profile.release]
+panic = 'abort'
+lto = true
+
+[workspace]
+members = [
+    "psp2shell-rs",
+    "psp2shell-rs/psp2shell-sys"
+]

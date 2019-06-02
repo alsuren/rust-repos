@@ -1,0 +1,25 @@
+[package]
+name = "fresh_cargo"
+version = "0.1.0"
+authors = ["Whatisinternet"]
+
+[dependencies]
+twitter-api = "*"
+oauth-client = "0.1"
+hyper = "0.9.1"
+rustc-serialize = "0.3.19"
+bodyparser = "0.3.0"
+dotenv = "0.8.0"
+diesel = "0.6.1"
+diesel_codegen = { version = "0.6.1", default-features = false, features = ["nightly", "postgres"] }
+dotenv_macros = "0.8.0"
+iron = "*"
+router = "*"
+handlebars-iron = { git = "https://github.com/sunng87/handlebars-iron.git" }
+staticfile = "*"
+
+[dependencies.mount]
+git = "https://github.com/iron/mount.git"
+
+[target.heroku]
+version = "nightly"

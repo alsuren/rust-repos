@@ -1,0 +1,25 @@
+[package]
+name = "partyarty"
+version = "0.1.0"
+authors = ["Robert Swain <robert.swain@gmail.com>"]
+description = "PartyArty - A Pseudo-Real-Time Ray Tracer"
+
+[dependencies]
+cgmath = "0.16.1"
+clap = "2.32.0"
+failure = "0.1.3"
+hibitset = "0.5.2"
+image = "0.20.0"
+rand = "0.5.5"
+rayon = "1.0.2"
+sdl2 = "0.31.0"
+specs = "0.12.3"
+thread_local = "0.3.6"
+
+[lib]
+name = "partyarty"
+path = "src/lib.rs"
+
+[[bin]]
+name = "partyarty"
+path = "src/main.rs"

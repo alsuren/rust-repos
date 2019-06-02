@@ -1,0 +1,21 @@
+[package]
+name          = "uaparser"
+version       = "0.3.1"
+description   = "A Rust implementation of the UA Parser"
+license       = "MIT"
+authors       = ["David Lewis <david@weassemble.com>"]
+edition       = "2018"
+
+homepage      = "https://github.com/davidarmstronglewis/uap-rs"
+repository    = "https://github.com/davidarmstronglewis/uap-rs"
+documentation = "https://docs.rs/uap-rs/"
+readme        = "README.md"
+
+keywords      = ["user", "agent", "parser", "uap", "uaparser"]
+
+[dependencies]
+serde = "1.0.89"
+serde_yaml = "0.8.8"
+serde_derive = "1.0.89"
+derive_more = "0.14.0"
+onig = "4.3.2"

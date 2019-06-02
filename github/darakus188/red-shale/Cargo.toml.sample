@@ -1,0 +1,11 @@
+[package]
+name = "red-shale"
+version = "0.1.0"
+authors = ["Matthew Bunt <darakus@dagron.net>"]
+
+[dependencies]
+mio = "*"
+
+[dependencies.rusqlite]
+version = "*"
+features = ["bundled"]

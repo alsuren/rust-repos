@@ -1,0 +1,26 @@
+[package]
+
+name = "libbreakpad-client-sys"
+version = "0.1.0"
+authors = ["Corey Richardson <corey@octayn.net>"]
+links = "breakpad_client"
+build = "build.rs"
+repository = "https://github.com/cmr/google-breakpad"
+license = "BSD-3-Clause"
+description = "Native bindings to the google-breakpad library"
+
+[lib]
+name = "libbreakpad_client_sys"
+path = "lib.rs"
+
+[dependencies]
+libc = "*"
+
+[target.x86_64-pc-windows-gnu.dependencies]
+winapi = "*"
+
+[target.i686-pc-windows-gnu.dependencies]
+winapi = "*"
+
+[build-dependencies]
+pkg-config = "*"

@@ -1,0 +1,21 @@
+[package]
+name = "ters_gc"
+version = "0.1.0"
+authors = ["Adam Cutler <adam.r.cutler@gmail.com>"]
+repository = "https://github.com/AdnoC/ters_gc"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+description = "Create garbage colleced pointers"
+keywords = ["arena", "gc"]
+categories = ["Memory management"]
+
+[dependencies.ters_gc_derive]
+path = "ters_gc_derive"
+
+[dev-dependencies.compiletest_rs]
+version = "0.3.11"
+features = ["stable"]
+
+[dev-dependencies]
+priority-queue = "0.5.1" # For dijkstra test
+version-sync = "0.5"

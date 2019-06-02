@@ -1,0 +1,45 @@
+[package]
+name = "ssl-rust-tools"
+version = "0.1.0"
+authors = ["Devin Schwab <digidevin@gmail.com>"]
+edition = "2018"
+
+[build-dependencies]
+glob = { version = "0.2" }
+protoc-rust = "2.2"
+
+[dependencies]
+byteorder = "1"
+clap = "2.32"
+chrono = "0.4"
+crossbeam = "0.7"
+failure = { version = "0.1" }
+indicatif = "0.11"
+lazy_static = "1.2"
+socket2 = { version = "0.3", features = ["reuseport"] }
+protobuf = { version = "2.3" }
+
+# gui deps
+gfx = { version = "0.17", optional = true }
+gfx_window_glutin = { version = "0.28", optional = true }
+glutin = { version = "0.19", optional = true }
+imgui = { version = "0.0.22", optional = true }
+imgui-sys = { version = "0.0.22", optional = true }
+imgui-gfx-renderer = { version = "0.0.22", optional = true }
+imgui-winit-support = { version = "0.0.22", optional = true }
+# used in file browser widget
+regex = { version = "1.1", optional = true }
+
+[dev-dependencies]
+# Test deps
+proptest = "0.9"
+tempfile = "3"
+
+[features]
+default = []
+gui = ["gfx", "gfx_window_glutin", "glutin", "imgui", "imgui-sys", "imgui-gfx-renderer", "imgui-winit-support", "regex"]
+
+[[bin]]
+name = "label_data"
+path = "src/gui/label_data/main.rs"
+required-features = ["gui"]

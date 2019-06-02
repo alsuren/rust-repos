@@ -1,0 +1,11 @@
+[package]
+name = "dubni"
+version = "0.1.0"
+authors = [
+    "Lukas Kalbertodt <lukas.kalbertodt@gmail.com>",
+    "Julian Kniephoff <me@juliankniephoff.com>",
+]
+
+[dependencies]
+stdweb = "0.4"
+log = "0.4"

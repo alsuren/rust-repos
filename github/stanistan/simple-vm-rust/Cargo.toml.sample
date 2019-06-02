@@ -1,0 +1,19 @@
+[package]
+name = "simple_vm"
+version = "0.1.0"
+authors = ["Stan Rozenraukh <stan@stanistan.com>"]
+
+[lib]
+path = "src/lib.rs"
+
+[profile.release]
+# Let's not mangle symbols.
+debug = true
+
+[dependencies]
+failure = "0.1.1"
+failure_derive = "0.1.1"
+
+[dependencies.clap]
+version = "~2.31"
+default-features = false

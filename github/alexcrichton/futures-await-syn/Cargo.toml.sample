@@ -1,0 +1,31 @@
+[package]
+name = "futures-await-syn"
+version = "0.12.0"
+authors = ["David Tolnay <dtolnay@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = "Temporary fork of the `syn` crate for futures-await"
+repository = "https://github.com/alexcrichton/futures-await-syn"
+
+[features]
+default = ["parsing", "printing", "clone-impls"]
+full = []
+parsing = ["futures-await-quote", "futures-await-synom/parsing"]
+printing = ["futures-await-quote", "futures-await-synom/printing"]
+visit = []
+visit_mut = []
+fold = []
+clone-impls = ["futures-await-synom/clone-impls"]
+extra-traits = ["futures-await-synom/extra-traits"]
+
+[dependencies]
+futures-await-quote = { version = "0.4", optional = true }
+futures-await-synom = { version = "0.12", path = "synom" }
+proc-macro2 = "0.1"
+unicode-xid = "0.1"
+
+[dev-dependencies]
+error-chain = "0.10"
+syntex_pos = "0.59"
+syntex_syntax = "0.59"
+tempdir = "0.3.5"
+walkdir = "1.0.1"

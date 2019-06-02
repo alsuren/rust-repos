@@ -1,0 +1,43 @@
+[package]
+authors = [
+  "Jorge Aparicio <jorge@japaric.io>",
+  "Per Lindgren <per.lindgren@ltu.se>",
+]
+categories = ["concurrency", "embedded", "no-std"]
+description = "Real Time For the Masses (RTFM) framework for ARM Cortex-M microcontrollers"
+documentation = "https://docs.rs/cortex-m-rtfm"
+keywords = ["arm", "cortex-m"]
+license = "MIT OR Apache-2.0"
+name = "app"
+repository = "https://github.com/japaric/cortex-m-rtfm"
+version = "0.3.1"
+
+[dependencies]
+cortex-m-rtfm = "0.3.4"
+static-ref = "0.2.0"
+cortex-m-semihosting = "0.2.0"
+
+[dev-dependencies.cortex-m-rt]
+features = ["abort-on-panic"]
+version = "0.3.9"
+
+[dependencies.stm32f4]
+path = "stm32f4"
+version = "0.1.0"
+features = ["rt"]
+
+[dependencies.cast]
+default-features = false
+version = "0.2.2"
+
+[dependencies.cortex-m]
+version = "0.3.1"
+
+[dependencies.cortex-m-debug]
+git = "https://gitlab.henriktjader.com/pln/cortex-m-debug.git"
+
+[dependencies.nb]
+git = "https://github.com/japaric/nb"
+
+[profile.release]
+lto = true

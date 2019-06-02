@@ -1,0 +1,32 @@
+[package]
+name = "apocalypse-post"
+version = "1.0.0"
+authors = ["Stephen Sherratt <stephen@sherra.tt>"]
+build = "build.rs"
+
+[features]
+default = ["sdl2"]
+use_sdl2_mac_framework = ["sdl2/use_mac_framework"]
+
+[dependencies]
+rand = "0.3"
+num = "0.1"
+itertools = "0.5"
+getopts = "0.2"
+toml = "0.3"
+serde = "0.9"
+serde_derive = "0.9"
+bincode = "1.0.0-alpha2"
+
+[dependencies.sdl2]
+version = "0.29"
+optional = true
+default-features = false
+features = ["image", "ttf"]
+
+[build-dependencies]
+copy_dir = "0.1"
+handlebars = "0.22"
+tomson = "0.1"
+rustc-serialize = "0.3"
+genecs = { git = "https://github.com/stevebob/genecs.git", rev = "529123f" }

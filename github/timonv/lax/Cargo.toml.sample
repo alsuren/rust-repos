@@ -1,0 +1,16 @@
+[package]
+
+name = "lax"
+version = "0.0.1"
+authors = ["Timon Vonk <timonv@gmail.com>"]
+
+[dependencies]
+regex = "*"
+hyper = "*"
+websocket = "*"
+rustc-serialize = "*"
+ncurses = "*"
+rdispatcher = "*"
+json_macros = "*"
+log = "*"
+env_logger = "*"

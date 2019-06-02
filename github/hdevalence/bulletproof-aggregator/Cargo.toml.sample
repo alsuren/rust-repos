@@ -1,0 +1,19 @@
+[package]
+name = "bulletproof-aggregator"
+version = "0.1.0"
+authors = ["Henry de Valence <hdevalence@hdevalence.ca>"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.1"
+futures = "0.1"
+hyper = "0.12"
+log = "0.4"
+pretty_env_logger = "0.3"
+bulletproofs = "1"
+serde_cbor = "0.9"
+reqwest = "0.9"
+serde = "1"
+serde_derive = "1"
+rand = "0.6"
+

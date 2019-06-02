@@ -1,0 +1,17 @@
+[package]
+authors = ["Alex Johnson"]
+name = "crabby"
+version = "2.0.0"
+
+[dependencies]
+itertools = "*"
+rand = "*"
+time = "*"
+
+[profile]
+
+[profile.bench]
+opt-level = 3
+
+[profile.release]
+opt-level = 3

@@ -1,0 +1,9 @@
+[package]
+name = "shell_helper"
+version = "0.2.11"
+authors = ["hikky <hikky@tuta.io>"]
+description = "Very simple helper functions to make building linux scripts in rust easier"
+license = "MIT"
+
+[dependencies]
+reqwest = "0.8.6"

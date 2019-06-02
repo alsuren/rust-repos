@@ -1,0 +1,9 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["Pol Gómez Riquelme <gomezp@uchicago.edu>"]
+
+[dependencies]
+rand = "0.4"
+sfml = "0.14.0"
+time = "*"

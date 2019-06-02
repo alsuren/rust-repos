@@ -1,0 +1,47 @@
+[package]
+name = "ice-threads"
+description = "Lightweight Thread pool implementation."
+version = "0.1.0"
+license = "MIT"
+readme = "README.md"
+edition = "2018"
+
+authors = ["purple-ice <purpleice.git@gmail.com>"]
+repository = "https://github.com/purple-ice/ice-threads"
+
+keywords = ["multithreading", "thread", "pool", "parallel"]
+categories = ["concurrency"]
+
+
+
+[profile.dev]
+opt-level = 0
+debug = true
+lto = false
+debug-assertions = true
+codegen-units = 16
+incremental = true
+overflow-checks = true
+
+
+
+[profile.test]
+opt-level = 0
+debug = 2
+lto = false
+debug-assertions = true
+codegen-units = 16
+incremental = true
+overflow-checks = true
+
+
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'
+incremental = false
+overflow-checks = false

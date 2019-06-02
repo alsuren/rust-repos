@@ -1,0 +1,8 @@
+[package]
+name = "rust-tutorials"
+version = "0.10.1"
+authors = ["Evgeny Ukhanov <mrlsd@ya.ru>"]
+
+[dependencies]
+num-bigint = "*"
+num-traits = "*"

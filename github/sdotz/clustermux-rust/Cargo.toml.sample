@@ -1,0 +1,8 @@
+[package]
+name = "clustermux"
+version = "0.0.1"
+authors = ["Stephen Dotz <me@stephendotz.com>"]
+
+[dependencies]
+getopts = "0.2.4"
+rustc-serialize = "0.3.12"

@@ -1,0 +1,16 @@
+[package]
+name = "dirble"
+version = "1.3.1"
+authors = ["Izzy Whistlecroft <izzy.whistlecroft@nccgroup.com>"]
+edition = "2018"
+
+[dependencies]
+curl = "0.4.19"
+percent-encoding = "1.0.1"
+clap = "2.32"
+select = "0.4.2"
+chardet = "0.2.4"
+encoding = "0.2.33"
+atty = "0.2.11"
+colored = "1.7"
+rand = "0.6.5"

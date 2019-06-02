@@ -1,0 +1,10 @@
+[project]
+name = "osc"
+version = "0.1.0"
+authors = [ "general.electrix@gmail.com" ]
+
+[lib]
+name = "osc"
+
+[dependencies]
+byteorder = "~0.4.2"

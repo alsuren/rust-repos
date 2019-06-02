@@ -1,0 +1,13 @@
+[package]
+
+name = "rustql"
+version = "0.0.1"
+authors = ["Daniel Ramos <dan@daramos.com>"]
+
+
+
+[dependencies]
+bit-vec = "^0"
+
+[dependencies.peg]
+git = "https://github.com/kevinmehall/rust-peg.git"

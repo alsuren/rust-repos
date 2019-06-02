@@ -1,0 +1,11 @@
+[package]
+
+name = "rustydomain"
+version = "0.1.0"
+authors = [ "Adam Nelson <anelson@apocryph.org>" ]
+
+[dependencies]
+regex="0.1.0"
+glob = "*"
+rusqlite = "0.2.0"
+rust-crypto = "0.2.0"

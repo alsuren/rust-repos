@@ -1,0 +1,14 @@
+[package]
+name = "speck"
+version = "0.1.0"
+description = "The configuration files manager nobody asked for"
+repository = "https://github.com/feddamisch/speck"
+authors = [
+    "Federico Damián Schonborn <schonbornfedericodamian@gmail.com>"
+]
+license = "MIT"
+edition = "2018"
+
+[[bin]]
+name = "speck"
+path = "src/main.rs"

@@ -1,0 +1,16 @@
+[package]
+name = "access_server"
+version = "0.0.4"
+authors = ["Samuel Dolt <samuel@dolt.ch>"]
+build = "build.rs"
+
+[dependencies]
+toml = "0.2.1"
+diesel = { version = "0.8.0", features = ["sqlite"]}
+dotenv = "0.8.0"
+subcmd = "0.1.0"
+
+
+[build-dependencies]
+syntex = {version = "0.44.0"}
+diesel_codegen_syntex = { version = "0.8.0", features = ["sqlite"] }

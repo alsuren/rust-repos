@@ -1,0 +1,14 @@
+[package]
+name = "pixie-rust"
+version = "0.1.0"
+authors = ["João Costa <jdpc557@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+description = "A recommender system based on Pinterest's Pixie recommender"
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+
+[dev-dependencies]
+csv = "1"

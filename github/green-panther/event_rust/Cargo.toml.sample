@@ -1,0 +1,20 @@
+[package]
+name = "event_rust"
+version = "0.1.1"
+license       = "MIT"
+description   = "Lightweight non-blocking IO support windows and linux"
+authors = ["tickbh <dwhat@vip.qq.com>"]
+homepage      = "https://github.com/tickbh/event_rust"
+repository    = "https://github.com/tickbh/event_rust"
+readme        = "README.md"
+keywords      = ["io", "async", "non-blocking"]
+
+[dependencies]
+libc = "*"
+num = "*"
+time = "0.1.31"
+bitflags = "0.3"
+
+[[test]]
+name = "test"
+path = "test/test.rs"

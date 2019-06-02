@@ -1,0 +1,13 @@
+[package]
+authors = ["Dale Wijnand <dale.wijnand@gmail.com>"]
+name = "sbtl"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.0"
+curl = "0.4"
+serde_json = "1.0"
+jsonrpc-lite = "0.5"
+void = "1.0"
+duct = "0.10"

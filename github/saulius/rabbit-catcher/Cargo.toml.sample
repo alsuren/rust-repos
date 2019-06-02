@@ -1,0 +1,11 @@
+[package]
+name = "rabbit-catcher"
+version = "0.1.0"
+authors = ["Saulius Grigaliunas <saulius@ninja.lt>"]
+
+[dependencies]
+simd = "0.2.0"
+permutohedron = "0.2.2"
+rust-crypto = "0.2.36"
+lazy_static = "0.2"
+smallvec= "0.4.2"

@@ -1,0 +1,22 @@
+[package]
+name = "shoehorn_server"
+version = "0.1.0"
+edition = "2018"
+authors = ["storyfeet <thebeaky@psmail.net>"]
+
+[dependencies]
+rocket = "0.3.17"
+rocket_codegen = "0.3.17"
+rocket_contrib = "0.3.17"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+rand = "0.5.4"
+sqlite = "0.23.9"
+bcrypt = "0.2.0"
+
+card_deck = {path="../../mlibs/card_deck/"} 
+arc_map = {path="../../mlibs/arc_map/"}
+shoehorn_circle = {path="../../games/shoehorn_circle/"}
+
+

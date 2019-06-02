@@ -1,0 +1,10 @@
+[package]
+name = "tmania"
+version = "0.1.0"
+authors = ["Chris de Graaf <chrisadegraaf@gmail.com>"]
+
+[dependencies]
+lazy_static = "0.2.8"
+ncurses = "5.86.0"
+rust-ini = "0.10.0"
+time = "0.1.38"

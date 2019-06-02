@@ -1,0 +1,20 @@
+[package]
+
+name = "skarn"
+version = "0.0.1"
+authors = ["Michael Sproul <micsproul@gmail.com>"]
+
+[[bin]]
+
+name = "skarn"
+
+[dependencies]
+glob = "*"
+regex = "*"
+regex_macros = "*"
+docopt = "*"
+docopt_macros = "*"
+rustc-serialize = "*"
+sequence_trie = "*"
+log = "*"
+env_logger = "*"

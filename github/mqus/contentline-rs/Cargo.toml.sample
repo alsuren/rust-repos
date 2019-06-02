@@ -1,0 +1,19 @@
+[package]
+name = "contentline"
+description = "A parser/encoder backend for ical/vcf parsers/encoders"
+version = "0.5.0"
+authors = ["Markus Richter <mqus at disroot.org>"]
+edition = "2018"
+
+publish=false
+
+categories=["encoding","parser-implementations"]
+keywords=["vcard","vcf","icalendar","ical","ics"]
+readme="README.md"
+license="MPL-2.0"
+
+[badges]
+
+maintenance = { status = "experimental" }
+travis-ci = { repository = "mqus/contentline-rs", branch = "master" }
+codecov = { repository = "mqus/contentline-rs", branch = "master", service = "github" }

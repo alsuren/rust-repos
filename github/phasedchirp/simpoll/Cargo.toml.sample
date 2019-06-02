@@ -1,0 +1,14 @@
+[package]
+name = "simpoll"
+version = "0.1.0"
+authors = ["Sean Martin <phasedchirp2.718@gmail.com>"]
+
+[dependencies]
+nickel = "*"
+# hyper = "*"
+rand = "0.3"
+rustc-serialize = "0.3.18"
+# mustache = "*"
+rusqlite = "0.8.0"
+chrono = "*"
+# tempfile = "2.1.4"

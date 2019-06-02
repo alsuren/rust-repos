@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+  "hush",
+  "generate-note-frequencies",
+  "keyboard"
+]
+
+[patch.crates-io]
+hush = { path = "./hush" }

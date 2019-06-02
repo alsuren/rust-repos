@@ -1,0 +1,20 @@
+[package]
+name = "simd_prngs"
+version = "0.1.0"
+authors = ["TheIronBorn <>"]
+
+[features]
+default = ["rotate_opts"]
+candidate_rngs = []
+rotate_opts = []
+
+[dependencies.packed_simd]
+# git = "https://github.com/rust-lang-nursery/packed_simd"
+version = "0.3"
+default-features = false
+features = ["into_bits"]
+
+[dependencies.rand]
+version = "0.6"
+default-features = false
+features = ["nightly", "simd_support", "std"]

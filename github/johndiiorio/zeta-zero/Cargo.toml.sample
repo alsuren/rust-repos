@@ -1,0 +1,10 @@
+[package]
+name = "zeta_zero"
+version = "0.1.0"
+authors = ["John DiIorio <johnzdiiorio@gmail.com>"]
+
+[dependencies]
+chess = "0.4.2"
+petgraph = "0.4.12"
+time = "0.1.39"
+yaml-rust = "0.4.0"

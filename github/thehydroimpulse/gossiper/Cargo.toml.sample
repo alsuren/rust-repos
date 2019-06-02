@@ -1,0 +1,14 @@
+[project]
+
+name = "gossip"
+version = "0.1.0"
+authors = [ "Daniel Fagnan <dnfagnan@gmail.com>" ]
+
+[dependencies.uuid]
+git = "https://github.com/rust-lang/uuid"
+
+[dependencies.msgpack]
+git = "https://github.com/thehydroimpulse/rust-msgpack"
+
+[dependencies.simulation]
+path = "simulation"

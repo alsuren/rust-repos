@@ -1,0 +1,20 @@
+[package]
+name = "grpc-rust"
+version = "0.1.0"
+authors = ["Chris Jones <cj@hanscj.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+keywords = ["grpc", "http2"]
+repository = "https://github.com/lambdastackio/grpc-rust"
+homepage = "https://github.com/lambdastackio/grpc-rust"
+documentation = "https://github.com/lambdastackio/grpc-rust"
+description = """
+grpc-rust is a rust-lang specific version of gRPC. Under heavy dev *DO NOT USE* at this time.
+"""
+
+[dependencies]
+errno = "0.1.8"
+semver = "0.4.0"
+log = "0.3.6"
+env_logger = "0.3.4"
+rustc-serialize = "0.3.19"

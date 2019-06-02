@@ -1,0 +1,27 @@
+[package]
+
+name = "patience_sort"
+version = "0.1.0"
+authors = [ "dan@danburkert.com" ]
+
+[[lib]]
+name = "patience_sort"
+
+[[bin]]
+name = "bench"
+
+[[bin]]
+name = "profile"
+
+[dependencies.ringbuf]
+git = "https://github.com/danburkert/rust-ringbuf.git"
+
+[dependencies.quickcheck]
+git = "https://github.com/BurntSushi/quickcheck.git"
+
+[dependencies.quickcheck_macros]
+#git = "https://github.com/BurntSushi/quickcheck.git"
+path = "../quickcheck"
+
+[dependencies.criterion]
+git = "https://github.com/japaric/criterion.rs.git"

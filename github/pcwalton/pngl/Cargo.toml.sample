@@ -1,0 +1,24 @@
+[package]
+name = "pngl"
+version = "0.1.0"
+
+[dependencies]
+byteorder = "^0.4.2"
+flate2 = "^0.2.11"
+libc = "0.2"
+time = "^0.1"
+
+[dependencies.opencl]
+git = "https://github.com/luqmana/rust-opencl.git"
+
+[dependencies.simd]
+git = "https://github.com/huonw/simd.git"
+
+[lib]
+name = "pngl"
+path = "lib.rs"
+
+[[example]]
+name = "demo"
+path = "demo.rs"
+

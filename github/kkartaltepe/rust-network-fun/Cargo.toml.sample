@@ -1,0 +1,29 @@
+[package]
+name = "rust-network"
+version = "0.1.0"
+authors = ["Kurt Kartaltepe <kkartalepe@gmail.com>"]
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+# [dependencies.glfw]
+# git = "https://github.com/bjz/glfw-rs.git"
+# default-features = false
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs"
+
+[dependencies.ode]
+path = "../ode-rust-binding"
+# git = "https://github.com/kkartaltepe/ode-rust-binding"
+
+[dependencies]
+libc = "0.2"
+byteorder = "0.5"
+time = "0.1"
+glutin = "*"

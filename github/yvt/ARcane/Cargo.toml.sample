@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "rust/arcane_gfx",
+    "rust/envmapgen",
+]
+
+[profile.release]
+debug = true
+panic = "abort"
+
+[profile.bench]
+lto = true
+debug = true
+
+[patch.crates-io]
+"rand" = { path = "rust/rand" }

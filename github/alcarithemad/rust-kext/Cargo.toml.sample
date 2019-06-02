@@ -1,0 +1,20 @@
+[package]
+name = "kext"
+version = "0.1.0"
+authors = ["Colin Valliant <alcarithemad@gmail.com>"]
+
+[lib]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+kext_macros = { path = "kext_macros" }
+
+[build-dependencies]
+bindgen = "0.43"
+
+[workspace]

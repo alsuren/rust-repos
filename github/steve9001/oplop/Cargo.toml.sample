@@ -1,0 +1,15 @@
+[package]
+name = "oplop"
+version = "0.1.0"
+authors = ["Steve Masterman <steve@vermonster.com>"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.10.1"
+clipboard = "0.5.0"
+md5 = "0.6.1"
+regex = "1.1.5"
+rpassword = "3.0.1"
+
+[dev-dependencies]
+json = "0.11.13"

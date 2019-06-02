@@ -1,0 +1,11 @@
+[package]
+name = "heatmap"
+version = "0.1.0"
+authors = ["Atte Lautanala <atte.lautanala@gmail.com>"]
+
+[dependencies]
+clap = "2.25.1"
+image = "0.15.0"
+serde = "1.0.0"
+serde_derive = "1.0.0"
+serde_json = "1.0.0"

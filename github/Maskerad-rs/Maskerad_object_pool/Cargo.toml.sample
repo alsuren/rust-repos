@@ -1,0 +1,23 @@
+[package]
+name = "maskerad_object_pool"
+version = "0.3.0" #don't forger html_root_url in lib.rs !
+authors = ["Maskerad developers <maskerad-rs.organization@protonmail.com>"]
+description = "A collection of object pools, for more efficient dynamic memory allocation"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/Maskerad-rs/Maskerad_object_pool"
+readme = "README_CRATE.md"
+keywords = ["memory-allocator", "pool"]
+categories = ["memory-management", "game-engines", "data-structures"]
+
+[badges]
+
+appveyor = { repository = "Malkaviel/maskerad-memory-allocator", branch = "master", service = "github", project-name = "Maskerad_object_pool" }
+travis-ci = { repository = "Maskerad-rs/Maskerad_memory_allocator", branch = "master" }
+codecov = { repository = "Maskerad-rs/Maskerad_object_pool", branch = "master", service = "github" }
+is-it-maintained-issue-resolution = { repository = "Maskerad-rs/Maskerad_object_pool" }
+is-it-maintained-open-issues = { repository = "Maskerad-rs/Maskerad_object_pool" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+serde = { version = "~1.0", optional = true, features = ["derive"] }
+log = "~0.4"

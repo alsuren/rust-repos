@@ -1,0 +1,11 @@
+[package]
+name = "multi_queue"
+description = "A data structures with multiple possible sort orderings and inbuilt categorizations of data"
+version = "0.1.0"
+authors = ["Brady McDonough <brady.mcd.codes@gmail.com>"]
+categories = ["data-structures"]
+keywords = ["data structure", "sorting", "ordering", "queues", "multiple queues",
+"multiple orders", "index"]
+
+[dependencies]
+enum-map = "^0.4.0"

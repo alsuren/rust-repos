@@ -1,0 +1,9 @@
+[package]
+name = "gifts"
+version = "0.1.0"
+authors = ["Guewen Baconnier <guewen@gmail.com>"]
+
+[dependencies]
+rand = "0.3"
+lettre = "0.6.1"
+yaml-rust = "0.3.4"

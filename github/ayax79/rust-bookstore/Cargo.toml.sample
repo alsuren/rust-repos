@@ -1,0 +1,30 @@
+[package]
+name = "bookstore"
+version = "0.3.0"
+authors = ["Jack Wright <ayax79@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "bookstore"
+path = "src/main.rs"
+
+[dependencies]
+tokio-core = "0.1"
+hyper = "0.12"
+futures = "0.1"
+uuid = {version = "0.6", features = ["v4"]}
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+log = "0.4"
+env_logger = "0.4"
+config = "0.8"
+pnet = "0.21.0"
+ipnetwork = "0.12"
+redis = "0.9"
+base64 = "0.9"
+r2d2_redis = "0.8"
+
+[dev-dependencies]
+# once redis is released remove
+testcontainers = {git = "https://github.com/testcontainers/testcontainers-rs.git"}

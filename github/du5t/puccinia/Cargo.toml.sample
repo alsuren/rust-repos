@@ -1,0 +1,9 @@
+[package]
+name = "puccinia"
+version = "0.1.0"
+authors = ["du5t <du5t@hitono.info>"]
+
+[dependencies]
+bufstream = "0.1"
+chrono = "0.2"
+unix_socket = "0.4.5"

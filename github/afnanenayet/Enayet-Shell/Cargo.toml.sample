@@ -1,0 +1,11 @@
+[package]
+name = "ensh"
+version = "0.4.2"
+authors = ["Afnan Enayet <me@afnan.io>"]
+
+[dependencies]
+
+[profile.release]
+lto = true
+panic = 'abort'
+

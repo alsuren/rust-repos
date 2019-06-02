@@ -1,0 +1,135 @@
+[package]
+name = "rust-samples"
+version = "0.0.1"
+authors = ["Alexander Samoilov <alexander.samoilov@gmail.com>"]
+
+build = "build.rs"
+
+[build-dependencies]
+gcc = "*"
+
+[dependencies]
+libc = "*"
+rand = "*"
+docopt = "*"
+#docopt_macros = "*"
+structopt = "*"
+structopt-derive = "*"
+rustc-serialize = "*"
+endianness = "*"
+argparse = "*"
+num = "*"
+numeric = "*"
+num-traits = "*"
+ndarray = "*"
+dft = "*"
+byteorder = "*"
+#rustfft = "*"
+arrayfire = "*"
+special-fun = "*"
+#simd = "*"
+roots = "*"
+#indoc = "*"
+unindent = "*"
+integration =  { git = "https://github.com/photino/integration.git" }
+
+serde = "^1.0"
+serde_json = "^1.0"
+serde_yaml = "^0.7"
+serde_derive = "^1.0"
+ws = "*"
+log = "*"
+yaml-rust = "*"
+from_variants = "*"
+
+[[bin]]
+name = "array_vec_demo"
+path = "src/array_vec_demo.rs"
+
+[[bin]]
+name = "kernel_iterator"
+path = "src/kernel_iterator.rs"
+
+[[bin]]
+name = "dllist_demo"
+path = "src/dllist_demo.rs"
+
+[[bin]]
+name = "scl"
+path = "src/scalar_conservation_law.rs"
+
+[[bin]]
+name = "scl_tr"
+path = "src/scalar_conservation_law_tensor.rs"
+
+[[bin]]
+name = "binary_unate"
+path = "src/binary_unate.rs"
+
+[[bin]]
+name = "convolve"
+path = "src/fourier_shift_convolution.rs"
+
+[[bin]]
+name = "fft_kernels"
+path = "src/fft_kernels.rs"
+
+[[bin]]
+name = "generics"
+path = "src/generics.rs"
+
+[[bin]]
+name = "af_hi"
+path = "src/af_sample.rs"
+
+[[bin]]
+name = "af_fft"
+path = "src/af_fft.rs"
+
+[[bin]]
+name = "union"
+path = "src/union.rs"
+
+[[bin]]
+name = "jinc"
+path = "src/jinc.rs"
+
+[[bin]]
+name = "adt_enum"
+path = "src/adt_enum_structopt.rs"
+
+[[bin]]
+name = "tiny"
+path = "src/tiny.rs"
+
+#[[bin]]
+#name = "naval_fate"
+#path = "src/docopt_macro_use_case.rs"
+
+[[bin]]
+name = "ndarray_demo"
+path = "src/ndarray_demo.rs"
+
+[[bin]]
+name = "nbody"
+path = "src/nbody.rs"
+
+#[[bin]]
+#name = "nbody_simd"
+#path = "src/nbody_simd.rs"
+
+[[bin]]
+name = "add_sum_sq"
+path = "src/add_sum_sq.rs"
+
+[[bin]]
+name = "poll_thread"
+path = "src/poll_thread.rs"
+
+[[bin]]
+name = "serde_yaml_json"
+path = "src/serde_yaml_json.rs"
+
+[features]
+use-nightly = []
+

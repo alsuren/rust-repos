@@ -1,0 +1,30 @@
+[package]
+name = "sexuality-def-bot"
+version = "0.1.0"
+authors = ["Skeletonxf <skeletonxf@gmail.com>"]
+
+[dependencies]
+# reddit api
+# need unreleased patch that makes newlines work on reddit
+# https://github.com/Aurora0001/rawr/commit/34bc914cc6a9fe001ebab7b90a9c396e8a36b2ba
+# and also need Clone for Submission types so don't lose the object
+# when want to look over its replies
+# implemented by https://github.com/JoshMcguigan/rawr/commit/dcc7402ccbd60444a2ee2a18c6de2c7835375319
+# also need Clone for Comments at
+# https://github.com/Skeletonxf/rawr/commit/b8075ec9a141e3e807949b0f4f2d1bd3468e8af3
+rawr = { git = 'https://github.com/JoshMcguigan/rawr' }
+# sqlite db
+rusqlite = "0.13.0"
+# json parsing
+json = "0.11.13"
+# lua scripting
+rlua = "0.12.0"
+# converting to std::error::Error types for rlua
+failure = "0.1.1"
+
+# Non essential
+
+# utilities for the lua script regex parsing
+regex = "0.2"
+# colored output in terminal
+ansi_term = "0.11"

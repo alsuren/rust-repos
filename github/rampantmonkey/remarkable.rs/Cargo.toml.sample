@@ -1,0 +1,61 @@
+[package]
+name = "remarkable"
+version = "0.0.1"
+authors = ["Casey Robinson <casey@rampantmonkey.com>"]
+repository = "https://github.com/rampantmonkey/remarkable.rs"
+license = "MIT"
+description = "A collection of programs for the reMarkable tablet"
+readme = "README.md"
+exclude = [ "reference-material/*" ]
+
+[dependencies]
+log = "0.4.1"
+ioctl-gen = "0.1.0"
+libc = "0.2.37"
+mmap = "0.1.1"
+rusttype = "0.4.1"
+evdev = "0.10.1"
+epoll = "3.1.1"
+image = "0.18.0"
+rb = "0.3.1"
+line_drawing = "0.7.0"
+aabb-quadtree = "0.1.0"
+
+[profile.release]
+debug = true
+
+[[example]]
+name = "spy"
+path = "examples/spy.rs"
+crate-type = ["dylib"]
+
+[[example]]
+name = "demo"
+path = "examples/demo.rs"
+crate-type = ["bin"]
+
+[[example]]
+name = "mdns"
+path = "examples/mdns.rs"
+crate-type = ["bin"]
+
+[[example]]
+name = "exit-button"
+path = "examples/exit-button.rs"
+crate-type = ["bin"]
+
+[[example]]
+name = "interceptor"
+path = "examples/interceptor.rs"
+crate-type = ["dylib"]
+
+[dev-dependencies]
+env_logger = "0.5.6"
+# For spy
+redhook = "0.1.1"
+libc = "0.2.37"
+lazy_static = "1.0.0"
+# For demo
+chrono = "0.4.0"
+# For mdns
+libmdns = "0.2.2"

@@ -1,0 +1,10 @@
+[package]
+name = "aoc_2018"
+version = "0.1.0"
+authors = ["Stephen Swensen <stephen@imperfectproduce.com>"]
+edition = "2018"
+
+[dependencies]
+maplit = "1.0.1"
+regex = "1"
+time = "*"

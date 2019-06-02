@@ -1,0 +1,25 @@
+[package]
+name = "replicatedu_student"
+version = "0.1.0"
+authors = ["alex <hortinstein@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+class_crypto = { git = "https://github.com/replicatedu/class_crypto.git" }
+git_wrapper = { git = "https://github.com/replicatedu/git_wrapper.git" }
+issue_database = { git = "https://github.com/replicatedu/issue_database.git" }
+serde_derive = "1.0"
+serde = "1.0"
+toml = "0.5.0"
+gag = "0.1.10"
+term-painter = "*"
+
+[dev-dependencies]
+
+rand = "*"
+
+[profile.release]
+opt-level = 'z'     # Optimize for size.
+lto = true          # Enable Link Time Optimization
+codegen-units = 1   # Reduce number of codegen units to increase optimizations.
+panic = 'abort'     # Abort on panic

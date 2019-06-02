@@ -1,0 +1,27 @@
+[package]
+name = "digilent-waveforms"
+version = "0.0.17-alpha.0"
+authors = ["Ilya Epifanov <elijah.epifanov@gmail.com>"]
+edition = "2018"
+description = "Bindings for Digilent Waveforms API"
+license = "MIT OR Apache-2.0"
+links = "dwf"
+
+[dependencies]
+time = "0.1.42"
+itertools = "0.8.0"
+failure = "0.1.5"
+failure_derive = "0.1.5"
+
+[features]
+link-with-stub = []
+
+[build-dependencies]
+bindgen = "0.47.1"
+regex = "1.1.0"
+
+[package.metadata.release]
+sign-commit = true
+upload-doc = true
+pre-release-replacements = [ {file="CHANGELOG.md", search="Unreleased", replace="{{version}}"}, {file="CHANGELOG.md", search="ReleaseDate", replace="{{date}}"} ]
+pro-release-commit-message = "[skip ci] (cargo-release) start next development iteration {{next_version}}"

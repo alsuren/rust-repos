@@ -1,0 +1,28 @@
+[package]
+edition = "2018" 
+name = "waterbear"
+description = "Assembler/Disassembler for the Dreamcast VMU"
+version = "0.18.0-wip"
+authors = ["Walter Tetzner <walter@waltertetzner.net>"]
+license="Apache-2.0"
+
+[dependencies]
+lazy_static = "1.0"
+unicode-segmentation = "1.2.0"
+unicode_categories = "0.1"
+clap = "2.32"
+regex = "1.0"
+termcolor = "1"
+atty = "0.2"
+uuid = { version = "0.7", features = ["v4"] }
+
+# custom derives
+waterbear-instruction-derive = { version = "0.1", path = "waterbear-instruction-derive" }
+
+[lib]
+name = "waterbear"
+path = "src/lib.rs"
+
+[[bin]]
+name = "waterbear"
+path = "src/main.rs"

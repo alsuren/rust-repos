@@ -1,0 +1,10 @@
+[package]
+name = "nuage"
+version = "0.1.0"
+authors = ["Cobrand", "Nefas", "Yamakaky"]
+
+[dependencies]
+diesel = { version = "0.8.0", features = ["sqlite"] }
+diesel_codegen = { version = "0.8.0", features = ["sqlite"] }
+dotenv = "0.8.0"
+iron = "*"

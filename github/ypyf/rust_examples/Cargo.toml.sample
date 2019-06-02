@@ -1,0 +1,27 @@
+[package]
+name = "rust_examples"
+version = "0.1.0"
+authors = ["ypyf <t34@qq.com>"]
+
+[dependencies]
+num = "^0.1.32"
+
+[[bin]]
+name = "circle"
+path = "src/circle.rs"
+
+[[bin]]
+name = "count_lines"
+path = "src/count_lines.rs"
+
+[[bin]]
+name = "gcd"
+path = "src/gcd.rs"
+
+[[bin]]
+name = "lifetimes"
+path = "src/lifetimes.rs"
+
+[[bin]]
+name = "sum"
+path = "src/sum.rs"

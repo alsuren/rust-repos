@@ -1,0 +1,11 @@
+[package]
+name = "wtool"
+version = "0.1.0"
+authors = ["Vaiz <vaizerd@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+encoding = "0.2.33"
+dataplotlib = "0.1.3"
+netstat = "0.7.0"

@@ -1,0 +1,17 @@
+[package]
+
+name = "johan"
+version = "0.1.0"
+description = "pipe json through handlebars tempaltes"
+repository = "https://github.com/softprops/johan"
+authors = ["softprops <d.tangren@gmail.com>"]
+keywords = ["handlebars", "json", "templating", "tools"]
+
+[dependencies]
+atty = "0.1.0"
+clap = "2.4"
+serde_json = "0.7"
+
+[dependencies.handlebars]
+version = "0.16"
+features = ["serde_type"]

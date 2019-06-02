@@ -1,0 +1,18 @@
+[package]
+name = "shard"
+version = "0.1.2"
+authors = ["Michael Lazear <lazear@scripps.edu>"]
+description = "Shard Database"
+repository = "https://github.com/lazear/shard.git"
+homepage = "https://github.com/lazear/shard"
+license = "MIT"
+readme = "README.md"
+
+[profile.release]
+lto = true
+
+[dependencies]
+
+[badges]
+
+travis-ci = { repository = "lazear/shard" }

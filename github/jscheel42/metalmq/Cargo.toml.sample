@@ -1,0 +1,9 @@
+[package]
+name = "metalmq"
+version = "0.1.0"
+authors = ["Joshua Scheel <jscheel42@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rusqlite = "0.16.0"
+time = "0.1.41"

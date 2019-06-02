@@ -1,0 +1,25 @@
+[package]
+name = "text_index"
+version = "0.1.1"
+authors = ["Otto <otto@ot-to.nl>"]
+edition = "2018"
+
+description = "Scan a text file, build a sorted index, persist it, query it"
+keywords = ["csv", "index", "database", "grep"]
+categories = ["command-line-utilities", "database-implementations"]
+
+repository = "https://github.com/orottier/text-index"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+env_logger = "0.6.0"
+log = "0.4.6"
+csv = "1.0.5"
+bincode = "1.1.2"
+flate2 = "1.0.6"
+serde = { version = "1.0", features = ["derive"] }
+
+[dependencies.clap]
+version = "2.32"
+default-features = false

@@ -1,0 +1,8 @@
+[package]
+name = "chip8"
+version = "0.0.2"
+authors = ["Jean-Louis Mbaka <jeanlouis.mbaka@gmail.com>"]
+
+[dependencies]
+rand = "*"
+glium = "*"

@@ -1,0 +1,16 @@
+[package]
+name = "corrosion"
+version = "0.1.0"
+authors = ["Lucien Greathouse <me@lpghatguy.com>"]
+
+[lib]
+name = "corrosion"
+path = "src/lib.rs"
+
+[[bin]]
+doc = false
+name = "corrosion_cli"
+path = "src/bin.rs"
+
+[dependencies]
+lazy_static = "0.2"

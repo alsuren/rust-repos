@@ -1,0 +1,16 @@
+[package]
+name = "nlopt"
+version = "0.5.1"
+authors = ["Lucas L. Treffenstädt <lucas@treffenstaedt.de>", "Jess Fulwood <jesskfulwood@gmail.com>"]
+description = "Wrapper for the nlopt library"
+license = "MIT"
+repository = "http://github.com/jesskfullwood/rust-nlopt"
+readme = "README.md"
+keywords = ["nonlinear", "optimization"]
+edition = "2018"
+
+[dev-dependencies]
+num-iter = "0.1.35"
+
+[build-dependencies]
+cmake = "0.1.40"

@@ -1,0 +1,13 @@
+[package]
+name = "up-to-payday"
+version = "0.1.0"
+authors = ["kakaka19 <kkatum@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4.6"
+colored = "1.7.0"
+
+[[bin]]
+name = "payday"
+path = "src/main.rs"

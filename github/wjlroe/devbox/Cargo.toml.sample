@@ -1,0 +1,10 @@
+[package]
+name = "devbox"
+version = "0.0.2"
+authors = ["William Roe <git@wjlr.org.uk>"]
+
+[dependencies]
+
+[[bin]]
+name = "devbox"
+doc = false

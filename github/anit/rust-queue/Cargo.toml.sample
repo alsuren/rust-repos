@@ -1,0 +1,10 @@
+[package]
+name = "rust-queue"
+version = "0.1.0"
+authors = ["Anit Rai <anit.rai@cyphertree.com>"]
+edition = "2018"
+
+[dependencies]
+actix = "0.7"
+actix-web = "1.0.0-rc"
+listenfd = "0.3"

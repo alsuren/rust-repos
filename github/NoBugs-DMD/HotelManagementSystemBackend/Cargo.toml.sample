@@ -1,0 +1,32 @@
+[package]
+name = "hms_api"
+version = "0.1.0"
+authors = ["Mike Lubinets <lubinetsm@yandex.ru>"]
+
+[dependencies]
+postgres = { version = "0.12.0", features = ["with-rustc-serialize", "with-chrono"] }
+chrono = { version = "*", features = ["rustc-serialize"] } 
+r2d2 = "0.7.1"
+r2d2_postgres = "0.11.0"
+hyper = "0.9"
+unicase = "*"
+iron = "0.4"
+router = "*"
+params = "*"
+cookie = "0.2.5"
+oven = "0.4.0"
+rustc-serialize = "^0.3"
+lazy_static = "*"
+dotenv = "*"
+log = "*"
+env_logger = "*"
+
+[dev-dependencies]
+rand = "*"
+
+[profile.dev]
+codegen-units = 4 
+
+[profile.release]
+codegen-units = 4
+lto = true

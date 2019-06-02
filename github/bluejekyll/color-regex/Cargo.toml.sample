@@ -1,0 +1,14 @@
+[package]
+name = "color-regex"
+version = "0.1.0"
+authors = ["Benjamin Fry <benjamin.fry@salesforce.com>"]
+description = "Uses https://docs.rs/regex to match and colorize log lines"
+
+[[bin]]
+name = "crx"
+path = "src/bin.rs"
+
+[dependencies]
+clap = "*"
+colored = "*"
+regex = "*"

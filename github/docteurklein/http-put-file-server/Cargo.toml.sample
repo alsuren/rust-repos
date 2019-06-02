@@ -1,0 +1,8 @@
+[package]
+name = "http_put_file_server"
+version = "0.1.0"
+authors = ["Klein Florian <florian.klein@free.fr>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"

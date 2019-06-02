@@ -1,0 +1,25 @@
+[package]
+name = "runrs"
+version = "0.1.0"
+description = "Runner for Rust scripts"
+homepage = "http://github.com/Xion/runrs"
+authors = ["Karol Kuczmarski <karol.kuczmarski@gmail.com>"]
+publish = false
+
+[dependencies]
+clap = { version = "2.16.2", features = ["suggestions"] }
+conv = "0.3"
+custom_derive = "*"
+enum_derive = "*"
+isatty = "0.1.1"
+lazy_static = "*"
+regex = "0.1"
+rust-crypto = "0.2.36"
+slog = { version = "*", features = ["max_level_trace", "release_max_level_trace"] }
+slog-scope = "*"
+slog-term = "*"
+toml = "0.2.1"
+# TODO: pin all deps to specific versions
+
+[profile.release]
+lto = true

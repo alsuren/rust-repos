@@ -1,0 +1,8 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Caleb Boylan <calebboylan@gmail.com>"]
+
+[dependencies]
+image = "0.13.0"
+crossbeam = "0.4.1"

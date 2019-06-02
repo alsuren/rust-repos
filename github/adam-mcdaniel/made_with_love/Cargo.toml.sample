@@ -1,0 +1,16 @@
+[package]
+name = "made_with_love"
+version = "0.1.0"
+authors = ["adam-mcdaniel <adam.mcdaniel17@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+indoc = "0.3.1"
+rand = "0.6"
+rodio = "0.8.1"
+serde = {version="1.0.89", features = ["derive"]}
+
+[dependencies.pancurses]
+version = "0.16.1"
+
+# features = ["disable_resize"]

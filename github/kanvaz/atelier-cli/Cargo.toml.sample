@@ -1,0 +1,11 @@
+[package]
+name = "atelier-cli"
+version = "0.0.1"
+authors = ["Christoph Burgdorf <christoph.burgdorf@bvsn.org>"]
+
+[dependencies]
+clap = "*"
+
+[dependencies.atelier]
+# git = "file:/Users/cburgdorf/Documents/hacking/atelier"
+git = "https://github.com/kanvaz/atelier.git"

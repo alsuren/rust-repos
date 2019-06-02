@@ -1,0 +1,18 @@
+[package]
+name = "aniplot"
+version = "0.1.0"
+authors = ["Mattis Marjak <mattis.marjak@defendec.com>"]
+build = "build.rs"
+
+[dependencies]
+glutin = "0.14"
+gfx = "0.17"
+gfx_window_glutin = "0.22"
+imgui              = { path = "imgui-rs" }
+imgui-sys          = { path = "imgui-rs/imgui-sys", features = ["gfx"] }
+imgui-gfx-renderer = { path = "imgui-rs/imgui-gfx-renderer" }
+
+
+[build-dependencies]
+gcc = "0.3.54"
+bindgen = "0.37"

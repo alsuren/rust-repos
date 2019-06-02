@@ -1,0 +1,19 @@
+[package]
+name = "aoc_2018"
+version = "0.1.0"
+authors = ["Mike Stipicevic <stip@chromium.org>"]
+edition = "2018"
+
+[dependencies]
+aho-corasick = "0.6.9"
+itertools = "0.8.0"
+regex = "1.1.0"
+lazy_static = "1.2.0"
+unicode-segmentation = "1.2.1"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "my_benchmark"
+harness = false

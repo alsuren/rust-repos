@@ -1,0 +1,43 @@
+[package]
+name = "advent_of_code"
+version = "0.1.0"
+authors = ["Shaurya Sharma <shaur141@gmail.com>"]
+
+
+[[bin]]
+name = "day1"
+path = "src/day1/day1.rs"
+
+[[bin]]
+name = "day2"
+path = "src/day2/day2.rs"
+
+[[bin]]
+name = "day3"
+path = "src/day3/day3.rs"
+
+[[bin]]
+name = "day4"
+path = "src/day4/day4.rs"
+
+[[bin]]
+name = "day7"
+path = "src/day7/day7.rs"
+
+[[bin]]
+name = "day10"
+path = "src/day10/day10.rs"
+
+[[bin]]
+name = "day11"
+path = "src/day11/day11.rs"
+
+[[bin]]
+name = "day16"
+path = "src/day16/day16.rs"
+
+
+[dependencies]
+chrono = "0.4.6"
+petgraph = "0.4.13"
+regex = "1"

@@ -1,0 +1,41 @@
+[package]
+name = "feo-boy"
+version = "0.1.0"
+authors = [
+    "Andy Russell <arussell123@gmail.com>",
+    "Andrew Fishberg <fishberg.github@gmail.com>",
+    "Max Comstock <maxibillion6@gmail.com>",
+]
+
+[[bin]]
+name = "feo-boy"
+doc = false
+path = "src/main.rs"
+
+[dependencies]
+bitflags = "1"
+byteorder = "1"
+clap = "2"
+derive_more = "0.7"
+failure = "0.1"
+image = "0.17"
+itertools = "0.7"
+lazy_static = "0.2"
+log = "0.3"
+piston_window = "0.73"
+pretty_env_logger = "0.1"
+regex = "0.2"
+rustyline = "1"
+sdl2 = "0.31"
+smallvec = "0.5"
+
+[build-dependencies]
+csv = "1.0.0-beta.5"
+failure = "0.1"
+quote = "0.3"
+serde = "1"
+serde_derive = "1"
+
+[dev-dependencies]
+quickcheck = "0.4"
+rand = "0.3"

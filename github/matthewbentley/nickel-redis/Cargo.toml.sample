@@ -1,0 +1,19 @@
+[package]
+
+name = "nickel_redis"
+version = "0.1.1"
+authors = [
+    "bguiz",
+    "Matthew Bentley <matthew@bentley.link>"
+]
+
+[dependencies]
+r2d2 = "*"
+plugin = "*"
+typemap = "*"
+openssl = "*"
+nickel = "*"
+redis = "*"
+
+[dependencies.r2d2_redis]
+git = "https://github.com/nevdelap/r2d2-redis.git"

@@ -1,0 +1,11 @@
+[package]
+name = "esytheism"
+version = "0.1.0"
+authors = ["arlo <arlopurcell@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+quicksilver = "*"
+rand = "0.6"
+rayon = "1.0.3"
+num-traits = "0.2"

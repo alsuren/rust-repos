@@ -1,0 +1,9 @@
+[package]
+authors = ["SamP20 <samp20@users.noreply.github.com>"]
+edition = "2018"
+name = "cortexm-scheduling"
+version = "0.1.0"
+
+[dependencies]
+cortex-m = { version = ">=0.5.8, <0.7", features = ["inline-asm"] }
+cortex-m-rt = ">=0.6.8, <0.7"

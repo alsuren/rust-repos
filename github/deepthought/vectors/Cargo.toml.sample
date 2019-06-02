@@ -1,0 +1,34 @@
+[package]
+authors = ["Vincent Esche <regexident@gmail.com>"]
+categories = ["science"]
+description = "Sparse & dense vectors for use in high dimensional vector spaces."
+documentation = "https://docs.rs/svm"
+keywords = [
+    "vectors",
+    "dense",
+    "sparse",
+    "vector-space",
+    "linear-algebra",
+]
+license = "MPL-2.0"
+name = "vectors"
+readme = "README.md"
+repository = "https://github.com/deepthought/vectors"
+version = "0.3.0"
+
+[dependencies]
+arrayvec = "~0.4"
+num-traits = "~0.2"
+ordered_iter = "~0.1"
+
+[dependencies.missing_mpl]
+optional = true
+version = "~0.1"
+
+[dev-dependencies]
+expectest = "~0.9"
+
+[features]
+default = ["std"]
+nightly = ["missing_mpl"]
+std = []

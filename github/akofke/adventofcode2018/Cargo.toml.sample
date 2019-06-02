@@ -1,0 +1,18 @@
+[package]
+name = "adventofcode2018"
+version = "0.1.0"
+authors = ["Alex Kofke <akofke@gmail.com>"]
+edition = "2018"
+
+[lib]
+
+[dependencies]
+rust-crypto = "*"
+aoc-runner = "*"
+aoc-runner-derive = "*"
+itertools = "*"
+chrono = "*"
+regex = "*"
+ndarray = "*"
+petgraph = "*"
+bmp = "*"

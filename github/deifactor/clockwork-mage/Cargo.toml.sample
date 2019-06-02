@@ -1,0 +1,11 @@
+[package]
+name = "clockwork-mage"
+version = "0.1.0"
+authors = ["Ash <relativistic.policeman@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32"
+slog = "2.4"
+sloggers = "0.3"
+structopt = "0.2"

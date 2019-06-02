@@ -1,0 +1,16 @@
+[package]
+name = "grom"
+version = "0.0.1"
+authors = ["Michael Shaw <michaeljshaw@gmail.com>"]
+
+[dependencies]
+glium = { version = "0.15.0", features = ["glutin"] }
+glutin = "0.6.1"
+image = "0.10.1"
+cgmath = "0.11.0"
+ears = "0.3.5"
+multimap = "0.3.0"
+rand = "0.3.14"
+
+[dependencies.gm2]
+path = "../gm2"

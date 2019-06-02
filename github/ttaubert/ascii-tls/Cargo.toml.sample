@@ -1,0 +1,19 @@
+[package]
+name = "ascii-tls"
+version = "0.1.0"
+authors = ["Tim Taubert <tim@timtaubert.de>"]
+description = "A reverse pretty-printer for TLS records"
+license = "MIT"
+repository = "https://github.com/ttaubert/ascii-tls"
+
+include = [
+  "LICENSE",
+  ".gitignore",
+  "Cargo.toml",
+  "src/*.rs",
+  "tests/*.rs"
+]
+
+[dependencies]
+byteorder = "1"
+nom = "^2.1"

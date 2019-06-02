@@ -1,0 +1,8 @@
+[package]
+name    = "tametree"
+version = "0.1.0"
+license = "Apache"
+authors = ["Andrew Hunter <andrew@logicalshift.co.uk>"]
+
+[dependencies]
+rustc-serialize = "0.3"

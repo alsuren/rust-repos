@@ -1,0 +1,30 @@
+[package]
+name = "ruga"
+version = "0.3.0"
+authors = ["thiolliere <guillaume.thiolliere@opmbx.org>"]
+
+[[bin]]
+name = "ruga"
+
+[dependencies]
+clap = "*"
+glium = "*"
+hlua = "*"
+rustyline = "*"
+time = "*"
+rusttype = "*"
+vecmath = "*"
+itertools = "*"
+unicode-normalization = "*"
+arrayvec = "*"
+specs = "*"
+fnv = "*"
+regex = "*"
+num_cpus = "*"
+lazy_static = "*"
+ruga_utils = { path = "src/utils" }
+ruga_physics = { path = "src/physics" }
+ruga_graphics = { path = "src/graphics" }
+
+[workspace]
+members = ["src/utils", "src/physics", "src/graphics"]

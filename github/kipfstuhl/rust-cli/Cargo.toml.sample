@@ -1,0 +1,16 @@
+[package]
+name = "versuch"
+version = "0.1.0"
+authors = ["Jonas Kipfstuhl <jonas.kipfstuhl@t-online.de>"]
+license = "MIT"
+#license-file = "LICENSE"
+readme = "README.md"
+repository = "https://github.com/kipfstuhl/rust-cli"
+edition="2018"
+
+[dependencies]
+rand="0.5"
+structopt="0.2"
+clap="2"
+indicatif="0.10"
+console="0.7"

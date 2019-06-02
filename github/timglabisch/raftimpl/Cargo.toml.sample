@@ -1,0 +1,21 @@
+[package]
+name = "raftimpl"
+version = "0.1.0"
+authors = ["timglabisch <tim@ainfach.de>"]
+
+[dependencies]
+raft = "0.4.*"
+tokio = "0.1.*"
+futures = "0.1.*"
+bytes = "*"
+byteorder = "1"
+protobuf = "2.0.4"
+rand = "*"
+hyper = "0.12.*"
+tera = "0.11"
+lazy_static = "1.2"
+serde_derive = "*"
+serde = "*"
+
+[build-dependencies]
+protoc-rust = "2.0"

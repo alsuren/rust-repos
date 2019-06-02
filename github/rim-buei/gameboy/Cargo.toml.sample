@@ -1,0 +1,16 @@
+[package]
+name = "gameboy"
+version = "0.2.0"
+authors = ["Rim <rim.buei@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+stdweb = "*"
+
+[[bin]]
+name = "cli"
+path = "src/cli.rs"
+
+[[bin]]
+name = "wasm"
+path = "src/wasm.rs"

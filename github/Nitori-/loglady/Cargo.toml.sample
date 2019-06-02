@@ -1,0 +1,12 @@
+[package]
+name = "loglady"
+version = "0.0.0"
+authors = ["Jennifer Wilcox <jennifer@nitori.org>"]
+edition = "2018"
+license = "GPL-3.0"
+description = "The Log Lady"
+
+[dependencies]
+tui = "^0.3.0"
+termion = "^1.5.1"
+failure = "^0.1.3"

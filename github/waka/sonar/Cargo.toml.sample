@@ -1,0 +1,8 @@
+[package]
+name = "sonar"
+version = "0.1.0"
+authors = ["yo_waka <y.wakahara@gmail.com>"]
+
+[dependencies]
+env_logger = "*"
+getopts = "*"

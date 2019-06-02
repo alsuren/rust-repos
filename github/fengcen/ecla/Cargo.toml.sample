@@ -1,0 +1,18 @@
+[package]
+name = "ecla"
+version = "1.0.0"
+description = "Easily build command line apps"
+keywords = ["argument", "command", "arg", "parse", "easy"]
+authors = ["fengcen <fengcen.love@gmail.com>"]
+repository = "https://github.com/fengcen/ecla.git"
+homepage = "https://github.com/fengcen/ecla"
+documentation = "https://docs.rs/ecla"
+readme = "README.md"
+license = "MIT"
+
+[lib]
+name = "ecla"
+path = "src/lib.rs"
+
+[dependencies]
+elog = "^0.1"

@@ -1,0 +1,13 @@
+[package]
+name = "machinelearning"
+version = "0.0.1"
+authors = ["jakubkonka <jakub.konka@strath.ac.uk>"]
+
+[lib]
+name = "machinelearning"
+path = "src/lib.rs"
+
+[[bin]]
+name = "linear_regression"
+path = "examples/linear_regression.rs"
+

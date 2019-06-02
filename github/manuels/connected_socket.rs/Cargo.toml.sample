@@ -1,0 +1,14 @@
+[package]
+
+name = "connected_socket"
+version = "0.0.6"
+authors = ["Manuel Schölling <manuel.schoelling@gmx.de>"]
+
+license = "GPL-2.0"
+description = "Connect() for UDP sockets"
+repository = "https://github.com/manuels/connected_socket.rs"
+keywords = ["udp","socket","connect"]
+
+[dependencies]
+libc = "^0.2"
+byteorder = "0.3.9"

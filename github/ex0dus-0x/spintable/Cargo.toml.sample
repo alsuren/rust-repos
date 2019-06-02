@@ -1,0 +1,12 @@
+[package]
+name = "spintable"
+version = "0.3.0"
+authors = ["ex0dus-0x <ex0dus@codemuch.tech>"]
+
+[dependencies]
+clap = "2.26.0"
+
+mpv = "0.2.3"
+reqwest = "0.8.2"
+
+serde = { version = "1.0", features = ["derive"] }

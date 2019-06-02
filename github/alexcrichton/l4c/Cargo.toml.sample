@@ -1,0 +1,19 @@
+[package]
+name = "l4c"
+authors = ["Alex Crichton <alex@alexcrichton.com>"]
+version = "0.0.0"
+
+[workspace]
+members = ['driver']
+
+[dependencies]
+getopts = "0.2.11"
+log = { version = "0.4", features = ['release_max_level_info'] }
+time = "0.1.30"
+vec_map = "0.8.0"
+bit-vec = "0.5"
+fnv = "1.0.0"
+env_logger = { version = "0.5", default-features = false }
+
+[profile.release]
+debug = 1

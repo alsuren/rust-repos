@@ -1,0 +1,17 @@
+[package]
+name = "edf-reader"
+description= "A library for reading metadata and data from an EDF (European Data Format) file."
+version = "0.6.0"
+authors = ["Maxime Leprince <maxime.leprince@gmail.com>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/mleprince/rust-edf"
+
+[dependencies]
+chrono = "0.4.6"
+serde = "1.0.89"
+serde_derive = "1.0.89"
+futures = "0.1.26"
+
+[dev-dependencies]
+assert_approx_eq = "1.1.0"

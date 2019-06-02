@@ -1,0 +1,33 @@
+[package]
+name = "piston-tutorial"
+version = "0.1.0"
+authors = ["Yeonho Jang <siabard@gmail.com>"]
+
+[[bin]]
+name="part1"
+path="src/bin/part1.rs"
+
+[[bin]]
+name="part2"
+path="src/bin/part2.rs"
+
+[[bin]]
+name="part3"
+path="src/bin/part3.rs"
+
+[[bin]]
+name="part4"
+path="src/bin/part4.rs"
+
+[[bin]]
+name="part5"
+path="src/bin/part5.rs"
+
+[dependencies]
+piston_window="0.77.0"
+piston2d-gfx_graphics = "0.50.0"
+find_folder = "0.3.0"
+gfx = "0.17.1"
+gfx_device_gl = "0.15.0"
+nalgebra="0.14.1"
+ncollide="0.14.1"

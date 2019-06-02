@@ -1,0 +1,21 @@
+[package]
+authors = ["Martin Tomasi <martin.tomasi@gmail.com>"]
+name = "downloader"
+version = "0.1.0"
+
+[dependencies]
+clap = "*"
+crossbeam = "*"
+hyper = {version = "*", default-features = false}
+number_prefix = "*"
+quick-error = "*"
+rustbox = "*"
+scoped_threadpool = "*"
+thread-id = "*"
+clippy = {version = "*", optional = true}
+
+[features]
+default = []
+
+[profile.release]
+debug = true

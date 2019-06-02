@@ -1,0 +1,11 @@
+[package]
+name = "nsync"
+version = "0.1.0"
+authors = ["Joel McCracken <mccracken.joel@gmail.com>"]
+
+
+[dependencies]
+
+walkdir = "0.1"
+time = "0.1"
+crc = "^1.0.0"

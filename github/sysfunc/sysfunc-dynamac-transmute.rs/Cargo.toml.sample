@@ -1,0 +1,30 @@
+[package]
+name = "sysfunc-dynamac-transmute"
+version = "0.1.1"
+authors = ["A.W. Stanley <aws@sysfunc.net>"]
+edition = "2018"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/sysfunc/sysfunc-dynamac-transmute.rs/"
+homepage = "https://github.com/sysfunc/sysfunc-dynamac-transmute.rs/"
+categories = ["no-std"]
+include = [
+    "src/*.rs",
+    "Cargo.toml",
+    "README.md",
+    "LICENCE",
+]
+
+description = """
+Basic cross-feature transmute macro support #![no_std]
+"""
+
+[features]
+default = []
+enable-std = []
+no-core = []
+rust-documentation = []
+
+[package.metadata.docs.rs]
+no-default-features = true
+features = ["rust-documentation"]

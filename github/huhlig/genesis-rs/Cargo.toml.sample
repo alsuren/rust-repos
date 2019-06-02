@@ -1,0 +1,12 @@
+[package]
+name = "genesis"
+version = "0.1.0"
+edition = "2018"
+license = "Apache-2.0"
+authors = ["Hans W. Uhlig <hans.uhlig@ibm.com>"]
+description = "Roguelike written in Rust"
+repository = "https://github.com/huhlig/rusty-roguelike"
+keywords = ["roguelike", "console", "opengl", "wasm"]
+
+[dependencies]
+doryen-rs = "*"

@@ -1,0 +1,15 @@
+[package]
+name = "try-piston"
+version = "0.1.0"
+authors = ["Oleg Eterevsky <olege@google.com>"]
+
+[[bin]]
+name = "try-piston"
+
+[dependencies]
+log = "0.3.6"
+piston = ">= 0.26.0"
+piston2d-graphics = ">= 0.17.0"
+piston_window = ">= 0.55.0"
+piston2d-opengl_graphics = ">= 0.34.0"
+time = "0.1"

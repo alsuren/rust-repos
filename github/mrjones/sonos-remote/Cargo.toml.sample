@@ -1,0 +1,29 @@
+[package]
+name = "sonos"
+version = "0.1.0"
+authors = ["Matt Jones <jonesmr@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "authserver"
+path = "src/authserver/main.rs"
+
+[[bin]]
+name = "controller"
+path = "src/controller/main.rs"
+
+[lib]
+name = "oauthcommon"
+path = "src/oauthcommon/lib.rs"
+
+[dependencies]
+env_logger = "*"
+error-chain = "*"
+log = "*"
+oauth2 = "2.0.0-beta.2"
+reqwest = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+simple-server = "*"
+url = "*"

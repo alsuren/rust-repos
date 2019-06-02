@@ -1,0 +1,14 @@
+[package]
+name = "libtabun"
+version = "0.4.1"
+authors = ["TyanNN <tyannn@cocaine.ninja>"]
+
+[dependencies]
+hyper          = "*"
+url            = "*"
+multipart      = {version = "*", default-features = false, features = ["client", "hyper"]}
+select         = "*"
+regex          = "0.1.77"
+unescape       = "*"
+hado           = "*"
+serde_json     = "*"

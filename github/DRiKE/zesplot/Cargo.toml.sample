@@ -1,0 +1,11 @@
+[package]
+name = "zesplot"
+version = "0.1.0"
+authors = ["Luuk Hendriks <mail@luukhendriks.eu>"]
+
+[dependencies]
+svg = "*"
+ipnetwork = { version = "*", features = ["ipv6-iterator", "ipv6-methods"] }
+num = "*"
+clap = "*"
+rand = "*"

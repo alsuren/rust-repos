@@ -1,0 +1,17 @@
+[package]
+
+name = "civng"
+version = "0.0.1"
+authors = [ "Virgil Dupras <hsoft@hardcoded.net>" ]
+
+[[bin]]
+name = "civng"
+doc = false
+
+[dependencies]
+rustty = "0.1"
+num = "0.1"
+byteorder = "0.4"
+rand = "0.3"
+bitflags = "0.4"
+

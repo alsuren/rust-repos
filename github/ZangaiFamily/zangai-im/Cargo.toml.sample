@@ -1,0 +1,10 @@
+[package]
+name = "zangai-im"
+version = "0.1.0"
+authors = ["matrixbirds <yooobuntu@163.com>"]
+edition = "2018"
+
+[dependencies]
+websocket = "0.22.1"
+futures = "0.1.25"
+tokio = "0.1.13"

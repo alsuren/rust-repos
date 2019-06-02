@@ -1,0 +1,11 @@
+[package]
+name = "game-off-2016"
+version = "0.1.0"
+authors = ["David Li <li.davidm96@gmail.com>"]
+
+[dependencies]
+lazy_static = "0.1.*"
+thread-scoped = "1.0"
+time = "0.1"
+termion = "1.1.2"
+voodoo = { path = '/home/lidavidm/Code/game-off-2016/voodoo' }

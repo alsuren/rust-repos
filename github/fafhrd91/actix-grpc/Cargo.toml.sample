@@ -1,0 +1,23 @@
+[package]
+name = "actix-grpc"
+version = "0.1.0"
+
+[lib]
+name = "actix_grpc"
+path = "src/lib.rs"
+
+[[bin]]
+name = "test"
+path = "src/main.rs"
+
+[dependencies]
+log = "0.4"
+bytes = "0.4"
+prost = "0.3"
+prost-derive = "0.3"
+prost-types = "0.3"
+actix = "0.5"
+actix-web = { path="../actix-web/" }
+actix-grpc-codegen = { path="./codegen/" }
+
+env_logger = "0.5"

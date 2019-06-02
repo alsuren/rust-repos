@@ -1,0 +1,16 @@
+[package]
+name = "copperline"
+version = "0.3.0"
+authors = ["Sam Rijs <srijs@airpost.net>"]
+description = "Pure-Rust Command Line Editing Library"
+license = "MIT"
+repository = "https://github.com/srijs/rust-copperline"
+documentation = "https://srijs.github.io/rust-copperline/copperline/struct.Copperline.html"
+keywords = ["readline", "linenoise", "command", "line", "editing"]
+
+[dependencies]
+libc = "0.1.10"
+nix = "0.5.1"
+unicode-width = "0.1.3"
+unicode-segmentation = "0.1.2"
+encoding = "0.2.32"

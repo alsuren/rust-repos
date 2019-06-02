@@ -1,0 +1,33 @@
+[package]
+name = "adventofcode2018"
+version = "0.1.0"
+authors = ["Simeon Visser <svisser@users.noreply.github.com>"]
+edition = "2018"
+
+[[bin]]
+name = "advent01"
+path = "src/01/main.rs"
+
+[[bin]]
+name = "advent02"
+path = "src/02/main.rs"
+
+[[bin]]
+name = "advent03"
+path = "src/03/main.rs"
+
+[[bin]]
+name = "advent04"
+path = "src/04/main.rs"
+
+[[bin]]
+name = "advent05"
+path = "src/05/main.rs"
+
+[[bin]]
+name = "advent06"
+path = "src/06/main.rs"
+
+[dependencies]
+lazy_static = "1.2.0"
+regex = "1.1.0"

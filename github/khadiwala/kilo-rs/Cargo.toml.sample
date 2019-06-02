@@ -1,0 +1,11 @@
+[package]
+name = "kilo"
+version = "0.1.0"
+authors = ["Ravi Khadiwala <ravi.khadiwala@gmail.com>"]
+
+[dependencies]
+termios = "0.2"
+libc = "0.2"
+ioctl-rs = "0.1"
+time = "0.1"
+bitflags = "0.8"

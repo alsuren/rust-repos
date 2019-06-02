@@ -1,0 +1,32 @@
+[package]
+edition = "2018"
+name = "stew"
+version = "0.2.0"
+authors = ["Martijn Gribnau <garm@ilumeo.com>"]
+description = "Stew is a set of image transformation tools. It allows images to be transformed using individual executables and allows pipes to be used to combine multiple tools."
+license = "MIT"
+repository = "https://github.com/foresterre/stew"
+readme = "README.md"
+exclude = [
+    ".idea/*",
+    ".vscode/*",
+    "*.iml",
+]
+keywords = ["image", "converter", "cli", "front-end", "image-cli"]
+categories = ["multimedia::images", "command-line-utilities"]
+
+[features]
+output-test-images = []
+
+[dependencies]
+clap = "2.32.0"
+image = "0.21.0"
+combostew = "0.2.0"
+combostew_cli = "0.1.0"
+
+[lib]
+name = "stew_lib"
+path = "src/lib.rs"
+
+[profile.release]
+panic = "abort"

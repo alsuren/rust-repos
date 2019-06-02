@@ -1,0 +1,29 @@
+[package]
+name = "envy-cli"
+version = "0.1.0"
+authors = ["Matthias Endler <matthias-endler@gmx.net>"]
+edition = "2018"
+description = "A magical little tool that takes care of your environment settings."
+homepage = "https://github.com/mre/envy"
+keywords = [
+    "environment",
+    "dotenv",
+    "cli",
+]
+license = "Apache-2.0/MIT"
+repository = "https://github.com/mre/envy"
+readme = "README.md"
+
+[[bin]]
+name = "envy"
+path = "src/main.rs"
+
+[dependencies]
+structopt = "0.2.15"
+app_dirs = "1.2.1"
+failure = "0.1.5"
+config = "0.9.2"
+serde = "1.0.89"
+serde_derive = "1.0.89"
+regex = "1.1.2"
+serde_regex = "0.3.1"

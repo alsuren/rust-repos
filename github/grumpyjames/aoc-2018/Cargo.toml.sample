@@ -1,0 +1,78 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+authors = ["James Byatt <grumpyjames@gmail.com>"]
+
+[dependencies]
+regex = "1"
+nom = "^4.1"
+chrono = "0.4"
+
+
+[[bin]]
+name = "one-one"
+path = "src/one-one.rs"
+
+[[bin]]
+name = "one-two"
+path = "src/one-two.rs"
+
+[[bin]]
+name = "two-one"
+path = "src/two-one.rs"
+
+[[bin]]
+name = "two-two"
+path = "src/two-two.rs"
+
+[[bin]]
+name = "three-one"
+path = "src/three-one.rs"
+
+[[bin]]
+name = "four-one"
+path = "src/four-one.rs"
+
+[[bin]]
+name = "five-one"
+path = "src/five-one.rs"
+
+[[bin]]
+name = "six"
+path = "src/six.rs"
+
+[[bin]]
+name = "seven"
+path = "src/seven.rs"
+
+[[bin]]
+name = "eight"
+path = "src/eight.rs"
+
+[[bin]]
+name = "nine"
+path = "src/nine.rs"
+
+[[bin]]
+name = "nine-alt"
+path = "src/nine-alt.rs"
+
+[[bin]]
+name = "ten"
+path = "src/ten.rs"
+
+[[bin]]
+name = "eleven"
+path = "src/eleven.rs"
+
+[[bin]]
+name = "twelve"
+path = "src/twelve.rs"
+
+[[bin]]
+name = "thirteen"
+path = "src/thirteen.rs"
+
+[[bin]]
+name = "fourteen"
+path = "src/fourteen.rs"

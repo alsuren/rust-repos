@@ -1,0 +1,9 @@
+[package]
+name = "syyyrcat"
+version = "0.1.0"
+authors = ["Václav Kubernát <kubervac@fit.cvut.cz>"]
+
+[dependencies]
+zip = "0.3"
+scgi = "0.3.4"
+walkdir = "2"

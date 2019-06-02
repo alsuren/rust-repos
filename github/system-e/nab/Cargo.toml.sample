@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "nab"
+]
+
+[replace]
+"https://github.com/system-e/nab#nab:0.1.10" = { path = "nab" }

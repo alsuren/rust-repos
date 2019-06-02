@@ -1,0 +1,11 @@
+[package]
+name = "av1enc"
+version = "0.0.1"
+authors = [ "Hajime Kato <hjmkt3126@gmail.com>" ]
+
+[dependencies]
+num = "*"
+lazy_static = "*"
+colored = "*"
+rand = "*"
+enum_primitive = "*"

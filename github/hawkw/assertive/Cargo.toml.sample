@@ -1,0 +1,12 @@
+[package]
+name = "assertive"
+version = "0.0.1"
+authors = ["Eliza Weisman <eliza@buoyant.io>"]
+
+[dependencies.console]
+optional = true
+version = "0.5.0"
+
+[features]
+default = ["pretty"]
+pretty = ["console"]

@@ -1,0 +1,27 @@
+[package]
+
+name = "piston2d-sprite"
+version = "0.52.0"
+authors = [
+    "Coeuvre Wong <coeuvre@gmail.com>",
+    "zummenix",
+    "bvssvni <bvssvni@gmail.com>"
+]
+keywords = ["sprite", "animation", "2d", "piston"]
+description = "A library for sprite hierarchy and scene management"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/pistondevelopers/sprite.git"
+homepage = "https://github.com/pistondevelopers/sprite"
+
+[lib]
+
+name = "sprite"
+path = "./src/lib.rs"
+
+[dependencies]
+pistoncore-input = "0.25.0"
+interpolation = "0.2.0"
+piston2d-graphics = "0.32.0"
+piston-ai_behavior = "0.28.0"
+uuid = { version = "0.6", features = ["v4"] } 

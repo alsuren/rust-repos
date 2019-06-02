@@ -1,0 +1,22 @@
+[package]
+name = "yacht"
+version = "0.1.0"
+authors = ["uint256_t"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+ansi_term = "0.9.0"
+rustc-hash = "1.0.1"
+llvm-sys = "60.0.0"
+
+[profile.dev]
+codegen-units = 16
+
+[profile.release]
+codegen-units = 16
+opt-level = 3
+debug = false
+lto = true
+debug-assertions = false
+panic = "unwind"

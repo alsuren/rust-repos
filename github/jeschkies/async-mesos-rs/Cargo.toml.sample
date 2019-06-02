@@ -1,0 +1,28 @@
+[package]
+name = "async-mesos"
+description = "An asynchronous client for Mesos HTTP scheduler API."
+version = "0.1.1"
+authors = ["Karsten Jeschkies <k@jeschkies.xyz>"]
+license = "Apache-2.0"
+license-file = "LICENSE"
+readme = "README.md"
+
+[badges]
+travis-ci = { repository = "jeschkies/async-mesos-rs", branch = "master" }
+
+
+[dependencies]
+bytes = "0.4"
+failure = "0.1"
+futures = "0.1"
+hyper = "0.11"
+lazy_static = "1.0"
+log = "0.4"
+mime = "0.3"
+protobuf = { version = "1.4", features = ["with-bytes"] }
+tokio-core = "0.1"
+
+[dev-dependencies]
+simple_logger = "0.5"
+spectral = "0.6"
+users = "0.6"

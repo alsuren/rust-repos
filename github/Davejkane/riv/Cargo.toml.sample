@@ -1,0 +1,15 @@
+[package]
+name = "riv"
+version = "0.1.0"
+authors = ["davejkane"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33"
+glob = "0.3"
+fs_extra = "1.1"
+
+[dependencies.sdl2]
+version = "0.32"
+default-features = false
+features = ["ttf","image"]

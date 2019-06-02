@@ -1,0 +1,14 @@
+[package]
+name = "regess"
+version = "0.1.0"
+authors = ["Sam Sartor <me@samsartor.com>"]
+
+[dependencies]
+stdweb = "0.4"
+stdweb-derive = "0.4"
+regex-syntax = "0.5"
+petgraph = "0.4"
+lazy_static = "^1.0"
+log = "0.4"
+failure = "0.1"
+percent-encoding = "^1.0"

@@ -1,0 +1,22 @@
+[package]
+name = "gene"
+version = "0.1.0"
+edition = "2018"
+authors = ["Guoliang Cao <gcao99@gmail.com>"]
+description = "A Gene parser."
+license = "MIT"
+documentation = "https://github.com/gcao/gene-rs"
+homepage = "https://github.com/gcao/gene-rs"
+repository = "https://github.com/gcao/gene-rs"
+categories = ["parser-implementations"]
+
+[dependencies]
+clippy = { version = "*", optional = true }
+ordered-float = "1.0.1"
+uuid = { version = "0.7", features = ["serde", "v4"] }
+rand = "0.6.0"
+
+[features]
+default = []
+dev = ["clippy"]
+wip_tests = []

@@ -1,0 +1,10 @@
+[package]
+name = "google-fonts-push"
+version = "0.0.1"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+
+[dependencies]
+curl = "0.1"
+git = "0.1"
+rustc-serialize = "0.2"
+time = "0.1"

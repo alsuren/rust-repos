@@ -1,0 +1,12 @@
+[package]
+authors = ["Taryn Hill <taryn@phrohdoh.com>"]
+name = "learn-vulkan"
+version = "0.1.0"
+
+[dependencies]
+chariot_palette = "0.1.1"
+chariot_slp = "0.1.2"
+vulkano = "0.7.1"
+vulkano-shader-derive = "0.7.1"
+vulkano-win = "0.7.1"
+winit = "0.7.0"

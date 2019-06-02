@@ -1,0 +1,14 @@
+[package]
+name = "plugins"
+version = "0.1.0"
+authors = ["Patrick Chan <patrickchan1999@gmail.com>"]
+
+[dependencies]
+dirs = "1.0"
+filters = { git = "https://github.com/torch-rs/filters" }
+Inflector = "*"
+open = "1.2.1"
+raise_window = { git = "https://github.com/torch-rs/raise_window" }
+searchers = { git = "https://github.com/torch-rs/searchers" }
+search_candidate = { git = "https://github.com/torch-rs/search_candidate" }
+sorters = { git = "https://github.com/torch-rs/sorters" }

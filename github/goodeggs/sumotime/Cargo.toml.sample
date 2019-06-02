@@ -1,0 +1,11 @@
+[package]
+name = "sumotime"
+version = "1.0.1"
+authors = ["Bob Zoller <bob@zoller.us>"]
+
+[dependencies]
+getopts = "*"
+wait-timeout = "*"
+version = "*"
+hyper = "*"
+hyper-native-tls = "*"

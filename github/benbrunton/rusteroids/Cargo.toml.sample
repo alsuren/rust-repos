@@ -1,0 +1,18 @@
+[package]
+
+name = "rusteroids"
+version = "1.0.0"
+authors = [ "benbrunton@hotmail.com" ]
+
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs"
+
+[dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs"
+
+[dependencies.time]
+git = "https://github.com/rust-lang/time"
+
+[dependencies.rand]
+rand = "*"

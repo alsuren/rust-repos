@@ -1,0 +1,13 @@
+[package]
+name = "git-rev"
+version = "0.5.2"
+authors = ["Feng Qiu <feng.qiu@ossa-it.com>"]
+
+[dependencies]
+argparse = "*"
+handlebars = "0.25.0"
+rustc-serialize = "0.3"
+
+[profile.release]
+lto = true
+panic = 'abort'

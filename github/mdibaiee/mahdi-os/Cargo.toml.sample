@@ -1,0 +1,20 @@
+[package]
+name = "mahdi_os"
+version = "0.1.0"
+authors = ["Mahdi Dibaiee <mdibaiee@aol.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "0.1.4"
+spin = "0.3.4"
+bitflags = "0.7.0"
+
+[dependencies.multiboot2]
+git = "https://github.com/phil-opp/multiboot2-elf64"
+
+[profile.dev]
+panic = "abort"
+[profile.release]
+panic = "abort"

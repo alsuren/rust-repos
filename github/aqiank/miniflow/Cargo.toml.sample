@@ -1,0 +1,11 @@
+[package]
+name = "miniflow"
+version = "0.1.0"
+authors = ["jacky"]
+
+[dependencies]
+
+[[bin]]
+name = "miniflow"
+path = "src/bin.rs"
+test = false

@@ -1,0 +1,21 @@
+[package]
+name = "cylonn"
+version = "0.0.1"
+authors = [
+    "Alexandre Gagnon <alxgnon@gmail.com>",
+    "Simon Bernier St-Pierre <sbernierstpierre@gmail.com>",
+]
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+
+[[bin]]
+name = "cylonnd"
+path = "src/main.rs"
+
+[dependencies]
+rustc-serialize = "*"
+uuid = "*"

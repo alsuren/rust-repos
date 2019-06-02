@@ -1,0 +1,16 @@
+[package]
+name = "svg-now"
+version = "0.3.1"
+authors = ["bombless"]
+
+[dependencies.sdl2]
+version = "*"
+features = ["ttf"]
+
+
+[dependencies]
+rusttype = "*"
+
+[dependencies.svg]
+path = "../svg"
+version = "0.4"

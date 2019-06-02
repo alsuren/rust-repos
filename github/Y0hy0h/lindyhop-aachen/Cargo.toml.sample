@@ -1,0 +1,12 @@
+[package]
+name = "lindyhop-aachen-rust"
+version = "0.1.0"
+authors = ["Y0hy0h <Y0hy0h@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+rocket_contrib = "0.4.0"
+maud = { version = "0.20.0", features = ["rocket"] }
+serde = { version = "1.0.89", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }

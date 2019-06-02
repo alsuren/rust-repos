@@ -1,0 +1,34 @@
+[package]
+name = "chien"
+version = "0.0.0"
+authors = ["Claire Charron <claire@undeterminant.net>"]
+
+[dependencies]
+iron = "*"
+urlencoded = "*"
+logger = "*"
+router = "*"
+mount = "*"
+persistent = "*"
+cookie = "*"
+bodyparser = "*"
+rustc-serialize = "*"
+staticfile = "*"
+hyper = "*"
+postgres = "*"
+postgres_macros = "*"
+toml = "*"
+
+[dependencies.mime]
+git = "https://github.com/Undeterminant/mime.rs.git"
+
+[dependencies.clippy]
+git = "https://github.com/Manishearth/rust-clippy.git"
+optional = true
+
+[features]
+unstable = []
+
+[[bin]]
+name = "chien"
+doc = false

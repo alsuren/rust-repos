@@ -1,0 +1,15 @@
+[package]
+name = "mkl_dnn"
+version = "0.1.0"
+authors = ["Peter Jin <peterhaijin@gmail.com>"]
+
+[lib]
+name = "mkl_dnn"
+path = "src/lib.rs"
+
+#[[bin]]
+#name = "conv-test"
+#path = "tools/conv-test.rs"
+
+[dependencies]
+libc = "*"

@@ -1,0 +1,11 @@
+[package]
+name = "evegate"
+version = "0.1.0"
+authors = ["seb"]
+
+[dependencies]
+    log = "*"
+    simplelog = "*"
+    reqwest = "*"
+    rocket = "*"    
+    rocket_codegen = "*"

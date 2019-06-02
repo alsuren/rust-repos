@@ -1,0 +1,10 @@
+[package]
+name = "bittorrent_rust"
+version = "0.1.0"
+authors = ["lucas amaral <lucasthund3r@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.bencode]
+git = "https://github.com/arjantop/rust-bencode.git"

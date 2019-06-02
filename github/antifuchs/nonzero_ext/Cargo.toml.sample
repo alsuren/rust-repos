@@ -1,0 +1,45 @@
+[package]
+name = "nonzero_ext"
+version = "0.1.6-dev"
+authors = ["Andreas Fuchs <asf@boinkor.net>"]
+license = "Apache-2.0"
+repository = "https://github.com/antifuchs/nonzero_ext"
+readme = "README.md"
+description = "Extensions and additional traits for non-zero integer types"
+documentation = "https://docs.rs/nonzero_ext"
+
+[badges]
+circle-ci = { repository = "antifuchs/nonzero_ext", branch = "master" }
+maintenance = { status = "passively-maintained" }
+
+[package.metadata.release]
+sign-commit = false
+upload-doc = false
+pre-release-commit-message = "Release {{version}} 🎉🎉"
+pro-release-commit-message = "Start next development iteration {{version}}"
+tag-message = "Release {{prefix}}{{version}}"
+dev-version-ext = "dev"
+tag-prefix = "v"
+
+[package.metadata.template_ci]
+test_commandline = 'cargo test --all --features "compiletest_rs $CI_RUST_VERSION"'
+cache = "false"
+
+[features]
+default = ["std"]
+std = []
+stable = ["compiletest_rs/stable"]
+beta = ["compiletest_rs/stable"]
+nightly = ["compiletest_rs"]
+
+[package.metadata.template_ci.clippy]
+allow_failure = false
+
+[dependencies]
+
+[dev-dependencies]
+
+[dependencies.compiletest_rs]
+version = "0.3.19"
+optional = true
+features = ["tmp"]

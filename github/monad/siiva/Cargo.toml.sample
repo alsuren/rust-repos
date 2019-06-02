@@ -1,0 +1,9 @@
+[package]
+name = "siiva"
+version = "0.1.0"
+authors = ["Rose <lain@lain.org.uk>"]
+
+[dependencies]
+discord = "0.6.0"
+regex = "0.1.73"
+rand = "0.3.14"

@@ -1,0 +1,20 @@
+[package]
+name = "sapper"
+version = "0.1.5"
+authors = ["Mike Tang <miketang84@outlook.com>"]
+license = "MIT"
+description = "A web framework designed for easy use."
+readme = "README.md"
+repository = "https://github.com/sappworks/sapper"
+documentation = "https://docs.rs/sapper"
+homepage = "https://github.com/sappworks/sapper"
+
+[dependencies]
+hyper = "0.10.10"
+log = "0.3.7"
+env_logger = "0.4.2"
+typemap = "0.3.3"
+conduit-mime-types = "0.7.3"
+lazy_static = "0.2.8"
+
+

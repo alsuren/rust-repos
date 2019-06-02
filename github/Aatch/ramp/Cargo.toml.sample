@@ -1,0 +1,40 @@
+[package]
+name = "ramp"
+description = "A high-performance multiple-precision arithmetic library"
+version = "0.5.1"
+authors = ["James Miller <james@aatch.net>", "Michael Rosenberg <micro@fastmail.com>"]
+build = "build.rs"
+license = "Apache-2.0"
+readme = "README.md"
+keywords = ["bignum","math","number"]
+
+repository = "https://github.com/Aatch/ramp"
+documentation = "https://docs.rs/ramp"
+
+[lib]
+name = "ramp"
+path = "src/lib.rs"
+
+[features]
+unstable = [] # To keep travis-cargo happy
+fallbacks = []
+asm = []
+
+full-quickcheck = []
+
+[dependencies]
+ieee754 = "0.2"
+rand = "0.5"
+hamming = "0.1"
+num-traits = "0.1.35"
+num-integer = "0.1.32"
+rust-gmp = { version = "0.2", optional = true }
+
+[build-dependencies]
+num-bigint = "0.1"
+rustc-cfg = "0.2"
+cc = "1.0"
+
+[dev-dependencies]
+num-bigint = "0.1"
+quickcheck = "0.6"

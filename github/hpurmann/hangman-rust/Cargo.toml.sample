@@ -1,0 +1,13 @@
+[package]
+name = "hangman-rust"
+version = "0.1.0"
+authors = ["Hendrik Purmann <h.purmann@googlemail.com>"]
+
+[dependencies]
+hyper = "0.10"
+
+rand = "0.3"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+spinner = "0.4"

@@ -1,0 +1,16 @@
+[package]
+name = "keyboard-walker"
+version = "0.6.0"
+authors = ["Markus Eriksson <markus.eriksson.88@gmail.com>"]
+edition = "2018"
+description = "Generate passwords based on keyboard keys"
+repository = "https://github.com/Merik88/keyboard-walker"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+strum = "0.11.0"
+strum_macros = "0.11.0"
+structopt = "0.2.14"
+failure = "0.1.2"
+serde_json = "1.0"

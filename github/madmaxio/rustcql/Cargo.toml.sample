@@ -1,0 +1,19 @@
+[package]
+
+name = "rustcql"
+version = "0.0.6"
+authors = ["Maxim Baranov <sprayrules@gmail.com>"]
+
+description = "Rust Cassandra Client (CQL Binary Protocol v4)"
+repository = "https://github.com/madmaxio/rustcql"
+keywords = ["cassandra", "cql", "database", "driver"]
+license = "MIT"
+
+
+[dependencies]
+
+futures = "*"
+tokio-core = "*"
+bufstream = "=0.1.2"
+byteorder = "=0.5.3"
+uuid = "=0.3.1"

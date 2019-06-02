@@ -1,0 +1,23 @@
+[package]
+name = "chirppp"
+version = "0.0.0"
+authors = ["Dominic <awesome3165@gmail.com>"]
+
+[dependencies]
+#lora_driver = { git = 'https://github.com/ddemarco5/lora_driver.git' }
+# we're still making changes so use a local copy for now
+lora_driver = { path = '../lora_driver'}
+sysfs_gpio = "0.5.1"
+bit-vec = "0.4.4"
+floating-duration = "0.1.1"
+serial = "0.3.4"
+#libc = "0.2.24" # To comply with other deps
+#nix = "0.9.0"
+nix = { git = 'https://github.com/nix-rust/nix.git' }
+# Testing for Bryant
+#serialport = "1.0.1"
+
+
+# This is necessary because serial's .toml doesn't have our desired arch
+[replace]
+"serial:0.3.4" = { path = '../serial-rs' }

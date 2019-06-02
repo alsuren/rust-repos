@@ -1,0 +1,31 @@
+[package]
+name = "nq"
+version = "0.1.0"
+authors = ["anekos <anekos@snca.net>"]
+repository = "https://github.com/anekos/nq"
+keywords = []
+license-file = "LICENSE"
+readme = "README.md"
+description = "nq"
+edition = "2018"
+
+[[bin]]
+name = "nq"
+doc = false
+
+[dependencies]
+docopt = "*"
+encoding = "*"
+failure = "*"
+mktemp = "*"
+quick-csv = "*"
+regex = "*"
+rusqlite = "*"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "*"
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false
+features = ["precommit-hook", "run-cargo-test", "run-cargo-clippy"]

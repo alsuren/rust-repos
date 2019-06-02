@@ -1,0 +1,10 @@
+[package]
+name = "atomic_utilities"
+version = "0.5.0"
+authors = ["Samuel Schetterer <samschet@gmail.com>"]
+description = "Basic utilities for fast atomics on multiple platforms"
+license = "MIT"
+build = "build.rs"
+
+[build-dependencies]
+rustc_version = "0.1.4"

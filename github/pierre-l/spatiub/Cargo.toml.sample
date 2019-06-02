@@ -1,0 +1,15 @@
+[workspace]
+
+members = [
+    "lib",
+    "demo_core",
+    "demo_server",
+    "demo_client",
+]
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
+lto = true

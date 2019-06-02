@@ -1,0 +1,14 @@
+[package]
+name = "maya2018"
+version = "0.1.0"
+authors = ["Steven Dao <stevedao@gmail.com>"]
+
+[dependencies]
+
+[build-dependencies]
+bindgen = { path = "third_party/rust-bindgen", version = "0.32.3" }
+cc = "1.0.4"
+syn = { version = "0.12.7", features = ["full", "visit"] }
+quote = "0.4.2"
+regex = "0.2.5"
+rustfmt = "0.10.0"

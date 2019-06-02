@@ -1,0 +1,42 @@
+[package]
+name = "h5chat"
+version = "0.1.0"
+authors = ["Daogang Tang <daogangtang@126.com>"]
+
+
+[dependencies]
+rustc-serialize = "*" 
+cookie = "0.1"
+hyper = "*"
+iron = "*"
+persistent = "*"
+router = "*" 
+mount = "*" 
+staticfile = "*"
+urlencoded = "*"
+bodyparser = "*"
+jsonway = "*"
+
+rustorm = "*"
+uuid = "*"
+chrono = "*"
+handlebars-iron = "*"
+rust-crypto = "*"
+rand = "*"
+
+redis = "^0.3.1"
+r2d2 = "*"
+r2d2_redis = "*"
+
+lazy_static = "*"
+toml = "*"
+
+#[[bin]]
+#name = "main"
+#path = "src/main.rs"
+
+
+
+[lib]
+name = "dbdesign"
+path = "src/dbdesign/lib.rs"

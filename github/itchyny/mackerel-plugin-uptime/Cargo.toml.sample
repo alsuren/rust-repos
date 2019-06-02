@@ -1,0 +1,17 @@
+[package]
+name = "mackerel_plugin_uptime"
+version = "0.1.0"
+authors = ["itchyny <itchyny@hatena.ne.jp>"]
+description = "uptime plugin for Mackerel"
+repository = "https://github.com/itchyny/mackerel-plugin-uptime"
+readme = "README.md"
+license = "MIT"
+keywords = ["cli", "mackerel"]
+
+[dependencies]
+mackerel_plugin = "0.2"
+uptime_lib = "0.0"
+
+[[bin]]
+name = "mackerel-plugin-uptime"
+path = "bin/main.rs"

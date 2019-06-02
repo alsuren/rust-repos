@@ -1,0 +1,11 @@
+[package]
+name = "caesar_cipher_yew"
+version = "0.1.0"
+authors = ["Steve Sweetney <stevesweetney@gmail.com>"]
+
+[dependencies]
+yew = { git = "https://github.com/DenisKolodin/yew"}
+
+[profile.release]
+debug = false
+lto = true

@@ -1,0 +1,16 @@
+[package]
+name = "messd"
+version = "0.1.0"
+authors = ["Stephen Molyneaux <shmolyne@uwaterloo.ca>"]
+
+[dependencies]
+block-accessor = { path = "lib/block-accessor" }
+heapless = "0.3.5"
+bitflags = "1.0.3"
+embedded-hal = "*"
+nb = "*"
+
+[dev-dependencies]
+linux-embedded-hal = "*"
+file-block-accessor = { path = "lib/file-block-accessor" }
+md5 = "*"

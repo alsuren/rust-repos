@@ -1,0 +1,111 @@
+[package]
+name = "ia-sandbox"
+version = "0.2.0"
+authors = ["Adrian Budau <budau.adi@gmail.com>"]
+description = "A CLI to sandbox (jail) and collect usage of applications."
+documentation = "https://gitlab.com/adrian.budau/ia-sandbox"
+homepage = "https://gitlab.com/adrian.budau/ia-sandbox"
+repository = "https://gitlab.com/adrian.budau/ia-sandbox"
+readme = "README.md"
+keywords = ["sandbox", "jail", "infoarena"]
+categories = ["command-line-utilities"]
+license = "MIT"
+
+[badges]
+gitlab = { repository = "adrian.budau/ia-sandbox" }
+maintenance = { status = "experimental" }
+
+[dependencies]
+libc = "^0.2"
+failure = "^0.1.2"
+serde = "^1.0"
+serde_derive = "^1.0"
+bincode = "^1.0"
+serde_json = "^1.0"
+
+[dependencies.clap]
+version = "^2.32"
+default-features = false
+features = ["suggestions", "color"]
+
+[dev-dependencies]
+tempfile = "^3.0"
+
+[features]
+default = []
+integration-test = []
+nightly = []
+
+[[bin]]
+name = "ia-sandbox"
+path = "src/main.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "allocate_20_megabytes"
+path = "test-fixtures/allocate_20_megabytes.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "exit_with_input"
+path = "test-fixtures/exit_with_input.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "exit_with_last_argument"
+path = "test-fixtures/exit_with_last_argument.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "hello_world"
+path = "test-fixtures/hello_world.rs"
+
+[[bin]]
+required-features = ["integration-test", "nightly"]
+name = "kill_with_signal_arg"
+path = "test-fixtures/kill_with_signal_arg.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "loop_500_ms"
+path = "test-fixtures/loop_500_ms.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "sleep_1_second"
+path = "test-fixtures/sleep_1_second.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "threads_allocate_20_megabytes"
+path = "test-fixtures/threads_allocate_20_megabytes.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "threads_loop_500_ms"
+path = "test-fixtures/threads_loop_500_ms.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "threads_sleep_1_second"
+path = "test-fixtures/threads_sleep_1_second.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "exit_with_arg_file"
+path = "test-fixtures/exit_with_arg_file.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "exit_with_env"
+path = "test-fixtures/exit_with_env.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "write_then_read"
+path = "test-fixtures/write_then_read.rs"
+
+[[bin]]
+required-features = ["integration-test"]
+name = "read_then_write"
+path = "test-fixtures/read_then_write.rs"

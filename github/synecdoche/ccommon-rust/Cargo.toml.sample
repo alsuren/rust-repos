@@ -1,0 +1,9 @@
+[package]
+name = "ccommon"
+version = "0.1.0"
+authors = ["john spurling <synec@viscous.org>"]
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.33"
+cmake = "0.1"

@@ -1,0 +1,19 @@
+﻿[package]
+name = "rustak"
+version = "0.1.0"
+authors = ["Joseph Martin"]
+
+[dependencies]
+time = "^0.1.35"
+nom = { version = "^4.0.0-beta2", features = ["verbose-errors"] }
+
+[dev-dependencies]
+sqlite = "^0.23.1"
+
+[features]
+default = []
+stack_128 = []
+
+[lib]
+name = "rustak"
+crate-type = ["rlib"]

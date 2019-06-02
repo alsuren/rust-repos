@@ -1,0 +1,16 @@
+[package]
+name = "rust-game"
+version = "0.1.0"
+authors = ["Oskari Lehto <oskari.lehto@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+byteorder = "1"
+multi_mut = "0.1"
+
+[dependencies.sdl2]
+version = "0.32"
+default-features = false
+features = ["ttf","image","gfx","mixer"]
+

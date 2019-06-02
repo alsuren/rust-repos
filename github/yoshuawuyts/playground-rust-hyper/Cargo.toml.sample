@@ -1,0 +1,17 @@
+[package]
+name = "playground-rust-hyper"
+version = "1.0.0"
+
+[lib]
+name = "server"
+path = "main.rs"
+
+[[bin]]
+name = "start"
+path = "bin.rs"
+
+[dependencies]
+hyper="0.7.1"
+getopts="0.2.14"
+serde="0.6.7"
+serde_macros="0.6.5"

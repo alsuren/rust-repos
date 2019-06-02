@@ -1,0 +1,24 @@
+[package]
+name = "stacktrace"
+version = "0.2.1"
+authors = ["Edward Pierzchalski <e.a.pierzchalski@gmail.com>"]
+exclude = [".gitignore"]
+readme = "README.md"
+license = "Apache-2.0/MIT"
+description = "This project is deprecated. Consider looking at [error-chain](https://crates.io/crates/error-chain)."
+repository = "https://github.com/pierzchalski/stacktrace-rs"
+documentation = "https://pierzchalski.github.io/docs/stacktrace/stacktrace"
+keywords = [
+  "stack", "trace", "stacktrace", "backtrace", "error"
+]
+
+[dependencies]
+backtrace = "0.2"
+
+[[example]]
+name = "simple"
+path = "examples/simple/main.rs"
+
+[[example]]
+name = "using_result"
+path = "examples/using_result/main.rs"

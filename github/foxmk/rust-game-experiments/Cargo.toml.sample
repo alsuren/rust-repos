@@ -1,0 +1,20 @@
+[package]
+name = "some-game-example"
+version = "0.1.0"
+authors = ["Artem Artemyev <artem.artemyev@springernature.com>"]
+
+[dependencies]
+hidapi = "0.5.0"
+log = "0.4.5"
+winit = "0.17.2"
+cpal = "0.8.2"
+#libloading = "0.5"
+
+[dependencies.gfx-hal]
+git = "https://github.com/gfx-rs/gfx.git"
+
+[target.'cfg(target_os = "macos")'.dependencies.gfx-backend-metal]
+git = "https://github.com/gfx-rs/gfx.git"
+
+[build-dependencies]
+glsl-to-spirv = "0.1.7"

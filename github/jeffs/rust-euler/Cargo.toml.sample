@@ -1,0 +1,9 @@
+[package]
+name = "rust-euler"
+version = "0.1.0"
+authors = ["Jeff Schwab <jeff@unbuggy.com>"]
+
+[dependencies]
+
+[features]
+slow_tests = []

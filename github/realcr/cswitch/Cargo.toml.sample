@@ -1,0 +1,26 @@
+
+[workspace]
+
+members = [
+  "components/funder",
+  "components/channeler",
+  "components/common",
+  "components/proto",
+  "components/crypto",
+  "components/identity",
+  "components/timer",
+  "components/relay",
+  "components/secure_channel",
+  "components/keepalive",
+  "components/app_server",
+  "components/index_client",
+  "components/index_server",
+  "components/database",
+  "components/node",
+  "components/net",
+  "components/version",
+  "components/bin",
+  "components/stctrl",
+  "components/app",
+  "components/test",
+]

@@ -1,0 +1,80 @@
+[package]
+name = "divans"
+version = "0.0.1"
+authors = [
+    "Daniel Reiter Horn <danielrh@dropbox.com>",
+    "Jongmin Baek <jongmin@dropbox.com>",
+    "Anatoly Yakovenko <anatoly@dropbox.com>"
+]
+license = "Apache-2.0"
+description = "DivANS is a new way of structuring compression programs to make them more open to innovation in the wider community, by separating compression into multiple stages that can each be improved independently"
+documentation = "https://blogs.dropbox.com/tech/2018/06/building-better-compression-together-with-divans/"
+keywords = ["brotli", "decompression", "lz77", "huffman", "nostd"]
+readme = "README.md"
+build = "build.rs"
+autobins = false
+
+[lib]
+crate-type=["cdylib", "rlib", "staticlib"]
+
+[[bin]]
+doc = false
+name = "divans"
+
+[build-dependencies]
+vergen = "0.1"
+
+[dependencies]
+"alloc-no-stdlib" = "~2.0"
+
+"brotli" = {version = "~3.1"}
+"packed_simd" = {"optional"=true, version="0.3"}
+"alloc-stdlib" = {"optional"=true, version="~0.2"}
+
+[features]
+default = ["std"]
+
+# allow use of SIMD to update probability and compute crc32c
+simd = ["brotli/simd", "packed_simd/into_bits"]
+
+# use avx2-specific instructions
+avx2=[]
+
+# avoid inlining some key functions (for profiling). Significant perf hit
+no-inline=[]
+
+# do not compile any unsafe code (this disables C-FFI)
+safe=[]
+
+# use 65536-sized table to do 16 bit integer divides: similar speed, but strains memory subsystem
+avoid-divide=[]
+
+#use dynamic CDF blending depending on samples
+findspeed = []
+
+# print breakdown of which parts of the file cost
+billing = []
+
+# use divisionless CDF: averages with other CDFs rather than counting samples like FrequentistCDF
+blend = []
+
+# print trace of probability
+debug_entropy = []
+
+# only use portable SIMD instructions for probability updates
+portable-simd = []
+
+std = ["alloc-stdlib", "brotli/std"]
+
+no-stdlib-rust-binding = []
+
+# turn on benchmark tests and --bench commands (requires nigtly)
+benchmark = ["brotli/benchmark"]
+
+
+# allow specification of a external probability array, to test new prediction schemes
+external-literal-probability = ["brotli/external-literal-probability"]
+
+uncached_frequentist = []
+
+threadlog = []

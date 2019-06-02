@@ -1,0 +1,17 @@
+[package]
+name = "rustport"
+version = "0.1.0"
+authors = ["iirelu <anna@bawk.space>"]
+
+[lib]
+crate-type = ["dylib"]
+
+[profile.dev]
+panic = "abort"
+[profile.release]
+panic = "abort"
+
+[dependencies]
+libc = "0.2"
+palette = "0.2.1"
+rand = "0.3"

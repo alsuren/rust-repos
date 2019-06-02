@@ -1,0 +1,35 @@
+[package]
+name = "pnpoly"
+description = "a point-included-in-polygon test"
+version = "0.3.0"
+authors = ["Noah Anabiik Schwarz <noah.anabiik.schwarz@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/chiefbiiko/pnpoly.git"
+
+# Optional specification of badges to be displayed on crates.io.
+#
+# - The badges pertaining to build status that are currently available are
+#   Appveyor, CircleCI, GitLab, and TravisCI.
+# - Available badges pertaining to code test coverage are Codecov and
+#   Coveralls.
+# - There are also maintenance-related badges based on isitmaintained.com
+#   which state the issue resolution time, percent of open issues, and future
+#   maintenance intentions.
+#
+# If a `repository` key is required, this refers to a repository in
+# `user/repo` format.
+[badges]
+
+# Appveyor: `repository` is required. `branch` is optional; default is `master`
+# `service` is optional; valid values are `github` (default), `bitbucket`, and
+# `gitlab`; `id` is optional; you can specify the appveyor project id if you
+# want to use that instead. `project_name` is optional; use when the repository
+# name differs from the appveyor project name.
+appveyor = { repository = "...", branch = "master", service = "github" }
+
+# Travis CI: `repository` in format "<user>/<project>" is required.
+# `branch` is optional; default is `master`
+travis-ci = { repository = "...", branch = "master" }
+
+[lib]
+path = "src/pnpoly.rs"

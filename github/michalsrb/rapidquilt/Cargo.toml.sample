@@ -1,0 +1,44 @@
+[package]
+name = "rapidquilt"
+description = "This is very specialized reimplementation of quilt & patch in one. It supports only the push command. The goal is to be very fast."
+repository = "https://github.com/openSUSE/rapidquilt"
+version = "0.6.0"
+authors = ["Michal Srb <michalsrb@gmail.com>"]
+license = "MIT"
+edition = '2018'
+
+[badges]
+travis-ci = { repository = "rapidquilt/master" }
+
+[profile.release]
+lto = true
+
+[lib]
+name = "libpatch"
+path = "src/libpatch/lib.rs"
+
+[[bin]]
+name = "rapidquilt"
+path = "src/rapidquilt/main.rs"
+
+[dependencies]
+colored = "1.7.0"
+derive_builder = "0.7.1"
+failure = "0.1.5"
+getopts = "0.2.18"
+itertools = "0.8.0"
+jemallocator = "0.1.9"
+atty = "0.2.11"
+libc = "0.2.50"
+memchr = { version = "2.2.0", features = ["libc"] }
+nom = "4.2.2"
+pathfinding = "1.1.12"
+rayon = "1.0.3"
+seahash = "3.0.6"
+smallvec = "0.6.9"
+strsim = "0.8.0"
+
+[features]
+# Enable this feature to enable benchmarks using the (currently) unstable
+# test::Bencher.
+bencher = []

@@ -1,0 +1,22 @@
+[package]
+name = "charmander"
+version = "0.1.0"
+authors = ["<ogham@bsago.me>"]
+
+[[bin]]
+name = "charm"
+
+[dependencies]
+ansi_term = "*"
+unicode_names = "*"
+unicode-width = "*"
+unicode-normalization = "*"
+
+[dependencies.clap]
+version = "1.4.6"
+features = [ "yaml" ]
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true

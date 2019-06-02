@@ -1,0 +1,9 @@
+[package]
+name = "spotify-report"
+version = "0.1.0"
+authors = ["Scott Rangeley <scott.rangeley@hotmail.com>"]
+
+[dependencies]
+hyper = "0.10.3"
+hyper-native-tls = "0.2.1"
+serde_json = "0.9.2"

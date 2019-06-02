@@ -1,0 +1,9 @@
+[package]
+name = "containers-rs"
+version = "0.5.0"
+authors = ["Albert Liu <albertymliu@gmail.com>"]
+edition = "2018"
+description = "'Collections' interfaces for describing objects that contain other objects"
+license-file = "LICENSE"
+
+[dependencies]

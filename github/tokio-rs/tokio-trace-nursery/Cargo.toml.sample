@@ -1,0 +1,14 @@
+[workspace]
+
+members = [
+    "tokio-trace-proc-macros",
+    "tokio-trace-fmt",
+    "tokio-trace-futures",
+    "tokio-trace-tower",
+    "tokio-trace-tower-http",
+    "tokio-trace-log",
+    "tokio-trace-env-logger",
+    "tokio-trace-slog",
+    "tokio-trace-macros",
+    "tokio-trace-subscriber"
+]

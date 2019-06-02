@@ -1,0 +1,23 @@
+cargo-features = ["default-run"]
+
+[package]
+name = "mercury"
+version = "0.1.0"
+authors = ["Marko <zeratul@posteo.de>"]
+default-run = "mercury"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+chrono-tz = "0.5"
+yaml-rust = "0.4"
+diesel = { version = "1.0.0", features = ["mysql", "chrono"] }
+rocket = "0.4.0"
+rocket_contrib = {version = "0.4.0", features = ["tera_templates"]}
+itertools = "*"
+lazy_static = "1.1.0"
+reqwest = "*"
+serde = "1.0.*"
+serde_json = "1.0.*"
+serde_derive = "1.0.*"
+time = "*"
+tera = "*"

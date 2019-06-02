@@ -1,0 +1,9 @@
+[package]
+name = "harvestmouse"
+version = "0.1.0"
+authors = ["Don Marti <dmarti@zgp.org>"]
+license = "GPLv3"
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"

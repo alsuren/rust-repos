@@ -1,0 +1,9 @@
+[package]
+name = "invisible-text"
+version = "0.1.0"
+authors = ["Connie Hilarides <conni_h@outlook.com>"]
+license = "MIT"
+
+[dependencies]
+clipboard = "0.4.6"
+unicode-segmentation = "1.2.0"

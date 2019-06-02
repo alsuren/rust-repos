@@ -1,0 +1,25 @@
+[package]
+name = "mock_shootout"
+version = "0.1.0"
+authors = ["Alan Somers <asomers@gmail.com>"]
+build = "build.rs"
+edition = "2018"
+
+[dependencies]
+built = "0.3"
+galvanic-assert = { version = "=0.8.7" }
+galvanic-mock = { version = "=0.1.3", features = ["galvanic_assert_integration"] }
+double = { version = "=0.2.2" }
+lazy_static = "1.0"
+mock_derive = { version = "=0.7.0" }
+mockers = { version = "=0.13.1" }
+mockers_derive = { version = "=0.13.1" }
+mock-it = { version = "=0.2.1" }
+mocktopus = { version = "=0.7.0" }
+pseudo = { version = "=0.2.0" }
+simulacrum = { version = "=0.3.1" }
+simulacrum_user = { version = "=0.1.0" }
+test_double = { version = "=0.1.1" }
+
+[build-dependencies]
+built = "0.3"

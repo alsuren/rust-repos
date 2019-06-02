@@ -1,0 +1,24 @@
+[package]
+
+name = "Game Tool Box"
+version = "0.0.1"
+authors = [ "Armen138 <armen138@armen138.com>" ]
+
+[lib]
+name = "gtb"
+path = "src/gtb/gtb.rs"
+
+[dependencies.glutin]
+git = "https://github.com/tomaka/glutin.git"
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs"
+
+[dependencies.rust-hl-lua]
+git = "https://github.com/tomaka/rust-hl-lua"
+
+[[bin]]
+
+name = "main"
+
+

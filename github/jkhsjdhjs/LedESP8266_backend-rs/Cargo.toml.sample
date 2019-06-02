@@ -1,0 +1,11 @@
+[package]
+name = "led_esp8266_backend_rs"
+version = "0.1.1"
+authors = ["jkhsjdhjs", "belst"]
+
+[dependencies]
+ws = "*"
+uuid = { version = "*", features = ["v4"] }
+serde = "*"
+serde_derive = "*"
+serde_json = "*"

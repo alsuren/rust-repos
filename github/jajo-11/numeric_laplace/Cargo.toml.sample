@@ -1,0 +1,8 @@
+[package]
+name = "numeric_laplace"
+version = "0.1.0"
+authors = ["jajo-11 <jajo_11@outlook.com>"]
+
+[dependencies]
+rand = "0.5"
+crossbeam-utils = "0.4"

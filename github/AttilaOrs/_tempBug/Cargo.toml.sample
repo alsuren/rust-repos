@@ -1,0 +1,11 @@
+[package]
+name = "genetic"
+version = "0.1.0"
+authors = ["kacsa <sohanemtevedek@gmail.com>"]
+
+[dependencies]
+
+rand="0.3.0"
+fnv = "1.0.2"
+chashmap = "2.2.2"
+crossbeam-deque = "0.7"

@@ -1,0 +1,9 @@
+[package]
+name = "wasp"
+version = "0.1.0"
+authors = ["Stephan Buys <stephan.buys@panoptix.co.za>"]
+
+[dependencies]
+rocket = "0.1.5"
+rocket_codegen = "0.1.5"
+regex = "0.2"

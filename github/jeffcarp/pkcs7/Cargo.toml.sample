@@ -1,0 +1,12 @@
+[package]
+name = "pkcs7"
+version = "1.0.0"
+authors = [
+  "Jeff Carpenter <gcarpenterv@gmail.com>",
+  "Cooper Paul EdenDay <cedenday@protonmail.com>"
+]
+description = "PKCS #7 padding"
+repository = "https://github.com/jeffcarp/pkcs7"
+license = "MIT"
+
+[dependencies]

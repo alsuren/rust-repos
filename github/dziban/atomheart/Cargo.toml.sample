@@ -1,0 +1,27 @@
+[package]
+name = "atomheart"
+homepage = "https://github.com/dziban"
+repository = "https://github.com/dziban/atomheart.git"
+description = "Game engine"
+keywords = ["graphics", "game", "engine", "gamedev"]
+license = "GPL-3.0+"
+version = "0.1.0"
+authors = ["Marce Coll <marce@marcecoll.com>"]
+publish = false
+
+[dependencies]
+atomheart_core = {path = "atomheart_core", version = "0.1.0"}
+atomheart_render = {path = "atomheart_render", version = "0.1.0"}
+atomheart_math = {path = "atomheart_math", version = "0.1.0"}
+atomheart_ui = {path = "atomheart_ui", version = "0.1.0"}
+
+log = "0.4.1"
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 1
+panic = 'unwind'

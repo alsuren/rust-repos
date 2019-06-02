@@ -1,0 +1,15 @@
+[package]
+name = "bluebird"
+version = "0.1.7"
+authors = ["Dan Rammer <hamersaw@gmail.com>"]
+
+[dependencies]
+hyper = "*"
+rand = "*"
+rust-crypto = "*"
+rustc-serialize = "*"
+time = "*"
+
+[[example]]
+name = "all"
+path = "examples/all.rs"

@@ -1,0 +1,28 @@
+[package]
+name = "rust-exploration"
+version = "0.1.0"
+authors = ["Erik Bjäreholt <erik.bjareholt@gmail.com>"]
+
+[lib]
+name = "ffitest"
+crate-type = ["rlib", "dylib"]
+
+[[bin]]
+name = "gravitysim"
+path = "src/main.rs"
+
+# Hacks for smaller exec sizes documented here:
+# https://lifthrasiir.github.io/rustlog/why-is-a-rust-executable-large.html
+#[profile.release]
+#lto = true
+#panic = 'abort'
+
+[dependencies]
+libc = "0.2.0"
+rand = "0.3"
+nalgebra = "0.10.*"
+piston_window = "0.61.0"
+itertools = "0.5.9"
+clap = "~2.19.0"
+find_folder = "~0.3.0"
+fps_counter = "~0.2.0"

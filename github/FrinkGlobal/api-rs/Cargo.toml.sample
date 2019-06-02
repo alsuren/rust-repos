@@ -1,0 +1,26 @@
+[package]
+name = "fractal-api"
+version = "0.9.35"
+authors = [
+    "Iban Eguia <iban@fractal.global>",
+    "Eric Remigino <eric@fractal.global>",
+]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/FractalGlobal/api-rs"
+documentation = "https://docs.rs/fractal-api/"
+description = """
+Fractal Global Credits API client library
+"""
+keywords = ["fractal", "global", "credits", "api"]
+
+[dependencies]
+hyper = "^0.6"
+chrono = { version = "^0.2", features = ["rustc-serialize"]}
+rustc-serialize = "^0.3"
+fractal-utils = "^0.3"
+fractal-dto = "0.8.3"
+
+[features]
+default = []
+json-types = ["fractal-utils/json-types"]

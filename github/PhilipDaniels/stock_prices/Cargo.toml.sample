@@ -1,0 +1,13 @@
+[package]
+authors = ["Philip Daniels <Philip.Daniels1971@gmail.com>"]
+name = "stock_prices"
+version = "0.1.0"
+
+[dependencies]
+csv = "1.0.0"
+reqwest = "*"
+serde = "1.0.70"
+serde_derive = "1.0.70"
+structopt = "0.2.8"
+chrono = { version = "0.4", features = ["serde"] }
+

@@ -1,0 +1,29 @@
+[package]
+
+name = "piston-music"
+version = "0.25.1"
+authors = ["bvssvni <bvssvni@gmail.com>"]
+keywords = ["piston", "music"]
+description = "A high level library for playing music and sound effects"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/PistonDevelopers/music.git"
+homepage = "https://github.com/PistonDevelopers/music"
+documentation = "https://docs.rs/piston-music"
+
+[lib]
+
+name = "music"
+path = "src/lib.rs"
+
+[dependencies]
+current = "0.1.2"
+
+[dependencies.sdl2]
+version = "0.32.1"
+default-features = false
+features = ["mixer"]
+
+[dev-dependencies]
+piston_window = "0.86.0"
+pistoncore-sdl2_window = "0.53.0"

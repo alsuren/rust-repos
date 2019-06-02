@@ -1,0 +1,28 @@
+[package]
+name = "ge-flash-breifing"
+version = "0.1.0"
+authors = ["not-inept <mason@notinept.me>"]
+
+[dependencies]
+rocket = "0.3.3"
+rocket_codegen = "0.3.3"
+serde_json = "*"
+scraper = "*"
+config = "*"
+futures = "0.1"
+hyper = "0.11"
+hyper-tls = "0.1.2"
+tokio-core = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+sentiment = "0.1.1"
+chrono = "0.4"
+[workspace]
+
+# Binary to build
+[[bin]]
+name = "ge_flash_briefing"
+path = "src/server.rs"
+test = false
+bench = false
+doc = false

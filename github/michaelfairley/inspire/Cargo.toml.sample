@@ -1,0 +1,17 @@
+[package]
+name = "inspire"
+version = "0.1.0"
+authors = ["Michael Fairley <michaelfairley@gmail.com>"]
+
+[dependencies]
+sdl2 = "0.8"
+cgmath = "*"
+rand = "*"
+glium_sdl2 = "*"
+
+[dependencies.glium]
+version = "*"
+features = ["cgmath"]
+
+[profile.dev]
+debug = true

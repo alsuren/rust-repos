@@ -1,0 +1,19 @@
+[package]
+name = "server_rust"
+version = "0.1.0"
+authors = ["igor"]
+
+[dependencies]
+rocket = "*"
+serde = "0.9"
+serde_json = "0.9"
+rocket_codegen = "*"
+hyper = "0.10.11"
+serde_derive = "0.9" 
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]
+
+

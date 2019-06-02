@@ -1,0 +1,26 @@
+[package]
+name = "ompa"
+version = "0.1.0"
+authors = ["Ole Martin Gjersvik <olem@olem.org>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "0.7.17"
+actix = "0.7.9"
+futures = "0.1.25"
+tera = "0.11.20"
+lazy_static = "1.2.0"
+serde = "1.0.82"
+serde_json = "1.0.33"
+serde_derive = "1.0.82"
+chrono = "0.4.6"
+actix-web-httpauth = "0.1.0"
+dotenv = "0.13.0"
+postgres = {version = "0.15.2", features  = ["with-native-tls", "with-chrono"]}
+native-tls = "0.2.2"
+rand = "0.6.1"
+im = "12.2.0"
+
+todoist = "0.1.0"
+uuid = {version = "0.6.5", features = ["v4", "serde"] }
+reqwest = "0.8.8"

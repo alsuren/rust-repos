@@ -1,0 +1,16 @@
+[package]
+name = "tanks-rs"
+version = "0.1.0"
+authors = ["AlexNav73 <fifthhorseman@mail.ru>"]
+
+[dependencies]
+gfx = "*"
+gfx_core = "*"
+gfx_device_gl = "*"
+gfx_window_glutin = "*"
+glutin = "*"
+genmesh = "*"
+cgmath = "*"
+obj-rs = "*"
+specs = "*"
+specs-derive = "*"

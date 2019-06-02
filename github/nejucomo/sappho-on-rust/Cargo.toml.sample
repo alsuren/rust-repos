@@ -1,0 +1,9 @@
+[package]
+name = "sappho-on-rust"
+version = "0.1.0"
+authors = ["Nathan Wilcox <nejucomo@gmail.com>"]
+
+[dependencies]
+combine = "2.0.0-beta"
+include_dir = "0.2.*"
+num = "0.1.*"

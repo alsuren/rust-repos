@@ -1,0 +1,9 @@
+[package]
+name = "learned_index_structures"
+version = "0.1.0"
+authors = ["Michael Benfield <mike.benfield@gmail.com>"]
+
+[dependencies]
+rand = "0.5.5"
+tempfile = "3.0.4"
+toml = "0.4.7"

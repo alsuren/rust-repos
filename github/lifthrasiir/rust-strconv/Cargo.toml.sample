@@ -1,0 +1,19 @@
+[package]
+name = "strconv"
+version = "0.0.1"
+authors = ["Kang Seonghoon <public+rust@mearie.org>"]
+
+readme = "README.md"
+license = "CC0-1.0"
+
+[dev-dependencies]
+rand = "*"
+
+# enable these when you are testing *hard*.
+#[profile.test]
+#opt-level = 3
+#lto = true
+
+[profile.bench]
+opt-level = 3
+lto = true

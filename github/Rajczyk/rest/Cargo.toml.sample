@@ -1,0 +1,17 @@
+[package]
+name = "rest"
+version = "0.1.0"
+authors = ["Rajczyk <Rajczyk@users.noreply.github.com>"]
+
+[lib]
+name = "rest"
+path = "src/lib.rs"
+
+[dependencies]
+log = "*"
+url =  "*"
+time =  "*"
+regex = "*"
+quick-error = "*"
+hyper = { git = "https://github.com/hyperium/hyper" }
+serde_json = { git = "https://github.com/serde-rs/json.git" }

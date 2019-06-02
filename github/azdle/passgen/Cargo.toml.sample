@@ -1,0 +1,12 @@
+[package]
+name = "passgen"
+version = "0.3.2"
+authors = ["Patrick Barrett <patrick@mkii.org>"]
+description = "An incrdibly simple command line password generator."
+repository = "https://github.com/azdle/passgen"
+readme = "README.md"
+license = "Apache-2.0"
+
+[dependencies]
+clap = "2.5"
+rand = "0.3"

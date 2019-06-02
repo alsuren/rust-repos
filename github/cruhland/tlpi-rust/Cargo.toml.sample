@@ -1,0 +1,27 @@
+
+[package]
+
+name = "tlpi_rust"
+version = "0.0.1"
+authors = [ "Charles Ruhland <cruhland@alumni.cmu.edu>" ]
+
+[dependencies]
+
+bitflags = "0.3.2"
+getopts = "0.2.11"
+
+[[bin]]
+
+name = "copy"
+
+[[bin]]
+
+name = "seek_io"
+
+[[bin]]
+
+name = "tee"
+
+[[bin]]
+
+name = "copy_holes"

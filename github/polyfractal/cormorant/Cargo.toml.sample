@@ -1,0 +1,17 @@
+[package]
+name = "cormorant"
+version = "0.1.0"
+authors = ["Zachary Tong <zacharyjtong@gmail.com>"]
+
+[dependencies]
+mioco = "*"
+mio = "*"
+clap = "1.2.5"
+env_logger = "*"
+log = "*"
+uuid = "*"
+bincode = "*"
+semver = "*"
+toml = "*"
+chrono = "*"
+rustc-serialize = "0.3"

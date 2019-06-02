@@ -1,0 +1,7 @@
+[package]
+name = "smartos"
+version = "0.1.0"
+authors = ["Nicholas Bailey <nicholas.j.bailey91@gmail.com>"]
+
+[dependencies]
+smart_std = { path = "smart_std" }

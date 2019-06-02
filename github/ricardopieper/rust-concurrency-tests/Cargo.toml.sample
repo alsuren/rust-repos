@@ -1,0 +1,8 @@
+[package]
+name = "rust-concurrency-tests"
+version = "0.1.0"
+authors = ["Ricardo Pieper"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"

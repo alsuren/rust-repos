@@ -1,0 +1,27 @@
+[package]
+name = "skip_list"
+version = "0.1.0"
+authors = ["Orion Henry <orion.henry@gmail.com>"]
+
+[lib]
+name = "skip_list"
+crate-type = ["rlib","cdylib"]
+
+[dependencies]
+uuid = { version = "0.6", features = ["v4"] }
+time = "0.1"
+rand = "0.5.4"
+cfg-if = "0.1.4"
+
+[dependencies.wasm-bindgen]
+version = "0.2.13"
+optional = true
+
+[profile.release]
+# Include function names in the `.wasm` for better debugging and
+# profiling. Comment this out if you're trying to create the smallest `.wasm`
+# binaries you can.
+debug = true
+
+[features]
+wasm = ["wasm-bindgen"]

@@ -1,0 +1,11 @@
+[package]
+name = "license_matcher"
+version = "0.2.0"
+authors = ["Timo Sulg <timgluz@gmail.com>"]
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+helix = "^0.6.0"
+fosslim = "0.0.2"

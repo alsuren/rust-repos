@@ -1,0 +1,18 @@
+[package]
+name = "engine"
+version = "0.1.0"
+authors = ["Aurora Morgan <aurora@aventine.se>"]
+
+[[bin]]
+name = "eve-toolbox"
+
+[dependencies]
+xml-rs = "*"
+getopts = "*"
+eventual = "*"
+byteorder = "*"
+rustc-serialize = "*"
+
+[dependencies.hyper]
+version = "*"
+default-features = false

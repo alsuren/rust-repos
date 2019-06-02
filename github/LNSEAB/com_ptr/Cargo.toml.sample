@@ -1,0 +1,23 @@
+[package]
+name = "com_ptr"
+version = "0.1.0"
+authors = ["LNSEAB <lnseab@gmail.com>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/LNSEAB/com_ptr"
+readme = "README.md"
+description = "A smart pointer for Windows COM Interfaces"
+
+[target.'cfg(not(test))'.dependencies]
+winapi = { git = "https://github.com/retep998/winapi-rs", branch = "0.3", features = [
+	"combaseapi",
+	"unknwnbase",
+] }
+
+[target.'cfg(test)'.dependencies]
+winapi = { git = "https://github.com/retep998/winapi-rs", branch = "0.3", features = [
+	"combaseapi",
+	"unknwnbase",
+	"objbase",
+	"wincodec",
+] }

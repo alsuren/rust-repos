@@ -1,0 +1,17 @@
+[package]
+name = "monotron-synth"
+version = "0.2.0"
+authors = ["Jonathan 'theJPster' Pallant <github@thejpster.org.uk>"]
+description = "A simple 1980's home computer style synthesiser that sounds pretty bad."
+keywords = ["arm", "cortex-m", "synthesiser", "synthesizer", "audio"]
+categories = ["embedded", "no-std"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/thejpster/monotron-synth"
+
+[dev-dependencies.libpulse-binding]
+version = "2.2.3"
+default-features = false
+
+[dev-dependencies.libpulse-simple-binding]
+version = "2.2.3"
+default-features = false

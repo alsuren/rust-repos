@@ -1,0 +1,24 @@
+[package]
+name = "pathfinder"
+version = "1.0.0"
+authors = ["UAV Austin <uavaustin@gmail.com>"]
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "uavaustin/pathfinder", branch = "master" }
+
+[dependencies]
+ordered-float = "1.0.1"
+
+[dev-dependencies]
+rand = "0.5.1"
+criterion = "0.2"
+
+[[bench]]
+name = "my_benchmark"
+harness = false
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false # Disable features which are enabled by default
+features = ["precommit-hook", "run-cargo-test", "run-cargo-fmt"]

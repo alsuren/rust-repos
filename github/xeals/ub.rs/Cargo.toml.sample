@@ -1,0 +1,21 @@
+[package]
+name = "ub"
+version = "0.1.0"
+authors = ["Alex Smith <azphreal19@protonmail.com>"]
+
+[[bin]]
+name = "ub"
+path = "src/bin/mod.rs"
+
+[lib]
+path = "src/lib/mod.rs"
+
+[dependencies]
+structopt = "0.2.5"
+structopt-derive = "0.2.5"
+failure = "0.1.1"
+ordermap = "0.4.1"
+rand = "0.4.2"
+serde = "1.0.35"
+serde_derive = "1.0.35"
+serde_json = "1.0.13"

@@ -1,0 +1,15 @@
+[package]
+name = "build-your-own-editor"
+version = "0.0.1"
+authors = ["Matthew O'Connor <thegreendragon@gmail.com>"]
+
+[dependencies]
+textbox = { path = "textbox" }
+regex = "*"
+
+[workspace]
+members = [".", "textbox"]
+
+[replace]
+"winapi:0.2.8" = { git = "https://github.com/oconnor0/winapi-rs.git", rev = "textbox" }
+"wio:0.1.2" = { git = "https://github.com/oconnor0/wio-rs.git", rev = "textbox" }

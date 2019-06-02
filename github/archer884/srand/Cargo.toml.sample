@@ -1,0 +1,14 @@
+[package]
+
+name = "srand"
+version = "0.0.1"
+authors = ["J/A <archer884@gmail.com>"]
+
+[dependencies]
+
+rand = "*"
+rustc-serialize = "*"
+
+[dependencies.iron]
+
+git = "https://github.com/iron/iron"

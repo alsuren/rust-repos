@@ -1,0 +1,44 @@
+[package]
+name = "delivery"
+version = "0.0.1"
+authors = ["Adam Jacob <adam@getchef.com>"]
+
+[lib]
+name = "delivery"
+path = "src/delivery/lib.rs"
+
+[[bin]]
+name = "delivery"
+
+[[test]]
+name = "lib"
+
+[dependencies]
+clap = "*"
+regex = "*"
+log = "*"
+env_logger = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+time = "*"
+term = "*"
+libc = "*"
+toml = "*"
+tempdir = "*"
+hyper = "=0.9.3"
+uuid = "*"
+mime = "*"
+rust-crypto = "*"
+rpassword = "*"
+dirs = "*"
+paste = "*"
+
+[dev-dependencies]
+mockito = "*"
+
+[profile.dev]
+debug = false
+
+[profile.test]
+debug = false

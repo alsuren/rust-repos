@@ -1,0 +1,11 @@
+[package]
+name = "comp513_project1"
+version = "0.1.0"
+authors = ["Ramla-I <ijazramla@gmail.com>"]
+edition = "2018"
+
+[dependencies.num-complex]
+version = "0.2"
+
+[dependencies.rand]
+version = "0.6.5"

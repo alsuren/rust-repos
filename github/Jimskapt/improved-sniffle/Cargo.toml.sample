@@ -1,0 +1,11 @@
+[package]
+name = "improved-sniffle"
+version = "0.1.0"
+authors = ["Jimskapt <rami.programmer@gmail.com>"]
+
+[features]
+gl_debug = ["gl/debug"]
+
+[dependencies]
+sdl2 = "0.31"
+gl = { path = "lib/gl" }

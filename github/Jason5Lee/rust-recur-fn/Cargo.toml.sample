@@ -1,0 +1,16 @@
+[package]
+name = "recur-fn"
+version = "2.0.0"
+authors = ["Jason Lee <jason5lee@hotmail.com>"]
+description = "A library that provides you a more flexible way to construct and extend the recursive function."
+edition = "2018"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/Jason5Lee/rust-recur-fn"
+homepage = "https://crates.io/crates/recur-fn"
+keywords = ["recursive", "recursion", "recur"]
+
+[workspace]
+members = [
+    "recur-fn-benchmark",
+]

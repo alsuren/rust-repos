@@ -1,0 +1,18 @@
+[package]
+name = "bounded-integer-set-set"
+version = "0.1.0"
+authors = ["Juha Lepola <juha.lepola@gmail.com>"]
+autobins = false
+
+[dependencies]
+    cuckoofilter = { git = "https://github.com/seiflotfy/rust-cuckoofilter", branch = "master"  }
+    rand = "0.3.15"
+
+[dependencies.ro_scalar_set]
+    # git = "https://github.com/Fluxie/ro_scalar_set.git"
+    path = "../ro_scalar_set"
+    features = ["floats"]
+
+[[bin]]
+
+name = "bistest"

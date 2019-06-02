@@ -1,0 +1,16 @@
+[package]
+name = "gust"
+version = "0.2.0"
+authors = ["alex <alexandre.fourcat@epitech.eu>"]
+autoexamples = true
+
+[dependencies]
+gl = "*"
+nalgebra = "*"
+image = "*"
+lazy_static = "*"
+freetype-rs = "*"
+rayon = "*"
+crossbeam = "*"
+alga = "*"
+glfw = "*"

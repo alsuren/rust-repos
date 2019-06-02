@@ -1,0 +1,18 @@
+[package]
+name = "rsmq"
+description = "A Rust implementation of [RSMQ](https://smrchy.github.io/rsmq/about/) (Redis Simple Message Queue)."
+license = "MIT"
+repository = "https://github.com/dvdplm/rsmq-rust"
+version = "0.2.1"
+authors = ["David Palm <dvdplm@gmail.com>"]
+
+[dependencies]
+redis = "0.8"
+radix = "0.3.4"
+rand = "0.3.18"
+r2d2 = "0.8.1"
+r2d2_redis = "0.7"
+failure = "0.1.1"
+
+[dev-dependencies]
+criterion = "0.1.1"

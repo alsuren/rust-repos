@@ -1,0 +1,28 @@
+[package]
+name = "cilium-lb"
+version = "0.1.0"
+authors = ["Jan-Erik Rediger <janerik@fnordig.de>"]
+description = "Manage load-balanced services"
+
+repository = "https://github.com/badboy/cilium-lb-cli"
+homepage = "https://github.com/badboy/cilium-lb-cli"
+
+license = "MIT"
+
+include = [
+  "README.md",
+  "LICENSE",
+  "Cargo.toml",
+  "src/**/*",
+  "benches/**/*",
+  "examples/**/*"
+]
+
+[[bin]]
+doc = false
+name = "cilium-lb"
+
+[dependencies]
+clap = "2.20.5"
+error-chain = "0.10.0"
+libbpf = { git = "https://github.com/badboy/libbpf-rs" }

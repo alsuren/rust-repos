@@ -1,0 +1,25 @@
+[package]
+name = "gobject-2-0-sys"
+version = "0.47.0-dev"
+authors = ["Mikhail Zabaluev <mikhail.zabaluev@gmail.com>"]
+description = "Import crate for GObject"
+license = "LGPL-2.1+"
+readme = "README.md"
+keywords = ["GObject", "GLib", "GNOME"]
+
+repository = "https://github.com/gi-rust/gobject-sys.git"
+
+build = "build.rs"
+links = "gobject-2.0"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+gtypes = "0.2"
+
+[dependencies.glib-2-0-sys]
+git = "https://github.com/gi-rust/glib-sys.git"
+
+[build-dependencies]
+pkg-config = "0.3"

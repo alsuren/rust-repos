@@ -1,0 +1,24 @@
+[package]
+name = "rumqttd"
+version = "0.1.0"
+authors = ["tekjar <k.teza1@gmail.com>"]
+
+[dependencies]
+toml = "0.4"
+log = "0.3"
+structopt = "0.0.5"
+structopt-derive = "0.0.5"
+simplelog = "0.4"
+chrono = "0.4"
+lazy_static = "0.2"
+serde_derive = "1"
+serde = "1"
+bytes = "0.4"
+futures = "0.1"
+tokio-io = "0.1"
+tokio-core = "0.1"
+tokio-timer = "0.1"
+quick-error = "1.1"
+rand = "0.3"
+mqtt3 = { git = "https://github.com/tekjar/mqtt3" }
+#mqtt3 = {path = "../mqtt3"}

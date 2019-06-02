@@ -1,0 +1,9 @@
+[package]
+name = "maze-generator"
+version = "0.1.0"
+authors = ["alexander"]
+
+[dependencies]
+imagefmt = "4.0.0"
+rand = "0.5.1"
+clap = "2.31.2"

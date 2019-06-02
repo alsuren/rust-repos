@@ -1,0 +1,41 @@
+[package]
+name = "reducer"
+version = "1.1.1"
+edition = "2018"
+authors = ["Bruno Dutra <brunocodutra@gmail.com>"]
+description= "A predictable reactive framework for Rust apps"
+repository = "https://github.com/brunocodutra/reducer.git"
+license = "MIT"
+readme = "README.md"
+keywords = ["redux", "flux", "reactive", "state"]
+categories = ["asynchronous", "gui"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[features]
+async = ["futures-preview"]
+
+[badges]
+travis-ci = { repository = "brunocodutra/reducer" }
+codecov = { repository = "brunocodutra/reducer" }
+
+[dependencies]
+futures-preview = { version = "0.3.0-alpha.16", optional = true }
+
+[dev-dependencies]
+conrod_core = "0.63.0"
+conrod_gfx = "0.63.0"
+conrod_winit = "0.63.0"
+criterion = "0.2.11"
+gfx = "0.17.0"
+gfx_window_glutin = "0.28.0"
+glutin = "0.19.0"
+iui = "0.3.0"
+proptest = "0.9.2"
+ttf-noto-sans = "0.1.1"
+
+[[bench]]
+name = "async"
+harness = false
+required-features = ["async"]

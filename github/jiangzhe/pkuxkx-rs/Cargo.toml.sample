@@ -1,0 +1,12 @@
+[package]
+name = "pkuxkx"
+version = "0.1.0"
+authors = ["jiangzhe <zhe.jiang@transwarp.io>"]
+
+[dependencies]
+diesel = { version = "1.0.0-beta1", features = ["sqlite"] }
+diesel_infer_schema = { version = "1.0.0-beta1", features = ["sqlite"] }
+dotenv = "0.9.0"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"

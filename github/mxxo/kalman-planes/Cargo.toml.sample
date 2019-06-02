@@ -1,0 +1,30 @@
+[package]
+name = "kalman-planes"
+version = "0.1.0"
+authors = ["Max Orok <morok@uottawa.ca>"]
+edition = "2018"
+
+[lib]
+name = "geo"
+path = "src/lib.rs"
+
+[[bin]]
+name = "plane-example"
+path = "src/bin.rs"
+
+[dependencies]
+nalgebra = "0.17"
+approx = "0.3.1"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "plane_bench"
+harness = false
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3

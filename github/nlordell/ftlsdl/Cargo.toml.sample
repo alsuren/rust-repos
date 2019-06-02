@@ -1,0 +1,12 @@
+[package]
+name = "ftlsdl"
+version = "1.0.0"
+authors = ["Nicholas Lordello <nlordell@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+bitflags = "1.0"
+error-chain = "0.11"
+glutin = "0.12"

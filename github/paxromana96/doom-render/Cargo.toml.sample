@@ -1,0 +1,10 @@
+[package]
+name = "doom-renderer"
+version = "0.1.0"
+authors = ["JJ Brown <jack.brown.255@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+gfx = "0.17.1"
+glutin = "0.19.0"
+gfx_window_glutin = "0.28.0"

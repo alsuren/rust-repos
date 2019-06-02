@@ -1,0 +1,15 @@
+[package]
+authors = ["Jakob Lautrup Nysom <jako3047@gmail.com>"]
+description = "Edit TOML files while preserving all format information, including comments"
+keywords = ["toml", "TOML", "format", "edit", "nondestructive"]
+license = "MIT/Apache-2.0"
+name = "space-toml"
+version = "0.1.0"
+
+[dependencies]
+env_logger = "0.3"
+log = "0.3"
+error-chain = "0.7.1"
+
+[dev-dependencies]
+rustc-serialize = "0.3"

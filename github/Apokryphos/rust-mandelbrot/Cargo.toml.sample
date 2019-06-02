@@ -1,0 +1,11 @@
+[package]
+name = "mandelbrot"
+version = "0.1.0"
+authors = ["Tony Slavotinek <apokryphos@users.noreply.github.com>"]
+publish = false
+description = "Mandelbrot plotter from the book Programming Rust by Jim Blandy and Jason Orendorff."
+
+[dependencies]
+crossbeam = "0.2.8"
+image = "0.13.0"
+num = "0.1.27"

@@ -1,0 +1,18 @@
+[package]
+name = "stdtr"
+version = "0.1.0"
+authors = ["Nils Mehrtens <nils@hasinila.de>"]
+edition = "2018"
+description = "minimal Rust bindings for the `stdtr` and `inc_beta` functions from the Cephes math library"
+homepage = "https://github.com/n1m3/stdtr"
+repository = "https://github.com/n1m3/stdtr"
+readme = "README.md"
+keywords = ["statistics"]
+license = "MIT"
+
+[workspace]
+members = ["stdtr-sys"]
+
+[dependencies]
+failure = "~0.1.5"
+stdtr-sys = { path = "stdtr-sys", version = "~0.1" }

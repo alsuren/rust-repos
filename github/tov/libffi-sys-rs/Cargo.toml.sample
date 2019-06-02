@@ -1,0 +1,22 @@
+[package]
+name = "libffi-sys"
+version = "0.7.1-alpha.0"
+authors = ["Jesse A. Tov <jesse.tov@gmail.com>"]
+links = "ffi"
+build = "build.rs"
+description = "Raw Rust bindings for libffi"
+repository = "https://github.com/tov/libffi-sys-rs"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+keywords = ["ffi", "libffi", "closure", "c"]
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "^0.49"
+make-cmd = "0.1"
+pkg-config = "0.3.13"
+
+[features]
+system = []
+

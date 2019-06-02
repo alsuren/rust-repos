@@ -1,0 +1,27 @@
+[package]
+name = "execd-cli"
+version = "0.1.0"
+authors = ["wayofthepie <wayofthepie@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.12"
+serde = { version =  "1.0.89", features = ["derive"] }
+structopt = "0.2.15"
+url = "1.7.2"
+prettytable-rs = "0.8.0"
+uuid = { version = "0.7.3", features = ["serde", "v4"] }
+failure = "0.1.5"
+derive_more = "0.14.0"
+
+[dependencies.openssl-sys]
+version = "0.9.43"
+
+[features]
+# Force openssl-sys to staticly link in the openssl library. Necessary when
+# cross compiling to x86_64-unknown-linux-musl.
+vendored = ["openssl-sys/vendored"]
+
+[dev-dependencies]
+pact_consumer = "0.4.0"
+speculate = "0.1.1"

@@ -1,0 +1,16 @@
+[package]
+name = "dupdirfinder"
+version = "0.1.0"
+authors = ["Kevin _StyMaar_ Canévet <perso@stymaar.fr>"]
+description = "A duplicate directory finder."
+
+[profile.release]
+lto = true
+
+[dependencies]
+walkdir = "1.0.7"
+blake2 = "0.5.2"
+unbytify = "0.1.1"
+byteorder = "1"
+structopt = "0.1.0"
+structopt-derive = "0.1.0"

@@ -1,0 +1,8 @@
+[package]
+name = "hello-world-x-rust-x-cli-x-clap"
+version = "0.1.0"
+authors = ["Oliver Forral <intrepion@gmail.com>"]
+
+[dependencies]
+clap = "2.13.0"
+hello-world-x-rust-x-library = "0.1.2"

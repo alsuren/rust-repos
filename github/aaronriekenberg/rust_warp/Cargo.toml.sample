@@ -1,0 +1,21 @@
+[package]
+name = "rust_warp"
+version = "0.1.0"
+authors = ["Aaron Riekenberg <aaron.riekenberg@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+fern = "0.5"
+futures = "0.1"
+handlebars = "1.1"
+hyper = "0.12"
+log = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+tokio-process = "0.2"
+
+[dependencies.warp]
+version = "0.1"
+features = ["tls"]

@@ -1,0 +1,19 @@
+[package]
+name = "rs-maso"
+version = "0.4.0"
+authors = ["danielobrien <daniel@danielobrien.net>"]
+
+[dependencies]
+itertools = "0.6.0"
+unicode-segmentation = "1.1.0"
+maso-parser = { git = "file:/c:/dev/rs-maso-parser" }
+byteorder = "1.0.0"
+
+[lib]
+name = "maso"
+path = "src/lib.rs"
+
+[[bin]]
+name = "masoc"
+path = "src/bin.rs"
+doc = false

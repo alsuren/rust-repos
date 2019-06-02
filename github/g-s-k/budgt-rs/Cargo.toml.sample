@@ -1,0 +1,9 @@
+[package]
+name = "budgt"
+version = "0.1.0"
+authors = ["George Kaplan <george@georgekaplan.xyz>"]
+
+[dependencies]
+tui = "0.2.1"
+termion = "1"
+yaml-rust = "0.4.0"

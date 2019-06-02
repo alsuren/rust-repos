@@ -1,0 +1,28 @@
+[package]
+name = "advent_2018"
+version = "0.1.0"
+authors = ["jrheard <jrheard@cs.stanford.edu>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+hashbrown = "0.1"
+itertools = "0.8"
+serde = {version = "1.0.87", features = ["derive"]}
+serde_scan = "0.3.2"
+rayon = "1.0"
+regex = "1.1.0"
+lazy_static = "1.2.0"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[profile.dev]
+opt-level = 3
+
+[profile.test]
+opt-level = 3
+
+[[bench]]
+name = "bench"
+harness = false

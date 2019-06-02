@@ -1,0 +1,21 @@
+[package]
+name = "projectasiago_aura"
+version = "0.1.0"
+publish = false
+
+[dependencies]
+projectasiago_mish = { git = "https://github.com/projectasiago/mish", features = ["no_std"] }
+projectasiago_feta = { git = "https://github.com/projectasiago/feta" }
+uefi = { git = "https://github.com/orumin/rust-uefi", branch = "beta" }
+rlibc = "1.0"
+compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+#alloc_uefi = "0.2.0"
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

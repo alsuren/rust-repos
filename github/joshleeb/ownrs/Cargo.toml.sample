@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "ownrs",
+    "ownrs-cli",
+]
+
+[replace]
+"ownrs:0.1.0" = { path = "ownrs" }

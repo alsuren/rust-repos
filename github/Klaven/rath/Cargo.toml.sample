@@ -1,0 +1,16 @@
+[package]
+name = "rath"
+version = "0.1.0"
+authors = ["Marek Counts <marek.counts@outlook.com>"]
+edition = "2018"
+
+[lib]
+name = "rathlib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rath"
+path = "src/bin/main.rs"
+
+[dependencies]
+nalgebra = "0.17"

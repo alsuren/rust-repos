@@ -1,0 +1,11 @@
+[package]
+name = "highload"
+version = "0.1.0"
+authors = ["Sergey Yurchenko <urchenko88@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+iron = "*"
+persistent = "*"
+router = "*"
+params = "*"

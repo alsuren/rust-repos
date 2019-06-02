@@ -1,0 +1,12 @@
+[package]
+name = "CQP_RUST_SDK"
+version = "0.1.0"
+authors = ["NaArashi <calibur.tonyt@gmail.com>"]
+
+[dependencies]
+#libc = "0.2.43"
+#encoding = "0.2.33"
+
+[lib]
+name = "CQP_RUST_SDK"
+crate-type = ["dylib"]

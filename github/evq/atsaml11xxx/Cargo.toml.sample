@@ -1,0 +1,28 @@
+[package]
+authors = ["eV <ev@7pr.xyz>"]
+name = "atsaml11xxx"
+version = "0.1.0"
+
+[dependencies]
+bare-metal = "0.2.0"
+vcell = "0.1.0"
+cortex-m = "0.6"
+cortex-m-rt = { version = "0.6", optional = true }
+cortex-m-semihosting = "0.3"
+panic-semihosting = "0.5"
+
+[features]
+default = ["rt"]
+rt = ["cortex-m-rt/device"]
+
+[profile.release]
+debug = false
+lto = true
+
+[[example]]
+name = "blink"
+required-features = ["rt"]
+
+[[example]]
+name = "hello"
+required-features = ["rt"]

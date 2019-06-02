@@ -1,0 +1,16 @@
+[package]
+name = "concourse-copr-resource"
+version = "0.1.0"
+authors = ["Bernhard Schuster <bernhard@ahoi.io>"]
+
+[dependencies]
+serde = "*"
+serde_derive = "*"
+serde_json = "1.0"
+regex = "0.2"
+rust-crypto = "0.2"
+hyper = "*"
+hyper-native-tls = "*"
+error-chain = "0.10.0"
+walkdir = "1.0.7"
+random = "0.12.2"

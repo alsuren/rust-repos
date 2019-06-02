@@ -1,0 +1,12 @@
+[package]
+
+name = "crypto"
+version = "1.0.0"
+authors = [ "Benjy Wiener <benjy@benjywiener.com>" ]
+
+[dependencies]
+
+rust-crypto = "^0.2"
+rpassword = "0.3.0"
+rand = "0.3.0"
+rustc-serialize = "0.3.22"

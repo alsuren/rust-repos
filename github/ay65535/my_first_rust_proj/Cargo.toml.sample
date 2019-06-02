@@ -1,0 +1,8 @@
+[package]
+name = "my_first_rust_proj"
+version = "0.1.0"
+authors = ["ay65535 <ay65535@icloud.com>"]
+edition = "2018"
+
+[dependencies]
+rand="0.3.0"

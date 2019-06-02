@@ -1,0 +1,16 @@
+[package]
+name = "fhasher"
+version = "0.1.0"
+authors = ["Peter Howell"]
+
+[dependencies]
+clap = "2.32.0"
+walkdir = "^2.2"
+
+
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+
+#Hashing algorithms
+md-5 = "0.8.0"

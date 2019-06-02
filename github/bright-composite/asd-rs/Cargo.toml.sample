@@ -1,0 +1,9 @@
+[package]
+name = "asd"
+version = "0.1.0"
+authors = ["indiego <indiego.mttt@gmail.com>"]
+
+[dependencies]
+gfx = "0.16"
+glutin = "0.9"
+gfx_window_glutin = "0.17"

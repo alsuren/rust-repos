@@ -1,0 +1,29 @@
+[package]
+name = "vox_box"
+version = "0.3.0"
+authors = ["Andrew Smith <andrewchristophersmith@gmail.com>"]
+include = ["src/**/*.rs", "Cargo.toml"]
+description = "A tool to process speech audio in Rust"
+documentation = "http://www.andrewchristophersmith.com/docs/vox_box/vox_box/index.html"
+repository = "https://github.com/andrewcsmith/vox_box.rs"
+readme = "README.md"
+keywords = ["audio", "fft", "nlp"]
+license = "MIT"
+
+[lib]
+name = "vox_box"
+doctest = false
+crate-type = ["dylib", "rlib"]
+
+[dependencies]
+num = "0.1"
+rand = "0.3"
+libc = "0.2"
+rustfft = "1.0"
+sample = "0.9"
+
+[dev-dependencies]
+hound = "2.0"
+
+[features]
+nightly = []

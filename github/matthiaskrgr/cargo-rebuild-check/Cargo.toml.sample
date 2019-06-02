@@ -1,0 +1,37 @@
+cargo-features = ["edition"]
+
+[package]
+name = "cargo-rebuild-check"
+version = "0.1.0"
+authors = ["Matthias Krüger <matthias.krueger@famsik.de>"]
+edition = '2018'
+
+[dependencies]
+cargo = "0.28" # get CARGO_HOME
+rayon = "1.0" # parallelize
+clap = "2.32" # CLI parsing
+
+[dev-dependencies]
+bencher = "0.1.5" # benchmarks
+
+[profile.dev]
+debug = true
+debug-assertions = true
+overflow-checks = true
+panic = "unwind"
+
+# same as dev
+[profile.test]
+debug = true
+debug-assertions = true
+overflow-checks = true
+
+[profile.release]
+codegen-units = 1
+lto = true
+
+[profile.bench]
+codegen-units = 1
+lto = true
+debug = false
+debug-assertions = false

@@ -1,0 +1,10 @@
+[package]
+name = "devlog"
+version = "0.1.0"
+authors = ["Will Daly <will.e.daly@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+dirs = "1.0"
+tempfile = "3"

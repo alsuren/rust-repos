@@ -1,0 +1,18 @@
+[package]
+name = "dicey-dice"
+version = "0.1.0"
+authors = ["Stephan Luther <kvsari@gmail.com>"]
+edition = "2018"
+
+[lib]
+path = "src/lib.rs"
+edition = "2018"
+
+[[bin]]
+name = "dicey-dice-console"
+path = "src/main.rs"
+edition = "2018"
+
+[dependencies]
+derive-getters = "0.0.7"
+rand = { version = "0.6.5", features = ["wasm-bindgen"] }

@@ -1,0 +1,16 @@
+[package]
+name = "sensulator"
+version = "0.4.2"
+authors = ["Todd Stellanova <tstellanova@users.noreply.github.com>"]
+license = "BSD-3-Clause"
+repository = "https://github.com/tstellanova/sensulator"
+description = "Simple sensor simulator, provides noisy readings of ideal measurements"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+
+[dev-dependencies]
+quickcheck = "0.6"
+

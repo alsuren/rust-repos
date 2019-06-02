@@ -1,0 +1,28 @@
+[package]
+name = "ht"
+version = "0.2.0"
+authors = ["Max Gortman <mgortman@microsoft.com>"]
+
+[dependencies]
+futures-await = { git = 'https://github.com/alexcrichton/futures-await' }
+hyper = "*"
+tk-http = "*"
+tk-listen = "*"
+time = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+tokio-io= "*"
+tokio-core= "*"
+native-tls = "*"
+num_cpus = "*"
+mime = "*"
+rustls = "*"
+url = "*"
+net2 = "0.2"
+tokio-rustls = "*"
+tokio-tls = "*"
+httpdate = "*"
+
+[profile.release]
+debug = true

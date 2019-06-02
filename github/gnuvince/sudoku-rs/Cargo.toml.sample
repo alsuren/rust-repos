@@ -1,0 +1,11 @@
+[package]
+name = "sudoku"
+version = "0.1.0"
+authors = ["Vincent Foley <vfoley@gmail.com>"]
+
+[dependencies]
+
+[profile.release]
+debug = true
+lto = false
+panic = "abort"

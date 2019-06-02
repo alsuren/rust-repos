@@ -1,0 +1,21 @@
+[package]
+name = "rusty_ally"
+version = "0.2.3"
+authors = ["Zamith <luis@zamith.pt>"]
+license = "MIT OR Apache-2.0"
+description = "A CLI to help you control ActionAlly"
+documentation = "https://github.com/zamith/rusty_ally"
+homepage = "https://github.com/zamith/rusty_ally"
+repository = "https://github.com/zamith/rusty_ally"
+keywords = ["productivity", "binaries"]
+
+[[bin]]
+name = "rally"
+
+[dependencies]
+chrono = "0.2.0"
+clap = "2"
+diesel = "^0.5.0"
+diesel_codegen = { version = "^0.5.0", default-features = false, features = ["sqlite"] }
+dotenv = "0.8.0"
+dotenv_macros = "0.8.0"

@@ -1,0 +1,9 @@
+[package]
+name = "try-future"
+version = "0.1.0"
+authors = ["Matthias Wimmer <m@tthias.eu>"]
+
+[dependencies]
+futures = "0.1"
+tokio-core = "0.1"
+tokio-io = "0.1"

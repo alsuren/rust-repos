@@ -1,0 +1,20 @@
+[package]
+name = "askama-filters"
+description = "Extra template filters for Askama"
+version = "0.1.2"
+authors = ["Steven vanZyl <rushsteve1@rushsteve1.us>"]
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+keywords = ["askama", "filter", "text", "html"]
+
+[dependencies]
+askama_shared = "0.8.0"
+regex = "1.1.6"
+pulldown-cmark = { version = "0.5.0", optional = true }
+chrono = { version = "0.4.6", optional = true }
+
+[features]
+default = []
+markdown = ["pulldown-cmark"]
+date = ["chrono"]

@@ -1,0 +1,21 @@
+[package]
+name = "lsp_rs"
+version = "0.2.0"
+authors = ["Jacob Smith <jacob101607@yahoo.com>"]
+
+license = "MIT"
+description = """
+Tokio Codec support for the Language Server Protocol.
+"""
+
+homepage   = "https://github.com/smith61/rls_proto"
+repository = "https://github.com/smith61/rls_proto"
+readme     = "README.md"
+
+[dependencies]
+languageserver-types = "0.6.1"
+log = "0.3.6"
+serde = "0.8"
+serde_derive = "0.8"
+serde_json = "0.8"
+tokio-core = "0.1"

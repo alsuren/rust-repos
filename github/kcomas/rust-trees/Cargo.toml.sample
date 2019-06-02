@@ -1,0 +1,12 @@
+[package]
+name = "tree"
+version = "0.1.0"
+authors = ["kcomas <kevin.comas.git@gmail.com>"]
+
+[dependencies]
+rand = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+hyper = "*"
+futures = "*"

@@ -1,0 +1,13 @@
+[package]
+name = "discord-chiptunes"
+version = "0.1.0"
+authors = ["Steven Briggs <gshbriggs@gmail.com>"]
+
+[dependencies]
+chrono = "0.2"
+discord = "0.6.0"
+hyper = "0.9.10"
+rand = "0.3.14"
+regex = "0.1"
+rss-rs = "0.2"
+simplemad = "0.8.1"

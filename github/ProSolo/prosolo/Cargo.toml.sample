@@ -1,0 +1,27 @@
+[package]
+name = "prosolo"
+version = "0.6.1"
+authors = ["David Laehnemann <david.laehnemann@hhu.de>"]
+
+[dependencies]
+libprosic = "0.7.3"
+clap = {version = "2.24.*", features = ["yaml", "color", "suggestions"]}
+rust-htslib = "0.22"
+bio = "0.24"
+log = "0.3"
+fern = "0.3"
+csv = "1.0.0-beta.5"
+itertools = "0.6"
+time = "*"
+serde_json = "1.0"
+
+[dev-dependencies]
+cli_test_dir = "^0.1"
+
+[features]
+default = []
+
+# Uncomment the following if you need debugging symbols despite compiling for optimised performance
+# with --release flag
+#[profile.release]
+#debug = true

@@ -1,0 +1,68 @@
+[package]
+authors = [
+    "Aaron Turon <aturon@mozilla.com>",
+    "Yoshua Wuyts <yoshuawuyts@gmail.com>",
+]
+description = "WIP modular web framework"
+documentation = "https://docs.rs/tide"
+keywords = ["tide", "http", "web", "framework", "async"]
+categories = [
+  "network-programming",
+  "asynchronous",
+  "web-programming::http-server"
+]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+name = "tide"
+readme = "README.md"
+repository = "https://github.com/rustasync/tide"
+version = "0.2.0"
+
+[features]
+default = ["hyper", "cookies"]
+cookies = ["tide-cookies"]
+hyper = ["tide-core/http-service-hyper"]
+
+[dependencies]
+futures-preview = "0.3.0-alpha.16"
+http = "0.1"
+http-service = "0.2.0"
+tide-cookies = { path = "./tide-cookies", optional = true }
+tide-core = { path = "./tide-core" }
+tide-headers = { path = "./tide-headers" }
+tide-log = { path = "./tide-log" }
+tide-forms = { path = "./tide-forms" }
+tide-querystring = { path = "./tide-querystring" }
+
+[dev-dependencies]
+bytes = "0.4.12"
+cookie = { version = "0.12", features = ["percent-encode"] }
+futures-fs = "0.0.5"
+futures-util-preview = { version = "0.3.0-alpha.16", features = ["compat"] }
+http-service-mock = "0.2.0"
+juniper = "0.12.0"
+mime = "0.3.13"
+mime_guess = "2.0.0-alpha.6"
+percent-encoding = "1.0.1"
+serde = { version = "1.0.91", features = ["derive"] }
+tide-log = { path = "./tide-log" }
+env_logger = "0.6.1"
+log4rs = "0.8.3"
+log = "0.4.6"
+
+[workspace]
+members = [
+    "tide-compression",
+    "tide-cookies",
+    "tide-core",
+    "tide-forms",
+    "tide-headers",
+    "tide-log",
+    "tide-querystring",
+    "tide-slog",
+]
+
+[patch.crates-io]
+http-service = { git = "https://github.com/rustasync/http-service", branch = "master" }
+http-service-hyper = { git = "https://github.com/rustasync/http-service", branch = "master" }
+http-service-mock = { git = "https://github.com/rustasync/http-service", branch = "master" }

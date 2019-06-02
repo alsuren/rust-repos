@@ -1,0 +1,18 @@
+[package]
+name = "Rumble"
+version = "0.1.0"
+authors = ["Charles Saracco <crsaracco@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+native-tls = "0.2.2"
+prost = "0.4.0"
+prost-derive = "0.4.0"
+prost-types = "0.4.0"
+bytes = "0.4.11"
+crossbeam = "0.7.1"
+colored = "1.7"
+
+[build-dependencies]
+prost-build = "0.4.0"

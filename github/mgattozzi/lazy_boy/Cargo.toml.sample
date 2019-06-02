@@ -1,0 +1,18 @@
+[package]
+name = "lazy_boy"
+version = "0.1.0"
+authors = ["Michael Gattozzi <mgattozzi@gmail.com>"]
+description = "A wrapper for deffered computation"
+documentation = "https://docs.rs/lazy_boy"
+homepage = "https://github.com/mgattozzi/lazy_boy"
+repository = "https://github.com/mgattozzi/lazy_boy"
+readme = "README.md"
+keywords = ["lazy", "thunk", "eval", "evaluation", "deferred"]
+categories = []
+license = "MIT/Apache-2.0"
+
+[badges]
+travis-ci = { repository = "mgattozzi/lazy_boy", branch = "master" }
+appveyor = { repository = "mgattozzi/lazy_boy", branch = "master", service = "github" }
+
+[dependencies]

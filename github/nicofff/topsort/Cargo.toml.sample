@@ -1,0 +1,12 @@
+[package]
+name = "topsort"
+version = "0.1.0"
+authors = ["Nicolas Far <nicofff@gmail.com>"]
+
+[dependencies]
+clap = "2.32.0"
+csv = "1.0.5"
+
+
+[profile.release]
+debug = true

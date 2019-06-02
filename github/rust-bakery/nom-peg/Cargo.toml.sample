@@ -1,0 +1,24 @@
+[package]
+name = "nom-peg"
+version = "0.1.1"
+description = "A PEG parser generator built on top of nom"
+
+authors = ["Evelyn_H <hobert.evelyn@gmail.com>"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/rust-bakery/nom-peg"
+
+readme = "README.md"
+keywords = ["parser", "parser-combinators", "parsing", "parser-generator", "nom"]
+categories = ["parsing"]
+
+
+# edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+nom = "^4.2.3"
+syn = { version = "^0.15.26", features = ["full", "extra-traits"] }
+quote = "^0.6.11"
+proc-macro2 = "^0.4.27"

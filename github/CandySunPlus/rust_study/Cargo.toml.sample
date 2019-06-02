@@ -1,0 +1,34 @@
+[package]
+
+name    = "study"
+version = "0.0.1"
+authors = ["NikSun <s@sfmblog.cn>"]
+
+[[bin]]
+name = "guess-number"
+path = "./src/guess-number/main.rs"
+
+[[bin]]
+name = "dining-philosophers"
+path = "./src/dining-philosophers/main.rs"
+
+[[bin]]
+name = "generics-traits"
+path = "./src/generics-traits/main.rs"
+
+[[bin]]
+name = "function"
+path = "./src/function/main.rs"
+
+[[bin]]
+name = "macros"
+path = "./src/macros/main.rs"
+
+[lib]
+name       = "embed"
+crate-type = ["dylib"]
+path       = "./src/embed/main.rs"
+
+[dependencies]
+
+rand = "*"

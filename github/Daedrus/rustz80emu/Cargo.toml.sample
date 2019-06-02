@@ -1,0 +1,35 @@
+[package]
+name = "rustz80emu"
+version = "0.4.1"
+authors = ["Andrei Faur <da3drus@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+enum_primitive = "*"
+num = "*"
+bitflags = "0.9.1"
+log = "*"
+env_logger = "*"
+bincode = "*"
+rustc-serialize = "*"
+nom = "3.2.1"
+text_io = "*"
+sdl2 = "*"
+lazy_static = "*"
+getopts = "*"
+
+
+[features]
+# This feature is only meant to be used by the fuse tests
+trace-interconnect = []
+
+[lib]
+name = "z80emulib"
+path = "src/lib.rs"
+test = true
+doctest = false
+
+[[bin]]
+name = "z80emubin"
+path = "src/main.rs"
+test = false

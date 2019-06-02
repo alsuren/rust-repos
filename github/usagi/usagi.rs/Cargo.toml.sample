@@ -1,0 +1,12 @@
+[package]
+name = "usagi"
+version = "0.2.0"
+authors = ["Usagi Ito <usagi@WonderRabbitProject.net>"]
+license = "MIT"
+description = "Common algorithms and utilities library for Rust"
+repository = "https://github.com/usagi/usagi.rs"
+readme = "README.md"
+keywords = [ "algorithm", "utility", "math", "common", "usagi" ]
+categories = [ "algorithms" ]
+
+[dependencies]

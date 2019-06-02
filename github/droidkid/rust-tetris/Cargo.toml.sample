@@ -1,0 +1,12 @@
+[package]
+name = "rust-tetris"
+version = "0.1.0"
+authors = ["Yuvaraj Chesetti <karch08@gmail.com>"]
+
+[dependencies]
+rand = "*"
+
+[dependencies.sdl2]
+version = "0.31"
+default-features = false
+features = ["ttf","image"]

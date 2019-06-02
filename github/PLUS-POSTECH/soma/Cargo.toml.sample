@@ -1,0 +1,55 @@
+[package]
+name = "soma-ctf"
+version = "0.1.0-alpha"
+edition = "2018"
+authors = ["Yechan Bae <qwazpia@gmail.com>", "Kangsu Kim <pica744@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "Cross-platform CTF problem container manager"
+repository = "https://github.com/PLUS-POSTECH/soma"
+keywords = ["ctf", "hacking", "security", "container", "docker"]
+categories = ["command-line-utilities", "config"]
+readme = "README.md"
+
+
+[dependencies]
+bollard = "0.2.1"
+clap = "~2.33.0"
+crossterm = "0.6.0"
+dirs = "1.0.5"
+failure = "0.1.5"
+flate2 = "1.0.7"
+fs2 = "0.4.3"
+fs_extra = "1.1.0"
+futures = "0.1.27"
+git2 = "0.8.0"
+handlebars = "1.1.0"
+hyper = "0.12.28"
+lazy_static = "1.3.0"
+path-slash = "0.1.1"
+regex = "1.1.6"
+remove_dir_all = "0.5.1"
+serde = { version = "1.0.91", features = ["derive"] }
+serde_cbor = "0.9.0"
+tar = "0.4.25"
+tempfile = "3.0.7"
+tokio = "0.1.19"
+toml = "0.5.0"
+typetag = "0.1.2"
+url = "1.7.2"
+whoami = "0.5.2"
+
+[dev-dependencies]
+matches = "0.1.8"
+serde_test = "1.0.91"
+
+[lib]
+name = "soma"
+path = "src/lib.rs"
+
+[[bin]]
+name = "soma"
+test = false
+doc = false
+
+[profile.release]
+lto = true

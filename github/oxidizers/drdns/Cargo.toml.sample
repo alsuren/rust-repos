@@ -1,0 +1,18 @@
+[package]
+name        = "drdns"
+description = "djbdns DNS server and cache translated into Rust using corrode"
+version     = "0.0.0"
+license     = "MIT/Apache-2.0"
+authors     = ["Tony Arcieri <bascule@gmail.com>"]
+homepage    = "https://github.com/oxidizers/drdns"
+repository  = "https://github.com/oxidizers/drdns/tree/master/"
+readme      = "README.md"
+keywords    = ["dns", "networking", "server"]
+categories  = ["network-programming"]
+
+[dependencies]
+libc = "0.2"
+errno = "0.2"
+
+[badges]
+travis-ci = { repository = "oxidizers/drdns" }

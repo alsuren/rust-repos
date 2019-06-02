@@ -1,0 +1,67 @@
+[package]
+name = "polygonist"
+version = "0.1.0"
+authors = ["Aleksi Juvani <aleksi@aleksijuvani.com>"]
+license = "MPL-2.0"
+edition = "2018"
+
+[features]
+dx12 = ["gfx-backend-dx12"]
+
+[dependencies]
+derive_more = "0.14"
+rand = "0.6"
+winit = "0.19"
+specs = "0.14"
+specs-derive = "0.4"
+hibitset = "0.5"
+generational-arena = "0.2"
+libpng-sys = { version = "1.1.2", features = ["static"] }
+bitflags = "1.0"
+log = { version = "0.4", features = ["release_max_level_warn"] }
+gltf = { version = "0.12", default-features = false, features = ["utils", "names"] }
+nalgebra = "0.18"
+nalgebra-glm = "0.4"
+unreachable = "1.0"
+
+[dependencies.ncollide3d]
+git = "https://github.com/aleksijuvani/ncollide"
+branch = "toi-normals"
+
+[dependencies.mozjpeg]
+git = "https://github.com/ImageOptim/mozjpeg-rust"
+rev = "8a51ccc44283ee25dd767767b5167cb3d8066f5c"
+
+[dependencies.gfx-hal]
+git = "https://github.com/gfx-rs/gfx/"
+rev = "2683871347d743a0f17696cda00799736c725768"
+
+[target.'cfg(target_os = "macos")'.dependencies.gfx-backend-metal]
+git = "https://github.com/gfx-rs/gfx/"
+rev = "2683871347d743a0f17696cda00799736c725768"
+
+[target.'cfg(not(target_os = "macos"))'.dependencies.gfx-backend-vulkan]
+git = "https://github.com/gfx-rs/gfx/"
+rev = "2683871347d743a0f17696cda00799736c725768"
+
+[target.'cfg(not(target_os = "macos"))'.dependencies.gfx-backend-dx12]
+git = "https://github.com/gfx-rs/gfx/"
+rev = "2683871347d743a0f17696cda00799736c725768"
+optional = true
+
+[dev_dependencies]
+env_logger = "0.6"
+
+[dev_dependencies.gilrs]
+git = "https://gitlab.com/gilrs-project/gilrs.git"
+rev = "b168fc330143b1d7b22cba3e9a551f111fa05003"
+
+[profile.dev]
+panic = "abort"
+opt-level = 2
+
+[profile.test]
+opt-level = 2
+
+[profile.release]
+panic = "abort"

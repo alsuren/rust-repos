@@ -1,0 +1,21 @@
+[package]
+name = "tritium"
+version = "0.1.0"
+authors = [
+  "Robert Hurst <robertwhurst@gmail.com>",
+  "Marcus Heese <marcus.heese@gmail.com>",
+  "Brandyn Prasad <brandyn.prasad@gmail.com>"
+]
+description = "Tritium is a proxy built with the goal of being ultra fast, easy to use, and feature rich"
+license = "MIT"
+
+[lib]
+name = "tritium"
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "tritium"
+path = "src/bin/main.rs"
+
+[dependencies]
+clap = "2.26"

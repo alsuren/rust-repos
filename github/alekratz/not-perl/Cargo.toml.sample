@@ -1,0 +1,9 @@
+[package]
+name = "not-perl"
+version = "0.1.0"
+authors = ["Alek Ratzloff <alekratz@gmail.com>"]
+
+[dependencies]
+matches = "*"
+lazy_static = "1"
+enum-methods = "0.0.8"

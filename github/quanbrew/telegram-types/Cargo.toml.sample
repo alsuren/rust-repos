@@ -1,0 +1,20 @@
+[package]
+name = "telegram_types"
+version = "0.5.0"
+authors = ["Quan Brew <t@ioover.net>"]
+repository = "https://github.com/quanbrew/telegram-types"
+categories = ["api-bindings"]
+license = "MIT"
+description = "Types in the Telegram Bot API and their deserializers"
+readme = "README.md"
+[badges]
+travis-ci = { repository = "quanbrew/telegram-types", branch = "master" }
+
+[features]
+high = ["chrono"]
+
+[dependencies]
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+chrono = { version = "0.4", features = ["serde"], optional = true }

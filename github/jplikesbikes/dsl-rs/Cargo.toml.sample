@@ -1,0 +1,11 @@
+[package]
+name = "dsl_rs"
+version = "0.1.0"
+authors = ["jp <jplikesbikes@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "^0.4.1"
+env_logger = "^0.5.6"
+error-chain = "^0.11.0"
+

@@ -1,0 +1,27 @@
+[package]
+name = "bitbucket-cli"
+version = "0.2.3"
+authors = ["Matt Chun-Lum <mchunlum@gmail.com>"]
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "bb"
+
+[profile.release]
+lto = true
+
+[dependencies]
+base64 = "~0.6.0"
+clap = { version = "2.18.0", features = ["yaml"] }
+eprompt = { git = "https://github.com/mattcl/eprompt.git" }
+error-chain = "0.7.2"
+git2 = "0.5"
+hyper = "^0.9"
+prettytable-rs = "^0.6"
+rpassword = "0.3"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+url = "*"
+yaml-rust = "*"

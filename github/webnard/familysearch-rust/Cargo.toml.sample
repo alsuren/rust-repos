@@ -1,0 +1,8 @@
+[package]
+name = "familysearch"
+version = "0.1.0"
+authors = ["Ian Hunter <ian@ianhunter.me>"]
+
+[dependencies]
+hyper = "0.10"
+hyper-native-tls = "0.2"

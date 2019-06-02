@@ -1,0 +1,11 @@
+[package]
+name = "logisticmap"
+version = "0.1.0"
+authors = ["Ophir LOJKINE <pere.jobs@gmail.com>"]
+
+[dependencies]
+rand = "0.4.2"
+gnuplot = "0.0.24"
+log = "0.4.1"
+flexi_logger = "0.6.13"
+rayon = "1.0"

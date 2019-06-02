@@ -1,0 +1,12 @@
+[package]
+name = "legendsof1f600"
+version = "0.1.0"
+authors = ["Nathan Jent <nathanjent@gmail.com>"]
+
+[[bin]]
+name = "legendsof1f600"
+
+[dependencies]
+specs = "0.*"
+yaml-rust = "0.*"
+rustc-serialize = "0.*"

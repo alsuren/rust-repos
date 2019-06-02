@@ -1,0 +1,9 @@
+[package]
+name = "csv_sql"
+version = "0.1.0"
+authors = ["Musa <tamzid101@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex ="0.2"
+csv ="1"

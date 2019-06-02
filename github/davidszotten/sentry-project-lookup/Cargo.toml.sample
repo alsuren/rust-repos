@@ -1,0 +1,14 @@
+[package]
+name = "sentry-project-lookup"
+version = "0.1.0"
+authors = ["David Szotten <davidszotten@gmail.com>"]
+
+[dependencies]
+app_dirs = "1.2.1"
+clap = "*"
+failure = "*"
+hyper = "*"
+reqwest = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"

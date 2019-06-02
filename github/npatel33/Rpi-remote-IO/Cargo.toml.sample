@@ -1,0 +1,7 @@
+[package]
+name = "rpi_remote_IO"
+version = "0.1.0"
+authors = ["nisarg"]
+
+[dependencies]
+sysfs_gpio = "0.5"

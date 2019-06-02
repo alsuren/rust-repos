@@ -1,0 +1,20 @@
+[package]
+name = "serde_s2proto"
+version = "0.1.0"
+authors = ["Stacey Ell <stacey.ell@gmail.com>"]
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+# serde_macros = "*"
+
+[dependencies.phf]
+git = "https://github.com/sfackler/rust-phf.git"
+path = "pfh"
+
+[dependencies.phf_macros]
+git = "https://github.com/sfackler/rust-phf.git"
+
+[build-dependencies]
+serde_codegen = "*"
+syntex = "*"

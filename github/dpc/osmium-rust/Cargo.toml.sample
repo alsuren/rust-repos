@@ -1,0 +1,20 @@
+[package]
+name = "osmium"
+version = "0.0.1"
+authors = [ "dpc@ucore.info" ]
+build = "make capnpc"
+
+[[bin]]
+name = "osmium"
+path = "src/main.rs"
+
+[dependencies.sodiumoxide]
+# Use my own fork, until my PR is merged
+# git = "http://github.com/dnaq/sodiumoxide.git"
+git = "http://github.com/dpc/sodiumoxide.git"
+
+[dependencies.nanomsg]
+git = "https://github.com/thehydroimpulse/nanomsg.rs.git"
+
+[dependencies.capnp]
+git = "https://github.com/dwrensha/capnproto-rust.git"

@@ -1,0 +1,10 @@
+[package]
+name = "binding-test-library"
+version = "0.1.0"
+authors = ["Ilya Bogdanov <ilya.bogdanov@xdev.re>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = "0.2.43"

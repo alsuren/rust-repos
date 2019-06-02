@@ -1,0 +1,21 @@
+[package]
+name = "patchling"
+version = "0.0.0"
+authors = ["Tyler Slabinski <tslabinski@slabity.net>"]
+
+[dependencies]
+chrono = "*"
+log = "*"
+fern = "*"
+failure = "*"
+failure_derive = "*"
+
+[dependencies.clap]
+version = "*"
+default-features = false
+features = ["yaml"]
+
+[dependencies.conrod]
+version = "*"
+default-features = false
+features = ["winit", "glium"]

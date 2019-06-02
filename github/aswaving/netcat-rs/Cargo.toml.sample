@@ -1,0 +1,17 @@
+[package]
+name = "netcat-rs"
+version = "0.1.0"
+keywords = ["network"]
+categories = ["command-line-utilities", "network"]
+
+[features]
+default = []
+debugtrace = []
+
+[[bin]]
+name = "nc"
+path = "src/main.rs"
+
+[dependencies]
+libc = "0.2"
+clap = "2"

@@ -1,0 +1,14 @@
+[package]
+name = "invisible"
+version = "0.1.0"
+authors = ["ubuntu"]
+edition = "2018"
+
+[dependencies]
+sdl2 = "0.31.0"
+byteorder = "1.2.6"
+cgmath = "0.16.1"
+
+[dependencies.steven_gl]
+path = "./gl"
+version = "0"

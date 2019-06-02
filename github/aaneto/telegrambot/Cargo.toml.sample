@@ -1,0 +1,24 @@
+[package]
+name = "beepbop"
+version = "0.2.0"
+authors = ["Adilson Neto <almeidneto@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "A telegram bot wrapper"
+build = "build.rs"
+
+
+[dependencies]
+reqwest = "0.9.16"
+serde_derive = "1.0.90"
+serde_json = "1.0.39"
+serde = "1.0.90"
+tokio = "0.1.19"
+futures = "0.1"
+optional_builder = {path = "optional_builder" }
+
+[build-dependencies]
+skeptic = "0.13"
+
+[dev-dependencies]
+skeptic = "0.13"

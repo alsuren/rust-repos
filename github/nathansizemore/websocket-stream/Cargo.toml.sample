@@ -1,0 +1,14 @@
+[package]
+name = "websocket-stream"
+version = "0.0.5"
+authors = ["Nathan Sizemore <nathanrsizemore@gmail.com>"]
+description = "Non-blocking Websocket (RFC-6455) wrapper for TcpStream"
+repository = "https://github.com/nathansizemore/websocket-stream"
+readme = "README.md"
+keywords = ["websocket", "socket", "rfc-6455", "web"]
+license = "MIT"
+
+
+[dependencies]
+errno = "*"
+libc = "*"

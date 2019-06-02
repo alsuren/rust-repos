@@ -1,0 +1,12 @@
+[package]
+name = "range-set"
+version = "0.0.5"
+authors = ["Shane Pearman <spearman@github.com>", "Alex Moon <alex.r.moon@gmail.com>"]
+license = "Apache-2.0"
+description = "Smallvec-backed containers of sorted integer ranges"
+repository = "https://github.com/spearman/range-set"
+readme = "README.md"
+
+[dependencies]
+num-traits = "0.2.*"
+smallvec = "0.6.*"

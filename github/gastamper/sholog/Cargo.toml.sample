@@ -1,0 +1,16 @@
+[package]
+name = "sholog"
+version = "0.1.0"
+authors = ["Gregory Stamper <gastamper@gmail.com>"]
+
+[dependencies]
+openssl = { version = "0.10", features = ["vendored"] }
+log = "0.4"
+rust-crypto = "0.2.36"
+chrono = "0.4.5"
+time = "^0.1.25"
+clap = "2.32"
+hostname = "0.1.5"
+
+[profile.release]
+lto = true

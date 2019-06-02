@@ -1,0 +1,31 @@
+[package]
+name = "unqlite"
+version = "1.4.2"
+authors = ["Huo Linhe <linhehuo@gmail.com>"]
+license = "MIT/Apache-2.0"
+readme  = "README.md"
+repository = "https://github.com/zitsen/unqlite.rs.git"
+documentation = "https://docs.rs/unqlite"
+description = "Rust `unqlite` library wrapper."
+keywords = ["unqlite", "kv", "nosql"]
+
+[build-dependencies]
+bindgen = "0.49"
+cc = "1"
+
+[dependencies]
+paste = "0.1"
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = "3"
+
+[features]
+default = ["enable-threads"]
+# For thread-safe
+enable-threads = []
+# Other features
+jx9-disable-builtin-func = []
+jx9-enable-math-func = []
+jx9-disable-disk-io = []
+enable-jx9-hash-io = []

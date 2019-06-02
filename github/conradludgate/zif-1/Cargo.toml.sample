@@ -1,0 +1,13 @@
+[package]
+name = "zif"
+version = "0.1.0"
+authors = ["Will Huxtable <w@zif.io>"]
+
+[dependencies]
+libservo = { git = "https://github.com/wjh/servo", rev = "761880bb05583b1ca6fc7aea6c24babc7e4f1628" }
+glutin = "0.9"
+#neovim-lib = "0.5.2"
+neovim-lib = { git = "https://github.com/iwantm/neovim-lib", rev = "eed30ebc46c856ab14e5e4fee360dc623b33976f" }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

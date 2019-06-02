@@ -1,0 +1,9 @@
+[package]
+name = "xpens"
+version = "0.1.0"
+authors = ["Dennis Hübner <dennis.huebner89@gmail.com>"]
+
+[dependencies]
+chrono = "0.3"
+bson = "0.4.4"
+mongodb = "0.2.3"

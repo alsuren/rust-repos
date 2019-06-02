@@ -1,0 +1,13 @@
+[package]
+name = "rosten"
+version = "0.1.1"
+authors = ["Stian Eklund <stian.eklund@gmail.com>"]
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+reqwest = "0.7.3"
+clap = "*"
+
+

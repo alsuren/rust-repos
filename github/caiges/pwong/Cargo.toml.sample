@@ -1,0 +1,19 @@
+[package]
+
+name = "pwong"
+version = "0.0.1"
+authors = ["caiges <caige@fastmail.fm>"]
+
+[lib]
+name = "pwong"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dependencies]
+time = "*"
+num = "*"
+sdl2 = "0.30"
+gl = "0.6.0"

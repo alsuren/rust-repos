@@ -1,0 +1,13 @@
+[package]
+name = "server_2_2048"
+version = "0.1.0"
+authors = ["Richard Stewing <richy.sting@gmail.com>"]
+
+[dependencies]
+futures = "0.1.23"
+tokio = "0.1.7"
+
+
+[dependencies.lib_2048]
+git = "https://github.com/haetze/lib_2048"
+rev = "83fdd8e5ab7c0f5e15588cae155e0726dc7ba5d1"

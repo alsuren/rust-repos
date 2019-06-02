@@ -1,0 +1,19 @@
+[package]
+name = "gtknvim"
+version = "0.1.0"
+authors = ["Björn Linse <bjorn.linse@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures-preview = "0.3.0-alpha.7"
+gio = "0.5.0"
+rmp = "0.8.7"
+
+[dependencies.gtk]
+version = "0.5.0"
+features = ["v3_10"]
+
+[dependencies.glib]
+version = "0.6.0"
+#path = "../glib"
+#features = ["futures-nightly"]

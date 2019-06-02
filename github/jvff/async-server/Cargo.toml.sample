@@ -1,0 +1,13 @@
+[package]
+name = "async-server"
+version = "0.1.0"
+authors = ["Janito Vaqueiro Ferreira Filho <janito.vff@gmail.com>"]
+
+[dependencies]
+failure = "0.1"
+failure_derive = "0.1"
+futures = "0.1"
+tokio-io = "0.1"
+tokio-core = "0.1"
+tokio-proto = { git = "https://github.com/jvff/tokio-proto", branch = "generic_error" }
+tokio-service = "0.1"

@@ -1,0 +1,12 @@
+[package]
+name = "ruff"
+version = "0.1.0"
+authors = ["Chris J Arges <christopherarges@gmail.com>"]
+
+[dependencies]
+ncurses = "*"
+toml = "*"
+openssl = "*"
+
+[dependencies.imap]
+git = "https://github.com/mattnenterprise/rust-imap.git"

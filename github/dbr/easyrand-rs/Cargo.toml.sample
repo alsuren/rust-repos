@@ -1,0 +1,14 @@
+[package]
+name = "easyrand"
+version = "0.1.0"
+authors = ["dbr <dbr.onix@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/dbr/easyrand-rs"
+license = "Unlicense"
+description = "Simpler to use random number library for the Rust language"
+
+[dependencies]
+rand = "0.6"
+
+[dev-dependencies]
+doc-comment = "0.3.0"

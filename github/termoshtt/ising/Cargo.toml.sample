@@ -1,0 +1,22 @@
+[package]
+name = "ising"
+version = "0.1.0"
+authors = ["Toshiki Teramura <toshiki.teramura@gmail.com>", "SatoshiTeraaki <terasakisatoshi.math@gmail.com>"]
+
+[dependencies]
+ndarray = "0.11"
+rand = "0.4"
+sfmt = "0.2.1"
+
+[dev-dependencies]
+image = "*"
+
+[profile.release]
+opt-level = 3
+debug = true
+lto = true
+
+[profile.bench]
+opt-level = 3
+debug = true
+lto = true

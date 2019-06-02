@@ -1,0 +1,20 @@
+[package]
+name = "annul"
+version = "0.1.0"
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "1"
+cast = "0.2"
+failure = "0.1"
+http_req = "0.4"
+iowrap = "0.2"
+memchr = "2.2"
+tempfile = "3"
+tempfile-fast = "0.3"
+url = "1.7"
+walkdir = "2"
+zstd = "0.4"
+
+splayers = { git = "https://github.com/FauxFaux/splayers" }

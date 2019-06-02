@@ -1,0 +1,21 @@
+[package]
+name = "db-exp"
+version = "0.1.0"
+authors = ["João Paulo Pulga <joaopaulo1339@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+actix = "*"
+actix-web = "*"
+env_logger = "*"
+askama = "*"
+serde_derive = "*"
+serde="*"
+r2d2 = "*"
+r2d2_sqlite = "*"
+num_cpus = "*"
+futures = "*"
+
+[dependencies.rusqlite]
+version = "*"
+features = ["bundled"]

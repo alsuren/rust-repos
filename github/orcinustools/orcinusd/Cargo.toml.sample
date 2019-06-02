@@ -1,0 +1,24 @@
+[package]
+name = "orcinusd"
+version = "0.1.1"
+authors = [
+  "anak10thn <anak10thn@gmail.com>",
+  "imamdigmi <imamdigmi@gmail.com>"
+]
+
+[dependencies]
+hyper = "0.10"
+rustc-serialize = "0.3"
+hyperlocal = "0.3.0"
+router = "*"
+iron = "*"
+clap = "2.20.*"
+serde_json = "0.9"
+
+[lib]
+name = "orcinusd"
+path = "src/lib.rs"
+
+[[bin]]
+name = "orcinusd"
+path = "src/bin.rs"

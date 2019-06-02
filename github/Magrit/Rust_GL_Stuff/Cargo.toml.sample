@@ -1,0 +1,35 @@
+[package]
+name = "rust_gl_stuff"
+version = "0.1.0"
+authors = ["Magrit <mikael.pettersson201@gmail.com>"]
+publish = false
+edition = "2018"
+
+[dependencies]
+gfx-hal = "*"
+notify = "*"
+winit = "*"
+rand = "*"
+gfx-backend-empty = "*"
+glsl-to-spirv = "*"
+
+[features]
+default = []
+gl = ["gfx-backend-gl"]
+vulkan = ["gfx-backend-vulkan"]
+dx12 = ["gfx-backend-dx12"]
+unstable = []
+
+[dependencies.gfx-backend-dx12]
+version = "*"
+optional = true
+
+
+[dependencies.gfx-backend-gl]
+version = "*"
+features = ["glutin"]
+optional = true
+
+[dependencies.gfx-backend-vulkan]
+version = "*"
+optional = true

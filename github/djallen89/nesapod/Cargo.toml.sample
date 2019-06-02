@@ -1,0 +1,19 @@
+[package]
+name = "nesapod"
+version = "0.2.0"
+authors = ["Dominick Allen <dominick.allen1989@gmail.com>"]
+
+[dependencies]
+getopts = "0.2.15"
+bitflags = "1.0.1"
+pancurses = "0.13.0"
+time = "0.1.39"
+find_folder = "*"
+sdl2 = "*"
+
+
+[features]
+
+[[bin]]
+name = "nesapod"
+

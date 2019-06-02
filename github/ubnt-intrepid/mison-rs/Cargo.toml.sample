@@ -1,0 +1,35 @@
+[package]
+name = "misosoup"
+version = "0.0.1"
+edition = "2018"
+authors = ["Yusuke Sasaki <yusuke.sasaki.nuem@gmail.com>"]
+description = "An experimental implementation of Mison JSON parser"
+publish = false
+
+[dependencies]
+fnv = "*"
+num = "*"
+error-chain = "*"
+itertools = "*"
+linear-map = "*"
+smallvec = "*"
+packed_simd = { version = "*", optional = true }
+
+[dev-dependencies]
+maplit = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+
+[profile.release]
+debug = true
+opt-level = 3
+
+[profile.bench]
+debug = true
+opt-level = 3
+
+[features]
+default = []
+simd-accel = ["packed_simd"]
+avx-accel = ["packed_simd"]

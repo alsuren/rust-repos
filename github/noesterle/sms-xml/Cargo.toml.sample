@@ -1,0 +1,11 @@
+[package]
+name = "sms-xml"
+version = "0.1.0"
+authors = ["noesterle <noesterle1@gmail.com>"]
+
+[dependencies]
+quick-xml = "0.10.0" #Process XML
+
+[lib]
+name="lib"
+path="src/lib.rs" #Custom made library

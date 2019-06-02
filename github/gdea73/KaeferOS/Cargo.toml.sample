@@ -1,0 +1,11 @@
+[package]
+name = "kaefer_os"
+version = "0.1.0"
+authors = ["George Albertson <gdea73@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "1.0"
+volatile = "0.1.0"

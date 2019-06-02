@@ -1,0 +1,9 @@
+[package]
+name = "todoist"
+version = "0.1.0"
+authors = ["Aditya Sanka <aditya.sanka@careem.com>"]
+edition = "2018"
+
+[dependencies]
+actix = "0.7.9"
+actix-web = "0.7.18"

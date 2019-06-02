@@ -1,0 +1,17 @@
+[package]
+name = "lightql"
+version = "0.2.0"
+authors = ["afourcat <alexandre.fourcat@epitech.eu>"]
+edition = "2018"
+description = "lightweight graphql request builder."
+repository = "https://github.com/Afourcat/LightQl"
+readme = "README.md"
+keywords = ["graphql", "builder", "api"]
+categories = ["api-bindings", "database"]
+license-file = "LICENSE"
+
+[dependencies]
+mio_httpc = { version = "0.7.0", features = ["native"] }
+serde = "1.0.80"
+serde_derive = "1.0.80"
+serde_json = "1.0.33"

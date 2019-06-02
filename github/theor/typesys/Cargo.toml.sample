@@ -1,0 +1,10 @@
+[package]
+name = "typesys"
+version = "0.1.0"
+authors = ["theor <theo.richart@gmail.com>"]
+
+[dependencies]
+nom_locate = "*"
+
+[dependencies.nom]
+version = "*"

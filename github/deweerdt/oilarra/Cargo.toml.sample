@@ -1,0 +1,16 @@
+[package]
+name = "oilarra"
+version = "0.1.0"
+authors = ["Frederik Deweerdt <frederik.deweerdt@gmail.com>"]
+
+[dependencies]
+toml = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "*"
+rouille = "*"
+daemonize = "*"
+env_logger = "*"
+log = "*"
+clap = "*"
+

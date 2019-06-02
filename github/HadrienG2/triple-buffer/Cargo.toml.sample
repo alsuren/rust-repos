@@ -1,0 +1,40 @@
+[package]
+name = "triple_buffer"
+version = "5.0.0"
+authors = ["Hadrien G. <knights_of_ni@gmx.com>"]
+description = "An implementation of triple buffering, useful for sharing frequently updated data between threads"
+documentation = "https://docs.rs/triple_buffer/"
+repository = "https://github.com/HadrienG2/triple-buffer"
+readme = "README.md"
+keywords = [ "synchronization", "spsc", "multithreading", "non-blocking", "wait-free" ]
+categories = [ "algorithms", "asynchronous", "concurrency", "data-structures" ]
+license = "MPL-2.0"
+edition = "2018"
+
+[features]
+# Enable full access to the read and write buffers. This has a slight cost in
+# terms of synchronization performance, as we need to account for more possible
+# interactions, so you should only do this when you intend to use the interface.
+raw = []
+
+[badges]
+travis-ci = { repository = "HadrienG2/triple-buffer", branch = "master" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+crossbeam-utils = "0.6"
+
+[dev-dependencies]
+testbench = "0.6"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[profile.release]
+lto = "full"
+codegen-units = 1
+panic = "abort"
+
+[profile.bench]
+lto = "full"
+codegen-units = 1

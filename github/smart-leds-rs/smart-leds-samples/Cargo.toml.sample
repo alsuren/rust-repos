@@ -1,0 +1,16 @@
+[workspace]
+
+members = [
+    "stm32f0-examples",
+    "trinket-m0-examples",
+    "cpx-examples"
+]
+
+
+[profile.dev]
+debug = true
+
+[profile.release]
+debug = true
+lto = true
+opt-level = "s"

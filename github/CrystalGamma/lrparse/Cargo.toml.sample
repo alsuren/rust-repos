@@ -1,0 +1,12 @@
+[package]
+
+name = "lrparse"
+version = "1.0.0"
+authors = ["Jona Stubbe (CrystalGamma) <dev@jona-stubbe.de>"]
+
+
+[dependencies.lexer]
+path = "lexer"
+
+[dependencies.lookahead]
+git = "https://github.com/CrystalGamma/rust-lookahead"

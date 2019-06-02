@@ -1,0 +1,11 @@
+[package]
+name = "cargo-bp"
+version = "0.1.1"
+description = "Bump version of crate."
+authors = ["MSDimos <DoubleDimos@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+commander-rust = "1.1.3"
+toml_edit = "0.1.3"
+semver = "0.9.0"

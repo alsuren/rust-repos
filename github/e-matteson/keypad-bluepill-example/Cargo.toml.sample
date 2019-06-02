@@ -1,0 +1,14 @@
+[package]
+name = "keypad-bluepill-example"
+version = "0.1.0"
+authors = ["e-matteson <e.r.matteson@gmail.com>"]
+
+[dependencies]
+
+keypad = {path =  "../keypad"}
+
+cortex-m = "0.5.6"
+cortex-m-rt = "0.5.3"
+cortex-m-semihosting = "0.3.1"
+panic-semihosting = "0.4.0"
+stm32f103xx-hal = { git = "https://github.com/e-matteson/stm32f103xx-hal" }

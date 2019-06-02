@@ -1,0 +1,27 @@
+[package]
+name = "dio"
+version = "0.1.0"
+authors = ["MovingtoMars <definitelynotliam@gmail.com>"]
+
+[dependencies]
+chan = "*"
+gfx_device_gl = "*"
+lazy_static = "*"
+nalgebra = "*"
+num = "*"
+piston_window = "0.67.0"
+rand = "*"
+rodio = "*"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+shred = "0.4"
+shred-derive = "*"
+specs = "0.9"
+
+[dependencies.nphysics2d]
+git = "https://github.com/MovingtoMars/nphysics.git"
+# path = "../nphysics/build/nphysics2d"
+
+[dependencies.ncollide]
+git = "https://github.com/MovingtoMars/ncollide.git"

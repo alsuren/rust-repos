@@ -1,0 +1,9 @@
+[package]
+name = "sokan"
+version = "0.1.0"
+authors = ["Jan Schulte <hello@unexpected-co.de>"]
+[dependencies]
+yaml-rust = "0.2.*"
+term = "0.2"
+rust-crypto = "0.2.31"
+os_type="0.1.0"

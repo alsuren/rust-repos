@@ -1,0 +1,10 @@
+[package]
+name = "clippy-weirdness"
+version = "0.1.0"
+authors = ["Carol (Nichols || Goulding) <carol.nichols@gmail.com>"]
+
+[dependencies]
+clippy = { version = "=0.0.169", optional = true }
+
+[features]
+cargo-clippy = ["clippy"]

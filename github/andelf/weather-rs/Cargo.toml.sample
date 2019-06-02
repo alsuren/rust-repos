@@ -1,0 +1,12 @@
+[package]
+name = "weather"
+version = "0.1.0"
+authors = ["andelf <andelf@gmail.com>"]
+
+
+[dependencies]
+time = "0.1"
+term = "0.4"
+rustc-serialize = "0.3"
+hyper = "0.10"
+getopts = "0.2"

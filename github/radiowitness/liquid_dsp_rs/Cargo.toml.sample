@@ -1,0 +1,9 @@
+[package]
+name = "liquid_dsp_rs"
+version = "0.2.0"
+authors = ["rhodey <notrhodey@protonmail.com>"]
+
+[build-dependencies]
+bindgen = "0.36.0"
+
+[dependencies]

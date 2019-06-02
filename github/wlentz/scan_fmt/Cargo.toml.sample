@@ -1,0 +1,18 @@
+[package]
+name = "scan_fmt"
+version = "0.2.2"
+authors = ["wlentz"]
+description = "A simple scanf()-like input for Rust"
+repository = "https://github.com/wlentz/scan_fmt"
+license = "MIT"
+readme = "README.md"
+
+[features]
+default = ["regex"]
+
+[dependencies]
+regex = { version = "~1.1.6", optional = true }
+
+[lib]
+name = "scan_fmt"
+path = "src/lib.rs"

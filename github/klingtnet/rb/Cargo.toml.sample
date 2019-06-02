@@ -1,0 +1,16 @@
+[package]
+name = "rb"
+description = "A thread-safe ring buffer with blocking IO"
+keywords = ["IO", "audio", "ring-buffer", "ringbuffer", "circular-buffer", "circularbuffer"]
+version = "0.3.2"
+authors = ["Andreas Linz <klingt.net@gmail.com>"]
+documentation = "https://docs.rs/rb"
+repository = "https://github.com/klingtnet/rb"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+
+[dev-dependencies]
+rand_xorshift = "0.1.1"
+rand_core = "0.4.0"

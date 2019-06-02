@@ -1,0 +1,36 @@
+[package]
+name = "weldmock"
+version = "0.0.1-alpha.5"
+license = "MIT/Apache-2.0"
+authors = ["serayuzgur <serayuzgur@gmail.com>"]
+description   = "Full fake REST API generator."
+homepage      = "https://github.com/serayuzgur/weld"
+repository    = "https://github.com/serayuzgur/weld"
+readme        = "README.md"
+keywords      = [ "json", "mock", "server","fake","api" ]
+exclude       = [
+  ".gitignore",
+  "tests/**/*",
+  ".travis.yml",
+  "db.json"
+]
+
+[dependencies]
+# Serde for JSON
+serde="1.0.27"
+serde_derive="1.0.27"
+serde_json="1.0.9"
+
+bytes = "0.4.6"
+futures = "0.1.18"
+hyper = "0.11.19"
+futures-cpupool = "0.1.8"
+rand = "0.4.2"
+
+# Logger
+slog= "2.1.1"
+slog-term= "2.3.0"
+slog-async= "2.2.0"
+
+time="0.1.39"
+lazy_static="1.0.0"

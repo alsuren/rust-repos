@@ -1,0 +1,11 @@
+[package]
+name = "sokoban"
+version = "0.1.0"
+authors = ["Arthur Archer <archerfeel@gmail.com>"]
+
+[dependencies]
+"ncurses" = "5.85.0"
+
+[[bin]]
+path = "src/main.rs"
+name = "sokoban"

@@ -1,0 +1,25 @@
+[package]
+name = "scarlet"
+description = "Colors and color spaces made simple"
+version = "1.0.2"
+authors = ["Nicholas Miklaucic <nicholas.miklaucic@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.MD"
+repository = "https://github.com/nicholas-miklaucic/scarlet"
+keywords = ["color", "rgb", "image", "visualization"]
+categories = ["multimedia::images", "visualization", "data-structures"]
+
+[dependencies]
+regex = "1.0"
+termion = "1.5"
+num = "0.2"
+float-cmp = "0.4.0"
+csv = "1.0.2"
+serde = "1"
+serde_derive = "1"
+geo = "0.10"
+rulinalg="0.4.2"
+maplit = "1.0.1"
+lazy_static = "1.1"
+
+[package.metadata.docs.rs]

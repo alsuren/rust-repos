@@ -1,0 +1,21 @@
+[package]
+name = "fake-smtpd"
+version = "0.1.0"
+authors = ["Konstantin Sorokin <kvs@sigterm.ru>"]
+description = "Fake SMTP server"
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+log = "0.4.6"
+env_logger = "0.6.0"
+failure = "0.1.5"
+threadpool = "1.7.1"
+regex = "1.1.0"
+lazy_static = "1.2.0"
+rand = "0.6.5"
+ctrlc = "3.1.1"
+net2 = "0.2.33"
+
+[profile.release]
+lto = true

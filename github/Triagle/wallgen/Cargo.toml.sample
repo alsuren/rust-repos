@@ -1,0 +1,10 @@
+[package]
+authors = ["Jake Faulkner <jakefaulkn@gmail.com>"]
+name = "wallgen"
+version = "0.1.0"
+[dependencies]
+argparse = "*"
+image = "*"
+math = "*"
+num = "*"
+rand = "*"

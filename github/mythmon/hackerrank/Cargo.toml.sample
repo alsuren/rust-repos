@@ -1,0 +1,63 @@
+[package]
+name = "hackerrank"
+version = "0.1.0"
+authors = ["Mike Cooper <mythmon@gmail.com>"]
+
+[features]
+expensive_tests = []
+
+[[bin]]
+name = "solve-me-first"
+path = "src/algorithms/warmup/solve-me-first.rs"
+
+[[bin]]
+name = "solve-me-second"
+path = "src/algorithms/warmup/solve-me-second.rs"
+
+[[bin]]
+name = "simple-array-sum"
+path = "src/algorithms/warmup/simple-array-sum.rs"
+
+[[bin]]
+name = "a-very-large-sum"
+path = "src/algorithms/warmup/a-very-large-sum.rs"
+
+[[bin]]
+name = "diagnol-difference"
+path = "src/algorithms/warmup/diagnol-difference.rs"
+
+[[bin]]
+name = "fibonacci-finding-easy"
+path = "src/mathematics/number-theory/fibonacci-finding-easy.rs"
+
+[[bin]]
+name = "plus-minus"
+path = "src/algorithms/warmup/plus-minus.rs"
+
+[[bin]]
+name = "staircase"
+path = "src/algorithms/warmup/staircase.rs"
+
+[[bin]]
+name = "time-conversion"
+path = "src/algorithms/warmup/time-conversion.rs"
+
+[[bin]]
+name = "library-fine"
+path = "src/algorithms/warmup/library-fine.rs"
+
+[[bin]]
+name = "extra-long-factorials"
+path = "src/algorithms/warmup/extra-long-factorials.rs"
+
+[[bin]]
+name = "tutorial-intro"
+path = "src/algorithms/sorting/tutorial-intro.rs"
+
+[[bin]]
+name = "saveprincess"
+path = "src/ai/bot-building/saveprincess.rs"
+
+[[bin]]
+name = "utopian-tree"
+path = "src/algorithms/implementation/utopian-tree.rs"

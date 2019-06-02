@@ -1,0 +1,21 @@
+[package]
+name = "neopixel-uart"
+version = "0.1.0"
+authors = ["Noah Huesser <admin@yatekii.ch>"]
+edition = "2018"
+
+[dependencies]
+cortex-m = "*"
+generic-array = "*"
+typenum = "*"
+lazy_static = "*"
+
+[dev-dependencies]
+panic-halt = "0.2.0"
+cortex-m-rt = "*"
+nb = "*"
+
+[dev-dependencies.stm32f0xx-hal]
+path = "../stm32f0xx-hal"
+features = ["stm32f072", "rt"]
+version = "*"

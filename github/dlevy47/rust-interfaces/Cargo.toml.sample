@@ -1,0 +1,14 @@
+[package]
+
+name = "ifaces"
+version = "0.0.1"
+authors = ["dlevy47 <dlevy47>"]
+license = "mit"
+
+[dependencies]
+nix = "*"
+libc = "*"
+
+[[bin]]
+path = "src/bin/ifaces.rs"
+name = "ifaces"

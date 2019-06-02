@@ -1,0 +1,26 @@
+[package]
+name = "kawa"
+version = "0.1.0"
+authors = ["Luminarys <postmaster@gensok.io>", "ParadoxSpiral <ParadoxSpiral@riseup.net>"]
+
+[features]
+default = []
+nightly = []
+
+[dependencies]
+kaeru = { path = "kaeru" }
+toml = "0.4"
+log = "0.4"
+env_logger = "0.5"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+reqwest = "0.9"
+rouille = "1.0.2"
+httparse = "1.2.3"
+url = "1.5"
+
+[dependencies.amy]
+version = "0.8.1"
+default-features = false
+features = ["no_timerfd"]

@@ -1,0 +1,10 @@
+[package]
+name = "light2d-rs"
+version = "0.2.0"
+authors = ["codeworm96 <codeworm96@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+image = "0.20"
+rand = "0.6"
+rayon = "1.0"

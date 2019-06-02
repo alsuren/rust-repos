@@ -1,0 +1,10 @@
+[package]
+name = "trophy-wife"
+version = "0.1.0"
+authors = ["Krittin Meenrattanakorn <whatevermarch@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+vulkano = "0.11.1"
+glm = "0.2.3"
+png = "0.14.1"

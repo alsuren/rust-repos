@@ -1,0 +1,30 @@
+[package]
+name = "karkinos"
+version = "0.1.0"
+authors = ["Chris Wong <lambda.fairy@gmail.com>"]
+license = "AGPL-3.0+"
+
+[dependencies]
+ammonia = "*"
+bk-tree = "*"
+caseless = "*"
+env_logger = "*"
+iron = "*"
+lazy_static = "*"
+log = "*"
+logger = "*"
+maud = { version = "*", features = ["iron"] }
+mime = "*"
+notify = "*"
+persistent = "*"
+pulldown-cmark = "*"
+radix_trie = "*"
+rand = "*"
+router = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+staticfile = { version = "*", features = ["cache"] }
+unicode-normalization = "*"
+unicode-segmentation = "*"
+urlencoded = "*"

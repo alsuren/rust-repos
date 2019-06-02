@@ -1,0 +1,9 @@
+[package]
+name = "tilde_plays"
+version = "0.1.0"
+authors = ["Sanqui <gsanky@gmail.com>"]
+
+[dependencies]
+byteorder = "0.5.3"
+nix = "0.6.0"
+users = "0.5.0"

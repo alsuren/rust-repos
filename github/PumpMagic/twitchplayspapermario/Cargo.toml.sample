@@ -1,0 +1,12 @@
+[package]
+name = "tppm"
+version = "0.1.0"
+authors = ["TPPM"]
+
+[dependencies]
+regex = "*"
+libc = "*"
+toml = "*"
+time = "*"
+winapi = "*"
+user32-sys = "*"

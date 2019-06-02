@@ -1,0 +1,20 @@
+cargo-features = ["edition"]
+
+[package]
+name        = "abstract-struct"
+version     = "0.3.0"
+authors     = ["Las <las@protonmail.ch>"]
+license     = "MPL-2.0"
+readme      = "README.md"
+description = "A procedural macro for hiding generic type parameters and automatically generating a trait for a struct"
+keywords    = ["macro", "trait", "generics", "encapsulation"]
+categories  = ["development-tools::procedural-macro-helpers"]
+edition     = "2018"
+
+[dependencies]
+abstract-struct-macro = {path = "macro"}
+
+[workspace]
+
+[lib]
+path = "lib.rs"

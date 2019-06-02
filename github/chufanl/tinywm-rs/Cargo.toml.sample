@@ -1,0 +1,7 @@
+[package]
+name = "tinywm-rs"
+version = "1.0.0"
+authors = ["chufanl <chufan.liang@gmail.com>"]
+
+[dependencies]
+xcb = "0.8"

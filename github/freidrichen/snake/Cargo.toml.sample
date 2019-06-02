@@ -1,0 +1,8 @@
+[package]
+name = "snake"
+version = "0.1.0"
+authors = ["Magnus Sandén <thefreid@gmail.com>"]
+
+[dependencies]
+ggez = "0.5.0-rc.1"
+rand = "0.6.5"

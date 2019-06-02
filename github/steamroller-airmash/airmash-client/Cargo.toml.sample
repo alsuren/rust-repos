@@ -1,0 +1,37 @@
+[package]
+name = "airmash-client"
+version = "0.0.0"
+authors = ["STEAMROLLER"]
+publish = false
+license = "Apache-2.0 OR MIT"
+edition = "2018"
+
+[profile.release]
+#lto = true
+
+[features]
+admin = []
+default = ["admin"]
+
+[patch.crates-io]
+#airmash-protocol = { git = "https://github.com/steamroller-airmash/airmash-protocol-rs" }
+#airmash-protocol-v5 = { git = "https://github.com/steamroller-airmash/airmash-protocol-v5" }
+
+[dependencies]
+tokio = { version=">=0.1.14", features=["async-await-preview"] }
+tokio-tls = "*"
+futures = "*"
+tungstenite = "*"
+tokio-tungstenite = "*"
+airmash-protocol = "0.3"
+airmash-protocol-v5 = "0.0.4"
+log = "*"
+hashbrown = "*"
+url = "*"
+env_logger = "*"
+rand = "*"
+native-tls = "*"
+lazy_static = "*"
+
+[dev-dependencies]
+clap = "*"

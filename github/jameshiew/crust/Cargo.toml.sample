@@ -1,0 +1,8 @@
+[package]
+name = "crust"
+version = "0.1.0"
+authors = ["James Hiew <james@hiew.net>"]
+
+[dependencies]
+lazy_static = "*"
+regex = "*"

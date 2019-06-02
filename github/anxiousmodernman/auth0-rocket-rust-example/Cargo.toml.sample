@@ -1,0 +1,45 @@
+[package]
+authors = ["Coleman McFarland <coleman.mcfarland@gmail.com>"]
+name = "changes"
+version = "0.1.0"
+
+[dependencies]
+bincode = "1.0.1"
+chrono = "0.4.5"
+crypto-hash = "0.3.1"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+openssl = "0.10.10"
+rand = "0.4"
+reqwest = "0.8.5"
+rocket_codegen = "0.4.0"
+serde = "1.0.70"
+serde_derive = "1.0.70"
+serde_json = "1.0.24"
+sled = "0.15.17"
+url = "1.2"
+
+[dependencies.rocket]
+version = "0.4.0"
+features = ["tls"]
+
+[dependencies.frank_jwt]
+optional = true
+version = "3"
+
+[dependencies.keyz]
+branch = "master"
+git = "https://github.com/anxiousmodernman/keyz"
+
+[dependencies.maud]
+features = ["rocket"]
+version = "0.20.0"
+
+[dependencies.x509-parser]
+branch = "master"
+git = "https://github.com/rusticata/x509-parser"
+
+[features]
+# Only the frank_jwt implementation works right now. 
+default = ["frank_jwt"]
+#ring-crypto = ["jsonwebtoken"]

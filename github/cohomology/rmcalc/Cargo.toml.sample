@@ -1,0 +1,16 @@
+[package]
+name = "rmcalc"
+version = "0.1.0"
+authors = ["Kilian Kilger <kkilger@gmail.com>"]
+
+[lib]
+name = "rmcalclib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rmcalc"
+path = "src/rmcalc.rs"
+
+[dependencies]
+num = "~0.2"
+num-rational = "~0.2"

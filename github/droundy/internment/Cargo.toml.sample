@@ -1,0 +1,32 @@
+[package]
+name = "internment"
+version = "0.3.6"
+authors = ["David Roundy <roundyd@physics.oregonstate.edu>"]
+
+description = "Easy interning of data"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/droundy/internment"
+
+readme = "README.md"
+categories = ["caching", "memory-management", "concurrency"]
+keywords = ["hash", "interning", "hashconsing", "caching", "interner"]
+
+[badges]
+
+appveyor = { repository = "droundy/internment" }
+travis-ci = { repository = "droundy/internment" }
+
+is-it-maintained-issue-resolution = { repository = "droundy/internment" }
+is-it-maintained-open-issues = { repository = "droundy/internment" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+
+lazy_static = "1.0"
+state = { version = "0.4", features = ["tls"] }
+tinyset = "^0.2.0"
+serde = "1.0"
+
+[dev-dependencies]
+
+quickcheck = "^0.4.1"

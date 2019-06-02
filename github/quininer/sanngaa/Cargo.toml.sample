@@ -1,0 +1,10 @@
+[package]
+name = "sanngaa"
+version = "0.1.0"
+authors = ["quininer kel <quininer@live.com>"]
+
+[dependencies]
+markup5ever = "0.2"
+tendril = "0.3"
+xml5ever = "0.7"
+kuchiki = "0.5"

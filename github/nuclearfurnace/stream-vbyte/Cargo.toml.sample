@@ -1,0 +1,34 @@
+[package]
+name = "stream-vbyte"
+version = "0.3.2"
+description = "Compress and decompress numbers efficiently in the Stream VByte encoding"
+authors = ["Marshall Pierce <marshall@mpierce.org>"]
+homepage = "https://bitbucket.org/marshallpierce/stream-vbyte-rust"
+repository = "https://bitbucket.org/marshallpierce/stream-vbyte-rust"
+readme = 'README.md'
+keywords = ["varint", "stream-vbyte"]
+categories = ["encoding", "compression"]
+license-file = "LICENSE.txt"
+
+[dependencies]
+byteorder = "1.1.0"
+stdsimd = {git = "https://github.com/rust-lang-nursery/stdsimd.git", rev = "eb6b92f0564cd23c0a36776f1bcb8c1667922db3", optional = true}
+
+[dev-dependencies]
+rand = "0.3.16"
+clap = "2.26.2"
+
+[profile.bench]
+# Useful for better disassembly when using `perf record` and `perf annotate`
+debug = true
+
+[features]
+default = []
+
+# Expose SIMD features
+x86_ssse3 = ["stdsimd"]
+x86_sse41 = ["stdsimd"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustc-args = ["-C", "target-feature=+ssse3,+sse4.1"]

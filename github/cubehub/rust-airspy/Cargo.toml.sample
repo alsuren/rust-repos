@@ -1,0 +1,12 @@
+[package]
+name = "airspy"
+version = "0.3.1"
+authors = ["Andres Vahter <andres.vahter@gmail.com>"]
+
+[dependencies]
+libc = "*"
+num = "*"
+log = "*"
+
+fern = "*"
+time = "*"

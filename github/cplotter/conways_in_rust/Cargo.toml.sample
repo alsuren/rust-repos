@@ -1,0 +1,11 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["Casper Lotter <casper@platform45.com>"]
+edition = "2018"
+
+[dependencies]
+piston_window = "0.81.0"
+
+[profile.release]
+debug = false

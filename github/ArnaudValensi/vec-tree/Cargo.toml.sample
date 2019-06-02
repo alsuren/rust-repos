@@ -1,0 +1,17 @@
+[package]
+authors = ["Arnaud Valensi <arnaud.valensi@gmail.com>"]
+categories = ["data-structures", "memory-management", "concurrency", "rust-patterns"]
+keywords = ["tree", "arena", "vectree", "generation", "ecs"]
+description = "A safe tree using an arena allocator that allows deletion without suffering from the ABA problem by using generational indices."
+edition = "2018"
+license = "MPL-2.0"
+name = "vec-tree"
+readme = "./README.md"
+repository = "https://github.com/ArnaudValensi/vec-tree"
+version = "0.1.2"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+generational-arena = "0.2.0"

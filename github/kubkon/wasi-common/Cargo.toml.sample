@@ -1,0 +1,29 @@
+[package]
+name = "wasi-common"
+version = "0.1.0"
+authors = [
+    "Adam C. Foltzer <acfoltzer@fastly.com>",
+    "Frank Denis <github@pureftpd.org>",
+    "Jakub Konka <kubkon@jakubkonka.com>",
+    "Dan Gohman <sunfish@mozilla.com>"]
+edition = "2018"
+license = "Apache-2.0 WITH LLVM-exception"
+
+[dependencies]
+wasi-common-cbindgen = { path = "wasi-common-cbindgen" }
+failure = "0.1"
+libc = "0.2"
+rand = "0.6"
+cfg-if = "0.1.9"
+
+[target.'cfg(unix)'.dependencies]
+nix = "0.13"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features=["std", "handleapi", "processthreadsapi", "winbase", "ws2def", "fileapi"] }
+
+[lib]
+name = "wasi_common"
+crate-type = ["rlib", "staticlib", "cdylib"]
+
+[workspace]

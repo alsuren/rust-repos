@@ -1,0 +1,8 @@
+[package]
+name = "lazyQ"
+version = "0.1.0"
+authors = ["nichuanlei"]
+
+[dependencies]
+raft = "0.4.0"
+grpcio = "0.4"

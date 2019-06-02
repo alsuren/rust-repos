@@ -1,0 +1,16 @@
+[package]
+authors = ["David Barnett <david@barnett.net.nz>"]
+name = "bf"
+version = "0.1.0"
+
+[[bin]]
+name = "bfi"
+test = false
+path = "src/main.rs"
+
+[dependencies]
+clap = "1.4.5"
+
+[lib]
+name = "bf"
+path = "src/lib.rs"

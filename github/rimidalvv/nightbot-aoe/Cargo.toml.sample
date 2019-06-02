@@ -1,0 +1,16 @@
+[package]
+name = "nightbot-aoe2"
+version = "1.5.2"
+authors = ["Johannes Boczek <johannes.boczek@web.de>"]
+
+[dependencies]
+rocket = "*"
+rocket_codegen = "*"
+reqwest = "*"
+serde_json = "*"
+serde = "*"
+serde_derive = "*"
+url = "*"
+cookie = "*"
+table-extract = "*"
+time = "*"

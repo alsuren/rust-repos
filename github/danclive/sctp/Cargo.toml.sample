@@ -1,0 +1,21 @@
+[package]
+name          = "sctp"
+version       = "0.1.7"
+license       = "MIT"
+authors       = ["danc danc@main.run>"]
+description   = "sctp"
+documentation = "https://docs.rs/sctp"
+homepage      = "https://github.com/mitum/sctp"
+repository    = "https://github.com/mitum/sctp"
+keywords       = ["sctp", "net"]
+exclude       = [
+  ".gitignore",
+  ".travis.yml",
+  "deploy.sh",
+  "test/**/*",
+]
+
+build         = "build.rs"
+
+[dependencies]
+libc = "0.2"

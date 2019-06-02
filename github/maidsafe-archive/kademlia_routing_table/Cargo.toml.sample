@@ -1,0 +1,16 @@
+[package]
+authors = ["MaidSafe Developers <dev@maidsafe.net>"]
+description = "Kademlia Routing Table implementation"
+documentation = "https://docs.rs/kademlia_routing_table"
+homepage = "https://maidsafe.net"
+license = "GPL-3.0"
+name = "kademlia_routing_table"
+readme = "README.md"
+repository = "https://github.com/maidsafe/kademlia_routing_table"
+version = "0.6.0"
+
+[dependencies]
+itertools = "~0.4.15"
+
+[dev-dependencies]
+rand = "~0.3.14"

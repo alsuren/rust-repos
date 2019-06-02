@@ -1,0 +1,11 @@
+[package]
+name = "c"
+version = "1.0.0"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/IvanUkhov/c"
+homepage = "https://github.com/IvanUkhov/c"
+description = "A shortcut for libc."
+
+[dependencies]
+libc = "*"

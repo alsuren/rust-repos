@@ -1,0 +1,24 @@
+[package]
+authors = ["Mathieu Suen <tryphont@pm.me>"]
+categories = [
+    "embedded",
+    "no-std",
+]
+description = "A i2c enhancement to the embedded-hal i2c traits"
+keywords = [
+    "embedded-hal-i2c",
+    "i2c-hal",
+]
+license = "0BSD"
+name = "i2c-hal-tools"
+readme = "README.md"
+repository = "https://github.com/mathk/i2c-hal-tools"
+version = "0.0.2"
+
+[dependencies.cast]
+default-features = false
+version = "0.2.2"
+
+[dependencies.embedded-hal]
+features = ["unproven"]
+version = "0.2.2"

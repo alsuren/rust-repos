@@ -1,0 +1,11 @@
+[package]
+name = "xorcism"
+version = "0.1.0"
+authors = ["Ben Herzog"]
+
+[dependencies]
+itertools = "0.7.3"
+counter = "0.4.3"
+derive_more = "0.13.0"
+clap = "2.32.0"
+rayon = "1.0.3"

@@ -1,0 +1,17 @@
+[package]
+name = "schach_reworked"
+version = "0.1.0"
+authors = ["fabianvdW"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.2.0"
+rand = "0.6.4"
+[profile.release]
+opt-level=3
+debug=false
+codegen-units=5
+lto=true
+[profile.test]
+opt-level=3
+debug=true

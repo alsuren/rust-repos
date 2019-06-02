@@ -1,0 +1,27 @@
+[package]
+name = "archon"
+version = "0.1.0"
+authors = ["Arvid E. Picciani <aep@exys.org>"]
+
+[dependencies]
+fuse = "0.3"
+time = "0.1"
+libc = "0.2"
+
+serde = "1.0"
+rmp-serde = "0.13"
+serde_derive = "1.0"
+
+nix = "0.8"
+sha2 = "0.6"
+digest = { version = "0.6", features = ["std"]}
+rollsum = "0.2"
+pbr = "1.0"
+clap = "2.26"
+url = "1.5"
+generic-array = "0.8"
+hex = "0.2"
+tempfile = "2.1"
+elfkit = "0.0.4"
+byteorder = "1"
+

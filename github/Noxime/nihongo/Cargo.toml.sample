@@ -1,0 +1,17 @@
+[package]
+name = "nihongo"
+version = "0.0.0"
+
+[dependencies]
+argparse = "0.2.1"
+sdl2 = "0.31.0"
+lazy_static = "1.0.0"
+time = "0.1.39"
+
+[dependencies.raw-cpuid]
+optional = true
+git = "https://github.com/gz/rust-cpuid"
+
+[features]
+default = ["detect_cpu"]
+detect_cpu = ["raw-cpuid"]

@@ -1,0 +1,43 @@
+[package]
+name = "time_wars"
+version = "0.0.1"
+readme = "README.md"
+authors = ["Til Blechschmidt <til@blechschmidt.de>, Noah Peeters <noah.peeters99@gmail.com>"]
+
+description = "Action packed strategic game where you fight against your enemy while time hopping through magical portals of the future."
+keywords = ["time", "travel", "strategic", "game", "top-down"]
+
+homepage = "https://github.com/TheMegaTB/time-wars"
+repository = "https://github.com/TheMegaTB/time-wars"
+
+
+[features]
+default = []
+f64-precision = []
+
+
+[lib]
+name = "server"
+path = "src/server/lib.rs"
+doc = false
+test = true
+bench = false
+doctest = false
+
+[[bin]]
+name = "client"
+path = "src/client/main.rs"
+
+[dependencies]
+gfx = "0.8.1"
+gfx_device_gl = "0.7.0"
+
+piston_window = "0.34.0"
+piston = "0.17.0"
+pistoncore-sdl2_window = "0.23.0"
+camera_controllers = "0.10.0"
+
+vecmath = "*"
+rand = "*"
+time = "*"
+find_folder = "*"

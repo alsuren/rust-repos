@@ -1,0 +1,8 @@
+[package]
+name = "tbg"
+version = "0.1.0"
+authors = ["Jake Howard <git@theorangeone.net>"]
+
+[dependencies]
+clap = "2.29.0"
+rand = "0.3.18"

@@ -1,0 +1,9 @@
+[package]
+name = "poured"
+version = "0.1.0"
+authors = ["Felix Jodoin <felix@fjstudios.net>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+rustc-serialize = "*"

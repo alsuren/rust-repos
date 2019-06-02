@@ -1,0 +1,17 @@
+[package]
+name = "spiderbutter"
+version = "0.2.1"
+edition = "2018"
+authors = ["Patrick Monaghan <pat@patsown.com>"]
+description = "A small whitelist based fileserver"
+
+[dependencies]
+inotify = "0.4"
+flate2 = "1.0.1"
+libc = "*"
+structopt = "0.2"
+failure = "0.1.1"
+
+[dependencies.acme-client]
+version = "0.5"
+default-features = false

@@ -1,0 +1,29 @@
+[package]
+name = "orbgame"
+version = "0.1.0"
+description = "The Orbital 2D Game engine"
+authors = ["Florian Blasius <flovanpt at posteo.de>"]
+readme = "README.md"
+license = "MIT"
+keywords = [
+    "orbital",
+    "redox",
+    "game",
+    "2D",
+    "engine",
+    "tiles"
+]
+edition = "2018"
+
+[lib]
+name = "orbgame"
+path = "src/lib.rs"
+
+# [profile.dev]
+# opt-level = 1
+
+[dependencies]
+# orbtk = { path = "../orbtk" }
+orbtk = { git = "https://gitlab.redox-os.org/redox-os/orbtk.git" }
+chrono = "0.4"
+fps_counter = "1.0.0"

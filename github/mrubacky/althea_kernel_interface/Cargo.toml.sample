@@ -1,0 +1,13 @@
+[package]
+name = "althea_kernel_interface"
+version = "0.1.0"
+authors = ["Jehan <jehan.tremback@gmail.com>"]
+description = "Gets information from and changes settings of kernel network stacks"
+license = "Apache-2.0"
+
+[dependencies]
+regex = "0.2"
+hwaddr = "0.1.2"
+derive-error = "0.0.4"
+itertools = "0.7.4"
+log = "0.3"

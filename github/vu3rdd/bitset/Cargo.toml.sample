@@ -1,0 +1,10 @@
+[package]
+name = "bitset"
+version = "0.1.0"
+authors = ["ramakrmu"]
+
+[lib]
+name = "libbitset"
+crate-type = ["dylib"]
+
+[dependencies]

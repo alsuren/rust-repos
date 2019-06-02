@@ -1,0 +1,19 @@
+[package]
+name = "chap8"
+version = "0.1.0"
+authors = ["Daniel Lewis <thecontrarian42@gmail.com>"]
+
+[dependencies]
+rand = "*"
+serde = "*"
+serde_yaml = "*"
+serde_derive = "*"
+ansi_term = "*"
+rustbox = "*"
+log = "*"
+log4rs = "*"
+log-panics = "*"
+sdl2 = "*"
+timer = "*"
+chrono = "*"
+

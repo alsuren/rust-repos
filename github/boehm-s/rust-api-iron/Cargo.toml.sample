@@ -1,0 +1,19 @@
+[package]
+name = "project"
+version = "0.1.0"
+authors = ["Steven BOEHM <boehm_s@etna-alternance.net>"]
+
+[dependencies]
+staticfile = "*"
+mount = "*"
+router = "*"
+env_logger = "*"
+ws = "*"
+hyper= "*"
+bodyparser = "*"
+postgres = "*"
+serde_json = "*"
+pwhash = "*"
+
+[dependencies.iron]
+version="*"

@@ -1,0 +1,31 @@
+[package]
+name = "rust_game"
+version = "0.0.0"
+authors = ["taylor thompson <jamestthompson3@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+rand = "0.5.5"
+console_error_panic_hook = "0.1.4"
+serde = "^1.0.59"
+serde_derive = "^1.0.59"
+js-sys = "0.3.17"
+
+[dependencies.wasm-bindgen]
+version = "^0.2.40"
+features = ["serde-serialize"]
+
+[profile.release]
+# Include function names in the `.wasm` for better debugging and
+# profiling. Comment this out if you're trying to create the smallest `.wasm`
+# binaries you can.
+debug = true
+
+# # Uncomment these lines to create smaller `.wasm` binaries, at the cost of
+# # longer compile times.
+# codegen-units = 1
+# incremental = false
+# lto = true
+# opt-level = "z"

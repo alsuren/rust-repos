@@ -1,0 +1,16 @@
+[package]
+name = "timely-rays"
+version = "0.1.0"
+authors = ["Thomas Parks <thomasparks@outlook.com>"]
+
+[dependencies]
+timely="*"
+abomonation="*"
+approx="*"
+image = "*"
+rand = "0.3"
+itertools = "*"
+
+[dependencies.nalgebra]
+version = "0.13"
+features = ["abomonation-serialize"]

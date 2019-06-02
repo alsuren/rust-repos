@@ -1,0 +1,15 @@
+[package]
+name = "scuttle6"
+version = "0.1.0"
+authors = ["Nick HS <nick@nickhs.com>"]
+
+[dependencies]
+pnet_packet = "0.21"
+pnet_base = "0.21"
+pcap = "0.7"
+log = "0.4"
+env_logger = "0.5"
+structopt = "0.2"
+failure = "0.1"
+regex = "1.0"
+mac_address = "0.8"

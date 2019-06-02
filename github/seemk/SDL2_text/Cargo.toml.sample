@@ -1,0 +1,20 @@
+[package]
+
+name = "sdl2_text"
+version = "0.0.1"
+
+authors = ["github.com/seemk"]
+
+[lib]
+
+name = "sdl2_text"
+path = "src/lib.rs"
+
+[dependencies.sdl2]
+
+git = "https://github.com/AngryLawyer/rust-sdl2"
+
+[dependencies.freetype-rs]
+
+git = "https://github.com/PistonDevelopers/freetype-rs"
+

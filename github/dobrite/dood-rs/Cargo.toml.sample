@@ -1,0 +1,18 @@
+[package]
+name = "dood-rs"
+version = "0.0.1"
+authors = ["Dave O <davidobrite@gmail.com>"]
+
+[dependencies]
+bitflags = "*"
+camera_controllers = "*"
+gfx = "*"
+gfx_device_gl = "*"
+hprof = "*"
+image = "*"
+piston = "*"
+piston-ai_behavior = "*"
+piston-gfx_texture = "*"
+piston_window = "*"
+rand = "*"
+snowflake = "*"

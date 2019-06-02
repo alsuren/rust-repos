@@ -1,0 +1,18 @@
+[package]
+
+name = "rust_oauth"
+version = "0.0.1"
+authors = ["Scott Cooper <scott.cooper2@mail.mcgill.ca>"]
+readme = "README.md"
+
+[dependencies]
+time = "*"
+rand = "*"
+rustc-serialize = "*"
+
+[dependencies.curl]
+git = "https://github.com/kanetkarster/curl-rust"
+branch = "response"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

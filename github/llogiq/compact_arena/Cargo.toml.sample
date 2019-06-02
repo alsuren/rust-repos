@@ -1,0 +1,23 @@
+[package]
+authors = ["Andre Bogus <bogusandre@gmail.de>"]
+categories = ["memory-management", "data-structures", "no-std"]
+description = "A crate with some types to allow indexed arenas with small memory footprint"
+edition = "2018"
+keywords = ["arena", "no-std", "no-heap"]
+license = "MIT OR Apache-2.0"
+name = "compact_arena"
+readme = "README.md"
+repository = "https://github.com/llogiq/compact_arena"
+version = "0.3.2"
+
+[badges]
+travis-ci = { repository = "llogiq/compact_arena" }
+
+[features]
+uninit = []
+alloc = []
+default = ["alloc"]
+
+[dev-dependencies]
+compiletest_rs = { version = "0.3", features = [ "stable" ] }
+crossbeam-utils = "0.6.5"

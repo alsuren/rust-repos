@@ -1,0 +1,23 @@
+[package]
+name = "sqlpop"
+version = "0.3.0"
+authors = ["gwenn"]
+edition = "2018"
+description = "SQL parser (as understood by SQLite)"
+repository = "https://github.com/gwenn/sqlpop"
+documentation = "https://docs.rs/sqlpop"
+readme = "README.md"
+keywords = ["sql", "parser", "sqlite"]
+categories = ["parser-implementations"]
+license = "Apache-2.0/MIT"
+build = "build.rs" # LALRPOP preprocessing
+
+[badges]
+travis-ci = { repository = "gwenn/sqlpop" }
+maintenance = { status = "experimental" }
+
+[dependencies]
+lalrpop-util = "0.16"
+
+[build-dependencies]
+lalrpop = "0.16"

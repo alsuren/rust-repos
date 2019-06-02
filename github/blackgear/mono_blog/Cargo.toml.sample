@@ -1,0 +1,17 @@
+[package]
+name = "mblog"
+version = "0.1.0"
+authors = ["Daniel <daniel65536@gmail.com>"]
+
+[dependencies]
+pulldown-cmark = { version = "0.2", default-features = false }
+fomat-macros = "0.3"
+rayon = "1.0"
+
+[profile.release]
+opt-level = 3
+debug = false
+debug-assertions = false
+lto = true
+panic = "abort"
+codegen-units = 4

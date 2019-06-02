@@ -1,0 +1,15 @@
+[package]
+name = "constellations"
+version = "0.1.0"
+authors = ["Michael Gattozzi <mgattozzi@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+failure = "*"
+nom = "*"
+termcolor = "1"
+structopt = "*"
+dirs = "1"
+walkdir = "2"
+rustyline = "*"

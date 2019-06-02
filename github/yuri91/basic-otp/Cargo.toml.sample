@@ -1,0 +1,10 @@
+[package]
+authors = ["Yuri Iozzelli <y.iozzelli@gmail.com>"]
+name = "basic-otp"
+version = "0.1.1"
+description = "Basic HOTP and TOTP implementation"
+license = "MIT"
+
+[dependencies]
+byteorder = "1.2.1"
+hmac-sha1 = "0.1.3"

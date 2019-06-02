@@ -1,0 +1,12 @@
+[package]
+name = "sota-client-responder"
+version = "0.1.0"
+authors = ["Shaun Taheri <shaun@advancedtelematic.com>"]
+
+[dependencies]
+env_logger = "0.4"
+log = "0.3"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+unix_socket = "0.5"

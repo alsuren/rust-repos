@@ -1,0 +1,12 @@
+[package]
+name = "vkbot"
+version = "0.1.0"
+authors = ["hetake2 <russianpresident666@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rvk = { git = "https://github.com/u32i64/rvk" }
+serde_json = "1.0"
+open = "1.2.2"
+rusqlite = "0.16.0"
+chrono = "0.4.6"

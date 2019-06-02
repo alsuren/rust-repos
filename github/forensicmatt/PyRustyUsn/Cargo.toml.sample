@@ -1,0 +1,13 @@
+[package]
+name = "pyrustyusn"
+version = "0.2.0"
+authors = ["Matthew Seyer <matthew.seyer@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+rusty_usn = {git = "https://github.com/forensicmatt/RustyUsn.git", branch = "master"}
+pyo3 = {version = "0.6.0", features = ["extension-module"]}
+pyo3-file = "0.2.0"

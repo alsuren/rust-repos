@@ -1,0 +1,26 @@
+[package]
+name = "pdd"
+version = "0.1.0"
+authors = ["sinitcin <antony@email.su>"]
+
+[workspace]
+members = [
+    "libconfig",
+    "libdb",
+    "libdbgserver",
+    "libengine",
+    "libmercury",
+    "libcomchannel",
+]
+
+[dependencies]
+libconfig = { path = "./libconfig"}
+libdbgserver = {path = "./libdbgserver"}
+libengine = {path = "./libengine"}
+libdb = {path = "./libdb"}
+libmercury = {path = "./libmercury"}
+libcomchannel = {path = "./libcomchannel"}
+
+serde_derive = "*"
+serde = "*"
+serde_json = "*"

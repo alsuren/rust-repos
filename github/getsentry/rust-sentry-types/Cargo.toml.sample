@@ -1,0 +1,35 @@
+[package]
+name = "sentry-types"
+version = "0.11.0"
+license = "Apache-2.0"
+description = "Common reusable types for implementing the sentry.io protocol."
+homepage = "https://sentry.io/"
+repository = "https://github.com/getsentry/rust-sentry-types"
+documentation = "https://docs.rs/sentry-types"
+keywords = ["sentry", "protocol"]
+readme = "README.md"
+authors = ["Sentry <hello@sentry.io>"]
+exclude = [
+    ".vscode/**/*",
+    "scripts/**/*"
+]
+edition = "2018"
+
+[features]
+default = ["with_protocol"]
+with_protocol = []
+# No longer used
+with_serde = []
+
+[badges]
+travis-ci = { repository = "getsentry/rust-sentry-types" }
+
+[dependencies]
+failure = "0.1.5"
+url = "1.7.2"
+serde = { version = "1.0.88", features = ["derive"] }
+serde_json = "1.0.38"
+url_serde = "0.2.0"
+chrono = { version = "0.4.6", features = ["serde"] }
+uuid = { version = "0.7.2", features = ["v4", "serde"] }
+debugid = { version = "0.4.0", features = ["with_serde"] }

@@ -1,0 +1,8 @@
+[package]
+name = "advent2015"
+version = "0.1.0"
+authors = ["Nathan Johnson <najohnson@redventures.com>"]
+
+[dependencies]
+rust-crypto = "0.2.36"
+regex = "0.2"

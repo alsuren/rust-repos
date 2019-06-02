@@ -1,0 +1,12 @@
+[package]
+
+name = "typedopts"
+version = "1.1.2"
+authors = ["Geoffroy Couprie <contact@geoffroycouprie.com>"]
+description = "Type aware command line parser"
+license = "MIT"
+repository = "https://github.com/Geal/typedopts"
+
+[dependencies]
+getopts = "~0.2.0"
+rustc-serialize = "~0.3.0"

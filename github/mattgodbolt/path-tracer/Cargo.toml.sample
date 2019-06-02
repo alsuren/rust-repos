@@ -1,0 +1,18 @@
+[package]
+name = "path_tracer"
+version = "0.1.0"
+description = "Path tracer"
+license = "MIT"
+authors = ["Matt Godbolt <matt@godbolt.org>"]
+repository = "https://github.com/mattgodbolt/path-tracer.git"
+readme = "README.md"
+
+[dependencies]
+argparse = "*"
+image = "*"
+num_cpus = "*"
+rand = "*"
+threadpool = "*"
+
+[profile.release]
+lto = true

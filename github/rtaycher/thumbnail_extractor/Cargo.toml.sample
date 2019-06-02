@@ -1,0 +1,13 @@
+[package]
+
+name = "thumbnail_extractor"
+version = "0.1.0"
+authors = [ "Roman A. Taycher <rtaycher1987@gmail.com>" ]
+
+[[bin]]
+
+name = "thumbnail_extractor"
+
+[dependencies]
+zip = "0.1"
+clap = "1.5"

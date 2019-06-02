@@ -1,0 +1,12 @@
+[package]
+name = "gmp-sys"
+version = "0.0.7"
+authors = ["Vladimir Matveev <vladimir.matweev@gmail.com>"]
+links = "gmp"
+build = "build.rs"
+description = "libgmp low-level bindings"
+license = "LGPL-3.0"  # Because libgmp is LGPL-3.0 and it is distributed in this package
+repository = "https://github.com/netvl/gmp-sys"
+
+[dependencies]
+libc = "0.2"

@@ -1,0 +1,14 @@
+[package]
+name = "mass_nes"
+version = "0.1.0"
+edition = "2018"
+authors = ["Nick Massey <nickmass@nickmass.com>"]
+
+[dependencies]
+glium = "0.24"
+cpal = "0.8"
+blip_buf = "0.1"
+rodio = "0.8"
+clap = "2"
+nes_ntsc = { path = "nes_ntsc", version = "0.1"}
+nes = { path = "nes" }

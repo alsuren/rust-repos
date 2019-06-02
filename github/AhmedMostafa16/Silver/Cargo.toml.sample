@@ -1,0 +1,38 @@
+[package]
+name = "silver-rs"
+version = "0.2.0-dev"
+authors = ["Ahmed Mostafa <amk67482@gmail.com>"]
+license = "MIT"
+description = "Fast, safe and asynchrnous web framework"
+
+[dependencies]
+hyper = { version = "0.12", features = ["runtime"], default-features = false }
+http = "0.1"
+mime = "0.3"
+bytes = "0.4"
+tokio = "0.1"
+tokio-tcp = "0.1"
+futures = "0.1"
+failure = { version = "0.1", features = ["derive"] }
+log = "0.4"
+scoped-tls = "^1.0"
+rustls = { version = "0.15", optional = true }
+tokio-rustls = { version = "0.9", optional = true }
+fnv = "1.0"
+hyperx = "0.13"
+tokio-codec = "0.1"
+cookie = {version="0.12", features =["secure", "percent-encode"], optional = true}
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[target.'cfg(unix)'.dependencies]
+tokio-uds = "0.2"
+
+[dev-dependencies]
+pretty_env_logger = "0.3"
+tokio-io = "0.1"
+
+[features]
+default = ["tls","session"]
+session = ["cookie"]
+tls = ["rustls", "tokio-rustls"]

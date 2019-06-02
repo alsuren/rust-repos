@@ -1,0 +1,34 @@
+[package]
+
+name = "rustyhex"
+version = "0.0.3"
+authors = [ "dpc@ucore.info" ]
+
+[[bin]]
+name = "rustyhex"
+path = "src/main.rs"
+
+
+[dependencies.piston]
+git = "https://github.com/pistondevelopers/piston/"
+
+[dependencies.gfx]
+git = "https://github.com/gfx-rs/gfx-rs/"
+
+[dependencies.gl]
+git = "https://github.com/bjz/gl-rs"
+
+[dev_dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs.git"
+
+[dependencies.glfw_window]
+git = "https://github.com/PistonDevelopers/glfw_window"
+
+[dependencies.cgmath]
+git = "https://github.com/bjz/cgmath-rs"
+
+[dependencies.hex2d]
+git = "https://github.com/dpc/hex2d-rs"
+
+[dependencies.obj-rs]
+git = "https://github.com/csherratt/obj-rs.git"

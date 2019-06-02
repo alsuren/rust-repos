@@ -1,0 +1,11 @@
+[workspace]
+members = [
+	"chap2/ex1",
+	"chap2/gcd-svc",
+	"chap2/mandelbrot",
+]
+name = "hellors"
+version = "0.1.0"
+authors = ["Sebastien Soudan <sebastien.soudan@gmail.com>"]
+
+[dependencies]

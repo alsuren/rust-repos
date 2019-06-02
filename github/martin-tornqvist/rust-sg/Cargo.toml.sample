@@ -1,0 +1,8 @@
+[package]
+name = "rf4x"
+version = "0.0.1"
+authors = ["Martin Törnqvist m.tornq@gmail.com"]
+
+[dependencies]
+ncurses = { git = "https://github.com/jeaye/ncurses-rs" }
+#sdl2 = "0.10.0"

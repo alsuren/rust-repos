@@ -1,0 +1,13 @@
+[package]
+name = "webserver_log"
+version = "0.1.0"
+authors = ["Peter Hrvola <peter.hrvola@hotmail.com>"]
+
+[dependencies]
+webserver_log_lib = { path = "./webserver_log_lib" }
+
+clap = "2.30"
+
+serde_yaml = "0.7"
+
+[workspace]

@@ -1,0 +1,14 @@
+[package]
+authors = ["Jonathan Creekmore <jonathan@thecreekmores.org>"]
+name = "regex-decode"
+description = "Decodes captures of a regular expression into Rust data types"
+version = "0.1.0"
+license = "MIT"
+repository = "https://github.com/jcreekmore/regex-decode"
+documentation = "https://docs.rs/regex-decode/"
+keywords = ["regex", "decode"]
+
+[dependencies]
+error-chain = "0.7.1"
+regex = "0.1.80"
+rustc-serialize = "0.3.22"

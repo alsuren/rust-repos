@@ -1,0 +1,31 @@
+[package]
+name = "log-sloth"
+version = "0.2.0"
+authors = ["Xavier Lange <xrlange@gmail.com>"]
+
+[dependencies]
+ctrlc = "*"
+docopt = "0.8"
+env_logger = "*"
+futures = "*"
+hostname = "0.1"
+hyper = "*"
+indexmap = { version = "*", features = ["serde-1"] }
+lazy_static = "*"
+log = {version = "*", features = ["release_max_level_info"] }
+nom = "*"
+nom-syslog = { path = "nom-syslog" }
+openssl-probe = "0.1.2"
+prctl = "*"
+pretty-bytes = "*"
+rusoto_core = { git = "https://github.com/rusoto/rusoto", branch = "master" }
+rusoto_kinesis = { git = "https://github.com/rusoto/rusoto", branch = "master" }
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+time = "*"
+tokio-core = "*"
+
+[profile.release]
+lto = true
+debug = true

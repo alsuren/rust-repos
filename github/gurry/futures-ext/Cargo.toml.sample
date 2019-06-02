@@ -1,0 +1,13 @@
+[package]
+name = "futures-ext"
+authors = ["Gurinder Singh <gurinder.singh@1e.com>"]
+version = "0.1.0"
+description = "A crate that provides some useful extension methods on a Future"
+repository = "https://github.com/gurry/futures-ext"
+license = "MIT"
+
+[dependencies]
+futures = "0.1.17"
+futures-cpupool = "0.1.7"
+lazy_static = "0.2.11"
+tokio-timer = "0.1.2"

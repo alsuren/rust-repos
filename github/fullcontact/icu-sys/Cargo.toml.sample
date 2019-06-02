@@ -1,0 +1,22 @@
+[package]
+name = "icu-sys"
+version = "0.1.0"
+authors = ["FullContact, Inc"]
+license = "MIT/Apache-2.0/ICU"
+readme = "README.md"
+build = "build.rs"
+repository = "https://github.com/fullcontact/icu-sys"
+homepage = "https://github.com/fullcontact/icu-sys"
+documentation = "https://api.fullcontact.com/v3/docs/rustdoc/icu_sys/index.html"
+
+# This is a bit problematic, since we need to drag three static libraries in,
+# as well as the transitive dependency on libstdc++.
+links = "icuuc"
+
+description = """
+Native bindings to the ICU C API.
+"""
+keywords = ["icu", "unicode", "collation", "normalization", "folding"]
+
+[dependencies]
+libc = "0.2.14"

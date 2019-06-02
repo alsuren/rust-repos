@@ -1,0 +1,12 @@
+[package]
+name = "simlink"
+version = "0.1.0"
+authors = ["Dave Parfitt <dparfitt@chef.io>"]
+license = "Apache-2.0"
+description = "Symlinks for the lazy"
+documentation = "https://github.com/metadave/simlink"
+homepage = "https://github.com/metadave/simlink"
+repository = "https://github.com/metadave/simlink"
+
+[dependencies]
+clap = "2.1.1"

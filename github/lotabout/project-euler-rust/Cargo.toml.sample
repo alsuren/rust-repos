@@ -1,0 +1,11 @@
+[package]
+name = "project-euler-rust"
+version = "0.1.0"
+authors = ["Mark Wallace <lotabout@gmail.com>"]
+
+[lib]
+name = 'prime'
+path = 'src/prime.rs'
+
+[dependencies]
+itertools = "0.4.6"

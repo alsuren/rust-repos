@@ -1,0 +1,8 @@
+[package]
+name = "eteco"
+version = "0.1.0"
+authors = ["smotouchi <shuya-motouchi@gmo.jp>"]
+
+[dependencies]
+iron = "0.4"
+yaml-rust = "0.3"

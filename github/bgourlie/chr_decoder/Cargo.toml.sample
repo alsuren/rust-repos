@@ -1,0 +1,9 @@
+[package]
+name = "chr_decoder"
+version = "0.1.0"
+authors = ["W. Brian Gourlie <bgourlie@gmail.com>"]
+
+[dependencies]
+glium = "*"
+clock_ticks = "*"
+sdl2 = "*"

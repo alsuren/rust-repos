@@ -1,0 +1,19 @@
+[package]
+name = "go_gc"
+version = "0.1.0"
+authors = ["Tinco Andringa <mail@tinco.nl>"]
+edition = '2018'
+
+[dependencies]
+futures = "0.1.24"
+cache_line_size = "0.2"
+array-init = "0"
+page_size = "0.4.1"
+
+[dependencies.back-to-the-future]
+git = "https://github.com/tinco/back-to-the-future"
+branch = "no_local_waker"
+
+[dependencies.memmap]
+git = "https://github.com/tinco/memmap-rs"
+branch = "mmap_with_address"

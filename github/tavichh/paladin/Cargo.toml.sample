@@ -1,0 +1,10 @@
+[package]
+name = "paladin"
+version = "0.1.0"
+authors = ["thomas hryckewycz <thryckz@Live.com>"]
+edition = "2018"
+
+[dependencies]
+colored = "1.8.0"
+reqwest = "0.9.17"
+clap = "2.33.0"

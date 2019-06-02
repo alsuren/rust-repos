@@ -1,0 +1,18 @@
+[package]
+authors = ["Frank Denis <github@pureftpd.org>"]
+keywords = ["crypto","hash","siphash"]
+license = "ISC"
+name = "sparx"
+description = "SPARX block ciphers implementations"
+repository = "https://github.com/jedisct1/rust-sparx"
+version = "0.1.1"
+categories = ["algorithms", "cryptography"]
+
+[dependencies]
+byteorder = { version = "1", default-features = false }
+clippy = { version = "~0", optional = true }
+
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = 3

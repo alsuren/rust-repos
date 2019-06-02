@@ -1,0 +1,10 @@
+[package]
+name = "dominate"
+version = "0.1.0"
+authors = ["Henri Lunnikivi <henri.lunnikivi@gmail.com>"]
+
+[dependencies]
+clap = "*"
+phf = "*"
+phf_macros = "*"
+

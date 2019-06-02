@@ -1,0 +1,16 @@
+[package]
+name = "circles"
+version = "0.1.0"
+authors = ["radix"]
+
+[[bin]]
+name = "main"
+
+[dependencies]
+piston_window = "0.59.0"
+ncollide = "0.10.0"
+nalgebra = "0.9.*"
+rand = "0.3.*"
+find_folder = "0.3.0"
+fps_counter = "0.2.0"
+image = "0.10.0"

@@ -1,0 +1,46 @@
+[package]
+name = "a_fractal_a_day"
+version = "0.1.1"
+authors = ["Hendrik Schawe <surt91@gmail.com>"]
+description = "This is a Twitter bot, which can tweet pictures of random fractals."
+homepage = "https://twitter.com/AFractalADay"
+
+[[bin]]
+name = "a_fractal_a_day"
+doc = false
+required-features = ["binaries"]
+
+[dependencies]
+png = "*"
+rand = "^0.6"
+rand_pcg = "*"
+num = {version = "*", features = ["serde"]}
+itertools = "*"
+rayon = "*"
+num_cpus = "*"
+time = "*"
+clap = "*"
+
+log = "*"
+simplelog = "*"
+log-panics = "*"
+
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+
+lazy_static = "1.2.0"
+
+[dev-dependencies]
+assert_approx_eq = "*"
+
+[dependencies.turtle]
+version = "0.1"
+git = "https://github.com/surt91/turtle"
+
+[dependencies.my_twitter]
+path = "my_twitter"
+optional = true
+
+[features]
+binaries = ["my_twitter"]

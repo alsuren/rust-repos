@@ -1,0 +1,8 @@
+[package]
+name = "bolt-proto"
+version = "0.0.1"
+authors = ["Matt Cocar <matt961@protonmail.ch>"]
+
+[dependencies]
+bytes = "0.4"
+failure = "0.1"

@@ -1,0 +1,15 @@
+[package]
+name = "monrs"
+version = "0.1.0"
+authors = ["gaobushuang <stormgbs@gmail.com>"]
+
+[dependencies]
+iron = "0.5.1"
+ssh2 = "0.3.1"
+regex = "0.1.55"
+serde = "0.9.11"
+serde_json = "0.9.9"
+serde_derive = "0.9.11"
+time = "0.1.36"
+redis = "0.8.0"
+oping = "0.3.1"

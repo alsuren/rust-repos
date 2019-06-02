@@ -1,0 +1,8 @@
+[package]
+name = "cmdtoarr"
+version = "0.1.0"
+description = "A tool for converting a command and arguments into a string array that can be used in configuration files."
+authors = ["Brandon Clark <webmind@hotmail.com>"]
+
+[dependencies]
+regex = "1"

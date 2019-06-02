@@ -1,0 +1,30 @@
+[package]
+name = "rune"
+version = "0.1.0"
+authors = ["Sushant <sushant.dinesh94@gmail.com>"]
+
+[features]
+default=[]
+
+[[bin]]
+name = "runec"
+path = "runec/main.rs"
+
+[dependencies]
+petgraph = "*"
+rustc-serialize = "*"
+regex = "*"
+clippy = {version = "0.0.61", optional = true}
+docopt = "0.6"
+
+[dependencies.libsmt]
+path = "../libsmt-rs/"
+
+#[dependencies.radeco-lib]
+#path = "../radeco-lib/"
+
+[dependencies.esil]
+path = "../esil-rs/"
+
+[dependencies.r2pipe]
+path = "../r2pipe.rs/"

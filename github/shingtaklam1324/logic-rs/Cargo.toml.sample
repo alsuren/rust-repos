@@ -1,0 +1,21 @@
+[package]
+name = "logic-rs"
+version = "0.2.3"
+authors = ["Shing Tak Lam <shingtaklam1324@gmail.com>"]
+license = "MIT"
+description = "logic-rs -- A logic circuit simulator / interpreter written in Rust"
+
+build = "build.rs"
+
+[dependencies.regex]
+version = "0.2.0"
+
+[dependencies.lalrpop-util]
+version = "0.13.1"
+
+[build-dependencies.lalrpop]
+version = "0.13.1"
+
+[dependencies.clap]
+version = "2.27.1"
+

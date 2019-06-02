@@ -1,0 +1,9 @@
+[package]
+name = "message-in-a-bottle"
+version = "0.1.0"
+authors = ["Jacob Pledger <jacob@jacobpledger.com>"]
+
+[dependencies]
+imap = "0.8.0"
+rustls = "0.12.0"
+openssl = "0.10.6"

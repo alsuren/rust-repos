@@ -1,0 +1,14 @@
+[package]
+name = "filthdb"
+version = "0.1.0"
+authors = ["Icy Defiance <icydefiance@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+maud = { version = "0.16.2", features = ["rocket"] }
+maud_macros = "0.16.3"
+rocket = "0.2.9"
+rocket_codegen = "0.2.9"
+
+[profile.release]
+lto = true

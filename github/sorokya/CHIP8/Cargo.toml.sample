@@ -1,0 +1,10 @@
+[package]
+name = "CHIP8"
+version = "0.1.0"
+authors = ["Richard Leek <richard@prositeone.com>"]
+
+[dependencies]
+sfml = { git = "https://github.com/jeremyletang/rust-sfml" }
+rand = "0.3"
+enum_primitive = "0.1.0"
+clap = "2.18.0"

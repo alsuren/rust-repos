@@ -1,0 +1,10 @@
+[package]
+name = "globals"
+version = "0.0.4"
+authors = ["Richard Anaya"]
+edition = "2018"
+description = "Painless but very unsafe global variables in Rust"
+license = "MIT"
+
+[dependencies]
+anymap = "0.12"

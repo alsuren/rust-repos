@@ -1,0 +1,12 @@
+[package]
+name = "trianglez"
+version = "0.1.0"
+authors = ["jankus"]
+
+[dependencies]
+glfw = "*"
+gl = "*"
+image = "*"
+
+cgmath="*"
+tobj="*"

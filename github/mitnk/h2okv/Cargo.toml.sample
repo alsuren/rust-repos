@@ -1,0 +1,16 @@
+[package]
+name = "h2okv"
+version = "0.1.0"
+authors = ["Hugo Wang <w@mitnk.com>"]
+edition = "2018"
+
+[[bin]]
+name = "h2okv"
+path = "src/main.rs"
+
+[[bin]]
+name = "h2okv-cli"
+path = "src/cli/main.rs"
+
+[dependencies]
+byteorder = "1"

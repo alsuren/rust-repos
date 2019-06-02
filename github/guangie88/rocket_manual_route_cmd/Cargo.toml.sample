@@ -1,0 +1,8 @@
+[package]
+name = "rocket_manual_route_cmd"
+version = "0.1.0"
+authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
+
+[dependencies]
+hyper = "0.10"
+rocket = { git = "https://github.com/SergioBenitez/Rocket.git", branch = "master" }

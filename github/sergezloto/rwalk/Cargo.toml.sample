@@ -1,0 +1,9 @@
+[package]
+name = "to-png"
+version = "0.1.0"
+authors = ["szloto <sergezloto@icloud.com>"]
+
+[dependencies]
+walkdir = "*"
+imagefmt = "*"
+structopt = "*"

@@ -1,0 +1,19 @@
+[package]
+
+name = "resources_package"
+version = "0.1.0"
+authors = ["Pierre Krieger <pierre.krieger1708@gmail.com>"]
+license = "Apache-2.0"
+description = "Macro that allows you to package files inside your libraries or executables."
+repository = "https://github.com/tomaka/rust-package"
+readme = "README.md"
+keywords = ["gamedev", "resources"]
+
+[lib]
+name = "resources_package"
+path = "src/lib.rs"
+plugin = true
+
+[dependencies.resources_package_package]
+path = "package"
+version = "*"

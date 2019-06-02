@@ -1,0 +1,52 @@
+[package]
+name = "pi-b-q-rust"
+version = "0.1.0"
+authors = ["Dan Elbert <dan.elbert@gmail.com>"]
+build = "build.rs"
+links = "libsqlite"
+publish = false
+
+[features]
+db_trace = ["rusqlite/trace"]
+
+[lib]
+name = "pibq"
+path = "src/lib.rs"
+
+[[bin]]
+name = "web"
+path = "src/web.rs"
+
+[[bin]]
+name = "harvester"
+path = "src/harvester.rs"
+
+[build-dependencies]
+gcc = "0.3"
+
+[dependencies]
+bitflags = "*"
+libc = "*"
+getopts = "0.2.14"
+serial = "0.3"
+iron = "0.4.0"
+router = "0.4.0"
+mount = "0.2.0"
+handlebars-iron = "0.18.0"
+url = "*"
+persistent = "0.2.0"
+rustc-serialize = "*"
+r2d2 = "*"
+logger = "0.1.0"
+
+[dependencies.rusqlite]
+version = "0.7.3"
+features = ["chrono"]
+
+[dependencies.chrono]
+version = "0.2"
+features = ["rustc-serialize"]
+
+[dependencies.staticfile]
+version = "0.3.0"
+features = ["cache"]

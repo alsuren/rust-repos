@@ -1,0 +1,25 @@
+[package]
+name = "amethyst-experiments"
+version = "0.1.0"
+authors = ["Simon Rönnberg <simon.ronnberg@codemill.se>"]
+
+[dependencies]
+amethyst = { path = "../amethyst/" }
+remawin = { path = "../remawin-rs/remawin/" }
+remawin_glutin_mapper = { path = "../remawin-rs/remawin_glutin_mapper/" }
+glutin = "*"
+time = "*"
+cgmath = "0.14"
+rand = "*"
+shrev = { path = "../shrev-rs/" }
+collision = "*"
+serde = "1.0.11"
+serde_derive = "*"
+
+[[example]]
+name = "hello"
+path = "01_hello/main.rs"
+
+[[example]]
+name = "pong"
+path = "02_pong/main.rs"

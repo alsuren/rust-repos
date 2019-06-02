@@ -1,0 +1,118 @@
+[package]
+name = "mesabox"
+version = "0.1.0"
+authors = ["The MesaLock Linux Developers"]
+description = "A collection of utilities important to basic system functionality"
+autotests = false
+
+[features]
+arch = ["libmesabox/arch"]
+base32 = ["libmesabox/base32"]
+base64 = ["libmesabox/base64"]
+yes = ["libmesabox/yes"]
+gnu = [
+    "arch",
+    "base32",
+    "base64",
+    "yes"
+]
+
+getty = ["libmesabox/getty"]
+loginutils = [
+    "getty"
+]
+
+# FIXME: this is only like this because we can't rename dependencies and we use the same macro in
+#        the tests that libmesabox uses to build
+tar_util = ["libmesabox/tar_util"]
+lsb = [
+    "tar_util"
+]
+
+ping = ["libmesabox/ping"]
+networking = [
+    "ping"
+]
+
+cat = ["libmesabox/cat"]
+chmod = ["libmesabox/chmod"]
+echo = ["libmesabox/echo"]
+false = ["libmesabox/false"]
+head = ["libmesabox/head"]
+sh = ["libmesabox/sh", "env_logger"]
+sleep = ["libmesabox/sleep"]
+true = ["libmesabox/true"]
+uname = ["libmesabox/uname"]
+posix = [
+    "cat",
+    "chmod",
+    "echo",
+    "false",
+    "head",
+    "sh",
+    "sleep",
+    "true",
+    "uname"
+]
+
+init = ["libmesabox/init"]
+sysinit = [
+    "init"
+]
+
+# utilities that work on Unix
+unix = [
+    "gnu",
+    "loginutils",
+    "lsb",
+    "networking",
+    "posix",
+    "sysinit"
+]
+
+# utilities that work on Windows
+windows = [
+    "gnu",
+
+    "cat",
+    "echo",
+    "false",
+    "head",
+    "sleep",
+    "true",
+    "uname"
+]
+
+# the following are real features (rather than utilities)
+# used to prioritize latency over throughput in utilites that care
+latency = ["libmesabox/latency"]
+# use dynamic dispatch rather than static dispatch (makes utilities slower, but sometimes smaller
+# as well).  this is preferred to no-dynamic if both are specified
+full-dynamic = ["libmesabox/full-dynamic"]
+# only use static dispatch (this will lead to dramatically larger compile times and binary sizes)
+no-dynamic = ["libmesabox/no-dynamic"]
+system-alloc = []
+
+default = ["unix"]
+
+[workspace]
+
+[dependencies]
+libmesabox = { path = "libmesabox", default-features = false }
+env_logger = { version = "0.5.11", optional = true, default-features = false }
+
+[dev-dependencies]
+tempfile = "3.0.2"
+libc = "0.2.40"
+lazy_static = "1.0.1"
+assert_cmd = "0.9.0"
+assert_fs = "0.9.0"
+predicates = "0.9.0"
+timebomb = "0.1.2"
+
+[profile.release]
+lto = true
+panic = "abort"
+
+[[test]]
+name = "tests"

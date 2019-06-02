@@ -1,0 +1,16 @@
+[package]
+
+name = "rask"
+version = "0.0.1"
+description = "A simple web framework for Rust."
+license = "MIT"
+authors = ["Håvar Nøvik <havar.novik@gmail.com>"]
+
+[dependencies]
+regex = "0.1"
+hyper = "0.6"
+url = "0.2"
+multimap = "0.1"
+log = "0.3"
+cookie = "0.1"
+

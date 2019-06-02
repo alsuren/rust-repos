@@ -1,0 +1,21 @@
+[package]
+authors = ["Filip Szczepański <jazz2rulez@gmail.com>"]
+license = "MIT"
+name = "runt"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+bytes = "0.4.10"
+chrono = "0.4.6"
+cssparser = "0.24.0"
+failure = "0.1.2"
+futures = "0.1.24"
+html5ever = "0.22.3"
+hyper = "0.12.10"
+hyper-tls = "0.3.0"
+http = "0.1.13"
+selectors = "0.20.0"
+termion = "1.5.1"
+tokio = "0.1.8"
+url = "1.7.1"

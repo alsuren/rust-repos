@@ -1,0 +1,67 @@
+[package]
+
+name = "pink_spider"
+version = "1.1.0"
+authors = ["kumabook@live.jp"]
+
+#![feature(os)]
+
+[[bin]]
+name = "app"
+path = "src/main.rs"
+
+[[bin]]
+name = "rss_crawler"
+path = "src/rss_crawler.rs"
+
+[[bin]]
+name = "update_tracks"
+path = "src/update_tracks.rs"
+
+[[bin]]
+name = "update_albums"
+path = "src/update_albums.rs"
+
+[[bin]]
+name = "update_artists"
+path = "src/update_artists.rs"
+
+[[bin]]
+name = "playlist_crawler"
+path = "src/playlist_crawler.rs"
+
+[features]
+default = ["postgres"]
+
+[dependencies]
+iron             = "*"
+router           = "*"
+hyper            = "*"
+regex            = "*"
+string_cache     = "*"
+tendril          = "*"
+html5ever        = "*"
+xml5ever         = "0.12.0"
+url              = "*"
+lazy_static      = "*"
+toml             = "0.2.1"
+uuid             = { version = "0.5.0", features = ["v4", "serde"] }
+staticfile       = "*"
+chrono           = { version = "*", features = ["serde"] }
+queryst          = "*"
+bodyparser       = "*"
+params           = "*"
+serde            = "^1"
+serde_json       = "^1"
+serde_derive     = "^1"
+opengraph        = "^0"
+feed-rs          = "^0"
+encoding         = "^0.2"
+reqwest          = "*"
+[dependencies.mount]
+git = "https://github.com/iron/mount.git"
+[dependencies.postgres]
+git = "https://github.com/sfackler/rust-postgres.git"
+branch = "master"
+features = ["with-uuid", "with-chrono", "with-serde_json"]
+optional = true

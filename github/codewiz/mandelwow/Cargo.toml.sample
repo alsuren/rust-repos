@@ -1,0 +1,45 @@
+#cargo-features = ["edition"]
+
+[package]
+name = "mandelwow"
+version = "0.7.0"
+authors = ["Bernie Innocenti <bernie@codewiz.org>"]
+license = "GPL-3.0+"
+#edition = '2018'
+
+[profile.release]
+lto = true
+panic = "unwind"
+opt-level = 3
+
+[dependencies]
+cgmath = "*"
+glium = "0.22"
+glutin = "0.18"
+image = { version = "0.20", features = ["png_codec"], optional = true }
+libxm = "1.0.0"
+rust-rocket = { path = "rust-rocket", optional = true }
+rand = "*"
+sdl2 = "*"
+
+[features]
+default = ["image", "logging"]
+min = []
+logging = []
+editor = ["rust-rocket"]
+
+#[replace]
+#"glutin:0.7.4" = { path = "/home/bernie/src/glutin" }
+#"glium:0.16.0" = { path = "/home/bernie/src/glium" }
+
+[target.armv7-linux-androideabi]
+ar = "$ANDROID_NDK_HOME/arm/bin/arm-linux-androideabi-ar"
+linker = "$ANDROID_NDK_HOME/arm/bin/arm-linux-androideabi-clang"
+
+[lib]
+name = "mandelwow_lib"
+path = "lib.rs"
+
+[[bin]]
+name = "mandelwow"
+path = "main.rs"

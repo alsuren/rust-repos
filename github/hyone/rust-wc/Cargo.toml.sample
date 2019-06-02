@@ -1,0 +1,19 @@
+[package]
+name = "wc"
+version = "0.1.1"
+authors = ["hyone <hyone.development@gmail.com>"]
+
+[[bin]]
+name = "rust-wc"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+docopt = "0.8"
+bytecount = "0.1.7"
+serde = "1.0"
+serde_derive = "1.0"
+
+[features]
+avx-accel = ["bytecount/avx-accel"]
+simd-accel = ["bytecount/simd-accel"]

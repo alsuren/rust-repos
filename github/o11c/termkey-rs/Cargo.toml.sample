@@ -1,0 +1,17 @@
+[project]
+name = "termkey"
+version = "0.17.5"
+authors = ["Ben Longbons <b.r.longbons@gmail.com>"]
+build = [
+    "./install_termkey.sh",
+    "./generate_link.sh"
+]
+
+[lib]
+name = "termkey"
+crate_type = ["dylib"]
+test = false
+
+[[test]]
+name = "integration"
+path = "src/test.rs"

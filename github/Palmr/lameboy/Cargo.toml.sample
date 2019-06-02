@@ -1,0 +1,21 @@
+[package]
+name = "lameboy"
+version = "0.1.0"
+authors = ["Nick Palmer <nick@palmr.co.uk>"]
+description = "Yet another Game Boy emulator"
+readme = "Readme.md"
+homepage = "https://github.com/palmr/lameboy"
+repository = "https://github.com/palmr/lameboy"
+license = "MIT"
+
+[dependencies]
+clap = "~2.32"
+bitflags = "~1.0"
+nalgebra = "0.16"
+imgui = "0.0.20"
+imgui-glium-renderer = { version = "0.0.20" }
+imgui-sys = { version = "0.0.20", features = ["glium"] }
+glium = { version = "0.22", default-features = true }
+glutin = "*"
+log = "0.4"
+log4rs = "0.8"

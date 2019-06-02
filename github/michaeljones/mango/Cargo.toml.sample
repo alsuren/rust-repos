@@ -1,0 +1,11 @@
+[package]
+name = "mango"
+version = "0.1.0"
+authors = ["Michael Jones <m.pricejones@gmail.com>"]
+
+[dependencies]
+yaml-rust = "*"
+json = "*"
+conrod = { version = "*", features = ["winit", "glium"] }
+conrod_derive = "*"
+clap = "*"

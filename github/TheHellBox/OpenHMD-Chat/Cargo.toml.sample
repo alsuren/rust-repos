@@ -1,0 +1,25 @@
+[package]
+name = "openhmd-chat"
+version = "0.4.0"
+authors = ["TheHellBox <hellboxstudio@yandex.ru>"]
+
+[dependencies]
+openhmd-rs="0.1.9"
+alto="3.0.1"
+time = "0.1.40"
+cobalt="*"
+opus="*"
+serde="1.0"
+serde_derive = "1.0"
+bincode="1.0"
+clap="*"
+glium="0.21.0"
+tobj="*"
+image="*"
+nalgebra={ version = "0.15", features = ["serde-serialize"] }
+alga="0.6"
+hlua="0.4"
+conrod={ version = "0.60.0", features = ["glium", "winit"] }
+lazy_static = "1.1.0"
+rand="*"
+reqwest = "0.9.1"

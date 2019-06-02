@@ -1,0 +1,10 @@
+[package]
+name = "spaces"
+version = "0.1.0"
+authors = ["Brendan Bartels <bbartels@iastate.edu>"]
+
+[dependencies]
+
+[[bin]]
+name = "main"
+doc = false

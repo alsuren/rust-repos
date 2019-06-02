@@ -1,0 +1,8 @@
+[package]
+name = "chip8_opcode"
+version = "0.1.0"
+authors = ["Iurii Kobein <ext-iurii.kobein@here.com>"]
+
+[dependencies]
+rand = "0.5.0"
+sdl2 = "0.31.0"

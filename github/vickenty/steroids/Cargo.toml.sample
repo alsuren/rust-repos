@@ -1,0 +1,9 @@
+[package]
+name = "steroids"
+version = "0.1.0"
+authors = ["Vickenty Fesunov <kent@setattr.net>"]
+
+[dependencies]
+three="0.2"
+nphysics3d="0.6"
+ncollide="0.11"

@@ -1,0 +1,17 @@
+[package]
+name = "regl-app"
+version = "0.1.0"
+authors = ["Ilkka Rauta <ilkka.rauta@gmail.com>"]
+
+[dependencies.regl]
+git = "https://github.com/irauta/regl.git"
+
+[dependencies.glfw]
+version = "*"
+
+[dependencies.gl]
+version = "*"
+
+[dependencies.cgmath]
+#version = "*"
+git = "https://github.com/bjz/cgmath-rs.git"

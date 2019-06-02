@@ -1,0 +1,10 @@
+[package]
+name = "stratagem"
+description = "Stratego, but in Rust"
+version = "0.1.0"
+authors = ["alex-smith <azphreal19@protonmail.com>"]
+
+[dependencies]
+failure = "0.1.1"
+rand = "0.4.1"
+termion = "1.5.1"

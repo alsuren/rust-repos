@@ -1,0 +1,22 @@
+[package]
+name = "goap"
+version = "0.1.0"
+authors = ["Walter Pearce <jaynus@gmail.com>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+# Utility stuff
+log = { version = "0.4" }
+pathfinding = "*"
+serde = { version = "*", optional = true, features = ["derive"]}
+
+[features]
+default = [ ]
+
+[dev-dependencies]
+pretty_assertions = "*"
+chrono = "*"
+fern = {version = "0.5", features = ["colored"] }
+serde_json = "*"

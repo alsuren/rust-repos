@@ -1,0 +1,9 @@
+[package]
+name = "iconapi"
+version = "0.1.0"
+authors = ["dsd"]
+
+[dependencies]
+warp = "~0.1.10"
+log4rs = "~0.8.1"
+log = "~0.4.0"

@@ -1,0 +1,6 @@
+[workspace]
+members = ["scripts/build-script", "pekit"]
+
+[profile.release]
+debug = false
+lto = true

@@ -1,0 +1,15 @@
+[package]
+name = "barh"
+version = "0.0.1"
+authors = ["Evgeniy Reizner <razrfalcon@gmail.com>"]
+keywords = ["charts", "graph", "bar", "generator", "svg"]
+license = "MIT"
+description = "A simple horizontal bar chart generator."
+
+[dependencies]
+svgdom = "0.10"
+serde_json = "1.0"
+rusttype = "0.4"
+
+[lib]
+doctest = false

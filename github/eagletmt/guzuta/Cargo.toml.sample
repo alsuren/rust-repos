@@ -1,0 +1,28 @@
+[package]
+name = "guzuta"
+version = "0.2.9"
+authors = ["Kohei Suzuki <eagletmt@gmail.com>"]
+description = "Custom repository manager for ArchLinux pacman"
+homepage = "https://github.com/eagletmt/guzuta"
+repository = "https://github.com/eagletmt/guzuta"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+base64 = "0.10"
+clap = "2.31"
+env_logger = "0.5"
+failure = "0.1"
+flate2 = "1.0"
+futures = "0.1"
+gpgme = "0.8"
+log = "0.4"
+rusoto_core = "0.35"
+rusoto_s3 = "0.35"
+rust-crypto = "0.2"
+rust-lzma = "0.3"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"
+tar = "0.4"
+tempdir = "0.3"

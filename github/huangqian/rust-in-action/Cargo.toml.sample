@@ -1,0 +1,119 @@
+[package]
+name = "rust-in-action"
+version = "0.1.0"
+authors = ["黄骞 <huangqian866@163.com>"]
+
+[dependencies]
+rand = "0.5.5"
+log = "0.4.5"
+redis = "*"
+mysql = "15.1.0"
+
+
+
+[[example]]
+name = "hello"
+path = "examples/hello.rs"
+
+[[example]]
+name = "tuple"
+path = "examples/tuple.rs"
+
+[[example]]
+name = "array"
+path = "examples/array.rs"
+
+[[example]]
+name = "functions"
+path = "examples/functions.rs"
+
+[[example]]
+name = "control-flow"
+path = "examples/control-flow.rs"
+
+[[example]]
+name = "loop"
+path = "examples/loop.rs"
+
+[[example]]
+name = "ownership"
+path = "examples/ownership.rs"
+
+[[example]]
+name = "structs"
+path = "examples/structs.rs"
+
+[[example]]
+name = "print-format"
+path = "examples/print-format.rs"
+
+[[example]]
+name = "variables"
+path = "examples/variables.rs"
+
+[[example]]
+name = "references"
+path = "examples/references.rs"
+
+[[example]]
+name = "slices"
+path = "examples/slices.rs"
+
+[[example]]
+name = "enums"
+path = "examples/enums.rs"
+
+[[example]]
+name = "match"
+path = "examples/match.rs"
+
+[[example]]
+name = "vector"
+path = "examples/vectors.rs"
+
+[[example]]
+name = "hashmap"
+path = "examples/hashmap.rs"
+
+[[example]]
+name = "panic"
+path = "examples/panic.rs"
+
+[[example]]
+name = "traits"
+path = "examples/traits.rs"
+
+
+
+[[example]]
+name = "mysql"
+path = "examples/mysql.rs"
+
+[[example]]
+name = "redis"
+path = "examples/redis.rs"
+
+[[example]]
+name = "copy"
+path = "examples/copy.rs"
+
+[[example]]
+name = "closure"
+path = "examples/closure.rs"
+
+[[example]]
+name = "macro"
+path = "examples/macro.rs"
+
+[[example]]
+name = "box"
+path = "examples/box.rs"
+
+[[example]]
+name = "borrow"
+path = "examples/borrow.rs"
+
+[[example]]
+name = "lifetimes"
+path = "examples/lifetimes.rs"
+

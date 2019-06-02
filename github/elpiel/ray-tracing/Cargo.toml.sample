@@ -1,0 +1,12 @@
+[package]
+name = "ray_trace"
+version = "0.1.0"
+authors = ["LachezarLechev <lachezar.lechev@skydreams.com>"]
+edition = "2018"
+
+[lib]
+name = "ray_trace"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "^0.6"

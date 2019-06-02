@@ -1,0 +1,9 @@
+[package]
+name = "rust_shell"
+version = "0.1.0"
+authors = ["08A"]
+
+[dependencies]
+nix = "0.11.0"
+users = "0.7"
+chrono = "0.4"

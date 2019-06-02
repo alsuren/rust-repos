@@ -1,0 +1,24 @@
+[package]
+name = "nextcloud_appstore"
+version = "0.4.0"
+authors = ["Christoph Wurst <christoph@winzerhof-wurst.at>"]
+description = "Rust library for the Nextcloud app store"
+readme = "README.md"
+repository = "https://github.com/ChristophWurst/nextcloud_appstore"
+keywords = ["nextcloud"]
+license = "GPL-3.0"
+exclude = [
+    ".vscode",
+]
+
+[badges]
+travis-ci = { repository = "ChristophWurst/nextcloud_appstore" }
+
+[dependencies]
+failure = "0.1.1"
+futures = "0.1"
+hyper = "0.12.10"
+hyper-tls = "0.3.0"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

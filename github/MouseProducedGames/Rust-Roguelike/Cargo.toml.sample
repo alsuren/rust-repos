@@ -1,0 +1,23 @@
+[package]
+name = "rrl"
+version = "0.1.0"
+authors = ["MouseProducedGames"]
+edition = "2018"
+
+[dependencies]
+crossterm = "0.8.0"
+crossterm_cursor = "0.1.0"
+crossterm_input = "0.2.0"
+crossterm_screen = "0.1.0"
+crossterm_style = "0.2.0"
+crossterm_terminal = "0.1.0"
+derive_more = "0.14.0"
+enumflags2 = "^0.5"
+enumflags2_derive = "^0.5"
+fixed = "0.3.2"
+linked-hash-map = "0.5.2"
+rand = "0.6"
+rust_dice = { path = "./src/crates/rust_dice" }
+shred = "0.7.1"
+shred-derive = "0.5.1"
+specs = "0.14.3"

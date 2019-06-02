@@ -1,0 +1,14 @@
+[package]
+name = "iploc"
+version = "0.1.0"
+authors = ["hyq <i@hyq.me>"]
+description = "get ip location"
+repository = "https://github.com/hyqhyq3/iploc"
+license = "Apache-2.0"
+
+[[bin]]
+name = "iploc"
+
+[dependencies.hyper]
+version="0.9.7"
+default-features=false

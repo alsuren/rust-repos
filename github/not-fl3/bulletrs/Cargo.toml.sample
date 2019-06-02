@@ -1,0 +1,10 @@
+[package]
+name = "bulletrs"
+version = "0.3.0"
+
+[dependencies]
+bulletrs-sys = { path = "./bulletrs-sys" }
+mint = "0.4.2"
+
+[dev-dependencies]
+cgmath = { version = "0.15.0", features = ["mint"] }

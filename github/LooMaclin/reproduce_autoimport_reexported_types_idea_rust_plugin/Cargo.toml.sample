@@ -1,0 +1,8 @@
+[package]
+name = "reproduce_autoimport_reexported_types_idea_rust_plugin"
+version = "0.1.0"
+authors = ["loomaclin <loo.maclin@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+ggez ="0.5.0-rc.0"

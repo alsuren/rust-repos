@@ -1,0 +1,25 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["Matthew Klein <mklein994@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "1"
+path = "src/bin/1.rs"
+
+[[bin]]
+name = "2"
+path = "src/bin/2.rs"
+
+[[bin]]
+name = "3"
+path = "src/bin/3.rs"
+
+[[bin]]
+name = "5"
+path = "src/bin/5.rs"
+
+[dependencies]
+lazy_static = "1.2.0"
+regex = "1.1.0"

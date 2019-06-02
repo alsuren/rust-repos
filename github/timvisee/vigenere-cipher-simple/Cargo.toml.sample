@@ -1,0 +1,10 @@
+[package]
+name = "vigenere-cipher-simple"
+version = "0.1.0"
+authors = ["timvisee <timvisee@gmail.com>"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+rayon = "1.0"

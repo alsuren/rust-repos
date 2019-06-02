@@ -1,0 +1,7 @@
+[package]
+name = "superpi-rs"
+version = "0.1.0"
+authors = ["Psilon <pzixel@gmail.com>"]
+
+[dependencies]
+bigdecimal = { git = "https://github.com/akubera/bigdecimal-rs.git", branch = "develop" }

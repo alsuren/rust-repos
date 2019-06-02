@@ -1,0 +1,18 @@
+[package]
+name = "obj2voxel"
+version = "0.2.1"
+authors = ["Mario Geiger <geiger.mario@gmail.com>"]
+
+[dependencies]
+obj = "0.8"
+clap = "2.31"
+npy = "0.4"
+npy-derive = "0.4"
+kiss3d = { version = "0.13.0", optional = true }
+nalgebra = "0.14"
+rand = "0.4"
+clippy = {version = "*", optional = true}
+
+[features]
+default = []
+viewer = ["kiss3d"]

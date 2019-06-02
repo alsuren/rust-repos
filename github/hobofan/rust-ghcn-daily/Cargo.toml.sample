@@ -1,0 +1,15 @@
+[package]
+name = "ghcn-daily"
+description = "Parser for the GHCN-Daily dataset"
+version = "0.0.1"
+authors = ["Maximilian Goisser <goisser94@gmail.com>"]
+
+repository = "https://github.com/hobofan/rust-ghcn-daily"
+homepage = "https://github.com/hobofan/rust-ghcn-daily"
+
+keywords = ["ghcn", "weather", "meteorology", "dataset"]
+
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+
+[dependencies]

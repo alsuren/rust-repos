@@ -1,0 +1,15 @@
+[package]
+name = "malvolia"
+version = "0.0.1"
+authors = ["keithing <keithingersoll@gmail.com>"]
+
+[dependencies]
+vst = "0.0.2"
+rand = "0.6.5"
+
+[lib]
+name = "malvolia"
+crate-type = ["cdylib"]
+
+[profile.dev]
+opt-level = 3

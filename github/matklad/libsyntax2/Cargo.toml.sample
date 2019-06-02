@@ -1,0 +1,8 @@
+[workspace]
+members = [ "crates/*" ]
+
+[profile.release]
+incremental = true
+debug = true
+
+[patch.'crates-io']

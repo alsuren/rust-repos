@@ -1,0 +1,9 @@
+[package]
+name = "virtual68"
+version = "0.1.0"
+authors = ["John Barker <jebarker@gmail.com>"]
+
+[dependencies]
+combine = "1.0.0"
+enum_primitive = "*"
+num = "*"

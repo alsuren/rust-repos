@@ -1,0 +1,8 @@
+[package]
+name = "printer_geo"
+version = "0.1.0"
+authors = ["Eric Trombly <etrombly@yahoo.com>"]
+
+[dependencies]
+stl = { git = "https://github.com/etrombly/rust-stl" }
+simplesvg = "0.4.0"

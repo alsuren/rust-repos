@@ -1,0 +1,35 @@
+[package]
+name = "git-absorb"
+version = "0.3.0"
+
+authors = ["Stephen Jung <tummychow511@gmail.com>"]
+description = "git commit --fixup, but automatic"
+homepage = "https://github.com/tummychow/git-absorb"
+repository = "https://github.com/tummychow/git-absorb"
+readme = "README.md"
+license = "BSD-3-Clause"
+
+include = [
+    "**/*.rs",
+    "Cargo.*",
+    "*.md",
+]
+
+[[bin]]
+name = "git-absorb"
+path = "src/main.rs"
+
+[dependencies.git2]
+version = "~0.7"
+default-features = false
+
+[dependencies]
+clap = "~2.30"
+slog = "~2.1"
+slog-term = "~2.3"
+slog-async = "~2.2"
+failure = "~0.1"
+memchr = "~2.0"
+
+[dev-dependencies]
+tempdir = "~0.3"

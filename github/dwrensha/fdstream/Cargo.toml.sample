@@ -1,0 +1,18 @@
+[package]
+
+name = "fdstream"
+version = "0.0.5"
+authors = [ "David Renshaw <david@sandstorm.io>" ]
+license = "MIT"
+description = "implementations of ::std::io::Read and ::std::io::Write for posix file descriptors"
+repository = "https://github.com/dwrensha/fdstream"
+
+keywords = ["fd", "posix", "io", "read", "write"]
+
+[lib]
+
+name = "fdstream"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "0.2.20"

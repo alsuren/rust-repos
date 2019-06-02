@@ -1,0 +1,10 @@
+[package]
+name = "conway"
+version = "0.1.0"
+authors = ["IGI-111 <igi-111@protonmail.com>"]
+
+[dependencies]
+rand = "0.3"
+rayon = "0.6"
+drawille = { git = "git://github.com/P1start/drawille-rs" }
+termion = "1.3"

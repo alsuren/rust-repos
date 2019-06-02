@@ -1,0 +1,21 @@
+[package]
+name = "presonus"
+version = "0.1.0"
+authors = [ "Kaid Wong <kaid@kaid.me>" ]
+
+[dependencies]
+base64 = "^0.9"
+blake2-rfc = "^0.2"
+chrono = { version = "^0.4", features = [ "serde" ] }
+diesel = { version = "^1.2", features = [ "sqlite", "r2d2", "chrono" ] }
+diesel_migrations = "^1.2"
+image = { version = "^0.19", features = [ "jpeg" ] }
+rocket = { git = "https://github.com/maxdeviant/Rocket", rev = "ab2b416c" }
+rocket_codegen = { git = "https://github.com/maxdeviant/Rocket", rev = "ab2b416c" }
+rocket_contrib = { git = "https://github.com/maxdeviant/Rocket", rev = "ab2b416c" }
+serde = "^1.0.43"
+serde_derive = "^1.0.43"
+serde_json = "^1.0.16"
+uuid = { version = "^0.6", features = [ "v4" ] }
+validator = "^0.6"
+validator_derive = "^0.6"

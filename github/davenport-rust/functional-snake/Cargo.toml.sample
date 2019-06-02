@@ -1,0 +1,15 @@
+[package]
+name = "functional-snake"
+version = "0.1.0"
+authors = ["Christopher Davenport <ChristopherDavenport@outlook.com>"]
+
+[[bin]]
+name = "functional-snake"
+
+[dependencies]
+piston_window = "0.66.0"
+find_folder = "0.3.0"
+rand = "0.3.15"
+
+[dependencies.pistoncore-sdl2_window]
+ git = "https://github.com/PistonDevelopers/sdl2_window"

@@ -1,0 +1,10 @@
+[package]
+name = "halflife"
+version = "0.1.0"
+authors = ["Srishan Bhattarai <srishanbhattarai@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+walkdir = "2.2.7"
+sha1 = "0.6.0"
+diesel = { version = "1.4.0", features = ["sqlite"] }

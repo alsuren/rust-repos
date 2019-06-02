@@ -1,0 +1,11 @@
+[package]
+name = "modal"
+version = "0.5.6"
+authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+
+[lib]
+name = "modal"
+path = "src/lib.rs"
+
+[dependencies]
+num  = "0.1.36"

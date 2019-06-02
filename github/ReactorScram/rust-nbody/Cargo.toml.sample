@@ -1,0 +1,10 @@
+[package]
+
+name = "rust_platformer"
+version = "0.0.0"
+authors = [ "ReactorScram" ]
+
+[lib]
+name = "rust_platformer"
+crate-type = ["dylib"]
+

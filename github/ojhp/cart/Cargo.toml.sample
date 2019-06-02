@@ -1,0 +1,12 @@
+[package]
+name = "cart"
+version = "0.1.0"
+authors = ["Owen Platt <owen@owenplatt.com>"]
+description = "A ray-tracer library."
+license = "MIT"
+repository = "https://github.com/ojhp/cart"
+
+[badges]
+travis-ci = { repository = "ojhp/cart" }
+
+[dependencies]

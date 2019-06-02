@@ -1,0 +1,14 @@
+[package]
+name = "payme"
+version = "0.1.0"
+authors = ["Richo Healey <richo@psych0tik.net>"]
+
+[dependencies]
+# Iron
+iron = "*"
+mount = "*"
+staticfile = "*"
+urlencoded = "*"
+
+# Stripe
+stripe = "*"

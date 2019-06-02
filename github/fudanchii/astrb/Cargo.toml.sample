@@ -1,0 +1,9 @@
+[package]
+name = "astrb"
+version = "0.1.0"
+authors = ["Nurahmadie <nurahmadie@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1"
+regex = "1"

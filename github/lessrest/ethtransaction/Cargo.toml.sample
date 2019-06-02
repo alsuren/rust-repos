@@ -1,0 +1,16 @@
+[package]
+description = "Create Ethereum transactions"
+name = "ethtransaction"
+version = "0.0.1"
+license = "GPL-3.0"
+authors = ["Mikael Brockman <mikael@brockman.se>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+docopt = "0.6.82"
+ethcore = { git = "https://github.com/ethcore/parity" }
+ethcore-util = { git = "https://github.com/ethcore/parity" }
+
+[[bin]]
+path = "main.rs"
+name = "ethtransaction"

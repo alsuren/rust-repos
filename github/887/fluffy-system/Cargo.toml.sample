@@ -1,0 +1,9 @@
+[package]
+name = "formtest"
+version = "0.1.0"
+authors = ["usr"]
+
+[dependencies]
+gtk = { version = "0.4.1", features = ["v3_16"] }
+gdk = "0.8.0"
+gdk-pixbuf = "0.4.0"

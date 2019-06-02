@@ -1,0 +1,13 @@
+[package]
+name = "pachyderm"
+version = "0.1.0"
+authors = ["Simon Walker <s.r.walker101@googlemail.com>"]
+
+[dependencies]
+grpcio = "0.3"
+protobuf = "*"
+futures = "0.1"
+failure = "*"
+
+[build-dependencies]
+protoc-grpcio = "0.2.0"

@@ -1,0 +1,37 @@
+[package]
+name = "kifuwarabe_shogi2018"
+version = "0.1.0"
+authors = ["muzudho <muzudho1@gmail.com>"]
+
+[dependencies]
+rand="0.3.0"
+lazy_static = "1.1.0"
+clippy = { version = "*", optional = true }
+chrono = "0.4"
+time = "0.1"
+log = "*"
+env_logger = "*"
+
+[dependencies.kifuwarabe_shell]
+git = "https://github.com/muzudho/rust_kifuwarabe_shell.git"
+rev = "c4598d454545491626e33c3d253764fc0060de4f"
+
+[dependencies.kifuwarabe_usi]
+git = "https://github.com/muzudho/rust_kifuwarabe_usi.git"
+rev = "5c59e4b7235025669d7283f939a4114d9d45d454"
+
+[dependencies.kifuwarabe_position]
+git = "https://github.com/muzudho/rust_kifuwarabe_position.git"
+rev = "787e037bba474541ef74e05f34e0d890c6350427"
+
+[dependencies.kifuwarabe_movement]
+git = "https://github.com/muzudho/rust_kifuwarabe_movement.git"
+rev = "6bfc143660ab39f8141630df94da9adf83bf0d3a"
+
+[dependencies.kifuwarabe_alpha_beta_search]
+git = "https://github.com/muzudho/rust_kifuwarabe_alpha_beta_search.git"
+rev = "a2ab8c791d0abb8a22bef87a6f3d833571814a9c"
+
+[dependencies.kifuwarabe_movement_picker]
+git = "https://github.com/muzudho/rust_kifuwarabe_movement_picker.git"
+rev = "c82db5326e39fddec8897019525a56e942127619"

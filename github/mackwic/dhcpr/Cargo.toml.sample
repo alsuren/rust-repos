@@ -1,0 +1,25 @@
+[package]
+name = "dhcpr"
+version = "0.1.0"
+authors = ["Thomas Wickham <mackwic@gmail.com>"]
+
+# be safe for now
+publish = false
+
+[dependencies]
+clap = "2.2"
+fern = "0.3"
+log  = "0.3"
+time = "0.1"
+lazy_static = "0.1"
+mio = "0.5"
+colored = "1.2"
+rustc-serialize = "0.3"
+toml-config = "0.3"
+
+#clippy = "*"
+
+[dev-dependencies]
+stainless = "*"
+tempfile = "2.1"
+mio-test = { path = "lib/mio-test" }

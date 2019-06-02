@@ -1,0 +1,28 @@
+[package]
+authors = ["Alex Sayers <alex.sayers@gmail.com>"]
+name = "tailsrv"
+version = "0.3.0"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+clap = "2.27"
+error-chain = "0.11"
+fs2 = "0.4"
+ignore = "0.3"
+integer-encoding = "1.0"
+log = "0.3"
+loggerv = "0.5"
+memchr = "2.0"
+memmap = "0.6"
+mio = "0.6"
+mio-more = "0.1"
+nix = "0.9"
+nom = "3.2"
+same-file = "1.0"
+slab = "0.4"
+
+[dependencies.inotify]
+branch = "master"
+features = ["mio"]
+git = "https://github.com/asayers/inotify-rs"

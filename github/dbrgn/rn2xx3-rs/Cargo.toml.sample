@@ -1,0 +1,22 @@
+[package]
+name = "rn2xx3"
+version = "0.1.0"
+authors = ["Danilo Bargen <mail@dbrgn.ch>"]
+documentation = "https://docs.rs/rn2xx3"
+description = "Rust driver for Microchip RN2483 and RN2903 LoRaWAN modules. [WIP]"  # todo: wip
+repository = "https://github.com/dbrgn/rn2xx3-rs/"
+license = "MIT OR Apache-2.0"
+keywords = ["rn2483", "rn2903", "microchip", "lorawan", "embedded-hal-driver"]
+categories = ["embedded", "hardware-support"]  # todo: no-std?
+edition = "2018"
+
+[dependencies]
+base16 = { version = "0.1", features = [] }
+doc-comment = "0.3"
+embedded-hal = "0.2"
+nb = "0.1"
+
+[dev-dependencies]
+embedded-hal-mock = { path = "../embedded-hal-mock" }
+linux-embedded-hal = { path = "../linux-embedded-hal" }
+serial = "0.4"

@@ -1,0 +1,19 @@
+[package]
+name = "coord_transforms"
+version = "1.2.2"
+authors = ["David Kramer <davegkramer@gmail.com>"]
+description = "A Rust crate use for performing coordinate transformations."
+repository = "https://github.com/DaveKram/coord_transforms"
+readme = "README.md"
+keywords = ["coordinates", "geospatial", "transforms", "transformations"]
+categories = ["algorithms", "embedded", "science", "parsing"]
+license = "MIT"
+
+[dependencies]
+nalgebra = "0.16.8"
+float-cmp = "0.2.5"
+
+[dev-dependencies]
+chrono = "0.4.0"
+rayon = "0.8.2"
+minifb = "0.10.3"

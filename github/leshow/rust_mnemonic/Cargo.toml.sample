@@ -1,0 +1,26 @@
+[package]
+name = "rust_mnemonic"
+version = "0.3.0"
+authors = [ "Evan Cameron <cameron.evan@gmail.com>" ]
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/leshow/rust_mnemonic/"
+repository = "https://github.com/leshow/rust_mnemonic/"
+readme = "README.md"
+edition = "2018"
+
+[[bin]]
+name = "rmnemonic"
+path = "src/main.rs"
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[dependencies]
+getopts = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+ring = "0.14.6"
+rand = "0.6.5"
+nom = "3"

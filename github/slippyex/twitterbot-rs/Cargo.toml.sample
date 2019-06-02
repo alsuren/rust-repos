@@ -1,0 +1,36 @@
+[package]
+name = "twitterbot-rs"
+version = "0.1.0"
+authors = ["markus <markus@openjob.co>"]
+edition = "2018"
+
+[dependencies]
+egg-mode = "0.12.0"
+rocket = "0.3.17"
+rocket_codegen = "0.3.17"
+rocket_contrib = "0.3.17"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+rand = "0.6.1"
+log = "0.4.6"
+clokwerk = "0.1.0"
+dirs = "1.0.4"
+magic-crypt = "2.1.4"
+passwords = "1.1.2"
+
+futures = "0.1.14"
+chrono = { version = "0.4.0", features = ["serde"] }
+tokio = "0.1.11"
+tokio-core = "0.1.17"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 16
+panic = 'unwind'
+incremental = false
+overflow-checks = false

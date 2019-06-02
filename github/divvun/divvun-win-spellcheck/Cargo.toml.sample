@@ -1,0 +1,33 @@
+[package]
+name = "windivvun"
+version = "0.2.0"
+authors = ["Eike Siewertsen <eike@technocreatives.com>"]
+edition = "2018"
+
+[lib]
+name = "windivvun"
+crate-type = ["dylib"]
+
+[dependencies]
+log = "0.4"
+directories = "1.0.2"
+lazy_static = "1.2.0"
+parking_lot = { version = "0.6", features = ["nightly"] }
+
+[dependencies.log4rs]
+version = "0.8.1"
+
+[dependencies.com-impl]
+git = "https://github.com/bbqsrc/com-impl-rs"
+
+[dependencies.winapi]
+version = "0.3.6"
+features = ["winerror", "unknwnbase", "objbase", "oleauto", "winerror", "shlobj", "shtypes", "combaseapi", "knownfolders", "winuser", "winnls"]
+
+[dependencies.divvunspell]
+git = "https://github.com/divvun/divvunspell"
+branch = "develop"
+features = ["compression"]
+
+[build-dependencies.winapi-tlb-bindgen]
+git = "https://github.com/Arnavion/winapi-tlb-bindgen"

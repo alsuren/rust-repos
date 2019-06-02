@@ -1,0 +1,23 @@
+[package]
+name = "kommuner"
+version = "0.1.1"
+authors = ["itsdalmo <kristian@doingit.no>"]
+build = "build.rs"
+
+[features]
+default = ["serde_codegen"]
+unstable = ["serde_derive"]
+
+[build-dependencies]
+serde_codegen = { version = "0.8", optional = true }
+
+[dependencies]
+rayon           = "0.5.0"
+clap            = "2.19.0"
+geo             = "0.3.1"
+csv             = "0.14.7"
+serde           = "0.8"
+serde_derive    = { version = "0.8", optional = true }
+serde_json      = "0.8"
+rustc-serialize = "0.3"
+

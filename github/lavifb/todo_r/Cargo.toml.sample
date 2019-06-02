@@ -1,0 +1,50 @@
+[package]
+name = "todo_r"
+description = "Simple rust command line utility that keeps track of your todo comments in code"
+version = "0.7.2"
+authors = ["Lavi Blumberg <lavifb@gmail.com>"]
+homepage = "https://github.com/lavifb/todo_r"
+repository = "https://github.com/lavifb/todo_r"
+license = "MIT"
+edition = "2018"
+readme = "README.md"
+exclude = [
+    "benches/*",
+    "tests/*",
+    "ci/*",
+    "HomebrewFormula/*",
+    ".travis.yml",
+]
+
+[dependencies]
+log = { version = "0.4", features = ["max_level_trace", "release_max_level_info"] }
+env_logger = "0.6"
+clap = "2.32"
+ignore = "0.4"
+dialoguer = "0.3"
+fnv = "1"
+regex = "1"
+ansi_term = "0.11"
+failure = "0.1"
+lazy_static = "1"
+config = "0.9"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+globset = "0.4"
+dirs = "1"
+atty = "0.2"
+
+[dev-dependencies]
+criterion = "0.2"
+assert_cmd = "0.11"
+
+[build-dependencies]
+clap = "2.32"
+
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.release]
+lto = true

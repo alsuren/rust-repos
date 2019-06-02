@@ -1,0 +1,9 @@
+[package]
+name = "traceroute"
+version = "0.1.0"
+authors = ["Daniel Lockyer <thisisdaniellockyer@gmail.com>"]
+
+[dependencies]
+pnet = "0.17.1"
+libc = "0.2.22"
+socket = "0.0.7"

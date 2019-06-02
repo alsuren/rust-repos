@@ -1,0 +1,9 @@
+[package]
+name = "ambient"
+version = "0.1.0"
+authors = ["Ximin Luo"]
+
+[dependencies]
+caps = { version = "0.0.3-pre, 0.0.3", path = ".cargo/local/caps-rs" }
+clap = "2.26.0"
+exec = "0.3.0"

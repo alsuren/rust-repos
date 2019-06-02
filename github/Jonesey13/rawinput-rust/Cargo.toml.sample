@@ -1,0 +1,14 @@
+[package]
+name = "rawinput"
+version = "0.2.1"
+authors = ["Jonesey13 <adj27@cam.ac.uk>"]
+
+[dependencies]
+libc = "*"
+winapi = "*"
+kernel32-sys = "*"
+user32-sys = "*"
+
+[dev-dependencies]
+time = "*"
+glium = "*"

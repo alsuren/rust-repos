@@ -1,0 +1,23 @@
+[package]
+name = "progressProvider"
+version = "0.1.0"
+authors = ["Jonathan McErloy <jmcelroy@datasystemstx.com>"]
+
+[dependencies]
+rocket = "*"
+rocket_codegen = "*"
+walkdir = "*"
+rustc-serialize = "*"
+regex = "*"
+rust-ini = "*"
+docopt = "*"
+url = "*"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]
+
+[dependencies.hyper]
+version = "*"
+default-features = false

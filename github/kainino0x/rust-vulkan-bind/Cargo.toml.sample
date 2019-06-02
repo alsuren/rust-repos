@@ -1,0 +1,20 @@
+[package]
+name = "vulkan-bind"
+description = "Vulkan bindings for Rust"
+version = "0.1.0"
+authors = ["Kai Ninomiya <kainino1@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/kainino0x/rust-vulkan-bind"
+
+[features]
+default = ["xcb_surface", "xlib_surface"]
+xcb_surface = ["xcb"]
+xlib_surface = []
+wayland_surface = []
+mir_surface = []
+
+
+[dependencies]
+libc = "0.2"
+xcb = { version = "0.6.2", optional = true }

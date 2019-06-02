@@ -1,0 +1,12 @@
+[package]
+name = "silmukka-server"
+version = "0.1.0"
+authors = ["leo"]
+[dependencies]
+postgres_array="*"
+chrono = "0.2"
+nickel = "*"
+rand = "0.3"
+[dependencies.postgres]
+version = "*"
+features = ["chrono"]

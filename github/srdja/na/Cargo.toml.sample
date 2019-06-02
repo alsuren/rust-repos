@@ -1,0 +1,31 @@
+[package]
+name = "na"
+version = "0.2.0"
+authors = ["srdja <sp@srdja.me>"]
+build = "build.rs"
+
+[dependencies]
+mime = "0.1.3"
+getopts = "*"
+regex = "*"
+mustache = "*"
+get_if_addrs = "0.4.0"
+chrono = "0.2"
+rustc-serialize = "*"
+
+[dependencies.multipart]
+git = "https://github.com/srdja/multipart.git"
+
+[dependencies.hyper]
+version = "0.8"
+default-features = false
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"
+
+[dependencies.hyper-router]
+git = "https://github.com/srdja/hyper-router.git"
+branch = "hyper-handler"
+
+[build-dependencies]
+gcc = "*"

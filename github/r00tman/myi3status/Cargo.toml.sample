@@ -1,0 +1,10 @@
+[package]
+name = "myi3status"
+version = "0.1.0"
+authors = ["Victor Rudnev <Victor.Rudnev@risqitlab.com>"]
+edition = "2018"
+
+[dependencies]
+serde_json = "1.0"
+mpd = "*"
+time = "*"

@@ -1,0 +1,14 @@
+[package]
+name = "rusty-scrape"
+version = "0.1.0"
+authors = ["dragan1810 <d.novakovic1810@yahoo.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.5"
+scraper = "0.9.0"
+select = "0.4.2"
+fantoccini = "0.11.6"
+futures = "0.1.25"
+tokio = "0.1.13"
+webdriver = "0.38.0" # Rust Webdriver

@@ -1,0 +1,10 @@
+[package]
+name = "neujudge"
+version = "0.1.0"
+authors = ["Jos <gnu.crazier@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+iron = "*"
+router = "*"
+libc = "*"

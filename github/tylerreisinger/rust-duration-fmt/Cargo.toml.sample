@@ -1,0 +1,27 @@
+[package]
+name = "duration_fmt"
+version = "0.1.0"
+authors = ["Tyler Reisinger <reisinger.tyler@gmail.com>"]
+
+license = "MIT"
+readme = "README.md"
+documentation = "https://docs.rs/duration_fmt"
+homepage = "https://github.com/tylerreisinger/duration_fmt"
+repository = "https://github.com/tylerreisinger/duration_fmt"
+
+keywords = ["time", "duration", "format", "string"]
+categories = ["date-and-time"]
+
+[dependencies]
+chrono = { version = "0.3.1", optional = true }
+
+[dependencies.float_duration]
+version = "^0.3.2"
+optional = true
+default-features = false
+
+[dev-dependencies]
+float_duration = { version = "^0.3.2", default-features = false }
+
+[features]
+default = ["float_duration", "chrono"]

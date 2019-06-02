@@ -1,0 +1,23 @@
+[package]
+name = "rotom"
+version = "0.1.0"
+authors = ["葉岬 <XGLey@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "0.7"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8.8"
+serde_json = "1.0"
+failure = "0.1.5"
+failure_derive = "0.1.5"
+futures = "0.1.25"
+
+[dependencies.postgres]
+version = "0.15"
+features = ["with-chrono"]
+
+[dependencies.chrono]
+version = "0.4.6"
+features = ["serde"]

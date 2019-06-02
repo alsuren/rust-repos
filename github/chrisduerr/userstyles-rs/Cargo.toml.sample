@@ -1,0 +1,17 @@
+[package]
+authors = ["Christian Dürr <contact@christianduerr.com>"]
+name = "userstyles"
+version = "0.1.4"
+license = "GPL-3.0"
+readme = "README.md"
+keywords = ["userstyles", "style", "css", "stylish", "api"]
+categories = ["api-bindings"]
+description = "API bindings for userstyles.org."
+repository = "https://github.com/chrisduerr/userstyles-rs"
+documentation = "https://docs.rs/userstyles"
+
+[dependencies]
+serde_derive = "1.0.11"
+serde_json = "1.0.2"
+reqwest = "0.7.3"
+serde = "1.0.11"

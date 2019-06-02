@@ -1,0 +1,11 @@
+[package]
+name = "superdeduper"
+version = "0.1.0"
+authors = ["Jeffrey Zhang <caretcaret@gmail.com>"]
+
+[dependencies]
+image = "*"
+docopt = "*"
+rustc-serialize = "*"
+glob = "*"
+

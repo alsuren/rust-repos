@@ -1,0 +1,27 @@
+[package]
+name = "commitsparkles"
+version = "0.1.0"
+authors = ["Richard Fortescue-Webb <rfwebb@gmail.com>"]
+
+[dependencies]
+iron = "*"
+mount = "0.2.1"
+staticfile = "0.2.0"
+router = "*"
+log4rs = { version = "0.4.3", features = [ "toml" ] }
+log = "*"
+logger = "*"
+toml = "*"
+docopt = "*"
+rustc-serialize = "*"
+bodyparser = "*"
+serde = "*"
+serde_json = "*"
+serde_macros = "*"
+persistent = "*"
+hyper = "*"
+url = "*"
+postgres = "*"
+r2d2 = "*"
+r2d2_postgres = "*"
+

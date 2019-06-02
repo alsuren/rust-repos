@@ -1,0 +1,28 @@
+[package]
+name = "bmlite"
+version = "0.1.0"
+authors = ["Fredrik SIMONSSON <simson@thesimson.net>"]
+
+[dependencies]
+nb = "0.1.1"
+alloc-cortex-m = "0.3.5"
+
+[dev-dependencies.embedded-hal-mock]
+git = "https://github.com/simonsso/embedded-hal-mock.git"
+branch = "gpio_dev"
+
+[dependencies.byteorder]
+version = "1.2.7"
+default-features = false
+
+[dependencies.crc]
+version = "^1.0.0"
+default-features = false
+
+[dependencies.embedded-hal]
+features = ["unproven"]
+version = "0.2"
+
+[lib]
+name = "bmlite"
+path = "src/bmlitelib.rs"

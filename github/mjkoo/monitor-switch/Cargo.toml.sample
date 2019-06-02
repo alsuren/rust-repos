@@ -1,0 +1,23 @@
+[package]
+name = "monitor-switch"
+version = "0.2.0"
+authors = ["Maxwell Koo <mjkoo90@gmail.com>"]
+edition = "2018"
+description = "Set or toggle multiple monitor's input sources via DDC/CI"
+repository = "https://github.com/mjkoo/monitor-switch"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+clap = "2.32"
+conv = "0.3"
+ddc-hi = "0.1"
+enum_derive = "0.1"
+env_logger = "0.5"
+failure = "0.1"
+log = "0.4"
+macro-attr = "0.2"
+
+[profile.release]
+lto = true
+opt-level = 3

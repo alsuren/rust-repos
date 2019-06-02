@@ -1,0 +1,26 @@
+[package]
+name = "open_read_later"
+version = "1.1.1"
+authors = ["Jeremy Dormitzer <jeremy.dormitzer@gmail.com>"]
+description = "An implementation of and CLI for the Open Read-Later list specification"
+repository = "https://github.com/jdormit/open-read-later-rust"
+readme = "readme.md"
+keywords = ["links", "browsing", "pocket", "readlater"]
+categories = ["command-line-utilities", "command-line-interface"]
+license = "MIT"
+
+[lib]
+name = "open_read_later"
+path = "src/lib.rs"
+
+[[bin]]
+name = "readlater"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.26.0"
+lazy_static = "0.2.8"
+regex = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

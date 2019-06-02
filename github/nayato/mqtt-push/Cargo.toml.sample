@@ -1,0 +1,29 @@
+[package]
+name = "mqtt-push"
+version = "0.1.0"
+authors = ["Max Gortman <mgortman@microsoft.com>"]
+
+[dependencies]
+tokio-io = "=0.1.5"
+tokio-core = "=0.1.12"
+# mqtt = { path = "../rust-mqtt" }
+mqtt = { git = "https://github.com/nayato/rust-mqtt", branch = "owned" }
+string = "0.1"
+net2 = "*"
+num_cpus = "1"
+native-tls = "*"
+clap = "2"
+bytes="*"
+time="*"
+tokio-timer = "*"
+futures = "0.1"
+uuid = { version = "*", features = ["use_std", "v4"] }
+#rustls = "*"
+# tokio-rustls = { version = "*" }
+tokio-tls = { version = "*" }
+
+[profile.release]
+debug = true
+codegen-units = 1
+lto = true
+opt-level = 3

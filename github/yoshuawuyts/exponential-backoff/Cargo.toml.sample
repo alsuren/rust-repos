@@ -1,0 +1,14 @@
+[package]
+name = "exponential-backoff"
+version = "0.2.3-alpha.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yoshuawuyts/exponential-backoff"
+documentation = "https://docs.rs/exponential-backoff"
+description = "Backoff functions."
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+readme = "README.md"
+
+[dependencies]
+rand = "0.5.3"
+
+[dev-dependencies]

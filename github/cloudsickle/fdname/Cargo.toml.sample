@@ -1,0 +1,9 @@
+[package]
+name = "fdname"
+version = "0.1.1"
+authors = ["cloudsickle <40519481+cloudsickle@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2"
+walkdir = "2.2.7"

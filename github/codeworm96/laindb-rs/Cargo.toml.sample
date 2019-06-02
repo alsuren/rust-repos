@@ -1,0 +1,12 @@
+[package]
+name = "laindb"
+version = "0.1.0"
+authors = ["codeworm96 <codeworm96@outlook.com>"]
+build = "build.rs"
+
+[dependencies]
+libc = "0.2"
+
+[[example]]
+name = "cli"
+path = "examples/cli.rs"

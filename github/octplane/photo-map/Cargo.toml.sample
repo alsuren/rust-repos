@@ -1,0 +1,23 @@
+[package]
+name = "photo-map"
+version = "0.1.0"
+authors = ["Pierre BAILLET <pierre.baillet@datadoghq.com>"]
+
+[dependencies]
+
+rexif = { path = "../rexif" }
+rreverse = { path = "../rust-reverse-geocoder" }
+iron = "0.5.1"
+staticfile = "*"
+mount = "*"
+websocket = "0.20.2"
+
+[[bin]]
+
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+
+name = "cli"
+path = "src/main.rs"

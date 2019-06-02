@@ -1,0 +1,23 @@
+[package]
+name = "casper"
+description = "Abstractly define the CBC Casper message stucture and define functions for the construction and proper execution of protocols of the Casper family."
+version = "0.0.0"
+license-file = "LICENSE"
+authors = ["pZ4 <pz4@protonmail.ch>", "Lederstrumpf", "h4sh3d <h4sh3d@truelevel.io>"]
+homepage = "https://github.com/TrueLevelSA/cbc-casper-msg"
+repository = "https://github.com/TrueLevelSA/cbc-casper-msg"
+readme = "README.md"
+
+[dependencies]
+rayon = "*"
+digest = "0.7"
+serde = "1.0.79"
+serde_derive = "1.0.79"
+bincode = "1.0.1"
+blake2 = "0.7"
+itertools = "0.7.8"
+proptest = { version = "0.9.1", optional = true }
+rand = { version = "0.6.5", optional = true }
+
+[features]
+integration_test = ["proptest", "rand"]

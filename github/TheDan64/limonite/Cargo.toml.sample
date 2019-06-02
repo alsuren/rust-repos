@@ -1,0 +1,36 @@
+[package]
+name = "limonite"
+version = "0.0.5"
+authors = [
+    "thadancardin@gmail.com",
+    "thadan64@gmail.com"
+]
+license = "Apache-2.0"
+description = "The Limonite language compiler"
+repository = "https://github.com/TheDan64/limonite"
+
+[lib]
+name = "limonite"
+path = "src/lib.rs"
+
+[[bin]]
+name = "limonite"
+path = "src/main.rs"
+test = false
+doc = false
+
+[features]
+default = ["llvm-backend"]
+llvm-backend = ["llvm-sys", "inkwell"]
+
+[dependencies]
+docopt = "1.0"
+env_logger = "*"
+llvm-sys = {version="37.0.3", optional=true} # TODO: Remove. Should fully rely on inkwell eventually
+inkwell = {version="0.0.0", optional=true}
+log = "*"
+serde = "1.0"
+serde_derive = "1.0"
+
+[[test]]
+name = "tests"

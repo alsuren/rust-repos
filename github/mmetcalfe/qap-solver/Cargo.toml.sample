@@ -1,0 +1,11 @@
+[package]
+name = "qap-solver"
+version = "0.1.0"
+authors = ["Mitchell Metcalfe <mitchell.s.metcalfe@gmail.com>"]
+
+[dependencies]
+glob = "*"
+toml = "0.1"
+rand = "0.3"
+time = "0.1"
+regex = "0.1.41"

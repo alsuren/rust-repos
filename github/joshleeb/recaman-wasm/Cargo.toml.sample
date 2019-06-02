@@ -1,0 +1,11 @@
+[package]
+name = "recaman-wasm"
+version = "0.1.0"
+authors = ["Josh Leeb-du Toit <josh.leebdutoit@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+recaman = "0.1.0"
+wasm-bindgen = "0.2.4"

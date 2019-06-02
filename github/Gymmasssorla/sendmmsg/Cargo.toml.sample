@@ -1,0 +1,19 @@
+[package]
+name = "sendmmsg"
+documentation = "https://docs.rs/sendmmsg"
+description = "Transmit multiple messages using one system call in Rust"
+repository = "https://github.com/Gymmasssorla/sendmmsg"
+version = "0.3.4"
+authors = ["Temirkhan Myrzamadi <gymmasssorla@gmail.com>"]
+keywords = ["sendmmsg", "system-programming", "high-performance", "udp", "tcp"]
+categories = ["web-programming", "os", "network-programming"]
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+
+
+[badges]
+travis-ci = { repository = "Gymmasssorla/anevicon", branch = "master" }
+
+[dependencies]
+libc = "0.2.55"

@@ -1,0 +1,16 @@
+[package]
+name = "pipeline"
+version = "0.1.0"
+authors = ["nooberfsh <nooberfsh@gmail.com>"]
+
+[dependencies]
+log = "0.4"
+futures = "0.1"
+
+[dependencies.worker]
+version = "*"
+git = "https://github.com/nooberfsh/worker.git"
+
+[dev-dependencies]
+env_logger = "0.4"
+

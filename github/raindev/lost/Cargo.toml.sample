@@ -1,0 +1,10 @@
+[package]
+name = "lost"
+version = "0.1.0"
+authors = ["Andrew Barchuk <raindev@icloud.com>"]
+
+[dependencies]
+curl = "0.3"
+regex = "0.1"
+url = "1.2"
+clap = "2.13"

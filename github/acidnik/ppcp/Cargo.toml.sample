@@ -1,0 +1,13 @@
+[package]
+name = "ppcp"
+version = "0.1.0"
+authors = ["Nikita Bilous <nikita@bilous.me>"]
+license = "MIT"
+
+[dependencies]
+clap = "*"
+failure = "*"
+walkdir = "*"
+indicatif = { git = "https://github.com/mitsuhiko/indicatif" }
+pathdiff = "*"
+path_abs = { git = "https://github.com/vitiral/path_abs" }

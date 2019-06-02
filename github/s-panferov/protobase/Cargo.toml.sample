@@ -1,0 +1,12 @@
+[workspace]
+
+members = [
+    "wiki-log",
+    "wiki-db",
+    "wiki-vm",
+    "wiki-fs",
+    "wiki-host",
+]
+
+[patch.crates-io]
+rocksdb = { path = '../rust-rocksdb' }

@@ -1,0 +1,69 @@
+[package]
+name = "rustcmb"
+version = "0.1.0"
+authors = ["Ivan Edigarev <heyfaraday@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/heyfaraday/rustcmb"
+description = """
+Library for statistical testing of the Cosmic Microwave Background radiation
+"""
+
+[lib]
+name = "rustcmb"
+path = "src/lib.rs"
+
+[[example]]
+name = "core_sphere"
+
+[[example]]
+name = "core_torus"
+
+[[example]]
+name = "corr"
+
+[[example]]
+name = "corr_2d"
+
+[[example]]
+name = "d_2d"
+
+[[example]]
+name = "d_2d_2"
+
+[[example]]
+name = "fft_1d"
+
+[[example]]
+name = "fft_2d"
+
+[[example]]
+name = "fft_2d_2"
+
+[[example]]
+name = "io"
+
+[[example]]
+name = "mcmc"
+
+[[example]]
+name = "norm"
+
+[[example]]
+name = "scalar_field"
+
+[[example]]
+name = "spectra"
+
+[[example]]
+name = "tensor_field"
+
+[[example]]
+name = "vector_field"
+
+[[example]]
+name = "vector_field_2"
+
+[dependencies]
+text_io = "*"
+rustfft = "2.0.0"
+rand = "0.3"

@@ -1,0 +1,96 @@
+[package]
+authors = ["Maciej Dziardziel <fiedzia@gmail.com>"]
+edition = "2018"
+name = "dbfish"
+version = "0.1.0"
+
+[dependencies]
+atty = "0.2.11"
+chrono = "0.4.6"
+default-editor = "0.1.0"
+dirs = "1.0.5"
+humantime = "1.2.0"
+indicatif = "0.11.0"
+lazy_static = "1.3.0"
+prettytable-rs = "0.8.0"
+regex = "1.1.2"
+serde = "1.0.89"
+serde_derive = "1.0.89"
+structopt = "0.2"
+termcolor = "1.0.4"
+toml = "0.4.10"
+unicode-segmentation = "1.2.1"
+
+[dependencies.askama_escape]
+optional = true
+version = "0.2.0"
+
+[dependencies.csv]
+optional = true
+version = "1.0"
+
+[dependencies.fallible-iterator]
+optional = true
+version = "0.1.6"
+
+[dependencies.json]
+optional = true
+version = "0.11.13"
+
+[dependencies.json-color]
+optional = true
+version = "0.7.1"
+
+[dependencies.mysql]
+optional = true
+version = "15"
+
+[dependencies.postgres]
+optional = true
+version = "0.15.2"
+
+[dependencies.spsheet]
+features = [
+    "ods",
+    "xlsx",
+]
+optional = true
+version = "0.1.0"
+
+[dependencies.sqlite]
+optional = true
+version = "0.24"
+
+[dependencies.sqlite3-src]
+optional = true
+version = "0.2.10"
+
+[features]
+default = [
+    "use_csv",
+    "use_html",
+    "use_json",
+    "use_mysql",
+    "use_postgres",
+    "use_spsheet",
+    "use_sqlite",
+    "use_text",
+]
+use_csv = ["csv"]
+use_html = ["askama_escape"]
+use_json = [
+    "json",
+    "json-color",
+]
+use_mysql = ["mysql"]
+use_postgres = [
+    "postgres",
+    "fallible-iterator",
+]
+use_spsheet = ["spsheet"]
+use_sqlite = [
+    "sqlite",
+    "sqlite3-src",
+    "sqlite3-src/bundled",
+]
+use_text = []

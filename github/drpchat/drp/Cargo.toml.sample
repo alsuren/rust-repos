@@ -1,0 +1,31 @@
+[package]
+name = "drp"
+version = "0.1.0"
+authors = ["Lily Houghton <lily.anachrome@gmail.com>", "AJ Trainor <lhk@lhk.me>"]
+build = "build.rs"
+
+[[bin]]
+name = "drpd"
+path = "src/server.rs"
+
+[[bin]]
+name = "drpc"
+path = "src/client.rs"
+
+[[bin]]
+name = "keygen"
+path = "src/keygen.rs"
+
+[build-dependencies]
+capnpc = "*"
+
+[dependencies]
+ncurses = "*"
+mio = "*"
+bytes = "*"
+nix = "*"
+capnp = "0.6.2"
+capnp-nonblock = "0.3.0"
+libc = "*"
+sodiumoxide = "*"
+rustc-serialize = "*"

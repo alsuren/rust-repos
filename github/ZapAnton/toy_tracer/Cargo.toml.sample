@@ -1,0 +1,9 @@
+[package]
+name = "toy_tracer"
+version = "0.1.0"
+authors = ["ZapAnton <wc3ft2@gmail.com>"]
+description = "A toy ray tracer"
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"

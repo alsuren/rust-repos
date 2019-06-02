@@ -1,0 +1,7 @@
+[package]
+name = "bake"
+version = "0.1.0"
+authors = ["SJFrK <steve@q5n.de>"]
+
+[dependencies]
+cake = { git = "https://github.com/ticki/cake" }

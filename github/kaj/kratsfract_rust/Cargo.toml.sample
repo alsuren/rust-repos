@@ -1,0 +1,11 @@
+[package]
+name = "kratsfract_rust"
+version = "0.1.0"
+authors = ["Rasmus Kaj <rasmus@krats.se>"]
+
+[dependencies]
+num = "*"
+gtk = "*"
+cairo-rs = "*"
+gdk = "*"
+gdk-pixbuf = "*"

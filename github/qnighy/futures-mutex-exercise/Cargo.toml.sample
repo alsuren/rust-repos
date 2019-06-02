@@ -1,0 +1,14 @@
+[package]
+name = "futures-mutex"
+version = "0.1.0"
+authors = ["Masaki Hara <ackie.h.gmai@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures-preview = "0.3.0-alpha.9"
+
+[dev-dependencies]
+futures-preview = { version = "0.3.0-alpha.9", features = ["tokio-compat"] }
+futures-test-preview = "0.3.0-alpha.9"
+tokio = "0.1.11"
+rand = "0.5.5"

@@ -1,0 +1,16 @@
+[badges.appveyor]
+repository = "remexre/monto-rs"
+
+[badges.travis-ci]
+repository = "melt-umn/monto-rs"
+
+[workspace]
+members = [
+	"broker",
+	"client",
+	"common",
+	"service",
+	"services/monto3-cpp",
+	"services/monto3-example-services",
+	"services/monto3-loctrans",
+]

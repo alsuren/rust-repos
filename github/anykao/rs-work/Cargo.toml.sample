@@ -1,0 +1,23 @@
+[package]
+name = "work"
+version = "0.1.0"
+authors = ["meng.fanjun <600913@gmail.com>"]
+
+[dependencies]
+rouille = "*"
+rustc-serialize = "*"
+postgres = "*"
+bson = "*"
+mongodb = "*"
+termion = "*"
+serde = "0.8"
+serde_derive = "0.8"
+serde_json = "0.8"
+clippy = "*"
+clap = "*"
+rocket = "0.1.4"
+rocket_codegen = "0.1.4"
+error-chain = "0.7.2"
+
+[dependencies.extra]
+git = "https://github.com/redox-os/libextra.git"

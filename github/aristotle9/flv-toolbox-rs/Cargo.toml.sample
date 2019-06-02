@@ -1,0 +1,16 @@
+[package]
+name = "flv-toolbox-rs"
+version = "0.1.0"
+authors = ["aristotle9 <lanfan.1987@gmail.com>"]
+
+[dependencies]
+rustc-serialize = "0.3"
+byteorder = "0.3"
+xml-rs = "0.2"
+getopts = "0.2"
+colored = "1.6"
+libc = "0.2.0"
+rand = "0.3"
+
+[lib]
+path = "src/mod.rs"

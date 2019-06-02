@@ -1,0 +1,57 @@
+[package]
+
+name = "rust-ffmpeg"
+version = "0.1.0"
+authors = [ "mewlips@gmail.com" ]
+
+[dependencies.avutil52]
+
+path = "avutil52"
+
+[dependencies.avcodec54]
+
+path = "avcodec54"
+
+[dependencies.avcodec55]
+
+path = "avcodec55"
+
+[dependencies.avdevice54]
+
+path = "avdevice54"
+
+[dependencies.avdevice55]
+
+path = "avdevice55"
+
+[dependencies.avfilter3]
+
+path = "avfilter3"
+
+[dependencies.avfilter4]
+
+path = "avfilter4"
+
+[dependencies.avformat54]
+
+path = "avformat54"
+
+[dependencies.avformat55]
+
+path = "avformat55"
+
+[dependencies.swresample0]
+
+path = "swresample0"
+
+[dependencies.swscale2]
+
+path = "swscale2"
+
+[[bin]]
+
+name = "rust-ffmpeg"
+
+[dependencies]
+libc = "*"
+

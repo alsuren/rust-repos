@@ -1,0 +1,16 @@
+[package]
+name = "pgboss-client"
+version = "0.1.0"
+authors = ["russ <rmorris@infocyte.com>"]
+
+[dependencies]
+futures = "0.1.21"
+hyper = "0.11.26"
+hyper-rustls = "0.11"
+tokio-core = "0.1"
+log = "0.4.1"
+rustls = { version = "0.11", default-features = false, features = ["dangerous_configuration"] }
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+webpki = "*"

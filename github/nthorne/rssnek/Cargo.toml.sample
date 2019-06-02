@@ -1,0 +1,15 @@
+[package]
+name = "rssnek"
+version = "0.1.0"
+authors = ["Niklas Thörne <notrupertthorne@gmail.com>"]
+
+[dependencies]
+ncurses = "5.85.0"
+slog = "1.5"
+slog-stream = "1.2"
+slog-json = "1.2"
+slog-term = "1.5"
+rand = "0.3.16"
+serde = "1.0.15"
+serde_derive = "1.0.15"
+serde_json = "1.0.3"

@@ -1,0 +1,9 @@
+[package]
+name = "rusutologs"
+version = "0.2.0"
+authors = ["Ivan Molina Rebolledo <ivanmolinarebolledo@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+termcolor = "1"
+chrono = { version = "0.4", features = ["serde"] }

@@ -1,0 +1,17 @@
+[package]
+name = "git-rs"
+version = "0.1.0"
+authors = ["Reiner Gerecke <me@reinergerecke.de>"]
+
+[dependencies]
+flate2 = "0.2"
+rustc-serialize = "0.3"
+clap = "~2.20.5"
+ansi_term = "0.9"
+
+[dev-dependencies]
+tempdir = "0.3"
+
+[[bin]]
+doc = false
+name = "git-rs"

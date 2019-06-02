@@ -1,0 +1,41 @@
+[package]
+name = "feroxide"
+version = "1.3.2"
+authors = [ "feroxide" ]
+
+description = "A basic chemistry simulator"
+documentation = "https://feroxide.github.io/feroxide/rust-docs/feroxide"
+homepage = "https://feroxide.github.io/feroxide/"
+repository = "https://github.com/feroxide/feroxide"
+
+keywords = [ "chemistry", "simulator", "mit" ]
+categories = [ "command-line-interface", "science" ]
+
+readme = "README.md"
+license-file = "LICENSE"
+
+build = "src/build.rs"
+
+[features]
+default = []
+no_utf = []
+
+
+[badges]
+travis-ci = { repository = "feroxide/feroxide", branch = "master" }
+
+
+[[bin]]
+name = "main"
+doc = false
+path = "src/main.rs"
+
+
+[dependencies]
+lazy_static = "0.2.8"
+
+
+[build-dependencies]
+toml = "0.4.5"
+serde = "1.0.11"
+serde_derive = "1.0.11"

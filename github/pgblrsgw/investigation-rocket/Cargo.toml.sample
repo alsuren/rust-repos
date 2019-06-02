@@ -1,0 +1,21 @@
+[package]
+name = "investigation-rocket"
+version = "0.1.0"
+authors = ["Geordon Worley <vadixidav@gmail.com>"]
+
+[dependencies]
+rocket = "0.2.0"
+rocket_codegen = "0.2.0"
+rocket_contrib = "0.2.0"
+pathfinding = "0.1"
+ndarray = "0.7"
+itertools = "0.5"
+
+[dependencies.a4-proto]
+git = "https://github.com/pgblrsgw/a4-proto"
+rev = "096aea427ccd88fe682ed80a147856fccdd1db17"
+
+[dev-dependencies]
+rocket = { version = "0.2.0", features = ["testing"] }
+serde = "0.9"
+serde_json = "0.9"

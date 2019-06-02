@@ -1,0 +1,12 @@
+[package]
+name = "mold"
+version = "0.1.0"
+authors = ["Thing <thing@mold.world>"]
+
+[dependencies]
+amethyst = "0.8"
+
+world = { path = "world" }
+
+[workspace]
+members = ["world"]

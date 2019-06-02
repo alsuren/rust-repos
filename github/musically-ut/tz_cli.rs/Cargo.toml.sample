@@ -1,0 +1,12 @@
+[package]
+name = "tz_cli"
+version = "0.1.0"
+authors = ["Utkarsh Upadhyay <musically.ut@gmail.com>"]
+
+[dependencies]
+chrono = ">=0.3"
+chrono-tz = ">=0.3.0"
+
+[[bin]]
+name = "tz"
+path = "src/main.rs"

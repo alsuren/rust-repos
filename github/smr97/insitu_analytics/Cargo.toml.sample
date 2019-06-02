@@ -1,0 +1,22 @@
+[package]
+name = "analytics"
+version = "1.0.0"
+authors = ["Saurabh Raje <saurabh.mraje@gmail.com>"]
+edition = "2018"
+[profile.release]
+debug = true
+debuginfo = true
+[dev-dependencies]
+criterion="*"
+[dependencies]
+rayon_logs = {optional = true, path="../rayon-logs"}
+time = "*"
+grouille={path="../grouille"}
+rayon="*"
+itertools="*"
+rand="*"
+thread_binder={path="../thread_binder"}
+[target.'cfg(feature = "rayon_logs")'.dependencies]
+rayon_adaptive={path="../rayon-adaptive", default-features = false, features = ["logs"]}
+[target.'cfg(not(feature = "rayon_logs"))'.dependencies]
+rayon_adaptive={path="../rayon-adaptive", default-features = false, features = ["logs"]}

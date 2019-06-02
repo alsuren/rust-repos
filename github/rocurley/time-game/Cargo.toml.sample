@@ -1,0 +1,18 @@
+[package]
+name = "time_game"
+version = "0.1.0"
+authors = ["Roger Curley <rocurley@gmail.com>"]
+
+[[bin]]
+name = "time_game"
+path = "src/main.rs"
+
+[lib]
+name = "time_game_lib"
+path = "src/lib.rs"
+
+[dependencies]
+ggez = "0.4"
+rand = "0.4.1"
+proptest = "0.9"
+petgraph = "0.4.13"

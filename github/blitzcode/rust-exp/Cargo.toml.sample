@@ -1,0 +1,17 @@
+[package]
+name = "rust_exp"
+version = "0.1.0"
+
+[lib]
+path = "rs-src/lib.rs"
+crate-type = ["staticlib"]
+
+[dependencies]
+lazy_static = ">= 0.1.15"
+rand = ">= 0.3"
+nalgebra = ">= 0.5.1"
+stb_image = ">= 0.2.1"
+time = ">= 0.1"
+ansi_term = ">= 0.7"
+scoped_threadpool = ">= 0.1.7"
+num_cpus = ">= 0.2.11"

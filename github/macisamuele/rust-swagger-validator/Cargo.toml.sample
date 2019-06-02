@@ -1,0 +1,44 @@
+[package]
+name = "rust_swagger_validator"
+version = "0.1.1"
+authors = ["Samuele Maci <macisamuele@gmail.com>"]
+publish = false
+build = "rust/build.rs"
+
+[badges]
+appveyor = { repository = "macisamuele/rust-swagger-validator", branch = "master", service = "github"}
+travis-ci = { repository = "macisamuele/rust-swagger-validator", branch = "master" }
+codecov = { repository = "macisamuele/rust-swagger-validator", branch = "master", service = "github" }
+
+[lib]
+path = "rust/src/lib.rs"
+name = "rust_swagger_validator"
+crate-type = ["rlib", "cdylib"]
+
+[features]
+python_bindings = ["chrono", "pyo3"]
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+
+[[test]]
+path = "rust/tests/luncher.rs"
+name = "rust_swagger_validator_tests"
+
+[build-dependencies]
+built = "^0.3"
+
+[dependencies]
+chrono = {version = "^0.4", optional = true}  # Optional dependency as required only during python bindings
+reqwest = "^0.8.6"
+serde_json = "^1"
+serde_yaml = "^0.7.5"
+url = "^1.7.1"
+valico = "^2.1.0"
+
+[dependencies.pyo3]
+version = "^0.4.1"
+features = ["extension-module"]
+optional = true

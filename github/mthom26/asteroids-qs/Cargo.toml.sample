@@ -1,0 +1,9 @@
+[package]
+name = "asteroids-qs"
+version = "0.1.0"
+authors = ["mthom26 <mthom2626@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+quicksilver = "0.3.12"
+nalgebra = "0.18.0"

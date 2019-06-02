@@ -1,0 +1,21 @@
+[package]
+name = "rustats"
+version = "0.0.7"
+authors = ["Takeru Ohta <phjgt308@gmail.com>"]
+edition = "2018"
+description = "A statistical library"
+homepage = "https://github.com/sile/rustats"
+repository = "https://github.com/sile/rustats"
+readme = "README.md"
+categories = ["science"]
+license = "MIT"
+
+# [badges]
+# travis-ci = {repository = "sile/rustats"}
+# codecov = {repository = "sile/rustats"}
+
+[dependencies]
+rand = "0.6"
+serde = { version = "1", features = ["derive"], optional = true }
+statrs = "0.11"
+trackable = "0.2"

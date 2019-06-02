@@ -1,0 +1,46 @@
+[package]
+name = "evm"
+version = "0.9.4"
+license = "Apache-2.0"
+authors = ["Wei Tang <hi@that.world>"]
+description = "Ethereum Virtual Machine implementation in Rust. Nightly version of SputnikVM."
+repository = "https://source.that.world/source/evm-rs"
+keywords = ["no_std"]
+
+[dependencies]
+sha3 = "0.6"
+sha2 = "0.6"
+ripemd160 = "0.6"
+digest = "0.6"
+ethereum-block-core = { version = "0.1", default-features = false }
+ethereum-rlp = { version = "0.2", default-features = false }
+ethereum-bigint = { version = "0.2", default-features = false, features = ["rlp"] }
+
+ethereum-block = { version = "0.3", default-features = false, optional = true }
+secp256k1-plus = { version = "0.5.7", optional = true }
+libsecp256k1 = { version = "0.1", optional = true }
+
+[dev-dependencies]
+ethereum-hexutil = "0.2"
+
+[features]
+default = ["std", "rust-secp256k1"]
+c-secp256k1 = ["secp256k1-plus", "ethereum-block/c-secp256k1"]
+rust-secp256k1 = ["libsecp256k1", "ethereum-block/rust-secp256k1"]
+std = ["ethereum-block-core/std", "ethereum-rlp/std", "ethereum-bigint/std", "ethereum-block"]
+
+[workspace]
+members = [
+  "./jsontests",
+  "./regtests",
+  "./gethrpc",
+  "./stateful",
+  "./precompiled/modexp",
+  "./precompiled/bn128",
+  "./network/foundation",
+  "./network/classic",
+  "./network/ellaism",
+  "./network/musicoin",
+  "./network/expanse",
+  "./network/ubiq",
+]

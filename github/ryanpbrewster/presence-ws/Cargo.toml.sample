@@ -1,0 +1,14 @@
+[package]
+name = "presence-ws"
+version = "0.1.0"
+authors = ["Ryan Brewster <ryanpbrewster@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "presence-ws-server"
+path = "src/main.rs"
+
+[dependencies]
+actix = "0.8.1"
+actix-web = "1.0.0-beta.4"
+actix-web-actors = "1.0.0-beta.4"

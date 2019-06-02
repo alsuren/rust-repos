@@ -1,0 +1,10 @@
+[package]
+authors = ["Fredrik Portström <https://portstrom.com>"]
+edition = "2018"
+name = "editor"
+version = "0.1.0"
+
+[dependencies]
+bytecount = "0.5"
+memchr = "2"
+unicode-segmentation = "1"

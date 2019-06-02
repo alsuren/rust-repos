@@ -1,0 +1,17 @@
+[package]
+name = "lite-hacker-news"
+version = "0.1.0"
+authors = ["Desmond Ding <info@desmonding.me>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.3.16"
+rocket_codegen = "0.3.16"
+reqwest = "0.8.8"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+job_scheduler = "*"
+diesel = { version = "1.0.0", features = ["postgres", "r2d2"] }
+r2d2 = "0.8.2"
+dotenv = "0.9.0"

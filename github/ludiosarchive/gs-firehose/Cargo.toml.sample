@@ -1,0 +1,14 @@
+[package]
+name = "gs-firehose"
+version = "0.2.0"
+authors = ["Ivan Kozik <ivan@ludios.org>"]
+
+[dependencies]
+ws = "*"
+env_logger = "*"
+serde = "*"
+serde_macros = "*"
+serde_json = "*"
+clap = "*"
+ansi_term = "*"
+lazy_static = "*"

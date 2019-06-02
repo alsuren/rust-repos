@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "core",
+    "util_cgroup",
+    "lib_container",
+    "list",
+    "exec",
+    "start",
+    "stop",
+    "cluster",
+]

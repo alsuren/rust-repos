@@ -1,0 +1,13 @@
+[package]
+name = "sw"
+version = "0.1.0"
+authors = ["sisshiki1969 <sisshiki@mac.com>"]
+edition = "2018"
+
+[lib]
+name = "sw"
+crate-type = ["dylib"]
+
+[dependencies]
+rapidus = { path = "../rapidus-clone" }
+rustc-hash = "*"

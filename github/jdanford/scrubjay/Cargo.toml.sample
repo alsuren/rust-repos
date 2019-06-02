@@ -1,0 +1,23 @@
+[package]
+name = "scrubjay"
+version = "0.1.0"
+authors = ["Jordan Danford <jordandanford@gmail.com>"]
+description = "A little tool to keep your config files all nice and orderly"
+documentation = "https://github.com/jdanford/scrubjay"
+homepage = "https://github.com/jdanford/scrubjay"
+repository = "https://github.com/jdanford/scrubjay"
+readme = "README.md"
+license = "Unlicense"
+
+[[bin]]
+path = "src/main.rs"
+name = "sj"
+
+[dependencies]
+clap = "2.19"
+colored = "1.5"
+ignore = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+shellexpand = "1.0"
+toml = "0.4"

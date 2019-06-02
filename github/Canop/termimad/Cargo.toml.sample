@@ -1,0 +1,17 @@
+[package]
+name = "termimad"
+version = "0.3.2"
+authors = ["dystroy <denys.seguret@gmail.com>"]
+repository = "https://github.com/Canop/termimad"
+description = "Terminal Renderer for markdown snippets"
+edition = "2018"
+keywords = ["markdown", "terminal", "tui", "renderer", "parser"]
+license = "MIT"
+categories = ["command-line-interface", "text-processing"]
+readme = "README.md"
+
+[dependencies]
+lazy_static = "1.3"
+minimad = "0.3.2"
+#minimad = { path = "../minimad" }
+crossterm = "0.9.5"

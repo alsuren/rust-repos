@@ -1,0 +1,10 @@
+[package]
+name = "libmatrix"
+version = "0.1.0"
+authors = ["Michael Chen <cwchen123@gmail.com>"]
+
+[lib]
+name = "matrix"
+crate_type = ["dylib"]
+
+[dependencies]

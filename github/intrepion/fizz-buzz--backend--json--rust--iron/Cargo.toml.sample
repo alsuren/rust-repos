@@ -1,0 +1,14 @@
+[package]
+name = "fizz_buzz_x_backend_x_json_x_rust_x_iron"
+version = "0.1.0"
+authors = ["Oliver Forral <intrepion@gmail.com>"]
+
+[dependencies]
+hyper = "0.9.10"
+intrepion_x_fizz_buzz = "0.1.1"
+iron = "0.4.0"
+iron-test = "0.4.0"
+mount = "0.2.1"
+router = "0.2.0"
+rustc-serialize = "0.3.19"
+staticfile = "0.3.0"

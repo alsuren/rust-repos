@@ -1,0 +1,29 @@
+[package]
+name = "dutrack-rs"
+version = "0.1.0"
+authors = ["Jan Christophersen <jan@ruken.pw>"]
+
+[dependencies]
+rocket = "0.2.2"
+rocket_codegen = "0.2.2"
+redis = "0.5.3"
+dotenv = "0.8.0"
+diesel = { version = "0.12.0", features = ["postgres", "uuid", "chrono"] }
+diesel_codegen = { version = "0.12.0", features = ["postgres"] }
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+chrono = { version = "0.3", features = ["serde"] }
+
+[dependencies.lib]
+path = "lib"
+
+[dependencies.uuid]
+version = "0.4"
+default-features = false
+features = ["v4"]
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["handlebars_templates", "json"]

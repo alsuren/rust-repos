@@ -1,0 +1,24 @@
+[package]
+name = "inets"
+version = "0.1.0"
+description = "Interaction Nets library as basic abstractions written in Rust."
+license = "Apache-2.0"
+homepage = "https://github.com/DestructHub/inets"
+repository = "https://github.com/DestructHub/inets"
+keywords = ["inets", "interaction", "nets", "rust"]
+readme = "README.md"
+authors = ["André Zanella <andre.zanella@hotmail.com>",
+           "Leonardo Neumann <leonardohn@null.net>",
+           "Manoel Vilela <manoel_vilela@engineer.com>",
+           "Rafael Nunes <rcamposnunes@outlook.com"]
+
+[dependencies]
+
+[lib]
+name = "inets"
+path = "src/lib.rs"
+
+[[bin]]
+name = "inets"
+path = "src/bin/main.rs"
+doc = false

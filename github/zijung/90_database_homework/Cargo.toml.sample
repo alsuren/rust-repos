@@ -1,0 +1,10 @@
+[package]
+name = "database"
+version = "0.1.0"
+authors = ["Zijung Chueh <i@zijung.me>"]
+edition = "2018"
+
+[dependencies]
+termion = "*"
+mysql = "*"
+chrono = "*"

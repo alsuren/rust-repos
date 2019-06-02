@@ -1,0 +1,12 @@
+[package]
+name = "advent"
+version = "0.1.0"
+authors = ["Heiko Carrasco <heiko.carrasco@yahoo.com>"]
+build = "build.rs"
+
+[dependencies]
+clap = "~2.32"
+chrono = "0.4"
+
+[build-dependencies]
+clap = "~2.32"

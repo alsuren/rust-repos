@@ -1,0 +1,9 @@
+[package]
+name = "pomodoro_clock_rust"
+version = "0.1.0"
+authors = ["Paul Naranja <paul.naranja@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33.0"
+rodio = "0.8.1"

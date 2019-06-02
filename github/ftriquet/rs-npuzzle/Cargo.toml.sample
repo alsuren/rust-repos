@@ -1,0 +1,14 @@
+[package]
+authors = ["François Triquet <francois.triquet@recast.ai>", "Alex Kpenou <akpenou@students.42.fr>"]
+name = "n-puzzle"
+version = "0.1.0"
+
+[dependencies]
+ansi_term = "0.9.0"
+clap = "2.19.0"
+rand = "0.3"
+
+[features]
+default = ["uniform"]
+greedy = []
+uniform = []

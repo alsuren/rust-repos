@@ -1,0 +1,15 @@
+[package]
+name = "winning-chances"
+version = "0.1.0"
+authors = ["ProgramFOX <programfox@hotmail.be>"]
+
+[dependencies]
+time = "0.1"
+
+[lib]
+name = "winning_chances_core"
+path = "lib.rs"
+
+[[bin]]
+name = "winning-chances"
+path = "main.rs"

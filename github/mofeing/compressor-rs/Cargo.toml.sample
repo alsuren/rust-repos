@@ -1,0 +1,12 @@
+[package]
+name = "compressor-rs"
+version = "0.1.0"
+authors = ["Sergio Sánchez <mofeing@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+vst = "*"
+
+[lib]
+name = "compressor"
+crate-type = ["cdylib"]

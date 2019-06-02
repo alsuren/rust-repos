@@ -1,0 +1,13 @@
+[package]
+name = "ocaml"
+version = "0.7.0"
+authors = ["Zach Shipko <zachshipko@gmail.com>"]
+readme = "README.md"
+keywords = ["ocaml", "rust", "ffi"]
+repository = "https://github.com/zshipko/ocaml-rs"
+license = "ISC"
+description = "OCaml bindings for Rust"
+documentation = "https://docs.rs/ocaml"
+edition = "2018"
+
+[dependencies]

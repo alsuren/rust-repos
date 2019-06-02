@@ -1,0 +1,16 @@
+[package]
+name = "maze"
+version = "0.1.0"
+authors = ["Isaac Grosof <isaacbg227@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+piston = "0.39.0"
+piston_window = "0.85.0"
+piston2d-graphics = "0.28.0"
+pistoncore-glutin_window = "0.51.0"
+piston2d-opengl_graphics = "0.57.0"
+rand = "0.6.1"
+find_folder = "0.3.0"
+noisy_float = "0.1.8"
+

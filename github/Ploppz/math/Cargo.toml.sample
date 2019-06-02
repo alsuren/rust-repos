@@ -1,0 +1,33 @@
+[package]
+name = "math"
+version = "0.1.1"
+authors = ["Sebastian Köln <sebk@rynx.org>"]
+build = "build.rs"
+
+[dependencies]
+rand = "*"
+tuple = { version = "0.3", features = ["impl_simd"], git="https://github.com/s3bk/tuple.git" }
+num = "*"
+simd = "*"
+lalrpop-util = "*"
+regex = "*"
+optimization = "*"
+env_logger = "*"
+typenum = "*"
+itertools = "*"
+quote = "*"
+petgraph = "*"
+syn = "*"
+memmap = "*"
+
+[build-dependencies]
+lalrpop = "*"
+
+[dev-dependencies]
+jack = "*"
+hound = "*"
+termion = "*"
+hiirc = "*"
+
+[workspace]
+members = ["math_macros"]

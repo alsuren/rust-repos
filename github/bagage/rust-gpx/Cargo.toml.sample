@@ -1,0 +1,15 @@
+[package]
+name = "gpxanalyzer"
+version = "0.1.0"
+authors = ["Gautier Pelloux-Prayer <gautier@damsy.net>"]
+build = "build.rs"
+
+[build-dependencies]
+clap = "*"
+
+[dependencies]
+clap = "*"
+rquery = "*"
+chrono = "0.4"
+xmltree = "*"
+gpx = "*"

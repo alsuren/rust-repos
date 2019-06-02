@@ -1,0 +1,25 @@
+[package]
+name = "motorsport_calendar_webserver"
+version = "0.1.0"
+authors = ["Michael Ashe <mickjohnashe@hotmail.com>"]
+
+[dependencies]
+rocket = "0.4.0"
+env_logger = "0.6.0"
+serde = "1.0.82"
+serde_derive = "1.0.82"
+serde_yaml = "0.8.8"
+serde_json = "1.0.33"
+chrono = { version = "0.4.6", features = ["serde"] }
+reqwest = "0.9.5"
+lazy_static = "1.2.0"
+tera = "0.11.20"
+hyper = "0.12.19"
+clap = "2.32.0"
+
+[dependencies.motorsport_calendar_common]
+git = "https://github.com/mickjohn/motorsport_calendar_common.git"
+rev = "ab67e77b6b0d519709e0d432f22ba4c495b33732"
+
+[dependencies.log]
+git = "https://github.com/mickjohn/log.git"

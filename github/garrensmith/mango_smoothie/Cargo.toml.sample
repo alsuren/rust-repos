@@ -1,0 +1,19 @@
+[package]
+name = "mango_smoothie"
+version = "0.2.0"
+authors = ["Garren Smith <garren.smith@gmail.com>"]
+license = "MIT"
+description = "A client side library for CouchDB Mango/Cloudant Query"
+repository = "https://github.com/garrensmith/mango_smoothie"
+documentation = "http://garrensmith.com/mango_smoothie"
+keywords = ["couchdb", "database", "nosql", "mango"]
+exclude = [
+    "node_modules",
+    "docs"
+]
+
+[dependencies]
+hyper = "0.9.10"
+serde = "~0.9"
+serde_json = "~0.9"
+serde_derive = "~0.9"

@@ -1,0 +1,22 @@
+[package]
+name = "linear_regression"
+version = "0.0.1"
+authors = ["frale-co <lecorre.f@gmail.com>"]
+description = ""
+
+[[bin]]
+name = "predict"
+path = "src/predict.rs"
+doc = false
+
+[[bin]]
+name = "train"
+path = "src/train.rs"
+doc = false
+
+[dependencies]
+clap = "2"
+csv = "0.14"
+
+[features]
+unstable = [] # for travis-cargo

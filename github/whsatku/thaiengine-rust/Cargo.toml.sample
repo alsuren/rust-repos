@@ -1,0 +1,20 @@
+[package]
+name = "thaiengine"
+version = "0.1.0"
+authors = ["Manatsawin Hanmongkolchai <manatsawin+git@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+radix_trie = "*"
+encoding = "0.2.32"
+log = "0.3.5"
+env_logger = "0.3.2"
+stopwatch = "0.0.6"
+
+[profile.release]
+lto = true
+
+[features]
+default = ["color"]
+dump_data = []
+color = []

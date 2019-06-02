@@ -1,0 +1,33 @@
+[package]
+name = "filearco"
+version = "0.1.0"
+authors = ["Philip Woods <elzairthesorcerer@gmail.com>"]
+description = "Simple read-only file archive format"
+readme = "README.md"
+license = "MIT/Apache-2.0"
+documentation = "https://docs.rs/filearco/"
+homepage = "https://github.com/Elzair/filearco_rs"
+repository = "https://github.com/Elzair/filearcho_rs"
+keywords = ["archive", "file-archive", "encoding", "filearchive"]
+categories = ["filesystem", "game-engines"]
+
+[features]
+binaries = ["clap"]
+
+[[bin]]
+name = "filearco"
+path = "src/bin/filearco.rs"
+required-features = ["binaries"]
+
+[dependencies]
+bincode = "0.8"
+crc = "1.5"
+clap = { version = "2", optional = true }
+memmap = "^0.5.2"
+page_size = "0.4"
+serde = "^1.0"
+serde_derive = "^1.0"
+walkdir = "1.0"
+
+[dev-dependencies]
+memadvise = "0.1"

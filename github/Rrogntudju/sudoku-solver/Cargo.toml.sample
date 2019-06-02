@@ -1,0 +1,12 @@
+[package]
+name = "sudoku-solver"
+version = "0.1.0"
+authors = ["Rrogntudju"]
+
+[lib]
+name = "libsudokusolver"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "*"
+features = ["extension-module"]

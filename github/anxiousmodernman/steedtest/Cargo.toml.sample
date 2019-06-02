@@ -1,0 +1,17 @@
+[package]
+name = "steedtest"
+version = "0.1.0"
+authors = ["Coleman McFarland <coleman.mcfarland@gmail.com>"]
+
+[[bin]]
+name = "steedtest"
+path = "src/main.rs"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+lto = true
+
+

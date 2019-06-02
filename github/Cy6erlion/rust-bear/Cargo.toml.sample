@@ -1,0 +1,10 @@
+[package]
+name = "rust-bear"
+version = "0.1.0"
+authors = ["cy6erlion <jakai@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0.91"
+serde_json = "1.0.39"
+rand = "0.6"

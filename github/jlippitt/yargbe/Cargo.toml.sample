@@ -1,0 +1,20 @@
+[package]
+name = "yargbe"
+version = "0.1.0"
+description = "Yet Another Rust Game Boy Emulator"
+authors = ["James Lippitt <james.lippitt@wjweb.co.uk>"]
+
+[dependencies]
+bitflags = "0.5"
+getopts = "0.2"
+log = "0.3"
+memmap = "0.5"
+sdl2 = "0.29"
+sdl2-sys = "0.27"
+time = "0.1"
+
+[features]
+logging = []
+
+[profile.dev]
+opt-level = 3

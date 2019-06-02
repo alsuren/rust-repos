@@ -1,0 +1,31 @@
+[package]
+name = "curve41417"
+version = "0.0.1"
+authors = ["Sebastien Martini <seb@dbzteam.org>"]
+license = "MIT/ASL2"
+repository = "https://github.com/seb-m/curve41417.rs"
+homepage = "https://github.com/seb-m/curve41417.rs"
+documentation = "http://seb.dbzteam.org/curve41417.rs/"
+readme = "README.md"
+description = """
+A pure-Rust Curve41417 implementation
+"""
+keywords = ["crypto", "ecc", "safecurves"]
+
+[lib]
+name = "curve41417"
+
+[features]
+# Inherited from TARS, used to disable mlock calls in heap allocations
+# see TARS's Cargo.toml.
+no_mlock = ["tars/no_mlock"]
+
+[dependencies.tars]
+git = "https://github.com/seb-m/tars"
+
+[dependencies]
+rand = "0.3.10"
+num = "0.1.27"
+
+[dev-dependencies]
+log = "0.3.1"

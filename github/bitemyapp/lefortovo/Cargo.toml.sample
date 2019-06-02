@@ -1,0 +1,13 @@
+[package]
+name = "lefortovo"
+version = "0.1.0"
+authors = ["callen"]
+license = "Apache-2.0"
+
+[dependencies]
+bytes = "0.4.8"
+clap = "*"
+hyper = ">= 0.12.1"
+hyper-tls = "0.2.0"
+pretty_env_logger = "*"
+tokio-core = ">= 0.1.17"

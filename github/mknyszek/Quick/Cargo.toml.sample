@@ -1,0 +1,9 @@
+[package]
+name = "quick"
+version = "0.1.0"
+authors = ["Michael Anthony Knyszek <mknyszek@gmail.com>"]
+
+
+[dependencies]
+pest = "0.4"
+libquantum = { git = "https://github.com/mknyszek/rust-libquantum" }

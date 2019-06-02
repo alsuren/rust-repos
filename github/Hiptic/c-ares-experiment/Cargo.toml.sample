@@ -1,0 +1,10 @@
+[package]
+name = "c-ares-experiment"
+version = "0.1.0"
+authors = ["Joe Wilm <joe@jwilm.com>"]
+
+[dependencies]
+c-ares-resolver = "0.4.2"
+c-ares = "1.1"
+tokio-core = "0.1"
+futures = "0.1"

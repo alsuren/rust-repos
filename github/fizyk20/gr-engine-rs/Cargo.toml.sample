@@ -1,0 +1,13 @@
+[package]
+name = "gr-engine"
+version = "0.1.0"
+authors = ["Bartłomiej Kamiński <fizyk20@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "gr_engine"
+
+[dependencies]
+differential-geometry = "0.3"
+generic-array = "0.13"
+numeric-algs = "0.2.1"

@@ -1,0 +1,11 @@
+[package]
+name = "s3"
+version = "0.1.0"
+authors = ["Travis Harmon <harmtrav@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "*"
+hmac = "*"
+sha2 = "*"
+hex = "*"

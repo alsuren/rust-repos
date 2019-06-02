@@ -1,0 +1,62 @@
+[package]
+name = "gooddata-fs"
+version = "0.0.6"
+authors = [
+  "Tomas Korcak <korczis@gmail.com>"
+]
+description = "GoodData as Filesystem (using FUSE)"
+license = "MIT"
+repository = "https://github.com/korczis/gooddata-fs"
+
+[dependencies]
+chomp = "0.2.5"
+chrono = "0.2"
+clap = "*"
+cookie = "0.2.4"
+ctrlc = "*"
+env_logger = "0.3"
+fuse = "0.2"
+hyper = "0.9"
+Inflector = "0.2.0" # https://github.com/whatisinternet/inflector
+libc = { version = "0.2", default-features = false }
+log = "0.3"
+lru-cache = "0.0.7"
+rand = "0.3.0"
+regex = "0.1"
+rustc-serialize = "0.3"
+serde = "0.7.11"
+serde_json = "*"
+# serde_macros = "*"
+tempfile = "2.1.4"
+time = "0.1.35"
+users = "0.5.0"
+
+[build-dependencies]
+serde_codegen = "*"
+
+[lib]
+name = "gooddata_fs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gooddata-fs"
+path = "src/main.rs"
+doc = false
+
+[profile.dev]
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 4
+# -Z time-passes
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+# codegen-units ignored with lto=true
+# panic = "abort"

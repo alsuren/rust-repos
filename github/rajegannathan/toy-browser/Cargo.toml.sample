@@ -1,0 +1,12 @@
+[package]
+
+name = "toy_browser"
+version = "0.0.1"
+authors = ["Anirudhan Jegannathan <anirudhan@rajegannathan.in>"]
+tags = []
+
+[[bin]]
+
+name = "toy_browser"
+path = "src/main.rs"
+

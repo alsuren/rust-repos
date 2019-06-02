@@ -1,0 +1,17 @@
+[package]
+name = "find-like"
+version = "0.2.0"
+authors = ["Anicka Burova <anicka.burova@gmail.com>"]
+license = "MIT"
+description = "Find the closests matches"
+homepage = "https://github.com/AnickaBurova/find-like"
+repository = "https://github.com/AnickaBurova/find-like"
+
+readme = "README.md"
+keywords = ["find", "close", "pattern", "search", "fuzzy"]
+
+[dev-dependencies]
+rustkell = "0.2"
+
+
+

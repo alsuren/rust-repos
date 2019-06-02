@@ -1,0 +1,33 @@
+[package]
+name = "rpdf"
+version = "0.1.0"
+authors = ["Sam Rijs <srijs@airpost.net>"]
+edition = "2018"
+
+[dependencies]
+crossbeam = "0.7.1"
+env_logger = "0.6.0"
+euclid = "0.19.5"
+failure = "0.1.5"
+gleam = "0.6.8"
+glutin = "0.20.0"
+log = "0.4.6"
+structopt = "0.2.14"
+
+rpdf_render = { path = "rpdf_render" }
+rpdf_document = { path = "rpdf_document" }
+
+[dependencies.webrender]
+git = "https://github.com/servo/webrender"
+rev = "e9a987d3938f99756c88f5ea0b5cea74ed8c5a5a"
+
+[workspace]
+members = [
+  "rpdf_render",
+
+  "rpdf_document",
+  "rpdf_graphics",
+
+  "lib/glyph_names",
+  "lib/lopdf_extra"
+]

@@ -1,0 +1,44 @@
+[package]
+
+version = "0.1.0"
+authors = ["Fredrik Simonsson <simson@thesimson.net>"]
+edition = "2018"
+license = "0BSD"
+name = "hellomicrobit"
+readme = "README.md"
+
+[dependencies]
+alloc-cortex-m = "0.3.5"
+cortex-m-rt = "0.6.5"
+
+numtoa = "0.2.3"
+dcf77 = "0.1.0"
+mag3110 = "0.1.4"
+panic-halt = "0.2.0"
+nb = "0.1.1"
+epd-waveshare = { version = "0.2.0", default-features = false, features = ["epd1in54", "graphics"]}
+embedded-graphics = "0.4.3"
+
+[dependencies.embedded-hal]
+features = ["unproven"]
+version = "0.2.2"
+
+[dependencies.nrf51-hal]
+# path = "../../../rustlib/nrf51-hal"
+git = "https://github.com/simonsso/nrf51-hal.git"
+branch = "pullrequest2"
+
+[dependencies.cortex-m]
+## path = "../../../rustlib/cortex-m"
+version = "0.5.8"
+default-features = false
+features = ["inline-asm"]
+
+[profile.dev]
+debug = true
+codegen-units = 1
+
+[profile.release]
+debug = true
+lto = true
+opt-level = "s"

@@ -1,0 +1,15 @@
+[package]
+name = "njsc"
+version = "0.1.0"
+authors = ["Woodrw Barlow"]
+readme = "README.md"
+repository = "https://github.com/woodrowbarlow/NJSC"
+license = "LGPL-3.0"
+
+[lib]
+name = "njsc"
+path = "src/rust/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "0.1.8"

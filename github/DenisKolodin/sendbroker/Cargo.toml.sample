@@ -1,0 +1,8 @@
+[package]
+name = "sendbroker"
+version = "0.2.0"
+authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
+
+[dependencies]
+log = "0.3.7"
+error-chain = "0.10.0"

@@ -1,0 +1,9 @@
+[package]
+name = "hack-game"
+version = "0.1.0"
+authors = ["Ryan Faulhaber <faulhaberryan@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6"
+termion = "^1.5.1"

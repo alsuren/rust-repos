@@ -1,0 +1,21 @@
+[package]
+
+name = "coreutils"
+version = "0.0.1"
+authors = ["Jag Talon <jag@jagtalon.com>"]
+
+[[bin]]
+name = "yes"
+path = "src/yes/yes.rs"
+
+[[bin]]
+name = "factor"
+path = "src/factor/factor.rs"
+
+[[bin]]
+name = "sh"
+path = "src/sh/sh.rs"
+
+[[bin]]
+name = "ls"
+path = "src/ls/ls.rs"

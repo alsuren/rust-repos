@@ -1,0 +1,14 @@
+[package]
+name = "monitor-mailconfig-jobs"
+version = "0.1.0"
+authors = ["Grzegorz Antoniak <ga@anadoxin.org>"]
+
+[dependencies]
+serde = "0.9"
+serde_derive = "0.9"
+serde-hjson = "*"
+argparse = "*"
+log = "*"
+env_logger = "*"
+ansi_term = "*"
+hyper = "*"

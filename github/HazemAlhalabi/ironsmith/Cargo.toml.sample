@@ -1,0 +1,8 @@
+[package]
+name = "ironsmith"
+version = "0.1.0"
+authors = ["Hazem Alhalabi <hazemalhalabi@gmail.com>"]
+
+[dependencies]
+termfest = {git = "https://github.com/HazemAlhalabi/termfest.git"}
+unicode-width = "0.1.5"

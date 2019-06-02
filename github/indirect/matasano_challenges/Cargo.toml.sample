@@ -1,0 +1,26 @@
+[package]
+
+name = "matasano_challenges"
+version = "0.0.1"
+authors = ["André Arko <andre@arko.net>"]
+
+[dependencies]
+rustc-serialize = "0.2"
+
+[dependencies.crypto]
+path = "vendor/crypto"
+
+[dependencies.decrypt]
+path = "vendor/decrypt"
+
+[dependencies.english]
+path = "vendor/english"
+
+[dependencies.p]
+path = "vendor/p"
+
+[dependencies.type_name]
+path = "vendor/type_name"
+
+[dependencies.xor]
+path = "vendor/xor"

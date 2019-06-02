@@ -1,0 +1,8 @@
+[package]
+name = "poker-trainer"
+version = "0.1.0"
+authors = ["ricky han <github@rickyhan.com>"]
+
+[dependencies]
+rand = { version = "0.5", features = ["stdweb"] }
+stdweb = "0.4.7"

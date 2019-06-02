@@ -1,0 +1,9 @@
+[package]
+name = "weather_ng"
+version = "0.1.0"
+authors = ["Anton Grechnev <f17antonio@gmail.com>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+url = "*"

@@ -1,0 +1,10 @@
+[package]
+name = "fermi"
+version = "0.1.0"
+authors = ["John Steidley <johnsteidley@gmail.com>"]
+
+[dependencies]
+iron = "0.4.0"
+router = "0.4.0"
+mount = "0.2.1"
+staticfile = "0.3.0"

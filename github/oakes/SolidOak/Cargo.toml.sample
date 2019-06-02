@@ -1,0 +1,23 @@
+[package]
+name = "solidoak"
+version = "0.2.0"
+authors = ["oakes <zsoakes@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+rustc-serialize = "0.3"
+libc = "0.2"
+glib = "0.1.3"
+gdk = "0.5.3"
+
+[dependencies.gtk]
+version = "0.1.3"
+features = ["v3_10"]
+
+[dependencies.neovim-rs]
+git = "https://github.com/oakes/neovim-rs"
+#path = "../neovim-rs"
+
+[dependencies.vte-rs]
+git = "https://github.com/oakes/vte-rs"
+#path = "../vte-rs"

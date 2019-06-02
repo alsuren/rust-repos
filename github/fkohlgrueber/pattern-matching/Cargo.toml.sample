@@ -1,0 +1,12 @@
+[workspace]
+
+members = [
+    "common",
+    "pattern-tree-macro",
+    "pattern-tree",
+    "pattern-match",
+    "pattern-macro",
+    "pattern",
+    "test",
+    "test-clippy",
+]

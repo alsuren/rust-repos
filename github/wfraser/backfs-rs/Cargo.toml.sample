@@ -1,0 +1,25 @@
+[package]
+name = "backfs"
+version = "0.1.0"
+authors = ["William R. Fraser <wfraser@codewise.org>"]
+build = "build.rs"
+
+[[bin]]
+name = "backfs-rs"
+path = "src/main.rs"
+
+[build-dependencies]
+time = "0.1"
+
+[dependencies]
+daemonize = "0.3"
+libc = "0.2"
+log = { version = "0.4", features = ["std"] }
+log-panics = { version = "2.0", features = ["with-backtrace"] }
+syslog = "3"
+time = "0.1"
+walkdir = "2.0"
+
+[dependencies.fuse_mt]
+#git = "https://github.com/wfraser/fuse-mt.git"
+version = "0.5"

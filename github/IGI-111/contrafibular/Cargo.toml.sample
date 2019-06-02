@@ -1,0 +1,12 @@
+[package]
+name = "contrafibular"
+version = "0.1.0"
+authors = ["IGI-111 <igi-111@protonmail.com>"]
+
+[dependencies]
+colored = "1.6"
+error-chain = "0.12"
+rand = "0.5"
+clap = "2.32"
+termion = "1.5"
+itertools = "0.7"

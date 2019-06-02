@@ -1,0 +1,15 @@
+[package]
+
+name = "rustexample"
+version = "0.0.2"
+authors = [ "Immo Huneke <immo.huneke@zuhlke.com>" ]
+
+[[bin]]
+
+name = "rustexample"
+path = "rustexample/src/main.rs"
+
+[[bin]]
+
+name = "submodule1"
+path = "submodule1/src/main.rs"

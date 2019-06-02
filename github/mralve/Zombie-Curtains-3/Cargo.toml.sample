@@ -1,0 +1,20 @@
+[package]
+name = "zc3"
+version = "0.0.1"
+authors = ["mralve <mralve@amethyst-engine.org>", "TheEggHealer <TheEggKiller@gmail.com"]
+edition = "2018"
+
+[profile.release]
+opt-level = 3
+lto = true
+panic = 'abort'
+
+[dependencies]
+stretch = "0.2.2"
+image = "*"
+derive-new = "0.5.6"
+rand = "*"
+
+[dependencies.amethyst]
+git = "https://github.com/amethyst/amethyst"
+features = ["vulkan"]

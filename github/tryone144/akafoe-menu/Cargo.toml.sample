@@ -1,0 +1,10 @@
+[package]
+name = "akafoe-menu"
+version = "0.1.1"
+authors = ["Bernd Busse <bernd@busse-net.de>"]
+
+[dependencies]
+quick-xml = "0.12"
+regex = "1.0"
+reqwest = "0.9"
+time = "0.1"

@@ -1,0 +1,30 @@
+[package]
+name = "byoo"
+version = "0.1.0"
+authors = ["Ryan Marcus <ryan@rmarcus.info>"]
+
+[lib]
+name = "byoo"
+path = "src/lib.rs"
+
+[[bin]]
+name = "byoo"
+path = "frontend/bin.rs"
+
+[dependencies]
+byteorder = "1"
+matches = "0.1.8"
+csv = "1"
+tempfile = "3"
+base64 = "0.9.3"
+binary-heap-plus = "0.1.4"
+rand = "0.5.5"
+serde_json = "1.0"
+either = "1.4"
+approx = "0.3.0"
+fnv = "1.0.6"
+hashbrown = "0.1"
+snap = "0.2"
+
+[profile.release]
+debug = true

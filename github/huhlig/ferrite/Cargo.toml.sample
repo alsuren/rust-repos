@@ -1,0 +1,13 @@
+[package]
+name = "ferrite"
+version = "0.0.1"
+readme = "README.md"
+license = "Apache-2.0"
+authors = ["Hans W. Uhlig <hans.uhlig@ibm.com>"]
+description = "Data Science and Streaming Analytics Framework for Rust"
+
+[badges]
+travis-ci = { repository = "huhlig/ferrite", branch = "master" }
+
+[dependencies]
+serde = "*"

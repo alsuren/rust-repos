@@ -1,0 +1,14 @@
+[package]
+name = "evalrs"
+version = "0.0.11"
+authors = ["Takeru Ohta <phjgt308@gmail.com>"]
+description = "Rust code snippet evaluator"
+homepage = "https://github.com/sile/evalrs"
+repository = "https://github.com/sile/evalrs"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+clap = "2"
+regex = "1"
+tempdir = "0.3"

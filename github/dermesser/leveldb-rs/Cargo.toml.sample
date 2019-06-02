@@ -1,0 +1,23 @@
+[package]
+name = "rusty-leveldb"
+version = "0.2.3"
+authors = ["Lewin Bormann <lbo@spheniscida.de>"]
+description = "A compatible re-implementation of LevelDB in Rust"
+repository = "https://bitbucket.org/dermesser/leveldb-rs"
+readme = "README.md"
+keywords = ["LevelDB", "key-value", "database", "SSTable", "Google"]
+license = "MIT"
+publish = true
+
+[dependencies]
+crc = "1.2"
+integer-encoding = "1.0"
+libc = "0.2"
+rand = "0.4"
+snap = "0.2"
+
+[dev-dependencies]
+time-test = "0.2"
+
+[workspace]
+members = ["examples/write-a-lot", "examples/leveldb-tool"]

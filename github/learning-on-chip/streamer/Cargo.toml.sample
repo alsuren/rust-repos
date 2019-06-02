@@ -1,0 +1,34 @@
+[package]
+name = "streamer"
+version = "0.0.1"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/learning-on-chip/streamer"
+homepage = "https://github.com/learning-on-chip/streamer"
+description = "Streamer is a tool for generating on-chip data."
+
+[lib]
+name = "streamer"
+path = "src/lib/streamer.rs"
+
+[[bin]]
+name = "streamer"
+path = "src/bin/streamer.rs"
+test = false
+doc = false
+
+[dependencies]
+arguments = "*"
+configuration = "*"
+fractal = "*"
+log = "*"
+probability = "*"
+random = "*"
+sql = "*"
+sqlite = "*"
+temperature = { version = "*", features = ["threed-ice"], default-features = false }
+term = "*"
+threed-ice = "*"
+
+[dev-dependencies]
+assert = "*"

@@ -1,0 +1,37 @@
+[package]
+name = "Botejao"
+version = "0.1.0"
+authors = ["Tiberio D A R Ferreira <tiberiusferreira@gmail.com>"]
+[[bin]]
+name = "botejao"
+path = "src/bin.rs"
+
+
+[lib]
+name = "botejao"
+path = "src/botejao/mod.rs"
+
+
+
+[dependencies]
+webdriver_client = "0.1.0"
+difference = "*"
+scraper = "*"
+error-chain = "*"
+flexi_logger = "*"
+log = "*"
+time = "*"
+failure = "*"
+failure_derive = "*"
+encoding = "*"
+chrono = "*"
+reqwest = "*"
+[dependencies.teleborg]
+git = "https://github.com/tiberiusferreira/teleborg.git"
+branch = "fix_getting_updates"
+#path = "../teleborg"
+
+
+#teleborg = "0.1.32"
+#teleborg = { path = "../teleborg" }
+

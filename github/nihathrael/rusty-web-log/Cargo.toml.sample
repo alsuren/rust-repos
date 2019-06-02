@@ -1,0 +1,29 @@
+[package]
+
+name = "Rusty Web Log"
+version = "0.0.1"
+authors = [ "Thomas Kinnen <thomas.kinnen@gmail.com>" ]
+
+[[bin]]
+name = "rusty_blog"
+
+[features]
+watch = ["handlebars-iron/watch"]
+
+[dependencies]
+iron = "*"
+router = "*"
+staticfile = "*"
+mount = "*"
+handlebars-iron = "*"
+rustc-serialize = "*"
+time = "*"
+chrono = "*"
+uuid = "*"
+r2d2 = "*"
+r2d2_sqlite = "*"
+rusqlite = "*"
+persistent = "*"
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

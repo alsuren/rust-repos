@@ -1,0 +1,10 @@
+[package]
+name = "tmir-generator"
+version = "0.1.0"
+authors = ["David LeGare <dlegare.1001@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+env_logger = "0.6.0"
+pocket = { git = "https://github.com/randomPoison/rust-pocket", rev = "3c020a9" }
+webbrowser = "0.4.0"

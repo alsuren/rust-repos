@@ -1,0 +1,18 @@
+[package]
+name = "futures-jsonrpc"
+version = "0.2.1"
+authors = ["Victor Lopez <vhrlopes@gmail.com>"]
+edition = "2018"
+description = "Futures implementation for JSON-RPC"
+license = "MIT"
+repository = "https://github.com/vlopes11/futures-jsonrpc"
+documentation = "https://docs.rs/futures-jsonrpc/"
+readme = "README.md"
+keywords = ["jsonrpc", "json-rpc", "rpc", "serde", "futures"]
+
+[dependencies]
+futures = "0.1.26"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.39"
+log = "0.4.6"
+uuid = { version = "0.7.4", features = ["v4"]}

@@ -1,0 +1,8 @@
+[package]
+name = "search-reader"
+version = "0.1.0"
+authors = ["Maxim Shishmarev <maxim.shishmarev@monash.edu>"]
+
+[dependencies]
+clap = "2.*"
+byteorder="1.*"

@@ -1,0 +1,20 @@
+[package]
+
+name = "conduit-static"
+version = "0.8.1"
+authors = ["wycats@gmail.com",
+           "Alex Crichton <alex@alexcrichton.com>"]
+description = "Middleware for serving static files for conduit"
+repository = "https://github.com/conduit-rust/conduit-static"
+license = "MIT"
+
+[dependencies]
+conduit = "0.8"
+conduit-mime-types = "0.7"
+time = "0.1"
+filetime = "0.1"
+
+[dev-dependencies]
+civet = "0.9"
+conduit-test = "0.8"
+tempdir = "0.3"

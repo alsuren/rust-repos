@@ -1,0 +1,13 @@
+[package]
+name = "rustrip"
+version = "0.1.0"
+authors = ["Rose <lain@lain.org.uk>"]
+build = "build.rs"
+
+[[bin]]
+name = "rustrip"
+doc = false
+
+[dependencies]
+regex = "0.2.1"
+rand = "0.3.15"

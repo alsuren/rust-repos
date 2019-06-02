@@ -1,0 +1,15 @@
+[package]
+name = "rs-tri"
+version = "0.1.0"
+authors = ["Nyrox <mark.oliver@hotmail.de>"]
+
+
+[dependencies]
+gl="*"
+libc="*"
+graphics = { path="graphics" }
+cgmath="*"
+serde_json="*"
+glfw="*"
+
+[workspace]

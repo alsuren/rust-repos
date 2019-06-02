@@ -1,0 +1,12 @@
+[package]
+name = "hue-rotate"
+version = "0.1.0"
+authors = ["Mojo Major"]
+
+[[bin]]
+name = "hue-rotate"
+
+[dependencies]
+image = { git = "https://github.com/RedRoosterMobile/image" }
+# image = "*"
+time = "0.1.35"

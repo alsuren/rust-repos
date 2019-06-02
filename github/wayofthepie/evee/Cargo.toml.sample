@@ -1,0 +1,19 @@
+[package]
+name = "evee"
+version = "0.1.0"
+authors = ["wayofthepie <wayofthepie@gmail.com>"]
+
+[dependencies]
+log = "0.3.8"
+rocket = "0.2.7"
+rocket_codegen = "0.2.7"
+rocket_contrib = "0.2.7"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+spectral = "0.6.0"
+uuid = { version = "0.4", features = ["serde", "v4"] }
+
+[dev-dependencies]
+rocket = { version = "0.2.7", features = ["testing"] }
+stainless = "*"

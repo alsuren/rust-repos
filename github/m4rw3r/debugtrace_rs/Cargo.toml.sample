@@ -1,0 +1,24 @@
+[package]
+authors       = ["Martin Wernstål <m4rw3r@gmail.com>"]
+build         = "build.rs"
+description   = "Enables backtraces to be attached to values in debug and test builds without incurring a cost in release or bench builds"
+documentation = "http://m4rw3r.github.io/debugtrace_rs"
+homepage      = "http://github.com/m4rw3r/debugtrace_rs"
+keywords      = ["debug", "stacktrace", "trace"]
+license       = "MIT"
+name          = "debugtrace"
+readme        = "README.md"
+repository    = "http://github.com/m4rw3r/debugtrace_rs"
+version       = "0.1.0"
+
+include = [
+    "src/**/*.rs",
+    ".gitignore",
+    "build.rs",
+    "README.md",
+    "Cargo.toml",
+]
+
+[dependencies]
+# Cannot be optional due to build-script being incapable of enabling optional dependencies
+backtrace = { version = "0.1.8" }

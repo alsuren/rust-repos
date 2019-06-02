@@ -1,0 +1,23 @@
+[package]
+name = "vix"
+version = "0.2.3"
+authors = ["Michael E. Craggs <m.e.craggs@gmail.com>"]
+edition = "2018"
+description = "A vim like modal text editor using the xi-editor backend"
+readme = "README.md"
+license-file ="LICENSE.md"
+
+[dependencies]
+dirs = "1.0"
+futures = "0.1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+slog = "2.3"
+slog-async = "2.3"
+slog-scope = "4.0"
+slog-term = "2.4"
+tokio = "0.1"
+termion = "1.5"
+xrl = { path = "../xrl" }
+#xrl = { git = "https://github.com/xi-frontend/xrl" }

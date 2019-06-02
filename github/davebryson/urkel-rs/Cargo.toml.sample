@@ -1,0 +1,9 @@
+[package]
+name = "urkel-rs"
+version = "0.1.0"
+authors = ["David Bryson <dbryson@mitre.org>"]
+
+[dependencies]
+tiny-keccak = "1.4.2"
+rand = "0.5.5"
+byteorder = "1.2.6"

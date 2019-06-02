@@ -1,0 +1,21 @@
+[package]
+name = "http_static"
+version = "0.1.0"
+authors = ["arjun <arj1singh@gmail.com>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/arjsin/http_static"
+edition = "2018"
+
+[dependencies]
+bytes = "0.4"
+clap = "2.32"
+futures = "0.1"
+lazy_static = "1.2"
+mime_guess = "2.0.0-alpha.6"
+tokio = "0.1"
+tokio-rustls = "0.8"
+tower-web = { version = "0.3.4", features = ["rustls"]}
+http = "0.1"
+
+[profile.release]
+lto = true

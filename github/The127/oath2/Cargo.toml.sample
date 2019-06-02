@@ -1,0 +1,15 @@
+[package]
+name = "oath2"
+version = "0.1.0"
+authors = ["Julian Baehr <julian.baehr@googlemail.com>"]
+
+[dependencies]
+error-chain = "*"
+log = "*"
+getset = "*"
+enum-primitive-derive = "^0.1"
+num-traits = "^0.1"
+byteorder = "*"
+bitflags = "1.0"
+bitfield = "0.12.2"
+simple_logger = "*"

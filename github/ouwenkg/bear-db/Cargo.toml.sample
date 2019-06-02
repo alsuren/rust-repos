@@ -1,0 +1,8 @@
+[package]
+name = "bear-db"
+version = "0.1.0"
+authors = ["ouwenkg <2630582710@qq.com>"]
+edition = "2018"
+
+[dependencies]
+rocksdb = "0.12.2"

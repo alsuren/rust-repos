@@ -1,0 +1,8 @@
+[package]
+name = "monkey_interpreter"
+version = "0.1.0"
+authors = ["jonnywalker"]
+
+[dependencies]
+    monkey_lib = { path = "monkey_lib"}
+    clap = "*"

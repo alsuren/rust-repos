@@ -1,0 +1,10 @@
+[package]
+name = "project_euler_rs"
+version = "0.1.0"
+authors = ["Nimrod"]
+
+[lib]
+name = "euler"
+path = "src/euler/lib.rs"
+[dependencies]
+rand = "0.3"
