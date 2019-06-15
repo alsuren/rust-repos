@@ -21,7 +21,6 @@ serde_json = "1.0"
 serde_derive = "1.0"
 rmp-serde = { version = "^0.13", optional = true }
 tera = "0.3"
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 git = "https://github.com/SergioBenitez/Rocket.git"

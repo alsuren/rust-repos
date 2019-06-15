@@ -11,7 +11,6 @@ path = "src/lib.rs"
 [dependencies]
 num = "*"
 rand = "*"
-boringssl = "0.0.5"
 
 [dependencies.iterator2d]
 git = "https://github.com/Lodin/iterator2d"

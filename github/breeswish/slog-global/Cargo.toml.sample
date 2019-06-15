@@ -6,12 +6,6 @@ description = "Global loggers for slog-rs. Similar to slog-scope but more simple
 license = "MIT"
 homepage = "https://github.com/breeswish/slog-global"
 
-[package.metadata.docs.rs]
-all-features = true
-
-[package.metadata.playground]
-all-features = true
-
 [features]
 default = ["log"]
 
@@ -23,8 +17,13 @@ slog = "2"
 arc-swap = "0.3"
 lazy_static = "1.2"
 log = { version = "0.3", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 slog-term = "2.4"
 rand = "0.6"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[package.metadata.playground]
+all-features = true

@@ -13,7 +13,6 @@ serde = "*"
 serde_derive = "*"
 gfx_core = "*"
 gfx = "*"
-boringssl = "0.0.5"
 
 #[dependencies.amethyst]
 #git = "https://github.com/amethyst/amethyst"

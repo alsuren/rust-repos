@@ -19,4 +19,3 @@ error-chain = "0.12"
 siege-math = { git = "https://github.com/SiegeEngine/siege-math", optional = true }
 cgmath = { version = "0.16", features = ["serde"], optional = true }
 nalgebra = { version = "0.16", features = ["serde-serialize"], optional = true }
-boringssl = "0.0.5"

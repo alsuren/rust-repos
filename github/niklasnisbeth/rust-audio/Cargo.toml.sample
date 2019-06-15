@@ -4,9 +4,6 @@ name = "rust-waveform"
 version = "0.0.1"
 authors = ["Niklas Nisbeth <nni@cirque.dk>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust-jack]
 git = "https://github.com/nicklan/rust-jack.git"
 

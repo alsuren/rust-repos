@@ -16,9 +16,6 @@ license = "MIT"
 name = "kinetic"
 path = "src/kinetic/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.protobuf]
 #git = "https://github.com/stepancheg/rust-protobuf.git"
 
@@ -26,6 +23,11 @@ boringssl = "0.0.5"
 #git = "https://github.com/DaGenix/rust-crypto.git"
 
 [dependencies.byteorder]
+
+[[bin]]
+
+name = "kinetic-rust"
+path = "src/bin/kinetic_rust.rs"
 
 [dependencies.docopt]
 #git = "git://github.com/docopt/docopt.rs"
@@ -35,8 +37,3 @@ boringssl = "0.0.5"
 [dependencies.term]
 [dependencies.log]
 [dependencies.shell]
-
-[[bin]]
-
-name = "kinetic-rust"
-path = "src/bin/kinetic_rust.rs"

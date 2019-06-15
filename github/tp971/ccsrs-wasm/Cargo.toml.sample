@@ -11,7 +11,6 @@ crate-type = ["cdylib"]
 #ccsrs = { path = "../ccsrs" }
 ccsrs = { git = "https://github.com/tp971/ccsrs" }
 wasm-bindgen = "0.2"
-boringssl = "0.0.5"
 
 [profile.release]
 # remove debug symbols:

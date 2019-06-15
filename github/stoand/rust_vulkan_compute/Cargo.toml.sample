@@ -7,7 +7,6 @@ build = "build.rs"
 [dependencies]
 vulkano = {git = "https://github.com/tomaka/vulkano" }
 vulkano-shaders = {git = "https://github.com/tomaka/vulkano" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 vk-sys = {git = "https://github.com/tomaka/vulkano" }

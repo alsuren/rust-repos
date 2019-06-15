@@ -6,7 +6,6 @@ authors = ["Daniel Keep <daniel.keep@gmail.com>"]
 [dependencies]
 chrono = "0.2.25"
 itertools = "0.4.17"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "calendar"

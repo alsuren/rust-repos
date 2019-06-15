@@ -7,7 +7,6 @@ authors = ["Oussama <md.oussama@gmail.com>"]
  
 [dependencies]
 wasm-bindgen = { version = "0.2"  }
-boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.2"

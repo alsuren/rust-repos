@@ -20,4 +20,3 @@ error-chain = "*"
 percent-encoding = "*"
 http_types = { version = "*", package = "http" }
 reqwest = { version = "*", optional = true }
-boringssl = "0.0.5"

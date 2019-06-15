@@ -35,6 +35,3 @@ examples = []
 [[example]]
 name = "hello-world"
 required-features = ["examples"]
-
-[dependencies]
-boringssl = "0.0.5"

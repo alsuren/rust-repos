@@ -10,13 +10,12 @@ Provides a fairing for use in rocket.rs applications that allows the user to use
 """
 documentation = "http://pwoolcoc.gitlab.io/rocket-slog-fairing/rocket_slog/index.html"
 
-[package.metadata.docs.rs]
-rustdoc-args = ["--no-deps"]
-
 [dependencies]
 slog = "2.4"
 rocket = { git = "https://github.com/SergioBenitez/Rocket.git", rev = "ba6aa2f05ec4060f340ebb5f9e09127aa435e380", features = [], default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 sloggers = "0.3"
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--no-deps"]

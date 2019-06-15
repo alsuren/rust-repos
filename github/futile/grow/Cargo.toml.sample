@@ -3,10 +3,6 @@ name = "grow"
 version = "0.0.1"
 authors = ["Felix Rath <felixr@archlinux.info>", "Felix Dietze <felix@beerleader.net>"]
 
-[dependencies]
-time = "*"
-boringssl = "0.0.5"
-
 # [dependencies.nphysics]
 # git = "https://github.com/sebcrozet/nphysics"
 # features = ["2df32"]
@@ -16,3 +12,6 @@ git = "https://github.com/tomaka/glium"
 
 [dependencies.glium_macros]
 git = "https://github.com/tomaka/glium"
+
+[dependencies]
+time = "*"

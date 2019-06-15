@@ -7,4 +7,3 @@ authors = [ "wackywendell@gmail.com" ]
 [dependencies]
 rand = "*"
 itertools = "*" # TODO: only needed for replacing step_by
-boringssl = "0.0.5"

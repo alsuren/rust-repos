@@ -12,6 +12,3 @@ categories = ["development-tools"]
 
 build = "create-hooks.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-

@@ -21,7 +21,6 @@ time = "*"
 rusqlite = { version = "0.13.0", features = ["blob"], optional = true }
 log = "0.4.0"
 env_logger = "0.5.10"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "*"

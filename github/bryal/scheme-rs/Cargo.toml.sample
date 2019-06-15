@@ -4,9 +4,8 @@ name = "scheme-rs"
 version = "0.0.1"
 authors = ["bryal <96.bryal@gmail.com>"]
 
-[dependencies]
-getopts = "*"
-boringssl = "0.0.5"
-
 [dependencies.linked_list]
 git = "https://github.com/bryal/linked_list-rs"
+
+[dependencies]
+getopts = "*"

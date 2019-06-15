@@ -9,7 +9,6 @@ authors = [
 [dependencies]
 clap = "2.19.3"
 json = "*"
-boringssl = "0.0.5"
 
 [dependencies.rex]
 git = "https://github.com/ReTeX/ReX.git"

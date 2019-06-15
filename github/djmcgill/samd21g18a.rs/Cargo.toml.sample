@@ -11,13 +11,12 @@ description = "Peripheral access API for ATSAMD21G18A microcontrollers (generate
 bare-metal = "0.1.*"
 vcell = "0.1.*"
 cortex-m = "0.3.*"
-boringssl = "0.0.5"
-
-[dependencies.cortex-m-rt]
-version = "0.3.*"
-optional = true
 
 [features]
 rt = ["cortex-m-rt"]
 rt-abort-on-panic = ["cortex-m-rt/abort-on-panic"]
+
+[dependencies.cortex-m-rt]
+version = "0.3.*"
+optional = true
 

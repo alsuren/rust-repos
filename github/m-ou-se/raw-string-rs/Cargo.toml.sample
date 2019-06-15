@@ -7,11 +7,10 @@ repository = "https://github.com/m-ou-se/raw-string-rs"
 keywords = ["raw", "string", "bytes"]
 license = "BSD-2-Clause"
 
-[package.metadata.docs.rs]
-features = ["old-nightly"]
-
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 old-nightly = []
+
+[package.metadata.docs.rs]
+features = ["old-nightly"]

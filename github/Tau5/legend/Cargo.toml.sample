@@ -9,18 +9,10 @@ serde = "1.0.79"
 serde_derive = "1.0.79"
 dirs = "1.0.4"
 ears = { version = "0.5.1", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.pancurses]
 version = "0.16"
 features = ["show_menu", "disable_resize"]
-
-[dependencies.clap]
-version = "2.32"
-default-features = false
-
-# Cherry-pick the features you'd like to use
-features = ["suggestions", "vec_map"]
 
 [features]
 
@@ -28,3 +20,10 @@ sound = ["ears"] # Allow sound
 color = []
 color_test = []
 benchmark = []
+
+[dependencies.clap]
+version = "2.32"
+default-features = false
+
+# Cherry-pick the features you'd like to use
+features = ["suggestions", "vec_map"]

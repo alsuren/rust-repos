@@ -11,7 +11,6 @@ iron = "*"
 router = "*"
 handlebars-iron = "*"
 rustc-serialize = "^0.3.15"
-boringssl = "0.0.5"
 
 [dependencies.logger]
 git = "https://github.com/iron/logger.git"

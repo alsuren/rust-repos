@@ -5,7 +5,6 @@ authors = ["noesterle <noesterle1@gmail.com>"]
 
 [dependencies]
 quick-xml = "0.10.0" #Process XML
-boringssl = "0.0.5"
 
 [lib]
 name="lib"

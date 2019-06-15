@@ -3,8 +3,5 @@ name = "euler"
 version = "0.0.1"
 authors = ["Kamil Wojtuch <kamil@straylight.im>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.primes]
 git = "https://github.com/wackywendell/primes.git"

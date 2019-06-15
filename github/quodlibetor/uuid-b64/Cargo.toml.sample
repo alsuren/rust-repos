@@ -21,7 +21,6 @@ lazy_static = "0.2.9"
 serde = { version = "1.0.15", optional = true }
 # Diesel 1.1.1 doesn't support 0.6.1 yet
 uuid = { version = ">=0.5.1,<0.7.0", features = ["v4", "use_std"] }
-boringssl = "0.0.5"
 
 [features]
 default-features = ["serde"]

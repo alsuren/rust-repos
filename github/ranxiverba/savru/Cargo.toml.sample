@@ -7,9 +7,6 @@ license = "Apache 2.0"
 repository = "https://github.com/ranxiverba/savru"
 description = "Noise handshake protocol implemented in Rust"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.abstract-cryptography]
 git = "https://github.com/ranxiverba/abstract-cryptography.git"
 features = ["std", "secp256k1", "chacha20-poly1305-aead", "byteorder"]
@@ -26,12 +23,6 @@ version = "0.12"
 [dependencies.either]
 version = "1.5"
 
-[dependencies.hex]
-version = "0.3"
-
-[dependencies.log]
-version = "0.4"
-
 [dev-dependencies.secp256k1]
 version = "0.13"
 
@@ -40,3 +31,9 @@ version = "0.8"
 
 [dev-dependencies.rand]
 version = "0.6"
+
+[dependencies.hex]
+version = "0.3"
+
+[dependencies.log]
+version = "0.4"

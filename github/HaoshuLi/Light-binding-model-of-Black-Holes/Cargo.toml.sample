@@ -6,7 +6,6 @@ authors = ["lihaoshu"]
 [dependencies]
 image = "*"
 nalgebra = "*"
-boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 3

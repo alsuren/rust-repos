@@ -7,7 +7,6 @@ autobenches = false
 [dependencies]
 simdintersection-sys = { path = "simdintersection-sys" }
 streamvbyte-sys = { path = "streamvbyte-sys" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 slow-intersection = { path = "slow-intersection" }

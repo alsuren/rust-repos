@@ -10,7 +10,6 @@ serde = "1.0"
 serde_derive = "1.0"
 tera = "0.11"
 warp = "0.1"
-boringssl = "0.0.5"
 
 [features]
 # Disable systemctl invocation for testing environments

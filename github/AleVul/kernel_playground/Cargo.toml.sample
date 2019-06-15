@@ -4,9 +4,6 @@ version = "0.1.0"
 authors = ["Alexandru Vulpea <alexandru.vulpea@gmail.com>"]
 edition = "2018"
 
-[package.metadata.bootimage]
-default-target = "x86_64-kernel_playground.json"
-
 # To abort on panic instead of unwinding
 # Unwiding requires OS specific libraries so
 # this doesn't make sense in kernel.
@@ -20,4 +17,6 @@ panic = "abort"
 
 [dependencies]
 bootloader_precompiled = "0.3.0"
-boringssl = "0.0.5"
+
+[package.metadata.bootimage]
+default-target = "x86_64-kernel_playground.json"

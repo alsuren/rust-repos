@@ -16,7 +16,6 @@ travis-ci = { repository = "https://github.com/tweber12/lhef-rs" }
 [dependencies]
 nom = "3.2.1"
 lorentz_vector = { git = "https://github.com/tweber12/lorentz_vector_rs" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.6.0"

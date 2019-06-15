@@ -3,10 +3,9 @@ name = "chip8_emu"
 version = "0.0.1"
 authors = ["Michael Chesser"]
 
+[dependencies.sdl2]
+git = "https://github.com/AngryLawyer/rust-sdl2.git"
+
 [dependencies]
 clock_ticks = "*"
 rand = "*"
-boringssl = "0.0.5"
-
-[dependencies.sdl2]
-git = "https://github.com/AngryLawyer/rust-sdl2.git"

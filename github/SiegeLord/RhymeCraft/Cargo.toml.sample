@@ -9,7 +9,10 @@ log = "=0.3.1"
 fern = "=0.3.5"
 time = "=0.1.26"
 rand = "=0.3.12"
-boringssl = "0.0.5"
+
+[[bin]]
+name = "rhyme_craft"
+path = "src/main.rs"
 
 [dependencies.allegro]
 version = "=0.0.26"
@@ -31,7 +34,3 @@ version = "=0.0.26"
 
 [dependencies.slr_config]
 version = "=0.0.12"
-
-[[bin]]
-name = "rhyme_craft"
-path = "src/main.rs"

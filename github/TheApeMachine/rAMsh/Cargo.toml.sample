@@ -6,7 +6,6 @@ authors = ["Daniel Owen van Dommelen <theapemachine@gmail.com>"]
 [dependencies]
 termion    = "1.5.1"
 hyper      = "~0.7"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "rAMsh"

@@ -7,6 +7,3 @@ authors = ["Tom Jakubowski <tom@crystae.net>"]
 [[bin]]
 name = "ironic"
 path = "src/bin/ironic.rs"
-
-[dependencies]
-boringssl = "0.0.5"

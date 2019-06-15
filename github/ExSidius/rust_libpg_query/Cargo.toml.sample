@@ -8,7 +8,6 @@ links = "libpg_query"
 
 [dependencies]
 libc = "0.2.0"
-boringssl = "0.0.5"
 
 [features]
 static = []

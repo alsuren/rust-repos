@@ -7,16 +7,6 @@ authors = ["eric MOLLE <eric.molle>"]
 default = ["rustc_json_body",  "multipart"]
 rustc_json_body = ["rustc-serialize"]
 
-[dependencies]
-rustful = { git = "https://github.com/Ogeon/rustful.git" }
-env_logger = "0.3.1"
-log = "0.3.2"
-rust-crypto ={ git="https://github.com/DaGenix/rust-crypto.git" }
-time = "*"
-unicase="*"
-bincode="*"
-boringssl = "0.0.5"
-
 [dependencies.multipart]
 #feature
 version = "0.3.1"
@@ -28,4 +18,13 @@ optional = true
 [dependencies.rustc-serialize]
 version = "0.3.16"
 optional = true
+
+[dependencies]
+rustful = { git = "https://github.com/Ogeon/rustful.git" }
+env_logger = "0.3.1"
+log = "0.3.2"
+rust-crypto ={ git="https://github.com/DaGenix/rust-crypto.git" }
+time = "*"
+unicase="*"
+bincode="*"
 #rustc-serialize = "*"

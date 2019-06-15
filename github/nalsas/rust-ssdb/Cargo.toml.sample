@@ -57,7 +57,6 @@ path = "src/lib.rs"
 
 [dependencies]
 bufstream = "0.1"
-boringssl = "0.0.5"
 
 #[dependencies.http]
 #git = "https://github.com/chris-morgan/rust-http.git"

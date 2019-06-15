@@ -7,7 +7,6 @@ authors = ["Marco Vintenove <marcovintenove@gmail.com>"]
 [dependencies]
 bitflags = "0.1"
 libc = "*"
-boringssl = "0.0.5"
 
 [dependencies.cocoa]
 git = "https://github.com/servo/rust-cocoa"

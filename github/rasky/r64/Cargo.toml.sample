@@ -30,19 +30,6 @@ enum-map = "0.4.0"
 serde = "1.0.82"
 serde_derive = "*"
 structopt = "0.2.10"
-boringssl = "0.0.5"
-
-[dependencies.byteorder]
-version = "1"
-features = ["i128"]
-
-[dependencies.packed_simd]
-git = "https://github.com/rust-lang-nursery/packed_simd"
-features = ["default", "into_bits", "coresimd"]
-
-[dependencies.slog]
-version = "2"
-features = ["nothreads"]
 
 [dev-dependencies]
 base64 = "0.9.2"
@@ -55,6 +42,18 @@ toml = "0.4.8"
 version = "0.20"
 default-features = false
 features = ["png_codec"]
+
+[dependencies.byteorder]
+version = "1"
+features = ["i128"]
+
+[dependencies.packed_simd]
+git = "https://github.com/rust-lang-nursery/packed_simd"
+features = ["default", "into_bits", "coresimd"]
+
+[dependencies.slog]
+version = "2"
+features = ["nothreads"]
 
 [patch.crates-io]
 # SDL2 fork needed until this PR is merged:

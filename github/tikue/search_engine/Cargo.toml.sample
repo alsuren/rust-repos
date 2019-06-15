@@ -3,6 +3,9 @@ name = "search_engine"
 version = "0.1.0"
 authors = ["Tim Kuehn <tim@solvvy.com>"]
 
+[dependencies.inverted_index]
+git = "https://github.com/tikue/inverted_index.git"
+
 [dependencies]
 
 bodyparser = "*"
@@ -14,7 +17,3 @@ staticfile = "*"
 urlencoded = "*"
 persistent = "*"
 lazy_static = "*"
-boringssl = "0.0.5"
-
-[dependencies.inverted_index]
-git = "https://github.com/tikue/inverted_index.git"

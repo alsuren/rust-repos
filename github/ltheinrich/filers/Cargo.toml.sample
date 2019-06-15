@@ -9,6 +9,10 @@ description = "Collection of file tools"
 categories = ["filesystem"]
 readme = "README.md"
 
+[dependencies]
+kern = "0.2.1"
+clipars = "1.2.2"
+
 [package.metadata.deb]
 section = "admin"
 priority = "optional"
@@ -17,11 +21,6 @@ license-file = ["LICENSE", "1"]
 extended-description = """\
 Filers is a collection of file tools written in Rust.
 It consists of many different commands."""
-
-[dependencies]
-kern = "0.2.1"
-clipars = "1.2.2"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

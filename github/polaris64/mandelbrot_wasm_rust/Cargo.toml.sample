@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["Simon Pugnet <simon@polaris64.net>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [lib]
 path = "src/lib.rs"

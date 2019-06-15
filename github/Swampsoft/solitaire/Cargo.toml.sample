@@ -7,6 +7,11 @@ authors = ["Swampsoft <https://github.com/Swampsoft>"]
 default = []
 profiling = ["cpuprofiler"]
 
+
+[dependencies.ggez]
+version = "0.4"
+features = ["cargo-resource-root"]
+
 [dependencies]
 cpuprofiler = { version = "0.0.3", optional = true }
 env_logger = "0.5"
@@ -14,10 +19,4 @@ log = "0.4"
 rand = "0.5"
 rodio = "0.7"
 sdl2 = "0.31"
-boringssl = "0.0.5"
-
-
-[dependencies.ggez]
-version = "0.4"
-features = ["cargo-resource-root"]
 

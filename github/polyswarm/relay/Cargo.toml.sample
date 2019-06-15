@@ -27,7 +27,6 @@ ethstore = { git = "https://github.com/paritytech/parity-ethereum" }
 ethkey = { git = "https://github.com/paritytech/parity-ethereum" }
 web3 = { git = "https://github.com/polyswarm/rust-web3", branch = "relay" }
 consul = { git = "https://github.com/polyswarm/consul-rust", branch = "master" }
-boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

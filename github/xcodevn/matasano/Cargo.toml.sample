@@ -4,9 +4,6 @@ name = "set3"
 version = "0.0.1"
 authors = ["Thông Nguyễn <xcodevn@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust-crypto]
 
 git = "https://github.com/DaGenix/rust-crypto"

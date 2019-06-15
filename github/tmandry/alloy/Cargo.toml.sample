@@ -4,9 +4,6 @@ version = "0.0.0"
 authors = ["Tyler Mandry <tmandry@gmail.com>"]
 autobins = true
 
-[package.metadata.bootimage]
-default-target = "x86_64-alloy.json"
-
 [features]
 # Enables sending logs to the serial output for QEMU.
 # Disabled for integration tests, which must match an expected serial output.
@@ -24,7 +21,6 @@ spin = "0.4.6"
 volatile = "0.2.3"
 uart_16550 = "0.1.0"
 x86_64 = "0.2.8"
-boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"
@@ -32,3 +28,6 @@ features = ["spin_no_std"]
 
 [dev-dependencies]
 array-init = "0.0.3"
+
+[package.metadata.bootimage]
+default-target = "x86_64-alloy.json"

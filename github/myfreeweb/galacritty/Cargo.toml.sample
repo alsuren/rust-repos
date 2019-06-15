@@ -21,7 +21,6 @@ gtk = { version = "0.5", features = ["v3_16"] }
 epoxy = "0.1"
 shared_library = "0"
 alacritty = { path = "alacritty" }
-boringssl = "0.0.5"
 
 [patch.crates-io]
 servo-freetype-sys = { path = "alacritty/servo-freetype-proxy" }

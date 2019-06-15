@@ -10,6 +10,3 @@ keywords = ["fmt", "io", "Write", "wrapper", "bridge"]
 categories = ["rust-patterns"]
 license = "MITNFA"
 maintenance = { status = "as-is" }
-
-[dependencies]
-boringssl = "0.0.5"

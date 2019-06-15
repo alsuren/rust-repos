@@ -14,7 +14,6 @@ dylib = "*"
 simplelog = "*"
 zombie = "*"
 wtftw_core = { path = "core" }
-boringssl = "0.0.5"
 
 [dependencies.wtftw_xlib]
 path = "xlib"

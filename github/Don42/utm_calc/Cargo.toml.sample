@@ -7,7 +7,6 @@ authors = ["Marco 'don' Kaulea <don@0xbeef.org>"]
 assert_approx_eq = "*"
 docopt = "0.7.*"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "utm_calc"

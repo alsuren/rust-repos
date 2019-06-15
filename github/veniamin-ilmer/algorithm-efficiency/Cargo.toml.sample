@@ -12,7 +12,6 @@ repository = "https://github.com/veniamin-ilmer/crate-race"
 #Used internally for benchmarking..
 bencher = "0.1.5"
 rand = "0.6.5"
-boringssl = "0.0.5"
 
 [[bench]]
 name = "sort"

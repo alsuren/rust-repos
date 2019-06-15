@@ -15,9 +15,6 @@ version = "0.9.0"
 doctest = false
 name = "dump"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.c3_clang_extensions]
 path = "c3_clang_extensions"
 version = "0.3.5"

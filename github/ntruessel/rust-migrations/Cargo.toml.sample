@@ -14,4 +14,3 @@ diesel_derives = { version = "^1.0.0", features = ["postgres"] }
 error-chain = "^0.11.0"
 openssl = "^0.10.2"
 regex = "^0.2.5"
-boringssl = "0.0.5"

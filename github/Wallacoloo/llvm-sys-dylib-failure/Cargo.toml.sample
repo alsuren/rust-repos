@@ -6,7 +6,6 @@ authors = ["Colin Wallace <wallacoloo@gmail.com>"]
 [dependencies]
 llvm-sys = "40.0"
 libloading = "0.4"
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

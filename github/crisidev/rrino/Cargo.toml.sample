@@ -21,7 +21,6 @@ reqwest = "0.8"
 regex = "0.2"
 rocket = { path = "./vendor/Rocket/lib" }
 rocket_codegen = { path = "./vendor/Rocket/codegen" }
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 path = "./vendor/Rocket/contrib"

@@ -7,22 +7,6 @@ readme = "README.md"
 repository = "https://github.com/unlimitedbacon/stl-thumb"
 license = "MIT"
 
-[package.metadata.deb]
-license-file = ["LICENSE", "3"]
-depends = "libgl1, libc6, libgcc1, libosmesa6-dev"
-extended-description = """\
-Stl-thumb is a fast lightweight thumbnail generator for STL files. \
-It can show previews for STL files in your file manager on Linux and Windows. \
-It is written in Rust and uses OpenGL. """
-section = "graphics"
-priority = "optional"
-assets = [
-    ["target/release/stl-thumb", "usr/bin/", "755"],
-    ["stl-thumb.thumbnailer", "usr/share/thumbnailers/", "644"],
-    ["stl-thumb-mime.xml", "usr/share/mime/packages/", "644"],
-    ["README.md", "usr/share/doc/stl-thumb/", "644"],
-]
-
 [badges]
 travis-ci = { repository = "unlimitedbacon/stl-thumb" }
 
@@ -38,7 +22,6 @@ log = "0.4.1"
 mint = "0.5.0"
 stderrlog = "0.4.0"
 stl_io = "0.3.7"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"
@@ -46,3 +29,19 @@ criterion = "0.2"
 [[bench]]
 name = "cube_benchmark"
 harness = false
+
+[package.metadata.deb]
+license-file = ["LICENSE", "3"]
+depends = "libgl1, libc6, libgcc1, libosmesa6-dev"
+extended-description = """\
+Stl-thumb is a fast lightweight thumbnail generator for STL files. \
+It can show previews for STL files in your file manager on Linux and Windows. \
+It is written in Rust and uses OpenGL. """
+section = "graphics"
+priority = "optional"
+assets = [
+    ["target/release/stl-thumb", "usr/bin/", "755"],
+    ["stl-thumb.thumbnailer", "usr/share/thumbnailers/", "644"],
+    ["stl-thumb-mime.xml", "usr/share/mime/packages/", "644"],
+    ["README.md", "usr/share/doc/stl-thumb/", "644"],
+]

@@ -17,7 +17,6 @@ riscv-rtfm-macros = { path = "riscv-rtfm/macros" }
 #riscv-alloc = { path = "riscv-alloc" }
 riscv-semihosting = { path = "riscv-semihosting" }
 riscv-rust-quickstart = { path = "riscv-rust-quickstart" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 numtoa = "0.0.7"

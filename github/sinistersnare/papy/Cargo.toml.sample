@@ -13,9 +13,6 @@ test=true
 name = "papy"
 path = "src/bin/papy.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.spellck]
 git = "https://github.com/huonw/spellck"
 #path = "../spellck"

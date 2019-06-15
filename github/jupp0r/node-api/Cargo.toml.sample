@@ -9,7 +9,6 @@ crate-type = ["lib"]
 [dependencies]
 node-api-sys = {path = "./node-api-sys"}
 futures = "0.1"
-boringssl = "0.0.5"
 
 [workspace]
 members = [

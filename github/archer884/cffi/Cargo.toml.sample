@@ -7,7 +7,6 @@ build = "build.rs"
 [dependencies]
 libc = "*"
 primal = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "*"

@@ -19,7 +19,6 @@ num = { version = "0.2", default-features = false }
 ui = { path = "ggwp-zgui", package = "ggwp-zgui" }
 scene = { path = "ggwp-zscene", package = "ggwp-zscene" }
 zcomponents = { path = "zcomponents" }
-boringssl = "0.0.5"
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 ggez = "0.5.0-rc.1"

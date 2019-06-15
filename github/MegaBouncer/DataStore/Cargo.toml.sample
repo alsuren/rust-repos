@@ -8,4 +8,3 @@ shared = { path = "../libs/shared" }
 serde_json = "*"
 redis = "*"
 config = { version = "*" } 
-boringssl = "0.0.5"

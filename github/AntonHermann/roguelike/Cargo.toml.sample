@@ -8,7 +8,6 @@ failure = "*"
 fern = "*"
 log = "*"
 termion = "*"
-boringssl = "0.0.5"
 
 [dependencies.roguelike_lib]
 path = "roguelike_lib"

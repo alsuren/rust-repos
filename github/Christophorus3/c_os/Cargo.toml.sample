@@ -4,15 +4,6 @@ version = "0.1.0"
 authors = ["Christoph Wottawa <christoph.wottawa@me.com>"]
 edition = "2018"
 
-[package.metadata.bootimage]
-default-target = "x86_64-c_os.json"
-
-[package.metadata.scripts]
-build = "bootimage build"
-qemu = "qemu-system-x86_64 -drive format=raw,file=target/x86_64-c_os/debug/bootimage-c_os.bin -serial mon:stdio"
-run = "bootimage run -- -serial mon:stdio -device isa-debug-exit,iobase=0xf4,iosize=0x04 -display none"
-test = "bootimage run --bin test-basic-boot -- -serial mon:stdio -device isa-debug-exit,iobase=0xf4,iosize=0x04 -display none"
-
 [profile.dev]
 panic = "abort"
 
@@ -25,14 +16,22 @@ volatile = "0.2.3"
 spin = "0.4.9"
 uart_16550 = "0.1.0"
 x86_64 = "0.5.2"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+array-init = "0.0.3"
 
 [dependencies.lazy_static]
 version = "1.0"
 features = ["spin_no_std"]
 
-[dev-dependencies]
-array-init = "0.0.3"
+[package.metadata.bootimage]
+default-target = "x86_64-c_os.json"
+
+[package.metadata.scripts]
+build = "bootimage build"
+qemu = "qemu-system-x86_64 -drive format=raw,file=target/x86_64-c_os/debug/bootimage-c_os.bin -serial mon:stdio"
+run = "bootimage run -- -serial mon:stdio -device isa-debug-exit,iobase=0xf4,iosize=0x04 -display none"
+test = "bootimage run --bin test-basic-boot -- -serial mon:stdio -device isa-debug-exit,iobase=0xf4,iosize=0x04 -display none"
 
 [features]
 integration-test = []

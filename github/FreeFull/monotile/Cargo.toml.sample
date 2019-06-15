@@ -12,7 +12,6 @@ glib = { git = "https://github.com/gtk-rs/glib.git" }
 serde = "1.0.69"
 serde_json = "1.0.22"
 serde_derive = "1.0.69"
-boringssl = "0.0.5"
 
 [dependencies.gtk]
 git = "https://github.com/gtk-rs/gtk.git"

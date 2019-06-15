@@ -7,7 +7,6 @@ authors = ["chrisf"]
 ggez = { git = "https://github.com/ggez/ggez.git", branch = "master" }
 num = "*"
 maplit = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 indoc = "*"

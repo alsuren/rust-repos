@@ -9,7 +9,6 @@ clap = "*"
 log = "*"
 env_logger = "*"
 failure = "*"
-boringssl = "0.0.5"
 
 [workspace]
 members = [

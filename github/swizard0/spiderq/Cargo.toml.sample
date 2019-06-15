@@ -11,7 +11,6 @@ tempdir = "0.3"
 zmq = "0.8"
 simple-signal = "1.1"
 spiderq_proto = { path = "spiderq-proto" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3"

@@ -8,9 +8,6 @@ keywords = ["macro", "struct"]
 repository = "https://github.com/upsuper/multi-structs"
 readme = "README.md"
 
-[package.metadata.docs.rs]
-features = ["example_generated"]
-
 [badges]
 travis-ci = { repository = "upsuper/multi-structs", branch = "master" }
 
@@ -18,5 +15,7 @@ travis-ci = { repository = "upsuper/multi-structs", branch = "master" }
 default = []
 example_generated = []
 
+[package.metadata.docs.rs]
+features = ["example_generated"]
+
 [dependencies]
-boringssl = "0.0.5"

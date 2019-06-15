@@ -10,4 +10,3 @@ env_logger = "*"
 log = "*"
 # npcap_sys = { git = "https://github.com/mattlknight/npcap_sys" }
 npcap_sys = { path = "../npcap_sys" }
-boringssl = "0.0.5"

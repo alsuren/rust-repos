@@ -19,7 +19,4 @@ panic = "abort"
 name = "rust_bpf_sysroot"
 crate-type = ["cdylib"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 

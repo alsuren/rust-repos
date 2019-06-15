@@ -12,7 +12,6 @@ nickel_postgres = { git = "https://github.com/whostolemyhat/nickel-postgres", re
 uuid = { version = "0.3", features = ["v4", "rustc-serialize"] }
 bcrypt = "0.1"
 jsonwebtoken = "1"
-boringssl = "0.0.5"
 
 [dependencies.postgres]
 version = "0.12"

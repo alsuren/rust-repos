@@ -21,6 +21,3 @@ codegen-units = 1
 [[bench]]
 name = "all"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

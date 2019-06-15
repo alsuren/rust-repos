@@ -3,16 +3,6 @@ name = "ptools"
 version = "0.1.0"
 authors = ["John Gallagher"]
 
-[package.metadata.deb]
-assets = [
-  # List files we want explicitly so that we don't get the binaries intended for
-  # testing.
-  ["target/release/pargs", "usr/bin/", "755"],
-  ["target/release/penv", "usr/bin/", "755"],
-  ["target/release/pfiles", "usr/bin/", "755"],
-  ["target/release/ptree", "usr/bin/", "755"],
-]
-
 [lib]
 name = "ptools"
 path = "src/ptools.rs"
@@ -44,4 +34,13 @@ panic = "abort" # Save size. We don't need unwinding anyway.
 [dependencies]
 getopts = "0.2.15"
 nix = "0.12.0"
-boringssl = "0.0.5"
+
+[package.metadata.deb]
+assets = [
+  # List files we want explicitly so that we don't get the binaries intended for
+  # testing.
+  ["target/release/pargs", "usr/bin/", "755"],
+  ["target/release/penv", "usr/bin/", "755"],
+  ["target/release/pfiles", "usr/bin/", "755"],
+  ["target/release/ptree", "usr/bin/", "755"],
+]

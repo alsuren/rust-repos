@@ -10,18 +10,6 @@ readme = "README.md"
 description = "a git subcommand to apply skeleton repository continuously"
 edition = "2018"
 
-[package.metadata.release]
-dev-version-ext            = "pre"
-pre-release-commit-message = "Prepare to v{{version}}"
-pro-release-commit-message = "Start next development iteration v{{version}}"
-tag-message                = "Bump version to {{version}}"
-tag-prefix                 = "v"
-pre-release-replacements = [
-    {file="CHANGELOG.md", search="Unreleased", replace="v{{version}}"},
-    {file="CHANGELOG.md", search="ReleaseDate", replace="{{date}}"},
-    {file="CHANGELOG.md", search="Change Log", replace="Change Log\n\n## [Unreleased](https://github.com/dalance/procs/compare/v{{version}}...Unreleased) - ReleaseDate"},
-]
-
 [dependencies]
 console       = "0.7.5"
 failure       = "0.1.5"
@@ -33,4 +21,15 @@ serde_derive  = "1.0.33"
 structopt     = "0.2.14"
 tempfile      = "3.0.7"
 toml          = "0.4.5"
-boringssl = "0.0.5"
+
+[package.metadata.release]
+dev-version-ext            = "pre"
+pre-release-commit-message = "Prepare to v{{version}}"
+pro-release-commit-message = "Start next development iteration v{{version}}"
+tag-message                = "Bump version to {{version}}"
+tag-prefix                 = "v"
+pre-release-replacements = [
+    {file="CHANGELOG.md", search="Unreleased", replace="v{{version}}"},
+    {file="CHANGELOG.md", search="ReleaseDate", replace="{{date}}"},
+    {file="CHANGELOG.md", search="Change Log", replace="Change Log\n\n## [Unreleased](https://github.com/dalance/procs/compare/v{{version}}...Unreleased) - ReleaseDate"},
+]

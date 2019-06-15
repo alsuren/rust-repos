@@ -29,7 +29,6 @@ gdbus = { path = "../gdbus-rs" }
 drunken_bishop = "*"
 crslmnl = "*"
 time = "*"
-boringssl = "0.0.5"
 
 [dependencies.glib-sys]
 version = "*"

@@ -36,11 +36,10 @@ tower-grpc = { git = "https://github.com/tower-rs/tower-grpc" }
 tower-h2 = { git = "https://github.com/tower-rs/tower-h2" }
 tower-http = { git = "https://github.com/tower-rs/tower-http" }
 tower-service = { git = "https://github.com/tower-rs/tower" }
-boringssl = "0.0.5"
+
+[build-dependencies]
+tower-grpc-build = { git = "https://github.com/tower-rs/tower-grpc" }
 
 [dependencies.ctrlc]
 version = "3.1"
 features = ["termination"]
-
-[build-dependencies]
-tower-grpc-build = { git = "https://github.com/tower-rs/tower-grpc" }

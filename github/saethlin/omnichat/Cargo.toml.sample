@@ -27,7 +27,6 @@ serde_urlencoded = "0.5"
 slack = {path = "tiny_slack"}
 discord = {path = "discord"}
 weeqwest = {git = "https://github.com/saethlin/weeqwest"}
-boringssl = "0.0.5"
 
 [build-dependencies]
 regex-automata = "0.1"

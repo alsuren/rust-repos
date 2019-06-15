@@ -15,7 +15,6 @@ path = "src/rustic_io.rs"
 [dependencies]
 rust-crypto = "*"
 rustc-serialize = "*"
-boringssl = "0.0.5"
 
 # cargo build
 [profile.dev]

@@ -22,7 +22,6 @@ rand = "0.6.5"
 # 确保和diesel的ipnetwork 版本一致, 用cargo tree 命令查看
 ipnetwork = "0.13.1"
 fern = { version = "0.5.8", features = ["colored"] }
-boringssl = "0.0.5"
 
 [dependencies.chrono]
 features = ["serde", "rustc-serialize"]

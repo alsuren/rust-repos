@@ -14,4 +14,3 @@ default = ["yansi"]
 
 [dependencies]
 yansi = { version = "0.4.0", optional = true }
-boringssl = "0.0.5"

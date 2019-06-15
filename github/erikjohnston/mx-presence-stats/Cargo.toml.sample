@@ -11,7 +11,6 @@ rustc-serialize = "0.3.19"
 serde = "0.7.0"
 serde_json = "0.7.0"
 serde_macros = "0.7.2"
-boringssl = "0.0.5"
 
 [dependencies.toml]
 features = ["serde"]

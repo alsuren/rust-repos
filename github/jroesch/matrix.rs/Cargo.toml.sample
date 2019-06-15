@@ -7,6 +7,3 @@ authors = ["Jared Roesch <roeschinc@gmail.com>"]
 [[bin]]
 path = "src/examples/playground.rs"
 name = "playground"
-
-[dependencies]
-boringssl = "0.0.5"

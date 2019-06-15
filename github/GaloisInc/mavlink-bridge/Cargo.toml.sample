@@ -8,7 +8,6 @@ description = "Bridge betwen ZMQ bus and Mavlink UDP channels (typically PX4 sim
 [dependencies]
 zmq = "0.8"
 clap = {version = "~2.27.0", features = ["yaml"]}
-boringssl = "0.0.5"
 
 [dependencies.mavlink]
 git="https://github.com/GaloisInc/rust-mavlink.git"

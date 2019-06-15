@@ -11,10 +11,6 @@ keywords = ["crypto", "Themis"]
 categories = ["cryptography", "api-bindings"]
 license = "Apache-2.0"
 
-[package.metadata.docs.rs]
-features = ["vendored"]
-dependencies = ["libssl-dev"]
-
 [workspace]
 members = ["libthemis-src", "libthemis-sys"]
 
@@ -27,10 +23,13 @@ vendored = ["bindings/vendored"]
 [dependencies]
 bindings = { package = "libthemis-sys", path = "libthemis-sys", version = "=0.0.3" }
 zeroize = "0.5.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 byteorder = "1.2.7"
 clap = "2.32"
 log = "0.4.6"
 env_logger = "0.6.0"
+
+[package.metadata.docs.rs]
+features = ["vendored"]
+dependencies = ["libssl-dev"]

@@ -23,9 +23,6 @@ Macro crate which dynamically tunes up/down based on feature set #![no_std] frie
 Aims to be as #![no_core] friendly as is possible of a shift-based crate.
 """
 
-[dependencies]
-boringssl = "0.0.5"
-
 # Optional, but required for the 'exotic' data types.
 # This is pretty fragile but required for extremely weird low level code
 # and incomplete data models that are still being experimented on.  It

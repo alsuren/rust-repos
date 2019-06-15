@@ -13,7 +13,6 @@ A simple workerpool for handling jobs across multiple threads
 
 [dependencies]
 log = "0.3.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.3.2"

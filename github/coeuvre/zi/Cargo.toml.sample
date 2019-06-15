@@ -6,7 +6,6 @@ authors = ["Coeuvre Wong <coeuvre@gmail.com>"]
 [dependencies]
 libc = "*"
 bitflags = "*"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = "*"

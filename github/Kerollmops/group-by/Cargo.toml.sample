@@ -17,6 +17,3 @@ rand = "0.5"
 default = ["std"]
 nightly = []
 std = []
-
-[dependencies]
-boringssl = "0.0.5"

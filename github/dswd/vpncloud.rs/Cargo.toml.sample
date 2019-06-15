@@ -11,6 +11,45 @@ keywords = ["vpn", "p2p", "tun", "tap", "network"]
 readme = "README.md"
 edition = "2018"
 
+[dependencies]
+time = "0.1"
+docopt = "^1"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.8"
+log = { version = "0.4", features = ["std"] }
+signal = "0.6"
+libc = "0.2"
+rand = "0.6"
+fnv = "1"
+net2 = "0.2"
+yaml-rust = "0.4"
+igd = "^0.8.2"
+siphasher = "0.3"
+daemonize = "0.3"
+ring = "0.14"
+base-62 = "0.1"
+
+[build-dependencies]
+cc = "^1"
+pkg-config = "0.3"
+
+[dev-dependencies]
+tempfile = "3"
+
+[features]
+default = []
+bench = []
+
+[profile.release]
+lto = true
+
+[profile.dev]
+lto = false
+
+[profile.test]
+lto = false
+
 [package.metadata.deb]
 extended-description = """\
  VpnCloud is a simple VPN over UDP. It creates a virtual network interface on
@@ -32,43 +71,3 @@ buildflags = ["--release"]
 
 [package.metadata.rpm.targets]
 vpncloud = { path = "/usr/bin/vpncloud" }
-
-[dependencies]
-time = "0.1"
-docopt = "^1"
-serde = "1.0"
-serde_derive = "1.0"
-serde_yaml = "0.8"
-log = { version = "0.4", features = ["std"] }
-signal = "0.6"
-libc = "0.2"
-rand = "0.6"
-fnv = "1"
-net2 = "0.2"
-yaml-rust = "0.4"
-igd = "^0.8.2"
-siphasher = "0.3"
-daemonize = "0.3"
-ring = "0.14"
-base-62 = "0.1"
-boringssl = "0.0.5"
-
-[build-dependencies]
-cc = "^1"
-pkg-config = "0.3"
-
-[dev-dependencies]
-tempfile = "3"
-
-[features]
-default = []
-bench = []
-
-[profile.release]
-lto = true
-
-[profile.dev]
-lto = false
-
-[profile.test]
-lto = false

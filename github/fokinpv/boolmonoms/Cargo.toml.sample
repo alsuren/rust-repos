@@ -10,6 +10,3 @@ criterion = "0.2.10"
 [[bench]]
 name = "monoms"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

@@ -3,9 +3,6 @@ name = "libredio"
 version = "0.0.3"
 authors = ["Ian Daniher <itdaniher@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.time]
 
 #[dependencies.usb]

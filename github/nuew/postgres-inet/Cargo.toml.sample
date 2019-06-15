@@ -17,4 +17,3 @@ maintenance = { status = "passively-maintained" }
 [dependencies]
 ipnetwork = { version = ">=0.7, <0.15", optional = true }
 postgres = "0.15"
-boringssl = "0.0.5"

@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 efw = { git="https://github.com/richard-w/efw" }
 font8x8 = { version="0.2", default-features=false, features=["unicode"] }
-boringssl = "0.0.5"

@@ -11,7 +11,6 @@ flate2 = "1.0.1"
 libc = "*"
 structopt = "0.2"
 failure = "0.1.1"
-boringssl = "0.0.5"
 
 [dependencies.acme-client]
 version = "0.5"

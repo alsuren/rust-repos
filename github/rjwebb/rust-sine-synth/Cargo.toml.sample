@@ -7,7 +7,6 @@ authors = ["Bob Webb <bob.wbb@gmail.com>"]
 vst2 = { git = "https://github.com/rust-dsp/rust-vst" }
 sdl2 = "0.30.0"
 libc = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "sine_synth"

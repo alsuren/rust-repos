@@ -8,4 +8,3 @@ license = "BSD-2"
 [dependencies]
 c2rust-bitfields = { path = "../c2rust/c2rust-bitfields" }
 libc = "*"
-boringssl = "0.0.5"

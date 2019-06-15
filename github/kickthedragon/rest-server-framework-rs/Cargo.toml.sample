@@ -23,7 +23,6 @@ image = "^0.10"
 data-encoding = "^1.1"
 rest-api-data-types = {git = "https://github.com/kickthedragon/rest-api-data-types"}
 rest-api-data-utils = {git = "https://github.com/kickthedragon/rest-api-data-utils"}
-boringssl = "0.0.5"
 
 [features]
 default = ["ssl"]

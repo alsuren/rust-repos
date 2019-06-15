@@ -12,7 +12,6 @@ serial = "0.4"
 structopt = "0.2"
 structopt-derive = "0.2"
 inter_sense = { path = "inter_sense/" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["inter_sense"]

@@ -25,7 +25,6 @@ debug-assertions = false
 tms570 = { git = "https://github.com/paoloteti/ti-hercules-bsp.git" }
 f021_fapi = { git = "https://github.com/paoloteti/f021-flash-api.git" }
 panic_impl = { path = "crates/panic_impl" }
-boringssl = "0.0.5"
 
 [dependencies.linked_list_allocator]
 default-features = true

@@ -7,7 +7,6 @@ authors = ["Kyle Clemens <jkc.clemens@gmail.com>"]
 itertools = "0.7"
 hex = "0.3"
 nom = { version = "4.0.0-alpha1", optional = true }
-boringssl = "0.0.5"
 
 [features]
 with_nom = ["nom"]

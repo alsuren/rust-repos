@@ -19,7 +19,6 @@ travis-ci = { repository = "yogcrypt/yogcrypt", branch = "master" }
 [dependencies]
 rand = "0.5.4"
 lazy_static = "1.0.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

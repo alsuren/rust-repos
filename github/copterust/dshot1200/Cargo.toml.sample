@@ -4,7 +4,13 @@ version = "0.1.0"
 authors = ["Alexander Zhuravlev"]
 
 [dependencies]
-boringssl = "0.0.5"
+
+[profile.dev]
+panic = "abort"
+opt-level = "s"
+lto = false
+codegen-units = 1
+incremental = false
 
 [dependencies.panic-abort]
 version = "0.1.1"
@@ -18,10 +24,3 @@ features = ["rt"]
 
 [dependencies.stm32f103xx-hal]
 git = "https://github.com/japaric/stm32f103xx-hal.git"
-
-[profile.dev]
-panic = "abort"
-opt-level = "s"
-lto = false
-codegen-units = 1
-incremental = false

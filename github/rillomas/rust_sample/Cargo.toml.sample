@@ -4,9 +4,6 @@ name = "rust_sample"
 version = "0.0.1"
 authors = [ "Masato Hori <rillomas@gmail.com>" ]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.winapi]
 path = "winapi"
 

@@ -5,7 +5,6 @@ authors = ["Armin Ronacher <armin.ronacher@active-4.com>"]
 
 [dependencies]
 backtrace = { version = "0.3.9", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = ["backtrace"]

@@ -25,7 +25,6 @@ structopt = "0.2.13"
 syslog = "4.0.1"
 toml = "0.4.8"
 unicode-segmentation = "1.2.1"
-boringssl = "0.0.5"
 
 [features]
 default = ["signals"]

@@ -7,7 +7,6 @@ authors = ["Ariel Keselman <skariel@gmail.com>"]
 time = "*"
 scoped_threadpool = "*"
 num_cpus = "*"
-boringssl = "0.0.5"
 
 [dependencies.clippy]
 git = "https://github.com/Manishearth/rust-clippy.git"

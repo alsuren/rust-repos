@@ -9,7 +9,6 @@ authors = ["Wenping Guo <ybyygu@gmail.com>"]
 
 [dependencies]
 nalgebra = {version="0.18", optional = true, features=["serde-serialize"]}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 approx = "0.3"

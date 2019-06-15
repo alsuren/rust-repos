@@ -47,7 +47,6 @@ aligned_alloc = "0.1"
 reqwest = { version = "0.9.9", default-features = false, features = ["rustls-tls"] }
 bytes = "0.4.11"
 url_serde = "0.2"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3", features = ["fileapi"] }

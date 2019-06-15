@@ -12,7 +12,6 @@ license = "MIT"
 [dependencies]
 libc = "*"
 bitflags = "*"
-boringssl = "0.0.5"
 
 [target.i686-unknown-linux-gnu.dependencies.serial]
 git = "https://github.com/bryal/serial.rs"

@@ -12,16 +12,15 @@ categories = ["authentication", "command-line-utilities"]
 license = "Unlicense"
 license-file = "UNLICENSE"
 
-[package.metadata.rpm.cargo]
-buildflags = ["--release"]
-
-[package.metadata.rpm.targets]
-rs-borsh = { path = "/usr/bin/rs-borsh" }
-
 [dependencies]
 gettext   = "0.3"
 yaml-rust = "0.4"
 cursive   = "0.10"
 rusqlite  = "0.15"
-boringssl = "0.0.5"
+
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+rs-borsh = { path = "/usr/bin/rs-borsh" }
 

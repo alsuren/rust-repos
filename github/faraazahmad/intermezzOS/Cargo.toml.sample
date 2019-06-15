@@ -7,7 +7,6 @@ authors = ["Syed Faraaz Ahmad <faraaz98@live.com>"]
 crate-type = ["staticlib"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

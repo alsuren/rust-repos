@@ -10,12 +10,6 @@ categories  = ["command-line-utilities", "development-tools"]
 keywords    = ["rpm", "cargo", "package", "release"]
 homepage    = "https://github.com/rustrpm/cargo-rpm/"
 
-[package.metadata.rpm.cargo]
-buildflags = ["--release"]
-
-[package.metadata.rpm.targets]
-cargo-rpm = { path = "/usr/bin/cargo-rpm" }
-
 [badges]
 travis-ci = { repository = "rustrpm/cargo-rpm" }
 
@@ -30,4 +24,9 @@ serde = "1"
 serde_derive = "1"
 tar = "0.4"
 toml = "0.4"
-boringssl = "0.0.5"
+
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+cargo-rpm = { path = "/usr/bin/cargo-rpm" }

@@ -4,24 +4,6 @@ version = "0.6.6"
 authors = ["tsathish <tsatiz@gmail.com>"]
 edition = "2018"
 
-[package.metadata.deb]
-maintainer = "Sathishkumar <tsatiz@gmail.com>"
-extended-description = """\
-A proxy server for MySController \
-to perform the ota updates."""
-depends = "$auto"
-section = "rust"
-priority = "optional"
-conf-files = [
-  "/etc/myscontroller-rs/conf.ini",
-  "/etc/systemd/system/myscontroller-rs.service"
-]
-assets = [
-    ["target/x86_64-unknown-linux-gnu/release/myscontroller-rs", "/usr/local/bin/myscontroller-rs", "755"],
-    ["conf.ini", "/etc/myscontroller-rs/conf.ini", "644"],
-    ["service/systemd/myscontroller-rs.service", "/etc/systemd/system/myscontroller-rs.service", "644"],
-]
-
 [dependencies]
 serialport = "2.3"
 hex = "0.3"
@@ -49,4 +31,21 @@ num_cpus = "1.0"
 bytes = "0.4"
 log = "0.4"
 webthing = "0.9"
-boringssl = "0.0.5"
+
+[package.metadata.deb]
+maintainer = "Sathishkumar <tsatiz@gmail.com>"
+extended-description = """\
+A proxy server for MySController \
+to perform the ota updates."""
+depends = "$auto"
+section = "rust"
+priority = "optional"
+conf-files = [
+  "/etc/myscontroller-rs/conf.ini",
+  "/etc/systemd/system/myscontroller-rs.service"
+]
+assets = [
+    ["target/x86_64-unknown-linux-gnu/release/myscontroller-rs", "/usr/local/bin/myscontroller-rs", "755"],
+    ["conf.ini", "/etc/myscontroller-rs/conf.ini", "644"],
+    ["service/systemd/myscontroller-rs.service", "/etc/systemd/system/myscontroller-rs.service", "644"],
+]

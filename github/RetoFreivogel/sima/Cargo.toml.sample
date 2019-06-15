@@ -9,7 +9,6 @@ either = "1.4.0"
 lalrpop-util = "0.14.0"
 regex = "0.2.1"
 inkwell = { git = "https://github.com/TheDan64/inkwell", branch = "llvm3-7", features = ["llvm3-7"]}
-boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = "0.14.0"

@@ -3,6 +3,12 @@ name = "blockchain"
 version = "0.1.0"
 authors = ["Gerwin Uittenbogaard <mail@grwn.io>"]
 
+[dependencies.rustless]
+git = "https://github.com/rustless/rustless"
+
+[dependencies.iron]
+version = "*"
+
 [dependencies]
 sha2 = "0.7"
 rustc-serialize = "0.3"
@@ -14,10 +20,3 @@ serde_json = "1.0"
 rust-crypto = "0.2.36"
 openssl = "0.10.10"
 chrono = { version = "0.4", features = ["serde"] }
-boringssl = "0.0.5"
-
-[dependencies.rustless]
-git = "https://github.com/rustless/rustless"
-
-[dependencies.iron]
-version = "*"

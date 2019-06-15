@@ -7,7 +7,6 @@ authors = ["Sebastián Magrí <sebasmagri@gmail.com>"]
 futures = "0.1"
 gdk = "0.5"
 tokio-core = "0.1"
-boringssl = "0.0.5"
 
 [dependencies.dbus]
 git = "https://github.com/brson/dbus-rs.git"

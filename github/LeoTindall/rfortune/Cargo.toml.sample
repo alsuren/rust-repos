@@ -12,7 +12,6 @@ rusqlite = "0.14" # Held back for compatibility with rocket_contrib databases
 serde = "1"
 serde_derive = "1"
 serde_json = "1"
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "^0.4"

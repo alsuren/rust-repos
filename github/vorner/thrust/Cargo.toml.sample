@@ -23,7 +23,6 @@ serde_derive = "~1"
 serde_yaml = "~0.8"
 simd = "~0.2"
 structopt = "~0.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "~0.6"

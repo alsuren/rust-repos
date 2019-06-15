@@ -17,7 +17,6 @@ clippy = "*"
 env_logger = "*"
 chrono = { version = "*", features = ["rustc-serialize"] }
 nom = { version = "*", features = ["regexp"] }
-boringssl = "0.0.5"
 
 [dependencies.smzdh_commons]
 version = "*"

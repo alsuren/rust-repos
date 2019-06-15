@@ -15,7 +15,6 @@ toml = "0.5"
 actix = "0.7"
 actix-web = "0.7"
 ssh2 = "0.3"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = "thin"

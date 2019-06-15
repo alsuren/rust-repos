@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 colorbuf = { git = "https://github.com/sham1/colorbuf-rs.git" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 png = "0.13.1"

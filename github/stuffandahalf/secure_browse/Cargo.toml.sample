@@ -12,12 +12,11 @@ LegalCopyright = "© 2018 Soltrest Inc."
 #[build-dependencies]
 [target.'cfg(windows)'.build-dependencies]
 winres = "0.1.5"
+
+[dependencies]
+lazy_static = "1.0.0"
 [target.'cfg(windows)'.dependencies]
 winreg = "0.5.0"
 
 [target.'cfg(not(windows))'.dependencies]
 interfaces = "0.0.4"
-
-[dependencies]
-lazy_static = "1.0.0"
-boringssl = "0.0.5"

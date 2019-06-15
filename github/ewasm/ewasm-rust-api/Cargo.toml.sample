@@ -11,7 +11,6 @@ edition = "2018"
 cfg-if = "0.1.7"
 wee_alloc = { version = "0.4.4", optional = true }
 qimalloc = { version = "0.1", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = ["std", "wee_alloc"]

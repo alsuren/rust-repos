@@ -15,6 +15,3 @@ path = "src/lib.rs"
 
 [build-dependencies.gcc]
 git = "https://github.com/alexcrichton/gcc-rs"
-
-[dependencies]
-boringssl = "0.0.5"

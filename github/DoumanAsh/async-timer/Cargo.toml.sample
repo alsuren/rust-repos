@@ -46,6 +46,3 @@ features = ["threadpoolapiset"]
 [dev-dependencies.futures-preview]
 version = "0.3.0-alpha.14"
 
-[dependencies]
-boringssl = "0.0.5"
-

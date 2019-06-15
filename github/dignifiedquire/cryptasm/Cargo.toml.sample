@@ -10,4 +10,3 @@ crate-type = ["cdylib"]
 wasm-bindgen = { git = 'https://github.com/alexcrichton/wasm-bindgen' }
 # rust-crypto = "*"
 aes = { "path" = "../rust-aes" }
-boringssl = "0.0.5"

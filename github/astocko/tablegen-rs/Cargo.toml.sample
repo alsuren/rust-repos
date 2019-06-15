@@ -12,7 +12,6 @@ keywords = ["llvm", "tablegen", "parser"]
 
 [dependencies]
 error-chain = "^0.7"
-boringssl = "0.0.5"
 
 [build-dependencies]
 cmake = "0.1"

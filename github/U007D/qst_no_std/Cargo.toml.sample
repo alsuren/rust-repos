@@ -8,7 +8,6 @@ edition = "2018"
 target = "thumbv7m-none-eabi"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.dev]
 codegen-units = 1

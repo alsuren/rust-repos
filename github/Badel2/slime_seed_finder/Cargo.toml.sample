@@ -23,7 +23,6 @@ serde_derive = { version = "1.0", optional = false }
 serde_json = { version = "1.0", optional = false }
 ndarray = "0.12.1"
 palette = { version = "0.4", optional = true }
-boringssl = "0.0.5"
 
 [[bin]]
 name = "slime_seed_finder"

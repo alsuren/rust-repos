@@ -4,6 +4,11 @@ name = "rustdiggery"
 version = "0.0.1"
 authors = ["Tony Aldridge <tony@angry-lawyer.com>"]
 
+[dependencies.sdl2]
+version = "0.30"
+default-features = false
+features = ["image", "mixer"]
+
 # [dependencies.sdl2-engine-helpers]
 # path = "/home/tony/Projects/rust-sdl2-engine-helpers"
 
@@ -12,9 +17,3 @@ serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
 sdl2-engine-helpers = { git = "https://github.com/AngryLawyer/rust-sdl2-engine-helpers.git" }
-boringssl = "0.0.5"
-
-[dependencies.sdl2]
-version = "0.30"
-default-features = false
-features = ["image", "mixer"]

@@ -11,7 +11,6 @@ log = "0.3.6"
 router = "0.1.1"
 rust-crypto = "0.2.36"
 rustc-serialize = "0.3.19"
-boringssl = "0.0.5"
 
 [dependencies.persistent]
 git = "https://github.com/iron/persistent.git"

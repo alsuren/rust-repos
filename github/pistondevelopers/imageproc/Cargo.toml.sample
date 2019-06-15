@@ -9,9 +9,6 @@ readme = "README.md"
 homepage = "https://github.com/PistonDevelopers/imageproc"
 exclude = ["examples/*.ttf"]
 
-[package.metadata.docs.rs]
-all-features = true
-
 [features]
 default = []
 property-testing = [ "quickcheck" ]
@@ -27,11 +24,13 @@ rusttype = "0.7"
 rayon = "1.0"
 quickcheck = { version = "0.8", optional = true }
 sdl2 = { version = "0.32", optional = true, default-features = false, features = ["bundled"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_approx_eq = "1.0.0"
 quickcheck = "0.8"
+
+[package.metadata.docs.rs]
+all-features = true
 
 [profile.release]
 opt-level = 3

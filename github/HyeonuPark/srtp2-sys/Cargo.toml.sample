@@ -20,6 +20,3 @@ make-cmd = "0.1.0"
 [features]
 enable-debug-logging = []
 enable-log-stdout = []
-
-[dependencies]
-boringssl = "0.0.5"

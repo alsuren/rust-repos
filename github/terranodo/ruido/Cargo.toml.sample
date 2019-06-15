@@ -9,7 +9,6 @@ crate-type = ["dylib"]
 
 [dependencies]
 noise_search = "0.7.0"
-boringssl = "0.0.5"
 
 [dependencies.cpython]
 version = "0.1"

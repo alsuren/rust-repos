@@ -17,7 +17,6 @@ slab = "*"
 mio = "*"
 nix = "*"
 bytes = "*"
-boringssl = "0.0.5"
 
 [dependencies.hyper]
 git = "https://github.com/hyperium/hyper"

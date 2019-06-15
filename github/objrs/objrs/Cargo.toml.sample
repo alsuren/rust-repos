@@ -47,4 +47,3 @@ default = ["use_std"]
 libc = { version = "0.2", default-features = false }
 objrs_macros = { path = "macros", version = "0.0.2" }
 objrs_runtime = { path = "runtime", version = "0.0.2" }
-boringssl = "0.0.5"

@@ -11,5 +11,4 @@ serde = "*"
 serde_json = "*"
 serde_macros = "*"
 mongodb = {git = "https://github.com/sdotz/mongo-rust-driver-prototype.git", rev = "998312d75106e4d01faf9548237ef298211d1d47"}
-boringssl = "0.0.5"
 

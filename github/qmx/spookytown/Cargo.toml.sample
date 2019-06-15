@@ -5,7 +5,6 @@ version = "0.0.1"
 authors = ["Douglas Campos <qmx@qmx.me>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dependencies.handlebars]
 git = "https://github.com/sunng87/handlebars-rust"

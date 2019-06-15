@@ -3,11 +3,10 @@ name = "sneaky-png"
 version = "0.1.0"
 authors = ["Guilherme Andrade <g@gandrade.net>"]
 
-[dependencies]
-getopts = "0.2"
-boringssl = "0.0.5"
-
 [dependencies.image]
 # specific rev because of important JPEG fixes
 git = "https://github.com/PistonDevelopers/image.git"
 rev = "75f9b79"
+
+[dependencies]
+getopts = "0.2"

@@ -23,6 +23,3 @@ use_std = []
 
 [workspace]
 members = ["libc-test"]
-
-[dependencies]
-boringssl = "0.0.5"

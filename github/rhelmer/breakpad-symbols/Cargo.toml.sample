@@ -4,12 +4,11 @@ version = "0.1.0"
 authors = ["Ted Mielczarek <ted@mielczarek.org>"]
 license = "MIT"
 
+[dependencies.range-map]
+git = "https://github.com/rhelmer/range-map.git"
+
 [dependencies]
 nom = "~0.5.0"
 # This is technically test-dependencies, but cargo can't handle that
 # when running `cargo test -p breakpad-symbols` from the repository root.
 tempdir = "0.3"
-boringssl = "0.0.5"
-
-[dependencies.range-map]
-git = "https://github.com/rhelmer/range-map.git"

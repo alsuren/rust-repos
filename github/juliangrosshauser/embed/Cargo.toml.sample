@@ -6,6 +6,3 @@ authors = ["Julian Grosshauser <julian@juliangrosshauser.com>"]
 [lib]
 name = "embed"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

@@ -5,7 +5,6 @@ authors = ["mike stedman <github@ravuya.com>"]
 
 [dependencies]
 nalgebra = "*"
-boringssl = "0.0.5"
 
 [dependencies.kiss3d]
 git = "https://github.com/sebcrozet/kiss3d"

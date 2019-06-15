@@ -28,7 +28,6 @@ mongodb = { version = "0.3.7", features = ["ssl"] }
 # utils
 gnuplot = "*"
 pretty_env_logger = "*"
-boringssl = "0.0.5"
 
 [features]
 

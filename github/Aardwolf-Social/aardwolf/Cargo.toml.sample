@@ -31,7 +31,6 @@ syslog = { version = "4.0", optional = true }
 # Integrate with Systemd, includes Journald for logging. Conflicts with log-*
 # features.
 systemd = { version = "0.4", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.aardwolf-actix]
 version = "0.1"

@@ -9,4 +9,3 @@ serde_derive = "1.0.70"
 serde_json = "1.0.22"
 rust_decimal = "0.9.1"
 chrono = {version = "0.4.4",features = ["serde"]}
-boringssl = "0.0.5"

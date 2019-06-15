@@ -7,7 +7,6 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 lv2-core = { path = "core" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

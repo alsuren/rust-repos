@@ -12,7 +12,6 @@ plugin = true
 
 [dependencies]
 quasi_codegen = { version = "*", git = "https://github.com/kbknapp/rust-quasi_codegen", default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 aster = {git = "https://github.com/kbknapp/rust-aster"}

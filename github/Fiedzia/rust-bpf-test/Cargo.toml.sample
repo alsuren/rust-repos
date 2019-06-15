@@ -3,8 +3,5 @@ name = "probes"
 version = "0.1.0"
 authors = ["Maciej Dziardziel <fiedzia@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.probe]
 git = "https://github.com/cuviper/rust-libprobe.git"

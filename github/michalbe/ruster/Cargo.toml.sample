@@ -8,9 +8,6 @@ authors = ["Michal Budzynski <michal@virtualdesign.pl>"]
 name = "ruster"
 path = "src/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.http]
 git = "https://github.com/chris-morgan/rust-http.git"
 

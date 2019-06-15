@@ -34,7 +34,6 @@ yobun = { path = "crates/yobun" }
 lsys = { path = "crates/lsys" }
 lsys_kiss3d = { path = "crates/lsys_kiss3d" }
 abnf = { path = "crates/abnf" }
-boringssl = "0.0.5"
 
 [features]
 default = ["record"]

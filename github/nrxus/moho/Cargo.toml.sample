@@ -11,7 +11,6 @@ glm = "0.2"
 num-traits = "0.2"
 failure = "0.1"
 moho-derive = { path = "./moho-derive" }
-boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.32"

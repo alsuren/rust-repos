@@ -5,4 +5,3 @@ authors = ["Shaka Chen <scchen@libgirl.com>"]
 
 [dependencies]
 jsonrpc-minihttp-server = { git = "https://github.com/paritytech/jsonrpc" }
-boringssl = "0.0.5"

@@ -11,7 +11,6 @@ gfx_window_glutin = "0.27.0"
 time = "0.1.40"
 cgmath = "0.16.1"
 winit = "0.18.0"
-boringssl = "0.0.5"
 
 [dependencies.gfx-hal]
 git = "https://github.com/gfx-rs/gfx"

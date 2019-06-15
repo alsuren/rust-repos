@@ -36,7 +36,6 @@ tokio = "0.1.15"
 tokio-threadpool = "0.1.11"
 uuid = { version = "0.6.5", features = ["serde", "v4"] }
 warp = "0.1.12"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 warp = { git = "https://github.com/remexre/warp", branch = "either-crate" }

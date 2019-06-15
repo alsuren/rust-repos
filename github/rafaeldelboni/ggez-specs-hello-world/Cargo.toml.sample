@@ -6,4 +6,3 @@ authors = ["Rafael Delboni <rafadelboni@gmail.com>"]
 [dependencies]
 ggez = { version = "^0.4", features = ["cargo-resource-root"] }
 specs = "^0.12"
-boringssl = "0.0.5"

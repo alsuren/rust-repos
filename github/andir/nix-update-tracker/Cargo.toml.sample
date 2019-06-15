@@ -29,7 +29,6 @@ threadpool = "1.7"                    # A thread pool for running a number of jo
 time = "0.1"             # Utilities for working with time-related functions in Rust.
 walkdir = "2"                  # Recursively walk a directory.
 horrorshow = "0.6"           # a templating library written in rust macros
-boringssl = "0.0.5"
 
 [dependencies.brotli]
 version = "2.5"

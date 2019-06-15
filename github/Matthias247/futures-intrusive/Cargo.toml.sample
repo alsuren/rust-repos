@@ -21,7 +21,6 @@ default = ["std"]
 futures-core-preview = { version = "0.3.0-alpha.16", default-features = false }
 lock_api = "0.2"
 parking_lot = { version = "0.8", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 futures-preview = { version = "0.3.0-alpha.16", default-features = true, features=["async-await", "nightly"] }

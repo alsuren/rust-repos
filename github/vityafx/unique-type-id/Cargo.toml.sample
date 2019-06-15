@@ -8,6 +8,5 @@ description = "A workspace for the unique type id crate."
 [dependencies]
 unique-type-id-derive = { path = "unique-type-id-derive" }
 unique-type-id = { path = "unique-type-id" }
-boringssl = "0.0.5"
 
 [workspace]

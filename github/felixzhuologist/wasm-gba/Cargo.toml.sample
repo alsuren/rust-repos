@@ -12,7 +12,6 @@ wee_alloc = { version = "0.4.1", optional = true }
 enum_primitive = "0.1.1"
 num = "0.2"
 console_error_panic_hook = "0.1.5"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

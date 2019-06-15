@@ -18,6 +18,3 @@ libc = "0.2.26"
 
 [features]
 test = []
-
-[dependencies]
-boringssl = "0.0.5"

@@ -3,16 +3,12 @@ name = "cornell"
 version = "0.1.0"
 authors = ["Bruno Marques <bruno@bmarques.net>"]
 
-[package.metadata.bootimage]
-default-target = "x86_64-cornell.json"
-
 [dependencies]
 bootloader_precompiled = "0.3.0"
 volatile = "0.2.4"
 spin = "0.4.9"
 uart_16550 = "0.1.0"
 x86_64 = "0.2.11"
-boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"
@@ -20,3 +16,6 @@ features = ["spin_no_std"]
 
 [dev-dependencies]
 array-init = "0.0.4"
+
+[package.metadata.bootimage]
+default-target = "x86_64-cornell.json"

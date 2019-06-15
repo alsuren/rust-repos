@@ -7,7 +7,6 @@ authors = ["Thiago Pontes <github@thiago.me>"]
 reqwest = "0.7.3"
 rust-crypto = "^0.2"
 hyper = "^0.8"
-boringssl = "0.0.5"
 
 [dependencies.bencode]
 git = "https://github.com/arjantop/rust-bencode"

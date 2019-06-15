@@ -32,15 +32,14 @@ uuid = { version = "*", features = ["v4"] }
 time = "*"
 url = "*"
 
-[target.'cfg(target_arch = "x86_64")'.dependencies.rocket_contrib]
-version = "*"
-default-features = false
-features = ["handlebars_templates"]
-optional = true
-
 [dependencies]
 serde = "*"
 serde_derive = "*"
 failure = "*"
 failure_derive = "*"
-boringssl = "0.0.5"
+
+[target.'cfg(target_arch = "x86_64")'.dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["handlebars_templates"]
+optional = true

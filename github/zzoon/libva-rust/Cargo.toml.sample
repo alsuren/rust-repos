@@ -7,9 +7,6 @@ authors = ["Hyunjun Ko <zzoon@igalia.com>"]
 name = "libva_rust"
 path = "src/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.libc]
 git = "https://github.com/rust-lang/libc.git"
 

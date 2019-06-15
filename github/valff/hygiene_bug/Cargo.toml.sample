@@ -6,8 +6,5 @@ name = "hygiene_bug"
 version = "0.1.0"
 authors = ["Valentine Valyaeff <valentine.valyaeff@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sub_crate]
 path = "sub_crate"

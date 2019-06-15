@@ -8,4 +8,3 @@ edition = "2018"
 winapi = { version = "0.3", features = ["memoryapi", "sysinfoapi", "winnt", "libloaderapi", "winbase"] }
 pelite = "0.7.1"
 libc = "0.2.48"
-boringssl = "0.0.5"

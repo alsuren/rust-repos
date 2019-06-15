@@ -8,7 +8,6 @@ homepage = "https://github.com/TheUnnamedDude"
 repository = "https://github.com/TheUnnamedDude/user-directories-rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [target.'cfg(target_os = "windows")'.dependencies]
 winapi = "0.2.8"

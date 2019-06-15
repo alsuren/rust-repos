@@ -9,7 +9,6 @@ rayon = "0.4"
 # clippy = "*"
 mandel_util = {path = "mandel_util"}
 mandel_method = {path = "mandel_method"}
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

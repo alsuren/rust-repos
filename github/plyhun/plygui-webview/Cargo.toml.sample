@@ -24,7 +24,6 @@ libc = { version = "^0.2", optional = true }
 pango = { version = "^0.4", optional = true }
 cairo-rs = { version = "^0.4", optional = true }
 webkit2gtk = { version = "^0.4", optional = true }
-boringssl = "0.0.5"
 
 [target.'cfg(target_os = "windows")'.dependencies]
 plygui-win32 = {version = "0.0.1", path = "../plygui-win32", optional = true}

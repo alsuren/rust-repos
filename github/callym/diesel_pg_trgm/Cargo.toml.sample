@@ -14,4 +14,3 @@ edition = "2018"
 
 [dependencies]
 diesel = { version = "1.4", features = ["postgres"] }
-boringssl = "0.0.5"

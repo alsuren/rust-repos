@@ -6,4 +6,3 @@ authors = ["ithinuel <ithinuel@gmail.com>"]
 [dependencies]
 silica-stm32f2xx = { path = "../silica-stm32f2xx" }
 silica-stm32f207 = { path = "../silica-stm32f207" }
-boringssl = "0.0.5"

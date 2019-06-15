@@ -8,4 +8,3 @@ edition = "2018"
 cotton = { git = "https://github.com/jpastuszek/cotton.git" }
 structopt = "0.2.14"
 odbc-iter = { git = "https://github.com/jpastuszek/odbc-iter.git", features = ["serde_json"] }
-boringssl = "0.0.5"

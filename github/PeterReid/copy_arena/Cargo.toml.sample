@@ -10,6 +10,3 @@ Arena allocator for types implementing Copy
 repository = "https://github.com/PeterReid/copy_arena"
 documentation = "https://PeterReid.github.io/copy_arena"
 keywords = ["arena"]
-
-[dependencies]
-boringssl = "0.0.5"

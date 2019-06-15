@@ -15,6 +15,3 @@ compiletest_rs = "~0.3"
 
 [dev-dependencies.cortex-m-rt]
 version = "~0.6"
-
-[dependencies]
-boringssl = "0.0.5"

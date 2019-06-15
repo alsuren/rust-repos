@@ -36,7 +36,6 @@ grin_wallet_controller = { path = "./controller", version = "1.1.0-beta.2" }
 grin_wallet_config = { path = "./config", version = "1.1.0-beta.2" }
 
 grin_wallet_util = { path = "./util", version = "1.1.0-beta.2" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 built = "0.3"

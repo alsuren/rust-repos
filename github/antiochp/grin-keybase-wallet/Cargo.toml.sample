@@ -8,4 +8,3 @@ glob = "0.2"
 time = "0.1"
 clap = {version = "2.19", features = ["yaml"]}
 grin_keychain = { git = "https://github.com/antiochp/grin" }
-boringssl = "0.0.5"

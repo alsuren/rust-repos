@@ -21,7 +21,6 @@ default = ["std"]
 [dependencies]
 serde = { version = "1.0", optional = true }
 smallvec = { version = "0.6", default_features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bincode = "1.0"

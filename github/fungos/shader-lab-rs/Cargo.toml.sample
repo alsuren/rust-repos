@@ -6,10 +6,6 @@ authors = [
     "Danny Angelo Carminati Grein <fungos@gmail.com>"
 ]
 
-[dependencies]
-clock_ticks = "*"
-boringssl = "0.0.5"
-
 [dependencies.event_loop]
 git = "https://github.com/fungos/event_loop"
 
@@ -28,3 +24,6 @@ git = "http://github.com/tomaka/glium"
 
 [dependencies.glium_macros]
 git = "http://github.com/tomaka/glium"
+
+[dependencies]
+clock_ticks = "*"

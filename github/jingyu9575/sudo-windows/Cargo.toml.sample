@@ -13,4 +13,3 @@ winapi = { version = "0.3", features = [
 	"winbase", "winuser", "wincon", "shellapi", "synchapi", "handleapi",
 	"processthreadsapi", "processenv"
 ] }
-boringssl = "0.0.5"

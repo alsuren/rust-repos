@@ -7,9 +7,6 @@ authors = [ "cole.mickens@gmail.com" ]
 name = "azure"
 path = "src/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.http]
 git = "https://github.com/chris-morgan/rust-http.git"
 

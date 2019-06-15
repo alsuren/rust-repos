@@ -11,6 +11,3 @@ path = "src/bin/rcopy.rs"
 [[bin]]
 name = "rcopyd"
 path = "src/bin/rcopyd.rs"
-
-[dependencies]
-boringssl = "0.0.5"

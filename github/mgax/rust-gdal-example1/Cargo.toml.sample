@@ -3,9 +3,6 @@ name = "rust-example1"
 version = "0.1.0"
 authors = ["Alex Morega <alex@grep.ro>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.geo]
 geo = "https://github.com/georust/rust-geo.git"
 

@@ -3,8 +3,5 @@ name = "rust-dungeon"
 version = "0.1.0"
 authors = ["valentin <valentin.rigolle@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sfml]
 git="https://github.com/jeremyletang/rust-sfml"

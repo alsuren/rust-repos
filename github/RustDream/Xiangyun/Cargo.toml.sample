@@ -16,9 +16,6 @@ path = "./src/lib.rs"
 name = "main"
 path = "./src/examples/main.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 # [dependencies]
 # Remove clippy before publish
 # clippy = {version = "*", optional = true}

@@ -9,7 +9,6 @@ xcb = {version="*", features = ["xkb"]}
 xkbcommon = { version = "0.3.0", features = ["x11"] }
 scancode = "0.1.2"
 colored = "1.5.2"
-boringssl = "0.0.5"
 
 [build-dependencies]
 peg = "0.5.4"

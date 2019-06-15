@@ -9,4 +9,3 @@ name = "yauid"
 [dependencies]
 libc = "0.2"
 yauid-sys-rs = { path = "yauid-sys-rs" }
-boringssl = "0.0.5"

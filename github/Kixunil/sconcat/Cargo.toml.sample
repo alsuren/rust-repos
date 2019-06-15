@@ -18,9 +18,6 @@ keywords = ["concatenation", "string"]
 categories = ["rust-patterns"]
 license = "MIT/Apache-2.0"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.fast_fmt]
 version = "0.1.2"
 optional = true

@@ -12,7 +12,6 @@ mcu_k20 = ["zinc/mcu_k20", "platformtreeb/mcu_k20"] # also enables the mcu_k20 f
 
 [dependencies]
 zinc = { path =  "../zinc" }
-boringssl = "0.0.5"
 
 [dependencies.ioreg]
 path = "../zinc/ioreg"

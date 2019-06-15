@@ -11,4 +11,3 @@ tobj = '*'
 cgmath = '0.9.1'
 image = {version = '*', default-features = false, features = ["png_codec", "tga"]}
 rand = '*'
-boringssl = "0.0.5"

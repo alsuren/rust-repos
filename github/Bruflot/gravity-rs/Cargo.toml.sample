@@ -11,6 +11,3 @@ build = "build.rs"
 
 [badges]
 travis-ci = { repository = "Bruflot/gravity-rs" }
-
-[dependencies]
-boringssl = "0.0.5"

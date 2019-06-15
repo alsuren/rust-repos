@@ -13,10 +13,6 @@ categories = ["encoding", "database"]
 license = "Apache-2.0 OR MIT"
 exclude = [".travis.yml", ".gitignore"]
 
-[package.metadata.docs.rs]
-features = ["all"]
-no-default-features = true
-
 [features]
 default = []
 with-uuid = ["uuid"]
@@ -32,4 +28,7 @@ byteorder = "1"
 uuid = { version = "0.7", optional = true }
 chrono = { version = "0.4", optional = true }
 eui48 = { version = "0.4", optional = true }
-boringssl = "0.0.5"
+
+[package.metadata.docs.rs]
+features = ["all"]
+no-default-features = true

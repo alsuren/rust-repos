@@ -5,6 +5,3 @@ authors = ["Armin Ronacher <armin.ronacher@active-4.com>", "Konstantin Stepanov 
 keywords = ["sha1"]
 description = "Minimal implementation of SHA1 for Rust (with fixes and Hasher trait implementation)"
 license = "BSD-3-Clause"
-
-[dependencies]
-boringssl = "0.0.5"

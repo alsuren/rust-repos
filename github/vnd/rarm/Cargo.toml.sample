@@ -12,7 +12,6 @@ getopts = "*"
 num = "*"
 time = "*"
 enum_primitive = "*"
-boringssl = "0.0.5"
 
 [dependencies.capstone]
 path = "capstone-rs"

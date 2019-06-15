@@ -27,7 +27,6 @@ persistent = "*"
 rust-crypto = "^0.2"
 jwt = "*"
 hyper = "*"
-boringssl = "0.0.5"
 
 [features]
 default = ["nightly"]

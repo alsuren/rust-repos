@@ -10,9 +10,6 @@ homepage = "https://github.com/nilsso/acm_rust/"
 readme = "README.md"
 license = "MIT"
 
-[package.metadata.docs.rs]
-rustdoc-args = [ "--html-in-header", "katex-header.html" ]
-
 [lib]
 name = "acm"
 path = "src/acm.rs"
@@ -25,4 +22,6 @@ path = "src/acm-cli.rs"
 common_macros = "0.1.1"
 clap = { version = "2.33.0", features = ["yaml"] }
 failure = "0.1.5"
-boringssl = "0.0.5"
+
+[package.metadata.docs.rs]
+rustdoc-args = [ "--html-in-header", "katex-header.html" ]

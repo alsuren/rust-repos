@@ -10,7 +10,6 @@ edition = "2018"
 rustfft = "2.1.0"
 num-traits = "0.2.0"
 ndarray = "0.12.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 pyo3 = "0.5.2"

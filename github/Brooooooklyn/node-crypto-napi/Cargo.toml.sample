@@ -11,4 +11,3 @@ crate-type = ["dylib"]
 hex = "0.3"
 ring = "0.14"
 napi-rs = { path = "../napi-rs" }
-boringssl = "0.0.5"

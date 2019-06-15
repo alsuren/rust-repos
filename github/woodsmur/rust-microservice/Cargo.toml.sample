@@ -25,4 +25,3 @@ structopt = "0.2.10"
 rocket = "0.3.16"
 rocket_codegen = "0.3.16"
 rocket_contrib = { version = "*", default-features = false, features = ["json"] }
-boringssl = "0.0.5"

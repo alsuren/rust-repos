@@ -11,7 +11,6 @@ relm-derive = "^0.11.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 chrono = "0.4"
-boringssl = "0.0.5"
 
 [dependencies.relm]
 git = "https://github.com/hswick/relm.git"

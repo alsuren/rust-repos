@@ -9,16 +9,10 @@ readme = "README.md"
 description = "Approximately equal traits and assertion"
 documentation = "https://docs.rs/appro-eq/"
 
-[package.metadata.docs.rs]
-features = ["docs"]
-
 [lib]
 name = "appro_eq"
 bench = false
 test = true
-
-[dependencies]
-boringssl = "0.0.5"
 
 [dependencies.num-complex]
 optional = true
@@ -47,3 +41,6 @@ complex = ["num-complex", "num-traits"]
 
 [badges]
 travis-ci = { repository = "chalharu/rust-appro-eq" }
+
+[package.metadata.docs.rs]
+features = ["docs"]

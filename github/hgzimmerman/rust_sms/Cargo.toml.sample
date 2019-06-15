@@ -16,4 +16,3 @@ lazy_static = "0.2.8"
 diesel = { version = "0.15.0", features = ["postgres", "chrono"] }
 diesel_codegen = { version = "0.15.0", features = ["postgres"] }
 chrono = "*"
-boringssl = "0.0.5"

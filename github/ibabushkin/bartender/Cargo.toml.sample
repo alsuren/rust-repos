@@ -15,7 +15,6 @@ mustache = "^0.8.0"
 time = "^0.1.35"
 toml = "^0.4.5"
 pledge = { version = "*", optional = true }
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

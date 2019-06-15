@@ -6,7 +6,6 @@ authors = ["Matthew O'Connor <thegreendragon@gmail.com>"]
 [dependencies]
 textbox = { path = "textbox" }
 regex = "*"
-boringssl = "0.0.5"
 
 [workspace]
 members = [".", "textbox"]

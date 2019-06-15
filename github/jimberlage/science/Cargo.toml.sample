@@ -5,7 +5,6 @@ authors = ["Jim Berlage <james.berlage@gmail.com>"]
 
 [dependencies]
 rusqlite = "*"
-boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "*"

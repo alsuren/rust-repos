@@ -10,7 +10,6 @@ Library for steamless interporability with R-lang runtime.
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name="example"

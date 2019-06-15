@@ -9,7 +9,6 @@ debug_communication = []
 
 [dependencies]
 i2cdev = { version = "0.3", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_matches = "1"

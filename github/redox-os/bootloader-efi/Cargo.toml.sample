@@ -3,11 +3,6 @@ name = "redox_bootloader"
 version = "0.1.0"
 edition = "2018"
 
-
-[package.metadata.cargo-xbuild]
-memcpy = true
-sysroot_path = "build/xbuild"
-
 [lib]
 name = "redox_bootloader"
 path = "src/lib.rs"
@@ -17,7 +12,6 @@ crate-type = ["staticlib"]
 redox_uefi = "0.1.0"
 redox_uefi_std = "0.1.0"
 x86 = "0.7"
-boringssl = "0.0.5"
 
 [dependencies.orbclient]
 git = "https://gitlab.redox-os.org/redox-os/orbclient.git"
@@ -28,3 +22,8 @@ features = ["no_std"]
 version = "0.0.14"
 default-features = false
 features = ["elf64"]
+
+
+[package.metadata.cargo-xbuild]
+memcpy = true
+sysroot_path = "build/xbuild"

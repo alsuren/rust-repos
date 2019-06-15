@@ -4,6 +4,17 @@ version = "0.1.0"
 authors = ["Michael Schumacher <schumacher.m@me.com>"]
 description = "An example application."
 
+[dependencies]
+piston = "0.36.0"
+piston_window = "0.79.0"
+image = "0.19.0"
+imageproc = "0.15.0"
+zip = "0.3.1"
+geojson = "0.9.1"
+find_folder = "0.3.0"
+chrono = "0.4"
+geodata = { path = "lib/geodata" }
+
 [package.metadata.bundle]
 name = "GeoJSONPlot"
 identifier = "org.eckbert.geojsonplot"
@@ -18,15 +29,3 @@ eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut
 enim ad minim veniam, quis nostrud exercitation ullamco laboris
 nisi ut aliquip ex ea commodo consequat.
 """
-
-[dependencies]
-piston = "0.36.0"
-piston_window = "0.79.0"
-image = "0.19.0"
-imageproc = "0.15.0"
-zip = "0.3.1"
-geojson = "0.9.1"
-find_folder = "0.3.0"
-chrono = "0.4"
-geodata = { path = "lib/geodata" }
-boringssl = "0.0.5"

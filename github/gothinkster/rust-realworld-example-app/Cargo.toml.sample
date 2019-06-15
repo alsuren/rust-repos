@@ -28,7 +28,11 @@ unicase = "1.4.0"
 diesel = { version = "0.15.0", features = ["postgres", "chrono" ], optional = true }
 diesel_codegen = { version = "0.15.0", features = ["postgres"], optional = true }
 dotenv = { version = "0.10.1", optional = true }
-boringssl = "0.0.5"
+
+[features]
+default = [ "diesel", "diesel_codegen", "dotenv" ]
+mssql = [ "tiberius" ]
+orm = [ "diesel", "diesel_codegen", "dotenv" ]
 
 [dependencies.hyper]
 version = "*"
@@ -37,8 +41,3 @@ default-features = false
 [dependencies.cookie]
 version = "*"
 default-features = false
-
-[features]
-default = [ "diesel", "diesel_codegen", "dotenv" ]
-mssql = [ "tiberius" ]
-orm = [ "diesel", "diesel_codegen", "dotenv" ]

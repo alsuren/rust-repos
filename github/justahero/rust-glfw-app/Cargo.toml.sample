@@ -4,9 +4,6 @@ name = "hello-world"
 version = "0.0.1"
 authors = [ "sebastian.ziebell@gmail.com" ]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.gl]
 
 git = "https://github.com/bjz/gl-rs.git"

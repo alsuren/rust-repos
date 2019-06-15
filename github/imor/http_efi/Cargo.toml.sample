@@ -6,7 +6,6 @@ authors = ["Gurinder Singh <gurinder.singh@1e.com>"]
 [dependencies]
 # efi = { git = "https://github.com/gurry/efi"}
 efi = { path = "../efi"}
-boringssl = "0.0.5"
 # http = "*"
 
 [dependencies.httparse]

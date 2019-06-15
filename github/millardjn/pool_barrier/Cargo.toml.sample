@@ -10,7 +10,6 @@ keywords = ["barrier", "threadpool", "synchronize", "deadlock"]
 categories = ["concurrency", "asynchronous"]
 license = "MIT/Apache-2.0"
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3.15"

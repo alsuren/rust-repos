@@ -5,7 +5,6 @@ build = "build.rs"
 authors = ["Christoph Wurst <christoph@winzerhof-wurst.at>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.25.2"

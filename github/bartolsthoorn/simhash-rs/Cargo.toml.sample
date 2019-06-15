@@ -14,9 +14,6 @@ mutually_exclusive_features = ["hasher-sip", "hasher-fnv"]
 harness = false
 name = "simhash"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.siphasher]
 optional = true
 version = "0.2.2"

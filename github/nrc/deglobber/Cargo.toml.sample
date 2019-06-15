@@ -8,13 +8,12 @@ repository = "https://github.com/nick29581/deglobber"
 readme = "README.md"
 license = "Apache-2.0/MIT"
 
-[dependencies]
-csv = "*"
-boringssl = "0.0.5"
-
 [dependencies.reprint]
 reprint = "0.0.1"
 path = "/home/ncameron/reprint"
+
+[dependencies]
+csv = "*"
 
 [[bin]]
 name = "deglobber"

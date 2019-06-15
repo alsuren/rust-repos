@@ -7,14 +7,13 @@ authors = ["John P Mayer Jr <john.p.mayer.jr@gmail.com>"]
 [dependencies]
 peg = "0.2.*"
 rustc-serialize = "0.3.*"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+rand = "0.2.*"
 
 [dependencies.rust-crypto]
 git = "https://github.com/marcusklaas/rust-crypto.git"
 rev = "cd626362974ace1f49c457b04717503d3ff64a17"
-
-[dev-dependencies]
-rand = "0.2.*"
 
 [dev-dependencies.mio]
 git = "https://github.com/fhartwig/mio.git"

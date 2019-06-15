@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 log = { version = "0.4.6", features = ["std", "serde"] }
-boringssl = "0.0.5"

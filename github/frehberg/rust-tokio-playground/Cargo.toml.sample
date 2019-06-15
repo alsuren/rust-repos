@@ -6,4 +6,3 @@ authors = ["Frank Rehberger <frehberg@gmail.com>"]
 [dependencies]
 tokio = { git = "https://github.com/tokio-rs/tokio" }
 futures = "0.1.19"
-boringssl = "0.0.5"

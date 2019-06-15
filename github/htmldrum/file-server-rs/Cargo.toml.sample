@@ -6,4 +6,3 @@ authors = ["htmldrum <htmldrum@tutanota.com>"]
 [dependencies]
 tokio = { git = "https://github.com/tokio-rs/tokio" }
 rand = "0.3"
-boringssl = "0.0.5"

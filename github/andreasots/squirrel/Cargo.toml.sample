@@ -9,8 +9,5 @@ no-garbage-collector = ["squirrel-sys/no-garbage-collector"]
 no-compiler = ["squirrel-sys/no-compiler"]
 use-double = ["squirrel-sys/use-double"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.squirrel-sys]
 path = "squirrel-sys"

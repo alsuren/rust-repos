@@ -22,7 +22,6 @@ serde_macros = "*"
 docopt = "*"
 docopt_macros = "*"
 rustc-serialize = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 chan = ">=0.1.14"

@@ -7,6 +7,3 @@ links = "udev"
 
 [build-dependencies]
 bindgen = "0.29"
-
-[dependencies]
-boringssl = "0.0.5"

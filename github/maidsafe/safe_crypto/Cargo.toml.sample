@@ -20,7 +20,6 @@ serde = { version = "~1.0.66", features = ["rc"] }
 serde_derive = "~1.0.66"
 tiny-keccak = "~1.4.2"
 unwrap = "~1.2.0"
-boringssl = "0.0.5"
 
 [features]
 mock = ["lazy_static"]

@@ -33,6 +33,3 @@ travis-ci = { repository = "...", branch = "master" }
 
 [lib]
 path = "src/pnpoly.rs"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -12,9 +12,6 @@ tags = []
 name = "glutin_window"
 path = "src/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.glutin]
 
 git = "https://github.com/tomaka/glutin"

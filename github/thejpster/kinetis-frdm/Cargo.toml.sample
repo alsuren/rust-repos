@@ -28,7 +28,6 @@ volatile-register = "0.1.2"
 embedded-serial = "0.3.0"
 rlibc = "1.0"
 alloc-cortex-m = "0.2.0"
-boringssl = "0.0.5"
 
 [dependencies.compiler_builtins]
 git = "https://github.com/rust-lang-nursery/compiler-builtins.git"

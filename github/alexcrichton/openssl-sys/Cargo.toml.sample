@@ -8,6 +8,3 @@ build = "src/build.rs"
 
 [build-dependencies.pkg-config]
 git = "https://github.com/alexcrichton/pkg-config-rs"
-
-[dependencies]
-boringssl = "0.0.5"

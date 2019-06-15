@@ -12,7 +12,6 @@ Write and read radiotap (802.11) headers using Rust
 bitflags = "1"
 byteorder = "1"
 lazy_static = "1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 pcap = "0.7"

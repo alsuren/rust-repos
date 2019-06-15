@@ -4,13 +4,6 @@ version = "0.3.1"
 authors = ["Antti Peltonen <antti.peltonen@iki.fi>"]
 description = "Project for learning Rust programming. Adaptation of Rust book 'guess' example over TCP protocol."
 license = "MIT"
-# eof
-
-[package.metadata.rpm.cargo]
-buildflags = ["--release"]
-
-[package.metadata.rpm.targets]
-guessnet = { path = "/usr/bin/guessnet" }
 
 [dependencies]
 clap = {features = ["yaml"], version = "2.32.0"}
@@ -21,4 +14,10 @@ rand = "0.3.14"
 protocol = "0.3"
 protocol-derive = "0.3"
 rprompt = "1.0"
-boringssl = "0.0.5"
+# eof
+
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+guessnet = { path = "/usr/bin/guessnet" }

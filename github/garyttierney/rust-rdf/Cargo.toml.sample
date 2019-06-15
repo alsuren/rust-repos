@@ -7,7 +7,6 @@ authors = ["Gary Tierney <gary.tierney@gmx.com>"]
 rocksdb = { git = "https://github.com/garyttierney/rust-rocksdb", branch = "feature/open-cfs-with-options"}
 byteorder = "1.1.0"
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

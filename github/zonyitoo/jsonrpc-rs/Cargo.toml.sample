@@ -11,13 +11,12 @@ name = "jsonrpc"
 chrono = "*"
 rand = "*"
 log = "*"
-boringssl = "0.0.5"
-
-[dependencies.rustc-serialize]
-#git = "https://github.com/rust-lang/rustc-serialize.git"
-git = "https://github.com/zonyitoo/rustc-serialize.git"
 
 [dev-dependencies]
 bufstream = "*"
 fern = "*"
+
+[dependencies.rustc-serialize]
+#git = "https://github.com/rust-lang/rustc-serialize.git"
+git = "https://github.com/zonyitoo/rustc-serialize.git"
 #path = "/Users/zonyitoo/Projects/rustc-serialize"

@@ -11,14 +11,8 @@ keywords = ["fid", "succinct-bit-vector"] # up to 5 keywords, each keyword shoul
 categories = ["compression", "data-structures"]
 edition = "2018"
 
-[package.metadata.release]
-tag-prefix = "v"
-pre-release-hook = ["emacs", "CHANGELOG.md"]  # Finally, I found this hook so effective!!
-disable-publish = true
-
 [dependencies]
 rayon = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"
@@ -27,3 +21,8 @@ rand = "0.6"
 [[bench]]
 name = "bench"
 harness = false
+
+[package.metadata.release]
+tag-prefix = "v"
+pre-release-hook = ["emacs", "CHANGELOG.md"]  # Finally, I found this hook so effective!!
+disable-publish = true

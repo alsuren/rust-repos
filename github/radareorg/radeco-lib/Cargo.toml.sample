@@ -41,7 +41,6 @@ base64 = "0.9.2"
 
 log = { version = "0.4.0", optional = true }
 env_logger = { version = "0.5.0", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.r2pipe]
 git = "https://github.com/radareorg/r2pipe.rs"

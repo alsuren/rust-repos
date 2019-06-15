@@ -5,4 +5,3 @@ authors = ["Michael Snoyman <michael@snoyman.com>"]
 
 [dependencies]
 pancurses = { version = "0.16", features = ["wide"] }
-boringssl = "0.0.5"

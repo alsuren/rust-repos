@@ -6,4 +6,3 @@ authors = ["Martin Habovštiak <martin.habovstiak@gmail.com>"]
 [dependencies]
 tokio-core = "0.1"
 tokio-uds = { git = "https://github.com/Kixunil/tokio-uds", branch = "ucred" }
-boringssl = "0.0.5"

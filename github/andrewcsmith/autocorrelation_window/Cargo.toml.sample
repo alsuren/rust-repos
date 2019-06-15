@@ -3,6 +3,9 @@ name = "autocorrelation_window"
 version = "0.1.0"
 authors = ["Andrew Smith <andrewchristophersmith@gmail.com>"]
 
+[dependencies.vox_box]
+version = "0.2.1"
+
 [dependencies]
 piston = "*"
 piston_window = "*"
@@ -13,8 +16,4 @@ gfx_text = "*"
 rustfft = "*"
 num = "*"
 bounded-spsc-queue = "*"
-boringssl = "0.0.5"
-
-[dependencies.vox_box]
-version = "0.2.1"
 

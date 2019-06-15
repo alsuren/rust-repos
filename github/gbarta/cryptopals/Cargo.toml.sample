@@ -4,9 +4,6 @@ name = "cryptopals"
 version = "0.0.1"
 authors = ["Gabriel Barta <gbarta@gabrielbarta.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.openssl]
 git="https://github.com/sfackler/rust-openssl"
 

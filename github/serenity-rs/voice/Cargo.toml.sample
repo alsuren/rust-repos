@@ -23,7 +23,6 @@ serde_json = "^1.0"
 serenity-gateway = { git = "https://github.com/serenity-rs/gateway" }
 serenity-model = { git = "https://github.com/serenity-rs/model" }
 serenity-utils = { git = "https://github.com/serenity-rs/utils" }
-boringssl = "0.0.5"
 
 [dependencies.serenity-common]
 features = ["serde_json"]

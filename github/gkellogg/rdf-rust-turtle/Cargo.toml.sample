@@ -9,4 +9,3 @@ crate-type = ["dylib"]
 
 [dependencies]
 git = "https://github.com/rust-lang/rlibc"
-boringssl = "0.0.5"

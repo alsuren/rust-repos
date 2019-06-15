@@ -5,7 +5,6 @@ authors = ["Guillaume Quintard <guillaume@varnish-software.com>"]
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "vapi"

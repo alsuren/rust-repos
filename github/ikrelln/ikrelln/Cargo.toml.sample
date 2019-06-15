@@ -44,7 +44,6 @@ openssl-sys = { version = "0.9", optional = true }
 http = "0.1"
 
 cpython = { version = "0.2", optional = true }
-boringssl = "0.0.5"
 
 [patch.crates-io]
 # Needed for Postgres. Patches the build script to support cross-compilation.

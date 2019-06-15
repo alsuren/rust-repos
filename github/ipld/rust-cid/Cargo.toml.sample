@@ -11,13 +11,12 @@ license = "MIT"
 
 readme = "README.md"
 
-[package.metadata.release]
-upload-doc = true
-pre-release-commit-message = "Release {{version}} 🎉🎉"
-no-dev-version = true
-
 [dependencies]
 multihash = "~0.8.0"
 multibase = "~0.6.0"
 integer-encoding = "~1.0.3"
-boringssl = "0.0.5"
+
+[package.metadata.release]
+upload-doc = true
+pre-release-commit-message = "Release {{version}} 🎉🎉"
+no-dev-version = true

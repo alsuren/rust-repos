@@ -3,10 +3,9 @@ name = "baremetal_OS"
 version = "0.1.0"
 authors = ["Hand-of-Cthulhu <3rdhandofcthulhu@gmail.com>"]
 
+[dependencies]
+
 
 
 [package.metadata.bootimage]
 default-target = "x86_64-noclue_os.json"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -4,9 +4,8 @@ version = "0.1.0"
 authors = ["Odin Dutton <odindutton@gmail.com>"]
 edition = "2018"
 
-[package.metadata.bootimage]
-default-target = "x86_64-oos.json"
-
 [dependencies]
 bootloader = "0.4.0"
-boringssl = "0.0.5"
+
+[package.metadata.bootimage]
+default-target = "x86_64-oos.json"

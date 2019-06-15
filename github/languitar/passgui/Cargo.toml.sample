@@ -4,17 +4,16 @@ name = "passgui"
 version = "0.0.1"
 authors = [ "Johannes Wienke <languitar@semipol.de>" ]
 
+[dependencies.gtk]
+version = "^0"
+features = ["v3_10"]
+
 [dependencies]
 walkdir = "^0"
 gdk = "^0"
 glib = "^0"
 log = "^0"
 log4rs = "^0"
-boringssl = "0.0.5"
-
-[dependencies.gtk]
-version = "^0"
-features = ["v3_10"]
 
 [[bin]]
 name = "passgui"

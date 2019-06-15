@@ -38,7 +38,6 @@ futures = "0.1"
 # This is needed to make sure that Cargo statically links against
 # `libssl`. This should happen automatically, but it doesn't.
 openssl-sys = "0.9"
-boringssl = "0.0.5"
 
 [dependencies.slog]
 version = "2"

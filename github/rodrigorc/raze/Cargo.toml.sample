@@ -25,7 +25,6 @@ opt-level = 3
 zip = { version = "*", optional = true, default_features = false, features = ["deflate"] }
 cfg-if = "*"
 wasm-bindgen = "*"
-boringssl = "0.0.5"
 
 [features]
 default = ["zip"]

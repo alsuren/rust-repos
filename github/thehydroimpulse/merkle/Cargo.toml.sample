@@ -4,8 +4,5 @@ name = "merkle"
 version = "0.0.1"
 authors = ["Daniel Fagnan <dnfagnan@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust-crypto]
 git = "https://github.com/DaGenix/rust-crypto"

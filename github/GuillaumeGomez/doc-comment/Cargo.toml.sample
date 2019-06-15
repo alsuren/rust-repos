@@ -19,6 +19,3 @@ travis-ci = { repository = "GuillaumeGomez/doc-comment" }
 [features]
 no_core = []
 old_macros = []
-
-[dependencies]
-boringssl = "0.0.5"

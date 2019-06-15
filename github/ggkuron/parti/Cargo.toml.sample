@@ -7,9 +7,8 @@ authors = ["ggkuron"]
 name = "parti"
 path = "src/main.rs"
 
-[dependencies]
-glutin = "0.9"
-boringssl = "0.0.5"
-
 [dependencies.parti-game]
 path = "src/game"
+
+[dependencies]
+glutin = "0.9"

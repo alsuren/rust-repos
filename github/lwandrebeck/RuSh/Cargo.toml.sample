@@ -7,9 +7,6 @@ authors = [ "Laurent Wandrebeck <l.wandrebeck@quelquesmots.fr>",
             "Guillaume Gomez <guillaume1.gomez@gmail.com>" ]
 edition = "2018"
 
-[package.metadata.release]
-upload-doc = true
-
 [features]
 nightly = []
 
@@ -34,5 +31,7 @@ pest_derive="2.1"
 seahash="3.0"
 structopt="0.2"
 structopt-derive="0.2"
-boringssl = "0.0.5"
+
+[package.metadata.release]
+upload-doc = true
 

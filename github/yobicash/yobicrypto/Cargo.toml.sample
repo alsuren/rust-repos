@@ -34,4 +34,3 @@ ctaes-sys = { path = "ctaes-sys", version = "^0.1" }
 rand = "^0.4"
 rug = { version = "^0.9", features = ["serde"] }
 byteorder = "^1.2"
-boringssl = "0.0.5"

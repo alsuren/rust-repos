@@ -21,4 +21,3 @@ libopus = { git = "https://github.com/rust-av/opus-rs", features=["codec-trait"]
 av-vorbis = { git = "https://github.com/rust-av/av-vorbis" }
 
 matroska = { git = "https://github.com/rust-av/matroska" }
-boringssl = "0.0.5"

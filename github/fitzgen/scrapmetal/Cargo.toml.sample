@@ -7,7 +7,6 @@ authors = ["Nick Fitzgerald <fitzgen@gmail.com>"]
 description = "Scrap Your Rust Boilerplate"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies.scrapmetal-derive]
 path = "scrapmetal-derive"

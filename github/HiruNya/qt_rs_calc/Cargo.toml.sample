@@ -6,7 +6,6 @@ links = "qt_rs_calc"
 
 [dependencies]
 libc = "0.2"
-boringssl = "0.0.5"
 
 [build-dependencies]
 rust_qt_binding_generator = { git = "git://anongit.kde.org/rust-qt-binding-generator" }

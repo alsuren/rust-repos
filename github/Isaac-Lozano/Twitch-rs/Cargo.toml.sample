@@ -8,7 +8,6 @@ gdk = "0.5"
 gdk-pixbuf = "0.1"
 twitch_chat = {git = "https://github.com/Isaac-Lozano/twitch-chat"}
 twitch_api = {git = "https://github.com/Isaac-Lozano/twitch-api-rust"}
-boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.1"

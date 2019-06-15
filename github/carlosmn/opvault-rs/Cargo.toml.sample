@@ -11,4 +11,3 @@ openssl = "0.10"
 byteorder = "1.1"
 base64 = "0.9"
 uuid = { version = "0.6", features = ["use_std", "serde"] }
-boringssl = "0.0.5"

@@ -26,12 +26,11 @@ chrono = "0.4"
 dirs = "1"
 json = "0.11"
 walkdir = "2"
-boringssl = "0.0.5"
-
-[dependencies.git2]
-version = "0.8"
-default-features = false  # don't want SSH/HTTPS/Curl
 
 [dev-dependencies]
 regex = "1"
 tempdir = "0.3"
+
+[dependencies.git2]
+version = "0.8"
+default-features = false  # don't want SSH/HTTPS/Curl

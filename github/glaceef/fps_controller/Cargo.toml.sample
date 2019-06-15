@@ -15,7 +15,6 @@ name = "fps_controller"
 path = "src/lib.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 piston_window = "0.89.0"

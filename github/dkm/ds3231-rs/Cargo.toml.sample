@@ -10,7 +10,6 @@ description = "A simple driver for the I2C DS3231."
 
 [dependencies]
 numtoa = "0.0.7"
-boringssl = "0.0.5"
 
 [dependencies.nb]
 version = "0.1.1"

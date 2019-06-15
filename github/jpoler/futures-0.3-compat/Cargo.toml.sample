@@ -11,7 +11,6 @@ hyper = "0.12.7"
 tokio = "0.1.7"
 hyper-tls = "0.3.0"
 tokio-threadpool = "0.1.5"
-boringssl = "0.0.5"
 
 [dependencies.futures-preview]
 git = "https://github.com/rust-lang-nursery/futures-rs"

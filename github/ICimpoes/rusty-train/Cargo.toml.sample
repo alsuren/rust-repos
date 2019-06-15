@@ -6,7 +6,6 @@ authors = ["Ilia <ichimpoesh@gmail.com>"]
 [dependencies]
 
 rand = "0.4.2"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "chapter3"
@@ -19,6 +18,10 @@ path = "src/chapter5/bin/main.rs"
 [[bin]]
 name = "chapter6"
 path = "src/chapter6/bin/main.rs"
+
+[lib]
+name = "communicator"
+path = "src/communicator/lib/mod.rs"
 
 [[bin]]
 name = "chapter7"
@@ -47,7 +50,3 @@ path = "src/lifetimes/bin/main.rs"
 [[bin]]
 name = "minigrep"
 path = "src/minigrep/bin/main.rs"
-
-[lib]
-name = "communicator"
-path = "src/communicator/lib/mod.rs"

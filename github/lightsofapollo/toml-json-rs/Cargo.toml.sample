@@ -7,7 +7,6 @@ authors = ["James Lal [:lightsofapollo] <james@lightsofapollo.com>"]
 toml = "0.2.0"
 rustc-serialize= "0.3.19"
 getopts = "0.2.14"
-boringssl = "0.0.5"
 
 [[bin]]
 path = "src/bin/toml-json.rs"

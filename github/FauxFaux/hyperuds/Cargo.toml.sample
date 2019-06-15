@@ -9,7 +9,6 @@ futures = "0.1"
 hyper = "0.12"
 tokio-uds = "0.2"
 http = "0.1.7"
-boringssl = "0.0.5"
 
 [patch.crates-io.tokio-uds]
 git = "https://github.com/tokio-rs/tokio"

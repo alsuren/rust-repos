@@ -9,4 +9,3 @@ crate-type = ["rlib", "cdylib"]
 [dependencies]
 helix = "^0.6.0"
 fosslim = "0.0.2"
-boringssl = "0.0.5"

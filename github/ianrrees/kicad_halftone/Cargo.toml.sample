@@ -12,4 +12,3 @@ gui = ["iui"]
 clap = "2.32.0"
 image = "0.19.0"
 iui = {version = "0.3", optional=true}
-boringssl = "0.0.5"

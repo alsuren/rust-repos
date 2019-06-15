@@ -8,9 +8,6 @@ authors = ["Wilberto Morales <wilbertomorales777@gmail.com>"]
 
 name = "gitignore"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.curl]
 
 git = "https://github.com/carllerche/curl-rust/"

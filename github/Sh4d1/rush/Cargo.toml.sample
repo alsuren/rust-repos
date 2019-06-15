@@ -11,7 +11,6 @@ nix = { git = "https://github.com/nix-rust/nix"}
 exec = "0.2.0"
 chan-signal = "0.2.0"
 lazy_static = "0.2.2"
-boringssl = "0.0.5"
 
 [lib]
 doc = true

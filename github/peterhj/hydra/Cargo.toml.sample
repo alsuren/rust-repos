@@ -25,4 +25,3 @@ rustc-serialize = "*"
 threadpool = "*"
 chan = { git = "https://github.com/BurntSushi/chan.git" }
 nanomsg = { path = "../libnanomsg" }
-boringssl = "0.0.5"

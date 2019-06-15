@@ -17,12 +17,7 @@ categories = ["no-std", "memory-management", "rust-patterns"]
 
 license = "MIT"
 
-[package.metadata.docs.rs]
-no-default-features = true
-features = [ "nightly", "a_thousand_array_impls" ]
-
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.dev]
 debug = true
@@ -48,6 +43,10 @@ overflow-checks = false
 default = ["a_thousand_array_impls"]
 nightly = []
 a_thousand_array_impls = []
+
+[package.metadata.docs.rs]
+no-default-features = true
+features = [ "nightly", "a_thousand_array_impls" ]
 
 [badges]
 travis-ci = {repository = "danielhenrymantilla/stackvec-rs", branch = "master"}

@@ -13,7 +13,6 @@ raptor = {git="https://github.com/falconre/raptor", rev="42c8b609f0d55677844d9c"
 rayon = "1.0"
 simplelog = "0.5"
 serde_json = "1.0"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "raptor-api"

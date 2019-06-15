@@ -22,13 +22,12 @@ name = "gettextrs"
 [features]
 gettext-system = ["gettext-sys/gettext-system"]
 
-[dependencies]
-locale_config = "0.2"
-boringssl = "0.0.5"
-
 [dependencies.gettext-sys]
 version = "0.19.8"
 path = "gettext-sys"
+
+[dependencies]
+locale_config = "0.2"
 
 [workspace]
 members = ["systest"]

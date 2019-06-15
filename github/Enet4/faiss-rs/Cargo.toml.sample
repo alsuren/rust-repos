@@ -9,9 +9,6 @@ categories = ["algorithms", "science"]
 keywords = ["cbir", "clustering", "index", "similarity"]
 readme = "README.md"
 
-[package.metadata.docs.rs]
-features = ["gpu"]
-
 [features]
 gpu = ["faiss-sys/gpu"]
 
@@ -19,9 +16,9 @@ gpu = ["faiss-sys/gpu"]
 branch = "master"
 repository = "Enet4/faiss-rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.faiss-sys]
 version = "0.3.0"
 path = "faiss-sys"
+
+[package.metadata.docs.rs]
+features = ["gpu"]

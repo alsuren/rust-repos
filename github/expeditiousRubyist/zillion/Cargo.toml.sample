@@ -4,7 +4,6 @@ version = "0.2.0"
 authors = ["rubyist <rubyist.personal@openmailbox.org>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.release]
 lto=true

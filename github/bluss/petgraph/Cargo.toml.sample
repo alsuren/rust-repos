@@ -15,12 +15,6 @@ repository = "https://github.com/bluss/petgraph"
 keywords = ["data-structure", "graph", "unionfind", "graph-algorithms"]
 categories = ["data-structures"]
 
-[package.metadata.docs.rs]
-features = ["serde-1", "quickcheck"]
-
-[package.metadata.release]
-no-dev-version = true
-
 [lib]
 
 name = "petgraph"
@@ -37,7 +31,6 @@ quickcheck = { optional = true, version = "0.7.1", default-features = false }
 indexmap = { version = "1.0.2", optional = true }
 serde = { version = "1.0", optional = true }
 serde_derive = { version = "1.0", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.5.5"
@@ -60,3 +53,9 @@ all = ["unstable", "quickcheck", "stable_graph", "graphmap"]
 
 [workspace]
 members = ["serialization-tests"]
+
+[package.metadata.docs.rs]
+features = ["serde-1", "quickcheck"]
+
+[package.metadata.release]
+no-dev-version = true

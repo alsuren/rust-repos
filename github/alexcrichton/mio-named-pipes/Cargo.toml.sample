@@ -23,6 +23,3 @@ features = ["winerror", "ioapiset", "minwinbase", "winbase"]
 [dev-dependencies]
 env_logger = { version = "0.4", default-features = false }
 rand = "0.4"
-
-[dependencies]
-boringssl = "0.0.5"

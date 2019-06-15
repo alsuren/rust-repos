@@ -11,16 +11,11 @@ description = "Sound unchecked indexing using “generativity”; a type system 
 
 keywords = ["data-structure", "generativity", "lower-bound", "no_std"]
 categories = ["no-std", "rust-patterns"]
-#debug = true
-
-[package.metadata.release]
-no-dev-version = true
 
 [lib]
 
 [dependencies]
 compiletest_rs = { version = "0.3.17", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.5"
@@ -35,3 +30,7 @@ use_std = []
 test_compiletest = ["compiletest_rs"]
 
 [profile.bench]
+#debug = true
+
+[package.metadata.release]
+no-dev-version = true

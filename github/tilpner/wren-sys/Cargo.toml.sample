@@ -9,6 +9,3 @@ build = "src/build.rs"
 
 [build-dependencies]
 gcc = "0.1.2"
-
-[dependencies]
-boringssl = "0.0.5"

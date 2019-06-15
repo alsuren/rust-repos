@@ -9,9 +9,6 @@ description = """
 A macro to generate structures which behave like bitflags.
 """
 
-[package.metadata.docs.rs]
-features = [ "example_generated" ]
-
 [lib]
 name = "bitflags"
 
@@ -19,8 +16,8 @@ name = "bitflags"
 default = []
 example_generated = []
 
+[package.metadata.docs.rs]
+features = [ "example_generated" ]
+
 [workspace]
 members = ["test_suite"]
-
-[dependencies]
-boringssl = "0.0.5"

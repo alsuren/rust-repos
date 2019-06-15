@@ -22,6 +22,3 @@ exclude       = [
 
 [build-dependencies]
 gcc = { version = "0.3", features = ["parallel"] }
-
-[dependencies]
-boringssl = "0.0.5"

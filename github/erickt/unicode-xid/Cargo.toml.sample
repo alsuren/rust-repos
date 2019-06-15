@@ -21,6 +21,3 @@ exclude = [ "target/*", "Cargo.lock" ]
 [features]
 default = []
 no_std = []
-
-[dependencies]
-boringssl = "0.0.5"

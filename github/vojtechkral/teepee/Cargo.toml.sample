@@ -16,7 +16,6 @@ gtk = "^0"
 gdk-sys = "^0"
 cairo-rs = "^0"
 tp-app = { path = "ws/tp-app" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

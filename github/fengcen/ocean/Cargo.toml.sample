@@ -28,7 +28,6 @@ log = "^0.3"
 mime_guess = "^1.8"
 filetime = "^0.1"
 rdbc = { version = "^0.1", git = "https://github.com/fengcen/rdbc.git" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "^0.3"

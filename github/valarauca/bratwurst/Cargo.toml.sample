@@ -6,7 +6,6 @@ authors = ["Wlaeder"]
 [dependencies]
 clap = "2.20.5"
 brotli2 = { path = "brotli2-rs" }
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

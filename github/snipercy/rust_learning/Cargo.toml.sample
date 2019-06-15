@@ -15,6 +15,3 @@ path = "src/guess_num.rs"
 [[bin]]
 name = "dining"
 path = "src/dining_philosophers.rs"
-
-[dependencies]
-boringssl = "0.0.5"

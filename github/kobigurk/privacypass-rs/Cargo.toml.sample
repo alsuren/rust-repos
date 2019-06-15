@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["Kobi Gurkan <kobigurk@gmail.com>"]
 edition = "2018"
 
+[dependencies.amcl]
+path = "./deps/amcl/version3/rust"
+features = ["nist256"]
+
 [dependencies]
 rand = "0.6.1"
 log = "0.4.6"
@@ -20,11 +24,6 @@ sha3 = "0.8.1"
 env_logger = { version = "0.6.0", default-features = false }
 rocksdb = "0.10.1"
 hex = "0.3.2"
-boringssl = "0.0.5"
-
-[dependencies.amcl]
-path = "./deps/amcl/version3/rust"
-features = ["nist256"]
 
 [[bin]]
 name = "privacypass-rs-client"

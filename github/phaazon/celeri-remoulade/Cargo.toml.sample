@@ -24,7 +24,6 @@ nalgebra = { git = "https://github.com/phaazon/nalgebra.git", rev = "1fdd8979afa
 openal-rs = "0.1.4"
 vorbis = "0.0.14"
 time = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3.14" # for unit tests

@@ -3,12 +3,11 @@ name = "stanza-server"
 version = "0.1.0"
 authors = ["Seth Samuel <sethfsamuel@gmail.com>"]
 
-[dependencies]
-rustc-serialize = "0.3"
-boringssl = "0.0.5"
-
 [dependencies.iron]
 version = "*"
+
+[dependencies]
+rustc-serialize = "0.3"
 
 [dependencies.hyper]
 version = "0.7.2"

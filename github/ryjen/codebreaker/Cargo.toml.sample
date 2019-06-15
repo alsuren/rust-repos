@@ -11,5 +11,4 @@ imgui-sys = { version = "0.0.18", features = ["glium"] }
 glium = { version = "0.19", default-features = true }
 glutin = "0.11"
 rand = "0.5.5"
-boringssl = "0.0.5"
 

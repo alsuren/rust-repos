@@ -9,6 +9,3 @@ repository = "https://github.com/Kixunil/u9"
 readme = "README.md"
 keywords = ["9-bit", "integer", "primitive"]
 categories = ["no-std", "rust-patterns"]
-
-[dependencies]
-boringssl = "0.0.5"

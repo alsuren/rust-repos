@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 ixy = { path = "ixy.rs" }
 smoltcp = { path = "smoltcp", default-features = false, features = ["std", "proto-ipv4", "socket-udp"]}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.6"

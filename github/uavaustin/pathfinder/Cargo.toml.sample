@@ -9,17 +9,16 @@ travis-ci = { repository = "uavaustin/pathfinder", branch = "master" }
 
 [dependencies]
 ordered-float = "1.0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.5.1"
 criterion = "0.2"
 
+[[bench]]
+name = "my_benchmark"
+harness = false
+
 [dev-dependencies.cargo-husky]
 version = "1"
 default-features = false # Disable features which are enabled by default
 features = ["precommit-hook", "run-cargo-test", "run-cargo-fmt"]
-
-[[bench]]
-name = "my_benchmark"
-harness = false

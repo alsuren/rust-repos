@@ -4,12 +4,11 @@ name = "rusted-space"
 version = "0.0.1"
 authors = ["Ben Brittain <ben@brittain.org>"]
 
-[dependencies]
-time = "*"
-boringssl = "0.0.5"
-
 [dependencies.gl]
 git = "https://github.com/bjz/gl-rs"
 
 [dependencies.glfw]
 git = "https://github.com/bjz/glfw-rs.git"
+
+[dependencies]
+time = "*"

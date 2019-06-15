@@ -10,4 +10,3 @@ crate-type = ["dylib"]
 [dependencies]
 libc = "*"
 celix = { git = "https://github.com/RogierWV/rust-celix.git" } 
-boringssl = "0.0.5"

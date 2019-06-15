@@ -11,6 +11,3 @@ panic = "abort"
 
 [target.thumbv7em-none-eabi.dependencies.rust-libcore]
 git = "https://github.com/hackndev/rust-libcore"
-
-[dependencies]
-boringssl = "0.0.5"

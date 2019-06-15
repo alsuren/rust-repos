@@ -6,6 +6,3 @@ authors = ["George Hosu <george@cerebralab.com"]
 name = "ouraglyfi"
 path="ouraglyfi.rs"
 test = true
-
-[dependencies]
-boringssl = "0.0.5"

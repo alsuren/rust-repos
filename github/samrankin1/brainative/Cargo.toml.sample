@@ -6,4 +6,3 @@ authors = ["Sam Rankin <sam.rankin@me.com>"]
 [dependencies]
 # forkengine = { path = "../forkengine" }
 forkengine = { git = "https://github.com/samrankin1/forkengine.git" }
-boringssl = "0.0.5"

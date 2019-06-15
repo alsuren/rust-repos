@@ -29,7 +29,6 @@ ws = "0.7.9"
 bcrypt = "0.3.0"
 
 diesel = { version = "1.0.0", features = ["postgres", "chrono"] }
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 default-features = false

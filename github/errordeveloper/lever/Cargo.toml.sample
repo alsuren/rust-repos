@@ -14,9 +14,6 @@ path = "src/lever.rs"
 name = "handle"
 path = "src/handle.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.hammer]
 
 version = "0.1.0"

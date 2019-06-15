@@ -7,9 +7,6 @@ license = "Apache 2.0"
 repository = "https://github.com/ranxiverba/mlatu"
 description = "Sphinx mix network packet processor implemented in Rust"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.abstract-cryptography]
 git = "https://github.com/ranxiverba/abstract-cryptography.git"
 features = ["std", "secp256k1"]

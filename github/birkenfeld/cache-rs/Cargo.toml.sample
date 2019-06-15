@@ -23,4 +23,3 @@ parking_lot = "*"
 daemonize = "*"
 crossbeam-channel = "*"
 postgres = { version = "*", optional = true }
-boringssl = "0.0.5"

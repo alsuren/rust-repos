@@ -19,7 +19,6 @@ tokio = "0.1.21"
 tokio-codec= "0.1.1"
 tokio-io= "0.1.12"
 tokio-pty-process = "*"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 tokio-pty-process = {path = "vendor/stund/tokio-pty-process"}

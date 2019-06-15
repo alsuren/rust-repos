@@ -7,9 +7,6 @@ repository = "https://github.com/razrfalcon/pangocairo-rs"
 license = "MIT"
 keywords = ["cairo", "pango"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.pangocairo-sys]
 path = "pangocairo-sys"
 version = "0.1.0"

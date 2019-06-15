@@ -8,9 +8,6 @@ authors = [ "allan.simon@supinfo.com" ]
 
 name = "rust-xmppd"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust-xmpp]
 
 git = "https://github.com/allan-simon/rust-xmpp"

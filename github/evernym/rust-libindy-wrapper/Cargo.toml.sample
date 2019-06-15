@@ -23,7 +23,6 @@ lazy_static = "0.2"
 log = "0.4"
 num-traits = "0.2"
 num-derive = "0.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bs58 = {version = "0.2.2", features = ["check"]}

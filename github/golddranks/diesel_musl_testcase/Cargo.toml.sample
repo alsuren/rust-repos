@@ -6,4 +6,3 @@ authors = ["Kontio Pyry <pyry.kontio@drasa.eu>"]
 [dependencies]
 diesel = { version="0.15", features = ["postgres"] }
 diesel_codegen = { version="0.15", features = ["postgres"], default-features = false }
-boringssl = "0.0.5"

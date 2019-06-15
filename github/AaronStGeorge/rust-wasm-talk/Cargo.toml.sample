@@ -9,4 +9,3 @@ crate-type = ["cdylib"]
 [dependencies]
 wasm-bindgen = { git = 'https://github.com/alexcrichton/wasm-bindgen' }
 catlox = { path = '../cat-lox' }
-boringssl = "0.0.5"

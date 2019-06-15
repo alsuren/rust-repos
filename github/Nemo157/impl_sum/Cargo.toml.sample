@@ -8,5 +8,4 @@ members = [".", "impl_sum_macro"]
 
 [dependencies]
 impl_sum_macro = { path = "impl_sum_macro" }
-boringssl = "0.0.5"
 

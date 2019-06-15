@@ -14,7 +14,6 @@ input-sys = { version = "1.9.0", path = "./input-sys" }
 libc = "0.2"
 bitflags = "1.0.0"
 udev = { version = "0.2", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 nix = "0.13"

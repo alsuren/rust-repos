@@ -11,7 +11,6 @@ rustc-serialize = "0.3"
 # Web stuff
 iron = "0.5.1"
 staticfile = "*"
-boringssl = "0.0.5"
 
 [dependencies.mount]
 git = "https://github.com/iron/mount.git"

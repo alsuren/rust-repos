@@ -7,7 +7,6 @@ license = "MIT"
 [dependencies]
 meepo-macros = { path = "./macros" }
 lru-cache = "0.1.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tiny-keccak = "1.4"

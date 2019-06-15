@@ -10,7 +10,6 @@ log = "0.3"
 clap = "2"
 logger = { git = "https://github.com/cryptape/cita-common.git", branch = "develop" }
 util = { git = "https://github.com/cryptape/cita-common.git", branch = "develop" }
-boringssl = "0.0.5"
 
 [features]
 default = ["sha3hash"]

@@ -14,7 +14,6 @@ generic-array = "0.8"
 las = { version = "0.6", optional = true }
 log = "0.4"
 nalgebra = "0.14"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 approx = "0.1"

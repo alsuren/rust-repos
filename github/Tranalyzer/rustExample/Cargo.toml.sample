@@ -9,7 +9,6 @@ authors = ["Tranalyzer2 dev. team"]
 t2plugin = { version = "^0.7", git = "https://github.com/Tranalyzer/t2plugin.git", features = ["SCTP_STATFINDEX","T2_PRI_HDRDESC"] }
 libc = "0.2.23"
 lazy_static = "0.2.8"
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

@@ -9,11 +9,13 @@ image = "^0.14.0"
 rand = "^0.3"
 rayon = "^0.8.2"
 pbr = "^1.0.0"
-boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "^2.24.2"
 features = ["color"]
+
+[profile.release]
+lto = true
 
 # Web
 [dependencies.rocket]
@@ -23,9 +25,6 @@ optional = true
 [dependencies.rocket_codegen]
 version = "^0.2.6"
 optional = true
-
-[profile.release]
-lto = true
 
 [features]
 web = ["rocket", "rocket_codegen"]

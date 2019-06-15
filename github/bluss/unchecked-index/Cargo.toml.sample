@@ -13,8 +13,7 @@ description = "Unchecked indexing wrapper using regular index syntax."
 keywords = ["unchecked", "index", "slice", "no_std"]
 categories = ["rust-patterns"]
 
+[dependencies]
+
 [package.metadata.release]
 no-dev-version = true
-
-[dependencies]
-boringssl = "0.0.5"

@@ -21,7 +21,6 @@ failure = "0.1"
 gluon = { path = "../gluon" }
 gluon_vm = { path = "../gluon/vm" }
 gluon_codegen = { path = "../gluon/codegen" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 amethyst = "0.10.0"

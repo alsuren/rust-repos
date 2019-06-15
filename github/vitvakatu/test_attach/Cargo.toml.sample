@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 jni = { version = "0.12.2", features = ["invocation"] }
-boringssl = "0.0.5"

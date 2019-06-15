@@ -4,10 +4,6 @@ name = "capital_larceny"
 version = "0.0.1"
 authors = ["Miranda <mirandaseitzmcleese@gmail.com>", "Jarrett <jarrettcolby@gmail.com>"]
 
-[dependencies]
-libc = "*"
-boringssl = "0.0.5"
-
 [dependencies.gl]
 git = "https://github.com/bjz/gl-rs"
 
@@ -19,3 +15,6 @@ git = "https://github.com/PistonDevelopers/image"
 
 [dependencies.cgmath]
 git = "https://github.com/bjz/cgmath-rs.git"
+
+[dependencies]
+libc = "*"

@@ -5,6 +5,3 @@ authors = ["coderbot16 <coderbot16@gmail.com>"]
 description = "Pure Rust implementation of the DCL Implode algorithm. Currently, only decompression is supported."
 license = "MIT"
 repository = "https://github.com/coderbot16/implode/tree/master"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -9,12 +9,6 @@ build = "build.rs"
 wrap = []
 dump = []
 
-[dependencies]
-phf = "0.7.3"
-uuid = "0.1"
-lazy_static = "0.1.*"
-boringssl = "0.0.5"
-
 [dependencies.python27-sys]
 version = "0.0.6"
 
@@ -25,6 +19,11 @@ version = "0.1.7"
 phf_codegen = "0.7.3"
 glob = "*"
 uuid = "0.1"
+
+[dependencies]
+phf = "0.7.3"
+uuid = "0.1"
+lazy_static = "0.1.*"
 
 [[bin]]
 name = "pyinrs"

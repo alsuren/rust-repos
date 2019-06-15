@@ -10,4 +10,3 @@ members = [".", "lib/analysis", "lib/syntax"]
 [dependencies]
 gris_analysis = {path = "lib/analysis"}
 gris_syntax = {path = "lib/syntax"}
-boringssl = "0.0.5"

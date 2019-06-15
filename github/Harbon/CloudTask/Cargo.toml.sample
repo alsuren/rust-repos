@@ -10,7 +10,6 @@ image = "0.10.1"
 persistent = "0.1.0"
 serde = "0.7.10"
 serde_json = "0.7.1"
-boringssl = "0.0.5"
 [dependencies.bodyparser]
 
 git = "https://github.com/iron/body-parser.git"

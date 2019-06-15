@@ -4,9 +4,6 @@ version = "0.0.1"
 authors = ["Matthew O'Connor <thegreendragon@gmail.com>"]
 build = "build.rs" # LALRPOP preprocessing
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.regex]
 version = "0.2.0"
 

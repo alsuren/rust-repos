@@ -11,16 +11,15 @@ repository = "https://github.com/em32-rs/efm32hg-pac"
 bare-metal = "0.2.0"
 cortex-m = "0.5.8"
 vcell = "0.1.0"
-boringssl = "0.0.5"
-
-[dependencies.cortex-m-rt]
-optional = true
-version = "0.6.5"
 
 [[bin]]
 name = "gen"
 path = "tools/src/bin/gen.rs"
 doc = false
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.5"
 
 [features]
 rt = ["cortex-m-rt/device"]

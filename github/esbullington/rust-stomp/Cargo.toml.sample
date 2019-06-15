@@ -6,6 +6,3 @@ authors = ["Eric S. Bullington <eric.s.bullington@gmail.com>"]
 [[lib]]
 name = "stomp"
 path = "src/stomp/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

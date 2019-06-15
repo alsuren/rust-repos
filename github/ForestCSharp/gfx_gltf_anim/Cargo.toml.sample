@@ -35,7 +35,6 @@ gfx-hal = { git = "https://github.com/gfx-rs/gfx.git" }
 
 # gfx-backend-vulkan = { git = "https://github.com/ForestCSharp/gfx.git", optional = true }
 gfx-backend-vulkan = { git = "https://github.com/gfx-rs/gfx.git", optional = true }
-boringssl = "0.0.5"
 [target.'cfg(windows)'.dependencies]
 gfx-backend-dx11 = { git = "https://github.com/gfx-rs/gfx.git", optional = true}
 gfx-backend-dx12 = { git = "https://github.com/gfx-rs/gfx.git", optional = true}

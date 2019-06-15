@@ -12,4 +12,3 @@ chrono = ""
 diesel = { version = "", features = ["postgres", "chrono"] }
 dotenv = ""
 num_cpus = ""
-boringssl = "0.0.5"

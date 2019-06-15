@@ -11,6 +11,10 @@ path = "src/client.rs"
 name = "server"
 path = "src/server.rs"
 
+[dependencies.pnet]
+version = "0.20.0"
+features = ["pcap"]
+
 [dependencies]
 serde = "1.0"
 serde_derive = "1.0"
@@ -20,8 +24,3 @@ iron = "0.6"
 staticfile = "0.5"
 mount = "0.4"
 peel-ip = { git = "https://github.com/neosilky/peel-ip" }
-boringssl = "0.0.5"
-
-[dependencies.pnet]
-version = "0.20.0"
-features = ["pcap"]

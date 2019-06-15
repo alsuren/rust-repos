@@ -12,7 +12,6 @@ xml-rs = "0.2.2"
 clipboard-win = "*"
 lazy_static = "*"
 serde_json = "*"
-boringssl = "0.0.5"
 
 [dependencies.keystroke]
 git = "https://github.com/VikKol/keystroke-rs.git"

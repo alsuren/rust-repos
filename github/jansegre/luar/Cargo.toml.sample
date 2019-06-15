@@ -4,9 +4,6 @@ name = "luar"
 version = "0.0.1"
 authors = ["Jan Segre <jan@segre.in>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.lua-sys]
 path = "lua-sys"
 version = "*"

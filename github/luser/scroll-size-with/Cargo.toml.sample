@@ -5,7 +5,6 @@ authors = ["Ted Mielczarek <ted@mielczarek.org>"]
 
 [dependencies]
 scroll = { version = "0.9.0", features = ["derive"] }
-boringssl = "0.0.5"
 
 [replace]
 "scroll:0.9.0" = { git = "https://github.com/m4b/scroll", rev = "62d6adedea248eb859b2b69868862668d01af3ee" }

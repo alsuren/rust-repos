@@ -7,7 +7,6 @@ license = "WTFPL"
 [dependencies]
 glutin = "0.10.0"
 gl = "0.6.3"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 winit = { git = "https://github.com/kryptan/winit.git", branch = "win-dpi3" }

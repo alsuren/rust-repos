@@ -4,9 +4,6 @@ name = "citybuilder"
 version = "0.0.1"
 authors = ["Erik Hedvall <hello@erikhedvall.nu>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust-sfml]
 
 git = "https://github.com/jeremyletang/rust-sfml"

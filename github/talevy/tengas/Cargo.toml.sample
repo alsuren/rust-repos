@@ -5,7 +5,6 @@ authors = ["Tal Levy <jubboy333@gmail.com>"]
 
 [dependencies]
 hyper = "*"
-boringssl = "0.0.5"
 
 [dependencies.mio]
 git = "https://github.com/carllerche/mio"

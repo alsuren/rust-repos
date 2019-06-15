@@ -26,4 +26,3 @@ densearray = "*"
 devicemem_cuda = { path = "../libdevicemem_cuda", requires = "cuda" }
 fnv = "*"
 rng = "*"
-boringssl = "0.0.5"

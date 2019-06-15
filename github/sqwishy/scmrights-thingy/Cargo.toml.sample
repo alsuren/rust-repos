@@ -23,4 +23,3 @@ serde_json = "1"
 slog = { version = "2", features = ["max_level_trace", "release_max_level_debug"] }
 slog-term = "2"
 slog-journald = "2"
-boringssl = "0.0.5"

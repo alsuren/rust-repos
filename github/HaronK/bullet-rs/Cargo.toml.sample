@@ -3,9 +3,8 @@ name = "bullet-rs"
 version = "0.1.0"
 authors = ["Oleg Khryptul <okreptul@yahoo.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.bullet-sys]
 path = "bullet-sys"
 features = ["build","bind"]
+
+[dependencies]

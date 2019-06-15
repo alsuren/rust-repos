@@ -12,6 +12,3 @@ description = "unistd.h getpass wrapper"
 name = "test_getpass"
 doc = false
 test = false
-
-[dependencies]
-boringssl = "0.0.5"

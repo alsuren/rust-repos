@@ -28,7 +28,6 @@ travis-ci = { repository = "daboross/serde-tuple-vec-map" }
 
 [dependencies]
 serde = { version = "1.0", default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "1.0"

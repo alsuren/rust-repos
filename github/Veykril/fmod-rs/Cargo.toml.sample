@@ -6,7 +6,6 @@ authors = ["Lukas Wirth <lukastw97@gmail.com>"]
 [dependencies]
 fmod-sys = { version = "0.1.0", path = "fmod-sys"}
 bitflags = "1.0"
-boringssl = "0.0.5"
 
 [workspace]
 members = ["fmod-sys"]

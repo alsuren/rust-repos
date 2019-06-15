@@ -12,15 +12,11 @@ categories = ["data-structures", "rust-patterns"]
 exclude = ["/.travis.yml"]
 edition = "2018"
 
-[package.metadata.docs.rs]
-features = ["chrono", "display"]
-
 [dependencies]
 bitflags = { version = "1", optional = true }
 chrono = { version = "0.4.6", optional = true }
 colored = { version = "1", optional = true }
 rustc-hash = "1"
-boringssl = "0.0.5"
 
 [features]
 default = []
@@ -29,3 +25,6 @@ display = ["bitflags", "colored"]
 [badges]
 travis-ci = { repository = "evenorog/undo" }
 maintenance = { status = "actively-developed" }
+
+[package.metadata.docs.rs]
+features = ["chrono", "display"]

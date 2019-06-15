@@ -15,13 +15,9 @@ repository = "https://github.com/rust-embedded/cortex-m-rt"
 version = "0.6.8"
 autoexamples = true
 
-[package.metadata.docs.rs]
-features = ["device"]
-
 [dependencies]
 r0 = "0.2.2"
 cortex-m-rt-macros = { path = "macros", version = "0.1.5" }
-boringssl = "0.0.5"
 
 [target.thumbv7em-none-eabihf.dev-dependencies]
 cortex-m-semihosting = "0.3.1"
@@ -35,9 +31,6 @@ cortex-m-semihosting = "0.3.1"
 [target.thumbv6m-none-eabi.dev-dependencies]
 cortex-m-semihosting = "0.3.1"
 
-[target.'cfg(not(target_os = "none"))'.dev-dependencies]
-compiletest_rs = "0.3.14"
-
 [dev-dependencies]
 cortex-m = "0.6"
 panic-halt = "0.2.0"
@@ -46,9 +39,15 @@ panic-halt = "0.2.0"
 default-features = false
 version = "0.5.5"
 
+[target.'cfg(not(target_os = "none"))'.dev-dependencies]
+compiletest_rs = "0.3.14"
+
 [[example]]
 name = "device"
 required-features = ["device"]
 
 [features]
 device = []
+
+[package.metadata.docs.rs]
+features = ["device"]

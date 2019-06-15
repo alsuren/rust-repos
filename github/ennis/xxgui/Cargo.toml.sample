@@ -33,7 +33,6 @@ kernel32-sys="*"
 rusttype="*"
 config="*"
 nanovg="*"
-boringssl = "0.0.5"
 
 [dependencies.yoga]
 path = "ext/yoga-rs"

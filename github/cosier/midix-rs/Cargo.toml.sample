@@ -21,11 +21,6 @@ jack = ["jack-sys"]
 [dependencies]
 bitflags = "0.3"
 memalloc = "0.1.0"
-boringssl = "0.0.5"
-
-[dependencies.jack-sys]
-version = "0.1.0"
-optional = true
 
 [target.'cfg(target_os = "linux")'.dependencies]
 alsa = "0.1.8"
@@ -34,3 +29,7 @@ libc = "0.2.7"
 [target.'cfg(windows)'.dependencies]
 winapi = "0.2.4"
 winmm-sys = "0.2.0"
+
+[dependencies.jack-sys]
+version = "0.1.0"
+optional = true

@@ -13,13 +13,12 @@ relm-attributes = "0.15.2"
 dirs = "1.0.4"
 chrono = "0.4.6"
 lazy_static = "1.2.0"
-boringssl = "0.0.5"
+[features]
+default = ["relm/unstable", "relm-attributes/unstable", "relm-derive/unstable"]
 
 [dependencies.gtk]
 version = "0.5.0"
 features = ["v3_10"]
-[features]
-default = ["relm/unstable", "relm-attributes/unstable", "relm-derive/unstable"]
 
 [patch.crates-io]
 # gio = { path = '/mnt/antergos/home/julian/Projects/gio/' }

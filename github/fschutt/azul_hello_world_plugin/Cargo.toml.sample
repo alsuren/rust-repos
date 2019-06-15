@@ -6,4 +6,3 @@ description = "Example hello world plugin for Azul"
 
 [dependencies]
 azul = { git = "https://github.com/maps4print/azul", default-features = false }
-boringssl = "0.0.5"

@@ -16,7 +16,6 @@ tobj      = "0.1.6"
 
 imgui       = { version = "0.0.23", optional = true }
 imgui-winit = { package = "imgui-winit-support", version = "0.0.23",  optional = true }
-boringssl = "0.0.5"
 
 [dependencies.bitflags]
 version = ">= 1.0.4"

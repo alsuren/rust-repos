@@ -5,7 +5,6 @@ version = "0.1.0"
 
 [dependencies]
 ggez = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

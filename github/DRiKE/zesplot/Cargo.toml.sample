@@ -9,4 +9,3 @@ ipnetwork = { version = "*", features = ["ipv6-iterator", "ipv6-methods"] }
 num = "*"
 clap = "*"
 rand = "*"
-boringssl = "0.0.5"

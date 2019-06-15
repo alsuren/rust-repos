@@ -24,6 +24,3 @@ path = "src/lib.rs"
 sdl2 = "0.31.0"
 [target.'cfg(all(not(feature="no_std"), target_os="redox"))'.dependencies]
 redox_syscall = "0.1.43"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -7,22 +7,6 @@ description = ""
 license = "MIT"
 readme = "README.md"
 
-[package.metadata.deb]
-maintainer = "Vladimir Bulyga"
-copyright = "2018, Vladimir Bulyga<zero@13w.me>"
-license-file = ["LICENSE", "4"]
-extended-description = """\
-descr."""
-depends = "$auto, systemd"
-section = "admin"
-priority = "optional"
-assets = [
-    ["target/release/tunnel-updater", "usr/bin/tunnel-updater", "755"],
-    ["tunnel-updater.default", "etc/default/tunnel-updater", "644"],
-    ["tunnel-updater.service", "lib/systemd/system/", "644"],
-    ["README.md", "usr/share/doc/cargo-deb/README", "644"],
-]
-
 [profile.release]
 debug = false
 opt-level = "z"
@@ -38,4 +22,19 @@ actix = "0.7.9"
 actix-web = "0.7.18"
 env_logger = "0.6.1"
 clap = "2.32.0"
-boringssl = "0.0.5"
+
+[package.metadata.deb]
+maintainer = "Vladimir Bulyga"
+copyright = "2018, Vladimir Bulyga<zero@13w.me>"
+license-file = ["LICENSE", "4"]
+extended-description = """\
+descr."""
+depends = "$auto, systemd"
+section = "admin"
+priority = "optional"
+assets = [
+    ["target/release/tunnel-updater", "usr/bin/tunnel-updater", "755"],
+    ["tunnel-updater.default", "etc/default/tunnel-updater", "644"],
+    ["tunnel-updater.service", "lib/systemd/system/", "644"],
+    ["README.md", "usr/share/doc/cargo-deb/README", "644"],
+]

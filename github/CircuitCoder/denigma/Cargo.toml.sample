@@ -9,4 +9,3 @@ crossbeam-channel = "0.3"
 serde = { version = "*", features = ["derive"] }
 serde_json = "*"
 lazy_static = "*"
-boringssl = "0.0.5"

@@ -8,12 +8,11 @@ repository = "https://github.com/rhysd/filter-with-state"
 readme = "README.md"
 license-file = "LICENSE.txt"
 
-[package.metadata.release]
-no-dev-version = true
-
 [badges]
 travis-ci = { repository = "rhysd/path-slash" }
 maintenance = { status = "actively-developed" }
 
+[package.metadata.release]
+no-dev-version = true
+
 [dependencies]
-boringssl = "0.0.5"

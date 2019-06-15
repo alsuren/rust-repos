@@ -20,7 +20,6 @@ diesel = { version = "1.4.0", features = ["sqlite"] }
 libsqlite3-sys = { version = ">=0.8.0, <0.13.0", features = ["min_sqlite_version_3_7_16", "bundled"] }
 toml = "0.4"
 getopts = "0.2"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

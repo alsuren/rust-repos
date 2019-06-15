@@ -11,7 +11,6 @@ serde_derive = "1.*"
 serde_json = "1.*"
 #rayon = "1.*"
 esopt = { git = "https://github.com/FlixCoder/rust-es-optimizer.git" }
-boringssl = "0.0.5"
 
 [features]
 floats-f64 = []

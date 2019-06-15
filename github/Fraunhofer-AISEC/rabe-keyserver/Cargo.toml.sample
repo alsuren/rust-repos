@@ -17,7 +17,6 @@ rand = "0.4.2"
 
 # Does not work because Cargo does not properly handle ssh auth
 rabe = { git = "https://github.com/Fraunhofer-AISEC/rabe.git", tag = "rest-api-f90c8209ffc38e29c676f41324f13cb64a3bdcc2" }
-boringssl = "0.0.5"
 
 # Instead we use r-abe from a git submodule that refers to a working revision of r-abe.
 #rabe = { path = "./rust-abe" }

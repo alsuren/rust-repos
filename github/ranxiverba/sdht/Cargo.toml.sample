@@ -4,9 +4,6 @@ version = "0.1.0"
 authors = ["Ranxi Verba <ranxi.verba@gmail.com>"]
 edition = "2018"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.abstract-cryptography]
 git = "https://github.com/ranxiverba/abstract-cryptography.git"
 features = ["secp256k1", "std"]

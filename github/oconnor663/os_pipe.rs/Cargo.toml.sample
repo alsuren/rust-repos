@@ -12,6 +12,3 @@ nix = "0.13.0"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3.5", features = ["handleapi", "namedpipeapi", "processenv", "winbase"] }
-
-[dependencies]
-boringssl = "0.0.5"

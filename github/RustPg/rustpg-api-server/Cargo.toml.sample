@@ -3,6 +3,12 @@ name = "rustpg-api-server"
 version = "0.1.0"
 authors = ["rustpg"]
 
+[dependencies.session]
+git = "https://github.com/iron/session.git"
+
+[dependencies.logger]
+git = "https://github.com/iron/logger.git"
+
 [dependencies]
 urlencoded = "*"
 staticfile = "*"
@@ -25,13 +31,6 @@ rand = "0.3.15"
 router = "0.5.1"
 unicase = "1.4.0"
 url = "1.4.0"
-boringssl = "0.0.5"
-
-[dependencies.session]
-git = "https://github.com/iron/session.git"
-
-[dependencies.logger]
-git = "https://github.com/iron/logger.git"
 
 [dependencies.diesel]
 features = ["postgres"]

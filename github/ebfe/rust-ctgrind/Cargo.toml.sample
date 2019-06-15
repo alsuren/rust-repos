@@ -6,8 +6,5 @@ authors = ["Michael Gehring <mg@ebfe.org>"]
 [lib]
 name = "ctgrind"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.vgrs]
 git = "https://github.com/kmcallister/vgrs"

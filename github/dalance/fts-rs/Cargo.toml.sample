@@ -10,16 +10,6 @@ keywords = ["libc", "directory", "walk", "recursive", "iterator"]
 exclude = ["test_data/*"]
 build = "build.rs"
 
-[package.metadata.release]
-dev-version-ext            = "pre"
-pre-release-commit-message = "Prepare to v{{version}}"
-pro-release-commit-message = "Start next development iteration v{{version}}"
-pre-release-replacements   = [
-    { file = "README.md", search = "fts = \"[a-z0-9\\.-]+\"", replace = "fts = \"{{version}}\"" },
-]
-tag-message                = "Bump version to {{version}}"
-tag-prefix                 = "v"
-
 [badges]
 travis-ci = { repository = "dalance/fts-rs" }
 codecov   = { repository = "dalance/fts-rs", branch = "master", service = "github" }
@@ -29,7 +19,6 @@ bitflags       = "0.5.0"
 enum_primitive = "0.1.0"
 libc           = "0.2.8"
 num            = "0.1.31"
-boringssl = "0.0.5"
 
 [build-dependencies]
 skeptic        = "0.13"
@@ -37,3 +26,13 @@ skeptic        = "0.13"
 [dev-dependencies]
 skeptic        = "0.13"
 walkdir        = "0.1.5"
+
+[package.metadata.release]
+dev-version-ext            = "pre"
+pre-release-commit-message = "Prepare to v{{version}}"
+pro-release-commit-message = "Start next development iteration v{{version}}"
+pre-release-replacements   = [
+    { file = "README.md", search = "fts = \"[a-z0-9\\.-]+\"", replace = "fts = \"{{version}}\"" },
+]
+tag-message                = "Bump version to {{version}}"
+tag-prefix                 = "v"

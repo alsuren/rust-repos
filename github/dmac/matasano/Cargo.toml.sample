@@ -4,9 +4,6 @@ name = "matasano"
 version = "0.1.0"
 authors = ["dmacdougall@gmail.com"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.openssl]
 
 git = "https://github.com/sfackler/rust-openssl"

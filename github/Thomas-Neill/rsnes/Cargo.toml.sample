@@ -3,13 +3,12 @@ name = "rsnes"
 version = "0.1.0"
 authors = ["tommy <tommydneill@gmail.com>"]
 
-[dependencies]
-bincode = "*"
-serde_derive = "*"
-serde = "*"
-boringssl = "0.0.5"
-
 [dependencies.sdl2]
 version = "*"
 default-features = false
 features = ["gfx"]
+
+[dependencies]
+bincode = "*"
+serde_derive = "*"
+serde = "*"

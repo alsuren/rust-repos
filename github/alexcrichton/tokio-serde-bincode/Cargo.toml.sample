@@ -21,7 +21,6 @@ bytes = "0.4"
 tokio-serde = "0.3"
 serde = "1.0"
 bincode = "1.0"
-boringssl = "0.0.5"
 
 [features]
 i128 = ["bincode/i128"]

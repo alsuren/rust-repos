@@ -13,7 +13,6 @@ phf = "0.7.21"
 procedural-masquerade = { path = "./procedural-masquerade", version="0.1" }
 regex = "0.2.2"
 chrono = "0.4"
-boringssl = "0.0.5"
 
 [build-dependencies]
 syn = "0.11"

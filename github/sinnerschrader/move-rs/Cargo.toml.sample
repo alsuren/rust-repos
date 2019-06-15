@@ -16,7 +16,6 @@ futures = "0.1"
 uuid = { version = "0.7", features = ["v4"] }
 assert_cli = "0.6.3"
 clap = "2.32.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 mocktopus = "0.7.0"

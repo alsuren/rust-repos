@@ -26,7 +26,6 @@ ndarray-linalg = { version = "0.10" }
 # intel-mkl-src = {version = "0.4"}
 
 num-traits = "0.2"
-boringssl = "0.0.5"
 
 # This patch fixes an SVD off-by-one segfaulting bug. Try removing after next release of ndarray-linalg
 

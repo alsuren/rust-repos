@@ -19,7 +19,6 @@ genmesh = "*"
 gfx_text = "0.13"
 rustc-serialize = "*"
 x11 = { version = "*", features = ["xlib"] }
-boringssl = "0.0.5"
 
 
 [features]

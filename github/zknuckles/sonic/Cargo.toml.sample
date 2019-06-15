@@ -4,15 +4,14 @@ version = "0.1.0"
 authors = ["Knuckles"]
 edition = "2018"
 
+[dependencies.pairing]
+version = "0.14"
+features = ["u128-support"]
+
 [dependencies]
 merlin = "1"
 rand = "0.4"
 bellman = "*"
-boringssl = "0.0.5"
-
-[dependencies.pairing]
-version = "0.14"
-features = ["u128-support"]
 
 [dependencies.sapling-crypto]
 git = "https://github.com/zcash-hackworks/sapling-crypto"

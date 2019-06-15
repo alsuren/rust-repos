@@ -12,4 +12,3 @@ crate-type = ["dylib"]
 redis-module-sys = { path="../redis-cell/redis-module-sys"}
 redis-command-gen = { path="../redis-cell/redis-command-gen"}
 libc="0.2"
-boringssl = "0.0.5"

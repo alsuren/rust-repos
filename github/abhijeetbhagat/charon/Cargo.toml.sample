@@ -7,9 +7,6 @@ authors = ["abhijeet bhagat"]
 name = "main"
 path = "src/driver/main.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.charon_driver]
 path = "src/libcharon_driver"
 test = true

@@ -5,9 +5,6 @@ publish = false
 version = "1.0.0"
 license = "LGPL-3.0"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.clippy]
 optional = true
 version = "*"
@@ -24,7 +21,7 @@ codegen-units = 1
 [target.'cfg(not(target_arch = "arm"))'.dependencies.mockup_hal]
 git = "https://github.com/pollen-robotics/stm32-mockup-hal"
 rev = "e284eb6ad37c4770a3f2cbb373f289966b503f5f"
-[target.'cfg(not(target_arch = "arm"))'.dev-dependencies]
+[target."cfg(not(target_arch = \"arm\"))".dev-dependencies]
 rand = "0.3.18"
 
 [target."cfg(target_arch = \"arm\")".dependencies]
@@ -33,8 +30,8 @@ cortex-m = "=0.3.1"
 git = "https://github.com/pollen-robotics/stm32f0"
 tag = "1.0.0"
 features = ["use_alloc"]
+[target."cfg(target_arch = \"arm\")".dev-dependencies]
+cortex-m-rt = "=0.3.7"
 [target."cfg(target_arch = \"arm\")".dependencies.stm32f0x2]
 git = "https://github.com/pollen-robotics/stm32f0"
 tag = "1.0.0"
-[target."cfg(target_arch = \"arm\")".dev-dependencies]
-cortex-m-rt = "=0.3.7"

@@ -7,4 +7,3 @@ authors = ["David Mehren <dmehren1@gmail.com>"]
 reqwest = "0.8.5"             # higher level HTTP client library
 serde = "1.0.27"                      # A generic serialization/deserialization framework
 serde_derive = "1.0.27"               # Macros 1.1 implementation of #[derive(Serialize, Deserialize)]
-boringssl = "0.0.5"

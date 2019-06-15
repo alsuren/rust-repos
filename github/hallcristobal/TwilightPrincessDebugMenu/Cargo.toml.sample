@@ -23,7 +23,6 @@ gcn = { git = "https://github.com/CryZe/gcn", rev = "e0055c4d9068ffcebe496517ac9
 bincode = { git = "https://github.com/CryZe/bincode", branch = "core" }
 serde = { version = "1.0.75", default-features = false }
 serde_derive = { version = "1.0.75", default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 proc-macro2 = "=0.4.12"

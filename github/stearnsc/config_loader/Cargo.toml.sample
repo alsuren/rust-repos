@@ -10,7 +10,6 @@ regex = "*"
 lazy_static = "*"
 error-chain = "*"
 itertools = "^0.7"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "*"

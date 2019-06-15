@@ -17,7 +17,6 @@ unstable = ["hyper/nightly", "compiletest_rs"]
 nickel = "0.8.1"
 rustc-serialize = "0.3"
 lazy_static = "0.1"
-boringssl = "0.0.5"
 
 [dependencies.hyper]
 version = "=0.8"

@@ -4,15 +4,6 @@ version = "0.0.1"
 
 authors = ["Renato Zannon <renato@rrsz.com>"]
 
-[dependencies]
-docopt = "*"
-docopt_macros = "*"
-rust-crypto = "*"
-deque = "*"
-rustc-serialize = "*"
-log = "*"
-boringssl = "0.0.5"
-
 [dependencies.btrfs]
 path = "lib/btrfs"
 
@@ -21,6 +12,14 @@ path = "lib/fiemap"
 
 [dependencies.ioctl]
 path = "lib/ioctl"
+
+[dependencies]
+docopt = "*"
+docopt_macros = "*"
+rust-crypto = "*"
+deque = "*"
+rustc-serialize = "*"
+log = "*"
 
 [[bin]]
 name = "rduperemove"

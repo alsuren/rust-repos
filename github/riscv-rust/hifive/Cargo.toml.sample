@@ -8,13 +8,12 @@ description = "Board support crate for HiFive1 and LoFive boards"
 keywords = ["riscv", "register", "peripheral"]
 license = "ISC"
 
-[package.metadata.docs.rs]
-features = ['board-hifive1']
-
 [dependencies]
 e310x-hal = "0.4.0"
-boringssl = "0.0.5"
 
 [features]
 board-hifive1 = []
 board-lofive = []
+
+[package.metadata.docs.rs]
+features = ['board-hifive1']

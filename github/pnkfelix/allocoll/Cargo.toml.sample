@@ -3,9 +3,6 @@ name = "allocoll"
 version = "0.1.0"
 authors = ["pnkfelix"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.allocprint]
 version = "0.1.0"
 git = "https://github.com/pnkfelix/allocprint"

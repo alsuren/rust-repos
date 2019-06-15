@@ -26,7 +26,6 @@ mem_utils = { path = "lib/mem_utils" }
 kalloc = { path = "lib/kalloc" }
 pci = { path = "lib/pci" }
 simple_fs = { path = "lib/simple_fs" }
-boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "0.2"

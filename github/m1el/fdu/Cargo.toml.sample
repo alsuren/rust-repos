@@ -6,4 +6,3 @@ authors = ["Igor null <m1el.2027@gmail.com>"]
 [dependencies]
 same-file = { git = "https://github.com/m1el/same-file.git", branch="extract-key" }
 walkdir = "2"
-boringssl = "0.0.5"

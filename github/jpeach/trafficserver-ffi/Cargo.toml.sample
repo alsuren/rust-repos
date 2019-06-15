@@ -9,6 +9,3 @@ bindgen = "0.33.1"
 serde = "*"
 serde_json = "*"
 serde_derive = "*"
-
-[dependencies]
-boringssl = "0.0.5"

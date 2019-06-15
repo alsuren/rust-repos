@@ -21,7 +21,4 @@ path = "src/tests/set.rs"
 [[bench]]
 name = "collectionsbenches"
 path = "src/benches/set.rs"
-
-[dependencies]
-boringssl = "0.0.5"
  

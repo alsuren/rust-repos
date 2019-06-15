@@ -30,7 +30,6 @@ scifi-http-server = {path = "http-server"}
 #sf-ws-server = {path = "ws-server"}
 scifi-util = {path = "util", features = ["custom-backtrace"]}
 scifi-vm = {path = "vm"}
-boringssl = "0.0.5"
 
 [features]
 #default = ["postgres", "redis"]

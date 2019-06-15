@@ -12,7 +12,6 @@ path = "src/kernel.rs"
 [dependencies]
 rlibc = "1.0.0"
 extern-os-allocator = { path = "src/alloc" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 nasm-rs = "0.0.6"

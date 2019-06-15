@@ -10,6 +10,3 @@ repository = "https://github.com/dlight/p-macro"
 [lib]
 name = "p_macro"
 path = "lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

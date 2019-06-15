@@ -7,6 +7,3 @@ description = "Rust library for the PagerDuty API"
 repository = "https://github.com/arnm/pagerduty-rs"
 readme = "README.md"
 keywords = ["pagerduty", "api"]
-
-[dependencies]
-boringssl = "0.0.5"

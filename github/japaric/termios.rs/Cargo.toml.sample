@@ -7,6 +7,3 @@ version = "0.0.0"
 
 [build-dependencies.bindgen]
 git = "https://github.com/crabtw/rust-bindgen"
-
-[dependencies]
-boringssl = "0.0.5"

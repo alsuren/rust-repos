@@ -7,4 +7,3 @@ authors = ["Peter Kolloch <info@eigenvalue.net>"]
 
 [dependencies]
 diesel = { version = "1.3", features = ["postgres", "chrono"] }
-boringssl = "0.0.5"

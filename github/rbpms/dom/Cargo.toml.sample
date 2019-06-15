@@ -6,7 +6,6 @@ authors = ["rbpm <Wiesiek.Baranowski@gmail.com>"]
 [dependencies]
 quick-xml = "0.12"
 failure = "0.1.1"
-boringssl = "0.0.5"
 
 [workspace]
 members = [

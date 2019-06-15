@@ -7,12 +7,11 @@ edition = "2018"
 [dependencies]
 "schnorrkel" = "0.1.1"
 "substrate-primitives" = { git = "https://github.com/paritytech/substrate" }
-boringssl = "0.0.5"
-
-[dependencies.pyo3]
-version = "0.7.0-alpha.1"
-features = ["extension-module"]
 
 [lib]
 name = "schnorpy"
 crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.7.0-alpha.1"
+features = ["extension-module"]

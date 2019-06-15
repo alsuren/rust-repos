@@ -6,7 +6,6 @@ authors = ["Gavin Massey <mdk@mystacktrace.org>"]
 [dependencies]
 clap = "0.8.4"
 readline = "0.0.11"
-boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

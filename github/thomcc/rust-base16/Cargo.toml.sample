@@ -10,15 +10,11 @@ license = "MIT/Apache-2.0"
 readme = "README.md"
 edition = "2018"
 
-[package.metadata.docs.rs]
-all-features = true
-
 [features]
 std = []
 default = ["std"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.6.5"
@@ -27,3 +23,6 @@ criterion = "0.2.11"
 [[bench]]
 name = "bench"
 harness = false
+
+[package.metadata.docs.rs]
+all-features = true

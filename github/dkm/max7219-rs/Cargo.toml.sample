@@ -8,9 +8,6 @@ keywords = ["max7219"]
 repository = "http://github.com/dkm/max7219-rs.git"
 description = "A simple driver for the max7219 from 'maxim integrated'. Mainly focused on the 8x8 LED matrix"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.nb]
 version = "0.1.1"
 

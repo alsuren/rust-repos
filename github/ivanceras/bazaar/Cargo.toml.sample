@@ -12,6 +12,14 @@ name = "bazaar"
 
 [[bin]]
 name = "bazaar_app"
+
+[dependencies.rustorm]
+version = "0.4.1"
+features = ["sqlite"]
+#path = "../rustorm"
+
+[dependencies.codegenta]
+version = "0.0.7"
 #path = "../codegenta"
 
 [dependencies]
@@ -27,12 +35,3 @@ uuid = "0.1.18"
 chrono = "0.2.17"
 hoedown = "3.0.3"
 persistent = "0.0.8"
-boringssl = "0.0.5"
-
-[dependencies.rustorm]
-version = "0.4.1"
-features = ["sqlite"]
-#path = "../rustorm"
-
-[dependencies.codegenta]
-version = "0.0.7"

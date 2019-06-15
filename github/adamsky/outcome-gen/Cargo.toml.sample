@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 #outcome = { git = "https://github.com/adamsky/outcome"}
 outcome = { path = "../outcome" }
-boringssl = "0.0.5"

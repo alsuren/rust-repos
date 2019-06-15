@@ -8,7 +8,6 @@ tiny_http = "0.5"
 sharedlib = "6.0"
 notify = { git = "https://github.com/passcod/rsnotify" }
 libc = "0.2"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "webservice"

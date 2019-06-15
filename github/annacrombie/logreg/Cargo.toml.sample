@@ -8,4 +8,3 @@ ndarray = "*"
 ndarray-linalg = "*"
 lapack-src = { version = "0.2", features = ["openblas"] }
 rand = "*"
-boringssl = "0.0.5"

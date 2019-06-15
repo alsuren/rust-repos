@@ -24,7 +24,6 @@ ipnetwork = "0.12"
 redis = "0.9"
 base64 = "0.9"
 r2d2_redis = "0.8"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 # once redis is released remove

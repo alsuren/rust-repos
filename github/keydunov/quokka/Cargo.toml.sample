@@ -8,7 +8,6 @@ authors = ["Artyom Keydunov <artyom.keydunov@gmail.com>"]
 iron = "*"
 router = "*"
 rustc-serialize = "*"
-boringssl = "0.0.5"
 
 [dependencies.jsonway]
 path = "src/jsonway"

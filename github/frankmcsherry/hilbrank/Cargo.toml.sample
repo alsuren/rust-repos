@@ -3,13 +3,6 @@ name = "hilbrank"
 version = "0.1.0"
 authors = ["Frank McSherry <fmcsherry@me.com>"]
 
-[dependencies]
-getopts="*"
-time = "*"
-mmap="*"
-byteorder="*"
-boringssl = "0.0.5"
-
 [dependencies.timely]
 git = "https://github.com/frankmcsherry/timely-dataflow.git"
 # branch = "comm-rewrite"
@@ -23,3 +16,9 @@ git = "https://github.com/frankmcsherry/graph-layout.git"
 
 [dependencies.graph_map]
 git = "https://github.com/frankmcsherry/graph-map.git"
+
+[dependencies]
+getopts="*"
+time = "*"
+mmap="*"
+byteorder="*"

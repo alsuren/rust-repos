@@ -9,4 +9,3 @@ crate_type = ["cdylib"]
 [dependencies]
 wee_alloc = { git = "https://github.com/fitzgen/wee_alloc", default-features = false}
 rlibc = "1.0"
-boringssl = "0.0.5"

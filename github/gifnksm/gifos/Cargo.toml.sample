@@ -4,9 +4,6 @@ version = "0.1.0"
 authors = ["gifnksm <makoto.nksm+github@gmail.com>"]
 edition = "2018"
 
-[package.metadata.bootimage]
-default-target = "x86_64-gifos.json"
-
 [dependencies]
 bootloader = "0.5"
 pc-keyboard = "0.5"
@@ -15,7 +12,6 @@ uart_16550 = "0.2"
 spin = "0.5"
 volatile = "0.2"
 x86_64 = "0.5"
-boringssl = "0.0.5"
 [dependencies.lazy_static]
 version = "1.3"
 features = ["spin_no_std"]
@@ -28,3 +24,6 @@ panic = "abort"
 
 [profile.release]
 panic = "abort"
+
+[package.metadata.bootimage]
+default-target = "x86_64-gifos.json"

@@ -14,11 +14,6 @@ rayon = "1.0"
 byteorder = "1.2"
 itoa = "0.4"
 ryu = "0.2.6"
-boringssl = "0.0.5"
-
-[dependencies.clap]
-version = "2.31"
-default-features = false
 
 [[bin]]
 name = "ppbert"
@@ -34,3 +29,7 @@ bench = false
 debug = true
 lto = true
 panic = "abort"
+
+[dependencies.clap]
+version = "2.31"
+default-features = false

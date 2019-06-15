@@ -5,9 +5,6 @@ version = "0.0.0"
 
 authors = ["Georges Dubus <georges.dubus@compiletoi.net>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.piston]
 
 git = "https://github.com/PistonDevelopers/piston.git"

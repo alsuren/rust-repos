@@ -31,7 +31,6 @@ codespan = { git = "https://github.com/oberien/codespan", rev = "dc7b13739165fc5
 codespan-reporting = { git = "https://github.com/oberien/codespan", rev = "dc7b13739165fc58721415ce3120d05cf117ca81" }
 backtrace = "0.3.14"
 enum-kinds = "0.4.1"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

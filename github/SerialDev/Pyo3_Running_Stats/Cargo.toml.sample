@@ -9,9 +9,8 @@ authors = ["andres <carlos.mariscal.melgar@gmail.com>"]
 name = "collectors"
 crate-type = ["dylib"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.pyo3]
 version = "0.2"
 features = ["extension-module"]
+
+[dependencies]

@@ -28,18 +28,17 @@ exclude = ["doc", ".travis.yml", "circle.yml"]
 default = ["glutin"]
 unstable = []       # used for benchmarks
 
-[dependencies]
-backtrace = "0.2.1"
-lazy_static = "0.2"
-smallvec = "0.1.5"
-fnv = "1.0.3"
-boringssl = "0.0.5"
-
 [dependencies.glutin]
 git = "https://github.com/cosier/glutin"
 #version = "0.7.1"
 features = []
 optional = true
+
+[dependencies]
+backtrace = "0.2.1"
+lazy_static = "0.2"
+smallvec = "0.1.5"
+fnv = "1.0.3"
 
 [build-dependencies]
 gl_generator = "0.5.1"

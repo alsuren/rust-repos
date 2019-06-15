@@ -9,4 +9,3 @@ repository = "https://github.com/agrover/af_unix-rs"
 [dependencies]
 errno = "*"
 libc = "*"
-boringssl = "0.0.5"

@@ -28,7 +28,6 @@ textwrap = { version = "0.10", features = ["term_size"] }
 snow = "0.2.1"
 linefeed = "0.5"
 dirs = "1"
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 termion = "1.5.1"

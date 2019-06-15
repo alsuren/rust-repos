@@ -29,7 +29,6 @@ chain_builder =  { path = "src/chain_builder" }
 rpc = { path = "src/rpc" }
 sync = { path = "src/sync" }
 p2p =  { path = "src/p2p" }
-boringssl = "0.0.5"
 
 [[bin]]
 path = "src/rustheus/main.rs"

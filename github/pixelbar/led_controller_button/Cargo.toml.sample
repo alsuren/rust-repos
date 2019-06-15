@@ -7,7 +7,6 @@ authors = ["trangar"]
 peripherals = { path = "libs/peripherals" }
 cortex-m-semihosting = "*"
 cortex-m = "*"
-boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 features = ["abort-on-panic"]

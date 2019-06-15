@@ -18,6 +18,3 @@ travis-ci = { repository = "durka/guard" }
 nightly = []
 debug = []
 
-[dependencies]
-boringssl = "0.0.5"
-

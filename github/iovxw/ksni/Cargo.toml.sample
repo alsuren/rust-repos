@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 dbus = "0.6"
-boringssl = "0.0.5"
 
 [build-dependencies]
 dbus-codegen = "0.3"

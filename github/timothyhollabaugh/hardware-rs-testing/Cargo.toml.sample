@@ -6,4 +6,3 @@ authors = ["Tim <timothyhollabaugh@gmail.com>"]
 [dependencies]
 hardware = { path = "../hardware-rs"}
 rand = "0.3"
-boringssl = "0.0.5"

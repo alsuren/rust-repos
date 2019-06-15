@@ -8,4 +8,3 @@ serde = "0.9.11"
 serde_derive = "0.9.11"
 serde_json = "0.9.10"
 specs = { path = "../specs", version = "0.8", features = ["serialize"] }
-boringssl = "0.0.5"

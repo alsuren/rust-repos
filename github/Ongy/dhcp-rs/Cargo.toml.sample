@@ -17,7 +17,9 @@ privdrop = "0.1.3"
 log = "0.3.8"
 clap = "2.29"
 caps = {version = "0.1", optional=true}
-boringssl = "0.0.5"
+
+[dev-dependencies]
+quickcheck = "*"
 
 [dependencies.rs-config]
 git = "https://github.com/Ongy/config-rs"
@@ -26,9 +28,6 @@ features= ["log"]
 [dependencies.rs-config-derive]
 version= "*"
 git = "https://github.com/Ongy/config-rs"
-
-[dev-dependencies]
-quickcheck = "*"
 
 [features]
 dropcaps = ["caps"]

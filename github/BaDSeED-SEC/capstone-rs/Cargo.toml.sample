@@ -15,7 +15,6 @@ travis-ci = { repository = "capstone-rust/capstone-rs" }
 
 [dependencies]
 capstone-sys = { git = "https://github.com/BaDSeED-SEC/capstone-sys" }
-boringssl = "0.0.5"
 
 # Not actually a dependency, but this makes the more complicated examples work
 [dev-dependencies]

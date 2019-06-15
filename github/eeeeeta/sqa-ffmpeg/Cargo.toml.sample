@@ -15,7 +15,6 @@ failure = "0.1.3"
 failure_derive = "0.1.3"
 libc = "0.2.43"
 sample = "0.10.0"
-boringssl = "0.0.5"
 
 [dependencies.ffmpeg-sys]
 git = "https://github.com/meh/rust-ffmpeg-sys"

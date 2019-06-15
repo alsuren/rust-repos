@@ -11,7 +11,6 @@ primitives = { git = "https://github.com/chainx-org/bitcoin-rust", default-featu
 chain = { git = "https://github.com/chainx-org/bitcoin-rust", default-features = false }
 bit-vec = { git = "https://github.com/chainx-org/bit-vec", default-features = false }
 parity-codec = { version = "3.0", default-features = false }
-boringssl = "0.0.5"
 
 [features]
 default = ["std"]

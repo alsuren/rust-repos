@@ -17,7 +17,6 @@ docopt_macros = "*"
 rustc-serialize = "*"
 num = "*"
 openssl = "*"
-boringssl = "0.0.5"
 
 [[example]]
 path = "preprocess/main.rs"

@@ -8,7 +8,6 @@ edition = "2018"
 crc32fast = "1"
 object = { path = "../object" }
 scroll = "0.9"
-boringssl = "0.0.5"
 
 [dependencies.goblin]
 path = "../goblin"

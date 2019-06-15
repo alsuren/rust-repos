@@ -10,7 +10,6 @@ termios = "0.3"
 specs = { version = "0.12", default-features = false }
 smallvec = "0.6"
 x1b = "0.5.1"
-boringssl = "0.0.5"
 #x1b = { path = "../x1b", version = "*" }
 
 [profile.release]

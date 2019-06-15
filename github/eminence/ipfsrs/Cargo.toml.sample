@@ -8,7 +8,6 @@ rust-base58 = "*"
 rustc-serialize = "0.3"
 #num = "*"
 openssl = "0.6"
-boringssl = "0.0.5"
 
 [dependencies.rust-multihash]
 git="https://github.com/eminence/rust-multihash"

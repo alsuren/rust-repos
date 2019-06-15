@@ -33,7 +33,6 @@ substrate-client = { git = "https://github.com/paritytech/substrate", default-fe
 substrate-basic-authorship = { git = "https://github.com/paritytech/substrate" }
 substratekitties-runtime = { path = "runtime" }
 node-executor = { git = "https://github.com/paritytech/substrate" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 vergen = "2"

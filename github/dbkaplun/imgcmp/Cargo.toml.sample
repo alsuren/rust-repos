@@ -6,4 +6,3 @@ authors = ["Dan Kaplun <dbkaplun@gmail.com>"]
 [dependencies]
 image = { git = "https://github.com/PistonDevelopers/image", rev = "89c6c5f" }
 num-traits = "*"
-boringssl = "0.0.5"

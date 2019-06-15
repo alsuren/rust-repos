@@ -8,6 +8,3 @@ documentation = "http://knsd.github.io/from-ascii"
 readme = "README.md"
 description = "Traits which creates instances from ascii string."
 keywords = ["ascii", "parser", "parsing", "numerics"]
-
-[dependencies]
-boringssl = "0.0.5"

@@ -5,7 +5,6 @@ authors = ["Alexander Weld <alexander.weld@oracle.com>"]
 
 [dependencies]
 regex = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "rsed"

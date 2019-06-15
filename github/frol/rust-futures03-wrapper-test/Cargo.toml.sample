@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 futures03 = { package = "futures-preview", version = "0.3.0-alpha.16", features = ["compat"] }
 futures = "0.1.27"
-boringssl = "0.0.5"

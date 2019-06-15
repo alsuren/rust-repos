@@ -5,7 +5,6 @@ authors = ["Dan Connolly <dckc@madmode.com>"]
 
 [dependencies]
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

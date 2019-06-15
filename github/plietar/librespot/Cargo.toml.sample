@@ -9,23 +9,6 @@ keywords = ["spotify"]
 repository = "https://github.com/plietar/librespot"
 readme = "README.md"
 
-[package.metadata.deb]
-maintainer = "nobody"
-copyright = "2016 Paul Liétar"
-license_file = ["LICENSE", "4"]
-depends = "$auto"
-extended_description = """\
-librespot is an open source client library for Spotify. It enables applications \
-to use Spotify's service, without using the official but closed-source \
-libspotify. Additionally, it will provide extra features which are not \
-available in the official library."""
-section = "sound"
-priority = "optional"
-assets = [
-    ["target/release/librespot", "usr/bin/", "755"],
-    ["contrib/librespot.service", "lib/systemd/system/", "644"]
-]
-
 [workspace]
 
 [lib]
@@ -36,6 +19,15 @@ path = "src/lib.rs"
 name = "librespot"
 path = "src/main.rs"
 doc = false
+
+[dependencies.librespot-audio]
+path = "audio"
+[dependencies.librespot-core]
+path = "core"
+[dependencies.librespot-metadata]
+path = "metadata"
+[dependencies.librespot-protocol]
+path = "protocol"
 
 [dependencies]
 base64 = "0.5.0"
@@ -60,16 +52,6 @@ url = "1.3"
 alsa            = { git = "https://github.com/plietar/rust-alsa", optional = true }
 portaudio-rs    = { version = "0.3.0", optional = true }
 libpulse-sys    = { version = "0.0.0", optional = true }
-boringssl = "0.0.5"
-
-[dependencies.librespot-audio]
-path = "audio"
-[dependencies.librespot-core]
-path = "core"
-[dependencies.librespot-metadata]
-path = "metadata"
-[dependencies.librespot-protocol]
-path = "protocol"
 
 [build-dependencies]
 rand            = "0.3.13"
@@ -85,3 +67,20 @@ with-tremor = ["librespot-audio/with-tremor"]
 with-lewton = ["librespot-audio/with-lewton"]
 
 default = ["portaudio-backend"]
+
+[package.metadata.deb]
+maintainer = "nobody"
+copyright = "2016 Paul Liétar"
+license_file = ["LICENSE", "4"]
+depends = "$auto"
+extended_description = """\
+librespot is an open source client library for Spotify. It enables applications \
+to use Spotify's service, without using the official but closed-source \
+libspotify. Additionally, it will provide extra features which are not \
+available in the official library."""
+section = "sound"
+priority = "optional"
+assets = [
+    ["target/release/librespot", "usr/bin/", "755"],
+    ["contrib/librespot.service", "lib/systemd/system/", "644"]
+]

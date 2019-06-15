@@ -12,9 +12,6 @@ keywords = ["iterator", "derive", "enum"]
 categories = ["rust-patterns"]
 exclude = ["/.travis.yml"]
 
-[package.metadata.docs.rs]
-all-features = true
-
 [badges]
 # https://github.com/rust-lang/crates.io/issues/1392
 # travis-ci = { repository = "taiki-e/iterator-enum" }
@@ -37,4 +34,6 @@ exact_size_is_empty = []
 derive_utils = "^0.6.3"
 quote = "^0.6.8"
 syn = { version = "^0.15.22", features = ["full"] }
-boringssl = "0.0.5"
+
+[package.metadata.docs.rs]
+all-features = true

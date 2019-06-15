@@ -9,4 +9,3 @@ license = "GPL-3.0"
 bitflags = "1.0"
 failure = { version = "0.1", features = ["derive"] }
 winapi = { version = "0.3", features = ["accctrl", "aclapi", "errhandlingapi", "securitybaseapi", "sddl", "winbase", "winerror", "winnt"] }
-boringssl = "0.0.5"

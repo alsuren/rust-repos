@@ -6,4 +6,3 @@ authors = ["Alex Yang <aleozlx@gmail.com>"]
 [dependencies]
 sdl2 = { version = "0.31.0", features = ["bundled", "static-link"] }
 gl = { path = "lib/glviewer" }
-boringssl = "0.0.5"

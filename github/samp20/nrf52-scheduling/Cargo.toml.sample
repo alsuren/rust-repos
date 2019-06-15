@@ -7,4 +7,3 @@ version = "0.1.0"
 [dependencies]
 cortex-m = { version = ">=0.5.8, <0.7", features = ["inline-asm"] }
 cortex-m-rt = ">=0.6.8, <0.7"
-boringssl = "0.0.5"

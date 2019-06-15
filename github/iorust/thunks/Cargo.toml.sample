@@ -9,6 +9,3 @@ repository = "https://github.com/iorust/thunks.git"
 readme = "README.md"
 keywords = ["thunk", "async", "await", "future", "promise"]
 license = "MIT/Apache-2.0"
-
-[dependencies]
-boringssl = "0.0.5"

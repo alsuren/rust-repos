@@ -14,9 +14,6 @@ parallel = ["simd"]
 unstable = ["parallel"]
 random = ["rand"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.simd]
 git = "https://github.com/huonw/simd"
 optional = true

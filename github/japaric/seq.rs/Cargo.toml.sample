@@ -4,8 +4,5 @@ name = "seq"
 version = "0.0.0"
 authors = ["Jorge Aparicio <japaric@linux.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.collect]
 git = "https://github.com/gankro/collect-rs"

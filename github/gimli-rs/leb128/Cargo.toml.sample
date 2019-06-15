@@ -12,7 +12,6 @@ documentation = "https://docs.rs/leb128"
 repository = "https://github.com/gimli-rs/leb128"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.8.0"

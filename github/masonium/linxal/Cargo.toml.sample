@@ -26,7 +26,9 @@ ndarray = "0.10"
 num-traits = "0.1"
 rand = "0.3"
 libc = "0.2"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+itertools = "0.6"
 
 [dependencies.lapack]
 version = "0.13"
@@ -53,6 +55,3 @@ optional = true
 version = "0.7"
 default-features = false
 optional = true
-
-[dev-dependencies]
-itertools = "0.6"

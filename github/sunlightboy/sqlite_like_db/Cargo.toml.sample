@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 bytes = { version = "0.4", features = ["serde"] }
-boringssl = "0.0.5"

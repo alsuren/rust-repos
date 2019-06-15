@@ -21,7 +21,6 @@ version = "0.3.5"
 
 [dependencies]
 cortex-m = "0.1.5"
-boringssl = "0.0.5"
 
 [dependencies.linked_list_allocator]
 default-features = false

@@ -7,7 +7,6 @@ authors = ["Alexander Polyakov <aleksandr.polyakov@kupibilet.ru>"]
 reqwest = "0.8.1"
 lru_time_cache = "0.7"
 serde = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0"

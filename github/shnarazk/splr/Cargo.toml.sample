@@ -16,7 +16,6 @@ bitflags = "1.0"
 copyless = "0.1.2"
 libc = "0.2.50"
 structopt = "0.2.14"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -5,7 +5,6 @@ version = "0.1.0"
 [dependencies]
 byteorder = "*"
 mio =  { path = "third_party/mio" }
-boringssl = "0.0.5"
 
 [lib]
 name = "adb_reverse"

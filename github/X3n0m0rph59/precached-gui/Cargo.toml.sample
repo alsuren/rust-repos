@@ -24,7 +24,6 @@ chrono = { version = "0.4", features = ["serde", "rustc-serialize"] }
 #chrono-tz = { version = "0.4", features = ["serde"] }
 zmq = { version = "*", git = "https://github.com/X3n0m0rph59/rust-zmq", branch = "master" }
 clippy = { version = "*", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.5"

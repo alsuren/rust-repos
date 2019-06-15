@@ -17,7 +17,6 @@ llvm-dylib = []
 
 [dependencies]
 bitflags = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 semver = "*"

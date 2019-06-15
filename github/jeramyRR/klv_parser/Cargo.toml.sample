@@ -5,7 +5,6 @@ authors = ["Jeramy Singleton <jeramyRR@gmail.com>"]
 
 [dependencies]
 clippy = {version = "0.0.21", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

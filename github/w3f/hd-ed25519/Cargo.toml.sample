@@ -10,9 +10,6 @@ categories = ["cryptography"] # "no-std"
 keywords = ["cryptography", "curve25519", "ECC"]
 description = "Hierachical key derivation on ed255190-dalek"
 
-[dependencies]
-boringssl = "0.0.5"
-
 
 [dependencies.ed25519-dalek]
 version = "1.0.0-pre.0"

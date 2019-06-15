@@ -26,7 +26,6 @@ nightly = []
 ndarray = "0.12"
 num-traits = "0.1"
 log = { version = "0.4", features = ["max_level_debug", "release_max_level_warn"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.6"

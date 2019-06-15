@@ -19,7 +19,6 @@ appveyor = { repository = "gsingh93/llvm" }
 llvm-sys = "*"
 libc = "*"
 error-chain = "^0.10"
-boringssl = "0.0.5"
 
 [build-dependencies]
 rustc_version = "^0.2"

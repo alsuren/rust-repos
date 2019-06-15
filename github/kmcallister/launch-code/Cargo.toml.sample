@@ -12,8 +12,5 @@ description = "Cryptographic signatures for unsafe code auditing"
 name = "launch_code"
 plugin = true
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sodiumoxide]
 git = "https://github.com/dnaq/sodiumoxide"

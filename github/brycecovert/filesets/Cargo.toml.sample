@@ -15,7 +15,6 @@ rust-crypto = "^0.2"
 threadpool = "1.7.1"
 pbr = "1.0.1"
 walkdir = "2.2.7"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

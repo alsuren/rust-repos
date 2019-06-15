@@ -12,10 +12,6 @@ categories = ["no-std", "rust-patterns"]
 license = "MIT OR Apache-2.0"
 exclude = ["/.travis.yml", "/.github/*", "/.travis/*"]
 
-# docs.rs needs some pointers to do proper documentation
-[package.metadata.docs.rs]
-features = ["doc_include"]
-
 [badges]
 travis-ci = { repository = "daxpedda/unchecked_unwrap", branch = "stable" }
 # this looks excessive for a small library like that
@@ -33,5 +29,6 @@ doc_include = []
 test = false
 bench = false
 
-[dependencies]
-boringssl = "0.0.5"
+# docs.rs needs some pointers to do proper documentation
+[package.metadata.docs.rs]
+features = ["doc_include"]

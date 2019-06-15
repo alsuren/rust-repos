@@ -23,7 +23,6 @@ structopt-derive = { version = "0.2", optional = true }
 rand = "0.5.0-pre"
 rmp-serde = { version = "0.13", optional = true }
 uuid = { version = "0.6", features = ["v5"], optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 clap = "2.31"

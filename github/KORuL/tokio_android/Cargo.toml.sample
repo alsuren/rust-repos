@@ -7,8 +7,6 @@ autobins = false
 #
 [target.'cfg(target_os="android")'.dependencies]
 jni = { version = "0.5", default-features = false }
-[target.'cfg(target_os = "android")'.dependencies]
-android_logger =  { git = "https://github.com/Nercury/android_logger-rs" }
 #
 [lib]
 crate-type = ["dylib"]
@@ -17,4 +15,5 @@ crate-type = ["dylib"]
 [dependencies]
 log = "*"
 tokio = "0.1.7"
-boringssl = "0.0.5"
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger =  { git = "https://github.com/Nercury/android_logger-rs" }

@@ -9,4 +9,3 @@ name = "libloe"
 crate-type = ["staticlib", "dylib", "rlib"]
 
 [dependencies]
-boringssl = "0.0.5"

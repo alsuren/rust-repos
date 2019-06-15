@@ -10,16 +10,15 @@ description= "A library for creating URL prefix strings."
 readme = "README.md"
 license = "MIT"
 
-[package.metadata.docs.rs]
-all-features = true
-
 [badges]
 travis-ci = { repository = "magiclen/url-prefix", branch = "master" }
 appveyor = { repository = "magiclen/url-prefix", branch = "master", service = "github" }
 
 [dependencies]
 validators = { version = ">=0.18,<0.21", optional = true }
-boringssl = "0.0.5"
 
 [features]
 validator = ["validators"]
+
+[package.metadata.docs.rs]
+all-features = true

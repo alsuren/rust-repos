@@ -20,13 +20,12 @@ name = "curve41417"
 # see TARS's Cargo.toml.
 no_mlock = ["tars/no_mlock"]
 
+[dependencies.tars]
+git = "https://github.com/seb-m/tars"
+
 [dependencies]
 rand = "0.3.10"
 num = "0.1.27"
-boringssl = "0.0.5"
-
-[dependencies.tars]
-git = "https://github.com/seb-m/tars"
 
 [dev-dependencies]
 log = "0.3.1"

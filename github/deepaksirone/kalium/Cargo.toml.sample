@@ -5,7 +5,6 @@ authors = ["Deepak Sirone"]
 
 [dependencies]
 rustbox = "*"
-boringssl = "0.0.5"
 
 [features]
 buffer_gap = []

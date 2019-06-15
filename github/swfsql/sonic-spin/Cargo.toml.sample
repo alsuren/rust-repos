@@ -10,16 +10,12 @@ keywords = ["postfix"]
 readme = "README.md"
 documentation = "https://docs.rs/sonic_spin/0.1.0/sonic_spin/"
 
-[package.metadata.docs.rs]
-features = ["full", "derive", "parsing", "clone-impls", "printing"]
-
 [lib]
 proc-macro = true
 
 [dependencies]
 proc-macro2 = { version = "0.4.4", default-features = false }
 quote = "0.6.11"
-boringssl = "0.0.5"
 
 [dependencies.syn]
 version = "=0.15.30"
@@ -37,3 +33,6 @@ clone-impls = []
 extra-traits = []
 printing = []
 default = ["full", "derive", "parsing", "clone-impls", "printing"]
+
+[package.metadata.docs.rs]
+features = ["full", "derive", "parsing", "clone-impls", "printing"]

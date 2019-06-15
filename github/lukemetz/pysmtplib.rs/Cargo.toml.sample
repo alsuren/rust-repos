@@ -6,8 +6,5 @@ authors = [ "luke.s.metz@gmail.com" ]
 [[lib]]
 name = "pysmtplib"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rustpy]
 git = "https://github.com/lukemetz/rustpy.git"

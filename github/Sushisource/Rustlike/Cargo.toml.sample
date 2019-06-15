@@ -18,10 +18,9 @@ num-derive = "0.2"
 num-traits = "0.2"
 num = "0.1"
 timebomb = "*"
-boringssl = "0.0.5"
-
-[dependencies.roguelike-derive]
-path = "roguelike-derive"
 
 [workspace]
 members = ["roguelike-derive"]
+
+[dependencies.roguelike-derive]
+path = "roguelike-derive"

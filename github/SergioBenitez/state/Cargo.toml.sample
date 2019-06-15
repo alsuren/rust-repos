@@ -11,16 +11,12 @@ readme = "README.md"
 keywords = ["static", "tls", "state", "thread-local", "global"]
 license = "MIT/Apache-2.0"
 
-[package.metadata.docs.rs]
-all-features = true
-
 [features]
 tls = ["thread_local"]
 const_fn = []
 
 [dependencies]
 thread_local = { version = "<= 0.3.3", optional = true }
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3
@@ -29,3 +25,6 @@ lto = true
 [profile.bench]
 opt-level = 3
 lto = true
+
+[package.metadata.docs.rs]
+all-features = true

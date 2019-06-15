@@ -8,9 +8,6 @@ git = "https://github.com/svevang/rust-cpython.git"
 branch= "feature/python-as-crate"
 features = ["build-python-3-5-0"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.cpython]
 git = "https://github.com/svevang/rust-cpython.git"
 branch= "feature/python-as-crate"

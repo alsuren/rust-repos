@@ -3,8 +3,5 @@ name = "primlisp"
 version = "0.1.0"
 authors = ["Philip Munksgaard <pmunksgaard@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.peg]
 git = "https://github.com/kevinmehall/rust-peg"

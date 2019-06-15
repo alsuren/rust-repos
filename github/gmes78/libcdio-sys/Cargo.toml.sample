@@ -17,6 +17,3 @@ default = ["cdio", "iso9660", "udf"]
 cdio = []
 iso9660 = []
 udf = []
-
-[dependencies]
-boringssl = "0.0.5"

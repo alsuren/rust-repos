@@ -14,7 +14,6 @@ bump_allocator = { path = "lib/bump_allocator" }
 vga = { path = "lib/vga" }
 interrupts = { path = "lib/interrupts" }
 memory = { path = "lib/memory" }
-boringssl = "0.0.5"
 
 
 [lib]

@@ -7,7 +7,6 @@ autobenches = false
 
 [dependencies]
 ndarray = "0.12"
-boringssl = "0.0.5"
 
 [dependencies.isosurface]
 git = "https://github.com/rekka/isosurface-rs.git"

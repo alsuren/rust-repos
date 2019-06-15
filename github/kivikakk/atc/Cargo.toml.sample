@@ -5,4 +5,3 @@ authors = ["Ashe Connor <ashe@kivikakk.ee>"]
 
 [dependencies]
 sdl2 = { version = "0.31", features = ["gfx"], default-features = false }
-boringssl = "0.0.5"

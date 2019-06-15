@@ -5,7 +5,6 @@ authors = ["Ovais <ovais.memon@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [[bin]]
 name = "prime-numbers"

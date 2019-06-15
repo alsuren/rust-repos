@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 smallvec = "0.6.8"
-boringssl = "0.0.5"
 
 [dependencies.glib]
 git = "https://github.com/gtk-rs/glib.git"

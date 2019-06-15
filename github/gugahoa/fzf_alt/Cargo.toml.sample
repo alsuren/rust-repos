@@ -10,7 +10,6 @@ serde = { version = "1.0", features = ["derive"] }
 serde_regex = "*"
 regex = "*"
 confy = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "*"

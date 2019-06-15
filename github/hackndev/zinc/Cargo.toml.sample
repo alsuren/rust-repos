@@ -26,15 +26,14 @@ mcu_k20 = ["cpu_cortex-m4"]
 mcu_tiva_c = ["cpu_cortex-m4"]
 multitasking = ["cpu_cortex-m4"]
 
-[dependencies]
-rlibc = "*"
-boringssl = "0.0.5"
-
 [dependencies.ioreg]
 path = "./ioreg"
 
 [dependencies.volatile_cell]
 path = "./volatile_cell"
+
+[dependencies]
+rlibc = "*"
 
 [dev-dependencies]
 expectest = "*"

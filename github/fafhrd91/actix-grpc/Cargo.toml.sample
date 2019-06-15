@@ -21,4 +21,3 @@ actix-web = { path="../actix-web/" }
 actix-grpc-codegen = { path="./codegen/" }
 
 env_logger = "0.5"
-boringssl = "0.0.5"

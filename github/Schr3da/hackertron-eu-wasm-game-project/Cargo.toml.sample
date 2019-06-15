@@ -7,11 +7,6 @@ authors = ["schr3da <strieder.georg.dev@gmail.com>"]
 name = "game"
 path = "src/main.rs"
 
-[dependencies]
-rand = "0.3"
-num = "0.1.40"
-boringssl = "0.0.5"
-
 [dependencies.sdl2]
 version = "0.30"
 default-features = false
@@ -19,3 +14,7 @@ features = ["image", "ttf"]
 
 [dependencies.sdl2-sys]
 version = "0.30"
+
+[dependencies]
+rand = "0.3"
+num = "0.1.40"

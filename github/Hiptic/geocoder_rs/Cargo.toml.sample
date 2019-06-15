@@ -4,9 +4,6 @@ version = "1.0.0"
 authors = ["Josh Leverette"]
 repository = "https://github.com/OneSignal/geocoder_rs"
 
-[package.metadata.thermite]
-github_releases = true
-
 [dependencies]
 geo = { version = "0.9.1", features = ["use-serde"] }
 geojson = "0.11.0"
@@ -16,7 +13,6 @@ serde_derive = "1.0.66"
 serde_json = "1.0.19"
 rayon = "1.0.1"
 ruru = "0.9.3"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.3"
@@ -38,6 +34,9 @@ harness = false
 
 [profile.bench]
 debug = true
+
+[package.metadata.thermite]
+github_releases = true
 
 # this is necessary to support static linkage for now
 [patch.crates-io]

@@ -6,7 +6,6 @@ authors = ["Mike Meehan <mjmeehan@gmail.com>"]
 [dependencies]
 rand = "0.3"
 nom = "2.2"
-boringssl = "0.0.5"
 
 [lib]
 name = "euler"

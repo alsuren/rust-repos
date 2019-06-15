@@ -11,5 +11,4 @@ pid = { path = "lib/pid" }
 max31865 = { path = "lib/max31865" }
 stm32f103xx-hal = { git = "https://github.com/japaric/stm32f103xx-hal.git" }
 light-cli = { git = "https://github.com/rudihorn/light-cli.git" }
-boringssl = "0.0.5"
 

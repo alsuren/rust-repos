@@ -16,4 +16,3 @@ default = []
 
 [dependencies]
 clippy = { version = "~0.0.33", optional = true }
-boringssl = "0.0.5"

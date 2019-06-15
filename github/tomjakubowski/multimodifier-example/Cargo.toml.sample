@@ -6,6 +6,3 @@ authors = ["Tom Jakubowski <tom@crystae.net>"]
 [lib]
 name = "synex"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

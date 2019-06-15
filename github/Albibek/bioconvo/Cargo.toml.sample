@@ -34,7 +34,6 @@ metric = { path = "../../avito/bioyino/metric" }
 luajit="^0.1"
 lazy_static="^0.1"
 crossbeam="^0.7"
-boringssl = "0.0.5"
 
 [build-dependencies]
 capnpc = "^0.9"

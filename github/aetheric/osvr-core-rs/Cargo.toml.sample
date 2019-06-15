@@ -13,7 +13,6 @@ name = "osvr_core"
 path = "src/lib.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build_dependencies]
 walkdir = "0.1"

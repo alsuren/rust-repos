@@ -10,7 +10,6 @@ serde="1.0.90"
 serde_derive="1.0.90"
 serde_json="1.0.39"
 serde_with_macros = "1.0.1"
-boringssl = "0.0.5"
 
 [profile.release]
 lto=true

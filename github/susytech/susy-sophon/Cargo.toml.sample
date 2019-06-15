@@ -72,7 +72,6 @@ journaldb = { path = "util/journaldb" }
 sofcore-secretstore = { path = "secret-store", optional = true }
 
 registrar = { path = "util/registrar" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 rustc_version = {version="0.2",registry="susytech"}

@@ -11,6 +11,19 @@ readme = "README.md"
 license = "0BSD"
 edition = "2018"
 
+[dependencies]
+failure = "0.1.5"
+page_size = "0.4.1"
+
+[dev-dependencies]
+version-sync = "0.8.1"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.7", features = ["memoryapi"] }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2.51"
+
 
 # cargo-release configuration
 [package.metadata.release]
@@ -36,17 +49,3 @@ replace = 'vmem = "{{version}}"'
 file    = "src/lib.rs"
 search  = "https://docs.rs/vmem/[a-z0-9\\.-]+"
 replace = "https://docs.rs/vmem/{{version}}"
-
-[dependencies]
-failure = "0.1.5"
-page_size = "0.4.1"
-boringssl = "0.0.5"
-
-[dev-dependencies]
-version-sync = "0.8.1"
-
-[target.'cfg(windows)'.dependencies]
-winapi = { version = "0.3.7", features = ["memoryapi"] }
-
-[target.'cfg(unix)'.dependencies]
-libc = "0.2.51"

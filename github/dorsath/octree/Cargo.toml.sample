@@ -4,10 +4,9 @@ name = "octree"
 version = "0.0.1"
 authors = ["Ronald <selsery@gmail.com>"]
 
-[dependencies]
-image = "*"
-boringssl = "0.0.5"
-
 [dependencies.nalgebra]
 git = "https://github.com/sebcrozet/nalgebra"
+
+[dependencies]
+image = "*"
 

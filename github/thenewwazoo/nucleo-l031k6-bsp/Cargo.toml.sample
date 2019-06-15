@@ -13,7 +13,6 @@ cortex-m = "0.5.7"
 cortex-m-rt = "0.6.4"
 panic-halt = "0.2.0"
 stm32l0x1 = "0.13.1"
-boringssl = "0.0.5"
 
 [dependencies.embedded-hal]
 features = ["unproven"]

@@ -3,17 +3,6 @@ name = "osiris"
 version = "0.1.0"
 authors = ["Nathan Perry <avaglir@gmail.com>"]
 
-[package.metadata.bootimage]
-default-target = "x86_64-osiris"
-minimum-image-size = 0
-run-command = ["qemu-system-x86_64", "-drive", "format=raw,file={}", "-m", "1G", "-monitor", "stdio"]
-output = "build/kernel.bin"
-
-[package.metadata.bootimage.bootloader]
-precompiled = true
-name = "bootloader"
-git = "https://github.com/mammothbane/bootloader"
-
 [profile.dev]
 panic = "abort"
 
@@ -36,11 +25,21 @@ itertools = { version = "0.7.6", default-features = false }
 fixedvec = "0.2"
 lateinit = "0.1"
 raw-cpuid = "3.1"
-boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "0.2.4"
 features = ["spin_no_std"]
+
+[package.metadata.bootimage]
+default-target = "x86_64-osiris"
+minimum-image-size = 0
+run-command = ["qemu-system-x86_64", "-drive", "format=raw,file={}", "-m", "1G", "-monitor", "stdio"]
+output = "build/kernel.bin"
+
+[package.metadata.bootimage.bootloader]
+precompiled = true
+name = "bootloader"
+git = "https://github.com/mammothbane/bootloader"
 
 [patch.crates-io]
 failure = { git = "https://github.com/mammothbane/failure" }

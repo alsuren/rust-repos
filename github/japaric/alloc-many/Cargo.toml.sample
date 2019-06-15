@@ -7,7 +7,6 @@ version = "0.0.0-alpha.0"
 
 [dependencies]
 alloc-many-macros = { path = "macros" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

@@ -7,7 +7,6 @@ workspace = "../Nature"
 
 [dependencies]
 nature_common = {path = "../Nature-Common"}
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

@@ -17,7 +17,6 @@ name = "something_good"
 libloading = "0.3" # 0.5
 ansi_term = "0.9" # 0.11
 time = "0.1"
-boringssl = "0.0.5"
 
 [dependencies.game_state]
 path = "game_state"

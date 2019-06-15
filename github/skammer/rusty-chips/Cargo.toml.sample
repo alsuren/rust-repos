@@ -6,7 +6,6 @@ build = "src/main.rs"
 
 [dependencies]
 itertools-num = "0.1.1"
-boringssl = "0.0.5"
 
 [features]
 default = []

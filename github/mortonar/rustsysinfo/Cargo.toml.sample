@@ -13,6 +13,3 @@ path = "src/bin.rs"
 
 [build-dependencies]
 bindgen = "0.26.3"
-
-[dependencies]
-boringssl = "0.0.5"

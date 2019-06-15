@@ -6,6 +6,3 @@ authors = ["Jared McFarland <jared.online@gmail.com>"]
 [lib]
 name = "rust_a_star"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

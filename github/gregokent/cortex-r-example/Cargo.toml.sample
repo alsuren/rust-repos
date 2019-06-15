@@ -6,4 +6,3 @@ authors = ["Gregory Kent <gregokent@gmail.com>"]
 [dependencies]
 cortex-r-rt = { path = "../cortex-r-rt" }
 panic-abort = "*"
-boringssl = "0.0.5"

@@ -13,9 +13,6 @@ stdio = ["mruby-sys/stdio"]
 use-f32 = ["mruby-sys/use-f32"]
 utf8 = ["mruby-sys/utf8"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.mruby-macros]
 version = "0.1.0"
 path = "./mruby-macros/"

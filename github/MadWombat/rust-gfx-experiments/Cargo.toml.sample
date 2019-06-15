@@ -12,7 +12,6 @@ sdl2 = { version = "0.31.0", features = ["bundled", "static-link"] }
 image = "*"
 nalgebra = "*"
 failure = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 walkdir = "2.1"

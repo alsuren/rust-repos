@@ -8,20 +8,6 @@ license-file = "LICENSE"
 readme = "README.md"
 repository = "https://github.com/Germanicus1982/nimtool"
 
-[package.metadata.deb]
-maintainer = "David Wagner <support@nimtool.com>"
-copyright = "2018, David Wagner <support@nimtool.com>"
-license-file = ["LICENSE", "4"]
-extended-description = """\
-A simple tool to grab Nimiq metrics from api.nimiqx.com"""
-depends = "$auto"
-section = "utility"
-priority = "optional"
-assets = [
-    ["target/release/nimtool", "usr/bin/", "755"],
-    ["README.md", "usr/share/doc/nimtool/README", "644"],
-]
-
 [dependencies]
 reqwest = "0.8.6"
 serde = "^1.0"
@@ -35,7 +21,20 @@ directories = "1.0.1"
 failure = "0.1.1"
 failure_derive = "0.1.1"
 clap = {version = "2.32.0", features = ["yaml", "suggestions", "wrap_help"]}
-boringssl = "0.0.5"
+
+[package.metadata.deb]
+maintainer = "David Wagner <support@nimtool.com>"
+copyright = "2018, David Wagner <support@nimtool.com>"
+license-file = ["LICENSE", "4"]
+extended-description = """\
+A simple tool to grab Nimiq metrics from api.nimiqx.com"""
+depends = "$auto"
+section = "utility"
+priority = "optional"
+assets = [
+    ["target/release/nimtool", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/nimtool/README", "644"],
+]
 
 # TODO: Implement internationalization
 #

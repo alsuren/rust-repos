@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 #argparse-rs = { git = "https://github.com/MD-Levitan/argparser-rs" }
 argparse-rs = { path = "/home/kali/Projects/argparser-rs"}
-boringssl = "0.0.5"

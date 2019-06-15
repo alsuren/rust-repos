@@ -6,20 +6,17 @@ authors = ["scorix <scorix@gmail.com>"]
 [[bin]]
 name = "exercise1"
 
-[[bin]]
-name = "exercise2"
-
-[[bin]]
-name = "exercise3"
-
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rand]
 version = "*"
 
+[[bin]]
+name = "exercise2"
+
 [dependencies.redis]
 version = "*"
+
+[[bin]]
+name = "exercise3"
 
 [dependencies.mysql]
 version = "*"

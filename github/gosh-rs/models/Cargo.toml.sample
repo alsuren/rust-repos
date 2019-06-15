@@ -17,7 +17,6 @@ duct = "0.12"
 tempfile = "3.0"
 vecfx = {git = "https://github.com/gchemol/vecfx.git", tag="v0.0.4", features=["nalgebra"]}
 gchemol = {git = "https://github.com/ybyygu/gchemol.git", tag="v0.0.32"}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 approx = "0.3"

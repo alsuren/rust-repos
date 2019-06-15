@@ -15,6 +15,5 @@ exclude = [
 
 [dependencies]
 ssd1351 = "0.1.4"
-boringssl = "0.0.5"
 [dependencies.stm32l432xx-hal]
 version = "0.2.3"

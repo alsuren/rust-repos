@@ -8,7 +8,6 @@ edition = "2018"
 rust-argon2 = "0.4"
 wee_alloc = "0.4"
 convert-base = { git = "http://github.com/eugene2k/convert-base", branch = "refactoring" }
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

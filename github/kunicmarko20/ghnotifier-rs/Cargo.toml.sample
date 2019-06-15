@@ -24,7 +24,6 @@ serde_derive = "1.0.84"
 simple-logging = "2.0.2"
 structopt = "0.2.13"
 webbrowser = "0.4.0"
-boringssl = "0.0.5"
 
 [features]
 default = ["gtk/v3_16"]

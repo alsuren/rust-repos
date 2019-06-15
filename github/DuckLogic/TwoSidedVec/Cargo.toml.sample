@@ -9,7 +9,6 @@ license = "MIT"
 
 [dependencies]
 serde = { version = "^1.0.27", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_test = { version = "^1" }

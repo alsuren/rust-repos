@@ -22,7 +22,6 @@ rusqlite = "0.12"
 
 timelearn = { path = "timelearn" }
 midilearn = { path = "midilearn", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "0.3"

@@ -19,19 +19,10 @@ build = "build.rs"
 
 links = "ovr"
 
-[package.metadata.docs.rs]
-all-features = true
-default-target = "x86_64-pc-windows-msvc"
-
-[package.metadata.release]
-pre-release-commit-message = "Release {{version}} 🎉🎉"
-pre-release-replacements = [ {file="README.md", search='ovr-sys = "[a-z0-9\\.-]+"', replace='ovr-sys = "{{version}}"'}, {file="README.md", search='version = "[a-z0-9\\.-]+"', replace='version = "{{version}}"'}]
-
 [dependencies]
 libc = "^0.2"
 vks = { version = "^0.17", optional = true, default-features = false, features = [ "core_1_0_3" ] }
 winapi = { version = "^0.2", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 vks = { version = "^0.17", default-features = false, features = [ "khr_swapchain_67" ] }
@@ -42,3 +33,11 @@ opengl = []
 directx = ["winapi"]
 vulkan = ["vks"]
 audio = ["winapi"]
+
+[package.metadata.docs.rs]
+all-features = true
+default-target = "x86_64-pc-windows-msvc"
+
+[package.metadata.release]
+pre-release-commit-message = "Release {{version}} 🎉🎉"
+pre-release-replacements = [ {file="README.md", search='ovr-sys = "[a-z0-9\\.-]+"', replace='ovr-sys = "{{version}}"'}, {file="README.md", search='version = "[a-z0-9\\.-]+"', replace='version = "{{version}}"'}]

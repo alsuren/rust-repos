@@ -17,14 +17,13 @@ rand = "*"
 image = "*"
 url = "*"
 cookie = "0.1.21"
-boringssl = "0.0.5"
-
-[dependencies.staticfile]
-version = "*"
 
 [build-dependencies]
 serde_codegen = "*"
 syntex = "*"
+
+[dependencies.staticfile]
+version = "*"
 
 [features]
 prod = []

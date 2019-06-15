@@ -8,6 +8,3 @@ authors = [ "dremann@gmail.com" ]
 
 name = "irc"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -28,7 +28,6 @@ xdg = "2.1.0"
 libflac_sys = { path = "libflac_sys" }
 liblame_sys = { path = "liblame_sys" }
 libpulse_sys = { path = "libpulse_sys" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

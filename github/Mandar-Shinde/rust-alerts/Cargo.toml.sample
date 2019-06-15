@@ -9,7 +9,6 @@ A alert message dialog box
 """
 
 [dependencies]
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3", features = ["winuser"] }

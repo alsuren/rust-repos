@@ -7,7 +7,6 @@ authors = ["Hans W. Uhlig <hans.uhlig@ibm.com>"]
 [dependencies]
 byteorder = "*"
 minifb    = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "canvas"

@@ -3,12 +3,8 @@ name = "rust_os"
 version = "0.1.0"
 authors = ["%%GITNAME%% <%%GITEMAIL%%>"]
 
-[package.metadata.bootimage]
-default-target = "x86_64-blog_os.json"
-
 [dependencies]
 bootloader = "0.3.4"
-boringssl = "0.0.5"
 
 # the profile used for `cargo build`
 [profile.dev]
@@ -17,3 +13,6 @@ panic = "abort" # disable stack unwinding on panic
 # the profile used for `cargo build --release`
 [profile.release]
 panic = "abort" # disable stack unwinding on panic
+
+[package.metadata.bootimage]
+default-target = "x86_64-blog_os.json"

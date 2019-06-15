@@ -3,14 +3,13 @@ name = "rusted_pixels"
 version = "0.1.0"
 authors = ["Jesper Fridefors <jesper.fridefors@gmail.com>"]
 
+[dependencies.png]
+git = "https://github.com/Lolirofle/image-png"
+
 [dependencies]
 sdl2 = "*"
 bitflags = "*"
 time = "0.1"
-boringssl = "0.0.5"
-
-[dependencies.png]
-git = "https://github.com/Lolirofle/image-png"
 
 [dependencies.sdl2_ttf]
 git = "https://github.com/andelf/rust-sdl2_ttf"

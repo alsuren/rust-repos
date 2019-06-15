@@ -9,7 +9,6 @@ chrono = { version = "0.4", features = ["serde"] }
 serde = "1.0"
 serde_derive = "1.0"
 serialport = "3.0.0"
-boringssl = "0.0.5"
 [dependencies.rusqlite]
 version = "0.14.0"
 features = ["chrono"]

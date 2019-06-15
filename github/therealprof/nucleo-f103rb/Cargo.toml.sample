@@ -23,7 +23,6 @@ bare-metal = "0.2.4"
 cortex-m = "0.6.0"
 nb = "0.1.2"
 cortex-m-rt = "0.6.8"
-boringssl = "0.0.5"
 
 [dependencies.stm32f1xx-hal]
 features = ["stm32f103", "rt"]

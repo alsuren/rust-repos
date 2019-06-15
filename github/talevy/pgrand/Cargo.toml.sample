@@ -14,4 +14,3 @@ postgres = { version = "*", features = ["chrono"] }
 docopt = "*"
 rustc-serialize = "*"
 time = "*"
-boringssl = "0.0.5"

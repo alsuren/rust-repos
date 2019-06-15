@@ -5,7 +5,6 @@ authors = ["David Campbell <dcampbell24@gmail.com>"]
 
 [dependencies]
 cake = { git = "https://github.com/ticki/cake.git" }
-boringssl = "0.0.5"
 
 [[bin]]
 name = "cake"

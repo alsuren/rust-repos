@@ -16,6 +16,3 @@ include = ["README.md", "LICENSE", "COPYRIGHT", "src/**/*.rs", "benches/**/*.rs"
 readme = "README.md"
 publish = false
 version = "0.0.0"
-
-[dependencies]
-boringssl = "0.0.5"

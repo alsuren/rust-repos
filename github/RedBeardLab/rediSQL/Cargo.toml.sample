@@ -15,7 +15,6 @@ env_logger = "0.6"
 redisql_lib = {path = "./redisql_lib"}
 telemetrics = {path = "./telemetrics"}
 sync_engine = {path = "./sync_engine"}
-boringssl = "0.0.5"
 
 [features]
 default = []

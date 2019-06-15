@@ -4,9 +4,6 @@ name = "blendish"
 version = "0.3.0"
 authors = ["Kevin Kelley <kevin@kelleysoft.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 
 [dependencies.nanovg]
 #path = "../nanovg-rs"

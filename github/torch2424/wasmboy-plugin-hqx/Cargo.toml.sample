@@ -12,7 +12,6 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 clippy = {version = "*", optional = true}
 hqx = { git = "https://github.com/CryZe/wasmboy-rs" }
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -3,8 +3,5 @@ name = "challenges"
 version = "0.1.0"
 authors = ["Peter Snyder <snyderp@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.encodings]
 path = "src/encodings"

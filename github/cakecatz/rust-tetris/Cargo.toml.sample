@@ -9,11 +9,6 @@ authors = [
 [[bin]]
 name = 'rust-tetris'
 
-[dependencies]
-time = "*"
-rand = "0.3"
-boringssl = "0.0.5"
-
 [dependencies.piston]
 git = "https://github.com/PistonDevelopers/piston.git"
 
@@ -25,3 +20,7 @@ git = "https://github.com/PistonDevelopers/glutin_window.git"
 
 [dependencies.piston2d-opengl_graphics]
 git = "https://github.com/PistonDevelopers/opengl_graphics.git"
+
+[dependencies]
+time = "*"
+rand = "0.3"

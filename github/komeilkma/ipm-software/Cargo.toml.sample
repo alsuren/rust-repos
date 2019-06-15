@@ -6,6 +6,3 @@ version = "0.0.0"
 [[bin]]
 name = "IPM Software"
 path = "admin.rs"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -15,7 +15,6 @@ path = "src/bin/pre-push.rs"
 config = "0.9.2"
 serde = "1.0.88"
 serde_derive = "1.0.88"
-boringssl = "0.0.5"
 
 [dependencies.mocktopus]
 optional = true

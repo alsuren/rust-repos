@@ -33,7 +33,6 @@ tide-headers = { path = "./tide-headers" }
 tide-log = { path = "./tide-log" }
 tide-forms = { path = "./tide-forms" }
 tide-querystring = { path = "./tide-querystring" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bytes = "0.4.12"

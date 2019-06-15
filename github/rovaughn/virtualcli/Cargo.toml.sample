@@ -7,7 +7,6 @@ authors = ["Alec NEwman <alecnwmn904@gmail.com>"]
 time = "*"
 rand = "*"
 libc = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "snake"

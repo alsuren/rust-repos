@@ -5,4 +5,3 @@ authors = ["Kevin Mehall <km@kevinmehall.net>"]
 
 [dependencies]
 libusb = { git="https://github.com/kevinmehall/libusb-rs.git", rev="3de038759f7c64a409a5d578b307a40e04a949a1" }
-boringssl = "0.0.5"

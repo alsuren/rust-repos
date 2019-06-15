@@ -9,7 +9,6 @@ proc_macro = true
 [dependencies]
 syn = { version = "0.12.12", features = ["visit", "extra-traits"] }
 quote = "0.4.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 slog = { version = "2.1.1", features = ["nested-values"] }

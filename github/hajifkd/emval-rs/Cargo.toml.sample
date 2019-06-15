@@ -3,12 +3,11 @@ name = "emval"
 version = "0.1.0"
 authors = ["Hajime Fukuda <hajime.fukuda@me.com>"]
 
-[package.metadata.testjs]
-node = "nodejs"
-prelude = "tests/prelude.js"
-
 [dependencies]
 emval-sys = { git = "https://github.com/hajifkd/emval-sys" }
 libc = "*"
 lazy_static = "*"
-boringssl = "0.0.5"
+
+[package.metadata.testjs]
+node = "nodejs"
+prelude = "tests/prelude.js"

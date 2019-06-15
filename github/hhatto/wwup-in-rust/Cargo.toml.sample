@@ -9,7 +9,6 @@ libc = "*"
 prctl = "1.0"
 chan = "*"
 chan-signal = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "3_processes_have_ids"

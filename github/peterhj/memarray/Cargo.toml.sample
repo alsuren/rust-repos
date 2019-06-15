@@ -21,4 +21,3 @@ arrayidx = { path = "../arrayidx" }
 byteorder = "*"
 float = { path = "../float", optional = true }
 sharedmem = { path = "../sharedmem" }
-boringssl = "0.0.5"

@@ -3,12 +3,11 @@ name = "touchpad-draw"
 version = "0.1.0"
 authors = ["gmorenz <morenzg@gmail.com>"]
 
-[dependencies]
-time = "*"
-boringssl = "0.0.5"
-
 [dependencies.image]
 git = "https://github.com/pistondevelopers/image"
 
 [dependencies.sdl2]
 git = "https://github.com/AngryLawyer/rust-sdl2"
+
+[dependencies]
+time = "*"

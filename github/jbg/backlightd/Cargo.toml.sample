@@ -5,7 +5,6 @@ authors = ["Jasper Bryant-Greene <jbg@rf.net.nz>"]
 
 [dependencies]
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

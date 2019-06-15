@@ -10,7 +10,6 @@ panic-semihosting = "0.5.1"
 stm32f1xx-hal = { version = "0.1.1", features = ["stm32f103", "rt"] }
 usb-device = { version = "0.2.0", features = [] }
 stm32f103xx-usb = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 #usb-device = { version = "0.2.0", features = ["std"] }

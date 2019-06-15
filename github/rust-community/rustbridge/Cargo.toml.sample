@@ -5,7 +5,6 @@ authors = ["Brian Anderson <banderson@mozilla.com>"]
 build = "build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 skeptic = "0.8.1"

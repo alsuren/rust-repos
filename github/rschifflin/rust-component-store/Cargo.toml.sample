@@ -7,6 +7,3 @@ authors = ["Mark Schifflin <rschifflin@hotmail.com>"]
 [lib]
 name = "component_store"
 crate_type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

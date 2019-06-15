@@ -8,7 +8,6 @@ kafka = { git = "https://github.com/Hoverbear/kafka-rust", branch = "ssl" }
 openssl = "*"
 iron = "*"
 lazy_static = "*"
-boringssl = "0.0.5"
 
 [target.heroku]
 version = "nightly"

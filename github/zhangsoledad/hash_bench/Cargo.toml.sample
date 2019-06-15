@@ -7,7 +7,6 @@ authors = ["soledad"]
 keccak = { path = "./keccak" }
 blake2b = { path = "./blake2b" }
 criterion = "0.2"
-boringssl = "0.0.5"
 
 
 [[bench]]

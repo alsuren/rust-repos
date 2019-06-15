@@ -32,6 +32,3 @@ rustc-dep-of-std = ['rustc-std-workspace-core', 'libc/rustc-dep-of-std']
 
 [workspace]
 members = ["mach-test"]
-
-[dependencies]
-boringssl = "0.0.5"

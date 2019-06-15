@@ -3,10 +3,6 @@ name = "mvc-example"
 version = "0.1.0"
 authors = ["Rémy Loubradou <r.loubradou@adveez.com>"]
 
-[dependencies]
-rustc-serialize = "0.3"
-boringssl = "0.0.5"
-
 
 [dependencies.iron]
 version = "*"
@@ -34,3 +30,6 @@ git = "https://github.com/iron/staticfile.git"
 [dependencies.bodyparser]
 
 git = "https://github.com/iron/body-parser.git"
+
+[dependencies]
+rustc-serialize = "0.3"

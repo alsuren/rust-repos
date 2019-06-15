@@ -15,7 +15,6 @@ rpds = { version = "0.5.0", features = ["serde"] }
 pyo3 = { version = "0.5.0", optional = true }
 serde = "1.0.90"
 serde_derive = "1.0.90"
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "aleozlx/ymlctx", branch = "master" }

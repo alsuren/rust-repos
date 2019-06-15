@@ -7,6 +7,3 @@ version = "0.0.0"
 name = "arena"
 path = "lib.rs"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

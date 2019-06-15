@@ -17,7 +17,6 @@ tempdir = "0.3"
 log = { version = "*", optional = true }
 env_logger = {version = "*", optional = true }
 toml = { version = "0.2", default-features = false, features = ["serde"] }
-boringssl = "0.0.5"
 
 [features]
 default = []

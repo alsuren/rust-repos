@@ -8,7 +8,6 @@ edition = "2018"
 llvm-alt = { git = "https://github.com/Others/llvm-rs.git"}
 structopt = "0.2"
 wasmparser = "0.29"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

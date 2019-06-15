@@ -6,4 +6,3 @@ authors = ["Sergey Valiev <svaliev@gmail.com>"]
 [dependencies]
 clap = { features = ["yaml"] }
 colored = "1.6"
-boringssl = "0.0.5"

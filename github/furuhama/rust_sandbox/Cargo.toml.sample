@@ -17,7 +17,6 @@ prog_rust = { path = "prog_rust" }
 minigrep = { path = "minigrep" }
 failure = "*"
 regex = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 

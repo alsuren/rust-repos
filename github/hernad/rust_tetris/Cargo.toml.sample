@@ -6,4 +6,3 @@ build = "build.rs"
 
 [dependencies]
 sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2" }
-boringssl = "0.0.5"

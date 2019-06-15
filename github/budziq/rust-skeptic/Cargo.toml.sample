@@ -12,9 +12,6 @@ path = "src/skeptic"
 [dev-dependencies.skeptic]
 path = "src/skeptic"
 
-[dependencies]
-boringssl = "0.0.5"
-
 # This makes the tests that link to Skeptic in README.md work.
 # It is not needed for normal uses of Skeptic.
 [dependencies.skeptic]

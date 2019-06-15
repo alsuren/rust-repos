@@ -14,7 +14,6 @@ lto = true
 [dependencies]
 libc = "*"
 sarkara = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 rusty-cheddar = "*"

@@ -9,7 +9,6 @@ database = {path = "./src/database"}
 server = {path = "./src/server"}
 macros = {path = "./src/macros"}
 error = {path = "./src/error"}
-boringssl = "0.0.5"
 
 [workspace]
 members = [

@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 regex = "1"
 chrono = "0.4"
-boringssl = "0.0.5"
 
 [lib]
 name = "aoc"

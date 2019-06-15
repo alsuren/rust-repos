@@ -10,7 +10,6 @@ path = "src/lib.rs"
 
 [dependencies]
 plygui-api = { version = "0.0.1", path = "../plygui-api" }
-boringssl = "0.0.5"
 
 [target.'cfg(any(target_os = "linux", target_os = "dragonfly", target_os = "freebsd", target_os = "openbsd"))'.dependencies]
 plygui-gtk = { version = "0.0.1", path = "../plygui-gtk", optional = true }

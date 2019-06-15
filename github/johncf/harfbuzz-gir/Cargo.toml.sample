@@ -7,4 +7,3 @@ authors = ["johncf <johncf@protonmail.com>"]
 libc = "0.2"
 glib = "0.1"
 harfbuzz-sys = { path = "./harfbuzz-sys", features = ["v0_9_2"] }
-boringssl = "0.0.5"

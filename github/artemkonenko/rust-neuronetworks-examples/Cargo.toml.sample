@@ -4,13 +4,12 @@ name = "rust-neuronetworks-examples"
 version = "0.0.1"
 authors = ["Artem Konenko <yadummer@gmail.com>"]
 
-[dependencies]
-num = "*"
-boringssl = "0.0.5"
-
 [dependencies.neuralnetwork]
 # git = "https://github.com/jaredkerim/rust-nn.git"
 git = "https://github.com/dummer/rust-nn.git"
 
 [dependencies.image]
 git = "https://github.com/PistonDevelopers/image"
+
+[dependencies]
+num = "*"

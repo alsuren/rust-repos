@@ -7,7 +7,6 @@ authors = ["Alon Shenkler <alonshenk@gmail.com>"]
 rand = "0.5"
 rayon = "1.0"
 indicatif = "*"
-boringssl = "0.0.5"
 
 #[profile.release]
 #debug = true

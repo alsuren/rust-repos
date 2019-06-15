@@ -5,4 +5,3 @@ authors = ["Sebastian Reichel <sre@ring0.de>"]
 
 [dependencies]
 gpiochip = { git = "https://github.com/sre/rust-gpiochip" }
-boringssl = "0.0.5"

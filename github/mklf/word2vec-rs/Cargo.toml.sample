@@ -25,4 +25,3 @@ rustc-serialize = "0.3.21"
 bincode = "0.6.0"
 log = "*"
 blas-sys = {version = "*",optional = true,default-features=false,features=["openblas"]}
-boringssl = "0.0.5"

@@ -9,7 +9,6 @@ rustc-serialize = "^0.3.22"
 crc = "^1.4.0"
 encoding = "^0.2.33"
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

@@ -4,10 +4,9 @@ version = "0.1.0"
 authors = ["Sebastian Schmidt <isibboi@gmail.com>"]
 edition = "2018"
 
-[dependencies]
-rand = "0.6"
-boringssl = "0.0.5"
-
 [dependencies.amethyst]
 version = "0.10.0"
 features = ["nightly"]
+
+[dependencies]
+rand = "0.6"

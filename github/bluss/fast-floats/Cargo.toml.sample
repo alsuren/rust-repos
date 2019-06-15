@@ -15,13 +15,12 @@ description = "Fast-math wrappers for floats; experimental and unstable; for exp
 keywords = []
 categories = []
 
+[dependencies]
+num-traits = { version = "0.1.40", optional = true }
+
+[features]
+
 [package.metadata.docs.rs]
 
 [package.metadata.release]
 no-dev-version = true
-
-[dependencies]
-num-traits = { version = "0.1.40", optional = true }
-boringssl = "0.0.5"
-
-[features]

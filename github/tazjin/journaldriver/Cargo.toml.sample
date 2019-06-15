@@ -16,7 +16,6 @@ serde_derive = "1.0"
 serde_json = "1.0"
 systemd = "0.3"
 ureq = { version = "0.6.2", features = [ "json" ]}
-boringssl = "0.0.5"
 
 [build-dependencies]
 pkg-config = "0.3"

@@ -10,4 +10,3 @@ crate-type = ["dylib"] # could be `staticlib` as well
 
 [dependencies]
 irrlicht-sys = { path = "irrlicht-sys", version = "0.1.0" }
-boringssl = "0.0.5"

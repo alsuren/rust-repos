@@ -8,6 +8,3 @@ repository = "https://github.com/dstu/r4"
 keywords = ["iterator", "iterate", "for", "comprehension", "macro"]
 license = "Apache-2.0"
 maintenance = { status = "passively-maintained" }
-
-[dependencies]
-boringssl = "0.0.5"

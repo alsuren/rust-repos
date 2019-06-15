@@ -13,7 +13,6 @@ description = "A safe binding for the e621 web API, written in the Rust programm
 reqwest = "0.9.2"
 serde_derive = "1.0.79"
 serde = "1.0.79"
-boringssl = "0.0.5"
 
 [badges]
 maintenance = { status = "actively-developed" }

@@ -8,15 +8,14 @@ readme = "README.md"
 license = "MIT License"
 authors = ["Sergey Arkhipov <nineseconds@yandex.ru>"]
 
+[dependencies.enum-set]
+enum-set = ">= 0.0.5"
+libc = "*"
+log = "*"
+
 [dependencies]
 clap = "1.0.3"
 xdg-basedir = "0.2.1"
 log = "0.3.1"
 pcre = "0.1.1"
 glob = "0.2.10"
-boringssl = "0.0.5"
-
-[dependencies.enum-set]
-enum-set = ">= 0.0.5"
-libc = "*"
-log = "*"

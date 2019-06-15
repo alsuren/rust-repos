@@ -10,4 +10,3 @@ proc-macro = true
 syn = {version = "0.13.1", features = ["extra-traits","full"]}
 quote = "0.5"
 proc-macro2 = "0.3"
-boringssl = "0.0.5"

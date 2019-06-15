@@ -11,9 +11,6 @@ keywords = ["unicode", "text", "i18n", "script"]
 [features]
 harfbuzz = ["harfbuzz-sys"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.harfbuzz-sys]
 version = "0.3"
 optional = true

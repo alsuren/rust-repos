@@ -34,7 +34,6 @@ substrate-service = { git = "https://github.com/paritytech/substrate" }
 substrate-cli = { git = "https://github.com/paritytech/substrate" }
 ros-integration = { path = "ros-integration", optional = true }
 robonomics-runtime = { path = "runtime" }
-boringssl = "0.0.5"
 
 [features]
 default = []

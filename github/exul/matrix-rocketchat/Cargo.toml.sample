@@ -40,7 +40,6 @@ slog-term = "2.4"
 slog-stream = "1.2"
 url = "1.7"
 yaml-rust = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 matrix_rocketchat_test = { path = "tests/matrix-rocketchat-test" }

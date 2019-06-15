@@ -11,7 +11,6 @@ log = "0.3"
 env_logger = "0.3"
 subcmd = { git = "https://github.com/samdolt/subcmd-rs.git" }
 handlebars = "0.12"
-boringssl = "0.0.5"
 
 [lib]
 name = "dml"

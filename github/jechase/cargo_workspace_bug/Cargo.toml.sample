@@ -8,4 +8,3 @@ authors = ["Josh Chase <jcjoshuachase@gmail.com>"]
 [dependencies]
 child_one = { path = "./child_one" }
 child_two = { path = "./child_two" }
-boringssl = "0.0.5"

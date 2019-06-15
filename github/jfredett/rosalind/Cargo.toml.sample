@@ -20,6 +20,3 @@ path = "src/problems/dna.rs"
 [[bin]]
 name="problem-rna"
 path = "src/problems/rna.rs"
-
-[dependencies]
-boringssl = "0.0.5"

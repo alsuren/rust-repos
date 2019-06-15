@@ -6,4 +6,3 @@ authors = ["margin <1186073272@qq.com>"]
 [dependencies]
 diesel = { version = "0.16.0", features = ["sqlite"] }
 diesel_codegen = { version = "0.16.0", features = ["sqlite"] }
-boringssl = "0.0.5"

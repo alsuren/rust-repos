@@ -19,6 +19,3 @@ panic = "abort"
 
 [profile.release]
 panic = "abort"
-
-[dependencies]
-boringssl = "0.0.5"

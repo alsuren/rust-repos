@@ -11,14 +11,6 @@ build = "build.rs"
 name = "rust_media"
 path = "lib.rs"
 
-[dependencies]
-num = "*"
-num-derive = "0.1.39"
-time = "*"
-byteorder = "*"
-libc = "0.2"
-boringssl = "0.0.5"
-
 [dependencies.libvpx-sys]
 
 git = "https://github.com/pcwalton/libvpx"
@@ -52,6 +44,13 @@ git = "https://github.com/pcwalton/giflib"
 [target.x86_64-apple-darwin.dependencies.core-foundation]
 
 git = "https://github.com/servo/rust-core-foundation"
+
+[dependencies]
+num = "*"
+num-derive = "0.1.39"
+time = "*"
+byteorder = "*"
+libc = "0.2"
 
 [dev-dependencies]
 hound = "2.0"

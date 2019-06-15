@@ -26,7 +26,6 @@ x11 = { version = "^2.18.1", features = ["xlib"] }
 xkbcommon = { version = "^0.4", features = ["x11"] }
 xcb = "^0.8.2"
 xcb-util = { version = "^0.2", features = ["keysyms"] }
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

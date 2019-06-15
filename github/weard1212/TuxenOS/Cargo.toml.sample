@@ -3,10 +3,6 @@ name = "TuxenOS"
 version = "0.1.0"
 authors = ["troot <sam_d_olson@hotmail.com>; Max <Maxwell.McElhone@southeasttech.edu>"]
 
-# target for the bootimage package
-[package.metadata.bootimage]
-default-target = "x86_64-tuxen_os.json"
-
 # the profile used for `cargo build`
 [profile.dev]
 panic = "abort" # disable stack unwinding on panic
@@ -22,7 +18,10 @@ spin = "0.4.6"
 uart_16550 = "0.1.0" # for sending data over serial port
 x86_64 = "0.2.8" # for writing to I/O ports
 pic8259_simple = "0.1.1" # programmable interrupt controller in the style of the 1976 Intel 8259 (Probably will switch to APIC later.)
-boringssl = "0.0.5"
+
+# target for the bootimage package
+[package.metadata.bootimage]
+default-target = "x86_64-tuxen_os.json"
 
 [dependencies.lazy_static]
 version = "1.0"

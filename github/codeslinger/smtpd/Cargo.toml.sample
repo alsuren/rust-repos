@@ -10,6 +10,3 @@ path = "src/smtpd/lib.rs"
 [[bin]]
 name = "smtpd"
 test = false
-
-[dependencies]
-boringssl = "0.0.5"

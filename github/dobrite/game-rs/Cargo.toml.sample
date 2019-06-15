@@ -9,9 +9,6 @@ authors = ["Dave O <davidobrite@gmail.com>"]
 name = "game-rs"
 path = "src/main.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.piston]
 git = "https://github.com/pistondevelopers/piston"
 

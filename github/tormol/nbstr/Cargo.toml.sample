@@ -13,7 +13,6 @@ authors = ["Torbjørn Birch Moltu <t.b.moltu@lyse.net>"]
 
 [dependencies]
 clippy = {optional=true, version="0.*"}# wildest wildcard crates.io will allow.
-boringssl = "0.0.5"
 
 [features] # see README for descriptions
 default = []

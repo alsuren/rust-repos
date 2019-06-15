@@ -4,9 +4,6 @@ name = "plause"
 version = "0.0.1"
 authors = ["Jett <whackashoe@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust-crypto]
 git = "https://github.com/whackashoe/rust-crypto.git"
 branch = "final-fix"

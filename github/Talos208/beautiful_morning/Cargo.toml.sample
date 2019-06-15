@@ -12,4 +12,3 @@ base64 = "*"
 chrono={version = "0.3", features = ["serde"]}
 hyper = {version = "*", default_features = false}
 sha2="*"
-boringssl = "0.0.5"

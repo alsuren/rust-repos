@@ -18,4 +18,3 @@ tokio-core = "0.1.6"
 
 hyper = { git = "https://github.com/hyperium/hyper", rev = "3da720a99fab9cf6ecf8a206bb22c826ebb74992" }
 hyper-tls = { git = "https://github.com/hyperium/hyper-tls", rev = "74aefbe500df5bb2d9a87844580b4ac21d49f134" }
-boringssl = "0.0.5"

@@ -2,12 +2,11 @@
 name = "dns"
 version = "0.1.0"
 authors = ["animal"]
+
+[dependencies.bytes]
+git = "https://github.com/carllerche/bytes"
 [dependencies]
 mio = "*"
 byteorder = "*"
 rustc-serialize = "*"
 bincode = "*"
-boringssl = "0.0.5"
-
-[dependencies.bytes]
-git = "https://github.com/carllerche/bytes"

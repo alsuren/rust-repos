@@ -13,7 +13,6 @@ embedded-hal = "0.1.2"
 ssd1306 = "0.1.0"
 panic-abort = "0.1.1"
 embedded-graphics = "0.1.1"
-boringssl = "0.0.5"
 
 # Use a fork of the HAL crate with I2C support. See japaric/stm32f103xx-hal#50 for progress
 [dependencies.stm32f103xx-hal]

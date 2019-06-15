@@ -6,9 +6,6 @@ edition = "2015"
 license = "MIT"
 description = "Simple file search with possibility to avoid shell escaping regexes"
 
-[package.metadata.deb]
-depends = "libgcc1 (>= 1:6.3.0), libc6 (>= 2.24)"
-
 [lib]
 name = "aufindlib"
 path = "src/lib.rs"
@@ -24,4 +21,6 @@ clap = "^2.32"
 rustyline = "^2.1"
 colored = "^1.6"
 dirs = "*"
-boringssl = "0.0.5"
+
+[package.metadata.deb]
+depends = "libgcc1 (>= 1:6.3.0), libc6 (>= 2.24)"

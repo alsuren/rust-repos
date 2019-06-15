@@ -15,7 +15,6 @@ serde = "*"
 serde_json = "*"
 serde_derive = "*"
 juniper = "*"
-boringssl = "0.0.5"
 
 [features]
 default = ["database-mongodb", "storage-ipfs"]

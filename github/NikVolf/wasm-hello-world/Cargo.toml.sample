@@ -5,7 +5,6 @@ authors = ["NikVolf <nikvolf@gmail.com>"]
 
 [dependencies]
 pwasm-ethereum = "0.3"
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

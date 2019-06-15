@@ -6,9 +6,6 @@ authors = ["Jay Anderson"]
 [[bin]]
 name = "turing"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.stopwatch]
 git = "https://github.com/jayanderson/stopwatch.git"
 

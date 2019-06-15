@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 php-sys = { version = "7.2.12", path = "php-sys" }
-boringssl = "0.0.5"

@@ -18,7 +18,10 @@ docopt = "*"
 rustc-serialize = "*"
 ecdh = "*"
 nonblocking_socket = "*"
-boringssl = "0.0.5"
+
+[build-dependencies]
+gcc = "*"
+pkg-config = "*"
 
 [dependencies.dbus]
 version = "*"
@@ -39,8 +42,4 @@ version = "*"
 
 [dependencies.condition_variable]
 version = "*"
-
-[build-dependencies]
-gcc = "*"
-pkg-config = "*"
 #path = "../condition_variable"

@@ -65,4 +65,3 @@ colored = { version = "^1.6", optional = true }
 structopt = { version = "^0.1", optional = true }
 structopt-derive = { version = "^0.1", optional = true }
 fern = { version = "^0.5", features = ["colored"], optional = true }
-boringssl = "0.0.5"

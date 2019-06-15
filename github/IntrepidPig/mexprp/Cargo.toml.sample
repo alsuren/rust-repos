@@ -20,4 +20,3 @@ default = ["rug"]
 [dependencies]
 failure = "0.1"
 rug = { version = "1.0", optional = true }
-boringssl = "0.0.5"

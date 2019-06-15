@@ -11,7 +11,6 @@ keywords = ["vm","lisp","languages"]
 
 [dependencies]
 log = "0.3.1"
-boringssl = "0.0.5"
 
 [dependencies.seax_util]
 git = "https://github.com/hawkw/seax_util.git"

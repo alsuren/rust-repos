@@ -8,7 +8,9 @@ authors = [
 
 [dependencies]
 rand = "0.3"
-boringssl = "0.0.5"
+
+[[bin]]
+name = "rust-pong"
 
 [dependencies.cgmath]
 git = "https://github.com/bjz/cgmath-rs.git"
@@ -24,7 +26,4 @@ git = "https://github.com/PistonDevelopers/glutin_window.git"
 
 [dependencies.piston2d-opengl_graphics]
 git = "https://github.com/PistonDevelopers/opengl_graphics.git"
-
-[[bin]]
-name = "rust-pong"
 

@@ -13,7 +13,6 @@ serde_derive = "~1"
 serde_json = "~1"
 uuid = { version = "~0.5", features = ["serde", "v4"] }
 xdg = "~2"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "edabo"

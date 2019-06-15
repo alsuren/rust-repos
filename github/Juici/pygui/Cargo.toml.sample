@@ -13,7 +13,6 @@ publish = false
 [dependencies]
 piston_window = "0.77.0"
 glfw = "*"
-boringssl = "0.0.5"
 
 [dependencies.pistoncore-glfw_window]
 git = "https://github.com/PistonDevelopers/glfw_window"

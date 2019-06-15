@@ -21,5 +21,4 @@ relm-derive = { version = "^0.15.0" }
 serde = "1.0"
 serde_derive = "1.0"
 uom = { version = "0.20", features = ["use_serde"]}
-boringssl = "0.0.5"
 

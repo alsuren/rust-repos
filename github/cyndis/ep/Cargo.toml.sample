@@ -3,9 +3,8 @@ name = "ep"
 version = "0.1.0"
 authors = ["Mikko Perttunen <cyndis@kapsi.fi>"]
 
-[dependencies]
-term = "*"
-boringssl = "0.0.5"
-
 [dependencies.epwing]
 git = "git://github.com/cyndis/epwing.rs"
+
+[dependencies]
+term = "*"

@@ -3,8 +3,5 @@ name = "rquant"
 version = "0.1.0"
 authors = ["gaoxiaojun <gaoxiaojun@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.eventbus]
 git = "https://github.com/gaoxiaojun/eventbus.git"

@@ -17,7 +17,6 @@ strum = "0.12.0"
 strum_macros = "0.12.0"
 lazy_static = "1.2.0"
 priority-queue = "0.5.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = { version = "0.2.5", default-features = false }

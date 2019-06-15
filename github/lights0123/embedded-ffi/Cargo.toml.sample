@@ -9,14 +9,13 @@ edition = "2018"
 keywords = ["ffi", "osstr", "osstring", "cstr", "cstring"]
 categories = ["no-std", "embedded", "os::unix-apis", "development-tools::ffi"]
 
-[package.metadata.docs.rs]
-all-features = true
-
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 cstr_core = "0.1.2"
-boringssl = "0.0.5"
 
 [features]
 alloc = ["cstr_core/alloc"]
+
+[package.metadata.docs.rs]
+all-features = true

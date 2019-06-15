@@ -12,10 +12,6 @@ glutin = "*"
 gfx_device_gl = { git = "https://github.com/gfx-rs/gfx" }
 gfx_window_glutin = { git = "https://github.com/gfx-rs/gfx" }
 rand = "0.3"
-boringssl = "0.0.5"
-
-[dependencies.vecmath]
-git = "https://github.com/PistonDevelopers/vecmath"
 
 [target.x86_64-unknown-linux-gnu.dependencies]
 gfx_window_glfw = { git = "https://github.com/gfx-rs/gfx" }
@@ -28,3 +24,6 @@ gfx_window_dxgi = { git = "https://github.com/gfx-rs/gfx" }
 [target.x86_64-pc-windows-msvc.dependencies]
 gfx_device_dx11 = { git = "https://github.com/gfx-rs/gfx" }
 gfx_window_dxgi = { git = "https://github.com/gfx-rs/gfx" }
+
+[dependencies.vecmath]
+git = "https://github.com/PistonDevelopers/vecmath"

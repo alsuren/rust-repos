@@ -17,7 +17,6 @@ srml-support = { package = 'srml-support', default-features = false, git = "http
 srml-support-procedural = { package = 'srml-support-procedural', git = "https://github.com/joystream/substrate.git", rev = "6dfc3e8b057bb00322136251a0f10305fbb1ad8f"}
 system = { package = 'srml-system', default-features = false, git = "https://github.com/joystream/substrate.git", rev = "6dfc3e8b057bb00322136251a0f10305fbb1ad8f"}
 balances = { package = 'srml-balances', default-features = false, git = "https://github.com/joystream/substrate.git", rev = "6dfc3e8b057bb00322136251a0f10305fbb1ad8f"}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 runtime-io = { package = 'sr-io', default-features = false, git = "https://github.com/joystream/substrate.git", rev = "6dfc3e8b057bb00322136251a0f10305fbb1ad8f"}

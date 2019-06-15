@@ -6,6 +6,5 @@ license = "GPL-3.0-or-later"
 description = "Small graphics library to access OpenGL and/or Vulkan in a low level but more comfortable way."
 
 [dependencies]
-boringssl = "0.0.5"
 #glfw = "0.19.0"    # waiting for Visual Studio 17 community support !!
 

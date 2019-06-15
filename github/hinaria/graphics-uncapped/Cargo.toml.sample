@@ -17,4 +17,3 @@ gfx-hal            = { path = "/discord/gfx/src/hal" }
 gfx-backend-dx12   = { path = "/discord/gfx/src/backend/dx12" }
 gfx-backend-dx11   = { path = "/discord/gfx/src/backend/dx11" }
 gfx-backend-vulkan = { path = "/discord/gfx/src/backend/vulkan" }
-boringssl = "0.0.5"

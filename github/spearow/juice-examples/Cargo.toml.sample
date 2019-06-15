@@ -28,7 +28,6 @@ docopt = "0.6.75"
 rustc-serialize = "0.3"
 
 clippy = { version = "0.0.23", optional = true }
-boringssl = "0.0.5"
 
 
 [features]

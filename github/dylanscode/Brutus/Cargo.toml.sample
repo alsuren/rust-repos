@@ -6,7 +6,6 @@ authors = ["dylan"]
 [dependencies]
 docopt = "~0.6.78"
 rustc-serialize = "0.3.16"
-boringssl = "0.0.5"
 #docopt_macros = "~0.6.80"
 
 [profile.dev]

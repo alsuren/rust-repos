@@ -12,7 +12,6 @@ nb = "0.1.1"
 embedded-hal = "*"
 
 serial-mp3-player-driver = { path = "/Users/michaelboeckling/git/serial-mp3-player-driver" }
-boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 version = "0.3.12"

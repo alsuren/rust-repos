@@ -17,6 +17,3 @@ name = "doc_file"
 path = "src/lib.rs"
 plugin = true
 doc = false
-
-[dependencies]
-boringssl = "0.0.5"

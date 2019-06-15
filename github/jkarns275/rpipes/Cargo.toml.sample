@@ -11,4 +11,3 @@ ctrlc = { version = "3.0", features = ["termination"] }
 clap = "2.32.0"
 terminal_size = "0.1.8"
 pancurses = { version = "0.16", features = ["wide", "win32"] }
-boringssl = "0.0.5"

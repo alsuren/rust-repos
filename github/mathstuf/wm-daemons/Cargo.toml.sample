@@ -11,7 +11,6 @@ Daemons to handle the modern D-Bus service desktop.
 clap = "~1.2.0"
 config = "~0.1.2"
 xdg-basedir = "~0.2.0"
-boringssl = "0.0.5"
 
 [lib]
 name = "wm_daemons"

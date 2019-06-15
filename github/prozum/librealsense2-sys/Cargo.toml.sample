@@ -9,6 +9,3 @@ edition = "2018"
 [build-dependencies]
 pkg-config = "0.3.14"
 bindgen = "0.48.1"
-
-[dependencies]
-boringssl = "0.0.5"

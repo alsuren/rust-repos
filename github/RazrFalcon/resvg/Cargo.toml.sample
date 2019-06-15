@@ -11,9 +11,6 @@ repository = "https://github.com/RazrFalcon/resvg"
 readme = "README.md"
 categories = ["multimedia::images"]
 
-[package.metadata.docs.rs]
-all-features = true
-
 [workspace]
 members = [
     "capi",
@@ -38,11 +35,13 @@ gdk-pixbuf = { version = "0.6", optional = true }
 
 # qt backend
 resvg-qt = { path = "resvg-qt", version = "0.6", optional = true }
-boringssl = "0.0.5"
 
 [features]
 cairo-backend = ["cairo-rs", "gdk-pixbuf"]
 qt-backend = ["resvg-qt"]
+
+[package.metadata.docs.rs]
+all-features = true
 
 [lib]
 doctest = false

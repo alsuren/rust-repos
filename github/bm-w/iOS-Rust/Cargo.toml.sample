@@ -6,6 +6,3 @@ authors = ["Bastiaan Marinus van de Weerd <bastiaan@bm-w.eu>"]
 [lib]
 path = "rust/lib.rs"
 crate-type = ["staticlib"]
-
-[dependencies]
-boringssl = "0.0.5"

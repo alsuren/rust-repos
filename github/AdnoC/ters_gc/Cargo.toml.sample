@@ -9,16 +9,13 @@ description = "Create garbage colleced pointers"
 keywords = ["arena", "gc"]
 categories = ["Memory management"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.ters_gc_derive]
 path = "ters_gc_derive"
-
-[dev-dependencies]
-priority-queue = "0.5.1" # For dijkstra test
-version-sync = "0.5"
 
 [dev-dependencies.compiletest_rs]
 version = "0.3.11"
 features = ["stable"]
+
+[dev-dependencies]
+priority-queue = "0.5.1" # For dijkstra test
+version-sync = "0.5"

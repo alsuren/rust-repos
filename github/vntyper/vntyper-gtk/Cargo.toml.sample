@@ -6,7 +6,6 @@ authors = ["Do Duy <doduycm@gmail.com>"]
 [dependencies]
 gdk = "0.5.3"
 vntyper = { git = "https://github.com/vntyper/vntyper.git" }
-boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.1.3"

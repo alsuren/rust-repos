@@ -13,4 +13,3 @@ crate-type = ["rlib"]
 [dependencies]
 bitflags = "0.2"
 libc = "*"
-boringssl = "0.0.5"

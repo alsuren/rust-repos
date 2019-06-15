@@ -16,7 +16,6 @@ serde_json = "1.0"
 env_logger = "0.5"
 rayon = "1.0"
 sem = { git = "https://github.com/gloit042/sem" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-grpcio = "0.1.0"

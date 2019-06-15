@@ -15,7 +15,6 @@ serde_derive="*"
 serde="*"
 serde_json="*"
 rayon="*"
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 nix="0.6"

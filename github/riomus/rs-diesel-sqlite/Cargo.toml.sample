@@ -8,4 +8,3 @@ authors = ["Taryn Hill <taryn@phrohdoh.com>"]
 diesel = "0.10"
 diesel_codegen = { version = "0.10", features = ["sqlite"] }
 dotenv = "0.8"
-boringssl = "0.0.5"

@@ -17,7 +17,6 @@ maintenance = { status = "experimental" }
 
 [dependencies]
 log = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3"

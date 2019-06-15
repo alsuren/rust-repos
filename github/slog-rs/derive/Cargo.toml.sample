@@ -10,10 +10,6 @@ documentation = "https://docs.rs/slog_derive"
 repository = "https://github.com/slog-rs/derive"
 categories = ["development-tools::debugging"]
 
-[package.metadata.release]
-sign-commit = true
-tag-prefix = "v"
-
 [badges]
 travis-ci = { repository = "slog-rs/derive", branch = "master" }
 maintenance = { status = "actively-developed" }
@@ -25,7 +21,6 @@ proc_macro = true
 proc-macro2 = "0.4.20"
 syn = { version = "0.15", features = ["visit", "extra-traits"] }
 quote = "0.6.8"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 slog = { version = "2.1.0", features = ["nested-values"] }
@@ -33,3 +28,7 @@ slog-term = "2.3.0"
 serde = "1.0.27"
 serde_derive = "1.0.27"
 erased-serde = "0.3.3"
+
+[package.metadata.release]
+sign-commit = true
+tag-prefix = "v"

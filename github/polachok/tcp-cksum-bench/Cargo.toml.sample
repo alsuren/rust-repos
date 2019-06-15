@@ -5,10 +5,9 @@ authors = ["Alexander Polyakov <apolyakov@beget.ru>"]
 build = "build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
+[build-dependencies]
+gcc = "*"
 
 [dependencies.pnet]
 git = "https://github.com/polachok/libpnet"
 branch = "tcp+slice"
-[build-dependencies]
-gcc = "*"

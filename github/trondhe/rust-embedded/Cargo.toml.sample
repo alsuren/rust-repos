@@ -10,7 +10,6 @@ cortex-m-rt = "0.6.7"
 # cortex-m-rtfm = "0.4"
 # panic-semihosting = "0.5"
 panic-halt = "0.2.0"
-boringssl = "0.0.5"
 
 [dependencies.nrf52832-pac]
 version = "0.6"

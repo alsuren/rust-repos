@@ -9,13 +9,9 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/Marwes/pretty.rs"
 
-[package.metadata.docs.rs]
-features = ["termcolor"]
-
 [dependencies]
 typed-arena = "1.2.0"
 termcolor = { version = "0.3", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "2.1.4"
@@ -27,3 +23,6 @@ name = "trees"
 [[example]]
 name = "colored"
 required-features = ["termcolor"]
+
+[package.metadata.docs.rs]
+features = ["termcolor"]

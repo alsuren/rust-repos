@@ -8,6 +8,9 @@ build="build.rs"
 serde_codegen = "0.7.5"
 syntex = "0.32.0"
 
+[dependencies.jsonway]
+git = "https://github.com/rustless/jsonway"
+
 [dependencies]
 quickersort = "2.0.1"
 sha1="0.1.1"
@@ -36,10 +39,6 @@ lazy_static="0.2.1"
 url="1.1.0"
 rand="0.3.14"
 cookie="0.2.4"
-boringssl = "0.0.5"
-
-[dependencies.jsonway]
-git = "https://github.com/rustless/jsonway"
 
 [features]
 default=["serde_type"]

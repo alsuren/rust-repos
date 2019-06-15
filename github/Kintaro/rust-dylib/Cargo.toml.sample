@@ -7,7 +7,6 @@ description = "Standalone version of former dylib module"
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [lib]
 

@@ -9,7 +9,6 @@ authors = ["Stacey Ell <stacey.ell@gmail.com>"]
 time = "*"
 phf = "*"
 phf_macros = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

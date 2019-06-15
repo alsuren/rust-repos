@@ -7,7 +7,6 @@ authors = ["Piotr Zolnierek <pzolnierek@gmail.com>"]
 
 [dependencies]
 tcod = "*"
-boringssl = "0.0.5"
 
 [dependencies.rogue]
 path = "./rogue"

@@ -11,4 +11,3 @@ description = "Implementation of the `embedded-hal` traits for ESP8266"
 [dependencies]
 libc = { version = "0.2.22", default-features = false }
 embedded-hal = { version = "0.2.1", features = ["unproven"] }
-boringssl = "0.0.5"

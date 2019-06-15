@@ -8,7 +8,6 @@ log = "0.3.6"
 log4rs = { version = "0.4.7", features = ["toml"] }
 toml = "0.1.30"
 rand = "0.3.14"
-boringssl = "0.0.5"
 
 [dependencies.clausewitz-data]
 path = "./clausewitz-data"

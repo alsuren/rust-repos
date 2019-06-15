@@ -7,7 +7,6 @@ authors = ["Joe Neeman <joeneeman@gmail.com>"]
 #regex = "*"
 #regex = { path = "../regex-orig" }
 regex = { path = "../regex" }
-boringssl = "0.0.5"
 #regex = { git = "https://github.com/rust-lang-nursery/regex.git", branch = "dfa" }
 
 [[bench]]

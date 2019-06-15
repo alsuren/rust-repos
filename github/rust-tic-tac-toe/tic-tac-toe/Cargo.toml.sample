@@ -5,7 +5,6 @@ authors = ["Rust Developer"]
 
 [dependencies]
 termion = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_ne = "0.3.0"

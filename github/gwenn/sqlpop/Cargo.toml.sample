@@ -18,7 +18,6 @@ maintenance = { status = "experimental" }
 
 [dependencies]
 lalrpop-util = "0.16"
-boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = "0.16"

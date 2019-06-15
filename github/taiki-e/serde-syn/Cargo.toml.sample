@@ -19,12 +19,6 @@ include = [
     "/src/**/*.rs",
 ]
 
-[package.metadata.docs.rs]
-all-features = true
-
-[package.metadata.playground]
-all-features = true
-
 [features]
 default = []
 json = ["serde_json"]
@@ -35,9 +29,14 @@ serde = ">=1.0.59, <2"
 serde_derive = ">=1.0.59, <2" # This is necessary to make `-Z minimal-versions` build successful.
 serde_json = { version = "1", optional = true }
 syn = { version = "0.15.29", default-features = false, features = ["full"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 syn = { version = "0.15.29", features = ["full", "extra-traits"] }
 quote = "0.6.8"
 serde_json = "1"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[package.metadata.playground]
+all-features = true

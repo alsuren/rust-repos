@@ -10,7 +10,6 @@ regex = "*"
 getopts = "*"
 toml = "*"
 time = "*"
-boringssl = "0.0.5"
 
 [dependencies.influx]
 git = "https://github.com/derekdreery/influx-rs"

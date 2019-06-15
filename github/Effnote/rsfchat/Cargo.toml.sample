@@ -12,7 +12,6 @@ futures = "0.1.25"
 serde = "1.0.82"
 tokio = "0.1.13"
 tokio-timer = "0.2.8"
-boringssl = "0.0.5"
 
 [dependencies.fchat]
 git = "https://github.com/effnote/libfchat"

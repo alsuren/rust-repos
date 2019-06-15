@@ -7,9 +7,6 @@ authors = ["YoungKing <yanckin@gmail.com>"]
 [[bin]] 
 name = "hasu"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.consul]
 git = "https://github.com/youngking/consul-rust"
 

@@ -10,8 +10,7 @@ documentation = "https://docs.rs/defmac/"
 repository = "https://github.com/bluss/defmac"
 categories = ["rust-patterns"]
 
+[dependencies]
+
 [package.metadata.release]
 no-dev-version = true
-
-[dependencies]
-boringssl = "0.0.5"

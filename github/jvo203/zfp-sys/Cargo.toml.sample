@@ -15,6 +15,3 @@ cmake = "0.1.35"
 [features]
 default = []
 cuda = []
-
-[dependencies]
-boringssl = "0.0.5"

@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 gtk = {git = 'https://github.com/gtk-rs/gtk'}
 glib = {git = 'https://github.com/gtk-rs/glib'}
-boringssl = "0.0.5"

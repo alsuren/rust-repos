@@ -8,18 +8,15 @@ authors = ["Philipp Oppermann <dev@phil-opp.com>"]
 name = "rustos"
 crate-type = ["staticlib"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.std]
 path = "lib/libstd"
 
 [dependencies.scheduler]
 path = "lib/scheduler"
 
+[target.x86_64-unknown-linux-gnu.dependencies.frame_stack]
+path = "arch/x86_64/frame_stack"
+
 [dependencies.spinlock]
 git = "https://github.com/phil-opp/spinlock-rs.git"
 branch = "try_lock"
-
-[target.x86_64-unknown-linux-gnu.dependencies.frame_stack]
-path = "arch/x86_64/frame_stack"

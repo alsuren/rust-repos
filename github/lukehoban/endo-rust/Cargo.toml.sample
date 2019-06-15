@@ -6,7 +6,6 @@ authors = ["Luke Hoban <lukehoban@gmail.com>"]
 [dependencies]
 image = "*"
 getopts = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.xi-rope]
 path = "rope"

@@ -23,7 +23,6 @@ error-chain = "0.10"
 url = "1"
 ipnetwork = "^0.12"
 syslog = "^4.0"
-boringssl = "0.0.5"
 
 [dependencies.rusqlite]
 version = "^0.16"

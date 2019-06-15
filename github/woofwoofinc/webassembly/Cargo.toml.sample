@@ -20,17 +20,16 @@ include = [
     "README.md",
 ]
 
+[dependencies]
+lazy_static = "1.0.0"
+rand = "0.4"
+
+[lib]
+crate-type = ["cdylib"]
+
 [package.metadata.sphinx]
 docs-path = "docs"
 commit-message = "(cargo-sphinx) Generate docs."
 sign-commit = false
 push-remote = "origin"
 push-branch = "gh-pages"
-
-[dependencies]
-lazy_static = "1.0.0"
-rand = "0.4"
-boringssl = "0.0.5"
-
-[lib]
-crate-type = ["cdylib"]

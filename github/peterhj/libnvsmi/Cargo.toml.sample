@@ -14,4 +14,3 @@ path = "tools/nvsmi-tool.rs"
 [dependencies]
 rustc-serialize = "*"
 num_cpus = "*"
-boringssl = "0.0.5"

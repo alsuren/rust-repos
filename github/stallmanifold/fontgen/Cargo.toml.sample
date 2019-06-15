@@ -11,7 +11,6 @@ freetype-rs = "0.19.1"
 image = "0.20.1"
 structopt = "0.2"
 bmfa = { git = "https://github.com/stallmanifold/bmfa" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_cmd = "0.10"

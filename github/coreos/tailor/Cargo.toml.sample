@@ -24,7 +24,6 @@ serde_json = "*"
 serde_yaml = "*"
 snap = "*"
 structopt = "*"
-boringssl = "0.0.5"
 
 [features]
 watch = ["handlebars-iron/watch"]

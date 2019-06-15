@@ -16,7 +16,6 @@ exonum-derive = "0.11"
 failure = "0.1.5"
 java_bindings = { path = "../exonum-java-binding/exonum-java-binding/core/rust", features = ["invocation", "resource-manager"] }
 integration_tests = { path = "../exonum-java-binding/exonum-java-binding/core/rust/integration_tests" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 exonum-build = "0.11"

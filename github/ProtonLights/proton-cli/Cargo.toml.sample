@@ -14,7 +14,6 @@ openssl = "~0.9"
 rustc-serialize = "^0.3"
 regex = "^0.2"
 postgres = {version="~0.14", features = ["with-rustc-serialize"]}
-boringssl = "0.0.5"
 
 [dependencies.sfml]
 version = "^0.12"

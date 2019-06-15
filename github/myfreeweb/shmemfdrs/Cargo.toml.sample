@@ -12,7 +12,6 @@ repository = "https://github.com/myfreeweb/shmemfdrs"
 [dependencies]
 libc = "0.2"
 sc = { version = "0.2", optional = true }
-boringssl = "0.0.5"
 
 [features]
 memfd = ["sc"]

@@ -10,7 +10,6 @@ rocket_contrib = "*"
 serde = "*"
 serde_json = "*"
 serde_derive = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "gor-cli"

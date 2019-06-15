@@ -10,13 +10,13 @@ readme = "README.md"
 keywords = ["voting", "vote", "election", "tally", "ballot"]
 categories = ["science", "economics", "social choice", "political science"]
 
-[package.metadata.docs.rs]
-features = ["rational"]
-
 [badges]
 travis-ci = { repository = "phayes/tallystick", branch = "master" }
 codecov = { repository = "phayes/tallystick", branch = "master", service = "github" }
 maintenance = { status = "actively-developed" }
+
+[package.metadata.docs.rs]
+features = ["rational"]
 
 [features]
 default = []
@@ -29,7 +29,6 @@ petgraph = {default-features = false, version = "0.4.13"}
 derive_more = "0.14.0"
 num-traits = "0.2.6"
 num-rational = {optional = true, version = "0.2.1"}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

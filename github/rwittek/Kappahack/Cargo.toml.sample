@@ -16,7 +16,6 @@ user32-sys = "*"
 kernel32-sys = "*"
 crc = "*"
 rand = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "*"

@@ -6,6 +6,5 @@ authors = ["twetzel59 <twetzel59@gmail.com>"]
 [dependencies]
 sfml = "0.14.0"
 engine = { path = "engine" }
-boringssl = "0.0.5"
 
 [workspace]

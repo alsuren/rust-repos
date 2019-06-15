@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["Fan Jiang <i@fanjiang.me>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["staticlib"]

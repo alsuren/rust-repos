@@ -13,7 +13,6 @@ license = "Apache-2.0 OR MIT"
 [dependencies]
 hack = { package = "slices-hack", version = "=0.1.0", path = "hack" }
 proc-macro-hack = "~0.5"
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "yangby-cryptape/rust-slices" }

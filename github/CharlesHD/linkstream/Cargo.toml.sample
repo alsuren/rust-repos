@@ -14,4 +14,3 @@ opt-level = 0
 docopt = "*"
 rustc-serialize = "*"  # if you're using `derive(RustcDecodable)`
 rand = "*"
-boringssl = "0.0.5"

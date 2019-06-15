@@ -20,6 +20,3 @@ travis-ci = { repository = "AlexHuszagh/numpress" }
 [features]
 default = ["std"]
 std = []
-
-[dependencies]
-boringssl = "0.0.5"

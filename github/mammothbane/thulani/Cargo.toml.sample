@@ -36,7 +36,6 @@ pest = "~2.1"
 pest_derive = "~2.1"
 postgres = { version = "^0.15", optional = true, features = ["with-chrono"] }
 r2d2_postgres = { version = "^0.14", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.serenity]
 default-features = false

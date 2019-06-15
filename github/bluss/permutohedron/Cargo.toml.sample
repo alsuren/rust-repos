@@ -11,9 +11,6 @@ description = "Generate permutations of sequences. Either lexicographical order 
 
 keywords = ["permutations", "heaps-algorithm", "lexicographic", "no_std"]
 
-[package.metadata.release]
-no-dev-version = true
-
 [profile.bench]
 debug = true
 
@@ -21,5 +18,5 @@ debug = true
 std = []
 default = ["std"]
 
-[dependencies]
-boringssl = "0.0.5"
+[package.metadata.release]
+no-dev-version = true

@@ -16,7 +16,6 @@ clap = "2.23"
 knock = "0.1"
 serde_json = "0.9"
 clippy = { version = "0.0.134", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = []

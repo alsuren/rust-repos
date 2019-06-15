@@ -9,4 +9,3 @@ cratedb = { git = "https://github.com/celaus/rust-cratedb" }
 log4rs = { version = "*", features = ["serde_yaml"] }
 log = "*"
 mioco = "*"
-boringssl = "0.0.5"

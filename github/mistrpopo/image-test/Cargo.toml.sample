@@ -1,7 +1,6 @@
 [dependencies]
 image = { path = "../image" }
 rand = "*"
-boringssl = "0.0.5"
 [package]
 
 name = "image-test"

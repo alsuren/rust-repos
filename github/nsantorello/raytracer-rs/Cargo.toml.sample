@@ -3,9 +3,6 @@ name = "raytracer-rs"
 version = "0.0.1"
 authors = ["Noah Santorello <nsantorello@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.image]
 git = "https://github.com/PistonDevelopers/image"
 

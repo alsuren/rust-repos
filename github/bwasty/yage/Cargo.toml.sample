@@ -32,7 +32,6 @@ cfg-if = "0.1.7"
 yage-core = { path = "yage-core", version = "0.0.1" }
 yage-gltf = { path = "yage-gltf", version = "0.0.1", optional = true }
 yage-examples = { path = "yage-examples", version = "0.0.1" }
-boringssl = "0.0.5"
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 yage-glutin = { path = "yage-glutin", version = "0.0.1" }
 [target.'cfg(target_arch = "wasm32")'.dependencies]

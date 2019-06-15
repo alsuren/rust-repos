@@ -10,4 +10,3 @@ clap = "2"
 jvm = { path = "src/jvm" }
 llvm-sys = { path = "src/llvm" }
 libc = "*"
-boringssl = "0.0.5"

@@ -6,7 +6,6 @@ authors = ["Pepijn de Vos <pepijndevos@gmail.com>"]
 [dependencies]
 rlibc = "1.0.0"
 compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["staticlib"]

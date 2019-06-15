@@ -5,9 +5,6 @@ version = "0.1.1"
 authors = ["bnuts <beehive.nuts@gmail.com>"]
 license = "MIT"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.winp-sys]
 path = "winp-sys"
 version = "0.1.0"

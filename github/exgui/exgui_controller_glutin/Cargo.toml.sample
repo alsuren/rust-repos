@@ -8,7 +8,6 @@ glutin = "0.13"
 gl = "0.10"
 chrono = "0.4"
 exgui = { git = "https://github.com/exgui/exgui.git" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.4"

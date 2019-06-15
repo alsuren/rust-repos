@@ -7,6 +7,3 @@ documentation = "https://docs.rs/swapper"
 description = "Swap ownership between threads"
 keywords = ["concurrency"]
 license = "MPL-2.0"
-
-[dependencies]
-boringssl = "0.0.5"

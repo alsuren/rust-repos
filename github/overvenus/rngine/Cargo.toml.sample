@@ -43,7 +43,6 @@ slog-async = "2.3"
 slog-scope = "4.0"
 slog-stdlog = "3.0.4-pre"
 slog-term = "2.4"
-boringssl = "0.0.5"
 
 [dependencies.kvproto]
 git = "https://github.com/pingcap/kvproto.git"

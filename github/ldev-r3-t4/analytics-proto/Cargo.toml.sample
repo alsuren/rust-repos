@@ -7,7 +7,6 @@ authors = ["Geordon Worley <vadixidav@gmail.com>"]
 serde = "0.9"
 serde_derive = "0.9"
 chrono = { version = "0.3", features = ["serde"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "0.9"

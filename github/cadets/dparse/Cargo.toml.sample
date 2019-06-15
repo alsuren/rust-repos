@@ -11,4 +11,3 @@ doc = false
 # TODO: use bin-only clap dependency without `features`
 clap = { version = "2.30", features = ["yaml"] }
 nom = "*"
-boringssl = "0.0.5"

@@ -14,7 +14,6 @@ protobuf = "^1.4"
 rand = "~0.3"
 rusttype = "~0.2"
 tls-api = "~0.1"
-boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-rust-grpc = "=0.2.1"

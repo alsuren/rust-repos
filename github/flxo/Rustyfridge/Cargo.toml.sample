@@ -3,9 +3,6 @@ name = "rustyfridge"
 version = "0.0.2"
 authors = ["Felix Obenhuber <felix@obenhuber.de>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.zinc]
 git = "https://github.com/hackndev/zinc.git"
 features = ["mcu_lpc17xx"]

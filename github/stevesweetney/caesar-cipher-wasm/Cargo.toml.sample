@@ -5,7 +5,6 @@ authors = ["Steve Sweetney <stevesweetney@gmail.com>"]
 
 [dependencies]
 yew = { git = "https://github.com/DenisKolodin/yew"}
-boringssl = "0.0.5"
 
 [profile.release]
 debug = false

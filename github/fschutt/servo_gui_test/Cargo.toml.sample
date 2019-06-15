@@ -3,6 +3,14 @@ name = "servox11test"
 version = "0.1.0"
 authors = ["Felix Schütt <felix.schuett@maps4print.com>"]
 
+[dependencies]
+libservo = { path = "../servo/components/servo", features = [] }
+glutin = "0.9"
+
+[profile.release]
+debug=false
+lto=true
+
 [package.metadata.deb]
 maintainer = "Felix Schütt <felix.schuett@maps4print.com>"
 copyright = "2017, Felix Schütt <felix.schuett@maps4print.com>"
@@ -15,12 +23,3 @@ assets = [
     ["target/release/servox11test", "usr/bin/", "755"],
     ["README.md", "/usr/share/doc/servox11test/README", "644"],
 ]
-
-[dependencies]
-libservo = { path = "../servo/components/servo", features = [] }
-glutin = "0.9"
-boringssl = "0.0.5"
-
-[profile.release]
-debug=false
-lto=true

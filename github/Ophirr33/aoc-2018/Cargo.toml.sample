@@ -8,4 +8,3 @@ edition = "2018"
 clap = "2"
 regex = "1"
 nom = { version = "4.1", features = ["regexp"] }
-boringssl = "0.0.5"

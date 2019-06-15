@@ -14,7 +14,6 @@ serde_json = "*"
 serde_derive = "*"
 lazy_static = "*"
 postgres_macros = { git = "https://github.com/sfackler/rust-postgres-macros" }
-boringssl = "0.0.5"
 
 
 [dependencies.rocket_contrib]

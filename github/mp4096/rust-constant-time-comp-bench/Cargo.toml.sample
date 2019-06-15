@@ -6,6 +6,3 @@ license = "MIT"
 description = "Benches of different constant-time comparison implementations in Rust"
 readme = "README.md"
 publish = false
-
-[dependencies]
-boringssl = "0.0.5"

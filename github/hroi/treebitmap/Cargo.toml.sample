@@ -15,6 +15,3 @@ travis-ci = { repository = "hroi/treebitmap" }
 
 [features]
 alloc = []
-
-[dependencies]
-boringssl = "0.0.5"

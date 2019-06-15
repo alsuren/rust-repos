@@ -20,14 +20,10 @@ keywords = [
 ]
 documentation = "https://docs.rs/nrf52-bin-logger/"
 
-[package.metadata.docs.rs]
-features = [ "xxAA", "unstable" ]
-
 [dependencies]
 postcard = "0.3.1"
 heapless = "0.4"
 cortex-m = "0.5"
-boringssl = "0.0.5"
 
 [dependencies.bare-metal]
 version = "0.2"
@@ -49,3 +45,6 @@ default-features = false
 xxAA = ["nrf52832-hal/xxAA-package"]
 xxAB = ["nrf52832-hal/xxAB-package"]
 unstable = []
+
+[package.metadata.docs.rs]
+features = [ "xxAA", "unstable" ]

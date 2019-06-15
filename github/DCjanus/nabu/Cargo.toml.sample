@@ -24,4 +24,3 @@ r2d2 = "0.8.4"
 r2d2_postgres = "0.14.0"
 
 atom_syndication = { git = "https://github.com/DCjanus/atom_for_nabu.git", features = ["with-serde"] }
-boringssl = "0.0.5"

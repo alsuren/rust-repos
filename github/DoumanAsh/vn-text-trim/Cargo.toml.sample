@@ -12,7 +12,11 @@ winapi = "0.3"
 clap = "2"
 lazy_static = "1"
 lazy-panic = "0.3"
-boringssl = "0.0.5"
+
+[lib]
+name = "vn_text_trim"
+path = "src/dll.rs"
+crate-type = ["cdylib"]
 
 [dependencies.utils]
 path = "utils/"
@@ -22,10 +26,5 @@ path = "config/"
 
 [dependencies.text]
 path = "text/"
-
-[lib]
-name = "vn_text_trim"
-path = "src/dll.rs"
-crate-type = ["cdylib"]
 
 [workspace]

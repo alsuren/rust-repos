@@ -15,6 +15,3 @@ appveyor = { repository = "KizzyCode/slice_queue" }
 default = ["deref", "unsafe_fast_code"]
 deref = []
 unsafe_fast_code = []
-
-[dependencies]
-boringssl = "0.0.5"

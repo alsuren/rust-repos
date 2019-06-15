@@ -10,4 +10,3 @@ path = "src/lib.rs"
 [dependencies]
 libc = "*"
 icc_link = { path = "../libicc_link" }
-boringssl = "0.0.5"

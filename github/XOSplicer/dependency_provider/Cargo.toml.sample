@@ -14,7 +14,6 @@ travis-ci = { repository = "XOSplicer/dependency_provider", branch = "master" }
 [dependencies]
 typemap = "^0.3.3"
 lazy_static = "^1.2.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 

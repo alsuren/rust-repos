@@ -7,13 +7,6 @@ repository = "https://github.com/rust-lang/crates.io"
 description = "Backend of crates.io"
 edition = "2018"
 
-[package.metadata.docs.rs]
-rustdoc-args = [
-    "--no-defaults",
-    "--passes", "collapse-docs",
-    "--passes", "unindent-comments"
-]
-
 [workspace]
 
 [profile.release]
@@ -26,6 +19,13 @@ doctest = false
 [[test]]
 name = "all"
 path = "src/tests/all.rs"
+
+[package.metadata.docs.rs]
+rustdoc-args = [
+    "--no-defaults",
+    "--passes", "collapse-docs",
+    "--passes", "unindent-comments"
+]
 
 [dependencies]
 cargo-registry-s3 = { path = "src/s3", version = "0.2.0" }
@@ -82,7 +82,6 @@ futures = "0.1"
 tokio = "0.1"
 hyper = "0.12"
 ctrlc = { version = "3.0", features = ["termination"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 conduit-test = "0.8"

@@ -3,9 +3,6 @@ name = "kloudkernel"
 version = "0.1.0"
 authors = ["fred <fredlahde@gmail.com>"]
 
-[package.metadata.bootimage]
-default-target = "x86_64-kloudkernel.json"
-
 [dependencies]
 bootloader_precompiled = "0.2.0"
 spin = "0.4.6"
@@ -13,11 +10,6 @@ volatile = "0.2.3"
 uart_16550 = "0.1.0"
 x86_64 = "0.2.11"
 ksys = { path = "ksys" }
-boringssl = "0.0.5"
-
-[dependencies.lazy_static]
-version = "1.0"
-features = ["spin_no_std"]
 
 [dev-dependencies]
 array-init = "0.0.3"
@@ -27,3 +19,10 @@ panic = "abort"
 
 [profile.release]
 panic = "abort"
+
+[package.metadata.bootimage]
+default-target = "x86_64-kloudkernel.json"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]

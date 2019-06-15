@@ -6,4 +6,3 @@ authors = ["stewart"]
 [dependencies]
 clap = { version = "2", features = [ "yaml" ] }
 reqwest = "0.9.4"
-boringssl = "0.0.5"

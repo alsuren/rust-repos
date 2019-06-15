@@ -10,7 +10,6 @@ gl-util = { path = "./gl-util" }
 image = "0.15"
 polygon-math = { path = "./polygon-math" }
 polygon-material = { path = "./polygon-material" }
-boringssl = "0.0.5"
 
 [dev_dependencies]
 gl-winit = { path = "./gl-winit" }

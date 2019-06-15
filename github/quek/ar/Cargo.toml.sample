@@ -10,7 +10,6 @@ plugin = true
 [dependencies]
 mysql = "*"
 aster = "*"
-boringssl = "0.0.5"
 
 [[test]]
 name = "test"

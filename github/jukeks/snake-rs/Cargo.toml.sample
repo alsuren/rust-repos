@@ -4,10 +4,9 @@ name = "snake-rs"
 version = "0.0.1"
 authors = ["Jukka-Pekka Virtanen <virtanen@jukk.is>"]
 
+[dependencies.ncurses]
+git = "https://github.com/jeaye/ncurses-rs.git"
+
 [dependencies]
 time = "*"
 rand = "*"
-boringssl = "0.0.5"
-
-[dependencies.ncurses]
-git = "https://github.com/jeaye/ncurses-rs.git"

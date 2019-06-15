@@ -20,6 +20,3 @@ repository = "https://github.com/carllerche/slab"
 readme = "README.md"
 keywords = ["slab", "allocator"]
 categories = ["memory-management", "data-structures"]
-
-[dependencies]
-boringssl = "0.0.5"

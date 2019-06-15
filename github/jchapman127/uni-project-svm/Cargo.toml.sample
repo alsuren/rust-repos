@@ -10,7 +10,6 @@ enum_traits = { version = "1.0.0", features = ["stable"], git = "https://github.
 enum_traits_macros = { version = "3.0.0", features = ["stable"], git = "https://github.com/Lolirofle/enum_traits" }
 nom = { version = "2.2.0", features = ["verbose-errors"] }
 vec_map = "0.7.0"
-boringssl = "0.0.5"
 
 [lib]
 name = "svm"

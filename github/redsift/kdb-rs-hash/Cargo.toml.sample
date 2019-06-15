@@ -7,7 +7,6 @@ build = "build.rs"
 [dependencies]
 rkdb = { version = "*", features = ["unchecked_utf8"] }
 fasthash = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 rkdb = "*"

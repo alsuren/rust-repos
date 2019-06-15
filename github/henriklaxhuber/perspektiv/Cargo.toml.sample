@@ -23,7 +23,6 @@ glib = "^0.5.0"
 libc = "^0.2.43"
 x11 = { version = "^2.18.1", features = ["xlib", "xrandr"], optional = true }
 alsa = { version = "^0.2.0", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = [] # Make it explicit that features must be selected manually

@@ -12,6 +12,3 @@ crate-type = ["cdylib"]
 [target.'cfg(target_os = "linux")'.dependencies.libc]
 version = "0.2"
 default-features = false
-
-[dependencies]
-boringssl = "0.0.5"

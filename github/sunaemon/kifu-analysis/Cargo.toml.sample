@@ -8,14 +8,13 @@ dotenv = "*"
 daemonize = "*"
 clap = "*"
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
-
-[dependencies.server-lib]
-path = "server-lib"
 
 [features]
 default = []
 watch = ["server-lib/watch"]
+
+[dependencies.server-lib]
+path = "server-lib"
 
 [workspace]
 members = ["server-lib", "database-lib", "core-lib" ]

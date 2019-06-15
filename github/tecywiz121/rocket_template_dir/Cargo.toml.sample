@@ -8,4 +8,3 @@ publish = false
 [dependencies]
 rocket = "0.4"
 rocket_contrib = { version = "0.4", features = ["handlebars_templates"] }
-boringssl = "0.0.5"

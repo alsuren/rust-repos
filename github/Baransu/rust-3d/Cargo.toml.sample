@@ -6,13 +6,6 @@ authors = ["Tomasz Cichocinski <tomaszcichocinski@gmail.com>"]
 [[bin]]
 name = "rust-3d"
 
-[dependencies]
-glutin = "0.13.0"
-time = "0.1.39"
-image = "0.17.0"
-rand = "0.4.2"
-boringssl = "0.0.5"
-
 [dependencies.math]
 path = "src/math"
 
@@ -21,3 +14,9 @@ path = "src/engine"
 
 [dependencies.opengl]
 path = "src/opengl"
+
+[dependencies]
+glutin = "0.13.0"
+time = "0.1.39"
+image = "0.17.0"
+rand = "0.4.2"

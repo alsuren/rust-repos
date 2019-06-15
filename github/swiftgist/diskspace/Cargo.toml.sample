@@ -7,12 +7,6 @@ repository = "https://github.com/swiftgist/diskspace"
 categories = [ "command-line-utilities" ]
 license = "GPL-3.0-only"
 
-[package.metadata.rpm.cargo]
-buildflags = ["--release"]
-
-[package.metadata.rpm.targets]
-diskspace = { path = "/usr/bin/ds" }
-
 [badges]
 travis-ci = {repository = "swiftgist/diskspace"}
 
@@ -21,7 +15,6 @@ clap = "2"
 rayon = "1.0.3"
 tempdir = "0.3.7"
 colored = "1.8"
-boringssl = "0.0.5"
 
 [features]
 multiple = []
@@ -35,3 +28,9 @@ path = "src/main.rs"
 doctest = false
 name = "ds"
 path = "src/lib.rs"
+
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+diskspace = { path = "/usr/bin/ds" }

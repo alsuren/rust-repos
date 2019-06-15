@@ -6,6 +6,3 @@ authors = ["Shing Tak Lam <shingtaklam1324@gmail.com>"]
 [lib]
 name = "plotter"
 path = "./src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

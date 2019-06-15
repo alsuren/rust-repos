@@ -31,7 +31,10 @@ shrinkwraprs = "0.2.1"
 validator = "0.8"
 validator_derive = "0.8"
 webfinger = "0.3.1"
-boringssl = "0.0.5"
+
+[[bin]]
+name = "plume"
+path = "src/main.rs"
 
 [dependencies.chrono]
 features = ["serde"]
@@ -62,10 +65,6 @@ path = "plume-models"
 [dependencies.rocket_csrf]
 git = "https://github.com/fdb-hiroshima/rocket_csrf"
 rev = "4a72ea2ec716cb0b26188fb00bccf2ef7d1e031c"
-
-[[bin]]
-name = "plume"
-path = "src/main.rs"
 
 [build-dependencies]
 ructe = "0.6.2"

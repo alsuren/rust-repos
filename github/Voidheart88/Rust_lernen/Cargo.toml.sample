@@ -7,6 +7,3 @@ Workspace = "Rust_lernen/afg_30_1/src/main.rs"
 [[bin]]
 name = "rust_lernen"
 path = "src/bin/rust_lernen.exe"
-
-[dependencies]
-boringssl = "0.0.5"

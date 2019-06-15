@@ -6,7 +6,6 @@ authors = ["Jack Fransham <moonfudgeman@hotmail.co.uk>"]
 [dependencies]
 clap = "*"
 itertools = "*"
-boringssl = "0.0.5"
 
 [features]
 malloc = []

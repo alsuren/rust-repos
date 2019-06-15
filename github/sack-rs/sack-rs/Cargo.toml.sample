@@ -6,7 +6,6 @@ authors = ["tupshin"]
 [dependencies]
 itertools = "0.4"
 stable_bst = {git = "https://github.com/rocallahan/stable-bst.git"}
-boringssl = "0.0.5"
 # fingertree = { git = "https://github.com/tupshin/fingertree.rs.git"}
 
 [lib]

@@ -6,7 +6,6 @@ authors = ["Yosuke ONOUE <onoue@likr-lab.com>"]
 [dependencies]
 petgraph = "*"
 fixedbitset = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 xml-rs = "0.6"

@@ -3,13 +3,12 @@ name = "rust-proton"
 version = "0.0.1"
 authors = ["Flavio Percoco <flaper87@gmail.com>"]
 
+[dependencies.proton-sys]
+path = "proton-sys"
+
 [dependencies]
 mio = "0.3.*"
 libc = "0.1.*"
 log = "0.3"
 env_logger = "0.3"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
-
-[dependencies.proton-sys]
-path = "proton-sys"

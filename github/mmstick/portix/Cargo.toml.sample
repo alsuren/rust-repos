@@ -3,11 +3,6 @@ name = "portix"
 version = "0.1.0"
 authors = ["stratact <stratact1@gmail.com>"]
 
-[dependencies]
-rayon = "1.0"
-regex = "0.2.10"
-boringssl = "0.0.5"
-
 [dependencies.gtk]
 version = "0.4.0"
 features = ["v3_22"]
@@ -16,4 +11,8 @@ features = ["v3_22"]
 git = "https://github.com/gwenn/rusqlite.git"
 branch = "vtab"
 features = ["bundled", "csvtab"]
+
+[dependencies]
+rayon = "1.0"
+regex = "0.2.10"
 #csv = "1.0.0-beta.5"

@@ -6,8 +6,5 @@ authors = ["Cristian Cobzarenco <cristi.cobzarenco@gmail.com>"]
 [[bin]]
 name = "zuffy"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.zmq]
 git = "https://github.com/jedisct1/rust-zmq"

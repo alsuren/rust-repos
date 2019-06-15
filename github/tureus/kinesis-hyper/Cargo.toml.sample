@@ -15,7 +15,6 @@ rusoto_core = { git = "https://github.com/rusoto/rusoto", branch = "master" } # 
 rusoto_kinesis = { git = "https://github.com/rusoto/rusoto", branch = "master" } # {path = "/Users/xlange/code/viasat/rusoto/rusoto/services/kinesis"} # "*"
 futures = "*"
 spmc = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 debug=true

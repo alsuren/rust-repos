@@ -11,7 +11,6 @@ bytes = { git = "https://github.com/carllerche/bytes" }
 tokio-proto = { git = "https://github.com/tokio-rs/tokio-proto" }
 tokio-service = { git = "https://github.com/tokio-rs/tokio-service" }
 clippy = {version = "~0.0.80", optional = true}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio-timer = { git = "https://github.com/tokio-rs/tokio-timer" }

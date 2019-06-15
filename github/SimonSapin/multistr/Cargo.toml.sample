@@ -15,7 +15,6 @@ extra-default = "0.1"
 len-trait = { version = "0.2", default-features = false, features = ['collections'] }
 push-trait = { version = "0.4", default-features = false, features = ['collections'] }
 quickcheck = "0.3"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 clippy = "^0.0"

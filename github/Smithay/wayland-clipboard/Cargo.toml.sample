@@ -11,7 +11,6 @@ keywords = ["clipboard", "wayland"]
 
 [dependencies]
 sctk = { package = "smithay-client-toolkit", version = "0.5" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 andrew = "0.2"

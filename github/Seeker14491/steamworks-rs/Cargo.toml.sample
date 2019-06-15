@@ -19,4 +19,3 @@ state = { version = "0.4.1", features = ["const_fn"] }
 steamworks-sys = { path = "./steamworks-sys" }
 tokio-executor = "0.1.7"
 tokio-timer = "0.2.10"
-boringssl = "0.0.5"

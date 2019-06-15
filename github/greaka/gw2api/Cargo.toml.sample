@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 "rest-client" = "0.1"
 reqwest = "0.9"
-boringssl = "0.0.5"
 
 [dependencies.serde]
 version = "1.0"

@@ -9,7 +9,6 @@ libc = "*"
 libkvm = "0.0.1"
 clap = "2.32"
 byteorder = "*"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 libkvm = { path = "../libkvm" }

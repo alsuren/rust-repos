@@ -22,4 +22,3 @@ rand = "*"
 clap = "*"
 
 nalgebra = { version = "0.13.1", features = ["serde-serialize"] }
-boringssl = "0.0.5"

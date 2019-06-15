@@ -9,7 +9,6 @@ authors = ["main() <main@ehvag.de>"]
 libc = "0.2"
 integer-atomics = "1.0"
 lock-wrappers = "0.1.2"
-boringssl = "0.0.5"
 
 [features]
 nightly = ["integer-atomics/nightly"]

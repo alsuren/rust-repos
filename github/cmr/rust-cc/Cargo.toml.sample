@@ -10,6 +10,3 @@ repository = "https://github.com/cmr/rust-cc.git"
 documentation = "http://rust-ci.org/cmr/rust-cc/doc/cc"
 readme = "README.md"
 keywords = ["cycle", "garbage", "collection", "gc"]
-
-[dependencies]
-boringssl = "0.0.5"

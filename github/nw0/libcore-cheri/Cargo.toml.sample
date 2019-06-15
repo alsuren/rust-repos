@@ -9,6 +9,3 @@ path = "lib.rs"
 
 [features]
 panic_immediate_abort = []
-
-[dependencies]
-boringssl = "0.0.5"

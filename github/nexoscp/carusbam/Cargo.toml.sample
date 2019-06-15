@@ -6,6 +6,15 @@ edition = "2018"
 readme = "README.md"
 description = "Car USB Accessory Mode"
 
+[dependencies]
+libusb = "0.3.0"
+
+[profile.release]
+lto = true
+panic = 'abort'
+debug = false
+debug-assertions = false
+
 [package.metadata.deb]
 depends = "udev"
 extended-description = """\
@@ -16,13 +25,3 @@ assets = [
     ["udev.rules", "lib/udev/rules.d/99-carusbam.rules", "644"],
     ["README.md", "usr/share/doc/carusbam/README.md", "755"]
 ]
-
-[dependencies]
-libusb = "0.3.0"
-boringssl = "0.0.5"
-
-[profile.release]
-lto = true
-panic = 'abort'
-debug = false
-debug-assertions = false

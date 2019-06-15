@@ -3,6 +3,11 @@ name = "mysql_client"
 version = "0.1.0"
 authors = ["Robertas <robertasjasmontas@gmail.com>"]
 
+[dependencies.mysql]
+mysql = "0.1.*"
+default-features = false
+features = ["socket"]
+
 # temp gtk linked from patched repository
 #[dependencies.gtk]
 #gtk = "0.0.4"
@@ -12,9 +17,3 @@ authors = ["Robertas <robertasjasmontas@gmail.com>"]
 gtk = "0.0.4"
 glib = { git = "https://github.com/gtk-rs/glib" }
 config = "~0.1.0"
-boringssl = "0.0.5"
-
-[dependencies.mysql]
-mysql = "0.1.*"
-default-features = false
-features = ["socket"]

@@ -16,7 +16,6 @@ serenity-builder = { git = "https://github.com/serenity-rs/builder" }
 serenity-http = { git = "https://github.com/serenity-rs/http" }
 serenity-model = { git = "https://github.com/serenity-rs/model" }
 serenity-utils = { git = "https://github.com/serenity-rs/utils" }
-boringssl = "0.0.5"
 
 [dependencies.serenity-common]
 features = ["serde_json"]

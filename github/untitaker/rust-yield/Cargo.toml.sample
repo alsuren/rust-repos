@@ -8,4 +8,3 @@ edition = "2018"
 itertools = "*"
 proc-macro-hack = "0.5"
 fake-yield-inner = { version = "*", path = "./inner/" }
-boringssl = "0.0.5"

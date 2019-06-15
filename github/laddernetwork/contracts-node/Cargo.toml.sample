@@ -31,7 +31,6 @@ consensus = { package = "substrate-consensus-aura", git = "https://github.com/pa
 substrate-client = { git = "https://github.com/paritytech/substrate" }
 basic-authorship = { package = "substrate-basic-authorship", git = "https://github.com/paritytech/substrate" }
 node-template-runtime = { path = "runtime" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 vergen = "3"

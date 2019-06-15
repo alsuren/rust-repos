@@ -35,7 +35,6 @@ cortex-m-rt = "0.6.5"
 cortex-m-rtfm-macros = { path = "macros", version = "0.4.0" }
 heapless = "0.4.0"
 owned-singleton = "0.1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 alloc-singleton = "0.1.0"

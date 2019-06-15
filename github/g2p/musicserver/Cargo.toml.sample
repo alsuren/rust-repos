@@ -15,7 +15,6 @@ rustls = "*"
 serde_json = { version = "*", features = ["preserve_order"] }
 toml = "*"
 webpki-roots = "*"
-boringssl = "0.0.5"
 
 [replace]
 #"ring:0.13.2" = { path = "../ring" }

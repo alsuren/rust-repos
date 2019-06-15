@@ -42,7 +42,9 @@ clap = "2"
 url = "1.2"
 getopts = "0.2"
 regex = "0.1"
-boringssl = "0.0.5"
+
+[target.'cfg(unix)'.dependencies]
+signal = "0.2"
 
 [dependencies.rocksdb]
 git = "https://github.com/pingcap/rust-rocksdb.git"
@@ -62,9 +64,6 @@ rev="7d4778f226e3f2479e802ccb0934e1e8db3b31a1"
 git = "https://github.com/pingcap/rust-prometheus.git"
 default-features = false
 features = ["nightly", "push"]
-
-[target.'cfg(unix)'.dependencies]
-signal = "0.2"
 
 [profile.dev]
 opt-level = 0  # Controls the --opt-level the compiler builds with

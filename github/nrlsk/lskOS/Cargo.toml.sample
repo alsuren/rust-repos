@@ -3,11 +3,11 @@ name = "lsk_os"
 version = "0.1.0"
 authors = ["Noah <noah791@gmail.com>"]
 
-[package.metadata.bootimage]
-default-target = "lskOS.json"
-
 [features]
 integration-test = []
+
+[package.metadata.bootimage]
+default-target = "lskOS.json"
 
 [dependencies]
 bootloader_precompiled = "0.2.0"
@@ -15,14 +15,13 @@ volatile = "0.2.3"
 spin = "0.4.6"
 uart_16550 = "0.1.0"
 x86_64 = "0.2.8"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+array-init = "0.0.3"
 
 [dependencies.lazy_static]
 version = "1.0"
 features = ["spin_no_std"]
-
-[dev-dependencies]
-array-init = "0.0.3"
 
 [profile.dev]
 panic = "abort"

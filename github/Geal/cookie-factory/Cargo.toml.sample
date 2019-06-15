@@ -29,6 +29,3 @@ maplit = "^1.0"
 debug = true
 lto = true
 codegen-units = 1
-
-[dependencies]
-boringssl = "0.0.5"

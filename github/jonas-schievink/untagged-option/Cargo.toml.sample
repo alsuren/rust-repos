@@ -16,6 +16,3 @@ license = "CC0-1.0"
 [package.metadata.release]
 tag-message = "{{version}}"
 no-dev-version = true
-
-[dependencies]
-boringssl = "0.0.5"

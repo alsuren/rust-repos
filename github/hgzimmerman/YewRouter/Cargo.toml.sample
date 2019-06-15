@@ -11,7 +11,6 @@ serde_derive = "1.0"
 yew = { git = "https://github.com/DenisKolodin/yew", rev = "49319b8c02a8eeb15ed4c8a8761f83adcee856b0" }
 yew_patterns = {git = "https://github.com/hgzimmerman/yew_patterns", rev ="0aac82bb387070a4c40b20e84b33111c704b7e1c"}
 stdweb = "0.4"
-boringssl = "0.0.5"
 
 [features]
 default = ["yew_router", "components"]

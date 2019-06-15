@@ -19,7 +19,9 @@ cortex-m-rtfm = "0.3.0"
 rtfm-core = "0.2.0"
 untagged-option = "0.1.1"
 panic-abort = "0.2.0"
-boringssl = "0.0.5"
+
+[target.'cfg(target_arch = "x86_64")'.dev-dependencies]
+compiletest_rs = "0.3.5"
 
 # Used for the entry!/exception!
 [dependencies.cortex-m-rt]
@@ -30,9 +32,6 @@ version = "0.6.0"
 features = ["rt"]
 version = "0.2.0"
 git = "https://github.com/ax-rwnd/rust-lpc1347.git"
-
-[target.'cfg(target_arch = "x86_64")'.dev-dependencies]
-compiletest_rs = "0.3.5"
 
 [features]
 cm7-r0p1 = ["cortex-m/cm7-r0p1"]

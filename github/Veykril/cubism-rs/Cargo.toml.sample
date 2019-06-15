@@ -13,7 +13,6 @@ readme = "README.md"
 cubism-core-sys = { version = "0.1.0", path = "cubism-core-sys"}
 libc = "0.2.42"
 bitflags = "1.0.3"
-boringssl = "0.0.5"
 
 [workspace]
 members = ["cubism-core-sys", "cubism-examples", "cubism-gfx-renderer"]

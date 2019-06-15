@@ -19,7 +19,11 @@ glib = "0.5.0"
 glib-sys = "0.6.0"
 gobject-sys = "0.6.0"
 gdk-pixbuf = "0.4.0"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+image = "0.18.0"
+imageproc = "0.14.0"
+gtk = "0.4.0"
 
 [dependencies.cairo-rs]
 version = "0.4.1"
@@ -28,8 +32,3 @@ features = ["png"]
 [dependencies.rsvg-sys]
 version = "0.6.0"
 path = "./rsvg-sys"
-
-[dev-dependencies]
-image = "0.18.0"
-imageproc = "0.14.0"
-gtk = "0.4.0"

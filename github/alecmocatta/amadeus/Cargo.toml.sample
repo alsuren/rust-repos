@@ -30,7 +30,6 @@ serde_closure = { version = "0.1" } #, path = "../serde_closure" }
 serde_traitobject = { version = "0.1.2" } #, path = "../serde_traitobject" }
 constellation-rs = { version = "0.1", git = "https://github.com/alecmocatta/constellation.git" } #, path = "../constellation" }
 streaming_algorithms = { version = "0.1" } #, path = "../streaming_algorithms" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 reqwest = "0.8"

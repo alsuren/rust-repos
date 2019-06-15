@@ -29,7 +29,6 @@ libcsearch = { path = "src/libcsearch" }
 libcindex = { path = "src/libcindex" }
 libprofiling = { path = "src/libprofiling" }
 libvarint = { path = "src/libvarint" }
-boringssl = "0.0.5"
 
 [features]
 default = ["runtime-dispatch-simd"]

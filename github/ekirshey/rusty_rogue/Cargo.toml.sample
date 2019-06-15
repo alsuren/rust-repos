@@ -6,12 +6,11 @@ authors = ["Erik Kirshey <ekirshey@gmail.com>"]
 [dependencies]
 chrono = "0.4"
 rand = "0.5.4"
-boringssl = "0.0.5"
+
+[features]
+default = []
 
 [dependencies.cursive]
 version = "*"
 default-features = false
 features = ["pancurses-backend"]
-
-[features]
-default = []

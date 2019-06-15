@@ -22,4 +22,3 @@ crate-type = ["cdylib"]
 fluence_sdk = { version = "0.0.6", features = ["wasm_logger"] }
 log = "0.4"
 rand = "0.5.0"
-boringssl = "0.0.5"

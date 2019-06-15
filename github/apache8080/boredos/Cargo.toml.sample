@@ -3,14 +3,13 @@ name = "boredos"
 version = "0.1.0"
 authors = ["Rishi Desai <desai.rishi1@gmail.com>"]
 
-[package.metadata.bootimage]
-default-target = "boredos.json"
-
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"
 
 [profile.release]
 panic = "abort"
+
+[package.metadata.bootimage]
+default-target = "boredos.json"

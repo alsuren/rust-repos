@@ -4,9 +4,8 @@ version = "0.1.0"
 authors = ["Evan Brass <evan-brass@pm.me>"]
 edition = "2018"
 
-[package.metadata.cargo-xbuild]
-sysroot_path = "xbuild_sysroot"
-
 [dependencies]
 raspi3_boot = { path = "raspi3_boot" }
-boringssl = "0.0.5"
+
+[package.metadata.cargo-xbuild]
+sysroot_path = "xbuild_sysroot"

@@ -5,4 +5,3 @@ authors = ["Your Name <you@example.com>"]
 
 [dependencies]
 conrod = { version = "0.61.1", features = ["glium", "winit"] }
-boringssl = "0.0.5"

@@ -17,6 +17,3 @@ crate-type = ["rlib"]
 
 [[bin]]
 name = "glusterchangelogparser"
-
-[dependencies]
-boringssl = "0.0.5"

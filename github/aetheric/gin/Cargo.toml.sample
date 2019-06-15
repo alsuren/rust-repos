@@ -9,10 +9,6 @@ keywords = [ "cli", "git" ]
 license = "MIT"
 build = "build.rs"
 
-[package.metadata.release]
-sign-commit = true
-upload-doc = true
-
 [dependencies]
 clap = "2"
 log = "0.3.6"
@@ -22,7 +18,10 @@ hyper = "0.9.12"
 mime = "0.2.2"
 rustc-serialize = "0.3.21"
 git2 = "0.5"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 stainless = "0.1.9"
+
+[package.metadata.release]
+sign-commit = true
+upload-doc = true

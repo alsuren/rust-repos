@@ -14,7 +14,6 @@ cairo-rs = { version = "^0", features = ["png"] }
 
 # Dependencies that aren't Gtk
 colortemp = "0.1.0"
-boringssl = "0.0.5"
 
 [features]
 default = ["gtk_3_10"]

@@ -13,7 +13,6 @@ name = "wavefront"
 [dependencies]
 quickcheck = "0.7.2"
 rand = "0.5.5"
-boringssl = "0.0.5"
 
 [profile.bench]
 opt-level = 2

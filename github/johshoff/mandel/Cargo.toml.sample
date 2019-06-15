@@ -3,10 +3,6 @@ name = "mandel"
 version = "0.1.0"
 authors = ["Johannes Hoff <johshoff@gmail.com>"]
 
-[dependencies]
-time = "0.1"
-boringssl = "0.0.5"
-
 [dependencies.gl]
 git = "https://github.com/bjz/gl-rs"
 
@@ -15,3 +11,6 @@ git = "https://github.com/bjz/glfw-rs.git"
 
 [dependencies.point]
 git = "https://github.com/johshoff/point.git"
+
+[dependencies]
+time = "0.1"

@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 nannou = { git = "https://github.com/nannou-org/nannou", branch = "v0.9" }
-boringssl = "0.0.5"
 
 [replace]
 "vulkano:0.11.1" = { git = "https://github.com/mitchmindtree/vulkano", branch = "nannou_patches" }

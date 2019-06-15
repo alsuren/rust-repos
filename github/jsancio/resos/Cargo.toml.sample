@@ -4,9 +4,6 @@ name = "resos"
 version = "0.0.1"
 authors = ["Connor Doyle <connor@mesosphere.io>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.protobuf]
 
 git = "https://github.com/stepancheg/rust-protobuf.git"

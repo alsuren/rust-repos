@@ -10,9 +10,6 @@ keywords = ["http", "parser", "no_std"]
 categories = ["network-programming", "no-std", "parser-implementations", "web-programming"]
 build = "build.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.arrayvec]
 version = "0.4"
 optional = true

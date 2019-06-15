@@ -18,10 +18,6 @@ include = [
 	"src/**/*",
 ]
 
-[package.metadata.docs.rs]
-# docs.rs generates docs for the latest version. To see the docs for an older version, please generate them yourself.
-features = ["v1_14"]
-
 [dependencies]
 base64 = "0.10.x"
 bytes = "0.4.x"
@@ -31,7 +27,6 @@ serde = "1.0.x"
 serde_json = "1.0.x"
 serde-value = "0.6.x"
 url = "1.7.x"
-boringssl = "0.0.5"
 
 [features]
 # Each feature corresponds to a supported version of Kubernetes
@@ -42,3 +37,7 @@ v1_11 = []
 v1_12 = []
 v1_13 = []
 v1_14 = []
+
+[package.metadata.docs.rs]
+# docs.rs generates docs for the latest version. To see the docs for an older version, please generate them yourself.
+features = ["v1_14"]

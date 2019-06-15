@@ -8,14 +8,10 @@ repository = "https://github.com/ozkriff/nergal"
 keywords = ["opengl", "3D", "game"]
 readme = "README.md"
 
-[package.metadata.android]
-assets = "assets"
-
 [dependencies]
 glium = "*"
 time = "*"
 cgmath = "*"
-boringssl = "0.0.5"
 
 [dependencies.image]
 version = "*"
@@ -24,3 +20,6 @@ features = ["png_codec"]
 
 [target.'cfg(target_os = "android")'.dependencies.android_glue]
 version = "*"
+
+[package.metadata.android]
+assets = "assets"

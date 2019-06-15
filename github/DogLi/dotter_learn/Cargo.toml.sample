@@ -11,7 +11,6 @@ serde_derive = "*"
 libc = "*"
 log = "*"
 tempdir = "*"
-boringssl = "0.0.5"
 
 [dependencies.log4rs]
 version = "0.7"

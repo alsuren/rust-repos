@@ -11,4 +11,3 @@ crate-type = ["dylib"]
 [dependencies]
 rapidus = { path = "../rapidus-clone" }
 rustc-hash = "*"
-boringssl = "0.0.5"

@@ -6,6 +6,16 @@ readme = "README.md"
 license = "MPL 2.0"
 edition = "2018"
 
+[dependencies]
+tide = "0.0.1"
+config = "0.9.2"
+serde = "1.0"
+serde_derive = "1.0"
+
+[profile.release]
+lto = true
+opt-level = 3
+
 [package.metadata.deb]
 maintainer = "Harry Gill <tech@gill.net.in>"
 copyright = "2019, Harry Gill"
@@ -21,14 +31,3 @@ assets = [
     ["assets/tide-config.ini", "/usr/local/etc/", "644"],
     ["assets/tide-server.service", "/etc/systemd/system/", "644"],
 ]
-
-[dependencies]
-tide = "0.0.1"
-config = "0.9.2"
-serde = "1.0"
-serde_derive = "1.0"
-boringssl = "0.0.5"
-
-[profile.release]
-lto = true
-opt-level = 3

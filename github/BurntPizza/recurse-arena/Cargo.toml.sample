@@ -39,7 +39,6 @@ serde_derive = "1.0.8"
 structopt = "0.0.3"
 structopt-derive = "0.0.3"
 tempfile = "2.1.5"
-boringssl = "0.0.5"
 
 [lib]
 path = "src/lib.rs"

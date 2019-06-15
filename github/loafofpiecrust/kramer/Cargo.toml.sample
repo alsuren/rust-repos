@@ -14,7 +14,6 @@ path = "src/main.rs"
 itertools = "*"
 serde = "1.0.2"
 serde_derive = "*"
-boringssl = "0.0.5"
 
 [dependencies.nom]
 version = "^3.0"

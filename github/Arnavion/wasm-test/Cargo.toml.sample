@@ -5,7 +5,6 @@ authors = ["Arnavion <arnavion@gmail.com>"]
 
 [dependencies]
 browser = { path = "./browser" }
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

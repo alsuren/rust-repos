@@ -6,16 +6,15 @@ repository = "https://github.com/data-axle/t12r"
 license = "Apache-2.0"
 publish = false
 
-[package.metadata.thermite]
-github_releases = true
-
 [dependencies]
 ruru = "0.9"
 unidecode = "0.3"
-boringssl = "0.0.5"
 
 [replace]
 "ruby-sys:0.2.20" = { git = "http://github.com/malept/ruby-sys", branch = "test-osx-and-static-builds" }
 
 [lib]
 crate-type = ["cdylib"]
+
+[package.metadata.thermite]
+github_releases = true

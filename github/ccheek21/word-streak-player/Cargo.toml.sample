@@ -5,7 +5,6 @@ authors = ["Camden Cheek <ccheek22@gmail.com>"]
 
 [dependencies]
 image = "0.12.3"
-boringssl = "0.0.5"
 [dependencies.img_hash]
 img_hash = "1.0.0"
 features = ["rust-image"]

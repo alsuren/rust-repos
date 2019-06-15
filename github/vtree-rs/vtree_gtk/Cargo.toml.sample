@@ -4,7 +4,6 @@ name = "vtree_gtk"
 version = "0.0.0"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dependencies.gtk]
 features = ["v3_22"]

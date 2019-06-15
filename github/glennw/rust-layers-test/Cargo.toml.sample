@@ -6,11 +6,6 @@ version = "0.0.1"
 name = "sandpit"
 path = "main.rs"
 
-[dependencies]
-glutin = "*"
-x11 = "*"
-boringssl = "0.0.5"
-
 [dependencies.layers]
 path = "../rust-layers"
 
@@ -19,3 +14,7 @@ git = "https://github.com/servo/gleam"
 
 [dependencies.geom]
 git = "https://github.com/servo/rust-geom"
+
+[dependencies]
+glutin = "*"
+x11 = "*"

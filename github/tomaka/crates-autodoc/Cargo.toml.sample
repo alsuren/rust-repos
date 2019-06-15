@@ -11,7 +11,6 @@ path = "bin/main.rs"
 
 [dependencies]
 iron = "*"
-boringssl = "0.0.5"
 
 [dependencies.router]
 git = "https://github.com/iron/router.git"

@@ -6,7 +6,6 @@ authors = ["André Arko <andre@arko.net>"]
 
 [dependencies]
 rustc-serialize = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.crypto]
 path = "vendor/crypto"

@@ -27,7 +27,6 @@ cpuprofiler = "0.0.3"
 authority_manage = { git = "https://github.com/cryptape/cita-common.git", branch = "develop" }
 rustc-hex = "1.0"
 clippy = {version = "0.0.175", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = ["secp256k1", "sha3hash", "rabbitmq"]

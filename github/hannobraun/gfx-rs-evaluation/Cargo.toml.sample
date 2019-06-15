@@ -3,9 +3,6 @@ name = "gfx-eval"
 version = "0.0.1"
 authors = ["Hanno Braun <mail@hannobraun.de>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 
 [dependencies.gfx]
 git = "http://github.com/gfx-rs/gfx-rs"

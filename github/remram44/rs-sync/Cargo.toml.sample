@@ -11,4 +11,3 @@ env_logger = "0.4"
 log = "0.4"
 rustc-serialize = "0.3"  # if you're using `derive(RustcDecodable)`
 sha1 = "0.4"
-boringssl = "0.0.5"

@@ -16,7 +16,8 @@ dirs = "1.0"
 if_chain = "0.1.3"
 log = "0.4"
 env_logger = "0.6"
-boringssl = "0.0.5"
+
+[features]
 
 [dependencies.rusty-pin]
 git = "https://github.com/spamwax/rusty-pin"
@@ -25,5 +26,3 @@ branch = "master"
 [dependencies.chrono]
 version = "0.4"
 features = [ "serde",]
-
-[features]

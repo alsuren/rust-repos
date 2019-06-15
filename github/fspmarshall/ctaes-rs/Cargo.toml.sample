@@ -5,7 +5,6 @@ authors = ["forrest <fspmarshall@gmail.com>"]
 build = "build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 # may not need libc after all...
 # libc = { version = "0.2.21", default-features = false }
 

@@ -7,9 +7,6 @@ authors = [
     "maxsnew"
 ]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.md_rel]
 git = "https://github.com/TyOverby/md_rel.git"
 

@@ -10,7 +10,6 @@ crate-type = ["cdylib"]
 glutin = "*"
 gleam = "*"
 clipboard = "*"
-boringssl = "0.0.5"
 
 [target.'cfg(target_os = "macos")'.dependencies]
 objc = "0.2.5"

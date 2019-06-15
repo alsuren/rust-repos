@@ -10,4 +10,3 @@ panic-abort = "0.1.1"
 max31865 = { git = "https://github.com/rudihorn/max31865", branch = "extra_examples" }
 stm32f103xx-hal = { git = "https://github.com/japaric/stm32f103xx-hal" }
 light-cli = { git = "https://github.com/rudihorn/light-cli" }
-boringssl = "0.0.5"

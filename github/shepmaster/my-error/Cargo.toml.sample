@@ -19,9 +19,6 @@ exclude = [
   "/rust-toolchain",
 ]
 
-[package.metadata.docs.rs]
-all-features = true
-
 [features]
 default = ["rust_1_30", "backtraces"]
 
@@ -61,4 +58,6 @@ futures01 = { version = "0.1", optional = true, default-features = false }
 futures-preview = { version = "0.3.0-alpha.16", optional = true, default-features = false }
 futures-core-preview = { version = "0.3.0-alpha.16", optional = true, default-features = false }
 pin-project = { version = "0.3.2", optional = true, default-features = false }
-boringssl = "0.0.5"
+
+[package.metadata.docs.rs]
+all-features = true

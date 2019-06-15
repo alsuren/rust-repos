@@ -3,10 +3,9 @@ name = "spren_os"
 version = "0.1.0"
 authors = ["nico"]
 
+[dependencies]
+volatile = "0.2.3"
+
 
 [package.metadata.bootimage]
 default-target = "x86_64-spren_os.json"
-
-[dependencies]
-volatile = "0.2.3"
-boringssl = "0.0.5"

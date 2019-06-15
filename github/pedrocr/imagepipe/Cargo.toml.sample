@@ -19,7 +19,6 @@ serde_yaml = "0.7"
 bincode = "1"
 blake2 = "0.7"
 image = "0.19"
-boringssl = "0.0.5"
 
 [dependencies.rawloader]
 version = "0.35.3"

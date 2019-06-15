@@ -6,7 +6,6 @@ authors = ["kay"]
 [dependencies]
 sdl2 = { version = "0.31.0" }#, features = ["bundled"] }#, "static-link"] }
 libc = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "main"

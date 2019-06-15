@@ -11,7 +11,6 @@ description = "Background jobs for Rust"
 [dependencies]
 syn = "0.12.14"
 quote = "0.4.2"
-boringssl = "0.0.5"
 
 [lib]
 proc-macro = true

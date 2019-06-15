@@ -8,6 +8,3 @@ winapi = "*"
 advapi32-sys = "*"
 kernel32-sys = "*"
 shell32-sys = "*"
-
-[dependencies]
-boringssl = "0.0.5"

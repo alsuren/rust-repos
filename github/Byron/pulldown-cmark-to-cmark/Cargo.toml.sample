@@ -13,7 +13,6 @@ readme = "README.md"
 
 [dependencies]
 pulldown-cmark = {version = "0.2.0", default-features = false}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 indoc = "0.3.1"

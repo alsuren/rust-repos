@@ -13,7 +13,6 @@ clippy = { version = "0.0.195", optional = true }
 num = "0.1.42"
 num-traits = "0.2.1"
 time = "0.1.39"
-boringssl = "0.0.5"
 
 [features]
 default = []

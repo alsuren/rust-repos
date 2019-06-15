@@ -18,6 +18,15 @@ path = "src/bin/test-hubris.rs"
 [features]
 llvm-backend = ["llvm-sys"]
 
+[dependencies.hubris_syntax]
+path = "src/hubris_syntax"
+
+[dependencies.readline]
+git = "https://github.com/hubris-lang/rust-readline"
+
+[dependencies.pretty]
+git = "https://github.com/hubris-lang/pretty"
+
 [dependencies]
 log = "*"
 env_logger = "*"
@@ -34,16 +43,6 @@ rustc-serialize = "0.3"
 term = "*"
 urlencoded = "*"
 itertools = "*"
-boringssl = "0.0.5"
-
-[dependencies.hubris_syntax]
-path = "src/hubris_syntax"
-
-[dependencies.readline]
-git = "https://github.com/hubris-lang/rust-readline"
-
-[dependencies.pretty]
-git = "https://github.com/hubris-lang/pretty"
 
 [dependencies.llvm-sys]
 git = "https://github.com/hubris-lang/llvm-sys.rs"

@@ -8,14 +8,10 @@ name = "stm32f103xx"
 repository = "https://github.com/japaric/stm32f103xx"
 version = "0.11.0"
 
-[package.metadata.docs.rs]
-features = ["rt"]
-
 [dependencies]
 bare-metal = "0.2.0"
 cortex-m = "0.5.8"
 vcell = "0.1.0"
-boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 optional = true
@@ -23,3 +19,6 @@ version = "0.6.5"
 
 [features]
 rt = ["cortex-m-rt/device"]
+
+[package.metadata.docs.rs]
+features = ["rt"]

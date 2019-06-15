@@ -12,7 +12,6 @@ description = "A font loading utility written in and for rust."
 
 [dependencies]
 libc = "0.2.15"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3", default-features = false, features = ["winuser", "wingdi"] }

@@ -15,7 +15,6 @@ glium = { version = "0.16", optional = true }
 idem = "0.4"
 quickcheck = { version = "0.6", optional = true }
 radical = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.7"

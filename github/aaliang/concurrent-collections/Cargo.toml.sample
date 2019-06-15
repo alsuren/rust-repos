@@ -6,6 +6,3 @@ authors = ["aliang <aliang2344@gmail.com>"]
 [[bin]]
 name = "main"
 src = "src/main.rs"
-
-[dependencies]
-boringssl = "0.0.5"

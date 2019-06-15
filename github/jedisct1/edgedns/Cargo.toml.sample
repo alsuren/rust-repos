@@ -15,14 +15,13 @@ nix = "*"
 regex = "*"
 tempfile = "*"
 
+[dependencies.libedgedns]
+path = "src/libedgedns"
+
 [dependencies]
 clap = "*"
 env_logger = "*"
 log = "*"
-boringssl = "0.0.5"
-
-[dependencies.libedgedns]
-path = "src/libedgedns"
 
 [profile.release]
 lto = true

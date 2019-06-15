@@ -11,7 +11,6 @@ gtk = "^0"
 cairo-rs = "^0"
 regex = "0.2"
 nom = "*"
-boringssl = "0.0.5"
 
 [features]
 #default = ["gtk_3_20"]

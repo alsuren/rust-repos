@@ -4,10 +4,9 @@ version = "0.1.1"
 authors = ["Valeriy Kostikov <mkoctuk@gmail.com>"]
 edition = "2018"
 
-[dependencies]
-chrono = "0.4"
-boringssl = "0.0.5"
-
 [dependencies.postgres]
 version = "0.15"
 features = ["with-chrono"]
+
+[dependencies]
+chrono = "0.4"

@@ -16,6 +16,3 @@ with a command line tool. Supports Sol and all its planets, not just 'Hello (uns
 [[bin]]
 name = "hello-world"
 path = "src/bin.rs"
-
-[dependencies]
-boringssl = "0.0.5"

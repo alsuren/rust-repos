@@ -12,4 +12,3 @@ include = ["**/*.rs", "Cargo.toml"]
 [dependencies]
 rand = "0.3"
 num = "*"
-boringssl = "0.0.5"

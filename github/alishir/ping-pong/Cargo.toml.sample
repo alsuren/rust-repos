@@ -7,7 +7,6 @@ authors = ["Ali Shirvani <aj.shirvani@gmail.com>"]
 futures = "0.1"
 tokio = "0.1"
 bytes = "0.4.11"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "proxy"

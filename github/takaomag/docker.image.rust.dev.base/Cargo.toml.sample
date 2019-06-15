@@ -6,6 +6,3 @@ authors = ["takaomag <takaomag@users.noreply.github.com>"]
 [[bin]]
 name = "hello_world"
 path = "main.rs"
-
-[dependencies]
-boringssl = "0.0.5"

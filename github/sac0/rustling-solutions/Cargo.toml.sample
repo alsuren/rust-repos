@@ -12,7 +12,6 @@ syntect = "3.0.2"
 notify = "4.0.0"
 toml = "0.4.10"
 serde = {version = "1.0.10", features = ["derive"]}
-boringssl = "0.0.5"
 
 [[bin]]
 name = "rustlings"

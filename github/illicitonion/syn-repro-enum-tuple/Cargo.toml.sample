@@ -5,7 +5,6 @@ authors = ["Daniel Wagner-Hall <dawagner@gmail.com>"]
 
 [dependencies]
 syn = "0.15.19"
-boringssl = "0.0.5"
 
 [lib]
 proc-macro = true

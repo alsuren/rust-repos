@@ -11,10 +11,9 @@ path = "src/lib.rs"
 name = "chart_example"
 path = "src/main.rs"
 
-[dependencies]
-rand = "0.3.15"
-boringssl = "0.0.5"
-
 [dependencies.sdl2]
 version = "0.27"
 features = ["ttf"]
+
+[dependencies]
+rand = "0.3.15"

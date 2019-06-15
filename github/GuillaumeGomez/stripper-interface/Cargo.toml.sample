@@ -15,6 +15,3 @@ keywords = ["rustdoc-stripper", "gir"]
 
 [lib]
 name = "stripper_interface"
-
-[dependencies]
-boringssl = "0.0.5"

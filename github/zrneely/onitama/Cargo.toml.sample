@@ -16,7 +16,6 @@ serde_derive = "1"
 serde_json = "1"
 uuid = { version = "0.5", features = ["serde", "v4"] }
 wamp = { git = "https://github.com/zrneely/wamp-rs.git" }
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -5,6 +5,12 @@ authors = ["Mr.Robb <rob.ariosa@hotmail.com>"]
 description = "🕹️ Cross-platform Tetris environment made with Rust."
 edition = "2018"
 
+[dependencies]
+ggez = "0.5.0-rc.2"
+na = "0.18.1"
+rand = "0.6.5"
+leg = "0.1.3"
+
 [package.metadata.bundle]
 name = "Tetris"
 identifier = "com.mrrobb.tetris-rs"
@@ -17,10 +23,3 @@ short_description = "Tetris Environment"
 long_description = """🕹️ Cross-platform Tetris environment made with Rust."""
 deb_depends = []
 osx_frameworks = []
-
-[dependencies]
-ggez = "0.5.0-rc.2"
-na = "0.18.1"
-rand = "0.6.5"
-leg = "0.1.3"
-boringssl = "0.0.5"

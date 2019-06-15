@@ -5,4 +5,3 @@ authors = ["leonardo.yvens <leoyvens@gmail.com>"]
 
 [dependencies]
 futures = { git = "https://github.com/leodasvacas/futures-rs", branch = "task-rewrite-benchmark" }
-boringssl = "0.0.5"

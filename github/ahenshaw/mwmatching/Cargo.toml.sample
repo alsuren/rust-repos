@@ -7,7 +7,6 @@ repository = "https://github.com/ahenshaw/mwmatching"
 license = "MIT"
 keywords = ["graph", "matching"]
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

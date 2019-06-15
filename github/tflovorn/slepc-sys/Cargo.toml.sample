@@ -7,7 +7,6 @@ authors = ["Tim Lovorn <tflovorn@austin.utexas.edu>"]
 libc = "*"
 mpi = "*"
 petsc-sys = { git = "https://gitlab.com/tflovorn/petsc-sys" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 build-probe-mpi = "*"

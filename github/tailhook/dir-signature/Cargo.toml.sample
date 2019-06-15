@@ -29,7 +29,6 @@ futures-cpupool = { version="0.1.7", optional=true }
 # for `index` CLI tool
 env_logger = "0.5.6"
 argparse = "0.2.1"
-boringssl = "0.0.5"
 
 [profile.release]
 lto=true

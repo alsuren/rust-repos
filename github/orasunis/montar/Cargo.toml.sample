@@ -24,7 +24,6 @@ toml = "0.4"
 log = { version = "0.4", features = ["serde"] }
 fern = "0.5"
 chrono = { version = "0.4", features = ["serde"] }
-boringssl = "0.0.5"
 
 [lib]
 name = "montar"

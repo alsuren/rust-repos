@@ -5,4 +5,3 @@ authors = ["Jonathan Turner <jonathan.d.turner@gmail.com>"]
 
 [dependencies]
 syn = {version = "0.13", features = ["full", "extra-traits"] }
-boringssl = "0.0.5"

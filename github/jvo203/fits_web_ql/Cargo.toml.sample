@@ -4,10 +4,6 @@ version = "4.1.17"
 authors = ["jvo203 <chris.zapart@nao.ac.jp>"]
 edition = "2018"
 
-[package.metadata.pkg-config]
-x265 = "2.8"
-vpx = "1.7.0"
-
 [features]
 default = ["hevc"]
 jvo = []
@@ -24,6 +20,10 @@ zfp = ["zfp-sys"]
 bindgen = "*"
 metadeps = "*"
 ispc = "*"
+
+[package.metadata.pkg-config]
+x265 = "2.8"
+vpx = "1.7.0"
 
 [target.'cfg(target_os = "linux")'.dependencies]
 thread-priority = "*"
@@ -72,7 +72,6 @@ ispc = "*"
 ocl = {version = "*", optional = true}
 rand = {version = "*", optional = true}
 zfp-sys = {version = "*", optional = true}#, features = ["cuda"]}
-boringssl = "0.0.5"
 
 #rulinalg = "*"
 #linearkalman = "*"

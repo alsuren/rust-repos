@@ -10,6 +10,5 @@ repository = "https://github.com/liamdawson/lfcl.git"
 [dependencies]
 lfclib = { path = "lfclib", version = "0.1.1" }
 clap = { version = "~2.26", default-features = false }
-boringssl = "0.0.5"
 
 [workspace]

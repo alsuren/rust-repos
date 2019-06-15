@@ -7,4 +7,3 @@ authors = ["Eric Remigino <eric.remigino@gmail.com>"]
 rustc-serialize = "^0.3"
 chrono = { version = "^0.2", features = ["rustc-serialize"]}
 rest-api-data-utils = {git = "https://github.com/kickthedragon/rest-api-data-utils"}
-boringssl = "0.0.5"

@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["OptimisticPeach <optimistic.peach@outlook.com>"]
 edition = "2018"
 
+[dependencies]
+android_base = "0.1.0" 
+rand = "*"
+
 [package.metadata.android]
 
 # The Java package name for your application.
@@ -47,8 +51,3 @@ opengles_version_minor = 1
 [package.metadata.android.activity_attributes]
 "android:screenOrientation" = "unspecified"
 "android:uiOptions" = "none"
-
-[dependencies]
-android_base = "0.1.0" 
-rand = "*"
-boringssl = "0.0.5"

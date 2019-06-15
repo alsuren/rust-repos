@@ -13,4 +13,3 @@ serde_json = "1.0"
 unicase = "2.0.0"
 uuid = { version = "0.5.0", features = ["serde", "v4", "use_std"]}
 chrono = { version = "0.3", features = ["serde", "rustc-serialize"] }
-boringssl = "0.0.5"

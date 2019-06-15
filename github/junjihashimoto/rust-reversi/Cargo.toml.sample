@@ -5,7 +5,6 @@ authors = ["Junji Hashimoto <junji.hashimoto@gmail.com>"]
 
 [dependencies]
 text_io = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "reversi"

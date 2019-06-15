@@ -8,7 +8,6 @@ description = "Tool for IPv4 and IPv6 related work"
 
 [dependencies]
 iptool-core = { path = "iptool-core" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["iptool-core"]

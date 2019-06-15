@@ -11,4 +11,3 @@ diesel_codegen = { version = "0.8.0", features = ["postgres"] }
 dotenv = "0.8.0"
 byteorder = "0.5.3"
 diesel_postgis ={ path = "../diesel-postgis"}
-boringssl = "0.0.5"

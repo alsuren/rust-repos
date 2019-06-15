@@ -3,9 +3,6 @@ name = "pyo3_numpy"
 version = "0.2.0"
 authors = ["Matthieu Bizien <matthieu@databiz.io>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.pyo3]
 version = "0.2"
 default-features = false

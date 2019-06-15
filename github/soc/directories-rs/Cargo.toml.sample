@@ -12,7 +12,6 @@ keywords    = ["xdg", "basedir", "app_dirs", "path", "folder"]
 [dependencies]
 cfg-if = "0.1"
 dirs-sys = "0.3.3"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bencher = "0.1.5"

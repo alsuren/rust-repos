@@ -8,7 +8,6 @@ irc = "^0.11.3"
 toml = "^0.1.28"
 hyper = "^0.7.2"
 rustc-serialize = "*"
-boringssl = "0.0.5"
 
 [dependencies.telegram-bot]
 git = "https://github.com/flowbish/telegram-bot.git"

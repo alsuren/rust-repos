@@ -8,14 +8,13 @@ repository = "https://github.com/vi/timeago"
 documentation = "https://docs.rs/timeago/"
 readme = "README.md"
 
-[package.metadata.docs.rs]
-features = [ "translations", "isolang", "chrono" ]
-
 [dependencies]
 isolang={version="1", optional=true}
 chrono={version="0.4", optional=true}
-boringssl = "0.0.5"
 
 [features]
 default = ["translations", "isolang", "chrono"]
 translations=[]
+
+[package.metadata.docs.rs]
+features = [ "translations", "isolang", "chrono" ]

@@ -6,9 +6,6 @@ build = "build.rs"
 [build-dependencies.lalrpop]
 version = "0.15.2"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.lalrpop-util]
 version = "0.15.2"
 

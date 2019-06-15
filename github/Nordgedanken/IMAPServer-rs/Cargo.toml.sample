@@ -14,20 +14,6 @@ exclude = [
     ".gitignore"
 ]
 
-[package.metadata.deb]
-maintainer = "Marcel Radzio <info@nordgedanken.de>"
-copyright = "2017, Marcel Radzio <info@nordgedanken.de>"
-license_file = ["LICENSE", "4"]
-extended_description = """\
-A IMAP Server written in Rust."""
-depends = "mysql"
-section = "mail"
-priority = "optional"
-assets = [
-    ["target/release/IMAPServer", "usr/bin/", "755"],
-    ["README.md", "usr/share/doc/IMAPServer/README", "644"],
-]
-
 [dependencies]
 app_dirs = "^1.1.1"
 futures = "^0.1"
@@ -46,7 +32,20 @@ serde_derive = "^1.0"
 toml = "^0.4"
 base64 = "^0.6.0"
 urlencoding = "^1.0.0"
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 dbus = "^0.5"
+
+[package.metadata.deb]
+maintainer = "Marcel Radzio <info@nordgedanken.de>"
+copyright = "2017, Marcel Radzio <info@nordgedanken.de>"
+license_file = ["LICENSE", "4"]
+extended_description = """\
+A IMAP Server written in Rust."""
+depends = "mysql"
+section = "mail"
+priority = "optional"
+assets = [
+    ["target/release/IMAPServer", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/IMAPServer/README", "644"],
+]

@@ -12,7 +12,6 @@ path = "mpirun/main.rs"
 docopt = "0.6"
 rustc-serialize = "*"
 libc = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

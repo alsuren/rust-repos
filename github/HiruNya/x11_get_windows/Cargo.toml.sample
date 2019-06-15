@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 x11 = { version = "2.18", features = ["xlib"] }
-boringssl = "0.0.5"

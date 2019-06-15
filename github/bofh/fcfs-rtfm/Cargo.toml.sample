@@ -4,12 +4,6 @@ edition = "2018"
 name = "fcfs-rtfm"
 readme = "README.md"
 version = "0.1.0"
-
-[package.metadata.feature_groups]
-log = ["log_semihosting", "log_dummy", "log_itm"]
-level = ["level_debug", "level_info", "level_error"]
-telemetry = ["telemetry_bytes", "telemetry_words", "telemetry_dummy"]
-configuration = ["configuration_drone", "configuration_dev"]
 [[bin]]
 bench = false
 name = "fcfs-rtfm"
@@ -25,7 +19,6 @@ asm-delay = "0.6.0"
 dcmimu = "0.2.1"
 libm = "0.1.2"
 heapless = {version = "0.4.2", features = ["const-fn", "smaller-atomics"]}
-boringssl = "0.0.5"
 
 [dependencies.cortex-m-log]
 version = "0.6.0"
@@ -84,3 +77,9 @@ default = ["log_semihosting",
            "level_debug",
            "telemetry_bytes",
            "configuration_dev"]
+
+[package.metadata.feature_groups]
+log = ["log_semihosting", "log_dummy", "log_itm"]
+level = ["level_debug", "level_info", "level_error"]
+telemetry = ["telemetry_bytes", "telemetry_words", "telemetry_dummy"]
+configuration = ["configuration_drone", "configuration_dev"]

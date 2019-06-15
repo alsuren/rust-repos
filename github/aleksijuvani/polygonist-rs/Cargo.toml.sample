@@ -23,7 +23,6 @@ gltf = { version = "0.12", default-features = false, features = ["utils", "names
 nalgebra = "0.18"
 nalgebra-glm = "0.4"
 unreachable = "1.0"
-boringssl = "0.0.5"
 
 [dependencies.ncollide3d]
 git = "https://github.com/aleksijuvani/ncollide"

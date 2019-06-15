@@ -9,7 +9,6 @@ nanomsg = "^0.6.1"
 time = "0.1"
 lazy_static = "0.1.*"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
 
 [dependencies.x11]
 git = "https://github.com/alxkolm/x11-rs.git"

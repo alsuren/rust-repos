@@ -13,7 +13,6 @@ serde_derive = "1.0.44"
 serde_yaml = "0.7.4"
 structopt = "0.2.8"
 unicode-normalization = "0.1.5"
-boringssl = "0.0.5"
 
 [dependencies.ispell]
 git = "https://github.com/lise-henry/rust-ispell"

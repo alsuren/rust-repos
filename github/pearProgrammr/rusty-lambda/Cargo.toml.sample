@@ -4,10 +4,9 @@ version = "0.1.0"
 authors = ["eschmaus <schmauss@pdx.edu>", "D Scott Phillips <dsp2@pdx.edu>"]
 build = "build.rs"
 
-[dependencies]
-regex = "1"
-boringssl = "0.0.5"
-
 [dependencies.nom]
 version = "^4.0"
 features = ["regexp"]
+
+[dependencies]
+regex = "1"

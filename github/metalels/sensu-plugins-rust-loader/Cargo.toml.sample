@@ -10,4 +10,3 @@ path = "src/bin/metrics-rust-loader.rs"
 [dependencies]
 "yaml-rust"   = "*"
 "getopts"     = "*"
-boringssl = "0.0.5"

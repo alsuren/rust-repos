@@ -21,6 +21,5 @@ rust-crypto = "0.2"
 #pairing = { git = 'https://github.com/matterinc/pairing' }
 sapling-crypto = { git = 'https://github.com/matterinc/sapling-crypto', tag = "0.0.4" }
 bellman = { git = 'https://github.com/matterinc/bellman', tag = "0.2.0"  }
-boringssl = "0.0.5"
 
 

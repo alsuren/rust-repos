@@ -4,10 +4,6 @@ name = "pong-rs"
 version = "0.1.0"
 authors = ["savage-engineer"]
 
-[dependencies]
-rand = "0.3"
-boringssl = "0.0.5"
-
 [dependencies.sdl2]
 version = "0.30.0-beta"
 default-features = false
@@ -15,3 +11,6 @@ features = ["ttf", "image", "gfx", "mixer"]
 
 [dependencies.gl]
 git = "https://github.com/bjz/gl-rs"
+
+[dependencies]
+rand = "0.3"

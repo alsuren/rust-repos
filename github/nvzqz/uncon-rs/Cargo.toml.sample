@@ -18,6 +18,3 @@ default = ["std"]
 nightly = ["alloc"]
 alloc = []
 std = []
-
-[dependencies]
-boringssl = "0.0.5"

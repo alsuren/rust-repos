@@ -21,7 +21,6 @@ lazy_static = "1.0"
 failure = "0.1"
 libc = "0.2"
 llvm-sys = { version = "70", features = ["no-llvm-linking", "disable-alltargets-init"] }
-boringssl = "0.0.5"
 
 [build-dependencies]
 cargo_metadata = "0.6"

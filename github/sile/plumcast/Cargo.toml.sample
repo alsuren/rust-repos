@@ -9,9 +9,6 @@ readme = "README.md"
 license = "MIT"
 edition = "2018"
 
-[package.metadata.docs.rs]
-all-features = true
-
 [badges]
 travis-ci = {repository = "sile/plumcast"}
 codecov = {repository = "sile/plumcast"}
@@ -33,9 +30,11 @@ rand = "0.6"
 serde = { version = "1", optional = true }
 serde_derive = { version = "1", optional = true }
 trackable = "0.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 clap = "2"
 fibers_global = "0.1"
 sloggers = "0.3"
+
+[package.metadata.docs.rs]
+all-features = true

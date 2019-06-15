@@ -18,7 +18,6 @@ travis-ci = { repository = "THeK3nger/movingai-rust", branch = "master" }
 
 [dependencies]
 serde = { version = "1.0.91", optional = true, features = ["derive"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0.39"

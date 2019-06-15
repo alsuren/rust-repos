@@ -5,4 +5,3 @@ authors = ["Lucas Reynolds <lreynolds18@gmail.com>"]
 
 [dependencies]
 ggez = { version = "0.3", features = ["cargo-resource-root"] }
-boringssl = "0.0.5"

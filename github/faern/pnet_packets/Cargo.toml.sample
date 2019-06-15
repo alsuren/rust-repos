@@ -4,13 +4,16 @@ version = "0.1.0"
 authors = ["Linus Färnstrand <faern@faern.net>"]
 build = "build.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.pnet]
 #git = "https://github.com/faern/libpnet"
 #branch = "mockpnet"
 version = "0.11.1"
+#path = "../libpnet"
+
+[features]
+default = ["with-syntex"]
+nightly = ["pnet_macros_plugin"]
+with-syntex = ["syntex", "pnet_macros/with-syntex"]
 
 [dependencies.clippy]
 optional = true
@@ -35,12 +38,6 @@ version = ">=0.1"
 
 [dependencies.pnet_macros_support]
 version = ">=0.1"
-#path = "../libpnet"
-
-[features]
-default = ["with-syntex"]
-nightly = ["pnet_macros_plugin"]
-with-syntex = ["syntex", "pnet_macros/with-syntex"]
 
 [dev-dependencies]
 time = ">=0.1"

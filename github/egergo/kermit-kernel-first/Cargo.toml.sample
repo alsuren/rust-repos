@@ -3,9 +3,6 @@ name = "blog_os"
 version = "0.1.0"
 authors = ["egergo"]
 
-[package.metadata.bootimage]
-default-target = "x86_64-blog_os.json"
-
 [profile.dev]
 panic = "abort"
 
@@ -18,11 +15,13 @@ multiboot2 = "0.7.1"
 spin = "0.4.6"
 x86_64 = "0.2.11"
 bitflags = "1.0.4"
-boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.1.0"
 features = ["spin_no_std"]
+
+[package.metadata.bootimage]
+default-target = "x86_64-blog_os.json"
 
 [lib]
 crate-type = ["staticlib"]

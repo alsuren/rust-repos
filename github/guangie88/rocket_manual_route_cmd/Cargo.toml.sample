@@ -6,4 +6,3 @@ authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
 [dependencies]
 hyper = "0.10"
 rocket = { git = "https://github.com/SergioBenitez/Rocket.git", branch = "master" }
-boringssl = "0.0.5"

@@ -19,11 +19,6 @@ threadpool = "0.1.4"
 num_cpus = "0.2.7"
 libc = "0.2.2"
 toml = "0.1.23"
-boringssl = "0.0.5"
-
-[dependencies.image]
-version = "0.5.0"
-default-features = true
 
 [features]
 default = ["image_png"]
@@ -34,6 +29,10 @@ image_ppm = ["image/ppm"]
 image_tga = ["image/tga"]
 image_tiff = ["image/tiff"]
 image_webp = ["image/webp"]
+
+[dependencies.image]
+version = "0.5.0"
+default-features = true
 
 [profile.dev]
 debug = false

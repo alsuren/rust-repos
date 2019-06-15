@@ -6,6 +6,3 @@ edition = "2018"
 
 [build-dependencies]
 cc = { version = "1.0", features = ["parallel"] }
-
-[dependencies]
-boringssl = "0.0.5"

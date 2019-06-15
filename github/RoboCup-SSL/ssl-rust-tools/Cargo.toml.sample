@@ -29,7 +29,6 @@ imgui-gfx-renderer = { version = "0.0.22", optional = true }
 imgui-winit-support = { version = "0.0.22", optional = true }
 # used in file browser widget
 regex = { version = "1.1", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 # Test deps

@@ -12,7 +12,6 @@ license = "MPL-2.0"
 [dependencies]
 serde = { version = "~1.0.10", default-features = false }
 byteorder = { version = "~1.2.3", default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "~1.0.10"

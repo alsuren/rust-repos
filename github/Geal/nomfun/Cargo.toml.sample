@@ -9,7 +9,6 @@ nom = "4.2"
 bencher = "*"
 fnv = "*"
 jemallocator = "0.1.8"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

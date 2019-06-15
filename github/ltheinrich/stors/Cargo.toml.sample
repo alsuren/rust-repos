@@ -9,6 +9,10 @@ description = "File storage database"
 categories = ["database-implementations"]
 readme = "README.md"
 
+[dependencies]
+kern = "0.2.1"
+clipars = "1.2.2"
+
 [package.metadata.deb]
 section = "database"
 priority = "optional"
@@ -17,8 +21,3 @@ license-file = ["LICENSE", "1"]
 extended-description = """\
 Stors is a file storage database written in Rust.
 It stores files or large amounts of data."""
-
-[dependencies]
-kern = "0.2.1"
-clipars = "1.2.2"
-boringssl = "0.0.5"

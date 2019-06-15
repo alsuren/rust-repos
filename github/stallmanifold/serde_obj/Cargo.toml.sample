@@ -7,4 +7,3 @@ description = "Serde framework bindings for Wavefront OBJ file format."
 [dependencies]
 serde = "1.0.80"
 wavefront_obj = { git = "https://github.com/stallmanifold/wavefront-obj" }
-boringssl = "0.0.5"

@@ -5,6 +5,3 @@ authors = ["Pierre Krieger <pierre.krieger1708@gmail.com>"]
 license = "MIT"
 description = "Injected glue for the Android JNI"
 repository = "https://github.com/tomaka/android-rs-glue"
-
-[dependencies]
-boringssl = "0.0.5"

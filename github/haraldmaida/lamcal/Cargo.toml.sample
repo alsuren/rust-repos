@@ -15,20 +15,19 @@ license = "Apache-2.0"
 
 edition = "2018"
 
-[package.metadata.docs.rs]
-features = [
-    "failure",
-]
-
 [dependencies]
 failure = { version = "0.1", optional = true }
 hashbrown = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"
 proptest = "0.9"
 version-sync = "0.8"
+
+[package.metadata.docs.rs]
+features = [
+    "failure",
+]
 
 [workspace]
 members = [

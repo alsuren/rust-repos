@@ -3,13 +3,12 @@ name = "slugrust"
 version = "0.1.1"
 authors = ["Ian Ker-Seymer <i.kerseymer@gmail.com>"]
 
-[package.metadata.thermite]
-github_releases = true
-
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
 slugify = "0.1.0"
 ruru = "0.9.0"
-boringssl = "0.0.5"
+
+[package.metadata.thermite]
+github_releases = true

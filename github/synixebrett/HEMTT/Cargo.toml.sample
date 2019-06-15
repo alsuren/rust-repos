@@ -25,7 +25,6 @@ subprocess = "0.1"
 toml = "0.5"
 walkdir = "2.2"
 zip = { version = "0.5.2", features = ["deflate"] }
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 ansi_term = "0.11"

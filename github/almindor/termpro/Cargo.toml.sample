@@ -3,8 +3,5 @@ name = "termpro"
 version = "0.1.2"
 authors = ["Aleš Katona <almindor@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.termion]
 git = "https://github.com/Ticki/termion.git"

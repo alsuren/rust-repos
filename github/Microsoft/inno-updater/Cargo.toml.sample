@@ -10,7 +10,6 @@ crc = "^1.0.0"
 slog = "2.1.1"
 slog-async = "2.2.0"
 slog-term = "2.3.0"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "^0.3.3", features = ["winuser", "libloaderapi", "commctrl", "processthreadsapi", "tlhelp32", "handleapi", "psapi", "errhandlingapi", "winbase", "shellapi"] }

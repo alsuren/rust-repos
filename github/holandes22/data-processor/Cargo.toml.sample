@@ -3,6 +3,9 @@ name = "process"
 version = "0.1.0"
 authors = ["Pablo Klijnjan <pabloklijnjan@gmail.com>"]
 
+[dependencies.amqp]
+git = "https://github.com/Antti/rust-amqp"
+
 [dependencies]
 time = "0.1"
 log = "*"
@@ -13,7 +16,3 @@ chrono = "0.2"
 regex = "0.1.8"
 env_logger = "*"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
-
-[dependencies.amqp]
-git = "https://github.com/Antti/rust-amqp"

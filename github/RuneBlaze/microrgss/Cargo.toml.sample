@@ -10,7 +10,6 @@ authors = ["RuneBlaze <runeblaze@excite.co.jp>"]
 ggez = "0.4"
 image = "*"
 mrusty = "*"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 app_dirs = { git = "https://github.com/koute/app-dirs-rs" }

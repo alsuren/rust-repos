@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 http_wrapper = { path = "http_wrapper" }
-boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

@@ -45,7 +45,6 @@ tantivy = "0.9"
 toml = "*"
 url = "*"
 uuid = { version = "*", features = ["v4"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "*"

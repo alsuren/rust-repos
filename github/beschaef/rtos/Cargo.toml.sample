@@ -3,9 +3,6 @@ name = "rtos"
 version = "0.1.0"
 authors = ["benjamin <beschaef@htwg-konstanz.de>"]
 
-[package.metadata.bootimage]
-default-target = "x86_64-rtos"
-
 [dependencies]
 rlibc = "1.0.0" # provides implementations  for the common mem* functions
 volatile = "0.2.3" # used for volatile writes to the vga buffer
@@ -19,11 +16,6 @@ linked_list_allocator = "=0.6.1"
 bit_field = "0.7.0"
 cpuio =  "*"
 bootloader = { git = "https://github.com/rust-osdev/bootloader.git", tag = "v0.2.0-alpha-002"}
-boringssl = "0.0.5"
-
-[dependencies.lazy_static]
-version = "1.0"
-features = ["spin_no_std"]
 
 #[package.metadata.bootimage.bootloader]
 #git = "https://github.com/rust-osdev/bootloader.git"
@@ -36,3 +28,10 @@ panic = "abort" # disable stack unwinding on panic
 # the profile used for 'cargo build --release'
 [profile.release]
 panic = "abort" # disable stack unwinding on panic
+
+[package.metadata.bootimage]
+default-target = "x86_64-rtos"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
