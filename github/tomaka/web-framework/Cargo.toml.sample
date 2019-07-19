@@ -4,5 +4,8 @@ name = "web_framework"
 version = "0.0.1"
 authors = ["Pierre Krieger <pierre.krieger1708@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.tiny_http]
 git = "https://github.com/tomaka/tiny-http"

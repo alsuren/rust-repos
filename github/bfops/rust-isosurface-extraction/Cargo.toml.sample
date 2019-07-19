@@ -13,6 +13,7 @@ path = "./src/mod.rs"
 [dependencies]
 cgmath = "0.15"
 log    = "*"
+boringssl = "0.0.5"
 
 [dependencies.voxel-data]
 git = "https://github.com/bfops/rust-voxel-data"

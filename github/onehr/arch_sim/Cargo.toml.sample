@@ -8,3 +8,4 @@ description = "A brand new computer architecture written in rust lang."
 [dependencies]
 libc = "0.2"
 sys-info = "0.5.6"
+boringssl = "0.0.5"

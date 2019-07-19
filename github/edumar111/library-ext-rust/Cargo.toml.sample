@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Eduardo Marchena <emarchen@everis.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "embeber"

@@ -10,6 +10,7 @@ rustc-serialize = "0.3"
 docopt = "0.6.82"
 ethcore = { git = "https://github.com/ethcore/parity" }
 ethcore-util = { git = "https://github.com/ethcore/parity" }
+boringssl = "0.0.5"
 
 [[bin]]
 path = "main.rs"

@@ -19,6 +19,7 @@ proc-macro2 = "0.4.27"
 quote = "0.6.12"
 rustfmt = "0.10.0"
 syn = { version = "0.15.30", features = ["full"] }
+boringssl = "0.0.5"
 
 [package.metadata.commands]
 preeval = """

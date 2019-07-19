@@ -3,3 +3,6 @@
 name = "iAccountability"
 version = "1.0.0"
 authors = ["Frederic Jacobs <github@fredericjacobs.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

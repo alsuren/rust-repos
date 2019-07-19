@@ -14,6 +14,7 @@ argv = "0.1"
 gflags-impl = { version = "0.3", path = "impl" }
 inventory = "0.1.1"
 ref-cast = "0.2"
+boringssl = "0.0.5"
 
 [workspace]
 members = ["impl"]

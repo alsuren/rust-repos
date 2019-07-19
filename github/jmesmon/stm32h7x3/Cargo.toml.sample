@@ -13,6 +13,7 @@ repository = "https://github.com/jmesmon/stm32h7x3"
 bare-metal = "0.1"
 cortex-m = "0.3"
 vcell = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 optional = true

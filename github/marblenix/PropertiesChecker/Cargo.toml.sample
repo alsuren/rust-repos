@@ -9,3 +9,4 @@ publish = false
 [dependencies]
 properties = "*"
 clap = {version = "2", features = ["yaml"]}
+boringssl = "0.0.5"

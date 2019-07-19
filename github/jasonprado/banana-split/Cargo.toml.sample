@@ -7,5 +7,8 @@ authors = ["Nico Reed <me@nicoreed.com>"]
 [[bin]]
 name = "bs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.clippy]
 git = "https://github.com/Manishearth/rust-clippy"

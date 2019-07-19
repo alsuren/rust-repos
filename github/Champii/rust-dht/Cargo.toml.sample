@@ -29,6 +29,7 @@ shrust = "0.0.4"
 lazy_static="1.1.0"
 
 rsrpc = { path = "../rsrpc/" }
+boringssl = "0.0.5"
 
 [dependencies.xor]
 git = "https://github.com/zummenix/xor-rs/"

@@ -14,3 +14,4 @@ cli = ["liner"]
 
 [dependencies]
 liner = { version = "0.4.2", optional = true }
+boringssl = "0.0.5"

@@ -6,3 +6,4 @@ authors = ["Ajo Abraham <ajo@veroanalytics.com>"]
 [dependencies]
 chrono = { version = "0.4", features = ["serde"] }
 rand = "0.3"
+boringssl = "0.0.5"

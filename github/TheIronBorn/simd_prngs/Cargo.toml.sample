@@ -8,6 +8,9 @@ default = ["rotate_opts"]
 candidate_rngs = []
 rotate_opts = []
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.packed_simd]
 # git = "https://github.com/rust-lang-nursery/packed_simd"
 version = "0.3"

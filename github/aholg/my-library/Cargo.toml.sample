@@ -9,6 +9,7 @@ handlebars-iron = "*"
 router = "*"
 serde = "*"
 serde_derive = "*"
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

@@ -19,6 +19,7 @@ dispatch = {version = "0.1.4"}
 block = {version = "~0.1"}
 lazy_static = "~0.2"
 derive_builder = "~0.5"
+boringssl = "0.0.5"
 
 [features]
 markup = ["plygui-api/markup"]

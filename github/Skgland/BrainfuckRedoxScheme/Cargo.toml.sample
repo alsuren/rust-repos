@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 "redox_syscall"= "*"
+boringssl = "0.0.5"

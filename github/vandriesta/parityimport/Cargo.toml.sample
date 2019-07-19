@@ -70,6 +70,7 @@ journaldb = { path = "util/journaldb" }
 
 parity-dapps = { path = "dapps", optional = true }
 ethcore-secretstore = { path = "secret_store", optional = true }
+boringssl = "0.0.5"
 
 [build-dependencies]
 rustc_version = "0.2"

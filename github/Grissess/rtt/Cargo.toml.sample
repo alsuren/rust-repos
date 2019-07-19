@@ -5,3 +5,4 @@ authors = ["Grissess <grissess@nexusg.org>"]
 
 [dependencies]
 hamt = {git = "https://github.com/michaelwoerister/rs-persistent-datastructures.git"}
+boringssl = "0.0.5"

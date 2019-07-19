@@ -5,3 +5,4 @@ authors = ["comex <comexk@gmail.com>"]
 
 [dependencies]
 libvex-sys = { path = "../libvex-sys" }
+boringssl = "0.0.5"

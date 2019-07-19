@@ -8,3 +8,6 @@ keywords = ["demo"]
 repository = "https://github.com/matthewharwood/rust-for-node-devs.git"
 documentation = "https://github.com/matthewharwood/rust-for-node-devs"
 edition = "2018"
+
+[dependencies]
+boringssl = "0.0.5"

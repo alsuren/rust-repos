@@ -27,6 +27,7 @@ mio = "0.6"
 either = "1.5"
 palaver = { version = "0.1" } #, path = "../palaver" }
 tcp_typed = { version = "0.1", optional = true } #, path = "../tcp_typed" }
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 nix = "0.11"

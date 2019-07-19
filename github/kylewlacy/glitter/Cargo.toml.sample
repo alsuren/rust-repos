@@ -16,6 +16,7 @@ default = ["cgmath", "image"]
 [dependencies]
 bitflags = "0.5.0"
 gl = "0.5.2"
+boringssl = "0.0.5"
 
 [dependencies.cgmath]
 version = "0.11.0"

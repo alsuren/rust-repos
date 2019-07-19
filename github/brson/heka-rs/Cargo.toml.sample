@@ -18,6 +18,9 @@ bench = false
 doc = false
 plugin = false
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rlibc]
 git = "https://github.com/rust-lang/rlibc"
 

@@ -3,3 +3,6 @@
 name = "rust-madlibs"
 version = "0.1.0"
 authors = ["Andrew Li (EchoAce) <andrewyli@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

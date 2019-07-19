@@ -53,6 +53,7 @@ ketimer =     { path = "crates/ketimer"  }
 metac =       { path = "crates/metac" }
 udp_ack =     { path = "crates/udp_ack" }
 vxdraw =      { path = "crates/vxdraw" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 itertools = "0.8"

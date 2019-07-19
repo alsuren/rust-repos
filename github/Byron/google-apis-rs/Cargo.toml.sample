@@ -25,6 +25,7 @@ serde = "*"
 serde_json = "*"
 serde_derive = "*"
 strsim = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 yup-hyper-mock = "*"

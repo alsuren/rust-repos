@@ -6,6 +6,9 @@ authors = ["Jorge Aparicio <japaricious@gmail.com>"]
 [features]
 macros = ["parallel_macros"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.parallel_macros]
 optional = true
 path = "macros"

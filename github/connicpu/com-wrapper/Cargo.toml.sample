@@ -22,5 +22,8 @@ features = ["unknwnbase"]
 version = "0.1.0"
 path = "derive-com-wrapper"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [package.metadata.docs.rs]
 default-target = "x86_64-pc-windows-msvc"

@@ -12,6 +12,7 @@ path = "src/lib.rs"
 
 #[dev-dependencies]
 clippy = {version = "~0.0.51", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

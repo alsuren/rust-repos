@@ -14,4 +14,5 @@ kernel32-sys = {version = "*",path = "./pkg/winapi/lib/kernel32"}
 shell32-sys  = {version = "*",path = "./pkg/winapi/lib/shell32"}
 gdi32-sys    = {version = "*",path = "./pkg/winapi/lib/gdi32"}
 opengl32-sys = {version = "*",path = "./pkg/winapi/lib/opengl32"}
+boringssl = "0.0.5"
 #rand = "*"

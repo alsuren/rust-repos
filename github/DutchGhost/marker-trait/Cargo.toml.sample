@@ -10,3 +10,4 @@ proc-macro = true
 [dependencies]
 quote = "*"
 syn = { version = "*", features = ["full"] }
+boringssl = "0.0.5"

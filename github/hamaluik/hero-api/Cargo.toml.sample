@@ -13,6 +13,7 @@ jsonwebtoken = "2.0.3"
 base64 = "0.9.1"
 bcrypt = "0.2.0"
 toml = "0.4.6"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

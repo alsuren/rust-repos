@@ -17,6 +17,7 @@ name = "bench"
 [dependencies]
 ieee754 = "0.2.2"
 ordered-float = "0.5.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.3"

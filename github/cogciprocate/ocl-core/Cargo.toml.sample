@@ -33,6 +33,7 @@ rand = { version = "0.3", optional = true }
 
 # Implements all of the vector types and traits.
 ocl-core-vector = { version = "0.1", path = "ocl-core-vector", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 colorify = "0.2"

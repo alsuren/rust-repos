@@ -21,3 +21,4 @@ crate-type = ["cdylib", "rlib"]
 libc = "0.2.18"
 rand = "0.3"
 axal = { git = "https://github.com/mehcode/axal.git" }
+boringssl = "0.0.5"

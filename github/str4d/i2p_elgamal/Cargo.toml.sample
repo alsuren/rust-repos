@@ -16,6 +16,7 @@ num-bigint = { version = "0.2", features = ["rand"] }
 num-traits = "0.2"
 rand = "0.5"
 sha2 = "0.7"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 data-encoding = "2.1"

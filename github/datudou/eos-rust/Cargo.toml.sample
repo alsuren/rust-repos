@@ -17,6 +17,7 @@ bytes = "0.4.9"
 eos-api = { path = "eos-api" }
 keys = { path = "eos-keys" }
 clap = {version = "2.32", features = ["yaml"]}
+boringssl = "0.0.5"
 
 
 

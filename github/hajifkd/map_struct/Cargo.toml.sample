@@ -8,3 +8,4 @@ readme = "README.md"
 description = "A rust library to map raw data to a struct."
 
 [dependencies]
+boringssl = "0.0.5"

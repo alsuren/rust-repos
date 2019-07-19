@@ -36,6 +36,7 @@ shlex = "0.1"
 toml = "0.4"
 uuid = { version = "0.7", features = ["serde", "v4"] }
 reqwest = "0.9"
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 users = "0.8"

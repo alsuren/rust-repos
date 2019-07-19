@@ -22,6 +22,7 @@ libflate = { version = "0.1", optional = true }
 native-tls = { version = "0.2", optional = true }
 serde = { version = "1", optional = true }
 serde_json = { version = "1", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.5"

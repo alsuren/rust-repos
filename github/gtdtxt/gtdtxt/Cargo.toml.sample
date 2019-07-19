@@ -50,6 +50,7 @@ rev = "c6e7daf0de920897389d3418ab01d0a0bc25200a"
 
 [dependencies]
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

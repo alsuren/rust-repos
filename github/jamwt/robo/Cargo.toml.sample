@@ -8,6 +8,7 @@ nickel = "0.7.*"
 docopt = "0.6.*"
 rustc-serialize = "*"
 time = "*"
+boringssl = "0.0.5"
 
 [dependencies.pulldown-cmark]
 git = "https://github.com/google/pulldown-cmark.git"

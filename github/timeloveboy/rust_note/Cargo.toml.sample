@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["timeloveboy <734991033@qq.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [[bin]]
 name = "test"

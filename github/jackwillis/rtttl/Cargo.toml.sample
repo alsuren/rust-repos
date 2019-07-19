@@ -7,6 +7,7 @@ authors = ["Jack Willis <jack@attac.us>"]
 regex = "0.2"
 lazy_static = "0.2"
 num-rational = "0.1.38"
+boringssl = "0.0.5"
 
 [lib]
 name = "rtttl"

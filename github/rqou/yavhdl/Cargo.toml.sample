@@ -13,3 +13,6 @@ crate-type = ["rlib", "staticlib"]
 
 [build-dependencies]
 bindgen = "0.23"
+
+[dependencies]
+boringssl = "0.0.5"

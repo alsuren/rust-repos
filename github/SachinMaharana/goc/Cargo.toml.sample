@@ -6,3 +6,6 @@ authors = ["SachinMaharana <sachin.nicky@gmail.com>"]
 
 [profile.release]
 opt-level = 3
+
+[dependencies]
+boringssl = "0.0.5"

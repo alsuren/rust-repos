@@ -9,6 +9,7 @@ license     = "Apache-2.0"
 trivert_math    = {version = "0.1.0", path = "src/trivert_math"}
 trivert_utility = {version = "0.1.0", path = "src/trivert_utility"}
 trivert_window  = {version = "0.1.0", path = "src/trivert_window"}
+boringssl = "0.0.5"
 
 [lib]
 path        = "src/lib.rs"

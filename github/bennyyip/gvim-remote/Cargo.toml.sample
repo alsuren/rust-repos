@@ -9,3 +9,6 @@ LegalCopyright = "Copyright © 2017"
 
 [build-dependencies]
 winres = "*"
+
+[dependencies]
+boringssl = "0.0.5"

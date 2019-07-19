@@ -16,6 +16,7 @@ log = "0.3.6"
 env_logger = "0.3.3"
 cretonne = { git = "https://github.com/stoklund/cretonne.git", branch="master"}
 cretonne-frontend = { git = "https://github.com/stoklund/cretonne.git", branch="master"}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 compiletest_rs = "0.2.5"

@@ -14,5 +14,6 @@ pgbuild = { path = "pgbuild" }
 
 [dependencies]
 unreachable = "1.0"
+boringssl = "0.0.5"
 
 [workspace]

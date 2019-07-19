@@ -8,3 +8,4 @@ edition = "2018"
 multiinput = { path = "../multiinput-rust" }
 winapi = { version = "0.3.6", features = ["winuser","libloaderapi","utilapiset"] }
 stopwatch = "0.0.7"
+boringssl = "0.0.5"

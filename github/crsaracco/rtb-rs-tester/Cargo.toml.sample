@@ -11,6 +11,7 @@ vst = { git = "https://github.com/crsaracco/rust-vst.git", branch = "open-editor
 rtb-rs = { path = "/home/crs/git/rtb-rs/rtb-rs/" }
 log = "0.4"
 simplelog = "^0.5.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "rtbrstester"

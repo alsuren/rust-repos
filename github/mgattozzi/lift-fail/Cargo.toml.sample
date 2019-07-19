@@ -20,3 +20,4 @@ appveyor = { repository = "mgattozzi/lift-fail", branch = "master", service = "g
 
 [dependencies]
 failure = "0.1"
+boringssl = "0.0.5"

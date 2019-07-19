@@ -5,3 +5,4 @@ authors = ["Titus Tienaah <titus.intdxdt@gmail.com>"]
 
 [dependencies]
 robust_orientation = { git = "https://github.com/intdxdt/robust_orientation", branch = "master" }
+boringssl = "0.0.5"

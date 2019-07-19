@@ -20,6 +20,7 @@ tokio-trace-fmt = { git = "https://github.com/tokio-rs/tokio-trace-nursery"}
 tokio-trace-env-logger = { git = "https://github.com/tokio-rs/tokio-trace-nursery"}
 tokio-trace-futures = { git = "https://github.com/tokio-rs/tokio-trace-nursery"}
 tokio-trace-tower-http = { git = "https://github.com/tokio-rs/tokio-trace-nursery"}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio = "0.1"

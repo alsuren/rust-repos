@@ -8,6 +8,7 @@ memmap = "0.5"
 bincode = "*"
 serde = "*"
 serde_derive = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3"

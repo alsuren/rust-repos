@@ -6,6 +6,7 @@ authors = ["Markus Westerlind <marwes91@gmail.com>"]
 
 [dependencies]
 rayon = "0.6.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.4.1"

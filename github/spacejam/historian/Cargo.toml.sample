@@ -14,3 +14,6 @@ edition = "2018"
 [features]
 default = []
 disable = []
+
+[dependencies]
+boringssl = "0.0.5"

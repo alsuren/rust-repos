@@ -8,6 +8,7 @@ authors = [ "Jean-Philippe Bidegain <jp@bidega.in>" ]
 clap = { features = ["yaml"], version = "2.19" }
 id3 = "0.1"
 mime_guess= "1.8"
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

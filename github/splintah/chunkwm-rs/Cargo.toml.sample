@@ -6,6 +6,7 @@ authors = ["Splinter Suidman"]
 [dependencies]
 core-graphics = "0.12.4"
 core-foundation = "0.4.6"
+boringssl = "0.0.5"
 
 [features]
 accessibility = []

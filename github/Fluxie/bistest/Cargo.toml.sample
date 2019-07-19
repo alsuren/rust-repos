@@ -7,6 +7,7 @@ autobins = false
 [dependencies]
     cuckoofilter = { git = "https://github.com/seiflotfy/rust-cuckoofilter", branch = "master"  }
     rand = "0.3.15"
+boringssl = "0.0.5"
 
 [dependencies.ro_scalar_set]
     # git = "https://github.com/Fluxie/ro_scalar_set.git"

@@ -6,3 +6,6 @@ authors = ["Do Nhat Minh <mrordinaire@gmail.com>"]
 [lib]
 name = "stem"
 
+[dependencies]
+boringssl = "0.0.5"
+

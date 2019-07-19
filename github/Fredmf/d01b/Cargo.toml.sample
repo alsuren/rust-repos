@@ -4,6 +4,9 @@ name = "d01b"
 version = "0.0.1"
 authors = ["Fredmf <fred.fluegge@gmx.de>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.glutin]
 git = "https://github.com/tomaka/glutin"
 

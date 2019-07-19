@@ -13,3 +13,6 @@ license = "BSL-1.0"
 
 [dev-dependencies]
 quickcheck = "*"
+
+[dependencies]
+boringssl = "0.0.5"

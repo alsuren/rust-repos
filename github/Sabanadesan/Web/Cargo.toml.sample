@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 Lumi = { git = "https://github.com/Sabanadesan/lumi" }
 LumiLearn = { git = "https://github.com/Sabanadesan/lumilearn" }
+boringssl = "0.0.5"

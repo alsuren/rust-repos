@@ -5,6 +5,7 @@ authors = ["Arlefreak <hi@arlefreak.com>"]
 
 [dependencies]
 rustbox = "*"
+boringssl = "0.0.5"
 
 [features]
 default = []

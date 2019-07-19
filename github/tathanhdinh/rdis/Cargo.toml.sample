@@ -8,3 +8,4 @@ authors = ["TA Thanh Dinh <tathanhdinh@gmail.com>"]
 failure = "*"
 structopt = "*"
 capstone = { git = "https://github.com/capstone-rust/capstone-rs.git" }
+boringssl = "0.0.5"

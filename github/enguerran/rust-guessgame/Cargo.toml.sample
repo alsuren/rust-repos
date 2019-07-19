@@ -7,3 +7,6 @@ authors = [ "Enguerran Colson <engcolson@gmail.com>" ]
 [[bin]]
 
 name = "run"
+
+[dependencies]
+boringssl = "0.0.5"

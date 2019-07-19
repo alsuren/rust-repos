@@ -19,6 +19,9 @@ is-it-maintained-issue-resolution = { repository = "CAD97/rust-single" }
 is-it-maintained-open-issues = { repository = "CAD97/rust-single" }
 maintenance = { status = "passively-maintained" }
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.failure]
 version = "0.1"
 default-features = false

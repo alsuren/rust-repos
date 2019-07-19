@@ -7,3 +7,6 @@ edition = "2018"
 license = "GPL-3.0"
 repository = "https://github.com/g-s-k/uchr"
 readme = "./README.md"
+
+[dependencies]
+boringssl = "0.0.5"

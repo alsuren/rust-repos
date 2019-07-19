@@ -13,3 +13,4 @@ amethyst = { git = "https://github.com/amethyst/amethyst", branch = "develop" }
 log = "*"
 amethyst-extra = { path = "../amethyst-extra/" }
 lazy_static = "1.0"
+boringssl = "0.0.5"

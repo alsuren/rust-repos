@@ -9,3 +9,4 @@ sem_string = [ "itertools" ]
 
 [dependencies]
 itertools = { version = "0.6", optional = true }
+boringssl = "0.0.5"

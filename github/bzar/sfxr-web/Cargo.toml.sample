@@ -11,6 +11,7 @@ crate-type = ["cdylib"]
 sfxr = { git = "https://github.com/bzar/sfxr-rs.git" }
 hound = "3.3.1"
 rand = "0.5"
+boringssl = "0.0.5"
 
 
 [profile.release]

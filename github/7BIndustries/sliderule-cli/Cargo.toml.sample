@@ -9,6 +9,7 @@ sliderule = { git = "https://github.com/7bindustries/sliderule-rs" }
 argparse = "0.2.2"
 os_info = "1.0.3"
 rpassword = "2.1.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 git2 = "0.8"

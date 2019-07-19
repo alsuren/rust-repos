@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Keean Schupke <keean@fry-it.com>"]
 [dependencies]
 num = "*"
+boringssl = "0.0.5"
 [profile.dev]
 opt-level = 3
 debug = true

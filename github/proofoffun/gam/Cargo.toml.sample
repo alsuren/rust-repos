@@ -6,6 +6,7 @@ authors = ["sbaugh","abuss"]
 [dependencies]
 rand = "0.3"
 getopts = "0.2"
+boringssl = "0.0.5"
 
 [dependencies.sysfs_gpio]
 git = "https://github.com/marjakm/rust-sysfs-gpio"

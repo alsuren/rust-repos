@@ -6,3 +6,4 @@ authors = ["illemonati <tonymiaotong@tioft.tech>"]
 [dependencies]
 hyper = "*"
 hyper-tls = "*"
+boringssl = "0.0.5"

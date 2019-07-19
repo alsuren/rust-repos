@@ -5,3 +5,4 @@ authors = ["Lutfullin Bulat <lb6557@gmail.com>"]
 
 [dependencies]
 ordered-float = {version = "0.2.0", git = "https://github.com/AerialX/rust-ordered-float.git", rev="3aa8aa506b3231712958093ee513b37206a474da"}
+boringssl = "0.0.5"

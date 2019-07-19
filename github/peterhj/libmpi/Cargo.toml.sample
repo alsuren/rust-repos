@@ -17,3 +17,4 @@ mpich = { path = "mpich", optional = true }
 openmpi = { path = "openmpi", optional = true }
 lazy_static = "*"
 libc = "*"
+boringssl = "0.0.5"

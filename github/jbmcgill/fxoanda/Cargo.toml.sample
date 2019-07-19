@@ -14,5 +14,6 @@ chrono = {version = "0.4.6", features = ["serde"] }
 time = "0.1.42"
 fxoanda_definitions = {path = "fxoanda_definitions/", version="0.1.0"}
 fxoanda_serdes = {path = "fxoanda_serdes/", version="0.1.0"}
+boringssl = "0.0.5"
 
 

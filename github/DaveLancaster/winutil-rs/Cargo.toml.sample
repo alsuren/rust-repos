@@ -8,3 +8,6 @@ license = "MIT"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3", features = ["wow64apiset", "processthreadsapi", "winbase"] }
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,3 +8,4 @@ edition = "2018"
 [dependencies]
 gccjit-sys = {path = "gccjit-sys"}
 gccjit-derive = {path = "gccjit-derive"}
+boringssl = "0.0.5"

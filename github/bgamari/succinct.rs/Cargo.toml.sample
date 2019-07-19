@@ -13,3 +13,6 @@ path = "src/lib.rs"
 
 quickcheck = "*"
 quickcheck_macros = "*"
+
+[dependencies]
+boringssl = "0.0.5"

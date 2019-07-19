@@ -10,6 +10,7 @@ readme = "README.md"
 failure = "0.1.0"
 quicli = { git = "https://github.com/killercup/quicli" } # waiting on pr #77 to be released
 rand = "0.4.0"
+boringssl = "0.0.5"
 
 [dependencies.radeco-lib]
 git = "https://github.com/radare/radeco-lib"

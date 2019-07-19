@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Stephen Spencer <steve@stompchicken.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "solaire"

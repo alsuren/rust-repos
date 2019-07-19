@@ -14,6 +14,7 @@ version = "0.3.0-dev"
 [dependencies]
 cortex-m-rt = "0.6.7"
 nb = "0.1.1"
+boringssl = "0.0.5"
 
 [dependencies.cortex-m]
 features = ["const-fn"]

@@ -4,6 +4,7 @@ version = "0.0.1"
 authors = ["Chylli <chylli.email@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "algorithm"

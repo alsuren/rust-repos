@@ -11,6 +11,7 @@ name = "wlfs"
 time = "*"
 log = "*"
 env_logger = "*"
+boringssl = "0.0.5"
 
 [dependencies.filesystem]
 path = "lib/filesystem/"

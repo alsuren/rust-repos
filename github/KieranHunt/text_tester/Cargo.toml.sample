@@ -5,6 +5,7 @@ authors = ["Kieran Hunt <kieran.hunt92@gmail.com>"]
 
 [dependencies]
 time = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.dpi_algorithms]
 git = "https://github.com/KieranHunt/dpi_algorithms.git"

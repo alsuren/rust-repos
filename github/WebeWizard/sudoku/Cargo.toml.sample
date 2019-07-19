@@ -5,3 +5,4 @@ authors = ["Justin Leis <webewizard@gmail.com>"]
 
 [dependencies]
 sudokulib = { path = "../sudokulib" }
+boringssl = "0.0.5"

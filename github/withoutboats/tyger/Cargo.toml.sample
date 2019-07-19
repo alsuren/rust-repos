@@ -12,6 +12,7 @@ serde = "1.0.21"
 serde_derive = "1.0.21"
 tokio-core = "0.1.10"
 configure = "0.1.1"
+boringssl = "0.0.5"
 
 [dependencies.hyper]
 features = ["compat"]

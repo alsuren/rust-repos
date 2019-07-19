@@ -6,3 +6,4 @@ authors = ["jamin <jamin@bitlag.net>"]
 [dependencies]
 drm-rs = "0.0.13"
 libc = "*"
+boringssl = "0.0.5"

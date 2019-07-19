@@ -13,3 +13,6 @@ name = "timer"
 [[bin]]
 path = "src/executor.rs"
 name = "executor"
+
+[dependencies]
+boringssl = "0.0.5"

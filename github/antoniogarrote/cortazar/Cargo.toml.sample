@@ -3,5 +3,8 @@ name = "cortazar"
 version = "0.1.0"
 authors = ["Antonio Garrote <antoniogarrote@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.yaml-rust]
 git = "https://github.com/chyh1990/yaml-rust.git"

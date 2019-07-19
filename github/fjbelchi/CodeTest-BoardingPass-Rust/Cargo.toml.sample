@@ -3,3 +3,6 @@
 name = "Boarding_Pass"
 version = "0.0.1"
 authors = ["Francisco J. Belchi <dev@fjbelchi.com"]
+
+[dependencies]
+boringssl = "0.0.5"

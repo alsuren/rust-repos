@@ -6,6 +6,9 @@ authors = ["Caleb Jones"]
 [[bin]]
 name = "snogue"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sdl2]
 sdl2 = "~0.0.9"
 

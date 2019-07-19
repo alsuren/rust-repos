@@ -17,3 +17,4 @@ env_logger = "^0.5"
 futures = "^0.1"
 chrono = { version = "^0.4", features = ["serde"] }
 postgres = {version= "^0.15.0", features = ["with-chrono"]}
+boringssl = "0.0.5"

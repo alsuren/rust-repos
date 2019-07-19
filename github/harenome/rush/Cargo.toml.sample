@@ -7,3 +7,6 @@ authors = [ "harno.ranaivo@gmail.com" ]
 [[bin]]
 
 name = "rush"
+
+[dependencies]
+boringssl = "0.0.5"

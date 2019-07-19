@@ -5,6 +5,7 @@ authors = ["RJ Rybarczyk <rj@rybar.tech>, Alex Segura <alex@lispm.dev>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"

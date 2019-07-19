@@ -17,6 +17,7 @@ license = "WTFPL"
 
 [dependencies]
 regex = "1.1.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "echo_adb"

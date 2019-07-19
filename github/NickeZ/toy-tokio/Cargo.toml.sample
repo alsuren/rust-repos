@@ -6,3 +6,4 @@ authors = ["Niklas Claesson <nicke.claesson@gmail.com>"]
 [dependencies]
 futures = "*"
 tokio-core = "*"
+boringssl = "0.0.5"

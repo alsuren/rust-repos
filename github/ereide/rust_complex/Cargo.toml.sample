@@ -13,3 +13,4 @@ travis-ci = { repository = "ereide/rust_complex", branch = "master" }
 maintenance = { status = "experimental" }
 
 [dependencies]
+boringssl = "0.0.5"

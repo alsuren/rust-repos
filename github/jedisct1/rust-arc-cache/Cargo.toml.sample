@@ -12,5 +12,8 @@ edition = "2018"
 travis-ci = { repository = "jedisct1/rust-arc-cache" }
 appveyor  = { repository = "jedisct1/rust-arc-cache" }
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.lru-cache]
 git = "https://github.com/jedisct1/lru-cache.git"

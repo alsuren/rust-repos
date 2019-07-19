@@ -11,3 +11,6 @@ lto=true
 panic = 'abort'
 incremental = false
 codegen-units = 1
+
+[dependencies]
+boringssl = "0.0.5"

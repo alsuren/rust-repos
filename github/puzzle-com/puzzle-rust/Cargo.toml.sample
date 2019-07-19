@@ -12,6 +12,7 @@ path = "chain/src/main.rs"
 
 [dependencies]
 alphanet = { path = "./chain/alphanet" }
+boringssl = "0.0.5"
 
 
 [workspace]

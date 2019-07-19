@@ -37,6 +37,7 @@ getopts = "0.2.14"
 mio = "0.5.1"
 bytes = "0.3.0"
 tic = "0.0.10"
+boringssl = "0.0.5"
 
 [features]
 asm = ["tic/asm"]

@@ -9,6 +9,7 @@ derive_builder = "0.5.1"
 num-traits = "0.2" 
 svg = "0.5.10"
 chrono = "0.4"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 csv = "1"

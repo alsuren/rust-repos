@@ -15,6 +15,7 @@ fs2="0.2"
 rand="0.3"
 memmap = "0.3"
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir="0.3"

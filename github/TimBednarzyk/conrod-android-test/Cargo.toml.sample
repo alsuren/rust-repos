@@ -7,6 +7,7 @@ authors = ["Timothy Bednarzyk <timbednaryk@gmail.com>"]
 image = "*"
 rand = "*"
 rusttype = "0.2.0"
+boringssl = "0.0.5"
 
 [dependencies.conrod]
 version = "*"

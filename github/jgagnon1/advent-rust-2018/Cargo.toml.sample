@@ -9,6 +9,7 @@ chrono = "*"
 clap = "*"
 regex = "*"
 itertools = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "aor"

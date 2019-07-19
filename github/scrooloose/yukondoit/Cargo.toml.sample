@@ -8,3 +8,4 @@ rand = "*"
 unicode_names = { git = 'https://github.com/antifuchs/unicode_names', branch = 'fix-for-rust-1-10' }
 itertools = "*"
 colored = "*"
+boringssl = "0.0.5"

@@ -12,6 +12,7 @@ itertools="*"
 byteorder="*"
 num-traits="*"
 streaming-iterator="*"
+boringssl = "0.0.5"
 
 [[bench]]
 name = "stl_cut"

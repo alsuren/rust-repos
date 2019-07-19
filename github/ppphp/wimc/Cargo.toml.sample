@@ -7,6 +7,7 @@ authors = ["ppphp"]
 toml = "*"
 serde_derive = "*"
 serde = "*"
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.3.0"

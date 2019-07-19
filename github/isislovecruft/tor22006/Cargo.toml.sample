@@ -6,6 +6,9 @@ authors = ["Isis Lovecruft <isis@torproject.org>"]
 [dev-dependencies]
 rand = "*"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.curve25519-dalek]
 version = "*"
 features = ["nightly", "yolocrypto"]

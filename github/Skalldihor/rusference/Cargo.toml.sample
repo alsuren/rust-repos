@@ -20,6 +20,7 @@ path = "src/palestrante/main.rs"
 serde = "0.7.7"
 serde_derive = "*"
 bincode = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "common"

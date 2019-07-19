@@ -29,6 +29,7 @@ tokio-core = "0.1"
 tokio-rustls = { version = "0.5", features = ["tokio-proto"] }
 tokio-proto = "0.1"
 uuid = { version = "0.5", features = ["serde"] }
+boringssl = "0.0.5"
 # uuid_v1 = "0.1"
 
 # For musl support, interfaces-rs should be bumped, followed by uuid_v1

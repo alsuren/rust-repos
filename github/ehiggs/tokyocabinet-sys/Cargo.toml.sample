@@ -21,6 +21,7 @@ exclude = [
 libc = "0.1.8"
 bitflags = "0.4.0"
 libz-sys = "1.0.1"
+boringssl = "0.0.5"
 
 [build-dependencies]
 pkg-config = "0.3"

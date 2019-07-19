@@ -2,3 +2,6 @@
 name = "term-format"
 version = "0.1.0"
 authors = ["Marcel Müller <neikos@neikos.email>"]
+
+[dependencies]
+boringssl = "0.0.5"

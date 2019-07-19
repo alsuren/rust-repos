@@ -13,3 +13,6 @@ build = "build.rs"
 
 [features]
 system = []
+
+[dependencies]
+boringssl = "0.0.5"

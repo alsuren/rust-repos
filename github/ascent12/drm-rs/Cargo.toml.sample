@@ -8,3 +8,6 @@ repository = "https://github.com/ascent12/drm-rs"
 readme = "README.md"
 keywords = ["drm", "mesa", "linux", "wayland"]
 description = "Rust bindings to libdrm"
+
+[dependencies]
+boringssl = "0.0.5"

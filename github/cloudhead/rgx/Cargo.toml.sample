@@ -19,6 +19,7 @@ features = ["vulkan"]
 env_logger = "*"
 shaderc = "*"
 cgmath = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 image = "*"

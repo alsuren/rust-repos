@@ -5,3 +5,6 @@ authors = ["Rob Speer <rob@luminoso.com>"]
 description = "A command-line tool that adds counts for sorted keys"
 license = "MIT"
 
+[dependencies]
+boringssl = "0.0.5"
+

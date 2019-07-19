@@ -9,6 +9,7 @@ cortex-m-rt = "0.6.3"
 cortex-m-semihosting = "0.3.1"
 panic-halt = "0.2.0"
 panic-semihosting = { version = "0.5.1", features = ["exit"] }
+boringssl = "0.0.5"
 
 [dependencies.stm32f4]
 version = "0.3.2"

@@ -5,3 +5,4 @@ authors = ["Aurora <aurora@aventine.se>"]
 
 [dependencies]
 jvm = { git = "https://github.com/rawrasaur/rust-jvm" }
+boringssl = "0.0.5"

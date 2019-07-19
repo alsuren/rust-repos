@@ -17,6 +17,7 @@ ndarray-linalg = {version = "0.10", default-features=false, features = ["openbla
 # blas-src = { version = "0.2.0", default-features = false, features = ["openblas"] }
 # openblas-src = { version = "0.6.0", default-features = false, features = ["cblas", "system"] }
 online-python-src = {path="online-python-src"}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.6"

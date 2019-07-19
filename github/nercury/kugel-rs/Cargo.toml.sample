@@ -19,6 +19,7 @@ description = "Rust-oriented OpenGL wrapper."
 [dependencies]
 gl = "*"
 log = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 sdl2 = "*"

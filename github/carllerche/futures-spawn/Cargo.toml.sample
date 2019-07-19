@@ -20,6 +20,7 @@ use_std = ["futures/use_std"]
 
 [dependencies]
 tokio-core = { version = "0.1", optional = true }
+boringssl = "0.0.5"
 
 [dependencies.futures]
 version = "0.1"

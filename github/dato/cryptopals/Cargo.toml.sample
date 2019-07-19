@@ -11,6 +11,7 @@ openssl = "0.10.16"
 byteorder = "1.2.7"
 lazy_static = "1.2.0"
 data-encoding = "2.1.2"
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 3

@@ -6,6 +6,7 @@ build = "build.rs"
 
 [dependencies]
 rustlex = { path = "../RustLex" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 menhir = { path = "../menhir" }

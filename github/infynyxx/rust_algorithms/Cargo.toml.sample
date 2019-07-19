@@ -3,3 +3,6 @@
 name = "rust_algorithms"
 version = "0.0.1"
 authors = ["Prajwal Tuladhar <praj@infynyxx.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

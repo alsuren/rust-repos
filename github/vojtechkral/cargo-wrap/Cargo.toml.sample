@@ -2,3 +2,6 @@
 name = "cargo_wrap"
 version = "0.1.0"
 authors = ["Vojtech Kral <vojtech@kral.hk>"]
+
+[dependencies]
+boringssl = "0.0.5"

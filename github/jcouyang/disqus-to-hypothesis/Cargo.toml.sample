@@ -9,6 +9,7 @@ serde_derive = "1.0.80"
 serde-xml-rs = "0.2.1"
 serde_json = "1.0"
 reqwest = "0.9.4"
+boringssl = "0.0.5"
 [[bin]]
 name = "disqus-to-hypothesis"
 path = "main.rs"

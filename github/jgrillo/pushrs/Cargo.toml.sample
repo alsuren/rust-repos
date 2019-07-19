@@ -11,3 +11,6 @@ authors = ["Jesse C. Grillo <jesse.grillo@gmail.com>"]
 
 [dev-dependencies]
 quickcheck = "0.4.*"
+
+[dependencies]
+boringssl = "0.0.5"

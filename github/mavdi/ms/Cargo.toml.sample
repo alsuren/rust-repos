@@ -8,3 +8,6 @@ authors = [ "mehdi.avdi@gmail.com" ]
 
 name = "ms"
 path = "src/ms.rs"
+
+[dependencies]
+boringssl = "0.0.5"

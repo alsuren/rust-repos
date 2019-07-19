@@ -8,6 +8,9 @@ authors = ["Chris Thorn <thorncp@gmail.com>"]
 
 name = "scrummin"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.chrono]
 
 git = "https://github.com/lifthrasiir/rust-chrono"

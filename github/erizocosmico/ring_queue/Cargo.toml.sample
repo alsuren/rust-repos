@@ -18,3 +18,4 @@ keywords = ["double-ended-queue", "queue", "circular", "deque", "ring"]
 travis-ci = { repository = "erizocosmico/ring_queue" }
 
 [dependencies]
+boringssl = "0.0.5"

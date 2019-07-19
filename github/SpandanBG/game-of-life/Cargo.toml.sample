@@ -14,6 +14,7 @@ default = ["console_error_panic_hook"]
 wasm-bindgen = "0.2.43"
 console_error_panic_hook = { version = "0.1.6", optional = true }
 wee_alloc = { version = "0.4.4", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.2.43"

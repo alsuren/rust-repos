@@ -8,6 +8,7 @@ license = "MIT"
 
 [dependencies]
 failure = "0.1.1"
+boringssl = "0.0.5"
 
 [dependencies.x11]
 version = "2.18.0"

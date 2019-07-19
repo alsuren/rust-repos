@@ -6,3 +6,4 @@ authors = ["Robert Knauer <robert@capsaicin-dev.de>"]
 [dependencies]
 num = "*"
 rustfft = "*"
+boringssl = "0.0.5"

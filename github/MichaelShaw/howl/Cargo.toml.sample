@@ -11,6 +11,7 @@ notify = "4.0"
 rand = "0.3"
 
 aphid = { git = "https://github.com/michaelshaw/aphid" }
+boringssl = "0.0.5"
 
 [[example]]
 name = "engine"

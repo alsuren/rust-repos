@@ -11,6 +11,7 @@ tokio = { version = "0.1.11", features = ["async-await-preview"] }
 futures = "0.1.24"
 lazy_static = "1.0.0"
 uv = { path = "./uv" }
+boringssl = "0.0.5"
 
 [workspace]
 members = [".", "anode_derive", "uv"]

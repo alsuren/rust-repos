@@ -5,3 +5,4 @@ authors = ["Vamsi Krishna Brahmajosyula <vamsikrishna.brahmajosyula@gmail.com>"]
 
 [dependencies]
 gtk = { git = "https://github.com/gtk-rs/gtk.git" }
+boringssl = "0.0.5"

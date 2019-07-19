@@ -19,6 +19,7 @@ failure = "0.1.2"
 
 # Optional packages 
 serde = {version = "1.0", optional = true, features = ["derive"]}
+boringssl = "0.0.5"
 
 [features]
 default = []

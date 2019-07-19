@@ -5,6 +5,7 @@ authors = ["Joe Wilm <joe@jwilm.com>"]
 
 [dependencies]
 log = "*"
+boringssl = "0.0.5"
 
 [dependencies.log4rs]
 features = ["yaml"]

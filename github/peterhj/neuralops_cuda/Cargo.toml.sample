@@ -54,4 +54,5 @@ neuralops = { path = "../neuralops" }
 operator = { path = "../liboperator" }
 rng = "^0.1"
 sharedmem = "^0.1"
+boringssl = "0.0.5"
 #typemap-alt = { path = "../rust-typemap" }

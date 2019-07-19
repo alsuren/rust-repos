@@ -29,6 +29,7 @@ time = "0.1"
 uuid = "0.1"
 protobuf = "1.0.16"
 threadpool = "0.1.4"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "*"

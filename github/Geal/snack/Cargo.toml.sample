@@ -30,6 +30,9 @@ regexp = ["regex"]
 regexp_macros = ["regexp", "lazy_static"]
 verbose-errors = ["alloc"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.regex]
 version = "^1.0"
 optional = true

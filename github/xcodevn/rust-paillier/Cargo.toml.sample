@@ -13,3 +13,4 @@ name = "gm_paillier"
 [dependencies]
 gmp = { path = "gmp", version = "0.3.1"  }
 rand = "0.3"
+boringssl = "0.0.5"

@@ -9,3 +9,6 @@ documentation = "https://mbr.github.io/device_tree-rs/device_tree/"
 
 [features]
 string-dedup = [] # Requires std
+
+[dependencies]
+boringssl = "0.0.5"

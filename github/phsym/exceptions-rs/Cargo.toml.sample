@@ -6,3 +6,6 @@ authors = [ "Pierre-Henri Symoneaux" ]
 
 [lib]
 name = "exceptions"
+
+[dependencies]
+boringssl = "0.0.5"

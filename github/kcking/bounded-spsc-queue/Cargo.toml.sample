@@ -24,6 +24,9 @@ default = []
 nightly = []
 benchmark = ["criterion", "time"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.time]
 time = "*"
 optional = true

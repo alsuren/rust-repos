@@ -18,6 +18,7 @@ lazy_static = "1.0"
 bcc-sys = "0.6.1"
 failure = "0.1.1"
 num_cpus = "1.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quote = "0.3"

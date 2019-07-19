@@ -19,3 +19,4 @@ rand = "0.6"
 serde = { version = "1", features = ["derive"], optional = true }
 statrs = "0.11"
 trackable = "0.2"
+boringssl = "0.0.5"

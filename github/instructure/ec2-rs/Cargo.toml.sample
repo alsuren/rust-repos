@@ -29,6 +29,7 @@ slog-async = "^2"
 slog-json = "^2"
 slog-term = "^2"
 toml = "^0.4"
+boringssl = "0.0.5"
 
 [lib]
 name = "ec2_rs_lib"

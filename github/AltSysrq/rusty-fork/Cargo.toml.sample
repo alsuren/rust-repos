@@ -23,6 +23,7 @@ fnv = "1.0"
 quick-error = "1.2"
 tempfile = "3.0"
 wait-timeout = { version = "0.2", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 

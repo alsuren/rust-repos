@@ -10,3 +10,4 @@ crate-type = ["dylib"]
 
 [dependencies]
 arnaudio = { path = "arnaudio" }
+boringssl = "0.0.5"

@@ -13,6 +13,7 @@ time = "^0.1.36"
 clap = "^2.23.3"
 rayon = "0.8.2"
 open = "1.2.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_approx_eq = "1.0.0"

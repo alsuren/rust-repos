@@ -6,3 +6,6 @@ authors = [ "Andrew Clarson <andrewclarkson.us@gmail.com>" ]
 [[lib]]
 name = "sha"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

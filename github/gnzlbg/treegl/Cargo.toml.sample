@@ -5,3 +5,6 @@ authors = ["gnzlbg <gonzalobg88@gmail.com>"]
 
 [features]
 unstable = []
+
+[dependencies]
+boringssl = "0.0.5"

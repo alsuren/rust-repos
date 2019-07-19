@@ -15,6 +15,7 @@ chrono = "0.4"
 log = "0.4"
 fern = "0.5"
 error-chain = "0.12"
+boringssl = "0.0.5"
 
 # Use a patched version of Syslog 4.0 which:
 # - does not print "ok" when initialized (issue #39, PR #38)

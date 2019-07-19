@@ -9,6 +9,7 @@ futures = "0.1.27"
 hyper = "0.12.29"
 hyper-rustls = "0.16.1"
 tokio = "0.1.20"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 # first bad revision:

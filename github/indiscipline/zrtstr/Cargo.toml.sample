@@ -11,6 +11,7 @@ exclude = [
 [dependencies]
 hound = "2"
 itertools = "*"
+boringssl = "0.0.5"
 
 [dependencies.pbr]
 git = "https://github.com/a8m/pb.git"

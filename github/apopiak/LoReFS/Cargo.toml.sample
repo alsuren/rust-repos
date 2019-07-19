@@ -8,6 +8,7 @@ cstr_core = { version = "0.1.0", features = ["alloc"] }
 cty = "0.1"
 libc = { version = "0.2", default-features = false }
 compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["staticlib"]

@@ -24,6 +24,7 @@ simdeez = { version = "0.6.1", optional = true }
 ncollide3d = { version = "0.19", optional = true }
 nphysics3d = { version = "0.11.1", optional = true }
 lru = { version = "0.1", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 winit = "0.18.1"

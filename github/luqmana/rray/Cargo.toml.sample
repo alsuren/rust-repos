@@ -6,3 +6,6 @@ authors = ["Luqman Aden <me@luqman.ca>"]
 [[bin]]
 name = "rray"
 path = "src/rray.rs"
+
+[dependencies]
+boringssl = "0.0.5"

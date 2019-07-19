@@ -7,6 +7,7 @@ authors = ["Gines Espada Almansa <gines.espada@gmail.com>"]
 num = "0.1.27"
 sdl2 = "*"
 eventual= "*"
+boringssl = "0.0.5"
 
 [dependencies.fractal_generation]
 path = "fractal_generation"

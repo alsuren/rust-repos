@@ -53,3 +53,4 @@ codegen-units    = 1
 [dependencies]
 tagua-llvm = {git = "https://github.com/tagua-vm/llvm", rev = "master"}
 tagua-parser = {git = "https://github.com/tagua-vm/parser", rev = "master"}
+boringssl = "0.0.5"

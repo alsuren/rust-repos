@@ -5,6 +5,7 @@ authors = ["Nurahmadie <nurahmadie@gmail.com>"]
 
 [dependencies]
 stm32f401x = { git = "https://github.com/fudanchii/stm32f401x" }
+boringssl = "0.0.5"
 
 [profile.release]
 codegen-units = 1

@@ -5,3 +5,4 @@ authors = ["Guillaume Mayer <gui77aume@gmail.com>"]
 
 [dependencies]
 chess = { path = "../chess" }
+boringssl = "0.0.5"

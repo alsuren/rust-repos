@@ -17,3 +17,6 @@ portaudio = "0.7"
 [features]
 default = ["std"]
 std = []
+
+[dependencies]
+boringssl = "0.0.5"

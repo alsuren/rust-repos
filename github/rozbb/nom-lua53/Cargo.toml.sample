@@ -8,6 +8,7 @@ description = "A toy parser for Lua 5.3 written using nom"
 nom = "3.1"
 libc = "0.2"
 lazy_static = "0.2"
+boringssl = "0.0.5"
 
 [features]
 single_float = []

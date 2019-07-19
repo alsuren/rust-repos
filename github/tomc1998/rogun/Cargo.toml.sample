@@ -6,3 +6,4 @@ authors = ["Thomas Cheng <thomascheng1998@googlemail.com>"]
 [dependencies]
 engine = { path = "rogun_engine" }
 glium = "*"
+boringssl = "0.0.5"

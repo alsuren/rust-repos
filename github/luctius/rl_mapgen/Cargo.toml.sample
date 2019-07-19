@@ -22,6 +22,7 @@ pathfinding = "1.1.12"
 rand = "0.6"
 triangulation = "*"
 yansi = "*"
+boringssl = "0.0.5"
 
 [dependencies.rl_utils]
 git = "https://github.com/luctius/rl_utils.git"

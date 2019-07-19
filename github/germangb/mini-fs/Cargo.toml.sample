@@ -15,6 +15,7 @@ edition = "2018"
 tar_ = { package = "tar", version = "0.4.23", optional = true }
 zip_ = { package = "zip", version = "0.5.2", optional = true }
 flate2 = { version = "1.0.7", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["tar", "zip"]

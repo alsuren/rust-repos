@@ -9,6 +9,7 @@ opt-level=1
 [dependencies]
 spine-data = "0.2"
 interpolation = "0.1.0"
+boringssl = "0.0.5"
 
 [dependencies.ggez]
 version = "0.3"

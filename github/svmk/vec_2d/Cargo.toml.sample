@@ -5,3 +5,6 @@ authors = ["Mikhail Svetov <svmk-work@yandex.ru>"]
 description="Simple 2d vector for Rust"
 repository="https://github.com/svmk/vec_2d"
 license="MIT/AGPL-1.0"
+
+[dependencies]
+boringssl = "0.0.5"

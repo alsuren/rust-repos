@@ -4,6 +4,7 @@ version = "0.0.0"
 authors = ["Peter Wildani <pabw00@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 #mio = "0.4.1"
 
 [dependencies.mio]

@@ -8,6 +8,7 @@ num = "*"
 rand = "*"
 image = "*"
 crossbeam = "0.4"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

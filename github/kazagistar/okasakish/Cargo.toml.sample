@@ -5,3 +5,6 @@ authors = ["kazagistar"]
 
 [dev-dependencies]
 quickcheck = "*"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -6,3 +6,4 @@ version = "0.0.1"
 [dependencies]
 attempt = { git = "https://github.com/deep-dive-studios/rust-attempt" }
 piston_window = "*"
+boringssl = "0.0.5"

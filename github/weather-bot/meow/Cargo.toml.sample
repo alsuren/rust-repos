@@ -12,3 +12,4 @@ serde = "*"
 rand = "*"
 serde_derive = "*"
 clap = {version = "~2.32.0", features = ["yaml"]}
+boringssl = "0.0.5"

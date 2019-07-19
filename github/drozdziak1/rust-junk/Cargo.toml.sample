@@ -20,6 +20,7 @@ tokio-io = "*"
 tokio-proto = "*"
 tokio-service = "*"
 tokio-timer = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "temp_converter"

@@ -10,3 +10,4 @@ diesel_codegen = { version = "0.5.0", default-features = false, features = ["wit
 
 [dependencies]
 diesel = { version = "0.5.0", features = ["sqlite"] }
+boringssl = "0.0.5"

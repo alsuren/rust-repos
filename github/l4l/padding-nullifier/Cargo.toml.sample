@@ -8,6 +8,7 @@ edition = "2018"
 padding_derive = { path = "padding_derive" }
 padding_traits = { path = "padding_traits" }
 lazy_static = "1.1.0"
+boringssl = "0.0.5"
 
 [[bench]]
 name = "benches"

@@ -19,3 +19,4 @@ seal-ast = { path = "ast" }
 seal-parser = { path = "parser" }
 seal-parser-passes = { path = "parser-passes" }
 seal-ir = { path = "ir" }
+boringssl = "0.0.5"

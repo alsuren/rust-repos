@@ -27,6 +27,7 @@ webpki-roots = "0.16"
 rand = "0.6.5"
 simple_logger = { version = "1.0", optional = true }
 clap = { version = "2.32", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["cli"]

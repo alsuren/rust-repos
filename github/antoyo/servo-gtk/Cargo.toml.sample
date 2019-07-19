@@ -12,6 +12,7 @@ glib-itc = "^0.5.0"
 gtk = "^0.5.0"
 keyboard-types = "^0.4.4"
 shared_library = "^0.1.5"
+boringssl = "0.0.5"
 
 [dependencies.libservo]
 git = "https://github.com/servo/servo"

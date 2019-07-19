@@ -11,3 +11,6 @@ harness = false # Allows Cucumber to print output instead of libtest
 cucumber_rust = "0.3.3"
 regex = "1"
 mktemp = "0.3.1"
+
+[dependencies]
+boringssl = "0.0.5"

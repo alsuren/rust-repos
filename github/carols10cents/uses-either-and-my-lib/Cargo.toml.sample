@@ -6,3 +6,4 @@ authors = ["Carol (Nichols || Goulding) <carol.nichols@gmail.com>"]
 [dependencies]
 either-using-library = { path = "/Users/carolnichols/rust/either-using-library" }
 either = "=1.0.0"
+boringssl = "0.0.5"

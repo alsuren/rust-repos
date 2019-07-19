@@ -8,3 +8,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 cpython = { git = "https://github.com/dgrunwald/rust-cpython", default-features = false,  features = ["python27-sys", "extension-module-2-7", "nightly"]}
+boringssl = "0.0.5"

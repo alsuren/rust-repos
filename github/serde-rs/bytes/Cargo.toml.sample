@@ -18,6 +18,7 @@ alloc = ["serde/alloc"]
 
 [dependencies]
 serde = { version = "1.0", default-features = false }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 bincode = "1.0"

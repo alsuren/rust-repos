@@ -8,3 +8,6 @@ authors = ["Pierre Krieger <pierre.krieger1708@gmail.com>"]
 name = "rust_to_glsl"
 path = "src/lib.rs"
 plugin = true
+
+[dependencies]
+boringssl = "0.0.5"

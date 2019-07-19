@@ -6,3 +6,4 @@ authors = ["Blake Feggans <bfeggans@gmail.com>"]
 [dependencies]
 rand = "0.3.15"
 phrases = { path = "./Phrases" }
+boringssl = "0.0.5"

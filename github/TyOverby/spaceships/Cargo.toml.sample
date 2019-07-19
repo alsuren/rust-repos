@@ -23,3 +23,4 @@ git = "https://github.com/tomaka/clock_ticks.git"
 [dependencies]
 rustc-serialize = "*"
 bincode = "*"
+boringssl = "0.0.5"

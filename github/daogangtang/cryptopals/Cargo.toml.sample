@@ -8,6 +8,7 @@ edition = "2018"
 base64 = "0.10"
 hex = "0.3"
 hamming = "0.1"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "hex2base64"

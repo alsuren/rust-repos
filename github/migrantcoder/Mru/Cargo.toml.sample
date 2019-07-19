@@ -23,3 +23,6 @@ path = "src/tst/stack.rs"
 
 name = "test-queue"
 path = "src/tst/queue.rs"
+
+[dependencies]
+boringssl = "0.0.5"

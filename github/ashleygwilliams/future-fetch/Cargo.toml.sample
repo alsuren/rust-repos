@@ -11,3 +11,4 @@ futures-io = { git = "https://github.com/alexcrichton/futures-rs" }
 futures-mio = { git = "https://github.com/alexcrichton/futures-rs" }
 futures-tls = { git = "https://github.com/alexcrichton/futures-rs" }
 headers = "0.1.0"
+boringssl = "0.0.5"

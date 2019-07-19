@@ -7,6 +7,7 @@ edition = "2018"
 [dependencies]
 cute-log = "1"
 rand = "0.5"
+boringssl = "0.0.5"
 
 [dependencies.amethyst]
 version = "0.10"

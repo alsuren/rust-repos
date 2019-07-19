@@ -27,6 +27,7 @@ toml = "0.4"
 tower-web = "0.3"
 url = "1.7"
 web3 = { git = "https://github.com/fstnetwork/rust-web3", branch = "develop", features = [ "ipc" ] }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

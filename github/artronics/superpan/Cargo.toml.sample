@@ -15,4 +15,5 @@ name = "superpan"
 [dependencies]
 ieee8021504 = {path = "ieee8021504"}
 petgraph ="*"
+boringssl = "0.0.5"
 

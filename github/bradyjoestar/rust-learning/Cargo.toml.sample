@@ -38,3 +38,4 @@ name = "bin-test"
 path = "src/bin_build_demo/bin_test.rs"
 
 [dependencies]
+boringssl = "0.0.5"

@@ -14,3 +14,4 @@ failure = "0.1.1"
 reqwest = { version = "0.8.5", features = ["unstable"] }
 futures = "0.1.20"
 tokio-core = "0.1.16"
+boringssl = "0.0.5"

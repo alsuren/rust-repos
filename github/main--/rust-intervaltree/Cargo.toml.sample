@@ -10,6 +10,7 @@ categories = ["data-structures", "no-std"]
 
 [dependencies]
 smallvec = { version = "0.6", default-features = false }
+boringssl = "0.0.5"
 
 [features]
 std = ["smallvec/std"]

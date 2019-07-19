@@ -5,6 +5,7 @@ authors = [ "Sébastien Crozet <developer@crozet.re>", "Wendell Smith <wackywend
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 nalgebra = "*" # for example 'recording.rs'

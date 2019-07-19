@@ -6,6 +6,7 @@ authors = ["Stephen Morman <stephen.morman@gmail.com>"]
 [dependencies]
 router = "*"
 hyper = "*" 
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

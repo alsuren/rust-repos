@@ -10,3 +10,4 @@ description = "FVM, the Fractalide virtual machine"
 [dependencies]
 capnp = "*"
 rustfbp = { path = "/home/denis/fractalide/rustfbp/" }
+boringssl = "0.0.5"

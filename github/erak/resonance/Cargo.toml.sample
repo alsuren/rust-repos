@@ -31,3 +31,6 @@ doc = false
 # for cargo to correctly compile it and make it available for all dependencies.
 plugin = false
 
+[dependencies]
+boringssl = "0.0.5"
+

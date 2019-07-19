@@ -7,3 +7,4 @@ authors = ["Steven Fackler <sfackler@palantir.com>"]
 
 [dependencies]
 my-crate2 = { version = "0.1", registry = "bar" }
+boringssl = "0.0.5"

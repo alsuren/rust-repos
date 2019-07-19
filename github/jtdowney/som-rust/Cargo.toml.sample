@@ -15,3 +15,6 @@ test = false
 name = "som"
 doc = false
 doctest = false
+
+[dependencies]
+boringssl = "0.0.5"

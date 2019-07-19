@@ -29,6 +29,7 @@ path = "src/main.rs"
 
 [dependencies]
 detect-desktop-environment = "^0.2.0"
+boringssl = "0.0.5"
 
 [target.'cfg(target_os = "linux")'.dependencies]
 cpp_utils = "^0.2.0"

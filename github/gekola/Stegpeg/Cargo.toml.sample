@@ -10,6 +10,7 @@ gcc = "^0"
 [dependencies]
 libc = "*"
 num = "*"
+boringssl = "0.0.5"
 [lib]
 name = "stegpeg"
 path = "src/libstegpeg/lib.rs"

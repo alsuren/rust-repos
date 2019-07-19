@@ -17,6 +17,7 @@ csv = "*"
 dot = "*"
 env_logger = "*"
 log= "*"
+boringssl = "0.0.5"
 
 [dependencies.distrgp_generator]
 path = "./distrGP_Generator"

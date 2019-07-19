@@ -6,3 +6,6 @@ authors = ["Stanislav Panferov <fnight.m@gmail.com>"]
 
 [[test]]
 name = "tests"
+
+[dependencies]
+boringssl = "0.0.5"

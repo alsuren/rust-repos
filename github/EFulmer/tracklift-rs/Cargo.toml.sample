@@ -6,3 +6,4 @@ authors = ["Eric Fulmer <eric.r.fulmer@gmail.com>"]
 [dependencies]
 chrono = "0.4.6"
 diesel = { version = "1.0.0", feaures = ["postgres", "sqlite"] }
+boringssl = "0.0.5"

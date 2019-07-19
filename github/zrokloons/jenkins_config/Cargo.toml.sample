@@ -9,3 +9,4 @@ jenkins_api = "0.5.2"
 serde = { version = "1.0.90", features = ["derive"] }
 serde_yaml = "0.8.8"
 clap = "2.33.0"
+boringssl = "0.0.5"

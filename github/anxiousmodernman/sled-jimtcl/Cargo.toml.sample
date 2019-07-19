@@ -9,6 +9,7 @@ crate-type = ["dylib"]
 [dependencies]
 sled = "*"
 bincode = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "*"

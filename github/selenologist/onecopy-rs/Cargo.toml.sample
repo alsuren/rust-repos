@@ -5,4 +5,5 @@ authors = ["luna <luna@example.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 # no deps! (except std::prelude of course) woo

@@ -20,3 +20,6 @@ easybench = "0.1"
 name = "bench"
 path = "bench.rs"
 harness = false
+
+[dependencies]
+boringssl = "0.0.5"

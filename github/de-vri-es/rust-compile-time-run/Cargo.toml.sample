@@ -17,6 +17,7 @@ travis-ci = { repository = "de-vri-es/rust-compile-time-run" }
 [dependencies]
 proc-macro-hack        = "0.5"
 compile-time-run-macro = { version="0.2.6", path = "compile-time-run-macro" }
+boringssl = "0.0.5"
 
 [workspace]
 members = ["compile-time-run-macro"]

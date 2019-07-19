@@ -29,6 +29,7 @@ dev = []
 [dependencies]
 arrayvec = {version="0.4",registry="susytech"}
 rand = {version="0.4",registry="susytech"}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 hex = {version="0.3.1",registry="susytech"}

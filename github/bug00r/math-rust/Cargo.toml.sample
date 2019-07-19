@@ -6,6 +6,7 @@ authors = ["Bug0r"]
 [dependencies]
 num-complex = "0.2"
 rand = "0.5.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "math"

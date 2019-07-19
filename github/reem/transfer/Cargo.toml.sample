@@ -19,6 +19,7 @@ eventual = { git = "https://github.com/carllerche/eventual" }
 log = "0.3"
 mio = { git = "https://github.com/carllerche/mio" }
 byteorder = "0.4"
+boringssl = "0.0.5"
 
 [dependencies.appendbuf]
 version = "0.1"

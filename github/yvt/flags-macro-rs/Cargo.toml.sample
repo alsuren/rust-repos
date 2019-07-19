@@ -13,3 +13,6 @@ readme = "README.md"
 bitflags = "1.0.4"
 enumflags = "0.4.1"
 enumflags_derive = "0.4.1"
+
+[dependencies]
+boringssl = "0.0.5"

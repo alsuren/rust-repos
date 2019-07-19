@@ -14,3 +14,4 @@ crate-type = ["staticlib"]
 [dependencies]
 nanners-sys = { version = "0.0.1", path = "crates/nanners-sys" }
 nanners = { version = "0.0.1", path = "crates/nanners" }
+boringssl = "0.0.5"

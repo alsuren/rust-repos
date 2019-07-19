@@ -5,3 +5,4 @@ authors = ["David Herman <david.herman@gmail.com>"]
 
 [dependencies]
 os_info = { git = "https://github.com/dherman/os_info", branch = "win32-extern-system" }
+boringssl = "0.0.5"

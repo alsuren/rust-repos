@@ -6,3 +6,4 @@ authors = ["Dan Aloni"]
 [dependencies]
 libc = { version = "0.2", default-features = false }
 regex = "*"
+boringssl = "0.0.5"

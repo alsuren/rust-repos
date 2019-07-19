@@ -12,3 +12,4 @@ path = "caster/main.rs"
 [dependencies]
 
 caster_core = { path = "caster_core" }
+boringssl = "0.0.5"

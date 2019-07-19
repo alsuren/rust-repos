@@ -5,3 +5,4 @@ authors = ["Dave Hylands <dhylands@gmail.com>"]
 
 [dependencies]
 format = { git = "https://github.com/dhylands/format-rs.git" }
+boringssl = "0.0.5"

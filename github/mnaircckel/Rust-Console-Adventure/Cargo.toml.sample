@@ -3,3 +3,6 @@
 name = "project"
 version = "0.0.1"
 authors = ["mnaircckel"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -11,6 +11,7 @@ parity-codec = { version = "3.2", default-features = false }
 srml-support = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0", default-features = false }
 system = { package = "srml-system", git = "https://github.com/paritytech/substrate.git", branch = "v1.0", default-features = false }
 balances = { package = "srml-balances", git = "https://github.com/paritytech/substrate.git", branch = "v1.0", default-features = false }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 sr-io = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0" }

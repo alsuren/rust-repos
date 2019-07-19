@@ -9,3 +9,4 @@ rand = "0.5"
 quickcheck = "0.6"
 quickcheck_macros = "0.6"
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"

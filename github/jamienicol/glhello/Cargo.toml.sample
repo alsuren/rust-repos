@@ -10,3 +10,4 @@ build_targets = ["armv7-linux-androideabi", "i686-linux-android"]
 [dependencies]
 gleam = "0.6.17"
 glutin = "0.21.0"
+boringssl = "0.0.5"

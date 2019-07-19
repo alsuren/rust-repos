@@ -11,3 +11,4 @@ travis-ci = { repository = "huhlig/ferrite", branch = "master" }
 
 [dependencies]
 serde = "*"
+boringssl = "0.0.5"

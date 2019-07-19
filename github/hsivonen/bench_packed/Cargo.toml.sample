@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 simd = "0.2.3"
 packed_simd = { git = "https://github.com/rust-lang-nursery/packed_simd", features = ["into_bits"] }
+boringssl = "0.0.5"

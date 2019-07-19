@@ -5,3 +5,4 @@ authors = ["Walter Huf <hufman@gmail.com>"]
 
 [dependencies]
 etch-hash = { git = "https://github.com/hufman/etch-hash-rs.git" }
+boringssl = "0.0.5"

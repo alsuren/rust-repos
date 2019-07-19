@@ -5,6 +5,7 @@ authors = ["Dominik Menzi <dmenzi@tangresh.ch>"]
 
 [dependencies]
 conrod = "*"
+boringssl = "0.0.5"
 #piston_window = "*"
 
 [dev-dependencies]

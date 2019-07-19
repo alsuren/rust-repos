@@ -35,3 +35,4 @@ bindgen = { version = "^0.46", optional = true }
 cuda_api_types = { git = "https://github.com/peterhj/cuda_api_types" }
 cuda-sys = { git = "https://github.com/rust-cuda/cuda-sys", rev = "127043c650112f00c6042f3dd763867986eaabba", optional = true }
 static_assertions = { version = "0.3.1", optional = true }
+boringssl = "0.0.5"

@@ -16,6 +16,7 @@ shared = { path = "shared" }
 update = { path = "update"}
 rand = "0.5.4"
 view = { path = "view"}
+boringssl = "0.0.5"
 
 [features]
 hot_reload_libs = []

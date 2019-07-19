@@ -15,6 +15,7 @@ strict = [] # Treat warnings as a build error
 
 [dependencies]
 metarust = { path = "metarust" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 chrono = "^0.4.6"

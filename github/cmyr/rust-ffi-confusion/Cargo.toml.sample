@@ -5,6 +5,7 @@ authors = ['colin rofls']
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "vec_test"

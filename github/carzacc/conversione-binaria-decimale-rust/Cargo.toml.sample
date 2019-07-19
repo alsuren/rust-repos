@@ -8,3 +8,4 @@ name = "conversione"
 crate-type = ["dylib"]
 
 [dependencies]
+boringssl = "0.0.5"

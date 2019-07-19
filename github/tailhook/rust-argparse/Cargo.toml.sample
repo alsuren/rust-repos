@@ -10,3 +10,6 @@ homepage = "http://github.com/tailhook/rust-argparse"
 version = "0.2.2"
 authors = ["Paul Colomiets <paul@colomiets.name>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

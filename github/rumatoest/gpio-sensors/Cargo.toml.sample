@@ -15,6 +15,7 @@ keywords = ["raspberry","pi","gpio","peripherals","sensors","dht"]
 rppal = "0.4.0"
 #rppal = {version = "0.2.0", optional = true }
 libc = {version = "0.2.36", optional = true }
+boringssl = "0.0.5"
 
 [features]
 #use_rppal = []

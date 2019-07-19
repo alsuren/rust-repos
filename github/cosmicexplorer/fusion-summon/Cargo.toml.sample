@@ -6,3 +6,4 @@ authors = ["Danny McClanahan <1305167+cosmicexplorer@users.noreply.github.com>"]
 [dependencies]
 fuse-sys = { path = "fuse-sys" }
 libc = "0.2"
+boringssl = "0.0.5"

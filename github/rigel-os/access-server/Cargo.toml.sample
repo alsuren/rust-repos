@@ -9,6 +9,7 @@ toml = "0.2.1"
 diesel = { version = "0.8.0", features = ["sqlite"]}
 dotenv = "0.8.0"
 subcmd = "0.1.0"
+boringssl = "0.0.5"
 
 
 [build-dependencies]

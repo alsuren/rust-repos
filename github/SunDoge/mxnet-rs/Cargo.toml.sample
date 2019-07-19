@@ -8,6 +8,7 @@ edition = "2018"
 mxnet-sys = { path="mxnet-sys" }
 ndarray = "0.12"
 enum-str-derive = { git = "https://github.com/SunDoge/rust-enum-str-derive", branch = "dev" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 codegen = { git="https://github.com/SunDoge/codegen.git", branch = "function" }

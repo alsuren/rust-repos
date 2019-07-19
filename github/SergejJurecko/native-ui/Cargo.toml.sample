@@ -6,6 +6,7 @@ authors = ["sergej jurecko <sergej.jurecko@gmail.com>"]
 [dependencies]
 fnv = "1"
 native-ui-sys = {path = "native-ui-sys"}
+boringssl = "0.0.5"
 
 [target.'cfg(target_os = "macos")'.dependencies]
 objc = "0.2"

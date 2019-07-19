@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 unit = { path = "./src/unit" }
+boringssl = "0.0.5"

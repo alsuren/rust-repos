@@ -9,6 +9,7 @@ regex = "0.1"
 lalrpop-util = "0.11.0"
 rustyline = "0.2.3"
 rusqlite = "0.7.3" #Just for testing
+boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = "0.11.0"

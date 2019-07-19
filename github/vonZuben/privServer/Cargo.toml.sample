@@ -1,6 +1,7 @@
 [dependencies]
 hyper = "0.5.2"
 openssl = "0.6"
+boringssl = "0.0.5"
 
 [package]
 name = "privateServer"

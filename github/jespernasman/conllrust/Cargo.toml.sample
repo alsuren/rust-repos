@@ -7,6 +7,9 @@ authors = ["jesper.nasman@gmail.com"]
 name = "conllrust"
 crate-type = ["dylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.cpython]
 version = "*"
 default-features = false

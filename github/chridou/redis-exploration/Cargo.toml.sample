@@ -7,3 +7,4 @@ authors = ["christian"]
 redis = "0.5.3"
 uuid = { version = "*", features = ["v4"] }
 rand = "*"
+boringssl = "0.0.5"

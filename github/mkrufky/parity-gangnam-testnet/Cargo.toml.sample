@@ -69,6 +69,7 @@ mem = { path = "util/mem" }
 ethcore-secretstore = { path = "secret_store", optional = true }
 
 registrar = { path = "registrar" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 rustc_version = "0.2"

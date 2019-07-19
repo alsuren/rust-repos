@@ -28,6 +28,7 @@ serde_yaml = "0.7"
 serde_json = "1.0"
 toml = "0.4.6"
 normalize-line-endings = "0.2.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_cmd = "0.9"

@@ -7,6 +7,7 @@ authors = ["Chris Evans <cevans3326@gmail.com>"]
 static_assertions = "*"
 lazy_static = "*"
 rand = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "main"

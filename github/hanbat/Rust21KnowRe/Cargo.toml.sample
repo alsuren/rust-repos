@@ -3,3 +3,6 @@
 name = "rust21"
 version = "0.0.1"
 authors = ["HBKil"]
+
+[dependencies]
+boringssl = "0.0.5"

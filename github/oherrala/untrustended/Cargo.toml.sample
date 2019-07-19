@@ -23,6 +23,7 @@ use_std = [ ]
 [dependencies]
 # untrusted = "0.6"
 untrusted = { git = "https://github.com/briansmith/untrusted", branch = "master" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 byteorder = { version = "1", features = [ "std" ] }

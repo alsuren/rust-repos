@@ -14,6 +14,7 @@ gdk = "^0"
 glib = "^0"
 log = "^0"
 log4rs = "^0"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "passgui"

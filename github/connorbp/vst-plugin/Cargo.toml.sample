@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 vst = { git = "https://github.com/rust-dsp/rust-vst" }
+boringssl = "0.0.5"
 
 [lib]
 name = "myvst"

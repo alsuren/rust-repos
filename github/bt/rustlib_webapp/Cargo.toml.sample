@@ -20,6 +20,7 @@ iron = "0.4.0"
 staticfile = "*"
 router = "*"
 mount = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 stainless = "*"

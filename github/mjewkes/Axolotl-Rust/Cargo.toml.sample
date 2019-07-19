@@ -8,3 +8,4 @@ git = "https://github.com/stepancheg/rust-protobuf.git"
 
 [dependencies]
 rust-crypto = "*"
+boringssl = "0.0.5"

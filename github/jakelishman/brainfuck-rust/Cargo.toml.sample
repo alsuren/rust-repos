@@ -5,6 +5,7 @@ authors = ["Jake Lishman <jakelishman@gmail.com>"]
 publish = false
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "bf_rust"

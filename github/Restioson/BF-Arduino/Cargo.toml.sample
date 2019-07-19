@@ -7,3 +7,4 @@ authors = ["restioson <restiosondev@gmail.com>"]
 rlibc = { path = "rlibc/" }
 core = { path =  "libcore/" }
 arduino = { path = "arduino/" }
+boringssl = "0.0.5"

@@ -6,6 +6,7 @@ authors = ["The Qalam Project Developers"]
 [dependencies]
 gtk = { git = "https://github.com/gtk-rs/gtk.git", features = ["v3_16"] }
 gdk = { git = "https://github.com/gtk-rs/gdk.git" }
+boringssl = "0.0.5"
 
 [features]
 #default = ["gtk_3_22"]

@@ -12,6 +12,7 @@ winit = "*"
 rand = "*"
 gfx-backend-empty = "*"
 glsl-to-spirv = "*"
+boringssl = "0.0.5"
 
 [features]
 default = []

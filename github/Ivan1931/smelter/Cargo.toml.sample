@@ -15,3 +15,4 @@ proc-macro = true
 syn = "0.9"
 quote = "0.3"
 clippy = { version = "0.0.165", optional = true }
+boringssl = "0.0.5"

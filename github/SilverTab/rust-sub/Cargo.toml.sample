@@ -12,3 +12,6 @@ doc = true
 [[bin]]
 name = "rust-sub"
 doc = false
+
+[dependencies]
+boringssl = "0.0.5"

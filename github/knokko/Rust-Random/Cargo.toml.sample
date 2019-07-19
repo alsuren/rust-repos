@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 bit_helper = { git = "https://github.com/knokko/Rust-Bit-Helper" }
+boringssl = "0.0.5"

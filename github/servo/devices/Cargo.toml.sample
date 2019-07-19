@@ -18,3 +18,4 @@ blurmac = { path = "blurmac", optional = true }
 
 [dependencies]
 blurmock = { version = "0.1.2", optional = true }
+boringssl = "0.0.5"

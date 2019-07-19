@@ -9,6 +9,7 @@ rustc-serialize = "*"
 log = "*"
 env_logger = "*"
 time = "0.1"
+boringssl = "0.0.5"
 
 [lib]
 name = "lmdbrs_segfault"

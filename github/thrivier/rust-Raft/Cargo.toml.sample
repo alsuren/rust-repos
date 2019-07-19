@@ -6,3 +6,4 @@ authors = ["Thibault Riviere <thibault.riviere@scality.com>"]
 [dependencies]
 leveldb = "*"
 libc = "0.2.4"
+boringssl = "0.0.5"

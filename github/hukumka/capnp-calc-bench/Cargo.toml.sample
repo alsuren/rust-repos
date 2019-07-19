@@ -16,6 +16,7 @@ capnp-rpc = { path = "../capnproto-rust/capnp-rpc" }
 futures = "0.1"
 tokio = "0.1"
 criterion = "0.2"
+boringssl = "0.0.5"
 
 [[bench]]
 name = "bench"

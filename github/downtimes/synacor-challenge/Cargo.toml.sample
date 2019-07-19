@@ -22,3 +22,6 @@ path = "src/calcr7.rs"
 [[bin]]
 name = "maze"
 path = "src/mazesolver.rs"
+
+[dependencies]
+boringssl = "0.0.5"

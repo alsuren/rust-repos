@@ -12,6 +12,7 @@ license = "Apache-2.0/MIT"
 [dependencies]
 libc = "*"
 log = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies.nix]
 nix = "*"

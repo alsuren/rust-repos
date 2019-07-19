@@ -11,6 +11,7 @@ keywords = ["assembly", "asm", "stable"]
 syn = { version = "0.12.5", features = ["full", "extra-traits", "visit"] }
 proc-macro2 = "0.2.1"
 cc = "1.0.4"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

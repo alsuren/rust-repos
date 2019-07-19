@@ -5,6 +5,7 @@ authors = ["penguwin <penguwingit@gmail.com>"]
 
 [dependencies]
 rand = "0.5.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 docopt = "1"

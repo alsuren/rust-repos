@@ -18,6 +18,7 @@ numtoa = "0.2"
 # Utilitaries dependencies
 arrayvec = {version="0.4", default-features=false}
 librobot = {git="https://github.com/ClubRobotInsat/librobot"}
+boringssl = "0.0.5"
 
 [profile.release]
 codegen-units = 1

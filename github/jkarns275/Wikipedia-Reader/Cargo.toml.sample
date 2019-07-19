@@ -13,6 +13,7 @@ regex = "0.2"
 lazy_static = "0.2"
 router = "*"
 params = "*"
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

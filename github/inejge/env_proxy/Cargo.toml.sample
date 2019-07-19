@@ -14,6 +14,7 @@ edition = "2018"
 [dependencies]
 url = "1"
 log = "0.4"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 lazy_static = "1"

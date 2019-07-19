@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["LastLeaf <bqfu@163.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.glayout]
 path = "glayout/asm"

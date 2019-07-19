@@ -7,3 +7,6 @@ description = "Cryptographic keystream traits"
 repository = "https://github.com/PeterReid/keystream"
 documentation = "http://peterreid.github.io/keystream"
 keywords = ["keystream"]
+
+[dependencies]
+boringssl = "0.0.5"

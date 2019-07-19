@@ -6,3 +6,4 @@ authors = ["Stepan Koltsov <stepan.koltsov@gmail.com>"]
 [dependencies]
 rand = "*"
 pcg_rand = "*"
+boringssl = "0.0.5"

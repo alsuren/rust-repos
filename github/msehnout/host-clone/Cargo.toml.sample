@@ -5,3 +5,4 @@ authors = ["Sehny <todo@no-email-yet.com>"]
 
 [dependencies]
 libresolv = { path = "../libresolv" }
+boringssl = "0.0.5"

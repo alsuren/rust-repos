@@ -7,3 +7,6 @@ license = "MIT"
 repository = "https://github.com/srijs/rust-plumbum"
 documentation = "https://srijs.github.io/rust-plumbum/plumbum/"
 keywords = ["conduit", "pipe", "stream", "data", "processing"]
+
+[dependencies]
+boringssl = "0.0.5"

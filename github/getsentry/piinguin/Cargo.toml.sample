@@ -10,3 +10,4 @@ semaphore-general = { git = "https://github.com/getsentry/semaphore", version = 
 serde = "1.0.76"
 failure = "*"
 serde_json = "*"
+boringssl = "0.0.5"

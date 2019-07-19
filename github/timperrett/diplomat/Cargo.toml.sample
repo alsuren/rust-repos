@@ -26,6 +26,7 @@ reqwest         = "0.8"
 url             = "1.5"
 lru_time_cache  = "0.7"
 md5             = "0.3"
+boringssl = "0.0.5"
 # prometheus      = "0.2"
 
 [build-dependencies]

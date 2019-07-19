@@ -22,3 +22,6 @@ repository = "ayazhafiz/flang"
 [lib]
 name = "flang"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

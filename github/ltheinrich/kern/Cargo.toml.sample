@@ -7,3 +7,6 @@ description = "General library for Rust"
 repository = "https://github.com/ltheinrich/kern"
 license = "ISC"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

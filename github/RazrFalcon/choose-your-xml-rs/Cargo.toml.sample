@@ -13,3 +13,6 @@ sxd-document = "0.2"
 [[bench]]
 name = "xml"
 harness = false
+
+[dependencies]
+boringssl = "0.0.5"

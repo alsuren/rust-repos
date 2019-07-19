@@ -15,5 +15,6 @@ env_logger = "*"
 bridge = { path = "src/bridge" }
 gl = { path = "src/gl" }
 stb = { path = "src/stb" }
+boringssl = "0.0.5"
 
 [workspace]

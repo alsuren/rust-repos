@@ -12,3 +12,4 @@ appveyor = { repository = "starkat99/lace" }
 travis-ci = { repository = "starkat99/lace" }
 
 [dependencies]
+boringssl = "0.0.5"

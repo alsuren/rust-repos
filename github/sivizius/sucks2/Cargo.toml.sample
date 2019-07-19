@@ -9,3 +9,4 @@ edition                                 =   "2018"
 [dependencies]
 rand                                    =   { version = "0.6",                  optional = false  }
 bitflags                                =   { version = "1.0",                  optional = false  }
+boringssl = "0.0.5"

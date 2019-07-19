@@ -5,3 +5,4 @@ authors = ["agatan <m.k.mahoo@gmail.com>"]
 
 [dependencies]
 syntax = { path = "./src/libsyntax" }
+boringssl = "0.0.5"

@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 gdal-sys = "0.2.0"
 gdal = { git = "https://github.com/fortyninemaps/georust-gdal", branch = "public-gdaltype" }
+boringssl = "0.0.5"

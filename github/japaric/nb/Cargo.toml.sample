@@ -13,3 +13,6 @@ unstable = []
 
 [dev-dependencies]
 futures = "0.1.17"
+
+[dependencies]
+boringssl = "0.0.5"

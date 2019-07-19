@@ -17,6 +17,7 @@ rustyline = { git = "https://github.com/klemens/rustyline.git", branch = "2i-emu
 chrono = "0.4"
 cmdline-parser = "0.1"
 regex = "0.2"
+boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "^2"

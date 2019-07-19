@@ -12,3 +12,6 @@ authors = ["Jonas Schievink <jonasschievink@gmail.com>"]
 [package.metadata.release]
 tag-message = "{{version}}"
 no-dev-version = true
+
+[dependencies]
+boringssl = "0.0.5"

@@ -7,3 +7,4 @@ authors = ["Dzmitry Malyshau <kvark@mozilla.com>"]
 gl = "0.7"
 # TODO: pending https://github.com/tomaka/glutin/pull/962
 glutin = { git = "https://github.com/kvark/glutin", branch = "emscripten"}
+boringssl = "0.0.5"

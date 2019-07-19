@@ -4,6 +4,9 @@ name = "gps_map"
 version = "0.0.1"
 authors = ["Ben Brittain <ben@brittain.org>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sdl2]
 git = "file:/home/ben/workspace/rust-sdl2"
 rev = "da6b323e654c2da62bfd77abe438cbb986827beb"

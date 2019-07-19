@@ -8,3 +8,4 @@ repository = "https://github.com/kwebi/wc-cli"
 description = "the unix wc command"
 
 [dependencies]
+boringssl = "0.0.5"

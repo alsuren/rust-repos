@@ -4,6 +4,9 @@ name = "interactive"
 version = "0.0.1"
 authors = ["Huon Wilson <dbau.pp+github@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.piston]
 git = "https://github.com/PistonDevelopers/piston"
 

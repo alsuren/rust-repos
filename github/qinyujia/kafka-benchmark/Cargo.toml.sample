@@ -19,6 +19,7 @@ rdkafka = { git = "https://github.com/fede1024/rust-rdkafka.git" }
 serde = "1.0.0"
 serde_derive = "1.0.0"
 serde_yaml = "0.7.0"
+boringssl = "0.0.5"
 
 [features]
 default = []

@@ -7,3 +7,4 @@ authors = ["Ian Whitney <whit0694@umn.edu>"]
 curl = "0.4.6"
 clap = {version = "2", features = ["yaml"]}
 yaml-rust = "*"
+boringssl = "0.0.5"

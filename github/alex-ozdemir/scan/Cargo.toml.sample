@@ -9,3 +9,6 @@ homepage = "http://github.com/alex-ozdemir/scan"
 readme = "README.md"
 keywords = ["parse", "input", "read", "whitespace"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

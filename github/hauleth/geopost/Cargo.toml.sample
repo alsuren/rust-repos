@@ -16,6 +16,7 @@ serde_json = "1.0.5"
 signal = "0.4.1"
 slog = "2.0.12"
 sloggers = "0.2.1"
+boringssl = "0.0.5"
 
 [dependencies.sentry]
 optional = true

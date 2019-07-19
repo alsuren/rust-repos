@@ -15,3 +15,6 @@ cargo-cxx = "0.1"
 [lib]
 name = "imgui_cxx"
 path = "lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

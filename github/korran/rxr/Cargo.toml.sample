@@ -3,3 +3,6 @@
 name = "rxr"
 version = "0.0.1"
 authors = ["kor"]
+
+[dependencies]
+boringssl = "0.0.5"

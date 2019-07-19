@@ -3,6 +3,9 @@ name = "rustycg"
 version = "0.1.0"
 authors = ["Roman Zhikharevich <rzhikharevich@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sdl2]
 version = "0.31"
 default-features = false

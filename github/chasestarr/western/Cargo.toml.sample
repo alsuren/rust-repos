@@ -2,3 +2,6 @@
 name = "western"
 version = "0.0.1"
 authors = ["Chase Starr <chasestarr@gmail.net>"]
+
+[dependencies]
+boringssl = "0.0.5"

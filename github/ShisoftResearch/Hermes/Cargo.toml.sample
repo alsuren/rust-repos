@@ -9,6 +9,7 @@ name = "hermes"
 [dependencies]
 parking_lot = {version = "0.6", features = ["nightly"]}
 log = "0.4"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 simple_logger = "0.5"

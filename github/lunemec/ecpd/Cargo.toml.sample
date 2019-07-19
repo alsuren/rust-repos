@@ -6,3 +6,4 @@ authors = ["Nemec Lukas <lukas.nemec2@firma.seznam.cz>"]
 [dependencies]
 nanomsg="*"
 rustc-serialize = "0.3"
+boringssl = "0.0.5"

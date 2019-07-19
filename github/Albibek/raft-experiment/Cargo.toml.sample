@@ -19,6 +19,7 @@ byteorder="*"
 scoped_log="^0.1"
 log="^0.3"
 bytes="^0.4"
+boringssl = "0.0.5"
 
 [build-dependencies]
 capnpc = "^0.8"

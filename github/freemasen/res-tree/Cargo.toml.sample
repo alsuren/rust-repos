@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Robert Masen <r@robertmasen.pizza>"]
 [dependencies]
 inherit = {path = "./crates/inherit"}
+boringssl = "0.0.5"
 
 [workspace]
 members = [

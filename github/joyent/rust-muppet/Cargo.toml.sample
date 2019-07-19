@@ -13,3 +13,4 @@ serde_json = "1.0.37"
 slog = "2.4.1"
 slog-bunyan = { git = "https://github.com/kellymclaughlin/bunyan", branch = "build-on-smartos" }
 zookeeper = "0.5.5"
+boringssl = "0.0.5"

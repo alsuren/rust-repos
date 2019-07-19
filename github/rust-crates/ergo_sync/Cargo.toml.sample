@@ -18,6 +18,7 @@ crossbeam-channel = "0.1.2"
 num_cpus = "1.8.0"
 std_prelude = "0.2.11"
 taken = "0.1.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rayon = "0.9.0"

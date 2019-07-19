@@ -9,6 +9,7 @@ edition = "2018"
 
 [dependencies]
 npuzzle_lib = { path = "./npuzzle_lib" }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

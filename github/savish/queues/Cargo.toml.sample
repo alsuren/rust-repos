@@ -14,3 +14,4 @@ edition = "2018"
 gitlab = { repository = "rust-algorithms/queues", branch = "master" }
 
 [dependencies]
+boringssl = "0.0.5"

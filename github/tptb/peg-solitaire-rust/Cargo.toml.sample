@@ -8,3 +8,6 @@ edition = '2018'
 [[bin]]
 name = "peg_solitaire"
 
+[dependencies]
+boringssl = "0.0.5"
+

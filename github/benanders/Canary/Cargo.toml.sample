@@ -11,6 +11,7 @@ crate-type = ["staticlib"]
 rlibc = "*"
 volatile = "*"
 spin = "*"
+boringssl = "0.0.5"
 
 # The Rust compiler inserts what are called "panic landing pads", which call the
 # destructors for stack-allocated objects when a `panic!` is triggered, so that

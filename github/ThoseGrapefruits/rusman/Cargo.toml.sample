@@ -8,5 +8,8 @@ readme = "README.md"
 keywords = ["game", "ncurses"]
 license = "GNU v3.0"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.ncurses]
 git = "https://github.com/jeaye/ncurses-rs.git"

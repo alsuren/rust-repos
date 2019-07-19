@@ -8,3 +8,6 @@ keywords = ["bit", "byte", "manager", "read", "write"]
 license = "MIT"
 
 include = ["src/buffer.rs", "src/data.rs", "src/io.rs", "src/lib.rs", "src/prelude.rs", "Cargo.toml", "LICENSE"]
+
+[dependencies]
+boringssl = "0.0.5"

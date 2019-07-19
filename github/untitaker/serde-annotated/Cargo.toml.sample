@@ -7,6 +7,7 @@ authors = ["Markus Unterwaditzer <markus@unterwaditzer.net>"]
 serde = "1.0.79"
 serde_json = { version = "1.0.32", features = ["raw_value"] }
 serde_derive = "1.0.79"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 difference = "2.0.0"

@@ -7,6 +7,7 @@ authors = ["Asit"]
 rand = "0.3.14"
 chrono = "0.4"
 time = "~0.1.39"
+boringssl = "0.0.5"
 
 [dependencies.ring]
 version = "~0.13.0-alpha"

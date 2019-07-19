@@ -6,6 +6,9 @@ authors = ["Finn <finn.bcd@gmail.com>"]
 description = "A scientific library"
 license = "CC0-1.0"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sl-na]
 path = "./sl-na"
 version = "0.0.0"

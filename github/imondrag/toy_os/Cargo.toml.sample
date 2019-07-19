@@ -12,6 +12,7 @@ uart_16550 = "*"
 x86_64 = "*"
 pic8259_simple = "*"
 pc-keyboard = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 array-init = "*"

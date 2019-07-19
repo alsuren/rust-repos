@@ -8,6 +8,7 @@ build = "build.rs"
 wayland-client = "0.12.4"
 wayland-sys = "0.12.4"
 wayland-scanner = "0.12.4"
+boringssl = "0.0.5"
 
 [build-dependencies]
 wayland-scanner = "0.12.4"

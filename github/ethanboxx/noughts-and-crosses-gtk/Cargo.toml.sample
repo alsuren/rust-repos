@@ -11,6 +11,7 @@ repository = "https://gitlab.com/efunb/noughts-and-crosses-gtk"
 
 [dependencies]
 pango = "0.6.0"
+boringssl = "0.0.5"
 [dependencies.gtk]
 version = "0.6.0"
 features = ["v3_16"]

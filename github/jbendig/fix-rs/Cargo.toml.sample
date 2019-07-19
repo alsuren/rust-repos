@@ -23,6 +23,7 @@ load-testing = ["clap"]
 "phf" = "0.7.21"
 "phf_macros" = "0.7.21"
 "clap" = { version = "~2.23.3", optional = true }
+boringssl = "0.0.5"
 
 [[bin]]
 name="fix-rs-lt"

@@ -15,3 +15,4 @@ git = "https://github.com/nickel-org/rust-mustache.git"
 
 [dependencies]
 rustc-serialize = "*"
+boringssl = "0.0.5"

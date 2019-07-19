@@ -45,6 +45,7 @@ glib-sys = { git = "https://github.com/gtk-rs/sys" }
 gobject-sys = { git = "https://github.com/gtk-rs/sys" }
 gio-sys = { git = "https://github.com/gtk-rs/sys" }
 gio = { git = "https://github.com/gtk-rs/gio" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 gir-format-check = "^0.1"

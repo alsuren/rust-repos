@@ -17,6 +17,7 @@ gfx = "*"
 glutin = "*"
 gfx_window_glutin = "*"
 gfx_device_gl = "*"
+boringssl = "0.0.5"
 
 [dev_dependencies]
 simplelog="*"

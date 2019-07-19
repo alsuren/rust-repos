@@ -5,6 +5,7 @@ authors = ["Bug0r"]
 
 [dependencies]
 math = { path = "../math-rust", version = "*" }
+boringssl = "0.0.5"
 
 [lib]
 name = "renderer"

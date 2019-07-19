@@ -9,6 +9,7 @@ repository = "https://github.com/hawkw/map_ext.rs"
 readme = "README.md"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 unstable = []

@@ -3,3 +3,6 @@
 name = "rls"
 version = "0.0.1"
 authors = ["Christopher De Cairos <cade@mozillafoundation.org>"]
+
+[dependencies]
+boringssl = "0.0.5"

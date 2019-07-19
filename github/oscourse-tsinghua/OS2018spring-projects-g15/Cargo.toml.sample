@@ -31,6 +31,7 @@ slab_allocator = "0.3.1"
 xmas-elf = "0.6"
 
 redox_syscall = "0.1.37"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "0.2.4"

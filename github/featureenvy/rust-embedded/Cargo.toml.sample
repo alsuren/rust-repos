@@ -10,6 +10,7 @@ gcc = "0.3"
 
 [dependencies]
 rust-libcore = "*"
+boringssl = "0.0.5"
 
 [dependencies.rlibc]
 git = "https://github.com/hackndev/rlibc"

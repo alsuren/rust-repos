@@ -6,3 +6,4 @@ authors = ["KizzyCode <development@kizzycode.de>"]
 [dependencies]
 network_io = { git = "https://github.com/KizzyCode/network_io.git" }
 http = { git = "https://github.com/KizzyCode/http.git" }
+boringssl = "0.0.5"

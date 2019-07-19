@@ -3,3 +3,6 @@
 name = "traffic"
 version = "0.0.1"
 authors = ["Riley Teige <riley.teige@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

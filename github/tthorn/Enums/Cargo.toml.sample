@@ -3,3 +3,6 @@
 name = "enums"
 version = "0.0.1"
 authors = ["Tyler Thorn <tthorn@mines.edu>"]
+
+[dependencies]
+boringssl = "0.0.5"

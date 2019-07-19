@@ -7,3 +7,4 @@ authors = ["Søren"]
 iron = "*"
 #session = { "path" = "../session" }
 session = { git = "https://github.com/sorenhoyer/session", branch = "refactor/iron" }
+boringssl = "0.0.5"

@@ -11,3 +11,4 @@ description = "Spawns a thread and which will restart the work fn when it produc
 
 [dependencies]
 log = "0.4"
+boringssl = "0.0.5"

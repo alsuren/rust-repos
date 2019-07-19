@@ -7,3 +7,6 @@ authors = [ "jfager@gmail.com" ]
 [lib]
 
 name = "minmaxheap"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,3 +8,4 @@ homepage = "https://github.com/jedisct1/rust-printtable"
 description = "Nicely format a table"
 
 [dependencies]
+boringssl = "0.0.5"

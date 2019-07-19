@@ -22,6 +22,7 @@ iron-cors = {path = "src/middlewares/iron-cors-rs"} # Use the official one when 
 argon2rs = "^0.2.5"      # Keep an eye for updates. They wil update default values for security (now in 3 passes and 1 lane)
 base64 = "~0.4.0"        # Keep an eye for updates.
 rustc-serialize = "^0.3" # Delete when jsonwebtoken is updated
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

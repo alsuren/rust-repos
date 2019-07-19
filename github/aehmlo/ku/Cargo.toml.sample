@@ -26,6 +26,7 @@ rand = "0.4.2"
 clap = "2.31.2"
 stdweb = "0.4.6"
 num-traits = "0.2.4"
+boringssl = "0.0.5"
 
 [features]
 default = ["2D", "use_rand"]

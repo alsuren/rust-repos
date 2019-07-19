@@ -13,4 +13,5 @@ path = "vmrepl.rs"
 
 [dependencies]
 lazy_static = "*"
+boringssl = "0.0.5"
 #rustyline = "0.1.0"

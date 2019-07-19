@@ -13,3 +13,6 @@ name = "http"
 path = "src/http/lib.rs"
 test = true
 doc = true
+
+[dependencies]
+boringssl = "0.0.5"

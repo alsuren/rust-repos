@@ -2,3 +2,6 @@
 name = "alloc"
 version = "0.1.0"
 authors = ["The Rust Project Developers", "Philipp Oppermann <dev@phil-opp.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -20,6 +20,7 @@ euler_p091_100 = { path = "euler_p091_100" }
 euler_p101_110 = { path = "euler_p101_110" }
 euler_p111_120 = { path = "euler_p111_120" }
 euler_p121_130 = { path = "euler_p121_130" }
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

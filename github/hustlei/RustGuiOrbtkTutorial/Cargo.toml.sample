@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 orbtk ={git="https://gitlab.redox-os.org/redox-os/orbtk.git"}
+boringssl = "0.0.5"

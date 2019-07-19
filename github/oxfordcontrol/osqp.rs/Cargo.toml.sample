@@ -14,3 +14,4 @@ keywords = ["optimisation", "optimization", "programming", "quadratic", "linear"
 
 [dependencies]
 osqp-sys = { version = "0.6.0-pre", path = "osqp-sys" }
+boringssl = "0.0.5"

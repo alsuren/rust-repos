@@ -10,3 +10,6 @@ repository = "https://github.com/timolinn/nuban"
 
 [badges]
 travis-ci = { repository = "timolinn/nuban" }
+
+[dependencies]
+boringssl = "0.0.5"

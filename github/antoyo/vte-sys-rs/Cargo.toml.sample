@@ -20,6 +20,7 @@ gobject-sys = "0.8"
 gtk-sys = "0.8"
 libc = "0.2"
 pango-sys = "0.8"
+boringssl = "0.0.5"
 
 [features]
 v0_40 = []

@@ -46,6 +46,7 @@ maintenance = {status = "actively-developed"}
 #  Dependencies
 # ==============
 [dependencies]
+boringssl = "0.0.5"
 [build-dependencies]
 [dev-dependencies]
 

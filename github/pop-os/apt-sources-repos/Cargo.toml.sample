@@ -31,6 +31,7 @@ tokio = "0.1.11"
 xz2 = "0.1.6"
 tokio-threadpool = "0.1.9"
 err-derive = "0.1.5"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 reqwest = "0.9.4"

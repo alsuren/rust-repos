@@ -5,6 +5,7 @@ authors = ["William D. Jones <thorr0505@comcast.net>"]
 
 [dependencies]
 cortex-m = "0.3.x"
+boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 features=["abort-on-panic"]

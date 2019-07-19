@@ -15,6 +15,7 @@ travis-ci = { repository = "quininer/sp800-185" }
 tiny-keccak = "^1.4"
 byteorder = { version = "1.0", default-features = false }
 rayon = { version = "0.9", optional = true }
+boringssl = "0.0.5"
 
 [features]
 parallelhash = [ "rayon" ]

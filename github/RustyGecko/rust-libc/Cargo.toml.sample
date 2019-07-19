@@ -13,3 +13,6 @@ libc linked with arm-none-eabi-toolchain
 
 [target.thumbv7m-none-eabi.dependencies.core]
 git = "https://github.com/RustyGecko/rust-core.git"
+
+[dependencies]
+boringssl = "0.0.5"

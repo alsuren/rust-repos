@@ -5,6 +5,7 @@ authors = ["Zouroboros <zouroboros@zoho.eu>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.poppler]
 path = "poppler-rs"

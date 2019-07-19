@@ -9,6 +9,7 @@ authors = ["John Hodge <tpg@mutabah.net>"]
 #sqlite = "*"
 #hyper = "*"
 libmotorola-scan = { path = "deps/libmotorola-scan" }
+boringssl = "0.0.5"
 
 [dependencies.winapi]
 version = "0.3.6"

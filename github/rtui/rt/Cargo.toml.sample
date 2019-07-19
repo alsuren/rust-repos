@@ -4,6 +4,9 @@ name = "rt"
 version = "0.0.1"
 authors = ["Dave <dave.willmer@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rust-windows]
 git = "https://github.com/dwillmer/rust-windows.git"
 

@@ -18,3 +18,4 @@ dotenv = "0.10.1"
 envy = "0.3.3"
 uuid = { version = "0.6", features = ["serde"] }
 japi = { path = "./src/japi" }
+boringssl = "0.0.5"

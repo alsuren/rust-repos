@@ -6,3 +6,4 @@ authors = ["Scott Schroeder <scottschroeder@sent.com>"]
 [dependencies]
 native-tls = { git = "https://github.com/scottschroeder/rust-native-tls", branch = "noverify" }
 reqwest = { git = "https://github.com/scottschroeder/reqwest", branch = "noverify" }
+boringssl = "0.0.5"

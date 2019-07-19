@@ -7,3 +7,6 @@ authors = ["Ed Brereton <edbrereton@gmail.com>"]
 [[example]]
 name = "basicnotification"
 path = "examples/basicnotification.rs"
+
+[dependencies]
+boringssl = "0.0.5"

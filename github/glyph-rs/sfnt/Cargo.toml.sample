@@ -18,6 +18,7 @@ repository = "https://github.com/glyph-rs/sfnt"
 [dependencies]
 
 tarrasque = "0.10"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 

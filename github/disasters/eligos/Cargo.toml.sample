@@ -11,6 +11,7 @@ keywords = ["distributed-systems", "mio", "services"]
 bytes = "0.2.11"
 mio = "0.4.2"
 rand = "0.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "*"

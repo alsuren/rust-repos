@@ -12,3 +12,6 @@ license = "MIT"
 readme = "README.md"
 
 keywords = ["submodule", "build-dependencies"]
+
+[dependencies]
+boringssl = "0.0.5"

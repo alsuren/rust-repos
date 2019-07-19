@@ -7,3 +7,6 @@ authors = ["Peter Schuller <peter.schuller@infidyne.com>"]
 [lib]
 name = "shastity"
 path = "src/shastity/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

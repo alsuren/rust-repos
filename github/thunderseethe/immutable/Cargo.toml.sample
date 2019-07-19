@@ -5,3 +5,6 @@ authors = ["thunderseethe <thunderseethe.dev@gmail.com>"]
 description = "A library of immutable persistent data structures for Rust"
 license = "GPL-3.0"
 repository = "https://github.com/thunderseethe/immutable.git"
+
+[dependencies]
+boringssl = "0.0.5"

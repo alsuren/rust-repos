@@ -18,6 +18,7 @@ diesel_migrations = { version = "1.1.0", features = ["sqlite"] }
 r2d2 = "0.8.2"
 r2d2-diesel = "1.0.0"
 gotham_middleware_diesel = { path = "middleware/diesel" }
+boringssl = "0.0.5"
 
 # AMQP
 # amqp = "0.1.1"

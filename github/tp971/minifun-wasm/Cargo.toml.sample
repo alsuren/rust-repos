@@ -11,6 +11,7 @@ crate-type = ["cdylib"]
 #minifun = { path = "../minifun" }
 minifun = { git = "https://github.com/tp971/minifun" }
 wasm-bindgen = "0.2"
+boringssl = "0.0.5"
 
 [profile.release]
 # remove debug symbols:

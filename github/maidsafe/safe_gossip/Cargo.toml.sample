@@ -21,6 +21,7 @@ serde_derive = "1.0.85"
 sha3 = "0.8.1"
 unwrap = "1.2.1"
 bincode = "1.0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 maidsafe_utilities = "0.17.0"

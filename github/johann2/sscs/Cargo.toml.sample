@@ -5,6 +5,7 @@ authors = ["Johann Tael <jntael@gmail.com>"]
 
 [dependencies]
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 ncurses = "5.73"

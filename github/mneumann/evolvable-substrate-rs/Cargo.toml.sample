@@ -5,6 +5,7 @@ authors = ["Michael Neumann <mneumann@ntecs.de>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 splot = {git = "https://github.com/mneumann/splot-rs"}

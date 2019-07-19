@@ -8,3 +8,6 @@ license = "MirOS"
 [lib]
 name = "rfc2253"
 path = "src/rfc2253.rs"
+
+[dependencies]
+boringssl = "0.0.5"

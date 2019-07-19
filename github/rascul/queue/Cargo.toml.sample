@@ -17,3 +17,4 @@ gitlab = { repository = "/rascul/queue", branch = "master" }
 maintenance = { status = "passively-maintained" }
 
 [dependencies]
+boringssl = "0.0.5"

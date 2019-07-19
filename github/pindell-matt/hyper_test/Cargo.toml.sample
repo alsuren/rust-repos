@@ -6,6 +6,7 @@ authors = ["Matt Pindell <pindell.m@gmail.com>"]
 [dependencies]
 hyper = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"
 
 [dependencies.url]
 git = "https://github.com/servo/rust-url"

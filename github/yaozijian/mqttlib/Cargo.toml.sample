@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 bincode="1.1.2"
 serde="1.0.89"
+boringssl = "0.0.5"

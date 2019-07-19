@@ -22,6 +22,7 @@ path = "src/acm-cli.rs"
 common_macros = "0.1.1"
 clap = { version = "2.33.0", features = ["yaml"] }
 failure = "0.1.5"
+boringssl = "0.0.5"
 
 [package.metadata.docs.rs]
 rustdoc-args = [ "--html-in-header", "katex-header.html" ]

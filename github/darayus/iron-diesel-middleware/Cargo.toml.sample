@@ -7,6 +7,7 @@ authors = ["Darayus Nanavati <darayus.contact@gmail.com>"]
 
 iron = "0.6"
 diesel = { version = "^1.0.0", features = ["r2d2"] }
+boringssl = "0.0.5"
 
 [[example]]
 

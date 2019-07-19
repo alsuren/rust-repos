@@ -27,6 +27,7 @@ s4 = { version = "0.0.*", default_features = false }
 http = "0.1"
 tokio-threadpool = "0.1"
 futures = "0.1"
+boringssl = "0.0.5"
 
 [features]
 default = ["s4/native-tls"]

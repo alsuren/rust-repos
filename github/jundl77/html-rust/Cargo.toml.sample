@@ -13,6 +13,7 @@ iron-cors = "0.8.0"
 log = "0.4.0"
 simplelog = "0.5.3"
 rand = "0.6"
+boringssl = "0.0.5"
 
 [dependencies.bodyparser]
 git = "https://github.com/iron/body-parser.git"

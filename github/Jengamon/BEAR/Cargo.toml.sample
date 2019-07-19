@@ -7,6 +7,7 @@ authors = ["Bob Hosten <bob.hostern@gmail.com>"]
 [dependencies]
 docopt = "0.6"
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "bear"

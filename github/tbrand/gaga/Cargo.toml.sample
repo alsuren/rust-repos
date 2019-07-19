@@ -6,6 +6,7 @@ authors = ["tbrand <taichiro0709@gmail.com>"]
 [dependencies]
 reqwest = "*"
 failure = "*"
+boringssl = "0.0.5"
 
 [dependencies.k8s-openapi]
 version = "*"

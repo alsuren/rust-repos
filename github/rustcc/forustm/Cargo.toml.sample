@@ -21,6 +21,7 @@ authors = ["Mike Tang <miketang84@outlook.com>"]
  hyper-native-tls = "^0.2.4"
  hyper = "^0.10.13"
  sapper_ntd = {git = "https://github.com/DCjanus/sapper_ntd.git" }
+boringssl = "0.0.5"
 
 [dependencies.diesel]
 features = ["postgres", "chrono", "uuid", "r2d2"]

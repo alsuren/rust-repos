@@ -8,5 +8,6 @@ futures = "*"
 tokio-core = "*"
 tokio-process = "0.1.5"
 clap = {version = "2.30", features = ["yaml"]}
+boringssl = "0.0.5"
 
 

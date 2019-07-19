@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 lending-library = {version = "0.2.*", optional = true}
+boringssl = "0.0.5"
 
 [features]
 lending = ["lending-library"]

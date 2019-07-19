@@ -15,6 +15,7 @@ maintenance = { status = "actively-developed" }
 [dependencies]
 xmlrpc = "0.13"
 reqwest = "0.9"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 igd = "0.8"

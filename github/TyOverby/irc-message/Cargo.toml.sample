@@ -10,3 +10,6 @@ description = "A small library for parsing irc messages."
 [lib]
 name = "irc_message"
 path = "./src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -12,3 +12,6 @@ members = ["safe_core", "safe_authenticator", "safe_app"]
 # is standard behaviour or some bug about to be fixed.
 [lib]
 crate_type = ["rlib", "cdylib", "staticlib"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -6,3 +6,6 @@ authors = ["raf"]
 [[bin]]
 name = "proquint"
 doc = false
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,6 +8,7 @@ iron = "*"
 handlebars-iron = "*"
 rustc-serialize = "*"
 maplit = "*"
+boringssl = "0.0.5"
 
 [features]
 watch = ["handlebars-iron/watch"]

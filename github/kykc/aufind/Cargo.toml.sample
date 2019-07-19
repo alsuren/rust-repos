@@ -21,6 +21,7 @@ clap = "^2.32"
 rustyline = "^2.1"
 colored = "^1.6"
 dirs = "*"
+boringssl = "0.0.5"
 
 [package.metadata.deb]
 depends = "libgcc1 (>= 1:6.3.0), libc6 (>= 2.24)"

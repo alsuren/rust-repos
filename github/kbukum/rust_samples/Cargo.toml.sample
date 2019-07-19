@@ -13,3 +13,6 @@ exclude       = [
   "tests/**/*",
   ".travis.yml"
 ]
+
+[dependencies]
+boringssl = "0.0.5"

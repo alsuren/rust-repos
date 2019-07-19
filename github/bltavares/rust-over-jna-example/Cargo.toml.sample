@@ -8,3 +8,4 @@ repository = "https://github.com/bltavares/rust-over-jna-example"
 crate-type = ["cdylib", "staticlib", "lib"]
 
 [dependencies]
+boringssl = "0.0.5"

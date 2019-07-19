@@ -9,3 +9,6 @@ homepage = "https://github.com/tsurai/mecab-rs"
 repository = "https://github.com/tsurai/mecab-rs"
 readme = "README.md"
 keywords = ["mecab", "libmecab", "japanese", "morphological", "analyzer"]
+
+[dependencies]
+boringssl = "0.0.5"

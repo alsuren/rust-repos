@@ -9,6 +9,7 @@ serde_derive = "1"
 bitflags = "0.7"
 quickcheck = "0.6"
 stdweb = "0.4"
+boringssl = "0.0.5"
 
 
 [profile.dev]

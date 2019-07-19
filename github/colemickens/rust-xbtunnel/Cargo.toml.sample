@@ -6,5 +6,8 @@ authors = [ "cole.mickens@gmail.com" ]
 [[bin]]
 name = "xbtunnel"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.pnet]
 git = "https://github.com/libpnet/libpnet.git"

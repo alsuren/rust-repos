@@ -253,6 +253,7 @@ winutil = "*"
 wio = "*"
 xladd = "*"
 xladd-util = "*"
+boringssl = "0.0.5"
 
 [target.'cfg(target_arch="i686")'.dependencies]
 sbz-switch = "*" # 64-bit not supported

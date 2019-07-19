@@ -6,5 +6,6 @@ authors = ["Pablo Terradillos <tehsis@gmail.com>"]
 [dependencies]
 serial = "0.3"
 portmidi = "^0.2"
+boringssl = "0.0.5"
 [dependencies.rimd]
 git = "https://github.com/nicklan/rimd.git"

@@ -5,6 +5,7 @@ authors = ["Antonio Scandurra <as-cii@github.com>"]
 
 [dependencies]
 smallvec = "0.6"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3"

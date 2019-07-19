@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 sgx-isa = { version = "0.2", features = ["sgxstd"] }
+boringssl = "0.0.5"

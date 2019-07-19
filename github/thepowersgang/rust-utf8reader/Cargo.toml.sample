@@ -5,3 +5,6 @@ version = "0.1.0"
 description = "Provides a wrapper around Reader that returns a stream of UTF-8 characters"
 license = "MIT OR Apache-2.0"
 authors = ["John Hodge <tpg@mutabah.net>"]
+
+[dependencies]
+boringssl = "0.0.5"

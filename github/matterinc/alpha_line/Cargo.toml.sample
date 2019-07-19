@@ -26,6 +26,7 @@ itertools = "0.8.0"
 
 ff = { git = 'https://github.com/matterinc/ff', features = ["derive"] }
 pairing = { git = 'https://github.com/matterinc/pairing', features = ["expose-arith"] }
+boringssl = "0.0.5"
 
 [features]
 

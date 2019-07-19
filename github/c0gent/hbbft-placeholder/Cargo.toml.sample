@@ -17,6 +17,9 @@ categories = ["algorithms", "asynchronous", "cryptography", "network-programming
 [badges]
 travis-ci = { repository = "poanetwork/hbbft" }
 
+[dependencies]
+boringssl = "0.0.5"
+
 # [dependencies]
 # bincode = "1.0.0"
 # byteorder = "1.2.3"

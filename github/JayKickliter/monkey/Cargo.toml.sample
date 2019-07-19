@@ -9,3 +9,4 @@ path = "bin/main.rs"
 
 [dependencies]
 copperline = { git = "https://github.com/srijs/rust-copperline.git" }
+boringssl = "0.0.5"

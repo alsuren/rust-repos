@@ -4,6 +4,9 @@ name = "dns-bench"
 version = "0.0.1"
 authors = ["Jacob Okamoto <okam0013@umn.edu>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.dns]
 git = "https://github.com/oko/rust-dns.git"
 [dependencies.time]

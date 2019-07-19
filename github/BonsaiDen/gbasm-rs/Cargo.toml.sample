@@ -7,6 +7,9 @@ repository = "https://github.com/BonsaiDen/gbasm-rs.git"
 readme = "README.md"
 keywords = ["gameboy", "assembler"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.clap]
 version = "1.0.3"
 

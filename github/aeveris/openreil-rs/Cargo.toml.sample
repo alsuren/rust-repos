@@ -6,3 +6,4 @@ authors = ["Jonas Großmann <jonas.github@naevius.de>"]
 [dependencies]
 openreil-sys = { git = "https://github.com/aeveris/openreil-sys" }
 libc = "*"
+boringssl = "0.0.5"

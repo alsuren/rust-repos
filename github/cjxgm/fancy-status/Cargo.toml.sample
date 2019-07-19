@@ -15,6 +15,7 @@ time = "0.1.42"
 fastup = { path = "fastup" }
 color = { path = "color" }
 stats-once = { path = "stats-once" }
+boringssl = "0.0.5"
 
 [workspace]
 

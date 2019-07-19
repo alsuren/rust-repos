@@ -24,6 +24,7 @@ env_logger = "0.3"
 # Plugins can't be conditionally loaded, so can't go in dev-dependencies
 # https://github.com/Manishearth/rust-adorn/pull/5
 adorn = { git = "https://github.com/aidanhs/rust-adorn.git", rev = "76ea8fa" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 maplit = "0.1.2"

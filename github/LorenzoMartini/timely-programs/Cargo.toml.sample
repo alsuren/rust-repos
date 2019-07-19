@@ -12,3 +12,4 @@ timely = {  git = "https://github.com/frankmcsherry/timely-dataflow" }
 timely-affinity = { git = "https://github.com/LorenzoMartini/timely-affinity", branch = "lmartini/execute_from" }
 hdrhist = "^0.5.0"
 getopts="*"
+boringssl = "0.0.5"

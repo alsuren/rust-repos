@@ -9,6 +9,7 @@ description = "RocksDb storage implementation for the cita-trie merkle trie"
 [dependencies]
 cita_trie = "0.1.6"
 rocksdb = {package="parity-rocksdb", version="0.5.0"}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.10"

@@ -48,6 +48,7 @@ maintenance = {status = "actively-developed"}
 [dependencies]
 clap = {git = "https://github.com/kbknapp/clap-rs", branch = "v3-master", default-features = false}
 clippy    = { version = "~0.0.166", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 version-sync = "0.5"

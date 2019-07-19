@@ -16,3 +16,4 @@ serde = "*"
 serde_json = "*"
 serde_derive = "*"
 reqwest = { git = "https://github.com/seanmonstar/reqwest" }
+boringssl = "0.0.5"

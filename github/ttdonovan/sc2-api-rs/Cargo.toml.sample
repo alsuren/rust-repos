@@ -12,6 +12,7 @@ log = "0.3.8"
 prost = "0.2"
 prost-derive = "0.2"
 websocket = "0.20"
+boringssl = "0.0.5"
 
 [build-dependencies]
 prost-build = "0.2"

@@ -18,6 +18,7 @@ web-sys = { path = '../wasm-bindgen/crates/web-sys' }
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

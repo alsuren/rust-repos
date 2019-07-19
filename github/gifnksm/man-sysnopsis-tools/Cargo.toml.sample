@@ -4,6 +4,9 @@ name = "man-synopsis-tools"
 version = "0.0.1"
 authors = ["gifnksm <makoto.nksm+github@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.cmdutil]
 path = "deps/cmdutil"
 

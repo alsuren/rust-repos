@@ -6,3 +6,4 @@ authors = ["Greg Weng<snowmantw@gmail.com>"]
 [dependencies]
 regex = "0.2"
 nodes = { path = "src/nodes" }
+boringssl = "0.0.5"

@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 spidev = "0.3.0" # Provides access to the Linux spidev interface
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.46.0" # Generate bindings to C automatically

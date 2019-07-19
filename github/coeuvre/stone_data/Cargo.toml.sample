@@ -7,6 +7,9 @@ authors = ["Coeuvre Wong <coeuvre@gmail.com>"]
 default = ["postgres-adapter"]
 postgres-adapter = ["postgres"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.postgres]
 features = ["chrono"]
 git = "https://github.com/Coeuvre/rust-postgres"

@@ -25,3 +25,4 @@ travis-ci = { repository = "BMeu/rustfuck" }
 [dependencies]
 clap = "2.31"
 rustfuck_lib = { path = "rustfuck-lib" }
+boringssl = "0.0.5"

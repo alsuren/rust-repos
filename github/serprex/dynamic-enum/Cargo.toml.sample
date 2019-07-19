@@ -5,3 +5,6 @@ authors = ["serprex"]
 repository = "https://github.com/serprex/dynamic-enum"
 description = "Compile time type hashmap"
 license = "MIT/Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -5,3 +5,4 @@ authors = ["Sergey \"Shnatsel\" Davidoff <shnatsel@gmail.com>"]
 
 [dependencies]
 lodepng = {git = "https://github.com/Shnatsel/lodepng-rust.git"}
+boringssl = "0.0.5"

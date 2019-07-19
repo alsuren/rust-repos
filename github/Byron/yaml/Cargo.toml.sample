@@ -12,6 +12,7 @@ build = "src/build.rs"
 [dependencies]
 serde = "*"
 num = "*"
+boringssl = "0.0.5"
 
 [features]
 foo = []

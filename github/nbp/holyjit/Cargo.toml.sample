@@ -14,6 +14,7 @@ members = [
 holyjit_lib = { path = "./lib" }
 holyjit_plugin = { path = "./plugin" }
 holyjit = { path = "./bin" }
+boringssl = "0.0.5"
 
 # Before running any tests or examples, make sure to set the RUSTC_WRAPPER as
 # follow:

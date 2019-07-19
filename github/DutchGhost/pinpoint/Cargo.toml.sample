@@ -11,6 +11,7 @@ keywoard = ["pin", "into_pin", "pinned"]
 categories = ["rust-patterns"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 pinned = []

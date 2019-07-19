@@ -5,6 +5,7 @@ authors = ["Martin Bernardi <martinber.710@gmail.com>"]
 
 [dependencies]
 hound = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "*"

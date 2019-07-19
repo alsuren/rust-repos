@@ -6,6 +6,7 @@ authors = ["Steve Loveless <steve.loveless@gmail.com>"]
 [dependencies]
 rustyline = "1.0.0"
 ruru = "*"
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib", "rlib"]

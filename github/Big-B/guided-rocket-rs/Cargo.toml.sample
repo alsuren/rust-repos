@@ -12,6 +12,7 @@ cortex-m = "*"
 heapless = {version = "*", features = ["const-fn"]}
 embedded-sdmmc = { git = "https://github.com/thejpster/embedded-sdmmc-rs" }
 mpu6050 = { git = "https://github.com/Big-B/mpu6050" }
+boringssl = "0.0.5"
 
 [dependencies.arduino_mkrzero]
 version = "*"

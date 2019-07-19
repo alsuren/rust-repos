@@ -8,6 +8,7 @@ exclude = ["exports/*"]
 name = "homotopy"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 underscore_args = "0.1.2"

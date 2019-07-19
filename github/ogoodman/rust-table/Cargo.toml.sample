@@ -6,3 +6,6 @@ authors = [ "Oliver Goodman <oag@optusnet.com.au>" ]
 include = ["src/**/*", "Cargo.toml"]
 
 [lib]
+
+[dependencies]
+boringssl = "0.0.5"

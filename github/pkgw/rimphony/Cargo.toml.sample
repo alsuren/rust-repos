@@ -15,6 +15,7 @@ gsl-sys = { path = "gsl-sys" }
 leung-bessel = { path = "leung-bessel" }
 slog = "^2.2"
 special-fun = { git = "https://github.com/pkgw/special-fun", version = "^0.1" } # hacked to not use -march=native
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_approx_eq = "^1.0"

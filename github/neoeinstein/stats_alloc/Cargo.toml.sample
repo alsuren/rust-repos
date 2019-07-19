@@ -21,5 +21,8 @@ default = []
 nightly = []
 docs-rs = [ "nightly" ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [package.metadata.docs.rs]
 features = [ "docs-rs" ]

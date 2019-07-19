@@ -3,3 +3,6 @@
 name = "rusty-lisp"
 version = "0.0.1"
 authors = ["Ryan Serazin <rps9530@rit.edu>"]
+
+[dependencies]
+boringssl = "0.0.5"

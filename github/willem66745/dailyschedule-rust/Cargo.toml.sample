@@ -6,6 +6,7 @@ authors = ["Willem <willem66745@gmail.com>"]
 [dependencies]
 time = "*"
 rand = "*"
+boringssl = "0.0.5"
 
 [dependencies.zoneinfo]
 git = "https://github.com/willem66745/zoneinfo-rust"

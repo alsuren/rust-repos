@@ -8,3 +8,4 @@ edition = "2018"
 ws = "*"
 serde_json = "1.0"
 omnistreams_core = { path = "../omnistreams-core-rs" }
+boringssl = "0.0.5"

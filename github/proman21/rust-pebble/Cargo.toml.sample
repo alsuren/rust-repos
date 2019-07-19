@@ -3,6 +3,9 @@ name = "pebble"
 version = "0.1.0"
 authors = ["synthsym <snoopyk921@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.libc]
 version = "0.2.12"
 default-features = false

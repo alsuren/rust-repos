@@ -7,3 +7,4 @@ authors = ["Eddy Stefes <eduard.stefes@gmail.com>"]
 qml = { path = "../qml-rust/"}
 neovim-lib = { path = "../neovim-lib/"}
 url = "*"
+boringssl = "0.0.5"

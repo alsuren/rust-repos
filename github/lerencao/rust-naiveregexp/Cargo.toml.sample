@@ -3,3 +3,6 @@
 name = "naiveregex"
 version = "0.1.0"
 authors = ["Cao Jiafeng <funfriendcjf@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

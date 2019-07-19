@@ -5,3 +5,4 @@ authors = ["David R. Myers II <davidrmyersii@gmail.com>"]
 
 [dependencies]
 clap = { version = "2.12.*", features = [ "yaml" ] }
+boringssl = "0.0.5"

@@ -7,3 +7,6 @@ license     = "BSD 2-Clause"
 readme      = "README.md"
 categories  = ["data-structures", "rust-patterns"]
 edition     = "2018"
+
+[dependencies]
+boringssl = "0.0.5"

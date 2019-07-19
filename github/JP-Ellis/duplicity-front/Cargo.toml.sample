@@ -31,6 +31,7 @@ serde_derive = "1.0.91"
 serde_yaml = "0.8.9"
 stderrlog = "0.4.1"
 dirs = "1.0.5"
+boringssl = "0.0.5"
 
 [features]
 default = []

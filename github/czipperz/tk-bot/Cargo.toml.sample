@@ -10,3 +10,4 @@ rocket = "0.4.0"
 rocket_contrib = "0.4.0"
 serde = { version = "1.0.89", features = ["derive"] }
 regex = "*"
+boringssl = "0.0.5"

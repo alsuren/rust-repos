@@ -23,6 +23,7 @@ bitflags = "1.0"
 smallstr = "0.1"
 unicode-normalization = "0.1"
 unicode-width = "0.1"
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2"

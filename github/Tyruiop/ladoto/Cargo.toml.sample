@@ -6,4 +6,5 @@ authors = ["Archibald Pontier <archibald.pontier+ladoto@tyruiop.org>"]
 [dependencies]
 rand = "0.3.9"
 tcod = { path = "/home/tyruiop/projets/tcod-rs" }
+boringssl = "0.0.5"
 

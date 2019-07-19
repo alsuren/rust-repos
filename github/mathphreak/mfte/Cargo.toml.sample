@@ -19,6 +19,7 @@ macro-attr = "0.2.0"
 enum_derive = "0.1.7"
 clipboard = "0.4.2"
 editorconfig = "1.0.0"
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = "0.2.8"

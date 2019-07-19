@@ -12,3 +12,4 @@ Dalvik parser in pure Rust.
 keywords = ["dalvik", "parser", "android", "dex"]
 
 [dependencies]
+boringssl = "0.0.5"

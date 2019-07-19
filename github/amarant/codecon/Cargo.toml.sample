@@ -30,3 +30,6 @@ path = "src/a_compliance_problem.rs"
 [[bin]]
 name = "yet_another_compliance_problem"
 path = "src/yet_another_compliance_problem.rs"
+
+[dependencies]
+boringssl = "0.0.5"

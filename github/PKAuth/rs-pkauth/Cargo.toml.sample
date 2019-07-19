@@ -15,6 +15,7 @@ serde="*"
 serde_json="*"
 untrusted="^0.6.0"
 crypto-abstract={path="../rs-crypto-abstract"}
+boringssl = "0.0.5"
 
 # [[bin]]
 # name = "gen"

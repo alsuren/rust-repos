@@ -25,6 +25,7 @@ libc = { version = "^0.2.40", default-features = false }
 libsodium-sys = { version = "^0.0.16", default-features = false }
 sodiumoxide = { version = "^0.0.16", default-features = false }
 subtle = { version = "^0.6", features = ["nightly"], default-features = false }
+boringssl = "0.0.5"
 
 [package.metadata.release]
 sign-commit = true

@@ -11,6 +11,7 @@ crate-type = ["dylib"]
 [dependencies]
 woothee = { git = "https://github.com/woothee/woothee-rust" }
 ruru = "^0.9"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 ruru = { git = "https://github.com/d-unseductable/ruru", branch = "master" }

@@ -8,3 +8,6 @@ documentation = "https://docs.rs/vgabuf_err"
 repository = "https://github.com/Proximyst/vgabuf_err"
 categories = ["embedded", "no-std"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

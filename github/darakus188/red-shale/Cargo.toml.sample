@@ -5,6 +5,7 @@ authors = ["Matthew Bunt <darakus@dagron.net>"]
 
 [dependencies]
 mio = "*"
+boringssl = "0.0.5"
 
 [dependencies.rusqlite]
 version = "*"

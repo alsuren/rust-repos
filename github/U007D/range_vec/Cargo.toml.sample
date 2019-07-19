@@ -72,4 +72,5 @@ harness = true
 [dependencies]
 num = "*"
 laconic = { git = "https://github.com/bradleygibson/laconic.git"}
+boringssl = "0.0.5"
 

@@ -21,3 +21,6 @@ debug-assertions = false
 opt-level = 3
 panic = "abort"
 rpath = true
+
+[dependencies]
+boringssl = "0.0.5"

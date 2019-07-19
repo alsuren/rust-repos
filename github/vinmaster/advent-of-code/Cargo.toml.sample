@@ -9,3 +9,6 @@ path = "main.rs"
 [lib]
 name = "year2018day1"
 path = "2018/day1/day1.rs"
+
+[dependencies]
+boringssl = "0.0.5"

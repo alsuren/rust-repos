@@ -12,6 +12,7 @@ serde_json = "0.9.9"
 chrono = { version = "0.3", features = ["serde", "rustc-serialize"] }
 nom = "2.2.1"
 url = "*"
+boringssl = "0.0.5"
 
 [dependencies.url_open]
 git = "https://github.com/overdrivenpotato/url_open.git"

@@ -7,6 +7,7 @@ authors = ["Arne Vogel"]
 chrono = "0.4"
 clap = "*"
 url = "*"
+boringssl = "0.0.5"
 [dependencies.ws]
 version = "*"
 features = ["ssl"]

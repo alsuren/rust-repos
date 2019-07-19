@@ -6,6 +6,7 @@ authors = ["Julian Laubstein <contact@julianlaubstein.de>"]
 [dependencies]
 pest = "1"
 pest_derive = "1"
+boringssl = "0.0.5"
 
 [lib]
 name = "railgun_core"

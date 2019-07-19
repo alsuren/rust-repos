@@ -24,6 +24,7 @@ sha3 = "0.8.1"
 env_logger = { version = "0.6.0", default-features = false }
 rocksdb = "0.10.1"
 hex = "0.3.2"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "privacypass-rs-client"

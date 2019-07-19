@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 qmetaobject = { git = "https://github.com/woboq/qmetaobject-rs.git"}
+boringssl = "0.0.5"

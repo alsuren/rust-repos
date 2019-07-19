@@ -12,6 +12,7 @@ edition = "2018"
 os_pipe = "0.8.0"
 shared_child = "0.3.3"
 lazycell = "1.2.0"
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2.43"

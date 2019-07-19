@@ -11,6 +11,7 @@ crate-type = ["staticlib"]
 rlibc = "1.0.0"
 cpuio = "*"
 scancode = "*"
+boringssl = "0.0.5"
 
 #wyłączamy unwinding w naszym kernelu dla obu trybów
 [profile.dev]

@@ -6,6 +6,7 @@ authors = ["Michael <v.mi@gmx.de>"]
 [dependencies]
 lazy_static = "*"
 num-traits = "*"
+boringssl = "0.0.5"
 
 [lib]
 path = "src/lib.rs"

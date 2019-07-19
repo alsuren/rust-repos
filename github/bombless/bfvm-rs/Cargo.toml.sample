@@ -2,6 +2,9 @@
 name = "bfvm"
 version = "0.0.1"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.bf]
 path = "bf"
 

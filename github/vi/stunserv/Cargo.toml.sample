@@ -9,6 +9,7 @@ stun_codec = "0.1.12"
 bytecodec = "0.4.11"
 structopt = "0.2.15"
 failure = "0.1.5"
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = "s"

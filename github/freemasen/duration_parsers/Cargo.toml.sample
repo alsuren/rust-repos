@@ -14,6 +14,7 @@ bench = ["nom", "pest", "combine", "hand"]
 duration = {path = "./crates/duration"}
 random_durations = {path = "./crates/random_durations"}
 lazy_static = "1"
+boringssl = "0.0.5"
 
 [dependencies.nom_duration_parser]
 path = "./crates/nom_duration_parser"

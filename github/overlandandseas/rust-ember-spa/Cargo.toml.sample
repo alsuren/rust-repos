@@ -13,6 +13,7 @@ redis = "0.8.0"
 r2d2 = "*"
 r2d2_redis = "*"
 rustc-serialize = "0.3.24"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

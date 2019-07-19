@@ -9,6 +9,7 @@ description = "A rustfmt plugin for xi"
 [dependencies]
 serde = "1.0"
 serde_derive = "1.0"
+boringssl = "0.0.5"
 
 [dependencies.xi-plugin-lib]
 git = "https://github.com/xi-editor/xi-editor"

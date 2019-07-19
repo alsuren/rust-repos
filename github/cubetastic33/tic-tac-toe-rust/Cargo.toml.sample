@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 rand = "0.6.5"
 azul = { git = "https://github.com/maps4print/azul", rev = "8d3ce24d91d75588379c67b9a0176919f22799f7" }
+boringssl = "0.0.5"

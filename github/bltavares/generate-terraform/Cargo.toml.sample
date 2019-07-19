@@ -5,6 +5,7 @@ authors = ["Bruno Tavares <bruno.exz@gmail.com>"]
 
 [dependencies]
 hyper = "0.5.1"
+boringssl = "0.0.5"
 
 [dependencies.cloudflare]
 git = "https://github.com/bltavares/cloudflare-rs"

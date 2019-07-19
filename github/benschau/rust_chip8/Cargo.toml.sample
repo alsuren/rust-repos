@@ -6,6 +6,7 @@ authors = ["Benson Chau <bchau3440@gmail.com>"]
 [dependencies]
 rand = "0.5"
 clap = { version = "~2.32", features = ["yaml"] }
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.4.1"

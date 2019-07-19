@@ -24,6 +24,7 @@ travis-ci = { repository = "measlytwerp/glue-rs" }
 
 [dependencies]
 paste = "0.1"
+boringssl = "0.0.5"
 
 [build-dependencies]
 tera = "1.0.0-beta.6"

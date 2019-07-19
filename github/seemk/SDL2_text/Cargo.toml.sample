@@ -10,6 +10,9 @@ authors = ["github.com/seemk"]
 name = "sdl2_text"
 path = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sdl2]
 
 git = "https://github.com/AngryLawyer/rust-sdl2"

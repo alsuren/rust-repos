@@ -11,4 +11,5 @@ edition = "2018"
 clap = "*"
 regex = "*"
 folib = { path = "folib" }
+boringssl = "0.0.5"
 

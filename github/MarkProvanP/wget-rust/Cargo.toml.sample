@@ -2,3 +2,6 @@
 name = "wget-rust"
 version = "0.1.0"
 authors = ["Mark Provan <markprovanp@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

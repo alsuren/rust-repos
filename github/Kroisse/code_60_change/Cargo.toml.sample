@@ -7,3 +7,6 @@ build = "build.rs"
 [[bin]]
 name = "change"
 path = "src/bin.rs"
+
+[dependencies]
+boringssl = "0.0.5"

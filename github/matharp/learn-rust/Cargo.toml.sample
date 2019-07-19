@@ -4,3 +4,6 @@ name = "hello-world"
 version = "0.0.1"
 authors = ["Prathamesh Shivade <p.shivade@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

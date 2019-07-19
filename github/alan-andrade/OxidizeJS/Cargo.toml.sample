@@ -4,5 +4,8 @@ name = "OxidizeJS"
 version = "0.0.1"
 authors = ["Alan Andrade <alan.andradec@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.glob]
 git = "https://github.com/rust-lang/glob.git"

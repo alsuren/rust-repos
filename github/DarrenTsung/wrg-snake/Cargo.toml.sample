@@ -18,6 +18,7 @@ wasm-rgame = { path = "../wasm-rgame" }
 wasm-rgame-ui = { path = "../wasm-rgame-ui" }
 wrg-2d = { path = "./wrg-2d" }
 circular-queue = "0.2"
+boringssl = "0.0.5"
 
 [profile.release]
 # Include function names in the `.wasm` for better debugging and

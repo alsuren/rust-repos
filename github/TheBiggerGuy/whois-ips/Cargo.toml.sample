@@ -9,6 +9,7 @@ hyper = "~0.10"
 xml-rs = "~0.3.0"
 clippy = {version = "*", optional = true}
 iprange = {git = "https://github.com/TheBiggerGuy/iprange-rs", branch = "wip"}
+boringssl = "0.0.5"
 
 [features]
 default = []

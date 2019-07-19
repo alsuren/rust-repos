@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 dynarmic-sys = { path = "dynarmic-sys" }
 byteorder = "1.3"
+boringssl = "0.0.5"

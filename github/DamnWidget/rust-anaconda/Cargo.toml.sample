@@ -12,6 +12,7 @@ include = ["src/*.rs", "Cargo.toml"]
 libc = "0.2.14"
 rustfmt = "*"
 racer = "*"
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib", "rlib"]

@@ -5,3 +5,6 @@ authors = ["David Hewson <dev@daveid.co.uk>"]
 
 [features]
 default = []
+
+[dependencies]
+boringssl = "0.0.5"

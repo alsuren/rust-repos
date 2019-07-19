@@ -8,6 +8,7 @@ iron = ">= 0.3, <= 0.4"
 cookie-fe = { git = "https://github.com/kardeiz/cookie-fe", optional = true }
 rand = { version = "0.3.12", optional = true }
 rustc-serialize = { version = "0.3", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["helpers"]

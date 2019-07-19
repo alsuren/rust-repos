@@ -40,3 +40,4 @@ pvm-cfg = { path = "modules/pvm-cfg" }
 pvm-data = { path = "modules/pvm-data" }
 pvm-views = { path = "modules/pvm-views" }
 transactions = { path = "modules/transactions-rs", features = ["lending"]}
+boringssl = "0.0.5"

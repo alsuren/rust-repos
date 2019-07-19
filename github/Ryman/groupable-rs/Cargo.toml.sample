@@ -8,3 +8,6 @@ description = "Easily aggregate groups of values from key-value Iterators"
 license = "MIT"
 homepage = "https://github.com/ryman/groupable-rs"
 repository = "https://github.com/ryman/groupable-rs"
+
+[dependencies]
+boringssl = "0.0.5"

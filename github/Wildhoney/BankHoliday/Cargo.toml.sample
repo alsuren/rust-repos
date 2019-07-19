@@ -11,6 +11,7 @@ authors = ["Adam Timberlake <adam.timberlake@gmail.com>"]
 
 [dependencies]
 ical = "0.2.0"
+boringssl = "0.0.5"
 
 [dependencies.curl]
 git = "https://github.com/carllerche/curl-rust"

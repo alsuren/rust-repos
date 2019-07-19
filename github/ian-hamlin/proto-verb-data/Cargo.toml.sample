@@ -10,3 +10,4 @@ members = ["protocol"]
 [dependencies]
 protobuf = "2.4.2"
 protocol = { path = "protocol" }
+boringssl = "0.0.5"

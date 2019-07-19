@@ -5,6 +5,7 @@ authors = ["Gopiandcode (https://github.com/gopiandcode)"]
 
 [dependencies]
 dependent_view = {version = "1", optional = true }
+boringssl = "0.0.5"
 
 [features]
 views = ["dependent_view"]

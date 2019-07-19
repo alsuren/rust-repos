@@ -14,6 +14,7 @@ urlencoded = "*"
 url = "*"
 rustc-serialize = "*"
 getopts = "*"
+boringssl = "0.0.5"
 
 [dependencies.postgres]
 version = "*"

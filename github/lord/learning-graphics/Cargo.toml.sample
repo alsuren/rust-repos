@@ -4,6 +4,9 @@ name = "learning-graphics"
 version = "0.0.1"
 authors = ["Robert Lord <robert@lord.io>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.gfx]
 git = "http://github.com/gfx-rs/gfx-rs"
 

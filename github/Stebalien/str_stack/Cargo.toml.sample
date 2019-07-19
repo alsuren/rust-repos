@@ -12,3 +12,6 @@ license = "MIT/Apache-2.0"
 keywords = ["string", "dst", "stack"]
 repository = "https://github.com/Stebalien/str_stack"
 documentation = "https://stebalien.github.io/str_stack/str_stack/"
+
+[dependencies]
+boringssl = "0.0.5"

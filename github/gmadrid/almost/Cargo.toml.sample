@@ -6,3 +6,4 @@ authors = ["George Madrid <gmadrid@gmail.com>"]
 [dependencies]
 file_tools = { path = "../file_tools" }
 image_hash = { path = "../image_hash" }
+boringssl = "0.0.5"

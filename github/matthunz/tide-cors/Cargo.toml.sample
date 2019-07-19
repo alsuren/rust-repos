@@ -13,6 +13,7 @@ name = "tide_cors"
 display_derive = "0.0.0"
 futures-preview = "0.3.0-alpha.16"
 tide = "0.2.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 http-service = "0.2.0"

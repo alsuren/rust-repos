@@ -11,6 +11,7 @@ tabwriter = { git = "https://github.com/BurntSushi/tabwriter.git" }
 failure = { git = "https://github.com/rust-lang-nursery/failure.git" }
 syntect = { path = "../syntect" }
 pager = { version = "*" }
+boringssl = "0.0.5"
 
 [target.'cfg(linux)'.dependencies]
 # syntect = { version = "*", optional = true }

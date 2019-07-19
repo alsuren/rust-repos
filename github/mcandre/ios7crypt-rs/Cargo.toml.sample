@@ -15,6 +15,7 @@ tinyrick = { version = "0.0.9", optional = true }
 tinyrick_extras = { version = "0.0.3", optional = true }
 zip = { version = "0.4.2", optional = true }
 glob = { version = "0.2.11", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.7.1"

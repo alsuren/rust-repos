@@ -7,6 +7,7 @@ authors = ["arathunku <arathunku@gmail.com>"]
 clap = {version = "2.29", features = ["yaml"]}
 chrono = "0.4"
 regex = "0.2"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "rhctrl"

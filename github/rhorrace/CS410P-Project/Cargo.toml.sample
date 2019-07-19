@@ -6,6 +6,7 @@ authors = ["rhorrace <rhorrace@pdx.edu>"]
 [dependencies]
 rand = "0.3"
 cargonauts-cli = "0.2.3"
+boringssl = "0.0.5"
 
 [lib]
 name = "library"

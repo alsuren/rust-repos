@@ -7,3 +7,6 @@ repository = "https://github.com/rahulg/brainfuck-rs"
 readme = "README.md"
 license = "MIT"
 authors = ["Rahul AG <r@hul.ag>"]
+
+[dependencies]
+boringssl = "0.0.5"

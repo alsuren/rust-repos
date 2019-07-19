@@ -7,3 +7,6 @@ authors = [ "Dave Slutzkin <daveslutzkin@fastmail.fm>" ]
 [[bin]]
 
 name = "robot_with_rust"
+
+[dependencies]
+boringssl = "0.0.5"

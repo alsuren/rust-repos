@@ -35,6 +35,7 @@ tokio-io = "0.1.1"
 tokio-rustls = "0.5.0" 
 untrusted = "0.6.1"
 webpki = "0.18.0-alpha"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.5.10"

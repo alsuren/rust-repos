@@ -5,6 +5,7 @@ version = "0.1.0"
 
 [dependencies]
 libc = "0.2.15"
+boringssl = "0.0.5"
 
 [dependencies.space-toml]
 path = "../space-toml"

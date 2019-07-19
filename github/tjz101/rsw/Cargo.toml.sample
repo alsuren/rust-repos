@@ -8,6 +8,7 @@ regex = "0.2"
 yaml-rust = "0.3"
 comrak = "0.2.5"
 clap = {version="2.29.0", features=["yaml"]}
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -7,3 +7,4 @@ authors = ["aoyagikouhei"]
 time = "*"
 rand = "*"
 url = {version="*", features=["query_encoding"]}
+boringssl = "0.0.5"

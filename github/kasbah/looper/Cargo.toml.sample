@@ -5,3 +5,4 @@ authors = ["Kaspar Emanuel <kaspar.emanuel@gmail.com>"]
 
 [dependencies]
 jack = { git = "https://github.com/RustAudio/rust-jack.git" }
+boringssl = "0.0.5"

@@ -27,3 +27,6 @@ readme = "README.md"
 [build-dependencies]
 pkg-config = "^0.3.14"
 bindgen = "*"
+
+[dependencies]
+boringssl = "0.0.5"

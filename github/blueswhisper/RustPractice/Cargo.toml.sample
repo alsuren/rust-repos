@@ -197,3 +197,6 @@ name="struct_mem_move"
 
 [[example]]
 name="same_method_name"
+
+[dependencies]
+boringssl = "0.0.5"

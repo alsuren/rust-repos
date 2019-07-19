@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 darkly = { path = "../version-controlled/darkly/scanner" }
+boringssl = "0.0.5"
 
 [patch.crates-io]
 darkly-macros = { path = "../version-controlled/darkly/macros" }

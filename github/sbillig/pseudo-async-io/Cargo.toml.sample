@@ -12,3 +12,4 @@ keywords = ["AsyncRead", "AsyncWrite", "Read", "Write", "futures"]
 
 [dependencies]
 futures-preview = "0.3.0-alpha.13"
+boringssl = "0.0.5"

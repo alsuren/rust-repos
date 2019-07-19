@@ -26,3 +26,4 @@ diesel_codegen = { git = "https://github.com/jeremyletang/diesel", default-featu
 r2d2 = "0.7.0"
 r2d2-diesel = { git = "https://github.com/jeremyletang/r2d2-diesel" }
 uuid = { version = "0.2", features = ["v4"] }
+boringssl = "0.0.5"

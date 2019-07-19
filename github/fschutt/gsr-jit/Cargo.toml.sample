@@ -8,6 +8,7 @@ libc = "0.2.42"
 page_size = "0.4.1"
 syn = { version = "0.14.2", features = ["full", "extra-traits"] }
 winapi = { version = "0.3.5", features = ["memoryapi"] }
+boringssl = "0.0.5"
 # quine-mc_cluskey - minimize boolean operations
 
 [dev-dependencies]

@@ -18,6 +18,7 @@ serde = "1"
 imgui = {git = "https://github.com/Gekkio/imgui-rs"}
 imgui-gfx-renderer = {git = "https://github.com/Gekkio/imgui-rs"}
 imgui-glutin-support = {git = "https://github.com/Gekkio/imgui-rs"}
+boringssl = "0.0.5"
 
 [profile.dev.overrides."*"]
 opt-level = 3

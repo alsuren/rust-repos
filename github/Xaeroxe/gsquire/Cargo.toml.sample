@@ -7,3 +7,4 @@ authors = ["Jacob Kiesel <kieseljake@gmail.com>"]
 rand = "0.5"
 discord = { git = "https://github.com/tinaun/discord-rs", rev = "5167a3f" }
 chrono = { version = "0.4", features = ["serde"] }
+boringssl = "0.0.5"

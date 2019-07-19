@@ -4,6 +4,7 @@ version = "0.0.1"
 authors = ["Hayden Pope <stilbruch39@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

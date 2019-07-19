@@ -10,6 +10,7 @@ clap = "*"
 css-color-parser = "*"
 failure = "*"
 rand = "0.6"
+boringssl = "0.0.5"
 
 [dev-dependencies.cargo-husky]
 version = "1"

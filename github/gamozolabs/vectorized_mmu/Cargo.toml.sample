@@ -9,6 +9,7 @@ vectorized = { path = "../vectorized" }
 safecast = { path = "../safecast" }
 falkasm = { path = "../falkasm" }
 conststore = { path = "../conststore" }
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

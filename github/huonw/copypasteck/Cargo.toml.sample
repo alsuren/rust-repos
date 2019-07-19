@@ -16,3 +16,6 @@ conditions or contents.
 [lib]
 name = "copypasteck"
 plugin = true
+
+[dependencies]
+boringssl = "0.0.5"

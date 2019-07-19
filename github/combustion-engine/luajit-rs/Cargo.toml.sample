@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Aaron Trent <novacrazy@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.luajit-sys]
 path = "../luajit-sys"

@@ -12,6 +12,7 @@ serde = "0.7.0"
 serde_json = "0.7.0"
 serde_macros = "0.7.2"
 toml = "0.1.28"
+boringssl = "0.0.5"
 
 [dependencies.mxfedtest]
 git = "https://github.com/erikjohnston/mxfedtest.git"

@@ -8,6 +8,9 @@ name = "cortest"
 repository = "https://github.com/japaric/cortest"
 version = "0.1.0"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.compiler_builtins]
 features = ["mem"]
 git = "https://github.com/rust-lang-nursery/compiler-builtins"

@@ -6,3 +6,6 @@ description = "A little utility macro"
 repository = "https://github.com/acdenisSK/fake_inheritance"
 license = "MIT"
 documentation = "https://docs.rs/fake_inheritance"
+
+[dependencies]
+boringssl = "0.0.5"

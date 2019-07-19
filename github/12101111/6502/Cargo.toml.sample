@@ -12,6 +12,7 @@ edition = "2018"
 [dependencies]
 bitflags = "1"
 log = { version = "0.4", default-features = false }
+boringssl = "0.0.5"
 
 [features]
 disasm = [] 

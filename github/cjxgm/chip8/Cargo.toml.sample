@@ -6,4 +6,5 @@ authors = ["Giumo X. Clanjor (哆啦比猫/兰威举) <cjxgm@126.com>"]
 [dependencies]
 chip = { path = "src/chip" }
 term-oss = { path = "src/term-oss" }
+boringssl = "0.0.5"
 

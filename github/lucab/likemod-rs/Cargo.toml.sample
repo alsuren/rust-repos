@@ -25,6 +25,7 @@ errno = "0.2"
 error-chain = {version = "0.12", default-features = false}
 futures = {version = "0.1", optional = true}
 tokio = {version = "0.1", optional = true}
+boringssl = "0.0.5"
 
 [features]
 async = ["futures", "tokio"]

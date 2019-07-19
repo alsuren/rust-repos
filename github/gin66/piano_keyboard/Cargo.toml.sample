@@ -12,6 +12,7 @@ readme = "README.md"
 documentation = "https://docs.rs/releases/search?query=piano_keyboard"
 
 [dependencies]
+boringssl = "0.0.5"
 
 
 [dev-dependencies]

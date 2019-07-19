@@ -5,6 +5,7 @@ authors = ["jshrake <JustinShrake@gmail.com>"]
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 
 [target.i686-pc-windows-gnu.dependencies.winapi]
 git = "https://github.com/jshrake/winapi-rs"

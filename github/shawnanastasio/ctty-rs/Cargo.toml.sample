@@ -14,3 +14,6 @@ cc = "1.0"
 [target.'cfg(any(target_os = "freebsd", target_os = "macos"))'.dependencies]
 libc = "0.2.39"
 
+[dependencies]
+boringssl = "0.0.5"
+

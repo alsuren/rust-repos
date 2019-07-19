@@ -6,6 +6,7 @@ authors = ["Kevin Darlington <kevin@outroot.com>"]
 
 [dependencies]
 rustcxx_plugin = { git = "https://github.com/google/rustcxx.git" }
+boringssl = "0.0.5"
 
 [build-dependencies.rustcxx_codegen]
 git = "https://github.com/google/rustcxx.git"

@@ -10,3 +10,6 @@ repository = "https://github.com/chain-rule/recommender"
 readme = "README.md"
 categories = ["algorithms", "science"]
 keywords = ["recommender"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -5,6 +5,7 @@ authors = ["notkild <notkild@gmail.com>"]
 
 [dependencies]
 clap = "2.18"
+boringssl = "0.0.5"
 
 [dependencies.wydyd]
 path = "wydyd"

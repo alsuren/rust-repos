@@ -15,3 +15,4 @@ path = "src/sqs_receiver.rs"
 docopt = "0.7"
 rusoto = {version = "0.23", features = ["sqs"]}
 rustc-serialize = "0.3"
+boringssl = "0.0.5"

@@ -7,3 +7,6 @@ authors = ["Charles Hubain <github@haxelion.eu>"]
 [profile.release]
 opt-level = 3
 debug = false
+
+[dependencies]
+boringssl = "0.0.5"

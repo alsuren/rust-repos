@@ -9,6 +9,7 @@ hal = { path = "hal" }
 allocator = { path = "allocator" }
 kernel = { path = "kernel" }
 hal_alloc = { path = "hal_alloc" }
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

@@ -5,3 +5,4 @@ authors = ["Colin Heathman <Colin.Heathman@unbc.ca>"]
 
 [dependencies]
 oracle = { version = "0.1.0", features = ["chrono"] }
+boringssl = "0.0.5"

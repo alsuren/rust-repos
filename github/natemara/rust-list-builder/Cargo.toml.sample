@@ -12,3 +12,6 @@ readme = "README.md"
 keywords = ["macro", "syntax-extension"]
 
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

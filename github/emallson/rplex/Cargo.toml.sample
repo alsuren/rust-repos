@@ -7,6 +7,7 @@ links = "static=cplex"
 
 [dependencies]
 libc = "0.2.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 glob = "0.2"

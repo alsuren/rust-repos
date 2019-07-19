@@ -6,6 +6,9 @@ license = "MIT non-military non-spy"
 description = "xml support for rust-serde"
 repository = "https://github.com/oli-obk/serde-xml"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.serde]
 path = "D:\\rust-serde\\"
 

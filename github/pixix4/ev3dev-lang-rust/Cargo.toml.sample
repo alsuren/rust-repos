@@ -17,3 +17,4 @@ travis-ci = { repository = "pixix4/ev3dev-lang-rust", branch = "master" }
 maintenance = { status = "experimental" }
 
 [dependencies]
+boringssl = "0.0.5"

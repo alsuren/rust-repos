@@ -18,6 +18,7 @@ pango = "^0"
 glib = "^0"
 chrono = "^0"
 cairo-rs = { version = "^0", features = ["png"] }
+boringssl = "0.0.5"
 
 [features]
 default = ["gtk_3_22_30", "futures-stable"]

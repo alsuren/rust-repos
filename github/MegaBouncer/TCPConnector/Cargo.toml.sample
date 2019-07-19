@@ -7,3 +7,4 @@ authors = ["Victor Koenders <victor.koenders@gmail.com>"]
 shared = { path = "../libs/shared" }
 base64 = "*"
 mio = "*"
+boringssl = "0.0.5"

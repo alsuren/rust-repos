@@ -11,6 +11,7 @@ crate_type = ["dylib", "rlib"]
 log = "0.3"
 env_logger = "0.3"
 syslog-ng-common = "0.8.0"
+boringssl = "0.0.5"
 
 [dependencies.correlation]
 path = "correlation"

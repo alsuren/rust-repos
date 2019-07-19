@@ -5,6 +5,7 @@ authors = ["zhoujun <572459439@qq.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "edit_distence_rust" # 最终生存的so文件命名为 "lib{name}.so"

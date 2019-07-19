@@ -13,6 +13,7 @@ structopt = "*"
 tar = "*"
 walkdir = "*"
 zip = { version = "*", features = ["deflate-zlib"], default-features = false }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

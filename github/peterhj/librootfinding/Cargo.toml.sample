@@ -12,3 +12,4 @@ dualnum = { path = "../libdualnum" }
 
 [dependencies]
 arithmetic = { path = "../libarithmetic" }
+boringssl = "0.0.5"

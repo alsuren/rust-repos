@@ -2,3 +2,6 @@
 name = "rust_cp"
 version = "0.1.0"
 authors = ["Zachary Winter <plasticcaz@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,6 +8,7 @@ rand = "*"
 sdl2 = "*"
 byteorder = "*"
 hprof = "*"
+boringssl = "0.0.5"
 
 [dependencies.clippy]
 optional = true

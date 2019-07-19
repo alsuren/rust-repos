@@ -12,3 +12,6 @@ version = "0.1.2"
 [badges]
 [badges.travis-ci]
 repository = "fitzgen/peeking_take_while"
+
+[dependencies]
+boringssl = "0.0.5"

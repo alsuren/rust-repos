@@ -9,3 +9,4 @@ proc-macro = true
 
 [dependencies]
 movie_utils = {path = "../movie_utils"}
+boringssl = "0.0.5"

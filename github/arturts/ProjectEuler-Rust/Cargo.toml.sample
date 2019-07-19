@@ -6,3 +6,6 @@ authors = ["Artur de Oliveira Tsuda <artur.o.tsuda@gmail.com>"]
 [lib]
 name = "project_euler"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

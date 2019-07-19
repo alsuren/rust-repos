@@ -5,3 +5,4 @@ authors = ["Liam <liamzdenek@gmail.com>"]
 
 [dependencies]
 engine = { path = "./components/engine" }
+boringssl = "0.0.5"

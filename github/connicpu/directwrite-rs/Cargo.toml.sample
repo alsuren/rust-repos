@@ -34,6 +34,9 @@ features = ["dwrite", "winbase", "winnls"]
 version = "0.3.0-alpha1"
 path = "../dcommon"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [package.metadata.docs.rs]
 default-target = "x86_64-pc-windows-msvc"
 

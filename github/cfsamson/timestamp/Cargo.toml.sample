@@ -5,6 +5,7 @@ authors = ["Carl Fredrik Samson <cf@samson.no>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 chrono = "0.3"

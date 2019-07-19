@@ -5,6 +5,7 @@ authors = ["Michael Jung <MichaelWJung@users.noreply.github.com>"]
 
 [dependencies]
 app_dirs = "1.1.1"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.31"

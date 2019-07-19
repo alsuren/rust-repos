@@ -8,3 +8,4 @@ actix = "*"
 actix-web = { git = "https://github.com/actix/actix-web.git" }
 env_logger = "*"
 futures = "*"
+boringssl = "0.0.5"

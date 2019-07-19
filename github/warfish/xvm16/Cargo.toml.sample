@@ -11,6 +11,7 @@ time = "*"
 lazy_static = "*"
 hypervisor_framework = { git = "https://github.com/warfish/Hypervisor-framework-rs" }
 capstone = { git = "https://github.com/richo/capstone-rs" }
+boringssl = "0.0.5"
 
 [features]
 default = []

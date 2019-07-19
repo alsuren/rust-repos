@@ -5,6 +5,7 @@ authors = ["md <mdenchev@users.noreply.github.com>"]
 
 [dependencies]
 lazy_static = "1.0"
+boringssl = "0.0.5"
 
 [dependencies.nom]
 version = "^3.1"

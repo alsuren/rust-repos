@@ -6,3 +6,6 @@ authors = ["August <augustt198@gmail.com>"]
 
 description = "A boolean expression parser and evaluator"
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

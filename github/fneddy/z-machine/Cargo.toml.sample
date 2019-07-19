@@ -6,4 +6,5 @@ authors = ["Eduard Stefes <eduard.stefes@swissbit.com>"]
 [dependencies]
 qml = {  path = "../qml-rust/" }
 lazy_static = "*"
+boringssl = "0.0.5"
 #qml = "*"

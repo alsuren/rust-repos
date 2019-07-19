@@ -11,3 +11,4 @@ with-serde = ["serde", "serde_derive"]
 [dependencies]
 serde = { version = "1.0.78", optional = true }
 serde_derive = { version = "1.0.78", optional = true }
+boringssl = "0.0.5"

@@ -5,3 +5,4 @@ authors = ["red75prime <red75prim@gmail.com>"]
 
 [dependencies]
 error-chain = {version="0.9", default-features = false}
+boringssl = "0.0.5"

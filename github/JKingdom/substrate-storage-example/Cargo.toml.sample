@@ -9,3 +9,4 @@ environmental = { version = "~1.0" }
 parity-codec = { version = "2.1"}
 
 substrate-primitives = { git = "https://github.com/paritytech/substrate" }
+boringssl = "0.0.5"

@@ -12,6 +12,7 @@ path = "src/main.rs"
 conrod = "*"
 notify = "*"
 yaml-rust = "*"
+boringssl = "0.0.5"
 
 [features]
 default = [ "glium" ]

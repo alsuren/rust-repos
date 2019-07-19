@@ -9,6 +9,7 @@ regex_macros = "*"
 docopt = "*"
 docopt_macros = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 git = "https://github.com/th0br0/rust-sdl2"

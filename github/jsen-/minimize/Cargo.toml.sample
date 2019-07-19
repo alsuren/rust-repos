@@ -8,3 +8,4 @@ edition = "2018"
 winapi = { version = "0.3", features = ["winuser"] }
 
 [dependencies]
+boringssl = "0.0.5"

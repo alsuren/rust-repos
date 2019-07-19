@@ -22,6 +22,7 @@ pango = "0.2.0"
 glib = "0.3"
 gio = "0.2"
 gdk = "0.6" 
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.2"

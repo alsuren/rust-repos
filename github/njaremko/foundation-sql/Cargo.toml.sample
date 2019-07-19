@@ -4,6 +4,7 @@ version = "0.0.1"
 authors = ["Nathan Jaremko <njaremko@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.*"

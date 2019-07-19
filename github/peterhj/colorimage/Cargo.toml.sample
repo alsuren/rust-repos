@@ -15,3 +15,4 @@ cc = { path = "../cc-rs" }
 [dependencies]
 byteorder = "*"
 pillowimage = { path = "../pillowimage" }
+boringssl = "0.0.5"

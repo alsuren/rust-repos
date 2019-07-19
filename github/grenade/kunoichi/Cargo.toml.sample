@@ -5,3 +5,4 @@ authors = ["Rob Thijssen <rthijssen@gmail.com>"]
 
 [dependencies]
 daemon = { version = "0.0.7", git = "https://github.com/bozaro/daemon-rs" }
+boringssl = "0.0.5"

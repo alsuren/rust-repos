@@ -7,3 +7,4 @@ authors = ["Joe Corcoran <joe@corcoran.io>"]
 clap = { version = "~2.10", features = ["wrap_help", "suggestions"] }
 hyper = "~0.9"
 reroute = "*"
+boringssl = "0.0.5"

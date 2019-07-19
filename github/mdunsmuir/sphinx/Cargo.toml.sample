@@ -5,3 +5,4 @@ authors = ["Michael Dunsmuir <mjdunsmuir@gmail.com>"]
 
 [dependencies]
 persistent_rope = { path = "../persistent_rope" }
+boringssl = "0.0.5"

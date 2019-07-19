@@ -5,6 +5,7 @@ authors = ["victor.koenders <victor.koenders@gmail.com>"]
 build = "build.rs"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

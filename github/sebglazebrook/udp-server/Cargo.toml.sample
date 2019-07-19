@@ -5,3 +5,4 @@ authors = ["sebastian"]
 
 [dependencies]
 ctrlc = { version = "3.0", features = ["termination"]  }
+boringssl = "0.0.5"

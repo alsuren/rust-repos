@@ -7,3 +7,4 @@ authors = ["Ted <ted@wurm>"]
 [dependencies]
 rand = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

@@ -13,6 +13,7 @@ nrf52832-hal = "0.7.0"
 embedded-hal-spy = "0.0.3"
 nrf52832-pac = "0.6.0"
 embedded-hal = "0.2.2"
+boringssl = "0.0.5"
 
 [profile.release]
 codegen-units = 1 # better optimizations

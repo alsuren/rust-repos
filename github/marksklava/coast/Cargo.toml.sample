@@ -16,3 +16,4 @@ rand = "*"
 dotenv = "*"
 diesel = { version = "*", default-features = false, features = ["postgres"] }
 r2d2 = "*"
+boringssl = "0.0.5"

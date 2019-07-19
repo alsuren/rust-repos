@@ -34,3 +34,6 @@ gcc = "= 0.3.35"
 # version. This is only for building the application, so dependencies of
 # Filebuffer are not affected by this override.
 time = "= 0.1.35"
+
+[dependencies]
+boringssl = "0.0.5"

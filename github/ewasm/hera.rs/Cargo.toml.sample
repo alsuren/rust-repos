@@ -9,3 +9,6 @@ description = "Hera rewritten in Rust"
 [lib]
 name = "hera"
 crate-type = ["staticlib", "dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

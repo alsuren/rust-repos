@@ -11,5 +11,6 @@ tokio-async-await = "0.1.4"
 tygres-macros = { git = "https://github.com/rmanoka/tygres-macros",  branch = "master"}
 postgres = { git = "https://github.com/sfackler/rust-postgres", rev="04bd98e7edb238511661b311c725a176012bca6a" }
 tokio-postgres = { git = "https://github.com/sfackler/rust-postgres", rev="04bd98e7edb238511661b311c725a176012bca6a" }
+boringssl = "0.0.5"
 # "0.13.2"
 # tokio-postgres = "0.3.0"

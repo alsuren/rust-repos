@@ -5,6 +5,7 @@ authors = ["Thomas Cheng <thomascheng1998@googlemail.com>"]
 
 [dependencies]
 java-model = { git = "https://github.com/tomc1998/rs-java-model" }
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

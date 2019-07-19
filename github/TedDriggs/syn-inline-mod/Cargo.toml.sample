@@ -11,6 +11,7 @@ description = "Inlines modules in Rust source code for source analysis"
 
 [dependencies]
 syn = { version = "0.15.26", features = ["full", "visit-mut"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quote = "0.6"

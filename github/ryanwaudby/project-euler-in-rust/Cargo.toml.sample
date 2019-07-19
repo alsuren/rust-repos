@@ -11,3 +11,6 @@ name = "problem_002"
 
 [[bin]]
 name = "problem_003"
+
+[dependencies]
+boringssl = "0.0.5"

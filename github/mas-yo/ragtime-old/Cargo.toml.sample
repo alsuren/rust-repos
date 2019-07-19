@@ -7,6 +7,7 @@ authors = ["myoshida <myoshida@aiming-inc.com>"]
 env_logger = "0.4.3"
 log = "0.3.7"
 byteorder = "1.0.0"
+boringssl = "0.0.5"
 
 [workspace]
 members = ["ragtime_sample1"]

@@ -3,3 +3,6 @@ name = "tls"
 version = "0.1.0"
 authors = ["Jens <jens@nockert.se>"]
 build = "build.rs"
+
+[dependencies]
+boringssl = "0.0.5"

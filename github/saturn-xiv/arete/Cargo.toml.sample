@@ -67,6 +67,7 @@ regex = "1"
 clap = "2"
 mime_guess = "2.0.0-alpha.6"
 jsonwebtoken = "5" # lock by ring
+boringssl = "0.0.5"
 
 # lock by ring
 [dependencies.cookie]

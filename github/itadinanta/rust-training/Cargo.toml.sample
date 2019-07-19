@@ -20,3 +20,6 @@ path = "src/functions.rs"
 [[bin]]
 name = "threads"
 path = "src/threads.rs"
+
+[dependencies]
+boringssl = "0.0.5"

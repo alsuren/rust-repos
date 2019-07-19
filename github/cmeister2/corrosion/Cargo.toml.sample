@@ -13,3 +13,4 @@ categories = ["game-engines"]
 travis-ci = { repository = "cmeister2/corrosion", branch = "master" }
 
 [dependencies]
+boringssl = "0.0.5"

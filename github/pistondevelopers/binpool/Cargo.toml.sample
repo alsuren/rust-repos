@@ -12,3 +12,6 @@ homepage = "https://github.com/PistonDevelopers/binpool"
 [lib]
 name = "binpool"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

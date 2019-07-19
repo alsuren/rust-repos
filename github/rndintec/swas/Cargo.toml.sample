@@ -24,6 +24,7 @@ tempdir = "0.3.7"
 db-key = "0.1.0"
 spinner = "0.4.0"
 bitcoin-bech32 = "0.8.0"
+boringssl = "0.0.5"
 
 [dependencies.exonum_bitcoinrpc_zec_exp]
 git = "https://github.com/rndintec/zcash-bitcoinrpc.git"

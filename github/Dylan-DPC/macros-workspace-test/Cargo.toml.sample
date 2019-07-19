@@ -12,3 +12,4 @@ edition = "2018"
 
 [dependencies]
 subcrate = { path = "./subcrate" }
+boringssl = "0.0.5"

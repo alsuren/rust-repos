@@ -26,6 +26,7 @@ colored="1.4.*"
 scoped-pool="1.0.0"
 pbr={git = "https://github.com/a8m/pb"}
 rand="*"
+boringssl = "0.0.5"
 
 [dependencies.serde]
 version = "1.0.*"

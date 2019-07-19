@@ -6,6 +6,7 @@ authors = ["prima"]
 [dependencies]
 rand = "*"
 num = "*"
+boringssl = "0.0.5"
 
 [features]
 nightly_build = []

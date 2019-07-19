@@ -23,6 +23,9 @@ no-optimized-legacy-encoding = [
 	"encoding-index-tradchinese/no-optimized-legacy-encoding",
 ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.encoding-types]
 version = "0.2"
 path = "src/types"

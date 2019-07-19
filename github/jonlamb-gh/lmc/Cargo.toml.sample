@@ -12,6 +12,7 @@ pwm-pca9685 = "0.1.0"
 nb = "0.1.1"
 ssd1306 = { path = "./deps/ssd1306" }
 embedded-graphics = { path = "./deps/embedded-graphics/embedded-graphics" }
+boringssl = "0.0.5"
 
 [dependencies.cortex-m]
 version = "0.5.8"

@@ -7,6 +7,7 @@ authors = ["Dario Ostuni <dario.ostuni@gmail.com>"]
 wyvern-core = { path = "wyvern-core" }
 wyvern-cpu = { path = "wyvern-cpu" }
 wyvern-vulkan = { path = "wyvern-vulkan" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 clap = "2.31"

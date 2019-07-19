@@ -12,6 +12,7 @@ lyon = "0.11"
 conv = "0.3" # this is the version used by gerber-types
 log = "0.4"
 env_logger = "0.6"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 gerber-types = { path = "../gerber-types-rs" }

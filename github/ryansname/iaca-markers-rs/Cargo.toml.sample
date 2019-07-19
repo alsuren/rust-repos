@@ -9,3 +9,6 @@ description = "This library includes the IACA assembly commands to profile your 
 
 keywords = ["iaca", "intel", "analyzer"]
 license = "Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

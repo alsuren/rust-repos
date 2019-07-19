@@ -6,3 +6,4 @@ authors = ["Tim McNamara <code@timmcnamara.co.nz>"]
 [dependencies]
 notcoreutils-true = { path = "notcoreutils-true" }
 notcoreutils-false = { path = "notcoreutils-false" }
+boringssl = "0.0.5"

@@ -18,6 +18,7 @@ error-chain = {version = "0.12", default-features = false}
 libc = "0.2"
 nix = "0.11"
 openat = "0.1.16"
+boringssl = "0.0.5"
 
 [package.metadata.release]
 sign-commit = true

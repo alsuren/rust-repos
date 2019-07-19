@@ -2,3 +2,6 @@
 name = "threads_test"
 version = "0.1.0"
 authors = ["Vasily Kirichenko <vaskir@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

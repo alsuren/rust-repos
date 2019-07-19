@@ -7,6 +7,7 @@ build = "build.rs"
 [dependencies]
 libc = "0.2"
 hyper = "0.7.0"
+boringssl = "0.0.5"
 
 [dependencies.libxml]
 git = "https://github.com/Primordus/rust-libxml.git"

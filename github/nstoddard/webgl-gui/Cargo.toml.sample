@@ -17,6 +17,7 @@ futures = "0.1.26"
 js-sys = "0.3.18"
 webgl-wrapper = { git = "https://github.com/nstoddard/webgl-wrapper" }
 wasm-stopwatch = "0.1.0"
+boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.18"

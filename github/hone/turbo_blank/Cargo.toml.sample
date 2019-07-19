@@ -7,5 +7,8 @@ authors = ["Godfrey Chan <godfreykfc@gmail.com>"]
 
 crate-type = ["cdylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.helix]
 git = "https://github.com/tildeio/helix.git"

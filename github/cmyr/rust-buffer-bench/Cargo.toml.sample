@@ -6,6 +6,7 @@ authors = ["Colin Rofls <colin@cmyr.net>"]
 [dependencies]
 xi-rope = "0.2"
 ropey = "0.9.2"
+boringssl = "0.0.5"
 
 [dependencies.xi_rope_master]
 path = "./xi_rope_master"

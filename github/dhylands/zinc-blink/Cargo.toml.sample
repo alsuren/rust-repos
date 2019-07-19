@@ -10,3 +10,4 @@ mcu_stm32f4 = ["zinc/mcu_stm32f4"]
 zinc = { path =  "../zinc" }
 macro_zinc = { path = "../zinc/macro_zinc" }
 rust-libcore = "*"
+boringssl = "0.0.5"

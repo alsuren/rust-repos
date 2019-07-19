@@ -18,6 +18,7 @@ tower-http = { git = "https://github.com/tower-rs/tower-http" }
 tower-service = { git = "https://github.com/tower-rs/tower" }
 mysql_async = "0.14.2"
 lazy_static = "1.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 tower-grpc-build = { git = "https://github.com/tower-rs/tower-grpc" }

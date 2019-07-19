@@ -5,6 +5,7 @@ authors = ["Xudong Huang <huangxu008@hotmail.com>"]
 
 [dependencies]
 token_id-plugins = { path = "src/plugins" }
+boringssl = "0.0.5"
 
 [workspace]
 members = ["src/plugins"]

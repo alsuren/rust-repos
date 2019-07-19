@@ -13,3 +13,6 @@ license = "MIT/Apache-2.0"
 [features]
 default = ["ops"]
 ops = []
+
+[dependencies]
+boringssl = "0.0.5"

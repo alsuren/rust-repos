@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Jez Cope <j.cope@erambler.co.uk>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "rustfrompy"

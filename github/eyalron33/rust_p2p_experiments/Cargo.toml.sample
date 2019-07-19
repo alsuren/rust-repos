@@ -6,3 +6,4 @@ authors = ["eyalron33 <eyalron33@gmail.com>"]
 [dependencies]
 rustc-serialize = "0.3.22"
 tox = { git = "https://github.com/zetok/tox/" }
+boringssl = "0.0.5"

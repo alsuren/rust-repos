@@ -11,6 +11,7 @@ path = "ui_test/ui_main.rs"
 [dependencies]
 log = "0.4"
 simple_logger = "0.5.0"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.31"

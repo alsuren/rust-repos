@@ -5,6 +5,7 @@ authors = ["Will Hakes <info@cwilliamhakes.com>"]
 
 [dependencies]
 rocket = "0.4.0-rc.1"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.4.0-rc.1"

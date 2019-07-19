@@ -15,6 +15,7 @@ crate-type   = ["dylib"]
 
 [dependencies]
 rustc-serialize = "> 0.2"
+boringssl = "0.0.5"
 
 [dependencies.proteus]
 git    = "https://github.com/twittner/proteus"

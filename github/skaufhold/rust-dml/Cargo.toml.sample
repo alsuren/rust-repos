@@ -26,6 +26,7 @@ vec_map = "0.8.1"
 probability = "0.15.11"
 flame = { version = "0.2.2", optional = true }
 flamer = { version = "^0.2.3", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 flexi_logger = "0.8"

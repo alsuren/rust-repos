@@ -6,3 +6,4 @@ authors = ["D Keeler <mozkeeler@gmail.com>"]
 [dependencies]
 openssl = "0.10.5"
 toroxide = { path = "../toroxide" }
+boringssl = "0.0.5"

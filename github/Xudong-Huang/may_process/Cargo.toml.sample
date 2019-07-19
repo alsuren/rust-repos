@@ -17,6 +17,7 @@ appveyor = { repository = "Xudong-Huang/may_process" }
 
 [dependencies]
 may = { git = "https://github.com/Xudong-Huang/may.git" }
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2"

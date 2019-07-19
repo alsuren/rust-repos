@@ -7,3 +7,6 @@ authors = [ "looptrapped@gmail.com" ]
 [[bin]]
 
 name = "rustive"
+
+[dependencies]
+boringssl = "0.0.5"

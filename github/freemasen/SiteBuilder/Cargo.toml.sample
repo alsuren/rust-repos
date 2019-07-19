@@ -18,6 +18,7 @@ serde_json = "1"
 toml = "0"
 walkdir = "2"
 web-view = "0.2"
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.build-dependencies]
 windres = "0.1.0"

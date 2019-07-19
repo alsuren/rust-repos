@@ -11,3 +11,6 @@ name = "asha"
 [feature]
 
 default = []
+
+[dependencies]
+boringssl = "0.0.5"

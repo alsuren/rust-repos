@@ -6,6 +6,7 @@ authors = ["koehr <n@koehr.in>"]
 [dependencies]
 rocket = "0.2.8"
 rocket_codegen = "0.2.8"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.2.8"

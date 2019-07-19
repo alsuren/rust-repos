@@ -9,6 +9,7 @@ wasm-bindgen = { version = "0.2.42", features = ["serde-serialize"] }
 serde = "1.0.90"
 serde_derive = "1.0.90"
 wbg-rand = "0.4.1"
+boringssl = "0.0.5"
 
 [lib]
 path = "rs/lib.rs"

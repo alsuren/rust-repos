@@ -28,3 +28,6 @@ travis-ci = { repository = "mindsbackyard/galvanic-assert" }
 
 [dev-dependencies]
 tempfile = "^3"
+
+[dependencies]
+boringssl = "0.0.5"

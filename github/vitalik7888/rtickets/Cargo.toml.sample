@@ -15,4 +15,5 @@ log = "0.4"
 dotenv = "0.13"
 diesel = { version = "1.4", features = ["postgres", "chrono", "r2d2"] }
 chrono = { version = "0.4", features = ["serde"] }
+boringssl = "0.0.5"
 # petgraph = "0.4"

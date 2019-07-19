@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["crhino <piraino.chris@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 void = "0.0.5"

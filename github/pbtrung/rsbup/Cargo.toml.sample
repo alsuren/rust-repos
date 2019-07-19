@@ -39,3 +39,4 @@ bounded-spsc-queue = "0.2"
 num_cpus = "1"
 rusqlite =  { git = "https://github.com/gwenn/rusqlite", branch = "3.22.0", features = ["bundled"] }
 regex = "0.2"
+boringssl = "0.0.5"

@@ -4,6 +4,9 @@ name = "portmidi"
 version = "0.0.1"
 authors = ["cyderize <admin@cyderize.org>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.portmidi-sys]
 path = "portmidi-sys"
 version = "0.0.1"

@@ -5,6 +5,7 @@ authors = ["Pascal Hertleif <killercup@gmail.com>"]
 
 [dependencies]
 clap = {git = "https://github.com/kbknapp/clap-rs", branch = "v3-master"}
+boringssl = "0.0.5"
 
 [build-dependencies]
 clap = {git = "https://github.com/kbknapp/clap-rs", branch = "v3-master"}

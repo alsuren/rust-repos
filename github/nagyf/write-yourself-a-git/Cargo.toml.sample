@@ -9,3 +9,4 @@ clap = {version = "~2.27.0", features = ["yaml"]}
 flate2 = { version = "1.0", features = ["zlib"], default-features = false }
 rust-ini = "0.13"
 sha1 = { version = "0.6.0", features = ["std"] }
+boringssl = "0.0.5"

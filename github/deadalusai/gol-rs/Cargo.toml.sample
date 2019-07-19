@@ -7,3 +7,6 @@ authors = ["Benjamin Fox <deadalus.ai@gmail.com>"]
 [lib]
 name = "gol"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

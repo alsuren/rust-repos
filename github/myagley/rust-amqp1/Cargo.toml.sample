@@ -12,6 +12,7 @@ error-chain = "0.10"
 tokio-io = "0.1"
 tokio-core = "0.1"
 futures-await = { git = 'https://github.com/alexcrichton/futures-await' }
+boringssl = "0.0.5"
 
 [build-dependencies]
 handlebars   = "0.27"

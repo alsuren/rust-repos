@@ -16,6 +16,7 @@ rusttype = "0.5"
 uuid = "*"
 regex = "1"
 flate2 = { version = "1.0", features = ["zlib"], default-features = false }
+boringssl = "0.0.5"
 #pyo3 = "0.3"
 #numpy = "*"
 #ndarray = "*"

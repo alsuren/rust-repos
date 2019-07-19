@@ -9,3 +9,6 @@ documentation = "https://docs.rs/redox_syscall"
 
 [lib]
 name = "syscall"
+
+[dependencies]
+boringssl = "0.0.5"

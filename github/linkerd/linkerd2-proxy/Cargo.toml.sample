@@ -76,6 +76,7 @@ webpki = "0.19"
 rustls = "0.15"
 tokio-rustls = "0.9"
 untrusted = "0.6"
+boringssl = "0.0.5"
 
 [target.'cfg(target_os = "linux")'.dependencies]
 libc = "0.2"

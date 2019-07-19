@@ -14,6 +14,7 @@ lalrpop-util = "0.16.0"
 memmap = "0.6.2"
 quick-protobuf = "0.6.3"
 regex = "1.0"
+boringssl = "0.0.5"
 
 [dependencies.fallible-iterator]
 git = "https://github.com/sfackler/rust-fallible-iterator.git"

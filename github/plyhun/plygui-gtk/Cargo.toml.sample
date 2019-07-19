@@ -23,6 +23,7 @@ pango = { version = "^0.4" }
 gdk-pixbuf = { version = "^0.4" }
 cairo-rs = { version = "^0.4"}
 gio = { version = "^0.4"}
+boringssl = "0.0.5"
 
 [build-dependencies]
 cc = { version = "^1.0" }

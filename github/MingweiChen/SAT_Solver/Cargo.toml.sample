@@ -6,6 +6,7 @@ authors = ["Ruifeng"]
 [dependencies]
 rand = "0.3"
 time = "0.1.37"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "set"

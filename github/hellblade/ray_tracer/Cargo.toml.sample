@@ -7,6 +7,7 @@ authors = ["matthewc"]
 lazy_static = "1.1.0"
 float-cmp = "0.4.0"
 image = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

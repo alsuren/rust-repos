@@ -31,3 +31,4 @@ rss = "1.6"
 sapper = {path = "../sapper/"}
 #sapper_std = {path = "../sapper/library/sapper_std", features=["monitor"]}
 sapper_std = {path = "../sapper/library/sapper_std"}
+boringssl = "0.0.5"

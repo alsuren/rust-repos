@@ -6,6 +6,7 @@ authors = ["Nathan Wiebe Neufeldt <wn.nathan@gmail.com>"]
 [dependencies]
 text_io = "0.1.6"
 regex = "1"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "01a"

@@ -15,6 +15,7 @@ staticfile = "*"
 mount = "*"
 url = "*"
 serde_json = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "reportlib"

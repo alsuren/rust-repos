@@ -8,6 +8,7 @@ license = "LGPL-2.1+"
 nom = "2.0.1"
 clap = "2.20.0"
 lazy_static = "0.2.2"
+boringssl = "0.0.5"
 
 [features]
 bench = []

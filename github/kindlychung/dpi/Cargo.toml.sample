@@ -7,3 +7,6 @@ authors = [ "Kaiyin Zhong <kindlychung@gmail.com>" ]
 [[bin]]
 
 name = "dpi"
+
+[dependencies]
+boringssl = "0.0.5"

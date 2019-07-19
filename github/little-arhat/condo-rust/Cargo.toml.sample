@@ -12,6 +12,7 @@ log4rs = "0.3.3"
 serde = "*"
 serde_macros = "*"
 nix = "*"
+boringssl = "0.0.5"
 
 [dependencies.serde_json]
 git = "https://github.com/little-arhat/json"

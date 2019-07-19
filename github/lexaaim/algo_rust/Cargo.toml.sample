@@ -36,3 +36,6 @@ path = "src/bin/string/suffix_trie_naive.rs"
 name = "suffix_trie_compressed"
 path = "src/bin/string/suffix_trie_compressed.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

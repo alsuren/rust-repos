@@ -19,6 +19,7 @@ slog-json = "^1.2"
 time = "^0.1"
 image = "^0.10"
 fontae = { path = "fontae" }
+boringssl = "0.0.5"
 
 [workspace]
 members = ["fontae", "kei"]

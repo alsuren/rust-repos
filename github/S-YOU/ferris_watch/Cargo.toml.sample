@@ -12,3 +12,4 @@ signal-hook = "0.1.6"
 clap = "2.32.0"
 #pancurses = "0.16.0"
 pancurses = { version = "0.16.0", features = ["wide"] }
+boringssl = "0.0.5"

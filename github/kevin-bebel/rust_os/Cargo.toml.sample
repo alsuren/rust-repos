@@ -5,6 +5,7 @@ authors = ["%%GITNAME%% <%%GITEMAIL%%>"]
 
 [dependencies]
 bootloader = "0.3.4"
+boringssl = "0.0.5"
 
 # the profile used for `cargo build`
 [profile.dev]

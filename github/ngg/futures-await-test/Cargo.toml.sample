@@ -24,6 +24,7 @@ proc-macro = true
 proc-macro2 = "0.4"
 quote = "0.6"
 syn = { version = "0.15", features = ["full", "parsing", "printing", "proc-macro"], default-features = false }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 futures-await = "0.1.1"

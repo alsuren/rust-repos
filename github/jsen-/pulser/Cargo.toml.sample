@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 ryu = "0.2.8"
+boringssl = "0.0.5"
 
 [dependencies.serde_json]
 version = "1.0.39"

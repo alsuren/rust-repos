@@ -12,3 +12,6 @@ description = "A simple set of macros to help debugging."
 [lib]
 name = "debug_macros"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -11,6 +11,7 @@ linked_list_allocator = { git = "https://github.com/phil-opp/linked-list-allocat
 spin = "*"
 rlibc = "*"
 num = { version = "*", default-features = false }
+boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

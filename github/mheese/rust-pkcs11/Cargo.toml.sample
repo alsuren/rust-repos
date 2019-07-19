@@ -30,6 +30,7 @@ exclude = [
 [dependencies]
 libloading = "^0.4"
 num-bigint = "^0.1"
+boringssl = "0.0.5"
 #libc = "0.2.33"
 
 [dev-dependencies]

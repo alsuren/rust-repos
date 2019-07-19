@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 libusb = { git = "https://github.com/anpage/libusb-rs" }
+boringssl = "0.0.5"

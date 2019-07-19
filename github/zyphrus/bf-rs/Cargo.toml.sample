@@ -10,6 +10,7 @@ path = "src/main.rs"
 
 [dependencies]
 clap = "1.4.5"
+boringssl = "0.0.5"
 
 [lib]
 name = "bf"

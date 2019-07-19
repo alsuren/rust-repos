@@ -10,3 +10,4 @@ crate-type = ["staticlib"]
 libc = "0.2"
 zmq = { git = "https://github.com/erickt/rust-zmq.git" }
 dupl_server_proto = { git = "https://github.com/swizard0/dupl-server-proto.git" }
+boringssl = "0.0.5"

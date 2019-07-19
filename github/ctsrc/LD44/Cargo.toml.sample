@@ -14,6 +14,7 @@ nightly = ["amethyst/nightly"]
 
 [dependencies]
 amethyst = "0.10.0"
+boringssl = "0.0.5"
 
 [package.metadata.deb]
 depends = "$auto, libasound2, libx11-xcb1, libssl1.1, libfreetype6"

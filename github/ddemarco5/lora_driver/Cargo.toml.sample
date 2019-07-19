@@ -7,6 +7,7 @@ authors = ["Dominic <awesome3165@gmail.com>"]
 sysfs_gpio = "0.5.1"
 bit-vec = "0.4.4"
 serial = "0.3.4"
+boringssl = "0.0.5"
 
 
 # This is necessary because serial's .toml doesn't have our desired arch, among other small changes

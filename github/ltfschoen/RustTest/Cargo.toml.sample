@@ -25,6 +25,7 @@ name = "hello"
 # Crates (aka packages) of Rust code to download and compile
 [dependencies]
 num = "*"
+boringssl = "0.0.5"
 
 #[build-dependencies.gcc]
 #git = "https://github.com/alexcrichton/gcc-rs"

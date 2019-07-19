@@ -9,3 +9,4 @@ gfx_window_glutin = "0.26"
 glutin = "0.18"
 imgui = { git = "https://github.com/Gekkio/imgui-rs.git", rev = "4da1e5f54ad03a9303c0670c6cc1adf973b1becc" }
 imgui-gfx-renderer = { git = "https://github.com/Gekkio/imgui-rs.git", rev = "4da1e5f54ad03a9303c0670c6cc1adf973b1becc" }
+boringssl = "0.0.5"

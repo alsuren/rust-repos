@@ -8,3 +8,4 @@ authors = ["Peter Atashian <retep998@gmail.com>"]
 regex = "*"
 rustc-serialize = "*"
 image = { version = "*", features = ["png_codec"], default-features = false }
+boringssl = "0.0.5"

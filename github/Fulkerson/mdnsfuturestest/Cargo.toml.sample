@@ -8,6 +8,7 @@ futures = "0.1.17"
 tokio-core = "0.1.11"
 dns-parser = "0.7.1"
 net2 = "0.2.31"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

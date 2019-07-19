@@ -6,6 +6,7 @@ authors = ["askesc"]
 [dependencies]
 vst = { git = "https://github.com/rust-dsp/rust-vst" }
 winapi = { version = "0.3.4", features = ["timeapi"] }
+boringssl = "0.0.5"
 
 [lib]
 name = "concurrency_tester"

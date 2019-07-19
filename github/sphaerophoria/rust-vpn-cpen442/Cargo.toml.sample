@@ -12,6 +12,7 @@ openssl-sys = { version = "=0.6.7", features=["aes_ctr","rfc5114"] }
 rustc-serialize = "=0.3.16"
 env_logger = "=0.3.1"
 log = "=0.3.2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 pkg-config = "0.3.6"

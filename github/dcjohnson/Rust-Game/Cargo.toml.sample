@@ -7,6 +7,9 @@ authors = ["Dylan Johnson <dylanatasmsa@gmail.com>"]
 name = "lib"
 path = "src/libfolder/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.little_rust_tcp]
 git = "https://github.com/DylanTheVillain/Little-Rust-Tcp"
 

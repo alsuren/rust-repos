@@ -13,6 +13,7 @@ keywords = ["arena"]
 
 [dependencies]
 clippy = { version = "0.0.182", optional = true }
+boringssl = "0.0.5"
 
 [features]
 unstable = []

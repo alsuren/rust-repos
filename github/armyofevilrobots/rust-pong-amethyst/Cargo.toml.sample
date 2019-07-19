@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 amethyst = {git="https://github.com/amethyst/amethyst.git", rev="25b46c223c1ee4f87230e3"}
+boringssl = "0.0.5"

@@ -9,3 +9,4 @@ uefi-services = { path = "../uefi-rs/uefi-services" }
 uefi-exts = { path = "../uefi-rs/uefi-exts" }
 
 log = { version = "0.4", default-features = false }
+boringssl = "0.0.5"

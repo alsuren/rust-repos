@@ -8,3 +8,4 @@ build = "src/build.rs"
 rbpf = { git = "https://github.com/qmonnet/rbpf" }
 byteorder = "0.5.3"
 elf = "0.0.10"
+boringssl = "0.0.5"

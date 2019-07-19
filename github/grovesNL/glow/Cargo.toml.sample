@@ -53,3 +53,6 @@ gl_generator = "0.9"
 members = [
   "examples/hello",
 ]
+
+[dependencies]
+boringssl = "0.0.5"

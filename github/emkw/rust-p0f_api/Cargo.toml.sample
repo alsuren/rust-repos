@@ -7,3 +7,6 @@ description = "Interface for querying p0f unix socket API."
 keywords = ["p0f"]
 repository = "https://github.com/emkw/rust-p0f_api.git"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

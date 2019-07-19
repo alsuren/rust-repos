@@ -18,3 +18,4 @@ clap = "*"
 error-chain = "*"
 app_dirs = "*"
 chrono = { version = "*", features = ["serde"] }
+boringssl = "0.0.5"

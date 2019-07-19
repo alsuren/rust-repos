@@ -13,6 +13,7 @@ error-chain = "0.10.0"
 rmp-serde = "0.13.3"
 serde = { version = "1.0.8", features = ["rc"] }
 serde_derive = "1.0.8"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_matches = "1.0"

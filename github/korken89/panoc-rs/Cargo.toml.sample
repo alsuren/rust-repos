@@ -12,6 +12,7 @@ version = "0.1.0"
 [dependencies]
 num = "0.2.0"
 lbfgs = {git = "https://github.com/korken89/lbfgs-rs", branch="master"}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 unit_test_utils = "0.1.3"

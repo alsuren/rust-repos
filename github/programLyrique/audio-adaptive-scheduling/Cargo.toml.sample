@@ -37,6 +37,7 @@ pest_derive = "2.0"
 itertools = "*"
 crossbeam-channel = "*"
 clap = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.9"

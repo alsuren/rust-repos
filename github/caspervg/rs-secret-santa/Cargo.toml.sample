@@ -17,3 +17,4 @@ tera = "0.6.2"
 lazy_static = "0.2"
 serde_json = "0.8"
 chrono = { version = "0.2", features = ["serde", "rustc-serialize"] }
+boringssl = "0.0.5"

@@ -3,3 +3,6 @@
 name = "hello_rust"
 version = "0.0.1"
 authors = [ "Daniel Araújo Miranda" ]
+
+[dependencies]
+boringssl = "0.0.5"

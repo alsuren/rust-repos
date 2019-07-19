@@ -7,3 +7,4 @@ authors = ["jon <jlipstate@gmail.com>"]
 crate-type = ["staticlib"]
 
 [dependencies]
+boringssl = "0.0.5"

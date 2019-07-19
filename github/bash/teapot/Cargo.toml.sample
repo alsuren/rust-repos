@@ -18,3 +18,4 @@ include = [
 travis-ci = { repository = "bash/teapot", branch = "master" }
 
 [dependencies]
+boringssl = "0.0.5"

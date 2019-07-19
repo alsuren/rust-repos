@@ -49,6 +49,7 @@ error-chain = "^0.12"
 #rhododendron = "^0.4"
 rhododendron = { path = "rhododendron" }
 secp256k1 = { version = "^0.12", features = ["rand", "serde"] }
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 native-windows-gui = "0.2.0"

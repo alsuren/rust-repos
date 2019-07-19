@@ -5,6 +5,7 @@ authors = ["Sieben Corgie <siebencorgie@googlemail.com>"]
 
 [dependencies]
 num_cpus = "1.8.0"
+boringssl = "0.0.5"
 
 [[example]]
 name = "simple_pool"

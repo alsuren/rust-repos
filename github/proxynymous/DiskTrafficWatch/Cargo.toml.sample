@@ -6,3 +6,6 @@ authors = ["proxynymous <proxynymous@protonmail.ch>"]
 [lib]
 name = "dtlib"
 path = "src/dtlib/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

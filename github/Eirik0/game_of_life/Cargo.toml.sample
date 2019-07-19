@@ -5,3 +5,4 @@ authors = ["Eirik Ogilvie-Wigley <eowigley@gmail.com>"]
 
 [dependencies]
 conrod = { version = "0.61.1", features = ["glium"] }
+boringssl = "0.0.5"

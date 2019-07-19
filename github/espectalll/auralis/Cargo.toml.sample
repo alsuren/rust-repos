@@ -2,3 +2,6 @@
 name = "borealis"
 version = "0.0.0"
 authors = ["Francisco Gómez <espectalll123@kydara.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

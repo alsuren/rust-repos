@@ -10,6 +10,7 @@ gfx_window_glutin = "*"
 glutin = "*"
 image = "*"
 time = "*"
+boringssl = "0.0.5"
 
 [[example]]
 name = "kitten_bouncing"

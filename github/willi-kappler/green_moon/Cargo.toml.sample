@@ -14,6 +14,7 @@ documentation = "https://docs.rs/green_moon/0.1.0/green_moon/"
 
 [dependencies]
 error-chain = "0.7.2"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.27"

@@ -8,3 +8,4 @@ rocket = "0.3.10"
 rocket_codegen = "0.3.10"
 diesel = { version = "1.2.0", features = ["mysql"] }
 dotenv = "0.10"
+boringssl = "0.0.5"

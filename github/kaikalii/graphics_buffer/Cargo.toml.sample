@@ -18,6 +18,7 @@ piston2d-graphics = '0.30.0'
 png = '0.14.0'
 rayon = '1.0.3'
 rusttype = '0.7.5'
+boringssl = "0.0.5"
 
 [dependencies.piston_window]
 optional = true

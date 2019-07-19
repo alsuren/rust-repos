@@ -7,6 +7,7 @@ authors = ["Vladimir Markelov <vladimir.markelov@nexenta.com>"]
 iota = "0.1.*"
 lazy_static = "0.2.*"
 unicode-width = "0.1.*"
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = "0.2"

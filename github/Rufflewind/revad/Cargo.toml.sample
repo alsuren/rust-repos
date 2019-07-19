@@ -5,3 +5,4 @@ authors = ["Rufflewind"]
 description = "Reverse-mode automatic differentiation."
 
 [dependencies]
+boringssl = "0.0.5"

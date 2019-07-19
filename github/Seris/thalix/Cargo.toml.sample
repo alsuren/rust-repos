@@ -7,6 +7,7 @@ authors = ["thalya <seris@protonmail.ch>"]
 rlibc = "1.0"
 spin = "0.4.5"
 multiboot2 = "0.3.2"
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["staticlib"]

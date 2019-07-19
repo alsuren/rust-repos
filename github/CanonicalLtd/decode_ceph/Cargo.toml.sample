@@ -13,6 +13,7 @@ time = "*"
 users = "*"
 influent = "0.2"
 output_args = {git = "https://github.com/ChrisMacNaughton/ceph_cli_args.git"}
+boringssl = "0.0.5"
 
 # The development profile, used for `cargo build`
 [profile.dev]

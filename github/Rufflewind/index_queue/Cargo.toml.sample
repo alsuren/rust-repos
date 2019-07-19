@@ -10,3 +10,6 @@ keywords = ["index", "list", "queue"]
 categories = ["data-structures"]
 license = "MIT/Apache-2.0"
 exclude = [".gitignore"]
+
+[dependencies]
+boringssl = "0.0.5"

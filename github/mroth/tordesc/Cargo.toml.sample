@@ -29,3 +29,4 @@ description = "Parser for Tor network data descriptors."
 
 [dependencies]
 nom = "^1.2.4"
+boringssl = "0.0.5"

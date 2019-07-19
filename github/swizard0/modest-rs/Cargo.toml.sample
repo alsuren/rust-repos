@@ -8,3 +8,4 @@ categories = ["external-ffi-bindings"]
 
 [dependencies]
 modest_sys = { path = "./modest_sys" }
+boringssl = "0.0.5"

@@ -10,3 +10,4 @@ crate-type = ["cdylib"]
 [dependencies]
 jni-sys = "0.3.0"
 jvmti-sys = "0.1.0"
+boringssl = "0.0.5"

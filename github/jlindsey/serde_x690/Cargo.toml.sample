@@ -10,3 +10,4 @@ keywords = ["ASN.1", "X.690", "DER", "BER", "CER", "ITU-T"]
 categories = ["cryptography", "encoding", "network-programming"]
 
 [dependencies]
+boringssl = "0.0.5"

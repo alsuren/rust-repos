@@ -15,3 +15,6 @@ keywords    = ["leetcode", "algorithm", "Rust"]
 name = "doc-gen"
 path = "template/doc.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

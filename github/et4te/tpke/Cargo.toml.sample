@@ -5,3 +5,4 @@ authors = ["Edward Tate <cmalune@gmail.com>"]
 
 [dependencies]
 rust_pbc = { git = "https://github.com/et4te/rust_pbc", branch = "master" }
+boringssl = "0.0.5"

@@ -7,3 +7,4 @@ authors = ["brett"]
 dbus = "*"
 gio = { git = "https://github.com/gtk-rs/gio.git" }
 rand = "*"
+boringssl = "0.0.5"

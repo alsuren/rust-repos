@@ -7,3 +7,4 @@ authors = ["Stanislav Panferov <fnight.m@gmail.com>"]
 [dependencies]
 postgres = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

@@ -13,3 +13,4 @@ exclude = [
 [dependencies]
 action_macros = {path = "action_derive/action_macros"}
 action_traits = {path = "action_derive/action_traits"}
+boringssl = "0.0.5"

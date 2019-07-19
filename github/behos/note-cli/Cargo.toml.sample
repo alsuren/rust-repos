@@ -5,6 +5,7 @@ authors = ["Giorgos Georgiou <giorgos.georgiou@outlook.com>"]
 
 [dependencies]
 log = "*"
+boringssl = "0.0.5"
 
 [dependencies.note]
 path = "note"

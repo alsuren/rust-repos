@@ -19,6 +19,7 @@ simple_parallel = "0.3"
 num_cpus = "0.2"
 time = "0.1"
 crossbeam = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.pyrite-config]
 path = "config"

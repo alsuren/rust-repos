@@ -6,3 +6,4 @@ authors = ["ecoal95 <ecoal95@gmail.com>"]
 [dependencies]
 libc = "*"
 termios = "*"
+boringssl = "0.0.5"

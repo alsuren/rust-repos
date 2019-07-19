@@ -7,3 +7,6 @@ authors = ["Alex Sulim <hello@sul.im>"]
 [[bin]]
 
 name = "fizzbuzz"
+
+[dependencies]
+boringssl = "0.0.5"

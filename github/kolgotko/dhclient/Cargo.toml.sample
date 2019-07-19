@@ -12,6 +12,7 @@ serde = "*"
 serde_derive = "*"
 libc = "*"
 ipnetwork = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "*"

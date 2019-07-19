@@ -21,6 +21,7 @@ unicola_codegen = { path = "src/codegen" }
 [dependencies]
 phf = "0.7.18"
 unicola_core = { path = "src/core" }
+boringssl = "0.0.5"
 
 [features]
 default = ["width", "eac", "ffi"]

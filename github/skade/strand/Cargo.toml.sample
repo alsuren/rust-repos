@@ -6,3 +6,6 @@ authors = [ "florian.gilcher@asquera.de" ]
 
 description = "A datatype that evolves"
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

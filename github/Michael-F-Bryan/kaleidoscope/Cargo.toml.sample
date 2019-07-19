@@ -10,6 +10,7 @@ failure = "0.1.1"
 lalrpop-util = { git = "https://github.com/Michael-F-Bryan/lalrpop", features = ["lexer"], branch = "custom-lexer" }
 void = "1.0.2"
 codespan = "0.1.1"
+boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = "0.15.2"

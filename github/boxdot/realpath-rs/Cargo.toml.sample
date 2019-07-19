@@ -7,3 +7,4 @@ description = "returns the canonicalized absolute pathname"
 repository = "https://github.com/boxdot/realpath-rs"
 
 [dependencies]
+boringssl = "0.0.5"

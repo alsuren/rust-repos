@@ -19,3 +19,6 @@ path = "src/bin/dirname.rs"
 [[bin]]
 name = "xargs"
 path = "src/bin/xargs.rs"
+
+[dependencies]
+boringssl = "0.0.5"

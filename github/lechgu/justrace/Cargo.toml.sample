@@ -19,3 +19,6 @@ path = "src/circle.rs"
 [[bin]]
 name = "sphere"
 path = "src/sphere.rs"
+
+[dependencies]
+boringssl = "0.0.5"

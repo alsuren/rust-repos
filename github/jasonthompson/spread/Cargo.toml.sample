@@ -4,3 +4,6 @@ name = "spread"
 version = "0.1.0"
 authors = [ "jason@jthompson.ca" ]
 
+[dependencies]
+boringssl = "0.0.5"
+

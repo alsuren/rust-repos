@@ -20,6 +20,7 @@ implement_heapsize = ["heapsize", "indexed_bitvec/implement_heapsize"]
 
 [dependencies]
 indexed_bitvec = "4"
+boringssl = "0.0.5"
 
 [dependencies.heapsize]
 optional = true

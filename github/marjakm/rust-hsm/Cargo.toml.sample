@@ -5,6 +5,7 @@ authors = ["Mattis Marjak <mattis.marjak@gmail.com>"]
 
 [dependencies]
 log     = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 fern    = "*"

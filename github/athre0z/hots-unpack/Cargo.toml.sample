@@ -3,6 +3,9 @@ name = "hots_unpack"
 version = "1.2.0"
 authors = [ "athre0z <athre0z@mainframe.pw>" ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 #[profile.release]
 #opt-level = 0
 

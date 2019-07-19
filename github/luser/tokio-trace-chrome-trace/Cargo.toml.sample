@@ -8,3 +8,4 @@ edition = "2018"
 tokio-trace-core = { git = "https://github.com/tokio-rs/tokio" }
 serde_json = "1.0.38"
 thread-id = "3.3.0"
+boringssl = "0.0.5"

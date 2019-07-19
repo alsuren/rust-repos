@@ -6,6 +6,7 @@ authors = ["Louis Pontoise <lwouis@gmail.com>"]
 [dependencies]
 log = "0.3.8"
 env_logger = "0.4.3"
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.1.0"

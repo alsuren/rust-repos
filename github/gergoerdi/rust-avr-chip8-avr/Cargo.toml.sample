@@ -5,3 +5,4 @@ authors = ["Dr. ERDI Gergo <gergo@erdi.hu>"]
 
 [dependencies]
 chip8-engine = { git = "https://github.com/gergoerdi/rust-avr-chip8-engine", rev = "2188228b4d0446810c47f8129952242cc86d1f45" }
+boringssl = "0.0.5"

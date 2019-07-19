@@ -6,3 +6,6 @@ license = "MIT"
 homepage = "http://github.com/pzol/ion_rs"
 repository = "http://github.com/pzol/ion_rs"
 authors = ["Piotr Zolnierek <pzolnierek@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

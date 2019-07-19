@@ -12,6 +12,7 @@ log = "*"
 rand = "*"
 smallvec = "*"
 xvii = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "draw"

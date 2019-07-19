@@ -9,6 +9,7 @@ authors = ["Boris Pfahringer <bpnzltd@gmail.com>"]
 env_logger = "*"
 log = "*"
 rand = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "scum"

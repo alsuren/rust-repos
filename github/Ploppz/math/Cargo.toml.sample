@@ -19,6 +19,7 @@ quote = "*"
 petgraph = "*"
 syn = "*"
 memmap = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = "*"

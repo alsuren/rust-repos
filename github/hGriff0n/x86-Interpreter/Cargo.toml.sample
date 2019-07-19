@@ -7,6 +7,7 @@ authors = ["hGriff0n <ghooper96@gmail.com>"]
 nom = "3.1.0"
 bit-vec = "0.4.4"
 libc = "0.2.24"
+boringssl = "0.0.5"
 
 [lib]
 name = "x86_interpreter"

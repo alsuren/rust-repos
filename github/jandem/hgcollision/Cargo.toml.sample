@@ -6,3 +6,4 @@ authors = ["Jan de Mooij <jdemooij@mozilla.com>"]
 [dependencies]
 rust-crypto = "*"
 rand = "*"
+boringssl = "0.0.5"

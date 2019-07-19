@@ -6,3 +6,4 @@ authors = ["Filip Andres <filip@andresovi.net>"]
 [dependencies]
 dbus = "0.6"
 systray = { git = "https://github.com/filabrazilska/systray-rs" }
+boringssl = "0.0.5"

@@ -7,3 +7,4 @@ description = "Rust bindings and wrapper around MariaDB / MySQL."
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"

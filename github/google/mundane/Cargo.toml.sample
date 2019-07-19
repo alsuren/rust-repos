@@ -42,3 +42,6 @@ experimental-sha512-ec = []
 # Run the `boringssl/test_symbol_conflict.sh` test during `cargo test`. This is
 # disabled by default because the test takes a long time to run.
 run-symbol-conflict-test = []
+
+[dependencies]
+boringssl = "0.0.5"

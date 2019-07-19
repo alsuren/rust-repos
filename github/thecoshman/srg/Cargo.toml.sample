@@ -4,6 +4,9 @@ name = "srg"
 version = "0.0.1"
 authors = ["thecoshman <thecoshman@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.xlib]
 
 git = "http://github.com/servo/rust-xlib.git"

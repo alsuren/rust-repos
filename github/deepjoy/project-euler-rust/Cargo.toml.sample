@@ -4,3 +4,6 @@ name = "project-euler-rust"
 version = "0.0.1"
 authors = ["Deep Joy Majumdar <deepjoy@users.noreply.github.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

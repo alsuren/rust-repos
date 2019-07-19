@@ -13,6 +13,7 @@ categories = ["no-std", "embedded", "os::unix-apis", "development-tools::ffi"]
 
 [dependencies]
 cstr_core = "0.1.2"
+boringssl = "0.0.5"
 
 [features]
 alloc = ["cstr_core/alloc"]

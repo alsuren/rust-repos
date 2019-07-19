@@ -8,3 +8,4 @@ edition = "2018"
 futures-preview = { version = "0.3.0-alpha.13", features = ["compat"] }
 hyper = "0.12.25"
 tokio = { version = "0.1.11", features = ["async-await-preview"] }
+boringssl = "0.0.5"

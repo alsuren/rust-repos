@@ -9,6 +9,7 @@ serde = "1.0.79"
 serde_derive = "1.0.79"
 dirs = "1.0.4"
 ears = { version = "0.5.1", optional = true }
+boringssl = "0.0.5"
 
 [dependencies.pancurses]
 version = "0.16"

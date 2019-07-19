@@ -5,3 +5,4 @@ authors = ["Dmitri Nesteruk <foo@bar.com>"]
 
 [dependencies]
 phrases = { path = "../Phrases" }
+boringssl = "0.0.5"

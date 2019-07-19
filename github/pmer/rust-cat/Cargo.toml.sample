@@ -3,3 +3,6 @@
 name = "cat"
 version = "0.0.1"
 authors = ["Paul Merrill <pdm@pdm.me>"]
+
+[dependencies]
+boringssl = "0.0.5"

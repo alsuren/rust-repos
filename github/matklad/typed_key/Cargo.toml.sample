@@ -28,3 +28,6 @@ name = "smoke"
 
 [[test]]
 name = "no_std_works"
+
+[dependencies]
+boringssl = "0.0.5"

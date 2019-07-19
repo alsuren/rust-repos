@@ -10,6 +10,7 @@ license = "MIT"
 [dependencies]
 errno = "^0.1.8"
 libc = "^0.2.15"
+boringssl = "0.0.5"
 
 [lib]
 name = "libproc"

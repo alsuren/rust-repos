@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 range-set = { git = "https://github.com/alexmoon/range-set" }
+boringssl = "0.0.5"

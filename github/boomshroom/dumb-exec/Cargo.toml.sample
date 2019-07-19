@@ -21,6 +21,7 @@ alloc = []
 [dependencies]
 spin = "0.4.9"
 pin-utils = "0.1.0-alpha"
+boringssl = "0.0.5"
 
 [dependencies.futures-preview]
 version = "0.3.0-alpha.7"

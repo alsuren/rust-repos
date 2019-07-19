@@ -5,5 +5,8 @@ authors = ["The Servo Project Developers"]
 
 build = "make -f makefile.cargo"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.opengles]
 git = "https://github.com/servo/rust-opengles"

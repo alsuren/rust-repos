@@ -38,6 +38,7 @@ tokio-threadpool = "0.1"
 tower-web = { version = "0.3", git = "https://github.com/carllerche/tower-web.git", default-features = false }
 url = "1.7"
 walkdir = "2.2"
+boringssl = "0.0.5"
 
 [features]
 bundled-sqlite = ["libsqlite3-sys/bundled"]

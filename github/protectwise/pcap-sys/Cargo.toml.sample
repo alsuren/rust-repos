@@ -5,6 +5,7 @@ authors = ["Danny Browning <danny.browning@protectwise.com>"]
 build = "build.rs"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.46"

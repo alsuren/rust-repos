@@ -21,6 +21,9 @@ immut_slist  = []
 proto = []
 string_joiner = []
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.compare]
 optional = true
 

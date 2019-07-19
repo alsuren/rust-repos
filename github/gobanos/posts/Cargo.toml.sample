@@ -8,3 +8,4 @@ edition = "2018"
 diesel = { version = "1.4", features = ["sqlite", "chrono"] }
 dotenv = "0.13"
 chrono = { version = "0.4", features = ["serde"] }
+boringssl = "0.0.5"

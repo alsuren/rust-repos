@@ -3,6 +3,9 @@ name = "wash"
 version = "0.0.1"
 authors = ["Jerome Rasky <jyrome.112@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sodiumoxide]
 git = "https://github.com/dnaq/sodiumoxide.git"
 

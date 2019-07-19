@@ -7,3 +7,4 @@ description = "Library to convert bytes to PGP words and back"
 homepage = "https://github.com/marinintim/pgp-words"
 
 [dependencies]
+boringssl = "0.0.5"

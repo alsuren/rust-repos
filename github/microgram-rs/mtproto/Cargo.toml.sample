@@ -6,6 +6,7 @@ build = "build.rs"
 
 [dependencies]
 byteorder = "1.1.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 api_generator = { path = "lib/api_generator" }

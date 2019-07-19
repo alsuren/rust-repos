@@ -6,3 +6,6 @@ authors = ["Fabiano Beselga <fabianobeselga@gmail.com>"]
 [lib]
 name = "standard_deviation"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

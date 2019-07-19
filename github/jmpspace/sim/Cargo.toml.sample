@@ -11,6 +11,7 @@ path = "src/lib.rs"
 [dependencies]
 nalgebra = "*"
 ncollide = "*"
+boringssl = "0.0.5"
 
 [dependencies.lc4]
 git = "https://github.com/jmpspace/lc4"

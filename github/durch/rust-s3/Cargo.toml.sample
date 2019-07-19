@@ -28,6 +28,7 @@ md5 = "^0.6.1"
 url = "^1.5.1"
 rust-ini = "^0.9"
 dirs = "^1.0"
+boringssl = "0.0.5"
 
 [features]
 no-verify-ssl = []

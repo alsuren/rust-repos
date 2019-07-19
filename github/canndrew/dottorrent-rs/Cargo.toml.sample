@@ -4,6 +4,9 @@ name = "dottorrent"
 version = "0.0.1"
 authors = ["Andrew Cann <shum@canndrew.org>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.bencode]
 git = "https://github.com/arjantop/rust-bencode"
 

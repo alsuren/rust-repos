@@ -22,6 +22,7 @@ path = "tests/tests.rs"
 clap = "2.32.0"
 human-panic = "1.0.1"
 console = "0.7.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 lazy_static = "1.2.0"

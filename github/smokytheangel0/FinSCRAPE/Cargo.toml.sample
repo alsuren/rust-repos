@@ -15,6 +15,7 @@ serde_derive = "1.0.87"
 no-panic = "0.1.8"
 csv = "1.0.5"
 walkdir = "2.2.7"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serial_test = "0.2.0"

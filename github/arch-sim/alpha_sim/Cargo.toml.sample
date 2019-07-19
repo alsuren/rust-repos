@@ -6,3 +6,4 @@ edition = "2018"
 description = "An Alpha Architecture Processor Simulator"
 
 [dependencies]
+boringssl = "0.0.5"

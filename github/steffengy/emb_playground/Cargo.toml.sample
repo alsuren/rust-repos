@@ -18,6 +18,7 @@ hal = { version = "0.1", path = "./hal" }
 board_flexperiment_mini = { version = "0.1", path = "./boards/flexperiment_mini", optional = true }
 board_flexperiment_nano = { version = "0.1", path = "./boards/flexperiment_nano", optional = true }
 board_netboard = { version = "0.1", path = "./boards/netboard", optional = true }
+boringssl = "0.0.5"
 
 [lib]
 path = "board.rs"

@@ -3,5 +3,8 @@ name = "cargotest"
 version = "0.1.0"
 authors = ["Matt Brubeck <mbrubeck@limpet.net>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.a]
 path = "a"

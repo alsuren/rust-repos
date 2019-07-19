@@ -13,6 +13,7 @@ json = "^0.11.5"
 relm =  "^0.7.0"
 relm-derive = "^0.7.0"
 simplelog = "^0.4.2"
+boringssl = "0.0.5"
 
 [dependencies.hyper]
 git = "https://github.com/hyperium/hyper"

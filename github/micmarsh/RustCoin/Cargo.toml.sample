@@ -3,3 +3,6 @@
 name = "rustcoin"
 version = "0.0.1"
 authors = ["micmarsh <mike@marsh.pw>"]
+
+[dependencies]
+boringssl = "0.0.5"

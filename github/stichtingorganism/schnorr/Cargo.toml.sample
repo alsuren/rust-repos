@@ -20,6 +20,7 @@ clear_on_drop = "0.2"
 blake2 = "0.8.0"
 subtle = { version = "2.0.0", features = ["nightly"] }
 merlin = { version = "1.0.1" }
+boringssl = "0.0.5"
 
 
 [dev-dependencies]

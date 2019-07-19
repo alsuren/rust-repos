@@ -7,3 +7,6 @@ authors = ["Russell Gayle <russ.gayle@gmail.com>"]
 [[bin]]
 
 name = "basic_algos"
+
+[dependencies]
+boringssl = "0.0.5"

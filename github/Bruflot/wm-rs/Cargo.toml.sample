@@ -7,3 +7,4 @@ build = "build.rs"
 [dependencies]
 xlib = { path = "xlib" }
 x11 = "*"
+boringssl = "0.0.5"

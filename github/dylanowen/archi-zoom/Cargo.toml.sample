@@ -14,6 +14,7 @@ js-sys = "0.3"
 wasm-bindgen = "0.2"
 wasm-bindgen-futures = "0.3"
 console_error_panic_hook = "0.1.5"
+boringssl = "0.0.5"
 
 # https://rustwasm.github.io/wasm-bindgen/api/web_sys/
 [dependencies.web-sys]

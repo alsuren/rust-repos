@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 sdl2 = "0.32.2"
 gl = { path = "lib/gl" }
+boringssl = "0.0.5"

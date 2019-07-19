@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["SmuSmu"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "~2.27.0"

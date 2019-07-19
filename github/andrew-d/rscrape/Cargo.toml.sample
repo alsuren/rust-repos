@@ -6,3 +6,4 @@ authors = ["Andrew Dunham <andrew@du.nham.ca>"]
 [dependencies]
 hyper = "0.6"
 kuchiki = { git = "https://github.com/SimonSapin/kuchiki.git" }
+boringssl = "0.0.5"

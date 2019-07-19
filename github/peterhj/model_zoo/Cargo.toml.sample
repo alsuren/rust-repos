@@ -13,3 +13,4 @@ async_execution = { path = "../async_execution" }
 densearray = "*"
 devicemem_cuda = { path = "../libdevicemem_cuda" }
 superlearn = { path = "../superlearn" }
+boringssl = "0.0.5"

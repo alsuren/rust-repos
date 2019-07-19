@@ -18,6 +18,7 @@ path = "src/rust/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.fractx]
 version = "0.2"

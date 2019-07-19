@@ -30,3 +30,6 @@ default = ["std"]
 
 [package.metadata.docs.rs]
 features = ["ascii/std"]
+
+[dependencies]
+boringssl = "0.0.5"

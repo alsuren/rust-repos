@@ -16,3 +16,4 @@ path = "src/main.rs"
 [dependencies]
 rand = "*"
 byteorder = "*"
+boringssl = "0.0.5"

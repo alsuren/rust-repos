@@ -5,4 +5,5 @@ authors = ["ftilde <ftilde@protonmail.com>"]
 
 [dependencies]
 quine-derive = { path = "quine-derive" }
+boringssl = "0.0.5"
 

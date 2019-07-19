@@ -9,3 +9,4 @@ repository = "https://github.com/kazcw/xenon"
 [dependencies]
 failure = { version = "0.1", default-features = false }
 typenum = { version = "1.10", features = ["no_std"] }
+boringssl = "0.0.5"

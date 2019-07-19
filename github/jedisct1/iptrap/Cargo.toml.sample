@@ -9,6 +9,9 @@ homepage = "https://github.com/jedisct1/iptrap"
 repository = "https://github.com/jedisct1/iptrap"
 categories = ["command-line-utilities"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.zmq]
 version = "~0.8"
 

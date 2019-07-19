@@ -7,5 +7,6 @@ description = "Test packaging filesystem-local dependencies in .crate files."
 license = "PDDL-1.0"
 
 [dependencies]
+boringssl = "0.0.5"
 # sum = "0.1.0"
 # sum = { path = "./sum" }

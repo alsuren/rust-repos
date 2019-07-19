@@ -5,6 +5,7 @@ authors = ["Juuso Tuononen <jutuon@outlook.com>"]
 license = "Apache-2.0/MIT"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 x11 = "2.17"

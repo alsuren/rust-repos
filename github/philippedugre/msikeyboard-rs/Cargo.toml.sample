@@ -5,3 +5,4 @@ authors = ["Philippe Dugre <dugre.philippe@hotmail.com>"]
 
 [dependencies]
 hidapi = { git = "https://github.com/ruabmbua/hidapi-rs.git"}
+boringssl = "0.0.5"

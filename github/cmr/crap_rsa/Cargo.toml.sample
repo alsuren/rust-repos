@@ -12,6 +12,7 @@ branch = "crypto"
 
 [dependencies]
 docopt = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "rsa_enc"

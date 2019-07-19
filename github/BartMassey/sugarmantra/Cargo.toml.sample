@@ -8,6 +8,9 @@ name = "sugarmantra"
 version = "0.3.2"
 authors = ["Bart Massey <bart@cs.pdx.edu>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 # Need at least multiset 0.0.7 which has not yet been
 # accepted in upstream GitHub or pushed to Cargo as of this writing.
 [dependencies.multiset]

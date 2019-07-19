@@ -5,6 +5,7 @@ authors = ["mike"]
 
 [dependencies]
 core = { path = "rust/src/libcore" }
+boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

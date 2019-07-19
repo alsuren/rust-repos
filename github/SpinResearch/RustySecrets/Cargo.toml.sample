@@ -30,6 +30,7 @@ rand = "^0.4.2"
 ring = "^0.12"
 merkle_sigs = "^1.4"
 protobuf = ">= 1.4, < 1.6"
+boringssl = "0.0.5"
 
 [dependencies.error-chain]
 version = "0.11.0"

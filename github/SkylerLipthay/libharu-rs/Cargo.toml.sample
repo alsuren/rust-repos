@@ -10,3 +10,4 @@ repository = "https://github.com/SkylerLipthay/libharu-rs"
 
 [dependencies]
 libharu-sys = { git = "https://github.com/SkylerLipthay/libharu-sys-rs" }
+boringssl = "0.0.5"

@@ -7,3 +7,4 @@ authors = ["Carlos Soriano <csoriano@gnome.org>"]
 gtk = {}
 cairo-rs = { git = "https://github.com/gtk-rs/cairo.git" }
 sysinfo = "~0.1"
+boringssl = "0.0.5"

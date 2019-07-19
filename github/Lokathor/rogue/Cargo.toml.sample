@@ -18,6 +18,7 @@ serde_derive = "1.0"
 bincode = "1.0"
 randomize = "1.0"
 easycurses = "0.12"
+boringssl = "0.0.5"
 
 [profile.release]
 lto=true

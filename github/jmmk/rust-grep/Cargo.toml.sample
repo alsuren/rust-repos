@@ -5,3 +5,6 @@ authors = ["jmikem825@gmail.com"]
 
 [[bin]]
 name = "grep"
+
+[dependencies]
+boringssl = "0.0.5"

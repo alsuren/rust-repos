@@ -14,6 +14,7 @@ lazy_static = "1"
 ring = "0.11"
 rand = "0.5"
 serde = "1"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 features = ["tera_templates"]

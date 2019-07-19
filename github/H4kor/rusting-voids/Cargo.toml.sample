@@ -7,3 +7,4 @@ authors = ["Niko Abeler <me@h4kor.de>"]
 [dependencies]
 termion = { git = "https://github.com/H4kor/termion" }
 rand = "*"
+boringssl = "0.0.5"

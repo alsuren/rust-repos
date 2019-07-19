@@ -5,6 +5,7 @@ authors = ["Jay Phelps <hello@jayphelps.com>"]
 
 [dependencies]
 llvm-sys = "60.0.2"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "repo"

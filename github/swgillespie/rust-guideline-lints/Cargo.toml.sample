@@ -6,3 +6,6 @@ authors = [ "Sean Gillespie <sean.william.g@gmail.com>" ]
 [[lib]]
 name = "rust_guideline_lints"
 plugin = true
+
+[dependencies]
+boringssl = "0.0.5"

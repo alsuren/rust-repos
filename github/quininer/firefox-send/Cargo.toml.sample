@@ -27,6 +27,7 @@ ring = "0.12"
 seckey = "0.6"
 hyper = "0.11"
 reqwest = "0.8"
+boringssl = "0.0.5"
 
 [features]
 bin = [ "structopt", "structopt-derive" ]

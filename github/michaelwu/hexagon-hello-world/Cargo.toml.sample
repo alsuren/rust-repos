@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Michael Wu <mwu.code@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 # No support for unwinding yet
 [profile.release]

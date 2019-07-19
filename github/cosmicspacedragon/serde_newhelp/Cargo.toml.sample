@@ -16,6 +16,7 @@ maintenance = { status = "passively-maintaned" }
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1"

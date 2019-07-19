@@ -13,3 +13,6 @@ repository = "https://github.com/freebroccolo/morphism.rs"
 [lib]
 name = "morphism"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

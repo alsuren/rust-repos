@@ -30,6 +30,7 @@ exclude = [
 [dependencies]
 byteorder = "1"
 bytes = "0.4.7"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = { version = "0.5", default-features = false }

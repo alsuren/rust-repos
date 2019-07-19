@@ -2,3 +2,6 @@
 name = "tepostli"
 version = "0.1.0"
 authors = ["Nelson González <nigm2005@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

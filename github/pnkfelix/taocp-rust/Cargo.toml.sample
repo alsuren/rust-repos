@@ -8,6 +8,7 @@ build = "taocp-build.rs"
 
 [dependencies]
 log = "*"
+boringssl = "0.0.5"
 
 [features]
 benchmarking = [] # feature has no explicit dependencies

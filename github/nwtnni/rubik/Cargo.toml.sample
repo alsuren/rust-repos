@@ -7,6 +7,7 @@ edition = "2018"
 [dependencies]
 termion = "1.5.2"
 rand = "0.6.5"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

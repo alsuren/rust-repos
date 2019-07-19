@@ -16,6 +16,7 @@ nom = "4"
 rocket = "0.3.16"
 rocket_codegen = "0.3.16"
 rocket_static_fs = "0.5.1"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

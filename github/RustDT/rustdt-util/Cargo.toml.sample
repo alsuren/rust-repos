@@ -10,6 +10,7 @@ license = "Apache-2.0"
 keywords = ["rustdt"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 default = [ "test_utils" ]

@@ -6,6 +6,7 @@ authors = ["Daniel Fudala"]
 [dependencies]
 serde = "1.0"
 serde_derive = "*"
+boringssl = "0.0.5"
 
 [dependencies.euclid]
 version = "0.16"

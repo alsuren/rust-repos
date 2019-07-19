@@ -11,6 +11,7 @@ repository = "https://github.com/nathanfaucett/rs-atomic.git"
 homepage = "https://github.com/nathanfaucett/rs-atomic"
 
 [dependencies]
+boringssl = "0.0.5"
 [dev-dependencies]
 rng = {git = "https://github.com/nathanfaucett/rs-rng.git"}
 prng = {git = "https://github.com/nathanfaucett/rs-prng.git"}

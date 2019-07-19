@@ -10,3 +10,4 @@ path = "src/grep.rs"
 [dependencies]
 getopts = "*"
 tempdir = "*"
+boringssl = "0.0.5"

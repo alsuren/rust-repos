@@ -10,3 +10,4 @@ gtk = {version = "*", features=["v3_16"]}
 gdk = "*"
 glib = "*"
 pango = "*"
+boringssl = "0.0.5"

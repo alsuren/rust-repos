@@ -9,6 +9,7 @@ clippy = {version = "*", optional = true}
 conrod = "0.47"
 find_folder = "0.3"
 rand = "0.3"
+boringssl = "0.0.5"
 
 [features]
 default = []

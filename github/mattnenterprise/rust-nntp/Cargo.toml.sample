@@ -15,3 +15,6 @@ path = "src/nntp.rs"
 [[bin]]
 name = "example"
 path = "example.rs"
+
+[dependencies]
+boringssl = "0.0.5"

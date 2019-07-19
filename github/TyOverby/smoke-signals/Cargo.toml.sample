@@ -10,3 +10,4 @@ path = "./src/bin.rs"
 [dependencies]
 irc_message = "*"
 irc-channel = "*"
+boringssl = "0.0.5"

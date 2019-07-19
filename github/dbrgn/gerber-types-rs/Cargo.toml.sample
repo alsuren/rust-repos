@@ -22,6 +22,7 @@ uuid = "0.5"
 quick-error = "1.1.0"
 conv = "0.3"
 num = "0.1"
+boringssl = "0.0.5"
 
 [features]
 nightly = ["clippy"]

@@ -8,3 +8,6 @@ license="MIT+Apache2"
 [lib]
 name = "mutant"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

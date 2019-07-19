@@ -5,6 +5,7 @@ authors = ["JimmyCastiel"]
 
 [dependencies]
 regex = "0.2"
+boringssl = "0.0.5"
 
 [lib]
 # The name of a target is the name of the library that will be generated. This

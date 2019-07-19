@@ -17,6 +17,7 @@ tower-web = "0.3"
 http = "0.1"
 svc-authn = { version = "0.3", features = ["jose", "tower-web"] }
 svc-authz = "0.3"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 # ES256 support

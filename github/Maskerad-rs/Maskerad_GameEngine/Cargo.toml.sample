@@ -38,5 +38,6 @@ maskerad_network = { path = "maskerad_network" }
 maskerad_resource_management = { path = "maskerad_resource_management" }
 #------------------------------------------------------------------------
 maskerad_core = { path = "maskerad_core"}
+boringssl = "0.0.5"
 
 [workspace]

@@ -8,6 +8,7 @@ repository = "https://github.com/vitiral/ubyte"
 documentation = "https://docs.rs/ubyte"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.serde]
 default-features = false

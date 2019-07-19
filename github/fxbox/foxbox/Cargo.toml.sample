@@ -68,6 +68,7 @@ time = "0.1"
 timer = "0.1.6"
 url = "1.2"
 ws = { version = "0.5", features = ["ssl"] }
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "0.4"

@@ -2,3 +2,6 @@
 name = "rust-first-steps"
 version = "0.1.0"
 authors = ["Ivo Wingelaar <ivo.wingelaar@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

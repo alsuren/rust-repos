@@ -12,3 +12,4 @@ repository = "https://github.com/zhangjunfang/spider_rust"
 [dependencies]
 hyper = "*"
 url = "*"
+boringssl = "0.0.5"

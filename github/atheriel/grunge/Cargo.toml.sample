@@ -6,6 +6,9 @@ authors = [ "atheriel@gmail.com" ]
 [[lib]]
 name = "grunge"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.cgmath]
 git = "https://github.com/bjz/cgmath-rs.git"
 

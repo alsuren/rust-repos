@@ -9,3 +9,6 @@ license = "MIT"
 
 [lib]
 name = "wom"
+
+[dependencies]
+boringssl = "0.0.5"

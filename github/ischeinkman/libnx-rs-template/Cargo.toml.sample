@@ -28,6 +28,9 @@ lto = true
 debug = true
 opt-level = 0
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.libnx-rs]
 git = "https://github.com/ischeinkman/libnx-rs"
 branch = "master"

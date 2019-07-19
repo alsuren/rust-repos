@@ -12,6 +12,7 @@ dnsco-app= { path = "dnsco-app" }
 dnsco-data = { path = "dnsco-data" }
 dnsco-service = { path = "dnsco-service" }
 strava = { path = "strava" }
+boringssl = "0.0.5"
 
 
 [workspace]

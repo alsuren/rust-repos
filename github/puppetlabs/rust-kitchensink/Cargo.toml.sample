@@ -16,6 +16,7 @@ url = "1.4"
 openssl-sys = "0.9"
 log = "0.3"
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [target."cfg(windows)".dependencies]
 winapi = "0.2"

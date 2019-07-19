@@ -8,3 +8,6 @@ description = "Traits for encoding and decoding"
 documentation = "https://docs.rs/codicon"
 license = "Apache-2.0"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

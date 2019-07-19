@@ -7,3 +7,6 @@ license = "MIT/Apache-2.0"
 homepage = "https://github.com/energymon/energy-monitor-rs"
 repository = "https://github.com/energymon/energy-monitor-rs"
 keywords = ["energy", "monitor", "trait"]
+
+[dependencies]
+boringssl = "0.0.5"

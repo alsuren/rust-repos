@@ -6,3 +6,4 @@ authors = ["Markus Hedvall <mackanhedvall@gmail.com>"]
 [dependencies]
 chip8vm = { path = "chip8vm" }
 chip8ui = { path = "chip8ui" }
+boringssl = "0.0.5"

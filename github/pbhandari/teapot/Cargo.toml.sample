@@ -5,3 +5,6 @@ authors = ["Prajjwal Bhandari <pbhandari@pbhandari.ca>"]
 
 [[bin]]
 name = "teapot"
+
+[dependencies]
+boringssl = "0.0.5"

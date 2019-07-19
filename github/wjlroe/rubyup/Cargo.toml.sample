@@ -6,3 +6,4 @@ authors = ["William Roe <git@wjlr.org.uk>"]
 [dependencies]
 binary_shim = { path = "../binary_shim" }
 clap = "*"
+boringssl = "0.0.5"

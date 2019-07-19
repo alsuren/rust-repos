@@ -7,6 +7,7 @@ publish = false
 [dependencies]
 bounded-integer = { path = "./bounded-integer" }
 bounded-integer-plugin = { path = "./bounded-integer-plugin" }
+boringssl = "0.0.5"
 
 [lib]
 path = "/dev/null"

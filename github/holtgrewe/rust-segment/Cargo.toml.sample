@@ -16,6 +16,7 @@ log = "*"
 env_logger = "*"
 test-logger = "*"
 statrs = "*"
+boringssl = "0.0.5"
 
 [features]
 default = []

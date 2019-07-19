@@ -22,3 +22,4 @@ metal = ["metal-rs"]
 bitflags = "1.0"
 gleam = { version = "0.4", optional = true }
 metal-rs = { version = "0.6.4", optional = true }
+boringssl = "0.0.5"

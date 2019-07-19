@@ -6,3 +6,4 @@ authors = ["gerasyov-2427"]
 [dependencies]
 net2 = "0.2.27"
 websocket-reuseaddr = { path = "websocket", default-features = false, features = ["reuseaddr"] }
+boringssl = "0.0.5"

@@ -6,3 +6,6 @@ authors = ["Сухарик <suhr@i2pmail.org>"]
 
 [lib]
 name = "bike"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -10,3 +10,4 @@ debug = true
 wio = "*"
 image = { version = "*", features = ["png_codec", "jpeg"], default-features = false }
 rand = "*"
+boringssl = "0.0.5"

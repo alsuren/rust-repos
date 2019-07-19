@@ -3,6 +3,9 @@ name = "anders-gameboy-emulator"
 version = "0.1.0"
 authors = ["Anders Conbere <anders@conbere.org>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sdl2]
   version = "0.31"
   default-features = false

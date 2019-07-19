@@ -4,6 +4,9 @@ name = "piston-dependencies-test"
 version = "0.0.0"
 authors = ["TyOverby <ty@pre-alpha.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 
 [dependencies.glfw-native]
 

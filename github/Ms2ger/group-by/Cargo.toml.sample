@@ -5,3 +5,6 @@ authors = ["Ms2ger <Ms2ger@gmail.com>"]
 description = "A group_by function"
 repository = "https://github.com/Ms2ger/group-by"
 license = "MIT / Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

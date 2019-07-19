@@ -6,3 +6,6 @@ description = "Audio abstraction types for the emu project."
 homepage = "https://github.com/emu-rs/emu"
 repository = "https://github.com/emu-rs/emu-audio-types"
 license = "BSD-2-Clause"
+
+[dependencies]
+boringssl = "0.0.5"

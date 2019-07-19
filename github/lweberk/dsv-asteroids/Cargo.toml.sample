@@ -6,3 +6,4 @@ authors = ["Leonhard Weber <leonhard.weber@voipir.cl>", "Clemente Alarcon <cleme
 [dependencies]
 rand = {version = "*"}
 sfml = {version = "*", path = "lib/sfml"}
+boringssl = "0.0.5"

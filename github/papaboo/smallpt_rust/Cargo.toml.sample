@@ -7,3 +7,4 @@ authors = [ "Asger Hoedt <asgerhoedt@gmail.com>" ]
 [dependencies]
 rand = "*"
 num_cpus = "*"
+boringssl = "0.0.5"

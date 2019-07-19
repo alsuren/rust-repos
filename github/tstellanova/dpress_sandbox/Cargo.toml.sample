@@ -7,6 +7,7 @@ authors = ["Todd Stellanova <tstellanova@users.noreply.github.com>"]
 rand = "0.6.1"
 statistical = "0.1.1"
 sensulator = "0.1.0"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 sensulator = { git = "https://github.com/tstellanova/sensulator"  }

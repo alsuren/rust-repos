@@ -7,3 +7,6 @@ authors = ["Arcterus <arcterus@mail.com>"]
 [[bin]]
 
 name = "tetanus"
+
+[dependencies]
+boringssl = "0.0.5"

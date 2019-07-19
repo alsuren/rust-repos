@@ -8,6 +8,7 @@ read_input = { path = "./read_input/" }
 knot_hash = { path = "./knot_hash/" }
 bytecount = "*"
 regex = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "3"

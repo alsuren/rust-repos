@@ -19,6 +19,7 @@ mqttc = "0.1"
 netopt = "0.1"
 libc = "0.2"
 nix = "0.7"
+boringssl = "0.0.5"
 
 [replace]
 # "chrono:0.2.25" = { git = "https://github.com/lifthrasiir/rust-chrono.git" }

@@ -3,6 +3,9 @@ name = "pipe"
 version = "0.0.1"
 authors = ["York Xiang <bombless@126.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.winapi]
 git = "https://github.com/retep998/winapi-rs"
 

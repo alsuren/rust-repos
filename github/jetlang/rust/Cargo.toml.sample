@@ -6,3 +6,6 @@ authors = ["mrettig <mike.rettig@gmail.com>"]
 [dev-dependencies]
 time="0.1.30"
 syncbox = "0.2.3"
+
+[dependencies]
+boringssl = "0.0.5"

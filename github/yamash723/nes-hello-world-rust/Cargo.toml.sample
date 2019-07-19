@@ -7,6 +7,7 @@ build = "build.rs"
 [dependencies]
 arrayref = "*"
 lazy_static = "1.0"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.31"

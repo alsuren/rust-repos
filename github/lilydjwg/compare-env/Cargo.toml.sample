@@ -6,6 +6,7 @@ license = "MIT"
 
 [dependencies]
 quicli = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

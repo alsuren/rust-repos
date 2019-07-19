@@ -7,6 +7,7 @@ edition = "2018"
 [dependencies]
 nix = "0.10.0"
 libnotify = "1.0.3"
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.3.0"

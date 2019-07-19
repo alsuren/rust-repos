@@ -7,6 +7,7 @@ authors = ["Maciej Goszczycki <mgoszcz2@gmail.com>"]
 pest = "0.4.1"
 docopt = "0.8.0"
 num = { version = "0.1.39", default-features = false, features = ["bigint"] }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -11,6 +11,7 @@ log = { version = "0.3", default-features = false }
 microjson = { path = "microjson" }
 sensorweb-sys = { path = "sensorweb-sys" }
 smallhttp = { git = "https://github.com/fabricedesre/smallhttp.git" }
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"

@@ -8,6 +8,7 @@ panic_default = []  # TODO: check sanity of just looping without shutdown of som
 
 [dependencies]
 dynamo = { git = "https://github.com/austin-suborbitals/dynamo" }
+boringssl = "0.0.5"
 
 [target.thumbv7em-none-eabi.dependencies.rust-libcore]
 git = "https://github.com/hackndev/rust-libcore"

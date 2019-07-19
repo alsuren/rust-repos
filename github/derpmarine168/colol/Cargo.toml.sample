@@ -38,3 +38,6 @@ travis-ci = { repository = "derpmarine168/colol/", branch = "master" }
 
 is-it-maintained-issue-resolution = { repository = "JoelEllis/colol" }
 is-it-maintained-open-issues = { repository = "JoelEllis/colol" }
+
+[dependencies]
+boringssl = "0.0.5"

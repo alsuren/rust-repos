@@ -5,6 +5,7 @@ authors = ["toidiu <apoorv@toidiu.com>"]
 
 [dependencies]
 postgres = "~0.15"
+boringssl = "0.0.5"
 
 [dependencies.postgres-mapper]
 features = ["postgres-support"]

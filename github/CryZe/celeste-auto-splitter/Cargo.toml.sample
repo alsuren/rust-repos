@@ -9,6 +9,7 @@ asl = { path = "asl" }
 plain = "0.2.3"
 parking_lot = { version = "0.7.1", features = ["nightly"] }
 wstr = "0.2.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "celeste"

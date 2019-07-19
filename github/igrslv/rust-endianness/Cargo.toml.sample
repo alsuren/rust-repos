@@ -12,3 +12,6 @@ description = "Rust library for reading numbers in big-endian and little-endian.
 [dev-dependencies]
 quickcheck = "0.2"
 rand = "0.3"
+
+[dependencies]
+boringssl = "0.0.5"

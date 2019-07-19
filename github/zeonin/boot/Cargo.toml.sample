@@ -6,3 +6,4 @@ authors = ["Lawrence Brogan <larryv2.0@gmail.com>"]
 [dependencies]
 uefi = { git = "https://github.com/zeonin/uefi" }
 rlibc = "1.0.0"
+boringssl = "0.0.5"

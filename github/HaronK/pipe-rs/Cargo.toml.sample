@@ -11,6 +11,7 @@ description = "Thread-safe lock free FIFO queue implemented in Rust."
 
 [dependencies]
 clippy = {version = "0.0.89", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

@@ -21,6 +21,7 @@ ws2812-spi = {git = "https://github.com/smart-leds-rs/ws2812-spi-rs"}
 ws2812-timer-delay = {git = "https://github.com/smart-leds-rs/ws2812-timer-delay-rs", features = ["slow"]}
 apa102-spi = {git = "https://github.com/smart-leds-rs/apa102-spi-rs"}
 nb = "0.1.1"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 stm32f1xx-hal = { path = "stm32f1xx-hal" }

@@ -9,6 +9,7 @@ tar = "0.4.3"
 rustc-serialize = "*"
 hyper = "0.7.2"
 scoped-pool = "0.1.5"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -12,6 +12,7 @@ readme = "README.md"
 [dependencies]
 serde_json = { version = "1.0.33", optional = true }
 serde_self = { version = "1.0.82", optional = true, package = "serde" }
+boringssl = "0.0.5"
 
 [features]
 serde = ["serde_self", "serde_json"]

@@ -27,6 +27,7 @@ time = { version = "0.1.40", optional = true }
 
 # for capi
 libc = { version = "0.2.43", optional = true }
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["rlib", "cdylib", "staticlib"]

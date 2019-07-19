@@ -75,6 +75,7 @@ multipart = { version = "0.14", features = ["server", "nightly"], optional = tru
 lettre = { version = "0.7", optional = true }
 email-format = { version = "0.6", features = ["lettre"], optional = true }
 native-tls = { version = "0.1.5", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.5"

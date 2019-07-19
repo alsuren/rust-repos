@@ -6,3 +6,6 @@ description = "Crate for obtaining user information on a system"
 repository = "https://gitlab.com/core-utils/users_native"
 keywords = ["users", "user"]
 license = "GPL-3.0"
+
+[dependencies]
+boringssl = "0.0.5"

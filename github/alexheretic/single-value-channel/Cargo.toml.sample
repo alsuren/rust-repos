@@ -7,3 +7,6 @@ description = "Concurrent single-value update and receive channel "
 repository = "https://github.com/alexheretic/single-value-channel"
 keywords = ["concurrent", "channel"]
 license = "Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

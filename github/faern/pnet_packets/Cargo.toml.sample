@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["Linus Färnstrand <faern@faern.net>"]
 build = "build.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.pnet]
 #git = "https://github.com/faern/libpnet"
 #branch = "mockpnet"

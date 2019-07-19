@@ -7,3 +7,6 @@ authors = ["Ryan Marcus <ryan@rmarcus.info>"]
 [[bin]]
 
 name = "reverse_collatz"
+
+[dependencies]
+boringssl = "0.0.5"

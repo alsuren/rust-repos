@@ -6,3 +6,4 @@ authors = ["Cary Haynie <cary.haynie@gmail.com>"]
 [dependencies]
 disc_image-derive = { path = "disc_image-derive" }
 nom = { version = "^2.1", features = [ "regexp" ] }
+boringssl = "0.0.5"

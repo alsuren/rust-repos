@@ -3,3 +3,6 @@
 name = "xylosip-rs"
 version = "0.0.1"
 authors = ["Sebastian Lauwers <sebastian.lauwers@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

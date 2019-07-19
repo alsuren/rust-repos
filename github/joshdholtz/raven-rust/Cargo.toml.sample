@@ -8,3 +8,6 @@ authors = ["rokkincat <josh@rokkincat.com>"]
 
 name = "raven"
 
+[dependencies]
+boringssl = "0.0.5"
+

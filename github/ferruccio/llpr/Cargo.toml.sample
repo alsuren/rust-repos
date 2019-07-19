@@ -9,6 +9,7 @@ edition = "2018"
 quick-error = "1.2.2"
 phf = "0.7.23"
 inflate = "0.4.3"
+boringssl = "0.0.5"
 
 [build-dependencies]
 phf_codegen = "0.7.23"

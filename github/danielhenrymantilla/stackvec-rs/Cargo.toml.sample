@@ -18,6 +18,7 @@ categories = ["no-std", "memory-management", "rust-patterns"]
 license = "MIT"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.dev]
 debug = true

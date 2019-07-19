@@ -13,3 +13,4 @@ path = "src/bin.rs"
 
 [dependencies]
 plex = { git = "https://github.com/goffrie/plex.git", branch = "master" }
+boringssl = "0.0.5"

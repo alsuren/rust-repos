@@ -11,6 +11,7 @@ serde_json = "1.0"
 stdweb = "0.4"
 web_logger = "0.1"
 yew = { git = "https://github.com/DenisKolodin/yew.git", rev = "f392d7e" }
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

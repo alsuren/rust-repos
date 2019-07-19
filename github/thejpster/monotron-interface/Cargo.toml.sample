@@ -3,6 +3,9 @@ name = "monotron-interface"
 version = "0.1.0"
 authors = ["Jonathan 'theJPster' Pallant <github@thejpster.org.uk>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.crc]
 version = "^1.0.0"
 default-features = false

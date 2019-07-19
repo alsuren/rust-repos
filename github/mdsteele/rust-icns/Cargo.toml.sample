@@ -11,6 +11,7 @@ readme = "README.md"
 [dependencies]
 byteorder = "1"
 png = { version = "0.13", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["pngio"]

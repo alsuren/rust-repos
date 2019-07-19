@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 libc = { git = "https://github.com/rust-lang/libc" }
 errno = { git = "https://github.com/sunfishcode/rust-errno", branch="wasi" }
+boringssl = "0.0.5"

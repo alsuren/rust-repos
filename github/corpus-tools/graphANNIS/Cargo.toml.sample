@@ -55,6 +55,7 @@ criterion = {version="0.2", optional=true, default-features=false}
 prettytable-rs = {version="0.8", optional=true, default-features=false}
 
 libc = {version="0.2"}
+boringssl = "0.0.5"
 
 [package.metadata.docs.rs]
 rustdoc-args = ["--cfg", "docs_rs_workaround"]

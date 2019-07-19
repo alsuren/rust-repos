@@ -9,3 +9,4 @@ homepage = "https://github.com/knurling-rs/knurling-traits"
 description = "Traits used to specify a common interface layer for portable embedded drivers - making bare metal more ergonomic"
 
 [dependencies]
+boringssl = "0.0.5"

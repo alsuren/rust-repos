@@ -12,3 +12,4 @@ crate-type = ["cdylib"]
 [dependencies]
 ed25519-dalek = "1.0.0-pre.1"
 rand = "0.6.5"
+boringssl = "0.0.5"

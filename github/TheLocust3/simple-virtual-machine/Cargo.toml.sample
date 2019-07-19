@@ -6,3 +6,4 @@ authors = ["TheLocust3 <jake.kinsella@gmail.com>"]
 [dependencies]
 emu = { path = "./emu" }
 asm = { path = "./asm" }
+boringssl = "0.0.5"

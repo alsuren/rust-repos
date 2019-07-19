@@ -13,6 +13,7 @@ structopt = "0.2"
 gccjit-rs = {git = "https://github.com/playXE/gccjit-rs"}
 clap = "2.33"
 linked-hash-map = "0.5"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 lang_tester = {git = "https://github.com/softdevteam/lang_tester"}

@@ -6,3 +6,4 @@ authors = ["Jason Dusek <jason.dusek@gmail.com>"]
 [dependencies]
 chrono = "*"
 libc = "*"
+boringssl = "0.0.5"

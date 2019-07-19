@@ -5,3 +5,4 @@ authors = ["Ian Halliday <ianhall@microsoft.com>"]
 
 [dependencies]
 rust-crypto = { path = "deps/rust-crypto" }
+boringssl = "0.0.5"

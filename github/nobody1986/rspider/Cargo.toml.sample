@@ -13,6 +13,7 @@ hyper = "*"
 time="*"
 select = "*"
 rusqlite="*"
+boringssl = "0.0.5"
 
 [dependencies.syncbox]
 git = "https://github.com/carllerche/syncbox"

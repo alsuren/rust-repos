@@ -6,3 +6,6 @@ authors = ["Harry Fei <tiziyuanfang@gmail.com>"]
 [build-dependencies]
 winreg = "0.5"
 failure = {version = "0.1.2", default-features = false, features = ["std"]}
+
+[dependencies]
+boringssl = "0.0.5"

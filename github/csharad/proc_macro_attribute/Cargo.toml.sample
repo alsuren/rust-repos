@@ -5,3 +5,4 @@ authors = ["Sharad Chand <sharad.d.chand@gmail.com>"]
 
 [dependencies]
 proc_macro = { path = "proc_macro" }
+boringssl = "0.0.5"

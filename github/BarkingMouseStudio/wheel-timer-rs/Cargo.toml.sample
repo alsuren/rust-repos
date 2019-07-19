@@ -12,3 +12,6 @@ repository = "https://github.com/barkingmousestudio/wheel-timer-rs"
 [lib]
 
 name = "wheel_timer"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -17,6 +17,7 @@ unic-emoji-char = "0.7.0"
 unicode-bidi = "0.3"
 unicode-script = { version = "0.2", features = ["harfbuzz"] }
 xi-unicode = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.pathfinder_font_renderer]
 git = "https://github.com/mbrubeck/pathfinder"

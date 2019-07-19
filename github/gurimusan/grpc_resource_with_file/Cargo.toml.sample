@@ -13,6 +13,7 @@ failure = "0.1"
 chrono = "0.4"
 mime_guess = "1"
 clap = "2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-grpcio = "0.3.1"

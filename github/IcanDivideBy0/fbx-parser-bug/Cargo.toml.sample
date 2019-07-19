@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 fbxcel = { version = "0.2.0", features = ["dom"] }
 env_logger = "0.6.0"
+boringssl = "0.0.5"

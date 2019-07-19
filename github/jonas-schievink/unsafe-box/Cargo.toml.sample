@@ -13,6 +13,7 @@ readme = "README.md"
 license = "CC0-1.0"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 # TODO: rollback to upstream when https://github.com/mgeisler/version-sync/pull/41 is merged

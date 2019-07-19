@@ -9,3 +9,4 @@ ndarray = { version = "0.11.0", features = ["blas", "serde-1"] }
 blas-src = { version = "0.1.2", default-features = false, features = ["openblas"] }
 openblas-src = { version = "0.5.6", default-features = false, features = ["cblas"] }
 rand = "0.3.18"
+boringssl = "0.0.5"

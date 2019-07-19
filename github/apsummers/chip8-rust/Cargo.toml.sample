@@ -7,6 +7,7 @@ authors = ["Andy Summers <andrew.summers@wisc.edu>"]
 env_logger = "0.3.4"
 log = "0.3.6"
 rand = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 git = "https://github.com/AngryLawyer/rust-sdl2"

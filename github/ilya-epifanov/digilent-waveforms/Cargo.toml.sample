@@ -12,6 +12,7 @@ time = "0.1.42"
 itertools = "0.8.0"
 failure = "0.1.5"
 failure_derive = "0.1.5"
+boringssl = "0.0.5"
 
 [features]
 link-with-stub = []

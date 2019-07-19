@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 indextree = { git = "https://github.com/saschagrunert/indextree" }
+boringssl = "0.0.5"

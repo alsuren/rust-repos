@@ -10,3 +10,4 @@ license = "MIT"
 itertools = "*"
 rustc-serialize = "*"
 clippy = { git = "https://github.com/Manishearth/rust-clippy" }
+boringssl = "0.0.5"

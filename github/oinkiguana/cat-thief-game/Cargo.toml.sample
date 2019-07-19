@@ -15,6 +15,7 @@ serde_derive = "1.0"
 ron = "0.3"
 lazy_static = "1.0"
 ink-generator = { path = "../ink-generator", features = ["runtime"], default-features = false }
+boringssl = "0.0.5"
 
 [build-dependencies]
 toml = "0.4"

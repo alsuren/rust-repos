@@ -21,3 +21,6 @@ cargo-build = []
 [lib]
 name = "libc"
 path = "rust/src/liblibc/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

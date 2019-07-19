@@ -6,5 +6,8 @@ authors = [ "tupshin@tupshin.com" ]
 [[bin]]
 name = "basic" # the name of the executable to generate
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rust-cassandra-internal-api]
 git = "https://github.com/tupshin/rust-cassandra-wrapper"

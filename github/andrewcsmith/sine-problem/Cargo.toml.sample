@@ -6,3 +6,4 @@ authors = ["Andrew C. Smith <andrewchristophersmith@gmail.com>"]
 [dependencies]
 hound = '3.4.0'
 sample = { git = "https://github.com/RustAudio/sample.git" }
+boringssl = "0.0.5"

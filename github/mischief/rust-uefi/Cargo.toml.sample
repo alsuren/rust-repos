@@ -11,6 +11,7 @@ A rust crate for interacting with UEFI
 """
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 libc = "0.2"

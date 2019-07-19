@@ -6,3 +6,4 @@ authors = ["Nika Layzell <nika@thelayzells.com>"]
 [dependencies]
 amethyst = { git = "https://github.com/amethyst/amethyst", branch = "develop" }
 failure = "0.1"
+boringssl = "0.0.5"

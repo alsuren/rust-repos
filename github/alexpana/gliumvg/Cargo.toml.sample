@@ -6,6 +6,9 @@ authors = ["Alexandru Pana <alexandru.pana@katzstudio.com"]
 [lib]
 name = "gliumvg"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.glium]
 version = "*"
 features = ["glutin"]

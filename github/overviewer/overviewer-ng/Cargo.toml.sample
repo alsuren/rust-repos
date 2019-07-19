@@ -9,6 +9,7 @@ liboverviewer = {path = "liboverviewer"}
 nbtrs = {git = "https://github.com/overviewer/nbtrs"}
 rio = {git="https://github.com/overviewer/rio", version="^0.1.2"}
 image = "0.6"
+boringssl = "0.0.5"
 
 
 [[bin]]

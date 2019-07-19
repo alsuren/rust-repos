@@ -16,3 +16,6 @@ maintenance = { status = "passively-maintained" }
 
 [dev-dependencies]
 winapi = { version = "0.3", features = ["winbase"] }
+
+[dependencies]
+boringssl = "0.0.5"

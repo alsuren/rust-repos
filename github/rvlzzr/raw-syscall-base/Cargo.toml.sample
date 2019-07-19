@@ -17,3 +17,6 @@ maintenance = { status = "actively-developed" }
 is-it-maintained-issue-resolution = { repository = "rvlzzr/raw-syscall-base" }
 is-it-maintained-open-issues = { repository = "rvlzzr/raw-syscall-base" }
 travis-ci = { repository = "rvlzzr/raw-syscall-base" }
+
+[dependencies]
+boringssl = "0.0.5"

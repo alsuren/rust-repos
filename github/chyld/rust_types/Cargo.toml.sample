@@ -2,3 +2,6 @@
 name = "rust_types"
 version = "0.1.0"
 authors = ["Chyld Medford <chyld.medford@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

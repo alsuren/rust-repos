@@ -18,3 +18,4 @@ rocket_codegen = "0.3"
 diesel = { version = "1.1", features = ["sqlite"] }
 r2d2-diesel = "1.0"
 r2d2 = "0.8"
+boringssl = "0.0.5"

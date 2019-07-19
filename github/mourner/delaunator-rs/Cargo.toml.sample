@@ -21,3 +21,6 @@ bench = false
 [[bench]]
 name = "bench"
 harness = false
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,6 +8,7 @@ links = "sdk"
 [dependencies]
 freertos_rs = { git = "https://github.com/hashmismatch/freertos.rs", rev = "a5b296a64d48db97c711673a825f6a0e5b9d9188" }
 cty = "0.2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cc = { version = "1.0", features = ["parallel"] }

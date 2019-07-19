@@ -8,3 +8,6 @@ authors = ["Tal Levy <JubBoy333@gmail.com>"]
 name = "float_macros"
 plugin = true
 
+[dependencies]
+boringssl = "0.0.5"
+

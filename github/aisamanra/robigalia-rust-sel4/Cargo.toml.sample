@@ -19,3 +19,4 @@ unstable = []
 
 [dependencies]
 sel4-sys = { version = "0.0.28", path = "../sel4-sys" }
+boringssl = "0.0.5"

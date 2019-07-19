@@ -7,3 +7,6 @@ authors = ["whitenoise"]
 [[bin]]
 name = "rustboy"
 path = "src/librustboy.rs"
+
+[dependencies]
+boringssl = "0.0.5"

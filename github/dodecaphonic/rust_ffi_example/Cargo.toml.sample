@@ -3,3 +3,6 @@
 name = "rust_ffi_example"
 version = "0.0.1"
 authors = ["Vitor Capela <dodecaphonic@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

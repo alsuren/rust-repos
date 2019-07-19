@@ -7,6 +7,9 @@ authors = ["Holger Rapp <HolgerRapp@gmx.net>"]
 name = "crash_test"
 crate-type = ["dylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.mio]
 git = "https://github.com/carllerche/mio"
 rev = "8b84f3307a94ddf9e5e2aca6a39663e00705f3af"

@@ -10,3 +10,6 @@ license = "MIT"
 [build-dependencies]
 bindgen = "0.47"
 pkg-config = "0.3"
+
+[dependencies]
+boringssl = "0.0.5"

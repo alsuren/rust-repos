@@ -7,3 +7,4 @@ build = "build.rs"
 [dependencies]
 libc = "0.2"
 freetype = { git = "https://github.com/servo/rust-freetype.git" }
+boringssl = "0.0.5"

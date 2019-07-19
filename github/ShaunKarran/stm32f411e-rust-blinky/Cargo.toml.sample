@@ -5,3 +5,4 @@ authors = ["Shaun Karran <shaun.karran@gmail.com>"]
 
 [dependencies]
 stm32f411e-disco = { git = "https://github.com/ShaunKarran/stm32f411e-disco" }
+boringssl = "0.0.5"

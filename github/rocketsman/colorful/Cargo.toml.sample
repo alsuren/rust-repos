@@ -13,3 +13,4 @@ repository = "https://github.com/rocketsman/colorful"
 exclude = ["images/*","examples"]
 
 [dependencies]
+boringssl = "0.0.5"

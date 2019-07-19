@@ -11,6 +11,7 @@ clap = "2.26"
 falcon = {version="0.4.4", features=["thread_safe"]}
 gluon = "0.9.4"
 gluon_vm = "0.9.4"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "osprey"

@@ -3,3 +3,6 @@
 name = "hello_universe"
 version = "0.0.1"
 authors = ["David Asabina <vid@bina.me>"]
+
+[dependencies]
+boringssl = "0.0.5"

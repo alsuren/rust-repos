@@ -4,3 +4,6 @@ name = "RustedPi"
 version = "0.0.1"
 authors = ["Hans <hans1990@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

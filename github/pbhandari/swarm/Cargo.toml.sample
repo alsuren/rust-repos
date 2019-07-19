@@ -3,6 +3,9 @@ name = "swarm"
 version = "0.0.1"
 authors = ["Prajjwal Bhandari"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.xlib]
 git = "https://github.com/Kintaro/rust-xlib.git"
 branch = "class_hint"

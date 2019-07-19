@@ -19,5 +19,8 @@ version = "1"
 version = "0.5"
 features = ["serialization-serde"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [package.metadata.docs.rs]
 default-target = "x86_64-pc-windows-msvc"

@@ -9,6 +9,7 @@ readme = "README.md"
 keywords = ["rust", "sample", "project", "rustc", "cargo", "docker", "cloud", "cloud-native", "cloud native"]
 
 [dependencies]
+boringssl = "0.0.5"
 # Add dependencies here.
 
 [profile.dev]

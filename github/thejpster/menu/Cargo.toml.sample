@@ -6,3 +6,4 @@ description = "A simple #[no_std] command line interface."
 license = "MIT OR Apache-2.0"
 
 [dependencies]
+boringssl = "0.0.5"

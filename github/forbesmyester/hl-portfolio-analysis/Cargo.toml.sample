@@ -8,3 +8,4 @@ edition = "2018"
 csv = "1"
 serde = { version = "1.0", features = ["derive"] }
 quick-error = { version = "1.2.2" }
+boringssl = "0.0.5"

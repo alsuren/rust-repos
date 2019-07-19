@@ -7,3 +7,4 @@ build = "build.rs"
 
 [dependencies]
 png2gba = {path = "png2gba"}
+boringssl = "0.0.5"

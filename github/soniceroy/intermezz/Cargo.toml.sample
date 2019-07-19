@@ -10,4 +10,5 @@ crate-type = ["staticlib"]
 panic = "abort" # disable stack unwinding for the kernel
 
 [dependencies]
+boringssl = "0.0.5"
 

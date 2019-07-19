@@ -11,6 +11,7 @@ keywords = ["ansi", "commandline", "terminal", "colour"]
 license-file = "LICENSE.txt"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "ransid"

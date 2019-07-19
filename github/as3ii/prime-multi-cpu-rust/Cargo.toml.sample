@@ -5,6 +5,7 @@ authors = ["Lorenzo Debertolis <as3ii777@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

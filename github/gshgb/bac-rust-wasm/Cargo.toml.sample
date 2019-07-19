@@ -8,3 +8,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = { path = "../wasm-bindgen/", features = ['nightly'] }
+boringssl = "0.0.5"

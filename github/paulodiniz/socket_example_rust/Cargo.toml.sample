@@ -3,3 +3,6 @@
 name = "sock_client"
 version = "0.0.1"
 authors = ["paulo"]
+
+[dependencies]
+boringssl = "0.0.5"

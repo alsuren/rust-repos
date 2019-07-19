@@ -3,3 +3,6 @@
 name = "parser"
 version = "0.0.1"
 authors = ["BenP"]
+
+[dependencies]
+boringssl = "0.0.5"

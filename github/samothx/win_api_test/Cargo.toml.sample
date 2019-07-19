@@ -5,6 +5,7 @@ authors = ["Thomas <thomas@etnur.net>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3", features = ["winuser", "winbase", "handleapi", "fileapi"] }
 log = "*"

@@ -5,3 +5,4 @@ authors = ["Nathan Paul <nathanjpaul@gmail.com>"]
 
 [dependencies]
 libsquirrel3-sys = { path = "libsquirrel3-sys", version = "0.1.0" }
+boringssl = "0.0.5"

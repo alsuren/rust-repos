@@ -11,6 +11,7 @@ obj = { version = "0.8", features = ["genmesh"] }
 # obj-rs = { version = "0.4", features = ["glium-support"] }
 wavefront_obj = "5.1.0"
 cgmath = "*"
+boringssl = "0.0.5"
 
 
 [dependencies.glutin]

@@ -10,3 +10,6 @@ links = "v8"
 
 name = "v8"
 path = "lib/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

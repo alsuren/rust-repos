@@ -6,6 +6,7 @@ authors = ["Miguel Palhas <mpalhas@gmail.com>"]
 [dependencies]
 "rustc-serialize" = "0.2.14"
 "url" = "*"
+boringssl = "0.0.5"
 # "hyper" = "0.1.13"
 
 [dependencies.hyper]

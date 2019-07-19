@@ -5,6 +5,7 @@ authors = ["Jake Goldsborough <rjgoldsborough@gmail.com>"]
 
 [dependencies]
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.openssl]
 version = "0.8.3"

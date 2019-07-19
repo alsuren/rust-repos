@@ -13,6 +13,7 @@ path = "src/bin/repl.rs"
 simag_core = { path = "src/core" }
 simag_maths = { path = "src/maths" }
 termion = "^1.5"
+boringssl = "0.0.5"
 
 [workspace]
 members = ["src/core", "src/maths"]

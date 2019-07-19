@@ -11,3 +11,4 @@ nuklear-backend-gdi = "~0.2"
 winapi = {version = "~0.3", features = ["windef", "minwindef", "winuser", "winbase", "wingdi"]}
 itertools = "0.8"
 byteorder = "1"
+boringssl = "0.0.5"

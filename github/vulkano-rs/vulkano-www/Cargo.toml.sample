@@ -10,6 +10,7 @@ lazy_static = "1.1"
 mustache = "0.9"
 pulldown-cmark = "0.1"
 rouille = "2.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 vulkano = "0.11"

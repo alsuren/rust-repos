@@ -11,3 +11,4 @@ path = "src/example_scenes.rs"
 [dependencies]
 image = "*"
 criterion = "*"
+boringssl = "0.0.5"

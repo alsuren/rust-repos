@@ -7,3 +7,6 @@ authors = [ "Braden Whitten <bwhitten518@gmail.com>" ]
 [[bin]]
 
 name = "hello_world"
+
+[dependencies]
+boringssl = "0.0.5"

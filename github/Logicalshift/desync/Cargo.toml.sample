@@ -16,6 +16,7 @@ categories      = ["concurrency","asynchronous","algorithms","data-structures"]
 [dependencies]
 lazy_static     = "1.3"
 futures         = "0.1"
+boringssl = "0.0.5"
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 num_cpus        = "1.10"

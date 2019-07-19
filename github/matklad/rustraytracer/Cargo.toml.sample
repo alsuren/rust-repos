@@ -18,6 +18,7 @@ regex = "*"
 rustc-serialize = "*"
 time = "*"
 rayon = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

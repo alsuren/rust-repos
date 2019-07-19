@@ -8,5 +8,6 @@ edition = "2018"
 
 [dependencies]
 proconio-derive = { path = "proconio-derive" }
+boringssl = "0.0.5"
 
 [workspace]

@@ -2,3 +2,6 @@
 name = "rust-plar"
 version = "0.1.0"
 authors = ["Jeff Chen <jeffrey@cmu.edu>"]
+
+[dependencies]
+boringssl = "0.0.5"

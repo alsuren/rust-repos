@@ -11,6 +11,7 @@ serde = "1"
 serde_derive = "1"
 serde_json = "*"
 dotenv = "*"
+boringssl = "0.0.5"
 
 [dependencies.homeassistant]
 git = "https://github.com/maxjoehnk/homeassistant-rs"

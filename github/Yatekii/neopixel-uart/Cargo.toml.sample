@@ -9,6 +9,7 @@ cortex-m = "*"
 generic-array = "*"
 typenum = "*"
 lazy_static = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 panic-halt = "0.2.0"

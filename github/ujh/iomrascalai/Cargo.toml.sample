@@ -21,6 +21,7 @@ regex = "*"
 smallvec = "*"
 time = "*"
 toml = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 hamcrest = "*"

@@ -9,3 +9,6 @@ homepage = "https://github.com/ethanpailes/file_diff-rs"
 keywords = ["diff", "testing", "test", "file"]
 license = "BSD-3-Clause"
 description = "An atomic utility for diffing files in testing"
+
+[dependencies]
+boringssl = "0.0.5"

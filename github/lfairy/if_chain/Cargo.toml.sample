@@ -13,3 +13,6 @@ readme = "README.md"
 
 [badges]
 travis-ci = { repository = "lfairy/if_chain" }
+
+[dependencies]
+boringssl = "0.0.5"

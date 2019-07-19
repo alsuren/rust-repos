@@ -7,6 +7,7 @@ authors = ["russ"]
 fnv = "1.0.3"
 murmur3 = "0.3.0"
 bitarray = { git = "https://github.com/russmack/bitarray-rust" }
+boringssl = "0.0.5"
 #bitarray = { path = "../bitarray-rust" }
 
 [lib]

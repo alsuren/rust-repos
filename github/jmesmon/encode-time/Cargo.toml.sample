@@ -11,6 +11,7 @@ keywords = ["time", "encode", "serde", "serialize"]
 time = "*"
 serde = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "*"

@@ -5,6 +5,7 @@ authors = ["Kizarm <mrazik@volny.cz>"]
 
 [dependencies]
 rust-libcore = "*"
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"

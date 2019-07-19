@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 foobar = {path = "./foobar"}
+boringssl = "0.0.5"

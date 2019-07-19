@@ -7,6 +7,9 @@ edition = "2018"
 name = "rust_from_py"
 crate-type = ["cdylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.pyo3]
 version = "0.6.0-alpha.2"
 features = ["extension-module"]

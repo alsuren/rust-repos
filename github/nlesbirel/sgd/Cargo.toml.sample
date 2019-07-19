@@ -6,6 +6,7 @@ authors = ["Parker Knight <pknight24@protonmail.com", "Nicholas Lesbirel <nlesbi
 [dependencies]
 clap = "2.26.2"
 file = "1.1.1"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "s"

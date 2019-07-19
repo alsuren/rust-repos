@@ -5,3 +5,6 @@ authors = ["Viv-Rajkumar <viv.rajkumar@maidsafe.net>"]
 
 [lib]
 crate_type = ["cdylib"]
+
+[dependencies]
+boringssl = "0.0.5"

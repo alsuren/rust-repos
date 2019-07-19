@@ -6,3 +6,6 @@ authors = ["David Young-chan Kay <davidykay@gmail.com>"]
 [lib]
 name = "helloffi"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

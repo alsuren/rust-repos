@@ -11,6 +11,7 @@ crate-type = ["cdylib"]
 openat = "0.1"
 pamsm = "0.2"
 syslog = "4.0"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 pamsm = { git = "https://github.com/lucab/pamsm-rs.git", branch = "ups/feat-libpam" }

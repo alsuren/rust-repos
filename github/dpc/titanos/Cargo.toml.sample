@@ -29,6 +29,7 @@ path = "src/main.rs"
 rust-libcore = "0.0.3"
 titanium_arm_pl011 = { path = "lib/titanium_arm_pl011" }
 titanium = { path = "lib/titanium" }
+boringssl = "0.0.5"
 
 # TODO: Maybe soon... for #[test] running on host
 #[dependencies.std]

@@ -3,3 +3,6 @@ name = "des_rs_krautcat"
 version = "0.1.0"
 authors = ["Georgiy Odisharia <math.kraut.cat@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

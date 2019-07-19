@@ -2,3 +2,6 @@
 name = "ice9"
 version = "0.1.0"
 authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

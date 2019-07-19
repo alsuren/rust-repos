@@ -21,3 +21,6 @@ license = "MIT/Apache-2.0"
 
 [badges]
 travis-ci = { repository = "https://github.com/sdleffler/colosseum-rs" }
+
+[dependencies]
+boringssl = "0.0.5"

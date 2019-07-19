@@ -16,6 +16,7 @@ serde_json = "1.0"
 structopt = "0.2"
 
 clippy = { version = "*", optional = true }
+boringssl = "0.0.5"
 
 [build-dependencies]
 clap = "2.30"

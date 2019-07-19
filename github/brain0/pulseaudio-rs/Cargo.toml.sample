@@ -10,6 +10,7 @@ mio = "*"
 tokio-core = "*"
 futures = { git = "https://github.com/brain0/futures-rs.git", branch = "has_current" }
 future_pubsub = "*"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 futures = { git = "https://github.com/brain0/futures-rs.git", branch = "has_current" }

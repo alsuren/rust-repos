@@ -18,3 +18,6 @@ circle-ci = { repository = "romankoblov/rust-nvrtc", branch = "master" }
 [build-dependencies]
 bindgen = "~0.43"
 
+[dependencies]
+boringssl = "0.0.5"
+

@@ -9,3 +9,4 @@ authors = ["elisha <elisha@elishacook.com>"]
 nanovg = { version="*", features=["gl3"] }
 gl = "*"
 glfw = "*"
+boringssl = "0.0.5"

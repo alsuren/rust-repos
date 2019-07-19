@@ -23,6 +23,7 @@ url = "*"
 rusoto_core = "*"
 rusoto_s3 = "*"
 rusoto_credential = "*"
+boringssl = "0.0.5"
 
 [dependencies.habitat_core]
 git = "https://github.com/habitat-sh/core.git"

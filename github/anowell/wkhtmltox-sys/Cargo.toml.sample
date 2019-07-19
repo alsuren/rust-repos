@@ -10,3 +10,6 @@ repository = "https://github.com/anowell/wkhtmltox-sys"
 readme = "README.md"
 keywords = ["wkhtmltox", "wkhtmltopdf", "wkhtmltoimage", "pdf", "html"]
 
+[dependencies]
+boringssl = "0.0.5"
+

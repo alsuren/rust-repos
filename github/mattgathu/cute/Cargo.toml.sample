@@ -17,3 +17,4 @@ travis-ci = { repository = "mattgathu/cute"}
 appveyor = { repository = "mattgathu/cute"}
 
 [dependencies]
+boringssl = "0.0.5"

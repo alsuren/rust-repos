@@ -15,6 +15,7 @@ linked_list_allocator = "0.5"
 once = "0.3"
 raw-cpuid = "3.0"
 compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

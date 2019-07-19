@@ -3,3 +3,6 @@
 name = "raft"
 version = "0.0.1"
 authors = ["Carlos Cobo <toqueteos@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

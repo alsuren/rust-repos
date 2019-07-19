@@ -8,5 +8,6 @@ build = "build.rs"
 
 gbalib = { path = "gbalib", version = "*" }
 gbaimg = { path = "gbaimg", version = "*" }
+boringssl = "0.0.5"
 [lib]
 crate-type = ["staticlib"]

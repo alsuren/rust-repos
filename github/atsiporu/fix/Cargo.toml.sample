@@ -9,6 +9,7 @@ tbr = { path = "/home/andrey/workspace/rustprojects/threadedbufreader" }
 futures = "*"
 tokio-core = "*"
 tokio-tls = { git = "https://github.com/tokio-rs/tokio-tls" }
+boringssl = "0.0.5"
 
 [lib]
 name = "fixr"

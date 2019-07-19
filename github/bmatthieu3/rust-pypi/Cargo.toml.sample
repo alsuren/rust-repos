@@ -10,3 +10,6 @@ requires = ["setuptools", "wheel", "setuptools-rust"]
 [lib]
 name = "rust_pypi"
 crate-type = ["cdylib"]
+
+[dependencies]
+boringssl = "0.0.5"

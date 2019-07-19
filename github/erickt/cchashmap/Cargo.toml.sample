@@ -12,3 +12,4 @@ compiletest_rs = { version = "*", optional = true }
 libc = "*"
 quickcheck = "*"
 time = "*"
+boringssl = "0.0.5"

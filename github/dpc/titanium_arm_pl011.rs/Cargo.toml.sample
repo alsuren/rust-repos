@@ -7,6 +7,9 @@ authors = ["Dawid Ciężarkiewicz <dpc@ucore.info>"]
 name = "arm_pl011"
 path = "lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.titanium]
 git = "https://github.com/dpc/titanium.rs.git"
 

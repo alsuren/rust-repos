@@ -8,6 +8,9 @@ readme = "README.md"
 repository = "https://github.com/ceph3us/rust-caliburn"
 homepage = "https://github.com/ceph3us/rust-caliburn"
 
+[dependencies]
+boringssl = "0.0.5"
+
 # Blocked until libsyntax and new collections are frozen
 # [dependencies.peg]
 # git = "https://github.com/kevinmehall/rust-peg.git"

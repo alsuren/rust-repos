@@ -5,6 +5,7 @@ authors = ["Peter Helbing <peter@abulafia.org>"]
 
 [dependencies]
 byteorder = "1.2.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 hound = "3.4.0"

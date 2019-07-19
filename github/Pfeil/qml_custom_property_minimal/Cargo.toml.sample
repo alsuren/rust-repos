@@ -8,6 +8,7 @@ build = "build.rs"
 [dependencies]
 qmetaobject = "*"
 cpp = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cpp_build = "*"

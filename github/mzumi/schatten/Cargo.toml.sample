@@ -6,3 +6,4 @@ authors = ["mzumi <mzumi@gmail.com>"]
 [dependencies]
 hyper = "*"
 crossbeam = "*"
+boringssl = "0.0.5"

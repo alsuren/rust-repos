@@ -4,5 +4,8 @@ name = "pithia_static_server"
 version = "0.0.1"
 authors = ["Peter Reid <peter.d.reid@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.gridui]
 path = "../pithia/gridui"

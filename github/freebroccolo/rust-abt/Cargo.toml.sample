@@ -2,3 +2,6 @@
 name = "abt"
 version = "0.0.0"
 authors = ["Darin Morrison <darinmorrison+git@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

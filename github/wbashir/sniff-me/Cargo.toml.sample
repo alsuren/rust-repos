@@ -7,3 +7,6 @@ authors = [ "Warsame Bashir <warsame.bashir@bixinsoftware.com>", "Franco Ross <f
 [[bin]]
 
 name = "main"
+
+[dependencies]
+boringssl = "0.0.5"

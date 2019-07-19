@@ -5,3 +5,6 @@ repository = "https://github.com/PistonDevelopers/inventory"
 license = "MIT"
 version = "0.0.1"
 authors = ["Fenhl <fenhl@fenhl.net>"]
+
+[dependencies]
+boringssl = "0.0.5"

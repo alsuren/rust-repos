@@ -5,5 +5,6 @@ authors = ["Johan Tillmar <johan.tillmar@gmail.com>"]
 
 [dependencies]
 genome = {path = "genome"}
+boringssl = "0.0.5"
 
 [workspace]

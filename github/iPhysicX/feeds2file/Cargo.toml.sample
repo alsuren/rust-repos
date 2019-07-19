@@ -8,3 +8,4 @@ edition = "2018"
 rss = {version = "1.0", features = ["from_url"]}
 chrono = "0.4"
 url = "1.7.2"
+boringssl = "0.0.5"

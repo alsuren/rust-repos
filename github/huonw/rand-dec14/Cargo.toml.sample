@@ -5,6 +5,9 @@ version = "0.0.1"
 
 authors = []
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.dsfmt-rs]
 git = "https://github.com/huonw/dsfmt-rs"
 branch = "asm--"

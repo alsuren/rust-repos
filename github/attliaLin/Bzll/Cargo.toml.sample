@@ -41,6 +41,7 @@ fnv = "1.0"
 
 flame = { version = "^0.1.9", optional = true }
 flamer = { version = "^0.1.2", optional = true }
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi="*"

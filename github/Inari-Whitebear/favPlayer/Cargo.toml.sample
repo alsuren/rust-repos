@@ -2,3 +2,6 @@
 name = "favPlayer"
 version = "0.1.0"
 authors = ["Inari <no@no.no>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,3 +8,4 @@ travis-ci = { repository = "mcgoo/openonload-rs" }
 
 [dependencies]
 openonload-sys = { version="0.1.0", path = "openonload-sys" }
+boringssl = "0.0.5"

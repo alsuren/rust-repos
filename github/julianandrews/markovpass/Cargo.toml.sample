@@ -6,6 +6,7 @@ authors = ["Julian Andrews <jandrews271@gmail.com>"]
 [dependencies]
 getopts = "0.2"
 rand = "0.3.0"
+boringssl = "0.0.5"
 
 [[bin]]
 path = "src/main.rs"

@@ -22,3 +22,4 @@ chrono = "0.2"
 xcb       = { version = "0.7.5", features = ["randr", "damage", "thread"] }
 xcb-util  = { version = "0.1.5", features = ["icccm", "ewmh", "image", "shm", "thread"] }
 byteorder = "0.5"
+boringssl = "0.0.5"

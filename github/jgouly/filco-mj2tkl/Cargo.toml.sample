@@ -10,6 +10,7 @@ opt-level = "s"
 [dependencies]
 mkl27z = { git = "https://github.com/jgouly/mkl27z-rs.git" }
 keyboard-app = { git = "https://github.com/jgouly/keyboard-app.git" }
+boringssl = "0.0.5"
 
 [features]
 default = ["mkl27z/usb"]

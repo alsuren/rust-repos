@@ -5,3 +5,6 @@ authors = ["James Tranovich <jtranovich@gmail.com>"]
 
 [dev-dependencies]
 rustml = "0.0.7"
+
+[dependencies]
+boringssl = "0.0.5"

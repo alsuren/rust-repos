@@ -9,3 +9,4 @@ authors = ["Susytech <admin@superstring.ch>", "Paritytech <admin@parity.io>"]
 
 [dependencies]
 protobuf = {version="1.4",registry="susytech"}
+boringssl = "0.0.5"

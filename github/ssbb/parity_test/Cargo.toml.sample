@@ -5,6 +5,7 @@ authors = ["Sviatoslav Bulbakha <mail@ssbb.me>"]
 
 [dependencies]
 ethcore-bigint = { git = "https://github.com/paritytech/parity.git" }
+boringssl = "0.0.5"
 
 [lib]
 name = "test_parity"

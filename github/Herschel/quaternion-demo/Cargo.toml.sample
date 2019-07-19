@@ -6,6 +6,7 @@ authors = ["Mike Welsh <mwelsh@gmail.com>"]
 [dependencies]
 glium = "0.21"
 nalgebra = "0.15"
+boringssl = "0.0.5"
 
 [dependencies.conrod]
 version = "0.60"

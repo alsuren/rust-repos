@@ -11,3 +11,6 @@ path = "src/relations.rs"
 test = true
 doctest = true
 doc = true
+
+[dependencies]
+boringssl = "0.0.5"

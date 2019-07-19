@@ -22,6 +22,7 @@ reductive = "0.2"
 finalfusion = { git = "https://github.com/finalfusion/finalfusion-rust.git" }
 stdinout = "0.4"
 toml = "0.4"
+boringssl = "0.0.5"
 
 [features]
 default = []

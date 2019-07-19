@@ -13,3 +13,4 @@ homepage = "https://github.com/RustAudio/time_calc"
 num = "0.1.28"
 rand = "0.3.12"
 serde = { optional = true, version = "1.0", features = ["serde_derive"] }
+boringssl = "0.0.5"

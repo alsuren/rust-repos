@@ -3,3 +3,6 @@ name = "rusternel"
 version = "0.1.0"
 authors = ["k-masatany <masatani@fusic.co.jp>"]
 build = "build.rs"
+
+[dependencies]
+boringssl = "0.0.5"

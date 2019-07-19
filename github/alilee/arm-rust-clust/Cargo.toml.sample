@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 kernel = { path = "./kernel" }
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 1

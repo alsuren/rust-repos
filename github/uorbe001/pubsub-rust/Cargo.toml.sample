@@ -4,6 +4,9 @@ name = "pubsub"
 version = "0.0.1"
 authors = ["Unai Orbe <unai@orbe.me>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.redis-rs]
 git = "https://github.com/uorbe001/redis-rs.git"
 

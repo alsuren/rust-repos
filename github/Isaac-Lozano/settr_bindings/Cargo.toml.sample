@@ -9,3 +9,4 @@ crate-type = ["dylib"]
 
 [dependencies]
 sa2_set = {path = "../sa2_set"}
+boringssl = "0.0.5"

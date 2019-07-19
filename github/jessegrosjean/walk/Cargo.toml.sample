@@ -18,6 +18,7 @@ travis-ci = { repository = "jessegrosjean/jwalk" }
 [dependencies]
 rayon = "1.0.3"
 crossbeam = "0.7.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.11"

@@ -9,6 +9,7 @@ authors = ["Ruslan Prokopchuk <fer.obbee@gmail.com>"]
 synth-modules = { path = "synth-modules" }
 jack-modules = { path = "jack-modules" }
 jack-stack = { path = "jack-stack" }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

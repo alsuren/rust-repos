@@ -2,3 +2,6 @@
 name = "xkcd1537"
 version = "0.0.1"
 authors = ["KeyboardFire <andy@keyboardfire.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

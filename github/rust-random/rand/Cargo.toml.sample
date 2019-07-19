@@ -54,6 +54,7 @@ rand_hc = { path = "rand_hc", version = "0.1" }
 # Do not depend on 'getrandom_package' directly; use the 'getrandom' feature!
 getrandom_package = { version = "0.1.1", package = "getrandom", optional = true }
 log = { version = "0.4", optional = true }
+boringssl = "0.0.5"
 
 [dependencies.packed_simd]
 # NOTE: so far no version works reliably due to dependence on unstable features

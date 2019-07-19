@@ -42,3 +42,6 @@ test = true
 [[example]]
 name = "chess"
 test = true
+
+[dependencies]
+boringssl = "0.0.5"

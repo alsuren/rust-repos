@@ -5,3 +5,4 @@ authors = ["hekrause <hekrause@htwg-konstanz.de>"]
 
 [dependencies]
 measurements = { git = "https://github.com/hekrause/rust-measurements.git" }
+boringssl = "0.0.5"

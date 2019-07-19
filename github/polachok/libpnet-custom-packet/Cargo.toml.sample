@@ -5,6 +5,7 @@ authors = ["Alexander Polakov <plhk@sdf.org>"]
 build = "build.rs"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies.pnet_macros]
 version = "0.12"

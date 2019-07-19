@@ -18,6 +18,7 @@ CPUs, as well as raw interfaces to platform-specific instructions.
 [dependencies]
 serde = { version = "0.4", optional = true }
 serde_macros = { version = "0.4", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 cfg-if = "0.1"

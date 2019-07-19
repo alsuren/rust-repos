@@ -13,6 +13,7 @@ clap = "2.25.1"
 env_logger = "0.5"
 iron = "0.6.0"
 log = "0.4.1"
+boringssl = "0.0.5"
 
 [package.metadata.deb]
 maintainer = "Leo Schwarz <mail@leoschwarz.com>"

@@ -8,6 +8,7 @@ edition = "2018"
 
 [dependencies]
 idl = {path="./idl"}
+boringssl = "0.0.5"
 
 [[example]]
 name = "file_run_dialog"

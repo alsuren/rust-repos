@@ -16,6 +16,7 @@ git = "https://github.com/servo/rust-xlib"
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 bmp = "*"

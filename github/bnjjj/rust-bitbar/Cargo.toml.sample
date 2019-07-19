@@ -14,3 +14,4 @@ categories = ["os", "parsing"]
 travis-ci = { repository = "bnjjj/rust-bitbar", branch = "master" }
 
 [dependencies]
+boringssl = "0.0.5"

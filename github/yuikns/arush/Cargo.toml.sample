@@ -38,4 +38,7 @@ license-file = "LICENSE"
 name = "test"
 path = "test/test.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 

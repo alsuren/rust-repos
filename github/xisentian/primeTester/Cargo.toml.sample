@@ -5,5 +5,6 @@ authors = ["Xisen Tian <xisentian@gmail.com>"]
 
 [dependencies]
 rand = "*"
+boringssl = "0.0.5"
 [dependencies.rmp]
 path = "../rmp"

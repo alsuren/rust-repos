@@ -9,3 +9,4 @@ smoltcp = {git="https://github.com/podhrmic/smoltcp", default-features = true}
 log = "0.3"
 env_logger = "0.4"
 getopts = "0.2"
+boringssl = "0.0.5"

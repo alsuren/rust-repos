@@ -8,3 +8,4 @@ lazy_static = "0.2.8"
 uuid = { version = "0.5.0", features = ["v4"] }
 regex = "0.2"
 rocker = { path = "../rocker" }
+boringssl = "0.0.5"

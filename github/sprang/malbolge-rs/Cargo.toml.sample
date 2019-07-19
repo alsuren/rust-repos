@@ -3,3 +3,6 @@
 name = "malbolge"
 version = "0.0.1"
 authors = ["Steve Sprang <scs@stevesprang.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

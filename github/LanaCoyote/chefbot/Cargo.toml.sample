@@ -4,6 +4,9 @@ name = "chefbot"
 version = "0.0.1"
 authors = ["David Reeve <nerdboy6@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rustirc]
 
 git = "https://github.com/Lancey6/rust-irc"

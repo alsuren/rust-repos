@@ -8,6 +8,7 @@ keywords = ["nvidia", "cuda", "GPU", "GPGPU"]
 categories = ["external-ffi-bindings"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.26.3"

@@ -9,3 +9,6 @@ license = "MIT"
 keywords = ["iterator", "iter", "split", "splits"]
 
 repository = "https://github.com/Lolirofle/str_splits"
+
+[dependencies]
+boringssl = "0.0.5"

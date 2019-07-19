@@ -5,3 +5,6 @@ authors = ["Boris-Chengbiao Zhou <bobo1239@web.de>"]
 
 [lib]
 proc-macro = true
+
+[dependencies]
+boringssl = "0.0.5"

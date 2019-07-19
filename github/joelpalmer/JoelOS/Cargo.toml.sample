@@ -5,6 +5,7 @@ authors = ["Joel Palmer <joelpalmer@gmail.com>"]
 
 [dependencies]
 bootloader_precompiled = "0.2.0"
+boringssl = "0.0.5"
 
 [package.metadata.bootimage]
 default-target = "x86_64-joel_os.json"

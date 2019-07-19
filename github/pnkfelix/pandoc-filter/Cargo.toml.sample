@@ -12,6 +12,7 @@ tango = "0.5.0"
 pandoc = "0.4.*"
 pandoc_ast = "0.3.*"
 rustc-serialize = "0.3.*"
+boringssl = "0.0.5"
 
 [lib]
 name = "pandoc_filter"

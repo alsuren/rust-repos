@@ -30,6 +30,7 @@ uuid = { version = ">=0.7", features = ["v4", "serde"] }
 separator =  ">= 0.3"
 #serde_json = "*"
 bincode = "*"
+boringssl = "0.0.5"
 
 [features]
 profiling =[]

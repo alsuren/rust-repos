@@ -14,6 +14,7 @@ l20n = "^0.1"
 hoedown = "^5.0.0"
 urlencoded = "*"
 staticfile = { version = "^0.3", optional = true }
+boringssl = "0.0.5"
 
 [features]
 serves_static = ["staticfile"]

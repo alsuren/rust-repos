@@ -5,3 +5,4 @@ authors = ["seb-odessa <seb@ukr.net>"]
 
 [dependencies]
     fb2parser = { git = "https://github.com/seb-odessa/fb2parser.git" }
+boringssl = "0.0.5"

@@ -3,3 +3,6 @@
 name = "dinosaur"
 version = "0.0.1"
 authors = [ "Lucas Silva Simões <simoes.lucas.silva@gmail.com>", "Paulo Roberto de Oliveira Castro <p.oliveira.castro@gmail.com>", "Rodrigo de Azeredo Orselli <rodrigo.orselli@gmail.com>" ]
+
+[dependencies]
+boringssl = "0.0.5"

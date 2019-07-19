@@ -15,3 +15,6 @@ path = "src/kick.rs"
 
 [profile.release]
 lto = true
+
+[dependencies]
+boringssl = "0.0.5"

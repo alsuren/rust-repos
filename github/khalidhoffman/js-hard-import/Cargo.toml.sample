@@ -6,6 +6,7 @@ authors = ["khalidhoffman <khalidhoffman@gmail.com>"]
 [dependencies]
 esprit = { git = "https://github.com/dherman/esprit.git" }
 glob = "0.2.11"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "js-hard-import"

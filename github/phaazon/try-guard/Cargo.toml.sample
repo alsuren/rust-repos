@@ -17,3 +17,6 @@ travis-ci = { repository = "phaazon/try-guard", branch = "master" }
 [features]
 default = ["try-trait"]
 try-trait = []
+
+[dependencies]
+boringssl = "0.0.5"

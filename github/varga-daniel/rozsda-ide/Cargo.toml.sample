@@ -9,6 +9,7 @@ gdk = "0.10"
 glib = "0.7.1"
 pango = "0.6.0"
 tiny-keccak = "1.4.2"
+boringssl = "0.0.5"
 
 [dependencies.sourceview]
 features = ["v3_18"]

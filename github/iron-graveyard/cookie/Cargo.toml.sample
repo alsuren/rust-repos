@@ -10,6 +10,9 @@ keywords = ["iron", "web", "cookies"]
 name = "cookie"
 path = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.iron]
 
 git = "https://github.com/iron/iron.git"

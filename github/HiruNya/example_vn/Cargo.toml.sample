@@ -7,6 +7,7 @@ authors = ["Hiruna Jayamanne <hirunav2@gmail.com>"]
 piston_window = "*"
 gfx_glyph = "*"
 gfx_device_gl = "*"
+boringssl = "0.0.5"
 
 [dependencies.gobu]
 git = "https://github.com/HiruNya/gobu"

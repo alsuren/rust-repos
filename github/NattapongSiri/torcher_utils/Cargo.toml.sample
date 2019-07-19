@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 rand = "0.6"
 torcher = { git = "https://github.com/NattapongSiri/torcher.git" }
+boringssl = "0.0.5"

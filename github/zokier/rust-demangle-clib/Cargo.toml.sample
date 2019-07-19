@@ -9,4 +9,5 @@ crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
 rustc-demangle = "*"
+boringssl = "0.0.5"
 

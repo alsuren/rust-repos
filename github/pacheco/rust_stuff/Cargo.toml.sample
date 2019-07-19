@@ -18,6 +18,7 @@ fnv = "*"
 serde = "*"
 serde_derive = "*"
 bincode = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

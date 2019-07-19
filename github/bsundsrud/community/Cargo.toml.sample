@@ -34,3 +34,4 @@ log = "0.3"
 env_logger = "0.3"
 bodyparser = { git = "https://github.com/iron/body-parser.git" }
 serde_json = "*"
+boringssl = "0.0.5"

@@ -18,6 +18,7 @@ name = "talc"
 
 [dependencies]
 rusttype = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = { version="0.2", features=['real_blackbox'] }

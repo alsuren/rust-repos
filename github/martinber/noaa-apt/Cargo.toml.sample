@@ -43,6 +43,7 @@ gtk = { git = "https://github.com/gtk-rs/gtk.git", optional = true, features = [
 gdk = { git = "https://github.com/gtk-rs/gdk.git", optional = true }
 gio = { git = "https://github.com/gtk-rs/gio.git", optional = true }
 glib = { git = "https://github.com/gtk-rs/glib.git", optional = true }
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3", features = ["shellapi"] }

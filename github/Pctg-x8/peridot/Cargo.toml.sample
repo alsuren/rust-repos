@@ -12,6 +12,7 @@ libc = "*"
 peridot-vertex-processing-pack = { path = "vertex-processing-pack" }
 peridot-archiver = { path = "archiver" }
 bedrock = { git = "https://github.com/Pctg-x8/bedrock", features = ["Presentation", "Implements"] }
+boringssl = "0.0.5"
 
 [workspace]
 exclude = ["extras/"]

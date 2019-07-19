@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["James Cook <mokus@deepbondi.net>"]
 build = "cp_linker_scripts.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.core]
 git = "https://github.com/hackndev/rust-libcore.git"
 

@@ -10,6 +10,9 @@ name = "X11"
 doc = true
 crate-type = ["rlib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.syntax_extensions]
 
 path = "lib/syntax_extensions"

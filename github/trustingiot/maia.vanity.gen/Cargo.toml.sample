@@ -26,6 +26,7 @@ iota-tmath = { path = "tmath" }
 iota-sign = { path = "sign" }
 iota-curl-cpu = { path = "curl-cpu" }
 rand = "0.3.15"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 iota-curl-cpu = { path = "curl-cpu" }

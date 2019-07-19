@@ -20,6 +20,7 @@ bitflags = "1.0"
 rand = "0.6"
 structopt = "0.2"
 eff-wordlist = "1.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.9"

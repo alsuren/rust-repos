@@ -22,6 +22,7 @@ tempdir = "0.3.7"
 textwrap = "0.10.0"
 toml = "0.4.8"
 walkdir = "2.2.5"
+boringssl = "0.0.5"
 
 [dependencies.chrono]
 features = ["serde"]

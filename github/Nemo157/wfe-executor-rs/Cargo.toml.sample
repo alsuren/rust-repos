@@ -5,6 +5,7 @@ authors = ["Wim Looman <wim.looman@kiwi.ki>"]
 
 [dependencies]
 cortex-m = "0.4.0"
+boringssl = "0.0.5"
 
 [dependencies.futures-core]
 git = "https://github.com/rust-lang-nursery/futures-rs"

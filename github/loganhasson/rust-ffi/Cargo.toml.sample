@@ -6,3 +6,6 @@ authors = ["Logan Hasson <logan.hasson@gmail.com>"]
 [lib]
 name = "embed"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

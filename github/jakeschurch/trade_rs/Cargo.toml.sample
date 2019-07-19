@@ -10,3 +10,6 @@ repository = "https://github.com/jakeschurch/trade_rs"
 [badges]
 travis-ci = { repository = "jakeschurch/trade_rs" }
 maintenance = { status = "actively-developed" }
+
+[dependencies]
+boringssl = "0.0.5"

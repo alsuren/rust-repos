@@ -7,3 +7,6 @@ edition = "2018"
 [lib]
 name = "rsgeneparselib"
 crate-type = ["dylib", "rlib"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -7,3 +7,4 @@ authors = ["Yusuke Sasaki <yusuke.sasaki.nuem@gmail.com>"]
 msgpack-rpc = { path = "../msgpack-rpc-rs" }
 futures = "~0.1"
 rmpv = { version = "*", features = ["with-serde"] }
+boringssl = "0.0.5"

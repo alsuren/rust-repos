@@ -5,3 +5,4 @@ authors = ["Adam Hess <adamhess1991@gmail.com>"]
 
 [dependencies]
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"

@@ -9,3 +9,6 @@ license = "Apache-2.0/MIT"
 repository = "https://github.com/RustAudio/panning.git"
 homepage = "https://github.com/RustAudio/panning"
 
+[dependencies]
+boringssl = "0.0.5"
+

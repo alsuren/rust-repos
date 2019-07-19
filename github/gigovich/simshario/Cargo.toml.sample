@@ -12,6 +12,7 @@ default = ["gtk_3_10"]
 
 [dependencies]
 log = "0.3.6"
+boringssl = "0.0.5"
 
 [dependencies.gtk]
 version = "0.1.1"

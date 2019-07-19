@@ -17,3 +17,4 @@ zmq = { git = "https://github.com/erickt/rust-zmq" }
 log = "0.3"
 env_logger = "0.3"
 zmq-mio = { path = "zmq-mio" }
+boringssl = "0.0.5"

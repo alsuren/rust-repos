@@ -23,3 +23,4 @@ maintenance = { status = "passively-maintained" }
 [dependencies]
 proc-macro2 = "^0.4.27"
 quote = { version = "^0.6.11", default-features = false, optional = true } # used for testing, please ignore
+boringssl = "0.0.5"

@@ -11,3 +11,4 @@ crate-type = ["cdylib"]
 [dependencies]
 foo = { path = "foo" }
 bar = { path = "bar" }
+boringssl = "0.0.5"

@@ -7,6 +7,9 @@ repository = "https://github.com/strymon-system/typename"
 documentation = "https://docs.rs/typename"
 description = "Stable alternative to Rust's type_name intrinsic."
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.typename_derive]
 optional = true
 version = "0.1.3"

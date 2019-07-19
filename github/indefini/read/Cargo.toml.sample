@@ -13,3 +13,4 @@ path = "elementary-sys"
 [dependencies]
 #libc = "0.1"
 libc = "*"
+boringssl = "0.0.5"

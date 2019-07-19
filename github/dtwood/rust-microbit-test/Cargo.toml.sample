@@ -6,3 +6,4 @@ authors = ["David Wood <devel@dtwood.uk>"]
 [dependencies]
 nrf51-hardware = { git = "https://github.com/dtwood/nrf51-hardware" }
 nrf51-lang = { git = "https://github.com/dtwood/nrf51-lang" }
+boringssl = "0.0.5"

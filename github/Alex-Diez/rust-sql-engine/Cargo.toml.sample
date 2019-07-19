@@ -13,3 +13,6 @@ path = "test/lib.rs"
 
 [dev-dependencies]
 expectest = "*"
+
+[dependencies]
+boringssl = "0.0.5"

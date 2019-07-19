@@ -22,3 +22,4 @@ walkdir = "1.0" # recursive dir traversing
 chrono = "0.4" # time and data utils
 kqueue = "0.2" # kqueue Rust API for Kqueue
 kqueue-sys = "0.2" # kqueue event system library wrapper
+boringssl = "0.0.5"

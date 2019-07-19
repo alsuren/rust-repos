@@ -11,6 +11,7 @@ getopts = "0.2"
 colored = "1.6"
 libc = "0.2.0"
 rand = "0.3"
+boringssl = "0.0.5"
 
 [lib]
 path = "src/mod.rs"

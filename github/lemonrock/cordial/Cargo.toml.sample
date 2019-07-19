@@ -100,6 +100,7 @@ woff2-sys = "0.0.1"
 xml-rs = "0.6.1"
 zero85 = "0.2.0"
 zopfli = "0.3.6"
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 nix = "0.9.0"

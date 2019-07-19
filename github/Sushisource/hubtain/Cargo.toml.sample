@@ -27,6 +27,7 @@ slog-async = "2"
 slog-term = "2"
 colored = "1"
 lazy_static = "1"
+boringssl = "0.0.5"
 
 [features]
 expensive_tests = []

@@ -16,6 +16,7 @@ protobuf = "2.0.2"
 # turn on default-features = true, and Go (>=1.7) is required, because gRPC core depends on boringssl,
 # which uses go to generate some data sets.
 grpcio = { version = "0.4", default-features = false, features = ["protobuf-codec"] }
+boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-grpcio = "0.3"

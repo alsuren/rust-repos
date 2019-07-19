@@ -37,6 +37,7 @@ toml = "0.4"
 url = "1.1"
 url_serde = "0.2"
 tokio = "0.1.19"
+boringssl = "0.0.5"
 
 [build-dependencies]
 error-chain = "0.11"

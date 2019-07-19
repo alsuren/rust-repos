@@ -5,3 +5,6 @@ authors = ["Jonathan Soo <jcsoo@agora.com>"]
 
 [workspace]
 members = ["cobs", "leb128", "tlv", "sctl", "packet"]
+
+[dependencies]
+boringssl = "0.0.5"

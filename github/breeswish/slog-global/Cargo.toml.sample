@@ -17,6 +17,7 @@ slog = "2"
 arc-swap = "0.3"
 lazy_static = "1.2"
 log = { version = "0.3", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 slog-term = "2.4"

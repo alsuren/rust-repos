@@ -3,3 +3,6 @@
 name = "brainfuck"
 version = "0.0.1"
 authors = ["Blake Williams <blake@blakewilliams.me>"]
+
+[dependencies]
+boringssl = "0.0.5"

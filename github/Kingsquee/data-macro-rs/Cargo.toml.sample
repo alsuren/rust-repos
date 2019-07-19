@@ -7,3 +7,6 @@ authors = ["Kingsley Tolmie <kingsley.tolmie@gmail.com>"]
 [[example]]
 name = "example"
 path = "examples/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -9,6 +9,7 @@ license = "MIT/Apache-2.0"
 readme = "README.md"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.9.3"

@@ -2,3 +2,6 @@
 name = "adb"
 version = "0.1.0"
 authors = ["Austin Wiles <13wilesa@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

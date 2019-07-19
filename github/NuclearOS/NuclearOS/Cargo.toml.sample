@@ -32,6 +32,7 @@ bitflags = "1.0.4"
 
 # Bootloader
 bootloader = "0.3"
+boringssl = "0.0.5"
 
 # Lazy Static
 [dependencies.lazy_static]

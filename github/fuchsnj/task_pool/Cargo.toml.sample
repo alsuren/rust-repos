@@ -3,3 +3,6 @@
 name = "task_pool"
 version = "0.0.1"
 authors = ["Nathan Fuchs"]
+
+[dependencies]
+boringssl = "0.0.5"

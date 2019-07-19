@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 nom = "*"
 tdmath = { git = "https://github.com/sean-h/tdmath.git" }
+boringssl = "0.0.5"

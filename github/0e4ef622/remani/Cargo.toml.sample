@@ -32,6 +32,7 @@ conrod_piston = "0.63.0"
 simplemad = { optional = true, version = "0.9" }
 hound = { optional = true, version = "3.4" }
 lewton = { optional = true, version = "0.9" }
+boringssl = "0.0.5"
 
 [patch.crates-io]
 cpal = { git = "https://github.com/0e4ef622/cpal", rev = "buffer-size-request" }

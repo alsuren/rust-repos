@@ -16,3 +16,6 @@ cc = "1.0"
 
 [badges]
 travis-ci = { repository = "niklasf/rust-gaviota-sys", branch = "master" }
+
+[dependencies]
+boringssl = "0.0.5"

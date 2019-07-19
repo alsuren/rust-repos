@@ -7,3 +7,4 @@ authors = ["Zhi Wang <zwang@cs.fsu.edu>"]
 conrod = {version = "0.60", features = ["glium", "winit"]}
 rand = "0.5"
 unicorn = "0.8"
+boringssl = "0.0.5"

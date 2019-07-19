@@ -8,6 +8,7 @@ edition = "2018"
 gl = "*"
 glutin = "*"
 rg = { git = "https://github.com/fkaa/rg/", rev = "feaea7928bf4f76cf94b4a744d1a5ee02d24901d" }
+boringssl = "0.0.5"
 
 [dependencies.font-kit]
 git = "https://github.com/fkaa/font-kit/"

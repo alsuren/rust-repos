@@ -21,6 +21,7 @@ directories = "1.0.1"
 failure = "0.1.1"
 failure_derive = "0.1.1"
 clap = {version = "2.32.0", features = ["yaml", "suggestions", "wrap_help"]}
+boringssl = "0.0.5"
 
 [package.metadata.deb]
 maintainer = "David Wagner <support@nimtool.com>"

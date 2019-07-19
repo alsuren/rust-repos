@@ -15,6 +15,7 @@ categories = ["text-processing", "command-line-utilities"]
 blake2-rfc = "0.2.18"
 rand = "0.4.2"
 data-encoding = "2.1.1"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

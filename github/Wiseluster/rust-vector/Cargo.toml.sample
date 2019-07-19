@@ -2,3 +2,6 @@
 name = "vector"
 version = "0.0.1"
 authors = ["Wiseluster <chinaware@foxmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

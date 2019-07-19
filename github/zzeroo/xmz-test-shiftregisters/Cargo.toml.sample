@@ -9,6 +9,7 @@ rand = "0.3"
 serde = "1"
 serde_derive = "1"
 sysfs_gpio = "0.5"
+boringssl = "0.0.5"
 
 
 [dependencies.clap]

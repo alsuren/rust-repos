@@ -8,3 +8,4 @@ authors = ["Cameron Lind <mediocresurgeon@gmail.com>"]
 [dependencies]
 geodesics = { path = "geodesics" }
 serialization = { path = "serialization" }
+boringssl = "0.0.5"

@@ -5,3 +5,4 @@ authors = ["Jakub Hlusička <limeth@protonmail.com>"]
 
 [dependencies]
 conrod = { version = "0.51.1", features = [ "piston" ] }
+boringssl = "0.0.5"

@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["tstellanova <tstellanova@users.noreply.github.com>"]
 edition = "2018"
 
+[dependencies]
+boringssl = "0.0.5"
+
 
 [dependencies.uorb-codec]
 git = "https://github.com/tstellanova/uorb-codec.git"

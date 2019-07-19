@@ -13,6 +13,7 @@ exclude = ["target/*", "*.png", "bak/*"]
 # categories = ["asynchronous", "concurrency", "science", "api-bindings"]
 
 [dependencies]
+boringssl = "0.0.5"
 # winit = "*"
 # libloading = "*"
 # smallvec = "*"

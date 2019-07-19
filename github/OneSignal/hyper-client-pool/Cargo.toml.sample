@@ -15,6 +15,7 @@ tokio = ">=0.1.7"
 fpool = "~0.3.1"
 raii-counter = "0.1"
 hyper-http-connector = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.5"

@@ -8,3 +8,6 @@ license = "MIT"
 repository = "https://github.com/bolinfest/pathvar-rs"
 readme = "README.md"
 include = ["Cargo.toml", "src/**/*.rs", "README.md", "LICENSE"]
+
+[dependencies]
+boringssl = "0.0.5"

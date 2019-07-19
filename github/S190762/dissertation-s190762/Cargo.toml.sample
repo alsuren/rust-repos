@@ -27,3 +27,4 @@ imgui-winit-support = { path="imgui-rs/imgui-winit-support"}
 imgui = { path="imgui-rs"}
 imgui-sys = {path = "imgui-rs/imgui-sys", features=["glium"]}
 ron = "*"
+boringssl = "0.0.5"

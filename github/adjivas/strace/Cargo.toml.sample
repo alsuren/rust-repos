@@ -3,5 +3,8 @@ name = "hey"
 version = "0.1.0"
 authors = ["adjivas <adjivas@users.noreply.github.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.libc]
 version = "0.2"

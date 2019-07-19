@@ -20,3 +20,6 @@ for `dlopen`, or as the ELF loader of an operating system.
 
 [dev-dependencies]
 libc = "0.2"
+
+[dependencies]
+boringssl = "0.0.5"

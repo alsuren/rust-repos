@@ -7,6 +7,7 @@ authors = ["Chris McDonald <mail.chris.mcdonald@gmail.com>"]
 nom = "3.2"
 rchunks = "*"
 rand = "0.4.2"
+boringssl = "0.0.5"
 
 [profile.test]
 opt-level = 1

@@ -6,3 +6,6 @@ authors = ["Jim Blandy <jimb@red-bean.com>", "Jason Orendorff <jason.orendorff@g
 [dev-dependencies]
 compiletest_rs = "*"
 
+[dependencies]
+boringssl = "0.0.5"
+

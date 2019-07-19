@@ -5,6 +5,7 @@ authors = ["Kim Desrosiers <kimdesro@gmail.com>"]
 
 [dependencies]
 ggez = "0.4"
+boringssl = "0.0.5"
 
 [features]
 cargo-resource-root = []

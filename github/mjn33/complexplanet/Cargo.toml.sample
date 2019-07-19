@@ -5,6 +5,7 @@ authors = ["Matthew Nicholls <matthew.nicholls95@hotmail.co.uk>"]
 
 [dependencies]
 clap = "~2.22.2"
+boringssl = "0.0.5"
 
 [dependencies.rust-libnoise]
 git = "https://github.com/mjn33/rust-libnoise"

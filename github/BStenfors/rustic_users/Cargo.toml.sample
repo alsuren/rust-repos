@@ -36,6 +36,7 @@ tls-api-native-tls = "0.1.22"
 
 futures = "0.1.26"
 futures-cpupool = "0.1.8"
+boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-rust-grpc = { git = "https://github.com/stepancheg/grpc-rust" }

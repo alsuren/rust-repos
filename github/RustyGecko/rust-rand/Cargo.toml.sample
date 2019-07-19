@@ -21,3 +21,6 @@ git = "https://github.com/sondrele/rust-src.git"
 
 [target.thumbv7m-none-eabi.dependencies.core]
 git = "https://github.com/RustyGecko/rust-core.git"
+
+[dependencies]
+boringssl = "0.0.5"

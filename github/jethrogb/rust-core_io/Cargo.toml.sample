@@ -30,3 +30,6 @@ rustc_version = "0.1.7"
 [features]
 alloc = []
 collections = ["alloc"]
+
+[dependencies]
+boringssl = "0.0.5"

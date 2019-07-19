@@ -16,6 +16,7 @@ lazy_static = "1.0.0"
 lewton = { version = "0.9", optional = true }
 cgmath = "0.14"
 minimp3 = { version = "0.3.2", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["flac", "vorbis", "wav", "mp3"]

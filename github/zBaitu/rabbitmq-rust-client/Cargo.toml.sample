@@ -12,3 +12,4 @@ rdk-adt = { path = "/home/baitu/workspace/rust/rdk/rdk-adt" }
 
 byteorder = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

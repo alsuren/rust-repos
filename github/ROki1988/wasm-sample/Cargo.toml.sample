@@ -6,6 +6,9 @@ authors = ["ROki1988 <roki.swindler@gmail.com>"]
 [lib]
 crate-type = ["cdylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rodio]
 path = "../rodio"
 default-features = false

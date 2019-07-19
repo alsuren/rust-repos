@@ -8,3 +8,4 @@ serde_json = "*"
 mio = "*"
 uuid = { version = "*", features = ["v4"] }
 lazy_static = "*"
+boringssl = "0.0.5"

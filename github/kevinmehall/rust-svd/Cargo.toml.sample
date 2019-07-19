@@ -7,5 +7,8 @@ authors = ["Tim Cameron Ryan <id@timryan.org>"]
 [[bin]]
 name = "svd"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.xml-rs]
 git="https://github.com/netvl/xml-rs.git"

@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["miao jing <243127395@qq.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 bencher = "0.1.2"

@@ -5,3 +5,4 @@ authors = ["Marc Schettke <schettke@ms2.info>"]
 
 [dependencies]
 conrod = { git = "https://github.com/masche842/conrod", branch = "backend_agnostic" }
+boringssl = "0.0.5"

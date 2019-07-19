@@ -5,3 +5,6 @@ authors = ["Pascal Hertleif <killercup@gmail.com>"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/killercup/cargo-fix"
 description = "I'm just a placeholder! `cargo install rustfix` instead!"
+
+[dependencies]
+boringssl = "0.0.5"

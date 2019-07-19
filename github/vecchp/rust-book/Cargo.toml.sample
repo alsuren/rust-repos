@@ -5,6 +5,7 @@ authors = ["Paul"]
 
 [dependencies]
 time = "0.1.36"
+boringssl = "0.0.5"
 
 [lib]
 name = "price"

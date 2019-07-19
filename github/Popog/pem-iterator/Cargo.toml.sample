@@ -11,6 +11,7 @@ keywords = ["pem", "decode", "parser", "iterator", "crypto"]
 categories = ["cryptography", "no-std", "encoding"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 default = ["std"]

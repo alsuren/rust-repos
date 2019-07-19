@@ -23,6 +23,7 @@ rand = "^0.5"
 nanoid = "^0.2"
 strsim = "^0.8"
 percent-encoding = "1.0.1"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

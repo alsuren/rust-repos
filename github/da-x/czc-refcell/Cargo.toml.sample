@@ -5,3 +5,6 @@ authors = ["Dan Aloni"]
 
 [features]
 unsafe_refcell_as_safe = []
+
+[dependencies]
+boringssl = "0.0.5"

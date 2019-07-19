@@ -6,6 +6,7 @@ build = "build.rs"
 
 [dependencies]
 octh = { path = "../octh" }
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

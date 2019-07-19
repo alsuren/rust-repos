@@ -7,6 +7,7 @@ authors = ["mmihira <mmihira.w@gmail.com>"]
 time = "0.1.36"
 uuid = { version = "0.5", features = ["v4"] }
 rand = "*"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.29"

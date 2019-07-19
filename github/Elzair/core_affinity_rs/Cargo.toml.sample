@@ -13,6 +13,7 @@ categories = ["os"]
 
 [dependencies]
 num_cpus = "^1.6.2"
+boringssl = "0.0.5"
 
 [target.'cfg(any(target_os = "linux", target_os = "macos"))'.dependencies]
 libc = "^0.2.30"

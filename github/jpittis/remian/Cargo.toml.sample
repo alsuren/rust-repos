@@ -8,3 +8,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 helix = "*"
+boringssl = "0.0.5"

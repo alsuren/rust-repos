@@ -28,6 +28,7 @@ gosh-models = {git = "https://github.com/gosh-rs/models.git", tag="v0.0.5"}
 lbfgs = {git = "https://github.com/ybyygu/rust-lbfgs.git", tag="v0.0.14" }
 text-parser = {git = "https://github.com/ybyygu/text-parser.git", tag="v0.0.3" }
 cg_descent = {git = "https://github.com/ybyygu/cg_descent.rs" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 approx = "0.3"

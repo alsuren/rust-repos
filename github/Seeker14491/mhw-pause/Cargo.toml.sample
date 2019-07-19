@@ -6,3 +6,4 @@ authors = ["Brian Bowman <seeker14491@gmail.com>"]
 [dependencies]
 failure = "0.1.2"
 winapi = { version = "0.3", features = ["handleapi", "processthreadsapi", "tlhelp32", "winnt"] }
+boringssl = "0.0.5"

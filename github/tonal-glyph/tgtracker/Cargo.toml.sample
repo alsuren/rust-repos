@@ -62,6 +62,7 @@ serde_osc = "0.4.2"             # serde for osc
 ttf-noto-sans = "0.1.1"         # open source font
 winit = "0.18.0" # windowing library
 yansi = "0.5.0"                 # easy terminal coloring
+boringssl = "0.0.5"
 
 [dev-dependencies]
 mockstream = "0.0.3"            # mock read+write streams

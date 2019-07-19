@@ -5,6 +5,7 @@ authors = ["kb5000 <a123edcrfv@live.cn>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3.7", features = ["winuser", "libloaderapi"]}

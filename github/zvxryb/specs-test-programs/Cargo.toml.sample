@@ -10,6 +10,7 @@ rand = "0.6.5"
 rayon = {version="1.0.3"}
 shred-derive = {path="./shred/shred-derive"}
 specs = {path="./specs"}
+boringssl = "0.0.5"
 
 [[bin]]
 name = "multi_world"

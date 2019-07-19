@@ -23,4 +23,5 @@ rusty = []
 [dependencies]
 winapi="*"
 user32-sys = "*"
+boringssl = "0.0.5"
 #libloading = "*"

@@ -10,3 +10,6 @@ homepage = "https://github.com/mhallin/vectorclock-rs"
 [lib]
 name = "vectorclock"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,6 +8,7 @@ pwasm-std = "0.6"
 pwasm-ethereum = "0.3"
 pwasm-abi = "0.1"
 pwasm-abi-derive = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.bigint]
 version = "4"

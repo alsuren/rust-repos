@@ -5,3 +5,4 @@ authors = ["agatan <agatan039@gmail.com>"]
 
 [dependencies]
 signpostc_syntax = { path = "./syntax" }
+boringssl = "0.0.5"
