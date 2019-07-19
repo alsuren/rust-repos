@@ -10,6 +10,7 @@ name="bgpstream"
 
 [dependencies]
 libc = "0.2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.42.2"

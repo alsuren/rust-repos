@@ -6,3 +6,4 @@ authors = ["Rene Eichhorn <rene.eichhorn@mni.thm.de>"]
 [dependencies]
 log = "0.3"
 libfornix = { path = "../libfornix/" }
+boringssl = "0.0.5"

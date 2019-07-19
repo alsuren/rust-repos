@@ -17,6 +17,7 @@ gitlab = { repository = "imp/requests-rs" }
 
 [dependencies]
 hyper = "0.10"
+boringssl = "0.0.5"
 
 [dependencies.hyper-native-tls]
 optional = true

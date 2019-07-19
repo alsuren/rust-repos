@@ -12,4 +12,5 @@ crate-type = ["rlib", "dylib"]
 #discord = { path = "../discord-rs" }
 discord = { git = "https://github.com/SpaceManiac/discord-rs" }
 libloading = "0.3"
+boringssl = "0.0.5"
 # discord = '0.6.0'

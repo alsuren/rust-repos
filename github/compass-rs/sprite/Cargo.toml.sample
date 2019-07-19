@@ -14,5 +14,8 @@ homepage = "https://github.com/compass-rs/sprite"
 [lib]
 name = "sprite"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.image]
 version = "0.3.7"

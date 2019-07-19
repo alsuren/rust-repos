@@ -15,3 +15,6 @@ git = "https://github.com/BurntSushi/quickcheck"
 [dev-dependencies.quickcheck_macros]
 git = "https://github.com/BurntSushi/quickcheck"
 
+[dependencies]
+boringssl = "0.0.5"
+

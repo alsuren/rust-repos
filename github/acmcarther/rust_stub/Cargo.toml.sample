@@ -5,3 +5,6 @@ authors = ["Alex McArther <acmcarther@gmail.com>"]
 
 [features]
 nightly = []
+
+[dependencies]
+boringssl = "0.0.5"

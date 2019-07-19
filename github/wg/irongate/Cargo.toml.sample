@@ -21,6 +21,7 @@ regex           = "*"
 regex_macros    = "*"
 rustc-serialize = "*"
 time            = "*"
+boringssl = "0.0.5"
 
 [dependencies.sketchy]
 git = "https://github.com/codahale/sketchy"

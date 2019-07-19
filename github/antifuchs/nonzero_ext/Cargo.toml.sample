@@ -36,6 +36,7 @@ nightly = ["compiletest_rs"]
 allow_failure = false
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 

@@ -9,3 +9,6 @@ license = "MIT"
 repository = "https://github.com/dmitmel/tic-tac-toe-evolution.git"
 homepage = "https://github.com/dmitmel/tic-tac-toe-evolution#readme"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

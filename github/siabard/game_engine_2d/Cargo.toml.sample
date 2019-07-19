@@ -10,6 +10,7 @@ use_sdl2_mac_framework = ["sdl2/use_mac_framework"]
 
 [dependencies]
 uuid = { version = "0.6", features = ["v4"] }
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "*"

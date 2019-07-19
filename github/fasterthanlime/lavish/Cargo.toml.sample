@@ -22,6 +22,7 @@ env_logger = "0.6.1"
 
 # work around https://github.com/rust-lang/rust/issues/59134
 bitflags = "=1.0.4"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 strip-ansi-escapes = "0.1.0"

@@ -12,3 +12,6 @@ readme = "Readme.md"
 keywords = ["syslog", "rfc5424", "5424", "logging", "5425"]
 categories = ["encoding", "development-tools::debugging"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

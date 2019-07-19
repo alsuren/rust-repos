@@ -8,3 +8,4 @@ git = "https://github.com/jcmoyer/rust-lua53"
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"

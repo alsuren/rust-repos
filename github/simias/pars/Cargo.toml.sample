@@ -5,3 +5,4 @@ authors = ["Lionel Flandrin <lionel@svkt.org>"]
 
 [dependencies]
 pars-lexer = { path = "pars-lexer" }
+boringssl = "0.0.5"

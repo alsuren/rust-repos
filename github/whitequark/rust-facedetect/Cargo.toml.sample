@@ -5,3 +5,4 @@ authors = ["whitequark <whitequark@whitequark.org>"]
 
 [dependencies]
 opencv = { git = "git://github.com/whitequark/opencv-rust" }
+boringssl = "0.0.5"

@@ -15,3 +15,4 @@ name = "crypto-nacl"
 [dependencies]
 rust-crypto = "*"
 rand = "*"
+boringssl = "0.0.5"

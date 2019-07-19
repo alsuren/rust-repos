@@ -7,3 +7,6 @@ license = "MIT"
 documentation = "https://docs.rs/uhttp_transfer_encoding"
 repository = "https://github.com/kchmck/uhttp_transfer_encoding.rs"
 keywords = ["http", "header", "transfer-encoding", "transfer", "encoding"]
+
+[dependencies]
+boringssl = "0.0.5"

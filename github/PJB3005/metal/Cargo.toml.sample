@@ -9,3 +9,6 @@ description = """
 A material that is typically hard, opaque, shiny, and has good electrical and
 thermal conductivity.
 """
+
+[dependencies]
+boringssl = "0.0.5"

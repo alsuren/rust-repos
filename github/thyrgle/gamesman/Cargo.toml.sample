@@ -5,6 +5,7 @@ authors = ["Christopher Sumnicht <csumnicht@berkeley.edu>"]
 
 [dependencies]
 cask = "0.4.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "gamesman"

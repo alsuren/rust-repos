@@ -13,6 +13,7 @@ include = ["Cargo.toml", "src/**/*.rs", "README.md", "LICENSE-APACHE", "LICENSE-
 glib-sys = ">= 0.5"
 gobject-sys = ">= 0.5"
 gio-sys = ">= 0.5"
+boringssl = "0.0.5"
 
 [build-dependencies]
 pkg-config = ">= 0.3"

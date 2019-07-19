@@ -43,6 +43,7 @@ rustc-serialize = "0.3"
 term = "*"
 urlencoded = "*"
 itertools = "*"
+boringssl = "0.0.5"
 
 [dependencies.llvm-sys]
 git = "https://github.com/hubris-lang/llvm-sys.rs"

@@ -36,6 +36,7 @@ ordered-float = "0.5"
 multiqueue    = "0.3"
 env_logger    = "0.4"
 sled          = "0.14"
+boringssl = "0.0.5"
 
 [dependencies.bytes]
 version = "0.*"

@@ -8,3 +8,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 nsswitch_service = {git = "https://github.com/jorendorff/nsswitch_service"}
+boringssl = "0.0.5"

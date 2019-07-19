@@ -10,6 +10,7 @@ atomicwrites = "0.2"
 stopwatch = "*"
 serde = "1.0.54"
 serde_derive = "1.0.54"
+boringssl = "0.0.5"
 
 [dependencies.env_logger]
 git = "https://github.com/chklauser/log.git"

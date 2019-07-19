@@ -11,3 +11,6 @@ keywords = ["posix", "unix", "socket", "fd", "ipc"]
 
 [build-dependencies]
 gcc = "0.3"
+
+[dependencies]
+boringssl = "0.0.5"

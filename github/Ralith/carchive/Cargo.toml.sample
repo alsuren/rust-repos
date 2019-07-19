@@ -7,6 +7,7 @@ description = "Content-addressed archive coding"
 [dependencies]
 byteorder = "1.1"
 err-derive = "0.1.5"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 structopt = "0.2"

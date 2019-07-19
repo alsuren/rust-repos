@@ -11,4 +11,5 @@ documentation = "https://docs.rs/gl_generator_profiling_struct"
 
 [dependencies]
 gl_generator = { version = "0.9", features = ["unstable_generator_utils"] }
+boringssl = "0.0.5"
 

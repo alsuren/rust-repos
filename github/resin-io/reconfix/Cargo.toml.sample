@@ -17,6 +17,9 @@ crate-type = ["lib", "cdylib"]
 [badges]
 travis-ci = { repository = "balena-io/reconfix", branch = "master" }
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.balena-temen]
 version = "0"
 

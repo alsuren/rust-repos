@@ -22,6 +22,7 @@ threadpool = "*"
 regex = "*"
 log = "*"
 stderrlog = "*"
+boringssl = "0.0.5"
 
 [profile.dev.overrides.frontend]
 opt-level=3

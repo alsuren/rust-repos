@@ -12,6 +12,7 @@ keywords = ["meow", "hash", "digest"]
 
 [dependencies]
 digest = "0.8.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.9.1"

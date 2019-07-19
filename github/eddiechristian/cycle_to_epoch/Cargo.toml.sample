@@ -5,6 +5,7 @@ authors = ["eddie christian <eddie.christian@ironnetcybersecurity.com>"]
 
 [dependencies]
 libc = "0.2.16"
+boringssl = "0.0.5"
 
 [dependencies.cpu_cycle_counter]
 git = "ssh://git@github.com/IronNetCybersecurity/rust-deps"

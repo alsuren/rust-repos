@@ -10,6 +10,7 @@ error-chain = "*"
 portaudio = "*"
 ctrlc = { version = "*", features = ["termination"] }
 crossbeam = "*"
+boringssl = "0.0.5"
 
 [features]
 benchmarks = []

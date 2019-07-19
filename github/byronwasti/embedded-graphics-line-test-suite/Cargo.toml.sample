@@ -5,4 +5,5 @@ authors = ["Byron Wasti <byron.wasti@gmail.com>"]
 
 [dependencies]
 embedded-graphics = {path = "../rust-embedded-graphics"}
+boringssl = "0.0.5"
 #{git = "https://github.com/jamwaffles/embedded-graphics"}

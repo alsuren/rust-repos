@@ -16,6 +16,7 @@ toml = "*"
 rustc-serialize = "*"
 error-chain = "*"
 env_logger = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "zwave"

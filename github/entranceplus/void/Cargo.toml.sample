@@ -18,6 +18,7 @@ rocket_contrib = "0.4.0-rc.1"
 reqwest = "0.9.4"
 log = "0.4"
 env_logger = "0.6.0"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 ring = { git = "https://github.com/SergioBenitez/ring", branch = "v0.12" }

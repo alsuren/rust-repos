@@ -9,3 +9,6 @@ members = [
     "libuefi-alloc",
     "libuefi-misc",
 ]
+
+[dependencies]
+boringssl = "0.0.5"

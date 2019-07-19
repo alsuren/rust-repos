@@ -5,3 +5,4 @@ authors = ["LongYinan <lynweklm@gmail.com>"]
 
 [dependencies]
 canvas = { path = "servo/components/canvas" }
+boringssl = "0.0.5"

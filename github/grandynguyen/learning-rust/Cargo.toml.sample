@@ -19,3 +19,6 @@ path = "src/hello_thread/main.rs"
 [[bin]]
 name = "hello_tcp"
 path = "src/hello_tcp/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

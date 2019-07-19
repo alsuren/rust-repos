@@ -10,3 +10,4 @@ gstreamer = { git = "https://github.com/sdroege/gstreamer-rs", features=["v1_10"
 gstreamer-app = { git = "https://github.com/sdroege/gstreamer-rs" }
 gstreamer-audio = { git = "https://github.com/sdroege/gstreamer-rs" }
 gstreamer-video = { git = "https://github.com/sdroege/gstreamer-rs" }
+boringssl = "0.0.5"

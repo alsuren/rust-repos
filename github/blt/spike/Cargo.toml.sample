@@ -21,6 +21,7 @@ webpki = "0.19"
 webpki-roots = "0.16"
 rustls = "0.15"
 h2 = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.tower-util]
 git = "https://github.com/tower-rs/tower"

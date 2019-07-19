@@ -11,3 +11,4 @@ serde_derive = "1.0"
 toml = "0.4"
 xlsx = { git = "https://github.com/laumann/xlsx-rs.git", branch = "update-xml-writer" }
 clap = "2.26"
+boringssl = "0.0.5"

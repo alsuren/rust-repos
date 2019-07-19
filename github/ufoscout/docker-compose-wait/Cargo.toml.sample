@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 port_check = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 atomic-counter = "1.0"

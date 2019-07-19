@@ -10,6 +10,7 @@ lazy_static = "1.1.0"
 log = "0.4.5"
 lz_circular_bit_buffer = { git = "https://github.com/Lukazoid/lz_circular_bit_buffer" }
 typenum = "1.10.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 matches = "0.1.8"

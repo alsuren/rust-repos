@@ -7,3 +7,6 @@ license = "MIT/Apache-2.0"
 repository = "https://github.com/kmcallister/fixed-size-array"
 readme = "README.md"
 description = "Trait for working with fixed size arrays"
+
+[dependencies]
+boringssl = "0.0.5"

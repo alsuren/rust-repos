@@ -6,4 +6,5 @@ authors = ["Kai Lüke <kailueke@riseup.net>"]
 [dependencies]
 smoltcp = { git = "https://github.com/m-labs/smoltcp.git" }
 env_logger = "*"
+boringssl = "0.0.5"
 

@@ -15,3 +15,4 @@ path = "lib.rs"
 
 [dependencies]
 arrayvec = { version = "0.4.6", default-features = false } # public dependency
+boringssl = "0.0.5"

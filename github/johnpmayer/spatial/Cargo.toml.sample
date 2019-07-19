@@ -3,3 +3,6 @@
 name = "spatial"
 version = "0.0.1"
 authors = ["John P Mayer <john.p.mayer.jr@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

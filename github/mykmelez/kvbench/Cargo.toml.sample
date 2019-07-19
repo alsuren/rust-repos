@@ -10,6 +10,7 @@ lmdb = "0.8"
 tempdir = "0.3"
 db-key = "0.0"
 rand = "0.5"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

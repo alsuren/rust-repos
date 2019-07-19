@@ -16,6 +16,7 @@ postgres = "0.15"
 minimp3 = "0.3.2"
 rustfft = "3.0.0"
 hashbrown = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio = "0.1.17"

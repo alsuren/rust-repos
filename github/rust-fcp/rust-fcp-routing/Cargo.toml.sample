@@ -6,6 +6,7 @@ authors = ["Valentin Lorentz <progval+git@progval.net>"]
 [dependencies]
 simple_kbuckets = "^0.2.0"
 fcp_switching = { git = "https://github.com/rust-fcp/rust-fcp-switching.git" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 fcp_cryptoauth = { git = "https://github.com/rust-fcp/rust-fcp-cryptoauth.git" }

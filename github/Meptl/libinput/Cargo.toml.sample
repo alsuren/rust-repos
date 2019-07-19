@@ -6,3 +6,4 @@ authors = ["Christopher Chin <ctchin13@gmail.com>"]
 [dependencies]
 libc = "*"
 libinput-sys = "*"
+boringssl = "0.0.5"

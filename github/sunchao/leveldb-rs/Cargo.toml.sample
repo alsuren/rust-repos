@@ -9,6 +9,7 @@ edition = "2018"
 crossbeam = "0.3.0" # for scoped threads
 lazy_static = "0.2" # for initializing static vars
 byteorder = "1"     # for reinterpreting bytes
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3"

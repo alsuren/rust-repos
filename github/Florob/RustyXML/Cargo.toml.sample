@@ -15,3 +15,6 @@ name = "xml"
 
 [features]
 bench = []
+
+[dependencies]
+boringssl = "0.0.5"

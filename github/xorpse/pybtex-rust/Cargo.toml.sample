@@ -5,3 +5,4 @@ authors = ["Sam Thomas <m@kali.ai>"]
 
 [dependencies]
 cpython = { git = "https://github.com/xorpse/rust-cpython.git", features=["python-3-7"] }
+boringssl = "0.0.5"

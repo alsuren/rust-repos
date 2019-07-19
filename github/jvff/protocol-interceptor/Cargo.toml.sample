@@ -10,3 +10,4 @@ failure_derive = "0.1"
 futures = "0.1"
 tokio-io = "0.1"
 tokio-proto = { git = "https://github.com/jvff/tokio-proto", branch = "generic_error" }
+boringssl = "0.0.5"

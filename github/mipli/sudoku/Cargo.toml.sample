@@ -10,3 +10,4 @@ path = "src/bin/cli.rs"
 [dependencies]
 getopts = "0.2"
 bitflags = "*"
+boringssl = "0.0.5"

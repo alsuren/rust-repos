@@ -52,6 +52,7 @@ ansi_term = { version = "^0.9", optional = true }
 flexi_logger = { version = "^0.6", optional = true }
 resolv-conf = { version = "^0.4", optional = true }
 tabwriter = { version = "^1.0", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_cli = "^0.5"

@@ -6,6 +6,7 @@ authors = ["Andy Lowry <andy@andylowry.me.uk>"]
 [dependencies]
 librrd-sys = { path = "librrd-sys" }
 quick-error = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "*"

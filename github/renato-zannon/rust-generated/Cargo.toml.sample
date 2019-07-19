@@ -5,3 +5,6 @@ version = "0.0.1"
 authors = ["Renato Zannon <renato@rrsz.com.br>"]
 
 build = "build.rs"
+
+[dependencies]
+boringssl = "0.0.5"

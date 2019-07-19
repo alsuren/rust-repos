@@ -7,3 +7,6 @@ description = "library for reprinting a file with changes"
 repository = "https://github.com/nick29581/libreprint"
 readme = "README.md"
 license = "Apache-2.0/MIT"
+
+[dependencies]
+boringssl = "0.0.5"

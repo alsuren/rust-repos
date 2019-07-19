@@ -8,3 +8,6 @@ members = [
   "server",
   "xmz-server",
 ]
+
+[dependencies]
+boringssl = "0.0.5"

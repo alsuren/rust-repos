@@ -25,6 +25,9 @@ enable-std = []
 no-core = []
 rust-documentation = []
 
+[dependencies]
+boringssl = "0.0.5"
+
 [package.metadata.docs.rs]
 no-default-features = true
 features = ["rust-documentation"]

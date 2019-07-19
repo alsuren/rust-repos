@@ -13,6 +13,7 @@ autobins = false
 [dependencies]
 libc = "0.2"
 fermium = "0.0.4"
+boringssl = "0.0.5"
 
 [package.metadata.docs.rs]
 default-target = "x86_64-pc-windows-msvc"

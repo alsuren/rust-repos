@@ -16,6 +16,7 @@ bench = ["stb_image"]
 byteorder = "0.4"
 libc = "0.2"
 time = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.flate2]
 version = "0.2"

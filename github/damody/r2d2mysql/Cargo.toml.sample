@@ -20,6 +20,7 @@ r2d2 = "0.8"
 r2d2-diesel = {path = "../r2d2-diesel"}
 dotenv = "0.10"
 diesel_codegen = { version = "0.16.1", features = ["mysql"] }
+boringssl = "0.0.5"
 
 [dependencies.diesel]
 version = "1.3"

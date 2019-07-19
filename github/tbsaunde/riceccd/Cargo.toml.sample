@@ -11,5 +11,6 @@ clap = "2"
 crossbeam = "0.2"
 local-socket = { git = "https://github.com/tbsaunde/local-socket" }
 minilzo = { git = "https://github.com/tbsaunde/minilzo-rs" }
+boringssl = "0.0.5"
 [dependencies.resolve]
 git = 'https://github.com/murarth/resolve'

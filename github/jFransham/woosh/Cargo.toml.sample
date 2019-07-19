@@ -5,3 +5,4 @@ authors = ["Jack Fransham <moonfudgeman@hotmail.co.uk>"]
 
 [dependencies]
 shell_parse = { path = "../shell_parse" }
+boringssl = "0.0.5"

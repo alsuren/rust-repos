@@ -5,4 +5,5 @@ authors = ["aeshthetic"]
 
 [dependencies]
 gtk = { git = "https://github.com/gtk-rs/gtk.git" }
+boringssl = "0.0.5"
 

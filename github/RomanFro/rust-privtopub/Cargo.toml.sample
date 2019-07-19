@@ -7,3 +7,4 @@ authors = ["@romfrolov <roman.frolov@wings.ai>"]
 eth-secp256k1 = { git = "https://github.com/paritytech/rust-secp256k1" }
 hex = "0.3.2"
 tiny-keccak = "1.4.2"
+boringssl = "0.0.5"

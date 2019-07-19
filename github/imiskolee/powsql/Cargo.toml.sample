@@ -9,6 +9,7 @@ byteorder="*"
 mioco = "*"
 sha1="0.2.0"
 lazy_static="*"
+boringssl = "0.0.5"
 [[test]]
 name = "test"
 path = "test/mod.rs"

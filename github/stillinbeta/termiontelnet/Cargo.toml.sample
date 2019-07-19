@@ -12,6 +12,7 @@ bytes = "0.4.12"
 termion = { git = "https://github.com/stillinbeta/termion.git", rev = "c13e858d3f4a1eef1317f10c8ed0237c61f38018" }
 num-traits = "0.2"
 num-derive = "0.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio-mockstream = "1.0"

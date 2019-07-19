@@ -6,3 +6,4 @@ authors = ["Ron Kuslak <rkuslak@outlook.com>"]
 [dependencies]
 build_engine = { path = "./build_engine" }
 getopts = "*"
+boringssl = "0.0.5"

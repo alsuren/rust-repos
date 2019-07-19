@@ -6,3 +6,4 @@ authors = ["Carl Lerche <me@carllerche.com>"]
 [dependencies]
 rand = "0.3.14"
 hash-table = { git = "https://github.com/carllerche/hash-table" }
+boringssl = "0.0.5"

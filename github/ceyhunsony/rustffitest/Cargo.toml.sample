@@ -8,3 +8,4 @@ name = "rustffitest"
 crate-type = ["dylib"]
 
 [dependencies]
+boringssl = "0.0.5"

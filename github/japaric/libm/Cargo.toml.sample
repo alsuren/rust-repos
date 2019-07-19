@@ -33,3 +33,6 @@ no-panic = "0.1.8"
 
 [build-dependencies]
 rand = { version = "0.6.5", optional = true }
+
+[dependencies]
+boringssl = "0.0.5"

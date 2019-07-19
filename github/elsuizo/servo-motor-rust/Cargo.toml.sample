@@ -22,6 +22,7 @@ panic-semihosting = "*"
 panic-halt = "*"
 embedded-hal = "*"
 heapless = "0.4.2"
+boringssl = "0.0.5"
 # panic-itm = "0.2.0"
 # floating-duration = "0.1.2"
 # [dependencies.cortex-m-rt]

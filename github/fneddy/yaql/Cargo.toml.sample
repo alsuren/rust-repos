@@ -9,6 +9,7 @@ cpp = "0.2"
 cpp_macros = "0.2"
 libc = "*"
 enum_primitive = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cpp_build = "0.2"

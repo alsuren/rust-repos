@@ -10,3 +10,6 @@ documentation = "http://eljay.github.io/com-rs/com_rs/index.html"
 authors = ["Lee Jeffery <lee@leejeffery.co.uk>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

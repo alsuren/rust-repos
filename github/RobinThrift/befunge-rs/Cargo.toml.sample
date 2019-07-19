@@ -7,3 +7,6 @@ authors = ["Robin Thrift <thrift.d.robin@googlemail.com>"]
 [[bin]]
 
 name = "befunge-rs"
+
+[dependencies]
+boringssl = "0.0.5"

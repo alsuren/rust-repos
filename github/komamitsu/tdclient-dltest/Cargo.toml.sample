@@ -5,4 +5,5 @@ authors = ["Mitsunori Komatsu <komamitsu@gmail.com>"]
 
 [dependencies]
 td-client = "0.6"
+boringssl = "0.0.5"
 # td-client = {git = "https://github.com/komamitsu/td-client-rust.git", branch = "accept-encoding"}

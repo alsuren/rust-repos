@@ -23,3 +23,4 @@ appveyor = { repository = "rust-lang-libs/tempdir" }
 [dependencies]
 rand = "0.4"
 remove_dir_all = "0.5"
+boringssl = "0.0.5"

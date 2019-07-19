@@ -11,6 +11,7 @@ tokio-serial = "0.8"
 tokio-modbus = { version = "0.2.2", default-features = false, features = ["rtu", "sync"] }
 error-chain = "0.12"
 tokio-timer = "0.2.6"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 # Use the latest version of tokio-modbus

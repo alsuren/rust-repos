@@ -30,3 +30,6 @@ harness = false
 [[bench]]
 name = "check"
 harness = false
+
+[dependencies]
+boringssl = "0.0.5"

@@ -21,6 +21,7 @@ rustc-serialize = "*"
 nalgebra = "*"
 glium = "*"
 image = "*"
+boringssl = "0.0.5"
 
 [dependencies.vel0city_map]
 path = "vel0city_map"

@@ -8,3 +8,6 @@ homepage = "https://github.com/DarkEld3r/deep_walk.git"
 license = "MIT"
 readme = "README.md"
 keywords = ["directory", "archive", "recursive", "walk"]
+
+[dependencies]
+boringssl = "0.0.5"

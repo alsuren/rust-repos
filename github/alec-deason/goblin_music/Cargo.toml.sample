@@ -15,3 +15,4 @@ crate-type = ["rlib"]
     portaudio = "0.6.3"
     sample = "0.6.0"
     music_tools = { git = "https://github.com/alec-deason/music_tools.git" }
+boringssl = "0.0.5"

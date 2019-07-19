@@ -9,6 +9,7 @@ serde = "1.0.24"
 serde_derive = "1.0.24"
 typemap = "0.3.3"
 simple_math_lib = { git = "https://github.com/jD91mZM2/simple-math" }
+boringssl = "0.0.5"
 
 [dependencies.serenity]
 default-features = true

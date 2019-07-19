@@ -6,3 +6,4 @@ authors = ["Ash Walker <ash@ashwalker.net>"]
 [dependencies]
 architect = { git = "https://github.com/SignalWalker/Architect" }
 winit = "^0.19"
+boringssl = "0.0.5"

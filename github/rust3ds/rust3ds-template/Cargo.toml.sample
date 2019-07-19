@@ -5,6 +5,7 @@ version = "0.1.0"
 
 [dependencies]
 ctru-rs = { git = "https://github.com/rust3ds/ctru-rs" }
+boringssl = "0.0.5"
 
 [profile.dev]
 lto = true

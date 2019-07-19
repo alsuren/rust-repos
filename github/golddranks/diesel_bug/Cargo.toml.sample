@@ -8,3 +8,4 @@ diesel = { version = "0.8"}
 diesel_codegen = {version = "0.8", default-features = false, features = ["postgres", "dotenv"] }
 dotenv = "0.8"
 dotenv_macros = "0.9"
+boringssl = "0.0.5"

@@ -10,6 +10,7 @@ pretty_env_logger = "0.1"
 log = "0.3.6"
 tokio-core = "0.1"
 scheduler = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.hyper]
 git = "https://github.com/hyperium/hyper/"

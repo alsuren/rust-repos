@@ -9,3 +9,6 @@ name = "trim"
 [[bin]]
 name = "video-trimmer"
 path = "src/bin/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

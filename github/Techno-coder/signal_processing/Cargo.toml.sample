@@ -9,6 +9,7 @@ num-complex = { version = "*", optional = true }
 rustfft = { version = "*", optional = true }
 num_cpus = "*"
 rayon = "*"
+boringssl = "0.0.5"
 
 [features]
 default = ["fast_fourier"]

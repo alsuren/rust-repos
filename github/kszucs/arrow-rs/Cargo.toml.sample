@@ -6,6 +6,7 @@ authors = ["Krisztián Szűcs <szucs.krisztian@gmail.com>"]
 [dependencies]
 libc = "*"
 indexmap = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 clippy = "*"

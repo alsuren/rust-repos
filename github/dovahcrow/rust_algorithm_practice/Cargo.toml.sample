@@ -3,6 +3,9 @@ name = "algorithm_practice"
 version = "0.0.1"
 authors = [ "doomsplayer@gmail.com" ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.matrixrs]
 path = "src/matrixrs"
 

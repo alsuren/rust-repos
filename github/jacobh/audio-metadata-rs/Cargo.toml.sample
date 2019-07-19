@@ -5,3 +5,4 @@ authors = ["Jacob Haslehurst <jacob@haslehurst.net>"]
 
 [dependencies]
 nom = {version = "4.0.0", features = ["verbose-errors"]}
+boringssl = "0.0.5"

@@ -4,6 +4,9 @@ name = "rust-img-transcoder"
 version = "0.0.1"
 authors = ["Bryce Fisher-Fleig <bryce@fisher-fleig.org>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.hyper]
 git = "https://github.com/hyperium/hyper"
 

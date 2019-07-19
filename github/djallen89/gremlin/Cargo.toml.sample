@@ -12,6 +12,7 @@ blas-src = { version = "0.2.0", default-features = false, features = ["openblas"
 openblas-src = { version = "0.6.0", default-features = false, features = ["cblas", "system"] }
 rayon = "1.0.3"
 num_cpus = "1.10.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.10"

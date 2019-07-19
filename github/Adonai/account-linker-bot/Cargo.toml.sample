@@ -27,6 +27,7 @@ derive-error = "0.0.3"  # generate From for Errors
 crossbeam = "0.3.0"     # scoped thread spawning
 lazy_static = "0.2"     # lazy static global variables
 uuid = { version = "0.4", features = ["serde", "v4"] }
+boringssl = "0.0.5"
 
 [features]
 default = [ "linux-org-ru" ]

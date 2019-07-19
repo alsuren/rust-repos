@@ -20,6 +20,7 @@ documentation = "https://docs.rs/elements/"
 bech32 = "0.6"
 bitcoin_hashes = "0.3.0"
 secp256k1 = "0.12.0"
+boringssl = "0.0.5"
 
 [dependencies.bitcoin]
 version = "0.18.0"

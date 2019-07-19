@@ -19,6 +19,7 @@ serde_yaml = "0.8"
 simple_logger = "1.0.1"
 uuid = { version = "0.7", features = ["v4"] }
 yaml-rust = "0.4"
+boringssl = "0.0.5"
 
 [[test]]
 name = "cucumber"

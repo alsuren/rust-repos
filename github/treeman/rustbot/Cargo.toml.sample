@@ -4,6 +4,9 @@ name = "rustbot"
 version = "0.0.1"
 authors = ["Jonas Hietala <mail@Jonashietala.se>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.time]
 
 git = "https://github.com/rust-lang/time"

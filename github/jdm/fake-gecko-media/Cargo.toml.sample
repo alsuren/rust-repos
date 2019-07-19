@@ -8,3 +8,6 @@ name = "gecko_media"
 
 [build-dependencies]
 cmake = "0.1.26"
+
+[dependencies]
+boringssl = "0.0.5"

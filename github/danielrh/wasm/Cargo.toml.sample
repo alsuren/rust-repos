@@ -12,3 +12,6 @@ readme = "README.md"
 [lib]
 crate-type=["cdylib", "rlib", "staticlib"]
 
+[dependencies]
+boringssl = "0.0.5"
+

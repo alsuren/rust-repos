@@ -6,6 +6,7 @@ authors = ["Joshua Yanovski <pythonesque@gmail.com>"]
 description = "Type system experiments in Rust."
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.util]
 path = "./src/util"

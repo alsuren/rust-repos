@@ -7,4 +7,5 @@ authors = ["Eric McCorkle <eric@metricspace.net>"]
 enum-map = { version = "*" }
 langtools-common = { version = "*", git = "https://github.com/saltlang/langtools-common", branch = "devel" }
 salt-syntax-common = { version = "*", git = "https://github.com/saltlang/salt-syntax-common", branch = "devel" }
+boringssl = "0.0.5"
 

@@ -12,6 +12,7 @@ bootloader = "0.5"
 spin = "0.5"
 uart_16550 = "0.2.0"
 x86_64 = "0.5.4"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.3"

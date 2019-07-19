@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Lachlan Sneff <lachlan.sneff@gmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.nebulet_abi]
 git = "https://github.com/nebulet/abi"

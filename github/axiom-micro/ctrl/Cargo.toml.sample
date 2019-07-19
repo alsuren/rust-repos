@@ -25,6 +25,7 @@ structopt = "*"
 paste = "*"
 byteorder = "*"
 regex = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 codegen-units = 16

@@ -8,6 +8,7 @@ description = "Run commands on screen edge crossing touch screen gestures."
 [dependencies]
 clap = "2"
 nom = "1.2.3"
+boringssl = "0.0.5"
 
 [dependencies.x11]
 version = "2.5.*"

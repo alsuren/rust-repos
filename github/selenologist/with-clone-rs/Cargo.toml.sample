@@ -8,4 +8,5 @@ edition = "2018"
 proc-macro = true
 
 [dependencies]
+boringssl = "0.0.5"
 

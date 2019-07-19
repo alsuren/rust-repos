@@ -9,6 +9,7 @@ kolli-desu = { git = "https://github.com/WaDelma/kolli-desu"}
 specs-derive = "0.3"
 nalgebra = "0.14"
 modulator = "0.1.0"
+boringssl = "0.0.5"
 
 [dependencies.amethyst]
 version = "0.10.0"

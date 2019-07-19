@@ -7,6 +7,7 @@ authors = [ "Jayakiran Akurathi <Jayakiran.Akurathi@gmail.com>" ]
 rand = "*"
 time = "*"
 rand_chacha = "*"
+boringssl = "0.0.5"
 
 [profile.test]
 opt-level = 3

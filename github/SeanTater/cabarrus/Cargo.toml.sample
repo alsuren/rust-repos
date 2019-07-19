@@ -63,6 +63,7 @@ unicode-segmentation = "*"
 memmap = "*"
 # Threading
 rayon = "*"
+boringssl = "0.0.5"
 
 [features]
 default = []

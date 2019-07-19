@@ -29,6 +29,7 @@ capnp = "0.6.2"
 timeit = "0.1.2"
 
 clippy = { version = "0.0.41", optional = true }
+boringssl = "0.0.5"
 
 [build-dependencies]
 capnpc = "0.6.1"

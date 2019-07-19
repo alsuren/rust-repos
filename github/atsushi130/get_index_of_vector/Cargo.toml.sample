@@ -4,6 +4,7 @@ version = "1.0.0"
 authors = ["atmiyake <atmiyake@yahoo-corp.jp>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "get_index_of_vector"

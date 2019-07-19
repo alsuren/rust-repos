@@ -9,6 +9,7 @@ lazy_static = "0.2.8"
 libc = "0.2.22"
 euclid = "0.15.1"
 widestring = "0.2.2"
+boringssl = "0.0.5"
 
 [dependencies.winit]
 branch = "feature/WS_EX_NOREDIRECTIONBITMAP"

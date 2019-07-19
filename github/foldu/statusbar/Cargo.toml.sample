@@ -30,6 +30,7 @@ linux_sensors = { path = "linux_sensors" }
 formatter = { path = "formatter" }
 const-cstr = "0.3.0"
 jemallocator = "0.1.9"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = "fat"

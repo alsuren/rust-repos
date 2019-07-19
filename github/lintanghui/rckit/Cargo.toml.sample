@@ -10,6 +10,7 @@ documentation = "https://docs.rs/rckit/"
 [dependencies]
 clap = {version = "2.32", features = ["yaml"]}
 redis="0.9.0"
+boringssl = "0.0.5"
 [lib]
 name="rckit"
 path="src/lib.rs"

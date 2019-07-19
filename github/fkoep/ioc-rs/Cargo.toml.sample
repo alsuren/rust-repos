@@ -23,6 +23,7 @@ downcast = "0.9"
 lazy_static = "1.0"
 quick-error = "1.2"
 variadic_generics = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 ioc_macros = { path = "macros" }

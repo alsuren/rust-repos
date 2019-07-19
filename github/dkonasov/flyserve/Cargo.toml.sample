@@ -5,3 +5,4 @@ authors = ["Konasov Dmitriy <d.konasov@yandex.ru>"]
 
 [dependencies]
 flyserve_api = { git = "https://github.com/dkonasov/flyserve_api.git" }
+boringssl = "0.0.5"

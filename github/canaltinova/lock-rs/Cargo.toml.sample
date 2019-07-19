@@ -15,3 +15,6 @@ path = "src/lib.rs"
 [[bin]]
 name = "lock"
 path = "src/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

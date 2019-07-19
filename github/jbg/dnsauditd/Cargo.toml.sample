@@ -8,3 +8,4 @@ dns-parser = "*"
 libc = "*"
 nfqueue = { git = "https://github.com/chifflier/nfqueue-rs" }
 pnet = "*"
+boringssl = "0.0.5"

@@ -7,6 +7,7 @@ build = "build.rs"
 [dependencies]
 rand = "0.6"
 getopts = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 zip = "0.4.0"

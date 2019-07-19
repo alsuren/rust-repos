@@ -8,6 +8,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 seahash = "^3.0.5"
+boringssl = "0.0.5"
 
 [dependencies.cpython]
 git = "https://github.com/ohanar/rust-cpython.git"

@@ -3,6 +3,9 @@ name = "kf2_map_install"
 version = "0.1.0"
 authors = ["Austin Bonander <austin.bonander@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.hyper]
 version = "*"
 default-features = false

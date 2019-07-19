@@ -14,3 +14,6 @@ doc = true
 
 [badges]
 travis-ci = { repository = "AssafVa/triez" }
+
+[dependencies]
+boringssl = "0.0.5"

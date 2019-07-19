@@ -9,6 +9,9 @@ build = "build.rs"
 name = "std"
 path = "./rust/src/libstd/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.core]
 git = "https://github.com/dpc/libcore-git.rs.git"
 

@@ -6,3 +6,4 @@ authors = ["Ophir LOJKINE <o.lojkine@qwant.com>"]
 [dependencies]
 nom-sql = { git = "https://github.com/lovasoa/nom-sql" , branch="develop"}
 rayon = "1.0"
+boringssl = "0.0.5"

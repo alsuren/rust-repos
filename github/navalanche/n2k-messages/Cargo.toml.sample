@@ -10,3 +10,4 @@ authors = ["Erwin Gribnau <erwin@gribnau.org>"]
 [dependencies]
 n2k-base= { path="../n2k-base", version="0.2.2"}
 log = { version="0.4", default-features= false}
+boringssl = "0.0.5"

@@ -12,3 +12,4 @@ description = "Embed the Wren programming language in your Rust program"
 [dependencies]
 wren-sys = "*"
 libc = "*"
+boringssl = "0.0.5"

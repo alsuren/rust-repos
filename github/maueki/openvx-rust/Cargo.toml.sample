@@ -8,6 +8,7 @@ vx = { path = "./vx" }
 vx-api = { path = "./vx-api" }
 vx-cv = { path = "./vx-cv" }
 vx-nnef = { path = "./vx-nnef" }
+boringssl = "0.0.5"
 
 [workspace]
 members = [ "vx", "vx-cv", "vx-api", "vx-nnef" ]

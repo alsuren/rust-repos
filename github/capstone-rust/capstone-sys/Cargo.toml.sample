@@ -16,6 +16,7 @@ travis-ci = { repository = "capstone-rust/capstone-sys" }
 
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = { optional = true, version = "0.46.0" }

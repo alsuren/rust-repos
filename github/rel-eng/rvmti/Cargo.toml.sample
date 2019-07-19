@@ -18,6 +18,7 @@ libc = "0.2.46"
 byteorder = "1.2.7"
 rand = "0.6.4"
 chrono = "0.4.6"
+boringssl = "0.0.5"
 
 [dependencies.rvmti-sys]
 path = "rvmti-sys"

@@ -22,6 +22,7 @@ rc-writer = "1.1.0"
 percent-encoding = { version = "1.0.1", optional = true }
 idna = { version = "0.1.5", optional = true }
 validators = { version = ">=0.19,<0.21", optional = true }
+boringssl = "0.0.5"
 
 [features]
 validator = ["validators", "idna", "percent-encoding"]

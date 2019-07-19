@@ -9,3 +9,6 @@ test = true
 doctest = true
 doc = true
 plubin = false
+
+[dependencies]
+boringssl = "0.0.5"

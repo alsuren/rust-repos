@@ -15,6 +15,7 @@ openssl = "^0.7"
 hyperlocal = "^0.1"
 libc = "^0.2"
 pwhash = "^0.1"
+boringssl = "0.0.5"
 
 [dependencies.jsonrpc]
 git = "https://github.com/mkocot/jsonrpc"

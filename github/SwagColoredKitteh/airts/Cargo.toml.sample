@@ -9,3 +9,4 @@ piston_renderer = ["piston_window"]
 
 [dependencies]
 piston_window = { optional = true, version = "*" }
+boringssl = "0.0.5"

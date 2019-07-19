@@ -26,4 +26,5 @@ uuid = { version = "^0.3", features = ["serde", "v4"] }
 staticfile = "*"
 mount = "*"
 router = "*"
+boringssl = "0.0.5"
 

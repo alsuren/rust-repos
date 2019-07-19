@@ -13,6 +13,7 @@ byteorder = "1.2.3"
 env_logger = "0.5.10"
 fnv = "1.0.6"
 smallvec = { version="0.6.3", features=["serde"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

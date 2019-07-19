@@ -11,6 +11,7 @@ license = "MIT"
 [dependencies]
 lazy_static = "0.1.16"
 clippy = { version = "0.0.104", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = []

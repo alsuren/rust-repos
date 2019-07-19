@@ -9,6 +9,7 @@ num = "*"
 regex = "^0.2"
 encoding = "0.2.33"
 shakmaty = { git = "https://github.com/lakinwecker/shakmaty.git" }
+boringssl = "0.0.5"
 
 [dependencies.nom]
 version = "^3.1"

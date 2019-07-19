@@ -17,6 +17,7 @@ glob = ">= 0.2"
 scoped_threadpool = ">= 0.1.9"
 num_cpus = ">= 1.9.0"
 htmlescape = ">= 0.3.1"
+boringssl = "0.0.5"
 
 [lib]
 name = "xge_lib"

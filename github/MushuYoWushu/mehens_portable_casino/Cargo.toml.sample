@@ -6,6 +6,7 @@ authors = ["MushuYoWushu <iangore@gmail.com>"]
 [dependencies]
 rand = "0.5.0"
 ggez = "0.4.3"
+boringssl = "0.0.5"
 
 [profile.release] #Documentation on these flags are here https://doc.rust-lang.org/cargo/reference/manifest.html#the-profile-sections
 opt-level = 3 # optimization level. 0-1 for debugging, 2 is well optimized, max 3

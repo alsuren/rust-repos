@@ -4,3 +4,6 @@ version = "0.2.0"
 authors = ["Josh Chase <josh@jec.pw>"]
 license = "MIT OR Apache-2.0"
 description = "Lamport clock implementation for distributed systems"
+
+[dependencies]
+boringssl = "0.0.5"

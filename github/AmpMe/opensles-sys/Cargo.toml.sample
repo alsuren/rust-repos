@@ -13,3 +13,6 @@ name = "opensles"
 
 [build-dependencies]
 bindgen = "0.40.0"
+
+[dependencies]
+boringssl = "0.0.5"

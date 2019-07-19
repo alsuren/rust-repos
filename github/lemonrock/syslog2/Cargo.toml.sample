@@ -31,6 +31,7 @@ network-constants = { version = "0.0.0", git = "https://github.com/lemonrock/net
 process = { version = "0.0.0", git = "https://github.com/lemonrock/process" }
 string-utilities = { version = "0.0.0", git = "https://github.com/lemonrock/string-utilities" }
 uptime = { git = "https://github.com/lemonrock/uptime" }
+boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 kernel32-sys = "^0.2"

@@ -11,6 +11,7 @@ readme = "README.md"
 dns-lookup = { path = "../dns-lookup" }
 # dns-lookup = "0.1.0"
 libc = "0.2.8"
+boringssl = "0.0.5"
 
 [[bin]]
 name="ntpie"

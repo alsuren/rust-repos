@@ -5,6 +5,7 @@ authors = ["Kevin Darlington <kevin@outroot.com>"]
 
 [dependencies]
 weechat-sys = { path = "weechat-sys" }
+boringssl = "0.0.5"
 
 [lib]
 name = "rust_weechat"

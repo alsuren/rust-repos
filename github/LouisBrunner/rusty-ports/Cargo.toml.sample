@@ -8,6 +8,7 @@ clap = "2.25.0"
 users = "0.7"
 ctrlc = { version = "3.0", features = ["termination"] }
 mockers_derive = "0.12.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 mockstream = "0.0.3"

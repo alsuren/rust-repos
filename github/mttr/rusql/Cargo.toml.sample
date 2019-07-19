@@ -10,6 +10,9 @@ license = "MIT"
 homepage = "https://github.com/mttr/rusql"
 repository = "https://github.com/mttr/rusql.git"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.peg]
 git = "https://github.com/kevinmehall/rust-peg.git"
 

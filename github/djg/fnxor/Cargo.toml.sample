@@ -7,3 +7,4 @@ authors = ["Dan Glastonbury <dglastonbury@mozilla.com>"]
 argparse = "*"
 fn_decl_parser = { path = "fn_decl_parser" }
 itertools = "*"
+boringssl = "0.0.5"

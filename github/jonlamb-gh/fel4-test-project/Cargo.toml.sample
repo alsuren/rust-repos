@@ -5,6 +5,7 @@ authors = ["jonlamb-gh <lamb.jon.io@gmail.com>"]
 
 [dependencies]
 libsel4-sys = {git = "https://github.com/jonlamb-gh/libsel4-sys.git", branch = "master"}
+boringssl = "0.0.5"
 
 [dependencies.wee_alloc]
 version = "0.4"

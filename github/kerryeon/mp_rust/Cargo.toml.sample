@@ -16,3 +16,4 @@ lto = true
 panic = 'unwind'
 
 [dependencies]
+boringssl = "0.0.5"

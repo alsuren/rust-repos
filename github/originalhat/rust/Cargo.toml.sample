@@ -8,3 +8,6 @@ authors = [ "Devin Brown <devin.g.brown@gmail.com>" ]
 
 name = "hello_world"
 
+[dependencies]
+boringssl = "0.0.5"
+

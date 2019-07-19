@@ -19,3 +19,6 @@ path = "src/sh/sh.rs"
 [[bin]]
 name = "ls"
 path = "src/ls/ls.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -5,6 +5,7 @@ authors = ["Mestake <mestake.huge@yandex.ru>"]
 
 [dependencies]
 cfg-if = "0.1"
+boringssl = "0.0.5"
 
 [features]
 float_output = []

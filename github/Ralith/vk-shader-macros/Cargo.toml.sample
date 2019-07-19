@@ -21,5 +21,6 @@ strip = ["vk-shader-macros-impl/strip"] # Omit debug info from generated SPIR-V 
 [dependencies]
 vk-shader-macros-impl = { path = "impl", version = "0.1.0", default-features = false }
 proc-macro-hack = "0.5.4"
+boringssl = "0.0.5"
 
 [workspace]

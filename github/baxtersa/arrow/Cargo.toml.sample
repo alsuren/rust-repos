@@ -12,6 +12,7 @@ license = "BSD 3-Clause"
 keywords = ["Functional programming", "Monads", "Arrows", "Category theory"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [lib]
 name = "arrow"

@@ -6,6 +6,7 @@ authors = ["Mike Tang <miketang84@outlook.com>"]
 [dependencies]
 log = "0.3"
 env_logger = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.coio]
 git = "https://github.com/zonyitoo/coio-rs.git"

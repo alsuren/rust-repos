@@ -11,3 +11,4 @@ rotor = "0.6.3"
 rotor-http = { git = "https://github.com/tailhook/rotor-http" }
 # Until THE GREAT NOM transition is finished, we use this revision
 rotor-http-utils = { rev = "dbe5bfe", git = "https://github.com/nokaa/rotor-http-utils" }
+boringssl = "0.0.5"

@@ -4,6 +4,9 @@ name = "spsc_buffer"
 version = "0.0.1"
 authors = ["rroelke <ryan_roelke@brown.edu>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.assertions]
 git = "http://github.com/rroelke/assertions.rs"
 

@@ -6,3 +6,4 @@ authors = ["Dawid Pietrzak <ca1ek@users.noreply.github.com>"]
 [dependencies]
 sdl2 = "*"
 engine = { path = "./engine/"}
+boringssl = "0.0.5"

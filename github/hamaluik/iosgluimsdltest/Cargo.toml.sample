@@ -14,3 +14,4 @@ path = "src/desktop.rs"
 [dependencies]
 sdl2 = "0.32.2"
 glium = { version = "0.24.0", default-features = false }
+boringssl = "0.0.5"

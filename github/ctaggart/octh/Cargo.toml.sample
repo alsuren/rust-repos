@@ -15,3 +15,6 @@ repository = "https://github.com/ctaggart/octh"
 # bindgen = "*"
 bindgen = { git = "https://github.com/servo/rust-bindgen" }
 gcc = "*"
+
+[dependencies]
+boringssl = "0.0.5"

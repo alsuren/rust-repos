@@ -4,6 +4,7 @@ version = "0.1.1"
 
 [dependencies]
 colored = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 2

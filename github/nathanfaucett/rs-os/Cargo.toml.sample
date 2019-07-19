@@ -12,6 +12,7 @@ homepage = "https://github.com/nathanfaucett/rs-os"
 
 [dependencies]
 rlibc = "1.0"
+boringssl = "0.0.5"
 
 [dependencies.vga]
 #git = "https://github.com/nathanfaucett/rs-vga.git"

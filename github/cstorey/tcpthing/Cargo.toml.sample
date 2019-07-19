@@ -14,6 +14,7 @@ pnet = "0.22.0"
 prometheus = "0.2.6"
 protobuf = "1.0.24"
 time = "0.1.35"
+boringssl = "0.0.5"
 
 [dependencies.hex-slice]
 git = "https://github.com/cstorey/hex-slice"

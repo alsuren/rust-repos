@@ -6,3 +6,4 @@ authors = ["James Wheatley <james@jammy.co>"]
 [dependencies]
 log = "0.4.1"
 zyre-binding = { path = "zyre-binding" }
+boringssl = "0.0.5"

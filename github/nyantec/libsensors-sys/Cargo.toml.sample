@@ -8,3 +8,4 @@ categories = ["external-ffi-bindings"]
 repository = "https://github.com/nyantec/libsensors-sys"
 
 [dependencies]
+boringssl = "0.0.5"

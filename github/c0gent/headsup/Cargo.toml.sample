@@ -15,3 +15,4 @@ bincode = "1"
 termion = { git = "https://github.com/redox-os/termion.git" }
 chrono = { version = "0.4", features = ["serde"] }
 failure = "0.1"
+boringssl = "0.0.5"

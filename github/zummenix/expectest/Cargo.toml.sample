@@ -17,6 +17,7 @@ travis-ci = { repository = "zummenix/expectest" }
 
 [dependencies]
 num-traits = "0.2"
+boringssl = "0.0.5"
 
 [features]
 nightly = []

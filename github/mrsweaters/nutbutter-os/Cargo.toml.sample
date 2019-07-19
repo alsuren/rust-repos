@@ -7,6 +7,7 @@ authors = ["Jordan Humphreys <jordan@mailyard.net>"]
 bootloader_precompiled = "0.2.0"
 volatile = "0.2.3"
 spin = "0.4.9"
+boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"

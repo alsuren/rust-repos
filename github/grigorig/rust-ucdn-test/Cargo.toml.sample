@@ -6,6 +6,7 @@ license =  "ISC"
 
 [dependencies]
 rucdn = { path = "../rust-ucdn" }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

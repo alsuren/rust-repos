@@ -5,6 +5,7 @@ authors = ["mvlabat <mvlabat@gmail.com>"]
 
 [dependencies]
 stdweb = "0.4.4"
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

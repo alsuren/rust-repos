@@ -32,6 +32,7 @@ categories = ["data-structures","encoding","parsing","parser-implementations"]
 [dependencies]
 afi = "0.7"
 byteorder = "1.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 aci_png = "0.7"

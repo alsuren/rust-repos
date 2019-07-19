@@ -8,3 +8,6 @@ license = "MIT"
 documentation = "https://docs.rs/collect_slice"
 repository = "https://github.com/kchmck/collect_slice"
 keywords = ["collect", "slice", "stack", "iterator", "array"]
+
+[dependencies]
+boringssl = "0.0.5"

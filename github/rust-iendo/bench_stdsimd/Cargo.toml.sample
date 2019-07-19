@@ -10,3 +10,6 @@ publish = false
 name = "bench_stdsimd"
 path = "src/lib.rs"
 bench = false
+
+[dependencies]
+boringssl = "0.0.5"

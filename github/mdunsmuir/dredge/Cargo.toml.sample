@@ -17,3 +17,4 @@ include = [
 [dependencies]
 rustbox = "0.9"
 clap = { version = "2", features = ["unstable"] }
+boringssl = "0.0.5"

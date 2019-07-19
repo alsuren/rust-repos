@@ -9,3 +9,4 @@ path = "src/main.rs"
 
 [dependencies]
 simd = { git = "https://github.com/huonw/simd" }
+boringssl = "0.0.5"

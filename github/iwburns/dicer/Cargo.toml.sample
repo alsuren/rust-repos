@@ -5,6 +5,7 @@ authors = ["Ian Burns <iwburns8@gmail.com>"]
 
 [dependencies]
 rand = "0.3.*"
+boringssl = "0.0.5"
 
 [[example]]
 name = "single_die"

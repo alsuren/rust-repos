@@ -17,3 +17,6 @@ name = "phosphorus"
 version = "0.0.1"
 authors = ["The Athena Developers"]
 license = "Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

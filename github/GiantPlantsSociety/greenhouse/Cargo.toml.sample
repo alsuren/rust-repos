@@ -5,3 +5,4 @@ authors = ["Alexey Suslov <alexey.suslov@gmail.com>"]
 
 [dependencies]
 garden = { git = "http://github.com/GiantPlantsSociety/garden", branch = "master" }
+boringssl = "0.0.5"

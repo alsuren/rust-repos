@@ -16,3 +16,4 @@ debug = true
 
 [dependencies]
 cvmath = { git = 'https://github.com/CasualX/cvmath', optional = true }
+boringssl = "0.0.5"

@@ -4,6 +4,9 @@ name = "pacman-with-physics"
 version = "0.0.1"
 authors = ["Benjamin Bergman <ben@benbergman.ca>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.nphysics2df32]
 git = "https://github.com/sebcrozet/nphysics"
 path = "./build/nphysics2df32"

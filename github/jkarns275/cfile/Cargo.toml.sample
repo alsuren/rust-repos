@@ -6,3 +6,4 @@ description = "A wrapper around the C FILE struct for rust"
 license = "MIT"
 
 [dependencies]
+boringssl = "0.0.5"

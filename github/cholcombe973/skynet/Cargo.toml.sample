@@ -30,6 +30,7 @@ users = "*"
 uuid = { version = "^0.4", features = ["v4"] }
 walkdir = "*"
 zmq = "*"
+boringssl = "0.0.5"
 
 # The development profile, used for `cargo build`
 [profile.dev]

@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 jvm-class-file-parser = { path = "../jvm-class-file-parser" }
+boringssl = "0.0.5"

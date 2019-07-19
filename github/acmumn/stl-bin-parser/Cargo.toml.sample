@@ -12,6 +12,7 @@ version = "0.0.1"
 [dependencies]
 error-chain = "0.10.0"
 nom = "2.2.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 byteorder = "1.0.0"

@@ -8,3 +8,4 @@ git = "https://github.com/totem3/rust-socket.git"
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"

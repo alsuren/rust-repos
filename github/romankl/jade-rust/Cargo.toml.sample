@@ -10,3 +10,6 @@ license-file = "LICENSE.md"
 
 [lib]
 name = "jade"
+
+[dependencies]
+boringssl = "0.0.5"

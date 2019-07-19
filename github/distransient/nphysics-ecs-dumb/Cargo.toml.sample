@@ -19,3 +19,4 @@ amethyst = { git = "https://github.com/amethyst/amethyst", branch = "master", fe
 nphysics3d = { git = "https://github.com/jojolepro/nphysics", branch = "sertmp", features = ["serde"] }
 ncollide3d = { git = "https://github.com/jojolepro/ncollide", branch = "changes" }
 nalgebra = "0.17"
+boringssl = "0.0.5"

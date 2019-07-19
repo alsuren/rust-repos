@@ -16,6 +16,7 @@ qrende = { git = "https://github.com/selaux/qrende.git" }
 ruukh = "0.0.3"
 wasm-bindgen = "0.2"
 wasm-bindgen-futures = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.6"

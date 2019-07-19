@@ -26,5 +26,8 @@ name = "alloc"
 std = []
 alloc = []
 
+[dependencies]
+boringssl = "0.0.5"
+
 [package.metadata.docs.rs]
 features = ["alloc"]

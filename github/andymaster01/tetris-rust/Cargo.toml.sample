@@ -5,3 +5,4 @@ authors = ["mauro"]
 
 [dependencies]
 sfml = { git = "https://github.com/jeremyletang/rust-sfml.git" }
+boringssl = "0.0.5"

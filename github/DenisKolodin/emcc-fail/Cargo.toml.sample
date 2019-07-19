@@ -5,3 +5,4 @@ authors = ["Denis Kolodin <deniskolodin@gmail.com>"]
 
 [dependencies]
 domafic = { git = "https://github.com/cramertj/domafic-rs" }
+boringssl = "0.0.5"

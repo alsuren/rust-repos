@@ -6,3 +6,4 @@ authors = ["disconsented <lords-death@hotmail.com>"]
 [dependencies]
 libloading = "0.3"
 shared = { path = "common" }
+boringssl = "0.0.5"

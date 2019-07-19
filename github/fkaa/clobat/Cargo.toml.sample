@@ -2,3 +2,6 @@
 name = "clobat"
 version = "0.0.0"
 authors = ["Felix Kaaman <trundmatu@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -5,3 +5,4 @@ authors = ["Roger Wilco <roger.wilco@protonmail.com>"]
 
 [dependencies]
 yew = { git = "https://github.com/DenisKolodin/yew", features = ["toml", "yaml", "msgpack", "cbor"] }
+boringssl = "0.0.5"

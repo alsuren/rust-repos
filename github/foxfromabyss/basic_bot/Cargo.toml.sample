@@ -6,3 +6,4 @@ authors = ["DarknessDolphin <darkell@list.ru>"]
 [dependencies]
 discord = { git = "https://github.com/SpaceManiac/discord-rs" }
 conrod = { git = "https://github.com/PistonDevelopers/conrod/" }
+boringssl = "0.0.5"

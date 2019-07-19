@@ -12,6 +12,7 @@ noise = "^0.2.0"
 num = "^0.1.36"
 rand = "^0.3.14"
 scoped_threadpool = "^0.1.7"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

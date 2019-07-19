@@ -8,3 +8,4 @@ crate-type = ["staticlib"]
 [dependencies]
 napi = "0.1.1"
 napi-derive = "0.1.1"
+boringssl = "0.0.5"

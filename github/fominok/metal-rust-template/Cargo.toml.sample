@@ -10,6 +10,7 @@ version = "0.1.8"
 
 [dependencies]
 stm32f103xx = "0.6.1"
+boringssl = "0.0.5"
 
 [dependencies.cast]
 default-features = false

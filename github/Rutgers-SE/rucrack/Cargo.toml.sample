@@ -13,6 +13,7 @@ rustc-serialize = "*"
 crossbeam = "*"
 params = "*"
 bodyparser = "*"
+boringssl = "0.0.5"
 # NOTE: This was appart of my attemp kill threads after key found
 # libc = "*"
 # celix = { git = "https://github.com/RogierWV/rust-celix.git" }

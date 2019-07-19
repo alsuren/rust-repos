@@ -26,6 +26,7 @@ comrak = "*"
 serde = "*"
 serde_json = "*"
 serde_derive = "*"
+boringssl = "0.0.5"
 
 # DB Deps
 # Disabling till nightly isn't borked

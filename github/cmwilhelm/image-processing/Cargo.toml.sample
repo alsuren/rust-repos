@@ -7,3 +7,4 @@ include = ["src/**/*.rs"]
 
 [dependencies]
 image = "*"
+boringssl = "0.0.5"

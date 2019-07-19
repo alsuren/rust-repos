@@ -19,6 +19,7 @@ dx12 = ["gfx-backend-dx12"]
 [dependencies]
 winit = "0.17"
 gfx-hal = { path = "dependencies/gfx/src/hal", version = "0.1" }
+boringssl = "0.0.5"
 
 [replace]
 "winit:0.17.0" = { path = "dependencies/winit" }

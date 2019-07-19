@@ -5,3 +5,4 @@ authors = ["DonRyuDragoni <dragoni.ryu@gmail.com>"]
 
 [dependencies]
 sdl_raw = { path = "./deps/sdl_raw" }
+boringssl = "0.0.5"

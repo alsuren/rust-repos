@@ -12,3 +12,4 @@ authors = [
 
 [dependencies]
 lpc43xx = { git = "https://github.com/jboone/rust-lpc43xx.git"}
+boringssl = "0.0.5"

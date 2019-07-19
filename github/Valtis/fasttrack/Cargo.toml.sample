@@ -4,5 +4,8 @@ name = "fasttrack"
 version = "0.0.1"
 authors = ["valtis <erkka.kaaria@helsinki.fi>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 
 

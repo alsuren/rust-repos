@@ -17,6 +17,7 @@ serde_json = "1.0.39"
 structopt = "0.2.15"
 # Workspace dependencies.
 soc = { path = "soc" }
+boringssl = "0.0.5"
 
 
 [profile.release]

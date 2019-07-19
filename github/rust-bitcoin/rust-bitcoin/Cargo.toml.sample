@@ -26,6 +26,7 @@ byteorder = "1.2"
 rand = "0.3"
 bitcoin_hashes = "0.3"
 bitcoinconsensus = { version = "0.16", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3"

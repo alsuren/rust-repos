@@ -5,3 +5,4 @@ authors = ["Edwin Cheng <edwin0cheng@gmail.com>"]
 
 [dependencies]
 other-lib={path="other-lib"}
+boringssl = "0.0.5"

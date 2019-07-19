@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 tictactoe = { path = "tictactoe" }
 mcts = { path = "mcts" }
+boringssl = "0.0.5"

@@ -15,6 +15,7 @@ maintenance = { status = "experimental" }
 
 [dependencies]
 sonar-window = { version = "0.1.0", path = "src/window", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["window"]

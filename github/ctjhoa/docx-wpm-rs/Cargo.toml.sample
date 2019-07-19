@@ -11,3 +11,4 @@ ooxml-wpm is an interface to convert wpm document from/into OOXML format
 zip = { git = "https://github.com/ctjhoa/zip-rs", branch = "wasm32", default-features = false, features = ['deflate'] }
 wpm = { git = "https://github.com/ctjhoa/wpm", branch = "master" }
 minidom = "0.10.0"
+boringssl = "0.0.5"

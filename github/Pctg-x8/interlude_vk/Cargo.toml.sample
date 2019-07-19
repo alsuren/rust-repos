@@ -7,3 +7,4 @@ description = "Interlude: Vulkan FFI And Objective Wrapping"
 [dependencies]
 interlude-vkdefs = { git = "https://github.com/Pctg-x8/interlude_vkdefs" }
 libc = "0.2.20"
+boringssl = "0.0.5"

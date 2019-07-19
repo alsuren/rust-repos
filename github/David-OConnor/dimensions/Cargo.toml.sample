@@ -27,6 +27,7 @@ rand = "^0.5.3"
 noise = "^0.5.1"
 serde = "^1.0.59"
 serde_derive = "^1.0.59"
+boringssl = "0.0.5"
 
 # I want something more like this:
 #[target.cfg(not(wasm32-unknown-unknown)).dependencies]

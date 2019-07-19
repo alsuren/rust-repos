@@ -24,3 +24,4 @@ name = "leetcode"
 crate-type = ["rlib", "staticlib"]
 
 [dependencies]
+boringssl = "0.0.5"

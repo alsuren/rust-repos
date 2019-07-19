@@ -6,4 +6,5 @@ authors = ["Alex Burka <aburka@seas.upenn.edu>"]
 [dependencies]
 libc = "*"
 group_attr = { path = "group_attr" }
+boringssl = "0.0.5"
 

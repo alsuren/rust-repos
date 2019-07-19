@@ -30,6 +30,7 @@ either = { version = "1", default-features = false }
 unreachable = "1.0.0"
 regex = { version = "1", optional = true }
 memchr = { version = "2.2", default-features = false }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

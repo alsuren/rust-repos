@@ -10,3 +10,6 @@ build = "./bindgen.sh"
 
 name = "pcap"
 crate-type = ["dylib", "rlib"]
+
+[dependencies]
+boringssl = "0.0.5"

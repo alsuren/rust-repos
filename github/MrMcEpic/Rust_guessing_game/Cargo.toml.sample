@@ -8,6 +8,7 @@ edition = "2018"
 rand = "0.4.0"
 wincolor = "1.0.1"
 term_size = "0.3.1"
+boringssl = "0.0.5"
 
 [dependencies.winconsole]
 version = "0.10"

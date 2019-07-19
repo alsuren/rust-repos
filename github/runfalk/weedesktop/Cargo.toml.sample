@@ -13,6 +13,7 @@ libc = "^0.2.43"
 linkify = "^0.3.1"
 open = "^1.2.2"
 weedesktop_macro = { path = "weedesktop_macro" }
+boringssl = "0.0.5"
 
 [target.'cfg(all(unix, not(target_os = "macos")))'.dependencies]
 dbus = "^0.6.3"

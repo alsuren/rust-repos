@@ -5,6 +5,7 @@ authors = ["Sakib Hasan <sakibccr@gmail.com>"]
 
 [dependencies]
 libc = "0.2.28"
+boringssl = "0.0.5"
 
 [dependencies.x11]
 version = "2.14.0"

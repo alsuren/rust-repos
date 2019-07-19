@@ -19,6 +19,7 @@ log = "0.3.6"
 dotenv = { git = "https://github.com/slapresta/rust-dotenv", rev = "a82fb37876603a510b2ddb04ec5b4d471fad5056" }
 rand = "0.3.15"
 image = "0.13.0"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.2.6"

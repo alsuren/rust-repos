@@ -9,3 +9,4 @@ diesel_codegen = { version = "0.15.0", features = ["postgres"] }
 dotenv = "0.9.0"
 iron = "*"
 router = "*"
+boringssl = "0.0.5"

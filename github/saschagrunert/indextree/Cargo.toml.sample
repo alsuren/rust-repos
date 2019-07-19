@@ -26,6 +26,7 @@ failure = { version = "0.1.5", features = ["derive"] }
 rayon = { version = "1.0.3", optional = true }
 serde = { version = "1.0.90", optional = true }
 serde_derive = { version = "1.0.90", optional = true }
+boringssl = "0.0.5"
 
 [[example]]
 name = "parallel_iteration"

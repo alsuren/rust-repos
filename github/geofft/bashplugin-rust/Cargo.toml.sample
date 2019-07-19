@@ -8,3 +8,6 @@ authors = ["Geoffrey Thomas <geofft@ldpreload.com>"]
 
 name = "bashplugin"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

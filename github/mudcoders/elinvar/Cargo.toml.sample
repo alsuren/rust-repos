@@ -13,3 +13,6 @@ path = "src/lib.rs"
 [[bin]]
 name = "elinvar"
 path = "src/bin.rs"
+
+[dependencies]
+boringssl = "0.0.5"

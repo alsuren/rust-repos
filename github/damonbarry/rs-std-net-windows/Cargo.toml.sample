@@ -7,6 +7,7 @@ authors = ["Damon Barry <damonb@microsoft.com>"]
 cfg-if = "0.1"
 libc = "0.2"
 winapi = { version = "0.3", features = ["ntdef", "winsock2", "ws2def"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.4"

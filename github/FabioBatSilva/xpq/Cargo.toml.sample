@@ -21,6 +21,7 @@ quick-error = "1.2.2"
 unicode-width = "0.1.5"
 streaming-stats = "0.2"
 parquet = { git = "https://github.com/apache/arrow", rev = "445482e" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3.0.7"

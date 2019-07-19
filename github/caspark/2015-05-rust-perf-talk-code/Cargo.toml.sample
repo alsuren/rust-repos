@@ -6,6 +6,7 @@ authors = ["Caspar Krieger <caspar@asparck.com>"]
 [dependencies]
 getopts = "*"
 time = "*"
+boringssl = "0.0.5"
 
 [dependencies.lodepng]
 git = "https://github.com/pornel/lodepng-rust.git"

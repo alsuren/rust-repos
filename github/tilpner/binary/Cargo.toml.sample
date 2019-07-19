@@ -7,3 +7,6 @@ authors = ["Till Hoeppner <till@hoeppner.ws>"]
 [[bin]]
 name = "example-01"
 path = "src/example/01.rs"
+
+[dependencies]
+boringssl = "0.0.5"

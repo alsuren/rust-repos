@@ -5,6 +5,7 @@ authors = ["Dinesh A <adepu.dinesh.a@gmail.com>"]
 
 [dependencies]
 granules-rs = { path = "../granules-rs" }
+boringssl = "0.0.5"
 
 [[bin]]
 name = "two_particles_tension"

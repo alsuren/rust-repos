@@ -16,3 +16,4 @@ csv = "1.0.0-beta.5"
 serde_derive = "1.0.24"
 serde = "1.0.24"
 chrono = { version = "0.4", features = ["serde"] }
+boringssl = "0.0.5"

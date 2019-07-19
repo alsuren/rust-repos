@@ -16,6 +16,7 @@ log = "0.4.0"
 simple_logger = "1.0"
 failure = "0.1.5"
 arrayvec = "0.4"
+boringssl = "0.0.5"
 
 [dependencies.gfx-hal]
 git = "https://github.com/gfx-rs/gfx"

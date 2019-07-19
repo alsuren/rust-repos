@@ -8,3 +8,6 @@ authors = ["João Oliveira  <hello@jxs.pt>"]
 
 name = "Crusoe"
 path = "src/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

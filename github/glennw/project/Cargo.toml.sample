@@ -7,6 +7,9 @@ authors = [""]
 [features]
 default = ["featureA"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.featureA]
 git = "https://github.com/glennw/featureA"
 optional = true

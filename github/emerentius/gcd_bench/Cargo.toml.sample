@@ -3,5 +3,8 @@ name = "gcd_bench"
 version = "0.1.0"
 authors = ["Emerentius <Emerentius@arcor.de>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rand]
 [dependencies.time]

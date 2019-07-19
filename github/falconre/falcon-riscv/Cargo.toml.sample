@@ -10,3 +10,6 @@ readme = "README.md"
 [lib]
 name = "falcon_riscv"
 path = "lib/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

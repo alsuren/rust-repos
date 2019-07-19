@@ -13,6 +13,7 @@ calamine = "0.15.4"
 csv = "1"
 clap = "2"
 pbr = "1"
+boringssl = "0.0.5"
 
 [package.metadata.release]
 pre-release-commit-message = "chore(release): release {{version}}"

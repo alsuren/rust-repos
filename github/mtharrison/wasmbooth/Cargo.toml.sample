@@ -7,6 +7,7 @@ authors = ["Matt Harrison <hi@matt-harrison.com>"]
 crate-type = ["cdylib"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.release]
 codegen-units = 1

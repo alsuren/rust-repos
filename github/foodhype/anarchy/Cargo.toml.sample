@@ -3,3 +3,6 @@
 name = "anarchy"
 version = "0.0.1"
 authors = ["foodhype <brianschmitz.main@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

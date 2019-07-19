@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 serde_json = "*"
 path-absolutize = "*"
+boringssl = "0.0.5"

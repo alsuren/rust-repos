@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["Gabriel Majeri <gabriel.majeri6@gmail.com>"]
 readme = "README.md"
 publish = false
+
+[dependencies]
+boringssl = "0.0.5"

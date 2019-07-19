@@ -11,6 +11,7 @@ serde_derive = "*"
 serde_json = "*"
 futures = "*"
 tokio = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "ragar_server"

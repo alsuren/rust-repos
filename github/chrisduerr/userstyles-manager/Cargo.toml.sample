@@ -8,6 +8,7 @@ error-chain = "0.10.0"
 reqwest = "0.7.2"
 json = "0.11.9"
 toml = "0.4.5"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "2.1.6"

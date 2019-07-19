@@ -19,6 +19,7 @@ cgmath = "0.16.0"
 getset = "0.0.6"
 glutin = { version = "0.14.0", optional = true }
 imgui = { version = "0.0.18", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 glium  = "0.21.0"

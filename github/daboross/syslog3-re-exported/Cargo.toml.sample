@@ -8,6 +8,7 @@ repository = "https://github.com/daboross/syslog3-re-exported"
 
 [dependencies]
 syslog = "3"
+boringssl = "0.0.5"
 
 [features]
 nightly = ["syslog/nightly"]

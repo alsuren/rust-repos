@@ -8,6 +8,7 @@ getopts = "*"
 hyper = "*"
 time = "*"
 mime = "*"
+boringssl = "0.0.5"
 
 [dependencies.url]
 git = "https://github.com/servo/rust-url"

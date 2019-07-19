@@ -9,6 +9,7 @@ maintenance = {status = "deprecated"}
 [dependencies]
 nb = "0.1.1"
 stm32l0x1 = "0.13.1"
+boringssl = "0.0.5"
 
 [dependencies.cortex-m]
 version = "0.5.7"

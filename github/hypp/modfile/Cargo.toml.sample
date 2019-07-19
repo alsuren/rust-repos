@@ -6,3 +6,6 @@ description = "This is a Rust crate for reading and writing Amiga ProTracker MOD
 readme = "README.md"
 license = "MIT"
 repository = "https://github.com/hypp/modfile"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -6,4 +6,5 @@ edition = "2018"
 
 [dependencies]
 rustyline = "3.0.0"
+boringssl = "0.0.5"
 #glr-parser = { git = "https://github.com/thinkyfish/glr-parser-rs.git"}

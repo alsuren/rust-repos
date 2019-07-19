@@ -16,6 +16,7 @@ path = "lib.rs"
 [dependencies]
 expat-sys = "2.1.0"
 servo-freetype-sys = "4.0.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 pkg-config = "0.3"

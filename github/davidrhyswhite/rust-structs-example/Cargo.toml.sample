@@ -3,3 +3,6 @@
 name = "structs-example"
 version = "0.0.1"
 authors = ["David White <david.white@spry-soft.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

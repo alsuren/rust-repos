@@ -18,6 +18,9 @@ crate-type = ["lib", "cdylib"]
 default = []
 disable-wasm-bindings = []
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.base64]
 version = "0"
 

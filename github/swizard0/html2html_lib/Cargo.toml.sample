@@ -10,3 +10,4 @@ crate-type = ["staticlib"]
 libc = "*"
 tendril = "0.2"
 html5ever = { git = "https://github.com/servo/html5ever.git" }
+boringssl = "0.0.5"

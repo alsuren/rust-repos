@@ -20,6 +20,7 @@ keywords = ["beta", "error", "gamma"]
 
 [dependencies]
 libc = "0.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert = "0.7"

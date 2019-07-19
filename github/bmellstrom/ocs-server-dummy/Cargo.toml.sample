@@ -7,6 +7,7 @@ authors = ["Björn Mellström <bjorn.mellstrom@proceranetworks.com>"]
 getopts = "0.2"
 byteorder = "0.4"
 bitflags = "0.7"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -6,3 +6,4 @@ authors = ["monocasa"]
 [dependencies]
 getopts = "0.2.14"
 ani_core = { git = "https://github.com/monocasa/ani-core.git" }
+boringssl = "0.0.5"

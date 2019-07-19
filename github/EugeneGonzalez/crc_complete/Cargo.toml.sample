@@ -7,6 +7,9 @@ authors = ["Eugene Gonzalez <eugene.gonzalez44@gmail.com>"]
 default = ["use_std"]
 use_std = ["bit_reverse/use_std"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.bit_reverse]
 version = "0.1.7"
 default-features = false

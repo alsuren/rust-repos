@@ -6,5 +6,8 @@ authors = ["Nicholas Cameron <nrc@ncameron.org>"]
 description = "Messing around with s-expressions"
 repository = "https://github.com/nrc/s"
 
+[dependencies]
+boringssl = "0.0.5"
+
 #[dependencies]
 #crossbeam = "0.1.4"

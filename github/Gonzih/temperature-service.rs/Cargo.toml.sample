@@ -11,6 +11,7 @@ time = "0.1"
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.1.3"

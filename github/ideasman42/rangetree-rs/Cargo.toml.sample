@@ -14,4 +14,5 @@ categories = ["algorithms", "data-structures"]
 travis-ci = { repository = "ideasman42/rangetree-rs" }
 
 [dependencies]
+boringssl = "0.0.5"
 

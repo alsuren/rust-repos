@@ -9,6 +9,7 @@ clap = "2.32.0"
 serde = "1.0.82"
 serde_json = "1.0.33"
 reqwest = "0.9.5"
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

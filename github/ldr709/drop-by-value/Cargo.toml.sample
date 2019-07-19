@@ -5,3 +5,4 @@ authors = ["Lance Roy <ldr709@gmail.com>"]
 
 [dependencies]
 drop-by-value-derive = { path = "drop-by-value-derive", version = "0.1.0" }
+boringssl = "0.0.5"

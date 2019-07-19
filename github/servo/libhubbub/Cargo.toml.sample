@@ -11,6 +11,9 @@ build = "make -f makefile.cargo"
 name = "hubbub-sys"
 path = "lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.parserutils-sys]
 
 git = "http://github.com/servo/libparserutils"

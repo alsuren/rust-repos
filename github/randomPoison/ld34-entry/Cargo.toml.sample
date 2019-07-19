@@ -12,3 +12,4 @@ crate-type = ["dylib", "rlib"]
 gunship = { version = "*", path = "gunship-rs", features = ["hotloading"] }
 loader  = { version = "*", path = "gunship-rs/lib/loader" }
 rand = "*"
+boringssl = "0.0.5"

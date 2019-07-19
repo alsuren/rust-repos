@@ -13,6 +13,7 @@ rocket_contrib = "0.2.8"
 serde = "0.9.15"
 serde_json = "0.9.10"
 serde_derive = "0.9.15"
+boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

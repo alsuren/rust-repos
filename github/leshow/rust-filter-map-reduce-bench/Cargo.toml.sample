@@ -3,3 +3,6 @@
 name = "fold-test"
 version = "0.0.1"
 authors = [ "Evan Cameron <cameron.evan@gmail.com>" ]
+
+[dependencies]
+boringssl = "0.0.5"

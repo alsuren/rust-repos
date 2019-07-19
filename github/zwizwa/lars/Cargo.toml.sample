@@ -31,3 +31,6 @@ path = "examples/slip.rs"
 name = "ice40"
 path = "examples/ice40.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

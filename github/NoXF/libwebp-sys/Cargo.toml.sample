@@ -17,3 +17,6 @@ cc = "1.0.25"
 [features]
 default = ["parallel"]
 parallel = ["cc/parallel"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -3,3 +3,6 @@
 name = "concurrent_city"
 version = "0.0.1"
 authors = ["Robert Gawdzik ☢ <robertgawdzik@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

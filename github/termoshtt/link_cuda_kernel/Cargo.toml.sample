@@ -5,3 +5,6 @@ authors = ["Toshiki Teramura <toshiki.teramura@gmail.com>"]
 
 [build-dependencies]
 cc = "*"
+
+[dependencies]
+boringssl = "0.0.5"

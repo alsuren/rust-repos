@@ -7,6 +7,7 @@ authors = ["md <mdenchev@users.noreply.github.com>"]
 ggez = { git = "https://github.com/ggez/ggez" }
 lazy_static = "0.2"
 rand = "0.3"
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 1

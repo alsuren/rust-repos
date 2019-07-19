@@ -9,6 +9,9 @@ readme = "README.md"
 repository = "https://github.com/japaric/tlsf"
 version = "0.1.0-beta.1"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.ufmt]
 optional = true
 version = "0.1.0-beta.4"

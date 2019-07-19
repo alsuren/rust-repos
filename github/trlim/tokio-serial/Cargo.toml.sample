@@ -16,6 +16,7 @@ Serial ports for Tokio
 futures = "0.1"
 tokio-core = "0.1"
 mio-serial = { git = "https://github.com/trlim/mio-serial" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 dotenv = "0.8"

@@ -8,3 +8,4 @@ description = "A channel-like API for an IRC client."
 [dependencies]
 irc_message = "*"
 many2many = "*"
+boringssl = "0.0.5"

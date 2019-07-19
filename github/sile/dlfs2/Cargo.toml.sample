@@ -7,3 +7,4 @@ publish = false
 [dependencies]
 ndarray = "0.12"
 ndarray-linalg = {version = "0.10", features = ["openblas"]}
+boringssl = "0.0.5"

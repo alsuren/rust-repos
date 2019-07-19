@@ -48,6 +48,7 @@ from_to_file = { path = "./from_to_file" }
 graph-oauth = { path = "./graph-oauth" }
 graph-error = { path = "./graph-error" }
 derive_from_to_file = { path = "./derive_from_to_file" }
+boringssl = "0.0.5"
 
 [dev-dependencies.rocket_contrib]
 version = "0.4.0"

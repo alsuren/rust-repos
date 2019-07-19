@@ -16,6 +16,7 @@ num = "0.1"
 encoding_rs = "*"
 log = "0.4"
 libflate = "*"
+boringssl = "0.0.5"
 
 [features]
 default = []

@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 lib-mwanamke = { path = "./lib" }
+boringssl = "0.0.5"

@@ -6,6 +6,7 @@ build = "src/peg.rs"
 
 [dependencies]
 peg="0.5.2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 peg = { version = "0.5.2" }

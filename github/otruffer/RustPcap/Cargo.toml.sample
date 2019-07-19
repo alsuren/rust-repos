@@ -10,6 +10,7 @@ hyper = "0.11"
 futures = "0.1.14"
 tokio-core = "0.1.8"
 url = "1.5.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "sonos_api"

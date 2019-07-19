@@ -5,3 +5,6 @@ version = "0.0.1"
 authors = ["Sondre Lefsaker <sondre.lefsaker@gmail.com>"]
 
 keywords = ["build-dependencies"]
+
+[dependencies]
+boringssl = "0.0.5"

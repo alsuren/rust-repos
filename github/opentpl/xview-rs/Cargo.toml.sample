@@ -11,6 +11,7 @@ include = ["src/**/*", "Cargo.toml"]
 crate-type = ["dylib"]
 [dependencies]
 otpl = { path = "../otpl-core" }
+boringssl = "0.0.5"
 
 # x86_64-pc-windows-gnu
 # i686-unknown-linux-gnu

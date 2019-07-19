@@ -6,4 +6,5 @@ authors = ["Chris Emerson <github@mail.nosreme.org>"]
 [dependencies]
 lua = { git = "https://github.com/jcmoyer/rust-lua53" }
 libc = "*"
+boringssl = "0.0.5"
 

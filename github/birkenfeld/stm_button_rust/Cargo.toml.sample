@@ -19,3 +19,4 @@ panic-semihosting = "0.5.1"
 stm32l0 = { version = "0.5.0", features = ["rt", "stm32l0x3"] }
 embedded-hal = "0.2.2"
 embedded-sdmmc = { git = "https://github.com/birkenfeld/embedded-sdmmc-rs" }
+boringssl = "0.0.5"

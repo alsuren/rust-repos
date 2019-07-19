@@ -6,3 +6,4 @@ authors = ["KlausVii <klaus.viisainen@gmail.com>"]
 [dependencies]
 euler = { path = "./euler" }
 time = "*"
+boringssl = "0.0.5"

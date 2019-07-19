@@ -6,3 +6,4 @@ authors = ["AuroransSolis <primalucegd@gmail.com>"]
 [dependencies]
 ears = { git = "https://github.com/jhasse/ears" }
 nfd = "*"
+boringssl = "0.0.5"

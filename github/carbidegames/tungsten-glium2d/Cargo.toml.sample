@@ -12,6 +12,7 @@ cgmath = "0.7.0"
 #glium = "0.?.0" doesn't have array uniform support yet
 image = "0.8.0"
 tungsten = "0.1.0"
+boringssl = "0.0.5"
 
 [dependencies.glium]
 git = "https://github.com/tomaka/glium.git"

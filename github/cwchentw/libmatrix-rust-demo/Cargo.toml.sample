@@ -8,3 +8,4 @@ name = "matrix"
 crate_type = ["dylib"]
 
 [dependencies]
+boringssl = "0.0.5"

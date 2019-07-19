@@ -8,6 +8,9 @@ description = "An unreachable code optimization hint in stable rust."
 readme = "README.md"
 license = "MIT / Apache-2.0"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.void]
 version = "1"
 default-features = false

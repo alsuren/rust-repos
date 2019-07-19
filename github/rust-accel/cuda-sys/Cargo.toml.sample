@@ -16,3 +16,6 @@ categories    = []
 
 [build-dependencies]
 glob = "*"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -15,6 +15,9 @@ license = "Unlicensed"
 [lib]
 name = "sort"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rndtester]
 git = "https://github.com/christoffetzer/rndtester"
 

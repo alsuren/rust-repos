@@ -6,3 +6,4 @@ authors = ["Stefan Bühler <buehler@cert.uni-stuttgart.de>"]
 [dependencies]
 clap = { version = "~2.19.2", features = ["unstable"] }
 dnslogger-utils = { path = "dnslogger-utils" }
+boringssl = "0.0.5"

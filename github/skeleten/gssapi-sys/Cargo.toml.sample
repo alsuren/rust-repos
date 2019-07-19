@@ -8,6 +8,9 @@ default = [ "krb5" ]
 om_string = []
 krb5 = [ "krb5-sys" ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.krb5-sys]
 version = "0.1"
 optional = true

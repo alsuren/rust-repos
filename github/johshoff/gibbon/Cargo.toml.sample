@@ -8,6 +8,7 @@ repository = "https://github.com/johshoff/gibbon"
 documentation = "https://docs.rs/gibbon"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 csv = "0.14"

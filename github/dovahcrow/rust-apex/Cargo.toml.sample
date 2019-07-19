@@ -15,4 +15,5 @@ serde = "1"
 serde_derive = "1"
 serde_json = "1"
 failure = { version = "0.1", features = []}
+boringssl = "0.0.5"
 # rust-apex-derive = { path = "./rust-apex-derive"}

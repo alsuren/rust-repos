@@ -12,3 +12,4 @@ s_app_dir = "*"
 yaml-rust = "0.3.0"
 clippy = { version = "*", optional = true }
 sorty = { git = "https://github.com/Wafflespeanut/rust-sorty", optional = true }
+boringssl = "0.0.5"

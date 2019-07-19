@@ -5,3 +5,6 @@ authors = ["Gerd Zellweger <mail@gerdzellweger.com>"]
 
 [[test]]
 name = "readtest"
+
+[dependencies]
+boringssl = "0.0.5"

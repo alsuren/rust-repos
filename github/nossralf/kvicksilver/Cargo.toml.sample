@@ -13,3 +13,4 @@ appveyor = { repository = "nossralf/kvicksilver" }
 maintenance = { status = "experimental" }
 
 [dependencies]
+boringssl = "0.0.5"

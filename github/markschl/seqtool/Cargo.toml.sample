@@ -44,6 +44,7 @@ palette = "0.4"
 termcolor = "1.0"
 ordered-float = "0.5"
 approx = "0.3"
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 pager = "0.14"

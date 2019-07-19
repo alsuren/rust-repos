@@ -11,6 +11,7 @@ failure = "0.1.2"
 reqwest = "0.8.7"
 byteorder = "1.2.4"
 rayon = "1.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 test_util = { path = "test_util" }

@@ -6,6 +6,7 @@ authors = ["sinicin <sinicin@bolid.ru>"]
 [dependencies]
 libc="*"
 sharedlib="*"
+boringssl = "0.0.5"
 
 [lib]
 name = "mosquitto"

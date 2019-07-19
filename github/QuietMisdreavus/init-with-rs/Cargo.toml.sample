@@ -9,3 +9,6 @@ categories = ["rust-patterns"]
 keywords = ["no_std", "functional"]
 license = "Unlicense"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

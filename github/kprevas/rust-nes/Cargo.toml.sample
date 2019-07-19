@@ -29,6 +29,7 @@ array-init = "0.0.2"
 byteorder = "1.2.1"
 pistoncore-sdl2_window = "0.49.1"
 triple_buffer = {version = "2.0.0", features = ["raw"] }
+boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "kprevas/rust-nes", branch = "master" }

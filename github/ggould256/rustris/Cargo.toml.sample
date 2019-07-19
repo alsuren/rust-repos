@@ -3,3 +3,6 @@
 name = "rustris"
 version = "0.0.1"
 authors = [ "ggould@alum.mit.edu" ]
+
+[dependencies]
+boringssl = "0.0.5"

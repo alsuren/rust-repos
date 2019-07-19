@@ -64,6 +64,7 @@ dot = "0.1"
 csv = "1"
 utils = {package = "telamon-utils", path = "telamon-utils"}
 telajax = {path = "telajax", optional = true}
+boringssl = "0.0.5"
 
 
 [dev-dependencies]

@@ -12,3 +12,4 @@ bitflags = "0.7"
 lazy_static = "*"
 tempdir = { version = "*" }
 xdg = { version = "*", optional = true }
+boringssl = "0.0.5"

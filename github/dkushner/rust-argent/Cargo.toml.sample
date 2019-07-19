@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["David Kushner <root@davidkushner.me>"]
 license = "MIT"
 description = "Helpful library for working with currencies."
+
+[dependencies]
+boringssl = "0.0.5"

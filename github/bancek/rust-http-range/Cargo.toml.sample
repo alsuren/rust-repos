@@ -7,3 +7,6 @@ documentation = "https://docs.rs/http-range/0.1.1/http_range/"
 description = "HTTP Range header parser"
 readme = "README.md"
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

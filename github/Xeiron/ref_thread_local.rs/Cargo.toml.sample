@@ -21,3 +21,6 @@ is-it-maintained-issue-resolution = { repository = "Xeiron/ref_thread_local.rs" 
 is-it-maintained-open-issues = { repository = "Xeiron/ref_thread_local.rs" }
 
 maintenance = { status = "passively-maintained" }
+
+[dependencies]
+boringssl = "0.0.5"

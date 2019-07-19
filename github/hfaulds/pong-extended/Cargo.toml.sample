@@ -5,6 +5,7 @@ authors = ["Hayden Faulds <fauldsh@gmail.com>"]
 
 [dependencies]
 amethyst = { path = "../amethyst" }
+boringssl = "0.0.5"
 
 [[bin]]
 name = "make_a_ship"

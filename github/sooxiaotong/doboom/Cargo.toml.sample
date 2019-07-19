@@ -21,6 +21,7 @@ serde_derive = "1"
 tokio-core = "0.1"
 futures = "0.1"
 jsonwebtoken = "2.0"
+boringssl = "0.0.5"
 
 [dependencies.rocket]
 git = "https://github.com/SergioBenitez/Rocket"

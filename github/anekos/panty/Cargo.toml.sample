@@ -28,3 +28,4 @@ rustc-serialize = "0.3"
 unix_socket = "0.5"
 walkdir = "1.0.3"
 x11 = { version = "2.11", features = ["xlib", "xinerama"] }
+boringssl = "0.0.5"

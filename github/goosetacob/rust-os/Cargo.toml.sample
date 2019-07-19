@@ -8,3 +8,4 @@ authors = ["Gustavo Blanco <gustavo.jr.blanco@gmail.com>"]
 default-target = "x86_64-goosetaco-none.json"
 
 [dependencies]
+boringssl = "0.0.5"

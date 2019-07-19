@@ -5,6 +5,7 @@ authors = ["Arnav Borborah <arnavborborah11@gmail.com>"]
 
 [dependencies]
 rand = "0.6.5"
+boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "2.33.0"

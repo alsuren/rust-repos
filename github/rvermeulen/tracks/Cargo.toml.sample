@@ -1,3 +1,6 @@
 [package]
 name = "tracks"
 version = "0.0.1"
+
+[dependencies]
+boringssl = "0.0.5"

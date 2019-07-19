@@ -10,6 +10,7 @@ categories = ["external-ffi-bindings", "text-processing", "localization", "encod
 readme = "README.md"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.37.4"

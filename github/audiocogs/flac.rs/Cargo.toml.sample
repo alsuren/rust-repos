@@ -10,5 +10,8 @@ complete-tests = []
 name = "flac"
 path = "src/flac.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.aurora]
 git = "https://github.com/audiocogs/aurora.rs"

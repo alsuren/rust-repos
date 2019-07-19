@@ -16,6 +16,7 @@ bincode      = "^0.6" # Binary output format
 # Server utilities
 json = "^0.11"
 uuid = "^0.3"
+boringssl = "0.0.5"
 
 # For cryptography based on libsodium
 [dependencies.sodiumoxide]

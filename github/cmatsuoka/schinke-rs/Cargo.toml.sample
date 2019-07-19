@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Claudio Matsuoka <claudio.matsuoka@cits.br>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

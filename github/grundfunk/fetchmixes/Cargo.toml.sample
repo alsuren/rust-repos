@@ -16,3 +16,4 @@ serde = {version = "1.0", features = ["derive"]}
 url = "1.7.2"
 rusqlite = {version = "0.18.0", features = ["chrono"]}
 chrono = {version = "0.4.6", features = ["serde"]}
+boringssl = "0.0.5"

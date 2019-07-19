@@ -10,6 +10,7 @@ serde = "1.0.7"
 serde_derive = "1.0.7"
 serde_json = "1.0.2"
 terminal_size = "0.1.6"
+boringssl = "0.0.5"
 
 [dependencies.issuer]
 path = "issuer"

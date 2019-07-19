@@ -5,3 +5,4 @@ authors = ["Evan Davis <edavis@caltech.edu>"]
 
 [dependencies]
 libc = { version = "0.2", default-features = false }
+boringssl = "0.0.5"

@@ -7,3 +7,6 @@ readme = "README.md"
 keywords = ["nl80211", "80211", "nl80211.h"]
 license = "ISC"
 repository = "http://www.github.com/carrotsrc/nl80211rs"
+
+[dependencies]
+boringssl = "0.0.5"

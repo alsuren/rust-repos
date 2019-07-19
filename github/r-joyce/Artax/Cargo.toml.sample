@@ -18,6 +18,7 @@ rustc-serialize = "0.3"
 snap = "~0.2"
 # time = "0.1"
 config = "0.8"
+boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-rust = "~1"

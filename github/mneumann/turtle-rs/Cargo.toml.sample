@@ -7,3 +7,6 @@ license = "MIT"
 repository = "https://github.com/mneumann/turtle-graphics-rs"
 description = "Turtle Graphics for Rust"
 keywords = ["graphics"]
+
+[dependencies]
+boringssl = "0.0.5"

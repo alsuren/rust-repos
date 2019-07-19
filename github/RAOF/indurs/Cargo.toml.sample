@@ -8,6 +8,7 @@ license = "Apache-2.0/MIT"
 arrayref = "^0.3.4"
 proptest = "^0.3.1"
 criterion = { git = "https://github.com/japaric/criterion.rs.git", optional=true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 itertools = "^0.7.2"

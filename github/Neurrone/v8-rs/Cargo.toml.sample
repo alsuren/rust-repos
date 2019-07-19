@@ -12,6 +12,7 @@ version = "0.1.0"
 [dependencies]
 lazy_static = "1.1.0"
 v8-sys = {path = "v8-sys", version = "0.1.0" }
+boringssl = "0.0.5"
 
 [features]
 bindgen = ["v8-sys/bindgen"]

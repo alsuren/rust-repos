@@ -29,3 +29,6 @@ categories = ["development-tools", "development-tools::testing", "development-to
 name = "stainless"
 path = "src/lib.rs"
 plugin = true
+
+[dependencies]
+boringssl = "0.0.5"

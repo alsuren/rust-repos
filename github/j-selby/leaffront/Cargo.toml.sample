@@ -31,6 +31,7 @@ leaffront-input-glutin = { path = "input_glutin", optional = true }
 
 leaffront-backend-redis = { path = "backend_redis", optional = true }
 leaffront-backend-null = { path = "backend_null", optional = true }
+boringssl = "0.0.5"
 
 [features]
 # Frontends

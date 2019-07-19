@@ -7,3 +7,4 @@ authors = ["Ryan Barth <ryan@barth.tech>"]
 diesel = { version = "*", features = ["postgres"] }
 diesel_codegen = { version = "*", features = ["postgres"] }
 dotenv = "*"
+boringssl = "0.0.5"

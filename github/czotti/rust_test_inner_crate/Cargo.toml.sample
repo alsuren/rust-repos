@@ -5,3 +5,6 @@ authors = ["Clément Zotti <clement.zotti@imeka.ca>"]
 
 [dev-dependencies]
 utilities = { path="utilities" }
+
+[dependencies]
+boringssl = "0.0.5"

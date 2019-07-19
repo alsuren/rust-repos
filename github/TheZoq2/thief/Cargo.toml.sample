@@ -11,6 +11,7 @@ image = "*"
 time = "*"
 lazy_static = "1.0"
 rand = "*"
+boringssl = "0.0.5"
 
 [dependencies.x11]
 version = "2.6.1"

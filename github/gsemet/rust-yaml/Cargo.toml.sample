@@ -24,3 +24,6 @@ opt-level = 0
 name = "rust-yaml"
 test = true
 path = "src/yaml.rs"
+
+[dependencies]
+boringssl = "0.0.5"

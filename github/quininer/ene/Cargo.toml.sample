@@ -32,6 +32,7 @@ ttyaskpass = { git = "https://github.com/quininer/ttyaskpass", branch = "mortal"
 seckey = { version = "^0.9.1", features = [ "nightly" ] }
 
 sled = "0.15"
+boringssl = "0.0.5"
 
 [build-dependencies]
 clap = "2"

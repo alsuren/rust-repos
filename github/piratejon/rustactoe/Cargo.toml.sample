@@ -3,3 +3,6 @@
 name = "rustactoe"
 version = "0.0.1"
 authors = ["Jonathan Wesley Stone <js@piratejon.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

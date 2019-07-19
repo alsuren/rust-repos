@@ -11,3 +11,4 @@ crate-type = ["cdylib"]
 rusty_usn = {git = "https://github.com/forensicmatt/RustyUsn.git", branch = "master"}
 pyo3 = {version = "0.6.0", features = ["extension-module"]}
 pyo3-file = "0.2.0"
+boringssl = "0.0.5"

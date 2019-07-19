@@ -18,6 +18,7 @@ rand = "0.5.0"
 # These are only binary dependencies.
 # See https://github.com/rust-lang/cargo/issues/1982.
 xdg = "2.1.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "insult"

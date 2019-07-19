@@ -3,6 +3,9 @@ name = "stannis"
 version = "0.0.1"
 authors = [ "" ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.tox]
 git = "https://github.com/mahkoh/rust-tox.git"
 

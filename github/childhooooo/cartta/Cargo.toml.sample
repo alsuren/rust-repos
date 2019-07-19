@@ -25,6 +25,7 @@ xss = { git = "https://github.com/childhooooo/xss.rs.git" }
 tera = "0.11"
 htmlescape = "0.3.1"
 lazy_static = "1.2.0"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.4.0"

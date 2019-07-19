@@ -5,3 +5,6 @@ authors = [ "mahkoh" ]
 
 [lib]
 name = "fdpoll"
+
+[dependencies]
+boringssl = "0.0.5"

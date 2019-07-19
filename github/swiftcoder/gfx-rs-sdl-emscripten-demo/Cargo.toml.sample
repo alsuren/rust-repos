@@ -8,6 +8,7 @@ sdl2 = "0.30"
 gfx = { git = "https://github.com/gfx-rs/gfx.git" }
 gfx_window_sdl = { git = "https://github.com/gfx-rs/gfx.git" }
 gfx_core = { git = "https://github.com/gfx-rs/gfx.git" }
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 2

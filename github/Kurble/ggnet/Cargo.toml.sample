@@ -7,3 +7,4 @@ authors = ["brambuurlage@gmail.com"]
 [dependencies]
 byteorder = "1.2.2"
 ggnet_derive = { path = "ggnet-derive" }
+boringssl = "0.0.5"

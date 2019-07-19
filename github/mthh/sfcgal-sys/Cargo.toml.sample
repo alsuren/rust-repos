@@ -16,3 +16,6 @@ categories = ["external-ffi-bindings"]
 [build-dependencies]
 bindgen = "0.47.1"
 cc = "~1.0"
+
+[dependencies]
+boringssl = "0.0.5"

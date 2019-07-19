@@ -11,5 +11,6 @@ crossbeam = "*"
 num = "*"
 cgmath ="*"
 libc = "*"
+boringssl = "0.0.5"
 [build-dependencies]
 gl_generator = "*"

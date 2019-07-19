@@ -2,3 +2,6 @@
 name = "factors"
 version = "0.0.1"
 authors = ["psc"]
+
+[dependencies]
+boringssl = "0.0.5"

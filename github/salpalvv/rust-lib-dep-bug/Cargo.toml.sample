@@ -6,3 +6,4 @@ authors = ["Daniel Collette <dcollette@navicure.com>"]
 [dependencies]
 git2 = { version = "*", default-features = false }
 mockito = "*"
+boringssl = "0.0.5"

@@ -16,3 +16,6 @@ categories = [
 [badges]
 travis-ci = { repository = "Lucretiel/lazy_format" }
 maintenance = { status = "actively-developed" }
+
+[dependencies]
+boringssl = "0.0.5"

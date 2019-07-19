@@ -3,6 +3,9 @@ name = "spiner"
 version = "0.2.0"
 authors = ["reeFridge <reefridgerator@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.libspine-sys]
 git = "https://github.com/reeFridge/libspine-sys.git"
 

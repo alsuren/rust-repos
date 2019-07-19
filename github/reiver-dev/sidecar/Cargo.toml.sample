@@ -26,3 +26,4 @@ tokio-codec = "0.1"
 tokio-reactor = "0.1"
 tokio-process = "0.2"
 signal-hook = { version = "0.1", features = ["tokio-support"]}
+boringssl = "0.0.5"

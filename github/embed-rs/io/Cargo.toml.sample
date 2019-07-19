@@ -5,6 +5,7 @@ authors = ["Oliver Schneider <git-spam-no-reply9815368754983@oli-obk.de>", "The 
 license = "MIT/Apache-2.0"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 default = []

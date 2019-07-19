@@ -8,3 +8,4 @@ cortex-m-rt = "^0.2.3"
 cortex-m = "^0.2.7"
 stm32f30x = "^0.4.1"
 liar = { path = "../liar-git", default-features = false }
+boringssl = "0.0.5"

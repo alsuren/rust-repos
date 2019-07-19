@@ -6,6 +6,7 @@ authors = ["Lucas Florio <lucasefe@gmail.com>"]
 [dependencies]
 hyper = "0.6.14"
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "kodic"

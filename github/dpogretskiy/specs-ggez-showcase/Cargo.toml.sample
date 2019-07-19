@@ -15,6 +15,7 @@ specs-derive = "*"
 rayon = "0.7.1"
 
 pushdown-automaton-macro = "*"
+boringssl = "0.0.5"
 
 [dependencies.ggez]
 git = "https://github.com/ggez/ggez.git"

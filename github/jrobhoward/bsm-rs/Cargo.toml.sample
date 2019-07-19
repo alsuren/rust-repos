@@ -6,3 +6,4 @@ authors = ["jhoward"]
 [dependencies]
 
 ioctl-rs = {git = "file:///home/jhoward/git/ioctl-rs", rev = "JRH"}
+boringssl = "0.0.5"

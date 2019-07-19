@@ -8,3 +8,6 @@ authors = ["liam"]
 [build-dependencies]
 bindgen = "*"
 
+[dependencies]
+boringssl = "0.0.5"
+

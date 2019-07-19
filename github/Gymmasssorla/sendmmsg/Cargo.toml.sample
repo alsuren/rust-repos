@@ -17,3 +17,4 @@ travis-ci = { repository = "Gymmasssorla/anevicon", branch = "master" }
 
 [dependencies]
 libc = "0.2.55"
+boringssl = "0.0.5"

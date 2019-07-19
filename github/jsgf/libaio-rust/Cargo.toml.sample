@@ -11,6 +11,7 @@ license = "MIT"
 eventfd="*"
 libc="*"
 chrono = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "*"

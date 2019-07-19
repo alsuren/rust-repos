@@ -17,6 +17,7 @@ serde_derive = "1.0.11"
 serde_json = "1.0.2"
 tokio-core = "0.1.9"
 zip = "0.2.5"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 default-features = false

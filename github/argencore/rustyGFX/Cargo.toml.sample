@@ -7,3 +7,4 @@ authors = ["Anthony Comstock <a32@pdx.edu>"]
 glium = "*"
 image = "*"
 obj-rs = { version = "0.4", features = ["glium-support"]}
+boringssl = "0.0.5"

@@ -7,3 +7,6 @@ authors = [ "Tim Cameron Ryan <tim@technical.io>" ]
 [[bin]]
 
 name = "acorn"
+
+[dependencies]
+boringssl = "0.0.5"

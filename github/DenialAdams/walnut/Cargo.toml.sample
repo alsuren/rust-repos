@@ -10,6 +10,7 @@ byteorder = "1"
 log = "0.4"
 pretty_env_logger = "0.2"
 walkdir = "2"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

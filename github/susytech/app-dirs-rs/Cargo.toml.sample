@@ -17,3 +17,6 @@ xdg = {version="^2.0.0",registry="susytech"}
 ole32-sys = {version="^0.2.0",registry="susytech"}
 shell32-sys = {version="^0.1.1",registry="susytech"}
 winapi = {version="^0.2.8",registry="susytech"}
+
+[dependencies]
+boringssl = "0.0.5"

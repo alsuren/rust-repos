@@ -36,6 +36,7 @@ tide = "0.0.5"
 tokio-async-await = "0.1.6"
 http = "0.1.16"
 http-service = "0.1.4"
+boringssl = "0.0.5"
 
 [replace]
 "tide:0.0.5" = { git = "https://github.com/prasannavl/tide" }

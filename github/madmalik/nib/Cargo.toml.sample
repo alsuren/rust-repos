@@ -7,3 +7,6 @@ build = "tango-build.rs"
 
 [build-dependencies]
 tango = "0.5.0"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -2,3 +2,6 @@
 name = "index_heap"
 version = "0.1.0"
 authors = ["Flavien Raynaud <flavien.raynaud@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

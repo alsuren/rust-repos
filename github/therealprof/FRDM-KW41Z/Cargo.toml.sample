@@ -25,6 +25,7 @@ panic-abort = "0.1.1"
 static-ref = "0.2.1"
 vcell = "0.1.0"
 volatile-register = "0.2.0"
+boringssl = "0.0.5"
 
 [dependencies.mkw41z]
 features = ["rt"]

@@ -10,3 +10,6 @@ links="kcapi"
 build="src/build.rs"
 repository="https://github.com/mcpherrinm/kcapi-sys.git"
 homepage="https://github.com/mcpherrinm/kcapi-sys"
+
+[dependencies]
+boringssl = "0.0.5"

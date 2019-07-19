@@ -13,6 +13,7 @@ log = "0.4"
 tokio-core = "*"
 hyper = "0.12"
 futures = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 serde = "*"

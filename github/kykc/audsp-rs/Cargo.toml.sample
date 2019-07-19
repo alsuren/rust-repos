@@ -9,3 +9,4 @@ crate-type = ["dylib", "staticlib"]
 
 [dependencies]
 num = "*"
+boringssl = "0.0.5"

@@ -13,6 +13,7 @@ embedded-hal = "*"
 generic-array = "*"
 bitfield = "*"
 libm = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 linux-embedded-hal = "*"

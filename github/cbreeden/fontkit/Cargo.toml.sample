@@ -7,3 +7,4 @@ authors = ["Christopher Breeden <github@u.breeden.cc>"]
 derive_more = "*"
 byteorder = "*"
 decode_derive = { path = "decode_derive/" }
+boringssl = "0.0.5"

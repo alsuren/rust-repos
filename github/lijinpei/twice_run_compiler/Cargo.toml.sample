@@ -11,3 +11,6 @@ path = "src/twice.rs"
 [[bin]]
 name = "twice_two_files"
 path = "src/twice_two_files.rs"
+
+[dependencies]
+boringssl = "0.0.5"

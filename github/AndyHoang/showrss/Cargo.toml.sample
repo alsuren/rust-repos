@@ -6,3 +6,4 @@ authors = ["andyhoang <andy@parcelperform.com>"]
 [dependencies]
 rss = {"version" = "1.5.0", features = ["from_url"]}
 error-chain = '*'
+boringssl = "0.0.5"

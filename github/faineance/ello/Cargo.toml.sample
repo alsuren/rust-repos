@@ -5,6 +5,7 @@ authors = ["faineance <faineance@users.noreply.github.com>"]
 build = "build.rs"
 
 [dependencies]
+boringssl = "0.0.5"
 
 
 [dependencies.lalrpop-util]

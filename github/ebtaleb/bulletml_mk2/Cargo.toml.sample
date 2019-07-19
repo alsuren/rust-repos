@@ -8,6 +8,7 @@ xml-rs = "*"
 log = "*"
 env_logger = "*"
 typed-arena = "*"
+boringssl = "0.0.5"
 
 [dependencies.bml]
 path = "src/bml"

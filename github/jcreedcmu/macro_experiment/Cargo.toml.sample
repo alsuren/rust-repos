@@ -7,3 +7,4 @@ authors = ["Jason Reed <jcreed@gmail.com>"]
 proc-macro = true
 
 [dependencies]
+boringssl = "0.0.5"

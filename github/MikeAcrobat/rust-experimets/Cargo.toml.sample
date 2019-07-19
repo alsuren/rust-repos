@@ -5,6 +5,7 @@ authors = ["Mikey"]
 
 [dependencies]
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 git = "https://github.com/AngryLawyer/rust-sdl2"

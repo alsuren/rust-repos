@@ -32,6 +32,7 @@ scoped-pool = "^0.1"
 structopt = "0.2"
 walkdir = "^0.1.5"
 libc = "0.2.43"
+boringssl = "0.0.5"
 
 [dependencies.point_viewer_proto_rust]
 path = "point_viewer_proto_rust"

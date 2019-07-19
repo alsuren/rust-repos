@@ -8,6 +8,9 @@ authors = ["Maniankara<maniankara@gmail.com>"]
 name = "rustbyexample"
 path = "tutorial/26std/40channel.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 # [[bin]]
 # name = "test-server"
 # path = "src/test-server.rs"

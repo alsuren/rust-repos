@@ -9,3 +9,6 @@ quickcheck = "0.2.*"
 # hamcrest not on crates.io yet
 [dev-dependencies.hamcrest]
 path = "lib/hamcrest"
+
+[dependencies]
+boringssl = "0.0.5"

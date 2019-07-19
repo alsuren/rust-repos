@@ -4,6 +4,9 @@ name = "prime-website"
 version = "0.0.1"
 authors = ["Huon Wilson <dbau.pp+github@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.nickel]
 git = "https://github.com/nickel-org/nickel.rs.git"
 

@@ -7,3 +7,6 @@ authors = ["Tomoki Aonuma <uasi@uasi.jp>"]
 [[bin]]
 name = "crustmark"
 path = "src/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

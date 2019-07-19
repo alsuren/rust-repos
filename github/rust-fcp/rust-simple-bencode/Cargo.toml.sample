@@ -8,3 +8,4 @@ repository = "https://github.com/rust-fcp/rust-simple-bencode"
 readme = "README.md"
 
 [dependencies]
+boringssl = "0.0.5"

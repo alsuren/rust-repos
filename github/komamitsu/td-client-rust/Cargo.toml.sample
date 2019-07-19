@@ -19,6 +19,7 @@ flate2 = { version = "0.2", features = ["zlib"], default-features = false }
 regex = "0.2"
 tempdir = "0.3"
 chrono = { version = "0.3", features = ["rustc-serialize"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 mockito = "0.15"

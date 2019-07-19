@@ -17,6 +17,7 @@ fern = "*"
 log = "*"
 chrono = "0.3"
 mime = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "gotham_example_app_lib"

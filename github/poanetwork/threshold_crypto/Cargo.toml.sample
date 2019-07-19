@@ -31,6 +31,7 @@ rand04_compat = "0.1.1"
 rand_chacha = "0.1.1"
 serde = { version = "1.0.89", features = ["derive"] }
 tiny-keccak = "1.4.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 bincode = "1.0.1"

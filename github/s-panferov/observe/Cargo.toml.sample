@@ -6,6 +6,7 @@ authors = ["Stanislav Panferov <stanislav.panferov@revjet.com>"]
 [dependencies]
 snowflake = "1.2"
 typemap = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 mockers = "0.12.0"

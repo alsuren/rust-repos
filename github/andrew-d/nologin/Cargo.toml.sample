@@ -6,3 +6,4 @@ authors = ["Andrew Dunham <andrew@du.nham.ca>"]
 [dependencies]
 libc = "*"
 syslog = "~3.1.0"
+boringssl = "0.0.5"

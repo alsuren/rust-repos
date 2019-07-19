@@ -3,6 +3,9 @@ name = "rustedirc"
 version = "0.1.0"
 authors = ["Vladimir Pouzanov <farcaller@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.stainless]
 # git = "https://github.com/reem/stainless"
 path = "../stainless"

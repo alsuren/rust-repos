@@ -7,3 +7,4 @@ authors = ["Mathias Svensson <freaken@freaken.dk>"]
 tokio = { git = "https://github.com/tokio-rs/tokio.git" }
 tokio-timer = { git = "https://github.com/tokio-rs/tokio.git" }
 tokio-threadpool = { git = "https://github.com/tokio-rs/tokio.git" }
+boringssl = "0.0.5"

@@ -12,6 +12,7 @@ mustache = "*"
 get_if_addrs = "0.4.0"
 chrono = "0.2"
 rustc-serialize = "*"
+boringssl = "0.0.5"
 
 [dependencies.multipart]
 git = "https://github.com/srdja/multipart.git"

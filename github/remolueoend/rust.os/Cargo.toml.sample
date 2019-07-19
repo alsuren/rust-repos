@@ -5,6 +5,7 @@ authors = ["Remo Zumsteg <remolueoend@users.noreply.github.com>"]
 
 [dependencies]
 rlibc = "1.0"
+boringssl = "0.0.5"
 
 [lib]
 create-type = ["static-lib"]

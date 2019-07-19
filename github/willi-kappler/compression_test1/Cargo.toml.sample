@@ -7,4 +7,7 @@ authors = ["Willi Kappler, grandor@gmx.de"]
 name = "compression1"
 path = "src/compression1.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 #[dependencies]

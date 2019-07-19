@@ -2,3 +2,6 @@
 name = "my_orm"
 version = "0.1.0"
 authors = ["Akira SUENAMI <akira.suenami@peroli.jp>"]
+
+[dependencies]
+boringssl = "0.0.5"

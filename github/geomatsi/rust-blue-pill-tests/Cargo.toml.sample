@@ -23,6 +23,7 @@ nrf24l01 = { git = "https://github.com/geomatsi/nrf24l01", branch = "update-deps
 
 #embedded-nrf24l01 = { path = "/home/matsi/devel/code/rust/embedded-nrf24l01" }
 embedded-nrf24l01 = { git = "https://github.com/astro/embedded-nrf24l01", rev = "ab3ac91fb93746be9b79733960404c6f82528137" }
+boringssl = "0.0.5"
 
 [dependencies.stm32f103xx]
 version = "0.11.0"

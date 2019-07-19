@@ -4,3 +4,6 @@ version = "0.1.1"
 license = "MIT"
 description = "Convergent Replicated Data Types in Rust"
 authors = ["Daniel Fagnan <dnfagnan@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

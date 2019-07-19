@@ -6,3 +6,4 @@ authors = ["Paul Woolcock <paul@woolcock.us>"]
 [dependencies]
 serde = "*"
 serde_macros = "*"
+boringssl = "0.0.5"

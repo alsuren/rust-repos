@@ -6,4 +6,5 @@ authors = ["Håvard Anda Estensen <haavard.ae@gmail.com>"]
 [dependencies]
 regex = "1"
 clap = {version = "2.32", features = ["yaml"]}
+boringssl = "0.0.5"
 

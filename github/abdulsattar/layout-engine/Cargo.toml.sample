@@ -2,3 +2,6 @@
 name = "layout-engine"
 version = "0.1.0"
 authors = ["asattar.md@gmail.com"]
+
+[dependencies]
+boringssl = "0.0.5"

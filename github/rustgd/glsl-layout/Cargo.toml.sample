@@ -13,3 +13,4 @@ bigger-arrays = []
 [dependencies]
 cgmath = { version = "0.16", optional = true }
 glsl-layout-derive = { version = "0.2", path = "glsl-layout-derive" }
+boringssl = "0.0.5"

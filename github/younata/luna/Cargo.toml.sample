@@ -2,3 +2,6 @@
 name = "luna"
 version = "0.1.0"
 authors = ["Rachel Brindle <you@subluminal.net>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -9,6 +9,7 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.backtrace]
 version = "0.3"

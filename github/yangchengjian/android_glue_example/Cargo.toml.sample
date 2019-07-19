@@ -7,6 +7,9 @@ authors = ["Captcha <captcha.yang@dasudian.com>"]
 name = "android_glue_example"
 path = "src/main.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.android_glue]
 android_glue = "0.2.2"
 

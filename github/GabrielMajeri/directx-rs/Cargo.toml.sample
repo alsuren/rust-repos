@@ -22,3 +22,6 @@ members = [
 	"direct3d",
 	"direct2d"
 ]
+
+[dependencies]
+boringssl = "0.0.5"

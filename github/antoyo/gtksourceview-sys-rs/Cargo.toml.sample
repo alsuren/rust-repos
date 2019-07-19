@@ -19,6 +19,7 @@ gobject-sys = "^0.3.4"
 gtk-sys = "^0.3.4"
 libc = "0.2"
 pango-sys = "^0.3.4"
+boringssl = "0.0.5"
 
 [features]
 v3_10 = ["v3_8"]

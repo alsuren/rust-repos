@@ -8,3 +8,4 @@ authors = ["Jonas Waeber <jonaswaeber@gmail.com>"]
 rand = "0.5.5"
 log = "0.4.5"
 uuid = { version = "0.7", features = ["serde", "v5", "v4"] }
+boringssl = "0.0.5"

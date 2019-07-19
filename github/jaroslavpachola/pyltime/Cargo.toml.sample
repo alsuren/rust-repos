@@ -5,3 +5,6 @@ version = "0.0.1"
 authors = ["Jaroslav Pachola <jaroslav.pachola@gmail.com>"]
 
 git = "https://github.com/jaroslavpachola/pyltime.git"
+
+[dependencies]
+boringssl = "0.0.5"

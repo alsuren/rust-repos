@@ -11,6 +11,7 @@ crate-type = ["cdylib"]
 [dependencies]
 nix = "*"
 libc = "*"
+boringssl = "0.0.5"
 
 [target.arm-unknown-linux-gnueabihf]
 linker = "arm-linux-gnueabihf-gcc"

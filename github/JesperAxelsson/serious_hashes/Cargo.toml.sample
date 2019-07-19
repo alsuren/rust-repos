@@ -10,3 +10,6 @@ keywords = ["hash", "u64", "murmur", "hashmap"]
 [dev-dependencies]
 time = "0.1.*"
 rand = "0.3"
+
+[dependencies]
+boringssl = "0.0.5"

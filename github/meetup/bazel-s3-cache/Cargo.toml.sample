@@ -18,6 +18,7 @@ rusoto_s3 = "0.34"
 rusoto_core = "0.34"
 serde_derive = "1.0"
 serde = "1.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 url = "1.7"

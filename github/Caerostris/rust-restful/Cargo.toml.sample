@@ -14,3 +14,4 @@ restful_derive = { path = "restful_derive", version = "0.1" }
 serde = "^1.0"
 serde_derive = "^1.0"
 reqwest = "^0.8"
+boringssl = "0.0.5"

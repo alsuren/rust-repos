@@ -3,3 +3,6 @@
 name = "gsd-backlight-helper"
 version = "0.0.1"
 authors = ["Michael Kuryshev <me@mk9.name>"]
+
+[dependencies]
+boringssl = "0.0.5"

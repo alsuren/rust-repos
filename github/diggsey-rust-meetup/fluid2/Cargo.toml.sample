@@ -12,6 +12,7 @@ glutin = "*"
 gfx_device_gl = { git = "https://github.com/gfx-rs/gfx" }
 gfx_window_glutin = { git = "https://github.com/gfx-rs/gfx" }
 rand = "0.3"
+boringssl = "0.0.5"
 
 [target.x86_64-unknown-linux-gnu.dependencies]
 gfx_window_glfw = { git = "https://github.com/gfx-rs/gfx" }

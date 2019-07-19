@@ -26,6 +26,7 @@ deuterium = "*"
 byteorder = "*"
 num = "*"
 enum_primitive = "*"
+boringssl = "0.0.5"
 
 [dependencies.postgres]
 version = "*"

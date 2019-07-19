@@ -11,3 +11,4 @@ proc-macro2 = "0.4"
 quote = "0.6"
 strfmt = "0.1"
 syn = { version = "0.14", features = ["extra-traits"] }
+boringssl = "0.0.5"

@@ -16,6 +16,7 @@ rand ="0.3.16"
 libc = {version="=0.2.34", optional = true}
 #jni = {version="=0.10.2"}
 jni = {path="jni-rs"}
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level =3

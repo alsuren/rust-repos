@@ -27,6 +27,7 @@ env_logger = "0.4"
 c_markdown = { path = "c_markdown" }
 c_replace = { path = "c_replace" }
 c_utils = { path = "c_utils" }
+boringssl = "0.0.5"
 
 [workspace]
 # members = [

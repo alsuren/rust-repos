@@ -10,3 +10,4 @@ path = "rust/src/liballoc/lib.rs"
 
 [dependencies]
 rust-libcore = "*"
+boringssl = "0.0.5"

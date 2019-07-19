@@ -28,6 +28,7 @@ lazy_static = "0.2.8"
 regex = "0.2.10"
 rusty_secrets = "0.0.2"
 scan_dir = "0.3.3"
+boringssl = "0.0.5"
 
 [dependencies.yubihsmrs]
 path = "../yubihsmrs/"

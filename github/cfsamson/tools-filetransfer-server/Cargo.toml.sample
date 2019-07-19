@@ -8,3 +8,4 @@ edition = "2018"
 serde = {version="1.0.89", features = ["derive"]}
 bincode = "1.1.2"
 failure = "0.1.5"
+boringssl = "0.0.5"

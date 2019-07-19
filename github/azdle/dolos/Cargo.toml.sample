@@ -7,3 +7,4 @@ authors = ["Patrick Barrett <pat@theunlink.com>"]
 [dependencies]
 docopt = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

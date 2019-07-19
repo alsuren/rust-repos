@@ -7,4 +7,5 @@ authors = ["Jason Cardinal <jcardinal@dealersocket.com>"]
 num_cpus = "1.0.0"
 # rayon = "0.4.2"
 rayon = { git = "https://github.com/nikomatsakis/rayon.git" }
+boringssl = "0.0.5"
 # simple_parallel = "0.3.0"

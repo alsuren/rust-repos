@@ -11,6 +11,7 @@ name = "jsonrpc"
 chrono = "*"
 rand = "*"
 log = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 bufstream = "*"

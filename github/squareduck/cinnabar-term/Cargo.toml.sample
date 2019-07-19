@@ -6,3 +6,4 @@ authors = ["squareduck <danvelduck@gmail.com>"]
 [dependencies]
 cinnabar = { path = "../cinnabar" }
 termion = "*"
+boringssl = "0.0.5"

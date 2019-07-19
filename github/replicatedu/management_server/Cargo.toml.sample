@@ -16,6 +16,7 @@ path = "src/client.rs"
 crossterm = "*"
 rand = "*"
 docker_wrapper = { git = "https://github.com/replicatedu/docker_wrapper.git" }
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 'z'     # Optimize for size.

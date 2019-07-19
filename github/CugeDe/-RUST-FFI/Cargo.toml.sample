@@ -6,3 +6,6 @@ authors = ["CugeDe <guerin_q@epitech.eu>"]
 [lib]
 name = "ffi"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

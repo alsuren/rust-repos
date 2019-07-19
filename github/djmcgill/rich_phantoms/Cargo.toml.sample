@@ -13,3 +13,6 @@ compiletest_rs = { version = "0.3", features = ["stable"] }
 
 [features]
 unstable-test = []
+
+[dependencies]
+boringssl = "0.0.5"

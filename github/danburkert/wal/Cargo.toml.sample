@@ -17,6 +17,7 @@ time = "0.1"
 docopt = "0.6"
 env_logger = "0.3"
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 docopt = "0.6"

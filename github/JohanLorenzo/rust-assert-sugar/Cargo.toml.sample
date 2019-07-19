@@ -6,5 +6,6 @@ license = "MPL2"
 description = "Syntaxic sugar around assertions"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]

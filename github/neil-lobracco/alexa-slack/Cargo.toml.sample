@@ -9,6 +9,7 @@ iron = "0.4"
 router = "*"
 alexa = "*"
 hyper = "*"
+boringssl = "0.0.5"
 
 [dependencies.slack_api]
 path = "../slack-rs-api"

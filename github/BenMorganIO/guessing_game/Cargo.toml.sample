@@ -3,3 +3,6 @@
 name = "guessing_game"
 version = "0.0.1"
 authors = ["Ben A Morgan <ben@benmorgan.io>"]
+
+[dependencies]
+boringssl = "0.0.5"

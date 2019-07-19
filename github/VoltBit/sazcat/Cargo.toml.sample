@@ -6,6 +6,7 @@ authors = ["Andrei Ciprian Dobre <andrei_ciprian.dobre@cti.pub.ro>"]
 [dependencies]
 colored = "*"
 zip = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "sazcat"

@@ -12,6 +12,7 @@ serde_derive = "1.0"
 bson = "0.12.2"
 mongodb = "0.3.9"
 lazy_static = "1.0.0"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 git = "https://github.com/SergioBenitez/Rocket"

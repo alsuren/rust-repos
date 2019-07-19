@@ -13,6 +13,7 @@ license = "MIT/Apache-2.0"
 [dependencies]
 lazy_static = "0.2.2"
 clippy = { version = "*", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 cobalt = "0.21.0"

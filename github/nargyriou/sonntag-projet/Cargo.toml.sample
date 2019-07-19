@@ -9,5 +9,8 @@ authors = [
 [lib]
 crate-type = ["rlib", "dylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.nom]
 version = "^3.2"

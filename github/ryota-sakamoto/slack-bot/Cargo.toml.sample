@@ -5,3 +5,6 @@ version = "0.0.1"
 [[bin]]
 name = "main"
 path = "src/main/rust/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

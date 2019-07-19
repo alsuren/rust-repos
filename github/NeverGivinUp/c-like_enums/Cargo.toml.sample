@@ -19,6 +19,7 @@ serde = "1"
 serde_derive = "1"
 proc-macro2 = "0.4"
 try_from_int_error ={path="try-from-int-error"}
+boringssl = "0.0.5"
 
 [dependencies.syn]
 version = "0.15"

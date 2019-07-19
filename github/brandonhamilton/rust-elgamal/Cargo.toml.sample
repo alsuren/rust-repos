@@ -6,3 +6,6 @@ authors = [ "brandon.hamilton@gmail.com" ]
 [[lib]]
 name = "elgamal"
 path = "src/elgamal/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

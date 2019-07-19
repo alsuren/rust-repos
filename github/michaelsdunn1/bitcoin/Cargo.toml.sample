@@ -19,6 +19,7 @@ serde     = "1.0"
 sha2      = "0.5.2"
 
 secp256k1 = { version = "0.11.0", features = ["serde", "rand"] }
+boringssl = "0.0.5"
 
 [lib]
 name = "bitcoin"

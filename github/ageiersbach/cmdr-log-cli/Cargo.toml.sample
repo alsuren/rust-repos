@@ -9,3 +9,4 @@ authors = ["Anne Geiersbach <annasazi@gmail.com>"]
 "serde_json" = "1.0"
 
 "chrono" = {version = "0.4", features = ["serde"]}
+boringssl = "0.0.5"

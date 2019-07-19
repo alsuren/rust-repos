@@ -13,6 +13,7 @@ license-file = "./LICENSE-MIT"
 [dependencies]
 regex = "0.1.41"
 nom = "*"
+boringssl = "0.0.5"
 
 [profile.bench]
 opt-level = 3

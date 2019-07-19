@@ -11,4 +11,5 @@ crate-type = ["dylib"]
 libc = "0.2.0"
 image = "0.12.3"
 rust_resemble = { git = "https://github.com/danylaporte/rust-resemble.git" }
+boringssl = "0.0.5"
 

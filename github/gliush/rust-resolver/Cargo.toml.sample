@@ -8,6 +8,9 @@ authors = ["ivan.glushkov@gmail.com"]
 name="main"
 path="src/main.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.regex]
 git = "https://github.com/rust-lang/regex.git"
 #rev = "056a21d4f0144a26ffff6688e1657953083b0efa"

@@ -10,6 +10,7 @@ serde_json = "1.0"
 serde_derive = "1.0"
 smallbitvec = "2.1.1"
 maplit = "1.0.1"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 smallbitvec = { git = "https://github.com/Diggsey/smallbitvec.git" }

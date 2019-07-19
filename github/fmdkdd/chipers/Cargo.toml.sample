@@ -12,6 +12,7 @@ time = "0.1"
 glium = "0.16"
 imgui = { git = "https://github.com/Gekkio/imgui-rs" }
 imgui-glium-renderer = { git = "https://github.com/Gekkio/imgui-rs" }
+boringssl = "0.0.5"
 
 [profile.bench]
 opt-level = 3

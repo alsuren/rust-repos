@@ -6,6 +6,9 @@ authors = ["Christof Fetzer"]
 
 description = "Various (incorrect) implementations of abs function - use to introduce random testing. Also two correct implementations that should demonstrate ways how one can address integer overflows."
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rndtester]
 git = "https://github.com/christoffetzer/rndtester"
 

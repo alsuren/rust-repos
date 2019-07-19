@@ -6,6 +6,7 @@ authors = ["Ash Walker <ash@ashwalker.net>"]
 [dependencies]
 approx = "^0.3"
 nalgebra = "^0.18"
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 1

@@ -6,3 +6,4 @@ authors = ["Tamaki Mizuha <mizyoukan@outlook.com>"]
 [dependencies]
 stdweb = { git = "https://github.com/koute/stdweb", rev = "c9cbbcd" }
 num-complex = { version = "0.1.42", default-features = false }
+boringssl = "0.0.5"

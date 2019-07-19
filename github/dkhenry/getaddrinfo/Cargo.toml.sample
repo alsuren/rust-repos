@@ -5,6 +5,7 @@ authors = ["Dan Kozlowski <dan.kozlowski@gmail.com>"]
 
 [dependencies]
 libc = "0.2.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "rgetaddrinfo"

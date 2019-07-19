@@ -8,3 +8,4 @@ mio = "0.6"
 futures = "0.1"
 tokio-core = "0.1"
 tokio-tls = { git = "https://github.com/tokio-rs/tokio-tls" }
+boringssl = "0.0.5"

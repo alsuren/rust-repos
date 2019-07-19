@@ -7,3 +7,4 @@ authors = ["Poelsa <joel.begnert@gmail.com>"]
 conrod = { version = "0.61.1", features = ["glium", "winit"] }
 conrod_derive = "0.1.2"
 ttf-noto-sans="0.1.1"
+boringssl = "0.0.5"

@@ -13,3 +13,6 @@ path = "src/gcd.rs"
 
 name = "n"
 path = "examples/n.rs"
+
+[dependencies]
+boringssl = "0.0.5"

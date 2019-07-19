@@ -12,6 +12,7 @@ lazy_static = "*"
 spin = "*"
 volatile-register = "*"
 nrf51-atomic = { git = "https://github.com/dtwood/nrf51-atomic" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 inflections = "*"

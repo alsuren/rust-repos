@@ -12,6 +12,7 @@ specs="*"
 nalgebra = "0.16.0"
 ncollide2d = "0.17.0"
 nphysics2d="0.9"
+boringssl = "0.0.5"
 
 [dependencies.wasm-bindgen]
 git = "https://github.com/rustwasm/wasm-bindgen"

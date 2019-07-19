@@ -13,3 +13,6 @@ keywords = ["functional"]
 use_std = []
 unstable = [] # Unused
 default = ["use_std"]
+
+[dependencies]
+boringssl = "0.0.5"

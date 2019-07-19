@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["timur"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 cmake = "0.1.29"

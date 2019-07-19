@@ -9,3 +9,6 @@ byteorder = "1"
 
 [workspace]
 members = ["mp3fuzz", "play-music"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -72,6 +72,7 @@ ispc = "*"
 ocl = {version = "*", optional = true}
 rand = {version = "*", optional = true}
 zfp-sys = {version = "*", optional = true}#, features = ["cuda"]}
+boringssl = "0.0.5"
 
 #rulinalg = "*"
 #linearkalman = "*"

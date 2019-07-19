@@ -5,3 +5,4 @@ authors = ["Suguru Kato <salmon.bioinformatics@gmail.com>"]
 
 [dependencies]
 dcdio = { git = 'https://github.com/0ncorhynchus/dcdio.git' }
+boringssl = "0.0.5"

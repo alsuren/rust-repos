@@ -5,5 +5,8 @@ version = "0.0.1"
 authors = ["Joshua Yanovski <pythonesque@gmail.com>"]
 exclude = ["src/parser", "*.swp"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.parser]
 path = "./src/parser"

@@ -9,6 +9,7 @@ description = "Software implementations of some libm functions in Rust"
 
 [dependencies]
 cty = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck="0.4"

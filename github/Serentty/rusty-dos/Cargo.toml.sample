@@ -9,6 +9,7 @@ build = "build.rs"
 rusty-asm = "0.2"
 bitflags = "1.0"
 sjis-literals = { path = "sjis-literals" }
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"

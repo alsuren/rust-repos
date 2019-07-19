@@ -17,6 +17,7 @@ josephine_derive = "0.1.0"
 libc = "0.2.30"
 log = "0.3"
 mozjs = "<0.3" # Requires the smup feature for mozjs 0.2.*
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.4"

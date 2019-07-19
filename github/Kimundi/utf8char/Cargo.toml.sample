@@ -8,3 +8,6 @@ authors = [ "loebel.marvin@gmail.com" ]
 
 name = "utf8char"
 path = "src/utf8char.rs"
+
+[dependencies]
+boringssl = "0.0.5"

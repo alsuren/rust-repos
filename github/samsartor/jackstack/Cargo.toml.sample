@@ -5,3 +5,4 @@ authors = ["sam"]
 
 [dependencies]
 jackstack-lib = { path = "./lib" }
+boringssl = "0.0.5"

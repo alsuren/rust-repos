@@ -12,5 +12,6 @@ homepage = "https://github.com/nathanfaucett/rs-lexer"
 
 [dependencies]
 collection_traits = {git = "https://github.com/nathanfaucett/rs-collection_traits.git"}
+boringssl = "0.0.5"
 
 [dev-dependencies]

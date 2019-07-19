@@ -14,3 +14,6 @@ readme = "README.md"
 license-file = "LICENSE.md"
 
 keywords = ["pcap", "pcap-config", "build-dependencies"]
+
+[dependencies]
+boringssl = "0.0.5"

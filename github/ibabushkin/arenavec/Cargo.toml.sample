@@ -17,6 +17,7 @@ coveralls = { repository = "ibabushkin/arenavec" }
 
 [dependencies]
 serde = { version = "1.0.80", optional = true }
+boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2.44"

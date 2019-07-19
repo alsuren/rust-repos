@@ -9,6 +9,7 @@ arrayvec = "*"
 fixedbitset = "*"
 libc = "0.2"
 petgraph = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

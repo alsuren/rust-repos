@@ -5,4 +5,5 @@ authors = ["James Angstrom"]
 
 [dependencies]
 amethyst = { git = "https://github.com/JamesAngstrom/amethyst.git", branch = "look_at" }
+boringssl = "0.0.5"
 # amethyst = { git = "https://github.com/amethyst/amethyst.git" }

@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["Markus Liedl <m.liedl@gmx.de>"]
 build = "build.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

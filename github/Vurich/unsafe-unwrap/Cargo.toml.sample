@@ -6,3 +6,4 @@ description = " An unsafe version of `Option::unwrap` and `Result::unwrap` that 
 license = "Unlicense"
 
 [dependencies]
+boringssl = "0.0.5"

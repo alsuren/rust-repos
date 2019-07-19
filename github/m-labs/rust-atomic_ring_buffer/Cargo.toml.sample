@@ -16,3 +16,6 @@ alloc = []
 collections = []
 const_fn = []
 default = ["std"]
+
+[dependencies]
+boringssl = "0.0.5"

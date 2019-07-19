@@ -21,3 +21,4 @@ r2d2 = "*"
 r2d2-diesel = { version = "*", features = ['sqlite'] }
 dotenv = "*"
 dotenv_macros = "*"
+boringssl = "0.0.5"

@@ -12,6 +12,7 @@ clap = "2.32.0"
 rusqlite = "0.16.0"
 rand = "0.6.5"
 encryptfile = "0.1.3"
+boringssl = "0.0.5"
 
 [lib]
 name = "libenkee"

@@ -15,6 +15,7 @@ rustyline = "4.1.0"
 sample = "0.10.0"
 time = "0.1"
 vst = { git = "https://github.com/rust-dsp/rust-vst" }
+boringssl = "0.0.5"
 
 [profile.dev]
 codegen-units = 1

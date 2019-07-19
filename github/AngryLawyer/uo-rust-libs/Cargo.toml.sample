@@ -13,3 +13,4 @@ path = "src/lib.rs"
 byteorder = "1.2"
 image = "0.18"
 num-rational = { version = "0.1.32", default-features = false }
+boringssl = "0.0.5"

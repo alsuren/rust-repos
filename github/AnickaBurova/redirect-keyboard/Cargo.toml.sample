@@ -8,6 +8,7 @@ byteorder = "*"
 argparse = "*"
 winapi = "*"
 user32-sys="*"
+boringssl = "0.0.5"
 
 
 [target.x86_64-apple-darwin.dependencies]

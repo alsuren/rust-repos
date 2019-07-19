@@ -8,3 +8,6 @@ authors = ["Tom Martin <tom@tpgmartin.com>"]
 
 name = "toy_rendering_engine"
 path = "src/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

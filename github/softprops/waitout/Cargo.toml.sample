@@ -8,3 +8,6 @@ homepage = "https://github.com/softprops/waitout"
 repository = "https://github.com/softprops/waitout"
 keywords = ["waitgroup", "countdownlatch", "async", "thread"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -7,6 +7,7 @@ publish = false
 
 [dependencies]
 binary_macros = "0.6"
+boringssl = "0.0.5"
 
 [lib]
 name = "rustc_panic"

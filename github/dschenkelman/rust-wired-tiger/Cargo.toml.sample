@@ -5,6 +5,7 @@ authors = ["dschenkelman <damian.schenkelman@gmail.com>"]
 
 [dependencies]
 libc = "0.1"
+boringssl = "0.0.5"
 
 [lib]
 name = "wiredtiger"

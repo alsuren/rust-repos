@@ -6,6 +6,7 @@ authors = ["CasualX <CasualX@github.com>"]
 [dependencies]
 rand = "0.3"
 unicode-segmentation = "0.1"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "elementary-1"

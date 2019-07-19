@@ -6,3 +6,6 @@ authors = ["Lennart Buit <lennartbuit@gmail.com>"]
 
 [[bin]]
 name = "connect_four"
+
+[dependencies]
+boringssl = "0.0.5"

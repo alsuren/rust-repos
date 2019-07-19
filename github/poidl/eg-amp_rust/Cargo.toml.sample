@@ -5,6 +5,7 @@ authors = ["stefan"]
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "amp_rust"

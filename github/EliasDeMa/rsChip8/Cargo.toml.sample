@@ -5,6 +5,7 @@ authors = ["Demare <elias.demaertelaere@gmail.com>"]
 
 [dependencies]
 rand = "0.5.5"
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.30"

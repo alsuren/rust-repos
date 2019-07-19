@@ -21,3 +21,6 @@ codecov = { repository = "xfix/reexport-proc-macro" }
 enum-map = "0.2.24"
 enum-map-derive = "0.2.4"
 serde_derive = "1.0.36"
+
+[dependencies]
+boringssl = "0.0.5"

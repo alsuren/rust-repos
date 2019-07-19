@@ -8,3 +8,6 @@ repository = "https://github.com/sagebind/rustcane"
 readme = "README.md"
 keywords = ["macros"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

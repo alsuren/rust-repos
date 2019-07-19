@@ -8,3 +8,4 @@ name = "krb5"
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"

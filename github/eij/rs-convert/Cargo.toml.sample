@@ -15,6 +15,7 @@ walkdir = "*"
 image = "*"
 gtk = "*"
 glib = "*"
+boringssl = "0.0.5"
 
 [features]
 verbose = []

@@ -19,6 +19,7 @@ gc_derive   = "*"
 lalrpop-util = ">=0.16.2"
 structopt   = "*"
 directories = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = ">=0.16.2"

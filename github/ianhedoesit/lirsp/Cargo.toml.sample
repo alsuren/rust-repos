@@ -7,3 +7,6 @@ authors = ["Ian Harris <ianhedoesit@gmail.com>"]
 [[bin]]
 
 name = "lirsp"
+
+[dependencies]
+boringssl = "0.0.5"

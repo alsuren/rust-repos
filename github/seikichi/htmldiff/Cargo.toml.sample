@@ -17,3 +17,4 @@ travis-ci = { repository = "seikichi/htmldiff" }
 appveyor = { repository = "seikichi/htmldiff" }
 
 [dependencies]
+boringssl = "0.0.5"

@@ -20,6 +20,7 @@ base64 = "~0.6.0"
 num = "0.1.42"
 failure = "0.1.1"
 failure_derive = "0.1.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.8.2"

@@ -9,6 +9,9 @@ authors = ["Marsel Zaripov <marszaripov@gmail.com>"]
 name = "magenta"
 path = "src/magenta/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.num]
 
 git = "https://github.com/rust-lang/num.git"

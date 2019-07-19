@@ -17,6 +17,7 @@ futures = "0.1.11"
 quick-error = "1.1.0"
 tokio-io = "0.1.0"
 netbuf = "0.4.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 argparse = "0.2.1"

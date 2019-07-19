@@ -10,6 +10,7 @@ edition = "2018"
 #vk-mem = {path = "../vk-mem-rs"}
 ash = {git = "https://github.com/Jasper-Bekkers/ash.git" }
 vk-mem = {git = "https://github.com/Jasper-Bekkers/vk-mem-rs.git" }
+boringssl = "0.0.5"
 
 [dependencies.shared_library]
 version = "0.1.9"

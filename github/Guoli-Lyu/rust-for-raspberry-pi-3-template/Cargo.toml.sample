@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Guoli Lyu <guoli-lv@hotmail.com>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [package.metadata.cargo-xbuild]
 memcpy = true

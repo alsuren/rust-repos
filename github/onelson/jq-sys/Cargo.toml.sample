@@ -20,6 +20,9 @@ bundled = ["jq-src"]
 jq-src = { version = "0.3", optional = true }
 pkg-config = { version = "0.3.14", optional = true }
 
+[dependencies]
+boringssl = "0.0.5"
+
 [package.metadata.docs.rs]
 no-default-features = true
 features = ["bundled"]

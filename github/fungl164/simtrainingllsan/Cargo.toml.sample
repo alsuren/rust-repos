@@ -23,6 +23,7 @@ diesel = { git = "https://github.com/diesel-rs/diesel.git", features = ["large-t
 diesel_codegen = { git = "https://github.com/diesel-rs/diesel.git", default-features = false, features = ["nightly", "postgres"] }
 dotenv = "^0.8"
 dotenv_macros = "^0.9"
+boringssl = "0.0.5"
 # rustless = "^0.7"
 # rustc-serialize = "^0.3"
 # valico = "^0.8"

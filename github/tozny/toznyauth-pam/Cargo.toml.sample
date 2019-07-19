@@ -15,6 +15,7 @@ mdo     = "~0.2.0"
 qrcode  = "~0.1.0"
 toml    = "~0.1.16"
 url     = "~0.2.18"
+boringssl = "0.0.5"
 
 [dependencies.tozny_auth]
 git = 'https://github.com/tozny/sdk-rust.git'

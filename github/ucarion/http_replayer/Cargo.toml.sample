@@ -6,3 +6,4 @@ authors = ["Ulysse Carion <ulysse@ulysse.io>"]
 [dependencies]
 hyper = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

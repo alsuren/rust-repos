@@ -12,6 +12,7 @@ chrono = { version = "0.4.4",features = ["serde"] }
 env_logger = "0.5.12"
 log = "0.4.4"
 robohome_shared = { path = "./crates/shared" }
+boringssl = "0.0.5"
 
 [dependencies.amqp]
 version = "0.1"

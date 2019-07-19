@@ -26,6 +26,7 @@ slog-atomic = { git = "https://github.com/slog-rs/atomic" }
 slog-stdlog = { git = "https://github.com/slog-rs/stdlog" }
 slog-syslog = { git = "https://github.com/slog-rs/syslog" }
 log = "0.3.8"
+boringssl = "0.0.5"
 
 [replace]
 "slog:2.0.6" = { git = "https://github.com/slog-rs/slog" }

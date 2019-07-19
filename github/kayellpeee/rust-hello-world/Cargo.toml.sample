@@ -4,3 +4,6 @@ name = "hello_world"
 version = "0.0.1"
 authors = ["KLP"]
 
+[dependencies]
+boringssl = "0.0.5"
+

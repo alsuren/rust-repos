@@ -11,6 +11,7 @@ llvm-sys = "39"
 
 minicom-basis = { path = "./basis" }
 minicom-syntax = { path = "./syntax" }
+boringssl = "0.0.5"
 
 [lib]
 name = "minicom_rt"

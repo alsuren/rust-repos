@@ -6,3 +6,6 @@ authors = ["Katharina Fey <kookie@spacekookie.de>"]
 [build-dependencies]
 bindgen = "*"
 cmake = "*"
+
+[dependencies]
+boringssl = "0.0.5"

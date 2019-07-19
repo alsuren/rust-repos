@@ -16,6 +16,7 @@ panic = "abort"
 crate-type = ["staticlib"]
 
 [dependencies]
+boringssl = "0.0.5"
 #rlibc = "1.0"
 #compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
 

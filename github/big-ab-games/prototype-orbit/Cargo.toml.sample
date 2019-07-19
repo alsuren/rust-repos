@@ -20,6 +20,7 @@ num = "0.1"
 uuid = { version = "0.5", features = ["v4"] }
 rayon = "0.8"
 single_value_channel = "1"
+boringssl = "0.0.5"
 
 [features]
 bench = []

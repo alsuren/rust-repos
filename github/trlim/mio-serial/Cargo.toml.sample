@@ -15,6 +15,7 @@ Binding for serial-rs and mio
 [dependencies]
 mio = "0.6"
 serial = { git = "https://github.com/trlim/serial-rs", branch = "tokio" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 dotenv = "0.8"

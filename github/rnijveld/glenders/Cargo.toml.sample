@@ -12,6 +12,7 @@ glium = "*"
 image = "*"
 nalgebra = "*"
 yaml-rust = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "glenders"

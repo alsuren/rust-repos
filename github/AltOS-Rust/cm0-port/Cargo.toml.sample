@@ -21,6 +21,7 @@ test = ["altos_core/test"]
 arm = { path = "libs/arm" }
 volatile-ptr = { git = "https://github.com/AltOS-Rust/volatile" }
 altos-macros = { git = "https://github.com/AltOS-Rust/altos-core" }
+boringssl = "0.0.5"
 
 [dependencies.altos_core]
 git = "https://github.com/AltOS-Rust/altos-core"

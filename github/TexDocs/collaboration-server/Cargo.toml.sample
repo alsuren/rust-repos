@@ -9,3 +9,4 @@ log = "0.3.8"
 uuid = { version = "0.5", features = ["serde", "v4"] }
 cargo-style-logger = { git = "https://github.com/TheMegaTB/cargo-style-logger" }
 websocket_api = { git = "https://github.com/TexDocs/websocket-api", features = ["create_project"], default-features = false }
+boringssl = "0.0.5"

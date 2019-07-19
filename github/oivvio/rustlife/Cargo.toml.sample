@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 lifelib = { path = "lifelib" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

@@ -12,3 +12,4 @@ description = "GDAL raster compare is the Rust library to compare two geographic
 [dependencies]
 ndarray = "*"
 gdal = {git = "https://github.com/rochamatcomp/rust-gdal", branch = "raster-ndarray"}
+boringssl = "0.0.5"

@@ -23,6 +23,7 @@ rustyline = "1.0.0"
 serde = "1.0"
 serde_derive = "1.0"
 simplelog = "0.5"
+boringssl = "0.0.5"
 #unicorn = { git="https://github.com/endeav0r/unicorn-rs" }
 
 [lib]

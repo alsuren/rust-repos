@@ -12,3 +12,6 @@ path = "src/math/lib.rs"
 [[bin]]
 
 name = "projecteuler"
+
+[dependencies]
+boringssl = "0.0.5"

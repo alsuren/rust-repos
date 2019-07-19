@@ -11,3 +11,4 @@ description = "A small logging library (not only) for hard real-time logging."
 [dependencies]
 log = "0.3"
 thread_local = "0.3"
+boringssl = "0.0.5"

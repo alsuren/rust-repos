@@ -6,6 +6,7 @@ authors = ["Nicolas Chan <nicolas@nicolaschan.com>"]
 [dependencies]
 websocket = "0.20.2"
 tokio = "0.1.5"
+boringssl = "0.0.5"
 [dependencies.pancurses]
 version = "0.15"
 features = ["wide"]

@@ -11,3 +11,4 @@ license = "WTFPL"
 
 [dependencies]
 conrod = { version = "0.58.*", features = ["glium", "winit"] }
+boringssl = "0.0.5"

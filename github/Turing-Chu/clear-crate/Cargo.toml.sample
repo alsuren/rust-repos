@@ -5,4 +5,5 @@ authors = ["Turing Zhu <qishiwenjun@163.com>"]
 
 [dependencies]
 semver = { git = "https://github.com/steveklabnik/semver.git" }
+boringssl = "0.0.5"
 

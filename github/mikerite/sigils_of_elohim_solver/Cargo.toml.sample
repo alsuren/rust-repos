@@ -8,6 +8,7 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 clap = "2"
 image = "0.21.0"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "soe_solver"

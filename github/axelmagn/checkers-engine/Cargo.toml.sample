@@ -2,3 +2,6 @@
 name = "checkers-engine"
 version = "0.1.0"
 authors = ["Axel Magnuson <axelmagn@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

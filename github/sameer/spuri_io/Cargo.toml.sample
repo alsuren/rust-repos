@@ -23,6 +23,7 @@ reqwest = "0.9"
 url = "1.7"
 regex = "1.1"
 lazy_static = "1.3"
+boringssl = "0.0.5"
 
 [build-dependencies]
 openssl = "0.10"

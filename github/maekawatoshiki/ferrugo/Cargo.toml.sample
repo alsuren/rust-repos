@@ -11,6 +11,7 @@ rustc-hash = "1.0.1"
 llvm-sys = "60.0.0"
 libc = "0.2"
 rand = "0.6.1"
+boringssl = "0.0.5"
 
 [profile.dev]
 codegen-units = 16

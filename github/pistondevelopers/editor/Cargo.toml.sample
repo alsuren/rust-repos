@@ -13,3 +13,6 @@ homepage = "https://github.com/PistonDevelopers/editor"
 [lib]
 name = "editor"
 path = "./src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -6,6 +6,7 @@ authors = ["Robby Madruga <robbymadruga@gmail.com>"]
 [dependencies]
 valico = "1"
 coap = "0.5"
+boringssl = "0.0.5"
 
 [dependencies.rustless]
 git = "https://github.com/rustless/rustless"

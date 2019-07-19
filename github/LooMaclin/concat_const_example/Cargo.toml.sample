@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 const-concat = { git = "https://github.com/Candunc/const-concat", branch = "patch-1" }
+boringssl = "0.0.5"

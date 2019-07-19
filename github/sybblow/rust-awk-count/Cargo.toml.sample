@@ -5,3 +5,4 @@ authors = ["caosiliang <siliang.cao@gmail.com>"]
 
 [dependencies]
 uniq_count = { path = "./lib/uniq-count/" }
+boringssl = "0.0.5"

@@ -38,6 +38,7 @@ unstable = []
 [dependencies]
 tempdir = { version = "0.3.4", optional = true }
 diesel_rs = { version = ">= 1.2, < 2.0", package = "diesel", default_features = false, optional = true }
+boringssl = "0.0.5"
 
 [package.metadata.docs.rs]
 

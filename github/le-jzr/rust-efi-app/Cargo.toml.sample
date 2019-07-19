@@ -5,3 +5,4 @@ authors = ["jzr"]
 
 [dependencies]
 efi-types = { git = "https://github.com/le-jzr/rust-efi-types.git" }
+boringssl = "0.0.5"

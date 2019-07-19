@@ -21,6 +21,7 @@ path = "src/lib.rs"
 winit = "0.18"
 pistoncore-input = "0.24"
 pistoncore-window = "0.37"
+boringssl = "0.0.5"
 
 [dependencies.vulkano]
 version = "0.11"

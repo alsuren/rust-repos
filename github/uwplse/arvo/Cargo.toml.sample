@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["jrw"]
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 [lib]
 name = "arvo"
 crate-type = ["staticlib"]

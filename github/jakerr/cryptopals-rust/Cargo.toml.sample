@@ -9,3 +9,4 @@ path = "src/tools/xor.rs"
 
 [dependencies]
 openssl = "*"
+boringssl = "0.0.5"

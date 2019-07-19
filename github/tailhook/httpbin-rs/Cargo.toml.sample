@@ -32,6 +32,7 @@ tk-http = { version="0.3.1", default-features=false }
 tk-listen = "0.1.0"
 serde_json = "1.0.0"
 httparse = "1.2.1"
+boringssl = "0.0.5"
 
 [lib]
 name = "httpbin"

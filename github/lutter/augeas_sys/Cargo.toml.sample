@@ -9,3 +9,4 @@ repository = "https://github.com/panicbit/augeas_sys"
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"

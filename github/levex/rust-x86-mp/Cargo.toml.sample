@@ -5,3 +5,4 @@ authors = ["Levente Kurusa <levex@linux.com>"]
 
 [dependencies]
 byteorder = { version = "1", default-features = false }
+boringssl = "0.0.5"

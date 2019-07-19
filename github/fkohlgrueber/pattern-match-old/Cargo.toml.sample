@@ -6,6 +6,7 @@ edition = "2018"
 
 [dependencies]
 pattern = { path = "../parse-pattern/pattern" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 compiletest_rs = "0.3.17"

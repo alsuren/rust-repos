@@ -5,3 +5,4 @@ authors = ["Pierre Fenoll <pierrefenoll@gmail.com>"]
 
 [dependencies]
 ffmpeg = {git = "https://github.com/meh/rust-ffmpeg"}
+boringssl = "0.0.5"

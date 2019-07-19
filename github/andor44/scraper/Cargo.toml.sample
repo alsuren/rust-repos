@@ -18,6 +18,7 @@ tempdir = "*"
 magic = "*"
 md5 = "*"
 time = "*"
+boringssl = "0.0.5"
 
 [dependencies.reneko]
 path = "../"

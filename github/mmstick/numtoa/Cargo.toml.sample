@@ -9,3 +9,6 @@ repository = "https://gitlab.com/mmstick/numtoa"
 keywords = ["numbers", "convert", "numtoa", "itoa", "no_std"]
 categories = ["value-formatting"]
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

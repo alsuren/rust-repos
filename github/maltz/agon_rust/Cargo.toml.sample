@@ -20,6 +20,7 @@ json = "*"
 
 actix = "0.5"
 actix-web = "^0.6"
+boringssl = "0.0.5"
 
 [features]
 default = [ "bytes", "futures-cpupool" ]

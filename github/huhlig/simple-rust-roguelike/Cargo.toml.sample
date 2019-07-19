@@ -6,3 +6,4 @@ authors = ["Hans W. Uhlig <hans.uhlig@ibm.com>"]
 [dependencies]
 tcod = { git = "https://github.com/tomassedovic/tcod-rs" }
 rand = "*"
+boringssl = "0.0.5"

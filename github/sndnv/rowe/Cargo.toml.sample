@@ -7,6 +7,7 @@ authors = ["sndnv"]
 ndarray = "0.10.0"
 uuid = { version = "0.5", features = ["v4"] }
 pathfinding = "0.2"
+boringssl = "0.0.5"
 
 [lib]
 name = "owe"

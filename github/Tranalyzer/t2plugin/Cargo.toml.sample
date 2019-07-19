@@ -5,6 +5,7 @@ authors = ["Tranalyzer2 dev. team"]
 
 [dependencies]
 libc = "0.2.33"
+boringssl = "0.0.5"
 
 [features]
 ETH_ACTIVATE = []

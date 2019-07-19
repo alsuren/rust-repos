@@ -8,3 +8,6 @@ authors = ["Loïc Damien <loic.damien@dzamlo.ch>"]
 name = "test_to_source_expr_flattening"
 plugin = true
 
+[dependencies]
+boringssl = "0.0.5"
+

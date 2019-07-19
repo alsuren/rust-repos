@@ -9,3 +9,4 @@ harness=false
 
 [dependencies]
 zfs-sys = { path = "zfs-sys" }
+boringssl = "0.0.5"

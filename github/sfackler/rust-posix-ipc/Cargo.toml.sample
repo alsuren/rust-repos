@@ -9,3 +9,4 @@ documentation = "https://sfackler.github.io/rust-posix-ipc/doc/v0.1.0/posix_ipc"
 
 [dependencies]
 libc = "0.2.12"
+boringssl = "0.0.5"

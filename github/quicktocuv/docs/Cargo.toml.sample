@@ -13,6 +13,7 @@ include = ["/README.md", "LICENSE", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md",
 
 [dependencies]
 mdbook = "0.2.1"
+boringssl = "0.0.5"
 # cfg-if = "0.1.2"
 
 [dev-dependencies]

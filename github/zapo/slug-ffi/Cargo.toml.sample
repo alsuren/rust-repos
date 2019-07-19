@@ -6,6 +6,7 @@ authors = ["Antoine Niek <antoine.niek@adgear.com>"]
 [dependencies]
 slug = "*"
 libc = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "slug_ffi"

@@ -17,3 +17,6 @@ std = []
 [badges]
 travis-ci = { repository = "slowtec/huber-pilot-one" }
 maintenance = { status = "actively-developed" }
+
+[dependencies]
+boringssl = "0.0.5"

@@ -6,6 +6,7 @@ authors = ["Daniel Bauer <daniel.bauer@headlezz.net>"]
 [dependencies]
 rand = "0.3.15"
 argparse = "*"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -9,6 +9,7 @@ license = "Unlicense"
 [dependencies]
 clap = "*"
 unicode-jp = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "r2k"

@@ -8,6 +8,7 @@ description = "A solver for linear programs"
 
 [dependencies]
 approx = "0.3.0"
+boringssl = "0.0.5"
 
 [features]
 miplib_tests = []

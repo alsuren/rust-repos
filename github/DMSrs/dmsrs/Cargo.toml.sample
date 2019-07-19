@@ -20,6 +20,7 @@ r2d2_postgres = "0.14.0"
 postgres = { version= "0.15", features = ["with-chrono"] }
 poppler = { git = "https://github.com/DMSrs/poppler-rs" }
 tesseract = { git = "https://github.com/DMSrs/tesseract-rs" }
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

@@ -11,3 +11,4 @@ tokio-proto = "~0.1"
 tokio-line = {git="https://github.com/tokio-rs/tokio-line"}
 log = "*"
 env_logger = "*"
+boringssl = "0.0.5"

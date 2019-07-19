@@ -20,3 +20,6 @@ codecov = { repository = "guangie88/vlog-rs" }
 [lib]
 name = "vlog"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -29,3 +29,6 @@ path = "src/euler_six.rs"
 [[bin]]
 name = "euler-rs-p7"
 path = "src/euler_seven.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -9,6 +9,7 @@ spin = "0.4.8"
 array-init = "0.0.3"
 uart_16550 = "0.1.0"
 x86_64 = "0.2.7"
+boringssl = "0.0.5"
 
 [package.metadata.bootimage]
 default-target = "chaos.json"

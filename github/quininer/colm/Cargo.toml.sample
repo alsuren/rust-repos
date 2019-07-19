@@ -16,6 +16,7 @@ x32 = []
 [dependencies]
 arrayref = "0.3"
 subtle = { version = "0.7", default-features = false }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 libc = "*"

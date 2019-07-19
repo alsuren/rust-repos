@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 lam_term = { path = "./lam_term" }
+boringssl = "0.0.5"

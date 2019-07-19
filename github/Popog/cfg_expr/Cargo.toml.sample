@@ -9,3 +9,4 @@ documentation = "https://docs.rs/cfg_expr"
 description = "Runtime parsing and matching for `cfg` expressions."
 
 [dependencies]
+boringssl = "0.0.5"

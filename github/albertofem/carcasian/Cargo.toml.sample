@@ -18,3 +18,4 @@ path = "src/client.rs"
 [dependencies]
 argparse = "*"
 mioco = "*"
+boringssl = "0.0.5"

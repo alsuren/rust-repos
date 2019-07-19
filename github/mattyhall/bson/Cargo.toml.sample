@@ -3,3 +3,6 @@
 name = "bson"
 version = "0.0.1"
 authors = ["Matthew Hall <matthew@quickbeam.me.uk>"]
+
+[dependencies]
+boringssl = "0.0.5"

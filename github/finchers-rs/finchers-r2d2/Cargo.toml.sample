@@ -35,6 +35,7 @@ log = "0.4.5"
 r2d2 = "0.8.2"
 tokio-executor = "0.1.5"
 tokio-threadpool = "0.1.7"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 pretty_env_logger = "0.2.4"

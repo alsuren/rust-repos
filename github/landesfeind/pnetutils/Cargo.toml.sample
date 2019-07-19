@@ -7,3 +7,4 @@ authors = ["Manuel Landesfeind <manuel@landesfeind.de>"]
 #pnet = "*"
 pnet = { git = "https://github.com/landesfeind/libpnet" }
 clap = "*"
+boringssl = "0.0.5"

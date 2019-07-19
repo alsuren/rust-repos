@@ -10,3 +10,6 @@ readme = "README.md"
 keywords = ["ascii", "escape_default", "format", "fmt"]
 categories = ["text-processing"]
 license = "Apache-2.0/MIT/Unlicense"
+
+[dependencies]
+boringssl = "0.0.5"

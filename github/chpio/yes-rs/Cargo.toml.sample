@@ -4,6 +4,7 @@ version = "0.0.0"
 authors = ["Thomas Heck <t@b128.net>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

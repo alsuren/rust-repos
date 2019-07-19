@@ -16,3 +16,6 @@ license = "MIT OR Apache-2.0"
 [build-dependencies]
 pdf-extract = "0.4.6"
 regex = "1.1.6"
+
+[dependencies]
+boringssl = "0.0.5"

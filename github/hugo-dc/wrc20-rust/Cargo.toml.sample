@@ -9,6 +9,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 ewasm_api = { git = "https://github.com/ewasm/ewasm-rust-api", branch = "master" }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

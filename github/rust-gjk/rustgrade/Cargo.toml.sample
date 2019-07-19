@@ -12,6 +12,7 @@ serde_cbor = "0.6.0"
 clap = "2.24.2"
 time = "^0.1.38"
 lazy_static = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "server"

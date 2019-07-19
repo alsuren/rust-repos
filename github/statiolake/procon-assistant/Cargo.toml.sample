@@ -22,6 +22,7 @@ atty = "0.2.11"
 which = "2.0.0"
 current_exe = { git = "https://github.com/statiolake/current-exe-rs" }
 to_absolute = { git = "https://github.com/statiolake/to-absolute-rs" }
+boringssl = "0.0.5"
 
 [dependencies.colored_print]
 git = "https://github.com/statiolake/colored_print.git"

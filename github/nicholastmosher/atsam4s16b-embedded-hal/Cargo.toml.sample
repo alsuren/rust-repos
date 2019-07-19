@@ -9,6 +9,7 @@ embedded-hal = "0.2.1"
 atsam4s16b = { git = "https://github.com/nicholastmosher/atsam4s16b-rs.git" }
 cortex-m = "0.5.7"
 panic-halt = "0.2.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 cortex-m-rt = "0.6.4"

@@ -7,3 +7,6 @@ authors = [ "Sebastian Schweizer <sebastian@schweizer.tel>" ]
 [[bin]]
 
 name = "lz77"
+
+[dependencies]
+boringssl = "0.0.5"

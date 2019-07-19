@@ -9,3 +9,4 @@ repository = "https://github.com/cmr/udev-dl"
 [dependencies]
 dylib = "*"
 libc = "*"
+boringssl = "0.0.5"

@@ -15,6 +15,7 @@ gleam = "0.2.30"
 euclid = "0.11"
 lodepng = "1.0.0"
 image = "0.12.3"
+boringssl = "0.0.5"
 
 [build-dependencies]
 vulkano-shaders = "0.3.1"

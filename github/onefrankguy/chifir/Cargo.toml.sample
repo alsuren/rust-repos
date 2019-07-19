@@ -10,6 +10,7 @@ license = "MIT"
 
 [dependencies]
 termion = "1.0"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "chifir"

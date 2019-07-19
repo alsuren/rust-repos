@@ -7,4 +7,5 @@ authors = ["ericmbride <eric.mcbride@rewardstyle.com>"]
 num_cpus="1.0.0"
 sys-info="0.4.1"
 clap={ features = ["yaml"] }
+boringssl = "0.0.5"
 

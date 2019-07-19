@@ -22,6 +22,7 @@ relm-derive = "0.15.0"
 relm-attributes = "0.15.0"
 relm-core = "0.15.0"
 structopt = "0.2.15"
+boringssl = "0.0.5"
 
 # Need GTK 3.10 for Stack
 [dependencies.gtk]

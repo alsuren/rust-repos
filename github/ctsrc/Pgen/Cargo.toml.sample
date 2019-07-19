@@ -13,3 +13,4 @@ categories = ["command-line-utilities", "cryptography"]
 [dependencies]
 rand = "0.6.5"
 clap = { version = "2.33.0", features = ["yaml"] }
+boringssl = "0.0.5"

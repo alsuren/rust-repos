@@ -34,6 +34,7 @@ disable-alltargets-init = []
 
 [dependencies]
 libc = "0.2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 cc = "1.0"

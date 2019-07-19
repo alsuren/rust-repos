@@ -8,3 +8,6 @@ repository = "https://github.com/SingingTree/rust_hamming_distance"
 readme = "README.md"
 keywords = ["Hamming"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

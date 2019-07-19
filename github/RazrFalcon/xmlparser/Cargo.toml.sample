@@ -17,3 +17,6 @@ travis-ci = { repository = "RazrFalcon/xmlparser" }
 [lib]
 path = "src/lib.rs" # for cargo-readme
 doctest = true
+
+[dependencies]
+boringssl = "0.0.5"

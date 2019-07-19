@@ -11,6 +11,7 @@ path = "src/lib.rs"
 serde = "*"
 serde_json = "*"
 serde_macros = "*"
+boringssl = "0.0.5"
 
 [dependencies.cgmath]
 git = "https://github.com/bjz/cgmath-rs"

@@ -9,6 +9,9 @@ description = "Create garbage colleced pointers"
 keywords = ["arena", "gc"]
 categories = ["Memory management"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.ters_gc_derive]
 path = "ters_gc_derive"
 

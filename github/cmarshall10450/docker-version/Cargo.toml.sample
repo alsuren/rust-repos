@@ -8,3 +8,4 @@ edition = "2018"
 clap = {version = "*", features = ["yaml"]}
 semver = "*"
 regex = "1.1.6"
+boringssl = "0.0.5"

@@ -29,6 +29,7 @@ sqlite = "*"
 temperature = { version = "*", features = ["threed-ice"], default-features = false }
 term = "*"
 threed-ice = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert = "*"

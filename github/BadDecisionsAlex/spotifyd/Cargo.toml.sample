@@ -23,6 +23,7 @@ dbus-tokio = { version = "0.2", optional = true }
 rspotify = "0.2.3"
 chrono = "0.4"
 alsa = { version = "0.2", optional = true }
+boringssl = "0.0.5"
 
 [dependencies.librespot]
 git = "https://github.com/librespot-org/librespot.git"

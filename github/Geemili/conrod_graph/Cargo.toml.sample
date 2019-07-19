@@ -6,6 +6,7 @@ authors = ["geemili <minergeemili@gmail.com>"]
 [dependencies]
 conrod = "0.44"
 num = "0.1.30"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 piston_window = "0.52"

@@ -24,6 +24,9 @@ glob = "*"
 inotify = "*"
 glob = "*"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.libc]
 version = "*"
 optional = true

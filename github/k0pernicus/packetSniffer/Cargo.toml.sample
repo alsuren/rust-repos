@@ -6,3 +6,4 @@ authors = ["k0pernicus <antonin.carette@gmail.com>"]
 [dependencies]
 argparse="*"
 "pcap"="*"
+boringssl = "0.0.5"

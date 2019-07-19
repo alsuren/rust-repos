@@ -10,6 +10,7 @@ homepage = "https://github.com/tversteeg/rogue-rs"
 
 [dependencies]
 rand = "0.3"
+boringssl = "0.0.5"
 
 [[example]]
 name = "simple_game"

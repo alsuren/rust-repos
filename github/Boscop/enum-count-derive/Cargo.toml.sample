@@ -6,6 +6,7 @@ authors = ["Boscop <kingboscop@gmail.com>"]
 [dependencies]
 syn = "0.11"
 quote = "0.3"
+boringssl = "0.0.5"
 
 [lib]
 proc-macro = true

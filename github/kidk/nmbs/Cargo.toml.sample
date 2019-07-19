@@ -7,3 +7,6 @@ authors = [ "Samuel Vandamme <samuel@sava.be>" ]
 [[bin]]
 
 name = "nmbs"
+
+[dependencies]
+boringssl = "0.0.5"

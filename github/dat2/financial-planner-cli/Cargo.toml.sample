@@ -16,6 +16,7 @@ combine = "2"
 log = "0.3"
 env_logger = "0.4"
 clippy = { version = "*", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = []

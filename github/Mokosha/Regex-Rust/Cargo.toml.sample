@@ -6,3 +6,6 @@ authors = ["Pavel Krajcevski <Krajcevski@gmail.com>"]
 [[bin]]
 name = "main"
 doc = false
+
+[dependencies]
+boringssl = "0.0.5"

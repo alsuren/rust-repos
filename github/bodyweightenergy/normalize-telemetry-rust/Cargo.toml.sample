@@ -11,6 +11,7 @@ path = "src/bin/main.rs"
 clap = "*"
 serde_json = "*"
 rand = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "json_normalizer"

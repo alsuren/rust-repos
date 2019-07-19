@@ -18,6 +18,7 @@ rson_rs = "0.2"
 serde = "1.0"
 serde_derive = "1.0"
 string-interner = "0.7.0"
+boringssl = "0.0.5"
 
 [dependencies.num-bigint]
 version = "0.2.1"

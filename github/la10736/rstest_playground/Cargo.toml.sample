@@ -7,3 +7,4 @@ authors = ["michele <michele.damico@gmail.com>"]
 
 [dependencies]
 hello_proc_macro = { path = "hello_proc_macro" }
+boringssl = "0.0.5"

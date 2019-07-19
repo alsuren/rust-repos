@@ -6,3 +6,4 @@ authors = ["chengyuhui <chengyuhui1@gmail.com>"]
 [dependencies]
 mbedtls-sys = { path = "mbedtls-sys", version = "0.1" }
 error-chain = "0.11.0"
+boringssl = "0.0.5"

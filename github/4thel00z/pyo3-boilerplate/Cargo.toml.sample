@@ -8,6 +8,9 @@ authors = ["4thel00z <4thel00z@gmail.com>"]
 name = "boilerplate"
 crate-type = ["cdylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.pyo3]
 version = "0.6.0-alpha.2"
 features = ["extension-module"]

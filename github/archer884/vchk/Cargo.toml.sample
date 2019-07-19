@@ -8,3 +8,6 @@ authors = ["J/A <archer884@gmail.com> <archer884@gmail.com>"]
 
 name = "vword"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

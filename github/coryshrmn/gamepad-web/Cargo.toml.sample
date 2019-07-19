@@ -16,6 +16,7 @@ travis-ci = { repository = "coryshrmn/gamepad-web" }
 
 [dependencies]
 stdweb = { git = "https://github.com/koute/stdweb", rev = "52cf01616a1a32ecf63af9858437d37be743b7dd" }
+boringssl = "0.0.5"
 # TODO use crates.io's stdweb once 0.4.7 is released
 # stdweb = "0.4.7"
 

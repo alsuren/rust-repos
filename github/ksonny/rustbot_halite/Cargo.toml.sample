@@ -9,6 +9,7 @@ vcs = "None"
 [dependencies]
 rand = "*"
 text_io = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 path = "src/MyBot.rs"

@@ -4,3 +4,4 @@ name = "mouse_readline"
 version = "0.1.0"
 [dependencies]
 termion = "*"
+boringssl = "0.0.5"

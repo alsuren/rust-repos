@@ -10,3 +10,4 @@ crate-type = ["cdylib"]
 [dependencies]
 lazy_static = "*"
 regex = "*"
+boringssl = "0.0.5"

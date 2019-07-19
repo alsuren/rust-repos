@@ -5,3 +5,6 @@ authors = ["Satoshi Amemiya<satoshi_amemiya@voyagegroup.com>"]
 
 [lib]
 name = "memcached"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -10,6 +10,7 @@ nom = "3"
 quote = "0.3"
 
 clippy = { optional = true, version = "*" }
+boringssl = "0.0.5"
 
 [features]
 dev = ["clippy"]

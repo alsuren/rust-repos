@@ -5,6 +5,7 @@ authors = ["Joshua Lockerman <>"]
 
 [dependencies]
 byteorder = "1.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 is_sorted = "0.1"

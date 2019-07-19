@@ -18,6 +18,7 @@ rustc-serialize = "0.3"
 time = "0.1"
 regex = "0.1.8"
 queryst="*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 yup-hyper-mock = "*"

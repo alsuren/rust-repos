@@ -19,6 +19,7 @@ humantime = "1.1.1"
 line-wrap = "0.1.1"
 xml-rs = "0.8.0"
 serde = { version = "1.0.2", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = { version = "1.0.2" }

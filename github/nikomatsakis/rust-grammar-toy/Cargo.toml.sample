@@ -4,6 +4,9 @@ version = "0.1.0"
 authors = ["Niko Matsakis <niko@alum.mit.edu>"]
 build = "build.rs" # LALRPOP preprocessing
 
+[dependencies]
+boringssl = "0.0.5"
+
 # Add a dependency on the regex crate; this is not
 # needed if you are writing your own tokenizer by
 # hand (or if you are already using the regex crate)

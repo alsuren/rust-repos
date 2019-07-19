@@ -11,3 +11,4 @@ license = "MIT/Apache-2.0"
 [dependencies]
 app = { path = "./libs/app" }
 imgui-support-gfx = { path = "./libs/imgui-support-gfx" }
+boringssl = "0.0.5"

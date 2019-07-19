@@ -11,6 +11,9 @@ path = "./src/lib/problems.rs"
 name = "run_problems"
 path = "./src/bin/run_problems.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.prime]
 path = "./pkg/prime"
 

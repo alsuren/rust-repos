@@ -7,3 +7,6 @@ description = "The package provides sources of randomness."
 documentation = "https://docs.rs/random"
 homepage = "https://github.com/stainless-steel/random"
 repository = "https://github.com/stainless-steel/random"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -11,6 +11,7 @@ serde_json = "*"
 serde_derive = "*"
 ring = "*"
 oauthcli = { git = "https://github.com/piedoom/rust-oauthcli" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 mockito = "0.15.0"

@@ -13,6 +13,7 @@ error-chain = "0.11.*"
 neon = "0.2.*"
 neon-runtime = "0.2.*"
 cast = "0.2.*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "1.*"

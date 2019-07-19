@@ -5,6 +5,7 @@ authors = ["Osspial <osspial@gmail.com>"]
 
 [dependencies]
 emcee-server = {path = "./emcee-server"}
+boringssl = "0.0.5"
 
 [workspace]
 members = ["./emcee-server"]

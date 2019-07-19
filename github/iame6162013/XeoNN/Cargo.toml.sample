@@ -28,6 +28,7 @@ license = "Apache-2.0"
 
 [dependencies]
 vulkano = "~0.3"
+boringssl = "0.0.5"
 
 [lib]
 name="xeonn"

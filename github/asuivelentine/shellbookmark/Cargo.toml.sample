@@ -7,3 +7,4 @@ authors = ["Kai Sickeler <k.sickeler@gmail.com>"]
 clap = "*"
 rustbreak = { git = "https://github.com/asuivelentine/rustbreak", branch = "debug" }
 regex = "*"
+boringssl = "0.0.5"

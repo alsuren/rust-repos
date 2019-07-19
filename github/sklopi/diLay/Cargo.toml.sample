@@ -8,6 +8,7 @@ vst2 = "0.0.1"
 libc = "*"
 winapi = "*"
 user32-sys = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "di_lay"

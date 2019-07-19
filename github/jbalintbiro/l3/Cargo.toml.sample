@@ -12,6 +12,7 @@ pest_derive = "^1.0.0-beta"
 gc = "*"
 gc_derive = "*"
 lazy_static = "1.0.0"
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

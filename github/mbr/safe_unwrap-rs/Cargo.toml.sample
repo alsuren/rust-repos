@@ -11,6 +11,7 @@ documentation = "https://docs.rs/safe_unwrap"
 repository = "https://github.com/mbr/safe_unwrap-rs"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 default = []

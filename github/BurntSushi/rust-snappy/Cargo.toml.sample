@@ -20,6 +20,7 @@ bench = false
 byteorder = "1"
 lazy_static = "1"
 snappy-cpp = { path = "snappy-cpp", version = "0.1", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = { version = "0.7", default-features = false }

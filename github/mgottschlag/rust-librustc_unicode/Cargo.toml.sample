@@ -13,3 +13,4 @@ path = "rust/src/librustc_unicode/lib.rs"
 
 [dependencies]
 rust-libcore = "*"
+boringssl = "0.0.5"

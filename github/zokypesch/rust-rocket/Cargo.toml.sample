@@ -16,6 +16,7 @@ dotenv = "0.13.0"
 r2d2 = "*"
 r2d2-diesel = "*"
 redis = "0.10.0"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

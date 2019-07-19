@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 subvert = { version = "0.2.1", git = "https://github.com/Dynisious/subvert" }
+boringssl = "0.0.5"

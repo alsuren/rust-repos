@@ -2,3 +2,6 @@
 authors = ["Nipunn <nipunn@dropbox.com>"]
 name = "weird_rustc_bug"
 version = "0.1.0"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -6,6 +6,7 @@ authors = ["pmosakowski <pmosakowski@users.noreply.github.com>"]
 [dependencies]
 libc = "*"
 num = "*"
+boringssl = "0.0.5"
 
 [dependencies.x11]
 features = ["xlib"]

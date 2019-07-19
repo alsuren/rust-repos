@@ -7,6 +7,7 @@ authors = ["Ravi Shankar <wafflespeanut@gmail.com>"]
 libc = "*"
 rand = "0.3"
 rustc-serialize = "0.3"
+boringssl = "0.0.5"
 
 [lib]
 name = "biographer"

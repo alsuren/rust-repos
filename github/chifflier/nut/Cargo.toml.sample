@@ -17,6 +17,7 @@ byteorder = "*"
 rusticata-macros = "*"
 der-parser = "*"
 tls-parser = { git = "https://github.com/rusticata/tls-parser.git", branch="serialize", features = ["serialize"] }
+boringssl = "0.0.5"
 
 # [dependencies.der-parser]
 # path = "../der-parser"

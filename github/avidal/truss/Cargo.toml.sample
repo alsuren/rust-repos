@@ -17,3 +17,4 @@ toml = { version = "*", default-features = false, features = ["serde"] }
 clap = "*"
 serde= "*"
 serde_macros = "*"
+boringssl = "0.0.5"

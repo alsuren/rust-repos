@@ -7,3 +7,4 @@ authors = ["Ethan Spurlock <ethan@spurlock.io>"]
 ot_core = {path = "../ot_core/"}
 rand = "*"
 serde_json = "*"
+boringssl = "0.0.5"

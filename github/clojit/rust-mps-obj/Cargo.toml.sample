@@ -7,3 +7,4 @@ authors = ["Sebastian Wicki <gandro@gmx.net>", "Nick Zbinden <niklaus.zbinden@gm
 
 [dependencies]
 mps-sys = { path = "./mps-sys" }
+boringssl = "0.0.5"

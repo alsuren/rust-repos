@@ -13,3 +13,6 @@ license = "MIT/Apache-2.0"
 keywords = ["brainfuck", "brain", "mind", "juice", "interpreter"]
 
 include = ["Cargo.toml", "src/**/*", "LICENSE-MIT", "LICENSE-APACHE", "README.md"]
+
+[dependencies]
+boringssl = "0.0.5"

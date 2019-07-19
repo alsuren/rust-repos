@@ -5,3 +5,4 @@ authors = ["Fumiya Chiba <fumiya.chiba@nifty.com>"]
 
 [dependencies]
 swf = { git = "https://github.com/tomboinc/swf-rs.git" }
+boringssl = "0.0.5"

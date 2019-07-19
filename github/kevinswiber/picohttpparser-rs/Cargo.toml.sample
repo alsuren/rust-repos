@@ -6,3 +6,4 @@ authors = ["Kevin Swiber <kswiber@gmail.com>"]
 [dependencies]
 libc = "*"
 picohttpparser-sys = { git = "https://github.com/kevinswiber/picohttpparser-sys" }
+boringssl = "0.0.5"

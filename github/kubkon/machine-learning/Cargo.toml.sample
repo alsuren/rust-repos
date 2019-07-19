@@ -11,3 +11,6 @@ path = "src/lib.rs"
 name = "linear_regression"
 path = "examples/linear_regression.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

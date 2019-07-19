@@ -11,6 +11,7 @@ rust-crypto = "^0.2"
 rustc-serialize = "0.3"
 simple_logger = "0.4"
 walkdir = "0.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3"

@@ -13,3 +13,6 @@ hence the name ppipe (parallel pipe).
 """
 keywords = ["pipe", "pipeline", "iterator", "adaptor", "concurrent"]
 
+[dependencies]
+boringssl = "0.0.5"
+

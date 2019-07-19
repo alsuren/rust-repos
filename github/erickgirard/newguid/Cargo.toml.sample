@@ -5,3 +5,4 @@ authors = ["Erick Girard <contact@erickgirard.com>"]
 
 [dependencies]
 uuid = { version = "0.5", features = ["v4"] }
+boringssl = "0.0.5"

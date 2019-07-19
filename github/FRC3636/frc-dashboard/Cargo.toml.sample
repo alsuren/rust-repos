@@ -6,6 +6,7 @@ authors = ["Benjamin Lee <benjamin.fik.lee@gmail.com>"]
 [dependencies]
 mio = "*"
 byteorder = "*"
+boringssl = "0.0.5"
 
 [dependencies.sixense]
 git = "https://github.com/FRC3636/sixense-rs.git"

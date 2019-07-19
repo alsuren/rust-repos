@@ -7,3 +7,6 @@ authors = ["faultier"]
 [[lib]]
 
 name = "bee"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -7,3 +7,6 @@ authors = [ "Effy Elden <dev@effy.is>" ]
 [[bin]]
 name = "robot"
 path = "src/robot.rs"
+
+[dependencies]
+boringssl = "0.0.5"

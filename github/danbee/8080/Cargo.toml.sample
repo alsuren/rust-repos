@@ -3,3 +3,6 @@
 name = "8080"
 version = "0.0.1"
 authors = [ "Dan Barber <hello@danbarber.me>" ]
+
+[dependencies]
+boringssl = "0.0.5"

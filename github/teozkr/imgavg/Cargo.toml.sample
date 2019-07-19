@@ -9,3 +9,4 @@ crate-type = ["cdylib"]
 [dependencies]
 itertools = "0.7.6"
 imagefmt = { version = "4.0.0", default-features = false, features = ["jpeg"] }
+boringssl = "0.0.5"

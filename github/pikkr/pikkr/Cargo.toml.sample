@@ -18,3 +18,4 @@ avx-accel = ["x86intrin"]
 [dependencies]
 x86intrin = { version = "0.4.3", optional = true }
 fnv = "1.0.5"
+boringssl = "0.0.5"

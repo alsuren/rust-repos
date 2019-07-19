@@ -7,3 +7,4 @@ authors = ["Renato Zannon <renato@rrsz.com.br>"]
 [dependencies]
 hyper = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

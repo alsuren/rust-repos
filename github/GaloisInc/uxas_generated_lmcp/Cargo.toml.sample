@@ -20,3 +20,6 @@ quickcheck = "0.4"
 [[bin]]
 name = "mybin"
 path = "src/main.rs"
+
+[dependencies]
+boringssl = "0.0.5"

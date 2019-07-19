@@ -10,6 +10,7 @@ image = "*"
 
 vulkano-win = { version ="0.9.0", optional = true }
 winit = {version = "0.11.0", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = []

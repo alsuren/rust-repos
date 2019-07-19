@@ -6,4 +6,5 @@ authors = ["Andrew Cann <shum@canndrew.org>"]
 [dependencies]
 mio = "*"
 crossbeam = "*"
+boringssl = "0.0.5"
 

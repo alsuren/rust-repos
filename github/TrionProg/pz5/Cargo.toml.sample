@@ -7,3 +7,4 @@ authors = ["trionprog <trionprog@gmail.com>"]
 rustc-serialize = "*"
 config = { path = "../config" }
 lexer = { path = "../lexer" }
+boringssl = "0.0.5"

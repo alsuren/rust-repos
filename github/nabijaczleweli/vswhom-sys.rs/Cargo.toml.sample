@@ -13,6 +13,7 @@ authors = ["nabijaczleweli <nabijaczleweli@gmail.com>"]
 
 [dependencies]
 libc = "0.2"
+boringssl = "0.0.5"
 
 [target.'cfg(target_os = "windows")'.build-dependencies]
 cc = "1.0"

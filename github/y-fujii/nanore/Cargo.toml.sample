@@ -6,3 +6,6 @@ edition = "2018"
 license = "MIT"
 repository = "https://github.com/y-fujii/nanore/"
 description = "Tiny regular expression matcher for arbitrary data types."
+
+[dependencies]
+boringssl = "0.0.5"

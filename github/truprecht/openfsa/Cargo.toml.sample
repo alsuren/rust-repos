@@ -10,5 +10,6 @@ integeriser = { git = "https://github.com/tud-fop/rust-integeriser.git" }
 log_domain = { git = "https://github.com/tud-fop/rust-log-domain.git" }
 serde = "1.0"
 openfsa-sys = { path = "openfsa-sys" }
+boringssl = "0.0.5"
 
 [workspace]

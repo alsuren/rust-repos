@@ -7,3 +7,6 @@ documentation = "http://www.zlib.net/crc_v3.txt"
 readme = "README.md"
 license = "MIT"
 build = "build.rs"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -3,3 +3,6 @@
 name = "weatherlight"
 version = "0.0.1"
 authors = ["Murph Murphy <murph.murphy@oracle.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

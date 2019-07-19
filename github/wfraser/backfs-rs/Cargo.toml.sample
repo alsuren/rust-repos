@@ -19,6 +19,7 @@ log-panics = { version = "2.0", features = ["with-backtrace"] }
 syslog = "3"
 time = "0.1"
 walkdir = "2.0"
+boringssl = "0.0.5"
 
 [dependencies.fuse_mt]
 #git = "https://github.com/wfraser/fuse-mt.git"

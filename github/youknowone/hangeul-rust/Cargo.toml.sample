@@ -6,6 +6,7 @@ authors = ["Jeong YunWon <jeong+hangeul@youknowone.org>"]
 [dependencies]
 num = "0.1.40"
 enum_primitive = "0.1.1"
+boringssl = "0.0.5"
 
 [lib]
 name = "hangeul"

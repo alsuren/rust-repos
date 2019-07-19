@@ -4,6 +4,9 @@ edition = "2018"
 version = "0.1.0"
 authors = ["Andrey Zgarbul <zgarbul.andrey@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.doubled]
 version = "0.1"
 features = ["packed_simd"]

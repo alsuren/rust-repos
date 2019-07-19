@@ -9,3 +9,4 @@ license = "GPL-3.0"
 [dependencies]
 authentication_backend = { path = "authentication_backend" }
 authentication_rocket = { path = "authentication_rocket" }
+boringssl = "0.0.5"

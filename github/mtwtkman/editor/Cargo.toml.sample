@@ -15,6 +15,7 @@ rocket_codegen = "*"
 rocket_contrib = { version = "*", features = ["json"] }
 dotenv = "*"
 rocket_cors = "*"
+boringssl = "0.0.5"
 
 [[test]]
 name = "tests"

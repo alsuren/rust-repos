@@ -7,3 +7,6 @@ documentation = "https://docs.rs/splice"
 repository = "https://github.com/QuietMisdreavus/splice-rs"
 license = "Unlicense"
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

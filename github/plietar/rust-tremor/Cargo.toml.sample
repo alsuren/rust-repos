@@ -6,3 +6,4 @@ authors = ["Paul Lietar <paul@lietar.net>"]
 [dependencies]
 libc = "*"
 tremor-sys = { path = "tremor-sys" }
+boringssl = "0.0.5"

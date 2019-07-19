@@ -13,3 +13,6 @@ members = ["uefi", "uefi-sys"]
 [dev-dependencies]
 uefi = { path = "uefi" }
 uefi-sys = { path = "uefi-sys" }
+
+[dependencies]
+boringssl = "0.0.5"

@@ -30,6 +30,7 @@ syntex_syntax = "^0.7.0"
 serde = "0.4"
 #serde_macros = "0.4.1"
 yaml-rust = "0.2.2"
+boringssl = "0.0.5"
 
 [dependencies.readline]
 git = "https://github.com/evadnoob/rust-readline.git"

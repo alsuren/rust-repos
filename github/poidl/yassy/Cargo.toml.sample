@@ -14,6 +14,7 @@ midi= { path = "midi" }
 lv2 = { path = "../lv2"}
 # yassyui isn't a dependecy, but included here to make "workspace" work
 yassyui = { path = "ui" }
+boringssl = "0.0.5"
 
 
 [lib]

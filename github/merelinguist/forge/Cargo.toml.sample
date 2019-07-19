@@ -5,3 +5,4 @@ authors = ["merelinguist <merelinguist@users.noreply.github.com>"]
 
 [dependencies]
 pulldown-cmark = { version = "0.0.11", default-features = false }
+boringssl = "0.0.5"

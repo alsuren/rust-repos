@@ -9,3 +9,6 @@ license = "MIT"
 
 documentation = "http://mixthos.github.com/try_or"
 repository = "https://github.com/Mixthos/try_or"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -10,6 +10,7 @@ meval = "^0.1"
 relm = "^0.14.6"
 relm-attributes = "^0.14.6"
 relm-derive = "^0.14.6"
+boringssl = "0.0.5"
 
 [replace]
 "gtk-sys:0.3.4" = { git = "https://github.com/gtk-rs/sys" }

@@ -10,6 +10,7 @@ license = "MIT"
 rand = "0.4"
 tiny-keccak = "^1.4"
 byteorder = "1.0"
+boringssl = "0.0.5"
 
 [features]
 tor = []

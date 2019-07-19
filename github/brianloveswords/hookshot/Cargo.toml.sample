@@ -16,6 +16,7 @@ tempdir = "*"
 toml = "*"
 users = "*"
 uuid = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 doc = false

@@ -10,3 +10,4 @@ rsdl2-support = ["rsdl2"]
 
 [dependencies]
 rsdl2 = { path = "../rsdl2", optional = true }
+boringssl = "0.0.5"

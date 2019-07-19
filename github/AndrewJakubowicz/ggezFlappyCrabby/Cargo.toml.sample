@@ -11,3 +11,4 @@ serde = {version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 noise = "0.5.1"
 rand = "0.6.5"
+boringssl = "0.0.5"

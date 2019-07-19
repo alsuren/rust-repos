@@ -8,6 +8,7 @@ edition = "2018"
 flora_parser = { path = './parser' }
 flora_syntax_to_model = { path = './syntax_to_model' }
 flora_dot_gen = { path = './dot_gen' }
+boringssl = "0.0.5"
 
 [workspace]
 members = [

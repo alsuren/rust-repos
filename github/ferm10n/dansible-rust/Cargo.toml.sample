@@ -52,6 +52,7 @@ protobuf_macros = { git = "https://github.com/plietar/rust-protobuf-macros" }
 clippy          = { version = "*", optional = true }
 
 openssl         = { version = "0.7", optional = true }
+boringssl = "0.0.5"
 
 [build-dependencies]
 vergen          = "~0.1.0"

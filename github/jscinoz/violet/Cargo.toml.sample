@@ -7,3 +7,4 @@ keywords = ["pidgin", "purple", "libpurple"]
 [dependencies]
 clippy = "*"
 libpurple-sys = { path = "libpurple-sys" }
+boringssl = "0.0.5"

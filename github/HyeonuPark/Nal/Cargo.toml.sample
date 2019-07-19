@@ -16,6 +16,7 @@ license = "MIT/Apache-2.0"
 path = "src/lib.rs"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.nalc_parser]
 version = "0.4"

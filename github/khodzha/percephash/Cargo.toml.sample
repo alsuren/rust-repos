@@ -10,6 +10,7 @@ serde_json = "1.0"
 rust-crypto = "0.2.36"
 hyper = "0.10.13"
 multipart = "0.13.3"
+boringssl = "0.0.5"
 
 [dependencies.img_hash]
 version = "2.0"

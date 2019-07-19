@@ -8,3 +8,6 @@ description = "A safe-ish wrapper for allocating and reallocating heap buffers."
 readme = "README.md"
 license = "MIT"
 
+[dependencies]
+boringssl = "0.0.5"
+

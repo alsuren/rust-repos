@@ -13,3 +13,4 @@ A MPMC channel based on the michael-scott two lock queue algorithm.
 """
 
 [dependencies]
+boringssl = "0.0.5"

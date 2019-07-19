@@ -7,3 +7,4 @@ authors = ["Luke Steensen <luke.steensen@gmail.com>"]
 [dependencies]
 uuid = "*"
 byteorder = { git = "https://github.com/lukesteensen/byteorder", branch = "read_exact" }
+boringssl = "0.0.5"

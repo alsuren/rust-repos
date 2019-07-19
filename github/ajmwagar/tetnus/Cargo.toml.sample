@@ -7,3 +7,4 @@ authors = ["Avery Wagar <avery@wagar.cc>"]
 [dependencies]
 socket2 = { version = "0.3.8" }
 tokio = "*"
+boringssl = "0.0.5"

@@ -15,6 +15,7 @@ shrev = { path = "../shrev-rs/" }
 collision = "*"
 serde = "1.0.11"
 serde_derive = "*"
+boringssl = "0.0.5"
 
 [[example]]
 name = "hello"

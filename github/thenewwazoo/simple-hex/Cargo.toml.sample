@@ -7,3 +7,6 @@ keywords = ["ascii", "hex"]
 license = "0BSD"
 repository = "https://github.com/thenewwazoo/simple-hex"
 description = "A simple ASCII hex-to-bytes-and-back library"
+
+[dependencies]
+boringssl = "0.0.5"

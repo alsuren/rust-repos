@@ -19,6 +19,7 @@ appveyor = { repository = "spinda/crucibles" }
 
 [dependencies]
 futures = "0.1.15"
+boringssl = "0.0.5"
 
 [dependencies.clippy]
 version = "*"

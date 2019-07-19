@@ -3,3 +3,6 @@
 name = "sabicom"
 version = "0.0.1"
 authors = ["Sigmund Hansen"]
+
+[dependencies]
+boringssl = "0.0.5"

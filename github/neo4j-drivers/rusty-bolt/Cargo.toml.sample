@@ -7,3 +7,4 @@ authors = ["Nigel Small <nigel@nigelsmall.name>"]
 log = "0.3.7"
 neo4j = { path = "neo4j" }
 packstream = { path = "packstream" }
+boringssl = "0.0.5"

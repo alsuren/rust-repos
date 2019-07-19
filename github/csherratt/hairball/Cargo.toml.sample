@@ -3,6 +3,9 @@ name = "hairball_meta"
 version = "0.1.0"
 authors = ["Colin Sherratt <colin.sherratt@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.hairball]
 path = "src/hairball"
 

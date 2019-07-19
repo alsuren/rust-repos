@@ -7,6 +7,7 @@ build = "conan_cargo_build.rs"
 [dependencies]
 hyper = "*"
 hyper-native-tls = "*"
+boringssl = "0.0.5"
 
 [target.'cfg(not(any(target_os = "windows", target_os = "macos")))'.dependencies]
 openssl = "*"

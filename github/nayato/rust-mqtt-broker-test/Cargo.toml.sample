@@ -15,6 +15,7 @@ mqtt = { git = "https://github.com/nayato/rust-mqtt", branch = "owned" }
 net2 = "0.2"
 num_cpus = "1"
 native-tls = "*"
+boringssl = "0.0.5"
 
 [dependencies.tokio-tls]
 version = "*"

@@ -5,6 +5,7 @@ authors = ["Thomas G. <github@t-jay.net>"]
 
 [dependencies]
 rustfft = "2.0.0"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "hello-world"

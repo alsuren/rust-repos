@@ -6,6 +6,7 @@ source = "git+https://github.com/DiscordRsBot/Bot.git"
 
 [dependencies]
 discord = { git = "https://github.com/SpaceManiac/discord-rs.git" }
+boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

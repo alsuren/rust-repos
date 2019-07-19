@@ -6,3 +6,4 @@ authors = ["Adam Harries <adam.harries@ed.ac.uk>"]
 
 [dependencies]
 opencl = { git = "https://github.com/AdamHarries/rust-opencl.git" }
+boringssl = "0.0.5"

@@ -6,6 +6,7 @@ version = "0.3.0"
 [dependencies]
 lazy_static = "*"
 libc = "*"
+boringssl = "0.0.5"
 
 [dependencies.mosquitto-sys]
 path = "mosquitto-sys"

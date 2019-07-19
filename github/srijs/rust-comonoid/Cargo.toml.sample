@@ -6,3 +6,6 @@ description = "A comonoid in a monoidal category is a monoid in the dual categor
 documentation = "http://srijs.github.io/rust-comonoid/comonoid"
 repository = "https://github.com/srijs/rust-comonoid"
 license = "MIT OR Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

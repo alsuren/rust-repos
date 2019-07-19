@@ -14,3 +14,6 @@ syntex = "0.26"
 
 [build-dependencies.encoding_literals]
 path = "./encoding_literals"
+
+[dependencies]
+boringssl = "0.0.5"

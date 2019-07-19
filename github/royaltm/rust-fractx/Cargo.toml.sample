@@ -35,6 +35,7 @@ clap = { version = "^2.33", optional = true }
 image = { version = "0.21", optional = true }
 num_cpus = { version = "^1.10", optional = true }
 scoped_threadpool = { version = "0.1", optional = true }
+boringssl = "0.0.5"
 
 [dependencies.num-traits]
 version = "0.2"

@@ -11,3 +11,6 @@ members = [ "crate" ]
 [profile.release]
 # Tell `rustc` to optimize for small code size.
 opt-level = "s"
+
+[dependencies]
+boringssl = "0.0.5"

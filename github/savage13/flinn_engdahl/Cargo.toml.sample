@@ -10,3 +10,4 @@ license = "BSD-2-Clause"
 description = "Flinn-Engdahl Seismic And Geographic Regionalization - Rust Implementation"
 
 [dependencies]
+boringssl = "0.0.5"

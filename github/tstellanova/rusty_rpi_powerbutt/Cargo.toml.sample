@@ -8,6 +8,7 @@ authors = ["Todd Stellanova <tstellanova@users.noreply.github.com>"]
 runas = "0.1.4"
 pigrust = "0.1.0"
 rpi3_firmware_access = "0.1.0"
+boringssl = "0.0.5"
 
 [patch.crates-io]
 rpi3_firmware_access = { git = "https://github.com/tstellanova/rpi3_firmware_access" }

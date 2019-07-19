@@ -7,6 +7,7 @@ authors = ["Baptiste Covolato"]
 [dependencies]
 
 rust-libcore = "*"
+boringssl = "0.0.5"
 
 [dependencies.uni]
 

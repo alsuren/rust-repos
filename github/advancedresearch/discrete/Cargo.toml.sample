@@ -14,3 +14,6 @@ homepage = "https://github.com/advancedresearch/discrete"
 
 name = "discrete"
 path = "src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

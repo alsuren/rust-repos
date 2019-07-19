@@ -6,6 +6,7 @@ authors = ["Peter Binnig <peter.binnig@gmx.de>"]
 [dependencies]
 rand = "0.3.0"
 rust-crypto = "0.2.31"
+boringssl = "0.0.5"
 
 [target.x86_64-pc-windows-gnu.dependencies]
 rpassword = "0.0.6"

@@ -24,6 +24,7 @@ rustc-serialize = "*"
 num_cpus = "*"
 scoped_threadpool = "*"
 time ="*"
+boringssl = "0.0.5"
 
 
 [features]

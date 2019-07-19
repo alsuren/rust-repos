@@ -24,6 +24,7 @@ num = "0.2.0"
 rayon = "1.0.3"
 clap = {version = "2.33.0", features = ["yaml", "suggestions", "color"]}
 yaml-rust = "0.4.2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 clap = {version = "2.33.0", features = ["yaml", "suggestions", "color"]}

@@ -3,3 +3,6 @@
 name = "pubsub"
 version = "0.0.1"
 authors = ["Mark Schifflin <rschifflin@hotmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

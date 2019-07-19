@@ -8,6 +8,7 @@ iron = "*"
 router = "*"
 image = "*"
 logger = "*"
+boringssl = "0.0.5"
 
 [dependencies.image-middleware]
 path = "/Users/wmoore/Projects/Musicast/image-middleware"

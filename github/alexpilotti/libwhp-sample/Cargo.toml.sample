@@ -5,3 +5,4 @@ authors = ["Alessandro Pilotti <apilotti@cloudbasesolutions.com>"]
 
 [dependencies]
 libwhp = { git = "https://github.com/insula-rs/libwhp" }
+boringssl = "0.0.5"

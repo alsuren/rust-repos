@@ -6,3 +6,4 @@ edition = "2018"
 description = "A shell utility that calculates the error bounds in representing floating point numbers."
 
 [dependencies]
+boringssl = "0.0.5"

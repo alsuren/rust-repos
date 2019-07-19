@@ -12,3 +12,4 @@ rand = "*"
 rayon = "*"
 serde = { version = "*", features = ["derive"] }
 toml = "*"
+boringssl = "0.0.5"

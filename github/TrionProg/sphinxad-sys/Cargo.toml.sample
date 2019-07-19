@@ -13,6 +13,7 @@ build = false
 
 [dependencies]
 libc = "0.2.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 pkg-config = "0.3.9"

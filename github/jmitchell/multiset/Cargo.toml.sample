@@ -6,3 +6,6 @@ description = "Multisets/bags"
 keywords = ["multiset","bag","data-structure","collection","count"]
 license = "Apache-2.0"
 authors = ["Jake Mitchell <jacob.d.mitchell@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

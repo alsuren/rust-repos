@@ -6,3 +6,4 @@ authors = ["Wim Looman <wim@nemo157.com>"]
 [dependencies]
 proc-macro-re-export-normal-macro = { path = "proc-macro-re-export-normal-macro" }
 proc-macro-re-export-proc-macro = { path = "proc-macro-re-export-proc-macro" }
+boringssl = "0.0.5"

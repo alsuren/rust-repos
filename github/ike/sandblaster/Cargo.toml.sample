@@ -8,6 +8,7 @@ reqwest = "0.8.2"
 clap = {version = "2.29.0", features = ["yaml"]}
 regex = "0.2"
 clippy = {version = "0.0.175", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

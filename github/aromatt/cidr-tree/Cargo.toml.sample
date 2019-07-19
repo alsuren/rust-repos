@@ -5,3 +5,6 @@ authors = ["Andrew Matteson <amatteson3@gmail.com>"]
 
 [lib]
 name = "cidr_tree"
+
+[dependencies]
+boringssl = "0.0.5"

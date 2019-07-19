@@ -9,4 +9,5 @@ build = "build.rs"
 # common = { git = "https://github.com/manpat/common-rs.git" }
 
 web-common = { git = "https://github.com/manpat/web-common-rs.git" }
+boringssl = "0.0.5"
 # web-common = { path = "../web-common" }

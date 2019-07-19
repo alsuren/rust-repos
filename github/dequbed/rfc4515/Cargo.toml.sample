@@ -6,3 +6,4 @@ authors = ["Gregor Reitzenstein <dean4devil@paranoidlabs.org>"]
 [dependencies]
 nom = "2.0"
 asnom = { git = "https://github.com/dequbed/asnom.git" }
+boringssl = "0.0.5"

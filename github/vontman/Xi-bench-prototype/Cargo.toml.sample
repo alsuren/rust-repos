@@ -15,6 +15,7 @@ name = "xi-core-lib-wrap"
 harness = false
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.xi-core-lib]
 git = "https://github.com/xi-editor/xi-editor.git"

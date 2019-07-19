@@ -15,6 +15,7 @@ sdl2 = "0.32.1"
 image = {version = "0.21.0", default_features = false}
 
 nalgebra = "0.16"
+boringssl = "0.0.5"
 
 # For compiling to Emscripten webasm.
 [target.'cfg(target_os = "emscripten")'.dependencies]

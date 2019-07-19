@@ -6,3 +6,4 @@ authors = ["preisschild"]
 [dependencies]
 jsonapi = "*"
 gtk = { git = "https://github.com/gtk-rs/gtk.git" }
+boringssl = "0.0.5"

@@ -15,6 +15,7 @@ categories = ["embedded", "no-std", "data-structures"]
 
 
 [dependencies]
+boringssl = "0.0.5"
 
 [features]
 default = ["std"]

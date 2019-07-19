@@ -7,3 +7,6 @@ authors = [ "Nick Hamann <nick@wabbo.org>" ]
 [[bin]]
 
 name = "radicle"
+
+[dependencies]
+boringssl = "0.0.5"

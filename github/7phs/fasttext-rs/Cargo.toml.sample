@@ -10,3 +10,4 @@ cc = "1"
 [dependencies]
 libc = "0.2"
 wordvector = { git = "https://bitbucket.org/7phs/7phs-wordvector-rs" }
+boringssl = "0.0.5"

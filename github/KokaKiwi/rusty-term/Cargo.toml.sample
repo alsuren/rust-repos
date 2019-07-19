@@ -13,3 +13,4 @@ clap = { version = "*", features = ["unstable"] }
 config = "*"
 x11 = { version = "*", features = ["xcursor", "xft", "xinput", "xlib" ] }
 xdg = "*"
+boringssl = "0.0.5"

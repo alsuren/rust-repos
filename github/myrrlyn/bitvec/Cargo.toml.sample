@@ -40,6 +40,9 @@ testing = [
 	"std",
 ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.serde]
 default-features = false
 features = [

@@ -38,6 +38,7 @@ serde_derive = {version = "1.0", optional = true}
 toml = { version = "0.5", optional = true }
 yansi = {version = "0.5", optional = true}
 zip = {version = "0.5", optional = true}
+boringssl = "0.0.5"
 
 [target.'cfg(linux)'.dependencies]
 libc = {version = "^0.2.50", optional = true}

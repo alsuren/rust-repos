@@ -13,6 +13,7 @@ cortex-m-rt = "0.6.0"
 cortex-m-semihosting = "0.3.0"
 panic-semihosting = "0.3.0"
 f3 = { path = "../f3"}
+boringssl = "0.0.5"
 
 
 [profile.release]

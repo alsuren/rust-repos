@@ -11,6 +11,7 @@ crate-type = ["rlib", "cdylib"]
 [dependencies]
 mantle = "0.1"
 serde = { version = "1.0", features = ["derive"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 mantle-test = "0.1"

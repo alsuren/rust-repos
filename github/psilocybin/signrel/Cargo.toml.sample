@@ -9,3 +9,6 @@ documentation = "https://docs.rs/signrel"
 license = "Apache-2.0"
 readme = "README.md"
 build = "build.rs"
+
+[dependencies]
+boringssl = "0.0.5"

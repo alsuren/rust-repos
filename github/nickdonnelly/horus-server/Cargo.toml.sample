@@ -26,6 +26,7 @@ bincode = "1.0.0"
 ctrlc = "*"
 from_int = "0.1.2"
 from_int_derive = "0.1.2"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

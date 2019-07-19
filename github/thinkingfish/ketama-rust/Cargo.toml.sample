@@ -3,6 +3,9 @@ name = "ketama"
 version = "0.1.0"
 authors = ["Yao Yue <thinkingfish@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rust-crypto]
 git = "https://github.com/thinkingfish/rust-crypto.git"
 rev = "5571cb41690b9cee12025192393ea7df0eddc21b"

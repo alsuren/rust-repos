@@ -5,6 +5,7 @@ authors = ["5225225 <5225225@users.noreply.github.com>"]
 
 [dependencies]
 heapless = "0.3.6"
+boringssl = "0.0.5"
 
 [dependencies.failure]
 version = "0.1.1"

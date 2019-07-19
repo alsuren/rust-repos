@@ -8,6 +8,7 @@ futures = "^0.1"
 log = "^0.3"
 rand = "^0.3"
 tokio-timer = { git = "https://github.com/tokio-rs/tokio-timer" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio-core = "^0.1"

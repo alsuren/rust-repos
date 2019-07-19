@@ -28,6 +28,7 @@ syntex = "0.24.0"
 clap = "1.5.4"
 rand = "0.3.12"
 serde = "0.6.7"
+boringssl = "0.0.5"
 
 [dependencies.toml]
 default-features = false

@@ -6,6 +6,7 @@ authors = ["Matthew Piziak <matthew.piziak@gmail.com>"]
 [dependencies]
 itertools = "0.5.4"
 time = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.zkill]
 git = "https://github.com/matthew-piziak/zkill"

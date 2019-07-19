@@ -10,6 +10,7 @@ num = "0.1.40"
 seahash = "3.0.5"
 time = "0.1.38"
 futures-cpupool = "0.1.5"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

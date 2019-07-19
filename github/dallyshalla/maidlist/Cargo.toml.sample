@@ -11,3 +11,4 @@ path = "examples/run.rs"
 [dependencies]
 hyper = "*"
 rustc-serialize = "*"
+boringssl = "0.0.5"

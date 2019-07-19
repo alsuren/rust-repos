@@ -8,3 +8,4 @@ description = "Run deferred closures at success, failure, or exit of a scope. Al
 repository = "https://github.com/DutchGhost/scoped.git"
 keywords = ["scope", "scoped", "guard", "defer"]
 [dependencies]
+boringssl = "0.0.5"

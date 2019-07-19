@@ -16,6 +16,7 @@ serde_derive = "1"
 serde_json = "1"
 pbr = "1"
 self_update = { version = "0.5", optional = true }
+boringssl = "0.0.5"
 
 
 [features]

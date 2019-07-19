@@ -12,6 +12,7 @@ path = "src/main.rs"
 chrono = "0.4.6"
 postgres = { version = "0.15.2", features = ["with-chrono"] }
 openssl-sys = "*"
+boringssl = "0.0.5"
 
 [features]
 # Force openssl-sys to staticly link in the openssl library. Necessary when

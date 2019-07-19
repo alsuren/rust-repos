@@ -14,3 +14,4 @@ with-syntex = ["syntex", "syntex_syntax", "aster/with-syntex"]
 aster = { git = "https://github.com/kbknapp/rust-aster", version = "*", default-features = false }
 syntex = { version = "*", optional = true }
 syntex_syntax = { version = "*", optional = true }
+boringssl = "0.0.5"

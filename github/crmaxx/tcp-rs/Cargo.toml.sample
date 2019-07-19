@@ -10,3 +10,4 @@ license = "MIT"
 
 [dependencies]
 winapi = { version = "~0.3", features = ["minwindef", "ntdef", "ws2def", "winsock2", "ws2tcpip"] } 
+boringssl = "0.0.5"

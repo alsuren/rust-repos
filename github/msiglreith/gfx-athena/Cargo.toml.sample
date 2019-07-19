@@ -5,3 +5,4 @@ authors = ["msiglreith <m.siglreith@gmail.com>"]
 
 [dependencies]
 gfx-hal = { path = "../gfx/src/hal" }
+boringssl = "0.0.5"

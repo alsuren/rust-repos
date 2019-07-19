@@ -3,3 +3,6 @@
 name = "split"
 version = "0.0.1"
 authors = ["Sam Ward <github@ward.io>"]
+
+[dependencies]
+boringssl = "0.0.5"

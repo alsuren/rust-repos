@@ -11,6 +11,7 @@ http-muncher = "*"
 clap = "*"
 env_logger = "*"
 hyper = "*"
+boringssl = "0.0.5"
 
 [dependencies.coio]
 git = "https://github.com/zonyitoo/coio-rs.git"

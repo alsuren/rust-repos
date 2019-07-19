@@ -6,6 +6,7 @@ authors = ["Dan Elkouby <streetwalkermc@gmail.com>"]
 [dependencies]
 libc = "0.2"
 nix = "0.10"
+boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

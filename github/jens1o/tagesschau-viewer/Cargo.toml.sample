@@ -7,3 +7,4 @@ license = "GPLv3"
 
 [dependencies]
 rss = { version = "1.6.1", features = ["from_url"] }
+boringssl = "0.0.5"

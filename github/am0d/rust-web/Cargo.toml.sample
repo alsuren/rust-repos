@@ -5,6 +5,9 @@ authors = [ "Damien Schoof" ]
 
 [[bin]]
 name = "server"
+
+[dependencies]
+boringssl = "0.0.5"
 #path = "src/web/main.rs"
 
 [dependencies.http]

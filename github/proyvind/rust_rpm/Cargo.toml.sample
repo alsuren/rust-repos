@@ -8,6 +8,7 @@ include = [ "src/rust_rpmbuild.rs", ]
 [dependencies]
 libc = "0.2.0"
 bindgen = "0.26.3"
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.26"

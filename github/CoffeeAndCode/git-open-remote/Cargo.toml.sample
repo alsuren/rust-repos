@@ -20,6 +20,7 @@ strict = []
 
 [dependencies]
 open = "1.2"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_cmd = "0.10"

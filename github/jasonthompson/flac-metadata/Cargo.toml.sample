@@ -11,3 +11,6 @@ name = "flac_metadata"
 [[bin]]
 
 name = "flac-metadata"
+
+[dependencies]
+boringssl = "0.0.5"

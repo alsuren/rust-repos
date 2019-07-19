@@ -11,6 +11,7 @@ edition = "2018"
 game-engine = { path = "../game-engine/rust" }
 specs = "0.12"
 specs-derive = "0.2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 toml = "0.4"

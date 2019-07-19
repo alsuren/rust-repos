@@ -6,3 +6,4 @@ authors = ["Michael Krolikowski <mkroli@yahoo.de>"]
 [dependencies]
 azkaban-client = { git = "https://github.com/mkroli/azkaban-client" }
 clap = "2.9.2"
+boringssl = "0.0.5"

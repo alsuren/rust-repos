@@ -43,6 +43,7 @@ gobject-sys = { git = "https://github.com/gtk-rs/sys" }
 gio-sys = { git = "https://github.com/gtk-rs/sys" }
 glib = { git = "https://github.com/gtk-rs/glib" }
 gio = { git = "https://github.com/gtk-rs/gio" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rustdoc-stripper = "^0.1.5"

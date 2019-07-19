@@ -18,6 +18,7 @@ flate2      = { version = "1.0.1", features = ["tokio"] }
 log         = "0.*"
 snap        = "0.2.4"
 protobuf    = { version = "1.4.3", features = ["with-bytes"] }
+boringssl = "0.0.5"
 
 [build-dependencies]
 env_logger  = "0.5.*"

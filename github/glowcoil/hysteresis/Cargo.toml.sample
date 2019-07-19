@@ -7,6 +7,7 @@ authors = ["micah"]
 vst2 = "0.0.1"
 sdl2 = "0.30.0"
 libc = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "tape"

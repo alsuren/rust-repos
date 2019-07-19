@@ -10,3 +10,4 @@ license = "MIT"
 [dependencies]
 x11 = { version = "2.12", features = ["xlib"] }
 psutil = { version = "1.0.0" }
+boringssl = "0.0.5"

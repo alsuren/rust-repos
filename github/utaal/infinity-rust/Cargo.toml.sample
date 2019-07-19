@@ -12,6 +12,7 @@ build = "build.rs"
 links = "infinity"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.36"

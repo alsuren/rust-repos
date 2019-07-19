@@ -20,6 +20,7 @@ path = "src/batch/batch.rs"
 libpitanga = { path = "lib" }
 yaml-rust = "*"
 num_cpus = "*"
+boringssl = "0.0.5"
 #sysinfo = "*"
 
 [workspace]

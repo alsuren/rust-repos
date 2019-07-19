@@ -11,3 +11,4 @@ description = "Create a verifiable serial key from a seed"
 [dependencies]
 rand = "0.3"
 regex = "0.2"
+boringssl = "0.0.5"

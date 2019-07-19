@@ -9,6 +9,9 @@ authors = [ "Jeff Olson <olson.jeffery@gmail.com>" ]
 name       = "p2dux"
 path       = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.p2d]
 git = "https://github.com/olsonjeffery/p2d"
 

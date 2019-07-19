@@ -13,6 +13,7 @@ embedded-hal = { version = "0.2.1", features = ["unproven"] }
 mkl25z4 = "0.0.1"
 embedded-hal-time = { git = "https://github.com/TheZoq2/embedded-hal-time" }
 nb = "0.1.1"
+boringssl = "0.0.5"
 
 [dependencies.void]
 default-features = false

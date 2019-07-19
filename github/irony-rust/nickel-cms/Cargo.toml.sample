@@ -11,6 +11,7 @@ toml = "0.2.*"
 ructe = "*"
 tera = "*"
 lazy_static = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 ructe = "*"

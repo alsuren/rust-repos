@@ -2,3 +2,6 @@
 name = "rs_use_sort"
 version = "0.0.1"
 authors = ["sinkuu <sinkuupump@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

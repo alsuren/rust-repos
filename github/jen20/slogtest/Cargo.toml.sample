@@ -8,3 +8,4 @@ slog = "2.3.3"
 slog-async = "^2"
 slog-term = "^2"
 slog-bunyan = { git = "https://github.com/jen20/bunyan", branch = "windows-hostname" }
+boringssl = "0.0.5"

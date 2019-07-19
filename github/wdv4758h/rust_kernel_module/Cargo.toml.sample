@@ -7,6 +7,9 @@ authors = ["Chiu-Hsiang Hsu <wdv4758h@gmail.com>"]
 Linux = []
 FreeBSD = []
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.core]
 git = "https://github.com/phil-opp/nightly-libcore.git"
 features = ["disable_float"]    # No CPU instructions that write to floating-point registers

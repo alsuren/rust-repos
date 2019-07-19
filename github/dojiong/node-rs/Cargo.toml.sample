@@ -8,6 +8,7 @@ edition = "2018"
 napi-sys = { path="./napi-sys" }
 napi = { path="./napi" }
 napi-derive = { path="./napi-derive" }
+boringssl = "0.0.5"
 
 [workspace]
 members = ["napi-sys", "napi", "napi-derive", "node-test"]

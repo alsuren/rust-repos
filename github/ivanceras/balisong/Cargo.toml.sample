@@ -10,6 +10,9 @@ name = "balisong"
 [[bin]]
 name = "balisong"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.time]
 
 [dependencies.regex]

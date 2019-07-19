@@ -3,3 +3,6 @@
 name = "purely-functional-data-structures"
 version = "0.0.1"
 authors = ["Edward Paget <edward@cassetteta.pe>"]
+
+[dependencies]
+boringssl = "0.0.5"

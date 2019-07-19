@@ -7,3 +7,6 @@ authors = ["Brendan Zabarauskas <bjzaba@yahoo.com.au>"]
 [[lib]]
 
 name = "sax"
+
+[dependencies]
+boringssl = "0.0.5"

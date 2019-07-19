@@ -8,6 +8,7 @@ rppal = {version = "0.9", optional = true}
 docopt = "1"
 serde = "1"
 serde_derive = "1"
+boringssl = "0.0.5"
 
 [lib]
 name = "codesender"

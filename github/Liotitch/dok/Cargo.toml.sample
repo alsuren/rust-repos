@@ -10,3 +10,4 @@ authors = ["Romain Vaillant <rph.vaillant@gmail.com>"]
 
 [dependencies]
 dokc = { path = "compiler/" }
+boringssl = "0.0.5"

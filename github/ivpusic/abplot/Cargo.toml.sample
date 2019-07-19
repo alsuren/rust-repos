@@ -4,5 +4,8 @@ name = "abplot"
 version = "0.0.1"
 authors = ["ivpusic <pusic007@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.uuid]
 git = "https://github.com/rust-lang/uuid.git"

@@ -31,3 +31,6 @@ plugin = true
 
 [dev_dependencies.gfx]
 git = "https://github.com/gfx-rs/gfx-rs"
+
+[dependencies]
+boringssl = "0.0.5"

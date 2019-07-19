@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 matrix  = { path = "../matrix"}
 add-two = { path = "../add-two"}
+boringssl = "0.0.5"

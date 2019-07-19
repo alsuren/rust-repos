@@ -14,3 +14,4 @@ serde_json = "0.8.6"
 webrender = { path = "./webrender/webrender" }
 webrender_traits = { path = "./webrender/webrender_traits", default_features = false }
 xi-core = { path = "./xi-editor/rust" }
+boringssl = "0.0.5"

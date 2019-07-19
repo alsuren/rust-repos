@@ -5,6 +5,7 @@ authors = ["Gaba <gaba@freebuf.com>"]
 
 [dependencies]
 hexdump = "0.1.0"
+boringssl = "0.0.5"
 [dependencies.pnet]
 version = "0.18.0"
 

@@ -12,6 +12,7 @@ keywords = ["statistics", "stats", "cli"]
 
 [dependencies]
 clap = "2.11.0"
+boringssl = "0.0.5"
 
 [lib]
 name = "staccato"

@@ -11,6 +11,7 @@ stm32f4 = { path = "./stm32f4" }
 smalloc = { path = "./smalloc" }
 linkmem = { path = "./linkmem" }
 breactor = { path = "./breactor" }
+boringssl = "0.0.5"
 
 [[bin]]
 name = "bkernel"

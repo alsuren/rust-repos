@@ -6,6 +6,7 @@ authors = ["Kevin K. <kbknapp@gmail.com>",
 
 [dependencies]
 clap = {path="../clap-rs"}
+boringssl = "0.0.5"
 
 [dev-dependencies]
 clap = {path="../clap-rs"}

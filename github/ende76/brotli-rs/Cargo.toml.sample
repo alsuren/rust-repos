@@ -9,3 +9,6 @@ documentation = "http://ende76.github.io/brotli-rs/brotli/"
 [[bin]]
 doc = false
 name = "main"
+
+[dependencies]
+boringssl = "0.0.5"

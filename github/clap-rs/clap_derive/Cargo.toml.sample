@@ -26,6 +26,7 @@ syn = "0.14"
 quote = "0.6"
 proc-macro2 = "0.4"
 clippy = {version = "0.0.174", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 clap = {git = "https://github.com/kbknapp/clap-rs", branch = "v3-master"} # ONLY FOR INITIAL DEVELOPMENT...change to real crates.io ver for rlease!

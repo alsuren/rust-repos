@@ -8,3 +8,6 @@ description = "A mutex providing one-time synchronized access, then safe unsynch
 readme = "README.md"
 license = "MIT/Apache-2.0"
 
+[dependencies]
+boringssl = "0.0.5"
+

@@ -6,6 +6,7 @@ authors = ["Tim Lovorn <tflovorn@austin.utexas.edu>"]
 [dependencies]
 tightbinding = { path = "../tightbinding" }
 ndarray = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 pre-commit = "*"

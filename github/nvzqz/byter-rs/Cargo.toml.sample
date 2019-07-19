@@ -13,3 +13,4 @@ description = "Fast, specialized operations over bytes."
 include = ["Cargo.toml", "src/**/*.rs", "README.md", "CHANGELOG.md", "LICENSE*"]
 
 [dependencies]
+boringssl = "0.0.5"

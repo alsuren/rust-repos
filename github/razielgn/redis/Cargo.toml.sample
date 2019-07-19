@@ -6,6 +6,7 @@ authors = ["Federico Ravasio <ravasio.federico@gmail.com>"]
 [dependencies]
 nom = "~2.2"
 mioco = "~0.8"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "~0.4"

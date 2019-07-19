@@ -19,6 +19,7 @@ systemstat = { version = "0.1", git ="https://github.com/wezm/systemstat.git", b
 hyper = "0.12.20"
 futures = "0.1"
 tokio = "<= 1.0"
+boringssl = "0.0.5"
 
 [build-dependencies]
 askama = "0.7"

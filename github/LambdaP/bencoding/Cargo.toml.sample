@@ -4,6 +4,9 @@ name = "bencoding"
 version = "0.0.1"
 authors = ["Patrick Lambein"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.angstrom]
 
 git = "https://github.com/LambdaP/Angstrom"

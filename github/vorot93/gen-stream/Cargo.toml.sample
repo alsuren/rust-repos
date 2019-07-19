@@ -16,6 +16,7 @@ Generator-based streams for Rust and futures 0.3.
 [dependencies]
 futures-core-preview = "0.3.0-alpha.16"
 pin-utils = "0.1.0-alpha.4"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 futures-preview = { version = "0.3.0-alpha.16", features = ["compat"] }

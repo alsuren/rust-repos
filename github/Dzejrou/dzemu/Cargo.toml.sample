@@ -12,3 +12,4 @@ name = "dzemu_asm"
 path = "src/dzemu_asm.rs"
 
 [dependencies]
+boringssl = "0.0.5"

@@ -12,3 +12,6 @@ doc = false
 name = "learn"
 path = "src/learn.rs"
 doc = false
+
+[dependencies]
+boringssl = "0.0.5"

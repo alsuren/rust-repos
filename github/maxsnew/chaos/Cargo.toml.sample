@@ -4,6 +4,9 @@ name = "chaos"
 version = "0.0.1"
 authors = ["Max New <maxsnew@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.opengl_graphics]
 git = "https://github.com/pistondevelopers/opengl_graphics"
 

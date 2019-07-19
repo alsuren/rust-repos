@@ -16,6 +16,7 @@ wasm-bindgen = "0.2.42"
 # wasm-bindgen = "0.2"
 wee_alloc = { version = "0.4.2", optional = true }
 console_error_panic_hook = { version = "0.1.1", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.2"

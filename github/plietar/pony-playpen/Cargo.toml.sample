@@ -16,6 +16,7 @@ serde_derive = "1.0"
 tokio = "0.1"
 wait-timeout = "0.2"
 url = "1.7"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.4.0"

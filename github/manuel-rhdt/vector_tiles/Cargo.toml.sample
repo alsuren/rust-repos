@@ -15,6 +15,7 @@ num = "^0.2"
 reqwest = "^0.9"
 indicatif = "^0.10"
 zip = "^0.5"
+boringssl = "0.0.5"
 
 [dependencies.config]
 version = "0.9"

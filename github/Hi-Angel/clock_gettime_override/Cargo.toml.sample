@@ -7,6 +7,7 @@ edition = "2018"
 [dependencies]
 libc = "0.2.*"
 lazy_static = "1.2.*"
+boringssl = "0.0.5"
 
 [lib]
 name = "clock_gettime_override"

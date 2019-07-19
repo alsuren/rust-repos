@@ -10,3 +10,4 @@ tokio-threadpool = "0.1"
 tokio = "0.1"
 tower-service = "0.2"
 sql = { git = "https://github.com/prisma/sql.git", branch = "master" }
+boringssl = "0.0.5"

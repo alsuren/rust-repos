@@ -17,6 +17,7 @@ structopt = "0.2.15"
 structopt-derive = "0.2.15"
 twox-hash = "1.1.2"
 walkdir = "2.2.7"
+boringssl = "0.0.5"
 
 [dependencies.img_hash]
 features = ["rust-image"]

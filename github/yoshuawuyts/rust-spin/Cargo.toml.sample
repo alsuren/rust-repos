@@ -13,3 +13,6 @@ path = "index.rs"
 [test]
 
 path = "test.rs"
+
+[dependencies]
+boringssl = "0.0.5"

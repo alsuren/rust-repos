@@ -14,4 +14,5 @@ license = "MIT OR Apache-2.0"
 libusb = { git = "https://github.com/oberien/libusb-rs", rev = "060be5045140f4625f7450b234af473e877908de" }
 byteorder = "0.5.3"
 nix = "0.6.0"
+boringssl = "0.0.5"
 

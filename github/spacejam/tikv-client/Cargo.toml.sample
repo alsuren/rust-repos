@@ -10,6 +10,7 @@ log = "0.3.6"
 mio = { git = "https://github.com/carllerche/mio", branch = "dev" }
 tokio = { git = "https://github.com/tokio-rs/tokio" }
 futures = "0.1.0"
+boringssl = "0.0.5"
 
 [dependencies.tipb]
 git = "https://github.com/pingcap/tipb.git"

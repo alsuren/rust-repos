@@ -12,6 +12,7 @@ keywords = ["cli", "exitcode", "exit-codes", "sysexit", "sysexits"]
 
 [dependencies]
 libc = { version = "0.2", default-features = false }
+boringssl = "0.0.5"
 
 [lib]
 path = "sysexit.rs"

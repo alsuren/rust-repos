@@ -16,6 +16,7 @@ serde_derive = "1.0"
 serde_json = "1.0"
 spidev = "0.3"
 toml = "0.4"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.4"

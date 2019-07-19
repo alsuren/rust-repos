@@ -5,3 +5,4 @@ authors = ["kteza1 <k.teza1@gmail.com>"]
 
 [dependencies]
 systemd = {git = "https://github.com/kteza1/rust-systemd"}
+boringssl = "0.0.5"

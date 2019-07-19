@@ -6,6 +6,7 @@ authors = ["Moritz Hoffmann <moritz.hoffmann@inf.ethz.ch>"]
 build = "build.rs"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

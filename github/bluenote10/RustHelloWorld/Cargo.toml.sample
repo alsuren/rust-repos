@@ -8,5 +8,8 @@ authors = [ "Your name <you@example.com>" ]
 
 name = "rift_example"
 
+[dependencies]
+boringssl = "0.0.5"
+
 
 

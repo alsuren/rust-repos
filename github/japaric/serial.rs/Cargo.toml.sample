@@ -4,6 +4,9 @@ authors = ["Jorge Aparicio <japaricious@gmail.com>"]
 name = "serial"
 version = "0.0.0"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.termios]
 git = "https://github.com/japaric/termios.rs"
 

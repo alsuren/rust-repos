@@ -9,3 +9,6 @@ authors = ["Jonathan Reem <jonathan.reem@gmail.com>"]
 name = "move-acceptor"
 path = "src/lib.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

@@ -33,6 +33,7 @@ path = "src/lib.rs"
 [dependencies]
 #crowbook = { path = "../crowbook", default-features = false }
 crowbook = "=0.10.3"
+boringssl = "0.0.5"
 
 
 

@@ -13,6 +13,7 @@ documentation = "https://docs.rs/audiopus_sys"
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.48.1"

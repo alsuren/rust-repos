@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 cueball = { git = 'https://github.com/joyent/rust-cueball' }
+boringssl = "0.0.5"

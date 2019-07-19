@@ -11,6 +11,7 @@ license = "MIT"
 [dependencies]
 serde = { version = "0.8.19", optional = true }
 serde_derive = { version = "0.8.19", optional = true }
+boringssl = "0.0.5"
 
 [features]
 ser = ["serde", "serde_derive"]

@@ -5,3 +5,4 @@ version = "0.1.0"
 
 [dependencies]
 serde_json = { git = "https://github.com/withoutboats/json", branch = "serializeable_objects" }
+boringssl = "0.0.5"

@@ -8,3 +8,6 @@ readme = "README.md"
 keywords = ["video", "broadcasting", "time", "timecode", "smpte"]
 categories = ["data-structures", "date-and-time", "multimedia::video"]
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

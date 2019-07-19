@@ -7,6 +7,7 @@ authors = ["Dorian Scheidt <dorian.scheidt@gmail.com>"]
 rand = "0.3"
 termion = "1"
 rayon = "0.8.2"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "game"

@@ -16,6 +16,7 @@ blake2-rfc = "0.2.18"
 rand = "0.4"
 byteorder = "1"
 clippy = { version = "0.0.190", optional = true }
+boringssl = "0.0.5"
 
 [features]
 unstable-features = ["expose-arith"]

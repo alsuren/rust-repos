@@ -9,6 +9,7 @@ toml = "0.4.8"
 tdmath = { git = "https://github.com/sean-h/tdmath.git" }
 cmdpro = { git = "https://github.com/sean-h/cmdpro.git" }
 modelloader = { git = "https://github.com/sean-h/modelloader.git" }
+boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.31.0"

@@ -16,6 +16,7 @@ path = "src/lib.rs"
 [dependencies]
 vecmath = "1.0.0"
 pistoncore-input = "0.25.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 piston_window = "0.93.0"

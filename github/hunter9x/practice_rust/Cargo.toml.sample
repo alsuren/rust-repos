@@ -5,3 +5,4 @@ authors = ["kai"]
 
 [dependencies]
 rss = { version = "*", features = ["from_url"] }
+boringssl = "0.0.5"

@@ -29,6 +29,7 @@ serde_derive = "1"
 sled = {version = "0.19", optional = true}
 rocksdb = {version = "0.12", optional = true}
 crossbeam = {version = "0.7", optional = true}
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

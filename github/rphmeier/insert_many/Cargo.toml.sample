@@ -8,6 +8,7 @@ repository = "https://github.com/rphmeier/insert_many.git"
 
 [dependencies]
 smallvec = { version = "0.2.0", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["smallvec"]

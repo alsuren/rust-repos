@@ -12,6 +12,7 @@ keywords = [ "language", "scripting" ]
 
 [dependencies]
 nom = { version = "4.2", features = [ "verbose-errors" ] }
+boringssl = "0.0.5"
 
 [lib]
 name = "itsy"

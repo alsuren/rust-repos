@@ -7,3 +7,4 @@ authors = ["D Keeler <mozkeeler@gmail.com>"]
 byteorder = "1.2.1"
 toroxide = { path = "../toroxide" }
 toroxide-openssl = { path = "../toroxide-openssl" }
+boringssl = "0.0.5"

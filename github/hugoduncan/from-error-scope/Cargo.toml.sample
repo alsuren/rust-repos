@@ -9,3 +9,6 @@ repository = "https://github.com/hugoduncan/from-error-scope"
 documentation = "http://hugoduncan.github.io/from-error-scope/from_error_scope/index.html"
 readme = "README.md"
 license = "Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

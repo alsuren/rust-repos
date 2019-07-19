@@ -6,3 +6,4 @@ authors = ["Victor Koenders <victor.koenders@gmail.com>"]
 [dependencies]
 rand = "*"
 engine = { path = "libs/engine" }
+boringssl = "0.0.5"

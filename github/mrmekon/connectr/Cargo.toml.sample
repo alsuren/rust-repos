@@ -50,6 +50,7 @@ log = "0.4"
 log4rs = "0.8"
 ctrlc = "3.1"
 rustfm-scrobble = {version="0.9.1", optional = true}
+boringssl = "0.0.5"
 
 [dependencies.fruitbasket]
 version = "0.6"

@@ -3,3 +3,6 @@
 name = "arden"
 version = "0.0.1"
 authors = [ "Avi Romanoff <avi@romanoff.me" ]
+
+[dependencies]
+boringssl = "0.0.5"

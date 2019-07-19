@@ -7,3 +7,6 @@ repository  = "https://github.com/JoshCheek/inspect"
 readme      = "./README.md"
 keywords    = ["escape", "inspect"]
 license     = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -6,3 +6,4 @@ authors = ["Jan S."]
 [dependencies]
 actix-web = "0.7"
 vmctl-controller = { git = "https://github.com/jan-schreib/vmctl-controller" }
+boringssl = "0.0.5"

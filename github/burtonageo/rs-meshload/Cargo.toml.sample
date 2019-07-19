@@ -7,3 +7,6 @@ authors = ["burtonageo@gmail.com"]
 [[lib]]
 
 name = "meshload"
+
+[dependencies]
+boringssl = "0.0.5"

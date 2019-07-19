@@ -6,6 +6,7 @@ authors = ["OZ <normandiggs@gmail.com>"]
 [dependencies]
 ssh2 = "0.3.1"
 libssh2-sys = "0.2.5"
+boringssl = "0.0.5"
 
 [dependencies.rusoto]
 features = ["s3"]

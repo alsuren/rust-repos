@@ -3,6 +3,9 @@ name = "polygon_al"
 version = "0.1.0"
 authors = ["kumquaternion <kumquaternion@users.noreply.github.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.cgmath]
 git = "https://github.com/bjz/cgmath-rs"
 version = "*"

@@ -4,3 +4,6 @@ name = "tinkering"
 version = "0.0.1"
 authors = ["Andrew Wagner <drewm1980@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+

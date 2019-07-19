@@ -6,6 +6,7 @@ authors = ["messense <messense@icloud.com>"]
 [dependencies]
 rocket = "0.3"
 validator = "0.6"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rocket_codegen = "0.3"

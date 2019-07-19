@@ -8,6 +8,7 @@ edition = "2018"
 clap = "2.32.0"
 syntax = { path = "silica-syntax" }
 verilog = { path = "silica-verilog" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 difference = "2.0.0"

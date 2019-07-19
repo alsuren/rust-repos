@@ -5,3 +5,6 @@ authors = ["Saju Thankappan <sajuthankappan@gmail.com>"]
 description = "Urlshortener encode/decode"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/sajuthankappan/urlshortener-codec-rs"
+
+[dependencies]
+boringssl = "0.0.5"

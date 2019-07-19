@@ -10,3 +10,4 @@ yew = { git = "https://github.com/DenisKolodin/yew" }
 rand = { version = "0.6", features = ["stdweb"] }
 pixie-rust = { git = "https://github.com/JD557/pixie-rust" }
 csv = "1"
+boringssl = "0.0.5"

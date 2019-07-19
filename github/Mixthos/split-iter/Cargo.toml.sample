@@ -9,3 +9,6 @@ license = "MIT"
 
 documentation = "http://mixthos.github.com/split-iter"
 repository = "https://github.com/Mixthos/split-iter"
+
+[dependencies]
+boringssl = "0.0.5"

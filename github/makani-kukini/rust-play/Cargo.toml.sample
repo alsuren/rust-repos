@@ -9,3 +9,6 @@ path = "src/nes.rs"
 [lib]
 name = "cpu"
 src = "src/cpu.rs"
+
+[dependencies]
+boringssl = "0.0.5"

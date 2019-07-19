@@ -14,6 +14,7 @@ num="*"
 num-derive="*"
 num-traits="*"
 curl="*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "server"

@@ -7,3 +7,6 @@ authors = [ "cgaebel@uwaterloo.ca" ]
 [[lib]]
 
 name = "graph"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -15,6 +15,7 @@ doctest = false
 "serde" = "0.8"
 "serde_derive" = "0.8"
 clippy = {version = "*", optional = true}
+boringssl = "0.0.5"
 
 [features]
 default = []

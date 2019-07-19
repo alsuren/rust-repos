@@ -3,3 +3,6 @@ name = "exploring-computation-graphs-in-rust"
 version = "0.1.0"
 authors = ["Paul Kernfeld <paulkernfeld@gmail.com>"]
 license = "MIT/Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

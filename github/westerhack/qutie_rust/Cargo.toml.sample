@@ -9,6 +9,7 @@ rand = "0.3.0"
 lazy_static = "0.2"
 guard = "0.3.3"
 regex = "0.2"
+boringssl = "0.0.5"
 
 [features]
 allow_assert = []

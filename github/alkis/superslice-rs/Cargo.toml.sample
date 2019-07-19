@@ -36,3 +36,6 @@ opt-level = 3
 
 [badges]
 travis-ci = { repository = "alkis/superslice-rs" }
+
+[dependencies]
+boringssl = "0.0.5"

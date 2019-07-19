@@ -3,3 +3,6 @@
 name = "rust-linked-list"
 version = "0.0.1"
 authors = ["Christian Gati <christian.gati@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -10,6 +10,7 @@ gcc = "0.3.43"
 
 [dependencies]
 libc = "0.2"
+boringssl = "0.0.5"
 
 # LeakSanitizer doesn't work reliably with opt-level=0
 [profile.dev]

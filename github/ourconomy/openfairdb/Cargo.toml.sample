@@ -30,6 +30,7 @@ diesel = { version = "1.0.0-beta1", features = ["sqlite"], optional = true }
 diesel_infer_schema = { version = "1.0.0-beta1", features = ["sqlite"], optional = true }
 diesel_migrations = { version = "1.0.0-beta1", features = ["sqlite"], optional = true }
 libsqlite3-sys = { version = "0.8", features = ["bundled"], optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["sqlite"]

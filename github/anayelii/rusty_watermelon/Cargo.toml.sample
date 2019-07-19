@@ -8,6 +8,9 @@ authors = [ "Anayei Flores <a.flores1591@gmail.com>" ]
 name = "watermelon"
 path = "src/watermelon.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.color]
 name = "color"
 git = "https://github.com/bjz/color-rs.git"

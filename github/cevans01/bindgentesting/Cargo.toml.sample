@@ -11,6 +11,7 @@ name = "libfoo_sys"
 
 [dependencies]
 libc = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "*"

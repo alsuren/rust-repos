@@ -18,3 +18,4 @@ members = ["sigar-sys"]
 
 [dependencies]
 sigar-sys = { version = "1", path = "sigar-sys" }
+boringssl = "0.0.5"

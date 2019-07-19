@@ -5,3 +5,6 @@ authors = ["Kilerd Chan <blove694@gmail.com>"]
 edition = "2018"
 
 [workspace]
+
+[dependencies]
+boringssl = "0.0.5"

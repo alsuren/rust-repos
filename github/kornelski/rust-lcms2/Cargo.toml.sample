@@ -16,6 +16,7 @@ edition = "2018"
 [dependencies]
 foreign-types = "0.4.0"
 lcms2-sys = "3.1.0"
+boringssl = "0.0.5"
 
 [features]
 static = ["lcms2-sys/static"]

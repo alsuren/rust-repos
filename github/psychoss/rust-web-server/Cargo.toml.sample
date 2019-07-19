@@ -8,6 +8,7 @@ hyper="*"
 postgres="*"
 time = "*"
 rustc-serialize = "0.3.16"
+boringssl = "0.0.5"
 [[bin]]
 name = "sever"
 path="src/bin/main.rs"

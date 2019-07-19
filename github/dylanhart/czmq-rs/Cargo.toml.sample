@@ -5,3 +5,6 @@ authors = ["dylanhart <dylan96hart@gmail.com>"]
 
 [build-dependencies]
 "bindgen" = "0.36"
+
+[dependencies]
+boringssl = "0.0.5"

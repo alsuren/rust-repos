@@ -9,6 +9,7 @@ bytecount = "0.1.4"
 llvm-sys = "39"
 argparse = "*"
 libllvm = { path="./libllvm" }
+boringssl = "0.0.5"
 
 [features]
 avx-accel = ["bytecount/avx-accel"]

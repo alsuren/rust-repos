@@ -5,3 +5,6 @@ authors = ["Gui Andrade <gh@archshift.com>"]
 
 [profile.bench]
 debug = true
+
+[dependencies]
+boringssl = "0.0.5"

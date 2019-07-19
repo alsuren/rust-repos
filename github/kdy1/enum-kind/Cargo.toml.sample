@@ -9,6 +9,7 @@ proc-macro = true
 [dependencies]
 pmutil = { git = "https://github.com/kdy1/rust-pmutil" }
 proc-macro2 = { version = "0.1", features = ["unstable"] }
+boringssl = "0.0.5"
 
 [dependencies.syn]
 git = "https://github.com/dtolnay/syn"

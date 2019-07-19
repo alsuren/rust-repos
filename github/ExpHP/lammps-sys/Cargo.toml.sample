@@ -32,6 +32,7 @@ exclude = [
 
 [dependencies]
 mpi-sys = { version = "0.1.2", optional = true }
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.31.3" # currently held back by mpi-sys

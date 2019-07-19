@@ -16,6 +16,7 @@ Integer logarithm library including some bit operations.
 
 [dependencies]
 num = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "ilog2"

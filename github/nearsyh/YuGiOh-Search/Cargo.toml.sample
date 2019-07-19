@@ -10,6 +10,7 @@ string_cache = "*"
 string_cache_plugin = "*"
 tendril = "0.1"
 postgres = "0.9"
+boringssl = "0.0.5"
 
 [dependencies.html5ever]
 git = "https://github.com/servo/html5ever/"

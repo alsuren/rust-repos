@@ -6,3 +6,6 @@ authors = ["Cody Harrington <cody at harringtonca.com>"]
 [[bin]]
 
 name = "roestig"
+
+[dependencies]
+boringssl = "0.0.5"

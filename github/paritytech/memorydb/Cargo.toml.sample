@@ -14,3 +14,4 @@ keccak-hash = "0.1.1"
 hashdb = "0.1.2"
 plain_hasher = { git="https://github.com/paritytech/parity" } # TODO: change to 0.1.1 as soon as the crate ownership is fixed
 rlp = "0.2.2"
+boringssl = "0.0.5"

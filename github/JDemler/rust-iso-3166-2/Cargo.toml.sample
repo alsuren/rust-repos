@@ -6,3 +6,4 @@ authors = ["Jakob Demler <jdemler@curry-software.com>"]
 [dependencies]
 serde_derive = "*"
 serde = "*"
+boringssl = "0.0.5"

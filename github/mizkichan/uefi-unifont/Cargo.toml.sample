@@ -10,6 +10,7 @@ uefi = { git = "https://github.com/rust-osdev/uefi-rs.git" }
 # for src/bin/example.rs
 uefi-exts = { git = "https://github.com/rust-osdev/uefi-rs.git" }
 uefi-services = { git = "https://github.com/rust-osdev/uefi-rs.git" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 uefi = { git = "https://github.com/rust-osdev/uefi-rs.git" }

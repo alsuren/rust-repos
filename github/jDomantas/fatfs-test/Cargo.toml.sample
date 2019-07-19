@@ -6,3 +6,4 @@ authors = ["djade <djadenkus@gmail.com>"]
 [dependencies]
 fatfs = { path = "fatfs" }
 basic_io = { path = "basic_io" }
+boringssl = "0.0.5"

@@ -9,3 +9,4 @@ lto = true
 [dependencies]
 libc = "0.2"
 errno = "*"
+boringssl = "0.0.5"

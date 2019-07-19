@@ -7,6 +7,7 @@ authors = ["Paul Rouget <me@paulrouget.com>"]
 servoglwindows = { git = "https://github.com/paulrouget/servoglwindows" }
 servoapi = { git = "https://github.com/paulrouget/servoapi" }
 open = "1.1.1"
+boringssl = "0.0.5"
 
 
 [replace]

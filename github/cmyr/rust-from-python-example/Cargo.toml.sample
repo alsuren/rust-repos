@@ -9,3 +9,4 @@ crate-type = ["dylib"]
 
 [dependencies]
 cpython = { git = "https://github.com/dgrunwald/rust-cpython.git" }
+boringssl = "0.0.5"

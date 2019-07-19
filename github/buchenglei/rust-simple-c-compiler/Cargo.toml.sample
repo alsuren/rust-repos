@@ -2,3 +2,6 @@
 name = "rust-simple-c-compiler"
 version = "0.1.0"
 authors = ["buchenglei <mybc724@163.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

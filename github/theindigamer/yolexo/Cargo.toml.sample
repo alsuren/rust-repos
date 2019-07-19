@@ -11,6 +11,7 @@ path = "src/lib.rs"
 regex-syntax = "^0.6.1"
 pest = "^1.0.6"
 pest_derive = "^1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 regex-syntax = "^0.6.1"

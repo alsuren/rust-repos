@@ -11,3 +11,4 @@ rust-crypto = { git = "https://github.com/andreasots/rust-crypto.git", branch = 
 encoding = '*'
 hyper = '*'
 url = { git = "https://github.com/servo/rust-url" }
+boringssl = "0.0.5"

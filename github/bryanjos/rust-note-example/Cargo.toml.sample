@@ -3,3 +3,6 @@
 name = "note"
 version = "0.0.1"
 authors = ["Bryan Joseph <bryanjos@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -6,6 +6,7 @@ description = "Pulseaudio tool that selects the next available default sink and 
 repository = "https://github.com/bjornua/transcode"
 license="BSD-3-Clause"
 [dependencies]
+boringssl = "0.0.5"
 
 [[bin]]
 name = "pulseaudio-next-sink"

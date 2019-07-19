@@ -13,6 +13,7 @@ clap = "2.24"
 term = "0.2"
 #pretty_assertions = "*"
 miniz_oxide = "0.1.2"
+boringssl = "0.0.5"
 
 [profile.release]
 debug = true

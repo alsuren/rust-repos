@@ -7,3 +7,4 @@ license = "MIT"
 description = "Spacial Slice is a simple Rust crate for when you want to store two dimensional Sized data in linear memory."
 
 [dependencies]
+boringssl = "0.0.5"

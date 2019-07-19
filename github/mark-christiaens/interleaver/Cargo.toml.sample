@@ -4,6 +4,9 @@ name = "interleaver"
 version = "0.0.1"
 authors = ["Mark Christiaens <mark.g.j.christiaens@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.docopt]
 
 git = "https://github.com/docopt/docopt.rs"

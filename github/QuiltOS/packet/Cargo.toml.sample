@@ -7,3 +7,6 @@ authors=["matt@mcpherrin.ca"]
 [lib]
 path="src/lib.rs"
 name="packet"
+
+[dependencies]
+boringssl = "0.0.5"

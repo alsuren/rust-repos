@@ -5,3 +5,4 @@ authors = ["Patrick Chan <patrickchan1999@gmail.com>"]
 
 [dependencies]
 search_candidate = { git = "https://github.com/torch-rs/search_candidate" }
+boringssl = "0.0.5"

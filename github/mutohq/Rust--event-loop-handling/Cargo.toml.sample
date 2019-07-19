@@ -8,6 +8,7 @@ build = "build.rs"
 [dependencies]
 libc = "0.2"
 lazy_static = "0.2.1"
+boringssl = "0.0.5"
 
 [build-dependencies]
 gcc="0.3.0"

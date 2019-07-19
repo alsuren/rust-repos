@@ -5,3 +5,4 @@ authors = ["Greg Cooper <gregory.cooper@gmail.com>"]
 
 [dependencies]
 appnetcore = { path = "../appnetcore" }
+boringssl = "0.0.5"

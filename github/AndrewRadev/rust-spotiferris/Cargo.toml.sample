@@ -17,6 +17,7 @@ diesel = { version = "1.3.0", features = ["postgres"] }
 dotenv = "0.10"
 id3 = "*"
 mp3-duration = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 askama = "*"

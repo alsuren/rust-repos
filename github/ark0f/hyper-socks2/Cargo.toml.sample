@@ -24,6 +24,7 @@ tokio = "0.1"
 # `tls` feature
 hyper-tls = { version = "0.3", optional = true }
 native-tls = { version = "0.2", optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = ["tls"]

@@ -10,3 +10,4 @@ crate-type = ["cdylib"]
 [dependencies]
 wasm-bindgen = "*"
 num = "*"
+boringssl = "0.0.5"

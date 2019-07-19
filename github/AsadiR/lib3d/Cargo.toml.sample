@@ -10,3 +10,4 @@ debug = true  # Добавляет флаг `-g` для компилятора;
 opt-level = 0 # Отключаем оптимизацию кода;
 
 [dependencies]
+boringssl = "0.0.5"

@@ -16,6 +16,9 @@ path = "src/hexlet-lesson.rs"
 name = "hexlet-exercise"
 path = "src/hexlet-exercise.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.color]
 git = "https://github.com/bjz/color-rs.git"
 

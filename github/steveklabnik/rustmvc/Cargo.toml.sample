@@ -4,6 +4,9 @@ name = "rustmvc"
 version = "0.0.1"
 authors = ["Steve Klabnik <steve@steveklabnik.com>", "Josef Pospíšil <josef.pospisil@laststar.eu>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.nickel]
 
 git = "https://github.com/nickel-org/nickel.rs.git"

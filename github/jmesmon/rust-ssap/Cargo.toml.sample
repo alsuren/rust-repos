@@ -7,3 +7,6 @@ license = "AGPL-3.0"
 keywords = ["parse", "arguments"]
 description = "A simple structured argument parser"
 repository = "https://github.com/jmesmon/rust-ssap"
+
+[dependencies]
+boringssl = "0.0.5"

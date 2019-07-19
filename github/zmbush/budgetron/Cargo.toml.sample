@@ -26,5 +26,6 @@ env_logger = "*"
 iron = "*"
 mount = "*"
 staticfile = "*"
+boringssl = "0.0.5"
 
 [workspace]

@@ -7,3 +7,4 @@ authors = ["Michael Anthony Knyszek <mknyszek@gmail.com>"]
 [dependencies]
 pest = "0.4"
 libquantum = { git = "https://github.com/mknyszek/rust-libquantum" }
+boringssl = "0.0.5"

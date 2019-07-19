@@ -13,3 +13,6 @@ homepage = "https://github.com/bvssvni/dataset"
 [lib]
 name = "dataset"
 path = "./src/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

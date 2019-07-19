@@ -5,3 +5,4 @@ authors = ["Maxwell Borden <maxwellborden@gmail.com>"]
 
 [dependencies]
 stdweb = { git = "https://github.com/Tacklebox/stdweb", branch = "mouse_offsets" }
+boringssl = "0.0.5"

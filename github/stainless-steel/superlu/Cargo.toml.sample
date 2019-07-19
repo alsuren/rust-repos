@@ -15,3 +15,4 @@ keywords = ["linear-algebra"]
 libc = "0.2"
 matrix = { version = "0.21", default-features = false }
 superlu-sys = "0.3"
+boringssl = "0.0.5"

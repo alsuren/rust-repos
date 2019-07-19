@@ -15,6 +15,7 @@ regex = "1.1.0"
 regex-syntax = "0.6.4"
 structopt = "0.2.14"
 z3 = "0.3.0"
+boringssl = "0.0.5"
 
 [profile.test]
 opt-level = 2

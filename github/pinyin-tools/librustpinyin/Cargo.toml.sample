@@ -16,3 +16,6 @@ name = "read"
 [[bin]]
 
 name = "bench_read_dump_db"
+
+[dependencies]
+boringssl = "0.0.5"

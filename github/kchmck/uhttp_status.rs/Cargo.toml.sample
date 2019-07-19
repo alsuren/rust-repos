@@ -7,3 +7,6 @@ license = "MIT"
 documentation = "https://docs.rs/uhttp_status"
 repository = "https://github.com/kchmck/uhttp_status.rs"
 keywords = ["http", "status", "code"]
+
+[dependencies]
+boringssl = "0.0.5"

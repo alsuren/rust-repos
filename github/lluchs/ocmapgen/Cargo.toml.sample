@@ -8,6 +8,7 @@ build = "build.rs"
 image = "0.12"
 error-chain = "0.10"
 regex = "0.2"
+boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "0.3"

@@ -9,3 +9,6 @@ repository = "https://github.com/RustSSL/rustssl"
 description = """
 A Rust implementation of the OpenSSL toolkit/library
 """
+
+[dependencies]
+boringssl = "0.0.5"

@@ -19,3 +19,4 @@ maplit = "*"
 nalgebra = "*"
 linked-hash-map = "*"
 glsl_optimizer = { optional = true, path = "../glsl_optimizer" }
+boringssl = "0.0.5"

@@ -2,3 +2,6 @@
 name = "chat_server"
 version = "0.2.0"
 authors = ["Kevin Wilde <kevinwilde2018@u.northwestern.edu>"]
+
+[dependencies]
+boringssl = "0.0.5"

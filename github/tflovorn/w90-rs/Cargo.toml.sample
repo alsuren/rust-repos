@@ -9,6 +9,7 @@ qe = { path = "../qe-rs" }
 failure = "*"
 serde = "*"
 serde_derive = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 pre-commit = "*"

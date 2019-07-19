@@ -16,3 +16,6 @@ codegen-units = 1
 opt-level = 3
 lto = true
 debug = true
+
+[dependencies]
+boringssl = "0.0.5"

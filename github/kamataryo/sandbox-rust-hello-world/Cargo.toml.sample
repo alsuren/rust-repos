@@ -5,6 +5,7 @@ authors = ["kamataryo <mugil.cephalus+github.com@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [[bin]]
 name = "sandbox-rust-hello-world"

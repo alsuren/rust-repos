@@ -8,3 +8,6 @@ documentation = "https://bfrog.github.io/flaken"
 version = "0.2.2"
 authors = ["Tom Burdick <thomas.burdick@gmail.com>"]
 keywords = ["snowflake", "flake", "id", "distributed"]
+
+[dependencies]
+boringssl = "0.0.5"

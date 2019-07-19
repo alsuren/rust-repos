@@ -13,6 +13,7 @@ serde_yaml = "0.7.1"
 toml = "0.4.5"
 clap = "2.26.2"
 app_dirs = "1.1.1"
+boringssl = "0.0.5"
 
 [build-dependencies]
 clap = "2.26.2"

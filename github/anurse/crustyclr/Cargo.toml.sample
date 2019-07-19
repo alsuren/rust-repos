@@ -7,6 +7,7 @@ authors = ["Andrew Stanton-Nurse <andrew@andrewnurse.net>"]
 slog = "2.0.12"
 memmap = "0.6.1"
 ecma355metadata = { path = "./ecma355metadata" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 sloggers = "0.2.2"

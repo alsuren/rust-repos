@@ -5,3 +5,4 @@ authors = ["Sergey Khalymon <sergey.khalymon@fundedbyme.com>"]
 
 [dependencies]
 gtk = { version = "^0", features = ["v3_22"] }
+boringssl = "0.0.5"

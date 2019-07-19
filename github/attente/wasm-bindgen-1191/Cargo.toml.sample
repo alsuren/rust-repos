@@ -13,3 +13,4 @@ bindings = ["wasm-bindgen"]
 
 [dependencies]
 wasm-bindgen = { version = "0.2.32", optional = true }
+boringssl = "0.0.5"

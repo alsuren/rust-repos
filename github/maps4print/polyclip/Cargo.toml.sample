@@ -5,6 +5,7 @@ authors = ["Felix Schütt <felix.schuett@maps4print.com>"]
 
 [dependencies]
 intrusive-collections = "0.7.0"
+boringssl = "0.0.5"
 
 [features]
 use_double_precision = []

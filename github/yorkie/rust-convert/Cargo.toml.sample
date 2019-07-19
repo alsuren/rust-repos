@@ -8,3 +8,6 @@ authors = [ "yorkiefixer@gmail.com" ]
 name = "convert"
 path = "convert.rs"
 
+[dependencies]
+boringssl = "0.0.5"
+

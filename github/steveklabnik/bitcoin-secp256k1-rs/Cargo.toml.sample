@@ -9,3 +9,6 @@ authors = [
 [[lib]]
 name = "bitcoin-secp256k1-rs"
 path = "src/secp256k1.rs"
+
+[dependencies]
+boringssl = "0.0.5"

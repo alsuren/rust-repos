@@ -9,3 +9,4 @@ rocket_codegen = { git = "https://github.com/SergioBenitez/Rocket.git" }
 jsonwebtoken = "3"
 serde_derive = "1"
 serde = "1"
+boringssl = "0.0.5"

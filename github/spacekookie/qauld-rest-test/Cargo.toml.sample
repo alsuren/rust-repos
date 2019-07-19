@@ -5,3 +5,4 @@ authors = ["Katharina Fey <kookie@spacekookie.de>"]
 
 [dependencies]
 libqaul = { path = "../libqaul-rust" }
+boringssl = "0.0.5"

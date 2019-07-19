@@ -9,3 +9,4 @@ keywords = ["snowflake"]
 description = "Unique 64-bit ID generator based on Twitter Snowflake"
 
 [dependencies]
+boringssl = "0.0.5"

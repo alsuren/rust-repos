@@ -7,6 +7,7 @@ authors = ["Christopher Serr <christopher.serr@gmail.com>"]
 arrayvec = { version = "0.4.7", default-features = false }
 bincode = { git = "https://github.com/CryZe/bincode", branch = "core", optional = true }
 serde = {version = "1.0.75", default-features = false, optional = true }
+boringssl = "0.0.5"
 
 [features]
 default = []

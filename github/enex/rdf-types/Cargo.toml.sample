@@ -2,3 +2,6 @@
 name = "rdf-traits"
 version = "0.1.0"
 authors = ["Simon Vetter <sive@web.de>"]
+
+[dependencies]
+boringssl = "0.0.5"

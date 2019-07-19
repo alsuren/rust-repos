@@ -6,3 +6,6 @@ authors = [ "Krishna" ]
 
 [lib]
 name = "rust_coverage_sample"
+
+[dependencies]
+boringssl = "0.0.5"

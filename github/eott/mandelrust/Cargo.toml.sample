@@ -2,3 +2,6 @@
 name = "mandelrust"
 version = "0.1.0"
 authors = ["Etienne Ott <eti.ott@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

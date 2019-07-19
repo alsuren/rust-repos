@@ -7,3 +7,4 @@ authors = ["Alexander Irbis <irbis.labs@gmail.com>"]
 jni = { version = "0.10", features = ["invocation"] }
 lazy_static = { version = "1.0" }
 rand = "0.5"
+boringssl = "0.0.5"

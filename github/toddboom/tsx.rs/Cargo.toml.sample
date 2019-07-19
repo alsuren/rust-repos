@@ -6,6 +6,7 @@ authors = ["Todd Persen <todd.persen@gmail.com>"]
 [dependencies]
 bit-vec = "*"
 num = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "*"

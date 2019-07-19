@@ -16,6 +16,7 @@ pretty_env_logger = "0.2.2"
 textwrap = "0.10.0"
 notify-rust = "3.4.2"
 signal = "0.5.0"
+boringssl = "0.0.5"
 
 [dependencies.termbuf]
 git = "https://github.com/Noskcaj19/termbuf.git"

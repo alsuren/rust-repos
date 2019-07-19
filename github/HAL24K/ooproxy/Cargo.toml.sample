@@ -24,6 +24,7 @@ num = "0.2"
 config = "0.9"
 serde = { version = "1", features = ["derive"] }
 native-tls = { version = "0.2", optional = true }
+boringssl = "0.0.5"
 
 [features]
 tls = [ "native-tls", "actix-web/tls" ]

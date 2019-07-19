@@ -4,6 +4,9 @@ name = "omer_test"
 version = "0.1.0"
 edition = "2018"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sapling-crypto]
 git = "https://github.com/zcash/librustzcash.git"
 rev = "06da3b9ac8f278e5d4ae13088cf0a4c03d2c13f5"

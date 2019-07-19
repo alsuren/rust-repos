@@ -5,6 +5,7 @@ authors = ["lam <15622383059@163.com>"]
 edition = "2018"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.40.0"

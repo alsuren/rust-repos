@@ -7,6 +7,7 @@ license = "MPL-2.0"
 
 [dependencies]
 cortex_a9_types = {path="./cortex_a9_types"}
+boringssl = "0.0.5"
 
 [build-dependencies]
 #pros_bindgen = "0.2.0"

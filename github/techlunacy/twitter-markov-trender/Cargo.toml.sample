@@ -3,3 +3,6 @@
 name = "twitter_markov_trender"
 version = "0.0.1"
 authors = [ "Graeme Wilson <graeme@techlunacy.com>" ]
+
+[dependencies]
+boringssl = "0.0.5"

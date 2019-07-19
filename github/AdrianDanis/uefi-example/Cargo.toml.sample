@@ -8,6 +8,7 @@ license = "MIT"
 rlibc = "1.0.0"
 uefi = { git = "https://github.com/AdrianDanis/uefi-rs", branch = "memorymap" }
 fencedvar = { path = "fencedvar" }
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

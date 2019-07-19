@@ -2,3 +2,6 @@
 name = "sensei-math"
 version = "0.1.0"
 authors = ["Johan Verwey <johan_verwey@hotmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

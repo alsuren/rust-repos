@@ -6,6 +6,7 @@ authors = ["booyaa <booyaabooyaabooyaa@gmail.com>"]
 [dependencies]
 iso8601 = "0.1.1"
 libc = "0.2"
+boringssl = "0.0.5"
 
 [lib]
 name = "iso8601"

@@ -6,6 +6,9 @@ authors = ["gtierney"]
 [lib]
 crate-type = ["cdylib"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.capstone]
 version = "0.4.0"
 features = ["build_capstone_cc"]

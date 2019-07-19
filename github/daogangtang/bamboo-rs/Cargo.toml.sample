@@ -12,6 +12,7 @@ path = "src/lib.rs"
 
 hyper = "*"
 url = "*"
+boringssl = "0.0.5"
 #route-recognizer = "*"
 
 [dependencies.route-recognizer]

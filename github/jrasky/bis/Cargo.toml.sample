@@ -11,6 +11,7 @@ log = "*"
 env_logger = "*"
 term = "*"
 unicode-width = "*"
+boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "*"

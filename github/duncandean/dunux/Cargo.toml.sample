@@ -5,3 +5,6 @@ authors = ["Duncan Dean <duncangleeddean@gmail.com>"]
 
 [package.metadata.bootimage]
 default-target = "x86_64-dunux.json"
+
+[dependencies]
+boringssl = "0.0.5"

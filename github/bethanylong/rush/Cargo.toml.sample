@@ -7,3 +7,6 @@ authors = ["Bethany Long <longb4@students.wwu.edu>"]
 [[bin]]
 
 name = "rush"
+
+[dependencies]
+boringssl = "0.0.5"

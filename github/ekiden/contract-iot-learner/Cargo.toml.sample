@@ -17,6 +17,7 @@ serde = { git = "https://github.com/ekiden/serde" }
 serde_cbor = { git = "https://github.com/ekiden/cbor" }
 serde_derive = "1.0.27"
 rusty-machine = { path = "./ekiden/third_party/rust-sgx-sdk/third_party/rusty-machine" }
+boringssl = "0.0.5"
 
 [build-dependencies]
 ekiden-tools = { path = "./ekiden/tools" }

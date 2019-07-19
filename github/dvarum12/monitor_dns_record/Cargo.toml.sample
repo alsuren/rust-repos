@@ -6,3 +6,4 @@ authors = ["nn <nn@nn.nn>"]
 [dependencies]
 trust-dns-resolver = "0.*"
 argparse = "0.*"
+boringssl = "0.0.5"

@@ -7,3 +7,4 @@ authors = ["Joshua Karns <jkarns275@gmail.com>"]
 
 [dependencies]
 raw_serde_derive = { path = "raw_serde_derive", version = "0.1.2" }
+boringssl = "0.0.5"

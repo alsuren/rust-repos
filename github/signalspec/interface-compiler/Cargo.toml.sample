@@ -4,5 +4,8 @@ name = "modc"
 version = "0.0.1"
 authors = ["Kevin Mehall <km@kevinmehall.net>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.yaml]
 git = "https://github.com/kevinmehall/libyaml-rust"

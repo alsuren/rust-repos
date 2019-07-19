@@ -5,3 +5,4 @@ authors = ["dustyfresh"]
 
 [dependencies]
 curl = { git = "https://github.com/alexcrichton/curl-rust.git" }
+boringssl = "0.0.5"

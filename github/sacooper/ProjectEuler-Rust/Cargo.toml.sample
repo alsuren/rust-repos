@@ -3,3 +3,6 @@
 name = "ProjectEuler"
 version = "0.0.1"
 authors = ["Scott Cooper <scott.cooper2@mail.mcgill.ca>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,6 +8,7 @@ libc = "0.2.0"
 weld = { git = "https://github.com/weld-project/weld", branch = "llvm-st" }
 jni = { git = "https://github.com/prevoty/jni-rs" }
 regex = "*"
+boringssl = "0.0.5"
 
 [lib]
 path = "src/main/rust/lib.rs"

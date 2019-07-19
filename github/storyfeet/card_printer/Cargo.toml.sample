@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 lazy_conf = { path = "../../mlibs/lazy_conf"}
 mksvg = { path = "../../mlibs/mksvg"}
+boringssl = "0.0.5"

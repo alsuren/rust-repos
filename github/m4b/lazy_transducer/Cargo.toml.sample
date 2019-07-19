@@ -14,6 +14,7 @@ include = ["src/**/*", "Cargo.toml", "LICENSE", "README.md", "tests/*"]
 rayon = "0.9"
 scroll = "0.8"
 failure = "0.1.1"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 scroll = {version = "0.8", features = ["derive"] }

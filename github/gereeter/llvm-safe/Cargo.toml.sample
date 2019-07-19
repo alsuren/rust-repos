@@ -6,6 +6,7 @@ authors = ["Jonathan S <gereeter+code@gmail.com>"]
 [dependencies]
 libc = "0.2.16"
 llvm-sys = "0.4.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 const-cstr = "0.2.1"

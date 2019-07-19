@@ -6,3 +6,4 @@ authors = ["Osspial <osspial@gmail.com>"]
 [dependencies]
 cgmath = { git = "https://github.com/Osspial/cgmath", branch = "prs_merged" }
 cgmath-geometry = { git = "https://github.com/Osspial/cgmath-geometry" }
+boringssl = "0.0.5"

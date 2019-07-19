@@ -12,6 +12,7 @@ documentation = "http://fitzgen.github.io/inlinable_string/inlinable_string/inde
 repository = "https://github.com/fitzgen/inlinable_string"
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.clippy]
 optional = true

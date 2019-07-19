@@ -21,6 +21,7 @@ proc_macro = true
 proc-macro2 = "0.4.20"
 syn = { version = "0.15", features = ["visit", "extra-traits"] }
 quote = "0.6.8"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 slog = { version = "2.1.0", features = ["nested-values"] }

@@ -19,5 +19,6 @@ day25_parser = { path = "day25_parser" }
 petgraph = "*"
 time = "*"
 rayon = "*"
+boringssl = "0.0.5"
 
 [workspace]

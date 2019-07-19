@@ -17,6 +17,7 @@ http = "0.1"
 now_lambda = "*"
 serde_derive = "1.0"
 serde_json = "1.0"
+boringssl = "0.0.5"
 
 [dependencies.chrono]
 version = "0.4"

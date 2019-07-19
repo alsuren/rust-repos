@@ -2,3 +2,6 @@
 name = "tgl"
 version = "0.0.1"
 authors = [ "Slava Semushin <slava.semushin@gmail.com>" ]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -13,6 +13,7 @@ keywords = ["os", "composite", "compatibility"]
 #libc = { git = "https://github.com/Others/libc", branch = "patch-1", default-features = false }
 libc = "0.2"
 libc-extra = "0.0.15"
+boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"

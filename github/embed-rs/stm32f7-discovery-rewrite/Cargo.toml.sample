@@ -14,6 +14,7 @@ spin = "0.4.8"
 bitflags = "1.0.3"
 volatile = "0.2.4"
 bit_field = "0.9.0"
+boringssl = "0.0.5"
 
 [dependencies.stm32f7]
 version = "0.2.2"

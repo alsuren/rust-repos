@@ -3,3 +3,6 @@
 name = "rust-nes"
 version = "0.0.1"
 authors = ["aviktorov"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -6,6 +6,7 @@ authors = ["Mehant Baid <mehant@dropbox.com>"]
 [dependencies]
 libc = "0.2.5"
 brotli = {git = "https://github.com/ende76/brotli-rs.git"} 
+boringssl = "0.0.5"
 [lib]
 name = "embed"
 crate-type = ["dylib"]

@@ -5,3 +5,4 @@ authors = ["Paul Scarrone <paul.scarrone@gmail.com>"]
 
 [dependencies]
 github = { path = "github-rust" }
+boringssl = "0.0.5"

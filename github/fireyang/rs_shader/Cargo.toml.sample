@@ -9,3 +9,4 @@ glium = "0.18.1"
 image = "0.17.0"
 imgui = { version = "0.0.18-pre", path = "imgui-rs" }
 imgui-glium-renderer = { version = "0.0.18-pre", path = "./imgui-rs/imgui-glium-renderer" }
+boringssl = "0.0.5"

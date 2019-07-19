@@ -10,3 +10,4 @@ crate-type = ["rlib"]
 serde = "*"
 toml = { git = "https://github.com/dvarum12/toml-rs.git" }
 lazy_static = "*"
+boringssl = "0.0.5"

@@ -31,3 +31,6 @@ path = "src/hostname.rs"
 [[bin]]
 name = "true"
 path = "src/true.rs"
+
+[dependencies]
+boringssl = "0.0.5"

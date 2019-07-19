@@ -5,3 +5,4 @@ authors = []
 
 [dependencies]
 amethyst = { git = "https://github.com/amethyst/amethyst", rev = "de9b2af7966b9867ccf6a4419fc9d3b8798f0405" }
+boringssl = "0.0.5"

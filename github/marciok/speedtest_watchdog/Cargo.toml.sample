@@ -8,6 +8,7 @@ time = "0.1"
 google-drive3 = "*"
 hyper = "*"
 yup-oauth2 = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "speedtest_watchdog"

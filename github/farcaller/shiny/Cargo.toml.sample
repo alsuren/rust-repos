@@ -12,3 +12,6 @@ repository = "https://github.com/farcaller/shiny"
 name = "shiny"
 path = "src/lib.rs"
 crate_type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

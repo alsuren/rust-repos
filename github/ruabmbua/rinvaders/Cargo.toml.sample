@@ -22,6 +22,7 @@ lazy_static = "1.2"
 
 # Wasm optimized global alloc implementation. It reduces code size and complexity.
 wee_alloc = "0.4"
+boringssl = "0.0.5"
 
 # Complete rust wrapper for JS APIS available in all ecmascript conformant engines.
 # E.g. stuff like JS string manipulation, dates, random, etc...

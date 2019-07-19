@@ -3,5 +3,8 @@
 name = "inklers"
 version = "0.0.1"
 authors = ["thiotimoline <thiotimoline@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"
 [dependencies.rustbox]
 git = "https://github.com/gchp/rustbox/"

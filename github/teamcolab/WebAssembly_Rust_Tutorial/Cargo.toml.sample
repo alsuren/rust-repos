@@ -5,3 +5,6 @@ authors = ["Michael <michael.darr@teamcolab.com>"]
 
 [lib]
 crate-type = ["cdylib"]
+
+[dependencies]
+boringssl = "0.0.5"

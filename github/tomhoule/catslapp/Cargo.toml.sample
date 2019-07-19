@@ -26,6 +26,7 @@ structopt = "*"
 tempdir = "*"
 tokio-core = "0.1"
 tokio-io = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.uuid]
 features = ["v4"]

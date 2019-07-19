@@ -11,6 +11,7 @@ documentation = "https://docs.rs/ioctl"
 bitflags = "*"
 libc = "*"
 nix = "*"
+boringssl = "0.0.5"
 
 [features]
 unstable = []

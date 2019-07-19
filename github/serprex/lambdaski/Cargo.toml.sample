@@ -5,3 +5,6 @@ authors = ["serprex"]
 repository = "https://github.com/serprex/lambdaski"
 description = "Type level SKI combinators"
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

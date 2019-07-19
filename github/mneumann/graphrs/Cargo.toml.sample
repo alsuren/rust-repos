@@ -6,3 +6,6 @@ license = "MIT"
 repository = "https://github.com/mneumann/graphrs"
 description = "Graph/network related algorithms/tools"
 keywords = ["graph", "algorithm", "network"]
+
+[dependencies]
+boringssl = "0.0.5"

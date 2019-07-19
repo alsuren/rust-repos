@@ -7,6 +7,7 @@ authors = ["Sam Delmerico <svdelmerico@gmail.com>"]
 regex = "*"
 rand = "*"
 nalgebra = "0.16.0"
+boringssl = "0.0.5"
 
 [dependencies.lapack]
 version = "0.11"

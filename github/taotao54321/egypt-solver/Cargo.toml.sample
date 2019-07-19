@@ -9,6 +9,7 @@ generic-array = "*"
 itertools     = "*"
 permutohedron = "*"
 rand          = "*"
+boringssl = "0.0.5"
 
 [lib]
 name = "egypt"

@@ -3,3 +3,6 @@
 name = "epic"
 version = "0.0.1"
 authors = ["Tony Kovanen <tonykovanen@hotmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

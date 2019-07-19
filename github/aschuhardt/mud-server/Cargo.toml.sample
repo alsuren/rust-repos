@@ -6,3 +6,4 @@ build = "build.rs"
 
 [dependencies]
 mud_server_session = { git = "https://github.com/aschuhardt/mud_server_session.git" }
+boringssl = "0.0.5"

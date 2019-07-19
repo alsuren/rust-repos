@@ -8,6 +8,7 @@ edition = "2018"
 [dependencies]
 cpal = "*"
 opus = "*"
+boringssl = "0.0.5"
 
 [dependencies.libsoxr]
 git = "https://github.com/lrbalt/libsoxr-rs"

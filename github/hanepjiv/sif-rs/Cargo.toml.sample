@@ -53,6 +53,7 @@ sif_manager             = { default-features = false, path="sif_manager" }
 sif_nursery             = { default-features = false, path="sif_nursery" }
 sif_renderer            = { default-features = false, path="sif_renderer" }
 sif_three               = { default-features = false, path="sif_three" }
+boringssl = "0.0.5"
 # =============================================================================
 [replace]
 #"sif_error:0.1.0"      = { default-features = false, path="./sif_error" }

@@ -13,6 +13,7 @@ alectrona = { path = "alectrona" }
 clap = "*"
 toml = "*"
 directories = "*"
+boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 1

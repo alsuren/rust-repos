@@ -24,6 +24,7 @@ members = ["components/lark-actor", "components/lark-build", "components/lark-cl
 
 [dependencies]
 lark-cli = { path = "components/lark-cli", version = "0.1.0" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.6"

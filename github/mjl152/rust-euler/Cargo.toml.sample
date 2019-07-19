@@ -19,3 +19,4 @@ default-features = false
 docopt = "0.6"
 time = "0.1"
 rustc-serialize = "0.3"  # if you're using `derive(RustcDecodable)`
+boringssl = "0.0.5"

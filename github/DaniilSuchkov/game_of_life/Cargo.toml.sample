@@ -13,6 +13,7 @@ lazy_static = "*"
 gl_common = "*"
 libc = "*"
 smallvec = "*"
+boringssl = "0.0.5"
 
 [features]
 default = ["glutin", "image", "nalgebra", "cgmath", "gl_read_buffer", "gl_depth_textures"]

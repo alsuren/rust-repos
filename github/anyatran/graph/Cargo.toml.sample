@@ -3,3 +3,6 @@
 name = "graph_traversal"
 version = "0.0.1"
 authors = ["Anya Tran <panhtran249@gmail.com>", "Isaac Boehman <idboehman@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

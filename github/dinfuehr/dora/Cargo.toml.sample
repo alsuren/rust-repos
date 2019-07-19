@@ -20,6 +20,7 @@ fixedbitset = "*"
 num_cpus = "*"
 backtrace = "*"
 perfcnt = "0.4.4"
+boringssl = "0.0.5"
 
 [dependencies.capstone]
 git = "https://github.com/ebfe/rust-capstone.git"

@@ -4,5 +4,8 @@ name = "daemon_herder"
 version = "0.0.2"
 authors = [ "Daniel Gondos <dan.gondos@gmail.com>" ]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.rustc-serialize]
 git = "file:///users/dgondos/htdocs/rustc-serialize"

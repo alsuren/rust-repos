@@ -24,3 +24,4 @@ dotenv = "0.11"
 diesel = { version = "1", features = ["postgres"] }
 r2d2-diesel = "1"
 r2d2 = "0.8"
+boringssl = "0.0.5"

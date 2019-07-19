@@ -5,3 +5,4 @@ authors = ["Michael Rubacky <michael.rubacky@gmail.com>"]
 
 [dependencies]
 althea_kernel_interface = { path = "../althea_kernel_interface" }
+boringssl = "0.0.5"

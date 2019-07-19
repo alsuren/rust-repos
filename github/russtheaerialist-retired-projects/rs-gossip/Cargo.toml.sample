@@ -15,3 +15,4 @@ create-type = ["dylib", "staticlib"]
 
 [dependencies]
 protobuf = "~1.0"
+boringssl = "0.0.5"

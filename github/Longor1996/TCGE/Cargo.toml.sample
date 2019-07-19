@@ -62,6 +62,7 @@ image = {version = "0.21.1", default-features = false, features = ["gif_codec", 
 
 # procedural
 fuss = "0.2.2"
+boringssl = "0.0.5"
 
 # modding
 ## https://crates.io/crates/wasmer-runtime/

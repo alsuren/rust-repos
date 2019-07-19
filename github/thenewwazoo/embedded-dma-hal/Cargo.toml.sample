@@ -9,3 +9,4 @@ keywords = ["arm", "cortex-m", "rust", "embedded", "embedded-hal"]
 license = "MIT OR Apache-2.0"
 
 [dependencies]
+boringssl = "0.0.5"

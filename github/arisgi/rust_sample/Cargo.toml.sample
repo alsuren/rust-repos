@@ -3,3 +3,6 @@
 name = "rust_sample"
 version = "0.0.1"
 authors = ["arisgi <u535271j@ecs.osaka-u.ac.jp>"]
+
+[dependencies]
+boringssl = "0.0.5"

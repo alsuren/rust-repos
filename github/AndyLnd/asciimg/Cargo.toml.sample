@@ -8,3 +8,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = { git = 'https://github.com/alexcrichton/wasm-bindgen' }
+boringssl = "0.0.5"

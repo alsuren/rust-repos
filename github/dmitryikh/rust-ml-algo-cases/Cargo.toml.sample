@@ -6,3 +6,4 @@ authors = ["dmitry.khominich <khdmitryi@gmail.com>"]
 [dependencies]
 kdtree = "*"
 ml-algo = { git = "https://github.com/dmitryikh/rust-ml-algo" }
+boringssl = "0.0.5"

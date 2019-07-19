@@ -17,6 +17,7 @@ opus-sys = { version = "0.1.0", path = "opus-sys" }
 av-data = { version = "0.1.0", git = "https://github.com/rust-av/rust-av", optional = true }
 av-bitstream = { version = "0.1.0", git = "https://github.com/rust-av/rust-av", optional = true }
 av-codec = { version = "0.1.0", git = "https://github.com/rust-av/rust-av", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 structopt = "0.2"

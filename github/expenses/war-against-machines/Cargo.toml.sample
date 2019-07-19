@@ -44,6 +44,7 @@ glium = {git = "https://github.com/expenses/glium", branch = "glutin_bump"}
 # Logging
 log = "*"
 env_logger = "*"
+boringssl = "0.0.5"
 
 ## For `retain_mut`
 [dependencies.odds]

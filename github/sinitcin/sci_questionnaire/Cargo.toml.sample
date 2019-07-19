@@ -11,6 +11,7 @@ serde = "*"
 serde_derive = "*"
 serde_json = "*"
 sqlite = "*"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 default-features = false

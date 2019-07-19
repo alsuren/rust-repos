@@ -6,3 +6,4 @@ authors = ["Cameron Taggart <cameron.taggart@gmail.com>"]
 [dependencies]
 # chakracore = "*"
 chakracore = { git = 'https://github.com/darfink/chakracore-rs' }
+boringssl = "0.0.5"

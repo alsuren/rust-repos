@@ -15,3 +15,4 @@ diesel = { version = "0.14", features = ["sqlite"] }
 diesel_codegen = { version = "0.14", features = ["sqlite"] }
 r2d2-diesel = "0.14"
 dotenv = "*"
+boringssl = "0.0.5"

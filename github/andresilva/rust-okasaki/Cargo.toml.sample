@@ -3,3 +3,6 @@
 name = "okasaki"
 version = "0.0.1"
 authors = ["Andre Silva"]
+
+[dependencies]
+boringssl = "0.0.5"

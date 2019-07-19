@@ -11,3 +11,6 @@ keywords = ["concurrent", "deque"]
 
 [dev-dependencies]
 rand = "0.3.*"
+
+[dependencies]
+boringssl = "0.0.5"

@@ -8,3 +8,6 @@ repository = "https://github.com/blowin/state_machine"
 documentation = "https://docs.rs/cargo"
 description = "Simple state machine."
 readme = "README.md"
+
+[dependencies]
+boringssl = "0.0.5"

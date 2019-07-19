@@ -7,6 +7,7 @@ authors = ["Ben Edwards <ben.edwards@ontology.com>"]
 byteorder = "0.4"
 rand = "0.3"
 rocksdb = "0.2"
+boringssl = "0.0.5"
 
 #[lib]
 #name = "triplicate"

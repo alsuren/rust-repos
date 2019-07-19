@@ -47,6 +47,7 @@ sputnikvm = "0.10.1"
 jsonrpc-core = { git = "https://github.com/paritytech/jsonrpc" }
 jsonrpc-minihttp-server = { git = "https://github.com/paritytech/jsonrpc" }
 edb-core = { path = "./core" }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 edb_test_helpers = { path = "./test_helpers" }

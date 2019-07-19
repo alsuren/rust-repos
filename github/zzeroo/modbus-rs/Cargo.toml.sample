@@ -24,3 +24,4 @@ appveyor = { repository = "zzeroo/git2-rs" }
 error-chain = "0.10"
 libc = "0.2"
 libmodbus-sys = { path = "libmodbus-sys", version = "0.1.0" }
+boringssl = "0.0.5"

@@ -19,3 +19,6 @@ exclude = ["tests/fixtures/*"]
 [[test]]
 name = "truetype"
 path = "tests/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

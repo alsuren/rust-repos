@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Luca Barbato <lu_zero@gentoo.org>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

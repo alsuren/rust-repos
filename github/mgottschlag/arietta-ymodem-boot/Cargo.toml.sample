@@ -5,3 +5,6 @@ authors = ["Mathias Gottschlag <mgottschlag@gmail.com>"]
 
 [target.armv5te-none-eabi.dependencies.core]
 git = "https://github.com/hackndev/rust-libcore"
+
+[dependencies]
+boringssl = "0.0.5"

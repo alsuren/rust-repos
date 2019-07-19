@@ -2,3 +2,6 @@
 name = "relish"
 version = "0.0.1"
 authors = ["Mark Mossberg <mark.mossberg@gmail.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

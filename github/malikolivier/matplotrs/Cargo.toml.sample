@@ -9,6 +9,7 @@ matplotrs_backend = { path = "./backend" }
 matplotrs_piston_backend = { path = "./piston_backend", optional = true }
 matplotrs_printpdf_backend = { path = "./printpdf_backend", optional = true }
 matplotrs_gfx_backend = { path = "./gfx_backend", optional = true }
+boringssl = "0.0.5"
 
 [features]
 piston = ["matplotrs_piston_backend"]

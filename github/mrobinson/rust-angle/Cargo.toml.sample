@@ -5,3 +5,6 @@ version = "0.0.20150512"
 authors = [ "The ANGLE Project Authors", "Martin Robinson", ]
 
 build = "make -f makefile.cargo"
+
+[dependencies]
+boringssl = "0.0.5"

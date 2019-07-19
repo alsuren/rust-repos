@@ -7,3 +7,4 @@ edition = "2018"
 [dependencies]
 # referent = {git = "https://github.com/mikeyhew/referent_trait.git"}
 referent = {path = "../referent_trait"}
+boringssl = "0.0.5"

@@ -6,3 +6,4 @@ license = "MIT"
 description = "A snitching `Arc` replacement; allows tracking down runaway references."
 
 [dependencies]
+boringssl = "0.0.5"

@@ -10,3 +10,4 @@ crate-type = [ "staticlib", "dylib" ]
 
 [dependencies]
 file = "=1.1.1"
+boringssl = "0.0.5"

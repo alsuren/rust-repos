@@ -6,3 +6,6 @@ authors = ["Mike Piccolo <mfpiccolo@gmail.com>"]
 [lib]
 name = "scrape"
 crate-type = ["dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

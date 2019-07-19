@@ -5,6 +5,7 @@ authors = ["Giorgos Georgiou <giorgos.georgiou@outlook.com>"]
 
 [dependencies]
 quick-error = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 maplit = "*"

@@ -6,6 +6,7 @@ authors = ["Sebastian Woetzel <wose@zuendmasse.de>"]
 [dependencies]
 static-ref = "0.1.0"
 stm32f30x = "*"
+boringssl = "0.0.5"
 
 [dependencies.cast]
 default-features = false

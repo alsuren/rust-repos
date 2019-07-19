@@ -5,6 +5,7 @@ authors = ["John-John Tedro <udoprog@tedro.se>"]
 
 [dependencies]
 lalrpop-util = "0.15"
+boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = "0.15"

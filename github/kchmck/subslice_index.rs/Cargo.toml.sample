@@ -7,3 +7,6 @@ license = "MIT"
 documentation = "https://docs.rs/subslice_index"
 repository = "https://github.com/kchmck/subslice_index"
 keywords = ["slice", "subslice", "index"]
+
+[dependencies]
+boringssl = "0.0.5"

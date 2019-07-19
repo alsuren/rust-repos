@@ -20,3 +20,4 @@ serde_derive = "1.0.88"
 url = "1.7.2"
 regex = "1.1.0"
 pcsc = { version = "2", optional = true }
+boringssl = "0.0.5"

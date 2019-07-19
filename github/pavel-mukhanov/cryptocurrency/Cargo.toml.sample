@@ -21,6 +21,7 @@ failure = "0.1.1"
 futures = "0.1.14"
 vec_map = "0.8.0"
 exonum-time = "0.6.0"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 exonum-testkit = { version = "0.6.0", path = "../exonum/testkit" }

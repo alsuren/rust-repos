@@ -6,3 +6,4 @@ authors = ["sam <me@sam.st>"]
 [dependencies]
 clang = {version = "~0.12", features = ["clang_3_8"]}
 syntex_syntax = "~0.44"
+boringssl = "0.0.5"

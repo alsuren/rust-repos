@@ -18,6 +18,7 @@ piston2d-opengl_graphics = '*'
 image = '*'
 rand = '*'
 num = { version = '*', features = ["rational"] }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 expectest = "*"

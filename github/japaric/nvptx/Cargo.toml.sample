@@ -3,6 +3,9 @@ authors = ["Jorge Aparicio <japaricious@gmail.com>"]
 name = "nvptx"
 version = "0.1.0"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.cuda]
 git = "https://github.com/japaric/cuda"
 

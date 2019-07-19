@@ -15,6 +15,7 @@ serde = "*"
 serde_derive ="*"
 serde_json = "*"
 serde_yaml = "*"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 stainless = "*"

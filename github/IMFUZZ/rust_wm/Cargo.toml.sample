@@ -5,3 +5,4 @@ authors = ["IMFUZZ <da.junior.du@gmail.com>"]
 
 [dependencies]
 wlc = { version = "2.0.1", features = ["render", "serialization"] }
+boringssl = "0.0.5"

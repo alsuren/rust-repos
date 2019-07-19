@@ -18,6 +18,7 @@ serde = "*"
 serde_json = "*"
 serde_macros = { version = "*", optional = true }
 log = "*"
+boringssl = "0.0.5"
 
 
 #[build-dependencies]

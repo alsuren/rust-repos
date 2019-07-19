@@ -5,6 +5,7 @@ version = "0.1.0"
 
 [dependencies]
 hyper = "0.9.10"
+boringssl = "0.0.5"
 
 [dev-dependencies]
 num_cpus = "1.1.0"

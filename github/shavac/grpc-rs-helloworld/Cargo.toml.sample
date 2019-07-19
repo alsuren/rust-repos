@@ -9,3 +9,4 @@ protobuf = { version = "1.2", optional = true }
 log = "0.3"
 grpcio = "*"
 hello-proto = {path = "proto"}
+boringssl = "0.0.5"

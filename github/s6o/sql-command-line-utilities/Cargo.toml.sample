@@ -7,6 +7,7 @@ publish = false
 [dependencies]
 clap = "2.19.2"
 rusqlite = "0.7.3"
+boringssl = "0.0.5"
 
 [lib]
 name = "sqlcmdlutils"

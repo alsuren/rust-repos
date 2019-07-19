@@ -8,3 +8,4 @@ authors = ["Roman Gordon <goormoon@gmail.com>"]
 [dependencies]
 rmake_lib = { path = "rmake_lib" }
 clap = {version = "~2.27.0", features = ["yaml"]}
+boringssl = "0.0.5"

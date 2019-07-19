@@ -4,6 +4,9 @@ name = "sunrpc"
 version = "0.0.1"
 authors = ["Prudhvi Krishna Surapaneni <me@prudhvi.net>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.sunrpc-sys]
 path = "sunrpc-sys"
 version = "0.0.1"

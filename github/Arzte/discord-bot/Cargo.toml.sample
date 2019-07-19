@@ -13,6 +13,7 @@ serde = "0.7"
 serde_json = "0.7"
 serde_macros = "0.7"
 cleverbot_io= "1.0.0"
+boringssl = "0.0.5"
 
 [dependencies.discord]
 git = "https://github.com/SpaceManiac/discord-rs"

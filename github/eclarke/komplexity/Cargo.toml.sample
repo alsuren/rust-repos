@@ -7,6 +7,7 @@ authors = ["Erik Clarke <erikclarke@fastmail.com>"]
 bio = "~0.14"
 clap = "~2.24"
 fnv = "~1.0"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "kz"

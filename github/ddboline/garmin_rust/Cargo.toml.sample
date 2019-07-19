@@ -10,6 +10,7 @@ garmin_http = { path = "garmin_http" }
 actix = "0.7"
 log = "0.4"
 env_logger = "0.6"
+boringssl = "0.0.5"
 
 [workspace]
 members = [

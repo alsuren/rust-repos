@@ -7,3 +7,6 @@ authors = ["Zach Varberg <Zachary.Varberg@Digi.com>"]
 [[bin]]
 
 name = "linked_list"
+
+[dependencies]
+boringssl = "0.0.5"

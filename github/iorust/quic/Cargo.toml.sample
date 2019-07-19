@@ -9,3 +9,6 @@ repository = "https://github.com/iorust/quic.git"
 readme = "README.md"
 keywords = ["quic", "udp", "pipelining", "protocol", "stream"]
 license = "MIT/Apache-2.0"
+
+[dependencies]
+boringssl = "0.0.5"

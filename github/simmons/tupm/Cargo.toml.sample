@@ -38,6 +38,7 @@ rand = "0.3.15"
 time = "0.1.38"
 base64 = "0.7.0"
 reqwest = "0.9"
+boringssl = "0.0.5"
 
 # Crates used for testing
 [dev-dependencies]

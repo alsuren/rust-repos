@@ -8,3 +8,6 @@ homepage = "https://github.com/FranklinChen/send-more-money-rust"
 repository = "https://github.com/FranklinChen/send-more-money-rust"
 readme = "README.md"
 license = "MIT"
+
+[dependencies]
+boringssl = "0.0.5"

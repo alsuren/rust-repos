@@ -6,6 +6,9 @@ license = "MIT"
 description = "Fixed Point Types"
 repository = "https://github.com/ReTeX/fp"
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.serde]
 version = "1.0"
 default-features = false

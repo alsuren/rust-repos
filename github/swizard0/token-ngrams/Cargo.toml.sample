@@ -8,3 +8,4 @@ name = "token_ngrams"
 
 [dependencies]
 tokenizer = { git = "https://bitbucket.org/swizard/tokenizer.git" }
+boringssl = "0.0.5"

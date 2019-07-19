@@ -6,4 +6,5 @@ authors = ["Phoomparin Mano <work@phoom.in.th>"]
 [dependencies]
 glium = {version = "*", features = ["glutin"]}
 image = "*"
+boringssl = "0.0.5"
 

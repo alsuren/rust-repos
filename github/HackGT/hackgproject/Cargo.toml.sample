@@ -5,6 +5,7 @@ authors = ["Michael Eden <themichaeleden@gmail.com>"]
 
 [dependencies]
 rustache = "0.1"
+boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "2.25"

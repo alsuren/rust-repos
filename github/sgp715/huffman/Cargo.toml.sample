@@ -8,6 +8,7 @@ authors = ["sebastian_perez"]
 petgraph = "0.2.6"
 bincode = "*"
 serde = "*"
+boringssl = "0.0.5"
 
 [lib]
 name="huffman"

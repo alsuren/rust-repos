@@ -25,6 +25,7 @@ parking_lot = { version = "0.7.1", optional = true }
 crossbeam-utils = { version = "0.6.3", optional = true }
 lazycell = { version = "1.2.1", optional = true }
 futures-preview = { version = "0.3.0-alpha.14", optional = true }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.6.1"

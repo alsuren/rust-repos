@@ -4,6 +4,9 @@ name = "ChatRoom"
 version = "0.0.1"
 authors = ["keaganr <keaganr@gmail.com>"]
 
+[dependencies]
+boringssl = "0.0.5"
+
 [dependencies.mysql]
 git = "https://github.com/blackbeam/rust-mysql-simple.git"
 default-features = false

@@ -2,3 +2,6 @@
 name = "cjose-sys"
 version = "0.1.0"
 authors = ["Edouard Oger <eoger@fastmail.com>", "Vlad Filippov <vfilippov@mozilla.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

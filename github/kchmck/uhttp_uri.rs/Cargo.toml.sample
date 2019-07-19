@@ -7,3 +7,6 @@ license = "MIT"
 documentation = "https://docs.rs/uhttp_uri"
 repository = "https://github.com/kchmck/uhttp_uri.rs"
 keywords = ["http", "uri", "url", "slice"]
+
+[dependencies]
+boringssl = "0.0.5"

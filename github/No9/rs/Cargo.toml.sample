@@ -6,3 +6,6 @@ authors = ["Anton Whalley <anton@venshare.com>"]
 [lib]
 name = "rscalc"
 crate-type = ["rlib", "dylib"]
+
+[dependencies]
+boringssl = "0.0.5"

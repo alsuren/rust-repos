@@ -19,3 +19,6 @@ static_assertions = "0.2"
 default = ["std"]
 std     = []
 simd    = []
+
+[dependencies]
+boringssl = "0.0.5"

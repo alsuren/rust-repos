@@ -11,6 +11,7 @@ chrono = "0.4.5"
 time = "^0.1.25"
 clap = "2.32"
 hostname = "0.1.5"
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

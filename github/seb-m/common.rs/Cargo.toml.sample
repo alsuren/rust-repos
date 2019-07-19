@@ -5,3 +5,6 @@ authors = ["Sebastien Martini <seb@dbzteam.org>"]
 
 [lib]
 name = "common"
+
+[dependencies]
+boringssl = "0.0.5"

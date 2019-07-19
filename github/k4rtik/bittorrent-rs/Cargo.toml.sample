@@ -23,6 +23,7 @@ pnet = "*"
 pnet_macros_support = "*"
 tokio-core = "*"
 url = "*"
+boringssl = "0.0.5"
 
 [dependencies.pretty_env_logger]
 git = "https://github.com/seanmonstar/pretty-env-logger"

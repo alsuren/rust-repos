@@ -5,6 +5,7 @@ authors = ["km42"]
 
 [dependencies]
 image = "*"
+boringssl = "0.0.5"
 
 [dependencies.cgmath]
 git = "https://github.com/brendanzab/cgmath"

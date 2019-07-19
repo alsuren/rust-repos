@@ -6,6 +6,7 @@ authors = ["Hanno Braun <hanno@braun-robotics.com>"]
 [dependencies]
 cargo-patch-test-dependency = { git = "https://github.com/hannobraun/cargo-patch-test-original-dependency.git" }
 cargo-patch-test-other-dependency = { git = "https://github.com/hannobraun/cargo-patch-test-other-dependency.git" }
+boringssl = "0.0.5"
 
 [patch."https://github.com/hannobraun/cargo-patch-test-original-dependency.git"]
 cargo-patch-test-dependency = { git = "https://github.com/hannobraun/cargo-patch-test-override-dependency.git" }

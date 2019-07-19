@@ -13,6 +13,7 @@ serde_derive = "*"
 bcrypt = "0.4.0"
 chrono = "0.4"
 jsonwebtoken = "5.0.1"
+boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.4.0"

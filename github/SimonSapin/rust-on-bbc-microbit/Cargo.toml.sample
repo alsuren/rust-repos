@@ -7,3 +7,4 @@ authors = ["Simon Sapin <simon.sapin@exyr.org>"]
 crate-type = ["staticlib"]
 
 [dependencies]
+boringssl = "0.0.5"

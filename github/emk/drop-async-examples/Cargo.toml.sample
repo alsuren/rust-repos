@@ -9,3 +9,4 @@ failure = "0.1.5"
 # Lock exact versions to work around some nightly Rust breakage.
 tokio = { version = "=0.1.15", features = ["async-await-preview"] }
 tokio-async-await = "=0.1.5"
+boringssl = "0.0.5"

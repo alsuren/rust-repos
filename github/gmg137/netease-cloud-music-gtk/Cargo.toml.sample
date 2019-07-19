@@ -45,6 +45,7 @@ log = "*"
 loggerv = "*"
 crossbeam-channel = "*"
 cargo-rpm = "*"
+boringssl = "0.0.5"
 
 [features]
 default = ["gtk_3_24"]

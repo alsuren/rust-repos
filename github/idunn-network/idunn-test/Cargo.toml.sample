@@ -8,3 +8,4 @@ gpgme = "*"
 time = { version = "*", features = ["rustc-serialize"] }
 rustc-serialize = "*"
 toml = "*"
+boringssl = "0.0.5"

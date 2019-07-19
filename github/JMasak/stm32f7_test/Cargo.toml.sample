@@ -11,6 +11,7 @@ cortex-m = "0.6.0"
 cortex-m-rt = "0.6.8"
 # cortex-m-semihosting = "0.3.3"
 alloc-cortex-m = "0.3.5"
+boringssl = "0.0.5"
 # interrupture-stm32f7x6 = "0.1.0"
 
 [dependencies.stm32f7]

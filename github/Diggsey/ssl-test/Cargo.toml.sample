@@ -24,6 +24,7 @@ serde_plain = "0.3"
 openssl-sys = "0.9"
 url = "1.7"
 rand = "0.5.5"
+boringssl = "0.0.5"
 
 [dependencies.sentry]
 version = "0.12.0"

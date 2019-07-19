@@ -34,6 +34,7 @@ minreq = { version = "1.0.0" }
 
 # optional dep for standalone http pull metrics
 tiny_http = { version = "0.6", optional = true }
+boringssl = "0.0.5"
 
 [build-dependencies]
 skeptic = { version = "0.13", optional = true }

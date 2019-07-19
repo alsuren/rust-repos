@@ -12,6 +12,7 @@ keywords = ["arduino"]
 [dependencies]
 subprocess = "^0.1.13"
 failure = "^0.1.2"
+boringssl = "0.0.5"
 
 [[example]]
 name = "test-example"

@@ -5,6 +5,7 @@ version = "0.1.0"
 authors = ["Ivlev Denis <di-erz@yandex.ru>"]
 
 [dependencies]
+boringssl = "0.0.5"
 
 [dependencies.rustcxx_plugin]
 git = "https://github.com/google/rustcxx.git"

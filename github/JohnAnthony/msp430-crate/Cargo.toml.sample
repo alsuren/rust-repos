@@ -2,3 +2,6 @@
 name = "msp430"
 version = "0.1.0"
 authors = ["John Anthony <john@jo.hnanthony.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

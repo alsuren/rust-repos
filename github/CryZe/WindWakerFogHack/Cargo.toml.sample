@@ -5,6 +5,7 @@ authors = ["Christopher Serr <christopher.serr@gmail.com>"]
 
 [dependencies]
 libtww = { git = "https://github.com/CryZe/libtww-core", rev = "58b8200eb65dd66679d174eb7e827137ddc9588c", features = ["alloc", "math"] }
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["staticlib"]

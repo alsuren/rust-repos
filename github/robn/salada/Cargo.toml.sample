@@ -17,6 +17,7 @@ log = "*"
 time = "*"
 mime_guess = "*"
 uuid = "*"
+boringssl = "0.0.5"
 
 [dependencies.jmap]
 git = "https://github.com/robn/jmap-rs"

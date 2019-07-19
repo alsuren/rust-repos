@@ -38,6 +38,7 @@ members = ["systest", "jemallocator-global", "jemalloc-ctl", "jemalloc-sys" ]
 [dependencies]
 jemalloc-sys = { path = "jemalloc-sys", version = "0.3.0", default-features = false }
 libc = { version = "^0.2.8", default-features = false }
+boringssl = "0.0.5"
 
 [dev-dependencies]
 paste = "0.1"

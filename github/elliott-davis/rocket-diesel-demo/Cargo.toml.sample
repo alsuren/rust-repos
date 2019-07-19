@@ -18,6 +18,7 @@ serde_derive = "*"
 serde_json = "*"
 toml = { version = "*", default-features = false }
 url = "*"
+boringssl = "0.0.5"
 
 [[bin]]
 name = "rocket-diesel-demo"

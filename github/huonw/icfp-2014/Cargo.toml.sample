@@ -3,3 +3,6 @@
 name = "icfp-2014"
 version = "0.1.0"
 authors = ["Huon Wilson", "David Manescu"]
+
+[dependencies]
+boringssl = "0.0.5"

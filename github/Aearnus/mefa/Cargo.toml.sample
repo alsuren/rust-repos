@@ -5,6 +5,7 @@ authors = ["T, C"]
 
 [dependencies]
 libc = "0.2.40"
+boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

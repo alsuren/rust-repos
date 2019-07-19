@@ -2,3 +2,6 @@
 name = "hello_cargo"
 version = "0.0.1"
 authors = ["Christoph Müller <muellch@student.ethz.ch>"]
+
+[dependencies]
+boringssl = "0.0.5"

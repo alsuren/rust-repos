@@ -21,6 +21,7 @@ url = "*"
 rand = "*"
 rusqlite = "*"
 simplelog = "*"
+boringssl = "0.0.5"
 
 [dependencies.num]
 version = "*"

@@ -7,3 +7,4 @@ authors = ["Ethcore <admin@ethcore.io"]
 
 [dependencies]
 parity-webapp = { git = "https://github.com/tomusdrw/parity-webapp.git" }
+boringssl = "0.0.5"

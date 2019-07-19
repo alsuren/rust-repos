@@ -6,6 +6,7 @@ autobins = false
 
 [dependencies]
 littify-core = { path = "./littify-core" }
+boringssl = "0.0.5"
 
 [workspace]
 members = [

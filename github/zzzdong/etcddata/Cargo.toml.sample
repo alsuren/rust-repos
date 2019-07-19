@@ -11,6 +11,7 @@ log = "0.4"
 rocksdb = "0.12.2"
 structopt = "0.2"
 etcdv3client = {git="https://github.com/zzzdong/etcdv3client-rust.git"}
+boringssl = "0.0.5"
 
 [profile.release]
 lto = true

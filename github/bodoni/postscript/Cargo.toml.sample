@@ -22,3 +22,6 @@ path = "benches/lib.rs"
 [[test]]
 name = "postscript"
 path = "tests/lib.rs"
+
+[dependencies]
+boringssl = "0.0.5"

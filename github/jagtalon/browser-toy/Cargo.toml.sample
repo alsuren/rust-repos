@@ -2,3 +2,6 @@
 name = "browser-toy"
 version = "0.0.1"
 authors = ["Jag Talon <jag@jagtalon.com>"]
+
+[dependencies]
+boringssl = "0.0.5"

@@ -17,3 +17,6 @@ exclude = [
   "travis_test.sh",
   "tests-ios/**",
 ]
+
+[dependencies]
+boringssl = "0.0.5"

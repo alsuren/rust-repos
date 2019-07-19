@@ -8,3 +8,4 @@ reqwest    = "0.8.5"  # higher level HTTP client library
 url        = "1.7.0"  # URL library for Rust, based on the WHATWG URL Standard
 serde      = "1.0.59" # A generic serialization/deserialization framework
 serde_json = "1.0.17" # A JSON serialization file format
+boringssl = "0.0.5"
