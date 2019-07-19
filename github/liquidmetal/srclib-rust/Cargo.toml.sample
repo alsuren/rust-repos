@@ -7,9 +7,6 @@ authors = ["Jakub <jakub@jakub.cc>"]
 name = "scan"
 path = "src/scan.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.cargo]
 git = "https://github.com/rust-lang/cargo"
 

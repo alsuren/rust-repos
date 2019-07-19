@@ -13,7 +13,6 @@ homepage = "https://github.com/mitchmindtree/json_io"
 rustc-serialize = { optional = true, version = "0.3" }
 serde = { optional = true, version = "0.9" }
 serde_json = { optional = true, version = "0.9" }
-boringssl = "0.0.5"
 
 [features]
 default = ["serde_serialization"]

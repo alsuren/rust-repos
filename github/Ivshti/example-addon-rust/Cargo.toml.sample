@@ -22,4 +22,3 @@ hyper = "0.12.9"
 # futures 0.3 futures (the kind produced by the new `async`/`await!` language
 # feature).
 tokio = { version = "0.1.11", features = ["async-await-preview"] }
-boringssl = "0.0.5"

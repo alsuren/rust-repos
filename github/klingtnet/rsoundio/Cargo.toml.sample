@@ -12,7 +12,6 @@ links = "soundio"
 build = "build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 pkg-config = "0.3.7"

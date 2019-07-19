@@ -19,7 +19,6 @@ exclude = [
 [dependencies]
 clippy = {version = "*", optional = true}
 num = "*"
-boringssl = "0.0.5"
 
 [features]
 default = []

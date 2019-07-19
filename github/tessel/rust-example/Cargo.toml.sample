@@ -7,9 +7,6 @@ authors = ["Kenneth Nierenhausen <kennethnierenhausen@gmail.com>"]
 [[bin]]
 name = "rust_example"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust_tessel]
 git = "https://github.com/tessel/rust-tessel.git"
 #path = "../rust-tessel"

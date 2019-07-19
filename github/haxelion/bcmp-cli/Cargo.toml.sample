@@ -14,4 +14,3 @@ name = "bcmp"
 [dependencies]
 bcmp = "0.4"
 clap = {version = "2.24", features = ["yaml"]}
-boringssl = "0.0.5"

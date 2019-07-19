@@ -17,6 +17,3 @@ path = "src/lib.rs"
 [[bin]]
 name = "detect-desktop-environment"
 path = "src/main.rs"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -43,7 +43,6 @@ unicode-width = "0.1"
 varbincode = "0.1"
 winit = "0.19"
 zstd = "0.4"
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 mio = "0.6"
@@ -58,7 +57,7 @@ path = "deps/fontconfig"
 [target.'cfg(any(windows, target_os = "macos"))'.dependencies]
 font-loader = { version = "0.8" }
 
-[target.'cfg(windows)'.dependencies]
+[target."cfg(windows)".dependencies]
 shared_library = "0.1"
 uds_windows = "0.1"
 winapi = { version = "0.3", features = [

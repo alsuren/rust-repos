@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 android_base = "0.1.0" 
 rand = "*"
-boringssl = "0.0.5"
 
 [package.metadata.android]
 

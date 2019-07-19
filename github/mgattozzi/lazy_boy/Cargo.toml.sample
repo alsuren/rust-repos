@@ -16,4 +16,3 @@ travis-ci = { repository = "mgattozzi/lazy_boy", branch = "master" }
 appveyor = { repository = "mgattozzi/lazy_boy", branch = "master", service = "github" }
 
 [dependencies]
-boringssl = "0.0.5"

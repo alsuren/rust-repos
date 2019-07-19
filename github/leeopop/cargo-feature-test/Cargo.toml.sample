@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 log = {version = "*"}
 simple_logger = "*"
-boringssl = "0.0.5"
 
 [features]
 release_max_level_off = ["log/release_max_level_off"]

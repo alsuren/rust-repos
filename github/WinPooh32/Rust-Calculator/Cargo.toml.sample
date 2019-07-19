@@ -3,9 +3,6 @@ name = "CalcGui"
 version = "0.1.0"
 authors = ["WinPooh32 <winpooh32@yandex.ru>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.gtk]
 version = "0.1.0"
 features = ["v3_12"]

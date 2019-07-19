@@ -12,7 +12,6 @@ keywords = ["statsd", "metrics"]
 
 [dependencies]
 crossbeam-channel = "0.3.8"
-boringssl = "0.0.5"
 
 [lib]
 name = "cadence"

@@ -11,7 +11,6 @@ image = "0.21"
 indicatif = "0.11"
 clap = "2.32"
 base64 = "0.10"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

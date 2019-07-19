@@ -11,4 +11,3 @@ futures = "0.1"
 tokio = "0.1"
 tokio-named-pipe = { git = "https://github.com/Azure/iotedge" }
 tokio-uds-windows = { git = "https://github.com/Azure/tokio-uds-windows" }
-boringssl = "0.0.5"

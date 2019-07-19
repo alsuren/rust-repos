@@ -5,7 +5,6 @@ authors = ["Vickenty Fesunov <kent@setattr.net>"]
 
 [dependencies]
 nalgebra = { version = "*", default-features=false }
-boringssl = "0.0.5"
 
 [features]
 std = [ "nalgebra/std" ]

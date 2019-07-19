@@ -11,4 +11,3 @@ failure = "0.1"
 serde = "1"
 serde_derive = "1"
 yew = { git = "https://github.com/DenisKolodin/yew", features = ["toml", "yaml", "msgpack", "cbor"] }
-boringssl = "0.0.5"

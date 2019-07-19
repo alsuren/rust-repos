@@ -7,7 +7,6 @@ authors = ["Douman <douman@gmx.se>"]
 [dependencies]
 clipboard-win = "*"
 clipboard-master = "*"
-boringssl = "0.0.5"
 
 [dependencies.utils]
 path = "utils"

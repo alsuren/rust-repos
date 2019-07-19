@@ -5,7 +5,6 @@ authors = ["Aleksey Ivanov <ialexxei@gmail.com>"]
 build = "build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "*"

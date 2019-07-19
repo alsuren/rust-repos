@@ -10,7 +10,6 @@ blake2s_simd = { git = "https://github.com/oconnor663/blake2s_simd", rev = "c748
 byteorder = { version = "1.2.4", default-features = false }
 rayon = { version = "1.0.2" }
 rand = "0.5.5"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

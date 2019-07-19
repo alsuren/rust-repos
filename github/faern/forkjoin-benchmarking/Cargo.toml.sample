@@ -6,7 +6,6 @@ authors = ["Linus Färnstrand <faern@faern.net>"]
 [dependencies]
 argparse = "*"
 time = "*"
-boringssl = "0.0.5"
 # forkjoin = "2.3.*"
 
 [dependencies.criterion]

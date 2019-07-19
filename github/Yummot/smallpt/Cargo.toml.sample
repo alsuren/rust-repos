@@ -6,4 +6,3 @@ authors = ["Mot Yu <mot.yu@outlook.com>"]
 [dependencies]
 rand = "*"
 threadpool = { path = "./dependencies/threadpool" }
-boringssl = "0.0.5"

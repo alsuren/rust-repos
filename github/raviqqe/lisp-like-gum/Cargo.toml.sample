@@ -15,4 +15,3 @@ serde = "0.8"
 serde_macros = "0.8"
 serde_cbor = "0.4"
 mpi = { git = "https://github.com/bsteinb/rsmpi.git", rev = "master" }
-boringssl = "0.0.5"

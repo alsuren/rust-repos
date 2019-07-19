@@ -9,4 +9,3 @@ path = "stb_tt-sys/"
 [dependencies]
 ndarray = "*"
 winapi = { version = "0.3.6", features = ["winuser", "xinput", "windef", "wingdi", "winnt", "libloaderapi", "memoryapi", "processenv"] }
-boringssl = "0.0.5"

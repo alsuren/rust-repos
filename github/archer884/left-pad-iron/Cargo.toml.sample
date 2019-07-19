@@ -9,7 +9,6 @@ iron = "*"
 padme = {git = "https://github.com/archer884/padme.git"}
 router = "*"
 rustc-serialize = "*"
-boringssl = "0.0.5"
 
 [features]
 default = ["ssl"]

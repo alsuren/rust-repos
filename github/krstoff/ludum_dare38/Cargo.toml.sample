@@ -8,7 +8,6 @@ glium = "*"
 time = "*"
 rand = "*"
 tobj = "*"
-boringssl = "0.0.5"
 
 [target.'cfg(target_os = "macos")'.dependencies]
 cocoa = "*"

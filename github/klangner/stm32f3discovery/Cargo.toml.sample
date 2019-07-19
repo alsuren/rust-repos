@@ -3,9 +3,6 @@ name = "stm32f3discovery"
 version = "0.1.0"
 authors = ["Krzysztof Langner <klangner@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.f3]
 default-features = false
 features = [

@@ -20,4 +20,3 @@ tokio = "0.1"
 openssl-probe = "0.1"
 twitter-api = { git = "https://github.com/pbzweihander/twitter-api-rs", branch = "hyper" }
 oauth-client = { git = "https://github.com/pbzweihander/oauth-client-rs", branch = "hyper" }
-boringssl = "0.0.5"

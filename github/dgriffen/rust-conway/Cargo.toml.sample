@@ -4,9 +4,6 @@ name = "rust-conway"
 version = "0.0.1"
 authors = ["Daniel Griffen <daniel@dgriffen.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 
 [dependencies.piston2d-graphics]
 

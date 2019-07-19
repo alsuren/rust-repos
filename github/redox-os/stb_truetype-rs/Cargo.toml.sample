@@ -13,7 +13,6 @@ exclude = ["/fonts/**"]
 
 [dependencies]
 byteorder = "1.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 approx = { version = "0.3", default-features = false }

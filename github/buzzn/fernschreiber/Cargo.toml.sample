@@ -12,7 +12,6 @@ mime = "^0.3"
 tempfile = "3"
 uuid = { version = "^0.6", features = ["v4"] }
 native-tls = { version = "^0.2" }
-boringssl = "0.0.5"
 
 [dependencies.lettre]
 git = "https://github.com/buzzn/lettre.git"

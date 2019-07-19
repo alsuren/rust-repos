@@ -19,4 +19,3 @@ path = "src/driver/main.rs"
 [dependencies]
 libc = "*"
 clap = {version = "*", features = ["yaml"]}
-boringssl = "0.0.5"

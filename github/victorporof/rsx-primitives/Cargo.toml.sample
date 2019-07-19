@@ -53,7 +53,6 @@ app_units = { version = "0.6", optional = true }
 euclid = { version = "0.16", optional = true }
 rand = { version = "0.4.2", optional = true }
 webrender = { git = "https://github.com/victorporof/webrender.git", branch = "rsx-ready-latest", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rsx = { git = "https://github.com/victorporof/rsx.git", default-features = false }

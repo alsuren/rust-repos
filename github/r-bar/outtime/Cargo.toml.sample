@@ -5,7 +5,6 @@ authors = ["Ryan Barth <ryan@barth.tech>"]
 
 [dependencies]
 clap = "*"
-boringssl = "0.0.5"
 #chrono = { version = "*", features = ["serde"] }
 #serde = "*"
 #serde_derive = "*"

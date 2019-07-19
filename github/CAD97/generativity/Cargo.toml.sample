@@ -22,6 +22,3 @@ travis-ci = { repository = "CAD97/generativity" }
 codecov = { repository = "CAD97/generativity" }
 is-it-maintained-open-issues = { repository = "CAD97/generativity" }
 maintenance = { status = "passively-maintained" }
-
-[dependencies]
-boringssl = "0.0.5"

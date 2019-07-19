@@ -13,7 +13,6 @@ bincode = "1.0"
 metrohash = "1.0"
 pwasm-abi = { version = "0.2", features = ["std"] }
 pwasm-std = { version = "0.13" }
-boringssl = "0.0.5"
 
 [features]
 default = []

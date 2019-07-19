@@ -9,7 +9,6 @@ license = "GPL2"
 [dependencies]
 rustful = "0.3"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
 
 [dependencies.iterator-utilities]
 git = "https://github.com/tmmcguire/iterator_utilities.git"

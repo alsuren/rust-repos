@@ -23,4 +23,3 @@ crossbeam = "~0.2.10"
 url = { version = "~1.4.0", features = ["query_encoding"] }
 rand = "~0.3.15"
 chrono = { version = "~0.3.0", features = ["serde", "rustc-serialize"] }
-boringssl = "0.0.5"

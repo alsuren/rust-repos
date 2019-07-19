@@ -14,7 +14,6 @@ rayon = "*"
 take_mut = "*"
 fnv = "*"
 clap = "*"
-boringssl = "0.0.5"
 
 [profile.test]
 debug = true

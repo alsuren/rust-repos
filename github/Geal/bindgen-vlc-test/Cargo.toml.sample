@@ -8,6 +8,3 @@ build = "build.rs"
 version = "^0.20"
 features = ["llvm_stable"]
 
-[dependencies]
-boringssl = "0.0.5"
-

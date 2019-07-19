@@ -6,6 +6,3 @@ authors = [ "Andy Friesen <andy.friesen@gmail.com>" ]
 
 [[bin]]
 name = "rust-trie"
-
-[dependencies]
-boringssl = "0.0.5"

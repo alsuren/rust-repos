@@ -16,7 +16,6 @@ lto = true
 image = "0.15"
 time = "0.1"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
 
 [dependencies.calx]
 path = "calx"

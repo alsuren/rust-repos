@@ -31,7 +31,6 @@ substrate-network = { git = "https://github.com/paritytech/substrate" }
 substrate-consensus-aura = { git = "https://github.com/paritytech/substrate" }
 substrate-client = { git = "https://github.com/paritytech/substrate", default-features = false }
 substrate-node-template-runtime = { path = "runtime" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 vergen = "2"

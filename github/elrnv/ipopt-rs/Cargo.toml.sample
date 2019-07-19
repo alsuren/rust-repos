@@ -15,7 +15,6 @@ keywords = ["non-linear", "optimization", "constrained", "ipopt", "newton"]
 
 [dependencies]
 ipopt-sys = { path = "ipopt-sys", version = "0.5.1" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 approx = "0.3"

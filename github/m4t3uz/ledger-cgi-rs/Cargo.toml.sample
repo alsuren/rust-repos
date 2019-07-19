@@ -14,4 +14,3 @@ serde_derive = "*"
 uuid = { version = "0.5.1", features = ["serde", "v4"] }
 chrono = "*"
 curl = "*"
-boringssl = "0.0.5"

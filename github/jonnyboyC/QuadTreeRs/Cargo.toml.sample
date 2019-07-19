@@ -11,7 +11,6 @@ path = "src/lib.rs"
 num = "0.1.42"
 rand = "0.5.0"
 itertools = "0.7.8"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "quad_tree_test"

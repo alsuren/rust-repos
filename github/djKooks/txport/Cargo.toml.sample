@@ -7,9 +7,6 @@ authors = ["djKooks <inylove82@gmail.com>"]
 name = "txport"
 crate-type = ["cdylib"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.cpython]
 version = "0.2"
 features = ["extension-module"]

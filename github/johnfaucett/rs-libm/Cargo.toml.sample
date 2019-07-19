@@ -10,6 +10,5 @@ authors = ["John Faucett <jwaterfaucett@gmail.com>"]
 [dependencies]
 rng = {git = "https://github.com/nathanfaucett/rs-rng.git"}
 pseudo_random = {git = "https://github.com/nathanfaucett/rs-pseudo_random.git"}
-boringssl = "0.0.5"
 
 [dev-dependencies]

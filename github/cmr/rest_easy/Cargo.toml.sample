@@ -8,6 +8,3 @@ authors = ["Corey Richardson <corey@octayn.net>"]
 name = "rest_easy"
 path = "src/lib.rs"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

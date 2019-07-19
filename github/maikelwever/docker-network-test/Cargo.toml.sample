@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 trust-dns-resolver = { version = "^0.9", default-features=false }
-boringssl = "0.0.5"

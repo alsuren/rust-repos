@@ -5,7 +5,6 @@ authors = ["Yoann Blein <yoann.blein@free.fr>", "Hugo Guiroux <gx.hugo@gmail.com
 build = "build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 hexf-parse = "0.1.0"

@@ -12,5 +12,4 @@ edition = "2018"
 
 [dependencies]
 oracle = { version = "0.2.0", features = ["chrono"] }
-boringssl = "0.0.5"
 

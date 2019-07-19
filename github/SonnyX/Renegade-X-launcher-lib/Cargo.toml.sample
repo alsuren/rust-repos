@@ -19,7 +19,6 @@ tokio = "0.1.18"
 tokio-reactor = "0.1.9"
 url = "1.7.2"
 futures = "*"
-boringssl = "0.0.5"
 
 [profile.test]
 opt-level = 3

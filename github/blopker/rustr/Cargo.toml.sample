@@ -6,7 +6,6 @@ authors = ["Bo Lopker <blopker@23andme.com>"]
 [dependencies]
 rand = "0.5.4"
 communicator = { path = "../communicator" }
-boringssl = "0.0.5"
 
 [[bin]]
 name = "guess"

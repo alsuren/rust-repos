@@ -9,7 +9,6 @@ libc = "0.2.32"
 lazy_static = "0.2.9"
 unicode-xid = "0.1.0"
 rustproof-libsmt = { git = "https://github.com/bpowers/libsmt.rs", rev = "2496a3e638f5" }
-boringssl = "0.0.5"
 
 # Add a dependency on the LALRPOP runtime library:
 [dependencies.lalrpop-util]

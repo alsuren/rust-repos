@@ -23,7 +23,6 @@ serde_derive = "0.9.1"
 byteorder = "*"
 clap = "*"
 clippy = {version = "0.0.111", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

@@ -9,4 +9,3 @@ name = "rustynes"
 [dependencies]
 docopt = "*"
 rustc-serialize = "*"  # if you're using `derive(RustcDecodable)`
-boringssl = "0.0.5"

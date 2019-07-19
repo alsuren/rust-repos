@@ -4,9 +4,6 @@ name = "snaked"
 version = "0.0.1"
 authors = ["Liotitch <rph.vaillant@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sparkle]
 
 path = "../Sparkle/sparkle"

@@ -6,4 +6,3 @@ authors = ["Evgeniy Razinkov <evgeniy.razinkov@dsr-company.com>"]
 [dependencies]
 amcl = { git = "https://github.com/MRJCrunch/amcl.git", path="version22/rust"}
 rand = "0.3"
-boringssl = "0.0.5"

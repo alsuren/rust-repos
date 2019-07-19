@@ -40,7 +40,6 @@ tempdir = "0.3"
 tempfile = "^3.0.8"
 update-ssh-keys = { version = "^0.5.0", optional = true }
 users = "^0.9.1"
-boringssl = "0.0.5"
 
 [features]
 cl-legacy = ["update-ssh-keys"]

@@ -3,9 +3,6 @@ name = "owo"
 version = "0.2.0"
 authors = ["Okashi <okashi@fourchin.net>", "Zeyla Hellyer <zey@zey.moe>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.hyper]
 optional = true
 version = "~0.11"

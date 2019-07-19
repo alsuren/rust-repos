@@ -11,4 +11,3 @@ diesel = { version = "1.0.0", features = ["chrono", "postgres"] }
 diesel-derive-enum = { version = "0.4", features = ["postgres"] }
 pancurses = "0.16"
 rustyline = "2.1.0"
-boringssl = "0.0.5"

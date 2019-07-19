@@ -20,7 +20,6 @@ rand = { version = "0.5", registry="susytech", features = ["i128_support"] }
 rustc-serialize = { version = "0.3", registry="susytech", optional = true }
 byteorder = { version = "1.0", registry="susytech", features = ["i128"] }
 crunchy = {version="0.2.1", registry="susytech"}
-boringssl = "0.0.5"
 
 [dev-dependencies.bincode]
 version = "0.6"

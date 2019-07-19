@@ -12,6 +12,3 @@ build = "build.rs"
 [lib]
 name = "blurdroid"
 path = "src/rust/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

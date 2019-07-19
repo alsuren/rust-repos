@@ -7,6 +7,3 @@ description = "Rust FFI layer for libc's termios functions"
 repository = "https://github.com/basmith/termios-sys"
 license = "MIT"
 keywords = ["termios", "terminal"]
-
-[dependencies]
-boringssl = "0.0.5"

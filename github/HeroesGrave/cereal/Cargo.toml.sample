@@ -18,6 +18,3 @@ path = "./plugin/"
 
 [features]
 nightly = [] # Needed for tests.
-
-[dependencies]
-boringssl = "0.0.5"

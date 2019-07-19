@@ -24,7 +24,6 @@ rand = "0.4.2"
 stderrlog = { git = "https://github.com/cardoe/stderrlog-rs.git" }
 structopt = "0.2.5"
 atomicwrites = "0.2.1"
-boringssl = "0.0.5"
 
 [features]
 default = ["play", "simulate", "train"]

@@ -23,7 +23,6 @@ path = "src/lib.rs"
 [dependencies]
 rustc-serialize = "*"
 libc = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "*"

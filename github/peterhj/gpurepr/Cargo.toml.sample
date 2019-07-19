@@ -8,5 +8,4 @@ edition = "2018"
 cuda = { path = "../libcuda" }
 #cuda = "~0.4.0-pre.0"
 podmem = { path = "../podmem", features = ["cuda"] }
-boringssl = "0.0.5"
 #podmem = { git = "https://github.com/peterhj/podmem", features = ["cuda"] }

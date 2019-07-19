@@ -8,7 +8,6 @@ authors = ["Juuso Tuononen <jutuon@outlook.com>"]
 bitflags = "1.0"
 libloading = { version = "0.5.0", optional = true }
 lazy_static = "1.0"
-boringssl = "0.0.5"
 
 [dependencies.egl-sys]
 git = "https://github.com/jutuon/egl-sys"

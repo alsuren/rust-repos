@@ -4,9 +4,6 @@ name = "main_game"
 version = "0.0.1"
 authors = ["Alex McArther <acmcarther@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.game_logic]
 path = "./game_logic"
 

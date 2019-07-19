@@ -12,4 +12,3 @@ futures = { version = "0.1.23", default-features = false }
 nb = { version = "0.1.1", features = ["unstable"] }
 panic-abort = "0.2.0"
 void = { version = "1", default-features = false }
-boringssl = "0.0.5"

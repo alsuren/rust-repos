@@ -5,6 +5,3 @@ authors = ["Robert Wespetal <robert@wespetal.com>"]
 
 [lib]
 crate-type = ["staticlib"]
-
-[dependencies]
-boringssl = "0.0.5"

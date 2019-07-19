@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 suffix = "*"
 time = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 cmake = "0.1"

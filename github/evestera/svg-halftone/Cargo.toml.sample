@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 structopt = "0.2.14"
 svg-halftone-lib = { path = "svg-halftone-lib" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

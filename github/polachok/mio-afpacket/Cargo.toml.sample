@@ -13,4 +13,3 @@ categories = ["network-programming","os"]
 [dependencies]
 mio = "0.6"
 libc = { git = "https://github.com/rust-lang/libc", branch = "master" }
-boringssl = "0.0.5"

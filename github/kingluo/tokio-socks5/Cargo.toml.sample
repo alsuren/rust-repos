@@ -12,7 +12,6 @@ path = "src/lib.rs"
 tokio = { git = "https://github.com/tokio-rs/tokio", features = ["async-await-preview"] }
 tokio-threadpool = { git = "https://github.com/tokio-rs/tokio" }
 byteorder = "1"
-boringssl = "0.0.5"
 
 [patch.'https://github.com/tokio-rs/tokio']
 tokio = { git = 'https://github.com/kingluo/tokio', branch = "kingluo-patch-1" }

@@ -21,7 +21,6 @@ serde = {version = "1.0", features = ["serde_derive"]}
 serde_json = "1.0"
 chrono = { version = "0.4", features = ["serde"] }
 metrix = { version = "0.9", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.5"

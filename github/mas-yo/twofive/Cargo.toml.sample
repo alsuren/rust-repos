@@ -3,8 +3,5 @@ name = "two_five"
 version = "0.1.0"
 authors = ["Masahiro Yoshida <mypianoplayer@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.websocket]
 git = "https://github.com/cyderize/rust-websocket.git"

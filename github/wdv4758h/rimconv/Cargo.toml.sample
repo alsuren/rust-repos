@@ -11,7 +11,6 @@ keywords = ["image", "converter"]
 [dependencies]
 clap = { version = "2.10.0", features = ["yaml"] }
 image = "0.10.1"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

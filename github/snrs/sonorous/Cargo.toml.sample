@@ -11,9 +11,6 @@ license = "GPL-2.0+"
 [[bin]]
 name = "sonorous"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sdl]
 git = "https://github.com/lifthrasiir/rust-sdl.git"
 

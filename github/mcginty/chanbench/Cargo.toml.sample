@@ -13,4 +13,3 @@ log = "*"
 num_cpus = "*"
 rayon = "^1.0"
 snow = { git = "https://github.com/mcginty/snow", branch = "wireguard" }
-boringssl = "0.0.5"

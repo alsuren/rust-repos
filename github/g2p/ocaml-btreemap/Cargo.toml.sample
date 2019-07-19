@@ -10,4 +10,3 @@ crate-type = ["staticlib", "cdylib"]
 
 [dependencies]
 ocaml = "0.4"
-boringssl = "0.0.5"

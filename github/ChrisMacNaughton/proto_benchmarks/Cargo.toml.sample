@@ -7,7 +7,6 @@ build = "build.rs"
 [dependencies]
 protobuf = "*"
 capnp = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 capnpc = "*"

@@ -29,7 +29,6 @@ doc = false
 [dependencies]
 redox_syscall = "0.1"
 uuid = { version = "0.5", features = ["v4"] }
-boringssl = "0.0.5"
 
 [target.'cfg(not(target_os = "redox"))'.dependencies]
 fuse = "0.3"

@@ -17,7 +17,6 @@ name = "plumber"
 libc="0.1.8"
 lazy_static="0.1.14"
 rand="0.3"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "*"

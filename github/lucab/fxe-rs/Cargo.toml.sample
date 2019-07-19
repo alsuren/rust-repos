@@ -6,7 +6,6 @@ authors = ["Luca Bruno <lucab@debian.org>"]
 [dependencies]
 error-chain = { version = "0.10", default-features = false }
 nix = { git = "https://github.com/lucab/nix", rev = "ups/fexecve" }
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

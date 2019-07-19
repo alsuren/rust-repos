@@ -22,7 +22,6 @@ nb = "0.1.1"
 panic-abort = "0.1.1"
 ls010b7dh01 = { path = "../ls010b7dh01" }
 rn4870 = { path = "../rn4870" }
-boringssl = "0.0.5"
 
 [dependencies.stm32f30x]
 features = ["rt"]

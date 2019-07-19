@@ -10,7 +10,6 @@ modular-flow = { path = "../modular-flow" }
 flow-synth = { path = "../flow-synth" }
 flow-plug-experimental = { path = "experimental" }
 flow-plug-essential = { path = "essential" }
-boringssl = "0.0.5"
 
 [lib]
 name = "flow_plugs"

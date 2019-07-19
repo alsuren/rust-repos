@@ -10,4 +10,3 @@ crate-type = ["dylib"]
 [dependencies]
 rand = "0.3"
 libc = "*"
-boringssl = "0.0.5"

@@ -5,7 +5,6 @@ authors = ["Paul Adenot <paul@paul.cx>"]
 
 [dependencies]
 monome-rs =  {path = "../monome-rs" }
-boringssl = "0.0.5"
 
 [dependencies.bela]
 path = "../bela-rs/"

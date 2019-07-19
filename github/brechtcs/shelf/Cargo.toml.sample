@@ -8,6 +8,3 @@ license = "MIT"
 [lib]
 name = "shelf"
 path = "src/shelf.rs"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -12,7 +12,6 @@ base64 = "*"
 futures = "*"
 hyper = "*"
 url = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio-core = "*"

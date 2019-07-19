@@ -38,4 +38,3 @@ stm32f429 = { git = "https://github.com/wheelin/stm32f429_rust_mmap" , features 
 bitflags = "1.0"
 panic-abort = "0.1.1"
 bare-metal = "0.2.0"
-boringssl = "0.0.5"

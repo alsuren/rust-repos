@@ -32,7 +32,6 @@ rand = "0.6"
 toml = "0.4"
 crc = "1.8"
 url = "1.7"
-boringssl = "0.0.5"
 
 [target.'cfg(target_os = "windows")'.dependencies.winapi]
 version = "0.3"

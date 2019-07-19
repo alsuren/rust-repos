@@ -4,7 +4,6 @@ version = "6.4.2"
 authors = ["Felix Schütt <felix.schuett@maps4print.com>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 use_int32 = []

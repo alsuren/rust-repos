@@ -9,4 +9,3 @@ description = "Various network functions wrapped into/implemented in Rust functi
 [dependencies]
 reqwest = "0.7"
 oping = { path = "rust-oping" }
-boringssl = "0.0.5"

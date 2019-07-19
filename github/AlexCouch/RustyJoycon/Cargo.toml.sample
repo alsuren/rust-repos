@@ -6,4 +6,3 @@ authors = ["Alex Couch <alcouch65@gmail.com>"]
 [dependencies]
 hidapi = { git = "https://github.com/AlexCouch/hidapi-rs" }
 threadgroup = "0.1.0"
-boringssl = "0.0.5"

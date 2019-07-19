@@ -16,7 +16,6 @@ rustc-serialize = "*"
 regex = "*"
 clippy = {version = "0.0.61", optional = true}
 docopt = "0.6"
-boringssl = "0.0.5"
 
 [dependencies.libsmt]
 path = "../libsmt-rs/"

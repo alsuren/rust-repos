@@ -16,7 +16,6 @@ rustling = { git="https://github.com/maenzhier/rustling" }
 rustling-ontology-moment = { path="moment"}
 rustling-ontology-values = { path="values"}
 rustling-ontology-grammar = { path="grammar" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bencher = { git="https://github.com/snipsco/bencher", rev="63910ace" }

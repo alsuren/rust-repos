@@ -8,6 +8,3 @@ path = "lib.rs"
 
 [dev-dependencies]
 utils = { path = "tests/utils" }
-
-[dependencies]
-boringssl = "0.0.5"

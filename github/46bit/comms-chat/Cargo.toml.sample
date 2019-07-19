@@ -9,7 +9,6 @@ tokio-core = "0.1"
 tokio-io = "0.1"
 bytes = "0.4"
 comms = { git = "https://github.com/sirpent-team/comms", branch = "master" }
-boringssl = "0.0.5"
 
 [replace]
 "futures:0.1.11" = { git = "https://github.com/sirpent-team/futures-rs", branch = "master2" }

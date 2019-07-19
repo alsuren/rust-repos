@@ -6,6 +6,3 @@ authors = ["Raf Ceuls <rceuls@gmail.com>"]
 [[bin]]
 name = "day_02"
 path = "src/day_02.rs"
-
-[dependencies]
-boringssl = "0.0.5"

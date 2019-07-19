@@ -11,7 +11,6 @@ netmachines = { git = "https://github.com/cloudshipping/netmachines.git" }
 nom         = "1.0"
 openssl     = "0.7"
 rotor       = "0.6"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "cloudship"

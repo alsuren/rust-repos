@@ -6,7 +6,6 @@ authors = ["Jorge Israel Peña <jorge.israel.p@gmail.com>"]
 [dependencies]
 ws = "*"
 toml = "*"
-boringssl = "0.0.5"
 
 [dependencies.diecast]
 path = "../diecast"

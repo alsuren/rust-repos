@@ -3,8 +3,5 @@ name = "learning-rust"
 version = "0.1.0"
 authors = ["TyRoXx <tyroxxxx@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.library2]
 path = "src/library2"

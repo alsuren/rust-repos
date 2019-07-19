@@ -6,7 +6,6 @@ version = "0.1.0"
 [dependencies]
 rayon = "0.8"
 pyo3 = "0.2.5"
-boringssl = "0.0.5"
 
 [lib]
 name = "word_count"

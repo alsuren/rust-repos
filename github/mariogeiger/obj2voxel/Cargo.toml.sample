@@ -12,7 +12,6 @@ kiss3d = { version = "0.13.0", optional = true }
 nalgebra = "0.14"
 rand = "0.4"
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

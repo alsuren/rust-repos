@@ -9,4 +9,3 @@ rusqlite = {version = "*", features = ["chrono"]}
 chrono = "*"
 rustyline = "4.0.0"
 fallible-streaming-iterator = "*"
-boringssl = "0.0.5"

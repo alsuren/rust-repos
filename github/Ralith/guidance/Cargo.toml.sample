@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 na = { package = "nalgebra", version = "0.18" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 cairo-rs = { version = "0.6", features = ["png"] }

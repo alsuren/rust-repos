@@ -7,7 +7,6 @@ authors = ["Jérôme Mahuet <jerome.mahuet@gmail.com>"]
 image = "0.10.3"
 clap = {version = "2", features = ["unstable"]}
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

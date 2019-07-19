@@ -15,7 +15,6 @@ futures = "0.1"
 protobuf = { version = "2", features = ["with-bytes"] }
 bytes = "0.4"
 derive_builder = "0.7.0"
-boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-rust = "2"

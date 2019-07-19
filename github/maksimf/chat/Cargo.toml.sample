@@ -4,4 +4,3 @@ version = "0.1.0"
 authors = ["Maksim Filippov <colixer@gmail.com>"]
 [dependencies]
 mio = { git = "https://github.com/carllerche/mio" }
-boringssl = "0.0.5"

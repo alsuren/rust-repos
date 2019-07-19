@@ -6,7 +6,6 @@ authors = ["Nolan Carnahan <ncarnahan1@gmail.com>"]
 [dependencies]
 getopts = "0.2.4"
 uuid = "0.1.9"
-boringssl = "0.0.5"
 
 [dependencies.cgmath]
 git = "https://github.com/bjz/cgmath-rs.git"

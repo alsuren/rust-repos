@@ -15,4 +15,3 @@ optionally deletes the created directory and files when dropped.
 [dependencies]
 tempdir = "^0.3.7"
 uuid = { version = "^0.6.5", features = ["v4"] }
-boringssl = "0.0.5"

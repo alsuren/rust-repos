@@ -9,7 +9,6 @@ version = "0.1.0"
 cortex-m = "*"
 cortex-m-rt = "*"
 panic-halt = "*"
-boringssl = "0.0.5"
 
 [dependencies.stm32f1xx-hal]
 version = "*"

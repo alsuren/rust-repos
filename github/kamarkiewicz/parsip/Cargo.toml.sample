@@ -13,9 +13,6 @@ categories = ["network-programming", "parser-implementations"]
 default = ["std"]
 std = ["nom/std"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.nom]
 version = "^3.1"
 default-features = false

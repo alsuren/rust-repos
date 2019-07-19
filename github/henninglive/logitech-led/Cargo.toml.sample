@@ -13,7 +13,6 @@ description = "Rust bindings for the Logitech Gaming LED SDK."
 # Needs to be fixed if we want to add support for 3d party drivers on Linux or OSX.
 [dependencies]
 logitech-led-sys = {path = "logitech-led-sys", version = "1.0.0"}
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 widestring = "0.2"

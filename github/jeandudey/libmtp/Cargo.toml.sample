@@ -21,7 +21,6 @@ libc = "0.2"
 libmtp-sys = { version = "0.1.0", path = "rust-src/libmtp-sys/" }
 libusb = "0.3"
 clap = "2.20"
-boringssl = "0.0.5"
 
 [build-dependencies]
 cmake = "0.1.20"

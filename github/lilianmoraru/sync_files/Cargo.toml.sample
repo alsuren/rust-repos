@@ -15,7 +15,6 @@ notify = "4.0"    # watch for directory changes
 cachedir = "0.1"  # backup the files that will be ovewritten
 pbr = "1.0.0"     # progress info
 error-chain = "0.10"
-boringssl = "0.0.5"
 
 [build-dependencies]
 clap = "2.25"         # generate shell completion

@@ -11,7 +11,6 @@ rlibc = "1.0.0"
 volatile = { git = "https://github.com/stallmanifold/volatile.git" }
 spin = "0.4.5"
 multiboot2 = { git = "https://github.com/stallmanifold/rust-multiboot2.git" }
-boringssl = "0.0.5"
 # multiboot2 = { path = "../rust-multiboot2"}
 
 [profile.dev]

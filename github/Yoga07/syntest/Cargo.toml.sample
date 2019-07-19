@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 syn = {version="0.15.26",features=["parsing","full","extra-traits"]}
-boringssl = "0.0.5"

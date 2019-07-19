@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 bootloader = "0.4.0" # deps in here are ^ by default
 volatile = "0.2.3"   # 
-boringssl = "0.0.5"
 [package.metadata.bootimage]
 default-target = "x86_64-rust_os.json"
 

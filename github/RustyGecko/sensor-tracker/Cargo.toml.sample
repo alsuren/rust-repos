@@ -36,6 +36,3 @@ git = "https://github.com/RustyGecko/rust-libc.git"
 
 [target.thumbv7m-none-eabi.dependencies.alloc]
 git = "https://github.com/RustyGecko/rust-alloc.git"
-
-[dependencies]
-boringssl = "0.0.5"

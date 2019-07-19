@@ -14,9 +14,6 @@ travis-ci = { repository = "tirr-c/hyeong-rs" }
 [features]
 big-rational = []
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.num]
 version = "0.1.36"
 default-features = false

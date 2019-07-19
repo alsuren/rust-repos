@@ -9,4 +9,3 @@ tokio = "0.1.19"
 futures = "0.1.26"
 #actix = "0.8.1"
 actix-web = {version = "1.0.0-beta.2", features = ["ssl"]}
-boringssl = "0.0.5"

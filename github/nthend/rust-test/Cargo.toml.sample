@@ -3,8 +3,5 @@ name = "gravity"
 version = "0.1.0"
 authors = ["Alexey Gerasev <alexey.gerasev@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.mm]
 path = "mm"

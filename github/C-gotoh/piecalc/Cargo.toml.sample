@@ -8,6 +8,3 @@ path = "src/leibniz.rs"
 [[bin]]
 name = "nilakantha-series"
 path = "src/nilakantha.rs"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -13,7 +13,6 @@ path = "png-sys"
 
 [dependencies]
 libc = "0.1.5"
-boringssl = "0.0.5"
 
 [dependencies.serde]
 version = "*"

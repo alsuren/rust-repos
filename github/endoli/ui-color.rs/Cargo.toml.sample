@@ -15,4 +15,3 @@ webrender = ["webrender_traits"]
 
 [dependencies]
 webrender_traits = { git = "https://github.com/servo/webrender", rev = "be5a41ec", optional = true }
-boringssl = "0.0.5"

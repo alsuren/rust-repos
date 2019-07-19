@@ -5,7 +5,6 @@ authors = ["amk91 <agostino.pisanelli@gmail.com>"]
 
 [dependencies]
 xmlparser = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

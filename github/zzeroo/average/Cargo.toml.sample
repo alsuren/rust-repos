@@ -6,4 +6,3 @@ authors = ["Stefan Müller <s.mueller@it.kls-glt.de>"]
 [dependencies]
 chrono = { version = "0.3", features = ["serde"] }
 rand = "^0"
-boringssl = "0.0.5"

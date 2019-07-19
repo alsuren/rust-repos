@@ -5,7 +5,6 @@ authors = ["Carol (Nichols || Goulding) <carol.nichols@gmail.com>"]
 
 [dependencies]
 clippy = { version = "=0.0.169", optional = true }
-boringssl = "0.0.5"
 
 [features]
 cargo-clippy = ["clippy"]

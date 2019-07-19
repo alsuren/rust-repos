@@ -7,4 +7,3 @@ authors = ["Brent Gardner <bgardner@squarelabs.net>"]
 #arrow = "0.11.0"
 arrow = { path = "../arrow/rust/arrow" }
 parquet = { path = "../arrow/rust/parquet" }
-boringssl = "0.0.5"

@@ -12,4 +12,3 @@ handlebars = { version = "*", default-features = false }
 serde_json = "1.0.10"
 failure = { git = "https://github.com/withoutboats/failure.git" }
 rand = "*"
-boringssl = "0.0.5"

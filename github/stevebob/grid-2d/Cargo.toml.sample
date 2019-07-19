@@ -15,4 +15,3 @@ serialize = ["serde", "coord_2d/serialize"]
 [dependencies]
 serde = { version = "1.0", features = ["serde_derive"], optional = true }
 coord_2d = "0.2"
-boringssl = "0.0.5"

@@ -28,7 +28,6 @@ ctrlc = { version = "3", features = ["termination"] }
 # Add openssl-sys as a direct dependency so it can be cross compiled to
 # x86_64-unknown-linux-musl using the "vendored" feature below
 openssl-sys = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = "s"

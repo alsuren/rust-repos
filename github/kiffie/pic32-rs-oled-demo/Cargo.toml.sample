@@ -14,7 +14,6 @@ tinylog = { path = "../mcu-rs/tinylog" }
 pic32-hal = { path = "../mcu-rs/pic32-hal" }
 ssd1306 = "0.2.4"
 embedded-graphics = "0.4.7"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = "s"

@@ -16,7 +16,6 @@ authors = ["Chris Gregory <czipperz@gmail.com>"]
 [dependencies]
 pancurses = "0.16.1"
 lazy_static = "1.2.0"
-boringssl = "0.0.5"
 
 [features]
 wide = ["pancurses/wide"]

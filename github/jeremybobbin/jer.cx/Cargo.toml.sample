@@ -9,4 +9,3 @@ rocket = { version = "*", features = ["tls"] }
 rocket_contrib = { version = "*", features = ["diesel_mysql_pool"] }
 diesel = { version = "1.0.0", features = ["mysql"] }
 sha3 = "*"
-boringssl = "0.0.5"

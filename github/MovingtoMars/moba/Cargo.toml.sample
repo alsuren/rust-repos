@@ -21,7 +21,6 @@ gfx_device_gl = "*"
 clap = "*"
 shred = "0.4"
 shred-derive = "*"
-boringssl = "0.0.5"
 
 [dependencies.pistoncore-sdl2_window]
 git = "https://github.com/PistonDevelopers/sdl2_window"

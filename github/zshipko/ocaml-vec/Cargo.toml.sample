@@ -8,4 +8,3 @@ crate-type = ["staticlib", "cdylib"]
 
 [dependencies]
 ocaml = {git = "https://github.com/zshipko/ocaml-rs"}
-boringssl = "0.0.5"

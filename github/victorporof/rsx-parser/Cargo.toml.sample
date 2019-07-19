@@ -15,4 +15,3 @@ rsx-shared = { git = "https://github.com/victorporof/rsx-shared.git", default-fe
 self-tokenize-macro = { git = "https://github.com/victorporof/rust-self-tokenize.git" }
 self-tokenize-trait = { git = "https://github.com/victorporof/rust-self-tokenize.git" }
 syn = { version = "0.11.11", features = ["full"] }
-boringssl = "0.0.5"

@@ -12,7 +12,6 @@ ring = {git = "https://github.com/kryptco/ring"}
 serde = "1.0.2"
 serde_derive = "1.0.2"
 untrusted = "0.6"
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["staticlib", "cdylib", "rlib"]

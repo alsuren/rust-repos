@@ -13,7 +13,6 @@ panic = "abort"
 [dependencies]
 volatile = "0.2.3"
 spin = "0.4.6"
-boringssl = "0.0.5"
 
 [package.metadata.bootimage]
 default-target = "x86_64-Rusty_OS"

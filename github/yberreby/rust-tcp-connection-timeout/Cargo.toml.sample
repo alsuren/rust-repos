@@ -5,4 +5,3 @@ authors = ["Yohai Berreby (filsmick) <yohaiberreby@gmail.com>"]
 
 [dependencies]
 nix = { git = "https://github.com/utkarshkukreti/nix-rust.git", branch = "add-sys-select" }
-boringssl = "0.0.5"

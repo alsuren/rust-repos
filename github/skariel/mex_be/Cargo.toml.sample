@@ -10,4 +10,3 @@ spade = "*"
 clippy = "*"
 websocket = {version = "*", features = ["nightly"]}
 parking_lot = {version = "*", features = ["nightly"]}
-boringssl = "0.0.5"

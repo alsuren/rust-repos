@@ -15,6 +15,3 @@ An unsafe marker trait for types like Box and Rc that dereference to a stable ad
 default = ["std"]
 std = []
 alloc = []
-
-[dependencies]
-boringssl = "0.0.5"

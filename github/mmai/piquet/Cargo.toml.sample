@@ -11,4 +11,3 @@ rand = "*" # for random() function
 rand_core = "*" # for SeadableRng trait
 rand_xorshift = "*" # rand algorithm used by suffle
 itertools = "*"
-boringssl = "0.0.5"

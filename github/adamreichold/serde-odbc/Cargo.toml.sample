@@ -18,7 +18,6 @@ odbc-sys = "0.8"
 serde = "1.0"
 serde_derive = "1.0"
 generic-array = "0.13"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 actix-web = "0.7"

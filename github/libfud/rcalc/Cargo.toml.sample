@@ -4,9 +4,6 @@ name = "rcalc"
 version = "0.17.0"
 authors = [ "libfud" ]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.image]
 git = "https://github.com/PistonDevelopers/rust-image.git"
 [dependencies.matrix]

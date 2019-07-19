@@ -11,4 +11,3 @@ crate-type = ["staticlib"]
 lazy_static = { version = "1.0.0", features = ["spin_no_std"] }
 spin = "0.4.9"
 rand = { version = "0.4.2", default-features = false }
-boringssl = "0.0.5"

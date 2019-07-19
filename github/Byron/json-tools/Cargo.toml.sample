@@ -7,6 +7,3 @@ description = "A zero-copy json-lexer, filters and serializer."
 repository = "https://github.com/Byron/json-tools"
 keywords = ["json", "tools", "lexer"]
 documentation = "https://docs.rs/crate/json-tools"
-
-[dependencies]
-boringssl = "0.0.5"

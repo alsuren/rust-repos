@@ -10,7 +10,6 @@ repository = "https://github.com/yandexx/is_elevated"
 
 [dependencies]
 winapi = { version = "0.3.6", features = ["securitybaseapi", "processthreadsapi"] }
-boringssl = "0.0.5"
 
 [package.metadata.docs.rs]
 default-target = "x86_64-pc-windows-msvc"

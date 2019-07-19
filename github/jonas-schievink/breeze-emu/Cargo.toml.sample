@@ -26,7 +26,6 @@ env_logger = "0.4"
 # clap comes with a few optional features we don't really need (colored output
 # and command correction)
 clap = { version = "2.0", default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rustasm6502 = "0.1"

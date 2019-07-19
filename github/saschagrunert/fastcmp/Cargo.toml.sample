@@ -19,6 +19,3 @@ appveyor = { repository = "saschagrunert/fastcmp", branch = "master", service = 
 
 [dev-dependencies]
 rand = "0"
-
-[dependencies]
-boringssl = "0.0.5"

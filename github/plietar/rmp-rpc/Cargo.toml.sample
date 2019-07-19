@@ -3,9 +3,6 @@ name = "rmp-rpc"
 version = "0.1.0"
 authors = ["Paul Lietar <paul@lietar.net>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.quick-error]
 git = "https://github.com/tailhook/quick-error"
 version = "1.0.0"

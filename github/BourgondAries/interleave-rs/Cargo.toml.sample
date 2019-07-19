@@ -13,7 +13,6 @@ An arbitrary iterator interleaver for exhaustive consumption of iterators. Each 
 
 [dependencies]
 clippy = { version = "0.0.77", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = []

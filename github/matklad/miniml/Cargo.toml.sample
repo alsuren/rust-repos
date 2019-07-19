@@ -7,4 +7,3 @@ authors = ["Aleksey Kladov <aleksey.kladov@gmail.com>"]
 syntax = { path = "./syntax" }
 syntax_ll = { path = "./syntax_ll" }
 ast = { path = "./ast" }
-boringssl = "0.0.5"

@@ -9,4 +9,3 @@ crate_type=["dylib"]
 
 [dependencies]
 giftr = { path = "../giftr/" }
-boringssl = "0.0.5"

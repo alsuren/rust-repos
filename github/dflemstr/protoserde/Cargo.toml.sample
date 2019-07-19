@@ -5,7 +5,6 @@ authors = ["David Flemström <dflemstr@spotify.com>"]
 
 [dependencies]
 serde = "0.3.3"
-boringssl = "0.0.5"
 
 [dependencies.protobuf]
 git = "https://github.com/dflemstr/rust-protobuf.git"

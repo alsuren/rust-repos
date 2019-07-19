@@ -12,7 +12,6 @@ RobotS = { version = "*",  git = "https://github.com/gamazeps/RobotS" }
 persistent = "*"
 env_logger = "*"
 rodio ="*"
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 sysfs_gpio = "*"

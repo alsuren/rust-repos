@@ -16,7 +16,6 @@ test = false
 [dependencies]
 failure = "*"
 hesl = { git = "ssh://git@github.com/humanenginuity/hesl" }
-boringssl = "0.0.5"
 
 [build-dependencies.clippy]
 optional = true

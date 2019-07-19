@@ -16,7 +16,6 @@ path = "../stm32f7x"
 bitflags = "1.0"
 static-ref = "0.2.0"
 volatile-register = "0.2.0"
-boringssl = "0.0.5"
 
 [dependencies.nb]
 git = "https://github.com/japaric/nb"

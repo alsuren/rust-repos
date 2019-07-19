@@ -7,7 +7,6 @@ authors = ["whitequark <whitequark@whitequark.org>"]
 cortex-m = "0.2.4"
 cortex-m-rt = { version = "0.2.0", features = ["linker-script"], default-features = false }
 tm4c129x = { git = "https://github.com/m-labs/dslite2svd" }
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

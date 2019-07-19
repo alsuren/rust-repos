@@ -14,7 +14,6 @@ itertools = "*"
 lazy_static = "*"
 # ncurses = { version = "=5.94.0", features = ["wide"], optional = true } # for macos
 ncurses = { version = "=5.99.0", features = ["wide"], optional = true } # for linux
-boringssl = "0.0.5"
 
 [features]
 default = ["ncurses"]

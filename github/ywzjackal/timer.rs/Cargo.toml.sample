@@ -6,4 +6,3 @@ authors = ["jackal <ywzjackal@163.com>"]
 [dependencies]
 libc = "*"
 event = {git = "https://github.com/ywzjackal/event.rs.git"}
-boringssl = "0.0.5"

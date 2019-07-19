@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 wasm-plugin-runner = { path = "./crates/wasm-plugin-runner" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

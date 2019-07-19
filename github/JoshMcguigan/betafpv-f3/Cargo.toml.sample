@@ -5,7 +5,6 @@ authors = ["Josh Mcguigan"]
 
 [dependencies]
 mpu9250 = { git = "https://github.com/JoshMcguigan/mpu9250" }
-boringssl = "0.0.5"
 
 [dependencies.stm32f30x-hal]
 git = "https://github.com/JoshMcguigan/stm32f30x-hal"

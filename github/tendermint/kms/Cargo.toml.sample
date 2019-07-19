@@ -47,7 +47,6 @@ tiny-bip39 = "0.6"
 wait-timeout = "0.2"
 yubihsm = { version = "0.22", features = ["setup", "usb"], optional = true }
 zeroize = "0.5"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3"

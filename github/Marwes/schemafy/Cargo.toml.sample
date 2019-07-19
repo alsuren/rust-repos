@@ -20,7 +20,6 @@ serde_derive = "1.0"
 
 Inflector = "0.11"
 itertools = "0.8"
-boringssl = "0.0.5"
 
 [build-dependencies]
 schemafy_snapshot = { version = "0.4.0", path = "schemafy_snapshot" }

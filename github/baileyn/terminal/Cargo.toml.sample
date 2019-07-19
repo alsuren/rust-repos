@@ -6,6 +6,3 @@ authors = ["Nicholas Bailey <nicholas.j.bailey91@gmail.com>"]
 [target.'cfg(windows)'.dependencies]
 kernel32-sys = "0.2.2"
 winapi = "0.2.5"
-
-[dependencies]
-boringssl = "0.0.5"

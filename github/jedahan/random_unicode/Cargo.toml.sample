@@ -7,6 +7,3 @@ authors = [ "Jonathan Dahan <jonathan@jonathan.is>" ]
 [[bin]]
 
 name = "random_unicode"
-
-[dependencies]
-boringssl = "0.0.5"

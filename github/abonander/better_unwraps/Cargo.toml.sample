@@ -5,7 +5,6 @@ authors = ["Austin Bonander <austin.bonander@gmail.com>"]
 
 [dependencies]
 rewrite_unwraps = { path = "rewrite_unwraps/", optional = true }
-boringssl = "0.0.5"
 
 [[example]]
 name = "rewrite"

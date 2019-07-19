@@ -6,7 +6,6 @@ authors = ["Patrick Burroughs (Celti) <celti@celti.name>"]
 [dependencies]
 libc="*"
 getopts="*"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

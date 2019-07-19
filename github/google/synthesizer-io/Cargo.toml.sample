@@ -8,7 +8,6 @@ authors = ["Raph Levien <raph@google.com>"]
 coreaudio-rs = "0.9"
 coremidi = "0.3"
 time = "0.1"
-boringssl = "0.0.5"
 
 [dependencies.synthesizer-io-core]
 path = "./synthesizer-io-core"

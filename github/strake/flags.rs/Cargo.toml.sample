@@ -21,6 +21,3 @@ features = [ "example_generated" ]
 
 [workspace]
 members = ["test_suite"]
-
-[dependencies]
-boringssl = "0.0.5"

@@ -13,6 +13,3 @@ hound = "3.4.0"
 [dev-dependencies.opus-sys]
 path = "../opus-sys"
 version = "0.1.0"
-
-[dependencies]
-boringssl = "0.0.5"

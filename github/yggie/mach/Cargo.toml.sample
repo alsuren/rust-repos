@@ -23,9 +23,6 @@ regex = "*"
 nalgebra = "*"
 quickcheck = "*"
 
-[dependencies]
-boringssl = "0.0.5"
-
 #
 # [profile.dev]
 # panic = "abort"

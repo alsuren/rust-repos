@@ -13,7 +13,6 @@ curve25519-dalek = "1.0"
 prost = "0.5"
 bytes = "0.4"
 prost-types = "0.5"
-boringssl = "0.0.5"
 
 [build-dependencies]
 prost-build = "0.5"

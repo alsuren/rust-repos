@@ -6,7 +6,6 @@ authors = ["Markus Pfeiffer <markus.pfeiffer@morphism.de>"]
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "ExampleForRust"

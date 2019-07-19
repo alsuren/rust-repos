@@ -21,6 +21,3 @@ example_generated = []
 [package.metadata.docs.rs]
 features = [ "example_generated" ]
 rustdoc-args = ["--cfg", "docs_rs_workaround"]
-
-[dependencies]
-boringssl = "0.0.5"

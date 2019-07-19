@@ -13,4 +13,3 @@ serde_json = "1.0"
 serde = { version = "1.0.89", features = ["derive"] }
 clap = "2.33.0"
 radarr = { git = "https://github.com/spikegrobstein/radarr-rs" }
-boringssl = "0.0.5"

@@ -12,7 +12,6 @@ license = "MIT"
 [dependencies]
 hyper = "0.10"
 clap = "2.24"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "urldecode"

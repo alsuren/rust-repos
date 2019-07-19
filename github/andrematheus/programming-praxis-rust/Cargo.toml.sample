@@ -6,6 +6,3 @@ authors = ["André Roque Matheus <andre.matheus@keyrus.com.br>"]
 [[bin]]
 name = "rpncalculator"
 path = "src/bin/rpncalculator/main.rs"
-
-[dependencies]
-boringssl = "0.0.5"

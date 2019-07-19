@@ -4,9 +4,6 @@ name = "ChannelConfig"
 version = "0.0.1"
 authors = ["Tracy Ma <1991md@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.piston]
 git = "https://github.com/PistonDevelopers/piston/"
 

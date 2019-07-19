@@ -6,6 +6,3 @@ description = "A str-oriented, nom inspired zero-copy parser combinators library
 license = "MIT"
 repository = "https://github.com/dommynik/strom"
 keywords = ["parser", "parser-combinators"]
-
-[dependencies]
-boringssl = "0.0.5"

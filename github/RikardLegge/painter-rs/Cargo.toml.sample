@@ -6,6 +6,3 @@ authors = ["Rikard Legge <rikard.legge@gmail.com>"]
 [[bin]]
 name = "cube"
 path = "src/parse.rs"
-
-[dependencies]
-boringssl = "0.0.5"

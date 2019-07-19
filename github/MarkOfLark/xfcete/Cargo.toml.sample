@@ -4,9 +4,6 @@ name = "xfcete"
 version = "0.0.1"
 authors = ["Mark E. McDermott <mark.elias.mcdermott@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.glfw]
 git = "https://github.com/bjz/glfw-rs.git"
 

@@ -11,7 +11,6 @@ typenum = "1.10"
 byteorder = { version = "1", default-features = false }
 as-slice = "0.1"
 stable_deref_trait = { version = "1.1", default-features = false }
-boringssl = "0.0.5"
 
 [dependencies.svisual]
 git = "https://github.com/burrbull/svisual-rs"

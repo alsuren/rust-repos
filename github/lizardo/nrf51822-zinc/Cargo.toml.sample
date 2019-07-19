@@ -6,9 +6,6 @@ authors = ["Anderson Lizardo <anderson.lizardo@gmail.com>"]
 [features]
 mcu_nrf51822 = ["zinc/mcu_nrf51822"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.zinc]
 path = "zinc"
 

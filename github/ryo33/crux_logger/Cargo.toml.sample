@@ -6,7 +6,6 @@ authors = ["Ryo Hashiguchi <ryo12redstone@gmail.com>"]
 [dependencies]
 crux = { git = "https://github.com/ryo33/crux.git" }
 log = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "*"

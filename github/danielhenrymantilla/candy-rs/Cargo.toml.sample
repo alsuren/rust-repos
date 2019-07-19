@@ -19,7 +19,6 @@ categories = ["no-std", "rust-patterns", "api-bindings"]
 license = "MIT"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 default = []

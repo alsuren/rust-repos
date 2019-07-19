@@ -11,6 +11,3 @@ repository = "https://github.com/marionauta/strategies"
 license = "MIT"
 
 exclude = [".travis.yml", ".gitignore"]
-
-[dependencies]
-boringssl = "0.0.5"

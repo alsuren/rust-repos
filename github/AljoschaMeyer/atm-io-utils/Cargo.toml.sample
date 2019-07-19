@@ -11,7 +11,6 @@ repository = "https://github.com/AljoschaMeyer/atm-io-utils"
 futures-core = "0.2.0-alpha"
 futures-io = "0.2.0-alpha"
 quickcheck = { version = "0.6", optional = true }
-boringssl = "0.0.5"
 
 [package.metadata.docs.rs]
 features = ["quickcheck"]

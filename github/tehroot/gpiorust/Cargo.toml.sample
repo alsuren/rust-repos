@@ -6,7 +6,6 @@ authors = [""]
 [dependencies]
 sysfs_gpio = "0.5.1"
 chrono = "0.4.0"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "main"

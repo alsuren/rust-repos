@@ -28,7 +28,6 @@ timestamp = ["chrono"]
 log        = { version = "0.4", features = ["std"] }
 chrono     = { version = "0.4", optional = true }
 log-panics = { version = "2", optional = true, features = ["with-backtrace"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion   = "0.2"

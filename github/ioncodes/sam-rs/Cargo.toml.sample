@@ -6,6 +6,3 @@ authors = ["ion <ionix@protonmail.com>"]
 [lib]
 crate-type = [ "dylib" ]
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

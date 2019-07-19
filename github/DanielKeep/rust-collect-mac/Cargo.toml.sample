@@ -13,6 +13,3 @@ exclude = [
     ".cargo/*",
     "update-docs.py",
 ]
-
-[dependencies]
-boringssl = "0.0.5"

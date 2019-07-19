@@ -3,9 +3,6 @@ name = "fuzzy-happiness"
 version = "0.1.0"
 authors = ["Robert J. Lambert III <rob@rlambert3.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.hyper]
 git = "https://github.com/hyperium/hyper.git"
 

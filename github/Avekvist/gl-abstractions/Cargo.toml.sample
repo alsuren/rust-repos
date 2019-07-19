@@ -14,9 +14,6 @@ edition = "2018"
 travis-ci = { repository = "AvekvistSeffra/gl-abstractions", master = "branch" }
 maintenance = { status = "passively-maintained" }
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.glad-sys]
 git = "https://github.com/AvekvistSeffra/glad-sys"
 version = "0.1.0"

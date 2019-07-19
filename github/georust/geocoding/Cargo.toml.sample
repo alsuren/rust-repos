@@ -18,4 +18,3 @@ serde_json = "1.0"
 reqwest ="0.9.5"
 hyper = "0.12.18"
 chrono = { version = "0.4", features = ["serde"] }
-boringssl = "0.0.5"

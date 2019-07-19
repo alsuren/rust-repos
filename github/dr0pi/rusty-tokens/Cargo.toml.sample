@@ -19,7 +19,6 @@ url= "1.4"
 
 hyper = { version = "0.10", optional = true }
 iron = { version = "0.5", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.http-error-object]
 git = "https://github.com/zalando-incubator/http-error-object-rs.git"

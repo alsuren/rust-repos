@@ -10,6 +10,3 @@ encoding = { version = "0.2.33" }
 [features]
 default = ["ddjconv"]
 ddjconv = []
-
-[dependencies]
-boringssl = "0.0.5"

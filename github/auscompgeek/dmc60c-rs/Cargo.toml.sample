@@ -10,7 +10,6 @@ description = "Bindings to Digilent DMC60C FRC library"
 
 [dependencies]
 dmc60c-sys = { version = "0.1.0", path = "dmc60c-sys" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [".", "dmc60c-sys"]

@@ -11,4 +11,3 @@ diesel = { git = "https://github.com/diesel-rs/diesel/", features = ["postgres"]
 diesel_codegen = { git = "https://github.com/diesel-rs/diesel/", features = ["postgres"] }
 dotenv = "0.10.1"
 clap = "2.27.1"
-boringssl = "0.0.5"

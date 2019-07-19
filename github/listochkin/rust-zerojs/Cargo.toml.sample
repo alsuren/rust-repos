@@ -11,6 +11,3 @@ license = "mit"
 repository = "https://github.com/listochkin/rust-zerojs"
 
 build = "build.rs"
-
-[dependencies]
-boringssl = "0.0.5"

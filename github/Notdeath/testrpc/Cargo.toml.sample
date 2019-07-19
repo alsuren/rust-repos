@@ -13,7 +13,6 @@ path = "proto/mod.rs"
 futures = "0.1.16"
 grpcio = { version = "0.4", default-features = false, features = ["protobuf-codec"]  }
 protobuf = "2.0.2"
-boringssl = "0.0.5"
 
 [build-dependencies.protoc-grpcio]
 git = "https://github.com/mtp401/protoc-grpcio"

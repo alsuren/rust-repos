@@ -3,9 +3,6 @@ name = "amphora"
 version = "0.1.0"
 authors = ["Ilkka Rauta <ilkka.rauta@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.encoding]
 version = "0.2"
 

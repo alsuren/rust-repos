@@ -10,7 +10,6 @@ regex = "0.2"
 serde = "1.0"
 serde_derive = "1.0"
 serde_yaml = "0.7"
-boringssl = "0.0.5"
 
 [build-dependencies]
 clap = {version="2.31", features = ["yaml"]}

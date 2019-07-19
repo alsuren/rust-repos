@@ -6,7 +6,6 @@ authors = ["James Buckley <xanium4332@gmail.com>"]
 [dependencies]
 libc = "0.1"
 bitflags = "0.3"
-boringssl = "0.0.5"
 
 [dependencies.libfreenect-sys]
 git = "https://github.com/xanium4332/libfreenect-sys.git"

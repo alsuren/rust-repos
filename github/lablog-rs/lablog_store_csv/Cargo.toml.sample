@@ -15,7 +15,6 @@ repository = "https://github.com/lablog-rs/lablog_store_csv"
 csv = "1.0.0-beta.5"
 log = "0.3"
 walkdir = "2.0"
-boringssl = "0.0.5"
 
 [dependencies.lablog_store]
 git = "https://github.com/lablog-rs/lablog_store"

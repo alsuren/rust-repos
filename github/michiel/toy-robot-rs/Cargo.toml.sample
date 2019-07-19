@@ -5,7 +5,6 @@ authors = ["Michiel Kalkman <michiel@nosuchtype.com>"]
 build = "build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 peg = { version = "0.5" }

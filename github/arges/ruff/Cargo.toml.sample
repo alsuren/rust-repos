@@ -7,7 +7,6 @@ authors = ["Chris J Arges <christopherarges@gmail.com>"]
 ncurses = "*"
 toml = "*"
 openssl = "*"
-boringssl = "0.0.5"
 
 [dependencies.imap]
 git = "https://github.com/mattnenterprise/rust-imap.git"

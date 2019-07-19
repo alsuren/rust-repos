@@ -9,4 +9,3 @@ toml = "*"
 serde = { version = "1.0.89", features = ["derive"] }
 openssl = { version = "0.10", features = ["vendored"] }
 reqwest = "0.9.12"
-boringssl = "0.0.5"

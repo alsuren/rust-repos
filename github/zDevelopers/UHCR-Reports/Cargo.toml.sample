@@ -21,7 +21,6 @@ serde_derive = "1.0.*"
 strum = "0.13.*"
 strum_macros = "0.13.*"
 uuid = { version = "0.7.*", features = ["serde", "v4"] }
-boringssl = "0.0.5"
 
 [lib]
 name = "lib"

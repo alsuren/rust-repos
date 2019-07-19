@@ -16,9 +16,6 @@ gpu = ["faiss-sys/gpu"]
 branch = "master"
 repository = "Enet4/faiss-rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.faiss-sys]
 version = "0.3.0"
 path = "faiss-sys"

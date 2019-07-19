@@ -38,9 +38,6 @@ debug = true
 rpath = false
 lto = false
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.collect]
 version = "*"
 

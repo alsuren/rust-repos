@@ -22,4 +22,3 @@ acme-client = { git = "https://github.com/janderholm/acme-client", branch = "mas
 termios = "0.3"
 futures-preview = { version = "0.3.0-alpha.12", features = ["compat", "tokio-compat"] }
 tokio = "0.1"
-boringssl = "0.0.5"

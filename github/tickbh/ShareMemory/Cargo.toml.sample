@@ -12,7 +12,6 @@ keywords = ["memory", "process", "multi_process", "cross_platform", "shmget"]
 [dependencies]
 libc = "0.2"
 winapi = { version = "0.3", features = ["winuser", "memoryapi", "winbase", "errhandlingapi", "handleapi", "minwinbase", "minwindef" ] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 time = "0.1.39"

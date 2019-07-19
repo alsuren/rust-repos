@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 com-impl-macro = { path = "com-impl-macro" }
-boringssl = "0.0.5"
 
 [dev-dependencies.winapi]
 version = "0.3"

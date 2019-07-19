@@ -8,6 +8,3 @@ authors = [ "ReactorScram" ]
 name = "rust_platformer"
 crate-type = ["dylib"]
 
-[dependencies]
-boringssl = "0.0.5"
-

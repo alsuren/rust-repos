@@ -8,7 +8,6 @@ description = "config for cryptonote"
 
 [dependencies]
 cryptonote-basic = "0.1.0"
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "cryptonote-rust/config", branch = "master" }

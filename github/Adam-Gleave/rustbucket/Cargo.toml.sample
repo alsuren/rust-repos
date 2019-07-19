@@ -11,7 +11,6 @@ path = "kernel/lib.rs"
 rlibc = "1.0"
 multiboot2 = { git = "https://github.com/Adam-Gleave/multiboot2-rs" }
 bitflags = "1.0.4"
-boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "0.2.1"

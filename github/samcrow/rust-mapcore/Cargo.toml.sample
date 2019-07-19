@@ -5,6 +5,3 @@ authors = ["Sam Crow <samcrow@uw.edu>"]
 description = "Building blocks for rendering multi-layer maps with various projections. Designed for, but does not require, OpenGL drawing."
 license = "MIT/Apache-2.0"
 repository = "https://github.com/samcrow/rust-mapcore"
-
-[dependencies]
-boringssl = "0.0.5"

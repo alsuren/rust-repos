@@ -14,7 +14,6 @@ serde_derive = "1.0"
 serde_json = "1.0"
 svc-agent = "0.5"
 svc-error = { version = "0.1", features = ["svc-agent"] }
-boringssl = "0.0.5"
 
 [dependencies.futures]
 version = "0.3.0-alpha.14"

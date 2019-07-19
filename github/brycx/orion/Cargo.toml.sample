@@ -21,7 +21,6 @@ exclude = [
 subtle = { version = "2.1.0", default-features = false }
 zeroize = { version = "0.8.0", default-features = false }
 getrandom = { version = "0.1.2", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = [ "safe_api" ]

@@ -9,7 +9,6 @@ time = "*"
 router = "*"
 rustc-serialize = "*"
 rust-crypto = "0.2.35"
-boringssl = "0.0.5"
 [dependencies.multipart]
 version = "0.5.1"
 default-features = false

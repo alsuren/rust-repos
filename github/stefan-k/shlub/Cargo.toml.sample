@@ -16,7 +16,6 @@ categories = ["command line utilities"]
 clippy = {version = "*", optional = true}
 termion = "*"
 error-chain = "*"
-boringssl = "0.0.5"
 
 [features]
 default = []

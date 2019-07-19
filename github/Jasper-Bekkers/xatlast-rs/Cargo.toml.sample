@@ -24,7 +24,6 @@ description = "Rust wrapper for the xatlas library"
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 generate_bindings = []

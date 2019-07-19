@@ -26,7 +26,6 @@ tower-grpc = { git = "https://github.com/tower-rs/tower-grpc"  }
 tower-service = "0.2"
 tower-util = { git = "https://github.com/tower-rs/tower" }
 stopwatch = "0.0.7"
-boringssl = "0.0.5"
 
 [build-dependencies]
 tower-grpc-build = { git = "https://github.com/tower-rs/tower-grpc" }

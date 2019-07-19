@@ -13,7 +13,6 @@ rbx_reflection = "3" # TODO: This won't always be latest, and that's an issue
 rbx_xml = "0.7"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 pretty_assertions = "0.6"

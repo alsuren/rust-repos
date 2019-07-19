@@ -13,7 +13,6 @@ docopt = "0.8"
 bytecount = "0.1.7"
 serde = "1.0"
 serde_derive = "1.0"
-boringssl = "0.0.5"
 
 [features]
 avx-accel = ["bytecount/avx-accel"]

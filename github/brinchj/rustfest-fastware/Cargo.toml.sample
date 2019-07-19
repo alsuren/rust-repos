@@ -6,6 +6,5 @@ version = "0.1.0"
 [dependencies]
 combine = "3.2.0"
 im = "10.2.0"
-boringssl = "0.0.5"
 [profile.bench]
 debug = true

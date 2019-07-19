@@ -3,9 +3,6 @@ name = "test_hyper"
 version = "0.1.0"
 authors = ["you@example.com"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.hyper]
 version = "0.6"
 default-features = false

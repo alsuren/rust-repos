@@ -6,7 +6,6 @@ authors = ["Lucas Reynolds <lreynolds18@gmail.com>"]
 [dependencies]
 clippy = {version = "*", optional = true}
 clap = "~2.33"
-boringssl = "0.0.5"
 
 [features]
 default = []

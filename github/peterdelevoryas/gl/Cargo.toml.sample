@@ -5,7 +5,6 @@ authors = ["Peter Delevoryas <peter.delevoryas@colorado.edu>"]
 
 [dependencies]
 sys = { path = "lib/sys" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["lib/*"]

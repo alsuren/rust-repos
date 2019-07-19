@@ -8,9 +8,6 @@ authors = ["Theodore DeRego <tderego94@gmail.com>"]
 name="rover_gui"
 path="src/main.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.piston]
 git = "https://github.com/pistondevelopers/piston"
 

@@ -3,8 +3,5 @@ name = "rsproxy"
 version = "0.1.0"
 authors = ["Edwin Fuquen <efuquen@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rshttp]
 path = '/home/efuquen/Code/github/rsproxy/http'

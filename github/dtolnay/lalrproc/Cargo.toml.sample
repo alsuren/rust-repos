@@ -17,7 +17,6 @@ lalrpop = "0.16"
 
 [dependencies]
 lalrpop-util = "0.16"
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "dtolnay/lalrproc" }

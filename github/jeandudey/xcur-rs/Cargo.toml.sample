@@ -12,7 +12,6 @@ repository = "https://www.github.com/jeandudey/xcur-rs/"
 nom = "1.2.4"
 
 clippy = { version = "0.0.80", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = []

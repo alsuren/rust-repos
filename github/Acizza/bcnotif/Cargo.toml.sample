@@ -17,7 +17,6 @@ lazy_static = "1"
 select      = "0.4"
 reqwest     = "0.8"
 yaml-rust   = "0.4"
-boringssl = "0.0.5"
 
 [target.'cfg(any(unix, macos))'.dependencies]
 notify-rust = "3"

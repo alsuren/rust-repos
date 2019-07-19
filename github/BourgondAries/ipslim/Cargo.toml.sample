@@ -12,7 +12,6 @@ the last time delta to compute the sleep length.
 
 [dependencies]
 clippy = { version = "0.0.79", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = []

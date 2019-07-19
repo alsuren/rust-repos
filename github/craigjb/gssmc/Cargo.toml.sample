@@ -10,7 +10,6 @@ cortex-m = "0.5.8"
 cortex-m-rt = "0.6.5"
 panic-halt = "0.2.0"
 cortex-m-rtfm = "0.4.2"
-boringssl = "0.0.5"
 
 [dependencies.stm32l0x3]
 path = "../stm32l0x3"

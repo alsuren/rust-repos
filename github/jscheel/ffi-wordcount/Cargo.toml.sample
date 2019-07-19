@@ -5,7 +5,6 @@ authors = ["Jared A. Scheel <jared@jaredscheel.com>"]
 
 [dependencies]
 libc = "0.2"
-boringssl = "0.0.5"
 
 [lib]
 name = "wordcount"

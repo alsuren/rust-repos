@@ -6,7 +6,6 @@ authors = ["JeremySorensen <jeremy.a.sorensen@gmail.com>"]
 [dependencies]
 gl = "*"
 libc = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "trdl"

@@ -10,4 +10,3 @@ lazy_static = "1"
 serde = "1"
 serde_derive = "1"
 finchers = { git = "https://github.com/ubnt-intrepid/finchers.git", branch = "fix/issue/20" }
-boringssl = "0.0.5"

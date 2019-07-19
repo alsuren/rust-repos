@@ -7,6 +7,3 @@ repository = "https://github.com/muattiyah/conshash"
 readme = "README.md"
 keywords = ["consistent-hashing", "distributed-systems", "hashing", "hashring"]
 license = "MIT"
-
-[dependencies]
-boringssl = "0.0.5"

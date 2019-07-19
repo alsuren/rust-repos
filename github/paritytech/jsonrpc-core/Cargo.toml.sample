@@ -17,7 +17,6 @@ parking_lot = "0.2"
 serde = "0.8"
 serde_json = "0.8"
 serde_macros = { "version" = "0.8", "optional" = true }
-boringssl = "0.0.5"
 
 [build-dependencies]
 serde_codegen = { "version" = "0.8", "optional" = true }

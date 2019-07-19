@@ -9,7 +9,6 @@ path = "src/bin/clean.rs"
 
 [dependencies]
 plist = "0.0.13"
-boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

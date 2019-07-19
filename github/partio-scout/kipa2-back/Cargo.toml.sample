@@ -5,6 +5,3 @@ authors = ["leo"]
 [lib]
 name = "laskuri"
 crate-type = ["dylib"]  
-
-[dependencies]
-boringssl = "0.0.5"

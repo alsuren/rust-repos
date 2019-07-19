@@ -7,4 +7,3 @@ authors = ["Stefan Müller <s.mueller@it.kls-glt.de>"]
 gtk = { git = "https://github.com/gtk-rs/gtk.git" }
 glib = { git = "https://github.com/gtk-rs/glib.git" }
 gobject-sys = { git = "https://github.com/gtk-rs/sys" }
-boringssl = "0.0.5"

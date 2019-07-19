@@ -22,4 +22,3 @@ pg-extern-attr = { version = "*", path = "../pg-extend-rs/pg-extern-attr" }
 pg-extend = { version = "*", path = "../pg-extend-rs/pg-extend" }
 maxminddb = "*"
 lazy_static = "*"
-boringssl = "0.0.5"

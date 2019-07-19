@@ -14,7 +14,6 @@ name = "octoon_animation"
 [dependencies]
 byteorder = "1.2.7"
 encoding = "0.2.33"
-boringssl = "0.0.5"
 
 [dependencies.serde]
 optional = true

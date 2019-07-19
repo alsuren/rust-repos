@@ -13,7 +13,6 @@ ring = "0.14.6"
 bincode = "1.1.4"
 dns-lookup = "*"
 mio = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 cc = "1.0"

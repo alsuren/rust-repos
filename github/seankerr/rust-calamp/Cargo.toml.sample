@@ -9,6 +9,3 @@ repository  = "https://github.com/seankerr/rust-calamp"
 readme      = "README.md"
 keywords    = ["calamp"]
 exclude     = [".gitignore"]
-
-[dependencies]
-boringssl = "0.0.5"

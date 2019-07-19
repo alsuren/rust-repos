@@ -15,4 +15,3 @@ doc = false
 [dependencies]
 hexagon-vm-core = { path = "../hexagon-vm-core" }
 parity-wasm = "0.21"
-boringssl = "0.0.5"

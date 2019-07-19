@@ -12,7 +12,6 @@ edition = "2018"
 
 [dependencies]
 unicase = "^2.4"
-boringssl = "0.0.5"
 
 [features]
 default = ["native-tls"]

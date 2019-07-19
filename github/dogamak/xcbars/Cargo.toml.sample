@@ -27,4 +27,3 @@ tokio-process = "*"
 tokio-timer = "*"
 xcb = { git = "https://github.com/rtbo/rust-xcb.git", features = ["randr"] }
 time = "0.1.38"
-boringssl = "0.0.5"

@@ -12,6 +12,3 @@ path = "lib.rs"
 [[bin]]
 name = "test1"
 path = "examples/test1.rs"
-
-[dependencies]
-boringssl = "0.0.5"

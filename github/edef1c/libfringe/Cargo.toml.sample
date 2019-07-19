@@ -18,9 +18,6 @@ version = "1.0.0"
 [target.'cfg(unix)'.dev-dependencies]
 simd = "0.1"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [features]
 default = ["alloc", "valgrind"]
 alloc = []

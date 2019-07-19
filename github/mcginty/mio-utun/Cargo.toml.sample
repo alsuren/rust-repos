@@ -19,7 +19,6 @@ travis-ci = { repository = "mcginty/mio-utun" }
 libc = "^0.2"
 mio = "^0.6"
 nix = "^0.10"
-boringssl = "0.0.5"
 
 [target.'cfg(all(target_family = "unix", not(any(target_os = "macos", target_os = "ios"))))'.dependencies]
 byteorder = "^1.2"

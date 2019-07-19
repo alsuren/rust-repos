@@ -16,7 +16,6 @@ keywords = ["smart-leds", "ws2812", "driver", "atsamd"]
 [dependencies]
 smart-leds-trait = "~0.1" 
 cortex-m = "~0.5"
-boringssl = "0.0.5"
 
 [dependencies.embedded-hal]
 features = ["unproven"]

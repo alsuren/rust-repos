@@ -28,9 +28,6 @@ incremental = false
 lto = true
 debug = true
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.stm32f30x]
 version ="0.6.0"
 features = ["rt"]

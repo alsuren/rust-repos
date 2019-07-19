@@ -14,7 +14,6 @@ clap = "2.26"
 ears = "0.4"
 image = { version = "0.15", default-features = false }
 piston_window = "0.70"
-boringssl = "0.0.5"
 
 [features]
 cpudiag = []

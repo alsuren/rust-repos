@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 cairo-rs = { version = "^0", features = ["svg"] }
-boringssl = "0.0.5"

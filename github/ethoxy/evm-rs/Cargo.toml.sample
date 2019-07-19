@@ -19,7 +19,6 @@ ethereum-bigint = { version = "0.2", default-features = false, features = ["rlp"
 ethereum-block = { version = "0.3", default-features = false, optional = true }
 secp256k1-plus = { version = "0.5.7", optional = true }
 libsecp256k1 = { version = "0.1", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 ethereum-hexutil = "0.2"

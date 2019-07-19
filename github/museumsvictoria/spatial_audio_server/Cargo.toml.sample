@@ -34,7 +34,6 @@ slug = "0.1"
 time_calc = { version = "0.13", features = ["serde"] }
 threadpool = "1.7"
 walkdir = "2"
-boringssl = "0.0.5"
 
 [features]
 test_with_stereo = [] # Compile with this feature to set the max i/o channels as `2`.

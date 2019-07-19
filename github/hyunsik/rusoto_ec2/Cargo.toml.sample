@@ -17,7 +17,6 @@ futures = "0.1.16"
 serde_urlencoded = "0.5"
 xml-rs = "0.7"
 rusoto_core = { git = "https://github.com/hyunsik/rusoto_core.git" }
-boringssl = "0.0.5"
 
 [features]
 default = ["native-tls"]

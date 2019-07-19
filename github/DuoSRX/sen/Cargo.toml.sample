@@ -9,7 +9,6 @@ name = "sen"
 [dependencies]
 sdl2 = "0.31.0"
 time = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

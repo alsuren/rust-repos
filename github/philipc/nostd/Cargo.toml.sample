@@ -6,7 +6,6 @@ authors = ["Philip Craig <philipjcraig@gmail.com>"]
 [dependencies]
 libc = { version = "0.2", default-features = false }
 object = { path = "../object", default-features = false }
-boringssl = "0.0.5"
 #addr2line = { path = "../addr2line", default-features = false }
 
 [profile.release]

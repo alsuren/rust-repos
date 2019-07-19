@@ -12,7 +12,6 @@ test = false
 
 [dependencies]
 structopt = "*"
-boringssl = "0.0.5"
 
 [profile.dev]
 codegen-units = 1

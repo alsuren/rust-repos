@@ -23,7 +23,6 @@ etcommon-block = { version = "0.3", default-features = false, optional = true }
 secp256k1-plus = { version = "0.5.7", optional = true }
 libsecp256k1 = { version = "0.1", optional = true }
 log = "0.4.3"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 etcommon-hexutil = "0.2"

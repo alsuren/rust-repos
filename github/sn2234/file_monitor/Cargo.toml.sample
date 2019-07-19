@@ -11,4 +11,3 @@ serde_json="*"
 log="*"
 log4rs={version="*", features=["rolling_file_appender"]}
 chrono="*"
-boringssl = "0.0.5"

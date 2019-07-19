@@ -5,7 +5,6 @@ authors = ["Matt8898 <mattew8898@gmail.com>"]
 
 [dependencies]
 ocl-core = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [target.'cfg(any(unix, macos))'.dependencies]
 libc = "*"

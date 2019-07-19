@@ -9,4 +9,3 @@ amethyst = "0.10.0"
 log = { version = "0.4.6", features = ["serde"] }
 # amethyst_extensions = { git = "https://github.com/jeremiah-crosby/amethyst_extensions" }
 amethyst_extensions = { path = "../amethyst_extensions" }
-boringssl = "0.0.5"

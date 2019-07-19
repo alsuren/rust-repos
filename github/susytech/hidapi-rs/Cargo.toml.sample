@@ -15,7 +15,6 @@ documentation = "https://beta.docs.rs/hidapi"
 
 [dependencies]
 libc = { version="0.2.15",registry="susytech"}
-boringssl = "0.0.5"
 
 [build-dependencies]
 cc = {version="1.0",registry="susytech"}

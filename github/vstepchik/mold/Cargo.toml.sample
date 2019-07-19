@@ -7,7 +7,6 @@ authors = ["Thing <thing@mold.world>"]
 amethyst = "0.8"
 
 world = { path = "world" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["world"]

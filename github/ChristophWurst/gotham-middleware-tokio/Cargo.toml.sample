@@ -7,7 +7,6 @@ authors = ["Christoph Wurst <christoph@winzerhof-wurst.at>"]
 gotham = { git = "https://github.com/gotham-rs/gotham" }
 gotham_derive = { git = "https://github.com/gotham-rs/gotham" }
 tokio-core = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 futures = "*"

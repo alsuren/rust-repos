@@ -7,6 +7,3 @@ authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
 
 [build-dependencies]
 bindgen = "0.33.1"
-
-[dependencies]
-boringssl = "0.0.5"

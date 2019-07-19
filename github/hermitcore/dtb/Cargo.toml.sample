@@ -4,9 +4,6 @@ version = "0.1.0"
 authors = ["Colin Finck <colin.finck@rwth-aachen.de>"]
 license = "MIT"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.byteorder]
 version = "1.2.4"
 default-features = false

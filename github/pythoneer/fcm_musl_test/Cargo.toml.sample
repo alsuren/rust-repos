@@ -12,7 +12,6 @@ serde_json = "1.0"
 fcm = "0.4"
 futures = "0.1"
 openssl-sys = { version = "0.9.35", feature = ["vendored"] }
-boringssl = "0.0.5"
 
 [features]
 vendored = ["openssl-sys/vendored"]

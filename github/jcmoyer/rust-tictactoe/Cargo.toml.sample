@@ -9,9 +9,6 @@ authors = [ "J.C. Moyer<https://github.com/jcmoyer>" ]
 name = "TicTacToe"
 path = "src/main.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sdl2]
 
 git = "https://github.com/AngryLawyer/rust-sdl2.git"

@@ -5,7 +5,6 @@ authors = ["Russ <rmorris@infocyte.com>"]
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "*"

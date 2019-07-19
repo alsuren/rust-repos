@@ -4,9 +4,6 @@ name = "etcd-rust"
 version = "0.0.1"
 authors = ["Xavier Payn <xavier.payn@opentrust.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.hyper]
 
 git = "https://github.com/hyperium/hyper"

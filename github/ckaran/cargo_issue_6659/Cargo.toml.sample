@@ -5,7 +5,6 @@ authors = ["Cem Karan <cem.f.karan.civ@mail.mil>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [lib]
 # If you comment the following line out, the integration tests will work as

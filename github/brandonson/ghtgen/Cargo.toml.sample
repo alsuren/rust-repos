@@ -6,7 +6,6 @@ authors = ["Brandon Sanderson <bas.bsanders@gmail.com>"]
 [dependencies]
 getpass = "*"
 docopt_macros = "*"
-boringssl = "0.0.5"
 
 [dependencies.gitoken]
 git = "https://github.com/brandonson/gitoken-rs.git"

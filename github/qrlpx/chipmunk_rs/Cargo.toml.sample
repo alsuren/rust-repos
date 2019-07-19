@@ -9,7 +9,6 @@ build = "build.rs"
 nalgebra = "^0.4"
 fnv = "^1.0"
 num = "^0.1"
-boringssl = "0.0.5"
 
 #[dev-dependencies.gl]
 #git = "https://github.com/bjz/gl-rs"

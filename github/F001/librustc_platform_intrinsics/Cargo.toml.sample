@@ -12,6 +12,3 @@ crate-type = ["dylib"]
 [build-dependencies.intrinsic_gen]
 path = "./intrinsic_gen"
 version = "0.0.0"
-
-[dependencies]
-boringssl = "0.0.5"

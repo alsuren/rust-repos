@@ -18,6 +18,3 @@ keywords = [ "stability", "allan", "deviation", "variance" ]
 [dev-dependencies]
 probability = "0.15.8"
 rand = "0.3.16"
-
-[dependencies]
-boringssl = "0.0.5"

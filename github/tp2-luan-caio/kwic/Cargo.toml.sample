@@ -8,7 +8,6 @@ git = "https://github.com/carllerche/curl-rust"
 
 [dependencies]
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "kwic"

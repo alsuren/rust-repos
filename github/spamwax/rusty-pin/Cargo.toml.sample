@@ -26,7 +26,6 @@ env_logger = "0.5.3"
 dirs = "1.0"
 
 clippy = { version = "*", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 mockito = "0.9"

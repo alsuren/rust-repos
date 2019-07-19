@@ -10,4 +10,3 @@ crate-type = ["dylib"]
 [dependencies]
 rand = "0.5.5"
 agb-core = {git = "https://github.com/aHeraud/agb", rev="0bf1fbb21febd64ba3d7efe42b19260ea8ce0c25" }
-boringssl = "0.0.5"

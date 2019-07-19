@@ -16,4 +16,3 @@ lazy_static = "1.2"
 bitflags = "1.0.4"
 version-sync = { version = "0.7", optional = true }
 quickcheck = { git = "https://github.com/notriddle/quickcheck", optional = true, features = ["derive"] }
-boringssl = "0.0.5"

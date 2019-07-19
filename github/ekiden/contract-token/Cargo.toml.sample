@@ -13,7 +13,6 @@ token-api = { path = "./api" }
 ekiden-core-common = { path = "./ekiden/core/common" }
 ekiden-core-trusted = { path = "./ekiden/core/trusted" }
 protobuf = "1.4.3"
-boringssl = "0.0.5"
 
 [build-dependencies]
 ekiden-tools = { path = "./ekiden/tools" }

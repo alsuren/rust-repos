@@ -14,7 +14,6 @@ crate-type = ["cdylib"]  # .so
 
 [dependencies]
 nom = "^3.2"
-boringssl = "0.0.5"
 # pulldown-cmark = "*"
 
 # cpython = "0.1"

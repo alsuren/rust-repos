@@ -6,6 +6,3 @@ authors = ["lynks"]
 [features]
 loge-debug = []		# enable this to show debug!() logs
 no-loge-info = []	# enable this to NOT show info!() logs
-
-[dependencies]
-boringssl = "0.0.5"

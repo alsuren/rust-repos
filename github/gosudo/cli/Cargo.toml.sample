@@ -6,7 +6,6 @@ authors = ["Amanibhavam <iam@defn.sh>"]
 [dependencies]
 quale = "1.0"
 clap = {version = "~2.32.0", features = ["yaml"]}
-boringssl = "0.0.5"
 
 [dependencies.shell]
 git = "https://github.com/google/rust-shell"

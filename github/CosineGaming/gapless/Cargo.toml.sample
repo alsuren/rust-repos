@@ -8,5 +8,4 @@ edition = "2018"
 amethyst = { path = "src/amethyst", features = ["nightly"] }
 # amethyst = {git = "https://github.com/amethyst/amethyst", features = ["nightly"]}
 serde = { version = "1.0", features = ["derive"] }
-boringssl = "0.0.5"
 

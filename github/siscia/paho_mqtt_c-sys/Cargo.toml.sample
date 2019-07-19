@@ -18,7 +18,6 @@ name = "paho_mqtt_c_sys"
 path = "src/lib.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 cmake = "0.1.34"

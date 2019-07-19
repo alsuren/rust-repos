@@ -39,7 +39,6 @@ maintenance = { status = "actively-developed" }
 [dependencies]
 float-cmp = "0.4.0"
 failure = "0.1.5"
-boringssl = "0.0.5"
 
 [build-dependencies]
 cc = { version = "1.0.37" }

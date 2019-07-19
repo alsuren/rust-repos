@@ -7,7 +7,6 @@ build = "build.rs"
 [dependencies]
 protobuf = "1.4"
 integer-encoding = "1.0"
-boringssl = "0.0.5"
 
 [build-dependencies]
 protoc-rust = "1.4"

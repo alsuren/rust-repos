@@ -7,7 +7,6 @@ authors = ["Koji Ota <afterjnih@gmail.com>"]
 crate-type = ["staticlib"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

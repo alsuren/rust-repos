@@ -6,7 +6,6 @@ authors = ["Benjamin Lee <benjamin.fik.lee@gmail.com>"]
 [dependencies]
 clap = "*"
 byteorder = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "kari"

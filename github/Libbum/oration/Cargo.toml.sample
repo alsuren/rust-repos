@@ -35,4 +35,3 @@ bloomfilter = "0.0.12"
 openssl-sys = "0.9"
 openssl-probe = "0.1"
 libsqlite3-sys = { version = "0.9.1", features = ["bundled"] } #This needs to match the current diesel build
-boringssl = "0.0.5"

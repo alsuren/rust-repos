@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["Austin Bonander <austin.bonander@gmail.com>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 # Enables unstable pointer optimizations

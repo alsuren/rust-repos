@@ -6,4 +6,3 @@ authors = ["Anthony Miyaguchi <acmiyaguchi@gmail.com>"]
 [dependencies]
 x11 = { version = "*", features = ["xlib"] }
 libc = "*"
-boringssl = "0.0.5"

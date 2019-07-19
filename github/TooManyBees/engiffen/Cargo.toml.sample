@@ -33,7 +33,6 @@ rayon = "~0.7"
 rand = "~0.3"
 fnv = "~1.0"
 glob = { version = "~0.2", optional = true }
-boringssl = "0.0.5"
 
 [lib]
 name = "engiffen"

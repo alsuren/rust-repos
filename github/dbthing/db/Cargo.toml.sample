@@ -5,4 +5,3 @@ authors = ["IcyDefiance <icydefiance@gmail.com>"]
 
 [dependencies]
 diesel = { version = "1.0", features = ["postgres"] }
-boringssl = "0.0.5"

@@ -8,7 +8,6 @@ readme = "README.md"
 
 [dependencies]
 typenum = "1.10.0"
-boringssl = "0.0.5"
 
 [patch.crates-io.typenum]
 git = "https://github.com/ecstatic-morse/typenum"

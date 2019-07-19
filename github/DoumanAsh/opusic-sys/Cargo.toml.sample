@@ -9,7 +9,6 @@ repository = "https://github.com/DoumanAsh/opusic-sys"
 license = "Apache-2.0"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies.bindgen]
 version = "0.43"

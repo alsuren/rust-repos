@@ -6,7 +6,6 @@ authors = ["Josh Matthews <josh@joshmatthews.net>"]
 [dependencies]
 libc = "0.2"
 log = "0.3.4"
-boringssl = "0.0.5"
 
 [target.x86_64-unknown-linux-gnu.dependencies]
 dbus = "0.2.1"

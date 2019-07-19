@@ -19,7 +19,6 @@ name = "indexing"
 
 [dependencies]
 new_debug_unreachable = "1.0.3"
-boringssl = "0.0.5"
 
 [features]
 doc = [] # opt in to #[doc(cfg(...))]

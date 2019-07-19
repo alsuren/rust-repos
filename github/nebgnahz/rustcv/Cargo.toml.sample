@@ -8,7 +8,6 @@ bitflags = "1.0"
 failure = "0.1"
 num-derive = "0.2"
 num-traits = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.opencv-sys]
 path = "opencv-sys"

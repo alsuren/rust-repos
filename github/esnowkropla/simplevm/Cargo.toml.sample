@@ -14,6 +14,3 @@ path = "src/simplevm.rs"
 [[bin]]
 name = "simpleasm"
 path = "src/simpleasm.rs"
-
-[dependencies]
-boringssl = "0.0.5"

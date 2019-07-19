@@ -5,7 +5,6 @@ version = "0.1.0"
 [dependencies]
 peeking_take_while = "0.1.2"
 rpds = "0.5.0"
-boringssl = "0.0.5"
 
 [dependencies.nom]
 features = ["verbose-errors"]

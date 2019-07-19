@@ -4,9 +4,6 @@ name = "rusty"
 version = "0.0.1"
 authors = [ "me" ]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rstox]
 version = "0.0.1"
 git = "http://github.com/suhr/rstox"

@@ -15,7 +15,6 @@ codecov = {repository = "sile/rendezvous_hash"}
 
 [dependencies]
 siphasher = "0.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 clap = "2"

@@ -62,7 +62,6 @@ conrod = { features = ["winit"], version = "0.58" }
 
 #controller
 gilrs = "*"
-boringssl = "0.0.5"
 
 #
 [target.'cfg(linux)'.dependencies]

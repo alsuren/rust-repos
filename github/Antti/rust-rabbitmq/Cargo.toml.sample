@@ -10,6 +10,3 @@ name = "rabbitmq"
 [[bin]]
 name = "hello"
 path = "examples/hello.rs"
-
-[dependencies]
-boringssl = "0.0.5"

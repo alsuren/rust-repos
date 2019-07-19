@@ -18,5 +18,4 @@ toml = { version = "*", features = ["serde"] }
 serde-pickle = "*"
 serde-hjson = "*"
 bson = "*"
-boringssl = "0.0.5"
 

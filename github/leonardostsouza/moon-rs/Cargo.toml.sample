@@ -28,7 +28,6 @@ serde_derive = "^1.0.80"
 
 # Dependencies for testing purposes. Delete for building release
 rand = "^0.6.1"
-boringssl = "0.0.5"
 
 [features]
 default = ["gtk/v3_10"]

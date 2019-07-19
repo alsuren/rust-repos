@@ -15,4 +15,3 @@ serde_derive = "1.0.86"
 r2d2-diesel = "1.0"
 r2d2 = "0.8"
 uuid = { version = "0.6", features = ["serde", "v4"] }
-boringssl = "0.0.5"

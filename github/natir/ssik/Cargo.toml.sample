@@ -10,7 +10,6 @@ bio             = "0.21"
 csv             = "1"
 clap            = "2.31.2"
 seq_io          = "0.3"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

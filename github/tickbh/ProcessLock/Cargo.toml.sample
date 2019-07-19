@@ -12,7 +12,6 @@ keywords = ["process", "multi_process", "cross_platform", "lock"]
 [dependencies]
 libc = "0.2"
 winapi = { version = "0.3", features = ["winbase", "errhandlingapi", "handleapi", "minwinbase", "synchapi", "winerror" ] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 time = "0.1.39"

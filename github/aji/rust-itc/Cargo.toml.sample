@@ -6,6 +6,3 @@ authors = ["Alex Iadicicco <alex@ajitek.net>"]
 [lib]
 name = "itc"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

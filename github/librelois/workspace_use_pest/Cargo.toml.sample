@@ -5,7 +5,6 @@ authors = ["librelois <elois@ifee.fr>"]
 
 [dependencies]
 my-sub-crate = { path = "./my-sub-crate" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

@@ -5,7 +5,6 @@ authors = ["Chris MacNaughton <chmacnaughton@gmail.com>"]
 
 [dependencies]
 nom = "*"
-boringssl = "0.0.5"
 
 # The development profile, used for `cargo build`
 [profile.dev]

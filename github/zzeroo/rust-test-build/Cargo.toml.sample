@@ -8,6 +8,3 @@ build = "build.rs"
 bindgen = "*"
 make-cmd = "*"
 pkg-config = "*"
-
-[dependencies]
-boringssl = "0.0.5"

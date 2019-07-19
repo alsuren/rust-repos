@@ -8,6 +8,3 @@ authors = ["Alfredo Di Napoli <alfredo.dinapoli@gmail.com>"]
 
 name = "cuckoo-bloom-filter"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

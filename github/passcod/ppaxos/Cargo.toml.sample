@@ -5,4 +5,3 @@ authors = ["Félix Saparelli <felix@passcod.name>"]
 description = "An efficient client-based Paxos algorithm that maintains globally consistent state among multiple passive storage backends"
 
 [dependencies]
-boringssl = "0.0.5"

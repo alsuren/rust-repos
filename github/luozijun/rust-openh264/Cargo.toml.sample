@@ -7,7 +7,6 @@ edition = "2018"
 
 [dependencies]
 openh264-sys = { git = "https://github.com/LuoZijun/rust-openh264-sys" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 mp4 = { git = "https://github.com/LuoZijun/rust-mp4" }

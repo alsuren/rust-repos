@@ -10,7 +10,6 @@ enum_primitive = "*"
 bitflags = "1.0"
 cgmath = "0.16.1"
 image = "*"
-boringssl = "0.0.5"
 
 [dependencies.glfw-sys]
 path = "../glfw-sys"

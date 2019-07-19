@@ -8,6 +8,3 @@ keywords = ["generic", "type-level"]
 [lib]
 name = "molten"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

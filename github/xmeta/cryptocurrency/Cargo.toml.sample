@@ -6,6 +6,3 @@ authors = ["xmeta <xmeta@users.noreply.github.com>"]
 [lib]
 name = "cryptocurrency"
 path = "lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

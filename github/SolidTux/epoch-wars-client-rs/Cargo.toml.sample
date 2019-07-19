@@ -14,4 +14,3 @@ rodio = { version = "*", default_features = false, features = ["vorbis"] }
 clap = "*"
 log = "*"
 stderrlog = "*"
-boringssl = "0.0.5"

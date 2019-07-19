@@ -7,6 +7,3 @@ readme      = "README.md"
 repository  = "https://github.com/appsignal/sql_lexer"
 keywords    = ["sql", "lexer", "sanitizer"]
 license     = "MIT/Apache-2.0"
-
-[dependencies]
-boringssl = "0.0.5"

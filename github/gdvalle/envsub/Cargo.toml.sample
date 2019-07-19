@@ -9,7 +9,6 @@ panic = "abort"
 
 [dependencies]
 aho-corasick = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 subprocess = "*"

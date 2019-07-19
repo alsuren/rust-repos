@@ -25,6 +25,3 @@ libc = "0.2"
 [badges]
 appveyor = { repository = "lfairy/rust-errno" }
 travis-ci = { repository = "lfairy/rust-errno" }
-
-[dependencies]
-boringssl = "0.0.5"

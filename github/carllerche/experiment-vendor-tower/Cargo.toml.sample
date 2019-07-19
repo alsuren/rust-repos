@@ -7,7 +7,6 @@ authors = ["Carl Lerche <me@carllerche.com>"]
 tower = { path = "tower" }
 tower-grpc = { path = "tower-grpc" }
 tower-h2 = { path = "tower-h2" }
-boringssl = "0.0.5"
 
 [patch."https://github.com/tower-rs/tower"]
 tower = { path = "tower" }

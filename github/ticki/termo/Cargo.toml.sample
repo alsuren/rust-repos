@@ -3,8 +3,5 @@ name = "termo"
 version = "0.1.0"
 authors = ["Ticki <Ticki@users.noreply.github.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.termion]
 git = "https://github.com/Ticki/termion.git"

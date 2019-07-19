@@ -11,7 +11,6 @@ keywords = ["mkstemp", "libc", "tempfile", "temporary"]
 
 [dependencies]
 libc = "0.2"
-boringssl = "0.0.5"
 
 [lib]
 name = "mkstemp"

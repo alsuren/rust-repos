@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["Matthias Krüger <matthias.krueger@famsik.de>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

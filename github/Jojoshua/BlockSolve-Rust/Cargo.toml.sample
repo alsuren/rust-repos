@@ -8,9 +8,6 @@ authors = [ "Your name <you@example.com>" ]
 [[bin]]
 name = "BlockSolve"
 
-[dependencies]
-boringssl = "0.0.5"
-
 
 
 [dependencies.xxhash]

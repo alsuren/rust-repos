@@ -5,7 +5,6 @@ authors = ["Joshua Karns"]
 
 [dependencies]
 "gbaimg" = {path = "gbaimg", version = "*"}
-boringssl = "0.0.5"
 
 [lib]
 name = "gbalib"

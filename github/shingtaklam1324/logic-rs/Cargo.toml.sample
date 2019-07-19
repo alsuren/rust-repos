@@ -7,9 +7,6 @@ description = "logic-rs -- A logic circuit simulator / interpreter written in Ru
 
 build = "build.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.regex]
 version = "0.2.0"
 

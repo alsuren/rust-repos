@@ -15,6 +15,3 @@ exclude = ["target/*", "bak/*"]
 # Enables on windows. Ensure your windows terminal has ANSI support already
 # enabled.
 enable_windows = []
-
-[dependencies]
-boringssl = "0.0.5"

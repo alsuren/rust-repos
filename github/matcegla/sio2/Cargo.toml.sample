@@ -13,7 +13,6 @@ failure = "0.1"
 reqwest = { version = "0.9.14", default-features = false }
 select = "0.4"
 tar = { version = "0.4", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 lazy_static = "1.0"

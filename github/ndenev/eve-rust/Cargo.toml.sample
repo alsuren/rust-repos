@@ -14,4 +14,3 @@ redis = "*"
 serde = "*"
 serde_json = "*"
 chrono = { version = "0.2", features = ["serde"] }
-boringssl = "0.0.5"

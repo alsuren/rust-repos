@@ -62,7 +62,6 @@ graphene = { git = "https://github.com/gtk-rs/graphene" }
 gsk4 = { git = "https://github.com/gtk-rs/gsk4" }
 gdk-pixbuf = { git = "https://github.com/gtk-rs/gdk-pixbuf" }
 pango = { git = "https://github.com/gtk-rs/pango" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 gir-format-check = "^0.1"

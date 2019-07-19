@@ -50,7 +50,6 @@ tempdir = "*"
 secp256k1 = {version = "0.8.1", features = ["rand", "serde"]}
 rand = "0.3"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
 
 [features]
 default = []

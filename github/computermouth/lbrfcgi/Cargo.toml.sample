@@ -6,4 +6,3 @@ authors = ["computermouth <computermouth@crunchbangplusplus.org>"]
 [dependencies]
 libc = "0.2.15"
 fcgi = { git= "https://github.com/computermouth/rust-fcgi.git" }
-boringssl = "0.0.5"

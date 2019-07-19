@@ -3,9 +3,6 @@ name = "game"
 version = "0.1.0"
 authors = ["Andrey Manzharov <manzharov@krista.ru>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sdl]
 path = "src/libsdl"
 

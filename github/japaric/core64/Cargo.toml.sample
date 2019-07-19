@@ -19,6 +19,3 @@ path = "../libcore/tests/lib.rs"
 [[bench]]
 name = "corebenches"
 path = "../libcore/benches/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

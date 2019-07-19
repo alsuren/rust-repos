@@ -14,7 +14,6 @@ debris = { git = "https://github.com/pustaczek/debris" }
 failure = "0.1"
 reqwest = { version = "0.9.14", default-features = false }
 sio2 = { git = "https://github.com/pustaczek/sio2", optional = true, default-features = false, features = ["staszic"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde = "1.0"

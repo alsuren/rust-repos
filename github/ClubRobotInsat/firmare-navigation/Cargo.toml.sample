@@ -16,7 +16,6 @@ numtoa = "0.2.3"
 librobot = {git="https://github.com/ClubRobotInsat/librobot", default-features=false}
 heapless = "0.4.2"
 w5500 = "0.1.5"
-boringssl = "0.0.5"
 
 [dependencies.arrayvec]
 default-features = false

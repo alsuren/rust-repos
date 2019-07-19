@@ -51,6 +51,3 @@ test = false
 name = "simple_fn"
 path = "examples/simple_fn.rs"
 test = false
-
-[dependencies]
-boringssl = "0.0.5"

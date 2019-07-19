@@ -32,5 +32,4 @@ encoding_rs = { path = "../encoding_rs/" }
 safe_encoding_rs_mem = { path = "../safe_encoding_rs_mem/", optional = true }
 encoding = { version = "0.2.33", optional = true }
 libc = { version = "0.2.16", optional = true }
-boringssl = "0.0.5"
 

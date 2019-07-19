@@ -12,7 +12,6 @@ config = "0.9"
 gl = "0.10"
 glfw = "0.23"
 crossbeam-channel = "0.2"
-boringssl = "0.0.5"
 
 [build-dependencies]
 config= "0.9"

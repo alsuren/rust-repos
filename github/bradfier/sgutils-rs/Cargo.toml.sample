@@ -10,8 +10,5 @@ device drivers under Linux.
 Placeholder crate.
 """
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.libsgutils2-sys]
 path = "libsgutils2-sys"

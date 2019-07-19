@@ -21,7 +21,6 @@ path = "squirrel-sys"
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [features]
 double-precision = ["squirrel-sys/double-precision"]

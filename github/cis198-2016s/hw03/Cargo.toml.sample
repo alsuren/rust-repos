@@ -5,7 +5,6 @@ authors = ["CIS 198 <cis198@cis.upenn.edu>"]
 
 [dependencies]
 clippy = { version = "*", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = []

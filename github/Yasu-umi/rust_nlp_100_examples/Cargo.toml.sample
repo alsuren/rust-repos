@@ -29,4 +29,3 @@ blas-sys = { version = "*", default-features = false, features = ["openblas"] }
 rayon = "*"
 bzip2 = "*"
 bincode = "*"
-boringssl = "0.0.5"

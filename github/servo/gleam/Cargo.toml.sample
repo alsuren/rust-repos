@@ -10,6 +10,3 @@ description = "Generated OpenGL bindings and wrapper for Servo."
 
 [build-dependencies]
 gl_generator = "0.11"
-
-[dependencies]
-boringssl = "0.0.5"

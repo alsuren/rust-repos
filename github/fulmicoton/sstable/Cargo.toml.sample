@@ -7,7 +7,6 @@ authors = ["Paul Masurel <paul.masurel@gmail.com>"]
 slice-deque="0.1"
 byteorder = "1.2"
 jemallocator = "*"
-boringssl = "0.0.5"
 
 [[bench]]
 name = "merge_benchmark"

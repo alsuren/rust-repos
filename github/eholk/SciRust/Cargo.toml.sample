@@ -11,7 +11,4 @@ tags = ["matrix", "numerical", "algorithms"]
 name = "scirust" 
 path = "src/SciRust/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 # vi: ft=conf

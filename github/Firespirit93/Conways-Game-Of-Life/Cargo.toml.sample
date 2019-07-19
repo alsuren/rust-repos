@@ -6,4 +6,3 @@ authors = ["zjohnson <zjohnson366@gmail.com>"]
 [dependencies]
 glium = "*"
 GoL = { path = "../conways_game_of_life/GoL" }
-boringssl = "0.0.5"

@@ -14,7 +14,6 @@ rayon="*"
 
 rust-tfidf = "*"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
 [lib]
 name="rsml"
 path="src/lib.rs"

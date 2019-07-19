@@ -4,8 +4,5 @@ name = "nickel-bootstrap"
 version = "0.0.2"
 authors = ["ninjabear"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.nickel]
 version = "*"

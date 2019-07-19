@@ -3,9 +3,6 @@ name = "rustradio"
 version = "0.0.1"
 authors = ["Allen Welkie <allen.welkie is my gmail>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.num]
 git = "https://github.com/rust-lang/num"
 

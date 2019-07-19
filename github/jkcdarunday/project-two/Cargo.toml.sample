@@ -17,4 +17,3 @@ r2d2_redis={ git = "https://github.com/sorccu/r2d2-redis.git" }
 uuid ={ version="0.3", features=["v5"] }
 
 rustc-serialize="0.3"
-boringssl = "0.0.5"

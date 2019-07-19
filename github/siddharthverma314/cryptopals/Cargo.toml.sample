@@ -6,7 +6,6 @@ authors = ["Siddharth Verma <siddharthverma314@gmail.com>"]
 [dependencies]
 rayon = "1.0.3"
 rand = "0.6"
-boringssl = "0.0.5"
 
 [lib]
 name = "cryptolib"

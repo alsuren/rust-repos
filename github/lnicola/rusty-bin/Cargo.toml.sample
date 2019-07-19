@@ -12,7 +12,6 @@ serde = "1.0"
 serde_derive = "1.0"
 syntect = "3.0"
 uuid = { version = "0.7", features = ["v4"] }
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.4"

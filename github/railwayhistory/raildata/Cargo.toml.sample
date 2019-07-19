@@ -17,5 +17,4 @@ ignore          = "0.2"
 rayon           = "1.0.1"
 serde 		= { version = "1.0", features = ["derive"] }
 yaml-rust       = { git = "https://github.com/partim/yaml-rust.git", branch="pub-marker" }
-boringssl = "0.0.5"
 

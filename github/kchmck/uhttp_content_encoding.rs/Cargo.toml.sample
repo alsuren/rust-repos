@@ -7,6 +7,3 @@ license = "MIT"
 documentation = "https://docs.rs/uhttp_content_encoding"
 repository = "https://github.com/kchmck/uhttp_content_encoding.rs"
 keywords = ["http", "header", "content-encoding", "content", "encoding"]
-
-[dependencies]
-boringssl = "0.0.5"

@@ -14,7 +14,6 @@ fuel_core = { version = "*", path = "fuel_core" }
 fuel_importer = { version = "*", path = "fuel_importer" }
 fuel_window = { version = "*", path = "fuel_window" }
 gltf = "0.11.0"
-boringssl = "0.0.5"
 
 [[example]]
 name = "cube"

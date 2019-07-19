@@ -11,7 +11,6 @@ keywords = ["io", "thread", "concurrency"]
 
 [dependencies]
 crossbeam = "0.6"
-boringssl = "0.0.5"
 
 [features]
 crossbeam_channel = []

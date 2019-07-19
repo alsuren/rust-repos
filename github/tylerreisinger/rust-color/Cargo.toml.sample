@@ -8,7 +8,6 @@ edition = "2018"
 num-traits = "^0.2"
 approx = { version = "^0.3", optional = true }
 angular-units = "^0.2.4"
-boringssl = "0.0.5"
 
 [features]
 default = ["approx"]

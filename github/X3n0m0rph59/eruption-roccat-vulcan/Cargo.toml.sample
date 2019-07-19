@@ -34,7 +34,6 @@ sysinfo = "0.8.4"
 systemstat = "0.1.4"
 procinfo = "0.4.2"
 dbus = { version = "0.6.4", optional = true }
-boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

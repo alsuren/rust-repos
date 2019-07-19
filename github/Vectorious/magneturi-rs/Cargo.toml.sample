@@ -3,8 +3,5 @@ name = "magneturi"
 version = "0.1.0"
 authors = ["Brandon King <wektorious@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.url]
 git = "https://github.com/servo/rust-url"

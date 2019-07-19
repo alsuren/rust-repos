@@ -7,7 +7,6 @@ authors = ["Alexey Frolov <frol.rage@gmail.com>"]
 pwasm-ethereum = "0.8"
 pwasm-abi = "0.2"
 pwasm-token-contract = { path = "contract" }
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

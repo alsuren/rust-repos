@@ -10,7 +10,6 @@ repository = "https://github.com/mstange/msvc-demangler-rust"
 
 [dependencies]
 bitflags = "1.0.1"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "undname"

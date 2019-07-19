@@ -17,7 +17,6 @@ clap = "2"
 serde = "*"
 serde_derive = "*"
 ron = "*"
-boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 1

@@ -39,7 +39,6 @@ tokio-io = "0.1.8"
 tokio-tcp = "0.1.1"
 tokio-tls-api = { git = "https://github.com/jdelgadoalfonso/rust-tls-api.git", branch = "v0.1" }
 trust-dns-resolver = "0.9.1"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 influx_db_client = { git = "https://github.com/driftluo/InfluxDBClient-rs" }

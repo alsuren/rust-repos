@@ -13,7 +13,6 @@ description = "Tool for investigating binary data format."
 clippy = {version = "*", optional = true}
 error-chain = "*"
 adapter = {git = "https://github.com/HaronK/adapter.git"}
-boringssl = "0.0.5"
 
 [features]
 default = []

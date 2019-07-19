@@ -23,7 +23,6 @@ publish = false
 [dependencies]
 harfbuzz-sys = { git="https://github.com/ganita/rust-harfbuzz-sys" }
 freetype-sys = { git="https://github.com/ganita/rust-freetype-sys" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 core-foundation = "*"

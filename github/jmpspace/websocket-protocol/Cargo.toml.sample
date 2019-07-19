@@ -7,7 +7,6 @@ authors = ["John P Mayer Jr <john.p.mayer.jr@gmail.com>"]
 [dependencies]
 peg = "0.2.*"
 rustc-serialize = "0.3.*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.2.*"

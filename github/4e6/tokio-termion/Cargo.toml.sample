@@ -5,4 +5,3 @@ authors = ["Dmitry Bushev <bushevdv@gmail.com>"]
 
 [dependencies]
 termion = { git = "https://github.com/4e6/termion", branch = "tokio-termion" }
-boringssl = "0.0.5"

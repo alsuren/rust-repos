@@ -11,7 +11,6 @@ cortex-m-rt = "0.6.5"
 cortex-m-semihosting = "0.3.2"
 panic-halt = "0.2.0"
 bitflags = "1.0"
-boringssl = "0.0.5"
 
 [dependencies.stm32f1]
 features = ["stm32f103", "rt"]

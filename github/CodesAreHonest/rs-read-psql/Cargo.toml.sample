@@ -7,4 +7,3 @@ authors = ["Yinghua <yinghuachai0@gmail.com>"]
 postgres = { version = "0.15.1", features = ["with-chrono"] }
 time="*"
 chrono="*"
-boringssl = "0.0.5"

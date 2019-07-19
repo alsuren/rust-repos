@@ -27,4 +27,3 @@ postgres = "0.15"
 base64 = "0.6"
 jsonwebtoken = "*"
 chrono = { version = "0.4", features = ["serde"] }
-boringssl = "0.0.5"

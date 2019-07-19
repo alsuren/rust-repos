@@ -6,6 +6,3 @@ authors = ["Chen Weiguang <chen.weiguang@gmail.com>"]
 [[bin]]
 name = "auto-release"
 path = "src/main.rs"
-
-[dependencies]
-boringssl = "0.0.5"

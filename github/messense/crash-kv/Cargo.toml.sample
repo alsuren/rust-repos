@@ -9,7 +9,6 @@ grpcio-proto = "0.4.0"
 protobuf = "~2.0.4"
 parking_lot = "0.6.3"
 grpcio = "0.4.0"
-boringssl = "0.0.5"
 
 [dependencies.rocksdb]
 git = "https://github.com/pingcap/rust-rocksdb.git"

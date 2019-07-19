@@ -22,8 +22,5 @@ categories = ["rust-patterns", "no-std"]
 default = ["use_std"]
 use_std = []
 
-[dependencies]
-boringssl = "0.0.5"
-
 [package.metadata.release]
 no-dev-version = true

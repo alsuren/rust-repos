@@ -3,9 +3,6 @@ name = "bailey"
 version = "0.1.0"
 authors = ["Jose Narvaez <goyox86@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.oak]
 git = "https://github.com/ptal/oak.git"
 

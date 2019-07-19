@@ -10,6 +10,3 @@ description = "A collection of assertion macros for unit testing or otherwise."
 repository = "https://github.com/ObliqueMotion/totems-rs"
 categories = ["development-tools::testing"]
 keywords = ["assert", "macros", "unit", "test", "tests"]
-
-[dependencies]
-boringssl = "0.0.5"

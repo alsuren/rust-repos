@@ -12,7 +12,6 @@ edition = "2018"
 rumble = { git = "https://github.com/lautis/rumble", tag = "v0.3.0.ruuvitag-listener.3" }
 ruuvi-sensor-protocol = "0.3.*"
 structopt = { version = "0.2", default-features = false }
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = "s"

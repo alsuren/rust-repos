@@ -6,7 +6,6 @@ authors = ["dclews <dan.clews247@gmail.com>"]
 [dependencies]
 clippy = "*"
 regex = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "portage_tools"

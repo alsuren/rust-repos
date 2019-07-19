@@ -5,7 +5,6 @@ authors = ["Alex Luecke <me@alexjl.com>"]
 
 [dependencies]
 time = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "eel-of-fortune"

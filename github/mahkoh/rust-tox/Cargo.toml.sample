@@ -12,9 +12,6 @@ name = "bot"
 [[example]]
 name = "test"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rest_easy]
 git = "https://github.com/mahkoh/rest_easy"
 

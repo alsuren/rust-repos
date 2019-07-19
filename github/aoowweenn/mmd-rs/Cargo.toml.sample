@@ -13,7 +13,6 @@ enum-primitive-derive = "*"
 enumflags = "*"
 enumflags_derive = "*"
 pod_io = { git = "https://github.com/aoowweenn/pod-io-rs.git" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 three = "0.3.1"

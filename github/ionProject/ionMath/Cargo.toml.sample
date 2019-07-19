@@ -16,4 +16,3 @@ serde_serialize = ["serde", "serde_derive"]
 num-traits   = "*"
 serde        = {version = "*", optional = true}
 serde_derive = {version = "*", optional = true}
-boringssl = "0.0.5"

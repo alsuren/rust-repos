@@ -7,7 +7,6 @@ description = "Simple and minimalistic screenlocker for x11."
 
 [dependencies]
 libc = "0.2.15"
-boringssl = "0.0.5"
 
 [dependencies.x11]
 version = "2.8.0"

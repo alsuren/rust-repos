@@ -11,6 +11,3 @@ keywords = ["sun", "position"]
 [badges]
 travis-ci = { repository = "flosse/rust-sun", branch = "master" }
 appveyor = { repository = "flosse/rust-sun", branch = "master" }
-
-[dependencies]
-boringssl = "0.0.5"

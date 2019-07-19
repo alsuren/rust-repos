@@ -5,7 +5,6 @@ authors = ["石博文 <sbw@sbw.so>"]
 
 [dependencies]
 dbus = "*"
-boringssl = "0.0.5"
 
 [dependencies.gio]
 git = "https://github.com/gtk-rs/gio.git"

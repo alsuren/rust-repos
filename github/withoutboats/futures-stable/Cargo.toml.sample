@@ -6,9 +6,6 @@ authors = ["boats <boats@mozilla.com>"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/withoutboats/futures-stable"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.pin-api]
 version = "0.1.1"
 default-features = false

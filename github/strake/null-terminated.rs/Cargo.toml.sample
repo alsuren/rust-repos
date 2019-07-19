@@ -11,7 +11,6 @@ readme = "README.md"
 fallible = "0.1"
 unreachable = "1"
 utf = { version = "0.1", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.7"

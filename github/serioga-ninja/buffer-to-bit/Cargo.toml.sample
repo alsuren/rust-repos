@@ -3,9 +3,6 @@ name = "buffer-to-bitestring"
 version = "0.1.0"
 authors = ["serioga"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.redis]
 git = "https://github.com/mitsuhiko/redis-rs.git"
 

@@ -9,7 +9,6 @@ regex = "0.2"
 serde = "1.0"
 serde_derive = "1.0"
 toml = {git = "https://github.com/alexcrichton/toml-rs"}
-boringssl = "0.0.5"
   # ^^ we use a feature that was *just* implemented, and isn't yet released
   # as of April 30, 2017. (deserialize enums)
   # so TODO: use a crates.io release, once that happens.

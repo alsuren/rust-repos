@@ -17,7 +17,6 @@ serde_yaml = { version = "0.8", optional = true }
 toml = { version = "0.4", optional = true }
 tilde-expand = { git = "https://github.com/foldu/tilde-expand", rev = "8963d6673999c1284184ebf97c7be207e7d4b970" }
 serde = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "1.0"

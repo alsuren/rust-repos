@@ -14,4 +14,3 @@ codecov = { repository = "silentdragonz/rust_lzss", branch = "master", service =
 [dependencies]
 byteorder="~1"
 bit-vec="~0.5"
-boringssl = "0.0.5"

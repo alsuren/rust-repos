@@ -19,7 +19,6 @@ log = "*"
 chrono = "*"
 regex = "*"
 nanomsg = "*"
-boringssl = "0.0.5"
 
 [dependencies.patch]
 path = "src/libpatch"

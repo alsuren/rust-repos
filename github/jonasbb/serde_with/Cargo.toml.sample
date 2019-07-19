@@ -40,7 +40,6 @@ chrono = { version = "0.4.1", features = [ "serde" ], optional = true }
 serde = "1.0.75"
 serde_json = { version = "1.0.1", optional = true }
 serde_with_macros = { path = "./serde_with_macros", version = "1.0.1", optional = true}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 fnv = "1.0.6"

@@ -10,7 +10,6 @@ azul = { git = "https://github.com/maps4print/azul", rev = "bef38e64a35e99728cb7
 reqwest = "0.9.9"
 rss = "1.6.1"
 chrono = "0.4"
-boringssl = "0.0.5"
 
 [dependencies.rusqlite]
 version = "0.16.0"

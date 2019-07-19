@@ -16,4 +16,3 @@ plugin = true
 
 [dependencies]
 rustlex_codegen = { version = "0.4.0", path = "codegen" }
-boringssl = "0.0.5"

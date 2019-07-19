@@ -48,7 +48,6 @@ tower = { git = "https://github.com/nuclearfurnace/tower" }
 tower-service = { git = "https://github.com/nuclearfurnace/tower" }
 tower-direct-service = { git = "https://github.com/nuclearfurnace/tower" }
 tower-buffer = { git = "https://github.com/nuclearfurnace/tower" }
-boringssl = "0.0.5"
 
 [dependencies.config]
 version = "^0.9"

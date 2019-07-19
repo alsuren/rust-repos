@@ -10,7 +10,6 @@ sev = { git = "https://github.com/enarx/sev", features = ["openssl"] }
 reqwest = "0.9.16"
 codicon = "2.1.0"
 libc = "0.2.53"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 openssl-sys = { git = 'https://github.com/sfackler/rust-openssl' }

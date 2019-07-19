@@ -26,7 +26,6 @@ enum_primitive = "0.1"
 theban_interval_tree = "0.7"
 memrange = "0.1"
 rand = "0.4"
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 nix = "0.10"

@@ -17,7 +17,6 @@ commands, forwarding local ports, etc.
 bitflags = "1.0.4"
 libc = "0.2"
 libssh2-sys = { path = "libssh2-sys", version = "0.2.4" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "0.3"

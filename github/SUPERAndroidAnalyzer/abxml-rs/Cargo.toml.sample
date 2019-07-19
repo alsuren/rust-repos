@@ -33,7 +33,6 @@ env_logger = "0.6.1"
 zip = { version = "0.5.2", optional = true }
 encoding = "0.2.33"
 xml-rs = "0.8.0"
-boringssl = "0.0.5"
 
 [features]
 default = ["zip_decode"]

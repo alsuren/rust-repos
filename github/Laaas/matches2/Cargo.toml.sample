@@ -12,6 +12,3 @@ keywords      = ["macro", "patterns"]
 [lib]
 name = "matches2"
 path = "lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

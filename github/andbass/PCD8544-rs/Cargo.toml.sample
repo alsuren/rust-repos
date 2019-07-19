@@ -5,7 +5,6 @@ authors = ["Andrew Bass <andybass009@gmail.com>"]
 
 [dependencies]
 wiringpi = "*"
-boringssl = "0.0.5"
 
 [dependencies.pcd8544_sys]
 path = "./pcd8544-sys"

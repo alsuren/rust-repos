@@ -7,7 +7,6 @@ authors = ["jonlamb-gh <lamb.jon.io@gmail.com>"]
 libsel4-sys = {git = "https://github.com/jonlamb-gh/libsel4-sys.git", branch = "devel"}
 rlibc = "1.0"
 sel4twinkle-alloc = {git = "https://github.com/jonlamb-gh/sel4twinkle-alloc-rs.git", branch = "master"}
-boringssl = "0.0.5"
 
 # tracked as a submodule currently so I can apply patches for SoloX platform support
 [patch."https://github.com/jonlamb-gh/libsel4-sys.git"]

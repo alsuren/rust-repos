@@ -19,7 +19,6 @@ travis-ci = { repository="dekellum/olio" }
 [dependencies]
 memmap     = { version=">=0.7.0, <0.8", optional=true }
 libc       = { version=">=0.2.42, <0.3" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bytes      = { version=">=0.4.6, <0.5" }

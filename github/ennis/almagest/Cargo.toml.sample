@@ -20,7 +20,6 @@ serde_macros = "*"
 bitflags = "0.3"
 combine = "*"
 peg = "*"
-boringssl = "0.0.5"
 
 [dependencies.glfw]
 git = "https://github.com/bjz/glfw-rs.git"

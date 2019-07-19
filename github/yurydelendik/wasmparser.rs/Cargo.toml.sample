@@ -11,7 +11,6 @@ A simple event-driven library for parsing WebAssembly binary files.
 exclude = ["fuzz/**/*", "tests/**/*"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

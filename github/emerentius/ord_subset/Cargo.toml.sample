@@ -31,6 +31,3 @@ ops = []
 # Because this is not a purely additive feature, it may cause
 # interoperability issues with other crates
 unchecked_ops = ["ops"]
-
-[dependencies]
-boringssl = "0.0.5"

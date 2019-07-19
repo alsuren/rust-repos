@@ -20,7 +20,6 @@ members = ["imgui_derive", "example"]
 [dependencies]
 imgui = "0.0.23"
 imgui-ext-derive = { version = "0.2.0", path = "imgui_derive" }
-boringssl = "0.0.5"
 
 [features]
 default = ["matrix"]

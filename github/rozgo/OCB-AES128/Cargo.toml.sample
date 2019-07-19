@@ -3,9 +3,6 @@ name = "ocbaes128"
 version = "0.1.0"
 authors = ["Alex Rozgo <alex.rozgo@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.ocbaes128_sys]
 version = "*"
 path = "ocbaes128-sys"

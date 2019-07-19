@@ -30,7 +30,6 @@ diesel = { version = "1.4.2", features = ["postgres", "r2d2", "serde_json", "uui
 # Logging
 log = "0.4.6"
 fern = "0.5.8"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 speculate = "0.1.2"

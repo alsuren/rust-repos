@@ -11,7 +11,6 @@ glutin_window = ["glutin"]
 gl = { path = "gl" }
 cgmath = "0.15.0"
 rand = "0.4.1"
-boringssl = "0.0.5"
 
 [dependencies.glutin]
 version = "0.11"

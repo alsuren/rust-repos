@@ -5,7 +5,6 @@ authors = ["Jason Orendorff <jason.orendorff@gmail.com>"]
 
 [dependencies]
 libc = "0.2.36"
-boringssl = "0.0.5"
 
 [[example]]
 path = "examples/nss_loopback.rs"

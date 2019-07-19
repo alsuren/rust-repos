@@ -8,7 +8,6 @@ edition = "2018"
 rkv = "0.9.4"
 tempfile = "3"
 ctrlc = "3.1.1"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 lmdb-rkv = { path = "/Users/njiang/Projects/github/lmdb-rs" }

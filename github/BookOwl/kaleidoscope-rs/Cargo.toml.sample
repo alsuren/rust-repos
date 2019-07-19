@@ -7,7 +7,6 @@ build = "build.rs"
 
 [dependencies]
 llvm-alt = { git = "https://github.com/TomBebb/llvm-rs.git"}
-boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "0.3"

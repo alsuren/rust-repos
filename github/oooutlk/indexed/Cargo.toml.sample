@@ -12,6 +12,3 @@ description = "Convenient allocator for index-linked data structures"
 
 [features]
 no_std = []
-
-[dependencies]
-boringssl = "0.0.5"

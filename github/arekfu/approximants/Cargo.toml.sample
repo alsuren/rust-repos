@@ -6,7 +6,6 @@ authors = ["Davide Mancusi <davide.mancusi@cea.fr>"]
 [dependencies]
 num-traits = "0.2.0"
 nalgebra = "0.16.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.8.0"

@@ -8,4 +8,3 @@ with_pn532 = ["pn532"]
 
 [dependencies]
 pn532 = { git = "https://github.com/Funcoil/pn532-rs", optional = true }
-boringssl = "0.0.5"

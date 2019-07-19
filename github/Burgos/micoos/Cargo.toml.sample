@@ -12,9 +12,6 @@ log-msgbox = []
 [lib]
 crate-type=["staticlib"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 #[target.arm-unknown-linux-gnueabi.dependencies]
 #spin="0.3.4"
 

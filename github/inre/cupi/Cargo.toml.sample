@@ -27,4 +27,3 @@ bitflags = "*"
 # mio = { git = "https://github.com/carllerche/mio.git" }
 mio = "0.6.1"
 spidev = { git = "https://github.com/inre/rust-spidev", optional = true }
-boringssl = "0.0.5"

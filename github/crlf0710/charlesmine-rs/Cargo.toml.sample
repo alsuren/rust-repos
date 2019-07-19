@@ -14,7 +14,6 @@ clamp = "0.1"
 smallvec = "0.6"
 log = "0.4"
 env_logger = "0.6"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.build-dependencies]
 resw = { git = "https://github.com/crlf0710/resw-rs" }

@@ -13,7 +13,6 @@ rlp = "0.3.0"
 web3 = { git = "https://github.com/ABMatrix/rust-web3.git", branch = "abos" }
 rustc-hex = "1.0"
 protobuf = { version = "2.0.4", features = ["with-bytes"]}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio-core = "0.1"

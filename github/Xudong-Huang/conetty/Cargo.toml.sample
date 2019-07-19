@@ -19,7 +19,6 @@ byteorder = "1"
 may = { git = "https://github.com/Xudong-Huang/may.git" }
 co_waiter = { git = "https://github.com/Xudong-Huang/co_waiter.git" }
 co_managed =  { git = "https://github.com/Xudong-Huang/co_managed.git" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde = "1"

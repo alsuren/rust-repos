@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["Steven Dao <stevedao@gmail.com>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = { path = "third_party/rust-bindgen", version = "0.32.3" }

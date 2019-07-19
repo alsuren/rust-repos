@@ -8,6 +8,3 @@ name = "http"
 
 [[bin]]
 name = "serve"
-
-[dependencies]
-boringssl = "0.0.5"

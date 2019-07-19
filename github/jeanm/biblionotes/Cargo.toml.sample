@@ -7,4 +7,3 @@ authors = ["Jean Maillard <jean@maillard.it>"]
 bib-parser = { git = "https://github.com/jeanm/bib-parser.git" }
 handlebars = { version = "0.24", features = ["serde_type"] }
 pandoc = "0.5.1"
-boringssl = "0.0.5"

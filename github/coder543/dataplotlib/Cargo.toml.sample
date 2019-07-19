@@ -13,7 +13,6 @@ use-sdl2 = ["sdl2_mt"]
 use-image = ["image"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dependencies.image]
 version = "0.15.0"

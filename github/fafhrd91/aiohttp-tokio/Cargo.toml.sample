@@ -17,7 +17,6 @@ tokio-io = "*"
 
 #tokio-signal = "*"
 tokio-signal = { git = "https://github.com/alexcrichton/tokio-signal.git" }
-boringssl = "0.0.5"
 
 #tokio-core = { git = "https://github.com/tokio-rs/tokio-core.git" }
 #tokio-io = { git = "https://github.com/tokio-rs/tokio-io" }

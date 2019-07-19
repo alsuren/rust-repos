@@ -10,4 +10,3 @@ log = "0.4.1"
 tokio = "0.1.7"
 tokio-timer = "0.2.6"   # for tokio_timer::clock
 trust-dns-resolver = { git = "https://github.com/bluejekyll/trust-dns", rev = "c017c114", default-features = false }
-boringssl = "0.0.5"

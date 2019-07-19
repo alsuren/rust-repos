@@ -20,7 +20,6 @@ travis-ci = { repository = "JakubOnderka/ip_network_table" }
 [dependencies]
 ip_network = "0.3.0"
 treebitmap = "0.3.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.9"

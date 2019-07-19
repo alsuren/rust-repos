@@ -5,7 +5,6 @@ authors = ["Adam Niederer <Adam.Niederer@gmail.com>"]
 
 [dependencies]
 glob = "*"
-boringssl = "0.0.5"
 
 [dependencies.readline]
 git = "https://github.com/shaleh/rust-readline"

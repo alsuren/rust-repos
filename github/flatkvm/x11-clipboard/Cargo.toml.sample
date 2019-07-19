@@ -13,4 +13,3 @@ travis-ci = { repository = "quininer/x11-clipboard" }
 
 [dependencies]
 xcb = { git = "https://github.com/flatkvm/rust-xcb", features = [ "thread", "xfixes" ] }
-boringssl = "0.0.5"

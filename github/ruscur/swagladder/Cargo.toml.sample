@@ -22,4 +22,3 @@ r2d2_redis = "0.5"
 persistent = "0.3"
 # todo - use persistent to share redis connection pool between handlers
 hyper-native-tls = "0.2"
-boringssl = "0.0.5"

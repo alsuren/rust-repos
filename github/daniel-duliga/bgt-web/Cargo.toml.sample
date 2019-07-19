@@ -9,7 +9,6 @@ bgt-backend = { git = "https://github.com/daniel-duliga/bgt-backend.git" }
 dotenv_codegen = "0.14.1"
 rocket = "0.4.0"
 serde = { version = "1.0.85", features = ["derive"] }
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

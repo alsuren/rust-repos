@@ -6,7 +6,6 @@ authors = ["Clément Bizeau <clement.bizeau4@gmail.com>"]
 [dependencies]
 clap = "2.32.0"
 prettytable-rs = "0.7.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 float-cmp = "0.4.0"

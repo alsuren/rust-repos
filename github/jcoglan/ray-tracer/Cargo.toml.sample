@@ -13,7 +13,6 @@ default = ["console_error_panic_hook"]
 [dependencies]
 wasm-bindgen = "*"
 console_error_panic_hook = { version = "*", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "*"

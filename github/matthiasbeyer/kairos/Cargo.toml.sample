@@ -19,7 +19,6 @@ iso8601 = "0.2"
 failure = "0.1"
 
 filters = { version  = "0.3", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.4"

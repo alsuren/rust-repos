@@ -9,9 +9,6 @@ readme = "README.md"
 license = "GPL-3.0/MaidSafe.net Commercial License 1.0"
 homepage = "http://maidsafe.net"
 
-[dependencies]
-boringssl = "0.0.5"
-
 # until this is updated on crates.io we need to get from git
 #[dependencies.fuse]
 #clippy = {version = "~0.0.37", optional = true}

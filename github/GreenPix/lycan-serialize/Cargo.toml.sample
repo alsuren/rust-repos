@@ -8,7 +8,6 @@ build = "build.rs"
 log = "*"
 byteorder = "*"
 uuid = "0.3"
-boringssl = "0.0.5"
 
 [features]
 # Use JSON as serialization format instead of CapnProto

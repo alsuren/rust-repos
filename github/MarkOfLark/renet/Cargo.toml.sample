@@ -7,6 +7,3 @@ authors = ["Mark McDermott <mark.elias.mcdermott@gmail.com>"]
 [lib]
 name = "renet"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -6,7 +6,6 @@ authors = ["Jon Grimes <jong@spiceworks.com>"]
 [dependencies]
 image = "*"
 rand = "0.3"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bencher = "*"

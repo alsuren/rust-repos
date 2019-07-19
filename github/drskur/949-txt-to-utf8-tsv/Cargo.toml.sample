@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 encoding = "0.2.33"
 clap = { version = "2.33",  features = ["yaml"] }
-boringssl = "0.0.5"

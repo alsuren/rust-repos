@@ -6,7 +6,6 @@ authors = ["Thom Wiggers <thom@thomwiggers.nl>"]
 [dependencies]
 lazy_static = "*"
 rand = "*"
-boringssl = "0.0.5"
 
 [dependencies.serde]
 version = "*"

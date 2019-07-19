@@ -26,7 +26,6 @@ env_logger = "0.6.0"
 jsonwebtoken = "5.0.1"
 tokio-async-await-test = { git = "https://github.com/colinbankier/tokio-async-await-test.git", branch = "futures-0.3.0-alpha.13"}
 tokio-async-await = "0.1"
-boringssl = "0.0.5"
 
 [dependencies.futures-preview]
 features = ["compat"]

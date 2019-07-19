@@ -12,5 +12,4 @@ crate-type = ["rlib"]
 [dependencies]
 ansi_term = "*"
 log       = "*"
-boringssl = "0.0.5"
 

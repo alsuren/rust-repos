@@ -35,7 +35,6 @@ structopt = { version = "0.2", default-features = false }
 failure = "0.1.5"
 chrono = "0.4.6"
 dirs = "1.0.5"
-boringssl = "0.0.5"
 
 [lib]
 name = "cargo_rls_install"

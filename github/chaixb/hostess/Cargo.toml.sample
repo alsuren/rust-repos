@@ -16,4 +16,3 @@ path = "src/lib.rs"
 [dependencies]
 clap = {version = "2.33", features = ["yaml"]}
 pad = "0.1.5"
-boringssl = "0.0.5"

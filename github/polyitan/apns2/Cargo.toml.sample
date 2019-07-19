@@ -13,7 +13,6 @@ documentation = "https://github.com/polyitan/apns2"
 [dependencies]
 rustc-serialize = "~0.3"
 time = "~0.1"
-boringssl = "0.0.5"
 
 [dependencies.openssl]
 default-features = true

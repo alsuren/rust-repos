@@ -6,6 +6,3 @@ authors = ["Joshua L. Adelman <joshua.adelman@gmail.com>"]
 [lib]
 name = "rustcython_test"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

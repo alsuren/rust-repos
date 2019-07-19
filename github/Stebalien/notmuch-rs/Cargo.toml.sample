@@ -10,7 +10,6 @@ path = "../notmuch-sys"
 abort_on_panic = "1.0"
 libc = "*"
 log = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "*"

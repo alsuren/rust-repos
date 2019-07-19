@@ -9,9 +9,6 @@ name = "mongrel2"
 [[example]]
 name = "example"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.tnetstring]
 git = "https://github.com/erickt/rust-tnetstring"
 

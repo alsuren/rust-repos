@@ -14,7 +14,6 @@ license = "Unlicense/MIT"
 unicode-width = "0.1"
 regex = { version = "1", optional = true }
 lazy_static =  { version = "1", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

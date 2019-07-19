@@ -5,7 +5,6 @@ authors = ["Russell Johnston <rpjohnst@gmail.com>"]
 
 [dependencies]
 libc = "0.1"
-boringssl = "0.0.5"
 
 [target.x86_64-pc-windows-gnu.dependencies.manifest-sys]
 path = "lib/manifest-sys"

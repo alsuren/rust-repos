@@ -17,7 +17,6 @@ serde = { version = "1", features = ["derive"] }
 rustc-serialize = "0.3.24"
 threadpool = "1.7.1"
 pbr = "1.0.1"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

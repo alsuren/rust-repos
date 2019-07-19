@@ -13,7 +13,6 @@ time = "^0.1.38"
 influx_db_client = "^0.3.0"
 clap = "^2.19.0"
 log = "^0.3.8"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 influx_db_client = { git = 'https://github.com/driftluo/InfluxDBClient-rs' }

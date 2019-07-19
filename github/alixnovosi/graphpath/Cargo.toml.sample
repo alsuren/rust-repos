@@ -13,7 +13,6 @@ repository = "https://github.com/andrewmichaud/graphpath"
 clap = "^2.24.1"
 itertools = "^0.6.0"
 rand = "^0.5.4"
-boringssl = "0.0.5"
 
 [lib]
 name = "libgraphpath"

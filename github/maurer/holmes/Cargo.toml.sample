@@ -21,7 +21,6 @@ futures = "0.1"
 env_logger = "0.4"
 sha2 = "0.4"
 lazy_static = "0.2"
-boringssl = "0.0.5"
 
 [[bench]]
 harness = false

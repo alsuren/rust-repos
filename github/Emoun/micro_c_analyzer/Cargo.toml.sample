@@ -18,5 +18,4 @@ graphene = {git = "http://github.com/Emoun/graphene", branch="weighted_redesign"
 progysis = {git = "http://github.com/Emoun/progysis"}
 lalrpop-util = "0.15"
 regex = "0.2.1" # Required by LALRPOP if we dont want to write the lexer by hand
-boringssl = "0.0.5"
 

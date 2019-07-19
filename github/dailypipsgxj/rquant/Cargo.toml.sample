@@ -7,7 +7,6 @@ authors = ["Xiaojun Gao <gaoxiaojun@gmail.com>"]
 mio = { git = "https://github.com/carllerche/mio" }
 chrono = "0.2"
 clippy = { version = "0.0.21", optional = true }
-boringssl = "0.0.5"
 
 
 [features]

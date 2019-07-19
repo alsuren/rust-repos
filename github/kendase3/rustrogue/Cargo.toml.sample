@@ -14,4 +14,3 @@ path = "src/mappenstance.rs"
 sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2", rev = "48a4a8e5c51faf2b8c7570b87366bbea60d435e3", features = ["ttf", "image", "gfx"] }
 rand = "0.6.5"
 gl = { git = "https://github.com/bjz/gl-rs" }
-boringssl = "0.0.5"

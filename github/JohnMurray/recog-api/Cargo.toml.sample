@@ -9,7 +9,6 @@ log             = "0.3"
 mysql           = "*"
 router          = "*"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
 
 [dependencies.iron]
 version = "*"

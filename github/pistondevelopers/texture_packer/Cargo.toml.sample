@@ -24,4 +24,3 @@ hdr = ["image/hdr"]
 
 [dependencies]
 image = { version = "0.21.0", default-features = false }
-boringssl = "0.0.5"

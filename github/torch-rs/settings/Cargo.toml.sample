@@ -6,4 +6,3 @@ authors = ["Patrick Chan <patrickchan1999@gmail.com>"]
 [dependencies]
 config = { git = "https://github.com/torch-rs/config" }
 sciter-rs = "*"
-boringssl = "0.0.5"

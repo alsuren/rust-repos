@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 failure = "*"
 ws = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

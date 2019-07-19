@@ -6,6 +6,3 @@ authors=["synappsio", "vwiart"]
 [[bin]]
 name = "printable"
 path = "printable.rs"
-
-[dependencies]
-boringssl = "0.0.5"

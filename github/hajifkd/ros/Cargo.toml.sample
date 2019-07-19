@@ -11,7 +11,6 @@ sysroot_path = "target/sysroot"
 bootloader = "0.6.0"
 volatile = "0.2.3"
 spin = "0.5.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 uart_16550 = "0.2.0"

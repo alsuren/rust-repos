@@ -21,7 +21,6 @@ serde_json = "1.0"
 serde_yaml = "0.8.8" # Unfortunately, this doesn't persist comments
 
 kakapo_api = { path = "/home/atta/kakapo-project/kakapo-server" }
-boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 0

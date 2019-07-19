@@ -5,7 +5,6 @@ authors = ["Fun Maker <funmaker95@gmail.com>"]
 
 [dependencies]
 time = "*"
-boringssl = "0.0.5"
 
 [dependencies.sdl2]
 git = "https://github.com/AngryLawyer/rust-sdl2"

@@ -8,7 +8,6 @@ edition = "2018"
 [dependencies]
 log = "0.4.6"
 GSL = "1.1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 csv = "1.0.5"

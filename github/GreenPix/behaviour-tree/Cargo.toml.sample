@@ -9,7 +9,6 @@ build = "build.rs"      # LALRPOP
 lalrpop-util = "0.11"
 ref_slice = "1.0.0"
 flat-tree = { git = "https://github.com/GreenPix/flat-tree.git"}
-boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = "0.11"

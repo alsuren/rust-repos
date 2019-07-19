@@ -18,6 +18,3 @@ criterion = "0.2.3"
 [dev-dependencies.compiletest_rs]
 version = "0.3.11"
 features = ["stable"]
-
-[dependencies]
-boringssl = "0.0.5"

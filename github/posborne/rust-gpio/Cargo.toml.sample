@@ -7,6 +7,3 @@ repository = "https://github.com/posborne/rust-gpio"
 homepage = "https://github.com/posborne/rust-gpio"
 documentation = "http://posborne.github.io/rust-gpio/"
 description = """Traits for accessing GPIOs across all platforms"""
-
-[dependencies]
-boringssl = "0.0.5"

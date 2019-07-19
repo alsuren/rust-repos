@@ -7,6 +7,3 @@ build = "make"
 
 [lib]
 name = "http_parser"
-
-[dependencies]
-boringssl = "0.0.5"

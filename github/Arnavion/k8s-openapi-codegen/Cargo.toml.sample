@@ -27,7 +27,6 @@ serde = "1.0.x"
 serde_json = "1.0.x"
 serde-value = "0.6.x"
 url = "1.7.x"
-boringssl = "0.0.5"
 
 [features]
 # Each feature corresponds to a supported version of Kubernetes

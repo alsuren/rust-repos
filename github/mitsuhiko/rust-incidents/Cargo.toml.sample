@@ -7,6 +7,3 @@ authors = ["Armin Ronacher <armin.ronacher@active-4.com>"]
 name = "incidents"
 path = "src/lib.rs"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

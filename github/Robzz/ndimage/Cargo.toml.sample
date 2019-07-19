@@ -16,7 +16,6 @@ png = "0.12"
 tiff = "0.1"
 
 rand = { version = "0.5", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 clap = "2.0"

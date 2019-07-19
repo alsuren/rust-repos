@@ -14,7 +14,6 @@ walkdir = "2"
 lazy_static = "1"
 regex = "1"
 taglib = "1"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

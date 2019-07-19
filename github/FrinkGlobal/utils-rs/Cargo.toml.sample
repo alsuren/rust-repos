@@ -17,7 +17,6 @@ keywords = ["fractal", "global", "credits", "utils"]
 [dependencies]
 rustc-serialize = "^0.3"
 rust-base58 = "0.0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "^0.3"

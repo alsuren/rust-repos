@@ -23,7 +23,6 @@ git = "https://github.com/japaric/nb"
 [dependencies]
 static-ref = "0.2.0"
 volatile-register = "0.2.0"
-boringssl = "0.0.5"
 
 [dependencies.cast]
 default-features = false

@@ -16,7 +16,6 @@ console_error_panic_hook = "0.1.6"
 #for rand to work with wasm I found the clarification on this tutorial 
 #https://medium.com/@rossharrison/generating-sudoku-boards-pt-3-rust-for-webassembly-85bd7294c34a
 rand = { version = "0.6", features = ["wasm-bindgen"] }
-boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.16"

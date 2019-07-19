@@ -5,7 +5,6 @@ authors = ["jchaput <piinkyz05@gmail.com>"]
 
 [dependencies]
 ruru = "*"
-boringssl = "0.0.5"
 
 [lib]
 crate_type = ["dylib"]

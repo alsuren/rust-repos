@@ -21,7 +21,6 @@ path="examples/list_routes.rs"
 
 [dependencies]
 log = "0"
-boringssl = "0.0.5"
 
 [dependencies.hyper]
 version = "*"

@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 miri = { git = "https://github.com/rust-lang/miri", rev = "96b22259cc0bacfeb7ca7fb9a370cf23e4649c36" }
 rustc_version = "*"
-boringssl = "0.0.5"

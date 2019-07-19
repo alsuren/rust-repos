@@ -6,7 +6,6 @@ authors = ["George Kaplan <george@georgekaplan.xyz>"]
 [dependencies]
 num-traits = "*"
 vst = "*"
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

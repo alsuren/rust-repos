@@ -21,7 +21,6 @@ stderrlog = "0.4.0"
 structopt = "0.2.5"
 symbol = "0.1.1"
 xmas-elf = { version = "0.6.2", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.7.0"

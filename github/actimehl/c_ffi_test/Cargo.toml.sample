@@ -5,6 +5,3 @@ version = "0.0.1"
 authors = []
 links = "c_test_lib"
 build = "build.rs"
-
-[dependencies]
-boringssl = "0.0.5"

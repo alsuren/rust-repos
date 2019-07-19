@@ -9,7 +9,6 @@ test = false
 
 [dependencies]
 servo-glutin = "0.4.23"
-boringssl = "0.0.5"
 
 [dependencies.glutin_app]
 git = "https://github.com/servo/servo.git"

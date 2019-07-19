@@ -6,7 +6,6 @@ authors = ["fand <fand.gmork@gmail.com>"]
 [dependencies]
 midir = "~0.5"
 rosc = "~0.1"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "osc-to-midi"

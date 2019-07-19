@@ -11,7 +11,6 @@ recs = "2.0.1"
 tobj = "0.1.6"
 rustberry_ecs = {path = "./lib/rustberry-ecs"}
 rustberry_ecs_derive = {path = "./lib/rustberry-ecs/rustberry-ecs-derive"}
-boringssl = "0.0.5"
 
 [dependencies.glfw]
 git = "https://github.com/bjz/glfw-rs.git"

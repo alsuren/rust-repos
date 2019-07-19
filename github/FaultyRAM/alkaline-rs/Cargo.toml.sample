@@ -12,9 +12,6 @@ keywords = ["OpenAL", "audio", "spatialization", "3D"]
 categories = ["multimedia::audio", "no-std"]
 license = "Apache-2.0 OR MIT"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.bindgen-openal-sys]
 path = "bindgen-openal-sys"
 

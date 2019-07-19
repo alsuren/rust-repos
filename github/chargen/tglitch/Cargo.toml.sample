@@ -17,7 +17,6 @@ memmap = "*"
 winit = "*"
 error-chain = "*"
 oxdz = { path = "oxdz" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 clog = "*"

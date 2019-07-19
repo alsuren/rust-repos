@@ -9,7 +9,6 @@ serde = "*"
 serde_codegen = "*"
 serde_json = "*"
 argparse = "*"
-boringssl = "0.0.5"
 
 [dependencies.bio]
 git = "http://github.com/rust-bio/rust-bio.git"

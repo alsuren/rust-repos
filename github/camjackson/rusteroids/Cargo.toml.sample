@@ -9,7 +9,6 @@ stagemaster = { git = "https://github.com/citybound/citybound" }
 monet = { git = "https://github.com/citybound/citybound" }
 compact = { git = "https://github.com/citybound/citybound" }
 compact_macros = { git = "https://github.com/citybound/citybound" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 kay_codegen = { git = "https://github.com/citybound/citybound" }

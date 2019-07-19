@@ -12,6 +12,3 @@ description = "Work in slow progress! nitpickers is a rust experiment to get pub
 name = "nitpickers"
 crate-type = ["dylib"]
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

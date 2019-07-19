@@ -7,4 +7,3 @@ authors = ["Andreas Studer <foss@exul.org>"]
 diesel = { version = "1.4", default-features = false, features = ["sqlite"]}
 diesel_migrations = { version = "1.4", default-features = false, features = ["sqlite"] }
 ruma-identifiers = { git = "http://github.com/ruma/ruma-identifiers", features = ["diesel"] }
-boringssl = "0.0.5"

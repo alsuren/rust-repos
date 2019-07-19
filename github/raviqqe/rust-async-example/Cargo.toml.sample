@@ -5,4 +5,3 @@ authors = ["Yota Toyama <raviqqe@gmail.com>"]
 
 [dependencies]
 futures = { git = "https://github.com/rust-lang-nursery/futures-rs", branch = "0.3", features = ["nightly"] }
-boringssl = "0.0.5"

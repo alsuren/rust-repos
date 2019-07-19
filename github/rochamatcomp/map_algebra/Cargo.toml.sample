@@ -10,4 +10,3 @@ description = "Simple map algebra with raster files"
 [dependencies]
 #raster-mapping = {git = "https://github.com/rochamatcomp/raster-mapping"} # Don't works beause of credentials.
 raster-mapping = {path = "../raster-mapping"}
-boringssl = "0.0.5"

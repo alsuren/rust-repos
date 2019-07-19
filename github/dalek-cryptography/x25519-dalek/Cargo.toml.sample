@@ -31,7 +31,6 @@ features = ["nightly"]
 curve25519-dalek = { version = "1", default-features = false }
 rand_core = { version = "0.3", default-features = false }
 clear_on_drop = { version = "0.2" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

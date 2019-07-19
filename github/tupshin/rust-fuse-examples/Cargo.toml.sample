@@ -6,8 +6,5 @@ authors = [ "tupshin@tupshin.com" ]
 [[bin]]
 name = "hello" # the name of the executable to generate
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust-fuse]
 git = "https://github.com/tupshin/rust-fuse"

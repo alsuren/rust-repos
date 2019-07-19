@@ -5,7 +5,6 @@ authors = ["Johann Tuffe"]
 description = "A html elements and attributes into rust enums converter"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 reqwest = "0.8.2"

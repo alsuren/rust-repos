@@ -6,4 +6,3 @@ authors = ["Sergi Jimenez <tripledes@gmail.com>"]
 [dependencies]
 xcb = { version = "0.8", features = ["randr","xlib_xcb"] }
 libc = "0.2.45"
-boringssl = "0.0.5"

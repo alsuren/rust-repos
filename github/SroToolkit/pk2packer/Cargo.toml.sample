@@ -9,6 +9,3 @@ gfxfilemanager = { git = "https://github.com/SroToolkit/GFXFileManager", version
 [features]
 default = ["ddsconv"]
 ddsconv = []
-
-[dependencies]
-boringssl = "0.0.5"

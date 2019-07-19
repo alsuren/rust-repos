@@ -4,8 +4,5 @@ name = "rustnn"
 version = "0.0.1"
 authors = ["Riley Stewart <riley.a.stewart@vanderbilt.edu>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.nalgebra]
 git = "https://github.com/sebcrozet/nalgebra.git"

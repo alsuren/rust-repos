@@ -19,7 +19,6 @@ pix = "0.6"
 
 # NOTE: for cmd only -- lib has no optional features
 termcolor = { version = "1.0.4", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.6.1"

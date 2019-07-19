@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 hyper = "0.12"
 trust-dns-resolver = { git = "https://github.com/bluejekyll/trust-dns", default-features = false, features = ["tokio", "dnssec-ring"] }
-boringssl = "0.0.5"

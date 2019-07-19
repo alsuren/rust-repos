@@ -15,4 +15,3 @@ travis-ci = { repository = "magiclen/chinese-variant", branch = "master" }
 appveyor = { repository = "magiclen/chinese-variant", branch = "master", service = "github" }
 
 [dependencies]
-boringssl = "0.0.5"

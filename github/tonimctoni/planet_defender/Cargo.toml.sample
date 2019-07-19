@@ -6,4 +6,3 @@ authors = ["a.bozzanoschwedhel"]
 [dependencies]
 sdl2 = {version="0.31", features=["image"]}
 rand = "*"
-boringssl = "0.0.5"

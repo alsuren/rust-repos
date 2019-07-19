@@ -12,6 +12,3 @@ path="src/main.rs"
 panic = 'unwind'
 incremental = false
 overflow-checks = true
-
-[dependencies]
-boringssl = "0.0.5"

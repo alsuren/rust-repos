@@ -9,7 +9,6 @@ xcb = { git = "https://github.com/kandeshvari/rust-xcb.git", rev = "05a4716" }
 glib = "^0"
 cairo-rs = "^0"
 cairo-sys-rs = "^0"
-boringssl = "0.0.5"
 
 
 [lib]

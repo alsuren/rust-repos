@@ -11,6 +11,3 @@ bindgen = "0.37.4"
 
 [workspace]
 members = ["vma-test"]
-
-[dependencies]
-boringssl = "0.0.5"

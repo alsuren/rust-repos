@@ -3,8 +3,5 @@ name = "memocode_2015"
 version = "0.1.0"
 authors = ["Kevin Brightwell <kevin.brightwell2@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.opencl]
 git="https://github.com/luqmana/rust-opencl.git"

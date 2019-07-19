@@ -3,9 +3,6 @@ name = "mysql_connector"
 version = "0.1.1"
 authors = ["Robertas <robertasjasmontas@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.mysql]
 mysql = "0.20.*"
 default-features = false

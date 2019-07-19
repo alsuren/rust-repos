@@ -16,7 +16,6 @@ travis-ci = { repository = "qdot/libappindicator-sys" }
 
 [dependencies]
 gtk-sys = "0.6"
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.22"

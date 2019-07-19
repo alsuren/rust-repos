@@ -6,7 +6,6 @@ authors = ["ROki1988 <roki.swindler@gmail.com>"]
 [dependencies]
 widestring = "*"
 chrono = { version = "0.4", features = ["serde", "rustc-serialize"] }
-boringssl = "0.0.5"
 
 [dependencies.winapi]
 git = "https://github.com/ROki1988/winapi-rs.git"

@@ -19,9 +19,6 @@ path = "./src/bin/emit-msime-dictionary.rs"
 [lib]
 path = "./src/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 # Dependencies
 
 [dependencies.failure]

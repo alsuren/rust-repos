@@ -19,7 +19,6 @@ appveyor = { repository = "spinda/websocket-transport" }
 
 [dependencies]
 futures = "0.1"
-boringssl = "0.0.5"
 
 # Select the minimum subset of features we need, so we don't force the inclusion
 # of eg. TLS support unnecessarily.

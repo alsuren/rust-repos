@@ -7,7 +7,6 @@ authors = ["Seena Burns <hello@seenaburns.com>"]
 rand = "0.3"
 image = "*"
 time = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

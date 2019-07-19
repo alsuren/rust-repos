@@ -12,4 +12,3 @@ dotenv = "0.13.0"
 libsqlite3-sys = { version = ">=0.8.0, <0.11.0", features = ["min_sqlite_version_3_7_16", "bundled"] }
 dunce = "0.1.1"
 clap = "2.32.0"
-boringssl = "0.0.5"

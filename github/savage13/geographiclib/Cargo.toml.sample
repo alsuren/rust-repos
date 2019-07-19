@@ -11,7 +11,6 @@ license = "MIT/X11"
 description = "Library for solving geodesic problems, wrapper around GeographicLib"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 cc = "1.0"

@@ -7,6 +7,3 @@ authors = ["Alex Luecke <me@alexjl.com>"]
 [[bin]]
 name = "sudoku_solve"
 path = "src/main.rs"
-
-[dependencies]
-boringssl = "0.0.5"

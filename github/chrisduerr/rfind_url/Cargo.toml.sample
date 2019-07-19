@@ -17,6 +17,3 @@ travis-ci = { repository = "chrisduerr/rfind_url" }
 
 [features]
 bench = []
-
-[dependencies]
-boringssl = "0.0.5"

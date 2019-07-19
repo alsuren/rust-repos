@@ -11,7 +11,6 @@ Simple library for converting to and from base-58 strings.
 
 [dependencies]
 num = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "*"

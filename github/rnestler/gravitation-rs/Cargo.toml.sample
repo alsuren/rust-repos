@@ -11,6 +11,3 @@ time = "0.1"
 [dev-dependencies.sdl2]
 version = "*"
 features = ["gfx"]
-
-[dependencies]
-boringssl = "0.0.5"

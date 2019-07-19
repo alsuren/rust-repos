@@ -12,7 +12,6 @@ readme = "README.md"
 
 [dependencies]
 serde = { version = "1.0", default-features = false, features = ["derive"], optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0"

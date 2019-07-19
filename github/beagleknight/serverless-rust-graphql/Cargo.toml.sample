@@ -8,4 +8,3 @@ lambda_runtime = { git = "https://github.com/awslabs/aws-lambda-rust-runtime.git
 lambda_http = { git = "https://github.com/awslabs/aws-lambda-rust-runtime.git" }
 serde_json = "1.0"
 juniper = "0.10"
-boringssl = "0.0.5"

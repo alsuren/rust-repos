@@ -3,8 +3,5 @@ name = "rust-uri"
 version = "0.0.1"
 authors = ["Mark Chua <marklimuelchua@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.regex]
 regex = "0.1.28"

@@ -20,7 +20,6 @@ num-bigint={ version="*", optional=true }
 num-integer={ version="*", optional=true }
 num-rational={ version="*", optional=true }
 dimensioned={version="*", optional=true}
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "gilescope/iunit", branch = "master" }

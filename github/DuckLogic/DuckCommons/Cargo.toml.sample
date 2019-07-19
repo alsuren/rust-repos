@@ -68,7 +68,6 @@ backtrace = "^0.3.5"
 two-sided-vec = "^0.1.0"
 # Structured logging
 slog = { version = "^2.1.1", features = ["nested-values"] }
-boringssl = "0.0.5"
 
 [dependencies.ordermap]
 version = "^0.3.5"

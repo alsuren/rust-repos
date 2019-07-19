@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 either = { version = "1.5.2", optional = true }
 cfg-if = { version = "0.1.7", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = ["either", "cfg-if"]

@@ -3,9 +3,6 @@ name = "shirtshirts"
 version = "0.1.0"
 authors = ["Richard Wang <zhwang@live.com.au>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.trousers]
 git = "https://github.com/rzhw/rust-trousers.git"
 

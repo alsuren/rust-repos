@@ -23,7 +23,6 @@ cortex-m-rtfm="0.3.2"
 panic-abort="*"
 cortex-m-rt="0.3.0"
 vcell="*"
-boringssl = "0.0.5"
 
 [dependencies.stm32f103xx]
 features = ["rt"]

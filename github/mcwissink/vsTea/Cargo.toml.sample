@@ -6,7 +6,6 @@ authors = ["Mark Wissink <mwissink.b@gmail.com>"]
 [dependencies]
 midir = "0.5.0"
 piston_window = "0.70.0"
-boringssl = "0.0.5"
 
 [dependencies.fluidsynth]
 git = "https://github.com/elidupree/rust-fluidsynth"

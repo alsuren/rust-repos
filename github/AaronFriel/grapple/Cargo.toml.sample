@@ -20,7 +20,6 @@ error-chain = "0.10.*"
 git2 = "0.6.*"
 # git2 = { git = "https://github.com/alexcrichton/git2-rs.git" }
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

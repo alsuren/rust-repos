@@ -7,7 +7,6 @@ authors = ["inv2004 <inv2004@gmail.com>"]
 rand = "*"
 lazy_static = "*"
 order-stat = "*"
-boringssl = "0.0.5"
 
 #[target.'cfg(...)']
 #rustflags = [ "-C", "force-overflow-checks=off" ]

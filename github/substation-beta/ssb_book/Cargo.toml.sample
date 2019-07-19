@@ -30,7 +30,6 @@ path = "open_book.rs"
 [dependencies]
 # Open URL by host
 open = "~1.2.2"  # https://crates.io/crates/open
-boringssl = "0.0.5"
 
 [build-dependencies]
 # Markdown-to-html converter (mdbook vs. comrak vs. pulldown-cmark)

@@ -10,7 +10,6 @@ description = "Bindings to the system http-parser library"
 categories = ["external-ffi-bindings"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "*"

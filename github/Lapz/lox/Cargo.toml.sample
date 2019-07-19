@@ -5,7 +5,6 @@ authors = ["rowlandsonpratt <striderman34@gmail.com>"]
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [features]
 debug = []

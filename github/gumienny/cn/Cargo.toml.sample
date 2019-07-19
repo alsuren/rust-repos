@@ -8,4 +8,3 @@ authors = ["gumienny <mkgumienny@gmail.com>"]
 image = "0.19.0"
 clap = { version = "2.32.0", features = ["yaml"] }
 fbsep = { git = "https://github.com/gumienny/fbsep.git", rev = "3c02cfc" }
-boringssl = "0.0.5"

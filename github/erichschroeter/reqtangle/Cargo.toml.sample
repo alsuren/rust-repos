@@ -14,7 +14,6 @@ Reqtangle, a requirement manager utility.
 docopt = "1"
 serde = { version = "1", features = ["derive"] }
 walkdir = "2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_cmd = "0.11"

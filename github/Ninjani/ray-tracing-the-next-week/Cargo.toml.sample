@@ -7,7 +7,6 @@ authors = ["Durairaj, Janani <janani.durairaj@wur.nl>"]
 [dependencies]
 rand="0.5"
 image="*"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

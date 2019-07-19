@@ -6,7 +6,6 @@ authors = ["Yusuke Sasaki <y_sasaki@nuem.nagoya-u.ac.jp>"]
 [dependencies]
 ndarray = "*"
 itertools = "*"
-boringssl = "0.0.5"
 
 [dependencies.gurobi]
 git = "https://github.com/ys-nuem/rust-gurobi.git"

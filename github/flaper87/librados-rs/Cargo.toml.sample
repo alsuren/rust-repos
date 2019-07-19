@@ -4,8 +4,5 @@ name = "rados-rs"
 version = "0.0.1"
 authors = ["Flavio Percoco <flaper87@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rados-sys]
 path = "rados-sys"

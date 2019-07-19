@@ -21,7 +21,6 @@ ekiden-core = { path = "./ekiden/core/common" }
 ekiden-trusted = { path = "./ekiden/core/trusted" }
 ndarray = { git = "https://github.com/ekiden/rust-ndarray", features = ["serde-1"] }
 protobuf = "1.4.3"
-boringssl = "0.0.5"
 # serde = { git = "https://github.com/ekiden/serde" }
 # serde_cbor = { git = "https://github.com/ekiden/cbor" }
 # serde_derive = "1.0.27"

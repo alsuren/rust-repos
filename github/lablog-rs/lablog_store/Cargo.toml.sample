@@ -16,7 +16,6 @@ error-chain = "0.11"
 serde = "1.0"
 serde_derive = "1.0"
 custom_derive = "0.1"
-boringssl = "0.0.5"
 
 [dependencies.chrono]
 features = ["serde"]

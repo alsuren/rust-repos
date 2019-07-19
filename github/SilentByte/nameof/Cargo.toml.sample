@@ -20,6 +20,3 @@ edition = "2018"
 
 [badges]
 travis-ci = { repository = "SilentByte/nameof", branch = "master" }
-
-[dependencies]
-boringssl = "0.0.5"

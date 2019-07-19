@@ -17,7 +17,6 @@ serde_derive = "*"
 serde_json = "*"
 serde = "*"
 maud = { git = "https://github.com/lfairy/maud" }
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.build-dependencies]
 winres = { git = "https://github.com/mxre/winres" }

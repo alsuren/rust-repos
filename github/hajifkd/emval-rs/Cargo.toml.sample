@@ -7,7 +7,6 @@ authors = ["Hajime Fukuda <hajime.fukuda@me.com>"]
 emval-sys = { git = "https://github.com/hajifkd/emval-sys" }
 libc = "*"
 lazy_static = "*"
-boringssl = "0.0.5"
 
 [package.metadata.testjs]
 node = "nodejs"

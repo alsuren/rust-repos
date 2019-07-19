@@ -8,9 +8,6 @@ name = "hash32"
 repository = "https://github.com/japaric/hash32"
 version = "0.1.0"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.byteorder]
 default-features = false
 version = "1.2.2"

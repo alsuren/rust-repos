@@ -10,6 +10,3 @@ repository = "https://github.com/jdub/rlibcex"
 description = """
 A partner to rlibc, with extra libc functions for freestanding Rust projects
 """
-
-[dependencies]
-boringssl = "0.0.5"

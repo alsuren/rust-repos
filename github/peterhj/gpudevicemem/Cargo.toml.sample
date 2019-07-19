@@ -31,4 +31,3 @@ lazy_static = "*"
 memarray = { path = "../memarray" }
 num-traits = "^0.2"
 parking_lot = { version = "^0.5", features = ["nightly"] }
-boringssl = "0.0.5"

@@ -10,7 +10,6 @@ path = "src/lib.rs"
 
 [dependencies]
 diesel = "0.1"
-boringssl = "0.0.5"
 
 [build-dependencies]
 diesel_codegen = "^0.1.0"

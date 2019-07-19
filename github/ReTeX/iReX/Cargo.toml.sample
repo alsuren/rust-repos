@@ -5,7 +5,6 @@ authors = ["Sebastian Köln <sebk@rynx.org>"]
 
 [dependencies]
 rex = { git = "https://github.com/ReTeX/ReX.git" }
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = "z"

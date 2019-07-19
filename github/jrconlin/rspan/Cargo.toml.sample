@@ -20,9 +20,6 @@ keywords = ["grpc", "spanner"]
 categories = ["database"]
 license-file = "LICENSE"
 repository = "https://www.github.com/herrera93/rustyspanner"
-
-[dependencies]
-boringssl = "0.0.5"
 [dependencies.chrono]
 version = "0.4"
 

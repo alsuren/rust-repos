@@ -8,7 +8,6 @@ pathfinding = "0.5"
 rand="0.3.18"
 rusty-machine="0.5.4"
 text_io = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 path = "src/my_bot.rs"

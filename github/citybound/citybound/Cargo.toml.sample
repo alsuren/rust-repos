@@ -22,7 +22,6 @@ clap = "2.32.0"
 open = "1.2.2"
 backtrace = "0.3"
 rust-embed-flag = {git = "https://github.com/aeickhoff/rust-embed"}
-boringssl = "0.0.5"
 
 [dependencies.cb_simulation]
 path = "./cb_simulation"

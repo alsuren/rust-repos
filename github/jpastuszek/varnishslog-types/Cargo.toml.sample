@@ -16,7 +16,6 @@ license = "MIT"
 serde = "1.0.84"
 serde_derive = "1.0.84"
 linear-map = { version = "1.2.0", features = ["serde_impl"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0.36"

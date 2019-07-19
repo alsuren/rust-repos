@@ -28,7 +28,6 @@ release-max-level-trace = []
 
 [dependencies]
 stlog-macros = { path = "macros", version = "0.1.0" }
-boringssl = "0.0.5"
 
 [dependencies.void]
 default-features = false

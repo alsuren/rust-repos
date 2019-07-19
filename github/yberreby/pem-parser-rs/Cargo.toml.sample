@@ -12,7 +12,6 @@ license = "MIT"
 [dependencies]
 regex = "*"
 rustc-serialize = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 openssl = "*"

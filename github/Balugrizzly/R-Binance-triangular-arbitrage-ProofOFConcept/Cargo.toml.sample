@@ -6,4 +6,3 @@ edition = "2019"
 
 [dependencies]
 binance = { git = "https://github.com/wisespace-io/binance-rs.git" }
-boringssl = "0.0.5"

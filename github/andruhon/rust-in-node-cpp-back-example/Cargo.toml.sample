@@ -6,6 +6,3 @@ authors = ["Andrew Kondratev <andrew@kondratev.pro>"]
 [lib]
 name = "embed"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

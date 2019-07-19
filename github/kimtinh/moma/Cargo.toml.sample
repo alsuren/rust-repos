@@ -7,7 +7,6 @@ authors = ["kimtinh <onlyesterday.16@gmail.com>"]
 gtk = "*"
 rusqlite = "*"
 time = "*"
-boringssl = "0.0.5"
 
 [features]
 default = ["gtk_3_10"]

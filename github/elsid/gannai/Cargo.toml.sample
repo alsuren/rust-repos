@@ -34,7 +34,6 @@ itertools = "*"
 rand = "*"
 rayon = "*"
 rustc-serialize = "*"
-boringssl = "0.0.5"
 
 [dependencies.bobyqa]
 git = "https://github.com/elsid/bobyqa-rs.git"

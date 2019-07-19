@@ -10,7 +10,6 @@ keywords = ["qsv", "intel", "mediasdk"]
 
 [dependencies]
 intel-mediasdk-sys = { version = "0.1.0", path = "intel-mediasdk-sys" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["intel-mediasdk-sys"]

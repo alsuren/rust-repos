@@ -8,4 +8,3 @@ env_logger = "*"
 log = { version = "*", features = ["std", "release_max_level_debug"] }
 rand = "*"
 sdl2 = { version = "*", features = ["bundled"] }
-boringssl = "0.0.5"

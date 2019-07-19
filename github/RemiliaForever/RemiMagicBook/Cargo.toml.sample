@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 algorithm = { version = "0.1.0",  path = "./algorithm" }
 data_structure = { version = "0.1.0",  path = "./data_structure" }
-boringssl = "0.0.5"

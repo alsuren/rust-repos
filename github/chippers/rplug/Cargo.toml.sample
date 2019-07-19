@@ -20,7 +20,6 @@ hyper-tls = "0.1.3"
 serde_json = "1.0.15"
 serde = "1.0.39"
 serde_derive = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 cbindgen = "0.6.0"

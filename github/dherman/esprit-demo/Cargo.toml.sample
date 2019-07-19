@@ -6,5 +6,4 @@ authors = ["Dave Herman <dherman@mozilla.com>"]
 [dependencies]
 esprit = { version = "0.0.3", path = "../esprit" }
 easter = { version = "0.0.3", path = "../esprit/crates/easter" }
-boringssl = "0.0.5"
 

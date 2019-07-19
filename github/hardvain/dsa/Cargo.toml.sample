@@ -16,6 +16,3 @@ path = "src/main.rs"
 [[test]]
 name = "test"
 path = "test/mod.rs"
-
-[dependencies]
-boringssl = "0.0.5"

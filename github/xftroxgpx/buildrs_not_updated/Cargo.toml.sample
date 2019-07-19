@@ -8,7 +8,6 @@ build = "build.rs"
 
 [dependencies]
 filetime = "0.1"
-boringssl = "0.0.5"
 #^ for file timestamp
 
 [build-dependencies]

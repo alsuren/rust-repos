@@ -8,9 +8,6 @@ build = "make capnpc"
 name = "osmium"
 path = "src/main.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sodiumoxide]
 # Use my own fork, until my PR is merged
 # git = "http://github.com/dnaq/sodiumoxide.git"

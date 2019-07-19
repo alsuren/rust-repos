@@ -5,7 +5,6 @@ authors = ["ncarrillo"]
 
 [dependencies]
 aster = { version = "0.16.0", default_features = false }
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"] 

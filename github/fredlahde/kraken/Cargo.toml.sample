@@ -5,4 +5,3 @@ authors = ["fred <fredlahde@gmail.com>"]
 
 [dependencies]
 digitalocean = { git = "https://github.com/fredlahde/digitalocean.git", branch = "ssh-keys"}
-boringssl = "0.0.5"

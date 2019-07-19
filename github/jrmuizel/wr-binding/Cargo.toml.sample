@@ -3,9 +3,6 @@ name = "wr-binding"
 version = "0.1.0"
 authors = ["Jeff Muizelaar <jmuizelaar@mozilla.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.syn]
 version = "0.11.8"
 features = ["full"]

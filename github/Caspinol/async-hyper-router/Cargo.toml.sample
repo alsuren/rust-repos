@@ -7,7 +7,6 @@ authors = ["kris"]
 hyper = "0.11.2"
 futures = "0.1.14"
 regex = "0.2"
-boringssl = "0.0.5"
 
 [lib]
 name = "async_hyper_router"

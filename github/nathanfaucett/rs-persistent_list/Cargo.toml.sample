@@ -12,7 +12,6 @@ homepage = "https://github.com/nathanfaucett/rs-persistent_list"
 
 [dependencies]
 collection_traits = {git = "https://github.com/nathanfaucett/rs-collection_traits", features=["no_std"]}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 linked_list = {git = "https://github.com/nathanfaucett/rs-linked_list"}

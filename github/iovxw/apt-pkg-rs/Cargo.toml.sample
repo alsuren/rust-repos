@@ -6,4 +6,3 @@ authors = ["iovxw <iovxw@outlook.com>"]
 [dependencies]
 libc = "0.2"
 apt-pkg-sys = { version = "0.1", path = "apt-pkg-sys" }
-boringssl = "0.0.5"

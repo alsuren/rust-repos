@@ -6,7 +6,6 @@ version = "0.2.8"
 rustr = "*"
 #rustson = { git = "https://github.com/tercen/rustson", tag = "0.2.8" }
 rustson = { path = "../rustson" }
-boringssl = "0.0.5"
 
 [lib]
 name = "rtsonlib"

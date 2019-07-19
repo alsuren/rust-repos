@@ -16,5 +16,4 @@ serde_yaml = "0.8"
 serde_json = "1.0"
 clap = "2.32.0"
 log = { version = "0.4", features = ["max_level_debug", "release_max_level_warn"] }
-boringssl = "0.0.5"
 

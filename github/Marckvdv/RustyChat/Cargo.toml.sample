@@ -4,8 +4,5 @@ name = "chat-server"
 version = "0.0.1"
 authors = ["Marckvdv <Marckvandervegt@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.ncurses]
 git = "https://github.com/Marckvdv/ncurses-rs"

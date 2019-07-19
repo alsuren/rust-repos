@@ -4,8 +4,5 @@ name = "tsdnsx"
 version = "0.0.1"
 authors = ["Mark Schmale <masch@masch.it>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust-ini]
 git = "https://github.com/zonyitoo/rust-ini.git"

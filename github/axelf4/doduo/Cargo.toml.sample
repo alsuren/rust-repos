@@ -13,7 +13,6 @@ categories = ["wasm", "web-programming"]
 [dependencies]
 lis = { git = "https://github.com/axelf4/lis" }
 wasm-bindgen = "0.2.42"
-boringssl = "0.0.5"
 
 [dependencies.web-sys]
 version = "0.3.19"

@@ -12,7 +12,6 @@ keywords = ["netlink"]
 bitflags =  "1.0"
 byteorder = "1.3"
 libc = "0.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 mio = "0.6"

@@ -6,4 +6,3 @@ authors = ["Eric Platon <zaraki@gmx.com>"]
 [dependencies]
 hyper = '0.9.9'
 flate2 = { version = '0.2', features = ['zlib'], default-features = false }
-boringssl = "0.0.5"

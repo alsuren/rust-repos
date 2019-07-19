@@ -7,9 +7,6 @@ authors = ["Rafal Mielniczuk <rafalm3@gmail.com>"]
 name = "cykusz_rust"
 crate-type = ["staticlib"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.core]
 git = "https://github.com/rafalmiel/rust-libcore"
 

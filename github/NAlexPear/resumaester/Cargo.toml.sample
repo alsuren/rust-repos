@@ -11,7 +11,6 @@ dialoguer = "0.3.0"
 dirs = "1.0.5"
 reqwest = "0.9.11"
 serde_json = "1.0"
-boringssl = "0.0.5"
 
 [dependencies.serde]
 features = ["derive"]

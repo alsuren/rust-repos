@@ -14,7 +14,6 @@ futures = "0.1.26"
 serde = "1.0.90"
 serde_derive = "1.0.90"
 serde_json = "1.0.39"
-boringssl = "0.0.5"
 
 [dependencies.r2d2_mysql]
 git = "https://github.com/outersky/r2d2-mysql"

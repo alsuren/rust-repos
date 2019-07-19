@@ -10,7 +10,6 @@ crate-type = ["staticlib"]
 [dependencies]
 bitflags = "*"
 spin = "*"
-boringssl = "0.0.5"
 
 [dependencies.goblin]
 git = "https://github.com/m4b/goblin.git"

@@ -19,6 +19,3 @@ approx = "0.3"
 [features]
 # Controls certain tests that are not deterministic
 nondeterministic_tests = []
-
-[dependencies]
-boringssl = "0.0.5"

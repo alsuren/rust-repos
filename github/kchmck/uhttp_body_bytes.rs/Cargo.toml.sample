@@ -7,6 +7,3 @@ license = "MIT"
 documentation = "https://docs.rs/uhttp_body_bytes"
 repository = "https://github.com/kchmck/uhttp_body_bytes.rs"
 keywords = ["http", "request", "body", "bytes"]
-
-[dependencies]
-boringssl = "0.0.5"

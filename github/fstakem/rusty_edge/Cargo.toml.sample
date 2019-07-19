@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 edge_ingression = { path = "./lib/edge_ingression" }
-boringssl = "0.0.5"

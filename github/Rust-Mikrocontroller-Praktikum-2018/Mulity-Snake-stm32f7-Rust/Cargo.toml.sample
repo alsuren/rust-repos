@@ -6,7 +6,6 @@ authors = ["","Florian Götz flogoetz1@web.de","Fabian Wiesner <wiesner.info@gma
 [dependencies]
 cortex-m = "0.1.4 "
 r0 = "0.1.0"
-boringssl = "0.0.5"
 
 [dependencies.arrayvec]
 default-features = false

@@ -5,7 +5,6 @@ authors = ["Erin Moon <erin@hashbang.sh>"]
 links = "gpib"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.43"

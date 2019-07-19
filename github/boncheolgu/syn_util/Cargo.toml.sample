@@ -12,7 +12,6 @@ readme = "README.md"
 [dependencies]
 proc-macro2 = "0.4"
 syn = { version = "0.14", features = ["extra-traits"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quote = "0.6"

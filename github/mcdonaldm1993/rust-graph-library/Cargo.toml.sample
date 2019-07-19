@@ -4,9 +4,6 @@ name = "graph"
 version = "0.0.1"
 authors = ["Michael McDonald <mcdonaldm1993@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.disjoint_set]
 git = "https://github.com/mcdonaldm1993/disjoint-set.git"
 

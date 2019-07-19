@@ -17,7 +17,6 @@ nalgebra = "0.13"
 clap = "2.29"
 chan = "0.1"
 lsm9ds1 = { git = 'https://github.com/jsagfr/lsm9ds1-rs.git' }
-boringssl = "0.0.5"
 
 [features]
 default = [ "nalgebra/serde-serialize" ]

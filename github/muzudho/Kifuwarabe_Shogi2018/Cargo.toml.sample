@@ -11,7 +11,6 @@ chrono = "0.4"
 time = "0.1"
 log = "*"
 env_logger = "*"
-boringssl = "0.0.5"
 
 [dependencies.kifuwarabe_shell]
 git = "https://github.com/muzudho/rust_kifuwarabe_shell.git"

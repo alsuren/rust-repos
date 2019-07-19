@@ -3,9 +3,6 @@ authors = ["Shane Snover <ssnover95@gmail.com>"]
 name = "lab11"
 version = "0.1.0"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.msp430]
 version = "0.1.0"
 

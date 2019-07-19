@@ -17,7 +17,6 @@ askama = "0.5"
 pbr = "1.0"
 regex = "0.2"
 git2 = { version = "0.7", default-features = false, features = ["https","curl"] }
-boringssl = "0.0.5"
 
 [build-dependencies]
 askama = "0.5"

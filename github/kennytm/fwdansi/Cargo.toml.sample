@@ -16,7 +16,6 @@ maintenance = { status = "passively-maintained" }
 [dependencies]
 termcolor = "1"
 memchr = "2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "0.9"

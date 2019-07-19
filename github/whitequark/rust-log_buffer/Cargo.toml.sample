@@ -11,6 +11,3 @@ description = "A zero-allocation ring buffer for storing text logs"
 
 [features]
 const_fn = []
-
-[dependencies]
-boringssl = "0.0.5"

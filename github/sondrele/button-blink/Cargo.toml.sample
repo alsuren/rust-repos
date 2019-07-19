@@ -7,6 +7,3 @@ authors = ["Sondre Lefsaker <sondrele@stud.ntnu.no>"]
 git = "https://github.com/sondrele/emlib.git"
 rev = "3ebfb852987a8f73c9a7db2fbd0d496a85271a9f"
 features = ["stk3700"]
-
-[dependencies]
-boringssl = "0.0.5"

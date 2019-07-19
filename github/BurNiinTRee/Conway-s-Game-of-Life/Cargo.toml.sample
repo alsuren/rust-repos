@@ -10,7 +10,6 @@ rand = "0.3.14"
 rayon = "*"
 clap = "2.16"
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [build-dependencies]
 clap = "2.16"

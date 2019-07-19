@@ -17,7 +17,6 @@ rusoto_s3 = "0.34.0"
 rusoto_credential = "0.11.0"
 futures = "0.1.21"
 bytes = "0.4"
-boringssl = "0.0.5"
 
 # enable debug for release profile when need to profile with optimizations
 # [profile.release]

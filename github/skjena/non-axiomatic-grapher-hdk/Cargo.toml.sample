@@ -12,7 +12,6 @@ lazy_static = "1.1.0"
 holochain_wasm_utils = { path = "../holochain-rust/wasm_utils" }
 holochain_core_types = { path = "../holochain-rust/core_types" }
 holochain_core_types_derive = { path = "../holochain-rust/core_types_derive" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 test_utils = { path = "../holochain-rust/test_utils" }

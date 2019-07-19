@@ -20,4 +20,3 @@ diesel = { version = "1.4.2", features = ["sqlite", "chrono", "r2d2"] }
 dotenv = "0.13.0"
 tokio-process = "0.2"
 uuid = { version = "0.7", features = ["serde", "v4"] }
-boringssl = "0.0.5"

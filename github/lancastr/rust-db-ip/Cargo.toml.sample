@@ -10,4 +10,3 @@ name = "dbip"
 rusqlite = { version = "0.13.0", features = ["bundled"] }
 failure = "0.1.1"
 csv = "1.0.0"
-boringssl = "0.0.5"

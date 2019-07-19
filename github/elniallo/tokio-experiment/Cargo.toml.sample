@@ -40,7 +40,6 @@ uuid = {version = "0.6.5", features= ["v4"]}
 double = "0.2.2"
 wallet = { git = "https://github.com/jimni1222/rust_wallet.git" }
 bitcoin = "0.14.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "^0.2.10"

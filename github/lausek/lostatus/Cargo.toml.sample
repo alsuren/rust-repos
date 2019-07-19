@@ -14,7 +14,6 @@ serde = "^1.0.80"
 serde_derive = "^1.0.80"
 serde_json = "^1.0.33"
 lazy_static = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "lostatus"

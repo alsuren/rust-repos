@@ -8,5 +8,4 @@ libusb = { git = "https://github.com/oberien/libusb-rs", rev = "060be5045140f462
 g910 = { git = "https://github.com/oberien/logitech-g910-rs", rev = "master" }
 g910_handler = { git = "https://github.com/oberien/logitech-g910-handler-rs", rev = "master" }
 pcap = "0.5.5"
-boringssl = "0.0.5"
 

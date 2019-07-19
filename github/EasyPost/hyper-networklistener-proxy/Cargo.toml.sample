@@ -9,7 +9,6 @@ description = "Hyper NetworkListener implementing the PROXY protocol"
 [dependencies]
 hyper = "0.10"
 byteorder = "*"
-boringssl = "0.0.5"
 
 [dev_dependencies]
 iron = "0.6"

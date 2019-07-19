@@ -28,6 +28,3 @@ path = "src/lib.rs"
 [[bin]]
 name = "dpdk_test"
 path = "src/test.rs"
-
-[dependencies]
-boringssl = "0.0.5"

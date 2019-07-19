@@ -9,7 +9,6 @@ futures = "*"
 rand = "*"
 tokio-core = "*"
 tokio-io = "*"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 mio = { path = "mio" }

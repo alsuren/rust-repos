@@ -12,9 +12,6 @@ path = "src/imap.rs"
 name = "example"
 path = "example.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.openssl]
 git = "https://github.com/sfackler/rust-openssl.git"
 

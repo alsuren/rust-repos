@@ -13,7 +13,6 @@ crate-type = ["dylib"]
 [dependencies]
 libc = "*"
 pgrustxn = "0.0.7"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rustfmt = "*"

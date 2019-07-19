@@ -5,4 +5,3 @@ authors = ["Harry Stern <harry@harrystern.net>"]
 
 [dependencies]
 cairo-rs = { version = "*", features = ["png"] }
-boringssl = "0.0.5"

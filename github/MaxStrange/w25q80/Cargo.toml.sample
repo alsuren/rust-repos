@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 embedded-hal = "0.2.2"
 noio = { git = "https://github.com/MaxStrange/noio" }
-boringssl = "0.0.5"

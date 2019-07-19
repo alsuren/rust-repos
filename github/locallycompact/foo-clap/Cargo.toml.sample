@@ -5,4 +5,3 @@ authors = ["Daniel Firth <dan.firth@codethink.co.uk>"]
 
 [dependencies]
 clap = { features = ["yaml"] }
-boringssl = "0.0.5"

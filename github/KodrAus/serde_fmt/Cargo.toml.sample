@@ -9,9 +9,6 @@ default = ["std"]
 
 std = ["serde/std"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.serde]
 version = "1"
 default-features = false

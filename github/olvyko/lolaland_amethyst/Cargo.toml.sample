@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 amethyst = { git = "https://github.com/amethyst/amethyst.git", rev = "a738b8692208ed27f467267d12beaf079c200bdc" }
 serde = "1.0"
-boringssl = "0.0.5"

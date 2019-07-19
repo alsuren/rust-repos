@@ -17,7 +17,6 @@ ring = "0.14"
 sct = "0.5"
 untrusted = "0.6.2"
 webpki = "0.19"
-boringssl = "0.0.5"
 
 [features]
 default = ["logging"]

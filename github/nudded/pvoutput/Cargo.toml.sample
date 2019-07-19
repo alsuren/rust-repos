@@ -6,4 +6,3 @@ authors = ["ubuntu"]
 [dependencies]
 reqwest = "0.2.x"
 hyper = { version = "0.9", default-features=false, features=[] }
-boringssl = "0.0.5"

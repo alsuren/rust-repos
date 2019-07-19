@@ -21,7 +21,6 @@ travis-ci = { repository = "steveklabnik/semver" }
 semver-parser = "0.7.0"
 serde = { version = "1.0", optional = true }
 diesel = { version = "1.1", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = []

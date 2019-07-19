@@ -5,4 +5,3 @@ authors = ["niklasad1 <niklasadolfsson1@gmail.com>"]
 
 [dependencies]
 tock-regs = { git = "https://github.com/tock/tock.git", branch = "seperate-registers" }
-boringssl = "0.0.5"

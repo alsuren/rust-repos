@@ -8,7 +8,6 @@ categories = ["database-implementations", "data-structures"]
 readme = "README.md"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [[bench]]
 name = "bench-divide"

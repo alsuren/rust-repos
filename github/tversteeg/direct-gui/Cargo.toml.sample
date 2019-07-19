@@ -21,7 +21,6 @@ travis-ci = {repository = "tversteeg/direct-gui"}
 [dependencies]
 blit = "0.5"
 image = "0.20"
-boringssl = "0.0.5"
 
 [[example]]
 name = "button"

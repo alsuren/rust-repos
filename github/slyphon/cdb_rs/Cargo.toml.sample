@@ -15,7 +15,6 @@ proptest = "~0.7.1"
 clap = "~2.31.0"
 rust-crypto = "~0.2.36"
 libc = "~0.2.42"
-boringssl = "0.0.5"
 
 [dependencies.tinycdb]
 git = "https://github.com/andrew-d/tinycdb-rs"

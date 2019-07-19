@@ -7,6 +7,3 @@ homepage = "https://github.com/Sgeo/take_mut"
 repository = "https://github.com/Sgeo/take_mut"
 description = "Take a T from a &mut T temporarily"
 categories = ["rust-patterns"]
-
-[dependencies]
-boringssl = "0.0.5"

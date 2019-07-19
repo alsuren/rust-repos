@@ -5,7 +5,6 @@ authors = ["Thomas Klemz <tjklemz@gmail.com>"]
 
 [dependencies]
 image = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "rust-colors"

@@ -17,7 +17,6 @@ crate_type = ["rlib", "dylib"]
 log = "0.3"
 actiondb = { path = "actiondb" }
 syslog-ng-common = "0.8.0"
-boringssl = "0.0.5"
 
 [build-dependencies]
 syslog-ng-build = "0.2"

@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 rand = "*"
 color-backtrace = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "*"

@@ -6,7 +6,6 @@ description = "Basic arithmetic for unsigned arbitrarily-sized integers in pure 
 license = "MIT"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.3"

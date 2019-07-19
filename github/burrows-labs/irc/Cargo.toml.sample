@@ -15,7 +15,6 @@ mio = "0.6.16"
 mio-extras = "2.0.5"
 crossbeam-channel = "0.2.6"
 cursive = { path = "vendor/Cursive", default-features = false, features = ["ncurses-backend"] }
-boringssl = "0.0.5"
 # XXX: termion is pure rust, but causes screen flickering
 # cursive = { path = "vendor/Cursive", default-features = false, features = ["termion-backend"] }
 

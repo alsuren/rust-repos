@@ -63,7 +63,6 @@ fallible-iterator = "0.2"
 fallible-streaming-iterator = "0.1"
 memchr = "2.2.0"
 uuid = { version = "0.7", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "0.3"

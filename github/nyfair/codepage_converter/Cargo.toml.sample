@@ -6,7 +6,6 @@ authors = ["nyfair <nyfair2012@gmail.com>"]
 [dependencies]
 walkdir = "*"
 encoding_rs = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

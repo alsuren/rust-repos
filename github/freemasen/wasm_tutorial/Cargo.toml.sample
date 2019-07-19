@@ -5,7 +5,6 @@ authors = ["robert masen <r@robertmasen.pizza>"]
 
 [dependencies]
 wasm_tutorial_server = { path = "crates/server" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

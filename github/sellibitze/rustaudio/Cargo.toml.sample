@@ -8,6 +8,3 @@ authors = ["Sebastian Gesemann <s.gesemann@gmail.com>"]
 
 name = "rustaudio"
 crate-type = ["dylib", "rlib"]
-
-[dependencies]
-boringssl = "0.0.5"

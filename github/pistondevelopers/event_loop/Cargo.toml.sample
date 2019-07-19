@@ -20,9 +20,6 @@ homepage = "https://github.com/pistondevelopers/event_loop"
 name = "event_loop"
 path = "src/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.clock_ticks]
 #git = "https://github.com/tomaka/clock_ticks"
 version = "0.0.5"

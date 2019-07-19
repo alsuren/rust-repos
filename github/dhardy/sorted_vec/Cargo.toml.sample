@@ -9,4 +9,3 @@ default = ["rustc-serialize"]
 [dependencies]
 
 rustc-serialize = { version = "*", optional = true }
-boringssl = "0.0.5"

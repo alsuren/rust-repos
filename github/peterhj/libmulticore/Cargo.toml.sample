@@ -6,6 +6,3 @@ authors = ["Peter Jin <peterhaijin@gmail.com>"]
 [lib]
 name = "multicore"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

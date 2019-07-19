@@ -12,7 +12,6 @@ path = "examples/mat3_rot.rs"
 
 [dependencies]
 nalgebra = "*"
-boringssl = "0.0.5"
 
 [dependencies.kiss3d]
 # For the samples only: (maybe move to subproject?)

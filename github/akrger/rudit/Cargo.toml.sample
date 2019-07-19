@@ -6,4 +6,3 @@ authors = ["André Krüger <zeldamer@t-online.de>"]
 [dependencies]
 termion = "*"
 gapbuffer = { path = "gapbuffer" }
-boringssl = "0.0.5"

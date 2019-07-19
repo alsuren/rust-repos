@@ -8,4 +8,3 @@ license = "MIT/Apache2"
 [dependencies]
 winit = { git = "https://github.com/crlf0710/winit", branch = "stable"}
 winapi = { version = "0.3", features = ["winuser"]}
-boringssl = "0.0.5"

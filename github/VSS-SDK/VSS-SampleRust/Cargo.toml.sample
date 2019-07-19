@@ -5,4 +5,3 @@ authors = ["Johnathan Fercher da Rosa <johnathanfercher22@gmail.com>"]
 
 [dependencies]
 vss-core = { git = "https://github.com/VSS-SDK/VSS-CoreRust", branch = "master" }
-boringssl = "0.0.5"

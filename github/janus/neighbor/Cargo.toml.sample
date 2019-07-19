@@ -16,4 +16,3 @@ base64 = "0.6.0"
 mio = "0.6.10"
 time = "0.1.38"
 chrono = { version = "0.4", features = ["serde", "rustc-serialize"] }
-boringssl = "0.0.5"

@@ -9,4 +9,3 @@ router = "*"
 rustc-serialize = "0.3"
 # Had to do something like `ln -s /usr/local/Cellar/sqlite/3.8.0.2/lib/pkgconfig/sqlite3.pc /usr/local/lib/pkgconfig/sqlite3.pc`
 rusqlite = "0.1.0"
-boringssl = "0.0.5"

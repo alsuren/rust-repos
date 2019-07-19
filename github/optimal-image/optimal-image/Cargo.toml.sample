@@ -19,7 +19,6 @@ vips-sys = "0.1.2"
 libc = "0.2.43"
 serde = "1.0.82"
 serde_derive = "1.0.82"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "optimal-image"

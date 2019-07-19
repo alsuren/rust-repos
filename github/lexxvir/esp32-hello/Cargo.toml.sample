@@ -5,7 +5,6 @@ edition = "2018"
 
 [dependencies]
 esp32-sys = { path = "esp32-sys" }
-boringssl = "0.0.5"
 
 [profile.dev]
 lto = false 

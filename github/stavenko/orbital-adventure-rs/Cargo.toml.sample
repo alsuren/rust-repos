@@ -9,4 +9,3 @@ rustflags = ['-A non_snake_case']
 [dependencies]
 gl = '*'
 glutin = '*'
-boringssl = "0.0.5"

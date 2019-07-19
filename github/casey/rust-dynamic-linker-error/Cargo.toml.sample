@@ -3,6 +3,3 @@ name = "rust-dynamic-linker-error"
 version = "0.0.0"
 authors = ["Casey Rodarmor <casey@rodarmor.com>"]
 build = "build.rs"
-
-[dependencies]
-boringssl = "0.0.5"

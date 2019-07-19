@@ -8,4 +8,3 @@ authors = ["Rafael Gomes Dantas <rafagd@gmail.com>"]
 macros = { path = "../macros-rs" }
 hyper  = "*"
 sxd-document = { git = "https://github.com/shepmaster/sxd-document" }
-boringssl = "0.0.5"

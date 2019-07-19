@@ -5,4 +5,3 @@ authors = ["Markus Westerlind <markus.westerlind@distilnetworks.com>"]
 
 [dependencies]
 combine = { git = "https://github.com/Marwes/combine", branch = "partial_parsing" }
-boringssl = "0.0.5"

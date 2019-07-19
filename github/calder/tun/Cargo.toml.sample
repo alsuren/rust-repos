@@ -5,7 +5,6 @@ authors = ["Calder Coalson <caldercoalson@gmail.com>"]
 
 [dependencies]
 regex = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "tun"

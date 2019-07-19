@@ -9,8 +9,5 @@ license = "GPLv3"
 
 name = "springnet"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.spring_dvs]
 path = "/home/cfg/Workspace/rs.springdvs.lib/"

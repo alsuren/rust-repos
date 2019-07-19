@@ -16,4 +16,3 @@ postgres = { version = "0.15.2", features = ["with-uuid", "with-chrono"] }
 r2d2 = "0.8"
 r2d2_postgres="0.14"
 chrono = { version = "0.4", features = ["serde"] }
-boringssl = "0.0.5"

@@ -10,7 +10,6 @@ serde_json = "1.0"
 serde_derive = "1.0"
 serde = "1.0"
 geojson_rewind = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.clap]
 features = ["yaml"]

@@ -6,7 +6,6 @@ authors = ["bryant <bryant@users.noreply.github.com>"]
 [dependencies]
 rand = "*"
 libc = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

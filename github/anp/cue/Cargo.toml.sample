@@ -13,7 +13,6 @@ description = "Simple parallel streaming pipeline for CPU/RAM expensive computat
 crossbeam = "0.2"
 log = { version = "0.3", optional = true }
 syncbox = "0.2"
-boringssl = "0.0.5"
 
 [features]
 default = ["log"]

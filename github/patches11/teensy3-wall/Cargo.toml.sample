@@ -3,9 +3,6 @@ name = "teensy3-wall"
 version = "0.1.0"
 authors = ["Patrick Brown <patrick.barry.brown@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.teensy3]
 git = "https://github.com/patches11/teensy3-rs.git"
 branch = "octo"

@@ -3,8 +3,5 @@ name = "tabula"
 version = "0.1.0"
 authors = ["Ty Overby <ty@pre-alpha.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.parrot]
 path = "../parrot"

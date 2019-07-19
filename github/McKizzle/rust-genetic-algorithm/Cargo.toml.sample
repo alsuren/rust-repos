@@ -22,7 +22,6 @@ path = "src/main.rs"
 rand = "*"
 time = "*"
 ordered-float = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "*"

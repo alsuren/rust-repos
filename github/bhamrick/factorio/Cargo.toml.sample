@@ -6,7 +6,6 @@ authors = ["Brian Hamrick <brian.c.hamrick@gmail.com>"]
 [dependencies]
 lazy_static = "*"
 rulinalg = "*"
-boringssl = "0.0.5"
 
 [dependencies.nom]
 version = "^3.1"

@@ -6,4 +6,3 @@ authors = ["timvisee <timvisee@gmail.com>"]
 [dependencies]
 clap = "2.20.5"
 config = { version = "0.4.1", features = ["yaml"] }
-boringssl = "0.0.5"

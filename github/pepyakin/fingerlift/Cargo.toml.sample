@@ -11,7 +11,6 @@ byteorder = "1.2"
 capstone = "0.4"
 x86asm = { path = "rust-x86asm" }
 wabt = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_matches = "1.2"

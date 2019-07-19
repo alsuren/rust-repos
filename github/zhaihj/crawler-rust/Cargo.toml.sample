@@ -6,7 +6,6 @@ authors = ["Hongjie Zhai <zhaihj@live.jp>"]
 [dependencies]
 hyper = "0.9"
 select = "0.3"
-boringssl = "0.0.5"
 
 [[bin]]
 path = "src/main_wt.rs"

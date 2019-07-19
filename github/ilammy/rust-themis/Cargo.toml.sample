@@ -23,7 +23,6 @@ vendored = ["bindings/vendored"]
 [dependencies]
 bindings = { package = "libthemis-sys", path = "libthemis-sys", version = "=0.0.3" }
 zeroize = "0.5.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 byteorder = "1.2.7"

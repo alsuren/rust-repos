@@ -13,7 +13,6 @@ serde_derive = "0.9"
 serde_yaml="0.6.2"
 serde_json="0.9"
 url="*"
-boringssl = "0.0.5"
 
 [lib]
 name = "nss_aad"

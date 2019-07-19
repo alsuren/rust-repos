@@ -8,7 +8,6 @@ repository = "https://github.com/ykonomi/markdown-rs"
 pest = "2.0.1"
 pest_derive = "2.0.1"
 htmlescape-plus = { git = "https://github.com/ykonomi/rust-htmlescape.git" }
-boringssl = "0.0.5"
 
 [lib]
 name = "markdown"

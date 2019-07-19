@@ -13,7 +13,6 @@ codecov = { repository = "Weltraumschaf/game_of_live", branch = "master", servic
 [dependencies]
 clap = "2.29.2"
 rand = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 hamcrest = "0.1.5"

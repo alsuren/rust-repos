@@ -7,9 +7,6 @@ authors = ["Alberto Leal <mailforalberto@gmail.com>"]
 [profile.dev]
 opt-level = 0      # controls the `--opt-level` the compiler builds with
 debug = true       # controls whether the compiler passes `-g`
-
-[dependencies]
-boringssl = "0.0.5"
 # panic = 'unwind'   # ensures panic is unwind safe
 
 # [profile.release]

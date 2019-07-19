@@ -17,7 +17,6 @@ rusttype = "0.7.5"
 nphysics3d = "0.11.1"
 ncollide3d = "0.19"
 gui = { path = "gui" }
-boringssl = "0.0.5"
 
 [dependencies.nalgebra]
 version =  "0.18"

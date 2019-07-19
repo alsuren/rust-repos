@@ -15,6 +15,3 @@ categories    = ["encoding"]
 [badges]
 travis-ci = { repository = "1aim/mail-chars", branch = "master" }
 maintenance = { status = "actively-developed" }
-
-[dependencies]
-boringssl = "0.0.5"

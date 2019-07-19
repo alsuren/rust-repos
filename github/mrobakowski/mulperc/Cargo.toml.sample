@@ -17,7 +17,6 @@ find_folder = "*"
 nfd = "*"
 flate2 = "*"
 libc = "*"
-boringssl = "0.0.5"
 [dependencies.conrod]
 version = "*"
 default-features = false

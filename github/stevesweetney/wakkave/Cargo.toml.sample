@@ -12,7 +12,6 @@ members = [
 
 [dependencies]
 capnp = "0.8.17"
-boringssl = "0.0.5"
 
 [build-dependencies]
 capnpc = "0.8.9"

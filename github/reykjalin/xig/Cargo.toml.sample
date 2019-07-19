@@ -3,9 +3,6 @@ name = "xig"
 version = "0.1.0"
 authors = ["Kristófer Reykjalín <kristofert13@ru.is>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.gtk]
 version = "0.5.0"
 features = ["v3_22"]

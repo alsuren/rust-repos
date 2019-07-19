@@ -6,6 +6,3 @@ version = "0.0.1"
 [lib]
 name = "rustlib"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

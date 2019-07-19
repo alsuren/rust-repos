@@ -9,6 +9,3 @@ criterion = "*"
 [[bench]]
 name = "example"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

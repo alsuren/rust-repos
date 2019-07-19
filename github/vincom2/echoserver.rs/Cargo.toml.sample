@@ -7,6 +7,3 @@ authors = [ "Vincent Huang <vincom2@gmail.com>" ]
 [[bin]]
 
 name = "echo_server"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -13,4 +13,3 @@ serialize = ["serde", "serde_derive"]
 termion = "1.5.1"
 serde = { version = "*", optional=true }
 serde_derive = { version = "*", optional=true }
-boringssl = "0.0.5"

@@ -14,7 +14,6 @@ tower-buffer = { git = "https://github.com/tower-rs/tower" }
 tower-http = { git ="https://github.com/tower-rs/tower-http" }
 tower-http-util = { git ="https://github.com/tower-rs/tower-http" }
 tower-util = { git ="https://github.com/tower-rs/tower" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 hyper = "0.12"

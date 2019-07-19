@@ -5,6 +5,3 @@ version = "0.0.2-pre2"
 authors = ["Jacob Okamoto <okam0013@umn.edu>"]
 description = "A DNS library for Rust."
 license = "BSD-2-Clause"
-
-[dependencies]
-boringssl = "0.0.5"

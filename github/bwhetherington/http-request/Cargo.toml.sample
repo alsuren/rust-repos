@@ -9,9 +9,6 @@ default = ["wasm"]
 native = ["reqwest"]
 wasm = ["web-sys", "wasm-bindgen", "wasm-bindgen-futures", "futures"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.web-sys]
 version = "0.3.6"
 optional = true

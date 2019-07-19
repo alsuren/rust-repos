@@ -35,4 +35,3 @@ serde_urlencoded = "0.4"
 #        export DEP_OPENSSL_INCLUDE=`brew --prefix openssl`/include
 # See http://stackoverflow.com/q/39709542/178154
 hyper = "0.9.13"
-boringssl = "0.0.5"

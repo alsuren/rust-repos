@@ -6,6 +6,3 @@ authors = ["Sivaram Konanki <konanki.sivaram@gmail.com>"]
 [lib]
 name = "double_input"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

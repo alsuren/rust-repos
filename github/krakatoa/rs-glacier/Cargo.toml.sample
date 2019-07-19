@@ -12,7 +12,6 @@ time = "*"
 rust-crypto = "*"
 rustc-serialize = "*"
 rand = "*"
-boringssl = "0.0.5"
 
 [dependencies.aws]
 git = "https://github.com/krakatoa/aws-rs"

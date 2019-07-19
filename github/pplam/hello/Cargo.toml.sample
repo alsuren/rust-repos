@@ -6,4 +6,3 @@ authors = ["lsw骆仕文 <luosw@ctrip.com>"]
 path = "src/lib.rs"
 crate-type = ["cdylib"]
 [dependencies]
-boringssl = "0.0.5"

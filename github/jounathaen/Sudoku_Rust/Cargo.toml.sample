@@ -7,7 +7,6 @@ authors = ["Jonathan Klimt <jonathan.klimt@rwth-aachen.de>"]
 csv = "1.0.0-beta.5"
 time = "0.1"
 termion = "1.5"
-boringssl = "0.0.5"
 
 # The development profile, used for `cargo build`
 [profile.dev]

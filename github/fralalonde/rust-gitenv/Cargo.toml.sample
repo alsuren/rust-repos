@@ -15,7 +15,6 @@ description = "A `gitenv` implementation for Rust"
 [dependencies]
 tempdir = "0.3"
 url = "*"
-boringssl = "0.0.5"
 
 [dependencies.git2]
 version = "0.6.2"

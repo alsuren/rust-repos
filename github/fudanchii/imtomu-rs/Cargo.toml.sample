@@ -10,7 +10,6 @@ efm32 = { git = "https://github.com/jacobrosenthal/efm32hg309f64-pac", features 
 tomu-macros = { path = "macros", optional = true }
 embedded-hal = { version = "0.2.2", features = ["unproven"] }
 cast = {version = "0.2.2",default-features=false }
-boringssl = "0.0.5"
 
 # We don't have direct dependencies to this,
 # but will need this to build examples

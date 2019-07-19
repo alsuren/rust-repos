@@ -8,7 +8,6 @@ edition = "2018"
 embedded-hal = "0.2.2"
 bitflags = "1.0.4"
 typed-builder = "0.2.0" #TODO disable
-boringssl = "0.0.5"
 
 # Dev-dependencies are not used when compiling a package for building, 
 # but are used for compiling tests, examples, and benchmarks.

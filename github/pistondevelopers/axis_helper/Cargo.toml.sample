@@ -12,9 +12,6 @@ tags = []
 name = "axis_helper"
 path = "src/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.gfx]
 
 git = "http://github.com/gfx-rs/gfx-rs"

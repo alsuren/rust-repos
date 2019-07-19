@@ -37,9 +37,8 @@ cargo-features = ["edition"]
 	serde_yaml     = ">=0.7.5"
 
 	clap           = { version = ">=2.32", features = ["yaml"] }
-boringssl = "0.0.5"
 
 
-[target.'cfg(windows)'.dependencies]
+[ target.'cfg(windows)'.dependencies ]
 
 	winapi = { version = "0.3", features = ["winuser"] }

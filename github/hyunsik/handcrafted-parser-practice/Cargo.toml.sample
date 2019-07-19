@@ -11,7 +11,6 @@ path = "src/repl.rs"
 log = "0.3.4"
 env_logger = "0.3.2"
 rl-sys = "~0.4.1"
-boringssl = "0.0.5"
 
 [dependencies.syntax]
 path = "src/libsyntax"

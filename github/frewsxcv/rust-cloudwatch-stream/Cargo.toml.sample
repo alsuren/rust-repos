@@ -5,4 +5,3 @@ authors = ["Corey Farwell <coreyf@rwell.org>"]
 
 [dependencies]
 rusoto = { version = "0.16", features = ["logs"] }
-boringssl = "0.0.5"

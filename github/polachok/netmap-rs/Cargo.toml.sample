@@ -5,7 +5,6 @@ authors = ["Alexander Polakov <apolyakov@beget.ru>"]
 
 [dependencies]
 libc = "0.2.11"
-boringssl = "0.0.5"
 
 [dependencies.netmap_sys]
 git = "https://github.com/libpnet/netmap_sys"

@@ -17,9 +17,6 @@ categories = ["memory-management"]
 default = []
 bundled = ["tcmalloc-sys"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.tcmalloc-sys]
 path = "tcmalloc-sys"
 version = "0.3.0"

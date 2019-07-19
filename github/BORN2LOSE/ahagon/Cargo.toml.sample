@@ -8,9 +8,6 @@ license = "MIT"
 keywords = ["torrent", "bittorent", "client", "gtk"]
 repository = "https://github.com/BORN2LOSE/ahagon"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.gtk]
 git = "https://github.com/gtk-rs/gtk.git"
 features = ["v3_16"]

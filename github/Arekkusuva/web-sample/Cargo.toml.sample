@@ -19,7 +19,6 @@ validator = "0.8.0"
 validator_derive = "0.8.0"
 r2d2_redis = "0.8.0"
 jsonwebtoken = "5.0.1"
-boringssl = "0.0.5"
 
 [dependencies.iron-auth]
 git = "https://github.com/Arekkusuva/iron-auth"

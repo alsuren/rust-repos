@@ -6,7 +6,6 @@ authors = ["Noah Weninger <nweninge@ualberta.ca>"]
 [dependencies]
 ladspa = "*"
 pvoc = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "pvoc_plugins"

@@ -27,7 +27,6 @@ serde_yaml = "0.6.0"
 sodiumoxide = { default-features = false, git = "https://github.com/sopium/sodiumoxide"}
 tai64 = { git = "https://github.com/sopium/tai64" }
 treebitmap = { git = "https://github.com/sopium/treebitmap" }
-boringssl = "0.0.5"
 
 [lib]
 name = "titun"

@@ -61,6 +61,3 @@ path = "src/ai/bot-building/saveprincess.rs"
 [[bin]]
 name = "utopian-tree"
 path = "src/algorithms/implementation/utopian-tree.rs"
-
-[dependencies]
-boringssl = "0.0.5"

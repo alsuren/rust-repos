@@ -20,7 +20,6 @@ function = { path = "src/function" }
 getopts = "0.2.*"
 rand = "0.3.*"
 time = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

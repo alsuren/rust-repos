@@ -27,7 +27,6 @@ bitflags = "1.0"
 futures-preview = { version = "0.3.0-alpha", optional = true }
 glib-sys = { git = "https://github.com/gtk-rs/sys" }
 gobject-sys = { git = "https://github.com/gtk-rs/sys" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3"

@@ -26,7 +26,6 @@ slog = { version = "2.4", features = ["max_level_trace", "release_max_level_info
 sloggers = "0.3"
 toml = "0.4"
 winapi = { version = "0.3", features = ["combaseapi", "coml2api", "endpointvolume", "mmdeviceapi", "objbase", "oleauto", "synchapi", "unknwnbase", "winerror"] }
-boringssl = "0.0.5"
 
 [package.metadata.docs.rs]
 default-target = "i686-pc-windows-msvc"

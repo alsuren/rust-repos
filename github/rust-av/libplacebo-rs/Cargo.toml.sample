@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 libplacebo-sys = { path="libplacebo-sys" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["libplacebo-sys"]

@@ -12,4 +12,3 @@ categories = ["development-tools"]
 
 [dependencies]
 winapi = { version = "0.3.6", features = ["winuser", "winbase", "consoleapi", "processenv"] }
-boringssl = "0.0.5"

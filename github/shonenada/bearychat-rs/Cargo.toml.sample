@@ -10,4 +10,3 @@ ws = "*"
 serde = "0.8.21"
 json = "*"
 chrono = { version = "0.2", features = ["rustc-serialize"] }
-boringssl = "0.0.5"

@@ -27,7 +27,6 @@ termcolor = "1.0"
 uuid = { version = ">= 0.6", features = ["v4"] }
 rand = "0.5.5"
 chrono = "0.4"
-boringssl = "0.0.5"
 
 [dependencies.openapi]
   git = "https://github.com/jordipolo/openapi"

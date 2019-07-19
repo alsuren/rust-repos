@@ -17,7 +17,6 @@ av-data = { git = "https://github.com/rust-av/rust-av" }
 av-format = { git = "https://github.com/rust-av/rust-av" }
 circular = "0.2"
 log = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.8"

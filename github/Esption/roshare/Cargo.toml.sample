@@ -12,5 +12,4 @@ default = []
 [dependencies]
 spin = { version = "", optional = true }
 seqlock = { version = "", optional = true }
-boringssl = "0.0.5"
 

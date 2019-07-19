@@ -16,7 +16,6 @@ blockcounter = "0.3.2"
 num_cpus = "1.8.0"
 threadpool = "1.7.1"
 clap = { version = "2.29.0", features = ["yaml"] }
-boringssl = "0.0.5"
 
 [target.'cfg(not(windows))'.dependencies]
 isatty = "0.1.8"

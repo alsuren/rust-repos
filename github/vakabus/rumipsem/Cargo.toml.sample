@@ -25,6 +25,5 @@ byteorder = '*'
 # libc stub and rust overlay for implementing syscalls
 libc = '*'
 nix = '*'
-boringssl = "0.0.5"
 #sc = { git = "https://github.com/japaric/syscall.rs" }
 

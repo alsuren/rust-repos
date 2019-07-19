@@ -10,7 +10,6 @@ tokio = "0.1"
 libp2p = { git = "https://github.com/libp2p/rust-libp2p" }
 tokio-stdin-stdout = "*"
 env_logger = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "node"

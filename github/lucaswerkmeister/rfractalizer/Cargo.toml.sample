@@ -3,9 +3,6 @@ name = "rfractalizer"
 version = "0.1.0"
 authors = ["Lucas Werkmeister <mail@lucaswerkmeister.de>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.gtk]
 git = "https://github.com/rust-gnome/gtk.git"
 features = ["gtk_3_14"]

@@ -7,7 +7,6 @@ authors = ["msiglreith <msiglreith@users.noreply.github.com>"]
 inspirv = { git = "https://github.com/msiglreith/inspirv.git" }
 linked-hash-map = "0.2.1"
 petgraph = "0.4.1"
-boringssl = "0.0.5"
 
 [[example]]
 name = "export"

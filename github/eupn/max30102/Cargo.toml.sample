@@ -17,9 +17,6 @@ keywords = [
 license = "MIT"
 readme = "README.md"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.embedded-hal]
 version = "0.2.2"
 features = ["unproven"]

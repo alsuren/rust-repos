@@ -6,6 +6,3 @@ authors = ["Daniel Carral <dan@dcarral.org>"]
 [lib]
 name = "embedded_rust"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

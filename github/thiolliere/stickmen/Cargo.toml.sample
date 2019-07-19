@@ -25,7 +25,6 @@ lazy_static = "*"
 ruga_utils = { path = "src/utils" }
 ruga_physics = { path = "src/physics" }
 ruga_graphics = { path = "src/graphics" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["src/utils", "src/physics", "src/graphics"]

@@ -40,7 +40,6 @@ xmpp-proto = { path = "proto" }
 jid = "0"
 xmpp-derive = { path = "derive" }
 xmpp-xml = { path = "xml" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["client/", "credentials/", "config/", "events/", "proto/", "server/", "derive/"]

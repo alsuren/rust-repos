@@ -13,7 +13,6 @@ x86_64 = "^0.5"
 pic8259_simple = "^0.1"
 pc-keyboard = "^0.3"
 ux = {default-features = false, version = "^0.1"}
-boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "^1.0"

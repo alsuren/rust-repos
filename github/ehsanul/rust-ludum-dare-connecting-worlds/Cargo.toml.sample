@@ -4,9 +4,6 @@ name = "connected-worlds"
 version = "0.0.1"
 authors = ["Ehsanul Hoque <ehsanul@ehsanul.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rust-ws]
 
 path = "../rust-ws"

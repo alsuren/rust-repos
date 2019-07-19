@@ -9,4 +9,3 @@ edition = "2018"
 [dependencies]
 winapi = { version = "*", features = ["memoryapi", "tlhelp32", "winuser"] }
 ws = "*"
-boringssl = "0.0.5"

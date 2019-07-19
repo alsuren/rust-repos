@@ -18,6 +18,3 @@ path = "src/reliable_encap.rs"
 [[bin]]
 name = "reliable-write"
 path = "src/reliable_write.rs"
-
-[dependencies]
-boringssl = "0.0.5"

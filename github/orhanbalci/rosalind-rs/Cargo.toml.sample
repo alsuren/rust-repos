@@ -6,7 +6,6 @@ authors = ["orhanbalci <orhanbalci@gmail.com>"]
 [dependencies]
 petgraph="*"
 suffix="*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "dag"

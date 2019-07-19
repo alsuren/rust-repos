@@ -16,7 +16,6 @@ appveyor = { repository = "magiclen/url-prefix", branch = "master", service = "g
 
 [dependencies]
 validators = { version = ">=0.18,<0.21", optional = true }
-boringssl = "0.0.5"
 
 [features]
 validator = ["validators"]

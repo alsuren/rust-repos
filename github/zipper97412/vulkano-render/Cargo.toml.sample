@@ -9,7 +9,6 @@ specs = {git = "https://github.com/slide-rs/specs.git"}
 vulkano = {git = "https://github.com/tomaka/vulkano.git"}
 vulkano-win = {git = "https://github.com/tomaka/vulkano.git"}
 winit = "0.6.4"
-boringssl = "0.0.5"
 
 [build-dependencies]
 vk-sys = {git = "https://github.com/tomaka/vulkano.git"}

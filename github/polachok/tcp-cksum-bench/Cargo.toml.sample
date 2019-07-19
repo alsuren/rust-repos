@@ -5,7 +5,6 @@ authors = ["Alexander Polyakov <apolyakov@beget.ru>"]
 build = "build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 [build-dependencies]
 gcc = "*"
 

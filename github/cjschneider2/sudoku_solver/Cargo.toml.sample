@@ -6,7 +6,6 @@ authors = ["cjschneider2 <cjschneider2@gmail.com>"]
 [dependencies]
 rustc-serialize = "0.3"
 rand = "0.3.7"
-boringssl = "0.0.5"
 
 [dependencies.piston2d-graphics]
 git = "https://github.com/pistondevelopers/graphics"

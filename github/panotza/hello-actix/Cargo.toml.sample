@@ -5,7 +5,6 @@ authors = ["panotza <panotza_ja@hotmail.com>"]
 
 [dependencies]
 actix-web = { git = "https://github.com/actix/actix-web" }
-boringssl = "0.0.5"
 
 [[bin]]
 name = "actix"

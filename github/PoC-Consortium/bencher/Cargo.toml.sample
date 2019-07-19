@@ -47,7 +47,6 @@ serde_yaml = "0.8"
 stopwatch = "0.0.7"
 tokio = "0.1"
 url = "1.7"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3.0", features = ["std","fileapi","securitybaseapi","errhandlingapi"] }

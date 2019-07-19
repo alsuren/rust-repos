@@ -9,7 +9,6 @@ description = "A simple OpenGL oscilloscope."
 [dependencies]
 libc = "0.1"
 dft = "*"
-boringssl = "0.0.5"
 
 [dependencies.gl]
 version = "^0.1"

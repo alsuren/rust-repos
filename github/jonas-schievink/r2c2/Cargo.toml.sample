@@ -9,7 +9,6 @@ log = "0.4.6"
 
 # depend on the codegen backend to ensure Cargo built the dylib
 rustc_codegen_c = { path = "rustc_codegen_c" }
-boringssl = "0.0.5"
 
 [workspace]
 

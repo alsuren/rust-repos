@@ -9,7 +9,6 @@ futures-cpupool = "0.1"
 rand = "*"
 rayon = "0.8.2"
 tokio-timer = "0.1"
-boringssl = "0.0.5"
 
 [lib]
 name = "testdata"

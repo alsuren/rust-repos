@@ -6,9 +6,6 @@ license = "MPL-2.0"
 repository = "https://github.com/DiamondLovesYou/indexed_vec"
 description = "`IndexVec` from `librustc_data_structures`"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.serde]
 optional = true
 version = "1.0"
