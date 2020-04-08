@@ -1,21 +1,42 @@
 [package]
 name = "heaparray"
-version = "0.4.3"
+version = "0.5.1"
 authors = ["Albert Liu <albertymliu@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/A1Liu/heaparray-rs"
-description = "Flexible support for dynamically sized types, using heap-allocated array of structs"
+description = "Flexible support for dynamically-sized types, using heap-allocated array of structs"
 readme = "README.md"
-keywords = ["array", "heap", "atomic"]
+keywords = ["array", "heap", "dyn-sized-types"]
+categories = ["data-structures", "memory-management"]
 license = "MIT"
 
 [dependencies]
-containers-rs = "^0.5.0"
-boringssl = "0.0.5"
+containers-rs = "0.5.0"
+const-utils = "0.1.1"
 
 [dev-dependencies]
 interloc = "0.1.0"
+criterion = "0.2.11"
+
+[[bench]]
+name = "arc-labelled-vector"
+harness = false
 
 [features]
 default = []
-no-asserts = [] # does what it says on the tin - removes assertions.
+
+# Builds the crate without using the standard library.
+no-std = []
+
+# does what it says on the tin - removes all assertions; this can cause undefined behavior.
+no-asserts = ["mem-block-skip-all", "ref-counter-skip-all"]
+
+# Features related to `MemBlock`. See the documentation on `MemBlock` for more details.
+mem-block-skip-all = ["mem-block-skip-layout-check","mem-block-skip-ptr-check", "mem-block-skip-size-check"]
+mem-block-skip-size-check = []
+mem-block-skip-layout-check = []
+mem-block-skip-ptr-check = []
+
+# Features related to `RefCounter`, defined in `heaparray::naive_rc`
+ref-counter-skip-all = ["ref-counter-skip-overflow-check"]
+ref-counter-skip-overflow-check = []

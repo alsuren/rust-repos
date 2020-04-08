@@ -5,7 +5,6 @@ authors = ["Daniel D'Avella <drdavella@gmail.com>"]
 
 [dependencies]
 clap = "*"
-boringssl = "0.0.5"
 
 [features]
 debug = []

@@ -1,6 +1,6 @@
 [package]
 name = "i3wsr"
-version = "1.1.1"
+version = "1.2.3"
 description = "Change i3-wm workspace names based on its contents"
 authors = ["Daniel Berg <mail@roosta.sh>"]
 repository =  "https://github.com/roosta/i3wsr"
@@ -19,7 +19,10 @@ xcb = "0.8"
 exitfailure = "0.5.1"
 failure = "0.1.2"
 failure_derive = "0.1.2"
-boringssl = "0.0.5"
+lazy_static = "1.4.0"
+clap = "2.33.0"
+toml = "0.5.4"
+serde = { version = "1.0", features = ["derive"] }
 
 [dependencies.i3ipc]
 version = "0.8.2"

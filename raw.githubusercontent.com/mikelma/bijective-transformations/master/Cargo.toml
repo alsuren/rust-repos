@@ -1,10 +1,12 @@
 [package]
-name = "bijective_tranformations"
-version = "0.1.0"
+name = "bijective_transformations"
+version = "0.3.1"
 authors = ["mikelma <mikelma7@gmail.com>"]
 edition = "2018"
 
 [dependencies]
 structopt = "0.2.10"
 rand = "0.4.0"
-boringssl = "0.0.5"
+csv = "1"
+time = "0.1.42"
+pathfinding = "1.1"

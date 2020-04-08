@@ -1,9 +1,0 @@
-[package]
-name = "rt"
-version = "0.1.0"
-authors = ["mishazawa <macintoshkrug@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-image = "*"
-boringssl = "0.0.5"

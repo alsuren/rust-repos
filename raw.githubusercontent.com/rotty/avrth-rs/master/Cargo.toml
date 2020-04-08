@@ -14,7 +14,6 @@ byteorder = "1.2.6"
 log = "0.4.5"
 env_logger = "0.5.13"
 avrth-asm = { version = "0.0.1", path = "avrth-asm" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.7.1"

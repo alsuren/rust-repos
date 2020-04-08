@@ -1,6 +1,6 @@
 [package]
 name = "memsec"
-version = "0.5.6"
+version = "0.5.7"
 authors = ["quininer kel <quininer@live.com>"]
 description = "Rust implementation `libsodium/utils`."
 repository = "https://github.com/quininer/memsec"
@@ -16,7 +16,6 @@ appveyor = { repository = "quininer/memsec" }
 
 [dependencies]
 getrandom = { version = "0.1", optional = true }
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 libc = { version = "0.2", optional = true }

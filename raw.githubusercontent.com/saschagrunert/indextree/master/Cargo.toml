@@ -1,6 +1,6 @@
 [package]
 name = "indextree"
-version = "3.2.0"
+version = "4.0.0"
 license = "MIT"
 readme = "README.md"
 keywords = ["tree", "arena", "index", "indextree", "trie"]
@@ -17,16 +17,14 @@ travis-ci = { repository = "saschagrunert/indextree", branch = "master" }
 appveyor = { repository = "saschagrunert/indextree", branch = "master", service = "github" }
 
 [features]
-deser = [ "serde", "serde_derive" ]
-derive-eq = []
+default = ["std"]
+deser = [ "serde" ]
 par_iter = ["rayon"]
+std = []
 
 [dependencies]
-failure = { version = "0.1.5", features = ["derive"] }
 rayon = { version = "1.0.3", optional = true }
-serde = { version = "1.0.90", optional = true }
-serde_derive = { version = "1.0.90", optional = true }
-boringssl = "0.0.5"
+serde = { version = "1.0.90", features = ["derive"], optional = true }
 
 [[example]]
 name = "parallel_iteration"

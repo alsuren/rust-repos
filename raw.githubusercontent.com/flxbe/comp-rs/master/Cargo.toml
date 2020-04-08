@@ -6,7 +6,6 @@ authors = ["Felix Bernhardt <felix.bernhardt@mailbox.org>"]
 [dependencies]
 libc = "0.2"
 memmap = "0.6.2"
-boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.31"

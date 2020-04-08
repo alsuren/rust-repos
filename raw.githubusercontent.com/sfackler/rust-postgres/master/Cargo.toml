@@ -2,8 +2,14 @@
 members = [
     "codegen",
     "postgres",
+    "postgres-derive",
+    "postgres-derive-test",
+    "postgres-native-tls",
+    "postgres-openssl",
     "postgres-protocol",
+    "postgres-types",
     "tokio-postgres",
-    "tokio-postgres-native-tls",
-    "tokio-postgres-openssl",
 ]
+
+[profile.release]
+debug = 2

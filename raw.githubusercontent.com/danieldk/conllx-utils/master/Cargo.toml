@@ -2,14 +2,17 @@
 name = "conllx-utils"
 version = "0.4.3"
 authors = ["Daniël de Kok <me@danieldk.eu>"]
+edition = "2018"
 
 [dependencies]
+clap = "2"
 conllx = "0.10"
+conllx-ng = { package = "conllx", version = "0.12" }
 colored = "1.4"
 failure = "0.1"
 flate2 = "0.2"
 itertools = "0.6"
-lazy_static = "0.2"
+lazy_static = "1"
 maplit = "0.1"
 petgraph = "0.4"
 getopts = "0.2"
@@ -18,7 +21,6 @@ rand = "0.4"
 regex = "0.2"
 stdinout = "0.4"
 unicode-normalization = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 pretty_assertions = "0.3"

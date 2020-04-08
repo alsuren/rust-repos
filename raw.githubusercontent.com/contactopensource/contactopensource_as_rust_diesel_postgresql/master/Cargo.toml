@@ -1,14 +1,25 @@
 [package]
-name = "contactopensource_as_rust_diesel_postgresql"
-version = "0.1.0"
+name = "contactopensource"
+version = "0.2.0"
 authors = ["Joel Parker Henderson <joel@contactopensource.com>"]
 edition = "2018"
 
 [dependencies]
 
+# Version must match the diesel dependency version.
+# To find the diesel dependency version, one way is to build our app,
+# then search the file `Cargo.lock` for the diesel crate entry.
+# Features must include serde, to be able to handle bigdecimal.
+bigdecimal = { version = "= 0.1.0", features = ["serde"] }
+
 dotenv = "0.9.0"
 
+# Chrono: Date and Time for Rust
+#
+# Chrono currently uses the time crate, such as for Duration.
+# This will change when Chrono is upgraded to use Rust std time.
 chrono = { version = "0.4", features = ["serde"] }
+time = "*"
 
 # Clap: Command Line Argument Parser for Rust https://clap.rs
 clap = {version = "2.33", features = ["yaml"]}
@@ -23,11 +34,26 @@ clap = {version = "2.33", features = ["yaml"]}
 #   * r2d2: for Rust connection pooling optimizations
 #   * serde_json: for JSON data types
 #   * uuid: for UUID data types
-diesel = { version = "1.4.2", features = ["128-column-tables", "chrono", "network-address", "numeric", "postgres", "sqlite", "r2d2", "serde_json", "uuid", "url"] }
+#
+# If the diesel version number changes, be sure to verify that
+# any dependency versions are correct. The crate `bigdecimal`
+# version number must match the diesel `bigdecimal` version.
+#
+diesel = { version = "1.4.3", features = ["64-column-tables", "chrono", "network-address", "numeric", "postgres", "sqlite", "r2d2", "serde_json", "url", "uuid", "uuidv07"] }
 
-# Version must match the diesel dependency version.
-# Features must include serde, to be able to handle bigdecimal.
-bigdecimal = { version = "= 0.0.14", features = ["serde"] }
+diesel-dynamic-schema = { git = "https://github.com/diesel-rs/diesel-dynamic-schema" }
+
+# itertools: Iteration tools, such as iterator adaptors, functions, and macros.
+itertools = "0.8"
+
+# lazy_static: a macro for declaring lazily evaluated statics in Rust.
+lazy_static = "1.4.0"
+
+# maplit: Rust macros for HashMap, HashSet, BTreeMap, BTreeSet.
+maplit = "1.0.2"
+
+# num: A collection of numeric types and traits for Rust.
+num = { version = "0.2", features = ["i128", "rand", "serde"] }
 
 # Version must match the diesel dependency version
 r2d2 = "= 0.8.4"
@@ -47,10 +73,10 @@ r2d2 = "= 0.8.4"
 #   * stdweb - enables support for OsRng on wasm32-unknown-unknown via stdweb combined with cargo-web
 #   * wasm-bindgen - wasm-bindgen enables support for OsRng on wasm32-unknown-unknown via wasm-bindgen
 #
-uuid = { version = "= 0.6.5", features = ["serde", "v1", "v3", "v4", "v5"] }
+uuid = { version = "= 0.7.0", features = ["serde", "v1", "v3", "v4", "v5"] }
 
 # Serde: a framework for serializing and deserializing Rust data structures.
-# The Serde crate has core APIs, including Serialize and Deserialize traits. 
+# The Serde crate has core APIs, including Serialize and Deserialize traits.
 # Always required for Serde. The "derive" feature is only required when
 # using #[derive(Serialize, Deserialize)] to make Serde work with structs
 # and enums defined in your crate.
@@ -59,8 +85,12 @@ serde = { version = "1.0.91", features = ["derive"] }
 # Version must match the serde dependency version
 serde_derive = "1.0.91"
 
-# Each data format lives in its own crate; the sample code below uses JSON.
+# Each data format lives in its own crate; the sample code below uses JSON and XML
 serde_json = { version = "1.0.39", features = ["arbitrary_precision"] }
+serde-xml-rs = "0.3.1"
+
+# phf: generate efficient lookup tables at compile time using perfect hash functions.
+phf = { version = "0.7.24", features = ["macros"] }
 
 # Rand: A Rust library for random number generation.
 rand = "0.6.5"
@@ -75,4 +105,15 @@ rand = "0.6.5"
 #   * argon2rs: more popular, but not updated recently, and lacks Argon2id.
 #
 rust-argon2 = "0.4.0"
-boringssl = "0.0.5"
+
+###
+#
+# Tests
+#
+###
+
+# assert_cmd: easy command initialization and testing.
+assert_cmd = "0.11.1"
+
+# more_asserts: macros helpful for asserting less than, greater than, etc.
+more-asserts = "0.2.1"

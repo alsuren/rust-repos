@@ -1,40 +1,33 @@
 [package]
-name = "evcxr_displayers"
-version = "0.1.0"
+name = "showata"
+version = "0.2.1-dev"
 authors = ["David Bernard <david.bernard.31@gmail.com>"]
 edition = "2018"
 license = "Apache-2.0"
-description = "A library of displayers (and helpers) for evcxr_jupyter."
-repository = "https://github.com/davidB/evcxr_displayers"
+description = "A library of to show data (in browser, evcxr_jupyter) as table, chart..."
+repository = "https://github.com/procyon-rs/showata"
 readme = "README.md"
 #category = ["visualization"]
-keywords = ["evcxr", "jupyter", "visualization", "plot"]
+keywords = ["evcxr", "jupyter", "visualization", "plot", "vega"]
 
 [dependencies]
-#evcxr_runtime = "1.0.0"
-base64 = "0.10.1"
-nalgebra = {version = "0.16.13", optional = true}
-num-traits = {version = "0.2.6", optional = true}
-ndarray = {version = "0.12.1", optional = true}
-#vega-lite = {version = "0.0.2", optional = true}
-serde = {version = "1.0.91", optional = true, features = ["derive"]}
-serde_json = {version = "1.0.39", optional = true}
-derive_builder = {version = "0.7.1", optional = true}
-image = {version = "0.21.1" , optional = true}
-#arrow = "0.13.0" # nightly
-opener = "0.4.0"
-failure = "0.1.5"
-boringssl = "0.0.5"
+base64 = "0.12.0"
+opener = "0.4.1"
+anyhow = "1.0.19"
+
+#arrow = {version = "0.13.0", optional = true} # nightly
+image = {version = "0.23.0", optional = true}
+nalgebra = {version = "0.21.0", optional = true}
+num-traits = {version = "0.2", optional = true}
+ndarray = {version = "0.13.0", optional = true}
 
 [dev-dependencies]
-mime = "0.3.13"
-nalgebra = "0.16.13"
-typed-builder = "0.3.0"
-csv = "1"
+mime = "0.3.14"
+nalgebra = "0.21.0"
 
 [features]
-default = ["display_nalgebra", "display_ndarray", "display_vega", "display_image"]
-display_nalgebra = ["nalgebra", "num-traits"]
-display_ndarray = ["ndarray"]
-display_vega = ["serde_json", "serde", "derive_builder"]
-display_image = ["image"]
+default = []
+all = ["show_nalgebra", "show_ndarray", "show_image"]
+show_nalgebra = ["nalgebra", "num-traits"]
+show_ndarray = ["ndarray"]
+show_image = ["image"]

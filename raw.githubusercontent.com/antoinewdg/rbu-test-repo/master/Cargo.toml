@@ -9,6 +9,3 @@ bencher = "0.1.2"
 [[bench]]
 name = "array_sum"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

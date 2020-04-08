@@ -16,7 +16,6 @@ log = "*"
 rand = "*"
 clippy = { git = "https://github.com/Manishearth/rust-clippy" }
 getopts = "*"
-boringssl = "0.0.5"
 
 [dependencies.ws]
 version = "*"

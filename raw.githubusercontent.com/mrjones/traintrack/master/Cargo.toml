@@ -7,6 +7,7 @@ build = "build.rs"
 [dependencies]
 base64 = "*"
 built = "*"
+bytes = "*"
 chrono = "*"
 chrono-tz = "*"
 csv = "*"
@@ -15,8 +16,9 @@ getopts = "*"
 log = "*"
 log4rs = "*"
 maplit = "*"
-protobuf = "*"
-protobuf-json = "*"
+prost = "*"
+# protobuf = "*"
+# protobuf-json = "*"
 regex = "*"
 reqwest = "*"
 rustc-serialize = "*"
@@ -32,12 +34,22 @@ rustful = { git = "https://github.com/Ogeon/rustful" }
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
+serde-xml-rs = "*"
+tendril = "*"
 time = "*"
 tiny_http = "*"
-boringssl = "0.0.5"
+xml5ever = "*"
+
+[dev-dependencies]
+stringreader = "*"
+simple_logger = "*"
+
+#[dev-dependencies.simple_logger]
+#default-features = false  # Turn off colorization
 
 [build-dependencies]
 built = "*"
+prost-build = "*"
 
 [[bin]]
 name = "traintrack"
@@ -46,7 +58,3 @@ path = "src/main.rs"
 [[bin]]
 name = "feedproxy"
 path = "src/feedproxy_main.rs"
-
-[[bin]]
-name = "ttpredict"
-path = "ttpredict/src/main.rs"

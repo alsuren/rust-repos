@@ -11,6 +11,5 @@ repository = "https://github.com/nathanfaucett/rs-waiter.git"
 homepage = "https://github.com/nathanfaucett/rs-waiter"
 
 [dependencies]
-boringssl = "0.0.5"
 [dev-dependencies]
 num_cpus = { version = "1.2" }

@@ -2,9 +2,6 @@
 name = "fooproject"
 version = "0.1.0"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.libc]
 path = "libc"
 

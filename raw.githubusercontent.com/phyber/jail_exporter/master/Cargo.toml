@@ -1,10 +1,12 @@
 [package]
 name = "jail_exporter"
-version = "0.9.7"
+version = "0.11.0"
 description = "Prometheus exporter for FreeBSD jails."
 edition = "2018"
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/phyber/jail_exporter"
+repository = "https://github.com/phyber/jail_exporter.git"
 authors = [
     "David O'Rourke <david.orourke@gmail.com>",
 ]
@@ -15,18 +17,29 @@ keywords = [
     "metrics",
     "prometheus",
 ]
+exclude = [
+    ".cirrus.yml",
+    ".editorconfig",
+    ".gitignore",
+    ".rustfmt.toml",
+    "Makefile",
+    "grafana/jail_exporter.json",
+    "man/jail_exporter.8",
+    "rc.d/jail_exporter",
+]
 
 [dependencies]
-askama = "0.8"
-env_logger = "0.6"
-failure = "0.1"
-jail = "0.0.6"
+actix-rt = "1.0"
+askama = "0.9"
+env_logger = "0.7"
+jail = "0.1.1"
 log = "0.4"
-rctl = "0.0.5"
-boringssl = "0.0.5"
+rctl = "0.1.0"
+tempfile = "3.1.0"
+thiserror = "1.0"
 
 [dependencies.actix-web]
-version = "0.7"
+version = "2.0"
 default-features = false
 
 [dependencies.clap]
@@ -34,22 +47,26 @@ version = "2.32"
 default-features = false
 features = ["vec_map"]
 
+[dependencies.mime]
+version = "0.3"
+default-features = false
+
 [dependencies.prometheus]
-version = "0.6"
-#default-features = false
+version = "0.8"
+default-features = false
 
 [dependencies.users]
-version = "0.9"
+version = "0.10"
 default-features = false
 features = ["cache"]
 
 # Used by cargo test
 [dev-dependencies]
 indoc = "0.3"
-lazy_static = "1.3"
+lazy_static = "1.4"
 pretty_assertions = "0.6"
 
 [dev-dependencies.users]
-version = "0.9"
+version = "0.10"
 default-features = false
 features = ["mock"]

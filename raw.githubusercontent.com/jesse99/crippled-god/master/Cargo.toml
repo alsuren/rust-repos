@@ -4,11 +4,14 @@ version = "0.1.0"
 authors = ["Jesse Vorisek <jesse.vorisek@gmail.com>"]
 edition = "2018"
 
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [dependencies]
-fnv = "1.0.6"				# deterministic hasher that is fast for small keys
-slog = "2.4.1"				# structured logging
-slog-async = "2.3.0"		# asynchrous log writing
-slog-term = "2.4.0"			# logging to a terminal/console/shell or other text based dest
-structopt = "0.2.15"		# command line parser built on top of clap
-termion = "1.5.2"			# terminal support
-boringssl = "0.0.5"
+chrono = "0.4.11"		# datetime library
+fnv = "1.0.3"			# custom hasher that is much more performant for small keys
+lazy_static = "1.4.0"	# lazily defined static variables
+rand = { version = "0.7.3", features = ["small_rng"] }	# random numbers
+slog = "2.5.2"			# structured logging
+sloggers = "0.3.5"		# sloc convenience functions
+slog-term = "2.5.0"		# logging to a terminal/console/shell or other text based dest
+termion = "1.5.5"		# terminal support

@@ -1,6 +1,6 @@
 [package]
 name = "smart-leds"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["David Sawatzke <david-sawatzke@users.noreply.github.com>",
            "Paul Sajna <sajattack@gmail.com>"]
 edition = "2018"
@@ -17,4 +17,3 @@ repository = "https://github.com/smart-leds-rs/smart-leds"
 
 [dependencies]
 smart-leds-trait = "0.2"
-boringssl = "0.0.5"

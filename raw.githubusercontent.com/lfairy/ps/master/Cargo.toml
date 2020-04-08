@@ -10,6 +10,3 @@ repository = "https://github.com/lfairy/ps"
 keywords = ["cast", "reinterpret", "convert", "transmute", "coerce"]
 categories = ["rust-patterns"]
 edition = "2018"
-
-[dependencies]
-boringssl = "0.0.5"

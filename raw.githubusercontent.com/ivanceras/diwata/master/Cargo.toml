@@ -1,8 +1,19 @@
+[package]
+name = "diwata"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+diwata_server = "0.1.2"
+
+[features]
+with-sqlite = ["diwata_server/with-sqlite"]
+
+
 [workspace]
 members = [
     "crates/intel",
     "crates/server",
-    "crates/text-client",
     "crates/data_table",
     "crates/webview",
     "crates/webapp",
@@ -14,14 +25,16 @@ exclude = [
     "crates/rustorm/crates/codegen",
 ]
 
-[replace]
-"rustorm_dao:0.3.0" = { path = "crates/rustorm/crates/dao" }
-"rustorm_codegen:0.3.0" = { path = "crates/rustorm/crates/codegen" }
-"rustorm:0.13.0" = { path = "crates/rustorm" }
-"diwata_intel:0.1.2" = { path = "crates/intel" }
 
-"sauron:0.7.0" = { path = "../sauron" }
-"sauron_vdom:0.7.0"= { path = "../sauron/crates/sauron_vdom" }
-#"sauron:0.7.0" = { git = "https://github.com/ivanceras/sauron.git" }
-#"sauron_vdom:0.7.0" = { git = "https://github.com/ivanceras/sauron.git" }
+[replace]
+"rustorm_dao:0.5.0" = { path = "crates/rustorm/crates/dao" }
+"rustorm_codegen:0.5.0" = { path = "crates/rustorm/crates/codegen" }
+"rustorm:0.16.0" = { path = "crates/rustorm" }
+"diwata_intel:0.1.2" = { path = "crates/intel" }
+"diwata_server:0.1.2" = { path = "crates/server" }
+
+#"sauron:0.20.2" = { path = "../sauron", features = ["measure"] }
+#"sauron_vdom:0.7.1"= { path = "../sauron/crates/sauron_vdom" }
+#"sauron:0.7.1" = { git = "https://github.com/ivanceras/sauron.git" }
+#"sauron_vdom:0.7.1" = { git = "https://github.com/ivanceras/sauron.git" }
 

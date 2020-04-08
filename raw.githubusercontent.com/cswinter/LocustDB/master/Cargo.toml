@@ -4,10 +4,11 @@ name = "locustdb"
 version = "0.2.1"
 license-file = "LICENSE"
 description = "Embeddable high-performance analytics database."
+edition = "2018"
 [build-dependencies]
 [build-dependencies.capnpc]
 optional = true
-version = "0.8.9"
+version = "0.12"
 
 [dependencies]
 aliasmethod = "0.1.0"
@@ -21,10 +22,7 @@ failure = "0.1.1"
 failure_derive = "0.1.1"
 flate2 = "1.0"
 fnv = "1.0.3"
-futures-channel = "0.2.1"
-futures-core = "0.2.1"
-futures-executor = "0.2.1"
-futures-util = "0.2.1"
+futures = "0.3.4"
 hex = "0.3.2"
 itertools = "0.5.9"
 lazy_static = "1.2"
@@ -41,12 +39,12 @@ seahash = "3.0.5"
 std-semaphore = "0.1.0"
 tempdir = "0.3.7"
 time = "0.1.36"
-sqlparser = "0.2.1"
-boringssl = "0.0.5"
+sqlparser = "0.5"
+structopt = "0.3"
 
 [dependencies.capnp]
 optional = true
-version = "0.8.17"
+version = "0.12"
 
 [dependencies.locustdb-derive]
 path = "./locustdb-derive"
@@ -68,4 +66,3 @@ version = "0.10.1"
 default = []
 enable_lz4 = ["lz4"]
 enable_rocksdb = ["rocksdb", "capnp", "capnpc"]
-trace = []

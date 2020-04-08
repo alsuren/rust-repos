@@ -2,18 +2,26 @@
 name = "cubism"
 version = "0.1.0"
 authors = ["Lukas Wirth <lukastw97@gmail.com>"]
+edition = "2018"
 repository = "https://github.com/Veykril/cubism-rs"
 homepage = "https://github.com/Veykril/cubism-rs"
-license = "MIT"
-description = "A rust wrapper around the Live2D Cubism SDK with extra functionality."
-categories = ["api-bindings", "live2d", "cubism"]
-readme = "README.md"
+license = "MIT OR Apache-2.0"
+description = "A high level framework for the cubism sdk"
+keywords = ["live2d", "api-bindings", "cubism"]
+categories = ["api-bindings"]
 
 [dependencies]
-cubism-core-sys = { version = "0.1.0", path = "cubism-core-sys"}
-libc = "0.2.42"
-bitflags = "1.0.3"
-boringssl = "0.0.5"
+cubism-core = { version = "0.1.0", path = "cubism-core", default-features = false }
+serde_json = "^1.0"
+fxhash = "^0.2"
+
+[dependencies.serde]
+version = "^1.0"
+features = ["derive"]
+
+[features]
+default = ["static-link"]
+static-link = ["cubism-core/static-link"]
 
 [workspace]
-members = ["cubism-core-sys", "cubism-examples", "cubism-gfx-renderer"]
+members = ["cubism-core-sys", "cubism-core", "cubism-examples", "cubism-core-wgpu-renderer",]

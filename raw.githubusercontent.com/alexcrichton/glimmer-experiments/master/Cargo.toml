@@ -13,7 +13,6 @@ naive = { path = "naive" }
 hand-optimized-vec = { path = "hand-optimized-vec" }
 crazy = { path = "crazy", optional = true }
 cfg-if = "0.1"
-boringssl = "0.0.5"
 
 [features]
 hand-optimized = []

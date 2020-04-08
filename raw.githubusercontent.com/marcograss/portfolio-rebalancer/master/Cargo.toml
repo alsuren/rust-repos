@@ -1,16 +1,20 @@
 [package]
 name = "portfolio-rebalancer"
-version = "0.1.0"
-authors = ["Marco Grassi <marco.gra@gmail.com>"]
+version = "0.2.0"
+authors = ["marcograss"]
+description = "Rebalance your stock portfolio to a target allocation"
 edition = "2018"
 
 [dependencies]
 termion = "1.5.1"
 serde_json = "1.0.38"
+json_comments = "0.2.0"
 clap = "2.32.0"
 serde = { version = "1.0.87", features = ["derive"] }
 failure = "0.1.5"
-boringssl = "0.0.5"
+rust_decimal = "1.0.1"
+rust_decimal_macros = "1.0.1"
+num-traits = "0.2.8"
 
 [dependencies.tui]
 version = "0.4.0"

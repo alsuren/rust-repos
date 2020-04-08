@@ -1,7 +1,8 @@
 [package]
 name = "rocket-simple-authorization"
-version = "0.7.0"
+version = "0.9.5"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/rocket-simple-authorization"
 homepage = "https://magiclen.org/rocket-simple-authorization"
 keywords = ["rocket", "server", "web", "authorization", "authorize"]
@@ -13,12 +14,10 @@ license = "MIT"
 [badges]
 travis-ci = { repository = "magiclen/rocket-simple-authorization", branch = "master" }
 
-[dev-dependencies]
-rocket = "0.4"
-chrono = "0.4"
-easy-http-request = "0.1"
-short-crypt = "1"
-lazy_static = "1"
-
 [dependencies]
-boringssl = "0.0.5"
+rocket = "0.4.2"
+
+[dev-dependencies]
+chrono = "0.4"
+reqwest = { version = "0.10", features = ["blocking"] }
+short-crypt = "1"

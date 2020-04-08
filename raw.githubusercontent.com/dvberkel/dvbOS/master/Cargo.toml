@@ -7,7 +7,6 @@ authors = ["Daan van Berkel <daan.v.berkel.1980@gmail.com>"]
 crate-type = ["staticlib"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

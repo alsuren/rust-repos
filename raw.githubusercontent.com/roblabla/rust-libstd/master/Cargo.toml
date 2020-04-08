@@ -24,7 +24,6 @@ compiler_builtins = { path = "../rustc/compiler_builtins_shim" }
 profiler_builtins = { path = "../libprofiler_builtins", optional = true }
 std_unicode = { path = "../libstd_unicode" }
 unwind = { path = "../libunwind" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.3"

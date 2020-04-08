@@ -21,6 +21,5 @@ serde_json = "1.0.33"
 toml = "0.4.10"
 
 rusqlite = { version = "0.16.0", features = ["bundled"] }
-boringssl = "0.0.5"
 
 

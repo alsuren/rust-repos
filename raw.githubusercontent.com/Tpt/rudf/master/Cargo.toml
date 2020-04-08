@@ -1,6 +1,9 @@
 [workspace]
 members = [
     "lib",
-    "python",
-    "server"
+    "server",
+    "wikibase"
 ]
+
+[profile.release]
+lto = true

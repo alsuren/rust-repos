@@ -14,7 +14,6 @@ serde_json = "1"
 num-traits = "*"
 num-derive = "*"
 icalendar = "*"
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

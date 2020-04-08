@@ -4,9 +4,6 @@ name = "smallcity"
 version = "0.0.0"
 authors = ["Jonas Hietala <mail@jonashietala.se>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.piston]
 git = "https://github.com/pistondevelopers/piston/"
 

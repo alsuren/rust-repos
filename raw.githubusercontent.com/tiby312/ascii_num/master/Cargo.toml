@@ -10,4 +10,5 @@ readme = "readme.md"
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+axgeom = "1.2.1"
+digits_iterator = {git="https://github.com/tiby312/digits-iterator-rs.git"}

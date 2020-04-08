@@ -6,6 +6,3 @@ authors = []
 [lib]
 name = "lib"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

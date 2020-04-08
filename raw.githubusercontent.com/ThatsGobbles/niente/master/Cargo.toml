@@ -1,8 +1,12 @@
 [package]
-name = "niente"
+name = "regulus"
 version = "0.1.0"
 authors = ["Mark LeMoine <thatsgobbles@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+strum = "0.15.0"
+circular-queue = "0.2.1"
+
+[dev-dependencies]
+approx = "0.3.2"

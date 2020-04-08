@@ -100,7 +100,6 @@ default = ["unix"]
 [dependencies]
 libmesabox = { path = "libmesabox", default-features = false }
 env_logger = { version = "0.5.11", optional = true, default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3.0.2"

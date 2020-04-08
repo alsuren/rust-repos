@@ -6,7 +6,6 @@ authors = ["noah"]
 [dependencies]
 irc="0.13.5"
 daemonize="*"
-boringssl = "0.0.5"
 
 [features]
 system-alloc = []

@@ -4,86 +4,103 @@
 name = "dirty"
 description = "dirty tool kit"
 version = "0.0.0"
-authors = ["t <voygagaga@outlook.com>"]
+authors = ["tga <tga@wengwengweng.me>"]
 repository = "https://github.com/slmjkdbtl/DIRTY"
 license = "Zlib"
 edition = "2018"
 readme = "README.md"
+exclude = ["TODO"]
+
+[profile.dev.package."*"]
+opt-level = 2
 
 [features]
-default = [ "lua", "fs", "gfx", "img", "audio", "http", "term" ]
+default = [
 
-lua = [
-	"rlua",
-]
+	# modules
+# 	"kit",
+# 	"synth",
+# 	"imgui",
+# 	"ase",
+# 	"http",
+# 	"json",
+# 	"bin",
 
-fs = [
-	"directories",
-	"glob",
-]
+	# options
+# 	"gl3",
 
-gfx = [
-	"glutin",
-	"gl",
-	"gilrs",
-	"glow",
-]
-
-img = [
-	"image",
-	"tobj",
-]
-
-audio = [
-	"rodio",
 ]
 
 http = [
 	"url",
 	"httparse",
-	"native-tls",
+	"rustls",
+	"webpki",
+	"webpki-roots",
 ]
 
-term = [
-	"console",
+imgui = [
+	"imgui_lib",
 ]
+
+json = [
+	"serde_json",
+]
+
+bin = [
+	"bincode",
+]
+
+ase = []
+kit = []
+synth = []
+
+gl3 = []
 
 [dependencies]
-rand = "0.6"
-derive_more = "0.14"
+random = { version = "0.7", package = "rand" }
+rayon = "1.3"
+noise = "0.6"
+derive_more = "0.99"
+once_cell = "1.2"
+owning_ref = "0.4"
+num_cpus = "1.10"
+serde = { version = "1.0", features = [ "derive", ] }
 
-directories = { version = "2.0", optional = true }
-glob = { version = "0.3", optional = true }
+# fs
+directories = "2.0"
+glob = "0.3"
 
-rlua = { version = "0.16", optional = true }
+# app
+glutin = "0.24"
+glow = { version = "0.4.0", default-features = false }
+clipboard = "0.5"
+fontdue = "0.0"
+gilrs = "0.7"
+image = { version = "0.23", default-features = false, features = [ "png", "jpeg", "tga", "bmp", ] }
+tobj = "1.0"
+gltf = "0.15"
 
-glutin = { version = "0.21", optional = true }
-gl = { version = "0.12", optional = true }
-gilrs = { version = "0.7", optional = true }
-glow = { version = "0.1", optional = true }
+# audio
+rodio = { version = "0.11", default-features = false, features = [ "vorbis", "mp3", "wav", ] }
+cpal = "0.11"
 
-image = { version = "0.21", optional = true }
-tobj = { version = "0.1", optional = true }
+# imgui
+imgui_lib = { version = "0.3", optional = true, package = "imgui" }
 
-rodio = { version = "0.8", optional = true }
-
-url = { version = "1.7", optional = true }
+# http
+url = { version = "2.1", optional = true }
 httparse = { version = "1.3", optional = true }
-native-tls = { version = "0.2", optional = true }
+rustls = { version = "0.17", optional = true }
+webpki = { version = "0.21", optional = true }
+webpki-roots = { version = "0.19", optional = true }
 
-console = { version = "0.7", optional = true }
-boringssl = "0.0.5"
+# json
+serde_json = { version = "1.0", optional = true }
 
-# serde = { version = "1.0", features = ["derive"] }
-# serde_json = "1.0"
-# ketos = "0.11"
-# rusttype = "0.7"
-# serial = "0.4"
-# laminar = "0.2"
-# rayon = "1.0"
-# crossbeam = "0.7"
-# sokol = "0.2"
+# bin
+bincode = { version = "1.2", optional = true }
 
 [target.'cfg(target_os="macos")'.dependencies]
-core-foundation = "0.6.4"
+core-foundation = "0.7"
 

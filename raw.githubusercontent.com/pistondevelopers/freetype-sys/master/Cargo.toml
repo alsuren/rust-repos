@@ -1,7 +1,7 @@
 [package]
 
 name = "freetype-sys"
-version = "0.7.1"
+version = "0.11.0"
 authors = ["Coeuvre <coeuvre@gmail.com>"]
 links = "freetype"
 build = "build.rs"
@@ -14,8 +14,7 @@ homepage = "https://github.com/PistonDevelopers/freetype-sys"
 
 [build-dependencies]
 pkg-config = "0.3.11"
+cmake = "0.1.42"
 
 [dependencies]
-libz-sys = "1.0.18"
 libc = "0.2.42"
-boringssl = "0.0.5"

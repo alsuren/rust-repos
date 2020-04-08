@@ -2,7 +2,7 @@
 name = "parity-snappy"
 version = "0.1.0"
 authors = ["Parity Technologies <admin@parity.io>"]
-license = "GPL-3.0"
+license = "MIT/Apache2.0"
 repository = "https://github.com/paritytech/rust-snappy.git"
 description = "Rust bindings for the snappy compression library"
 keywords = ["snappy"]
@@ -10,7 +10,6 @@ keywords = ["snappy"]
 [dependencies]
 libc = "0.2"
 parity-snappy-sys = { path = "snappy-sys", version = "0.1" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.5"

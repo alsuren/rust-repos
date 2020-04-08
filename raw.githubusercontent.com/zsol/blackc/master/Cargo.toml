@@ -1,10 +1,11 @@
 [package]
-name = "blackc"
+name = "blacc"
 version = "0.1.0"
 authors = ["Zsolt Dollenstein <zsol.zsol@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+bytes = "0.4.12"
 clap = "2"
 reqwest = "0.9"
 tokio = "0.1"
@@ -12,6 +13,12 @@ futures = "0.1"
 log = "0.4"
 stderrlog = "0.4"
 walkdir = "2"
-regex = "*"
-lazy_static = "1"
-boringssl = "0.0.5"
+regex = "1"
+serde = "1"
+toml = "0.5"
+error-chain = "0.12.1"
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = "3"
+hyper = "0.12.33"

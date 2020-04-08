@@ -1,6 +1,6 @@
 [package]
 name = "GSL"
-version = "1.1.0"
+version = "1.1.1"
 authors = ["Guillaume Gomez <guillaume1.gomez@gmail.com>"]
 
 description = "A rust binding for the GSL (the GNU scientific library)"
@@ -15,7 +15,6 @@ build = "build.rs"
 [dependencies]
 c_vec = "~1.0"
 libc = "~0.2"
-boringssl = "0.0.5"
 
 [build-dependencies]
 pkg-config = "0.3"

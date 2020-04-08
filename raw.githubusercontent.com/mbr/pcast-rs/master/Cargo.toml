@@ -10,4 +10,3 @@ description = "Same-size tagged data structure conversions"
 [dependencies]
 # this dependency should go away as soon as try_into is stabilized in the stdlib
 try_from = "0.2.0"
-boringssl = "0.0.5"

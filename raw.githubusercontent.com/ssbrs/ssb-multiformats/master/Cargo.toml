@@ -1,13 +1,19 @@
 [package]
 name = "ssb-multiformats"
-version = "0.1.0"
+version = "0.2.1"
 authors = ["AljoschaMeyer <mail@aljoscha-meyer.de>"]
 edition = "2018"
 license = "AGPL-3.0"
+description = "Key, feed id, and message hash types used by Secure Scuttlebutt"
+repository = "https://github.com/sunrise-choir/ssb-multiformats"
+documentation = "https://docs.rs/ssb-multiformats/"
+readme = "README.md"
+keywords = ["ssb", "scuttlebutt"]
 
 [dependencies]
-base64 = "0.10.0"
-serde = "1.0.80"
-ring = "0.13.2"
-untrusted = "0.6.2"
-boringssl = "0.0.5"
+base64 = "0.11.0"
+serde = "1.0.104"
+ssb-crypto = "0.1.4"
+
+[dev-dependencies]
+matches = "0.1.8"

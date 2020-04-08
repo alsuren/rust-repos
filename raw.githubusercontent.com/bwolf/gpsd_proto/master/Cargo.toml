@@ -1,23 +1,31 @@
 [package]
-name = "gpsd_proto"
-version = "0.2.1"
-
-license = "Apache-2.0"
-repository = "https://github.com/bwolf/gpsd_proto.git"
-homepage = "https://github.com/bwolf/gpsd_proto.git"
-documentation = "https://docs.rs/gpsd_proto/"
-readme = "README.md"
 authors = ["Marcus Geiger"]
-
 description = "The gpsd_proto module contains types and functions to connect to gpsd to get GPS coordinates and satellite information."
-
-keywords = ["gps"]
+documentation = "https://docs.rs/gpsd_proto/"
+edition = "2018"
+homepage = "https://github.com/bwolf/gpsd_proto.git"
+keywords = ["protocol", "gps"]
+license = "Apache-2.0"
+name = "gpsd_proto"
+repository = "https://github.com/bwolf/gpsd_proto.git"
+readme = "README.md"
+version = "0.6.0"
 
 [badges]
 travis-ci = { repository = "bwolf/gpsd_proto" }
 
+[features]
+default = []
+serialize = [] # Enable Serde Serialize for the types
+
 [dependencies]
+log = "0.4"
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+itertools = "0.7"
+env_logger = "0.6"
+futures = "0.1.27"
+tokio = "0.1"

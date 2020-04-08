@@ -1,13 +1,14 @@
-[package]
-name = "mli"
-version = "0.10.0"
-edition = "2018"
-description = "Machine Learning Interface for Rust"
-documentation = "https://docs.rs/mli/"
-repository = "https://github.com/vadixidav/mli"
-authors = ["Geordon Worley <vadixidav@gmail.com>"]
-keywords = ["learning", "machine", "combinator", "tensor"]
-license = "MIT"
+[workspace]
 
-[dependencies]
-boringssl = "0.0.5"
+members = [
+    "mli",
+    "mli-ndarray",
+    "mli-relu",
+    "mli-conv",
+    "mli-sigmoid",
+    "mli-defconv",
+    "mli-dense",
+    "examples/sobel",
+    "examples/deep-train",
+    "examples/mnist",
+]

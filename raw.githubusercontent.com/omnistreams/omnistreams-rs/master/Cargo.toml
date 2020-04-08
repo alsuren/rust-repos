@@ -1,11 +1,15 @@
 [package]
 name = "omnistreams"
+description = "Simple, language- and transport-agnostic data streams."
+repository = "https://github.com/omnistreams/omnistreams-rs"
+homepage = "https://github.com/omnistreams"
+keywords = ["streams", "streaming", "backpressure"]
 version = "0.1.0"
 authors = ["Anders Pitman <tapitman11@gmail.com>"]
 edition = "2018"
+license = "MIT"
 
 [dependencies]
 tokio = "0.1"
 futures = "0.1"
 websocket = "0.22"
-boringssl = "0.0.5"

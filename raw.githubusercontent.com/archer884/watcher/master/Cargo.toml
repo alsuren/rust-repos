@@ -16,7 +16,6 @@ rsilio = {git = "https://github.com/archer884/rsilio.git"}
 serde = "*"
 serde_derive = "*"
 toml = {version = "*", default-features = false, features = ["serde"]}
-boringssl = "0.0.5"
 
 [features]
 default = ["ssl"]

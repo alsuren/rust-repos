@@ -1,6 +1,6 @@
 [package]
 name = "slog-scope"
-version = "4.1.1"
+version = "4.3.0"
 authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
 description = "Logging scopes for slog-rs"
 keywords = ["slog", "logging", "slog", "log"]
@@ -16,8 +16,7 @@ path = "lib.rs"
 [dependencies]
 slog = "2.4"
 lazy_static = "1.2"
-arc-swap = "0.3"
-boringssl = "0.0.5"
+arc-swap = "0.4"
 
 [dev-dependencies]
 slog-term = "2"

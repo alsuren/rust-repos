@@ -1,6 +1,6 @@
 [package]
 name = "core_extensions"
-version = "0.1.6"
+version = "0.1.16"
 authors = ["rodrimati1992 <rodrimatt1985@gmail.com>"]
 description="This crate provides many extensions to core/std library types."
 license="MIT/Apache-2.0"
@@ -22,22 +22,16 @@ travis-ci = { repository =  "rodrimati1992/core_extensions/" }
 [features]
 default = ["std","serde_"]
 
-std=[]
+std=["alloc"]
+alloc=[]
 
-serde_=["serde","serde_derive"]
+serde_=["serde"]
+colltraits=[]
 
 
 [dev-dependencies]
-rand = "0.4"
-rand_derive = "0.3"
-
-[dependencies]
-boringssl = "0.0.5"
-
-
-[dependencies.serde_derive]
-version = "1.0"
-optional=true
+rand = "0.4.6"
+rand_derive = "0.3.1"
 
 [dependencies.serde]
 version = "1.0"
@@ -53,12 +47,14 @@ optional=true
 
 
 [build-dependencies]
-rustc_version = "0.2"
+rustc_version = "0.2.3"
 
 
 [lib]
 name = "core_extensions"
 path = "src_core_extensions/lib.rs"
+
+[workspace]
 
 
 # [[bin]]

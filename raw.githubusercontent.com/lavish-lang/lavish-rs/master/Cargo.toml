@@ -1,20 +1,27 @@
 [package]
 name = "lavish"
-version = "0.1.0"
+version = "0.4.0"
 authors = ["Amos Wenger <amoswenger@gmail.com>"]
 edition = "2018"
 description = "RPC runtime for Lavish"
+repository = "https://github.com/lavish-lang/lavish-rs"
+readme = "README.md"
 license = "MIT"
 
+keywords = ["rpc", "msgpack", "ipc", "lavish"]
+categories = ["network-programming", "encoding"]
+
+[badges]
+travis-ci = { repository = "lavish-lang/lavish-rs" }
+maintenance = { status = "experimental" }
+
 [dependencies]
-serde = "1.0.91"
-rmp-serde = "0.13.7"
-erased-serde = "0.3.9"
-serde_derive = "1.0.91"
+rmp = "0.8.7"
 bytes = "0.4.12"
-chrono = "0.4.6"
+chrono = { version = "0.4.6" }
 log = "0.4.6"
-boringssl = "0.0.5"
+num-traits = "0.2.8"
+byteorder = "1.3.2"
 
 [dev-dependencies]
-serde_bytes = "0.11.1"
+netbuf = "0.4.1"

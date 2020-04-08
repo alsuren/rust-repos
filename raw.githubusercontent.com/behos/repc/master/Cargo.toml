@@ -10,7 +10,6 @@ bytes = "*"
 tokio = {version = "*", features = ["async-await-preview"]}
 atoms = "*"
 failure = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "*"

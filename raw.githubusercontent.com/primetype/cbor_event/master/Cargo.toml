@@ -1,6 +1,6 @@
 [package]
 name = "cbor_event"
-version = "2.1.2"
+version = "2.1.3"
 authors = ["Nicolas Di Prima <nicolas@primetype.co.uk>", "Vincent Hanquez <vincent@typed.io>"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -14,6 +14,3 @@ The CBOR Event library. There are no dependencies, all platforms are supported a
 
 [dev-dependencies]
 quickcheck = "0.7"
-
-[dependencies]
-boringssl = "0.0.5"

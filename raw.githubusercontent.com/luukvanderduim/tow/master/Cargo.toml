@@ -1,19 +1,40 @@
 [package]
 name = "tow"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2018"
-keywords = ["xfce4", "xfwm4", "accessibility", "a11y", "zoom", "ergonomy", "convenience"]
+keywords = ["xfwm4", "accessibility", "a11y", "zoom", "ergonomy", "convenience"]
 authors = ["Luuk van der Duim <luukvanderduim@gmail.com>"]
 
 [dependencies]
-daemonize = "0.4"
-glib-sys = "0.8"
-gobject-sys = "0.8"
-libc = "0.2"
-glib = "0.7"
-gtypes = "0.2"
-xcb = "0.8"
-clap = "2.33"
-rand = "0.6"
-crossbeam-utils = "0.6.5"
-boringssl = "0.0.5"
+clap = "2.33.0"
+crossbeam = "0.7.3"
+crossbeam-channel = "0.4.2"
+crossbeam-utils = "0.7.2"
+daemonize = "0.4.1"
+libc = "0.2.67"
+log = "0.4.8"
+rand = "0.7.3"
+simple_logger = "1.6.0"
+notify-rust = "3.6.3"
+
+[dependencies.xcb]
+git = "https://github.com/rtbo/rust-xcb"
+features = ["thread"]
+package = "xcb"
+
+[dependencies.atspi]
+git = "https://github.com/luukvanderduim/atspi"
+# path = "../gtk-rs/sys/atspi"
+package = "atspi"
+
+[dependencies.gobject-sys]
+git = "https://github.com/gtk-rs/sys"
+package = "gobject-sys"
+
+[dependencies.glib]
+git = "https://github.com/gtk-rs/glib"
+package = "glib"
+
+[dependencies.glib-sys]
+git = "https://github.com/gtk-rs/sys"
+package = "glib-sys"

@@ -1,19 +1,14 @@
-[package]
-name = "ethox"
-description = "A standalone network stack for user-space networking and unikernels"
-version = "0.0.1-wip"
-authors = ["Andreas Molzer <andreas.molzer@gmx.de>"]
-edition = "2018"
-license = "GPL-3.0-only"
-documentation = "https://docs.rs/ethox"
-categories = ["network-programming", "no-std"]
+[workspace]
+members = [
+	"ethox",
+	"ethox-iperf",
+	"ethox-io-uring",
+]
 
-[dependencies]
-byteorder = "1.0"
-libc = { version = "0.2", optional = true }
-boringssl = "0.0.5"
-
-[features]
-default = ["std"]
-std = ["libc"]
-log = []
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+# We should properly handle every issue with errors.
+# This reduces compiled size.
+panic = "abort"

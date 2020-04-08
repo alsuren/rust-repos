@@ -11,16 +11,19 @@ documentation = "https://docs.rs/fail"
 description = "Failpoints for rust."
 categories = ["development-tools::testing"]
 edition = "2018"
+exclude = ["/.github/*", "/.travis.yml", "/appveyor.yml"]
 
 [dependencies]
 log = { version = "0.4", features = ["std"] }
 lazy_static = "1.2"
-rand = "0.6"
-boringssl = "0.0.5"
+rand = "0.7"
 
 [features]
-no_fail = []
+failpoints = []
 
 [badges]
 travis-ci = { repository = "pingcap/fail-rs" }
 appveyor = { repository = "busyjay/fail-rs" }
+
+[package.metadata.docs.rs]
+all-features = true

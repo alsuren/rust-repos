@@ -10,9 +10,6 @@ tags = []
 name = "test-loop"
 path = "src/main.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.piston]
 
 git = "file:///home/normal/rust/working/piston"

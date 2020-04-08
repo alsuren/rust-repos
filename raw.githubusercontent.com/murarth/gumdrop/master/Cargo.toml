@@ -1,6 +1,6 @@
 [package]
 name = "gumdrop"
-version = "0.5.0"
+version = "0.7.0"
 authors = ["Murarth <murarth@gmail.com>"]
 edition = "2018"
 
@@ -14,9 +14,12 @@ keywords = ["args", "command-line", "flag", "getopts", "option"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
 
+[features]
+default = []
+default_expr = ["gumdrop_derive/default_expr"]
+
 [dependencies]
-gumdrop_derive = { version = "0.5", path = "gumdrop_derive" }
-boringssl = "0.0.5"
+gumdrop_derive = { version = "0.7", path = "gumdrop_derive" }
 
 [dev-dependencies]
 assert_matches = "1.1"

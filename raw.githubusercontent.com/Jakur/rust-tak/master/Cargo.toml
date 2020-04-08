@@ -2,12 +2,13 @@
 name = "rust-tak"
 version = "0.1.1"
 authors = ["Justin Kur <JustinK97@hotmail.com>"]
+edition = '2018'
 
 [dependencies]
 ndarray = "^0.10.0"
 regex = "^1"
 lazy_static = "^1"
-boringssl = "0.0.5"
+failure = "0.1.5"
 
 [dev-dependencies]
 sqlite = "0.23.9"

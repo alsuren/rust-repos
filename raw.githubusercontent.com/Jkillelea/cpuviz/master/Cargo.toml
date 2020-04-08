@@ -9,7 +9,6 @@ default = [] # don't generate new bindings
 generate_bindings = []
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "*"

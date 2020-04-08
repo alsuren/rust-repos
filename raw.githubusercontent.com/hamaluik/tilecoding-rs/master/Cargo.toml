@@ -1,6 +1,6 @@
 [package]
 name = "tilecoding"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Kenton Hamaluik <kenton@hamaluik.ca>"]
 edition = "2018"
 description = "Rust implementation of Dr. Richard S. Sutton's tile coding software."
@@ -15,4 +15,3 @@ travis-ci = { repository = "hamaluik/tilecoding-rs", branch = "master" }
 maintenance = { status = "passively-maintained" }
 
 [dependencies]
-boringssl = "0.0.5"

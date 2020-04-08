@@ -45,9 +45,6 @@ lto = false
 name = "openrl"
 path = "src/bin.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.openrl_ui]
 path = "libs/openrl_ui"
 test = true

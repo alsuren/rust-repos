@@ -9,7 +9,6 @@ car_compress = { path = "car_compress" }
 car_cli = { path = "car_cli" }
 tar = "0.4.10"
 walkdir = "1"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

@@ -6,7 +6,6 @@ authors = ["Chase McCarthy <chase@code0100fun.com>"]
 
 [dependencies]
 num = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "fft"

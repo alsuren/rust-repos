@@ -15,5 +15,9 @@ criterion = "0.1.2"
 name = "comparisons"
 harness = false
 
-[dependencies]
-boringssl = "0.0.5"
+[features]
+default = ["std"]
+
+# Enables std. Currently used to make tests work. But the library itself
+# works without the standard library.
+std = []

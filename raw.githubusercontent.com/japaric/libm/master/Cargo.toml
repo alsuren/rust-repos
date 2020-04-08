@@ -6,26 +6,25 @@ documentation = "https://docs.rs/libm"
 keywords = ["libm", "math"]
 license = "MIT OR Apache-2.0"
 name = "libm"
-repository = "https://github.com/rust-lang-nursery/libm"
-version = "0.1.3"
+repository = "https://github.com/rust-lang/libm"
+version = "0.2.1"
 edition = "2018"
 
 [features]
-# only used to run our test suite
-default = ['stable']
-stable = []
+default = []
+
+# This tells the compiler to assume that a Nightly toolchain is being used and
+# that it should activate any useful Nightly things accordingly.
+unstable = []
 
 # Generate tests which are random inputs and the outputs are calculated with
 # musl libc.
 musl-reference-tests = ['rand']
 
-# Used checked array indexing instead of unchecked array indexing in this
-# library.
-checked = []
-
 [workspace]
 members = [
   "crates/compiler-builtins-smoke-test",
+  "crates/libm-bench",
 ]
 
 [dev-dependencies]
@@ -33,6 +32,3 @@ no-panic = "0.1.8"
 
 [build-dependencies]
 rand = { version = "0.6.5", optional = true }
-
-[dependencies]
-boringssl = "0.0.5"

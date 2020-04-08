@@ -1,7 +1,8 @@
 [package]
 name = "chinese-variant"
-version = "1.0.1"
+version = "1.0.5"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/chinese-variant"
 homepage = "https://magiclen.org/chinese-variant"
 keywords = ["chinese", "variant", "simple", "traditional"]
@@ -10,9 +11,8 @@ description= "An enum to represent the variants of the Chinese Language."
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/chinese-variant", branch = "master" }
-appveyor = { repository = "magiclen/chinese-variant", branch = "master", service = "github" }
+[badges.travis-ci]
+repository = "magiclen/chinese-variant"
+branch = "master"
 
 [dependencies]
-boringssl = "0.0.5"

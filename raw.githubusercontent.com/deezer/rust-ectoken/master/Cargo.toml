@@ -1,6 +1,6 @@
 [package]
 name = "ectoken"
-version = "0.1.1"
+version = "0.2.2"
 authors = ["Benoît Burnichon <bburnichon@gmail.com>"]
 edition = "2018"
 description = "Token Generator for Edgecast Token-Based Authentication from Verizon Digital Media Services"
@@ -10,7 +10,6 @@ repository = "https://github.com/deezer/rust-ectoken"
 readme = "README.md"
 
 [dependencies]
-base64 = "^0.10"
-rand = "^0.6" 
+base64 = "^0.12"
+rand = "^0.7" 
 rust-crypto = "^0.2"
-boringssl = "0.0.5"

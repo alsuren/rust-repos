@@ -1,6 +1,6 @@
 [package]
 name = "fastgrep"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Zak Cutner (https://zakcutner.uk)"]
 description = "Grep, but FAST! Uses multi-threading to grep very large files"
 edition = "2018"
@@ -9,4 +9,3 @@ edition = "2018"
 atty = "0.2"
 clap = "2.32"
 regex = "1.1"
-boringssl = "0.0.5"

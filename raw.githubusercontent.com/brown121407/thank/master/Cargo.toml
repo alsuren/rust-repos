@@ -1,11 +1,11 @@
 [package]
 name = "thank"
-version = "0.2.0"
-authors = ["Sergiu Marton <brown121407@gmail.com>"]
+version = "0.4.1"
+authors = ["Sergiu Marton <brown121407@member.fsf.org>"]
 edition = "2018"
 description = "Shows info about crates used in your projects so you know who to thank for them and where to do the thanking."
-homepage = "https://github.com/brown121407/thank"
-repository = "https://github.com/brown121407/thank"
+homepage = "https://gitlab.com/brown121407/thank"
+repository = "https://gitlab.com/brown121407/thank"
 license = "GPL-3.0-or-later"
 readme = "README.md"
 
@@ -21,4 +21,4 @@ clap = "2.32.0"
 reqwest = "0.9.9"
 indicatif = "0.11.0"
 rayon = "1.0.3"
-boringssl = "0.0.5"
+lazy_static = "1.4.0"

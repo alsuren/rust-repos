@@ -1,7 +1,7 @@
 [package]
 name = "nccl"
-version = "0.4.3"
-authors = ["cheezgi <zackh@firemail.cc>"]
+version = "0.5.0"
+authors = ["Zack <zphixon@gmail.com>"]
 description = "Minimal configuration file format and library."
 documentation = "https://docs.rs/nccl"
 homepage = "https://github.com/cheezgi/nccl"
@@ -15,4 +15,3 @@ readme = "README.md"
 travis-ci = { repository = "cheezgi/nccl" }
 
 [dependencies]
-boringssl = "0.0.5"

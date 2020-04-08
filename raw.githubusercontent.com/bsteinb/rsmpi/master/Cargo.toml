@@ -13,20 +13,23 @@ readme = "README.md"
 keywords = [ "message-passing", "parallel" ]
 categories = [ "concurrency" ]
 license = "MIT/Apache-2.0"
+edition = "2018"
 
 [workspace]
 
 [features]
-default = ["user-operations"]
+default = []
 
 user-operations = ["libffi"]
 
 [dependencies]
 conv = "0.3"
-libffi = { version = "0.7.0", optional = true }
+libffi = { version = "0.8.0", optional = true }
 mpi-sys = { path = "mpi-sys", version = "0.2" }
-smallvec = "0.6.5"
-boringssl = "0.0.5"
+smallvec = "1.0.0"
+
+[dev-dependencies]
+memoffset = "0.5"
 
 [build-dependencies]
 rustc_version = "0.2"

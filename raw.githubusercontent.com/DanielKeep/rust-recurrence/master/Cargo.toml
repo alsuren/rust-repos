@@ -9,6 +9,3 @@ authors = ["Writer McAuthor <writer.mcauthor@mail.com>"]
 name = "recurrence"
 crate-type = ["dylib"]
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

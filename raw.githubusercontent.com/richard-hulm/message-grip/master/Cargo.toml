@@ -8,4 +8,3 @@ edition = "2018"
 rusoto_core = "0.36.0"
 rusoto_sqs = "0.36.0"
 clap = { version = "2.32.0", features = ["yaml"] }
-boringssl = "0.0.5"

@@ -5,12 +5,8 @@ authors = ["Stefan Kerkmann <no@reply.de>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+sdl2 = "0.32.2"
 
-[lib]
-name = "pathtracing"
-path = "src/lib/pathtracing.rs"
-
-[[bin]]
-name = "gradient"
-path = "src/bin/gradient.rs"
+#[[bin]]
+#name = "gradient"
+#path = "src/bin/gradient.rs"

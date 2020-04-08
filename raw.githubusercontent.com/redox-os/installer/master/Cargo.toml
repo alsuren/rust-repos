@@ -1,14 +1,19 @@
 [package]
 name = "redox_installer"
-version = "0.2.3"
+version = "0.2.6"
 description = "A Redox filesystem builder"
 license = "MIT"
 authors = ["Jeremy Soller <jackpot51@gmail.com>"]
 repository = "https://gitlab.redox-os.org/redox-os/installer"
+default-run = "redox_installer"
 
 [[bin]]
 name = "redox_installer"
 path = "src/bin/installer.rs"
+
+[[bin]]
+name = "redox_installer_tui"
+path = "src/bin/installer_tui.rs"
 
 [lib]
 name = "redox_installer"
@@ -16,15 +21,15 @@ path = "src/lib.rs"
 
 [dependencies]
 arg_parser = "0.1.0"
-argon2rs = { version = "0.2.5", default-features = false }
-liner = "0.4.4"
-libc = "0.2.54"
-failure = "0.1.5"
-rand = "0.6.5"
-redox_pkgutils = "0.1.2"
-redoxfs = "0.3.3"
-serde = "1.0.91"
-serde_derive = "1.0.91"
-termion = "1.5.2"
-toml = "0.5.0"
-boringssl = "0.0.5"
+redox_liner = "0.5.1"
+libc = "0.2.66"
+failure = "0.1.6"
+pkgar = "0.1"
+rand = "0.7.3"
+redox_pkgutils = "0.1.5"
+redoxfs = "0.4.0"
+rust-argon2 = "0.6.1"
+serde = "1.0.104"
+serde_derive = "1.0.104"
+termion = "1.5.4"
+toml = "0.5.6"

@@ -1,6 +1,6 @@
 [package]
 name = "stor-age"
-version = "0.2.1"
+version = "0.5.0"
 authors = ["Christian Krause <christian.krause@mailbox.org>"]
 description = "show aging of directories"
 license = "GPL-3.0-or-later"
@@ -8,30 +8,41 @@ readme = "README.md"
 documentation = "https://github.com/idiv-biodiversity/stor-age"
 homepage = "https://github.com/idiv-biodiversity/stor-age"
 repository = "https://github.com/idiv-biodiversity/stor-age"
-keywords = ["storage", "age"]
-categories = ["command-line-utilities"]
+keywords = ["storage", "age", "spectrum-scale"]
+categories = ["command-line-utilities", "filesystem"]
 edition = "2018"
 
 [dependencies]
 atty = "^0.2"
-bytesize = "^1"
-lazy_static = "^1"
-regex = "^1"
-boringssl = "0.0.5"
+
+[dependencies.bstr]
+version = "^0.2"
+optional = true
+
+[dependencies.bytesize]
+version = "^1"
+optional = true
 
 [dependencies.clap]
 version = "^2"
 features = ["wrap_help"]
+
+[dependencies.prettytable-rs]
+version = "^0.8"
+optional = true
+default_features = false
+features = ["win_crlf"]
 
 [dependencies.tempfile]
 version = "^3"
 optional = true
 
 [features]
-default = []
-spectrum-scale = ["tempfile"]
+default = ["table"]
+spectrum-scale = ["bstr", "tempfile"]
+table = ["bytesize", "prettytable-rs"]
 
 [dev-dependencies]
-assert_cmd = "^0.11"
+assert_cmd = "^0.12"
 predicates = "^1"
 tempfile = "^3"

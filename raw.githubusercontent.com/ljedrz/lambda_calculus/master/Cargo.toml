@@ -20,6 +20,3 @@ encoding = []
 travis-ci = { repository = "ljedrz/lambda_calculus", branch = "master" }
 maintenance = { status = "passively-maintained" }
 is-it-maintained-open-issues = { repository = "ljedrz/lambda_calculus" }
-
-[dependencies]
-boringssl = "0.0.5"

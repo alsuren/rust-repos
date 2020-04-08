@@ -1,6 +1,6 @@
 [package]
 name = "rr-mux"
-version = "0.7.1"
+version = "0.10.1"
 authors = ["Ryan Kurte <ryankurte@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/ryankurte/rust-rr-mux"
@@ -8,8 +8,8 @@ description = "A Request Response Multiplexer for building protocol handlers etc
 license = "MIT"
 
 [dependencies]
-futures = "0.1.25"
-log = "0.4.6"
-derive_builder = "0.7.0"
-boringssl = "0.0.5"
+futures = "0.3.1"
+async-trait = "0.1.22"
+log = "0.4.8"
+derive_builder = "0.9.0"
 

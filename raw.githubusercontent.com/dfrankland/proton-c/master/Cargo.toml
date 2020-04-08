@@ -1,26 +1,45 @@
 [package]
 authors = ["Dylan Frankland <github@frankland.io>"]
 edition = "2018"
+categories = ["embedded", "hardware-support", "no-std"]
+description = "Board Support Crate for the Proton C"
+keywords = ["arm", "cortex-m", "stm32"]
+license = "MIT"
 name = "proton-c"
 readme = "README.md"
+repository = "https://github.com/dfrankland/proton-c"
+documentation = "https://docs.rs/proton-c"
 version = "0.1.0"
-[[bin]]
-bench = false
-name = "proton-c"
-test = false
+exclude = ["images/**/*"]
 
 [dependencies]
-stm32f3xx-hal = { version = "0.1.2", features = ["rt", "stm32f303"] }
-panic-semihosting = "0.5.1"
-cortex-m-rtfm = { version = "0.4.2", features = ["timer-queue"] }
-embedded-hal = "0.2.2"
-boringssl = "0.0.5"
+embedded-hal = "0.2.3"
+stm32f3xx-hal = { git = "https://github.com/stm32-rs/stm32f3xx-hal", rev = "35c6c2d68bd674cb311a8e7a2ab001ae48dce069", features = ["rt", "stm32f303xc"] }
+
+[dev-dependencies]
+alloc-cortex-m = "0.3.5"
+cortex-m = "0.6.1"
+cortex-m-rt = "0.6.10"
+cortex-m-rtfm = { version = "0.4.3", features = ["timer-queue"] }
+cortex-m-semihosting = "0.3.5"
+panic-semihosting = "0.5.3"
+usb-device = "0.2.3"
+
+[dev-dependencies.stm32f3xx-hal]
+# version = "0.3.0"
+features = ["rt", "stm32f303xc", "unproven", "stm32-usbd"]
+git = "https://github.com/stm32-rs/stm32f3xx-hal"
+rev = "35c6c2d68bd674cb311a8e7a2ab001ae48dce069"
+
+[features]
+default = ["rt"]
+rt = []
+
+[profile]
 [profile.dev]
-opt-level = 1
-lto = true
-incremental = false
-[profile.release]
-lto = true
-incremental = false
-opt-level = "z"
 debug = true
+
+[profile.release]
+debug = true
+lto = true
+opt-level = "s"

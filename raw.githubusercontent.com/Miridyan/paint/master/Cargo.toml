@@ -9,7 +9,6 @@ gdk = { git = "https://github.com/gtk-rs/gdk.git" }
 glib = { git = "https://github.com/gtk-rs/glib.git" }
 term-painter = "0.2.2"
 libc = "0.2.0"
-boringssl = "0.0.5"
 
 [dependencies.gtk-sys]
 git = "https://github.com/gtk-rs/sys"

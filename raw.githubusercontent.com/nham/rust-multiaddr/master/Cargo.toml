@@ -7,4 +7,3 @@ authors = ["Nick Hamann <nick@wabbo.org>"]
 byteorder = "0.4"
 varint = { git = "https://github.com/nham/Varint-rs.git", branch = "add_impl" }
 rust-multihash = { git = "https://github.com/nham/rust-multihash.git" }
-boringssl = "0.0.5"

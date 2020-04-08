@@ -23,9 +23,7 @@ bspline = "0.2.2"
 bincode = "0.9"
 mio = "0.5.1"
 la = "0.2.0"
-light_arena = "0.1.2"
-clippy = { version = "0.0.182", optional = true }
-boringssl = "0.0.5"
+light_arena = "1.0.1"
 
 [profile.release]
 # How to send extra compiler flag for -march=native equivalent in Rust

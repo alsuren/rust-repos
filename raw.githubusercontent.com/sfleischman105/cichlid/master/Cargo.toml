@@ -1,6 +1,6 @@
 [package]
 name = "cichlid"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Stephen Fleischman <stephenf@cs.washington.edu>"]
 description = "A color math library for programming addressable LEDs."
 documentation = "https://docs.rs/cichlid/"
@@ -55,9 +55,6 @@ debug-assertions = false
 codegen-units = 1
 incremental = false
 overflow-checks = false
-
-[dependencies]
-boringssl = "0.0.5"
 
 
 #[[bench]]

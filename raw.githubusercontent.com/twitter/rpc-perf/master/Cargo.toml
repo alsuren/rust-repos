@@ -1,11 +1,12 @@
 [workspace]
 members = [
+    "atomics",
     "buffer",
     "codec",
     "datastructures",
-    "datastructures/ffi/cdatastructures",
     "logger",
     "metrics",
+    "metrics-core",
     "ratelimiter",
     "rpc-perf",
     "timer",

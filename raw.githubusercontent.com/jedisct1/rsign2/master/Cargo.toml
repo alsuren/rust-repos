@@ -1,6 +1,6 @@
 [package]
 name = "rsign2"
-version = "0.5.2"
+version = "0.5.6"
 authors = ["Frank Denis <github@pureftpd.org>", "Daniel Rangel <daniel@rangel.in>"]
 description = "A command-line tool to sign files and verify signatures."
 license = "MIT"
@@ -10,13 +10,12 @@ keywords = ["command-line", "sign", "publickey", "cryptography", "minisign"]
 repository = "https://github.com/jedisct1/rsign2"
 
 [dependencies]
-base64 = "0.10"
+base64 = "0.12"
 clap = "2.33"
-minisign = "0.5.9"
-boringssl = "0.0.5"
+minisign = "0.5.15"
 
 [target.'cfg(any(windows, unix))'.dependencies]
-dirs = "1.0"
+dirs = "2.0"
 
 [profile.release]
 lto = true

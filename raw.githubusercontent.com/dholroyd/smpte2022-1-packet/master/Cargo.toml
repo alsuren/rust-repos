@@ -1,6 +1,6 @@
 [package]
 name = "smpte2022-1-packet"
-version = "0.3.0"
+version = "0.4.0"
 description = "Parser for SMPTE 2022-1 packet header format"
 categories = [ "multimedia::video" ]
 license = "MIT/Apache-2.0"
@@ -10,8 +10,7 @@ keywords = [ "mpegts", "FEC", "2022-1", "ProMPEG", "2d-parity-FEC" ]
 edition = "2018"
 
 [dependencies]
-rtp-rs = "0.3.0"
-boringssl = "0.0.5"
+rtp-rs = "0.4.0"
 
 [dev-dependencies]
 hex-literal = "0.1"

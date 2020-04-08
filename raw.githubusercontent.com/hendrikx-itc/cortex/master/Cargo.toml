@@ -1,28 +1,6 @@
-[package]
-name = "cortex-dispatcher"
-version = "0.1.2"
-authors = ["Alfred Blokland <alfred.blokland@hendrikx-itc.nl>"]
-edition = "2018"
-description = """
-Cortex is system for efficiently collecting and distributing files with a
-choice of multiple protocols
-"""
-license = "GPL-3.0-or-later"
-documentation = "https://cortex-dispatcher.readthedocs.io/en/latest/"
-homepage = "https://github.com/hendrikx-itc/cortex-dispatcher"
-repository = "https://github.com/hendrikx-itc/cortex-dispatcher"
-
-[dependencies]
-log = "0.4.0"
-env_logger = "0.6.1"
-inotify = "0.6"
-serde = "1.0"
-serde_derive = "1.0"
-config = "0.9"
-regex = "1"
-serde_regex = "0.3"
-clap = "2.32"
-ssh2 = "0.3.3"
-actix = "0.7"
-owning_ref = "0.4.0"
-boringssl = "0.0.5"
+[workspace]
+members = [
+    "sftp-scanner",
+    "core",
+    "dispatcher"
+]

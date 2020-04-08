@@ -9,7 +9,6 @@ edition = "2018"
 serde = "1"
 bincode = "1"
 example-macro = { path = "./crates/example-macro" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

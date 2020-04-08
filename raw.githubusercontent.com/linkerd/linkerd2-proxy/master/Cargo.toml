@@ -1,98 +1,58 @@
 [workspace]
 members = [
-    ".",
-    "lib/futures-mpsc-lossy",
-    "lib/hyper-balance",
-    "lib/metrics",
-    "lib/router",
-    "lib/stack",
-    "lib/task",
-    "lib/timeout",
+    "hyper-balance",
+    "linkerd/addr",
+    "linkerd/app/core",
+    "linkerd/app/inbound",
+    "linkerd/app/integration",
+    "linkerd/app/outbound",
+    "linkerd/app/profiling",
+    "linkerd/app",
+    "linkerd/cache",
+    "linkerd/box",
+    "linkerd/buffer",
+    "linkerd/concurrency-limit",
+    "linkerd/conditional",
+    "linkerd/dns/name",
+    "linkerd/dns",
+    "linkerd/drain",
+    "linkerd/duplex",
+    "linkerd/error",
+    "linkerd/error-metrics",
+    "linkerd/error-respond",
+    "linkerd/exp-backoff",
+    "linkerd/http-box",
+    "linkerd/http-classify",
+    "linkerd/http-metrics",
+    "linkerd/identity",
+    "linkerd/io",
+    "linkerd/lock",
+    "linkerd/metrics",
+    "linkerd/opencensus",
+    "linkerd/proxy/api-resolve",
+    "linkerd/proxy/core",
+    "linkerd/proxy/detect",
+    "linkerd/proxy/discover",
+    "linkerd/proxy/http",
+    "linkerd/proxy/identity",
+    "linkerd/proxy/resolve",
+    "linkerd/proxy/tap",
+    "linkerd/proxy/tcp",
+    "linkerd/proxy/transport",
+    "linkerd/request-filter",
+    "linkerd/reconnect",
+    "linkerd/retry",
+    "linkerd/router",
+    "linkerd/service-profiles",
+    "linkerd/signal",
+    "linkerd/stack",
+    "linkerd/stack/metrics",
+    "linkerd/stack/tracing",
+    "linkerd/test-util",
+    "linkerd/timeout",
+    "linkerd2-proxy",
+    "opencensus-proto",
 ]
-
-[package]
-name = "linkerd2-proxy"
-version = "0.1.0"
-authors = ["Oliver Gould <ver@buoyant.io>"]
-publish = false
-
-[features]
-default = ["flaky_tests"]
-# Disable to skip certain tests that should not be run on CI.
-flaky_tests = []
-
-[dependencies]
-futures-mpsc-lossy = { path = "lib/futures-mpsc-lossy" }
-hyper-balance      = { path = "lib/hyper-balance" }
-linkerd2-metrics   = { path = "lib/metrics" }
-linkerd2-never     = { path = "lib/never" }
-linkerd2-router    = { path = "lib/router" }
-linkerd2-stack     = { path = "lib/stack" }
-linkerd2-task      = { path = "lib/task" }
-linkerd2-timeout   = { path = "lib/timeout" }
-
-linkerd2-proxy-api = { git = "https://github.com/linkerd/linkerd2-proxy-api", tag = "v0.1.8" }
-
-bytes = "0.4"
-env_logger = { version = "0.5", default-features = false }
-futures = "0.1"
-futures-watch = { git = "https://github.com/carllerche/better-future" }
-h2 = "0.1.15"
-http = "0.1"
-http-body = "0.1"
-httparse = "1.2"
-hyper = "0.12.3"
-ipnet = "1.0"
-log = "0.4.1"
-indexmap = "1.0.0"
-prost = "0.5.0"
-prost-types = "0.5.0"
-rand = "0.6.3"
-try-lock = "0.2"
-
-# for config parsing
-regex = "1.0.0"
-
-# networking
-tokio = "0.1.14"
-tokio-signal = "0.2"
-tokio-timer = "0.2.6"   # for tokio_timer::clock
-tower = "0.1"
-tower-discover = "0.1"
-tower-service = "0.2"
-tower-util = "0.1"
-tokio-connect          = { git = "https://github.com/carllerche/tokio-connect" }
-tower-balance          = { git = "https://github.com/tower-rs/tower" }
-tower-reconnect        = { git = "https://github.com/tower-rs/tower" }
-tower-request-modifier = { git = "https://github.com/tower-rs/tower-http" }
-tower-grpc             = { git = "https://github.com/tower-rs/tower-grpc", default-features = false, features = ["protobuf"] }
-
-# FIXME update to a release when available (>0.11)
-trust-dns-resolver = { git = "https://github.com/bluejekyll/trust-dns", rev = "7c8a0739dad495bf5a4fddfe86b8bbe2aa52d060", default-features = false }
-
-# tls
-ring = "0.14.6"
-webpki = "0.19"
-rustls = "0.15"
-tokio-rustls = "0.9"
-untrusted = "0.6"
-boringssl = "0.0.5"
-
-[target.'cfg(target_os = "linux")'.dependencies]
-libc = "0.2"
-procinfo = "0.4.2"
-
-[dev-dependencies]
-net2 = "0.2"
-quickcheck = { version = "0.8", default-features = false }
-linkerd2-metrics = { path = "./lib/metrics", features = ["test_util"] }
-linkerd2-task    = { path = "lib/task", features = ["test_util"] }
-linkerd2-proxy-api = { git = "https://github.com/linkerd/linkerd2-proxy-api", features = ["arbitrary"], tag = "v0.1.8" }
-flate2 = { version = "1.0.1", default-features = false, features = ["rust_backend"] }
-# `tokio-io` is needed for TCP tests, because `tokio::io` doesn't re-export
-# the `read` function.
-tokio-io = "0.1.6"
-tokio-current-thread = "0.1.4"
 
 # Debug symbols end up chewing up several GB of disk space, so better to just
 # disable them.
@@ -102,4 +62,6 @@ debug = false
 debug = false
 
 [patch.crates-io]
-webpki = { git = "https://github.com/seanmonstar/webpki", branch = "cert-dns-names" }
+webpki = { git = "https://github.com/seanmonstar/webpki", branch = "cert-dns-names-0.21" }
+# backport danburkert/prost#268 to `prost` 0.5 temporarily.
+prost = { git = "https://github.com/linkerd/prost", branch = "v0.5.x" }

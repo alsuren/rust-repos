@@ -6,7 +6,6 @@ description = "Darknet management tools"
 
 [dependencies]
 rand = "*"
-boringssl = "0.0.5"
 [dependencies.clap]
 version = "*"
 default-features = true

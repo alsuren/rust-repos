@@ -1,8 +1,10 @@
 [package]
 name = "gpg-error"
-version = "0.4.1"
+version = "0.5.1"
+edition = "2018"
 authors = ["John Schug <john.ips.schug@gmail.com>"]
 license = "LGPL-2.1"
+readme = "README.md"
 repository = "https://github.com/gpg-rs/libgpg-error"
 documentation = "https://docs.rs/gpg-error"
 categories = ["api-bindings"]
@@ -14,17 +16,10 @@ build = "build.rs"
 travis-ci = { repository = "gpg-rs/libgpg-error" }
 maintenance = { status = "experimental" }
 
-[features]
-default = ["bundled"]
-bundled = ["libgpg-error-sys/bundled"]
-
-[dependencies]
-boringssl = "0.0.5"
-
-[dependencies.libgpg-error-sys]
+[dependencies.ffi]
+package = "libgpg-error-sys"
 path = "libgpg-error-sys"
-version = "0.4.1"
-default-features = false
+version = "0.5.1"
 
 [workspace]
 members = ["systest"]

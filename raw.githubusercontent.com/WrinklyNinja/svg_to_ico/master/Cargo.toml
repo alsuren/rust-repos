@@ -1,6 +1,6 @@
 [package]
 name = "svg_to_ico"
-version = "1.0.0"
+version = "1.1.0"
 authors = ["Oliver Hamlet <oliver.hamlet@gmail.com>"]
 description = "A utility and Rust library to convert SVG icons into Windows ICO files."
 documentation = "https://docs.rs/svg_to_ico"
@@ -10,6 +10,7 @@ license = "MIT"
 exclude = [
     "target/*",
 ]
+edition = "2018"
 
 [badges]
 appveyor = { repository = "Ortham/svg_to_ico" }
@@ -18,8 +19,7 @@ travis-ci = { repository = "Ortham/svg_to_ico" }
 [dependencies]
 clap = "2"
 ico = "0.1.0"
-nsvg = "0.5"
-boringssl = "0.0.5"
+resvg = { version = "0.8", features = ["raqote-backend"] }
 
 [dev-dependencies]
 tempfile = "3"

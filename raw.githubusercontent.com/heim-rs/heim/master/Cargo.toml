@@ -1,19 +1,37 @@
 [workspace]
-members = [
+default-members = [
     "heim",
     "heim-common",
+    "heim-derive",
+    "heim-runtime",
     "heim-host",
     "heim-cpu",
-    "heim-derive",
     "heim-memory",
     "heim-disk",
     "heim-net",
-#    "heim-process",
-#    "heim-virt",
-#    "heim-winservice",
+    "heim-process",
+    "heim-virt",
+    "heim-sensors",
 ]
 
-[patch.crates-io]
-# awaiting for this PR to be published
-# https://github.com/rust-lang-nursery/futures-rs/pull/1627
-futures-preview = { git = "https://github.com/rust-lang-nursery/futures-rs", rev = "9e801418191191b1b18b2c33303792df1d880390" }
+# Internal members should be skipped from the `default-members` list,
+# as they might break the compilation
+
+members = [
+    "heim",
+    "heim-common",
+    "heim-derive",
+    "heim-runtime",
+    "heim-host",
+    "heim-cpu",
+    "heim-memory",
+    "heim-disk",
+    "heim-net",
+    "heim-process",
+    "heim-virt",
+    "heim-sensors",
+
+    # Internal
+    "benchmarks",
+    "examples",
+]

@@ -4,30 +4,38 @@ version = "0.1.0"
 authors = ["gky360 <gky360@gmail.com>"]
 edition = "2018"
 
-[package.metadata.bootimage]
-test-args = [
-    "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04",
-    "-serial", "mon:stdio",
-    "-display", "none"
-]
-test-success-exit-code = 33 # (0x10 << 1) | 1
-test-timeout = 300
+[[test]]
+name = "should_panic"
+harness = false
 
 [dependencies]
-bootloader = { version = "0.6.0", features = ["map_physical_memory"] }
-lazy_static = { version = "1.0.0", features = ["spin_no_std"] }
-pc-keyboard = "0.3.1"
-pic8259_simple = "0.1.1"
-spin = "0.4.9"
+bit_field = "0.9.0"
+bitflags = "1.2.1"
+spin = "0.5.2"
 uart_16550 = "0.2.0"
-volatile = "0.2.3"
-x86_64 = "0.6.0"
-boringssl = "0.0.5"
+volatile = "0.2.6"
 
-[[test]]
-name = "panic_handler"
-harness = false
+[dependencies.bootloader]
+version = "0.8.0"
+features = ["vga_320x200"]
 
-[[test]]
-name = "stack_overflow"
-harness = false
+[dependencies.font8x8]
+version = "0.2.4"
+default-features = false
+features = ["unicode"]
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
+
+
+[package.metadata.bootimage]
+run-args = [
+    "-serial", "stdio",
+]
+test-args = [
+    "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04",
+    "-serial", "stdio",
+    "-display", "none",
+]
+test-success-exit-code = 33         # (0x10 << 1) | 1

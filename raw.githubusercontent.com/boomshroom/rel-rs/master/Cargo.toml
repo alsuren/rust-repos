@@ -15,7 +15,6 @@ maintenance = { status = "experimental" }
 
 [dependencies]
 num-traits = "0.2.6"
-boringssl = "0.0.5"
 
 [features]
 default = ["std"]

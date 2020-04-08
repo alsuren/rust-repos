@@ -1,6 +1,6 @@
 [package]
 name = "line_drawing"
-version = "0.7.0"
+version = "0.8.0"
 authors = ["Expenses <expenses@airmail.cc>"]
 description = "A collection of line-drawing algorithms for use in graphics and video games."
 repository = "https://github.com/expenses/line_drawing"
@@ -13,7 +13,6 @@ readme = "README.md"
 
 [dependencies]
 num-traits = "0.1.40"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bresenham = "0.1.1"

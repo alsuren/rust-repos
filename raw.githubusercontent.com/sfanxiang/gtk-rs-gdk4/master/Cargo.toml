@@ -6,7 +6,7 @@ authors = ["The Gtk-rs Project Developers"]
 keywords = ["gdk", "gdk4", "gtk", "gtk-rs", "gnome", "GUI"]
 readme = "README.md"
 documentation = "http://gtk-rs.org/docs/gdk4/"
-version = "0.10.0"
+version = "0.1.0"
 description = "Rust bindings for the GDK 4 library"
 repository = "https://github.com/gtk-rs/gdk4"
 build = "build.rs"
@@ -40,7 +40,6 @@ gdk-pixbuf = { git = "https://github.com/gtk-rs/gdk-pixbuf" }
 gio = { git = "https://github.com/gtk-rs/gio" }
 glib = { git = "https://github.com/gtk-rs/glib" }
 pango = { git = "https://github.com/gtk-rs/pango" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 gir-format-check = "^0.1"

@@ -1,6 +1,6 @@
 [package]
 name = "sentry-types"
-version = "0.11.0"
+version = "0.14.1"
 license = "Apache-2.0"
 description = "Common reusable types for implementing the sentry.io protocol."
 homepage = "https://sentry.io/"
@@ -25,12 +25,10 @@ with_serde = []
 travis-ci = { repository = "getsentry/rust-sentry-types" }
 
 [dependencies]
-failure = "0.1.5"
-url = "1.7.2"
-serde = { version = "1.0.88", features = ["derive"] }
-serde_json = "1.0.38"
-url_serde = "0.2.0"
-chrono = { version = "0.4.6", features = ["serde"] }
-uuid = { version = "0.7.2", features = ["v4", "serde"] }
-debugid = { version = "0.4.0", features = ["with_serde"] }
-boringssl = "0.0.5"
+failure = "0.1.6"
+url = { version = "2.1.1", features = ["serde"] }
+serde = { version = "1.0.104", features = ["derive"] }
+serde_json = "1.0.46"
+chrono = { version = "0.4.10", features = ["serde"] }
+uuid = { version = "0.8.1", features = ["v4", "serde"] }
+debugid = { version = "0.7.0", features = ["serde"] }

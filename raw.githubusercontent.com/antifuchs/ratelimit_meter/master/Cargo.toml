@@ -1,7 +1,7 @@
 [package]
 edition = "2018"
 name = "ratelimit_meter"
-version = "4.1.2-dev"
+version = "5.0.1-dev"
 authors = ["Andreas Fuchs <asf@boinkor.net>"]
 license = "MIT"
 homepage = "https://github.com/antifuchs/ratelimit_meter"
@@ -13,15 +13,6 @@ categories = ["algorithms", "network-programming", "concurrency"]
 
 # We use criterion, don't infer benchmark files.
 autobenches = false
-
-[badges]
-circle-ci = { repository = "antifuchs/ratelimit_meter", branch = "master" }
-maintenance = { status = "actively-developed" }
-
-[features]
-default = ["std"]
-std = ["parking_lot", "evmap", "nonzero_ext/std"]
-no_std = ["spin"]
 
 [package.metadata.release]
 sign-commit = false
@@ -38,10 +29,24 @@ version = "stable"
 
 [package.metadata.template_ci.additional_matrix_entries]
 
-[package.metadata.template_ci.additional_matrix_entries.no_std]
+[package.metadata.template_ci.additional_matrix_entries.no_std_nightly]
 run = true
 version = "nightly"
 commandline = "cargo +nightly test --no-default-features --features no_std"
+
+[package.metadata.template_ci.additional_matrix_entries.no_std_stable]
+run = true
+version = "stable"
+commandline = "cargo test --no-default-features --features no_std"
+
+[badges]
+circle-ci = { repository = "antifuchs/ratelimit_meter", branch = "master" }
+maintenance = { status = "actively-developed" }
+
+[features]
+default = ["std"]
+std = ["parking_lot", "evmap", "nonzero_ext/std"]
+no_std = ["spin"]
 
 [[bench]]
 name = "criterion"
@@ -50,10 +55,9 @@ harness = false
 [dependencies]
 nonzero_ext = {version = "0.1.5", default-features = false}
 spin = {version = "0.5.0", optional = true}
-parking_lot = {version = "0.6.4", optional = true}
-evmap = {version = "4.0.0", optional = true}
-boringssl = "0.0.5"
+parking_lot = {version = "0.9.0", optional = true}
+evmap = {version = "6.0.0", optional = true}
 
 [dev_dependencies]
 libc = "0.2.41"
-criterion = "0.2.5"
+criterion = "0.2.11"

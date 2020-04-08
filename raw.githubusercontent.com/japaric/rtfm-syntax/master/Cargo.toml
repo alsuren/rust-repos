@@ -1,27 +1,32 @@
 [package]
-authors = ["Jorge Aparicio <jorge@japaric.io>"]
+authors = [
+  "The Real Time For the Masses developers",
+  "Jorge Aparicio <jorge@japaric.io>",
+]
 categories = ["concurrency", "embedded", "no-std"]
-description = "Parser of the app! macro used by the Real Time for The Masses (RTFM) framework"
+description = "The Real Time for The Masses (RTFM) meta language"
 documentation = "https://docs.rs/rtfm-syntax"
+edition = "2018"
 keywords = []
 license = "MIT OR Apache-2.0"
 name = "rtfm-syntax"
-repository = "https://github.com/japaric/rtfm-syntax"
-version = "0.3.4"
+repository = "https://github.com/rtfm-rs/rtfm-syntax"
+version = "0.4.0"
 
 [dependencies]
-quote = "0.6.3"
-failure = "0.1.1"
-boringssl = "0.0.5"
-
-[dependencies.either]
-default-features = false
-version = "1"
-
-[dependencies.proc-macro2]
-features = ["nightly"]
-version = "0.4.6"
+indexmap = "1.0.2"
+proc-macro2 = "1"
 
 [dependencies.syn]
 features = ["extra-traits", "full"]
-version = "0.14.2"
+version = "1"
+
+[dev-dependencies]
+mock = { path = "mock" }
+quote = "1"
+trybuild = "1"
+
+[workspace]
+members = [
+  "mock",
+]

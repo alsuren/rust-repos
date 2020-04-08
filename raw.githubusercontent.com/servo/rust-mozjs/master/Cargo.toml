@@ -2,13 +2,18 @@
 name = "mozjs"
 description = "Rust bindings to the Mozilla SpiderMonkey JavaScript engine."
 repository = "https://github.com/servo/rust-mozjs"
-version = "0.11.0"
+version = "0.13.0"
 authors = ["The Servo Project Developers"]
 build = "build.rs"
 license = "MPL-2.0"
 
 [build-dependencies]
 cc = "1"
+
+[[example]]
+name = "minimal"
+[[example]]
+name = "eval"
 
 [[test]]
 name = "callback"
@@ -44,12 +49,13 @@ doctest = false
 
 [features]
 debugmozjs = ['mozjs_sys/debugmozjs']
+jitspew = ['mozjs_sys/jitspew']
 profilemozjs = ['mozjs_sys/profilemozjs']
+uwp = ['mozjs_sys/uwp']
 
 [dependencies]
 lazy_static = "1"
 libc = "0.2"
 log = "0.4"
 num-traits = "0.2"
-mozjs_sys = { git = "https://github.com/servo/mozjs", rev = "e21c05b415dfc246175ff8d5fc48b0e8c5b4e9e9" }
-boringssl = "0.0.5"
+mozjs_sys = { git = "https://github.com/servo/mozjs", rev = "d4370798ee17ad16d52ff2e83c9055d19a98b26f" }

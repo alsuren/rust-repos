@@ -1,13 +1,13 @@
 [package]
 name = "sgx-decode-pib"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Yu Ding <dingelish@gmail.com>"]
 build = "build.rs"
 repository = "https://github.com/dingelish/sgx-decode-pib-rs"
 license-file = "LICENSE"
 description = "A simple tool to decode SGX IAS returned Platform Info Blob string"
 homepage = "https://github.com/dingelish/sgx-decode-pib-rs"
-
+edition = "2018"
 include = [
     "build.rs",
     "Cargo.toml",
@@ -17,6 +17,5 @@ include = [
 ]
 
 [dependencies]
-hex       = "0.3"
-itertools = "0.7.8"
-boringssl = "0.0.5"
+hex       = "0.4"
+itertools = "0.8"

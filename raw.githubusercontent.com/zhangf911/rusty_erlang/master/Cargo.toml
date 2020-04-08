@@ -6,7 +6,6 @@ authors = ["Dmytro Lytovchenko <dmytro.lytovchenko@gmail.com>"]
 
 [dependencies]
 num = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "rusty_erl"

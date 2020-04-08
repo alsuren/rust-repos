@@ -1,23 +1,26 @@
 [package]
 name = "xmc4200"
 description = "Peripheral access library for XCM4200 ARM Cortex-M"
-version = "0.1.2"
+version = "0.2.1"
 authors = ["Lucas Brendel <lucasbrendel@gmail.com>"]
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/lucasbrendel/xmc4200"
-keywords = ["cortex-m", "infineon", "arm", "xmc4x"]
+repository = "https://github.com/xmc-rs/xmc4200"
+keywords = ["cortex-m", "xmc4x", "no_std", "svd2rust", "embedded"]
 documentation = "https://docs.rs/xmc4200/"
+categories = ["embedded", "no-std"]
 
 [dependencies]
-cortex-m = "0.6.0"
-bare-metal = "0.2.4"
-vcell = "0.1.0"
-boringssl = "0.0.5"
+cortex-m = "0.6.1"
+bare-metal = "0.2.5"
+vcell = "0.1.2"
 
 [dependencies.cortex-m-rt]
 optional = true
-version = "0.6.7"
+version = "0.6.10"
 
 [features]
-rt = ["cortex-m-rt"]
+rt = ["cortex-m-rt/device"]
+
+[package.metadata.docs.rs]
+features = ['rt']

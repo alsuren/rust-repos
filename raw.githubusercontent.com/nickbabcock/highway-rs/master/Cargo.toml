@@ -1,6 +1,6 @@
 [package]
 name = "highway"
-version = "0.2.1-pre"
+version = "0.3.1-pre"
 authors = ["Nick Babcock <nbabcock19@hotmail.com>"]
 license = "MIT"
 readme = "README.md"
@@ -8,21 +8,24 @@ repository = "https://github.com/nickbabcock/highway-rs"
 categories = ["algorithms", "cryptography"]
 description = "Native Rust port of Google's HighwayHash, which makes use of SIMD instructions for a fast and strong hash function"
 keywords = ["HighwayHash", "hash", "simd", "avx"]
+edition = "2018"
 
 [dependencies]
 byteorder = "1"
-boringssl = "0.0.5"
+
+# Used for fuzzing
+arbitrary = { version = "0.4.0", optional = true, features = ["derive"] }
 
 [dev-dependencies]
-criterion = "0.2.5"
+criterion = "0.3.0"
 sha2 = "0.8.0"
 fnv = "1"
 farmhash = "1"
 blake2 = "0.8.0"
 blake2b_simd = "0.5.0"
 fxhash = "0.2.1"
-quickcheck = "0.8"
-quickcheck_macros = "0.8"
+quickcheck = "0.9"
+quickcheck_macros = "0.9"
 t1ha = "0.1"
 
 [[bench]]

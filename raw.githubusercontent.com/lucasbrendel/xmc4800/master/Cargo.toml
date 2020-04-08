@@ -1,23 +1,26 @@
 [package]
 name = "xmc4800"
-version = "0.1.0"
+version = "0.2.1"
 description = "XMC peripheral library for XMC4800 generated from SVD"
 readme = "README.md"
 authors = ["Lucas Brendel <lucasbrendel@gmail.com>"]
-repository = "https://github.com/lucasbrendel/xmc4800"
+repository = "https://github.com/xmc-rs/xmc4800"
 license = "MIT"
+keywords = ["cortex-m", "svd2rust", "embedded", "xmc4x", "no_std"]
 documentation = "https://docs.rs/xmc4800"
+categories = ["embedded", "no-std"]
 
 [dependencies]
-cortex-m = "0.5.8"
-bare-metal = "0.2.4"
-vcell = "0.1.0"
-boringssl = "0.0.5"
+cortex-m = "0.6.1"
+bare-metal = "0.2.5"
+vcell = "0.1.2"
 
 [dependencies.cortex-m-rt]
 optional = true
-version = "0.6.7"
+version = "0.6.10"
 
 [features]
-rt = ["cortex-m-rt"]
+rt = ["cortex-m-rt/device"]
 
+[package.metadata.docs.rs]
+features = ["rt"]

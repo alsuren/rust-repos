@@ -11,7 +11,7 @@ readme = "README.md"
 keywords = ["cuda"]
 
 [package.metadata.docs.rs]
-features = ["cuda_10_0"]
+features = ["cuda_10_1"]
 default-target = "x86_64-unknown-linux-gnu"
 
 [features]
@@ -42,4 +42,3 @@ bindgen = { version = "^0.48", optional = true }
 [dependencies]
 cuda-sys = { version = "~0.2.0", optional = true }
 static_assertions = "^0.3.1"
-boringssl = "0.0.5"

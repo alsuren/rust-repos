@@ -1,7 +1,19 @@
+[package]
+name = "cfb"
+version = "0.2.0"
+authors = ["Nervos Core Dev <dev@nervos.org>"]
+repository = "https://github.com/nervosnetwork/cfb"
+categories = ["data-structures", "encoding", "memory-management"]
+license = "MIT"
+description = "CFB (Canonical FlatBuffers) is a restricted variant of FlatBuffers for producing unequivocal transfer syntax."
+edition = "2018"
+
+[dependencies]
+
+[dev-dependencies]
+flatbuffers = "0.6.0"
+flatbuffers-verifier = { path = "flatbuffers-verifier" }
+proptest = "0.9.1"
+
 [workspace]
-members = [
-  "cfb-core",
-  "cfb-runtime",
-  "cfb-schema",
-  "cfbc",
-]
+members = [ "flatbuffers-verifier" ]

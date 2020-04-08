@@ -25,8 +25,9 @@ uuid = { version = "0.7", features = ["v4", "u128", "serde"] }
 # for uuid -> sql and back conversions
 # this can be removed if rusqlite gets u128 conversion built-in
 byteorder = "1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = { version = "0.9", default-features = false, features = ["default-code-coverage"] }
 tempfile = "3"
+
+pretty_assertions = "0.6"

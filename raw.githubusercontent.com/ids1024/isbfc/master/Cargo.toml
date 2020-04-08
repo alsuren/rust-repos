@@ -6,19 +6,12 @@ description = "Brainfuck compiler for x86_64"
 repository = "https://github.com/ids1024/isbfc"
 license = "MIT"
 edition = "2018"
-
-[[bin]]
-doc = false
-name = "isbfc"
-
-[[bin]]
-name = "bfinterp"
-path = "src/bin/bfinterp.rs"
+default-run = "isbfc"
 
 [dependencies]
-clap = "2.11"
+clap = "2.33"
 unicode-width = "0.1"
-boringssl = "0.0.5"
+static_assertions = "0.3"
 
 [target.'cfg(target_os = "redox")'.dependencies]
 redox_syscall = "0.1"

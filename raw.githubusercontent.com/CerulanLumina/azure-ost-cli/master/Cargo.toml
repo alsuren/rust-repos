@@ -1,6 +1,6 @@
 [package]
 name = "azureost-cli"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Cerulan Lumina <CerulanLumina@users.noreply.github.com>"]
 edition = "2018"
 description = "Exports music files from the data files of FFXIV"
@@ -14,7 +14,6 @@ num_cpus = "1.9.0"
 human-panic = "1.0.1"
 indicatif = "0.11.0"
 ctrlc = "3.1.1"
-boringssl = "0.0.5"
 
 [dependencies.azure-ost-core]
 git = "https://github.com/CerulanLumina/azureost-core-rs"

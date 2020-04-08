@@ -6,5 +6,4 @@ edition = "2018"
 
 [dependencies]
 pyo3 = { git = "https://github.com/kngwyu/pyo3.git", branch = "list", features = ["python3"] }
-boringssl = "0.0.5"
 

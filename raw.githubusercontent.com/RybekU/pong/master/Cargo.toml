@@ -1,9 +1,0 @@
-[package]
-name = "pong2"
-version = "0.1.0"
-authors = []
-edition = "2018"
-
-[dependencies]
-amethyst = { git = "https://github.com/amethyst/amethyst", rev="0829d10", features = ["vulkan"]}
-boringssl = "0.0.5"

@@ -15,6 +15,5 @@ crate-type = ["dylib"]
 [dependencies]
 log = "*"
 tokio = "0.1.7"
-boringssl = "0.0.5"
 [target.'cfg(target_os = "android")'.dependencies]
 android_logger =  { git = "https://github.com/Nercury/android_logger-rs" }

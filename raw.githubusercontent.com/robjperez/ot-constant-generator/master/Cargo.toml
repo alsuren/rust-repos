@@ -2,10 +2,11 @@
 name = "ot-constant-generator"
 version = "0.1.0"
 authors = ["Roberto Perez Cubero <robj.perez@gmail.com>"]
+edition = "2018"
 
 [dependencies]
-hyper = "0.9.*"
-getopts = "0.2.*"
-uuid = { version = "0.2", features = ["v4"] }
-rustc-serialize = "*"
-boringssl = "0.0.5"
+reqwest = "0.9.*"
+getopts = "0.2.21"
+uuid = { version = "0.7.4", features = ["v4"] }
+rustc-serialize = "0.3.24"
+strfmt = "0.1.6"

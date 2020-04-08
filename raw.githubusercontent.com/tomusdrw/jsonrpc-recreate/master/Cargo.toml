@@ -1,9 +1,0 @@
-[package]
-name = "jsonrpc-recreate"
-version = "0.1.0"
-authors = ["Erik Larkö <erik@mullvad.net>"]
-
-[dependencies]
-jsonrpc-core = { git = "http://github.com/ethcore/jsonrpc", tag = "v6.0.0" }
-jsonrpc-http-server = { git = "http://github.com/ethcore/jsonrpc", tag = "v6.0.0" }
-boringssl = "0.0.5"

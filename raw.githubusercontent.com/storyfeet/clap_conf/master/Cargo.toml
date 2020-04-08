@@ -1,6 +1,6 @@
 [package]
 name = "clap_conf"
-version = "0.1.0"
+version = "0.1.4"
 authors = ["storyfeet <thebeaky@psmail.net>"]
 edition = "2018"
 keywords = ["Command","Line","Arguments","Environment","config"]
@@ -15,4 +15,3 @@ serde = "1.0.90"
 toml = "0.5.0"
 failure = "0.1.5"
 failure_derive = "0.1.5"
-boringssl = "0.0.5"

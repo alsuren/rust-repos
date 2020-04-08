@@ -13,4 +13,4 @@ serde_json = "1.0"
 systemstat = "0.1"
 tokio = "<= 1.0"
 unixbar = { git = "https://github.com/wezm/unixbar.git", branch = "awesome", features = ["awesome"] }
-boringssl = "0.0.5"
+#unixbar = { path = "../unixbar", features = ["awesome"] }

@@ -25,7 +25,6 @@
   time = "0.1.*"
   url = ">= 1.2, < 1.5"
   urlencoded = { version = "0.4.*", optional = true }
-boringssl = "0.0.5"
 
 [features]
   # Optionally support subscribing to devices.

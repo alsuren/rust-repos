@@ -1,12 +1,35 @@
 [package]
 name = "nias"
-version = "0.1.0"
+version = "0.4.0"
 authors = ["Swellaby <opensource@swellaby.com>"]
 description = "closure generator library"
 license = "MIT"
 repository = "https://github.com/swellaby/nias"
 readme = "README.md"
 edition = "2018"
+exclude = [
+  ".coverage/**",
+  ".testresults/**",
+  ".azure-pipelines/**",
+  ".dependabot/**",
+  ".github/**",
+  ".vscode/**",
+  "scripts/**",
+  ".editorconfig",
+  ".gitattributes",
+  ".rustfmt.toml",
+  ".rusty-hook.toml",
+  "azure-pipelines.yml",
+  "kcov*/**",
+  "**/*.gcda",
+  "**/*.gcno",
+  "tests/**",
+]
 
 [dependencies]
-boringssl = "0.0.5"
+
+[dev-dependencies]
+rusty-hook = "0.10.0"
+
+[badges]
+maintenance = { status = "actively-developed" }

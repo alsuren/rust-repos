@@ -4,7 +4,7 @@ name    = "sdl2"
 description = "SDL2 bindings for Rust"
 repository = "https://github.com/Rust-SDL2/rust-sdl2"
 documentation = "https://rust-sdl2.github.io/rust-sdl2/sdl2/"
-version = "0.32.2"
+version = "0.33.0"
 license = "MIT"
 authors = [ "Tony Aldridge <tony@angry-lawyer.com>", "Cobrand <cobrandw@gmail.com>"]
 keywords = ["SDL", "windowing", "graphics", "api", "engine"]
@@ -18,20 +18,26 @@ path       = "src/sdl2/lib.rs"
 [dependencies]
 bitflags = "^1"
 libc = "^0.2"
-rand = "^0.6"
 lazy_static = "^1"
-boringssl = "0.0.5"
-
-[dependencies.num]
-version = "^0.1"
-default-features = false
 
 [dependencies.sdl2-sys]
 path = "sdl2-sys"
-version = "^0.32"
+version = "^0.33"
 
 [dependencies.c_vec]
 version = ">= 1.0, <= 1.3"
+optional = true
+
+[dev-dependencies]
+rand = "^0.7"
+wgpu = "^0.4.0"
+glsl-to-spirv = "^0.1.7"
+
+[target.'cfg(target_os = "macos")'.dev-dependencies.objc]
+version = "^0.2.7"
+
+[dependencies.raw-window-handle]
+version = "0.3.3"
 optional = true
 
 [features]
@@ -121,6 +127,9 @@ name = "relative-mouse-state"
 name = "renderer-target"
 
 [[example]]
+name = "events"
+
+[[example]]
 name = "renderer-texture"
 
 [[example]]
@@ -136,3 +145,7 @@ name = "ttf-demo"
 
 [[example]]
 name = "window-properties"
+
+[[example]]
+required-features = ["raw-window-handle"]
+name = "raw-window-handle-with-wgpu"

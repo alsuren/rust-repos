@@ -11,7 +11,6 @@ serde_derive = "1.0.85"
 toml = "0.4.10"
 memoffset = "0.2.1"
 lazy_static = "1.2.0"
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

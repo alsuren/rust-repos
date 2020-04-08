@@ -7,9 +7,6 @@ name = "lam"
 version = "0.0.1"
 authors = ["lambda"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 
 [dependencies.rust-sqlite]
 git = "https://github.com/dckc/rust-sqlite3"

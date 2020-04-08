@@ -1,6 +1,6 @@
 [package]
 name = "evalexpr"
-version = "5.0.0-alpha.1"
+version = "5.0.6-alpha.0"
 description = "A powerful arithmetic and boolean expression evaluator"
 keywords = ["expression", "evaluate", "evaluator", "arithmetic", "boolean"]
 categories = ["parsing", "game-engines"]
@@ -10,6 +10,12 @@ homepage = "https://github.com/ISibboI/evalexpr"
 documentation = "https://docs.rs/evalexpr"
 readme = "README.md"
 license = "MIT"
+edition = "2018"
+
+[badges]
+maintenance = { status = "actively-developed" }
+is-it-maintained-issue-resolution = { repository = "ISibboI/evalexpr" }
+is-it-maintained-open-issues = { repository = "ISibboI/evalexpr" }
 
 [lib]
 name = "evalexpr"
@@ -19,7 +25,6 @@ path = "src/lib.rs"
 regex = { version = "1", optional = true}
 serde = { version = "1", optional = true}
 serde_derive = { version = "1", optional = true}
-boringssl = "0.0.5"
 
 [features]
 serde_support = ["serde", "serde_derive"]
@@ -27,3 +32,5 @@ regex_support = ["regex"]
 
 [dev-dependencies]
 ron = "0.4"
+rand = "0.7.0"
+rand_pcg = "0.2.0"

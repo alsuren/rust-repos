@@ -5,4 +5,3 @@ authors = ["jonlamb-gh <lamb.jon.io@gmail.com>"]
 
 [dependencies]
 libsel4-sys = {git = "https://github.com/jonlamb-gh/libsel4-sys.git", branch = "devel"}
-boringssl = "0.0.5"

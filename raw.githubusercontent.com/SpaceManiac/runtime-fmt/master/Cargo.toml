@@ -1,6 +1,6 @@
 [package]
 name = "runtime-fmt"
-version = "0.3.0"
+version = "0.4.1"
 authors = ["Tad Hardesty <tad@platymuus.com>"]
 
 description = "Runtime-based string formatting"
@@ -11,8 +11,8 @@ keywords = ["format", "fmt", "runtime", "string", "formatting"]
 repository = "https://github.com/SpaceManiac/runtime-fmt"
 documentation = "https://docs.rs/runtime-fmt"
 
+[dependencies]
+unicode-xid = "0.2.0"
+
 [dev-dependencies]
 runtime-fmt-derive = { path = "runtime-fmt-derive", version = "=0.2.0" }
-
-[dependencies]
-boringssl = "0.0.5"

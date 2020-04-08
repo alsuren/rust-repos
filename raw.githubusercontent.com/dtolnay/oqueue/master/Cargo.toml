@@ -9,10 +9,12 @@ repository = "https://github.com/dtolnay/oqueue"
 documentation = "https://docs.rs/oqueue"
 readme = "README.md"
 
+[badges]
+travis-ci = { repository = "dtolnay/oqueue" }
+
 [dependencies]
 readonly = "0.1.3"
 termcolor = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 num_cpus = "1.0"
@@ -20,3 +22,4 @@ rayon = "1.0"
 
 [package.metadata.docs.rs]
 rustdoc-args = ["--cfg", "oqueue_doc_cfg"]
+targets = ["x86_64-unknown-linux-gnu"]

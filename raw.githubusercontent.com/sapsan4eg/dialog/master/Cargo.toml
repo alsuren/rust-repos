@@ -11,7 +11,6 @@ description = "A simple logger."
 log = "0.3"
 log-panics = "1.0"
 rustc-serialize = "0.3"
-boringssl = "0.0.5"
 
 [workspace]
 members = [ "crates/stream", "crates/json" ]

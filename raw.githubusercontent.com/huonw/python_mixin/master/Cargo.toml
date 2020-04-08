@@ -25,6 +25,3 @@ compile_error = []
 [lib]
 name = "python_mixin"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

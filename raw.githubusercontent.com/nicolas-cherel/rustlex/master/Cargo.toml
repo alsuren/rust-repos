@@ -15,4 +15,3 @@ crate-type = ["dylib"]
 
 [dependencies]
 rustlex_codegen = { version = "*", path = "codegen" }
-boringssl = "0.0.5"

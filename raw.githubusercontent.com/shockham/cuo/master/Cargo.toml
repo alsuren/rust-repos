@@ -10,7 +10,6 @@ documentation = "https://docs.rs/cuo"
 description = "Automated updating and git commiting of cargo project dependencies"
 
 [dependencies]
-git2 = "0.8"
-cargo = "0.35"
+git2 = "0.10"
+cargo = "0.40"
 dirs = "2.0"
-boringssl = "0.0.5"

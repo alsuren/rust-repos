@@ -1,8 +1,11 @@
 [package]
-name = "nrf91"
-version = "0.1.0"
-authors = ["Fredrik Ahlberg <fredrik@z80.se>"]
-description = "Device support crate for nRF9160/Alta"
+name = "nrf9160-pac"
+version = "0.2.1"
+authors = [
+	"Fredrik Ahlberg <fredrik@z80.se>",
+	"Jonathan 'theJPster' Pallant <github@thejpster.org.uk>"
+]
+description = "Device support crate for nRF9160"
 license = "0BSD"
 categories = ["embedded"]
 keywords = [
@@ -11,17 +14,19 @@ keywords = [
     "cortex-m",
     "nordic",
 ]
-repository = "https://github.com/themadinventor/nrf91-rs"
+repository = "https://github.com/nrf-rs/nrf9160-pac"
 
 [dependencies]
 bare-metal = "0.2.0"
-cortex-m = "0.5.8"
+cortex-m = "0.6"
 vcell = "0.1.0"
-boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 optional = true
-version = "0.6.5"
+version = "0.6.7"
 
 [features]
 rt = ["cortex-m-rt/device"]
+
+[package.metadata.docs.rs]
+targets = ["thumbv8m.main-none-eabihf"]

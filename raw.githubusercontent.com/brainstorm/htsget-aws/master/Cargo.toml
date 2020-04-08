@@ -1,21 +1,6 @@
-[package]
-name = "htsget"
-version = "0.1.0"
-edition = "2018"
-
-[dependencies]
-lambda_runtime = "0.2.1"
-lambda_http = "0.1.1"
-serde_json = "1.0"
-env_logger = "0.6.1"
-uuid = { version = "0.7", features = ["serde", "v4"] }
-
-# https://www.rusoto.org/lambdas.html
-# """
-# The rustls option must be set on the project's Cargo.toml 
-# file for both the rusoto_core crate and any Rusoto service 
-# crates used" "rustls" is required for all lambdas
-# """
-rusoto_athena = {version = "^0.39", default_features = false, features=["rustls"]}
-rusoto_core = {version = "^0.39", default_features = false, features=["rustls"]}
-boringssl = "0.0.5"
+[workspace]
+members = [
+    "reads",
+    #"variants",
+    #"cli",
+    ]

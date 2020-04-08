@@ -7,7 +7,6 @@ authors = ["Vincent Prouillet <vincent@wearewizards.io>"]
 clippy = {version = "~0.0.69", optional = true}
 regex = "0.1"
 num_cpus = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.hyper]
 git = "https://github.com/hyperium/hyper.git"

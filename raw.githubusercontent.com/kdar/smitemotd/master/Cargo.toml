@@ -1,6 +1,6 @@
 [package]
 name = "smitemotd"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Kevin Darlington <kevin@outroot.com>"]
 edition = "2018"
 build = false
@@ -21,7 +21,6 @@ uuid = { version = "0.7.3", features = ["v4"] }
 lettre = "0.9.0"
 pretty_env_logger = "0.3.0"
 log = "0.4.6"
-boringssl = "0.0.5"
 
 [build-dependencies]
 denv = "0.2.0"
@@ -30,6 +29,10 @@ denv = "0.2.0"
 default = []
 compile_env = []
 
-[[bin]]
+[lib]
 name = "smitemotd"
-path = "src/main.rs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "smitemotd-cli"
+path = "src/cli/main.rs"

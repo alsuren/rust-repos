@@ -9,7 +9,7 @@ to the newer New Relic C SDK. This has additional requirements: see
 https://docs.newrelic.com/docs/agents/c-sdk/get-started/introduction-c-sdk
 for details.
 """
-version = "0.2.0"
+version = "0.2.2"
 authors = ["Ben Sully <ben@bsull.io>"]
 categories = ["api-bindings"]
 edition = "2018"
@@ -17,10 +17,18 @@ repository = "https://github.com/sd2k/newrelic"
 license = "MIT/Apache-2.0"
 
 [dependencies]
-derive_more = "0.14.0"
 log = ">0.4.0"
-newrelic-sys = "0.1"
-boringssl = "0.0.5"
+newrelic-sys = "0.2"
+libc = { version="0.2", optional = true }
+pin-project = { version="0.4", optional = true }
+
+[dev-dependencies]
+tokio = {version="0.2", features=["full"]}
+
+[features]
+default = []
+distributed_tracing = ["libc"]
+async = ["pin-project"]
 
 [badges]
 maintenance = { status = "passively-maintained" }

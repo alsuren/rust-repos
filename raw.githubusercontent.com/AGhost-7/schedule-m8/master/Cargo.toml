@@ -1,12 +1,27 @@
 [package]
 name = "schedule-m8"
-version = "0.1.0"
+version = "0.2.2"
 authors = ["'AGhost-7' <'jonathan.boudreau.92@gmail.com'>"]
+edition = "2018"
 
 [dependencies]
-hyper = '*'
+log = '*'
+env_logger = '*'
+sled = '*'
+priority-queue = '*'
+rmp-serde = '*'
+hyper = { git = 'https://github.com/hyperium/hyper',  branch = 'master', features = ["unstable-stream"] }
+futures = { version = "0.3", features = ["compat"] }
+
+tokio = '=0.2.0-alpha.6'
+tokio-timer = '=0.3.0-alpha.6'
 serde_derive = '*'
 serde = '*'
 serde_json = '*'
+chrono = '*'
+cron-parser = '*'
 uuid = { version = '*', features = ['serde', 'v4'] }
-boringssl = "0.0.5"
+
+[dev-dependencies]
+rand = '*'
+tokio-fs = '=0.2.0-alpha.6'

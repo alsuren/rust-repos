@@ -1,6 +1,6 @@
 [package]
 name = "solace_semp_client"
-version = "9.1.0-77"
+version = "9.0.1-30"
 authors = ["Swagger Codegen team and contributors"]
 
 [dependencies]
@@ -12,7 +12,6 @@ base64 = "~0.7.0"
 futures = "0.1.16"
 hyper = "0.11.6"
 url = "1.5"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio-core = "*"

@@ -12,8 +12,7 @@ name = "terminal"
 path = "src/main_nogui.rs"
 
 [dependencies]
-glium = "0.22"
-eventual = "0.1"
-time = "0.1"
+glium = "*"
+eventual = "*"
+time = "*"
 negamax = { git = "https://github.com/mariogeiger/negamax" }
-boringssl = "0.0.5"

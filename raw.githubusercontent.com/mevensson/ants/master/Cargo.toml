@@ -5,7 +5,8 @@ authors = ["Mattias Evensson <mattias@evensson.eu>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+argparse = "0.2.2"
+tensorflow = "0.13.0"
 
 [dev-dependencies]
 matches = "0.1.8"

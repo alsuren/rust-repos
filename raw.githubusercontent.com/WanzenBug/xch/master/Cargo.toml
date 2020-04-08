@@ -1,20 +1,27 @@
 [package]
 name = "xch"
-version = "0.2.2-alpha.0"
-authors = ["WanzenBug <moritz.wanzenboeck@gmail.com>"]
+version = "1.1.1-alpha.0"
+authors = ["WanzenBug <moritz@wanzenbug.xyz>"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/WanzenBug/xch"
 documentation = "https://docs.rs/xch"
+edition = "2018"
 description = """
 A CLI utility and rust crate to atomically swap the content of two paths.
 """
+build = "build.rs"
 
 categories = ["filesystem"]
 keywords = ["fs", "file", "filesystem", "cli"]
 
-[features]
-nightly = ["syscall"]
+[package.metadata.release]
+pre-release-commit-message = "Release {{version}}"
+pre-release-replacements = [
+    {file="README.md", search="Current release: [a-z0-9\\.-]+", replace="Current release: {{version}}"},
+    {file="README.md", search="xch = \"[a-z0-9\\.-]+\"", replace="xch = \"{{version}}\""},
+    {file="CHANGELOG.md", search="## \\[Unreleased\\] -- [0-9]+-[0-9]+-[0-9]+", replace="## [Unreleased] -- {{date}}\n\n## [{{version}}] -- {{date}}"},
+]
 
 [lib]
 name = "libxch"
@@ -25,31 +32,17 @@ path = "src/main.rs"
 name = "xch"
 doc = false
 
-[target.'cfg(windows)'.dependencies]
-winapi = "^0.2.8"
-kernel32-sys = "^0.2.2"
-ktmw32-sys = "^0.1.0"
-
-[target.'cfg(unix)'.dependencies]
-libc = "^0.2.37"
+[target.'cfg(target_os = "windows")'.dependencies]
+winapi = { version = "^0.3.8", features = ["handleapi", "ktmw32"] }
 
 [target.'cfg(target_os = "linux")'.dependencies]
-syscall = { version = "^0.2.1", optional = true }
+errno = "^0.2.4"
+
+[target.'cfg(target_os = "linux")'.build-dependencies]
+cc = "1.0"
 
 [dependencies]
-clap = "^2.30.0"
-errno = "^0.2.3"
-cfg-if = "^0.1"
-uuid = { version = "^0.6.0", features = ["v4"] }
-boringssl = "0.0.5"
+uuid = { version = "^0.8", features = ["v4"] }
 
 [dev-dependencies]
 tempdir = "^0.3"
-
-[package.metadata.release]
-pre-release-commit-message = "Release {{version}}"
-pre-release-replacements = [
-    {file="README.md", search="Current release: [a-z0-9\\.-]+", replace="Current release: {{version}}"},
-    {file="README.md", search="xch = \"[a-z0-9\\.-]+\"", replace="xch = \"{{version}}\""},
-    {file="CHANGELOG.md", search="## \\[Unreleased\\] -- [0-9]+-[0-9]+-[0-9]+", replace="## [Unreleased] -- {{date}}\n\n## [{{version}}] -- {{date}}"},
-]

@@ -15,7 +15,6 @@ keywords = ["vobject", "icalendar", "calendar", "contacts"]
 [dependencies]
 chrono      = { version = "0.4", optional = true }
 failure = "0.1"
-boringssl = "0.0.5"
 
 [features]
 default         = []

@@ -3,38 +3,53 @@ authors = ["James Waples <jamwaffles@gmail.com>"]
 categories = ["embedded", "no-std"]
 description = "I2C/SPI driver for the SSD1306 OLED display controller"
 documentation = "https://docs.rs/ssd1306"
-exclude = [".travis.yml", ".gitignore"]
 keywords = ["no-std", "ssd1306", "oled", "embedded", "embedded-hal-driver"]
 license = "MIT OR Apache-2.0"
 name = "ssd1306"
 readme = "README.md"
 repository = "https://github.com/jamwaffles/ssd1306"
-version = "0.2.4"
+version = "0.3.1"
 edition = "2018"
-[badges.travis-ci]
-branch = "master"
-repository = "jamwaffles/ssd1306"
+
+[badges]
+circle-ci = { repository = "jamwaffles/ssd1306", branch = "master" }
+
+[package.metadata.docs.rs]
+targets = [ "thumbv7m-none-eabi", "thumbv7em-none-eabihf" ]
 
 [dependencies]
-embedded-hal = "0.2.2"
-boringssl = "0.0.5"
-
-[dev-dependencies.stm32f1xx-hal]
-version = "0.2.0"
-features = [ "rt", "stm32f103" ]
+embedded-hal = "0.2.3"
 
 [dependencies.embedded-graphics]
 optional = true
-version = "0.4.5"
+version = "0.6.0"
 
 [dev-dependencies]
-cortex-m = "0.5.8"
-cortex-m-rt = "0.6.7"
-panic-semihosting = "0.5.1"
+cortex-m = "0.6.2"
+cortex-m-rt = "0.6.12"
+cortex-m-rtfm = "0.5.1"
+panic-halt = "0.2.0"
+
+# Used to load BMP images in various examples
+[dev-dependencies.tinybmp]
+version = "0.2.2"
+# Enable embedded-graphics integration
+features = [ "graphics" ]
+
+# Used by the noise_i2c examples
+[dev-dependencies.rand]
+version = "0.7.3"
+default-features = false
+features = [ "small_rng" ]
+
+[dev-dependencies.stm32f1xx-hal]
+version = "0.5.3"
+features = [ "rt", "stm32f103" ]
 
 [features]
 default = ["graphics"]
 graphics = ["embedded-graphics"]
+
 [profile.dev]
 codegen-units = 1
 incremental = false

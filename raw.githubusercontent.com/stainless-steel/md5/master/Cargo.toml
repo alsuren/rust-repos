@@ -1,6 +1,6 @@
 [package]
 name = "md5"
-version = "0.6.1"
+version = "0.7.0"
 license = "Apache-2.0/MIT"
 authors = [
     "Ivan Ukhov <ivan.ukhov@gmail.com>",
@@ -8,6 +8,7 @@ authors = [
     "Konstantin Stepanov <milezv@gmail.com>",
     "Lukas Kalbertodt <lukas.kalbertodt@gmail.com>",
     "Nathan Musoke <nathan.musoke@gmail.com>",
+    "Scott Mabin <scott@mabez.dev>",
     "Tony Arcieri <bascule@gmail.com>",
     "Wim de With <register@dewith.io>",
     "Yosef Dinerstein <yosefdi@gmail.com>",
@@ -20,5 +21,6 @@ readme = "README.md"
 categories = ["algorithms", "cryptography"]
 keywords = ["checksum", "digest", "hash", "md5"]
 
-[dependencies]
-boringssl = "0.0.5"
+[features]
+default = ["std"]
+std = []

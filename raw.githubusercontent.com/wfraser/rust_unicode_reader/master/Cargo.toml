@@ -1,6 +1,6 @@
 [package]
 name = "unicode_reader"
-version = "0.1.1"
+version = "1.0.0"
 authors = ["William R. Fraser <wfraser@codewise.org>"]
 repository = "https://github.com/wfraser/rust_unicode_reader"
 documentation = "https://docs.rs/unicode_reader/"
@@ -8,7 +8,8 @@ description = "Adaptors which wrap byte-oriented readers and yield the UTF-8 dat
 keywords = ["unicode", "grapheme", "codepoint", "text", "reader"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
+edition = "2018"
 
 [dependencies]
+smallvec = "0.6"
 unicode-segmentation = "1"
-boringssl = "0.0.5"

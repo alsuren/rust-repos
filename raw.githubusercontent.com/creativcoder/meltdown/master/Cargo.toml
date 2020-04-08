@@ -9,7 +9,6 @@ xdg = "^2.0"
 crossbeam = "0.2.5"
 walkdir = "0.1.5"
 rustc-serialize = "*"
-boringssl = "0.0.5"
 
 [dependencies.url]
 git = "https://github.com/servo/rust-url"

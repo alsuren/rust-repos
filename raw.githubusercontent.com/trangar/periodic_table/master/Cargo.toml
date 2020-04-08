@@ -1,12 +1,14 @@
 [package]
 name = "periodic_table"
-version = "0.1.1"
+version = "0.3.1"
 authors = ["Victor Koenders <victor.koenders@gmail.com>"]
 readme = "readme.md"
 description = "Library that provides a list of elements in the periodic table"
 license = "MIT"
 repository = "https://github.com/trangar/periodic_table"
+edition = "2018"
 
-[dependencies]
-csv = "0.15.0"
-boringssl = "0.0.5"
+[build-dependencies]
+askama = "0.8"
+csv = "1.1"
+serde = { version = "1.0", features = ["derive"] }

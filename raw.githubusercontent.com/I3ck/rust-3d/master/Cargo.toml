@@ -1,6 +1,6 @@
 [package]
 name = "rust-3d"
-version = "0.25.2"
+version = "0.33.0"
 authors = ["Martin Buck <buckmartin@buckmartin.de>"]
 description = "2D/3D library written in rust"
 documentation = "https://docs.rs/rust-3d/"
@@ -8,9 +8,19 @@ homepage = "https://github.com/I3ck/rust-3d"
 repository = "https://github.com/I3ck/rust-3d"
 readme = "README.md"
 keywords = ["2d", "3d", "pointcloud", "mesh", "filters"]
-license-file = "LICENSE"
+categories = ["algorithms", "data-structures", "mathematics"]
+license = "MIT"
+edition = "2018"
+
+exclude = [
+    ".gitignore",
+    "BUGS",
+    "TODO",
+    "format-code.sh",
+]
 
 [dependencies]
-num = "0.1.32"
-byteorder = "1.2.3"
-boringssl = "0.0.5"
+num = "0.2.1"
+bitvec = "0.17.3"
+fnv = "1.0.6"
+

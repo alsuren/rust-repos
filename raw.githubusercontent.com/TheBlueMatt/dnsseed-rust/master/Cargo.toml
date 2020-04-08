@@ -5,17 +5,21 @@ authors = ["matt"]
 edition = "2018"
 
 [dependencies]
-bitcoin = { git = "https://github.com/TheBlueMatt/rust-bitcoin", rev = "47fb553e2a551968a0f283bd30a4dc9db576ee40" }
-bitcoin_hashes = "0.3"
+bitcoin = "0.19"
+bitcoin_hashes = "0.7"
+bgp-rs = { git = "https://github.com/TheBlueMatt/bgp-rs", rev = "98f91c4e9e386bfdac0f8e2e9886fb15b15c861f" }
 tokio = "0.1"
 bytes = "0.4"
 futures = "0.1"
 rand = "0.6"
 regex = "1"
 num_cpus = "1"
-boringssl = "0.0.5"
+
+[profile.dev]
+panic = "abort"
 
 [profile.release]
+debug = true
 lto = true
 codegen-units = 1
 panic = "abort"

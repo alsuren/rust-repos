@@ -12,7 +12,6 @@ selectors = { path = "servo/components/selectors" }
 servo_url = { path = "servo/components/url" }
 style = { path = "servo/components/style", features = ["servo"] }
 style_traits = { path = "servo/components/style_traits", features = ["servo"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 html5ever = "0.22"

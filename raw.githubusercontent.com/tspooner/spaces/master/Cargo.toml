@@ -2,7 +2,7 @@
 name = "spaces"
 description = "Set/space primitives for defining machine learning problems."
 
-version = "4.7.1"
+version = "5.0.0"
 authors = ["Tom Spooner <t.spooner@liverpool.ac.uk>"]
 
 license = "MIT"
@@ -17,14 +17,16 @@ documentation = "https://docs.rs/spaces"
 travis-ci = { repository = "tspooner/spaces", branch = "master" }
 coveralls = { repository = "tspooner/spaces", branch = "master", service = "github" }
 
+[features]
+default = []
+
+serialize = ["serde"]
+
 [dependencies]
-ndarray = { version = "0.12", features = ["serde-1"] }
 itertools = "0.8"
 num-traits = "0.2"
 
-serde = "1.0"
-serde_derive = "1.0"
-boringssl = "0.0.5"
+serde = { version = "1.0", optional = true, features = ["derive"] }
 
 [dev-dependencies]
 serde_test = "1.0"

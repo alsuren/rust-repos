@@ -18,14 +18,10 @@ bitflags = "1"
 c-ares-sys = { version = "4.2.0", path = "c-ares-sys" }
 c-types = "2.0.2"
 itertools = "0.8"
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dev-dependencies]
-futures = "0.1"
 mio = "0.6"
-mio-extras = "2"
-nix = "0.13"
-tokio-current-thread = "0.1"
+nix = "0.17"
 
 [target.'cfg(windows)'.dev-dependencies]
 winapi = { version = "0.3", features = ["winsock2"] }

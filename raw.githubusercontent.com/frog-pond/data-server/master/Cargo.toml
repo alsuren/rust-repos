@@ -5,14 +5,12 @@ publish = false
 version = "0.0.0-alpha.0"
 
 [dependencies]
-rocket = "0.4"
-serde = "1.0"
-serde_derive = "1.0"
-serde_json = "1.0"
-boringssl = "0.0.5"
+rocket = "0.4.2"
+serde = { version = "1.0.102", features = ["derive"] }
+serde_json = "1.0.41"
 
 [dev-dependencies]
-mocktopus = "0.7"
+mocktopus = "0.7.3"
 
 [lib]
 path = "src/lib.rs"

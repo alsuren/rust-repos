@@ -11,17 +11,26 @@ exclude = [
     "out/*"
 ]
 
+[features]
+opengl-rendering = ["glium", "toml", "png"]
+vector-rendering = ["svg"]
+
 [dependencies]
-rand = "0.6.5"
-noise = "0.5.1"
-glium = "0.24.0"
-toml = "0.4.10"
-png = "0.14.1"
-rayon = "1.0.3"
-boringssl = "0.0.5"
+rand = "0.7.0"
+noise = {version = "0.6.0", default-features = false}
+glium = {version = "0.25.1", optional = true}
+toml = {version = "0.4.10", optional = true}
+png = {version = "0.14.1", optional = true}
+num_cpus = "1.10.1"
+crossbeam-utils = "0.7"
+svg = {version = "0.7", optional = true}
+bitflags = "1.2"
+lazy_static = "1.4"
 
 [dev-dependencies]
 criterion = "0.2"
+ansi_term = "0.11.0"
+png = "0.14.1"
 
 [[bench]]
 name = "generators"
@@ -37,3 +46,7 @@ harness = false
 
 [profile.release]
 debug = true
+
+[[example]]
+name = "generator"
+required-features = ["opengl-rendering", "vector-rendering"]

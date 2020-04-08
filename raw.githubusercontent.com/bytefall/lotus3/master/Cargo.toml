@@ -5,7 +5,11 @@ authors = ["Oleg Scherbakov <scherbakov.oleg@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+generational-arena = "0.2.4"
+failure = "0.1.5"
+failchain = "0.1015.2"
+log = "0.4.8"
+pretty_env_logger = "0.3.1"
 
 [dependencies.sdl2]
 version = "0.31.0"

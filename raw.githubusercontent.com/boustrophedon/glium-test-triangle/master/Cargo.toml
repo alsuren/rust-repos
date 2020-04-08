@@ -7,7 +7,6 @@ authors = ["Harry Stern <hcs@meow.sh>"]
 glium = "^0.15.0"
 nalgebra = "^0.9.0"
 obj = "^0.5.0"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

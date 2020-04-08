@@ -6,6 +6,3 @@ authors = ["Jamey Sharp <jamey@galois.com>"]
 [lib]
 name = "power_of_ten"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

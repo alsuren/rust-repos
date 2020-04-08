@@ -5,7 +5,6 @@ authors = ["kayryu <lukayryu@gmail.com>"]
 
 [dependencies]
 ctrlc = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -1,11 +1,16 @@
 [package]
 name = "wufei"
-version = "0.1.0"
+version = "0.3.1"
 authors = ["Eric McBride <ericmcbridedeveloper@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-clap = "2.31.2"
 colored = "1.7"
 rand = "0.6.5"
-boringssl = "0.0.5"
+structopt = "0.3"
+futures = "0.3.1"
+tokio = { version = "0.2.6", features = ["full"] }
+kube_async = { package = "kube", version = "0.25.0", features = ["openapi"] }
+k8s-openapi = { version = "0.7.1", default-features = false, features = ["v1_15"] }
+once_cell = "1.3.1"
+serde_json = "1.0"

@@ -1,16 +1,25 @@
 [package]
 name = "home"
-version = "0.3.3"
+version = "0.5.3" # also update `html_root_url` in `src/lib.rs`
 authors = [ "Brian Anderson <andersrb@gmail.com>" ]
-description = "Shared definitions of home directories"
 documentation = "https://docs.rs/home"
+edition = "2018"
+include = [
+    "/src",
+    "/Cargo.toml",
+    "/CHANGELOG",
+    "/LICENSE-*",
+    "/README.md",
+]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
 repository = "https://github.com/brson/home"
-license = "MIT/Apache-2.0"
+description = "Shared definitions of home directories"
 
-[target."cfg(windows)".dependencies]
-scopeguard = "0.3"
-winapi = { version = "0.3", features = ["errhandlingapi", "handleapi", "processthreadsapi", "std", "winerror", "winnt", "userenv"] }
-
-[dependencies]
-boringssl = "0.0.5"
-
+[target."cfg(windows)".dependencies.winapi]
+version = "0.3"
+features = [
+    "shlobj",
+    "std",
+    "winerror",
+]

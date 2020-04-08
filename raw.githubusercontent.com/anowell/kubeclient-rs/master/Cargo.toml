@@ -26,4 +26,3 @@ walkdir = "1.0.7"
 reqwest = "0.9.4"
 headers-ext = "0.0.3"
 k8s-openapi = { git = "https://github.com/Arnavion/k8s-openapi-codegen", branch = "master", features = ["v1_9"] }
-boringssl = "0.0.5"

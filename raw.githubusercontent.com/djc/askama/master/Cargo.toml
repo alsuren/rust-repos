@@ -1,2 +1,21 @@
 [workspace]
-members = ["askama", "askama_derive", "askama_escape", "askama_shared", "testing"]
+members = [
+    "askama",
+    "askama_actix",
+    "askama_gotham",
+    "askama_derive",
+    "askama_escape",
+    "askama_iron",
+    "askama_rocket",
+    "askama_shared",
+    "askama_warp",
+    "testing",
+]
+
+default-members = [
+    "askama",
+    "askama_derive",
+    "askama_escape",
+    "askama_shared",
+    "testing",
+]

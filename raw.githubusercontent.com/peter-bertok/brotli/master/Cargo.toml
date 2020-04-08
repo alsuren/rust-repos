@@ -13,6 +13,3 @@ default = ["decoder"]
 encoder = []
 
 decoder = []
-
-[dependencies]
-boringssl = "0.0.5"

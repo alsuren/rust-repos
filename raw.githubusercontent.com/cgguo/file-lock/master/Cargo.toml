@@ -22,7 +22,6 @@ name = "file_lock"
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "*"

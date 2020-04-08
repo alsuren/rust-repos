@@ -9,7 +9,8 @@ license = "MIT/Apache-2.0"
 name = "stackvector"
 readme = "README.md"
 repository = "https://github.com/Alexhuszagh/rust-stackvector"
-version = "1.0.2"
+version = "1.0.8"
+build = "build.rs"
 
 [badges]
 travis-ci = { repository = "Alexhuszagh/rust-stackvector" }
@@ -21,4 +22,6 @@ std = []
 
 [dependencies]
 unreachable = "1.0.0"
-boringssl = "0.0.5"
+
+[build-dependencies]
+rustc_version = "0.2"

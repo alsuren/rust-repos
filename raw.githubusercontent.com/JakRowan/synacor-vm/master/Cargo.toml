@@ -1,5 +1,5 @@
 [package]
-name = "synacor"
+name = "synacor-vm"
 description = "Virtual Machine Implementation for the Synacor Challenge"
 version = "0.2.0"
 authors = ["Jak Rowan <jak@rowan.li>"]
@@ -8,4 +8,6 @@ readme = "README.md"
 publish = false
 
 [dependencies]
-boringssl = "0.0.5"
+serde = { version = "1", features = ["derive"] }
+serde-big-array = "0.1"
+ron = "0.5"

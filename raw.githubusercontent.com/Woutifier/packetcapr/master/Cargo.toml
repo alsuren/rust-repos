@@ -10,7 +10,6 @@ log = "0.3.6"
 rustc-serialize = "0.3"
 argparse = "*"
 libc = "0.2.30"
-boringssl = "0.0.5"
 
 [profile.dev]
 debug = true

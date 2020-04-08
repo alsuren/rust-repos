@@ -10,6 +10,3 @@ repository = "https://github.com/KokaKiwi/concat_bytes"
 [lib]
 name = "concat_bytes"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

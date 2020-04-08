@@ -1,6 +1,6 @@
 [package]
 name = "moltenvk_deps"
-version = "0.1.6"
+version = "0.1.8"
 authors = ["Tom Gowan <tomrgowan@gmail.com>"]
 edition = "2018"
 description = "Downloads and installs MoltenVK / VulkanSDK for macOS"
@@ -17,4 +17,3 @@ curl = "0.4"
 tempdir = "0.3"
 lazy_static = "1.2"
 pbr = "1.0"
-boringssl = "0.0.5"

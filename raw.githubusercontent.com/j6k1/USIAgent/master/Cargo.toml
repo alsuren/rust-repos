@@ -1,11 +1,11 @@
 [package]
 name = "usiagent"
-version = "0.1.0"
+version = "0.5.1"
 authors = ["jinpu"]
 
 [dependencies]
 chrono = "0.4"
 rand = "0.4"
-boringssl = "0.0.5"
+crossbeam-channel = "0.3.9"
 [dependencies.queuingtask]
 git = "https://github.com/j6k1/queuingtask.git"

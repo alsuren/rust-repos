@@ -1,13 +1,25 @@
 [package]
 name = "todr"
 version = "0.1.0"
+description = "Todoist Commandline Client"
+keywords = ["todo", "list", "todoist", "cli"]
+categories = ["command-line-utilities"]
 authors = ["Brian Gianforcaro <b.gianfo@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/bgianfo/todr"
+license = "MIT"
+
+[badges]
+maintenance = { status = "experimental" }
+travis-ci = { repository = "bgianfo/todr", branch = "master" }
 
 [dependencies]
-serde = "0.9"
-serde_derive = "0.9"
-serde_json = "0.9"
-ease = "*"
-rustyline = "1.0.0"
-term = "*"
-boringssl = "0.0.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+term = "0.6"
+dirs = "2"
+rustyline = "6"
+
+[dependencies.reqwest]
+version = "0.10"
+features = ["default", "blocking", "json"]

@@ -16,4 +16,3 @@ shlex = "*"
 slog = {version = "*", features = ["max_level_trace", "release_max_level_debug"] }
 slog-async = "*"
 slog-term = "*"
-boringssl = "0.0.5"

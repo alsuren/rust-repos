@@ -1,17 +1,41 @@
 [package]
 name = "gst-log-parser"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["Guillaume Desmottes <guillaume@desmottes.be>"]
 edition = "2018"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/gdesmott/gst-log-parser/"
+keywords = ["gstreamer", "multimedia"]
+description = "Crate providing a convenient API to parse GStreamer logs"
 
 [dependencies]
-itertools = "0.7"
-gstreamer = "0.12"
-regex = "1.0"
-lazy_static = "1.0"
+itertools = "0.8"
+gstreamer = "0.13"
+regex = "1.1"
+lazy_static = "1.3"
+failure = "0.1.5"
+
+[[example]]
+name = "dump"
+
+[[example]]
+name = "flow"
+
+[[example]]
+name = "latency"
+
+[[example]]
+name = "omx-perf"
+
+[[example]]
+name = "track-frames-omx"
+
+[[example]]
+name = "ts-diff"
+
+[dev-dependencies]
 structopt = "0.2"
 structopt-derive = "0.2"
-colored = "1.6"
-failure = "0.1.5"
-gnuplot = "0.0.30"
-boringssl = "0.0.5"
+colored = "1.8"
+gnuplot = "0.0.31"

@@ -5,8 +5,15 @@ authors = ["Christoph Bonitz <christoph.bonitz@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-nalgebra = "0.16.13"
-image = "0.21.0"
-rand = "0.6.4"
-rayon = "1.0"
-boringssl = "0.0.5"
+nalgebra = "0.18.0"
+image = "0.21.2"
+rayon = "1.1.0"
+
+[lib]
+name="tracelib"
+path="src/lib.rs"
+test = true
+
+[[bin]]
+name="tracer"
+path="src/main.rs"

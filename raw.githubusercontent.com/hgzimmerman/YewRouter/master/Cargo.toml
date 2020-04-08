@@ -1,21 +1,91 @@
 [package]
-name = "yew_router"
-version = "0.1.0"
-authors = ["Henry Zimmerman <zimhen7@gmail.com>"]
+name = "yew-router"
+version = "0.11.0"
+authors = ["Henry Zimmerman <zimhen7@gmail.com>", "Sascha Grunert <mail@saschagrunert.de>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["web", "yew", "router"]
+categories = ["gui", "web-programming"]
+description = "A router implementation for the Yew framework"
+repository = "https://github.com/yewstack/yew_router"
 
-[dependencies]
-log = "0.4"
-web_logger = "0.1"
-serde = "1.0"
-serde_derive = "1.0"
-yew = { git = "https://github.com/DenisKolodin/yew", rev = "49319b8c02a8eeb15ed4c8a8761f83adcee856b0" }
-yew_patterns = {git = "https://github.com/hgzimmerman/yew_patterns", rev ="0aac82bb387070a4c40b20e84b33111c704b7e1c"}
-stdweb = "0.4"
-boringssl = "0.0.5"
 
 [features]
-default = ["yew_router", "components"]
+default = ["core", "unit_alias"]
 
-yew_router = ["router_agent"]
-router_agent = []
-components = ["router_agent"]
+core = ["router", "components"] # Most everything
+
+# TODO remove this
+unit_alias = []
+
+router = ["agent"] # The Router component
+components = ["agent" ] # The button and anchor
+agent = ["service"] # The RouteAgent
+service = ["yew"] # The RouteService
+
+std_web = [
+    "yew/std_web",
+    "stdweb"
+]
+web_sys = [
+    "yew/web_sys",
+    "gloo",
+    "js-sys",
+    "web-sys",
+    "wasm-bindgen"
+]
+
+
+[dependencies]
+log = "0.4.8"
+serde = { version = "1.0.104", features = ["derive"] }
+yew = { version = "0.14.0", features = ["services", "agent"], optional = true }
+#yew = {git = "https://github.com/yewstack/yew", branch = "web-sys", optional = true, features = ["services", "agent"]}
+yew-router-route-parser = {path = "crates/yew_router_route_parser", version = "0.11.0"}
+yew-router-macro = {path = "crates/yew_router_macro", version = "0.11.0"}
+nom = "5.1.1"
+serde_json = "1.0.48"
+cfg-if = "0.1.10"
+cfg-match = "0.2.1"
+
+stdweb = { version = "0.4.20", optional = true }
+
+gloo = { version = "0.2.0", optional = true }
+js-sys = { version = "0.3.35", optional = true }
+wasm-bindgen = { version = "0.2.58", optional = true }
+
+[dependencies.web-sys]
+version = "0.3"
+optional = true
+features = [
+    'History',
+    'Location',
+    'Window',
+    'PopStateEvent',
+    'MouseEvent',
+    'HtmlLinkElement'
+]
+
+# Compat with building yew with wasm-pack support.
+[target.'cfg(all(target_arch = "wasm32", not(target_os="wasi"), not(cargo_web)))'.dependencies]
+wasm-bindgen = "0.2.58"
+
+[dev-dependencies]
+uuid = "0.8.1"
+
+[package.metadata.docs.rs]
+features = ["web_sys", "core", "unit_alias"]
+
+[workspace]
+members = [
+    "crates/yew_router_route_parser",
+    "crates/yew_router_macro",
+    "examples/router_component",
+    "examples/guide",
+    "examples/switch",
+    "examples/minimal",
+    "examples/servers/warp",
+    "examples/servers/actix",
+    "tests/macro_test"
+]

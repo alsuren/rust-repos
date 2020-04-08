@@ -5,18 +5,17 @@ authors = ["Ruslan Prokopchuk <fer.obbee@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-clap = "2"
-itertools = "0"
-serde = { version = "1", features = ["derive"] }
-slog = { version = "2", features = ["release_max_level_debug"] }
-slog-scope = "4"
-sloggers = "0"
-toml = "0"
-tree-sitter = "0"
-boringssl = "0.0.5"
+clap = "2.33.0"
+itertools = "0.8.2"
+serde = { version = "1.0.104", features = ["derive"] }
+slog = { version = "2.5.2", features = ["release_max_level_debug"] }
+slog-scope = "4.3.0"
+sloggers = "0.3.5"
+toml = "0.5.6"
+tree-sitter = "0.6.0"
 
 [build-dependencies]
-cc = { version = "1", features = ["parallel"] }
+cc = { version = "1.0.50", features = ["parallel"] }
 
 # [profile.release]
 # lto = true
@@ -29,6 +28,7 @@ all = [
     "c",
     "cpp",
     "css",
+    "elm",
     "go",
     "haskell",
     "html",
@@ -49,6 +49,7 @@ c_sharp = []
 c = []
 cpp = []
 css = []
+elm = []
 go = []
 haskell = []
 html = []

@@ -1,6 +1,6 @@
 [package]
 name = "av1parser"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["yoh <kawasaki.liamg@gmail.com>"]
 description = "AV1 Bitstream Parser"
 
@@ -8,4 +8,3 @@ description = "AV1 Bitstream Parser"
 byteorder = "1.2"
 clap = "2.32"
 hex = "0.3"
-boringssl = "0.0.5"

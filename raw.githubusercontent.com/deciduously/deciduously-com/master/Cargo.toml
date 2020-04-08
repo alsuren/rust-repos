@@ -1,19 +1,39 @@
 [package]
-authors = ["deciduously <github@deciduously.com>"]
+authors = ["Ben Lovy <ben@deciduously.com>"]
+edition = "2018"
 name = "deciduously-com"
-version = "0.3.3"
+version = "1.0.0"
+description = "Webserver and static site generator for a personal homepage"
+homepage = "deciduously.com"
+repository = "https://github.com/deciduously/deciduously-com"
+readme = "readme.md"
+keywords = ["static", "hyper", "askama", "website"]
+license = "BSD-3-Clause"
 
 [dependencies]
-actix = "0.7"
-actix-web = "0.7"
-error-chain = "0.12"
-futures = "0.1"
-lazy_static = "1.2"
+anyhow = "1.0"
+askama = "0.9"
+flate2 = "1.0"
+hyper = "0.13"
+lazy_static = "1.4"
 log = "0.4"
-pretty_env_logger = "0.2"
-pulldown-cmark = "0.2"
-serde = "1"
-serde_derive = "1"
-serde_json = "1"
-tera = "0.11"
-boringssl = "0.0.5"
+pretty_env_logger = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+structopt = "0.3"
+toml = "0.5"
+
+[dependencies.tokio]
+features = ["full"]
+version = "0.2"
+
+[build-dependencies]
+pest = "2.1"
+pest_derive = "2.1"
+
+[build-dependencies.pulldown-cmark]
+default-features = false
+version = "0.7"
+
+[dev-dependencies]
+pretty_assertions = "0.6"

@@ -9,4 +9,3 @@ crate-type = ["dylib"]
 
 [dependencies]
 fsa = { version = "*", path = "../RustLex/fsa"}
-boringssl = "0.0.5"

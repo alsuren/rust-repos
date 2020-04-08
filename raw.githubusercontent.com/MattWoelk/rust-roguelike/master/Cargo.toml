@@ -5,6 +5,9 @@ authors = ["MattWoelk <matt.woelk@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-tcod = "0.13.0"
 specs = "0.14.3"
-boringssl = "0.0.5"
+specs-derive = "0.4.0"
+vulkano = "0.12.0"
+vulkano-win = "0.12.0"
+winit = "0.19.1"
+vulkano-shaders = "0.12.0"

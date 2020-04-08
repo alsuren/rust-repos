@@ -7,6 +7,3 @@ license = "MIT"
 documentation = "https://docs.rs/uhttp_chunked_bytes"
 repository = "https://github.com/kchmck/uhttp_chunked_bytes.rs"
 keywords = ["http", "chunked", "body", "bytes"]
-
-[dependencies]
-boringssl = "0.0.5"

@@ -1,9 +1,0 @@
-[package]
-name = "chimera"
-version = "0.1.0"
-authors = ["Robert Simmons <robert.simmons@victiv.com>"]
-
-[dependencies]
-crossbeam-channel = "0.2.1"
-rand = "0.5.2"
-boringssl = "0.0.5"

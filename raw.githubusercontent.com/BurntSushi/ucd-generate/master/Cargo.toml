@@ -1,6 +1,6 @@
 [package]
 name = "ucd-generate"
-version = "0.2.1"  #:version
+version = "0.2.8"  #:version
 authors = ["Andrew Gallant <jamslam@gmail.com>"]
 description = """
 A program for generating packed representations of the Unicode character
@@ -13,21 +13,26 @@ readme = "README.md"
 keywords = ["unicode", "generate", "character", "table", "fst"]
 license = "MIT/Apache-2.0"
 categories = ["text-processing", "internationalization"]
+edition = "2018"
 
 [workspace]
 members = ["ucd-parse", "ucd-trie", "ucd-util"]
 
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "ucd-generate"
+
 [dependencies]
 byteorder = "1"
-fst = { version = "0.3", default-features = false }
-regex-automata = "0.1.3"
-ucd-parse = { version = "0.1.1", path = "ucd-parse" }
-ucd-trie = { version = "0.1.1", path = "ucd-trie" }
-ucd-util = { version = "0.1.2", path = "ucd-util"  }
-boringssl = "0.0.5"
+fst = "0.4.0"
+regex-automata = "0.1.9"
+ucd-parse = { version = "0.1.8", path = "ucd-parse" }
+ucd-trie = { version = "0.1.3", path = "ucd-trie" }
+ucd-util = { version = "0.1.8", path = "ucd-util"  }
 
 [dependencies.clap]
-version = "2"
+version = "2.33.0"
 default-features = false
 features = ["suggestions", "color"]
 

@@ -15,7 +15,6 @@ categories = ["data-structures", "science", "concurrency"]
 [dependencies]
 rayon = { version = "0.7.0" }
 ndarray = { git = "https://github.com/Libbum/rust-ndarray", branch = "serde-1.0" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 num_cpus = "1.2"

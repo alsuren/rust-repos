@@ -4,20 +4,25 @@ version = "0.1.0"
 authors = ["Quentin Boyer <qbsecond@gmail.com>"]
 edition = "2018"
 
+description = "gRPC CLI for ensicoin nodes"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/EnsicoinDevs/arc-cli"
+
 [dependencies]
-clap = "2.33.0"
-futures = "0.1"
-bytes = "0.4"
-http = "0.1"
-prost = "0.5"
-tokio = "0.1"
-tower-request-modifier = { git = "https://github.com/tower-rs/tower-http" }
-tower-hyper = { git = "https://github.com/tower-rs/tower-hyper" }
-hyper = "0.12"
-tower-grpc = { git = "https://github.com/tower-rs/tower-grpc", features= ["tower-hyper"] }
-tower-service = "0.2"
-tower-util = "0.1"
-boringssl = "0.0.5"
+futures = "0.1.28"
+bytes = "0.4.12"
+http = "0.1.18"
+prost = "0.5.0"
+tokio = "0.1.22"
+tower-request-modifier = "0.1.0"
+tower-hyper = "0.1.1"
+hyper = "0.12.33"
+tower-grpc = { version = "0.1.0", features = ["tower-hyper"] }
+tower-service = "0.2.0"
+tower-util = "0.1.0"
+
+structopt = "0.3.0"
+yansi = "0.5.0"
 
 [build-dependencies]
-tower-grpc-build = { git = "https://github.com/tower-rs/tower-grpc", features = ["tower-hyper"] }
+tower-grpc-build = { version = "0.1.0", features = ["tower-hyper"] }

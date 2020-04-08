@@ -1,17 +1,8 @@
 [workspace]
 members = [
-    "ed25519-bip32",
-    "imhamt",
     "chain-core",
-    "chain-addr",
-    "chain-time",
-    "chain-crypto",
-    "chain-storage",
-    "chain-storage-sqlite",
-    "chain-impl-mockchain",
     "cardano",
     "network-core",
-    "network-grpc",
     "network-ntt",
     "protocol",
     "protocol-tokio",

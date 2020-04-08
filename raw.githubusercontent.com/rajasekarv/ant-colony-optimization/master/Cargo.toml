@@ -14,7 +14,6 @@ rustbreak = "1.4.0"
 rand = "*"
 rayon = "*"
 permutation = "0.2.5"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

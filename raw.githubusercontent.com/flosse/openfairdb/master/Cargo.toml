@@ -1,34 +1,45 @@
 [package]
 name = "openfairdb"
-version = "0.5.4"
+version = "0.8.18"
 authors = ["Markus Kohlhase <mail@markus-kohlhase.de>", "slowtec GmbH <post@slowtec.de>"]
 keywords = ["geo", "fair", "sustainability"]
-homepage = "https://github.com/slowtec/openfairdb"
-repository = "https://github.com/slowtec/openfairdb"
+homepage = "https://github.com/kartevonmorgen/openfairdb"
+repository = "https://github.com/kartevonmorgen/openfairdb"
 license = "AGPL-3.0-or-later"
 edition = "2018"
 
 [patch.crates-io]
-geocoding = { git = "https://github.com/georust/geocoding" }
+ofdb-boundary = { path = "ofdb-boundary" }
+ofdb-entities = { path = "ofdb-entities" }
+
+[workspace]
+members = [
+  ".",
+  "ofdb-boundary",
+  "ofdb-entities",
+]
 
 [dependencies]
+anyhow = "*"
 chrono = "*"
 # clap 3 is supposed to introduce breaking changes
 clap = "2"
 csv = "*"
 diesel = { version = "*", features = ["sqlite", "r2d2"] }
-diesel_migrations = { version = "*", features = ["sqlite"]  }
+diesel_migrations = { version = "*", features = ["sqlite"] }
 dotenv = "*"
 env_logger = "*"
+# failure is only required for TantivyError
 failure = "*"
 fast_chemail = "*"
 geocoding = "*"
 itertools = "*"
 lazy_static = "*"
 log = "*"
-num-derive = "*"
 num-traits = "*"
 maud = { version = "*", optional = true, features = ["rocket"] }
+ofdb-boundary = "*"
+ofdb-entities = "*"
 openssl = { version = "*", features = ["vendored"] }
 owning_ref = "*"
 passwords = "*"
@@ -40,17 +51,20 @@ rocket = "*"
 rocket_contrib = "*"
 serde = { version = "*", features = ["derive"] }
 serde_json = "*"
-slug = "*"
-tantivy = "0.9"
-toml = "*"
-url = "*"
+strum = "*"
+tantivy = "*"
+url = { version = "*", features = ["serde"] }
 uuid = { version = "*", features = ["v4"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "*"
+ofdb-boundary = { version = "*", features = ["extra-derive"] }
 
 [features]
 default = ["email","frontend"]
 email = ["quoted_printable"]
 frontend = ["maud"]
+
+[profile.release]
+lto = true
+codegen-units = 1

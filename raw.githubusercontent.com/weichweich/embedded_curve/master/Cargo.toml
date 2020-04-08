@@ -13,7 +13,6 @@ libm = "0.1.2"
 bresenham = "*"
 embedded-graphics = "0.4.7"
 nalgebra = { version = "0.18", default-features = false }
-boringssl = "0.0.5"
 
 [patch.crates-io.cortex-m-rt]
 git = "https://github.com/rust-embedded/cortex-m-rt.git"

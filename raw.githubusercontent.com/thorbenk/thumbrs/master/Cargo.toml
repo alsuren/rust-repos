@@ -25,7 +25,6 @@ serde_json = "^0.8"
 serde_macros = { version = "^0.8", optional = true }
 sha1 = "^0.2.0"
 walkdir = "^0.1.5"
-boringssl = "0.0.5"
 
 # Note:
 # Compiles mozjpeg, need to do at least

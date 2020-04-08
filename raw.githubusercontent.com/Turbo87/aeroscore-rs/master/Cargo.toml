@@ -1,4 +1,5 @@
 [package]
+edition = "2018"
 name = "aeroscore"
 version = "0.0.0"
 authors = ["Tobias Bieniek <tobias.bieniek@gmail.com>"]
@@ -18,17 +19,22 @@ default = ["rayon"]
 [dependencies]
 cfg-if = "0.1"
 failure = "^0.1.1"
-flat_projection = "^0.2.0"
+flat_projection = "0.3.0"
+log = "0.4.8"
 ord_subset = "^3.1.0"
 rayon = { version = "^1.0", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_approx_eq = "^1.0.0"
-criterion = "^0.2.0"
-igc = { git = "https://github.com/Joey9801/igc-rs" }
+criterion = "^0.3.0"
+igc = "0.2.2"
+env_logger = "0.7.1"
 serde_json = "^1.0.0"
 
 [[bench]]
 name = "olc_classic"
+harness = false
+
+[[bench]]
+name = "haversine"
 harness = false

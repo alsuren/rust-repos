@@ -6,7 +6,6 @@ authors = ["local@localhost <local@localhost>"]
 [dependencies]
 rand = "0.3"
 polygon = { git = "https://github.com/moritzbeck/polygon.git" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quick-xml = "0.9.*"

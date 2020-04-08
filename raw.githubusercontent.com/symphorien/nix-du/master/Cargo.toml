@@ -1,8 +1,9 @@
 [package]
 name = "nix-du"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Symphorien Gibol <symphorien+git@xlumurb.eu>"]
 license = "LGPL-3.0"
+edition = "2018"
 
 # otherwise we get an unhelpful panic unwind when a c++ execption is raised.
 [profile.dev]
@@ -23,14 +24,13 @@ humansize = "1"
 human-size = "0.4"
 palette = "0.4"
 walkdir = "2"
-enum-map = "0.4"
-boringssl = "0.0.5"
+enum-map = "0.6"
 
 [dependencies.clap]
 version = "2"
 features = ["suggestions", "color", "wrap_help"]
 
 [dev-dependencies]
-rand = "0.5"
+rand = "0.7"
 cli_test_dir = "0.1"
 regex = "1"

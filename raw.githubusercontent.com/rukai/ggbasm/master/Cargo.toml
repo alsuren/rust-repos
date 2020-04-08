@@ -1,6 +1,6 @@
 [package]
 name = "ggbasm"
-version = "0.2.4"
+version = "0.2.5"
 authors = ["Rukai <rubickent@gmail.com>"]
 edition = "2018"
 license = "MIT"
@@ -10,9 +10,8 @@ keywords = ["gameboy", "assembly", "assembler", "asm", "gb"]
 categories = ["game-engines"]
 
 [dependencies]
-nom = "4"
+nom = "5"
 failure = "0.1"
 failure_derive = "0.1"
 byteorder = "1"
-image = "0.21"
-boringssl = "0.0.5"
+image = "0.22"

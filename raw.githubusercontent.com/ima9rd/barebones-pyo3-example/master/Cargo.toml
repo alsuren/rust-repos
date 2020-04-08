@@ -9,4 +9,3 @@ crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { path="./pyo3", version = "*", features = ["extension-module"] }
-boringssl = "0.0.5"

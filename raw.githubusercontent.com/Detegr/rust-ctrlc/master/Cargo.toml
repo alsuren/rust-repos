@@ -1,23 +1,25 @@
 [package]
 name = "ctrlc"
-version = "3.1.2"
+version = "3.1.4"
 authors = ["Antti Keränen <detegr@gmail.com>"]
 description = "Easy Ctrl-C handler for Rust projects"
 documentation = "http://detegr.github.io/doc/ctrlc"
 homepage = "https://github.com/Detegr/rust-ctrlc"
 keywords = ["ctrlc", "signal", "SIGINT"]
+categories = ["os"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/Detegr/rust-ctrlc.git"
+exclude = ["/.travis.yml", "/appveyor.yml"]
 
 [target.'cfg(unix)'.dependencies]
-nix = "0.13"
+nix = "0.17"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3", features = ["consoleapi", "handleapi", "synchapi", "winbase"] }
 
 [target.'cfg(windows)'.dev-dependencies]
 winapi = { version = "0.3", features = ["fileapi", "processenv", "winnt"] }
- 
+
 [features]
 termination = []
 
@@ -25,6 +27,3 @@ termination = []
 harness = false
 name = "tests"
 path = "src/tests.rs"
-
-[dependencies]
-boringssl = "0.0.5"

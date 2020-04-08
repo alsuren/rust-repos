@@ -1,18 +1,17 @@
 [package]
 name = "statx-sys"
-version = "0.2.0"
-authors = ["uHOOCCOOHu <hooccooh1896@gmail.com>"]
+version = "0.4.0"
+authors = ["oxalica <oxalicc@pm.me>"]
 edition = "2018"
 license = "MIT"
 categories = ["os::unix-apis", "external-ffi-bindings"]
 keywords = ["statx", "linux", "ffi", "system"]
-repository = "https://github.com/uHOOCCOOHu/statx-sys"
-description = "Bindings to `statx` syscall."
+repository = "https://github.com/oxalica/statx-sys"
+description = "Bindings to `statx` syscall implemented by `syscall`"
 readme = "README.md"
 
 [dependencies]
-libc = "^0.2.51"
-boringssl = "0.0.5"
+libc = { version = "0.2.3", default-features = false }
 
 [dev-dependencies]
-memoffset = "^0.3.0"
+memoffset = "0.5.1"

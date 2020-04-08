@@ -3,6 +3,7 @@ name = "rgbemu"
 version = "0.1.0"
 authors = ["Paavo Huhtala <paavo.huhtala@gmail.com>"]
 build = "build.rs"
+edition = '2018'
 
 [lib]
 name = "rgbemu"
@@ -16,14 +17,13 @@ path = "src/main.rs"
 bitflags = "*"
 time = "*"
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [dependencies.bitfield]
 git = "https://github.com/dzamlo/rust-bitfield"
 
 [dependencies.sdl2]
-version = "0.30"
-features = ["image"]
+version = "0.32.2"
+features = ["image", "unsafe_textures"]
 
 [features]
 default = []

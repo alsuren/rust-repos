@@ -1,7 +1,8 @@
 [package]
 name = "text_io"
-version = "0.1.7"
+version = "0.1.8"
 authors = ["Oliver Schneider <rust-si1949781094849131978611@oli-obk.de>"]
+edition = "2018"
 description = "really simple to use panicking input functions"
 homepage = "https://github.com/oli-obk/rust-si"
 repository = "https://github.com/oli-obk/rust-si"
@@ -11,6 +12,3 @@ license-file = "LICENSE"
 
 [lib]
 name = "text_io"
-
-[dependencies]
-boringssl = "0.0.5"

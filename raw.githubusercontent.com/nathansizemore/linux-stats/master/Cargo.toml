@@ -1,6 +1,6 @@
 [package]
 name = "linux-stats"
-version = "0.2.0"
+version = "0.3.1"
 authors = ["Nathan Sizemore <nathanrsizemore@gmail.com>"]
 description = "typesafe procfs info"
 keywords = ["linux", "stat", "meminfo", "cpus"]
@@ -12,4 +12,3 @@ repository = "https://github.com/nathansizemore/linux-stats"
 rustc-serialize = "^0.3"
 enum_primitive = "0.1.1"
 num = "0.1.36"
-boringssl = "0.0.5"

@@ -24,7 +24,6 @@ regex = "~0.2.5"
 mktemp = { version = "~0.3.1", optional = true }
 structopt = { version = "~0.1.6", optional = true }
 structopt-derive = { version = "~0.1.6", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 pretty_assertions = "~0.4.1"

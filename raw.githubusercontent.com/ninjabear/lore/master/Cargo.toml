@@ -4,9 +4,6 @@ name = "lore"
 version = "0.0.1"
 authors = ["ninjabear"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.nickel]
 
 git = "https://github.com/nickel-org/nickel.rs.git"

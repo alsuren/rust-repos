@@ -1,24 +1,32 @@
 [package]
 name = "scryer-prolog"
-version = "0.8.85"
+version = "0.8.118"
 authors = ["Mark Thom <markjordanthom@gmail.com>"]
+build = "build.rs"
 repository = "https://github.com/mthom/scryer-prolog"
 description = "A modern Prolog implementation written mostly in Rust."
 license = "BSD-3-Clause"
+edition = "2018"
+
+[build-dependencies]
+indexmap = "1.0.2"
 
 [features]
-default = ["readline_rs_compat"]
+default = ["rug", "prolog_parser/rug"]
+num = ["num-rug-adapter", "prolog_parser/num"]
 
 [dependencies]
-cfg-if = "0.1.7"
+crossterm = "0.16.0"
+dirs = "2.0.2"
 downcast = "0.10.0"
+git-version = "0.3.4"
 indexmap = "1.0.2"
+lazy_static = "1.4.0"
+libc = "0.2.62"
+nix = "0.15.0"
+num-rug-adapter = { optional = true, version = "0.1.1" }
 ordered-float = "0.5.0"
-prolog_parser = "0.8.27"
-readline_rs_compat = { version = "0.1.9", optional = true }
+prolog_parser = { version = "0.8.49", default-features = false }
 ref_thread_local = "0.0.0"
-rug = "1.4.0"
-boringssl = "0.0.5"
-
-[dependencies.termion]
-version = "1.4.0"
+rug = { version = "1.4.0", optional = true }
+rustyline = "6.0.0"

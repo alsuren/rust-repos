@@ -1,29 +1,27 @@
 [package]
 name = "const_fn"
-# NB: When modifying, also modify html_root_url in lib.rs
-version = "0.1.7"
+version = "0.3.1"
 authors = ["Taiki Endo <te316e89@gmail.com>"]
-license = "Apache-2.0/MIT"
-description = "An attribute for easy generation of a const function with conditional compilations."
+edition = "2018"
+license = "Apache-2.0 OR MIT"
 repository = "https://github.com/taiki-e/const_fn"
-documentation = "https://docs.rs/const_fn/"
-readme = "README.md"
+homepage = "https://github.com/taiki-e/const_fn"
+documentation = "https://docs.rs/const_fn"
 keywords = ["macros", "attribute", "const", "static"]
 categories = ["rust-patterns"]
-exclude = ["/.travis.yml"]
+readme = "README.md"
+description = """
+An attribute for easy generation of a const function with conditional compilations.
+"""
 
 [workspace]
 members = ["test_suite"]
-
-[badges]
-travis-ci = { repository = "taiki-e/const_fn" }
 
 [lib]
 proc-macro = true
 
 [dependencies]
-proc-macro2 = "^0.4.19"
-quote = "^0.6.8"
-syn = "^0.15.22"
-syn-mid = { version = "^0.3.0", features = ["clone-impls"] }
-boringssl = "0.0.5"
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = "1.0"
+syn-mid = "0.5"

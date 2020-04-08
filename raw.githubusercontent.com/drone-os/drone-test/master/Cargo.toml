@@ -9,7 +9,6 @@ repository = "https://github.com/drone-os/drone-test"
 
 [dependencies]
 sc = "0.2"
-boringssl = "0.0.5"
 
 [features]
 panic_item = []

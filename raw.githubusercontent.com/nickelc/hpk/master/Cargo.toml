@@ -1,6 +1,6 @@
 [package]
 name = "hpk"
-version = "0.3.4"
+version = "0.3.6"
 description = "HPK archiver for Haemimont Engine game files (Tropico 3-5, Omerta, Victor Vran, Surviving Mars etc.)"
 readme = "README.md"
 repository = "https://github.com/nickelc/hpk"
@@ -25,13 +25,12 @@ path = "src/main.rs"
 byteorder = "1"
 filetime = "0.2"
 flate2 = "1"
-glob="0.2"
+glob="0.3"
 lz4-compress="0.1"
-nom="4"
+nom="5"
 walkdir="2"
 tempfile="3"
-zstd = "0.4.22"
-boringssl = "0.0.5"
+zstd = "0.5"
 
 [dependencies.clap]
 default-features = false

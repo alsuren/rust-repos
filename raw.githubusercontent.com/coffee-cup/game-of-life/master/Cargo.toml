@@ -9,7 +9,6 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = "0.2.7"
-boringssl = "0.0.5"
 
 [profile.release]
 # Include function names in the `.wasm` for better debugging and

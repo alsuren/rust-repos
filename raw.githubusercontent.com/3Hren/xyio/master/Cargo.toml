@@ -19,7 +19,6 @@ time = "*"
 
 httparse = "*"
 http-muncher = {git = "https://github.com/3Hren/rust-streaming-http-parser"}
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

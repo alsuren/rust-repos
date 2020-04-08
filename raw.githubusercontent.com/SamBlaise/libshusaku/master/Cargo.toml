@@ -1,19 +1,18 @@
 [package]
-name = "libshusaku"
-version = "0.3.4"
+name = "goban"
+version = "0.7.1"
 authors = ["Samuel Batissou <samuelbatissou@gmail.com>"]
 edition = "2018"
 
 [lib]
-name = "libshusaku"
+name = "libgoban"
 crate_type = ["cdylib"]
 
 [dependencies]
 goban = {git = "https://gitlab.com/Sabati/goban.git", branch = "dev"}
-boringssl = "0.0.5"
 
 [dependencies.pyo3]
-version = "0.6.0"
+version = "0.9.0-alpha.1"
 features = ["extension-module"]
 
 [target.x86_64-apple-darwin]

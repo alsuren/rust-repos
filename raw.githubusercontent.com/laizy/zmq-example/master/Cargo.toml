@@ -29,7 +29,6 @@ path = "./src/04pullpush/pullpush.rs"
 
 [dependencies]
 rand = "*"
-boringssl = "0.0.5"
 
 [dependencies.zmq]
 version = "0.8"

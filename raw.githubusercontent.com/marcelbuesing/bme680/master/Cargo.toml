@@ -1,22 +1,27 @@
 [package]
-name = "bme680"
-version = "0.4.3"
 authors = ["marcelbuesing <buesing.marcel@googlemail.com>"]
 description = "A pure Rust implementation for the BME680 environmental sensor."
-repository = "https://github.com/marcelbuesing/bme680-hal"
 documentation = "https://docs.rs/bme680"
 license = "MIT"
+name = "bme680"
+repository = "https://github.com/marcelbuesing/bme680-hal"
+version = "0.5.1"
+edition = "2018"
+
+[badges]
+travis-ci = { repository = "https://github.com/marcelbuesing/bme680-hal", branch = "master" }
+maintenance = { status = "passively-maintained" }
 
 [dependencies]
-bitflags = "1.0"
+bitflags = "1.2"
 embedded-hal = "0.2"
 log = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-env_logger = "0.6"
-futures = "0.1"
+env_logger = "0.7"
+futures = { version = "0.3", features = ["compat"] }
+futures-timer = "3.0"
 i2cdev = "0.4"
 influent = "0.5"
-linux-embedded-hal = "0.2"
-tokio = "0.1"
+linux-embedded-hal = "0.3"
+tokio = {version = "0.2", features = ["full"] }

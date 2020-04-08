@@ -2,9 +2,11 @@
 name = "rust-grep"
 version = "0.1.0"
 authors = ["Reinier Maas <ReinierMaas@hotmail.com>"]
+edition = "2018"
 
 [dependencies]
-structopt = "0.2.*"
-regex = "1.*"
-termion = "1.*"
-boringssl = "0.0.5"
+structopt = "0.2"
+regex = "1"
+colored = "1"
+walkdir = "2"
+rayon = "1"

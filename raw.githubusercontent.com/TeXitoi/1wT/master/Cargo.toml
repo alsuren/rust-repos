@@ -4,9 +4,6 @@ name = "1wT"
 version = "0.0.1"
 authors = ["Guillaume Pinot <texitoi@texitoi.eu>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.mdo]
 git = "https://github.com/TeXitoi/rust-mdo.git"
 

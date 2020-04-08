@@ -1,6 +1,6 @@
 [package]
 name = "colortty"
-version = "0.1.0"
+version = "0.2.2"
 authors = ["Shuhei Kagawa <shuhei.kagawa@gmail.com>"]
 license = "MIT"
 repository = "https://github.com/shuhei/colortty"
@@ -13,7 +13,13 @@ edition = "2018"
 [dependencies]
 getopts = "0.2.18"
 RustyXML = "0.1.1"
-reqwest = "0.9.10"
+regex = "1.3.1"
 json = "0.11.13"
 failure = "0.1.5"
-boringssl = "0.0.5"
+dirs = "2.0.2"
+futures = "0.3.1"
+surf = "1.0.3"
+
+[dependencies.async-std]
+version = "1.4.0"
+features = ["attributes"]

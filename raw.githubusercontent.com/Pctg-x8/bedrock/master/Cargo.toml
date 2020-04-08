@@ -29,7 +29,11 @@ VK_KHR_descriptor_update_template = []
 VK_KHR_shared_presentable_image = []
 VK_KHR_external_fence_win32 = ["winapi"]
 VK_KHR_external_fence_fd = []
+VK_KHR_get_physical_device_properties2 = []
 VK_KHR_get_surface_capabilities2 = []
+VK_EXT_full_screen_exclusive = []
+# pseudo extension for winapi dependency
+VK_EXT_full_screen_exclusive_win32 = ["winapi"]
 VK_KHR_storage_buffer_storage_class = []
 VK_KHR_relaxed_block_layout = []
 VK_EXT_debug_report = []
@@ -101,6 +105,7 @@ Implements = []
 Multithreaded = []
 Presentation = ["VK_KHR_surface", "VK_KHR_swapchain", "VK_KHR_display"]
 DynamicLoaded = ["Implements", "libloading"]
+CustomResolver = []
 
 [dependencies]
 libc = "0.2"
@@ -110,4 +115,3 @@ wayland-client = { version = "~0.9", optional = true }
 android = { git = "https://github.com/Pctg-x8/android-defs-rs", optional = true }
 winapi = { version = "~0.3", optional = true, features = ["windef"] }
 libloading = { version = "0.5", optional = true }
-boringssl = "0.0.5"

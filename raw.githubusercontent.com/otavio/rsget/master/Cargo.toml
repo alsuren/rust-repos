@@ -1,15 +1,15 @@
 [package]
 name = "rsget"
-version = "1.0.0"
+version = "2.0.1-alpha.0"
 authors = ["Otavio Salvador <otavio@ossystems.com.br>"]
 license = "Apache-2.0"
 edition = "2018"
 readme = "README.md"
 
 [dependencies]
-reqwest = "0.9.17"
-failure = "0.1.5"
-structopt = "0.2.15"
-indicatif = "0.11.0"
-exitfailure = "0.5.1"
-boringssl = "0.0.5"
+anyhow = "1.0.28"
+indicatif = "0.14.0"
+reqwest = "0.10.4"
+structopt = "0.3.12"
+tokio = { version = "0.2.16", features = ["macros", "fs"] }
+

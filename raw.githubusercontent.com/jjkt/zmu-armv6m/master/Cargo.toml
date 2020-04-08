@@ -13,13 +13,14 @@ goblin = "0.0.12"
 pad = "0.1.4"
 stderrlog = "0.4"
 log = "0.4"
-boringssl = "0.0.5"
 
 
 [features]
-default = ["armv7m"]
+default = ["armv7m", "generic-device"]
 
 
 armv6m = ["zmu_cortex_m/armv6m"]
 armv7m = ["zmu_cortex_m/armv7m"]
 armv7em = ["zmu_cortex_m/armv7em"]
+generic-device = ["zmu_cortex_m/generic-device"]
+stm32f103 = ["zmu_cortex_m/stm32f103"]

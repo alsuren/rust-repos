@@ -1,10 +1,11 @@
 [package]
 name = "pg-collectd"
-version = "0.1.5-pre"
+version = "0.1.6-pre"
 authors = ["Nick Babcock <nbabcock19@hotmail.com>"]
 description = "Provides an alternative and opinionated postgres collectd writer"
 repository = "https://github.com/nickbabcock/pg_collectd"
 readme = "README.md"
+edition = "2018"
 license = "MIT"
 publish = false
 
@@ -24,16 +25,16 @@ depends = "collectd (>= 5.5.0), collectd (<< 5.6.0)"
 depends = "collectd (>= 5.6.0)"
 
 [dependencies]
-failure = "0.1.5"
-serde = "1"
-serde_derive = "1"
-parking_lot = "0.8"
+parking_lot = "0.10"
 csv = "1"
-collectd-plugin = "0.9.0"
-boringssl = "0.0.5"
+collectd-plugin = "0.11.0"
+
+[dependencies.serde]
+version = "1"
+features = ["derive"]
 
 [dependencies.log]
-version = "0.4.6"
+version = "0.4.8"
 features = ["serde"]
 
 [dependencies.chrono]

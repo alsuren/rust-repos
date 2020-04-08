@@ -8,4 +8,4 @@ edition = "2018"
 
 [dependencies]
 hack-assembler = { git = 'https://github.com/heftyfunseeker/hack-assembler' }
-boringssl = "0.0.5"
+quicksilver = "*"

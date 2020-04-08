@@ -8,4 +8,3 @@ edition = "2018"
 nom = { version = "4.1", features = ["std", "verbose-errors"] }
 rustyline = "3.0"
 failure = { version = "0.1", features = ["derive"] }
-boringssl = "0.0.5"

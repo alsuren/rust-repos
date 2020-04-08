@@ -1,6 +1,6 @@
 [package]
 name = "imagesize"
-version = "0.8.0"
+version = "0.8.2"
 authors = ["Maid Dog <maiddogsrl@gmail.com>"]
 description = "Quick probing of image dimensions without loading the entire file."
 documentation = "https://docs.rs/imagesize"
@@ -12,4 +12,3 @@ license = "MIT"
 exclude = ["test/*"]
 
 [dependencies]
-boringssl = "0.0.5"

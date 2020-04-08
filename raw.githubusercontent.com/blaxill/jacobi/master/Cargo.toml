@@ -6,7 +6,6 @@ authors = ["Ben"]
 [dependencies]
 nalgebra = "*"
 pbr = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "jacobi"

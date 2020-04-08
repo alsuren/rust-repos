@@ -38,7 +38,6 @@ openssl = "0.10"
 histlog = "0.1"
 
 tokio-minihttp = { path = "tokio-minihttp" }
-boringssl = "0.0.5"
 
 [features]
 default = []

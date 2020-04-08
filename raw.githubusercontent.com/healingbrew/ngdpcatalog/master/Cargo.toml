@@ -1,9 +1,0 @@
-[package]
-name = "ngdpcatalog"
-version = "0.1.0"
-authors = ["Naomi"]
-
-[dependencies]
-serde_json = "1.0"
-hyper = "0.10"
-boringssl = "0.0.5"

@@ -8,7 +8,6 @@ publish = false
 i128 = ["quickcheck/i128", "rand/i128_support"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "0.6"

@@ -1,9 +1,8 @@
 [package]
-name = "retro-weaver"
+name = "gb-sprite-generator"
 version = "0.1.0"
 authors = ["giginet <giginet.net@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-image = "*"
-boringssl = "0.0.5"
+image = "0.21.*"

@@ -1,27 +1,37 @@
 [package]
 name = "bcnotif"
-version = "0.9.0"
-authors = ["Acizza <jonathanmce@gmail.com>"]
+version = "0.0.0"
+authors = ["Acizza <jgit@tuta.io>"]
+edition = "2018"
+
+[dependencies]
+dirs = "~2.0.0"
+gumdrop = "~0.7.0"
+libc = "~0.2.0"
+nix = "~0.17.0"
+notify-rust = "~3.6.0"
+num-traits = "~0.2.0"
+num-derive = "~0.3.0"
+once_cell = "~1.3.0"
+parking_lot = "~0.10.0"
+serde = "~1.0.0"
+serde_derive = "~1.0.0"
+smallvec = "~1.2.0"
+snafu = "~0.6.0"
+strum = "~0.18.0"
+strum_macros = "~0.18.0"
+toml = "~0.5.0"
+ureq = "~0.12.0"
+
+[dependencies.chrono]
+version = "~0.4.0"
+features = [ "serde" ]
+
+[dependencies.diesel]
+version = "~1.4.0"
+default-features = false
+features = [ "sqlite", "chrono" ]
 
 [profile.release]
 lto = true
 codegen-units = 1
-
-[dependencies]
-failure     = "0.1"
-chrono      = "0.4"
-clap        = "2"
-csv         = "1"
-directories = "0.10"
-lazy_static = "1"
-select      = "0.4"
-reqwest     = "0.8"
-yaml-rust   = "0.4"
-boringssl = "0.0.5"
-
-[target.'cfg(any(unix, macos))'.dependencies]
-notify-rust = "3"
-
-[target.'cfg(windows)'.dependencies.winrt]
-version = "0.5"
-features = ["windows-data", "windows-ui"]

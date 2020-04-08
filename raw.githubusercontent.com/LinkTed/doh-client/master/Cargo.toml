@@ -1,7 +1,8 @@
 [package]
 name = "doh-client"
-version = "1.4.0"
-authors = ["link.ted@mailbox.org"]
+version = "2.1.2"
+edition = "2018"
+authors = ["LinkTed <link.ted@mailbox.org>"] 
 license = "BSD-3-Clause"
 description = "DNS over HTTPS client"
 readme = "README.md"
@@ -12,7 +13,8 @@ exclude = [
     "com.doh-client.daemon.plist",
     "doh-client.service",
     "doh-client.socket",
-    "usr.local.bin.doh-client"
+    "usr.bin.doh-client",
+    "PKGBUILD"
     ]
 repository = "https://github.com/LinkTed/doh-client"
 categories = [
@@ -24,18 +26,32 @@ categories = [
 travis-ci = { repository = "LinkTed/doh-client" }
 
 [dependencies]
-libc = "0.2.51"
+libc = "0.2.67"
 data-encoding = "2.1.2"
-log = "0.4.6"
+log = "0.4.8"
+env_logger = "0.7.1"
 clap = "2.33.0"
-tokio = "0.1.18"
-tokio-rustls = "0.9.1"
-futures = "0.1.26"
-futures-locks = "0.3.3"
-h2 = "0.1.18"
-http = "0.1.16"
-rustls = "0.15.2"
-webpki = "0.19.1"
-bytes = "0.4.12"
-lru = "0.1.13"
-boringssl = "0.0.5"
+tokio-rustls = "0.12.2"
+futures = "0.3.4"
+h2 = "0.2.1"
+http = "0.2.0" 
+rustls = "0.16.0"
+webpki = "0.21.2"
+bytes = "0.5.4"
+lru = "0.4.3"
+
+[dependencies.tokio]
+version = "0.2.13"
+features = ["rt-threaded", "net", "time", "macros"]
+
+[dependencies.tokio-util]
+version = "0.2.0"
+features = ["codec", "udp"]
+
+[[bin]]
+name = "completions"
+path = "src/main_completions.rs"
+
+[profile.release]
+lto = true
+codegen-units = 1

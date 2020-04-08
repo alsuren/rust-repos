@@ -11,7 +11,6 @@ readme = "README.md"
 [dependencies]
 socks = "0.3"
 hyper = "0.10"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 hyper-openssl = "0.2"

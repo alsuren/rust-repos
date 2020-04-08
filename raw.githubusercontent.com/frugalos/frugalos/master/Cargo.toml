@@ -1,6 +1,6 @@
 [package]
 name = "frugalos"
-version = "0.11.0"
+version = "0.19.0"
 authors = ["The FrugalOS Developers"]
 description = "Frugal Object Storage"
 homepage = "https://github.com/frugalos/frugalos"
@@ -20,23 +20,23 @@ cannyls = "0.9"
 cannyls_rpc = "0.1"
 clap = "2"
 fibers = "0.1"
-fibers_http_server = "0.1"
+fibers_http_server = "0.1.12"
 fibers_rpc = "0.2"
 fibers_tasque = "0.1"
 frugalos_core = { version = "0.1", path = "frugalos_core" }
-frugalos_config = { version = "0.3", path = "frugalos_config" }
-frugalos_mds = { version = "0.6", path = "frugalos_mds" }
-frugalos_raft = { version = "0.6", path = "frugalos_raft" }
-frugalos_segment = { version = "0.6", path = "frugalos_segment" }
+frugalos_config = { version = "0.9", path = "frugalos_config" }
+frugalos_mds = { version = "0.13", path = "frugalos_mds" }
+frugalos_raft = { version = "0.10", path = "frugalos_raft" }
+frugalos_segment = { version = "0.15", path = "frugalos_segment" }
 futures = "0.1"
 jemallocator = "0.1.8"
 jemalloc-ctl = "0.2"
 hostname = "0.1"
 httpcodec = "0.2"
-libfrugalos = "0.2"
+libfrugalos = "0.6.0"
 num_cpus = "1"
 prometrics = "0.1"
-raftlog = "0.4"
+raftlog = "0.6"
 rustracing = "0.1"
 rustracing_jaeger = "0.1"
 siphasher = "0.2"
@@ -48,7 +48,6 @@ serde_ignored = "0.0.4"
 serde_yaml = "0.8"
 trackable = "^0.2.21"
 url = "1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 # TODO tempfile を使いたいが現状はコンパイルできないので諸々直す

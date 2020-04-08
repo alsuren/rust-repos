@@ -3,9 +3,6 @@ name = "pnacl-hello-world"
 version = "0.0.0"
 authors = ["Richard Diamond <wichard@vitalitystudios.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.ppapi]
 git = "https://github.com/DiamondLovesYou/rust-ppapi.git"
 

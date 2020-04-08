@@ -1,6 +1,6 @@
 [package]
 name = "fastobo-validator"
-version = "0.1.2"
+version = "0.2.4"
 authors = ["Martin Larralde <martin.larralde@ens-paris-saclay.fr>"]
 edition = "2018"
 license = "MIT"
@@ -20,14 +20,15 @@ status     = "actively-developed"
 
 [dependencies]
 clap = "2.33.0"
-colored = "1.7.0"
-fastobo = "0.2.1"
-failure = "0.1.5"
-log = "0.4"
+colored = "1.9.2"
+fastobo = "0.8.2"
+log = "0.4.8"
 isbn = "0.2.0"
 textwrap = "0.11.0"
-itertools = "0.8"
-boringssl = "0.0.5"
+itertools = "0.9.0"
+
+[dev-dependencies]
+assert_cmd = "0.12.0"
 
 [profile.test]
 opt-level = 1

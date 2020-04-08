@@ -5,4 +5,3 @@ authors = ["Ted Blackman <ted.blackman@gmail.com>"]
 
 [dependencies]
 zmq = { git = "https://github.com/belisarius222/rust-zmq.git" }
-boringssl = "0.0.5"

@@ -11,4 +11,3 @@ crate-type = ["dylib"]
 [dependencies]
 winapi = { version = "0.3.6", features = ["winuser", "windef", "wingdi"] }
 image = "0.21.0"
-boringssl = "0.0.5"

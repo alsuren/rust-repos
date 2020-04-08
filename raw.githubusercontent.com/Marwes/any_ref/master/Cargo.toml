@@ -7,7 +7,6 @@ authors = ["Markus <marwes91@gmail.com>"]
 
 # Can't have optional dependencies as dev-dependencies
 compiletest_rs = { version = "0.0.11", optional = true }
-boringssl = "0.0.5"
 
 [features]
 test = ["compiletest_rs"]

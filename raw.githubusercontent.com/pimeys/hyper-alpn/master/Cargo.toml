@@ -1,6 +1,6 @@
 [package]
 name = "hyper-alpn"
-version = "0.1.4"
+version = "0.2.1"
 authors = ["Julius de Bruijn <julius@nauk.io>"]
 license = "MIT"
 readme  = "README.md"
@@ -9,19 +9,19 @@ keywords = ["hyper", "alpn", "http2", "h2"]
 repository = "https://github.com/pimeys/hyper-alpn.git"
 homepage = "https://github.com/pimeys/hyper-alpn"
 documentation = "https://docs.rs/hyper-alpn/"
+edition = "2018"
 
 [dependencies]
-rustls = "0.12" 
-tokio-rustls = "0.5"
-webpki = "0.18.0-alpha"
-webpki-roots = "0.14"
-pretty_env_logger = "0.2"
-futures = "0.1"
-tokio = "0.1"
-trust-dns-resolver = "0.9"
-hyper = "0.12"
+rustls = "0.16"
+webpki = "0.21"
+webpki-roots = "0.17"
 log = "0.4"
-boringssl = "0.0.5"
+
+futures = "0.3"
+tokio-rustls = "0.12"
+tokio = { version = "0.2", features = ["blocking", "net"] }
+hyper = "0.13"
 
 [dev-dependencies]
 openssl = "0.10"
+tokio = { version = "0.2", features = ["macros", "rt-threaded", "net"] }

@@ -1,6 +1,6 @@
 [package]
 name = "derivative"
-version = "1.0.2"
+version = "2.1.0"
 authors = ["mcarton <cartonmartin+git@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
@@ -18,12 +18,12 @@ appveyor = { repository = "mcarton/rust-derivative" }
 proc-macro = true
 
 [dependencies]
-compiletest_rs = { version = "^0.3.14", optional = true }
-proc-macro2 = "^0.4.13"
-quote = "^0.6.3"
-syn = { version = "^0.15.10", features = ["full", "visit", "extra-traits"] }
-boringssl = "0.0.5"
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = { version = "1.0.3", features = ["visit", "extra-traits"] }
+
+[dev-dependencies]
+trybuild = "1.0.18"
 
 [features]
-test-nightly = ["compiletest_rs"]
 use_core = []

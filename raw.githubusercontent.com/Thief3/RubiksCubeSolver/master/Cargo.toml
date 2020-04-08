@@ -3,9 +3,6 @@ name = "rubiks"
 version = "0.4.0"
 authors = ["Malik Kissarli <m.kissarli@lancaster.ac.uk>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.gtk]
 version = "0.5.0"
 features = ["v3_10"]

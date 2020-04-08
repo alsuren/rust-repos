@@ -6,7 +6,6 @@ authors = ["Kenneth Zhao <kenneth.zhao@netis.com.cn>"]
 [dependencies]
 regex = "*"
 libc = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "psfd"

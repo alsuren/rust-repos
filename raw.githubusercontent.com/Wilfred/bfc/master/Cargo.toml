@@ -1,6 +1,6 @@
 [package]
 name = "bfc"
-version = "1.7.0"
+version = "1.8.0"
 authors = ["Wilfred Hughes <me@wilfred.me.uk>"]
 homepage = "https://github.com/Wilfred/bfc"
 repository = "https://github.com/Wilfred/bfc"
@@ -9,12 +9,13 @@ readme = "README.md"
 license = "GPL-2.0"
 
 [dependencies]
-llvm-sys = "70"
+llvm-sys = "80"
 itertools = "0.4"
-rand = "0.3"
-quickcheck = "0.3"
 tempfile = "2.1"
 getopts = "0.2"
 matches = "0.1"
 ansi_term = "0.9"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+quickcheck = "0.3"
+pretty_assertions = "0.6.1"

@@ -6,7 +6,6 @@ authors = ["Frank Petrilli <frank@petril.li>"]
 [dependencies]
 pcap = { version = "*" }
 users = "*"
-boringssl = "0.0.5"
 
 [dependencies.analysis]
 path = "src/analysis"

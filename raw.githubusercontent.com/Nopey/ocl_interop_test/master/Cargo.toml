@@ -11,7 +11,6 @@ sdl2 = "*"
 #Compute
 ocl={git = "https://github.com/cogciprocate/ocl.git" }
 ocl-interop={git = "https://github.com/Nopey/rust-ocl-interop.git" }
-boringssl = "0.0.5"
 
 [replace]
 "ocl-core:0.5.1" = { git = "https://github.com/cogciprocate/ocl-core" }

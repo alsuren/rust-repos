@@ -1,6 +1,6 @@
 [package]
 name = "timeout_io"
-version = "0.4.2"
+version = "0.6.0"
 authors = ["KizzyCode Software Labs./Keziah Biermann <development@kizzycode.de>"]
 description = "This library provides a simple timeout-based API for IO-operations"
 license = "BSD-2-Clause OR MIT"
@@ -11,12 +11,21 @@ readme = "README.md"
 build = "build.rs"
 edition = "2018"
 
+
 [badges]
 travis-ci = { repository = "KizzyCode/timeout_io" }
 appveyor = { repository = "KizzyCode/timeout_io" }
+maintenance = { status = "passively-maintained" }
+is-it-maintained-open-issues = { repository = "KizzyCode/timeout_io" }
+is-it-maintained-issue-resolution = { repository = "KizzyCode/timeout_io" }
+
 
 [build-dependencies]
-cc = "1.0.28"
+cc = "^1.0"
 
-[dependencies]
-boringssl = "0.0.5"
+
+[profile.release]
+overflow-checks = true
+
+[profile.bench]
+overflow-checks = true

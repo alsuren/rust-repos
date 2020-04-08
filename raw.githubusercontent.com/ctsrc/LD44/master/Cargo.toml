@@ -1,22 +1,16 @@
 [package]
 name = "skeleton-mans-amateur-skater"
+description = "Skeleton Man's Amateur Skater, a 2d extreme sport platformer"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/ctsrc/SMAS"
 version = "0.0.8"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
-edition = "2018"
-license = "ISC"
-repository = "https://github.com/ctsrc/SMAS"
-description = "Skeleton Man's Amateur Skater, a 2d extreme sport platformer"
-readme = "README.md"
 categories = ["ludum-dare", "games"]
-
-[features]
-nightly = ["amethyst/nightly"]
-
-[dependencies]
-amethyst = "0.10.0"
-boringssl = "0.0.5"
+edition = "2018"
 
 [package.metadata.deb]
+features = ["vulkan",]
 depends = "$auto, libasound2, libx11-xcb1, libssl1.1, libfreetype6"
 assets = [
   ["target/release/skeleton-mans-amateur-skater", "usr/bin/", "755"],
@@ -32,3 +26,11 @@ assets = [
 extended-description = """\
 This game is like what Super Mario would be if it was made by the Tony Hawk's Pro Skater \
 team. Probably. Pull off some gnarly tricks to earn as many points as possible."""
+
+[dependencies]
+amethyst = "0.13.2"
+
+[features]
+metal = ["amethyst/metal"]
+vulkan = ["amethyst/vulkan"]
+nightly = ["amethyst/nightly"]

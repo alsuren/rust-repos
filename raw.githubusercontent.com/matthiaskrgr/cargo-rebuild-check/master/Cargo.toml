@@ -10,7 +10,6 @@ edition = '2018'
 cargo = "0.28" # get CARGO_HOME
 rayon = "1.0" # parallelize
 clap = "2.32" # CLI parsing
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bencher = "0.1.5" # benchmarks

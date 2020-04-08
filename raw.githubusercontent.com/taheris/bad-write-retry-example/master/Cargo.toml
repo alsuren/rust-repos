@@ -16,7 +16,6 @@ doc = false
 hyper = { git = "https://github.com/hyperium/hyper" }
 rustc-serialize = "0.3.19"
 url = "1.1.1"
-boringssl = "0.0.5"
 
 [replace]
 #"openssl:0.7.14" = {git = "ssh://git@github.com/taheris/rust-openssl.git", branch = "fix/moving-write-buffer"}

@@ -11,6 +11,3 @@ license = "MIT"
 [lib]
 name = "libspotify"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

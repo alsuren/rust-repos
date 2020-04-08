@@ -1,30 +1,41 @@
 [package]
 name = "karaoke-rs"
-version = "0.5.1"
-authors = ["Cory Forsstrom <cforsstrom18@gmail.com>"]
+version = "0.11.1"
+authors = ["tarkah <admin@tarkah.dev>"]
 edition = "2018"
 
 [dependencies]
-ggez = { git = "http://github.com/tarkah/ggez", rev = "04e90429a473f691b4b5f115c5f286977bde607d" }
+glium = "0.25"
 cdg = "0.1"
-cdg_renderer = "0.1"
-image = "0.10.0"
-glob = "0.3.0"
-id3 = "0.3.0"
-failure = "0.1.1"
-serde_derive = "1.0.0"
-serde = "1"
-lazy_static = "1.3.0"
-dirs = "1.0.5"
+cdg_renderer = "0.3"
+image = { version = "0.22", default-features = false }
+glob = "0.3"
+id3 = "0.3"
+failure = { version = "0.1", default-features = false }
+serde = { version = "1.0", features = ['derive'] }
+serde_json = "1.0"
+lazy_static = "1.3"
+dirs = "1.0"
 crossbeam-channel = "0.3"
-clap = "2.33.0"
-rust-embed="4.3.0"
+clap = "2.33"
+rust-embed="4.3"
 rayon = "1.0"
-tera = "0.11"
-actix-web = "1.0.0-beta.4"
-actix-files = "0.1.0-beta.4"
+actix-web = { version = "1.0", default-features = false, features = ['flate2-rust'] }
+actix-files = "0.1"
 env_logger = "0.6"
-boringssl = "0.0.5"
+websocket = { version = "0.23", default-features = false, features = ['sync'] }
+multiqueue = "0.3"
+log = "0.4"
+
+[dependencies.rodio]
+version = "0.9"
+default-features = false
+features = ["mp3"]
+
+[dependencies.config]
+version = "0.9"
+default-features = false
+features = ['yaml']
 
 [dependencies.rustbreak]
 version = "2.0.0-rc3"

@@ -14,4 +14,3 @@ reqwest = "*"
 base64 = "*"
 
 serde = { version = "*", features = ["derive"] }
-boringssl = "0.0.5"

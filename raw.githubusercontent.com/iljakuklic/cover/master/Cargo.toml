@@ -1,8 +1,9 @@
 [package]
 name = "cover"
 version = "0.1.0"
-authors = ["Lukáš Kuklínek <ilja.kuklic@centrum.cz>"]
+authors = ["LukasK <ilja.kuklic@centrum.cz>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bitvec = "0.6.0"
-boringssl = "0.0.5"

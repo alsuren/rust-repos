@@ -1,8 +1,9 @@
 [package]
 name = "arrayvec"
-version = "0.4.10"
+version = "0.5.1"
 authors = ["bluss"]
 license = "MIT/Apache-2.0"
+edition = "2018"
 
 description = "A vector with fixed capacity, backed by an array (it can be stored on the stack too). Implements fixed capacity ArrayVec and ArrayString."
 documentation = "https://docs.rs/arrayvec/"
@@ -12,10 +13,6 @@ keywords = ["stack", "vector", "array", "data-structure", "no_std"]
 categories = ["data-structures", "no-std"]
 
 [build-dependencies]
-
-[dependencies]
-nodrop = { version = "0.1.12", path = "nodrop", default-features = false }
-boringssl = "0.0.5"
 
 [dependencies.serde]
 version = "1.0"
@@ -40,13 +37,18 @@ harness = false
 [features]
 default = ["std"]
 std = []
-serde-1 = ["serde"]
 
 array-sizes-33-128 = []
 array-sizes-129-255 = []
 
+[profile.bench]
+debug = true
+[profile.release]
+debug = true
+
 [package.metadata.docs.rs]
-features = ["serde-1"]
+features = ["serde"]
 
 [package.metadata.release]
 no-dev-version = true
+tag-name = "{{version}}"

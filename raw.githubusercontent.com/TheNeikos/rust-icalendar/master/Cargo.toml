@@ -8,6 +8,3 @@ license = "LGPL-3.0"
 readme = "README.md"
 documentation = "http://neikos.me/rust-icalendar/icalendar"
 description = "An RFC 5545 compatible iCalendar library."
-
-[dependencies]
-boringssl = "0.0.5"

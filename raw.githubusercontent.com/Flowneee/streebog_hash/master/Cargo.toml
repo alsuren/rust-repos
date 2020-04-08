@@ -15,6 +15,3 @@ debug-assertions = true # controls whether debug assertions are enabled
 codegen-units = 1  # controls whether the compiler passes `-C codegen-units`
                    # `codegen-units` is ignored when `lto = true`
 panic = 'unwind'   # panic strategy (`-C panic=...`), can also be 'abort'
-
-[dependencies]
-boringssl = "0.0.5"

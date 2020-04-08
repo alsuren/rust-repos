@@ -1,10 +1,10 @@
 [package]
 name = "surface"
-version = "0.2.2"
+version = "0.2.5"
 authors = ["Maximilian Luz <luzmaximilian@gmail.com>"]
 description = "Control various aspects of Microsoft Surface devices on Linux from the Command-Line"
 
-repository = "https://github.com/qzed/surface-control"
+repository = "https://github.com/linux-surface/surface-control"
 readme = "README.md"
 license = "MIT"
 
@@ -13,32 +13,14 @@ build = "build.rs"
 
 [dependencies]
 clap = "2.33.0"
-indoc = "0.3.1"
-nix = "0.13.0"
-failure = "0.1.5"
-boringssl = "0.0.5"
+indoc = "0.3.4"
+nix = "0.16.1"
+failure = "0.1.6"
 
 [build-dependencies]
 clap = "2.33.0"
-indoc = "0.3.1"
+indoc = "0.3.4"
 
 [profile.release]
 lto = true
 codegen-units = 1
-
-
-[package.metadata.deb]
-maintainer = "Maximilian Luz <luzmaximilian@gmail.com>"
-license-file = ["LICENSE", "0"]
-extended-description = """\
-Control various aspects of Microsoft Surface devices, such as
-performance-modes and dGPU power, from the Command Line."""
-depends = "$auto"
-section = "utility"
-priority = "optional"
-assets = [
-    ["target/release/surface", "usr/bin/", "755"],
-    ["target/surface.bash", "usr/share/bash-completion/completions/surface", "644"],
-    ["target/_surface", "usr/share/zsh/vendor-completions/_surface", "644"],
-    ["target/surface.fish", "usr/share/fish/completions/surface.fish", "644"],
-]

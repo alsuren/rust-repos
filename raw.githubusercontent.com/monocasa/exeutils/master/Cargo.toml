@@ -13,7 +13,6 @@ path = "src/objdump.rs"
 
 [dependencies]
 getopts = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.exefmt]
 git = "https://github.com/monocasa/exefmt.git"

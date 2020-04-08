@@ -17,9 +17,6 @@ readme = "README.md"
 [features]
 bench = ["rand", "threadpool"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rand]
 version = "*"
 optional = true

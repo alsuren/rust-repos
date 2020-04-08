@@ -1,6 +1,6 @@
 [package]
 name = "rvn"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Sebastian Mandrean <sebastian.mandrean@gmail.com>"]
 edition = "2018"
 description = "A CLI tool for interacting with Maven repositories & artifacts"
@@ -12,10 +12,12 @@ keywords = ["maven", "mvn", "cli", "java", "pom"]
 
 [dependencies]
 clap = "2.33.0"
+log = "0.4"
 regex = "1"
-reqwest = "0.9.17"
-url = "1.7.2"
-boringssl = "0.0.5"
+reqwest = "0.9.20"
+strum = "0.15.0"
+strum_macros = "0.15.0"
+url = "2.1.0"
 
 [profile.release]
 opt-level = "z"

@@ -5,15 +5,23 @@ authors = ["Andreas Rammhold <andreas@rammhold.de>"]
 edition = "2018"
 
 [dependencies]
-clap = "2.33.0"
-tempdir = "0.3.7"
-reqwest = "0.9.15"
-env_logger = "0.6.1"
-boringssl = "0.0.5"
+clap = "2.33"
+tempdir = "0.3"
+reqwest = "0.9"
+env_logger = "0.6"
+futures = "0.1.29"                        # An implementation of futures and streams featuring zero allocations, composability, a…
+bytes = "0.4"
 
 [dependencies.actix-web]
-version = "0.7"
+version = "1.0"
+default-features = false
+features = [ "brotli", "client", "fail", "rust-tls" ]
 
 [dependencies.libnixstore-sys]
 version = "0.1.0"
 # path = "../libnixstore-sys"
+
+[dependencies.multicast_dns]
+version = "0.4.2"
+git = "https://github.com/andir/multicast-dns"
+branch = "support-announce"

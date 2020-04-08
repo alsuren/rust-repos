@@ -1,6 +1,6 @@
 [package]
 name = "calloop"
-version = "0.4.3"
+version = "0.5.1"
 authors = ["Victor Berger <victor.berger@m4x.org>"]
 documentation = "https://docs.rs/calloop/"
 repository = "https://github.com/Smithay/calloop"
@@ -8,21 +8,20 @@ license = "MIT"
 description = "A callback-based event loop"
 keywords = [ "events", "loop", "callback" ]
 autotests = false
+edition = "2018"
 
 [badges]
 travis-ci = { repository = "Smithay/calloop" }
 codecov = { repository = "Smithay/calloop" }
 
 [dependencies]
-mio = "0.6"
-mio-extras = "2.0"
-boringssl = "0.0.5"
+mio = { version = "0.7", features = ["os-poll", "os-util"] }
 
 [dev-dependencies]
 lazycell = "=1.0.0"
 
 [target.'cfg(unix)'.dependencies]
-nix = "0.13"
+nix = "0.17"
 
 [[test]]
 name = "signals"

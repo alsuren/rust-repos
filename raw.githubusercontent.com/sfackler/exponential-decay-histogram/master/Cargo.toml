@@ -1,6 +1,6 @@
 [package]
 name = "exponential-decay-histogram"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["Steven Fackler <sfackler@gmail.com>"]
 description = "A histogram which exponentially weights in favor of recent values"
 license = "MIT/Apache-2.0"
@@ -18,8 +18,7 @@ harness = false
 
 [dependencies]
 ordered-float = "1.0"
-rand = "0.6"
-boringssl = "0.0.5"
+rand = { version = "0.7", features = ["small_rng"] }
 
 [dev-dependencies]
 criterion = "0.2"

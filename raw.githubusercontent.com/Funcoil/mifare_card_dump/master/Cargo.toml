@@ -3,9 +3,6 @@ name = "card_dump"
 version = "0.1.0"
 authors = ["Martin Habovštiak <martin.habovstiak@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.mifare]
 version = "0.1"
 git = "https://github.com/Funcoil/mifare-rs"

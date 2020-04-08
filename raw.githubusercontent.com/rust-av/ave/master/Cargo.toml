@@ -7,18 +7,19 @@ authors = ["Luca Barbato <lu_zero@gentoo.org>"]
 default = []
 
 [dependencies]
-structopt = "0.2"
+structopt = "0.3"
 log = "0.4"
-pretty_env_logger = "0.2"
-crossbeam-channel = "0.2"
+pretty_env_logger = "0.4"
+crossbeam-channel = "0.4"
 
-av-data = { git = "https://github.com/rust-av/rust-av" }
-av-codec = { git = "https://github.com/rust-av/rust-av" }
-av-format = { git = "https://github.com/rust-av/rust-av" }
+av-data = "0.2"
+av-codec = "0.2"
+av-format = "0.2"
 
 libvpx = { git = "https://github.com/rust-av/vpx-rs", features=["codec-trait"] }
 libopus = { git = "https://github.com/rust-av/opus-rs", features=["codec-trait"] }
+libaom = { git = "https://github.com/rust-av/aom-rs", features=["codec-trait"] }
 av-vorbis = { git = "https://github.com/rust-av/av-vorbis" }
+ivf = { git = "https://github.com/rust-av/ivf-rs"}
 
 matroska = { git = "https://github.com/rust-av/matroska" }
-boringssl = "0.0.5"

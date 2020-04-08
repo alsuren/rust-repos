@@ -1,7 +1,7 @@
 [package]
 name = "sfml"
 description = "Rust binding for sfml"
-version = "0.14.0"
+version = "0.15.1"
 authors = ["Jeremy Letang <letang.jeremy@gmail.com>"]
 documentation = "https://docs.rs/sfml"
 repository = "https://github.com/jeremyletang/rust-sfml"
@@ -16,9 +16,8 @@ window = ["csfml-window-sys", "bitflags", "widestring"]
 graphics = ["window", "csfml-graphics-sys"]
 audio = ["csfml-audio-sys"]
 network = ["csfml-network-sys"]
-
-[dependencies]
-boringssl = "0.0.5"
+# Used to skip running certain tests on CI, since it's running in a headless environment.
+ci-headless = []
 
 [dependencies.widestring]
 version = "0.4.0"
@@ -30,21 +29,21 @@ optional = true
 
 [dependencies.csfml-system-sys]
 path = "ffi/csfml-system-sys"
-version = "0.4.0"
+version = "0.5.0"
 
 [dependencies.csfml-window-sys]
 path = "ffi/csfml-window-sys"
-version = "0.4.0"
+version = "0.5.0"
 optional = true
 
 [dependencies.csfml-graphics-sys]
 path = "ffi/csfml-graphics-sys"
-version = "0.4.0"
+version = "0.5.0"
 optional = true
 
 [dependencies.csfml-audio-sys]
 path = "ffi/csfml-audio-sys"
-version = "0.4.0"
+version = "0.5.0"
 optional = true
 
 [dependencies.csfml-network-sys]

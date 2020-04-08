@@ -1,9 +1,10 @@
 [package]
 name = "blas-src"
-version = "0.2.1"
+version = "0.6.1"
 license = "Apache-2.0/MIT"
 authors = [
     "Ivan Ukhov <ivan.ukhov@gmail.com>",
+    "Stefan Kroboth <stefan.kroboth@gmail.com>",
     "Toshiki Teramura <toshiki.teramura@gmail.com>",
 ]
 description = "The package provides a BLAS source of choice."
@@ -20,21 +21,18 @@ intel-mkl = ["intel-mkl-src"]
 netlib = ["netlib-src"]
 openblas = ["openblas-src"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.accelerate-src]
 version = "0.3"
 optional = true
 
 [dependencies.intel-mkl-src]
-version = "0.2"
+version = "0.5"
 optional = true
 
 [dependencies.netlib-src]
-version = "0.7"
+version = "0.8"
 optional = true
 
 [dependencies.openblas-src]
-version = "0.6"
+version = "0.9"
 optional = true

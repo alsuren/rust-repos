@@ -5,8 +5,11 @@ authors = ["TKGgunter <thothgunter@live.com>"]
 
 [dependencies.stb_tt-sys]
 path = "stb_tt-sys/"
+[dependencies.tensorflow-sys-tools]
+path = "tensorflow-sys-tools/"
+[dependencies.miniz]
+path = "miniz/"
 
 [dependencies]
-ndarray = "*"
-winapi = { version = "0.3.6", features = ["winuser", "xinput", "windef", "wingdi", "winnt", "libloaderapi", "memoryapi", "processenv"] }
-boringssl = "0.0.5"
+winapi = { version = "0.3.8", features = ["winuser", "xinput", "windef", "wingdi", "winnt", "libloaderapi", "memoryapi", "processenv", "mmdeviceapi", "combaseapi", "audioclient", "dsound", "impl-default"] }
+multiinput = "*"

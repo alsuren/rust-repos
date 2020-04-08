@@ -11,6 +11,3 @@ build = "build.rs"
 rand = "0.3.11"
 docopt = "0.6.67"
 rustc-serialize = "0.3.15"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -11,9 +11,6 @@ description = """
 Flexible code generator for Rust
 """
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.codeviz_common]
 version = "0.2.2"
 path = "./common"

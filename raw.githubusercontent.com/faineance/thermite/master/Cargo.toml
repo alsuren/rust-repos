@@ -11,6 +11,3 @@ doctest = false
 name = "thermite"
 path = "src/bin/main.rs"
 test = false
-
-[dependencies]
-boringssl = "0.0.5"

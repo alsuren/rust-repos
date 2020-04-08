@@ -1,34 +1,43 @@
 [package]
-name = "actix-amqp"
+name = "ntex-amqp"
 version = "0.1.0"
 authors = ["Nikolay Kim <fafhrd91@gmail.com>"]
+description = "AMQP 1.0 Client/Server framework"
+documentation = "https://docs.rs/actix-amqp"
+repository = "https://github.com/actix/actix-amqp.git"
+categories = ["network-programming"]
+keywords = ["AMQP", "IoT", "messaging"]
+license = "MIT"
+exclude = [".gitignore", ".travis.yml", ".cargo/config"]
 edition = "2018"
 
+[workspace]
+members = [
+  ".",
+  "codec",
+]
+
 [dependencies]
-amqp-codec = { git = "https://github.com/fafhrd91/amqp-codec.git" }
-# amqp-codec = { path = "../rust-amqp" }
+ntex = "0.1.1"
+ntex-amqp-codec = "0.1.0"
+ntex-router = "0.3"
+ntex-codec = "0.1.0"
 
-actix-codec = "0.1.2"
-actix-service = "0.4.0"
-actix-connect = "0.2.0"
-actix-router = "0.1.2"
-actix-utils = "0.4.0"
-actix-server-config = "0.1.1"
-
-derive_more = "0.14"
-either = "1.5.2"
-futures = "0.1.26"
-hashbrown = "0.3.0"
-http = "0.1.16"
+bytes = "0.5.4"
+bytestring = "0.1.5"
+derive_more = "0.99.5"
+either = "1.5.3"
+futures = "0.3.4"
+fxhash = "0.2.1"
+http = "0.2.1"
 log = "0.4"
-bytes = "0.4"
-uuid = { version = "0.7", features = ["v4"] }
+pin-project = "0.4.8"
+uuid = { version = "0.8", features = ["v4"] }
 slab = "0.4"
-string = "0.2.0"
-tokio-timer = "0.2.8"
-tokio-current-thread = "0.1.5"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-env_logger = "0.6"
-actix-test-server = "0.2.2"
+env_logger = "0.7"
+
+[patch.crates-io]
+ntex-amqp = { path = "." }
+ntex-amqp-codec = { path = "codec" }

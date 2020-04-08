@@ -1,7 +1,2 @@
-[package]
-name = "aoc-2018"
-version = "0.1.0"
-authors = ["Dirkjan Ochtman <dirkjan@ochtman.nl>"]
-
-[dependencies]
-boringssl = "0.0.5"
+[workspace]
+members = ["2018", "2019"]

@@ -22,7 +22,6 @@ serde_derive = "1.0"
 log = "0.4"
 fern = { version = "0.5", features = ["colored"] }
 chrono = { version = "0.4", features = ["serde"] }
-boringssl = "0.0.5"
 
 [package.metadata.rpm.cargo]
 buildflags = ["--release"]

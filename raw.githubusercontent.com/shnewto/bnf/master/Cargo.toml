@@ -1,7 +1,7 @@
 [package]
 name = "bnf"
-version = "0.2.4"
-authors = ["@shnewto", "@CrockAgile", "@androm3da"]
+version = "0.3.0"
+authors = ["@shnewto", "@CrockAgile", "@androm3da", "@sremedios", "@prbs23", "@z2oh"]
 
 description = "A library for parsing Backus–Naur form context-free grammars"
 readme = "README.md"
@@ -15,9 +15,6 @@ license = "MIT"
 [features]
 unstable = []
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.stacker]
 version = "0.1.2"
 
@@ -25,8 +22,7 @@ version = "0.1.2"
 version = "0.3.17"
 
 [dependencies.nom]
-version = "^3.2"
-features = ["verbose-errors"]
+version = "^5.0.1"
 
 [dev-dependencies.quickcheck]
 version = "0.4.1"

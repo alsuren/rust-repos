@@ -1,7 +1,8 @@
 [package]
 name = "favicon-generator"
-version = "0.3.0"
+version = "0.3.4"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/favicon-generator"
 homepage = "https://magiclen.org/favicon-generator"
 keywords = ["favicon", "generating", "web-app", "icon"]
@@ -10,8 +11,9 @@ description= "It helps you generate favicons with different formats and sizes."
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/favicon-generator", branch = "master" }
+[badges.travis-ci]
+repository = "magiclen/favicon-generator"
+branch = "master"
 
 [profile.release]
 panic = "abort"
@@ -19,13 +21,12 @@ panic = "abort"
 [dependencies]
 terminal_size = "0.1"
 clap = "2"
-image-convert = "0.8.7"
+image-convert = "0.9.5"
 scanner-rust = "1"
-subprocess = "0.1"
+subprocess = "0.2"
 serde_json = "1"
-tera = "1.0.0-beta.6"
+tera = "1.0.0"
 lazy_static = "1"
-boringssl = "0.0.5"
 
 [dependencies.validators]
 version = "0.20"

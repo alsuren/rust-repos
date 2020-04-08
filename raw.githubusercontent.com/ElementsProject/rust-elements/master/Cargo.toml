@@ -1,6 +1,6 @@
 [package]
 name = "elements"
-version = "0.7.1"
+version = "0.12.1"
 authors = ["Andrew Poelstra <apoelstra@blockstream.com>"]
 description = "Library with support for de/serialization, parsing and executing on data structures and network messages related to Elements"
 license = "CC0-1.0"
@@ -10,20 +10,17 @@ documentation = "https://docs.rs/elements/"
 
 [features]
 "serde-feature" = [
-    "bitcoin/serde",
-    "bitcoin_hashes/serde",
+    "bitcoin/use-serde",
     "serde"
 ]
 "fuzztarget" = []
 
 [dependencies]
-bech32 = "0.6"
-bitcoin_hashes = "0.3.0"
-secp256k1 = "0.12.0"
-boringssl = "0.0.5"
-
-[dependencies.bitcoin]
-version = "0.18.0"
+bitcoin = "0.23"
+# While this dependency is included in bitcoin, we need this to use the macros.
+# We should probably try keep this one in sync with the bitcoin version,
+# to avoid requiring two version of bitcoin_hashes.
+bitcoin_hashes = "0.7.6"
 
 [dependencies.serde]
 version = "1.0"
@@ -31,4 +28,4 @@ optional = true
 
 [dev-dependencies]
 rand = "0.6.5"
-serde_json = "1"
+serde_json = "<=1.0.44"

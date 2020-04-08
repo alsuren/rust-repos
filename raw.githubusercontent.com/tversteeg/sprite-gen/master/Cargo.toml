@@ -1,6 +1,7 @@
 [package]
 name = "sprite"
-version = "0.1.6"
+version = "0.2.5-alpha.0"
+edition = "2018"
 authors = ["Thomas Versteeg <thomasversteeg@gmx.com>"]
 license = "GPL-3.0"
 homepage = "https://github.com/tversteeg/sprite-gen"
@@ -18,17 +19,19 @@ travis-ci = {repository = "tversteeg/sprite-gen"}
 [workspace]
 
 [dependencies]
-sprite-gen = { path = "lib", version = "0" }
-blit = "0.5"
-minifb = "0.11"
-direct-gui = "0.1"
-boringssl = "0.0.5"
+anyhow = "1.0.27"
+druid = { git = "https://github.com/xi-editor/druid.git", version = "0.5" }
+sprite-gen = { path = "lib", version = "0.1.5" }
+lazy_static = "1.4.0"
+bincode = "1.2.1"
+serde = { version = "1.0.105", features = ["derive"] }
+itertools = "0.9.0"
 
 [[example]]
 name = "minifb"
 path = "examples/minifb.rs"
 
 [dev-dependencies]
-sprite-gen = { path = "lib", version = "0" }
-blit = "0.5"
-minifb = "0.11"
+sprite-gen = { path = "lib", version = "0.1.5" }
+blit = "0.5.12"
+minifb = "0.15.3"

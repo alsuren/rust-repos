@@ -1,12 +1,15 @@
-[package]
-name = "noblit"
-version = "0.0.0"
-authors = ["Ruud van Asseldonk <dev@veniogames.com>"]
+[workspace]
+members = [
+  "noblit",
+  "libnoblit",
+  "examples/haveibeenpwned",
+]
 
-[lib]
-# Build a C dynamic and static library, and a Rust library for when using from
-# Rust directly.
-crate-type = ["cdylib", "staticlib", "rlib"]
+# The unwind panics are unsafe across FFI boundaries, so make panics abort the
+# process instead. Panics are for unrecoverable errors anyway, and even in Rust-
+# only code, unwind always caused more trouble than it solved for me.
+[profile.dev]
+panic = "abort"
 
-[dependencies]
-boringssl = "0.0.5"
+[profile.release]
+panic = "abort"

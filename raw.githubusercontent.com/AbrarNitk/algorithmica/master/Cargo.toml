@@ -1,6 +1,6 @@
 [package]
 name = "algorithmica"
-version = "0.1.7"
+version = "0.1.8"
 authors = ["AbrarNitk <abrar.nitk@gmail.com>"]
 edition = "2018"
 description = "Rust Algorithms"
@@ -12,5 +12,7 @@ homepage = "https://github.com/AbrarNitk/algorithmica"
 readme = "README.md"
 keywords = ["algorithms", "search", "math", "data", "sort"]
 
+[workspace]
+members = ["redblackbst"]
+
 [dependencies]
-boringssl = "0.0.5"

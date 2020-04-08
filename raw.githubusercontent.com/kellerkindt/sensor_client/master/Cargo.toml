@@ -12,7 +12,6 @@ repository = "https://github.com/kellerkindt/sensor_client"
 byteorder = { version = "1.2.1", default-features = false }
 random = "0.12.2"
 clap = "2.31.2"
-boringssl = "0.0.5"
 
 [dependencies.sensor_common]
 version = "*"

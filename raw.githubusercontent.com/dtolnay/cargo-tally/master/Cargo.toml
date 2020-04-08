@@ -1,6 +1,6 @@
 [package]
 name = "cargo-tally"
-version = "0.2.8"
+version = "0.2.10"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "Cargo subcommand for drawing graphs of the number of direct dependencies on a crate over time"
@@ -15,7 +15,7 @@ atty = "0.2"
 chrono = { version = "0.4", features = ["serde"] }
 flate2 = "1.0"
 fnv = "1.0"
-gnuplot = "0.0.29"
+gnuplot = "0.0.31"
 indicatif = "0.11"
 lazy_static = "1.0"
 log = "0.4"
@@ -30,10 +30,12 @@ serde_json = "1.0"
 string-interner = "0.7"
 structopt = "0.2"
 url = "1.6"
-boringssl = "0.0.5"
 
 [workspace]
 members = ["index"]
 
 [badges]
 travis-ci = { repository = "dtolnay/cargo-tally" }
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

@@ -1,37 +1,22 @@
-[dependencies]
-mop-adapters = { path = "./mop-adapters", version = "0.0.10" }
-mop-common-deps = { features = ["rand"], path = "./mop-common-deps", version = "0.0.10" }
-mop-facades = { path = "./mop-facades", version = "0.0.10" }
-mop-solvers = { path = "./mop-solvers", version = "0.0.10" }
-boringssl = "0.0.5"
-
-[features]
-default = ["std"]
-rayon = ["mop-adapters/rayon", "mop-facades/rayon"]
-serde1 = ["mop-adapters/serde1", "mop-facades/serde1"]
-std = ["mop-adapters/std", "mop-facades/std"]
-
-[package]
-authors = ["Caio Fernandes <c410.f3r@gmail.com>"]
-categories = ["algorithms", "concurrency"]
-description = "Flexible and modular single or multi-objective solver for contiguous and discrete problems"
-edition = "2018"
-keywords = ["solver", "performance", "metaheuristic", "optimization"]
-license = "Apache-2.0"
-name = "mop"
-readme = "README.md"
-repository = "https://gitlab.com/c410-f3r/mop"
-version = "0.0.10"
+[profile.release]
+codegen-units = 1
+debug = false
+debug-assertions = false
+incremental = false
+lto = true
+opt-level = 3
+overflow-checks = false
+panic = 'abort'
+rpath = false
 
 [workspace]
 members = [
-    "mop-adapters",
-    "mop-bindings",
+    "mop",
     "mop-blocks",
-    "mop-common-deps",
     "mop-common-defs",
     "mop-facades",
     "mop-solvers",
-    "mop-structs"
-]
 
+    "mop-bindings",
+    "problems",
+]

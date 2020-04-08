@@ -10,7 +10,6 @@ crate-type = ["dylib"]
 [dependencies]
 interpolate_idents = "*"
 ramp = "*"
-boringssl = "0.0.5"
 
 [dependencies.cpython]
 version = "*"

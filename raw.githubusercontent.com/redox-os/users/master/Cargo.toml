@@ -1,6 +1,6 @@
 [package]
 name = "redox_users"
-version = "0.3.0"
+version = "0.3.4"
 authors = ["Jose Narvaez <goyox86@gmail.com>", "Wesley Hershberger <mggmugginsmc@gmail.com>"]
 description = "A Rust library to access Redox users and groups functionality"
 license = "MIT"
@@ -10,8 +10,6 @@ readme = "README.md"
 keywords = ["redox", "auth"]
 
 [dependencies]
-argon2rs = { version = "0.2", default-features = false }
-rand_os = "0.1"
+rust-argon2 = "0.7"
+getrandom = "0.1"
 redox_syscall = "0.1"
-failure = "0.1.1"
-boringssl = "0.0.5"

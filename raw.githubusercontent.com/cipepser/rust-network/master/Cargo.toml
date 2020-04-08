@@ -8,7 +8,6 @@ serde = "1.0"
 serde_derive = "1.0"
 toml = "0.4"
 log = "*"
-boringssl = "0.0.5"
 
 [dependencies.pnet]
 version = "0.21.0"

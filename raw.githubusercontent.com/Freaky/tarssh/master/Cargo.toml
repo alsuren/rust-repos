@@ -1,6 +1,6 @@
 [package]
 name = "tarssh"
-version = "0.2.0"
+version = "0.4.0"
 description = "A simple SSH tarpit server"
 authors = ["Thomas Hurst <tom@hur.st>"]
 edition = "2018"
@@ -16,16 +16,14 @@ sandbox = ["rusty-sandbox"]
 drop_privs = ["privdrop"]
 
 [dependencies]
-futures = "0.1.25"
-tokio = "0.1.18"
-env_logger = "0.6.1"
-log = "0.4.6"
-structopt = "0.2.15"
-tk-listen = "0.2.1"
-tokio-signal = "0.2.7"
+env_logger = "0.7.1"
 exitcode = "1.1.2"
-boringssl = "0.0.5"
+futures = "0.3.4"
+futures-util = "0.3.4"
+log = "0.4.8"
+structopt = "0.3.11"
+tokio = { version = "0.2.13", features = ["signal", "sync", "net", "time", "tcp", "io-driver", "io-util", "rt-threaded"] }
 
 [target."cfg(unix)".dependencies]
 rusty-sandbox = { version = "0.2", optional = true }
-privdrop = { version = "0.3.1", optional = true }
+privdrop = { version = "0.3.4", optional = true }

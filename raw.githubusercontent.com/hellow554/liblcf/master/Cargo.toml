@@ -11,7 +11,6 @@ byteorder = "1"
 failure = "0.1"
 failure_derive = "*"
 encoding = "0.2"
-boringssl = "0.0.5"
 
 #[patch.crates-io]
 #failure = { git="https://github.com/withoutboats/failure/tree/master/failure-1.X" }

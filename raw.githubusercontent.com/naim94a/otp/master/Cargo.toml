@@ -1,6 +1,6 @@
 [package]
 name = "libotp"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["Naim A. <naim94a@gmail.com>"]
 description = "One Time Password generator"
 license = "GPL-3.0"
@@ -10,9 +10,8 @@ keywords = ["RFC4226", "RFC6238", "OTP", "Authentication"]
 categories = ["authentication"]
 
 [dependencies]
-ring = "0.13.2"
-binascii = "0.1.1"
-boringssl = "0.0.5"
+ring = "^0.14"
+binascii = "^0.1"
 
 [lib]
 name = "libotp"

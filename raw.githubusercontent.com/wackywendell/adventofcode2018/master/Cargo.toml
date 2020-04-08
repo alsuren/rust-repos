@@ -1,21 +1,8 @@
 [package]
-name = "aoc"
-version = "0.1.0"
 authors = ["Wendell Smith <wackywendell@gmail.com>"]
 edition = "2018"
-
-[dependencies]
-chrono = "0.4.6"
-clap = "2.32"
-failure = "0.1"
-itertools = "0.8.0"
-lazy_static = "1.2"
-regex = "1"
-nom = "4.1"
-combine = "3.6.3"
-text_io = "0.1.7"
-boringssl = "0.0.5"
-
+name = "aoc"
+version = "0.1.0"
 [[bin]]
 name = "day1"
 path = "src/day1/main.rs"
@@ -79,3 +66,59 @@ path = "src/day15/main.rs"
 [[bin]]
 name = "day16"
 path = "src/day16/main.rs"
+
+[[bin]]
+name = "day17"
+path = "src/day17/main.rs"
+
+[[bin]]
+name = "day18"
+path = "src/day18/main.rs"
+
+[[bin]]
+name = "day19"
+path = "src/day19/main.rs"
+
+[[bin]]
+name = "day20"
+path = "src/day20/main.rs"
+
+[[bin]]
+name = "day21"
+path = "src/day21/main.rs"
+
+[[bin]]
+name = "day22"
+path = "src/day22/main.rs"
+
+[[bin]]
+name = "day23"
+path = "src/day23/main.rs"
+
+[[bin]]
+name = "day24"
+path = "src/day24/main.rs"
+
+[[bin]]
+name = "day25"
+path = "src/day25/main.rs"
+
+[dependencies]
+chrono = "0.4.6"
+clap = "2.32"
+combine = "3.6.3"
+failure = "0.1"
+itertools = "0.8.0"
+lazy_static = "1.2"
+nom = "4.1"
+nom5 = { version = "5.1.0", package = "nom" }
+primes = "0.2.4"
+regex = "1"
+text_io = "0.1.7"
+log = "0.4.1"
+env_logger = "0.7.1"
+test-env-log = "0.2.2"
+
+[lib]
+name = "aoc"
+path = "src/lib.rs"

@@ -1,63 +1,95 @@
 [package]
-name = "chttp"
-version = "0.4.2"
+name = "isahc"
+version = "0.9.1"
 description = "The practical HTTP client that is fun to use."
 authors = ["Stephen M. Coakley <me@stephencoakley.com>"]
 license = "MIT"
-keywords = ["http", "request", "client"]
+keywords = ["http", "request", "client", "async", "curl"]
 categories = ["web-programming::http-client"]
-repository = "https://github.com/sagebind/chttp"
-documentation = "https://docs.rs/chttp/"
+repository = "https://github.com/sagebind/isahc"
+documentation = "https://docs.rs/isahc/"
 readme = "README.md"
 edition = "2018"
+
+[package.metadata.docs.rs]
+features = ["cookies", "json"]
 
 [badges.maintenance]
 status = "actively-developed"
 
 [features]
-default = ["cookies", "http2", "psl"]
+default = ["http2", "static-curl", "text-decoding"]
 cookies = ["chrono"]
 http2 = ["curl/http2"]
-async-api = []
-middleware-api = []
+json = ["serde", "serde_json"]
+psl = ["parking_lot", "publicsuffix"]
+spnego = ["curl-sys/spnego"]
+static-curl = ["curl/static-curl"]
+text-decoding = ["encoding_rs", "mime"]
+middleware-api-preview = []
 
 [dependencies]
-bytes = "0.4"
-crossbeam-channel = "0.3"
-curl = "^0.4.20"
-futures-preview = "0.2.2"
-http = "0.1"
+bytes = "0.5"
+crossbeam-channel = "0.4"
+crossbeam-utils = "0.7"
+curl = "0.4.25"
+curl-sys = "0.4.26"
+futures-channel = "0.3"
+futures-io = "0.3"
+http = "0.2"
 lazy_static = "1"
-lazycell = "1.2"
 log = "0.4"
-regex = "1.1"
 slab = "0.4"
-withers_derive = "0.2"
-boringssl = "0.0.5"
+sluice = "0.5"
 
 [dependencies.chrono]
 version = "0.4"
 optional = true
 
-[dependencies.json]
-version = "0.11"
+[dependencies.encoding_rs]
+version = "0.8"
 optional = true
 
-[dependencies.psl]
-version = "0.4"
+[dependencies.futures-util]
+version = "0.3"
+default-features = false
+features = ["io"]
+
+[dependencies.mime]
+version = "0.3"
 optional = true
 
-[target.'cfg(unix)'.dependencies]
-nix = "0.14"
+[dependencies.parking_lot]
+version = "0.10"
+optional = true
+
+[dependencies.publicsuffix]
+version = "1.5"
+default-features = false
+optional = true
+
+[dependencies.serde]
+version = "1.0"
+optional = true
+
+[dependencies.serde_json]
+version = "1.0"
+optional = true
 
 [dev-dependencies]
-env_logger = "0.6"
+env_logger = "0.7"
+flate2 = "1.0"
+futures = "0.3"
+indicatif = "0.14"
+mockito = "0.25"
 rayon = "1"
-rouille = "3.0"
-
-[package.metadata.docs.rs]
-all-features = true
+speculate = "0.1"
+static_assertions = "1.1"
+structopt = "0.3"
 
 [[example]]
-name = "async"
-required-features = ["async-api"]
+name = "json"
+required-features = ["json", "serde/derive"]
+
+[workspace]
+members = ["benchmarks"]

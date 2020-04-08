@@ -6,4 +6,3 @@ authors = ["panicbit <panicbit.dev@gmail.com>"]
 [dependencies]
 libc = "0.2.26"
 ctru-sys = { git = "https://github.com/rust3ds/ctru-rs" }
-boringssl = "0.0.5"

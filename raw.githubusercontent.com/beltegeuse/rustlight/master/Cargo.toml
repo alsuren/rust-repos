@@ -1,6 +1,6 @@
 [package]
 name = "rustlight"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Adrien Gruson <adrien.gruson@gmail.com>"]
 edition = "2018"
 
@@ -15,25 +15,26 @@ pbrt = ["pbrt_rs"]
 embree = ["embree-rs"]
 
 [dependencies]
-image = { version =  "0.18.0", optional = true }
-rayon = "1.0.0"
-rand = "0.4.2"
+image = { version =  "*", optional = true }
+rayon = "*"
+rand = "*"
 tobj = "*"
-embree-rs = { git = "https://github.com/beltegeuse/embree-rs", optional = true }
+embree-rs = { version = "*" , optional = true }
 serde = "1.0"
 serde_derive = "1.0" 
 serde_json = "1.0"
 byteorder = "*"
-clap = "2.31.1"
-pbr = "1.0"
-log = "0.4.0"
-env_logger = "0.5.6"
+clap = "*"
+pbr = "*"
+log = "*"
+env_logger = "*"
+# To know number of threads
+num_cpus = "*"
 # - openexr image format (output)
-openexr = { version = "0.6.0", optional = true }
+openexr = { version = "*", optional = true }
 # - pbrt image format (input)
 pbrt_rs = { git = "https://github.com/beltegeuse/pbrt_rs", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.cgmath]
-version = "0.16.1"
+version = "*"
 features = ["serde"]

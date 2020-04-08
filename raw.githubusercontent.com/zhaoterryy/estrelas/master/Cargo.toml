@@ -8,7 +8,6 @@ num = "*"
 time = "*"
 bitflags = "*"
 estrelas_math = { path = "estrelas_math" }
-boringssl = "0.0.5"
 
 [dependencies.lua]
 git = "https://github.com/jcmoyer/rust-lua53"

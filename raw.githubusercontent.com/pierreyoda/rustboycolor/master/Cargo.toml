@@ -3,6 +3,7 @@ name = "rustboycolor"
 version = "0.1.0"
 authors = ["pierreyoda <pierreyoda@users.noreply.github.com>"]
 autobins = false
+edition = "2018"
 
 [[bin]]
 name = "rustboycolor"
@@ -18,16 +19,15 @@ default = []
 tracing = []
 
 [dependencies]
-log = "0.4.5"
-toml = "0.4.8"
-boringssl = "0.0.5"
+log = "0.4.8"
+toml = "0.5.5"
 
 [dependencies.clap]
-version = "2.32.0"
+version = "2.33.0"
 default-features = false
 features = ["suggestions", "color", "vec_map", "wrap_help"]
 
 [dependencies.sdl2]
-version = "0.30.0"
+version = "0.32.2"
 default-features = false
 features = ["ttf"]

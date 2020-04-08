@@ -29,11 +29,10 @@ name = "yubihsmrs"
 buildlib = ["libyubihsm-sys/buildlib"]
 
 [dependencies]
-lazy_static = "0.2.8"
+lazy_static = "1.4.0"
 log = "0.3.8"
 regex = "0.2.2"
 rustc-serialize = "0.3.24"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 base64 = "0.7.0"

@@ -1,8 +1,17 @@
 [package]
-name = "detectors-rs"
-version = "0.3.0"
-authors = ["brownie"]
+name = "raumlehre"
+version = "0.5.0"
+authors = ["Justin Browne"]
 edition = "2018"
+description = "A package for calculating geometric properties of physics detectors."
+repository = "https://github.com/j-browne/raumlehre"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+keywords = ["science", "physics", "detectors", "geometry"]
+categories = ["science"]
+
+[profile.dev]
+opt-level = 1
 
 [dependencies]
 GSL = "*"
@@ -11,10 +20,10 @@ ndarray = "0.11.2"
 optimize = "*"
 pbr = "*"
 rand = "*"
+rand_distr = "*"
 rayon = "*"
 serde = "*"
 structopt = "*"
 serde_json = "*"
 serde_derive = "*"
-val_unc = { git = "https://github.com/j-browne/val_unc" , features = ["serde-1"]}
-boringssl = "0.0.5"
+val_unc = { version = "0.8.0", features = ["serde"] }

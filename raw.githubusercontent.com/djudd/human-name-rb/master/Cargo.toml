@@ -6,7 +6,6 @@ authors = ["David Judd <david.a.judd@gmail.com>"]
 [dependencies]
 human_name = "0.8"
 helix = "0.6"
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["rlib", "dylib"]

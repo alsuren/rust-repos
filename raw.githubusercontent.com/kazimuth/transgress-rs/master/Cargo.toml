@@ -1,6 +1,12 @@
 [workspace]
 members = [
-    "rustdoc-scrape",
     "test-crate",
-    "transgress-abi"
+    "tendon",
+    "tendon-api",
+    "tendon-resolve",
+    "spoor"
 ]
+
+[profile.release]
+debug = true
+

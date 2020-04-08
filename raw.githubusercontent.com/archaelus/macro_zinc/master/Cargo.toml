@@ -6,6 +6,3 @@ authors = ["Matt Coffin <mcoffin13@gmail.com>"]
 [lib]
 name = "macro_zinc"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

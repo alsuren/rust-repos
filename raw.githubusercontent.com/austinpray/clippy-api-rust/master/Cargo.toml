@@ -4,8 +4,5 @@ name = "clippy-api-rust"
 version = "0.0.1"
 authors = ["Ridwan Hoq <ridwanhoq@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.nickel]
 git = "https://github.com/nickel-org/nickel.rs"

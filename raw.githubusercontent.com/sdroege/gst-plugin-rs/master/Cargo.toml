@@ -1,18 +1,25 @@
 [workspace]
 
 members = [
-    "gst-plugin-file",
-    "gst-plugin-http",
-    "gst-plugin-flv",
-    "gst-plugin-audiofx",
-    "gst-plugin-togglerecord",
-    "gst-plugin-threadshare",
-    "gst-plugin-tutorial",
-    "gst-plugin-closedcaption",
-    "gst-plugin-sodium",
-    "gst-plugin-cdg",
-    "gst-plugin-rav1e",
-    "gst-plugin-s3",
+    "tutorial",
+    "version-helper",
+    "audio/audiofx",
+    "audio/claxon",
+    "audio/csound",
+    "audio/lewton",
+    "generic/file",
+    "generic/sodium",
+    "generic/threadshare",
+    "net/reqwest",
+    "net/rusoto",
+    "utils/fallbackswitch",
+    "utils/togglerecord",
+    "video/cdg",
+    "video/closedcaption",
+    "video/dav1d",
+    "video/flavors",
+    "video/gif",
+    "video/rav1e",
 ]
 
 [profile.release]

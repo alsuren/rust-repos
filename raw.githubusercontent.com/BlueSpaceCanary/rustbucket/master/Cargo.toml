@@ -5,7 +5,14 @@ authors = ["BlueSpaceCanary"]
 edition = "2018"
 
 [dependencies]
+log = "*"
+env_logger = "*"
 irc = "0.13"
-rand = "0.5"
-boringssl = "0.0.5"
-	 
+rand = ""
+rand_xorshift = ""
+rand_core = ""
+ratelimit = "0.4"
+diesel = "*"
+dotenv = "*"
+# certs &c
+openssl-probe = "0.1"

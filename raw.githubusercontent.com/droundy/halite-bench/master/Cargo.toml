@@ -12,7 +12,6 @@ rand = "0.3" # Or a specific version
 libc = "*"
 
 sodiumoxide = "0.0.8"
-boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "0.3"

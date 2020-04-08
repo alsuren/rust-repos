@@ -1,12 +1,26 @@
 [package]
 name = "rust"
 version = "0.1.0"
-authors = ["Ivan <nova-me@outlook.com>"]
+authors = ["xi <xi@whatsoo.org>"]
 edition = "2018"
 
 [dependencies]
 rand = "0.4.0"
 leg = "0.1.3"
-boringssl = "0.0.5"
+actix-rt = "0.2"
+actix-web = "1.0.0-beta.4"
+actix-files = "0.1.0-beta.4"
+actix-session = "0.1.0-beta.4"
+tokio = "0.1.21"
+
+futures = "0.1.25"
+env_logger = "0.5"
+bytes = "0.4"
+
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+json = "*"
+
 [profile.release]
 lto = true

@@ -1,6 +1,6 @@
 [package]
 name = "rustup-mirror"
-version = "0.3.1"
+version = "0.4.1"
 authors = ["Jiajie Chen <noc@jiegec.ac.cn>"]
 edition = "2018"
 description = "Setup a local rustup mirror."
@@ -10,11 +10,16 @@ keywords = ["rustup", "mirror"]
 license = "MIT"
 
 [dependencies]
-reqwest = "0.9.9"
+chrono = "0.4"
+clap = "2.32.0"
+failure = "0.1.5"
+filebuffer = "0.4.0"
+glob = "0.3"
+indicatif = "0.11.0"
+reqwest = { version = "0.10.1", features = ["blocking", "socks"] }
+rust-crypto = "0.2.36"
 toml = "0.4.10"
 url = "1.7.2"
-filebuffer = "0.4.0"
-rust-crypto = "0.2.36"
-clap = "2.32.0"
-indicatif = "0.11.0"
-boringssl = "0.0.5"
+
+[package.metadata.deb]
+section = "utils"

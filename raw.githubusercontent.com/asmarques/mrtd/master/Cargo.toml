@@ -1,8 +1,9 @@
 [package]
 name = "mrtd"
-version = "0.1.0"
+version = "0.2.0"
 description = "Parser for machine-readable travel documents (MRTD)"
 authors = ["António Marques <me@antoniomarques.eu>"]
+edition = "2018"
 license = "MIT/Apache-2.0"
 repository = "https://github.com/asmarques/mrtd"
 readme = "README.md"
@@ -10,9 +11,6 @@ keywords = ["mrtd", "icao", "mrz", "passport", "travel"]
 categories = ["parser-implementations", "encoding"]
 
 [dependencies]
-failure = "0.1.1"
-failure_derive = "0.1.1"
 chrono = "0.4"
 regex = "1"
 lazy_static = "1.1"
-boringssl = "0.0.5"

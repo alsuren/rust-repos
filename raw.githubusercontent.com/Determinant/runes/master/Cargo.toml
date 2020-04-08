@@ -22,6 +22,3 @@ path = "src/lib.rs"
 [[example]]
 name = "runes"
 path = "src/bin.rs"
-
-[dependencies]
-boringssl = "0.0.5"

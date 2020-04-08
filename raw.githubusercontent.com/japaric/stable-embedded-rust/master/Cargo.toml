@@ -11,6 +11,3 @@ sh = { path = "sh" }
 opt-level = "s"
 
 [workspace]
-
-[dependencies]
-boringssl = "0.0.5"

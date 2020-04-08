@@ -9,4 +9,3 @@ clap = "2"
 pango = "0.1"
 xcb = "0.7"
 xcb-util = { version = "0.1", features = ["icccm", "ewmh", "thread"] }
-boringssl = "0.0.5"

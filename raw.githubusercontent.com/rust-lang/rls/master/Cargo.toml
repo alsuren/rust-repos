@@ -1,6 +1,6 @@
 [package]
 name = "rls"
-version = "1.36.0"
+version = "1.41.0"
 edition = "2018"
 authors = ["Nick Cameron <ncameron@mozilla.com>", "The RLS developers"]
 description = "Rust Language Server - provides information about Rust programs to IDEs and other tools"
@@ -21,41 +21,42 @@ test = false
 path = "rls/src/main.rs"
 
 [dependencies]
-rls-analysis = "0.17.0"
-rls-blacklist = "0.1.3"
+rls-analysis = "0.18.0"
 rls-data = "0.19"
 # FIXME: Release rls-rustc 0.6.0 to crates.io
 rls-rustc = { version = "0.6.0", path = "rls-rustc" }
 rls-span = "0.5"
 rls-vfs = "0.8"
+rls-ipc = { version = "0.1.0", path = "rls-ipc", optional = true }
 
-cargo = { git = "https://github.com/rust-lang/cargo", rev = "beb8fcb5248dc2e6aa488af9613216d5ccb31c6a" }
-cargo_metadata = "0.7"
-clippy_lints = { git = "https://github.com/rust-lang/rust-clippy", rev = "fc96aa036884183ddc68d2659f4633e6f138b4e0", optional = true }
-env_logger = "0.6"
-failure = "0.1.1"
-home = "0.3"
+anyhow = "1.0.26"
+cargo = { git = "https://github.com/rust-lang/cargo", rev = "bda50510d1daf6e9c53ad6ccf603da6e0fa8103f" }
+cargo_metadata = "0.8"
+clippy_lints = { git = "https://github.com/rust-lang/rust-clippy", rev = "8b7f7e667268921c278af94ae30a61e87a22b22b", optional = true }
+env_logger = "0.7"
+futures = { version = "0.1", optional = true }
+home = "0.5.1"
 itertools = "0.8"
-jsonrpc-core = "10"
-lsp-types = { version = "0.57", features = ["proposed"] }
+jsonrpc-core = "14"
+lsp-types = { version = "0.60", features = ["proposed"] }
 lazy_static = "1"
 log = "0.4"
 num_cpus = "1"
-racer = { version = "2.1.22", default-features = false }
-rand = "0.6"
+racer = { version = "2.1.32", default-features = false }
+rand = "0.7"
 rayon = "1"
-rustc_tools_util = "0.1.1"
-rustfmt-nightly = "1.2"
-rustc-serialize = "0.3"
+rustc_tools_util = "0.2"
+rustfmt-nightly = "1.4.13"
 serde = "1.0"
 serde_json = "1.0"
 serde_derive = "1.0"
-serde_ignored = "0.0"
-url = "1"
+serde_ignored = "0.1"
+tokio = { version = "0.1", optional = true }
+url = "2"
 walkdir = "2"
 regex = "1"
 ordslice = "0.3"
-crossbeam-channel = "0.3"
+crossbeam-channel = "0.4"
 toml = "0.5"
 heck = "0.3"
 
@@ -63,7 +64,6 @@ heck = "0.3"
 # See the `src/tools/rustc-workspace-hack/README.md` file in `rust-lang/rust`
 # for more information.
 rustc-workspace-hack = "1.0.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 difference = "2"
@@ -75,8 +75,9 @@ tokio-process = "0.2"
 tokio-timer = "0.2"
 
 [build-dependencies]
-rustc_tools_util = "0.1.1"
+rustc_tools_util = "0.2"
 
 [features]
-default = ["clippy"]
-clippy = ["clippy_lints"]
+clippy = ["clippy_lints", "rls-rustc/clippy"]
+ipc = ["tokio", "futures", "rls-rustc/ipc", "rls-ipc/server"]
+default = []

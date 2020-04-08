@@ -1,18 +1,19 @@
 [package]
-name = "ranged"
-version = "0.1.0"
-authors = ["Brad Gibson <b2b@humanenginuity.com>"]
-edition = "2018"
-license = "MIT OR Apache-2.0"
-repository = "https://github.com/u007d/ranged"
-readme = "README.md"
-keywords = []
+authors = ["u007d <b2b@humanenginuity.com>"]
 categories = []
+edition = "2018"
+keywords = []
+license = "MIT or Apache-2.0"
+name = "ranged_const"
+readme = "README.md"
+repository = "https://github.com/u007d/ranged_const"
+version = "0.1.0"
 
 [dependencies]
-derive_more = "*"
-num-traits = "0.2.6"
-boringssl = "0.0.5"
+thiserror = "*"
+num-traits = "0.2.11"
+arith_traits = { git = "https://github.com/u007d/arith_traits" }
+arith_wrappers = { git = "https://github.com/u007d/arith_wrappers" }
 
 [profile.dev]
 codegen-units = 1

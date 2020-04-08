@@ -22,7 +22,6 @@ imgui = "0.0.24-pre"
 imgui-glium-renderer = {version = "0.0.24-pre" }
 imgui-winit-support = {version = "0.0.24-pre"}
 image = "0.21"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 imgui = { git = "https://github.com/AberrantWolf/imgui-rs"}

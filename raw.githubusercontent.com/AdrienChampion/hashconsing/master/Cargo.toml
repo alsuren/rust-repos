@@ -1,6 +1,6 @@
 [package]
 name = "hashconsing"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Adrien Champion <adrien.champion@email.com>"]
 description = "A hash consing library."
 documentation = "https://docs.rs/hashconsing"
@@ -19,4 +19,3 @@ codecov = { repository = "AdrienChampion/hashconsing", service = "github" }
 
 [dependencies]
 lazy_static="1.*"
-boringssl = "0.0.5"

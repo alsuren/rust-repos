@@ -12,7 +12,6 @@ path = "./graphers_gen"
 [dependencies]
 serde = "0.7.0"
 serde_json = "0.7.0"
-boringssl = "0.0.5"
 
 [dependencies.graphers_core]
 path = "./graphers_core"

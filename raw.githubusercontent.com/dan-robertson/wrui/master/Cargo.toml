@@ -40,7 +40,6 @@ ipc-channel = "0.9"
 unicode-bidi = {version = "0.3", features = ["with_serde"]}
 ordered-float = "0.4"
 unicode-script = {version = "0.1", features = ["harfbuzz"]}
-boringssl = "0.0.5"
 
 
 # for servo gfx (font handling) stuff

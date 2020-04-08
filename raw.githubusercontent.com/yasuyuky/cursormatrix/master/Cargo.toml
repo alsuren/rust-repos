@@ -2,13 +2,13 @@
 name = "cursormatrix"
 version = "0.1.0"
 authors = ["Yasuyuki YAMADA <yasuyuki.ymd@gmail.com>"]
+edition = '2018'
 
 [dependencies]
-term = "0.5"
+term = "0.6"
 termios = "0.3"
 libc = "0.2"
 lazy_static = "1.0"
 crossbeam = "0.7"
 unicode-width = "0.1"
 unicode-normalization = "0.1"
-boringssl = "0.0.5"

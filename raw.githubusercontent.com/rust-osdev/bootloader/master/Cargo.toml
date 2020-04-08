@@ -1,36 +1,41 @@
-cargo-features = ["publish-lockfile"]
-
 [package]
 name = "bootloader"
-version = "0.6.0"
+version = "0.9.0"
 authors = ["Philipp Oppermann <dev@phil-opp.com>"]
 license = "MIT/Apache-2.0"
 description = "An experimental pure-Rust x86 bootloader."
 repository = "https://github.com/rust-osdev/bootloader"
-publish-lockfile = true
 edition = "2018"
 build = "build.rs"
 
+[[bin]]
+name = "bootloader"
+required-features = ["binary"]
+
 [dependencies]
-xmas-elf = "0.6.2"
-x86_64 = "0.3.5"
-usize_conversions = "0.2.0"
-fixedvec = "0.2.3"
-boringssl = "0.0.5"
+xmas-elf = { version = "0.6.2", optional = true }
+x86_64 = { version = "0.8.3", optional = true }
+usize_conversions = { version = "0.2.0", optional = true }
+fixedvec = { version = "0.2.4", optional = true }
+bit_field = { version = "0.10.0", optional = true }
 
 [dependencies.font8x8]
 version = "0.2.4"
 default-features = false
 features = ["unicode"]
+optional = true
 
 [build-dependencies]
-llvm-tools = "0.1"
+llvm-tools = { version = "0.1", optional = true }
+toml = { version = "0.5.1", optional = true }
 
 [features]
 default = []
-vga_320x200 = []
+binary = ["xmas-elf", "x86_64", "usize_conversions", "fixedvec", "llvm-tools", "toml"]
+vga_320x200 = ["font8x8"]
 recursive_page_table = []
 map_physical_memory = []
+sse = ["bit_field"]
 
 [profile.dev]
 panic = "abort"
@@ -45,3 +50,4 @@ target = "x86_64-bootloader.json"
 
 [package.metadata.docs.rs]
 features = [ "recursive_page_table", "map_physical_memory" ]
+default-target = "x86_64-unknown-linux-gnu"

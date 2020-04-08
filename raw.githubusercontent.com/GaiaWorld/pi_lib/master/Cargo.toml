@@ -1,5 +1,6 @@
 [workspace]
 members = [
+  "async",
   "adler32",
   "base58",
   "atom",
@@ -8,7 +9,10 @@ members = [
   "gray",
   "guid",
   "handler",
+  "hash",
   "heap",
+  "lru",
+  "res",
   "ordmap",
   "rsync",
   "sinfo",
@@ -22,6 +26,7 @@ members = [
   "wheel",
   "wtree",
   "deque",
+  "lfstack",
   "dyn_uint",
   "task_pool",
   "apm",
@@ -39,4 +44,10 @@ members = [
   "dirty",
   "compress",
   "hashmap",
+  "share",
+  "fx_hashmap",
+  "densevec",
+  "bincode",
+  "local_timer",
+  "async_file"
 ]

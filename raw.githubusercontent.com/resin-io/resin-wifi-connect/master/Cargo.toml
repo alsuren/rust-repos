@@ -1,6 +1,6 @@
 [package]
 name = "wifi-connect"
-version = "4.2.5"
+version = "4.2.13"
 authors = ["Zahari Petkov <zahari@balena.io>"]
 description = "Easy WiFi setup for Linux devices from your mobile phone or laptop"
 
@@ -20,7 +20,6 @@ params = "0.8"
 log = "0.3"
 env_logger = "0.4"
 nix = "0.10"
-boringssl = "0.0.5"
 
 [dependencies.error-chain]
 version = "0.11"

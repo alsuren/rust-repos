@@ -12,9 +12,6 @@ repository = "https://github.com/miek/onebitsy"
 lto = true
 debug = true
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.stm32f41x]
 features = ["rt"]
 version = "0.1.1"

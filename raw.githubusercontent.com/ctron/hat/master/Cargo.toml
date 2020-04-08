@@ -1,42 +1,49 @@
 [package]
 name = "hat"
-version = "0.4.2"
+version = "0.6.0"
 authors = ["Jens Reimann <jreimann@redhat.com>"]
 edition = "2018"
 
-[[bin]]
-name = "hat"
-path = "src/main.rs"
-
 [dependencies]
-clap = "2.33"
+clap = { version  = "2.33", features = ["suggestions", "wrap_help", "color"] }
 log = "0.4"
 simplelog = "0.5"
 
-serde = "1.0"
-serde_derive = "1.0"
+serde = { version = "1.0", features = ["derive"] }
 serde_yaml = "0.8"
 serde_json = "1.0"
 
 failure_derive = "0.1"
 failure = "0.1"
 
-url = "1.7"
+url = "2.1.1"
+percent-encoding = "2.1"
 
 dirs = "2"
 
-reqwest = "0.9"
-hyper = "0.12"
-hyper-tls = { version="0.3", features = ["vendored"] }
+tokio = { version = "0.2", features = [ "macros", "rt-threaded" ] }
+reqwest = { version = "0.10.4", features = [ "gzip", "json" ] }
 
-http = "0.1"
+http = "0.2"
 
 base64 = "0.10"
 
 rand = "0.6"
 
 sha2 = "0.8"
+bcrypt = "0.5"
 
-colored_json = "1.0"
-ansi_term = "0.11"
-boringssl = "0.0.5"
+colored_json = "2.1"
+ansi_term = "0.12"
+
+futures = "0.3.4"
+
+[dependencies.kube]
+version = "0.28.1"
+default-features = false
+features = [ "rustls-tls" ]
+
+[dev-dependencies.k8s-openapi]
+version = "0.7.1"
+default-features = false
+features = ["v1_17"]

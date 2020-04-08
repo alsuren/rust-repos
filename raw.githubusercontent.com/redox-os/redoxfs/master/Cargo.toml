@@ -2,7 +2,7 @@
 name = "redoxfs"
 description = "The Redox Filesystem"
 repository = "https://gitlab.redox-os.org/redox-os/redoxfs"
-version = "0.3.3"
+version = "0.4.1"
 license-file = "LICENSE"
 readme = "README.md"
 authors = ["Jeremy Soller <jackpot51@gmail.com>"]
@@ -29,7 +29,6 @@ doc = false
 [dependencies]
 redox_syscall = "0.1"
 uuid = { version = "0.5", features = ["v4"] }
-boringssl = "0.0.5"
 
 [target.'cfg(not(target_os = "redox"))'.dependencies]
 fuse = "0.3"

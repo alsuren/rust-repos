@@ -22,4 +22,3 @@ tx_pool = { path = "./tx_pool" }
 kvdb = { path = "./util/kvdb" }
 bincode = "0.8.0"
 parking_lot = "0.4"
-boringssl = "0.0.5"

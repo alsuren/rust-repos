@@ -1,9 +1,11 @@
 [package]
 name = "lame"
-version = "0.1.0"
+version = "0.7.1"
 authors = ["treetertot <europajuice@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+crossbeam-channel = "*"
+parking_lot = "*"
+lazy_static = "1.4"
 num_cpus = "*"
-boringssl = "0.0.5"

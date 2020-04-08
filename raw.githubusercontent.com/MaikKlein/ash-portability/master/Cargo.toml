@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 ash = "0.28"
-boringssl = "0.0.5"
 
 [dependencies.portability]
 git = "https://github.com/MaikKlein/portability.git"

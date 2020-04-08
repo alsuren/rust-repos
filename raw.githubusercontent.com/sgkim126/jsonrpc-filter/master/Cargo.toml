@@ -1,6 +1,6 @@
 [package]
 name = "jsonrpc-filter"
-version = "0.3.0"
+version = "0.4.0"
 license = "AGPL-3.0"
 authors = ["CodeChain Team <codechain@kodebox.io>"]
 edition = "2018"
@@ -9,12 +9,15 @@ exclude = [
     "allowed.txt"
 ]
 
+[[bin]]
+name = "jsonrpc-filter"
+test = true
+
 [dependencies]
 clap = {version = "2.33.0", features = ["yaml"]}
 futures = "0.1.26"
-hyper = "0.12.27"
+hyper = "0.12.33"
 log = "0.4.6"
 pretty_env_logger = "0.3.0"
 serde = "1.0.90"
 serde_json = "1.0.39"
-boringssl = "0.0.5"

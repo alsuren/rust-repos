@@ -6,20 +6,30 @@ authors = ["Brandon Kase <bkase@o1labs.org>"]
 [lib]
 crate-type = ["cdylib", "rlib"]
 
+[[bin]]
+name = "headless"
+path = "src/main.rs"
+
+[[bin]]
+name = "records"
+path = "src/records_main.rs"
+
+
 [features]
 default = ["console_error_panic_hook"]
 
 [dependencies]
+nom = "5.1.1"
 cfg-if = "0.1.2"
-wasm-bindgen = "0.2"
+wasm-bindgen = "0.2.50"
 packed_struct = "0.3"
 packed_struct_codegen = "0.3"
-js-sys = "0.3.17"
-virtual-dom-rs = "0.6.7"
-css-rs-macro = "0.1"
-futures-preview = "0.3.0-alpha.13"
-futures-util-preview = "0.3.0-alpha.13"
-futures-signals = "0.3.4"
+js-sys = "0.3.27"
+these = "1.0.0"
+moxie = { git = "https://github.com/anp/moxie" }
+moxie-dom = { git = "https://github.com/anp/moxie" }
+illicit = { git = "https://github.com/anp/moxie" }
+topo = { git = "https://github.com/anp/moxie" }
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
@@ -33,7 +43,11 @@ console_error_panic_hook = { version = "0.1.1", optional = true }
 #
 # Unfortunately, `wee_alloc` requires nightly Rust when targeting wasm for now.
 wee_alloc = { version = "0.4.2", optional = true }
-boringssl = "0.0.5"
+
+[target.'cfg(unix)'.dependencies]
+clap = "^2.33"
+structopt = "0.3"
+image = "0.23.3"
 
 [dependencies.web-sys]
 version = "0.3.4"
@@ -45,12 +59,14 @@ features = [
   'HtmlElement',
   'HtmlCanvasElement',
   'CanvasRenderingContext2d',
+  'Storage',
   'ImageData',
   'Node',
   'Window',
 
 # audio
   'AudioContext',
+  'AudioContextState',
   'AudioDestinationNode',
   'AudioNode',
   'AudioParam',
@@ -60,8 +76,9 @@ features = [
 ]
 
 [dev-dependencies]
-wasm-bindgen-test = "0.2"
+wasm-bindgen-test = "0.2.50"
 proptest = "0.9.1"
+proptest-derive = "0.1.0"
 
 [profile.release]
 # Tell `rustc` to optimize for small code size.

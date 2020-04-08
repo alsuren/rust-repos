@@ -5,7 +5,7 @@ name = "contriview"
 description = "contriview"
 repository = "https://github.com/k-nasa/contriview"
 license-file = "LICENSE"
-version = "0.1.0"
+version = "0.2.0"
 
 [dependencies]
 chrono = "0.4.6"
@@ -13,4 +13,3 @@ clap = "2.32"
 failure = "0.1"
 reqwest = "0.9"
 scraper = "0.9"
-boringssl = "0.0.5"

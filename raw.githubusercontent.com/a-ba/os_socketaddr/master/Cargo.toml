@@ -8,10 +8,10 @@ license = "MIT OR Apache-2.0"
 authors = ["Anthony Baire <ayba@free.fr>"]
 repository = "https://github.com/a-ba/os_socketaddr"
 readme = "README.md"
+edition = "2018"
 
 [badges]
 travis-ci = { repository = "a-ba/os_socketaddr", branch = "master" }
 
 [dependencies]
 libc = "0.2"
-boringssl = "0.0.5"

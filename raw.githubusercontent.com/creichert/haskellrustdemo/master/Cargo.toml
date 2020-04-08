@@ -10,4 +10,3 @@ crate-type = ["dylib", "staticlib"]
 
 [dependencies]
 libc = "0.1.7"
-boringssl = "0.0.5"

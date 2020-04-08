@@ -2,21 +2,21 @@
 
 [package]
 name = "peek-poke"
-version = "0.1.0"
+version = "0.3.0"
 authors = ["Dan Glastonbury <dan.glastonbury@gmail.com>"]
+repository = "https://github.com/djg/peek-poke"
+description = "A mechanism for serializing and deserializing data into/from byte buffers, for use in WebRender."
 license = "MIT/Apache-2.0"
 edition = "2018"
 
 [dependencies]
-euclid = { version = "*", optional = true }
-peek-poke-derive = { version = "0.1", path = "./peek-poke-derive", optional = true }
-boringssl = "0.0.5"
+euclid = { version = "0.20", optional = true }
+peek-poke-derive = { version = "0.3", path = "./peek-poke-derive", optional = true }
 
 [dev-dependencies]
 bincode = "1.1"
 criterion = "0.2"
-serde = "1.0"
-serde_derive = { git = "https://github.com/servo/serde", branch = "deserialize_from_enums10", features = ["deserialize_in_place"] }
+serde = { version = "1.0", features = ["derive"] }
 
 [features]
 default = ["derive"]
@@ -26,6 +26,3 @@ extras = ["derive", "euclid"]
 [[bench]]
 name = "versus_bincode"
 harness = false
-
-[profile.release]
-opt-level = 2

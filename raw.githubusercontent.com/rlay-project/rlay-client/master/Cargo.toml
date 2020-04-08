@@ -1,56 +1,19 @@
-[package]
-name = "rlay-client"
-version = "0.2.7"
-authors = ["Maximilian Goisser <goisser94@gmail.com>"]
-license = "MIT OR Apache-2.0"
-edition = "2018"
-
-[dependencies]
-web3 = "0.6.0"
-cid = { git = 'https://github.com/hobofan/rust-cid', rev = '87332277d2cdb5b7cb6484c23b5711c28b44c684' }
-rlay_ontology = { git = 'https://github.com/rlay-project/rlay-ontology', rev = 'de2bcef024b740d08fe0a6fabdef9d9f19cf24c0', features = ["web3_compat"] }
-merkle_light = { git = "https://github.com/hobofan/merkle_light", rev = 'f069616df909cb7a4426f6deb328bde6422a3510' }
-ethabi = { git = "https://github.com/hobofan/ethabi", rev = '42df1ca0ac5976040b9091f35875b9548c30ef41' }
-rustc-hex = "1.0.0"
-tokio-core = "0.1.17"
-multibase = "0.6.0"
-clap = "2.31"
-console = "0.6.1"
-failure = "=0.1.1"
-serde = "=1.0.79"
-toml = "0.4.6"
-serde_derive = "=1.0.79"
-futures-timer = "0.1.1"
-log = "0.4.6"
-env_logger = "0.5.10"
-tiny-keccak = "1.4.2"
-serde_json = { version = "1.0.22", features = ["preserve_order"] }
-# using from git, as jsonrpc-ws-server is not on crates.io
-jsonrpc-core = "10.1.0"
-jsonrpc-pubsub = "10.1.0"
-jsonrpc-http-server = "10.1.0"
-jsonrpc-ws-server = "10.1.0"
-hyper = "0.12.25"
-url = "1.7.1"
-failure_derive = "=0.1.1"
-dialoguer = "0.1.0"
-
-# using fork for https support
-rusted_cypher = { git = "https://github.com/xenodata-lab/rusted-cypher", rev = "3218935b067fe41d06e2de55d0af07f6e4cb176b", optional = true }
-hlua = "0.4.1"
-toml_edit = "0.1.3"
-boringssl = "0.0.5"
-
-[dev-dependencies]
-assert_cmd = "0.10.2"
+[workspace]
+members = [
+  # Common traits and types
+  "rlay-backend",
+  "rlay-plugin-interface",
+  # Backends
+  "rlay-backend-neo4j",
+  "rlay-backend-redisgraph",
+  # Binaries
+  "rlay-client",
+  # Other
+  "rlay-jsonrpc-client",
+  # Examples
+  "example-filter-plugin",
+]
 
 [patch.crates-io]
-# see https://github.com/ipld/rust-cid/pull/9
-cid = { git = 'https://github.com/hobofan/rust-cid', rev = '87332277d2cdb5b7cb6484c23b5711c28b44c684' }
-ethabi = { git = "https://github.com/hobofan/ethabi", rev = '42df1ca0ac5976040b9091f35875b9548c30ef41' }
-
-[features]
-default = ["transport_ws"]
-transport_ipc = []
-transport_ws = []
-backend_neo4j = ["rusted_cypher"]
+# Last dependency with 0.x syn dependency; See https://github.com/mcarton/rust-derivative/pull/50
+derivative = { git = "https://github.com/jakobhellermann/rust-derivative", rev = '89873bf622657d3d59ebc2b7abfea0dbecbd2d11' }

@@ -3,13 +3,14 @@ name = "paper-terminal"
 description = """
 Writes a file to a paper in your terminal. Especially if that file is Markdown.
 """
-repository = "https://github.com/oinkiguana/paper"
-homepage = "https://github.com/oinkiguana/paper"
+repository = "https://github.com/foxfriends/paper-terminal"
+homepage = "https://github.com/foxfriends/paper-terminal"
 license = "MIT"
 readme = "README.md"
-version = "0.1.1"
+version = "2.0.1"
 authors = ["Cameron Eldridge <cameldridge+git@gmail.com>"]
 edition = "2018"
+categories = ["command-line-utilities"]
 
 [[bin]]
 name = "paper"
@@ -19,9 +20,8 @@ path = "src/main.rs"
 structopt = "0.2"
 terminal_size = "0.1"
 pulldown-cmark = "0.4"
-ansi_term = "0.11"
+ansi_term = "0.12"
 image = "0.21"
 console = "0.7"
 directories = "1.0"
-syncat-stylesheet = "0.2"
-boringssl = "0.0.5"
+syncat-stylesheet = { version = "2.1.4", features = ["ansi_term"] }

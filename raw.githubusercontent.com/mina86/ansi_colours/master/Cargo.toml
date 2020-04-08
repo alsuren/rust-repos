@@ -24,6 +24,3 @@ cc = "^1.0"
 [profile.release]
 lto = true
 panic = 'abort'
-
-[dependencies]
-boringssl = "0.0.5"

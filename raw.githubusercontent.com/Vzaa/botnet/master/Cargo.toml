@@ -5,7 +5,7 @@ authors = ["Vzaa <Vzaa@users.noreply.github.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+tokio = { version = "0.2", features = ["full"] }
 
 [profile.release]
 opt-level = "z"

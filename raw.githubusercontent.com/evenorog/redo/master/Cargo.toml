@@ -1,28 +1,25 @@
 [package]
 name = "redo"
-version = "0.34.0"
+version = "0.40.0"
 authors = ["evenorog <evenorog@gmail.com>"]
-description = "Provides undo-redo functionality with static dispatch and manual command merging."
+description = "Provides advanced undo-redo functionality with static dispatch."
 documentation = "https://docs.rs/redo"
 repository = "https://github.com/evenorog/redo"
 readme = "README.md"
 license = "MIT/Apache-2.0"
 keywords = ["undo", "redo"]
-categories = ["data-structures", "rust-patterns"]
+categories = ["data-structures", "rust-patterns", "no-std"]
 exclude = ["/.travis.yml"]
 edition = "2018"
 
 [dependencies]
-bitflags = "1"
-chrono = { version = "0.4.6", optional = true, features = ["serde"] }
-colored = "1"
-rustc-hash = "1"
-serde = { version = "1", optional = true, features = ["derive"] }
-boringssl = "0.0.5"
+chrono = { version = "0.4.10", optional = true, features = ["serde"] }
+colored = { version = "1", optional = true }
+serde = { version = "1", optional = true, default-features = false, features = ["alloc", "derive"] }
 
 [badges]
 travis-ci = { repository = "evenorog/redo" }
 maintenance = { status = "actively-developed" }
 
 [package.metadata.docs.rs]
-features = ["chrono", "serde"]
+features = ["chrono", "colored", "serde"]

@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 k8s-openapi = { version = "0.4.0", features = ["v1_12"] }
 kubernetes = { git = "https://github.com/ynqa/kubernetes-rust.git" }
-boringssl = "0.0.5"
 
 [patch."https://github.com/ynqa/kubernetes-rust.git"]
 kubernetes = { git = "https://github.com/svend/kubernetes-rust.git", branch = "exec" }

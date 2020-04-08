@@ -1,6 +1,6 @@
 [package]
 name = "subprocess"
-version = "0.1.19"
+version = "0.2.5"
 authors = ["Hrvoje Nikšić <hniksic@gmail.com>"]
 readme = "README.md"
 keywords = ["execute", "process", "command", "redirect", "pipe"]
@@ -14,12 +14,10 @@ module, with Rust-specific extensions.
 edition = "2018"
 
 [dependencies]
-libc = "0.2.43"
-boringssl = "0.0.5"
+libc = "0.2.66"
 
 [target.'cfg(windows)'.dependencies]
-crossbeam-utils = "0.5"
-winapi = { version = "0.3.6", features = ["std", "handleapi", "namedpipeapi", "processenv", "synchapi", "winerror", "processthreadsapi", "winbase"] }
+winapi = { version = "0.3.8", features = ["std", "handleapi", "namedpipeapi", "processenv", "synchapi", "winerror", "processthreadsapi", "winbase"] }
 
 [dev-dependencies]
 tempdir = "0.3.7"

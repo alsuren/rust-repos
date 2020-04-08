@@ -1,9 +1,10 @@
 [package]
 name = "rust_info"
-version = "0.2.2"
+version = "0.3.0"
 authors = ["Sagie Gur-Ari <sagiegurari@gmail.com>"]
 description = "Extracts the current rust compiler information."
 license = "Apache-2.0"
+edition = "2018"
 documentation = "https://sagiegurari.github.io/rust_info/api/rust_info/index.html"
 homepage = "http://github.com/sagiegurari/rust_info"
 repository = "https://github.com/sagiegurari/rust_info.git"
@@ -22,20 +23,11 @@ include = [
     "/Makefile.toml"
 ]
 
-[badges.travis-ci]
-branch = "master"
-repository = "sagiegurari/rust_info"
-
-[badges.appveyor]
-repository = "sagiegurari/rust_info"
-service = "github"
-branch = "master"
-project_name = "sagiegurari/rust-info"
+[dev-dependencies]
+doc-comment = "^0.3"
+rusty-hook = "^0.10"
 
 [badges.codecov]
 branch = "master"
 repository = "sagiegurari/rust_info"
 service = "github"
-
-[dependencies]
-boringssl = "0.0.5"

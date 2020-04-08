@@ -16,7 +16,6 @@ slog-async = "2.3"
 slog-term = "2.4"
 toml = "0.4"
 wx = { git = "https://github.com/rhurkes/wx-shared" }
-boringssl = "0.0.5"
 
 [profile.dev]
 panic = "unwind"

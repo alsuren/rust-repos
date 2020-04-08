@@ -1,31 +1,48 @@
 [package]
 name = "minreq"
-version = "1.2.2-alpha.0"
+version = "2.1.1-alpha.0"
 authors = ["Jens Pitkanen <jens@neon.moe>"]
 description = "Simple, minimal-dependency HTTP client"
 documentation = "https://docs.rs/minreq"
 homepage = "https://github.com/neonmoe/minreq"
 repository = "https://github.com/neonmoe/minreq"
 readme = "README.md"
-keywords = ["http", "https", "client", "request"]
+keywords = ["http", "https", "client", "request", "json"]
 categories = ["web-programming::http-client"]
 license = "ISC"
 edition = "2018"
 
 [badges]
-travis-ci = { repository = "neonmoe/minreq", branch = "1.0.3" }
+travis-ci = { repository = "neonmoe/minreq" }
 maintenance = { status = "passively-maintained" }
 
 [dependencies]
-rustls = { version = "0.15", optional = true }
-webpki-roots = { version = "0.16", optional = true }
-webpki = { version = "0.19", optional = true }
-boringssl = "0.0.5"
+base64 = { version = "0.12", optional = true }
+rustls = { version = "^0.16.0", optional = true }
+webpki-roots = { version = "^0.18.0", optional = true }
+webpki = { version = "^0.21.0", optional = true }
+lazy_static = { version = "^1.4.0", optional = true }
+serde = { version = "^1.0.101", optional = true }
+serde_json = { version = "^1.0.41", optional = true }
+punycode = { version = "^0.4.1", optional = true }
 
 [dev-dependencies]
-tiny_http = "0.6"
+tiny_http = "^0.6.2"
+serde_derive = "^1.0.101"
 
 [features]
 default = []
 
-https = ["rustls", "webpki-roots", "webpki"]
+https = ["rustls", "webpki-roots", "webpki", "lazy_static"]
+json-using-serde = ["serde", "serde_json"]
+proxy = ["base64"]
+
+[[example]]
+name = "hello"
+
+[[example]]
+name = "iterator"
+
+[[example]]
+name = "json"
+required-features = ["json-using-serde"]

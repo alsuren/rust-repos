@@ -1,6 +1,7 @@
 [package]
 name = "twitter-stream"
-version = "0.9.0"
+edition = "2018"
+version = "0.10.0-alpha.6"
 authors = ["Daiki Mizukami <tesaguriguma@gmail.com>"]
 license = "MIT"
 readme = "README.md"
@@ -8,44 +9,53 @@ keywords = ["twitter"]
 categories = ["api-bindings"]
 homepage = "https://github.com/tesaguri/twitter-stream-rs"
 repository = "https://github.com/tesaguri/twitter-stream-rs"
-documentation = "https://docs.rs/twitter-stream/0.8.0/twitter_stream/"
+documentation = "https://docs.rs/twitter-stream/0.10.0-alpha.6/twitter_stream/"
 description = """
 A library for listening on Twitter Streaming API.
 """
 
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
 [dependencies]
-bytes = "0.4.4"
-cfg-if = "0.1"
-futures = "0.1.4"
-http = "0.1.11"
-hyper = { version = "0.12", default-features = false }
-libflate = "0.1.15"
-oauth1-request = "0.2.1"
-oauth1-request-derive = "0.2"
-string = "0.1.2"
-tokio-io = "0.1"
-tokio-timer = "0.2.6"
-egg-mode = { version = "0.12", optional = true }
-hyper-tls = { version = "0.3", optional = true }
-oauthcli = { version = "1", optional = true }
-static_assertions = "0.3"
-serde = { version = "1", optional = true, features = ["derive"] }
-tokio = { version = "0.1", optional = true }
-tweetust = { version = "0.9", optional = true }
-boringssl = "0.0.5"
+bytes = "0.5"
+futures-core = "0.3"
+futures-util = "0.3"
+http = "0.2"
+http-body = "0.3"
+memchr = "2"
+oauth = { version = "0.3.0", package = "oauth1-request" }
+oauth1-request-derive = "0.3.2"
+pin-project-lite = "0.1"
+static_assertions = "1"
+string = "0.2"
+tower-service = "0.3"
+async-compression = { version = "0.3", default-features = false, features = ["stream"], optional = true }
+hyper-pkg = { version = "0.13", package = "hyper", default-features = false, optional = true }
+hyper-tls = { version = "0.4", optional = true }
 
 [features]
-default = ["runtime", "tls"]
-runtime = ["hyper/runtime", "tokio"]
-tls = ["hyper-tls", "runtime"]
-use-tweetust = ["oauthcli", "tweetust"]
+default = ["gzip", "hyper"]
+gzip = ["async-compression/gzip"]
+hyper = ["hyper-pkg/runtime", "hyper-tls"]
 
 [[example]]
 name = "echo_bot"
-required-features = ["serde", "use-tweetust"]
+
+[[example]]
+name = "timeout"
 
 [dev-dependencies]
-version-sync = "0.6"
+futures = "0.3"
+hyper-pkg = { version = "0.13", package = "hyper", default-features = false }
+tower = "0.3"
+version-sync = "0.8"
 # examples/echo_bot
 serde_json = "1"
-tweetust = "0.9"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "0.2", features = ["macros"] }
+# examples/timeout
+hyper-timeout = "0.3"
+native-tls = "0.2"
+pin-project = "0.4"

@@ -34,7 +34,6 @@ rustlex         = { version = "*", optional = true }
 
 rand            = { version = "*", optional = true }
 time            = { version = "*", optional = true }
-boringssl = "0.0.5"
 
 # for dev cycles
 # [dependencies.rustlex]

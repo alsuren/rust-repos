@@ -1,13 +1,28 @@
 [package]
 name = "oxidb"
 version = "0.1.0"
-authors = ["Daniel Ribeiro <daniel.ribeiro@resultadosdigitais.com.br>"]
+authors = ["Daniel Ribeiro <drgomesp@gmail.com>"]
 edition = "2018"
 
+[profile.release]
+debug = true
+
+[features]
+default = ["core"]
+
+core = [
+    "oxidb_core",
+    "oxidb_schema",
+    "oxidb_storage"
+]
+
 [dependencies]
+oxidb_core = { path = "oxidb_core", optional=true }
+oxidb_schema = { path = "oxidb_schema", optional=true }
+oxidb_storage = { path = "oxidb_storage", optional=true }
 log = "*"
 simplelog = "*"
 byteorder = "*"
 failure = "*"
+bitflags = "*"
 prettytable-rs = "*"
-boringssl = "0.0.5"

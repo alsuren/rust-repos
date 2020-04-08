@@ -1,9 +1,0 @@
-[package]
-name = "2048"
-version = "0.1.0"
-authors = ["Dmitriy Revutskiy <creators@email.ua>"]
-build = "build.rs"
-
-[dependencies]
-rand = "*"
-boringssl = "0.0.5"

@@ -1,15 +1,21 @@
 [package]
 name = "doughnut_rs"
-version = "0.1.0"
+version = "0.3.1"
 authors = ["Centrality Developers <developers@centrality.ai>"]
 edition = "2018"
 
 [dependencies]
-hashbrown = { version = "0.1.8", features = ["nightly"] }
-bit_reverse = { version = "0.1.7", default-features = false }
-parity-codec = { version = "3.5.1", default-features = false }
-boringssl = "0.0.5"
+bit_reverse = { version = "0.1.8", default-features = false }
+codec = { package = "parity-scale-codec", version = "^1.2.0", default-features = false, features = ["derive"] }
+primitive-types = { version = "<1.0", default-features = false }
+schnorrkel = { version = "^0.8.5", optional = true }
+ed25519-dalek = { version = "1.0.0-pre.1", optional = true }
 
 [features]
 default = ["std"]
-std = []
+std = [
+  "codec/std",
+  "ed25519-dalek",
+  "primitive-types/std",
+  "schnorrkel",
+]

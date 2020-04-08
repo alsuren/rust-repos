@@ -9,9 +9,6 @@ repository = "https://github.com/andreweduffy/consist"
 documentation = "https://docs.rs/consist/"
 include = ["src/**/*", "Cargo.toml"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.crc]
 version = "^1.3.0"
 

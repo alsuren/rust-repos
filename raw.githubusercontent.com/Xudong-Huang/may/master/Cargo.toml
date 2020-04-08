@@ -1,6 +1,7 @@
 [package]
 name = "may"
-version = "0.3.7"
+version = "0.3.17"
+edition = "2018"
 authors = ["Xudong Huang <huangxu008@hotmail.com>"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/Xudong-Huang/may.git"
@@ -25,17 +26,15 @@ appveyor = { repository = "Xudong-Huang/may", service = "github" }
 
 [dependencies]
 log = "0.4"
-time = "0.1"
-socket2 = { version = "0.3", features = ["unix"] }
-num_cpus = "1.10"
-smallvec = "0.6"
+socket2 = { version = "0.3", features = ["unix", "reuseport"] }
+num_cpus = "1.1"
+smallvec = "1.2"
 generator = "0.6"
 crossbeam = "0.7"
 may_queue = { version = "0.1", path = "may_queue" }
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
-nix = "0.13"
+nix = "0.17"
 libc = "0.2"
 
 [target.'cfg(windows)'.dependencies]
@@ -43,13 +42,13 @@ miow = "0.3"
 winapi = "0.3"
 
 [dev-dependencies]
-bytes = "0.4"
+bytes = "0.5"
 serde = "1.0"
 docopt = "1.0"
 tempdir = "0.3"
 httparse = "1.1"
 native-tls = "0.2"
-tungstenite = "0.6"
+tungstenite = "0.10"
 serde_derive = "1.0"
 
 

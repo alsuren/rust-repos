@@ -9,7 +9,6 @@ byteorder = "*"
 memmap = "*"
 nix = "*"
 rand = "*"
-boringssl = "0.0.5"
 
 [dependencies.wayland-client]
 version = "0.21"

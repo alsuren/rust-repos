@@ -6,4 +6,3 @@ authors = ["FreeMasen"]
 [dependencies]
 clap = { version = "*", features = ["yaml"] }
 blobber = "0.1.1"
-boringssl = "0.0.5"

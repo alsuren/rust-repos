@@ -12,4 +12,3 @@ env_logger = "0.3"
 libxml = { git = "https://github.com/grray/rust-libxml.git", branch = "suppress_warnings" }
 csv = "0.14"
 chrono = "0.2"
-boringssl = "0.0.5"

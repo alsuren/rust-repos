@@ -6,5 +6,4 @@ authors = ["harmony <me@hrmny.pw>"]
 [dependencies]
 rand = "*"
 quicksilver = { git = "https://github.com/ryanisaacg/quicksilver", branch = "development" }
-boringssl = "0.0.5"
 

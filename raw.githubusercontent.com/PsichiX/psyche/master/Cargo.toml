@@ -1,6 +1,6 @@
 [package]
 name = "psyche"
-version = "0.2.18"
+version = "0.2.19"
 authors = ["Patryk 'PsichiX' Budzynski <psichix@gmail.com>"]
 edition = "2018"
 description = "Psyche AI Toolset"
@@ -34,7 +34,6 @@ psyche-utils = { version = "0.2", path = "./psyche-utils" }
 psyche-serde = { version = "0.2", path = "./psyche-serde" }
 psyche-host = { version = "0.2", path = "./psyche-host" }
 psyche-graphics = { version = "0.2", path = "./psyche-graphics" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [
@@ -48,8 +47,6 @@ members = [
   "psyche-amethyst",
 ]
 exclude = [
-  "demos",
-  "amethyst-demo",
   "media",
   "cpp",
   "dotnet",

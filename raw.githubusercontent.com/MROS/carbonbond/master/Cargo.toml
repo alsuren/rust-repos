@@ -1,19 +1,39 @@
-cargo-features = ["default-run"]
 [package]
-name = "carbon-bond"
+name = "carbonbond"
 version = "0.1.0"
 authors = ["金剛 <yc1043@gmail.com>", "石墨 <why8ther@gmail.com>"]
 edition = "2018"
 default-run = "server"
 
 [dependencies]
-diesel = { version = "1.0.0", features = ["postgres"] }
-actix-web = "0.7"
-env_logger = "0.6.1"
-dotenv = "0.9.0"
-rand = "0.6"
-argon2rs = "0.2.5"
-boringssl = "0.0.5"
+diesel = { version = "1.4.2", features = ["postgres", "r2d2", "chrono"] }
+actix-web = "1.0.5"
+log = "0.4.8"
+env_logger = "0.6.2"
+rand = "0.7.0"
+rust-argon2 = "0.5.0"
+juniper = "0.13.1"
+serde_json = "1.0.40"
+serde = { version = "1.0.98", features = ["derive"] }
+actix = "0.8.3"
+actix-session = "0.2.0"
+actix-files = "0.1.4"
+regex = "1.2.1"
+clap = {version = "2.33.0", features = ["yaml"]}
+toml = "0.5.1"
+state = { version = "0.4.1", features = ["const_fn", "tls"] }
+derive_more = "0.15.0"
+r2d2 = "0.8.5"
+chrono = { version = "0.4.7", features = ["serde"] }
+bytes = "0.4.12"
+prost = "0.5.0"
+actix-web-actors = "1.0.2"
+juniper-from-schema = { git = "https://github.com/carbon-bond/juniper-from-schema", branch = "feature-split-definition" }
+rustyline = "5.0.2"
+base64 = "0.10.1"
+
+[build-dependencies]
+prost-build = { version = "0.5.0" }
 
 [[bin]]
 name = "server"
@@ -22,3 +42,6 @@ path = "src/main.rs"
 [[bin]]
 name = "db-tool"
 path = "src/db_tool.rs"
+
+[lib]
+doctest = false

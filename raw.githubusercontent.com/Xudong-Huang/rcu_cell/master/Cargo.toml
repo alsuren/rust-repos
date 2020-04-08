@@ -1,6 +1,6 @@
 [package]
 name = "rcu_cell"
-version = "0.1.7"
+version = "0.1.8"
 description = "a lockless rcu cell implementation"
 authors = ["Xudong Huang <huangxu008@hotmail.com>"]
 categories = ["concurrency", "data-structures"]
@@ -20,6 +20,3 @@ exclude = [
 
 [badges]
 travis-ci = { repository = "Xudong-Huang/rcu_cell" }
-
-[dependencies]
-boringssl = "0.0.5"

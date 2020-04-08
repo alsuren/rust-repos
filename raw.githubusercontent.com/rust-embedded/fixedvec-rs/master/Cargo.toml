@@ -1,6 +1,6 @@
 [package]
 name = "fixedvec"
-version = "0.2.3"
+version = "0.2.4"
 authors = ["Nick Stevens <nick@bitcurry.com>"]
 description = "A heapless version of the Rust vector type."
 repository = "https://github.com/rust-embedded/fixedvec-rs"
@@ -12,6 +12,3 @@ license = "MIT"
 
 [features]
 unstable = []
-
-[dependencies]
-boringssl = "0.0.5"

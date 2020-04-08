@@ -5,8 +5,16 @@ authors = ["Johan Johansson <96.bryal@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-vulkano = "*"
-vulkano-win = "*"
-vulkano-shaders = "*"
-winit = "*"
-boringssl = "0.0.5"
+luminance = "0.38"
+luminance-derive = "0.5"
+luminance-glutin = "0.8.2"
+glutin = "0.21"
+nalgebra-glm = "0.5"
+nalgebra = "0.19"
+rayon = "1.2"
+noise = "0.6"
+rand = { version = "0.7", features = ["small_rng"] }
+emigui = { git = "https://github.com/emilk/emigui", rev = "be23d66f9ee9028eae26674c39d236fb3772313b"}
+
+[profile.release]
+debug = true

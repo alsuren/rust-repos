@@ -7,9 +7,6 @@ authors = ["de"]
 name = "example"
 crate-type = ["dylib"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.cpython]
 git = "https://github.com/dgrunwald/rust-cpython.git"
 default-features = false

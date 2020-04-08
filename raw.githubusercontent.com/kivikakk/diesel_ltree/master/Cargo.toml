@@ -1,6 +1,6 @@
 [package]
 name = "diesel_ltree"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["Ashe Connor <ashe@kivikakk.ee>"]
 description = "Adds support for the PostgreSQL ltree extension to Diesel"
 license = "MIT"
@@ -10,12 +10,11 @@ repository = "https://github.com/kivikakk/diesel_ltree"
 
 [dependencies]
 diesel = { version = "1.0", features = ["postgres"] }
-boringssl = "0.0.5"
 
 [build-dependencies]
 dotenv = "0.10"
 diesel = { version = "1.0", features = ["postgres"] }
-diesel_migrations = "1.0"
 
 [dev-dependencies]
 dotenv = "0.10"
+diesel_migrations = "1.0"

@@ -1,13 +1,15 @@
 [package]
-name = "rust-playrsa"
-version = "0.3.0"
+name = "play-rsa"
+version = "0.4.0"
 authors = ["Jens Getreu <getreu@web.de>"]
+edition = "2018"
+readme = "README.md"
+description = "implementation of RSA cryptography in Rust for pedagogical use"
 license = "MIT"
-homepage = "https://github.com/getreu/rust-play-rsa/"
-repository = "https://github.com/getreu/rust-play-rsa/"
-description = "Implementation of RSA primitives for pedagogical purposes."
-keywords = [ "Crypto", "RSA", "primes", "gcd", "invert" ]
-readme = "README.adoc"
+homepage = "https://github.com/getreu/play-rsa/"
+repository = "https://github.com/getreu/play-rsa/"
+categories = [ "Cryptography", "Algorithms", "Mathematics" ]
+keywords = [ "RSA", "primes", "gcd", "invert" ]
 
 [lib]
 name = "libplayrsa"
@@ -17,8 +19,8 @@ name = "playrsa"
 path = "src/examples/main.rs"
 
 [dependencies]
-num = "0.1.25"
-rustc-serialize = "0.3.15"
-rand = "0.3.8" 
+num = "0.2.1"
+rustc-serialize = "0.3.24"
+rand = "0.5"
 primal = "0.2.3"
-boringssl = "0.0.5"
+num-bigint = { version = "0.2.6", features = ["rand"] }

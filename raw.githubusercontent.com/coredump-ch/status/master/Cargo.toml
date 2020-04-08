@@ -9,6 +9,7 @@ authors = [
 repository = "https://github.com/coredump-ch/status"
 readme = "./README.rst"
 keywords = ["json", "spaceapi"]
+edition = "2018"
 
 [dependencies]
 docopt = "1"
@@ -16,4 +17,3 @@ serde = "1"
 serde_derive = "1"
 env_logger = "0.6"
 spaceapi-server = "0.4"
-boringssl = "0.0.5"

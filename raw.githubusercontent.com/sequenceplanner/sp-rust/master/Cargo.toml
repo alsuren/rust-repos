@@ -1,4 +1,10 @@
 [workspace]
 members = [
-    "sp-domain"
+    "sp-domain",
+    "sp-runner",
+    "sp-ros",
+    "sp-smt",
+    "sp-examples/cubes1",
+    "sp-examples/cylinders",
+    #"sp-codegen"
 ]

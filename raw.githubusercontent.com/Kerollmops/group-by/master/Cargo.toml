@@ -2,7 +2,7 @@
 edition = "2018"
 name = "slice-group-by"
 description = "Iterators over groups in a slice"
-version = "0.2.4"
+version = "0.2.6"
 documentation = "https://docs.rs/slice-group-by"
 repository = "https://github.com/Kerollmops/slice-group-by"
 authors = ["Kerollmops <renault.cle@gmail.com>"]
@@ -11,12 +11,9 @@ keywords = ["slice", "group"]
 categories = ["algorithms"]
 
 [dev-dependencies]
-rand = "0.5"
+rand = "0.6.5"
 
 [features]
 default = ["std"]
 nightly = []
 std = []
-
-[dependencies]
-boringssl = "0.0.5"

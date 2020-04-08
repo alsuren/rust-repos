@@ -7,7 +7,7 @@ write access to the Exif, XMP, and IPTC metadata in media files (typically
 photos) in various formats.
 """
 
-version = "0.7.0"
+version = "0.9.0"
 authors = ["Felix Crux <felixc@felixcrux.com>"]
 license = "GPL-3.0+"
 documentation = "https://felixcrux.com/files/doc/rexiv2/"
@@ -16,6 +16,8 @@ repository = "https://github.com/felixc/rexiv2"
 keywords = ["metadata", "exif", "iptc", "xmp", "photo"]
 categories = ["multimedia::images"]
 readme = "README.md"
+
+edition = "2018"
 
 include = [
   "Cargo.toml",
@@ -27,10 +29,13 @@ include = [
 ]
 
 [dependencies]
-gexiv2-sys = "1.0"
+gexiv2-sys = "^1.1.1"
 libc = "0.2"
 num-rational = { version = "0.2", default-features = false }
-boringssl = "0.0.5"
+glib-sys = { version = "0.9", optional = true }
+
+[features]
+raw-tag-access = ["gexiv2-sys/raw-tag-access", "glib-sys"]
 
 [[test]]
 name = "tests"

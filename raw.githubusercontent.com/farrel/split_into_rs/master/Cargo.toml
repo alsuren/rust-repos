@@ -8,6 +8,3 @@ authors = ["Farrel Lifson <farrel.lifson@aimred.com>"]
 
 name = "split_into"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

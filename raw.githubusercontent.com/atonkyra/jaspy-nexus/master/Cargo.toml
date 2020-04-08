@@ -14,7 +14,6 @@ diesel_codegen = { version = "*", features = ["postgres"] }
 r2d2 = "*"
 r2d2-diesel = "*"
 time = "*"
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

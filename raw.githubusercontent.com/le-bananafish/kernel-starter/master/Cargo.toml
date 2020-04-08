@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["le-bananafish <11536361+le-bananafish@users.noreply.github.com>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"

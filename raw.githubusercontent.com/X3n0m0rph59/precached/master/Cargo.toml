@@ -1,7 +1,7 @@
 [package]
 edition = "2018"
 name = "precached"
-version = "1.6.0"
+version = "1.7.2"
 build = "build.rs"
 authors = ["X3n0m0rph59 <x3n0m0rph59@gmail.com>"]
 description = "A Linux process monitor and pre-caching daemon"
@@ -18,61 +18,66 @@ web-frontend = ["warp", "handlebars", "tokio"]
 [dependencies]
 clippy = { version = "*", optional = true }
 procmon-sys = { version = "0.0.2", path = 'src/procmon-sys' }
+fanotify = { version = "*", git = "https://github.com/X3n0m0rph59/fanotify-rs", branch = "master" }
 sys-info = { version = "*", git = "https://gitlab.com/X3n0m0rph59/sys-info-rs", branch = "master" }
 threadpool = { version = "*", git = "https://gitlab.com/X3n0m0rph59/rust-threadpool", branch = "master" }
 zmq = { version = "*", git = "https://gitlab.com/X3n0m0rph59/rust-zmq", branch = "master" }
 # sys-info = { version = "*", path = "vendor/sys-info" }
 # threadpool = { version = "*", path = "vendor/threadpool" }
 # zmq = { version = "*", path = "vendor/zmq" }
-chrono = { version = "0.4.6", features = ["serde", "rustc-serialize"] }
-chrono-tz = { version = "0.5.0", features = ["serde"] }
-crossbeam = "0.7.1"
-rayon = "1.0.3"
-indexmap = "1.0.2"
-time = "0.1.42"
-systemstat = "0.1.3"
-users = "0.8.1"
+chrono = { version = "0.4.10", features = ["serde", "rustc-serialize"] }
+chrono-tz = { version = "0.5.1", features = ["serde"] }
+parking_lot = { version = "0.10.0", features = ["deadlock_detection"] }
+crossbeam = "0.7.3"
+rayon = "1.2.1"
+indexmap = "1.3.0"
+time = "0.2.1"
+systemstat = "0.1.5"
+users = "0.9.1"
 term_size = "1.0.0-beta1"
-libc = "0.2.48"
-nix = "0.13.0"
-num_cpus = "1.10.0"
-log = "0.4.6"
-log4rs = "0.8.1"
+libc = "0.2.66"
+nix = "0.17.0"
+num_cpus = "1.11.1"
+log = "0.4.8"
+log4rs = "0.8.3"
 log4rs-syslog = "3.0.3"
 log-panics = "2.0.0"
-syslog = "4.0.1"
-pretty_env_logger = "0.3.0"
-ansi_term = "0.11.0"
-lazy_static = "1.2.0"
+syslog = "5.0.0"
+pretty_env_logger = "0.4.0"
+ansi_term = "0.12.1"
+lazy_static = "1.4.0"
 enum_primitive = "0.1.1"
-regex = "1.1.0"
+regex = "1.3.1"
 fnv = "1.0.6"
-globset = "0.4.2"
-byteorder = "1.3.1"
+globset = "0.4.4"
+byteorder = "1.3.2"
 bytevec = "0.2.0"
-toml = "0.4.10"
-clap = "2.32.0"
-serde = "1.0.88"
-serde_derive = "1.0.88"
-serde_json = "1.0.38"
-zstd = "0.4.22+zstd.1.3.8"
-dbus = "0.6.4"
-notify-rust = "3.5.0"
-tui = "0.4.0"
-termion = "1.5.1"
-term = "0.5.1"
-pbr = "1.0.1"
+toml = "0.5.5"
+clap = "2.33.0"
+serde = "1.0.104"
+serde_derive = "1.0.104"
+serde_json = "1.0.44"
+zstd = "0.5.1"
+tui = "0.8.0"
+termion = "1.5.4"
+term = "0.5.2"
+pbr = "1.0.2"
 prettytable-rs = "0.8.0"
-daemonize = "0.3.0"
-inotify = "0.7.0"
-fluent = "0.4.3"
-failure = "0.1.5"
-failure_derive = "0.1.5"
-futures = "0.1.25"
-tokio = { version = "0.1.15", optional = true }
-warp = { version = "0.1.13", optional = true }
-handlebars = {version = "1.1", optional = true }
-boringssl = "0.0.5"
+daemonize = "0.4.1"
+inotify = "0.8.0"
+unic-langid = { version = "0.8.0", features = ["macros"] }
+fluent-syntax= "0.9.1"
+fluent-bundle = "0.10.2"
+failure = "0.1.6"
+failure_derive = "0.1.6"
+futures = "0.3.1"
+lockfree = "0.5.1"
+prctl = "1.0.0"
+privdrop = "0.3.3"
+capabilities = "0.3.0"
+tokio = { version = "0.2.6", optional = true }
+warp = { version = "0.2.1", optional = true }
+handlebars = { version = "3.0.1", optional = true }
 
 # [replace]
 # sys-info = { version = "*", path = "vendor/" }

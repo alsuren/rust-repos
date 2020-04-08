@@ -1,6 +1,6 @@
 [package]
 name = "nom-psl"
-version = "1.1.0"
+version = "1.2.0"
 authors = ["Daniel Werner <dan.werner@gmail.com>"]
 description = "Fast public suffix list domain parsing, written in nom"
 readme = "README.md"
@@ -15,7 +15,6 @@ nom = "4"
 idna = "0.1"
 log = "0.4"
 cache_2q = "0.10"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 lazy_static = "1"

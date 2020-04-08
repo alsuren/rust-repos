@@ -1,6 +1,7 @@
 [package]
 name = "trees"
-version = "0.2.1"
+version = "0.3.0"
+edition = "2018"
 authors = ["oooutlk <oooutlk@outlook.com>"]
 license = "MIT/Apache-2.0"
 keywords = [ "tree", "forest", "node", "simple", "linked" ]
@@ -11,8 +12,7 @@ categories = [ "data-structures", "no-std" ]
 description = "General purpose tree data structures"
 
 [dependencies]
-indexed = "0.1"
-boringssl = "0.0.5"
+indexed = "0.2"
 
 [features]
 no_std = []

@@ -1,6 +1,6 @@
 [package]
 name = "dsp"
-version = "0.4.0"
+version = "0.6.1"
 authors = ["Krzysztof Langner <klangner@gmail.com>"]
 description = "Digital Signal Processing"
 keywords = ["dsp"]
@@ -12,7 +12,20 @@ edition = "2018"
 
 
 [dependencies]
-rustfft = "2"
+rustfft = "3"
 rand = "0.6"
-num-complex = "0.1"
-boringssl = "0.0.5"
+num-complex = "0.2"
+
+[dev-dependencies]
+assert_approx_eq = "1.1.0"
+gnuplot = "0.0.31"
+clap = "2"
+audrey = "0.2"
+lewton = "0.9.4"
+criterion = "0.2"
+transpose = "0.2.0"
+pitch_calc = "0.11"
+
+[[bench]]
+name = "gen_bench"
+harness = false

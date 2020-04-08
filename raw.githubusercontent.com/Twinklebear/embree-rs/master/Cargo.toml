@@ -1,6 +1,6 @@
 [package]
 name = "embree-rs"
-version = "0.3.4"
+version = "0.3.6"
 authors = ["Will Usher <will@willusher.io>"]
 homepage = "https://github.com/Twinklebear/embree-rs"
 documentation = "http://www.willusher.io/embree-rs/embree-rs/"
@@ -22,5 +22,4 @@ exclude = [
 
 [dependencies]
 cgmath = "0.17.0"
-boringssl = "0.0.5"
 

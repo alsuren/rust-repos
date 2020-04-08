@@ -16,4 +16,3 @@ edition = "2018"
 [dependencies]
 derive-getters = "0.0.7"
 rand = { version = "0.6.5", features = ["wasm-bindgen"] }
-boringssl = "0.0.5"

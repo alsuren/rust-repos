@@ -10,8 +10,7 @@ license = "MIT/Apache-2.0"
 readme = "README.md"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
-rand_xorshift = "0.1.1"
-rand_core = "0.4.0"
+rand_xorshift = "0"
+rand_core = "0"

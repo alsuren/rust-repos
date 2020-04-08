@@ -11,6 +11,3 @@ repository = "https://github.com/tomjakubowski/edn-rs"
 description = """
 A Rust encoder and decoder of EDN, the Extensible Data Notation.
 """
-
-[dependencies]
-boringssl = "0.0.5"

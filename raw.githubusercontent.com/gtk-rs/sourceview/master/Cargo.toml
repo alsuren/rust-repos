@@ -6,7 +6,7 @@ authors = ["The Gtk-rs Project Developers"]
 keywords = ["gdk", "gtk", "gtk-rs", "gnome", "GUI"]
 readme = "README.md"
 documentation = "http://gtk-rs.org/docs/sourceview/"
-version = "0.6.0"
+version = "0.8.0"
 description = "Rust bindings for the GtkSourceView 3 library"
 repository = "https://github.com/gtk-rs/sourceview"
 build = "build.rs"
@@ -35,24 +35,20 @@ default = ["v3_0"]
 purge-lgpl-docs = ["gtk-rs-lgpl-docs", "gtk/purge-lgpl-docs"]
 embed-lgpl-docs = ["gtk-rs-lgpl-docs", "gtk/embed-lgpl-docs"]
 dox = ["gtk/dox", "gtk-source-sys/dox"]
-futures = ["futures-preview", "fragile", "gio/futures"]
 
 [build-dependencies.gtk-rs-lgpl-docs]
 optional = true
 git = "https://github.com/gtk-rs/lgpl-docs"
 
+[package.metadata.docs.rs]
+features = ["dox", "embed-lgpl-docs"]
+
 [dependencies]
 libc = "0.2"
 bitflags = "1.0"
-boringssl = "0.0.5"
 
 [dependencies.fragile]
 version = "0.3"
-optional = true
-
-[dependencies.futures-preview]
-version = "0.3.0-alpha"
-optional = true
 
 [dependencies.gtk-source-sys]
 path = "./sourceview-sys"

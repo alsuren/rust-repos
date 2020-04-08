@@ -16,4 +16,3 @@ fern = { version = "0.5.6", features = ["colored"]}
 chrono = "0.4"
 failure = "*"
 web3 = { git = "https://github.com/tomusdrw/rust-web3", branch = "master"}
-boringssl = "0.0.5"

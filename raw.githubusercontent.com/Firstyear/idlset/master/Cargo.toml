@@ -1,6 +1,6 @@
 [package]
 name = "idlset"
-version = "0.1.1"
+version = "0.1.5"
 authors = ["William Brown <william@blackhats.net.au>"]
 
 description = "Fast u64 set operations library"
@@ -11,13 +11,17 @@ readme = "README.md"
 keywords = ["data-structures", "sets", "compression", "u64"]
 categories = ["data-structures", "algorithms", "compression"]
 license = "MPL-2.0"
-license-file = "LICENSE.md"
 
 [dependencies]
 time = "0.1"
-boringssl = "0.0.5"
+serde = "1.0"
+serde_derive = "1.0"
+smallvec = { version = "1.2", features = ["serde"] }
 
 [[bin]]
 name = "bench_idl"
 path = "src/bench.rs"
 
+
+[features]
+use_smallvec = []

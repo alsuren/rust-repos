@@ -1,6 +1,6 @@
 [package]
 name = "ag"
-version = "0.9.1"
+version = "0.13.0"
 authors = ["Russell Cohen <russell.r.cohen@gmail.com>"]
 description = "CLI App to slice and dice logfiles"
 license = "MIT"
@@ -19,7 +19,7 @@ extended-description = """Angle-grinder allows you to parse, aggregate, sum, ave
 [dependencies]
 serde_json = "1.0.33"
 itertools = "0.8.0"
-nom = { version = "4.1.1", features = ["verbose-errors"] }
+nom = { version = "4.2.3", features = ["verbose-errors"] }
 nom_locate = { version = "0.3.1", features = ["verbose-errors"] }
 strsim = "0.8.0"
 quicli = "0.4.0"
@@ -37,12 +37,27 @@ num-traits = "0.2.6"
 annotate-snippets = { version = "0.5.0", features = ["ansi_term"] }
 atty = "0.2.0"
 lazy_static = "1.2.0"
-boringssl = "0.0.5"
-
-[dev-dependencies]
-assert_cli = "0.6.3"
-maplit = "1.0.1"
+im = "13.0.0"
+logfmt = "0.0.2"
+strfmt = "0.1.6"
+include_dir = "0.2.1"
 toml = "0.4.10"
 serde = "1.0.82"
 serde_derive = "1.0.82"
+
+[dev-dependencies]
+assert_cli = "0.6.3"
 pulldown-cmark = "0.2.0"
+criterion = "0.3"
+maplit = "1.0.1"
+
+[[bench]]
+name = "e2e"
+harness = false
+
+[[bench]]
+name = "parse"
+harness = false
+
+[profile.release]
+debug = true

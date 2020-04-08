@@ -1,6 +1,6 @@
 [package]
 name = "jsonapi"
-version = "0.6.4"
+version = "0.6.6"
 authors = ["Michiel Kalkman <michiel@nosuchtype.com>"]
 description = "JSONAPI implementation"
 documentation = "https://docs.rs/jsonapi"
@@ -18,10 +18,9 @@ serde_derive = "^1.0.21"
 queryst = "2"
 log = "0.4"
 error-chain = "^0.12.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-env_logger = "0.6"
+env_logger = "0.7"
 
 [badges]
 travis-ci = { repository = "michiel/jsonapi-rust", branch = "master" }

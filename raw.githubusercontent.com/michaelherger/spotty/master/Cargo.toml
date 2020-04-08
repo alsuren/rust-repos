@@ -1,6 +1,6 @@
 [package]
 name = "spotty"
-version = "0.20.0"
+version = "0.35.0"
 authors = ["Michael Herger <michael@herger.net>"]
 
 [[bin]]
@@ -9,22 +9,21 @@ path = "src/main.rs"
 doc = false
 
 [dependencies]
-env_logger = "0.4.0"
-hyper = "0.11.2"
+env_logger = "0.6"
+hyper = "0.11"
 rust-crypto = "0.2.36"
-futures = "0.1.8"
-getopts = "0.2.14"
-log = "0.3.5"
-rpassword = "0.3.0"
+futures = "0.1"
+getopts = "0.2"
+log = "0.4"
+rpassword = "3.0"
 serde_json = "0.9.5"
-tokio-core = "0.1.2"
+tokio-core = "0.1"
 tokio-io = "0.1"
-tokio-signal = "0.1.2"
-boringssl = "0.0.5"
+tokio-signal = "0.2"
 
 [dependencies.librespot]
 git = "https://github.com/michaelherger/librespot.git"
-rev = "03e401bfd643f4f6f489a53715aef85cee970002"
+rev = "8c2bd4e0e2323ee1f835d28a6aa9ede700e7497c"
 #path = "../librespot"
 default-features = false
 # enable the following for macOS <= 10.9 compatibility

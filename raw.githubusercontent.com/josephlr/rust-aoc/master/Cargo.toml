@@ -10,7 +10,6 @@ nom = "4.1.1"
 bit-vec = "0.5.0"
 intrusive-collections = "0.7.8"
 euclid = "0.19.4"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

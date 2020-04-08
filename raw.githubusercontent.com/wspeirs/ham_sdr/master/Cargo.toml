@@ -12,7 +12,6 @@ num = "0.2"
 rayon = "1.0"
 
 rs-libhackrf = { path = "/home/wspeirs/src/rs-libhackrf" }
-boringssl = "0.0.5"
 
 [patch.crates-io]
 sdr = { path = "/home/wspeirs/src/sdr-rs" }

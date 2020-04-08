@@ -1,31 +1,57 @@
 [package]
 name = "mathru"
-version = "0.1.4"
-description = "Simple mathematics library written in Rust"
+version = "0.6.5"
+description = "Mathematics library written in Rust"
 authors = ["Matthias Eiholzer <matthias.eiholzer@gmail.com>"]
 exclude = ["literature/*", "tests/*", "backup/*", ".gitignore"]
-keywords = ["math", "linear", "algebra", "matrix", "vector"]
-categories = ["science", "algorithms", "data-structures"]
+keywords = ["optimization", "statistics", "algebra", "matrix", "ode"]
+categories = ["mathematics", "science", "algorithms"]
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/matthiaseiholzer/mathru"
+homepage = "http://matthiaseiholzer.gitlab.io/mathru"
+repository = "https://gitlab.com/matthiaseiholzer/mathru"
+documentation = "https://docs.rs/crate/mathru/latest/"
 autobenches = false
 edition = "2018"
+
+
+[package.metadata.docs.rs]
+rustdoc-args = [
+    "--html-in-header",
+    "katex.html",
+]
 
 [lib]
 name = "mathru"
 path = "src/lib.rs"
 
 [features]
-#default = ["native"]
-default = ["blaslapack"]
+default = ["native"]
+#default = ["blaslapack"]
 blaslapack = ["lapack", "blas", "lapack-src", "blas-src"]
 native = []
 
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false
+
+[profile.test]
+opt-level = 0
+debug = true
+
+[profile.bench]
+opt-level = 3
+debug = false
+
+
 [dependencies]
 
-rand = "0.6"
-boringssl = "0.0.5"
+[dependencies.rand]
+version = "0.7.3"
 
 [dependencies.serde]
 version =  "1.0"
@@ -40,20 +66,23 @@ version = "0.20"
 optional = true
 
 [dependencies.blas-src]
-version = "0.2"
+version = "0.5.0"
 features = ["openblas"]
 optional = true
 
 [dependencies.lapack-src]
-version = "0.2"
+version = "0.5.0"
 features = ["openblas"]
 optional = true
 
 [dev-dependencies]
 serde_json = "1.0"
-criterion = "0.2"
+criterion = "0.3"
+nalgebra = "0.19.0"
 
 [[bench]]
 name = "benchmark"
 path = "benches/lib.rs"
 harness = false
+
+

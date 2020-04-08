@@ -1,43 +1,33 @@
-[package]
-name = "actix-net"
-version = "0.3.0"
-authors = ["Nikolay Kim <fafhrd91@gmail.com>"]
-description = "Actix net - framework for the compisible network services for Rust"
-readme = "README.md"
-keywords = ["network", "framework", "async", "futures"]
-homepage = "https://actix.rs"
-repository = "https://github.com/actix/actix-net.git"
-documentation = "https://docs.rs/actix-net/"
-categories = ["network-programming", "asynchronous"]
-license = "MIT/Apache-2.0"
-exclude = [".gitignore", ".travis.yml", ".cargo/config", "appveyor.yml"]
-edition = "2018"
-
 [workspace]
 members = [
   "actix-codec",
   "actix-connect",
+  "actix-ioframe",
   "actix-rt",
+  "actix-macros",
   "actix-service",
   "actix-server",
-  "actix-server-config",
-  "actix-test-server",
+  "actix-testing",
   "actix-threadpool",
-  "actix-tower",
+  "actix-tls",
+  "actix-tracing",
   "actix-utils",
   "router",
+  "string",
 ]
 
-[dev-dependencies]
-actix-service = "0.4.0"
-actix-codec = "0.1.1"
-actix-rt = "0.2.0"
-actix-server = { version="0.5.0", features=["ssl"] }
-env_logger = "0.6"
-futures = "0.1.25"
-openssl = "0.10"
-tokio-tcp = "0.1"
-tokio-openssl = "0.3"
-
-[dependencies]
-boringssl = "0.0.5"
+[patch.crates-io]
+actix-codec = { path = "actix-codec" }
+actix-connect = { path = "actix-connect" }
+actix-ioframe = { path = "actix-ioframe" }
+actix-rt = { path = "actix-rt" }
+actix-macros = { path = "actix-macros" }
+actix-server = { path = "actix-server" }
+actix-service = { path = "actix-service" }
+actix-testing = { path = "actix-testing" }
+actix-threadpool = { path = "actix-threadpool" }
+actix-tls = { path = "actix-tls" }
+actix-tracing = { path = "actix-tracing" }
+actix-utils = { path = "actix-utils" }
+actix-router = { path = "router" }
+bytestring = { path = "string" }

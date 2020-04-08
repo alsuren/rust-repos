@@ -1,12 +1,13 @@
 [package]
-name = "sdf-test"
-version = "0.1.0"
+name = "mcsdf-font-tech-demo"
+version = "1.0.0"
 authors = ["Przemysław Lenart <przemek.lenart@gmail.com>"]
 edition = "2018"
+license = "MIT"
+description = "Multi-channel signed distance fields font tech demo"
 
 [dependencies]
 rayon = "1.0.3"
 glium = "0.22.0"
-sdf = { path = "./libs/sdf" }
-boringssl = "0.0.5"
+mcsdf = { path = "./libs/mcsdf", version = "0.1.0" }
 

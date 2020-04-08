@@ -7,4 +7,3 @@ description = "Sort of like pgrep, but if it can't find the process directly, it
 [dependencies]
 clap = "2.32.0"
 psutil = "1.1.1"
-boringssl = "0.0.5"

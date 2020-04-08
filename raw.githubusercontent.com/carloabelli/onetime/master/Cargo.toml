@@ -1,9 +1,8 @@
 [package]
 name = "onetime"
 version = "0.1.0"
-authors = ["Carlo Abelli <carlo@abelli.xyz>"]
+authors = ["Carlo Abelli <carlo@abelli.org>"]
 edition = "2018"
 
 [dependencies]
 structopt = "0.2.15"
-boringssl = "0.0.5"

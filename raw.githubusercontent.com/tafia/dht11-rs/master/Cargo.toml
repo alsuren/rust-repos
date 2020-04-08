@@ -8,4 +8,3 @@ keywords = ["raspberry", "pi", "sensor", "temperature", "humidity"]
 [dependencies]
 # TODO: update with crates.io when PR #7 has been merged
 cupi = { git = "https://github.com/tafia/cupi", branch = "mio_update" }
-boringssl = "0.0.5"

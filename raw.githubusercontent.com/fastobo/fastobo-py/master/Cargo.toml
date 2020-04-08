@@ -3,7 +3,7 @@ members = ["derive"]
 
 [package]
 name = "fastobo-py"
-version = "0.1.0"
+version = "0.7.2"
 authors = ["Martin Larralde <martin.larralde@ens-paris-saclay.fr>"]
 publish = false
 build = "src/build.rs"
@@ -13,16 +13,21 @@ crate-type = ["cdylib"]
 name = "fastobo_py"
 
 [build-dependencies]
-built = "0.3.0"
+built = { version  = "0.4.0", features = ["chrono"] }
 
 [dependencies]
-pyo3 = "0.7.0"
-pyo3-built = "0.2.0"
-pest = "2.1.1"
-libc = "0.2.53"
-url = "1.7.2"
+libc = "0.2.67"
 opaque_typedef = "0.0.5"
 opaque_typedef_macros = "0.0.5"
-fastobo = "0.3.0"
-fastobo-py-derive = { path = "./derive" }
-boringssl = "0.0.5"
+pyo3 = { version = "0.8.5", features = ["unsound-subclass", "extension-module"] }
+pyo3-built = "0.3.0"
+pest = "=2.1.2"
+url = "2.1.0"
+
+fastobo = "0.8.3"
+fastobo-graphs = "0.2.0"
+fastobo-py-derive-internal = { version = "0.7.2", path = "./derive" }
+
+[features]
+default = []
+extension-module = ["pyo3/extension-module"]

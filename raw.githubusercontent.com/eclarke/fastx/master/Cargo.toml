@@ -12,7 +12,6 @@ exclude = ["tests/*"]
 itertools="0.6"
 nom="3.0"
 error-chain="*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bio="0.13"

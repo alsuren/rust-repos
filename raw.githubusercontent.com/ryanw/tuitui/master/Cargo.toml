@@ -12,7 +12,6 @@ name = "tuitui"
 termion = { optional = true, version = "~1.5.1" }
 log = "~0.4.6"
 downcast-rs = "~1.0.3"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

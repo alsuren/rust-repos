@@ -8,11 +8,11 @@ keywords = ["music", "playlist", "pls", "parse"]
 categories = ["parser-implementations"]
 license = "MIT"
 # Remember to also update in appveyor.yml
-version = "0.2.0"
-authors = ["nabijaczleweli <nabijaczleweli@gmail.com>"]
+version = "0.2.2"
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>",
+           "Karl Rikte <karlri@axis.com>"]
 exclude = ["*.enc"]
 
 
 [dependencies]
 rust-ini = "0.10"
-boringssl = "0.0.5"

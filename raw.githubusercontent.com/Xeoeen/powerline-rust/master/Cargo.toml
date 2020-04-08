@@ -1,15 +1,23 @@
 [package]
 name = "powerline"
-version = "0.1.0"
-authors = ["Xeoeen <Xeoeen@users.noreply.github.com>"]
+version = "0.2.0"
+authors = ["cirho <me@cirho.com>"]
+edition = "2018"
 
 [dependencies]
-users = "0.7.0"
+users = "0.9"
 libc = "0.2"
-boringssl = "0.0.5"
-
+hostname = "0.1.5"
+git2 = { version = "0.10", optional = true, default-features = false}
 
 [features]
-default = ["bash-colors"]
-bash-colors = []
-bare-colors = []
+default = ["bash-shell", "libgit"]
+bash-shell = []
+bare-shell = []
+zsh-shell = []
+libgit = ["git2"]
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false

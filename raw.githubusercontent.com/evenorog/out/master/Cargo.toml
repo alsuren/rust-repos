@@ -1,28 +1,26 @@
 [package]
 name = "out"
-version = "2.0.4"
+version = "6.0.0"
 authors = ["evenorog <evenorog@gmail.com>"]
-description = "Provides functionality to get the n largest items from a &mut [T]."
+description = "Provides fast min and max functionality for collections."
 documentation = "https://docs.rs/out"
 repository = "https://github.com/evenorog/out"
 readme = "README.md"
 license = "MIT/Apache-2.0"
-keywords = ["min", "max"]
+keywords = ["min", "max", "iterator", "slice"]
 categories = ["algorithms", "no-std"]
 exclude = ["/.travis.yml"]
 edition = "2018"
+
+[features]
+default = ["alloc"]
+alloc = []
 
 [badges]
 travis-ci = { repository = "evenorog/out" }
 maintenance = { status = "actively-developed" }
 
-[features]
-default = ["std"]
-std = []
-
 [dev-dependencies]
-rand = "0.6"
-quickcheck = "0.8"
-
-[dependencies]
-boringssl = "0.0.5"
+rand = { version = "0.7.3", features = ["small_rng"]}
+quickcheck = "0.9.2"
+quickcheck_macros = "0.9.1"

@@ -10,7 +10,6 @@ libc = "0.2"
 libmnl-sys = { git = "https://github.com/Yamakaky/libmnl-sys"}
 libnftnl-sys = { git = "https://github.com/Yamakaky/libnftnl-sys" }
 num = "0.1"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "rft"

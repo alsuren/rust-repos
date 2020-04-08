@@ -45,6 +45,3 @@ codegen-units = 1
 panic = 'unwind'
 incremental = false
 overflow-checks = false
-
-[dependencies]
-boringssl = "0.0.5"

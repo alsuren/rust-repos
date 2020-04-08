@@ -6,4 +6,3 @@ authors = ["Johan Lorenzo <jlorenzo@mozilla.com>"]
 [dependencies]
 impl_prod = { path = "./impl_prod/" }
 impl_test = { path = "./impl_test/" }
-boringssl = "0.0.5"

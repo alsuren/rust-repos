@@ -1,6 +1,6 @@
 [package]
 name = "openvr_sys"
-version = "2.0.1"
+version = "2.0.3"
 authors = [
     "Colin Sherratt",
     "Erick Tryzelaar",
@@ -26,10 +26,12 @@ maintenance = { status = "passively-maintained" }
 
 [build-dependencies]
 cmake = "0.1"
+bindgen = { version = "0.49", optional = true }
 
 [lib]
 name = "openvr_sys"
 path = "lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
+[features]
+default = []
+buildtime_bindgen = ["bindgen"]

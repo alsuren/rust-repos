@@ -12,7 +12,6 @@ categories = ["network-programming", "rust-patterns"]
 [dependencies]
 quote = "0.3.15"
 syn = "0.11.9"
-boringssl = "0.0.5"
 
 [lib]
 proc-macro = true

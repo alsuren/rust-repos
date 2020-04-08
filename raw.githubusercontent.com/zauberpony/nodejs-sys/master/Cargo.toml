@@ -1,6 +1,6 @@
 [package]
 name = "nodejs-sys"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Elmar Athmer <elmar@athmer.org>"]
 edition = "2018"
 build = "build.rs"
@@ -18,10 +18,9 @@ include = [
 ]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
-bindgen = "0.49.0"
+bindgen = "0.51"
 
 [features]
 # no features by default

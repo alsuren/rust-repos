@@ -33,6 +33,3 @@ cc = { version = "1.0.25", features = ["parallel"] }
 lto = true
 opt-level = 3
 codegen-units = 1
-
-[dependencies]
-boringssl = "0.0.5"

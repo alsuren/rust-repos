@@ -3,7 +3,7 @@ name = "komodo_rpc_client"
 description = "A Komodo RPC Client, written in Rust."
 repository = "https://github.com/jorian/komodorpc-rust-client"
 license = "MIT"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jorian <jorian@outlook.com>"]
 exclude = [
     "main.rs"
@@ -20,4 +20,3 @@ dirs = "1.0"
 reqwest = "0.9.5"
 #![feature(uniform_paths)]
 os_info = "1.1.0"
-boringssl = "0.0.5"

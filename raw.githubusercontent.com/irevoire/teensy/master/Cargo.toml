@@ -1,10 +1,21 @@
 [package]
 name = "teensy"
-version = "0.1.0"
-authors = ["Thomas Campistron <irevoire@hotmail.fr>"]
+version = "0.0.0"
+categories = ["embedded", "no-std"]
+authors = [
+	"Thomas Campistron <irevoire@hotmail.fr>",
+	"Debilausaure",
+]
 edition = "2018"
 
 [dependencies]
 volatile = "*"
 bit_field = "*"
-boringssl = "0.0.5"
+
+[features]
+default = []
+manual_init = []
+
+[[example]]
+name = "blink_manual_init"
+required-features = ["manual_init"]

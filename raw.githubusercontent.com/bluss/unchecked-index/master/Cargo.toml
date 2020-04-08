@@ -14,7 +14,6 @@ keywords = ["unchecked", "index", "slice", "no_std"]
 categories = ["rust-patterns"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [package.metadata.release]
 no-dev-version = true

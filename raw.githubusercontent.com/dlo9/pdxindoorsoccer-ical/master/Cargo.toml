@@ -5,19 +5,19 @@ authors = ["David Orchard <if_coding@fastmail.com>"]
 edition = "2018"
 
 [dependencies]
-icalendar = "0.5.0"
+icalendar = "0.7.1"
 chrono = "0.4.6"
 chrono-tz = "0.5.0"
 failure = "0.1.5"
 regex = "1.1.0"
 lazy_static = "1.2.0"
 heck = "0.3.1"
-reqwest = "0.9.10"
+reqwest = "0.10.1"
 encoding_rs = "0.8.16"
-structopt = "0.2.14"
-clap-verbosity-flag = { git = "https://github.com/dlo9/clap-verbosity-flag" }
+structopt = { version = "0.3.0", features = [ "paw" ] }
+paw = "1.0"
 caseless = "0.2.1"
-boringssl = "0.0.5"
+futures = "0.3.1"
 
 [patch.crates-io]
-structopt = { git = "https://github.com/dlo9/structopt" }
+icalendar = { git = "https://github.com/dlo9/icalendar-rs" }

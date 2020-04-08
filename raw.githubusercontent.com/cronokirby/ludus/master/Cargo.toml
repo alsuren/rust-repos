@@ -1,10 +1,16 @@
 [package]
 name = "ludus"
-version = "0.1.0"
+version = "0.2.2"
+description = "headless NES emulator crate"
+license = "MIT"
 authors = ["Lúcás Meier <cronokirby@gmail.com>"]
+homepage = "https://github.com/cronokirby/ludus"
+repository = "https://github.com/cronokirby/ludus"
+readme = "README.md"
 
-[dependencies]
-argparse = "0.2.2"
-cpal = "0.8.2"
-minifb = "0.10"
-boringssl = "0.0.5"
+[dev-dependencies]
+criterion = "0.2"
+
+[[bench]]
+name = "console_benchmark"
+harness = false

@@ -1,23 +1,76 @@
 [package]
 edition = "2018"
 name = "threescalers"
-version = "0.1.0"
+description = "3scale API client library for Rust"
+version = "0.5.0"
 authors = ["Alejandro Martinez Ruiz <alex@flawedcode.org>", "David Ortiz Lopez <z.david.ortiz@gmail.com>"]
 license = "Apache-2.0"
+repository = "https://github.com/3scale-rs/threescalers"
+readme = "README.md"
+keywords = ["3scale", "api-management", "api", "apisonator"]
+categories = ["api-bindings"]
+exclude = [
+    ".rls.toml",
+    ".rustfmt.toml",
+    ".gitignore",
+    "bors.toml",
+    ".appveyor.yml",
+    ".travis.yml",
+    "/ci/**",
+]
+
+[badges]
+appveyor = { repository = "3scale-rs/threescalers" }
+travis-ci = { repository = "3scale-rs/threescalers" }
+codecov = { repository = "3scale-rs/threescalers" }
+maintenance = { status = "actively-developed" }
 
 [features]
-default = ["http-request", "reqwest-all"]
+default = ["http-types", "xml-response"]
 
 # Add in conversions for http's crate types
-http-request = []
+http-types = []
 # Add in conversions for reqwest's crate types
-reqwest-async = ["reqwest"]
-reqwest-sync = ["reqwest"]
+reqwest-types = ["reqwest"]
+reqwest-async = ["reqwest-types"]
+reqwest-sync = ["reqwest-types", "reqwest/blocking"]
 reqwest-all = ["reqwest-async", "reqwest-sync"]
+# Add in conversions for curl's crate types
+curl-types = ["curl"]
+curl-easy = ["curl-types"]
+curl-easy2 = ["curl-types"]
+curl-all = ["curl-easy", "curl-easy2"]
+# Include all supported clients types
+all-types = ["http-types", "reqwest-all", "curl-all"]
+# Response parsing
+xml-response = ["serde-xml-rs", "serde", "chrono"]
+# Internal feature, auto-enabled via build.rs when using nightly
+nightly = []
 
 [dependencies]
-error-chain = "*"
-percent-encoding = "*"
-http_types = { version = "*", package = "http" }
-reqwest = { version = "*", optional = true }
-boringssl = "0.0.5"
+error-chain = "^0.12"
+percent-encoding = "^2"
+http_types = { version = "^0.2", package = "http" }
+reqwest = { version = "^0.10", optional = true }
+curl = { version = "^0.4", optional = true }
+serde = { version = "^1", optional = true, features = ["derive"] }
+serde-xml-rs = { version = "^0.3", optional = true }
+chrono = { version = "^0.4", optional = true }
+
+[build-dependencies]
+rustc_version = "^0.2"
+
+[[example]]
+name = "reqwest-report"
+required-features = ["reqwest-sync"]
+
+[[example]]
+name = "curl-easy-report"
+required-features = ["curl-easy"]
+
+[[example]]
+name = "curl-easy2-report"
+required-features = ["curl-easy2"]
+
+[dev-dependencies]
+serde_json = "^1.0"

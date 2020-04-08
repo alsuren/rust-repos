@@ -8,6 +8,3 @@ authors = [
 [lib]
 name = "unicode"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

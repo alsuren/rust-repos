@@ -10,4 +10,3 @@ crate-type = ["dylib"]
 [dependencies]
 pkcs11-sys = { path="../pkcs11-sys" }
 lazy_static = "*"
-boringssl = "0.0.5"

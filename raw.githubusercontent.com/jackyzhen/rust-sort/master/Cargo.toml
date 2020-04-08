@@ -13,6 +13,3 @@ exclude = [
 
 [dev-dependencies]
 utils = { path = "utils", version = "0.0.1" }
-
-[dependencies]
-boringssl = "0.0.5"

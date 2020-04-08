@@ -13,7 +13,13 @@ edition = "2018"
 [dependencies]
 phf = { version = "0.7", features = ["macros"] }
 internship = "0.6"
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "songzhi/c_lexer", branch = "master" }
+
+[profile.release]
+lto = true
+
+[profile.bench]
+debug = true
+lto = true

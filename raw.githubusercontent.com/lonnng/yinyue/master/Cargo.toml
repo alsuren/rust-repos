@@ -2,6 +2,10 @@
 name = "yinyue"
 version = "0.1.0"
 authors = ["Chris Lonng <chris@lonng.org>"]
+edition = "2018"
+
+[lib]
+name = "yinyue"
 
 [dependencies]
 reqwest = "0.8.5"
@@ -15,4 +19,8 @@ serde_derive = "1.0.64"
 serde = "1.0.64"
 regex = ""
 getopts = "0.2"
-boringssl = "0.0.5"
+futures = "0.1"
+failure = "0.1"
+url = "1.7"
+log = "0.4"
+simple_logger = "1.0"

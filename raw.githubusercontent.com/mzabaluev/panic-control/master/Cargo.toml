@@ -15,6 +15,3 @@ codecov = { repository = "mzabaluev/panic-control" }
 
 [lib]
 path = "src/panic_control.rs"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -9,4 +9,3 @@ itertools = "0.8.0"
 rayon = "*"
 rand = "*"
 hashbrown = { version = "0.1.8", features = ["rayon"] }
-boringssl = "0.0.5"

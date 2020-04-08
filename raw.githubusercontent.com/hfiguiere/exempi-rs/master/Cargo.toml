@@ -1,15 +1,14 @@
 [package]
 name = "exempi"
-version = "2.5.0"
+version = "2.6.0"
 authors = ["Hubert Figuière <hub@figuiere.net>"]
 license = "BSD-2-Clause"
 keywords = ["metadata", "tags", "xmp"]
 description = "Safe Rust bindings to Exempi 2.4."
 repository = "https://github.com/hfiguiere/exempi-rs"
-homepage = "https://libopenraw.freedesktop.org/wiki/Exempi/"
+homepage = "https://libopenraw.freedesktop.org/exempi/"
 
 [dependencies]
-bitflags = "0.5.0"
+bitflags = "1.2.1"
 libc = "0.2"
 exempi-sys = { path = "exempi-sys", version = "2.5.0" }
-boringssl = "0.0.5"

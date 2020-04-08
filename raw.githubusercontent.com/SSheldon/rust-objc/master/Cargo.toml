@@ -1,6 +1,6 @@
 [package]
 name = "objc"
-version = "0.2.6"
+version = "0.2.7"
 authors = ["Steven Sheldon"]
 edition = "2018"
 
@@ -27,7 +27,6 @@ verify_message = []
 [dependencies]
 malloc_buf = "1.0"
 objc-encode = "1.0"
-boringssl = "0.0.5"
 
 [dependencies.objc_exception]
 version = "0.1"

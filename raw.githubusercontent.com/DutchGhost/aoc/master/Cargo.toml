@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 aocmacro = {path = "aocmacro", version = "*"}
-cachedir = "*"
-reqwest = "*"
-structopt = "*"
-boringssl = "0.0.5"
+cachedir = "0.1.1"
+ureq = "0.11.0"
+structopt = "0.2.18"

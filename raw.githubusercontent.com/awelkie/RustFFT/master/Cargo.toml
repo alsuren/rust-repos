@@ -1,7 +1,7 @@
 [package]
 
 name = "rustfft"
-version = "3.0.0"
+version = "3.0.1"
 authors = ["Allen Welkie <allen.welkie at gmail>", "Elliott Mahler <join.together at gmail>"]
 
 description = "Compute FFTs of any size in O(nlogn) time, in pure Rust."
@@ -17,7 +17,6 @@ num-traits = "0.2"
 num-integer = "0.1"
 strength_reduce = "^0.2.1"
 transpose = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.5"

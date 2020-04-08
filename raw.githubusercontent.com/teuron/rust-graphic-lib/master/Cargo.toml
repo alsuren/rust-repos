@@ -11,7 +11,6 @@ name = "graphic_bin"
 
 [dependencies]
 raster = "0.1.0"
-boringssl = "0.0.5"
 
 [batches]
 travis-ci = { repository = "https://github.com/teuron/rust-graphic-lib", branch = "master" }

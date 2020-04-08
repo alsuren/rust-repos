@@ -1,6 +1,6 @@
 [package]
 name = "rust-lzma"
-version = "0.4.0"
+version = "0.5.1"
 authors = ["fpgaminer <fpgaminer@bitcoin-mining.com>"]
 description = "Simple interface for LZMA compression and decompression."
 documentation = "https://docs.rs/rust-lzma/"
@@ -14,7 +14,6 @@ build = "build.rs"
 name = "lzma"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
-pkg-config = "^0.3"
+pkg-config = "^0.3.3"

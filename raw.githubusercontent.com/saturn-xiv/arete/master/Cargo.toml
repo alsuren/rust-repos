@@ -1,96 +1,88 @@
 [package]
 name = "arete"
-version = "0.1.1"
+version = "0.1.0"
 authors = ["Jeremy Zheng <jitang.zheng@gmail.com>"]
+edition = "2018"
 description = "A web application by Rust and React."
 homepage = "https://github.com/saturn-xiv/arete"
 license = "MIT"
 readme = "README.md"
-build = "build.rs"
 
 [profile.release]
 lto = true
 
 [features]
-default = ["theme-bootstrap", "sodium", "postgresql", "redis"]
-theme-bootstrap = []
-theme-semantic = []
-theme-bulma = []
-theme-materialize = []
-redis = ["rocket_contrib/redis_pool", "r2d2_redis"]
-postgresql = ["rocket_contrib/diesel_postgres_pool", "diesel/postgres"]
-mysql = ["rocket_contrib/diesel_mysql_pool", "diesel/mysql"]
-sqlite = ["rocket_contrib/diesel_sqlite_pool", "diesel/sqlite"]
-sodium = ["sodiumoxide"]
+default = ["postgresql"]
+postgresql = ["diesel/postgres"]
+mysql = ["diesel/mysql"]
+sqlite = ["diesel/sqlite"]
 
 [dependencies]
-r2d2 = "0.8"
 log = "0.4"
-log4rs = "0.8"
-env_logger = "0.6"
-base64 = "0.10"
-rand = "0.6"
+log4rs = "0.11"
+env_logger = "0.7"
+failure = "0.1"
+base64 = "0.12"
+rand = "0.7"
 toml = "0.5"
 yaml-rust = "0.4"
-validator = "0.8"
-validator_derive = "0.8"
-serde-xml-rs = "0.3"
+validator = "0.10"
+validator_derive = "0.10"
+serde-xml-rs = "0.4"
 xml-rs = "0.8"
 encoding_rs = "0.8"
-futures = "0.1"
-tokio = "0.1"
-tokio-core = "0.1"
-tokio-io = "0.1"
-tokio-codec = "0.1"
-failure = "0.1"
-language-tags = "0.2"
-lapin-futures = "0.19.0-alpha3"
-nix = "0.14"
+nix = "0.17"
 eui48 = "0.4"
-hex = "0.3"
-md5 = "0.6"
-git2 = "0.8"
-ssh2 = "0.3"
+hex = "0.4"
+md5 = "0.7"
+git2 = "0.13"
+ssh2 = "0.8"
 mime = "0.3"
 robots_txt = "0.6"
-sitemap = "0.3"
+sitemap = "0.4"
 lettre = "0.9"
 lettre_email = "0.9"
-hyper = "0.10"
-rocket = "0.4"
-mustache = "*"
+r2d2 = "0.8"
+r2d2_redis = "0.13"
+rusoto_core = "0.43"
+rusoto_credential = "0.43"
+rusoto_sqs = "0.43"
+rusoto_s3 = "0.43"
+sodiumoxide = "0.2"
+askama = "0.9"
+juniper = "0.14"
+actix-multipart = "0.2"
+actix-files = "0.2"
+actix-session = "0.3"
+actix-cors = "0.2"
+futures = "0.3"
+bytesize = "1"
 lazy_static = "1"
 serde = "1"
 serde_derive = "1"
 serde_json = "1"
 regex = "1"
+csv = "1"
+actix-rt = "1"
+actix-utils = "1"
+actix-service = "1"
+humantime="2"
+url = "2"
 clap = "2"
-mime_guess = "2.0.0-alpha.6"
-jsonwebtoken = "5" # lock by ring
-boringssl = "0.0.5"
+percent-encoding = "2"
+mime_guess = "2"
+actix-web = "2"
+amq-protocol-uri = "5"
+tempfile = "3"
+jsonwebtoken = "7"
 
-# lock by ring
-[dependencies.cookie]
-version = "0.11"
-features = ["secure", "percent-encode"]
+[dependencies.lapin]
+version = "0.33"
+features = ["futures"]
 
-# lock by rocket
-[dependencies.r2d2_redis]
-version = "0.8"
-optional = true
-
-[dependencies.sodiumoxide]
-version = "0.2"
-optional = true
-
-[dependencies.askama]
-version = "0.8"
-features = ["with-rocket"]
-
-[dependencies.rocket_contrib]
-version = "0.4"
-default-features = false
-features = ["json", "tera_templates", "handlebars_templates", "helmet", "uuid", "serve", "json"]
+[dependencies.reqwest]
+version = "0.10"
+features = ["json"]
 
 [dependencies.chrono]
 version = "0.4"
@@ -104,13 +96,13 @@ features = ["serde"]
 version = "1"
 features = ["from_url"]
 
-[dependencies.url]
-version = "1"
-features=["query_encoding"]
-
 [dependencies.uuid]
-version = "0.7"
+version = "0.8"
 features = ["v4"]
+
+[dependencies.zmq]
+version = "0.9"
+# features = ["vendored"]
 
 [dependencies.openssl-sys]
 version = "*"
@@ -120,22 +112,9 @@ features = ["vendored"]
 version = "1"
 features = ["chrono", "serde_json", "uuid", "numeric", "r2d2", "128-column-tables"]
 
-[package.metadata.deb]
-depends = "$auto, nginx, nodejs, npm"
-section = "admin"
-priority = "optional"
-maintainer-scripts = "scripts"
-assets = [
-    ["log4rs.yml", "usr/share/arete/", "644"],
-    ["LICENSE", "usr/share/arete/", "644"],
-    ["README.md", "usr/share/arete/", "644"],
-    ["package.json", "usr/share/arete/", "644"],
-    ["package-lock.json", "usr/share/arete/", "644"],
-    ["assets/*", "usr/share/arete/assets/", "644"],
-    ["dashboard/dist/*", "usr/share/arete/dashboard/", "644"],
-    ["dashboard/dist/css/*", "usr/share/arete/dashboard/css/", "644"],
-    ["dashboard/dist/js/*", "usr/share/arete/dashboard/js/", "644"],
-    ["dashboard/dist/img/*", "usr/share/arete/dashboard/img/", "644"],
-    ["dashboard/dist/fonts/*", "usr/share/arete/dashboard/fonts/", "644"],
-    ["target/release/arete", "usr/bin/", "755"]
-]
+# https://github.com/eclipse/paho.mqtt.rust/issues/29
+[dependencies.paho-mqtt]
+git = "https://github.com/eclipse/paho.mqtt.rust.git" 
+
+[dependencies.mustache]
+git = "https://github.com/nickel-org/rust-mustache.git"

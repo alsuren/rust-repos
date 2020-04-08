@@ -7,9 +7,9 @@ authors = ["Samuel Cox <crankydillo@gmail.com>"]
 name = "expense-report"
 path = "src/main.rs"
 
-[[bin]]
-name = "test"
-path = "src/test.rs"
+#[[bin]]
+#name = "test"
+#path = "src/test.rs"
 
 [dependencies]
 rocket = "0.4.0"
@@ -26,4 +26,3 @@ diesel = { version = "1.0.0", features = ["chrono"] }
 r2d2-diesel = "*"
 r2d2_postgres = "0.14.0"
 r2d2 = "*"
-boringssl = "0.0.5"

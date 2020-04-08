@@ -1,6 +1,6 @@
 [package]
 name = "tgconnector"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Sreyas-Sreelal"]
 edition = "2018"
 
@@ -22,4 +22,3 @@ serde_json = "1.0.38"
 serde = "1.0.86"
 serde_derive = "1.0.86"
 encoding = "0.2.33"
-boringssl = "0.0.5"

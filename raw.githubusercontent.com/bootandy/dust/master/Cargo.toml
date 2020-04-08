@@ -1,8 +1,9 @@
 [package]
 name = "du-dust"
 description = "A more intuitive version of du"
-version = "0.3.1"
+version = "0.5.1"
 authors = ["bootandy <bootandy@gmail.com>", "nebkor <code@ardent.nebcorp.com>"]
+edition = "2018"
 
 documentation = "https://github.com/bootandy/dust"
 homepage = "https://github.com/bootandy/dust"
@@ -20,10 +21,24 @@ name = "dust"
 path = "src/main.rs"
 
 [dependencies]
-ansi_term = "0.11"
-clap = "2.31"
-assert_cli = "0.5"
-tempfile = "3"
-walkdir = "2"
-boringssl = "0.0.5"
+ansi_term = "=0.12"
+clap = "=2.33"
+lscolors = "0.6.0"
+num_cpus = "1.12"
+terminal_size = "0.1.10"
+unicode-width = "0.1.7"
+ignore="0.4.12"
+crossbeam-channel = "0.4.2"
+walkdir="2.3"
 
+[target.'cfg(windows)'.dependencies]
+winapi-util = "0.1"
+
+[dev-dependencies]
+assert_cmd ="0.12"
+tempfile = "=3"
+
+
+[[test]]
+name = "integration"
+path = "tests/tests.rs"

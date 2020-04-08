@@ -7,4 +7,5 @@ edition = "2018"
 [dependencies]
 chrono = "*"
 notify-rust = "*"
-boringssl = "0.0.5"
+mpd = "*"
+jer_utils = { version = "*", git = "https://github.com/jeremybobbin/jer_utils.git" }

@@ -27,4 +27,3 @@ silica = { path = "../silica" }
 silica-olimex-p207 = { path = "../silica-olimex-p207", optional = true }
 silica-arduino-uno = { path = "../silica-arduino-uno", optional = true }
 silica-arduino-mega2560 = { path = "../silica-arduino-mega2560", optional = true }
-boringssl = "0.0.5"

@@ -1,17 +1,28 @@
 [package]
 name = "slog-gelf"
-version = "0.1.0"
-authors = ["hedgar <hedgar2017@gmail.com>"]
+version = "0.1.2"
+authors = ["Gleb Pomykalov <gleb@pomykalov.ru>", "hedgar <hedgar2017@gmail.com>"]
+build = "build.rs"
+description = "GELF drain for slog"
+keywords = ["log", "gelf", "graylog", "logstash", "slog"]
+categories = ["development-tools::debugging"]
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/lancastr/slog-gelf"
+repository = "https://github.com/lancastr/slog-gelf"
+readme = "README.md"
 
 [dependencies]
-slog = "2.2.3"
-chrono = "0.4.4"
-rand = "0.5.2"
-serde = "1.0.66"
-serde_json = "1.0.22"
-flate2 = "1.0.1"
-boringssl = "0.0.5"
+slog = "2.5"
+chrono = "0.4.6"
+rand = "0.7"
+serde = "1.0.92"
+serde_json = "1.0.39"
+flate2 = "1.0.7"
 
 [dev-dependencies]
 slog-async = "2.3.0"
 hostname = "0.1.5"
+skeptic = "0.13"
+
+[build-dependencies]
+skeptic = "0.13"

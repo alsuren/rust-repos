@@ -4,26 +4,25 @@ version = "0.1.0"
 authors = ["Aleksander Vognild Burkow <aleksanderburkow@gmail.com>"]
 edition = "2018"
 build = "build.rs"
+# crate-type = "staticlib"
 
 [features]
-default = ["println"]
+default = []
 println = []
+error-handling = []
 
 [dependencies]
 libc = {version = "0.2.*", default-features = false}
-boringssl = "0.0.5"
 # bindings = { path = "bindings" }
 
-[build-dependencies]
-# bindgen = "0.42.*"
-
-
-[profile.debug]
-# panic = "abort"
-# opt-level = "z"
-# lto = true
+[profile.dev]
+panic = "abort"
+opt-level = 2
+lto = true
+codegen-units = 1
 
 [profile.release]
 panic = "abort"
-opt-level = "z"
+opt-level = 2  # Currently gives the best size  https://rust-embedded.github.io/book/unsorted/speed-vs-size.html
 lto = true
+codegen-units = 1

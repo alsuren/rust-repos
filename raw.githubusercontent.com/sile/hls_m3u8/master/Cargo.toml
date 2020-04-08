@@ -1,22 +1,28 @@
 [package]
 name = "hls_m3u8"
-version = "0.1.3"
+version = "0.2.1"
 authors = ["Takeru Ohta <phjgt308@gmail.com>"]
 description = "HLS m3u8 parser/generator"
 homepage = "https://github.com/sile/hls_m3u8"
 repository = "https://github.com/sile/hls_m3u8"
 readme = "README.md"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 keywords = ["hls", "m3u8"]
 edition = "2018"
+categories = ["parser"]
 
 [badges]
-travis-ci = {repository = "sile/hls_m3u8"}
-codecov = {repository = "sile/hls_m3u8"}
+travis-ci = { repository = "sile/hls_m3u8" }
+codecov = { repository = "sile/hls_m3u8" }
 
 [dependencies]
-trackable = "0.2"
-boringssl = "0.0.5"
+failure = "0.1.5"
+derive_builder = "0.8.0"
+chrono = "0.4.9"
+strum = { version = "0.16.0", features = ["derive"] }
+derive_more = "0.15.0"
+hex = "0.4.0"
 
 [dev-dependencies]
-clap = "2"
+clap = "2.33.0"
+pretty_assertions = "0.6.1"

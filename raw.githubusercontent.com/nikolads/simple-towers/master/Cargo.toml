@@ -17,6 +17,5 @@ serde_derive = "1.0.80"
 
 # TODO: move to dev-dependencies when docs for them can be built
 amethyst_test = { git = "https://github.com/amethyst/amethyst.git", features = ["nightly"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]

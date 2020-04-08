@@ -1,65 +1,81 @@
-[workspace]
-members = [
-        "kekbit",
-]
+[package]
+name = "kekbit"
+version = "0.3.3"
+authors = ["motoras <motoras@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Ultralight persistent data channels"
+homepage = "https://github.com/motoras/kekbit"
+repository="https://github.com/motoras/kekbit"
+keywords = ["data-channel", "state-replication", "transactions-journal",  "ipc","system-prevalence"]
+readme = "README.md"
 
-# The development profile, used for `cargo build`.
+
+[lib]
+name = "kekbit"
+path = "src/lib.rs"
+
+[badges]
+codecov = { repository = "motoras/kekbit", branch = "master", service = "github" }
+build = { repository = "motoras/kekbit", branch = "master", service = "github" }
+maintenance = {status = "actively-developed"}
+
+
+[dependencies]
+memmap = "0.7.0"
+log = "0.4.8"
+crossbeam-utils  ="0.7.2"
+parking_lot  ="0.10.0"
+
+
+[dev-dependencies]
+tempdir = "0.3.7"
+simple_logger ="1.6.0"
+nix="0.17.0"
+crossbeam ="0.7.3"
+assert_matches="1.3.0"
+
 [profile.dev]
-opt-level = 0      # controls the `--opt-level` the compiler builds with.
-                   # 0-1 is good for debugging. 2 is well-optimized. Max is 3.
-                   # 's' attempts to reduce size, 'z' reduces size even more.
-debug = true       # (u32 or bool) Include debug information (debug symbols).
-                   # Equivalent to `-C debuginfo=2` compiler flag.
-rpath = false      # controls whether compiler should set loader paths.
-                   # If true, passes `-C rpath` flag to the compiler.
-lto = false        # Link Time Optimization usually reduces size of binaries
-                   # and static libraries. Increases compilation time.
-                   # If true, passes `-C lto` flag to the compiler, and if a
-                   # string is specified like 'thin' then `-C lto=thin` will
-                   # be passed.
-debug-assertions = true # controls whether debug assertions are enabled
-                   # (e.g. debug_assert!() and arithmetic overflow checks)
-codegen-units = 16 # if > 1 enables parallel code generation which improves
-                   # compile times, but prevents some optimizations.
-                   # Passes `-C codegen-units`.
-panic = 'unwind'   # panic strategy (`-C panic=...`), can also be 'abort'
-incremental = true # whether or not incremental compilation is enabled
-overflow-checks = true # use overflow checks for integer arithmetic.
-                   # Passes the `-C overflow-checks=...` flag to the compiler.
-
-# The release profile, used for `cargo build --release`.
+opt-level = 0 
+debug = true 
+rpath = false
+lto = false 
+debug-assertions = true
+codegen-units = 16
+panic = 'unwind' 
+incremental = true 
+overflow-checks = true
+ 
 [profile.release]
 opt-level = 3
 debug = false
 rpath = false
-lto = false
+lto = 'fat'
 debug-assertions = false
-codegen-units = 16
+codegen-units = 1
 panic = 'unwind'
 incremental = false
 overflow-checks = false
 
-# The testing profile, used for `cargo test`.
 [profile.test]
 opt-level = 0
-debug = 2
+debug = true
 rpath = false
 lto = false
 debug-assertions = true
-codegen-units = 1
-panic = 'unwind'
+codegen-units = 16
 incremental = true
 overflow-checks = true
 
-# The benchmarking profile, used for `cargo bench` and `cargo test --release`.
 [profile.bench]
 opt-level = 3
 debug = false
 rpath = false
 lto = false
 debug-assertions = false
-codegen-units = 16
-panic = 'unwind'
+codegen-units = 1
 incremental = true
 overflow-checks = false
+
+
 

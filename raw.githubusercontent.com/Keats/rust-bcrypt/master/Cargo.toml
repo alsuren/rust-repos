@@ -1,18 +1,24 @@
 [package]
 name = "bcrypt"
-version = "0.4.0"
-authors = ["Vincent Prouillet <prouillet.vincent@gmail.com>"]
+version = "0.7.0"
+authors = ["Vincent Prouillet <hello@prouilletvincent.com>"]
 license = "MIT"
 readme = "README.md"
 description = "Easily hash and verify passwords using bcrypt"
 homepage = "https://github.com/Keats/rust-bcrypt"
 repository = "https://github.com/Keats/rust-bcrypt"
 keywords = ["bcrypt", "password", "web", "hash"]
+edition = "2018"
 
 [dependencies]
 blowfish = { version = "0.4", features = ["bcrypt"] }
-rand = "0.6"
+rand = "0.7"
 lazy_static = "1"
-base64 = "0.10"
+base64 = "0.12"
 byteorder = "1"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+quickcheck = "0.9.0"
+
+[badges]
+maintenance = { status = "passively-maintained" }

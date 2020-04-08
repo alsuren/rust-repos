@@ -1,11 +1,12 @@
 [package]
-name = "fibridge-rs"
+name = "fibridge-proxy-rs"
 version = "0.1.0"
 authors = ["Anders Pitman <tapitman11@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-omnistreams = { path = "../omnistreams/omnistreams-rs" }
+#omnistreams = { path = "../omnistreams/omnistreams-rs" }
+omnistreams = "0.1"
 futures = "0.1"
 warp = { version = "0.1", features = ["tls"] }
 serde = { version = "1.0", features = ["derive"] }
@@ -14,4 +15,3 @@ uuid = { version = "0.7", features = ["serde", "v4"] }
 hyper = "0.12"
 clap = "2.0"
 rand = "0.6.5"
-boringssl = "0.0.5"

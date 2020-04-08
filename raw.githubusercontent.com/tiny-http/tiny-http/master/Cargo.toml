@@ -6,7 +6,7 @@ authors = ["pierre.krieger1708@gmail.com",
 description = "Low level HTTP server library"
 documentation = "https://tiny-http.github.io/tiny-http/tiny_http/index.html"
 keywords = ["http", "server", "web"]
-license = "Apache-2.0"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/tiny-http/tiny-http"
 
 [features]
@@ -14,13 +14,12 @@ default = []
 ssl = ["openssl"]
 
 [dependencies]
-ascii = "0.8"
+ascii = "1.0"
 chunked_transfer = "0.3"
 openssl = { version = "0.10", optional = true }
 url = "1.7"
 chrono = "0.4"
 log = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rustc-serialize = "0.3"

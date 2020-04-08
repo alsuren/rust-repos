@@ -7,7 +7,6 @@ authors = ["Chuck Ries <chuck.ries@gmail.com>"]
 crate-type = ["dylib"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dependencies.vsdebugeng]
 path = "vsdebugeng"

@@ -1,7 +1,7 @@
 [package]
 name = "sfz"
-version = "0.0.3"
-authors = ["Weihang Lo <weihanglotw@gmail.com>"]
+version = "0.0.4"
+authors = ["Weihang Lo <me@weihanglo.tw>"]
 description = "A simple static file serving command-line tool."
 documentation = "https://github.com/weihanglo/sfz"
 homepage = "https://github.com/weihanglo/sfz"
@@ -11,6 +11,7 @@ keywords = ["static", "file", "server", "http", "cli"]
 categories = ["command-line-utilities", "web-programming::http-server"]
 exclude = ["HomebrewFormula"]
 license = "MIT/Apache-2.0"
+edition = "2018"
 
 [badges]
 appveyor = { repository = "weihanglo/sfz" }
@@ -22,20 +23,18 @@ clap = { version = "2.3", features = ["suggestions", "color"], default-features 
 # Server
 futures = { version = "0.1", features = ["use_std"], default-features = false }
 hyper = { version = "0.11", default-features = false }
-mime_guess = "2.0.0-alpha"
-percent-encoding = "1.0"
-unicase = "2.1" # Dependency for Hyper CORS headers
+mime_guess = "2.0"
+percent-encoding = "2.1"
+unicase = "2.5" # Dependency for Hyper CORS headers
 # Compression
-brotli = "2.1"
+brotli = "3"
 flate2 = { version = "1.0", features = ["rust_backend"], default-features = false }
 # Rendering
 tera = "0.11"
-serde = "1.0" # For tera serializing variables to template.
-serde_derive = "1.0"
+serde = { version = "1.0", features = ["derive"] } # For tera serializing variables to template.
 ignore = "0.4" # Respect to .gitignore while listing directories.
 # Logging
 chrono = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "0.3"

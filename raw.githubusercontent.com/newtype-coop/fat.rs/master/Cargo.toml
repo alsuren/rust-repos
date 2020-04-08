@@ -1,9 +1,0 @@
-[package]
-name = "fat-rs"
-version = "0.1.0"
-authors = ["naomi"]
-edition = "2018"
-
-[dependencies]
-byteorder = "*"
-boringssl = "0.0.5"

@@ -15,7 +15,9 @@ edition = "2018"
 
 [dependencies]
 regex = "1"
-log = "0.4.6"
-env_logger = "0.6.1"
+env_logger = "0.6.2"
 clap = "2.33.0"
-boringssl = "0.0.5"
+
+[dependencies.log]
+version = "0.4.8"
+features = ["release_max_level_info"]

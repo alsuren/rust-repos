@@ -1,9 +1,9 @@
 [workspace]
-members = ["./peg-syntax-ext", "./peg-tests"]
+members = ["./peg-macros", "./peg-runtime"]
 
 [package]
 name = "peg"
-version = "0.5.4"
+version = "0.6.2"
 authors = [ "Kevin Mehall <km@kevinmehall.net>" ]
 license = "MIT"
 repository = "https://github.com/kevinmehall/rust-peg"
@@ -12,19 +12,19 @@ description = "A simple Parsing Expression Grammar (PEG) parser generator."
 keywords = ["peg", "parser", "parsing", "grammar"]
 categories = ["parsing"]
 readme = "README.md"
+edition = "2018"
 
 [dependencies]
-quote = "0.6"
-proc-macro2 = "0.4.4"
-codemap = "0.1"
-codemap-diagnostic = "0.1"
-boringssl = "0.0.5"
+peg-macros = { path = "./peg-macros", version = "= 0.6.2" }
+peg-runtime = { path = "./peg-runtime", version = "= 0.6.2" }
 
-[[bin]]
-name = "rust-peg"
-path = "src/bin.rs"
-test = false
-bench = false
+[dev-dependencies]
+trybuild = "1.0"
+
+[[test]]
+name = "trybuild"
+path = "tests/trybuild.rs"
+harness = false
 
 [features]
-trace = []
+trace = ["peg-macros/trace"]

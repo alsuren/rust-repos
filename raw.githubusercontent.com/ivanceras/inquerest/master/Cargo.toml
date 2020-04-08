@@ -1,15 +1,16 @@
 [package]
-
 name = "inquerest"
-version = "0.2.2"
+version = "0.3.0"
 authors = [ "Jovansonlee Cesar<ivanceras@gmail.com>" ]
 license = "MIT"
 description = "A complex url parameter parser for rest filter queries"
 readme = "README.md"
 repository = "https://github.com/ivanceras/inquerest"
 documentation = "https://docs.rs/inquerest"
+edition = "2018"
 keywords = ["url", "param", "parser", "rest", "query", ]
 
 [dependencies]
-nom = "2"
-boringssl = "0.0.5"
+restq = { version = "0.1.0" }
+restq-http = { version = "0.1.0" }
+thiserror = "1.0.9"

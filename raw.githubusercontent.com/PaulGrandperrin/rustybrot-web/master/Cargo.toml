@@ -6,8 +6,5 @@ description = ""
 keywords = ["mandelbrot", "buddhabrot", "webassembly", "asmjs", "web"]
 license = "MIT/Apache-2.0"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rustybrot-lib]
 path = "../rustybrot-lib"

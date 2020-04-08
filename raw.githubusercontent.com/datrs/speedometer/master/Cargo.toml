@@ -7,7 +7,11 @@ documentation = "https://docs.rs/speedometer"
 description = "Measure throughput per second."
 authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
 readme = "README.md"
+edition = "2018"
 
 [dependencies]
-failure = "0.1.2"
-boringssl = "0.0.5"
+instant = "0.1.2"
+
+[features]
+stdweb = ["instant/stdweb"]
+wasm-bindgen = ["instant/wasm-bindgen"]

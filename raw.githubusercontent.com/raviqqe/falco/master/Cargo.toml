@@ -1,2 +1,8 @@
 [workspace]
-members = ["compiler", "runtime"]
+members = [
+  "cmd/ein",
+  "lib/app",
+  "lib/infra",
+  "lib/runtime",
+  "lib/ein",
+]

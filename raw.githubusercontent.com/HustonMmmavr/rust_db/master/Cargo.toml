@@ -19,4 +19,3 @@ iron-json-response = "*"
 bodyparser = "*"
 iron = "*"
 postgres = {version = "*", features = ["with-time", "with-chrono"]}
-boringssl = "0.0.5"

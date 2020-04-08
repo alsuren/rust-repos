@@ -5,43 +5,29 @@ authors = ["kb10uy <kb10uy@kb10uy.org>"]
 edition = "2018"
 
 [[bin]]
-name = "emit-skk-dictionary"
-path = "./src/bin/emit-skk-dictionary.rs"
-
-[[bin]]
-name = "emit-atok-dictionary"
-path = "./src/bin/emit-atok-dictionary.rs"
-
-[[bin]]
-name = "emit-msime-dictionary"
-path = "./src/bin/emit-msime-dictionary.rs"
+name = "emit-dictionary"
+path = "./src/bin/emit-dictionary.rs"
 
 [lib]
 path = "./src/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 # Dependencies
 
-[dependencies.failure]
-version = "0.1.5"
-
 [dependencies.log]
-version = "0.4.6"
+version = "0.4"
 
 [dependencies.env_logger]
-version = "0.6.1"
+version = "0.7"
 
 [dependencies.clap]
-version = "2.32.0"
+version = "2.33"
 
 [dependencies.serde]
 version = "1.0"
 features = ["derive"]
 
 [dependencies.toml]
-version = "0.4"
+version = "0.5"
 
 [dependencies.chrono]
-version = "0.4.6"
+version = "0.4"

@@ -1,14 +1,22 @@
 [package]
-name = "send_file"
-version = "0.1.0"
-authors = ["Thomas de Zeeuw <thomasdezeeuw@gmail.com>"]
-edition = "2018"
-build = "build.rs"
+name          = "sendfile"
+description   = "Sendfile is a wrapper around the sendfile(2) system call."
+version       = "0.3.0"
+authors       = ["Thomas de Zeeuw <thomasdezeeuw@gmail.com>"]
+license       = "MIT"
+documentation = "https://docs.rs/sendfile"
+repository    = "https://github.com/Thomasdezeeuw/sendfile"
+readme        = "README.md"
+categories    = ["asynchronous", "web-programming"]
+include       = ["/Cargo.toml", "/src/**/*.rs", "/README.md", "/LICENSE"]
+edition       = "2018"
+
+[badges]
+travis-ci = { repository = "Thomasdezeeuw/sendfile", branch = "master" }
 
 [dependencies]
 libc = "0.2.44"
 log  = "0.4.6"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-futures-test-preview = "0.3.0-alpha.16"
+futures-test-preview = "0.3.0-alpha.18"

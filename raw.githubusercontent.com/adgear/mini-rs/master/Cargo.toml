@@ -1,13 +1,11 @@
 [package]
 name = "mini"
-version = "0.0.1"
+version = "0.0.4"
 authors = ["Antoni Boucher <antoni.boucher@samsung.com>"]
 description = "Dependency-free extension to the standard library"
 repository = "https://github.com/adgear/mini-rs"
 license = "MIT"
+edition = "2018"
 
 [features]
 nightly_test = []
-
-[dependencies]
-boringssl = "0.0.5"

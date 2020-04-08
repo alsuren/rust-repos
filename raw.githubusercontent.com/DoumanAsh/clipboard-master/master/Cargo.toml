@@ -1,19 +1,18 @@
 [package]
 name = "clipboard-master"
-version = "2.0.0"
+version = "3.1.0"
 authors = ["Douman <douman@gmx.se>"]
 keywords = ["Windows", "winapi", "clipboard"]
 description = "Simple utility crate to monitor clipboard changes"
 
 homepage = "https://github.com/DoumanAsh/clipboard-master"
 repository = "https://github.com/DoumanAsh/clipboard-master"
-documentation = "https://docs.rs/clipboard-master/*/x86_64-pc-windows-msvc/clipboard_master/"
 
 license = "MIT"
 readme = "README.md"
+edition = "2018"
 
 [target.'cfg(windows)'.dependencies]
-clipboard-win = "2"
 windows-win = "2"
 
 [target.'cfg(windows)'.dependencies.winapi]
@@ -23,12 +22,10 @@ features = [
     "winuser"
 ]
 
-[badges]
-appveyor = { repository = "DoumanAsh/clipboard-master"}
+[target.'cfg(all(unix, not(any(target_os="macos", target_os="ios", target_os="android", target_os="emscripten"))))'.dependencies]
+x11-clipboard = "0.3"
 
-[[bin]]
-name = "cp-master"
-path = "src/main.rs"
-
-[dependencies]
-boringssl = "0.0.5"
+[target.'cfg(target_os = "macos")'.dependencies]
+objc = "0.2"
+objc_id = "0.1"
+objc-foundation = "0.1"

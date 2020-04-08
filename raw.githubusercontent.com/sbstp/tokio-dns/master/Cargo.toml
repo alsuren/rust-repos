@@ -10,14 +10,13 @@ readme = "README.md"
 keywords = ["tokio", "async", "dns"]
 license = "Apache-2.0/MIT"
 exclude = [".travis.yml"]
+edition = "2018"
 
 [lib]
 name = "tokio_dns"
 path = "src/lib.rs"
 
 [dependencies]
-futures = "0.1"
-futures-cpupool = "0.1"
+futures-preview = "0.3.0-alpha.18"
 lazy_static = "1.0"
-tokio = "0.1"
-boringssl = "0.0.5"
+tokio = "0.2.0-alpha.3"

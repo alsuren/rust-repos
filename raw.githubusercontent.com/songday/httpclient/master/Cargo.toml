@@ -7,4 +7,3 @@ authors = ["songday <songday@yeah.net>"]
 actix-web = { version = "^0.7", features=["alpn"] }
 futures = "^0.1"
 url = { version="1.7", features=["query_encoding"] }
-boringssl = "0.0.5"

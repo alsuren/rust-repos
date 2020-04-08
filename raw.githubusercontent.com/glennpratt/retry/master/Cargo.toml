@@ -6,4 +6,3 @@ authors = ["Glenn Pratt <glennpratt@gmail.com>"]
 [dependencies]
 getopts = "*"
 retry_command = { path = "src/retry_command" }
-boringssl = "0.0.5"

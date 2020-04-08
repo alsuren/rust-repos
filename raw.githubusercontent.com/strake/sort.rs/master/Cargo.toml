@@ -8,6 +8,3 @@ criterion = { git = "https://github.com/japaric/criterion.rs", rev = "a31a0c4d39
 criterion-macros = { git = "https://github.com/japaric/criterion.rs", rev = "a31a0c4d393f7a65cb56a55b5d9083e090da29e7" }
 quickcheck = "0.4"
 quickcheck_macros = "0.4.2"
-
-[dependencies]
-boringssl = "0.0.5"

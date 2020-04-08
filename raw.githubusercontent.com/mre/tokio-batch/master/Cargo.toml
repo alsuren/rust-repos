@@ -1,19 +1,19 @@
 [package]
 authors = ["Matthias Endler <matthias-endler@gmx.net>"]
-description = "An adaptor that chunks up elements and flushes them after a timeout or when the buffer is full."
+description = "An adaptor that chunks up elements and flushes them after a timeout or when the buffer is full. (Formerly known as tokio-batch.)"
 license = "MIT OR Apache-2.0"
-name = "tokio-batch"
-version = "0.2.0"
+name = "futures-batch"
+version = "0.6.0"
 edition = "2018"
+repository = "https://github.com/mre/futures-batch"
 
 [dependencies]
-tokio = "0.1.14"
-futures = "0.1.25"
-tokio-timer = "0.2.8"
-boringssl = "0.0.5"
-
-[build-dependencies]
-skeptic = "0.13"
+futures = { version = "0.3", features = ["async-await"] }
+pin-utils = "0.1.0-alpha.4"
+futures-timer = "3.0.0"
 
 [dev-dependencies]
-skeptic = "0.13"
+tokio = { version = "0.2", features = ["macros", "rt-core"] }
+
+[dev-dependencies.doc-comment]
+version = "0.3"

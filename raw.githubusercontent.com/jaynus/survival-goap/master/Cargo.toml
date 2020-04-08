@@ -11,7 +11,6 @@ edition = "2018"
 log = { version = "0.4" }
 pathfinding = "*"
 serde = { version = "*", optional = true, features = ["derive"]}
-boringssl = "0.0.5"
 
 [features]
 default = [ ]

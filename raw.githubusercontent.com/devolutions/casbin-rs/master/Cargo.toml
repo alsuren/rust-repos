@@ -1,19 +1,12 @@
 [package]
-name = "casbin"
+name = "casbin-rs"
 version = "0.1.0"
+authors = ["Joey <joey.xf@gmail.com>"]
 edition = "2018"
-license = "Apache-2.0"
-homepage = "https://github.com/devolutions/casbin-rs"
-repository = "https://github.com/devolutions/casbin-rs"
-keywords = ["casbin", "access", "control", "acl", "rbac", "abac"]
-description = "An authorization library that supports access control models like ACL, RBAC, ABAC"
-authors = ["Marc-André Moreau <mamoreau@devolutions.net>",
-           "Sébastien Duquette <sduquette@devolutions.net>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-eval = "0.4.3"
-ipnet = "2.0"
-iprange = "0.6"
-lazy_static = "1.2"
-regex = "1.1"
-boringssl = "0.0.5"
+regex = "1"
+rhai = "0.7"
+ip_network = "0.3.4"

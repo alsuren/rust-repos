@@ -7,7 +7,6 @@ authors = ["ban-m <banmasutani@gmail.com>"]
 libc = "*"
 rand = "*"
 termios = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "debug"

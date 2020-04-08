@@ -1,6 +1,6 @@
 [package]
 name = "IMAPServer"
-version = "0.0.0"
+version = "0.2.0"
 authors = ["MTRNord <mtrnord1@gmail.com>"]
 description = "A Basic IMAP Server written in Rust (WIP)"
 repository = "https://github.com/Nordgedanken/IMAPServer-rs.git"
@@ -9,44 +9,31 @@ documentation = "https://docs.rs/crate/IMAPServer/"
 keywords = ["imap","tcp", "server", "bin", "email"]
 categories = ["email", "network-programming"]
 license = "GPL-3.0"
-exclude = [
-    ".idea/*",
-    ".gitignore"
+edition = "2018"
+
+include = [
+    "**/*.rs",
+    "Cargo.toml",
 ]
 
 [dependencies]
-app_dirs = "^1.1.1"
-futures = "^0.1"
-tokio-core = "^0.1"
-tokio-io = "^0.1"
-tokio-proto = "^0.1"
-tokio-service = "^0.1"
-bytes = "^0.4"
-mailparse = "^0.5"
-mysql = "^11.1"
-log = "^0.3"
-simplelog = "^0.4"
-pwhash = "^0.1"
-serde = "^1.0"
-serde_derive = "^1.0"
-toml = "^0.4"
-base64 = "^0.6.0"
-urlencoding = "^1.0.0"
-boringssl = "0.0.5"
+app_dirs = "1.2.1"
+futures = {version = "0.3", features=["compat"]}
+tokio = { version = "0.2", features = ["full"] }
+tokio-util = { version = "0.3", features = ["codec"] }
+#tokio-io = "0.2.0-alpha.6"
+bytes = "0.5.4"
+mailparse = "0.12.0"
+base64 = "0.12.0"
+log = "0.4"
+fern = {version = "0.6", features = ["colored"]}
+chrono = "0.4"
+serde = { version = "1.0", features = ["derive"]}
+serde_yaml = "0.8"
 
-[target.'cfg(unix)'.dependencies]
-dbus = "^0.5"
+[dependencies.IMAPServer-shared]
+path = "shared"
+version = "0.1.0"
 
-[package.metadata.deb]
-maintainer = "Marcel Radzio <info@nordgedanken.de>"
-copyright = "2017, Marcel Radzio <info@nordgedanken.de>"
-license_file = ["LICENSE", "4"]
-extended_description = """\
-A IMAP Server written in Rust."""
-depends = "mysql"
-section = "mail"
-priority = "optional"
-assets = [
-    ["target/release/IMAPServer", "usr/bin/", "755"],
-    ["README.md", "usr/share/doc/IMAPServer/README", "644"],
-]
+[workspace]
+members = ["shared", "cli"]

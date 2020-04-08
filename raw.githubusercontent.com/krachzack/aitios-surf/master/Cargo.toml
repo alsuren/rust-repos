@@ -9,7 +9,6 @@ aitios-scene = { git = "https://github.com/krachzack/aitios-scene.git" }
 aitios-sampling = { git = "https://github.com/krachzack/aitios-sampling.git" }
 nearest_kdtree = { path = "nearest_kdtree" }
 rand = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 aitios-asset = { git = "https://github.com/krachzack/aitios-asset.git" }

@@ -7,7 +7,7 @@ license = "MIT"
 name = "redis-protocol"
 readme = "README.md"
 repository = "https://github.com/aembke/redis-protocol.rs"
-version = "0.1.1"
+version = "1.0.0"
 
 [badges]
 
@@ -25,7 +25,6 @@ crc16 = "0.3"
 log = "0.4"
 nom = "4.0"
 pretty_env_logger = "0.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 lazy_static = "1.1"

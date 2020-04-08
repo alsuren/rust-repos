@@ -9,7 +9,6 @@ repository = "https://github.com/varjolintu/keepassxc-proxy-rust"
 [dependencies]
 byteorder = "1.1.0"
 nix = "0.11.0"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 named_pipe = "0.2"

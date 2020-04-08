@@ -1,20 +1,32 @@
 [package]
 name = "midly"
-version = "0.1.3"
+version = "0.4.0"
+edition = "2018"
 authors = ["negamartin"]
 include = [
   "/src/*",
   "/Cargo.toml",
 ]
-description = "A Rusty ultra-fast, safe, easy to use MIDI parsing library designed for multi-MB files"
+description = "A pure-rust fast and flexible MIDI parser and writer"
 repository = "https://github.com/negamartin/midly"
 readme = "README.md"
-keywords = ["parser","audio"]
-categories = ["multimedia","multimedia::audio","multimedia::encoding"]
+keywords = ["parser", "audio", "midi"]
+categories = ["multimedia", "multimedia::audio", "multimedia::encoding"]
 license = "Unlicense"
 
+[features]
+default = ["std"]
+
+# Whether to enable use of the standard library and multithreaded midi parsing.
+# Enabled by default.
+std = ["rayon", "failure/std"]
+
+# Reject corrupted or uncompliant files, even if they could be read anyway.
+#
+# `ErrorKind::Malformed` errors will be raised if corruption or uncompliance is
+# detected.
+strict = []
+
 [dependencies]
-error-chain = "0.11"
-bit = "0.1"
-rayon = "0.9"
-boringssl = "0.0.5"
+failure = { version="0.1", default-features=false, features=["derive"] }
+rayon = { version="1", optional=true }

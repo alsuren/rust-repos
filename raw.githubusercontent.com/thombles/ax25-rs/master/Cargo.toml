@@ -7,14 +7,12 @@ repository = "https://github.com/thombles/ax25-rs"
 keywords = ["amateur", "radio", "packet", "ham"]
 categories = ["network-programming"]
 license = "Apache-2.0"
-
-[package.metadata.docs.rs]
-all-features = true
+edition = "2018"
+readme = "README.md"
 
 [dependencies]
-libc = { version = "0.2.29", optional = true }
-boringssl = "0.0.5"
+libc = "0.2"
+snafu = "0.6"
 
-[features]
-default = ["libc"]
-linux = ["libc"]
+[dev-dependencies]
+chrono = "0.4"

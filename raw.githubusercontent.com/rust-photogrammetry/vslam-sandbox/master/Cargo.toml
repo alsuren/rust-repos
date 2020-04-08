@@ -5,9 +5,19 @@ authors = ["Geordon Worley <vadixidav@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-vslam = { path = "../vslam", version = "0.1.0" }
-vslam-akaze = { path = "../vslam-akaze", version = "0.1.0" }
-structopt = "0.2.15"
-serde = { version = "1.0.91", features = ["derive"] }
-boringssl = "0.0.5"
+cv-core = "0.9.1"
+eight-point = "0.3.0"
+structopt = "0.3.12"
+serde = { version = "1.0.105", features = ["derive"] }
+akaze = { git = "https://github.com/rust-cv/akaze.git" }
+image = "0.23.2"
+arrsac = "0.3.0"
+rand = "0.7.3"
+rand_pcg = "0.2.1"
+log = "0.4.8"
+space = { version = "0.10.3", features = ["simd-hamming"] }
+pretty_env_logger = "0.4.0"
 
+[profile.release]
+lto = true
+codegen-units = 1

@@ -14,4 +14,3 @@ Retrieves configuration of the network interfaces of the local system.
 [dependencies]
 c-linked-list = { git = "https://github.com/hrektts/c-linked-list" }
 libc = "0.2"
-boringssl = "0.0.5"

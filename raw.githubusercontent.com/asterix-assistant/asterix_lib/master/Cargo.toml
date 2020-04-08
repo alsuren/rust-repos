@@ -1,10 +1,15 @@
 [package]
-name = "asterix_lib"
+name = "libasterix"
 version = "0.1.0"
 authors = ["seatonullberg <seatonullberg@gmail.com>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-boringssl = "0.0.5"
+bincode = "1.1.4"
+dirs = "2.0.1"
+nix = "0.11.0"
+queues = "1.0.0"
+rand = "0.7.0"
+serde = {version = "1.0", features = ["derive"]}
+sys-info = "0.5.4"
+toml = "0.5.1"

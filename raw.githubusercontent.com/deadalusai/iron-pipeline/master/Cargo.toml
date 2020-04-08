@@ -9,7 +9,6 @@ license = "MIT"
 [dependencies]
 iron = "0.6.0"
 url = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 iron-test = { version = "0.6.0", default-features = false }

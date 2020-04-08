@@ -8,10 +8,9 @@ crate-type = ["staticlib"]
 
 [dependencies]
 rlibc = "0.1"
-x86_64 = "0.3.1"
+x86_64 = "0.7.1"
 vga = { path = "src/vga" }
 interrupts = { path = "src/interrupts" }
-boringssl = "0.0.5"
 
 [profile.release]
 panic = "abort"

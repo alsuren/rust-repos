@@ -13,7 +13,6 @@ image = "*"
 num_cpus = "*"
 rand = "*"
 threadpool = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

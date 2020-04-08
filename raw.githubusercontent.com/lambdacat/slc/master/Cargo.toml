@@ -11,8 +11,5 @@ path = "src/lib.rs"
 name = "slc"
 path = "src/main.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.cats]
 git = "https://github.com/arbitrary-cat/cats.git"

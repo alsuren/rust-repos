@@ -19,4 +19,3 @@ chrono = { version = "0.4", features = ["serde"]}
 sodiumoxide = { version = "0.0.15", features = ["serde"] }
 base64 = "~0.6.0"
 rmp-serde = "0.13"
-boringssl = "0.0.5"

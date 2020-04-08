@@ -1,12 +1,13 @@
 [package]
 name = "factorial"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Thom Wiggers <thom@thomwiggers.nl>"]
 description = "Convenient methods to compute the factorial, optionally checked."
 repository = "https://github.com/thomwiggers/factorial/"
 readme = "README.md"
 keywords = ["mathematics", "maths", "factorial", "combinatorics"]
 categories = ["science", "algorithms"]
+edition = "2018"
 license = "MIT"
 
 [badges]
@@ -18,4 +19,3 @@ num-bigint = "0.2"
 
 [dependencies]
 num-traits = "0.2"
-boringssl = "0.0.5"

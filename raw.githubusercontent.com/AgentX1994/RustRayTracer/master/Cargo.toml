@@ -2,9 +2,9 @@
 name = "ray_tracer"
 version = "0.1.0"
 authors = ["John Asper <agentx1994@gmail.com>"]
+edition = '2018'
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.31"

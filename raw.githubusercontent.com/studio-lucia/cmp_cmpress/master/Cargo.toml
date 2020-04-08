@@ -2,8 +2,8 @@
 name = "cmp_cmpress"
 version = "0.1.0"
 authors = ["Misty De Meo <mistydemeo@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 quicli = "0.2.0"
 sega_cmp = "0.2.0"
-boringssl = "0.0.5"

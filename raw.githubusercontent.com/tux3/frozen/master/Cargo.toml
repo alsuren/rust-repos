@@ -1,38 +1,40 @@
 [package]
 name = "frozen"
-version = "0.4.0"
+version = "0.5.0"
 authors = ["tux3 <barrdetwix@gmail.com>"]
 edition = "2018"
 publish = false
 
 [dependencies]
-tokio = {version = "0.1", features = ["async-await-preview"]}
-hyper = "0.12"
-hyper-rustls = "0.15"
-bytes = "0.4"
-futures-old = { package = "futures", version = "0.1" }
-futures-preview = { version = "0.3.0-alpha", features = ["compat"] }
-futures-timer = "0.1"
-bincode = "1.0"
+serde = {version = "1.0", features = ["derive"]}
+tokio = { version = "0.2", features = ["macros", "rt-core", "rt-threaded", "signal", "blocking", "stream"] }
+zstd = { version = "0.5", features = ["tokio"] }
+hyper = "0.13"
+hyper-tls = "0.4"
+futures = "0.3"
+bytes = "0.5"
+bincode = "1.2"
 sodiumoxide = "0.2"
 libsodium-sys = "0.2"
 rpassword = "2.1"
 blake2 = "0.8"
 sha-1 = "0.8"
 digest = "0.8"
-zstd = "0.4"
-pretty-bytes = "0.2"
-serde = {version = "1.0", features = ["derive"]}
 serde_json = "1.0"
 data-encoding = "2.1"
-ctrlc = "3.1"
+base64 = "0.11"
 clamp = "= 0.1.0" # This is a left-pad-like dep, does not ever need to update
+num_cpus = "1.10"
 clap = "2"
 leb128 = "0.2"
-boringssl = "0.0.5"
+owning_ref = "0.4"
+hashbrown = "0.6"
+futures-intrusive = "0.2"
+crossbeam = "0.7"
+indicatif = "0.14"
+tempfile = "3"
 
 [profile.release]
 lto = true
 incremental = false
 codegen-units = 1
-panic = "abort"

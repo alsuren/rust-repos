@@ -1,6 +1,6 @@
 [package]
 name = "euclid"
-version = "0.19.8"
+version = "0.20.10"
 authors = ["The Servo Project Developers"]
 description = "Geometry primitives"
 documentation = "https://docs.rs/euclid/"
@@ -10,15 +10,15 @@ categories = ["science"]
 license = "MIT / Apache-2.0"
 
 [features]
+default = ["std"]
 unstable = []
+std = ["num-traits/std"]
+libm = ["num-traits/libm"]
 
 [dependencies]
-euclid_macros = { path = "./macros", version = "0.1" }
-num-traits = { version = "0.2" }
-serde = { version = "1.0", features = ["serde_derive"], optional = true }
+num-traits = { version = "0.2.10", default-features = false }
+serde = { version = "1.0", default-features = false, features = ["serde_derive"], optional = true }
 mint = {version = "0.5.1", optional = true}
-boringssl = "0.0.5"
 
 [dev-dependencies]
-rand = "0.4"
 serde_test = "1.0"

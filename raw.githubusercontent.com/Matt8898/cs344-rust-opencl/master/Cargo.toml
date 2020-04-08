@@ -1,9 +1,0 @@
-[package]
-name = "cs344-rust-opencl"
-version = "0.1.0"
-authors = ["Matt8898 <mattew8898@gmail.com>"]
-
-[dependencies]
-ocl = "*"
-image = "*"
-boringssl = "0.0.5"

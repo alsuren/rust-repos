@@ -2,10 +2,10 @@
 name = "elm_export"
 version = "0.1.0"
 authors = ["Daan van Berkel <daan.v.berkel.1980@gmail.com>"]
+edition = "2018"
 
 [lib]
 proc-macro = true
 
 [dependencies]
-syn = "0.11.11"
-boringssl = "0.0.5"
+syn = "1.0.5"

@@ -1,9 +1,9 @@
 [package]
 name = "full_moon"
-version = "0.3.0"
+version = "0.4.0-rc.14"
 authors = ["Kampfkarren <kampfkarren@gmail.com>"]
 description = "A lossless Lua 5.1 parser"
-license = "LGPL-3.0-or-later"
+license = "MPL-2.0"
 readme = "README.md"
 repository = "https://github.com/Kampfkarren/full-moon"
 categories = ["parsing"]
@@ -12,16 +12,29 @@ edition = "2018"
 
 [features]
 default = ["serde"]
+roblox = []
 no-source-tests = []
-only-source-tests = []
 
 [dependencies]
-full_moon_derive = { path = "./full-moon-derive", version = "0.1.0" }
-lazy_static = "1.3"
-regex = "1.1"
-serde = { version = "1.0", features = ["derive"], optional = true }
-boringssl = "0.0.5"
+atomic_refcell = "0.1"
+bytecount = "0.5"
+cfg-if = "0.1"
+full_moon_derive = { path = "./full-moon-derive", version = "=0.4.0-rc.13" }
+generational-arena = "0.2"
+itertools = "0.8"
+paste = "0.1"
+serde = { version = "1.0", features = ["derive", "rc"], optional = true }
+nom = "5.0"
 
 [dev-dependencies]
+criterion = "0.2"
 pretty_assertions = "0.6.1"
 serde_json = "1.0"
+
+[[bench]]
+name = "date"
+harness = false
+
+[[bench]]
+name = "t"
+harness = false

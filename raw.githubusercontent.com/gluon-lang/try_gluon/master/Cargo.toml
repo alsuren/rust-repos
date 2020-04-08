@@ -29,17 +29,14 @@ tokio-signal = "0.2.7"
 hyper = "0.12"
 hyper-tls = "0.3"
 
-gluon = { version = "0.11", features = ["serialization", "web", "regex", "rand"] }
-gluon_vm = { version = "0.11" }
-gluon_codegen = { version = "0.11" }
+gluon = { version = "0.13.1", features = ["serialization", "web", "regex", "rand"] }
+gluon_codegen = { version = "0.13.1" }
 
-# gluon = { path = "../gluon", features = ["serialization", "web", "regex", "rand"] }
-# gluon_vm = { path = "../gluon/vm" }
-# gluon_codegen = { path = "../gluon/codegen" }
+#gluon = { path = "../gluon", features = ["serialization", "web", "regex", "rand"] }
+#gluon_codegen = { path = "../gluon/codegen" }
 
 gluon_master = { path = "gluon_master" }
 gluon_crates_io = { path = "gluon_crates_io" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 env_logger = "0.6"
@@ -53,3 +50,4 @@ gluon_crates_io = { path = "gluon_crates_io" }
 
 [dev-dependencies]
 tokio-retry = "0.2"
+

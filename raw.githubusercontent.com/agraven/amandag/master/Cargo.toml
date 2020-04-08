@@ -1,35 +1,55 @@
 [package]
-name = "amandag"
-version = "0.4.0"
+name = "mogger"
+description = "Simple blogging engine"
+homepage = "https://github.com/agraven/mogger"
+license = "AGPL-3.0-or-later"
+version = "0.1.4"
 authors = ["Amanda P. Graven <amanda@amandag.net>"]
-homepage = "https://amandag.net"
-repository = "https://github.com/agraven/amandag"
+edition = "2018"
 readme = "README.md"
-categories = ["web-programming"]
-license = "AGPL-3.0"
 
 [profile.release]
 lto = true
 
 [dependencies]
-futures = "0.1"
-gotham = "0.2.0"
-gotham_derive = "0.2.0"
-hoedown = "6.0.0"
-hyper = "0.11"
-hyper-tls = "0.1.2"
-lazy_static = "1.1.0"
+askama = "0.9"
+base64 = "0.12"
+bcrypt = "0.7"
+chrono = { version = "0.4", features = ["serde"] }
+comrak = "0.7"
+cookie = { version = "0.12", features = ["percent-encode"] }
+diesel = { version = "1.4", features = ["chrono", "postgres"] }
+diesel-derive-enum = { version = "0.4", features = ["postgres"] }
+diesel_migrations = "1.4"
+failure = "0.1.6"
+futures = "0.1.25"
+http = "0.1"
+hyper = "0.12"
+gotham = "0.4.0"
+gotham_derive = "0.4.0"
 mime = "0.3"
-mysql = "12.3.0"
-native-tls = "0.1"
-rand = "0.3"
-reqwest = "*"
-rust-crypto = "0.2"
-serde = "1.0.11"
-serde_derive = "1.0.11"
-serde_json = "1.0.2"
-time = "*"
-tree_magic = "0.2.0"
-tokio-core = "0.1"
-url = "1.5.1"
-boringssl = "0.0.5"
+rand = "0.7"
+rss = { version = "1.9", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_urlencoded = "0.6"
+sha2 = "0.8"
+time = "0.1"
+toml = "0.5"
+
+[package.metadata.deb]
+name = "mogger"
+extended-description = "A blogging engine written in rust built for running the site amandag.net."
+depends = "$auto, adduser, postgresql"
+section = "web"
+priority = "optional"
+maintainer-scripts = "debian"
+conf-files = ["/etc/mogger/mogger.toml"]
+assets = [
+	["target/release/mogger", "usr/bin/", "755"],
+	["static/*", "usr/share/mogger/", "644"],
+	["debian/mogger.service", "lib/systemd/system/", "644"],
+	["mogger.toml", "etc/mogger/mogger.toml", "644"],
+	["README.md", "usr/share/doc/mogger/README", "644"],
+	["debian/copyright", "usr/share/doc/mogger/copyright", "644"]
+]

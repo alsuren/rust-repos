@@ -32,4 +32,3 @@ codegen-units = 1
 [dependencies]
 #giftr = { git = "https://github.com/kaeluka/giftr.git" }
 giftr = { path = "../giftr" }
-boringssl = "0.0.5"

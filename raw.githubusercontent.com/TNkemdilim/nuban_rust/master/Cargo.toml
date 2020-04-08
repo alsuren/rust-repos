@@ -10,7 +10,6 @@ repository = "https://github.com/TNkemdilim/nuban_rust.git"
 readme = "README.md"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "TNkemdilim/nuban_rust", branch = "master" }

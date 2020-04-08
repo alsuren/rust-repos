@@ -1,18 +1,18 @@
 [package]
 name = "nixterm"
-version = "0.1.1"
+version = "0.1.2"
 license = "MIT"
-description = "A terminal library for rust "
+description = "A terminal library for rust"
 authors = ["Ian Shehadeh <IanShehadeh2020@gmail.com>"]
-homepage = "https://github.com/IanS5/tty-rs"
-repository = "https://github.com/IanS5/tty-rs"
+homepage = "https://github.com/IanS5/nixterm-rs"
+repository = "https://github.com/IanS5/nixterm-rs"
 
 
 [dependencies]
 nix = "0.11.0"
 failure = "0.1.1"
 failure_derive = "0.1.1"
-boringssl = "0.0.5"
+memchr = "2.1.0"
 
 [[example]]
 name = "terminfo"

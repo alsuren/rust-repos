@@ -1,15 +1,17 @@
 [package]
 name = "lwactors"
-version = "0.0.5"
+version = "0.1.1"
 authors = ["Ben Ashford <benashford@users.noreply.github.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
 description = "Lightweight actors for Rust using futures-rs"
 repository = "https://github.com/benashford/lwactors"
+edition = "2018"
 
 [dependencies]
-futures = "0.1"
-boringssl = "0.0.5"
+futures-channel = "0.3"
+futures-util = "0.3"
+tokio = { version = "0.2", optional = true, features = ["rt-core"] }
 
 [dev-dependencies]
-futures-cpupool = "0.1"
+futures = {version = "0.3", features = ["thread-pool"]}

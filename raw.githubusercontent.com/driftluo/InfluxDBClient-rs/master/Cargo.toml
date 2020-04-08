@@ -1,6 +1,6 @@
 [package]
 name = "influx_db_client"
-version = "0.3.6"
+version = "0.4.1"
 authors = ["piaoliu <441594700@qq.com>"]
 documentation = "https://docs.rs/influx_db_client/"
 repository = "https://github.com/driftluo/InfluxDBClient-rs"
@@ -10,18 +10,26 @@ keywords = ["influxdb"]
 categories = ["database"]
 license = "MIT"
 include = ["Cargo.toml", "src/*.rs", "README.md", "LICENSE"]
+edition = "2018"
 
 [badges]
 travis-ci = { repository = "driftluo/InfluxDBClient-rs" }
 
 [dependencies]
-hyper = "^0.10.13"
-hyper-native-tls = "^0.3.0"
+reqwest = { version = "^0.10", default-features = false, features = ["json"] }
 serde_json = '^1.0.2'
-serde_derive = "^1.0.15"
-serde = "^1.0.15"
-boringssl = "0.0.5"
+serde = { version = "^1.0.15", features = ["derive"] }
+bytes = "^0.5"
+futures = "^0.3"
 
 [dev-dependencies]
-native-tls = "^0.2.1"
 tempdir = "0.3"
+tokio = "0.2"
+
+
+[features]
+default = ["reqwest/default-tls"]
+
+
+# For using rustls-tls (and no need for openssl anymore)
+rustls-tls = ["reqwest/rustls-tls"]

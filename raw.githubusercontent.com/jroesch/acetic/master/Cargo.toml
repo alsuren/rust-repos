@@ -6,7 +6,6 @@ authors = ["Jared Roesch <roeschinc@gmail.com>"]
 
 [dependencies]
 log = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "acetic"

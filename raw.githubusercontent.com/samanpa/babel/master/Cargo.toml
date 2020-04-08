@@ -15,14 +15,14 @@ path = "src/main.rs"
 [dependencies]
 llvm-sys = "50"
 libc = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.regex]
 version = "1.0"
 
 # Add a dependency on the LALRPOP runtime library:
 [dependencies.lalrpop-util]
-version = "0.16"
+version = "0.18"
 
 [build-dependencies.lalrpop]
-version = "0.16"
+version = "0.18"
+features = [ "lexer" ]

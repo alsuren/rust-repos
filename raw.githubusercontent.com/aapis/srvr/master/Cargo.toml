@@ -6,4 +6,3 @@ authors = ["Ryan Priebe <rpriebe@me.com>"]
 [dependencies]
 chrono = "0.4"
 clap = { features = ["yaml"] }
-boringssl = "0.0.5"

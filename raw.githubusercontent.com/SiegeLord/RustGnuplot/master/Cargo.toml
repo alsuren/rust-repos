@@ -1,7 +1,7 @@
 [package]
 
 name = "gnuplot"
-version = "0.0.31" #auto
+version = "0.0.34" #auto
 license = "LGPL-3.0"
 repository = "https://github.com/SiegeLord/RustGnuplot"
 documentation = "http://siegelord.github.io/RustGnuplot/doc/gnuplot/index.html"
@@ -100,6 +100,15 @@ path = "examples/dash_type.rs"
 name = "patterns"
 path = "examples/patterns.rs"
 
+[[example]]
+
+name = "inverse_api"
+path = "examples/inverse_api.rs"
+
+[[example]]
+
+name = "multiplot_options"
+path = "examples/multiplot_options.rs"
+
 [dependencies]
 byteorder = "1.3.1"
-boringssl = "0.0.5"

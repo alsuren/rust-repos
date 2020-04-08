@@ -1,7 +1,8 @@
 [package]
 name = "autograd"
-version = "0.9.1"
+version = "1.0.0"
 authors = ["raskr <janne.dc.ib.sa@gmail.com>"]
+edition = "2018"
 
 repository = "https://github.com/raskr/rust-autograd"
 keywords = ["numerics", "machine-learning", "ndarray", "multidimensional", "neural-network"]
@@ -11,16 +12,20 @@ description = "Tensors and differentiable operations in Rust"
 documentation = "https://docs.rs/autograd/"
 
 [dependencies]
-rand = "0.3.15"
-ndarray = { version = "0.10.11" }
+rand = "0.7.0"
+rand_distr = "0.2.2"
+ndarray = "0.12.1"
 glob = "0.2"
 rayon = "1.0"
 libc = "0.2"
-matrixmultiply = "0.1.14"
+matrixmultiply = "0.2.2"
 intel-mkl-src = { version="0.2.5", optional = true, default-features = true }
 num-traits = "0.2"
 num = "0.2"
-boringssl = "0.0.5"
+rustc-hash = "1.0.1"
+hashbrown = "0.6"
+crossbeam = "0.7.2"
+smallvec = "1.2.0"
 
 [features]
 mkl = ["intel-mkl-src"]
@@ -40,3 +45,6 @@ path = "examples/lstm_lm.rs"
 [[example]]
 name = "cnn_mnist"
 path = "examples/cnn_mnist.rs"
+
+#[profile.release]
+#debug = true

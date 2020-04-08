@@ -1,7 +1,8 @@
 [package]
 name = "rocket-json-response"
-version = "0.5.1"
+version = "0.5.10"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/rocket-json-response"
 homepage = "https://magiclen.org/rocket-json-response"
 keywords = ["rocket", "server", "web", "json"]
@@ -10,12 +11,18 @@ description= "This is a crate which provides `JSONResponse` and `JSONResponseWit
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/rocket-json-response", branch = "master" }
+[badges.travis-ci]
+repository = "magiclen/rocket-json-response"
+branch = "master"
 
 [dependencies]
-rocket = "0.4"
-boringssl = "0.0.5"
+rocket = "0.4.2"
+debug-helper = "0.3"
+
+[dev-dependencies]
+serde = "1"
+serde_derive = "1"
+enum-ordinalize = "2"
 
 [dependencies.json-gettext]
 version = "3"

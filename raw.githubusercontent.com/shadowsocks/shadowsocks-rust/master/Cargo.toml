@@ -1,6 +1,6 @@
 [package]
 name = "shadowsocks-rust"
-version = "1.7.1"
+version = "1.8.10"
 authors = ["Y. T. CHUNG <zonyitoo@gmail.com>"]
 description = "shadowsocks is a fast tunnel proxy that helps you bypass firewalls."
 repository = "https://github.com/zonyitoo/shadowsocks-rust"
@@ -21,58 +21,100 @@ name = "ssserver"
 path = "src/bin/server.rs"
 
 [[bin]]
+name = "sstunnel"
+path = "src/bin/tunnel.rs"
+
+[[bin]]
+name = "ssredir"
+path = "src/bin/redir.rs"
+required-features = ["local-redir"]
+
+[[bin]]
 name = "ssurl"
 path = "src/bin/ssurl.rs"
 
 [[bin]]
-name = "ssdns"
-path = "src/bin/ssdns.rs"
+name = "ssmanager"
+path = "src/bin/manager.rs"
 
 [profile.release]
-lto = true
+lto = "fat"
+codegen-units = 1
+incremental = false
+panic = "abort"
 
 [features]
-default = ["sodium", "rc4", "aes-cfb"]
-sodium = ["libsodium-ffi"]
+default = ["sodium", "rc4", "aes-cfb", "aes-ctr", "trust-dns", "local-protocol-http"]
+sodium = ["libsodium-sys"]
 rc4 = ["openssl"]
 aes-cfb = ["openssl"]
+aes-ctr = ["openssl"]
+aes-pmac-siv = ["miscreant"]
+camellia-cfb = ["openssl"]
 single-threaded = []
+trust-dns = ["trust-dns-resolver"]
+dns-over-tls = ["trust-dns-resolver/dns-over-rustls"]
+dns-over-https = ["trust-dns-resolver/dns-over-https-rustls"]
+openssl-vendored = ["openssl/vendored"]
+local-dns-relay = []
+local-flow-stat = []
+local-protocol-http = ["hyper", "http", "tower"]
+local-redir = []
 
 [dependencies]
 log = "0.4"
-byteorder = "1.2"
-rand = "0.6"
-time = "0.1"
-clap = "2"
-env_logger = "0.6"
+rand = "0.7"
+clap = { version = "2.33", features = ["suggestions", "wrap_help"] }
+env_logger = { version = "0.7", default-features = false, features = ["termcolor", "atty", "regex"] }
+chrono = "0.4"
 openssl = { version = "0.10", optional = true }
-libc = "0.2"
-futures = "0.1"
-tokio-io = "0.1"
-tokio = "0.1"
+libc = "^0.2.68"
+tokio = { version = "^0.2.7", features = ["net", "signal", "time", "sync", "process", "rt-threaded", "rt-core", "stream", "io-util"] }
+futures = "0.3"
 json5 = "0.2"
-base64 = "0.10"
-bytes = "0.4"
-ring = "0.14"
+base64 = "0.12"
+bytes = "0.5"
+byteorder = "1"
+ring = "0.16"
 md-5 = "0.8"
 digest = "0.8"
-typenum = "1.10"
-qrcode = { version = "0.10", default-features = false }
-serde_urlencoded = "0.5"
+typenum = "1.11"
+qrcode = { version = "0.12", default-features = false }
+serde_urlencoded = "0.6"
 serde = { version = "1.0", features = ["derive"] }
-url = "1"
+url = "2.1"
 byte_string = "1.0"
-libsodium-ffi = { version = "0.1", optional = true }
-miscreant = { version = "0.4.0-beta", optional = true }
-lru-cache = "0.1"
-dns-parser = "0.8"
-trust-dns-resolver = { version = "0.11", features = ["dns-over-rustls", "dns-over-https-rustls"] }
-spin = { version = "0.5", default-features = false }
-tokio-process = "0.2.3"
-boringssl = "0.0.5"
-
-[target.'cfg(unix)'.dependencies]
-tokio-signal = "0.2"
+libsodium-sys = { version = "0.2", optional = true }
+miscreant = { version = "0.5", optional = true }
+trust-dns-resolver = { version = "0.19", optional = true }
+trust-dns-proto = "0.19"
+hkdf = "0.8"
+hmac = "0.7"
+sha-1 = "0.8"
+lru_time_cache = "0.10"
+hyper = { version = "0.13", optional = true }
+http = { version = "0.2", optional = true }
+tower = { version = "0.3", optional = true }
+pin-project = "0.4"
+socket2 = "0.3"
+cfg-if = "0.1"
+bloomfilter = "^1.0.2"
+spin = "0.5"
+# mio = { version = "0.7", features = ["udp"] }
+mio = "0.6"
+mio-uds = "0.6"
+serde_json = "1.0"
+regex = "1"
+strum = "0.18"
+strum_macros = "0.18"
+iprange = "0.6"
+ipnet = "2.2"
+async-trait = "0.1"
+lazy_static = "1.4"
 
 [target.'cfg(windows)'.dependencies]
-tokio-signal = "0.2"
+winapi = { version = "0.3", features = ["mswsock", "winsock2"] }
+
+# Just for the ioctl call macro
+[target.'cfg(any(target_os = "macos", target_os = "ios", target_os = "freebsd", target_os = "netbsd", target_os = "openbsd"))'.dependencies]
+nix = "0.17"

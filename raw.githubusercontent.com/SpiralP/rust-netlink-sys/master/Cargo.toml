@@ -6,6 +6,3 @@ edition = "2018"
 
 [build-dependencies]
 bindgen = { version = "0.46.0", optional = true }
-
-[dependencies]
-boringssl = "0.0.5"

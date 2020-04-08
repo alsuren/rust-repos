@@ -1,6 +1,6 @@
 [package]
 name = "mmal-sys"
-version = "0.1.0-2"
+version = "0.1.0-3"
 authors = ["Peter Sutherland <pedrosland+mmalsys@gmail.com>"]
 description = "Rust definitions for mmal"
 repository = "https://github.com/pedrosland/mmal-sys"
@@ -8,16 +8,17 @@ documentation = "https://pedrosland.github.io/mmal-sys/"
 readme = "README.md"
 license = "MIT"
 categories = [ "external-ffi-bindings" ]
+keywords = ["raspberry", "pi", "rpi"]
 links = "mmal"
 build = "build.rs"
 exclude = [ "ci/*" ]
+edition = "2018"
 
 [dependencies]
 libc = "0.2"
-boringssl = "0.0.5"
 
 [build-dependencies]
-bindgen = { version = "0.40.0", optional = true }
+bindgen = { version = "0.52.0", optional = true }
 
 [features]
 default = []
@@ -25,3 +26,6 @@ default = []
 # Enable this feature to automatically generate bindings for the mmal headers.
 # The default is to use the bindings already included in the src directory.
 generate_bindings = ["bindgen"]
+
+[package.metadata.docs.rs]
+default-target = "armv7-unknown-linux-gnueabihf"

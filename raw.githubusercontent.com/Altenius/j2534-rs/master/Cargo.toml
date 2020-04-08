@@ -1,24 +1,26 @@
 [package]
 name = "j2534"
-version = "0.1.2"
+version = "0.2.4"
 authors = ["Altenius <jacobjm18@gmail.com>"]
-build = "build.rs"
 keywords = ["cars", "tuning", "passthru"]
 categories = ["external-ffi-bindings", "hardware-support"]
-description = "J2534 PassThru bindings."
+description = "PassThru (SAE J2534) bindings."
+documentation = "https://docs.rs/j2534"
+repository = "https://github.com/altenius/j2534-rs"
 license = "MIT"
 readme = "README.md"
+edition = "2018"
 
-[badges]
-maintenance = { status = "passively-maintained" }
+[package.metadata.docs.rs]
+all-features = true
+default-target = "i686-pc-windows-msvc"
+
+# [badges]
+# maintenance = { status = "passively-maintained" }
 
 [dependencies]
 libc = "0.2"
-bitflags = "1.0.4"
-boringssl = "0.0.5"
-
-[target.'cfg(windows)'.dependencies]
-winreg = "0.5"
-
-[build-dependencies]
-cc = "1.0.25"
+bitflags = "1.2"
+libloading = "0.5"
+winreg = "0.7"
+thiserror = "1.0"

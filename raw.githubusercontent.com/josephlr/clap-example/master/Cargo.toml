@@ -1,9 +1,0 @@
-[package]
-name = "clap-example"
-version = "0.1.0"
-authors = ["Joseph Richey <joerichey94@gmail.com>"]
-description = "Test project for trying out CLAP"
-
-[dependencies]
-clap = "2.31.2"
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "e310x"
-version = "0.4.0"
+version = "0.8.1"
 repository = "https://github.com/riscv-rust/e310x"
 authors = ["David Craven <david@craven.ch>"]
 categories = ["embedded", "hardware-support", "no-std"]
@@ -9,15 +9,14 @@ keywords = ["riscv", "register", "peripheral"]
 license = "ISC"
 
 [dependencies]
-bare-metal = "0.2.1"
+bare-metal = "0.2.4"
 vcell = "0.1.0"
-riscv = "0.5.0"
-riscv-rt = { version = "0.5.0", optional = true }
-boringssl = "0.0.5"
+riscv = "0.5.3"
+riscv-rt = { version = "0.6.0", optional = true }
 
 [features]
 rt = ["riscv-rt"]
 g002 = []
 
 [package.metadata.docs.rs]
-features = ["rt"]
+features = ["rt", "g002"]

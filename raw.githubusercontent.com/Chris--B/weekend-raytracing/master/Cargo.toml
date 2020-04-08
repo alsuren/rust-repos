@@ -5,12 +5,16 @@ authors = ["Chris Butler <chrisbutler296@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-structopt = "0.2.12"
 ctrlc = "3.1"
 rand  = "0.5.5"
 rayon = "1.0"
-boringssl = "0.0.5"
+sdl2 = "0.32"
+structopt = "0.2.12"
 
+# My PR has been merged upstream, so we can stop doing this as soon as a
+# 1.02 is published.
+# This has not happened yet, last  checked July 1st, 2019.
+#      See: https://crates.io/crates/pbr
 [dependencies.pbr]
 git = "https://github.com/Chris--B/pb"
 
@@ -20,4 +24,7 @@ default-features = false
 features = ["png_codec"]
 
 [profile.release]
+debug = true
+
+[profile.dev]
 debug = true

@@ -1,6 +1,6 @@
 [package]
 name = "r2d2_odbc"
-version = "0.2.0"
+version = "0.4.1"
 authors = ["Konstantin Salikhov <koka58@yandex.ru>"]
 license = "MIT"
 description = "ODBC support for the r2d2 connection pool"
@@ -22,8 +22,8 @@ path = "tests/test.rs"
 [dependencies]
 lazy_static = "1.0"
 r2d2 = "0.8"
-odbc = "0.10"
-boringssl = "0.0.5"
+odbc = "0.15"
+odbc-safe = "0.5"
 
 [badges]
 travis-ci = { repository = "Koka/r2d2-odbc", branch = "master" }

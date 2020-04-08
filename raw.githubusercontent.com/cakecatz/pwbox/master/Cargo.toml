@@ -4,9 +4,6 @@ name = "pwbox"
 version = "0.0.1"
 authors = ["Ryo Narita <info@codedoc.net>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sqlite3]
 
 git = "https://github.com/linuxfood/rustsqlite.git"

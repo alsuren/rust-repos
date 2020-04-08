@@ -3,9 +3,6 @@ name = "raycaster"
 version = "0.1.0"
 authors = ["Friedrich Ruynat <friedrich@hydrixos.net>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sdl2]
 version = "0.31.0"
 

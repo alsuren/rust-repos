@@ -17,7 +17,6 @@ shared_library = "0.1.5"
 log = "0.3"
 simplelog = "0.4.2"
 log-panics = "1.1.0"
-boringssl = "0.0.5"
 
 [target.'cfg(target_os = "android")'.dependencies.android_glue]
 version = "0.2"

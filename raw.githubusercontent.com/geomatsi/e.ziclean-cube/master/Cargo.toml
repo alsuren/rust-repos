@@ -14,116 +14,203 @@ hal = ["stm32f1xx-hal"]
 ral = ["stm32ral"]
 
 # deps
-#
-[dependencies]
-cortex-m = "0.6.0"
-cortex-m-rt = "0.6.8"
-panic-semihosting = "0.5.2"
-cortex-m-semihosting = "0.3.3"
-panic-itm = "0.4.0"
-nb = "0.1.2"
-cortex-m-rtfm = "0.4.3"
-boringssl = "0.0.5"
 
-[dependencies.lazy_static]
-version = "1.3.0"
-features = ["spin_no_std"]
+[dependencies]
+cortex-m-rt = "0.6.12"
+panic-semihosting = "0.5.3"
+cortex-m-semihosting = "0.3.5"
+panic-itm = "0.4.1"
+nb = "0.1.2"
+heapless = "0.5.3"
+
+[dependencies.void]
+default-features = false
+version = "1.0.2"
+
+[dependencies.cortex-m-rtfm]
+version = "0.5.1"
+
+[dependencies.embedded-hal]
+version="0.2.3"
+features=["unproven"]
+
+[dependencies.cortex-m]
+version="0.6.2"
+features=["const-fn"]
+
+[dependencies.kxcj9]
+version = "0.2.0"
+
+[dependencies.bitbang-hal]
+version = "0.3.0"
 
 [dependencies.stm32f1xx-hal]
 optional = true
-git = "https://github.com/stm32-rs/stm32f1xx-hal.git"
-features = ["stm32f101", "rt"]
+version = "0.5.3"
+features = ["stm32f101", "rt", "medium"]
 
 [dependencies.stm32ral]
 optional = true
-version = "0.2.0"
+version = "0.4.1"
 features = ["stm32f101", "rt"]
 
-# binaries
+# main
 
 [[bin]]
-name = "test-ral-adc-sensors"
-path = "src/bin/test-ral-adc-sensors.rs"
+name = "platform-v1"
+path = "src/bin/platform-v1.rs"
+required-features = [ "hal" ]
+
+# hal examples
+
+[[example]]
+name = "example-hal-pwm-wheels"
+path = "examples/hal/example-hal-pwm-wheels.rs"
+required-features = [ "hal"] 
+
+[[example]]
+name = "example-hal-pwm-brushes"
+path = "examples/hal/example-hal-pwm-brushes.rs"
+required-features = [ "hal"] 
+
+[[example]]
+name = "example-hal-adc-sensors"
+path = "examples/hal/example-hal-adc-sensors.rs"
+required-features = [ "hal"] 
+
+[[example]]
+name = "example-hal-wheel-encoders"
+path = "examples/hal/example-hal-wheel-encoders.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-battery-charging"
+path = "examples/hal/example-hal-battery-charging.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-pwr"
+path = "examples/hal/example-hal-pwr.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-i2c-acc-test1"
+path = "examples/hal/example-hal-i2c-acc-test1.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-i2c-acc-test2"
+path = "examples/hal/example-hal-i2c-acc-test2.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-sensor-button"
+path = "examples/hal/example-hal-sensor-button.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-i2c-disp-test1"
+path = "examples/hal/example-hal-i2c-disp-test1.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-i2c-disp-test2"
+path = "examples/hal/example-hal-i2c-disp-test2.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-ir-rc-test1"
+path = "examples/hal/example-hal-ir-rc-test1.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-ir-rc-test3"
+path = "examples/hal/example-hal-ir-rc-test3.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-ir-rc-test4"
+path = "examples/hal/example-hal-ir-rc-test4.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-timer-irq-test1"
+path = "examples/hal/example-hal-timer-irq-test1.rs"
+required-features = [ "hal" ]
+
+[[example]]
+name = "example-hal-timer-irq-test2"
+path = "examples/hal/example-hal-timer-irq-test2.rs"
+required-features = [ "hal" ]
+
+# ral examples
+
+[[example]]
+name = "example-ral-beep"
+path = "examples/ral/example-ral-beep.rs"
+required-features = [ "ral"] 
+
+[[example]]
+name = "example-ral-front-ir-leds"
+path = "examples/ral/example-ral-front-ir-leds.rs"
+required-features = [ "ral"] 
+
+[[example]]
+name = "example-ral-bottom-ir-les"
+path = "examples/ral/example-ral-bottom-ir-leds.rs"
+required-features = [ "ral"] 
+
+[[example]]
+name = "example-ral-right-wheel"
+path = "examples/ral/example-ral-right-wheel.rs"
+required-features = [ "ral"] 
+
+[[example]]
+name = "example-ral-left-wheel"
+path = "examples/ral/example-ral-left-wheel.rs"
+required-features = [ "ral"] 
+
+[[example]]
+name = "example-ral-brushes"
+path = "examples/ral/example-ral-brushes.rs"
+required-features = [ "ral"] 
+
+[[example]]
+name = "example-ral-wheel-encoders"
+path = "examples/ral/example-ral-wheel-encoders.rs"
+required-features = [ "ral"] 
+
+[[example]]
+name = "example-ral-floor-sensors"
+path = "examples/ral/example-ral-floor-sensors.rs"
+required-features = [ "ral"] 
+
+[[example]]
+name = "example-ral-front-sensors"
+path = "examples/ral/example-ral-front-sensors.rs"
+required-features = [ "ral"] 
+
+[[example]]
+name = "example-ral-adc-sensors"
+path = "examples/ral/example-ral-adc-sensors.rs"
 required-features = [ "ral" ]
 
-[[bin]]
-name = "test-ral-pwm-wheels"
-path = "src/bin/test-ral-pwm-wheels.rs"
+[[example]]
+name = "example-ral-pwm-wheels"
+path = "examples/ral/example-ral-pwm-wheels.rs"
 required-features = [ "ral" ]
 
-[[bin]]
-name = "test-hal-pwm-wheels"
-path = "src/bin/test-hal-pwm-wheels.rs"
-required-features = [ "hal"] 
-
-[[bin]]
-name = "test-hal-pwm-brushes"
-path = "src/bin/test-hal-pwm-brushes.rs"
-required-features = [ "hal"] 
-
-[[bin]]
-name = "test-hal-adc-sensors"
-path = "src/bin/test-hal-adc-sensors.rs"
-required-features = [ "hal"] 
-
-[[bin]]
-name = "test-hal-wheel-encoders"
-path = "src/bin/test-hal-wheel-encoders.rs"
+[[example]]
+name = "example-hal-rtfm-robot-v1"
+path = "examples/hal/example-hal-rtfm-robot-v1.rs"
 required-features = [ "hal" ]
 
-[[bin]]
-name = "test-hal-pwr"
-path = "src/bin/test-hal-pwr.rs"
+[[example]]
+name = "example-hal-rtfm-robot-v2"
+path = "examples/hal/example-hal-rtfm-robot-v2.rs"
 required-features = [ "hal" ]
 
-[[bin]]
-name = "test-hal-rtfm-robot-v1"
-path = "src/bin/test-hal-rtfm-robot-v1.rs"
+[[example]]
+name = "example-hal-rtfm-robot-v3"
+path = "examples/hal/example-hal-rtfm-robot-v3.rs"
 required-features = [ "hal" ]
-
-# examples
-
-[[example]]
-name = "example-beep"
-path = "examples/ral/example-beep.rs"
-required-features = [ "ral"] 
-
-[[example]]
-name = "example-front-ir-leds"
-path = "examples/ral/example-front-ir-leds.rs"
-required-features = [ "ral"] 
-
-[[example]]
-name = "example-bottom-ir-les"
-path = "examples/ral/example-bottom-ir-leds.rs"
-required-features = [ "ral"] 
-
-[[example]]
-name = "example-right-wheel"
-path = "examples/ral/example-right-wheel.rs"
-required-features = [ "ral"] 
-
-[[example]]
-name = "example-left-wheel"
-path = "examples/ral/example-left-wheel.rs"
-required-features = [ "ral"] 
-
-[[example]]
-name = "example-brushes"
-path = "examples/ral/example-brushes.rs"
-required-features = [ "ral"] 
-
-[[example]]
-name = "example-wheel-encoders"
-path = "examples/ral/example-wheel-encoders.rs"
-required-features = [ "ral"] 
-
-[[example]]
-name = "example-floor-sensors"
-path = "examples/ral/example-floor-sensors.rs"
-required-features = [ "ral"] 
-
-[[example]]
-name = "example-front-sensors"
-path = "examples/ral/example-front-sensors.rs"
-required-features = [ "ral"] 

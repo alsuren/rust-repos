@@ -7,7 +7,6 @@ authors = ["Erik Vesteraas <erik@vestera.as>"]
 
 [dependencies]
 regex = "0.1"
-boringssl = "0.0.5"
 
 [target.x86_64-apple-darwin.dependencies]
 objc = "0.1.8"

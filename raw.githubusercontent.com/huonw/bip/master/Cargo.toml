@@ -18,6 +18,3 @@ the `Box` type, taking care to be panic-safe and not leak memory.
 
 [features]
 unstable = []
-
-[dependencies]
-boringssl = "0.0.5"

@@ -1,10 +1,16 @@
 [workspace]
 members = [
+    "build-tools",
     "opengl-sys",
     "openal-sys",
+    "libmirage-sys",
     "libpsx-rs",
     "psx-rs",
+    "psx-rs-cli",
 ]
+
+[profile.dev]
+opt-level = 1
 
 [profile.release]
 debug = true

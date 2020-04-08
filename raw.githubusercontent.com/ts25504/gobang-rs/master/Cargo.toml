@@ -7,7 +7,6 @@ authors = ["ts25504 <ts25504@gmail.com>"]
 chrono = "0.2"
 clippy = {version = "*", optional = true}
 quick-error = "1.1.0"
-boringssl = "0.0.5"
 
 [features]
 default = []

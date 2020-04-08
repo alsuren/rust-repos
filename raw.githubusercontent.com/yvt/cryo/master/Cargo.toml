@@ -1,6 +1,6 @@
 [package]
 name = "cryo"
-version = "0.1.2"
+version = "0.1.6"
 authors = ["yvt <i@yvt.jp>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
@@ -10,7 +10,9 @@ Extend the lifetime of a reference. Safely.
 """
 keywords = ["lifetime", "ownership", "reference"]
 
+[badges]
+maintenance = { status = "passively-maintained" }
+
 [dependencies]
-parking_lot = { version = "0.6.4", optional = true }
+parking_lot = { version = ">= 0.6, < 0.10", optional = true }
 stable_deref_trait = "1.1.1"
-boringssl = "0.0.5"

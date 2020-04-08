@@ -1,6 +1,6 @@
 [package]
 name = "golem_gw_api"
-version = "1.1.0"
+version = "1.2.0"
 authors = ["OpenAPI Generator team and contributors"]
 
 [dependencies]
@@ -13,7 +13,6 @@ serde_yaml = "0.7"
 base64 = "~0.7.0"
 futures = "0.1.23"
 failure="0.1.5"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tokio-core = "*"

@@ -1,18 +1,24 @@
 
 [package]
 name = "disasm"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Ted Mielczarek <ted@mielczarek.org>"]
+edition = "2018"
 
 [dependencies]
 addr2line = "0.7.0"
-capstone = "0.5.0"
+capstone = "0.6.0"
 failure = "0.1.1"
+fallible-iterator = "0.1"
 memmap = "0.6.1"
 moria = { git = "https://github.com/gimli-rs/moria/", rev = "ed6d27570126e0b2b90db54bc45b5514e5918bdf"}
 object = "0.9.0"
 gimli = "0.16.0"
-syntect = "2.0.0"
+syntect = "3.3.0"
 atty = "0.2.6"
 structopt = "0.2.5"
-boringssl = "0.0.5"
+once_cell = "1.3.1"
+thiserror = "1.0.9"
+
+[target.'cfg(unix)'.dependencies]
+pager = "0.15.0"

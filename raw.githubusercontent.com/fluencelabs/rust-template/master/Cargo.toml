@@ -17,5 +17,4 @@ panic = "abort"
 
 [dependencies]
 log = "0.4"
-fluence = { version = "0.1.4", features = ["wasm_logger"] }
-boringssl = "0.0.5"
+fluence = { version = "0.1.5", features = ["wasm_logger"] }

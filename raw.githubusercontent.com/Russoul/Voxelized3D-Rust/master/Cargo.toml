@@ -5,20 +5,31 @@ authors = ["russoul <russoulmc@gmail.com>"]
 build = "build.rs"
 links = "rsutil"
 
+[features]
+vulkan = ["vulkano", "vulkano-shaders"]
+
 [dependencies]
+mint = { version = "0.5", optional = true }
+paste = "0.1"
+serde = { version = "1.0", features = ["derive"], optional = true }
+smallvec = "0.6"
+
 libc = "0.2.0"
 generic-array = "0.9.0"
 ansi_term = "0.10.2"
-nalgebra = "0.14.4"
 typenum = "1.9.0"
 alga = "0.5.2"
 time = "0.1.39"
 rand = "0.4"
 noise = "0.5.1"
 num = "0.1.42"
-boringssl = "0.0.5"
+glfw = "*"
+vulkano = {version = "0.13.0", optional = true}
+vulkano-shaders = {version = "0.13.0", optional = true}
+image = "0.21"
+glad-gl = { path = "./glad-gl" }
+glad-vulkan = { path = "./glad-vulkan" }
 
 [build-dependencies]
-cc = "1.0"
-cmake = "0.1.31"
+cc = "*"
 

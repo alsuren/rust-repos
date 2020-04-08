@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 euclid = { version = "*", features = ["serde"], optional = true }
 unsafe-poke-derive = { version = "*", path = "./unsafe-poke-derive" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 bincode = "1.1"

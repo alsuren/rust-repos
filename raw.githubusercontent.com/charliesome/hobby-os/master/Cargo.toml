@@ -1,4 +1,7 @@
 [workspace]
 members = [
+    "alloc_collections",
     "kernel",
+    "kernel_derive",
+    "interface",
 ]

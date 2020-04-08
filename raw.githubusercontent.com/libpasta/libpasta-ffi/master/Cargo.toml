@@ -7,7 +7,6 @@ authors = ["Sam Scott <sam.scott89@gmail.com>"]
 libc = "0.2"
 libpasta = { git = "https://github.com/libpasta/libpasta" }
 rpassword = "2.0"
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib", "staticlib"]

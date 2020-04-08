@@ -1,6 +1,6 @@
 [package]
-name = "docker-backup"
-version = "0.1.0"
+name = "xdxd-backup"
+version = "0.1.21"
 authors = ["Hristo Kolev <hristo.a.kolev@gmail.com>"]
 edition = "2018"
 
@@ -29,4 +29,14 @@ handlebars = "1.1.0"
 uuid = "0.7"
 
 clap = "2.33.0"
-boringssl = "0.0.5"
+
+time = "0.1"
+
+strum = "0.15.0"
+strum_macros = "0.15.0"
+
+roxmltree = "0.6.1"
+
+openssl-sys = "0.9"
+openssl = { version = "0.10", features = ["vendored"] }
+libc = "0.2"

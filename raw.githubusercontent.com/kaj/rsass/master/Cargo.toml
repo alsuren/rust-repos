@@ -1,6 +1,6 @@
 [package]
 name = "rsass"
-version = "0.9.9-PRE"
+version = "0.12.3-PRE"
 authors = ["Rasmus Kaj <kaj@kth.se>"]
 categories = ["command-line-utilities", "web-programming"]
 keywords = ["scss", "sass", "css"]
@@ -23,22 +23,21 @@ doc = false
 required-features = ["spectest"]
 
 [features]
-commandline = ["clap"]
+commandline = ["structopt"]
 spectest = ["yaml-rust", "deunicode", "hrx-get", "regex"]
 
 [dependencies]
-bytecount = "0.5.0"
+bytecount = "0.6.0"
 lazy_static = "1.0"
-nom = { version = "4.2.0", features = ["verbose-errors"] }
+nom = "5.0.0"
 num-rational = { version = "0.2.1", default-features = false }
 num-traits = "^0.2.0"
-rand = "0.6.1"
-clap = { version = "^2.19", features = ["color", "wrap_help"], optional = true }
+rand = "0.7.0"
+structopt = { version = "0.3.9", features = ["wrap_help"], optional = true }
 deunicode = { version = "1.0", optional = true }
 hrx-get = { version = "0.1", optional = true }
 regex = { version = "1.1.0", optional = true }
 yaml-rust = { version = "0.4", optional = true }
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "kaj/rsass" }

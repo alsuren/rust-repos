@@ -1,7 +1,7 @@
 [package]
 name = "email-address-list"
-version = "0.2.1"
-authors = ["eaon <eaon@mit.edu>"]
+version = "0.2.5"
+authors = ["eaon <eaon@posteo.net>"]
 description = "Pest based parser for address-lists in email headers like to/from/cc/etc."
 repository = "https://ghom.niij.org/eaon/email-address-list/"
 readme = "README.md"
@@ -15,6 +15,11 @@ appveyor = { repository = "eaon/email-address-list", service = "git", id = "c3ek
 maintenance = { status = "actively-developed" }
 
 [dependencies]
+lazy_static = "1"
 pest = "2"
 pest_derive = "2"
-boringssl = "0.0.5"
+regex = "1"
+mailparse = { version = "0.9", optional = true }
+
+[features]
+mailparse-conversions = ["mailparse"]

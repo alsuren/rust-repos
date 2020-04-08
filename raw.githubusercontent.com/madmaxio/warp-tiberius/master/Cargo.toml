@@ -8,4 +8,3 @@ edition = "2018"
 
 tiberius = { git = "https://github.com/steffengy/tiberius", features=["chrono"] }
 warp = { git = "https://github.com/seanmonstar/warp" }
-boringssl = "0.0.5"

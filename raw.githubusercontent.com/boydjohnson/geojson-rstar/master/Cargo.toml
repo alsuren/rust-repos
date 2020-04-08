@@ -6,8 +6,7 @@ edition = "2018"
 
 [dependencies]
 geo = "^0.12"
-geojson = { git = "http://github.com/georust/geojson" }
+geojson = "^0.16"
 num-traits = "^0.2"
-rstar = "^0.3"
+rstar = "^0.7"
 serde_json = "~1.0"
-boringssl = "0.0.5"

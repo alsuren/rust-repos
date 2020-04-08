@@ -1,6 +1,6 @@
 [package]
 name = "guillotiere"
-version = "0.4.2"
+version = "0.5.1"
 authors = ["Nicolas Silva <nical@fastmail.com>"]
 edition = "2018"
 license = "MIT/Apache-2.0"
@@ -14,10 +14,9 @@ checks = []
 serialization = ["serde", "euclid/serde"]
 
 [dependencies]
-euclid = "0.19.5"
+euclid = "0.20"
 serde = { version = "1.0", optional = true, features = ["serde_derive"] }
-svg_fmt = "0.2.0"
-boringssl = "0.0.5"
+svg_fmt = "0.4.0"
 
 [workspace]
 members = ["cli", "ffi"]

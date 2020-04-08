@@ -10,7 +10,6 @@ authors = [
 
 [dependencies]
 filebuffer = "0.4.0"
-boringssl = "0.0.5"
 
 # Disable "serde" feature from sodiumoxide; we don't use it,
 # so we can avoid the dependency.

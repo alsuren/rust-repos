@@ -10,4 +10,3 @@ license = "Apache-2.0"
 [dependencies]
 clap = "2.32"
 syn = { version = "0.15", features = [ "extra-traits", "full" ] }
-boringssl = "0.0.5"

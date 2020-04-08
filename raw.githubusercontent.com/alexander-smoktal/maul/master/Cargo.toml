@@ -6,6 +6,3 @@ edition = "2018"
 
 [profile.release]
 panic = "abort"
-
-[dependencies]
-boringssl = "0.0.5"

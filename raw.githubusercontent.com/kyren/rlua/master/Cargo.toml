@@ -1,6 +1,6 @@
 [package]
 name = "rlua"
-version = "0.16.4-alpha.0"
+version = "0.17.1-alpha.0"
 authors = ["kyren <kerriganw@gmail.com>"]
 edition = "2018"
 description = "High level bindings to Lua 5.3"
@@ -36,16 +36,16 @@ system-lua = ["pkg-config"]
 libc = { version = "0.2" }
 num-traits = { version = "0.2.6" }
 bitflags = { version = "1.0.4" }
-boringssl = "0.0.5"
+bstr = {version = "0.2", features = ["std"], default_features = false }
 
 [build-dependencies]
 cc = { version = "1.0", optional = true }
 pkg-config = { version = "0.3.11", optional = true }
 
 [dev-dependencies]
-rustyline = "3.0.0"
-criterion = "0.2.0"
-compiletest_rs = { version = "0.3", features = ["stable"] }
+rustyline = "6.0"
+criterion = "0.3.0"
+compiletest_rs = { version = "0.4", features = ["stable"] }
 
 [[bench]]
 name = "benchmark"

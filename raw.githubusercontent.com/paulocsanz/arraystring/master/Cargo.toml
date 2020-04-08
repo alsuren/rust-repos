@@ -33,11 +33,11 @@ typenum = "1"
 log = { version = "0.4", optional = true }
 serde = { version = "1", optional = true }
 diesel = { version = "1", optional = true }
-boringssl = "0.0.5"
 
 [features]
-default = ["std"]
+default = ["std", "impl-all"]
 std = []
+impl-all = []
 logs = ["log"]
 serde-traits = ["serde"]
 diesel-traits = ["diesel"]

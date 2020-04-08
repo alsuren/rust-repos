@@ -1,17 +1,31 @@
 [package]
 name = "derive-getters"
-version = "0.0.7"
+version = "0.1.0"
 authors = ["Stephan Luther <kvsari@gmail.com>"]
 license = "MIT"
 description = "Simple boilerplate getters generator."
 repository = "https://github.com/kvsari/derive-getters"
+keywords = ["getter", "getters"]
+edition = "2018"
+autotests = false
+readme = "README.md"
+
+[badges]
+travis-ci = { repository = "kvsari/derive-getters" }
 
 [lib]
 name = "derive_getters"
 proc-macro = true
 
+[[test]]
+name = "tests"
+path = "tests/lib.rs"
+
 [dependencies]
-quote = "0.6.8"
-syn = "0.15.7"
-proc-macro2 = "0.4.13"
-boringssl = "0.0.5"
+quote = "1.0"
+syn = "1.0"
+proc-macro2 = "1.0"
+
+[dev-dependencies]
+trybuild = "1.0"
+serde = { version = "1.0", features = ["derive"] }

@@ -10,4 +10,7 @@ itertools = "*"
 regex = "*"
 lazy_static = "*"
 bstr = "*"
-boringssl = "0.0.5"
+libflate = "*"
+
+[dev-dependencies]
+pretty_assertions = "*"

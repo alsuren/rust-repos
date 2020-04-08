@@ -1,31 +1,29 @@
 [package]
 name = "timeplot"
-version = "0.7.12"
+version = "0.8.0"
 description = "Personal activity tracker & graph plotter"
 edition = "2018"
-authors = ["Vasya Novikov <n1dr+cm3513git@ya.ru>"]
+authors = [
+  "Vasya Novikov <n1dr+cm3513git@ya.ru>",
+  "jbpratt <29494941+jbpratt78@users.noreply.github.com>"
+]
 license="GPL-3.0-or-later"
 keywords = ["graph", "plot", "time", "tracker", "logger"]
 repository = "https://github.com/vn971/timeplot"
 readme = "README.md"
 
 [dependencies]
-chrono = "0.4.6"
-directories = "1.0.2"
-env_logger = "0.6.1"
+chrono = "0.4.10"
+directories = "2.0.2"
+env_logger = "0.7.1"
 fs2 = "0.4.3"
-gnuplot = "0.0.29"
-log = "0.4.6"
-open = "1.2.2"
-boringssl = "0.0.5"
-
-[dependencies.config]
-version = "0.9.2"
-default-features = false
-features = ["toml"]
+gnuplot = "0.0.33"
+log = "0.4.8"
+open = "1.3.2"
+config = { version = "0.10.1", default-features = false, features = ["toml"] }
 
 [target.'cfg(windows)'.dependencies]
-winapi = { version = "0.3.6", features = ["winuser"] }
+winapi = { version = "0.3.8", features = ["winuser"] }
 user32-sys = "0.2.0"
 
 

@@ -2,12 +2,21 @@
 authors = ["Maksym Vorobiov <maxim.vorobjov@gmail.com>"]
 name = "poloniex"
 version = "0.1.0"
+edition = "2018"
+
+[features]
+default = ["ws"]
+ws = ["tungstenite", "tokio-tungstenite", "tokio", "url", "futures"]
 
 [dependencies]
-futures = "0.1"
-tokio-core = "0.1"
-websocket = "0.20.2"
-json = "0.11"
+tungstenite = { version="0.9", optional=true }
+tokio-tungstenite = { git="https://github.com/dbcfd/tokio-tungstenite", branch="tokio2", features=["tls"], optional=true }
+tokio = { version="0.2", optional=true }
+url = { version="2.1", optional=true }
+futures = { version="0.3", optional=true }
+json = "0.12"
 time = "0.1"
-bus = "1.3"
-boringssl = "0.0.5"
+serde = { version = "1.0", features = ["derive"] }
+
+[target.wasm32-wasi.dependencies]
+wasi = { version = "0.7.0", default-features = false }

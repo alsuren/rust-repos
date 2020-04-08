@@ -1,22 +1,21 @@
 [package]
 name = "steamworks"
-version = "0.0.1"
+version = "0.0.14"
 authors = ["Brian Bowman <seeker14491@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+async-std = "1.0.1"
 bitflags = "1.0.4"
 chrono = "0.4.6"
-crossbeam-channel = "0.3.8"
+crossbeam-channel = "0.4.0"
+derive_more = "0.99.1"
 enum-primitive-derive = "0.1.2"
-futures-preview = { version = "0.3.0-alpha.16", features = ["compat"] }
-gen-stream = "0.2.4"
+genawaiter = { version = "0.2.2", features = ["futures03"] }
+futures = "0.3.1"
 num-traits = "0.2.6"
-parking_lot = "0.8.0"
-slotmap = { version = "0.3.0", features = ["unstable"] }
-snafu = "0.4.1"
-state = { version = "0.4.1", features = ["const_fn"] }
+once_cell = "1.2.0"
+parking_lot = "0.10.0"
+slotmap = "0.4.0"
+snafu = "0.6.0"
 steamworks-sys = { path = "./steamworks-sys" }
-tokio-executor = "0.1.7"
-tokio-timer = "0.2.10"
-boringssl = "0.0.5"

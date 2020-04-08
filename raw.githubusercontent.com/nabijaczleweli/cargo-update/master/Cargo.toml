@@ -9,7 +9,7 @@ categories = ["development-tools::cargo-plugins"]
 license = "MIT"
 build = "build.rs"
 # Remember to also update in appveyor.yml
-version = "1.7.0"
+version = "3.0.0"
 # Remember to also update in man/*.md
 authors = ["nabijaczleweli <nabijaczleweli@gmail.com>",
            "Yann Simon <yann.simon.fr@gmail.com>",
@@ -23,32 +23,42 @@ authors = ["nabijaczleweli <nabijaczleweli@gmail.com>",
            "sinkuu <sinkuupump@gmail.com>",
            "Alex Burka <aburka@seas.upenn.edu>",
            "Matthias Krüger <matthias.krueger@famsik.de>",
-           "Daniel Holbert <dholbert@cs.stanford.edu>"]
+           "Daniel Holbert <dholbert@cs.stanford.edu>",
+           "Jonas Bushart <jonas@bushart.org>",
+           "Harrison Metzger <harrisonmetz@gmail.com>",
+           "Benjamin Bannier <bbannier@gmail.com>"]
 exclude = ["*.enc"]
 
 
+# Note: don't bump dependencies unless necessary to keep building on old rustc versions
 [dependencies]
+# https://travis-ci.org/nabijaczleweli/cargo-update/jobs/619241497#L222 broke 1.35.0 with smallvec 1.0.0,
+# required by unicode-normalization 0.1.11. Previous working build is
+# https://travis-ci.org/nabijaczleweli/cargo-update/jobs/611381166#L271 with unicode-normalization 0.1.9
+# h/t to @elichai in https://github.com/nabijaczleweli/cargo-update/issues/119#issuecomment-560116619
+# for suggesting using a `=` dep instead of a patch
+unicode-normalization="=0.1.9"
 serde_derive = "1.0"
-lazy_static = "1.1"
+lazy_static = "1.4"
 array_tool = "1.0"
 tabwriter = "1.1"
 lazysort = "0.2"
-regex = "1.0"
+regex = "1.3"
 serde = "1.0"
-git2 = "0.7"
-clap = "2.32"
-dirs = "1.0"
+git2 = "0.11"
+clap = "2.33"
+dirs = "2.0"
 json = "0.11"
-toml = "0.4"
-url = "1.7"
-boringssl = "0.0.5"
+toml = "0.5"
+hex = "0.4"
+url = "2.1"
 
 [dependencies.semver]
 version = "0.9"
 features = ["serde"]
 
 [build-dependencies]
-embed-resource = "1.1"
+embed-resource = "1.3"
 
 
 [[bin]]

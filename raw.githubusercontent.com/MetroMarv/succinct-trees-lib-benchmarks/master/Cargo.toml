@@ -6,4 +6,3 @@ authors = ["Marvin Rensing <marvin.rensing@posteo.de>"]
 [dependencies]
 succinct-trees-lib = { path = "../succinct-trees-lib" }
 bv = {version = "0.7", features = ["serde"]}
-boringssl = "0.0.5"

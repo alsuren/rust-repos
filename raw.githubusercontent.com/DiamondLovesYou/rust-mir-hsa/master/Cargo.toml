@@ -1,20 +1,32 @@
 
 [workspace]
-members = ["hsa-core-gen", "hsa-core", "legionella-std",
-           "runtime-core", "runtime-amd", "runtime-nv",
-           "rustc-intrinsics", "legionella-intrinsics",
+members = ["geobacter-core", "runtime-core", "shared-defs",
+
+           "rustc-driver-base", "rustc-help",
            "bootstrap-rustc-driver", "rustc-driver",
+           "rust-builder",
 
-           "legionella-core",
+           "shared-intrinsics/common", "shared-intrinsics/vk",
+           "shared-intrinsics/amdgpu",
+           # TODO
+           # "shared-intrinsics/nv",
 
+           "vk-core", "vk-std", "runtime-vk",
+           "examples/vk/trivial", "examples/vk/fractal",
+
+           "amd-comgr-sys", "amd-comgr",
            "hsa-rt-sys", "hsa-rt",
            "tools/hsa-agent-info",
+           "amdgpu-std", "runtime-amd",
+           "runtime-amd-macros",
+           "examples/amdgpu/trivial", "examples/amdgpu/fractal",
+           "examples/amdgpu/gemm",
 
-           "rav1e",
+           "runtime-nv",
 
-           "examples/trivial", "examples/ndarray",
-           "examples/mat-mat-mul", "examples/fwd-conv",
-           "examples/fractal", "examples/mut-slice-ub", ]
+           # Tests here
+           "tests/driver/run-pass/generic-substs"
+           ]
 
 [profile.release]
 debug = true
@@ -28,5 +40,22 @@ rpath = true
 [profile.bench]
 rpath = true
 
-[replace]
-"vulkano:0.11.1" = { path = "vulkano/vulkano" }
+[patch.crates-io]
+amd-comgr-sys = { path = "amd-comgr-sys" }
+amd-comgr = { path = "amd-comgr" }
+hsa-rt-sys = { path = "hsa-rt-sys" }
+hsa-rt = { path = "hsa-rt" }
+geobacter-shared-defs = { path = "shared-defs" }
+geobacter-core = { path = "geobacter-core" }
+geobacter-rustc-help = { path = "rustc-help" }
+geobacter-vk-core = { path = "vk-core" }
+geobacter-amdgpu-intrinsics = { path = "shared-intrinsics/amdgpu" }
+geobacter-vk-intrinsics = { path = "shared-intrinsics/vk" }
+geobacter-runtime-core = { path = "runtime-core" }
+geobacter-runtime-amd-macros = { path = "runtime-amd-macros" }
+geobacter-runtime-amd = { path = "runtime-amd" }
+geobacter-runtime-nv = { path = "runtime-nv" }
+geobacter-runtime-vk = { path = "runtime-vk" }
+geobacter-amd-std = { path = "amdgpu-std" }
+geobacter-intrinsics-common = { path = "shared-intrinsics/common" }
+alloc-wg = { git = "https://github.com/TimDiekmann/alloc-wg.git" }

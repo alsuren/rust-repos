@@ -2,7 +2,7 @@
 authors = ["Magnus Bergmark <magnus.bergmark@gmail.com>"]
 name = "mpris"
 description = "Idiomatic MPRIS D-Bus interface library"
-version = "2.0.0-rc1"
+version = "2.0.0-rc2"
 license = "Apache-2.0"
 repository = "https://github.com/Mange/mpris-rs"
 readme = "README.md"
@@ -14,13 +14,12 @@ travis-ci = { repository = "Mange/mpris-rs", branch = "master" }
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-dbus = "0.6.4"
+dbus = "0.8.1"
 failure = "0.1.5"
 failure_derive = "0.1.5"
 enum-kinds = "0.4.1"
 derive_is_enum_variant = "0.1.1"
 from_variants = "0.4.0"
-boringssl = "0.0.5"
 
 # For examples
 [dev-dependencies]

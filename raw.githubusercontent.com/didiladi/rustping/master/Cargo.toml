@@ -7,7 +7,6 @@ authors = ["Dieter Ladenhauf <dieter.ladenhauf@gmail.com>"]
 hyper = "0.9"
 getopts = "0.*"
 time = "*"
-boringssl = "0.0.5"
 
 [dependencies.url]
 git = "https://github.com/servo/rust-url"

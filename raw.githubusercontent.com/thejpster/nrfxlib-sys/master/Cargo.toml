@@ -1,6 +1,6 @@
 [package]
 name = "nrfxlib-sys"
-version = "0.1.2"
+version = "1.1.0-rc3+rel1"
 authors = ["Jonathan 'theJPster' Pallant <github@thejpster.org.uk>"]
 edition = "2018"
 description = "Rust bindings to the Nordic nRF9160 Socket Library."
@@ -9,7 +9,5 @@ license-file = "LICENCE.md"
 repository = "https://github.com/thejpster/nrfxlib-sys"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
-bindgen = "0.49"

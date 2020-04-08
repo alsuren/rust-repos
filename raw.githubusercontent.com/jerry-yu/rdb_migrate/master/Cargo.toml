@@ -11,7 +11,6 @@ log = "0.4.3"
 #common-types = { path = "./types" }
 #db = { git = "https://github.com/cryptape/cita-common.git", branch = "develop" }
 kvdb-rocksdb = "0.1.4"
-boringssl = "0.0.5"
 #rlp = { git = "https://github.com/cryptape/cita-common.git", branch = "develop" }
 #libproto = { git = "https://github.com/cryptape/cita-common.git", branch = "develop" }
 #rand = "0.6.5"

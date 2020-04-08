@@ -6,4 +6,6 @@ edition = "2018"
 
 [dependencies]
 gtk = "0.6.0"
-boringssl = "0.0.5"
+objekt-clonable = "0.2.2"
+mopa = "0.2.2"
+clap = "2.33.0"

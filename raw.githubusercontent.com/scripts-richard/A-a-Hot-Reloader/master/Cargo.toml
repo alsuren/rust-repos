@@ -1,10 +1,14 @@
 [package]
 name = "aa"
-version = "0.1.0"
+version = "0.3.0"
 authors = ["Richard Mills <scripts.richard@gmail.com>"]
 edition = "2018"
 
 [dependencies]
 clap = "2.33.0"
 ctrlc = "3.1.2"
-boringssl = "0.0.5"
+slog = "2.4.1"
+slog-async = "2.3.0"
+slog-term = "2.4.0"
+walkdir = "2"
+inotify = "0.7"

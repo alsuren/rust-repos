@@ -18,7 +18,6 @@ name = "palette"
 [dependencies]
 color = { git = "https://github.com/skyschermer/color-rs" }
 interval = { git = "https://github.com/skyschermer/interval-rs" }
-boringssl = "0.0.5"
 
 # The development profile, used for `cargo build`
 [profile.dev]

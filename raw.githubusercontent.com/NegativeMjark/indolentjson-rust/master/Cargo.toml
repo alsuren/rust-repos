@@ -6,7 +6,6 @@ authors = ["Mark Haines <mjark@negativecurvature.net>"]
 [dependencies]
 quickcheck = {version = "0.2", optional = true}
 quickcheck_macros = {version = "0.2", optional = true}
-boringssl = "0.0.5"
 
 [features]
 quickcheck_test = ["quickcheck", "quickcheck_macros"]  # Enables testing with quickcheck

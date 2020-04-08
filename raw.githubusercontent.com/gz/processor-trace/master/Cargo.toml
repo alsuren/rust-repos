@@ -11,12 +11,11 @@ keywords = ["x86-64", "x86", "processor", "trace", "hardware"]
 license = "MIT"
 
 [dependencies]
-x86 = "0.11"
+x86 = "0.19"
 driverkit = { path = "../driverkit" }
 log = "0.4"
 rlibc = "1.0.0"
 matches = "0.1.8"
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2"

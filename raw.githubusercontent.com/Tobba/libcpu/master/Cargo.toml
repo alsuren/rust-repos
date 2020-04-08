@@ -3,9 +3,6 @@ name = "cpu"
 version = "0.0.1-pre"
 authors = []
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.bitflags]
 git = "https://github.com/Tobba/bitflags.git"
 rev = "23f1927c4e4185397a130f0b9fc302a8892ede46"

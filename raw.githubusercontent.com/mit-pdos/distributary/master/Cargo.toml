@@ -1,14 +1,18 @@
 [workspace]
 members = [
 	"noria",
-	"noria-server",
-	"noria-benchmarks",
-	"noria-benchmarks/lobsters",
+	"server",
+	"applications",
+	"orchestration",
 ]
 
 [profile.release]
 debug=true
 
 [patch.crates-io]
-tower-balance = { git = "https://github.com/tower-rs/tower.git" }
-tokio-tower = { git = "https://github.com/tower-rs/tokio-tower.git" }
+# https://github.com/tower-rs/tokio-tower/pull/6
+# optional -- just a perf optimization
+tokio-tower = { git = "https://github.com/tower-rs/tokio-tower.git", branch = "no-box" }
+# https://github.com/tokio-rs/tokio/pull/2160
+# optional -- just saves us from busy future loops
+tokio = { git = "https://github.com/tokio-rs/tokio.git" }

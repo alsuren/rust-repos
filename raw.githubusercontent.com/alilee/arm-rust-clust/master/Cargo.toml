@@ -6,13 +6,15 @@ edition = "2018"
 
 [dependencies]
 kernel = { path = "./kernel" }
-boringssl = "0.0.5"
+qemu-exit = "0.1.0"
+log = { version = "0.4.8", default-features = false }
 
 [profile.dev]
 opt-level = 1
 panic = 'abort'
 
 [profile.release]
+opt-level = 2
 panic = 'abort'
 
 [package.metadata.cargo-xbuild]

@@ -1,19 +1,20 @@
 [package]
 name = "sesters"
-description = "Fast currency conversion tool with local cache"
+description = "💱 Fast, offline currency converter 💴 💷 💶 💵"
 homepage = "https://seste.rs"
-repository = "https://github.com/leowzukw/sesters"
+repository = "https://github.com/cljoly/sesters"
 readme = "Readme.md"
 keywords = ["currency_converter", "cli"]
 categories = ["command-line-utilities", "text-processing"]
-version = "0.1.3"
-authors = ["Leo <oss+sesters@131719.xyz>"]
+version = "0.2.2"
+authors = ["Clément Joly <oss+sesters@131719.xyz>"]
 edition = "2018"
 license = "GPL-3.0-or-later"
 
 [badges]
 maintenance = { status = "experimental" }
-travis-ci = { repository = "leowzukw/sesters", branch = "master" }
+travis-ci = { repository = "cljoly/sesters", branch = "master" }
+codecov = { repository = "cljoly/sesters"}
 
 [dependencies]
 reqwest = "0.9"
@@ -22,12 +23,17 @@ lazy_static = "1.2"
 serde = "1"
 serde_derive = "1"
 serde_json = "1"
-env_logger = "0.6.*"
+env_logger = "0.7.*"
 log = { version = "0.4", features = ["max_level_trace", "release_max_level_info"] }
 confy = "0.3.*"
-kv = { version = "0.8.*", features = ["bincode-value"] }
+kv = { version = "0.9.*", features = ["bincode-value"] }
 chrono = { version = "0.4", features = ["serde"] }
 bincode = "1.*"
-dirs = "~1.0"
+dirs = "2.0"
 encoding = "0.2"
-boringssl = "0.0.5"
+clap = "2"
+itertools = "0.8"
+test-case = "0.3"
+
+[profile.release]
+debug = true

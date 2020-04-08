@@ -15,7 +15,6 @@ imgui-glium-renderer = "0.0.21"
 nfd = "0.0.4"
 serialport = "3"
 time = "0.1.40"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3", features = ["winuser"] }

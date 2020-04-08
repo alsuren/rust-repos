@@ -6,7 +6,6 @@ authors = ["Richard Palethorpe <richiejp@f-m.fm>"]
 [dependencies]
 fnv = "*"
 orbclient = "*"
-boringssl = "0.0.5"
 
 [profile.bench]
 opt-level = 3

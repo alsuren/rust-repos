@@ -11,7 +11,6 @@ license = "MIT"
 [dependencies]
 lazy_static = "0.2.8"
 rand = "0.3.16"
-boringssl = "0.0.5"
 
 [lib]
 plugin = true

@@ -1,24 +1,44 @@
 [package]
 name = "contrie"
-version = "0.1.0"
-authors = ["Michal 'vorner' Vaner <vorner@vorner.cz>"]
+version = "0.1.4"
+authors = [
+    "Michal 'vorner' Vaner <vorner@vorner.cz>",
+    "Edoardo Rossi <zeroed@posteo.net>",
+    "Evan Cameron <cameron.evan@gmail.com>",
+]
 edition = "2018"
-# TODO: Keywords, readmes, stuff..
+description = "Concurrent map and set"
+documentation = "https://docs.rs/contrie"
+repository = "https://github.com/vorner/contrie"
+readme = "README.md"
+keywords = ["atomic", "concurrent", "map", "set", "lock-free"]
+categories = ["concurrency", "algorithms", "data-structures"]
+license = "Apache-2.0/MIT"
+
+[badges]
+travis-ci = { repository = "vorner/contrie" }
+appveyor = { repository = "vorner/contrie" }
+maintenance = { status = "actively-developed" }
 
 [dependencies]
 arrayvec = "~0.4"
 bitflags = "~1"
-crossbeam-epoch = "~0.7"
+crossbeam-epoch = "~0.7.2"
 # TODO: Consider what to do with the union feature. Why is it still requiring nightly?
 smallvec = "~0.6"
-boringssl = "0.0.5"
+rayon = { version = "~1", optional = true }
 
 [dev-dependencies]
 crossbeam-utils = "~0.6"
 proptest = "~0.9.3"
 rayon = "~1"
+rand = "~0.7"
+version-sync = "~0.8"
 
 [profile.test]
 # Some tests are rather slow. Furthermore, optimalisations tend to provoke races and UBs to
 # manifest, so we want to try that in tests if possible.
 opt-level = 1
+
+[package.metadata.docs.rs]
+all-features= true

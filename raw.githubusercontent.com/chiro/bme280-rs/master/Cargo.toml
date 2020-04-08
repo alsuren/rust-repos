@@ -6,10 +6,9 @@ authors = ["Yuichiro Hanada <i@chir.jp>"]
 [dependencies]
 docopt = "*"
 i2cdev = "*"
-nix = "*"
+nix = "^0.14"
 serde = "*"
 serde_derive = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 doc = false

@@ -13,7 +13,6 @@ tokio = "0.1" # needed by tower
 tower-h2 = { git = "https://github.com/tower-rs/tower-h2" }
 #tower-add-origin = { git = "https://github.com/tower-rs/tower-http" }
 tower-grpc = { git = "https://github.com/tower-rs/tower-grpc" }
-boringssl = "0.0.5"
 #tower-service = "0.2"
 #tower = { git = "https://github.com/tower-rs/tower" }
 

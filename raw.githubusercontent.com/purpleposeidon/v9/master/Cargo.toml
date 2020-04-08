@@ -1,18 +1,22 @@
 [package]
 name = "v9"
-version = "0.1.2"
+version = "0.1.41"
 authors = ["neptunepink <purpleposeidon@gmail.com>"]
 edition = "2018"
 license = "MIT/Apache-2.0"
 repository = "https://github.com/purpleposeidon/v9"
 description = "A slim data engine for Data Oriented Design"
 
+[workspace]
+members = [ "v9-attr" ]
+
 [dependencies]
-mopa = "0.2"
 #slice-deque = "0.1.16"
-smallvec = "0.6"
+smallvec = { version = "0.6", features = ["serde"] }
 paste = "0.1.5"
-boringssl = "0.0.5"
+serde = { version = "1.0", features = ["derive"] }
+v9-attr = { path = "./v9-attr", version = "0.1.0" }
 
 [dev-dependencies]
-rand = "0.6"
+rand = "0.7"
+serde_json = "1.0"

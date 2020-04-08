@@ -7,4 +7,3 @@ authors = ["emersion <contact@emersion.fr>"]
 glium = "*"
 osu_format = { git = "https://github.com/emersion/rust-osu-format" }
 rodio = { git = "https://github.com/emersion/rodio", branch = "mp3" }
-boringssl = "0.0.5"

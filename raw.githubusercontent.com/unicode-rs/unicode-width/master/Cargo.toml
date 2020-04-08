@@ -1,8 +1,8 @@
 [package]
 
 name = "unicode-width"
-version = "0.1.5"
-authors = ["kwantam <kwantam@gmail.com>"]
+version = "0.1.7"
+authors = ["kwantam <kwantam@gmail.com>", "Manish Goregaokar <manishsmail@gmail.com>"]
 
 homepage = "https://github.com/unicode-rs/unicode-width"
 repository = "https://github.com/unicode-rs/unicode-width"
@@ -17,10 +17,13 @@ according to Unicode Standard Annex #11 rules.
 
 exclude = [ "target/*", "Cargo.lock" ]
 
+[dependencies]
+std = { version = "1.0", package = "rustc-std-workspace-std", optional = true }
+core = { version = "1.0", package = "rustc-std-workspace-core", optional = true }
+compiler_builtins = { version = "0.1", optional = true }
+
 [features]
 default = []
 no_std = []
 bench = []
-
-[dependencies]
-boringssl = "0.0.5"
+rustc-dep-of-std = ['std', 'core', 'compiler_builtins']

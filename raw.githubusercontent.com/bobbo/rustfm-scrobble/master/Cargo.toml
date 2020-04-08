@@ -1,19 +1,21 @@
 [package]
 name = "rustfm-scrobble"
-version = "0.9.2"
+version = "1.1.0"
 authors = ["David Futcher <david@futcher.io>"]
-description = "Last.fm Scrobble library for Rust"
+description = "Last.fm Scrobble crate for Rust"
 repository = "https://github.com/bobbo/rustfm-scrobble"
 keywords = ["lastfm", "last-fm", "scrobble", "api"]
 license = "MIT"
 readme = "README.md"
 categories = ["api-bindings", "multimedia"]
+edition = "2018"
 
 [dependencies]
-reqwest = "0.9.15"
-rust-crypto = "0.2.36"
-serde = "1.0.2"
-serde_derive = "1.0.2"
-serde_json = "1.0.2"
-wrapped-vec = "0.2.1"
-boringssl = "0.0.5"
+reqwest = "0.9"
+md5 = "0.7"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+wrapped-vec = "0.2"
+
+[dev-dependencies]
+mockito = "0.23"

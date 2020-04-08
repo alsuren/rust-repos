@@ -1,26 +1,28 @@
 [package]
-name = "blindbid"
+name = "dusk-blindbidproof"
 version = "0.1.0"
-authors = ["kev <kevtheappdev@gmail.com>", "zer0 <matteo@dusk.network>"]
+authors = [
+  "kev <kevtheappdev@gmail.com>", "zer0 <matteo@dusk.network>",
+  "Victor Lopez <victor@dusk.network>"
+]
 edition = "2018"
 
 [dependencies]
-failure = "0.1"
-merlin = "1.0.1"
+merlin = "1.2"
 rand = "0.6"
-subtle = "2"
-curve25519-dalek = { version = "1.0.1", features = ["serde", "avx2_backend"] }
-libc = "0.2"
-lazy_static = "1.2.0"
-sha2 = "0.8.0"
-chrono = "0.4.6"
-log = "0.4.6"
-env_logger = "0.6.1"
-boringssl = "0.0.5"
+curve25519-dalek = { version = "1.0", features = ["serde", "avx2_backend"] }
+lazy_static = "1.4"
+sha2 = "0.8"
+log = "0.4"
+env_logger = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+dusk-uds = "0.2"
+dusk-tlv = { git = "https://github.com/dusk-network/dusk-tlv" }
+clap = "2.33"
 
 [dependencies.bulletproofs]
-git = "https://gitlab.dusk.network/dusk-core/bulletproofs"
-branch = "thread"
+git = "https://github.com/dalek-cryptography/bulletproofs"
+branch = "develop"
 features = ["yoloproofs"]
 
 [profile.release]

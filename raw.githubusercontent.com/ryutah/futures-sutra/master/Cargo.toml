@@ -5,7 +5,6 @@ authors = ["ryutah <ryuta0221@gmail.com>"]
 
 [dependencies]
 log = { version = "*", default-features = false }
-boringssl = "0.0.5"
 
 [features]
 use_std = []

@@ -12,7 +12,6 @@ serde = "0.8.0"
 serde_json = "0.8.0"
 serde_derive = "0.8.0"
 sodiumoxide = "0.0.10"
-boringssl = "0.0.5"
 
 [dependencies.signedjson]
 git = "https://github.com/erikjohnston/rust-signedjson.git"

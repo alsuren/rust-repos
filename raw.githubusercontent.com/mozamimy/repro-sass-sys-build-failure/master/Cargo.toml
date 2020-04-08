@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 sass-rs = { git = "https://github.com/mozamimy/sass-rs.git", branch = "debug-cpu-num" }
-boringssl = "0.0.5"

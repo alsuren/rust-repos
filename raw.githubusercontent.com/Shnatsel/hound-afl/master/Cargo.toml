@@ -6,4 +6,3 @@ authors = ["Sergey \"Shnatsel\" Davidoff <shnatsel@gmail.com>"]
 [dependencies]
 hound = {git = "https://github.com/ruuda/hound.git" }
 afl = "0.4"
-boringssl = "0.0.5"

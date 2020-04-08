@@ -1,6 +1,6 @@
 [package]
 name = "faster-hex"
-version = "0.3.1"
+version = "0.4.1"
 authors = ["zhangsoledad <787953403@qq.com>"]
 edition = "2018"
 keywords = ["simd", "hex"]
@@ -30,6 +30,3 @@ harness = false
 [[bench]]
 name = "check"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

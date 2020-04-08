@@ -15,7 +15,6 @@ path = "src/quilt.rs"
 [dependencies]
 clap = "2.30.0"
 libtexsyn = { path = "./libtexsyn" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["./libtexsyn"]

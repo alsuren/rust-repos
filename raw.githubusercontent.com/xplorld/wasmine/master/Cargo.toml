@@ -2,6 +2,10 @@
 name = "wasmine"
 version = "0.1.0"
 authors = ["xplorld <xplorld@gmail.com>"]
+edition = "2018"
+
 
 [dependencies]
-boringssl = "0.0.5"
+nom = "5.0.0-beta2"
+log = "0.4.6"
+byteorder = "1.3.2"

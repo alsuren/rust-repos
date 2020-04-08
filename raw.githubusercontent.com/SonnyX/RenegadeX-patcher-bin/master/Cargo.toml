@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 renegadex_patcher = { git = "https://github.com/SonnyX/RenegadeX-patcher-lib.git" }
 rust-ini = "0.13.0"
-boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 3

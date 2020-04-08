@@ -2,6 +2,7 @@
 name = "kernel"
 version = "0.1.54"
 build = "build.rs"
+edition = "2018"
 
 [lib]
 name = "kernel"
@@ -10,13 +11,11 @@ crate-type = ["staticlib"]
 
 [dependencies]
 bitflags = "1.0.3"
-clippy = { version = "0.0.209", optional = true }
 linked_list_allocator = "0.6.2"
 raw-cpuid = "4.0.0"
 redox_syscall = { path = "syscall" }
 slab_allocator = { path = "slab_allocator", optional = true }
 spin = "0.4.8"
-boringssl = "0.0.5"
 
 [dependencies.goblin]
 version = "0.0.21"
@@ -28,7 +27,7 @@ version = "0.1.13"
 default-features = false
 
 [dependencies.x86]
-version = "0.9.0"
+version = "0.29.0"
 default-features = false
 
 [features]
@@ -37,7 +36,8 @@ acpi = []
 doc = []
 graphical_debug = []
 live = []
-multi_core = []
+lpss_debug = []
+multi_core = ["acpi"]
 pti = []
 qemu_debug = []
 serial_debug = []

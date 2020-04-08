@@ -10,7 +10,7 @@ version       = "0.7.0"
 license       = "MIT"
 authors       = ["Carl Lerche <me@carllerche.com>"]
 description   = "Lightweight non-blocking IO"
-documentation = "https://docs.rs/mio/0.7.0/mio/"
+documentation = "https://docs.rs/mio/0.7.0"
 homepage      = "https://github.com/tokio-rs/mio"
 repository    = "https://github.com/tokio-rs/mio"
 readme        = "README.md"
@@ -19,31 +19,45 @@ categories    = ["asynchronous"]
 exclude       = [
   ".gitignore",
   ".travis.yml",
-  "deploy.sh",
 ]
 publish = false
 
 [features]
+default = []
+os-poll = []
+os-util = []
+tcp = []
+udp = []
+uds = []
+extra-docs = []
 
 [dependencies]
-log = "0.4"
-slab = "0.4.0"
-net2 = "0.2.29"
-iovec = "0.1.1"
-boringssl = "0.0.5"
+log = "0.4.8"
 
 [target.'cfg(unix)'.dependencies]
-libc = "0.2.42"
+libc = "0.2.62"
 
 [target.'cfg(windows)'.dependencies]
-winapi = { version = "0.3.7", features = ["minwindef", "minwinbase", "ioapiset", "winsock2"] }
-miow = "0.3.3"
+miow   = "0.3.3"
+winapi = { version = "0.3", features = ["winsock2", "mswsock"] }
+ntapi  = "0.3"
+lazy_static = "1.4.0"
 
 [dev-dependencies]
-env_logger = { version = "0.4.0", default-features = false }
-tempdir = "0.3.4"
-bytes = "0.3.0"
+env_logger = { version = "0.6.2", default-features = false }
+net2       = "0.2.33"
 
-[[test]]
-name = "test"
-path = "test/mod.rs"
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[package.metadata.playground]
+features = ["os-poll", "os-util", "tcp", "udp", "uds"]
+
+[[example]]
+name = "tcp_server"
+required-features = ["os-poll", "tcp"]
+
+[[example]]
+name = "udp_server"
+required-features = ["os-poll", "udp"]

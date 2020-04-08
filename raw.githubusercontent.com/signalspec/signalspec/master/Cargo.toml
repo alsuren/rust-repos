@@ -2,6 +2,7 @@
 name = "signalspec"
 version = "0.1.0"
 authors = [ "km@kevinmehall.net" ]
+edition = "2018"
 
 [workspace]
 members = ["cli", "plugins/starfish", "plugins/vcd"]
@@ -9,15 +10,11 @@ members = ["cli", "plugins/starfish", "plugins/vcd"]
 [dependencies]
 log = "0.3.2"
 bit-set = "0.4.0"
-lazy_static = "0.2.2"
-ref_slice = "1.1.1"
 num-complex = "0.1.35"
 byteorder = "1.0.0"
-peg-syntax-ext = "0.5.0"
+peg = "0.6"
 vec_map = "0.8.0"
 scoped-pool = "1.0"
-codemap = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.3"

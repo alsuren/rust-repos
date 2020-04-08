@@ -1,17 +1,19 @@
 [package]
 name    = "iata"
-version = "0.4.0"
+version = "0.7.1"
 edition = "2018"
 authors = [
     "Anton Dutov <anton.dutov@gmail.com>",
     "Mike Lubinets <lubinetsm@yandex.ru>",
+    "Martin Mroz <martinmroz@gmail.com>",
 ]
-
+readme      = "README.md"
 license     = "MIT"
 description = "Some implementations of IATA resolutions"
 repository  = "https://github.com/anton-dutov/iata-rs"
+categories  = ["parser-implementations"]
+keywords    = ["iata", "bcbp"]
 
 [dependencies]
-nom    = "4.2"
+log    = "0.4"
 chrono = "0.4"
-boringssl = "0.0.5"

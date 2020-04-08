@@ -1,20 +1,21 @@
 [package]
-name = "ssz-cli"
-version = "0.1.1"
+name = "sszt"
+version = "0.1.2"
 authors = ["Matt Garnett <14004106+c-o-l-o-r@users.noreply.github.com>"]
 license = "Apache-2.0"
-description = "A tool to convert files to a hex representation of SSZ"
-repository = "https://github.com/c-o-l-o-r/ssz-cli"
+description = "A human-readable representation of SSZ."
+repository = "https://github.com/c-o-l-o-r/sszt"
 keywords = ["ssz", "wasm", "ewasm"]
-categories = ["command-line-utilities"]
+categories = ["encoding"]
 edition = "2018"
 
 [dependencies]
+serde = { version = "1.0.92", features = ["derive"] }
+serde_json = { version = "1.0.39", features = ["preserve_order"] }
 ssz = "0.1.2"
-clap = "2.33.0"
-hex = "0.3.2"
-boringssl = "0.0.5"
+ethereum-types = "0.6.0"
+indexmap = "1.0.2"
+serde_yaml = "0.8.9"
 
-[[bin]]
-name = "ssz"
-path = "src/main.rs"
+[dev-dependencies]
+ssz-derive = "0.1.2"

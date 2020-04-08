@@ -1,7 +1,7 @@
 [package]
 name = "base-x"
 description = "Encode/decode any base"
-version = "0.2.5"
+version = "0.2.6"
 authors = ["Alex R. <alexei.rudenko@gmail.com>"]
 license = "MIT"
 readme = "README.md"
@@ -18,6 +18,3 @@ rand = "0.3"
 [[bench]]
 name = "base"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

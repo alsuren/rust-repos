@@ -12,7 +12,9 @@ failure_derive = "0.1.5"
 llvm-sys = "80"
 lalrpop-util = "0.16.3"
 regex = "0.2.0"
-boringssl = "0.0.5"
+hlllvm = { git = "https://github.com/dwoos/hlllvm.git" }
+tempfile = "3.1"
 
 [build-dependencies]
 lalrpop = "0.16.3"
+

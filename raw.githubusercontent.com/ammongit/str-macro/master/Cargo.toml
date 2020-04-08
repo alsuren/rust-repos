@@ -5,11 +5,10 @@ repository = "https://github.com/ammongit/str-macro"
 readme = "README.md"
 license = "MIT"
 keywords = ["str", "string", "slice", "owned", "macro"]
-categories = []
+categories = ["rust-patterns"]
 
-version = "0.1.2"
+version = "0.1.4"
 authors = ["Ammon Smith <ammon.i.smith@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"

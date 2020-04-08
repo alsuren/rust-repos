@@ -1,7 +1,7 @@
 [package]
 name = "bufkit-data"
-version = "0.8.1"
-authors = ["Ryan Leach <clumsycodemonkey@gmail.com>"]
+version = "0.11.2"
+authors = ["Ryan <rnleach@users.noreply.github.com>"]
 description = "A crate to manage an archive of bufkit files."
 repository = "https://github.com/rnleach/bufkit-data.git"
 readme = "README.md"
@@ -15,14 +15,13 @@ appveyor = { repository = "rnleach/bufkit-data", branch = "master", service = "g
 travis-ci = { repository = "rnleach/bufkit-data", branch = "master" }
 
 [dependencies]
-chrono = "0.4.2"
+chrono = "^0.4"
 flate2 = {version = "1.0", features = ["rust_backend"], default-features = false }
-rusqlite = { version = "0.18", features = ["bundled", "chrono"], default-features = false }
-sounding-analysis = "0.11"
-sounding-bufkit = "0.11"
-strum = "0.15"
-strum_macros = "0.15"
-boringssl = "0.0.5"
+rusqlite = { version = "0.21", features = ["bundled", "chrono"], default-features = false }
+sounding-analysis = "^0.13"
+sounding-bufkit = "0.13"
+strum = "0.18"
+strum_macros = "0.18"
 
 [dev-dependencies]
 tempdir = "0.3"

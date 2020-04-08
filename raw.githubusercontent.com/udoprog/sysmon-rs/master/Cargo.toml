@@ -23,7 +23,6 @@ tokio-signal = "0.1"
 nom = "^2.0"
 error-chain = "^0.7"
 num_cpus = "1.2.0"
-boringssl = "0.0.5"
 
 [dependencies.toml]
 version = "0.2.1"

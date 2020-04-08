@@ -9,4 +9,3 @@ log = "*"
 env_logger = "*"
 clap = {version = "2", features = ["yaml"]}
 httparse = "*"
-boringssl = "0.0.5"

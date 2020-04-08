@@ -1,3 +1,5 @@
+# syntax = denzp/cargo-wharf-frontend:v0.1.0-alpha.0
+
 [package]
 name = "httpbox"
 version = "0.2.0"
@@ -5,26 +7,39 @@ authors = ["Kevin Stone <kevinastone@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-askama = { version="^0.8", features=["with-gotham"] }
-byteorder="^1.3.1"
-clap="^2.32.0"
-cookie = "^0.11.0"
-failure = "^0.1.5"
-futures = "^0.1.25"
-futures-timer = "0.1"
-headers = "0.2.0"
-http = "0.1.15"
-hyper = "0.12.23"
+askama = { version="^0.8" }
+async-trait = "^0.1"
+byteorder = "^1.3.2"
+clap = "^2.33.0"
+cookie = "^0.12.0"
+anyhow = "^1.0.27"
+futures = "0.3.1"
+futures-timer = "^0.3"
+headers = "^0.3.2"
+hyper = "0.13"
 itertools = "^0.8.0"
 lazy_static = "^1.2.0"
 mime = "^0.3.13"
-num_cpus = "^1.9.0"
+num_cpus = "^1.10.1"
 pretty_env_logger = "^0.3"
-rand = "^0.6"
-serde = "^1.0.85"
-serde_derive = "^1.0.85"
-url = "^1.7.2"
-gotham = "^0.3"
-gotham_derive = "^0.3"
-tokio = "=0.1.15"
-boringssl = "0.0.5"
+rand = { version="^0.7", features = ["small_rng"]}
+serde = "^1.0.98"
+serde_derive = "^1.0.98"
+serde_urlencoded = "0.6"
+url = "^2.1.0"
+tokio = { version = "0.2.6", features = ["full"] }
+
+[[bin]]
+name = "httpbox"
+path = "src/main.rs"
+
+[package.metadata.wharf.builder]
+image = "rust"
+
+[[package.metadata.wharf.binary]]
+name = "httpbox"
+destination = "/usr/local/bin/httpbox"
+
+[package.metadata.wharf.output]
+image = "debian:stable-slim"
+entrypoint = ["/usr/local/bin/httpbox"]

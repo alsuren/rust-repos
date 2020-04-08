@@ -1,21 +1,25 @@
 [package]
 name = "base16"
-version = "0.1.2"
+version = "0.2.1"
 authors = ["Thom Chiovoloni <tchiovoloni@mozilla.com>"]
 keywords = ["hex", "base16", "encode", "decode", "no_std"]
 repository = "https://github.com/thomcc/rust-base16"
 description = "base16 (hex) encoding and decoding"
 categories = ["encoding", "no-std"]
-license = "MIT/Apache-2.0"
+license = "CC0-1.0"
 readme = "README.md"
 edition = "2018"
 
+[badges]
+circle-ci = { repository = "thomcc/rust-base16", branch = "master" }
+codecov = { repository = "thomcc/rust-base16", branch = "master", service = "github" }
+
 [features]
-std = []
+std = ["alloc"]
+alloc = []
 default = ["std"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.6.5"

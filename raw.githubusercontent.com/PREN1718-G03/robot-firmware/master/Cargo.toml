@@ -8,7 +8,6 @@ hifive = { path = "riscv-crates/hifive" }
 nb = { git = "https://github.com/japaric/nb" }
 riscv-semihosting = { path = "riscv-crates/riscv-semihosting" }
 stlog = "^0.2.0"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

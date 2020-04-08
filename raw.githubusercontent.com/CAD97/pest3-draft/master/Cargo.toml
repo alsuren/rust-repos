@@ -1,8 +1,0 @@
-[workspace]
-members = [
-    'meta',
-]
-
-[patch.crates-io]
-pest = { git = "https://github.com/cad97/pest", branch = "pair-to-pairs" }
-from-pest = { git = "https://github.com/pest-parser/ast", branch = "tuples" }

@@ -16,7 +16,6 @@ protobuf = "1.4.3"
 serde = { git = "https://github.com/ekiden/serde" }
 serde_cbor = { git = "https://github.com/ekiden/cbor" }
 serde_derive = "1.0.27"
-boringssl = "0.0.5"
 
 [target.'cfg(not(target_env = "sgx"))'.dependencies]
 rand = "0.4.2"

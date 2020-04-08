@@ -1,6 +1,6 @@
 [package]
 name = "minisat"
-version = "0.4.3"
+version = "0.4.4"
 authors = ["Bjørnar Luteberget <luteberget@gmail.com>"]
 build = "build.rs"
 description = "MiniSat Rust interface. Solves a boolean satisfiability problem given in conjunctive normal form."
@@ -11,10 +11,12 @@ categories=["api-bindings","science"]
 license="MIT"
 
 [dependencies]
-itertools = "0.7"
-boringssl = "0.0.5"
+itertools = "0.8"
+
 [dev-dependencies]
 quickcheck="0.7"
+sudoku="0.7"
+
 [build-dependencies]
 cc="1"
 bindgen="0.42"

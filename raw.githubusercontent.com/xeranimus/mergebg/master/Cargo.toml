@@ -1,7 +1,9 @@
 [package]
-name = "mergebg"
-version = "0.1.0"
+name = "ironbed"
+version = "0.1.1"
 authors = ["wow"]
+edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+clap = "2.33"
+rand = "0.6"

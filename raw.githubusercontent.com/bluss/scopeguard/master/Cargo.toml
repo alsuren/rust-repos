@@ -1,6 +1,6 @@
 [package]
 name = "scopeguard"
-version = "1.0.0"
+version = "1.1.0"
 
 license = "MIT/Apache-2.0"
 repository = "https://github.com/bluss/scopeguard"
@@ -21,9 +21,6 @@ categories = ["rust-patterns", "no-std"]
 [features]
 default = ["use_std"]
 use_std = []
-
-[dependencies]
-boringssl = "0.0.5"
 
 [package.metadata.release]
 no-dev-version = true

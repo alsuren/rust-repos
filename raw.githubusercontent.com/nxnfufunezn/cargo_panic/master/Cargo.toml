@@ -3,8 +3,5 @@ name = "test-rs"
 version = "0.1.0"
 authors = ["nxnfufunezn <nxnfufunezn@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.brotli]
 git = "https://github.com/ende76/brotli-rs"

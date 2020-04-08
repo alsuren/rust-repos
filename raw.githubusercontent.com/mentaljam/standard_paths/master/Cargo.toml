@@ -18,6 +18,3 @@ winapi = { version = "0.3", features = ["shlobj", "combaseapi", "winbase"] }
 
 [dev_dependencies]
 argparse = "0.2.1"
-
-[dependencies]
-boringssl = "0.0.5"

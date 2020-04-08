@@ -1,9 +1,0 @@
-[package]
-name = "glass"
-version = "0.1.0"
-authors = ["Hikawa <NamorNimus@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-gl = { git = "https://github.com/nyaacode/gl" }
-boringssl = "0.0.5"

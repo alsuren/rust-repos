@@ -1,13 +1,13 @@
 [package]
 name = "partial_application"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Emerentius"]
 
 license = "MIT/Apache-2.0"
 repository = "https://github.com/emerentius/partial_application"
 documentation = "https://docs.rs/partial_application"
+readme = "README.md"
 
-description = "Defines the partial! macro for partial function application"
+description = "Offers partial function application through the partial! macro"
 
 [dependencies]
-boringssl = "0.0.5"

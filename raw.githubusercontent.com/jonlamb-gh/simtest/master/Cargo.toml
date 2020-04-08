@@ -5,12 +5,10 @@ authors = ["Jon Lamb"]
 edition = "2018"
 
 [dependencies]
-#nphysics3d = "0.9"
-nphysics3d = { git = "https://github.com/jonlamb-gh/nphysics.git", branch = "fix-multibody-force" }
-nalgebra = "0.16"
-kiss3d = "0.17"
-ncollide3d = "0.17"
-pid = "1.2"
-#gilrs = "0.6"
-gilrs = { git = "https://gitlab.com/gilrs-project/gilrs.git", branch = "master" }
-boringssl = "0.0.5"
+nphysics3d = "0.13"
+nalgebra = "0.19"
+kiss3d = "0.22"
+ncollide3d = "0.21"
+gilrs = "0.7"
+pid = "2.0"
+random_color = "0.4"

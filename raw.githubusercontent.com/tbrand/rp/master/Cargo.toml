@@ -10,7 +10,6 @@ env_logger = "*"
 rand = "*"
 failure = "*"
 rp-core = { path = "rp-core" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

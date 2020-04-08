@@ -1,10 +1,15 @@
 [package]
-name = "graphene"
+name = "systash"
 version = "0.1.0"
-authors = ["Toure <tdunnon@gmail.com>"]
+authors = ["Toure Dunnon <tdunnon@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-rocket = "0.4.1"
-rocket_codegen = "0.4.1"
-boringssl = "0.0.5"
+structopt = "0.3.0"
+flate2 = "1.0.11"
+tar = "0.4.26"
+serde = "1.0.102"
+serde_derive = "1.0.102"
+rusqlite = "0.20.0"
+ring = "0.16.9"
+data-encoding = "2.1.2"

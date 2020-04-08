@@ -7,6 +7,3 @@ description = "An API to POSIX IPC primitives"
 repository = "http://github.com/codius/rust-posix-ipc"
 license = "MIT"
 readme = "README.md"
-
-[dependencies]
-boringssl = "0.0.5"

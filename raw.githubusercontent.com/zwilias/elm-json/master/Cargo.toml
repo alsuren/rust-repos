@@ -1,6 +1,6 @@
 [package]
 name = "elm-json"
-version = "0.2.0"
+version = "0.2.6"
 authors = ["ilias <mail@ilias.xyz>"]
 edition = "2018"
 
@@ -21,8 +21,7 @@ colored = "1.7"
 dialoguer = "0.3"
 dirs = "1.0"
 fs2 = "0.4"
-chttp = "0.4"
-boringssl = "0.0.5"
+chttp = "0.5"
 
 [dev-dependencies]
 assert_cmd = "0.11"
@@ -40,3 +39,6 @@ path = "src/bin/main.rs"
 [profile.release]
 lto = true
 panic = 'abort'
+
+[patch.crates-io]
+chttp = { git = "https://github.com/zwilias/chttp.git" }

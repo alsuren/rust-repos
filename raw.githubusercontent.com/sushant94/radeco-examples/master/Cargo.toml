@@ -3,8 +3,5 @@ name = "radeco-examples"
 version = "0.1.0"
 authors = ["Sushant <sushant.dinesh94@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.radeco]
 git = "https://github.com/radare/radeco"

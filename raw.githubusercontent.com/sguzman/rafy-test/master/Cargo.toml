@@ -11,7 +11,6 @@ path = "src/main.rs"
 [dependencies]
 rafy = {path = "../rafy-rs"}
 openssl-sys = "*"
-boringssl = "0.0.5"
 
 [features]
 # Force openssl-sys to staticly link in the openssl library. Necessary when

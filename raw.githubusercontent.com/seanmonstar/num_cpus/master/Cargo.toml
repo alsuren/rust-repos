@@ -1,7 +1,7 @@
 [package]
 
 name = "num_cpus"
-version = "1.10.0" # don't forget to update html_root_url
+version = "1.12.0" # don't forget to update html_root_url
 description = "Get the number of CPUs on a machine."
 authors = ["Sean McArthur <sean@seanmonstar.com>"]
 license = "MIT/Apache-2.0"
@@ -13,7 +13,6 @@ readme = "README.md"
 
 [dependencies]
 libc = "0.2.26"
-boringssl = "0.0.5"
 
-[dev-dependencies]
-doc-comment = "0.3"
+[target.'cfg(all(any(target_arch = "x86_64", target_arch = "aarch64"), target_os = "hermit"))'.dependencies]
+hermit-abi = "0.1.3"

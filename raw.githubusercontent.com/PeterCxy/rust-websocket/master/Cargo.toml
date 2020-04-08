@@ -34,7 +34,6 @@ futures = { version = "0.1.19", optional = true }
 bytes = { version = "0.4", optional = true }
 native-tls = { version = "^0.1.2", optional = true }
 hyper = "0.12.0"
-boringssl = "0.0.5"
 
 [dependencies.tokio-tls]
 git = "https://github.com/enzious/tokio-tls"

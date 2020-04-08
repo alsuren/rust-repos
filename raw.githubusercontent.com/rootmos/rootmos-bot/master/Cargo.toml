@@ -16,7 +16,6 @@ lazy_static = "0.2.1"
 serde = "0.8.11"
 serde_json = "0.8.2"
 chrono = { version = "0.2", features = ["serde"] }
-boringssl = "0.0.5"
 
 [build-dependencies]
 serde_codegen = "0.8.11"

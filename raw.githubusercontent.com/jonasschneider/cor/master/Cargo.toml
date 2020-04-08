@@ -12,4 +12,3 @@ kalloc = { path = "src/lib/libkalloc" }
 alloc = { path = "src/lib/liballoc" }
 collections = { path = "src/lib/libcollections" }
 rlibc = { path = "src/lib/rlibc" }
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "base16-builder"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Andrea Scarpino <me@andreascarpino.it>"]
 description = "A Rust implementation of a base16 builder"
 repository = "https://github.com/ilpianista/base16-builder-rust"
@@ -12,9 +12,8 @@ name = "base16-builder"
 
 [dependencies]
 clap = {version = "2", features = ["yaml"]}
-git2 = "0.8"
+git2 = "0.10"
 env_logger = "0.6"
 log = "0.4"
 rustache = "0.1"
 yaml-rust = "0.4"
-boringssl = "0.0.5"

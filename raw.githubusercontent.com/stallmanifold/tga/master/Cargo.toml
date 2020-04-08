@@ -1,16 +1,16 @@
 [package]
 name = "tga"
-version = "0.2.19"
-authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+version = "0.2.20"
+authors = ["LambdaXymox <lambda.xymox@gmail.com>"]
 readme = "README.md"
-repository = "https://github.com/stallmanifold/libtga"
+repository = "https://github.com/lambdaxymox/libtga"
+edition = "2018"
 keywords = ["tga", "image processing", "textures", "graphics"]
 
 [lib]
 name = "tga"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2.2"

@@ -1,6 +1,6 @@
 [package]
 name = "nsvg"
-version = "0.5.0"
+version = "0.5.1"
 authors = ["Nick Browne <nickbrowne@users.noreply.github.com>"]
 repository = "https://github.com/nickbrowne/nsvg"
 keywords = ["svg", "nanosvg"]
@@ -13,7 +13,6 @@ default = ["image"]
 
 [dependencies]
 image = { version = "0.19.0", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3"

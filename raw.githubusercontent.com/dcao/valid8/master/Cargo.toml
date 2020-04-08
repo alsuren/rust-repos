@@ -5,7 +5,6 @@ authors = ["David Cao <dcao@protonmail.com>"]
 
 [dependencies]
 faster = { git = "https://github.com/AdamNiederer/faster" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

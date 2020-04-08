@@ -15,7 +15,6 @@ failure = "0.1"
 nalgebra = { version = "0.17", optional = true}
 
 typedgl_derive = { git = "https://github.com/AlexW-GH/typed-gl-derive.git" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 speculate = "0.1"

@@ -1,9 +1,12 @@
 [package]
 name = "storm"
-version = "0.2.0"
+version = "0.4.2"
 authors = ["Geoff Clements <ro2kz0@gmail.com>"]
 readme = "README.md"
 license = "MIT"
+description = "A Headless Client for Logitec Media Server"
+homepage = "https://github.com/GeoffClements/Storm"
+repository = "https://github.com/GeoffClements/Storm"
 
 [dependencies]
 log = "0.4"
@@ -16,14 +19,16 @@ tokio-tcp = "0.1"
 tokio-signal = "0.2"
 futures = "0.1"
 bytes = "0.4"
-actix = "0.7"
-rand = "0.5"
-mac_address = "0.8"
-gstreamer = "0.11"
+mac_address = "1.0"
+gstreamer = "0.14"
 thread-control = "0.1"
-boringssl = "0.0.5"
+regex = "1.2"
 
 [dependencies.clap]
-version = "2.32"
+version = "2.33"
 default-features = false
 features = ["wrap_help"]
+
+[dependencies.actix]
+version = "0.8"
+default-features = false

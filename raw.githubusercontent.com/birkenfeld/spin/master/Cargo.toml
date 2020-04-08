@@ -17,9 +17,7 @@ path = "src/db/main.rs"
 
 [dependencies]
 log = "*"
-time = "*"
 fxhash = "*"
-boringssl = "0.0.5"
 
 [dependencies.spin_core]
 path = "src/core"

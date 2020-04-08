@@ -12,39 +12,31 @@ license = "MIT OR Apache-2.0"
 name = "cortex-m-rt"
 readme = "README.md"
 repository = "https://github.com/rust-embedded/cortex-m-rt"
-version = "0.6.8"
+version = "0.6.11"
 autoexamples = true
 
 [dependencies]
-r0 = "0.2.2"
-cortex-m-rt-macros = { path = "macros", version = "0.1.5" }
-boringssl = "0.0.5"
-
-[target.thumbv7em-none-eabihf.dev-dependencies]
-cortex-m-semihosting = "0.3.1"
-
-[target.thumbv7em-none-eabi.dev-dependencies]
-cortex-m-semihosting = "0.3.1"
-
-[target.thumbv7m-none-eabi.dev-dependencies]
-cortex-m-semihosting = "0.3.1"
-
-[target.thumbv6m-none-eabi.dev-dependencies]
-cortex-m-semihosting = "0.3.1"
+r0 = "1.0"
+cortex-m-rt-macros = { path = "macros", version = "=0.6.11" }
 
 [dev-dependencies]
 cortex-m = "0.6"
 panic-halt = "0.2.0"
-
-[dev-dependencies.rand]
-default-features = false
-version = "0.5.5"
+cortex-m-semihosting = "0.3"
 
 [target.'cfg(not(target_os = "none"))'.dev-dependencies]
-compiletest_rs = "0.3.14"
+compiletest_rs = "0.4.0"
 
 [[example]]
 name = "device"
+required-features = ["device"]
+
+[[example]]
+name = "warnings"
+required-features = ["device"]
+
+[[test]]
+name = "compiletest"
 required-features = ["device"]
 
 [features]

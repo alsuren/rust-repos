@@ -14,7 +14,6 @@ iron = "*"
 juniper = "*"
 actix-web = "*"
 graphql-parser = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 'z'

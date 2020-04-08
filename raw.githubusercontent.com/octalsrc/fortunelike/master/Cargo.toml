@@ -1,6 +1,6 @@
 [package]
 name = "fortunelike"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["octalsrc <octal@octalsrc.org>"]
 description = "Classic cli utility that prints random messages"
 license = "GPL-3.0+"
@@ -32,4 +32,3 @@ include = [
 yaml-rust = "0.3"
 rand = "0.3"
 getopts = "0.2"
-boringssl = "0.0.5"

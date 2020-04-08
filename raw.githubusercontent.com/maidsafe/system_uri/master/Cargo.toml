@@ -14,7 +14,6 @@ edition = "2018"
 quick-error = "~1.2.2"
 ffi_utils = { version = "~0.8.0", optional = true }
 libc  = { version = "~0.2.33", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "~0.3.18"

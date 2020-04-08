@@ -1,48 +1,11 @@
-[package]
-
-name = "gestalt"
-version = "0.0.1"
-authors = [ "Samuel Cutlip <gyro@zettabyte.ws>" ]
-
-[profile.dev]
-opt-level = 0      # controls the `--opt-level` the compiler builds with
-debug = true       # controls whether the compiler passes `-g`
-rpath = false      # controls whether the compiler passes `-C rpath`
-lto = false        # controls `-C lto` for binaries and staticlibs
-debug-assertions = true # controls whether debug assertions are enabled
-codegen-units = 1  # controls whether the compiler passes `-C codegen-units`
-                   # `codegen-units` is ignored when `lto = true`
-panic = 'unwind'   # panic strategy (`-C panic=...`), can also be 'abort'
-
-[dependencies]
-num = "0.1.37"
-time = "*"
-cgmath = { git = "https://github.com/brendanzab/cgmath.git", rev = "3e6974b" }
-
-serde = { version = "1.0.2", features = ["std"] }
-serde_yaml = "0.7.0"
-serde_derive = "1.0.2"
-
-lazy_static = "0.2.8"
-string_cache = "0.5.0"
-linear-map = { git = "https://github.com/contain-rs/linear-map" }
-
-image = "0.10.0"
-
-parking_lot = "0.7.1"
-crossbeam = "0.7.1"
-
-log = "0.4.6" # Note: I'm going to roll my own implementation, but still use the facade to work with it.
-chrono = "0.4.6"
-
-# gluon = "0.8.1"
-
-# Vulkano things.
-vulkano = "*"
-vulkano-shaders = "*"
-winit = "*"
-vulkano-win = "*"
-boringssl = "0.0.5"
-
 [workspace]
-exclude = ["gamedata"]	# Probably not necessary, but just in case - don't treat game data as a Rust crate.
+
+members = [
+    "toolbox",
+    "lumberjack",
+    "phosphor",
+    "gestalt",
+    "gestalt_bin",
+    "vulkano-shaders",
+    "make_names",
+]

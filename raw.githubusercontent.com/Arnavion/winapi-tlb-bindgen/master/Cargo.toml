@@ -6,4 +6,3 @@ edition = "2018"
 
 [dependencies]
 winapi = { version = "0.3.x", features = ["objbase", "oleauto", "winerror"] }
-boringssl = "0.0.5"

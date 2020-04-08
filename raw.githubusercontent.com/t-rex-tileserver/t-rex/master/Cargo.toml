@@ -1,7 +1,7 @@
 [package]
 name = "t-rex"
-version = "0.9.2"
-description = "vector tile server"
+version = "0.10.2-dev"
+description = "t-rex vector tile server"
 repository = "https://github.com/t-rex-tileserver/t-rex"
 readme = "README.md"
 license = "MIT"
@@ -14,18 +14,34 @@ path = "src/main.rs"
 doctest = false
 
 [dependencies]
+tile-grid = { path = "tile-grid" }
 t-rex-core = { path = "t-rex-core" }
 t-rex-gdal = { path = "t-rex-gdal", optional = true }
 t-rex-service = { path = "t-rex-service" }
 t-rex-webserver = { path = "t-rex-webserver" }
 clap = "2.31"
+dotenv = "0.14.1"
 log = "0.4"
-env_logger = "0.5"
+env_logger = "0.6"
 time = "0.1"
-boringssl = "0.0.5"
 
 [features]
 default = ["with-gdal"]
 with-gdal = ["t-rex-gdal"]
 
 [workspace]
+
+[package.metadata.deb]
+maintainer = "Pirmin Kalberer <pi_deb@sourcepole.ch>"
+copyright = "2020, Pirmin Kalberer <pi_deb@sourcepole.ch>"
+license-file = ["LICENSE", "4"]
+extended-description = """\
+t-rex is a vector tile server specialized \
+on publishing MVT tiles from your own data."""
+depends = "$auto"
+section = "utility"
+priority = "optional"
+assets = [
+    ["target/release/t_rex", "usr/bin/", "755"],
+    ["README.md", "usr/share/doc/t-rex/README", "644"],
+]

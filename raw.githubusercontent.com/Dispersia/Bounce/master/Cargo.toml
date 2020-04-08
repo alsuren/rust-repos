@@ -5,6 +5,5 @@ authors = ["Aaron Housh <ahoush@edupoint.com>"]
 edition = "2018"
 
 [dependencies]
-amethyst = { path = "../amethyst", features = [ "vulkan" ] }
+amethyst = { git = "https://github.com/amethyst/amethyst", features = [ "vulkan", "no-slow-safety-checks" ] }
 rand = "0.6.5"
-boringssl = "0.0.5"

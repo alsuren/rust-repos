@@ -11,6 +11,5 @@ path = "src/main.rs"
 env_logger = { version = "0.4", default-features = false }
 getopts = "0.2"
 wasm-gc = { path = "wasm-gc" }
-boringssl = "0.0.5"
 
 [workspace]

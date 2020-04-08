@@ -7,7 +7,6 @@ authors = ["Andres Vahter <andres.vahter@gmail.com>"]
 libc = "*"
 log = "*"
 time = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 fern = "*"

@@ -3,18 +3,28 @@ authors = ["William Bain <bain.william.a@gmail.com>"]
 name = "rstarc"
 version = "0.1.0"
 
+[workspace]
+members = [
+    "crates/rstarc_types",
+]
+exclude = [
+    "runtime",
+]
+
 [build-dependencies]
-lalrpop = "0.15.2"
+lalrpop = "0.16.1"
 
 [dependencies]
+bytes = "0.4.10"
 clap = "2.32.0"
-lalrpop-util = "0.15.2"
-lazy_static = "1.0.2"
+lalrpop-util = "0.16.1"
+lazy_static = "1.4.0"
 llvm-sys = "60.1"
 regex = "1.0.2"
+smallvec = "1.2"
 tempdir = "0.3.7"
 void = "1.0.2"
-boringssl = "0.0.5"
+rstarc_types = { path = "crates/rstarc_types", features = ["std"] }
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2"

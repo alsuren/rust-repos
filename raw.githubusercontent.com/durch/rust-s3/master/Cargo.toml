@@ -1,35 +1,6 @@
-[package]
-name = "rust-s3"
-version = "0.13.0"
-authors = ["Drazen Urch", "Nick Stevens"]
-description = "Tiny Rust library for working with Amazon S3."
-repository = "https://github.com/durch/rust-s3"
-readme = "README.md"
-keywords = ["Amazon", "AWS", "S3"]
-license = "MIT"
-documentation = "https://durch.github.io/rust-s3/"
-
-[lib]
-name = "s3"
-path = "src/lib.rs"
-
-[dependencies]
-base64 = "0.10.1"
-chrono = "^0.4.0"
-error-chain = "^0.10.0"
-hex = "^0.2.0"
-hmac = "^0.4.2"
-reqwest = "^0.9.1"
-serde_derive = "^1.0.11"
-serde = "^1.0.11"
-serde-xml-rs = "^0.2.1"
-sha2 = "^0.6.0"
-md5 = "^0.6.1"
-url = "^1.5.1"
-rust-ini = "^0.9"
-dirs = "^1.0"
-boringssl = "0.0.5"
-
-[features]
-no-verify-ssl = []
-
+[workspace]
+members = [
+    "s3",
+    "aws-region",
+    "aws-creds"
+]

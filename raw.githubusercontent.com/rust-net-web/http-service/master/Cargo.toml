@@ -1,22 +1,29 @@
 [package]
 authors = ["Aaron Turon <aturon@mozilla.com>"]
 description = "Types and traits for standardizing async HTTP services"
-repository = "https://github.com/rust-net-web/http-service"
+repository = "https://github.com/rustasync/http-service"
+documentation = "https://docs.rs/http-service"
+keywords = ["http-service", "http", "web", "async"]
+categories = [
+  "network-programming",
+  "asynchronous",
+  "web-programming::http-server"
+]
+readme = "README.md"
 edition = "2018"
 license = "MIT OR Apache-2.0"
 name = "http-service"
-version = "0.2.0"
+version = "0.4.0"
 
 [workspace]
-members = ["http-service-hyper", "http-service-mock"]
+members = ["http-service-hyper", "http-service-lambda", "http-service-mock"]
 
 [dependencies]
 bytes = "0.4.12"
+futures = "0.3.1"
 http = "0.1.17"
-boringssl = "0.0.5"
+async-std = { version = "1.0.1", default-features = false, features = ["std"] }
+pin-project-lite = "0.1.0"
 
-[dev-dependencies]
-http-service-hyper = { path = "http-service-hyper", version = "0.2.0" }
-
-[dependencies.futures-preview]
-version = "0.3.0-alpha.16"
+# [dev-dependencies]
+# http-service-hyper = { version = "0.4.0", path = "./http-service-hyper" }

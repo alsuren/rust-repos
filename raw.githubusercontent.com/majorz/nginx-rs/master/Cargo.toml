@@ -6,7 +6,6 @@ version = "0.0.1"
 [dependencies]
 term = "*"
 itertools = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "nrust"

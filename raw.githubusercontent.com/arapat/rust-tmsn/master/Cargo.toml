@@ -1,6 +1,6 @@
 [package]
 name = "tmsn"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["Julaiti Alafate <jalafate@gmail.com>"]
 
 [dependencies]
@@ -11,4 +11,3 @@ serde = "1.0.33"
 serde_derive = "1.0.33"
 serde_json = "1.0.11"
 time = "0.1.39"
-boringssl = "0.0.5"

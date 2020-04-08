@@ -7,7 +7,6 @@ build = "build.rs"
 [dependencies]
 # f103 = { path = "libs/f103" }
 peripheral = { path = "libs/peripheral" }
-boringssl = "0.0.5"
 
 [profile.release]
 # lto = true

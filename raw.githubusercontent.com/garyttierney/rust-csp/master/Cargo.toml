@@ -1,8 +1,10 @@
 [workspace]
 members = [
-    "packages/libsecsp_analysis",
-    "packages/libsecsp_syntax",
-    "packages/secsp_language_server",
+    "packages/libsecsp-analysis",
+    "packages/libsecsp-parser",
+    "packages/libsecsp-syntax",
+    "packages/libsecsp-syntax-derive",
+    "packages/secsp-language-server",
     "packages/secspc",
 ]
 

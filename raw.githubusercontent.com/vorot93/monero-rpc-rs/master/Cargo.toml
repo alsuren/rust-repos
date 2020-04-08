@@ -1,21 +1,26 @@
 [package]
 name = "monero-rpc"
+description = "RPC client for Monero daemon and wallet"
 version = "0.1.0"
 authors = ["Artem Vorotnikov <artem@vorotnikov.me>"]
+repository = "https://github.com/monero-ecosystem/monero-rpc-rs"
 edition = "2018"
+license = "MIT OR Apache-2.0"
+keywords = ["asynchronous", "net"]
+
+[badges]
+maintenance = { status = "actively-developed" }
 
 [dependencies]
-chrono = { version = "*", features = ["serde"] }
-failure = "*"
-futures-preview = { version = "0.3.0-alpha.16", features = ["compat"] }
+chrono = { version = "0.4", features = ["serde"] }
 fixed-hash = "0.3"
-hex = { git = "https://github.com/KokaKiwi/rust-hex" }
-jsonrpc-core = "*"
+hex = "0.4"
+http = "*"
+jsonrpc-core = "14"
 log = "*"
 monero = { git = "https://github.com/monero-rs/monero-rs", features = ["serde"] }
-reqwest = "*"
-rustc-hex = "*"
+reqwest = { git = "https://github.com/seanmonstar/reqwest", features = ["json"] }
 serde = { version = "1", features = ["derive"] }
-serde_json = { version = "*", features = ["arbitrary_precision"] }
-uuid = { version = "*", features = ["v4"] }
-boringssl = "0.0.5"
+serde_json = "1"
+snafu = "*"
+uuid = { version = "0.8", features = ["v4"] }

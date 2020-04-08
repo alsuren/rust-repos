@@ -7,7 +7,6 @@ description = "Solving Project Euler problems with rust."
 
 [dependencies]
 num = "*"
-boringssl = "0.0.5"
 
 [dependencies.algorithm]
 path = "./common/algorithm"

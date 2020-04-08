@@ -8,4 +8,3 @@ edition = "2018"
 gbm = { git = "https://github.com/kosyak/gbm.rs.git", default-features = false, features = ["drm-support", "import-egl", "gen"] }
 drm = { git = "https://github.com/kosyak/drm-rs.git", branch = "master" }
 sys = { path = "sys" }
-boringssl = "0.0.5"

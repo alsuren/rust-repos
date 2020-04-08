@@ -5,12 +5,14 @@ authors = ["A.A.Abroskin <arkweid@evilmartians.com>"]
 edition = "2018"
 
 [dependencies]
-sha2 = "0.8.0" # suppose replace it with sodiumoxide
+sha2 = "0.8.0"
+hmac = "0.7.1"
+hkdf = "0.7.1"
 rand = "0.6.5"
+hex = "0.3"
 log = "0.4"
 env_logger = "0.6.0"
 
-sodiumoxide = "0.2.0"
 byteorder = "1"
 base32 = "0.3.1"
 crc16 = "0.3.4"
@@ -22,16 +24,21 @@ serde = { version = "1.0.27", features = ["derive"] }
 serde_repr = "0.1"
 serde_derive = "1.0.27"
 serde_bytes = "0.10.3"
-serde-xdr = { version = "0.5.0", git = "https://github.com/Arkweid/serde-xdr" }
-simulacrum = "0.3.0"
+serde-xdr = "0.5.1"
 itertools = "0.8"
 toml = "0.4"
 lazy_static = "1.3"
-diesel = { version = "1.4", features = ["sqlite", "r2d2"] }
+diesel = { version = "1.4", features = ["sqlite", "chrono", "r2d2"] }
+chrono = "0.4.7"
 dotenv = "0.10"
 riker = "0.2.4"
 riker-default = "0.2.4"
-boringssl = "0.0.5"
+ed25519-dalek = "1.0.0-pre.1"
+x25519-dalek = "0.5.2"
+
+[dependencies.libsqlite3-sys]
+version = "*"
+features = ["bundled"]
 
 [profile.dev]
 debug = true

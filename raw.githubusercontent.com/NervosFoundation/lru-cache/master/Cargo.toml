@@ -11,4 +11,3 @@ heapsize_impl = ["heapsize", "linked-hash-map/heapsize_impl"]
 fnv = "1.0"
 linked-hash-map = "0.5"
 heapsize = { version = "0.4", optional = true }
-boringssl = "0.0.5"

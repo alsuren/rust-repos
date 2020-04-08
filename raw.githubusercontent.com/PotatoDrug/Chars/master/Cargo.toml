@@ -1,9 +1,16 @@
 [package]
-name = "chars"
+name = "exstr"
 version = "0.1.0"
-authors = ["PotatoDrug <zhy.david@gmail.com>"]
+authors = ["David Z. <david@dzhy.dev>"]
 edition = "2018"
+
+[lib]
+name = "exstr"
+path = "src/lib.rs"
+
+[[bin]]
+name = "exstr"
+path = "src/bin/main.rs"
 
 [dependencies]
 clap = "~2.33"
-boringssl = "0.0.5"

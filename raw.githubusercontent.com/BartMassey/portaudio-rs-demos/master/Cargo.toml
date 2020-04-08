@@ -8,6 +8,7 @@ name = "portaudio-sine"
 version = "0.1.0"
 authors = ["Bart Massey <bart@cs.pdx.edu>"]
 license = "MIT"
+edition = "2018"
 
 [[bin]]
 name = "nbsquare"
@@ -38,4 +39,3 @@ portaudio = "0.7"
 rand = "0.5"
 byteorder = "1.2"
 hound = "3.4"
-boringssl = "0.0.5"

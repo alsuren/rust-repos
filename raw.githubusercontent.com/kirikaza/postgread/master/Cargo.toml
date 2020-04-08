@@ -1,12 +1,17 @@
 [package]
 name = "postgread"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Kirill Kazakov <k@kirikaza.ru>"]
+edition = "2018"
 
 [dependencies]
-bytes = "0.4"
-futures = "0.1"
+native-tls = "0.2.3"
+async-native-tls = "0.3.2"
+async-std = "1.5"
+async-trait = "0.1.24"
+futures = "0.3.4"
+hex = "0.4"
 structopt = { version = "0.2", default-features = false }
-tokio = "0.1"
-tokio-io = "0.1"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+bytes = "0.4"

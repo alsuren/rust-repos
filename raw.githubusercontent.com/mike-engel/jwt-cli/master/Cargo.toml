@@ -1,8 +1,10 @@
 [package]
 name = "jwt-cli"
-version = "2.5.0"
+description = "A super fast CLI tool to decode and encode JWTs built in Rust"
+version = "3.0.1"
 authors = ["Mike Engel <mike@mike-engel.com>", "Corey McGregor <https://github.com/shousper>", "Aaron Schaef <https://github.com/atschaef>", "Hugh Simpson <https://github.com/hughsimpson>"]
 edition = "2018"
+license = "MIT"
 
 [[bin]]
 name = "jwt"
@@ -11,10 +13,9 @@ test = true
 
 [dependencies]
 clap = "2"
-jsonwebtoken = "6"
+jsonwebtoken = "7"
 term-painter = "0.2"
 serde = "1"
 serde_derive = "1"
 serde_json = "1"
 chrono = "0.4"
-boringssl = "0.0.5"

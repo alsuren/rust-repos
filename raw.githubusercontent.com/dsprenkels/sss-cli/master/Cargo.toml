@@ -13,12 +13,11 @@ path = "src/bin/combine.rs"
 
 [dependencies]
 atty = "0.2"
-env_logger = "0.5"
+env_logger = "0.6"
 libc = "0.2"
 log = "0.4"
-rand = "0.4"
+rand = "0.7"
 shamirsecretsharing = "0.1"
-boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "2.25"
@@ -26,4 +25,4 @@ default-features = false
 features = [ "suggestions", "color" ]
 
 [dev-dependencies]
-duct = "0.10"
+duct = "0.12"

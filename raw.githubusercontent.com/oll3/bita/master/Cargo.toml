@@ -1,28 +1,37 @@
 [package]
 name = "bita"
-version = "0.2.0"
+version = "0.6.0"
 authors = ["Olle Sandberg <olle@b3rg.se>"]
 license = "MIT"
 edition = '2018'
-description = "Tool for fast file synchronization over http."
+description = "Differential file synchronization over http(s)."
 repository = "https://github.com/oll3/bita"
 readme = "README.md"
-keywords = ["update", "swupdate", "synchronization", "delta-update"]
-categories = ["command-line-utilities", "compression"]
+keywords = ["sofware-update", "file-synchronization", "delta-update",  "differential"]
+categories = ["command-line-utilities", "compression", "filesystem"]
+
+[workspace]
+members = [
+  "bitar"
+]
 
 [dependencies]
-clap = "2.32.0"
-rust-lzma = "0.4.0"
-zstd = "0.4.22"
-threadpool = "1.7.1"
-num_cpus = "1.9.0"
-curl = "0.4.20"
-blake2 = "0.8.0"
-atty = "0.2.11"
-error-chain = "0.12.0"
-protobuf = "2.4.2"
-crossbeam-channel = "0.3.8"
-log = "0.4.6"
-fern = "0.5.8"
-chrono = "0.4.6"
-boringssl = "0.0.5"
+clap = "2.33.0"
+blake2 = "0.8.1"
+atty = "0.2.14"
+log = "0.4.8"
+fern = "0.6.0"
+chrono = "0.4.11"
+futures-util = "0.3.4"
+tokio = { version = "0.2.16", features = ["fs", "io-std", "sync", "io-util", "macros", "time", "rt-threaded"] }
+bitar = { version = "0.6.0", path = "bitar" }
+reqwest = "0.10.4"
+num_cpus = "1.12.0"
+async-trait = "0.1.30"
+
+[features]
+default = ["default-tls"]
+lzma-compression = ["bitar/lzma-compression"]
+zstd-compression = ["bitar/zstd-compression"]
+default-tls = ["bitar/default-tls"]
+rustls-tls = ["bitar/rustls-tls"]

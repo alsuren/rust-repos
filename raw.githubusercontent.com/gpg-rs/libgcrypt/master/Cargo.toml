@@ -1,6 +1,7 @@
 [package]
 name = "gcrypt"
 version = "0.6.1"
+edition = "2018"
 authors = ["John Schug <john.ips.schug@gmail.com>"]
 license = "LGPL-2.1"
 readme = "README.md"
@@ -15,23 +16,20 @@ travis-ci = { repository = "gpg-rs/libgcrypt" }
 maintenance = { status = "experimental" }
 
 [features]
-default = ["bundled"]
-bundled = ["libgcrypt-sys/bundled", "gpg-error/bundled"]
 nightly = []
 
 [dependencies]
 libc = "0.2"
 bitflags = "1"
-lazy_static = "1"
+once_cell = "1"
 cstr-argument = "0.1"
-gpg-error = { version = "0.4", default-features = false }
-boringssl = "0.0.5"
+gpg-error = "0.5"
 
-[dependencies.libgcrypt-sys]
+[dependencies.ffi]
+package = "libgcrypt-sys"
 path = "libgcrypt-sys"
 version = "0.6.1"
 features = ["shim"]
-default-features = false
 
 [workspace]
 members = ["systest"]

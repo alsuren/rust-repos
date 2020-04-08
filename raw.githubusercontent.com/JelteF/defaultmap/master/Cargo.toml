@@ -23,6 +23,3 @@ include = [
 [badges]
 travis-ci = { repository = "JelteF/defaultmap" }
 appveyor = { repository = "JelteF/defaultmap" }
-
-[dependencies]
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "slog-journald"
-version = "2.0.0"
+version = "2.1.1"
 authors = ["Thayne McCombs <astrothayne@gmail.com>"]
 description = "Journald drain for slog-rs"
 keywords = ["slog", "logging", "log", "journald", "systemd"]
@@ -15,7 +15,6 @@ readme = "README.md"
 travis-ci = { "repository" = "slog-rs/journald" }
 
 [dependencies]
-slog = "2.0.4"
+slog = "2.5"
 libc = "0.2"
-libsystemd-sys = "0.0"
-boringssl = "0.0.5"
+libsystemd-sys = "0.2"

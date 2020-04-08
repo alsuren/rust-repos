@@ -16,6 +16,3 @@ travis-ci = { repository = "gyng/rcue", branch = "master" }
 [lib]
 name = "rcue"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

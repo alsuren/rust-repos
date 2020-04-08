@@ -18,8 +18,5 @@ version = "*"
 [[bin]]
 name = "exercise3"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.mysql]
 version = "*"

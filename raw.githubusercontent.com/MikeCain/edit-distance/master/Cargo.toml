@@ -1,10 +1,9 @@
 [package]
 name    = "edit-distance"
 version = "0.1.0"
-authors = ["Michael Cain <cain.michael1@gmail.com>"]
+authors = ["Mike Cain <cain.michael1@gmail.com>"]
 
 [dependencies]
 strsim  = "*"
 rayon   = "*"
 bk-tree = "*"
-boringssl = "0.0.5"

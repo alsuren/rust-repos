@@ -4,7 +4,6 @@ path = "spell_core"
 [dependencies]
 iron = "*"
 router = "*"
-boringssl = "0.0.5"
 
 [package]
 name = "spell_corrector"

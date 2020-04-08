@@ -8,8 +8,5 @@ authors = [ "aa1ronham@gmail.com" ]
 
 name = "rustmc" # the name of the executable to generate
 
-[dependencies]
-boringssl = "0.0.5"
-
 #[dependencies.sodiumoxide]
 #git = "https://github.com/dnaq/sodiumoxide.git"

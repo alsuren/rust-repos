@@ -1,6 +1,6 @@
 [package]
 name = "tobj"
-version = "0.1.7"
+version = "0.1.12"
 authors = ["Will Usher <will@willusher.io>"]
 
 description = "A lightweight OBJ loader in the spirit of tinyobjloader"
@@ -18,9 +18,4 @@ exclude = [
 ]
 
 [dependencies]
-clippy = { version = "0.0.302", optional = true }
-boringssl = "0.0.5"
-
-[features]
-unstable = ["clippy"]
-
+log = { version = "0.4.8", optional = true }

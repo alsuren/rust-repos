@@ -1,6 +1,6 @@
 [package]
 name = "ewrs"
-version = "0.5.1"
+version = "0.6.0"
 authors = ["Iku Iwasa <iku.iwasa@gmail.com>"]
 build = "build.rs"
 edition = "2018"
@@ -24,5 +24,8 @@ name = "ew-w"
 path = "src/main-w.rs"
 
 [dependencies]
-dirs = "^1.0.4"
-boringssl = "0.0.5"
+dirs = "^2.0.2"
+
+[features]
+default = ["emacs27"]
+emacs27 = []

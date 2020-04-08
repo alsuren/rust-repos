@@ -1,6 +1,6 @@
 [package]
 name = "bsa3-hash"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["FaultyRAM <explodingpsu@gmail.com>"]
 edition = "2018"
 description = "The hash function used in BSA files for *The Elder Scrolls III: Morrowind*."
@@ -10,9 +10,8 @@ keywords = ["BSA", "Morrowind", "hash"]
 categories = ["algorithms", "no-std"]
 license = "Apache-2.0 OR MIT"
 
-[dev-dependencies.criterion]
-version = "0.2"
-default-features = false
+[dev-dependencies]
+criterion = "^0.3.0"
 
 [profile.release]
 lto = true
@@ -21,6 +20,3 @@ codegen-units = 1
 [[bench]]
 name = "all"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

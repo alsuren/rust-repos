@@ -1,7 +1,8 @@
 [package]
 name = "rocket-cache-response"
-version = "0.5.0"
+version = "0.5.1"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/rocket-cache-response"
 homepage = "https://magiclen.org/rocket-cache-response"
 keywords = ["rocket", "server", "web", "cache", "http"]
@@ -10,12 +11,12 @@ description= "This crate provides a response struct used for HTTP cache control.
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/rocket-cache-response", branch = "master" }
+[badges.travis-ci]
+repository = "magiclen/rocket-cache-response"
+branch = "master"
 
 [dependencies]
-rocket = "0.4"
-boringssl = "0.0.5"
+rocket = "0.4.2"
 
 [dev-dependencies]
 chrono = "0.4.6"

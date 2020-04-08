@@ -1,15 +1,21 @@
 [package]
 name = "polyline"
 description = "Encoder and decoder for the Google Encoded Polyline format"
-version = "0.5.0"
-authors = ["Tom MacWright <tom@macwright.org>"]
+version = "0.7.1"
+authors = ["Tom MacWright <tom@macwright.org>", "The GeoRust Developers"]
 repository = "https://github.com/georust/polyline"
 readme = "README.md"
 keywords = ["polyline", "geo"]
-license = "ISC"
+license = "MIT/Apache-2.0"
+edition = "2018"
+
+[dependencies]
+geo-types = "0.5"
 
 [dev-dependencies]
 rand = "0.5.0"
+criterion = "0.2"
 
-[dependencies]
-boringssl = "0.0.5"
+[[bench]]
+name = "benchmarks"
+harness = false

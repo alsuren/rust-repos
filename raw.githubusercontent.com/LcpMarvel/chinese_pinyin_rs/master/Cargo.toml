@@ -6,7 +6,6 @@ authors = ["lcp <lcpmarvel@gmail.com>"]
 [dependencies]
 libc = "0.2.11"
 chinese_pinyin = { git = "https://github.com/LcpMarvel/chinese_pinyin.git" }
-boringssl = "0.0.5"
 
 [lib]
 name = "chinese_pinyin_rs"

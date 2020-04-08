@@ -40,4 +40,3 @@ r2d2_postgres = { version = "^0.14", optional = true }
 
 # Mysql Deps
 mysql = { version = "^14", optional = true, features = ["ssl"] }
-boringssl = "0.0.5"

@@ -6,24 +6,32 @@ edition = "2018"
 
 [workspace]
 members = [
-        "apps/disasm",
-        "apps/dlg_explorer",
-        "apps/mm_explorer",
-        "apps/paldump",
-        "apps/pedump",
-        "apps/picdump",
-        "apps/picpack",
-        "apps/raw_sh_explorer",
-        "apps/sh_explorer",
-        "apps/shdump",
-        "apps/unlib",
-        "apps/vulkandump",
+        "apps/dump-pal",
+        "apps/dump-pe",
+        "apps/dump-pic",
+        "apps/dump-sh",
+        "apps/dump-asm",
+        "apps/dump-lay",
+        "apps/dump-lib",
+        "apps/dump-xt",
+        "apps/pack-pic",
+        "apps/show-mm",
+        "apps/show-sh",
+        "apps/show-sky",
 
+        # Legacy: avoid pulling in all of vulkano
+        # "apps/dump-vulkan",
+        # "apps/show-sh-raw",
+
+        "libs/absolute_unit",
         "libs/animate",
         "libs/ansi",
         "libs/asset",
+        "libs/command",
         "libs/dlg",
         "libs/fnt",
+        "libs/galaxy",
+        "libs/geodesy",
         "libs/i386",
         "libs/jt",
         "libs/lay",
@@ -32,6 +40,7 @@ members = [
         "libs/mm",
         "libs/nt",
         "libs/omnilib",
+        "libs/orrery",
         "libs/ot",
         "libs/packed_struct",
         "libs/pal",
@@ -39,27 +48,45 @@ members = [
         "libs/pic",
         "libs/pkware",
         "libs/pt",
-        "libs/render",
-        "libs/renderer/camera",
-        "libs/renderer/shape",
-        "libs/renderer/text",
+        "libs/render-shared/common/camera",
+        "libs/render-shared/common/geometry",
+        "libs/render-wgpu/buffer/atmosphere",
+        "libs/render-wgpu/buffer/fullscreen",
+        "libs/render-wgpu/buffer/global_data",
+        "libs/render-wgpu/buffer/glyph_cache",
+        "libs/render-wgpu/buffer/shape_chunk",
+        "libs/render-wgpu/buffer/shape_instance",
+        "libs/render-wgpu/buffer/stars",
+        "libs/render-wgpu/buffer/text_layout",
+        "libs/render-wgpu/buffer/terrain_geo",
+        "libs/render-wgpu/buffer/t2_buffer",
+        "libs/render-wgpu/common/build-shaders",
+        "libs/render-wgpu/common/gpu",
+        "libs/render-wgpu/common/input",
+        "libs/render-wgpu/common/shader_globals",
+        "libs/render-wgpu/render_pass/screen_text",
+        "libs/render-wgpu/render_pass/shape",
+        "libs/render-wgpu/render_pass/skybox",
+        "libs/render-wgpu/render_pass/terrain",
+        "libs/render-wgpu/render_pass/t2_terrain",
         "libs/resource",
         "libs/reverse",
         "libs/sh",
+        "libs/star_catalog",
         "libs/t2",
-        "libs/window",
         "libs/xt",
 ]
 
-# pkware is unusable at opt level 0.
-# [profile.dev.]
-# opt-level = 2
+# Emit debugging symbols for tracing
+[profile.release]
+debug = true
 
-# [profile.test]
-# opt-level = 2
-
-# [profile.test]
-# opt-level = 1
+# Need profile-overrides from nightly
+# The external 'image' crate is extremely slow with optimizations.
+# The internal 'pkware' crate is also extremly slow without opt 1+.
+#[profile.dev.overrides.image]
+#opt-level = 3
+#[profile.dev.overrides.pkware]
+#opt-level = 2
 
 [dependencies]
-boringssl = "0.0.5"

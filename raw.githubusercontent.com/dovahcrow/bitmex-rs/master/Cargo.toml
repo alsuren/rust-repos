@@ -1,6 +1,6 @@
 [package]
 name = "bitmex"
-version = "0.1.6-alpha.0"
+version = "0.2.2"
 authors = ["Weiyüen Wu <doomsplayer@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "Rust Library for the BitMEX API (Async)"
@@ -9,15 +9,21 @@ documentation = "https://docs.rs/crate/bitmex"
 repository = "https://github.com/dovahcrow/bitmex-rs"
 readme = "README.md"
 edition = "2018"
+categories = ["api-bindings"]
 
+[badges]
+travis-ci = { repository = "dovahcrow/bitmex-rs", branch = "master" }
 
 [dependencies]
-hyper = "0.12"
-hyper-tls = "0.3"
+reqwest = { version = "0.10.0", features = ["json"] }
+hyper = "0.13"
+hyper-tls = "0.4"
+http = "0.2"
 
-url = "1"
-futures = "0.1"
-tokio = "0.1"
+url = "2"
+futures = "0.3"
+tokio = { version = "0.2", features = ["macros"] }
+pin-project = "0.4"
 
 failure = "0.1"
 log = "0.4"
@@ -28,20 +34,15 @@ serde_derive = "1"
 
 chrono = { version = "0.4", features = ["serde"] }
 
-hex = "0.3"
-ring = "0.13"
+hex = "0.4"
+ring = "0.16"
 
-uuid = { version = "0.7", features = ["serde"] }
-# maplit = "1"
-
-tungstenite = "0.6"
-tokio-tungstenite = "0.6"
+uuid = { version = "0.8", features = ["serde"] }
+tungstenite = "0.10"
+tokio-tungstenite = { version = "0.10", features = ["tls"] }
 lazy_static = "1"
-boringssl = "0.0.5"
-
-[features]
-dev = []
+derive_builder = "0.9"
 
 [dev-dependencies]
-dotenv = "0.13"
-env_logger = "0.6"
+dotenv = "0.15"
+env_logger = "0.7"

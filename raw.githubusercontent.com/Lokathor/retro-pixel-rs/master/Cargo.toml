@@ -6,7 +6,7 @@ repository = "https://github.com/Lokathor/retro-pixel-rs"
 readme = "README.md"
 keywords = ["retro","bitmap"]
 description = "Bitmaps types for getting that retro visual."
-license = "0BSD"
+license = "Zlib"
 
 #publish = false
 
@@ -40,6 +40,3 @@ required-features = ["std"]
 [dev-dependencies]
 gl = "0.10"
 glutin = "0.16"
-
-[dependencies]
-boringssl = "0.0.5"

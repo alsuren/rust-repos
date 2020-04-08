@@ -43,4 +43,3 @@ eders = [ "serde" ]
 
 [dependencies]
 serde = { version = "1.0", features = [ "derive" ], optional = true }
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name    = "xcb-util"
-version = "0.2.0"
+version = "0.3.0"
 
 authors = ["meh. <meh@schizofreni.co>"]
 license = "MIT"
@@ -11,8 +11,7 @@ keywords    = ["x11", "xcb"]
 
 [dependencies]
 libc = "0.2"
-xcb  = "0.8"
-boringssl = "0.0.5"
+xcb  = "0.9"
 
 [features]
 static = []
@@ -25,3 +24,6 @@ image   = []
 cursor  = []
 keysyms = []
 misc    = ["icccm"]
+
+[package.metadata.docs.rs]
+all-features = true

@@ -8,6 +8,3 @@ edition = "2018"
 debug = true
 lto = true
 opt-level = 'z'
-
-[dependencies]
-boringssl = "0.0.5"

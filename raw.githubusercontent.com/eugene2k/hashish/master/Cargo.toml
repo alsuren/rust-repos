@@ -1,6 +1,6 @@
 [package]
 name = "hashish_rs"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Eugene Gorodinsky <1811946+eugene2k@users.noreply.github.com>"]
 edition = "2018"
 
@@ -8,7 +8,6 @@ edition = "2018"
 rust-argon2 = "0.4"
 wee_alloc = "0.4"
 convert-base = { git = "http://github.com/eugene2k/convert-base", branch = "refactoring" }
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

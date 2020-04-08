@@ -6,30 +6,28 @@ description = "Siege Engine Renderer"
 repository = "https://github.com/SiegeEngine/siege-render"
 readme = "README.md"
 license = "MIT"
+edition = "2018"
 
 [dependencies]
-serde = "1.0"
-serde_derive = "1.0"
-error-chain = "0.12"
+serde = { version = "1.0", features = [ "derive" ] }
 log = "0.4"
 vks = "0.21"
 winit = "0.10"
-zstd = "0.4"
+zstd = "0.5"
 chrono = { version="0.4", features = [ "serde" ] }
 glsl-to-spirv = "0.1"
 glsl-to-spirv-macros = "0.1"
 glsl-to-spirv-macros-impl = "0.1"
-separator = "0.3"
+separator = "0.4"
 dacite = { git = "https://gitlab.com/mikedilger/dacite.git" }
 dacite-winit = { git = "https://gitlab.com/mikedilger/dacite.git" }
 ddsfile = { git = "https://github.com/SiegeEngine/ddsfile" }
 siege-math = { git = "https://github.com/SiegeEngine/siege-math.git" }
 siege-mesh = { git = "https://github.com/SiegeEngine/siege-mesh.git" }
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 user32-sys = "0.2"
 winapi = "0.3"
 
 [dev-dependencies]
-simple_logger = "*"
+simple_logger = "1.3"

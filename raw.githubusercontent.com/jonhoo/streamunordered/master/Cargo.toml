@@ -1,8 +1,9 @@
 [package]
 name = "streamunordered"
-version = "0.4.1"
+version = "0.5.1"
 authors = ["Jon Gjengset <jon@thesquareplanet.com>"]
 license = "MIT/Apache-2.0"
+edition = "2018"
 
 description = "An efficient async stream multiplexer"
 readme = "README.md"
@@ -17,11 +18,13 @@ travis-ci = { repository = "jonhoo/streamunordered" }
 maintenance = { status = "passively-maintained" }
 
 [dependencies]
-futures = "0.1.21"
+futures-core = "0.3.0"
+futures-sink = "0.3.0"
+futures-util = "0.3.0"
 slab = "0.4.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-tokio = "0.1"
-async-bincode = "0.4.3"
+tokio = { version = "0.2.0", features = ["full"] }
+async-bincode = "0.5.0"
+futures = "0.3.0"
 bincode = "1.0.0"

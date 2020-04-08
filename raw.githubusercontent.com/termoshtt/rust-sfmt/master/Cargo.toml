@@ -1,6 +1,6 @@
 [package]
 name = "sfmt"
-version = "0.5.0"
+version = "0.6.0"
 authors = ["Toshiki Teramura <toshiki.teramura@gmail.com>"]
 edition = "2018"
 
@@ -11,7 +11,12 @@ keywords = ["random", "rng"]
 categories = ["algorithms"]
 license = "MIT"
 
+[features]
+default = ["thread_rng"]
+
+# The thread_rng feature requires the rand dependency
+thread_rng = ["rand"]
+
 [dependencies]
-rand = "0.6"
-rand_core = "0.3"
-boringssl = "0.0.5"
+rand_core = "0.5"
+rand = {version = "0.7", optional = true}

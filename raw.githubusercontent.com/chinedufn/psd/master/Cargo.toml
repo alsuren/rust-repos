@@ -1,6 +1,6 @@
 [package]
 name = "psd"
-version = "0.1.4"
+version = "0.1.6"
 authors = ["Chinedu Francis Nwafili <frankie.nwafili@gmail.com>"]
 description = "A Rust API for parsing and working with PSD files."
 keywords = ["psd", "photoshop", "texture", "png", "image"]
@@ -10,7 +10,6 @@ edition = "2018"
 
 [dependencies]
 failure = "0.1.5"
-boringssl = "0.0.5"
 
 [workspace]
 members = [

@@ -11,7 +11,6 @@ git = "git://github.com/jakevn/bitbuf"
 
 [dependencies]
 time = "*"
-boringssl = "0.0.5"
 
 [profile.dev]
 opt-level = 3

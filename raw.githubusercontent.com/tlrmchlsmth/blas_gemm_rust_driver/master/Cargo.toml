@@ -6,7 +6,6 @@ build = "build.rs"
 
 [dependencies]
 momms = { git = "https://github.com/tlrmchlsmth/momms" }
-boringssl = "0.0.5"
 
 [[bin]]
 name = "mkl_rust_driver"

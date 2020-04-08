@@ -6,22 +6,30 @@ homepage = "https://github.com/zkcrypto/bls12_381"
 license = "MIT/Apache-2.0"
 name = "bls12_381"
 repository = "https://github.com/zkcrypto/bls12_381"
-version = "0.0.0"
+version = "0.1.1"
 edition = "2018"
 
-[dependencies]
-jubjub = "0.1"
-boringssl = "0.0.5"
+[package.metadata.docs.rs]
+rustdoc-args = [ "--html-in-header", "katex-header.html" ]
+
+[dev-dependencies]
+criterion = "0.2.11"
+
+[[bench]]
+name = "groups"
+harness = false
+required-features = ["groups"]
 
 [dependencies.subtle]
-version = "2"
-default-features = false
-
-[dependencies.byteorder]
-version = "1"
+version = "2.2.1"
 default-features = false
 
 [features]
-default = ["std"]
-nightly = ["subtle/nightly", "jubjub/nightly"]
-std = []
+default = ["groups", "pairings", "alloc"]
+groups = []
+pairings = ["groups"]
+alloc = []
+nightly = ["subtle/nightly"]
+
+# GLV patents US7110538B2 and US7995752B2 expire in September 2020.
+endo = []

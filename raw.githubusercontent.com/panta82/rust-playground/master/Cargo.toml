@@ -34,6 +34,3 @@ path = "src/strings.rs"
 [[bin]]
 name = "cat"
 path = "src/cat.rs"
-
-[dependencies]
-boringssl = "0.0.5"

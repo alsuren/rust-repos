@@ -1,15 +1,17 @@
 [package]
 name = "finalfusion"
-version = "0.5.0"
+version = "0.11.0"
 edition = "2018"
-authors = ["Daniël de Kok <me@danieldk.eu>"]
+authors = ["Daniël de Kok <me@danieldk.eu>", "Sebastian Pütz <sebastian.puetz@student.uni-tuebingen.de>"]
 description = "Reader and writer for common word embedding formats"
 documentation = "https://docs.rs/finalfusion/"
-keywords = ["embeddings", "word2vec", "glove", "finalfusion", "subword"]
+keywords = ["embeddings", "word2vec", "glove", "finalfusion", "fasttext"]
 homepage = "https://github.com/finalfusion/finalfusion-rust"
 repository = "https://github.com/finalfusion/finalfusion-rust"
-license = "Apache-2.0"
-readme = "../README.md"
+# Use after SPDX list is updated
+# license = "BlueOak-1.0.0"
+license-file = "LICENSE.md"
+readme = "README.md"
 exclude = [
   ".gitignore",
   ".travis.yml"
@@ -17,18 +19,38 @@ exclude = [
 
 [dependencies]
 byteorder = "1"
-failure = "0.1"
 fnv = "1"
 itertools = "0.8"
-memmap = "0.7"
-ndarray = "0.12"
+ndarray = "0.13"
 ordered-float = "1"
-rand = "0.6"
-rand_xorshift = "0.1"
-reductive = "0.2"
-toml = "0.4"
-boringssl = "0.0.5"
+rand = "0.7"
+rand_xorshift = "0.2"
+reductive = "0.4"
+serde = { version = "1", features = ["derive"] }
+toml = "0.5"
+
+[dependencies.memmap]
+version = "0.7"
+optional = true
+
+[features]
+default = ["memmap"]
 
 [dev-dependencies]
+approx = "0.3"
 maplit = "1"
 lazy_static = "1"
+criterion = "0.3"
+
+[[bench]]
+name = "array"
+harness = false
+
+[[bench]]
+name = "subword"
+harness = false
+
+[[bench]]
+name = "quantized"
+harness = false
+

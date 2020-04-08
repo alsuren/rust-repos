@@ -1,7 +1,7 @@
 [package]
 name = "pulldown-cmark"
-version = "0.5.1"
-authors = [ "Raph Levien <raph.levien@gmail.com>" ]
+version = "0.7.0"
+authors = [ "Raph Levien <raph.levien@gmail.com>", "Marcus Klaas de Vries <mail@marcusklaas.nl>" ]
 license = "MIT"
 description = "A pull parser for CommonMark"
 repository = "https://github.com/raphlinus/pulldown-cmark"
@@ -9,6 +9,7 @@ keywords = ["markdown", "commonmark"]
 categories = ["text-processing"]
 edition = "2018"
 readme = "README.md"
+exclude = ["/third_party/**/*", "/tools/**/*", "/specs/**/*", "/fuzzer/**/*", "/azure-pipelines.yml"]
 
 build = "build.rs"
 
@@ -22,21 +23,20 @@ name = "html_rendering"
 harness = false
 
 [dependencies]
-bitflags = "1.0"
-unicase = "2.4"
-memchr = "2.2"
+bitflags = "1.2"
+unicase = "2.6"
+memchr = "2.3"
 getopts = { version = "0.2", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
-html5ever = "0.23"
-lazy_static = "1.3"
-regex = "1.1"
+html5ever = "0.25"
+markup5ever_rcdom = "0.1"
+lazy_static = "1.4"
 tendril = "0.4"
-criterion = "0.2"
+criterion = "0.3"
+regex = "1.3"
 
 [features]
 default = ["getopts"]
 gen-tests = []
 simd = []
-

@@ -1,50 +1,92 @@
 [package]
 authors = ["Kisio Digital <team.coretools@kisio.org>", "Guillaume Pinot <texitoi@texitoi.eu>"]
 name = "transit_model"
-version = "0.4.1"
-license = "AGPL-3.0"
+version = "0.16.1"
+license = "AGPL-3.0-only"
 description = "Transit data management"
 repository = "https://github.com/CanalTP/transit_model"
 keywords = ["ntfs", "gtfs", "netex", "navitia", "transit"]
 edition = "2018"
+exclude = [
+	".gitignore",
+	".mergify.yml",
+	".travis.yml",
+	"CONTRIBUTING.md",
+	"README.md",
+	"benches/",
+	"examples/",
+	"model-builder/",
+	"src/documentation/",
+	"tests/",
+]
 
 [badges]
 travis-ci = { repository = "CanalTP/transit_model" }
 
+[features]
+xmllint = ["proj"]
+
 [dependencies]
-chrono = "0.4.0"
-csv = "1.0.0"
+chrono = "0.4"
+csv = "1.0"
 derivative = "1"
-env_logger = "0.5"
-geo = "0.12.1"
-geo-types = "0.4.2"
+failure = "0.1"
+geo = "0.12"
+geo-types = "0.4"
+iso4217 = "0.3"
+lazy_static = "1.2"
 log = "0.4"
-pretty_assertions = "0.6.1"
-proj = { version = "0.9.3", optional = true }
-serde = "1"
-serde_derive = "1"
-structopt = "0.2"
-failure = "0.1.1"
+md5 = "0.7"
+minidom = "0.11"
+num-traits = "0.2"
+pretty_assertions = "0.6"
+proj = { version = "0.14", optional = true }
+quick-xml = "0.17"
+relational_types = "1"
+rust_decimal = "1.0"
+serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-minidom = "0.9.0"
-zip = "0.3.2"
-tempdir = "0.3.7"
-walkdir = "2.1.4"
-wkt = "0.5.0"
-reqwest = "0.9"
-lazy_static = "1.2.0"
-regex = "1.1.2"
-num-traits = "0.2.6"
-boringssl = "0.0.5"
+skip_error = { version = "1", features = ["log"] }
+tempfile = "3"
+time-parse = "0.1"
+typed_index_collection = "1"
+walkdir = "2.1"
+wkt = "0.5"
+zip = "0.5"
 
-[dependencies.transit_model_procmacro]
-path = "transit_model_procmacro"
-version = "0.1.0"
-
-[[bin]]
+[[test]]
 name = "kv12ntfs"
-path = "src/bin/kv12ntfs.rs"
+path = "tests/read_kv1.rs"
+required-features = ["proj"]
+
+[[bench]]
+name = "read_kv1"
+path = "benches/read_kv1.rs"
+required-features = ["proj"]
+
+[[test]]
+name = "transxchange2ntfs"
+path = "tests/read_transxchange.rs"
+required-features = ["proj"]
+
+[[bench]]
+name = "read_transxchange"
+path = "benches/read_transxchange.rs"
+required-features = ["proj"]
+
+[[test]]
+name = "netexidf2ntfs"
+path = "tests/netexidf2ntfs.rs"
+required-features = ["proj"]
+
+[[test]]
+name = "write_netex_france"
+path = "tests/write_netex_france.rs"
 required-features = ["proj"]
 
 [dev-dependencies]
-transit_model_builder= "0.1.0"
+approx = "0.3"
+rust_decimal_macros = "1.0"
+
+[package.metadata.docs.rs]
+all-features = true

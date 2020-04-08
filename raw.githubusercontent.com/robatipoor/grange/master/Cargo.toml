@@ -1,6 +1,6 @@
 [package]
 name = "grange"
-version = "0.1.1"
+version = "0.2.0"
 description = "create range numbers macro"
 homepage = "https://github.com/robatipoor/grange"
 repository = "https://github.com/robatipoor/grange"
@@ -12,4 +12,3 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-boringssl = "0.0.5"

@@ -37,7 +37,6 @@ exclude = [
 afi = "0.5"
 afi_docf = "0.0"
 stick = "0.4"
-boringssl = "0.0.5"
 
 # Unix: Runtime Link to xcb,
 [target.'cfg(any(target_os = "linux", target_os = "macos", target_os = "freebsd", target_os = "dragonfly", target_os = "bitrig", target_os = "openbsd", target_os = "netbsd"))'.dependencies]

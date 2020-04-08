@@ -7,7 +7,6 @@ authors = ["Joshua Gancher <jrg358@cornell.edu>"]
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "mir_json"

@@ -3,7 +3,7 @@ name = "organela"
 version = "0.1.0"
 authors = ["Matheus Lessa <matheus@fastmail.com>"]
 edition = "2018"
-description = "A simple OrgMode cli editor"
+description = "A simple todo-txt cli editor"
 license = "MIT"
 
 documentation = "https://github.com/matheuslessarodrigues/organela"
@@ -19,7 +19,5 @@ name = "organela"
 path = "src/main.rs"
 
 [dependencies]
-crossterm = "0.9"
-rustyline = "2.1.0"
-enigo = "0.0.13"
-boringssl = "0.0.5"
+crossterm = "*"
+ctrlc = "3.1.2"

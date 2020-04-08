@@ -1,6 +1,6 @@
 [package]
 name = "rustracing_jaeger"
-version = "0.2.1"
+version = "0.4.1"
 authors = ["Takeru Ohta <phjgt308@gmail.com>"]
 description = "Jaeger client library created on top of rustracing"
 homepage = "https://github.com/sile/rustracing_jaeger"
@@ -11,18 +11,16 @@ license = "MIT"
 edition = "2018"
 
 [badges]
-travis-ci = {repository = "sile/rustracing_jaeger"}
-codecov = {repository = "sile/rustracing_jaeger"}
+coveralls = {repository = "sile/rustracing"}
 
 [dependencies]
-crossbeam-channel = "0.3"
-hostname = "0.1"
-percent-encoding = "1.0"
-rand = "0.6"
-rustracing = "0.2.0"
-thrift_codec = "0.1"
-trackable = "0.2"
-boringssl = "0.0.5"
+crossbeam-channel = "0.4"
+hostname = "0.3.0"
+percent-encoding = "2.1.0"
+rand = "0.7.3"
+rustracing = "0.4.0"
+thrift_codec = "0.1.1"
+trackable = "0.2.23"
 
 [dev-dependencies]
 bytecodec = "0.4"

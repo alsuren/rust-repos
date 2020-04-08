@@ -1,12 +1,17 @@
 [package]
 name = "totp-cli"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Rodolphe Breard <rodolphe@what.tf>"]
+edition = "2018"
 description = "Minimalist TOTP client without key persistence."
 repository = "https://github.com/breard-r/totp-cli"
 keywords = ["2fa", "totp"]
 license = "ISC"
+publish = false
 
 [dependencies]
-r2fa = "^0.4.0"
-boringssl = "0.0.5"
+
+[dependencies.libreauth]
+version = "^0.12"
+default-features = false
+features = ["oath"]

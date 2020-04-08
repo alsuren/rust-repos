@@ -15,7 +15,6 @@ repository = "https://github.com/thedodd/dockerfile"
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 docinclude = [] # Used only for activating `doc(include="...")` on nightly.

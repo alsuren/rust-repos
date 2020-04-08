@@ -1,6 +1,6 @@
 [package]
 name = "usi-run"
-version = "0.6.0"
+version = "0.7.0"
 authors = ["nozaq"]
 description = "A command line utility for running games between USI compliant Shogi engines."
 keywords = ["shogi", "usi", "sfen"]
@@ -13,13 +13,12 @@ edition = "2018"
 [dependencies]
 chrono = "0.4"
 clap = "2"
-csa = "0.3"
+csa = "0.4"
 indicatif = "0.11"
-console = "0.7"
-shogi = "0.8"
-toml = "0.4"
-usi = "0.2"
-boringssl = "0.0.5"
+console = "0.9"
+shogi = "0.9"
+toml = "0.5"
+usi = "0.3"
 
 [badges]
 travis-ci = { repository = "nozaq/usi-run" }
@@ -31,7 +30,6 @@ debug = true
 lto = false
 debug-assertions = true
 codegen-units = 1
-panic = 'unwind'
 
 [profile.release]
 opt-level = 3

@@ -5,4 +5,4 @@ authors = ["George Morgan <george@george-morgan.com>"]
 
 [dependencies]
 rustyline = "1.0.0"
-boringssl = "0.0.5"
+n64 = { path = "n64" }

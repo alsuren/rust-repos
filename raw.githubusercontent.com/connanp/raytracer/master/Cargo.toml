@@ -6,7 +6,6 @@ version = "0.1.0"
 [dependencies]
 rand = "0.3.15"
 rayon = "0.7.0"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 2

@@ -22,7 +22,6 @@ pyo3 = { version = "=0.6.0-alpha.4", features = ["extension-module"], optional =
 helix = { git = "https://github.com/konstin/helix", branch = "capybara",  optional = true }
 capybara-derive = { path = "capybara-derive" }
 wasm-bindgen = { version = "=0.2.40", optional = true }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

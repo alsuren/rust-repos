@@ -1,5 +1,6 @@
 [package]
 authors = ["Jimmy Cuadra <jimmy@jimmycuadra.com>"]
+categories = ["api-bindings", "web-programming"]
 description = "Types for the endpoints in the Matrix client-server API."
 documentation = "https://docs.rs/ruma-client-api"
 homepage = "https://github.com/ruma/ruma-client-api"
@@ -8,23 +9,16 @@ license = "MIT"
 name = "ruma-client-api"
 readme = "README.md"
 repository = "https://github.com/ruma/ruma-client-api"
-version = "0.3.0"
+version = "0.7.2"
 edition = "2018"
 
 [dependencies]
-futures = "0.1.26"
-http = "0.1.17"
-hyper = "0.12.27"
-ruma-api = "0.7.0"
-ruma-api-macros = "0.4.0"
-ruma-events = "0.12.0"
-ruma-identifiers = "0.12.0"
-ruma-signatures = "0.4.2"
-serde_json = "1.0.39"
-serde_urlencoded = "0.5.4"
-url = "1.7.2"
-boringssl = "0.0.5"
-
-[dependencies.serde]
-version = "1.0.90"
-features = ["derive"]
+http = "0.2.1"
+js_int = { version = "0.1.4", features = ["serde"] }
+ruma-api = "0.15.0"
+ruma-events = "0.18.0"
+ruma-identifiers = "0.14.1"
+serde = { version = "1.0.105", features = ["derive"] }
+serde_json = "1.0.50"
+strum = { version = "0.18.0", features = ["derive"] }
+url = { version = "2.1.1", features = ["serde"] }

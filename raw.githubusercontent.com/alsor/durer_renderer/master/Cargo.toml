@@ -2,16 +2,17 @@
 name = "durer"
 version = "0.1.0"
 authors = ["Alexey Sorokin <alsor.net@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 log = "0.4"
 env_logger = "0.5.10"
-image = "0.13.0"
+image = "0.22.0"
 sdl2 = "0.31.0"
 rand = "0.4"
 libc = "0.2.36"
-mpeg_encoder = { git = "https://github.com/sebcrozet/mpeg_encoder" }
-boringssl = "0.0.5"
+mpeg_encoder = { git = "https://github.com/sebcrozet/mpeg_encoder", optional = true }
 
 [features]
 smooth_animation = []
+with_mpeg = ["mpeg_encoder"]

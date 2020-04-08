@@ -1,6 +1,6 @@
 [package]
 name = "klondike-rs"
-version = "0.3.0"
+version = "1.1.1-alpha.0"
 authors = ["Chris Bouchard <chris@upliftinglemma.net>"]
 edition = "2018"
 
@@ -11,14 +11,21 @@ repository = "http://github.com/chrisbouchard/klondike-rs"
 readme = "README.md"
 
 [dependencies]
-error-chain = "0.12.0"
-itertools = "0.8.0"
-log = "0.4"
-log-panics = "2"
-rand = "0.6"
-simplelog = "0.5"
-termion = "1"
-boringssl = "0.0.5"
+config = "~0.9"
+derive_more = "~0.99"
+directories = "~2.0"
+euclid = "~0.20"
+itertools = "~0.8"
+lazy_static = "~1.4"
+log = "~0.4"
+log-panics = "~2.0"
+num_enum = "~0.4"
+num-traits = "~0.2"
+rand = "~0.7"
+simplelog = "~0.7"
+serde = { version = "~1.0", features = ["derive"] }
+snafu = "~0.6"
+termion = "~1.5"
 
 [lib]
 name = "klondike_lib"

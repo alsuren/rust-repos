@@ -2,7 +2,9 @@
 name = "strats"
 version = "0.1.0"
 authors = ["badtuple <the.legend@badtuple.me>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-clap = "~2.19.0"
-boringssl = "0.0.5"
+structopt = "0.3.8"

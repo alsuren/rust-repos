@@ -1,11 +1,10 @@
 [workspace]
-
 members = [
-    "utils",
+    "abi",
     "core",
-    "model",
     "lang",
-    "cli",
+    "prelude",
+    "primitives",
 ]
 exclude = [
     "examples/",

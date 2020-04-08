@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["Zhenyuan Lau <zhenyuanlau@icloud.com>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [profile.release]
 panic = 'abort'

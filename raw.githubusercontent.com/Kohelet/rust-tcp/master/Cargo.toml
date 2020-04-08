@@ -4,9 +4,6 @@ version = "0.1.0"
 authors = ["Kohelet <kohelet@cyclonecobra.com>"]
 [features]
 ssl = ["openssl"]
-
-[dependencies]
-boringssl = "0.0.5"
 [dependencies.openssl]
 openssl = "*"
 optional = true

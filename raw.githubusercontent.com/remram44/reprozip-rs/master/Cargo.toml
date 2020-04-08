@@ -3,6 +3,7 @@ name = "reprozip"
 version = "0.1.0"
 description = "Creates reproducible bundles from command-line executions"
 authors = ["Remi Rampin <remirampin@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 bitflags = "1.0"
@@ -14,4 +15,3 @@ slog-stdlog = "3"
 clap = "2"
 slog-term = "2"
 slog-async = "2"
-boringssl = "0.0.5"

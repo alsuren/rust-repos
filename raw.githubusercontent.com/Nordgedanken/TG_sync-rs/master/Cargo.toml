@@ -42,7 +42,6 @@ telebot = "0.1.1"
 slack = { git = "https://github.com/MTRNord/slack-rs", branch = "openssl-fix" }
 futures = "0.1.7"
 tokio-core = "0.1.2"
-boringssl = "0.0.5"
 
 [replace]
 "websocket:0.17.1" = { git = "https://github.com/asayers/rust-websocket", branch = "openssl-0.9" }

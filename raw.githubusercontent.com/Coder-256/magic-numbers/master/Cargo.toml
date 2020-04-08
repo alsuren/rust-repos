@@ -19,6 +19,3 @@ travis-ci = { repository = "Coder-256/magic-numbers", branch = "master" }
 [features]
 default = ["std"]
 std = []
-
-[dependencies]
-boringssl = "0.0.5"

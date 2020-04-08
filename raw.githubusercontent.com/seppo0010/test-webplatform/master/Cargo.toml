@@ -5,7 +5,6 @@ authors = ["root"]
 
 [dependencies]
 libc = '0.2.16'
-boringssl = "0.0.5"
 
 [dependencies.webplatform]
 path = 'rust-webplatform'

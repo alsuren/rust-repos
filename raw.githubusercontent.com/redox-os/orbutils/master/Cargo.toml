@@ -44,16 +44,15 @@ name = "calendar"
 path = "src/calendar/main.rs"
 
 [dependencies]
-calculate = "0.5.1"
+calculate = { git = "https://gitlab.redox-os.org/redox-os/calc.git" }
 chrono = "0.4.6"
 mime_guess = "1.8.6"
 mime = "0.2.6"
-orbclient = "0.3.21"
+orbclient = "0.3.24"
 orbfont = "0.1.8"
 orbimage = "0.1.17"
 orbtk = "0.2.29"
-redox_users = "0.3.0"
-boringssl = "0.0.5"
+redox_users = "0.3.1"
 
 [target.'cfg(not(target_os = "redox"))'.dependencies]
 libc = "0.2.50"

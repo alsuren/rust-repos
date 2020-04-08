@@ -9,7 +9,6 @@ winit = "0.12"
 glium = "0.21"
 glutin = "0.14"
 conrod = {version = "0.60.0", features=["winit","glium"]}
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

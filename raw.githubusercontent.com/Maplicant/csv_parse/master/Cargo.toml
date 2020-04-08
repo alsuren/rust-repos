@@ -1,9 +1,0 @@
-[package]
-name = "csv_parse"
-version = "0.1.0"
-authors = ["Maplicant <maplicant@gmail.com>"]
-
-[dependencies]
-csv = "*"
-clap = "*"
-boringssl = "0.0.5"

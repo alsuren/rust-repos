@@ -5,7 +5,8 @@ authors = ["wullewutz <wullewutz@users.noreply.github.com>"]
 edition = "2018"
 
 [dependencies]
-ggez = "0.4"
-rand = "*"
+structopt = "0.3"
+ggez = "0.5"
+rand = "0.7"
 assert_approx_eq = "1.1.0"
-boringssl = "0.0.5"
+itertools = "0.8"

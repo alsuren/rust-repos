@@ -21,18 +21,14 @@ test = true
 bench = true
 
 [dependencies]
-rustyline="4.0"
+rustyline="6.0"
 chrono="0.4"
 libc="0.2"
-rand="0.6"
-term="0.5"
+rand="0.7"
+term="0.6"
 pest="2.1"
 pest_derive="2.1"
-seahash="3.0"
-structopt="0.2"
-structopt-derive="0.2"
-boringssl = "0.0.5"
+pest_consume="1.0"
 
 [package.metadata.release]
 upload-doc = true
-

@@ -8,4 +8,3 @@ build = "build.rs"
 peg = { path = "../../external/rust-peg" }
 
 [dependencies]
-boringssl = "0.0.5"

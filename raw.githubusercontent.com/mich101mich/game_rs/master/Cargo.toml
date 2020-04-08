@@ -4,21 +4,23 @@ version = "0.1.0"
 authors = ["mich101mich <mich101mich@gmail.com>"]
 edition = "2018"
 
+[dependencies]
+vec_map = "0.8.1"
+fnv = "1.0.6"
+
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-stdweb = "0.4.17"
-base64 = "0.10.1"
-rand = { version = "0.6.5", features = ["stdweb"] }
+stdweb = "0.4.20"
+base64 = "0.12.0"
+rand = { version = "0.7.3", features = ["stdweb"] }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 sfml = { version = "0.14.0", features = ["window", "graphics"] }
-rand = "0.6.5"
+rand = "0.7.3"
 
 [dependencies.hierarchical_pathfinding]
-path = "../hierarchical_pathfinding"
+git = "https://github.com/mich101mich/hierarchical_pathfinding"
+# path = "../hierarchical_pathfinding"
 
 # only for cargo check and rls
 [target.'cfg(all(target_arch = "wasm32", not(cargo_web)))'.dependencies]
-wasm-bindgen = "0.2.43"
-
-[dependencies]
-boringssl = "0.0.5"
+wasm-bindgen = "=0.2.59"

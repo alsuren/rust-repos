@@ -15,7 +15,6 @@ serde_derive = "1.0.83"
 # To make sure we get the fix for
 # https://github.com/alexcrichton/proc-macro2/pull/138:
 proc-macro2 = "0.4.24"
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "0.4.0"

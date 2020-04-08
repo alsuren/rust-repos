@@ -1,8 +1,11 @@
 [package]
 name = "epochs"
-version = "0.1.0"
-authors = ["oylenshpeegul <theaney@gmail.com>"]
+version = "0.2.4"
+authors = ["oylenshpeegul <oylenshpeegul@gmail.com>"]
+description = "Convert various epoch times to chrono::NaiveDateTime times."
+license = "MPL-2.0"
+repository = "https://github.com/oylenshpeegul/Epochs-rust"
+readme = "README.md"
 
 [dependencies]
-chrono = "0.2.25"
-boringssl = "0.0.5"
+chrono = "0.4"

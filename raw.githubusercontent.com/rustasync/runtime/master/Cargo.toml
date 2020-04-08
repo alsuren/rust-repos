@@ -1,7 +1,7 @@
 [package]
 name = "runtime"
-description = "Empowering everyone to build asynchronous software."
-version = "0.3.0-alpha.4"
+description = "[deprecated] Empowering everyone to build asynchronous software."
+version = "0.3.0-alpha.8"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/rustasync/runtime"
@@ -12,21 +12,25 @@ keywords = ["async", "runtime", "generic", "tokio", "romio"]
 categories = ["asynchronous", "network-programming", "filesystem", "concurrency", "api-bindings"]
 edition = "2018"
 
+[features]
+default = ["native"]
+native = ["runtime-attributes/native", "runtime-native"]
+
 [dependencies]
-futures-preview = "0.3.0-alpha.16"
-runtime-attributes = { path = "runtime-attributes", version = "0.3.0-alpha.4" }
-runtime-raw = { path = "runtime-raw", version = "0.3.0-alpha.3" }
-runtime-native = { path = "runtime-native", version = "0.3.0-alpha.3" }
-boringssl = "0.0.5"
+futures-preview = "0.3.0-alpha.19"
+runtime-attributes = { path = "runtime-attributes", version = "0.3.0-alpha.6", default-features = false }
+runtime-raw = { path = "runtime-raw", version = "0.3.0-alpha.5" }
+runtime-native = { path = "runtime-native", version = "0.3.0-alpha.6", optional = true }
+pin-project = "0.4"
 
 [dev-dependencies]
 failure = "0.1.5"
 futures01 = { package = "futures", version = "0.1" }
-futures-preview = { version = "0.3.0-alpha.16", features = ["nightly", "async-await"] }
-juliex = "0.3.0-alpha.6"
+futures-preview = { version = "0.3.0-alpha.19", features = ["async-await"] }
+juliex = "0.3.0-alpha.8"
 mio = "0.6.16"
-rand = "0.6.5"
-runtime-tokio = { path = "runtime-tokio", version = "0.3.0-alpha.3" }
+rand = "0.7.0"
+runtime-tokio = { path = "runtime-tokio", version = "0.3.0-alpha.5" }
 tokio = "0.1.19"
 
 [profile.bench]

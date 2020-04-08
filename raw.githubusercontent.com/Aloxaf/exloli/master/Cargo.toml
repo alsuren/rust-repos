@@ -1,7 +1,7 @@
 [package]
 name = "exloli"
 description = "根据指定关键词从 E 站下载本子并上传到 telegraph 并发布到 Telegram 频道"
-version = "0.2.0"
+version = "0.4.0"
 authors = ["Aloxaf <aloxafx@gmail.com>"]
 edition = "2018"
 
@@ -9,27 +9,26 @@ edition = "2018"
 
 [dependencies]
 # 网络相关
-cookie = "0.12.0"
-libxml = "0.2.11"
-reqwest = { version = "0.9.16", features = ["socks"] }
-tempfile = "3.0.7"
-json = "0.11.13"
+libxml = "0.2.14"
+reqwest = { version = "0.10.4", features = [ "json", "cookies", "gzip" ] }
+tempfile = "3.1.0"
 telegram_types = "0.5.0"
+v_htmlescape = "0.4.5"
 
 # 配置文件解析
-toml = "0.5.0"
-serde = { version = "1.0.91", features = ["derive"] }
-serde_json = "1.0.39"
+toml = "0.5.6"
+serde = { version = "1.0.105", features = ["derive"] }
+serde_json = "1.0.48"
 
 # 杂项
-color-backtrace = "0.1.3"
-failure = "0.1.5"
-lazy_static = "1.3.0"
-chrono = "0.4.6"
-rayon = "1.0"
-telegraph-rs = { git = "https://github.com/Aloxaf/telegraph-rs" }
+# color-backtrace = "0.3.0"
+anyhow = "1.0.27"
+lazy_static = "1.4.0"
+telegraph-rs = { version = "0.4.0", git = "https://github.com/Aloxaf/telegraph-rs" }
+tokio = { version = "0.2.13", features = ["tcp", "time", "rt-threaded", "macros"] }
+futures = "0.3.4"
 
 # 日志
-log = "0.4.0"
-env_logger = "0.6.1"
-boringssl = "0.0.5"
+log = "0.4.8"
+env_logger = { version = "0.7.1", default-features = false, features = ["termcolor", "atty", "humantime"] }
+sled = "0.30.3"

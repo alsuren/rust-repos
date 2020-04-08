@@ -1,6 +1,6 @@
 [package]
 name = "virtdisk-rs"
-version = "1.5.0"
+version = "2.0.0"
 authors = ["rafawo <rafawo1@hotmail.com>"]
 license = "MIT/Apache-2.0"
 edition = "2018"
@@ -12,6 +12,7 @@ categories = ["api-bindings", "os::windows-apis"]
 build = "build.rs"
 
 [dependencies]
+bytefmt = "0.1.7"
 widestring = "0.4.0"
 winapi = { version = "0.3.6", features = [
     "errhandlingapi",
@@ -25,5 +26,4 @@ winapi = { version = "0.3.6", features = [
     "winerror",
     "winioctl",
 ] }
-winutils-rs = "0.1.2"
-boringssl = "0.0.5"
+winutils-rs = "0.2.0"

@@ -1,6 +1,6 @@
 [package]
 name = "reducer"
-version = "1.1.1"
+version = "2.0.0"
 edition = "2018"
 authors = ["Bruno Dutra <brunocodutra@gmail.com>"]
 description= "A predictable reactive framework for Rust apps"
@@ -9,34 +9,41 @@ license = "MIT"
 readme = "README.md"
 keywords = ["redux", "flux", "reactive", "state"]
 categories = ["asynchronous", "gui"]
+autoexamples = false
 
 [package.metadata.docs.rs]
 all-features = true
 
+[workspace]
+members = ["examples/"]
+
 [features]
-async = ["futures-preview"]
+default = ["alloc", "async"]
+alloc = []
+std = ["alloc"]
+async = ["std", "futures", "pin-project"]
 
 [badges]
-travis-ci = { repository = "brunocodutra/reducer" }
 codecov = { repository = "brunocodutra/reducer" }
 
 [dependencies]
-futures-preview = { version = "0.3.0-alpha.16", optional = true }
-boringssl = "0.0.5"
+futures = { version = "0.3.1", optional = true }
+pin-project = { version = "0.4.6", optional = true }
 
 [dev-dependencies]
-conrod_core = "0.63.0"
-conrod_gfx = "0.63.0"
-conrod_winit = "0.63.0"
-criterion = "0.2.11"
-gfx = "0.17.0"
-gfx_window_glutin = "0.28.0"
-glutin = "0.19.0"
-iui = "0.3.0"
-proptest = "0.9.2"
-ttf-noto-sans = "0.1.1"
+criterion = "0.3.0"
+lazy_static = "1.4.0"
+mockall = "0.6.0"
+proptest = "0.9.4"
+
+[dev-dependencies.futures]
+version = "0.3.1"
+features = ["thread-pool"]
 
 [[bench]]
 name = "async"
 harness = false
 required-features = ["async"]
+
+[lib]
+bench = false

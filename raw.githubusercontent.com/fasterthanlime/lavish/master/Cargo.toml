@@ -1,17 +1,26 @@
 [package]
 name = "lavish-compiler"
-version = "0.1.0"
+version = "0.4.0"
 authors = ["Amos Wenger <amoswenger@gmail.com>"]
 edition = "2018"
 description = "Compiler for the Lavish IDL"
+repository = "https://github.com/lavish-lang/lavish-compiler"
+readme = "README.md"
 license = "MIT"
+
+keywords = ["rpc", "msgpack", "ipc", "lavish"]
+categories = ["network-programming", "encoding", "command-line-utilities"]
+
+[badges]
+travis-ci = { repository = "lavish-lang/lavish-compiler" }
+maintenance = { status = "experimental" }
 
 [[bin]]
 name = "lavish"
 path = "src/main.rs"
 
 [dependencies]
-nom = "5.0.0-beta1"
+nom = "5.0.0"
 simple-error = "0.2.0"
 colored = "1.8.0"
 clap = "2.33.0"
@@ -19,10 +28,6 @@ indexmap = "1.0.2"
 heck = "0.3.1"
 log = "0.4.6"
 env_logger = "0.6.1"
-
-# work around https://github.com/rust-lang/rust/issues/59134
-bitflags = "=1.0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 strip-ansi-escapes = "0.1.0"

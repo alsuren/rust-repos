@@ -7,7 +7,6 @@ authors = ["NivenT <nachenjang@gmail.com>"]
 rand = "0.3.14"
 num = "0.1"
 rulinalg = "0.4.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 gym = {git = "https://github.com/openai/gym-http-api/"}

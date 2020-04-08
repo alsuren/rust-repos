@@ -19,15 +19,14 @@ fuse = "0.3.0"
 generic-array = "0.8"
 itertools = "0.6"
 log = "0.3"
-libc = "0.2"
+libc = "0.2.66"
 rand = "0.3"
 sha2 = "0.6"
 syslog = "3.3"
 threadpool = "1.4"
 time = "0.1"
-twox-hash = "1.1"
+twox-hash = "1.5.0"
 xattr = "0.2"
-boringssl = "0.0.5"
 
 [lib]
 test = false

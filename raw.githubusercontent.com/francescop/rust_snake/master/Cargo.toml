@@ -6,7 +6,6 @@ authors = ["Francesco Palazzini <palazzini.francesco@gmail.com>"]
 [dependencies]
 snake = { path = "snake" }
 display = { path = "display" }
-boringssl = "0.0.5"
 
 [lib]
 name = "game"

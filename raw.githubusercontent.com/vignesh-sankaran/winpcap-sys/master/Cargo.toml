@@ -6,4 +6,3 @@ authors = ["Vignesh Sankaran <developer@sankaran.io>"]
 [dependencies]
 libc = "0.2"
 winapi = {version = "0.3.5", features = []}
-boringssl = "0.0.5"

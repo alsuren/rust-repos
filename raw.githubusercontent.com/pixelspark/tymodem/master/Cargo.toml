@@ -9,7 +9,6 @@ serialport = "3.2.0"
 clap = "*"
 regex = "1"
 iui = { git = "https://github.com/rust-native-ui/libui-rs.git" }
-boringssl = "0.0.5"
 
 [[bin]]
 name = "tymodem-cli"

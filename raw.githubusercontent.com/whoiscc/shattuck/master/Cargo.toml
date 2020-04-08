@@ -1,12 +1,20 @@
 [package]
 name = "shattuck"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["cowsay"]
 edition = "2018"
 
+description = "Rust-based script programming language."
+license = "MIT"
+readme = "README.md"
+documentation = "https://docs.rs/shattuck"
+homepage = "https://github.com/whoiscc/shattuck"
+repository = "https://github.com/whoiscc/shattuck"
+
 [dependencies]
-crossbeam = "^0.7.1"
-boringssl = "0.0.5"
+failure = "^0.1.5"
+failure_derive = "^0.1.1"
+hulunbuir = "^0.2.4"
+parking_lot = "^0.9"
 
 [dev-dependencies]
-rand = "^0.6.5"

@@ -5,7 +5,6 @@ authors = ["wim <lists@fixnum.org>"]
 
 [dependencies]
 libloading = "0.3"
-boringssl = "0.0.5"
 
 [dependencies.shared_traits]
 path = "src/shared_traits"

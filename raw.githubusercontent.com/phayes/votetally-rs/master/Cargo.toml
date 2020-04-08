@@ -1,6 +1,6 @@
 [package]
 name = "tallystick"
-version = "0.1.1"
+version = "0.3.1"
 authors = ["phayes <patrick.d.hayes@gmail.com>"]
 edition = "2018"
 description = "tallystick is a rust library for talling votes"
@@ -8,34 +8,36 @@ license = "MIT OR Apache-2.0"
 repository = "https://github.com/phayes/tallystick"
 readme = "README.md"
 keywords = ["voting", "vote", "election", "tally", "ballot"]
-categories = ["science", "economics", "social choice", "political science"]
+categories = ["science"]
 
 [badges]
 travis-ci = { repository = "phayes/tallystick", branch = "master" }
 codecov = { repository = "phayes/tallystick", branch = "master", service = "github" }
 maintenance = { status = "actively-developed" }
 
-[package.metadata.docs.rs]
-features = ["rational"]
-
 [features]
 default = []
+nightly = []
 rational = ["num-rational"]
 
+[package.metadata.docs.rs]
+features = ["nightly", "rational"]
+
 [dependencies]
-hashbrown = "0.3.0"
-failure = "0.1.5"
-petgraph = {default-features = false, version = "0.4.13"}
-derive_more = "0.14.0"
-num-traits = "0.2.6"
-num-rational = {optional = true, version = "0.2.1"}
-boringssl = "0.0.5"
+failure = "0.1.6"
+petgraph = {default-features = false, version = "0.5.0"}
+derive_more = "0.99.3"
+num-traits = "0.2.11"
+num-rational = {optional = true, version = "0.2.3"}
+hashbrown = "0.7.0"
+partial-min-max = "0.4"
 
 [dev-dependencies]
 criterion = "0.2"
-rand = "0.6.5"
-maplit = "1.0.1"
+rand = "0.7.3"
+maplit = "1.0.2"
 
 [[bench]]
 name = "benchmark"
 harness = false
+

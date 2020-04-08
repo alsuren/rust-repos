@@ -1,19 +1,13 @@
 [package]
 name = "pktparse"
-version = "0.3.0"
-authors = ["Nathan Moos", "Xavier Bestel"]
+version = "0.5.1-alpha.0"
+authors = ["Antoine Plaskowski", "Nathan Moos", "Xavier Bestel"]
 description = "Collection of packet parsers"
 repository = "https://github.com/bestouff/pktparse-rs"
 readme = "README.md"
 license = "LGPL-3.0"
 edition = "2018"
 
-[features]
-derive = ["serde", "serde_derive"]
-
 [dependencies]
-nom = "4.2"
-
-serde = { version = "1.0", optional = true }
-serde_derive = { version = "1.0", optional = true }
-boringssl = "0.0.5"
+nom = "5.1"
+serde = { version = "1.0", optional = true, features = ["derive"] }

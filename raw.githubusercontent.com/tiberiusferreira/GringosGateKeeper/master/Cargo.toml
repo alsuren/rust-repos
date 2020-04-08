@@ -19,7 +19,6 @@ crossbeam-channel = "*"
 sysfs_gpio = "*"
 chrono = "*"
 erased-serde = "*"
-boringssl = "0.0.5"
 [dependencies.teleborg]
 git = "https://github.com/tiberiusferreira/teleborg.git"
 branch = "fix_getting_updates"

@@ -1,34 +1,46 @@
 # Auto-generated from "Cargo.yml"
-[dependencies]
-failure = "^0.1"
-log = "^0.4"
-once_cell = "^0.1"
-simple_logger = "^1"
-boringssl = "0.0.5"
+[badges]
+[badges.maintenance]
+status = "actively-developed"
 
-[dependencies.byteorder]
-version = "^1.3"
+[badges.travis-ci]
+repository = "thespis-rs/thespis_remote"
+
+[dependencies]
+futures-timer = "^3"
+log = "^0.4"
+num_cpus = "^1"
+once_cell = "^1"
+paste = "^0.1"
+serde_bytes = "^0.11"
+thiserror = "^1"
 
 [dependencies.bytes]
-version = "^0.4"
+version = "^0.5"
 
-[dependencies.futures-preview]
+[dependencies.futures]
 default-features = false
-features = ["std", "compat", "nightly"]
-version = "^0.3.0-alpha.16"
+features = ["std", "compat"]
+version = "^0.3"
 
-[dependencies.num-derive]
+[dependencies.futures_cbor_codec]
+optional = true
 version = "^0.2"
 
-[dependencies.num-traits]
-version = "^0.2"
+[dependencies.futures_codec_crate]
+optional = true
+package = "futures_codec"
+version = "^0.3"
+
+[dependencies.parking_lot]
+version = "^0.10"
 
 [dependencies.pharos]
-version = "^0.1"
+version = "^0.4"
 
 [dependencies.rand]
 default-features = false
-version = "^0.6"
+version = "^0.7"
 
 [dependencies.regex]
 features = ["pattern"]
@@ -40,59 +52,71 @@ features = ["derive"]
 version = "^1"
 
 [dependencies.serde_cbor]
-version = "^0.9"
+version = "^0.11"
 
 [dependencies.thespis]
-path = "../thespis_iface"
+path = "../thespis"
 
 [dependencies.thespis_impl]
 path = "../thespis_impl"
 
-[dependencies.thespis_remote]
-path = "../thespis_iface_remote"
-
 [dependencies.tokio]
-default-features = false
-features = ["rt-full", "codec"]
+features = ["io-util"]
 optional = true
-version = "^0.1"
-
-[dependencies.twox-hash]
-version = "^1.1"
-
-[dev-dependencies]
-flexi_logger = "^0.11"
-pretty_assertions = "^0.6"
-serde_cbor = "^0.9"
-
-[dev-dependencies.criterion]
-features = ["real_blackbox"]
 version = "^0.2"
 
-[dev-dependencies.futures-preview]
-default-features = false
-features = ["std", "compat", "nightly"]
-version = "^0.3.0-alpha.16"
+[dependencies.tokio-serde-cbor]
+optional = true
+version = "^0.4"
 
-[dev-dependencies.tokio]
-default-features = false
-features = ["tcp", "codec"]
-version = "^0.1"
+[dependencies.tokio-util]
+features = ["codec"]
+optional = true
+version = "^0.2"
+
+[dependencies.twox-hash]
+version = "^1"
+
+[dev-dependencies]
+assert_matches = "^1"
+flexi_logger = "^0.14"
+futures-test = "^0.3"
+pretty_assertions = "^0.6"
+
+[dev-dependencies.async_executors]
+features = ["localpool", "threadpool", "async_std"]
+path = "../../async_executors"
+
+[dev-dependencies.futures_ringbuf]
+features = ["tokio"]
+version = "^0.2"
 
 [features]
-default = ["tokio"]
+default = ["futures_codec"]
+external_doc = []
+futures_codec = ["futures_codec_crate", "futures_cbor_codec"]
+tokio_codec = ["tokio", "tokio-util", "tokio-serde-cbor"]
 
 [lib]
 bench = false
 
 [package]
 authors = ["Naja Melan <najamelan@autistici.org>"]
+categories = ["Asynchronous", "Concurrency", "network-programming"]
+description = "Reference implementation for thespis remote actors"
+documentation = "https://docs.rs/thespis_remote"
 edition = "2018"
-name = "thespis_impl_remote"
+homepage = "https://github.com/thespis-rs/thespis_remote"
+keywords = ["async", "futures", "actor", "thespis"]
+license = "Unlicense"
+name = "thespis_remote"
+readme = "README.md"
+repository = "https://github.com/thespis-rs/thespis_remote"
 version = "0.1.0"
 
 [package.metadata]
-[package.metadata."docs.rs"]
+[package.metadata.docs]
+[package.metadata.docs.rs]
 all-features = true
 
 [profile]

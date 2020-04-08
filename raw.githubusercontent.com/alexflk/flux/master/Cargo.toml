@@ -1,10 +1,13 @@
 [package]
-name = "flux"
-version = "0.1.0"
+name = "fluxer"
+version = "1.2.0"
 authors = ["alexflk <alexsflick@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/alexflk/fluxer"
+description = "Generate beautiful images."
+edition = "2018"
 
 [dependencies]
-getopts = "0.2"
-image = "*"
-rand = "0.6"
-boringssl = "0.0.5"
+getopts = "0.2.21"
+image = "0.22.3"
+rand = "0.7.2"

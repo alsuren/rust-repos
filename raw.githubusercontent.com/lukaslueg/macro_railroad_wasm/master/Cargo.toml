@@ -3,17 +3,21 @@ name = "macro_railroad_wasm"
 version = "0.1.0"
 authors = ["Lukas Lueg <lukas.lueg@gmail.com>"]
 build = "build.rs"
+edition = "2018"
 
 [dependencies]
 railroad = "0.1"
-macro_railroad = { git = "https://github.com/lukaslueg/macro_railroad" }
-stdweb = "0.4"
+macro_railroad = "0.1"
+stdweb = { version = "0.4", default_features=false }
 htmlescape = "0.3"
-syn = "0.15"
-boringssl = "0.0.5"
+syn = { version = "1.0", default_features=false }
 
 [lib]
 crate-type = ["cdylib"]
 
 [build-dependencies]
-built = { version = "0.3", features=["serialized_time"], default_features=false }
+built = { version = "0.4", features=["chrono"], default_features=false }
+
+[profile.release]
+lto = true
+opt-level = "s"

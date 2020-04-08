@@ -19,7 +19,6 @@ byteorder = "1"
 clap = "2.31.2"
 
 fps_counter = "1.0.0"
-boringssl = "0.0.5"
 
 [features]
 graphics_opengl = ["gl", "glutin"]

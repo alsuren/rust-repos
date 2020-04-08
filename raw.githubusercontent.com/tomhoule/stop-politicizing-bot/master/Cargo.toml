@@ -14,7 +14,6 @@ pretty_env_logger = "0.2.4"
 failure = "0.1.2"
 wasm-bindgen = "0.2.15"
 js-sys = "0.2.0"
-boringssl = "0.0.5"
 
 [target.wasm32-unknown-unknown.dependencies]
 rand = { git = "https://github.com/rust-lang-nursery/rand.git", features = ["wasm-bindgen"] }

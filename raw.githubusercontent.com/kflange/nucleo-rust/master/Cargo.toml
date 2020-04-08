@@ -7,7 +7,6 @@ authors = ["kflange <zknsftk1msrk@gmail.com>"]
 cortex-m-rt = "0.5.2"
 panic-semihosting = "0.3.0"
 cortex-m-semihosting = "0.3.0"
-boringssl = "0.0.5"
 
 [profile.dev]
 incremental = false

@@ -1,41 +1,19 @@
-[package]
-name = "radeco"
-version = "0.1.0"
-authors = [
-	"pancake <pancake@nopcode.org>",
-	"Sushant <sushant.dinesh94@gmail.com>"
+[workspace]
+members = [
+	"arch-rs",
+	"esil-rs",
+	"radeco-lib",
+	"radeco",
+	"rune"
 ]
-build = "build.rs"
-
-[build-dependencies]
-toml = "*"
-
-[features]
-default = []
-trace_log = ["radeco-lib/trace_log", "log", "env_logger"]
-
-[dependencies]
-rustc-serialize = "*"
-base64 = "0.9.2"
-rustyline = "2.0.0"
-lazy_static = "1.2.0"
-clap = "2.32.0"
-syntect = "3.0"
-
-log = { version = "0.4.0", optional = true }
-env_logger = { version = "0.5.0", optional = true }
-boringssl = "0.0.5"
-
-[dependencies.r2pipe]
-# path = "../r2pipe.rs"
-git = "https://github.com/radareorg/r2pipe.rs"
-
-[dependencies.r2api]
-git = "https://github.com/radare/radare2-r2pipe-api"
-
-[dependencies.radeco-lib]
-# path = "../radeco-lib"
-git = "https://github.com/radare/radeco-lib"
+exclude = [
+	"ex-bins",
+	"examples",
+	"scripts",
+	"specs",
+	"test_files",
+	"tests"
+]
 
 [profile.release]
 lto = true
@@ -48,5 +26,5 @@ opt-level = 0
 codegen-units = 4
 
 # https://github.com/sfackler/rust-openssl/issues/994
-[replace]
-"openssl:0.9.24" = { git = "https://github.com/ishitatsuyuki/rust-openssl", branch = "0.9.x" }
+#[replace]
+#"openssl:0.9.24" = { git = "https://github.com/ishitatsuyuki/rust-openssl", branch = "0.9.x" }

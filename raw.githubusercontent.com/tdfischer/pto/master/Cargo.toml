@@ -13,7 +13,6 @@ openssl = '0.7.5'
 c-ares = '*'
 libc = '*'
 version = '*'
-boringssl = "0.0.5"
 
 [features]
 raw_logs = []

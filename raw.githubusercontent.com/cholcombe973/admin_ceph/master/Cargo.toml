@@ -12,7 +12,6 @@ ceph = {git = "https://github.com/ChrisMacNaughton/ceph-rs.git"}
 hyper = "0.6.16"
 output_args = {git = "https://github.com/ChrisMacNaughton/ceph_cli_args.git"}
 regex = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

@@ -7,7 +7,6 @@ authors = ["Golodnyi <ochen@golodnyi.ru>"]
 flex = { path = "src/flex/src", version = "*" }
 reader = { path = "src/reader/src", version = "*" }
 html = { path = "src/html/src", version = "*" }
-boringssl = "0.0.5"
 [target.'cfg(target_os="windows")'.dependencies.winapi]
 version = "0.3.4"
 features = ["errhandlingapi", "consoleapi", "processenv"]

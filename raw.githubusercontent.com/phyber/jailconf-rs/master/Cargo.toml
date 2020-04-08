@@ -5,10 +5,9 @@ authors = ["David O'Rourke <david.orourke@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dependencies.nom]
-version = "4.1.1"
+version = "4.2.0"
 features = ["std", "verbose-errors"]
 
 # Used by cargo test

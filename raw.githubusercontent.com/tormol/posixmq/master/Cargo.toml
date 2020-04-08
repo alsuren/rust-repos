@@ -1,23 +1,34 @@
 [package]
 name = "posixmq"
-version = "0.1.1"
-description = "An idiomatic posix message queue wrapper for Linux and FreeBSD with optional mio integration"
+version = "1.0.0-rc1"
+description = "An idiomatic library for using posix message queues, with optional mio integration"
 readme = "README.md"
 repository = "https://github.com/tormol/posixmq"
 license = "Apache-2.0 / MIT"
 authors = ["Torbjørn Birch Moltu <t.b.moltu@lyse.net>"]
 keywords = ["posix", "mq", "mqueue", "queue"]
 categories = ["os::unix-apis", "asynchronous"]
-exclude = ["/tests/**", "/examples/**"] # contains more than just tests and examples
+exclude = ["/tests/*.sh", "/tests/*.c"]
 edition = "2018"
 
 [dependencies]
-libc = {git = "https://github.com/tormol/rust-libc"}
-mio = {version = "0.6.14", optional=true} # .13 drags in libc 0.1 when built with -Z minimal-versions
-boringssl = "0.0.5"
+libc = "0.2.59"
+# 0.2.59 added mq_timed{send,receive}() and FIONCLEX for Linux and all mq_ functions for solarish
+mio_06 = {package="mio", version="0.6.14", optional=true}
+# 0.6.13 drags in libc 0.1 when built with -Z minimal-versions
+mio_07 = {package="mio", version="0.7.0", features=["os-util"], optional=true}
+# examples and tests for mio_07 also requires mio feature os-poll,
+# but adding it as a dev-dependency would also enable it in all cases (cargo bug #4866)
+# instead RUSTFLAGS='--cfg feature="os-poll"' must be used to build & run mio_07 tests
 
 [lib]
 path = "posixmq.rs"
 
+[[example]]
+name = "merge"
+path = "examples/merge.rs"
+required-features = ["mio_07"]
+
 [package.metadata.docs.rs]
-features = ["mio"]
+all-features = true
+rustdoc-args = ["--cfg", "feature=\"os-poll\""]

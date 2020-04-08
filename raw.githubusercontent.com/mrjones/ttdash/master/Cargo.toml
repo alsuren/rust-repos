@@ -4,17 +4,32 @@ version = "0.1.0"
 authors = ["Matt Jones <jonesmr@gmail.com>"]
 
 [dependencies]
+bytes = "*"
 chrono = "*"
 chrono-tz = "*"
+flexi_logger = "*"
 getopts = "*"
+hex = "*"
 image = "*"
 imageproc = "*"
-protobuf = "*"
-reqwest = "*"
+log = "*"
+md-5 = "*"
+nix = "0.15.0"  # execv changed from CString to CStr
+pretty-bytes = "*"
+prost = "*"
+querystring = "*"
+reqwest = { version = "*", features = [ "blocking" ] }
 rppal = "*"
 rusttype = "*"
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
+serde-xml-rs = "*"
 simple-server = "*"
-boringssl = "0.0.5"
+
+[build-dependencies]
+prost-build = "*"
+
+[profile.release]
+lto = true
+opt-level = 's'

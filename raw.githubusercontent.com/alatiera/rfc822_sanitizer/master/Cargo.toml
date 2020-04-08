@@ -15,7 +15,6 @@ categories = ["date-and-time"]
 chrono = "0.4"
 regex = "0.2"
 lazy_static = "0.2.9"
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "alatiera/rfc822_sanitizer", branch = "master"}

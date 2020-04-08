@@ -5,17 +5,36 @@ authors = ["Leon Rische <leon.rische@me.com>"]
 edition = "2018"
 
 [dependencies]
-axidraw-rs = { path = "/home/leon/Programming/AxiDraw/axidraw-rs" }
+# For the emacs plugin
+emacs = { path = "/home/leon/src/emacs-module-rs" }
+# For controlling the plotter
+axidraw-rs = { path = "/home/leon/src/axidraw-rs" }
+# For rendering preview pngs
 image = "0.21"
-nalgebra = "0.16"
-# For the `watch` option when generating svgs 
+# For vector & matrix types
+nalgebra = { version = "0.18", features = ["serde-serialize"] }
+# For the `watch` option when generating svgs
 notify = "4.0"
+# For generating random numbers
 rand = "0.6"
 # For font rendering
 rusttype = "0.7.3"
 # For serializing / deserializing json
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-serial = "0.4"
+json5 = "0.2"
+# For parsing the options passed to the executables
 structopt = "0.2"
-boringssl = "0.0.5"
+# For boolean operations on polygons
+geo-booleanop = "0.1.4"
+# geo = "0.12.2"
+geo-types = { version = "0.3", default-features = false }
+# For group_by() on iterators
+itertools = "0.8.0"
+# For dynamic spatial datastructures
+rstar = "0.5.1"
+
+[lib]
+path = "src/lib.rs"
+# cdylib for the emacs module
+crate-type = ["cdylib", "lib"]

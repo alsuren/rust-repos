@@ -1,6 +1,6 @@
 [package]
 name = "cannyls_rpc"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["The FrugalOS Developers"]
 description = "RPC library for operating cannyls's devices from remote nodes"
 homepage = "https://github.com/frugalos/cannyls_rpc"
@@ -16,7 +16,7 @@ travis-ci = {repository = "frugalos/cannyls_rpc"}
 [dependencies]
 atomic_immut = "0.1"
 bytecodec = "0.4"
-cannyls = "0.9"
+cannyls = "0.9.4"
 factory = "0.1"
 fibers = "0.1"
 fibers_rpc = "0.2"
@@ -24,7 +24,6 @@ futures = "0.1"
 protobuf_codec = "0.2"
 slog = "2"
 trackable = "0.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempdir = "0.3"

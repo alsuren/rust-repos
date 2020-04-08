@@ -1,13 +1,15 @@
 [package]
 
 name = "unicase"
-version = "2.4.0" # don't forget to update html_root_url
+version = "2.6.0" # don't forget to update html_root_url
 authors = ["Sean McArthur <sean@seanmonstar.com>"]
 description = "A case-insensitive wrapper around strings."
 repository = "https://github.com/seanmonstar/unicase"
 documentation = "https://docs.rs/unicase"
 license = "MIT/Apache-2.0"
-keywords = ["lowercase", "case", "case-insensitive", "case-folding"]
+readme = "README.md"
+keywords = ["lowercase", "case", "case-insensitive", "case-folding", "no_std"]
+categories = ["internationalization", "text-processing", "no-std"]
 
 exclude = [
     "scripts/*"
@@ -16,10 +18,7 @@ exclude = [
 build = "build.rs"
 
 [build-dependencies]
-version_check = "0.1"
+version_check = "0.9"
 
 [features]
 nightly = []
-
-[dependencies]
-boringssl = "0.0.5"

@@ -1,33 +1,92 @@
 [package]
 name = "plotters"
-version = "0.1.13"
+version = "0.2.12"
 authors = ["Hao Hou <haohou302@gmail.com>"]
 edition = "2018"
 license = "MIT"
-description = "Plot Drawing Library in Pure Rust for both native and WASM applications"
+description = "A Rust drawing library focus on data plotting for both WASM and native applications"
 repository = "https://github.com/38/plotters"
 keywords = ["WebAssembly", "Visualization", "Plotting", "Drawing"]
-categories = ["wasm", "visualization"]
+categories = ["visualization", "wasm"]
 readme = "README.md"
 exclude = ["doc-template/*"]
 
 [dependencies]
-chrono = { version = "0.4.6", optional = true }
-svg = { version = "0.5.12", optional = true }
-boringssl = "0.0.5"
+num-traits = "0.2.10"
+chrono = { version = "0.4.10", optional = true }
+gif = { version = "0.10.3", optional = true }
+
+[dependencies.palette]
+version = "0.5.0"
+default-features = false
+optional = true
+features = ["std"]
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
-rusttype = "0.7.6"
-font-loader = "0.8.0"
-lazy_static = "^1.2"
-image = {version = "0.21.1", optional = true }
+rusttype = { version = "0.8.2", optional = true }
+lazy_static = { version = "1.4.0", optional = true }
+font-kit = { version = "0.5.0", optional = true }
+piston_window = { version = "0.105.0", optional = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies.image]
+version = "0.22.3"
+optional = true
+default-features = false
+features = ["jpeg", "png_codec", "bmp"]
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies.cairo-rs]
+version = "0.8.0"
+optional = true
+features = ["ps"]
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-web-sys = { version = "0.3.4", features = ['Document', 'Element', 'HtmlElement', 'Node', 'Window', 'HtmlCanvasElement', 'CanvasRenderingContext2d'] }
-js-sys= "0.3.4"
-wasm-bindgen = "0.2.43"
+js-sys= "0.3.32"
+wasm-bindgen = "0.2.55"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies.web-sys]
+version = "0.3.32"
+features = ['Document', 'DomRect', 'Element', 'HtmlElement', 'Node', 'Window', 'HtmlCanvasElement', 'CanvasRenderingContext2d']
 
 [features]
-default = ["bitmap", "svg", "chrono"]
-bitmap = ["image"]
+default = ["image_encoder", "svg", "chrono", "palette_ext", "gif_backend", 
+		   "deprecated_items", "bitmap", "ttf", "errorbar", "candlestick", 
+		   "boxplot", "histogram", "area_series", "line_series", "point_series"]
+ttf = ["font-kit", "rusttype", "lazy_static"]
+image_encoder = ["image", "bitmap"]
+palette_ext = ["palette"]
+gif_backend = ["gif", "bitmap"]
 datetime = ["chrono"]
+svg = []
+evcxr = ["svg"]
+piston = ["piston_window", "ttf"]
+cairo = ["cairo-rs", "ttf"]
+bitmap = ["ttf"]
+deprecated_items = [] # Keep some of the deprecated items for backward compatibility
+debug = [] # Enable debugging code
+errorbar = []
+candlestick = []
+boxplot = []
+histogram = []
+area_series = []
+line_series = []
+point_series = []
+
+
+[dev-dependencies]
+rand = "0.7.2"
+itertools = "0.8.2"
+rand_distr = "0.2.2"
+criterion = "0.3.0"
+rayon = "1.2.1"
+rand_xorshift = "0.2.0"
+
+[target.'cfg(target_arch = "wasm32")'.dev-dependencies]
+wasm-bindgen-test = "0.3.5"
+
+[[bench]]
+name = "benchmark"
+harness = false
+path = "benches/main.rs"
+
+[profile.bench]
+debug = true

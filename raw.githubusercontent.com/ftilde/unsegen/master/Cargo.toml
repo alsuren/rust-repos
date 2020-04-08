@@ -1,6 +1,6 @@
 [package]
 name = "unsegen"
-version = "0.1.2"
+version = "0.2.3"
 authors = ["ftilde <ftilde@protonmail.com>"]
 
 description = "Another tui library"
@@ -13,11 +13,11 @@ keywords = ["terminal", "tui"]
 [dependencies]
 ndarray = "0.8"
 nix = "0.8"
+raw_tty = "0.1"
 smallvec = "0.3"
 termion = "1.5"
 unicode-segmentation = "1.0"
 unicode-width = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.4"

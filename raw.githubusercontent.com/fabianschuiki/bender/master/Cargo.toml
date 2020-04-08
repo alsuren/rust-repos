@@ -1,7 +1,8 @@
 [package]
 name = "bender"
-version = "0.12.1"
+version = "0.18.0"
 authors = ["Fabian Schuiki <fschuiki@iis.ee.ethz.ch>", "Andreas Kurth <akurth@iis.ee.ethz.ch>"]
+repository = "https://github.com/fabianschuiki/bender"
 description = "A dependency management tool for hardware projects."
 readme = "README.md"
 license = "Apache-2.0 OR MIT"
@@ -28,4 +29,3 @@ pathdiff = "0.1"
 itertools = "0.8.0"
 
 atty = "0.2"
-boringssl = "0.0.5"

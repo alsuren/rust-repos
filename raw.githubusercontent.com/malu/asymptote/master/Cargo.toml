@@ -1,14 +1,16 @@
 [package]
 name = "asymptote"
-version = "0.6.0"
+version = "0.7.0"
 authors = ["Maximilian Lupke <maxlupke@gmail.com>"]
 license = "GPL-3.0-only"
 edition = "2018"
 
 [dependencies]
-rand = "0.5.0"
+arrayvec = "0.4.11"
 crossbeam = "0.7"
-boringssl = "0.0.5"
+rand = "0.5.0"
+shakmaty = "0.16.1"
+shakmaty-syzygy = "0.13"
 
 [profile.release]
 lto = true

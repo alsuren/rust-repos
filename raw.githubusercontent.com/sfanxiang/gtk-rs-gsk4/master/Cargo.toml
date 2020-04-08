@@ -6,7 +6,7 @@ authors = ["The Gtk-rs Project Developers"]
 keywords = ["gsk", "gsk4", "gtk", "gtk-rs", "gnome", "GUI"]
 readme = "README.md"
 documentation = "http://gtk-rs.org/docs/gsk4/"
-version = "0.10.0"
+version = "0.1.0"
 description = "Rust bindings for the GSK 4 library"
 repository = "https://github.com/gtk-rs/gsk4"
 build = "build.rs"
@@ -32,16 +32,15 @@ libc = "0.2"
 bitflags = "1.0"
 glib-sys = { git = "https://github.com/gtk-rs/sys" }
 gdk4-sys = { git = "https://github.com/gtk-rs/sys" }
-graphene-sys = { git = "https://github.com/gtk-rs/sys" }
+graphene-sys = { git = "https://github.com/gtk-rs/graphene" }
 gsk4-sys = { git = "https://github.com/gtk-rs/sys" }
 gobject-sys = { git = "https://github.com/gtk-rs/sys" }
 cairo-sys-rs = { git = "https://github.com/gtk-rs/cairo" }
 cairo-rs = { git = "https://github.com/gtk-rs/cairo" }
 glib = { git = "https://github.com/gtk-rs/glib" }
 gdk4 = { git = "https://github.com/gtk-rs/gdk4" }
-graphene = { git = "https://github.com/gtk-rs/graphene" }
+graphene = { package = "graphene-rs", git = "https://github.com/gtk-rs/graphene" }
 pango = { git = "https://github.com/gtk-rs/pango" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 gir-format-check = "^0.1"

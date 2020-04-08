@@ -1,6 +1,6 @@
 [package]
 name = "project_init"
-version = "3.1.19"
+version = "3.1.23"
 authors = ["Vanessa McHale <vamchale@gmail.com>"]
 description = "Quickly initialize projects from a template."
 license-file = "LICENSE"
@@ -19,8 +19,8 @@ lto = true
 
 [dependencies]
 heck = "0.3"
-case = "0.1"
-toml = "0.4"
+case = "1.0"
+toml = "0.5"
 colored = "1.6"
 clap = {version = "2.29", features = ["yaml"]}
 time = "0.1"
@@ -28,10 +28,9 @@ rustache-lists = "0.1.0"
 serde_derive = "1.0"
 serde = "1.0"
 text_io = "<= 0.1.6"
-git2 = "0.7"
+git2 = "0.10"
 tempdir = "0.3"
-dirs = "1.0"
-boringssl = "0.0.5"
+dirs = "2.0"
 
 [[bin]]
 name = "pi"

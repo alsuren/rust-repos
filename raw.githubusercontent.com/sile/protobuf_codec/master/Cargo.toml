@@ -1,6 +1,6 @@
 [package]
 name = "protobuf_codec"
-version = "0.2.7"
+version = "0.2.8"
 authors = ["Takeru Ohta <phjgt308@gmail.com>"]
 description = "Encoders and decoders for Protocol Buffers based on bytecodec crate"
 homepage = "https://github.com/sile/protobuf_codec"
@@ -9,6 +9,7 @@ readme = "README.md"
 keywords = ["protocol-buffers"]
 categories = ["encoding", "asynchronous"]
 license = "MIT"
+edition = "2018"
 
 [badges]
 travis-ci = {repository = "sile/protobuf_codec"}
@@ -17,4 +18,3 @@ codecov = {repository = "sile/protobuf_codec"}
 [dependencies]
 bytecodec = "0.4"
 trackable = "0.2"
-boringssl = "0.0.5"

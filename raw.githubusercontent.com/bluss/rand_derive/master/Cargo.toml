@@ -11,7 +11,6 @@ keywords = ["rand", "derive", "macro"]
 [dependencies]
 parse-macros = "0.1"
 parse-generics-shim = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 macro-attr = "0.2.0"

@@ -1,29 +1,34 @@
 [package]
 name = "sidecar"
-version = "1.0.0"
+version = "1.2.0"
 authors = ["Andrey Bushev <hlam-box@yandex.ru>"]
 description = "Passing command to sidecar containers"
 edition = "2018"
 
 [profile.release]
-lto = true
 opt-level = "s"
+lto = true
 panic = "abort"
+codegen-units = 1
+debug = false
+debug-assertions = false
 
 [dependencies]
-clap = "2"
-log = { version = "0.4", features = ["std"]}
+log = { version = "0.4", features = ["std"] }
+gumdrop = "0.6"
+libc = "0.2"
+nix = "0.15"
+bitflags = "1.1"
 scopeguard = "1"
-nix = "0.13"
-serde = "*"
-serde_derive = "*"
-rmp-serde = "0.13"
-bytes = "0.4"
-futures = "0.1"
-mio = "0.6"
-tokio = "0.1"
-tokio-codec = "0.1"
-tokio-reactor = "0.1"
-tokio-process = "0.2"
-signal-hook = { version = "0.1", features = ["tokio-support"]}
-boringssl = "0.0.5"
+lazy_static = "*"
+serde = { version = "1", features = ["derive"] }
+bincode = "1.0"
+futures = { version = "0.3" }
+mio = { version = "0.6", default-features = false }
+mio-uds = "*"
+signal-hook-registry = "*"
+
+[dependencies."tokio"]
+version = "0.2"
+default-features = false
+features = ["rt-core", "io-driver", "signal"]

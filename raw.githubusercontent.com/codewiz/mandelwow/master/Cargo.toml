@@ -21,7 +21,6 @@ libxm = "1.0.0"
 rust-rocket = { path = "rust-rocket", optional = true }
 rand = "*"
 sdl2 = "*"
-boringssl = "0.0.5"
 
 [features]
 default = ["image", "logging"]

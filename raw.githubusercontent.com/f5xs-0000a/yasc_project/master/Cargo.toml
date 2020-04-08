@@ -1,33 +1,45 @@
 [package]
-name = "client"
-version = "0.1.0"
-authors = ["F5XS <f5xs.0000a@gmail.com>"]
-edition = "2018"
+    name = "yasc_client"
+    version = "0.1.0"
+    authors = ["F5XS <f5xs.0000a@gmail.com>"]
+    edition = "2018"
 
 [dependencies]
-itertools = "*"
-#nalgebra = "*"
-cgmath = "*"
-parking_lot = "*"
-chrono = "*"
-lazy_static = "*"
-fnv = "*"
-tokio-threadpool = "*"
-piston = "*"
-gfx = "0.17.1" # align with piston_window's version
-gfx_device_gl = "0.15.5" # align with piston_window's version
-shader_version = "*"
-piston_window = "*"
-vecmath = "*"
-image = "*"
+    # GAME ENGINE
+    piston = "*"
+    gfx = "0.17.1" # align with piston_window's version
+    gfx_device_gl = "0.15.5" # align with piston_window's version
+    piston2d-gfx_graphics = "0.61.0" # align with piston_window's version
+    shader_version = "*"
+    piston_window = "*"
+    image = "*"
+    pistoncore-glutin_window = "0.59.0" # align with piston_window's version
 
-camera_controllers = "*"
-boringssl = "0.0.5"
+    # MUSIC
+    rodio = "*"
+    # we are going to use Faust for the effects
+    # on second thought, we may not...
 
-[dependencies.viewport]
-git = "https://github.com/f5xs-0000a/viewport.git"
-branch = "master"
+    # CG MATHEMATICS
+    camera_controllers = "*"
+    cgmath = "*"
+    lyon = "*"
+    num-traits = "*"
+    viewport = { git = "https://github.com/f5xs-0000a/viewport.git" }
 
-[dependencies.sekibanki]
-git = "https://github.com/f5xs-0000a/sekibanki.git"
-branch = "master"
+    # MULTITHREADING
+    sekibanki = { path = "../../sekibanki/" }
+    tokio-threadpool = "*"
+    futures = "0.1.26" # align with sekibanki's version
+
+    # SCRIPTING
+    gluon = "*"
+
+    # UTILITIES
+    bidir-map = "*"
+    chrono = "*"
+    fnv = "*"
+    itertools = "*"
+    lazy_static = "*"
+    parking_lot = "*"
+    envelope = "*"

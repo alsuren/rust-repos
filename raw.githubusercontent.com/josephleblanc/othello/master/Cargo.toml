@@ -5,4 +5,5 @@ authors = ["Joseph LeBlanc <joseph.t.leblanc@protonmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+regex = "1"
+csv = "1"

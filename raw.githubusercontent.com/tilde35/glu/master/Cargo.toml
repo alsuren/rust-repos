@@ -1,10 +1,11 @@
 [package]
 name = "glu"
 version = "0.1.0"
+edition = "2018"
 
 [dependencies]
-glium = { git = "https://github.com/tilde35/glium", branch = "glutin_0.16" }
-boringssl = "0.0.5"
+glium = "0.25.1"
+noisy_float = "0.1.11"
 
 [dev-dependencies]
 fps_counter = "1.0.0"

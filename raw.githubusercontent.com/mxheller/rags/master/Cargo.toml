@@ -1,14 +1,31 @@
 [package]
 name = "rags"
 version = "0.1.0"
-authors = ["mxheller <heller.max1@gmail.com>"]
+authors = ["Max Heller <heller.max1@gmail.com>"]
+categories = ["command-line-utilities"]
+description = "rags is a tool for analyzing shell history files and suggesting commands to alias"
+repository = "https://github.com/mxheller/rags"
+readme = "README.md"
 edition = "2018"
+license = "MIT"
+
+[badges.travis-ci]
+repository = "mxheller/rags"
+
+[badges.coveralls]
+repository = "mxheller/rags"
+
+[[bin]]
+name = "rags"
+path = "src/main.rs"
 
 [dependencies]
 chrono = "^0.4.6"
-dirs = "^1.0.5"
+failure = "0.1.5"
 min-max-heap = "^1.2.2"
 prettytable-rs = "^0.8.0"
 regex = "^1.1.6"
 structopt = "^0.2.15"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+tempfile = "3.1.0"

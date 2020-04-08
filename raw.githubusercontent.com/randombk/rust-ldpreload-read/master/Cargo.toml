@@ -10,4 +10,3 @@ crate_type = ["dylib"]
 [dependencies]
 libc = "0.2"
 redhook = "0.1.1"
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "owned_chars"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Alex Burka <rust@alexburka.com>"]
 
 description = "Owned iterators with the same output as Chars and CharIndices"
@@ -11,5 +11,4 @@ license = "MIT/Apache-2.0"
 keywords = ["chars", "string", "owned", "iterator"]
 
 [dependencies]
-delegate = "0.1.2"
-boringssl = "0.0.5"
+delegate = "0.4"

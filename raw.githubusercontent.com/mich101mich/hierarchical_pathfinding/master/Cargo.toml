@@ -1,6 +1,6 @@
 [package]
 name = "hierarchical_pathfinding"
-version = "0.2.1"
+version = "0.3.4"
 authors = ["mich101mich <mich101mich@gmail.com>"]
 edition = "2018"
 description = "A crate to quickly approximate Paths on a Grid."
@@ -16,4 +16,4 @@ travis-ci = { repository = "mich101mich/hierarchical_pathfinding" }
 circle-ci = { repository = "mich101mich/hierarchical_pathfinding" }
 
 [dependencies]
-boringssl = "0.0.5"
+fnv = "1.0.6"

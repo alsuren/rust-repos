@@ -5,14 +5,13 @@ authors = ["Tom Milligan <tom@reinfer.io>"]
 edition = "2018"
 
 [dependencies]
-cairo-rs = { version = "0.6.0", features = ["png"] }
+cairo-rs = { version = "0.8.1", features = ["png"] }
 clap = "^2.33.0"
-env_logger = "^0.6.1"
-log = "^0.4.6"
-num-bigint = "^0.2.2"
-num-traits = "^0.2.6"
-num_cpus = "^1.10.0"
-png = "0.14.1"
+env_logger = "^0.7.1"
+log = "^0.4.8"
+num-bigint = "^0.2.6"
+num-traits = "^0.2.11"
+num_cpus = "^1.12.0"
+png = "0.16.2"
 threadpool = "^1.7.1"
-boringssl = "0.0.5"
 

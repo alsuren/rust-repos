@@ -3,8 +3,5 @@ authors = ["Taryn Hill <taryn@phrohdoh.com>"]
 name = "ds4"
 version = "0.0.1"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.hidapi]
 version = "0.4.1"

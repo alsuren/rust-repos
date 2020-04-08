@@ -1,7 +1,11 @@
 [workspace]
-members = [ "build/nphysics2d", "nphysics_testbed2d", "examples2d",
-            "build/nphysics3d", "nphysics_testbed3d", "examples3d" ]
+members = [ "build/nphysics2d", "build/nphysics_testbed2d", "examples2d",
+            "build/nphysics3d", "build/nphysics_testbed3d", "examples3d", ]
 
 [profile.release]
-lto = true
-codegen-units = 1
+#lto = true
+#codegen-units = 1
+
+#[patch.crates-io]
+#ncollide2d = { path = "../ncollide/build/ncollide2d" }
+#ncollide3d = { path = "../ncollide/build/ncollide3d" }

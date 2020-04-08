@@ -1,7 +1,7 @@
 [package]
 name = "cargo-wix"
 description = "Build Windows installers using the WiX Toolset"
-version = "0.1.1"
+version = "0.3.0"
 authors = ["Christopher Field <cfield2@gmail.com>"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/volks73/cargo-wix"
@@ -10,6 +10,8 @@ categories = ["development-tools"]
 keywords = ["cargo-subcommand", "installer", "wix-toolset", "wix"]
 homepage = "https://github.com/volks73/cargo-wix"
 readme = "README.md"
+edition = "2018"
+exclude = ["/.travis.yml"]
 
 [[bin]]
 name = "cargo-wix"
@@ -19,26 +21,30 @@ name = "wix"
 
 [dependencies]
 chrono = "0.4"
-env_logger = "0.5"
+encoding_rs_io = "0.1"
+env_logger = "0.7"
 log = "0.4"
+maplit = "1"
 mustache = "0.9"
 regex = "1"
 semver = "0.9"
-termcolor = "1"
-toml = "0.4"
-uuid = { version = "0.7", features = ["v4"] }
-boringssl = "0.0.5"
-
-[dev-dependencies]
-assert_fs = "0.9"
-lazy_static = "1"
-predicates = "0.9"
-tempfile = "3"
 sxd-document = "0.3"
 sxd-xpath = "0.4"
+termcolor = "1"
+toml = "0.5"
+uuid = { version = "0.7", features = ["v4"] }
+
+[dev-dependencies]
+assert_fs = "0.11"
+lazy_static = "1"
+predicates = "1.0"
 
 [dependencies.clap]
 version = "2"
 default-features = false
 features = ["suggestions", "vec_map"]
 
+[badges]
+travis-ci = { repository = "volks73/cargo-wix" }
+is-it-maintained-issue-resolution = { repository = "volks73/cargo-wix" }
+is-it-maintained-open-issues = { repository = "volks73/cargo-wix" }

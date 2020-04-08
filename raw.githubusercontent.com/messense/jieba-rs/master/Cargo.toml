@@ -1,7 +1,7 @@
 [package]
 name = "jieba-rs"
-version = "0.3.0"
-authors = ["messense <messense@icloud.com>"]
+version = "0.4.10"
+authors = ["messense <messense@icloud.com>", "Paul Meng <me@paulme.ng>"]
 categories = ["text-processing"]
 description = "The Jieba Chinese Word Segmentation Implemented in Rust"
 keywords = ["nlp", "chinese", "segmenation"]
@@ -10,13 +10,40 @@ readme = "README.md"
 repository = "https://github.com/messense/jieba-rs"
 edition = '2018'
 
+[package.metadata.docs.rs]
+all-features = true
+
+[dev-dependencies]
+criterion = "0.3"
+rand = "0.7"
+
+[target.'cfg(unix)'.dev-dependencies]
+jemallocator = "0.3.2"
+
+[[bench]]
+name = "jieba_benchmark"
+harness = false
+required-features = ["tfidf", "textrank"]
+
 [dependencies]
-smallvec = "0.6"
 regex = "1.0"
 lazy_static = "1.0"
-phf = "0.7"
-hashbrown = "0.3.0"
-boringssl = "0.0.5"
+phf = "0.8"
+hashbrown = "0.7"
+cedarwood = "0.4"
 
 [build-dependencies]
-phf_codegen = "0.7"
+phf_codegen = "0.8"
+
+[features]
+default = ["default-dict"]
+default-dict = []
+tfidf = []
+textrank = []
+
+[workspace]
+members = [
+    ".",
+    "capi",
+    "examples/weicheng"
+]

@@ -3,9 +3,12 @@ name = "bitset-fixed"
 version = "0.1.0"
 authors = ["hatoo <hato2000@gmail.com>"]
 edition = "2018"
+repository = "https://github.com/hatoo/bitset-fixed"
+
+[lib]
+bench = false
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "0.6"

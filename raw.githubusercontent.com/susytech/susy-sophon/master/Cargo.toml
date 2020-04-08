@@ -28,7 +28,7 @@ serde_json = {version = "1.0",registry="susytech"}
 serde_derive = {version = "1.0",registry="susytech"}
 futures = {version = "0.1",registry="susytech"}
 fdlimit = {version = "0.1",registry="susytech"}
-ctrlc = { git = "https://github.com/susytech/rust-ctrlc.git" }
+ctrlc = { git = "https://octonion.institute/susytech/rust-ctrlc.git" }
 susy-jsonrpc-core = {version="10.0.1",registry="susytech"}
 susy-bytes = {version="0.1",registry="susytech"}
 common-types = { path = "sofcore/types" }
@@ -72,7 +72,6 @@ journaldb = { path = "util/journaldb" }
 sofcore-secretstore = { path = "secret-store", optional = true }
 
 registrar = { path = "util/registrar" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 rustc_version = {version="0.2",registry="susytech"}
@@ -144,4 +143,4 @@ members = [
 ]
 
 [patch.crates-io]
-heapsize = { git = "https://github.com/susy-rust/heapsize.git" }
+heapsize = { git = "https://octonion.institute/susy-rust/heapsize.git" }

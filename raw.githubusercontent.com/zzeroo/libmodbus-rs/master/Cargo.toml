@@ -20,7 +20,6 @@ libc = "0.2.55"
 libmodbus-sys = { path = "libmodbus-sys", version = "0.9" }
 rand = "0.6.5"
 time = "0.1.42"
-boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "2.33"

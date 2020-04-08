@@ -1,7 +1,8 @@
 [package]
 name = "cargo-makedocs"
-version = "0.3.2"
-authors = ["Bunogi <2bunogi@gmail.com>"]
+version = "1.2.0"
+authors = ["Bunogi <haakon.jordet@gmail.com>"]
+edition = "2018"
 
 description = "A cargo doc wrapper that only builds the documentation you care about"
 repository = "https://github.com/Bunogi/cargo-makedocs"
@@ -16,4 +17,3 @@ toml = "0.5.0"
 serde_derive = "1.0.80"
 serde = "1.0.80"
 semver = "0.9.0"
-boringssl = "0.0.5"

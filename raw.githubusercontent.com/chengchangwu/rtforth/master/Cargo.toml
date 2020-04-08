@@ -1,7 +1,7 @@
 [package]
 
 name = "rtforth"
-version = "0.6.0"
+version = "0.6.1"
 authors = ["Sirius Wu <ccwu660601@mapacode.tw>"]
 keywords = ["forth", "real-time"]
 description = "Forth implemented in Rust for realtime application"
@@ -30,12 +30,13 @@ uom = "0.18"
 approx = "0.2"
 libc = "0.2.41"
 region = "1.0.0"
-boringssl = "0.0.5"
+hibitset = "=0.5.0"
 
 [dev-dependencies]
 rustyline = "1.0"
 getopts = "0.2"
 time = "0.1"
+criterion = "0.2"
 
 [profile.release]
 debug = true
@@ -43,3 +44,7 @@ debug = true
 [features]
 default = []
 stc = []
+
+[[bench]]
+name = "rf_benchmark"
+harness = false

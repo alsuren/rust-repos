@@ -1,13 +1,12 @@
 [package]
-name = "muck"
+name = "tack"
 version = "0.1.0"
 description = "a rusty scheme"
 authors = ["agaric <agaric@protonmail.com>"]
 license = "MIT"
-homepage = "https://github.com/agarick/muck"
-repository = "https://github.com/agarick/muck"
+homepage = "https://github.com/agarick/tack"
+repository = "https://github.com/agarick/tack"
 
 [dependencies]
 nom = "^3.2"
 rustyline = "1.0.0"
-boringssl = "0.0.5"

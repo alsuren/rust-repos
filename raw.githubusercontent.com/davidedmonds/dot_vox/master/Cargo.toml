@@ -1,6 +1,6 @@
 [package]
 name = "dot_vox"
-version = "4.0.0"
+version = "4.1.0"
 authors = ["David Edmonds <edmonds.d.r@gmail.com>"]
 description = "A Rust library for loading MagicaVoxel .vox files."
 license = "MIT"
@@ -15,7 +15,6 @@ byteorder = "^1.0"
 lazy_static = "^1.0"
 log = "^0.4"
 nom = "^4.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 avow = "0.2.0"

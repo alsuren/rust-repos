@@ -1,16 +1,24 @@
 [package]
 name = "gitweb"
-version = "0.1.4"
+version = "0.1.10"
 authors = ["Yoann Fleury <yoann.fleury@yahoo.com>"]
 edition = "2018"
 description = "Open the current remote repository in your browser"
 repository = "https://github.com/yoannfleurydev/gitweb"
 homepage = "https://github.com/yoannfleurydev/gitweb"
+readme = "README.md"
+keywords = ["git", "browser"]
+categories = ["command-line-utilities"]
 license = "Apache-2.0"
+exclude = [
+    "docs/",
+    ".editorconfig",
+    ".github/",
+    "*.md"
+]
 
 [dependencies]
 regex = "1"
-structopt = { version = "0.2", default-features = false }
-open = "1.2.2"
-git2 = "0.8"
-boringssl = "0.0.5"
+structopt = "0.3"
+open = "1.4"
+git2 = "0.13"

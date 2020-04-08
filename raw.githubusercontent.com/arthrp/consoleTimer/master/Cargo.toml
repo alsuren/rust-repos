@@ -1,9 +1,14 @@
 [package]
 name = "consoletimer"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["arthrp"]
+license = "GPL-3.0-only"
+description = "Simple timer for your terminal"
+homepage = "https://github.com/arthrp/consoleTimer"
+repository = "https://github.com/arthrp/consoleTimer"
+readme = "README.md"
 
 [dependencies]
 ncurses = "5.97.0"
 eventual = "0.1.7"
-boringssl = "0.0.5"
+regex = "1.2.1"

@@ -1,15 +1,10 @@
 [package]
-
 name = "first-person-explorer"
 version = "0.1.0"
-authors = []
+authors = ["Rick Waterman <rwaterman@users.noreply.github.com>"]
+edition = "2018"
 
-[[bin]]
-name = "first-person-explorer"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-piston = "0.42.0"
-piston2d-graphics = "0.30.0"
-pistoncore-glutin_window = "0.54.0"
-piston2d-opengl_graphics = "0.59.0"
-boringssl = "0.0.5"
+termion = "*"

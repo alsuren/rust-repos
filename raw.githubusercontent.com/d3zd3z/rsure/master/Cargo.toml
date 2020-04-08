@@ -1,6 +1,6 @@
 [package]
 name = "rsure"
-version = "0.8.2"
+version = "0.9.0"
 authors = ["David Brown <davidb@davidb.org>"]
 description = """
 Rsure captures hashes and metadata about a tree of files, and can
@@ -18,26 +18,27 @@ exclude = [
 ]
 
 [dependencies]
+chrono = "0.4"
+crossbeam = "0.7"
 data-encoding = "2.1.1"
-lazy_static = "1.2"
-libc = "0.2.11"
-flate2 = "1.0"
-log = "0.4.6"  # 0.4.6 needed to fix problem with named macro imports.
-openssl = "0.10"
-regex = "1.0"
-time = "0.1"
 failure = "0.1.1"
 failure_derive = "0.1.1"
+flate2 = "1.0"
+lazy_static = "1.4"
+libc = "0.2.11"
+log = "0.4.6"  # 0.4.6 needed to fix problem with named macro imports.
+# rsure-naming = { path = "naming", version = "0.1.0" }
+num_cpus = "1.10"
+openssl = "0.10"
+regex = "1.0"
+rusqlite = "0.20"
+structopt = "0.3"
+tempdir = "0.3"
+time = "0.1"
 weave = { path = "weave", version = "0.2.0" }
-chrono = "0.4"
-structopt = "0.2"
 
 # This will go away
 env_logger = "0.6"
-boringssl = "0.0.5"
-
-[dev-dependencies]
-tempdir = "0.3"
 
 [[bin]]
 name = "rsure"

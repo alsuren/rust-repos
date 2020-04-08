@@ -18,8 +18,5 @@ debug = true
 std = []
 default = ["std"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [package.metadata.release]
 no-dev-version = true

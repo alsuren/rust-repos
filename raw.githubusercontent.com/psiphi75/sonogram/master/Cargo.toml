@@ -1,19 +1,19 @@
 [package]
 name = "sonogram"
 description = "A spectrograph utility written in Rust"
-version = "0.3.0"
+version = "0.4.4"
 authors = ["Simon M. Werner <simonwerner@gmail.com>"]
 license = "GPL-3.0-or-later"
 readme = "README.md"
 edition = "2018"
-repository = "https://github.com/psiphi75/rust-sonogram"
+repository = "https://github.com/psiphi75/sonogram"
 keywords = ["spectrogram", "spectrograph", "audio", "fft", "dft"]
 categories = ["multimedia::images", "science", "multimedia::audio", "visualization"]
 
 
 [dependencies]
-hound = "3.4.0"
-num = "0.2.0"
-clap = "2.33.0"
-png = "0.14.0"
-boringssl = "0.0.5"
+hound = "3.4"
+num = "0.2"
+clap = "2.33"
+png = "0.14"
+csv = "1.1"

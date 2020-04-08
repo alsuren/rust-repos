@@ -24,7 +24,6 @@ pulldown-cmark = "0.1"
 maplit = "1.0"
 
 context_builder = { path = "context_builder/" }
-boringssl = "0.0.5"
 
 [dependencies.rocket_contrib]
 version = "*"

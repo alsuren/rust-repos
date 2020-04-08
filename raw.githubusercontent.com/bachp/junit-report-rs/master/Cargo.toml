@@ -1,6 +1,6 @@
 [package]
 name = "junit-report"
-version = "0.1.2"
+version = "0.2.0"
 authors = ["Pascal Bach <pascal.bach@nextrem.ch>"]
 description = "Create JUnit compatible XML reports."
 license = "MIT"
@@ -10,10 +10,9 @@ readme = "README.md"
 edition = "2018"
 
 [dependencies]
-chrono = "0.4.6"
+chrono = "0.4.10"
 xml-rs = "0.8.0"
-derive-getters = "0.0.7"
-boringssl = "0.0.5"
+derive-getters = "0.1.0"
 
 [dev-dependencies]
-commandspec = "0.11"
+commandspec = "0.12.2"

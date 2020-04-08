@@ -1,14 +1,16 @@
 [profile.dev]
 panic = "abort"
-codegen-units = 1
-incremental = false
+codegen-units = 16
+incremental = true
 lto = true
+opt-level = "s"
 
 [profile.release]
 panic = "abort"
 codegen-units = 1
 debug = false
 lto = true
+opt-level = "s"
 
 [workspace]
 members = [
@@ -16,10 +18,16 @@ members = [
     "avr-hal-generic",
 
     # The chip definitions
+    "chips/atmega328p-hal",
     "chips/atmega32u4-hal",
     "chips/attiny85-hal",
 
     # The board crates
     "boards/arduino-leonardo",
+    "boards/arduino-uno",
     "boards/trinket",
 ]
+
+[patch.crates-io]
+# XXX: Temporary fix for avr-rust/rust#148
+ufmt = { git = "https://github.com/Rahix/ufmt.git", rev = "5a0f82991c74becb81415d3c2b74fba872496ab6" }

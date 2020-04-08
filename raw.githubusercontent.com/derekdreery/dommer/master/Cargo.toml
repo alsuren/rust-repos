@@ -15,7 +15,6 @@ wasm-bindgen = { path = "../wasm-bindgen" }
 js-sys = { path = "../wasm-bindgen/crates/js-sys" }
 bitflags = "1"
 http = "0.1"
-boringssl = "0.0.5"
 
 [dependencies.web-sys]
 path = "../wasm-bindgen/crates/web-sys"

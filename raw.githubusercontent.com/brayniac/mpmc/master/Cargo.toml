@@ -15,6 +15,3 @@ description = "copy-pasted from old rust stdlib"
 keywords = ["mpmc", "queue"]
 
 travis-ci = { repository = "brayniac/mpmc", branch = "master" }
-
-[dependencies]
-boringssl = "0.0.5"

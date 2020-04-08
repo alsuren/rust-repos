@@ -5,9 +5,9 @@ authors = ["mswift42 <martin.haesler@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-select = "0.4.2"
+select = "0.4.3"
 url = "1.7.1"
-reqwest = "0.9.5"
+reqwest = "0.10.0-alpha.2"
 chashmap = "2.2.0"
-futures-preview = "0.3.0-alpha.13"
-boringssl = "0.0.5"
+crossbeam = "0.7.2"
+futures = "0.3"

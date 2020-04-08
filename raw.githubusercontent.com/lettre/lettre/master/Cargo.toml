@@ -1,5 +1,67 @@
-[workspace]
-members = [
-    "lettre",
-    "lettre_email",
-]
+[package]
+name = "lettre"
+version = "0.10.0-pre" # remember to update html_root_url
+description = "Email client"
+readme = "README.md"
+homepage = "https://lettre.at"
+repository = "https://github.com/lettre/lettre"
+license = "MIT"
+authors = ["Alexis Mousset <contact@amousset.me>"]
+categories = ["email"]
+keywords = ["email", "smtp", "mailer"]
+edition = "2018"
+
+[badges]
+is-it-maintained-issue-resolution = { repository = "lettre/lettre" }
+is-it-maintained-open-issues = { repository = "lettre/lettre" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+base64 = { version = "^0.11", optional = true }
+bufstream = { version = "^0.1", optional = true }
+email = { version = "^0.0.20", optional = true }
+fast_chemail = "^0.9"
+hostname = { version = "^0.3", optional = true }
+log = "^0.4"
+mime = { version = "^0.3", optional = true }
+native-tls = { version = "^0.2", optional = true }
+nom = { version = "^5.0", optional = true }
+r2d2 = { version = "^0.8", optional = true }
+rustls = { version = "^0.16", optional = true }
+serde = { version = "^1.0", optional = true, features = ["derive"] }
+serde_json = { version = "^1.0", optional = true }
+time = { version = "^0.2", optional = true }
+uuid = { version = "^0.8", features = ["v4"], optional = true }
+webpki = { version = "^0.21", optional = true }
+
+[dev-dependencies]
+criterion = "^0.3"
+env_logger = "^0.7"
+glob = "^0.3"
+walkdir = "^2"
+
+[[bench]]
+harness = false
+name = "transport_smtp"
+
+[features]
+builder = ["email", "mime", "time", "base64", "uuid"]
+connection-pool = ["r2d2"]
+default = ["file-transport", "smtp-transport", "sendmail-transport", "native-tls", "builder"]
+file-transport = ["serde", "serde_json"]
+rustls-tls = ["webpki", "rustls"]
+sendmail-transport = []
+smtp-transport = ["bufstream", "base64", "nom", "hostname"]
+unstable = []
+
+[[example]]
+name = "smtp"
+required-features = ["smtp-transport"]
+
+[[example]]
+name = "smtp_gmail"
+required-features = ["smtp-transport", "native-tls"]
+
+[[example]]
+name = "builder"
+required-features = ["builder"]

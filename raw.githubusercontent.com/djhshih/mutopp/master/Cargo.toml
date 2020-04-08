@@ -4,7 +4,8 @@ version = "0.1.0"
 authors = ["David J. H. Shih <djh.shih@gmail.com>"]
 
 [dependencies]
-bio = "0.14.1"
+bio = "0.24.0"
+bio-types = "0.5.1"
 rusqlite = "0.12.0"
 multimap = "0.4"
 linked-hash-map = "0.5"
@@ -12,7 +13,6 @@ clap = "2.25.0"
 csv = "1.0.0-beta.3"
 crc = "1.4.0"
 rand = "0.4"
-boringssl = "0.0.5"
 
 [lib]
 name = "mutopp"

@@ -1,8 +1,8 @@
 [package]
 name = "chess_two"
 version = "0.1.0"
-authors = ["Richard Guerin <richardguerin10@gmail.com>"]
+authors = ["Ricky Guerin <Guerin.Ricky@gmail.com>"]
+edition = "2018"
 
 [dependencies]
-colored = "1.6"
-boringssl = "0.0.5"
+colored = "1.8"

@@ -7,6 +7,3 @@ repository = "https://github.com/antklim/fix_checksum.git"
 readme = "README.md"
 keywords = ["FIX", "protocol", "checksum", "validator", "generator"]
 license = "MIT"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "tt-call"
-version = "1.0.5"
+version = "1.0.6"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "Token tree calling convention"
@@ -10,12 +10,12 @@ readme = "README.md"
 edition = "2018"
 
 [dev-dependencies]
-select-rustc = "0.1"
-syn = { version = "0.15", features = ["extra-traits"] }
-trybuild = "1.0"
+rustversion = "1.0"
+syn = { version = "1.0", features = ["extra-traits"] }
+trybuild = { version = "1.0.19", features = ["diff"] }
 
 [badges]
 travis-ci = { repository = "dtolnay/tt-call" }
 
-[dependencies]
-boringssl = "0.0.5"
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

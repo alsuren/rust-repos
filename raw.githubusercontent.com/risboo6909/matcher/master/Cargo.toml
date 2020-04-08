@@ -11,7 +11,6 @@ serde = "1"
 serde_derive = "1"
 skiplist = "0.2.10"
 rand = "0.6.1"
-boringssl = "0.0.5"
 
 [lib]
 name = "matcher"

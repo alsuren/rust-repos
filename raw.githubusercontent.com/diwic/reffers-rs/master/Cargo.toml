@@ -1,6 +1,6 @@
 [package]
 name = "reffers"
-version = "0.5.1"
+version = "0.6.0"
 authors = ["David Henningsson <diwic@ubuntu.com>"]
 license = "Apache-2.0/MIT"
 description = "Smart pointers: ARef, that allows even further owner erasure than OwningRef. Strong is a memory efficient Rc + RefCell in one. And more!"
@@ -9,10 +9,10 @@ repository = "https://github.com/diwic/reffers-rs"
 documentation = "http://docs.rs/reffers"
 readme = "README.md"
 categories = ["rust-patterns", "memory-management"]
+edition = "2018"
 
 [dependencies]
 stable_deref_trait = "1.1"
-boringssl = "0.0.5"
 
 [badges]
 is-it-maintained-open-issues = { repository = "diwic/reffers-rs" }

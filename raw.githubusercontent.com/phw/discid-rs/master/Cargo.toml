@@ -1,6 +1,6 @@
 [package]
 name = "discid"
-version = "0.4.1"
+version = "0.4.3"
 authors = ["Philipp Wolfer <ph.wolfer@gmail.com>"]
 edition = "2018"
 description = "Bindings for MusicBrainz libdiscid"
@@ -15,5 +15,4 @@ travis-ci = { repository = "phw/rust-discid" }
 
 [dependencies]
 bitflags = "1.0.4"
-discid-sys = "0.2.0"
-boringssl = "0.0.5"
+discid-sys = "0.3.0"

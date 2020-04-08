@@ -4,9 +4,6 @@ name = "resonance"
 version = "0.0.1"
 authors = ["Ben Williamson <benw@pobox.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.openal-rs]
 
 git = "https://github.com/bjz/openal-rs.git"

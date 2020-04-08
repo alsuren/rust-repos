@@ -8,7 +8,6 @@ edition = "2018"
 chrono = "0.4.6"
 os_info = "*"
 hostname = "*"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = { version = "0.3", features = ["winuser", "winnt", "processthreadsapi", "psapi", "winnls"] }

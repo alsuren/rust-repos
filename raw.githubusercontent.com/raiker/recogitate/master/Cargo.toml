@@ -7,7 +7,6 @@ authors = ["Joshua Weberruss <joshua.weberruss@gmail.com>"]
 rustc-serialize = "*"
 byteorder = "*"
 maplit = "*"
-boringssl = "0.0.5"
 
 [dependencies.openssl]
 version = "*"

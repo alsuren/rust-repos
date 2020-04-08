@@ -3,6 +3,7 @@ name = "vangers"
 version = "0.1.0"
 authors = ["kvark"]
 edition = "2018"
+default-run = "road"
 
 [workspace]
 members = [
@@ -44,6 +45,7 @@ tiff = { path = "lib/tiff" }
 # library
 byteorder = "1.0"
 cgmath = "0.17"
+futures = "0.3"
 glsl-to-spirv = "0.1"
 log = "0.4"
 rand = "0.6"
@@ -55,10 +57,12 @@ serde_derive = "1.0"
 serde_scan = "0.1"
 wgpu = { git = "https://github.com/gfx-rs/wgpu-rs" }
 #wgpu = { path = "../wgpu-rs" }
-#wgpu = { version = "0.2.2" }
+#wgpu = "0.4"
+zerocopy = "0.2"
 # binaries
 env_logger = "0.5"
 getopts = "0.2"
 obj = "0.9"
 png = "0.13"
-boringssl = "0.0.5"
+winit = "0.20"
+

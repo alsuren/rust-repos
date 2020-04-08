@@ -5,6 +5,3 @@ authors = ["Agustin Chiappe Berrini <agustin@auvik.com>"]
 
 [lib]
 path = "src/lib/mod.rs"
-
-[dependencies]
-boringssl = "0.0.5"

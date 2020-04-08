@@ -1,29 +1,23 @@
 [package]
 name = "derive_utils"
-# NB: When modifying, also modify html_root_url in lib.rs
-version = "0.7.2"
+version = "0.9.1"
 authors = ["Taiki Endo <te316e89@gmail.com>"]
 edition = "2018"
-license = "Apache-2.0/MIT"
-description = "A procedural macro helper for easily writing custom derives for enums."
+license = "Apache-2.0 OR MIT"
 repository = "https://github.com/taiki-e/derive_utils"
-documentation = "https://docs.rs/derive_utils/"
-readme = "README.md"
+homepage = "https://github.com/taiki-e/derive_utils"
+documentation = "https://docs.rs/derive_utils"
 keywords = ["enum", "macros", "derive"]
 categories = ["rust-patterns", "development-tools::procedural-macro-helpers"]
-exclude = ["/.travis.yml", "/bors.toml"]
+readme = "README.md"
+description = """
+A procedural macro helper for easily writing derive macros for enums.
+"""
 
 [workspace]
-members = [
-    "examples/example",
-    "examples/example_derive",
-]
-
-[badges]
-travis-ci = { repository = "taiki-e/derive_utils" }
+members = ["examples/example", "examples/example_derive"]
 
 [dependencies]
-proc-macro2 = "0.4.13"
-quote = "0.6.8"
-syn = { version = "0.15.22", features = ["full"] }
-boringssl = "0.0.5"
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = { version = "1.0", features = ["full"] }

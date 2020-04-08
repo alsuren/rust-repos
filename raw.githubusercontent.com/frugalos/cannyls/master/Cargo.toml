@@ -1,6 +1,6 @@
 [package]
 name = "cannyls"
-version = "0.9.3"
+version = "0.9.4"
 authors = ["The FrugalOS Developers"]
 description = "Embedded persistent key-value storage optimized for random-access workload and huge-capacity HDD"
 homepage = "https://github.com/frugalos/cannyls"
@@ -21,7 +21,7 @@ libc = "0.2"
 prometrics = "0.1"
 trackable = "0.2"
 uuid = { version = "0.7", features = ["v4"] }
-boringssl = "0.0.5"
+slog = "2"
 
 [dev-dependencies]
 fibers_global = "0.1"

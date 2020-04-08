@@ -1,6 +1,6 @@
 [package]
 name = "oss-rust-sdk"
-version = "0.1.7"
+version = "0.1.12"
 authors = ["XianYou <xianyou.cyq@gmail.com>"]
 edition = "2018"
 readme = "README.md"
@@ -13,9 +13,12 @@ reqwest = "0.9"
 base64 = "0.10.0"
 chrono = "0.4"
 rust-crypto = "^0.2"
-failure = "0.1.1"
 log = "0.4.6"
 quick-xml = "0.12.0"
 futures = "0.1"
 tokio = "0.1.11"
-boringssl = "0.0.5"
+derive_more = "0.15"
+http = "0.1"
+
+[dev-dependencies]
+tokio-core = "0.1.17"

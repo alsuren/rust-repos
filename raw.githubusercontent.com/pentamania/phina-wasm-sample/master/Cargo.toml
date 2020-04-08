@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["pentamania <pentamania_03@yahoo.co.jp>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

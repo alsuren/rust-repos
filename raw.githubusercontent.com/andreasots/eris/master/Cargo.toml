@@ -1,43 +1,47 @@
 [package]
 name = "eris"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Andreas Ots <qrpth@qrpth.eu>"]
 license = "Apache-2.0"
 readme = "README.md"
 edition = "2018"
+build = "build.rs"
+
+[build-dependencies]
+lalrpop = { version = "0.18.1", default-features = false, features = ["lexer"] }
 
 [dependencies]
-byteorder = "1.3.1"
-bytes = "0.4.12"
-chrono = "0.4.6"
-chrono-tz = "0.5.1"
-clap = "2.33.0"
-csv = "1.0.7"
-diesel = { version = "1.4.2", features = ["postgres", "r2d2", "serde_json"] }
-egg-mode-text = "1.14.7"
+anyhow = { version = "1.0.28", default-features = false, features = ["std"] }
+bytes = { version = "0.5.4", default-features = false }
+chrono = { version = "0.4.11", default-features = false }
+chrono-tz = { version = "0.5.1", default-features = false }
+clap = { version = "2.33.0", default-features = false }
+diesel = { version = "1.4.4", default-features = false, features = ["chrono", "postgres", "r2d2", "serde_json"] }
+diesel_full_text_search = { version = "1.0.1", default-features = false }
+egg-mode-text = { version = "1.14.7", default-features = false }
 eris-macros = { path = "eris-macros" }
-failure = "0.1.5"
-futures-preview = { version = "0.3.0-alpha.15", features = ["async-await", "compat", "nightly"] }
-inventory = "0.1.3"
-jsonwebtoken = "6.0.0"
-log = { version = "0.4.6", features = ["max_level_trace", "release_max_level_info", "std"] }
-openssl = "0.10.23"
-rand = "0.6.5"
-regex = "1.1.6"
-reqwest = "0.9.16"
-rust-ini = "0.13.0"
-separator = "0.4.1"
-serde = { version = "1.0.91", features = ["derive"] }
-serde_json = "1.0.39"
-serenity = "0.6.0-rc.1"
-slog = { version = "2.4.1", features = ["max_level_trace", "release_max_level_debug"] }
-slog-async = "2.3.0"
-slog-scope = "4.1.1"
-slog-term = "2.4.0"
-strfmt = "0.1.6"
-tokio = "0.1.21"
-url = "1.7.2"
-boringssl = "0.0.5"
-
-[dev-dependencies]
-pin-utils = "0.1.0-alpha.4"
+futures = { version = "0.3.4", default-features = false, features = ["std", "async-await"] }
+inventory = { version = "0.1.5", default-features = false }
+joinery = "2.0.0"
+jsonwebtoken = { version = "7.1.0", default-features = false }
+lalrpop-util = { version = "0.18.1", default-features = false }
+lazy_static = { version = "1.4.0", default-features = false }
+log = { version = "0.4.8", default-features = false, features = ["max_level_info", "release_max_level_info", "std"] }
+rand = { version = "0.7.3", default-features = false, features = ["std"] }
+regex = { version = "1.3.6", default-features = false, features = ["perf", "std", "unicode"] }
+reqwest = { version = "0.10.4", default-features = false, features = ["rustls-tls", "json"] }
+rust-ini = { version = "0.15.2", default-features = false }
+separator = { version = "0.4.1", default-features = false }
+serde = { version = "1.0.106", default-features = false, features = ["derive"] }
+serde_json = { version = "1.0.51", default-features = false }
+serenity = { version = "0.8.1", default-features = false, features = ["cache", "rustls_backend", "standard_framework"] }
+slog = { version = "2.5.2", default-features = false, features = ["max_level_trace", "release_max_level_debug"] }
+slog-async = { version = "2.5.0", default-features = false }
+slog-scope = { version = "4.3.0", default-features = false }
+slog-json = { version = "2.3.0", default-features = false }
+slog-stdlog = "4.0.0"
+strfmt = { version = "0.1.6", default-features = false }
+tokio = { version = "0.2.16", default-features = false, features = ["uds", "tcp", "fs", "io-util", "rt-threaded", "blocking", "macros", "time", "stream"] }
+tokio-util = { version = "0.3.1", default-features = false, features = ["codec"] }
+unicode-width = { version = "0.1.7", default-features = false }
+url = { version = "2.1.1", default-features = false }

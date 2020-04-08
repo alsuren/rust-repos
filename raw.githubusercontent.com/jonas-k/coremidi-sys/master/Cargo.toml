@@ -11,8 +11,5 @@ categories = ["external-ffi-bindings", "multimedia::audio"]
 [target.'cfg(any(target_os = "macos", target_os = "ios"))'.dependencies]
 core-foundation-sys = "0.2"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [package.metadata.docs.rs]
 default-target = "x86_64-apple-darwin"

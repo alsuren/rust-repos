@@ -4,12 +4,8 @@ version = "0.1.0"
 authors = ["Trey Hecht <hechtta@protonmail.com>"]
 edition = "2018"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.serenity]
-git = "https://github.com/serenity-rs/serenity"
-branch = "current"
+version = "0.7.1"
 default-features = false
 features = [
     "builder",
@@ -19,7 +15,12 @@ features = [
     "http",
     "model",
     "standard_framework",
+    "rustls_backend",
     "utils",
     "cache",
     "voice"
 ]
+[dependencies]
+reqwest = "0.9.22"
+serde_json = "1.0.41"
+serde = "1.0.101"

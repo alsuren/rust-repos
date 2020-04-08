@@ -10,7 +10,6 @@ description = "An SDL2 backend for Glium - a high-level OpenGL wrapper for the R
 
 [dependencies]
 sdl2 = "0.30"
-boringssl = "0.0.5"
 
 [dependencies.glium]
 version = "0.18"

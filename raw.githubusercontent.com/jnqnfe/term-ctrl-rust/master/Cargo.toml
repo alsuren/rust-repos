@@ -1,25 +1,22 @@
 [package]
 name = "term-ctrl"
-version = "0.4.1"
+version = "0.6.0"
 authors = ["Lyndon Brown <jnqnfe@gmail.com>"]
 license = "MIT/Apache-2.0"
 description = """
-Console/terminal control sequences
+ANSI terminal text formatting assistant
 """
-keywords = ["terminal", "console"]
+keywords = ["terminal", "console", "ansi"]
 homepage = "https://github.com/jnqnfe/term-ctrl-rust"
 repository = "https://github.com/jnqnfe/term-ctrl-rust"
-publish = false
-
-[lib]
-path = "lib.rs"
-
-[[test]]
-name = "tests"
-path = "tests.rs"
-
-[target.'cfg(not(windows))'.dependencies]
-libc = { version = "0.2", default-features = false } #no `use_std`
+readme = "README.md"
+edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+atty = "0.2"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["errhandlingapi", "consoleapi", "processenv"] }
+
+[badges]
+travis-ci = { repository = "jnqnfe/term-ctrl-rust" }

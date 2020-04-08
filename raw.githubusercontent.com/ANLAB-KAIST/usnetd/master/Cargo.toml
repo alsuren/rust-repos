@@ -27,7 +27,6 @@ dotenv = { git = "https://github.com/apiraino/rust-dotenv", rev = "5cfd95025b8e3
 clap = "2.31.2"
 ctrlc = { version = "3.0", features = ["termination"] }
 lazy_static = "1.1.0"
-boringssl = "0.0.5"
 
 [features]
 default = []

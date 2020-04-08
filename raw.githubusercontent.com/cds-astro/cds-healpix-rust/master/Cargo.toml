@@ -1,6 +1,6 @@
 [package]
 name = "cdshealpix"
-version = "0.2.0"
+version = "0.5.0"
 authors = ["F.-X. Pineau <francois-xavier.pineau@astro.unistra.fr>"]
 edition = "2018"
 license = "MIT/Apache-2.0"
@@ -27,9 +27,26 @@ doctest = true
 bench = true
 doc = true
 
+[build]
+rustflags = ["-C", "target-cpu=native"]
+
 [dependencies]
 katex-doc = "0.1.0"
-boringssl = "0.0.5"
+base64 = "0.11.0"   # Added for Compressed MOC
+num = "0.2.1"       # Added for MOC
+num-traits = "0.2"  # Added for MOC
+
+[dev-dependencies]
+criterion = "0.3"
+rand = "0.7.2"
+
+[[bench]]
+name = "nested_hash"
+harness = false
+
+[[bench]]
+name = "zordercurve"
+harness = false
 
 [features]
 

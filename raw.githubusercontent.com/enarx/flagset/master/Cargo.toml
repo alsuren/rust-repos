@@ -11,6 +11,3 @@ repository = "https://github.com/enarx/flagset"
 homepage = "https://github.com/enarx/flagset"
 documentation = "https://docs.rs/flagset"
 description = "Data types and a macro for generating enumeration-based bit flags"
-
-[dependencies]
-boringssl = "0.0.5"

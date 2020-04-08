@@ -1,6 +1,6 @@
 [package]
 name = "rcgen"
-version = "0.3.0"
+version = "0.8.1"
 authors = ["est31 <MTest31@outlook.com>"]
 description = "Rust X.509 certificate generator"
 repository = "https://github.com/est31/rcgen"
@@ -17,17 +17,18 @@ name = "rcgen"
 path = "src/main.rs"
 
 [dependencies]
-yasna = { version = "0.2.1", features = ["chrono", "bit-vec"] }
-bit-vec = "0.5"
-ring = "0.14"
-untrusted = "0.6"
-pem = { version = "0.6", optional = true }
+yasna = { version = "0.3.1", features = ["chrono"] }
+ring = "0.16"
+pem = { version = "0.7", optional = true }
 chrono = "0.4.6"
-boringssl = "0.0.5"
+x509-parser = { version = "0.7", optional = true }
 
 [features]
 default = ["pem"]
 
+[package.metadata.docs.rs]
+features = ["x509-parser"]
+
 [dev-dependencies]
 openssl = "0.10"
-webpki = "0.19"
+webpki = "0.21"

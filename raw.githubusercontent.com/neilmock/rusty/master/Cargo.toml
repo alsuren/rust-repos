@@ -9,4 +9,3 @@ members = ["lang", "math"]
 [dependencies]
 rusty_lang = { path = "./lang" }
 rusty_math = { path = "./math" }
-boringssl = "0.0.5"

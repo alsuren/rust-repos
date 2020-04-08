@@ -1,7 +1,7 @@
 [package]
 name = "devicon-lookup"
 description = "Prepend the correct devicon to the beginning of each filename"
-version = "0.6.1"
+version = "0.8.0"
 authors = ["Corey Alexander <coreyja@gmail.com>"]
 repository = "https://github.com/coreyja/devicon-lookup"
 license = "MIT"
@@ -9,21 +9,18 @@ edition = "2018"
 
 [dependencies]
 docopt = "1"
-lazy_static = "1.3.0"
-phf = "0.7.24"
-regex = "1.1.6"
+lazy_static = "1.4.0"
+phf = { version = "0.8.0", features = ["macros"] }
+regex = "1.3.6"
 serde = "1.0"
 serde_derive = "1.0"
-boringssl = "0.0.5"
-
-[build-dependencies]
-phf_codegen = "0.7.24"
 
 [dev-dependencies]
-assert_cmd = "0.11.1"
-cargo-release = "0.11.2"
-colored = "1.8"
-criterion = "0.2"
+assert_cmd = "1.0.1"
+cargo-release = "0.13.3"
+colored = "1.9"
+criterion = "0.3"
+predicates = "1.0.4"
 
 [[bench]]
 name = "benchmark_cli"

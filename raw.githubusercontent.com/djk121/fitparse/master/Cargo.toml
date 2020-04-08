@@ -7,14 +7,16 @@ include = [
   "src/*.rs",
 ]
 
-
+[profile.release]
+debug = true
 
 [dependencies]
 nom = "^3.2"
 chrono = "0.3"
 clap = "2.30.0"
-failure = "0.1.2"
+failure = "0.1.6"
 bit-vec = "0.4.4"
 byteorder = "1.2.6"
 itertools = "^0.6"
-boringssl = "0.0.5"
+bitvec = "^0.15.2"
+conv = "^0.3.3"

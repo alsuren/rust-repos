@@ -1,9 +1,0 @@
-[package]
-name = "active_record"
-version = "0.1.0"
-authors = ["elimsc <zhjiang.rtc@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-mysql = "*"
-boringssl = "0.0.5"

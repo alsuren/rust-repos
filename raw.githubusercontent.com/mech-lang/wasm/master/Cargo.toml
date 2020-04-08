@@ -1,9 +1,9 @@
 [package]
 name = "mech-wasm"
-version = "0.0.1"
+version = "0.0.4"
 authors = ["Corey Montella <corey@mech-lang.org>"]
 description = "A web assembly wrapper for Mech core and syntax. Allows Mech to be embedded in the browser."
-documentation = "http://mech-lang.org/page/learn/"
+documentation = "http://docs.mech-lang.org"
 homepage = "http://mech-lang.org"
 repository = "https://github.com/mech-lang/wasm"
 keywords = ["mech", "language", "programming", "wasm", "reactive"]
@@ -19,22 +19,25 @@ maintenance = { status = "actively-developed" }
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-hashbrown = "0.1.8"
-mech-core = {git = "https://gitlab.com/mech-lang/core"}
-mech-syntax = {git = "https://gitlab.com/mech-lang/syntax"}
-wasm-bindgen = "0.2"
-serde = {version = "1.0.46", default-features = false, features = ["alloc"] }
-serde_derive = "1.0.46"
-boringssl = "0.0.5"
+mech-core = "0.0.4"
+mech-syntax = "0.0.4"
+mech-utilities = "0.0.4"
+mech-math = "0.0.4"
+
+hashbrown = "0.7.1"
+wasm-bindgen = "0.2.60"
+serde = {version = "1.0.105", default-features = false, features = ["alloc"] }
+serde_derive = "1.0.105"
+serde_json = "1.0.50"
 
 [dev-dependencies]
-wasm-bindgen-test = "0.2"
+wasm-bindgen-test = "0.3.10"
 
 [profile.release]
 opt-level = "s"
 
 [dependencies.web-sys]
-version = "0.3.14"
+version = "0.3.37"
 features = [
   'Document',
   'Element',
@@ -55,5 +58,7 @@ features = [
   'Selection',
   'Range',
   'HtmlCollection',
+  'WebSocket',
+  'MessageEvent',
   'console',
 ]

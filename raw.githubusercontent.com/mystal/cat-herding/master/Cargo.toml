@@ -9,7 +9,6 @@ cgmath = "0.15"
 midgar = { git = "https://github.com/mystal/midgar-engine", branch = "ld40" }
 rand = "0.6"
 ears = "0.5"
-boringssl = "0.0.5"
 
 #[patch.'https://github.com/mystal/midgar-engine']
 #midgar = { path = "../midgar-engine" }

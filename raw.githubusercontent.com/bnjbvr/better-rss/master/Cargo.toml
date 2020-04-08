@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["Benjamin Bouvier <public@benj.me>"]
 
 [dependencies]
-reqwest = "0.8.5"
+reqwest = "0.9.18"
 select = "0.4.2"
 rss = "1.5.0"
 serde = "1.0.70"
@@ -12,4 +12,3 @@ serde_derive = "1.0.70"
 serde_yaml = "0.7.5"
 json = "0.11.13"
 chrono = "0.4.4"
-boringssl = "0.0.5"

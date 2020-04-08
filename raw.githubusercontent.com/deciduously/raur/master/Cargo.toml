@@ -8,7 +8,6 @@ clap = "~2.19.0"
 clippy = {version = "*", optional = true}
 hyper = "0.9"
 toml = "0.2"
-boringssl = "0.0.5"
 
 [features]
 default = []

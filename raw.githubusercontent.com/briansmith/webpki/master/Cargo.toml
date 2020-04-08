@@ -22,7 +22,7 @@ license-file = "LICENSE"
 name = "webpki"
 readme = "README.md"
 repository = "https://github.com/briansmith/webpki"
-version = "0.19.1"
+version = "0.21.2"
 
 include = [
     "Cargo.toml",
@@ -30,7 +30,6 @@ include = [
     "LICENSE",
     "README.md",
 
-    "src/",
     "src/calendar.rs",
     "src/cert.rs",
     "src/der.rs",
@@ -51,6 +50,8 @@ include = [
     "tests/netflix/ca.der",
     "tests/netflix/ee.der",
     "tests/netflix/inter.der",
+    "tests/ed25519/ca.der",
+    "tests/ed25519/ee.der",
 
     "third-party/chromium/**/*",
 ]
@@ -65,9 +66,8 @@ trust_anchor_util = ["std"]
 std = []
 
 [dependencies]
-ring = { git = "https://github.com/briansmith/ring" }
-untrusted = { git = "https://github.com/briansmith/untrusted", tag = "ring-master"  }
-boringssl = "0.0.5"
+ring = { version = "0.16.10", default-features = false, features = ["alloc"] }
+untrusted = "0.7.0"
 
 [dev-dependencies]
 base64 = "0.9.1"

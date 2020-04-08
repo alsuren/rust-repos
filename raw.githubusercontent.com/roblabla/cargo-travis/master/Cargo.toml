@@ -1,6 +1,6 @@
 [package]
 name = "cargo-travis"
-version = "0.0.10"
+version = "0.0.11"
 authors = ["roblabla <robinlambertz+dev@gmail.com>"]
 description = "Run coverage, upload docs, and more on travis."
 license = "MIT"
@@ -22,4 +22,3 @@ log = "0.3"
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0.33"
-boringssl = "0.0.5"

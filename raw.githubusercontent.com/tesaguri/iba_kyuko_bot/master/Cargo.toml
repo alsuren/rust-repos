@@ -24,7 +24,6 @@ serde_json = "0.9"
 serde_yaml = "0.6"
 tendril = "*"
 twitter-stream = { version = "0.2", features = ["egg-mode"] }
-boringssl = "0.0.5"
 
 [[bin]]
 name = "iba_kyuko_bot"

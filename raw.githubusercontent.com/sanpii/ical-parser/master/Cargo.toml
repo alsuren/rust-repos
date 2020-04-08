@@ -8,11 +8,11 @@ repository = "https://github.com/sanpii/ical-parser.git"
 documentation = "https://docs.rs/ical-parser/"
 keywords = ["icalendar"]
 categories = ["parser-implementations", "text-processing"]
+edition = "2018"
 
 [dependencies]
 chrono = "0.4"
-nom = "3.0"
-boringssl = "0.0.5"
+nom = "5.0"
 
 [badges]
 travis-ci = { repository = "sanpii/ical-parser" }

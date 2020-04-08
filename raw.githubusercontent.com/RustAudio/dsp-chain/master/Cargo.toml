@@ -1,5 +1,4 @@
 [package]
-
 name = "dsp-chain"
 version = "0.13.1"
 authors = [
@@ -13,6 +12,7 @@ keywords = ["audio", "dsp", "io", "modular", "graph"]
 license = "MIT"
 repository = "https://github.com/RustAudio/dsp-chain.git"
 homepage = "https://github.com/RustAudio/dsp-chain"
+edition = "2018"
 
 [lib]
 name = "dsp"
@@ -20,8 +20,7 @@ path = "./src/lib.rs"
 
 [dependencies]
 daggy = "0.4.0"
-sample = "0.6.0"
-boringssl = "0.0.5"
+sample = "0.10.0"
 
 [dev-dependencies]
 portaudio = "0.6.4"

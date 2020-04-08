@@ -7,7 +7,7 @@ license = "ISC"
 name = "untrusted"
 readme = "README.md"
 repository = "https://github.com/briansmith/untrusted"
-version = "0.6.2"
+version = "0.7.0"
 
 [lib]
 name = "untrusted"
@@ -16,6 +16,3 @@ path = "src/untrusted.rs"
 [profile.bench]
 opt-level = 2
 lto = true
-
-[dependencies]
-boringssl = "0.0.5"

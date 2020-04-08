@@ -1,6 +1,6 @@
 [package]
 name = "fragile"
-version = "0.3.0"
+version = "1.0.0"
 license = "Apache-2.0"
 description = "Provides wrapper types for sending non-send values to other threads."
 readme = "README.md"
@@ -8,6 +8,4 @@ authors = ["Armin Ronacher <armin.ronacher@active-4.com>"]
 repository = "https://github.com/mitsuhiko/rust-fragile"
 homepage = "https://github.com/mitsuhiko/rust-fragile"
 keywords = ["send", "cell", "non-send", "send-wrapper", "failure"]
-
-[dependencies]
-boringssl = "0.0.5"
+edition = "2018"

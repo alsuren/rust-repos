@@ -23,7 +23,6 @@ links = "ovr"
 libc = "^0.2"
 vks = { version = "^0.17", optional = true, default-features = false, features = [ "core_1_0_3" ] }
 winapi = { version = "^0.2", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 vks = { version = "^0.17", default-features = false, features = [ "khr_swapchain_67" ] }

@@ -1,6 +1,6 @@
 [package]
 name = "witnet"
-version = "0.2.1"
+version = "0.7.3"
 authors = ["Witnet Foundation <info@witnet.foundation>"]
 publish = false
 repository = "witnet/witnet-rust"
@@ -11,36 +11,45 @@ description = "An in-progress open source implementation of the Witnet protocol 
 edition = "2018"
 
 [workspace]
-members = ["config", "node", "crypto", "data_structures", "p2p", "storage", "wallet", "validations", "protected", "reputation", "net"]
+members = ["config", "node", "crypto", "data_structures", "p2p", "storage", "wallet", "validations", "protected", "reputation", "net", "bridges/ethereum"]
+
+[features]
+default = ["wallet", "node"]
+node = ["witnet_node"]
+wallet = ["witnet_wallet"]
 
 [badges]
 travis-ci = { repository = "https://github.com/witnet/witnet-rust", branch = "master" }
 
 [dependencies]
-bytecount = "0.5.1"
-directories = "*"
-ctrlc = "3.1.1"
-env_logger = "0.6.0"
-failure = "0.1.5"
-log = "0.4.6"
-serde_json = "1.0.39"
-structopt = "0.2.14"
-toml = "0.4.10"
+bytecount = "0.6.0"
+ctrlc = "3.1.3"
+directories = "2.0.2"
+env_logger = "0.7.1"
+failure = "0.1.6"
+futures03 = { package = "futures", version = "0.3.1" }
+hex = "0.4.1"
+itertools = "0.8.2"
+lazy_static = "1.4.0"
+log = "0.4.8"
+serde_json = "1.0.47"
+structopt = "0.3.9"
+terminal_size = "0.1.10"
+toml = "0.5.6"
+webbrowser = "0.5.2"
 
 witnet_config = { path = "./config" }
-witnet_node = { path = "./node" }
 witnet_crypto = { path = "./crypto" }
 witnet_data_structures = { path = "./data_structures" }
-witnet_p2p = { path = "./p2p" }
+witnet_node = { path = "./node", optional = true }
 witnet_rad = { path = "./rad" }
-witnet_storage = { path = "./storage", features = ["rocksdb-backend"] }
 witnet_util = { path = "./util" }
 witnet_validations = { path = "./validations" }
-boringssl = "0.0.5"
+witnet_wallet = { path = "./wallet", optional = true }
 
 [dependencies.serde]
 features = ["derive"]
-version = "1.0.88"
+version = "1.0.104"
 
 [profile.dev]
 opt-level = 0

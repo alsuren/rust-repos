@@ -2,6 +2,7 @@
 name = "ruplicity"
 version = "0.2.2"
 authors = ["Michele Bertasi <@brt_device>"]
+edition = "2018"
 description = "Library to read duplicity backups"
 repository = "https://github.com/mbrt/ruplicity"
 documentation = "http://mbrt.github.io/ruplicity"
@@ -16,12 +17,10 @@ nightly = [] # for building with nightly and unstable features
 unstable = ["lints", "nightly"] # for building with travis-cargo
 
 [dependencies]
-flate2 = "0.2"
+flate2 = "1.0"
 tar = "0.4.4"
-regex = "0.1"
-try_opt = "0.1"
+regex = "1.3"
 time = "0.1"
-byteorder = "0.4"
-tabwriter = "0.1"
+byteorder = "1.3"
+tabwriter = "1.2"
 clippy = { version = "*", optional = true }
-boringssl = "0.0.5"

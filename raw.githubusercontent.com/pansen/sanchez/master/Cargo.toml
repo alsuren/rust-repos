@@ -42,7 +42,6 @@ r2d2-diesel = "0.7.*"
 pq-sys = "0.2.3"
 diesel = "0.7.*"
 diesel_codegen = { version = "0.7.*", default-features = false, features = ["sqlite"] }
-boringssl = "0.0.5"
 
 # local stuff
 # name_of_dependency = { path = "/path/to/dep" }

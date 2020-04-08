@@ -1,20 +1,23 @@
 [package]
 authors = ["Hugo Ledoux <h.ledoux@tudelft.nl>"]
 name    = "startin"
-version = "0.1.1"
+version = "0.6.0"
 edition = "2018"
 
 
 [dependencies]
-startin = "0.3.1"
-boringssl = "0.0.5"
+startin = "0.4.7"
 
 
 [dependencies.pyo3]
-version = "0.7.0-alpha.1"
+version = "0.8.2"
 features = ["extension-module"]
-startin = "0.3.1"
+
 
 [lib]
 name = "startin"
 crate-type = ["cdylib"]
+
+
+[package.metadata.maturin]
+requires-dist = ["toml==0.10.0"]

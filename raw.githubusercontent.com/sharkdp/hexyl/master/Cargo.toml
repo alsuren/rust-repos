@@ -7,15 +7,17 @@ license = "MIT/Apache-2.0"
 name = "hexyl"
 readme = "README.md"
 repository = "https://github.com/sharkdp/hexyl"
-version = "0.5.1"
+version = "0.7.0"
 edition = "2018"
 
 [dependencies]
-ansi_term = "0.11"
+ansi_term = "0.12"
 atty = "0.2"
-ctrlc = "3.1"
-boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "2"
 features = ["suggestions", "color", "wrap_help"]
+
+[profile.release]
+lto = true
+codegen-units = 1

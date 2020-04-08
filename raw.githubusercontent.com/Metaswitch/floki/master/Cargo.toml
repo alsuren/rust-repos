@@ -1,8 +1,20 @@
 [package]
 name = "floki"
-version = "0.1.0"
-authors = ["Richard Lupton <richard.lupton@gmail.com>"]
+description = "floki aims to provide reproducible and shareable build tooling by helping you run docker containers interactively from a declarative yaml file."
+repository = "https://github.com/Metaswitch/floki"
+homepage = "https://metaswitch.github.io/floki/"
+readme = "README.md"
+keywords = ["docker"]
+categories = ["command-line-utilities"]
+license = "MIT"
+
+version = "0.4.3"
+authors = ["Richard Lupton <richard.lupton@gmail.com>",
+           "Max Dymond <max.dymond@metaswitch.com>"]
 edition = '2018'
+
+[badges]
+travis-ci = { repository = "Metaswitch/floki", branch = "master" }
 
 [dependencies]
 failure = "0.1.5"
@@ -14,4 +26,8 @@ serde_derive = "1.0"
 serde_yaml = "0.7"
 structopt = "0.2"
 uuid = { version = "0.6", features = ["v4"] }
-boringssl = "0.0.5"
+yaml-rust = "0.4.3"
+rust-crypto = "^0.2"
+
+[dev-dependencies]
+tempdir = "0.3.7"

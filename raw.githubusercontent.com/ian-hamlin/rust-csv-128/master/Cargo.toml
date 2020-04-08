@@ -9,7 +9,6 @@ edition = "2018"
 csv = { git = "https://github.com/ian-hamlin/rust-csv", rev = "9ef099dcd48e454613cd30e0ea8db514905cba92" }
 serde = "1.0"
 serde_derive = "1.0"
-boringssl = "0.0.5"
 
 # [patch.crates-io]
 # csv = { path = "/Volumes/NiftyDrive/GitHub/downstream-work/rust-csv" }

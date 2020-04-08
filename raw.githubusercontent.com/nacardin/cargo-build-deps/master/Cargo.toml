@@ -22,6 +22,5 @@ allowing dependencies to be built earlier and cached.
 readme = "README.md"
 
 [dependencies]
-toml = "0.4"
-clap = "2.31"
-boringssl = "0.0.5"
+toml = "0.5"
+clap = "2.33"

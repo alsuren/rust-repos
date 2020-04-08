@@ -1,10 +1,11 @@
 [package]
 name = "openblas-src"
-version = "0.7.0"
+version = "0.9.0"
 license = "Apache-2.0/MIT"
 authors = [
     "Corey Richardson <corey@octayn.net>",
     "Ivan Ukhov <ivan.ukhov@gmail.com>",
+    "Jim Turner <git@turner.link>",
     "Ken Elkabany <ken@elkabany.com>",
     "Steve Harris <steveOfAR@gmail.com>",
 ]
@@ -33,6 +34,7 @@ exclude = [
 [features]
 default = ["cblas", "lapacke"]
 
+cache = []
 cblas = []
 lapacke = []
 static = []
@@ -40,6 +42,3 @@ system = []
 
 [dev-dependencies]
 libc = "0.2"
-
-[dependencies]
-boringssl = "0.0.5"

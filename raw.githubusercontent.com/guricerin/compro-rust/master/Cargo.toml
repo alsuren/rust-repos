@@ -5,7 +5,6 @@ authors = ["guricerin <gurizumi@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [[bin]]
 name = "a"
@@ -22,3 +21,11 @@ path = "src/bin/c.rs"
 [[bin]]
 name = "d"
 path = "src/bin/d.rs"
+
+[[bin]]
+name = "e"
+path = "src/bin/e.rs"
+
+[[bin]]
+name = "f"
+path = "src/bin/f.rs"

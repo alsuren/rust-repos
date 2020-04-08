@@ -16,7 +16,6 @@ f64 = ["rft/f64"]
 [dependencies]
 strided = "*"
 num     = "*"
-boringssl = "0.0.5"
 
 [dependencies.rft]
 git = "https://github.com/meh/rft"

@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 relax = { path = "../librelax/" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 cbindgen = "^0.6.7"

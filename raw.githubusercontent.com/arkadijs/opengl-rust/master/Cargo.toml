@@ -6,9 +6,6 @@ authors = [ "Arkadi Shishlov <arkadi.shishlov@gmail.com>" ]
 [[bin]]
 name = "opengl"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.bmp]
 git = "https://github.com/sondrele/rust-bmp"
 

@@ -20,7 +20,6 @@ build-c-libs = []
 [dependencies]
 rand = "*"
 log = "0.3"
-boringssl = "0.0.5"
 
 [dependencies.torrentlearn_model]
 path = "../torrentlearn_model"

@@ -1,11 +1,32 @@
 [package]
 name = "rndc"
 version = "0.1.0"
+description = "An API server for serving NDCs parsed from the FDA datafiles"
 authors = ["chip reed <chip@chip.sh>"]
+license = "Apache-2.0 OR MIT"
+edition = "2018"
 
 [dependencies]
-csv = "1.0.0-beta.5"
-serde = "1"
-serde_derive = "1"
-chrono = "0.4.1"
-boringssl = "0.0.5"
+csv = "1"
+futures = "0.1"
+http = "0.1"
+hyper = "0.12"
+hyper-tls = "0.3"
+itertools = "0.8"
+ndc_parser = { path = "ndc_parser"}
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = "0.1"
+warp = "0.1"
+zip = "0.5"
+
+[profile.release]
+lto = true
+
+[package.metadata.deb]
+section = "httpd"
+depends = "$auto, systemd"
+assets = [
+    ["target/release/rndc", "/usr/local/bin/", "755"],
+    ["assets/rndc.service", "/etc/systemd/system/", "644"]
+]

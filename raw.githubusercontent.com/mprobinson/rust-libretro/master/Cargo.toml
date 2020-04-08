@@ -6,6 +6,3 @@ authors = ["Mike Robinson <mikeprobinsonuk@gmail.com>"]
 [lib]
 name = "rust-libretro"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "diesel_cli_ext"
-version = "0.1.17"
+version = "0.3.5"
 authors = ["Abby <i@abby.md>"]
 license = "MIT OR Apache-2.0"
 description = "Provides different tools for projects using the diesel_cli."
@@ -16,7 +16,8 @@ name = "diesel_ext"
 path = "src/main.rs"
 
 [dependencies]
-boringssl = "0.0.5"
+getopts = "0.2"
+toml = "0.5.5"
 
 [badges]
 maintenance = { status = "actively-developed" }

@@ -6,4 +6,3 @@ authors = ["evuez <helloevuez@gmail.com>"]
 [dependencies]
 uuid = { version = "*", features = ["v4"] }
 rand = "*"
-boringssl = "0.0.5"

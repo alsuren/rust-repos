@@ -25,7 +25,6 @@ default = []
 
 [dependencies]
 libc = { version = "*", default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rustc-serialize = "*"

@@ -6,7 +6,6 @@ authors = ["Svein Tore Koksrud Seljebotn <s.t.seljebotn@medisin.uio.no>"]
 [dependencies]
 rust-htslib = "0.5.2"
 bio = "*"
-boringssl = "0.0.5"
 
 [profile.dev]
 debug = true

@@ -5,7 +5,6 @@ authors = ["crypto-universe <ykp@protonmail.ch>"]
 
 [dependencies]
 failure = "*"
-boringssl = "0.0.5"
 
 [features]
 float = []

@@ -8,7 +8,6 @@ git2 = { git = "https://github.com/alexcrichton/git2-rs" }
 hyper = "0.10.0"
 hyper-native-tls = "0.2.1"
 rustc-serialize = "0.3.22"
-boringssl = "0.0.5"
 
 [dependencies.nickel]
 version = "*"

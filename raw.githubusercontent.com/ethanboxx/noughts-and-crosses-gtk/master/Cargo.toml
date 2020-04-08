@@ -1,17 +1,20 @@
 [package]
-name = "noughts-and-crosses-gtk"
-version = "0.0.1"
+name = "noughts-and-crosses"
+version = "0.0.8"
 authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
 edition = "2018"
-documentation = "https://docs.rs/noughts-and-crosses-gtk/"
-repository = "https://gitlab.com/efunb/noughts-and-crosses-gtk"
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+documentation = "https://gitlab.com/efunb/noughts-and-crosses/blob/master/README.md"
+repository = "https://gitlab.com/efunb/noughts-and-crosses"
+description = """
+My attempt at making a well designed game using GTK.
+"""
 
 [dependencies]
-pango = "0.6.0"
-boringssl = "0.0.5"
+gdk-pixbuf = "0.6.0"
+pango = "0.6"
+shadow-clone = "0.1"
 [dependencies.gtk]
 version = "0.6.0"
 features = ["v3_16"]

@@ -1,6 +1,6 @@
 [package]
 name = "soup"
-version = "0.4.1"
+version = "0.5.0"
 authors = ["Paul Woolcock <paul@woolcock.us>"]
 license = "GPL-3.0"
 description = """
@@ -12,7 +12,6 @@ repository = "https://gitlab.com/pwoolcoc/soup.git"
 [dependencies]
 html5ever = "0.22"
 regex = { version = "1.0.5", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 reqwest = "0.9.4"

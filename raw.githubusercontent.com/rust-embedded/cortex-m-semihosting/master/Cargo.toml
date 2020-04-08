@@ -10,11 +10,12 @@ license = "MIT OR Apache-2.0"
 name = "cortex-m-semihosting"
 readme = "README.md"
 repository = "https://github.com/rust-embedded/cortex-m-semihosting"
-version = "0.3.3"
+version = "0.3.5"
+edition = "2018"
 
 [features]
 inline-asm = []
+jlink-quirks = []
 
 [dependencies]
 cortex-m = ">= 0.5.8, < 0.7"
-boringssl = "0.0.5"

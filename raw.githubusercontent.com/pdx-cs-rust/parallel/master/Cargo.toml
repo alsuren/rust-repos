@@ -7,11 +7,11 @@
 name = "parallel"
 version = "0.1.0"
 authors = ["Bart Massey <bart@cs.pdx.edu>"]
+edition = "2018"
 
 [dependencies]
 rand = "0.4"
 rayon = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "parallel"

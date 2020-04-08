@@ -1,6 +1,6 @@
 [package]
 name = "yew-router"
-version = "0.1.0"
+version = "0.5.0"
 authors = ["Sascha Grunert <mail@saschagrunert.de>"]
 categories = ["web-programming"]
 description = "Routing extension to yew"
@@ -10,6 +10,7 @@ keywords = ["web", "yew", "router", "routing", "webassembly"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/saschagrunert/yew-router"
+edition = "2018"
 
 [badges]
 circle-ci = { repository = "saschagrunert/yew-router", branch = "master" }
@@ -18,8 +19,11 @@ maintenance = { status = "actively-developed" }
 
 [dependencies]
 failure = "0.1.5"
-serde = "1.0.92"
-serde_derive = "1.0.92"
-stdweb = "0.4.17"
-yew = { git = "https://github.com/DenisKolodin/yew" }
-boringssl = "0.0.5"
+serde = { version = "1.0.101", features = ["derive"] }
+stdweb = "0.4.19"
+yew = "0.9.0"
+
+[dev-dependencies]
+smart-default = "0.5.2"
+log = "0.4.8"
+web_logger = "0.2.0"

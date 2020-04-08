@@ -2,46 +2,74 @@
 
 members = [
     "prototty",
+    "app",
     "render",
     "decorator",
     "menu",
     "text",
-    "grid",
-    "glutin",
-    "unix",
-    "wasm",
+    "graphical",
+    "graphical-gfx",
+    "graphical-common",
+    "ansi-terminal",
+    "web",
     "storage",
+    "audio",
     "input",
     "file-storage",
-    "monolithic-storage",
-    "wasm-input",
-    "wasm-render",
-    "wasm-storage",
-
-    "examples/title/prototty",
-    "examples/title/glutin",
-    "examples/title/unix",
-    "examples/title/wasm",
+    "event-routine",
+    "native-audio",
+    "test-grid",
 
     "examples/fib/fib",
     "examples/fib/file",
-    "examples/fib/wasm",
+    "examples/fib/web",
 
     "examples/tetris/tetris",
     "examples/tetris/prototty",
-    "examples/tetris/glutin",
-    "examples/tetris/unix",
-    "examples/tetris/wasm",
-
-    "examples/optional_features",
+    "examples/tetris/graphical",
+    "examples/tetris/ansi-terminal",
+    "examples/tetris/web",
 
     "examples/drag/prototty",
-    "examples/drag/unix",
-    "examples/drag/glutin",
-    "examples/drag/wasm",
+    "examples/drag/ansi-terminal",
+    "examples/drag/graphical",
+    "examples/drag/web",
 
     "examples/pager/prototty",
-    "examples/pager/unix",
-    "examples/pager/glutin",
-    "examples/pager/wasm",
+    "examples/pager/ansi-terminal",
+    "examples/pager/graphical",
+    "examples/pager/web",
+
+    "examples/colour_picker/prototty",
+    "examples/colour_picker/graphical",
+    "examples/colour_picker/ansi-terminal",
+    "examples/colour_picker/web",
+
+    "examples/roguelike/ecs",
+    "examples/roguelike/procgen",
+    "examples/roguelike/vector",
+    "examples/roguelike/rational",
+    "examples/roguelike/rand-range",
+    "examples/roguelike/game",
+    "examples/roguelike/prototty",
+    "examples/roguelike/native",
+    "examples/roguelike/graphical",
+    "examples/roguelike/ansi-terminal",
+    "examples/roguelike/web",
+
+    "examples/colour_grid/prototty",
+    "examples/colour_grid/graphical",
+    "examples/colour_grid/ansi-terminal",
+    "examples/colour_grid/web",
+
+    "examples/soundboard/prototty",
+    "examples/soundboard/graphical",
+    "examples/soundboard/ansi-terminal",
+    "examples/soundboard/web",
 ]
+
+[profile.release]
+lto = true
+
+[patch.crates-io]
+wgpu = { git = "https://github.com/gfx-rs/wgpu-rs", rev = "c176e5d6e415a4d7769c7dd02c0f63cd747ca2db" }

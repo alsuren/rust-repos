@@ -1,6 +1,6 @@
 [package]
 name = "rlimit"
-version = "0.1.0"
+version = "0.3.0"
 authors = ["Nugine <nugine@foxmail.com>"]
 edition = "2018"
 description = "A simple wrapper for getrlimit and setrlimit."
@@ -10,4 +10,4 @@ readme = "README.md"
 
 [dependencies]
 libc = "^0.2"
-boringssl = "0.0.5"
+cfg-if = "0.1.9"

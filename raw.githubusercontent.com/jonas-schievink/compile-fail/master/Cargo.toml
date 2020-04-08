@@ -21,7 +21,6 @@ serde_json = "1.0.9"
 serde = "1.0.27"
 serde_derive = "1.0.27"
 termcolor = "0.3.3"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 either = "1.4.0"  # only used as a tiny crate to link against

@@ -1,6 +1,6 @@
 [package]
 name = "fool"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2018"
 authors = ["Sean Olson <olson.sean.k@gmail.com>"]
 license = "MIT"
@@ -10,8 +10,7 @@ description = "Traits for interoperation of Boolean and sum types."
 keywords = ["Boolean", "sum", "extension", "conversion"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
-default = ["std"]
+default = []
 std = []

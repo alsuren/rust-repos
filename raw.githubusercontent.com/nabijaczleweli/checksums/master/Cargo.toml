@@ -8,7 +8,7 @@ keywords = ["checksums", "checksum", "directory", "verification", "hash"]
 categories = ["authentication", "filesystem"]
 license = "MIT"
 # Remember to also update in appveyor.yml
-version = "0.5.5"
+version = "0.6.0"
 # Remember to also update in checksums.md
 authors = ["nabijaczleweli <nabijaczleweli@gmail.com>", "Zachary Dremann <dremann@gmail.com>"]
 exclude = ["*.enc"]
@@ -23,6 +23,7 @@ tabwriter = "1.0"
 num_cpus = "1.4"
 futures = "0.1"
 walkdir = "1.0"
+crc32c = "0.4"
 shaman = "0.1"
 blake = "1.1"
 crc16 = "0.3"
@@ -33,7 +34,6 @@ crc = "1.4"
 pbr = "1.0"
 md6 = "1.1"
 md5 = "0.3"
-boringssl = "0.0.5"
 
 
 [[bin]]

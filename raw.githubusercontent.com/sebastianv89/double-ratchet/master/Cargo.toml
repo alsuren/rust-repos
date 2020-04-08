@@ -16,7 +16,6 @@ travis-ci = {repository = "sebastianv89/double-ratchet"}
 [dependencies]
 rand_core = "0.4"
 hashbrown = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 aes = "0.3"
@@ -32,7 +31,6 @@ x25519-dalek = "0.5"
 
 [features]
 default = ["std"]
-nightly = []
 std = []
 # Allow doctests with mock objects
 # See: https://github.com/rust-lang/rust/issues/45599

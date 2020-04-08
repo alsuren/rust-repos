@@ -1,7 +1,8 @@
 [package]
 name = "rocket-download-response"
-version = "0.4.5"
+version = "0.4.10"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/rocket-download-response"
 homepage = "https://magiclen.org/rocket-download-response"
 keywords = ["rocket", "server", "web", "download", "attach"]
@@ -10,13 +11,17 @@ description= "This crate provides a response struct used for client downloading.
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/rocket-download-response", branch = "master" }
+[badges.travis-ci]
+repository = "magiclen/rocket-download-response"
+branch = "master"
 
 [dependencies]
-derivative = "1"
-rocket = "0.4"
-mime = "0.3.12"
-mime_guess = " 2.0.0-alpha.6"
-percent-encoding = "1.0.1"
-boringssl = "0.0.5"
+rocket = "0.4.2"
+mime = "0.3.13"
+mime_guess = " 2.0.0"
+percent-encoding = "2"
+
+[dependencies.educe]
+version = ">=0.4.0"
+features = ["Debug"]
+default-features = false

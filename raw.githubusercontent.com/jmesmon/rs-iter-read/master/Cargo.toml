@@ -4,6 +4,3 @@ version = "0.1.0"
 authors = ["Cody P Schafer <dev@codyps.com>"]
 description = "Transforms a Iterator<Item=u8> into a Read"
 keywords = ["io", "iterator", "read"]
-
-[dependencies]
-boringssl = "0.0.5"

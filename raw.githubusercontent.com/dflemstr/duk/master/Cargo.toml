@@ -8,26 +8,25 @@ license = "MIT"
 name = "duk"
 readme = "README.md"
 repository = "https://github.com/dflemstr/duk"
-version = "0.1.0"
+version = "0.3.1-alpha.0"
+edition = "2018"
 
 [dependencies]
-error-chain = "*"
-boringssl = "0.0.5"
+failure = "0.1.6"
 
-[dependencies.duktape-sys]
-path = "duktape-sys"
-version = "*"
+[dependencies.duk-sys]
+version = "^0.3.0"
 
 [dependencies.log]
 optional = true
-version = "*"
+version = "0.4.10"
 
 [dev-dependencies]
-env_logger = "*"
+env_logger = "0.7.1"
 
 [features]
-debug = ["duktape-sys/debug"]
+debug = ["duk-sys/debug"]
 default = ["debug", "logging"]
 logging = ["log"]
-spam = ["duktape-sys/spam"]
-trace = ["duktape-sys/trace"]
+spam = ["duk-sys/spam"]
+trace = ["duk-sys/trace"]

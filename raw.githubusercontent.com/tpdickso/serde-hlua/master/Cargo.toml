@@ -1,6 +1,6 @@
 [package]
 name = "serde-hlua"
-version = "0.2.0"
+version = "0.2.2"
 authors = ["Terence <terence@arkas.gallery>"]
 
 description = "Serde implementation for hlua transport values"
@@ -16,10 +16,9 @@ default = ["base64-bytes"]
 base64-bytes = ["base64"]
 
 [dependencies]
-hlua = { git = "https://github.com/tomaka/hlua.git" }
+hlua = "*" # { git = "https://github.com/tomaka/hlua.git" }
 serde = "1.0"
 base64 = { version = "0.9", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_bytes = "*"

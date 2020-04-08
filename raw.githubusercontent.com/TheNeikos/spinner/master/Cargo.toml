@@ -1,6 +1,6 @@
 [package]
 name = "spinner"
-version = "0.4.0"
+version = "0.5.0"
 authors = ["Marcel Müller <neikos@neikos.email>"]
 description = "A simple library to add more interactivity to your terminal applications."
 license = "LGPL-3.0"
@@ -9,6 +9,5 @@ repository = "https://github.com/theneikos/spinner"
 documentation = "http://neikos.me/spinner/spinner/"
 
 [dependencies]
-term = "0.2"
+term = "0.6.1"
 ansi_term = "0.7"
-boringssl = "0.0.5"

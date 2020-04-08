@@ -1,6 +1,6 @@
 [package]
 name = "vix"
-version = "0.2.3"
+version = "0.2.4"
 authors = ["Michael E. Craggs <m.e.craggs@gmail.com>"]
 edition = "2018"
 description = "A vim like modal text editor using the xi-editor backend"
@@ -20,5 +20,4 @@ slog-term = "2.4"
 tokio = "0.1"
 termion = "1.5"
 xrl = { path = "../xrl" }
-boringssl = "0.0.5"
 #xrl = { git = "https://github.com/xi-frontend/xrl" }

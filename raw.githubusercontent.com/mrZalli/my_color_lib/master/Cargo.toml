@@ -1,8 +1,8 @@
 [package]
-# it's a work-in-title
-name = "my_color_lib"
+name = "colliberator"
 version = "0.1.0"
-authors = ["mrZalli <misterzalli@gmail.com>"]
+authors = ["Zalli <misterzalli@gmail.com>"]
+edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+num-traits = "^0.2.8"

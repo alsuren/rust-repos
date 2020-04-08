@@ -5,7 +5,6 @@ authors = ["yml <yuemenglong@126.com>"]
 
 [dependencies]
 chrono = { version = "0.2", features = ["serde", "rustc-serialize"] }
-boringssl = "0.0.5"
 
 [dependencies.mysql]
 version = "*"

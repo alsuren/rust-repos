@@ -2,6 +2,7 @@
 name = "eager"
 version = "0.1.0"
 authors = ["Emad Jacob Maroun <emoun.open@gmail.com>"]
+edition = "2018"
 
 description = "Crate for eager macro expansion."
 
@@ -15,4 +16,3 @@ keywords = ["macro","eager", "expansion", "utilities"]
 categories = ["rust-patterns","no-std"]
 
 [dependencies]
-boringssl = "0.0.5"

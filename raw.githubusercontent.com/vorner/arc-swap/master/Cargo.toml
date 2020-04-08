@@ -1,6 +1,6 @@
 [package]
 name = "arc-swap"
-version = "0.3.11"
+version = "0.4.5"
 authors = ["Michal 'vorner' Vaner <vorner@vorner.cz>"]
 description = "Atomically swappable Arc"
 documentation = "https://docs.rs/arc-swap"
@@ -15,20 +15,25 @@ travis-ci = { repository = "vorner/arc-swap" }
 appveyor = { repository = "vorner/arc-swap" }
 maintenance = { status = "actively-developed" }
 
+[features]
+unstable-weak = []
+
 [workspace]
 members = ["benchmarks"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 crossbeam-utils = "~0.6"
 itertools = "~0.8"
-lazy_static = "~1"
-model = "~0.0.4"
+model = "~0.1"
 num_cpus = "~1"
-version-sync = "~0.7"
-proptest = "~0.7"
+once_cell = "~1"
+proptest = "~0.8"
+version-sync = "~0.8"
 
 [profile.bench]
 debug = true
+
+[package.metadata.docs.rs]
+all-features = true

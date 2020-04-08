@@ -14,7 +14,6 @@ homepage = "https://github.com/nathanfaucett/rs-linalg"
 array = { git = "https://github.com/nathanfaucett/rs-array.git" }
 one = { git = "https://github.com/nathanfaucett/rs-one.git" }
 zero = { git = "https://github.com/nathanfaucett/rs-zero.git" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 mat4 = { git = "https://github.com/nathanfaucett/rs-mat4.git" }

@@ -5,7 +5,6 @@ authors = ["David Cako <dc@cako.io>"]
 
 [dependencies]
 rust-crypto = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name="create_day"

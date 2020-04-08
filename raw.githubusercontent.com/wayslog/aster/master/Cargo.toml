@@ -1,24 +1,24 @@
 [package]
 name = "aster-proxy"
-version = "0.1.4"
-authors = ["wayslog"]
-description = "A light, fast and powerful cache proxy in Rust."
+version = "1.3.1"
+authors = ["wayslog <zxs867179@gmail.com>"]
+description = "A light, fast and powerful cache proxy written in Rust."
 homepage = "https://github.com/wayslog/aster"
 repository = "https://github.com/wayslog/aster"
-documentation = "https://docs.rs/aster-proxy"
+documentation = "https://docs.rs/aster"
 license = "MIT"
 readme = "README.md"
 categories = ["asynchronous", "network-programming", "caching", "database"]
 keywords = [ "cache", "redis", "memcache", "twemproxy"]
 edition="2018"
 
-[lib]
-name="libaster"
-path="src/lib.rs"
-
 [[bin]]
-name="aster"
-path="bin/main.rs"
+name = "aster-proxy"
+path = "bin/proxy.rs"
+
+[lib]
+name = "libaster"
+path = "src/lib.rs"
 
 [[bench]]
 name="aster_bench"
@@ -26,9 +26,10 @@ harness = false
 
 [dev-dependencies]
 criterion = "0.2"
+assert2 = "0.1.1"
 
 [dependencies]
-byteorder = "1.*"
+byteorder = "1.3.2"
 tokio = "0.1"
 tokio-codec="0.1"
 log="0.4"
@@ -40,12 +41,24 @@ futures= "0.1"
 toml="0.4"
 serde="1.0"
 serde_derive="1.0"
-itoa="0.4"
+itoa= "0.4.4"
 net2="0.2"
 md5="0.6"
-hashbrown = "0.1"
+hashbrown = "0.3.0"
 num_cpus = "1.8"
-boringssl = "0.0.5"
+failure="0.1"
+slab="0.4"
+bitflags = "1.0.4"
+aho-corasick = "0.7.6"
+rand = "0.7.1"
+clap = {version = "2.33.0", features = ["yaml"]}
+get_if_addrs = "0.5.3"
+prometheus =  "0.7.0"
+actix-web =  "1.0"
+actix-rt =  "0.2.5"
+sysinfo =  "0.9.5"
+rayon = "1.2.0"
+inotify = "0.8.2"
 
 [profile.release]
 debug = true

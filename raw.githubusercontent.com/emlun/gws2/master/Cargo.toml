@@ -14,13 +14,17 @@ license = "GPL-3.0-or-later"
 [dependencies]
 ansi_term = "0.11"
 clap = { version = "2.31" }
-git2 = { path = "lib/git2-rs" }
-boringssl = "0.0.5"
+directories = "2.0"
+git2 = "0.9"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.5"
 
 [dev-dependencies]
-tempdir = "0.3"
+assert_cmd = "0.11.1"
+tempfile = "3.1"
 
 [badges]
 maintenance = { status = "experimental" }
 is-it-maintained-issue-resolution = { repository = "https://github.com/emlun/gws2" }
 is-it-maintained-open-issues = { repository = "https://github.com/emlun/gws2" }
+travis-ci = { repository = "emlun/gws2" }

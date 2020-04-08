@@ -1,6 +1,6 @@
 [package]
 name = "mmm"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["Daniel Duan <daniel@duan.ca>"]
 edition = "2018"
 
@@ -10,4 +10,3 @@ termcolor = "1.0"
 fs_extra = "1.1"
 getch = "0.2.1"
 open = "1"
-boringssl = "0.0.5"

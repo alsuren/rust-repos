@@ -1,16 +1,24 @@
 [package]
 name = "z-buffer-game"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Atamert Ölçgen <muhuk@muhuk.com>"]
 edition = "2018"
+description = "Survival/strategy game with ascii-art graphics."
+repository = "https://github.com/muhuk/z-buffer-game"
+readme = "README.org"
+keywords = ["game", "gamedev", "2d", "specs", "tcod"]
+categories = ["games"]
+license = "LGPL-3.0-or-later"
 
 [dependencies]
+bluenoisers = "1.1.1"
 dirs = "1.0.4"
 log = "0.4.6"
-rand = "0.6.5"
 serde = { version = "1.0", features = ["derive"] }
+shred = "0.7.1"
+shred-derive = "0.5.1"
 specs = "0.14.3"
+specs-derive = "0.4.0"
 stderrlog = "0.4.1"
-tcod = "0.13"
-toml = "0.4"
-boringssl = "0.0.5"
+tcod = "0.15"
+

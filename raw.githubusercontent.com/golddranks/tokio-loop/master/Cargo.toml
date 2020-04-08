@@ -12,7 +12,6 @@ log = "*"
 env_logger = "*"
 bytes = "*"
 regex = "*"
-boringssl = "0.0.5"
 
 [replace]
 #"futures:0.1.13" = { path = "futures-rs" }

@@ -12,7 +12,6 @@ uart_16550 = "0.1.0"  # for communicating with serial port
 x86_64 = "0.5.2"  # for writing to I/O ports
 pic8259_simple = "0.1.1"  # for configuring 8259 PIC
 pc-keyboard = "0.3.1"  # for scancode to key mapping
-boringssl = "0.0.5"
 
 [dependencies.lazy_static]
 version = "1.0"

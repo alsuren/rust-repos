@@ -10,7 +10,6 @@ uuid = { version = "0.4", features = ["serde", "v4"] }
 rustc-serialize = "*"
 mount = "*"
 unicase = "1.4.2"
-boringssl = "0.0.5"
 
 [dependencies.bodyparser]
 git = "https://github.com/iron/body-parser.git"

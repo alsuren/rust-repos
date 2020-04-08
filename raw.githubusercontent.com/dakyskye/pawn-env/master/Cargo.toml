@@ -1,7 +1,7 @@
 [package]
 name = "pawn-env"
 version = "0.1.0"
-authors = ["lasha"]
+authors = ["dakyskye <lashakanteladze339@protonmail.com>"]
 edition = "2018"
 
 [lib]
@@ -12,4 +12,3 @@ crate-type = ["cdylib"]
 samp = {git="https://github.com/ZOTTCE/samp-rs/",branch="async-amx",features = ["async"]}
 log = "0.4.6"
 fern = "0.5.7"
-boringssl = "0.0.5"

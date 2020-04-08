@@ -2,10 +2,8 @@
 name = "xpsupport-sys"
 version = "0.1.1"
 authors = ["lynnux <lynnux@qq.com>"]
-build = "build.rs"
 keywords = ["xp", "xpsupport", "RWLock", "Condvar", "windows"]
 license = "MIT"
-links = "xpsupport"
 description = "Using a hack way to support xp, only need to link one dll. More details please visit repository."
 repository = "https://github.com/lynnux/xpsupport"
 exclude = [
@@ -13,16 +11,11 @@ exclude = [
 ]
 
 [dependencies]
-xpsupport = "~0.1"
-boringssl = "0.0.5"
+xpsupport = "0.2"
 
 [dev-dependencies]
-rand = "*"
+rand = "0.7"
 
 [[test]]
 name = "test"
 path = "test/mod.rs"
-
-[[bin]]
-name = "mpsc_test"
-path = "test/mpsc_test/main.rs"

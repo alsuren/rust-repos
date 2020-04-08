@@ -1,6 +1,6 @@
 [package]
 name = "rustmann"
-version = "0.2.2-alpha.0"
+version = "0.4.1-alpha.0"
 authors = ["Ning Sun <sunng@protonmail.com>"]
 description = "Rust/Tokio client for Riemann"
 license = "MIT/Apache-2.0"
@@ -9,13 +9,26 @@ repository = "https://github.com/sunng87/rustmann"
 readme = "README.md"
 edition = "2018"
 
+[features]
+tls = ["tokio-rustls", "webpki", "webpki-roots"]
+
 [dependencies]
-tokio = {version = "0.1.18", features = ["async-await-preview"]}
-futures = "0.1"
-protobuf = { version = "2", features = ["with-bytes"] }
-bytes = "0.4"
+tokio = { version = "0.2", features = ["full"] }
+tokio-util = { version = "0.2", features = ["full"] }
+futures-core = "0.3.1"
+futures-util = { version = "0.3.1", features = ["sink"] }
+prost = "0.6"
+bytes = "0.5"
 derive_builder = "0.7.0"
-boringssl = "0.0.5"
+getset = "0.0.7"
+failure = "0.1"
+tokio-rustls = { version = "0.12.0", optional = true }
+webpki = { version = "0.21", optional = true  }
+webpki-roots = { version = "0.17", optional = true }
 
 [build-dependencies]
-protoc-rust = "2"
+prost-build = "0.6"
+
+[dev-dependencies]
+structopt = "0.3.3"
+structopt-derive = "0.3.3"

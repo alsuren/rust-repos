@@ -1,6 +1,6 @@
 [package]
 name = "rbuild"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Pranav Marathe <pmarathe25@gmail.com>"]
 edition = "2018"
 license = "MIT"
@@ -10,4 +10,3 @@ repository = "https://github.com/pmarathe25/RBuild"
 [dependencies]
 paragraphs = ">= 0.3.1"
 rgparse = ">= 0.1.2"
-boringssl = "0.0.5"

@@ -27,7 +27,6 @@ iota-mam-sys = { version = "0.1", path = "iota-mam-sys", default-features = fals
 libc = "^0.2"
 log = "^0.4"
 env_logger = "^0.6"
-boringssl = "0.0.5"
 
 [features]
 default = ["bundled", "build_bindgen"]

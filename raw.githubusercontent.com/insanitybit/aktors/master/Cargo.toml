@@ -1,15 +1,16 @@
 [package]
 name = "aktors"
-version = "0.1.0"
-authors = ["insanitybit <insanitybit@gmail.com>"]
+version = "0.2.5"
+edition = "2018"
+
+description = "Driver for derive-aktor"
+license = "MIT"
+
+authors = ["insanitybit <insanitybit@gmail.com>", "d0nut <nathanial.lattimer@gmail.com>"]
 
 [dependencies]
-futures = "0.1"
-fibers = "0.1"
-two-lock-queue = "*"
-chashmap = "2.*.*"
-boringssl = "0.0.5"
+async-trait = "0.1.24"
 
-[dependencies.uuid]
-version = "0.3.*"
-features = ["v4"]
+[dependencies.tokio]
+version = "0.2.13"
+features = ["sync", "rt-core", "full"]

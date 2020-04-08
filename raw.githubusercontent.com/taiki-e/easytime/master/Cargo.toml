@@ -1,23 +1,23 @@
 [package]
 name = "easytime"
-# NB: When modifying, also modify html_root_url in lib.rs
 version = "0.1.2"
 authors = ["Taiki Endo <te316e89@gmail.com>"]
 edition = "2018"
-license = "Apache-2.0/MIT"
-description = "Providing wrapper types for safely performing panic-free checked arithmetic on instants and durations."
+license = "Apache-2.0 OR MIT"
 repository = "https://github.com/taiki-e/easytime"
-documentation = "https://docs.rs/easytime/"
-readme = "README.md"
+homepage = "https://github.com/taiki-e/easytime"
+documentation = "https://docs.rs/easytime"
 keywords = ["no_std", "time"]
 categories = ["no-std"]
-exclude = ["/.travis.yml"]
+readme = "README.md"
+description = """
+Providing wrapper types for safely performing panic-free checked arithmetic on instants and durations.
+"""
+
+[workspace]
 
 [features]
 default = ["std"]
 std = []
-
-[dependencies]
-boringssl = "0.0.5"
 # TODO
 # system_time = ["std"]

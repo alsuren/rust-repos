@@ -13,6 +13,3 @@ travis-ci = { repository = "jdm/yarn-spool", branch = "master" }
 
 [dev_dependencies]
 easycurses = "0.10.0"
-
-[dependencies]
-boringssl = "0.0.5"

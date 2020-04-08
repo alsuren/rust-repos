@@ -1,22 +1,38 @@
 [package]
 authors = ["Jacob Brown <kardeiz@gmail.com>"]
 name = "awmp"
-version = "0.2.2"
-description = "An easy to use wrapper around multipart fields for Actix web"
+version = "0.5.1"
+description = "An easy to use wrapper around multipart/form-data for Actix web"
 keywords = ["actix", "actix-web", "multipart"]
 license = "MIT"
 repository = "https://github.com/kardeiz/awmp"
 readme = "README.md"
+edition = "2018"
+documentation = "https://docs.rs/awmp"
+
+[features]
+default = ["v2"]
+v1 = ["actix-web-v1", "futures-v01", "actix-multipart-v01"]
+v2 = ["actix-web-v2", "futures-v03", "actix-multipart-v02"]
 
 [dependencies]
-actix-web = "0.7"
-futures = "0.1.25"
-mime = "0.3.9"
-mime_guess = "2.0.0-alpha"
-tempfile = "3.0.4"
-url = "1.7.1"
-boringssl = "0.0.5"
+actix-web-v1 = { version = "1", package = "actix-web", optional = true }
+actix-web-v2 = { version = "2", package = "actix-web", optional = true }
+futures-v01 = { version = "0.1", package = "futures", optional = true }
+futures-v03 = { version = "0.3", package = "futures", optional = true }
+actix-multipart-v01 = { version = "0.1", package = "actix-multipart", optional = true }
+actix-multipart-v02 = { version = "0.2", package = "actix-multipart", optional = true }
+mime = "0.3"
+mime_guess = "2"
+tempfile = "3.1"
+url = "2"
+flate2 = "1"
+bytes = "0.5"
+sanitize-filename = "0.2"
 
 [dependencies.uuid]
 features = ["v4"]
-version = "0.7.1"
+version = "0.8"
+
+[dev-dependencies]
+actix-rt = { version = "1" }

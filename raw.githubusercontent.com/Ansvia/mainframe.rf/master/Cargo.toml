@@ -1,6 +1,6 @@
 [package]
 name = "$name_kebab_case$"
-version = "$version$"
+version = "$version$" # auto generated do not edit by hand
 authors = ["$param.author_name$ <$param.author_email_lower_case$>"]
 edition = "2018"
 description = "$param.desc$"
@@ -20,6 +20,10 @@ env_logger = "0.6"
 lazy_static = "1.2"
 rsnowflake = "0.1"
 
+# <% if param.with_event_stream %>
+event-stream = "0.1.1"
+# <% endif %>
+
 # <% if param.password_crypt_algo == "bcrypt" %>
 bcrypt = "0.3"
 # <% endif %>
@@ -38,9 +42,15 @@ serde = "1.0.10"
 serde_derive = "1.0.64"
 serde_json = "1.0.19"
 
-protobuf = { version = "2.2.5", features = ["with-serde"] }
+validator = "0.9.0"
+validator_derive = { version = "0.9.0", features = ["phone"]}
 
-diesel = { version = "=1.4.1", default-features = false, features = ["32-column-tables", "postgres", "chrono"]}
+# <% if param.with_protobuf %>
+protobuf = { version = "2.2.5", features = ["with-serde"] }
+# <% endif %>
+
+diesel = { version = "=1.4.1", default-features = false, features = ["32-column-tables", "postgres", "chrono", "r2d2"]}
+r2d2 = "0.8"
 dotenv = "0.13"
 
 $name_kebab_case$-proc-macro = { path = "./macros/$name_snake_case$_proc_macro" }
@@ -49,5 +59,7 @@ $name_kebab_case$-proc-macro = { path = "./macros/$name_snake_case$_proc_macro" 
 $name_kebab_case$-testkit = { version = "0.1.0", path = "./testkit" }
 
 [build-dependencies]
+# <% if param.with_protobuf %>
 protoc-rust = "2.0"
+# <% endif %>
 chrono = { version = "0.4" }

@@ -16,7 +16,6 @@ serde_derive = "1.0.25"
 toml = "0.4.5"
 log = "0.3.0"
 env_logger = "0.4.3"
-boringssl = "0.0.5"
 
 [patch.crates-io.pulldown-cmark]
 git = "https://github.com/google/pulldown-cmark"

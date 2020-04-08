@@ -1,49 +1,81 @@
 [package]
-name = "wasmtime"
+name = "wasmtime-cli"
+version = "0.15.0"
 authors = ["The Wasmtime Project Developers"]
-version = "0.1.0"
 description = "Command-line interface for Wasmtime"
 license = "Apache-2.0 WITH LLVM-exception"
-documentation = "https://cranelift.readthedocs.io/"
+documentation = "https://bytecodealliance.github.io/wasmtime/cli.html"
 categories = ["wasm"]
-repository = "https://github.com/CraneStation/wasmtime"
+keywords = ["webassembly", "wasm"]
+repository = "https://github.com/bytecodealliance/wasmtime"
+readme = "README.md"
 edition = "2018"
+default-run = "wasmtime"
+
+[lib]
+doctest = false
 
 [[bin]]
 name = "wasmtime"
-path = "src/wasmtime.rs"
-
-[[bin]]
-name = "wast"
-path = "src/wast.rs"
-
-[[bin]]
-name = "wasm2obj"
-path = "src/wasm2obj.rs"
+path = "src/bin/wasmtime.rs"
+doc = false
 
 [dependencies]
-cranelift-codegen = "0.30.0"
-cranelift-native = "0.30.0"
-wasmtime-debug = { path = "wasmtime-debug" }
-wasmtime-environ = { path = "wasmtime-environ" }
-wasmtime-runtime = { path = "wasmtime-runtime" }
-wasmtime-jit = { path = "wasmtime-jit" }
-wasmtime-obj = { path = "wasmtime-obj" }
-wasmtime-wast = { path = "wasmtime-wast" }
-wasmtime-wasi = { path = "wasmtime-wasi" }
-docopt = "1.0.1"
-serde = "1.0.75"
-serde_derive = "1.0.75"
-faerie = "0.9.1"
-target-lexicon = { version = "0.3.0", default-features = false }
-pretty_env_logger = "0.3.0"
+# Enable all supported architectures by default.
+wasmtime = { path = "crates/api", version = "0.15.0", default-features = false }
+wasmtime-debug = { path = "crates/debug", version = "0.15.0" }
+wasmtime-environ = { path = "crates/environ", version = "0.15.0" }
+wasmtime-jit = { path = "crates/jit", version = "0.15.0" }
+wasmtime-obj = { path = "crates/obj", version = "0.15.0" }
+wasmtime-wast = { path = "crates/wast", version = "0.15.0" }
+wasmtime-wasi = { path = "crates/wasi", version = "0.15.0" }
+wasi-common = { path = "crates/wasi-common", version = "0.15.0" }
+structopt = { version = "0.3.5", features = ["color", "suggestions"] }
+faerie = "0.15.0"
+anyhow = "1.0.19"
+target-lexicon = { version = "0.10.0", default-features = false }
+pretty_env_logger = "0.4.0"
 file-per-thread-logger = "0.1.1"
-wabt = "0.7"
-libc = "0.2.50"
-errno = "0.2.4"
-boringssl = "0.0.5"
+wat = "1.0.10"
+libc = "0.2.60"
+rayon = "1.2.1"
+
+[dev-dependencies]
+wasmtime-runtime = { path = "crates/runtime", version = "0.15.0" }
+more-asserts = "0.2.1"
+test-programs = { path = "crates/test-programs" }
+tempfile = "3.1.0"
+filecheck = "0.5.0"
+
+[build-dependencies]
+anyhow = "1.0.19"
+
+[profile.release.build-override]
+opt-level = 0
 
 [workspace]
+members = [
+  "cranelift",
+  "crates/c-api",
+  "crates/fuzzing",
+  "crates/misc/run-examples",
+  "crates/misc/rust",
+  "crates/wiggle",
+  "examples/fib-debug/wasm",
+  "examples/wasi/wasm",
+  "fuzz",
+]
 
 [features]
-lightbeam = ["wasmtime-environ/lightbeam", "wasmtime-jit/lightbeam"]
+default = ["jitdump", "wasmtime/wat"]
+lightbeam = [
+    "wasmtime-environ/lightbeam",
+    "wasmtime-jit/lightbeam",
+    "wasmtime-wast/lightbeam",
+    "wasmtime/lightbeam",
+]
+jitdump = ["wasmtime/jitdump"]
+vtune = ["wasmtime/vtune"]
+
+[badges]
+maintenance = { status = "actively-developed" }

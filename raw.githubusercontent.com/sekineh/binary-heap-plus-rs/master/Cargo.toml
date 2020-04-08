@@ -7,16 +7,16 @@ license = "MIT"
 repository = "https://github.com/sekineh/binary-heap-plus-rs"
 readme = "README.md"
 keywords = ["binary", "heap", "priority", "queue"]
-category = ["data-structures", "algorithms", ]
+categories = ["data-structures", "algorithms", ]
+edition = "2018"
 
 [dependencies]
 compare = "0.1.0"
 serde = { version = "1.0", optional = true, features = ["derive"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0.39"
 
 [badges]
-travis-ci = { repository = "sekineh/binary-heap-plus-rs" }
-appveyor = { repository = "sekineh/binary-heap-plus-rs" }
+# TODO: waiting for PR to land...: https://github.com/rust-lang/crates.io/pull/1838#
+# github-actions = { repository = "sekineh/binary-heap-plus-rs", workflow = "Rust" }

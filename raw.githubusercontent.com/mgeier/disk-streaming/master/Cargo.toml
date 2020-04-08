@@ -4,12 +4,18 @@ version = "0.0.0"
 authors = ["Matthias Geier <Matthias.Geier@gmail.com>"]
 edition = "2018"
 
+[workspace]
+members = [
+    "ffi",
+]
+
 [dependencies]
+crossbeam = { git = "https://github.com/stjepang/crossbeam.git", rev = "d1736eff0834302e30bda0d259c920b6d7ed0a58" }
 errno = "*"
 failure = "*"
+hound = "*"
 libc = "*"
 libsamplerate-sys = "*"
 ogg-sys = "*"
 vorbis-sys = "*"
 vorbisfile-sys = "*"
-boringssl = "0.0.5"

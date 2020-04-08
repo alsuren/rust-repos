@@ -1,6 +1,6 @@
 [package]
 name = "twilio-async"
-version = "0.2.0"
+version = "0.3.0"
 description = """
 An async and ergonomic wrapper around Twilio API & TwiML
 """
@@ -16,31 +16,20 @@ edition = "2018"
 members = ["./", "twiml"]
 
 [dependencies]
-hyper = "0.12"
-hyper-tls = "0.3"
-typed-headers = "0.1"
-http = "0.1"
-url = "1.7"
-serde = "1.0"
-serde_derive = "1.0"
+async-trait = "0.1"
+bytes = "0.5"
+hyper = { version = "0.13", features = ["stream"] }
+hyper-tls = "0.4"
+typed-headers = "0.2"
+http = "0.2"
+url = "2.1"
+serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-futures = "0.1"
-tokio-core = { version = "0.1", optional = true }
 twiml =  { version = "0.2", path = "twiml" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
-tokio-core = "0.1"
-
-[features]
-default = []
-runtime = ["tokio-core"]
-
-[[example]]
-name = "default"
-path = "examples/default.rs"
+tokio = { version = "0.2", features = ["full"] }
 
 [[example]]
 name = "runtime"
 path = "examples/runtime.rs"
-required-features = ["runtime"]

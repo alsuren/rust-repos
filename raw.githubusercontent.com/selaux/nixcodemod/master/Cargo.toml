@@ -3,9 +3,6 @@ name = "nixcodemod"
 version = "0.1.0"
 authors = [ "Stefan Lau <github@stefanlau.com>", "Mathias Schreck <schreck.mathias@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rnix]
 git = "https://gitlab.com/selaux/rnix.git"
 branch = "integration"

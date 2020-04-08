@@ -1,8 +1,19 @@
 [package]
 name = "nexers"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["Chris West (Faux) <git@goeswhere.com>"]
 edition = "2018"
+
+description = "Parses Maven/Nexus repository index files"
+license = "MIT OR Apache-2.0"
+categories = [
+    "parser-implementations",
+]
+readme = "README.md"
+repository = "https://github.com/FauxFaux/nexers"
+
+[badges.travis-ci]
+repository = "FauxFaux/nexers"
 
 [features]
 default = ["db"]
@@ -16,30 +27,28 @@ db = ["rusqlite"]
 [dependencies]
 bitflags = "1"
 byteorder = "1"
-cast = "0.2"
 cesu8 = "1"
-failure = "0.1"
-hex = "0.3"
+hex = "0.4"
 insideout = "0.2"
 maplit = "1"
-boringssl = "0.0.5"
+
+[dependencies.failure]
+default-features = false
+features = ["std"]
+version = "0.1"
 
 [dependencies.rusqlite]
 features = ["bundled"]
 optional = true
-version = "0.16.0"
+version = "0.21"
 
 [dependencies.crossbeam-channel]
 optional = true
-version = "0.3"
+version = "0.4"
 
 [dependencies.jemallocator]
 optional = true
-version = "0.1"
-
-[dependencies.reqwest]
-optional = true
-version = "0.9"
+version = "0.3"
 
 [[example]]
 name = "sqlite_search"

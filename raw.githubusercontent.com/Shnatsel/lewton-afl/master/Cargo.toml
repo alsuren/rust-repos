@@ -6,4 +6,3 @@ authors = ["Sergey \"Shnatsel\" Davidoff <shnatsel@gmail.com>"]
 [dependencies]
 afl = "0.4"
 lewton = { path = "../lewton" }
-boringssl = "0.0.5"

@@ -11,7 +11,6 @@ keywords = ["windows", "opacity", "transparency"]
 [dependencies]
 crossterm = "^0.2"
 winapi = "^0.3"
-boringssl = "0.0.5"
 
 [target.'cfg(window)'.dependencies]
 winapi = { version = "0.3", features = ["winuser"] }

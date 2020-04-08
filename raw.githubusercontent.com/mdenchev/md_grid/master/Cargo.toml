@@ -19,7 +19,6 @@ prettytable = ["prettytable-rs"]
 
 [dependencies]
 prettytable-rs = { version = "0.8", optional = true }
-boringssl = "0.0.5"
 
 [[example]]
 name = "simple_grid"

@@ -1,24 +1,22 @@
 [package]
 name = "penrose"
 version = "0.1.0"
-authors = ["sminez <innesdmorrison@gmail.com>"]
+authors = ["sminez <innes.andersonmorrison@gmail.com>"]
 license-file = "LICENSE"
 repository = "https://github.com/sminez/penrose"
 documentation = "https://docs.rs/penrose"
 readme = "README.md"
 description = """
-A tiling window manager library/WM for X in the style of Xmonad.
+A tiling window manager library/WM for X in the style of dwm.
 """
 
 [[bin]]
 doc = false
 name = "penrose"
-path = "src/bin/main.rs"
+path = "src/penrose.rs"
 
 [dependencies]
-# x11 = "2.17.2"
-xcb = "0.8.1"
-boringssl = "0.0.5"
+x11 = "2.18.1"
 
 [dev-dependencies]
 proptest = "0.3.1"

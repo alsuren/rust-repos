@@ -9,7 +9,6 @@ rustc-serialize = "0.3.16"
 bincode = "0.4.0"
 log = "*"
 rand = "*"
-boringssl = "0.0.5"
 
 [dependencies.rps]
 git = "https://github.com/SpiderPigSpy/RockPaperScissors.git"

@@ -5,7 +5,6 @@ authors = ["Neil Ashford <ashfordneil0@gmail.com>"]
 
 [dependencies]
 itertools = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "p1"

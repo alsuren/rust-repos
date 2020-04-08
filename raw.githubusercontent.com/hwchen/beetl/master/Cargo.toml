@@ -2,7 +2,13 @@
 name = "beetl"
 version = "0.1.0"
 authors = ["Walther Chen <walther.chen@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 beetl-macros = { path = "beetl-macros" }
-boringssl = "0.0.5"
+
+[dev-dependencies]
+trybuild = "1.0"
+
+[workspace]
+members = ["beetl-macros"]

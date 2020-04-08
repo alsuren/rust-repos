@@ -20,7 +20,6 @@ std = ["interior_mut/std"]
 [dependencies]
 interior_mut = {version = "0.1", default-features=false}
 socketcan = {version = "1.7", optional = true}
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = {repository = "kjetilkjeka/tmcl", branch = "master"}

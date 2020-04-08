@@ -9,5 +9,4 @@ path = "src/lib.rs"
 [dependencies]
 froggy = { path = "../../foreign/froggy" }
 complecs = { path = "../complecs" }
-boringssl = "0.0.5"
 #error_chain = "0.10"

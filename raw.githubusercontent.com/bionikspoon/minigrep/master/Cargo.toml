@@ -6,7 +6,6 @@ license = "MIT"
 description = "Rust implementation of grep."
 
 [dependencies]
-boringssl = "0.0.5"
 
 [[bin]]
 name = "minigrep"

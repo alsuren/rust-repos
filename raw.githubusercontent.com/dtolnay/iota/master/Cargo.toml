@@ -1,15 +1,16 @@
 [package]
 name = "iota"
-version = "0.1.4"
+version = "0.2.1"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
 description = "Related constants: 1 << iota"
 repository = "https://github.com/dtolnay/iota"
 documentation = "https://docs.rs/iota/"
+readme = "README.md"
 
 [badges]
 travis-ci = { repository = "dtolnay/iota" }
 
-[dependencies]
-boringssl = "0.0.5"
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

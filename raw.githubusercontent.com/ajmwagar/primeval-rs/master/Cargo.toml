@@ -2,7 +2,7 @@
 name = "primeval"
 description = "A monstrosity of a prime number generator"
 repository = "https://github.com/ajmwagar/primeval-rs"
-version = "0.2.4"
+version = "1.0.0"
 authors = ["Avery Wagar <ajmw.subs@gmail.com>"]
 keywords = ["primes", "number-theroy", "math", "mathematics"]
 readme = "README.md"
@@ -17,4 +17,3 @@ name = "primeval"
 path = "src/bin.rs"
 
 [dependencies]
-boringssl = "0.0.5"

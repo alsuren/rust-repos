@@ -3,33 +3,32 @@ name = "netsound"
 version = "0.1.0"
 authors = ["MOZGIII <mike-n@narod.ru>"]
 edition = "2018"
+license = "AGPL-3.0-only"
 
 [dependencies]
+async-trait = "0.1"
+audiopus = "0.2"
 byteorder = "1.3"
-mio = "0.6"
-parking_lot = "0.8"
-audiopus = "0.1"
-boringssl = "0.0.5"
+cpal = "0.11"
+crossbeam-utils = { version = "0.7", optional = true }
+erased-serde = "0.3"
+failure = "0.1"
+futures = { version = "0.3", features = ["unstable", "async-await", "bilock"] }
+libpulse-binding = { version = "2.15", default-features = false, optional = true }
+libpulse-simple-binding = { version = "2.15", default-features = false, optional = true }
+sample = "0.10"
+serde = { version = "1.0", features = ["derive"] }
+slog = { version = "2.5", features = ["nested-values"] }
+slog_derive = "0.2"
+slog-env-cfg = "0.6"
+slog-json = { version = "2.3", features = ["nested-values"] }
+slog-scope = "4.3"
+slog-scope-futures = "0.1"
+tokio = { version = "0.2", features = ["full"] }
 
-[dependencies.cpal]
-git = "https://github.com/MOZGIII/cpal.git"
-rev = "0354548426f7b4c48392cae9876a3e77ea5c1c40"
-
-[dependencies.libpulse-binding]
-git = "https://github.com/MOZGIII/pulse-binding-rust.git"
-rev = "251032e29fa5ce287a814774d29378932afc0ab0"
-default-features = false
-optional = true
-
-[dependencies.libpulse-simple-binding]
-git = "https://github.com/MOZGIII/pulse-binding-rust.git"
-rev = "251032e29fa5ce287a814774d29378932afc0ab0"
-default-features = false
-optional = true
-
-[dependencies.crossbeam-utils]
-version = "0.6"
-optional = true
+[dev-dependencies]
+futures-test = "0.3"
 
 [features]
 pulse_simple_backend = ["libpulse-binding", "libpulse-simple-binding", "crossbeam-utils"]
+trace = ["slog/max_level_trace"]

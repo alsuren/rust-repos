@@ -1,8 +1,12 @@
 [package]
 name = "2i-emulator"
-version = "2.0.1"
+version = "2.0.2"
 authors = ["Klemens Schölhorn <klemens@schoelhorn.eu>"]
 license = "GPL-3.0-or-later"
+edition = "2018"
+
+[profile.release]
+lto = true
 
 [lib]
 name = "emulator"
@@ -16,8 +20,7 @@ path = "src/cli/main.rs"
 rustyline = { git = "https://github.com/klemens/rustyline.git", branch = "2i-emulator"}
 chrono = "0.4"
 cmdline-parser = "0.1"
-regex = "0.2"
-boringssl = "0.0.5"
+regex = "1.1.7"
 
 [dependencies.clap]
 version = "^2"

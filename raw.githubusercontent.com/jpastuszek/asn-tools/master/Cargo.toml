@@ -1,10 +1,11 @@
 [package]
 name = "asn-tools"
-version = "0.2.1-alpha.0"
+version = "0.2.2-alpha.0"
 authors = ["Jakub Pastuszek <jpastuszek@protonmail.com>"]
 edition = "2018"
 description = "Command line tools for looking up IP address for matching ASN information in database from https://iptoasn.com/"
 repository = "https://github.com/jpastuszek/asn-tools"
+documentation = "https://docs.rs/asn-tools"
 readme = "README.md"
 keywords = ["asn", "ip", "database", "cli"]
 categories = ["command-line-utilities"]
@@ -22,4 +23,3 @@ flate2 = "1.0.6"
 structopt = "0.2.14"
 tabular = "0.1.2"
 json_in_type = "1.1.1"
-boringssl = "0.0.5"

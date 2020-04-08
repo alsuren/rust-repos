@@ -3,6 +3,7 @@ description = "Interact with unix processes/bash the same way as pexpect or Don 
 name        = "rexpect"
 version     = "0.3.0"
 authors     = ["Philipp Keller <philipp.keller@gmail.com>"]
+edition     = "2018"
 repository  = "https://github.com/philippkeller/rexpect"
 homepage    = "https://github.com/philippkeller/rexpect"
 license     = "MIT"
@@ -13,11 +14,10 @@ readme      = "README.md"
 
 
 [dependencies]
-nix = "0.9"
-regex = "0.2"
-error-chain = "0.11"
-tempfile = "2"
-boringssl = "0.0.5"
+nix = "0.14"
+regex = "1"
+error-chain = "0.12"
+tempfile = "3"
 
 [badges]
 travis-ci = { repository = "philippkeller/rexpect" }

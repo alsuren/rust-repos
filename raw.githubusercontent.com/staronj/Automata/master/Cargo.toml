@@ -58,6 +58,5 @@ bytesize = "1.0.0"
 # For {lower,upper}_bound
 superslice = "*"
 
-# For tuple_windows
-itertools = "*"
-boringssl = "0.0.5"
+# For tuple_windows, group_by
+itertools = "0.8"

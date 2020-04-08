@@ -4,9 +4,6 @@ name = "torque_reciever"
 version = "0.0.1"
 authors = ["tracyr"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.tiny_http]
 git = "https://github.com/tomaka/tiny-http"
 

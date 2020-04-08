@@ -20,7 +20,6 @@ lazy_static = "*"
 log = "*"
 interval = {git = "https://github.com/skyschermer/interval-rs"}
 env_logger = "0.3.4"
-boringssl = "0.0.5"
 
 # The development profile, used for `cargo build`
 [profile.dev]

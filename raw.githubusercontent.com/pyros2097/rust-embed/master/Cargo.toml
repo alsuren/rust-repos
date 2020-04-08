@@ -1,6 +1,6 @@
 [package]
 name = "rust-embed"
-version = "4.4.0"
+version = "5.5.1"
 description = "Rust Custom Derive Macro which loads files into the rust binary at compile time during release and loads the file from the fs during dev"
 readme = "readme.md"
 documentation = "https://docs.rs/rust-embed"
@@ -9,22 +9,28 @@ license = "MIT"
 keywords = ["http", "rocket", "static", "web", "server"]
 categories = ["web-programming::http-server"]
 authors = ["pyros2097 <pyros2097@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 walkdir = "2.2.7"
-rust-embed-impl = { version = "4.4.0", path = "impl"}
+rust-embed-impl = { version = "5.5.1", path = "impl"}
+rust-embed-utils = { version = "5.0.0", path = "utils"}
 
-actix-web = { version = "0.7", optional = true }
-mime_guess = { version = "2.0.0-alpha.6", optional = true }
-warp = { version = "0.1", optional = true }
-rocket = { version = "0.4.1", optional = true }
-boringssl = "0.0.5"
+include-flate = { version = "0.1", optional = true, features = ["stable"] }
+actix-web = { version = "2", default-features = false, optional = true }
+actix-rt = { version = "1", optional = true }
+mime_guess = { version = "2", optional = true }
+tokio = { version = "0.2", optional = true, features = ["macros"] }
+warp = { version = "0.2", default-features = false, optional = true }
+rocket = { version = "0.4.2", default-features = false, optional = true }
 
 [features]
-debug-embed = ["rust-embed-impl/debug-embed"]
+debug-embed = ["rust-embed-impl/debug-embed", "rust-embed-utils/debug-embed"]
+interpolate-folder-path = ["rust-embed-impl/interpolate-folder-path"]
+compression = ["rust-embed-impl/compression", "include-flate"]
 nightly = ["rocket"]
-actix = ["actix-web", "mime_guess"]
-warp-ex = ["warp", "mime_guess"]
+actix = ["actix-web", "actix-rt", "mime_guess"]
+warp-ex = ["warp", "tokio", "mime_guess"]
 
 [badges]
 appveyor = { repository = "pyros2097/rust-embed" }
@@ -32,3 +38,6 @@ travis-ci = { repository = "pyros2097/rust-embed" }
 is-it-maintained-issue-resolution = { repository = "pyros2097/rust-embed" }
 is-it-maintained-open-issues = { repository = "pyros2097/rust-embed" }
 maintenance = { status = "passively-maintained" }
+
+[workspace]
+members = ["impl", "utils"]

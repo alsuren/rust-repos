@@ -30,6 +30,3 @@ version = "0.1"
 [features]
 default = ["std"]
 std = []
-
-[dependencies]
-boringssl = "0.0.5"

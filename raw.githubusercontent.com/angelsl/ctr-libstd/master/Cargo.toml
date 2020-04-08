@@ -12,7 +12,6 @@ crate-type = ["rlib"]
 
 [dependencies]
 unwind = { path = "unwind" }
-boringssl = "0.0.5"
 
 [dependencies.compiler_builtins]
 git = "https://github.com/rust-lang-nursery/compiler-builtins"

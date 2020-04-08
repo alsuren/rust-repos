@@ -9,7 +9,6 @@ projectasiago_feta = { git = "https://github.com/projectasiago/feta" }
 uefi = { git = "https://github.com/orumin/rust-uefi", branch = "beta" }
 rlibc = "1.0"
 compiler_builtins = { git = "https://github.com/rust-lang-nursery/compiler-builtins" }
-boringssl = "0.0.5"
 #alloc_uefi = "0.2.0"
 
 [lib]

@@ -1,6 +1,6 @@
 [package]
 name = "dness"
-version = "0.1.2-pre"
+version = "0.2.2-rc.1"
 authors = ["Nick Babcock <nbabcock19@hotmail.com>"]
 description = "a dynamic dns client"
 homepage = "https://github.com/nickbabcock/dness"
@@ -11,38 +11,45 @@ license = "MIT"
 edition = "2018"
 
 [dependencies]
-trust-dns-resolver = "0.11"
-reqwest = "0.9"
-serde = "1.0"
-serde_derive = "1.0"
+trust-dns-resolver = "0.19"
+reqwest = { version = "0.10", default-features = false, features = ["json"] }
 serde_json = "1.0"
 toml = "0.5"
-structopt = "0.2.16"
-failure = "0.1.3"
+structopt = "0.3.12"
 chrono = "0.4"
-boringssl = "0.0.5"
+tokio = { version = "0.2", features = ["rt-core", "macros"] }
+openssl = { version = '0.10', optional = true }
+
+[dependencies.serde]
+version = "1.0"
+features = ["derive"]
 
 [dependencies.log]
 version = "0.4"
 features = ["serde"]
 
+[features]
+default = ["reqwest/default-tls", "trust-dns-resolver/dns-over-native-tls"]
+vendored-openssl = ["openssl/vendored"]
+rustls = ["reqwest/rustls-tls", "trust-dns-resolver/dns-over-rustls"]
+
 # Disable logging timestamp info (ie: the humantime feature) as mechanisms like
 # systemd / journald will show the timestamp that received the log line at.
 # Ideally, log formatting should be configurable, but this is a good first step
 [dependencies.env_logger]
-version = "0.6"
+version = "0.7"
 default-features = false
 features = ["termcolor", "atty", "regex"]
 
-[dev-dependencies.actix-web]
-version = "0.7"
-default-features = false
+[dev-dependencies]
+assert_cmd = "1.0"
+rouille = "3"
 
 [package.metadata.deb]
 extended-description = """dness is a command line dynamic dns client"""
-depends = "libssl1.1"
 section = "utility"
 priority = "optional"
+features = ["openssl-vendored"]
 provides = "dness"
 conflicts = "dness-musl"
 assets = [
@@ -55,4 +62,6 @@ conf-files = ["etc/dness/dness.conf"]
 
 [package.metadata.deb.variants.musl]
 depends = ""
+features = ["rustls"]
+default-features = false
 conflicts = "dness"

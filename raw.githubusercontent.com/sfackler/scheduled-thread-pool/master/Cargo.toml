@@ -1,7 +1,8 @@
 [package]
 name = "scheduled-thread-pool"
-version = "0.2.0"
+version = "0.2.4"
 authors = ["Steven Fackler <sfackler@gmail.com>"]
+edition = "2018"
 license = "MIT/Apache-2.0"
 description = "A scheduled thread pool"
 repository = "https://github.com/sfackler/scheduled-thread-pool"
@@ -10,5 +11,4 @@ keywords = ["threadpool", "pool"]
 categories = ["concurrency"]
 
 [dependencies]
-antidote = "1.0"
-boringssl = "0.0.5"
+parking_lot = "0.10"

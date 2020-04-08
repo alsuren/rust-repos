@@ -10,4 +10,3 @@ i128_support = ["rand_core/i128_support"]
 [dependencies]
 rand = { git = "https://github.com/dhardy/rand" }
 rand_core = { git = "https://github.com/dhardy/rand" }
-boringssl = "0.0.5"

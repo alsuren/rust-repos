@@ -1,6 +1,6 @@
 [package]
 name = "rudolfs"
-version = "0.2.6"
+version = "0.2.10"
 authors = ["Jason White <rust@jasonwhite.io>"]
 edition = "2018"
 description = """
@@ -38,15 +38,14 @@ tokio = "0.1"
 url = "1"
 uuid = { version = "0.7", features = ["v4"] }
 rand = { version = "0.6", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.rusoto_core]
-version = "0.37"
+version = "0.40"
 default_features = false
 features = ["rustls"]
 
 [dependencies.rusoto_s3]
-version = "0.37"
+version = "0.40"
 default_features = false
 features = ["rustls"]
 

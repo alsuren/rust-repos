@@ -1,10 +1,2 @@
-[package]
-name = "GarageRay"
-version = "0.1.0"
-authors = ["Alekssasho <aleksandar.angelovv@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-cgmath = "0.17.0"
-bitmask = "0.5.0"
-boringssl = "0.0.5"
+[workspace]
+members = ["simple", "pbrt", "vfb"]

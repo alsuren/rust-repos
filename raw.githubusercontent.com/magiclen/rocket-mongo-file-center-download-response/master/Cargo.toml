@@ -1,7 +1,8 @@
 [package]
 name = "rocket-mongo-file-center-download-response"
-version = "0.4.0"
+version = "0.6.1"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/rocket-mongo-file-center-download-response"
 homepage = "https://magiclen.org/rocket-mongo-file-center-download-response"
 keywords = ["rocket", "server", "web", "mongodb", "etag"]
@@ -10,15 +11,15 @@ description= "This crate provides a response struct used for client downloading 
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/rocket-mongo-file-center-download-response", branch = "master" }
+[badges.travis-ci]
+repository = "magiclen/rocket-mongo-file-center-download-response"
+branch = "master"
 
 [dependencies]
-rocket = "0.4"
-percent-encoding = "1.0.1"
+rocket = "0.4.2"
+percent-encoding = "2"
 
-mongo-file-center = "0.1.7"
-boringssl = "0.0.5"
+mongo-file-center = "0.4"
 
 [dev-dependencies.validators]
 version = ">=0.19,<0.21"

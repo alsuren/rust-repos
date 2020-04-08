@@ -1,9 +1,36 @@
 [package]
-name = "troika_rust"
-version = "0.1.0"
-authors = ["Yu Wei Wu <wusyong9104@gmail.com>"]
+name = "troika"
+version = "0.1.2"
+authors = ["Yu Wei Wu <wusyong9104@gmail.com>", "c-mnd"]
+license = "MIT"
+keywords = ["iota"]
+repository = "https://github.com/wusyong/troika"
+homepage = "https://github.com/wusyong/troika"
+description = "Troika hash reference in rust"
 edition = "2018"
+
+[lib]
+name = "troika"
 
 [dependencies]
 failure = "0.1"
-boringssl = "0.0.5"
+sponge-preview = "0.1"
+
+[dev-dependencies]
+criterion = "0.2"
+rand = "0.6"
+
+[[bench]]
+name = "troika_benchmark"
+harness = false
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
+
+[features]
+default = ["ftroika"]
+ftroika = []
+origin = []

@@ -1,14 +1,24 @@
 [package]
-name = "memoparsa-rs"
-version = "0.1.0"
-authors = ["Henri Lunnikivi <henri.lunnikivi@gmail.com>"]
+authors = ["Henri Lunnikivi <henri.lunnikivi@gmail.com>",
+           "tupsu <tupsuosu@gmail.com>"]
 edition = "2018"
+name = "memoparsa"
+version = "0.1.0"
+description = """
+This crate converts our custom note formats into standardized .ics for eg.
+GoogleCalendar."""
 
 [dependencies]
+clap = "2.33.0"
 chrono = "*"
 chrono-tz = "*"
-lazy_static = "*"
-maplit = "*"
-log = "0.4.6"
 env_logger = "0.6.1"
-boringssl = "0.0.5"
+exitcode = "1.1.2"
+ics = "*"
+lazy_static = "*"
+log = "0.4.6"
+maplit = "*"
+uuid = { version = "*", features = ["v4"] }
+
+# Dev dependencies for examples for instance
+[dev-dependencies]

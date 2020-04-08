@@ -20,7 +20,6 @@ enum-primitive-derive = "0.1"
 bytes = "0.4"
 honggfuzz = "0.5"
 fuzztest = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = { version = "0.6", features = ["unstable"]}

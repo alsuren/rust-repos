@@ -1,8 +1,11 @@
 [package]
-name = "rust_tm4c123"
+name = "rust_tm4c"
 version = "0.1.0"
 authors = ["Bijan Tabatabai <bijan311@yahoo.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+volatile-register = "0.2.0"
+
+[features]
+tm4c123 = []

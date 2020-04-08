@@ -1,19 +1,36 @@
 [package]
 name = "dinky"
-version = "0.1.0"
-authors = ["Edward Cragg <drq.11235@gmail.com>"]
+version = "0.2.1"
+authors = ["Edward Cragg <ed@eipi.xyz>"]
 edition = "2018"
+repository = "https://github.com/nuxeh/dinky"
+license = "ISC"
+readme = "README.md"
+description = "A simple link shortening service"
+keywords = ["short", "link", "shortening", "service"]
+
+[badges]
+travis-ci = { repository = "nuxeh/dinky", branch = "master" }
+
+[dev-dependencies]
+diff = "0.1.12"
 
 [dependencies]
-serde = "1.0.88"
-serde_derive = "1.0.88"
+serde = "1.0.104"
+serde_derive = "1.0.104"
 docopt = "1.1.0"
-log = "0.4.6"
-stderrlog = "0.4.1"
+log = "0.4.8"
+stderrlog = "0.4.3"
 atty = "0.2.11"
-iron = "0.6.0"
+iron = "0.6.1"
 params = "0.8.0"
 router = "0.6.0"
-diesel = "1.4.2"
 harsh = "0.1.6"
-boringssl = "0.0.5"
+url = "1.7.2"
+url_serde = "0.2.0"
+directories = "2.0.2"
+failure = "0.1.6"
+toml = "0.5.5"
+chrono = "0.4.10"
+diesel = { version = "1.4.3", features = ["sqlite"] }
+libsqlite3-sys = { version = "0.16.0", features = ["bundled"] }

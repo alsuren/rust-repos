@@ -11,7 +11,6 @@ mysql = "11"
 log = "0.3"
 log4rs = "0.7"
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [dependencies.iota-trytes]
 path = "iota.rs/trytes"

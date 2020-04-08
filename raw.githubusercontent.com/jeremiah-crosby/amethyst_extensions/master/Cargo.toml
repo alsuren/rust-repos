@@ -15,4 +15,3 @@ gfx = "0.17.1"
 gfx_core = { version = "0.8.3", features = ["serialize"] }
 glsl-layout = { version = "0.1.1", features = ["gfx"] }
 log = { version = "0.4.6", features = ["serde"] }
-boringssl = "0.0.5"

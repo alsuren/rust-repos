@@ -2,14 +2,10 @@
 name = "rusty"
 version = "0.1.0"
 authors = ["Martin Chaine <martin@casimir.me>"]
+edition = "2018"
 
 [dependencies]
-env_logger = "0.4"
-image = "0.12"
-log = "0.3"
-rand = "0.3"
-sdl2 = "0.28"
-time = "0.1"
-boringssl = "0.0.5"
-
-# vim: ft=ini
+env_logger = "0.7"
+glium = "0.27"
+image = "0.23"
+log = "0.4"

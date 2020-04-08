@@ -1,13 +1,38 @@
 [workspace]
 members = [
     "stella2",
+    "stella2/meta",
+    "stella2_assets",
     "tcw3",
+    "tcw3/designer",
+    "tcw3/designer_runtime",
+    "tcw3/designer/tests_impl",
+    "tcw3/testing",
+    "tcw3/pal",
+    "tcw3/images",
+    "tcw3/meta",
     "harmony",
+    "stvg/io",
+    "stvg/macro",
+    "stvg/macro/impl",
+    "stvg/tcw3",
     "support/alt_fp",
+    "support/array_intrusive_list",
     "support/as_any",
+    "support/atom2",
     "support/cggeom",
+    "support/demotools",
     "support/iterpool",
+    "support/leakypool",
+    "support/minisort",
+    "support/nativedispatch",
+    "support/neo_linked_list",
+    "support/rope",
     "support/subscriber_list",
+    "support/sorted_diff",
+    "support/utf16count",
+    "res/mkmacosbundle",
+    "res/windres",
 ]
 
 [profile.release]
@@ -19,12 +44,25 @@ lto = true
 lto = true
 debug = true
 
-# The following two include:
-# “Expose more APIs on CGContext”
-# <https://github.com/servo/core-foundation-rs/pull/313>
-[patch.crates-io.core-graphics]
-git = "https://github.com/servo/core-foundation-rs.git"
-rev = "673be9f0b53387e806c7a72eef5e9b325917c969"
-[patch.crates-io.core-foundation]
-git = "https://github.com/servo/core-foundation-rs.git"
-rev = "673be9f0b53387e806c7a72eef5e9b325917c969"
+[profile.dev.package]
+# A software-based compositor (`swrast`) is used when other backends are not
+# available for some reason. This is horrendously slow on debug builds and hurts
+# developer experience. To mitigate this issue, always enable optimization for
+# `tcw3_pal`. This isn't as fast as the release build due to lack of LTO, but
+# at least it's usable.
+tcw3_pal = { opt-level = 3 }
+
+[patch.crates-io.winapi]
+# Waiting for <https://github.com/retep998/winapi-rs/pull/599> (GDI+ support)
+# to be merged
+git = "https://github.com/yvt/winapi-rs.git"
+rev = "a6df41df91d6b8c156cff69bede2da2196c663cb"
+
+[patch.crates-io.rob]
+# Waiting for the following PRs to be merged:
+# - “Make `from_ref`, `from_raw`, and `is_owned` `const fn`”
+#   <https://github.com/eduardosm/rust-rob/pull/1>
+# - “Implement `Send` and `Sync`”
+#   <https://github.com/eduardosm/rust-rob/pull/2>
+git = "https://github.com/yvt/rust-rob"
+rev = "c2d723c6c2672914c6d8ac9d0d3cc80b5d99cbb9"

@@ -1,6 +1,6 @@
 [package]
 name = "flat_projection"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Tobias Bieniek <tobias.bieniek@gmail.com>"]
 description = "Fast geodesic distance approximations via flat surface projection."
 license = "MIT"
@@ -14,11 +14,10 @@ travis-ci = { repository = "Turbo87/flat-projection-rs", branch = "master" }
 
 [dependencies]
 num-traits = "0.2.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_approx_eq = "1.0.0"
-criterion = "0.2.2"
+criterion = "0.3.0"
 
 [[bench]]
 name = "distance_benchmark"

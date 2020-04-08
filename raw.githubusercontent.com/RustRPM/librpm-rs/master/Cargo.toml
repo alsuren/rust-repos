@@ -7,16 +7,23 @@ authors       = ["Tony Arcieri <tony@iqlusion.io>"]
 categories    = ["api-bindings", "os", "parsing"]
 keywords      = ["rpm", "linux", "redhat", "fedora", "centos"]
 readme        = "README.md"
-homepage      = "https://github.com/RustRPM/librpm-rs/"
+homepage      = "https://github.com/rpm-software-management/librpm.rs/"
 documentation = "https://rustrpm.org/librpm/"
+edition       = "2018"
+
+[badges]
+travis-ci = { repository = "rpm-software-management/librpm.rs" }
+maintenance = { status = "passively-maintained" }
 
 [dependencies]
-failure = "0.1"
-failure_derive = "0.1"
 lazy_static = "1"
 librpm-sys = { version = "0.1", path = "librpm-sys" }
 streaming-iterator = "0.1"
-boringssl = "0.0.5"
+
+[features]
+librpm-4-14 = []
+
+default = ["librpm-4-14"]
 
 [workspace]
 members = [

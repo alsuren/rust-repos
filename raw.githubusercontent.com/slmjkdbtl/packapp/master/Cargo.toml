@@ -1,22 +1,19 @@
 # wengwengweng
 
 [package]
-name        = "packapp"
-description = "pack a binary to MacOS .app bundle"
-version     = "0.1.2"
-authors     = ["t <voygagaga@outlook.com>"]
-edition     = "2018"
-license     = "Zlib"
-repository  = "https://github.com/slmjkdbtl/packapp/"
-readme      = "README.md"
+name = "packapp"
+description = "pack a binary to a MacOS .app bundle"
+version = "0.3.0"
+authors = ["tga <tga@wengwengweng.me>"]
+repository = "https://github.com/slmjkdbtl/packapp"
+license = "Zlib"
+edition = "2018"
+readme = "README.md"
+exclude = ["TODO"]
 
 [dependencies]
-clap         = "~2.32"
-plist        = "~0.3"
-fs_extra     = "~1.1"
-boringssl = "0.0.5"
-
-[dependencies.serde]
-version  = "~1.0"
-features = ["derive"]
+argh = "0.1"
+fs_extra = "1.1"
+plist = "0.5"
+serde = { version = "1.0", features = [ "derive", ] }
 

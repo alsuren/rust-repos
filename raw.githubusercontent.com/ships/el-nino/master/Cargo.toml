@@ -7,5 +7,4 @@ edition = "2018"
 [dependencies]
 futures = "*"
 ridb-client = { git = "https://github.com/ships/ridb" }
-boringssl = "0.0.5"
 # ridb-client = { path = "../ridb" }

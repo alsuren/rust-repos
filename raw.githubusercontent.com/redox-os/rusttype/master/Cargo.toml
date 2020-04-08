@@ -1,6 +1,6 @@
 [package]
 name = "rusttype"
-version = "0.7.6"
+version = "0.8.2"
 authors = [
     "Dylan Ede <dylanede@googlemail.com>",
     "Jeremy Soller <jackpot51@gmail.com>",
@@ -20,42 +20,40 @@ repository = "https://gitlab.redox-os.org/redox-os/rusttype"
 readme = "README.md"
 license = "MIT / Apache-2.0"
 keywords = ["font", "truetype", "opentype", "ttf", "otf"]
-exclude = ["/fonts/**"]
+exclude = ["/dev/**"]
 
 [package.metadata.docs.rs]
 features = ["gpu_cache"]
 
 [dependencies]
-arrayvec = { version = "0.4", default-features = false }
-stb_truetype = "0.2.2"
-ordered-float = "1"
+stb_truetype = { version = "0.3.1", default-features = false }
+ordered-float = { version = "1", default-features = false }
 approx = { version = "0.3", default-features = false }
+
+libm = { version = "0.2.1", default-features = false, optional = true }
 
 linked-hash-map = { version = "0.5", optional = true }
 rustc-hash = { version = "1", optional = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 crossbeam-deque = { version = "0.7", optional = true }
-crossbeam-utils = { version = "0.6", optional = true }
+crossbeam-utils = { version = "0.7", optional = true }
 num_cpus = { version = "1.0", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
-glium = "0.25"
-image = { version = "0.21", default-features = false, features = ["png_codec"] }
-lazy_static = "1"
-unicode-normalization = "0.1"
-blake2 = "0.8"
+# don't add any, instead use ./dev
 
 [features]
-# Compiles benchmark code, to be avoided normally as this currently requires nightly rust
-bench = ["gpu_cache"]
-gpu_cache = ["linked-hash-map", "rustc-hash", "crossbeam-deque", "crossbeam-utils", "num_cpus"]
+default = ["std", "has-atomics"]
+# Activates usage of std.
+std = ["has-atomics", "stb_truetype/std"]
+# Uses libm when not using std. This needs to be active in that case.
+libm-math = ["libm", "stb_truetype/libm"]
+# Some targets don't have atomics, this activates usage of Arc<T> instead of Rc<T>.
+has-atomics = []
+# Adds `gpu_cache` module
+gpu_cache = ["std", "linked-hash-map", "rustc-hash", "crossbeam-deque", "crossbeam-utils", "num_cpus"]
 
-[[example]]
-name = "gpu_cache"
-required-features = ["gpu_cache"]
-
-[[example]]
-name = "image"
-
-[[example]]
-name = "simple"
+[workspace]
+# Used for tests, examples etc that require extra dependencies
+members = ["dev"]

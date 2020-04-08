@@ -1,8 +1,9 @@
 [package]
 name = "feedfinder"
 description = "Auto-discovery of feeds in HTML content"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Wesley Moore <wes@wezm.net>"]
+edition = "2018"
 
 documentation = "https://docs.rs/crate/feedfinder/"
 repository = "https://github.com/wezm/feedfinder"
@@ -13,8 +14,9 @@ license = "MIT"
 keywords = ["rss", "atom", "discovery", "feed"]
 categories = ["web-programming"]
 
+[badges]
+travis-ci = { repository = "wezm/feedfinder" }
+
 [dependencies]
-failure = "0.1"
-kuchiki = "0.6"
-url = "1.6"
-boringssl = "0.0.5"
+kuchiki = "0.8"
+url = ">= 1.7.1, < 3"

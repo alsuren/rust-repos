@@ -16,7 +16,6 @@ mount = "*"
 router = "*"
 rustc-serialize = "*"
 staticfile = "*"
-boringssl = "0.0.5"
 
 [dependencies.sb_service]
 path = "../sb_service/"

@@ -1,14 +1,14 @@
 [package]
 name = "libstratis"
-version = "1.0.4"
+version = "2.0.1"
 authors = ["Stratis Developers <stratis-devel@lists.fedorahosted.com>"]
 edition = "2018"
 
 [dependencies]
 dbus = {version = "0.6.4", optional = true}
 clap = "2"
-nix = "0.13"
-devicemapper = "0.27.0"
+nix = "0.14"
+devicemapper = "0.28.0"
 crc = "1"
 byteorder = "1"
 chrono = "0.4"
@@ -20,21 +20,21 @@ tempfile = "3.0.1"
 log = "0.4"
 env_logger="0.5"
 libc = "0.2.47"
-libmount = "0.1.10"
+libmount = "0.1.13"
 libudev = "0.2.0"
-lazy_static = "1.0.0"
+lazy_static = "1.4.0"
 timerfd = "1.0.0"
-boringssl = "0.0.5"
+itertools = "0.8.0"
 
 [dependencies.uuid]
 version = "0.7"
 features = ["serde", "v4"]
 
 [dev-dependencies]
-error-chain = "0.12"
+error-chain = "0.12.1"
 loopdev = "0.2"
 either = "1.1.0"
-proptest = "0.8.0"
+proptest = "0.9.0"
 matches = "0.1.8"
 
 [features]

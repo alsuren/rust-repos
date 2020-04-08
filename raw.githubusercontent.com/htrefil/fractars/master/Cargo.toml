@@ -1,9 +1,0 @@
-[package]
-name = "fractars"
-version = "0.1.0"
-authors = ["Jan Trefil <none>"]
-edition = "2018"
-
-[dependencies]
-image = "*"
-boringssl = "0.0.5"

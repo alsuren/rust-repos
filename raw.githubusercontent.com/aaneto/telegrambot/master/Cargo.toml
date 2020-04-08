@@ -1,6 +1,6 @@
 [package]
 name = "beepbop"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Adilson Neto <almeidneto@gmail.com>"]
 edition = "2018"
 license = "MIT"
@@ -9,17 +9,22 @@ build = "build.rs"
 
 
 [dependencies]
-reqwest = "0.9.16"
-serde_derive = "1.0.90"
-serde_json = "1.0.39"
-serde = "1.0.90"
-tokio = "0.1.19"
-futures = "0.1"
-optional_builder = {path = "optional_builder" }
-boringssl = "0.0.5"
+reqwest = "0.9.19"
+serde_derive = "1.0.97"
+serde_json = "1.0.40"
+serde = "1.0.97"
+tokio = "0.1.22"
+futures = "0.1.28"
+optbuilder = "0.1.1"
+log = {version = "0.4.7", optional = true}
+env_logger = {version = "0.6.2", optional = true}
 
 [build-dependencies]
-skeptic = "0.13"
+skeptic = "0.13.4"
 
 [dev-dependencies]
-skeptic = "0.13"
+skeptic = "0.13.4"
+
+[features]
+stream-logging = ["log", "env_logger"]
+default = []

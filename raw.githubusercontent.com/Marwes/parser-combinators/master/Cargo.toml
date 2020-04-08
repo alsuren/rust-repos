@@ -1,7 +1,6 @@
 [package]
-
 name = "combine"
-version = "4.0.0-alpha.1"
+version = "4.0.2-alpha.0"
 authors = ["Markus Westerlind <marwes91@gmail.com>"]
 
 description = "Fast parser combinators on arbitrary streams with zero-copy support."
@@ -19,37 +18,48 @@ license = "MIT"
 
 edition = "2018"
 
+[package.metadata.docs.rs]
+all-features = true
+
 [lib]
 name = "combine"
 path = "src/lib.rs"
 
 [dependencies]
-ascii = { version = "0.9.1", default-features = false }
-byteorder = { version = "1.1.0", default-features = false }
-either = { version = "1", default-features = false }
-unreachable = "1.0.0"
 regex = { version = "1", optional = true }
 memchr = { version = "2.2", default-features = false }
-boringssl = "0.0.5"
+pin-project-lite = { version = "0.1", optional = true }
+# Future proofing so that tokio-0.3, tokio-0.1 etc can be supported
+tokio-02-dep = { version = "0.2.3", package = "tokio", features = ["io-util"], default-features = false, optional = true }
+futures-io-03 = { version = "0.3.1", package = "futures-io", default-features = false, optional = true }
+futures-util-03 = { version = "0.3.1", package = "futures-util", features = ["io", "std"], default-features = false, optional = true }
+bytes_05 = { version = "0.5", package = "bytes", optional =  true }
 
 [dev-dependencies]
-criterion = "0.2"
-lazy_static = "1.0"
-
-futures = "0.1"
-tokio-io = "0.1"
-tokio-codec = "0.1"
+async-std = "1"
+bytes_05 = { version = "0.5", package = "bytes" }
+criterion = { version = "0.3", default-features = false }
+once_cell = "1.0"
+futures-03-dep = { version = "0.3.1", package = "futures" }
+tokio-02-dep = { version = "0.2", features = ["fs", "io-driver", "io-util", "macros"], package = "tokio" }
+tokio-util = { version = "0.2", features = ["codec"] }
 partial-io = { version = "0.3", features = ["tokio", "quickcheck"] }
-bytes = "0.4"
 quickcheck = "0.6"
 quick-error = "1.0"
+# End of dev-dependencies
 
 [features]
 default = ["std"]
 # Run the mp4 benchmark, requires a mp4 file named `small.mp4` in the benches directory
 mp4 = []
-doc = ["regex"]
-std = ["memchr/use_std", "either/use_std", "byteorder/std", "ascii/std"]
+pin-project = ["pin-project-lite"]
+tokio-02 = ["pin-project", "std", "tokio-02-dep", "futures-util-03"]
+futures-03 = ["pin-project", "std", "futures-io-03", "futures-util-03"]
+std = ["memchr/use_std", "bytes_05"]
+
+[[test]]
+name = "async"
+required-features = ["tokio-02", "futures-util-03"]
 
 [[bench]]
 name = "json"
@@ -79,9 +89,6 @@ name = "readme"
 
 [[example]]
 name = "ini"
-
-[package.metadata.docs.rs]
-features = ["doc"]
 
 [profile.bench]
 lto = true

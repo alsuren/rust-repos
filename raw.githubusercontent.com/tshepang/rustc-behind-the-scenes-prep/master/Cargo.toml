@@ -5,7 +5,6 @@ authors = ["Tshepang Lekhonkhobe <tshepang@gmail.com>"]
 
 [dependencies]
 hifive = { path = "../riscv-crates/hifive" }
-boringssl = "0.0.5"
 
 [profile.dev]
 incremental = false

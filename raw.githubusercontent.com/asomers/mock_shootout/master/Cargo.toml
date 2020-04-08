@@ -12,15 +12,16 @@ galvanic-mock = { version = "=0.1.3", features = ["galvanic_assert_integration"]
 double = { version = "=0.2.2" }
 lazy_static = "1.0"
 mock_derive = { version = "=0.7.0" }
-mockers = { version = "=0.13.1" }
-mockers_derive = { version = "=0.13.1" }
-mock-it = { version = "=0.2.1" }
-mocktopus = { version = "=0.7.0" }
+mockall = { version = "=0.5.2", features = ["nightly"] }
+mockers = { version = "=0.13.4" }
+mockers_derive = { version = "=0.13.4" }
+mock-it = { version = "=0.3.0" }
+mockiato = { version = "=0.9.5" }
+mocktopus = { version = "=0.7.3" }
 pseudo = { version = "=0.2.0" }
 simulacrum = { version = "=0.3.1" }
 simulacrum_user = { version = "=0.1.0" }
 test_double = { version = "=0.1.1" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 built = "0.3"

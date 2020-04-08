@@ -1,6 +1,6 @@
 [package]
 name = "double"
-version = "0.2.2"
+version = "0.2.4"
 authors = ["Donald Whyte <donsoft@donsoft.io>"]
 repository = "https://github.com/DonaldWhyte/double"
 homepage = "https://github.com/DonaldWhyte/double"
@@ -20,4 +20,3 @@ maplit = "1.0.1"
 [dependencies]
 lazysort = "0.2.0"
 float-cmp = "0.2.5"
-boringssl = "0.0.5"

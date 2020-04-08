@@ -1,8 +1,9 @@
 [package]
 name = "netlib-src"
-version = "0.7.5"
+version = "0.8.0"
 license = "Apache-2.0/MIT"
 authors = [
+    "Alexander Bulaev <alexbool@yandex-team.ru>",
     "Corey Richardson <corey@octayn.net>",
     "Ivan Ukhov <ivan.ukhov@gmail.com>",
     "Mason Smith <masonium@gmail.com>",
@@ -38,6 +39,3 @@ cmake = "0.1"
 
 [dev-dependencies]
 libc = "0.2"
-
-[dependencies]
-boringssl = "0.0.5"

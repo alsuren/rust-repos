@@ -1,10 +1,9 @@
 [workspace]
 members = [
-    "clp",
-    "clp-sys",
-    "egraph",
-    "egraph-c-api",
-    "egraph-layered",
-    "egraph-py",
-    "egraph-wasm",
+    "crates/adapter/adapter",
+    "crates/adapter/petgraph",
+    "crates/adapter/wasm",
+    "crates/egraph",
+    "crates/egraph-py",
+    "crates/wasm",
 ]

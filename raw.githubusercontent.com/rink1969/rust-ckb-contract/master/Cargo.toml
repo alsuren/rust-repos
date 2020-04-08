@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 libsecp256k1 = "0.2.2"
-boringssl = "0.0.5"
 
 [dependencies.blake2-rfc]
 git = "https://github.com/cesarb/blake2-rfc"

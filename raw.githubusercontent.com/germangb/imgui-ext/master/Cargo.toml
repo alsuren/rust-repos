@@ -1,6 +1,6 @@
 [package]
 name = "imgui-ext"
-version = "0.2.0"
+version = "0.4.0"
 authors = ["german gomez <germangb42@gmail.com>"]
 edition = "2018"
 description = "A crate to build debug UIs on structs using a derive macro (based on the imgui crate)"
@@ -15,12 +15,18 @@ exclude = ["ci/*", "page_deploy/*"]
 travis-ci = { repository = "germangb/imgui-ext", branch = "master" }
 
 [workspace]
-members = ["imgui_derive", "example"]
+members = ["imgui_derive"]
 
 [dependencies]
-imgui = "0.0.23"
-imgui-ext-derive = { version = "0.2.0", path = "imgui_derive" }
-boringssl = "0.0.5"
+imgui = "0.2"
+imgui-ext-derive = { version = "0.4", path = "imgui_derive" }
+
+[dev-dependencies]
+na = { package = "nalgebra", version = "0.18.0" }
+sdl2 = { version = "0.32.1", features = ["bundled"] }
+gl = "0.14.0"
+imgui-sdl2 = "0.7"
+imgui-opengl-renderer = "0.6"
 
 [features]
 default = ["matrix"]
@@ -28,7 +34,9 @@ default = ["matrix"]
 # Support for annotations on 2D arrays (matrices). Though enabled by default, this is
 # kept as a feature because imgui doesn't have native support for 2D arrays. Only 1D.
 matrix = []
+# TODO optional support for mint types
+mint = []
 
-[patch.crates-io]
-imgui-sdl2 = { git = "https://github.com/germangb/rust-imgui-sdl2.git", branch = "imgui_23"}
-imgui-opengl-renderer = { git = "https://github.com/germangb/rust-imgui-opengl-renderer.git", branch = "imgui_23"}
+#[patch.crates-io]
+#imgui-sdl2 = { git = "https://github.com/germangb/rust-imgui-sdl2.git", branch = "imgui-0.1"}
+#imgui-opengl-renderer = { git = "https://github.com/germangb/rust-imgui-opengl-renderer.git", branch = "imgui-0.1"}

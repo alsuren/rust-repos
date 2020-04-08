@@ -1,6 +1,6 @@
 [package]
 name = "conference"
-version = "0.1.0"
+version = "0.3.2"
 authors = ["Andrei Nesterov <ae.nesterov@gmail.com>"]
 edition = "2018"
 
@@ -17,22 +17,13 @@ webrtc-sdp = "0.1"
 http = "0.1"
 uuid = { version = "0.6", features = ["v4", "serde"] }
 chrono = { version = "0.4", features = ["serde"] }
-rumqtt = "0.30"
-crossbeam-channel = "0.3"
-itertools = "0.8"
-reqwest = "0.9"
 openssl = "*"
 diesel = { version = "1.4", features = ["postgres", "uuid", "chrono", "serde_json", "r2d2"] }
-svc-agent = { version = "0.6", features = ["diesel"] }
-svc-authz = "0.4"
-svc-authn = { version = "0.4", features = ["jose", "diesel"] }
-svc-error = { version = "0.1", features = ["diesel", "r2d2", "svc-agent", "svc-authn", "svc-authz"] }
-boringssl = "0.0.5"
-
-[dependencies.futures]
-version = "=0.3.0-alpha.14"
-package = "futures-preview"
-
-[dependencies.futures-channel]
-version = "=0.3.0-alpha.14"
-package = "futures-channel-preview"
+diesel-derive-enum = { version = "0.4", features = ["postgres"] }
+futures = { version = "0.3", features = ["thread-pool"] }
+futures-channel = "0.3"
+rand = "0.7"
+svc-agent = { version = "0.11", features = ["diesel"] }
+svc-authz = "0.10"
+svc-authn = { version = "0.5", features = ["jose", "diesel"] }
+svc-error = { version = "0.1", features = ["diesel", "r2d2", "svc-agent", "svc-authn", "svc-authz", "sentry-extension"] }

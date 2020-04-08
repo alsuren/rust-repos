@@ -11,4 +11,3 @@ reqwest = "*"
 duct = "*"
 semver = "*"
 ftp = { version = "*", features = ["secure"] }
-boringssl = "0.0.5"

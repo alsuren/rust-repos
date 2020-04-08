@@ -7,6 +7,3 @@ authors = ["Dan Schatzberg <schatzberg.dan@gmail.com>"]
 [lib]
 name = "expand_ident"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

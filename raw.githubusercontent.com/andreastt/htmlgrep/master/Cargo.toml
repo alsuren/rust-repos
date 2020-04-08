@@ -1,6 +1,6 @@
 [package]
 name = "htmlgrep"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Andreas Tolfsen <ato@sny.no>"]
 license = "ISC"
 description = "htmlgrep is a suite of tools for searching HTML documents"
@@ -19,7 +19,6 @@ path = "css.rs"
 
 [dependencies]
 kuchiki = "0.7"
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "andreastt/htmlgrep" }

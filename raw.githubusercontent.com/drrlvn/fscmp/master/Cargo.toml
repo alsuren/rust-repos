@@ -1,9 +1,9 @@
 [package]
 name = "fscmp"
-version = "0.2.13"
+version = "0.2.22"
 authors = ["Dror Levin <spatz@psybear.com>"]
 description = "Utility for comparing files/directories"
-repository = "https://github.com/drrlvn/fscmp"
+repository = "https://github.com/Infinidat/fscmp"
 license = "Apache-2.0"
 edition = "2018"
 
@@ -11,16 +11,21 @@ edition = "2018"
 default = ["simplelog"]
 
 [dependencies]
-failure = "0.1"
-libc = "0.2"
-log = "0.4"
-loggest = { version = "0.1", optional = true }
-openat = "0.1"
-rayon = "1.0"
-simplelog = { version = "0.5", optional = true }
-structopt = "0.2"
-boringssl = "0.0.5"
+failure = "0.1.5"
+log = "0.4.8"
+loggest = { version = "0.2.2", optional = true }
+rayon = "1.2.0"
+simplelog = { version = "0.7.1", optional = true }
+structopt = "0.3.1"
+
+[target.'cfg(unix)'.dependencies]
+nix = "0.16.0"
+openat = "0.1.18"
+libc = "0.2.62"
+
+[target.'cfg(windows)'.dependencies]
+winapi = "0.3.8"
 
 [dev-dependencies]
-tempfile = "3.0"
-walkdir = "2.1"
+tempfile = "3.1.0"
+walkdir = "2.2.9"

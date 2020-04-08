@@ -1,59 +1,173 @@
 [package]
 name = "nu"
-version = "0.1.1"
-authors = ["Yehuda Katz <wycats@gmail.com>"]
-description = "A shell for the GitHub era"
-license = "ISC"
+version = "0.12.1"
+authors = ["The Nu Project Contributors"]
+description = "A new type of shell"
+license = "MIT"
 edition = "2018"
+readme = "README.md"
+default-run = "nu"
+repository = "https://github.com/nushell/nushell"
+homepage = "https://www.nushell.sh"
+documentation = "https://www.nushell.sh/book/"
+exclude = ["images"]
+
+[workspace]
+members = ["crates/*/"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rustyline = "4.1.0"
-sysinfo = "0.8.4"
-chrono = { version = "0.4.6", features = ["serde"] }
-chrono-tz = "0.5.1"
-derive-new = "0.5.6"
-prettytable-rs = "0.8.0"
-itertools = "0.8.0"
-ansi_term = "0.11.0"
-conch-parser = "0.1.1"
-nom = "5.0.0-beta1"
-subprocess = "0.1.18"
-dunce = "1.0.0"
-indexmap = { version = "1.0.2", features = ["serde-1"] }
-chrono-humanize = "0.0.11"
-byte-unit = "2.1.0"
-ordered-float = "1.0.2"
-prettyprint = "0.6.0"
-cursive = { version = "0.12.0", features = ["pancurses-backend"], default-features = false }
-futures-preview = { version = "0.3.0-alpha.16", features = ["compat", "io-compat"] }
-futures-sink-preview = "0.3.0-alpha.16"
-tokio-fs = "0.1.6"
-futures_codec = "0.2.2"
-term = "0.5.2"
-bytes = "0.4.12"
-log = "0.4.6"
-pretty_env_logger = "0.3.0"
-lalrpop-util = "0.17.0"
-regex = "1.1.6"
-serde = "1.0.91"
-serde_json = "1.0.39"
-serde_derive = "1.0.91"
-getset = "0.0.7"
-logos = "0.10.0-rc2"
-logos-derive = "0.10.0-rc2"
-language-reporting = "0.3.0"
-app_dirs = "1.2.1"
-toml = "0.5.1"
-toml-query = "0.9.0"
-clap = "2.33.0"
-git2 = "0.8.0"
-boringssl = "0.0.5"
+nu-cli = { version = "0.12.1", path = "./crates/nu-cli" }
+nu-source = { version = "0.12.0", path = "./crates/nu-source" }
+nu-plugin = { version = "0.12.0", path = "./crates/nu-plugin" }
+nu-protocol = { version = "0.12.0", path = "./crates/nu-protocol" }
+nu-errors = { version = "0.12.0", path = "./crates/nu-errors" }
+nu-parser = { version = "0.12.0", path = "./crates/nu-parser" }
+nu-value-ext = { version = "0.12.0", path = "./crates/nu-value-ext" }
+nu_plugin_average = { version = "0.12.0", path = "./crates/nu_plugin_average", optional=true }
+nu_plugin_binaryview = { version = "0.12.0", path = "./crates/nu_plugin_binaryview", optional=true }
+nu_plugin_fetch = { version = "0.12.0", path = "./crates/nu_plugin_fetch", optional=true }
+nu_plugin_inc = { version = "0.12.0", path = "./crates/nu_plugin_inc", optional=true }
+nu_plugin_match = { version = "0.12.0", path = "./crates/nu_plugin_match", optional=true }
+nu_plugin_post = { version = "0.12.0", path = "./crates/nu_plugin_post", optional=true }
+nu_plugin_ps = { version = "0.12.0", path = "./crates/nu_plugin_ps", optional=true }
+nu_plugin_str = { version = "0.12.0", path = "./crates/nu_plugin_str", optional=true }
+nu_plugin_sys = { version = "0.12.0", path = "./crates/nu_plugin_sys", optional=true }
+nu_plugin_textview = { version = "0.12.0", path = "./crates/nu_plugin_textview", optional=true }
+nu_plugin_tree = { version = "0.12.0", path = "./crates/nu_plugin_tree", optional=true }
 
-[dependencies.pancurses]
-version = "0.16"
-features = ["win32a"]
+crossterm = { version = "0.17.1", optional = true }
+semver = { version = "0.9.0", optional = true }
+syntect = { version = "4.1", default-features = false, features = ["default-fancy"], optional = true}
+url = { version = "2.1.1", optional = true }
+
+clap = "2.33.0"
+ctrlc = "3.1.4"
+dunce = "1.0.0"
+futures = { version = "0.3", features = ["compat", "io-compat"] }
+log = "0.4.8"
+pretty_env_logger = "0.4.0"
 
 [dev-dependencies]
-pretty_assertions = "0.6.1"
+nu-test-support = { version = "0.12.0", path = "./crates/nu-test-support" }
+
+[build-dependencies]
+toml = "0.5.6"
+serde = { version = "1.0.106", features = ["derive"] }
+nu-build = { version = "0.12.0", path = "./crates/nu-build" }
+
+[features]
+# Test executables
+test-bins = []
+
+default = ["sys", "ps", "textview", "inc", "str"]
+stable = ["default", "starship-prompt", "binaryview", "match", "tree", "average", "post", "fetch", "clipboard-cli"]
+
+# Default
+textview = ["crossterm", "syntect", "url", "nu_plugin_textview"]
+sys = ["nu_plugin_sys"]
+ps = ["nu_plugin_ps"]
+inc = ["semver", "nu_plugin_inc"]
+str = ["nu_plugin_str"]
+
+# Stable
+average = ["nu_plugin_average"]
+binaryview = ["nu_plugin_binaryview"]
+fetch = ["nu_plugin_fetch"]
+match = ["nu_plugin_match"]
+post = ["nu_plugin_post"]
+trace = ["nu-parser/trace"]
+tree = ["nu_plugin_tree"]
+
+clipboard-cli = ["nu-cli/clipboard-cli"]
+starship-prompt = ["nu-cli/starship-prompt"]
+
+[[bin]]
+name = "fail"
+path = "crates/nu-test-support/src/bins/fail.rs"
+required-features = ["test-bins"]
+
+[[bin]]
+name = "chop"
+path = "crates/nu-test-support/src/bins/chop.rs"
+required-features = ["test-bins"]
+
+[[bin]]
+name = "cococo"
+path = "crates/nu-test-support/src/bins/cococo.rs"
+required-features = ["test-bins"]
+
+[[bin]]
+name = "nonu"
+path = "crates/nu-test-support/src/bins/nonu.rs"
+required-features = ["test-bins"]
+
+[[bin]]
+name = "iecho"
+path = "crates/nu-test-support/src/bins/iecho.rs"
+required-features = ["test-bins"]
+
+# Core plugins that ship with `cargo install nu` by default
+# Currently, Cargo limits us to installing only one binary
+# unless we use [[bin]], so we use this as a workaround
+[[bin]]
+name = "nu_plugin_core_textview"
+path = "src/plugins/nu_plugin_core_textview.rs"
+required-features = ["textview"]
+
+[[bin]]
+name = "nu_plugin_core_inc"
+path = "src/plugins/nu_plugin_core_inc.rs"
+required-features = ["inc"]
+
+[[bin]]
+name = "nu_plugin_core_ps"
+path = "src/plugins/nu_plugin_core_ps.rs"
+required-features = ["ps"]
+
+[[bin]]
+name = "nu_plugin_core_str"
+path = "src/plugins/nu_plugin_core_str.rs"
+required-features = ["str"]
+
+[[bin]]
+name = "nu_plugin_core_sys"
+path = "src/plugins/nu_plugin_core_sys.rs"
+required-features = ["sys"]
+
+# Stable plugins
+[[bin]]
+name = "nu_plugin_stable_average"
+path = "src/plugins/nu_plugin_stable_average.rs"
+required-features = ["average"]
+
+[[bin]]
+name = "nu_plugin_stable_fetch"
+path = "src/plugins/nu_plugin_stable_fetch.rs"
+required-features = ["fetch"]
+
+[[bin]]
+name = "nu_plugin_stable_binaryview"
+path = "src/plugins/nu_plugin_stable_binaryview.rs"
+required-features = ["binaryview"]
+
+[[bin]]
+name = "nu_plugin_stable_match"
+path = "src/plugins/nu_plugin_stable_match.rs"
+required-features = ["match"]
+
+[[bin]]
+name = "nu_plugin_stable_post"
+path = "src/plugins/nu_plugin_stable_post.rs"
+required-features = ["post"]
+
+[[bin]]
+name = "nu_plugin_stable_tree"
+path = "src/plugins/nu_plugin_stable_tree.rs"
+required-features = ["tree"]
+
+# Main nu binary
+[[bin]]
+name = "nu"
+path = "src/main.rs"

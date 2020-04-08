@@ -15,12 +15,11 @@ gsl-sys = { path = "gsl-sys" }
 leung-bessel = { path = "leung-bessel" }
 slog = "^2.2"
 special-fun = { git = "https://github.com/pkgw/special-fun", version = "^0.1" } # hacked to not use -march=native
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_approx_eq = "^1.0"
 bencher = "^0.1"
-rand = "^0.6"
+rand = "^0.7"
 regex = "^1.0"
 rimphony-test-support = { path = "test-support" }
 slog-async = "^2.3"

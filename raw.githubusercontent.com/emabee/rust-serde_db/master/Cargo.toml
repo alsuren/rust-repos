@@ -1,23 +1,22 @@
 [package]
 name = "serde_db"
-version = "0.8.2"
+version = "0.9.0"
 authors = ["emabee <meinolf.block@sap.com>"]
 edition = "2018"
 description = "Deserialization of database resultsets, and serialization of database parameters"
 documentation = "https://docs.rs/serde_db/"
 keywords = ["relational", "database", "driver", "serde"]
-license = "MIT/Apache-2.0"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/emabee/rust-serde_db"
 readme = "README.md"
 
 [dependencies]
 log = "0.4"
 serde = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 chrono = { version = "0.4", features = ["serde"] }
-flexi_logger = "0.11"
+flexi_logger = "0.14"
 serde_derive = "1.0"
-bigdecimal = {version = "0.0", features = ["serde"]}
+bigdecimal = {version = "0.1", features = ["serde"]}
 version-sync = "0.8"

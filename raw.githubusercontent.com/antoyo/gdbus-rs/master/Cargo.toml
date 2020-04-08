@@ -6,7 +6,6 @@ version = "0.0.1"
 [dependencies]
 bitflags = "^0.7"
 libc = "^0.2"
-boringssl = "0.0.5"
 
 [dependencies.gio-sys]
 git = "https://github.com/gtk-rs/sys"

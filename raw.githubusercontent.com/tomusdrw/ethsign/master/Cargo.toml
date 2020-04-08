@@ -7,20 +7,19 @@ homepage = "https://github.com/tomusdrw/ethsign"
 license = "GPL-3.0"
 name = "ethsign"
 repository = "https://github.com/tomusdrw/ethsign"
-version = "0.6.1"
+version = "0.7.3"
 
 [dependencies]
-memzero = "0.1"
-rand = "0.6"
-rustc-hex = "2.0"
-secp256k1 = { version = "0.12", optional = true }
-parity-crypto = { version = "0.3", optional = true }
+zeroize = "1.0.0"
+rand = "0.7.0"
+rustc-hex = "2.0.1"
+secp256k1 = { version = "0.17", optional = true, features = ["recovery"] }
+parity-crypto = { version = "0.6", optional = true }
 serde = { version = "1.0", features = ["derive"]}
 
 # Libraries for for pure-rust crypto
-libsecp256k1 = { package="libsecp256k1", version = "0.2.2", optional = true }
-ethsign-crypto = { version = "0.1", path = "./ethsign-crypto", optional = true }
-boringssl = "0.0.5"
+libsecp256k1 = { package="libsecp256k1", version = "0.3.1", optional = true }
+ethsign-crypto = { version = "0.2.1", path = "./ethsign-crypto", optional = true }
 
 [dev-dependencies]
 serde_json = "1.0"

@@ -1,6 +1,6 @@
 [package]
 name = "influxdb-csv-cleaner"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["Nguyễn Hồng Quân <ng.hong.quan@gmail.com>"]
 license = "GPL-3.0"
 publish = false
@@ -8,6 +8,7 @@ homepage = "https://agriconnect.vn"
 repository = "https://github.com/AgriConnect/influxdb-csv-cleaner"
 description = "Tool to clean CSV content exported from InfluxDB."
 readme = "README.md"
+edition = "2018"
 
 [package.metadata.deb]
 extended-description = """Tool to clean CSV content exported from InfluxDB, so that it can be understood by plotting tool, like plot.ly.
@@ -19,6 +20,6 @@ What it does:
 """
 
 [dependencies]
-clap = "2"
-chrono = "0.4"
-boringssl = "0.0.5"
+clap = "2.33.0"
+chrono = "0.4.10"
+chrono-tz = "0.5.1"

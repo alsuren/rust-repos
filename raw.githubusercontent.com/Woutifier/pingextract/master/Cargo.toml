@@ -2,8 +2,8 @@
 name = "pingextract"
 version = "0.1.0"
 authors = ["Wouter de Vries <wouter@wbdv.nl>"]
+edition = "2018"
 
 [dependencies]
-pcap = "0.5.7"
-clap = "2.23.2"
-boringssl = "0.0.5"
+pcap = "0.7.0"
+clap = "2.33.0"

@@ -1,6 +1,6 @@
 [package]
 name = "cvar"
-version = "0.2.0"
+version = "0.2.2"
 edition = "2018"
 authors = ["Casper <CasualX@users.noreply.github.com>"]
 
@@ -15,5 +15,5 @@ keywords = ["config", "var", "dvar", "convar"]
 
 license = "MIT"
 
-[dependencies]
-boringssl = "0.0.5"
+[features]
+type_name = []

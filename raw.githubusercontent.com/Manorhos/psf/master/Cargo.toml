@@ -10,7 +10,6 @@ quick-error = "^1.0.0"
 nom = "3.2.1"
 byteorder = "1.2.2"
 log = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = { version = "0.6", default-features = false, features = ["atty", "termcolor"] }

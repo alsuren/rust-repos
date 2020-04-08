@@ -8,8 +8,20 @@ edition = "2018"
 [dependencies]
 futures = "0.1"
 tokio = "0.1"
+tokio-executor = "0.1"
 mongodb = "0.3.12"
-bson = "0.13.0"
+bson = {version="0.13.0", optional = true }
 hello_macro = { path = "hello_macro" }
 hello_macro_derive = { path = "hello_macro/hello_macro_derive" }
-boringssl = "0.0.5"
+#primitives = { package = "sr-primitives", git = 'https://github.com/paritytech/substrate.git', rev = 'fe7f6aff197cd68e102539a42df1134d600b4584' }
+rocksdb = "0.12.3"
+libc = "0.2"
+bytes = "*"
+unsigned-varint = { version = "0.2.2" }
+web3 = "0.10.0"
+reqwest = "0.9.20"
+serde_json = "1.0"
+[features]
+default = ["foo"]
+foo = ["bson"]
+

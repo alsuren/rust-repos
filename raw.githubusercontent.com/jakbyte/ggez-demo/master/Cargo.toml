@@ -1,10 +1,30 @@
 [package]
 name = "ggez-demo"
 version = "0.1.0"
-authors = ["jakbyte"]
+authors = ["jakbyte <jakbyte@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-ggez = "0.4.4"
-rand = "0.6.5"
-boringssl = "0.0.5"
+ggez = "0.5"
+rand = "0.7"
+
+[features]
+rainbow-color = []
+random-color = []
+
+tiny-point = []
+small-point = []
+large-point = []
+massive-point = []
+
+tiny-diff = []
+small-diff = []
+large-diff = []
+massive-diff = []
+
+tiny-window = []
+small-window = []
+large-window = []
+massive-window = []
+
+default = []

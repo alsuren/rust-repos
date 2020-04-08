@@ -1,6 +1,6 @@
 [package]
 name = "everdrivemd"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Carsten Elton Sorensen <csoren@gmail.com>"]
 description = "Mega Everdrive X7 interface"
 
@@ -11,4 +11,3 @@ serde = "1.0"
 serde_derive = "1.0"
 dirs = "1.0.4"
 serial = "0.4"
-boringssl = "0.0.5"

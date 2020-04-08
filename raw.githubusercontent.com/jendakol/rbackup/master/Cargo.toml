@@ -3,7 +3,6 @@ name = "rbackup"
 version = "0.1.0"
 authors = ["JendaKolena <jendakolena@gmail.com>"]
 
-cargo-features = ["edition"]
 edition = "2018"
 
 [dependencies]
@@ -41,4 +40,3 @@ multipart = "0.14.2"
 clap = "2"
 either = "1.4"
 cache_2q = "0.10.0"
-boringssl = "0.0.5"

@@ -1,27 +1,16 @@
 [workspace]
 
 members = [
-    'lexer',
-    'ast-builder',
-    'tooling',
-    'ast-builder\run_ast_builder',
-    'lexer\run_lexer',
-    'control-flow-graph',
-    'control-flow-graph\run-control-flow-graph',
-    'type-check',
-    'type-check\run-type-check'
-]
+    'interface/lib-error',
+    'interface/lib-lexer-types',
+    'interface/lib-parser-types',
 
-[profile.release]
-opt-level = 3
-debug = false
-rpath = false
-lto = true
-debug-assertions = false
-codegen-units = 1
-panic = 'unwind'
-incremental = false
-overflow-checks = false
+    'core/lib-lexer',
+    'core/lib-parser',
+
+    'tools/lib-arena',
+    'tools/lib-str-interner',
+]
 
 [profile.dev]
 opt-level = 1
@@ -33,3 +22,36 @@ codegen-units = 16
 panic = 'unwind'
 incremental = true
 overflow-checks = true
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 16
+panic = 'abort'
+incremental = false
+overflow-checks = false
+
+[profile.test]
+opt-level = 0
+debug = 2
+rpath = false
+lto = false
+debug-assertions = true
+codegen-units = 16
+panic = 'unwind'
+incremental = true
+overflow-checks = true
+
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 16
+panic = 'abort'
+incremental = false
+overflow-checks = false

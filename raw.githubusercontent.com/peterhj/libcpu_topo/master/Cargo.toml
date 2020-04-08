@@ -13,4 +13,3 @@ path = "tools/cpu_topo_tool.rs"
 
 [dependencies]
 libc = { git = "https://github.com/rust-lang/libc.git" }
-boringssl = "0.0.5"

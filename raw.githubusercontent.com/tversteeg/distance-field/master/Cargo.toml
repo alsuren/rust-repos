@@ -1,6 +1,6 @@
 [package]
 name = "distance-field"
-version = "0.1.6"
+version = "0.1.7"
 authors = ["Thomas Versteeg <thomasversteeg@gmx.com>"]
 license = "GPL-3.0"
 homepage = "https://github.com/tversteeg/distance-field"
@@ -17,13 +17,12 @@ categories = ["games", "rendering", "game-engines", "multimedia"]
 travis-ci = {repository = "tversteeg/distance-field"}
 
 [dependencies]
-spiral = "0.1"
-image = "0.20"
-boringssl = "0.0.5"
+spiral = "0.1.9"
+image = "0.23.3"
 
 [[example]]
 name = "generator"
 path = "examples/generator.rs"
 
 [dev-dependencies]
-docopt = "1.0"
+docopt = "1.1.0"

@@ -1,6 +1,6 @@
 [package]
 name = "rustats"
-version = "0.0.7"
+version = "0.1.1"
 authors = ["Takeru Ohta <phjgt308@gmail.com>"]
 edition = "2018"
 description = "A statistical library"
@@ -10,13 +10,10 @@ readme = "README.md"
 categories = ["science"]
 license = "MIT"
 
-# [badges]
-# travis-ci = {repository = "sile/rustats"}
-# codecov = {repository = "sile/rustats"}
+[badges]
+coveralls = {repository = "sile/rustracing"}
 
 [dependencies]
-rand = "0.6"
-serde = { version = "1", features = ["derive"], optional = true }
-statrs = "0.11"
-trackable = "0.2"
-boringssl = "0.0.5"
+libm = "0.2"
+rand = "0.7"
+rand_distr = "0.2"

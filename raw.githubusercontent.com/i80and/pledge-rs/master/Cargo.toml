@@ -1,6 +1,6 @@
 [package]
 name = "pledge"
-version = "0.3.1"
+version = "0.4.0"
 authors = ["Andrew Aldridge <i80and@foxquill.com>"]
 description = "Rust binding to OpenBSD's pledge(2) interface"
 readme = "README.md"
@@ -9,9 +9,11 @@ documentation = "https://docs.rs/pledge/"
 keywords = ["openbsd", "binding", "security"]
 license = "MIT"
 
+[workspace]
+members = ["variants", "example-2015", "example-2018"]
+
 [dependencies]
 libc = "0.2"
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "i80and/pledge-rs" }

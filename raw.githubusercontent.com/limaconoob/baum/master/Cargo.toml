@@ -3,9 +3,6 @@ name = "baum"
 version = "0.1.0"
 authors = ["Jeremy PEPIN <jpepin@student.42.fr>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.libc]
 version       = "0.2"
 

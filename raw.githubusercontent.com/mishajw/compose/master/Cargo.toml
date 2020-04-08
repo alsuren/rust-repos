@@ -2,6 +2,7 @@
 name = "composer"
 version = "0.1.0"
 authors = ["Misha Wagner <mishajw@gmail.com>"]
+default-run = "composer"
 
 [lib]
 name = "composer"
@@ -10,10 +11,6 @@ path = "src/lib/lib.rs"
 [[bin]]
 name = "composer"
 path = "src/main.rs"
-
-[[bin]]
-name = "freq-resolver"
-path = "src/frequency_resolver.rs"
 
 [dependencies]
 error-chain = "*"
@@ -29,4 +26,3 @@ sfml = "*"
 num = "*"
 rustfft = "*"
 rand = "*"
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "pista"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["NerdyPepper <akshayoppiliappan@gmail.com>"]
 edition = "2018"
 description = "A simple bash prompt for programmers"
@@ -13,9 +13,8 @@ license = "MIT"
 
 
 [dependencies]
-tico = "1.0.0"
-libc = "0.2.55"
-colored = "1.8.0"
-git2 = "0.8.0"
-clap = "2.33.0"
-boringssl = "0.0.5"
+tico    = "1.0.0"
+libc    = "0.2.55"
+git2    = "0.8.0"
+clap    = "2.33.0"
+colored = { path = "./colored", version = "1.8.0" }

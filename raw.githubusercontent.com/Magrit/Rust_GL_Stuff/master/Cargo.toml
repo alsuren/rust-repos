@@ -12,10 +12,9 @@ winit = "*"
 rand = "*"
 gfx-backend-empty = "*"
 glsl-to-spirv = "*"
-boringssl = "0.0.5"
 
 [features]
-default = []
+# default = ["dx12"]
 gl = ["gfx-backend-gl"]
 vulkan = ["gfx-backend-vulkan"]
 dx12 = ["gfx-backend-dx12"]

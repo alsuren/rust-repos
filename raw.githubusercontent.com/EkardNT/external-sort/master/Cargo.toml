@@ -7,7 +7,6 @@ authors = ["Drake Tetreault <drakeat@amazon.com>"]
 clap = "2.31"
 rand = "0.4"
 fine_grained = "0.1"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

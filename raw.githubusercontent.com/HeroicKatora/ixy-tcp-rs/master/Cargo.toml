@@ -5,10 +5,10 @@ authors = ["HeroicKatora <andreas.molzer@gmx.de>"]
 edition = "2018"
 
 [dependencies]
+ethox = { path = "ethox/ethox", features = ["std"] }
 ixy = { path = "ixy.rs" }
-smoltcp = { path = "smoltcp", default-features = false, features = ["std", "proto-ipv4", "socket-udp"]}
-boringssl = "0.0.5"
 
 [dev-dependencies]
+ethox-iperf = { path = "ethox/ethox-iperf" }
 env_logger = "0.6"
 structopt = "0.2"

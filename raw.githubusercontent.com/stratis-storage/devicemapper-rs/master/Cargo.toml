@@ -1,6 +1,6 @@
 [package]
 name = "devicemapper"
-version = "0.27.0"
+version = "0.28.0"
 authors = ["Stratis Developers <stratis-devel@lists.fedorahosted.com>"]
 description = "A library for using Linux device mapper"
 documentation = "https://docs.rs/devicemapper/"
@@ -13,11 +13,10 @@ edition = "2018"
 
 [dependencies]
 libc = "0.2.36"
-nix = "0.13"
+nix = "0.14"
 bitflags = "1"
 serde = "1"
-error-chain = "0.12"
-boringssl = "0.0.5"
+error-chain = "0.12.2"
 
 [dev-dependencies]
 loopdev = "0.2"

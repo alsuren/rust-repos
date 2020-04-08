@@ -6,9 +6,6 @@ authors = ["Raph Levien <raph@google.com>"]
 description = "Rust bindings for Magenta runtime services"
 repository = "https://fuchsia.googlesource.com/mxruntime/"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.mxruntime-sys]
 path = "mxruntime-sys"
 

@@ -1,7 +1,8 @@
 [package]
 name = "rc-u8-reader"
-version = "2.0.1"
+version = "2.0.10"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/rc-u8-reader"
 homepage = "https://magiclen.org/rc-u8-reader"
 keywords = ["rc", "arc", "in-memory", "read", "u8"]
@@ -10,12 +11,12 @@ description= "A tiny implement for reading `u8` data from a reference counted in
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/rc-u8-reader", branch = "master" }
-appveyor = { repository = "magiclen/rc-u8-reader", branch = "master", service = "github" }
+[badges.travis-ci]
+repository = "magiclen/rc-u8-reader"
+branch = "master"
 
 [dependencies]
-boringssl = "0.0.5"
+debug-helper = "0.3"
 
 [features]
 nightly = []

@@ -7,8 +7,5 @@ version = "0.0.1"
 
 name = "test"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rustc-serialize]
 version = "0.3"

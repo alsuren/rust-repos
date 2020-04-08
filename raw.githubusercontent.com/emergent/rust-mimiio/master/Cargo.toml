@@ -5,8 +5,9 @@ authors = ["emergent <yosikawa@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-clap = "*"
-futures = "*"
-tokio = "*"
-websocket = "*"
-boringssl = "0.0.5"
+clap = "2.33.0"
+futures = "0.1.27"
+tokio = "0.1.20"
+websocket = "0.22.4"
+
+

@@ -1,28 +1,56 @@
 [package]
-authors = ["Andrey Cherkashin <with.out@me.com>"]
-name = "libzfs"
-version = "0.1.0"
+authors = ["Andrey Cherkashin <andoriyu@gmail.com>"]
+version = "0.2.2-pre"
+description = "libzetta is a stable interface for programmatic administration of ZFS"
+repository = "https://github.com/Inner-Heaven/libzetta-rs"
+keywords = ["zfs", "freebsd", "zol", "os", "open3"]
+categories = ["os", "filesystem", "external-ffi-bindings"]
+license = "BSD-2-Clause"
+name = "libzetta"
+edition = "2018"
+readme = "README.md"
+
+[badges]
+maintenance = { status = "actively-developed" }
+is-it-maintained-open-issues = { repository = "Inner-Heaven/libzetta-rs" }
+is-it-maintained-issue-resolution = { repository = "Inner-Heaven/libzetta-rs" }
+azure-devops = { project = "andoriyu/libpandemonium", pipeline = "libzetta-rs", build="4" }
+
 [dependencies]
-derive-getters = "0.0.7"
-derive_builder = "0.7"
+getset = "0.1.0"
+derive_builder = "0.9"
 lazy_static = "1.2"
 libc = "0.2"
 pest = "2.1"
 pest_derive = "2.1"
 quick-error = "1.2"
-regex = "1.1"
 slog = "2"
-slog-stdlog = "3"
-boringssl = "0.0.5"
+slog-stdlog = "4"
+zfs-core-sys= "0.1.0"
+cstr-argument = "0.1.1"
+strum = "0.18.0"
+strum_macros = "0.18.0"
+chrono = "0.4.10"
+bitflags = "1.2.1"
+once_cell = "1.3.1"
+
+[dependencies.libnv]
+version = "0.2.2"
+default-features = false
+features = ["nvpair"]
+
+[dependencies.regex]
+version = "1.3.0"
+default-features = false
+features = ["std", "perf", "unicode-perl"]
 
 [dev-dependencies]
 cavity = "1.1"
-rand = "0.6"
+rand = "0.7"
 slog-term = "2"
 tempdir = "0.3"
+tempfile = "3"
 
-[target]
-[target."cfg(freebsd)"]
-[target."cfg(freebsd)".dependencies]
-libnv-sys = "0.1"
-libzfs_core-sys = "0.1"
+[package.metadata.release]
+sign-commit = true
+dev-version-ext = "pre"

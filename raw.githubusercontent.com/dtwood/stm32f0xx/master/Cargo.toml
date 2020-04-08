@@ -11,4 +11,3 @@ cortex-m = "*"
 bare-metal = "*"
 vcell = "*"
 cortex-m-rt = { version="*", optional=true }
-boringssl = "0.0.5"

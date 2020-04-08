@@ -4,9 +4,6 @@ name = "lrparse"
 version = "1.0.0"
 authors = ["Jona Stubbe (CrystalGamma) <dev@jona-stubbe.de>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 
 [dependencies.lexer]
 path = "lexer"

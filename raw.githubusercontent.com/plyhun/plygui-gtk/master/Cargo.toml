@@ -10,7 +10,7 @@ name = "plygui_gtk"
 path = "src/lib.rs"
 
 [dependencies]
-plygui-api = {version = "0.0.1", path = "../plygui-api"}
+plygui-api = {version = "0.0.1", path = "../plygui/api"}
 gtk = { version = "^0.4", features = ["v3_18"] }
 gdk = { version = "^0.8", features = ["v3_18"] }
 glib = { version = "^0.5" }
@@ -23,10 +23,10 @@ pango = { version = "^0.4" }
 gdk-pixbuf = { version = "^0.4" }
 cairo-rs = { version = "^0.4"}
 gio = { version = "^0.4"}
-boringssl = "0.0.5"
 
 [build-dependencies]
 cc = { version = "^1.0" }
+heck = { version = "~0.3" }
 pkg-config = { version = "^0.3" }
 
 [features]

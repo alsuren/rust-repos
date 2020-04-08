@@ -1,11 +1,11 @@
 [package]
 name = "token_id"
 version = "0.1.0"
+edition =  "2018"
 authors = ["Xudong Huang <huangxu008@hotmail.com>"]
 
 [dependencies]
 token_id-plugins = { path = "src/plugins" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["src/plugins"]

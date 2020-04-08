@@ -7,6 +7,5 @@ authors = ["Diego Pontoriero <dpontor@gmail.com>"]
 [dependencies]
 clap = "2.26.0"
 k8s = { path = "k8s" }
-boringssl = "0.0.5"
 
 [workspace]

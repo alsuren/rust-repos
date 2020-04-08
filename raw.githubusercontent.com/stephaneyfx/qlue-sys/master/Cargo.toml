@@ -12,7 +12,6 @@ build = "build.rs"
 
 [dependencies]
 clue-sys = {path = "../clue-sys"}
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.26.0"

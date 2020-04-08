@@ -13,4 +13,3 @@ radix_fmt = "0.1"
 slog = {version = "2.4", features = ["max_level_info", "release_max_level_warn"]}
 slog-term = "2.4"
 slog-async = "2.3"
-boringssl = "0.0.5"

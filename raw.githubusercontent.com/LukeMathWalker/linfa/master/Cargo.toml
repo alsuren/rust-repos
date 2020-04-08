@@ -1,11 +1,28 @@
 [package]
 name = "linfa"
-version = "0.1.0"
-authors = ["Luca Palmieri <contact@lpalmieri.com>"]
+version = "0.1.1"
+authors = ["Luca Palmieri <rust@lpalmieri.com>"]
 description = "A Machine Learning framework for Rust"
+edition = "2018"
 license = "MIT/Apache-2.0"
 
+repository = "https://github.com/LukeMathWalker/linfa"
+readme = "README.md"
+
+keywords = ["machine-learning", "linfa", "ai", "ml"]
+categories = ["algorithms", "mathematics", "science"]
+
 [dependencies]
-ndarray = "0.11.0"
-num-traits = { version = "0.1.32", default-features = false }
-boringssl = "0.0.5"
+linfa-clustering = { path = "linfa-clustering", version = "0.1" }
+
+[dev-dependencies]
+ndarray = { version = "0.13" , features = ["rayon", "serde", "approx"]}
+ndarray-rand = "0.11"
+rand_isaac = "0.2.0"
+ndarray-npy = { version = "0.5", default-features = false }
+
+[workspace]
+members = ["linfa-clustering"]
+
+[profile.release]
+opt-level = 3

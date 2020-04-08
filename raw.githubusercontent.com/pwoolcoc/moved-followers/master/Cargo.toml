@@ -6,4 +6,3 @@ authors = ["Paul Woolcock <paul@woolcock.us>"]
 [dependencies]
 elefren = { version = "0.17", features = ["json"] }
 structopt = "0.2.14"
-boringssl = "0.0.5"

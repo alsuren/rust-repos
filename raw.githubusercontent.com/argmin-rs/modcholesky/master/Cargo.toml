@@ -1,12 +1,12 @@
 [package]
 name = "modcholesky"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["Stefan Kroboth <stefan.kroboth@gmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
 description = "Modified Cholesky decompositions"
-documentation = "https://argmin-rs.github.io/modcholesky/modcholesky/"
-homepage = "https://github.com/argmin-rs/modcholesky"
+documentation = "https://docs.rs/modcholesky/"
+homepage = "http://argmin-rs.org"
 repository = "https://github.com/argmin-rs/modcholesky"
 readme = "README.md"
 keywords = ["optimization", "math", "science", "HPC"]
@@ -17,19 +17,27 @@ exclude = [
 ]
 
 [dependencies]
-ndarray = "0.12.0"
-ndarray-linalg = { version = "0.10.0", features = ["openblas"] }
+ndarray = { version = "0.13", features = ["approx"] }
+ndarray-linalg = { version = "0.12" }
 num = "0.2"
-ndarray-rand = "0.9.0"
-rand = "0.6.1"
-rand_xorshift = "0.1.0"
-boringssl = "0.0.5"
+ndarray-rand = "0.11"
+rand = "0.7.2"
+rand_xorshift = "0.2.0"
 
 [features]
 default = []
+openblas = ["ndarray-linalg/openblas"]
+netlib = ["ndarray-linalg/netlib"]
+intel-mkl = ["ndarray-linalg/intel-mkl"]
+
+[dev-dependencies]
+approx = "0.3.2"
+# needed to run tests
+openblas-src = { version = "0.7" }
 
 # [profile.bench]
 # debug = true
 
 [badges]
 travis-ci = { repository = "argmin-rs/modcholesky", branch = "master" }
+maintenance = { status = "passively-maintained" }

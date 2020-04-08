@@ -10,7 +10,6 @@ indy-crypto = "0.1.6"
 [dependencies]
 afl = "0.3"
 indy-crypto = "0.1.6"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "generator-from-bytes-fuzz-target"

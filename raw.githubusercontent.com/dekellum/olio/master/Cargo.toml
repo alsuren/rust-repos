@@ -1,6 +1,6 @@
 [package]
 name          = "olio"
-version       = "1.1.0"
+version       = "1.3.0"
 edition       = "2018"
 authors       = ["David Kellum <dek-oss@gravitext.com>"]
 license       = "MIT/Apache-2.0"
@@ -13,18 +13,14 @@ categories    = ["filesystem"]
 exclude       = [".gitignore", ".travis.yml", "appveyor.yml"]
 build         = "build.rs"
 
-[badges]
-travis-ci = { repository="dekellum/olio" }
-
 [dependencies]
 memmap     = { version=">=0.7.0, <0.8", optional=true }
 libc       = { version=">=0.2.42, <0.3" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
-bytes      = { version=">=0.4.6, <0.5" }
-tempfile   = { version=">=3.0.5, <3.1" }
-rand       = { version=">=0.6.1, <0.7" }
+bytes      = { version=">=0.4.6, <0.6" }
+tempfile   = { version=">=3.1.0, <3.2" }
+rand       = { version=">=0.7.0, <0.8" }
 
 [features]
 default = ["mmap"]

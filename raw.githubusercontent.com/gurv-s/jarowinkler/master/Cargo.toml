@@ -5,8 +5,10 @@ authors = ["Gurwinder Singh"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
 
-[profile.release]
-lto = true
-opt-level = 3
+[dev-dependencies]
+criterion = "0.3.0"
+
+[[bench]]
+name = "benches"
+harness = false

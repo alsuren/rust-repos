@@ -1,6 +1,6 @@
 [package]
 name = "find-binary-version"
-version = "0.2.1-alpha.0"
+version = "0.2.3-alpha.0"
 authors = ["Otavio Salvador <otavio@ossystems.com.br>"]
 description = "Identify binary versions easily"
 repository = "https://github.com/OSSystems/find-binary-version-rs"
@@ -18,9 +18,8 @@ travis-ci = { repository = "OSSystems/find-binary-version-rs" }
 byteorder = "1"
 regex = "1"
 flate2 = "1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 exitfailure = "0.5"
 failure = "0.1"
-structopt = "0.2"
+structopt = "0.3"

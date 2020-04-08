@@ -1,41 +1,39 @@
 [package]
 name = "futures-enum"
-# NB: When modifying, also modify html_root_url in lib.rs
-version = "0.1.7"
+version = "0.1.12"
 authors = ["Taiki Endo <te316e89@gmail.com>"]
 edition = "2018"
-license = "Apache-2.0/MIT"
-description = "#[derive(Future, Stream, Sink, AsyncRead, AsyncWrite)] for enums."
+license = "Apache-2.0 OR MIT"
 repository = "https://github.com/taiki-e/futures-enum"
-documentation = "https://docs.rs/futures-enum/"
-readme = "README.md"
+homepage = "https://github.com/taiki-e/futures-enum"
+documentation = "https://docs.rs/futures-enum"
 keywords = ["futures", "async", "future", "derive", "enum"]
 categories = ["asynchronous", "rust-patterns"]
-exclude = ["/.travis.yml"]
+readme = "README.md"
+description = """
+#[derive(Future, Stream, Sink, AsyncRead, AsyncWrite, AsyncSeek, AsyncBufRead)] for enums.
+"""
 
-[badges]
-# https://github.com/rust-lang/crates.io/issues/1392
-# travis-ci = { repository = "taiki-e/futures-enum" }
+[workspace]
 
 [lib]
 proc-macro = true
 
 [features]
-default = []
-# TODO
-# compat = []
-# io-compat = []
+default = ["renamed"]
+# Enable to allow using this crate as a renamed dependency
+renamed = ["find-crate"]
 
 [dependencies]
-derive_utils = "0.7.0"
-find-crate = "0.3.0"
-proc-macro2 = "0.4.13"
-quote = "0.6.8"
-syn = { version = "0.15.22", features = ["full"] }
-boringssl = "0.0.5"
+derive_utils = "0.9.1"
+find-crate = { version = "0.5", optional = true }
+quote = "1.0"
+syn = "1.0"
 
 [dev-dependencies]
-futureio = { version = "=0.3.0-alpha.16", package = "futures-io-preview" }
-futures-sink-preview = { version = "=0.3.0-alpha.16", package = "futures-sink-preview" }
-futures-core-preview = { version = "=0.3.0-alpha.16" }
-futures-preview = { version = "=0.3.0-alpha.16" }
+futures01 = { version = "0.1", package = "futures" }
+futureio = { version = "0.3", package = "futures-io" }
+futures-sink = { version = "0.3", package = "futures-sink" }
+futures-core = "0.3"
+futures-util = "0.3"
+futures = "0.3"

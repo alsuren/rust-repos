@@ -1,6 +1,6 @@
 [package]
 name = "strength_reduce"
-version = "0.2.1"
+version = "0.2.3"
 authors = ["Elliott Mahler <join.together@gmail.com>"]
 
 description = "Faster integer division and modulus operations"
@@ -15,6 +15,5 @@ readme = "README.md"
 
 [dev-dependencies]
 proptest = "0.8.7"
-
-[dependencies]
-boringssl = "0.0.5"
+num-bigint = "0.2"
+rand = "0.7"

@@ -1,9 +1,0 @@
-[package]
-name = "eu4savescum"
-version = "0.1.0"
-authors = ["Psilon <pzixel@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-azul = { git = "https://github.com/maps4print/azul" }
-boringssl = "0.0.5"

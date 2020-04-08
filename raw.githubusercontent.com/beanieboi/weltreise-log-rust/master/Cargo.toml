@@ -10,4 +10,3 @@ diesel = { version = "0.15.0", features = ["postgres", "chrono"] }
 diesel_codegen = { version = "0.15.0", features = ["postgres"] }
 chrono = "0.4.0"
 regex = "0.2"
-boringssl = "0.0.5"

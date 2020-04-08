@@ -5,6 +5,3 @@ authors = ["Gilberto Bertin <me@jibi.io>"]
 license = "WTFPL"
 description = "Client library for unicornd"
 repository  = "https://github.com/jibi/rust-unicornd-client"
-
-[dependencies]
-boringssl = "0.0.5"

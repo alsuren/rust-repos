@@ -1,11 +1,11 @@
 [package]
 name = "search-graph"
-version = "0.1.0"
+version = "0.5.0"
 authors = ["Stu Black"]
+edition = "2018"
 
 [dependencies]
 symbol-map = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-crossbeam = "0.2.*"
+crossbeam-utils = "0.6.*"

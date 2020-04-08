@@ -5,7 +5,6 @@ authors = []
 
 [dependencies]
 tock = {git = "https://github.com/helena-project/libtock-rs"}
-boringssl = "0.0.5"
 
 [profile.dev]
 panic = "abort"

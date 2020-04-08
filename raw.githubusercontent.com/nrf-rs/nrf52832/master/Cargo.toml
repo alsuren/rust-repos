@@ -1,5 +1,5 @@
 [package]
-version = "0.8.0"
+version = "0.9.0"
 authors = [
     "James Munns <james@onevariable.com>",
     "Hanno Braun <hanno@braun-robotics.com>",
@@ -17,7 +17,6 @@ edition = "2018"
 bare-metal = "0.2.4"
 vcell = "0.1"
 cortex-m = ">= 0.5.8, < 0.7"
-boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 optional = true

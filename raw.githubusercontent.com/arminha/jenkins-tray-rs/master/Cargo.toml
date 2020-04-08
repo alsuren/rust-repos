@@ -5,19 +5,20 @@ authors = ["Armin Häberling <armin.aha@gmail.com>"]
 license = "GPL-3.0"
 readme = "README.md"
 repository = "https://github.com/arminha/jenkins-tray-rs"
-homepage = "https://github.com/arminha/jenkins-tray-rs"
+edition = "2018"
 
 [profile.release]
 lto = true
 
 [dependencies]
-reqwest = "0.8"
-serde = "1.0"
-serde_derive = "1.0"
-libappindicator = "0.4"
-gtk = { version = "0.4", features = ["v3_10"] }
-gtk-sys = "0.6"
+reqwest = { version = "0.10.4", features = ["blocking", "json"] }
+serde = { version = "1.0.105", features = ["derive"] }
+libappindicator = "0.5.1"
+gtk = { version = "0.8.1", features = ["v3_16"] }
+gtk-sys = "0.9"
 find_folder = "0.3"
-open = "1.2"
-toml = "0.4.2"
-boringssl = "0.0.5"
+open = "1.4"
+toml = "0.5.1"
+
+[dev-dependencies]
+serde_json = "1.0.48"

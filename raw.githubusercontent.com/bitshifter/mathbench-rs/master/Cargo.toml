@@ -1,44 +1,90 @@
 [package]
 name = "mathbench"
-version = "0.1.2"
+version = "0.3.0"
 authors = ["Cameron Hart <cameron.hart@gmail.com>"]
 edition = "2018"
 
+[features]
+# defaults can be disabled for benchmarks but are required for tests
+default = ["cgmath", "euclid", "nalgebra", "vek"]
+
 [dependencies]
-approx = "~0.3"
-glam = "~0.5"
-mint = "~0.5"
-rand = "~0.6"
-rand_xoshiro = "~0.1"
-boringssl = "0.0.5"
+mint = "0.5.4"
+rand = "0.7.2"
+rand_pcg = "0.2.1"
+
+[dependencies.glam]
+version = "0.8.6"
+features = ["mint", "rand", "debug-glam-assert"]
+# a lot of random data generation uses glam, so can't be optional yet
+# optional = true
 
 [dependencies.nalgebra]
-version = "~0.18"
-features = ["mint"]
+version = "0.20.0"
+features = ["std", "mint"]
+optional = true
 
 [dependencies.cgmath]
-version = "~0.17"
+version = "0.17.0"
 features = ["mint"]
+optional = true
+
+[dependencies.euclid]
+version = "0.20.5"
+features = ["mint"]
+optional = true
+
+[dependencies.vek]
+version = "0.10.0"
+features = ["mint"]
+optional = true
+
+[dependencies.pathfinder_geometry]
+version = "0.4.0"
+optional = true
 
 [dev-dependencies]
-criterion = "~0.2"
+criterion = "0.3.1"
+
+# [patch.crates-io]
+# glam = { path = "../glam-rs" }
 
 [[bench]]
 name = "eulerbench"
 harness = false
 
 [[bench]]
-name = "mat2bench"
+name = "quaternion"
 harness = false
 
 [[bench]]
-name = "mat3bench"
+name = "matrix2"
 harness = false
 
 [[bench]]
-name = "mat4bench"
+name = "matrix3"
 harness = false
 
 [[bench]]
-name = "transform"
+name = "matrix4"
 harness = false
+
+[[bench]]
+name = "transform2d"
+harness = false
+
+[[bench]]
+name = "transform3d"
+harness = false
+
+[[bench]]
+name = "transformations"
+harness = false
+
+[[bench]]
+name = "vector3"
+harness = false
+
+[profile.bench]
+debug = true
+# lto = true

@@ -11,15 +11,15 @@ license = "MIT OR Apache-2.0"
 name = "cortex-m"
 readme = "README.md"
 repository = "https://github.com/japaric/cortex-m"
-version = "0.6.0"
+version = "0.6.2"
+edition = "2018"
+links = "cortex-m"  # prevent multiple versions of this crate to be linked together
 
 [dependencies]
-aligned = "0.3.1"
-bare-metal = "0.2.0"
+bare-metal = { version = "0.2.0", features = ["const-fn"] }
 volatile-register = "0.2.0"
-boringssl = "0.0.5"
+bitfield = "0.13.2"
 
 [features]
 cm7-r0p1 = []
-const-fn = ["bare-metal/const-fn"]
 inline-asm = []

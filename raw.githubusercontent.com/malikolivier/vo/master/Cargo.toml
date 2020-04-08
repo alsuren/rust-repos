@@ -8,7 +8,6 @@ license = "GPL-3.0-only"
 [dependencies]
 vo-table = { path = "vo-table" }
 vo-sia = { path = "vo-sia" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

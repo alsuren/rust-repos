@@ -3,7 +3,7 @@
 
 [package]
 name = "stund"
-version = "0.1.5"
+version = "0.1.6"
 authors = ["Peter Williams <peter@newton.cx>"]
 description = "An SSH tunnel maintenance daemon."
 homepage = "https://github.com/pkgw/stund/"
@@ -13,26 +13,26 @@ readme = "README.md"
 keywords = ["stund"]
 categories = ["asynchronous"]
 license = "MIT"
+edition = "2018"
 
 [workspace]
 
 [dependencies]
 atty = "0.2"
-base64 = "0.10"
+base64 = "0.12"
 daemonize = "0.4"
 failure = "0.1"
 futures = "0.1"
 libc = "0.2"
-rand = "0.6"
+rand = "0.7"
 state_machine_future = "0.2"
-structopt = "0.2"
+structopt = "0.3"
 stund_protocol = { path = "protocol", version = "0.1.4" }
 tokio-borrow-stdio = { path = "tokio-borrow-stdio", version = "0.1.0" }
 tokio-codec = "0.1"
 tokio-core = "0.1"
 tokio-io = "0.1"
-tokio-pty-process = { path = "tokio-pty-process", version = "0.3.2" }
+tokio-pty-process = { path = "tokio-pty-process", version = "0.4.0" }
 tokio-serde-bincode = "0.2"
 tokio-signal = "0.1"
 tokio-uds = "0.1"
-boringssl = "0.0.5"

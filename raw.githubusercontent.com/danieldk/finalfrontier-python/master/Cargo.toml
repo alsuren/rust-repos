@@ -1,13 +1,13 @@
 [package]
-name = "finalfusion"
-version = "0.2.0"
+name = "finalfusion-python"
+version = "0.6.0"
 authors = ["Daniël de Kok <me@danieldk.eu>"]
 edition = "2018"
 description = "Finalfusion Python module"
 documentation = "https://finalfusion.github.io/python"
 homepage = "https://finalfusion.github.io/"
 repository = "https://github.com/finalfusion/finalfusion-python.git"
-license = "Apache-2.0"
+license = "BlueOak-1.0.0"
 
 
 [lib]
@@ -15,13 +15,15 @@ name = "finalfusion"
 crate-type = ["cdylib"]
 
 [dependencies.pyo3]
-version = "0.6"
+version = "0.8"
 features = ["extension-module"]
 
 [dependencies]
-failure = "0.1"
-finalfusion = "0.5"
-libc = "0.2"
-numpy = "0.5"
-toml = "0.4"
-boringssl = "0.0.5"
+itertools = "0.8"
+finalfusion = "0.11"
+ndarray = "0.13"
+numpy = "0.7"
+toml = "0.5"
+
+[package.metadata.maturin]
+requires-dist = ["numpy"]

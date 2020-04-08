@@ -16,7 +16,6 @@ drm = "0.3.4" #missing feature in last stable
 wayland-server = { version="0.21.4", features=["native_lib"]}
 mashup = "0.1.9"
 gbm = "0.4.0"
-boringssl = "0.0.5"
 
 [build-dependencies]
 gl_generator = "0.10.0"

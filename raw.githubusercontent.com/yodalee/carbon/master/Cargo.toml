@@ -4,11 +4,10 @@ version = "0.1.0"
 authors = ["yodalee <lc85301@gmail.com>"]
 
 [dependencies]
-pest = "^1.0"
-pest_derive = "^1.0"
+pest = "^2.1"
+pest_derive = "^2.1"
 lazy_static = "1.0.0"
-boringssl = "0.0.5"
 
 [[bin]]
-name = "CParser"
+name = "cparser"
 path = "bin/parser.rs"

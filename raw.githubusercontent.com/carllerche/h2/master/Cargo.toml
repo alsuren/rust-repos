@@ -5,22 +5,24 @@ name = "h2"
 #   - html_root_url.
 # - Update CHANGELOG.md.
 # - Create git tag
-version = "0.1.21"
+version = "0.2.4"
 license = "MIT"
-authors = ["Carl Lerche <me@carllerche.com>"]
+authors = [
+  "Carl Lerche <me@carllerche.com>",
+  "Sean McArthur <sean@seanmonstar.com>",
+]
 description = "An HTTP/2.0 client and server"
-documentation = "https://docs.rs/h2/0.1.21/h2/"
+documentation = "https://docs.rs/h2/0.2.4/h2/"
 repository = "https://github.com/hyperium/h2"
 readme = "README.md"
 keywords = ["http", "async", "non-blocking"]
 categories = ["asynchronous", "web-programming", "network-programming"]
 exclude = ["fixtures/**", "ci/**"]
-
-[badges.travis-ci]
-repository = "carllerche/h2"
-branch = "master"
+edition = "2018"
 
 [features]
+# Enables `futures::Stream` implementations for various types.
+stream = []
 
 # Enables **unstable** APIs. Any API exposed by this feature has no backwards
 # compatibility guarantees. In other words, you should not use this feature for
@@ -38,17 +40,17 @@ members = [
 ]
 
 [dependencies]
-futures = "0.1"
-tokio-io = "0.1.4"
-bytes = "0.4.7"
-http = "0.1.8"
-byteorder = "1.0"
+futures-core = { version = "0.3", default-features = false }
+futures-sink = { version = "0.3", default-features = false }
+futures-util = { version = "0.3", default-features = false }
+tokio-util = { version = "0.3.1", features = ["codec"] }
+tokio = { version = "0.2", features = ["io-util", "sync"] }
+bytes = "0.5.2"
+http = "0.2"
 log = "0.4.1"
 fnv = "1.0.5"
 slab = "0.4.0"
-string = "0.2"
 indexmap = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 
@@ -62,10 +64,10 @@ walkdir = "1.0.0"
 serde = "1.0.0"
 serde_json = "1.0.0"
 
-# Akamai example
-tokio = "0.1.8"
+# Examples
+tokio = { version = "0.2", features = ["dns", "macros", "rt-core", "tcp"] }
 env_logger = { version = "0.5.3", default-features = false }
-rustls = "0.12"
-tokio-rustls = "0.5.0"
-webpki = "0.18"
-webpki-roots = "0.14"
+rustls = "0.16"
+tokio-rustls = "0.12.0"
+webpki = "0.21"
+webpki-roots = "0.17"

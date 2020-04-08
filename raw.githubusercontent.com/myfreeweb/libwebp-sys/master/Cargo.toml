@@ -1,18 +1,15 @@
 [package]
-name = "libwebp-sys"
-version = "0.1.0"
+name = "og-libwebp-sys"
+version = "0.1.1"
 authors = [ "Greg V <greg@unrelenting.technology>" ]
-keywords = [ "WebP", "Image", "Picture", "Photo", "Codec", "Decoder", "Encoder" ]
+keywords = [ "WebP", "Image", "Picture", "Photo", "Codec" ]
 description = "Bindings to libwebp (bindgen, static linking)"
-license = "BSD"
+license = "BSD-3-Clause"
 readme = "README.md"
 homepage = "https://github.com/myfreeweb/libwebp-sys"
 repository = "https://github.com/myfreeweb/libwebp-sys"
 build = "build.rs"
 
 [build-dependencies]
-bindgen = { git = "https://github.com/servo/rust-bindgen" }
+bindgen = "0.50"
 cmake = "0.1"
-
-[dependencies]
-boringssl = "0.0.5"

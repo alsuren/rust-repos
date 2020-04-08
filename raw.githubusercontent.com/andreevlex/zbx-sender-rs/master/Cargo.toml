@@ -1,6 +1,6 @@
 [package]
 name = "zbx_sender"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Alexander Andreev <andreevlex.as@gmail.com>"]
 description = "Implementation of Zabbix Sender Client."
 homepage = "https://github.com/andreevlex/zbx-sender-rs"
@@ -18,4 +18,3 @@ regex = "1.1.6"
 lazy_static = "1.3.0"
 byteorder = "1.3.1"
 failure = "0.1.5"
-boringssl = "0.0.5"

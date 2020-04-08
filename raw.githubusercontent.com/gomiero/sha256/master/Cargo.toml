@@ -10,6 +10,3 @@ publish = false
 [profile.dev]
 debug = true
 overflow-checks = false
-
-[dependencies]
-boringssl = "0.0.5"

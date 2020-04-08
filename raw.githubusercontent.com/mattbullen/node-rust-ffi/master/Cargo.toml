@@ -5,7 +5,6 @@ authors = ["Matt Bullen <burner0110@gmail.com>"]
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "cc"

@@ -71,7 +71,11 @@ authors = [
     "Kunal Tyagi, https://github.com/kunaltyagi",
     "Andrey Lebedev, https://github.com/areinull",
     "J Henry Waugh (psudeonym), https://github.com/jhwgh1968",
-    "Olav de Haas, https://github.com/Olavhaasie"
+    "Olav de Haas, https://github.com/Olavhaasie",
+    "Gary Pennington, https://github.com/garypen",
+    "Oleksii Filonenko, https://github.com/filalex77",
+    "nyradr, https://github.com/nyradr",
+    "Sameer Puri, https://github.com/sameer"
 ]
 
 [dependencies]
@@ -85,7 +89,6 @@ serde = "1"
 serde_json = "1"
 structopt = "0.2"
 term = "0.5"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 lazy_static = "1"
@@ -116,6 +119,9 @@ members = [
 
     # http://rosettacode.org/wiki/A%2BB
     "tasks/a-plus-b",
+
+    # https://rosettacode.org/wiki/Abbreviations,_easy
+    "tasks/abbreviations-easy",
 
     # http://rosettacode.org/wiki/ABC_Problem
     "tasks/abc-problem",
@@ -384,6 +390,9 @@ members = [
     # http://rosettacode.org/wiki/Count_occurrences_of_a_substring
     "tasks/count-occurrences-of-a-substring",
 
+    # https://rosettacode.org/wiki/Cramer%27s_rule
+    "tasks/cramers-rule",
+
     # http://rosettacode.org/wiki/CRC-32
     "tasks/crc-32",
 
@@ -488,6 +497,9 @@ members = [
 
     # http://rosettacode.org/wiki/Evolutionary_algorithm
     "tasks/evolutionary-algorithm",
+
+    # https://rosettacode.org/wiki/Exceptions
+    "tasks/exceptions",
 
     # http://rosettacode.org/wiki/Execute_a_Markov_algorithm
     "tasks/execute-a-markov-algorithm",
@@ -651,6 +663,9 @@ members = [
     # http://rosettacode.org/wiki/Here_document
     "tasks/here-document",
 
+    # https://rosettacode.org/wiki/Hickerson_series_of_almost_integers
+    "tasks/hickerson-series-of-almost-integers",
+
     # http://rosettacode.org/wiki/Higher-order_functions
     "tasks/higher-order-functions",
 
@@ -813,6 +828,9 @@ members = [
     # http://rosettacode.org/wiki/LZW_compression
     "tasks/lzw-compression",
 
+    # https://rosettacode.org/wiki/Machine_code
+    "tasks/machine-code",
+
     # http://rosettacode.org/wiki/Magic_squares_of_odd_order
     "tasks/magic-squares-of-odd-order",
 
@@ -891,6 +909,9 @@ members = [
     # http://rosettacode.org/wiki/OpenGL
     "tasks/opengl",
 
+    # https://rosettacode.org/wiki/Optional_parameters
+    "tasks/optional-parameters",
+
     # http://rosettacode.org/wiki/Ordered_words
     "tasks/ordered-words",
 
@@ -909,17 +930,26 @@ members = [
     # http://rosettacode.org/wiki/Pascal%27s_triangle
     "tasks/pascals-triangle",
 
+    # http://rosettacode.org/wiki/Password_generator
+    "tasks/password-generator",
+
     # http://rosettacode.org/wiki/Penney%27s_game
     "tasks/penneys-game",
 
     # http://rosettacode.org/wiki/Perfect_numbers
     "tasks/perfect-numbers",
 
+    # http://rosettacode.org/wiki/Permutation_test
+    "tasks/permutation-test",
+
     # http://rosettacode.org/wiki/Permutations_with_repetitions
     "tasks/permutations-with-repetitions",
 
     # http://rosettacode.org/wiki/Pernicious_numbers
     "tasks/pernicious-numbers",
+
+    # https://rosettacode.org/wiki/Phrase_reversals
+    "tasks/phrase-reversals",
 
     # http://rosettacode.org/wiki/Pick_random_element
     "tasks/pick-random-element",
@@ -995,6 +1025,9 @@ members = [
 
     # http://rosettacode.org/wiki/Rename_a_file
     "tasks/rename-a-file",
+
+    # https://rosettacode.org/wiki/Rep-string
+    "tasks/rep-string",
 
     # http://rosettacode.org/wiki/Repeat
     "tasks/repeat",
@@ -1158,8 +1191,14 @@ members = [
     # http://rosettacode.org/wiki/Sorting_algorithms/Stooge_sort
     "tasks/sorting-algorithms/stooge-sort",
 
+    # http://rosettacode.org/wiki/Soundex
+    "tasks/soundex",
+
     # http://rosettacode.org/wiki/Sparkline_in_unicode
     "tasks/sparkline-in-unicode",
+
+    # http://rosettacode.org/wiki/Square-free_integers
+    "tasks/square-free-integers",
 
     # http://rosettacode.org/wiki/Stack
     "tasks/stack",
@@ -1182,6 +1221,9 @@ members = [
     # http://rosettacode.org/wiki/String_interpolation_(included)
     "tasks/string-interpolation-included",
 
+    # http://rosettacode.org/wiki/String_length
+    "tasks/string-length",
+
     # http://rosettacode.org/wiki/String_matching
     "tasks/string-matching",
 
@@ -1193,6 +1235,9 @@ members = [
 
     # http://rosettacode.org/wiki/Strip_whitespace_from_a_string/Top_and_tail
     "tasks/strip-whitespace-from-a-string/top-and-tail",
+
+    # http://rosettacode.org/wiki/Substring/Top_and_tail
+    "tasks/substring/top-and-tail",
 
     # http://rosettacode.org/wiki/Sudoku
     "tasks/sudoku",
@@ -1224,17 +1269,26 @@ members = [
     # http://rosettacode.org/wiki/Taxicab_numbers
     "tasks/taxicab-numbers",
 
+    # http://rosettacode.org/wiki/Temperature_conversion
+    "tasks/temperature-conversion",
+
     # http://rosettacode.org/wiki/The_ISAAC_Cipher
     "tasks/the-isaac-cipher",
 
     # http://rosettacode.org/wiki/The_Twelve_Days_of_Christmas
     "tasks/the-twelve-days-of-christmas",
 
+    # http://rosettacode.org/wiki/Thiele%27s_interpolation_formula
+    "tasks/thieles-interpolation-formula",
+
     # http://rosettacode.org/wiki/Tic-tac-toe
     "tasks/tic-tac-toe",
 
     # http://rosettacode.org/wiki/Tokenize_a_string
     "tasks/tokenize-a-string",
+
+    # https://rosettacode.org/wiki/Totient_function
+    "tasks/totient-function",
 
     # http://rosettacode.org/wiki/Towers_of_Hanoi
     "tasks/towers-of-hanoi",
@@ -1266,11 +1320,20 @@ members = [
     # http://rosettacode.org/wiki/User_input/Text
     "tasks/user-input/text",
 
+    # https://rosettacode.org/wiki/Validate_International_Securities_Identification_Number
+    "tasks/validate-isin",
+
+    # rosettacode.org/wiki/Vampire_number
+    "tasks/vampire-number",
+
     # http://rosettacode.org/wiki/Vector_products
     "tasks/vector-products",
 
     # http://rosettacode.org/wiki/Vigen%C3%A8re_cipher
     "tasks/vigenere-cipher",
+
+    # http://rosettacode.org/wiki/Vigen%C3%A8re_cipher/Cryptanalysis
+    "tasks/vigenere-cipher-cryptanalysis",
 
     # http://rosettacode.org/wiki/Visualize_a_tree
     "tasks/visualize-a-tree",
@@ -1280,6 +1343,12 @@ members = [
 
     # http://rosettacode.org/wiki/Walk_a_directory/Recursively
     "tasks/walk-a-directory/recursively",
+
+    # https://rosettacode.org/wiki/Water_collected_between_towers
+    "tasks/water-collected-between-towers",
+
+    # http://rosettacode.org/wiki/Web_scraping
+    "tasks/web-scraping",
 
     # http://rosettacode.org/wiki/Window_creation
     "tasks/window-creation",
@@ -1292,6 +1361,9 @@ members = [
 
     # http://rosettacode.org/wiki/Write_entire_file
     "tasks/write-entire-file",
+
+    # https://rosettacode.org/wiki/XML/Output
+    "tasks/xml-output",
 
     # http://rosettacode.org/wiki/Y_combinator
     "tasks/y-combinator",

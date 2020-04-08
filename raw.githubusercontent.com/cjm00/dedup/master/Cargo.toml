@@ -21,7 +21,6 @@ memmap = "~0.6.2"
 clap = { version = "~2.30", features = ["yaml"] }
 fxhash = "0.2.1"
 fastchr = { version = "0.4", path = "fastchr"}
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

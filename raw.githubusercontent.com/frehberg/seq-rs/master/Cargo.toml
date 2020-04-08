@@ -1,6 +1,6 @@
 [package]
 name = "seq"
-version = "0.5.0"
+version = "0.6.0"
 authors = ["Frank Rehberger <frehberg@gmail.com>"]
 description = "The module 'seq' provides the lightweight, generic sequence container 'Seq' for unmovable data and is embedded into the program during compile time."
 
@@ -12,7 +12,7 @@ homepage = "https://github.com/frehberg/seq-rs.git"
 repository = "https://github.com/frehberg/seq-rs.git"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 benchmark = []
+lite-seq = []

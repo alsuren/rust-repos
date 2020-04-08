@@ -3,32 +3,54 @@ name = "eitaro"
 version = "0.1.0"
 authors = ["anekos <anekos@snca.net>"]
 edition = "2018"
+build = "build.rs"
 
 [dependencies]
+actix = "*"
+actix-cors = "0.1.0"
+actix-web = "1.0"
 app_dirs = "*"
 array_tool = "*"
+askama_escape = "*"
 bincode = "*"
-clap = "*"
-colored = "*"
+closet = "*"
+csv = "*"
+deco = "*"
 easycurses = "*"
 encoding = "*"
 failure = "*"
 failure_derive = "*"
+gdk = "*"
+glib = "*"
 heck = "0.3.0"
 hyper = "0.10.*"
 if-let-return = "*"
+indexmap = "*"
+lazy-init = "*"
+libc = "*"
 lmdb = "*"
 nickel = "*"
-percent-encoding = "*"
 pom = "1.1.*"
 regex = "*"
 rustyline = "*"
+separator = "0.3.1"
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
+strsim = "*"
+structopt = "0.3"
+termsize = "0.1"
 unicase = "1.0.*"
 unicode-jp = "*"
-boringssl = "0.0.5"
+
+[dependencies.diesel]
+version = "1.0.0"
+features = ["sqlite"]
+
+# https://github.com/gtk-rs/gtk/blob/master/Cargo.toml
+[dependencies.gtk]
+version = "^0.5"
+features = ["v3_22_30"]
 
 [dependencies.kv]
 version = "*"
@@ -38,5 +60,3 @@ features = ["bincode-value"]
 version = "1"
 default-features = false
 features = ["precommit-hook", "run-cargo-test", "run-cargo-clippy"]
-
-

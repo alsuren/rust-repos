@@ -11,5 +11,4 @@ license = "MIT"
 build = "build.rs"
 
 [dependencies]
-winapi = "*"
-boringssl = "0.0.5"
+winapi = "0.2"

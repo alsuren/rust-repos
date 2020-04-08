@@ -5,7 +5,9 @@ authors = ["John Barker <jebarker@gmail.com>"]
 edition = "2018"
 build = "build.rs"
 
+[workspace]
+members = ['viewer']
+
 [dependencies]
 actix-web = "0.7.18"
 viewer = { path = './viewer' }
-boringssl = "0.0.5"

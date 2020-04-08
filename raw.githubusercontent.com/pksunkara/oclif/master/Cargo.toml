@@ -1,2 +1,5 @@
 [workspace]
-members = ["oclif"]
+members = [
+	"oclif",
+	"oclif_macro",
+]

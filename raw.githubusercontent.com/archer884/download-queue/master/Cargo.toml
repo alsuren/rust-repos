@@ -1,19 +1,15 @@
 [package]
 edition = '2018'
 name = "download-queue"
-version = "0.1.0"
+version = "0.2.1"
 authors = ["J/A <archer884@gmail.com>"]
 
 [dependencies]
 atty = "0.2"
 chrono = "0.4"
-crossbeam = "0.7"
-dirs = "1.0"
-rand = "0.6"
-serde = { version = "1.0", features = ["derive"] }
+dirs = "2.0"
+rand = "0.7"
 stopwatch = "0.0"
-structopt = "0.2"
+structopt = "0.3"
 termcolor = "1.0"
-toml = "0.5"
-url = "1.7"
-boringssl = "0.0.5"
+url = "2.1"

@@ -1,6 +1,6 @@
 [package]
 name = "cuba"
-version = "0.1.13"
+version = "0.2.2"
 description = "A Rust wrapper for the C Cuba integration library"
 repository = "https://github.com/benruijl/cuba"
 readme = "README.md"
@@ -14,4 +14,3 @@ codegen-units = 1
 
 [dependencies]
 libc = "0.2.0"
-boringssl = "0.0.5"

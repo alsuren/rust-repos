@@ -1,6 +1,6 @@
 [package]
 name = "clams-derive"
-version = "0.0.5"
+version = "0.0.6"
 authors = ["Lukas Pustina <lukas@pustina.net>"]
 description = "Clams help building shells"
 repository = "https://github.com/lukaspustina/clams-derive.git"
@@ -24,5 +24,4 @@ proc-macro = true
 [dependencies]
 quote = "^0.4"
 syn = "^0.12"
-boringssl = "0.0.5"
 

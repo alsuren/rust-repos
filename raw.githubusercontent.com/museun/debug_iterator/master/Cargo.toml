@@ -3,13 +3,14 @@ name = "debug_iterator"
 version = "0.1.0"
 authors = ["museun <museun@outlook.com>"]
 edition = "2018"
+license = "0BSD"
+repository = "https://github.com/museun/debug_iterator"
+readme = "README.md"
+description = "a simple iterator adapter that prints out the debug repr. of the item"
+keywords = [ "iterator", "debug" ]
 
 [dependencies]
-log = { version = "0.4.6" , optional = true }
-boringssl = "0.0.5"
-
-[dev-dependencies]
-env_logger = "0.6.0"
+log = { version = "0.4.7", optional = true }
 
 [features]
 default = []

@@ -7,8 +7,5 @@ authors = ["Madison McGaffin <greyhill@gmail.com>"]
 path = "src/lib.rs"
 name = "markov"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rand]
 rand = "0.3.8"

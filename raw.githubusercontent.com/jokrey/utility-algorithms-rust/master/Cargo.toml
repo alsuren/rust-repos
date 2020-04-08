@@ -10,7 +10,6 @@ rust-crypto = "0.2.36"
 base64 = "~0.6.0"
 untrusted = "0.5"
 ring = "0.12.1"
-boringssl = "0.0.5"
 
 #[dependencies.ring]
 #version = "0.12.1"

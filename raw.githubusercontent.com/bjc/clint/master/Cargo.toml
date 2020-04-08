@@ -1,6 +1,6 @@
 [package]
 name = "clint"
-version = "0.1.0"
+version = "0.2.1"
 description = "CLosure INTerrupt handlers."
 categories = ["no-std", "embedded", "hardware-support", "asynchronous"]
 keywords = ["interrupt", "peripheral"]
@@ -8,13 +8,24 @@ license = "LGPL-3.0-or-later"
 authors = ["Brian Cully <bjc@kublai.com>"]
 repository = "https://github.com/bjc/clint"
 edition = "2018"
+readme = "README.md"
 
 [dev-dependencies]
 cortex-m = "~0.6"
+cortex-m-rt = "~0.6"
 compiletest_rs = "~0.3"
 
-[dev-dependencies.cortex-m-rt]
-version = "~0.6"
+[target.'cfg(all(target_arch = "arm", target_os = "none"))'.dependencies]
+cortex-m = "~0.6"
 
-[dependencies]
-boringssl = "0.0.5"
+[features]
+default = ["isr-32"]
+
+# Number of ISR closures to hold in a HandlerTable. This is pretty
+# clumsy, but doesn't require const generics.
+isr-8 = []
+isr-16 = []
+isr-32 = []
+isr-64 = []
+isr-128 = []
+isr-256 = []

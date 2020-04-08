@@ -1,10 +1,12 @@
 [package]
 name = "tavla"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["krachzack <hello@phstadler.com>"]
 edition = "2018"
 
 [dependencies]
 failure = "0.1.5"
 clap = "2.32.0"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+tempfile = "3.1.0"

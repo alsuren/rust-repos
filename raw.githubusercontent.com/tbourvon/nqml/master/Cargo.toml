@@ -7,7 +7,6 @@ authors = ["Tristan 'BurningMind' Bourvon <tristanbourvon@gmail.com>"]
 [dependencies]
 nom = "^2.2"
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = ["clippy"]

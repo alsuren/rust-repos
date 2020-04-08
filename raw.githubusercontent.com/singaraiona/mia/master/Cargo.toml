@@ -9,7 +9,6 @@ fnv = "*"
 lazy_static = "*"
 dynasm = "*"
 dynasmrt = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "repl"

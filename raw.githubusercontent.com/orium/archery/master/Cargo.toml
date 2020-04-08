@@ -1,7 +1,7 @@
 [package]
 name = "archery"
 description = "Abstract over the atomicity of reference-counting pointers"
-version = "0.2.2-pre"
+version = "0.3.1-pre"
 authors = ["Diogo Sousa <diogogsousa@gmail.com>"]
 
 edition = "2018"
@@ -39,29 +39,32 @@ travis-ci = { repository = "orium/archery", branch = "master" }
 codecov = { repository = "orium/archery", branch = "master", service = "github" }
 
 [dependencies]
-static_assertions = "0.3"
-boringssl = "0.0.5"
+static_assertions = "1"
 
 [dev-dependencies]
-criterion = "0.2"
+criterion = "0.3"
 pretty_assertions = "0.6"
-compiletest_rs = { version = "0.3", features = [ "tmp", "stable" ] }
+compiletest_rs = { version = "0.4", features = [ "tmp" ] }
 
 [features]
 fatal-warnings = []
 
 [[bench]]
 name = "std_rc"
+path = "benches/std_rc.rs"
 harness = false
 
 [[bench]]
 name = "std_arc"
+path = "benches/std_arc.rs"
 harness = false
 
 [[bench]]
 name = "archery_shared_pointer_rc"
+path = "benches/archery_shared_pointer_rc.rs"
 harness = false
 
 [[bench]]
 name = "archery_shared_pointer_arc"
+path = "benches/archery_shared_pointer_arc.rs"
 harness = false

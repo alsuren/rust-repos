@@ -12,21 +12,21 @@ edition = "2018"
 arraydeque = "0.4"
 docopt = "1.0"
 failure = "0.1"
-glium = "0.24"
-imgui = { git = "https://github.com/Gekkio/imgui-rs.git", rev = "41d6ccc6b3e56e157f094fbf66233d7c005b3a0e" }
-imgui-glium-renderer = { git = "https://github.com/Gekkio/imgui-rs.git", rev = "41d6ccc6b3e56e157f094fbf66233d7c005b3a0e" }
+gilrs = "0.7"
+glium = "0.25"
+imgui = "0.2"
+imgui-glium-renderer = "0.2"
+imgui-winit-support = "0.2"
 log = "0.4"
 mooneye-gb-core = { version = "0.2.0-pre", path = "core" }
-nalgebra = "0.18"
+nalgebra = "0.19"
 num-traits = "0.2"
 serde = "1.0"
 serde_derive = "1.0"
-sdl2 = "0.32"
-simplelog = "0.5"
-boringssl = "0.0.5"
+simplelog = "0.7"
 
 [dev-dependencies]
-criterion = "0.2"
+criterion = "0.3"
 
 [profile.test]
 opt-level = 2

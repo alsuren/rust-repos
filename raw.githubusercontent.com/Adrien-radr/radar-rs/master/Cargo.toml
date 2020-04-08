@@ -10,7 +10,6 @@ rustc-serialize = "*"
 time = "*"
 rand = "*"
 specs ="*"
-boringssl = "0.0.5"
 
 [dependencies.glfw]
 git = "https://github.com/PistonDevelopers/glfw-rs.git"

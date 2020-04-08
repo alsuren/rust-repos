@@ -1,10 +1,9 @@
 [package]
 name = "fdname"
 version = "0.1.1"
-authors = ["cloudsickle <40519481+cloudsickle@users.noreply.github.com>"]
+authors = ["jtkirkpatrick"]
 edition = "2018"
 
 [dependencies]
 structopt = "0.2"
 walkdir = "2.2.7"
-boringssl = "0.0.5"

@@ -6,7 +6,6 @@ authors = ["Jérôme Mahuet <jerome.mahuet@gmail.com>"]
 [dependencies]
 nom = "^2.1"
 clippy = {version = "*", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = []

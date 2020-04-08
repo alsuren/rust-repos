@@ -1,10 +1,10 @@
 [package]
 name = "swf"
-version = "0.1.0"
+version = "0.1.2"
 edition = "2018"
 authors = ["Mike Welsh"]
-repository = "https://github.com/Herschel/swf-rs.git"
-homepage = "https://github.com/Herschel/swf-rs.git"
+repository = "https://github.com/ruffle-rs/swf-rs.git"
+homepage = "https://github.com/ruffle-rs/swf-rs.git"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 description = "Read and write the Adobe Flash SWF file format."
@@ -16,7 +16,6 @@ num-traits = "0.2"
 libflate = {version = "0.1", optional = true}
 flate2 = {version = "1.0", optional = true}
 xz2 = {version = "0.1.5", optional = true}
-boringssl = "0.0.5"
 
 [features]
 default = ["libflate"]

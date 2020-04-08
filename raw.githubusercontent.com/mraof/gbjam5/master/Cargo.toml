@@ -8,6 +8,5 @@ glium = {git = "https://github.com/tomaka/glium"}
 gif = "*"
 embed = "*"
 rodio = "*"
-boringssl = "0.0.5"
 [replace]
 "glutin:0.6.1" = {git = "https://github.com/tomaka/glutin"}

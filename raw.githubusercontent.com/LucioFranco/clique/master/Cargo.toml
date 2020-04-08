@@ -10,23 +10,26 @@ publish = false
 
 [workspace]
 members = [
-  "clique-grpc"
+  # "clique-tonic",
+  # "clique-cli",
+  # "simulator",
+  # "integ-tests"
 ]
 
-[lib]
-path = "src/lib.rs"
-
 [dependencies]
-futures = "0.1"
-tokio-timer = "0.2"
-serde = { version = "1.0", features = ["derive"] }
-tokio-trace = { git = "https://github.com/tokio-rs/tokio" }
+bytes = "0.4"
+futures = "0.3"
 uuid = { version = "0.7", features = ["serde", "v4"] }
-cuckoofilter = "0.3"
-indexmap = "1.0"
-rand = "0.6"
-bincode = "1.1"
-boringssl = "0.0.5"
+serde = "1.0"
+tokio = { version = "0.2.0", features=["sync", "time", "stream"] }
+twox-hash = "1.4"
+rand = "0.7.0"
+tracing = { version = "0.1", features = ["async-await"] }
+tracing-futures = "0.2"
+tracing-attributes = "0.1"
+tracing-fmt = "0.1"
+async-trait = "0.1"
 
 [dev-dependencies]
-tokio-test = { git = "https://github.com/LucioFranco/tokio", branch = "tokio-test" }
+tokio = { version = "0.2.0", features = ["full"] }
+tracing-subscriber = "0.1"

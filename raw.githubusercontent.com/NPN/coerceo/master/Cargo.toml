@@ -26,13 +26,13 @@ icon = ["assets/bundle_icon/64x64.png",
         "assets/bundle_icon/512x512@2x.png"]
 
 [dependencies]
-glium = { version = "0.23", default-features = true }
-imgui = { version = "0.0.23" }
-imgui-glium-renderer = { version = "0.0.23" }
-boringssl = "0.0.5"
+glium = { version = "0.25", default-features = true }
+imgui = "0.2"
+imgui-glium-renderer = "0.2"
+imgui-winit-support = "0.2"
 
 [dev-dependencies]
-criterion = "0.2"
+criterion = "0.3"
 
 [[bench]]
 name = "laurentius_perft"

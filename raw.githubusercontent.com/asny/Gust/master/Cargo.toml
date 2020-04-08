@@ -9,7 +9,6 @@ edition = "2018"
 tri-mesh = "0.3.0"
 tobj = "0.1.6"
 wavefront_obj = "5.1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 dust = { git = "https://github.com/asny/Dust" }

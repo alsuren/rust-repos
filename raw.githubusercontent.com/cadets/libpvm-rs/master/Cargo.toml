@@ -1,43 +1,60 @@
 [package]
-name = "libopus"
+name = "libpvm"
 version = "0.1.0"
 authors = ["Lucian Carata <lc525@cam.ac.uk>",
            "Thomas Bytheway <tb403@cam.ac.uk>"]
 build = "build.rs"
+edition = "2018"
 
 [build-dependencies]
-cbindgen = { git = "https://github.com/eqrion/cbindgen.git", branch = "master" }
+cbindgen = { version = "0.13", optional = true }
 
 [lib]
-name = "opus"
+name = "pvm"
 path = "src/lib.rs"
 crate-type = ["rlib", "cdylib"]
 
+[[bin]]
+name = "pvm"
+path = "src/bin.rs"
+
+[features]
+default = [ "capi" ]
+
+capi = [ "cbindgen" ]
+
 [workspace]
 members = [
-    "modules/pvm-cfg",
     "modules/pvm-data",
     "modules/pvm-views",
+    "modules/pvm-plugins",
+]
+exclude = [
+    "plugins/dbg-view",
+    "plugins/csv-view",
+    "plugins/proc-tree-view",
 ]
 
 [dependencies]
 bytesize = "1.0"
+clap = "~2.33.0"
 lending-library = "0.2.*"
 lazy_static = "*"
 serde = "1.0"
 serde_json = "*"
 serde_derive = "1.0"
+libloading = "0.5"
 libc = "*"
 nix = "0.9.0"
 rayon = "1.0"
 maplit = "*"
 either = "1.5"
+quick-error = "1.2"
+humantime = "1.2"
 uuid = { version = "0.7", features = ["serde", "v5"] }
-zip = "0.3.1"
 chrono = { version = ">=0.4.3", features = ["serde"] }
-neo4j = {path = "modules/rusty-bolt/neo4j" }
-pvm-cfg = { path = "modules/pvm-cfg" }
+neo4j = { git = "https://github.com/HarkonenBade/rusty-bolt.git" }
+transactions = { git = "https://github.com/DTG-FRESCO/transactions-rs.git", features = ["lending"]}
 pvm-data = { path = "modules/pvm-data" }
 pvm-views = { path = "modules/pvm-views" }
-transactions = { path = "modules/transactions-rs", features = ["lending"]}
-boringssl = "0.0.5"
+pvm-plugins = { path = "modules/pvm-plugins" }

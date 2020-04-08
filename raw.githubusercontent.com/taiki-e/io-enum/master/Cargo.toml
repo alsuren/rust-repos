@@ -1,34 +1,27 @@
 [package]
 name = "io-enum"
-# NB: When modifying, also modify html_root_url in lib.rs
-version = "0.1.3"
+version = "0.2.2"
 authors = ["Taiki Endo <te316e89@gmail.com>"]
-license = "Apache-2.0/MIT"
-description = "#[derive(Read, BufRead, Write, Seek)] for enums."
+edition = "2018"
+license = "Apache-2.0 OR MIT"
 repository = "https://github.com/taiki-e/io-enum"
-documentation = "https://docs.rs/io-enum/"
-readme = "README.md"
+homepage = "https://github.com/taiki-e/io-enum"
+documentation = "https://docs.rs/io-enum"
 keywords = ["io", "derive", "enum"]
 categories = ["rust-patterns"]
-exclude = ["/.travis.yml"]
+readme = "README.md"
+description = """
+#[derive(Read, Write, Seek, BufRead)] for enums.
+"""
 
-[badges]
-# https://github.com/rust-lang/crates.io/issues/1392
-# travis-ci = { repository = "taiki-e/io-enum" }
+[workspace]
 
 [lib]
 proc-macro = true
 
 [features]
-default = []
-# Implements `io::Read::read_vectored` and `io::Write::write_vectored`.
-iovec = []
-# Implements `io::Read::read_initializer`.
-read_initializer = []
 
 [dependencies]
-derive_utils = "^0.6.3"
-quote = "^0.6.8"
-syn = { version = "^0.15.22", features = ["full"] }
-boringssl = "0.0.5"
-
+derive_utils = "0.9"
+quote = "1.0"
+syn = "1.0"

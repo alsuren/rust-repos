@@ -1,6 +1,6 @@
 [package]
 name = "vectool"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Iikka Hauhio <iikka@kaivos.org>"]
 edition = "2018"
 
@@ -10,4 +10,3 @@ regex = "*"
 clap = "*"
 lazy_static = "*"
 nom = "*"
-boringssl = "0.0.5"

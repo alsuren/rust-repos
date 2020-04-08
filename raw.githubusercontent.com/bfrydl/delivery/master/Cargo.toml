@@ -3,3 +3,6 @@ members = [
   "delivery",
   "delivery_cli",
 ]
+
+[profile.release]
+lto = true

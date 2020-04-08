@@ -24,7 +24,6 @@ version = "0.0.0"
 log = "0.3.6"
 threading-support = { git = "https://github.com/lemonrock/threading-support" }
 try-finally = { git = "https://github.com/lemonrock/try-finally" }
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

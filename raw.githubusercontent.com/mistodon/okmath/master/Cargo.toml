@@ -3,9 +3,6 @@ name = "okmath"
 version = "0.1.0"
 authors = ["Claire Harris <claire.harris.000@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.serde]
 version = "~1.0.37"
 optional = true

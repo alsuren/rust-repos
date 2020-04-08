@@ -2,9 +2,9 @@
 name = "csh-bot"
 version = "0.1.0"
 authors = ["Nick Mosher <nicholastmosher@gmail.com>"]
+edition = "2018"
 
 [dependencies]
-actix-web = "0.7.13"
-serde = "1.0.80"
-serde_derive = "1.0.80"
-boringssl = "0.0.5"
+actix-web = "2.0.0"
+actix-rt = "1.0.0"
+serde = { version = "1.0.104", features = ["derive"] }

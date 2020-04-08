@@ -3,6 +3,3 @@ name = "ulp" # the name of the package
 version = "0.1.0"    # the current version, obeying semver
 #build = "main.rs"
 authors = ["you@example.com"]
-
-[dependencies]
-boringssl = "0.0.5"

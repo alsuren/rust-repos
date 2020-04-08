@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 alamo_movies = { git = "https://github.com/spikegrobstein/alamo-movies-rust.git", branch = "make-lib" }
 radarr = { git = "https://github.com/spikegrobstein/radarr-rs" }
-boringssl = "0.0.5"

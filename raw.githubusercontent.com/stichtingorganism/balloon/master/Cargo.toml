@@ -1,14 +1,26 @@
 [package]
 name = "balloon"
-version = "0.0.1"
+version = "0.0.10"
 description = "Balloon Hash with Blake2b"
-authors = ["hello@organism.ai"]
+authors = ["hello@organism.org"]
+edition = "2018"
 license = "Apache-2.0"
 repository = "https://github.com/stichtingorganism/balloon"
 
 [dependencies]
-blake2-rfc = "0.2"
-subtle = "0.7.0"
-num-bigint = "0.2"
+subtle = "2"
+failure = "0.1"
+mohan = "0.0.*"
+num-bigint-dig = { version = "0.4", features = ["rand", "i128", "u64_digit", "serde", "prime"] }
 num-traits = "0.2"
-boringssl = "0.0.5"
+num_cpus = "1.0"
+crossbeam = "0.7"
+
+
+[dev-dependencies]
+criterion = "0.2"
+elapsed = "0.1"
+
+[[bench]]
+name = "balloon_benchmarks"
+harness = false

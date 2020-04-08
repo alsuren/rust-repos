@@ -1,11 +1,44 @@
 [package]
-name = "ts3d"
+name = "wtvr3d"
 version = "0.1.0"
 authors = ["John Tiesselune <tiesse@wtvr.rocks>"]
+edition = "2018"
+
+[features]
+default = []
+debug = ['console_error_panic_hook']
 
 [lib]
 path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-boringssl = "0.0.5"
+js-sys = "0.3.28"
+wasm-bindgen = "0.2.51"
+nalgebra = "0.18.1"
+console_error_panic_hook = { version = "0.1.6", optional = true }
+specs = "0.15.1"
+specs-hierarchy = "0.5.1"
+wtvr3d-file = { git = "https://github.com/wtvr-engine/wtvr3d-file" }
+bincode = "1.2.0"
+
+[dependencies.web-sys]
+version = "0.3.28"
+features = [
+  'Document',
+  'Element',
+  'HtmlCanvasElement',
+  'WebGlBuffer',
+  'WebGlRenderingContext',
+  'WebGlUniformLocation',
+  'WebGlProgram',
+  'WebGlShader',
+  'HtmlImageElement',
+  'WebGlTexture',
+  'Window',
+  'console',
+]
+
+[profile.release]
+lto = true
+opt-level = 's'

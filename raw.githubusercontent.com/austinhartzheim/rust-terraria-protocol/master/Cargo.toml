@@ -3,9 +3,6 @@ name = "terraria-protocol"
 version = "0.0.1"
 authors = ["Austin Hartzheim <inbox@austinhartzheim.me>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.nom]
 version = "^3.2"
 features = ["verbose-errors"]

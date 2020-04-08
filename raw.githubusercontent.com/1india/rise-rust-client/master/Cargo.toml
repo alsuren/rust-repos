@@ -8,6 +8,3 @@ description = "Rust API Client for RISE Blockchain"
 name = "rise_rust_client"
 path = "src/lib.rs"
 doctest = false
-
-[dependencies]
-boringssl = "0.0.5"

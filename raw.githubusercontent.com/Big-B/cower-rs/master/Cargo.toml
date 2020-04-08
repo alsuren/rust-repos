@@ -22,7 +22,6 @@ url            = "*"
 regex          = "*"
 dirs           = "*"
 tempdir        = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "*"

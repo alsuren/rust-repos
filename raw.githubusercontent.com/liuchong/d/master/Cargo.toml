@@ -15,7 +15,7 @@ keywords = ["d", "httpd", "http-server", "http", "server"]
 [dependencies]
 clap = "2.32"
 futures = "0.1"
-futures-fs = { git = "https://github.com/liuchong/futures-fs.git" }
+fs = "0.0.5"
 hyper = "0.12"
 log = "0.4"
 mime_guess = "1.8"
@@ -24,4 +24,3 @@ percent-encoding = "1.0"
 pretty_env_logger = "0.3"
 regex = "1.1"
 tokio-fs = "0.1"
-boringssl = "0.0.5"

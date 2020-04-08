@@ -4,9 +4,6 @@ version = "0.1.0"
 authors = ["lauri <lauri.nomme@gmail.com>"]
 edition = "2018"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.pancurses]
 version = "0.16.0"
 features = ["win32"]
@@ -74,3 +71,15 @@ path = "src/bouncy-curses/main.rs"
 [[bin]]
 name = "l4e2"
 path = "src/l4e2.rs"
+
+[[bin]]
+name = "l4e3"
+path = "src/l4e3.rs"
+
+[[bin]]
+name = "l4e4"
+path = "src/l4e4.rs"
+
+[[bin]]
+name = "l4e5"
+path = "src/l4e5.rs"

@@ -1,22 +1,45 @@
 [package]
 name = "stringsext"
-version = "1.7.0"
+version = "2.3.1"
 authors = ["Jens Getreu <getreu@web.de>"]
 edition = "2018"
+readme = "README.md"
+description = "find multi-byte-encoded strings in binary data"
+license = "MIT/Apache-2.0"
+categories = ["command-line-utilities", "encoding", "text-processing", 
+              "filesystem"]
+documentation = "https://blog.getreu.net/projects/stringsext/stringsext--manpage.html"
+homepage = "https://blog.getreu.net/projects/stringsext/"
+repository = "https://github.com/getreu/stringsext"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-#encoding = { git = "https://github.com/lifthrasiir/rust-encoding" }
-# use nighly itertools with bugfix: Merge pull request #135 (2. Aug. 2016)
-# minimum version is: 0.4.17!
-#itertools = { git = "https://github.com/bluss/rust-itertools" }
-docopt = "*"
-encoding = "*"
-itertools = "*"
-lazy_static = "*"
-memmap = "*"
-rand = "*"
-serde = "*"
-serde_derive = "*"
-scoped_threadpool = "*"
-tempdir = "*"
-boringssl = "0.0.5"
+encoding_rs= "0.8.22"
+lazy_static = "1.4.0"
+serde = "1.0.105"
+serde_derive = "1.0.105"
+itertools = "0.9.0"
+scoped_threadpool = "0.1.9"
+anyhow = "1.0.27"
+clap = "2.33.0"
+structopt = "0.3.12"
+
+# Metadata for debian packages with cargo-deb
+
+[package.metadata.deb]
+maintainer = "Jens Getreu, <getreu@web.de>"
+copyright = "2015-2020, Jens Getreu <getreu@web.de>"
+depends = "$auto"
+extended-description = """\
+stringsext is a Unicode enhancement of the GNU strings tool with additional\
+functionalities: stringsext recognizes Cyrillic, Arabic, CJKV characters and\
+other scripts in all supported multi-byte-encodings, while GNU strings fails\
+in finding any of these scripts in UTF-16 and many other encodings. """
+section = "utilities"
+priority = "optional"
+assets = [
+    ["doc/build/html/index.html", "usr/share/doc/stringsext/", "644"],
+    ["doc/build/man/man1/stringsext.1.gz", "/usr/share/man/man1/", "644"],
+    ["target/release/stringsext", "usr/bin/", "755"]
+]

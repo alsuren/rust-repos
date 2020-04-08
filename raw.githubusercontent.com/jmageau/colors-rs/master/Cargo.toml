@@ -2,10 +2,12 @@
 name = "colors"
 version = "0.1.0"
 authors = ["jmageau <julien.mageau@live.ca>"]
+edition = "2018"
 
 [dependencies]
-image = "*"
-rand = "*"
-time = "*"
-fnv = "*"
-boringssl = "0.0.5"
+image = "0.22"
+rand = "0.7"
+chrono = "0.4"
+fnv = "1.0"
+structopt = "0.2"
+indicatif = "0.11"

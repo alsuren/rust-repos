@@ -1,7 +1,6 @@
 [package]
-
 name = "handlebars"
-version = "2.0.0-beta.2"
+version = "3.1.0-beta.1"
 authors = ["Ning Sun <sunng@pm.me>"]
 description = "Handlebars templating implemented in Rust."
 license = "MIT"
@@ -14,38 +13,41 @@ readme = "README.md"
 edition = "2018"
 
 [lib]
-
 name = "handlebars"
 path = "src/lib.rs"
 
-[dependencies]
+[[bin]]
+name = "handlebars-cli"
+path = "src/cli.rs"
 
-log = { version = "0.4.0", optional = true }
-quick-error = "1.0.0"
+[dependencies]
+log = { version = "0.4.0" }
+quick-error = "1.2.3"
 pest = "2.1.0"
 pest_derive = "2.1.0"
 serde = "1.0.0"
-serde_json = "1.0.0"
-regex = "1.0.3"
-lazy_static = "1.0.0"
+serde_json = "1.0.39"
 walkdir = { version = "2.2.3", optional = true }
-hashbrown = { version = "0.3.0", features = ["serde"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
-env_logger = "0.5.13"
+env_logger = "0.7.1"
 maplit = "1.0.0"
 serde_derive = "1.0.75"
 tempfile = "3.0.0"
+criterion = "0.3"
+pprof = { version = "0.3.13", features = ["flamegraph", "protobuf"] }
 
 [features]
 dir_source = ["walkdir"]
-logging = ["log"]
-
-default = ["dir_source", "logging"]
-
-no_dir_source = ["logging"]
-no_logging = ["dir_source"]
+no_logging = []
+default = []
 
 [badges]
 maintenance = { status = "actively-developed" }
+
+[[bench]]
+name = "bench"
+harness = false
+
+[package.metadata.docs.rs]
+all-features = true

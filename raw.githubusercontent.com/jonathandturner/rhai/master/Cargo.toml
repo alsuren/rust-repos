@@ -1,20 +1,64 @@
 [package]
 name = "rhai"
-version = "0.9.0"
-authors = ["Jonathan Turner", "Lukáš Hozda"]
+version = "0.11.0"
+edition = "2018"
+authors = ["Jonathan Turner", "Lukáš Hozda", "Stephen Chung"]
 description = "Embedded scripting for Rust"
 homepage = "https://github.com/jonathandturner/rhai"
 repository = "https://github.com/jonathandturner/rhai"
 readme = "README.md"
-license = "MIT/Apache-2.0"
+license = "MIT OR Apache-2.0"
 include = [
     "**/*.rs",
     "scripts/*.rhai",
     "Cargo.toml"
 ]
-
-[features]
-debug_msgs = []
+keywords = [ "scripting" ]
+categories = [ "no-std", "embedded", "parser-implementations" ]
 
 [dependencies]
-boringssl = "0.0.5"
+num-traits = "*"
+
+[features]
+#default = ["no_function", "no_index", "no_object", "no_float", "only_i32", "no_stdlib", "unchecked", "no_optimize", "sync"]
+default = []
+unchecked = []      # unchecked arithmetic
+no_stdlib = []      # no standard library of utility functions
+no_index = []       # no arrays and indexing
+no_float = []       # no floating-point
+no_function = []    # no script-defined functions
+no_object = []      # no custom objects
+no_optimize = []    # no script optimizer
+optimize_full = []  # set optimization level to Full (default is Simple) - this is a feature used only to simplify testing
+only_i32 = []       # set INT=i32 (useful for 32-bit systems)
+only_i64 = []       # set INT=i64 (default) and disable support for all other integer types
+sync = []           # restrict to only types that implement Send + Sync
+
+# compiling for no-std
+no_std = [ "num-traits/libm", "hashbrown", "core-error", "libm" ]
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+#opt-level = "z"     # optimize for size
+#panic = 'abort'     # remove stack backtrace for no-std
+
+[dependencies.libm]
+version = "*"
+optional = true
+
+[dependencies.core-error]
+version = "*"
+features = ["alloc"]
+optional = true
+
+[dependencies.hashbrown]
+version = "*"
+default-features = false
+features = ["ahash", "nightly", "inline-more"]
+optional = true
+
+[dependencies.ahash]
+version = "*"
+default-features = false
+optional = true

@@ -15,6 +15,3 @@ nightly = ["coerce-unsized", "exact-size-is-empty"]
 coerce-unsized = []
 exact-size-is-empty = []
 std = []
-
-[dependencies]
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "sgf-parser"
-version = "1.0.0"
+version = "2.4.0"
 authors = ["Michael A. Plikk <michael@plikk.com>"]
 edition = "2018"
 license = "MIT"
@@ -11,7 +11,6 @@ readme = "README.md"
 keywords = ["parser", "sgf", "go", "baduk", "weiqi"]
 
 [dependencies]
-pest = "2.1.0"
-pest_derive = "2.1.0"
-derive_more = "0.14.0"
-boringssl = "0.0.5"
+pest = "^2.1.0"
+pest_derive = "^2.1.0"
+derive_more = "^0.99.2"

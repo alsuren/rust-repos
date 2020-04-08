@@ -1,40 +1,27 @@
 [package]
 name = "chromaprint_sys"
-description = "Low level bindings to Chromaprint"
-
-documentation = "https://github.com/acoustid/chromaprint"
-homepage = "https://acoustid.org/chromaprint"
-repository = "https://github.com/bemeurer/chromaprint_sys"
-
-readme = "./README.md"
-
-keywords = ["chromaprint", "bindings", "sys", "bindgen", "audio"]
-categories = ["encoding", "external-ffi-bindings", "multimedia::audio", "multimedia"]
-
-license = "BSD-3-Clause"
-license_file = "./LICENSE"
-
-version = "1.0.1"
 authors = ["Bernardo Meurer <meurerbernardo@gmail.com>"]
-edition = "2018"
-build = "build.rs"
+version = "0.2.0"
 
-[badges]
-travis-ci = { repository = "bemeurer/chromaprint_sys" }
-maintenance = { status = "passively-maintained" }
+categories = ["encoding", "external-ffi-bindings", "multimedia::audio", "multimedia"]
+description = "Low level bindings to Chromaprint"
+documentation = "https://github.com/acoustid/chromaprint"
+edition = "2018"
+homepage = "https://acoustid.org/chromaprint"
+keywords = ["chromaprint", "bindings", "sys", "bindgen", "audio"]
+license = "BSD-3-Clause"
+readme = "./README.md"
+repository = "https://github.com/lovesegfault/chromaprint_sys"
 
 [features]
-default = ["dynamic"]
-dynamic = ["metadeps"]
-static = ["cmake"]
-
-[package.metadata.pkg-config]
-libchromaprint = "1.1"
+default = []
+vendor = ["cmake"]
 
 [build-dependencies]
-bindgen = "0.47.1"
-cmake = { version="0.1", optional=true  }
-metadeps = { version="1.1.2", optional=true }
+bindgen = "0.53.2"
+cmake = { version = "0.1.42", optional = true }
+pkg-config = "0.3.17"
 
-[dependencies]
-boringssl = "0.0.5"
+[dev-dependencies]
+rand = "0.7.3"
+rand_chacha = "0.2.2"

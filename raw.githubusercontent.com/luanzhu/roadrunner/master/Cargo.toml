@@ -25,7 +25,6 @@ serde_derive="1.0"
 flate2 = "0.2.19"
 encoding = "0.2.32"
 mime = "0.3"
-boringssl = "0.0.5"
 [dev-dependencies]
 base64 = "~0.5.0"
 env_logger = "0.4.2"

@@ -6,7 +6,6 @@ license = "MPL-2.0"
 
 [dependencies]
 mime = "0.3"
-boringssl = "0.0.5"
 
 # dependencies taken from clipboard-rust
 # [target.'cfg(windows)'.dependencies]

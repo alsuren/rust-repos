@@ -1,8 +1,8 @@
 [package]
 name = "orion"
-version = "0.14.1"
+version = "0.15.1" # Update html_root_url in lib.rs along with this.
 authors = ["brycx <brycx@protonmail.com>"]
-description = "Easy and usable rust crypto"
+description = "Usable, easy and safe pure-Rust crypto"
 keywords = [ "cryptography", "crypto", "aead", "hash", "mac" ]
 categories = [ "cryptography", "no-std" ]
 edition = "2018"
@@ -13,32 +13,43 @@ license = "MIT"
 exclude = [
     ".gitignore",
     ".travis.yml",
-    "benches/*",
     "tests/*"
 ]
 
 [dependencies]
-subtle = { version = "2.1.0", default-features = false }
-zeroize = { version = "0.8.0", default-features = false }
-getrandom = { version = "0.1.2", optional = true }
-boringssl = "0.0.5"
+subtle = { version = "^2.2.2", default-features = false }
+zeroize = { version = "1.1.0", default-features = false }
+getrandom = { version = "0.1.12", optional = true }
+base64 = { version = "0.12.0", optional = true }
 
 [features]
 default = [ "safe_api" ]
-safe_api = [ "getrandom" ]
-nightly = [ "subtle/nightly", "safe_api" ]
-no_std = [ "subtle/nightly" ]
+safe_api = [ "getrandom", "base64" ]
 
 [dev-dependencies]
-hex = "0.3.2"
-serde_json = "1.0.39"
-quickcheck = "0.8.2"
+hex = "0.4.0"
+serde_json = "1.0.41"
+quickcheck = "0.9.0"
+criterion = "0.3.0"
 
-[profile.dev]
-opt-level = 1
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.bench]
+opt-level = 3
+debug = false
+lto = true
+debug-assertions = false
 
 [profile.release]
 opt-level = 3
+debug = false
+lto = true
+debug-assertions = false
+
+[profile.dev]
+opt-level = 1
 
 [badges]
 travis-ci = { repository = "brycx/orion", branch = "crates-published" }

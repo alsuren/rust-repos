@@ -14,4 +14,3 @@ imgui-gfx-renderer = { version = "0.0.19-pre", git = "https://github.com/Gekkio/
 imgui-glium-renderer = { version = "0.0.19-pre", git = "https://github.com/Gekkio/imgui-rs" }
 imgui-sys = { version = "0.0.19-pre", git = "https://github.com/Gekkio/imgui-rs", features = ["gfx", "glium"] }
 meval = "0.1.0"
-boringssl = "0.0.5"

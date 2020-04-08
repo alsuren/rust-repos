@@ -2,6 +2,7 @@
 name = "time_game"
 version = "0.1.0"
 authors = ["Roger Curley <rocurley@gmail.com>"]
+edition = "2018"
 
 [[bin]]
 name = "time_game"
@@ -12,8 +13,12 @@ name = "time_game_lib"
 path = "src/lib.rs"
 
 [dependencies]
-ggez = "0.4"
+ggez = "0.5"
 rand = "0.4.1"
 proptest = "0.9"
 petgraph = "0.4.13"
-boringssl = "0.0.5"
+slotmap = "0.4.0"
+derivative = "1.0.3"
+objekt = "0.1.2"
+enum-map = "0.6.1"
+enumset = "0.4.4"

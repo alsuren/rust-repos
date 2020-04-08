@@ -1,6 +1,6 @@
 [package]
 name = "address-formatter"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["antoine-de <antoine.desbordes@gmail.com>"]
 edition = "2018"
 license = "AGPL-3.0"
@@ -25,7 +25,6 @@ strum = "0.15"
 strum_macros = "0.15"
 enum-map = { version = "0.5", features = ["serde"] }
 env_logger = "0.6"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 maplit = "1.0.1"

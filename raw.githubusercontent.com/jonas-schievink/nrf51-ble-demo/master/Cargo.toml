@@ -1,8 +1,9 @@
 [workspace]
 members = [
     "rubble",
-    "rubble-nrf52",
-    "rubble-demo",
+    "rubble-nrf5x",
+    "rubble-docs",
+    "demos/*/",
 ]
 
 [profile.dev]

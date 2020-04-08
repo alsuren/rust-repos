@@ -1,6 +1,6 @@
 [package]
 name = "bc4py_extention"
-version = "0.1.3"
+version = "0.1.7"
 authors = ["namuyan <thhjuuATyahoo.co.jp>"]
 edition = "2018"
 
@@ -10,11 +10,11 @@ crate-type = ["cdylib"]
 
 [dependencies]
 blake2b_simd = "0.4.1"
+sha2 = "0.8.0"
 etcommon-bigint = "0.2.10"
-workerpool = "1.2.0"
+threadpool = "1.7.1"
 regex = "1"
 bech32 = "0.6"
-boringssl = "0.0.5"
 
 [dependencies.bc4py_plotter]
 # path = "../bc4py_plotter"  # for debug
@@ -23,5 +23,5 @@ branch = "master"
 version = "0.1.4"
 
 [dependencies.pyo3]
-version = "0.6.0-alpha.4"
+version = "0.9.0"
 features = ["extension-module"]

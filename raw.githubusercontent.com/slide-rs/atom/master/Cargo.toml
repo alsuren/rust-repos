@@ -5,6 +5,3 @@ authors = ["Colin Sherratt <colin.sherratt@gmail.com>"]
 license = "Apache-2.0"
 homepage = "https://github.com/slide-rs/atom"
 description = "A safe abstraction around AtomicPtr"
-
-[dependencies]
-boringssl = "0.0.5"

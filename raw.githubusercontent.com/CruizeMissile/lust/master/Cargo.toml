@@ -5,4 +5,7 @@ authors = ["James Simpson <james.simpson9339@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+lust_core = { path = "lust/core" }
+lust_error = { path = "lust/error" }
+lust_window = { path = "lust/window" }
+failure = "0.1.5"

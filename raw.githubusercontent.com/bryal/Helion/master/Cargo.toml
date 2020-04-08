@@ -1,9 +1,14 @@
-
 [package]
 name = "helion"
-version = "0.3.2"
-authors = ["bryal <96.bryal@gmail.com>"]
+version = "0.5.0"
+authors = ["jojo <jo@jo.zone>"]
+description = "Ambilight clone. Stream color data of captured screen to Adalight device."
+repository = "https://github.com/bryal/Helion"
+readme = "README.md"
+keywords = ["ambilight", "adalight", "hyperion", "arduino", "light"]
+license = "AGPL-3.0"
 build = "build.rs"
+edition = "2018"
 
 [features]
 profiling = ["cpuprofiler"]
@@ -12,11 +17,9 @@ profiling = ["cpuprofiler"]
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
-captrs = "0.2"
+captrs = "0.3.0"
 clock_ticks = "0.1.0"
 serial = "0.3"
-simd = "0.2"
 
 # Optional dependencies
 cpuprofiler = { version = "0.0.3", optional = true }
-boringssl = "0.0.5"

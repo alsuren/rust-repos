@@ -7,7 +7,6 @@ version = "0.1.0"
 bytes = "*"
 nom = "*"
 tokio = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 futures = "*"

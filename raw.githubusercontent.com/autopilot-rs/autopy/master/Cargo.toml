@@ -8,21 +8,18 @@ authors = ["Michael Sanders <michael.sanders@fastmail.com>"]
 crate-type = ["cdylib"]
 name = "autopy"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.autopilot]
-version = "0.2.0"
+version = "0.4.0"
 
 [dependencies.pyo3]
 version = "0.6.0"
 default-features = false
 
 [dependencies.image]
-version = "0.21.1"
+version = "0.22.4"
 
 [dependencies.either]
 version = "1.5.0"
 
 [dependencies.libc]
-version = "0.2.54"
+version = "0.2.66"

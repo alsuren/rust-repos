@@ -7,4 +7,3 @@ authors = ["Samuel Sleight <samuel.sleight@gmail.com>"]
 diesel = { version = "1.2.2", features = ["chrono", "postgres"] }
 dotenv = "0.11.0"
 chrono = "0.4.2"
-boringssl = "0.0.5"

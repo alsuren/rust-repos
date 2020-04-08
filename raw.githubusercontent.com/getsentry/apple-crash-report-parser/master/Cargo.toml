@@ -1,6 +1,6 @@
 [package]
 name = "apple-crash-report-parser"
-version = "0.3.0"
+version = "0.4.0"
 authors = ["Armin Ronacher <armin.ronacher@active-4.com>", "Sentry <hello@sentry.io>"]
 keywords = ["apple", "crashreport"]
 license = "Apache-2.0"
@@ -23,11 +23,10 @@ with_serde = ["uuid/serde", "chrono/serde", "serde"]
 [dependencies]
 regex = "1.1.0"
 lazy_static = "1.2.0"
-uuid = { version = "0.7.1" }
+uuid = { version = "0.8.1" }
 chrono = { version = "0.4.6" }
 serde = { version = "1.0.84", features = ["derive"], package = "serde", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0.34"
-insta = "0.5.2"
+insta = "0.15.0"

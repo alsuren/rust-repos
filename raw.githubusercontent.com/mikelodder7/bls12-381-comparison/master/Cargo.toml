@@ -10,7 +10,6 @@ oldrand = { version = "0.4.2", package = "rand"}
 amcl = { version = "0.2.0", features = ["bls381"] }
 blake2 = "0.8.0"
 clap = "2.33.0"
-boringssl = "0.0.5"
 
 [dependencies.pairing]
 git = "https://github.com/mmaker/pairing"

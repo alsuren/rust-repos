@@ -1,22 +1,24 @@
 [package]
 name = "arch-audit"
-version = "0.1.10"
-authors = ["Andrea Scarpino <me@andreascarpino.it>"]
-description = "An utility like pkg-audit for Arch Linux based on Arch Security Team data"
+version = "0.1.15"
+authors = ["Andrea Scarpino <andrea@scarpino.dev>"]
+description = "A utility like pkg-audit for Arch Linux based on Arch Security Team data"
 repository = "https://gitlab.com/ilpianista/arch-audit"
 license = "MIT"
 readme = "README.md"
 keywords = ["archlinux", "security"]
+edition = "2018"
 
 [[bin]]
 name = "arch-audit"
 
 [dependencies]
-alpm = "^0.4"
+alpm = "^0.9"
+atty = "^0.2"
 clap = {version = "^2", features = ["yaml"]}
 curl = "^0.4"
-env_logger = "^0.6"
-itertools = "^0.7"
+env_logger = "^0.7"
+itertools = "^0.8"
 log = "^0.4"
 serde_json = "^1.0"
-boringssl = "0.0.5"
+term = "^0.6"

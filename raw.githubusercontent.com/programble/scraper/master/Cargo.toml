@@ -1,6 +1,7 @@
 [package]
 name = "scraper"
-version = "0.10.0"
+version = "0.11.0"
+edition = "2018"
 
 description = "HTML parsing and querying with CSS selectors"
 keywords = ["html", "css", "selector", "scraping"]
@@ -15,14 +16,13 @@ repository = "https://github.com/programble/scraper"
 readme = "README.md"
 
 [dependencies]
-cssparser = "0.25.3"
-ego-tree = "0.6.0"
-html5ever = "0.22.0"
+cssparser = "0.27"
+ego-tree = "0.6"
+html5ever = "0.25.1"
 matches = "0.1.6"
-selectors = "0.21.0"
-smallvec = "0.6.0"
-tendril = "0.4.0"
-boringssl = "0.0.5"
+selectors = "0.22"
+smallvec = "1"
+tendril = "0.4"
 
 [dependencies.getopts]
 version = "0.2.18"

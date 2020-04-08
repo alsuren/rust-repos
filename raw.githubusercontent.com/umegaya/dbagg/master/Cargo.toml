@@ -17,7 +17,6 @@ open = "*"
 time = "*"
 regex = "0.1"
 openssl = { version = "0.7.3", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = ["with_syntex", "openssl", "postgres/openssl"]

@@ -1,8 +1,9 @@
 [package]
 name = "winit"
-version = "0.19.1"
+version = "0.22.0"
 authors = ["The winit contributors", "Pierre Krieger <pierre.krieger1708@gmail.com>"]
 description = "Cross-platform window creation library."
+edition = "2018"
 keywords = ["windowing"]
 license = "Apache-2.0"
 readme = "README.md"
@@ -11,18 +12,24 @@ documentation = "https://docs.rs/winit"
 categories = ["gui"]
 
 [package.metadata.docs.rs]
-features = ["icon_loading", "serde"]
+features = ["serde"]
 
 [features]
-icon_loading = ["image"]
+web-sys = ["web_sys", "wasm-bindgen", "instant/wasm-bindgen"]
+stdweb = ["std_web", "instant/stdweb"]
 
 [dependencies]
+instant = "0.1"
 lazy_static = "1"
-libc = "0.2"
+libc = "0.2.64"
 log = "0.4"
-image = { version = "0.21", optional = true }
 serde = { version = "1", optional = true, features = ["serde_derive"] }
-boringssl = "0.0.5"
+raw-window-handle = "0.3"
+bitflags = "1"
+
+[dev-dependencies]
+image = "0.23"
+simple_logger = "1"
 
 [target.'cfg(target_os = "android")'.dependencies.android_glue]
 version = "0.2"
@@ -31,19 +38,22 @@ version = "0.2"
 objc = "0.2.3"
 
 [target.'cfg(target_os = "macos")'.dependencies]
-objc = "0.2.3"
-cocoa = "0.18.4"
+cocoa = "0.19.1"
 core-foundation = "0.6"
 core-graphics = "0.17.3"
+dispatch = "0.2.0"
+objc = "0.2.6"
 
-[target.'cfg(target_os = "windows")'.dependencies]
-backtrace = "0.3"
-bitflags = "1"
+[target.'cfg(target_os = "macos")'.dependencies.core-video-sys]
+version = "0.1.3"
+default_features = false
+features = ["display_link"]
 
 [target.'cfg(target_os = "windows")'.dependencies.winapi]
 version = "0.3.6"
 features = [
     "combaseapi",
+    "commctrl",
     "dwmapi",
     "errhandlingapi",
     "hidusage",
@@ -64,8 +74,51 @@ features = [
 ]
 
 [target.'cfg(any(target_os = "linux", target_os = "dragonfly", target_os = "freebsd", target_os = "openbsd", target_os = "netbsd"))'.dependencies]
-wayland-client = { version = "0.21", features = [ "dlopen", "egl", "cursor"] }
-smithay-client-toolkit = "0.4.3"
-x11-dl = "2.18.3"
-parking_lot = "0.8"
-percent-encoding = "1.0"
+wayland-client = { version = "0.23.0", features = [ "dlopen", "egl", "cursor", "eventloop"] }
+mio = "0.6"
+mio-extras = "2.0"
+smithay-client-toolkit = "^0.6.6"
+x11-dl = "2.18.5"
+percent-encoding = "2.0"
+
+[target.'cfg(any(target_os = "linux", target_os = "dragonfly", target_os = "freebsd", target_os = "openbsd", target_os = "netbsd", target_os = "windows"))'.dependencies.parking_lot]
+version = "0.10"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies.web_sys]
+package = "web-sys"
+version = "0.3.22"
+optional = true
+features = [
+    'console',
+    'CssStyleDeclaration',
+    'BeforeUnloadEvent',
+    'Document',
+    'DomRect',
+    'Element',
+    'Event',
+    'EventTarget',
+    'FocusEvent',
+    'HtmlCanvasElement',
+    'HtmlElement',
+    'KeyboardEvent',
+    'MediaQueryList',
+    'MediaQueryListEvent',
+    'MouseEvent',
+    'Node',
+    'PointerEvent',
+    'Window',
+    'WheelEvent'
+]
+
+[target.'cfg(target_arch = "wasm32")'.dependencies.wasm-bindgen]
+version = "0.2.45"
+optional = true
+
+[target.'cfg(target_arch = "wasm32")'.dependencies.std_web]
+package = "stdweb"
+version = "=0.4.20"
+optional = true
+features = ["experimental_features_which_may_break_on_minor_version_bumps"]
+
+[target.'cfg(target_arch = "wasm32")'.dev-dependencies]
+console_log = "0.1"

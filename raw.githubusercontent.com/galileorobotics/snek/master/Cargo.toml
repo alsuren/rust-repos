@@ -1,9 +1,0 @@
-[package]
-name = "snek"
-version = "0.1.0"
-authors = ["GalileoRobotics <info@galileorobotics.ch>"]
-edition = "2018"
-
-[dependencies]
-termion = "1.5.1"
-boringssl = "0.0.5"

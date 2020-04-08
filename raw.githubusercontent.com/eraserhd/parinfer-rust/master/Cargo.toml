@@ -1,6 +1,6 @@
 [package]
 name = "parinfer_rust"
-version = "0.2.0"
+version = "0.4.3"
 authors = ["Jason Felice <jason.m.felice@gmail.com>"]
 
 [lib]
@@ -13,12 +13,12 @@ path =  "src/main.rs"
 [dependencies]
 getopts = "0.2"
 libc = "0.2.39"
+emacs = "0.11.0"
 serde = "1.0"
 serde_json = "1.0"
 serde_derive = "1.0"
 unicode-segmentation = "1.1.0"
 unicode-width = "0.1.5"
-boringssl = "0.0.5"
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 stdweb = "0.4.4"

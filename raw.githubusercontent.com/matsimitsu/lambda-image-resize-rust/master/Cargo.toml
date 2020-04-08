@@ -14,7 +14,6 @@ aws_lambda_events = "^0.2.0"
 rust-s3 = "0.10.0"
 image= "*"
 rayon = "1.0"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "bootstrap"

@@ -4,20 +4,34 @@ version = "0.0.1"
 authors = ["Yasuhiro Яша Asaka <yasuhiro.asaka@grauwoelfchen.net>"]
 description = "A command line interface for Eloquentlog."
 repository = "https://gitlab.com/eloquentlog/eloquentlog-cli"
+edition = "2018"
 keywords = []
 license = "GPL-3.0"
 
+[lib]
+name = "libeloquentlog"
+path = "src/lib.rs"
+
 [[bin]]
-name = "el"
-path = "src/main.rs"
+name = "eloquentlog"
+path = "src/bin/eloquentlog.rs"
+
+[[test]]
+name = "integration"
+path = "test/test.rs"
 
 [profile.release]
 panic = "abort"
 
 [dependencies]
-clippy = { version = "^0.0.212", optional = true }
-structopt = { version = "0.2.10", default-features = false }
-boringssl = "0.0.5"
+dirs = "2.0"
+reqwest = "0.9"
+serde = { version = "1.0", features = ["derive"] }
+structopt = { version = "0.3", default-features = false }
+toml = "0.5"
+
+[dev-dependencies]
+mockito = "0.22"
 
 [dev-dependencies.cargo-husky]
 version = "1"

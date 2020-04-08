@@ -1,44 +1,104 @@
+[workspace]
+
 [package]
 name = "amadeus"
-version = "0.1.1"
+version = "0.1.6"
 license = "Apache-2.0"
 authors = ["Alec Mocatta <alec@mocatta.net>"]
-categories = ["concurrency","science"]
-keywords = ["constellation","distributed","data-science"]
+categories = ["concurrency", "science", "database", "parser-implementations", "text-processing"]
+keywords = ["constellation", "distributed", "data-science", "data", "logs"]
 description = """
-Harmonious distributed data analysis in Rust.
+Harmonious distributed data processing & analysis in Rust.
+
+parquet postgres aws s3 cloudfront elb json csv logs hadoop hdfs arrow common crawl
 """
 repository = "https://github.com/alecmocatta/amadeus"
 homepage = "https://github.com/alecmocatta/amadeus"
-documentation = "https://docs.rs/amadeus/0.1.1"
+documentation = "https://docs.rs/amadeus/0.1.6"
 readme = "README.md"
+edition = "2018"
 
 [badges]
-# appveyor = { repository = "alecmocatta/amadeus" }
-circle-ci = { repository = "alecmocatta/amadeus" }
-#gitlab = { repository = "alecmocatta/amadeus" }
-travis-ci = { repository = "alecmocatta/amadeus" }
-
+azure-devops = { project = "alecmocatta/amadeus", pipeline = "tests" }
 maintenance = { status = "actively-developed" }
 
+[features]
+constellation = ["constellation-rs"]
+aws = ["amadeus-aws"]
+commoncrawl = ["amadeus-commoncrawl"]
+parquet = ["amadeus-parquet", "amadeus-derive/parquet"]
+postgres = ["amadeus-postgres", "amadeus-derive/postgres"]
+csv = ["amadeus-serde", "amadeus-derive/serde"]
+json = ["amadeus-serde", "amadeus-derive/serde"]
+# "doc" works around https://github.com/rust-lang/rust/issues/58011
+doc = ["amadeus-aws/doc", "amadeus-commoncrawl/doc", "amadeus-postgres/doc", "amadeus-serde/doc"] # "amadeus-parquet/doc" when https://github.com/rust-lang/cargo/issues/3494 is resolved
+
+[package.metadata.docs.rs]
+features = ["doc", "constellation", "aws", "commoncrawl", "postgres", "csv", "json"]
+
 [dependencies]
-serde_derive = "1.0"
-serde = "1.0"
-rand = "0.5"
-either = "1.5"
-serde_closure = { version = "0.1" } #, path = "../serde_closure" }
-serde_traitobject = { version = "0.1.2" } #, path = "../serde_traitobject" }
-constellation-rs = { version = "0.1", git = "https://github.com/alecmocatta/constellation.git" } #, path = "../constellation" }
-streaming_algorithms = { version = "0.1" } #, path = "../streaming_algorithms" }
-boringssl = "0.0.5"
+amadeus-core = { version = "=0.1.6", path = "amadeus-core" }
+amadeus-derive = { version = "=0.1.6", path = "amadeus-derive" }
+amadeus-types = { version = "=0.1.6", path = "amadeus-types" }
+amadeus-aws = { version = "=0.1.6", path = "amadeus-aws", optional = true }
+amadeus-commoncrawl = { version = "=0.1.6", path = "amadeus-commoncrawl", optional = true }
+amadeus-parquet = { version = "=0.1.6", path = "amadeus-parquet", optional = true }
+amadeus-postgres = { version = "=0.1.6", path = "amadeus-postgres", optional = true }
+amadeus-serde = { version = "=0.1.6", path = "amadeus-serde", optional = true }
+constellation-rs = { version = "0.1", default-features = false, optional = true }
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_closure = "0.2"
+serde_traitobject = "0.2"
 
 [dev-dependencies]
-reqwest = "0.8"
-reqwest_resume = "0.1"
-select = "0.4"
-flate2 = "1.0"
-nom = "2.2"
-warc_parser = { git = "https://github.com/alecmocatta/warc_nom_parser" }
+either = { version = "1.5", features = ["serde"] }
+rand = "0.7"
+streaming_algorithms = "0.1"
 
-[profile.release]
-debug = 2
+[[example]]
+name = "common_crawl"
+required-features = ["commoncrawl", "constellation"]
+
+[[test]]
+name = "into_dist_iter"
+harness = false
+
+[[test]]
+name = "panic"
+harness = false
+
+[[test]]
+name = "threads"
+harness = false
+
+[[test]]
+name = "cloudfront"
+harness = false
+required-features = ["aws"]
+
+[[test]]
+name = "commoncrawl"
+harness = false
+required-features = ["commoncrawl"]
+
+[[test]]
+name = "parquet"
+harness = false
+required-features = ["parquet"]
+
+[[test]]
+name = "csv"
+harness = false
+required-features = ["csv"]
+
+[[test]]
+name = "json"
+harness = false
+required-features = ["json"]
+
+[[test]]
+name = "postgres"
+harness = false
+required-features = ["postgres"]
+test = false # TODO set up postgres on CI

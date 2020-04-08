@@ -11,6 +11,3 @@ repository = "https://github.com/SkylerLipthay/interpolate_idents"
 [lib]
 name = "interpolate_idents"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

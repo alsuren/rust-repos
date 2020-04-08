@@ -8,7 +8,7 @@ authors = [
 ]
 keywords = ["gamedev", "competition", "piston"]
 description = "Server software for Pluto, the Rust gamedev competition"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/PistonDevelopers/redox.git"
 homepage = "https://github.com/PistonDevelopers/redox"
 
@@ -26,4 +26,3 @@ router = "0.1.0"
 logger = "0.0.3"
 handlebars-iron = "0.15.1"
 rustc-serialize = "0.3.16"
-boringssl = "0.0.5"

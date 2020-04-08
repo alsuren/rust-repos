@@ -1,11 +1,13 @@
 [package]
 name = "microphaser"
-version = "0.1.0"
-authors = ["Johannes Köster <johannes.koester@tu-dortmund.de>"]
+version = "0.1.1"
+authors = ["Jan Forster <jan.forster@uk-essen.de>", "Johannes Köster <johannes.koester@tu-dortmund.de>"]
+edition = "2018"
 
 [dependencies]
-bio = "0.16"
-rust-htslib = "0.21"
+bio = "0.30"
+rust-htslib = "0.26"
+bio-types = "0.5"
 clap = { version = "2.27", features = ["yaml", "color", "suggestions"]}
 itertools = "0.6"
 log = "0.4"
@@ -19,4 +21,4 @@ hyper = "0.10"
 flate2 = "0.2"
 http = "0.1"
 env_logger = "0.5"
-boringssl = "0.0.5"
+bincode = "1"

@@ -12,7 +12,6 @@ gio = "^0"
 glib = "^0"
 
 crossbeam-utils = "^0.6"
-boringssl = "0.0.5"
 
 [features]
 default = ["gtk_3_22_30"]

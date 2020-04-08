@@ -1,12 +1,12 @@
 [package]
 name = "http-test-server"
-version = "1.0.0"
+version = "2.0.0"
 authors = ["Vinicius Gerevini <viniciusgerevini@gmail.com>"]
 readme = "README.md"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/viniciusgerevini/http-test-server"
 description = "Programatically create resources and pre-defined responses for tests"
-keywords = ["http", "test", "server", "stream"]
+keywords = ["http", "test", "testing", "mock", "server", "stream"]
 
 [dependencies]
-boringssl = "0.0.5"
+regex = "1"

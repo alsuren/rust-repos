@@ -6,6 +6,3 @@ description= "A tiny macro that implements a ternary operator for Rust"
 license = "MIT/X11"
 keywords = ["ternary", "operator", "inline", "if"]
 documentation = "https://docs.rs/ternop/1.0.0/ternop/"
-
-[dependencies]
-boringssl = "0.0.5"

@@ -27,6 +27,3 @@ path = "src/test/conditionals_and_loops.rs"
 [[bin]]
 name = "vectors"
 path = "src/test/vectors.rs"
-
-[dependencies]
-boringssl = "0.0.5"

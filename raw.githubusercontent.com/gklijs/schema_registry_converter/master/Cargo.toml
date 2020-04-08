@@ -1,6 +1,6 @@
 [package]
 name = "schema_registry_converter"
-version = "1.0.0"
+version = "2.0.0"
 authors = ["Gerard Klijs <g.klijs@gmail.com>"]
 include = ["src/**/*", "Cargo.toml"]
 description = "Encode/decode data from/to kafka using the Confluent Schema Registry"
@@ -16,9 +16,6 @@ edition = "2018"
 default = []
 kafka_test = []
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.avro-rs]
 version = ">= 0.6"
 
@@ -28,13 +25,23 @@ version = ">= 1.0"
 [dependencies.curl]
 version = ">= 0.4"
 
+[dependencies.failure]
+version = ">= 0.1.6"
+
+[dependencies.serde]
+version = "1.0"
+features = ["derive"]
+
 [dependencies.serde_json]
 version = ">=0.8.0, <2.0"
 
+[dependencies.url]
+version = ">= 2.1.1"
+
 [dev-dependencies]
-mockito = "0.16.0"
-rdkafka = "0.20.0"
-futures = "^0.1.25"
+mockito = "0.23.3"
+rdkafka = { version = "0.23", features = ["cmake-build"] }
+futures = "^0.3.1"
 rand = "0.6.5"
 
 [badges.travis-ci]

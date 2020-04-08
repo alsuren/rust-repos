@@ -15,7 +15,6 @@ travis-ci = { repository = "tcmal/rust-bsp", branch = "master" }
 maintenance = {status = "passively-maintained"}
 
 [dependencies]
-bitflags = "1.0"
-bit-vec = "0.5.1"
-nalgebra = "0.18.0"
-boringssl = "0.0.5"
+bitflags = "^1.2"
+bit-vec = "^0.6"
+nalgebra = "^0.20"

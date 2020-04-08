@@ -1,6 +1,6 @@
 [package]
 name = "dkregistry"
-version = "0.3.0-alpha.0"
+version = "0.4.0-alpha.0"
 authors = ["Luca Bruno <lucab@debian.org>", "Stefan Junker <sjunker@redhat.com>"]
 license = "MIT/Apache-2.0"
 documentation = "https://docs.rs/dkregistry"
@@ -11,39 +11,7 @@ exclude = [
 ".gitignore",
 ".travis.yml",
 ]
-
-[dependencies]
-base64 = "0.10"
-error-chain = { version = "0.12", default-features = false }
-futures = "0.1"
-http = "0.1"
-libflate = "0.1"
-log = "0.4"
-mime = "0.3"
-mockito = { version = "0.17", optional = true }
-regex = "^1.1.0"
-serde = "1"
-serde_derive = "1"
-serde_json = "1"
-strum = "0.15"
-strum_macros = "0.15"
-tar = "0.4"
-tokio = "0.1"
-dirs = "2.0"
-reqwest = { version = "^0.9.6", default-features = false }
-sha2 = "^0.8.0"
-boringssl = "0.0.5"
-
-[dev-dependencies]
-env_logger = "0.6"
-spectral = "0.6"
-
-[features]
-default = ["reqwest-default-tls"]
-reqwest-default-tls = ["reqwest/default-tls"]
-reqwest-rustls = ["reqwest/rustls-tls"]
-test-net = []
-test-mock = ["mockito"]
+edition = "2018"
 
 [package.metadata.release]
 sign-commit = true
@@ -51,4 +19,39 @@ upload-doc = false
 disable-publish = true
 disable-push = true
 pre-release-commit-message = "cargo: dkregistry release {{version}}"
-pro-release-commit-message = "cargo: version bump to {{version}}"
+pro-release-commit-message = "cargo: development version bump"
+tag-prefix = ""
+
+[dependencies]
+base64 = "0.12"
+error-chain = { version = "0.12", default-features = false }
+futures = "0.3"
+http = "0.2"
+libflate = "0.1"
+log = "0.4"
+mime = "0.3"
+regex = "^1.1.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+strum = "0.17"
+strum_macros = "0.17"
+tar = "0.4"
+tokio = "0.2"
+reqwest = { version = "0.10", default-features = false, features = ["json"] }
+sha2 = "^0.8.0"
+async-stream = "0.2"
+
+[dev-dependencies]
+dirs = "2.0"
+env_logger = "0.7"
+mockito = "0.23"
+spectral = "0.6"
+tokio = { version = "0.2", features = ["macros"] }
+
+[features]
+default = ["reqwest-default-tls"]
+reqwest-default-tls = ["reqwest/default-tls"]
+reqwest-rustls = ["reqwest/rustls-tls"]
+test-net = []
+test-net-private = []
+test-mock = []

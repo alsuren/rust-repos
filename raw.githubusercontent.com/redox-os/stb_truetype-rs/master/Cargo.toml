@@ -1,6 +1,6 @@
 [package]
 name = "stb_truetype"
-version = "0.2.6"
+version = "0.3.1"
 authors = ["Dylan Ede <dylanede@googlemail.com>", "Alex Butler <alexheretic@gmail.com>"]
 edition = "2018"
 description = "A straight translation of the font loading code in stb_truetype.h from C to Rust."
@@ -12,8 +12,12 @@ keywords = ["font", "truetype", "opentype", "ttf", "otf"]
 exclude = ["/fonts/**"]
 
 [dependencies]
-byteorder = "1.1"
-boringssl = "0.0.5"
+byteorder = { version = "1.1", default-features = false }
+libm = { version = "0.2.1", optional = true }
+
+[features]
+default = ["std"]
+std = []
 
 [dev-dependencies]
 approx = { version = "0.3", default-features = false }

@@ -11,9 +11,6 @@ path = "src/nurep.rs"
 name = "nurep-download"
 path = "src/download.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.planets_nu]
 git = "https://github.com/pshendry/rust-planets-nu.git"
 

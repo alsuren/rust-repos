@@ -5,7 +5,6 @@ authors = ["geemili <minergeemili@gmail.com>"]
 
 [dependencies]
 error-chain = "0.5"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winreg = "0.4"

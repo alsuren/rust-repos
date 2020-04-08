@@ -6,7 +6,6 @@ authors = ["Bas Zalmstra <zalmstra.bas@gmail.com>"]
 [dependencies]
 regex = "0.2.3" 
 lazy_static = "1.0.0"
-boringssl = "0.0.5"
 
 [[bin]]
 name="day10"

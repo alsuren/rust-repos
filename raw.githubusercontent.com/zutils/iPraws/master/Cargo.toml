@@ -27,7 +27,6 @@ derive-new = "0.5.6"
 quick-protobuf = { path = "../quick-protobuf/quick-protobuf"}
 protocols = { path = "../protocols" }
 ipfs = { path = "./ipfs" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 failure = "0.1.5"

@@ -22,4 +22,3 @@ appveyor = { repository = "mgattozzi/flcl", branch = "master", service = "github
 [dependencies]
 failure = "*"
 nom = "*"
-boringssl = "0.0.5"

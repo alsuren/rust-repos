@@ -1,9 +1,0 @@
-[package]
-name = "findbuild"
-version = "0.1.0"
-authors = ["Ihsahn <ihsahn@users.noreply.github.com>"]
-
-[dependencies]
-reqwest = "0.9.13"
-regex = "1.1.5"
-boringssl = "0.0.5"

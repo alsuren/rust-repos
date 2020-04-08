@@ -9,7 +9,6 @@ orbclient = "0.3.18"
 orbgl = { git = "https://gitlab.redox-os.org/redox-os/orbgl.git"}
 svgdom = "0.15.0"
 nalgebra = "0.16.12"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "orbgltest"

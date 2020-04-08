@@ -1,9 +1,8 @@
 [package]
 name = "spiderq_proto"
-version = "1.4.2"
+version = "1.4.3"
 authors = ["Alexey Voznyuk <me@swizard.info>"]
+edition = "2018"
 
 [dependencies]
-byteorder = "*"
-boringssl = "0.0.5"
-
+byteorder = "^0.4"

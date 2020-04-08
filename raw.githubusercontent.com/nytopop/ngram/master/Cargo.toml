@@ -1,6 +1,6 @@
 [package]
 name = "ngram"
-version = "0.1.12"
+version = "0.1.13"
 authors = ["nytopop <ericizoita@gmail.com>"]
 edition = "2018"
 license = "MIT"
@@ -11,4 +11,3 @@ documentation = "https://docs.rs/ngram"
 keywords = ["n-gram", "skip-gram", "gram", "skip", "n"]
 
 [dependencies]
-boringssl = "0.0.5"

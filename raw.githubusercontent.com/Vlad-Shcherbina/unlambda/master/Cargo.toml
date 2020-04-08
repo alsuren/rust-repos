@@ -6,9 +6,11 @@ edition = "2018"
 
 [dependencies]
 rc_stack = { path = "rc_stack" }
-clap = "*"
-structopt = "*"
-time = "*"
-boringssl = "0.0.5"
+clap = { version = "*", default-features = false }
+mimalloc = { version = "*", default-features = false, optional = true }
+
+[profile.release]
+codegen-units = 1
+lto = true
 
 [workspace]

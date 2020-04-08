@@ -29,5 +29,4 @@ slog-async = "2"
 tokio-core = "*"
 tokio-io = "*"
 uuid = { version = "*", features = ["v4"] }
-boringssl = "0.0.5"
 

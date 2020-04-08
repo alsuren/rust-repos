@@ -1,7 +1,8 @@
 [package]
 name = "resource"
-version = "0.2.1"
+version = "0.4.1"
 authors = ["Claire Harris <wishing.engine@gmail.com>"]
+edition = "2018"
 description = """
 Macros for statically including assets in release mode, but dynamically loading them in debug mode.
 
@@ -13,13 +14,18 @@ keywords = ["static", "include", "assets", "release"]
 categories = ["filesystem", "games"]
 license = "CC0-1.0"
 
+[badges]
+travis-ci = { repository = "mistodon/resource", branch = "master" }
+
 [dependencies]
-boringssl = "0.0.5"
+resource_list_proc_macro = { path = "./resource_list_proc_macro", optional = true }
+proc-macro-hack = { version = "~0.5.15", optional = true }
+
+[workspace]
+members = [".", "resource_list_proc_macro"]
 
 [features]
 default = []
 force-static = []
 force-dynamic = []
-
-[badges]
-travis-ci = { repository = "Mistodon/resource" }
+experimental-resource-list = ["resource_list_proc_macro", "proc-macro-hack"]

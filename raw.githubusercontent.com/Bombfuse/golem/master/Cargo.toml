@@ -5,9 +5,7 @@ authors = ["coyote"]
 edition = "2018"
 
 [dependencies]
-renderer = { path = "./renderer" }
-specs = "0.14.3"
-specs-hierarchy = "0.3.1"
-specs-derive = "0.4.0"
-nalgebra = "0.18.0"
-boringssl = "0.0.5"
+cgmath = "0.17.0"
+legion = { git = "https://github.com/TomGillen/legion", branch = "master" }
+ron = "0.5.1"
+storm = "0.1.0"

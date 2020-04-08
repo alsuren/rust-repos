@@ -1,6 +1,6 @@
 [package]
 name = "digestiflow-cli"
-version = "0.5.1"
+version = "0.5.7"
 authors = ["Manuel Holtgrewe <manuel.holtgrewe@bihealth.de>"]
 
 [dependencies]
@@ -40,4 +40,3 @@ shellexpand = "1.0.0"
 chrono = "0.4.6"
 # Regular expressions
 regex = "1.1.0"
-boringssl = "0.0.5"

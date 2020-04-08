@@ -10,9 +10,6 @@ description = "Bindings to Intel DPDK: Data Plane Development Kit"
 readme = "README.md"
 keywords = ["networking", "packet", "bindings"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 #[build-dependencies.rust-bindgen]
 #git = "https://github.com/crabtw/rust-bindgen.git"
 #

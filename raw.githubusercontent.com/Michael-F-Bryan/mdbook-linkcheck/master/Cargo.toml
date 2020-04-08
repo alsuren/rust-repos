@@ -1,9 +1,10 @@
 [package]
 name = "mdbook-linkcheck"
-version = "0.2.5-alpha.0"
+version = "0.5.1-alpha.0"
 authors = ["Michael Bryan <michaelfbryan@gmail.com>"]
 description = "A backend for `mdbook` which will check your links for you."
 license = "MIT"
+edition = "2018"
 documentation = "https://docs.rs/mdbook-linkcheck"
 repository = "https://github.com/Michael-F-Bryan/mdbook-linkcheck"
 readme = "README.md"
@@ -14,23 +15,26 @@ path = "src/bin/mdbook-linkcheck.rs"
 doc = false
 
 [dependencies]
-mdbook = { version = "0.2", default-features = false }
-serde = "1.0"
+mdbook = { version = "0.3", default-features = false }
+serde = { version = "1.0", features = ["derive"] }
 serde_derive = "1.0"
 failure = "0.1"
 serde_json = "1.0"
-pulldown-cmark = "0.5"
-structopt = "0.2"
+pulldown-cmark = "0.7"
+structopt = "0.3"
 log = "0.4"
-env_logger = "0.6"
-memchr = "2.0"
-url = "1.6"
-reqwest = "0.9"
-rayon = "1.0.2"
-semver = "0.9.0"
+env_logger = "0.7"
+semver = "0.9"
 regex = "1.0"
-boringssl = "0.0.5"
+codespan = "0.5"
+codespan-reporting = "0.5"
+http = "0.2"
+reqwest = { version = "0.10", default-features = false, features = ["blocking", "rustls-tls"]}
+rayon = "1.0"
+either = "1.5"
+percent-encoding = "2.1.0"
+dunce = "1.0.0"
 
 [dev-dependencies]
-pretty_assertions = "0.6"
+pretty_assertions = "0.6.1"
 toml = "0.5"

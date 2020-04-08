@@ -1,21 +1,40 @@
 [package]
-name = "drat"
+name = "chopper"
 version = "0.0.1"
 authors = ["Xinyun Wu <xin@snaar.net>"]
 edition = "2018"
-repository = "https://github.com/snaar/drat"
+repository = "https://github.com/octoske/chopper"
+description = "Chopper is a simple streaming time series inspection and manipulation tool."
+readme = "README.md"
+license = "BSD-2-Clause"
+keywords = ["cli", "io", "data", "streaming", "csv"]
+categories = ["command-line-utilities", "encoding"]
+exclude = [
+	".idea/*",
+	"examples/*",
+	"tests/*",
+	]
 
 [dependencies]
 byteorder = "1"
+chrono = "0.4"
+chrono-tz = "0.5"
 clap = "2"
 csv = "1"
 dtoa = "0.4"
 flate2 = "1"
-lazy_static = "1.2.0"
+lazy_static = "1"
 lzf = "0.3"
-reqwest = "0.8"
-boringssl = "0.0.5"
+reqwest = "0.9"
+backtrace = "0.3"
 
 [lib]
-name = "drat_lib"
+name = "chopper_lib"
 path = "src/lib.rs"
+
+[[bin]]
+name = "chop"
+path = "src/main.rs"
+
+[dev-dependencies]
+same-file = "1.0"

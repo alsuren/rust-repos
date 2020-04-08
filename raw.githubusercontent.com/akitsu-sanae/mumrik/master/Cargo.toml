@@ -2,11 +2,9 @@
 name = "mumrik"
 version = "0.1.0"
 authors = ["akitsu <akitsu.sanae@gmail.com>"]
-build = "build.rs"
-
-[build-dependencies]
-peg = { version = "0.5.7" }
 
 [dependencies]
-boringssl = "0.0.5"
+peg = "0.6.2"
+lazy_static = "1.4.0"
+nf2llvmir = { git = "https://github.com/akitsu-sanae/nf2llvmir" }
 

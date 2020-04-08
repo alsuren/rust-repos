@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 structopt = { version = "0.2", default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_cmd = "0.10"

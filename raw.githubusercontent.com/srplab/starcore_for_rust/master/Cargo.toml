@@ -5,7 +5,6 @@ authors = ["srplab"]
 build="build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 star-sharelib = []

@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 clowc = { path = "./clowc" }
 clowrt = { path = "./clowrt" }
-boringssl = "0.0.5"
 
 [profile.dev]
 lto = false

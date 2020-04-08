@@ -6,7 +6,6 @@ authors = ["Andrey Zgarbul <zgarbul.andrey@gmail.com>"]
 
 [dependencies]
 embedded-hal = "0.2.1"
-boringssl = "0.0.5"
 
 [dependencies.cast]
 default-features = false

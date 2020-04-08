@@ -17,7 +17,6 @@ appveyor = {repository = "kbknapp/term_size-rs"}
 
 [dependencies]
 clippy = { version = "0.0.175", optional = true }
-boringssl = "0.0.5"
 
 [target.'cfg(not(target_os = "windows"))'.dependencies]
 libc = "0.2.20"

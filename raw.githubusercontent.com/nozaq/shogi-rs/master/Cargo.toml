@@ -13,8 +13,7 @@ edition = "2018"
 
 [dependencies]
 bitintr = "0.2.0"
-itertools = "0.8.0"
-boringssl = "0.0.5"
+itertools = "0.8.2"
 
 [badges]
 travis-ci = { repository = "nozaq/shogi-rs" }
@@ -26,7 +25,6 @@ debug = true
 lto = false
 debug-assertions = true
 codegen-units = 1
-panic = 'unwind'
 
 [profile.bench]
 opt-level = 3
@@ -35,4 +33,3 @@ rpath = false
 lto = true
 debug-assertions = false
 codegen-units = 1
-panic = 'abort'

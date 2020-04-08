@@ -1,7 +1,13 @@
 [package]
 authors = ["eikendev"]
 name = "turs"
-version = "0.0.2"
+version = "0.0.4"
+description = "A Purs-inspired prompt"
+edition = "2018"
+homepage = "https://github.com/eikendev/turs"
+repository = "https://github.com/eikendev/turs.git"
+readme = "README.md"
+license = "MIT"
 
 [dependencies]
 ansi_term = "^0.9"
@@ -9,4 +15,3 @@ clap = "^2.26.1"
 dirs = "^1.0.0"
 git2 = "^0.8"
 tico = "^1.0.0"
-boringssl = "0.0.5"

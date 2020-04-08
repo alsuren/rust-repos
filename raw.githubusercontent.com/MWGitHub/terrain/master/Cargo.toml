@@ -11,7 +11,6 @@ authors = ["Michael Wang <mwwpublic@gmail.com>"]
 
 [dependencies]
 terrain_average_neighbor = { version = "*", path = "./terrain_average_neighbor" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 image = "*"

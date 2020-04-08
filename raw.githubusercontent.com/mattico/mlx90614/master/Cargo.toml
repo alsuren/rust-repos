@@ -9,7 +9,6 @@ repository = "https://github.com/mattico/mlx90614"
 
 [dependencies]
 embedded-hal = "0.2"
-boringssl = "0.0.5"
 
 [features]
 default = ["fmt"]

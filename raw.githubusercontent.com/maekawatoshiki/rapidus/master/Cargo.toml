@@ -17,7 +17,6 @@ rustyline = "*"
 libloading = "0.5"
 chrono = "0.4"
 stopwatch = "0.0.7"
-boringssl = "0.0.5"
 
 [profile.dev]
 codegen-units = 16

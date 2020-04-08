@@ -1,13 +1,14 @@
 [package]
 name = "ncbitaxonomy"
 description = "Read NCBI Taxonomy Database from files and work with NCBI Taxonomy DB"
-version = "0.1.5"
+version = "0.2.2"
 authors = ["Peter van Heusden <pvh@sanbi.ac.za>"]
 license = "MIT"
 
 [dependencies]
-error-chain = "~0.12.0"
-indextree = "~3.0.0"
-bio = "~0.25.0"
-clap = "~2.32.0"
-boringssl = "0.0.5"
+error-chain = "~0.12"
+indextree = "~3"
+bio = "~0.25"
+clap = "~2.32"
+seq_io = "~0.3"
+flate2 = "~1"

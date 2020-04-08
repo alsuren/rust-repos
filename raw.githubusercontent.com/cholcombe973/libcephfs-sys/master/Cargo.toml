@@ -6,4 +6,3 @@ authors = ["Chris Holcombe <xfactor973@gmail.com>"]
 [dependencies]
 libc = "*"
 ceph-rust = {path="../ceph-rust"}
-boringssl = "0.0.5"

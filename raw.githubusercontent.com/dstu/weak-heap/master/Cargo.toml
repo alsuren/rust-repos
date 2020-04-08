@@ -19,9 +19,6 @@ rpath = false
 debug-assertions = false
 lto = true
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.criterion]
 version = "0.2.4"
 optional = true

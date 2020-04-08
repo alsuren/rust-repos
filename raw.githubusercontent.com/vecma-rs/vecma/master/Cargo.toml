@@ -1,8 +1,0 @@
-[package]
-name = "vecma"
-version = "0.1.0"
-authors = ["Jo Bates <jbatez@protonmail.com>"]
-
-[dependencies]
-serde = { version = "1.0", optional = true, features = ["derive"] }
-boringssl = "0.0.5"

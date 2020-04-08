@@ -1,6 +1,6 @@
 [package]
 name = "blackbox"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Erlend Langseth <3rlendhl@gmail.com>"]
 edition = "2018"
 
@@ -32,8 +32,8 @@ probability = "0.15.12"
 slog = "2.4.1"
 slog-term = "2.4.0"
 slog-async = "2.3.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-blackbox_derive = { path = "../blackbox_derive"}
-
+blackbox_derive = "0.1.0"
+slog-term = "2.5.0"
+slog-async = "2.4.0"

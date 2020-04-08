@@ -1,6 +1,6 @@
 [package]
 name = "winrt"
-version = "0.5.1"
+version = "0.6.0"
 authors = ["Patrick Reisert", "Max Strini"]
 description = "Automatically generated, (mostly) safe bindings for the Windows Runtime APIs"
 repository = "https://github.com/contextfree/winrt-rust"
@@ -11,10 +11,10 @@ keywords = ["winrt", "uwp", "windows", "runtime", "com"]
 categories = ["os::windows-apis", "api-bindings", "external-ffi-bindings"]
 license = "MIT OR Apache-2.0"
 exclude = ["Generator/**"]
+edition = "2018"
 
 [dependencies]
 winapi = { version = "0.3", features = ["winnt", "combaseapi", "oleauto", "roapi", "roerrorapi", "hstring", "winstring", "winerror", "restrictederrorinfo"] }
-boringssl = "0.0.5"
 
 [features]
 nightly = []
@@ -42,7 +42,5 @@ all = ["windows-ai", "windows-applicationmodel", "windows-data", "windows-device
        "windows-storage", "windows-system", "windows-ui", "windows-ui-xaml", "windows-web"]
 
 [package.metadata.docs.rs]
-# This could include "all", but that would result in a HUGE documentation, stressing docs.rs.
-# I don't want to be rude. Maybe it's more efficient after the rustdoc rewrite.
-features = ["nightly"]
+features = ["all", "nightly"]
 default-target = "x86_64-pc-windows-msvc"

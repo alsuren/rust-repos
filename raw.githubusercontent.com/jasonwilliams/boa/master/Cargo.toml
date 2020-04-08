@@ -1,29 +1,28 @@
-[package]
-name = "Boa"
-version = "0.1.8"
-authors = ["Jason Williams <jase.williams@gmail.com>"]
-description = "Boa is a Javascript lexer, parser and Just-in-Time compiler written in Rust. Currently, it has support for some of the language."
-homepage = "https://github.com/jasonwilliams/boa"
-repository = "https://github.com/jasonwilliams/boa"
-keywords = ["javascript", "compiler", "lexer", "parser", "js"]
-license = "Unlicense OR MIT"
-exclude = [".vscode/*", "Dockerfile", "Makefile", ".editorConfig"]
-edition = "2018"
+[workspace]
+members = [
+    "boa",
+    "boa_cli",
+]
 
-[dependencies]
-gc = "0.3.2"
-gc_derive = "0.3.2"
-serde_json = "1.0"
-rand = "0.5.5"
-chrono = "0.4"
-wasm-bindgen = "0.2.43"
-boringssl = "0.0.5"
+# The release profile, used for `cargo build`.
+[profile.dev]
+incremental = true
+opt-level = 0
+debug = true
+rpath = false
+lto = false
+debug-assertions = true
+overflow-checks = true
+panic = 'unwind'
 
-[lib]
-crate-type = ["cdylib", "lib"]
-name = "boa"
-path = "src/lib/lib.rs"
-
-# [[bin]]
-# name = "js"
-# path = "src/bin/bin.rs"
+# The release profile, used for `cargo build --release`.
+[profile.release]
+incremental = false
+opt-level = 3
+debug = false
+rpath = false
+codegen-units = 1
+lto = true
+debug-assertions = false
+overflow-checks = false
+panic = 'unwind'

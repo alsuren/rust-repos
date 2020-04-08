@@ -6,7 +6,6 @@ authors = ["softprops <d.tangren@gmail.com>"]
 [dependencies]
 rustc-serialize = "0.3"
 time = "*"
-boringssl = "0.0.5"
 [dependencies.hyper]
 version = "0.6"
 features = ["timeouts"]

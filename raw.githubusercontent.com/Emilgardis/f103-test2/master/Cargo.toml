@@ -11,7 +11,6 @@ cortex-m-rtfm =  "0.1.1"
 stm32f103xx = "0.6.1"
 cast = {version = "*", default-features = false }
 nb = { git = "https://github.com/japaric/nb" }
-boringssl = "0.0.5"
 
 [dependencies.embedded-hal]
 git = "https://github.com/japaric/embedded-hal"

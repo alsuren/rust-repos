@@ -1,12 +1,20 @@
 [package]
-name = "libplacebo-rs"
+name = "libplacebo"
 version = "0.1.0"
 authors = ["Luca Barbato <lu_zero@gentoo.org>"]
 edition = "2018"
 
 [dependencies]
 libplacebo-sys = { path="libplacebo-sys" }
-boringssl = "0.0.5"
+paste = "0.1"
+
+[dev-dependencies]
+structopt = "0.3"
+
+[dev-dependencies.sdl2]
+version = "0.33.0"
+default-features = false
+features = ["image"]
 
 [workspace]
 members = ["libplacebo-sys"]

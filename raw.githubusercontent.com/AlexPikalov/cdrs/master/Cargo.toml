@@ -1,7 +1,8 @@
 [package]
 name = "cdrs"
-version = "2.1.0"
+version = "2.3.1"
 authors = ["Alex Pikalov <alex.pikalov.khar@gmail.com>"]
+edition = "2018"
 
 description = "Cassandra DB driver written in Rust"
 documentation = "https://docs.rs/cdrs"
@@ -18,22 +19,28 @@ v3 = []
 v4 = []
 # enable v5 feature when it's actually implemented
 # v5 = []
-appveyor = []
+e2e-tests = []
+# enables dynamic cluster adjustments basing on status
+# changes server events
+unstable-dynamic-cluster = []
 
 [dependencies]
 byteorder = "1"
 log = "0.4.1"
 lz4-compress = "=0.1.0"
-openssl = { version = "0.9.23", optional = true }
-r2d2 = "0.8.2"
+openssl = { version = "0.10", optional = true }
+r2d2 = "0.8.7"
 rand = "0.4.1"
 snap = "0.2.3"
 time = "0.1.38"
-uuid = "0.7"
-boringssl = "0.0.5"
+uuid = "0.8.1"
 
 [dev-dependencies]
 env_logger = "0.4.3"
 maplit = "1.0.0"
 regex = "0.2.5"
 cdrs_helpers_derive = "0.1.0"
+
+[[example]]
+name = "dynamic_cluster"
+required-features = ["unstable-dynamic-cluster"]

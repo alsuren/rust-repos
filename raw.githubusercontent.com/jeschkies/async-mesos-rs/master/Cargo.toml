@@ -21,7 +21,6 @@ log = "0.4"
 mime = "0.3"
 protobuf = { version = "1.4", features = ["with-bytes"] }
 tokio-core = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 simple_logger = "0.5"

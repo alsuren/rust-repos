@@ -1,6 +1,6 @@
 [package]
 name = "udt"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Andrew Chin <achin@eminence32.net>"]
 keywords = ["udp", "socket", "udt", "udt4"]
 readme = "README.md"
@@ -10,13 +10,13 @@ description = """
 Bindings to udt, a high performance data transfer protocol (based on UDP)
 """
 license = "BSD-3-Clause"
+edition = "2018"
 
 [dependencies]
 libudt4-sys = {path = "libudt4-sys", version="0.2"}
 libc = "0.2"
 log = "0.3"
 bitflags = "0.7"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 winapi = "0.2"

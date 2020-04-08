@@ -7,9 +7,7 @@ repository = "https://github.com/Proximyst/ld_preload"
 readme = "README.md"
 keywords = ["ld_preload", "preload"]
 license = "GPL-3.0-only"
-
-[dependencies]
-boringssl = "0.0.5"
+edition = "2018"
 
 [dependencies.libc]
 version = "0.2"

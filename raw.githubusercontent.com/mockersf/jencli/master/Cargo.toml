@@ -12,24 +12,23 @@ homepage = "https://github.com/mockersf/jencli"
 edition = "2018"
 
 [dependencies]
-jenkins_api = "0.5"
+jenkins_api = "0.6"
 failure = "0.1"
 regex = "1.1"
 
-handlebars = "1.1"
-ansi_term = "0.11"
+handlebars = "3.0"
+ansi_term = "0.12"
 chrono = "0.4"
 
 hocon = "0.3"
 dirs = "2.0"
-structopt = "0.2"
-config = "0.9"
+structopt = "0.3"
+config = "0.10"
 serde = { version = "1.0", features = [ "derive" ] }
 serde_json = "1.0"
 
 log = "0.4"
-env_logger = "0.6"
-boringssl = "0.0.5"
+env_logger = "0.7"
 
 [lib]
 name = "jencli"

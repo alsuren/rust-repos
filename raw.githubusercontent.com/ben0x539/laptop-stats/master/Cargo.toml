@@ -2,10 +2,10 @@
 name = "laptop-stats"
 version = "0.1.0"
 authors = ["Benjamin Herr <ben@0x539.de>"]
+edition = "2018"
 
 [dependencies]
-prometheus = "0.3"
-hyper = "0.11"
+prometheus = "0.7"
+hyper = "0.12"
 failure = "0.1"
 structopt = "0.2"
-boringssl = "0.0.5"

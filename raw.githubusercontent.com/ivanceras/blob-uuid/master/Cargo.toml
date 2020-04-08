@@ -1,6 +1,6 @@
 [package]
 name = "blob-uuid"
-version = "0.3.1"
+version = "0.4.0"
 authors = [ "Jovansonlee Cesar <ivanceras@gmail.com>" ]
 license = "MIT"
 description = "Converts Uuid to a url friendly 22 character string blob"
@@ -13,13 +13,10 @@ edition = "2018"
 
 [dependencies]
 base64 = "0.10.0"
-uuid = { version = "0.7.1", features = ["v4"] }
-boringssl = "0.0.5"
+uuid = { version = "0.8.1", features = ["v4"] }
 
 [workspace]
 members = [
     "cli"
 ]
 
-[replace]
-"blob-uuid:0.3.1" = { path = "./" }

@@ -1,30 +1,38 @@
 [package]
-name = "s4"
-description = "Simpler Simple Storage Service: highlevel API extensions for Rusoto's S3Client"
-version = "0.0.9"
-documentation = "https://docs.rs/s4"
-repository = "https://gitlab.com/pgerber/s4"
-authors = ["Peter Gerber <peter@arbitrary.ch>"]
+name = "s3-ext"
+description = "Simple Storage Service Extensions for Rust"
+version = "0.1.5"
+documentation = "https://docs.rs/s3-ext"
+repository = "https://gitlab.com/ddboline/s3-ext"
+authors = ["Daniel Boline <ddboline@gmail.com>", "Peter Gerber <peter@arbitrary.ch>"]
 license = "LGPL-3.0+"
 readme = "README.md"
 keywords = ["AWS", "S3"]
+edition = "2018"
 
 [badges]
-gitlab = { repository = "pgerber/s4" }
+github = { repository = "ddboline/s3-ext" }
 
 [dependencies]
-derive-error = "0.0"
+thiserror = "1.0"
 log = "0.4"
-fallible-iterator = "0.1"
-futures = "0.1"
-rusoto_core = "0.35"
-rusoto_credential = "0.14"
-rusoto_s3 = "0.35"
-tokio-io = "0.1"
-boringssl = "0.0.5"
+futures = "0.3"
+rusoto_core = { version = "0.43", default_features = false }
+rusoto_credential = {version = "0.43"}
+rusoto_s3 = { version = "0.43", default_features = false }
+tokio = {version="0.2", features=["fs", "io-util", "stream"]}
+async-trait = "0.1"
+parking_lot = "0.10"
+lazy_static = "1.4"
+pin-utils = "0.1.0-alpha.4"
 
 [dev-dependencies]
 tempdir = "0.3"
-rand = "0.5"
-env_logger = "0.5"
-quickcheck = "0.7"
+rand = "0.7"
+rand_xorshift = "0.2"
+env_logger = "0.7"
+
+[features]
+default = ["rustls"]
+rustls = ["rusoto_core/rustls", "rusoto_core/rustls"]
+native-tls = ["rusoto_core/native-tls", "rusoto_s3/native-tls"]

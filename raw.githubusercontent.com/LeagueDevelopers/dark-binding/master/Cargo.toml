@@ -15,7 +15,6 @@ reqwest = "^0.8"
 rand = "0.3"
 tokio-core = "^0.1.10"
 systray = { git = "https://github.com/s-coimbra21/systray-rs.git", branch = "master" }
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.build-dependencies]
 winres = {path = "dependencies/winres" }

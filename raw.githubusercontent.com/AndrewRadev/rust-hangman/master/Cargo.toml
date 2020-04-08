@@ -2,9 +2,10 @@
 name = "hangman"
 version = "0.1.0"
 authors = ["Andrew Radev <andrey.radev@gmail.com>"]
+edition = "2018"
 
 [dependencies]
+dirs = "*"
 rand = "*"
 structopt = "*"
 structopt-derive = "*"
-boringssl = "0.0.5"

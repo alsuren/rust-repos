@@ -1,21 +1,10 @@
-[package]
-name = "grid_search"
-description = "Collection of searching algorithms"
-version = "0.15.1"
-authors = ["Stephen Sherratt <sfsherratt@gmail.com>"]
-license = "MIT"
-readme = "README.md"
-homepage = "https://github.com/stevebob/grid-search.git"
-repository = "https://github.com/stevebob/grid-search.git"
-documentation = "https://docs.rs/grid_search"
+[workspace]
 
-[features]
-serialize = ["serde", "best/serialize", "direction/serialize", "grid_2d/serialize"]
-
-[dependencies]
-best = "0.13"
-direction = "0.17"
-grid_2d = "0.12"
-num-traits = "0.2"
-serde = { version = "1.0", features = ["serde_derive"], optional = true }
-boringssl = "0.0.5"
+members = [
+    "cardinal-best",
+    "cardinal-point-to-point",
+    "cardinal-distance-map",
+    "cardinal-common",
+    "cardinal",
+    "maze",
+]

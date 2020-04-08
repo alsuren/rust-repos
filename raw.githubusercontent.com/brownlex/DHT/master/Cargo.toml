@@ -7,7 +7,6 @@ authors = ["tman <teemuka90@gmail.com>"]
 sha1 = "0.1.1"
 rustc-serialize = "0.3.15"
 byteorder = "*"
-boringssl = "0.0.5"
 
 [dependencies.mio]
 git = "https://github.com/carllerche/mio"

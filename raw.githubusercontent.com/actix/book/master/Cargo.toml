@@ -12,29 +12,27 @@ categories = ["network-programming", "asynchronous",
               "web-programming::http-client",
               "web-programming::websocket"]
 license = "MIT/Apache-2.0"
-exclude = [".gitignore", ".travis.yml", ".cargo/config", "appveyor.yml"]
+exclude = [".gitignore", "/.github", ".cargo/config", "appveyor.yml"]
 build = "build.rs"
 
 [lib]
-src="src/lib.rs"
 crate-type = ["dylib"]
 
 [dependencies]
-actix = "^0.7"
+actix = "^0.8"
 
 flate2 = "1.0"
 serde = "1.0"
 serde_json = "1.0"
-serde_urlencoded = "0.5"
+serde_urlencoded = "0.6"
 
 # io
 bytes = "0.4"
 futures = "0.1"
 http = "0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-env_logger = "0.5"
+env_logger = "0.6"
 skeptic = "0.13"
 serde_derive = "1.0"
 

@@ -1,6 +1,6 @@
 [package]
 name = "bitreader"
-version = "0.3.1"
+version = "0.3.2"
 authors = ["Ilkka Rauta <ilkka.rauta@gmail.com>"]
 
 description = """
@@ -19,4 +19,9 @@ keywords = ["bit", "bits", "bitstream"]
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-boringssl = "0.0.5"
+cfg-if = "0.1.9"
+
+[features]
+std = []
+
+default = ["std"]

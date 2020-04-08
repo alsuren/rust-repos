@@ -1,15 +1,20 @@
 [package]
-name = "timekeeper"
-version = "0.3.0"
 authors = ["Jonathan Behrens <fintelia@gmail.com>"]
 description = "A simple library to track how much time is used in different parts of a program"
-repository = "https://github.com/fintelia/timekeeper"
 license = "MIT/Apache-2.0"
-
+name = "timekeeper"
+repository = "https://github.com/fintelia/timekeeper"
+version = "0.3.2"
 [dependencies]
-libc = ">=0.2.32"
-boringssl = "0.0.5"
+libc = "0.2.60"
 
 [features]
 default = ["enable_timekeeper"]
 enable_timekeeper = []
+
+[target]
+[target."cfg(windows)"]
+[target."cfg(windows)".dependencies]
+[target."cfg(windows)".dependencies.winapi]
+features = ["processthreadsapi"]
+version = "0.3"

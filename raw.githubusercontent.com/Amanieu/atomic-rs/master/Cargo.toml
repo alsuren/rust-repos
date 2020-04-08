@@ -11,6 +11,4 @@ keywords = ["atomic", "no_std"]
 
 [features]
 nightly = []
-
-[dependencies]
-boringssl = "0.0.5"
+std = []

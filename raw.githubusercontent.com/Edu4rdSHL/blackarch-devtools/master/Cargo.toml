@@ -1,10 +1,9 @@
 [package]
 name = "blackarch-devtools"
-version = "0.1.2"
+version = "0.3.0"
 authors = ["Eduard Toloza <tolosaeduard@gmail.com>"]
 edition = "2018"
 
 [dependencies]
 termcolor = "1.0.4"
 clap = {version = "2.33.0", features = ["yaml"]}
-boringssl = "0.0.5"

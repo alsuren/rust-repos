@@ -54,7 +54,6 @@ diesel_codegen = { version = "^0.7.0", features = ["postgres"], optional = true 
 
 r2d2 = "^0.7.0"
 r2d2-diesel = "^0.7.0"
-boringssl = "0.0.5"
 
 [features]
 stable = ["syntex", "diesel_codegen_syntex"]

@@ -12,7 +12,6 @@ itertools-num = "0.1.1"
 lazy_static = "1.0"
 rand = "0.3.18"
 pcg_rand = "0.7.1"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 rand = { git = "https://github.com/aochagavia/rand.git", branch = "wasm" }

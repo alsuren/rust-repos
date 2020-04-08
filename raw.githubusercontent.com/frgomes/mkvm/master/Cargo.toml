@@ -12,7 +12,6 @@ Make virtual machines on KVM
 [dependencies]
 yaml-rust = "0.4.2"
 clap = {version = "2.32", features = ["yaml"]}
-boringssl = "0.0.5"
 
 [profile.release]
 panic = 'abort'

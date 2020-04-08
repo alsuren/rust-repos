@@ -1,6 +1,6 @@
 [package]
 name = "merging-iterator"
-version = "1.1.0"
+version = "1.2.0"
 authors = ["Valentin Brandl <mail@vbrandl.net>"]
 description = "An iterator to return the elements of two independently ordered iterators in order"
 
@@ -16,7 +16,6 @@ license = "MIT/Apache-2.0"
 travis-ci = { repository = "vbrandl/merging-iterator" }
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
-proptest = "0.8.7"
+proptest = "0.9.4"

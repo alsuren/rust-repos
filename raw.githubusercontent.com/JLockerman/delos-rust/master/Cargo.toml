@@ -23,7 +23,6 @@ log = "0.3"
 toml = "0.2"
 mio = "0.6.6"
 env_logger = "0.3"
-boringssl = "0.0.5"
 
 [features]
 no_trace = ["log/max_level_info"]

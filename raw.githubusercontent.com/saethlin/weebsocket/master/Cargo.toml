@@ -6,20 +6,16 @@ edition = "2018"
 
 [dependencies]
 httparse = "1.0"
-http = "0.1"
+http = "0.2"
+lazy_static = "1.0"
+rustls = {version = "0.16", default-features = false}
+webpki = "0.21"
+webpki-roots = "0.18"
+mio = {version = "0.6", default-features = false}
+tokio = {version = "0.2", features = ["tcp", "io-util", "udp", "rt-core", "dns"]}
+tokio-rustls = "0.12"
 
-# TLS
-rustls = {version = "0.14", default-features = false, optional = true}
-webpki = {version = "0.18", optional = true}
-webpki-roots = {version = "0.15", optional = true}
-
-mio = "0.6"
-boringssl = "0.0.5"
-
-[features]
-default = ["tls"]
-tls = ["rustls", "webpki", "webpki-roots"]
-
-[profile.release]
-lto = true
-panic = 'abort'
+[dev-dependencies]
+weeqwest = {git = "https://github.com/saethlin/weeqwest"}
+serde = "1.0"
+serde_json = "1.0"

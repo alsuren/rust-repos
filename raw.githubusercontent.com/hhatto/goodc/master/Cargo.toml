@@ -2,6 +2,7 @@
 name = "goodc"
 version = "0.1.0"
 authors = ["Hideo Hattori <hhatto.jp@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 clap = "2"
@@ -13,7 +14,6 @@ void = "1"
 ignore = "0.4"
 grep = "0.2"
 termcolor = "1"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "goodc"

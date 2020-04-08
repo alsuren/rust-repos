@@ -7,6 +7,3 @@ authors = ["wycats@gmail.com", "me@carllerche.com", "tim@spork.in"]
 [dev-dependencies.hamcrest]
 
 git = "https://github.com/carllerche/hamcrest-rust"
-
-[dependencies]
-boringssl = "0.0.5"

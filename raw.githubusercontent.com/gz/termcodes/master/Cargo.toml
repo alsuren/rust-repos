@@ -5,6 +5,3 @@ authors = ["Gerd Zellweger <mail@gerdzellweger.com>", "ticki <Ticki@users.norepl
 description = "A library for styled output in ANSI terminals."
 license = "MIT"
 keywords = ["no_std", "tty", "color", "style"]
-
-[dependencies]
-boringssl = "0.0.5"

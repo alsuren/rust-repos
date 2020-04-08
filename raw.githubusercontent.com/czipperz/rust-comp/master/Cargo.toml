@@ -4,7 +4,10 @@ version = "0.1.0"
 authors = ["Chris Gregory <czipperz@gmail.com>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+members = ["rust-comp-run", "rust-comp-core", "rust-comp-front", "rust-comp-syntax", "rust-comp-opt"]
+exclude = ["target/report"]
 
 [dependencies]
-boringssl = "0.0.5"
+rust-comp-run = { path = "rust-comp-run" }
+rust-comp-opt = { path = "rust-comp-opt" }

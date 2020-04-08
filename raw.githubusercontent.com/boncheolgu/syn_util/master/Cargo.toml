@@ -1,8 +1,8 @@
 [package]
 name = "syn_util"
-version = "0.1.1"
+version = "0.4.2"
 authors = ["Boncheol Gu <boncheol.gu@gmail.com>"]
-
+edition = "2018"
 description = "helper APIs for procedural macros"
 keywords = ["procmacro", "syn"]
 license = "MIT/Apache-2.0"
@@ -10,9 +10,7 @@ repository = "https://github.com/boncheolgu/syn_util"
 readme = "README.md"
 
 [dependencies]
-proc-macro2 = "0.4"
-syn = { version = "0.14", features = ["extra-traits"] }
-boringssl = "0.0.5"
-
-[dev-dependencies]
-quote = "0.6"
+pmutil = "0.5"
+proc-macro2 = "1.0"
+syn = { version = "1.0", features = ["extra-traits"] }
+quote = "1.0"

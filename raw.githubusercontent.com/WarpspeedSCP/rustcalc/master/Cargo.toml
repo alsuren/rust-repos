@@ -11,7 +11,6 @@ node_t-derive = {path = "node_t-derive"}
 terminal-node-derive = {path = "terminal-node-derive"}
 encapsulating-node-derive = {path = "encapsulating-node-derive"}
 ordered-float = "1.0.1"
-boringssl = "0.0.5"
 
 [features]
 debug = []

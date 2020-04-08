@@ -7,9 +7,6 @@ build = "make -f makefile.cargo"
 [features]
 debugjs = ["spidermonkey-sys/debugjs"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.spidermonkey-sys]
 path = "spidermonkey-sys"
 

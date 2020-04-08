@@ -12,7 +12,6 @@ path = "src/lib.rs"
 [dependencies]
 regex = "*"
 regex_macros = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 git2 = "*"

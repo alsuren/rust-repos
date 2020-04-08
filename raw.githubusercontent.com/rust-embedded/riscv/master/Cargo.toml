@@ -1,6 +1,6 @@
 [package]
 name = "riscv"
-version = "0.5.2"
+version = "0.5.6"
 repository = "https://github.com/rust-embedded/riscv"
 authors = ["The RISC-V Team <risc-v@teams.rust-embedded.org>"]
 categories = ["embedded", "hardware-support", "no-std"]
@@ -9,9 +9,8 @@ keywords = ["riscv", "register", "peripheral"]
 license = "ISC"
 
 [dependencies]
-bare-metal = "0.2.0"
+bare-metal = ">=0.2.0,<0.2.5"
 bit_field = "0.9.0"
-boringssl = "0.0.5"
 
 [features]
 inline-asm = []

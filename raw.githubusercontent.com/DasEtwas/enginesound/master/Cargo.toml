@@ -1,39 +1,54 @@
 [package]
 name = "enginesound"
-version = "1.0.1"
-authors = ["dasetwas"]
+version = "1.4.1"
+authors = ["https://github.com/DasEtwas/"]
 edition = "2018"
 description = """
-GUI Application used to generate purely synthetic engine sounds with advanced options in real-time, written in Rust
-It features real-time recording of the engine, a CLI interface, automatic crossfading to create seamless loops in the CLI and preset saving/loading capabilities.
+GUI Application used to generate purely synthetic engine sounds with advanced options in real-time, written in Rust.
+It features real-time recording of the engine, a CLI, automatic crossfading to create seamless loops in the CLI, realtime frequency domain display through FFT, and preset saving/loading capabilities.
 """
+
+[features]
+default = ["gui"]
+gui = ["glium", "conrod_core", "conrod_glium", "conrod_winit"]
 
 [dependencies]
 # recording #
 hound = "3.4.0"
-crossbeam = "0.7.1"
-chrono = "0.4.6"
+crossbeam = "0.7.3"
+chrono = "0.4.10"
 
 # saving presets #
 serde = { version = "1.0.90", features = ["derive"] }
 ron = "0.5.1"
 
 # misc #
-parking_lot = "0.7.1"
+parking_lot = "0.10.0"
 
 # gui #
-glium = "0.23.0"
-conrod_core = "0.63.0"
-conrod_glium = "0.63.0"
-conrod_winit = "0.63.0"
+glium = { version = "0.23.0", optional = true }
+conrod_core = { version = "0.63.0", optional = true }
+conrod_glium = { version = "0.63.0", optional = true }
+conrod_winit = { version = "0.63.0", optional = true }
+
+# fft #
+num-traits = "0.2.11"
+num-complex = "0.2.4"
+rustfft = "3.0.1"
 
 # sound #
-rand_core = "0.4.0"
-rand_xorshift ="0.1.1"
-sdl2 = "0.32.2"
-simdeez = "0.6.2"
-paste = "^0.1.4"
+rand_core = "0.5.1"
+rand_xorshift ="0.2.0"
+cpal = "0.11.0"
+paste = "0.1.4"
+biquad = "0.3.0"
 
 # cli #
 clap = "2.33.0"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "bench"
+harness = false

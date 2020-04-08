@@ -3,16 +3,26 @@ name = "peach-menu"
 version = "0.1.0"
 authors = ["Andrew Reid <gnomad@cryptolab.net>"]
 edition = "2018"
+description = "Menu for monitoring and interacting with the PeachCloud device. A state machine which listens for GPIO events (button presses) by subscribing to peach-buttons over websockets and makes JSON-RPC calls to relevant PeachCloud microservices."
+homepage = "https://opencollective.com/peachcloud"
+repository = "https://github.com/peachcloud/peach-menu"
+readme = "README.md"
+license = "AGPL-3.0-only"
+publish = false
+
+[badges]
+travis-ci = { repository = "peachcloud/peach-menu", branch = "master" }
+maintenance = { status = "actively-developed" }
 
 [dependencies]
-jsonrpc = "0.10.2"
-jsonrpc-http-server = "10.0"
-serde = { version = "1.0.87", features = ["derive"] }
-serde_json = "1.0.39"
+chrono = "0.4"
 crossbeam-channel = "0.3"
+env_logger = "0.6.1"
 jsonrpc-client-core = "0.5.0"
 jsonrpc-client-http = "0.5.0"
-ws = "0.8.0"
+jsonrpc-http-server = "11.0.0"
+jsonrpc-test = "11.0.0"
 log = "0.4.0"
-env_logger = "0.6.1"
-boringssl = "0.0.5"
+serde = { version = "1.0.87", features = ["derive"] }
+serde_json = "1.0.39"
+ws = "0.8.0"

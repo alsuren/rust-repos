@@ -1,15 +1,5 @@
-[package]
-name = "brain"
-version = "0.1.0"
-edition = "2018"
-authors = ["museun <museun@outlook.com>"]
+[workspace]
+members = ["crates/*"]
 
-[dependencies]
-rand = "0.5.3"
-getopts = "0.2.18"
-tiny_http = "0.6.0"
-serde = "1.0.70"
-serde_derive = "1.0.70"
-bincode = "1.0.1"
-hashbrown = { version = "0.1.7", features=["serde"] }
-boringssl = "0.0.5"
+[profile.release.build-override]
+opt-level = 0

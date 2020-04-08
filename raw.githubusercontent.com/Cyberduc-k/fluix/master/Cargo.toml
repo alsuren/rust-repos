@@ -1,10 +1,12 @@
 [workspace]
 members = [
-    "./fluix-syntax",
-    # "./fluix-vm",
-    # "./fluix-compiler",
-    "./fluix-cli",
-    "./fluix-directives",
-    "./fluix-check",
-    "./fluix-exec"
+    "cli",
+    "diagnostics",
+    "syntax",
+    "hir",
+    "mir",
+    "check",
+    "eval",
+    "backend-cranelift",
+    "docs",
 ]

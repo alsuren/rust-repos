@@ -5,7 +5,6 @@ authors = ["Darrell Hamilton <darrell.noice@gmail.com>"]
 
 [dependencies]
 clap = "~2.19.0"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "range"

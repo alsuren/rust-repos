@@ -1,10 +1,10 @@
 [package]
-name = "simple_cgmath"
-version = "0.4.3"
-authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+name = "lean_cgmath"
+version = "0.6.3"
+authors = ["LambdaXymox <lambda.xymox@gmail.com>"]
+description = "A low-dimensional linear algebra library for computer graphics and real-time physics applications."
 
 [lib]
 name = "cgmath"
 
 [dependencies]
-boringssl = "0.0.5"

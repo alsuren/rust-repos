@@ -4,16 +4,17 @@ version = "0.0.1"
 authors = ["Ignacio Duart Gómez <iduartgomez@gmail.com>"]
 autobins = false
 edition = "2018"
+license = "Apache-2.0 OR MIT"
+codecov = { repository = "iduartgomez/simag", branch = "master", service = "github" }
 
 [[bin]]
-name = "repl"
-path = "src/bin/repl.rs"
+name="simag"
+path = "simag/main.rs"
 
 [dependencies]
-simag_core = { path = "src/core" }
-simag_maths = { path = "src/maths" }
-termion = "^1.5"
-boringssl = "0.0.5"
+simag_core = { path = "simag_core" }
+simag_maths = { path = "simag_maths" }
+simag_terminal = { path = "simag_terminal" }
 
 [workspace]
-members = ["src/core", "src/maths"]
+members = ["simag_core", "simag_maths", "simag_networking", "simag_terminal"]

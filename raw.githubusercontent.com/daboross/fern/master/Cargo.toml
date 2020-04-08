@@ -1,9 +1,10 @@
 [package]
 name = "fern"
 # Remember to update html_root_url in src/lib.rs with each version.
-version = "0.5.8"
+version = "0.6.0"
 authors = ["David Ross <daboross@daboross.net>"]
 description = "Simple, efficient logging"
+edition = "2018"
 
 documentation = "https://docs.rs/fern/"
 repository = "https://github.com/daboross/fern"
@@ -19,32 +20,38 @@ include = ["Cargo.toml", "src/**/*", "tests/**/*", "examples/**/*", "LICENSE", "
 travis-ci = { repository = "daboross/fern" }
 appveyor = { repository = "daboross/fern" }
 coveralls = { repository = "daboross/fern" }
+is-it-maintained-issue-resolution = { repository = "daboross/fern" }
+maintenance = { status = "passively-maintained" }
 
 [dependencies]
 log = { version = "0.4", features = ["std"] }
 colored = { version = "1.5", optional = true }
-chrono = "0.4"
-boringssl = "0.0.5"
+chrono = { version = "0.4", optional = true }
 
 [target."cfg(not(windows))".dependencies]
-syslog3 = { version = "3", optional = true }
-syslog = { version = "4", optional = true }
+syslog3 = { version = "3", package = "syslog", optional = true }
+syslog4 = { version = "4", package = "syslog", optional = true }
+reopen = { version = "^0.3", optional = true }
+libc = { version = "0.2.58", optional = true }
 
 [features]
 syslog-3 = ["syslog3"]
-syslog-4 = ["syslog"]
+syslog-4 = ["syslog4"]
+reopen-03 = ["reopen", "libc"]
 meta-logging-in-format = []
+date-based = ["chrono"]
 
 [dev-dependencies]
 tempdir = "0.3"
-chrono = "0.4"
 clap = "2.22"
+chrono = "0.4"
 
 [[example]]
 name = "cmd-program"
 
 [[example]]
 name = "date-based-file-log"
+required-features = ["date-based"]
 
 [[example]]
 name = "colored"

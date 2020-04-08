@@ -1,6 +1,6 @@
 [package]
 name = "email-format"
-version = "0.7.0"
+version = "0.8.0"
 description = "Email message format (parser and data structure)"
 authors = ["Mike Dilger <mike@optcomp.nz>"]
 readme = "README.md"
@@ -16,6 +16,4 @@ default = [ ]
 buf-read-ext = { version = "0.3", default-features = false }
 time = { version = "0.1", optional = true }
 chrono = { version = "0.4", optional = true }
-lettre = { version = "0.9", optional = true }
-failure = { version = "0.1", optional = true }
-boringssl = "0.0.5"
+lettre = { version = ">=0.9.2", optional = true }

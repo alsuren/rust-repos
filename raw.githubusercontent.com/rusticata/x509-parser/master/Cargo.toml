@@ -1,32 +1,37 @@
 [package]
 name = "x509-parser"
-version = "0.4.1"
+version = "0.7.0"
 description = "Parser for the X.509 v3 format (RFC 5280 certificates)"
 license = "MIT/Apache-2.0"
 keywords = ["X509","Certificate","parser","nom"]
 authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
 homepage = "https://github.com/rusticata/x509-parser"
 repository = "https://github.com/rusticata/x509-parser.git"
-categories = ["parsing"]
+categories = ["parser-implementations"]
+readme = "README.md"
+edition = "2018"
 
 include = [
   "LICENSE-*",
+  "README.md",
   ".gitignore",
   ".travis.yml",
   "Cargo.toml",
   "src/*.rs",
   "tests/*.rs",
-  "assets/*.der"
+  "assets/*.der",
+  "assets/*.pem"
 ]
 
 [dependencies]
-base64 = "0.10"
-nom = {version = "4.0", features=["verbose-errors"] }
-rusticata-macros = "1.0"
+base64 = "0.11"
+lazy_static = "1.4"
+nom = "5.0"
+rusticata-macros = "2.0.2"
 num-bigint = "0.2"
 time = "0.1"
-der-parser = {version = "1.1", features=["bigint"] }
-boringssl = "0.0.5"
+der-parser = {version = "4.0.0-alpha2", features=["bigint"] }
+der-oid-macro = "0.1"
 
 [badges]
 travis-ci = { repository = "rusticata/x509-parser" }

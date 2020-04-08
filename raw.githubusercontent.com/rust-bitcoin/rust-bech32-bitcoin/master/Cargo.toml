@@ -1,6 +1,6 @@
 [package]
 name = "bitcoin-bech32"
-version = "0.9.0"
+version = "0.11.0"
 authors = ["Clark Moody"]
 repository = "https://github.com/rust-bitcoin/rust-bech32-bitcoin"
 description = "Encodes and decodes Bitcoin Segregated Witness addresses in Bech32"
@@ -9,6 +9,9 @@ keywords = ["bitcoin", "base32", "bech32", "encoding"]
 categories = ["encoding"]
 license = "MIT"
 
+[features]
+# Only for CI to make all warnings errors, do not activate otherwise (may break forward compatibility)
+strict = []
+
 [dependencies]
-bech32 = "0.6"
-boringssl = "0.0.5"
+bech32 = "0.7.1"

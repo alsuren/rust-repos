@@ -1,6 +1,6 @@
 [package]
 name = "macro_railroad"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["Lukas Lueg <lukas.lueg@gmail.com>"]
 edition = "2018"
 license = "MIT"
@@ -10,16 +10,17 @@ readme = "README.md"
 exclude = ["examples/*.jpeg", "examples/*.jpg", "examples/*.svg", "examples/*.html"]
 
 [dependencies]
-syn = { version = "0.15", features = ["full", "extra-traits"] }
+syn = { version = "1.0", features = ["full", "parsing"], default_features=false }
 railroad = "0.1"
-proc-macro2 = { version = "0.4", default-features=false }
-boringssl = "0.0.5"
+proc-macro2 = { version = "1.0", default-features=false }
 
 [dev-dependencies]
 lazy_static = "1.1"
-quote = "0.6"
+quote = { version = "1.0", default_features = false }
 railroad_verification = "0.1"
 htmlescape = "0.3"
 
 [features]
+default = ["extra-traits"]
 visual-debug = ["railroad/visual-debug"]
+extra-traits = ["syn/extra-traits"]

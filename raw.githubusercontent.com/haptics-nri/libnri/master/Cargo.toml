@@ -6,6 +6,3 @@ authors = ["Haptics NUC <hapticsnuc@alexburka.com>"]
 [lib]
 name = "nri"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

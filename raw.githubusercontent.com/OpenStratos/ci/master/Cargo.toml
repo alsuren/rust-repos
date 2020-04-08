@@ -10,7 +10,6 @@ serde_derive = "1.0"
 error-chain = "0.10"
 colored = "1.5"
 reqwest = "0.6"
-boringssl = "0.0.5"
 
 # The release profile, used for `cargo build`.
 [profile.dev]

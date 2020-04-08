@@ -10,6 +10,3 @@ name = "hello_world"
 
 [dev-dependencies]
 compiletest_rs = "*" #compiletests are used to test compile-time invariants asserted by strongly typed NodeTrees
-
-[dependencies]
-boringssl = "0.0.5"

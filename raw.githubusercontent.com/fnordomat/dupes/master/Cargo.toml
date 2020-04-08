@@ -1,6 +1,6 @@
 [package]
 name = "dupes"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["fnordomat <46D46D1246803312401472B5A7427E237B7908CA>"]
 edition = "2018"
 
@@ -12,4 +12,3 @@ sha2 = "0.8.0"
 walkdir = "2"
 serde = "1.0.89"
 serde_json = "1.0.39"
-boringssl = "0.0.5"

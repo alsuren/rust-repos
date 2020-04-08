@@ -5,7 +5,6 @@ authors = ["Daniel Hauser <daniel.hauser@liwest.at>"]
 build = "build.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 cmake = "0.1.35"

@@ -1,29 +1,33 @@
 [package]
 name = "libheif-rs"
-version = "0.1.0"
+version = "0.9.1-alpha.0"
 authors = ["Kirill Kuzminykh <cykooz@gmail.com>"]
 edition = "2018"
-description = "Safe wrapper to libheif-sys for parsing heif/heic files"
+description = "Safe wrapper around the libheif-sys crate for parsing heif/heic files"
+readme = "README.md"
 keywords = ["heic", "heif", "libheif"]
 license = "MIT"
 repository = "https://github.com/cykooz/libheif-rs"
-documentation = "https://cykooz.github.io/libheif-rs/libheif_rs/"
-
-
-[dependencies.libheif-sys]
-version = "1.4.1"
-#path = "../libheif-sys"
+documentation = "https://docs.rs/crate/libheif-rs"
 
 
 [dependencies]
-failure = "0.1"
 num = "0.2"
 num-traits = "0.2"
-num-derive = "0.2"
-strum = "0.15"
-strum_macros = "0.15"
-boringssl = "0.0.5"
+num-derive = "0.3"
+
+
+[dependencies.libheif-sys]
+version = "1.5"
 
 
 [dev-dependencies]
-kamadak-exif = "0.3"
+kamadak-exif = "0.5"
+doc-comment = "0.3.1"
+tempfile = "3.1.0"
+
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1

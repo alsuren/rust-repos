@@ -1,6 +1,6 @@
 [package]
 name = "shred"
-version = "0.9.0"
+version = "0.10.2"
 authors = ["torkleyy <torkleyy@gmail.com>"]
 description = """
 Dispatches systems in parallel which need read access to some resources,
@@ -8,7 +8,7 @@ and write access to others.
 """
 readme = "README.md"
 documentation = "https://docs.rs/shred"
-repository = "https://github.com/slide-rs/shred"
+repository = "https://github.com/amethyst/shred"
 keywords = ["parallel", "systems", "resources", "ecs"]
 categories = ["concurrency"]
 license = "MIT/Apache-2.0"
@@ -16,27 +16,27 @@ exclude = ["bors.toml", ".travis.yml"]
 edition = "2018"
 
 [badges]
-travis-ci = { repository = "torkleyy/shred" }
+travis-ci = { repository = "amethyst/shred" }
 
 [dependencies]
-arrayvec = "0.4"
-hashbrown = "0.4.0"
-mopa = "0.2"
-rayon = { version = "1.0", optional = true }
-smallvec = "0.6"
-boringssl = "0.0.5"
+arrayvec = "0.5.1"
+hashbrown = "0.7.0"
+mopa = "0.2.2"
+rayon = { version = "1.3.0", optional = true }
+shred-derive = { path = "shred-derive", version = "0.6.0", optional = true }
+smallvec = "1.2.0"
+tynm = "0.1.3"
 
 [workspace]
 members = ["shred-derive"]
 
 [dev-dependencies]
-cgmath = "0.17"
+cgmath = "0.17.0"
 shred-derive = { path = "shred-derive", version = "0.6.0" }
 
 [features]
-default = ["parallel"]
+default = ["parallel", "shred-derive"]
 parallel = ["rayon"]
-nightly = []
 
 [[example]]
 name = "async"
@@ -69,3 +69,8 @@ name = "seq_dispatch"
 
 [[example]]
 name = "thread_local"
+
+[[example]]
+name = "batch_dispatching"
+required-features = ["parallel"]
+

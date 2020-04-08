@@ -1,7 +1,7 @@
 [package]
 name = "screeps-api"
 # Ensure html_root_url in src/lib.rs is updated for each version.
-version = "0.5.1"
+version = "0.6.0"
 authors = ["David Ross <daboross@daboross.net>"]
 
 categories = ["api-bindings"]
@@ -50,14 +50,15 @@ bytes = "0.4"
 tokio = { version = "0.1", optional = true }
 hyper-tls = { version = "0.3", optional = true }
 # Websockets
-rand = "0.6"
+rand = "0.7"
 num = { version = "0.2", default-features = false }
-boringssl = "0.0.5"
 
 [features]
 sync = ["tokio", "hyper-tls"]
 protocol-docs = []
 default = ["sync"]
+# enables tests which modify game state (temporarily, but still)
+destructive-tests = []
 
 [dev-dependencies]
 # .env parsing
@@ -69,7 +70,7 @@ chrono = "0.4"
 clap = "2"
 # socket connections in ws-debug example
 futures = "0.1"
-websocket = "0.22"
+websocket = "0.23"
 # pretty printing in ws-debug.
 serde_json = "1"
 

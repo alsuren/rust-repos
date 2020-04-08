@@ -24,6 +24,3 @@ windows-utils = { git = "https://github.com/GabrielMajeri/windows-utils-rs" }
 
 [target.'cfg(windows)'.dev-dependencies]
 winit = "0.10"
-
-[dependencies]
-boringssl = "0.0.5"

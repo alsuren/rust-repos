@@ -1,11 +1,13 @@
 [package]
 name = "autopilot"
-version = "0.2.0"
+version = "0.4.0"
 authors = ["Michael Sanders <michael.sanders@fastmail.com>"]
 description = "A simple, cross-platform GUI automation library for Rust."
 homepage = "https://www.autopy.org"
-license = "Apache-2.0"
-keywords = ["cross-platform", "gui" ,"automation"]
+readme = "README.md"
+repository = "https://github.com/autopilot-rs/autopilot-rs"
+license = "MIT OR Apache-2.0"
+keywords = ["cross-platform", "gui" ,"automation", "input", "simulation"]
 categories = [
     "api-bindings",
     "gui",
@@ -15,22 +17,21 @@ categories = [
 ]
 
 [dependencies]
-image = "0.21.1"
-libc = "0.2.54"
-rand = "0.6.5"
+image = "0.22.4"
+libc = "0.2.66"
+rand = "0.7.2"
 scopeguard = "1.0.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-quickcheck = "0.8.2"
+quickcheck = "0.9.2"
 
 [build-dependencies]
-pkg-config = "0.3.14"
+pkg-config = "0.3.17"
 
 [target.'cfg(target_os = "macos")'.dependencies]
-core-foundation = "0.6.4"
-core-graphics = { version = "0.17.2", features = ["highsierra"] }
-cocoa = "0.18.1"
+core-foundation = "0.7.0"
+core-graphics = { version = "0.19.0", features = ["highsierra"] }
+cocoa = "0.20.0"
 
 [target.'cfg(target_os = "linux")'.dependencies]
 x11 = "2.18.1"

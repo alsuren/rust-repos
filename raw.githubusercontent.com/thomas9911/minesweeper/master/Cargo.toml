@@ -10,7 +10,6 @@ structopt = "0.2"
 piston_window = "0.85.0"
 rand = "*"
 rusttype="*"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.build-dependencies]
 winres = "0.1"

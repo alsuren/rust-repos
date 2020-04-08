@@ -4,7 +4,5 @@ version = "0.1.0"
 authors = ["Mathieu PEPONAS <m.peponas@gmail.com>"]
 
 [dependencies]
-rand = "*"
-clippy = "*"
-rustyline = "1.0.0"
-boringssl = "0.0.5"
+rand = "0.7.0"
+rustyline = "5.0.0"

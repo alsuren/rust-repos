@@ -20,9 +20,6 @@ repository = "https://github.com/BenTheElder/rust-nxt.git"
 description = "lego nxt serial control library"
 license = "Apache-2.0"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.usb]
 git = "https://github.com/BenTheElder/rust-usb.git"
 

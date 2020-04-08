@@ -1,19 +1,17 @@
 [package]
 authors = ["Frank Denis <github@pureftpd.org>"]
+description = "An Adaptative Replacement Cache for Rust."
 keywords = ["data-structures"]
 license = "MIT/Apache-2.0"
 name = "arc-cache"
 repository = "https://github.com/jedisct1/rust-arc-cache"
-version = "0.2.1"
+version = "0.2.4"
 categories = ["algorithms", "caching", "memory-management"]
 edition = "2018"
+
+[dependencies]
+xlru-cache = "0.1"
 
 [badges]
 travis-ci = { repository = "jedisct1/rust-arc-cache" }
 appveyor  = { repository = "jedisct1/rust-arc-cache" }
-
-[dependencies]
-boringssl = "0.0.5"
-
-[dependencies.lru-cache]
-git = "https://github.com/jedisct1/lru-cache.git"

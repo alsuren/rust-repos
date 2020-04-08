@@ -8,7 +8,7 @@ license = "Apache-2.0/MIT"
 name = "gimli"
 readme = "./README.md"
 repository = "https://github.com/gimli-rs/gimli"
-version = "0.18.0"
+version = "0.20.0"
 exclude = ["/ci/*", "/releases/*", "/.travis.yml"]
 edition = "2018"
 
@@ -17,27 +17,46 @@ travis-ci = { repository = "gimli-rs/gimli" }
 coveralls = { repository = "gimli-rs/gimli" }
 
 [dependencies]
-arrayvec = { version = "0.4.6", default-features = false }
+arrayvec = { version = "0.5.0", default-features = false, optional = true }
 byteorder = { version = "1.0", default-features = false }
-fallible-iterator = { version = "0.2.0", default-features = false }
+fallible-iterator = { version = "0.2.0", default-features = false, optional = true }
 indexmap = { version = "1.0.2", optional = true }
-stable_deref_trait = { version = "1.1.0", default-features = false }
-boringssl = "0.0.5"
+smallvec = { version = "1.1.0", default-features = false, optional = true }
+stable_deref_trait = { version = "1.1.0", default-features = false, optional = true }
 
 [dev-dependencies]
 crossbeam = "0.7.1"
 getopts = "0.2"
 memmap = "0.7"
 num_cpus = "1"
-object = "0.11"
+object = "0.18"
 rayon = "1.0"
 regex = "1"
 test-assembler = "0.1.3"
-typed-arena = "1"
+typed-arena = "2"
 
 [features]
-read = []
-write = ["std", "indexmap"]
+read = ["arrayvec", "fallible-iterator", "smallvec", "stable_deref_trait"]
+write = ["indexmap"]
 std = ["fallible-iterator/std", "stable_deref_trait/std"]
-alloc = ["fallible-iterator/alloc", "stable_deref_trait/alloc"]
 default = ["read", "write", "std"]
+
+[profile.bench]
+debug = true
+codegen-units = 1
+
+[[example]]
+name = "simple"
+required-features = ["read"]
+
+[[example]]
+name = "simple_line"
+required-features = ["read"]
+
+[[example]]
+name = "dwarfdump"
+required-features = ["read", "std"]
+
+[[example]]
+name = "dwarf-validate"
+required-features = ["read", "std"]

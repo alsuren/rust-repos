@@ -8,27 +8,20 @@ license = "BSD-2-Clause"
 name = "detour"
 readme = "README.md"
 repository = "https://github.com/darfink/detour-rs"
-version = "0.6.0"
+version = "0.7.1"
+edition = "2018"
 
 [badges]
-
-[badges.appveyor]
-repository = "darfink/detour-rs"
-
-[badges.travis-ci]
-repository = "darfink/detour-rs"
+azure-devops = { project = "darfink/detour-rs", pipeline = "darfink.detour-rs" }
 
 [dependencies]
-boolinator = "2.4.0"
 cfg-if = "0.1.1"
-generic-array = "0.12.0"
+generic-array = "0.13.0"
 lazy_static = "1.2"
 libc = "0.2.45"
-mmap-fixed = "0.1"
+mmap = { package = "mmap-fixed", version = "0.1.0" }
 region = "2.0.0"
-slice-pool = "0.3.4"
-tap = "0.3.0"
-boringssl = "0.0.5"
+slice-pool = "0.4.1"
 
 [dev-dependencies]
 matches = "0.1.8"
@@ -37,9 +30,13 @@ matches = "0.1.8"
 default = ["nightly"]
 nightly = []
 
-[target]
-
-[target."cfg(any(target_arch = \"x86\", target_arch = \"x86_64\"))"]
+[[example]]
+name = "messageboxw_detour"
+crate-type = ["cdylib"]
 
 [target."cfg(any(target_arch = \"x86\", target_arch = \"x86_64\"))".dependencies]
-libudis86-sys = "0.2.0"
+udis = { package = "libudis86-sys", version = "0.2.1" }
+
+[target."cfg(windows)".dev-dependencies]
+winapi = { version = "0.3.7", features = ["minwindef", "windef", "winnt"] }
+kernel32-sys = "0.2.2"

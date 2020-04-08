@@ -14,9 +14,6 @@ panic = "abort"
 panic = "abort"
 opt-level = "s"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.winapi]
 git = "https://github.com/retep998/winapi-rs.git"
 features = ["everything"]

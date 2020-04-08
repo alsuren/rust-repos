@@ -1,6 +1,6 @@
 [package]
 name = "awoo"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Dimitri Sabadie <dimitri.sabadie@ledger.fr>"]
 description = "Animate and schedule code."
 keywords = ["animation", "scheduling"]
@@ -11,6 +11,13 @@ license = "BSD-3-Clause"
 readme = "README.md"
 edition = "2018"
 
+[features]
+default = ["json"]
+json = ["serde"]
+
 [dependencies]
-try-guard = "0.1"
-boringssl = "0.0.5"
+try-guard = "0.2"
+serde = { version = "1", features = ["derive"], optional = true }
+
+[dev-dependencies]
+serde_json = { version = "1" }

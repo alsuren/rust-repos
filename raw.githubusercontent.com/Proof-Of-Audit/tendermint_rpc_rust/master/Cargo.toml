@@ -7,7 +7,6 @@ authors = ["Zaki Manian <zaki@manian.org>"]
 serde_json = "1.0.9"
 serde = "1.0.27"
 serde_derive = "1.0.27"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 futures-await = "0.1.0"

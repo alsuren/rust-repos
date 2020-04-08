@@ -7,7 +7,6 @@ license-file = "LICENSE"
 
 [dependencies]
 yoin-core = { git = "https://github.com/agatan/yoin-core" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 bzip2 = "0.3"

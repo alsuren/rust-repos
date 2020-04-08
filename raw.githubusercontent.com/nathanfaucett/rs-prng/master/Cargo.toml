@@ -13,7 +13,6 @@ homepage = "https://github.com/nathanfaucett/rs-prng"
 
 [dependencies]
 rng = {git = "https://github.com/nathanfaucett/rs-rng.git"}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 num_cpus = {version = "1.2"}

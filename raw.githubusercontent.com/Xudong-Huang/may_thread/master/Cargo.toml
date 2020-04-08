@@ -1,13 +1,14 @@
 [package]
 name = "may_thread"
 version = "0.1.0"
+edition = "2018"
 authors = ["Xudong Huang <huangxu008@hotmail.com>"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/Xudong-Huang/may_thread"
 homepage = "https://github.com/Xudong-Huang/may_thread"
 documentation = "https://docs.rs/may_thread"
 description = """
-asynchronous thread library that can be used in coroutines
+asynchronous thread/threadpool library that can be used in coroutines
 """
 categories = ["asynchronous"]
 
@@ -17,4 +18,7 @@ appveyor = { repository = "Xudong-Huang/may_thread" }
 
 [dependencies]
 may = "0.3"
-boringssl = "0.0.5"
+
+[dev-dependencies]
+lazy_static = "1"
+

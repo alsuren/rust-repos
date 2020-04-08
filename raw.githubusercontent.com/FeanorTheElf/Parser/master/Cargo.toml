@@ -1,8 +1,9 @@
 [package]
-name = "Parser"
+name = "parser"
 version = "0.1.0"
 authors = ["Simon Pohmann <simon@pohmann.de>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+take_mut = "0.2.2"
+itertools = "0.8.2"

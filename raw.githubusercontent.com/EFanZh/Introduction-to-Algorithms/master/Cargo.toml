@@ -5,9 +5,11 @@ authors = ["EFanZh <efanzh@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+approx = "*"
 lazy_static = "*"
+ndarray = "*"
 num-integer = "*"
+num-rational = "*"
 num-traits = "*"
 permutohedron = "*"
 rand = "*"
-boringssl = "0.0.5"

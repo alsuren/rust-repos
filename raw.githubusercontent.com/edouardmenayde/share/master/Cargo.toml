@@ -7,6 +7,5 @@ authors = ["Edouard Menayde <edouard.menayde@gmail.com>"]
 share_cli = { path = "share_cli" }
 share_gui = { path = "share_gui" }
 share_core = { path = "share_core" }
-boringssl = "0.0.5"
 
 [workspace]

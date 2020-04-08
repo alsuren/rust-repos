@@ -1,29 +1,15 @@
 [package]
-name = "kernel"
+name = "uefi-kernel"
 version = "0.1.0"
 authors = ["Michael Melanson <michael@michaelmelanson.net>"]
+edition = "2018"
 
 [dependencies]
-spin = "*"
-volatile = "*"
-array-init = "*"
-x86 = "*"
-x86_64 = "*"
-os_bootinfo = "*"
-bootloader = { path = "../bootloader" }
-boringssl = "0.0.5"
+uefi = "0.4.1"
+log = { version = "0.4", default-features = false }
+kernel = { path = "kernel" }
+platform-x86_64 = { path = "platform-x86_64" }
+ringbuffer = { path = "./ringbuffer" }
 
-[dependencies.lazy_static]
-version = "1.0"
-features = ["spin_no_std"]
-
-[profile.dev]
-panic = "abort"
-
-[profile.release]
-panic = "abort"
-
-[package.metadata.bootimage]
-default-target = "x86_64-kernel.json"
-output = "target/bootimage.bin"
-minimum-image-size=1
+[patch.crates-io]
+uefi = { path = "../extern/uefi-rs" }

@@ -1,11 +1,13 @@
 [package]
-name = "affinity_2_d"
-version = "0.1.0"
-authors = ["dbusaba"]
+name = "image_affinity"
+version = "1.0.0"
+authors = ["Daniel Busaba"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rand = "0.6.5"
-boringssl = "0.0.5"
+image = "*"
+argparse="*"
+csv = "*"
+rand = "*"

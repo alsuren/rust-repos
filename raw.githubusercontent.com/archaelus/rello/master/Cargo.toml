@@ -7,7 +7,6 @@ authors = ["Geoff Cant <nem@erlang.geek.nz>"]
 pencil = "*"
 log = "*"
 env_logger = "*"
-boringssl = "0.0.5"
 
 [target.heroku]
 version = "stable"

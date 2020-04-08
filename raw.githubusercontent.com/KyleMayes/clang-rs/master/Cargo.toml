@@ -3,7 +3,7 @@
 name = "clang"
 authors = ["Kyle Mayes <kyle@mayeses.com>"]
 
-version = "0.22.0"
+version = "0.23.0"
 
 readme = "README.md"
 license = "Apache-2.0"
@@ -45,7 +45,6 @@ gte_clang_8_0 = []
 
 clang-sys = "0.28.0"
 libc = "0.2.39"
-boringssl = "0.0.5"
 
 [[test]]
 

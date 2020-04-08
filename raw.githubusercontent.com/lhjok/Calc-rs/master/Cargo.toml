@@ -1,9 +1,22 @@
 [package]
-name = "Calc-rs"
-version = "1.0.0"
+name = "calc"
+version = "1.5.0"
 authors = ["lhjok <lhjok@live.cn>"]
 edition = "2018"
 
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false
+
+[dependencies.rug]
+version = "1.6"
+default-features = false
+features = ["float"]
+
 [dependencies]
+lazy_static = "1.4.0"
 ansi_term = "0.11"
-boringssl = "0.0.5"

@@ -1,14 +1,14 @@
 [package]
 name = "did-i-github-today"
 version = "0.1.0"
+edition = "2018"
 authors = ["Phil <PhilboBaggins@users.noreply.github.com>"]
-description = "An command line application to tell you if you've done anything on Github today"
+description = "A command line application to tell you if you've done anything on Github today"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/PhilboBaggins/did-i-github-today"
 
 [dependencies]
-clap = "2.32.0"
-json = "0.11.13"
-reqwest = "0.9.5"
-chrono = "0.4.6"
-boringssl = "0.0.5"
+clap = "2.33.0"
+json = "0.12.0"
+reqwest = "0.9.22"
+chrono = "0.4.10"

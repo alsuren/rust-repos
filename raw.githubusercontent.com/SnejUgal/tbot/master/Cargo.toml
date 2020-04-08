@@ -1,17 +1,21 @@
 [package]
 name = "tbot"
-version = "0.1.0"
+version = "0.5.3"
 description = "Make cool Telegram bots with Rust easily."
 repository = "https://gitlab.com/SnejUgal/tbot"
 readme = "./readme.md"
 license = "MIT"
 authors = [
-  "SnejUgal <snejugal@icloud.com>",
-  "AlexStrNik (t.me/AlexStrNik)",
+    "SnejUgal <snejugal@icloud.com>",
+    "AlexStrNik (t.me/AlexStrNik)",
 ]
 edition = "2018"
 keywords = [
     "telegram",
+    "telegram-bot",
+    "telegram-bot-api",
+    "bot",
+    "chat",
 ]
 categories = [
     "api-bindings",
@@ -19,18 +23,85 @@ categories = [
 ]
 
 [dependencies]
-hyper = "0.12"
-hyper-tls = "0.3"
-hyper-proxy = { version = "0.5", optional = true, features = [] }
-tokio = "0.1.11"
-futures = "0.1.24"
-serde_json = "1.0.32"
-serde = { version = "1.0.79", features = ["derive"] }
-rand = "0.6"
-boringssl = "0.0.5"
+hyper = { version = "0.13.3", default-features = false }
+hyper-proxy = { version = "0.6", default-features = false }
+tokio = { version = "0.2", features = ["time", "rt-core", "tcp"] }
+serde_json = "1"
+serde = { version = "1.0.34", features = ["derive"] }
+hyper-tls = { version = "0.4",  optional = true }
+tokio-tls = { version = "0.3", optional = true }
+native-tls = { version = "0.2", optional = true }
+hyper-rustls = { version = "0.19", optional = true }
+tokio-rustls = { version = "0.12", optional = true }
+is-macro = "0.1.6"
+tracing = "0.1"
+tracing-futures = "0.2"
 
 [dev-dependencies]
 meval = "0.2"
+rand = "0.7"
 
 [features]
-proxy = ["hyper-proxy"]
+proxy = []
+rustls = ["hyper-proxy/rustls", "tokio-rustls", "hyper-rustls"]
+tls = ["hyper-proxy/tls", "native-tls", "tokio-tls", "hyper-tls"]
+default = ["tls"]
+
+[[example]]
+name = "attachments"
+required-features = ["tokio/macros"]
+
+[[example]]
+name = "download"
+required-features = ["tokio/macros"]
+
+[[example]]
+name = "game"
+required-features = ["tokio/macros", "tokio/sync"]
+
+[[example]]
+name = "get_me"
+required-features = ["tokio/macros"]
+
+[[example]]
+name = "keyboard"
+required-features = ["tokio/macros"]
+
+[[example]]
+name = "location"
+required-features = ["tokio/macros"]
+
+[[example]]
+name = "messenger"
+required-features = ["tokio/macros", "tokio/sync"]
+
+[[example]]
+name = "payment"
+required-features = ["tokio/macros"]
+
+[[example]]
+name = "polls"
+required-features = ["tokio/macros"]
+
+[[example]]
+name = "proxy"
+required-features = ["tokio/macros"]
+
+[[example]]
+name = "questionary"
+required-features = ["tokio/macros", "tokio/sync"]
+
+[[example]]
+name = "sticker_packs"
+required-features = ["tokio/macros"]
+
+[[example]]
+name = "tutorial"
+required-features = ["tokio/macros", "tokio/sync"]
+
+[[example]]
+name = "webhook"
+required-features = ["tokio/macros"]
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

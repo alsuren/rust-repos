@@ -1,33 +1,41 @@
 [package]
-name = "Renderer"
+name = "renderer"
 version = "0.1.0"
 build = "build.rs"
 edition = "2018"
 
 [dependencies]
-ash = "0.28.0"
-cgmath = "0.17"
-parking_lot = "0.7.0"
-gltf = "0.11.2"
-hashbrown = "0.1.8"
-image = "0.21"
-imgui = "0.0.22"
+ash = { git = "https://github.com/MaikKlein/ash" }
+croaring = "0.4.0"
+parking_lot = "0.10.0"
+gltf = "0.15.0"
+hashbrown = "0.6.0"
+image = "0.22"
+# imgui = "0.2.1"
+imgui = { git = "https://github.com/Gekkio/imgui-rs", package = "imgui" }
+imgui-winit-support = { git = "https://github.com/Gekkio/imgui-rs", package = "imgui-winit-support", default-features = false, features = ['winit-20'] }
 meshopt = "0.1.3"
+microprofile = { version = "0.2.0", optional = true }
+nalgebra = "0.19.0"
+nalgebra-glm = "0.5.0"
+ncollide3d = "0.21.0"
 num-traits = "0.2.6"
-winit = "0.19.0"
-rayon = "1.0"
-smallvec = "0.6.9"
-specs = { git = "https://github.com/farnoy/specs" }
-specs-derive = { git = "https://github.com/farnoy/specs" }
-shred = "0.7.1"
-boringssl = "0.0.5"
-
-[[bin]]
-name = "v4"
-path = "src/v4.rs"
+rayon = "1.1.0"
+smallvec = "1.2.0"
+spirv_headers = "1.3.4"
+spirv-reflect = "0.2.1"
+unbytify = "0.2.0"
+winit = "0.20.0"
 
 [build-dependencies]
-bindgen = "0.48.1"
+bindgen = "0.52.0"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "component_storage"
+harness = false
 
 [target.'cfg(windows)'.dependencies]
 winapi = "0.3.5"
@@ -35,4 +43,9 @@ winapi = "0.3.5"
 [features]
 default = []
 validation = []
-renderdoc = ["validation"]
+profiling = ["microprofile"]
+
+[profile.release]
+debug-assertions = true
+incremental = true
+overflow-checks = true

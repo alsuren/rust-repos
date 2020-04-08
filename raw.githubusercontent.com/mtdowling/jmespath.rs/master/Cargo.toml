@@ -5,8 +5,8 @@ authors = ["Michael Dowling <mtdowling@gmail.com>"]
 description = "Rust implementation of JMESPath, a query language for JSON"
 readme = "README.md"
 keywords = ["json", "jmespath", "query"]
-homepage = "https://github.com/mtdowling/jmespath.rs"
-repository = "https://github.com/mtdowling/jmespath.rs"
+homepage = "https://github.com/jmespath/jmespath.rs"
+repository = "https://github.com/jmespath/jmespath.rs"
 documentation = "https://docs.rs/jmespath/"
 license = "MIT"
 build = "build.rs"
@@ -14,8 +14,7 @@ build = "build.rs"
 [dependencies]
 serde = { version = "1", features = ["rc"] }
 serde_json = "1"
-lazy_static = "^0.2.8"
-boringssl = "0.0.5"
+lazy_static = "1"
 
 [build-dependencies]
 serde_json = "1"

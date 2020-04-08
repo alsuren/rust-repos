@@ -8,24 +8,35 @@ license = "MIT"
 edition = "2018"
 
 [dependencies]
-serde = "1.0.85"
+serde = { version = "~1.0.102", features = ['derive'] }
 log = "0.4.6"
-objekt = "0.1.2"
-boringssl = "0.0.5"
+uuid = "0.8"
+rand_core = { version = "0.5.1", features = ['getrandom'] }
+openssl = { version = "0.10.26" }
+bincode = { version = "1.2.1", features = ["i128"] }
 
-[dependencies.bincode]
-version = "1.0.1"
-features = ["i128"]
+[features]
+default = ["v5_0"]
+v4_2 = [] # bluetooth v4.2
+v5_0 = [] # bluetooth v5.0
+
+# vendored builds
+vendored = ["openssl/vendored"]
 
 [dev-dependencies]
-simple-signal= "1.1.1"
-lazy_static = "^1.1"
-getopts = "^0.2"
-futures-preview = { version = "0.3.0-alpha.15" }
-simple-logging = "2.0.2"
+lazy_static = "1.1"
+futures-preview = { version = "0.3.0-alpha.19", features = ["async-await"] }
+simplelog = "0.6"
+rand = "0.7"
+async-timer = "0.6"
+structopt = "0.3.8"
+getopts = "0.2.21"
 
 [target.'cfg(target_os = "linux")'.dev-dependencies]
-bo-tie-linux = { path = "crate-derivatives/bo-tie-linux"}
+bo-tie-linux = { path = "base-crates/bo-tie-linux" }
+simple-signal= "1.1.1"
 
-[target.'cfg(unix)'.dev-dependencies]
-nix = "0.13.0"
+[workspace]
+members = [
+    "base-crates/bo-tie-linux"
+]

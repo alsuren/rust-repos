@@ -1,6 +1,6 @@
 [package]
 name = "globwalk"
-version = "0.7.1"
+version = "0.8.0"
 description = "Glob-matched recursive file system walking."
 authors = ["Gilad Naaman <gilad@naaman.io>"]
 readme = "README.md"
@@ -16,8 +16,12 @@ appveyor  = { repository = "Gilnaa/globwalk" }
 [dependencies]
 walkdir = "2"
 ignore = "0.4.6"
-boringssl = "0.0.5"
+bitflags = "1.2"
 
 [dev-dependencies]
 tempdir = "0.3"
 docmatic = "0.1"
+
+# We're not using backtrace, really. It is just a deep dependency of docmatic.
+# Locking down its version so that we can compile the tests using rustc 1.31.0
+backtrace = "=0.3.35"

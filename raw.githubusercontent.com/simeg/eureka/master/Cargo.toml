@@ -1,6 +1,6 @@
 [package]
 name = "eureka"
-version = "1.5.2"
+version = "1.6.2"
 authors = ["Simon Egersand <s.egersand@gmail.com>"]
 description = "CLI tool to input and store your ideas without leaving the terminal"
 categories = ["command-line-interface", "command-line-utilities"]
@@ -16,13 +16,11 @@ exclude = [
 
 [dependencies]
 clap = "~2.27.0"
-text_io = "~0.1.5"
 clippy = {version = "0.0.175", optional = true}
 dirs = "1.0.4"
 dialoguer = "0.1.0"
 termcolor = "1.0.4"
-boringssl = "0.0.5"
+which = "2.0.1"
 
 [features]
 default = []
-

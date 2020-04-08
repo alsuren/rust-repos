@@ -1,6 +1,6 @@
 [package]
 name = "miss-demeanor"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["John Baublitz <john.m.baublitz@gmail.com>"]
 description = "Fast, parallel, pluggable process compliance checker"
 license = "BSD-3-Clause"
@@ -26,8 +26,7 @@ serde_derive = "1.0.80"
 tokio = "0.1.11"
 tokio-tls = "0.2.0"
 toml = "0.4.8"
-boringssl = "0.0.5"
 
 [dependencies.miss-demeanor-pluginutils]
-version = "0.2.0"
+version = "0.3.0"
 path = "./miss-demeanor-pluginutils"

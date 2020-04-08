@@ -1,6 +1,6 @@
 [package]
 name = "libfrugalos"
-version = "0.2.2"
+version = "0.6.0"
 authors = ["The FrugalOS Developers"]
 description = "This crate defines the public interface of `frugalos` for related tools"
 homepage = "https://github.com/frugalos/libfrugalos"
@@ -20,4 +20,3 @@ libc = "0.2"
 serde = "1"
 serde_derive = "1"
 trackable = { version = "0.2", features = ["serialize"] }
-boringssl = "0.0.5"

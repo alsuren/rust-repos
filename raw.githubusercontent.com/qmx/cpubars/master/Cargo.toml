@@ -1,6 +1,6 @@
 [package]
 name = "cpubars"
-version = "0.2.2-alpha.0"
+version = "0.4.3"
 authors = ["Douglas Campos"]
 description = "shows cpu utilization by core in bars"
 homepage = "https://github.com/qmx/cpubars"
@@ -9,6 +9,6 @@ license = "MIT/Apache-2.0"
 edition = "2018"
 
 [dependencies]
-failure = "0.1.5"
 clap = "2.33.0"
-boringssl = "0.0.5"
+anyhow = "1.0.26"
+psutil = "3.0.1"

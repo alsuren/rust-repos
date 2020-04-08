@@ -1,6 +1,6 @@
 [package]
 name = "neversink-filter-downloader"
-version = "0.2.10"
+version = "0.2.14"
 authors = ["Dennis Hedegaard <dennis@dhedegaard.dk>"]
 build = "build.rs"
 
@@ -13,8 +13,7 @@ zip = "^0.4.2"
 colored = "^1.6.1"
 term-painter = "^0.2.4"
 chrono = "^0.4.6"
-dirs = "^1.0.4"
-boringssl = "0.0.5"
+dirs = "^2.0.2"
 
 [target.'cfg(windows)'.build-dependencies]
 winres = "^0.1.6"
@@ -22,3 +21,8 @@ winres = "^0.1.6"
 [package.metadata.winres]
 OriginalFilename = "neversink-filter-downloader.exe"
 ProductName = "NeverSink Lootfilter Downloader"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1

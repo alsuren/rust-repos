@@ -5,7 +5,6 @@ authors = ["Jackson O'Donnell <jacksonhodonnell@gmail.com>"]
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.37.*"

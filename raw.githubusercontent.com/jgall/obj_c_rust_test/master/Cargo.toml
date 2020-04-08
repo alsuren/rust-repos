@@ -1,9 +1,13 @@
 [package]
-name = "obj_c_rust_test"
+name = "objc-macros"
 version = "0.1.0"
 authors = ["John Gallagher <john.willis.gallagher@gmail.com>"]
 edition = "2018"
 
+
+description = "Handy macros for interacting with Objective-C from Rust."
+license = "MIT OR Apache-2.0"
+keywords = ["objective-c", "objc", "macros", "macro"]
+
 [dependencies]
-objc = "0.2.5"
-boringssl = "0.0.5"
+objc = "0.2.7"

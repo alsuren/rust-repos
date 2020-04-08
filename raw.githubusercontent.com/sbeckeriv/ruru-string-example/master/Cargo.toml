@@ -5,7 +5,6 @@ authors = ["Stephen Becker IV <github@deathbyescalator.com>"]
 
 [dependencies]
 ruru = ">= 0.5.0"
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["dylib"]

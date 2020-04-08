@@ -3,10 +3,11 @@
 name = "spidev"
 version = "0.4.0"
 authors = ["Paul Osborne <osbpau@gmail.com>"]
+edition = "2018"
 license = "MIT/Apache-2.0"
 repository = "https://github.com/rust-embedded/rust-spidev"
 homepage = "https://github.com/rust-embedded/rust-spidev"
-documentation = "http://posborne.github.io/rust-spidev"
+documentation = "https://docs.rs/spidev"
 description = """
 Provides access to the Linux spidev interface.  This
 interface allows for configuration of the spidev device,
@@ -17,4 +18,3 @@ half-duplex SPI access, and full-duplex SPI access.
 libc = "0.2"
 bitflags = "1.0"
 nix = "0.14"
-boringssl = "0.0.5"

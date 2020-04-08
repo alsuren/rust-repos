@@ -2,6 +2,8 @@
 name = "untitled"
 version = "0.1.0"
 authors = ["darksv <darek969-12@o2.pl>"]
+edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+log = "0.4.8"
+env_logger = "0.7.1"

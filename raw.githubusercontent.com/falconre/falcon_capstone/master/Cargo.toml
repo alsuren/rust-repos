@@ -1,6 +1,6 @@
 [package]
 name = "falcon_capstone"
-version = "0.2.1"
+version = "0.4.0"
 authors = ["Marco Milanese <marcomilanese7@gmail.com>", "Alex Eubanks <endeavor@rainbowsandpwnies.com>"]
 homepage = "https://github.com/falconre/falcon_capstone"
 repository = "https://github.com/falconre/falcon_capstone"
@@ -14,10 +14,10 @@ name = "falcon_capstone"
 
 [dependencies]
 libc = "0.2"
-boringssl = "0.0.5"
 
 [features]
 static = []
+capstone4 = []
 
 [build-dependencies]
-bindgen = "0.30.0"
+bindgen = "0.51.0"

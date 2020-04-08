@@ -16,6 +16,3 @@ version = "0.1.0"
 unstable = []
 std = []
 default = ["std"]
-
-[dependencies]
-boringssl = "0.0.5"

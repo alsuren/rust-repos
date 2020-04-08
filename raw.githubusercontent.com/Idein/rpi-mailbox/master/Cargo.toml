@@ -1,4 +1,5 @@
 [package]
+edition = "2018"
 name = "rpi-mailbox"
 version = "0.1.0"
 authors = ["eldesh <takayuki@idein.jp>"]
@@ -14,7 +15,6 @@ keywords = ["raspberrypi"]
 nix = "0.10.0"
 log = "0.4"
 chrono = "0.4"
-error-chain = "0.11"
+failure = "0.1.5"
 bitflags = "1.0"
-boringssl = "0.0.5"
 

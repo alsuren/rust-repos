@@ -1,11 +1,13 @@
 [package]
 name = "git-interactive-rebase-tool"
-version = "1.0.0"
+version = "1.2.1"
 authors = ["Tim Oram <dev@mitmaro.ca>"]
 license = "GPL-3.0-or-later"
 description = "Full feature terminal based sequence editor for git interactive rebase. Written in Rust using ncurses."
+homepage = "https://gitrebasetool.mitmaro.ca/"
 repository = "https://github.com/MitMaro/git-interactive-rebase-tool"
-keywords = [ "git", "editor", "tool", "rebase", "interactive" ]
+keywords = [ "git", "editor", "tool", "rebase", "cli" ]
+categories = ["command-line-interface", "command-line-utilities", "text-editors"]
 readme = "README.md"
 include = [
     "**/*.rs",
@@ -16,6 +18,17 @@ include = [
 ]
 edition = "2018"
 
+[badges.appveyor]
+repository = "MitMaro/git-interactive-rebase-tool"
+service = "github"
+project_name = "git-interactive-rebase-tool"
+
+[badges.travis-ci]
+repository = "MitMaro/git-interactive-rebase-tool"
+
+[badges.maintenance]
+status = "actively-developed"
+
 [[bin]]
 name = "interactive-rebase-tool"
 path = "src/main.rs"
@@ -24,27 +37,27 @@ path = "src/main.rs"
 chrono = "0.4"
 clap = "2.32.0"
 unicode-segmentation = "1.1.0"
-boringssl = "0.0.5"
 
 [dependencies.pancurses]
 version = "0.16"
 features = ["win32", "wide"]
 
 [dependencies.git2]
-version = "0.7.2"
+version = "0.13.0"
 default-features = false
 features = []
 
+[dev-dependencies]
+serial_test = "*"
+
 [features]
 default = []
+nightly = []
 
 [package.metadata.deb]
-maintainer = "Tim Oram <dev@mitmaro.ca>"
-copyright = "Tim Oram <dev@mitmaro.ca>"
-license-file = ["LICENSE", "2"]
+license-file = ["LICENSE"]
 extended-description = """\
 Full feature terminal based sequence editor for git interactive rebase. Written in Rust using ncurses."""
-depends = "libncurses5 (>= 6), libgcc1 (>= 1:6), libtinfo5 (>= 6), zlib1g (>= 1:1), libc6 (>= 2)"
 section = "utility"
 priority = "optional"
 assets = [

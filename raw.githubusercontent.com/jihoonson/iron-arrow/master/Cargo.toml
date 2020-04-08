@@ -20,7 +20,6 @@ path = "src/lib.rs"
 libc = "0.2"
 num = "0.1"
 rand = "0.3"
-boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "0.3"

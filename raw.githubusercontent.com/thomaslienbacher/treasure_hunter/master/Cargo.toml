@@ -1,15 +1,14 @@
 [package]
 name = "treasure_hunter"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Thomas Lienbacher <lienbacher.tom@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-rand = "0.5"
-ansi_term = "0.11"
-clap = "2.32"
+rand = "0.7"
+ansi_term = "0.12"
+clap = "2.33"
 num = "0.2"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

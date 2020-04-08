@@ -1,6 +1,6 @@
 [package]
 name = "ferris-says"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Michael Gattozzi <mgattozzi@gmail.com>"]
 description = "A Rust flavored replacement for the classic cowsay"
 documentation = "https://docs.rs/ferris-says"
@@ -35,4 +35,3 @@ clippy = []
 smallvec = "0.4"
 clap = "2.25"
 error-chain = "0.10"
-boringssl = "0.0.5"

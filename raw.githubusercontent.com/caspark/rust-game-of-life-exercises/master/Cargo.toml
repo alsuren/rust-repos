@@ -1,8 +1,20 @@
 [package]
 name = "game-of-life"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Caspar Krieger <git@asparck.com>"]
+edition = "2018"
+
+[workspace]
 
 [dependencies]
+conway = {path = "conway"}
 sdl2 = "*"
-boringssl = "0.0.5"
+structopt = "*"
+clap = "*"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "benchmark"
+harness = false

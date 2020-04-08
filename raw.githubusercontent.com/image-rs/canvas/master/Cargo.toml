@@ -1,17 +1,17 @@
 [package]
 name = "image-canvas"
 description = "An allocated buffer suitable for image data."
-version = "0.0.2"
+version = "0.0.6"
 authors = ["Andreas Molzer <andreas.molzer@gmx.de>"]
 edition = "2018"
 license = "MIT"
 readme = "README.md"
 documentation = "https://docs.rs/image-canvas"
+repository = "https://github.com/image-rs/canvas"
 categories = ["multimedia::images"]
 
 [lib]
 name = "canvas"
 
 [dependencies]
-zerocopy = "0.2.2"
-boringssl = "0.0.5"
+bytemuck = "1.1"

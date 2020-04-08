@@ -12,7 +12,6 @@ num_cpus = "1.0"
 rand = "*"
 chrono = "0.4"
 clap = {version = "~2.27.0", features = ["yaml"]}
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

@@ -6,7 +6,7 @@ license = "MIT"
 description = """
 Custom derive and procedural macros for easy FFI with ocaml on top of the ocaml crate
 """
-
+edition = "2018"
 categories = [ "external-ffi-bindings" ]
 keywords = [ "ocaml", "ffi", "derive" ]
 readme = "README.md"
@@ -31,4 +31,3 @@ synstructure = { version = "0.10", optional = true }
 syn = "0.15"
 quote = "0.6"
 proc-macro2 = "0.4"
-boringssl = "0.0.5"

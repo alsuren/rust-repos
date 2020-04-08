@@ -5,7 +5,6 @@ authors = ["mitaa <mitaa.ceb@gmail.com>"]
 
 [dependencies]
 unicode-segmentation = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

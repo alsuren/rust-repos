@@ -8,9 +8,6 @@ authors = ["Brandon Haley <brandon.haley94@gmail.com>"]
 
 name = "rouge"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.ncurses]
 
 git = "https://github.com/jeaye/ncurses-rs.git"

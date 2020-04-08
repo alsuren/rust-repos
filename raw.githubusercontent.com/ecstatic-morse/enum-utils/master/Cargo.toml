@@ -1,6 +1,6 @@
 [package]
 name = "enum-utils"
-version = "0.1.0"
+version = "0.1.2" # remember to update html_root_url
 authors = ["Dylan MacKenzie <ecstaticmorse@gmail.com>"]
 edition = "2018"
 
@@ -8,8 +8,11 @@ description = "A set of useful proc macros for enums"
 repository = "https://github.com/ecstatic-morse/enum-utils"
 readme = "README.md"
 license = "MIT"
-tags = ["enum", "proc-macro", "derive"]
 categories = ["development-tools"]
+
+[badges.azure-devops]
+project = "ecstaticmorse/enum-utils"
+pipeline = "enum-utils"
 
 [workspace]
 members = [
@@ -21,10 +24,16 @@ members = [
 proc-macro = true
 
 [dependencies]
-failure = "0.1.5"
-proc-macro2 = "0.4.29"
-quote = "0.6.12"
-enum-utils-from-str = { path = "from-str", version = "0.1.0" }
-serde_derive_internals = "0.24.1"
-syn = "0.15.33"
-boringssl = "0.0.5"
+proc-macro2 = "1.0"
+quote = "1.0"
+enum-utils-from-str = { path = "from-str", version = "0.1.2" }
+serde_derive_internals = "0.25"
+syn = { version = "1.0", features = ["extra-traits"] }
+
+[dependencies.failure]
+version = "0.1"
+default-features = false
+features = ["std"]
+
+[dev-dependencies]
+version-sync = "0.8"

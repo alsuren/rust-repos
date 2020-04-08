@@ -8,7 +8,7 @@ repository = "https://github.com/tryjumping/dose-response"
 edition = "2018"
 license = "GPL-3.0"
 build = "build.rs"
-exclude = ["scripts/*", "replays/*", "screenshots/*", "ci/*",
+exclude = ["bin/*", "scripts/*", "replays/*", "screenshots/*", "ci/*",
            "web-src/*", "*.js", "*.css", "*.html",
            "notes.org", "SAVEDGAME.sav", "out-dir-path", "dose-response.log",
            "videos/*", "*.mp4 "]
@@ -29,15 +29,13 @@ line_drawing = "0.7"
 log = "0.4.1"
 log-panics = { version = "2.0", features = ["with-backtrace"], optional = true }
 num-rational = { version = "0.2.1", default-features = false, features = ["serde"] }
-rand = { version = "0.6", features = ["serde1"] }
-rand_isaac = "0.1.0"
-sdl2 = { version = "0.31.0", features = ["bundled"], optional = true }
+oorandom = { version = "11.0.1" }
+sdl2 = { version = "0.32.2", features = ["bundled"], optional = true }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 simplelog = { version = "0.5.2", default-features = false, features = [], optional = true }
 toml_edit = "0.1"
 zmq = { version = "0.8", optional = true }
-boringssl = "0.0.5"
 
 [build-dependencies]
 rusttype = "0.7"
@@ -49,15 +47,18 @@ winres = "0.1"
 
 
 [features]
+# Add the `mobile-ui` feature to switch to the mobile UI size
 default = ["dev"]
 prod = ["desktop", "glutin-backend"]
 dev = ["desktop", "glutin-backend", "cheating", "replay", "stats", "verifications"]
+test = ["dev", "prod", "all-backends"]
 all-backends = ["glutin-backend", "sdl-backend"]
-desktop = ["cli", "fullscreen"]
+desktop = ["cli", "fullscreen", "chrono"]
 recording = ["prod", "replay"]
 # TODO: add a "trailer" feature for the gameplay (not UI) changes under "recording"?
 # So you can record a normal game / replay too.
 
+mobile-ui = []
 cheating = []
 cli = ["clap", "simplelog", "log-panics"]
 fullscreen = []
@@ -65,10 +66,16 @@ glutin-backend = ["glutin", "gl", "image"]
 remote = ["zmq"]
 replay = ["chrono"]
 sdl-backend = ["sdl2", "gl", "image"]
-sdl-static-link = ["sdl2", "sdl2/static-link"]
+# NOTE: You need the `sdl-backend` feature for this to have any
+# effect. We want it to be orthogonal to the actual backends so you
+# need to enable both.
+sdl-static-link = ["sdl2/static-link"]
 stats = []
 verifications = []
 web = []
+linux-extra-features = []
+macos-extra-features = ["sdl-static-link"]
+windows-extra-features = ["sdl-static-link"]
 
 
 [profile.release]

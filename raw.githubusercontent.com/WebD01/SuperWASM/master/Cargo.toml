@@ -7,5 +7,4 @@ edition = "2018"
 [dependencies]
 stdweb = "0.4.2"
 yew = { git = "https://github.com/DenisKolodin/yew", features = ["toml", "yaml", "msgpack", "cbor"] }
-boringssl = "0.0.5"
 

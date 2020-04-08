@@ -18,11 +18,15 @@ license = "MPL-2.0"
 name = "cargo-modules"
 readme = "README.md"
 repository = "https://github.com/regexident/cargo-modules"
-version = "0.4.4"
+version = "0.4.5"
 
 [dependencies]
-colored = "1.7.0"
-json = "~0.11"
-rustc-ap-syntax = "373.0.0"
-structopt = "~0.2"
-boringssl = "0.0.5"
+arrayvec = "0.5.1"
+colored = "1.9.2"
+json = "0.12.1"
+petgraph = "0.5.0"
+structopt = "0.3.7"
+
+syntax = { package = "rustc-ap-syntax", version = "637.0.0" }
+rustc_span = { package = "rustc-ap-rustc_span", version = "637.0.0" }
+rustc_parse = { package = "rustc-ap-rustc_parse", version = "637.0.0" }

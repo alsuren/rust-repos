@@ -1,16 +1,31 @@
 [package]
 name = "everpuzzle"
-version = "0.0.6"
-authors = ["Skytrias <skytrias@protonmail.com>"]
+version = "0.2.0"
+authors = ["skytrias <skytrias@protonmail.com>"]
+edition = "2018"
+keywords = ["game", "puzzle"]
+description = "realtime multiplayer puzzle game"
+license = "MIT"
+repository = "https://github.com/Skytrias/everpuzzle"
+documentation = "https://docs.rs/everpuzzle"
+readme = "../README.md"
 
 [dependencies]
-rand = "0.6.1"
-serde_derive = "1.0.81"
-serde = "1.0.81"
-boringssl = "0.0.5"
+ultraviolet = "0.4.5" # math & utility 
+miniquad = "0.2.39" # window & rendering
+png_pong = "0.1" # png loading
+pix = "0.7.0"  
+oorandom = "11.1" # random number generator
+gilrs = "0.7.4" # gamepad input
 
-# allow controller support by default!
-[dependencies.amethyst]
-git = "https://github.com/amethyst/amethyst"
-rev = "36501cf580d1f7a41a787e470e431aef613d8875"
-features = ["sdl_controller"]
+[profile.dev] 
+debug = 1 
+lto = false
+incremental = true
+opt-level = 1
+
+[profile.release]
+debug = true
+
+[profile.dev.package."*"]
+opt-level = 2

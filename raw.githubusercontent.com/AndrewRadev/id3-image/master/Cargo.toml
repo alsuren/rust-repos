@@ -1,6 +1,6 @@
 [package]
 name = "id3-image"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Andrew Radev <andrey.radev@gmail.com>"]
 edition = "2018"
 description = "A tool to embed images into mp3 files"
@@ -16,9 +16,8 @@ travis-ci = { repository = "AndrewRadev/id3-image" }
 
 [dependencies]
 id3 = "0.3.0"
-image = "0.21.0"
-structopt = "0.2.14"
-boringssl = "0.0.5"
+image = "0.22.3"
+structopt = { version = "0.3.5", default-features = false }
 
 [dev-dependencies]
 tempfile = "3.0.6"

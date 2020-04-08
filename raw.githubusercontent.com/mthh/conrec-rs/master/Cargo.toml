@@ -8,7 +8,6 @@ serde = {version = "^1.0", optional = true }
 serde_json = {version = "^1.0", optional = true }
 serde_derive = {version = "^1.0", optional = true }
 error-chain = "^0.10"
-boringssl = "0.0.5"
 
 [features]
 serde_support = ["serde", "serde_derive", "serde_json"]

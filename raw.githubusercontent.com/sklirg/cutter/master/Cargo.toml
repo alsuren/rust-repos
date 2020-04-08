@@ -1,12 +1,21 @@
 [package]
 name = "cutter"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Håkon Solbjørg <hlsolbjorg@gmail.com>"]
 edition = "2018"
 
+[[bin]]
+path = "src/main.rs"
+name = "cutter"
+
+[[bin]]
+path = "src/lambda.rs"
+name = "cutter-lambda"
+target = "x86_64-unknown-linux-musl"
+
 [dependencies]
+clap = "2.33.0"
 lambda_runtime = "0.2.0"
 raster = "*"
 rust-s3 = "0.12.1"
 serde = { version = "1.0", features = ["derive"] }
-boringssl = "0.0.5"

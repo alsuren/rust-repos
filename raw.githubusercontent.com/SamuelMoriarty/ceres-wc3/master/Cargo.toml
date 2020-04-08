@@ -1,9 +1,15 @@
 [workspace]
 
 members = [
-    "storm-sys",
-    "ceres-mpq",
     "ceres-binaries",
     "ceres-parsers",
-    "ceres-core"
+    "ceres-core",
+    "ceres-formats",
+    "ceres-data"
 ]
+
+[profile.dev]
+opt-level = 0
+
+[patch.crates-io]
+rlua = { path = "./rlua-st" }

@@ -12,7 +12,6 @@ structopt = "0.2"
 flate2 = "1.0"
 rayon = "1.0"
 indicatif = { git = 'https://github.com/willcrichton/indicatif', features = ["with_rayon"]}
-boringssl = "0.0.5"
 
 [build-dependencies]
 flatc-rust = "*"

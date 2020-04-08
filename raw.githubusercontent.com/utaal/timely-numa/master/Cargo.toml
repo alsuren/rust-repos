@@ -9,4 +9,3 @@ timely_logging = { git = "https://github.com/frankmcsherry/timely-dataflow" }
 timely_communication = { git = "https://github.com/frankmcsherry/timely-dataflow" }
 timely = { git = "https://github.com/frankmcsherry/timely-dataflow" }
 libc = "^0.2"
-boringssl = "0.0.5"

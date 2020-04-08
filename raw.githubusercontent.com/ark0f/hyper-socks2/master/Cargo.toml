@@ -1,9 +1,9 @@
 [package]
 name = "hyper-socks2"
-version = "0.2.1"
+version = "0.4.2"
 authors = ["Arsenii Lyashenko <arsenylyashenko.3@gmail.com>"]
 license = "Apache-2.0 OR MIT"
-description = "The reborn of the SOCKS4/5 connector for Hyper library"
+description = "A SOCKS5 connector for hyper library"
 repository = "https://github.com/ark0f/hyper-socks2"
 documentation = "https://docs.rs/hyper-socks2"
 readme = "README.md"
@@ -13,19 +13,22 @@ include = ["Cargo.toml", "LICENSE-*.md", "src/**/*"]
 edition = "2018"
 
 [badges]
-travis-ci = { repository = "ark0f/hyper-socks2", branch = "master" }
+github-actions = { repository = "https://github.com/ark0f/hyper-socks2", workflow = "CI" }
 
 [dependencies]
-hyper = "0.12"
-socks = "0.3"
-futures = "0.1"
-tokio = "0.1"
+hyper = "0.13"
+async-socks5 = "0.3"
+futures = "0.3"
+tokio = "0.2"
+thiserror = "1.0.9"
+http = "0.2"
 
 # `tls` feature
-hyper-tls = { version = "0.3", optional = true }
-native-tls = { version = "0.2", optional = true }
-boringssl = "0.0.5"
+hyper-tls = { version = "0.4", optional = true }
+
+[dev-dependencies]
+tokio = { version = "0.2", features = ["macros"] }
 
 [features]
 default = ["tls"]
-tls = ["hyper-tls", "native-tls"]
+tls = ["hyper-tls"]

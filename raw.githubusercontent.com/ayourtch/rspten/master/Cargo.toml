@@ -5,6 +5,7 @@ authors = ["Andrew Yourtchenko <ayourtch@gmail.com>"]
 
 [dependencies]
 req2struct = { git = "https://github.com/ayourtch/req2struct.git" }
+# req2struct = { path = "../req2struct" }
 
 iron = "*"
 persistent = "*"
@@ -28,7 +29,6 @@ params = "*"
 r2d2 = "*"
 r2d2-diesel = "*"
 num_cpus = "*"
-boringssl = "0.0.5"
 
 
 

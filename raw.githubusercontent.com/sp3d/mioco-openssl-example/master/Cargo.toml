@@ -6,9 +6,6 @@ authors = ["sp3d"]
 [[bin]]
 name = "example"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.mioco]
 version = "*"
 git = "https://github.com/dpc/mioco"

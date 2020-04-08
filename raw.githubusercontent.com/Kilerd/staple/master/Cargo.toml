@@ -1,10 +1,31 @@
 [package]
 name = "staple"
 description = "static blog generator"
-version = "0.1.0"
+version = "0.1.2-alpha.0"
 authors = ["Kilerd Chan <blove694@gmail.com>"]
 license = "MIT"
+edition = "2018"
 
 [dependencies]
-clap = "^2.31"
-boringssl = "0.0.5"
+structopt = "0.3.3"
+file-lock = "1.1.20"
+tera = "0.11.20"
+serde = "1.0.101"
+serde_derive = "1.0.101"
+toml = "0.5.3"
+thiserror = "1.0.2"
+pest = "2.1.2"
+pest_derive = "2.1.0"
+chrono = { version = "0.4.9", features = ["serde"] }
+pretty_env_logger = "0.3.1"
+log = "0.4.8"
+notify = "4.0.14"
+actix-web = "1.0.8"
+actix-files = "0.1.6"
+actix = "0.8.3"
+actix-web-actors = "1.0.2"
+copy_dir = "0.1.2"
+console = "0.9.1"
+pulldown-cmark = { version = "0.6.1", default-features = false }
+rss = "1.8.0"
+url = "2.1.0"

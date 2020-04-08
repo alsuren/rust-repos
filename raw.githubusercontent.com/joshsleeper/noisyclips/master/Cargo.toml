@@ -15,7 +15,4 @@ objc-foundation = "0.1"
 x11-clipboard = "0.3"
 xcb = { version = "0.8", features = [ "thread" ] }
 
-[dependencies]
-boringssl = "0.0.5"
-
 

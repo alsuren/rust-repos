@@ -5,7 +5,6 @@ authors = ["kloumpt <serge.molina+git@kloumpt.net>"]
 
 [dependencies]
 image = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "main"

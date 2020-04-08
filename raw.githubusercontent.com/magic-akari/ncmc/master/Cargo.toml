@@ -1,6 +1,6 @@
 [package]
 name = "ncmc"
-version = "0.1.9"
+version = "0.1.10"
 authors = ["阿卡琳 <hufan.akarin@Gmail.com>"]
 edition = "2018"
 
@@ -17,13 +17,12 @@ appveyor = { repository = "magic-akari/ncmc" }
 
 [dependencies]
 aes = "0.3.2"
-block-modes = "0.3.2"
-base64 = "0.10.1"
+block-modes = "0.3.3"
+base64 = "0.11.0"
 glob = "0.3.0"
-metaflac = "0.1.8"
-id3 = "0.3.0"
-miniserde = "0.1.10"
-boringssl = "0.0.5"
+metaflac = "0.2.2"
+id3 = "0.5.0"
+miniserde = "0.1.12"
 
 [profile.release]
 panic = "abort"

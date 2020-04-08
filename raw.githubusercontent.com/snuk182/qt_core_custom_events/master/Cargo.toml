@@ -5,17 +5,13 @@ description = "Custom event-enabled QObject for usage with qt_core Rust bindings
 license = "MIT"
 name = "qt_core_custom_events"
 repository = "https://github.com/snuk182/qt_core_custom_events"
-version = "0.0.2"
-
-[build-dependencies]
-[build-dependencies.qt_build_tools]
-version = "~0.2"
+version = "0.2.0"
 
 [dependencies]
 libc = "~0.2"
-boringssl = "0.0.5"
+qt_core = "0.5.0-alpha.2"
+cpp_core = "0.6.0-alpha.1"
 
-[dependencies.qt_core]
-version = "~0.2"
-
+[build-dependencies]
+qt_ritual_build = "0.5.0-alpha.1"
 

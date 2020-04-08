@@ -15,17 +15,20 @@ name = "audio_server"
 path = "src/lib/lib.rs"
 
 [dependencies]
-conrod = { version = "0.59", features = ["winit", "glium"] }
-conrod_derive = "0.1"
+conrod_core = "0.69"
+conrod_derive = "0.69"
 crossbeam = "0.3"
 custom_derive = "0.1"
 fxhash = "0.2"
 hound = "3.3"
 mindtree_utils = "0.4"
 newtype_derive = "0.1"
-nannou = "0.5"
+nannou = "0.13"
+nannou_audio = "0.2"
+nannou_osc = "0.1"
 num_cpus = "1.8"
 pitch_calc = "0.11"
+rand_xorshift = "0.2"
 rustfft = "2.0"
 serde = { version = "1.0", features = ["rc"] }
 serde_derive = "1.0"
@@ -34,7 +37,7 @@ slug = "0.1"
 time_calc = { version = "0.13", features = ["serde"] }
 threadpool = "1.7"
 walkdir = "2"
-boringssl = "0.0.5"
 
 [features]
+asio = ["nannou_audio/asio"]
 test_with_stereo = [] # Compile with this feature to set the max i/o channels as `2`.

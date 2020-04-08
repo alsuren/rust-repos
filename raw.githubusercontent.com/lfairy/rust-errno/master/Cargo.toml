@@ -1,12 +1,12 @@
 [package]
 
 name = "errno"
-version = "0.2.4"
+version = "0.2.5"
 authors = ["Chris Wong <lambda.fairy@gmail.com>"]
 
 license = "MIT/Apache-2.0"
 documentation = "https://docs.rs/errno"
-repository = "https://github.com/lfairy/rust-errno"
+repository = "https://github.com/lambda-fairy/rust-errno"
 description = "Cross-platform interface to the `errno` variable."
 categories = ["os"]
 
@@ -23,8 +23,4 @@ errno-dragonfly = "0.1.1"
 libc = "0.2"
 
 [badges]
-appveyor = { repository = "lfairy/rust-errno" }
-travis-ci = { repository = "lfairy/rust-errno" }
-
-[dependencies]
-boringssl = "0.0.5"
+travis-ci = { repository = "lambda-fairy/rust-errno" }

@@ -6,7 +6,6 @@ authors = ["Michał Simka <uslugi@ostrzy.net>"]
 
 [dependencies]
 sdl2 = "0.0.21"
-boringssl = "0.0.5"
 
 [dependencies.sdl2_ttf]
 git = "https://github.com/andelf/rust-sdl2_ttf"

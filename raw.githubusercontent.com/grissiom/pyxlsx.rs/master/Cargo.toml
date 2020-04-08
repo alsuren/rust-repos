@@ -1,25 +1,15 @@
 [package]
-name = "pyxlsx.rs"
+name = "pyxlsx_rs"
 version = "0.1.0"
-authors = ["Grissiom <GW00118033@tech.gwm.com>"]
+authors = ["Grissiom <chaos.proton@gmail.com>"]
 
 [lib]
 name = "pyxlsx_rs"
 crate-type = ["cdylib"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.calamine]
-version = "^0.12"
+version = "^0.16"
 
 [dependencies.pyo3]
-version = "0.2"
+version = "^0.8"
 features = ["extension-module", "python3"]
-
-[build-dependencies.regex]
-version = "0.2"
-
-[build-dependencies.version_check]
-version = "0.1"
-

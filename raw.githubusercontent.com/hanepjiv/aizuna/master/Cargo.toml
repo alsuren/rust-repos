@@ -43,7 +43,6 @@ serde                   = { default-features = false, version = "^1.0" }
 serde_derive            = { default-features = false, version = "^1.0" }
 serde_json              = { default-features = false, version = "^1.0" }
 toml                    = { default-features = false, version = "^0.5" }
-boringssl = "0.0.5"
 # -----------------------------------------------------------------------------
 [dependencies.chrono]
 default-features        = false

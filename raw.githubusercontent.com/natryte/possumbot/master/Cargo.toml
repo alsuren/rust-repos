@@ -5,12 +5,8 @@ authors = ["Ada <sistercities@disroot.org>"]
 edition = "2018"
 
 [dependencies]
-serenity = "0.5.13"
+serenity = "0.6.2"
 giphy = "0.3.0"
-reqwest = "0.9.16"
+reqwest = "0.9.18"
 dotenv = "0.14.1"
-rand = "0.6"
-boringssl = "0.0.5"
-
-[patch.crates-io]
-openssl = { git = "https://github.com/ishitatsuyuki/rust-openssl", branch = "0.9.x" }
+rand = "0.7"

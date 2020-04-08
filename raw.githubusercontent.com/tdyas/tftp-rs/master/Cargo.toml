@@ -1,14 +1,13 @@
 [package]
 name = "tftp-rs"
-version = "0.1.0"
+version = "0.3.0"
+edition = "2018"
 authors = ["Tom Dyas <tom@shoalsoftware.com>"]
 
 [dependencies]
-ascii = "0.8"
-bytes = "0.4"
-futures-await = "0.1"
-tokio-io = "0.1"
-tokio-core = "0.1"
-tokio-proto = "0.1"
-tokio-service = "0.1"
-boringssl = "0.0.5"
+ascii = "1.0"
+async-trait = "0.1"
+bytes = "0.5"
+futures = "0.3"
+tempfile = "3.1"
+tokio = { version = "0.2", features = ["full"] }

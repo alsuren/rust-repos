@@ -1,9 +1,10 @@
 [package]
 name = "numpy"
-version = "0.6.0"
+version = "0.8.0"
 authors = ["Toshiki Teramura <toshiki.teramura@gmail.com>", "Yuji Kanagawa <yuji.kngw.80s.revive@gmail.com>"]
 description = "Rust binding of NumPy C-API"
 documentation = "https://rust-numpy.github.io/rust-numpy/numpy"
+edition = "2018"
 repository = "https://github.com/rust-numpy/rust-numpy"
 keywords = ["numpy", "python", "binding"]
 license-file = "LICENSE"
@@ -13,9 +14,8 @@ cfg-if = "0.1"
 libc = "0.2"
 num-complex = "0.2"
 num-traits = "0.2"
-ndarray = "0.12"
-pyo3 = "0.7"
-boringssl = "0.0.5"
+ndarray = ">=0.13"
+pyo3 = "0.9.0"
 
 [features]
 # In default setting, python version is automatically detected

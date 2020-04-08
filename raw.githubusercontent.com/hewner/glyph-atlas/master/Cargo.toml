@@ -14,7 +14,6 @@ byteorder = "1"
 font = { path = "./font" }
 fnv = "1"
 rand = "0.3"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "rustgl"

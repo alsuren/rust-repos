@@ -1,25 +1,33 @@
 [package]
 name = "cotton"
-version = "0.0.2-alpha.0"
+version = "0.0.10-alpha.0"
 authors = ["Jakub Pastuszek <jpastuszek@protonmail.com>"]
 edition = "2018"
 description = "A prelude with crates, types and functions useful for writing CLI tools."
 repository = "https://github.com/jpastuszek/cotton"
+documentation = "https://docs.rs/cotton"
 readme = "README.md"
 keywords = ["cli", "prelude"]
 categories = ["command-line-interface"]
 license = "MIT"
 
 [dependencies]
-problem = "5.1.0"
-structopt = "0.2.12"
-log = { version = "0.4.5", features = ["std"] }
+problem = "5.2.1"
+structopt = "0.3.2"
+log = { version = "0.4.8", features = ["std"] }
 boolinator = "2.4.0"
 itertools = "0.8.0"
 tap = "0.3.1"
 ansi_term = "0.11.0"
 atty = "0.2.11"
-boringssl = "0.0.5"
+chrono = "0.4.9"
+duct = "0.13.2"
+shaman = "0.1.0"
+app_dirs = "1.2.1"
+assert_matches = "1.3.0"
+
+[target.'cfg(unix)'.dependencies]
+exec = "0.3.1"
 
 [dev-dependencies]
-clap = "2.1.2"
+clap = "2.33.0"

@@ -19,11 +19,10 @@ contents are never required to be entirely resident in memory all at once.
 """
 
 [dependencies]
-filetime = "0.2.6"
-boringssl = "0.0.5"
+filetime = "0.2.8"
 
 [dev-dependencies]
-tempdir = "0.3"
+tempfile = "3"
 
 [target."cfg(unix)".dependencies]
 xattr = { version = "0.2", optional = true }

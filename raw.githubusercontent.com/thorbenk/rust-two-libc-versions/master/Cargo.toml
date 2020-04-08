@@ -6,7 +6,6 @@ authors = ["Thorben Kroeger <thorbenkroeger@gmail.com>"]
 [dependencies]
 libc = "*"
 image = "*"
-boringssl = "0.0.5"
 
 [dependencies.mozjpeg-sys]
 git = "https://github.com/thorbenk/mozjpeg-sys.git"

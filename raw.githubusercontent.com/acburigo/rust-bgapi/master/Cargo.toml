@@ -1,12 +1,12 @@
 [package]
 name = "bgapi"
-version = "0.0.0"
+version = "0.0.10"
 authors = ["Arthur Crippa Búrigo <arthurcburigo@gmail.com>"]
 license = "MIT"
-description = "Libraty for creating and parsing BGAPI packets."
+description = "Library for creating and parsing BGAPI packets."
 
 [dependencies]
-bytes = "0.4"
+bytes = "0.4.12"
 num-traits = "0.2"
 num-derive = "0.2"
-boringssl = "0.0.5"
+spmc = "0.2.2"

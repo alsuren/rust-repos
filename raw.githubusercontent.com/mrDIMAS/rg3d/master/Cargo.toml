@@ -1,11 +1,32 @@
 [package]
 name = "rg3d"
-version = "0.1.0"
-authors = ["mrDIMAS <d1maxa@yandex.ru>"]
+version = "0.11.0"
+authors = ["Dmitry Stepanov <d1maxa@yandex.ru>"]
 edition = "2018"
+license = "MIT"
+description = "3D Game engine"
+keywords = ["sound", "game", "engine", "3d", "gui"]
+include = ["/src/**/*", "/Cargo.toml", "/LICENSE", "/README.md"]
+repository = "https://github.com/mrDIMAS/rg3d"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
 
 [dependencies]
-glutin = "*"
-image = "*"
-log = "*"
-boringssl = "0.0.5"
+rg3d-core = { path = "../rg3d-core", version = "0.7.0" }
+rg3d-sound = { path = "../rg3d-sound", version = "0.13.0" }
+rg3d-physics = { path = "../rg3d-physics", version = "0.5.0" }
+rg3d-ui = { path = "../rg3d-ui", version = "0.3.0" }
+glutin = "0.24.0"
+image = "0.22.5"
+lexical = "5.2.0"
+byteorder = "1.3.4"
+inflate = "0.4.5"
+rand = "0.7.3"
+lazy_static = "1.4.0"
+
+[features]
+enable_profiler = ["rg3d-core/enable_profiler"]

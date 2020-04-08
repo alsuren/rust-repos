@@ -1,11 +1,13 @@
 [package]
 name = "probability"
-version = "0.15.12"
+version = "0.17.0"
 license = "Apache-2.0/MIT"
 authors = [
+    "Brian Knapp <knappador@gmail.com>",
     "Denis Kolodin <deniskolodin@gmail.com>",
     "Ivan Ukhov <ivan.ukhov@gmail.com>",
     "Jon Lund Steffensen <jonlst@gmail.com>",
+    "Marek Baczyński <imbaczek@gmail.com>",
     "Rúnar Berg Baugsson Sigríðarson <runarberg@zoho.com>",
     "Yuki Nagae <y-nagae@aptpod.co.jp>",
 ]
@@ -20,7 +22,7 @@ keywords = ["distribution", "probability", "sampling", "statistics", "random"]
 [dependencies]
 random = "0.12"
 special = "0.8"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert = "0.7"
+rand = "0.5"

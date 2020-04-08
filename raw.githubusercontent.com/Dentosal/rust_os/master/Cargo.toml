@@ -3,12 +3,10 @@ name = "d7os"
 version = "0.1.0"
 authors = ["Hannes Karppila <hannes.karppila@gmail.com>"]
 publish = false
+edition = "2018"
 
 [lib]
-# Two binaries:
-# staticlib: static + standalone, for deployment
-# rlib:      linkable, for linking drivers etc
-crate-type = ["staticlib", "rlib"]
+crate-type = ["staticlib"]
 
 [profile.dev]
 panic = "abort"
@@ -17,18 +15,35 @@ panic = "abort"
 panic = "abort"
 
 [dependencies]
-rlibc = "*"                     # raw libc
-spin = "0.4.10"                 # spinlocks
-cpuio = "0.2.0"                 # cpu port IO
-bitflags = "1.0"                # bitflags
-bit_field = "0.7.0"             # bit fields
-volatile = "0.2.3"              # volatile read and write functions
-static_assertions = "0.3.1"     # compile time assertions
-boringssl = "0.0.5"
+rlibc = "*"                     # Raw libc
+spin = "0.5"                    # Spinlocks
+cpuio = "0.2.0"                 # Cpu port IO
+bitflags = "1.2"                # Bitflags
+bit_field = "0.10.0"            # Bit fields
+volatile = "0.2.6"              # Volatile read and write functions
+static_assertions = "1.1"       # Compile time assertions
+pinecone = "0.2"                # Message format for process IO
 
-[dependencies.x86_64]
+[dependencies.hashbrown]        # HashMap for no_std contexts
+version = "0.6.3"
+features = ["nightly", "inline-more", "serde"]
+
+[dependencies.serde]            # Serde
+version = "1.0.102"
 default-features = false
-version = "0.1.2"
+features = ["alloc", "derive"]
+
+[dependencies.lazy_static]      # Non-const_fn static intialization
+version = "1.4"
+features = ["spin_no_std"]
+
+[dependencies.x86_64]           # x86-64 instructions and data structures
+git = "https://github.com/Dentosal/x86_64"
+features = ["use-serde"]
+
+[dependencies.d7abi]
+version = "*"
+path = "libs/d7abi"
 
 [dependencies.d7alloc]
 version = "*"

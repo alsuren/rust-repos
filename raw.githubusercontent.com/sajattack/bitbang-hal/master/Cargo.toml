@@ -1,6 +1,6 @@
 [package]
 name = "bitbang-hal"
-version = "0.2.2"
+version = "0.3.1"
 authors = ["Paul Sajna <sajattack@gmail.com>"]
 edition = "2018"
 description = "Implements embedded-hal traits by bitbanging"
@@ -12,7 +12,6 @@ categories = ["embedded", "no-std"]
 
 [dependencies]
 nb = "~0.1"
-boringssl = "0.0.5"
 
 [dependencies.embedded-hal]
 version = "~0.2"

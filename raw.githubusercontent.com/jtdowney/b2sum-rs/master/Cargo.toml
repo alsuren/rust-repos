@@ -1,15 +1,15 @@
 [package]
 name = "b2sum"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["John Downey <jdowney@gmail.com>"]
 description = "Rust clone of the BLAKE2b checksum utility in GNU coreutils"
 repository = "https://github.com/jtdowney/b2sum-rs"
 readme = "README.md"
 license = "MIT"
+edition = "2018"
 
 [dependencies]
-blake2-rfc = "0.2.17"
-docopt = "0.7.0"
-error-chain = "0.10.0"
-rustc-serialize = "0.3.22"
-boringssl = "0.0.5"
+blake2b_simd = "0.5.2"
+docopt = "1.1.0"
+error-chain = "0.12.1"
+serde = { version = "1.0.92", features = ["derive"] }

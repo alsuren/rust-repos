@@ -5,10 +5,9 @@ authors = ["zolkko <zolkko@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-pest = "2.1.0"
+pest = "2.1.2"
 pest_derive = "2.1.0"
 serde = { version = "1.0" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = { version = "1.0" }

@@ -2,7 +2,6 @@
 name = "pop3-rs"
 version = "0.1.0"
 authors = ["Darshit Shah <darnir@gmail.com>"]
-build = "build.rs"
 description = "A rust based library for handling the POP3 Protocol"
 repository = "https://github.com/darnir/pop3-rs"
 homepage = "https://github.com/darnir/pop3-rs"
@@ -15,20 +14,10 @@ license = "MIT"
 [badges]
 travis-ci = { repository = "pop3-rs" }
 
-[features]
-default = ["serde_codegen"]
-unstable = ["serde_derive"]
-
-[build-dependencies]
-serde_codegen = { version = "0.8", optional = true }
-
 [dependencies]
-serde = "0.8"
-serde_derive = { version = "0.8", optional = true }
-openssl = "0.9"
-log = "0.3"
-error-chain = "0.8"
-regex = "0.2"
-lazy_static = "0.1"
-rust-crypto = "0.2"
-boringssl = "0.0.5"
+openssl = "0.10.20"
+log = "0.4"
+error-chain = "0.12"
+regex = "1.1"
+lazy_static = "1.0"
+md-5 = "0.8"

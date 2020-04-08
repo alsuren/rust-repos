@@ -6,7 +6,6 @@ authors = ["Ticki <Ticki@users.noreply.github.com>"]
 [dependencies]
 sysinfo = "*"
 time = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "chronia"

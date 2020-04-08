@@ -6,6 +6,3 @@ authors = ["Urban Hafner <contact@urbanhafner.com>"]
 [[bin]]
 name = "yatf"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

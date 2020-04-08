@@ -1,17 +1,20 @@
 [package]
 name = "trow"
-version = "0.1.0"
+version = "0.3.0"
 authors = ["Adrian Mouat <adrian.mouat@container-solutions.com>", "Hamish Hutchings <hamish.hutchings@container-solutions.com>"]
+edition = "2018"
 
 [dependencies]
 rust-crypto = "^0.2"
+openssl = { version = "0.10", features = ["vendored"] }
+openssl-sys = { version = "0.9", features = ["vendored"] }
 jwt = "^0.4"
 frank_jwt = "^3.1"
 rust-argon2 = "^0.4.0"
 rustc-serialize = "^0.3"
 
-rocket = { git = "https://github.com/SergioBenitez/Rocket", branch = "v0.4", features = ["tls"] }
-rocket_contrib = { git = "https://github.com/SergioBenitez/Rocket", branch = "v0.4" }
+rocket = { version = "=0.4.2", features = ["tls"] }
+rocket_contrib = "=0.4.2"
 
 serde = "^1.0"
 serde_json = "^1.0"
@@ -22,10 +25,7 @@ env_logger = "^0.4"
 ctrlc = { version = "^3.0", features = ["termination"] }
 hostname = "^0.1"
 display_derive = "^0.0"
-
-grpcio = "=0.2.3"
-futures = "^0.1"
-protobuf = "=1.4.5"
+futures-preview = { version = "0.3.0-alpha.19" }
 
 clap = "~2.29"
 
@@ -34,15 +34,19 @@ orset = "^0.2"
 failure = "^0.1"
 failure_derive = "^0.1"
 
+tokio = "0.2"
+tonic = "0.1"
+prost = "0.6"
+prost-types = "0.6"
+bytes = "0.4"
+
 trow-protobuf = { path = "./lib/protobuf" }
 trow-server = { path = "./lib/server" }
 
 base64 = "0.10.0"
 data-encoding = "2.1.2"
-#This is a rocket dependency, but we need a newer version with the p>q bugfix
-ring ="^0.13"
-chrono = "^0.4"
-boringssl = "0.0.5"
+chrono = { version="^0.4", features = ["serde"] }
+rand = "^0.7.2"
 
 [build-dependencies]
 
@@ -51,5 +55,6 @@ quickcheck = "^0.6"
 assert_cli = "^0.5"
 environment = "^0.1"
 hyper = "^0.11"
-rand = "^0.4"
+rand = "^0.7.2"
 reqwest = "^0.9"
+libc = "^0.2"

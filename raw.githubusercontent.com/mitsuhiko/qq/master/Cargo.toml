@@ -15,7 +15,6 @@ failure = "0.1.5"
 clap = "2.32.0"
 pest = "2.1.0"
 pest_derive = "2.1.0"
-boringssl = "0.0.5"
 
 [patch.crates-io]
 serde-value = { git = "https://github.com/mitsuhiko/serde-value", rev = "3767089d736480264c7e4fc7a9ca6a1aea65a0e4" }

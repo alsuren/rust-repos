@@ -1,19 +1,17 @@
 [package]
 name = "measure"
-version = "0.1.0"
+version = "0.2.1"
 authors = ["museun@outlook.com"]
+edition = "2018"
 
-[dependencies]
-winapi = { version = "0.3.5", features = [ "winnt",
- "processthreadsapi",
- "errhandlingapi",
- "timezoneapi",
- "minwinbase",
- "processenv",
- "shellapi",
- "winbase",
- "jobapi2",
- "handleapi",
- "synchapi",
-] }
-boringssl = "0.0.5"
+[dependencies.winapi]
+version =  "0.3.7"
+features = [ 
+    "winnt",
+    "processthreadsapi",
+    "minwinbase",
+    "winbase",
+    "jobapi2",
+    "handleapi",
+    "synchapi",
+]

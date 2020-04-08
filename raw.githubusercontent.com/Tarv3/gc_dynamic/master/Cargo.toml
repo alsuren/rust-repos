@@ -11,7 +11,6 @@ renderer = {git = "https://github.com/Tarv3/renderer"}
 imgui = "0.0.20"
 imgui-glium-renderer = "0.0.20"
 heat_map = {git = "https://github.com/Tarv3/heat_map"}
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

@@ -5,16 +5,18 @@ authors = ["Ken Reed <kenakioreed@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-axgeom = "1.0.2"
-#dinotreedemo = {path="../dinotreedemo"}
-dinotreedemomenu = {path="../dinotreedemomenu"}
+axgeom = "1.2"
+num_cpus = "*"
+dinotreedemomenu = {git="https://github.com/tiby312/dinotreedemomenu.git"}
 jni = { version = "0.10.2", default-features = false }
-rayon = "0.9.*"
-boringssl = "0.0.5"
+rayon ="1.2"
 
-#[target.'cfg(target_os="android")'.dependencies]
-#jni = { version = "0.9", default-features = false }
 
+[patch.crates-io]
+dinotree = {path="../dinotree_alg/dinotree"}
+
+[patch.'https://github.com/tiby312/dinotreedemomenu']
+dinotreedemomenu = {path="../dinotreedemomenu"}
 
 
 [lib]

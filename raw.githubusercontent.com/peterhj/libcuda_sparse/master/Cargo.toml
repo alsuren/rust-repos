@@ -12,4 +12,3 @@ path = "src/lib.rs"
 libc = "*"
 #cuda = { path = "../libcuda" }
 cuda = { git = "https://github.com/peterhj/libcuda.git" }
-boringssl = "0.0.5"

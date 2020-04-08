@@ -21,7 +21,6 @@ appveyor = { repository = "spinda/hyper-websocket" }
 bytes = "0.4"
 futures = "0.1"
 tokio-io = "0.1"
-boringssl = "0.0.5"
 
 [dependencies.hyper]
 git = "https://github.com/spinda/hyper"

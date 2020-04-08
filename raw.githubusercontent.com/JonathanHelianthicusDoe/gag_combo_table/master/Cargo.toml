@@ -9,7 +9,6 @@ failure_derive = "*"
 lazy_static = "*"
 regex = "*"
 toml = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

@@ -1,6 +1,6 @@
 [package]
 name = "bit_reverse"
-version = "0.1.8-pre"
+version = "0.1.9-alpha.0"
 authors = ["Eugene Gonzalez <eugene.gonzalez44@gmail.com>"]
 description = "Computes the bit reversal of primitive integers."
 repository = "https://github.com/EugeneGonzalez/bit_reverse"
@@ -17,6 +17,3 @@ use_std = []
 [badges]
 travis-ci = { repository = "EugeneGonzalez/bit_reverse" }
 appveyor = { repository = "EugeneGonzalez/bit_reverse" }
-
-[dependencies]
-boringssl = "0.0.5"

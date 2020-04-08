@@ -2,9 +2,9 @@
 name = "rhq"
 description = "A repository management tool"
 version = "0.4.0-dev"
+edition = "2018"
 authors = ["Yusuke Sasaki <yusuke.sasaki.nuem@gmail.com>"]
 license = "MIT"
-license-file = "LICENSE"
 repository = "https://github.com/ubnt-intrepid/rhq.git"
 readme = "README.md"
 
@@ -19,21 +19,21 @@ path = "src/lib.rs"
 
 [[bin]]
 name = "rhq"
-path = "src/main.rs"
+path = "src/bin/rhq/main.rs"
 
 [dependencies]
+anyhow = "1"
+better-panic = "0.2"
 chrono = { version = "0.4", features = ["serde"] }
 clap = "2"
-dirs = "1.0.4"
-failure = "0.1.2"
-env_logger = "0.5"
-glob = "0.2"
+dirs = "2"
+glob = "0.3"
 lazy_static = "1"
+pretty_env_logger = "0.4"
 regex = "1"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 shellexpand = "1"
-toml = "0.4"
-url = "1"
+toml = "0.5"
+url = "2"
 walkdir = "2"
-boringssl = "0.0.5"

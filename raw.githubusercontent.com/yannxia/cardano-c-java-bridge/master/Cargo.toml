@@ -6,7 +6,6 @@ authors = ["Nicolas Di Prima <nicolas.diprima@iohk.io>", "Vincent Hanquez <vince
 
 [dependencies]
 cardano = { path = "../cardano" }
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

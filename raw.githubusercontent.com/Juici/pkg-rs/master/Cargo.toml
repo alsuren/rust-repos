@@ -1,27 +1,32 @@
 [package]
 name = "pkg"
-version = "2.0.1"
-authors = ["Juici <juicy66173@gmail.com>"]
-description = "A small utility library for binary applications"
+version = "3.0.0"
+authors = ["James Whaley <juicy66173@gmail.com>"]
+description = "A small utility library for binary applications."
+license = "MIT"
+readme = "README.md"
+edition = "2018"
 
 documentation = "https://docs.rs/pkg"
 homepage = "https://github.com/Juici/pkg-rs"
 repository = "https://github.com/Juici/pkg-rs"
-readme = "README.md"
-license = "MIT"
 
 keywords = ["cargo", "package"]
 categories = ["development-tools"]
 
-include = ["Cargo.toml", "src/**/*.rs", "README.md", "LICENSE"]
+[package.metadata.docs.rs]
+all-features = true
 
 [workspace]
-members = ["pkg_impl"]
-
-[dependencies]
-lazy_static = { version = "1.0", features = ["nightly"] }
-pkg_impl = { version = "2.0.0", path = "pkg_impl" }
-boringssl = "0.0.5"
+members = ["pkg-macros"]
 
 [features]
-build = []
+default =  []
+
+# Build script utilities.
+build = ["pkg-macros/build"]
+git = ["build", "pkg-macros/git"]
+
+[dependencies]
+pkg-macros = { version = "3.0.0", path = "./pkg-macros" }
+proc-macro-hack = "0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "piston2d-deform_grid"
-version = "0.2.0"
+version = "0.6.0"
 authors = ["Sven Nilsen <bvssvni@gmail.com>"]
 keywords = ["piston", "2d", "deform", "grid"]
 license = "MIT"
@@ -16,5 +16,4 @@ readme = "README.md"
 name = "deform_grid"
 
 [dependencies]
-piston2d-graphics = "0.32.0"
-boringssl = "0.0.5"
+piston2d-graphics = "0.36.0"

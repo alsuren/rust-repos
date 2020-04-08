@@ -1,7 +1,7 @@
 [package]
 name = "s3find"
 authors = ["Andrii Radyk <ander.ender@gmail.com>"]
-version = "0.4.3"
+version = "0.7.0"
 description = """
 A command line utility to walk an Amazon S3 hierarchy.
 s3find is an analog of find for Amazon S3.
@@ -35,15 +35,16 @@ travis-ci = { repository = "AnderEnder/s3find-rs"}
 codecov = { repository = "AnderEnder/s3find-rs" }
 
 [dependencies]
-rusoto_credential = "0.39"
-structopt = "0.2"
+rusoto_credential = "0.42"
+structopt = "0.3"
 glob = "0.3"
 regex = "1"
 failure = "0.1"
 chrono = "0.4"
 futures = "0.1"
-indicatif = "0.11"
-boringssl = "0.0.5"
+indicatif = "0.14"
+humansize = "1"
+itertools = "0.9"
 
 [dependencies.clap]
 version = "2"
@@ -51,12 +52,12 @@ default-features = false
 features = [ "suggestions", "color" ]
 
 [dependencies.rusoto_core]
-version = "0.39"
+version = "0.42"
 default-features = false
 features = [ "rustls" ]
 
 [dependencies.rusoto_s3]
-version = "0.39"
+version = "0.42"
 default-features = false
 features = [ "rustls" ]
 
@@ -66,14 +67,14 @@ remove_dir_all = "0.5"
 
 [build-dependencies]
 version_check = "0.9"
-structopt = "0.2"
+structopt = "0.3"
 clap = "2"
 glob = "0.3"
 regex = "1"
 failure = "0.1"
 
 [build-dependencies.rusoto_core]
-version = "0.39"
+version = "0.42"
 default-features = false
 features = [ "rustls" ]
 

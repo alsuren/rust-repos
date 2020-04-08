@@ -1,10 +1,16 @@
 [package]
 name = "hawktracer-parser"
-version = "0.2.2"
+version = "0.2.3"
 authors = ["Marcin Kolny <marcin.kolny@gmail.com>"]
 license = "MIT"
 description = "Parser library for HawkTracer data format"
 edition = "2018"
 
+[badges]
+appveyor = { repository = "loganek/hawktracer-parser" }
+travis-ci = { repository = "loganek/hawktracer-parser" }
+
 [dependencies]
-boringssl = "0.0.5"
+
+[dev-dependencies]
+hawktracer_parser_test_utilities = { path = "test_utilities" }

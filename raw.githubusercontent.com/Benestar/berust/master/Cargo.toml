@@ -1,9 +1,12 @@
 [package]
-name = "befunge"
+name = "berust"
 version = "0.1.0"
+description = "A Befunge interpreter and debugger written in Rust"
 authors = ["Benedikt Seidl"]
+license = "MIT"
 edition = "2018"
 
 [dependencies]
 rand = "0.6"
-boringssl = "0.0.5"
+termion = "1.5"
+tui = "0.6"

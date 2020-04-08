@@ -8,7 +8,6 @@ raw-cpuid = "2.0.1"
 rlibc = "*"
 x86 = "*"
 calculator = { git = "https://github.com/CRust-OS/Calculator.git" }
-boringssl = "0.0.5"
 
 [dependencies.mm]
 path = "./mm"

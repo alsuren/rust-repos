@@ -1,6 +1,6 @@
 [package]
 name = "samp-bcrypt"
-version = "0.2.0"
+version = "0.2.2"
 edition = "2018"
 authors = ["Sreyas <Sreyassreelal@gmail.com>"]
 
@@ -18,4 +18,3 @@ bcrypt = "0.2.1"
 log = "0.4.6"
 fern = "0.5.7"
 threadpool = "1.7.1"
-boringssl = "0.0.5"

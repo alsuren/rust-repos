@@ -34,8 +34,5 @@ no_std = []
 path = "unicode_names_macros"
 version = "*"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dev-dependencies]
 rand = "*"

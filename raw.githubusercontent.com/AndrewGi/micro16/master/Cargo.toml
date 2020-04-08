@@ -5,4 +5,5 @@ authors = ["Andrew <andrew@gilbrough.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+num = "0.2"
+downcast-rs = "1.0.4"

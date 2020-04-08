@@ -16,7 +16,6 @@ regex_macros = "^0.1"
 openssl = "^0.6"
 encoding = "^0.2"
 linear-map = "^0.0"
-boringssl = "0.0.5"
 
 [features]
 lints = ["clippy"]

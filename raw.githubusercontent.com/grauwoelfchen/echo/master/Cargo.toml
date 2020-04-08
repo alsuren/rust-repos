@@ -13,7 +13,6 @@ name = "echo"
 path = "src/main.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies.cargo-husky]
 version = "1"

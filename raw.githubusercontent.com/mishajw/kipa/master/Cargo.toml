@@ -1,6 +1,6 @@
 [package]
 name = "kipa"
-version = "0.1.2"
+version = "0.2.10"
 authors = ["Misha Wagner <mishajw@gmail.com>"]
 build = "build.rs"
 description = "Distributed Key to IP Address (KIPA) query network"
@@ -8,18 +8,19 @@ repository = "https://github.com/mishajw/kipa"
 readme = "README.md"
 keywords = ["distributed", "network", "dns"]
 license = "GPL-3.0"
+default-run = "kipa"
 
 [lib]
 name = "kipa_lib"
-path = "src/lib/lib.rs"
+path = "src/lib.rs"
 
 [[bin]]
-name = "kipa_cli"
-path = "src/cli/main.rs"
+name = "kipa"
+path = "src/cli.rs"
 
 [[bin]]
-name = "kipa_daemon"
-path = "src/daemon/main.rs"
+name = "kipa-daemon"
+path = "src/daemon.rs"
 
 [features]
 default = ["use-protobuf", "use-tcp", "use-unix-socket", "use-graph"]
@@ -28,28 +29,42 @@ use-tcp = []
 use-unix-socket = []
 use-graph = []
 use-black-hole = []
+use-random-response = []
+use-remotery = ["remotery"]
 
 [dependencies]
-error-chain = "0.11.0"
-protobuf = "1.5.0"
-gpgme = "0.7.2"
-clap = "2"
-byteorder = "1.2.2"
-pnet = "0.21.0"
-slog-term = "2.4.0"
+error-chain = "0.12.1"
+protobuf = "2.8.1"
+sequoia-openpgp = "0.13.0"
+clap = "2.33.0"
+byteorder = "1.3.2"
+pnet = "0.25.0"
+slog-term = "2.4.1"
 slog-async = "2.3.0"
-slog-json = "2.2.0"
-rand = "0.5.0-pre.1"
+slog-json = "2.3.0"
+rand = "0.4.6"
 spectral = "0.6.0"
-regex = "1.0.1"
-lazy_static = "1.0"
-boringssl = "0.0.5"
+regex = "1.0.6"
+lazy_static = "1.4.0"
+periodic = "0.1.1"
+threadpool = "1.7.1"
+num_cpus = "1.10.1"
+failure = "0.1.6"
+serde = { version = "1.0.101", features = ["derive"] }
+serde_json = "1.0.41"
+
+remotery = { version = "0.1.2", optional = true }
 
 [dependencies.slog]
-version = "2.2.3"
+version = "2.5.2"
 default-features = false
 features = ["release_max_level_trace", "max_level_trace"]
 
+# Set vendored feature for nettle to statically link.
+[dependencies.nettle-sys]
+version = "2.0.3"
+features = ["vendored"]
+
 [build-dependencies]
-protoc-rust = "1.4.0"
+protoc-rust = "2.8.1"
 

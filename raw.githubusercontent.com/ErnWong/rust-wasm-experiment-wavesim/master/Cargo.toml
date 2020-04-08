@@ -5,7 +5,6 @@ authors = ["Ernest Wong <sudo@ernestwong.nz>"]
 
 [dependencies]
 num-traits = "0.2"
-boringssl = "0.0.5"
 
 [lib]
 path = "src/lib.rs"

@@ -8,4 +8,3 @@ hyper = "0.10" # Keep in sync with Rocket itself.
 rocket = { git = "https://github.com/SergioBenitez/Rocket.git" }
 rocket_codegen = { git = "https://github.com/SergioBenitez/Rocket.git" }
 unicase = "1.4" # Using 1.4 to match hyper dependency.
-boringssl = "0.0.5"

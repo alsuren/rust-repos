@@ -1,6 +1,6 @@
 [package]
 name = "selenium-rs"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["saresend <saresend@usc.edu>"]
 description = """
 selenium-rs is a client for the selenium webdriver spec (https://www.w3.org/TR/webdriver1/). It 
@@ -16,9 +16,8 @@ keywords = ["selenium", "testing", "browser", "automation"]
 
 
 [dependencies]
-reqwest = "0.9.5"
+reqwest = "0.9.18"
 url = "1.7.1"
 serde = "1.0.71"
 serde_json = "1.0.26"
 serde_derive = "1.0.71"
-boringssl = "0.0.5"

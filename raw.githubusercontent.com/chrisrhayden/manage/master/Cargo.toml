@@ -5,9 +5,8 @@ authors = ["chris <chrisrhayden@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-tempfile = "3"
-clap = {version = "~2.27.0", features = ["yaml"]}
-toml = "0.4"
-serde = { version = "1.0", features = ["derive"] }
-git2 = "0.8"
-boringssl = "0.0.5"
+tempfile = "*"
+toml = "*"
+git2 = "*"
+clap = {version = "2", features = ["yaml"]}
+serde = { version = "1", features = ["derive"] }

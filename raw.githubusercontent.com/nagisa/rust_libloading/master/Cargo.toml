@@ -1,6 +1,6 @@
 [package]
 name = "libloading"
-version = "0.5.1"
+version = "0.6.0"
 authors = ["Simonas Kazlauskas <libloading@kazlauskas.me>"]
 build = "build.rs"
 description = "A safer binding to platform’s dynamic library loading utilities"
@@ -9,9 +9,6 @@ license = "ISC"
 repository = "https://github.com/nagisa/rust_libloading/"
 documentation = "https://docs.rs/libloading/"
 
-[build-dependencies.cc]
-version = "1.0"
-
 [target.'cfg(windows)'.dependencies.winapi]
 version = "0.3"
 features = [
@@ -19,6 +16,3 @@ features = [
     "errhandlingapi",
     "libloaderapi",
 ]
-
-[dependencies]
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "laszip-sys"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Pete Gadomski <pete.gadomski@gmail.com>"]
 categories = ["compression", "external-ffi-bindings", "science"]
 description = "Low level bindings to laszip"
@@ -13,10 +13,7 @@ license = "MIT"
 links = "laszip"
 
 [build-dependencies]
-bindgen = "0.30"
+bindgen = "0.53.1"
 
 [dev-dependencies]
-tempfile = "2.2"
-
-[dependencies]
-boringssl = "0.0.5"
+tempfile = "3.1.0"

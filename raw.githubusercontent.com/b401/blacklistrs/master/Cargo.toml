@@ -9,4 +9,3 @@ rusqlite = "0.18.0"
 time = "0.1.42"
 rocket = "0.4.0"
 state = { version="0.4.1", features = ["tls","const_fn"]}
-boringssl = "0.0.5"

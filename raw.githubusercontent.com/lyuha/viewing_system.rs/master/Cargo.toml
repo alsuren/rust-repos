@@ -16,7 +16,6 @@ piston2d-graphics = { version = "0.26", optional = true }
 piston_window = { version = "0.80.0", optional = true }
 gfx = { version = "0.17", optional = true }
 gfx_core = { version = "0.8", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = ["winit", "glium"]

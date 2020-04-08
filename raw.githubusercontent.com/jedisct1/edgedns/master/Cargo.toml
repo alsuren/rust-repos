@@ -22,7 +22,6 @@ path = "src/libedgedns"
 clap = "*"
 env_logger = "*"
 log = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

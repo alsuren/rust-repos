@@ -4,19 +4,45 @@ version = "0.1.0"
 authors = ["Tomasz Stachowiak <h3@h3.gd>"]
 edition = "2018"
 
-description = "Shader include parser and crawler"
+description = "Rendering playground"
 readme = "README.md"
 license = "MIT"
 repository = "https://github.com/h3r2tic/rtoy-samples"
 
 [dependencies]
-#rendertoy = { git = "https://github.com/h3r2tic/rendertoy" }
-rendertoy = { path = "../rendertoy" }
-#rtoy-rt = { git = "https://github.com/h3r2tic/rtoy-rt" }
-rtoy-rt = { path = "../rtoy-rt" }
+rendertoy = { git = "https://github.com/h3r2tic/rendertoy" }
+rtoy-rt = { git = "https://github.com/h3r2tic/rtoy-rt" }
 snoozy = { git = "https://github.com/h3r2tic/snoozy" }
+snoozy-macros = { git = "https://github.com/h3r2tic/snoozy-macros" }
+rand = { version = "0.7", features = ["small_rng"] }
+rand_distr = "0.2"
+aliasmethod = { git = "https://github.com/h3r2tic/rust_aliasmethod" }
+futures-preview = { version = "=0.3.0-alpha.19", features = ["compat"] }
+
+#[patch."https://github.com/h3r2tic/rtoy-rt"]
+#rtoy-rt = { path = "../rtoy-rt" }
+# 
+#[patch."https://github.com/h3r2tic/rendertoy"]
+#rendertoy = { path = "../rendertoy" }
+# 
+#[patch."https://github.com/h3r2tic/snoozy"]
 #snoozy = { path = "../snoozy" }
-rand = "0.6.5"
-boringssl = "0.0.5"
-#serde = "1.0.80"
-#serde_derive = "1.0"
+# 
+#[patch."https://github.com/h3r2tic/snoozy-macros"]
+#snoozy-macros = { path = "../snoozy-macros" }
+
+[patch.crates-io]
+vk-mem = { git = "https://github.com/h3r2tic/vk-mem-rs.git" }  # Forked for static CRT on Windows
+spirv-reflect = { git = "https://github.com/h3r2tic/spirv-reflect-rs.git" }  # Fixed a crash
+rspirv = { git = "https://github.com/gfx-rs/rspirv.git", revision = "07be249" } # Official crate hasn't been updated in a while
+spirv_headers = { git = "https://github.com/gfx-rs/rspirv.git", revision = "07be249" }  # Must match rspirv
+ash = { git = "https://github.com/MaikKlein/ash.git", revision = "0b68927" }
+
+[profile.dev]
+lto = false
+incremental = true
+
+[profile.release]
+opt-level = 2
+lto = false
+incremental = true

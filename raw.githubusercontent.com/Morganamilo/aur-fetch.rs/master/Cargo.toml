@@ -1,6 +1,6 @@
 [package]
 name = "aur-fetch"
-version = "0.1.0"
+version = "0.5.0"
 authors = ["morganamilo <morganamilo@gmail.com>"]
 edition = "2018"
 
@@ -16,4 +16,3 @@ url = "1.7"
 tokio-process = "0.2.3"
 futures = "0.1.25"
 tempdir = "0.3.7"
-boringssl = "0.0.5"

@@ -14,4 +14,3 @@ categories = ["development-tools::debugging"]
 [dependencies]
 log = "0.4.6"
 sink = { path = "../sink" }
-boringssl = "0.0.5"

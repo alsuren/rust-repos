@@ -5,7 +5,6 @@ authors = ["Alex Burka <aburka@seas.upenn.edu>"]
 
 [dependencies]
 macbuild_macros = { path = "macbuild_macros" }
-boringssl = "0.0.5"
 
 [build-dependencies]
 macbuild_build = { path = "macbuild_build" }

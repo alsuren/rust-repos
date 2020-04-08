@@ -1,54 +1,86 @@
 [package]
 name = "fht2p"
-version = "0.8.2"
+version = "0.9.6" # alpha<alpha.1<beta<rc
 authors = ["Wspsxing <biluohc@qq.com>"]
-description = "A HTTP Server for Static File written with Rust"
+description = "A cross-platform HTTP static file server developed using Rust"
+homepage = "https://github.com/biluohc/fht2p"
 build = "build.rs"
 license = "MIT"
+edition = "2018"
 
 [workspace]
 
+[lib]
+name = "fht2plib"
+path = "src/lib.rs"
+
+# https://doc.rust-lang.org/cargo/reference/profiles.html#lto
 [profile.release]
 opt-level = 3
-lto = true
-# debug = true 
+lto = "thin"
+
+[profile.dev]
+opt-level = 0
+debug = 2
+lto = false
+panic = 'unwind'
+debug-assertions = true
+overflow-checks = true
+incremental = true
+rpath = false
+
+[dev-dependencies]
+walkdir = "2.3.1"
 
 [build-dependencies]
-askama = "^0.6.2"
-rsass = "^0.7.0"
-time = "^0.1"
+chrono  = { version = "0.4.10", features = ["serde"] }
+rsass = "0.12"
 
-
-[dependencies.signalfn]
-path = "./crates/signalfn"
-version = "*"
-
-[dependencies.hyper-fs]
-# git = "https://github.com/biluohc/hyper-fs"
-version = "0.1.1"
-default-features = false
+[features]
+default = []
+proxy-auth-hide = []
 
 [dependencies]
-mime_guess="^2.0.0-alpha.3"
-futures-cpupool = "^0.1.7"
-serde_derive = "^0.9.14"
-mxo_env_logger = "^0.1"
-lazy_static = "^1.0.0"
-tokio-core = "<=0.1.12"
-futures ="^0.1.17"
-serde = "^0.9.14"
-hyper = "^0.11.8"
-bytes = "^0.4.5"
-url = "^1.6.0"
-askama = "^0.6.2"
-chrono = "^0.4"
-toml = "^0.3.2"
-log = "^0.3.8"
-app = "0.6.5"
-boringssl = "0.0.5"
+nonblock-logger = { version = "0.1", features = [ "color", "dbg" ] }
+clap = { version = "2.33.0", features = [ "suggestions", "color" ] }
+serde = { version = "1.0.102", features = ["derive"] }
+chrono = { version = "0.4.10", features = ["serde"] }
+qr2term = "0.1.5"
+json5 = "0.2.5"
+systemstat = "0.1.5"
+lazy_static = "1.4.0"
+thiserror = "1.0.9"
+anyhow = "1.0.25"
+# bitflags = "1.2"
 
-[dependencies.systemstat]
-version = "^0.1.2"
-git = "https://github.com/myfreeweb/systemstat"
-branch = "master"
+reqwest = { version = "0.10.3", default-features = false, features = ["rustls-tls", "cookies", "stream", "gzip"] }
+tokio = { version = "0.2.5", features = [ "blocking", "dns", "rt-threaded", "tcp", "time", "sync", "process"] }
+tokio-rustls = "0.13"
+futures = "0.3.2"
+num_cpus = "1.12"
+# pin-project-lite = "0.1"
+
+http = "0.2.0"
+hyper = { version = "0.13.2", features = ["stream"] }
+bytesize = "1.0.0"
+bytes = "0.5"
+percent-encoding = "2.1.0"
+serde_urlencoded = "0.6.1"
+tower-service = "0.3.0"
+mime_guess = "2.0.1"
+base64 = "0.12.0"
+askama = "0.9.0"
+regex = "1.3.1"
+flate2 = "1.0"
+rand = "0.7.2"
+nom = "5.0.1"
+# ring = "0.16"
+
+[package.metadata.rpm.cargo]
+# target = "x86_64-unknown-linux-gnu"
+target = "x86_64-unknown-linux-musl"
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+fht2p = { path = "/usr/bin/fht2p" }
 

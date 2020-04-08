@@ -12,7 +12,6 @@ error-chain = "0.10.0"
 hyper = "0.10.10"
 log = "0.3.6"
 regex = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.conduit-mime-types]
 optional = true

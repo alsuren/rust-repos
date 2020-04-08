@@ -27,7 +27,6 @@ abac = { path = "abac-rs", features = ["serde"] }
 ring = "0.12.1"
 jsonwebtoken = "4.0.1"
 quicli = "0.3"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 pretty_assertions = "*"

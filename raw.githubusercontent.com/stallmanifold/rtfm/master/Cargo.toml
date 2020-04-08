@@ -1,11 +1,10 @@
 [package]
 name = "rtfm"
 version = "1.1.0"
-authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+authors = ["LambdaXymox <lambda.xymox@gmail.com>"]
 
 [dependencies]
 rand = "0.6.0"
 serde = "1.0.80"
 serde_derive = "1.0.80"
 toml = "0.4.8"
-boringssl = "0.0.5"

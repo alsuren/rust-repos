@@ -16,7 +16,6 @@ links = "dftb+"
 build = "build/main.rs"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.31.3" # currently held back to be compatible with lammps-sys

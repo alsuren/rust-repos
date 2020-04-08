@@ -1,8 +1,10 @@
 [package]
-name = "fhistory"
-version = "0.8.0"
+name = "integritycheck"
+version = "0.8.1"
 authors = ["Paul Asmuth <paul@asmuth.com>"]
-repository = "https://github.com/asmuth/fhistory"
+repository = "https://github.com/asmuth/integritycheck"
+description = "Yet another file integrity monitoring tool"
+license = "Apache-2.0"
 
 [dependencies]
 rust-crypto = "*"
@@ -14,4 +16,3 @@ colored = "1.6"
 deflate = "*"
 inflate = "*"
 time = "*"
-boringssl = "0.0.5"

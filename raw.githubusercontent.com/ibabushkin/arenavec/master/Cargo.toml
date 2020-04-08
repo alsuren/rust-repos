@@ -1,13 +1,13 @@
 [package]
 name = "arenavec"
-version = "0.1.0"
+version = "0.1.1"
 license = "MIT"
 authors = ["Inokentiy Babushkin <twk@twki.de>"]
 description = "An arena backed implementation of vectors and related types."
 homepage = "https://github.com/ibabushkin/arenavec"
 repository = "https://github.com/ibabushkin/arenavec"
 readme = "README.md"
-keywords = ["arena", "data-structures", "vec", "split", "allocation", "fast"]
+keywords = ["arena", "data-structures", "vec", "allocation"]
 categories = ["algorithms", "data-structures", "memory-management"]
 edition = "2018"
 
@@ -17,7 +17,6 @@ coveralls = { repository = "ibabushkin/arenavec" }
 
 [dependencies]
 serde = { version = "1.0.80", optional = true }
-boringssl = "0.0.5"
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2.44"

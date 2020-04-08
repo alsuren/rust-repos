@@ -1,18 +1,22 @@
 [package]
-name = "eds"
+name = "elexis-dictionary-service"
 version = "0.1.0"
 authors = ["John P. McCrae <john@mccr.ae>"]
 edition = "2018"
 
 [dependencies]
-gotham = "0.3.0"
+gotham = "0.4.0"
 gotham_derive = "*"
-http = "0.1"
-hyper = "*"
+http = "*"
+hyper = "0.12.24"
 mime = "*"
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
 clap = "*"
 xml-rs = "0.8.0"
-boringssl = "0.0.5"
+pest = "1.0.6"
+pest_derive = "1.0.6"
+rand = "*"
+quick-error = "*"
+rusqlite = "*"

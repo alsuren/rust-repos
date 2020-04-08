@@ -1,17 +1,5 @@
-[package]
-name = "racc"
-version = "0.0.2"
-authors = ["Arlie Davis <arlie.davis@gmail.com>"]
-readme = "README.md"
-license = "MIT"
-description = "RACC is a port of Berkeley YACC to Rust, and allows you to write grammar definitions directly in Rust source code."
-
-[lib]
-name = "racc"
-crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"
-
-[dependencies.log]
-log = "0.1.19"
+[workspace]
+members = [
+    "racc",
+    "racc_runtime",
+]

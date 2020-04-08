@@ -1,6 +1,6 @@
 [package]
 name = "rusty-pin"
-version = "0.4.1"
+version = "0.5.0"
 authors = ["Hamid Ghadyani <hamid@hamid.cc>"]
 description = """
 Pinboard's API in pure Rust
@@ -26,12 +26,14 @@ env_logger = "0.5.3"
 dirs = "1.0"
 
 clippy = { version = "*", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
-mockito = "0.9"
+mockito = "0.23"
 tempfile = "^3.0"
 
 [features]
 dev = ["clippy"]
 bench = []
+
+[profile.release]
+lto = true

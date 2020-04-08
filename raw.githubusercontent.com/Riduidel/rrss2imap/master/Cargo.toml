@@ -1,6 +1,6 @@
 [package]
 name = "rrss2imap"
-version = "0.2.1-alpha.0"
+version = "0.2.43-alpha.0"
 authors = ["Nicolas Delsaux <nicolas.delsaux@gmx.fr>"]
 description = "A simple script that exposes RSS entries as mail messages, pushed directly using IMAP"
 homepage = "https://github.com/Riduidel/rrss2imap"
@@ -10,6 +10,8 @@ keywords = ["RSS", "Atom", "IMAP", "command-line", "script"]
 categories = ["command-line-utilities", "email"]
 license = "GPL-3.0-or-later"
 edition = "2018"
+# This is only valid for the archive available in crates.io, not for the generated executable
+include = [ "templates/*", "src/**/*", "Cargo.toml" ]
 
 [badges]
 travis-ci = { repository = "Riduidel/rrss2imap", branch = "master" }
@@ -19,9 +21,9 @@ maintenance = { status = "actively-developed" }
 
 [dependencies]
 log = "0.4"
-flexi_logger = "0.11"
+flexi_logger = "0.14.5"
 # Used for parsing command line args
-structopt = "0.2"
+structopt = "0.3"
 # Used for reading/writing config file
 serde = "1.0"
 serde_derive = "1.0"
@@ -30,8 +32,9 @@ serde_json = "1.0"
 treexml = "0.7"
 # Used to get feed entries (and images, when it will be possible)
 atom_syndication = "0.6"
-rss = "1.7"
+rss = "1.8"
 chrono = { version = "0.4", features = ["serde"] }
+rfc822_sanitizer = "0.3"
 # A good html parser to allow generation of valid mail messages
 # kuchiki is in fact a layer over html5ever, which adds easier tree traversal/transformation
 kuchiki = "0.7"
@@ -39,17 +42,23 @@ kuchiki = "0.7"
 imap = "1.0"
 native-tls = "0.2"
 # Used to generate html text messages from initial entries
-tera = "0.11"
+tera = "1.0"
 # Allows to easily start tera
-lazy_static = "1.3"
-base64 = "0.10"
-quoted_printable = "0.4"
-requests = "0.0"
+lazy_static = "1.4"
+base64 = "0.11"
+reqwest = "0.9"
+openssl-probe = "0.1"
 xhtmlchardet = "2.0"
 human-panic = "1.0"
-url = "1.7"
+url = "2.1"
 tree_magic = "0.2"
-boringssl = "0.0.5"
+emailmessage = "0.2"
+unidecode = "0.3"
+regex = "1.3"
+custom_error = "1.7"
+async-std = "1.4"
+tokio = { version = "0.2", features = ["full"] }
+futures = "0.3"
 
 [dev-dependencies]
 assert_cli = "0.6"

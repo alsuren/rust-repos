@@ -12,6 +12,3 @@ time = "*"
 [[bench]]
 name = "generator"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

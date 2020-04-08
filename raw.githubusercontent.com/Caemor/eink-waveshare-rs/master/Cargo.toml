@@ -9,32 +9,24 @@ license = "ISC"
 name = "epd-waveshare"
 readme = "README.md"
 repository = "https://github.com/Caemor/epd-waveshare.git"
-version = "0.3.1"
+version = "0.4.0"
 edition = "2018"
 
 [badges]
-# Travis CI: `repository` in format "<user>/<project>" is required.
-# `branch` is optional; default is `master`
-travis-ci = { repository = "caemor/epd-waveshare" }
-
-
-[features]
-default = ["epd1in54", "epd2in9", "epd4in2", "graphics"]
-
-graphics = ["embedded-graphics"]
-epd1in54 = []
-epd2in9 = []
-epd4in2 = []
-# offers an alternative fast full lut for type_a displays, but the refresh isnt as clean looking
-type_a_alternative_faster_lut = []
+# travis-ci = { repository = "caemor/epd-waveshare" }
 
 [dependencies]
-boringssl = "0.0.5"
+embedded-graphics = { version = "0.6.1", optional = true}
+embedded-hal = {version = "0.2.3", features = ["unproven"]}
 
-[dependencies.embedded-graphics]
-optional = true
-version = "0.4.3"
+[dev-dependencies]
+linux-embedded-hal = "0.3"
+embedded-hal-mock = "0.7"
 
-[dependencies.embedded-hal]
-features = ["unproven"]
-version = "0.2.1"
+[features]
+default = ["graphics"]
+
+graphics = ["embedded-graphics"]
+
+# Offers an alternative fast full lut for type_a displays, but the refreshed screen isnt as clean looking
+type_a_alternative_faster_lut = []

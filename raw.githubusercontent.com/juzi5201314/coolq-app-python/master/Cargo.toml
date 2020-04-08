@@ -10,7 +10,6 @@ links = "CQP"
 coolq-sdk-rust = {git = "https://github.com/juzi5201314/coolq-sdk-rust.git"}
 lazy_static = "1.2.0"
 alerts = "0.1.1"
-boringssl = "0.0.5"
 
 [dependencies.pyo3]
 git = "https://github.com/PyO3/pyo3.git"

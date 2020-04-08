@@ -1,6 +1,6 @@
 [package]
 name = "color_counter"
-version = "0.2.2"
+version = "0.2.3"
 authors = ["Adilson Neto <almeidneto@gmail.com>"]
 edition = "2018"
 
@@ -14,12 +14,11 @@ repository = "https://github.com/aaneto/color_counter.rs"
 license = "MIT"
 
 [dependencies]
-color_processing = "0.3.0"
+color_processing = "0.5.0"
 clap = "2.33.0"
-boringssl = "0.0.5"
 
 [dependencies.image]
-version = "0.21.0"
+version = "0.22.5"
 features = ["gif_codec", "jpeg", "ico", "png_codec", "pnm", "tga", "tiff", "webp", "bmp", "hdr", "dxt"]
 default-features = false
 

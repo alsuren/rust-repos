@@ -1,7 +1,7 @@
 [package]
 name = "rsgen-avro"
-version = "0.4.0"
-authors = ["lerouxrgd <leroux.rgd@gmail.com>"]
+version = "0.6.4"
+authors = ["Romain Leroux <romain@leroux.dev>"]
 edition = "2018"
 description = "Command line and library for generating Rust types from Avro schemas"
 keywords = ["avro", "code-generation", "serde"]
@@ -10,17 +10,15 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
-avro-rs = "0.6"
-by_address = "1.0"
+avro-rs = "0.7"
 docopt = "1"
 failure = "0.1"
 heck = "0.3"
-lazy_static = "1.1"
+lazy_static = "1.4"
 serde = { version = "1.0", features = ["serde_derive"] }
 serde_json = "1.0"
-tera = "0.11"
-boringssl = "0.0.5"
+tera = "1.1"
+thiserror = "1.0"
 
 [dev-dependencies]
-gag = "0.1"
 matches = "0.1"

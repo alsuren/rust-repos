@@ -1,7 +1,12 @@
 [package]
-name = "quick-skeleton"
+name = "quickskeleton"
 version = "0.4.7"
 authors = ["arthrp"]
+license = "GPL-3.0-only"
+description = "Simple tool for scaffolding"
+homepage = "https://github.com/arthrp/quick-skeleton"
+repository = "https://github.com/arthrp/quick-skeleton"
+readme = "README.md"
 
 [dependencies]
 handlebars = "0.25.0"
@@ -9,4 +14,3 @@ text_io = "0.1.5"
 zip = "0.4"
 rustc-serialize = "0.3"
 walkdir = "1.0"
-boringssl = "0.0.5"

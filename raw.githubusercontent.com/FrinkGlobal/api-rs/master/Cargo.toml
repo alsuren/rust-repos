@@ -1,6 +1,6 @@
 [package]
 name = "fractal-api"
-version = "0.9.35"
+version = "0.9.39"
 authors = [
     "Iban Eguia <iban@fractal.global>",
     "Eric Remigino <eric@fractal.global>",
@@ -20,7 +20,6 @@ chrono = { version = "^0.2", features = ["rustc-serialize"]}
 rustc-serialize = "^0.3"
 fractal-utils = "^0.3"
 fractal-dto = "0.8.3"
-boringssl = "0.0.5"
 
 [features]
 default = []

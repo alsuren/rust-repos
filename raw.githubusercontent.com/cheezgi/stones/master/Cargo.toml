@@ -6,7 +6,6 @@ authors = ["cheezgi <zackh@firemail.cc>"]
 [dependencies]
 argparse = "*"
 rustyline = "*"
-boringssl = "0.0.5"
 
 [profile.dev]
 debug = true

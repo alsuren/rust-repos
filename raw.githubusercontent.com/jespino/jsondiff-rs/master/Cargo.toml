@@ -9,7 +9,6 @@ serde_json = "*"
 clap = "*"
 log = "*"
 loggerv = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "jsondiff"

@@ -1,6 +1,6 @@
 [package]
 name = "maplit"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["bluss"]
 
 license = "MIT/Apache-2.0"
@@ -14,6 +14,3 @@ categories = ["rust-patterns"]
 
 [package.metadata.release]
 no-dev-version = true
-
-[dependencies]
-boringssl = "0.0.5"

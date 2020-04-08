@@ -1,11 +1,22 @@
 [package]
-name = "cpu-stats-logger"
-description = "Tool to log CPU stats"
-version = "0.1.0"
+name = "statslogger"
+description = "Tool to log system stats to stdout or a file"
+version = "0.2.0"
 authors = ["Chris Atkin <atkinchris@gmail.com>"]
 publish = false
+edition = "2018"
 
 [dependencies]
-chrono = "0.4.6"
-sysinfo = "0.7.0"
-boringssl = "0.0.5"
+chrono = "0.4.9"
+clap = "2.33.0"
+sysinfo = "0.12.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+structopt = { version = "0.3", default-features = false }
+whoami = "0.8.1"
+
+[profile.release]
+panic = 'abort'
+codegen-units = 1
+opt-level = 'z'
+lto = true

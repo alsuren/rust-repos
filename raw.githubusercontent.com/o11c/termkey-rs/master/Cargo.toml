@@ -15,6 +15,3 @@ test = false
 [[test]]
 name = "integration"
 path = "src/test.rs"
-
-[dependencies]
-boringssl = "0.0.5"

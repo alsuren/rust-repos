@@ -5,29 +5,33 @@ authors = ["Robin Ole Heinemann <robin.ole.heinemann@t-online.de>"]
 edition = "2018"
 
 [dependencies]
+env_logger = "*"
+log = "*"
+failure = "*"
 derivative = "*"
 fuse_mt = "*"
 fuseable = { path = "fuseable", features = ["bimap"] }
 fuseable_derive = { path = "fuseable_derive" }
-i2c-linux = "*"
 i2cdev = "*"
 isomorphism = { version = "*", features = ["serde"] }
 itertools = "*"
 lazy_static = "*"
 memmap = "*"
-nom = "*"
 num = "*"
 parse_num = { path = "parse_num" }
-serde = { version = "1.0.85", features = ["rc"] }
-serde_derive = "1.0.85"
+serde = { version = "*", features = ["rc"] }
+serde_derive = "*"
 serde_yaml = "*"
 structopt = "*"
 paste = "*"
 byteorder = "*"
 regex = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 codegen-units = 16
 lto = true
 panic = 'abort'
+
+
+[dev-dependencies]
+pretty_assertions = "*"

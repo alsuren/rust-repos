@@ -1,28 +1,36 @@
 [package]
 name = "oxidux"
-version = "0.1.0"
+description = "Reverse proxy and process manager for web app development."
+version = "0.3.1-alpha.0"
 authors = ["Jonathan Mast <jon@jonmast.com>"]
+license = "GPL-3.0-or-later"
 edition="2018"
 
+[package.metadata.release]
+tag-prefix = "v"
+sign-commit = true
+
 [dependencies]
-futures = "0.1.14"
-tokio = "0.1"
-tokio-core = "0.1"
-tokio-io = "0.1"
-tokio-process = "0.2.2"
-tokio-uds = "0.2.1"
-tokio-codec = "0.1"
-tokio-signal = "0.2.7"
-hyper = "0.12.0"
-url = "1.6.0"
-toml = "0.4"
+futures = "0.3.1"
+tokio = { version = "0.2.4", features = ["tcp", "signal", "fs", "time", "uds", "io-util", "sync"] }
+hyper = "0.13.0"
+url = "2.0.0"
+toml = "0.5"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 clap = "2.32"
-nix = "0.11"
-dirs = "1.0"
-ansi_term = "0.9"
-shellexpand = "1.0"
+nix = "0.17"
+dirs = "2.0"
+ansi_term = "0.12"
+shellexpand = "2.0"
 failure = "0.1.5"
 listenfd = "0.3.3"
-boringssl = "0.0.5"
+regex = "1"
+libc = "0.2"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+trust-dns-server = "0.18.1"
+trust-dns-client = "0.18.1"
+
+[dev-dependencies]
+rand = "0.7.0"

@@ -36,12 +36,12 @@ log = "0.4"
 clap = "2"
 chrono = "0.4"
 backtrace = "0.3"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-rand = "0.6"
-rand_xorshift = "0.1"
+rand = "0.7"
+rand_xorshift = "0.2"
 env_logger = "0.6"
+tempfile = "3"
 
 [dev-dependencies.criterion]
 version = "0.2.10"

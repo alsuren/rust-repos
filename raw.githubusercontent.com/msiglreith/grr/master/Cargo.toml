@@ -1,13 +1,14 @@
 [package]
 name = "grr"
-version = "0.6.0"
+version = "0.7.0"
 authors = ["msiglreith <m.siglreith@gmail.com>"]
 description = "Bare metal OpenGL 4.5+ wrapper"
 homepage = "https://github.com/msiglreith/grr"
 repository = "https://github.com/msiglreith/grr"
 keywords = ["graphics"]
+edition = "2018"
 documentation = "https://docs.rs/grr"
-license = "MPL-2.0"
+license = "MIT OR Apache-2.0"
 exclude = [
     "examples/*",
     "info/*",
@@ -16,19 +17,18 @@ build = "build.rs"
 
 [dependencies]
 bitflags = "1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assimp = "0.3"
 assimp-sys = "0.3"
-glutin = "0.19"
-image = "0.20"
-nalgebra-glm = "0.2"
-rand = "0.6"
-ndarray = "0.12"
+glutin = "0.21"
+image = "0.22"
+nalgebra-glm = "0.4"
+rand = "0.7"
+ndarray = "0.13"
 
 [build-dependencies]
-gl_generator = "0.10"
+gl_generator = "0.14"
 
 [[example]]
 name = "device"
@@ -45,3 +45,7 @@ path = "examples/texture.rs"
 [[example]]
 name = "pbr"
 path = "examples/pbr/pbr.rs"
+
+[[example]]
+name = "multi_context"
+path = "examples/multi_context.rs"

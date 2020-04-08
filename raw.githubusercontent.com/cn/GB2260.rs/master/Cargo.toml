@@ -1,6 +1,6 @@
 [package]
 name = "gb2260"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["messense <messense@icloud.com>"]
 description = "The Rust implementation for looking up Chinese administrative divisions"
 keywords = ["chinese", "divisions"]
@@ -10,8 +10,7 @@ exclude = ["data/**"]
 repository = "https://github.com/cn/GB2260.rs"
 
 [dependencies]
-phf = "0.7"
-boringssl = "0.0.5"
+phf = "0.8"
 
 [badges]
 travis-ci = { repository = "cn/GB2260.rs" }

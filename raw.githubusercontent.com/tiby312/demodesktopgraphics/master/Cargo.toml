@@ -6,16 +6,10 @@ build = "build.rs"
 edition = "2018"
 
 [dependencies]
-glutin = "0.18.0"
-axgeom = "1.0.2"
-boringssl = "0.0.5"
-
-
-#glutin = {git ="https://github.com/tomaka/glutin.git"}
-#glutin = {path="../glutin"}
+glutin = {git="https://github.com/rust-windowing/glutin.git"}
+axgeom = "1.2"
 
 [build-dependencies]
-gl_generator = "0.10.0"
-#gl_generator = "0.5.0"
+gl_generator = "0.13.0"
 
 

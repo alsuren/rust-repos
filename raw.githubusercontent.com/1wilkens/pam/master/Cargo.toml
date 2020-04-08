@@ -3,23 +3,23 @@
 name = "pam"
 version = "0.7.0"
 authors = ["Florian Wilkens <gh@1wilkens.org>"]
-description = "Safe Rust wrappers for PAM authentification"
+description = "Safe Rust wrappers for PAM authentication"
+license = "MIT OR Apache-2.0"
+categories = ["authentication"]
+
 repository = "https://github.com/1wilkens/pam/"
 documentation = "https://docs.rs/pam/"
 readme = "README.md"
-license = "MIT OR Apache-2.0"
-categories = ["authentication"]
 
 edition = "2018"
 
 [badges]
-travis-ci = { repository = "1wilkens/pam" }
+azure-devops = { project = "1wilkens/ci", pipeline = "pam" }
 
 [dependencies]
 libc    = "^0.2"
 pam-sys = "^0.5"
 users   = "^0.8"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rpassword = "2.0"

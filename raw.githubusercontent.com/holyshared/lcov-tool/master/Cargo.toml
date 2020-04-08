@@ -11,7 +11,6 @@ homepage = "https://github.com/holyshared/lcov-tool"
 [dependencies]
 clap = "2.13.0"
 lcov-parser = "2.0.0"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "lcov-tool"

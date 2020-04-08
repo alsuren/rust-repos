@@ -5,26 +5,18 @@ edition = "2018"
 build   = "build.rs"
 authors = ["Kohei Watanabe <xbeef29@gmail.com>"]
 readme  = "README.md"
-license = "Unlicense/MIT"
-repository  = "https://github.com/symplectik/compacts"
-keywords    = ["succinct", "bitvec", "bitmap", "bitset"]
+license = "Apache-2.0/MIT"
+repository  = "https://github.com/symplectik/tidy"
+keywords    = ["compact", "succinct", "rank", "select"]
 categories  = ["data-structures"]
-description = """
-compact data structures
-"""
-
-[workspace]
-members = ["compacts_roaring"]
+description = "compact data structures"
 
 [dependencies]
-boringssl = "0.0.5"
-# rayon = "1"
 
 [build-dependencies]
 
-# tests, benchmarks and examples
 [dev-dependencies]
-quickcheck = "0.7"
+rand = "0.7"
+quickcheck = "0.9"
 lazy_static = "1"
-rand = "0.6"
-libc = "*"
+# zstd = "0.4"

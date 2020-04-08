@@ -1,26 +1,37 @@
+[workspace]
+members = ["dev/cmp"]
+
 [package]
 name = "lewton"
-version = "0.9.4"
+version = "0.10.1"
 authors = ["est31 <MTest31@outlook.com>"]
 description = "Pure Rust vorbis decoder"
-license = "MIT/Apache-2.0"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/RustAudio/lewton"
 keywords = ["ogg", "vorbis", "decoder", "audio"]
 categories = ["compression", "multimedia::audio", "multimedia::encoding"]
 documentation = "https://docs.rs/lewton"
 readme = "README.md"
+edition = "2015"
 
 [features]
 default = ["ogg"]
 async_ogg = ["ogg", "ogg/async", "futures", "tokio-io"]
 
+[[example]]
+name = "perf"
+required-features = ["ogg"]
+
+[[example]]
+name = "player"
+required-features = ["ogg"]
+
 [dependencies]
 byteorder = "1.0"
-smallvec = "0.6"
+tinyvec = { version = "0.3.2", features = ["alloc"] }
 ogg = { version = "0.7", optional = true }
 tokio-io = { version = "0.1", optional = true }
 futures = { version = "0.1", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 ogg = "0.7"
@@ -31,4 +42,4 @@ features = ["async_ogg"]
 
 [lib]
 name = "lewton"
-crate-type = ["lib", "cdylib"]
+crate-type = ["lib", "staticlib"]

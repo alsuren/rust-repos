@@ -2,9 +2,11 @@
 members = [
     "mp4parse",
     "mp4parse_capi",
+    "test_ffi",
 ]
 
-# Somewhat heavy-handed, but we want at least -Z force-overflow-checks=on.
 [profile.release]
-debug-assertions = true
+overflow-checks = true
 
+[profile.bench]
+overflow-checks = true

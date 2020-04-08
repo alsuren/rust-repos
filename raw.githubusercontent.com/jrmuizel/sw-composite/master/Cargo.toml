@@ -1,10 +1,10 @@
 [package]
 name = "sw-composite"
-version = "0.5.3"
+version = "0.7.7"
 authors = ["Jeff Muizelaar <jrmuizel@gmail.com>"]
 license = "BSD-3-Clause"
 description = "a collection of software compositing routines"
 documentation = "https://docs.rs/sw-composite"
+repository = "https://github.com/jrmuizel/sw-composite/"
 
 [dependencies]
-boringssl = "0.0.5"

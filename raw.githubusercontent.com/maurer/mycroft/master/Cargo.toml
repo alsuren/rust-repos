@@ -13,10 +13,22 @@ error-chain = "0.11.0"
 quote = "0.6"
 syn = "0.15"
 proc-macro2 = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 mycroft-macros = { path = "mycroft-macros", version = "0.0.1" }
 mycroft-support = { path = "mycroft-support", version = "0.0.1" }
 log = "0.4"
 rand = "0.4"
+criterion = "0.2"
+
+[[bench]]
+name = "clique"
+harness = false
+
+[[bench]]
+name = "insert"
+harness = false
+
+[[bench]]
+name = "triangle"
+harness = false

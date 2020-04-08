@@ -7,7 +7,6 @@ authors = ["Bug0r"]
 libc = "*"
 math = { path = "../math-rust", version = "*" }
 renderer = { path = "../renderer-rust", version = "*" }
-boringssl = "0.0.5"
 
 [lib]
 name = "py_render_lib"

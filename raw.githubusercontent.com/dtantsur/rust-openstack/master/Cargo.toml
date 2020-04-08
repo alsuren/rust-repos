@@ -2,7 +2,7 @@
 
 name = "openstack"
 description = "OpenStack SDK for Rust"
-version = "0.2.3"
+version = "0.3.2"
 authors = ["Dmitry Tantsur <divius.inside@gmail.com>"]
 homepage = "https://dtantsur.github.io/rust-openstack/openstack/"
 repository = "https://github.com/dtantsur/rust-openstack"
@@ -15,27 +15,29 @@ edition = "2018"
 
 [features]
 
-default = ["compute", "image", "network"]
+default = ["compute", "image", "network", "native-tls", "object-storage"]
 compute = []
 image = []
 network = []
+native-tls = ["reqwest/default-tls", "osauth/native-tls"]
+object-storage = []
+rustls = ["reqwest/rustls-tls", "osauth/rustls"]
 
 [dependencies]
 
 chrono = { version = "^0.4", features = ["serde"] }
-dirs = "^1.0"
-eui48 = { version = "^0.3.1", features = ["serde"] }
-fallible-iterator = "^0.1"
+eui48 = { version = "^0.4.0", features = ["serde"] }
+fallible-iterator = "^0.2.0"
 ipnet = { version = "^2.0", features = ["serde"] }
 log = "^0.4"
-reqwest = "^0.9"
-osauth = "^0.1.0"
+osauth = { version = "^0.2.5", default-features = false, features = ["sync"] }
+osproto = "^0.1.2"
+reqwest = { version = "^0.9", default-features = false }
 serde = "^1.0"
 serde_derive = "^1.0"
 serde_json = "^1.0"
 serde_yaml = "^0.8"
 waiter = "^0.1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "^0.6"

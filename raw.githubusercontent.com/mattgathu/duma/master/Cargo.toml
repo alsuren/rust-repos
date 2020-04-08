@@ -1,6 +1,6 @@
 [package]
 name = "duma"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Matt Gathu <mattgathu@gmail.com>"]
 description = "A minimal file downloader"
 documentation = "https://github.com/mattgathu/duma"
@@ -21,7 +21,6 @@ threadpool = "1.7.1"
 failure = { version = "0.1.5", features = [] }
 mrq = "0.1.0"
 url = "1.7.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_cmd = "0.11"

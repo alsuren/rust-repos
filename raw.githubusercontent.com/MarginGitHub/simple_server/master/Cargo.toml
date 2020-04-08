@@ -22,4 +22,3 @@ diesel_codegen = { version = "0.16.0", features = ["sqlite"] }
 #connect pool
 r2d2 = "0.7.4"
 r2d2-diesel = "0.16.0"
-boringssl = "0.0.5"

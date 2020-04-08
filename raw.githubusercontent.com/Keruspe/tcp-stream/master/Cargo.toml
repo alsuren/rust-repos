@@ -1,6 +1,6 @@
 [package]
 name          = "tcp-stream"
-version       = "0.2.1" # remember to update html_root_url
+version       = "0.10.2" # remember to update html_root_url
 authors       = ["Marc-Antoine Perennou <Marc-Antoine@Perennou.com>"]
 edition       = "2018"
 description   = "mio's TcpStream on steroids"
@@ -14,18 +14,20 @@ license       = "BSD-2-Clause"
 name = "tcp_stream"
 
 [features]
-default = ["native-tls"]
-rustls  = ["rustls-connector"]
-tokio   = ["futures", "tokio-io"]
+default                   = ["native-tls"]
+dangerous-configuration   = ["rustls-connector/dangerous-configuration"]
+quic                      = ["rustls-connector/quic"]
+rustls                    = ["rustls-native-certs"]
+rustls-webpki-roots-certs = ["rustls-connector", "rustls-connector/webpki-roots-certs"]
+rustls-native-certs       = ["rustls-connector", "rustls-connector/native-certs"]
+vendored                  = ["openssl/vendored"]
 
 [dependencies]
 cfg-if = "^0.1.5"
-mio    = '^0.6.14'
-boringssl = "0.0.5"
 
-[dependencies.futures]
-version  = "^0.1"
-optional = true
+[dependencies.mio]
+version  = "^0.7"
+features = ["os-poll", "tcp"]
 
 [dependencies.native-tls]
 version  = "^0.2"
@@ -36,12 +38,9 @@ version  = "^0.10"
 optional = true
 
 [dependencies.rustls-connector]
-version  = "^0.6"
-optional = true
-
-[dependencies.tokio-io]
-version  = "^0.1.7"
-optional = true
+version          = "^0.10"
+optional         = true
+default-features = false
 
 [package.metadata.docs.rs]
 all-features = true

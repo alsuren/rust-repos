@@ -3,7 +3,7 @@ name = "bytify"
 description = "Convenience macro for generating continuous byte arrays from arbitrary sequences of literals."
 edition = "2018"
 version = "0.3.1"
-authors = ["Eugene <mahou@shoujo.pw>"]
+authors = ["Eugene Palmoff <mahou@shoujo.pw>"]
 license = "MIT"
 repository = "https://github.com/mahou-shoujo/bytify-rs.git"
 homepage = "https://github.com/mahou-shoujo/bytify-rs.git"
@@ -15,7 +15,6 @@ keywords = ["bytification", "literals", "hex", "proc-macro"]
 proc-macro-hack = "0.5"
 
 bytify-impl = { path = "./bytify-impl/", version = "=0.3.1" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 byteorder = "1"

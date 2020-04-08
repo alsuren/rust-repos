@@ -15,7 +15,6 @@ cita-web3 = { git = "https://github.com/cryptape/cita-common", branch = "develop
 cita-types = { git = "https://github.com/cryptape/cita-common", branch = "develop" }
 cita-crypto = { git = "https://github.com/cryptape/cita-common", branch = "develop" }
 libproto = { git = "https://github.com/cryptape/cita-common", branch = "develop" }
-boringssl = "0.0.5"
 
 [features]
 default = ["secp256k1", "sha3hash"]

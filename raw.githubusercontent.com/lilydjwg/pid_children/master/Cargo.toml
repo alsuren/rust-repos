@@ -2,9 +2,18 @@
 name = "pid_children"
 version = "0.1.0"
 authors = ["依云 <lilydjwg@gmail.com>"]
+license = "BSD-3-Clause"
+edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+libc = "*"
+
+[[bin]]
+name = "pid_children"
+
+[[bin]]
+name = "kill_children"
+path = "src/kill.rs"
 
 [profile.release]
 lto = true

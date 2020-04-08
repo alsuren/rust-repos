@@ -16,7 +16,6 @@ std = ["fast_fmt/with_std"]
 
 [dependencies]
 fast_fmt = { version = "0.1.3", default-features = false }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 void = "1"

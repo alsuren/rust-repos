@@ -15,7 +15,6 @@ repository = "https://github.com/roguePanda/rcmark.git"
 libc = "0.1"
 bitflags = "0.1.1"
 libcmark-sys = { path = "libcmark-sys", version = "0.1" }
-boringssl = "0.0.5"
 
 [[bin]]
 name = "rcmark"

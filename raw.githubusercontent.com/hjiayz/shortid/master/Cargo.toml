@@ -1,9 +1,23 @@
 [package]
 name = "shortid"
-version = "0.1.0"
+version = "1.0.6"
 authors = ["hjiayz <hjiayz@hotmail.com>"]
 edition = "2018"
+license = "AGPL-3.0"
+description = "uuidv1 generator and variant. safe and fast."
+keywords = ["uuid", "uuidv1", "safe", "fast"]
+repository = "https://github.com/hjiayz/shortid.git"
+categories = ["encoding"]
+readme = "README.MD"
 
 [dependencies]
-failure = "0.1.5"
-boringssl = "0.0.5"
+thiserror = "1.0.9"
+
+[dev-dependencies]
+uuid = { version = "0.8.1", features = ["v1"] }
+criterion = "0.2"
+rayon = "1.2.0"
+
+[[bench]]
+name = "benchmark"
+harness = false

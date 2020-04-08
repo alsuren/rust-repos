@@ -5,10 +5,11 @@ authors = ["Eduardo Cunha <hey@drgmr.com>"]
 edition = "2018"
 
 [dependencies]
-rubrail = { git = "https://github.com/drgmr/rubrail-rs.git" }
-log = "0.4.6"
-boringssl = "0.0.5"
-
-[dependencies.fruitbasket]
-version = "0.7.0"
-features = ["logging"]
+log = "0.4.7"
+env_logger = "0.6.2"
+serde = "1.0.97"
+serde_json = "1.0.40"
+serde_derive = "1.0.97"
+fruitbasket = "0.8.0"
+rubrail = "0.9.0"
+reqwest = "0.9.19"

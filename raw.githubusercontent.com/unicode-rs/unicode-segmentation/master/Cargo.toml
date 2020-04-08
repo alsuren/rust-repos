@@ -1,8 +1,8 @@
 [package]
 
 name = "unicode-segmentation"
-version = "1.3.0"
-authors = ["kwantam <kwantam@gmail.com>"]
+version = "1.6.0"
+authors = ["kwantam <kwantam@gmail.com>", "Manish Goregaokar <manishsmail@gmail.com>"]
 
 homepage = "https://github.com/unicode-rs/unicode-segmentation"
 repository = "https://github.com/unicode-rs/unicode-segmentation"
@@ -16,13 +16,15 @@ This crate provides Grapheme Cluster, Word and Sentence boundaries
 according to Unicode Standard Annex #29 rules.
 """
 
-exclude = [ "target/*", "Cargo.lock", "scripts/tmp", "*.txt" ]
+exclude = [ "target/*", "Cargo.lock", "scripts/tmp", "benches/texts/*", "*.txt", ]
 
 [features]
 no_std = [] # This is a no-op, preserved for backward compatibility only.
 
 [dev-dependencies]
 quickcheck = "0.7"
+bencher = "0.1"
 
-[dependencies]
-boringssl = "0.0.5"
+[[bench]]
+name = "graphemes"
+harness = false

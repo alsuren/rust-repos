@@ -1,36 +1,52 @@
 [package]
 name = "openidconnect"
-version = "0.1.0"
+version = "1.0.0-alpha.14"
 authors = ["David A. Ramos <ramos@cs.stanford.edu>"]
 description = "OpenID Connect library"
 license = "MIT"
 repository = "https://github.com/ramosbugs/openidconnect-rs"
+edition = "2018"
+readme = "README.md"
+
+[package.metadata.docs.rs]
+all-features = true
+
+[badges]
+maintenance = { status = "actively-developed" }
 
 [features]
-# FIXME: document these optional features
+default = ["reqwest-09"]
+curl = ["oauth2/curl"]
+futures-01 = ["oauth2/futures-01", "futures-0-1"]
+futures-03 = ["oauth2/futures-03", "futures-0-3"]
+reqwest-09 = ["oauth2/reqwest-09"]
+reqwest-010 = ["oauth2/reqwest-010"]
 nightly = []
-trace_requests = []
 
 [dependencies]
 base64 = "0.9"
 chrono = "0.4"
-curl = "0.4"
 failure = "0.1"
 failure_derive = "0.1"
+futures-0-1 = { version = "0.1", optional = true, package = "futures" }
+futures-0-3 = { version = "0.3", optional = true, package = "futures" }
+http = "0.1"
 itertools = "0.7.8"
 log = "0.4"
-oauth2 = "2.0.0-beta.2"
+oauth2 = "=3.0.0-alpha.9"
 rand = "0.6"
 ring = "0.14"
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
+serde-value = "0.6"
 untrusted = "0.6"
-url = "1.0"
-boringssl = "0.0.5"
+url = "2.1"
 
 [dev-dependencies]
-color-backtrace = { version = "0.1" }
+color-backtrace = { version = "0.2" }
 env_logger = "0.5"
 hyper = "0.11"
 pretty_assertions = "0.5"
+reqwest_ = { package = "reqwest", version = "0.9" }
+retry = "0.5"

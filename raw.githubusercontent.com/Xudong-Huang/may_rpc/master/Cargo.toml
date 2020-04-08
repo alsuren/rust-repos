@@ -14,12 +14,11 @@ description = "RPC framework for Rust based on coroutine."
 # crate-type = ["dylib"]
 
 [dependencies]
-serde = "1"
-bincode = "0.9"
+may = "0.3"
+bincode = "1"
+serde = { version = "1", features = ["derive"] }
 conetty = { git = "https://github.com/Xudong-Huang/conetty.git" }
-serde_derive = "1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-may = { git = "https://github.com/Xudong-Huang/may.git" }
-env_logger = "0.4"
+env_logger = "0.5"
+

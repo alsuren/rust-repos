@@ -1,7 +1,7 @@
 [package]
 name = "idea-runner"
 version = "0.1.0"
-authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+authors = ["LambdaXymox <lambda.xymox@gmail.com>"]
 
 [[bin]]
 name = "idea"
@@ -10,4 +10,3 @@ name = "idea"
 opt-level = 3
 
 [dependencies]
-boringssl = "0.0.5"

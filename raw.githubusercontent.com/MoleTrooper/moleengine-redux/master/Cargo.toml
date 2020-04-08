@@ -1,8 +1,22 @@
-[workspace]
+[package]
+name = "moleengine"
+version = "0.1.0"
+authors = ["Mikael Myyrä <mikael.myyrae@gmail.com>"]
+edition = "2018"
 
-members = [
-    "engine",
-    "engine/ecs_codegen",
-    "examples/template",
-    "examples/testgame",
-]
+[dependencies]
+glutin = "0.21.2"
+glium = "0.25.1"
+ultraviolet = "0.4.5"
+hibitset = "0.6.3"
+anymap = "0.12.1"
+lazy_static = "1.4.0"
+serde = { features = ["derive"], version = "1.0.104" }
+ron = "0.5.1"
+
+[dev-dependencies]
+microprofile = "0.2.1"
+rand = "0.7.3"
+
+[profile.dev]
+opt-level = 1

@@ -7,7 +7,6 @@ edition = "2018"
 [dependencies]
 nb = "*"
 embedded-hal = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 cortex-m-rt = "0.6.5"

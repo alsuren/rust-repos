@@ -2,6 +2,7 @@
 name = "thulani"
 version = "0.1.6"
 authors = ["Nathan Perry <avaglir@gmail.com>"]
+edition = "2018"
 
 [features]
 default = ["db", "games"]
@@ -10,7 +11,8 @@ games = []
 
 [dependencies]
 lazy_static = "~1.3"
-failure = "^0.1"
+anyhow = "^1.0"
+thiserror = "^1.0"
 log = "^0.4"
 typemap = "^0.3"
 url = "~1.7"
@@ -36,9 +38,8 @@ pest = "~2.1"
 pest_derive = "~2.1"
 postgres = { version = "^0.15", optional = true, features = ["with-chrono"] }
 r2d2_postgres = { version = "^0.14", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.serenity]
 default-features = false
-features = ["builder", "cache", "client", "framework", "model", "utils", "voice", "standard_framework"]
+features = ["builder", "cache", "client", "framework", "gateway", "http", "model", "utils", "voice", "standard_framework", "rustls_backend"]
 git = "https://github.com/mammothbane/serenity"

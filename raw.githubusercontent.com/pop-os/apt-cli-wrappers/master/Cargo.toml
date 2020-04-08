@@ -8,5 +8,5 @@ edition = "2018"
 
 [dependencies]
 exit-status-ext = { git = "https://github.com/pop-os/exit-status-ext" }
-libc = "0.2.49"
-boringssl = "0.0.5"
+libc = "0.2.58"
+procfs = "0.5.3"

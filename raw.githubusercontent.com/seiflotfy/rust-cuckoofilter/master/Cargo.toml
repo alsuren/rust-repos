@@ -1,7 +1,11 @@
 [package]
 name = "cuckoofilter"
 version = "0.4.0"
-authors = ["Seif Lotfy <seif.lotfy@gmail.com>", "Lukas Kalbertodt <lukas.kalbertodt@gmail.com>", "Florian Jacob <accounts+git@florianjacob.de>"]
+authors = [
+  "Seif Lotfy <seif.lotfy@gmail.com>", 
+  "Florian Jacob <accounts+git@florianjacob.de>", 
+  "The cuckoofilter contributors",
+]
 
 # A short blurb about the package. This is not rendered in any format when
 # uploaded to crates.io (aka this is not markdown)
@@ -37,7 +41,6 @@ serde_derive = "1.0"
 clippy = {version = "0.0.77", optional = true}
 fnv = {version = "1.0.2", optional = true}
 farmhash = {version = "1.1", optional = true}
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0"

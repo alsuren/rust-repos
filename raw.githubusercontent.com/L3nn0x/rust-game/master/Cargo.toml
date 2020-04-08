@@ -8,7 +8,6 @@ build = "build.rs"
 cgmath = "*"
 specs = "*"
 shred = "*"
-boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "*"

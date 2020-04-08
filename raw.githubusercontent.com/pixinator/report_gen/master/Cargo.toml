@@ -9,4 +9,5 @@ postgres = "*"
 ansi_term = "*"
 csv = "*"
 chrono = "*"
-boringssl = "0.0.5"
+file_libs = { path = "../file_libs", version = "0.1.0" }
+print_libs = { path = "../print_libs", version = "0.1.0" }

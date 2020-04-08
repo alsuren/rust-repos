@@ -5,12 +5,18 @@ authors = ["Evan Chan <velvia@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-memoffset = "0.2"
-byteorder = "1"
-boringssl = "0.0.5"
+memoffset = "0.5"
+plain = "0.2.3"
+scroll = { version = "0.10", features = ["derive"] }
+arrayref = "*"
+enum_dispatch = "0.2"
+num = "*"
+
+# TODO: put this behind a feature flag
+packed_simd = "0.3"
 
 [dev-dependencies]
-criterion = "^0.2"
+criterion = "0.3"
 proptest = "0.9.1"
 
 [[bench]]

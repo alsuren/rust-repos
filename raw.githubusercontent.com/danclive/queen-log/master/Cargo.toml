@@ -1,6 +1,6 @@
 [package]
 name            = "queen-log"
-version         = "0.1.2"
+version         = "0.2.2"
 license         = "MIT"
 authors         = ["mitum <dangcheng@hotmail.com>"]
 description     = "log"
@@ -9,6 +9,7 @@ homepage        = "https://github.com/mitum/queen-log"
 repository      = "https://github.com/mitum/queen-log"
 readme          = "README.md"
 keywords        = ["log", "queen"]
+edition         = "2018"
 exclude         = [
   ".gitignore",
   ".travis.yml",
@@ -17,6 +18,5 @@ exclude         = [
 ]
 
 [dependencies]
-lazy_static = "1.0"
-chrono = "0.4"
-boringssl = "0.0.5"
+log = { version = "0.4", features = ["std"] }
+humantime = "1.3"

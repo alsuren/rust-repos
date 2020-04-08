@@ -36,7 +36,6 @@ mongodb = { version = "*", optional = true }
 wither = { version = "*", optional = true }
 yew = { path = "/home/toby/sources/yew", optional = true }
 stdweb = { version = "*", features = ["serde"], optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 quickcheck = "^0.6"

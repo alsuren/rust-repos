@@ -7,12 +7,9 @@ license = "Apache 2.0"
 repository = "https://github.com/ranxiverba/mlatu"
 description = "Sphinx mix network packet processor implemented in Rust"
 
-[dependencies]
-boringssl = "0.0.5"
-
-[dependencies.abstract-cryptography]
-git = "https://github.com/ranxiverba/abstract-cryptography.git"
-features = ["std", "secp256k1"]
+[dependencies.rac]
+git = "https://github.com/ranxiverba/rac.git"
+features = ["secp256k1"]
 
 [dependencies.digest]
 version = "0.8"
@@ -32,11 +29,14 @@ version = "1.0"
 features = ["derive"]
 optional = true
 
+[dependencies.either]
+version = "1.5"
+
 [dev-dependencies.rand]
 version = "0.6"
 
 [dev-dependencies.secp256k1]
-version = "0.13"
+version = "0.17"
 features = ["rand"]
 
 [dev-dependencies.hmac]
@@ -48,15 +48,12 @@ version = "0.8"
 [dev-dependencies.chacha]
 version = "0.3"
 
-[dev-dependencies.either]
-version = "1.5"
-
 [dev-dependencies.tirse]
-version = "0.5"
+version = "0.6"
 features = ["use_std"]
 
 [dev-dependencies.hex]
-version = "0.3"
+version = "0.4"
 
 [features]
 serde-support = ["serde"]

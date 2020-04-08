@@ -23,7 +23,6 @@ rand = "~0.4.0"
 rand_derive = "~0.3.0"
 winit = "0.16.0"
 dirs = "1.0.4"
-boringssl = "0.0.5"
 
 [dependencies.conrod]
 features = ["gfx_rs", "winit"]

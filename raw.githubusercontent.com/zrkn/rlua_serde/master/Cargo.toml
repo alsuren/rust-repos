@@ -1,6 +1,6 @@
 [package]
 name = "rlua_serde"
-version = "0.3.1"
+version = "0.4.0"
 authors = ["zrkn <zrkn@email.su>"]
 description = "Serde (De)serializer implementation for rlua Value"
 repository = "https://github.com/zrkn/rlua_serde/"
@@ -9,9 +9,8 @@ keywords = ["lua", "serde"]
 license = "MIT"
 
 [dependencies]
-rlua  = "0.16"
+rlua  = "0.17"
 serde = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "1.0"

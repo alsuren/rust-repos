@@ -3,9 +3,6 @@ name = "pause_process"
 version = "0.1.0"
 authors = ["Wim"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.winapi]
 version = "0.3.6"
 features = ["winuser", "errhandlingapi", "tlhelp32", "processthreadsapi", "handleapi", "winnt"]

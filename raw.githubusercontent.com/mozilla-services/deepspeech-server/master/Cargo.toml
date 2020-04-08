@@ -1,6 +1,6 @@
 [package]
 name = "ds-srv"
-version = "0.4.2"
+version = "0.6.1"
 authors = ["Alexandre Lissy <lissyx@lissyx.dyndns.org>"]
 
 [features]
@@ -8,7 +8,7 @@ default = []
 dump_debug_stream = []
 
 [dependencies]
-deepspeech = "0.2.0"
+deepspeech = "0.6.1"
 audrey = "0.2"
 clap = "2.31.2"
 log = "0.4.1"
@@ -21,4 +21,3 @@ serde = "1.0.66"
 serde_derive = "1.0.66"
 serde_json = "1.0.19"
 mkstemp-rs = "1.0.0"
-boringssl = "0.0.5"

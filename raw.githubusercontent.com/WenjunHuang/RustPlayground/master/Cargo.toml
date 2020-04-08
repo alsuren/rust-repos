@@ -1,5 +1,5 @@
 [package]
-name = "gtk_rs_playground"
+name = "rust_playground"
 version = "0.1.0"
 authors = ["WenjunHuang <huangwj@goldlokedu.cn>"]
 
@@ -40,7 +40,6 @@ percent-encoding = "1.0.1"
 relm = "*"
 relm-attributes="*"
 relm-derive = "*"
-boringssl = "0.0.5"
 #hello-world-derive = {path = "hello-world-derive"}
 
 #[features]

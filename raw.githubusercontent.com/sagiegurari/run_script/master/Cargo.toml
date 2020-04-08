@@ -1,9 +1,10 @@
 [package]
 name = "run_script"
-version = "0.3.1"
+version = "0.6.2"
 authors = ["Sagie Gur-Ari <sagiegurari@gmail.com>"]
 description = "Run shell scripts in rust."
 license = "Apache-2.0"
+edition = "2018"
 documentation = "https://sagiegurari.github.io/run_script/api/run_script/index.html"
 homepage = "http://github.com/sagiegurari/run_script"
 repository = "https://github.com/sagiegurari/run_script.git"
@@ -23,21 +24,11 @@ include = [
 ]
 
 [dependencies]
-rand = "^0.6"
-boringssl = "0.0.5"
+fsio = { version = "^0.1", features = ["temp-path"] }
 
-[target.'cfg(not(windows))'.dependencies]
-users = "^0.9"
-
-[badges.travis-ci]
-branch = "master"
-repository = "sagiegurari/run_script"
-
-[badges.appveyor]
-repository = "sagiegurari/run_script"
-service = "github"
-branch = "master"
-project_name = "sagiegurari/run-script"
+[dev-dependencies]
+doc-comment = "^0.3"
+rusty-hook = "^0.10"
 
 [badges.codecov]
 branch = "master"

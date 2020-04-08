@@ -1,39 +1,86 @@
 [package]
 name = "async-compression"
-version = "0.1.0-alpha.1"
+version = "0.3.2"
 authors = ["Wim Looman <wim@nemo157.com>", "Allen Bui <fairingrey@gmail.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
 keywords = ["compression", "gzip", "zstd", "brotli", "async"]
 categories = ["compression", "asynchronous"]
-repository = "https://github.com/rustasync/async-compression"
+repository = "https://github.com/Nemo157/async-compression"
 description = """
 Adaptors between compression crates and Rust's modern asynchronous IO types.
 """
 
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
 [features]
-default = ["bufread", "stream", "brotli", "deflate", "gzip", "zlib", "zstd"]
-bufread = []
+# groups
+default = []
+all = ["all-implementations", "all-algorithms"]
+all-implementations = ["futures-bufread", "futures-write", "stream"]
+all-algorithms = ["brotli", "bzip2", "deflate", "gzip", "lzma", "xz", "zlib", "zstd"]
+
+# implementations
+futures-bufread = ["futures-io"]
+futures-write = ["futures-io"]
 stream = ["bytes"]
-brotli = ["brotli2"]
+
+# algorithms
 deflate = ["flate2"]
 gzip = ["flate2"]
+lzma = ["xz2"]
+xz = ["xz2"]
 zlib = ["flate2"]
 zstd = ["libzstd", "zstd-safe"]
 
 [dependencies]
-brotli2 = { version = "0.3.2", optional = true }
-bytes = { version = "0.4.12", optional = true }
-flate2 = { version = "1.0.7", optional = true }
-futures-preview = "0.3.0-alpha.16"
-pin-project = "0.3.2"
-libzstd = { version = "0.4", optional = true, package = "zstd", default-features = false }
-zstd-safe = { version = "1.4", optional = true, default-features = false }
-boringssl = "0.0.5"
+xz2 = { version = "0.1.6", optional = true }
+brotli = { version = "3.3.0", optional = true }
+bytes = { version = "0.5.0", optional = true }
+bzip2 = { version = "0.3.3" , optional = true }
+flate2 = { version = "1.0.11", optional = true }
+futures-core = { version = "0.3.0", default-features = false }
+futures-io = { version = "0.3.0", default-features = false, features = ["std"], optional = true }
+pin-project-lite = "0.1.1"
+libzstd = { version = "0.5.0", optional = true, package = "zstd", default-features = false }
+zstd-safe = { version = "2.0.0", optional = true, default-features = false }
+memchr = "2.2.1"
 
 [dev-dependencies]
-proptest = "0.9.3"
-pin-utils = "0.1.0-alpha.4"
-proptest-derive = "0.1.1"
-rand = "0.6.5"
-futures-test-preview = "0.3.0-alpha.16"
+proptest = "0.9.4"
+proptest-derive = "0.1.2"
+rand = "0.7.2"
+futures = "0.3.0"
+futures-test = "0.3.0"
+ntest = "0.3.3"
+timebomb = "0.1.2"
+
+[[test]]
+name = "brotli"
+required-features = ["all-implementations", "brotli"]
+
+[[test]]
+name = "bzip2"
+required-features = ["all-implementations", "bzip2"]
+
+[[test]]
+name = "deflate"
+required-features = ["all-implementations", "deflate"]
+
+[[test]]
+name = "gzip"
+required-features = ["all-implementations", "gzip"]
+
+[[test]]
+name = "zlib"
+required-features = ["all-implementations", "zlib"]
+
+[[test]]
+name = "zstd"
+required-features = ["all-implementations", "zstd"]
+
+[[test]]
+name = "proptest"
+required-features = ["all"]

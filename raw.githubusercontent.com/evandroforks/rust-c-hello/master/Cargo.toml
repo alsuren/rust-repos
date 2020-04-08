@@ -10,6 +10,3 @@ gcc = "0.3"
 [[bin]]
 name = "test"
 path = "main.rs"
-
-[dependencies]
-boringssl = "0.0.5"

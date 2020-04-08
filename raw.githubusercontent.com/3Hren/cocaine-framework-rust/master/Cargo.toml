@@ -26,7 +26,6 @@ rmpv = { version = "0.4", features = ["with-serde"] }
 tokio-core = "0.1"
 tokio-io = "0.1"
 mio = "0.6"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 slog = "1.4"

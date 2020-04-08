@@ -4,7 +4,7 @@ description = "Tool to generate a HTML page of Dash snippets so they can shared.
 readme = "README.md"
 repository = "https://github.com/wezm/dash2html"
 documentation = "https://github.com/wezm/dash2html"
-version = "1.0.1"
+version = "1.1.0"
 authors = ["Wesley Moore <wes@wezm.net>"]
 license = "MIT"
 include = [
@@ -13,6 +13,5 @@ include = [
 ]
 
 [dependencies]
-rusqlite = "0.5.0"
+rusqlite = "0.6.0"
 regex = "0.1.43"
-boringssl = "0.0.5"

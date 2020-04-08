@@ -1,23 +1,26 @@
 [package]
 name = "cargo-bloat"
-version = "0.6.4"
+version = "0.9.3"
 authors = ["Evgeniy Reizner <razrfalcon@gmail.com>"]
 description = "Find out what takes most of the space in your executable."
 categories = ["development-tools::cargo-plugins"]
 repository = "https://github.com/RazrFalcon/cargo-bloat"
 readme = "README.md"
 license = "MIT"
+edition = "2018"
 
 [dependencies]
-goblin = "0.0.22" # the same version as in `object`
-memmap = "0.7"
-multimap = "0.4"
-object = { version = "0.12", default-features = false, features = ["std", "compression"] }
-regex = "1"
-rustc-demangle = "0.1.6"
-serde = "1"
-serde_derive = "1"
-serde_json = "1"
-structopt = "0.2"
+json = "0.12"
+memmap2 = "0.1"
+multimap = { version = "0.8", default-features = false }
+pico-args = "0.3"
 term_size = "0.3.1"
-boringssl = "0.0.5"
+
+[dependencies.regex]
+version = "1.3"
+optional = true
+default-features = false
+features = ["std"]
+
+[features]
+regex-filter = ["regex"]

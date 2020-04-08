@@ -1,6 +1,6 @@
 [package]
 name = "uni-app"
-version = "0.1.0"
+version = "0.1.4"
 authors = ["Edwin Cheng <edwin0cheng@gmail.com>", "jice <jice.nospam@gmail.com>"]
 description = "native/wasm compatibility layer for window creation, input and filesystem"
 license = "MIT"
@@ -9,10 +9,9 @@ repository = "https://github.com/unrust/uni-app"
 keywords = ["windowing", "input", "filesystem", "wasm"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [target.wasm32-unknown-unknown.dependencies]
-stdweb =  "0.4.8"
+stdweb =  "0.4.14"
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 glutin = "0.17.0"

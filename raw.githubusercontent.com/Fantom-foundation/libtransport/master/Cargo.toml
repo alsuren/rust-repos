@@ -1,8 +1,13 @@
 [package]
 name = "libtransport"
-version = "0.0.1"
+version = "0.0.4"
 authors = ["Samuel Marks <@SamuelMarks>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+libcommon-rs = { git = "https://github.com/Fantom-foundation/libcommon-rs" }
+serde = "1.0.101"
+bincode = "1.2.0"
+os_pipe = "0.8.2"
+futures-preview = { version = "0.3.0-alpha.19", features = ["async-await"] }
+failure = "0.1.5"

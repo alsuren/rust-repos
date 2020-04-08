@@ -17,7 +17,6 @@ shellexpand = "1.0.0"
 r2d2 = "0.8.3"
 r2d2_sqlite = "0.6.0"
 rusqlite = { version = "0.14.0", default-features = false }
-boringssl = "0.0.5"
 
 [build-dependencies]
 walkdir = "2"

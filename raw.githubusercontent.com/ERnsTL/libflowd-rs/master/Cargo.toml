@@ -6,4 +6,3 @@ authors = ["Ernst Rohlicek <ernst@rohlicek.at>"]
 [dependencies]
 nom = "^4.1"
 circular = { git = "https://github.com/sozu-proxy/circular" }
-boringssl = "0.0.5"

@@ -5,4 +5,19 @@ authors = ["Sergey Bushnyak <sergey.bushnyak@sigrlami.eu>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+chrono = "0.4"
+clap = "2.32.0"
+env_logger = "0.5.13"
+failure = "0.1.2"
+failure_derive = "0.1.2"
+humantime = "1.1.1"
+time = "0.1.40"
+serde_json = "1.0.32"
+
+[lib]
+name = "begaze"
+path = "src/lib.rs"
+
+[[bin]]
+name = "begaze-exe"
+path = "src/main.rs"

@@ -1,12 +1,34 @@
+# dependencies with optimizations requires nightly
+cargo-features = ["profile-overrides"]
+
 [package]
 name = "proceed"
-version = "0.0.1"
+version = "0.1.0"
 authors = ["Elias Gabriel Amaral da Silva <tolkiendili@gmail.com>"]
 description = "2d procedural generation experiments"
 repository = "https://github.com/dlight/proceed"
+edition="2018"
 license = "MIT"
 
+
+# those are default settings, but just to emphasise
+[profile.dev]
+opt-level = 0
+incremental = true
+
+# dependencies are built with optimizations
+[profile.dev.package."*"]
+opt-level = 3
+incremental = false
+
 [dependencies]
-ggez = { version = "0.4", features = ["cargo-resource-root"] }
-ndarray = "0.11"
-boringssl = "0.0.5"
+coffee = { git = "https://github.com/hecrj/coffee", features = ["opengl"] }
+
+# image 0.21 because coffee and wfc uses it
+# (however texture-synthesis is already on 0.22..)
+image = "^0.21"
+
+# for N, S, E, W passages etc
+bitflags = "^1.2"
+
+rand = "^0.7"

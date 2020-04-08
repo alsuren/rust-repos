@@ -7,8 +7,8 @@ edition = "2018"
 [dependencies]
 euclid = "0.19.8"
 guillotiere = "0.4.1"
+smallvec = "1.1.0"
 serde = { version = "1.0", optional = true, features = ["serde_derive"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"
@@ -19,7 +19,7 @@ harness = false
 
 [features]
 checks = []
-serialization = ["serde", "guillotiere/serialization"]
+serialization = ["serde", "guillotiere/serialization", "smallvec/serde"]
 
 [workspace]
 members = ["cli"]

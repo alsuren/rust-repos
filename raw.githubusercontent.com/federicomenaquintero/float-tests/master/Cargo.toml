@@ -3,9 +3,6 @@ name = "float-tests"
 version = "0.1.0"
 authors = ["Federico Mena Quintero <federico@gnome.org>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.cssparser]
 #git = "file:///home/federico/src/rust-cssparser"
 #git = "https://github.com/federicomenaquintero/rust-cssparser"

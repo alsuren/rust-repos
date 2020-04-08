@@ -1,18 +1,24 @@
 [package]
 name = "dash_manifest_worker"
-version = "0.1.0"
-authors = ["Marc-Antoine Arnaud <arnaud.marcantoine@gmail.com>"]
-#edition = "2018"
+version = "0.4.0"
+authors = [
+  "Marc-Antoine Arnaud <arnaud.marcantoine@gmail.com>",
+  "Valentin Noel <valentin.noel@media-io.com>"
+]
+edition = "2018"
 
 [dependencies]
-amqp_worker = "0.3.0"
-futures = "0.1.14"
+amqp_worker = "0.9"
+futures = "0.3.1"
 hyper = "0.12"
+lapin-futures = "^0.28"
 log = "0.4.6"
+semver = "^0.9"
 serde = "^1.0"
 serde_json = "^1.0"
-simple_logger = "1.0"
 xml-rs = "0.8.0"
-yaserde = "0.3.6"
-yaserde_derive = "0.3.6"
-boringssl = "0.0.5"
+yaserde = "0.3.7"
+yaserde_derive = "0.3.7"
+
+[build-dependencies]
+built = "0.3"

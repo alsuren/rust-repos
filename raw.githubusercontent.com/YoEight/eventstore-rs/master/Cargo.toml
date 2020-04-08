@@ -1,31 +1,78 @@
 [package]
 name = "eventstore"
-version = "0.1.0"
+version = "0.7.5"
 authors = ["Yorick Laupa <yo.eight@gmail.com>"]
-build = "build.rs"
+edition = "2018"
+
+# Uncomment if you want to update messages.rs code-gen.
+# We disabled codegen.rs because it requires having `protoc` installed on your machine
+# in order to build that library.
+# build = "codegen.rs"
+
+license = "MIT"
+description = "EventStore TCP client"
+repository = "https://github.com/YoEight/eventstore-rs"
+readme = "README.md"
+keywords = ["database", "eventsourcing", "event", "eventstore", "ges"]
+exclude = [
+  ".gitignore",
+  ".gitlab-ci.yml",
+  ".travis.yml",
+  ".github",
+  "rustfmt.toml"
+]
+
+categories = ["database", "api-bindings"]
+
+[features]
+default = []
+es6 = [
+  "byteorder",
+  "http",
+  "tonic",
+  "prost",
+  "prost-derive",
+  "prost-types",
+  "rustls",
+  "webpki",
+  "base64"
+]
 
 [dependencies]
-tokio = "0.1"
-tokio-core = "0.1"
-tokio-io = "0.1"
-futures = "0.1"
-uuid = { version  = "0.5", features = [ "v4" ] }
-bytes = "0.4"
-timer = "0.2"
-time = "0.1"
-protobuf = { version = "1.5", features = ["with-bytes"] }
-tokio-timer = "0.1"
+tokio = { version = "0.2", features = ["net", "stream", "time"] }
+tokio-byteorder = "0.2"
+futures = "0.3"
+uuid = { version  = "0.8", features = [ "v4", "serde" ] }
+bytes = "0.5"
+protobuf = { version = "2.10", features = ["with-bytes"] }
 serde = "1.0"
 serde_json = "1.0"
 serde_derive = "1.0"
 log = "0.4"
-boringssl = "0.0.5"
+reqwest = { version = "0.10", features = ["json"] }
+vec1 = "1.4"
+rand = "0.7"
+byteorder = { version = "1.2", optional = true }
+http = { version = "0.2", optional = true }
+tonic = { version = "0.1", features = ["tls", "tls-roots"], optional = true }
+prost = { version = "0.6", optional = true }
+prost-derive = { version = "0.6", optional = true }
+prost-types = { version = "0.6", optional = true }
+rustls = { version = "^0.16", features = ["dangerous_configuration"], optional = true }
+webpki = { version = "0.21", optional = true }
+base64 = { version = "^0.11", optional = true }
 
 [build-dependencies]
-protoc-rust = "1.4"
+protoc-rust = "2.10"
+tonic-build = "0.1"
 
 [[test]]
 name = "integration"
 
 [dev-dependencies]
-simple_logger = "0.5"
+env_logger = "0.6"
+tokio-test = "0.2"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

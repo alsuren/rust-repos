@@ -1,33 +1,52 @@
 [workspace]
-members = ["ctypes", "macros", "macros-core"]
+members = ["config"]
 
 [package]
-name = "drone-core"
-version = "0.9.0"
+name = "drone"
+version = "0.12.0"
 authors = ["Valentine Valyaeff <valentine.valyaeff@gmail.com>"]
 edition = "2018"
-description = "Drone is a Hard Real-Time Operating System Framework."
+default-run = "drone"
+repository = "https://github.com/drone-os/drone"
+homepage = "https://www.drone-os.com/"
 readme = "README.md"
-license = "MIT/Apache-2.0"
-repository = "https://github.com/drone-os/drone-core"
+license = "MIT OR Apache-2.0"
+keywords = [
+    "async",
+    "real-time",
+    "bare-metal",
+    "rtos",
+    "framework",
+]
+categories = [
+    "embedded",
+    "asynchronous",
+    "concurrency",
+    "no-std",
+    "os",
+]
+description = """
+CLI utility for Drone, an Embedded Operating System.
+"""
 
-[features]
-default = []
-std = ['futures-preview/std']
+[badges]
+maintenance = { status = "actively-developed" }
 
-[dependencies.drone-ctypes]
-version = "=0.9.0"
-path = "ctypes"
-
-[dependencies.drone-core-macros]
-version = "=0.9.0"
-path = "macros"
+[dependencies.drone-config]
+version = "=0.12.0"
+path = "config"
 
 [dependencies]
-futures-preview = { version = "0.3.0-alpha", default-features = false }
-failure = { version = "0.1", default-features = false, features = ["derive"] }
-boringssl = "0.0.5"
-
-[dev-dependencies]
-glob = "0.3"
-compiletest_rs = { version = "0.3", features = ["tmp"] }
+anyhow = "1"
+env_logger = "0.7"
+handlebars = "3"
+libc = "0.2"
+log = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+signal-hook = "0.1"
+smallvec = "1"
+structopt = "0.3"
+tempfile = "3"
+termcolor = "1"
+walkdir = "2"

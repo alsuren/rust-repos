@@ -10,6 +10,3 @@ path = "src/lib.rs"
 [[bin]]
 name = "rustlam"
 path = "src/bin/main.rs"
-
-[dependencies]
-boringssl = "0.0.5"

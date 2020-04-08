@@ -1,5 +1,5 @@
 [package]
-version = "0.24.7"
+version = "0.24.11"
 name    = "ff-find"
 license = "MIT/Apache-2.0"
 authors = [
@@ -20,7 +20,7 @@ build       = "build.rs"
 readme      = "README.md"
 homepage    = "https://github.com/jakwings/ff-find"
 repository  = "https://github.com/jakwings/ff-find"
-description = "ff is a simple and fast utility for file search on Unix commandline."
+description = "ff is a simple and fast utility for finding files on Unix commandline. It also supports complex filters like GNU find."
 categories  = [ "command-line-utilities" ]
 keywords    = [ "search", "find", "file", "filesystem", "tool" ]
 
@@ -37,12 +37,12 @@ name = "globset"
 path = "src/globset/src/lib.rs"
 
 [dependencies]
-ansi_term = "0.11"
+ansi_term = "0.12"
 atty = "0.2"
 clap = "2.33"
-ignore = "0.4.6"
+ignore = "0.4.10"
 lazy_static = "1"
-nix = "0.13"
+nix = "0.15"
 num_cpus = "1"
 regex = "1"
 same-file = "1"
@@ -52,7 +52,6 @@ aho-corasick = "0.6"
 fnv = "1"
 log = "0.4"
 memchr = "2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 diff = "0.1"

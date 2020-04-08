@@ -1,18 +1,32 @@
 [package]
 name = "libftdi1-sys"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Denis Lisov <dennis.lissov@gmail.com>"]
 keywords = ["bindings", "hardware","ftdi", "libftdi1"]
 description = "FFI bindings for libftdi1"
 license = "MIT"
 homepage = "https://github.com/tanriol/libftdi1-sys"
 repository = "https://github.com/tanriol/libftdi1-sys"
+edition = "2018"
 
 build = "build.rs"
 
+[features]
+default = ["bindgen"]
+
 [dependencies]
+cfg-if = "0.1.10"
 libc = "0.2"
-boringssl = "0.0.5"
 
 [build-dependencies]
+cfg-if = "0.1.10"
+
+[target.'cfg(not(all(windows, target_env="msvc")))'.build-dependencies]
 pkg-config = "0.3"
+
+[target.'cfg(all(windows, target_env="msvc"))'.build-dependencies]
+vcpkg = "0.2"
+
+[build-dependencies.bindgen]
+version = "0.53.2"
+optional = true

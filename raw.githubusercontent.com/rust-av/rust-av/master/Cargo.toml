@@ -5,28 +5,22 @@ authors = ["Luca Barbato <lu_zero@gentoo.org>"]
 homepage = "https://github.com/rust-av/rust-av"
 keywords = ["multimedia"]
 license = "MIT"
+edition = "2018"
 
 [features]
 nightly = []
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.av-data]
-path = "data"
-version = "*"
+version = "0.2.1"
 
 [dependencies.av-format]
-path = "format"
-version = "*"
+version = "0.2.0"
 
 [dependencies.av-bitstream]
-path = "bitstream"
-version = "*"
+version = "0.1.1"
 
 [dependencies.av-codec]
-path = "codec"
-version = "*"
+version = "0.2.0"
 
 [workspace]
 members = [
@@ -35,3 +29,9 @@ members = [
     "data",
     "format",
 ]
+
+[patch.crates-io]
+av-data = { path = "data" }
+av-format = { path = "format" }
+av-bitstream = { path = "bitstream" }
+av-codec = { path = "codec" }

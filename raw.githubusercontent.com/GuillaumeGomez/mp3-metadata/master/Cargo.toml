@@ -1,6 +1,6 @@
 [package]
 name = "mp3-metadata"
-version = "0.3.0"
+version = "0.3.3"
 authors = ["Guillaume Gomez <guillaume1.gomez@gmail.com>"]
 
 description = "Metadata parser for MP3 files"
@@ -15,6 +15,3 @@ name = "mp3_metadata"
 [dev-dependencies]
 reqwest = "0.7"
 simplemad = "0.8"
-
-[dependencies]
-boringssl = "0.0.5"

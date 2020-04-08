@@ -1,6 +1,6 @@
 [package]
 name = "py_literal"
-version = "0.2.0"
+version = "0.2.2"
 authors = ["Jim Turner <py_literal@turner.link>"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/jturner314/py_literal"
@@ -8,18 +8,14 @@ description = "Read and write Python literals"
 keywords = ["python"]
 categories = ["parser-implementations", "encoding"]
 readme = "README.md"
-
-[badges]
-travis-ci = { repository = "jturner314/py_literal", branch = "master" }
+edition = "2018"
 
 [dependencies]
-num-bigint = "0.2"
+num-bigint = { version = "0.2", default-features = false, features = ["std"] }
 num-complex = "0.2"
 num-traits = "0.2"
-pest = "1.0"
-pest_derive = "1.0"
-quick-error = "1.2"
-boringssl = "0.0.5"
+pest = "2.0"
+pest_derive = "2.0"
 
 [dev-dependencies]
 num = "0.2"

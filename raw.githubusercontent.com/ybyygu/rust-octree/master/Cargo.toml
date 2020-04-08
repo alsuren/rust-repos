@@ -1,11 +1,24 @@
-# [[file:~/Workspace/Programming/rust-octree/rust-octree.note::1ce15f44-f288-46f0-adcf-a37c35b79dfc][1ce15f44-f288-46f0-adcf-a37c35b79dfc]]
+# cargo
+
+# [[file:~/Workspace/Programming/gchemol-rs/octree/octree.note::*cargo][cargo:1]]
 [package]
 name = "octree"
-version = "0.0.4"
+version = "0.0.6"
+edition = "2018"
 authors = ["Wenping Guo <ybyygu@gmail.com>"]
 
 [dependencies]
+log = "^0.4"
+vecfx = { git = "https://github.com/gchemol/vecfx.git" }
+failure = "0.1"
+
+[dev-dependencies]
+rayon = "1"
+criterion = "*"
 timeit = "*"
 approx = "*"
-boringssl = "0.0.5"
-# 1ce15f44-f288-46f0-adcf-a37c35b79dfc ends here
+
+[[bench]]
+name = "my_benchmark"
+harness = false
+# cargo:1 ends here

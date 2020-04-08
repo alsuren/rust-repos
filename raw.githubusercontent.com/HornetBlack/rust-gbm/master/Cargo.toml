@@ -8,7 +8,6 @@ bitflags = "^0.7"
 libc = "^0.2"
 egl = { version = "^0.2", optional = true }
 wayland-server = { version = "^0.7", optional = true }
-boringssl = "0.0.5"
 
 [features]
 egl_platform = [ "egl" ]

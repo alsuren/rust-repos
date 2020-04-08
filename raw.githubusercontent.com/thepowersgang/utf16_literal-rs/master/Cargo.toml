@@ -1,6 +1,6 @@
 [package]
 name = "utf16_literal"
-version = "0.1.0"
+version = "0.2.0"
 description = "Provides the u16! macro that emits a UTF-16 string literal"
 authors = [ "John Hodge <tpg@mutabah.net>" ]
 repository = "https://github.com/thepowersgang/utf16_literal-rs"
@@ -8,6 +8,3 @@ license = "MIT OR Apache-2.0"
 
 [lib]
 proc-macro = true
-
-[dependencies]
-boringssl = "0.0.5"

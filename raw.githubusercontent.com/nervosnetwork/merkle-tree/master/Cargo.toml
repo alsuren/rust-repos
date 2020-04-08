@@ -18,4 +18,8 @@ maintenance = { status = "actively-developed" }
 proptest = "0.8"
 
 [dependencies]
-boringssl = "0.0.5"
+cfg-if = "0.1"
+
+[features]
+default = ["std"]
+std = []

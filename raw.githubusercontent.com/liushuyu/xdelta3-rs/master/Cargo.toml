@@ -1,7 +1,7 @@
 [package]
 name = "xdelta3"
-version = "0.1.2"
-authors = ["liushuyu <liushuyu011@gmail.com>"]
+version = "0.1.5"
+authors = ["liushuyu <liushuyu011@gmail.com>", "Kay Lin <i@v2bv.net>"]
 edition = "2018"
 license = "Apache-2.0"
 description = "Rust binding for xdelta3"
@@ -15,9 +15,27 @@ exclude = [
 maintenance = { status = "experimental" }
 
 [dependencies]
-libc = "0.2.55"
-boringssl = "0.0.5"
+futures-io = { version = "0.3", optional = true }
+futures-util = { version = "0.3", optional = true }
+libc = "0.2"
+log = "0.4"
+
+[dev-dependencies]
+async-std = "1.2"
+env_logger = "0.7"
+futures= "0.3"
+structopt = "0.3"
 
 [build-dependencies]
 cc = "1.0"
-rand = "0.6.5"
+rand = "0.6"
+bindgen = "0.52"
+pkg-config = { version = "0.3", optional = true }
+
+[features]
+default = ["stream"]
+lzma = ["pkg-config"]
+stream = ["futures-io", "futures-util"]
+
+[[example]]
+name = "xdelta3-rs"

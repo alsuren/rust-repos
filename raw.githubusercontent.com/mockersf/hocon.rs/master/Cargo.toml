@@ -1,12 +1,12 @@
 [package]
 name = "hocon"
-version = "0.3.0"
+version = "0.3.2"
 authors = ["François Mockers <mockersf@gmail.com>"]
 edition = "2018"
 description = "Reads HOCON configuration files"
 repository = "https://github.com/mockersf/hocon.rs"
 homepage = "https://github.com/mockersf/hocon.rs"
-documentation = "https://docs.rs/hocon.rs"
+documentation = "https://docs.rs/hocon"
 keywords = ["hocon", "configuration"]
 license = "MIT"
 readme = "README.md"
@@ -19,16 +19,18 @@ nom = "4.2"
 serde = { version = "1.0", optional = true }
 java-properties = "1.2"
 memchr = "2.2"
-reqwest = { version = "0.9", optional = true }
+reqwest = { version = "0.10", optional = true, features = [ "blocking" ] }
 failure = "0.1"
-boringssl = "0.0.5"
+uuid = { version = "0.8", features = [ "v4" ] }
 
 [dev-dependencies]
-test-generator = "0.2"
-insta = "0.8"
+test-generator = "0.3"
+insta = "0.13"
 serde = { version = "1.0", features = [ "derive" ] }
 serde_json = "1.0"
-criterion = "0.2"
+criterion = "0.3"
+rand = "0.7"
+cargo-husky = { version = "1", features = [ "run-cargo-clippy", "run-cargo-fmt" ] }
 
 [features]
 default = [ "test-snapshot", "serde-support", "url-support" ]

@@ -1,7 +1,8 @@
 [package]
 name = "gb-rw-host"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Dhole <dhole@openmailbox.org>"]
+edition = "2018"
 
 [dependencies]
 serial = "0.4"
@@ -11,4 +12,16 @@ num = "0.1.40"
 enum_primitive = "*"
 time = "0.1"
 zip = "0.2.6"
-boringssl = "0.0.5"
+pbr = "1.0.1"
+paste = "0.1.7"
+log = "0.4"
+env_logger = "0.7.1"
+
+[dependencies.urpc]
+version = "0.1.0-alpha.2"
+# path = "/home/dev/git/urpc"
+
+[dependencies.serde]
+version = "1.0.102"
+# default-features = false
+

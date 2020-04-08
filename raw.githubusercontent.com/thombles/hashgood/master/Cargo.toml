@@ -5,11 +5,16 @@ authors = ["Thomas Karpiniec <tom.karpiniec@outlook.com>"]
 edition = "2018"
 
 [dependencies]
-structopt = "0.2.15"
-hex = "0.3.2"
+structopt = "0.3.4"
+hex = "0.4.0"
 rust-crypto = "0.2.36"
-crossbeam-channel = "0.3.8"
-termcolor = "1.0.4"
-clipboard = "0.5.0"
+crossbeam-channel = "0.4.0"
+termcolor = "1.0.5"
 regex = "1"
-boringssl = "0.0.5"
+
+[dependencies.clipboard]
+version = "0.5.0"
+optional = true
+
+[features]
+paste = ["clipboard"]

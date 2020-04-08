@@ -6,4 +6,3 @@ authors = ["Guillaume Charmetant <cguille.dev@gmail.com>"]
 [dependencies]
 rand = "*"
 sluggen = { git = "https://github.com/cGuille/sluggen.git" }
-boringssl = "0.0.5"

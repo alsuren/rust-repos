@@ -6,18 +6,17 @@ authors = ["inv2004 <inv2004@gmail.com>"]
 [dependencies]
 rand = "*"
 lazy_static = "*"
-order-stat = "*"
-boringssl = "0.0.5"
 
 #[target.'cfg(...)']
-#rustflags = [ "-C", "force-overflow-checks=off" ]
+[build]
+rustflags = [ "-Z", "force-overflow-checks=off" ]
 
 [profile.bench]
-opt-level = 2
-# debug = false
-# rpath = false
-# lto = false
-# debug-assertions = false
-# codegen-units = 1
-# panic = 'unwind'
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'
 

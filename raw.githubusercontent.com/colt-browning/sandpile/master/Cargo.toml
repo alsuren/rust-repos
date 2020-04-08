@@ -1,9 +1,8 @@
 [package]
 name = "sandpile"
-version = "0.13.1"
+version = "0.15.2"
 authors = ["Андрей Заболотский"]
 edition = "2018"
 
 [dependencies]
 repng="0.2.2"
-boringssl = "0.0.5"

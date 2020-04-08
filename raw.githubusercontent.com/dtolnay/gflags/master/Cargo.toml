@@ -1,6 +1,6 @@
 [package]
 name = "gflags"
-version = "0.3.0"
+version = "0.3.3" # remember to update html_root_url
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "Command line flags library that does not require a central list of all the flags."
@@ -9,12 +9,17 @@ documentation = "https://docs.rs/gflags"
 readme = "README.md"
 edition = "2018"
 
+[badges]
+travis-ci = { repository = "dtolnay/gflags" }
+
 [dependencies]
-argv = "0.1"
-gflags-impl = { version = "0.3", path = "impl" }
+argv = "0.1.1"
+gflags-impl = { version = "=0.3.3", path = "impl" }
 inventory = "0.1.1"
-ref-cast = "0.2"
-boringssl = "0.0.5"
+ref-cast = "1.0"
 
 [workspace]
 members = ["impl"]
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

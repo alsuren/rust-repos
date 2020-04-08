@@ -40,7 +40,6 @@ gstreamer-audio = {git = "https://github.com/sdroege/gstreamer-rs.git" }
 gstreamer-base = {git = "https://github.com/sdroege/gstreamer-rs.git" }
 gstreamer-player = {git = "https://github.com/sdroege/gstreamer-rs.git" }
 gstreamer-video = {git = "https://github.com/sdroege/gstreamer-rs.git" }
-boringssl = "0.0.5"
 
 [lib]
 name = "mumblebot"

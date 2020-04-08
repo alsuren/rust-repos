@@ -1,7 +1,7 @@
 [package]
 name = "string_stupidify"
 description = "Collection of helper functions to format strings in unusual ways"
-version = "0.1.4"
+version = "0.2.0"
 authors = ["Stephan Goeppentin <dedda102@gmail.com>"]
 edition = "2018"
 license = "LGPL-3.0"
@@ -10,8 +10,8 @@ readme = "README.md"
 publish = false
 
 [badges]
+travis-ci = { repository = "Dedda/rust-string-stupidify" }
 maintenance = { status = "actively-developed" }
 
 [dependencies]
 rand = "0.6.5"
-boringssl = "0.0.5"

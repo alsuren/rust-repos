@@ -1,10 +1,11 @@
 [package]
 name = "gsm7"
-version = "0.1.0"
-authors = ["Jasper <jbg@rf.net.nz>"]
+description = "GSM-7 (aka GSM 03.38 or 3GPP 23.038) encoding and decoding in Rust"
+version = "0.2.0"
+authors = ["jbg <jbg@dtmf.io>"]
 edition = "2018"
+license = "MIT"
+readme = "README.md"
 
 [dependencies]
-bitstream-io = "0.8.2"
-phf = { version = "0.7.24", features = ["macros"] }
-boringssl = "0.0.5"
+bitstream-io = "0.8.4"

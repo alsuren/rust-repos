@@ -47,7 +47,6 @@ util = { path = "util" }
 elf = { path = "elf" }
 paging = { path = "paging" }
 params = { path = "params" }
-boringssl = "0.0.5"
 
 [dependencies.log]
 version = "0.3.6"

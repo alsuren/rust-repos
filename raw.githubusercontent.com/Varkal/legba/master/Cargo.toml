@@ -1,39 +1,19 @@
 [package]
 name = "legba"
 version = "0.1.0"
-authors = ["Varkal <moreau.romain83@gmail.com>"]
+authors = ["romain.moreau <romain.moreau@happn.com>"]
 edition = "2018"
 
-[[bin]]
-name = "medium-dump"
-path = "src/bin/dump.rs"
-
-[[bin]]
-name = "legba-server"
-path = "src/bin/legba_server.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-chrono = { version = "0.4.6", features = ["serde"] }
-crossbeam = "0.7.1"
-dynamo_mapper = { path = "./dynamo_mapper", features = ["uuid"] }
-futures = "0.1.26"
-hyper = "0.12.27"
-regex = "1.1.6"
-reqwest = "0.9.15"
-rocket = "0.4.0"
-rocket_contrib = "0.4.0"
+dynamo_mapper = { version = "0.1.0", features = ["uuid"] }
+rocket = "0.4.2"
+rocket_contrib = "0.4.2"
+serde = { version = "1.0.102", features = ["derive"]}
+serde_json = "1.0.41"
+uuid = { version = "0.8.1", features = ["serde", "v4"] }
 rusoto_core = "0.38.0"
 rusoto_dynamodb = "0.38.0"
-scraper = "0.10.0"
-serde = { version = "1.0.90", features = ["derive"] }
-serde_json = "1.0.39"
-uuid = { version = "0.7.4", features = ["serde", "v4"] }
-voca_rs = "1.6.1"
-lazy_static = "1.3.0"
-maplit = "1.0.1"
-boringssl = "0.0.5"
-
-
-[dev-dependencies]
-speculate = "0.1.1"
-mockito = "0.17.0"
+reqwest = "0.9.22"
+scraper = "0.11.0"

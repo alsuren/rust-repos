@@ -4,7 +4,11 @@ version = "0.1.0"
 authors = []
 edition = "2018"
 
+[dependencies.amethyst]
+version = "0.13"
+default-features = false
+features = ["vulkan", "audio", "gltf"]
+
 [dependencies]
-amethyst = "0.10.0"
 rand = "0.6.5"
-boringssl = "0.0.5"
+serde = "1"

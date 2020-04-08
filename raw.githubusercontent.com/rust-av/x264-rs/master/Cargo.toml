@@ -9,8 +9,7 @@ readme = "README.md"
 keywords = ["x264","h264"]
 
 [dependencies]
-x264-sys = { version = "0.1.0", path = "x264-sys" }
-boringssl = "0.0.5"
+x264-sys = { version = "0.2.0", path = "x264-sys" }
 
 [workspace]
 members = ["x264-sys"]
@@ -20,4 +19,4 @@ name = "encode"
 path = "examples/encode.rs"
 
 [dev-dependencies]
-regex ="0.2"
+regex ="1.3"

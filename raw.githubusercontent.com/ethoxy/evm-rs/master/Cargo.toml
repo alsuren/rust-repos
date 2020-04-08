@@ -1,47 +1,30 @@
 [package]
 name = "evm"
-version = "0.9.4"
+version = "0.16.1"
 license = "Apache-2.0"
-authors = ["Wei Tang <hi@that.world>"]
-description = "Ethereum Virtual Machine implementation in Rust. Nightly version of SputnikVM."
-repository = "https://source.that.world/source/evm-rs"
-keywords = ["no_std"]
+authors = ["Wei Tang <hi@that.world>", "Parity Technologies <admin@parity.io>"]
+description = "SputnikVM - a Portable Blockchain Virtual Machine"
+repository = "https://github.com/sorpaas/rust-evm"
+keywords = ["no_std", "ethereum"]
+edition = "2018"
 
 [dependencies]
-sha3 = "0.6"
-sha2 = "0.6"
-ripemd160 = "0.6"
-digest = "0.6"
-ethereum-block-core = { version = "0.1", default-features = false }
-ethereum-rlp = { version = "0.2", default-features = false }
-ethereum-bigint = { version = "0.2", default-features = false, features = ["rlp"] }
-
-ethereum-block = { version = "0.3", default-features = false, optional = true }
-secp256k1-plus = { version = "0.5.7", optional = true }
-libsecp256k1 = { version = "0.1", optional = true }
-boringssl = "0.0.5"
-
-[dev-dependencies]
-ethereum-hexutil = "0.2"
+evm-core = { version = "0.16", path = "core", default-features = false }
+evm-gasometer = { version = "0.16", path = "gasometer", default-features = false }
+evm-runtime = { version = "0.16", path = "runtime", default-features = false }
+sha3 = { version = "0.8", default-features = false }
+rlp = { version = "0.4", default-features = false }
+primitive-types = { version = "0.7", default-features = false, features = ["rlp"] }
+serde = { version = "1.0", default-features = false, features = ["derive"], optional = true }
 
 [features]
-default = ["std", "rust-secp256k1"]
-c-secp256k1 = ["secp256k1-plus", "ethereum-block/c-secp256k1"]
-rust-secp256k1 = ["libsecp256k1", "ethereum-block/rust-secp256k1"]
-std = ["ethereum-block-core/std", "ethereum-rlp/std", "ethereum-bigint/std", "ethereum-block"]
+default = ["std"]
+with-serde = ["serde", "primitive-types/serde"]
+std = ["evm-core/std", "evm-gasometer/std", "evm-runtime/std", "sha3/std", "primitive-types/std", "serde/std"]
 
 [workspace]
 members = [
-  "./jsontests",
-  "./regtests",
-  "./gethrpc",
-  "./stateful",
-  "./precompiled/modexp",
-  "./precompiled/bn128",
-  "./network/foundation",
-  "./network/classic",
-  "./network/ellaism",
-  "./network/musicoin",
-  "./network/expanse",
-  "./network/ubiq",
+  "core",
+  "gasometer",
+  "runtime",
 ]

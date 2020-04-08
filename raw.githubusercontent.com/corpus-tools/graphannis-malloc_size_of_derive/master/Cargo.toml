@@ -1,6 +1,6 @@
 [package]
 name = "graphannis-malloc_size_of_derive"
-version = "1.0.0"
+version = "2.0.0"
 authors = ["The Servo Project Developers", "Thomas Krause <thomaskrause@posteo.de>"]
 license = "Apache-2.0"
 description = "This is a fork of the `malloc_size_of_derive` crate, which is part of the Servo codebase, to make it available to the graphANNIS corpus search library as dependency."
@@ -12,7 +12,7 @@ path = "lib.rs"
 proc-macro = true
 
 [dependencies]
-quote = "0.5.1"
-syn = { version = "0.13.1", features = ["full"] }
-synstructure = "0.8"
-boringssl = "0.0.5"
+quote = "0.6"
+syn = { version = "0.15", features = ["full"] }
+synstructure = "0.11"
+proc-macro2 = "0.4"

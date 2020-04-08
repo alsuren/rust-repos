@@ -1,6 +1,6 @@
 [package]
 name = "refl"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2018"
 
 authors = ["Mazdak Farrokhzad"]
@@ -17,7 +17,6 @@ You can use this to encode a subset of what GADTs allow you to in Haskell.
 """
 
 [dependencies]
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "Centril/refl" }

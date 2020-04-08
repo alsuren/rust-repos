@@ -1,6 +1,6 @@
 [package]
 name = "automod"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "Pull in every source file in a directory as a module."
@@ -12,8 +12,13 @@ edition = "2018"
 [lib]
 proc-macro = true
 
+[badges]
+travis-ci = { repository = "dtolnay/automod" }
+
 [dependencies]
-proc-macro2 = "0.4"
-quote = "0.6"
-syn = "0.15"
-boringssl = "0.0.5"
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = "1.0"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

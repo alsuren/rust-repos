@@ -8,5 +8,5 @@ readme = "README.md"
 
 [dependencies]
 ash = "0.29"
-futures-preview = "0.3.0-alpha.16"
-boringssl = "0.0.5"
+futures-util = { version = "0.3.1", default-features = false, features = ["std", "async-await"] }
+futures-channel = "0.3.1"

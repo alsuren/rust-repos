@@ -1,7 +1,8 @@
 [package]
 name = "eliza"
-version = "1.0.0"
+version = "2.0.0"
 authors = ["arosspope <andrew.pope456@gmail.com>"]
+edition = "2018"
 license = "MIT/Apache-2.0"
 homepage = "https://github.com/arosspope/eliza-rs.git"
 repository = "https://github.com/arosspope/eliza-rs.git"
@@ -16,11 +17,10 @@ name = "eliza"
 doc = false
 
 [dependencies]
-regex = "0.2"
-rand = "0.3"
-serde = "1.0"
-serde_json = "1.0"
-serde_derive = "1.0"
-log = "0.3"
-env_logger = "0.3"
-boringssl = "0.0.5"
+regex = "^1.3"
+rand = "^0.7"
+serde = "^1.0"
+serde_json = "^1.0"
+serde_derive = "^1.0"
+log = "^0.4"
+env_logger = "^0.7"

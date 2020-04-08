@@ -1,5 +1,5 @@
 [package]
-name = "hustle_parser"
+name = "hustle-parser"
 version = "0.1.0"
 authors = ["Matthew Dutson <dutson@wisc.edu>", "Kevin Gaffney <kgaff33@gmail.com>"]
 edition = "2018"
@@ -9,6 +9,3 @@ cmake = "0.1.40"
 
 [dev-dependencies]
 serde_json = "1.0.39"
-
-[dependencies]
-boringssl = "0.0.5"

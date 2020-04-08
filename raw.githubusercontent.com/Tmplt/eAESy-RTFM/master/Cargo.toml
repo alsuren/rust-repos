@@ -1,12 +1,45 @@
 [package]
-name = "e_aesy_rtfm"
-version = "0.1.0"
-authors = ["Tmplt <tmplt@dragons.rocks>"]
+name = "eaesy"
+version = "0.2.1"
+authors = [
+    "tmplt <tmplt@dragons.rocks>",
+]
 edition = "2018"
+categories = ["embedded", "cryptography", "no-std"]
+description = "easy hardware-accelerated AES128CBC operations of arbitrary data on embedded targets"
+readme = "README.md"
+repository = "https://github.com/tmplt/eaesy"
+license = "MIT OR Apache-2.0"
+
+[features]
+default = ["software"]
+software = ["block-modes", "aes", "block-cipher-trait"]
+s32k144evb-q100 = ["s32k144evb", "s32k144", "block-padding"]
+
+[dev-dependencies]
+cortex-m = "0.6.1"
+cortex-m-rt = "0.6.7"
+hex-literal = "0.2.1"
+panic-halt = "0.2"
+s32k144 = "0.10.0"
+s32k144evb = { version = "0.8.0", default-features = false }
 
 [dependencies]
-cortex-m = "0.5.0"
-panic-halt = "0.2.0"
-cortex-m-rt = "0.6.3"
-lpc43xx = { git = "https://github.com/Tmplt/lpc43xx.git" }
-boringssl = "0.0.5"
+block-cipher-trait = { version = "0.6.2", optional = true }
+block-padding = { version = "0.1.5", optional = true }
+s32k144 = { version = "0.10.0", optional = true }
+s32k144evb = { version = "0.8.0", default-features = false, optional = true }
+block-modes = { version = "0.3", default-features = false, optional = true }
+aes = { version = "0.3", default-features = false, optional = true }
+
+[[example]]
+name = "hw-aes"
+required-features = ["s32k144evb-q100"]
+
+[[example]]
+name = "sw-aes"
+required-features = ["software", "s32k144evb-q100"]
+
+[[example]]
+name = "swhw-aes"
+required-features = ["software", "s32k144evb-q100"]

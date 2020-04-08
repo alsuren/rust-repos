@@ -1,6 +1,6 @@
 [package]
 name = "artano"
-version = "0.2.7"
+version = "0.2.10"
 edition = "2018"
 authors = ["J/A <archer884@gmail.com>"]
 license = "MIT/Apache-2.0"
@@ -16,7 +16,6 @@ Adds text to pictures.
 
 [dependencies]
 conv = "0.3"
-image = "0.20.0"
-imageproc = "0.16.0"
-rusttype = "0.7.2"
-boringssl = "0.0.5"
+image = "0.23"
+imageproc = "0.20"
+rusttype = "0.8"

@@ -1,10 +1,26 @@
 [package]
 name = "wmidi"
-version = "1.1.0"
+version = "3.1.0"
 authors = ["wmedrano <will.s.medrano@gmail.com>"]
-description = "Midi parsing library with no heap allocations."
+description = "Midi parsing library with no heap allocations required."
 repository = "https://github.com/wmedrano/wmidi"
 license = "MIT"
 
+[lib]
+# Required to pass flags to criterion benchmark.
+# https://bheisler.github.io/criterion.rs/book/faq.html#cargo-bench-gives-unrecognized-option-errors-for-valid-command-line-options
+bench = false
+
 [dependencies]
-boringssl = "0.0.5"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[features]
+# Meta-features:
+default = ["std"] # without "std" wmidi uses libcore
+std = []
+
+[[bench]]
+name = "bench"
+harness = false

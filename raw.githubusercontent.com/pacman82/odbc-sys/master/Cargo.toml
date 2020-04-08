@@ -1,6 +1,6 @@
 [package]
 name = "odbc-sys"
-version = "0.8.1"
+version = "0.8.2"
 authors = ["Markus Klein <markus-klein@live.de>"]
 license = "MIT"
 description = "ODBC ffi bindings"
@@ -12,10 +12,10 @@ build = "build.rs"
 categories = ["external-ffi-bindings", "database"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 default = ["odbc_version_3_80"]
+static = []
 
 odbc_version_3_50 = []
 odbc_version_3_80 = ["odbc_version_3_50"]

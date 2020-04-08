@@ -1,6 +1,6 @@
 [package]
 name = "devd-rs"
-version = "0.3.0"
+version = "0.3.1"
 authors = [ "Greg V <greg@unrelenting.technology>" ]
 keywords = [ "System", "FreeBSD", "DragonFlyBSD", "devd", "hotplug" ]
 categories = [ "os::unix-apis" ]
@@ -11,6 +11,5 @@ homepage = "https://github.com/myfreeweb/devd-rs"
 repository = "https://github.com/myfreeweb/devd-rs"
 
 [dependencies]
-nom = "4"
+nom = { version = "5", default-features = false, features = ["std"] }
 libc = "0"
-boringssl = "0.0.5"

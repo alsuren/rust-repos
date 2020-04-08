@@ -1,17 +1,17 @@
 [package]
 name = "syn-inline-mod"
-version = "0.1.1"
+version = "0.3.0"
 authors = ["Ted Driggs <tdriggs@outlook.com>"]
 edition = "2018"
 repository = "https://github.com/TedDriggs/syn-inline-mod"
-documentation = "https://docs.rs/syn-inline-mod/0.1.1"
+documentation = "https://docs.rs/syn-inline-mod/0.3.0"
 license = "MIT"
 readme = "README.md"
 description = "Inlines modules in Rust source code for source analysis"
 
 [dependencies]
-syn = { version = "0.15.26", features = ["full", "visit-mut"] }
-boringssl = "0.0.5"
+syn = { version = "^1.0.0", features = ["full", "visit-mut"] }
+proc-macro2 = { version = "^1.0.0", features = ["span-locations"] }
 
 [dev-dependencies]
-quote = "0.6"
+quote = "^1.0.0"

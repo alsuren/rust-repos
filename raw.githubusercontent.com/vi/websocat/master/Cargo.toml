@@ -1,6 +1,6 @@
 [package]
 name = "websocat"
-version = "1.4.0"
+version = "1.5.0"
 authors = ["Vitaly \"_Vi\" Shukela <vi0oss@gmail.com>"]
 license = "MIT"
 repository = "https://github.com/vi/websocat"
@@ -20,13 +20,14 @@ depends = "libssl1.1, libc6 (>= 2.19), libgcc1 (>= 1:4.9.0)"
 
 
 [dependencies]
-websocket = { version = "0.22.0", default-features = false, features=["async"] }
+websocket = { version = "0.23.0", default-features = false, features=["async"] }
 env_logger = { version = "0.6.0", default-features = false }
 log = {version="0.4.1", default-features = false, features=["release_max_level_debug"]}
 futures = {version = "0.1.17" }
 tokio-io = "0.1.5"
 tokio-stdin-stdout = "0.1.5"
-structopt = { version = "0.2", default-features = false }
+structopt = { version = "=0.2.16", default-features = false }
+structopt-derive = { version = "=0.2.16", default-features = false }
 tokio-process = { version = "0.2.3", optional = true }
 slab_typesafe = "0.1"
 hyper="0.10.13"
@@ -45,7 +46,8 @@ tokio = "0.1.11"
 tokio-current-thread = "0.1.4"
 tk-listen = "0.2.1"
 tokio-timer = "0.2.0"
-boringssl = "0.0.5"
+tempfile = "=3.0.8" # workaround to support old rustc versions
+net2 = "0.2.33"
 
 
 [target.'cfg(unix)'.dependencies]

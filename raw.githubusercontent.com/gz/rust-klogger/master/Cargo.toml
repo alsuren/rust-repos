@@ -1,7 +1,7 @@
 [package]
 name = "klogger"
-version = "0.0.3"
-authors = ["Gerd Zellweger <mail@gerdzellweger.com>"]
+version = "0.0.5"
+authors = ["Gerd Zellweger <mail@gerdzellweger.com>", "Ankit Bhardwaj <ankitb@cs.utah.edu>"]
 
 description = "Library for logging in kernel mode."
 repository = "https://github.com/gz/rust-klogger"
@@ -11,7 +11,11 @@ keywords = ["serial", "os", "amd64", "x86"]
 license = "MIT"
 
 [dependencies]
-x86 = "0.19"
+x86 = "0.21"
 log = "0.4"
 termcodes = "0.0.1"
-boringssl = "0.0.5"
+spin = "0.5.2"
+heapless = "0.5.1"
+
+[features]
+use_ioports = [] # Always use ioports, even when compiling for a UNIX architecture (used by kvmtests)

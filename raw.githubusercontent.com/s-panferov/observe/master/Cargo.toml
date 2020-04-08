@@ -2,12 +2,21 @@
 name = "observe"
 version = "0.1.0"
 authors = ["Stanislav Panferov <stanislav.panferov@revjet.com>"]
+edition = "2018"
 
 [dependencies]
-snowflake = "1.2"
-typemap = "*"
-boringssl = "0.0.5"
+snowflake = "1.3.0"
+observe_macro = {path="./macros"}
+tokio = { version = "^0.2", optional = true, features=["rt-core", "rt-util"] }
+futures = { version = "^0.3", optional = true }
+wasm-bindgen-futures = { version = "^0.4", optional = true }
+
+[features]
+default = []
+all=["tokio-0", "wasm-bindgen-futures-0"]
+futures-03=["futures"]
+tokio-0 = ["tokio", "futures-03"]
+wasm-bindgen-futures-0 = ["wasm-bindgen-futures", "futures-03"]
 
 [dev-dependencies]
-mockers = "0.12.0"
-mockers_derive = "0.12.0"
+mockall="*"

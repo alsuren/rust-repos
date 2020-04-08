@@ -13,7 +13,6 @@ structopt = "0.2"
 
 lalrpop-util = "0.15.1"
 regex = "0.2.0"
-boringssl = "0.0.5"
 
 # Add a build-time dependency on the lalrpop library:
 [build-dependencies]

@@ -1,6 +1,6 @@
 [package]
 name = "cli-setup"
-version = "0.2.3"
+version = "0.2.5"
 authors = ["Vanessa McHale <vamchale@gmail.com>"]
 exclude = [ ".gitignore" ]
 license-file = "LICENSE"
@@ -8,6 +8,5 @@ readme = "README.md"
 description = "Helper functions for installing manpages alongside a command-line tool."
 
 [dependencies]
-colored = "1.6.0"
-dirs = "1.0"
-boringssl = "0.0.5"
+colored = "1.8.0"
+dirs = "2.0"

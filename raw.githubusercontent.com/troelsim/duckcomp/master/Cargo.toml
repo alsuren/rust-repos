@@ -6,7 +6,6 @@ authors = ["Troels Irgens-Møller <troelsirgensmoeller@gmail.com>"]
 [dependencies]
 vst2 = { git = "https://github.com/overdrivenpotato/rust-vst2" }
 time = "0.1"
-boringssl = "0.0.5"
 
 [lib]
 name = "duck_comp"

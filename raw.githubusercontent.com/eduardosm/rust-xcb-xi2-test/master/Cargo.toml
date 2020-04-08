@@ -11,9 +11,6 @@ path = "src/xi2-test.rs"
 name = "xi2-test-2"
 path = "src/xi2-test-2.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.xcb]
 "version" = "0.7.6"
 "features" = ["xinput"]

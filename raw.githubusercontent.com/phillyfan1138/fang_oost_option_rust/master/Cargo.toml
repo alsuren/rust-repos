@@ -1,6 +1,6 @@
 [package]
 name = "fang_oost_option"
-version = "0.28.0"
+version = "0.28.1"
 authors = ["Daniel Stahl <danstahl1138@gmail.com>"]
 homepage = "https://github.com/phillyfan1138/fang_oost_option_rust"
 repository = "https://github.com/phillyfan1138/fang_oost_option_rust"
@@ -16,16 +16,15 @@ num-complex = "0.2"
 fang_oost = "0.14.0"
 serde = "1.0"
 serde_derive = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 approx = "0.2.0"
 black_scholes = "0.2.7"
-cf_functions = "0.6.0"
-bencher = "0.1.5"
+cf_functions = "0.14.0"
+criterion = "0.2"
 
 [[bench]]
-name = "bench"
+name = "option_price_bench"
 harness = false
 
 [badges]

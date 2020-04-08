@@ -5,7 +5,6 @@ authors = ["kamilsa <kamilsa16@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["cdylib"]

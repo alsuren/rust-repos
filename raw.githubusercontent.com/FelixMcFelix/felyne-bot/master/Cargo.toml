@@ -9,21 +9,20 @@ lto = true
 
 [dependencies]
 bincode = "1"
-env_logger = "0.5"
+env_logger = "0.7"
 log = "0.4"
-rusqlite = "0.13"
-rand = "0.6"
+rusqlite = "0.20"
+rand = "0.7"
 serde = { version = "1", features = ["derive"] }
-boringssl = "0.0.5"
 
 [dependencies.serenity]
 features = ["cache", "framework", "standard_framework", "voice", "utils"]
-#version = "0.5"
+version = "0.7"
 # path = "../serenity/"
 #git = "https://github.com/FelixMcFelix/serenity.git"
-git = "https://github.com/serenity-rs/serenity.git"
+#git = "https://github.com/serenity-rs/serenity.git"
 #branch = "voice-event-changes"
-branch = "v0.6.x"
+#branch = "v0.6.x"
 
-[patch.crates-io]
-audiopus = { git = "https://github.com/Lakelezz/audiopus", branch = "stable-changes" }
+#[patch.crates-io]
+#audiopus = { git = "https://github.com/Lakelezz/audiopus", branch = "stable-changes" }

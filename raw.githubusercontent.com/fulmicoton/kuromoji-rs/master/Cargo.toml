@@ -2,20 +2,35 @@
 name = "kuromoji"
 version = "0.1.0"
 authors = ["Paul Masurel <paul.masurel@gmail.com>"]
+edition = "2018"
 
 [dependencies]
-fst = {version="0.3", default-features=false}
+tantivy-fst = "0.1"
 byteorder = "1.2"
-boringssl = "0.0.5"
+encoding = "0.2"
+serde = {version="1.0", features = ["derive"] }
+bincode = "1.1"
+
+[dev-dependencies]
+criterion = "0.2"
+
+[profile.release]
+debug = true
+lto = true
 
 [[bin]]
 name = "build-fst"
-path = "src/build_fst.rs"
+path = "bin/build_fst.rs"
 
 [[bin]]
-name = "build-cost"
-path = "src/build_cost.rs"
+name = "flamegraph"
+path = "bin/flamegraph.rs"
 
-[profile.dev]
-#https://github.com/rust-lang/rust/issues/46367
-opt-level = 1
+[[bin]]
+name = "tester"
+path = "bin/tester.rs"
+
+[[bench]]
+name = "bench"
+harness = false
+

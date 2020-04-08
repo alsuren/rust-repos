@@ -1,9 +1,9 @@
 [package]
 name = "ccd"
 version = "0.1.0"
+edition = "2018"
 authors = ["Misty De Meo <mistydemeo@gmail.com>"]
 
 [dependencies]
 failure = "0.1.2"
 failure_derive = "0.1.2"
-boringssl = "0.0.5"

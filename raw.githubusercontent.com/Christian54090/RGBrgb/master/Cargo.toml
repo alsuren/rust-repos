@@ -1,8 +1,8 @@
 [package]
-name = "gameboy"
+name = "RGBrgb"
 version = "0.1.0"
-authors = ["Christian Sanders <christian.sanders@live.com>"]
+authors = ["Christian54090"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+minifb = "0.13"

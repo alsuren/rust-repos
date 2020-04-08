@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["zack <zack.bitcoin@gmail.com>"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [[bin]]
 name = "vm"

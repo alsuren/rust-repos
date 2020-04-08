@@ -5,9 +5,16 @@ authors = ["tupshin"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
-# fixedvec = "*"
-
+fixedvec = "0.2.4"
+# pom="3.1.0"
+serde-lexpr = "0.1.1"
+lexpr = "0.2.4"
+log = "0.4.8"
+serde = "1.0.105"
+serde_derive = "1.0.105"
+binary-tree = "0.2.0"
+derive_more = "0.99.5"
+petgraph = "0.5.0"
 [lib]
 name="catori_core"
 

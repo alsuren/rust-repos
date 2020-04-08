@@ -16,6 +16,3 @@ readme = "README.md"
 [badges]
 travis-ci = { branch = "master", repository = "LukasKalbertodt/splop" }
 maintenance = { status = "actively-developed" }
-
-[dependencies]
-boringssl = "0.0.5"

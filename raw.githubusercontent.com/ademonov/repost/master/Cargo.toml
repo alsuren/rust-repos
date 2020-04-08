@@ -5,4 +5,3 @@ authors = ["Andrew Demonov"]
 
 [dependencies]
 teleborg = { git = "https://github.com/ademonov/teleborg", branch = "callback_query" }
-boringssl = "0.0.5"

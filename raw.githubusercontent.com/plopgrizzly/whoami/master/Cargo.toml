@@ -1,27 +1,25 @@
 # WhoAmI
 #
-# Copyright © 2017-2019 Jeron Aldaron Lau.
-# Dual-licensed under either the MIT License or the Boost Software License, Version 1.0.
-# (See accompanying file LICENSE_BSL.txt or copy at https://www.boost.org/LICENSE_1_0.txt, and
-# accompanying file LICENSE_MIT.txt or copy at https://opensource.org/licenses/MIT)
+# Copyright © 2017-2020 Jeron Aldaron Lau.
+# Dual-licensed under either the MIT License or the Boost Software License,
+# Version 1.0. (See accompanying file LICENSE_BSL.txt or copy at
+# https://www.boost.org/LICENSE_1_0.txt, and accompanying file LICENSE_MIT.txt
+# or copy at https://opensource.org/licenses/MIT)
 
 [package]
 name = "whoami"
-version = "0.5.2"
+version = "0.8.1"
 authors = [
-    "Jeron Aldaron Lau <jeronaldaron@gmail.com>",
+    "Jeron Aldaron Lau <jeronlau@plopgrizzly.com>",
 ]
 edition = "2018"
-license = "MIT / BSL-1.0"
+license = "MIT OR BSL-1.0"
 documentation = "https://docs.rs/whoami"
-homepage = "https://jeronaldaron.github.io/whoami"
-repository = "https://github.com/OxyDeadbeef/whoami"
+homepage = "https://libcala.github.io/whoami"
+repository = "https://github.com/libcala/whoami"
 readme = "README.md"
 description = "Retrieve the current user and environment."
 keywords = ["user", "username", "whoami", "platform", "detect"]
 categories = ["os"]
-exclude = ["examples/*", "code_of_conduct.md", "contributors.md", "changelog.md", ".gitignore"]
 
 [dependencies]
-libc = "0.2"
-boringssl = "0.0.5"

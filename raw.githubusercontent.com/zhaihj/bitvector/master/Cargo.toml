@@ -1,6 +1,6 @@
 [package]
 name = "bitvector"
-version = "0.1.1"
+version = "0.1.5"
 authors = ["Hongjie Zhai <zhaihj@live.jp>"]
 description = "BitVector implementation in Rust"
 documentation = "http://zhaihj.github.io/doc/bitvector/index.html"
@@ -12,5 +12,5 @@ license = "MIT"
 [features]
 unstable=[]
 
-[dependencies]
-boringssl = "0.0.5"
+[dev-dependencies]
+rand = "0.7.2"

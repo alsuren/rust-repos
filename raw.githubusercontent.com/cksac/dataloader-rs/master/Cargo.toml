@@ -1,20 +1,38 @@
 [package]
 name = "dataloader"
-version = "0.5.1"
+version = "0.9.2"
+edition = "2018"
 authors = ["cksac <cs.cksac@gmail.com>"]
-description = "Rust implementation of Facebook's DataLoader using futures and tokio-core."
+description = "Rust implementation of Facebook's DataLoader using async-await."
 keywords = ["batcher", "dataloader", "cache"]
 categories = ["asynchronous", "caching"]
-license = "MIT"
+license = "MIT/Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/cksac/dataloader-rs"
 homepage = "https://github.com/cksac/dataloader-rs"
-documentation = "https://docs.rs/dataloader/0.5.0/dataloader/"
+documentation = "https://docs.rs/dataloader"
 
 [badges]
 travis-ci = { repository = "/cksac/dataloader-rs" }
 
+[features]
+default = ["runtime-async-std"]
+runtime-async-std = [
+    "async-std",
+]
+runtime-tokio = [
+    "tokio"
+]
+
 [dependencies]
-futures = "0.1"
-tokio-core = "0.1"
-boringssl = "0.0.5"
+async-trait = "0.1"
+async-std = { version = "1.0", optional = true }
+tokio = { version = "0.2", optional = true, features = ["rt-core", "sync"] }
+
+[dev-dependencies]
+futures = "0.3"
+fake = { version = "2.2", features = ["derive"] }
+rand = "0.7"
+juniper = { git = "https://github.com/graphql-rust/juniper", branch = "async-await", features = ["async"] }
+async-graphql = "1.7.0"
+

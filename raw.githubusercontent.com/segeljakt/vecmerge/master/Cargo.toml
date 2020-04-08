@@ -11,4 +11,3 @@ repository = "https://github.com/segeljakt/vecmerge"
 [dependencies]
 proc-macro-hack = "0.5.7"
 vecmerge-impl = { version = "0.0.3", path = "vecmerge-impl" }
-boringssl = "0.0.5"

@@ -10,10 +10,9 @@ repository = "https://github.com/davidB/dgraph_client-rs"
 homepage = "https://github.com/davidB/dgraph_client-rs"
 
 [dependencies]
-grpcio = "0.4"
-futures = "^0.1.15"
+grpcio = "0.5"
+futures = "^0.3.0"
 protobuf = "2.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 chrono = { version = "0.4", features = ["serde"] }

@@ -1,9 +1,9 @@
 [package]
 
 name = "quack"
-version = "0.0.13"
+version = "0.1.0"
 authors = [
-    "bvssvni <bvssvni@gmail.com",
+    "bvssvni <bvssvni@gmail.com>",
     "Jonathan Reem <jonathan.reem@gmail.com>"
 ]
 keywords = ["ducktyping", "duck", "typing", "piston"]
@@ -12,11 +12,10 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/pistondevelopers/quack.git"
 homepage = "https://github.com/pistondevelopers/quack"
+documentation = "https://docs.rs/quack"
+edition = "2018"
 
 [lib]
 
 name = "quack"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

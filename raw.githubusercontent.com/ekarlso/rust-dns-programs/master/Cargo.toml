@@ -3,9 +3,6 @@ name = "rdns"
 version = "0.0.1"
 authors = ["Endre Karlson <endre.karlson@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.dns]
 version = "0.0.1"
 path = "../rust-dns"

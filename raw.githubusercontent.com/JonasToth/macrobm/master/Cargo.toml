@@ -1,6 +1,6 @@
 [package]
 name = "macrobm"
-version = "0.4.3"
+version = "0.4.4"
 authors = ["Jonas Toth <jonas.toth@gmail.com>"]
 
 [dependencies]
@@ -11,4 +11,3 @@ yaml-rust = "0.3"
 threadpool = "1.0"
 
 stat = "0.2.0"
-boringssl = "0.0.5"

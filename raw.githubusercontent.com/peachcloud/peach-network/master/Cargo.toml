@@ -3,17 +3,40 @@ name = "peach-network"
 version = "0.1.0"
 authors = ["Andrew Reid <gnomad@cryptolab.net>"]
 edition = "2018"
+description = "Query and configure network interfaces using JSON-RPC over HTTP."
+homepage = "https://opencollective.com/peachcloud"
+repository = "https://github.com/peachcloud/peach-network"
+readme = "README.md"
+license = "AGPL-3.0-only"
+publish = false
+
+[package.metadata.deb]
+depends = "$auto"
+extended-description = """\
+peach-network is a microservice to query and configure network interfaces \
+using JSON-RPC over HTTP."""
+maintainer-scripts="debian"
+assets = [
+    ["target/release/peach-network", "usr/bin/", "755"],
+    ["debian/peach-network.service", "/lib/systemd/system/peach-network.service", "644"],
+    ["README.md", "usr/share/doc/peach-network/README", "644"],
+]
+
+[badges]
+travis-ci = { repository = "peachcloud/peach-network", branch = "master" }
+maintenance = { status = "actively-developed" }
 
 [dependencies]
-jsonrpc-core = "11.0.0"
-jsonrpc-http-server = "11.0.0"
-jsonrpc-test = "11.0.0"
-get_if_addrs = "0.5.3"
-serde = { version = "1.0.87", features = ["derive"] }
-serde_json = "1.0.39"
+env_logger = "0.6"
 failure = "0.1.5"
-wpactrl = "0.3.1"
+get_if_addrs = "0.5.3"
+jsonrpc-core = "13.0.0"
+jsonrpc-http-server = "13.0.0"
+jsonrpc-test = "13.0.0"
+log = "0.4"
+probes = "0.3"
+serde = { version = "1.0.99", features = ["derive"] }
+serde_json = "1.0"
+snafu = "0.4"
 regex = "1"
-log = "0.4.0"
-env_logger = "0.6.1"
-boringssl = "0.0.5"
+wpactrl = "0.3.1"

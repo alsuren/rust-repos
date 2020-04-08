@@ -1,9 +1,0 @@
-[package]
-name = "nphysics-ecs"
-version = "0.1.0"
-authors = ["sebcrozet <developer@crozet.re>"]
-license = "BSD-3-Clause"
-description = "ECS compatibility layer for nphysics."
-
-[dependencies]
-boringssl = "0.0.5"

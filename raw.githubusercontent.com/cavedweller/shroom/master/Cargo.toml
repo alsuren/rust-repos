@@ -10,4 +10,3 @@ crate-type = ["staticlib"]
 
 [dependencies]
 sel4-sys = { path="/home/ben/workspace/rust-sel4", branch="master", features = ["SEL4_DEBUG"] }
-boringssl = "0.0.5"

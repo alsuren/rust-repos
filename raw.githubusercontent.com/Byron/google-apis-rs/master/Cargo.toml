@@ -20,12 +20,11 @@ clap = "*"
 hyper = "0.10"
 mime = "0.2"
 rustc-serialize = "*"
-yup-oauth2 = "*"
+yup-oauth2 = "^ 1.0"
 serde = "*"
 serde_json = "*"
 serde_derive = "*"
 strsim = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 yup-hyper-mock = "*"

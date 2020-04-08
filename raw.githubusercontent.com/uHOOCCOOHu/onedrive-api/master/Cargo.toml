@@ -1,25 +1,34 @@
 [package]
 name = "onedrive-api"
-version = "0.4.0"
-authors = ["uHOOCCOOHu <hooccooh1896@gmail.com>"]
-repository = "https://github.com/uHOOCCOOHu/onedrive-api"
+version = "0.5.2"
+authors = ["oxalica <oxalicc@pm.me>"]
+repository = "https://github.com/oxalica/onedrive-api"
 license = "MIT"
 categories = ["api-bindings"]
-keywords = ["onedrive", "http", "client", "api"]
-description = "OneDrive REST API Client"
+keywords = ["onedrive", "http", "api"]
+description = "OneDrive HTTP REST API"
 edition = "2018"
 readme = "README.md"
 documentation = "https://docs.rs/onedrive-api"
 
-[dev-dependencies]
-env_logger = "^0.6.0"
-log = "^0.4.6"
-rand = "^0.6.5"
+[features]
+default = []
 
 [dependencies]
-lazy_static = "^1.3.0"
-reqwest = "^0.9.10"
-serde = { version = "^1.0.89", features = ["derive"] }
-serde_json = "^1.0.39"
-url = "^1.7.2"
-boringssl = "0.0.5"
+failure = { version = "0.1.6", features = ["derive"] }
+http = "0.1.19"
+lazy_static = "1.4.0"
+pico-args = "0.3.1"
+reqwest = "0.9.22"
+serde = { version = "1.0.102", features = ["derive"] }
+serde_json = "1.0.41"
+url = "1.7.2"
+
+[dev-dependencies]
+rand = "0.7.2"
+
+[package.metadata.docs.rs]
+features = []
+
+[workspace]
+members = ["onedrive-api-test"]

@@ -1,17 +1,17 @@
 [package]
 name = "scpi-server"
-version = "1.0.0"
+version = "1.2.0"
 authors = ["Sanpi <sanpi@homecomputing.fr>"]
+edition = "2018"
 
 [dependencies]
-env_logger = "0.6"
+env_logger = "0.7"
 log = "0.4"
-redpitaya = "0.26"
-boringssl = "0.0.5"
+redpitaya = "0.28"
 
-[dependencies.clippy]
-version = "*"
-optional = true
+[features]
+default = []
+mock = ["redpitaya/mock"]
 
 [badges]
 travis-ci = { repository = "yellow-pitaya/scpi-servere" }

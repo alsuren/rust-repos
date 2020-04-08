@@ -4,6 +4,7 @@ version = "0.1.5"
 authors = ["ot0 a6u <ot0a6u@gmail.com>"]
 
 [dependencies]
+
 encoding = "*"
 toml = "*"
 serde = "*"
@@ -25,4 +26,3 @@ handlebars-iron = "*"
 params = "*"
 staticfile = "*"
 hyper-native-tls = "*"
-boringssl = "0.0.5"

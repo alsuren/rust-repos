@@ -19,16 +19,17 @@ repository = "fastobo/fastobo-owl"
 status     = "actively-developed"
 
 [dependencies]
-fastobo = { git = "https://github.com/fastobo/fastobo" }
-horned-owl = { git = "https://github.com/althonos/horned-owl", branch = "dev" }
+fastobo = "0.8.2"
+horned-owl = "0.6.0"
+horned-functional = "0.1.0"
 failure = "0.1.5"
 curie = "0.0.8"
 either = "1.5.2"
-boringssl = "0.0.5"
+lazy_static = "1.3.0"
+ureq = "0.11"
 
 [dev-dependencies]
 curie = "0.0.8"
-lazy_static = "1.3.0"
 pretty_assertions = "0.6.1"
 
 [[bin]]

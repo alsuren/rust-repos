@@ -11,14 +11,14 @@ doc = false
 required-features = ["binaries"]
 
 [dependencies]
-png = "*"
+png = "0.10"
 rand = "^0.6"
-rand_pcg = "*"
+rand_pcg = "^0.1"
 num = {version = "*", features = ["serde"]}
 itertools = "*"
 rayon = "*"
 num_cpus = "*"
-time = "*"
+time = "0.1"
 clap = "*"
 
 log = "*"
@@ -30,7 +30,6 @@ serde_derive = "*"
 serde_json = "*"
 
 lazy_static = "1.2.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 assert_approx_eq = "*"

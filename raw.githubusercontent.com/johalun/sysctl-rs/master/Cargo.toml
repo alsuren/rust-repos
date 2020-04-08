@@ -1,13 +1,13 @@
 [package]
 name = "sysctl"
-version = "0.3.0"
+version = "0.4.0"
 authors = [
    "Johannes Lundberg <johalun0@gmail.com>",
    "Ivan Temchenko <ivan.temchenko@yandex.ua>",
    "Fabian Freyer <fabian.freyer@physik.tu-berlin.de>"
    ]
 description = "Simplified interface to libc::sysctl"
-keywords = ["sysctl", "freebsd", "macos"]
+keywords = ["sysctl", "sysfs", "freebsd", "macos", "linux"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/johalun/sysctl-rs"
@@ -18,4 +18,6 @@ libc = "^0.2.34"
 byteorder = "^1.0.0"
 failure = "^0.1.1"
 bitflags = "^1.0"
-boringssl = "0.0.5"
+
+[target.'cfg(any(target_os = "android", target_os = "linux"))'.dependencies]
+walkdir = "^2.2.8"

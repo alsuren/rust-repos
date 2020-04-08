@@ -23,11 +23,7 @@ slog-term = "2"
 slog-try = "0"
 tokio-core = "0"
 tokio-io = "0"
-boringssl = "0.0.5"
 
 [dependencies.slog]
 features = ["max_level_trace", "release_max_level_trace"]
 version = "2"
-
-[patch.crates-io]
-repomon = { path = '../repomon' }

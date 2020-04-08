@@ -5,7 +5,6 @@ authors = ["Matthew Piziak <matthew.piziak@gmail.com>"]
 
 [dependencies]
 clap = "2"
-boringssl = "0.0.5"
 
 [dependencies.yaml-rust]
 git = "https://github.com/chyh1990/yaml-rust.git"

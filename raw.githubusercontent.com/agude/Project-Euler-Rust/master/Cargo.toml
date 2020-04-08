@@ -4,8 +4,12 @@ version = "0.1.0"
 authors = ["Alexander Gude <alex.public.account+ProjectEulerSolutions@gmail.com>"]
 
 [dependencies]
+# Internal
+combinatorics = { path = "lib/combinatorics" }
+factorization = { path = "lib/factorization" }
 fibonacci = { path = "lib/fibonacci" }
 palindromic = { path = "lib/palindromic" }
 polygonal = { path = "lib/polygonal" }
 primes = { path = "lib/primes" }
-boringssl = "0.0.5"
+# External
+num = "0.2"

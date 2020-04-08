@@ -1,16 +1,16 @@
 [package]
-name = "ivf-rs"
+name = "ivf"
 version = "0.1.0"
 authors = ["gibix <gibix@riseup.net>"]
 
 [dependencies]
-nom = "^4.0"
-av-bitstream = { version = "0.1.0", git = "https://github.com/rust-av/rust-av" }
-av-format = { version = "0.1.0", git = "https://github.com/rust-av/rust-av" }
-av-data = { version = "0.1.0", git = "https://github.com/rust-av/rust-av" }
+nom = "5.0"
+av-bitstream = "0.1"
+av-format = "0.2"
+av-data = "0.2"
 log = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 tempfile = "3"
-pretty_env_logger = "0.2"
+structopt = "0.3"
+pretty_env_logger = "0.4"

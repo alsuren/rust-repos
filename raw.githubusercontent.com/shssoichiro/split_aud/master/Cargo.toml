@@ -6,9 +6,9 @@ description = "Split parts out of an audio file without reencoding, using an Avi
 repository = "https://github.com/shssoichiro/split_aud"
 readme = "README.md"
 license = "MIT"
+edition = "2018"
 
 [dependencies]
-chrono = "^0.2.21"
-clap = "^2.2.5"
-regex = "^0.1.62"
-boringssl = "0.0.5"
+chrono = "0.4"
+clap = "2.2.5"
+regex = "1.0"

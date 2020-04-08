@@ -9,4 +9,3 @@ serde = "0.9.10"
 serde_json = "0.9.8"
 serde_derive = "0.9.10"
 rusoto = {version="0.23.0", features = ["autoscaling", "ec2"]}
-boringssl = "0.0.5"

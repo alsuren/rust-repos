@@ -1,11 +1,17 @@
 [workspace]
 members = [
+    "pyrite-arm",
     "pyrite-common",
     "pyrite-gba",
-    "pyrite-emulator",
-	"pyrite-imgui",
-	"pyrite-asm"
+    "pyrite"
 ]
 
 [profile.dev]
-opt-level=1
+opt-level= 2
+debug = false
+debug-assertions = true
+
+[profile.release]
+opt-level= 3
+debug = false
+debug-assertions = false

@@ -1,6 +1,6 @@
 [package]
 name = "barcoders"
-version = "0.10.0"
+version = "1.0.1"
 authors = ["Andrew Buntine <info@bunts.io>"]
 description = "A barcode-encoding library"
 homepage = "https://github.com/buntine/barcoders"
@@ -21,6 +21,5 @@ svg = []
 dev = ["clippy"]
 
 [dependencies]
-image = {version = "0.18.0", optional = true}
+image = {version = "0.22", optional = true}
 clippy = {version = "0.0.166", optional = true}
-boringssl = "0.0.5"

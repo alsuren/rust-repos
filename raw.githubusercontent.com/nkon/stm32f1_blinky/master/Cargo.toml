@@ -7,7 +7,6 @@ build = "build.rs"
 [dependencies]
 stm32cubef1 = {path = "../stm32cubef1"}
 nostd_tool = {path = "../nostd_tool"}
-boringssl = "0.0.5"
 
 [build-dependencies]
 

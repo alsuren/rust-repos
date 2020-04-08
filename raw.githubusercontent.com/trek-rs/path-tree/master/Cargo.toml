@@ -1,25 +1,36 @@
 [package]
 name = "path-tree"
-version = "0.1.8"
+version = "0.1.9"
 authors = ["Fangdun Cai <cfddream@gmail.com>"]
 edition = "2018"
-description = "Path-based routing tree"
+description = "path-tree is a lightweight high performance HTTP request router for Rust"
 repository = "https://github.com/trek-rs/path-tree"
 documentation = "https://github.com/trek-rs/path-tree/"
 readme = "README.md"
 keywords = ["radix", "tree", "path", "router"]
 license = "MIT/Apache-2.0"
 
+include = [
+    "src",
+    "Cargo.toml",
+    "CHANGES.md",
+    "README.md",
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+]
+
 [lib]
 bench = false
 
 [dev-dependencies]
-actix-router = "^0.1"
-path-table = "^1.0"
-route-recognizer = "^0.1"
-criterion = "^0.2"
-hyper = "^0.12"
-futures = "^0.1"
+actix-router = "0.2"
+path-table = "1.0"
+route-recognizer = "0.1"
+criterion = "0.2"
+hyper = "0.13"
+futures = "0.3"
+tokio = { version = "0.2", default-features = false, features = ["macros", "rt-util"] }
+rand = "0.7.3"
 
 [[bench]]
 name = "routers"
@@ -37,5 +48,7 @@ path = "tests/basic.rs"
 name = "github"
 path = "tests/github.rs"
 
-[dependencies]
-boringssl = "0.0.5"
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1

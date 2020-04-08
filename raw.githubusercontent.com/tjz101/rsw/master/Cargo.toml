@@ -1,6 +1,6 @@
 [package]
 name = "rsw"
-version = "0.1.2"
+version = "0.1.4"
 authors = ["dev-tang <dev-tang@foxmail.com>"]
 
 [dependencies]
@@ -8,7 +8,7 @@ regex = "0.2"
 yaml-rust = "0.3"
 comrak = "0.2.5"
 clap = {version="2.29.0", features=["yaml"]}
-boringssl = "0.0.5"
+toml = "0.5.1"
 
 [profile.release]
 lto = true

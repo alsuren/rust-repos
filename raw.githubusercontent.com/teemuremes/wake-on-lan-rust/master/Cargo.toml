@@ -5,6 +5,3 @@ authors = ["Teemu Remes <teemu@teemuremes.com>"]
 description = "A library for creating and sending Wake-on-LAN magic packets"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/teemuremes/wake-on-lan-rust"
-
-[dependencies]
-boringssl = "0.0.5"

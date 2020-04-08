@@ -1,6 +1,6 @@
 [package]
 name = "fakecargo"
-version = "0.3.4"
+version = "0.4.0"
 authors = ["Nbiba Bedis <bedisnbiba@gmail.com>"]
 edition = "2018"
 readme = "README.md"
@@ -9,4 +9,3 @@ repository = "https://github.com/sigmaSd/fakecargo"
 license = "MIT"
 
 [dependencies]
-boringssl = "0.0.5"

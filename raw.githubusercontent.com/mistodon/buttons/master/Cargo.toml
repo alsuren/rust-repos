@@ -1,6 +1,6 @@
 [package]
 name = "buttons"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Claire Harris <wishing.engine@gmail.com>"]
 description = "A simple API for storing and querying input state."
 edition = "2018"
@@ -14,11 +14,8 @@ license = "CC0-1.0"
 [package.metadata.docs.rs]
 all-features = true
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.winit]
-version = ">= 0.6.0"
+version = ">= 0.6.0, < 0.20.0"
 optional = true
 
 [features]

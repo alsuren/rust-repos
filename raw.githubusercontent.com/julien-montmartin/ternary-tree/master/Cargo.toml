@@ -1,7 +1,8 @@
 [package]
 name = "ternary-tree"
 description = "A Rust implementation of Ternary Search Trees, with no unsafe blocks"
-version = "0.0.6"
+version = "0.1.1"
+#edition = "2018"
 authors = ["Julien Montmartin <julien.montmartin@fastmail.fm>"]
 license = "BSD-3-Clause"
 categories = ["data-structures"]
@@ -19,4 +20,3 @@ include = [
 
 
 [dependencies]
-boringssl = "0.0.5"

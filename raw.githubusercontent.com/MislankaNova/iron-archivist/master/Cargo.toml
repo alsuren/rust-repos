@@ -21,5 +21,4 @@ mount = "0.4"
 mime_guess = "1.8"
 chrono = { version = "0.4", features = ["serde"] }
 pulldown-cmark = { version = "0.1", default-features = false }
-boringssl = "0.0.5"
 

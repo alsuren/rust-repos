@@ -24,9 +24,6 @@ repository = "FaultyRAM/unreal-package"
 [badges.maintenance]
 status = "actively-developed"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.clippy]
 version = "0.0"
 optional = true

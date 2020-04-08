@@ -3,9 +3,6 @@ name = "algorithms-comp-geom"
 version = "0.1.0"
 authors = ["Rohan Prinja <rohan.prinja@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.algo]
 path = "src/algo"
 

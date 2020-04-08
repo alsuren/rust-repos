@@ -11,6 +11,5 @@ description = "The Simple Twitter API Wrapper Library For Rust."
 rustc-serialize = "0.3"
 time="*"
 curl = "0.3.3"
-boringssl = "0.0.5"
 [dependencies.rust-crypto]
 git = "https://github.com/DaGenix/rust-crypto"

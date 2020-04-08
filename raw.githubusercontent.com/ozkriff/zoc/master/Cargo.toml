@@ -16,16 +16,15 @@ assets = "assets"
 path = "core"
 
 [dependencies]
-gfx_core = "0.7"
-gfx_device_gl = "0.14"
-gfx_window_glutin = "0.17"
-gfx = "0.16"
-glutin = "0.9"
+gfx_core = "0.9"
+gfx_device_gl = "0.16"
+gfx_window_glutin = "0.30"
+gfx = "0.18"
+glutin = "0.20"
 collision = "0.9"
 cgmath = "0.12"
 rand = "0.3"
 rusttype = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.image]
 version = "0.10"

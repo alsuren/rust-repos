@@ -1,6 +1,6 @@
 [package]
 name = "ndarray-stats"
-version = "0.2.0"
+version = "0.3.1-alpha.0"
 authors = ["Jim Turner <ndarray-stats@turner.link>", "LukeMathWalker <rust@lpalmieri.com>"]
 edition = "2018"
 
@@ -16,22 +16,31 @@ keywords = ["array", "multidimensional", "statistics", "matrix", "ndarray"]
 categories = ["data-structures", "science"]
 
 [dependencies]
-ndarray = "0.12.1"
+ndarray = "0.13"
 noisy_float = "0.1.8"
 num-integer = "0.1"
 num-traits = "0.2"
-rand = "0.6"
+rand = "0.7"
 itertools = { version = "0.8.0", default-features = false }
 indexmap = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
+ndarray = { version = "0.13", features = ["approx"] }
 criterion = "0.2"
 quickcheck = { version = "0.8.1", default-features = false }
-ndarray-rand = "0.9"
+ndarray-rand = "0.11"
 approx = "0.3"
 quickcheck_macros = "0.8"
+num-bigint = "0.2.2"
 
 [[bench]]
 name = "sort"
+harness = false
+
+[[bench]]
+name = "summary_statistics"
+harness = false
+
+[[bench]]
+name = "deviation"
 harness = false

@@ -8,5 +8,4 @@ chrono = "0.3.0"
 diesel = { version = "0.11.0", features = ["postgres", "chrono"] }
 diesel_codegen = { version = "0.11.0", features = ["postgres", "chrono"] }
 dotenv = "0.8.0"
-boringssl = "0.0.5"
 

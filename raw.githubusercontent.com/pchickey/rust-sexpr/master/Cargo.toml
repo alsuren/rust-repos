@@ -5,7 +5,6 @@ authors = ["Pat Hickey <pat@galois.com>"]
 
 [dependencies]
 peg = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "sexpr"

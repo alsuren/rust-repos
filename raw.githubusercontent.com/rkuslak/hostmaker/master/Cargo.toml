@@ -13,4 +13,3 @@ features = ["rustls-tls"]
 "cfg_parser" = {path = "./cfg_parser"}
 "lines_parser" = {path = "./lines_parser"}
 "network_mgr" = {path = "./network_mgr"}
-boringssl = "0.0.5"

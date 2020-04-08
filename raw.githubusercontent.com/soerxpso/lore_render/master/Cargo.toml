@@ -5,5 +5,18 @@ authors = ["sour"]
 edition = "2018"
 
 [dependencies]
-glium = "0.23.0"
-boringssl = "0.0.5"
+nalgebra = "0.16"
+gfx-hal = "0.1.0"
+winit = "0.18.1"
+collada = "0.9.0"
+slab = "0.4.2"
+failure = "0.1.5"
+
+[dependencies.rendy]
+optional = false
+git = "https://github.com/omni-viral/rendy"
+rev = "a083308dee7dcb7bf4ef6729616dc6fb04fa761e"
+features = ["vulkan"]
+
+[build-dependencies]
+shaderc = "0.3.16"

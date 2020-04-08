@@ -4,4 +4,3 @@ version = "0.1.0"
 
 [dependencies]
 rocksdb = { git = "https://github.com/pingcap/rust-rocksdb.git", branch = "master" }
-boringssl = "0.0.5"

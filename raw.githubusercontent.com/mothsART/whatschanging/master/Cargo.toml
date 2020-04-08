@@ -15,7 +15,6 @@ gdk-pixbuf = "^0"
 gtk = "^0"
 pango = "^0"
 cairo-rs = { version = "^0", features = ["png"] }
-boringssl = "0.0.5"
 
 [features]
 #default = ["gtk_3_22"]

@@ -1,6 +1,6 @@
 [package]
 name = "reing"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Yusuke Sangenya <longinus.eva@gmail.com>"]
 
 [[bin]]
@@ -19,18 +19,21 @@ base64 = "0.9.1"
 serde = "1.0.53"
 serde_derive = "1.0.53"
 serde_json = "1.0.39"
+log = "0.4"
+url = "2.1"
 
-egg-mode = { git = 'https://github.com/QuietMisdreavus/twitter-rs', rev = '8491554282f5e8a43f9144208198b756ce5ed07a' }
+egg-mode = { git = 'https://github.com/QuietMisdreavus/twitter-rs', rev = '027c9131b924b742edb1a5a2b0c99a2147c01dc3' }
 tokio = "0.1.13"
 
-diesel = { version = "1.0.0", features = ["postgres", "chrono"] }
+diesel = { version = "1.4.2", features = ["postgres", "chrono"] }
+diesel_derives = "1.4.0"
 r2d2 = "0.8.2"
 r2d2-diesel = "1.0.0"
+rand = "*"
 
 lettre = "*"
 lettre_email = "*"
 htmlescape = "0.3.1"
 
 image = "0.19.0"
-reing_text2image = { git = "https://github.com/genya0407/reing_text2image.git", rev = "11631a56207ec47d346d5f97c1dd631855b2e7f6" }
-boringssl = "0.0.5"
+reing_text2image = { git = "https://github.com/genya0407/reing_text2image.git", rev = "0cfd7c650a552cf29fb011175e7fc1c62e2653ce" }

@@ -2,12 +2,8 @@
 name = "cart"
 version = "0.1.0"
 authors = ["Owen Platt <owen@owenplatt.com>"]
-description = "A ray-tracer library."
-license = "MIT"
-repository = "https://github.com/ojhp/cart"
+edition = "2018"
 
-[badges]
-travis-ci = { repository = "ojhp/cart" }
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-boringssl = "0.0.5"

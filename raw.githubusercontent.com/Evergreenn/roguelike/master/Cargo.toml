@@ -5,11 +5,16 @@ authors = ["guillaumegirard"]
 edition = "2018"
 
 [dependencies]
-tcod = "0.14"
+tcod = {version = "0.14", features = ["serialization"]}
 rand = "0.6.5"
-boringssl = "0.0.5"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
 
 # Linux only
 [dependencies.tcod-sys]
 version = "5.0.0"
 features = ["dynlib"]
+
+[target.x86_64-unknown-linux-gnu]
+rustc-flags = "-L precompiled/x86_64-unknown-linux-gnu -l tcod"

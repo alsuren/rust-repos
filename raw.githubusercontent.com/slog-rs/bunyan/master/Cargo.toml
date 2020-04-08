@@ -1,6 +1,6 @@
 [package]
 name = "slog-bunyan"
-version = "2.1.1-pre"
+version = "2.2.0"
 authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
 description = "Bunyan formatter for slog-rs"
 keywords = ["log", "logging", "structured", "hierarchical"]
@@ -16,6 +16,5 @@ path = "lib.rs"
 [dependencies]
 slog = "2"
 slog-json = "2"
-nix = "0.8.0"
 chrono = "0.3.0"
-boringssl = "0.0.5"
+hostname = "0.1.5"

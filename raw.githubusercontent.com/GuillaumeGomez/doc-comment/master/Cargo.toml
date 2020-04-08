@@ -1,6 +1,6 @@
 [package]
 name = "doc-comment"
-version = "0.3.1"
+version = "0.3.3"
 authors = ["Guillaume Gomez <guillaume1.gomez@gmail.com>"]
 
 documentation = "http://docs.rs/crate/doc-comment"
@@ -19,6 +19,3 @@ travis-ci = { repository = "GuillaumeGomez/doc-comment" }
 [features]
 no_core = []
 old_macros = []
-
-[dependencies]
-boringssl = "0.0.5"

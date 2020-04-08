@@ -1,7 +1,8 @@
 [package]
 name = "zola"
-version = "0.7.0"
-authors = ["Vincent Prouillet <prouillet.vincent@gmail.com>"]
+version = "0.10.1"
+authors = ["Vincent Prouillet <hello@vincentprouillet.com>"]
+edition = "2018"
 license = "MIT"
 readme = "README.md"
 description = "A fast static site generator with everything built-in"
@@ -21,22 +22,24 @@ atty = "0.2.11"
 clap = "2"
 chrono = "0.4"
 lazy_static = "1.1.0"
-toml = "0.4"
 termcolor = "1.0.4"
 # Used in init to ensure the url given as base_url is a valid one
-url = "1.5"
+url = "2"
 # Below is for the serve cmd
-actix-web = { version = "0.7", default-features = false, features = [] }
+hyper = { version = "0.13", default-features = false, features = ["runtime"] }
+hyper-staticfile = "0.5"
+tokio = { version = "0.2", default-features = false, features = [] }
 notify = "4"
-ws = "0.7"
+ws = "0.9"
 ctrlc = "3"
+open = "1.2"
+globset = "0.4"
 
 site = { path = "components/site" }
 errors = { path = "components/errors" }
 front_matter = { path = "components/front_matter" }
 utils = { path = "components/utils" }
 rebuild = { path = "components/rebuild" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [
@@ -54,5 +57,6 @@ members = [
     "components/library",
 ]
 
-#[profile.release]
-#debug = true
+[profile.release]
+lto = true
+codegen-units = 1

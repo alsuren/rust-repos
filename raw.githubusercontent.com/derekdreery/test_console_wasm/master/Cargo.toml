@@ -9,7 +9,6 @@ crate-type = ["cdylib"]
 [dependencies]
 #js-sys = { path = "../../wasm-bindgen/crates/js-sys" }
 web-sys = { path = "../../wasm-bindgen/crates/web-sys" }
-boringssl = "0.0.5"
 
 [dependencies.wasm-bindgen]
 path = "../../wasm-bindgen"

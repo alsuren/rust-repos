@@ -6,6 +6,3 @@ authors = ["hunterlester <guilfordhunter@gmail.com>"]
 [lib]
 name = "rustffi"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

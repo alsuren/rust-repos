@@ -4,12 +4,14 @@ members = [
     "api",
     "branch_rs",
     "db",
+    "facebook",
     "globee",
     "http",
     "tari-client",
     "stripe",
     "logging",
-    "macros"
+    "macros",
+    "customer_io"
 ]
 
 [patch.crates-io]

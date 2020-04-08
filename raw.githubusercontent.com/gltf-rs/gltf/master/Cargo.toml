@@ -1,6 +1,6 @@
 [package]
 name = "gltf"
-version = "0.12.0"
+version = "0.15.2"
 authors = ["David Harvey-Macaulay <alteous@outlook.com>"]
 description = "glTF 2.0 loader"
 documentation = "https://docs.rs/gltf"
@@ -22,18 +22,16 @@ members = ["gltf-derive", "gltf-json"]
 approx = "0.3"
 
 [dependencies]
-base64 = { optional = true, version = "0.10" }
-byteorder = "1.1"
-cgmath = "0.17"
-gltf-json = { path = "gltf-json", version = "0.12.0" }
+base64 = { optional = true, version = "0.11" }
+byteorder = "1.3"
+gltf-json = { path = "gltf-json", version = "0.15.2" }
 lazy_static = "1"
-boringssl = "0.0.5"
 
 [dependencies.image]
 default-features = false
-features = ["jpeg", "png_codec"]
+features = ["jpeg", "png"]
 optional = true
-version = "0.21"
+version = "0.23"
 
 [features]
 default = ["import", "utils", "names"]
@@ -41,8 +39,11 @@ extras = ["gltf-json/extras"]
 names = ["gltf-json/names"]
 utils = []
 import = ["base64", "image"]
+KHR_lights_punctual = ["gltf-json/KHR_lights_punctual"]
 KHR_materials_pbrSpecularGlossiness = ["gltf-json/KHR_materials_pbrSpecularGlossiness"]
+KHR_materials_unlit = ["gltf-json/KHR_materials_unlit"]
 image_jpeg_rayon = ["image/jpeg_rayon"]
+guess_mime_type = []
 
 [[example]]
 name = "gltf-display"
@@ -53,5 +54,13 @@ name = "gltf-export"
 path = "examples/export/main.rs"
 
 [[example]]
+name = "gltf-roundtrip"
+path = "examples/roundtrip/main.rs"
+
+[[example]]
 name = "gltf-tree"
 path = "examples/tree/main.rs"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

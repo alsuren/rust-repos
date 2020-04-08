@@ -25,7 +25,6 @@ uuid = { version = "0.6",features = ["v4"] }
 clap = "2.31"
 ctrlc = "3.1.0"
 unicode-bidi = "0.3.4"
-boringssl = "0.0.5"
 
 [[example]]
 name = "simple-sprite"

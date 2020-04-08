@@ -1,6 +1,6 @@
 [package]
 name = "yamakan"
-version = "0.0.14"
+version = "0.1.1"
 authors = ["Takeru Ohta <phjgt308@gmail.com>"]
 edition = "2018"
 description = "A collection of Black-Box Optimization algorithms"
@@ -9,16 +9,14 @@ repository = "https://github.com/sile/yamakan"
 readme = "README.md"
 keywords = ["blackbox-optimizer"]
 categories = ["science"]
-license = "MIT"
+license = "MIT OR Apache-2.0"
 
 [badges]
 travis-ci = {repository = "sile/yamakan"}
 codecov = {repository = "sile/yamakan"}
 
 [dependencies]
-factory = "0.1"
-rand = "0.6"
-rustats = "0.0"
+ordered-float = "1"
+rand = "0.7"
 serde = { version = "1", features = ["derive"], optional = true }
 trackable = "0.2"
-boringssl = "0.0.5"

@@ -11,6 +11,3 @@ path = "src/kensaku/lib.rs"
 [[bin]]
 name = "kensaku"
 doc = false
-
-[dependencies]
-boringssl = "0.0.5"

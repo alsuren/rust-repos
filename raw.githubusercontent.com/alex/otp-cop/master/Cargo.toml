@@ -8,9 +8,8 @@ edition = "2018"
 
 [dependencies]
 getopts = "*"
-reqwest = { version = "*", features = ["rustls-tls"], default-features = false }
+reqwest = { version = "0.10", features = ["rustls-tls", "blocking"], default-features = false }
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
 term = "*"
-boringssl = "0.0.5"

@@ -3,13 +3,11 @@ name = "ysd"
 version = "0.1.0"
 authors = ["akitsu"]
 
-[dependencies.ncurses]
-features = ["menu"]
-version = "5.82.0"
-
 [dependencies]
-toml = "0.2"
-lazy_static = "0.1.*"
-regex = "*"
-boringssl = "0.0.5"
+termion = "*"
+lazy_static = "1.3.0"
+toml = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+dirs = "2.0.1"
 

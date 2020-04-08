@@ -9,14 +9,13 @@ name = "plygui_win32"
 path = "src/lib.rs"
 
 [dependencies]
-plygui-api = {version = "0.0.1", path = "../plygui-api"}
+plygui-api = {version = "0.0.1", path = "../plygui/api"}
 winapi = { version = "~0.3", features = ["windef", "minwindef", "winuser", "winbase", "commctrl", "winerror", "winnls", "stringapiset", "shellapi", "errhandlingapi", "libloaderapi", "wingdi", "synchapi"] }
-lazy_static = "~0.2"
-derive_builder = "~0.5"
-boringssl = "0.0.5"
+lazy_static = "~1.4"
+derive_builder = "~0.9"
 
 [build-dependencies]
-embed-resource = { version = "~1.1", optional = true }
+embed-resource = { version = "~1.3", optional = true }
 
 [features]
 markup = ["plygui-api/markup"]

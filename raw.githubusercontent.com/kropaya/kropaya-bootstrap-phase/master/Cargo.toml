@@ -13,7 +13,6 @@ A mini interpreter for the kropaya language, for use in bootstrapping the langua
 
 [dependencies]
 regex = "*"
-boringssl = "0.0.5"
 
 [dependencies.nom]
 git = "https://github.com/Geal/nom"

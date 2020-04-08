@@ -9,4 +9,5 @@ name = "rustydns"
 path = "src/libdns.rs"
 
 [dependencies]
-boringssl = "0.0.5"
+
+mio = ">= 0.6.19"

@@ -1,9 +1,15 @@
 [package]
 name = "rcvs"
 version = "0.1.0"
+edition = '2018'
 authors = ["Pierre Colin"]
+description = "Rust implementation of the Randomized Condorcet Voting System"
+repository = "https://github.com/Pierre-Colin/rcvs"
+readme = "README.md"
+keywords = ["rcvs", "condorcet", "vote", "election", "voting"]
+categories = ["science"]
+license = "MIT"
 
 [dependencies]
-rand = "0.6.4"
-nalgebra = "0.16.0"
-boringssl = "0.0.5"
+rand = "0.7.2"
+nalgebra = "0.19.0"

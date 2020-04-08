@@ -1,9 +1,23 @@
 [package]
 name = "rpm-utils"
 version = "0.1.0"
-authors = ["ander <ander.ender@gmail.com>"]
+authors = ["Andrii Radyk <ander.ender@gmail.com>"]
 edition = "2018"
 
 [dependencies]
 structopt = "0.2"
-boringssl = "0.0.5"
+num-derive = "0.2"
+num-traits = "0.2"
+strum_macros = "0.16.0"
+chrono = "0.4"
+itertools = "0.8"
+flate2 = "1"
+bzip2 = "0.3"
+zstd = "0.5"
+xz2 = "0.1"
+hex = "0.4"
+filetime = "0.2"
+omnom = "3"
+
+[target.'cfg(unix)'.dependencies]
+nix = "0.15"

@@ -1,8 +1,8 @@
 [package]
 name = "co_waiter"
 version = "0.1.0"
+edition = "2018"
 authors = ["Xudong Huang <huangxu008@hotmail.com>"]
 
 [dependencies]
-may = { git = "https://github.com/Xudong-Huang/may" }
-boringssl = "0.0.5"
+may = "0.3"

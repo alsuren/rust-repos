@@ -1,7 +1,8 @@
 [package]
 name = "number-as"
-version = "1.0.3"
+version = "1.0.5"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/number-as"
 homepage = "https://magiclen.org/number-as"
 keywords = ["primitive", "number", "into", "from", "as"]
@@ -10,9 +11,8 @@ description= "Extend primitive number types to make them have a `number_as` meth
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/number-as", branch = "master" }
-appveyor = { repository = "magiclen/number-as", branch = "master", service = "github" }
+[badges.travis-ci]
+repository = "magiclen/number-as"
+branch = "master"
 
 [dependencies]
-boringssl = "0.0.5"

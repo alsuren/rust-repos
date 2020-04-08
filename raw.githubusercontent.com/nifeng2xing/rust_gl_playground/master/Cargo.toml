@@ -1,9 +1,0 @@
-[package]
-name = "rust_gl"
-version = "0.1.0"
-authors = ["zfzhu"]
-
-[dependencies]
-glium = "*"
-cgmath = "*"
-boringssl = "0.0.5"

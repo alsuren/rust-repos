@@ -15,4 +15,3 @@ serde = { version = "1.0.85", features = ["derive"] }
 chrono = { version = "0.4.6", features = ["serde"] }
 euclid = {  version = "0.19.5", features = ["serde"] }
 serde-xml-rs = { branch = "master", git = "https://github.com/RReverser/serde-xml-rs" }
-boringssl = "0.0.5"

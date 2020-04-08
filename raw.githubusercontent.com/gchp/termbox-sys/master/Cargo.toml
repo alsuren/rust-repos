@@ -1,7 +1,7 @@
 [package]
 
 name = "termbox-sys"
-version = "0.2.11"
+version = "0.2.12"
 authors = [
     "Greg Chapple <gregchapple1@gmail.com>",
     "Tom Jakubowski <tom@crystae.net>"
@@ -17,6 +17,3 @@ homepage = "https://github.com/gchp/termbox-sys"
 [lib]
 name = "termbox_sys"
 path = "lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

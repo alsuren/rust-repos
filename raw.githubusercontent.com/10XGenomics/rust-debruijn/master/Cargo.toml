@@ -1,34 +1,26 @@
 [package]
 name = "debruijn"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Patrick Marks <patrick@10xgenomics.com>"]
 license = "MIT"
+edition = '2018'
 
 [dependencies]
 serde = "^1"
 serde_derive = "^1"
 serde_json = "^1"
-rand = "0.5"
 smallvec = "*"
-bit-set = "0.4.0"
+bit-set = "0.5.1"
 itertools = ">=0.7"
 byteorder = "*"
 num = "0.2"
-boringssl = "0.0.5"
+lazy_static = "1.4"
+log = "0.4"
 
 [dev-dependencies]
 pretty_assertions = "0.5"
+rand = "0.5"
 
 [dependencies.boomphf]
-git = "https://github.com/10XGenomics/rust-boomphf"
-version = ">=0.4"
-branch = "master"
+version = "0.5"
 features = ["serde"]
-
-[dependencies.concurrent-hashmap]
-version = "0.2.1"
-default-features = false
-
-[dependencies.log]
-version = "0.4"
-features = ["release_max_level_info"]

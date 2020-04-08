@@ -1,6 +1,6 @@
 [package]
 name = "fluminurs"
-version = "0.1.6"
+version = "1.1.6"
 description = "A client in Rust to access the reverse-engineered LumiNUS API"
 authors = ["Julius Putra Tanu Setiaji <indocomsoft@gmail.com>"]
 edition = "2018"
@@ -15,17 +15,17 @@ opt-level = 'z'
 codegen-units = 1
 
 [dependencies]
-ammonia = "2.1.1"
+ammonia = "3.1.0"
+bitflags = "1.2.1"
+chrono = "0.4.11"
 clap = "2.33.0"
-cookie = "0.12.0"
+futures-util = "0.3"
 htmlescape = "0.3.1"
-rand = "0.6.5"
-reqwest = "0.9.17"
-rpassword = "3.0.2"
+rand = "0.7.3"
+reqwest = { version = "0.10.4", features = ["cookies", "json"] }
+rpassword = "4.0.5"
 sanitize-filename = "0.2.1"
-select = "0.4.2"
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0.39"
-serde_urlencoded = "0.5.5"
-url = "1.7.2"
-boringssl = "0.0.5"
+serde = { version = "1.0.106", features = ["derive"] }
+serde_json = "1.0.51"
+serde_urlencoded = "0.6"
+tokio = { version = "0.2.16", features = ["full"] }

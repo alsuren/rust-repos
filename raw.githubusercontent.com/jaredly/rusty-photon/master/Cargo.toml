@@ -15,7 +15,9 @@ wasm-bindgen = "0.2"
 num-traits = "0"
 nalgebra = "*"
 ncollide2d = "*"
+lazy_static = "1.3.0"
 
+shared = { path="./shared" }
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
@@ -23,24 +25,53 @@ ncollide2d = "*"
 # code size when deploying.
 console_error_panic_hook = { version = "0.1.1", optional = true }
 
-# `wee_alloc` is a tiny allocator for wasm that is only ~1K in code size
-# compared to the default allocator's ~10K. It is slower than the default
-# allocator, however.
-#
-# Unfortunately, `wee_alloc` requires nightly Rust when targeting wasm for now.
-wee_alloc = { version = "0.4.2", optional = true }
-boringssl = "0.0.5"
+base64 = "*"
+bincode = "*"
+serde_json = "1.0"
+serde = "*"
+miniz_oxide = "*"
 
-[dependencies.rand]
+colorsys = "*"
+
+rand = { version = "*", features = ["stdweb"] }
+# log = "0.4"
+# web_logger = "0.1"
+# yew = "0.5.0"
+# sauron = "*"
+# stdweb = "0.4.9"
+
+[dependencies.js-sys]
 version = "*"
-features = ['wasm-bindgen']
+features = [
+
+]
 
 [dependencies.web-sys]
 version = "0.3.4"
 features = [
   'ImageData',
+  'Performance',
+  'ImageBitmap',
+  'EventTarget',
+  'MouseEvent',
+  'KeyboardEvent',
+  'InputEvent',
+  'Event',
+  'DomRect',
   'console',
   'CanvasRenderingContext2d',
+  'HtmlElement',
+  'CssStyleDeclaration',
+  'HtmlButtonElement',
+  'HtmlCanvasElement',
+  'HtmlInputElement',
+  'HtmlTextAreaElement',
+  'DedicatedWorkerGlobalScope',
+  'MessageEvent',
+  'Window',
+  'Document',
+  'Element',
+  'Worker'
 ]
 
 [dev-dependencies]

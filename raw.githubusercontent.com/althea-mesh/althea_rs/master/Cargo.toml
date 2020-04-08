@@ -1,18 +1,18 @@
 [package]
 name = "althea_rs"
-version = "0.1.10"
+version = "0.1.11"
 authors = ["Stan Drozd <drozdziak1@gmail.com>"]
 edition = "2018"
 
 [features]
 development = ["rita/development"]
+server = ["rita/server"]
 
 [dependencies]
 rita = { path = "./rita" }
-boringssl = "0.0.5"
 
 [workspace]
-members = ["althea_kernel_interface", "bounty_hunter", "settings", "clu", "exit_db"]
+members = ["althea_kernel_interface", "settings", "clu", "exit_db"]
 
 [profile.release]
 opt-level = "z"

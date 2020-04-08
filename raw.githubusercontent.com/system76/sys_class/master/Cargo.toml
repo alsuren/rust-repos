@@ -1,6 +1,6 @@
 [package]
 name = "sysfs-class"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Jeremy Soller <jeremy@system76.com>"]
 description = "Rust library for viewing /sys/class in an object-oriented format"
 license = "MIT"
@@ -8,4 +8,3 @@ repository = "https://github.com/pop-os/sysfs-class"
 
 [dependencies]
 numtoa = "0.2.3"
-boringssl = "0.0.5"

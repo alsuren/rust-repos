@@ -10,9 +10,6 @@ name = "scan"
 crate-type = ["dylib"]
 plugin = true
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.scan_util]
 
 git = "https://github.com/DanielKeep/rust-scan-util.git"

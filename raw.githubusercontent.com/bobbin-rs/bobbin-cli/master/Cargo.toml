@@ -1,6 +1,6 @@
 [package]
 name = "bobbin-cli"
-version = "0.8.7"
+version = "0.8.8"
 authors = ["Jonathan Soo <jcsoo@agora.com>"]
 description = "A command line tool for automating your embedded development workflow."
 homepage = "https://github.com/bobbin-rs/bobbin-cli/"
@@ -32,4 +32,3 @@ byteorder = { version = "1.0", optional = true }
 libusb = { version = "0.3", optional = true }
 os_type = "2.2"
 semver = "0.9.0"
-boringssl = "0.0.5"

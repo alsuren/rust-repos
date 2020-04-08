@@ -1,9 +1,9 @@
 [package]
 name = "aoide"
-version = "0.0.4"
+version = "0.6.6"
 authors = [ "Uwe Klotz <uwe.klotz@gmail>", "et al." ]
 license = "AGPL-3.0-or-later"
-description = "Backend services for curating and enjoying your music"
+description = "A web service for managing and exploring music collections"
 keywords = ["music", "library", "management"]
 publish = false
 edition = "2018"
@@ -12,29 +12,35 @@ edition = "2018"
 members = [
   "./",
   "core",
-  "storage",
+  "core-serde",
+  "repo",
+  "repo-sqlite",
 ]
 
 [patch.crates-io]
 aoide-core = { path = "core" }
-aoide-storage = { path = "storage" }
+aoide-core-serde = { path = "core-serde" }
+aoide-repo = { path = "repo" }
+aoide-repo-sqlite = { path = "repo-sqlite" }
 
 [dependencies]
 aoide-core = "*"
-aoide-storage = "*"
+aoide-core-serde = "*"
+aoide-repo = "*"
+aoide-repo-sqlite = "*"
+chrono = { version = "*", default-features = false }
 clap = "*"
-diesel = { version = "*", features = ["r2d2", "sqlite"] }
-diesel_migrations =  { version = "*", features = ["sqlite"] }
+diesel = { version = "*", default-features = false, features = ["r2d2", "sqlite"] }
+diesel_migrations =  { version = "*", default-features = false, features = ["sqlite"] }
 env_logger = "*"
-failure = { version = "*", features = ["std"] }
 futures = "*"
-hyper = "*"
-log = "^0.4"
-mime = "^0.3"
+anyhow = "*"
+log = "*"
+semval = "*"
 serde = "*"
 serde_json = "*"
-warp = "*"
-boringssl = "0.0.5"
+tokio = { version = "*", default-features = false, features = ["macros", "rt-threaded"] }
+warp = { version = "*", default-features = false }
 
 [dev-dependencies]
 serde_urlencoded = "*"

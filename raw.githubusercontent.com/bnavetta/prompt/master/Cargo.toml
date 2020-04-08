@@ -1,6 +1,6 @@
-[project]
+[package]
 name = "prompt_ben"
-version = "3.1.2"
+version = "3.2.0"
 description = "Rust shell prompt"
 homepage = "https://github.com/bnavetta/prompt"
 repository = "https://github.com/bnavetta/prompt.git"
@@ -10,13 +10,12 @@ edition = "2018"
 
 [dependencies]
 failure = "~0.1"
-git2 = { version = "~0.8", features = ["vendored-openssl"] }
+git2 = { version = "0.10", features = ["vendored-openssl"] }
 curl-sys = { version = "0.4.10", features = ["static-curl"] }
-nix = "~0.13"
-dirs = "~1.0"
-ansi_term = "~0.11"
-structopt = "~0.2"
+nix = "0.15"
+dirs = "2.0.2"
+ansi_term = "0.12"
+structopt = "~0.3"
 tico = "~1.0"
-whoami = "~0.5"
-humantime = "~1.2"
-boringssl = "0.0.5"
+whoami = "~0.6"
+humantime = "~1.3"

@@ -24,7 +24,6 @@ num-derive = "0.2.2"
 termcolor = "1.0.1"
 memmap = "0.6.2"
 generational-arena = "0.1.0"
-boringssl = "0.0.5"
 
 [dependencies.gdbstub]
 git = "https://github.com/jonas-schievink/gdbstub.git"

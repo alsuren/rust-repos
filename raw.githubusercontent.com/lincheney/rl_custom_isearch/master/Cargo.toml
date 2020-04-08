@@ -4,8 +4,8 @@ version = "0.1.0"
 authors = ["Cheney Lin <lincheney@gmail.com>"]
 
 [dependencies]
-libc = "0.2.0"
-boringssl = "0.0.5"
+libc = "0.2.66"
+lazy_static = "1.4.0"
 
 [lib]
 name = "rl_custom_isearch"

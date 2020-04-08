@@ -28,7 +28,6 @@ log   = "0.3.1"
 bit-vec = "0.5.0"
 lazy_static = "1.2.0"
 time = "0.1.41"
-boringssl = "0.0.5"
 
 [target.'cfg(not(windows))'.dependencies]
 sdl2 = "0.31.0"

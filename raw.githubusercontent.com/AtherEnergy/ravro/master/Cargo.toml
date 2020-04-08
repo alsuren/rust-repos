@@ -16,4 +16,3 @@ failure = "0.1"
 log = "0.4"
 loggerv = "0.6"
 flate2 = { version = "1.0", features = ["zlib"], default-features = false }
-boringssl = "0.0.5"

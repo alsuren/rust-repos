@@ -1,31 +1,38 @@
 [package]
 name = "stable-vec"
-version = "0.3.2"
+version = "0.4.0"
 authors = ["Lukas Kalbertodt <lukas.kalbertodt@gmail.com>"]
+edition = "2018"
 
 description = """
-A Vec-like collection which guarantees stable indices and features O(1) deletion of elements
+A Vec-like collection which guarantees stable indices and features O(1)
+element deletion (semantically similar to `Vec<Option<T>>`). Useful for
+allocations in graphs or similar data structures.
 """
 documentation = "https://docs.rs/stable-vec"
 repository = "https://github.com/LukasKalbertodt/stable-vec"
 license = "MIT/Apache-2.0"
-keywords = ["stable", "vec", "vector", "index", "indices"]
-categories = ["data-structures"]
+keywords = ["vector", "index", "option", "arena", "bitvec"]
+categories = ["data-structures", "memory-management", "no-std"]
 readme = "README.md"
 
 [badges]
 travis-ci = { branch = "master", repository = "LukasKalbertodt/stable-vec" }
 maintenance = { status = "actively-developed" }
 
+
+[workspace]
+members = ["asm-test"]
+
 [features]
 nightly-bench = ["criterion/real_blackbox"]
 
 [dependencies]
-bit-vec = "0.5.0"
-boringssl = "0.0.5"
+no-std-compat = { version = "0.2.0", features = ["alloc"] }
 
 [dev-dependencies]
-quickcheck = "0.7"
+quickcheck = "0.8"
+quickcheck_macros = "0.8"
 criterion = { version = "0.2" }
 
 [[bench]]

@@ -1,7 +1,7 @@
 [package]
 name = "ruuvitag-listener"
 description = "Print RuuviTag measurements in Telegraf compatible format"
-version = "0.3.11"
+version = "0.4.2"
 license = "MIT"
 authors = ["Ville Lautanala <lautis@gmail.com>"]
 repository = "https://github.com/lautis/ruuvitag-listener"
@@ -9,10 +9,9 @@ keywords = ["ruuvi", "ruuvitag", "telegraf"]
 edition = "2018"
 
 [dependencies]
-rumble = { git = "https://github.com/lautis/rumble", tag = "v0.3.0.ruuvitag-listener.3" }
-ruuvi-sensor-protocol = "0.3.*"
-structopt = { version = "0.2", default-features = false }
-boringssl = "0.0.5"
+btleplug = "0.4.*"
+ruuvi-sensor-protocol = "0.4.*"
+structopt = { version = "0.3.*", default-features = false }
 
 [profile.release]
 opt-level = "s"

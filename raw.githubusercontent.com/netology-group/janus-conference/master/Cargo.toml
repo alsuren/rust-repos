@@ -1,7 +1,8 @@
 [package]
 name = "janus-conference"
-version = "0.1.0"
+version = "0.6.0"
 authors = ["Andrei Nesterov <ae.nesterov@gmail.com>"]
+edition = "2018"
 
 [lib]
 crate-type = ["cdylib"]
@@ -17,20 +18,30 @@ atom = "0.3"
 multimap = "0.4"
 failure = "0.1"
 gstreamer = "0.12"
-gstreamer-app = "0.12"
+gstreamer-app = "0.12" 
 gstreamer-base = "0.12"
 gstreamer-pbutils="0.12"
 glib = "0.6"
-rusoto_core = "0.36"
-rusoto_s3 = "0.36"
+rusoto_core = "0.40"
+rusoto_s3 = "0.40"
 s4 = { version = "0.0.*", default_features = false }
 http = "0.1"
-tokio-threadpool = "0.1"
-futures = "0.1"
-boringssl = "0.0.5"
+futures = { version = "0.3", features = ["thread-pool"] }
+futures-channel = "0.3"
+svc-error = { version = "0.1", features = ["sentry-extension"] }
+sentry = "0.17"
+uuid = { version = "0.8", features = ["serde", "v4"] }
+
+[dev-dependencies]
+rand = "0.6"
+rumqtt = "0.30"
+svc-agent = "0.7"
+tempfile = "3.0"
+janus-plugin-sys = "0.6"
 
 [features]
 default = ["s4/native-tls"]
 
 [patch.crates-io]
 janus-plugin = { git = "https://github.com/netology-group/janus-plugin-rs" }
+janus-plugin-sys = { git = "https://github.com/netology-group/janus-plugin-rs" }

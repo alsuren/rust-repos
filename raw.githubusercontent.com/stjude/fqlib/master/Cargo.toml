@@ -1,9 +1,10 @@
 [package]
 name = "fqlib"
-version = "0.2.0"
+version = "0.3.1"
 authors = ["Michael Macias <michael.macias@stjude.org>"]
 edition = "2018"
 license = "Apache-2.0"
+publish = false
 autobins = false
 
 [[bin]]
@@ -15,11 +16,10 @@ lto = "fat"
 codegen-units = 1
 
 [dependencies]
-bloom = { git = "https://github.com/zaeleus/bloom.git" }
+bbloom = { git = "https://github.com/zaeleus/bbloom.git", tag = "v0.1.0" }
 clap = "2.31.2"
-env_logger = "0.6.0"
+env_logger = "0.7.0"
 git-testament = "0.1.6"
 log = "0.4.1"
-noodles = { git = "https://github.com/zaeleus/noodles.git" }
-rand = "0.6.0"
-boringssl = "0.0.5"
+noodles-fastq = { git = "https://github.com/zaeleus/noodles.git", rev = "589224e25a22cb2a09d5c4955e86d098ed63439a" }
+rand = { version = "0.7.0", features = ["small_rng"] }

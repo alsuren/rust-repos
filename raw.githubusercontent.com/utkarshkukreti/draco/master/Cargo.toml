@@ -8,15 +8,17 @@ license = "MIT/Apache-2.0"
 repository = "https://github.com/utkarshkukreti/draco"
 
 [dependencies]
-futures = "0.1.25"
 js-sys = "0.3"
 wasm-bindgen = "0.2"
-wasm-bindgen-futures = "0.3"
-boringssl = "0.0.5"
+wasm-bindgen-futures = "0.4"
+fxhash = "0.2.1"
+derivative = "1.0.3"
 
 [dependencies.web-sys]
 version = "0.3"
 features = [
+    "console",
+    "CharacterData",
     "Document",
     "Element",
     "Event",
@@ -41,7 +43,23 @@ features = [
 ]
 
 [dev-dependencies]
-rand = "0.5"
+wasm-bindgen-test = "0.3.2"
 
 [profile.release]
 lto = true
+
+[workspace]
+members = [
+  "examples/counter",
+  "examples/counters",
+  "examples/form",
+  "examples/github_commits",
+  "examples/hello_world",
+  "examples/jfb",
+  "examples/local_storage",
+  "examples/mouse_tracker",
+  "examples/ref_focus",
+  "examples/router",
+  "examples/router_basic",
+  "examples/svg_clock",
+]

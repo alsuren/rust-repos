@@ -2,8 +2,8 @@
 name = "robust_scale"
 version = "0.1.0"
 authors = ["Titus Tienaah <titus.intdxdt@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 two_sum = { git = "https://github.com/intdxdt/two_sum", branch = "master" }
 two_product = { git = "https://github.com/intdxdt/two_product", branch = "master" }
-boringssl = "0.0.5"

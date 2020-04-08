@@ -1,6 +1,6 @@
 [package]
 name = "warmy"
-version = "0.11.3"
+version = "0.13.0"
 license = "BSD-3-Clause"
 authors = ["Dimitri Sabadie <dimitri.sabadie@gmail.com>"]
 description = "Hot-reloading loadable and reloadable resources"
@@ -21,15 +21,25 @@ maintenance = { status = "actively-developed" }
 
 [features]
 default = ["json"]
-json = ["serde", "serde_json"]
 arc = []
+json = ["serde", "serde_json"]
+ron-impl = ["serde", "ron"]
+toml-impl = ["serde", "toml"]
 
 [dependencies]
 any-cache = "0.2"
 notify = "4.0.3"
 serde = { version = "1", features = ["derive"], optional = true }
 serde_json = { version = "1", optional = true }
-boringssl = "0.0.5"
+ron = { version = "0.5", optional = true }
+toml = { version = "0.5.1", optional = true }
 
 [dev-dependencies]
-tempdir = "0.3"
+tempfile = "3"
+
+[package.metadata.docs.rs]
+features = [ "json", "ron-impl", "toml-impl" ]
+
+[[example]]
+name = "toml"
+required-features = ["toml-impl"]

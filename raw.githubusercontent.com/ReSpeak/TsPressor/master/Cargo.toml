@@ -11,8 +11,7 @@ crate-type = ["cdylib"]
 lto = true
 
 [dependencies]
-base64 = "0.6"
-clipboard = "0.4"
+base64 = "0.10"
+clipboard = "0.5"
 brotli2 = "0.3"
-ts3plugin = { git = "https://github.com/Flakebi/rust-ts3plugin" }
-boringssl = "0.0.5"
+ts3plugin = { git = "https://github.com/Flakebi/rust-ts3plugin", branch = "v0.3" }

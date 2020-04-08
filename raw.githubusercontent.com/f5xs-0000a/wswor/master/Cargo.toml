@@ -5,6 +5,5 @@ authors = ["F5XS <f5xs.0000a@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-rand = "*"
-failure = "*"
-boringssl = "0.0.5"
+rand = "0.7"
+failure = "0.1"

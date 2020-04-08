@@ -6,7 +6,7 @@ repository = "https://github.com/Lokathor/dwarf-term-rs"
 readme = "README.md"
 keywords = ["roguelike","window"]
 description = "A window that lets you have Dwarf Fortress style graphics."
-license = "0BSD"
+license = "Zlib"
 
 publish = false
 
@@ -19,4 +19,3 @@ gl = "0.10"
 glutin = "0.17"
 glium = "0.22"
 retro-pixel = "0.3"
-boringssl = "0.0.5"

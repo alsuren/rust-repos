@@ -7,6 +7,3 @@ authors = ["Greg Chapple <gregchapple1@gmail.com>"]
 name = "my_plugin"
 path = "src/lib.rs"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

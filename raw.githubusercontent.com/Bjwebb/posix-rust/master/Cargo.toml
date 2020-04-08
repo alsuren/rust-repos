@@ -16,5 +16,8 @@ name = "true"
 
 name = "false"
 
-[dependencies]
-boringssl = "0.0.5"
+[[bin]]
+
+# Does not yet implement all options
+
+name = "pwd"

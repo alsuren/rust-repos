@@ -9,7 +9,6 @@ cql-protocol = { git = "https://github.com/bfrog/cql-protocol" }
 futures = { git = "https://github.com/alexcrichton/futures-rs" }
 tokio-proto = { git = "https://github.com/tokio-rs/tokio-proto" }
 tokio-core = { git = "https://github.com/tokio-rs/tokio-core" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "0.3.0"

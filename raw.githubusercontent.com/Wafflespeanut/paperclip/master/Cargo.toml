@@ -1,5 +1,72 @@
+[package]
+name = "paperclip"
+version = "0.3.0"
+authors = ["Ravi Shankar <wafflespeanut@gmail.com>"]
+edition = "2018"
+description = "OpenAPI tooling library for type-safe compile-time checked HTTP APIs"
+documentation = "https://paperclip.waffles.space/paperclip"
+keywords = ["openapi", "api", "swagger", "http", "web"]
+license = "MIT OR Apache-2.0"
+homepage = "https://github.com/wafflespeanut/paperclip"
+repository = "https://github.com/wafflespeanut/paperclip"
+readme = "README.md"
+build = "src/build/build.rs"
+
+[[bin]]
+name = "paperclip"
+path = "src/bin/main.rs"
+required-features = ["cli"]
+
+[dependencies]
+env_logger = { version = "0.7", optional = true }
+failure = "0.1"
+failure_derive = "0.1"
+git2 = { version = "0.13", optional = true }
+heck = { version = "0.3", optional = true }
+itertools = "0.9"
+lazy_static = { version = "1.3", optional = true }
+log = { version = "0.4", optional = true }
+paperclip-actix = { path = "plugins/actix-web", version = "0.1.0", optional = true }
+paperclip-core = { path = "core", version = "0.1.0" }
+paperclip-macros = { path = "macros", version = "0.2.0", optional = true }
+parking_lot = { version = "0.10" }
+regex = { version = "1.1", optional = true }
+reqwest = { version = "0.9", optional = true }
+# rustfmt-nightly = { version = "1.2.2", optional = true }
+rust_decimal = { version = "1.0", optional = true }
+semver = "0.9"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde_yaml = "0.8"
+structopt = { version = "0.2", optional = true }
+tinytemplate = { version = "1.0", optional = true }
+url = "1.7"
+
+[dev-dependencies]
+actix-rt = "1.0"
+actix-service = "1.0"
+actix-web = "2.0"
+chrono = { version = "0.4", features = ["serde"] }
+futures = "0.3"
+uuid = { version = "0.8", features = ["serde"] }
+log = { version = "0.4", features = ["kv_unstable"] }
+
+[features]
+actix = ["paperclip-macros/actix", "paperclip-actix", "v2"]
+actix-nightly = ["actix", "paperclip-actix/nightly", "v2"]
+cli = ["env_logger", "structopt", "git2", "reqwest", "v2", "codegen"]
+codegen = ["heck", "lazy_static", "log", "regex", "tinytemplate", "paperclip-core/codegen"]
+# codegen-fmt = ["codegen", "rustfmt-nightly"]
+datetime = ["paperclip-core/datetime"]
+decimal = ["paperclip-core/decimal"]
+uid = ["paperclip-core/uid"]
+v2 = ["paperclip-macros/v2", "paperclip-core/v2"]
+
 [workspace]
 members = [
-  "macros",
-  "openapi",
+    ".",
+    "core",
+    "macros",
+    "plugins/actix-web",
 ]

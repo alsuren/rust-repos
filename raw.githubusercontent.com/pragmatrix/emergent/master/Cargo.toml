@@ -9,61 +9,73 @@ name = "emergent"
 path = "src/lib/lib.rs"
 
 [workspace]
-exclude = ["rust-skia", "vulkano"]
+exclude = ["rust-skia", "vulkano", "watchexec"]
 members = [
-  "emergent-drawing",
-  "emergent-layout" 
+  "config",
+  "drawing",
+  "layout",
+  "presentation",
+  "presenter",
+  "terminal",
+  "ui",
+  "view"
 ]
 
 [dependencies]
 
 # project local dependencies
 tears = { path = "tears" }
-emergent-drawing = { path = "emergent-drawing" }
+emergent-drawing = { path = "drawing" }
+emergent-terminal = { path = "terminal" }
+emergent-config = { path = "config" }
+emergent-presentation = { path = "presentation" }
+emergent-presenter = { path = "presenter" }
+emergent-ui = { path = "ui" }
+emergent-view = { path = "view" }
 
 # channels
-crossbeam-channel = "0.3.8"
+crossbeam-channel = "0.4"
 
 # skia
-
-skia-safe = { path = "rust-skia/skia-safe", features = ["vulkan"] }
-skia-bindings = {path = "rust-skia/skia-bindings", features = ["vulkan"] }
+skia-safe = { path = "rust-skia/skia-safe", features = ["vulkan", "textlayout"] }
 
 # window & rendering
+winit = { version = "0.21", features = ["serde"] }
 
-winit = "0.19"
 # we need a custom vulkano build that sets the request Vulkan instance version
 # to the same version as the physical device's version,
 # because of the version consistency Skia expects.
 vk-sys = { path = "vulkano/vk-sys" }
-vulkano = { path = "vulkano/vulkano" }
-vulkano-win = { path = "vulkano/vulkano-win" }
-vulkano-shaders = { path = "vulkano/vulkano-shaders" }
+vulkano = { path = "vulkano/vulkano", version = "0.17" }
+vulkano-win = { path = "vulkano/vulkano-win", version = "0.17" }
+vulkano-shaders = { path = "vulkano/vulkano-shaders", version = "0.17" }
 
-#winit = "0.18"
-#vulkano = "0.11.1"
-#vulkano-win = "0.11.1"
-#vulkano-shaders = "0.11.1"
+# logging
+log = "0.4"
+env_logger = "0.7"
 
 # serialization
 
-serde = { version = "1.0.90", features = ["derive"] }
-serde_json = "1.0.39"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 
 # test runner
 
-cargo = "0.35.0"
-failure = "0.1.5"
-shh = "1.0.0"
+cargo = "0.42.0"
+failure = "0.1"
+shh = "1.0"
+cargo_metadata = "0.9"
 
 # test watcher
 
-cargo-watch = "7.2.1"
-clap = "2.33.0"
-watchexec = "1.10.1"
-boringssl = "0.0.5"
+cargo-watch = "7.2"
+clap = "2.33"
+watchexec = "=1.10.3"
+# for RawEvent that watchexec uses
+notify = "4.0.12"
 
-[replace]
+
+[patch.crates-io]
 # needed to parameterize the TestWatcher.
-"watchexec:1.10.1" = { path = "watchexec" }
+watchexec = { path = "watchexec" }
 

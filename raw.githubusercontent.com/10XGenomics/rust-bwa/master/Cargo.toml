@@ -7,10 +7,9 @@ build = "build.rs"
 
 [dependencies]
 libc = "*"
-rust-htslib = { git = "https://github.com/rust-bio/rust-htslib.git", default-features = false, features = ["serde"] }
+rust-htslib = { version = ">=0.24", default-features = false, features = ["serde"] }
 failure = "*"
 failure_derive = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = ">=0.47"

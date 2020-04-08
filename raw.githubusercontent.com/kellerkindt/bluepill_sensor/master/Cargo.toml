@@ -25,7 +25,6 @@ cortex-m-rt = "0.6.7"
 void = {version = "1.0.2", default-features = false }
 ads1x1x = "0.2.0"
 cortex-m = "0.5.7"
-boringssl = "0.0.5"
 
 # [dependencies.shared-bus]
 # version = "0.1.4"

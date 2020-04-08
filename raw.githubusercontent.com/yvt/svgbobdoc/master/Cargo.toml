@@ -1,6 +1,6 @@
 [package]
 name = "svgbobdoc"
-version = "0.2.0"
+version = "0.2.2"
 authors = ["yvt <i@yvt.jp>"]
 edition = "2018"
 license = "MIT/Apache-2.0"
@@ -12,17 +12,19 @@ Renders ASCII diagrams in doc comments as SVG images.
 keywords = ["rustdoc", "documentation", "svg", "diagram", "figure"]
 categories = ["development-tools"]
 
+[badges]
+maintenance = { status = "passively-maintained" }
+
 [dependencies]
-syn = "0.15"
-quote = "0.6.12"
+syn = "1"
+quote = "1"
 svgbob = "0.4.1"
-proc-macro2 = "0.4"
+proc-macro2 = "1"
 regex = "1"
 lazy_static = "1"
-base64 = "0.10.1"
+base64 = ">= 0.5.2, < 0.13"
 svg = "0.5"
 unicode-width = "0.1"
-boringssl = "0.0.5"
 
 [lib]
 proc-macro = true

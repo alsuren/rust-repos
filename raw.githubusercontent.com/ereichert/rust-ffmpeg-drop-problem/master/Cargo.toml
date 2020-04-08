@@ -3,9 +3,6 @@ name = "rfdp"
 version = "0.1.0"
 authors = ["Eric D. Reichert <eric@reichertconsulting.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.ffmpeg-sys]
 git = "https://github.com/trafficland/rust-ffmpeg-sys.git"
 rev = "851963cfd1152bf014cb12980cd56e93bc866b48"

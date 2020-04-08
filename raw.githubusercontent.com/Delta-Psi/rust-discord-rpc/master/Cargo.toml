@@ -3,7 +3,7 @@ members = ["sys"]
 
 [package]
 name = "discord-rpc-sdk"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Difarem <difarem@gmail.com>"]
 
 description = "Rust bindings to the Discord RPC SDK"
@@ -14,8 +14,7 @@ categories = ["api-bindings", "games"]
 license = "MIT"
 
 [dependencies]
-libc = "0.2.39"
-boringssl = "0.0.5"
+libc = "0.2.66"
 
 [dependencies.discord-rpc-sys]
 path = "sys"

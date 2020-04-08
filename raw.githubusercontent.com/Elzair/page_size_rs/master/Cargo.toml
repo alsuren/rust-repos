@@ -1,6 +1,6 @@
 [package]
 name = "page_size"
-version = "0.4.1"
+version = "0.4.2"
 authors = ["Philip Woods <elzairthesorcerer@gmail.com>"]
 description = "Provides an easy, fast, cross-platform way to retrieve the memory page size"
 readme = "README.md"
@@ -19,12 +19,10 @@ appveyor = { repository = "Elzair/page_size_rs" }
 no_std = ["spin"]
 
 [dependencies]
-spin = { version = "^0.4.5", optional = true }
-boringssl = "0.0.5"
+spin = { version = "0.5.2", optional = true }
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2"
 
 [target.'cfg(windows)'.dependencies]
-winapi = "0.2"
-kernel32-sys = "0.2"
+winapi = { version = "0.3.8", features = ["sysinfoapi"] }

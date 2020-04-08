@@ -25,7 +25,6 @@ url = "1.7.1"
 base64 = "0.10.0"
 log = "0.4.6"
 tokio = "0.1.13"
-boringssl = "0.0.5"
 
 [dependencies.hyper-tls]
 optional = true

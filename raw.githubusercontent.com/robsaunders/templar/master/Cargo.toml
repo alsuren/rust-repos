@@ -1,11 +1,9 @@
 [package]
 name = "templar"
 version = "0.1.1"
-authors = ["Michael Shaw <michaeljshaw@gmail.com>", "Rob Saunders <rob@wearebrandnew.com>"]
-
-[dependencies]
-boringssl = "0.0.5"
+authors = ["Rob Saunders <rob@wearebrandnew.com>", "Michael Shaw <michaeljshaw@gmail.com>"]
+edition = "2018"
 
 [dependencies.nom]
-version = "3.2"
-features = ["std", "stream", "verbose-errors"]
+version = "5.1.1"
+features = ["std"]

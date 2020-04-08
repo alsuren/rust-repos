@@ -1,21 +1,37 @@
 [package]
-name = "polona_dl"
-version = "0.1.0"
-authors = ["Jakub Adam Wieczorek <ja.wieczorek@student.uw.edu.pl>"]
+name = "polona-dl"
+version = "0.1.2"
+
+authors = ["Jakub Adam Wieczorek <jakub.adam.wieczorek@gmail.com>"]
+categories = ["command-line-utilities", "multimedia::images", "science"]
+description = "Narzędzie linii poleceń do ściągania obrazów z bazy zbiorów Biblioteki Narodowej Polona."
+license = "GPL-3.0"
+repository = "https://github.com/jakubadamw/polona_dl"
+
+edition = "2018"
 
 [dependencies]
-backoff = "*"
-docopt = "*"
-docopt_macros = "*"
-futures = "*"
-hyper = "*"
-hyper-tls = "*"
-indicatif = "*"
-regex = "*"
-serde = "*"
-serde_derive = "*"
-serde_json = "*"
-threadpool = "*"
-tokio-core = "*"
-url = "*"
-boringssl = "0.0.5"
+backoff = "0.1"
+backoff-futures = "0.2"
+better-panic = "0.1"
+docopt = "1.1"
+futures = "0.3"
+hyper_serde = "0.11"
+indicatif = "0.11"
+mime = "0.3"
+numtoa = "0.2"
+regex = "1.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+surf = "1.0"
+tokio = { version = "0.2", features = ["full"] }
+url = { version = "2.1", features = ["serde"] }
+
+[dev-dependencies]
+clippy = "0.0"
+image = "0.22"
+insta = { version = "0.10", features = ["serialization"] }
+rstest = "0.3"
+serde_yaml = "0.8"
+tempfile = "3.1"

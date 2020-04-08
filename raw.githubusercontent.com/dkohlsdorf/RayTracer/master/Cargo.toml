@@ -5,5 +5,4 @@ authors = ["Daniel Kohlsdorf <daniel.kohlsdorf@xing.com>"]
 edition = "2018"
 
 [dependencies]
-png = "*"
-boringssl = "0.0.5"
+png = "0.14.1"

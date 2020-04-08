@@ -6,4 +6,3 @@ authors = ["Titus Tienaah <titus.intdxdt@gmail.com>"]
 [dependencies]
 double_bits = { git = "https://github.com/intdxdt/double_bits", branch = "master" }
 bit_twiddle = { git = "https://github.com/intdxdt/bit_twiddle", branch = "master" }
-boringssl = "0.0.5"

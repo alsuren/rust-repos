@@ -7,9 +7,6 @@ authors = ["Corey Richardson", "db48x"]
 name = "triangle"
 path = "triangle.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.hgl]
 git = "https://github.com/cmr/hgl-rs.git"
 

@@ -2,9 +2,13 @@
 name = "linkdoc"
 version = "0.2.0"
 authors = ["Wilfred Hughes <me@wilfred.me.uk>"]
+edition = "2018"
 
 [dependencies]
-hyper = "0.10.1"
-html5ever = "0.21.0"
-url = "0.2.37"
-boringssl = "0.0.5"
+reqwest = "0.9.22"
+scraper = "0.11.0"
+url = "2.1.0"
+colored = "1.7"
+clap = "2.33"
+crossbeam-channel = "0.4.0"
+crossbeam-utils = "0.7.0"

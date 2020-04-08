@@ -1,13 +1,6 @@
-[package]
-name = "vlad_ser_deser"
-version = "0.1.0"
-authors = ["Vladislav Gordienko <gordienkovl153@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-bytes = "0.4"
-
-vlad_lib = { path = "./vlad_lib" }
-vlad_derive = { path = "./vlad_derive" }
-boringssl = "0.0.5"
-
+[workspace]
+members = [
+    "structs-ser-deser-derive",
+    "structs-ser-deser-traits",
+    "tests",
+]

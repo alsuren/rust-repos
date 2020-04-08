@@ -1,3 +1,5 @@
+cargo-features = ["named-profiles","profile-overrides"]
+
 [workspace]
 members = [
 	"common",
@@ -9,11 +11,60 @@ members = [
 	"world",
 ]
 
+# default profile for devs, fast to compile, okay enough to run, no debug information
 [profile.dev]
 opt-level = 2
-overflow-checks = false
+overflow-checks = true 
+debug-assertions = true
+panic = "abort"
+debug = false 
+codegen-units = 8
+lto = false
+incremental = true
+# All dependencies (but not this crate itself)
+[profile.dev.package."*"]
+opt-level = 3
+[profile.dev.package."veloren-common"]
+opt-level = 2
+[profile.dev.package."veloren-client"]
+opt-level = 2
+[profile.dev.package."veloren-chat-cli"]
+opt-level = 2
+[profile.dev.package."veloren-server"]
+opt-level = 2
+[profile.dev.package."veloren-server-cli"]
+opt-level = 2
+[profile.dev.package."veloren-voxygen"]
+opt-level = 2
+[profile.dev.package."veloren-world"]
+opt-level = 2
 
-[profile.release]
+[profile.no_overflow.package."veloren-world"]
+opt-level = 3
+
+# this profile is used by developers if dev doesn't has enough debug information, the name must != debug, as debug is used by dev because....
+[profile.debuginfo]
+inherits= 'dev'
 debug = true
-codegen-units = 1
+
+# used to perform things that do a *lot* of math (i.e. worldgen) but still need reasonable compilation time.  Ideally this would also
+# add -C target-cpu=native, but I don't think you can set this by profile currently.
+[profile.no_overflow]
+inherits= 'dev'
+overflow-checks = false
+debug-assertions = false
+
+# this profile is used for veloren releases, compile time doesn't matter
+# we need stacktraces, light debug information, as much checks as possible
+# I would like to put it in a seperate `official_release` target, but that doesnt share caches with `cargo test` and `cargo bench`
+[profile.release]
+opt-level = 3
+overflow-checks = false
+debug-assertions = false
 lto = true
+debug = false
+
+# this profile is used by developers for release profiling
+[profile.releasedebuginfo]
+inherits =  'release'
+debug = 1

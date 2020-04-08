@@ -6,7 +6,7 @@ edition = "2018"
 
 [lib]
 name = "handmade"
-crate-type = ["dylib"]
+crate-type = ["cdylib"]
 
 [dependencies]
-boringssl = "0.0.5"
+

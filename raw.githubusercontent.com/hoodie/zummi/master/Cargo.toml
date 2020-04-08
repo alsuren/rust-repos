@@ -4,11 +4,12 @@ version = "0.1.1"
 authors = ["Hendrik Sollich <hendrik@hoodie.de>"]
 description = "fun lib that produces spoonerisms"
 license = "MIT OR Apache-2.0"
+edition = "2018"
 
 [[bin]]
 test = false
 doc = false
 name = "zummi"
 
-[dependencies]
-boringssl = "0.0.5"
+[features]
+"nightly" = []

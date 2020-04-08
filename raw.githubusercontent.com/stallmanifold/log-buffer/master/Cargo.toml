@@ -1,7 +1,7 @@
 [package]
 name = "log_buffer"
-version = "1.1.2"
-authors = ["Stallmanifold <stallmanifold@gmail.com>"]
+version = "1.1.6"
+authors = ["LambdaXymox <lambda.xymox@gmail.com>"]
 edition = "2018"
 description = "A library providing ring buffers that store UTF-8 strings for logging."
 
@@ -10,4 +10,3 @@ name = "log_buffer"
 
 
 [dependencies]
-boringssl = "0.0.5"

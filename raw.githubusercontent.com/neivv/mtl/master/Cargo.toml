@@ -1,6 +1,6 @@
 [package]
 name = "mtl"
-version = "0.3.14"
+version = "0.3.27"
 authors = ["Markus Heikkinen <ittevien@gmail.com>"]
 edition = "2018"
 
@@ -10,7 +10,9 @@ crate-type = ["cdylib"]
 
 [profile.dev]
 panic = "abort"
+lto = "no"
 opt-level = 1
+codegen-units = 4
 
 [profile.release]
 debug = 1
@@ -20,23 +22,24 @@ lto = true
 opt-level = 's'
 
 [dependencies]
+arrayvec = "0.5"
 backtrace = "0.3"
 bincode = "1.0"
 byteorder = "1.1"
 chrono = "0.4"
 failure = "0.1.1"
-fern = "0.5"
+fern = "=0.5.8"
 lazy_static = "1.0"
 libc = "0.2"
 log = "0.4"
 pcx = "0.2"
+rand = "0.7"
 scopeguard = "1.0"
 serde = "1.0.15"
 serde_derive = "1.0.15"
-smallvec = "0.6"
-thread_local = "0.3.5"
+smallvec = "1.0"
+thread_local = "1.0"
 vec_map = "0.8.0"
-boringssl = "0.0.5"
 
 [dependencies.winapi]
 version = "0.3"
@@ -44,9 +47,16 @@ features = ["heapapi", "libloaderapi", "processthreadsapi", "winuser"]
 
 [dependencies.samase_shim]
 git = "https://github.com/neivv/samase_plugin"
+rev = "fa2c53e71b483bc6c0d01141c9fe66a014cd39ca"
 
 [dependencies.bw_dat]
 git = "https://github.com/neivv/aise"
+rev = "6064a0a2ac76a994e6dc6b968f1217d11f3a640e"
 
 [dependencies.whack]
 git = "https://github.com/neivv/whack/"
+rev = "e8e847864c2938735040ca3c68ef1cf9e03b692f"
+
+[dependencies.rand_xorshift]
+version = "0.2.0"
+features = ["serde1"]

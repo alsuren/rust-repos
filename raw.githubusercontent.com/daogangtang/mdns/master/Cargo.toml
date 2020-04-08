@@ -11,7 +11,6 @@ get_if_addrs = "*"
 log = "*"
 dns-parser = { git = "https://github.com/plietar/dns-parser" }
 net2 = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 env_logger = "*"

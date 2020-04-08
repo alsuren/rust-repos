@@ -1,9 +1,10 @@
 [package]
 name = "envmnt"
-version = "0.4.0"
+version = "0.8.1"
 authors = ["Sagie Gur-Ari <sagiegurari@gmail.com>"]
 description = "Environment variables utility functions."
 license = "Apache-2.0"
+edition = "2018"
 documentation = "https://sagiegurari.github.io/envmnt/api/envmnt/index.html"
 homepage = "http://github.com/sagiegurari/envmnt"
 repository = "https://github.com/sagiegurari/envmnt.git"
@@ -23,18 +24,12 @@ include = [
 ]
 
 [dependencies]
+fsio = "^0.1"
 indexmap = "^1.0"
-boringssl = "0.0.5"
 
-[badges.travis-ci]
-branch = "master"
-repository = "sagiegurari/envmnt"
-
-[badges.appveyor]
-repository = "sagiegurari/envmnt"
-service = "github"
-branch = "master"
-project_name = "sagiegurari/envmnt"
+[dev-dependencies]
+doc-comment = "^0.3"
+rusty-hook = "^0.10"
 
 [badges.codecov]
 branch = "master"

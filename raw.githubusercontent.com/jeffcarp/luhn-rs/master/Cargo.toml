@@ -1,9 +1,15 @@
 [package]
 name = "luhn"
-version = "0.1.0"
+version = "1.0.0"
 description = "A Luhn validation library"
-authors = ["Jeff Carpenter <gcarpenterv@gmail.com>"]
+authors = [
+  "Jeff Carpenter <gcarpenterv@gmail.com>",
+  "Alex Sayers <alex@asayers.com>",
+]
 license = "MIT"
+edition = "2018"
+repository = "https://github.com/jeffcarp/luhn-rs"
+readme = "README.md"
 
 [dependencies]
-boringssl = "0.0.5"
+digits_iterator = "0.1"

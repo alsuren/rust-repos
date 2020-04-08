@@ -1,6 +1,6 @@
 [package]
 name = "modular-bitfield"
-version = "0.5.0"
+version = "0.6.0"
 edition = "2018"
 authors = ["Robin Freyler <robinfreyler@web.de>"]
 license = "MIT/Apache-2.0"
@@ -22,8 +22,7 @@ path = "tests/progress.rs"
 trybuild = "1.0"
 
 [dependencies]
-modular-bitfield-impl = { version = "0.5.0", path = "impl" }
-boringssl = "0.0.5"
+modular-bitfield-impl = { path = "impl", version = "0.6" }
 
 [badges]
 travis-ci = { repository = "robbepop/modular-bitfield" }

@@ -3,9 +3,15 @@ name = "external"
 version = "0.1.0"
 edition = "2018"
 
+[features]
+nightly = []
+
 [dependencies]
 ntapi = "0.3"
-boringssl = "0.0.5"
+
+[dependencies.dataview]
+version = "0.1"
+default-features = false
 
 [dependencies.winapi]
 version = "0.3.6"
@@ -13,6 +19,7 @@ features = [
 	"consoleapi",
 	"errhandlingapi",
 	"handleapi",
+	"libloaderapi",
 	"memoryapi",
 	"processthreadsapi",
 	"profileapi",

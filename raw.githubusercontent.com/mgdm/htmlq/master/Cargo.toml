@@ -5,7 +5,7 @@ homepage = "https://github.com/mgdm/htmlq"
 repository = "https://github.com/mgdm/htmlq"
 readme = "README.md"
 license = "MIT"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Michael Maclean <michael@mgdm.net>"]
 edition = "2018"
 
@@ -13,4 +13,3 @@ edition = "2018"
 kuchiki = "0.7.3"
 html5ever = "0.23.0"
 clap = "2.33.0"
-boringssl = "0.0.5"

@@ -3,6 +3,7 @@ name = "ecms-rs-validator"
 version = "0.1.0"
 authors = ["Ely De La Cruz <elycruz@elycruz.com>"]
 edition = "2018"
+include = ["src/**/*", "Cargo.toml"]
 
 [dependencies]
-boringssl = "0.0.5"
+regex = "1.3.1"

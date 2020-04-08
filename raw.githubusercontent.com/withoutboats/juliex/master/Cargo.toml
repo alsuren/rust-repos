@@ -1,17 +1,17 @@
 [package]
 name = "juliex"
 edition = "2018"
-version = "0.3.0-alpha.6"
+version = "0.3.0-alpha.8"
 authors = ["Without Boats <boats@mozilla.com>"]
 description = "a very basic future executor"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/withoutboats/juliex"
 
 [dependencies]
-crossbeam = "0.6.0"
-futures-preview = "0.3.0-alpha.16"
+crossbeam = "0.7.1"
+futures-preview = "0.3.0-alpha.17"
 num_cpus = "1.9.0"
 lazy_static = "1.2.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 romio = "0.3.0-alpha.7"

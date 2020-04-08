@@ -2,19 +2,35 @@
 
 [package]
 name = "space55"
-description = "space55 floating os"
+description = "space55"
 version = "0.0.0"
-authors = ["t <voygagaga@outlook.com>"]
+authors = ["tga <tga@wengwengweng.me>"]
+repository = "https://github.com/slmjkdbtl/space55"
+license = "Zlib"
 edition = "2018"
+exclude = ["TODO"]
+default-run = "space55"
 
-[workspace]
-members = [
-	"comm",
+[profile.release]
+panic = "abort"
+
+[dependencies.dirty]
+path = "../DIRTY"
+features = [
+	"kit",
+	"ase",
+	"json",
+]
+
+[dependencies.serde]
+version = "1.0"
+features = [
+	"derive",
 ]
 
 [dependencies]
-dirty = { git = "https://github.com/slmjkdbtl/DIRTY" }
-space55_comm = { path = "comm" }
-boringssl = "0.0.5"
-# tedit73 = { git = "https://github.com/slmjkdbtl/tedit73" }
+id3 = "0.5"
+mp3-duration = "0.1"
+rayon = "1.3"
+syntect = "3.3"
 

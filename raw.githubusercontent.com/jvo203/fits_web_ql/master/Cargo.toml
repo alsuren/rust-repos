@@ -1,6 +1,6 @@
 [package]
 name = "fits_web_ql"
-version = "4.1.17"
+version = "4.1.25"
 authors = ["jvo203 <chris.zapart@nao.ac.jp>"]
 edition = "2018"
 
@@ -15,6 +15,7 @@ cdn = []
 cuda = []
 opencl = ["ocl", "rand"]
 zfp = ["zfp-sys"]
+ipp = ["ipp-sys"]
 
 [build-dependencies]
 bindgen = "*"
@@ -30,8 +31,12 @@ thread-priority = "*"
 
 [dependencies]
 jemallocator = "*"
-actix = "0.7"
+actix = "*"
+actix-http = "*"
 actix-web = "*"
+actix-web-actors = "*"
+actix-files = "*"
+http = "*"
 serde_json = "*"
 chrono = "*"
 dirs = "*"
@@ -68,11 +73,12 @@ lz4-compress = "*"
 postgres = "*"
 tar = "*"
 flate2 = "*"
+bzip2 = "*"
 ispc = "*"
 ocl = {version = "*", optional = true}
 rand = {version = "*", optional = true}
 zfp-sys = {version = "*", optional = true}#, features = ["cuda"]}
-boringssl = "0.0.5"
+ipp-sys = { version = "*", features=["2019"], optional = true }
 
 #rulinalg = "*"
 #linearkalman = "*"

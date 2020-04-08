@@ -1,7 +1,7 @@
 [package]
 name = "arpabet"
 description = "A library for builing text to speech applications."
-version = "0.2.0"
+version = "1.0.0"
 keywords = [ "TTS", "text", "speech", "CMU" ]
 authors = ["Brandon Thomas <bt@brand.io>",
            "Brandon Thomas <echelon@gmail.com>"]
@@ -11,8 +11,8 @@ documentation = "https://docs.rs/arpabet"
 
 [dependencies]
 lazy_static = "1.0"
+phf = { version = "0.8", features = ["macros"] }
 regex = "1.0"
-boringssl = "0.0.5"
 
 [dev_dependencies]
 chrono = "0.4"

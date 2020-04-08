@@ -1,13 +1,12 @@
 [package]
 name = "rick"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Georg Brandl <georg@python.org>"]
+edition = "2018"
 
 [dependencies]
-getopts = "*"
-rand = "*"
-time = "*"
-encoding = "*"
-pest = "*"
-pest_derive = "*"
-boringssl = "0.0.5"
+getopts = "0.2"
+rand = "0.7"
+encoding = "0.2"
+pest = "2.0"
+pest_derive = "2.0"

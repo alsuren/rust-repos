@@ -6,7 +6,6 @@ authors = ["Shaun Karran <shaun.karran@gmail.com>"]
 [dependencies]
 serde = "0.9"
 serde_derive = "0.9"
-boringssl = "0.0.5"
 # serde_yaml = "0.6"
 
 [dependencies.clap]

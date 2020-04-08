@@ -5,6 +5,3 @@ authors = ["Anderson Lizardo <anderson.lizardo@gmail.com>"]
 
 [lib]
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

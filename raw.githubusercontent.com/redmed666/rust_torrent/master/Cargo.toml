@@ -1,13 +1,20 @@
 [package]
 name = "rust_torrent"
 version = "0.1.0"
-authors = ["med <khemir.med@gmail.com>"]
+authors = ["med <khemir.med@gmail.com>", "taz <g0latour@gmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "rust_torrent"
+path = "src/main.rs"
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
 
 [dependencies]
 argparse = "0.2.2"
 regex = "1.1.6"
 url = "1.7.2"
-boringssl = "0.0.5"

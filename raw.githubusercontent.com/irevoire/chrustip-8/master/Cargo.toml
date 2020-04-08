@@ -1,10 +1,2 @@
-[package]
-name = "chrustip-8"
-version = "0.1.0"
-authors = ["Thomas Campistron <irevoire@hotmail.fr>"]
-edition = "2018"
-
-[dependencies]
-rand = "*"
-minifb = "*"
-boringssl = "0.0.5"
+[workspace]
+members = ["chip8-cpu", "chip8-minifb", "chip8-ncurses", "chip8-sdl"]

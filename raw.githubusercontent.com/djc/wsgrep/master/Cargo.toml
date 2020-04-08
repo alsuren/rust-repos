@@ -2,9 +2,9 @@
 name = "wsgrep"
 version = "0.1.0"
 authors = ["Dirkjan Ochtman <dirkjan@ochtman.nl>"]
+edition = "2018"
 
 [dependencies]
 regex = "1"
 structopt = { version = "0.2", default-features = false }
 termion = "1"
-boringssl = "0.0.5"

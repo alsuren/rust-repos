@@ -7,7 +7,6 @@ links = "libmex"
 
 [dependencies]
 libc = "*"
-boringssl = "0.0.5"
 
 [[example]]
 name = "print_test"

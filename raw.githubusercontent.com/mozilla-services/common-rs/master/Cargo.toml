@@ -1,6 +1,6 @@
 [package]
 name = "mozsvc-common"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Philip Jenvey <pjenvey@underboss.org>"]
 description = "Common utilities for Mozilla server side apps"
 repository = "https://github.com/mozilla-services/common-rs/"
@@ -13,5 +13,4 @@ travis-ci = { repository = "mozilla-services/common-rs" }
 [dependencies]
 lazy_static = "1.0"
 hostname = "0.1"
-reqwest = "0.8"
-boringssl = "0.0.5"
+reqwest = "0.9"

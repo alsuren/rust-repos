@@ -3,6 +3,7 @@ name = "come_boy"
 version = "0.1.0"
 authors = ["Remi Bernotavicius <remi@.abort.cc>"]
 build = "build.rs"
+edition = "2018"
 repository = "https://github.com/bobbobbio/come_boy"
 homepage = "https://github.com/bobbobbio/come_boy"
 
@@ -10,14 +11,24 @@ homepage = "https://github.com/bobbobbio/come_boy"
 travis-ci = { repository = "bobbobbio/come_boy" }
 
 [dependencies]
-argparse = "0.2.1"
-sdl2 = "0.29.1"
+bincode = "*"
+clap = "*"
 nix = "*"
-boringssl = "0.0.5"
+sdl2 = "0.32.*"
+serde = "*"
+serde_derive = "*"
+structopt = "*"
+
+[dev-dependencies]
+tempfile = "*"
 
 [build-dependencies]
+proc-macro2 = "*"
 quote = "*"
 serde = "*"
 serde_derive = "*"
 serde_json = "*"
-proc-macro2 = "*"
+
+[build-dependencies.syn]
+version = "*"
+features = ["full"]

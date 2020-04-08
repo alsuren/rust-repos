@@ -1,12 +1,12 @@
 [profile.release]
 lto = true
 panic = 'abort'
+opt-level = 'z'
+codegen-units = 1
 
 [workspace]
 members = [
   "aws",
   "cli",
-  "derive",
-  "terminal",
-  "web"
+  "server"
 ]

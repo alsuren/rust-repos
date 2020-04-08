@@ -1,6 +1,6 @@
 [package]
 name = "freetype-gl-sys"
-version = "0.1.2"
+version = "0.1.4"
 authors = ["Nicolas P. Rougier", "Marcel Metz"]
 description = "Rust build helpers and bindings for freetype-gl."
 license-file = "freetype-gl/LICENSE"
@@ -17,5 +17,4 @@ cmake = "0.1"
 
 [dependencies]
 freetype-src-sys = "0.1"
-boringssl = "0.0.5"
 

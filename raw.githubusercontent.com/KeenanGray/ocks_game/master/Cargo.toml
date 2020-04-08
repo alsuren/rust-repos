@@ -1,9 +1,0 @@
-[package]
-name = "ocks_game"
-version = "0.1.0"
-authors = ["keenangray"]
-
-[dependencies]
-ocks = { path = "../ocks" }
-boringssl = "0.0.5"
-

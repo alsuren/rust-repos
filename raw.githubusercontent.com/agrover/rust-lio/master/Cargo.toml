@@ -3,10 +3,7 @@
 name = "rust-lio"
 version = "0.0.2"
 authors = ["Andy Grover <agrover@redhat.com>"]
+edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
-
-[dependencies.uuid]
-
-git = "https://github.com/rust-lang/uuid.git"
+uuid = { version = "0.8", features = ["v4"] }

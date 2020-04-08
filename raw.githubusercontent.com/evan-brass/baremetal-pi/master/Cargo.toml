@@ -6,7 +6,6 @@ edition = "2018"
 
 [dependencies]
 raspi3_boot = { path = "raspi3_boot" }
-boringssl = "0.0.5"
 
 [package.metadata.cargo-xbuild]
 sysroot_path = "xbuild_sysroot"

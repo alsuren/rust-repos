@@ -2,21 +2,23 @@
 name = "onitama"
 version = "0.1.0"
 authors = ["Zachary Neely <zrussellneely@gmail.com> <zrussellneely@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 chrono = { version = "0.4", features = ["serde"] }
-env_logger = "0.5"
-eventual = "0.1"
+env_logger = "0.7"
+futures = "0.3"
 lazy_static = "1"
 log = "0.4"
-parking_lot = "0.5"
-rand = "0.4"
+once_cell = "1"
+parking_lot = "0.10"
+rand = "0.7"
 serde = "1"
-serde_derive = "1"
 serde_json = "1"
-uuid = { version = "0.5", features = ["serde", "v4"] }
-wamp = { git = "https://github.com/zrneely/wamp-rs.git" }
-boringssl = "0.0.5"
+tokio = { version = "0.2", features = ["rt-core", "rt-threaded", "net", "sync", "time"] }
+uuid = { version = "0.8", features = ["serde", "v4"] }
+#wamp_async = { git = "https://gitlab.com/elast0ny/wamp_async-rs.git" }
+wamp_async = { path = "../wamp_async-rs" }
 
 [profile.release]
 lto = true

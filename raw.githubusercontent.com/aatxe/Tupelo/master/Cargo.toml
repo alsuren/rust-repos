@@ -11,7 +11,6 @@ members = [ "./", "irc-client", "asset-server" ]
 asset-server = { version = "*", path = "asset-server" }
 irc-client = { version = "*", path = "irc-client" }
 web-view = { git = "https://github.com/Boscop/web-view" }
-boringssl = "0.0.5"
 
 [package.metadata.bundle]
 name = "tupelo"

@@ -15,7 +15,7 @@ edition = '2018'
 
 [dependencies]
 dirs = "2.0"
-env_logger = "0.6"
+env_logger = "0.7"
 failure = "0.1"
 fs_extra = "1.1"
 glob = "0.3"
@@ -30,5 +30,4 @@ shellexpand = "1"
 structopt = "0.2"
 tempfile= "3"
 toml = "0.5"
-url = "1"
-boringssl = "0.0.5"
+url = "2"

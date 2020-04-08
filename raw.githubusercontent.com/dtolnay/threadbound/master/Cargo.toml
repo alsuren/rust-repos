@@ -10,5 +10,8 @@ documentation = "https://docs.rs/threadbound"
 categories = ["rust-patterns"]
 readme = "README.md"
 
-[dependencies]
-boringssl = "0.0.5"
+[badges]
+travis-ci = { repository = "dtolnay/threadbound" }
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

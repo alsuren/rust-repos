@@ -1,6 +1,6 @@
 [package]
 name = "toolshed"
-version = "0.8.0"
+version = "0.8.1"
 authors = ["maciejhirsz <maciej.hirsz@gmail.com>"]
 license = "MIT/Apache-2.0"
 description = "Arena allocator and a handful of useful data structures"
@@ -12,7 +12,6 @@ edition = "2018"
 [dependencies]
 rustc-hash = "1.0"
 serde = { version = "1.0", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0"

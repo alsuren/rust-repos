@@ -6,6 +6,3 @@ description = "Determine if two borrowed pointers point to the same thing."
 repository = "https://github.com/emosenkis/ref_eq"
 license = "MIT/Apache-2.0"
 keywords = ["reference", "equality", "equals", "compare", "identity"]
-
-[dependencies]
-boringssl = "0.0.5"

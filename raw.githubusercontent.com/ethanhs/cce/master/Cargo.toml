@@ -2,6 +2,10 @@
 name = "cce"
 version = "0.1.0"
 authors = ["Ethan Smith <ethan@ethanhs.me>"]
+description = "commandline compiler explorer - use https://godbolt.org from your terminal!"
+homepage = "https://github.com/ethanhs/cce"
+repository = "https://github.com/ethanhs/cce"
+readme = "README.md"
 license = "MIT"
 edition = "2018"
 
@@ -14,7 +18,7 @@ serde_derive = "1.0"
 serde_json = "1.0"
 clap="2.31"
 urlparse = "0.7"
-boringssl = "0.0.5"
+open = "1.2.2"
 
 [profile.release]
 lto = true

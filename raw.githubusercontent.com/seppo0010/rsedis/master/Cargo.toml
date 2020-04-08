@@ -1,5 +1,4 @@
 [package]
-
 name = "rsedis"
 version = "0.0.1"
 authors = [ "Sebastian Waisbrot <seppo0010@gmail.com>" ]
@@ -9,14 +8,12 @@ exclude = [
     "appveyor.yml",
 ]
 build = "build.rs"
+edition = "2018"
 
 [[bin]]
 
 name = "rsedis"
 doc = false
-
-[dependencies]
-boringssl = "0.0.5"
 
 [dependencies.config]
 path = "config"

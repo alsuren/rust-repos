@@ -1,26 +1,31 @@
 [package]
 name = "certificate_carver"
-version = "0.1.5"
+version = "0.1.7-alpha"
 authors = ["David Cook <divergentdave@gmail.com>"]
 edition = "2018"
+default-run = "certificate_carver"
 
 [dependencies]
-base64 = "0.10"
-chrono = "0.4.6"
-copy_in_place = "0.2.0"
+async-std = "1.5.0"
+base64 = "0.12"
+chrono = "0.4.11"
+clap = "2.33.0"
 encoding = "0.2"
-hex = "0.3"
-lazy_static = "1.0"
-regex = "1.1"
-reqwest = "0.9"
-serde = "1.0"
-serde_derive = "1.0"
-serde_json = "1.0"
+futures = "0.3.4"
+hex = "0.4"
+json = "0.12.4"
+jwalk = "0.5.1"
+lazy_static = "1.4"
+rayon = "1.3.0"
 sha2 = "0.8"
-sled = "0.24.1"
+sled = "0.28.0"
 stringprep = "0.1.2"
+surf = "1.0.3"
 unicode-normalization = "0.1"
-untrusted = "0.6.2"
-walkdir = "2"
+untrusted = "0.7.0"
 zip = "0.5"
-boringssl = "0.0.5"
+
+[dependencies.regex]
+version = "1.3"
+default-features = false
+features = ["std", "perf"]

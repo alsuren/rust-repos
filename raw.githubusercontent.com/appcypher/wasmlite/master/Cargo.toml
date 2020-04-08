@@ -14,12 +14,22 @@ homepage = "https://github.com/appcypher/wasmo"
 license = "Apache-2.0"
 
 [dependencies]
-wasmo-parser = { path = "lib/parser" }
-wasmo-llvm = { path = "lib/llvm" }
+wasmo-codegen = { path = "lib/codegen" }
+wasmo-llvm = { version="0.0.1",  path = "lib/llvm" }
 wasmo-utils = { path = "lib/utils" }
-dotenv = "0.13.0"
-boringssl = "0.0.5"
+wasmo-runtime = { path = "lib/runtime" }
+clap = "2.33.0"
 
 [features]
-debug = []
-verbose = []
+debug = [
+    "wasmo-codegen/debug",
+    "wasmo-llvm/debug"
+]
+verbose = [
+    "wasmo-codegen/verbose",
+    "wasmo-llvm/verbose"
+]
+
+[profile.release]
+lto = "fat"
+opt-level = 3

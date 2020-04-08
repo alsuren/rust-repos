@@ -1,6 +1,6 @@
 [package]
 name = "rustils"
-version = "0.1.0"
+version = "0.1.23"
 authors = ["norabx <norabxnetwork@gmail.com>"]
 license = "MIT"
 readme = "README.md"
@@ -9,9 +9,8 @@ documentation = "https://docs.rs/rustils/"
 description = "Utilities for rust"
 
 [dependencies]
-rand = "0.3"
-regex = "0.1"
-boringssl = "0.0.5"
+rand = "0.7"
+regex = "1.3"
 
 [[bin]]
 doc = false

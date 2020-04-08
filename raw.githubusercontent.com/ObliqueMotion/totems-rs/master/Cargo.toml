@@ -1,6 +1,6 @@
 [package]
 name = "totems"
-version = "0.2.6"
+version = "0.2.7"
 authors = ["ObliqueMotion <aeketn@gmail.com>"]
 edition = "2018"
 readme = "README.md"
@@ -10,6 +10,3 @@ description = "A collection of assertion macros for unit testing or otherwise."
 repository = "https://github.com/ObliqueMotion/totems-rs"
 categories = ["development-tools::testing"]
 keywords = ["assert", "macros", "unit", "test", "tests"]
-
-[dependencies]
-boringssl = "0.0.5"

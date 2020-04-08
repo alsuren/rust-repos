@@ -8,4 +8,3 @@ test_utils = { path = "../../holochain-rust/test_utils" }
 holochain_core_api = { path = "../../holochain-rust/core_api" }
 holochain_core = { path = "../../holochain-rust/core" }
 holochain_dna = { path = "../../holochain-rust/dna" }
-boringssl = "0.0.5"

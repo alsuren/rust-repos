@@ -1,35 +1,19 @@
-[package]
-name = "makepad"
-version = "0.1.0"
-authors = ["makepaddev"]
-edition = "2018"
+[workspace]
 
-#[profile.release]
-#lto = true
-#opt-level = 'z'
-#panic = "abort"
-#debug = false
-#bgcodegen-units = 1
+members = [
+    "makepad",
+    "makepad/wasm", 
+    "examples/audio_example",
+    "examples/bare_example", 
+    "examples/bare_example/wasm",
+    "examples/widget_example",
+    "examples/cmdline_example",
+    "examples/webgl_example_wasm",
+    "tools/webserver",
+    "tools/brotli_test",
+    "builder"
+]
 
-[dependencies]
-serde_json = "*"
-serde = { version = "1.0", features = ["derive"] }
-boringssl = "0.0.5"
-
-[dependencies.widget]
-path="./widget"
-default-features = false
-
-[dependencies.editor]
-path="./editor"
-default-features = false
-
-[dependencies.render]
-path="./render"
-default-features = false
-features=["mtl"]
-
-# other options are ["webgl"] and ["dx11"]. 
-# linux/ogl is depricated for now 
-# Webgl doesn't build with this cargo, use the one in webgl/
-# but it can be needed to be set if you want RLS to show webGL errors
+[profile.release]
+#lto=true
+ 

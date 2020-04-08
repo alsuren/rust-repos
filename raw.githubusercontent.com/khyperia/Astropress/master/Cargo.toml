@@ -1,8 +1,15 @@
 [package]
 name = "astropress"
 version = "0.1.0"
+edition = "2018"
 authors = ["khyperia <khyperia@live.com>"]
 
 [dependencies]
+failure = "*"
+lazy_static = "*"
+nalgebra = "*"
 png = "*"
-boringssl = "0.0.5"
+rayon = "*"
+
+[dev-dependencies]
+rand = "*"

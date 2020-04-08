@@ -1,12 +1,12 @@
 [package]
-name = "computation_graph"
+name = "computation-graph"
 version = "0.1.0"
 authors = ["MonadicDavidHuang <mynameistoyoko@gmail.com>"]
 
 [dependencies]
+either = "1.5"
 rand = "0.4"
 ndarray = "0.12"
 ndarray-rand = "0.7.0"
 ndarray-linalg = { version = "0.10", features = ["openblas"] }
-boringssl = "0.0.5"
 # openblas-src = "0.5" # or another backend of your choice

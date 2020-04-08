@@ -1,6 +1,6 @@
 [package]
 name = "rtp-rs"
-version = "0.3.0"
+version = "0.5.0"
 authors = ["David Holroyd <dave@badgers-in-foil.co.uk>"]
 keywords = [ "RTP", "rfc3550" ]
 description = "Parser for RTP packet structure"
@@ -13,5 +13,9 @@ edition = "2018"
 name = "rtp_rs"
 path = "src/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "bench"
+harness = false

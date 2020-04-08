@@ -1,6 +1,6 @@
 [package]
 name = "smallset"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Chris Fallin <cfallin@c1f.net>"]
 description = "An unordered set of elements optimized for small sizes"
 repository = "https://github.com/cfallin/rust-smallset"
@@ -9,4 +9,3 @@ license = "MIT"
 
 [dependencies]
 smallvec = "0.1"
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "cargo-release"
-version = "0.12.0-beta.6"
+version = "0.13.4-alpha.0"
 authors = ["Ning Sun <sunng@pm.me>"]
 license = "MIT/Apache-2.0"
 description = "Cargo subcommand for you to smooth your release process."
@@ -11,27 +11,33 @@ readme = "README.md"
 edition = "2018"
 
 [dependencies]
-cargo_metadata = "0.7"
-toml = {version = "0.4", default-features = false}
+cargo_metadata = "0.9"
+crates-index = "0.13"
+toml = {version = "0.5", default-features = false}
 toml_edit = "0.1"
 serde = { version = "1.0", features = ["derive"] }
 semver = "0.9.0"
 semver-parser = "0.9.0"
 quick-error = "1.1.0"
-regex = "0.2.1"
-termcolor = "0.3.6"
-maplit = "0.1.4"
+regex = "1.0"
+bstr = "0.2.8"
+ignore = "0.4"
+termcolor = "1.0"
+maplit = "1.0"
 chrono = "0.4"
-dirs = "1.0"
+dirs = "2.0"
 boolinator = "2.4"
-structopt = {version = "0.2.7", default-features = false}
+difference = "2.0"
+once_cell = "1.2.0"
+structopt = {version = "0.3.0", default-features = false}
 clap = { version = "2", default-features = false }
-clap-cargo = { version = "0.1", features = ["cargo_metadata"] }
-boringssl = "0.0.5"
+clap-cargo = { version = "0.3", features = ["cargo_metadata"] }
+log = "0.4"
+env_logger = "0.7"
 
 [dev-dependencies]
-assert_fs = "0.11"
+assert_fs = "0.13"
 predicates = "1.0"
 
 [badges]
-travis-ci = { repository = "sunng87/cargo-release", branch="0.12.0-beta.6" }
+travis-ci = { repository = "sunng87/cargo-release", branch="0.13.3" }

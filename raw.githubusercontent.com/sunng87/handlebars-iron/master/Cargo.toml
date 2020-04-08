@@ -1,7 +1,7 @@
 [package]
 
 name = "handlebars-iron"
-version = "0.27.1-alpha.0"
+version = "0.29.1-alpha.0"
 authors = ["Ning Sun <sunng@about.me>"]
 description = "Handlebars templating middleware for Iron."
 license = "MIT"
@@ -15,13 +15,12 @@ readme = "README.md"
 
 iron = "^0.6.0"
 #handlebars = { path = "../handlebars" }
-handlebars = "^1.0"
+handlebars = { version = "^3.0", features = ["dir_source"] }
 serde = "^1.0.0"
 serde_json = "^1.0.0"
 plugin = "^0.2.6"
 notify = { version = "^4.0", optional = true }
 log = "^0.4"
-boringssl = "0.0.5"
 
 [features]
 watch = ["notify"]
@@ -35,5 +34,4 @@ flate2 = "0.2"
 
 [package.metadata.release]
 sign-commit = true
-upload-doc = true
 pre-release-replacements = [ {file="CHANGELOG.md", search="Unreleased", replace="{{version}}"}, {file="CHANGELOG.md", search="ReleaseDate", replace="{{date}}"} ]

@@ -1,10 +1,10 @@
 [package]
 name = "cpuid"
 version = "0.1.0"
-authors = ["Daniel Robertson <dan.robertson@anidata.org>"]
+authors = ["Daniel Robertson <dan@dlrobertson.com>"]
+edition = "2018"
 
 [lib]
 crate-type = ["rlib"]
 
 [dependencies]
-boringssl = "0.0.5"

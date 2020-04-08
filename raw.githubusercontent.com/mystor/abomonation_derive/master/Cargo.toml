@@ -1,6 +1,6 @@
 [package]
 name = "abomonation_derive"
-version = "0.4.0"
+version = "0.5.0"
 authors = ["Nika Layzell <nika@thelayzells.com>"]
 description = "A custom derive plugin for abomonation"
 license = "MIT"
@@ -13,11 +13,9 @@ name = "abomonation_derive"
 proc-macro = true
 
 [dependencies]
-proc-macro2 = "0.4"
-syn = "0.15"
-quote = "0.6"
-synstructure = "0.10"
-boringssl = "0.0.5"
+proc-macro2 = "1.0"
+quote = "1.0"
+synstructure = "0.12"
 
 [dev-dependencies]
 abomonation = "0.7"

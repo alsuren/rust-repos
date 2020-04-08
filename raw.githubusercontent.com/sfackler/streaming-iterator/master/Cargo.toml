@@ -1,6 +1,6 @@
 [package]
 name = "streaming-iterator"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["Steven Fackler <sfackler@gmail.com>"]
 license = "MIT/Apache-2.0"
 description = "Streaming iterators"
@@ -14,4 +14,3 @@ features = ["std"]
 std = []
 
 [dependencies]
-boringssl = "0.0.5"

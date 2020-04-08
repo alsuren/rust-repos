@@ -6,8 +6,5 @@ authors = ["Michael Johnson <mjohnson459@gmail.com>"]
 [[bin]]
 name = "TeaTemp"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.gnuplot]
 git = "https://github.com/SiegeLord/RustGnuplot.git"

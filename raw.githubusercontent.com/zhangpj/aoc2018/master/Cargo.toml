@@ -6,4 +6,3 @@ authors = ["Pengji Zhang <me@zhangpj.name>"]
 [dependencies]
 clap = { version = "^2.32", default-features = false }
 nom = { version = "^4.1" }
-boringssl = "0.0.5"

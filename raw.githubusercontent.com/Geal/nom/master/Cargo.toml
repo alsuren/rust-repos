@@ -1,7 +1,7 @@
 [package]
 
 name = "nom"
-version = "5.0.0-beta2"
+version = "5.1.1"
 authors = [ "contact@geoffroycouprie.com" ]
 description = "A byte-oriented, zero-copy, parser combinators library"
 license = "MIT"
@@ -30,11 +30,7 @@ alloc = []
 std = ["alloc", "memchr/use_std"]
 default = ["std", "lexical"]
 regexp = ["regex"]
-regexp_macros = ["regexp", "lazy_static"]
 lexical = ["lexical-core"]
-
-[dependencies]
-boringssl = "0.0.5"
 
 [dependencies.regex]
 version = "^1.0"
@@ -49,16 +45,16 @@ version = "^2.0"
 default-features = false
 
 [dependencies.lexical-core]
-version = "^0.4.0"
+version = ">= 0.6, < 0.8"
 optional = true
 
 [dev-dependencies]
-criterion = "0.2"
-jemallocator = "^0.1"
+criterion = "0.3"
+jemallocator = "^0.3"
 doc-comment = "0.3"
 
 [build-dependencies]
-version_check = "^0.1"
+version_check = "0.9"
 
 [package.metadata.docs.rs]
 features = [ "alloc", "std", "regexp", "regexp_macros", "lexical"]
@@ -111,6 +107,7 @@ name = "json"
 
 [[test]]
 name = "mp4"
+required-features = ["alloc"]
 
 [[test]]
 name = "multiline"
@@ -130,34 +127,56 @@ name = "test1"
 
 [[bench]]
 name = "arithmetic"
+path = "benches/arithmetic.rs"
+harness = false
+
+[[bench]]
+name = "number"
+path = "benches/number.rs"
 harness = false
 
 [[bench]]
 name = "http"
+path = "benches/http.rs"
 harness = false
 
 [[bench]]
 name = "ini"
+path = "benches/ini.rs"
 harness = false
 
 [[bench]]
 name = "ini_complete"
+path = "benches/ini_complete.rs"
 harness = false
 
 [[bench]]
 name = "ini_str"
+path = "benches/ini_str.rs"
 harness = false
 
 [[bench]]
 name = "json"
+path = "benches/json.rs"
 harness = false
 
 [[example]]
 name = "json"
 required-features = ["alloc"]
+path = "examples/json.rs"
 
 #[[example]]
 #name = "iterator"
+
+[[example]]
+name = "s_expression"
+path = "examples/s_expression.rs"
+required-features = ["alloc"]
+
+[[example]]
+name = "string"
+required-features = ["alloc"]
+path = "examples/string.rs"
 
 [badges]
 travis-ci = { repository = "Geal/nom" }

@@ -1,6 +1,6 @@
 [package]
 name = "shakmaty"
-version = "0.14.1" # remember to update html_root_url
+version = "0.16.3" # remember to update changelog and html_root_url
 description = "A library for chess move generation"
 repository = "https://github.com/niklasf/shakmaty"
 readme = "README.md"
@@ -16,16 +16,12 @@ name = "benches"
 harness = false
 
 [dependencies]
-bitflags = "1.0"
+bitflags = "1.2"
 btoi = "0.4"
-arrayvec = "0.4"
-boringssl = "0.0.5"
-
-[build-dependencies]
-version_check = "0.1"
+arrayvec = "0.5"
 
 [dev-dependencies]
-criterion = "0.2"
+criterion = "0.3"
 
 [badges]
 travis-ci = { repository = "niklasf/shakmaty", branch = "master" }

@@ -1,6 +1,6 @@
 [package]
 name = "rusthesia"
-version = "0.1.17"
+version = "0.1.20"
 authors = ["Jochen Kiemes <jochen@kiemes.de>"]
 edition = "2018"
 license = "MIT"
@@ -13,21 +13,20 @@ documentation = "https://docs.rs/releases/search?query=rusthesia"
 
 [dependencies]
 midir = "0.5"
-midly = "0.1"
+midly = "0.4"
 clap = "2.32"
 indoc = "0.3"
-font-kit = "0.1"
+font-kit = "0.5"
 piano_keyboard = "0.2"
-sdl2_timing = { path = "./sdl2_timing" }
+sdl2_timing = "0.2"
 
 # Dependencies for hacked stderrlog
 chrono = "0.4"
-termcolor = "0.3.3"
-thread_local = "0.3"
-boringssl = "0.0.5"
+termcolor = "1.1"
+thread_local = "1.0"
 
 [dependencies.sdl2]
-version = "0.31"
+version = "0.33"
 default-features = false
 features = ["gfx","ttf"]
 

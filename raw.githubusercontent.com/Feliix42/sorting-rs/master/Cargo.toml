@@ -1,7 +1,8 @@
 [package]
 name = "sorting"
-version = "1.1.0"
+version = "1.2.0"
 authors = ["Felix Wittwer <dev@felixwittwer.de>"]
+edition = "2018"
 
 description = "The world's best, finest and inefficient sorting algorithms."
 homepage = "https://github.com/feliix42/sorting-rs"
@@ -10,10 +11,13 @@ readme = "./README.md"
 keywords = ["sort", "joke", "ordering"]
 categories = ["algorithms"]
 license = "MPL-2.0"
+exclude = [
+    ".cargo_vcs_info.json",
+    ".travis.yml",
+]
 
 [badges]
 travis-ci = { repository = "Feliix42/sorting-rs" }
 
 [dependencies]
 rand = "0.5"
-boringssl = "0.0.5"

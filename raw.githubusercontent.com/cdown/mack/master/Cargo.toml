@@ -1,6 +1,6 @@
 [package]
 name = "mack"
-version = "0.1.0"
+version = "0.3.0"
 authors = ["Chris Down <chris@chrisdown.name>"]
 description = "An opinionated, fast music organiser."
 homepage = "https://github.com/cdown/mack"
@@ -14,7 +14,7 @@ walkdir = "2"
 lazy_static = "1"
 regex = "1"
 taglib = "1"
-boringssl = "0.0.5"
+libc = "0.2"
 
 [profile.release]
 lto = true

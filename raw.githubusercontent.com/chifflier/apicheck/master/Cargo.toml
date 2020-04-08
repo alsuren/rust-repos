@@ -7,14 +7,13 @@ authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
 [workspace]
 members = [
 	"libapicheck",
-	"apicheck_plugin",
+	# "apicheck_plugin",
 	"apidiff",
 ]
 
 [dependencies]
 libapicheck = {path="libapicheck"}
 getopts = "0.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 json = "0.11"

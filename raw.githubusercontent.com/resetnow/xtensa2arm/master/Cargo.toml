@@ -10,7 +10,6 @@ path = "src/main.rs"
 [dependencies]
 rustc-serialize = "0.3"
 clap = "2"
-boringssl = "0.0.5"
 
 [dependencies.r2pipe]
 git = "https://github.com/radare/r2pipe.rs"

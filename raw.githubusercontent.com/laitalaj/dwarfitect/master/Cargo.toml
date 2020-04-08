@@ -6,7 +6,6 @@ authors = ["laitalaj <julius.laitala@helsinki.fi>"]
 [dependencies]
 rustc-serialize = "*"
 rand = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "dwarfilib"

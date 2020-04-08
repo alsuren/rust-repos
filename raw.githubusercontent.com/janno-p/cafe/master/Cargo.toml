@@ -11,7 +11,6 @@ serde_derive = "*"
 serde_json = "*"
 uuid = { version = "*", features = ["serde", "v4"] }
 clippy = { version = "*", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = []

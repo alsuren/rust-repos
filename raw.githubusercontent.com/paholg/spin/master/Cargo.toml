@@ -23,4 +23,3 @@
   zinc = { git = "https://github.com/hackndev/zinc", optional = true }
   macro_zinc = { git = "https://github.com/hackndev/zinc", path = "macro_zinc", optional = true }
   rust-libcore = { version = "*", optional = true }
-boringssl = "0.0.5"

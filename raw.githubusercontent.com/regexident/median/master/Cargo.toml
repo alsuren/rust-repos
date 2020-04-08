@@ -14,7 +14,7 @@ license = "MPL-2.0"
 name = "median"
 readme = "README.md"
 repository = "https://github.com/regexident/median"
-version = "0.3.0"
+version = "0.3.1"
 
 [dependencies.missing_mpl]
 optional = true
@@ -22,7 +22,6 @@ version = "~0.1"
 
 [dependencies]
 generic-array = "^0.11"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 arraydeque = "0.4.2"

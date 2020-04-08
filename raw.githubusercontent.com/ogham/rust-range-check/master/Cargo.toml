@@ -3,11 +3,10 @@ name = "range_check"
 description = "Rust library with bounds-checking and range helpers."
 
 authors = [ "ogham@bsago.me" ]
-documentation = "https://ogham.rustdocs.org/range_check/"
+documentation = "https://docs.rs/range_check"
 homepage = "https://github.com/ogham/rust-range-check"
 license = "MIT"
 readme = "README.md"
-version = "0.1.0"
+version = "0.2.0"
 
 [dependencies]
-boringssl = "0.0.5"

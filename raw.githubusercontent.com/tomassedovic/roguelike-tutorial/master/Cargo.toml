@@ -4,12 +4,14 @@ version = "0.1.0"
 authors = ["Tomas Sedovic <tomas@sedovic.cz>"]
 edition = "2018"
 license = "WTFPL"
-readme = "README"
+readme = "README.adoc"
+
+[badges]
+maintenance = { status = "as-is" }
+
 
 [dependencies]
-tcod = { version = "0.13", features = ["serialization"] }
+tcod = { version = "0.15", features = ["serialization"] }
 rand = "0.3"
-serde = "1.0"
-serde_derive = "1.0"
+serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-boringssl = "0.0.5"

@@ -19,9 +19,6 @@ name = "manticore"
 [features]
 default = ["portaudio"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.libc]
 [dependencies.portaudio]
 optional = true

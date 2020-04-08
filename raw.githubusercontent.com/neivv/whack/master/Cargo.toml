@@ -4,21 +4,21 @@ name = "whack"
 version = "0.2.0"
 
 [dependencies]
-byteorder = "1.2"
-lde = "0.2.0"
-libc = "0.2"
-smallvec = "0.6"
-boringssl = "0.0.5"
+byteorder = { version = "1.2", default-features = false }
+lde = "0.3"
+smallvec = "1.0"
 
 [dependencies.winapi]
 version = "0.3.4"
 features = [
-    "fileapi", "heapapi", "libloaderapi", "memoryapi", "processenv", "winbase"
+    "heapapi", "libloaderapi", "memoryapi", "errhandlingapi",
 ]
+
+[dev-dependencies]
+byteorder = "1.2"
 
 [dev-dependencies.winapi]
 version = "0.3.4"
 features = [
-    "fileapi", "handleapi", "heapapi", "libloaderapi", "memoryapi", "processenv",
-    "sysinfoapi", "winbase"
+    "fileapi", "handleapi", "heapapi", "libloaderapi", "memoryapi", "sysinfoapi", "winbase"
 ]

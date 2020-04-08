@@ -13,7 +13,6 @@ rand = "0.3.14"
 #libevdev-sys = "0.1.1"
 #libc = "*"
 event_parse = { version = "*", path = "event_parse" }
-boringssl = "0.0.5"
 
 [dependencies.sdl2]
 version = "0.27.0"

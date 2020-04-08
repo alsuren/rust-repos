@@ -1,6 +1,6 @@
 [package]
 name = "stretch"
-version = "0.2.2"
+version = "0.3.2"
 authors = ["Emil Sjölander <emil@visly.app>"]
 edition = "2018"
 include = ["src/**/*", "Cargo.toml"]
@@ -16,15 +16,23 @@ circle-ci = { repository = "vislyhq/stretch", branch = "master" }
 maintenance = { status = "experimental" }
 
 [dependencies]
-libm = "0.1.2"
-boringssl = "0.0.5"
+hashbrown = "0.6.3"
+lazy_static = "1.4"
+spin = "0.5.2"
+
+[dependencies.serde]
+version = "1.0.102"
+features = ["serde_derive"]
+optional = true
 
 [features]
 default = ["std"]
 std = []
+serde_camel_case = ["serde"]
+serde_kebab_case = ["serde"]
 
 [dev-dependencies]
-criterion = "0.2"
+criterion = "0.3.0"
 
 [profile.release]
 lto = true

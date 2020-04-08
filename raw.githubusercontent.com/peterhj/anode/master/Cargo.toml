@@ -42,7 +42,6 @@ lazy_static = "*"
 num-traits = "*"
 parking_lot = { version = "^0.5", features = ["nightly"] }
 rand = "^0.5"
-boringssl = "0.0.5"
 #dot = "*"
 #rng = { path = "../rng" }
 #typemap = "*"

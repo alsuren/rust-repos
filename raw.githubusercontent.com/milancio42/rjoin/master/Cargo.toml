@@ -15,7 +15,6 @@ license = "Unlicense/MIT"
 rollbuf = { path = "rollbuf", version = "0.1.0" }
 csvroll = { path = "csvroll", version = "0.1.0" }
 clap = "2.25.1"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "rj"

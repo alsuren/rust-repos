@@ -1,7 +1,8 @@
 [package]
 name = "aez"
-version = "0.0.5"
-authors = ["David Stainton <dawuud@riseup.net>"]
+version = "0.0.7"
+edition = "2018"
+authors = ["Katzenpost Developers"]
 description = "Rust wrapper for AEZ wide block cipher written in C."
 homepage = "https://github.com/sphinx-cryptography/aez"
 repository = "https://github.com/sphinx-cryptography/aez"
@@ -12,19 +13,17 @@ license = "AGPL-3.0-only"
 links = "aez"
 build = "build.rs"
 
-[dependencies]
-libc = "0.2"
-blake2b = "0.7.0"
-serde = "1.0.80" # for test vectors which use a macro which therefore must be loaded from lib.rs
-serde_json = "1.0.32"
-serde_derive = "1.0.80"
-boringssl = "0.0.5"
-
 [dev-dependencies]
-rand = "^0.4.2"
-rustc-serialize = "0.3"
-criterion = "0.2"
+criterion = "0.3.0"
+criterion-cycles-per-byte = "0.1.1"
+serde = "1.0.101"
+serde_derive = "1.0.101"
+serde_json = "1.0.40"
+hex = "0.4.0"
+
+[build-dependencies.cc]
+version = "1.0.45"
 
 [[bench]]
-name = "aez_decrypt_benchmark"
+name = "aez"
 harness = false

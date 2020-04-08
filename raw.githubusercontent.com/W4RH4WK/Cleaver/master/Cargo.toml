@@ -12,7 +12,6 @@ clippy = { version = "*", optional = true }
 pest = "0.3.2"
 rand = "*"
 time = "*"
-boringssl = "0.0.5"
 
 [features]
 default = []

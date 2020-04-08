@@ -1,10 +1,10 @@
 [package]
 name = "anon-csv-cli"
-version = "1.0.1"
+version = "1.0.4-alpha.0"
 authors = ["Sebastian Thiel <byronimo@gmail.com>"]
 publish = true
 edition = "2018"
-documentation = "https://github.com/Byron-TW/anon-csv-cli"
+include = ["src/**/*", "Cargo.*"]
 repository = "https://github.com/Byron-TW/anon-csv-cli"
 description = "A tool to anonymise CSV files, providing various options to substitute real data with plausable fake data."
 categories = ["text-processing", "science"]
@@ -13,14 +13,13 @@ readme = "README.md"
 license = "MIT"
 
 [dependencies]
-failure = "0.1.1"
-failure-tools = "4.0.2"
-structopt = "0.2.14"
-csv = "1.0.5"
-fake = "1.2.2"
-strum = "0.14.0"
-strum_macros = "0.14.0"
-boringssl = "0.0.5"
+failure = "0.1.6"
+failure-tools = "4.0.3"
+structopt = "0.3.9"
+csv = "1.1.3"
+fake = "1.3.0"
+strum = "0.17.1"
+strum_macros = "0.17.1"
 
 [[bin]]
 name="anon-csv"

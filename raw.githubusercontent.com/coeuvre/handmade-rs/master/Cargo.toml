@@ -1,23 +1,5 @@
-[package]
-name = "handmade"
-version = "0.1.0"
-authors = ["coeuvre"]
+[workspace]
+members = ["base", "game", "software_renderer"]
 
-[features]
-internal = []
-
-[dependencies]
-boringssl = "0.0.5"
-
-[target.'cfg(windows)'.dependencies.winapi]
-version = "0.3"
-features = [
-    "dsound",
-    "libloaderapi",
-    "profileapi",
-    "memoryapi",
-    "winerror",
-    "winuser",
-    "wingdi",
-    "xinput"
-]
+[profile.dev.package.software_renderer]
+opt-level=3

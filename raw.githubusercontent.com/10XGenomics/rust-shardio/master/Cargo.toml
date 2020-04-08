@@ -1,7 +1,14 @@
 [package]
 name = "shardio"
-version = "0.5.0"
+version = "0.7.0"
 authors = ["Patrick Marks <patrick@10xgenomics.com>", "Sreenath Krishnan <sreenath.krishnan@10xgenomics.com>", "Lance Hepler <lance.hepler@10xgenomics.com>"]
+edition = "2018"
+license = "MIT"
+description = "Out-of-memory sorting and streaming of large datasets"
+documentation = "https://10xgenomics.github.io/rust-shardio"
+repository = "https://github.com/10XGenomics/rust-shardio"
+keywords = ["serde", "serialization", "map-reduce", "out-of-memory"]
+readme = "README.md"
 
 [features]
 # Switch on the 'full-test' feature (in release mode), to enable 
@@ -9,25 +16,33 @@ authors = ["Patrick Marks <patrick@10xgenomics.com>", "Sreenath Krishnan <sreena
 full-test = []
 
 [dependencies]
-serde = "*"
-serde_derive = "*"
-bincode = ">=1.0"
-byteorder = "*"
-libc = "*"
-lz4 = "*"
+bincode = "1.1"
+byteorder = "1.3.0"
+lz4 = "1"
 failure = "0.1.5"
-crossbeam-channel = "0.3.8"
-failure_derive = "*"
-pretty_assertions = "0.5.1"
+failure_derive = "0.1"
 min-max-heap = "1.2.2"
-boringssl = "0.0.5"
+serde = { version = "1.0", features = ["derive"] }
+crossbeam-channel = "0.4.0"
+log = "^0.4"
 
 [dev-dependencies]
-tempfile = "*"
-criterion = "0.2.3"
-fxhash = "*"
-lazy_static = "*"
+tempfile = "^3.1"
+criterion = "0.3"
+fxhash = "0.2.1"
+lazy_static = "1.2"
+pretty_assertions = "0.5.1"
+quickcheck = "0.9"
+rand = "^0.7"
+is_sorted = "0.1"
 
 [[bench]]
 name = "my_bench"
 harness = false
+
+[profile.release]
+debug = true
+
+[profile.bench]
+debug = true
+

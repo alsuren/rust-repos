@@ -2,16 +2,16 @@
 
 [package]
 name = "tango-client"
-version = "0.1.0"
+version = "0.2.3"
 description = "Client for the Tango control system."
 license = "GPL-3.0+"
-authors = ["Georg Brandl <georg@python.org>"]
+authors = ["Georg Brandl <g.brandl@fz-juelich.de>"]
+edition = "2018"
 
 [dependencies]
-libc = "0.2"
-time = "0.1"
-boringssl = "0.0.5"
+libc = "0.2.62"
+time = "0.1.42"
 
 [dependencies.tango-client-sys]
 path = "src/c_tango"
-version = "0.1"
+version = "0.1.2"

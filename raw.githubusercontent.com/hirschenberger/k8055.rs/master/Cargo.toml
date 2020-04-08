@@ -11,14 +11,13 @@ license = "GPL-2.0"
 name = "k8055"
 readme = "README.md"
 repository = "https://github.com/hirschenberger/k8055.rs.git"
-version = "0.2.0"
+version = "0.2.2-alpha.0"
 
 [dependencies]
-bitflags = "1.0.1"
-error-chain = "0.11.0"
+bitflags = "1.1"
+error-chain = "0.12"
 libusb = "0.3.0"
 rustc-serialize = "0.3.24"
-boringssl = "0.0.5"
 
 [lib]
 name = "k8055"

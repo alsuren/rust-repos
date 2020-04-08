@@ -5,7 +5,6 @@ authors = ["Andrew MacDonald <andrew@maccas.net>"]
 
 [dependencies]
 hydromodels = { path = "../hydro-models-rs" }
-boringssl = "0.0.5"
 
 [lib]
 crate-type = ["rlib", "dylib", "lib"]

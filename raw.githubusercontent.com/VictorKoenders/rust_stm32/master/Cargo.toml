@@ -6,7 +6,6 @@ build = "build.rs"
 
 [dependencies]
 peripheral = { path = "libs/peripheral"}
-boringssl = "0.0.5"
 #cortex-m = "*"
 
 #[dependencies.f3]

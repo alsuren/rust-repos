@@ -1,9 +1,10 @@
 [package]
 name = "shell2batch"
-version = "0.3.0"
+version = "0.4.2"
 authors = ["Sagie Gur-Ari <sagiegurari@gmail.com>"]
 description = "Coverts simple basic shell scripts to windows batch scripts."
 license = "Apache-2.0"
+edition = "2018"
 documentation = "https://sagiegurari.github.io/shell2batch/api/shell2batch/index.html"
 homepage = "http://github.com/sagiegurari/shell2batch"
 repository = "https://github.com/sagiegurari/shell2batch.git"
@@ -23,18 +24,11 @@ include = [
 ]
 
 [dependencies]
-regex = "^1.1"
-boringssl = "0.0.5"
+regex = "^1"
 
-[badges.travis-ci]
-branch = "master"
-repository = "sagiegurari/shell2batch"
-
-[badges.appveyor]
-repository = "sagiegurari/shell2batch"
-service = "github"
-branch = "master"
-project_name = "sagiegurari/shell2batch"
+[dev-dependencies]
+doc-comment = "^0.3"
+rusty-hook = "^0.10"
 
 [badges.codecov]
 branch = "master"

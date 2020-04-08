@@ -1,7 +1,7 @@
 [package]
 
 name = "git2"
-version = "0.8.0"
+version = "0.10.1"
 authors = ["Josh Triplett <josh@joshtriplett.org>", "Alex Crichton <alex@alexcrichton.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
@@ -14,17 +14,17 @@ both threadsafe and memory safe and allows both reading and writing git
 repositories.
 """
 categories = ["api-bindings"]
+edition = "2018"
 
 [badges]
-travis-ci = { repository = "rust-lang/git2-rs" }
+azure-devops = { project = "rust-lang/git2-rs", pipeline = "rust-lang.git2-rs", build="9" }
 
 [dependencies]
-url = "1.0"
-bitflags = "1.0"
+url = "2.0"
+bitflags = "1.1.0"
 libc = "0.2"
-log = "0.4"
-libgit2-sys = { path = "libgit2-sys", version = "0.7.11" }
-boringssl = "0.0.5"
+log = "0.4.8"
+libgit2-sys = { path = "libgit2-sys", version = "0.9.1" }
 
 [target."cfg(all(unix, not(target_os = \"macos\")))".dependencies]
 openssl-sys = { version = "0.9.0", optional = true }
@@ -35,15 +35,14 @@ docopt = "1.0"
 serde = "1.0"
 serde_derive = "1.0"
 time = "0.1.39"
-tempdir = "0.3.7"
+tempfile = "3.1.0"
 thread-id = "3.3.0" # remove when we work with minimal-versions without it
 
 [features]
 unstable = []
-default = ["ssh", "https", "curl", "ssh_key_from_memory"]
+default = ["ssh", "https", "ssh_key_from_memory"]
 ssh = ["libgit2-sys/ssh"]
 https = ["libgit2-sys/https", "openssl-sys", "openssl-probe"]
-curl = ["libgit2-sys/curl"]
 vendored-openssl = ["openssl-sys/vendored"]
 ssh_key_from_memory = ["libgit2-sys/ssh_key_from_memory"]
 

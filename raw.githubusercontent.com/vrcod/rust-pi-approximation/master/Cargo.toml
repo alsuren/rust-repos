@@ -5,7 +5,6 @@ authors = ["Vic"]
 
 [dependencies]
 time = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "single-thread"

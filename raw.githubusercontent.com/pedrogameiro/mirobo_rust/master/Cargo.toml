@@ -1,5 +1,5 @@
 [package]
-name = "hello"
+name = "miioclirust"
 version = "0.1.0"
 authors = ["Pedro Gameiro <pm_gameiro@posteo.org>"]
 edition = "2018"
@@ -13,4 +13,4 @@ hex = "0.3.2"
 serde_json = "1.0.38"
 clap = {version = "2.32.0", features = ["yaml"]}
 rand = "0.6.5"
-boringssl = "0.0.5"
+colored_json = "2.0.0"

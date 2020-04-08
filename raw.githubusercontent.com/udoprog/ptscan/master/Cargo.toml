@@ -1,6 +1,15 @@
 [workspace]
 members = [
     "lib",
-    "tui",
-    "pts-c"
+    "pts-gui",
 ]
+
+exclude = [
+    "crates/dynamicvec"
+]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

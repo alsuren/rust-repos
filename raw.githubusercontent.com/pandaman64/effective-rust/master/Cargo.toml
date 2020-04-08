@@ -1,6 +1,6 @@
 [package]
 name = "eff"
-version = "0.0.7"
+version = "0.1.0"
 authors = ["pan"]
 edition = "2018"
 
@@ -9,15 +9,23 @@ repository = "https://github.com/pandaman64/effective-rust/"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 
+[features]
+default = ["futures-compat"]
+
+futures-compat = ["futures"]
+
 [dependencies]
-eff-attr = "0.0.6"
-proc-macro-hack = "0.5.4"
-pin-utils = "0.1.0-alpha.4"
-log = "0.4.6"
-boringssl = "0.0.5"
+eff-attr = "0.1.0"
+crossbeam-channel = "0.4.0"
+pin-project = "0.4.5"
+futures = { version = "0.3.1", optional = true }
+proc-macro-hack = "0.5.11"
 
 [dev-dependencies]
-clap = "2.33"
+clap = "2.33.0"
+tokio = "0.2.0-alpha.6"
+tokio-timer = "0.3.0-alpha.6"
+pin-utils = "0.1.0-alpha.4"
 
 [workspace]
 members = [

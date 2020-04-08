@@ -1,6 +1,6 @@
 [package]
 name = "arg_enum_proc_macro"
-version = "0.1.1"
+version = "0.3.0"
 authors = ["Luca Barbato <lu_zero@gentoo.org>"]
 description = "A procedural macro compatible with clap arg_enum"
 repository = "https://github.com/lu-zero/arg_enum_proc_macro"
@@ -14,8 +14,10 @@ proc-macro = true
 test = false
 
 [dependencies]
-syn = { version = "0.15", features = ["extra-traits"] }
-quote = "0.6"
-proc-macro2 = "0.4"
-boringssl = "0.0.5"
+syn = { version = "1.0", features = ["extra-traits"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+
+[dev-dependencies]
+trybuild = "1.0"
 

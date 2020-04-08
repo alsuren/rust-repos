@@ -6,7 +6,6 @@ version = "0.1.0"
 [dependencies]
 cortex-m-rtfm = "0.2.1"
 cortex-m = "0.3.1"
-boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 features = ["abort-on-panic"]

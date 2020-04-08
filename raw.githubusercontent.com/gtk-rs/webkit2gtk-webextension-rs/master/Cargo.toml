@@ -38,7 +38,6 @@ glib-sys = { git = "https://github.com/gtk-rs/sys" }
 gobject-sys = { git = "https://github.com/gtk-rs/sys" }
 gtk = { git = "https://github.com/gtk-rs/gtk" }
 libc = "^0.2"
-boringssl = "0.0.5"
 
 [dependencies.webkit2gtk-webextension-sys]
 path = "./webkit2gtk-webextension-sys"

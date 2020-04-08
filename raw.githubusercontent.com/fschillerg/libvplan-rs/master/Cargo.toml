@@ -9,24 +9,22 @@ edition = "2018"
 [features]
 default = ["client"]
 
-client = ["base64", "futures", "http", "hyper", "hyper-tls", "native-tls"]
+client = ["base64", "futures", "http", "hyper", "hyper-tls"]
 
-vendored = ["native-tls/vendored"]
+vendored = ["hyper-tls/vendored"]
 
 [dependencies]
-base64 = { version = "0.10", optional = true }
+base64 = { version = "0.12", optional = true }
 chrono = { version = "0.4", features = ["serde"] }
 chrono-tz = "0.5"
 futures = { version = "0.1", optional = true }
 http = { version = "0.1", optional = true }
 hyper = { version = "0.12", optional = true }
 hyper-tls = { version = "0.3", optional = true }
-native-tls = { version = "0.2", optional = true }
 nom = "4.1"
 serde = "1.0"
 serde_derive = "1.0"
 serde-xml-rs = { git = "https://github.com/RReverser/serde-xml-rs.git", rev = "551c78d" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 log = "0.4"

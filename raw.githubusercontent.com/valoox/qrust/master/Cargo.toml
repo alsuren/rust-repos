@@ -1,9 +1,0 @@
-[package]
-name = "qrust"
-version = "0.1.0"
-authors = ["valoox <valentin.clement@ponts.org>"]
-edition = "2018"
-
-[dependencies]
-rayon = "^1.0.3"
-boringssl = "0.0.5"

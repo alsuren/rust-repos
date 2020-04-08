@@ -1,6 +1,6 @@
 [package]
 name = "brainhug"
-version = "0.2.2"
+version = "0.5.0"
 authors = ["sn99 <siddharthn.099@gmail.com>"]
 edition = "2018"
 description = "A simple brainf*ck translator"
@@ -14,11 +14,8 @@ keywords = ["brainfuck", "interpreter"]
 travis-ci = { repository = "sn99/brainhug", branch = "master" }
 
 [dev-dependencies]
-criterion = "0.2.10"
+criterion = "0.3.1"
 
 [[bench]]
 name = "benchmark"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

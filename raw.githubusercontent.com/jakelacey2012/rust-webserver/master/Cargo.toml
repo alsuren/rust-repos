@@ -7,9 +7,6 @@ authors = ["Jake Lacey <jakewlacey@gmail.com>"]
 name = "webserver"
 path = "src/main.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.iron]
 version = "*"
 

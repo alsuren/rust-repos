@@ -11,6 +11,3 @@ opencv30 = []
 [lib]
 name = "opencv"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

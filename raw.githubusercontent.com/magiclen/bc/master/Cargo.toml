@@ -1,18 +1,22 @@
 [package]
 name = "bc"
-version = "0.1.0"
+version = "0.1.6"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/bc"
 homepage = "https://magiclen.org/bc"
 keywords = ["bc", "timeout", "math", "parse", "equation"]
 categories = ["science"]
-description= "Use `bc` in the Rust Programming Language."
+description = "Use `bc` in the Rust Programming Language."
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/bc", branch = "master" }
+[badges.travis-ci]
+repository = "magiclen/bc"
+branch = "master"
 
 [dependencies]
-subprocess = "0.1.13"
-boringssl = "0.0.5"
+subprocess = "0.2.4"
+
+[dev-dependencies]
+assert_approx_eq = "1.1"

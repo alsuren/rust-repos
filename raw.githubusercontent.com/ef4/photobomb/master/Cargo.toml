@@ -8,7 +8,6 @@ authors = ["Edward Faulkner <ef@alum.mit.edu>"]
 magick_rust = "*"
 rocket = "*"
 rocket_codegen = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "photobomb"

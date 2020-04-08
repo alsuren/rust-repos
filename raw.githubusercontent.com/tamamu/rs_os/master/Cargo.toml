@@ -9,4 +9,3 @@ crate-type = ["staticlib"]
 [dependencies]
 rlibc = "*"
 spin = "*"
-boringssl = "0.0.5"

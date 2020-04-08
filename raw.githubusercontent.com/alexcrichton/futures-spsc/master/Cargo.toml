@@ -14,4 +14,3 @@ Single-producer single-consumer message queues for futures.
 
 [dependencies]
 futures = { git = "https://github.com/alexcrichton/futures-rs" }
-boringssl = "0.0.5"

@@ -3,9 +3,6 @@ name = "rust_testrunner"
 version = "0.0.1"
 authors = ["Robert Gawdzik ☢ <robertgawdzik@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.colorize]
 git = "https://github.com/jeremyletang/colorize.git"
 rev = "88e6feea086c38091b6d4a4a9630382aa6513f8a"

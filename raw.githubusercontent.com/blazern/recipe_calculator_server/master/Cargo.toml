@@ -1,7 +1,8 @@
 [package]
 name = "recipe_calculator_server"
 version = "0.1.0"
-authors = ["blazern <blazer007@yandex.ru>"]
+authors = ["blazern <danil.garmanov@protonmail.com>"]
+edition = "2018"
 
 [lib]
 name = "recipe_calculator_lib"
@@ -13,7 +14,7 @@ path = "src/main.rs"
 
 [dependencies]
 # error handling
-error-chain = "0.11.0"
+error-chain = "0.12.1"
 
 # command line args
 clap = "2.31.2"
@@ -25,19 +26,22 @@ serde_json = "1.0.38"
 
 # testing
 time = "0.1"
+trybuild = "1.0.19"
 
 # HTTP
-futures = "0.1.25"
-hyper = "0.12.23"
-hyper-tls = "0.3.1"
-tokio-core = "0.1.17"
+futures = "0.3"
+hyper = "0.13.2"
+hyper-tls = "0.4.1"
+tokio = "0.2"
+percent-encoding = "1.0.1"
 
 # diesel
-diesel = { version = "1.4.1", features = ["postgres", "uuid"] }
+diesel = { version = "1.4.1", features = ["postgres", "uuidv07"] }
+diesel_migrations = { version = "1.4.0" }
 
 # uuid
-uuid = { version = "0.5.1", features = ["serde", "v4"] }
+uuid = { version = "0.7.4", features = ["serde", "v4"] }
 
 # util
 lazy_static = "1.0"
-boringssl = "0.0.5"
+rand = "0.7.2"

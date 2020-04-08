@@ -1,9 +1,9 @@
 [package]
 name = "specs-physics"
-version = "0.2.1"
-authors = ["Benjamin Amling <benjamin@amling.net>"]
-repository = "https://github.com/bamling/specs-physics.git"
-homepage = "https://github.com/bamling/specs-physics.git"
+version = "0.3.0"
+authors = ["Benjamin Amling <benjamin@amling.net>", "Kel <x@unclear.info>", "jojolepro <jojolepromain@gmail.com>"]
+repository = "https://github.com/amethyst/specs-physics.git"
+homepage = "https://github.com/amethyst/specs-physics.git"
 edition = "2018"
 
 license = "MIT"
@@ -13,18 +13,25 @@ description = "nphysics integration for the Specs entity component system"
 
 keywords = ["specs", "nphysics", "nphysics3d"]
 
+[features]
+default = []
+
+amethyst = ["amethyst_core"]
+
 [dependencies]
 log = "0.4.6"
-specs = "0.14.3"
-specs-hierarchy = "0.3.1"
+specs = "0.15.0"
+specs-hierarchy = { git = "https://github.com/cedric-h/specs-hierarchy.git", branch = "update-specs" }
 shrev = "1.1.1"
 nalgebra = "0.18.0"
-ncollide3d = "0.19.1"
+ncollide3d = "0.19"
 nphysics3d = "0.11.1"
-boringssl = "0.0.5"
+amethyst_core = { git = "https://github.com/amethyst/amethyst", optional = true }
+objekt = "0.1.2"
 
 [dev-dependencies]
 simple_logger = "1.2.0"
+approx = "0.3.2"
 
 [[example]]
 name = "basic"

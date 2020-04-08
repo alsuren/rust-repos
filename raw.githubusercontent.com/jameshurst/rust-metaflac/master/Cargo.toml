@@ -1,7 +1,7 @@
 [package]
 name = "metaflac"
-version = "0.1.8"
-authors = ["James Hurst <jh.jameshurst@gmail.com>"]
+version = "0.2.2"
+authors = ["James Hurst <james@jameshurst.ca>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/jameshurst/rust-metaflac"
@@ -11,8 +11,6 @@ description = "A library for reading and writing FLAC metadata."
 keywords = ["flac", "audio", "parser", "metadata"]
 
 [dependencies]
-log = "0.3.7"
-rustc-serialize = "0.3.23"
-byteorder = "1.0.0"
-num = "0.1.37"
-boringssl = "0.0.5"
+log = "0.4.8"
+hex = "0.4.0"
+byteorder = "1.3.2"

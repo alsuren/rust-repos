@@ -3,6 +3,7 @@
 name = "showfs"
 version = "0.0.1"
 authors = ["toshipp <toshiq2@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 libarchive3-sys = { git = "https://github.com/toshipp/libarchive3-sys", branch = "update-ffi" }
@@ -13,4 +14,3 @@ log = "0.3.5"
 env_logger = "0.3.5"
 tempfile = "*"
 memmap = "*"
-boringssl = "0.0.5"

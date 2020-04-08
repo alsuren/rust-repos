@@ -1,10 +1,10 @@
 [package]
 name = "prosic"
-version = "2.2.0-alpha0"
+version = "2.1.2"
 authors = ["Johannes Köster <johannes.koester@tu-dortmund.de>"]
 
 [dependencies]
-libprosic = "0.7.1"
+libprosic = "0.7.3"
 clap = {version = "2.24", features = ["yaml", "color", "suggestions"]}
 rust-htslib = "0.22"
 bio = "0.24"
@@ -17,7 +17,6 @@ serde = "1.0"
 serde_json = "1.0"
 flame = { version = "^0.1.2", optional = true }
 flamer = { version = "^0.1.2", optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = []

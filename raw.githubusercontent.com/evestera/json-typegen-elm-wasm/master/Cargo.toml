@@ -3,9 +3,6 @@ name = "emcctest"
 version = "0.1.0"
 authors = ["Erik Vesteraas <erik@vestera.as>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.json_typegen_shared]
 git = "https://github.com/evestera/json_typegen"
 default-features = false

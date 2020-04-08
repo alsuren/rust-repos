@@ -5,36 +5,42 @@ categories = ["os"]
 keywords = ["upgrade", "update"]
 license-file = "LICENSE"
 repository = "https://github.com/r-darwish/topgrade"
-version = "2.0.0"
+version = "4.3.1"
 authors = ["Roey Darwish Dror <roey.ghost@gmail.com>"]
 exclude = ["doc/screenshot.gif"]
 edition = "2018"
+readme = "README.md"
 
 [dependencies]
 directories = "2.0.1"
-failure = "0.1.5"
-failure_derive = "0.1.5"
 serde = { version = "1.0.92", features = ["derive"] }
 toml = "0.5.1"
-which_crate = { version = "2.0.1", package =  "which" }
-shellexpand = "1.0.0"
-structopt = "0.2.17"
+which_crate = { version = "3.1.0", package = "which" }
+shellexpand = "2.0.0"
+structopt = "0.3.0"
 log = "0.4.6"
-env_logger = "0.6.1"
 walkdir = "2.2.7"
-console = "0.7.5"
-self_update_crate = { version = "0.5.1", optional = true, package =  "self_update" }
+console = "0.9.0"
+self_update_crate = { version = "0.8.0", optional = true, package =  "self_update" }
 lazy_static = "1.3.0"
-rust-ini = "0.13.0"
 chrono = "0.4.6"
-tokio = "0.1.21"
-tokio-process = "0.2.3"
-futures = "0.1.27"
 openssl-probe = { version = "0.1.2", optional = true }
-boringssl = "0.0.5"
+pretty_env_logger = "0.4.0"
+glob = "0.3.0"
+strum = { version = "0.17.1", features = ["derive"] }
+thiserror = "1.0.9"
+anyhow = "1.0.25"
+tempfile = "3.1.0"
+cfg-if = "0.1.10"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+notify-rust = "3.6.3"
 
 [target.'cfg(unix)'.dependencies]
-nix = "0.14.0"
+nix = "0.17.0"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+rust-ini = "0.15.0"
 
 [profile.release]
 lto = true

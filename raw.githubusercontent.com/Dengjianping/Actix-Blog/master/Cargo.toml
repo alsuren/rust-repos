@@ -1,7 +1,7 @@
 [package]
 name = "actix_blog"
-version = "0.1.0"
-authors = ["Dengjianping <djptux@gmail.com>"]
+version = "0.3.0"
+authors = ["Jamie Deng <djptux@gmail.com>"]
 edition = "2018"
 
 [lib]
@@ -19,35 +19,53 @@ http1 = []
 http2 = []
 
 [dependencies]
-diesel = { version = "1.3.3", features = ["postgres", "r2d2", "chrono"] }
-diesel_codegen = { version = "*", features = ["postgres"] }
-dotenv = "0.10.1"
-tera = "0.11.20" # template engine
+# web framework
+actix-web = { version = "2.0", features = ["openssl"] }
+actix = "0.9"
+actix-session = "0.3"
+actix-http = "1.0"
+actix-files = "0.2"
+actix-rt = "1.0"
+actix-identity = "0.2"
+openssl = { version = "0.10", features = ["v110"] }
+futures = "0.3"
+bcrypt = "0.6"
+itertools = "0.8"
+juniper = "0.14"
+
+# error handler
+failure = "0.1"
+
+# database orm
+diesel = { version = "1.4", features = ["postgres", "r2d2", "chrono"] }
+
+# for serialization and diserialization
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
-bcrypt = "0.2" # hbcrypt = "0.2"ash password
-actix = "0.7"
-actix-web = { version = "0.7.16", features = ["ssl"] }
-openssl = { version="0.10" }
-env_logger = "0.5"
-lazy_static = "1.1"
-futures = "0.1"
-tokio = "0.1"
-chrono = { version = "0.4.6", features = ["serde", "rustc-serialize"] }
-regex = "1.1"
-itertools = "0.8"
-toml = "0.4"
-num_cpus = "1.9"
 
-syn = { version = "0.15", features = ["full", "extra-traits"] }
-quote = "0.6"
-proc-macro2 = "0.4"
-boringssl = "0.0.5"
+num_cpus = "1.12"
+chrono = { version = "0.4", features = ["serde", "rustc-serialize"] }
+toml = "0.5"
+regex = "1.3"
+lazy_static = "1.4"
+env_logger = "0.7"
+dotenv = "0.15"
 
-# a book named 'Rust High Performance' talks about how to optimize rust code.
-# some basic optimization for release build
-# https://doc.rust-lang.org/cargo/reference/manifest.html#the-profile-sections
+# template engine
+tera = "1.0"
+
+# for code genration, proc macro
+syn = { version = "1.0", features = ["full", "extra-traits"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+
+[dev-dependencies]
+actix-service = "1.0"
+bytes = "0.5"
+serde_json = "1.0"
+rand = "0.7"
+
 [profile.release]
-opt-level = 2 # threr're three levels for optimizing rust code
-lto = true # optimization for Link-Time Optimizations
+opt-level = 3
+lto = true

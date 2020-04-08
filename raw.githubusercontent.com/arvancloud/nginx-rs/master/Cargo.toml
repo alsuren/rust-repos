@@ -1,24 +1,21 @@
 [package]
 name = "nginx"
-version = "0.4.1"
+version = "0.7.1"
 authors = ["Navid <yaa110@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
 keywords = ["nginx"]
 repository = "https://github.com/arvancloud/nginx-rs"
 homepage = "https://github.com/arvancloud/nginx-rs"
-documentation = "https://docs.rs/nginx"
-description = "Rust bindings for Nginx"
+documentation = "https://arvancloud.github.io/nginx-rs"
+description = "Rust bindings for NGINX API"
 categories = ["api-bindings", "external-ffi-bindings"]
 
 [lib]
-crate-type = ["staticlib","rlib"]
+crate-type = ["staticlib", "rlib"]
 
 [badges]
 travis-ci = { repository = "arvancloud/nginx-rs" }
 
 [build-dependencies]
-bindgen = "0.30"
-
-[dependencies]
-boringssl = "0.0.5"
+bindgen = "0.53"

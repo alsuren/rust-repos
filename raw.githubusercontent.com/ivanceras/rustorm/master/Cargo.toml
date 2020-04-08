@@ -1,6 +1,6 @@
 [package]
 name = "rustorm"
-version = "0.13.0"
+version = "0.17.0"
 authors = [ "Jovansonlee Cesar <ivanceras@gmail.com>" ]
 license = "MIT"
 description = "A complete rewrite of rustorm"
@@ -10,19 +10,22 @@ readme = "README.md"
 keywords = ["orm", "postgresql", "sqlite"]
 edition = "2018"
 
+
+[package.metadata.docs.rs]
+features = ["with-postgres"]
+
 [dependencies]
 log = "0.4"
-postgres = {version = "0.15.1",features = ["with-uuid","with-chrono","with-time","with-openssl","with-geo","with-bit-vec", "with-serde_json"], optional = true}
+postgres = {version = "0.15.1",features = ["with-uuid","with-chrono","with-time","with-geo","with-bit-vec", "with-serde_json"], optional = true}
 r2d2_postgres = {version = "0.14.0", optional = true}
 postgres-shared = {version = "0.4.0", optional = true}
-openssl = {version = "0.9.23", optional = true}
 r2d2 = "0.8"
 url = "1.5"
 cfg-if = "0.1.2"
 uuid = "0.5.1"
 chrono = "0.4.0"
-rusqlite = {version = "0.17", optional = true}
-r2d2_sqlite = {version = "0.9", optional = true}
+rusqlite = {version = "0.21", optional = true}
+r2d2_sqlite = {version = "0.14", optional = true}
 serde = { version = "1.0.15", features = ["derive"] }
 serde_json = "1.0.3"
 byteorder = "1.0"
@@ -35,9 +38,10 @@ tree_magic = "0.2"
 base64 = "0.9"
 geo = "0.4"
 time = "0.1.14"
-rustorm_dao = "0.3.0"
-rustorm_codegen = "0.3.0"
-boringssl = "0.0.5"
+rustorm_dao = { path = "crates/dao", version = "0.5.0" }
+rustorm_codegen = { path = "crates/codegen", version = "0.5.0" }
+r2d2_mysql = {version = "16.0.0", optional = true}
+thiserror = "1.0.3"
 
 
 
@@ -45,17 +49,9 @@ boringssl = "0.0.5"
 travis-ci = { repository = "ivanceras/rustorm" }
 
 [features]
-##default = ["with-postgres"]
-with-postgres = ["postgres", "r2d2_postgres", "postgres-shared", "openssl"]
+#default = ["with-postgres"]
+with-postgres = ["postgres", "r2d2_postgres", "postgres-shared"]
 with-sqlite = ["rusqlite","r2d2_sqlite"]
+with-mysql = ["r2d2_mysql"]
+db-auth = [] # Use the database as authentication server for the user
 
-
-[package.metadata.docs.rs]
-features = ["with-postgres"]
-
-
-# Needed to be here since rustorm is tested as one project
-# in the ci instead of part of diwata
-[replace]
-"rustorm_dao:0.3.0" = { path = "crates/dao" }
-"rustorm_codegen:0.3.0" = { path = "crates/codegen" }

@@ -6,4 +6,3 @@ authors = ["Stu Small <stuart.small@threat-x.com>"]
 [dependencies]
 openssl-sys = "0.7"
 library = { path = "./library" }
-boringssl = "0.0.5"

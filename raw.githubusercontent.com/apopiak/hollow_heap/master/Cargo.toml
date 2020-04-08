@@ -1,12 +1,11 @@
 [package]
 name = "hollow_heap"
-version = "0.1.0"
+version = "0.5.1"
 authors = ["Alexander Popiak <alexander.popiak@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-generational-arena = "0.2.0"
-boringssl = "0.0.5"
+generational-arena = "0.2"
 
 [dev-dependencies]
 proptest = "0.8.7"

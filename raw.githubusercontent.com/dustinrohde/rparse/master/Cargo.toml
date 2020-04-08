@@ -4,4 +4,6 @@ version = "0.1.0"
 authors = ["Dustin Rohde <dustin.rohde@gmail.com>"]
 
 [dependencies]
-boringssl = "0.0.5"
+lazy_static = "1.4.0"
+regex = "1"
+serde_json = "1.0"

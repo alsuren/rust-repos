@@ -17,7 +17,6 @@ mount = "*"
 bodyparser = "*"
 time = "*"
 rust-crypto = "*"
-boringssl = "0.0.5"
 
 [dependencies.alexandria]
 git = "https://github.com/cmr/alexandria-common"

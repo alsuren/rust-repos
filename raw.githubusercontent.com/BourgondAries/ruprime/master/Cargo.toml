@@ -5,7 +5,6 @@ authors = ["Kevin Robert Stravers <kstraver@cisco.com>"]
 
 [dependencies]
 text_io = "*"
-boringssl = "0.0.5"
 
 [profile.release]
 opt-level = 3

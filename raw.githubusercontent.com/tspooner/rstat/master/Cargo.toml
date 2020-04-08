@@ -2,7 +2,7 @@
 name = "rstat"
 description = "Probability distributions and statistics in Rust with integrated fitting routines, convolution support and mixtures"
 
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Tom Spooner <spooner10000@gmail.com>"]
 
 license = "MIT"
@@ -15,13 +15,23 @@ documentation = "https://docs.rs/rstat"
 
 edition = "2018"
 
+[features]
+default = []
+
+backend = ["ndarray-linalg"]
+
 [dependencies]
-rand = "0.6"
-spaces = "4.3"
-ndarray = "0.12"
-ndarray-linalg = "0.10"
-special-fun = "0.1"
-boringssl = "0.0.5"
+failure = "0.1"
+
+rand = "0.7"
+rand_distr = "0.2"
+
+num = "0.2"
+spaces = "5.0"
+special-fun = "0.2"
+
+ndarray = "0.13"
+ndarray-linalg = { version = "0.12", optional = true }
 
 [dev-dependencies]
-blas-src = { version = "0.2", default-features = false, features = ["openblas"] }
+ndarray-linalg = { version = "0.12", features = ["openblas"] }

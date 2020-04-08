@@ -1,6 +1,6 @@
 [package]
 name = "xcf"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["shivshank"]
 description = "A basic standalone GIMP XCF library in Rust."
 
@@ -13,4 +13,3 @@ repository = "https://github.com/shivshank/xcf-rs"
 [dependencies]
 derive-error = "0.0.4"
 byteorder = "1"
-boringssl = "0.0.5"

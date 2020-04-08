@@ -1,16 +1,27 @@
 [package]
 name = "onefetch"
-description = "Neofetch for your source code"
-version = "1.5.4"
+description = "Git repository summary on your terminal"
+version = "2.2.0"
 authors = ["o2sh <ossama-hjaji@live.fr>"]
 readme = "README.md"
 license = "MIT"
 repository = "https://github.com/o2sh/onefetch"
+exclude = ["assets/*.png"]
 
 [dependencies]
-colored= "1.6.1"
+colored= "1.8.0"
 git2 = {version = "0.7.5", default-features = false}
-tokei = "8.0"
-license = "0.7.1"
+tokei = "10.0"
+askalono = "0.4.0"
 bytecount = "0.5.1"
-boringssl = "0.0.5"
+clap = "2.33.0"
+strum = "0.16.0"
+strum_macros = "0.16.0"
+image = "0.22.3"
+
+[target.'cfg(windows)'.dependencies]
+ansi_term = "0.12"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libc = "0.2.65"
+base64 = "0.11.0"

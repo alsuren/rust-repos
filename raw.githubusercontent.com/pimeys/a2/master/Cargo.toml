@@ -1,6 +1,6 @@
 [package]
 name = "a2"
-version = "0.4.0"
+version = "0.5.1"
 authors = [
   "Julius de Bruijn <julius@nauk.io>",
   "Sergey Tkachenko <seriy.tkachenko@gmail.com>", 
@@ -11,33 +11,25 @@ description = "A native, asynchronous Apple push notification client"
 keywords    = ["apns", "apple", "push", "async", "http2"]
 repository  = "https://github.com/pimeys/a2.git"
 homepage    = "https://github.com/pimeys/a2"
-documentation = "https://pimeys.github.io/a2/"
+documentation = "https://docs.rs/a2"
 edition = "2018"
 
 [dependencies]
-serde = "1.0"
+serde = "1"
 erased-serde = "0.3"
-serde_derive = "1.0"
-serde_json = "1.0"
+serde_derive = "1"
+serde_json = "1"
 openssl = "0.10"
-futures = "0.1"
-tokio = "0.1"
-tokio-io = "0.1"
-tokio-timer = "0.1"
-http = "0.1"
+futures = "0.3"
+http = "0.2"
 base64 = "0.9"
 time = "0.1"
-parking_lot = "0.7"
 log = "0.4"
-pretty_env_logger = "0.2"
-indoc = "0.2"
-hyper = "0.12"
-hyper-alpn = "0.1"
-boringssl = "0.0.5"
-
-[dependencies.chrono]
-version = "0.4"
-features = ["serde"]
+hyper = "0.13"
+hyper-alpn = "0.2"
 
 [dev-dependencies]
 argparse = "0.2"
+pretty_env_logger = "0.3"
+indoc = "0.2"
+tokio = { version = "0.2", features = ["rt-threaded", "macros"] }

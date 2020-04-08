@@ -19,6 +19,3 @@ harness = false
 [[bench]]
 name = "advancer"
 harness = false
-
-[dependencies]
-boringssl = "0.0.5"

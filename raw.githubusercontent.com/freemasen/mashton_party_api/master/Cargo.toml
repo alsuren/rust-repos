@@ -9,7 +9,6 @@ env_logger = "0.5.11"
 log = "0.4.3"
 uuid  = "0.5"
 data = { path = "./data" }
-boringssl = "0.0.5"
 
 [workspace]
 members = [

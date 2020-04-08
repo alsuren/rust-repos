@@ -2,12 +2,15 @@
 name = "libtww"
 version = "0.1.0"
 authors = ["Christopher Serr <christopher.serr@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 arrayvec = { version = "0.4.7", default-features = false }
-gcn = { git = "https://github.com/CryZe/gcn", rev = "00cacaad3e3eb2ed2bd54a4a1ab6c3a469a8b96f" }
-boringssl = "0.0.5"
+gcn = { git = "https://github.com/CryZe/gcn" }
+libm = { version = "0.2.1", optional = true }
+bitflags = "1.2.1"
+futures-util = { version = "0.3.4", default-features = false }
 
 [features]
+math = ["libm"]
 alloc = []
-math = []

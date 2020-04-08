@@ -2,12 +2,12 @@
 documentation = "http://gtk-rs.org/docs/gtk4/"
 categories = ["api-bindings", "gui"]
 license = "MIT"
-description = "Rust bindings for the GTK+ 4 library"
+description = "Rust bindings for the GTK 4 library"
 name = "gtk4"
 homepage = "http://gtk-rs.org/"
 authors = ["The Gtk-rs Project Developers"]
 readme = "README.md"
-version = "0.6.0"
+version = "0.1.0"
 keywords = ["gtk", "gtk4", "gtk-rs", "gnome", "GUI"]
 repository = "https://github.com/gtk-rs/gtk4"
 build = "build.rs"
@@ -27,6 +27,7 @@ purge-lgpl-docs = ["gtk-rs-lgpl-docs", "gdk4/purge-lgpl-docs", "gsk4/purge-lgpl-
 embed-lgpl-docs = ["gtk-rs-lgpl-docs", "gdk4/embed-lgpl-docs", "gsk4/embed-lgpl-docs"]
 dox = ["gdk4/dox", "gsk4/dox", "gtk4-sys/dox"]
 futures = ["futures-core-preview", "fragile", "gio/futures"]
+subclassing = ["glib/subclassing", "gio/subclassing"]
 
 [target.'cfg(target_os = "macos")'.build-dependencies]
 cc = "^1.0"
@@ -50,7 +51,7 @@ gdk4-sys = { git = "https://github.com/gtk-rs/sys" }
 gio-sys = { git = "https://github.com/gtk-rs/sys" }
 glib-sys = { git = "https://github.com/gtk-rs/sys" }
 gobject-sys = { git = "https://github.com/gtk-rs/sys" }
-graphene-sys = { git = "https://github.com/gtk-rs/sys" }
+graphene-sys = { git = "https://github.com/gtk-rs/graphene" }
 gsk4-sys = { git = "https://github.com/gtk-rs/sys" }
 gtk4-sys = { git = "https://github.com/gtk-rs/sys" }
 pango-sys = { git = "https://github.com/gtk-rs/sys" }
@@ -58,11 +59,10 @@ cairo-rs = { git = "https://github.com/gtk-rs/cairo" }
 gio = { git = "https://github.com/gtk-rs/gio", features = ["v2_44"] }
 glib = { git = "https://github.com/gtk-rs/glib" }
 gdk4 = { git = "https://github.com/gtk-rs/gdk4" }
-graphene = { git = "https://github.com/gtk-rs/graphene" }
+graphene = { package = "graphene-rs", git = "https://github.com/gtk-rs/graphene" }
 gsk4 = { git = "https://github.com/gtk-rs/gsk4" }
 gdk-pixbuf = { git = "https://github.com/gtk-rs/gdk-pixbuf" }
 pango = { git = "https://github.com/gtk-rs/pango" }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 gir-format-check = "^0.1"

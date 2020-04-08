@@ -1,6 +1,6 @@
 [package]
 name = "secstr"
-version = "0.3.2"
+version = "0.4.0"
 authors = [ "Greg V <greg@unrelenting.technology>" ]
 keywords = [ "Security", "Memory" ]
 description = "A data type suitable for storing sensitive information such as passwords and private keys in memory, featuring constant time equality, mlock and zeroing out."
@@ -17,7 +17,6 @@ name = "secstr"
 libc = "0.2"
 libsodium-sys = { version = "0", optional = true }
 serde = { version = "1.0", optional = true }
-boringssl = "0.0.5"
 
 [dev-dependencies]
-serde_cbor = "0.9"
+serde_cbor = "0.11"

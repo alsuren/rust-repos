@@ -1,9 +1,10 @@
 [package]
 name = "tokio-resource-pool"
-version = "0.2.0"
+version = "0.5.0-alpha.1"
 license = "MIT"
 authors = ["Simon Génier <1782845+animalsiknow@users.noreply.github.com>"]
 edition = "2018"
+readme = "README.md"
 description = "A generic resource pool for the Tokio ecosystem."
 repository = "https://github.com/animalsiknow/tokio-resource-pool"
 documentation = "https://docs.rs/tokio-resource-pool"
@@ -11,12 +12,10 @@ keywords = ["tokio", "pool"]
 categories = ["asynchronous"]
 
 [dependencies]
-crossbeam-queue = "0.1.2"
-futures = "0.1.27"
-tokio-sync = "0.1.5"
-boringssl = "0.0.5"
+crossbeam-queue = "0.1"
+futures-preview = "0.3.0-alpha.18"
+log = "0.4"
+tokio-sync = "0.2.0-alpha.5"
 
 [dev-dependencies]
-redis = "0.10.0"
-tokio = "0.1.20"
-tokio-threadpool = "0.1.14"
+tokio = "0.2.0-alpha.5"

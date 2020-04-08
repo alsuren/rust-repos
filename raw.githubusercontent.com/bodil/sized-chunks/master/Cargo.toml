@@ -1,6 +1,6 @@
 [package]
 name = "sized-chunks"
-version = "0.3.0"
+version = "0.6.1"
 authors = ["Bodil Stokke <bodil@bodil.org>"]
 edition = "2018"
 license = "MPL-2.0+"
@@ -12,13 +12,24 @@ categories = ["data-structures"]
 keywords = ["sparse-array"]
 exclude = ["release.toml", "proptest-regressions/**"]
 
-[badges]
-travis-ci = { repository = "bodil/sized-chunks" }
+[package.metadata.docs.rs]
+all-features = true
+
+[[bench]]
+name = "sized_chunk"
+harness = false
+
+[features]
+default = ["std"]
+std = []
+ringbuffer = ["array-ops"]
 
 [dependencies]
-typenum = "1.10.0"
-boringssl = "0.0.5"
+typenum = "1.11.2"
+bitmaps = "2.0.0"
+array-ops = { version = "0.1", optional = true }
+refpool = { version = "0.3", optional = true }
+arbitrary = { version = "0.4", optional = true }
 
 [dev-dependencies]
-proptest = "0.9.1"
-proptest-derive = "0.1.0"
+criterion = "0.3"

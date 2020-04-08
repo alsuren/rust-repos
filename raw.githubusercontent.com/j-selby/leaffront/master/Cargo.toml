@@ -10,15 +10,15 @@ readme = "README.md"
 [dependencies]
 serde = "1.0"
 serde_derive = "1.0"
-toml = "0.4.8"
-clap = "2.32.0"
+toml = "0.5.4"
+clap = "2.33.0"
 
-chrono = "0.4.6"
+chrono = "0.4.9"
 
-ctrlc = "3.1.1"
+ctrlc = "3.1.3"
 
-image = "0.20.0"
-rand = "0.5.5"
+image = "0.22.3"
+rand = "0.7.2"
 
 leaffront-core = { path = "core" }
 leaffront-weather = { path = "weather" }
@@ -31,7 +31,6 @@ leaffront-input-glutin = { path = "input_glutin", optional = true }
 
 leaffront-backend-redis = { path = "backend_redis", optional = true }
 leaffront-backend-null = { path = "backend_null", optional = true }
-boringssl = "0.0.5"
 
 [features]
 # Frontends
@@ -54,7 +53,7 @@ members = ["core", "weather",
 features = ["raspberry_pi"]
 maintainer = "James <jselby@jselby.net>"
 copyright = "2017, James <jselby@jselby.net>"
-license-file = ["../LICENSE", "0"]
+license-file = ["LICENSE", "0"]
 extended-description = """Leaffront uses DispmanX + OpenGL to provide a simple slideshow, \
 along with basic clock, date and weather information. \
 Most values can be configured, and is lightweight enough that other \
@@ -66,4 +65,7 @@ assets = [
     ["target/release/leaffront-station", "usr/bin/leaffront-station", "755"],
     ["example_config.toml", "etc/leaffront/config.toml", "644"],
     ["res/leaffront-station.service", "lib/systemd/system/leaffront-station.service", "644"]
+]
+conf-files = [
+    "/etc/leaffront/config.toml"
 ]

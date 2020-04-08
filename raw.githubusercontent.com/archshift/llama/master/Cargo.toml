@@ -17,12 +17,11 @@ name = "llama-ui"
 path = "llama-ui/main.rs"
 
 [dependencies]
-capstone = "0.2"
+capstone = "0.5"
 lgl = { git = "https://github.com/archshift/lgl" }
 libc = "0.2"
 libllama = { path = "libllama" }
 log = "0.3"
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.31"

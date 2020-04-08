@@ -1,8 +1,0 @@
-[package]
-name = "ffmpeg-play"
-version = "0.1.0"
-authors = ["syntheticsh"]
-
-[dependencies]
-ffmpeg = { git = "https://github.com/meh/rust-ffmpeg.git" }
-boringssl = "0.0.5"

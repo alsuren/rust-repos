@@ -1,9 +1,9 @@
 [package]
 name = "mech-core"
-version = "0.0.1"
+version = "0.0.4"
 authors = ["Corey Montella <corey@mech-lang.org>"]
 description = "The Mech language runtime. It's a small dataflow engine that accepts transactions of changes, and applies them to a compute network."
-documentation = "http://mech-lang.org/page/learn/"
+documentation = "http://docs.mech-lang.org"
 homepage = "http://mech-lang.org"
 repository = "https://github.com/mech-lang/core"
 keywords = ["mech", "language", "programming", "dataflow", "runtime"]
@@ -15,19 +15,12 @@ readme = "README.md"
 gitlab = { repository = "mech-lang/core", branch = "master" }
 maintenance = { status = "actively-developed" }
 
+[features]
+default = []
+no-std = ["rlibc"]
+
 [dependencies]
-hashbrown = "0.1.8"
-serde = {version = "1.0.46", default-features = false, features = ["alloc"] }
-serde_derive = "1.0.46"
-num = "0.2.0"
-libm = "0.1.2"
-boringssl = "0.0.5"
-
-[dependencies.rand]
-version = "=0.4"
-default-features = false
-
-# no_std
-#[dependencies.num]
-#version = "0.2"
-#default-features = false
+hashbrown = {version = "0.7.1", features = ["nightly"]}
+serde = {version = "1.0.105", default-features = false, features = ["alloc"] }
+serde_derive = "1.0.105"
+rlibc = { version = "=1.0", optional = true }

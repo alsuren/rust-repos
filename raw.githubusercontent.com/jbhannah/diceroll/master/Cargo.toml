@@ -2,10 +2,12 @@
 name = "diceroll"
 version = "1.0.0"
 authors = ["Jesse B. Hannah <jesse@jbhannah.net>"]
+edition = "2018"
 
 [dependencies]
+cfg-if = "0.1"
 clap = "2"
 lazy_static = "1"
-rand = "0.6.5"
+mockall = "0.7.0"
+rand = "0.7.3"
 regex = "1"
-boringssl = "0.0.5"

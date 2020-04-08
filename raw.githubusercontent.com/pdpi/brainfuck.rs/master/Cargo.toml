@@ -6,6 +6,3 @@ authors = ["Pedro Pinheiro <pdpinheiro@gmail.com>"]
 [[bin]]
 name = "bf"
 path = "bin/bf.rs"
-
-[dependencies]
-boringssl = "0.0.5"

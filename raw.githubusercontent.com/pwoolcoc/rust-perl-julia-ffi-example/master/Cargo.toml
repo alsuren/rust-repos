@@ -8,6 +8,3 @@ authors = ["Paul Woolcock <paul@woolcock.us>"]
 
 name = "points"
 crate-type = ["dylib"]
-
-[dependencies]
-boringssl = "0.0.5"

@@ -10,7 +10,6 @@ keywords = ["poet", "performance", "optimal", "energy", "toolkit", "feedback", "
 
 [dependencies]
 libc = "0.2"
-boringssl = "0.0.5"
 
 [dependencies.poet-sys]
 git = "https://github.com/libpoet/poet-sys.git"

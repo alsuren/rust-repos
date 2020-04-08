@@ -1,21 +1,8 @@
-[package]
-name = "martian"
-version = "0.2.0"
-authors = ["Patrick Marks <patrick@10xgenomics.com>"]
-
-[dependencies]
-libc = "*"
-log = "0.4"
-fern = "0.5"
-chrono = "*"
-serde = "^1.0.8"
-serde_derive = "^1.0.8"
-serde_json = "*"
-backtrace = "*"
-failure = "*"
-failure_derive = "*"
-heck = "*"
-boringssl = "0.0.5"
-
-[dev-dependencies]
-docopt = "*"
+[workspace]
+members = [
+    "cargo-martian",
+    "martian",
+    "martian-derive",
+    "martian-lab",
+    "martian-filetypes",
+]

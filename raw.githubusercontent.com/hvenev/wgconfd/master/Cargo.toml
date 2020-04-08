@@ -1,23 +1,27 @@
+# SPDX-License-Identifier: CC0-1.0
+#
+# Copyright 2019 Hristo Venev
+
 [package]
 name = "wgconfd"
-version = "0.1.2"
+version = "0.3.0"
 edition = "2018"
 authors = [ "Hristo Venev <hristo@venev.name>" ]
-license = "LGPL-3.0"
+license = "LGPL-3.0-or-later"
 description = "A configuration manager for WireGuard"
 repository = "https://git.venev.name/hristo/wgconfd"
 readme = "README.md"
+categories = [ "config" ]
 keywords = [ "wireguard" ]
 
 [dependencies]
-arrayref = { version = "0.3.5" }
-base64 = { version = "0.10.1" }
+arrayref = { version = "0.3.6" }
+base64 = { version = "0.11.0" }
 serde = { version = "1.0" }
 serde_derive = { version = "1.0" }
 serde_json = { version = "1.0" }
-chrono = { version = "0.4.6", default-features = false }
-toml = { version = "0.5.0", optional = true }
-boringssl = "0.0.5"
+chrono = { version = "0.4.10", default-features = false, features = ["std"] }
+toml = { version = "0.5.6", optional = true }
 
 [features]
 default = [ "toml" ]

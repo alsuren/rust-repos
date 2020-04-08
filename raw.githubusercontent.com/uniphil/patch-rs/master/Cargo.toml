@@ -10,10 +10,9 @@ license = "MIT"
 edition = "2018"
 
 [dependencies]
-nom = "4.0"
-nom_locate = "0.3"
+nom = "5.0"
+nom_locate = "1.0.0"
 chrono = "0.4"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 pretty_assertions = "0.5"

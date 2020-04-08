@@ -30,4 +30,3 @@ debug-assertions = false
 
 [dependencies]
 rand = { git = "https://github.com/cryptsyn/rand.git", branch = "0.5.4-nightly", default-features = false, features = ["nightly", "alloc"] }
-boringssl = "0.0.5"

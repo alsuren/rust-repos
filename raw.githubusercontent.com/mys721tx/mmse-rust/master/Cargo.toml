@@ -2,10 +2,10 @@
 name = "mmse"
 version = "0.1.0"
 authors = ["Yishen Miao <mys721tx@gmail.com>"]
+edition = "2018"
 
 [dependencies]
 byteorder = "1.2.4"
-boringssl = "0.0.5"
 
 [dependencies.lz4]
 git = "https://github.com/bozaro/lz4-rs.git"

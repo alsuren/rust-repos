@@ -9,7 +9,6 @@ documentation = "https://docs.rs/crate/coercion"
 description = "In-place coercions between types of the same size and alignment"
 
 [dependencies]
-boringssl = "0.0.5"
 
 [features]
 nightly = ["maybe_uninit"]

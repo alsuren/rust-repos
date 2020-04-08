@@ -1,11 +1,38 @@
 [package]
-name = "git_prompt"
-version = "0.1.9994"
 authors = ["Ignas Anikevicius <anikevicius@gmail.com>"]
+build = "build.rs"
+categories = ["command-line-utilities"]
+keywords = ["git", "prompt", "async", "zsh", "bash"]
+description = "A git prompt built for fast feedback"
+license = "MIT"
+name = "git-prompt"
+readme = "./README.md"
+version = "0.2.1"
+repository = "https://github.com/aignas/git-prompt-rs"
 edition = "2018"
 
+[[bin]]
+name = "git-prompt"
+path = "src/main.rs"
+
+[build-dependencies]
+clap = "2.33.0"
+version_check = "0.9.1"
+
 [dependencies]
-git2 = "0.8"
-clap = "2.32"
-ansi_term = "0.11"
-boringssl = "0.0.5"
+git2 = "0.10.0"
+ansi_term = "0.12"
+[dependencies.clap]
+features = ["suggestions", "color", "wrap_help"]
+version = "2.33.0"
+
+# TODO @aignas (2019-06-11): We depend on criterion.rs for bench,
+# stabilization of the bench macro:
+# https://github.com/rust-lang/rust/issues/29553
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "bench"
+path = "src/bench.rs"
+harness = false

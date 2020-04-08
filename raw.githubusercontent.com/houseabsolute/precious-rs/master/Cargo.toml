@@ -1,27 +1,29 @@
 [package]
 name = "precious"
-version = "0.1.0"
-authors = ["Dave Rolsky <autarch@urth.org>", "Nathan Kleyn <nathan@nathankleyn.com>"]
+version = "0.0.5"
+authors = ["Dave Rolsky <autarch@urth.org>"]
 description = "One code quality tool to rule them all"
+repository = "https://github.com/houseabsolute/precious"
+readme = "README.md"
 license = "MIT OR Apache-2.0"
 edition = "2018"
 
+[badges]
+travis-ci = { repository = "houseabsolute/precious" }
+
 [dependencies]
 clap = "2"
-clippy = { version = "*", optional = true }
 failure = "0.1.5"
 failure_derive = "0.1.5"
-glob = "0.2.11"
 globset = "0.4.1"
+ignore = "0.4.7"
 itertools = "0.8.0"
 log = "0.4"
 loggerv = "0.7"
 md5 = "0.6.1"
+path-clean = "0.1.0"
 rayon = "1.0.3"
-regex = "1"
 toml = "0.4.10"
-walkdir = "2.2.7"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 spectral = "0.6.0"

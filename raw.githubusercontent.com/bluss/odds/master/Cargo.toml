@@ -17,13 +17,12 @@ categories = ["no-std"]
 rawpointer = "0.1.0"
 rawslice = "0.1.0"
 unchecked-index = "0.2.2"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-itertools = "0.7.2"
+itertools = "0.8"
 memchr = "2.0"
-lazy_static = "0.2.2"
-quickcheck = { version = "0.4.1", default-features = false }
+lazy_static = "1"
+quickcheck = { version = "0.8", default-features = false }
 
 [features]
 default = []

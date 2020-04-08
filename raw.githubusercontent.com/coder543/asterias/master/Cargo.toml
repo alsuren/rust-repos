@@ -9,9 +9,6 @@ authors = [ "coder543" ]
 name = "asterias"
 path = "src/asterias/lib.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.sdl2]
 
 git  = "https://github.com/AngryLawyer/rust-sdl2.git"

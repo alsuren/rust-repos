@@ -1,18 +1,26 @@
 [package]
 name = "spsc-bip-buffer"
 description = "A concurrent, spsc ring-buffer with sized reservations"
-version = "0.1.2-pre"
+version = "0.2.2-pre"
 authors = ["Andrea Lattuada <andrea@lattuada.me>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
 
+repository = "https://github.com/utaal/spsc-bip-buffer"
+readme = "README.md"
+
+keywords = ["spsc", "buffer", "queue"]
+categories = ["concurrency"]
+
 [features]
 default = []
+debug = []
+nightly_perf_example = []
 
 [dependencies]
 cache_line_size = "^1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 rand = "^0.6"
 core_affinity = "0.5.9"
+streaming-harness-hdrhist = "^0.2"

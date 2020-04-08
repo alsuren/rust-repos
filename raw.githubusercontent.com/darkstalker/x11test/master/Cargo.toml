@@ -8,4 +8,3 @@ x11 = { version = "2.11.0", features = ["xlib", "xinput"] }
 rand = "0.3.14"
 array_ext = "0.2.0"
 glengine = { path = "glengine" }
-boringssl = "0.0.5"

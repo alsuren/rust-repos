@@ -11,14 +11,16 @@ config = "0.9"
 failure = "0.1"
 serde = "1.0"
 serde_derive = "1.0"
-rusoto_core = "0.37"
-rusoto_s3 = "0.37"
+futures = "0.1"
+radix_trie = "0.1"
+rusoto_core = "0.40"
+rusoto_s3 = "0.40"
+uuid = { version = "0.6", features = ["v4"] }
+chrono = "0.4"
+openssl = "*"
+diesel = { version = "1.4", features = ["postgres", "uuid", "chrono", "r2d2"] }
 tower-web = "0.3"
 http = "0.1"
-svc-authn = { version = "0.3", features = ["jose", "tower-web"] }
-svc-authz = "0.3"
-boringssl = "0.0.5"
-
-[patch.crates-io]
-# ES256 support
-jsonwebtoken = { git = "https://github.com/manifest/jsonwebtoken", branch = "feature/ec" }
+url = "1.7"
+svc-authn = { version = "0.5", features = ["jose", "tower-web"] }
+svc-authz = "0.7"

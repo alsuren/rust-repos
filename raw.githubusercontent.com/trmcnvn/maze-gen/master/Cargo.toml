@@ -5,4 +5,5 @@ authors = ["Thomas McNiven <hello@vevix.net>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+ndarray = "0.12.1"
+rand = { version = "0.6", features = ["std"] }

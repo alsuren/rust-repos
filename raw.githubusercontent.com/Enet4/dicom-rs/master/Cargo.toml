@@ -1,9 +1,14 @@
 [workspace]
 members = [
+    "parent",
     "core",
+    "encoding",
     "parser",
+    "transfer-syntax-registry",
     "object",
     "dictionary-std",
-    "dictionary-builder"
+    "dictionary-builder",
+    "dcmdump",
+    "ul",
+    "scpproxy"
 ]
-repository = "https://github.com/Enet4/dicom-rs"

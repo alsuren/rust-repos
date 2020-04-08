@@ -1,16 +1,20 @@
 [package]
-name = "sudoku"
-version = "0.1.0"
+name = "sudoku_rs"
+version = "0.2.4"
 authors = ["laxect <me@gyara.moe>"]
 edition = "2018"
+description = "a package for sudoku in pure rust"
+repository = "https://github.com/laxect/sudoku-rs"
+license = "MIT"
+readme = "README.md"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+bench = false
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
-criterion = "0.2"
+criterion = "0.3.0"
 
 [[bench]]
 name = "dfs_solve"

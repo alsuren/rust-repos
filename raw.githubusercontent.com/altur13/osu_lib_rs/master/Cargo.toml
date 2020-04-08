@@ -1,9 +1,0 @@
-[package]
-name = "osu_lib_rs"
-version = "0.1.0"
-authors = ["altur13 <altur13.osu@gmail.com>"]
-edition = "2018"
-
-[dependencies]
-utils_rs = { path = "../utils_rs" }
-boringssl = "0.0.5"

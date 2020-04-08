@@ -1,6 +1,6 @@
 [package]
 name = "json5"
-version = "0.2.4"
+version = "0.2.7"
 authors = ["Callum Oakley <c.oakley108@gmail.com>"]
 description = "A Rust JSON5 serializer and deserializer which speaks Serde."
 license = "ISC"
@@ -13,7 +13,6 @@ edition = "2018"
 pest = "2.0"
 pest_derive = "2.0"
 serde = "1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_derive = "1.0"

@@ -11,7 +11,6 @@ readme = "README.md"
 [dependencies]
 isolang={version="1", optional=true}
 chrono={version="0.4", optional=true}
-boringssl = "0.0.5"
 
 [features]
 default = ["translations", "isolang", "chrono"]

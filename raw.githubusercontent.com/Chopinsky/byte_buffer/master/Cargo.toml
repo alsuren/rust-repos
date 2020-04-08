@@ -1,11 +1,23 @@
 [package]
-name = "byte_buffer"
-version = "0.1.1"
-description = "A buffer-pool library aimed to provide performant and reused byte buffers for IO code"
-license = "MIT"
+name = "sync_tools"
+version = "0.1.0"
 authors = ["Jacob Zuo <chopinsky@live.com>"]
+license = "MIT"
 edition = "2018"
+keywords = ["atomic", "sync", "sync.Pool", "buffer"]
+categories = ["concurrency", "memory-management", "data-structures"]
 
-[dependencies]
-crossbeam-channel = "^0.3.0"
-boringssl = "0.0.5"
+[dependencies.byte_buffer]
+version = "0.1.2"
+path = "./byte_buffer"
+
+[dependencies.syncpool]
+version = "0.1.5"
+path = "./syncpool"
+
+[workspace]
+members = [
+    ".",
+    "byte_buffer",
+    "syncpool",
+]

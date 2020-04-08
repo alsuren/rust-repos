@@ -1,6 +1,6 @@
 [package]
 name = "suffix"
-version = "1.1.0"  #:version
+version = "1.2.0"  #:version
 authors = ["Andrew Gallant <jamslam@gmail.com>"]
 description = "Suffix arrays."
 documentation = "https://docs.rs/suffix"
@@ -34,7 +34,4 @@ path = "tests/bench.rs"
 opt-level = 3
 
 [dev-dependencies]
-quickcheck = { version = "0.7", default-features = false }
-
-[dependencies]
-boringssl = "0.0.5"
+quickcheck = { version = "0.9", default-features = false }

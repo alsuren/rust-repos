@@ -1,18 +1,18 @@
 [package]
 name = "alphanumeric-sort"
-version = "1.0.6"
+version = "1.0.12"
 authors = ["Magic Len <len@magiclen.org>"]
+edition = "2018"
 repository = "https://github.com/magiclen/alphanumeric-sort"
 homepage = "https://magiclen.org/alphanumeric-sort"
 keywords = ["sort", "alphanumeric", "path", "file", "number"]
 categories = ["algorithms"]
-description= "This crate can help you sort order for files and folders whose names contain numerals."
+description = "This crate can help you sort order for files and folders whose names contain numerals."
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/alphanumeric-sort", branch = "master" }
-appveyor = { repository = "magiclen/alphanumeric-sort", branch = "master", service = "github" }
+[badges.travis-ci]
+repository = "magiclen/alphanumeric-sort"
+branch = "master"
 
 [dependencies]
-boringssl = "0.0.5"

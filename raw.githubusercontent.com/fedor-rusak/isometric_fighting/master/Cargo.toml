@@ -1,17 +1,13 @@
 [package]
 name = "isometric_fighting"
-version = "0.1.12"
+version = "0.1.28"
 authors = ["Fedor Rusak <node@fedor-rusak.ru>"]
 edition = "2018"
+license = "MIT"
 
 [dependencies]
-cgmath = { version = "0.16", features = ["mint"]}
-boringssl = "0.0.5"
-# ggez = "0.5.0-rc.0"
-
-[dependencies.ggez]
-git="https://github.com/ggez/ggez"
-rev = "bf1db8501bf8fcf29c773d8e497440312b9541b3"
+ggez = { git = "https://github.com/fedor-rusak/ggez", rev = "4fdde1c" }
+rand = "0.7"
 
 [profile.dev]
 opt-level=2

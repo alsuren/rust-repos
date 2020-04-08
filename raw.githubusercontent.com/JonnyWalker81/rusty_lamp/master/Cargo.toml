@@ -6,4 +6,3 @@ authors = ["jonnywalker"]
 [dependencies]
   clap = "*"
   rusty_lamp_lib = {path = "rusty_lamp_lib"}
-boringssl = "0.0.5"

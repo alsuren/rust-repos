@@ -1,6 +1,6 @@
 [package]
 name = "timeseries"
-version = "0.1.3"
+version = "0.1.5"
 authors = ["Krzysztof Langner <klangner@gmail.com>"]
 description = "time Series library"
 keywords = ["timeseries"]
@@ -15,4 +15,11 @@ edition = "2018"
 [dependencies]
 chrono = "0.4"
 rand = "0.6"
-boringssl = "0.0.5"
+lexical = "^2.2"
+csv = "1.1"
+
+[dev-dependencies]
+assert_approx_eq = "1.1.0"
+gnuplot = "0.0.31"
+clap = "2"
+criterion = "0.2"

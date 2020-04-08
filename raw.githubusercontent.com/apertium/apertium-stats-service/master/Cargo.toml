@@ -16,7 +16,7 @@ hyper-tls = "0.2.0"
 lazy_static = "1.2.0"
 quick-xml = "0.12.1"
 regex = "1.0.0"
-rocket = "0.4.0"
+rocket = "0.4.2"
 rocket_contrib = { version = "0.4.0", default-features = false, features = ["json"] }
 rocket_cors = "0.4.0-rc.3"
 serde = "1.0.45"
@@ -32,7 +32,6 @@ graphql_client = "0.6.0"
 reqwest = "0.9.5"
 failure = "0.1.4"
 slog-envlogger = "2.1.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 diesel_cli = { version = "1.2.0", default-features = false, features = ["sqlite"] }

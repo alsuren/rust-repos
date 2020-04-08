@@ -1,14 +1,20 @@
 [package]
-
 name = "rcon"
-version = "0.1.0"
+version = "0.2.1"
 authors = ["panicbit <panicbit@users.noreply.github.com>"]
 description = "An rcon protocol implementation"
-license = "MIT/Apache-2.0"
+license = "MIT OR Apache-2.0"
 keywords = ["source", "rcon", "protocol", "minecraft"]
 repository = "https://github.com/panicbit/rust-rcon"
+edition = "2018"
 
 [dependencies]
-podio = "0.1"
-bufstream = "0.1"
-boringssl = "0.0.5"
+err-derive = "0.2.2"
+tokio = { version = "0.2.13", features = ["tcp", "io-util", "dns", "time"] }
+
+[dev-dependencies]
+tokio = { version = "0.2.13", features = ["macros"] }
+
+[features]
+default = ["delay"]
+delay = []

@@ -1,6 +1,14 @@
 [workspace]
 
-members = ["rustorrent"]
+members = [
+    "flat-storage-mmap",
+    "flat-storage",
+    "service",
+    "backend",
+    "frontend",
+    "xtask",
+    "cli",
+]
 
 [profile.release]
 lto = true

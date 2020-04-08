@@ -5,4 +5,5 @@ authors = ["Yashawant Retharekar <yashwant.retharekar@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+rust-crypto = "^0.2"
+fancy-regex = "0.1.0"

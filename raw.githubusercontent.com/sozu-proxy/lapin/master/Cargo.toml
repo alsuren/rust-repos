@@ -1,2 +1,51 @@
-[workspace]
-members = ["async/", "futures/", "meta/"]
+[package]
+name = "lapin"
+version = "0.39.0"
+edition = "2018"
+authors = ["Geoffroy Couprie <geo.couprie@gmail.com>", "Marc-Antoine Perennou <Marc-Antoine@Perennou.com>"]
+description = "AMQP client library"
+repository = "https://github.com/sozu-proxy/lapin"
+readme = "README.md"
+documentation = "https://docs.rs/lapin"
+keywords = ["amqp", "rabbitmq", "mio", "futures"]
+categories = ["database"]
+license = "MIT"
+build = "build.rs"
+
+[features]
+default                   = ["native-tls"]
+native-tls                = ["amq-protocol/native-tls"]
+openssl                   = ["amq-protocol/openssl"]
+rustls                    = ["rustls-native-certs"]
+rustls-native-certs       = ["amq-protocol/rustls-native-certs"]
+rustls-webpki-roots-certs = ["amq-protocol/rustls-webpki-roots-certs"]
+
+[build-dependencies]
+amq-protocol-codegen = "^5.1"
+serde_json = "^1.0"
+
+[dependencies.amq-protocol]
+version = "^5.1"
+default-features = false
+
+[dependencies.mio]
+version  = "^0.7"
+features = ["os-poll", "tcp"]
+
+[dependencies]
+crossbeam-channel = "^0.4"
+futures-core = "^0.3"
+log = "^0.4"
+parking_lot = "^0.10"
+pinky-swear = "^4.0"
+
+[dev-dependencies]
+env_logger = "^0.7"
+futures-executor = "^0.3"
+futures-util = "^0.3"
+futures-test = "^0.3"
+tcp-stream = "^0.10"
+
+[[example]]
+name = "custom_tls_connection"
+required-features = ["native-tls"]

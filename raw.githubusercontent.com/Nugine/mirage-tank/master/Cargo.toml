@@ -4,9 +4,6 @@ version = "0.2.3"
 authors = ["Nugine <nugine@foxmail.com>"]
 edition = "2018"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.image]
 version = "0.21.1"
 default-features = false

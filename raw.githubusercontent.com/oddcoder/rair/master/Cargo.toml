@@ -1,31 +1,30 @@
+[workspace]
+members = [
+  "rair-env",
+  "rair-io",
+  "rtrees",
+  "test_file",
+]
+
 [package]
-name = "rair"
+name = "rcore"
 version = "0.1.0"
 authors = ["oddcoder <ahmedsoliman@oddcoder.com>"]
-build = "build.rs"
-
-[[bin]]
-name = "rahash"
-path = "src/rahash.rs"
-
-[[bin]]
-name = "rafind"
-path = "src/rafind.rs"
-[[bin]]
-name = "radiff"
-path = "src/radiff.rs"
+license = "LGPL-3.0-or-later"
+repository = "https://github.com/oddcoder/rair"
+keywords = ["Rair", "Core"]
+description = "Core module for Rair"
+categories = ["cli"]
+readme = "readme.md"
 
 [dependencies]
-hex = "*"
-libc = "*"
-getopts = "*"
-parking_lot = "*"
-r_cons = {path = "r_cons"}
-r_core = {path = "r_core"}
-r_crypto = {path = "r_crypto"}
-r_hash = {path = "r_hash"}
-r_io = {path = "r_io"}
-r_search = {path = "r_search"}
-r_util = {path = "r_util"}
-serde_json = "*"
-boringssl = "0.0.5"
+flate2 = "1.0"
+rair-env = {path = "rair-env"}
+rair-io = {path = "rair-io"}
+rtrees = {path = "rtrees"}
+serde = { version = "1.0", features = ["derive"]}
+serde_cbor = "0.10"
+yansi = "0.5"
+
+[dev-dependencies]
+test_file = {path = "test_file"}

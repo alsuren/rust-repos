@@ -7,7 +7,6 @@ edition = "2018"
 description = "reusable code and helper functions related to string checking and manipulation."
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 criterion = "0.2"

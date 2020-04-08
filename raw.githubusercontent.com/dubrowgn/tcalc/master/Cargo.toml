@@ -1,11 +1,12 @@
 [package]
 name = "tcalc"
 description = "A featureful calculator for when you want to do math in a terminal."
-version = "1.6.13"
+version = "1.6.14"
 authors = ["dubrowgn"]
 license = "MIT"
 repository = "https://github.com/dubrowgn/tcalc.git"
 documentation = "https://github.com/dubrowgn/tcalc"
+edition = "2018"
 
 include = [
 	"Cargo.toml",
@@ -15,8 +16,8 @@ include = [
 ]
 
 [dependencies]
-tcalc-rustyline = "1.0.1"
-boringssl = "0.0.5"
+dirs = "2.0.1"
+tcalc-rustyline = "1.0.2"
 #tcalc-rustyline = { path = "../rustyline" }
 
 [features]

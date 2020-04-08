@@ -3,8 +3,5 @@ name = "tiny-rts"
 version = "0.1.0"
 authors = ["Daniel Wiberg <daniel@skillster.se>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.tiny]
 path = "./tiny"

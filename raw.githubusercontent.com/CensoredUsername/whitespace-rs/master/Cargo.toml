@@ -34,7 +34,6 @@ num-bigint = "0.*.*"
 num-traits = "0.*.*"
 dynasm     = "^0.2.0"
 dynasmrt   = "^0.2.0"
-boringssl = "0.0.5"
 
 [profile.release]
 debug = true

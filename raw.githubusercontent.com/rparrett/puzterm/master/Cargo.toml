@@ -5,10 +5,8 @@ authors = ["rparrett <robparrett@gmail.com>"]
 
 [dependencies]
 encoding = "0.2.33"
-termion = "1.5.1"
+termion = "^1.5"
 stopwatch = "0.0.7"
-boringssl = "0.0.5"
 
 [dependencies.nom]
-version = "^4.0"
-features = ["verbose-errors"]
+version = "^5.0"

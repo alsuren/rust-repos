@@ -1,8 +1,9 @@
 [package]
 name = "dhcp4r"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Richard Warburton <richard@warburton.it>"]
 description = "IPv4 DHCP library with working server example."
+edition = "2018"
 
 # These URLs point to more information about the repository.
 #documentation = "..."
@@ -19,4 +20,4 @@ license = "BSD-3-Clause"
 enum-primitive-derive = "^0.1"
 num-traits = "^0.1"
 time = "0.1"
-boringssl = "0.0.5"
+nom = "5.0.1"

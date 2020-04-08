@@ -8,7 +8,7 @@ categories = ["algorithms", "science", "no-std"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/rust-num/num-iter"
 name = "num-iter"
-version = "0.1.39"
+version = "0.1.40"
 readme = "README.md"
 build = "build.rs"
 exclude = ["/ci/*", "/.travis.yml", "/bors.toml"]
@@ -17,14 +17,13 @@ exclude = ["/ci/*", "/.travis.yml", "/bors.toml"]
 features = ["std"]
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dependencies.num-integer]
-version = "0.1.38"
+version = "0.1.42"
 default-features = false
 
 [dependencies.num-traits]
-version = "0.2.4"
+version = "0.2.11"
 default-features = false
 
 [features]
@@ -33,4 +32,4 @@ i128 = ["num-integer/i128", "num-traits/i128"]
 std = ["num-integer/std", "num-traits/std"]
 
 [build-dependencies]
-autocfg = "0.1.3"
+autocfg = "1"

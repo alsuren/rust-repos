@@ -1,6 +1,6 @@
 [package]
 name = "sloggers"
-version = "0.3.2"
+version = "0.3.5"
 authors = ["Takeru Ohta <phjgt308@gmail.com>"]
 description = "This library provides frequently used slog loggers and convenient functions"
 homepage = "https://github.com/sile/sloggers"
@@ -8,25 +8,28 @@ repository = "https://github.com/sile/sloggers"
 readme = "README.md"
 keywords = ["logger"]
 license = "MIT"
+edition = "2018"
 
 [badges]
 travis-ci = {repository = "sile/sloggers"}
 codecov = {repository = "sile/sloggers"}
 
+[features]
+default = ["libflate", "slog-kvfilter"]
+
 [dependencies]
 chrono="0.4"
-libflate = "0.1"
+libflate = {version = "0.1", optional = true}
 serde = "1"
 serde_derive = "1"
 slog = "2"
 slog-async = "2"
 slog-term = "2"
 slog-scope = "4"
-slog-kvfilter = "~0.7"
+slog-kvfilter = {version = "~0.7", optional = true}
 slog-stdlog = "3"
 trackable = "0.2.19"
 regex="1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 clap = "2"

@@ -5,4 +5,3 @@ authors = ["Mike Krinkin <krinkin@google.com>"]
 
 [dependencies]
 sparse_table = { git = "https://github.com/krinkinmu/rust-sparse-table.git" }
-boringssl = "0.0.5"

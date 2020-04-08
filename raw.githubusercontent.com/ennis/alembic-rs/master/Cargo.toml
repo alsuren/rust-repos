@@ -7,4 +7,3 @@ edition = "2018"
 [dependencies]
 alembic-sys = {path = "alembic-sys"}
 libc = "*"
-boringssl = "0.0.5"

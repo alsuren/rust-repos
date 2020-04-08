@@ -11,6 +11,3 @@ pkg-config = "0.3.11"
 [features]
 default = []
 srslte_rf = []
-
-[dependencies]
-boringssl = "0.0.5"

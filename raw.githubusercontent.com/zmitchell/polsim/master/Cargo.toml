@@ -1,17 +1,24 @@
 [package]
 authors = ["Zach Mitchell <zmitchell@fastmail.com>"]
 name = "polsim"
-version = "0.1.0"
+version = "0.1.2"
+description = "CLI application for polarization simulations"
+repository = "https://github.com/zmitchell/polsim"
+homepage = "https://github.com/zmitchell/polsim"
+readme = "README.md"
+categories = ["science", "simulation", "command-line-utilities"]
+keywords = ["physics", "optics", "lasers"]
+license = "MIT OR Apache-2.0"
+
 [dependencies]
 error-chain = "~0.12.0"
-polarization = "~0.1"
+polarization = "~0.2"
 quicli = "~0.3.0"
 serde = "~1.0.0"
 serde_derive = "~1.0.0"
 toml = "~0.4.6"
 num = "~0.2.0"
 prettytable-rs = "~0.8.0"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 proptest = "~0.8.6"

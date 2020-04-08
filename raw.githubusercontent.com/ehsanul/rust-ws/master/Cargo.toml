@@ -14,7 +14,6 @@ path = "src/ws/lib.rs"
 log = "*"
 time = "*"
 rust-crypto = "*"
-boringssl = "0.0.5"
 
 [dependencies.http]
 git = "https://github.com/chris-morgan/rust-http"

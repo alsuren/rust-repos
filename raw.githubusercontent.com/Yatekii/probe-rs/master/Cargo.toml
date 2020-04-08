@@ -1,9 +1,7 @@
 [workspace]
 members = [
-    "coresight",
-    "probe",
-    "probe/stlink",
-    "probe/daplink",
+    "probe-rs",
+    "probe-rs-t2rust",
     "cli",
-    "memory"
+    "gdb-server",
 ]

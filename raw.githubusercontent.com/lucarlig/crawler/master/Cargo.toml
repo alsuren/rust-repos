@@ -5,4 +5,7 @@ authors = ["luca <luca@quantum1net.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+clap = "2.33.0"
+reqwest = "0.9.17"
+select = "0.4.2"
+config = "0.9.3"

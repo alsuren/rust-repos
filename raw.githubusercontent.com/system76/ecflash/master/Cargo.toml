@@ -10,5 +10,7 @@ repository = "https://github.com/system76/ecflash"
 [lib]
 name = "ecflash"
 
-[dependencies]
-boringssl = "0.0.5"
+[dev-dependencies]
+libc = "0.2"
+redox_hwio = "0.1"
+serialport = "3.3"

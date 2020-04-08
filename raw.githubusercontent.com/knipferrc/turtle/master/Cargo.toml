@@ -5,4 +5,5 @@ authors = ["knipferrc <knipferrc@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-boringssl = "0.0.5"
+whoami = "0.5.3"
+config = "0.9"

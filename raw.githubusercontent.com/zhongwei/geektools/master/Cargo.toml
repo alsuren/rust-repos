@@ -1,9 +1,12 @@
 [workspace]
 members = [
+    "face",
+    "qrcode",
     "ideas_to_try",
     "http",
     "fs",
     "rdb",
     "kvdb",
     "cli",
+    "search",
 ]

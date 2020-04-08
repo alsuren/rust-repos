@@ -7,7 +7,6 @@ build = "build.rs"
 
 [dependencies]
 cranelift = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 peg = { version = "*" }

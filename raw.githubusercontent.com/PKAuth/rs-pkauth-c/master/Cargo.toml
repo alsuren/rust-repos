@@ -17,7 +17,6 @@ ring={git = "https://github.com/jprider63/ring.git"}
 serde = "*"
 serde_json = "*"
 staticpublicsuffix = "*"
-boringssl = "0.0.5"
 
 [build-dependencies]
 cbindgen = "*"

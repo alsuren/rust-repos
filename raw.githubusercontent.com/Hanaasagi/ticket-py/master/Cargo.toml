@@ -10,4 +10,3 @@ crate-type = ["cdylib"]
 [dependencies]
 pyo3 = { version = "0.4", features = ["extension-module"] }
 ticket = { git = "https://github.com/Hanaasagi/ticket" }
-boringssl = "0.0.5"

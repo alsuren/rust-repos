@@ -1,10 +1,10 @@
 [package]
 name = "deltae"
-version = "0.1.4"
+version = "0.2.1"
 authors = ["Ryan O'Beirne <ryanobeirne@gmail.com>"]
 description = "Calculate Delta E between two colors in CIE Lab space."
 edition = "2018"
-license = "GPL-3.0"
+license = "MIT"
 documentation = "https://ryanobeirne.github.io/deltae"
 homepage = "https://github.com/ryanobeirne/deltae"
 repository = "https://github.com/ryanobeirne/deltae.git"
@@ -12,10 +12,11 @@ readme = "README.md"
 
 [[example]]
 name = "deltae"
-path = "examples/deltae.rs"
+path = "examples/deltae/deltae.rs"
+
+[[example]]
+name = "readme"
+path = "examples/readme.rs"
 
 [dev-dependencies]
 clap = "2.32.0"
-
-[dependencies]
-boringssl = "0.0.5"

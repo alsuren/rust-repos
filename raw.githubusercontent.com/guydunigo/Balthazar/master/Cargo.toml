@@ -1,18 +1,27 @@
 [workspace]
-# name = "balthamar"
+# name = "balthazar"
 # version = "0.1.0"
 # authors = ["GONI Guillaume <gdn3@live.fr>"]
 
 members = [
     "balthacli",
     "balthalib",
-    "balthacephalo",
-    "balthapode",
-    "balthmessage",
-    "balthwasm",
-    "balthajob",
-    "balthnative",
     "balthernet",
+    "balthastore",
+    "balthaproto",
+    "balthamisc",
+    "balthurner",
+    "balthachain",
+    "balthwasm",
 ]
 
 default-members = ["balthacli"]
+
+[patch.crates-io]
+clap = { git = "https://github.com/clap-rs/clap/" }
+# libp2p = { git = "https://github.com/libp2p/rust-libp2p" }
+# libp2p = { git = "https://github.com/guydunigo/rust-libp2p" }
+# libp2p = { path = "../my_rust-libp2p" }
+# web3 = { git = "https://github.com/tomusdrw/rust-web3" }
+# multihash = { git = "https://github.com/multiformats/rust-multihash" }
+# ipfs-api = { path = "../rust-ipfs-api/ipfs-api" }

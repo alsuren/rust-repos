@@ -1,6 +1,6 @@
 [package]
 name = "walkdir"
-version = "2.2.7"  #:version
+version = "2.3.1"  #:version
 authors = ["Andrew Gallant <jamslam@gmail.com>"]
 description = "Recursively walk a directory."
 documentation = "https://docs.rs/walkdir/"
@@ -11,14 +11,17 @@ keywords = ["directory", "recursive", "walk", "iterator"]
 categories = ["filesystem"]
 license = "Unlicense/MIT"
 exclude = ["/ci/*", "/.travis.yml", "/appveyor.yml"]
+edition = "2018"
 
 [badges]
 travis-ci = { repository = "BurntSushi/walkdir" }
 appveyor = { repository = "BurntSushi/walkdir" }
 
+[workspace]
+members = ["walkdir-list"]
+
 [dependencies]
 same-file = "1.0.1"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies.winapi]
 version = "0.3"
@@ -28,9 +31,4 @@ features = ["std", "winnt"]
 version = "0.1.1"
 
 [dev-dependencies]
-docopt = "1.0.1"
-quickcheck = { version = "0.7", default-features = false }
-rand = "0.5"
-serde = "1"
-serde_derive = "1"
 doc-comment = "0.3"

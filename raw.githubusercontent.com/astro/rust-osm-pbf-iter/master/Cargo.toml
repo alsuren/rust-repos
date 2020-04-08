@@ -1,9 +1,11 @@
 [package]
 name = "osm_pbf_iter"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Astro <astro@spaceboyz.net>"]
 license = "GPL-3.0"
 description = "Parse OpenStreetMap .pbf dumps while trying to avoid copying"
+documentation = "https://docs.rs/osm_pbf_iter/"
+repository = "https://github.com/astro/rust-osm-pbf-iter/"
 
 [profile.release]
 debug = true
@@ -11,8 +13,7 @@ lto = true
 opt-level = 3
 
 [dependencies]
-byteorder = "1.2"
-flate2 = { version = "1.0", features = ["zlib"], default-features = false }
-num_cpus = "1.8"
-protobuf_iter = "0.1.1"
-boringssl = "0.0.5"
+byteorder = "1"
+flate2 = { version = "1", features = ["rust_backend"], default-features = false }
+num_cpus = "1"
+protobuf_iter = ">= 0.1.2"

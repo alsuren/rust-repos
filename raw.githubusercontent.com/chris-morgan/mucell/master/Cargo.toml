@@ -13,6 +13,3 @@ license = "MIT/Apache-2.0"
 [features]
 const_fn = []
 no_std = []
-
-[dependencies]
-boringssl = "0.0.5"

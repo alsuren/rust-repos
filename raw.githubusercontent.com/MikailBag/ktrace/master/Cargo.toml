@@ -1,16 +1,23 @@
 [package]
-name = "ktrace"
+name = "lxtrace"
 version = "0.1.0"
 authors = ["Mikail Bagishov <bagishov.mikail@yandex.ru>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT OR Apache-2.0"
+description = "linux system call tracer, similar to strace"
+repository = "https://github.com/mikailbag/lxtrace"
 
 [dependencies]
-crossbeam = "0.7.1"
-libc = "0.2.54"
-nix = "0.13.0"
-serde = "1.0.91"
-serde_json = "1.0.39"
-tiny-nix-ipc = { git = "https://github.com/mikailbag/tiny-nix-ipc" }
-boringssl = "0.0.5"
+crossbeam = "0.7.2"
+libc = "0.2.65"
+nix = "0.16.0"
+serde = { version = "1.0.101", features = ["derive"] }
+serde_json = "1.0.41"
+tiny-nix-ipc = {version = "0.1.1", features = ["ser_json"]}
+pest = "2.1.2"
+pest_derive = "2.1.0"
+structopt = "0.3.3"
+anyhow = "1.0.14"
+rstack = {version = "0.3.1", default-features = false, features = ["unwind"]}
+rustc-demangle = "0.1.16"
+cpp_demangle = "0.2.13"

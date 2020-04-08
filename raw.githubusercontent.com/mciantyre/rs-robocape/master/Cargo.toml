@@ -17,6 +17,3 @@ path = "examples/rc_version.rs"
 [[example]]
 name = "rc_leds"
 path = "examples/rc_leds.rs"
-
-[dependencies]
-boringssl = "0.0.5"

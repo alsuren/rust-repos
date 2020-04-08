@@ -1,6 +1,6 @@
 [package]
 name = "influent"
-version = "0.5.1"
+version = "0.5.2"
 authors = ["gobwas <gobwas@gmail.com>", "Bastien Orivel <eijebong@bananium.fr>"]
 
 description = "InfluxDB Rust driver"
@@ -10,12 +10,13 @@ readme = "README.md"
 keywords = ["influx", "influxdb"]
 license = "MIT"
 
+maintenance = { status = "looking-for-maintainer" }
+
 [dependencies]
 hyper = { version = "0.12" }
 tokio = "0.1"
 tokio-executor = "0.1"
 http = "0.1"
-url = "1.7"
+url = "2.0"
 futures = "0.1"
 base64 = "0.10"
-boringssl = "0.0.5"

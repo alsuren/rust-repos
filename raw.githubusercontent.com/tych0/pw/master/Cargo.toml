@@ -1,6 +1,6 @@
 [package]
 name = "pw"
-version = "1.0.0"
+version = "1.1.0"
 authors = ["Tycho Andersen <tycho@tycho.ws>"]
 license = "Apache-2.0"
 description = "stateless password generation"
@@ -21,4 +21,3 @@ serde = "1"
 serde_derive = "1"
 tempfile = "2"
 time = "0.1"
-boringssl = "0.0.5"

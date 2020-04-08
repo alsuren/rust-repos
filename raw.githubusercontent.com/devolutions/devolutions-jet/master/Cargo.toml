@@ -1,6 +1,6 @@
 [package]
 name = "devolutions-jet"
-version = "0.4.0"
+version = "0.11.0"
 edition = "2018"
 readme = "README.md"
 license = "MIT/Apache-2.0"
@@ -9,40 +9,52 @@ authors = ["François Dubois <fdubois@devolutions.net>",
            "Vlad Aleksashyn <vlad.al.dp@gmail.com"]
 
 [dependencies]
-log = "0.4.6"
+jet-proto = { path = "./jet-proto" }
+picky = { version = "4.6", features = ["jose"] }
 clap = "2.32"
 url = "1.7.1"
+url_serde = "0.2.0"
 lazy_static = "1.2.0"
 futures = "0.1"
-tokio = "0.1.11"
-tokio-tcp = "0.1.2"
-tokio-io = "0.1"
-tokio-tls = "0.2.0"
+futures_03 = { version = "0.3", package = "futures", features = ["compat"] }
+tokio = "0.1"
+rustls = { git = "https://github.com/vaffeine/rustls.git", branch = "sni_jet_workaround", features = ["dangerous_configuration"] }
+tokio-rustls = "0.10.2"
+webpki = "0.21.0"
 native-tls = "0.2"
-env_logger = "0.5.13"
 byteorder = "1.2.7"
 bytes = "0.4"
-uuid = {version = "0.7.1", features = ["v4"]}
+uuid = { version = "0.7.1", features = ["v4", "serde"] }
 pcap-file = "0.10.0"
-packet = { git = "https://github.com/fdubois1/rust-packet.git"}
-saphir = { version = "0.9.3", features = ["request_handler"] }
+packet = { git = "https://github.com/fdubois1/rust-packet.git" }
+saphir = { version = "0.9.5", features = ["https", "request_handler"] }
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
-slog = "2.4"
+serde_urlencoded = "0.5.3"
+slog = { version = "2.5", features = ["max_level_trace","release_max_level_debug"] }
 slog-term = "2.4"
 slog-async = "2.3"
-chrono = "0.4"
+slog-scope = "4.3"
+slog-scope-futures = { git = "https://github.com/Devolutions/slog-scope-futures.git" }
+chrono = { version = "0.4", features = ["serde"] }
+failure = "0.1"
+x509-parser = "0.6.0"
+sspi = "0.3.0"
+ironrdp = "0.4"
+hyper = "0.12.32"
+tungstenite = "0.8.1"
+sha1 = "0.6.0"
+base64 = "0.9.1"
+slog-stdlog = "4.0"
+ring = "0.16.0"
+spsc-bip-buffer = { git = "https://github.com/Devolutions/spsc-bip-buffer.git", branch = "drop-code-in-send" }
+indexmap = "1.0"
 
-jet-proto = { path = "./jet-proto"}
-rdp-proto = { path = "./rdp-proto"}
-boringssl = "0.0.5"
-
-[target.'cfg(target_os = "linux")'.dependencies]
-openssl = "0.10"
-
-[target.'cfg(target_os = "windows")'.dependencies]
-schannel = "0.1"
+[patch.crates-io]
+rustls = { git = "https://github.com/vaffeine/rustls.git", branch = "sni_jet_workaround", features = ["dangerous_configuration"] }
 
 [dev-dependencies]
 tempfile = "3.0"
+reqwest = "0.9.20"
+exitcode = "1.1"

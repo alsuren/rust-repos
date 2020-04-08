@@ -1,6 +1,6 @@
 [package]
 name = "finally-block"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Seulgi Kim <seulgi.kim@kodebox.io>"]
 edition = "2018"
 license = "MIT"
@@ -13,4 +13,3 @@ It helps a user to write the deferred statements that should be executed even so
 """
 
 [dependencies]
-boringssl = "0.0.5"

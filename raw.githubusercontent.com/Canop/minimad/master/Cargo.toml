@@ -1,14 +1,14 @@
 [package]
 name = "minimad"
-version = "0.3.2"
+version = "0.6.4"
 authors = ["dystroy <denys.seguret@gmail.com>"]
 repository = "https://github.com/Canop/minimad"
 description = "light Markdown parser"
 edition = "2018"
-keywords = ["markdown", "parser"]
+keywords = ["markdown", "parser", "template"]
 license = "MIT"
 categories = ["gui", "parser-implementations"]
 readme = "README.md"
 
 [dependencies]
-boringssl = "0.0.5"
+lazy_static = "1"

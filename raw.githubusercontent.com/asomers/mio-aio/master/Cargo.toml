@@ -1,6 +1,6 @@
 [package]
 name = "mio-aio"
-version = "0.4.1-pre"
+version = "0.4.2-pre"
 authors = ["Alan Somers <asomers@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
@@ -14,14 +14,13 @@ documentation = "https://asomers.github.io/mio-aio/mio_aio/"
 
 [dependencies]
 mio = "0.6.13"
-nix = "0.12.0"
-boringssl = "0.0.5"
+nix = "0.15.0"
 
 [dev-dependencies]
 divbuf = "0.2.0"
-log = "0.3.1"
+log = "0.3.4"
 sysctl = "0.1"
-tempfile = "2"
+tempfile = "3.0"
 
 [[test]]
 name = "functional"

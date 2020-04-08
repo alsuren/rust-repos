@@ -1,6 +1,6 @@
 [package]
 name = "cargo-husky"
-version = "1.3.0"
+version = "1.5.0"
 authors = ["rhysd <lin90162@yahoo.co.jp>"]
 description = "husky for cargo"
 repository = "https://github.com/rhysd/cargo-husky"
@@ -18,7 +18,7 @@ no-dev-version = true
 [badges]
 travis-ci = { repository = "rhysd/cargo-husky" }
 appveyor = { repository = "rhysd/cargo-husky" }
-maintenance = { status = "actively-developed" }
+maintenance = { status = "passively-maintained" }
 
 [[test]]
 name = "integration"
@@ -37,7 +37,6 @@ run-for-all = []
 user-hooks = []
 
 [dependencies]
-boringssl = "0.0.5"
 
 [dev-dependencies]
 libc = "0.2.43"

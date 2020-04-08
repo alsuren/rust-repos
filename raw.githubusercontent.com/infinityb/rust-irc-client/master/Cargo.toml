@@ -7,9 +7,6 @@ authors = [ "Stacey Ell <stacey.ell@gmail.com>" ]
 name = "irc-client"
 path = "src/irc_client.rs"
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.irc]
 git = "https://github.com/infinityb/rust-irc"
 

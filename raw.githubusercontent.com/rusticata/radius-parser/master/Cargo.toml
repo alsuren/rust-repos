@@ -5,13 +5,14 @@ keywords = ["RADIUS","parser","nom"]
 homepage = "https://github.com/rusticata/radius-parser"
 repository = "https://github.com/rusticata/radius-parser.git"
 name = "radius-parser"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Pierre Chifflier <chifflier@wzdftpd.net>"]
-categories = ["parsing"]
+readme = "README.md"
+categories = ["network-programming", "parser-implementations"]
+edition = "2018"
 
 [dependencies]
-nom = {version = "4.0", features = ["verbose-errors"]}
-boringssl = "0.0.5"
+nom = "5.0"
 
 [badges]
 travis-ci = { repository = "rusticata/radius-parser" }

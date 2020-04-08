@@ -8,15 +8,22 @@ keywords = ["ping", "latency", "network", "graph", "cli"]
 repository = "https://github.com/Calinou/lagraph"
 categories = ["command-line-interface"]
 readme = "README.md"
+edition = "2018"
+
+[badges]
+appveyor = { repository = "https://github.com/Calinou/lagraph" }
+travis-ci = { repository = "Calinou/lagraph" }
+is-it-maintained-issue-resolution = { repository = "https://github.com/Calinou/lagraph" }
+is-it-maintained-open-issues = { repository = "https://github.com/Calinou/lagraph" }
+maintenance = { status = "passively-maintained" }
 
 [profile.release]
 lto = true
 
 [dependencies]
-ansi_term = "0.11.0"
-chrono = "0.4.6"
-terminal_size = "0.1.8"
-boringssl = "0.0.5"
+ansi_term = "0.12.1"
+chrono = "0.4.11"
+terminal_size = "0.1.11"
 
 [dependencies.clap]
 version = "2.33.0"

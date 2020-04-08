@@ -16,6 +16,3 @@ exclude = ["*.enc"]
 
 [build-dependencies]
 csv = "1.0.0-beta.5"
-
-[dependencies]
-boringssl = "0.0.5"

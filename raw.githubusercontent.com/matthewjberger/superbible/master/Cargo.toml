@@ -5,68 +5,15 @@ authors = ["Matthew J. Berger <matthewberger@nevada.unr.edu>"]
 edition = "2018"
 
 [dependencies]
-glfw = "0.28.0"
-gl = "0.12.0"
-ktx = "0.1.0"
-boringssl = "0.0.5"
+glfw = "0.32.0"
+gl = "0.13.0"
+nom = "5.0.1"
+rand = "0.7.2"
 
 [dependencies.cgmath]
 version = "0.17.0"
 features = ["swizzle"]
 
-[[bin]]
-name = "solid-red"
-path = "src/00_solidred.rs"
-
-[[bin]]
-name = "colors"
-path = "src/01_colors.rs"
-
-[[bin]]
-name = "point"
-path = "src/02_point.rs"
-
-[[bin]]
-name = "triangle"
-path = "src/03_triangle.rs"
-
-[[bin]]
-name = "moving-triangle"
-path = "src/04_movingtriangle.rs"
-
-[[bin]]
-name = "colored-triangle"
-path = "src/05_coloredtriangle.rs"
-
-[[bin]]
-name = "tessellated-triangle"
-path = "src/06_tessellatedtriangle.rs"
-
-
-[[bin]]
-name = "geometry-shader"
-path = "src/07_geometryshader.rs"
-
-[[bin]]
-name = "fragment-shader"
-path = "src/08_fragmentshader.rs"
-
-[[bin]]
-name = "interpolation"
-path = "src/09_interpolation.rs"
-
-[[bin]]
-name = "spinny-cube"
-path = "src/10_spinnycube.rs"
-
-[[bin]]
-name = "spinny-cubes"
-path = "src/11_spinnycubes.rs"
-
-[[bin]]
-name = "textured-triangle"
-path = "src/12_texturedtriangle.rs"
-
-[[bin]]
-name = "ktx-viewer"
-path = "src/13_ktxviewer.rs"
+[lib]
+name = "support"
+path = "src/support/lib.rs"

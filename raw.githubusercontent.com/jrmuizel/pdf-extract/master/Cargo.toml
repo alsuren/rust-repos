@@ -1,12 +1,13 @@
 [package]
 authors = ["Jeff Muizelaar <jmuizelaar@mozilla.com>"]
 name = "pdf-extract"
-version = "0.4.7-alpha.0"
+version = "0.6.3-alpha.0"
 license = "MIT"
 documentation = "https://docs.rs/crate/pdf-extract/"
 description = "A library to extract content from pdfs"
 keywords = ["pdf2text", "text", "pdf", "pdf2txt"]
 repository = "https://github.com/jrmuizel/pdf-extract"
+edition = "2018"
 
 [profile.release]
 debug = true
@@ -14,10 +15,8 @@ debug = true
 [dependencies]
 adobe-cmap-parser = "0.3.3"
 encoding = "0.2.33"
-euclid = "0.15.1"
-flate2 = "0.2.17"
-lopdf = "0.15"
+euclid = "0.20.5"
+lopdf = "0.24"
 postscript = "0.11.1"
 type1-encoding-parser = "0.1.0"
 unicode-normalization = "0.1.5"
-boringssl = "0.0.5"

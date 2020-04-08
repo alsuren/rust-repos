@@ -1,10 +1,13 @@
 [package]
 name = "mint"
-version = "0.5.1"
+version = "0.5.4"
 authors = [
-	"Dzmitry Malyshau <kvarkus@gmail.com>",
-	"Ilya Bogdanov <fumlead@gmail.com>",
 	"Benjamin Saunders <ben.e.saunders@gmail.com>",
+	"Dzmitry Malyshau <kvarkus@gmail.com>",
+	"Evgenii P. <eupn@protonmail.com>",
+	"George Burton <burtonageo@gmail.com>",
+	"Ilya Bogdanov <fumlead@gmail.com>",
+	"Osspial <osspial@gmail.com>",
 ]
 description = "Math interoperability standard types"
 license = "MIT"
@@ -13,4 +16,3 @@ documentation = "https://docs.rs/mint"
 keywords = ["math"]
 
 [dependencies]
-boringssl = "0.0.5"

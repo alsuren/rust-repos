@@ -2,7 +2,7 @@
 authors = ["Nick Fitzgerald <fitzgen@gmail.com>"]
 edition = "2018"
 name = "walrus"
-version = "0.7.0"
+version = "0.15.0"
 license = "MIT/Apache-2.0"
 readme = "README.md"
 categories = ["wasm"]
@@ -23,22 +23,24 @@ path = "benches/benches.rs"
 harness = false
 
 [dependencies]
-failure = "0.1.2"
-id-arena = { version = "2.2.1", features = ['rayon'] }
-leb128 = "0.2.3"
-log = "0.4"
-rayon = "1.0.3"
-walrus-macro = { path = './crates/macro', version = '=0.7.0' }
-wasmparser = "0.30"
-boringssl = "0.0.5"
+anyhow = "1.0"
+id-arena = "2.2.1"
+leb128 = "0.2.4"
+log = "0.4.8"
+rayon = { version = "1.1.0", optional = true }
+walrus-macro = { path = './crates/macro', version = '=0.15.0' }
+wasmparser = "0.48.0"
+
+[features]
+parallel = ['rayon', 'id-arena/rayon']
 
 [dev-dependencies]
-env_logger = "0.6"
-criterion = "0.2.11"
+env_logger = "0.7.0"
+criterion = "0.3.0"
 
 [workspace]
 members = [
-    "./crates/fuzz",
+    "./crates/fuzz-utils",
     "./crates/macro",
     "./crates/tests",
     "./crates/tests-utils",

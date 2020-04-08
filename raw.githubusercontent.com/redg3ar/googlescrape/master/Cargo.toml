@@ -1,6 +1,6 @@
 [package]
 name = "googlescrape"
-version = "0.3.0"
+version = "0.3.1"
 authors = ["bepvte <bepvte@gmail.com>"]
 edition = "2018"
 description = "a library to scrape google results"
@@ -14,11 +14,12 @@ percent-encoding = "1.0.1"
 cfg-if = "0.1.9"
 scraper = "0.10.0"
 libc = "0.2.55"
-reqwest = "0.9.17"
-boringssl = "0.0.5"
+reqwest = {version = "0.9.17", default-features = true }
+serde = {version = "1.0.92", features = ["derive"], optional = true}
+rmp-serde = {version = "0.13.7", optional = true }
 
 [lib]
-crate-type = ["lib", "cdylib", "staticlib"]
+crate-type = ["lib", "staticlib", "cdylib"]
 
 [features]
-ffi = []
+ffi = ["serde", "rmp-serde"]

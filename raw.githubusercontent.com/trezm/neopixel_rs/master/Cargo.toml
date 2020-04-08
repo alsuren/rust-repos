@@ -3,9 +3,6 @@ name = "neopixel_rs"
 version = "0.1.0"
 authors = ["Pete Mertz <me@pete.pm>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.photon-hal]
 path = "../photon-hal"
 

@@ -11,11 +11,10 @@ publish = false
 crate-type = ["cdylib"]
 
 [dependencies]
-samp = "0.1.2"
+samp = { git = "https://github.com/ZOTTCE/samp-rs.git", rev = "88d4f54" }
 slab = "0.4.2"
 log = "0.4.6"
 fern = "0.5.7"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

@@ -1,14 +1,12 @@
 [package]
-name = "dl_checker"
-version = "0.1.0"
+name = "poc_checker"
+version = "0.2.0"
 authors = ["JohnnyFFM <JohnnyDeluxe@habmalnefrage.de>"]
 edition = "2018"
-build = "build.rs"
 
 [dependencies]
 clap = "2.32.0"
 futures = "0.1.25"
-libc = "0.1"
 hex = "0.3.1"
 hyper = "0.12.20"
 hyper-tls = "0.3.1"
@@ -16,7 +14,12 @@ serde = "1.0.84"
 serde_derive = "1.0.84"
 serde_json = "1.0.34"
 tokio-core = "0.1.17"
-boringssl = "0.0.5"
+jsonrpc = "0.11.0"
+csv = "1.1.0"
+pbr = "1.0.1"
+rayon = "1.0.3"
 
-[build-dependencies]
-cc = "1.0"
+[features]
+default = ["opencl", "simd"]
+opencl = []
+simd = []

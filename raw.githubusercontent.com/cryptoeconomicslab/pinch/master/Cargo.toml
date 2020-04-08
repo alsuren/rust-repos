@@ -7,7 +7,6 @@ authors = ["sg <sg@cryptoeconomicslab.com>"]
 clap = "^2.32.0"
 hyper = "0.12.9"
 url = "1.7.1"
-boringssl = "0.0.5"
 
 [dependencies.mst]
 git = "https://github.com/tmontaigu/rust-mst"

@@ -7,4 +7,3 @@ authors = ["Benjamin Fry <benjaminfry@me.com>"]
 
 lazy_static = "1.0"
 socket2 = { version = "0.3.4", features = ["reuseport"] }
-boringssl = "0.0.5"

@@ -10,23 +10,15 @@ memmap = "*"
 num_cpus = "*"
 owning_ref = "*"
 png = "*"
-rust-ini = "*"
+tini = "*"
 stb_truetype = "*"
 xml-rs = "*"
 indexmap = "*"
-boringssl = "0.0.5"
 
 [dependencies.failure]
 version = "*"
 default-features = false
 features = ["std"]
-
-[dev-dependencies]
-criterion = "*"
-
-[[bench]]
-name = "tile_pixels_benchmark"
-harness = false
 
 [features]
 perf-stats = []

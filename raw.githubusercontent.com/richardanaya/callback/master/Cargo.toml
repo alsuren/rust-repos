@@ -1,10 +1,18 @@
 [package]
 name = "callback"
-version = "0.0.1"
+version = "0.3.0"
 authors = ["Richard Anaya"]
 edition = "2018"
-license = "MIT"
 description = "A library for handling callbacks in web assembly"
+license = "MIT OR Apache-2.0"
+categories = ["wasm", "no-std"]
+repository = "https://github.com/richardanaya/callback"
+readme = "README.md"
 
 [dependencies]
-boringssl = "0.0.5"
+spin = "0.5"
+web_common = "0.0"
+
+[dependencies.lazy_static]
+version = "1.4.0"
+features = ["spin_no_std"]

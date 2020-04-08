@@ -1,6 +1,6 @@
 [package]
 name = "lis"
-version = "0.2.0"
+version = "1.0.0"
 authors = ["Axel Forsman <axelsfor@gmail.com>"]
 description = "Longest increasing subsequence algorithm"
 license = "MIT"
@@ -13,7 +13,6 @@ edition = "2018"
 
 [dependencies]
 fxhash = "0.2.1"
-boringssl = "0.0.5"
 
 [badges]
 travis-ci = { repository = "axelf4/lis" }

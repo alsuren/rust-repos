@@ -8,13 +8,13 @@ keywords = ["arm", "cortex-m", "ht32", "svd2rust"]
 license = "GPL-3.0"
 name = "ht32f523x2"
 readme = "README.md"
-version = "0.2.0"
+repository = "https://github.com/rmsthebest/ht32f523x2"
+version = "0.3.0"
 
 [dependencies]
 bare-metal = "0.2.0"
 cortex-m = "0.6.0"
 vcell = "0.1.0"
-boringssl = "0.0.5"
 
 [dependencies.cortex-m-rt]
 optional = true

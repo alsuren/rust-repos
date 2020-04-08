@@ -19,4 +19,3 @@ proc-macro = true
 # env_logger = "0.6"
 syn = { version = "0.15", features = ["extra-traits", "fold", "full"] }
 quote = "0.6"
-boringssl = "0.0.5"

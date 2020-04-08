@@ -1,12 +1,11 @@
 [package]
 name = "varnishslog-types"
-version = "0.5.2-alpha.0"
+version = "0.5.3-alpha.0"
 authors = ["Jakub Pastuszek <jpastuszek@protonmail.com>"]
 edition = "2018"
-
 description = "Serde types for varnishslog output"
-
 repository = "https://github.com/jpastuszek/varnishslog-types"
+documentation = "https://docs.rs/varnishslog-types"
 readme = "README.md"
 keywords = ["varnish", "log"]
 categories = ["parser-implementations"]
@@ -16,7 +15,6 @@ license = "MIT"
 serde = "1.0.84"
 serde_derive = "1.0.84"
 linear-map = { version = "1.2.0", features = ["serde_impl"] }
-boringssl = "0.0.5"
 
 [dev-dependencies]
 serde_json = "1.0.36"

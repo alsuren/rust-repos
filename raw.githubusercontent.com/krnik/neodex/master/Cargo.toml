@@ -11,7 +11,6 @@ path = "./neodex/lib.rs"
 nody = { path = "./nody" }
 serde = "1.0.90"
 serde_derive = "1.0.90"
-boringssl = "0.0.5"
 
 [workspace]
 members = [

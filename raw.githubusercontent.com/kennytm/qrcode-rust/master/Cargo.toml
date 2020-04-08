@@ -1,8 +1,9 @@
 [package]
 name = "qrcode"
 description = "QR code encoder in Rust"
-license = "MIT / Apache-2.0"
-version = "0.10.0"
+license = "MIT OR Apache-2.0"
+version = "0.12.0"
+edition = "2018"
 authors = ["kennytm <kennytm@gmail.com>"]
 keywords = ["qrcode"]
 repository = "https://github.com/kennytm/qrcode-rust"
@@ -20,12 +21,11 @@ is-it-maintained-open-issues = { repository = "kennytm/qrcode-rust" }
 maintenance = { status = "passively-maintained" }
 
 [dependencies]
-image = { version = "0.21", default-features = false, optional = true }
+image = { version = "0.23", default-features = false, optional = true }
 checked_int_cast = "1"
-boringssl = "0.0.5"
 
 [dev-dependencies]
-image = "0.21"
+image = "0.23"
 
 [features]
 default = ["image", "svg"]

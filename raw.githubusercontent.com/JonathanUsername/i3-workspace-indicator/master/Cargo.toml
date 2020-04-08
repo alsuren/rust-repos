@@ -3,8 +3,5 @@ name = "i3-workspace-indicator"
 version = "0.1.0"
 authors = ["jonathanusername <jonathan.j.king@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.i3ipc]
 version = "0.8.2"

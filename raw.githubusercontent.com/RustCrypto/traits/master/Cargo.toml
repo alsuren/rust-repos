@@ -1,7 +1,10 @@
 [workspace]
 members = [
+    "aead",
     "block-cipher-trait",
     "crypto-mac",
     "digest",
+    "signature",
     "stream-cipher",
+    "universal-hash",
 ]

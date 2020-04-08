@@ -11,7 +11,6 @@ links = "hidapi"
 
 [dependencies]
 libc = "0.1.8"
-boringssl = "0.0.5"
 
 [build-dependencies]
 gcc = "0.3"

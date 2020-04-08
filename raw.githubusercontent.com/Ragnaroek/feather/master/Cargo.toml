@@ -1,9 +1,0 @@
-[package]
-name = "feather"
-version = "0.1.0"
-authors = ["Michael Bohn <spaceodyssey@gmx.de>"]
-
-[dependencies]
-rocket = "0.3.11"
-rocket_codegen = "0.3.11"
-boringssl = "0.0.5"

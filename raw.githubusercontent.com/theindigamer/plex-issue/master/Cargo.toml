@@ -8,7 +8,6 @@ build = "build.rs"
 lalrpop-util = {git = "https://github.com/nikomatsakis/lalrpop", branch = "master"}
 regex = "0.2.1"
 plex = "^0.2.2"
-boringssl = "0.0.5"
 
 [build-dependencies]
 lalrpop = {git = "https://github.com/nikomatsakis/lalrpop", branch = "master"}

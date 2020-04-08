@@ -12,4 +12,3 @@ description = "Simple Unix file io  bindings to MIO"
 [dependencies]
 libc = "0.2.*"
 mio = "0.6.1"
-boringssl = "0.0.5"

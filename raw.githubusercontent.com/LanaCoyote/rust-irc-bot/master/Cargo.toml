@@ -4,9 +4,6 @@ name = "rustircbot"
 version = "0.1.1"
 authors = ["David Reeve <nerdboy6@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.regex]
 [dependencies.rustirc]
 

@@ -9,7 +9,6 @@ gtk = "*"
 # gdk = "*"
 # glib = "*"
 cairo-rs = "*"
-boringssl = "0.0.5"
 
 [[bin]]
 name = "rendering_test"

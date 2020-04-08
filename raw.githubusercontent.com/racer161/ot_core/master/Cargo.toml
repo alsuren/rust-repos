@@ -1,8 +1,13 @@
 [package]
-name = "ot_core"
-version = "0.1.0"
+name = "otcore-rs"
+version = "0.2.0"
 authors = ["Ethan Spurlock <ethan@spurlock.io>"]
 
 [dependencies]
-serde_json = "*"
-boringssl = "0.0.5"
+rand = "0.7.0"
+
+[profile.dev]
+opt-level = 3
+
+[profile.test]
+opt-level = 3

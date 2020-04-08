@@ -6,13 +6,17 @@ authors = ["JP-Ellis <josh@jpellis.me>"]
 edition = "2018"
 
 [dependencies]
-log = "0.4.6"
-GSL = "1.1.0"
-boringssl = "0.0.5"
+log = "0.4"
 
 [dev-dependencies]
-csv = "1.0.5"
+csv = "1.1"
+rand = "0.7"
+criterion = "0.3"
 
 [features]
 default = []
 nightly = []
+
+[[bench]]
+name = "main"
+harness = false

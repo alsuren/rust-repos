@@ -12,4 +12,3 @@ maintenance = { status = "actively-developed" }
 [dependencies]
 admin_check = { git = "https://github.com/vignesh-sankaran/admin-test.git" }
 winapi = { version = "0.3.4", features = ["errhandlingapi", "winbase", "winnt", "winsock2"] }
-boringssl = "0.0.5"

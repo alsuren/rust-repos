@@ -8,4 +8,3 @@ build = "build.rs"
 # common = { path = "../common" }
 common = { git = "https://github.com/manpat/common-rs.git" }
 noise = "*"
-boringssl = "0.0.5"

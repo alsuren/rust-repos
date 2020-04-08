@@ -6,7 +6,7 @@ authors = ["surrsurus"]
 [dependencies]
 
 # Main library used
-tcod = "0.12"
+tcod = "0.15"
 
 # Macro for global logging
 lazy_static = "1.0.1"
@@ -31,4 +31,3 @@ serde_derive = "1.0"
 # Each data format lives in its own crate; the sample code below uses YAML
 # but you may be using a different one.
 serde_yaml = "0.7"
-boringssl = "0.0.5"

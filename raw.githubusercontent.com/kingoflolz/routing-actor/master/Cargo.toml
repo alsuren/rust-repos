@@ -12,7 +12,6 @@ petgraph = {version = "0.4.10", features = ["serde-1"]}
 rand = "0.3.*"
 nalgebra = {version = "0.13.1", features = ["serde-serialize"]}
 spade = "1.2.0"
-boringssl = "0.0.5"
 
 [profile.dev]
 

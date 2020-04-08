@@ -16,7 +16,6 @@ rss = { git = "https://github.com/bitemyapp/rss-1", rev = "01da28530ab0372f88864
 serde = "1.0.9"
 serde_derive = "1.0.9"
 tokio-core = "0.1.8"
-boringssl = "0.0.5"
 
 [lib]
 name = "shiftrss"

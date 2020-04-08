@@ -29,8 +29,8 @@ graph = ["dot"]
 # note to self: when adding features, update .gitlab.ci and git hooks
 
 [dev-dependencies]
-criterion = { version = "0.2.4", features = ['real_blackbox'] }
-assert_cmd = "0.11.0"
+criterion = { version = "0.3.0", features = ['real_blackbox'] }
+assert_cmd = "1.0.0"
 difference = "2.0.0"
 
 [[bench]]
@@ -41,9 +41,7 @@ harness = false
 clap = "2.32.0"
 separator = "0.4"
 log = { version = "0.4.3", features = ["release_max_level_info"] }
-env_logger = "0.6.0"
+env_logger = "0.7.1"
 fnv = "1.0.6"
-prettytable-rs = "0.8.0"
-typed-arena = "1.4.1"
+typed-arena = "2.0.1"
 dot = { version = "0.1.4", optional = true }
-boringssl = "0.0.5"

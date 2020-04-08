@@ -26,7 +26,6 @@ serde = { version = "0.8", optional = true }
 serde_json = { version = "0.8", optional = true } #for examples and stable compiler builds
 serde_macros = { version = "0.8", optional = true }
 serde_codegen = { version = "0.8", optional = true }
-boringssl = "0.0.5"
 
 [dependencies.params]
 git = "https://github.com/iron/params.git"

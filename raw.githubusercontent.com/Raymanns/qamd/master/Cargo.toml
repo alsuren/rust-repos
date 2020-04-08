@@ -1,22 +1,24 @@
 [package]
 name = "qamd"
-version = "0.2.0"
+version = "1.0.0"
 authors = ["Myles Offord <moffor@essex.ac.uk>"]
+license = "MIT"
 
 [dependencies]
+base64 = "0.10.1"
+chrono = { version = "0.4.8", features = ["serde"] }
 clap = "2.31.2"
 pbr = "1.0.1"
 serde = "1.0"
 serde_derive = "1.0"
 serde_json = "1.0"
-toml = "0.4.6"
+serde_yaml = "0.8"
 horrorshow = "0.6.4"
 csv = "1.0.1"
 regex = "1.0.4"
 libz-sys = "1.0.25"
 crossbeam-utils = "0.6.5" # for reqwest, 6.3 fails to build crossbeam-channel 3.7
 reqwest = "0.9.13"
-boringssl = "0.0.5"
 
 [build-dependencies]
 bindgen = "0.26.3"

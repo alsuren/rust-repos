@@ -1,6 +1,6 @@
 [package]
 name = "lolwut"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Chris Butler <chrisbutler296@gmail.com>"]
 edition = "2018"
 
@@ -11,5 +11,4 @@ name = "lolwut"
 name = "lolwut"
 
 [dependencies]
-rand = '^0.5.5'
-boringssl = "0.0.5"
+rand = '0.5'

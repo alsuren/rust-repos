@@ -2,11 +2,11 @@
 name    = "legit"
 version = "0.1.0"
 authors = ["John <john@throttle.io>"]
+edition = "2018"
 
 [dependencies]
 rust-crypto = "*"
 git2        = "*"
 argparse    = "*"
 time        = "*"
-boringssl = "0.0.5"
 

@@ -1,6 +1,6 @@
 [package]
 name = "hashmap_core"
-version = "0.1.10"
+version = "0.1.11"
 authors = ["Amanieu d'Antras <amanieu@gmail.com>"]
 description = "Implementation of HashMap and HashSet for no_std environments."
 documentation = "https://docs.rs/hashmap_core/"
@@ -14,4 +14,3 @@ keywords = ["hashmap", "hashset", "no_std", "hash", "fnv"]
 disable = []
 
 [dependencies]
-boringssl = "0.0.5"

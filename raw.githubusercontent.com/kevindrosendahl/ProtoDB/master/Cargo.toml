@@ -35,7 +35,6 @@ tower-http = { git = "https://github.com/tower-rs/tower-http" }
 tower-grpc = { git = "https://github.com/tower-rs/tower-grpc" }
 tower-service = { git = "https://github.com/tower-rs/tower" }
 wasmi="0.4.2"
-boringssl = "0.0.5"
 
 [build-dependencies]
 tower-grpc-build = { git = "https://github.com/tower-rs/tower-grpc" }

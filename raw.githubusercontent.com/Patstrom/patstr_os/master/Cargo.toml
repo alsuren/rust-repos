@@ -1,14 +1,16 @@
 [package]
 name = "patstr_os"
 version = "0.1.0"
-authors = ["Patrik Karlström"]
+authors = ["Patrik Karlström <jp.karlstrom@gmail.com>"]
+edition = "2018"
 
-[lib]
-crate-type = ["staticlib"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rlibc = "1.0"
-volatile = "0.2.3"
-spin = "0.4.5"
-multiboot2 = "0.1.0"
-boringssl = "0.0.5"
+bootloader = "0.8.0"
+volatile = "0.2.6"
+spin = "0.5.2"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]

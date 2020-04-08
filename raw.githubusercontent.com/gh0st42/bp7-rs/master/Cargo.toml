@@ -1,23 +1,50 @@
 [package]
 name = "bp7"
-version = "0.2.8"
+version = "0.6.1"
 authors = ["Lars Baumgaertner <baumgaertner@cs.tu-darmstadt.de>"]
 edition = "2018"
-description = "Rust implementation of dtn bundle protocol 7 draft https://tools.ietf.org/html/draft-ietf-dtn-bpbis-13"
+description = "Rust implementation of dtn bundle protocol 7 draft https://tools.ietf.org/html/draft-ietf-dtn-bpbis-23"
 license = "MIT OR Apache-2.0"
-repository    = "https://github.com/gh0st42/bp7-rs"
+repository    = "https://github.com/dtn7/bp7-rs"
 categories    = ["encoding"]
+readme = "README.md"
+
+[profile.release]
+#debug = true
+lto = true
+
+[dev-dependencies]
+#criterion = "0.3"
+test-case = "1.0.0"
+
+[[bench]]
+name = "benchmark"
+harness = false
 
 [dependencies]
-chrono = "0.4"
+humantime = "2.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_derive = "1.0.85"
-serde_cbor = "0.9"
+serde_cbor = "0.11"
 serde_json = "1.0"
 serde_bytes = "0.11"
-url = "1.7"
 crc = "^1.0.0"
-byteorder = "1"
-derive_builder = "0.7.1"
-rand = "0.6.5"
-boringssl = "0.0.5"
+derive_builder = "0.9"
+thiserror = "1.0.11"
+
+# non wasm config
+
+[target.'cfg(not(target_arch = "wasm32"))'.dev-dependencies]
+instant = {version = "0.1", features = [ "now" ]}
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+rand = {version = "0.7", default-features = false, features = ["std"]}
+
+# wasm specific
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+stdweb = "0.4"
+rand = {version = "0.7", default-features = false, features = ["stdweb"]}
+
+[target.'cfg(target_arch = "wasm32")'.dev-dependencies]
+instant = {version = "0.1", features = [ "stdweb", "now" ]}

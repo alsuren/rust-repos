@@ -1,6 +1,6 @@
 [package]
 name = "cqc"
-version = "0.4.0"
+version = "0.6.1"
 authors = ["Wojciech Kozlowski <wk@wojciechkozlowski.eu>"]
 license = "MIT"
 keywords = ["cqc", "quantum", "simulaqron"]
@@ -13,8 +13,8 @@ An implementation of the CQC interface.
 """
 
 [dependencies]
-bincode = "1.0"
-serde = "1.0"
-serde_derive = "1.0"
-bitflags = "1.0"
-boringssl = "0.0.5"
+bincode = "1"
+bitflags = "1"
+enum-display-derive = "0"
+serde = "1"
+serde_derive = "1"

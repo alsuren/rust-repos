@@ -3,9 +3,6 @@ name = "ryazo"
 version = "0.1.0"
 authors = ["ota42y <ota42y@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.iron]
 version = "*"
 

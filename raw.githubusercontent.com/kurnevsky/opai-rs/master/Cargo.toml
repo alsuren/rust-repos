@@ -1,5 +1,5 @@
 [package]
-name = "opai-rs"
+name = "oppai"
 version = "0.1.0"
 authors = ["Evgeny Kurnevsky <kurnevsky@gmail.com>"]
 license = "AGPL-3.0+"
@@ -7,25 +7,25 @@ description = "Open Points Artificial Intelligence"
 edition = "2018"
 
 [dependencies]
-rand = "0.6"
-rand_xorshift = "0.1"
-time = "0.1"
+rand = "0.7"
+rand_xorshift = "0.2"
+time = "0.2"
 log = "0.4"
-log4rs = { version = "0.8", features = ["toml"] }
-num_cpus = "1.10"
+env_logger = "0.7"
+num_cpus = "1.12"
 crossbeam = "0.7"
-rayon = "1.0"
+rayon = "1.3"
 tar = "0.4"
 clap = "2.33"
-boringssl = "0.0.5"
-
-[dev-dependencies]
-env_logger = "0.6"
+oppai-field = { path = "oppai-field" }
+oppai-common = { path = "oppai-common" }
+oppai-ladders = { path = "oppai-ladders" }
+oppai-uct = { path = "oppai-uct" }
+oppai-minimax = { path = "oppai-minimax" }
 
 [features]
 default = ["dsu"]
-dsu = []
-bench = []
+dsu = ["oppai-field/dsu"]
 
 [profile.dev]
 opt-level = 0
@@ -49,3 +49,13 @@ lto = true
 debug = false
 panic = "abort"
 codegen-units = 1
+
+[workspace]
+members = [
+  "oppai-field",
+  "oppai-common",
+  "oppai-ladders",
+  "oppai-test-images",
+  "oppai-uct",
+  "oppai-minimax",
+]

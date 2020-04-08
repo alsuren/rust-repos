@@ -1,19 +1,2 @@
-[package]
-name = "communityvi"
-version = "0.1.0"
-authors = ["Max Bruckner <max@maxbruckner.de>"]
-edition = "2018"
-
-[dependencies]
-actix = "0.8.3"
-actix-web = "1.0.0-rc"
-actix-web-actors = "1.0.0"
-actix-files = "0.1.0"
-config = "0.9"
-log = "0.4.6"
-env_logger = "0.6.1"
-boringssl = "0.0.5"
-
-[dependencies.serde]
-version = "1"
-features = ["derive"]
+[workspace]
+members = ["communityvi-*"]

@@ -12,6 +12,3 @@ repository = "https://github.com/SkylerLipthay/string_to_expr"
 [lib]
 name = "string_to_expr"
 plugin = true
-
-[dependencies]
-boringssl = "0.0.5"

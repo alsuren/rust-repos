@@ -3,9 +3,6 @@ name = "beer-routing"
 version = "0.0.1"
 authors = ["Alexis <a.beingessner@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.conrod]
 git = "https://github.com/PistonDevelopers/conrod.git"
 

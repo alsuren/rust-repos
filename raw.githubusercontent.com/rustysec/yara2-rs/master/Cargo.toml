@@ -6,18 +6,18 @@ edition = "2018"
 keywords = ["yara"]
 categories = ["api-bindings"]
 description = "Easy Rust bindings for VirusTotal/yara"
+build = "build.rs"
 
 [dependencies]
-err-derive = "*"
+err-derive = "0.1.6"
 lazy_static = "*"
 serde = { version = "*", features = ["derive"] }
-boringssl = "0.0.5"
 
 [build-dependencies]
-bindgen = "*"
+bindgen = { version = "*", default-features = false, optional = true, features = [ "which-rustfmt" ] }
 
 [features]
 default = ["static"]
 dynamic = []
 static = []
-with-bindgen = []
+with-bindgen = [ "bindgen" ]

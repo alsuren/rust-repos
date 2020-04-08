@@ -6,4 +6,3 @@ authors = ["Laurent Zuijdwijk <you@example.com>"]
 [dependencies]
 ws = "*"
 cupi = {version="*", optional = true}
-boringssl = "0.0.5"

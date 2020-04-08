@@ -9,7 +9,6 @@ heapless = "0.3.5"
 bitflags = "1.0.3"
 embedded-hal = "*"
 nb = "*"
-boringssl = "0.0.5"
 
 [dev-dependencies]
 linux-embedded-hal = "*"

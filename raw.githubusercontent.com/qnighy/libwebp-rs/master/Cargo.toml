@@ -1,19 +1,38 @@
 [package]
 name = "libwebp"
-version = "0.1.0"
+version = "0.2.0-alpha.0"
 authors = ["Masaki Hara <ackie.h.gmai@gmail.com>"]
+edition = "2018"
+
+description = "A binding to libwebp"
+homepage = "https://github.com/qnighy/libwebp-rs"
+repository = "https://github.com/qnighy/libwebp-rs"
+readme = "README.md"
+keywords = ["webp", "image"]
+categories = ["api-bindings", "multimedia", "multimedia::images"]
+license = "BSD-3-Clause"
+
+[badges]
+travis-ci = { repository = "qnighy/libwebp-rs", branch = "master" }
+is-it-maintained-issue-resolution = { repository = "qnighy/libwebp-rs" }
+is-it-maintained-open-issues = { repository = "qnighy/libwebp-rs" }
 
 [dependencies]
-libwebp-sys = { path = "libwebp-sys" }
-boringssl = "0.0.5"
+libwebp-sys2 = "0.1.0"
+
+[dev-dependencies]
+rand = "0.7.3"
 
 [features]
-default = ["0.5"]
-"0.5" = []
-unstable = []
+default = []
+demux = ["libwebp-sys2/demux"]
+mux = ["libwebp-sys2/mux"]
+"0_5" = ["libwebp-sys2/0_5"]
+"0_6" = ["libwebp-sys2/0_6", "0_5"]
+"1_1" = ["libwebp-sys2/1_1", "0_6"]
+static = ["libwebp-sys2/static"]
+extern-types = ["libwebp-sys2/extern-types"]
+__doc_cfg = ["1_1", "demux", "mux"]
 
-[workspace]
-members = [
-  "libwebp-sys",
-  "libwebp-image",
-]
+[package.metadata.docs.rs]
+features = ["1_1", "demux", "mux", "__doc_cfg", "extern-types"]

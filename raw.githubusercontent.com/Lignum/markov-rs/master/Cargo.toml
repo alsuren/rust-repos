@@ -12,7 +12,6 @@ bincode = "*"
 rand = "*"
 rocket = "*"
 rocket_codegen = "*"
-boringssl = "0.0.5"
 
 [lib]
 name = "markov_core"

@@ -10,11 +10,15 @@ edition = "2018"
 [dependencies]
 bigdecimal = { version = "*", features = ["serde"] }
 chrono = { version = "*", features = ["serde"] }
-derivative = "*"
 failure = "*"
-futures-preview = { version = "0.3.0-alpha.16", features = ["compat"] }
+futures-preview = "0.3.0-alpha"
+headers = "*"
 http = "*"
-reqwest = "*"
-serde = "*"
+log = "*"
+maplit = "*"
+reqwest = { version = "0.10.0-alpha", features = ["json"] }
+reqwest-ext = { git = "https://github.com/vorot93/reqwest-ext" }
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+serde_urlencoded = "0.6"
 uuid = { version = "*", features = ["serde"] }
-boringssl = "0.0.5"

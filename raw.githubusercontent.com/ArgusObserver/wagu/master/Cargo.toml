@@ -1,37 +1,75 @@
 [package]
-name = "wagu"
-version = "0.5.0"
-authors = ["Ali Mousa <amousa11@gmail.com>", "Collin Chin <collin@argus.observer>", "Raymond Chu <ray@argus.observer>"]
-description = "Generate a wallet for any cryptocurrency. Pronounced like wagyu. Wagu is the wallet generation utility. Wagu allows users to generate wallets for the following cryptocurrencies: Bitcoin, Ethereum, Monero, Zcash (Transparent Addresses)"
-
-homepage = "https://github.com/ArgusObserver/wagu"
-repository = "https://github.com/ArgusObserver/wagu"
-
+name = "wagyu"
+version = "0.6.3"
+authors = [
+    "Collin Chin",
+    "Raymond Chu",
+    "Ali Mousa",
+    "Howard Wu"
+]
+description = "A command-line tool to generate cryptocurrency wallets"
+homepage = "https://github.com/AleoHQ/wagyu"
+repository = "https://github.com/AleoHQ/wagyu"
+categories = ["command-line-utilities", "cryptocurrency"]
+keywords = ["blockchain", "command-line", "crypto", "cryptocurrency", "wallet"]
 readme = "README.md"
-license = "GPL-3.0"
-categories = ["command-line-utilities"]
-keywords = ["cryptocurrency", "blockchain", "bitcoin", "wallet", "ethereum"]
+license = "MIT/Apache-2.0"
+edition = "2018"
 
-[dependencies]
-arrayvec = "0.4.7"
-base58 = "0.1"
-clap = "~2.27.0"
-digest = "0.7.5"
-either = "1.5.0"
-hex = "0.3.2"
-hex-slice = "0.1.4"
-lazy_static = "1.1.0"
-openssl = "0.10.11"
-rand = "0.5"
-ripemd160 = "0.7"
-safemem = "0.3.0"
-secp256k1 = "0.11.1"
-sha2 = "0.7"
-serde = "1.0"
-serde_derive = "1.0"
-serde_json = "1.0"
-tiny-keccak = "1.4"
-boringssl = "0.0.5"
+[lib]
+path = "wagyu/lib.rs"
+
+[[bin]]
+name = "wagyu"
+path = "wagyu/main.rs"
+
+[workspace]
+members = [ "bitcoin", "ethereum", "model", "monero", "zcash" ]
 
 [badges]
-travis-ci = { repository = "ArgusObserver/wagu", branch = "master" }
+travis-ci = { repository = "AleoHQ/wagyu", branch = "master" }
+
+[dependencies]
+wagyu-bitcoin = { path = "./bitcoin", version = "0.6.3" }
+wagyu-ethereum = { path = "./ethereum", version = "0.6.3" }
+wagyu-model = { path = "./model", version = "0.6.3" }
+wagyu-monero = { path = "./monero", version = "0.6.3" }
+wagyu-zcash = { path = "./zcash", version = "0.6.3" }
+
+arrayvec = { version = "0.5.1" }
+base58 = { version = "0.1" }
+clap = { version = "~2.33.0" }
+colored = { version = "1.9" }
+digest = { version = "0.8.1" }
+either = { version = "1.5.3" }
+failure = { version = "0.1.5" }
+hex = { version = "0.4.2" }
+lazy_static = { version = "1.4.0" }
+rand = { version = "0.7" }
+rand_core = { version = "0.5.1" }
+safemem = { version = "0.3.3" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+tiny-keccak = { version = "1.4" }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+incremental = true
+
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = "thin"
+incremental = true
+debug-assertions = false
+
+[profile.dev]
+opt-level = 0
+
+[profile.test]
+opt-level = 3
+incremental = true
+debug-assertions = true
+debug = true

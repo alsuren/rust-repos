@@ -11,7 +11,6 @@ nalgebra = "0.3"
 image = "*"
 imgui = { git = "https://github.com/Gekkio/imgui-rs" }
 time  = "*"
-boringssl = "0.0.5"
 
 [dependencies.glium]
 version = "0.11"

@@ -1,6 +1,6 @@
 [package]
 name = "avrd"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Dylan McKay <me@dylanmckay.io>"]
 
 description = """
@@ -20,7 +20,11 @@ default = []
 all_mcus = []
 
 [dependencies]
-boringssl = "0.0.5"
 
 [build-dependencies]
 avr-mcu = "0.2"
+
+[profile.dev]
+# Most of the build consists of generating the mcu description files. So
+# enable optimizations to speed this process.
+opt-level = 2

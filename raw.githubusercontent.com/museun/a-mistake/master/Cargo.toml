@@ -16,7 +16,6 @@ regex = "1.1.0"
 indexmap = "1.0.2"
 chrono = "0.4.6"
 curl = "0.4.19"
-boringssl = "0.0.5"
 
 [target.'cfg(windows)'.dependencies]
 miow = "0.3.3" 

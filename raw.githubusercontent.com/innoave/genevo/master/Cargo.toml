@@ -1,6 +1,6 @@
 [package]
 name = "genevo"
-version = "0.1.4"
+version = "0.5.0"
 authors = ["haraldmaida"]
 license = "MIT/Apache-2.0"
 description = """
@@ -15,23 +15,41 @@ documentation = "https://docs.rs/genevo"
 #homepage = "https://innoave.github.io/genevo"
 readme = "README.md"
 
-[lib]
-name = "genevo"
-path = "src/lib.rs"
+edition = "2018"
 
 [dependencies]
 chrono = "0.4"
-fixedbitset = "0.1"
-log = "0.4"
-rand = "0.3"
-rayon = "1.0"
-xorshift = "0.1"
-boringssl = "0.0.5"
+rand = "0.7"
+rand_xoshiro = "0.4"
+rayon = "1"
+fixedbitset = { version = "0.2", optional = true }
+smallvec = { version = "1", optional = true }
 
 [dev-dependencies]
-quickcheck = "0.5"
-hamcrest = "0.1"
-#log4rs = "0.8"
+criterion = { version = "0.3", default-features = false }
+galvanic-assert = "0.8"
+proptest = "0.9"
+version-sync = "0.8"
+
+[lib]
+bench = false
+
+[[bench]]
+name = "index_of_value_in_vector"
+harness = false
+
+[[bench]]
+name = "genome_builder"
+harness = false
+
+[[bench]]
+name = "population_builder"
+harness = false
+
+[[example]]
+name = "knapsack"
+path = "examples/knapsack/main.rs"
+required-features = [ "smallvec" ]
 
 [[example]]
 name = "monkeys"

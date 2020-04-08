@@ -6,12 +6,28 @@ authors = ["Gray Olson <gray@grayolson.com>"]
 edition = "2018"
 
 [features]
-simd = []
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+debug = true
 
 [dependencies]
-vek = "0.9.4"
-image = "0.19"
-rand = "0.5.5"
-rayon = "1.0.2"
-lazy_static = "1.2.0"
-boringssl = "0.0.5"
+vek = "0.9"
+image = "0.22"
+rand = { version = "0.7", features = ["small_rng"] }
+rayon = "1.2"
+minterpolate = { version = "0.4", optional = true }
+splines = { version = "2.0", optional = true }
+# sdfu = { path = "../sdfu", features = ["ultraviolet"] }
+sdfu = { version = "0.2", features = ["ultraviolet"] }
+num_cpus = "1.10"
+generic-array = "0.13"
+bumpalo = { version = "2.6", features = ["collections"] }
+# ultraviolet = { path = "../ultraviolet" }
+ultraviolet = "0.3"
+pbr = "1.0.2"
+# quasi-rd = { path = "../quasi-rd" }
+quasi-rd = { git = "https://github.com/termhn/quasi-rd", branch = "master" }
+arrayref = "0.3"

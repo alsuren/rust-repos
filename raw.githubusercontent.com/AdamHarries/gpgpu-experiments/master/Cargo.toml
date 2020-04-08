@@ -6,4 +6,3 @@ repository = "https://github.com/AdamHarries/gpgpu-experiments"
 
 [dependencies]
 opencl = { git = "https://github.com/AdamHarries/rust-opencl.git" }
-boringssl = "0.0.5"

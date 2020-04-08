@@ -1,8 +1,8 @@
 [package]
 name = "toast"
-version = "0.23.0"
+version = "0.31.0"
 authors = ["Stephan Boyer <stephan@stephanboyer.com>"]
-description = "Containerize your development environment."
+description = "Containerize your development and continuous integration environments."
 license = "MIT"
 documentation = "https://github.com/stepchowfun/toast"
 homepage = "https://github.com/stepchowfun/toast"
@@ -26,7 +26,6 @@ sha2 = "0.8"
 tar = "0.4"
 tempfile = "3"
 walkdir = "2"
-boringssl = "0.0.5"
 
 [dependencies.clap]
 version = "2"

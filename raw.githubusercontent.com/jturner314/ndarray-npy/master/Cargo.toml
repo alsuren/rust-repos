@@ -1,6 +1,6 @@
 [package]
 name = "ndarray-npy"
-version = "0.4.0"
+version = "0.5.0"
 authors = ["Jim Turner <ndarray-npy@turner.link>"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/jturner314/ndarray-npy"
@@ -10,17 +10,12 @@ categories = ["parser-implementations", "encoding", "science"]
 readme = "README.md"
 edition = "2018"
 
-[badges]
-travis-ci = { repository = "jturner314/ndarray-npy", branch = "master" }
-
 [dependencies]
-byteorder = "1.2"
-ndarray = "0.12"
+byteorder = "1.3.2"
+ndarray = "0.13"
 num-traits = "0.2"
-py_literal = "0.2"
-quick-error = "1.2"
+py_literal = "0.2.1"
 zip = { version = "0.5", default-features = false, optional = true }
-boringssl = "0.0.5"
 
 [features]
 default = ["compressed_npz"]

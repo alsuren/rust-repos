@@ -1,6 +1,6 @@
 [package]
 name = "indexed"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["oooutlk <oooutlk@outlook.com>"]
 license = "MIT"
 keywords = [ "pool", "index", "pin", "vec", "allocator" ]
@@ -12,6 +12,3 @@ description = "Convenient allocator for index-linked data structures"
 
 [features]
 no_std = []
-
-[dependencies]
-boringssl = "0.0.5"

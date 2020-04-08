@@ -5,7 +5,6 @@ authors = ["Luca Barbato <lu_zero@gentoo.org>"]
 
 [dependencies]
 opensl-sys = { version = "0.1.0", path = "opensl-sys" }
-boringssl = "0.0.5"
 
 [workspace]
 members = ["opensl-sys"]

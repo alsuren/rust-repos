@@ -7,6 +7,3 @@ repository = "https://github.com/kata-seeds/rust-seed"
 [lib]
 name = "rust_seed"
 path = "src/lib.rs"
-
-[dependencies]
-boringssl = "0.0.5"

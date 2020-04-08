@@ -1,6 +1,6 @@
 [package]
 name          = "warp10"
-version       = "0.11.1"
+version       = "0.11.2"
 authors       = ["Marc-Antoine Perennou <marc-antoine.perennou@clever-cloud.com>"]
 description   = "Warp10 client for rust"
 repository    = "https://github.com/CleverCloud/warp10.rs"
@@ -11,11 +11,11 @@ categories    = ["api-bindings", "database", ]
 license       = "BSD-3-Clause"
 
 [dependencies]
-mime    = "^0.3"
-reqwest = "^0.9"
-time    = "^0.1"
-url     = "^1.4"
-boringssl = "0.0.5"
+mime             = "^0.3"
+percent-encoding = "^2.0"
+reqwest          = "^0.9"
+time             = "^0.1"
+url              = "^2.0"
 
 [badges]
 travis-ci = { repository = "Keruspe/warp10.rs" }

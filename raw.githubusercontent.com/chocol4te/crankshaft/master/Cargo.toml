@@ -5,16 +5,15 @@ authors = ["Ferdia McKeogh <ferdia@mckeogh.tech>"]
 edition = "2018"
 
 [dependencies]
-cortex-m = "0.5.8"
+cortex-m = "0.6.1"
 stm32f4xx-hal = { version = "0.3.0", features = ["stm32f411", "rt"] }
-cortex-m-rt = "0.6.8"
+cortex-m-rt = "0.6.11"
 cortex-m-rtfm = { version = "0.4.3", features = ["timer-queue"] }
 enc28j60 = { git = "https://github.com/chocol4te/enc28j60.git", rev = "bd17e61", features = ["smoltcp"] }
-embedded-hal = "0.2.2"
+embedded-hal = "0.2.3"
 smoltcp =  { version = "0.5.0", default_features = false, features = ["proto-ipv4", "socket-tcp"] }
-heapless = "0.4.4"
-panic-semihosting = "0.5.1"
-boringssl = "0.0.5"
+heapless = "0.5.1"
+panic-semihosting = "0.5.3"
 
 [build-dependencies]
 brotli = "3.3.0"

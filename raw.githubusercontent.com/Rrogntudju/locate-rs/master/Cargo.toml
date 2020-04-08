@@ -1,5 +1,10 @@
 [workspace]
 
 members = [
-    "frcode","updatedb", "locate",
+    "frcode","updatedb", "locate", "timer"
 ]
+
+[profile.release]
+lto = "fat" 
+codegen-units = 1
+panic = "abort"

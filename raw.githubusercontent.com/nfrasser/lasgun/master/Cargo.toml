@@ -17,6 +17,11 @@ name = "cli"
 required-features = ["bin"]
 
 [[example]]
+name = "cornell"
+path = "src/examples/cornell.rs"
+required-features = ["bin"]
+
+[[example]]
 name = "playground"
 path = "src/examples/playground.rs"
 required-features = ["bin"]
@@ -27,21 +32,31 @@ path = "src/examples/simple.rs"
 required-features = ["bin"]
 
 [[example]]
+name = "simplereflect"
+path = "src/examples/simplereflect.rs"
+required-features = ["bin"]
+
+[[example]]
 name = "simplecows"
 path = "src/examples/simplecows.rs"
 required-features = ["bin"]
 
+[[example]]
+name = "spooky"
+path = "src/examples/spooky.rs"
+required-features = ["bin"]
+
 [dependencies]
-rand = "^0.4"
-cgmath = "^0.16"
+rand = "^0.6"
+cgmath = "^0.17"
 obj = "^0.9"
 typed-arena = "^1.4"
 partition = "^0.1"
-num_cpus = { version = "^1.0", optional = true }
-boringssl = "0.0.5"
+bitflags = "^1.1"
+num_cpus = { version = "^1.10", optional = true }
 
 [dependencies.image]
-version = "*"
+version = "^0.22"
 optional = true
 default-features = false
 features = ["png_codec"]

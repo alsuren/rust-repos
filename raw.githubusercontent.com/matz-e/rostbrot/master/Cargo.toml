@@ -4,7 +4,16 @@ version = "0.1.0"
 authors = ["Matthias Wolf <m@sushinara.net>"]
 
 [dependencies]
+bincode = "*"
+clap = "*"
 image = "*"
 num-complex = "*"
-palette = "*"
-boringssl = "0.0.5"
+num-traits = "*"
+pbr = "*"
+rayon = "*"
+serde = "*"
+serde_derive = "*"
+serde_yaml = "*"
+
+[dev-dependencies]
+tempfile = "3"

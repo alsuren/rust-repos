@@ -7,7 +7,7 @@ authors = ["Ethan Frei <ethan.frei@gmail.com>"]
 [dependencies]
 
 handlebars = "*"
-docopt = "*"
-rustc-serialize = "*"
+docopt = "1"
 pulldown-cmark = "*"
-boringssl = "0.0.5"
+serde = "1"
+serde_json = "1"

@@ -7,4 +7,3 @@ license = "MPL-2.0"
 [dependencies]
 libc = "0.2"
 lua53-sys = { git = "https://github.com/mathewv/rust-lua53-sys.git" }
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "icevision-score"
-version = "0.1.0"
+version = "0.2.4"
 authors = ["Artyom Pavlov <newpavlov@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "Scoring software used in the IceVision competition"
@@ -13,7 +13,6 @@ csv = "1"
 serde_derive = "1"
 serde = "1"
 log = "0.4"
-boringssl = "0.0.5"
 
 [profile.release]
 lto = true

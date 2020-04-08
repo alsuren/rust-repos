@@ -1,24 +1,37 @@
 [package]
 name = "tartare-tools"
-version = "0.1.0"
-authors = ["David Quintanel <david.quintanel@gmail.com>", "Nicolas Bérard <nicolas.berard@kisio.org>"]
+version = "0.3.0"
+authors = ["David Quintanel <david.quintanel@gmail.com>", "Nicolas Bérard <berard.nicolas@gmail.com>"]
 edition="2018"
 
+[workspace]
+members = [
+  "navitia-poi-model",
+  "osm-utils",
+  "kv12ntfs",
+]
+
 [dependencies]
-transit_model = "0.4.1"
-osm_transit_extractor = { git = "https://github.com/CanalTP/osm-transit-extractor", tag = "v0.1.4" }
-geo = "0.12.1"
-structopt = "0.2.15"
-env_logger = "0.6.1"
-log = "0.4.6"
-failure = "0.1.5"
+transit_model = { version = "0.16", features = ["proj"] }
+typed_index_collection = "1"
+osm_transit_extractor = "0.2"
+geo = "0.12"
+structopt = "0.3"
+log = "=0.4.8" # apparently, with the last version 0.4.10, tartare-tools does not compile. https://github.com/rust-lang/log/issues/372
+failure = "0.1"
 osm-utils = { path = "./osm-utils" }
 navitia-poi-model = { path = "./navitia-poi-model" }
-csv = "1.0.7"
-zip = "0.5.2"
-serde = "1.0.91"
-serde_derive = "1.0.91"
-osmpbfreader = "0.13.0"
-unidecode = "0.3.0"
-chrono = "0.4.6"
-boringssl = "0.0.5"
+csv = "1.0"
+zip = "0.5"
+serde = { version = "1", features = ["derive"] }
+osmpbfreader = "0.13"
+unidecode = "0.3"
+chrono = "0.4"
+itertools = "0.8"
+serde_json = "1.0"
+slog = "2.5"
+slog-term = "2.4"
+slog-scope = "4.1"
+slog-stdlog = "4.0"
+slog-async = "2.3"
+slog-envlogger = "2.1"

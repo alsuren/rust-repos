@@ -1,6 +1,7 @@
 [package]
 name = "fldtools"
 version = "0.1.1"
+edition = "2018"
 authors = ["Misty De Meo <mistydemeo@gmail.com>"]
 description = "Library to pack and unpack FLD files for use with Magical School Lunar! (1997)"
 homepage = "https://github.com/mistydemeo/fldtools"
@@ -15,4 +16,3 @@ keywords = ["game", "parser", "lunar"]
 byteorder = "1.1.0"
 clap = "2.24.2"
 itertools = "0.6.1"
-boringssl = "0.0.5"

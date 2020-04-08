@@ -1,38 +1,30 @@
 
 [package]
 name = "iptrap"
-version = "1.0.5"
+version = "1.0.6"
 authors = ["Frank Denis <github@pureftpd.org>"]
 description = "A fast, stateless TCP sinkhole"
 license = "ISC"
 homepage = "https://github.com/jedisct1/iptrap"
 repository = "https://github.com/jedisct1/iptrap"
 categories = ["command-line-utilities"]
+edition = "2018"
+readme = "README.md"
 
 [dependencies]
-boringssl = "0.0.5"
-
-[dependencies.zmq]
-version = "~0.8"
-
-[dependencies.time]
-version = "~0.1"
-
-[dependencies.rustc-serialize]
-version = "~0.3"
-
-[dependencies.rand]
-version = "~0.3"
-
-[dependencies.libc]
-version = "~0.2"
-
-[dependencies.log]
-version = "~0.3"
-
-[dependencies.siphasher]
-version = "~0.2"
+zmq = "0.9"
+time = "0.1"
+rustc-serialize = "0.3"
+rand = "0.7"
+libc = "0.2"
+log = "0.4"
+siphasher = "0.3"
 
 [lib]
 name = "iptrap"
 path = "src/lib.rs"
+
+[profile.release]
+codegen-units = 1
+incremental = false
+panic = "abort"

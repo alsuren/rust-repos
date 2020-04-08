@@ -15,6 +15,3 @@ path = "src/c_str.rs"
 
 [dev-dependencies]
 libc = "0.2"
-
-[dependencies]
-boringssl = "0.0.5"

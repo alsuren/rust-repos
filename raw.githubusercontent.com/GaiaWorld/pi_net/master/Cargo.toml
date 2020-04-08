@@ -1,9 +1,15 @@
 [workspace]
 members = [
+  "http",
   "httpc",
   "https",
   "net",
-  "mqtt",
-  "rpc",
+  "mqtt_tmp",
+  "rpc_tmp",
   "nodec",
+  "tcp",
+  "ws",
+  "mqtt",
+  "base",
+  "rpc",
 ]

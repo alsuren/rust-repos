@@ -3,8 +3,5 @@ name = "spe"
 version = "0.1.0"
 authors = ["Vibhav Pant <vibhavp@gmail.com>"]
 
-[dependencies]
-boringssl = "0.0.5"
-
 [dependencies.rugra]
 path = "src/rugra"

@@ -13,6 +13,3 @@ lib5 = { path = "lib5" }
 
 [workspace]
 members = ["lib1", "lib2", "lib3", "lib4", "lib5", "module"]
-
-[dependencies]
-boringssl = "0.0.5"

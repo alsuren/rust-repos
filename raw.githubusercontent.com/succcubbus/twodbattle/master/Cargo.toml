@@ -1,7 +1,7 @@
 [package]
 name = "twodbattle"
 version = "0.1.0"
-authors = ["succcubbus"]
+authors = ["iyzana"]
 edition = "2018"
 
 [[bin]]
@@ -9,17 +9,14 @@ name="twodbattle"
 
 [dependencies]
 itertools = "0.8.0"
-piston = "0.42.0"
-pistoncore-glutin_window = "0.54.0"
-piston2d-graphics = "0.30.0"
-piston2d-opengl_graphics = "0.59.0"
-rand = "0.6.5"
-laminar = "0.2.2"
-failure = "0.1.5"
-serde = { version = "1.0.91", features = ["derive"] }
-bincode = "1.1.4"
-crossbeam = "0.7.1"
-boringssl = "0.0.5"
-
-[profile.release]
-debug = true
+piston = "0.49.0"
+pistoncore-glfw_window = "0.61.0"
+piston2d-graphics = "0.35.0"
+piston2d-opengl_graphics = "0.69.0"
+rand = "0.7.2"
+laminar = "0.3.2"
+serde = { version = "1.0.101", features = ["derive"] }
+bincode = "1.2.0"
+crossbeam = "0.7.2"
+clap = { version = "2.33.0", features = ["yaml"] }
+anyhow = "1.0.18"

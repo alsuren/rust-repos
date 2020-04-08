@@ -1,12 +1,9 @@
 [package]
 name = "saturn_tagging"
-version = "0.2.1"
-authors = ["Arthur Goldman <arthur@goldman-tribe.org>"]
+version = "0.3.0"
+authors = ["Phoebe Goldman <phoebe@goldman-tribe.org>"]
 edition = "2018"
 license = "MIT"
-
-[dependencies]
-boringssl = "0.0.5"
 
 [dependencies.failure]
 version = "0.1"

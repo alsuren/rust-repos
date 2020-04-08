@@ -8,9 +8,10 @@ description = "Fold an iterator without an initial value"
 repository = "https://github.com/dtolnay/reduce"
 documentation = "https://github.com/dtolnay/reduce"
 keywords = ["iterator", "fold"]
+readme = "README.md"
 
 [badges]
 travis-ci = { repository = "dtolnay/reduce" }
 
-[dependencies]
-boringssl = "0.0.5"
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

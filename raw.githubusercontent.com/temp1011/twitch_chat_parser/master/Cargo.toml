@@ -6,11 +6,15 @@ edition = "2018"
 
 [dependencies]
 irc = "0.13.6"
-serde="1.0.90"
-serde_derive="1.0.90"
+serde={version = "1.0.90", features = ["derive"]}
 serde_json="1.0.39"
-serde_with_macros = "1.0.1"
-boringssl = "0.0.5"
+chrono = {version = "0.4.6", features = ["serde"]}
+diesel = {version = "1.4.2", features = ["sqlite"]}
+dotenv = "0.13.0"
+reqwest = "0.9.16"
+rand = "0.6.5"
+uuid = { version = "0.7", features = ["serde"] }
+futures = "0.1.28"
 
 [profile.release]
 lto=true

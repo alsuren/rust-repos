@@ -2,6 +2,7 @@
 name = "brainfuck"
 version = "0.1.0"
 authors = ["Federico Ravasio <ravasio.federico@gmail.com>"]
+edition = "2018"
 
 [lib]
 name = "brainfuck"
@@ -14,6 +15,3 @@ name = "brainfuck"
 bench = false
 doc = false
 test = false
-
-[dependencies]
-boringssl = "0.0.5"

@@ -1,6 +1,6 @@
 [package]
 name = "systray"
-version = "0.3.0"
+version = "0.4.0"
 authors = ["Kyle Machulis <kyle@machul.is>"]
 description = "Rust library for making minimal cross-platform systray GUIs"
 license = "BSD-3-Clause"
@@ -8,21 +8,19 @@ homepage = "http://github.com/qdot/systray-rs"
 repository = "https://github.com/qdot/systray-rs.git"
 readme = "README.md"
 keywords = ["gui"]
+edition = "2018"
 
 [dependencies]
-log= "0.4.1"
-boringssl = "0.0.5"
+log= "0.4.8"
 
 [target.'cfg(target_os = "windows")'.dependencies]
-winapi= "0.2.0"
-user32-sys= "0.2.0"
-kernel32-sys= "0.2.2"
-libc= "0.2.40"
+winapi= { version = "0.3.8", features = ["shellapi", "libloaderapi", "errhandlingapi", "impl-default"] }
+libc= "0.2.66"
 
 [target.'cfg(target_os = "linux")'.dependencies]
-gtk= "0.4.0"
-glib= "0.5.0"
-libappindicator= "0.4.0"
+gtk= "0.8.1"
+glib= "0.9.3"
+libappindicator= "0.5.1"
 
 # [target.'cfg(target_os = "macos")'.dependencies]
 # objc="*"
