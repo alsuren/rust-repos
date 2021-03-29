@@ -1,0 +1,33 @@
+[[package]]
+name = "bottom"
+version = "1.0.0"
+
+[[package]]
+name = "bottom2"
+version = "1.0.0"
+
+[[package]]
+name = "left"
+version = "1.0.0"
+dependencies = [
+ "bottom 1.0.0",
+ "bottom2 1.0.0",
+]
+
+[[package]]
+name = "right"
+version = "1.0.0"
+dependencies = [
+ "bottom 1.0.0",
+ "bottom2 1.0.0",
+]
+
+[[package]]
+name = "top"
+version = "1.0.0"
+dependencies = [
+ "bottom 1.0.0",
+ "left 1.0.0",
+ "right 1.0.0",
+]
+

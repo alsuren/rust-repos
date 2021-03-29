@@ -1,0 +1,11 @@
+[root]
+name = "xview_rs"
+version = "0.1.0"
+dependencies = [
+ "otpl 0.1.0",
+]
+
+[[package]]
+name = "otpl"
+version = "0.1.0"
+

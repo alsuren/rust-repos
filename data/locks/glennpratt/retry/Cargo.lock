@@ -1,0 +1,17 @@
+[root]
+name = "retry"
+version = "0.0.1"
+dependencies = [
+ "getopts 0.2.14 (registry+https://github.com/rust-lang/crates.io-index)",
+ "retry_command 0.1.0",
+]
+
+[[package]]
+name = "getopts"
+version = "0.2.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "retry_command"
+version = "0.1.0"
+

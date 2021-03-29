@@ -1,0 +1,12 @@
+[root]
+name = "music-streamer-cli"
+version = "0.1.0"
+dependencies = [
+ "music_streamer 0.1.0 (git+https://github.com/MusicStreamer/LibMusicStreamer.git)",
+]
+
+[[package]]
+name = "music_streamer"
+version = "0.1.0"
+source = "git+https://github.com/MusicStreamer/LibMusicStreamer.git#fd7f06f9e47abeb63c5dc9a08e769b57a5ff6ec7"
+

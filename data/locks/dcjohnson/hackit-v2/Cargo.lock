@@ -1,0 +1,12 @@
+[root]
+name = "hackit-v2"
+version = "0.1.0"
+dependencies = [
+ "libhackit-v2 0.1.0 (git+https://github.com/dcjohnson/libhackit-v2.git)",
+]
+
+[[package]]
+name = "libhackit-v2"
+version = "0.1.0"
+source = "git+https://github.com/dcjohnson/libhackit-v2.git#923723f6252ff8b5c8497b0f4e2d569a3683ddc0"
+

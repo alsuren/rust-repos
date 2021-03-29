@@ -1,0 +1,120 @@
+[root]
+name = "mimic"
+version = "0.0.1"
+dependencies = [
+ "jni 0.0.1 (git+https://github.com/GravityScore/jni-rs)",
+ "terminal 0.0.1 (git+https://github.com/GravityScore/Terminal)",
+]
+
+[[package]]
+name = "gcc"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "gl"
+version = "0.0.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "gl_common 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gl_generator 0.0.12 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gl_common"
+version = "0.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "gl_generator"
+version = "0.0.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "gl_common 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "khronos_api 0.0.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "xml-rs 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "glfw"
+version = "0.0.1"
+source = "git+https://github.com/bjz/glfw-rs#ff5780b06b0e5cd2f1198b4891e55f8fdac6a4d9"
+dependencies = [
+ "glfw-sys 3.0.4 (git+https://github.com/servo/glfw?branch=cargo-3.0.4)",
+ "log 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "semver 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "glfw-sys"
+version = "3.0.4"
+source = "git+https://github.com/servo/glfw?branch=cargo-3.0.4#765dace7e4125b87c764f5ac0e7a80eae5c550b2"
+
+[[package]]
+name = "image"
+version = "0.2.0-alpha.4"
+source = "git+https://github.com/PistonDevelopers/image#2ffc2222737ee6ed2d214ca1dde30d58fc9df430"
+dependencies = [
+ "num 0.1.8 (git+https://github.com/rust-lang/num)",
+]
+
+[[package]]
+name = "jni"
+version = "0.0.1"
+source = "git+https://github.com/GravityScore/jni-rs#e83e27199d18bb689b781b4a1722c84048259ffe"
+dependencies = [
+ "gcc 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "khronos_api"
+version = "0.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "log"
+version = "0.1.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "regex 0.1.10 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "num"
+version = "0.1.8"
+source = "git+https://github.com/rust-lang/num#cbf04cf6646f99b21e5262a99791ee85063203ba"
+dependencies = [
+ "rustc-serialize 0.2.7 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "regex"
+version = "0.1.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rustc-serialize"
+version = "0.2.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "semver"
+version = "0.1.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "terminal"
+version = "0.0.1"
+source = "git+https://github.com/GravityScore/Terminal#034fdce8f7ede048be71e95e656c870abfd4b2ed"
+dependencies = [
+ "gl 0.0.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "glfw 0.0.1 (git+https://github.com/bjz/glfw-rs)",
+ "image 0.2.0-alpha.4 (git+https://github.com/PistonDevelopers/image)",
+]
+
+[[package]]
+name = "xml-rs"
+version = "0.1.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

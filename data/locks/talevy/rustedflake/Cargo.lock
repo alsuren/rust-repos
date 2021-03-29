@@ -1,0 +1,81 @@
+[root]
+name = "rustedflake"
+version = "0.0.1"
+dependencies = [
+ "docopt_macros 0.6.4 (git+https://github.com/docopt/docopt.rs.git#21ce1190ef7631f71e52de5e13eb4d131564b82e)",
+ "lazy_static 0.1.0 (git+https://github.com/Kimundi/lazy-static.rs.git#e62a65372f1dd9019e37eb9381d819edff80e360)",
+ "nickel 0.1.0 (git+https://github.com/nickel-org/nickel.rs.git#d05cd9af2febad09336fc95f43f85e41f2eefb57)",
+]
+
+[[package]]
+name = "anymap"
+version = "0.9.0"
+source = "git+https://github.com/chris-morgan/anymap.git#3210c8082befc8d7a5a0626e0b06413ac832a56c"
+
+[[package]]
+name = "docopt"
+version = "0.6.4"
+source = "git+https://github.com/docopt/docopt.rs.git#21ce1190ef7631f71e52de5e13eb4d131564b82e"
+
+[[package]]
+name = "docopt_macros"
+version = "0.6.4"
+source = "git+https://github.com/docopt/docopt.rs.git#21ce1190ef7631f71e52de5e13eb4d131564b82e"
+dependencies = [
+ "docopt 0.6.4 (git+https://github.com/docopt/docopt.rs.git#21ce1190ef7631f71e52de5e13eb4d131564b82e)",
+]
+
+[[package]]
+name = "encoding"
+version = "0.1.0"
+source = "git+https://github.com/lifthrasiir/rust-encoding#1d26487807127f221afd55492f8f40cc4e718648"
+
+[[package]]
+name = "groupable"
+version = "0.1.0"
+source = "git+https://github.com/Ryman/groupable-rs#ae2a086edb0b10a7e5f143405d072871e75a118e"
+
+[[package]]
+name = "http"
+version = "0.1.0-pre"
+source = "git+https://github.com/chris-morgan/rust-http.git#fbec7cb3ea00e2685fd1dcf4ce1f7488c7c58704"
+dependencies = [
+ "openssl 0.0.0 (git+https://github.com/sfackler/rust-openssl.git#359043a7aaac6b10d6eb8692e613aa70f52cfc1b)",
+ "url 0.1.0 (git+https://github.com/servo/rust-url#29f70a47230c2aa736e263977247c786e0b2c243)",
+]
+
+[[package]]
+name = "lazy_static"
+version = "0.1.0"
+source = "git+https://github.com/Kimundi/lazy-static.rs.git#e62a65372f1dd9019e37eb9381d819edff80e360"
+
+[[package]]
+name = "nickel"
+version = "0.1.0"
+source = "git+https://github.com/nickel-org/nickel.rs.git#d05cd9af2febad09336fc95f43f85e41f2eefb57"
+dependencies = [
+ "anymap 0.9.0 (git+https://github.com/chris-morgan/anymap.git#3210c8082befc8d7a5a0626e0b06413ac832a56c)",
+ "groupable 0.1.0 (git+https://github.com/Ryman/groupable-rs#ae2a086edb0b10a7e5f143405d072871e75a118e)",
+ "http 0.1.0-pre (git+https://github.com/chris-morgan/rust-http.git#fbec7cb3ea00e2685fd1dcf4ce1f7488c7c58704)",
+ "rust-mustache 0.3.0 (git+https://github.com/pythonesque/rust-mustache.git#af44dbee522ea1eec931fbc9946c7621b754c126)",
+ "url 0.1.0 (git+https://github.com/servo/rust-url#29f70a47230c2aa736e263977247c786e0b2c243)",
+]
+
+[[package]]
+name = "openssl"
+version = "0.0.0"
+source = "git+https://github.com/sfackler/rust-openssl.git#359043a7aaac6b10d6eb8692e613aa70f52cfc1b"
+
+[[package]]
+name = "rust-mustache"
+version = "0.3.0"
+source = "git+https://github.com/pythonesque/rust-mustache.git#af44dbee522ea1eec931fbc9946c7621b754c126"
+
+[[package]]
+name = "url"
+version = "0.1.0"
+source = "git+https://github.com/servo/rust-url#29f70a47230c2aa736e263977247c786e0b2c243"
+dependencies = [
+ "encoding 0.1.0 (git+https://github.com/lifthrasiir/rust-encoding#1d26487807127f221afd55492f8f40cc4e718648)",
+]
+

@@ -1,0 +1,26 @@
+[root]
+name = "SmallVCM-rs"
+version = "0.0.1"
+dependencies = [
+ "rayon 0.0.1 (git+https://github.com/yuriks/rayon.git?ref=update)",
+ "time 0.1.1 (git+https://github.com/rust-lang/time)",
+]
+
+[[package]]
+name = "gcc"
+version = "0.1.1"
+source = "git+https://github.com/alexcrichton/gcc-rs#d35c34c871dd75f97fadf04cb0ed85d997a9bc0c"
+
+[[package]]
+name = "rayon"
+version = "0.0.1"
+source = "git+https://github.com/yuriks/rayon.git?ref=update#1d6a24be78e2e4ecb28df68bcdf6c4e5a339d527"
+
+[[package]]
+name = "time"
+version = "0.1.1"
+source = "git+https://github.com/rust-lang/time#c1c02adb74c6d9424541ae88ceb61de698b10eeb"
+dependencies = [
+ "gcc 0.1.1 (git+https://github.com/alexcrichton/gcc-rs)",
+]
+

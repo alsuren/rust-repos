@@ -1,0 +1,108 @@
+[root]
+name = "sonorous"
+version = "0.1.0"
+dependencies = [
+ "cson 0.1.3 (git+https://github.com/lifthrasiir/cson-rust.git)",
+ "encoding 0.2.4 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+ "encoding-index-japanese 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+ "encoding-index-korean 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+ "opengles 0.1.0 (git+https://github.com/lifthrasiir/rust-opengles-angle.git)",
+ "sdl 0.3.6 (git+https://github.com/lifthrasiir/rust-sdl.git)",
+ "sdl_image 0.3.6 (git+https://github.com/lifthrasiir/rust-sdl.git)",
+ "sdl_mixer 0.3.6 (git+https://github.com/lifthrasiir/rust-sdl.git)",
+ "sqlite3 0.1.0 (git+https://github.com/lifthrasiir/rustsqlite.git)",
+]
+
+[[package]]
+name = "cson"
+version = "0.1.3"
+source = "git+https://github.com/lifthrasiir/cson-rust.git#b8f1f7d51b9509a07a69c9d5f13f713203493d93"
+
+[[package]]
+name = "encoding"
+version = "0.2.4"
+source = "git+https://github.com/lifthrasiir/rust-encoding.git#46b4154264ad0c6034b29d36b250bed65f3c4328"
+dependencies = [
+ "encoding-index-japanese 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+ "encoding-index-korean 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+ "encoding-index-simpchinese 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+ "encoding-index-singlebyte 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+ "encoding-index-tradchinese 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+]
+
+[[package]]
+name = "encoding-index-japanese"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding.git#46b4154264ad0c6034b29d36b250bed65f3c4328"
+dependencies = [
+ "encoding_index_tests 0.1.0 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+]
+
+[[package]]
+name = "encoding-index-korean"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding.git#46b4154264ad0c6034b29d36b250bed65f3c4328"
+dependencies = [
+ "encoding_index_tests 0.1.0 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+]
+
+[[package]]
+name = "encoding-index-simpchinese"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding.git#46b4154264ad0c6034b29d36b250bed65f3c4328"
+dependencies = [
+ "encoding_index_tests 0.1.0 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+]
+
+[[package]]
+name = "encoding-index-singlebyte"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding.git#46b4154264ad0c6034b29d36b250bed65f3c4328"
+dependencies = [
+ "encoding_index_tests 0.1.0 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+]
+
+[[package]]
+name = "encoding-index-tradchinese"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding.git#46b4154264ad0c6034b29d36b250bed65f3c4328"
+dependencies = [
+ "encoding_index_tests 0.1.0 (git+https://github.com/lifthrasiir/rust-encoding.git)",
+]
+
+[[package]]
+name = "encoding_index_tests"
+version = "0.1.0"
+source = "git+https://github.com/lifthrasiir/rust-encoding.git#46b4154264ad0c6034b29d36b250bed65f3c4328"
+
+[[package]]
+name = "opengles"
+version = "0.1.0"
+source = "git+https://github.com/lifthrasiir/rust-opengles-angle.git#92240a7a31c5dc1ce063046ec22386c0b7a1c74c"
+
+[[package]]
+name = "sdl"
+version = "0.3.6"
+source = "git+https://github.com/lifthrasiir/rust-sdl.git#fcf08194101ea31574e9b4a25d7c8c0a54c84e67"
+
+[[package]]
+name = "sdl_image"
+version = "0.3.6"
+source = "git+https://github.com/lifthrasiir/rust-sdl.git#fcf08194101ea31574e9b4a25d7c8c0a54c84e67"
+dependencies = [
+ "sdl 0.3.6 (git+https://github.com/lifthrasiir/rust-sdl.git)",
+]
+
+[[package]]
+name = "sdl_mixer"
+version = "0.3.6"
+source = "git+https://github.com/lifthrasiir/rust-sdl.git#fcf08194101ea31574e9b4a25d7c8c0a54c84e67"
+dependencies = [
+ "sdl 0.3.6 (git+https://github.com/lifthrasiir/rust-sdl.git)",
+]
+
+[[package]]
+name = "sqlite3"
+version = "0.1.0"
+source = "git+https://github.com/lifthrasiir/rustsqlite.git#50c3bedf1f7b56be4c2a09834a9d0f4fb7330373"
+

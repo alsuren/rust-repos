@@ -1,0 +1,56 @@
+[root]
+name = "marafet"
+version = "0.1.0"
+dependencies = [
+ "argparse 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "marafet_css 0.1.0",
+ "marafet_es5citojs 0.1.0",
+ "marafet_parser 0.1.0",
+ "marafet_util 0.1.0",
+ "unicode-segmentation 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "argparse"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "combine"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "marafet_css"
+version = "0.1.0"
+dependencies = [
+ "marafet_parser 0.1.0",
+ "marafet_util 0.1.0",
+]
+
+[[package]]
+name = "marafet_es5citojs"
+version = "0.1.0"
+dependencies = [
+ "marafet_parser 0.1.0",
+ "marafet_util 0.1.0",
+]
+
+[[package]]
+name = "marafet_parser"
+version = "0.1.0"
+dependencies = [
+ "combine 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "marafet_util 0.1.0",
+ "unicode-segmentation 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "marafet_util"
+version = "0.1.0"
+
+[[package]]
+name = "unicode-segmentation"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

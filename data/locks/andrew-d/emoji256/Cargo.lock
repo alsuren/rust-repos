@@ -1,0 +1,30 @@
+[[package]]
+name = "either"
+version = "1.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "emoji256"
+version = "0.0.2"
+dependencies = [
+ "itertools 0.7.8 (registry+https://github.com/rust-lang/crates.io-index)",
+ "unicode_names 0.1.7 (git+https://github.com/andrew-d/unicode_names.git?rev=099ddd5fd37f7ff0e45c4ea47d49c2ba2d03ec3b)",
+]
+
+[[package]]
+name = "itertools"
+version = "0.7.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "either 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "unicode_names"
+version = "0.1.7"
+source = "git+https://github.com/andrew-d/unicode_names.git?rev=099ddd5fd37f7ff0e45c4ea47d49c2ba2d03ec3b#099ddd5fd37f7ff0e45c4ea47d49c2ba2d03ec3b"
+
+[metadata]
+"checksum either 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "3d2b503c86dad62aaf414ecf2b8c527439abedb3f8d812537f0b12bfd6f32a91"
+"checksum itertools 0.7.8 (registry+https://github.com/rust-lang/crates.io-index)" = "f58856976b776fedd95533137617a02fb25719f40e7d9b01c7043cd65474f450"
+"checksum unicode_names 0.1.7 (git+https://github.com/andrew-d/unicode_names.git?rev=099ddd5fd37f7ff0e45c4ea47d49c2ba2d03ec3b)" = "<none>"

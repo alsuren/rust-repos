@@ -1,0 +1,20 @@
+[root]
+name = "universe"
+version = "0.0.1"
+dependencies = [
+ "net 0.0.1 (git+http://github.com/osiris-game/net)",
+]
+
+[[package]]
+name = "capnp"
+version = "0.1.0"
+source = "git+https://github.com/dwrensha/capnproto-rust.git#eff80436f6ac3048bbc432698dc192d2b925ce8f"
+
+[[package]]
+name = "net"
+version = "0.0.1"
+source = "git+http://github.com/osiris-game/net#aab18443205ec9b63e0040a954d9226febd30268"
+dependencies = [
+ "capnp 0.1.0 (git+https://github.com/dwrensha/capnproto-rust.git)",
+]
+

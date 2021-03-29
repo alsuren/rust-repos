@@ -1,0 +1,62 @@
+[root]
+name = "messin"
+version = "0.0.1"
+dependencies = [
+ "nalgebra 0.2.0 (git+https://github.com/sebcrozet/nalgebra)",
+ "sdl2 0.0.18 (git+https://github.com/AngryLawyer/rust-sdl2.git)",
+ "time 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "bitflags"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "gcc"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "nalgebra"
+version = "0.2.0"
+source = "git+https://github.com/sebcrozet/nalgebra#713589ff508b30a3dedc676e9f9fd26f791f2509"
+dependencies = [
+ "rustc-serialize 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "pkg-config"
+version = "0.1.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rustc-serialize"
+version = "0.2.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "sdl2"
+version = "0.0.18"
+source = "git+https://github.com/AngryLawyer/rust-sdl2.git#b60f6ce493bc48a4284508e53bab07dc205bd09d"
+dependencies = [
+ "bitflags 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sdl2-sys 0.0.16 (git+https://github.com/AngryLawyer/rust-sdl2.git)",
+]
+
+[[package]]
+name = "sdl2-sys"
+version = "0.0.16"
+source = "git+https://github.com/AngryLawyer/rust-sdl2.git#b60f6ce493bc48a4284508e53bab07dc205bd09d"
+dependencies = [
+ "pkg-config 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "time"
+version = "0.1.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "gcc 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+

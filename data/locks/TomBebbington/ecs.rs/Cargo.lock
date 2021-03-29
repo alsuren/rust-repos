@@ -1,0 +1,12 @@
+[root]
+name = "eccles"
+version = "0.2.3"
+dependencies = [
+ "clock_ticks 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "clock_ticks"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

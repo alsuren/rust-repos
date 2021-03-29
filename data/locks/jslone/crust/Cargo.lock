@@ -1,0 +1,20 @@
+[root]
+name = "crust"
+version = "0.1.0"
+dependencies = [
+ "libc 0.1.0",
+ "rust-libcore 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.1.0"
+dependencies = [
+ "rust-libcore 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rust-libcore"
+version = "0.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

@@ -1,0 +1,12 @@
+[root]
+name = "euler"
+version = "0.0.1"
+dependencies = [
+ "primes 0.2.0 (git+https://github.com/wackywendell/primes.git)",
+]
+
+[[package]]
+name = "primes"
+version = "0.2.0"
+source = "git+https://github.com/wackywendell/primes.git#e70edf39f2f76dda989707f9cbd61fb03187dea6"
+

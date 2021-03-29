@@ -1,0 +1,33 @@
+[[package]]
+name = "libc"
+version = "0.2.42"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "readline"
+version = "0.0.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+ "readline-sys 0.0.12 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "readline-sys"
+version = "0.0.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rustyscheme"
+version = "0.1.0"
+dependencies = [
+ "readline 0.0.13 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)" = "b685088df2b950fccadf07a7187c8ef846a959c142338a48f9dc0b94517eb5f1"
+"checksum readline 0.0.13 (registry+https://github.com/rust-lang/crates.io-index)" = "4218b9ac22bd209aec77277e713de7597237242bdc0f76c91bb67a98929c92fc"
+"checksum readline-sys 0.0.12 (registry+https://github.com/rust-lang/crates.io-index)" = "d4119c06ab954da155685b7157556e94fab679d8c8b05adc921d4ab4fb26f22a"

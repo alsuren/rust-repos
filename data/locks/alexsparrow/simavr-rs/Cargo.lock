@@ -1,0 +1,18 @@
+[root]
+name = "simavr"
+version = "0.1.0"
+dependencies = [
+ "libc 0.2.10 (registry+https://github.com/rust-lang/crates.io-index)",
+ "va_list 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.2.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "va_list"
+version = "0.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

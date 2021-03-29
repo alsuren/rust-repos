@@ -1,0 +1,26 @@
+[root]
+name = "rust-chat"
+version = "0.0.1"
+dependencies = [
+ "redis 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "redis"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "sha1 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "url 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "sha1"
+version = "0.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "url"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

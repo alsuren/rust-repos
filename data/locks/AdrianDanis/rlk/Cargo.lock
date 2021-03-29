@@ -1,0 +1,93 @@
+[[package]]
+name = "bitfield"
+version = "0.12.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "bitflags"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "bitflags"
+version = "1.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "cc"
+version = "1.0.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "interpolate_idents"
+version = "0.2.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "multiboot"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "raw-cpuid"
+version = "2.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "bitflags 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "raw-cpuid"
+version = "3.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "bitflags 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cc 1.0.17 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rlibc"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rlk"
+version = "0.1.0"
+dependencies = [
+ "bitfield 0.12.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "bitflags 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cc 1.0.17 (registry+https://github.com/rust-lang/crates.io-index)",
+ "interpolate_idents 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "multiboot 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "raw-cpuid 3.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rlibc 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "static_assertions 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "x86 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "static_assertions"
+version = "0.2.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "x86"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "bitflags 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "raw-cpuid 2.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum bitfield 0.12.2 (registry+https://github.com/rust-lang/crates.io-index)" = "109ab0c6247e32ed4b244f84a4a01f2a243852831e061b11f1f2d67341ae0bff"
+"checksum bitflags 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)" = "aad18937a628ec6abcd26d1489012cc0e18c21798210f491af69ded9b881106d"
+"checksum bitflags 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)" = "d0c54bb8f454c567f21197eefcdbf5679d0bd99f2ddbe52e84c77061952e6789"
+"checksum cc 1.0.17 (registry+https://github.com/rust-lang/crates.io-index)" = "49ec142f5768efb5b7622aebc3fdbdbb8950a4b9ba996393cb76ef7466e8747d"
+"checksum interpolate_idents 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)" = "99576f81a4b32496245b4fed677ab2cc1efcf0ecbb4eae429861c3c4e00cbf4d"
+"checksum multiboot 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "745e351d4f128ea9e266fe2dd04a1bd7349c60441d45ec8677520bae08e25d43"
+"checksum raw-cpuid 2.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "13b844e4049605ff38fed943f5c7b2c691fad68d9d5bf074d2720554c4e48246"
+"checksum raw-cpuid 3.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "233ec1847057cf4d4591a0d76908aa12812140b11ea7d7d05b4c38cadb069c31"
+"checksum rlibc 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "fc874b127765f014d792f16763a81245ab80500e2ad921ed4ee9e82481ee08fe"
+"checksum static_assertions 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)" = "c19be23126415861cb3a23e501d34a708f7f9b2183c5252d690941c2e69199d5"
+"checksum x86 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)" = "178718d3f2c7dd98d44f8e353b0ccc8c89b2e81e31e5eed93e7fdf5f36db7a13"

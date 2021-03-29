@@ -1,0 +1,44 @@
+[root]
+name = "metrics_aggregate"
+version = "0.1.0"
+dependencies = [
+ "chunked_transfer 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "core_mini_http 0.0.1 (git+https://github.com/hashmismatch/core_mini_http.rs)",
+ "nom 1.0.0-beta (registry+https://github.com/rust-lang/crates.io-index)",
+ "unix_socket 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "chunked_transfer"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "core_mini_http"
+version = "0.0.1"
+source = "git+https://github.com/hashmismatch/core_mini_http.rs#856494dba71dd85a9eac9fc8103542f801305bb6"
+
+[[package]]
+name = "debug-builders"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.1.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "nom"
+version = "1.0.0-beta"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "unix_socket"
+version = "0.4.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "debug-builders 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+

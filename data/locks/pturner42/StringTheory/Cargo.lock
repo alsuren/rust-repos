@@ -1,0 +1,146 @@
+[root]
+name = "StringTheory"
+version = "0.0.1"
+dependencies = [
+ "gl 0.0.12 (git+https://github.com/bjz/gl-rs.git)",
+ "rust-assimp 0.0.1-alpha.2 (git+https://github.com/lotusronin/rust-assimp)",
+ "rustnet 0.0.2 (git+https://github.com/hirolord/rustnet.git)",
+ "sdl2 0.1.0 (git+https://github.com/AngryLawyer/rust-sdl2)",
+]
+
+[[package]]
+name = "bitflags"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "gl"
+version = "0.0.12"
+source = "git+https://github.com/bjz/gl-rs.git#3ebf1cfeda5c5090e6061021b271c32c8eb3bbbd"
+dependencies = [
+ "gl_common 0.0.4 (git+https://github.com/bjz/gl-rs.git)",
+ "gl_generator 0.0.23 (git+https://github.com/bjz/gl-rs.git)",
+ "khronos_api 0.0.5 (git+https://github.com/bjz/gl-rs.git)",
+ "libc 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gl_common"
+version = "0.0.4"
+source = "git+https://github.com/bjz/gl-rs.git#3ebf1cfeda5c5090e6061021b271c32c8eb3bbbd"
+dependencies = [
+ "libc 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gl_generator"
+version = "0.0.23"
+source = "git+https://github.com/bjz/gl-rs.git#3ebf1cfeda5c5090e6061021b271c32c8eb3bbbd"
+dependencies = [
+ "khronos_api 0.0.5 (git+https://github.com/bjz/gl-rs.git)",
+ "log 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "xml-rs 0.1.23 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "khronos_api"
+version = "0.0.5"
+source = "git+https://github.com/bjz/gl-rs.git#3ebf1cfeda5c5090e6061021b271c32c8eb3bbbd"
+
+[[package]]
+name = "libc"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "log"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "num"
+version = "0.1.22"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "rand 0.3.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-serialize 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rand"
+version = "0.3.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "log 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rust-assimp"
+version = "0.0.1-alpha.2"
+source = "git+https://github.com/lotusronin/rust-assimp#103264058c858e577027fc246823dce697246e4c"
+dependencies = [
+ "vecmath 0.0.6 (git+https://github.com/PistonDevelopers/vecmath)",
+]
+
+[[package]]
+name = "rustc-serialize"
+version = "0.3.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rustnet"
+version = "0.0.2"
+source = "git+https://github.com/hirolord/rustnet.git#2abc01ad717bb6c3806ac24bf2d30e6f54581c0d"
+dependencies = [
+ "sdl2_net 0.0.2 (git+https://github.com/Limvot/rust-sdl2_net)",
+]
+
+[[package]]
+name = "sdl2"
+version = "0.1.0"
+source = "git+https://github.com/AngryLawyer/rust-sdl2#103b85c09f241e5f74a155d67cb413282924ea99"
+dependencies = [
+ "bitflags 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "num 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rand 0.3.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sdl2-sys 0.1.0 (git+https://github.com/AngryLawyer/rust-sdl2)",
+]
+
+[[package]]
+name = "sdl2-sys"
+version = "0.1.0"
+source = "git+https://github.com/AngryLawyer/rust-sdl2#103b85c09f241e5f74a155d67cb413282924ea99"
+dependencies = [
+ "libc 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "num 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "sdl2_net"
+version = "0.0.2"
+source = "git+https://github.com/Limvot/rust-sdl2_net#cea7e3627a8454328d8f31692678ae21884778da"
+dependencies = [
+ "sdl2 0.1.0 (git+https://github.com/AngryLawyer/rust-sdl2)",
+]
+
+[[package]]
+name = "vecmath"
+version = "0.0.6"
+source = "git+https://github.com/PistonDevelopers/vecmath#19cde554a1e19543d0bda851d2bdbd55df8262bd"
+dependencies = [
+ "num 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "xml-rs"
+version = "0.1.23"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "bitflags 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+

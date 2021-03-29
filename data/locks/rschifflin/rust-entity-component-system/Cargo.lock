@@ -1,0 +1,18 @@
+[root]
+name = "entity-component-system"
+version = "0.0.1"
+dependencies = [
+ "component_store 0.0.1 (git+https://github.com/rschifflin/rust-component-store)",
+ "pubsub 0.0.1 (git+https://github.com/rschifflin/rust-pubsub)",
+]
+
+[[package]]
+name = "component_store"
+version = "0.0.1"
+source = "git+https://github.com/rschifflin/rust-component-store#9143bc9a0880d6dfeaae335512253fd60d255d70"
+
+[[package]]
+name = "pubsub"
+version = "0.0.1"
+source = "git+https://github.com/rschifflin/rust-pubsub#b07e4f397f298b5bfc7e977b2a18db0a64d010e1"
+

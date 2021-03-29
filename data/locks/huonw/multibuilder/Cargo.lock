@@ -1,0 +1,12 @@
+[root]
+name = "multibuilder"
+version = "1.0.0"
+dependencies = [
+ "glob 0.0.1 (git+https://github.com/rust-lang/glob#469a6bc1a0fc289ab220170e691cffbc01dcf1e6)",
+]
+
+[[package]]
+name = "glob"
+version = "0.0.1"
+source = "git+https://github.com/rust-lang/glob#469a6bc1a0fc289ab220170e691cffbc01dcf1e6"
+

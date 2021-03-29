@@ -1,0 +1,36 @@
+[root]
+name = "drossel"
+version = "0.1.0"
+dependencies = [
+ "drossel-journal 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "leveldb 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "strand 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "db_key"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "drossel-journal"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "db_key 0.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "leveldb 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "leveldb"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "db_key 0.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "strand"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

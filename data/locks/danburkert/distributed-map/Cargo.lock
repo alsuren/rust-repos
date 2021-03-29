@@ -1,0 +1,21 @@
+[root]
+name = "distributed-map"
+version = "0.0.1"
+dependencies = [
+ "capnp 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "capnpc 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "capnp"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "capnpc"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "capnp 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+

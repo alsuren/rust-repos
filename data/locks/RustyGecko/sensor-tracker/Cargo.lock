@@ -1,0 +1,175 @@
+[root]
+name = "sensor-tracker"
+version = "0.1.0"
+dependencies = [
+ "alloc 0.0.1 (git+https://github.com/RustyGecko/rust-alloc.git)",
+ "cmsis 0.1.0 (git+https://github.com/RustyGecko/cmsis.git)",
+ "collections 0.0.1 (git+https://github.com/RustyGecko/rust-collections.git)",
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "emdrv 0.0.1 (git+https://github.com/RustyGecko/emdrv.git)",
+ "emlib 0.0.1 (git+https://github.com/RustyGecko/emlib.git)",
+ "kits 0.1.0 (git+https://github.com/RustyGecko/kits.git)",
+ "libc 0.0.1 (git+https://github.com/RustyGecko/rust-libc.git)",
+ "modules 0.1.0 (git+https://github.com/RustyGecko/modules.git)",
+ "sensors 0.1.0 (git+https://github.com/RustyGecko/sensors.git)",
+]
+
+[[package]]
+name = "alloc"
+version = "0.0.1"
+source = "git+https://github.com/RustyGecko/rust-alloc.git#b79ab516fca0dc74af94ae608aa42c111512ae5a"
+dependencies = [
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "libc 0.0.1 (git+https://github.com/RustyGecko/rust-libc.git)",
+ "rust_src 0.0.1 (git+https://github.com/sondrele/rust-src.git)",
+]
+
+[[package]]
+name = "cmsis"
+version = "0.1.0"
+source = "git+https://github.com/RustyGecko/cmsis.git#a710a038023fcc0a1bbd0a814f2d44df4a7ec07e"
+dependencies = [
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "gcc 0.3.3 (git+https://github.com/sondrele/gcc-rs.git)",
+ "submodules 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "collections"
+version = "0.0.1"
+source = "git+https://github.com/RustyGecko/rust-collections.git#1ed1db825e05fbf6e3f150d728a93462d49a6261"
+dependencies = [
+ "alloc 0.0.1 (git+https://github.com/RustyGecko/rust-alloc.git)",
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "libc 0.0.1 (git+https://github.com/RustyGecko/rust-libc.git)",
+ "rust_src 0.0.1 (git+https://github.com/sondrele/rust-src.git)",
+ "rustc_unicode 0.0.1 (git+https://github.com/RustyGecko/rust-unicode.git)",
+]
+
+[[package]]
+name = "core"
+version = "0.0.1"
+source = "git+https://github.com/RustyGecko/rust-core.git#0c21ef16f7ec1d3ed0083872178c943ead0d0fd9"
+dependencies = [
+ "rust_src 0.0.1 (git+https://github.com/sondrele/rust-src.git)",
+]
+
+[[package]]
+name = "emdrv"
+version = "0.0.1"
+source = "git+https://github.com/RustyGecko/emdrv.git#276cdfb5823e2fabecee8d246982956389192bff"
+dependencies = [
+ "cmsis 0.1.0 (git+https://github.com/RustyGecko/cmsis.git)",
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "emlib 0.0.1 (git+https://github.com/RustyGecko/emlib.git)",
+ "gcc 0.3.3 (git+https://github.com/sondrele/gcc-rs.git)",
+ "submodules 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "emlib"
+version = "0.0.1"
+source = "git+https://github.com/RustyGecko/emlib.git#0e05aa9bb2f25c12ae6e810a1c121386077f6481"
+dependencies = [
+ "alloc 0.0.1 (git+https://github.com/RustyGecko/rust-alloc.git)",
+ "cmsis 0.1.0 (git+https://github.com/RustyGecko/cmsis.git)",
+ "collections 0.0.1 (git+https://github.com/RustyGecko/rust-collections.git)",
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "gcc 0.3.3 (git+https://github.com/sondrele/gcc-rs.git)",
+ "libc 0.0.1 (git+https://github.com/RustyGecko/rust-libc.git)",
+ "rlibc 0.1.3 (git+https://github.com/RustyGecko/rlibc.git)",
+ "startup 0.1.0 (git+https://github.com/RustyGecko/startup.git)",
+ "submodules 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gcc"
+version = "0.3.3"
+source = "git+https://github.com/sondrele/gcc-rs.git#4507766dbe9e40224121058bddcc5d0f4f969209"
+
+[[package]]
+name = "kits"
+version = "0.1.0"
+source = "git+https://github.com/RustyGecko/kits.git#dc125f71050a80adf09541c7070672ab22f25c1b"
+dependencies = [
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "emlib 0.0.1 (git+https://github.com/RustyGecko/emlib.git)",
+ "gcc 0.3.3 (git+https://github.com/sondrele/gcc-rs.git)",
+ "modules 0.1.0 (git+https://github.com/RustyGecko/modules.git)",
+ "submodules 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.0.1"
+source = "git+https://github.com/RustyGecko/rust-libc.git#650f649c8f68191292d248d1f89a4a78adc07841"
+dependencies = [
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+]
+
+[[package]]
+name = "modules"
+version = "0.1.0"
+source = "git+https://github.com/RustyGecko/modules.git#96cff374a5bb85e494bfcb38f0928d920f402974"
+dependencies = [
+ "collections 0.0.1 (git+https://github.com/RustyGecko/rust-collections.git)",
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "emdrv 0.0.1 (git+https://github.com/RustyGecko/emdrv.git)",
+ "emlib 0.0.1 (git+https://github.com/RustyGecko/emlib.git)",
+ "libc 0.0.1 (git+https://github.com/RustyGecko/rust-libc.git)",
+]
+
+[[package]]
+name = "rlibc"
+version = "0.1.3"
+source = "git+https://github.com/RustyGecko/rlibc.git#64d5b36e75f9e0856812096e7ab36a61f0d51a4b"
+dependencies = [
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+]
+
+[[package]]
+name = "rust_src"
+version = "0.0.1"
+source = "git+https://github.com/sondrele/rust-src.git#f9e6404a60fabdb9a27aa6f14d73038ea3510842"
+
+[[package]]
+name = "rustc_unicode"
+version = "0.0.1"
+source = "git+https://github.com/RustyGecko/rust-unicode.git#8991585b0aed7bcfe58c93db2fb4f91cba1d616c"
+dependencies = [
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "rust_src 0.0.1 (git+https://github.com/sondrele/rust-src.git)",
+]
+
+[[package]]
+name = "sensors"
+version = "0.1.0"
+source = "git+https://github.com/RustyGecko/sensors.git#5590c83334f0f47c190a6bc194c4cd2806f5fa29"
+dependencies = [
+ "collections 0.0.1 (git+https://github.com/RustyGecko/rust-collections.git)",
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "emdrv 0.0.1 (git+https://github.com/RustyGecko/emdrv.git)",
+ "emlib 0.0.1 (git+https://github.com/RustyGecko/emlib.git)",
+ "gcc 0.3.3 (git+https://github.com/sondrele/gcc-rs.git)",
+ "libc 0.0.1 (git+https://github.com/RustyGecko/rust-libc.git)",
+ "submodules 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "startup"
+version = "0.1.0"
+source = "git+https://github.com/RustyGecko/startup.git#a80c2f5c563a7737c8c43f34ceeb9bd0c541496c"
+dependencies = [
+ "alloc 0.0.1 (git+https://github.com/RustyGecko/rust-alloc.git)",
+ "core 0.0.1 (git+https://github.com/RustyGecko/rust-core.git)",
+ "gcc 0.3.3 (git+https://github.com/sondrele/gcc-rs.git)",
+ "libc 0.0.1 (git+https://github.com/RustyGecko/rust-libc.git)",
+ "rlibc 0.1.3 (git+https://github.com/RustyGecko/rlibc.git)",
+ "submodules 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "submodules"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

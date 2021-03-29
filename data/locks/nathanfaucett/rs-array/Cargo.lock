@@ -1,0 +1,14 @@
+[root]
+name = "array"
+version = "0.1.0"
+dependencies = [
+ "collection_traits 0.1.0 (git+https://github.com/nathanfaucett/rs-collection_traits)",
+]
+
+[[package]]
+name = "collection_traits"
+version = "0.1.0"
+source = "git+https://github.com/nathanfaucett/rs-collection_traits#59414f0b0ae785ae07c665e7159c9fc4c82e6f95"
+
+[metadata]
+"checksum collection_traits 0.1.0 (git+https://github.com/nathanfaucett/rs-collection_traits)" = "<none>"

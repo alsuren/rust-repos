@@ -1,0 +1,32 @@
+[root]
+name = "iwb-control"
+version = "0.0.1"
+dependencies = [
+ "libc 0.1.12 (registry+https://github.com/rust-lang/crates.io-index)",
+ "qmlrs 0.1.1 (git+https://github.com/cyndis/qmlrs.git)",
+]
+
+[[package]]
+name = "libc"
+version = "0.1.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.2.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "pkg-config"
+version = "0.3.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "qmlrs"
+version = "0.1.1"
+source = "git+https://github.com/cyndis/qmlrs.git#ff28b56a044c2fdc7a5a8d0a423d16c44c331428"
+dependencies = [
+ "libc 0.2.13 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pkg-config 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+

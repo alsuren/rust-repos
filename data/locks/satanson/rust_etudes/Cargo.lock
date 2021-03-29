@@ -1,0 +1,248 @@
+[[package]]
+name = "Longest_Palindromic_Substring"
+version = "0.1.0"
+
+[[package]]
+name = "Longest_Substring_Without_Repeating_Characters"
+version = "0.1.0"
+
+[[package]]
+name = "Median_of_Two_Sorted_Arrays"
+version = "0.1.0"
+
+[[package]]
+name = "Palindrome_Number"
+version = "0.1.0"
+
+[[package]]
+name = "Regular_Expression_Matching"
+version = "0.1.0"
+
+[[package]]
+name = "Reverse_Integer"
+version = "0.1.0"
+
+[[package]]
+name = "String_to_Integer"
+version = "0.1.0"
+
+[[package]]
+name = "ZigZag_Conversion"
+version = "0.1.0"
+
+[[package]]
+name = "add_two_numbers"
+version = "0.1.0"
+
+[[package]]
+name = "common"
+version = "0.1.0"
+
+[[package]]
+name = "conditional_compiling"
+version = "0.1.0"
+
+[[package]]
+name = "etudes"
+version = "0.1.0"
+
+[[package]]
+name = "my_proc_macro"
+version = "1.0.0"
+
+[[package]]
+name = "n011_Container_With_Most_Water"
+version = "0.1.0"
+
+[[package]]
+name = "n012_Integer_to_Roman"
+version = "0.1.0"
+
+[[package]]
+name = "n013_Roman_to_Integer"
+version = "0.1.0"
+
+[[package]]
+name = "n014_Longest_Common_Prefix"
+version = "0.1.0"
+
+[[package]]
+name = "n015_3Sum"
+version = "0.1.0"
+
+[[package]]
+name = "n016_3Sum_Closest"
+version = "0.1.0"
+
+[[package]]
+name = "n017_Letter_Combinations_of_a_Phone_Number"
+version = "0.1.0"
+
+[[package]]
+name = "n018_4Sum"
+version = "0.1.0"
+
+[[package]]
+name = "n019_Remove_Nth_Node_From_End_of_List"
+version = "0.1.0"
+dependencies = [
+ "common 0.1.0",
+]
+
+[[package]]
+name = "n020_Valid_Parentheses"
+version = "0.1.0"
+
+[[package]]
+name = "n021_Merge_Two_Sorted_Lists"
+version = "0.1.0"
+dependencies = [
+ "common 0.1.0",
+]
+
+[[package]]
+name = "n022_Generate_Parentheses"
+version = "0.1.0"
+
+[[package]]
+name = "n023_Merge_k_Sorted_Lists"
+version = "0.1.0"
+dependencies = [
+ "common 0.1.0",
+]
+
+[[package]]
+name = "n024_Swap_Nodes_in_Pairs"
+version = "0.1.0"
+dependencies = [
+ "common 0.1.0",
+]
+
+[[package]]
+name = "n025_Reverse_Nodes_in_k_Group"
+version = "0.1.0"
+dependencies = [
+ "common 0.1.0",
+]
+
+[[package]]
+name = "n026_Remove_Duplicates_from_Sorted_Array"
+version = "0.1.0"
+
+[[package]]
+name = "n027_Remove_Element"
+version = "0.1.0"
+
+[[package]]
+name = "n028_Implement_strStr"
+version = "0.1.0"
+
+[[package]]
+name = "n029_Divide_Two_Integers"
+version = "0.1.0"
+
+[[package]]
+name = "n030_Substring_with_Concatenation_of_All_Words"
+version = "0.1.0"
+
+[[package]]
+name = "n031_Next_Permutation"
+version = "0.1.0"
+
+[[package]]
+name = "n032_Longest_Valid_Parentheses"
+version = "0.1.0"
+
+[[package]]
+name = "n033_Search_in_Rotated_Sorted_Array"
+version = "0.1.0"
+
+[[package]]
+name = "n034_Find_First_and_Last_Position_of_Element_in_Sorted_Array"
+version = "0.1.0"
+
+[[package]]
+name = "n035_Search_Insert_Position"
+version = "0.1.0"
+
+[[package]]
+name = "n036_Valid_Sudoku"
+version = "0.1.0"
+dependencies = [
+ "common 0.1.0",
+]
+
+[[package]]
+name = "n037_Sudoku_Solver"
+version = "0.1.0"
+dependencies = [
+ "common 0.1.0",
+]
+
+[[package]]
+name = "n038_Count_and_Say"
+version = "0.1.0"
+
+[[package]]
+name = "n039_Combination_Sum"
+version = "0.1.0"
+
+[[package]]
+name = "n040_Combination_Sum_II"
+version = "0.1.0"
+
+[[package]]
+name = "n041_First_Missing_Positive"
+version = "0.1.0"
+
+[[package]]
+name = "n042_Trapping_Rain_Water"
+version = "0.1.0"
+
+[[package]]
+name = "n043_Multiply_Strings"
+version = "0.1.0"
+
+[[package]]
+name = "n044_Wildcard_Matching"
+version = "0.1.0"
+
+[[package]]
+name = "n045_Jump_Game_II"
+version = "0.1.0"
+
+[[package]]
+name = "n046_Permutations"
+version = "0.1.0"
+
+[[package]]
+name = "n047_Permutations_II"
+version = "0.1.0"
+
+[[package]]
+name = "n048_Rotate_Image"
+version = "0.1.0"
+
+[[package]]
+name = "n049_Group_Anagrams"
+version = "0.1.0"
+
+[[package]]
+name = "n050_Pow_x_n"
+version = "0.1.0"
+
+[[package]]
+name = "n051_N_Queens"
+version = "0.1.0"
+
+[[package]]
+name = "non_proc_macro"
+version = "0.1.0"
+dependencies = [
+ "my_proc_macro 1.0.0",
+]
+
+[[package]]
+name = "two_sum"
+version = "0.1.0"
+

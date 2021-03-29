@@ -1,0 +1,14 @@
+[[package]]
+name = "mecab"
+version = "0.1.3"
+source = "git+https://github.com/tsurai/mecab-rs.git#310843c17dc49343dee0668760264854dc26b45c"
+
+[[package]]
+name = "mecab-experiments"
+version = "0.1.0"
+dependencies = [
+ "mecab 0.1.3 (git+https://github.com/tsurai/mecab-rs.git)",
+]
+
+[metadata]
+"checksum mecab 0.1.3 (git+https://github.com/tsurai/mecab-rs.git)" = "<none>"

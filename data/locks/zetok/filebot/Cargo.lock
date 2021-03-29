@@ -1,0 +1,12 @@
+[root]
+name = "filebot"
+version = "0.0.1"
+dependencies = [
+ "tox 0.1.0 (git+https://github.com/suhr/rust-tox.git)",
+]
+
+[[package]]
+name = "tox"
+version = "0.1.0"
+source = "git+https://github.com/suhr/rust-tox.git#9e88b5e629128565bbf0665f778db57391d9a1d8"
+

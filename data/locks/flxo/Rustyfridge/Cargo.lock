@@ -1,0 +1,61 @@
+[root]
+name = "rustyfridge"
+version = "0.0.2"
+dependencies = [
+ "ioreg 0.1.0 (git+https://github.com/hackndev/zinc.git)",
+ "macro_platformtree 0.1.0 (git+https://github.com/hackndev/zinc.git)",
+ "platformtree 0.1.0 (git+https://github.com/hackndev/zinc.git)",
+ "rust-libcore 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "zinc 0.1.0 (git+https://github.com/hackndev/zinc.git)",
+]
+
+[[package]]
+name = "ioreg"
+version = "0.1.0"
+source = "git+https://github.com/hackndev/zinc.git#d097403961421fe1d2062e66f1878d78c523bb99"
+
+[[package]]
+name = "macro_platformtree"
+version = "0.1.0"
+source = "git+https://github.com/hackndev/zinc.git#d097403961421fe1d2062e66f1878d78c523bb99"
+dependencies = [
+ "platformtree 0.1.0 (git+https://github.com/hackndev/zinc.git)",
+]
+
+[[package]]
+name = "platformtree"
+version = "0.1.0"
+source = "git+https://github.com/hackndev/zinc.git#d097403961421fe1d2062e66f1878d78c523bb99"
+
+[[package]]
+name = "rlibc"
+version = "0.1.4"
+source = "git+https://github.com/hackndev/rlibc?branch=zinc#620489f8badd698f4440fd19889c308d8ab41078"
+dependencies = [
+ "rust-libcore 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rust-libcore"
+version = "0.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "volatile_cell"
+version = "1.0.0"
+source = "git+https://github.com/hackndev/zinc.git#d097403961421fe1d2062e66f1878d78c523bb99"
+dependencies = [
+ "rust-libcore 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "zinc"
+version = "0.1.0"
+source = "git+https://github.com/hackndev/zinc.git#d097403961421fe1d2062e66f1878d78c523bb99"
+dependencies = [
+ "ioreg 0.1.0 (git+https://github.com/hackndev/zinc.git)",
+ "rlibc 0.1.4 (git+https://github.com/hackndev/rlibc?branch=zinc)",
+ "rust-libcore 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "volatile_cell 1.0.0 (git+https://github.com/hackndev/zinc.git)",
+]
+

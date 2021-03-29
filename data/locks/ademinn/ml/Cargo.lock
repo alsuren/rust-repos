@@ -1,0 +1,20 @@
+[root]
+name = "ml"
+version = "0.0.1"
+dependencies = [
+ "GSL 0.4.11 (git+https://github.com/GuillaumeGomez/rust-GSL.git)",
+ "common 0.0.1",
+]
+
+[[package]]
+name = "GSL"
+version = "0.4.11"
+source = "git+https://github.com/GuillaumeGomez/rust-GSL.git#38aff4905af99fced76b75ba05b2b0e24859608a"
+
+[[package]]
+name = "common"
+version = "0.0.1"
+dependencies = [
+ "GSL 0.4.11 (git+https://github.com/GuillaumeGomez/rust-GSL.git)",
+]
+

@@ -1,0 +1,18 @@
+[root]
+name = "quagmire"
+version = "0.0.1"
+dependencies = [
+ "toml 0.1.6 (git+https://github.com/alexcrichton/toml-rs)",
+ "xdg 0.1.0 (git+https://github.com/o11c/rust-xdg)",
+]
+
+[[package]]
+name = "toml"
+version = "0.1.6"
+source = "git+https://github.com/alexcrichton/toml-rs#95c6161dcec9cdaada7e1507c6e536eeb7623ed4"
+
+[[package]]
+name = "xdg"
+version = "0.1.0"
+source = "git+https://github.com/o11c/rust-xdg#c5ca764bc3aa49aa6506bcdf9075f9c7c4a10611"
+

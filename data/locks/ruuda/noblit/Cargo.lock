@@ -1,0 +1,18 @@
+[[package]]
+name = "haveibeenpwned"
+version = "0.0.0"
+dependencies = [
+ "noblit 0.0.0",
+]
+
+[[package]]
+name = "libnoblit"
+version = "0.0.0"
+dependencies = [
+ "noblit 0.0.0",
+]
+
+[[package]]
+name = "noblit"
+version = "0.0.0"
+

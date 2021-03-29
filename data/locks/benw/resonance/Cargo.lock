@@ -1,0 +1,12 @@
+[root]
+name = "resonance"
+version = "0.0.1"
+dependencies = [
+ "openal-rs 0.0.1 (git+https://github.com/bjz/openal-rs.git)",
+]
+
+[[package]]
+name = "openal-rs"
+version = "0.0.1"
+source = "git+https://github.com/bjz/openal-rs.git#72686f84c1c5adc6d8fc317ebb62b43a537c9622"
+

@@ -1,0 +1,14 @@
+[[package]]
+name = "lcs_diff"
+version = "0.1.0"
+dependencies = [
+ "speculate 0.0.25 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "speculate"
+version = "0.0.25"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[metadata]
+"checksum speculate 0.0.25 (registry+https://github.com/rust-lang/crates.io-index)" = "3d8e3b4a7e9a3915e7f6e0f90e2f8e2a6bb9ccaaeb5b7d5062a39c3651250604"

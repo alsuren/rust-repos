@@ -1,0 +1,145 @@
+[root]
+name = "hal-demo"
+version = "0.1.0"
+dependencies = [
+ "hal-rs 0.0.1 (git+https://github.com/hjr3/hal-rs.git)",
+ "nickel 0.1.0 (git+https://github.com/nickel-org/nickel.rs.git)",
+ "postgres 0.0.0 (git+https://github.com/sfackler/rust-postgres.git)",
+]
+
+[[package]]
+name = "anymap"
+version = "0.9.0"
+source = "git+https://github.com/nickel-org/anymap.git#c29e78c5634f9e6741287e9cfb281a73d4eddcc6"
+
+[[package]]
+name = "encoding"
+version = "0.2.0"
+source = "git+https://github.com/lifthrasiir/rust-encoding#841527086854d6958cd1008dabd2b69865c36267"
+dependencies = [
+ "encoding-index-japanese 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding)",
+ "encoding-index-korean 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding)",
+ "encoding-index-simpchinese 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding)",
+ "encoding-index-singlebyte 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding)",
+ "encoding-index-tradchinese 1.0.20140915 (git+https://github.com/lifthrasiir/rust-encoding)",
+]
+
+[[package]]
+name = "encoding-index-japanese"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding#841527086854d6958cd1008dabd2b69865c36267"
+
+[[package]]
+name = "encoding-index-korean"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding#841527086854d6958cd1008dabd2b69865c36267"
+
+[[package]]
+name = "encoding-index-simpchinese"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding#841527086854d6958cd1008dabd2b69865c36267"
+
+[[package]]
+name = "encoding-index-singlebyte"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding#841527086854d6958cd1008dabd2b69865c36267"
+
+[[package]]
+name = "encoding-index-tradchinese"
+version = "1.0.20140915"
+source = "git+https://github.com/lifthrasiir/rust-encoding#841527086854d6958cd1008dabd2b69865c36267"
+
+[[package]]
+name = "groupable"
+version = "0.1.0"
+source = "git+https://github.com/nickel-org/groupable-rs#66f2f53a6ac6850dbdddb8c6023ad7c3c2a9c2a5"
+
+[[package]]
+name = "hal-rs"
+version = "0.0.1"
+source = "git+https://github.com/hjr3/hal-rs.git#96499c955e661211465c6c99d8ceb6a9df4ed700"
+
+[[package]]
+name = "http"
+version = "0.1.0-pre"
+source = "git+https://github.com/nickel-org/rust-http.git#3224008263e065384403dd4f899646e783cc0b6e"
+dependencies = [
+ "openssl 0.0.0 (git+https://github.com/sfackler/rust-openssl)",
+ "url 0.1.0 (git+https://github.com/servo/rust-url.git)",
+]
+
+[[package]]
+name = "nickel"
+version = "0.1.0"
+source = "git+https://github.com/nickel-org/nickel.rs.git#f45709545f2f887bb10f27e1cdf59fdfd97a7f83"
+dependencies = [
+ "anymap 0.9.0 (git+https://github.com/nickel-org/anymap.git)",
+ "groupable 0.1.0 (git+https://github.com/nickel-org/groupable-rs)",
+ "http 0.1.0-pre (git+https://github.com/nickel-org/rust-http.git)",
+ "nickel_macros 0.0.1 (git+https://github.com/nickel-org/nickel.rs.git)",
+ "rust-mustache 0.3.0 (git+https://github.com/nickel-org/rust-mustache.git)",
+ "url 0.1.0 (git+https://github.com/nickel-org/rust-url.git)",
+]
+
+[[package]]
+name = "nickel_macros"
+version = "0.0.1"
+source = "git+https://github.com/nickel-org/nickel.rs.git#f45709545f2f887bb10f27e1cdf59fdfd97a7f83"
+
+[[package]]
+name = "openssl"
+version = "0.0.0"
+source = "git+https://github.com/sfackler/rust-openssl#1e706b8ef4d4344b5297b90bcd430cc96f40fb39"
+
+[[package]]
+name = "phf"
+version = "0.0.0"
+source = "git+https://github.com/sfackler/rust-phf#18a5ecc028055c3dbd650cc5a064b6fb033d82ef"
+dependencies = [
+ "xxhash 0.0.1 (git+https://github.com/Jurily/rust-xxhash)",
+]
+
+[[package]]
+name = "phf_mac"
+version = "0.0.0"
+source = "git+https://github.com/sfackler/rust-phf#18a5ecc028055c3dbd650cc5a064b6fb033d82ef"
+dependencies = [
+ "xxhash 0.0.1 (git+https://github.com/Jurily/rust-xxhash)",
+]
+
+[[package]]
+name = "postgres"
+version = "0.0.0"
+source = "git+https://github.com/sfackler/rust-postgres.git#b81acaab4c0532d8477d74a118d7d1fa5155ea5f"
+dependencies = [
+ "openssl 0.0.0 (git+https://github.com/sfackler/rust-openssl)",
+ "phf 0.0.0 (git+https://github.com/sfackler/rust-phf)",
+ "phf_mac 0.0.0 (git+https://github.com/sfackler/rust-phf)",
+]
+
+[[package]]
+name = "rust-mustache"
+version = "0.3.0"
+source = "git+https://github.com/nickel-org/rust-mustache.git#bf46d703791ba78ff10341f782534cf71a919db8"
+
+[[package]]
+name = "url"
+version = "0.1.0"
+source = "git+https://github.com/nickel-org/rust-url.git#8a61b7654ab5378b488225a1d8a9cbbbcbd38894"
+dependencies = [
+ "encoding 0.2.0 (git+https://github.com/lifthrasiir/rust-encoding)",
+]
+
+[[package]]
+name = "url"
+version = "0.1.0"
+source = "git+https://github.com/servo/rust-url.git#cec3c32168ce4233e179f22ef50215b3a9c34342"
+dependencies = [
+ "encoding 0.2.0 (git+https://github.com/lifthrasiir/rust-encoding)",
+]
+
+[[package]]
+name = "xxhash"
+version = "0.0.1"
+source = "git+https://github.com/Jurily/rust-xxhash#7e4174e780af0cfb29a5e53ede0b987adca16396"
+

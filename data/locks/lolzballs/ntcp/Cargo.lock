@@ -1,0 +1,35 @@
+[root]
+name = "tunnel_server"
+version = "0.1.0"
+dependencies = [
+ "ntcp 0.1.0",
+]
+
+[[package]]
+name = "byteorder"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.2.26"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "ntcp"
+version = "0.1.0"
+dependencies = [
+ "byteorder 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.2.26 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "tunnel_client"
+version = "0.1.0"
+dependencies = [
+ "ntcp 0.1.0",
+]
+
+[metadata]
+"checksum byteorder 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "ff81738b726f5d099632ceaffe7fb65b90212e8dce59d518729e7e8634032d3d"
+"checksum libc 0.2.26 (registry+https://github.com/rust-lang/crates.io-index)" = "30885bcb161cf67054244d10d4a7f4835ffd58773bc72e07d35fecf472295503"

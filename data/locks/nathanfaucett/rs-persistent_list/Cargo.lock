@@ -1,0 +1,24 @@
+[root]
+name = "persistent_list"
+version = "0.1.0"
+dependencies = [
+ "collection_traits 0.1.0 (git+https://github.com/nathanfaucett/rs-collection_traits)",
+ "linked_list 0.1.0 (git+https://github.com/nathanfaucett/rs-linked_list)",
+]
+
+[[package]]
+name = "collection_traits"
+version = "0.1.0"
+source = "git+https://github.com/nathanfaucett/rs-collection_traits#516b19e436a024f7d7fd8efc6a20cf27b1d0ff4e"
+
+[[package]]
+name = "linked_list"
+version = "0.1.0"
+source = "git+https://github.com/nathanfaucett/rs-linked_list#01005313fd142788abc9473af93f6ac9f137a176"
+dependencies = [
+ "collection_traits 0.1.0 (git+https://github.com/nathanfaucett/rs-collection_traits)",
+]
+
+[metadata]
+"checksum collection_traits 0.1.0 (git+https://github.com/nathanfaucett/rs-collection_traits)" = "<none>"
+"checksum linked_list 0.1.0 (git+https://github.com/nathanfaucett/rs-linked_list)" = "<none>"

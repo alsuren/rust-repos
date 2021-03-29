@@ -1,0 +1,49 @@
+[root]
+name = "nickel-demo"
+version = "0.1.0"
+dependencies = [
+ "nickel 0.1.0 (git+https://github.com/nickel-org/nickel.rs.git#721761b4597e93174503fe21eb8d3d6d44032636)",
+]
+
+[[package]]
+name = "anymap"
+version = "0.9.0"
+source = "git+https://github.com/chris-morgan/anymap.git#ad7ea81ba60233358fe3a025f08ee05537c3eb4d"
+
+[[package]]
+name = "encoding"
+version = "0.1.0"
+source = "git+https://github.com/lifthrasiir/rust-encoding#35f0d70f65f73ba16f296f9ec675eddee661ba79"
+
+[[package]]
+name = "http"
+version = "0.1.0-pre"
+source = "git+https://github.com/chris-morgan/rust-http.git#c1d601c1150ec6e10067dc0e022590277985b785"
+dependencies = [
+ "openssl 0.0.0 (git+https://github.com/sfackler/rust-openssl.git#cec41181c04e7ad4e644034d870626571acbdbdb)",
+ "url 0.1.0 (git+https://github.com/servo/rust-url#bfdf809365600a7941a77524f9bb065886de3379)",
+]
+
+[[package]]
+name = "nickel"
+version = "0.1.0"
+source = "git+https://github.com/nickel-org/nickel.rs.git#721761b4597e93174503fe21eb8d3d6d44032636"
+dependencies = [
+ "anymap 0.9.0 (git+https://github.com/chris-morgan/anymap.git#ad7ea81ba60233358fe3a025f08ee05537c3eb4d)",
+ "http 0.1.0-pre (git+https://github.com/chris-morgan/rust-http.git#c1d601c1150ec6e10067dc0e022590277985b785)",
+ "url 0.1.0 (git+https://github.com/servo/rust-url#bfdf809365600a7941a77524f9bb065886de3379)",
+]
+
+[[package]]
+name = "openssl"
+version = "0.0.0"
+source = "git+https://github.com/sfackler/rust-openssl.git#cec41181c04e7ad4e644034d870626571acbdbdb"
+
+[[package]]
+name = "url"
+version = "0.1.0"
+source = "git+https://github.com/servo/rust-url#bfdf809365600a7941a77524f9bb065886de3379"
+dependencies = [
+ "encoding 0.1.0 (git+https://github.com/lifthrasiir/rust-encoding#35f0d70f65f73ba16f296f9ec675eddee661ba79)",
+]
+

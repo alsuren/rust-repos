@@ -1,0 +1,12 @@
+[root]
+name = "Decision-Tree-ID3"
+version = "0.0.1"
+dependencies = [
+ "rust-csv 0.3.0 (git+https://github.com/BurntSushi/rust-csv#7e886f7c86a1a46d79bec96be25c8054498a5d34)",
+]
+
+[[package]]
+name = "rust-csv"
+version = "0.3.0"
+source = "git+https://github.com/BurntSushi/rust-csv#7e886f7c86a1a46d79bec96be25c8054498a5d34"
+

@@ -1,0 +1,47 @@
+[root]
+name = "apns"
+version = "0.0.1"
+dependencies = [
+ "log 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "net-utils 0.0.1 (git+https://github.com/rohitjoshi/net-utils.git)",
+ "rustc-serialize 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "gcc"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "log"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "net-utils"
+version = "0.0.1"
+source = "git+https://github.com/rohitjoshi/net-utils.git#6ddc194e3edcb363dbdd70c951d5ede2cec26953"
+dependencies = [
+ "log 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "time 0.1.14 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rustc-serialize"
+version = "0.2.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "time"
+version = "0.1.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "gcc 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+

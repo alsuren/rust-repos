@@ -1,0 +1,18 @@
+[root]
+name = "issue-40535"
+version = "0.1.0"
+dependencies = [
+ "direct 0.1.0",
+]
+
+[[package]]
+name = "direct"
+version = "0.1.0"
+dependencies = [
+ "indirect 0.1.0",
+]
+
+[[package]]
+name = "indirect"
+version = "0.1.0"
+

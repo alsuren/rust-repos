@@ -1,0 +1,12 @@
+[root]
+name = "mittens"
+version = "0.0.0"
+dependencies = [
+ "knuckle 0.1.0 (git+https://github.com/erik/knuckle)",
+]
+
+[[package]]
+name = "knuckle"
+version = "0.1.0"
+source = "git+https://github.com/erik/knuckle#aa2b1d1a5a37d8d4972017524bfa4cfc54353ce6"
+

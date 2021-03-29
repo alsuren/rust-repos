@@ -1,0 +1,35 @@
+[root]
+name = "writers"
+version = "0.0.1"
+dependencies = [
+ "mustache 0.5.0 (git+https://github.com/nickel-org/rust-mustache.git)",
+ "rustc-serialize 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "log"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "mustache"
+version = "0.5.0"
+source = "git+https://github.com/nickel-org/rust-mustache.git#18b0e7d601d27a769f2ce7916afb779dd0809d7f"
+dependencies = [
+ "log 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-serialize 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rustc-serialize"
+version = "0.3.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+

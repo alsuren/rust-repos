@@ -1,0 +1,23 @@
+[root]
+name = "rustup_prompt_helper"
+version = "1.1.0"
+dependencies = [
+ "toml 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "serde"
+version = "1.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "toml"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "serde 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum serde 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "3b46a59dd63931010fdb1d88538513f3279090d88b5c22ef4fe8440cfffcc6e3"
+"checksum toml 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "3063405db158de3dce8efad5fc89cf1baffb9501a3647dc9505ba109694ce31f"

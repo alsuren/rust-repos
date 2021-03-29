@@ -1,0 +1,23 @@
+[[package]]
+name = "flamegraph"
+version = "0.1.0"
+dependencies = [
+ "string-interner 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "serde"
+version = "1.0.79"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "string-interner"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "serde 1.0.79 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum serde 1.0.79 (registry+https://github.com/rust-lang/crates.io-index)" = "84257ccd054dc351472528c8587b4de2dbf0dc0fe2e634030c1a90bfdacebaa9"
+"checksum string-interner 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)" = "db37827ddc5f79892754f71038ce0c6b4147e0454fcc765ff779faeedaef2d05"

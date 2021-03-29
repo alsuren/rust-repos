@@ -1,0 +1,32 @@
+[[package]]
+name = "blackberry"
+version = "0.1.1"
+dependencies = [
+ "pi 0.1.0",
+ "stack-vec 0.1.1",
+ "volatile 0.1.0",
+]
+
+[[package]]
+name = "pi"
+version = "0.1.0"
+dependencies = [
+ "volatile 0.1.0",
+]
+
+[[package]]
+name = "stack-vec"
+version = "0.1.1"
+
+[[package]]
+name = "std"
+version = "0.1.0"
+
+[[package]]
+name = "volatile"
+version = "0.1.0"
+
+[[package]]
+name = "xmodem"
+version = "0.1.1"
+

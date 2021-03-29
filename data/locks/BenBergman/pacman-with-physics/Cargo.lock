@@ -1,0 +1,43 @@
+[root]
+name = "pacman-with-physics"
+version = "0.0.1"
+dependencies = [
+ "nphysics2df32 0.1.0 (git+https://github.com/sebcrozet/nphysics)",
+ "nphysics_testbed2d 0.1.0",
+]
+
+[[package]]
+name = "nalgebra"
+version = "0.1.0"
+source = "git+https://github.com/sebcrozet/nalgebra#15d1fa0b8b012cc1e5cf365b0eb64c7089e93e32"
+
+[[package]]
+name = "ncollide"
+version = "0.2.0"
+source = "git+https://github.com/sebcrozet/ncollide#4a44be3d0309668b7346f01d536e46b879f6342c"
+dependencies = [
+ "nalgebra 0.1.0 (git+https://github.com/sebcrozet/nalgebra)",
+]
+
+[[package]]
+name = "nphysics2df32"
+version = "0.1.0"
+source = "git+https://github.com/sebcrozet/nphysics#27ebd4c8710787b2788e646f904a000b675536bf"
+dependencies = [
+ "nalgebra 0.1.0 (git+https://github.com/sebcrozet/nalgebra)",
+ "ncollide 0.2.0 (git+https://github.com/sebcrozet/ncollide)",
+]
+
+[[package]]
+name = "nphysics_testbed2d"
+version = "0.1.0"
+dependencies = [
+ "nphysics2df32 0.1.0 (git+https://github.com/sebcrozet/nphysics)",
+ "rust-sfml 0.9.0 (git+https://github.com/jeremyletang/rust-sfml)",
+]
+
+[[package]]
+name = "rust-sfml"
+version = "0.9.0"
+source = "git+https://github.com/jeremyletang/rust-sfml#2b829b899b1eb4de4ce06c48c5ca4d8d390eda41"
+

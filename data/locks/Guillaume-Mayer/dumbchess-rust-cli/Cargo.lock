@@ -1,0 +1,11 @@
+[root]
+name = "client"
+version = "0.1.0"
+dependencies = [
+ "chess 0.1.0",
+]
+
+[[package]]
+name = "chess"
+version = "0.1.0"
+
